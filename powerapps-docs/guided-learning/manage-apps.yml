@@ -1,0 +1,39 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Administración de aplicaciones
+metadata:
+  title: Administración de aplicaciones | Microsoft PowerApps
+  description: 'Comparta aplicaciones, controle qué versión de una aplicación se usa y se comparte y trabaje con contenedores.'
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: manage-data
+  nextTutorialTitle: Administración de datos
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      Comparta aplicaciones con compañeros y otros usuarios y controle qué versión de una aplicación se usa y se comparte. Trabaje con contenedores de aplicaciones, conexiones y otros recursos.
+  - title: Uso compartido de las aplicaciones
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/_nUU7oOy4oU?rel=0]
+
+      [!INCLUDE [](includes/learning-manage-share-apps.md)]
+  - title: Control de versiones de las aplicaciones
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](includes/learning-manage-version-apps.md)]
+  - title: Entornos
+    durationInMinutes: 8
+    content: |
+      > [!Video https://www.youtube.com/embed/32olG9uCmBU?rel=0]
+
+      [!INCLUDE [](includes/learning-manage-environments.md)]
+  - content: |
+      Ha completado la sección **Administración de aplicaciones** del aprendizaje guiado de Microsoft PowerApps.

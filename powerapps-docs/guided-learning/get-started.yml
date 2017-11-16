@@ -1,0 +1,57 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Introducción
+metadata:
+  title: Introducción | Microsoft PowerApps
+  description: 'Comprenda qué es PowerApps, sus elementos de software, y tecnologías relacionadas.'
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: create-app-sharepoint
+  nextTutorialTitle: Creación de una aplicación en SharePoint
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      Comprenda qué es PowerApps, sus elementos de software, y tecnologías relacionadas. Examine las distintas formas de crear aplicaciones y genere una aplicación a partir de una lista de SharePoint.
+  - title: Introducción a PowerApps
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/n9fkvkekINE?rel=0]
+
+      [!INCLUDE [](includes/learning-introducing-powerapps.md)]
+  - title: Las partes de PowerApps
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/r6mowYePq1Q?rel=0]
+
+      [!INCLUDE [](includes/learning-powerapps-parts.md)]
+  - title: Tecnologías relacionadas
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/C81IfqIn9LI?rel=0]
+
+      [!INCLUDE [](includes/learning-related-technologies.md)]
+  - title: Un vistazo rápido a la creación de aplicaciones
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/NOv3kacXqho?rel=0]
+
+      [!INCLUDE [](includes/learning-quick-look-powerapps.md)]
+  - title: Crear su primera aplicación
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/ixRpT48Z6IQ?rel=0]
+
+      [!INCLUDE [](includes/learning-create-first-app-powerapps.md)]
+  - title: Revise esta sección
+    durationInMinutes: 2
+    content: |
+      [!INCLUDE [](includes/learning-review-section-one.md)]
+  - content: |
+      Ha completado la sección **Introducción** del aprendizaje guiado de Microsoft PowerApps.

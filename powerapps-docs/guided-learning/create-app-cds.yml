@@ -1,0 +1,47 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Creación de una aplicación en Common Data Service
+metadata:
+  title: Creación de una aplicación en Common Data Service | Microsoft PowerApps
+  description: 'Genere una aplicación de tres pantallas desde Common Data Service y, luego, explore y actualice la aplicación.'
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: manage-apps
+  nextTutorialTitle: Administración de aplicaciones
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      Genere una aplicación de tres pantallas desde Common Data Service y, luego, explore las pantallas y los controles desde la aplicación. Actualice las pantallas, los controles y los campos de la aplicación; incorpore datos adicionales y desencadene un flujo desde la aplicación.
+  - title: Generar una aplicación
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/Gi5TQF7_pz8?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-generate.md)]
+  - title: Exploración de una aplicación generada
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/98d6SZueEek?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-explore-controls.md)]
+  - title: Personalizar la aplicación
+    durationInMinutes: 12
+    content: |
+      > [!Video https://www.youtube.com/embed/wHy72cOe8Os?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-customize.md)]
+  - title: Adición de un origen y un flujo de datos
+    durationInMinutes: 11
+    content: |
+      > [!Video https://www.youtube.com/embed/Y057qUJ2NNk?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-add-source.md)]
+  - content: |
+      Ha completado la sección **Creación de una aplicación en Common Data Service** del aprendizaje guiado de Microsoft PowerApps.
