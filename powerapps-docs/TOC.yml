@@ -32,27 +32,31 @@
       href: open-and-run-a-sample-app.md
     - name: Usar una plantilla
       href: get-started-test-drive.md
-- name: Crear una aplicación a partir de SharePoint
+- name: Empezar con una lista de SharePoint
   items:
-    - name: Iniciar en SharePoint
+    - name: Crear una aplicación a partir de SharePoint
       href: generate-app-from-sharepoint-list-interface.md
-    - name: Iniciar en PowerApps
+    - name: Crear una aplicación a partir de PowerApps
       href: app-from-sharepoint.md
+    - name: Personalizar un formulario de lista con PowerApps
+      href: customize-list-form.md
+    - name: Comprensión de la integración de formularios de SharePoint
+      href: sharepoint-form-integration.md
     - name: Crear una conexión
       href: connect-to-sharepoint.md
-    - name: Personalizar un diseño
+    - name: Personalizar un diseño de galería
       href: customize-layout-sharepoint.md
-    - name: Personalizar formularios
+    - name: Personalizar un formulario de PowerApps
       href: customize-forms-sharepoint.md
     - name: Personalizar una tarjeta
       href: customize-card.md
-    - name: Agregar un campo de búsqueda
+    - name: Conectar listas mediante búsquedas
       href: sharepoint-lookup-fields.md
-- name: Crear una aplicación a partir de otro origen de datos
+- name: Comenzar con otro origen de datos
   items:
-    - name: A partir de una entidad
+    - name: Crear una aplicación a partir de una entidad
       href: data-platform-create-app.md
-    - name: A partir de datos de Excel
+    - name: Crear una aplicación a partir de datos de Excel
       href: get-started-create-from-data.md
     - name: Introducción a las fórmulas
       href: working-with-formulas.md
