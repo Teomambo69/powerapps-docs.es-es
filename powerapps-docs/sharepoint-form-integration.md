@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 2bb6aae9ab460e4fc03f6c7e3243f47da0ffe455
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: 2a5fd3cb6805f5e22fe6d4bc7fba0de64df8afd2
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
 Ahora puede [personalizar cualquier formulario de lista de SharePoint](customize-list-form.md) de manera fácil en PowerApps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
@@ -50,15 +50,15 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
         **'*YourListName*'**
 
-    * **OnNew**: configure **SharePointForm1** en modo nuevo.
+    * **OnNew**: establece **SharePointForm1** en el modo nuevo.
 
         **NewForm(SharePointForm1)**
 
-    * **OnView**: configura **SharePointForm1** en modo de vista.
+    * **OnNew**: establece **SharePointForm1** en el modo de vista.
 
         **ViewForm(SharePointForm1)**
 
-    * **OnEdit**: configura **SharePointForm1** en modo de edición.
+    * **OnEdit**: establece **SharePointForm1** en modo de edición.
 
         **EditForm(SharePointForm1)**
 
@@ -66,11 +66,11 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
         **SubmitForm(SharePointForm1)**
 
-    * **OnCancel**: restablece los cambios realizados en **SharePointForm1**. SharePoint siempre oculta el formulario cuando el usuario pulsa o hace clic en **Cancelar** en SharePoint.
+    * **OnCancel**: restablece los cambios realizados en **SharePointForm1**. SharePoint siempre oculta el formulario cuando un usuario pulsa o hace clic en **Cancelar** en SharePoint.
 
         **SubmitForm(SharePointForm1)**
 
-Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta dentro de SharePoint. Lo que hacen es cambiar el modo del formulario de PowerApps cuando el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint.
+Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta en SharePoint (lo que hacen es cambiar el modo del formulario de PowerApps cuando el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint).
 
 ## <a name="understand-the-sharepointintegration-control"></a>Descripción del control SharePointIntegration
 El control **SharePointIntegration** comunica las acciones de los usuarios entre SharePoint y PowerApps.
@@ -99,7 +99,6 @@ El control **SharePointIntegration** tiene las siguientes propiedades:
 **Origen de datos**: la lista que contiene el registro que el formulario mostrará, editará o creará. Tenga en cuenta que si cambia esta propiedad, las propiedades **Selected** y **SelectedItemID** podrían dejar de funcionar.
 
 ## <a name="customize-the-default-form"></a>Personalización del formulario predeterminado
-
 Ahora que comprende mejor el formulario generado predeterminado y el control **SharePointIntegration**, puede cambiar las fórmulas para personalizar aún más los formularios. Al personalizar formularios, tenga en cuenta algunas de estas cosas:
 
 * Para crear experiencias personalizadas independientes con el fin de crear, mostrar o editar un elemento, establezca las fórmulas **OnNew**, **OnView** o **OnEdit** del control  **SharePointIntegration** para establecer variables o navegar a distintas pantallas.

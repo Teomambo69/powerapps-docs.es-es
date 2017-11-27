@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/13/2017
 ms.author: sharik
-ms.openlocfilehash: 162314b1bb94e8358e5ddb290adf9db9f43950a0
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Personalización de un formulario de lista de SharePoint mediante PowerApps
 
@@ -47,9 +47,16 @@ Para volver a la lista de SharePoint en cualquier momento, pulse o haga clic en 
 
 ## <a name="customize-the-list-form"></a>Personalización del formulario de lista
 
-PowerApps ofrece muchas maneras de personalizar el formulario. Por ejemplo, puede cambiar el diseño, dar formato al texto, agregar imágenes o gráficos, agregar validación de datos personalizada, agregar reglas o crear vistas adicionales.
+PowerApps ofrece muchas maneras de personalizar el formulario. Estos son algunos ejemplos:
 
-Supongamos que el formulario tiene un campo **AccountID** que no quiere que esté visible.
+* [Cambiar el tamaño y la orientación](set-aspect-ratio-portrait-landscape.md)
+* [Dar formato al texto](controls/properties-text.md)
+* [Agregar imágenes](add-images-pictures-audio-video.md) o [gráficos](use-line-pie-bar-chart.md)
+* [Agregar validación de datos personalizados](functions/function-validate.md)
+* [Agregar reglas](working-with-rules.md)
+* [Crear vistas adicionales](https://powerapps.microsoft.com/blog/separate-custom-forms/)
+
+A modo de ejemplo, supongamos que el formulario tiene un campo **AccountID** que no desea que se vea.
 
 ![Selección del campo AccountID](./media/customize-list-form/select-card.png)
 
@@ -57,7 +64,7 @@ Ocultar el campo es muy sencillo en PowerApps en las opciones de personalizació
 
 ![Desactivación de la casilla AccountID](./media/customize-list-form/checkbox.png)
 
-Para obtener instrucciones paso a paso sobre cómo ocultar campos y realizar otros cambios en el formulario, consulte [Customize forms in PowerApps](customize-forms-sharepoint.md) (Personalización de los formularios en PowerApps).
+Para obtener instrucciones paso a paso sobre cómo ocultar campos y realizar otros cambios en el formulario, consulte [Customize forms in PowerApps](customize-forms-sharepoint.md) (Personalización de los formularios en PowerApps). Para ver una lista completa de los recursos, consulte [Microsoft PowerApps docs](https://docs.microsoft.com/powerapps/) (Documentos de Microsoft PowerApps).
 
 ## <a name="save-and-publish-the-list-form-back-to-sharepoint"></a>Almacenamiento y publicación del formulario de lista de nuevo en SharePoint
 
