@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Creación de una aplicación en SharePoint
+title: "Creación de una aplicación en SharePoint"
 metadata:
-  title: Creación de una aplicación en SharePoint | Microsoft PowerApps
-  description: 'Genere una aplicación de tres pantallas desde una lista de SharePoint y, luego, explore y actualice la aplicación.'
+  title: "Creación de una aplicación en SharePoint | Microsoft PowerApps"
+  description: "Genere una aplicación de tres pantallas desde una lista de SharePoint y, luego, explore y actualice la aplicación."
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-cds
-  nextTutorialTitle: Creación de una aplicación en Common Data Service
+  nextTutorialTitle: "Creación de una aplicación en Common Data Service"
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -16,32 +15,39 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      Genere una aplicación de tres pantallas desde una lista de SharePoint y, luego, explore las pantallas y los controles desde la aplicación. Actualice las pantallas, los controles y los campos de la aplicación y use fórmulas para personalizar aún más su comportamiento.
-  - title: Generar una aplicación
-    durationInMinutes: 3
-    content: |
-      > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
+- durationInMinutes: 1
+  content: "Genere una aplicación de tres pantallas desde una lista de SharePoint y, luego, explore las pantallas y los controles desde la aplicación. Actualice las pantallas, los controles y los campos de la aplicación y use fórmulas para personalizar aún más su comportamiento.\n"
+  ms.openlocfilehash: b18bd904adbe96d473e170443945c6464c02d6ea
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/12/2017
+- title: "Generar una aplicación"
+  durationInMinutes: 3
+  content: >
+    > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-generate.md)]
-  - title: Exploración de una aplicación generada
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
-  - title: Personalizar la aplicación
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+    [!INCLUDE [](includes/learning-spo-app-generate.md)]
+- title: "Exploración de una aplicación generada"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-customize.md)]
-  - title: Exploración de las fórmulas de la aplicación
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
-  - content: |
-      Ha completado la sección **Creación de una aplicación en SharePoint** del aprendizaje guiado de Microsoft PowerApps.
+    [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
+- title: "Personalizar la aplicación"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-customize.md)]
+- title: "Exploración de las fórmulas de la aplicación"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
+- content: "Ha completado la sección **Creación de una aplicación en SharePoint** del aprendizaje guiado de Microsoft PowerApps.\0"

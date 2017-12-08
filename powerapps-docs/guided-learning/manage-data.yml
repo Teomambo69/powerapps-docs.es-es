@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Administración de datos
+title: "Administración de datos"
 metadata:
-  title: Administración de datos | Microsoft PowerApps
-  description: 'Comprenda cómo almacenar, modelar, extender y proteger los datos en Common Data Service.'
+  title: "Administración de datos | Microsoft PowerApps"
+  description: "Comprenda cómo almacenar, modelar, extender y proteger los datos en Common Data Service."
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -14,38 +13,46 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      Comprenda cómo almacenar y modelar los datos en Common Data Service. Defina y use entidades que se asignen a los datos y procesos empresariales y extienda el modelo de datos común con entidades personalizadas. Use la seguridad basada en roles para controlar el acceso a las entidades. Trabaje con los datos directamente en el servicio y en Excel.
-  - title: Common Data Service
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
+- durationInMinutes: 1
+  content: "Comprenda cómo almacenar y modelar los datos en Common Data Service. Defina y use entidades que se asignen a los datos y procesos empresariales y extienda el modelo de datos común con entidades personalizadas. Use la seguridad basada en roles para controlar el acceso a las entidades. Trabaje con los datos directamente en el servicio y en Excel.\n"
+  ms.openlocfilehash: 78638bd391ae00e2305b5be8b37a078296d98401
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/12/2017
+- title: Common Data Service
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service.md)]
-  - title: Descripción de las entidades de Common Data Service
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-entities.md)]
-  - title: Creación de entidades personalizadas
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
+    [!INCLUDE [](includes/learning-common-data-service.md)]
+- title: "Descripción de las entidades de Common Data Service"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
-  - title: Administración de datos de entidad
-    durationInMinutes: 7
-    content: |
-      > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-manage.md)]
-  - title: Seguridad de Common Data Service
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+    [!INCLUDE [](includes/learning-common-data-service-entities.md)]
+- title: "Creación de entidades personalizadas"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-security.md)]
-  - content: |
-      Ha completado la sección **Administración de datos** del aprendizaje guiado de Microsoft PowerApps.
+
+    [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
+- title: "Administración de datos de entidad"
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-manage.md)]
+- title: Seguridad de Common Data Service
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-security.md)]
+- content: "Ha completado la sección **Administración de datos** del aprendizaje guiado de Microsoft PowerApps.\0"
