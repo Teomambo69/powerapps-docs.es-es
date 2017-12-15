@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: "Administración de aplicaciones"
 metadata:
   title: "Administración de aplicaciones | Microsoft PowerApps"
@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: manage-data
-  nextTutorialTitle: "Administración de datos"
+  nextTutorialTitle: Managing data
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -14,14 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/27/2017
   ms.author: mblythe
-items:
-- durationInMinutes: 1
-  content: "Comparta aplicaciones con compañeros y otros usuarios y controle qué versión de una aplicación se usa y se comparte. Trabaje con contenedores de aplicaciones, conexiones y otros recursos.\n"
-  ms.openlocfilehash: 706c686d84b520e2366e1fe8152ad9021949b0fe
-  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.openlocfilehash: 432eeb154a499631d78a32440da2627249c11ab3
+  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/12/2017
+  ms.lasthandoff: 12/09/2017
+items:
+- durationInMinutes: 1
+  content: >
+    Share apps with colleagues and others, and control which version of an app is used and shared. Work with containers for apps, connections, and other resources.
 - title: Uso compartido de las aplicaciones
   durationInMinutes: 5
   content: >
@@ -40,4 +41,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-manage-environments.md)]
-- content: "Ha completado la sección **Administración de aplicaciones** del aprendizaje guiado de Microsoft PowerApps.\0"
+- content: "You've completed the **Managing apps** section of Microsoft PowerApps Guided Learning.\0"
