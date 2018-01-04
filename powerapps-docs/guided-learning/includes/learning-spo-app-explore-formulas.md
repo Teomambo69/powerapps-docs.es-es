@@ -48,8 +48,8 @@ Antes de pasar la siguiente sección, queremos volver a SharePoint y mostrarle c
 
 Una vez que ha terminado la sección de la aplicación SharePoint, puede elegir a dónde desea dirigirse:
 
-* [Administración de aplicaciones](../manage-apps#step-1)
-* [Generate an app (Common Data Service)](../create-app-cds#step-1) [Generación de una aplicación (Common Data Service)]
+* [Administración de aplicaciones](https://docs.microsoft.com/powerapps/guided-learning/manage-apps#step-1)
+* [Generate an app (Common Data Service)](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) [Generación de una aplicación (Common Data Service)]
 
 La sección de administración muestra cómo compartir y controlar las versiones de las aplicaciones, y presenta los entornos, que son contenedores de aplicaciones, datos y otros recursos. Se recomienda que todos los usuarios lean la sección de administración en algún momento, pero la información que contiene la sección relativa a Common Data Service es excelente e incluye más personalizaciones de las aplicaciones. 
 
