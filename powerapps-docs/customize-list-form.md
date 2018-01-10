@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/13/2017
+ms.date: 01/02/2018
 ms.author: sharik
-ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
-ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
+ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
+ms.sourcegitcommit: 1083f55a35cee22920460d3d91d3ccae306a5754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Personalización de un formulario de lista de SharePoint mediante PowerApps
 
@@ -164,7 +164,7 @@ Para obtener instrucciones paso a paso sobre cómo ocultar campos y realizar otr
 
 **A:** No. Esta funcionalidad no se admite actualmente.
 
-### <a name="administering-your-custom-list-form"></a>Administración del formulario de lista personalizado
+### <a name="administering-custom-list-forms"></a>Administración de formularios de lista personalizados
 
 **P:** ¿Cómo se comparte un formulario de lista personalizado con otros usuarios?
 
@@ -173,6 +173,10 @@ Para obtener instrucciones paso a paso sobre cómo ocultar campos y realizar otr
 **P:** ¿Quién puede personalizar los formularios de lista?
 
 **R:** Cualquier persona con permisos de SharePoint para administrar, diseñar o editar la lista asociada.
+
+**P: ¿** ¿Se necesita una licencia de PowerApps para crear o utilizar formularios de lista personalizados?
+
+**R:** Si tiene algún [plan de Office 365 que incluya PowerApps](pricing-billing-skus.md#licenses), puede crear o utilizar formularios de lista personalizados.
 
 **P:** ¿Qué sucede cuando los usuarios invitados acceden a una lista que tiene un formulario personalizado?
 
