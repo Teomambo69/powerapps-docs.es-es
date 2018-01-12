@@ -9,10 +9,10 @@ ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
 ms.openlocfilehash: 40d2849e0ba4ed664d8099bae335717841e1eac2
-ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 <div id="main" class="v2">
     <div class="container">
