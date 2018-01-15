@@ -150,29 +150,31 @@
       href: data-platform-interactive-excel.md
     - name: Ejemplos y recursos
       href: samples-resources.md
-- name: Escenarios de integración
+- name: Integrar con otras tecnologías
   items:
-    - name: Integrar con SharePoint Online (serie de tutoriales)
-      href: sharepoint-scenario-intro.md
-    - name: Configurar listas de SharePoint Online
-      href: sharepoint-scenario-setup.md
-    - name: Generar una aplicación
-      href: sharepoint-scenario-generate-app.md
-    - name: Crear un flujo para aprobaciones
-      href: sharepoint-scenario-approval-flow.md
-    - name: Crear una aplicación desde cero
-      href: sharepoint-scenario-build-app.md
-    - name: Crear un informe de Power BI
-      href: sharepoint-scenario-build-report.md
-    - name: Publicar el informe de Power BI
-      href: sharepoint-scenario-publish-report.md
-    - name: Insertar un informe de Power BI
-      href: sharepoint-scenario-embed-report.md
-    - name: Crear un flujo para alertas
-      href: sharepoint-scenario-alerts-flow.md
-    - name: Recorrer el escenario finalizado
-      href: sharepoint-scenario-summary.md
-    - name: Integrar Cognitive Services
+    - name: Integrar con SharePoint Online
+      items:
+        - name: Introducción a la integración de SharePoint Online
+          href: sharepoint-scenario-intro.md
+        - name: Configurar listas de SharePoint Online
+          href: sharepoint-scenario-setup.md
+        - name: Generar una aplicación
+          href: sharepoint-scenario-generate-app.md
+        - name: Crear un flujo para aprobaciones
+          href: sharepoint-scenario-approval-flow.md
+        - name: Crear una aplicación desde cero
+          href: sharepoint-scenario-build-app.md
+        - name: Crear un informe de Power BI
+          href: sharepoint-scenario-build-report.md
+        - name: Publicar el informe de Power BI
+          href: sharepoint-scenario-publish-report.md
+        - name: Insertar un informe de Power BI
+          href: sharepoint-scenario-embed-report.md
+        - name: Crear un flujo para alertas
+          href: sharepoint-scenario-alerts-flow.md
+        - name: Recorrer el escenario finalizado
+          href: sharepoint-scenario-summary.md
+    - name: Integrar con Cognitive Services
       href: cognitive-services-api.md
 - name: 'Desarrollar: desarrolladores empresariales'
   items:
