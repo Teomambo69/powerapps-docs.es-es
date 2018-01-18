@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: manage-apps
-  nextTutorialTitle: Managing apps
+  nextTutorialTitle: "Administración de aplicaciones"
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -15,14 +15,13 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
   ms.openlocfilehash: 552dc1b5d0b6d43ae5d74a6eb1e27177b373ff86
-  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
+  ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/09/2017
+  ms.lasthandoff: 01/12/2018
 items:
 - durationInMinutes: 1
-  content: >
-    Generate a three screen app from the Common Data Service, then explore screens and controls from the app. Update app screens, controls, and fields; bring in additional data and trigger a flow from the app.
+  content: "Genere una aplicación de tres pantallas desde Common Data Service y, luego, explore las pantallas y los controles desde la aplicación. Actualice las pantallas, los controles y los campos de la aplicación; incorpore datos adicionales y desencadene un flujo desde la aplicación.\n"
 - title: "Generar una aplicación"
   durationInMinutes: 6
   content: >
@@ -51,4 +50,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-case-app-add-source.md)]
-- content: "You've completed the **Creating an app from the Common Data Service** section of Microsoft PowerApps Guided Learning.\0"
+- content: "Ha completado la sección **Creación de una aplicación en Common Data Service** del aprendizaje guiado de Microsoft PowerApps.\0"

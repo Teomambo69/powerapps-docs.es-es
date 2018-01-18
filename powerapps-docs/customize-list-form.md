@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/02/2018
 ms.author: sharik
 ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
-ms.sourcegitcommit: 1083f55a35cee22920460d3d91d3ccae306a5754
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Personalización de un formulario de lista de SharePoint mediante PowerApps
 

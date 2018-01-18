@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: fe8f1e1cc8e54c3abf4b44bbfe46d9f96a7adfe7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="replace-and-substitute-functions-in-powerapps"></a>Funciones Replace y Substitute en PowerApps
 Reemplace una parte de una cadena de texto por otra cadena.
@@ -34,14 +34,14 @@ Si pasa una única cadena, el valor devuelto es la cadena modificada.  Si pasa u
 ## <a name="syntax"></a>Sintaxis
 **Replace**( *String*, *StartingPosition*, *NumberOfCharacters*, *NewString* )
 
-* *String*: requerido. La cadena en la que se va a actuar.
+* *Cadena*: requerido. La cadena en la que se va a actuar.
 * *StartingPosition*: requerido.  La posición del carácter en la que se va a iniciar el reemplazo. El primer carácter de *String* está en la posición 1.
 * *NumberOfCharacters*: requerido.  El número de caracteres que se van a reemplazar en *String*.
 * *NewString*: requerido.  La cadena de reemplazo. El número de caracteres de este argumento puede diferir del argumento *NumberOfCharacters*.
 
 **Substitute**( *String*, *OldString*, *NewString* [, *InstanceNumber* ] )
 
-* *String*: requerido. La cadena en la que se va a actuar.
+* *Cadena*: requerido. La cadena en la que se va a actuar.
 * *OldString*: requerido.  La cadena que se va a reemplazar.
 * *NewString*: requerido.  La cadena de reemplazo. *OldString* y *NewString* pueden tener longitudes distintas.
 * *InstanceNumber*: opcional. De forma predeterminada, se reemplaza la primera instancia de *OldString*. Si *String* contiene más de una instancia, puede especificar qué instancia desea reemplazar.

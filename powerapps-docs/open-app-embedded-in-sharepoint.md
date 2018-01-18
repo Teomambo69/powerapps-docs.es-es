@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/11/2016
 ms.author: sharik
 ms.openlocfilehash: be3b366ae1e3b957b715edcb3e32e776246938cd
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="open-app-from-a-sharepoint-online-list"></a>Abrir una aplicación desde una lista de SharePoint Online
 Puede abrir una aplicación existente en SharePoint Online y administrar una lista.

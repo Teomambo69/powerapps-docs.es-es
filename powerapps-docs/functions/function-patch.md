@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 44d4c9e15b63cfbbd2f5304e6df7bd70fe748a04
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="patch-function-in-powerapps"></a>Función Revisión en PowerApps
 Modifica o crea uno o varios [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md) o combina registros fuera de un origen de datos.

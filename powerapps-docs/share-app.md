@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: 1d32873009c337a835a047df38b9ef18d5bf2064
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>Compartir una aplicación en PowerApps
 Es estupendo crear aplicaciones que satisfagan sus propias necesidades empresariales, pero lo realmente estupendo de PowerApps es que puede compartir las aplicaciones con otras personas. En este tema, obtendrá información sobre cómo compartir aplicaciones con usuarios o grupos de seguridad específicos, o cómo compartirlas con toda la organización.

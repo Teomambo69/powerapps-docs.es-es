@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/18/2017
 ms.author: manasma
 ms.openlocfilehash: 40fb29976ddc89296b4e7911481c09b9ccf6fb9e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="plan-2-trial-for-powerapps"></a>Evaluación del plan 2 para PowerApps
 Regístrese para la evaluación del plan 2 de PowerApps y obtener toda la funcionalidad durante 90 días de manera totalmente gratis. Esta evaluación ofrece más capacidad y características Premium además de la funcionalidad de PowerApps que obtienen en muchos [planes de Office 365 y Dynamics 365](pricing-billing-skus.md). Las características Premium incluyen:
