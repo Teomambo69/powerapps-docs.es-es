@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 3250251e02170d2dd7bab441bc3c94705216ec00
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>Operadores y tipos de datos de PowerApps
 Algunos de estos operadores dependen del idioma del autor.  Para más información, consulte [Aplicaciones globales](../global-apps.md).
@@ -86,8 +86,8 @@ Los controles de esta pantalla tienen otra opción. Pueden utilizar una referenc
 ## <a name="disambiguation-operator"></a>Operador de desambiguación
 Algunas funciones crean [ámbitos de registro](../working-with-tables.md#record-scope) para acceder a los campos de la tabla mientras se procesa cada registro, como **Filtrar**, **AddColumns** y **Suma**.  Los nombres de campo agregados con el ámbito de registro invalidan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador de desambiguación **@**:
 
-* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla*[@*FieldName*]**.  
-* Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*] ** (sin designar ninguna tabla).
+* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón **Tabla*[@*FieldName*]**.  
+* Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*]** (sin designar ninguna tabla).
 
 Para más información y ejemplos, vea la explicación acerca de los [ámbitos de registro](../working-with-tables.md#record-scope).
 

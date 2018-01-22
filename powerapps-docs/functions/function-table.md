@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 2f543a75019bfe5d665aedb2e6171200e8321690
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="table-function-in-powerapps"></a>Función Tabla en PowerApps
 Crea una [tabla](../working-with-tables.md) temporal.
@@ -44,7 +44,7 @@ También puede crear una tabla de una sola columna con la sintaxis **[valor1, va
   
     El cuadro de lista muestra cada color como una opción.
 * Agregue una galería de texto y establezca su propiedad **[Elementos](../controls/properties-core.md)** con esta función:<br>
-  **Tabla ({Elemento: "Violin123", Ubicación: "France", Propietario: "Fabrikam"}, {Elemento: "Violin456", Ubicación: "Chile"})**
+  **Table({Item:"Violin123", Location:"France", Owner:"Fabrikam"}, {Item:"Violin456", Location:"Chile"})**
   
     La galería muestra dos registros, ambos contienen el nombre y la ubicación de un elemento. Solo un registro contiene el nombre del propietario.
 

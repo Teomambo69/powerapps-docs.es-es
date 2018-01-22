@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: gregli
 ms.openlocfilehash: 35f6b462a57a29e6989d6a635425c981b705eaaf
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="language-function-in-powerapps"></a>Función Language en PowerApps
 Devuelve la etiqueta de idioma del usuario actual.
