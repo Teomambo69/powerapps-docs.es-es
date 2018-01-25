@@ -15,17 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 25094d77809e754afbc54fe5e7b2cd644497ff3e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="core-properties-in-powerapps"></a>Propiedades principales en PowerApps
-## <a name="overview"></a>Información general
 Configure la posibilidad de que el usuario puede ver un control e interactuar con él.
 
-## <a name="properties"></a>Propiedades
+### <a name="properties"></a>Propiedades
 **Default**: el valor inicial de un control antes de que lo cambie el usuario.
 
 * Se aplica a los controles **[Tarjeta](control-card.md)**, **[Casilla](control-check-box.md)**, **[Desplegable](control-drop-down.md)**, **[Galería](control-gallery.md)**, **[Cuadro de lista](control-list-box.md)**, **[Radio](control-radio.md)**, **[Clasificación](control-rating.md)**, **[Control deslizante](control-slider.md)**, **[Entrada de texto](control-text-input.md)** y **[Alternancia](control-toggle.md)**.

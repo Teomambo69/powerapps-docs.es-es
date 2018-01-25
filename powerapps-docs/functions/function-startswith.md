@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: fc575ff16f190f85b50ef056430354e32d0ab907
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2ffc183221e399ee978ac9a600b400e96a00f704
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funciones EndsWith y StartsWith en PowerApps
 Comprueba si una cadena de texto comienza o termina con otra cadena de texto.
@@ -31,7 +31,7 @@ La función **StartsWith** comprueba si una cadena de texto comienza con otra.
 
 Para ambas funciones, las pruebas no distinguen mayúsculas de minúsculas.  El valor devuelto por ambas es un valor booleano **true** o **false**.  
 
-Use **EndsWith** y **StartsWith** con la función **[Filter](function-filter-lookup.md)** para buscar los datos dentro de la aplicación. También puede usar el operador **[in](operators.md#in-and-exactin-operators)** o la función **[Search](function-fitler-lookup.md)** para realizar una búsqueda en cualquier lugar dentro de las cadenas de texto, no solo al principio o al final.  La selección de las funciones dependerá de las necesidades de la aplicación y las funciones que se pueden [delegar](../delegation-overview.md) para el origen de datos específico.  Si una de estas funciones no se puede delegar, aparecerá un punto azul en el momento de la creación para avisarle de esta limitación.
+Use **EndsWith** y **StartsWith** con la función **[Filter](function-filter-lookup.md)** para buscar los datos dentro de la aplicación. También puede usar el operador **[in](operators.md#in-and-exactin-operators)** o la función **[Search](function-filter-lookup.md)** para realizar una búsqueda en cualquier lugar dentro de las cadenas de texto, no solo al principio o al final.  La selección de las funciones dependerá de las necesidades de la aplicación y las funciones que se pueden [delegar](../delegation-overview.md) para el origen de datos específico.  Si una de estas funciones no se puede delegar, aparecerá un punto azul en el momento de la creación para avisarle de esta limitación.
 
 ## <a name="syntax"></a>Sintaxis
 **EndsWith**( *Text*, *EndText* )

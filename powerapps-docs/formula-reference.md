@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 9a3aade41bd375a937d68e7da5881d4475693727
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
 
-* Las **funciones** toman parámetros, realizar una operación y devuelven un valor. Por ejemplo, **Sqrt(25)** devuelve **5**. Las funciones se basan en las funciones de Microsoft Excel.  Algunas funciones tienen efectos secundarios, como **SubmitForm**, y solo son adecuadas en una [fórmula de comportamiento](working-with-formulas-in-depth.md#behavior-formulas) como **Button.OnSelect**.
+* Las **funciones** toman parámetros, realizar una operación y devuelven un valor. Por ejemplo, **Sqrt(25)** devuelve **5**. Las funciones se basan en las funciones de Microsoft Excel.  Algunas funciones tienen efectos secundarios, como **SubmitForm**, y solo son adecuadas en una [fórmula de comportamiento](working-with-formulas-in-depth.md) como **Button.OnSelect**.
 * Las **señales** devuelven información sobre el entorno. Por ejemplo, **[Location](functions/signals.md)** devuelve las coordenadas GPS actuales del dispositivo. Las señales no toman parámetros ni tienen efectos secundarios.
 * Las **enumeraciones** devuelven un valor constante predefinido. Por ejemplo, **[Color](functions/function-colors.md)** es una enumeración que tiene valores predefinidos para **Color.Red**, **Color.Blue**, etc.  Aquí se incluyen enumeraciones comunes; las enumeraciones específicas de funciones se describen con la función.
 * Los **operadores con nombre**, como **[ThisItem](functions/operators.md#thisitem-operator)** y **[Parent](functions/operators.md#parent-operator)**, proporcionan acceso a información desde un contenedor.

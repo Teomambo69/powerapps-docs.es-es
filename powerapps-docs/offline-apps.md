@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 95dad93f75503415f714cc36c0f9413b66223353
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0c06b24c0ed253a6589c4eb073a6d01595ed5b59
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Desarrollar aplicaciones que puedan ejecutarse sin conexión con PowerApps
 Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando hay conectividad limitada o no hay ninguna conectividad. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones que puedan ejecutarse sin conexión. Podrá:
@@ -59,8 +59,11 @@ De forma general, la aplicación hace lo siguiente:
     ![Aplicación en blanco, diseño de teléfono](media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>Paso 2: Agregar una conexión de Twitter
+
 1. Pulse o haga clic en **Contenido** > **Orígenes de datos**; a continuación, elija **Agregar origen de datos** en el panel **Orígenes de datos**.
+
 2. Pulse o haga clic en **Nueva conexión**, seleccione **Twitter** y pulse o haga clic en **Crear**.
+
 3. Escriba sus credenciales y cree la conexión.
    
     ![Agregar una conexión de Twitter](media/offline-apps/twitter-connection.png)
@@ -96,8 +99,11 @@ Esta fórmula comprueba si el dispositivo está en línea:
 * Si el dispositivo está sin conexión, se carga la memoria caché local desde un archivo denominado "Tweets", si está disponible.
 
 ### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Paso 4: Agregar una galería y enlazarla a la colección LocalTweets
+
 1. Inserte una nueva galería de alto flexible: **Insertar** > **Galería** > **Galería de altura flexible en blanco**.
+
 2. Establezca la propiedad **Items** en **LocalTweets**.
+
 3. Agregue cuatro controles **Label** para mostrar los datos de cada tweet y establezca sus propiedades **Texto** en:
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
@@ -115,7 +121,9 @@ If (Connection.Connected, "Connected", "Offline")
 Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto de la etiqueta es "Conectado", en caso contrario es "Sin conexión".
 
 ### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Paso 6: Agregar una entrada de texto para redactar nuevos tweets
+
 1. Inserte un nuevo control **Entrada de texto** denominado "NewTweetTextInput".
+
 2. Establezca la propiedad **Reset** de la entrada de texto a **resetNewTweet**.
 
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>Paso 7: Agregar un botón para enviar el tweet
@@ -149,7 +157,9 @@ A continuación, la fórmula restablece el texto en el cuadro de texto.
 Agregue un nuevo control **Temporizador**:
 
 * Establezca la propiedad **Duration** en 300 000.
+
 * Establezca la propiedad **AutoStart** en true.
+
 * Establezca **OnTimerEnd** en la fórmula siguiente:
   
     ```
@@ -176,16 +186,12 @@ Ahora que la aplicación está terminada, comprobemos su aspecto antes de comenz
 ## <a name="testing-the-app"></a>Probar la aplicación
 Para probar la aplicación, siga estos pasos:
 
-1. Ejecute PowerApps en un dispositivo móvil que esté en línea.
-   
-    Debe ejecutar la aplicación estando en línea al menos una vez para que la aplicación pueda descargarse en el dispositivo.
+1. Ejecute PowerApps en un dispositivo móvil que esté en línea. Debe ejecutar la aplicación estando en línea al menos una vez para que la aplicación pueda descargarse en el dispositivo.
 2. Inicie la aplicación de Twitter.
 3. Observe que se cargan los tweets y que muestra el estado **Conectado**.
 4. Cierre PowerApps completamente.
 5. Establezca el dispositivo en modo de avión para asegurarse de que está sin conexión.
-6. Ejecute PowerApps.
-   
-    Ahora puede ejecutar la aplicación de Twitter sin conexión y tener acceso a cualquier otra aplicación que ya haya ejecutado en este dispositivo mientras estaba en línea (es decir, PowerApps oculta las aplicaciones que aún no se ha descargado en el dispositivo).
+6. Ejecute PowerApps. Ahora puede ejecutar la aplicación de Twitter sin conexión y tener acceso a cualquier otra aplicación que ya haya ejecutado en este dispositivo mientras estaba en línea (es decir, PowerApps oculta las aplicaciones que aún no se ha descargado en el dispositivo).
 7. Vuelva a ejecutar la aplicación.
 8. Observe que refleja correctamente el estado de conexión, con un estado de **Sin conexión**.
 9. Escriba un nuevo tweet. Se almacenará localmente en la colección **LocalTweetsToPost**.

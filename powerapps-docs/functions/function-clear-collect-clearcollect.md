@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 532b30b2a8740dc3f4adf879029608c6f764c6e2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cc12241861a1dd6a0242810bb1a6faab70a2de27
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Funciones Collect, Clear y ClearCollect en PowerApps
 Crea y borra [colecciones](../working-with-data-sources.md#collections) y agrega [registros](../working-with-tables.md#records) a cualquier [origen de datos](../working-with-data-sources.md).
@@ -40,7 +40,7 @@ Las colecciones a veces se usan para almacenar variables globales o realizar una
 
 También puede usar la función **[Patch](function-patch.md)** para crear registros en un origen de datos.
 
-**Collect** devuelve el origen de datos modificado como una tabla.  **Collect** solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas).
+**Collect** devuelve el origen de datos modificado como una tabla.  **Collect** solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ### <a name="clear"></a>Clear
 La función **Clear** elimina todos los registros de una colección.  Las columnas de la colección se conservarán.

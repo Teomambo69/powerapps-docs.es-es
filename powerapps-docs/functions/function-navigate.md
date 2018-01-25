@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 710e48f8619c44082d81907e64896b15425e4531
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 58f8c4bf55167e7c891a614a2bfb98ef20dcfd7c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.
@@ -53,7 +53,7 @@ Establezca la propiedad **[AlEstarOculto](../controls/control-screen.md)** de la
 
 **Back** devuelve normalmente **true** pero si el usuario está en la primera pantalla mostrada y no hay una pantalla anterior, devuelve **false**.  **Navigate** devuelve normalmente **true** pero si hay un problema con uno de sus argumentos, devuelve **false**.
 
-Solo puede utilizar estas funciones dentro de una [fórmula de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas).
+Solo puede utilizar estas funciones dentro de una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
 **Back**()

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 76b41c6dc3b23a3d1f30425b9eac1011406a8757
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 736d634e9db5bc97ceb69852c59b229c7478863b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>Funciones Quitar y RemoveIf en PowerApps
 Quita [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
@@ -33,12 +33,12 @@ Para las [colecciones](../working-with-data-sources.md#collections), tiene que c
 ### <a name="removeif-function"></a>Función RemoveIf
 Use la función **RemoveIf** para quitar un registro o registros en función de una condición o un conjunto de condiciones. Cada condición puede ser cualquier fórmula que da como resultado **true** o **false** y puede hacer referencia a [columnas](../working-with-tables.md#columns) del origen de datos por su nombre. Cada condición se evalúa individualmente para cada registro, y si todas las condiciones se evalúan como **true** se elimina el registro.
 
-**Quitar** y **RemoveIf** devuelven el origen de datos modificado como una [tabla](../working-with-tables.md). Puede usar ambas funciones únicamente en [fórmulas de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas).
+**Quitar** y **RemoveIf** devuelven el origen de datos modificado como una [tabla](../working-with-tables.md). Puede usar ambas funciones únicamente en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 También puede usar la función **[Clear](function-clear-collect-clearcollect.md)** para eliminar registros en un origen de datos.
 
 ### <a name="delegation"></a>Delegación
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Sintaxis
 **Quitar**( *DataSource*, *Record1* [, *Record2*, ... ] [, **Todo** ] )

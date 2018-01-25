@@ -15,18 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 8441ac93c1d3f96e0316ff1f044dc58b800d4dd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 02e45c98aa991c14ad99d3bf3f11d02dbc0752aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>Agregar una pantalla de desplazamiento en PowerApps
 Cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, es posible que quiera crear una aplicación en la que los datos aparezcan en un gráfico de columnas y en un gráfico de líneas. Si agrega una pantalla de desplazamiento, podrá incorporar diferentes controles que los usuarios podrán ver al desplazarse.
 
 Cuando se agregan varios controles en una sección, estos mantienen su posición relativa en dicha sección tanto si se trata de una aplicación para el teléfono como de una aplicación para la tableta. Tenga en cuenta que el tamaño y la orientación de la pantalla pueden determinar la organización de las secciones.  
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 

@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/25/2017
-ms.author: ricksal
-ms.openlocfilehash: a85c0f3e0468c249641e40c3a0b7fb7f1d32a916
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: 9839059cca741e47f5f519a45e7291847c1bc792
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>Control Galería en PowerApps
 Un control que contiene otros controles y muestra un conjunto de datos.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 944d6d8bf8c02790af7fa6726c15a94587c6af24
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: c0ca5547f433aea1bee8d5d0d430c3e11a7f4caa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="forall-function-in-powerapps"></a>Función ForAll en PowerApps
 Calcula valores y realiza acciones para todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -27,7 +27,7 @@ Calcula valores y realiza acciones para todos los [registros](../working-with-ta
 ## <a name="description"></a>Descripción
 La función **ForAll** evalúa una fórmula para todos los registros de una tabla.  La fórmula puede calcular un valor o realizar acciones, como modificar datos o trabajar con una conexión.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 ### <a name="return-value"></a>Valor devuelto
 Se devuelve el resultado de cada evaluación de fórmula en una tabla, en el mismo orden que la tabla de entrada.
@@ -49,7 +49,7 @@ Muchas funciones de PowerApps pueden procesar más de un valor a la vez mediante
 Otra consideración a tener en cuenta es que **ForAll** no es delegable mientras que otras funciones sí que lo pueden ser como, por ejemplo, **Filtrar**.  
 
 ### <a name="delegation"></a>Delegación
-[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Sintaxis
 **ForAll**( *Table*, *Formula* )

@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 0fcfb90de55c0504a7a7ff5e7d75cd782b8f56e6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f87b952378c64ec7c67d98b5dfc194cb62be767
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Mostrar texto y dar formato a fechas y horas en PowerApps
 Agregue fechas y horas y deles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
 
 Por ejemplo, agregue datos de usuarios sobre operaciones con acciones o reuniones con clientes, de un origen externo o de otra aplicación creada en PowerApps. Si esos datos incluyen horas detalladas hasta el milisegundo, redondéelas al minuto más cercano para simplificarlas. Calcule cuántos días quedan hasta un hito importante. Si desea programar reuniones con los clientes cada cinco días, calcule esas fechas automáticamente. Si el 10 de mayo de 1985 está almacenado en campos independientes para el día, el mes y el año, consolide esos campos en un solo valor. También puede dividir cada fecha en valores independientes si su aplicación los administra por separado.
 
-**Requisitos previos**
+## <a name="prerequisites"></a>Requisitos previos
 
 * [Suscríbase](signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
 * Cree una aplicación o abra una existente en PowerApps.
@@ -56,7 +56,9 @@ A continuación, se ofrecen algunos ejemplos.
    * **Today**, que calcula el día actual como un valor.
    * **DateValue**, que convierte una cadena literal, como la que se muestra entre comillas dobles, en un valor en el que se pueden realizar cálculos.
 3. Agregue un control **[Text input](controls/control-text-input.md)** denominado **BirthDate** y colóquelo bajo **ShowText**.
+
 4. En **BirthDate**, escriba el mes y el día de su nacimiento (por ejemplo, **05/18**).
+
 5. Establezca la propiedad **[Text](controls/properties-core.md)** de **ShowText** en esta fórmula:
    <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
    
@@ -122,7 +124,9 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    > 
 
 ## <a name="format-a-date-by-using-datevalue"></a>Aplicar formato a una fecha mediante DateValue
+
 1. Agregue un control **[Text input](controls/control-text-input.md)** denominado **ArrivalDate** y, luego, escriba una fecha en él (por ejemplo, **5/10/85**).
+
 2. Agregue un control **[Etiqueta](controls/control-text-box.md)** denominado **FormatDate** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
    <br>**DateValue(ArrivalDate.Text)**
    
@@ -141,8 +145,11 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
     **FormatDate** muestra la fecha en el formato especificado.
 
 ## <a name="format-a-time-using-datetimevalue"></a>Dar formato a una hora mediante DateTimeValue
+
 1. Agregue un control **[Text input](controls/control-text-input.md)** denominado **ArrivalTime** y, luego, escriba **6:15 AM** en él.
+
 2. Agregue un control **[Etiqueta](controls/control-text-box.md)** denominado **ShowTime**.
+
 3. Para usar uno de los varios formatos integrados, establezca la propiedad **[Text](controls/properties-core.md)** de **ShowTime** en esta fórmula:
    <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
    
@@ -158,8 +165,11 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    > 
 
 ## <a name="show-the-time-between-dates"></a>Mostrar el tiempo entre fechas
+
 1. Agregue dos controles **[Text input](controls/control-text-input.md)** denominados **Start** y **End**.
+
 2. Escriba **4/1/2015** en **Start** y **1/1/2016** en **End**.
+
 3. Agregue un control **[Cuadro de texto](controls/control-text-box.md)** denominado **DateDiff** y establezca su propiedad **[Text](controls/properties-core.md)** en esta fórmula:
    <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
@@ -171,7 +181,9 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
     **DateDiff** muestra **9**, que es el número de meses entre el 1 de abril de 2015 y el 1 de enero de 2016. Reemplace **Months** con **Quarters** o **Years** para mostrar el tiempo en trimestres o años.
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>Identificar una fecha antes o después de otra fecha
+
 1. Agregue un control **[Text input](controls/control-text-input.md)** denominado **Start** y escriba **5/10/1985** en él.
+
 2. Agregue un control **[Etiqueta](controls/control-text-box.md)** denominado **DateAdd** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
    <br>**DateAdd(DateValue(Start.Text), 3)**
    
@@ -192,13 +204,18 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
     La etiqueta muestra **8/10/1985**, que es tres meses después de la fecha establecida en **Start**. Reemplace **Months** con **Quarters** o **Years** para identificar una fecha que tenga lugar el número especificado de trimestres o años antes o después de la fecha establecida en **Start**.
 
 ## <a name="calculate-dates-based-on-years-months-and-days"></a>Calcular fechas basándose en años, meses y días
+
 1. Agregue tres controles **[Drop down](controls/control-drop-down.md)** denominados **Year**, **Month** y **Day**.
+
 2. Establezca la propiedad **[Items](controls/properties-core.md)** de **Year** en esta fórmula:
    <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
+
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de **Month** en esta fórmula:
    <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
+
 4. Establezca la propiedad **[Items](controls/properties-core.md)** de **Day** en esta fórmula:
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
+
 5. Agregue un control **[Etiqueta](controls/control-text-box.md)** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
@@ -215,13 +232,18 @@ Es posible que deba convertir datos que no esperaba. Si agrega controles **[Text
 * Si un valor de día es menor que 1, la función resta esa cantidad de días, más 1, del primer día del mes especificado.
 
 ## <a name="calculate-times-based-on-hours-minutes-and-seconds"></a>Calcular tiempos basándose en horas, minutos y segundos
+
 1. Agregue dos listas **Drop-down** denominadas **Hour** y **Minute**.
+
 2. Establezca la propiedad **[Items](controls/properties-core.md)** de **Hour** en esta fórmula:
    <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
+
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de **Minute** en esta fórmula:
    <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
+
 4. Agregue un control **[Etiqueta](controls/control-text-box.md)** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:  
    <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
+
 5. Seleccione **15** en **Hour** y **45** en **Minute**.
    
     El control **[Etiqueta](controls/control-text-box.md)** muestra **3:45 PM**.

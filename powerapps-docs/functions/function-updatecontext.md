@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 16d2ed94b44b8b0e521aa5690885fcd1617dc024
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Función UpdateContext de PowerApps
 Crea o actualiza [variables de contexto](../working-with-variables.md#create-a-context-variable) de la pantalla actual.
@@ -38,9 +38,9 @@ Para crear o actualizar una variable de contexto, pase un solo [registro](../wor
 * Si especifica el nombre de una variable que no existe todavía, **UpdateContext** crea una variable con ese nombre y establece el valor de esa variable en el valor que especifique.
 * Si previamente se ha definido una variable pero no se especifica en esta fórmula de **UpdateContext** específica, su valor sigue siendo el mismo.
 
-Se pueden crear implícitamente variables de contexto mediante la función **UpdateContext** o [**Navegar** ](function-navigate.md).  No es necesaria ninguna declaración explícita.  Si quita todas las referencias de **UpdateContext** y **Navegar** a una variable de contexto, posteriormente, esa variable de contexto dejará de existir.  Para borrar una variable, establezca su valor en el resultado de la función [**Blank**](function-blank.md). 
+Se pueden crear implícitamente variables de contexto mediante la función **UpdateContext** o [**Navegar** ](function-navigate.md).  No es necesaria ninguna declaración explícita.  Si quita todas las referencias de **UpdateContext** y **Navegar** a una variable de contexto, posteriormente, esa variable de contexto dejará de existir.  Para borrar una variable, establezca su valor en el resultado de la función [**Blank**](function-isblank-isempty.md).
 
-Puede ver los valores de las variables, las definiciones y los usos con la vista Variables del menú Archivo en el entorno de creación. 
+Puede ver los valores de las variables, las definiciones y los usos con la vista Variables del menú Archivo en el entorno de creación.
 
 Para hacer referencia a una variable de contexto en una fórmula, se usa el nombre de columna de la variable. Por ejemplo, **UpdateContext ({ShowLogo: true})** crea una variable de contexto llamada **ShowLogo** y establece su valor en **true**. Después, puede usar el valor de esta variable de contexto con el nombre **ShowLogo** en una fórmula.  Puede escribir **ShowLogo** como fórmula para la propiedad **Visible** de un control de imagen, y mostrar u ocultar ese control en función de si el valor de la variable de contexto es **true** o **false**.
 
@@ -56,7 +56,7 @@ Una variable de contexto guarda su valor hasta que se cierra la aplicación.  Si
 
 El ámbito de una variable de contexto se limita a una pantalla. Si desea definir una variable de contexto en una pantalla y modificarla desde otra pantalla, debe crear una fórmula que se basa en la función  **[Navegar](function-navigate.md)** .  O bien, use una variable global.
 
-**UpdateContext** no devuelve ningún valor y solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas).
+**UpdateContext** no devuelve ningún valor y solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
 **UpdateContext**( *UpdateRecord* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 6b969ca59f28abfefe91c887c2755ee7a7d28ed4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>Funciones Si y Cambiar de PowerApps
 Determina si se cumple alguna condición de un conjunto (**Si**) o si el resultado de una fórmula coincide con algún valor de un conjunto (**Cambiar**) y luego devuelve un resultado o ejecuta una acción.
@@ -35,7 +35,7 @@ Las funciones **Si** y **Cambiar** son muy parecidas, así que debe usar aquella
 * Use **Si** para evaluar varias condiciones no relacionadas. En PowerApps (a diferencia de Microsoft Excel), puede especificar varias condiciones sin tener que anidar fórmulas **Si**.
 * Use **Cambiar** para evaluar una condición única contra varias coincidencias posibles. También podría usar **Si** en este caso, pero tendría que repetir la fórmula con cada posible coincidencia.
 
-Puede usar ambas funciones en [fórmulas de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas) para crear una bifurcación entre dos o más acciones. Solo una bifurcación desencadenará una acción. Las condiciones y coincidencias se evalúan en orden y se detienen si una condición es **verdadera** o se encuentra una coincidencia.
+Puede usar ambas funciones en [fórmulas de comportamiento](../working-with-formulas-in-depth.md) para crear una bifurcación entre dos o más acciones. Solo una bifurcación desencadenará una acción. Las condiciones y coincidencias se evalúan en orden y se detienen si una condición es **verdadera** o se encuentra una coincidencia.
 
 Se devuelve *en blanco* si ninguna condición es **verdadera**, no se encuentra ninguna coincidencia y no especifica un resultado predeterminado.
 
@@ -83,7 +83,7 @@ En los ejemplos siguientes, un control **[Entrada de texto](../controls/control-
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y asígnele el nombre **Text1**, siempre que no sea su nombre predeterminado.
 2. En **Text1**, escriba **30**.
 3. Agregue un control **Etiqueta** y establezca su propiedad **[Texto](../controls/properties-core.md)** en esta fórmula:<br>
-   **If( Value(Text1.Text) < 20, "Order MANY more!", Value(Text1.Text) < 40, "Order more!", Text1.Text )**
+   **Si( Value(Text1.Text) < 20, "Pida MUCHO más", Value(Text1.Text) < 40, "Pida más", Text1.Text )**
    
     El control **Etiqueta** muestra **Order more!** dado que el valor de **Text1** es superior a 20, pero inferior a 40.
 4. En **Text1**, escriba **15**.

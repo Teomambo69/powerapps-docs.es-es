@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: b589a03f592c02547dce0e74a5c4d3ac74c436a1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a1966016b07a79a23880511a5cc0d6da8643adbc
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda
 En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con campos de búsqueda.
@@ -58,58 +58,77 @@ Lo más probable es que defina campos adicionales en función de la información
 Esto se hace en primer lugar, para que cuando agregue datos a la lista **Assets**, haya entradas de **RepairShop** disponibles para su elección en el campo de búsqueda *Assets.RepairShop*.
 
 1. En el sitio de SharePoint, cree una nueva lista **RepairShop**.
-   
+
     ![](./media/sharepoint-lookup-fields/new-list.png)
+
 2. Agregue un campo *ContactEmail* del tipo **Una línea de texto**.
-   
+
     ![](./media/sharepoint-lookup-fields/add-email-field.png)
+
 3. Agregue los demás campos que necesite.
+
 4. Pulse o haga clic en **+ Nuevo** para escribir datos de ejemplo en la lista; al menos tres filas con distintos valores de *ContactEmail*. Cuando resulte necesario reparar un recurso, elija uno de esos valores.
-   
+
     ![](./media/sharepoint-lookup-fields/add-repair-shops.png)
 
 ### <a name="define-the-assets-list"></a>Definir la lista Assets
 1. En el sitio de SharePoint, cree una nueva lista **Assets**.
+
 2. Pulse o haga clic el signo más y elija **Más**.
-   
+
     ![](./media/sharepoint-lookup-fields/choose-more-type.png)
+
 3. Agregue un campo *AssetType* del tipo **Elección** y, en el cuadro de texto **Escriba cada opción en una línea distinta**, escriba los valores que desee que aparezcan en el menú para elegir. Luego pulse o haga clic en **Aceptar**.
-   ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
+    ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
 4. Empiece a agregar otro campo. Al igual que en el paso 2, pulse o haga clic en el signo más y elija **Más**.
+
 5. Agregue un campo *RepairShop* del tipo **Búsqueda**, elija **RepairShop** en el cuadro de texto **Obtener información de** y elija *ContactEmail* en el cuadro de texto **En esta columna**. Luego pulse o haga clic en **Aceptar**.
-   ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
+    ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
 6. Agregue los campos adicionales que desee.
 
 ## <a name="create-an-app-from-the-assets-list"></a>Crear una aplicación de la lista Assets
 Puede usar esta aplicación para agregar datos a la lista **Assets**.
 
 1. Abra PowerApps Studio. Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) con la dirección de correo electrónico de su organización y siga las instrucciones para descargar PowerApps Studio desde la Tienda Windows.
+
 2. En el menú **Archivo** (en el borde izquierdo), pulse o haga clic en **Nuevo** y, luego, pulse o haga clic en **SharePoint**.
 
-![](./media/sharepoint-lookup-fields/create-app.png)
+    ![](./media/sharepoint-lookup-fields/create-app.png)
 
 1. Elija su sitio de SharePoint en la lista **Sitios recientes** o escriba la URL de su sitio directamente en el cuadro de texto. Pulse o haga clic en **Ir**.
 
-![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
+    ![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
 
 1. Elija la lista principal desde el sitio de SharePoint; en este ejemplo, **Assets**. Pulse o haga clic en el botón **Conectar**, situado en la esquina inferior derecha.
 
-![](./media/sharepoint-lookup-fields/choose-main-list.png)
+    ![](./media/sharepoint-lookup-fields/choose-main-list.png)
+
 
 ## <a name="add-data-to-the-assets-list"></a>Agregar datos a la lista Assets
 Ahora puede ejecutar la aplicación y ver el aspecto de la pantalla para ver detalles de los campos de búsqueda.
 
 1. Presione F5 o seleccione la vista previa ( ![](./media/sharepoint-lookup-fields/preview.png) ).
+
 2. Pulse o haga clic en el símbolo **+** situado en la esquina superior derecha para agregar una entrada.
+
 3. Escriba un **Título** para este recurso.
+
 4. Pulse o haga clic en la flecha desplegable de **AssetType**. Los valores mostrados son aquellos que especificó cuando creó este campo. Elija una de las entradas.
-   
+
     ![](./media/sharepoint-lookup-fields/fill-asset-type-3.png)
+
 5. Pulse o haga clic en la flecha desplegable de **RepairShop**. Elija una de las entradas.
-   
+
     ![](./media/sharepoint-lookup-fields/fill-repair-shop-3.png)
+
 6. En la esquina superior derecha, pulse o haga clic en la marca de verificación para guardar la nueva entrada.
+
 7. (Opcional) Repita este procedimiento para agregar tantos elementos a la lista como desee.
+
 8. Presione Esc para volver al área de trabajo predeterminada.
 
 ## <a name="for-more-information"></a>Más información
@@ -117,4 +136,3 @@ Ahora puede ejecutar la aplicación y ver el aspecto de la pantalla para ver det
 * [Performance, Refresh button, ForAll, and multiple field lookups](https://powerapps.microsoft.com/blog/performance-refresh-forall-multiple-field-lookups-531/) (Rendimiento, botón Actualizar, ForAll y búsquedas en varios campos)
 * [Generate an app by using a Common Data Service database](data-platform-create-app.md) (Generar una aplicación mediante una base de datos de Common Data Service)
 * [Create an app from scratch using a Common Data Service database](data-platform-create-app-scratch.md) (Crear una aplicación desde cero mediante una base de datos de Common Data Service)
-

@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: f3cc5a8116f84d61576d75b22a8e3197d6ec7e42
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 214b11c4f23db29d097b2d97052473d8f436d533
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>Crear una aplicación desde cero mediante una base de datos de Common Data Service
 Cree una aplicación para administrar datos que se almacenan en Common Data Service, usando entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
 
 Al crear una aplicación desde Common Data Service, no es necesario crear una conexión desde Microsoft PowerApps, como ocurre con orígenes de datos tales como SharePoint, Dynamics 365 y Salesforce. Solo necesita especificar las entidades que desea mostrar, administrar o usar para ambas actividades en la aplicación.
 
-[!VIDEO nb:cid:UUID:5db63c4d-6aeb-45c5-9609-8f4bbdd37bc6]
+
 
 
 1. Cree una base de datos de Common Data Service. Para más información, consulte [Crear una base de datos de Common Data Service](create-database.md).

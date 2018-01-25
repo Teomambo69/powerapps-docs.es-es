@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/14/2017
 ms.author: manasma
-ms.openlocfilehash: 8ce5f86f37bccba952d5b9c662049f17df43fb14
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 18c72e1324a9c1c7c0bb666b3baf16c6e5f84ead
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-powerapps-created-in-your-organization"></a>Visualización de una instancia de PowerApps creada en su organización
 El administrador de un entorno ya puede descargar una lista de aplicaciones que se crean en dicho entorno desde el [centro de administración de PowerApps][1]. Los administradores globales de Office 365 o los administradores de inquilinos de Azure Active Directory pueden descargar la lista de aplicaciones de todos los entornos de la organización. La lista contiene el nombre de la aplicación, el creador de la aplicación y todos los conectores que la aplicación usa para conectarse a orígenes de datos, entre otra información.
 
-## <a name="download-the-list-of-apps"></a>Descarga de la lista de aplicaciones
+### <a name="download-the-list-of-apps"></a>Descarga de la lista de aplicaciones
 1. En el centro de administración de PowerApps, haga clic en **Entornos** en la parte izquierda y seleccione el entorno cuya lista de aplicaciones desea ver:
    
     ![Archivo y Compartir](./media/admin-view-apps/environment.png)

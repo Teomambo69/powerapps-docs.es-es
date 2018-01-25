@@ -15,14 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: a5dbc7be8840e1fa596594262cf03de358a14225
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 56cfcc2e19620f5acd8c0fcc4c207020f1a453c1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-properties-in-powerapps"></a>Propiedades de imagen en PowerApps
-## <a name="overview"></a>Información general
 Configure elementos gráficos en su aplicación, incluyendo imágenes, fotos y elementos de un control de lápiz.
 
 **BackgroundImage**: nombre de un archivo de imagen que aparece en el fondo de una pantalla.

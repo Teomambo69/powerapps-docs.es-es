@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 94e4eaa5209bbcaf6cd191ed2dfdf27d9eab1d5f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Tal como se describe en detalle en el artículo [Descripción de delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación para procesarlos localmente.
@@ -31,7 +31,6 @@ Solo se admite la delegación para los orígenes de datos tabulares. En esta lis
 * SQL Server: **sí**
 * Dynamics 365: **sí**
 * Salesforce: **sí**
-* Excel: **próximamente**
 * Dynamics 365 for Operations: todavía no
 * Dynamics 365 for Financials: todavía no
 * Dynamics NAV: todavía no
@@ -41,7 +40,7 @@ Se agregan continuamente más orígenes de datos tabulares y compatibilidad con 
 
 En este documento se describe el estado actual de la delegación admitida para cada origen de datos.
 
-**Requisitos previos**
+## <a name="prerequisites"></a>Requisitos previos
 
 * Familiarícese con el artículo [Descripción de delegación](delegation-overview.md).
 
@@ -77,4 +76,3 @@ Esta lista de orígenes de datos, y funciones y predicados delegables se actuali
 | StartsWith |No |Sí |No |No |No |
 
 <sup>2</sup>Solo para operadores. Función Y/O/No no delegada.
-

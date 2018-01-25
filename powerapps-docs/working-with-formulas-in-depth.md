@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 69e2252b60b559e68191399196b4957f77e51ee4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7bb0d9f3db9353511e8a5ed85f016049a96f7dae
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-behavior-formulas-in-powerapps"></a>Información sobre las fórmulas de comportamiento en PowerApps
-## <a name="behavior-formulas"></a>Fórmulas de comportamiento
+
 La mayoría de las fórmulas calcula un valor.  Al igual que una hoja de cálculo de Excel, el cálculo nuevo se realiza automáticamente cuando cambian los valores.  Por ejemplo, es posible que desee mostrar el valor de un control **[Etiqueta](controls/control-text-box.md)** en rojo si el valor es menor que cero o en blanco, si no es el caso. De este modo, puede establecer la propiedad **[Color](controls/properties-color-border.md)** de ese control en esta fórmula:
 <br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 

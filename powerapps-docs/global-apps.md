@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 11eb01c2476d06f11299bd91e34f353f5b1075d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="global-support"></a>Compatibilidad global
 PowerApps es un producto global.  Puede crear y usar aplicaciones en muchas regiones e idiomas diferentes.
@@ -79,11 +79,11 @@ El cambio en el separador de lista de PowerApps es coherente con el separador de
 
 Por ejemplo, considere la siguiente fórmula en "en-US":
 
-* **If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
 
 En un idioma que usa "," como separador decimal, esta descripción aparecerá en la experiencia de creación como:
 
-* **If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
 
 Tenga en cuenta que el operador de selección de propiedad **.** en **Slider1.Value** siempre es el mismo, independientemente de cuál sea el separador decimal.
 
@@ -101,7 +101,7 @@ Entre otras cosas, puede usar **Language** para mostrar texto traducido a los us
 
 Y, a continuación, utilizar una fórmula como la siguiente para extraer las cadenas traducidas de la tabla:
 
-* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Tenga en cuenta que las cadenas traducidas a otros idiomas podrían ocupar más espacio que las que están en su idioma.  En muchos casos, las etiquetas y otros elementos que muestran las cadenas en la interfaz de usuario necesitarán ser más anchos para dar cabida a esas cadenas.
 
@@ -153,4 +153,3 @@ Las funciones **[Calendar](functions/function-clock-calendar.md)** y **[Clock](f
 Entre otras cosas, use estas funciones para proporcionar un control **Dropdown** con una lista de opciones.  
 
 Para más información, consulte la documentación de las funciones **[Calendar](functions/function-clock-calendar.md)** y **[Clock](functions/function-clock-calendar.md)**.
-
