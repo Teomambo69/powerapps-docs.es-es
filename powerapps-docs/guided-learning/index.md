@@ -8,11 +8,11 @@ ms.service: powerapps
 ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
-ms.openlocfilehash: 40d2849e0ba4ed664d8099bae335717841e1eac2
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 6da595d920e7911f6b776a628b3f8d91ccf3a0ca
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -37,27 +37,27 @@ ms.lasthandoff: 01/12/2018
 Introducción </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-1">Introducción a PowerApps</a>
+                                <a class="barLink" href="get-started.yml#step-1">Introducción a PowerApps</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-2">Las partes de PowerApps</a>
+                                <a class="barLink" href="get-started.yml#step-2">Las partes de PowerApps</a>
                                 <span style="margin-left: 32px; align-self: center;">6 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-3">Tecnologías relacionadas</a>
+                                <a class="barLink" href="get-started.yml#step-3">Tecnologías relacionadas</a>
                                 <span style="margin-left: 32px; align-self: center;">6 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-4">Un vistazo rápido a la creación de aplicaciones</a>
+                                <a class="barLink" href="get-started.yml#step-4">Un vistazo rápido a la creación de aplicaciones</a>
                                 <span style="margin-left: 32px; align-self: center;">6 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-5">Creación de su primera aplicación</a>
+                                <a class="barLink" href="get-started.yml#step-5">Creación de su primera aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-6">Revisión de esta sección</a>
+                                <a class="barLink" href="get-started.yml#step-6">Revisión de esta sección</a>
                                 <span style="margin-left: 32px; align-self: center;">2 m</span>
                               </li>
                           </ul>
@@ -80,19 +80,19 @@ Introducción </h3>
 Creación de una aplicación en SharePoint </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-1">Generación de una aplicación</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-1">Generación de una aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">3 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-2">Exploración de una aplicación generada</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-2">Exploración de una aplicación generada</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-3">Personalización de la aplicación</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-3">Personalización de la aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-4">Exploración de las fórmulas de la aplicación</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-4">Exploración de las fórmulas de la aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">9 m</span>
                               </li>
                             </ul>
@@ -115,19 +115,19 @@ Creación de una aplicación en SharePoint </h3>
 Creación de una aplicación en Common Data Service </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-1">Generación de una aplicación</a>
+                                <a class="barLink" href="create-app-cds.yml#step-1">Generación de una aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">6 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-2">Exploración de una aplicación generada</a>
+                                <a class="barLink" href="create-app-cds.yml#step-2">Exploración de una aplicación generada</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-3">Personalización de la aplicación</a>
+                                <a class="barLink" href="create-app-cds.yml#step-3">Personalización de la aplicación</a>
                                 <span style="margin-left: 32px; align-self: center;">12 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-4">Adición de un origen y un flujo de datos</a>
+                                <a class="barLink" href="create-app-cds.yml#step-4">Adición de un origen y un flujo de datos</a>
                                 <span style="margin-left: 32px; align-self: center;">11 m</span>
                               </li>
                           </ul>
@@ -150,15 +150,15 @@ Creación de una aplicación en Common Data Service </h3>
 Administración de aplicaciones </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-1">Uso compartido de las aplicaciones</a>
+                                <a class="barLink" href="manage-apps.yml#step-1">Uso compartido de las aplicaciones</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-2">Control de versiones de las aplicaciones</a>
+                                <a class="barLink" href="manage-apps.yml#step-2">Control de versiones de las aplicaciones</a>
                                 <span style="margin-left: 32px; align-self: center;">1 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-3">Entornos</a>
+                                <a class="barLink" href="manage-apps.yml#step-3">Entornos</a>
                                 <span style="margin-left: 32px; align-self: center;">8 m</span>
                               </li>
                           </ul>
@@ -181,23 +181,23 @@ Administración de aplicaciones </h3>
 Administración de datos </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-1">Common Data Service</a>
+                                <a class="barLink" href="manage-data.yml#step-1">Common Data Service</a>
                                 <span style="margin-left: 32px; align-self: center;">5 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-2">Descripción de las entidades de Common Data Service</a>
+                                <a class="barLink" href="manage-data.yml#step-2">Descripción de las entidades de Common Data Service</a>
                                 <span style="margin-left: 32px; align-self: center;">8 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-3">Creación de entidades personalizadas</a>
+                                <a class="barLink" href="manage-data.yml#step-3">Creación de entidades personalizadas</a>
                                 <span style="margin-left: 32px; align-self: center;">6 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-4">Administración de datos de entidad</a>
+                                <a class="barLink" href="manage-data.yml#step-4">Administración de datos de entidad</a>
                                 <span style="margin-left: 32px; align-self: center;">7 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-5">Seguridad de Common Data Service</a>
+                                <a class="barLink" href="manage-data.yml#step-5">Seguridad de Common Data Service</a>
                                 <span style="margin-left: 32px; align-self: center;">8 m</span>
                               </li>
                           </ul>
