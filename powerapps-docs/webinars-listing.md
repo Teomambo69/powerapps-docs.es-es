@@ -13,41 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/16/2018
+ms.date: 1/29/2018
 ms.author: v-malyng
-ms.openlocfilehash: 46bb36b3fd712124624e9435581379b56702e20c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. No dude en sugerir temas adicionales en los comentarios de este tema.
 
 ## <a name="upcoming-webinars"></a>Seminarios web que se celebrarán en las próximas fechas ##
-**Using PowerApps and Flow to create Line of Business “portals” with Vishwas Lele** (Uso de PowerApps y Flow para crear “portales” de línea de negocios con Vishwas Lele)
-<br>por Vishwas Lele
-<br>*18 de enero, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
-
-Vishwas mostrará un PowerApp que es básicamente un "portal" para las aplicaciones (inventario, contratos, etc.) y servicios (Dynamics, Office 365, DropBox. etc.) empresariales existentes de una línea de negocios. Mediante el uso de características de PowerApps como los conectores estándar, la integración con Flow y la habilitación de dispositivos móviles aprenderá lo fácil que es compilar una aplicación para los trabajadores de la información que les permita tener toda la información en una sola ubicación y en el dispositivo que prefieran.  
-
-[Haga clic aquí para verlo el 18 de enero](http://www.youtube.com/watch?v=eSMAAFHK44c)
-
-**Connector Series | Working with Connectors: Using the Planner Connector** (Connector Series | Uso de conectores: el conector de Planner)
-<br>por Audrie Gordon
-<br>*22 de enero, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
-
-En esta nueva entrega mensual de los seminarios web "Connector Series", analizaremos distintas opciones para usar nuestros más de 200 conectores de datos y de SaaS con PowerApps y Flow. Empezaremos esta serie con una revisión del conector de "Planner" para Office 365. Encontrará algunas sugerencias acerca de su uso y varias ideas nuevas para aplicaciones empresariales que usen PowerApps con el conector de Planner.
-
-[Haga clic aquí para verlo el 22 de enero](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
-
 **Getting Started | Product Integrations: Teams + PowerApps Tips and Tricks** (Introducción | Integraciones de productos: consejos y sugerencias para usar Teams + PowerApps)
 <br>por Audrie Gordon
-<br>*29 de enero, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
+<br>*31 de enero, 10:00 (PST), 13:00 (EST)*
 
 En este seminario web verá la forma en que PowerApps y Teams funcionan conjuntamente para crear soluciones empresariales más eficaces en un instante. Le mostraremos cómo aprovechar PowerApps en sus canales de Teams y le daremos ideas para que aproveche estos productos de manera conjunta para mejorar la colaboración entre equipos.
 
-[Haga clic aquí para verlo el 29 de enero](https://www.youtube.com/watch?v=obBQk-aSElI)
+[Haga clic aquí para verlo el 31 de enero](https://www.youtube.com/watch?v=obBQk-aSElI)
 
 **Connector Series | The Power of Office Graph with PowerApps** (Connector Series | La potencia del uso de Office Graph con PowerApps)
 <br>por Audrie Gordon
@@ -56,6 +40,14 @@ En este seminario web verá la forma en que PowerApps y Teams funcionan conjunta
 Audrie Gordon, jefa de programas del equipo de PowerApps, muestra cómo aprovechar PowerApps con tecnologías de Office Graph. Personalizaremos una de nuestras plantillas y maximizaremos el impacto de Office Group en un escenario empresarial típico.
 
 [Haga clic aquí para verlo el 5 de febrero](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**Profundización | Compilación de soluciones para aplicar revisiones en servidores con PowerApps, por Brian Blanchard**
+<br>por Audrie Gordon
+<br>*19 de febrero, 10:00 (PST), 13:00 (EST)*
+
+Brian Blanchard, de Microsoft Retail Stores, nos demuestra cómo ha compilado aplicaciones para su equipo con el objetivo de administrar la programación de la aplicación de revisiones en los servidores. Compartirá tanto la versión de escritorio como la versión para móviles que usan hoy en día para agilizar y simplificar el proceso de aplicación de revisiones. Enhorabuena, Brian, por aprovechar PowerApps y Flow para ahorrar tiempo y dinero al equipo.
+
+[Haga clic aquí para verlo el 19 de febrero](https://www.youtube.com/watch?v=QAe0oBecowU)
 
 ## <a name="past-webinars"></a>Seminarios web anteriores ##
 Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que deberá volver a escribir los detalles de registro y después recibirá un vínculo a la grabación por correo electrónico.
@@ -124,6 +116,12 @@ Los seminarios web están disponibles a petición tras su difusión en directo. 
 
 **New Office Graph Templates (Part 2)** [Nuevas plantillas de Office Graph (parte 2)]
 <br>por Emma Cooper [Véalo ahora](https://www.youtube.com/watch?v=9PopTeLdpmU)
+
+**Using PowerApps and Flow to create Line of Business "portals"** (Uso de PowerApps y Flow para crear "portales" de línea de negocios)
+<br>por Vishwas Lele [Véalo ahora](http://www.youtube.com/watch?v=eSMAAFHK44c)
+
+**Working with Connectors: Using the Planner Connector** (Trabajar con conectores: uso del conector de Planner)
+<br> por Audrie Gordon [Véalo ahora](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 ### <a name="app-designer-topics"></a>Temas del Diseñador de aplicaciones ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger** (Descubra lo que sucede entre bastidores con una desarrolladora de PowerApps, un examen más detallado de las plantillas: Marie Hoeger)

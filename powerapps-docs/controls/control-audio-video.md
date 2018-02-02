@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a79ef2ff58667b5a2516056f29845330745e5936
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
 
 ## <a name="description"></a>Descripción
-Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabación de un control **[Micrófono](control-microphone.md)** o el audio de una pista de audio de un archivo de vídeo. Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTube si especifica una dirección URL.
+Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabación de un control **[Micrófono](control-microphone.md)** o el audio de una pista de audio de un archivo de vídeo. Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTube si especifica una dirección URL con subtítulos opcionales.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Bucle**: indica si una secuencia de audio o vídeo empieza de nuevo automáticamente en cuanto termina de reproducirse.
@@ -44,6 +44,8 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+
+**ClosedCaptionsUrl**: solo control de vídeo.  Dirección URL del archivo de los subtítulos en formato de WebVTT.  Ambas direcciones URL, la del vídeo y la de los subtítulos, deben ser HTTPS. El servidor que hospede los archivos de vídeo y los subtítulos debe tener CORS habilitado.
 
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
@@ -89,10 +91,10 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 1. En el menú **Archivo**, pulse o haga clic en **Multimedia**, pulse o haga clic en **Vídeos** o **Audio** y, luego, pulse o haga clic en **Examinar**.
 2. Busque el archivo que desea usar, pulse o haga clic en él y, luego, pulse o haga clic en **Abrir**.
 3. Presione Esc para volver al área de trabajo predeterminada, agregue un control **Audio** o **Vídeo** y establezca su propiedad **Multimedia** en el archivo que ha agregado.
-   
+
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 4. Presione F5 y, a continuación, reproduzca la secuencia haciendo clic o pulsando en el botón de reproducción del control que ha agregado.
-   
+
     > [!TIP]
 > El botón de reproducción del control **Vídeo** aparece cuando mantiene el puntero sobre el control.
 5. Presione Esc para volver al área de trabajo predeterminada.
@@ -101,4 +103,3 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 1. Agregue un control **Vídeo** y establezca su propiedad **Multimedia** en la dirección URL, incluida entre comillas, de un vídeo de YouTube.
 2. Presione F5 y, a continuación, reproduzca la secuencia haciendo clic o pulsando en el botón de reproducción del control **Vídeo**.
 3. Presione Esc para volver al área de trabajo predeterminada.
-

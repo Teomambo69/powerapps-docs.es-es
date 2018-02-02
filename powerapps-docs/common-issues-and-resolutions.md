@@ -13,16 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.author: sharik
-ms.openlocfilehash: b359a4f5dcc930b344ded68d5ffcd3ae72c007c6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: f6b91bcc8b5e4c9d0128c2cba1eb3f772c6f7451
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 ## <a name="recently-addedchanged"></a>Agregado o cambiado recientemente
+1. **La aplicación no funciona**
+
+    Si una aplicación que ha creado deja de funcionar sin previo aviso, es posible que sea porque no la ha actualizado o vuelto a publicar en los últimos seis meses. Para resolver el problema, actualice o vuelva a publicar la aplicación para sincronizarla con la última versión de PowerApps y, a continuación, asegúrese de volver a hacerlo periódicamente en un máximo de seis meses.
+
 1. **Control Data Table**
 
     Si copia y pega un control **Data Table** en el que la propiedad **Elementos** se ha establecido en una fórmula que contenga una función **Filter**, la fórmula de la propiedad  **Elementos** del nuevo control **Data Table** termina una con nombres de campo que contienen el sufijo **_1**. Esto hace que los nombres de campo no sean válidos y que no se muestren datos en la tabla de datos. Para solucionar este problema, antes de copiar el control, confirme que la función **Filter** no hace referencia a ningún campo del origen de datos que se llame igual que alguna columna del control **Data Table**. En caso de que haga referencia, cambie el nombre de la columna en el control **Data Table**. O bien, quite el sufijo **_1** sufijo de los nombres de campo no válidos para que coincidan con los nombres de la entidad.

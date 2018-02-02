@@ -13,22 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2018
+ms.date: 01/31/2018
 ms.author: sharik
-ms.openlocfilehash: 5f3336d4cd3ab45f35a3ce93441dd30ffccbaca5
-ms.sourcegitcommit: 7d66f33f1419751dd1c758e344cc6d55818a0fd5
+ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
+ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
 
+## <a name="jan-31"></a>31 de enero
+1. Se han agregado subtítulos a los controles de [Vídeo](controls/control-audio-video.md).
+2. Se ha mejorado el control de los errores en los controles del [Visor de PDF](controls/control-pdf-viewer.md).
+
 ## <a name="jan-18"></a>18 de enero
-* PowerApps para iOS y Android ahora admiten la integración con Microsoft Authenticator.
-* A [cuadro combinado](controls/control-combo-box.md) reemplaza el [control de búsqueda de SharePoint](sharepoint-lookup-fields.md) en los formularios y se selecciona una nueva plantilla de [tarjeta de datos](working-with-cards.md) para los campos de búsqueda de selección única de manera predeterminada en PowerApps Studio.
-* En los [cuadros combinados](controls/control-combo-box.md), todos los elementos se ven en lista larga con modo de lectura mejorado.
-* Control del tamaño del límite de registros locales que se almacenan, hasta un máximo de 2000 registros en las [consultas no delegables](delegation-overview.md#non-delegable-limits). (característica experimental)
+1. PowerApps para iOS y Android ahora admiten la integración con Microsoft Authenticator.
+2. A [cuadro combinado](controls/control-combo-box.md) reemplaza el [control de búsqueda de SharePoint](sharepoint-lookup-fields.md) en los formularios y se selecciona una nueva plantilla de [tarjeta de datos](working-with-cards.md) para los campos de búsqueda de selección única de manera predeterminada en PowerApps Studio.
+3. En los [cuadros combinados](controls/control-combo-box.md), todos los elementos se ven en lista larga con modo de lectura mejorado.
+4. Control del tamaño del límite de registros locales que se almacenan, hasta un máximo de 2000 registros en las [consultas no delegables](delegation-overview.md#non-delegable-limits). (característica experimental)
 
 ## <a name="jan-5"></a>5 de enero
 * Actúe en los datos directamente desde un informe o panel de Power BI mediante la integración de un [objeto visual personalizado de PowerApps (versión preliminar)](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/), que extrae los datos contextuales del informe de Power BI.
@@ -63,9 +67,3 @@ Para más información sobre las limitaciones conocidas, consulte [Problemas y r
 ## <a name="aug-15"></a>15 de agosto
 1. Descargue un [lista de aplicaciones](admin-view-apps.md) que se usan en su organización.
 2. Delegue las funciones **Suma**, **Promedio**, **Min** y **Max** funciones para SQL Server.
-
-## <a name="july-26"></a>26 de julio
-1. Mostrar un [icono de Power BI](controls/control-power-bi-tile.md) dentro de una aplicación.
-2. Usar la función  **[Coalesce](functions/function-isblank-isempty.md)** para reemplazar fácilmente un valor en blanco y dejar los otros valores tal y como están.
-3. Usar la función  **[EndsWith](functions/function-startswith.md)** para comprobar si una cadena de texto termina con otra cadena de texto.
-4. Usar los operadores **[And](functions/operators.md)**, **[Or](functions/operators.md)** o **[Not](functions/operators.md)** en una fórmula.
