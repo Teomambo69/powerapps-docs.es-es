@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 225f4d79cee5a960116cb29efd06a8a5d229673c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="powerapps-for-microsoft-partners-and-isvs"></a>PowerApps para asociados e ISV de Microsoft
 Como asociado de Microsoft o proveedor de software independiente (ISV), puede acelerar la incorporación de sus clientes si amplía sus productos para que integren los datos y los procesos empresariales de los clientes. Trabaje con los datos almacenados en Common Data Service y cree conectores de compilación que permitan a los clientes conectarse a sus productos a través de las aplicaciones que creen en PowerApps. Genere clientes potenciales para su empresa mediante la creación de una aplicación con PowerApps y la publicación en AppSource para la prueben los clientes nuevos.
