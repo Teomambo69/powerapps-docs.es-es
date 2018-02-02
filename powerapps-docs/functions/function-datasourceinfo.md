@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 51608399a03716972a02d414d47dad46a8676bef
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2c45649938ad769203cbcab25c8b81689c633657
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Función DataSourceInfo en PowerApps
 Proporciona información sobre un [origen de datos](../working-with-data-sources.md).
@@ -65,7 +65,8 @@ Puede usar **DataSourceInfo** para obtener información sobre un origen de datos
 * *Information*: requerido. El tipo de información que desea recuperar.
 * *ColumnName*: opcional. Para la información en el nivel de columna, el nombre de columna como una cadena. La columna **Teléfono** se pasaría como **"Teléfono"** incluidas las comillas dobles. Para la información en el nivel de origen de datos, el argumento *ColumnName* no se puede usar.
   
-    **Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+    > [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 Los ejemplos de esta sección usan este origen de datos, denominado **IceCream**:

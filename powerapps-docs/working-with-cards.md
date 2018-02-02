@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 95def246100aa58d62bcc174d3b1822e5bcc2227
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9c4bbdaa6cc218a1e635289c097f7900c9e83c81
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-cards"></a>Tarjetas de datos
 Los controles **[Card](controls/control-card.md)** son los componentes fundamentales de los controles **[Edit form](controls/control-form-detail.md)** y **[Display form](controls/control-form-detail.md)**. El formulario representa todo el registro y cada tarjeta representa un único campo de ese registro.
@@ -81,7 +81,8 @@ Vamos a modificar **[DisplayName](controls/control-card.md)** para agregar un es
 
 Ahora hemos tomado el control de esta tarjeta y podemos modificarla para que se ajuste a nuestras necesidades. Pero hemos perdido la capacidad que teníamos antes de cambiar la tarjeta de una representación a otra (por ejemplo, de texto de una sola línea a texto de múltiples líneas). Hemos transformado la tarjeta predefinida en una "tarjeta personalizada" sobre la que tenemos control.  
 
-**Importante**: No podrá volver a bloquear una tarjeta una vez que la haya desbloqueado. Para volver al estado de bloqueo, quite la tarjeta y vuelva a insertarla en el panel derecho.
+> [!IMPORTANT]
+> Si ha desbloqueado una tarjeta, no podrá volver a bloquearla. Para volver al estado de bloqueo, quite la tarjeta y vuelva a insertarla en el panel derecho.
 
 Puede cambiar la apariencia y el comportamiento de una tarjeta desbloqueada de varias formas como, por ejemplo, con la adición y eliminación de los controles dentro de ella. Por ejemplo, puede agregar una forma de estrella desde el menú **Iconos** de la pestaña **Insertar**.
 
@@ -95,7 +96,8 @@ Como otro ejemplo, desbloquee la tarjeta **ImageURL** y, a continuación, agregu
 
 En la barra de fórmulas, establezca la propiedad **Image** de este control en *TextBox*.**Text**, en la que *TextBox* es el nombre del control **Entrada de texto** que contiene la URL:
 
-**Sugerencia**: presione la tecla Alt para mostrar el nombre de cada control.
+> [!TIP]
+> Presione la tecla Alt para mostrar el nombre de cada control.
 
 ![](./media/working-with-cards/show-image.png)
 

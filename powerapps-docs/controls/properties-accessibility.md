@@ -14,19 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/26/2017
-ms.author: anneta
-ms.openlocfilehash: d8cc9d6c8586856dcaa27f67d3ea1fdc17fa0433
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: fikaradz
+ms.openlocfilehash: d35b4bc7a6e479ce47ad0a0b841a6ed9ccfd1a52
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="accessibility-properties-in-powerapps"></a>Propiedades de accesibilidad en PowerApps
-## <a name="overview"></a>Información general
-Configuración de propiedades que contribuyen a formas alternativas de interacción con los controles adecuados para los usuarios con discapacidades visuales.
+Configuración de propiedades que contribuyen a formas alternativas de interacción con los controles adecuadas para los usuarios con discapacidades.
 
-## <a name="properties"></a>Propiedades
-**Tooltip**: texto explicativo que aparece cuando el usuario mantiene el mouse sobre un control.  Este texto lo usan las etiquetas Aria que ayudan a los lectores de pantalla.
+### <a name="properties"></a>Propiedades
+**AccessiblityLabel**: descripción del control que van a leer los lectores de pantalla.   Un valor vacío para los controles Imagen, Icono y Forma hará que el lector de pantalla no los vea y los trate como adornos.
 
 * Se aplica a los controles **[Audio](control-audio-video.md)**, **[Botón](control-button.md)**, **[Cámara](control-camera.md)**, **[Casilla](control-check-box.md)**, **[Lista desplegable](control-drop-down.md)**, **[Texto HTML](control-html-text.md)**, **[Imagen](control-image.md)**, **[Etiqueta](control-text-box.md)**, **[Cuadro de lista](control-list-box.md)**, **[Micrófono](control-microphone.md)**, **[Visor de PDF](control-pdf-viewer.md)**, **[Entrada manuscrita](control-pen-input.md)**, **[Botón de selección](control-radio.md)**, **[Clasificación](control-rating.md)**, **[Control deslizante](control-slider.md)**, **[Entrada de texto](control-text-input.md)**, **[Temporizador](control-timer.md)**, **[Alternar](control-toggle.md)** y **[Vídeo](control-audio-video.md)**.
 
@@ -36,7 +35,6 @@ El valor predeterminado cero especifica el orden de tabulación predeterminado, 
 
 Tenga en cuenta que los contenedores como los controles Form y Gallery siempre tabularán todos los elementos del contenedor antes de continuar con los controles fuera del contenedor.  El orden de tabulación del contenedor es el valor más bajo de TabIndex de un control secundario.
 
-Establecer TabIndex en -1 deshabilitará el acceso de la tabulación al control; en el caso de imágenes, iconos y formas, también serán invisibles para el lector de pantalla.
+Si se establece TabIndex en -1, se deshabilitará el acceso mediante tabulación al control; en el caso de los controles Imágenes, Iconos y Formas, se convertirán en elementos no interactivos.
 
 * Se aplica a los controles **[Button](control-button.md)**, **[Date Picker](control-date-picker.md)**, **[Drop down](control-drop-down.md)**, **[Image](control-image.md)**, **[Import](control-export-import.md)**, **[List Box](control-list-box.md)**, **[Radio](control-radio.md)**, **[Rating](control-rating.md)**, **[Slider](control-slider.md)**, **[Text input](control-text-input.md)** y **[Toggle](control-toggle.md)**.
-

@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 0565bba26f9ab78437dd4b5a7729ff518a89e6e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.
 
 ## <a name="controls"></a>Controles
 **[Agregar imagen](controls/control-add-picture.md)**: cargue imágenes desde el dispositivo local, para cargarlas en un origen de datos.
+
+**[Datos adjuntos](controls/control-attachments.md)**: cargue y descargue archivos desde el dispositivo local a un origen de datos.
 
 **[Audio](controls/control-audio-video.md)**: reproduzca un clip de audio o la parte de audio de un clip de vídeo.
 
@@ -408,7 +410,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Reset](controls/properties-core.md)**: indica si un control vuelve a su valor predeterminado.  Se aplica a muchos controles.  Consulte también la función **[Reset](functions/function-reset.md)**.
 
-### <a name="s"></a>Pequeña
+### <a name="s"></a>S
 **Seleccionados**: el elemento seleccionado.  Se aplica a los controles **[Desplegable](controls/control-drop-down.md)** y **[Galería](controls/control-gallery.md)**.
 
 **[SelectedDate](controls/control-date-picker.md)**: la fecha seleccionada actualmente en un control de fecha.  Se aplica al control **[Selector de fecha](controls/control-date-picker.md)**.
@@ -507,12 +509,11 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 ### <a name="y"></a>Y
 **[Y](controls/properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario). Se aplica a muchos controles. Para un control **[Tarjeta](controls/control-card.md)** en un contenedor con varias filas, esta propiedad determina la fila en la que aparece la tarjeta.
 
-**[EjeYMáximo](controls/control-column-line-chart.md)**: el valor máximo del eje y de un gráfico de líneas.  Se aplica al control **[Gráfico de columnas](controls/control-column-line-chart.md)**.
+**[EjeYMáximo](controls/control-column-line-chart.md)**: el valor máximo del eje y de un gráfico de líneas.  Se aplica al control **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
-**[EjeYMínimo](controls/control-column-line-chart.md)**: el valor mínimo del eje y de un gráfico de líneas.  Se aplica al control **[Gráfico de columnas](controls/control-column-line-chart.md)**.
+**[EjeYMínimo](controls/control-column-line-chart.md)**: el valor mínimo del eje y de un gráfico de líneas.  Se aplica al control **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 **[YLabelAngle](controls/control-column-line-chart.md)**: el ángulo de las etiquetas del eje y de un gráfico de líneas o de columnas.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 ### <a name="z"></a>Z
 **Zoom**: el porcentaje en que se amplía una imagen de una cámara o la vista de un archivo en un visor de PDF.  Se aplica a los controles **[Cámara](controls/control-camera.md)** y **[Visor de PDF](controls/control-pdf-viewer.md)**.
-

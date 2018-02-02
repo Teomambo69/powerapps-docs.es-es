@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e3eac64ddfc7c4e029c970367b81331722985861
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 40cc6703b2f3467365b6fab36e390fa9ff0f1659
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funciones Average, Max, Min, StdevP, Sum y VarP de PowerApps
 Funciones de agregado que resumen un conjunto de números.
@@ -42,7 +42,7 @@ Puede proporcionar los valores de estas funciones como:
 * Argumentos independientes. Por ejemplo, **Sum( 1, 2, 3 )** da 6 como resultado.
 * Una [tabla](../working-with-tables.md) y una fórmula para operar sobre esa tabla.  La suma total se calculará según los valores de la fórmula para cada [registro](../working-with-tables.md#records).  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Estas funciones solo operan sobre valores numéricos. Se omiten otros tipos de valores, como cadenas o registros. Use la función **[Value](function-value.md)** para convertir en número una cadena.
 

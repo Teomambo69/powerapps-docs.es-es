@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 0a056aa20532ffe6e2e8ae502e67b5b27d134839
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dcbc897f14c34a84757a3d99d5433715b4c1d3c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones Primero, FirstN, Último y LastN en PowerApps
 Devuelve el primer o último conjunto de [registros](../working-with-tables.md#records) de una tabla.
@@ -35,7 +35,7 @@ La función **LastN** devuelve el último conjunto de registros de una tabla; el
 
 **Primero** y **Último** devuelven un único registro.  **FirstN** y **LastN** devuelven una tabla, incluso si se especifica solo un único registro.
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Sintaxis
 **Primero**( *Table* )<br>**Último**( *Table* )
@@ -49,8 +49,8 @@ La función **LastN** devuelve el último conjunto de registros de una tabla; el
 
 ## <a name="examples"></a>Ejemplos
 Esta fórmula devuelve el primer registro de una tabla denominada **Empleados**:<br>
-**Primero(Empleados)**
+**First(Employees)**
 
 Esta fórmula devuelve los últimos 15 registros de una tabla denominada **Empleados**:<br>
-**LastN(Empleados, 15)**
+**LastN(Employees, 15)**
 

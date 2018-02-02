@@ -15,20 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: deonhe
-ms.openlocfilehash: a9be5bfa8f6ad7f77b966a5acc8cda4114cf3e70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 601fe663d36383d5a89b0f93584e3a8c7cda43c8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="learn-all-about-data-groups"></a>Aprender todo sobre los grupos de datos
-## <a name="what-is-a-data-group"></a>¿Qué es un grupo de datos?
+
 Los grupos de datos son una manera sencilla de clasificar servicios dentro de una [directiva de prevención de pérdida de datos (DLP)](prevent-data-loss.md). Los dos grupos de datos disponibles son el grupo **Business data only** (Solo datos empresariales) y el grupo **No business data allowed** (No se permiten datos empresariales). Las organizaciones pueden determinar libremente qué servicios se colocan en un grupo de datos determinado. Una buena manera de clasificar servicios es colocarlos en grupos, según el impacto sobre la organización. De forma predeterminada, todos los servicios se colocan en el grupo de datos **No business data allowed** (No se permiten datos empresariales). Se administran los servicios en un grupo de datos cuando se crean o modifican las propiedades de una directiva DLP desde el centro de administración.
 
 ## <a name="how-data-is-shared-between-data-groups"></a>Cómo se comparten datos entre grupos de datos
 No se pueden compartir datos entre servicios ubicados en diferentes grupos. Por ejemplo, si coloca SharePoint y Salesforce en el grupo **Business data only** (Solo datos empresariales) y coloca Facebook y Twitter en el grupo **No business data allowed** (No se permiten datos empresariales), no se puede crear una aplicación de PowerApps que mueva datos entre SharePoint y Facebook. Aunque no se pueden compartir datos entre servicios de diferentes grupos, puede compartirlos entre los servicios de un grupo concreto. Por lo tanto, volviendo al ejemplo anterior, puesto que SharePoint y Salesforce se colocaron en el mismo grupo de datos, las aplicaciones de PowerApps creadas por los usuarios finales pueden compartir datos entre SharePoint y Salesforce. El punto clave es que los servicios de un grupo específico pueden compartir datos, mientras que los de grupos diferentes no pueden hacerlo.
 
-Además, se debe designar un grupo de datos como *predeterminado*. Inicialmente, el grupo **No business data allowed** (No se permiten datos empresariales) es el *predeterminado* y contiene todos los servicios. Un administrador puede cambiar el grupo de datos predeterminado a **Business data only** (Solo datos empresariales). **Tenga en cuenta** que los nuevos servicios que se agreguen a PowerApps se colocarán en el grupo designado como *predeterminado*. Por este motivo, se recomienda que mantenga **No business data allowed** (No se permiten datos empresariales) como grupo predeterminado y agregue manualmente servicios al grupo **Business data only** (Solo datos empresariales) una vez que su organización haya evaluado el impacto de permitir que se compartan datos empresariales con el nuevo servicio.
+Además, se debe designar un grupo de datos como *predeterminado*. Inicialmente, el grupo **No business data allowed** (No se permiten datos empresariales) es el *predeterminado* y contiene todos los servicios. Un administrador puede cambiar el grupo de datos predeterminado a **Business data only** (Solo datos empresariales). > [!NOTE]
+> los nuevos servicios que se agreguen a PowerApps se colocarán en el grupo designado como *predeterminado*. Por este motivo, se recomienda que mantenga **No business data allowed** (No se permiten datos empresariales) como grupo predeterminado y agregue manualmente servicios al grupo **Business data only** (Solo datos empresariales) una vez que su organización haya evaluado el impacto de permitir que se compartan datos empresariales con el nuevo servicio.
 
 ## <a name="add-services-to-a-data-group"></a>Agregar servicios a un grupo de datos
 En este tutorial, se agrega SharePoint y Salesforce al grupo de datos **Business data only** (Solo datos empresariales) de una directiva de prevención de pérdida de datos (DLP).
@@ -50,7 +51,8 @@ Puesto que todos los servicios deben estar en uno de los grupos de datos disponi
 ## <a name="change-the-default-data-group"></a>Cambiar el grupo de datos predeterminado
 En este tutorial, se cambiará el grupo de datos predeterminado de **No business data allowed** (No se permiten datos empresariales) al grupo de datos **Business data only** (Solo datos empresariales).  
 
-**Importante**: Los nuevos servicios que se agreguen a PowerApps se colocarán en el grupo designado como *predeterminado*. Por este motivo, se recomienda que mantenga **No business data allowed** (No se permiten datos empresariales) como grupo predeterminado y agregue manualmente servicios al grupo **Business data only** (Solo datos empresariales).
+> [!IMPORTANT]
+> los nuevos servicios que se agreguen a PowerApps se colocarán en el grupo designado como *predeterminado*. Por este motivo, se recomienda que mantenga **No business data allowed** (No se permiten datos empresariales) como grupo predeterminado y agregue manualmente servicios al grupo **Business data only** (Solo datos empresariales).
 
 1. Seleccione el botón **...** situado en la esquina superior derecha del grupo de datos que desee designar como predeterminado:    
    ![cambiar de grupo predeterminado](./media/introduction-to-data-groups/default-data-group-0.png)  

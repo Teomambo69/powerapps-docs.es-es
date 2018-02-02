@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: f9a4a274146373acd22fd4fdcebf9a83b252958c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d9664b490970f7eada757b83d6c9934753af3ad5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
 Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:
@@ -36,7 +36,7 @@ Ubique cada control en una pantalla distinta para que sea más fácil distinguir
 
 Tal como se describe en este tema, combine estos controles con fórmulas para crear la experiencia global del usuario.
 
-**Requisitos previos**
+## <a name="prerequisites"></a>Requisitos previos
 
 * [Suscríbase](signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
@@ -59,7 +59,8 @@ El control principal de esta pantalla, **BrowseGallery1**, abarca la mayor parte
 
 Establezca la propiedad **[Items](controls/properties-core.md)** de una galería para que muestre los registros provenientes de un origen de datos. Por ejemplo, establezca la propiedad en **Assets** para mostrar los registros de un origen de datos con ese nombre.
 
-**Nota**: En una aplicación generada, el valor **[Items](controls/properties-core.md)** se establece, de manera predeterminada, en una fórmula mucho más complicada para que el usuario pueda ordenar y buscar registros. Más adelante en este tema obtendrá información sobre cómo crear esta fórmula; por ahora basta con la versión más sencilla.
+> [!NOTE]
+> En una aplicación generada, la propiedad **[Elementos](controls/properties-core.md)** se establece, de manera predeterminada, en una fórmula mucho más complicada para que el usuario pueda ordenar y buscar registros. Más adelante en este tema obtendrá información sobre cómo crear esta fórmula; por ahora basta con la versión más sencilla.
 
 En lugar de buscar un registro para mostrarlo o editarlo, el usuario puede crear un registro si selecciona el símbolo "+" que se encuentra arriba de la galería. Para crear este efecto, agregue un control **[Image](controls/control-image.md)**, colóquele un símbolo "+" y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
 <br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
@@ -119,7 +120,7 @@ Esta pantalla incluye las siguientes fórmulas clave:
 | Controles **[Tarjeta](controls/control-card.md)** |En un control **[Editar formulario](controls/control-form-detail.md)**, proporciona controles para que el usuario pueda editar uno o varios campos de un registro. |Establezca la propiedad **[DataField](controls/control-card.md)** en el nombre de un campo entre comillas dobles (por ejemplo, **"Nombre"**). |
 | **ImageCancel1** |Cuando el usuario selecciona este control, se descartan los cambios en curso y se abre la pantalla **Detalles**. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**ResetForm( EditForm1 ); Back()** |
 | **ImageAccept1** |Cuando el usuario selecciona este control, los cambios se envían al origen de datos. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**SubmitForm( EditForm1 )** |
-| **EditForm1** |Si se aceptan los cambios, se vuelve a la pantalla anterior. |Establezca la propiedad **[OnSuccess](controls/control-form-detail.md)** en esta fórmula:<br>**Back()** |
+| **EditForm1** |Si se aceptan los cambios, se vuelve a la pantalla anterior. |Establezca la propiedad **[OnSuccess](controls/control-form-detail.md)** en esta fórmula:<br>**Atrás()** |
 | **EditForm1** |Si no se aceptan los cambios, el usuario continúa en la pantalla actual para poder corregir cualquier problema e intente volver a enviar. |Deje en blanco la propiedad **[OnFailure](controls/control-form-detail.md)**. |
 | **LblFormError1** |Si no se aceptan los cambios, se muestra un mensaje de error. |Establezca la propiedad **[Text](controls/properties-core.md)** en este valor:<br>**EditForm1.Error** |
 
@@ -148,7 +149,8 @@ Si comprende cómo PowerApps genera una aplicación, puede compilar una que use 
 ## <a name="identify-test-data"></a>Identificación de los datos de prueba
 Para aprovechar al máximo este tema, comience con un origen de datos con el que pueda experimentar. Debe contener datos de prueba que pueda leer y actualizar sin tener que preocuparse.
 
-**Nota:** Si usa una lista de SharePoint o una tabla de Excel que contenga nombres de columna con espacios como origen de datos, PowerApps reemplazará los espacios por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+> [!NOTE]
+> Si usa una lista de SharePoint o una tabla de Excel que contenga nombres de columna con espacios como origen de datos, PowerApps reemplazará los espacios por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 Para seguir el resto de este tema al pie de la letra, cree una lista de SharePoint llamada "Helado" con los siguientes datos:
 
@@ -156,7 +158,8 @@ Para seguir el resto de este tema al pie de la letra, cree una lista de SharePoi
 
 * Cree una aplicación desde cero, para teléfonos, y [conéctela al origen de datos](add-data-connection.md).
   
-    **Nota:** Las aplicaciones de tableta son muy similares, pero es posible que desee un [diseño de pantalla](#screen-design) distinto para aprovechar al máximo el espacio adicional de la pantalla.
+    > [!NOTE]
+> Las aplicaciones de tableta son muy similares, pero es posible que desee un [diseño de pantalla](#screen-design) distinto para aprovechar al máximo el espacio adicional de la pantalla.
   
     Los ejemplos que aparecen en el resto del tema se basan en un origen de datos llamado **Helado**.
 
@@ -201,7 +204,7 @@ En el panel de la derecha, puede seleccionar los campos que se van a mostrar en 
 
 Por último, es necesario conectar el control **[Mostrar formulario](controls/control-form-detail.md)** con el control **[Galería](controls/control-gallery.md)** para poder ver los detalles de un registro específico.  Tan pronto como se termine de establecer la propiedad **[Item](controls/control-form-detail.md)**, el primer registro de la galería aparecerá en el formulario.
 
-1. Establezca la propiedad **[Item](controls/control-form-detail.md)** del control **[Mostrar formulario](controls/control-form-detail.md)** en **Gallery1.Selected**.
+* Establezca la propiedad **[Item](controls/control-form-detail.md)** del control **[Mostrar formulario](controls/control-form-detail.md)** en **Gallery1.Selected**.
    
     Los detalles del elemento seleccionado aparecen en el formulario.
    
@@ -209,20 +212,23 @@ Por último, es necesario conectar el control **[Mostrar formulario](controls/co
 
 Excelente.  Ahora analizaremos la navegación: cómo un usuario abre la pantalla de detalles desde la pantalla de galería y viceversa.
 
-1. Agregue un control **[Botón](controls/control-button.md)** a la pantalla, establezca su propiedad **[Text](controls/properties-core.md)** para mostrar **[Back](functions/function-navigate.md)**, y establezca su propiedad **[OnSelect](controls/properties-core.md)** en **Back()**.
+* Agregue un control **[Botón](controls/control-button.md)** a la pantalla, establezca su propiedad **[Text](controls/properties-core.md)** para mostrar **[Back](functions/function-navigate.md)**, y establezca su propiedad **[OnSelect](controls/properties-core.md)** en **Back()**.
    
     Esta fórmula devuelve al usuario a la galería cuando termina de ver los detalles.
 
-![Mostrar formulario para el origen de datos Helado con botón para volver](./media/working-with-forms/viewform-icecream-back.png)
+    ![Mostrar formulario para el origen de datos Helado con botón para volver](./media/working-with-forms/viewform-icecream-back.png)
 
 Volvamos al control **[Galería](controls/control-gallery.md)** y agreguemos navegación a la pantalla de detalle.
 
 1. Vaya a la primera pantalla, que hospeda el control **[Galería](controls/control-gallery.md)**, y seleccione la flecha del primer elemento de la galería.
+
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** de la forma en esta fórmula:
    <br>**Navigate( Screen2, None )**
    
     ![Mostrar formulario para el origen de datos Helado con botón para volver](./media/working-with-forms/gallery-icecream-nav-new.png)
+
 3. Presione F5 y seleccione una flecha en la galería para mostrar los detalles de un elemento.
+
 4. Seleccione el botón **[Atrás](functions/function-navigate.md)** para volver a la galería de productos y, luego, presione Esc.
 
 ## <a name="editing-details"></a>Edición de detalles
@@ -302,12 +308,11 @@ En esta aplicación, se produce un error si el valor de un campo no es válido, 
 
 Si **[SubmitForm](functions/function-form.md)** presenta un error por cualquier motivo, la propiedad **Error** del control **[Editar formulario](controls/control-form-detail.md)** contiene un mensaje de error que se le mostrará al usuario. Con esta información, el usuario debe poder corregir el problema y reenviar el cambio, o bien puede cancelar la actualización.
 
-1. En la pantalla Editar y crear, agregue un control **[Etiqueta](controls/control-text-box.md)** y póngalo justo debajo del botón **Guardar**.
-   
-    Será sencillo detectar cualquier error una vez que el usuario seleccione este control para guardar los cambios.
+1. En la pantalla Editar y crear, agregue un control **[Etiqueta](controls/control-text-box.md)** y póngalo justo debajo del botón **Guardar**. Será sencillo detectar cualquier error una vez que el usuario seleccione este control para guardar los cambios.
+
 2. Establezca la propiedad **[Texto](controls/properties-core.md)** del control **[Etiqueta](controls/control-text-box.md)** para mostrar **Form1.Error**.
 
-![Mostrar formulario con el botón "Editar" agregado](./media/working-with-forms/edit-icecream-error.png)
+    ![Mostrar formulario con el botón "Editar" agregado](./media/working-with-forms/edit-icecream-error.png)
 
 En una aplicación que PowerApps genera a partir de los datos, la propiedad **[AutoHeight](controls/control-text-box.md)** de este control está establecida en *true* para que no se consuma espacio si no se produce ningún error. Las propiedades **[Height](controls/properties-size-location.md)** e **[Y](controls/properties-size-location.md)** del control **[Editar formulario](controls/control-form-detail.md)** también se ajustan de forma dinámica para contemplar el crecimiento de este control cuando se produce un error. Para más detalles, genere una aplicación a partir de los datos existentes y revise estas propiedades. El control de cuadro de texto para los errores es muy breve cuando no se ha producido ningún error; es posible que tenga que abrir la vista **Avanzada** (disponible en la pestaña **Ver**) para seleccionar este control.
 
@@ -319,9 +324,10 @@ En una aplicación que PowerApps genera a partir de los datos, la propiedad **[A
 El origen de datos se actualiza cada vez que el usuario abre la aplicación, pero es posible que el usuario quiera actualizar los registros en la galería sin cerrar la aplicación. Agregue un botón **Actualizar**, de modo que el usuario pueda seleccionarlo para actualizar manualmente los datos:
 
 1. En la pantalla con el control **[Galería](controls/control-gallery.md)**, agregue un control **[Botón](controls/control-button.md)** y establezca su propiedad **[Text](controls/properties-core.md)** para que muestre **Actualizar**.
+
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** de este control en esta fórmula:<br> **Refresh( 'Ice Cream' )**
 
-![Actualización del origen de datos](./media/working-with-forms/browse-icecream-refresh.png)
+    ![Actualización del origen de datos](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>Búsqueda y ordenación de la galería
 En la aplicación que PowerApps generó a partir de los datos, no analizamos dos controles que se encuentran en la parte superior de la pantalla de exploración. Con estos controles, el usuario puede buscar uno o varios registros, ordenar la lista de registros en orden ascendente o descendente, o ambas acciones.

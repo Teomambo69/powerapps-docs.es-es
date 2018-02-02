@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 35c6e2b7ddadc0ff907ce34986accdd11a794dd4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ad9033b51142d1bb6b014abe0cc049a0b5c27ee5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con PowerApps, Microsoft Flow y Power BI
-**Nota**: Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> [!NOTE]
+> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 SharePoint tiene una gran cantidad de características para la colaboración y el uso compartido, pero nos centraremos en una característica de este escenario: las [listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
 
@@ -39,7 +40,8 @@ La primera lista es **Project Requests**, en la que un solicitante del proyecto 
 | EstimatedDays |Número |Permite la comparación de la estimación del solicitante con la estimación del jefe de proyecto con la fecha real |
 | Approved |Una línea de texto |Valores: pendiente, sí o no |
 
-**Nota:** También utilizamos la columna **ID**, que genera SharePoint y está oculta de forma predeterminada. Utilizamos tipos de datos básicos para simplificar, pero una aplicación real podría utilizar tipos más complejos, como **Persona o grupo** en la columna **Requestor**. Para obtener información sobre los tipos de datos que admite PowerApps, consulte [Conexión de Microsoft PowerApps a SharePoint](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/#known-issues).
+> [!NOTE]
+> También utilizamos la columna **ID**, que genera SharePoint y que está oculta de forma predeterminada. Utilizamos tipos de datos básicos para simplificar, pero una aplicación real podría utilizar tipos más complejos, como **Persona o grupo** en la columna **Requestor**. Para obtener información sobre los tipos de datos que admite PowerApps, consulte [Conexión de Microsoft PowerApps a SharePoint](connections/connection-sharepoint-online.md#known-issues).
 
 La segunda lista es **Project Details**, que realiza un seguimiento de los detalles de todos los proyectos aprobados, como el jefe de proyecto asignado.
 
@@ -58,12 +60,15 @@ La segunda lista es **Project Details**, que realiza un seguimiento de los detal
 ## <a name="step-2-create-and-review-the-lists"></a>Paso 2: Creación y revisión de las listas
 Para continuar con el escenario, debe crear las dos listas de SharePoint y rellenarlas con datos de ejemplo. Le mostraremos cómo hacerlo mediante la creación de la lista y el pegado en ella de datos de ejemplo. Asegúrese de que dispone de los archivos de Excel del [paquete de descarga](https://aka.ms/o4ia0f).
 
-**Nota:** Use Internet Explorer para este paso.
+> [!NOTE]
+> Use Internet Explorer para este paso.
 
 ### <a name="create-the-lists"></a>Creación de las listas
+
 1. En Internet Explorer, en el sitio de SharePoint, haga clic o pulse en **New** (Nuevo) y , luego, en **List** (Lista).
    
     ![Crear una lista de SharePoint nueva](./media/sharepoint-scenario-setup/01-01-01-new-list.png)
+
 2. Escriba el nombre "Project Requests" y haga clic o pulse **Create** (Crear).
    
     ![Especificar un nombre para la lista nueva](./media/sharepoint-scenario-setup/01-01-02-create-list.png)
@@ -73,12 +78,13 @@ Para continuar con el escenario, debe crear las dos listas de SharePoint y relle
     ![Lista de Project Requests](./media/sharepoint-scenario-setup/01-01-03-initial-list.png)
 
 ### <a name="add-columns-to-the-list"></a>Adición de columnas a la lista
+
 1. Haga clic o pulse en el ![icono de elemento nuevo](./media/sharepoint-scenario-setup/icon-new.png) y , después, en **Single line of text** (Una línea de texto).
    
     ![Campo para agregar una línea de texto](./media/sharepoint-scenario-setup/01-01-04-add-column.png)
-2. Escriba el nombre "Description" y haga clic o pulse en **Create** (Crear).
+
+2. Escriba el nombre "Description" y haga clic o pulse en **Save** (Guardar).
    
-    ![Crear columna de descripción](./media/sharepoint-scenario-setup/01-01-05-description-column.png)
 3. Repita los pasos **1.** y **2.** para las demás columnas de la lista:
    
    1. **Single line of text** (Una línea de texto) > "ProjectType"
@@ -106,23 +112,37 @@ Para continuar con el escenario, debe crear las dos listas de SharePoint y relle
 Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete de descarga](https://aka.ms/o4ia0f) se han incluido dos aplicaciones de ejemplo y un informe. Este escenario se puede completar sin usar estos ejemplos, pero si desea usarlos, es preciso que actualice las conexiones a las listas de SharePoint. Actualícelas para que usen *sus* listas como origen de datos, en lugar de las nuestras.
 
 ### <a name="update-connections-for-the-sample-apps"></a>Actualizar las conexiones de las aplicaciones de ejemplo
-1. Abra **project-management-app.msapp** en PowerApps Studio.
-2. Haga clic o pulse **Permitir** para que PowerApps pueda usar SharePoint.
-3. En la cinta de opciones, en la pestaña **Vista**, pulse o haga clic en **Orígenes de datos**.
-   
+
+1. En [PowerApps Studio](https://create.powerapps.com/studio/), haga clic en **Abrir** (o púlselo) en el panel izquierdo. 
+
+2. Haga clic o pulse **Examinar** y abra el archivo **project-management-app.msapp** que descargó.
+
+3. Haga clic o pulse **Permitir** para que PowerApps pueda usar SharePoint.
+
+4. En la cinta de opciones, en la pestaña **Vista**, pulse o haga clic en **Orígenes de datos**.
+
     ![Orígenes de datos de PowerApps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
-4. En el panel derecho, haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Project Details** y haga clic o pulse en **Quitar**.
+5. En el panel **Datos**, haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Quitar**.
    
     ![Quitar origen de datos de Project Details](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-5. En el panel derecho, pulse o haga clic en **Agregar origen de datos**.
+6. Pulse o haga clic en **Agregar origen de datos**.
    
     ![Agregar origen de datos](./media/sharepoint-scenario-setup/01-03-03-add.png)
-6. Pulse o haga clic en **Nueva conexión**.
+
+7. Le mostraremos dos formas de conectarse a la lista, en función de si PowerApps ya ha establecido automáticamente una conexión de SharePoint, o no: 
+
+    * Si ve una conexión de SharePoint, haga clic o pulse en ella.
+
+        ![Conexión existente](./media/sharepoint-scenario-setup/01-03-03aa-existing-connection.png)
+
+    * Si ve ninguna conexión de SharePoint, haga clic o pulse en **Nueva conexión**.
+
+        ![Nueva conexión](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
+
+        A continuación, haga clic o pulse **SharePoint** y, después, **Crear**.
    
-    ![Nueva conexión](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
-7. Pulse o haga clic en **SharePoint** y, después, en **Conectar**.
-   
-    ![Conexión de SharePoint](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+        ![Conexión de SharePoint](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+
 8. Escriba la dirección URL del sitio de SharePoint Online que contiene las listas que creó y pulse o haga clic en **Ir**.
    
     ![Dirección URL de SharePoint](./media/sharepoint-scenario-setup/01-03-03c-sharepoint-url.png)
@@ -130,30 +150,40 @@ Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete
    
     ![Lista Project Details](./media/sharepoint-scenario-setup/01-03-03d-project-details.png)
    
-    La pestaña **Orígenes de datos** en el panel derecho muestra ahora la conexión que ha creado.
+    El panel **Datos** muestra la conexión que creó.
    
     ![Orígenes de datos](./media/sharepoint-scenario-setup/01-03-03e-data-sources.png)
-10. En el panel derecho, haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Project Details** y haga clic o pulse en **Actualizar**.
+
+10. Haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Actualizar**.
     
     ![Actualizar origen de datos de Project Details](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-11. Haga clic en ![Icono Ejecutar aplicación](./media/sharepoint-scenario-setup/icon-run-arrow.png) en la esquina superior derecha para ejecutar la aplicación y asegúrese de que las conexiones funcionan correctamente.
+
+11. Haga clic en ![Icono Ejecutar aplicación](./media/sharepoint-scenario-setup/icon-run-arrow.png) en la esquina superior derecha para ejecutar la aplicación y asegúrese de que la conexión funciona correctamente.
+
+12. Haga clic o pulse **Archivo** y guarde la aplicación en la nube. 
+
 12. Repita los pasos de esta sección en **app.msapp de las solicitudes de proyecto**, mediante el uso de la lista **Project Requests**.
 
 ### <a name="update-connections-for-the-sample-report"></a>Actualizar las conexiones del informe de ejemplo
 1. Abra **project-analysis.pbix** en Power BI Desktop.
+
 2. En la cinta de opciones, en la pestaña **Inicio**, pulse o haga clic en **Editar consultas** y, luego, en **Configuración de origen de datos**.
    
     ![Editar consultas](./media/sharepoint-scenario-setup/01-03-04-edit-queries.png)
+
 3. Pulse o haga clic en **Cambiar origen**.
    
     ![Configuración de origen de datos](./media/sharepoint-scenario-setup/01-03-05-settings.png)
-4. Escriba la dirección URL del sitio de SharePoint Online y, después, haga clic en **Aceptar** o pulse en él.
+
+4. Escriba la dirección URL del sitio de SharePoint Online, haga clic o pulse **Aceptar** y, finalmente, **Cerrar**.
    
     ![Dirección URL de lista de SharePoint](./media/sharepoint-scenario-setup/01-03-06-list-url.png)
+
 5. Power BI Desktop muestra un banner debajo de la cinta de opciones, con el fin de que pueda aplicar los cambios y trasladar los datos del nuevo origen. Haga clic o pulse en **Aplicar cambios**.
    
     ![Aplicar cambios de consulta](./media/sharepoint-scenario-setup/01-03-07-apply.png)
-6. Inicie sesión con una cuenta de organización (la cuenta que utilice para acceder a SharePoint Online) y haga clic o pulse en **Conectar**.
+
+6. Inicie sesión con una cuenta de Microsoft (la cuenta que utiliza para acceder a SharePoint Online) y haga clic o pulse en **Conectar**.
    
     ![Conectarse a SharePoint Online](./media/sharepoint-scenario-setup/01-03-08-connect.png)
 

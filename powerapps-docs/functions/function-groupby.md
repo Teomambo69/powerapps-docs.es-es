@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: a3f2698eb0df8861bccf3221f53f5458f6e1b307
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7f7a3f1add6f91d920ed38308e577d14386f81ec
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones AgruparPor y Desagrupar en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -52,14 +52,16 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 * *ColumnName(s)*: requerido.  Los nombres de columna en *Tabla* mediante los que se van a agrupar los registros.  Estas columnas se convierten en columnas en la tabla resultante.
 * *GroupColumnName*: requerido.  El nombre de la columna para el almacenamiento de datos de registro que no están en el *ColumnName(s)*.
   
-    **Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+    > [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 **Desagrupar**( *Tabla*, *GroupColumnName* )
 
 * *Table*: requerido. Tabla que se desea desagrupar.
 * *GroupColumnName*: requerido. La columna que contiene la configuración de los datos de registro con la función **AgruparPor**.
   
-    **Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+    > [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="create-a-collection"></a>Crear una colección

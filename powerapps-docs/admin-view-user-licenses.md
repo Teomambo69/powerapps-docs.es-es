@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: manasma
-ms.openlocfilehash: ba60c227b287532f6abe2e2b2e88f6cbe7dd0cd3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bc3d1c94deec6cf5e7c0ba5b73e65cab67d3ee25
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="identify-powerapps-users-in-your-organization"></a>Identificación de los usuarios de PowerApps de su organización
 Si es un administrador global para Office 365 o un administrador de inquilinos de Azure Active Directory, puede descargar una lista de usuarios de su organización que no solo tenga licencia para usar PowerApps, Microsoft Flow o ambos, sino que también hayan tenido acceso a cualquiera de esos productos. La lista contiene el nombre de cada usuario, la dirección de correo electrónico, el tipo de licencia y otra información. Por ejemplo, usuario podría tener:
@@ -29,10 +29,11 @@ Si es un administrador global para Office 365 o un administrador de inquilinos d
 * acceso a ambos productos a través de una licencia de Dynamics 365
 * acceso desde planes de PowerApps y Microsoft Flow
 
-## <a name="download-the-list-of-users"></a>Descarga de la lista de usuarios
+### <a name="download-the-list-of-users"></a>Descarga de la lista de usuarios
 1. En el centro de administración PowerApps, pulse o haga clic en **Licencias de usuario**, cerca del borde izquierdo.
    
-    **Importante**: Esta opción está disponible para los administradores globales de Office 365 y únicamente para los administradores de inquilinos de Azure Active Directory.
+    > [!IMPORTANT]
+> Esta opción está disponible para los administradores globales de Office 365 y únicamente para los administradores de inquilinos de Azure Active Directory.
    
     ![Archivo y Compartir](./media/admin-view-user-licenses/leftnav.png)
 2. Pulse o haga clic en **Download a list of active user licenses** (Descargar una lista de licencias de usuario activas).
@@ -41,7 +42,8 @@ Si es un administrador global para Office 365 o un administrador de inquilinos d
    
     El archivo puede tardar unos minutos en descargarse. Espere unos minutos para que el archivo .csv se descargue y, a continuación, ábralo en Excel.
    
-    **Nota**: Si cierra la ventana antes de que el archivo termine la descarga, es posible que deba reiniciar el proceso.
+    > [!NOTE]
+> Si cierra la ventana antes de que termine la descarga del archivo, es posible que deba reiniciar el proceso.
 
 En este ejemplo se muestran dos usuarios que tienen licencias de PowerApps y Microsoft Flow por distintos medios. Jane Doe tiene acceso a través de una suscripción a Office 365 y John Doe tiene una licencia de prueba para cada producto.
 

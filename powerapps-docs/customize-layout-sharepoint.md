@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: sharik
-ms.openlocfilehash: c581abad70012eb66413a31bd765437df69b7a70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ce0f0693298977ca991636d0a9bf18e238e8368e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="customize-a-gallery-layout-in-powerapps"></a>Personalizar un diseño de galería en PowerApps
 Después de generar una aplicación automáticamente en PowerApps, personalice la pantalla de exploración que aparece de forma predeterminada. Especifique qué diseño se usará, qué columnas se mostrarán y qué columnas se deben usar al ordenar y filtrar registros.
@@ -97,7 +97,8 @@ Para más información sobre las galerías, consulte [Mostrar una lista de eleme
     La barra de fórmulas ahora contendrá una fórmula que se parece a la de este ejemplo:<br>
     **SortByColumns(Filter(AppGen, StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**
    
-    **Nota**: El número que aparece después de **TextSearchBox** podría ser mayor, según las acciones que haya realizado previamente. Sin embargo, la fórmula seguirá funcionando según lo previsto.
+    > [!NOTE]
+> El número que aparece después de **TextSearchBox** podría ser mayor, según las acciones que haya realizado previamente. Sin embargo, la fórmula seguirá funcionando según lo previsto.
 
 ## <a name="test-sorting-and-searching"></a>Prueba de ordenación y búsqueda
 1. Para abrir el modo de vista previa, presione F5 (o haga clic o pulse en el icono de reproducción situado cerca de la esquina superior derecha).

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 7220771d9798e6bb5481bbc86c430a357aeab7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -29,7 +29,10 @@ Con un control de **cuadro combinado** puede buscar los elementos que va a selec
 
 El modo de selección individual o múltiple se configura mediante la propiedad SelectMultiple.
 
-Cuando se buscan los elementos que se van a seleccionar, en cada elemento se puede elegir mostrar un solo valor de datos, dos valores o una imagen y dos valores (Person). Para ello, es preciso modificar la opción Diseño del panel Datos.
+Cuando se buscan elementos que se van a seleccionar, en todos los elementos puede elegir mostrar un valor de datos único, dos valores o una imagen y dos valores (Persona) mediante la modificación de la configuración de diseño en el panel Data (Datos).
+
+## <a name="people-picker"></a>Selector de personas
+Para usar **cuadro combinado** como selector de personas, elija la plantilla **Persona** desde la configuración de diseño del panel Data (Datos) y configure las propiedades de datos relacionadas que se mostrará para la persona que aparece a continuación.
 
 ## <a name="key-properties"></a>Propiedades principales
 **[Items](properties-core.md)**: el origen de datos del que se puede elegir.
@@ -78,8 +81,7 @@ Cuando se buscan los elementos que se van a seleccionar, en cada elemento se pue
 2. En la pestaña de opciones Propiedades, haga clic en Datos.  
 3. Seleccione el origen de datos, el diseño y las propiedades relacionadas a continuación.
 4. Establezca la propiedad **SelectMultiple** en la ficha Opciones avanzadas.
-   
-    Aparecerá un **cuadro combinado** funcional en la aplicación.
-   
-    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
+    Aparecerá un **cuadro combinado** funcional en la aplicación.
+
+    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: 9d5ccfd11399188e739353e2994f779347377de4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 104afc3d2a5b243b7315b1638f23b7778d049370
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Conexión a Microsoft Translator desde PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,11 +28,10 @@ Agregue el conector de Microsoft Translator para que muestre el texto traducido 
 
 En este tema se muestra cómo utilizar la conexión de Microsoft Translator, cómo usar la conexión de Microsoft Translator en una aplicación y cómo enumerar las funciones disponibles.
 
-**Nota**: Este conector se limita a 150 llamadas por usuario al día.
+> [!NOTE]
+> Este conector se limita a 150 llamadas por usuario y día.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Conexión a Microsoft Translator
 1. Abra PowerApps, seleccione **Nuevo** y cree una **aplicación vacía**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  

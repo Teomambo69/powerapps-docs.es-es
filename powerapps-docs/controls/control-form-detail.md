@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 4121593bb34fe135262d925ae6c9f381d0fcd9f7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e8234526c73f6d55494334a386e8dbd7442c8d62
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -60,7 +60,8 @@ Si los datos pasan la validación, **[SubmitForm](../functions/function-form.md)
 
 Algunos orígenes de datos pueden detectar cuando hay dos personas tratando de actualizar el mismo registro a la vez. En este caso, **ErrorKind** se establece en **ErrorKind.Conflict**, y la solución es actualizar el origen de datos con los cambios del otro usuario y volver a aplicar los cambios realizados por este usuario.
 
-**Sugerencia:** si ofrece un botón **Cancelar** en el formulario para que el usuario puede descartar los cambios en curso, agregue la función **[ResetForm](../functions/function-form.md)** a la propiedad  **[AlSeleccionar](properties-core.md)** del botón incluso si esa propiedad también contiene una función **[Navigar](../functions/function-navigate.md)** para cambiar las pantallas. De lo contrario, el formulario conservará los cambios del usuario.
+> [!TIP]
+> Si ofrece un botón **Cancelar** en el formulario para que el usuario puede descartar los cambios en curso, agregue la función **[ResetForm](../functions/function-form.md)** a la propiedad **[AlSeleccionar](properties-core.md)** del botón, aunque dicha propiedad contenga también una función **[Navegar](../functions/function-navigate.md)** para cambiar de pantalla. De lo contrario, el formulario conservará los cambios del usuario.
 
 ### <a name="layout"></a>Diseño
 De forma predeterminada, las tarjetas se colocan en una sola columna para las aplicaciones de teléfono y en tres columnas para las aplicaciones de tableta. Puede especificar cuántas columnas tiene un formulario y si se deben ajustar a ellas las tarjetas al configurar el formulario. Esta configuración no se expone en propiedades, porque se usa únicamente para definir las propiedades **X**, **Y** y **Width** de las tarjetas.

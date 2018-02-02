@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/05/2017
 ms.author: mblythe
-ms.openlocfilehash: 80f56a849dca7488f5b38908a7ec87b3a0916187
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2eac422675fc8741848ab90777824a10ec9e0e1e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="register-and-use-custom-connectors-in-powerapps"></a>Registrar y usar conectores personalizados en PowerApps
 PowerApps permite crear aplicaciones completas sin ningún código de aplicación tradicional. En algunos casos, necesitará ampliar las funcionalidades de PowerApps, y los servicios web son la solución natural para esto. La aplicación puede conectarse a un servicio, realizar operaciones y recuperar datos. Si tiene un servicio web al que desea conectarse con PowerApps, debe registrar el servicio como un conector personalizado. Este proceso permite a PowerApps comprender las características de su API web, incluida la autenticación que requiere, las operaciones que admite, y los parámetros y las salidas de cada una de esas operaciones.
@@ -49,12 +49,12 @@ El proceso de conector personalizado tiene varios pasos, que se describen brevem
    * Autenticación básica
 3. **Describa la API** de una de las dos maneras estándar del sector, para que PowerApps pueda conectarse a ella.
    
-   * Un archivo de OpenAPI (también conocido como un archivo Swagger)
+   * Un archivo de OpenAPI (conocido también como archivo de Swagger): también puede compilar un archivo de OpenAPI en el paso 4 como parte del proceso de registro.
    * Una colección Postman
-     
-     También puede crear un archivo OpenAPI en el paso 4 como parte del proceso de registro.
 4. **Registre el conector personalizado** con un asistente en PowerApps, donde se especifican la descripción de la API, los detalles de seguridad y otra información.
+
 5. **Use el conector personalizado** en una aplicación. Cree una conexión a la API de la aplicación y llame a las operaciones que proporciona la API, igual que llama a las funciones nativas de PowerApps.
+
 6. **Comparta el conector personalizado** igual que hace con otras conexiones de datos en PowerApps. Este paso es opcional, pero suele tener sentido compartir conectores personalizados entre varios creadores de aplicaciones.
 
 ## <a name="describe-your-api"></a>Describir la API
@@ -70,7 +70,8 @@ Los archivos de OpenAPI y las colecciones Postman utilizan distintos formatos, p
 * Si aún no tiene un archivo de OpenAPI para su API y no desea crear uno, puede crear fácilmente un conector personalizado con una colección Postman. Consulte cómo [crear una colección Postman](postman-collection.md) para más información.
 * En última instancia, PowerApps usa OpenAPI, por lo que la colección Postman se analiza y se traduce en un archivo de definición de OpenAPI.
 
-**Nota**: el tamaño del archivo debe ser inferior a 1 MB.
+> [!NOTE]
+> El tamaño del archivo debe ser inferior a 1 MB.
 
 ### <a name="getting-started-with-openapi-and-postman"></a>Introducción a OpenAPI y Postman
 * Si está familiarizado con OpenAPI, consulte [Getting Started with OpenAPI](http://swagger.io/getting-started/) (Introducción a OpenAPI) en el sitio swagger.io.
@@ -82,7 +83,8 @@ Ahora, usará el archivo de OpenAPI o la colección Postman para registrar el co
 
 1. En [powerapps.com](https://web.powerapps.com), en el menú de la izquierda, seleccione **Conexiones**. Seleccione los puntos suspensivos (**...** ) y **Manage custom connectors** (Administrar conectores personalizados) en la esquina superior derecha.
    
-     **Sugerencia**: Si no encuentra dónde se administran los conectores personalizados en el explorador para dispositivos móviles, podría estar en un menú en la esquina superior izquierda.
+     > [!TIP]
+> Si no encuentra dónde se administran los conectores personalizados en el explorador de algún dispositivo móvil, podría estar en un menú de la esquina superior izquierda.
    
     ![Create custom connector (Crear conector personalizado)](./media/register-custom-api/managecustomapi.png)  
 2. Seleccione **Create custom connector** (Crear conector personalizado).
@@ -91,7 +93,9 @@ Ahora, usará el archivo de OpenAPI o la colección Postman para registrar el co
 3. En la pestaña **General**, elija cómo desea crear el conector personalizado.
    
    * Upload an OpenAPI file (Cargar un archivo de OpenAPI)
+
    * Use una dirección URL OpenAPI (Usar una dirección URL de OpenAPI)
+
    * Upload Postman Collection V1 (Cargar una colección Postman V1)
      
      ![Cómo crear un conector personalizado](./media/register-custom-api/choosehowtocreate.png)
@@ -126,6 +130,7 @@ Ahora, usará el archivo de OpenAPI o la colección Postman para registrar el co
    2. En la sección **Request** (Solicitar), seleccione **Import from sample** (Importar del ejemplo) en la parte superior derecha. En el formulario de la derecha, pegue los datos en una solicitud de ejemplo. Normalmente hay solicitudes de ejemplo en la documentación de la API, donde puede obtener información para rellenar los campos **Verbo**, **URL de solicitud**, **Encabezados** y **Cuerpo**. Consulte la [documentación de Text Analytics API](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c6) para ver un ejemplo.
       
        ![Importar del ejemplo](./media/register-custom-api/importfromsample.png)
+
    3. Seleccione **Importar** para completar la definición de la solicitud. Defina la respuesta de una manera similar.
 6. Una vez que tenga todas las operaciones definidas, seleccione **Crear** para crear el conector personalizado.
 7. Después de crear el conector personalizado, vaya a la pestaña **Probar** para probar las operaciones definidas en la API. Elija una conexión y especifique los parámetros de entrada para probar una operación.

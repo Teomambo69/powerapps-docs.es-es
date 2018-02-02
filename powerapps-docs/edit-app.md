@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/19/2017
-ms.author: karthikb
-ms.openlocfilehash: 7015a224d2ed914f84d4b56c58addd5f0fd88f8b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: daa1aa994f13c9e79171b4c34101e397aaf5eff7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>Edición de una aplicación en PowerApps
 Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede editar una aplicación en PowerApps Studio para web o PowerApps Studio para Windows. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
@@ -34,7 +34,8 @@ Edite cualquier aplicación que haya creado, que posea, o para la que tiene perm
    
     Puede editar cualquier aplicación de la lista que aparece. También puede buscar una aplicación escribiendo uno o más caracteres en el cuadro de búsqueda cerca de la esquina superior derecha.
    
-    **Nota**: Si aún así no ve la aplicación que desea editar, compruebe que ha seleccionado el entorno correcto cerca de la esquina superior derecha.
+    > [!NOTE]
+> Si aún así no ve la aplicación que desea editar, compruebe que ha seleccionado el entorno correcto cerca de la esquina superior derecha.
    
     ![Lista de entornos](./media/edit-app/environment-list.png)
 

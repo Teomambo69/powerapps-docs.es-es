@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 379b9773033245ba5e2a88486a7738f51f000e6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -28,7 +28,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
 | --- | --- | --- | --- | --- | --- |
 | ![Icono](./media/cloud-storage-blob-connections/blobicon.png) |![Icono API][boxicon] |![Icono API][dropboxicon] |![Icono API][googledriveicon] |![Icono API][onedriveicon] |![Icono API][onedriveforbusinessicon] |
 
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 * Un archivo de Excel con datos [con formato de tabla](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
   
@@ -53,7 +53,8 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
    
     ![Seleccionar la tabla de Excel](./media/cloud-storage-blob-connections/selecttable.png)
    
-    **NOTA**: Recuerde, que los datos de Excel deben tener formato de tabla.
+    > [!NOTE]
+> Recuerde que los datos de Excel deben tener formato de tabla.
 
 ## <a name="using-the-excel-data-in-your-app"></a>Usar los datos de Excel en la aplicación
 1. En la pestaña **Insertar**, seleccione **Galería** y seleccione un control de la galería **Con texto**.
@@ -73,7 +74,8 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
     Salida de ejemplo:  
     ![Segunda y tercera etiqueta](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
-    <br/>**NOTA** El primer cuadro es en realidad un control de imagen. Si no tiene ninguna imagen en la tabla de Excel, puede eliminar el control de imagen y agregar una etiqueta en su lugar. [Agregar y configurar controles](../add-configure-controls.md) es un buen recurso.
+> [!NOTE]
+> El primer cuadro es en realidad un control de imagen. Si no tiene ninguna imagen en la tabla de Excel, puede eliminar el control de imagen y agregar una etiqueta en su lugar. [Agregar y configurar controles](../add-configure-controls.md) es un buen recurso.
 
 [Comprender las tablas y los registros](../working-with-tables.md) ofrece más detalles y algunos ejemplos.  
 

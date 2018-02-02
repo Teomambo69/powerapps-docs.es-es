@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/04/2017
 ms.author: sharik
-ms.openlocfilehash: 1ffa79a35d93249756316e52876922ce1d850c49
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 114aa01bd745ed501e209e314e75904751aad3f5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="regions-overview-in-powerapps"></a>Introducción a las regiones en PowerApps
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>¿Cómo averiguar dónde se implementa la aplicación?
@@ -31,7 +31,7 @@ Los administradores pueden determinar la región de cada entorno en el centro de
   
     En el centro de administración, todos los entornos existentes aparecen en la pestaña **Entornos**. En esta lista se muestra la **región** donde se implementa la aplicación:
   
-   ![](./media/regions-overview/environment-list.png)
+   ![Pestaña Entornos](./media/regions-overview/environment-list.png)
 
 ## <a name="what-regions-are-available"></a>¿Qué regiones hay disponibles?
 * Estados Unidos
@@ -47,5 +47,6 @@ Los entornos se pueden crear en regiones diferentes y se enlazan a esa ubicació
 
 Para obtener un rendimiento óptimo, si los usuarios están en Europa, cree y use el entorno en la región Europa. Si los usuarios se encuentran en los Estados Unidos, cree y use el entorno de Estados Unidos.
 
-**Nota**: Las puertas de enlace de datos locales no están disponibles en la región de India ni en los entornos personalizados. Debe crear las puertas de enlace en el entorno predeterminado.
+> [!NOTE]
+> Las puertas de enlace de datos locales no están disponibles en la región de India ni en los entornos personalizados. Debe crear las puertas de enlace en el entorno predeterminado.
 

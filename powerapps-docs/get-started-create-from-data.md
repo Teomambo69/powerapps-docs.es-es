@@ -14,12 +14,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: karthikb
-ms.openlocfilehash: e6ad4896beb28b5b38b22706838fec5f6a6840ec
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>Creación de una aplicación a partir de datos de Excel
 Cree una aplicación automáticamente en función de los datos de un archivo Excel que se carga en una cuenta de almacenamiento en la nube, como OneDrive. Después de generar la aplicación, personalícela para que se adapte mejor a sus necesidades y, después, ejecútela para asegurarse de que funciona según lo esperado.
@@ -30,7 +30,8 @@ De forma predeterminada, las aplicaciones generadas tienen tres pantallas:
 * **DetailsScreen1** muestra algunos o todos los campos de un registro específico.
 * **EditScreen1** proporciona elementos de interfaz de usuario que permiten que los usuarios creen o actualicen un registro y guarden los cambios.
 
-**Nota**: También puede generar una aplicación a partir de una [lista personalizada de SharePoint](app-from-sharepoint.md).
+> [!NOTE]
+> También puede generar una aplicación a partir de una [lista personalizada de SharePoint](app-from-sharepoint.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 * [Suscríbase](signup-for-powerapps.md) a PowerApps y, después, siga estos pasos:
@@ -39,7 +40,8 @@ De forma predeterminada, las aplicaciones generadas tienen tres pantallas:
 * Inicie sesión en PowerApps con las mismas credenciales que utilizó para suscribirse.
 * Para seguir este tutorial exactamente, descargue este [archivo de Excel](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx).
   
-    **Importante**: Puede utilizar su propio archivo de Excel si los datos tienen formato de tabla. Para más información, consulte [Crear o eliminar una tabla de Excel](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    > [!IMPORTANT]
+> Puede utilizar su propio archivo de Excel si los datos tienen formato de tabla. Para más información, consulte [Crear o eliminar una tabla de Excel](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 * Cargue el archivo de Excel en OnDrive y otra [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
 ## <a name="create-an-app"></a>Crear una aplicación
@@ -66,7 +68,8 @@ De forma predeterminada, las aplicaciones generadas tienen tres pantallas:
    
     ![Elegir Siguiente para el paseo](./media/get-started-create-from-data/quick-tour.png)
    
-    **Nota**: Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
+    > [!NOTE]
+> Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
 
 ## <a name="change-the-gallery-layout"></a>Cambiar el diseño de la galería
 Cuando se crea una aplicación, tiene un diseño predeterminado en función de los datos, pero puede personalizarlo para ajustarlo a sus necesidades.
@@ -103,7 +106,8 @@ Cuando se crea una aplicación, tiene un diseño predeterminado en función de l
    
     ![BrowseScreen1 con el nuevo contenido](./media/get-started-create-from-data/browse-content.png)
    
-    **Nota**: De forma predeterminada, puede desplazarse por la lista (denominada galería) mediante la rueda del mouse o deslizándose hacia arriba y hacia abajo por una pantalla táctil. Para usar un trackpad o un mouse sin rueda, seleccione la galería, pulse o haga clic en **Mostrar barra de desplazamiento** en la lista de propiedades, y reemplace **false** por **true** en la barra de fórmulas.
+    > [!NOTE]
+> De forma predeterminada, puede desplazarse por la lista (denominada galería) mediante la rueda del mouse o deslizándose hacia arriba y hacia abajo por una pantalla táctil. Para usar un trackpad o un mouse sin rueda, seleccione la galería, pulse o haga clic en **Mostrar barra de desplazamiento** en la lista de propiedades, y reemplace **false** por **true** en la barra de fórmulas.
 
 ## <a name="change-the-order-of-fields-in-a-form"></a>Cambiar el orden de los campos de un formulario
 1. En la barra de navegación izquierda, pulse o haga clic en la miniatura intermedia para abrir la pantalla de detalles (**DetailsScreen1**).
@@ -155,7 +159,7 @@ A medida que personaliza una aplicación, puede probar los cambios mediante la e
    
     ![Cerrar el modo de vista previa](./media/get-started-create-from-data/close-preview.png)
 
-## <a name="known-limitations"></a>Limitaciones conocidas
+### <a name="known-limitations"></a>Limitaciones conocidas
 Para más información sobre cómo compartir datos de Excel en su organización, [repase estas limitaciones](connections/cloud-storage-blob-connections.md#sharing-excel-tables).
 
 ## <a name="next-steps"></a>Pasos siguientes

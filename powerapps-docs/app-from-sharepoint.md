@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 5d47366fafa137d8e5b0311f8820b11ff60f648a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 36a9188615c14262de0bfdea21d58010a053e01f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-to-manage-data-in-a-sharepoint-list"></a>Generar una aplicación para administrar datos en una lista de SharePoint
-[!VIDEO nb:cid:UUID:34ccfd46-7826-49ce-90d8-cf6a144b6968]
+
 
 
 En PowerApps, genere una aplicación de tres pantallas para administrar automáticamente los datos en una lista de SharePoint independientemente de si el sitio es local o está en la nube.
@@ -33,7 +33,8 @@ Si no está familiarizado con PowerApps, consulte [Introducción a PowerApps](ge
 
 A partir de la fecha de publicación de este artículo, PowerApps admite listas personalizadas pero no bibliotecas. Además, puede mostrar datos en algunos tipos de columnas, como **Opción** e **Imagen**, pero no puede actualizar esos datos. Para más información, consulte [Problemas conocidos](connections/connection-sharepoint-online.md#known-issues).
 
-**Nota:** Si cualquier nombre de columna contiene algún espacio, PowerApps mostrará este como **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** se mostrará como **"Nombre_x0020_de_columna"**.
+> [!NOTE]
+> Si cualquier nombre de columna contiene un espacio, PowerApps lo mostrará de la siguiente forma **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** se mostrará como **"Nombre_x0020_de_columna"**.
 
 ## <a name="specify-a-sharepoint-app"></a>Especificar una aplicación de SharePoint
 1. Si no ha creado todavía una [conexión a SharePoint](connect-to-sharepoint.md), cree una.
@@ -52,7 +53,8 @@ A partir de la fecha de publicación de este artículo, PowerApps admite listas 
 ## <a name="specify-a-site-and-a-list"></a>Especifique un sitio y una lista
 1. En **Conectar con un sitio de SharePoint**, escriba o pegue la dirección URL del sitio que contiene la lista que desea utilizar y, a continuación, haga clic o pulse en **Ir**.
    
-    **Nota**: No incluya una lista específica en la dirección URL.
+    > [!NOTE]
+> No incluya una lista específica de la dirección URL.
    
     ![](./media/app-from-sharepoint/specify-site.png)
 2. En **Elija una lista**, haga clic o pulse en el nombre de la lista que desea utilizar.

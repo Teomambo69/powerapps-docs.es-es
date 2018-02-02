@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/01/2016
+ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 5ca84afd86144bec23c66825e72ef72694428df1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Información sobre las puertas de enlace de datos locales para Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Instalación y configuración
@@ -44,27 +44,33 @@ Consideraciones relacionadas:
 **Instalación de una puerta de enlace**
 
 1. [Descargue el instalador](http://go.microsoft.com/fwlink/?LinkID=820931) y ejecútelo.
-   
+
     ![Ejecutar el instalador](./media/gateway-reference/run-installer.png)
+
 2. En la primera pantalla del asistente para la instalación, pulse o haga clic en **Siguiente** para confirmar el aviso acerca de la instalación de una puerta de enlace en un equipo portátil.
-   
+
     ![Pantalla de aviso](./media/gateway-reference/laptop-reminder.png)
+
 3. Especifique la ubicación donde desea instalar la puerta de enlace, active la casilla para aceptar los términos de uso y la declaración de privacidad y, a continuación, pulse o haga clic en **Instalar**.
+
 4. En los cuadros de diálogo **Control de cuentas de usuario**, pulse o haga clic en **Sí** para continuar.
+
 5. En la siguiente pantalla del asistente, pulse o haga clic en **Iniciar sesión**.
-   
+
     ![Iniciar sesión](./media/gateway-reference/sign-in.png)
+
 6. Pulse o haga clic en la opción para registrar una nueva puerta de enlace o para migrar, restaurar o utilizar una puerta de enlace existente y, a continuación, pulse o haga clic en **Siguiente**.
-   
+
     ![Elegir nueva o existente](./media/gateway-reference/new-existing.png)
-   
+
    * Para configurar una puerta de enlace, escriba un **nombre** y una **clave de recuperación**, pulse o haga clic en **Configurar** y, a continuación, pulse o haga clic en **Cerrar**.
-     
+
        ![Configuración de una nueva puerta de enlace](./media/gateway-reference/configure-new.png)
-     
+
        Especifique una clave de recuperación que contenga al menos ocho caracteres, y guárdela en un lugar seguro. Necesitará esta clave si desea migrar, restaurar o utilizar su puerta de enlace.
+
    * Para migrar, restaurar o utilizar a través de una puerta de enlace existente, proporcione el nombre de la puerta de enlace y su clave de recuperación, pulse o haga clic en **Configurar** y siga las indicaciones adicionales.
-     
+
        ![Recuperar una puerta de enlace existente](./media/gateway-reference/recover-existing.png)
 
 **Reinicio de la puerta de enlace**
@@ -73,6 +79,7 @@ La puerta de enlace se ejecuta como un servicio de Windows, por lo que se puede 
 
 * Para detener el servicio, ejecute este comando:<br>
   **net stop PBIEgwService**
+
 * Para iniciar el servicio, ejecute este comando:<br>
   **net start PBIEgwService**
 
@@ -82,7 +89,7 @@ Para más información sobre cómo proporcionar información de proxy para la pu
 
 Puede comprobar si el firewall o el servidor proxy podrían estar bloqueando conexiones; para ello, ejecute el siguiente comando desde un símbolo del sistema de PowerShell. Este comando probará la conectividad con Azure Service Bus. Esto solo prueba la conectividad de red y no tiene nada que ver con el servicio de servidor de nube o la puerta de enlace. Ayuda a determinar si el equipo realmente puede obtener acceso a internet.
 
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+**Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350**
 
 El resultado será similar a este ejemplo. Si **TcpTestSucceeded** no es **True**, podría estar bloqueado por un firewall.
 
@@ -107,7 +114,8 @@ Más información acerca de las [soluciones híbridas](https://azure.microsoft.c
 
 Se recomienda incluir las direcciones IP de su región de datos en la lista de permitidos del firewall. Puede descargar la [lista de direcciones IP de los centros de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), que se actualiza semanalmente.
 
-**Nota:** En la lista de direcciones IP de centros de datos de Azure, se muestran las direcciones en [la notación CIDR](http://whatismyipaddress.com/cidr). Por ejemplo, 10.0.0.0/24 no significa de 10.0.0.0 a 10.0.0.24.
+> [!NOTE]
+> En la lista de direcciones IP del centro de datos de Azure, las direcciones se muestran en [notación CIDR](http://whatismyipaddress.com/cidr). Por ejemplo, 10.0.0.0/24 no significa de 10.0.0.0 a 10.0.0.24.
 
 Esta es una lista de los nombres de dominio completos que la puerta de enlace utiliza.
 
@@ -156,7 +164,7 @@ Si tiene problemas de autenticación con el servidor proxy, puede cambiar la cue
 **Respuesta:** No. La puerta de enlace utiliza conexiones de salida hacia Azure Service Bus.
 
 **Pregunta:** ¿Qué ocurre si bloqueo las conexiones de salida? ¿Qué tengo que abrir?  
-**Respuesta:** Consulte los [puertos](gateway-reference.md#ports) y los hosts que utiliza la puerta de enlace.
+**Respuesta:** Consulte más arriba la lista de puertos y hosts que utiliza la puerta de enlace.
 
 **Pregunta:** ¿La puerta de enlace debe estar instalada en el mismo equipo que el origen de datos?  
 **Respuesta:** No. La puerta de enlace se conectará con el origen de datos con la información de conexión que se proporcionó. En este sentido, piense en la puerta de enlace como en una aplicación de cliente. Solo tendrá que poder conectar con el nombre del servidor que se proporcionó.
@@ -206,10 +214,15 @@ También puede mirar las herramientas que el origen de datos tiene para realizar
 Cuando un usuario interactúa con un elemento que está conectado a un origen de datos local:  
 
 1. El servicio en la nube crea una consulta, junto con las credenciales cifradas del origen de datos, y envía la consulta a la cola de la puerta de enlace para su procesamiento.
+
 2. El servicio de puerta de enlace en la nube analiza la consulta y envía la solicitud a [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).
+
 3. La puerta de enlace de datos local sondea Azure Service Bus para ver si hay solicitudes pendientes.
+
 4. La puerta de enlace obtiene la consulta, descifra las credenciales y se conecta a los orígenes de datos con esas credenciales.
+
 5. La puerta de enlace envía la consulta al origen de datos para su ejecución.
+
 6. Los resultados se envían desde el origen de datos a la puerta de enlace y, a continuación, al servicio en la nube. A continuación, el servicio utiliza los resultados.
 
 ## <a name="troubleshooting"></a>Solución de problemas
@@ -225,15 +238,15 @@ Puede recopilar diversos registros para la puerta de enlace. Empiece siempre con
 
 **Registros del instalador**
 
-    %localappdata%\Temp\On-premises_data_gateway_*.log
+%localappdata%\Temp\On-premises_data_gateway_*.log
 
 **Registros de configuración**
 
-    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
+%localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
 **Registros del servicio de puerta de enlace de empresa**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
+C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 **Registros de eventos**
 
@@ -243,4 +256,3 @@ Los registros de eventos del **servicio de puerta de enlace de datos local** se 
 
 #### <a name="fiddler-trace"></a>Seguimiento de Fiddler
 [Fiddler](http://www.telerik.com/fiddler) es una herramienta gratuita de Telerik que supervisa el tráfico HTTP.  Puede ver el tráfico de entrada y salida del servicio Power BI desde el equipo cliente. Puede mostrar errores y otra información relacionada.
-

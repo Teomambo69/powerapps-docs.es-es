@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 5e229e8767d4fdc16d37a69d82766af48a414686
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Publicación del informe de proyecto de Power BI y creación de un panel
-**Nota**: Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> [!NOTE]
+> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el servicio Power BI. A continuación, se creará un panel basado en este informe. Muchas veces, un informe tiene un gran número de visualizaciones y solo se usa un subconjunto en un panel. En este caso, vamos a agregar cuatro visualizaciones al panel.
 
@@ -48,7 +49,8 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
    
     Puede ver que, cuando se hizo la publicación, Power BI Desktop cargó un conjunto de datos **(d)** y un informe **(c)**. Va a crear paneles en el servicio, no en Power BI Desktop, y esta área de trabajo aún no tiene ningún panel **(b)**. Vamos a crear uno a continuación.
    
-    **Nota:** Power BI dispone de una nueva experiencia de navegación y esta se puede habilitar en su sitio. Si el aspecto del panel de navegación izquierdo es diferente al de la imagen anterior, consulte [La nueva experiencia de navegación de Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience) para más información.
+    > [!NOTE]
+> Power BI dispone de una nueva experiencia de navegación que se puede habilitar en su sitio. Si el aspecto del panel de navegación izquierdo es diferente al de la imagen anterior, consulte [La nueva experiencia de navegación de Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience) para más información.
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Paso 2: Configuración de las credenciales para la actualización
 1. En el servicio, haga clic o pulse en el ![icono de engranaje](./media/sharepoint-scenario-publish-report/icon-gear.png) en la esquina superior derecha. Después, haga clic o pulse en **Configuración**.
@@ -82,10 +84,13 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
 4. Seleccione el panel existente, después, haga clic o pulse en **Anclar**.
    
     ![Gráfico anclado al panel existente](./media/sharepoint-scenario-publish-report/06-01-15-pin-existing.png)
+
 5. Repita el proceso de anclaje con los otros dos objetos visuales.
+
 6. En el panel de navegación izquierdo, haga clic o pulse en el nombre del panel.
    
     ![Nuevo panel de navegación del sitio](./media/sharepoint-scenario-publish-report/06-01-16-dashboard-menu.png)
+
 7. Revise el panel. Si hace clic en un icono, volverá al informe.
    
     ![Panel terminado](./media/sharepoint-scenario-publish-report/06-01-17-dashboard-completed.png)

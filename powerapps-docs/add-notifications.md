@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: f588a6fa9952f3d40d51fbedbd672031b9c837f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -32,13 +32,15 @@ Las notificaciones push se agregan a aplicaciones en los siguientes casos:
 * Los usuarios deben completar tareas importantes mediante el uso de la aplicación en un contexto cargado previamente.
 * Desea ponerse en contacto a los usuarios en un intervalo específico o necesita que los usuarios interactúen con la aplicación en un contexto concreto.
 
-**Nota**: para recibir notificaciones push, todos los usuarios deben haber abierto la aplicación en PowerApps Mobile una vez o haber obtenido la aplicación en AppSource en [Dynamics 365](https://home.dynamics.com/).
+> [!NOTE]
+> Para recibir notificaciones push, cada usuario debe haber abierto una vez la aplicación en PowerApps Mobile, o haber recibido de AppSource en [Dynamics 365](https://home.dynamics.com/).
 
 ## <a name="before-you-start"></a>Antes de comenzar
 En una aplicación en la que tenga permiso de **colaborador**, agregue una conexión de PowerApps Notification. Si no tiene una aplicación, puede [crearla rápidamente a partir de una plantilla](get-started-test-drive.md), y tendrá el permiso necesario de forma predeterminada. Este tutorial y éste usan una aplicación basada en la plantilla de administración de casos.
 
 ## <a name="send-a-notification-from-a-flow"></a>Envío de una notificación desde un flujo
-**Nota**: si desencadena una notificación push desde un flujo, dicha notificación no se puede enviar a más de un usuario o grupo de seguridad la vez.
+> [!NOTE]
+> Si desencadena una notificación push desde un flujo, actualmente no se puede enviar a más de un usuario o grupo de seguridad a la vez.
 
 1. En [Microsoft Flow](https://flow.microsoft.com), cree un desencadenador que especifique cuándo se envía la notificación push.
    
@@ -89,10 +91,11 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 2. (opcional) Oculte el control **Timer** (Temporizador) estableciendo la propiedad **Visible** en **false**.
 3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()**.
 
-**Sugerencia**: se recomienda crear una primera página única en la aplicación de la notificación:
+> [!TIP]
+> Se recomienda crear una primera página única en la aplicación para la notificación:
 
-1. Cree una página vacía que la aplicación no abra, agregue un control **Entrada de texto** y establezca su valor **timer.Duration**.
-2. Cuando cree la aplicación, establezca el temporizador en un valor distinto de cero. Cuando esté listo para publicar la aplicación, establezca el valor en **0** para desencadenar inmediatamente el temporizador.
+>1. Cree una página vacía que la aplicación no abra, agregue un control **Entrada de texto** y establezca su valor **timer.Duration**.
+>2. Cuando cree la aplicación, establezca el temporizador en un valor distinto de cero. Cuando esté listo para publicar la aplicación, establezca el valor en **0** para desencadenar inmediatamente el temporizador.
 
 ## <a name="syntax"></a>Sintaxis
 | Nombre | Descripción |

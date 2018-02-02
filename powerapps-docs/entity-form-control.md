@@ -14,24 +14,26 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: f8962ea7ea89892b834541aba25653759212a652
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 33c113441bd9842ec267cc658ffd955decde86c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-the-entity-form-control"></a>Usar el control Formulario de la entidad
-Cree aplicaciones más rápidamente mediante el control **Formulario de la entidad** para agregar completos formularios para una entidad de [Common Data Service](guided-learning/learning-common-data-service-entities.md).
+Cree aplicaciones más rápidamente mediante el control **Formulario de la entidad** para agregar completos formularios para una entidad de [Common Data Service](guided-learning/manage-data.yml#step-2).
 
 Para ver una introducción al control **Formulario de la entidad**, consulte esta entrada de blog: [New entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/) (Nuevo control Formulario de la entidad (versión preliminar) para Common Data Service).
 
-**Importante**: Tenga en cuenta la naturaleza experimental del control **Formulario de la entidad**, tal como se describe en la entrada de blog, y tenga cuidado al usarlo en aplicaciones de producción, al menos por ahora.
+> [!IMPORTANT]
+> Tenga en cuenta la naturaleza experimental del control **Formulario de la entidad**, tal como se describe en la entrada de blog, y tenga cuidado al usarlo en aplicaciones de producción, al menos por ahora.
 
 ## <a name="key-properties"></a>Propiedades principales
 Estas son las propiedades fundamentales de un control **Formulario de la entidad**.
 
 **DataSource**: especifica el origen de datos que contiene el registro o los registros que desea mostrar.   
-**Nota**: Actualmente se admiten solo entidades en Common Data Service como orígenes de datos para el control **Formulario de la entidad**.  
+> [!NOTE]
+> Actualmente se admiten solo entidades en Common Data Service como orígenes de datos para el control **Formulario de la entidad**.  
 
 **Patrón**: especifica el estilo del formulario que desea mostrar en el control **Formulario de la entidad**. Establezca esta propiedad mediante la enumeración **FormPattern**.
 
@@ -82,7 +84,8 @@ Puede usar estas funciones compartidas con el control **Formulario de la entidad
 
 Después de esta introducción a las distintas propiedades y funciones, se van a mostrar en acción.
 
-**Nota**: Si no tiene acceso a una base de datos de Common Data Service, [cree una](guided-learning/learning-common-data-service.md) antes de empezar a seguir estos pasos.
+> [!NOTE]
+> Si no tiene acceso a una base de datos de Common Data Service, [créela](guided-learning/manage-data.yml#step-1) antes de empezar a seguir estos pasos.
 
 ## <a name="display-a-list-of-records"></a>Mostrar una lista de registros
 Los cinco procedimientos siguientes proporcionan un ejemplo único, de principio a fin, de cómo usar controles **Formulario de la entidad**. En este procedimiento, se agrega un formulario que muestra una lista de pedidos de ventas.  
@@ -125,7 +128,7 @@ Los cinco procedimientos siguientes proporcionan un ejemplo único, de principio
       
       ![](media/entity-form-control/entityform-tutorial-01-08.png)   
       
-      En **Common Data Service**, también puede [modificar grupos de campos](field-groups.md) para entidades personalizadas (pero no [entidades estándar](guided-learning/learning-common-data-service-entities.md)) con el fin de cambiar los campos que aparecen en los formularios correspondientes que el control **Formulario de la entidad** muestra. Lo mejor de todo es que cualquier cambio en el grupo de campos se refleja automáticamente en todas las aplicaciones que usan un control **Formulario de la entidad** para mostrar el formulario correspondiente.
+      En **Common Data Service**, también puede [modificar grupos de campos](field-groups.md) para entidades personalizadas (pero no [entidades estándar](guided-learning/manage-data.yml#step-2)) con el fin de cambiar los campos que aparecen en los formularios correspondientes que el control **Formulario de la entidad** muestra. Lo mejor de todo es que cualquier cambio en el grupo de campos se refleja automáticamente en todas las aplicaciones que usan un control **Formulario de la entidad** para mostrar el formulario correspondiente.
 
 ## <a name="display-the-details-of-a-record"></a>Mostrar los detalles de un registro
 Ahora se va a agregar otro control **Formulario de la entidad** para mostrar los detalles del pedido de ventas que está seleccionado en la lista que creó antes.  
@@ -206,7 +209,8 @@ Por lo tanto, cuando el usuario hace clic o pulsa en un campo Id. de pedido de v
 
 ![](media/entity-form-control/entityform-tutorial-01-21.png)  
 
-**Nota**: Cuando se usa el panel de personalización de formularios, se determina **NavigationContext** de forma inteligente y automática. Cuando el usuario hace clic o pulsa en **SalesOrderId**, **NavigationContext** se establece en **SalesOrderListForm.Selected**, como se muestra en la fórmula anterior. Si se hubiera especificado el campo **Account** para la navegación en su lugar, **NavigationContext** se habría establecido en **SalesOrderListForm.Selected.Account** para asegurarse de que se pasara el contexto correcto. Sin embargo, para consumir ese contexto, necesitaría tener un control **Formulario de la entidad** conectado a la entidad **Cuenta** en Common Data Service.
+> [!NOTE]
+> Cuando se usa el panel de personalización de formularios, **NavigationContext** se determina de forma inteligente y automática. Cuando el usuario hace clic o pulsa en **SalesOrderId**, **NavigationContext** se establece en **SalesOrderListForm.Selected**, como se muestra en la fórmula anterior. Si se hubiera especificado el campo **Account** para la navegación en su lugar, **NavigationContext** se habría establecido en **SalesOrderListForm.Selected.Account** para asegurarse de que se pasara el contexto correcto. Sin embargo, para consumir ese contexto, necesitaría tener un control **Formulario de la entidad** conectado a la entidad **Cuenta** en Common Data Service.
 
 ## <a name="edit-and-save-a-record"></a>Editar y guardar un registro
 Por último, se va a explicar cómo editar y guardar un registro en un control **Formulario de la entidad**.  

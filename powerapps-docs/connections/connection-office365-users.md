@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/07/2016
 ms.author: archanan
-ms.openlocfilehash: c6f4d61728d41df880e595e74e91ff6012bc29aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ca6a91359f04aa54dfb9db146dc08b098763cc2d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)
@@ -30,9 +30,7 @@ Puede mostrar esta información en una etiqueta en la aplicación. Puede mostrar
 
 En este tema se muestra cómo agregar Usuarios de Office 365 como una conexión y como un origen de datos a su aplicación y cómo utilizar datos de tabla en un control de la galería.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>Agregar una conexión
 1. [Agregue una conexión de datos](../add-data-connection.md) y seleccione **Usuarios de Office 365**:  
@@ -97,7 +95,8 @@ La etiqueta muestra la información que ha especificado sobre el usuario actual.
 
 La etiqueta muestra la información que ha escrito sobre el usuario especificado o sobre el administrador de ese usuario.
 
-**Nota**: Si va a desarrollar una aplicación basada en una entidad en Common Data Service, puede especificar un usuario basado en el id. en lugar de la dirección de correo electrónico.
+> [!NOTE]
+> Si va a desarrollar una aplicación basada en una entidad en Common Data Service, puede especificar un usuario basado en el id. en lugar de la dirección de correo electrónico.
 
 Por ejemplo, puede [crear una aplicación automáticamente](../data-platform-create-app.md), agregar una pantalla que contenga un control **Etiqueta** y establecer la propiedad **Texto** del control en esta fórmula:
 <br>**Office365Users.UserProfile(BrowseGallery1.Selected.CreatedByUser).DisplayName**
@@ -116,7 +115,8 @@ Si crea un contacto y lo selecciona en la pantalla de exploración de la aplicac
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 4. En la segunda lista, seleccione **JobTitle**. En la tercera lista, seleccione **DisplayName**. La galería se actualiza para mostrar estos valores.  
    
-    <br/>**NOTA** El primer cuadro es en realidad un control de imagen. Si no tiene ninguna imagen, puede eliminar el control de imagen y agregar una etiqueta en su lugar. [Agregar y configurar controles](../add-configure-controls.md) es un buen recurso.
+> [!NOTE]
+> El primer cuadro es en realidad un control de imagen. Si no tiene ninguna imagen, puede eliminar el control de imagen y agregar una etiqueta en su lugar. [Agregar y configurar controles](../add-configure-controls.md) es un buen recurso.
 
 ### <a name="search-for-users"></a>Búsqueda de usuarios
 1. Agregue un control **Entrada de texto** (menú **Insert** [Insertar] > **Text** [Texto]) y cambie su nombre por **SearchTerm**. Escriba un nombre para buscar. Por ejemplo, escriba su nombre.

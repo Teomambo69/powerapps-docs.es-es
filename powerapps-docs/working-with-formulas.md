@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 99fc1a29604c15cc473e0d4442a32a8b5d915f48
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3f4cf53e8db612004619017304f222d3863430b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-formulas"></a>Introducción a las fórmulas
 Configure la aplicación con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
@@ -33,7 +33,7 @@ Puede usar fórmulas para una amplia variedad de escenarios. Por ejemplo, puede 
 
 En este tema se proporciona únicamente información general sobre cómo trabajar con fórmulas. Examine la [referencia sobre fórmulas](formula-reference.md) para más información y la lista completa de funciones, operadores y otros bloques de creación que puede usar.
 
-**Requisitos previos**
+## <a name="prerequisites"></a>Requisitos previos
 
 * [Suscríbase](signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
@@ -71,7 +71,8 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
    
     En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30,12)**. En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30,12)**. La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
    
-    **Nota:** En PowerApps, no anteponga un signo igual o más a la fórmula como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
+    > [!NOTE]
+> En PowerApps, no anteponga un signo igual o más a la fórmula como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
 5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1,2,3)**.
    
     ![Si escribe la función parcial Sum(1,2,3 sin paréntesis de cierre, aparecen errores](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +99,8 @@ En Excel, puede usar formato condicional para mostrar, por ejemplo, los valores 
 
 1. Establezca la propiedad **[Color](controls/properties-color-border.md)** de la etiqueta en la siguiente fórmula:<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
-    **Nota:** En una fórmula, especifique la propiedad de un control proporcionando el nombre del control seguido de un punto y del nombre de la propiedad. Por ejemplo, para especificar la propiedad **[Text](controls/properties-core.md)** de **TextBox1**, escriba **TextBox1.Text**.
+    > [!NOTE]
+> En una fórmula, especifique la propiedad de un control proporcionando el nombre del control seguido de un punto y del nombre de la propiedad. Por ejemplo, para especificar la propiedad **[Text](controls/properties-core.md)** de **TextBox1**, escriba **TextBox1.Text**.
    
     ![Ilustración del recálculo de PowerApps que cambia el color de una etiqueta en función de su valor](./media/working-with-formulas/recalc-color1.png)
 2. En **TextInput1** y **TextInput2**, especifique dos números cuyo resultado, cuando se sumen, sea un número negativo.

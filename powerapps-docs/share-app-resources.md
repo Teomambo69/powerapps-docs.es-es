@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 75cd4137babde948ea70d8ee48a938c9acc092cc
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbd108d1a089072a89f8e6cb06ded07c8493bb4d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-app-resources"></a>Compartir los recursos de la aplicación
 Antes de [compartir una aplicación](share-app.md), tenga en cuenta los tipos de recursos en los que se basa, por ejemplo, uno o varios de los siguientes:
@@ -47,7 +47,8 @@ Si crea y comparte una aplicación que incluye datos de un origen local, la prop
 1. Abra [powerapps.com](https://web.powerapps.com), haga clic o pulse **Administrar** en la barra de navegación izquierda y luego haga clic o pulse **Puertas de enlace**.
 2. Pulse o haga clic en una puerta de enlace y luego pulse o haga clic en la ficha **Connections** (Conexiones).
 
-**Nota**: Si comparte una o varias conexiones manualmente, puede que tenga que volver a compartirlas en estas circunstancias:
+> [!NOTE]
+> Si comparte una o varias conexiones manualmente, puede que tenga que volver a compartirlas en estas circunstancias:
 
 * Si agrega una puerta de enlace de datos local a una aplicación que ya ha compartido.
 * Si cambia el conjunto de personas o grupos con quienes ha compartido una aplicación que tiene una puerta de enlace de datos local.

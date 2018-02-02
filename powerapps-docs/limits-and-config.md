@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2017
 ms.author: sharik
-ms.openlocfilehash: 337f3fc00fe52e0008190e2144f21f40d1632f52
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4012439f121a212f6117aa18c1d906cab893248f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-powerapps"></a>Límites y configuración de Microsoft PowerApps
 Este tema contiene información acerca de los límites actuales y detalles de la configuración de PowerApps.
@@ -32,14 +32,15 @@ Estos límites se aplican a todas y cada una de las solicitudes de salida:
 | Tiempo de espera |180 segundos |
 | Número de reintentos |4 |
 
-**NOTA**: el valor de reintento puede variar. En ciertas condiciones de error, no tiene sentido volver a intentarlo.
+> [!NOTE]
+> El valor de reintento puede variar. En ciertas condiciones de error, no tiene sentido volver a intentarlo.
 
 ## <a name="ip-addresses"></a>Direcciones IP
 Las solicitudes de PowerApps usan direcciones IP que dependen de la región del [entorno](environments-overview.md) en que se encuentra la aplicación. No publicamos los nombres de dominio completos disponibles para los escenarios de PowerApps.
 
 Las llamadas realizadas desde una API conectada a través de una aplicación (por ejemplo, la API de SQL o la API de SharePoint) proceden de la dirección IP que se especificará más adelante en este mismo tema.
 
-Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de direcciones IP permitidas de una instancia de Azure SQL Database.
+Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista blanca las direcciones IP de una instancia de Azure SQL Database.
 
 | Región | IP de salida |
 | --- | --- |

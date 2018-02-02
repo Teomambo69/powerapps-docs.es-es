@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: b3eafd9f37537a083212e9ecbb92c6928ae0f773
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
@@ -93,7 +93,8 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 4. Presione F5 y, a continuación, reproduzca la secuencia haciendo clic o pulsando en el botón de reproducción del control que ha agregado.
    
-    **Sugerencia:** el botón de reproducción del control **Vídeo** aparece cuando mantiene el puntero sobre el control.
+    > [!TIP]
+> El botón de reproducción del control **Vídeo** aparece cuando mantiene el puntero sobre el control.
 5. Presione Esc para volver al área de trabajo predeterminada.
 
 ### <a name="play-a-youtube-video"></a>Reproducir un vídeo de YouTube

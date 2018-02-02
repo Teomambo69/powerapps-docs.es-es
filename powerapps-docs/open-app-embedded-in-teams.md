@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/20/2017
 ms.author: ankitsar
-ms.openlocfilehash: 64c14c7e3a6ab599aa14d2200679134cc3fcc7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 19d6a2718a39e3426fc0fcb4aca3223825f29a07
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-and-open-an-app-in-microsoft-teams"></a>Incorporación y apertura de una aplicación en Microsoft Teams
 Agregue una aplicación a un canal Microsoft Teams para que cualquier usuario con el que se comparta la aplicación pueda abrirla desde dentro de ese canal. Puede agregar cualquier aplicación que haya creado o para la que tenga permisos **Can use** (Puede usar) o **Can editar** (Puede editar), y puede tanto agregar como abrir la aplicación desde un explorador o la aplicación de escritorio de Microsoft Teams.
@@ -37,7 +37,8 @@ Agregue una aplicación a un canal Microsoft Teams para que cualquier usuario co
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 5. Pulse o haga clic en la aplicación que desea agregar.
    
-    **Nota**: Puede buscar una aplicación por nombre, autor o entorno.
+    > [!NOTE]
+> Puede buscar una aplicación por nombre, autor o entorno.
    
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 6. Pulse o haga clic en el botón **Guardar**.

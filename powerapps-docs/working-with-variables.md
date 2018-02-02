@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 2131e964626bee5b90062002619b7f46f7910ae0
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: eb7bb74362a810487e88efb1177b3c1dfa7a694d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Descripción de las variables en PowerApps
 Si ha usado otra herramienta de programación como Visual Basic o JavaScript, probablemente se pregunte: **¿dónde están las variables?** PowerApps es ligeramente diferente y requiere otro enfoque. En lugar de buscar una variable, pregúntese lo siguiente: **¿qué haría en Excel?**
 
 En otras herramientas, lo más probable es que haya realizado explícitamente un cálculo y haya almacenado el resultado en una variable. Pero PowerApps y Excel recalculan automáticamente las fórmulas cuando los datos de entrada cambian, por lo que normalmente no tendrá que crear ni actualizar las variables. Si adopta este enfoque siempre que sea posible, podrá crear, comprender y mantener la aplicación más fácilmente.
 
-En algunos casos deberá usar variables en PowerApps, que amplía el modelo de Excel mediante la adición de [fórmulas de comportamiento](working-with-formulas-in-depth.md#behavior-formulas). Estas fórmulas se ejecutan cuando, por ejemplo, un usuario selecciona un botón. Dentro de una fórmula de comportamiento, a menudo resulta útil establecer una variable para su uso en otras fórmulas.
+En algunos casos deberá usar variables en PowerApps, que amplía el modelo de Excel mediante la adición de [fórmulas de comportamiento](working-with-formulas-in-depth.md). Estas fórmulas se ejecutan cuando, por ejemplo, un usuario selecciona un botón. Dentro de una fórmula de comportamiento, a menudo resulta útil establecer una variable para su uso en otras fórmulas.
 
 En general debe evitar el uso de variables, pero a veces solo una variable puede habilitar la experiencia que busca.
 
@@ -94,13 +94,15 @@ Para crear la máquina de sumar, necesitamos una variable que contenga el total 
 Cómo funcionan las variables globales:
 
 * Establezca el valor de la variable global con la función **[Set](functions/function-set.md)**.  **Set( MyVar, 1 )** establece la variable global **MyVar** en un valor de **1**.
-* Use la variable global mediante la referencia al nombre usado con la función **Set**.  En este caso, **MyVar** devolverá **1**. 
+* Use la variable global mediante la referencia al nombre usado con la función **Set**.  En este caso, **MyVar** devolverá **1**.
 * Las variables globales pueden contener cualquier valor, como cadenas, números, registros y [tablas](working-with-tables.md).
 
 Vamos a recompilar la máquina de sumar mediante el uso de una variable de global:
 
 1. Agregue un control de entrada de texto, denominado **TextInput1**, y dos botones, denominados **Button1** y **Button2**.
+
 2. Establezca la propiedad **[Text](controls/properties-core.md)** de **Button1** en **"Sumar"** y la propiedad **Text** de **Button2** en **"Borrar"**.
+
 3. Para actualizar el total acumulado cada vez que un usuario seleccione el botón **Sumar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
    
     **Set( RunningTotal, RunningTotal + Text1 )**
@@ -135,7 +137,7 @@ Hay tres tipos de variables en PowerApps:
 | --- | --- | --- | --- |
 | Variables globales |App |Las más sencillas de utilizar.  Contiene un número, una cadena de texto, un valor booleano, un registro, una tabla, etc. a los que se puede hacer referencia desde cualquier parte de la aplicación. |[**Set**](functions/function-set.md) |
 | Variables de contexto |Pantalla |Idóneas para pasar valores a una pantalla, de forma parecida a como se pasan los parámetros a un procedimiento en otros lenguajes.  Solo se puede hacer referencia a ellas desde una pantalla. |[**UpdateContext**](functions/function-updatecontext.md)<br>[**Navegar**](functions/function-navigate.md) |
-| Colecciones |App |Contiene una tabla a la que se puede hacer referencia desde cualquier lugar de la aplicación.  Permite que el contenido de la tabla se pueda modificar en lugar de establecerla como un todo. Se pueden guardar en el dispositivo local para su uso posterior. |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Revisión**](functions/function-patch.md)<br>[**Actualizar**](functions/function-update.md)<br>[**Remove**](functions/function-remove.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>etc. |
+| Colecciones |App |Contiene una tabla a la que se puede hacer referencia desde cualquier lugar de la aplicación.  Permite que el contenido de la tabla se pueda modificar en lugar de establecerla como un todo. Se pueden guardar en el dispositivo local para su uso posterior. |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Revisión**](functions/function-patch.md)<br>[**Actualizar**](functions/function-update-updateif.md)<br>[**Remove**](functions/function-remove-removeif.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>etc. |
 
 Todas las variables se crean implícitamente cuando se utilizan en las funciones **Set**, **UpdateContext**, **Navegar** o **Collect**.  No hay ninguna declaración explícita de variables como se hace en otras herramientas de programación.  Los tipos de las variables también se derivan implícitamente de los valores que se colocan en ellas.
 
@@ -157,7 +159,9 @@ Cómo funcionan las variables de contexto:
 Vamos a volver a compilar la máquina de sumar mediante el uso de una variable de contexto:
 
 1. Agregue un control de entrada de texto, denominado **TextInput1**, y dos botones, denominados **Button1** y **Button2**.
+
 2. Establezca la propiedad **[Text](controls/properties-core.md)** de **Button1** en **"Sumar"** y la propiedad **Text** de **Button2** en **"Borrar"**.
+
 3. Para actualizar el total acumulado cada vez que un usuario seleccione el botón **Sumar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
    
     **UpdateContext( { RunningTotal: RunningTotal + Text1 } )**
@@ -182,7 +186,7 @@ Vamos a volver a compilar la máquina de sumar mediante el uso de una variable d
     ![](media/working-with-variables/context-variable-4.png)
 7. Puede establecer el valor de una variable de contexto mientras se desplaza a una pantalla.  Esto resulta útil a la hora de pasar "contexto" o "parámetros" de una pantalla a otra.  Para verlo, inserte una nueva pantalla e inserte un botón con la propiedad **AlSeleccionar** establecida en:
    
-    **Navegar( Screen1, None, { RunningTotal: -1000 } )** 
+    **Navegar( Screen1, None, { RunningTotal: -1000 } )**
    
     ![](media/working-with-variables/context-variable-5.png)
    
@@ -207,7 +211,9 @@ Cómo funcionan las colecciones:
 Vamos a recrear la máquina de sumar mediante una colección:
 
 1. Agregue un control **[Text input](controls/control-text-input.md)**, denominado **TextInput1**, y dos botones, denominados **Button1** y **Button2**.
+
 2. Establezca la propiedad **[Text](controls/properties-core.md)** de **Button1** en **"Sumar"** y la propiedad **Text** de **Button2** en **"Borrar"**.
+
 3. Para actualizar el total acumulado cada vez que un usuario seleccione el botón **Sumar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
    
     **Collect( PaperTape, TextInput1.Text )**
@@ -253,5 +259,6 @@ Vamos a recrear la máquina de sumar mediante una colección:
      ![](media/working-with-variables/papertape-6.png)
 12. Vuelva a obtener la vista previa pulsando la tecla F5, escriba números en el control de entrada de texto y seleccione botones.  Seleccione el botón **Guardar**.  Cierre y vuelva a cargar la aplicación y seleccione el botón **Cargar** para volver a cargar la colección.  
     
-     Nota: **SaveData** y **LoadData** no funcionan cuando se ejecutan en un explorador web. Debe usar el estudio instalado en Windows o alguno de los reproductores para dispositivos móviles.  
+    > [!NOTE]
+    > **SaveData** y **LoadData** no funcionan cuando la ejecución tiene lugar en un explorador web. Debe usar la versión Studio instalada en Windows o en uno de los reproductores para dispositivos móviles.  
 

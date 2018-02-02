@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 4a0b39a9b247a6d410ac1a705234f90833ec707a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="revert-function-in-powerapps"></a>Función Revertir en PowerApps
 Actualiza y borra errores para los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
@@ -31,7 +31,7 @@ Para los registros revertidos, **Revertir** también borra todos los errores de 
 
 Si la función **[Errores](function-errors.md)** informa sobre un conflicto después de una **[Revisión](function-patch.md)** u otra operación de datos, **Revierta** el registro para iniciar con la versión en conflicto y vuelva a aplicar el cambio.
 
-**Revertir** no tiene ningún valor devuelto. Se puede usar únicamente en una [fórmula de comportamiento](../working-with-formulas-in-depth.md#behavior-formulas).
+**Revertir** no tiene ningún valor devuelto. Se puede usar únicamente en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
 **Revertir**( *DataSource* [, *Registro* ] )
@@ -47,7 +47,7 @@ En este ejemplo, revertirá el origen de datos denominado **IceCream**, que empi
 Un usuario de otro dispositivo cambia la propiedad **Quantity** en el registro **Strawberry** a **400**.  Aproximadamente al mismo tiempo, usted cambia la misma propiedad del mismo registro a **500**, sin tener conocimiento sobre el otro cambio.
 
 Usa la función **[Revisión](function-patch.md)** para actualizar el registro:<br>
-**Revisión( IceCream, Primero( Filtrar( IceCream, Flavor = "Strawberry" ) ), {Cantidad: 500} )**
+**Revisión( IceCream, Primero( Filtrar( IceCream, Flavor = "Strawberry" ) ), {Quantity: 500} )**
 
 Compruebe la tabla **[Errores](function-errors.md)** y encuentre un error:
 
@@ -56,7 +56,7 @@ Compruebe la tabla **[Errores](function-errors.md)** y encuentre un error:
 | **{ ID: 1, Flavor: "Strawberry", Cantidad: 300 }** |*en blanco* |**"Otro usuario ha modificado el registro que está intentando modificar.  Revierta el registro e inténtelo de nuevo".** |**ErrorKind.Conflict** |
 
 Tomando como base la columna **Error**, tiene un botón **Volver a cargar** para que la propiedad **[AlSeleccionar](../controls/properties-core.md)** para establecer esta fórmula:<br>
-**Revertir( IceCream, Primero( Filtrar( IceCream, Flavor = "Strawberry" ) ) )**
+**Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
 
 Después de seleccionar el botón **Recargar**, la tabla **[Errores](function-errors.md)** está [vacía](function-isblank-isempty.md)y el nuevo valor para **Strawberry** se ha cargado:
 

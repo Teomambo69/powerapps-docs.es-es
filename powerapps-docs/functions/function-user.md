@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 6fee690b849a305d1dd97361cd76b74889f258d9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2a2adaf10a9d78bb2a899e68d5c33948aae88d1b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="user-function-in-powerapps"></a>Función User en PowerApps
 Muestra información sobre el usuario actual.
@@ -33,7 +33,8 @@ La función **User** muestra un [registro](../working-with-tables.md#records) de
 | **User().FullName** |Nombre completo del usuario actual, incluidos nombres y apellidos. |
 | **User().Image** |Imagen del usuario actual. Será una URL de imagen con formato "blob:*identificador*". Establezca la propiedad **[Image](../controls/properties-visual.md)** del control **[Imagen](../controls/control-image.md)** en este valor para mostrar la imagen en la aplicación. |
 
-**Nota:** La información que se muestra corresponde al usuario actual de PowerApps.  Coincidirá con la información de "cuenta" que aparece en los reproductores y estudio de PowerApps, que se puede encontrar fuera de toda aplicación creada.  Es posible que no coincida con la información del usuario actual en Office 365 u otros servicios.
+> [!NOTE]
+> La información que se devuelve corresponde al usuario actual de PowerApps.  Coincidirá con la información de "cuenta" que aparece en los reproductores y estudio de PowerApps, que se puede encontrar fuera de toda aplicación creada.  Es posible que no coincida con la información del usuario actual en Office 365 u otros servicios.
 
 ## <a name="syntax"></a>Sintaxis
 **User**()

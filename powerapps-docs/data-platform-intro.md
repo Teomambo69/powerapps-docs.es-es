@@ -12,17 +12,15 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/24/2017
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 9078daccfd3d72ab5cbf3b26a67ffc2a27af1332
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>Descripción de las entidades de Common Data Service
-[!VIDEO nb:cid:UUID:beec68e8-1541-41fb-8fc6-28714ccaca68]
-
 
 Common Data Service permite almacenar y administrar los datos de forma segura en un conjunto de entidades estándar y personalizadas. Una entidad es un conjunto de campos que se usan para almacenar datos, de forma similar a como lo hace tabla en una base de datos. Después de que se almacenan los datos puede usar Microsoft PowerApps para compilar aplicaciones completas con sus datos:
 
@@ -50,20 +48,20 @@ Las entidades de Common Data Service, tanto estándar como personalizadas, permi
 * **Listas desplegables**: se incluyen listas desplegables de una amplia variedad de listas estándar para proporcionar listas desplegables rápidas en las aplicaciones y entidades.
 
 ## <a name="standard-and-custom-entities"></a>Entidades estándar y personalizadas
-Al desarrollar una aplicación, puede usar entidades estándar, entidades personalizadas o ambas. Si una entidad estándar puede servir para un fin determinado de su aplicación, es mejor utilizarla en lugar de desarrollar una entidad personalizada que haga lo mismo. Si una entidad estándar sirve para una finalidad con solo realizar unos pocos cambios, puede agregar campos para adaptarlos a sus necesidades. 
+Al desarrollar una aplicación, puede usar entidades estándar, entidades personalizadas o ambas. Si una entidad estándar puede servir para un fin determinado de su aplicación, es mejor utilizarla en lugar de desarrollar una entidad personalizada que haga lo mismo. Si una entidad estándar sirve para una finalidad con solo realizar unos pocos cambios, puede agregar campos para adaptarlos a sus necesidades.
 
 * Common Data Service proporciona entidades estándar de forma predeterminada. Están diseñadas, de acuerdo con los procedimientos recomendados, para plasmar los conceptos más comunes de una organización, como contactos, cuentas y productos. Para obtener una lista completa de entidades, consulte [Entidades estándar](data-platform-intro.md#standard-entities).
 * Puede ampliar la funcionalidad de entidades estándar mediante la creación de una o varias entidades personalizadas para almacenar información exclusiva de su organización. Para más información, consulte [Crear una entidad personalizada](data-platform-create-entity.md).
 
-> **Nota:** Si es posible, use entidades estándar (si es preciso, a los que se han agregado campos personalizados). Esto garantizará que en el futuro podrá beneficiarse de las nuevas características o aplicaciones que aprovechan estas entidades.
-> 
-> 
+> [!NOTE]
+> Si es posible, use entidades estándar (si es preciso, a los que se han agregado campos personalizados). Esto garantizará que en el futuro podrá beneficiarse de las nuevas características o aplicaciones que aprovechan estas entidades.
+
 
 ## <a name="fields"></a>Campos
 Todos los campos tienen un nombre, un nombre para mostrar, un tipo de datos y una validación simple. Los tipos de datos incluyen, por ejemplo, **Texto**, **Fecha** o **Número**. La validación garantiza que los campos requeridos contienen datos y registros únicos si la entidad así lo requiere. Cada campo forma parte de una de estas tres categorías: campos del sistema, campos estándar o campos personalizados.
 
 ### <a name="system-fields"></a>Campos del sistema
-Todas las entidades, ya sean estándar o personalizadas, se crean con un conjunto de campos de solo lectura que no se pueden cambiar, eliminar ni establecer para un valor. Para más información, consulte [Campos de título de registro y de sistema](data-platform-create-entity.md#system-and-record-title-fields). Estos son los campos más importantes del sistema:
+Todas las entidades, ya sean estándar o personalizadas, se crean con un conjunto de campos de solo lectura que no se pueden cambiar, eliminar ni establecer para un valor. Para más información, consulte [Campos de título de registro y de sistema](data-platform-create-entity.md#system-fields-and-the-record-title-field). Estos son los campos más importantes del sistema:
 
 * **Fecha del registro creada**: la fecha y hora en que se creó un registro.
 * **Creado por**: el usuario que creó el registro.

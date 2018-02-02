@@ -1,5 +1,5 @@
 ---
-title: '# <a name="powerapps-community-plan-a-free-development-environment-for-individual-use--microsoft-docs"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual | Microsoft Docs'
+title: '# Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual | Microsoft Docs'
 description: "Regístrese para desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service."
 services: 
 suite: powerapps
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 4fea217638bdcff52f626694f5b43662f89dbe9b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
@@ -30,12 +30,12 @@ Si desea desarrollar habilidades y obtener información sobre PowerApps, Microso
 * Exportar las soluciones creadas en su entorno individual y [mostrarlas en AppSource](dev-appsource-test-drive.md) para que los clientes puedan usar una versión de prueba.
 
 ## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>¿Quién puede registrarse en el Plan de la comunidad de PowerApps?
-Cualquier persona con una [cuenta profesional o educativa](signup-for-powerapps.md#what-email-addresses-can-you-use) puede registrarse en el Plan de la Comunidad de PowerApps. Pero se recomienda especialmente este plan si:
+Cualquiera con una [cuenta profesional o educativa](signup-for-powerapps.md#what-email-addresses-can-you-use) puede registrarse en el Plan de la comunidad de PowerApps. Pero se recomienda especialmente este plan si:
 
 * Desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service.
 * Está interesado en crear aplicaciones empresariales y flujos de trabajo, y distribuirlos en AppSource.
 
-## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>¿Dónde puede registrarse para el Plan de la comunidad de PowerApps?
+## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>¿Dónde puedo registrarme en el Plan de la comunidad de PowerApps?
 Regístrese en el [sitio web del Plan de la comunidad de PowerApps](https://powerapps.microsoft.com/communityplan). Si es ya es usuario de PowerApps con Office 365 o 365 Dynamics, también puede [crear un entorno para uso individual](https://web.powerapps.com/community/signup).
 
 Después de registrarse en el plan de la comunidad, será redirigido al [sitio de PowerApps](https://web.powerapps.com) y se desplegará su entorno individual. El entorno tendrá su nombre, por ejemplo, "Entorno de John Doe". Si ya hay un entorno con ese nombre, el entorno individual se llamará "Entorno de John Doe (1)".  La siguiente imagen muestra cómo aparece el entorno.
@@ -43,7 +43,7 @@ Después de registrarse en el plan de la comunidad, será redirigido al [sitio d
 ![Entorno individual del Plan de la Comunidad](media/dev-community-plan/individual-environment.png)
 
 ### <a name="get-the-community-plan-with-visual-studio-dev-essentials"></a>Obtener el Plan de la Comunidad con Visual Studio Dev Essentials
-Si ya es usuario de Visual Studio Dev Essentials, PowerApps está incluido en sus ventajas. Vaya a [Mis ventajas](https://my.visualstudio.com/benefits) y haga clic o pulse el icono de PowerApps para registrarse para el Plan de la Comunidad de PowerApps.
+Si ya es usuario de Visual Studio Dev Essentials, PowerApps está incluido en sus ventajas. Vaya a [Mis ventajas](https://my.visualstudio.com/benefits) y haga clic o pulse el icono de PowerApps para registrarse en el Plan de la comunidad de PowerApps.
 
 ![Plan de la Comunidad de Visual Studio](media/dev-community-plan/visual-studio.png)
 
@@ -85,43 +85,49 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 
 No se puede aplicar complementos a las cantidades que se incluyen. Si se alcanzan los límites de capacidad, se recomienda adquirir PowerApps Plan 2. Puede obtener información en la [página de precios de PowerApps](https://powerapps.microsoft.com/pricing/).
 
-**Nota**: la capacidad del entorno individual, tanto si se utiliza como si no, no contribuye a la cuota total de su empresa.
+> [!NOTE]
+> La capacidad del entorno individual, tanto si se utiliza como si no, no contribuye a la cuota total de su empresa.
 
 ## <a name="publishing-to-appsource"></a>Publicación en AppSource
 ¿Tiene una aplicación que le gustaría compartir con los clientes? Ahora se admiten soluciones de versión de prueba de PowerApps en [AppSource.com](https://appsource.microsoft.com) como un medio de compartir aplicaciones y flujos con los clientes, y generar clientes potenciales para su empresa. Para más información, consulte [Proporcionar a los clientes una versión de prueba de las aplicaciones en AppSource](dev-appsource-test-drive.md).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-1. **P: ¿** ¿Qué debo hacer si se alcanzan los límites de capacidad del entorno?
-   
-    **R:** Hay una capacidad limitada porque este entorno se ha diseñado para su uso individual, no para un equipo o uso en producción. La capacidad proporcionada es:
-   
-   | **Capacidad** |  |
-   | --- | --- |
-   | Ejecuciones de flujo/mes |750 |
-   | Tamaño de base de datos |200 MB |
-   | File Storage |2 GB |
-   
-    Si alcanza uno o varios límites de capacidad, se recomienda la adquisición de un plan que admita su uso en producción. Obtenga información sobre los planes y sus límites en la [página de precios de PowerApps](https://powerapps.microsoft.com/pricing/).
-2. **P:** ¿Puedo transferir las aplicaciones, flujos y otros recursos que se crean en el entorno individual a otro entorno?
-   
-    **R:** Sí, podrá exportar los recursos de este entorno a otros entornos. Para más información, consulte [Migración de aplicaciones entre entornos e inquilinos](environment-and-tenant-migration.md).
-3. **P:** ¿Mi suscripción al Plan de la Comunidad de PowerApps nunca expira?
-   
-    **R:** Puede usar su suscripción al Plan de la Comunidad de PowerApps perpetuamente de manera gratuita. Si está utilizando activamente un entorno individual, no perderá el acceso a ninguno de los recursos o funcionalidades del mismo. Sin embargo, quizás experimente un retraso al acceder a la base de datos de Common Data Service por primera vez tras un largo período de inactividad.  Este retraso no afecta a los datos o las entidades almacenadas en Common Data Service.
-4. **P:** ¿Puedo obtener o crear varios entornos individuales?
-   
-    **R:** No, solo puede tener un entorno individual que PowerApps crea para usted al registrarse para obtener el Plan de la Comunidad.
-5. **P:** ¿Cuál es la diferencia entre PowerApps Plan 2 Trial y el Plan de la Comunidad de PowerApps? ¿A cuál debería suscribirme?
-   
-    **R:** Tanto PowerApps Plan 2 Trial como el Plan de la Comunidad de PowerApps son gratuitos, pero se han creado con propósitos diferentes:
-   
-    **PowerApps Plan 2 Trial** proporciona PowerApps Plan 2 durante 90 días. Está pensado para probar PowerApps, Common Data Service y Microsoft Flow. Una vez que expire el período de prueba, puede adquirir un plan. Si ya está utilizando PowerApps con Office 365 o Dynamics 365, este el plan adecuado para probar las funcionalidades premium de PowerApps, que están disponibles con PowerApps Plan 2.
-   
-    El **Plan de la Comunidad de PowerApps** proporciona acceso a las funcionalidades premium de PowerApps, Common Data Service y Microsoft Flow para uso individual. Este plan está pensado principalmente para fines de aprendizaje o para crear soluciones empresariales para distribuir como [versión de prueba de AppSource](dev-appsource-test-drive.md). Este plan está perpetuamente disponible, pero solo para aprendizaje y desarrollo de habilidades con PowerApps, Common Data Services y Microsoft Flow.
-6. **P:** ¿Puedo registrarme con mi cuenta personal?
-   
-    **R:** No, solo puede registrarse con su [cuenta profesional o educativa](signup-for-powerapps.md#what-email-addresses-can-you-use). Actualmente no se admite el registro con una cuenta personal.
-7. **P:** ¿Puedo eliminar mi entorno individual?
-   
-    **R:** No puede eliminar este entorno usted mismo. El administrador del inquilino tiene permisos para eliminar el entorno.
+**P: ¿** ¿Qué debo hacer si se alcanzan los límites de capacidad del entorno?
 
+**R:** Hay una capacidad limitada porque este entorno se ha diseñado para su uso individual, no para un equipo o uso en producción. La capacidad proporcionada es:
+
+| **Capacidad** |  |
+| --- | --- |
+| Ejecuciones de flujo/mes |750 |
+| Tamaño de base de datos |200 MB |
+| File Storage |2 GB |
+
+Si alcanza uno o varios límites de capacidad, se recomienda la adquisición de un plan que admita su uso en producción. Obtenga información sobre los planes y sus límites en la [página de precios de PowerApps](https://powerapps.microsoft.com/pricing/).
+
+**P:** ¿Puedo transferir las aplicaciones, flujos y otros recursos que se crean en el entorno individual a otro entorno?
+
+**R:** Sí, podrá exportar los recursos de este entorno a otros entornos. Para más información, consulte [Migración de aplicaciones entre entornos e inquilinos](environment-and-tenant-migration.md).
+
+**P:** ¿Mi suscripción al Plan de la Comunidad de PowerApps nunca expira?
+
+**R:** Puede usar su suscripción al Plan de la Comunidad de PowerApps perpetuamente de manera gratuita. Si está utilizando activamente un entorno individual, no perderá el acceso a ninguno de los recursos o funcionalidades del mismo. Sin embargo, quizás experimente un retraso al acceder a la base de datos de Common Data Service por primera vez tras un largo período de inactividad.  Este retraso no afecta a los datos o las entidades almacenadas en Common Data Service.
+
+**P:** ¿Puedo obtener o crear varios entornos individuales?
+
+**R:** No, solo puede tener un entorno individual que PowerApps crea para usted al registrarse para obtener el Plan de la Comunidad.
+
+**P:** ¿Cuál es la diferencia entre PowerApps Plan 2 Trial y el Plan de la Comunidad de PowerApps? ¿A cuál debería suscribirme?
+
+**R:** Tanto PowerApps Plan 2 Trial como el Plan de la Comunidad de PowerApps son gratuitos, pero se han creado con propósitos diferentes:
+
+**PowerApps Plan 2 Trial** proporciona PowerApps Plan 2 durante 90 días. Está pensado para probar PowerApps, Common Data Service y Microsoft Flow. Una vez que expire el período de prueba, puede adquirir un plan. Si ya está utilizando PowerApps con Office 365 o Dynamics 365, este el plan adecuado para probar las funcionalidades premium de PowerApps, que están disponibles con PowerApps Plan 2.
+
+El **Plan de la Comunidad de PowerApps** proporciona acceso a las funcionalidades premium de PowerApps, Common Data Service y Microsoft Flow para uso individual. Este plan está pensado principalmente para fines de aprendizaje o para crear soluciones empresariales para distribuir como [versión de prueba de AppSource](dev-appsource-test-drive.md). Este plan está perpetuamente disponible, pero solo para aprendizaje y desarrollo de habilidades con PowerApps, Common Data Services y Microsoft Flow.
+
+**P:** ¿Puedo registrarme con mi cuenta personal?
+
+**R:** No, solo puede registrarse con su [cuenta profesional o educativa](signup-for-powerapps.md#what-email-addresses-can-you-use). Actualmente no se admite el registro con una cuenta personal.
+
+**P:** ¿Puedo eliminar mi entorno individual?
+
+**R:** No puede eliminar este entorno usted mismo. El administrador del inquilino tiene permisos para eliminar el entorno.

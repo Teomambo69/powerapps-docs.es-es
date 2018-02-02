@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2016
 ms.author: jamesol
-ms.openlocfilehash: 661483b6d240785f2945011005b4e552e04ac075
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3ea0d8a3f10a1b9dad7641c1291bae3aef40000a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-in-your-organization-qa"></a>PowerApps in your organization Q&A (Preguntas y respuestas sobre PowerApps en su organización)
 En este tema se describe la forma en que los usuarios de su organización pueden utilizar PowerApps y cómo controlar el servicio de PowerApps.
@@ -65,9 +65,13 @@ Si desea quitar el icono de PowerApps del iniciador de aplicaciones de forma pre
 Si se ha asignado una licencia del plan 1 de PowerApps o del plan 2 de PowerApps a un usuario, puede realizar los pasos siguientes para quitar la licencia de PowerApps a dicho usuario:
 
 1. Vaya al [Portal de administración de Office 365](https://portal.microsoftonline.com/).
+
 2. En la barra de navegación izquierda, seleccione **Usuarios** y, después, **Usuarios activos**.
+
 3. Busque el usuario cuya licencia desea quitar y seleccione su nombre.
+
 4. En el panel de detalles del usuario, en la sección de **Product licenses** (Licencias de productos), seleccione **Edit** (Editar).
+
 5. Busque la licencia **Microsoft PowerApps Plan 1** o **Microsoft PowerApps Plan 2**, establezca el control de alternancia en **Desactivado** y seleccione **Guardar**.
    
     ![](./media/signup-question-and-answer/remove-license.png)
@@ -75,9 +79,13 @@ Si se ha asignado una licencia del plan 1 de PowerApps o del plan 2 de PowerApps
 Si un usuario tiene acceso a PowerApps a través de su licencia de planes de Office 365 y Dynamics 365, puede deshabilitar su acceso al servicio PowerApps realizando los pasos siguientes:
 
 1. Vaya al [Portal de administración de Office 365](https://portal.microsoftonline.com/).
+
 2. En la barra de navegación izquierda, seleccione **Usuarios** y, después, **Usuarios activos**.
+
 3. Busque el usuario al que desea quitar el acceso y seleccione su nombre.
+
 4. En el panel de detalles del usuario, en la sección de **Product licenses** (Licencias de productos), seleccione **Edit** (Editar).
+
 5. Expanda la licencia de Office 365 o Dynamics 365 del usuario, deshabilite el acceso para el servicio **PowerApps for Office 365** (PowerApps para Office 365) o **PowerApps for Dynamics 365** (PowerApps para Dynamics 365) y seleccione **Guardar**.
    
     ![](./media/signup-question-and-answer/remove-service-plan.png)
@@ -93,7 +101,7 @@ La eliminación del servicio o de la licencia de PowerApps para un usuario de un
   
     ![](./media/signup-question-and-answer/office-waffle.png)
 
-### <a name="how-can-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>¿Cómo puedo restringir la capacidad que tienen los usuarios para acceder a los datos empresariales de una organización mediante PowerApps?
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>¿Cómo puedo restringir la capacidad que tienen los usuarios para acceder a los datos empresariales de una organización mediante PowerApps?
 PowerApps permite crear zonas de datos para datos empresariales y no empresariales, como se muestra a continuación.  Una vez que se implementan estas directivas de prevención de pérdida de datos, se impide que los usuarios diseñen o ejecuten instancias de PowerApps que combinen datos empresariales y no empresariales. Para más información, consulte [Data loss prevention (DLP) policies](prevent-data-loss.md) [Directivas de prevención de pérdida de datos (DLP)].
 
 ![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
@@ -129,7 +137,8 @@ Si Microsoft ha creado un inquilino, puede reclamarlo y administrarlo mediante e
 4. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y luego elija Administrador.
 5. Lea las instrucciones de la página **Become the admin** (Convertirse en el administrador) y, después, elija **Yes, I want to be the admin** (Sí, deseo ser el administrador).  
 
-**NOTA**: si esta opción no aparece, se deberá a que ya hay un administrador de Office 365.
+> [!NOTE]
+> Si esta opción no aparece, se deberá a que ya hay un administrador de Office 365.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si dispongo de varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan los usuarios?
 Si no hace nada, se creará un inquilino para cada dominio y subdominio de correo electrónico del usuario.
@@ -138,5 +147,6 @@ Si desea que todos los usuarios estén en el mismo inquilino, independientemente
 
 * Cree de antemano un inquilino de destino o use un inquilino existente. Agregue todos los dominios y subdominios existentes que desee que se consoliden en dicho inquilino. A partir de ese momento, todos los usuarios cuyas direcciones de correo electrónico terminen en esos dominios y subdominios se unirán automáticamente al inquilino de destino al suscribirse.
 
-**IMPORTANTE**: No hay ningún mecanismo automático que permita mover usuarios entre inquilinos una vez que se han creado. Para obtener información acerca de cómo agregar dominios a un solo inquilino de Office 365, consulte [Agregar usuarios y un dominio con el asistente de configuración](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+> [!IMPORTANT]
+> No hay ningún mecanismo automático que permita mover usuarios entre inquilinos una vez que se han creado. Para obtener información acerca de cómo agregar dominios a un solo inquilino de Office 365, consulte [Agregar usuarios y un dominio con el asistente de configuración](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 

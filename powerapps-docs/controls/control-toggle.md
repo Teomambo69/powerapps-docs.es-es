@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 978ea17732a2c91b8ef48b996c637194cd7540e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.
@@ -45,6 +45,12 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 
 **[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
+**FalseFill**: el color de relleno de alternancia cuando la alternancia está desactivada.
+
+**FalseHoverFill**: el color de relleno al mantener de alternancia cuando la alternancia está desactivada.
+
+**FalseText**: el texto que se muestra cuando la alternancia está desactivada.
+
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
@@ -67,9 +73,19 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 
 **[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
+**ShowLabel**: indica si se muestra una etiqueta de texto al lado del control de alternancia.
+
 **[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
 
+**TextPosition**: indica si la etiqueta está a la izquierda o la derecha del control de alternancia.
+
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+
+**TrueFill**: color de relleno de alternancia cuando la alternancia está activada.
+
+**TrueHoverFill**: color de relleno al mantener de alternancia cuando la alternancia está activada.
+
+**TrueText**: el texto que se muestra cuando la alternancia está activada.
 
 **RellenoDeValor**: color de fondo del rectángulo en un control Alternar cuando su valor es **true** o color de la línea a la izquierda del identificador en un control deslizante.
 
@@ -88,14 +104,13 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control Alternar y asígnele el nombre **MemberDiscount**.
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
    <br>**If(MemberDiscount.Value = true, "Price: $75", "Price: $100")**
-   
+
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5 y cambie el valor de **MemberDiscount**.
-   
+
     La etiqueta muestra un precio distinto, en función de si **MemberDiscount** está activado o desactivado.
 4. Presione Esc para volver al área de trabajo predeterminada.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: ede3111f322aaff0e29679db2d730684ec18fd44
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 96ac4f52eac738297934ad286a32f15f3164a61d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 Instale una puerta de enlace de datos local para transferir datos de manera rápida y segura entre PowerApps y un origen de datos que no esté en la nube, como una base de datos de SQL Server local o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
@@ -41,18 +41,20 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 
 ## <a name="install-a-gateway"></a>Instalar una puerta de enlace
 1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace**.
-   
+
     ![Puertas de enlace en la barra de navegación izquierda](./media/gateway-management/manage-gateway.png)
+
 2. Si no tiene permisos administrativos para una puerta de enlace, haga clic o pulse en [Install a gateway now](http://go.microsoft.com/fwlink/?LinkID=820931) (Instalar una puerta de enlace ahora)(o en **Nueva puerta de enlace** en la esquina superior derecha) y, a continuación, siga las indicaciones del asistente que aparece.
-   
+
     ![Instalación de puertas de enlace](./media/gateway-management/no-gateway-installed.png)
-   
+
     Para más información sobre cómo instalar una puerta de enlace, consulte [Información sobre las puertas de enlace de datos locales](gateway-reference.md).
 
 ## <a name="view-and-manage-gateway-permissions"></a>Ver y administrar los permisos de la puerta de enlace
 1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+
 2. Agregue un usuario a una puerta de enlace haciendo clic o pulsando en **Usuarios**, especificando un usuario o grupo y, finalmente, especificando un nivel de permiso:
-   
+
    * **Puede usar**: usuarios que pueden crear conexiones en la puerta de enlace para las aplicaciones y los flujos, pero no pueden compartir la puerta de enlace. Use este permiso para los usuarios que ejecutan aplicaciones pero no las comparten.
    * **Puede usar + compartir**: usuarios que pueden crear una conexión en la puerta de enlace para las aplicaciones y los flujos, y compartir automáticamente la puerta de enlace cuando se comparte una aplicación. Use este permiso con usuarios que tienen que compartir aplicaciones con otros usuarios o con la organización.
    * **Administración**: administradores que tienen control total sobre la puerta de enlace, lo que incluye agregar usuarios, establecer permisos, crear conexiones a todos los orígenes de datos disponibles y eliminar la puerta de enlace.
@@ -61,10 +63,13 @@ Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, selecci
 
 ## <a name="view-and-manage-gateway-connections"></a>Ver y administrar las conexiones de puerta de enlace
 1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+
 2. Pulse o haga clic en **Conexiones** y luego pulse o haga clic en una conexión para ver sus detalles, editar la configuración o eliminarla.
+
 3. Para compartir una conexión, haga clic o pulse en **Compartir** y, a continuación, agregue o quite usuarios.
-   
-    **Nota**: Puede compartir solo algunos tipos de conexiones, como SQL Server. Para más información, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
+
+    > [!NOTE]
+> Solo puede compartir algunos tipos de conexiones, como SQL Server. Para más información, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
 
 Para más información sobre cómo administrar una conexión, consulte [Administración de conexiones](add-manage-connections.md).
 
@@ -74,4 +79,3 @@ Para más información sobre la solución de problemas con las puertas de enlace
 ## <a name="next-steps"></a>Pasos siguientes
 * Cree una aplicación que se conecte a un origen de datos local, como [SQL Server](connections/connection-azure-sqldatabase.md) o [SharePoint](connections/connection-sharepoint-online.md).
 * [Comparta una aplicación](share-app.md) que permita conectarse a un origen de datos local.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5bf844e4debf7b4614fafe948a6ec15943fd35f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -31,6 +31,8 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Imagen](properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**ApplyEXIFOrientation**: si se aplica automáticamente la orientación especificada en los datos EXIF insertados en la imagen.
+
 **AutoDisableOnSelect**: deshabilita automáticamente el control mientras se ejecuta el comportamiento AlSeleccionar.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
@@ -51,6 +53,10 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
+**FlipHorizontal**: si la imagen se voltea horizontalmente antes de mostrarla.
+
+**FlipVertical**: si la imagen se voltea verticalmente antes de mostrarla.
+
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
@@ -58,6 +64,8 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
 **[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+
+**ImageRotation**: cómo girar la imagen antes de mostrarla.  Los valores pueden ser: no, 90 grados a la derecha, 90 grados a la izquierda y 180 grados a la derecha.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
@@ -105,21 +113,20 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 1. En la pestaña **Contenido**, pulse o haga clic en **Multimedia** y, a continuación, en **Examinar**.
 2. Pulse o haga clic en el archivo de imagen que desea agregar, pulse o haga clic en **Abrir**, y, a continuación, presione Esc para volver al área de trabajo predeterminada.
 3. Agregue un control **Imagen**, establezca la propiedad de sus **[Artículos](properties-core.md)** en el nombre del archivo que agregó.
-   
+
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
-   
+
     El control **Imagen** muestra la imagen que ha especificado.
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>Mostrar un conjunto de imágenes desde un origen de datos
 1. Descargue este [archivo de Excel](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)y guárdelo en el dispositivo local.
 2. En PowerApps Studio, cree o abra una aplicación y, a continuación, haga clic o pulse **Agregar origen de datos** en el panel derecho.
-   
+
     Si **Agregar origen de datos** no aparece en el panel de la derecha, pulse o haga clic en la barra de navegación izquierda de una pantalla.
 3. Pulse o haga clic en **Agregar datos estáticos a la aplicación**, pulse o haga clic en el archivo de Excel que descargó y, a continuación en **Abrir**.
 4. Seleccione la casilla **Flooring Estimates** y a continuación, pulse o haga clic en **Conectar**.
 5. Agregue un control **Galería** con imágenes y establezca su propiedad **[Artículos](properties-core.md)** en **FlooringEstimates**.
-   
-    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
-   
-    El control **Galería** muestra imágenes de productos de moqueta, parquet y mosaico basados en vínculos en el archivo de Excel que ha descargado.
 
+    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
+
+    El control **Galería** muestra imágenes de productos de moqueta, parquet y mosaico basados en vínculos en el archivo de Excel que ha descargado.

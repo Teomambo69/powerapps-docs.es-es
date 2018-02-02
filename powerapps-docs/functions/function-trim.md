@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 9f829e8c98b03bc47bc36f26273267265819f4ae
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b40f44f8bdcb319191221d0f2cee39e15d5b3b49
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>Funciones Trim y TrimEnds en PowerApps
 Quita los espacios de una cadena de texto.
@@ -60,5 +60,6 @@ Para crear esta colección, establezca la propiedad **AlSeleccionar** de un cont
 | **Trim(&nbsp;Spaces&nbsp;)** |Quita todos los espacios del principio y del final de una cadena, y los espacios adicionales de dentro de cada cadena de la colección **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |Quita todos los espacios del principio y del final de cada cadena de la colección **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
-**Nota**: Si pulsa o hace clic en **Colecciones** en el menú **Archivo** para mostrar una colección, no aparecen espacios adicionales. Para comprobar la longitud de la cadena, use la función  **[Len](function-len.md)** .
+> [!NOTE]
+> Si pulsa o hace clic en **Colecciones** en el menú **Archivo** para mostrar una colección, no aparecen espacios adicionales. Para comprobar la longitud de la cadena, use la función  **[Len](function-len.md)** .
 

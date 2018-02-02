@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 780c72323e4b0d406d89ba35201c78456bb0dbca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 72bbbc882250d25ddabc8086e81bfc7779e26b60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funciones Sort y SortByColumns en PowerApps
 Ordena una [tabla](../working-with-tables.md).
@@ -29,7 +29,7 @@ La función **Sort** ordena una tabla según una fórmula.
 
 La fórmula se evalúa para cada [registro](../working-with-tables.md#records) de la tabla y los resultados se usan para ordenar la tabla.  La fórmula debe dar como resultado un número, una cadena o un valor booleano; no puede generar una tabla ni un registro.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Para ordenar primero por una columna y luego por otra, debe insertar una fórmula **Sort** dentro de otra. Por ejemplo, puede usar esta fórmula para ordenar una tabla **Contacts** primero por una columna **LastName** y, luego, por una columna **FirstName**: **Sort( Sort( Contacts, LastName ), FirstName )**
 
@@ -43,7 +43,7 @@ Además de ordenar de manera ascendente o descendente, **SortByColumns** puede o
 
 Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una cadena o un número.  Se pueden pasar a funciones y las funciones pueden devolverlas.  **Sort** y **SortByColumn** no modifican una tabla; en lugar de eso, toman una tabla como argumento y devuelven una tabla nueva que se ordenó.  Consulte cómo [trabajar con tablas](../working-with-tables.md) para más detalles.
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>Sintaxis
 **Sort**( *Table*, *Formula* [, *SortOrder* ] )
@@ -58,7 +58,8 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 * *ColumnName(s)*: requerido. Los nombres de las columnas según las cuales ordenar, como cadenas.
 * *SortOrder(s)*: opcional.  **SortOrder.Ascending** o **SortOrder.Descending**.  **SortOrder.Ascending** es el valor predeterminado.  Si se suministran varios *ColumnNames*, todas las columnas, menos la última, deben incluir un *SortOrder*.
   
-    **Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+    > [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +67,8 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 * *ColumnName*: requerido. El nombre de la columna según la cual ordenar, como cadenas.
 * *SortOrderTable*: requerido.  Tabla de valores de una sola columna según la cual ordenar.
   
-    **Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+    > [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 En los ejemplos siguientes, usaremos el [origen de datos](../working-with-data-sources.md) **Helado**, que contiene los datos de esta tabla:
@@ -91,7 +93,7 @@ Para ejecutar estos ejemplos, cree el origen de datos **Helado** como una [colec
 
 #### <a name="sort"></a>Ordenar
 1. Agregue otro botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
-   **ClearCollect( SortByFlavor, Sort( Helado, Sabor ) )**
+   **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
      La fórmula anterior crear otra colección, denominada **SortByFlavor**, que contiene los mismos datos que **Helado**. Sin embargo, la colección nueva contiene los datos ordenados alfabéticamente según la columna **Sabor** en orden ascendente.
 2. Presione F5, seleccione el botón nuevo y, luego, presione Esc.
@@ -100,7 +102,7 @@ Para ejecutar estos ejemplos, cree el origen de datos **Helado** como una [colec
 
 #### <a name="sortbycolumns"></a>SortByColumns
 1. Agregue otro botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
-   **ClearCollect( SortByQuantity, SortByColumns( Helado, "Cantidad", Ascendente, "Sabor", Descendente ) )**
+   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
      La fórmula anterior crea una tercera colección, denominada **SortByQuantity**, que contiene los mismos datos que **Helado**. Sin embargo, la colección nueva contiene los datos ordenados numéricamente según la columna **Cantidad** en orden ascendente y, luego, según la columna **Sabor** en orden descendente.
 2. Presione F5, seleccione el botón nuevo y, luego, presione Esc.

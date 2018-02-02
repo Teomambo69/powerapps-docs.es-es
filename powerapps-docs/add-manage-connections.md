@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/09/2017
 ms.author: archanan
-ms.openlocfilehash: 9336df54dab2f95114367267408aec6b500a131f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7739607b103d98b934805e62cb9a2bfdf1cc14e6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-your-connections-in-powerapps"></a>Administración de las conexiones en PowerApps
 En [powerapps.com](https://web.powerapps.com), puede crear una conexión entre PowerApps y uno o varios orígenes de datos, eliminar conexiones o actualizar las credenciales.
@@ -54,7 +54,8 @@ Además de crear y administrar conexiones en [powerapps.com](https://web.powerap
 * Actualizar una aplicación existente o crear una desde cero como se describe en [Agregar una conexión](add-data-connection.md).
 * Abrir una aplicación que otro usuario ha creado y [compartido con usted](share-app.md).
 
-**Nota**: Si prefiere usar PowerApps Studio, abra el menú **Archivo** y pulse o haga clic en **Conexiones**. Se abrirá [powerapps.com](https://web.powerapps.com) para que pueda crear y administrar las conexiones desde allí.
+> [!NOTE]
+> Si desea usar PowerApps Studio en su lugar, abra el menú **Archivo** y haga clic o pulse **Conexiones**, y se abre [powerapps.com](https://web.powerapps.com), donde puede crear y administrar las conexiones de allí.
 
 ## <a name="create-a-new-connection"></a>Creación de una nueva conexión
 1. Si aún no lo ha hecho, inicie sesión en [powerapps.com](https://web.powerapps.com).

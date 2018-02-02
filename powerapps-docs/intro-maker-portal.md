@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 0d580471b5dc70852468f6571d356dddd5ca172c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a6ec814d057f85b39f794bd7c0c100c5a28f652f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="introduction-to-powerappscom"></a>Introducción a powerapps.com
-A medida que se acerca noviembre, el equipo de PowerApps se prepara para volver a presentar [powerapps.com](http://web.powerapps.com) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:
+El equipo de PowerApps va a volver a presentar [powerapps.com](http://web.powerapps.com) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:
 
 * el encabezado
 * la página principal
@@ -111,7 +111,7 @@ Antes, la página **Aplicaciones** permitía cambiar entre la vista de iconos y 
 
 Tenga en cuenta que la vista de lista solo muestra las aplicaciones en el entorno seleccionado. Para ver aplicaciones de un entorno diferente, cambie a él mediante el selector de entorno en el encabezado. [Más información sobre cómo cambiar de entorno](working-with-environments.md).
 
-Novedades
+## <a name="whats-new"></a>Novedades
 
 * Si hace clic o pulsa en una aplicación, ahora se abre en PowerApps Studio para web en una nueva pestaña.
 * De forma predeterminada, la página **Aplicaciones** muestra todas las aplicaciones para las que tenga permiso de edición. Para ver **Todas las aplicaciones** (incluidas las que solo puede utilizar), seleccione el filtro **Todas las aplicaciones**.

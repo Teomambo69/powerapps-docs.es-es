@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 86329003ee2f5e6e4ffbe91714be290eacd04ad7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dfb50597af4012fe6145664fb645439a54686825
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -145,7 +145,8 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
    
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
-    **Nota:** Utilice el punto y coma "**;**" para separar varias fórmulas.
+    > [!NOTE]
+> Utilice el punto y coma "**;**" para separar varias fórmulas.
 3. Establezca la propiedad **[Predeterminad](properties-core.md)** de **Origen** en **ClearInput** (Borrar entrada).
 4. Presione **F5**y, a continuación, pruebe la aplicación agregando varios números juntos.
 
@@ -161,7 +162,8 @@ Agregue un segundo botón para borrar el total entre un cálculo y otro.
 #### <a name="change-a-buttons-shape"></a>Cambio de la forma de un botón
 De forma predeterminada, PowerApps crea un control **Botón** rectangular con esquinas redondeadas. Puede realizar modificaciones básicas en la forma de un control **Botón** estableciendo sus propiedades **[Altura](properties-size-location.md)**, **[Ancho](properties-size-location.md)**, y **[Radius](properties-size-location.md)** (Radio).
 
-**Nota: [Icons and Shapes](control-shapes-icons.md)** (Iconos y formas) proporciona una gran variedad de diseños y puede realizar algunas de las mismas funciones básicas que hacen los controles **Botón**. Pero, **[Icons and shapes](control-shapes-icons.md)** (Iconos y formas) no tiene una propiedad **[Texto](properties-core.md)**.
+> [!NOTE]
+> [Icons and Shapes](control-shapes-icons.md) (Iconos y formas) proporcionan una gran variedad de diseños y pueden realizar algunas de las mismas funciones básicas que realizan los controles **Botón**. Pero, **[Icons and shapes](control-shapes-icons.md)** (Iconos y formas) no tiene una propiedad **[Texto](properties-core.md)**.
 
 1. Agregue un control **Botón**, y establezca sus propiedades **[Altura](properties-size-location.md)** y **[Ancho](properties-size-location.md)** en **300** para hacer un botón cuadrado grande.
 2. Modifique las propiedades **[RadiusTopLeft](properties-size-location.md)** (RadioSuperiorIzquierdo), **[RadiusTopRight](properties-size-location.md)** (RadioSuperiorDerecho), **[RadiusBottomLeft](properties-size-location.md)** (RadioInferiorIzquierdo), y **[RadiusBottomRight](properties-size-location.md)** (RadioInferiorDerecho) para ajustar la cantidad de curvatura en cada esquina. Estos son algunos ejemplos de formas diferentes, cada una comenzando a partir de un botón cuadrado de 300 x 300:
@@ -177,7 +179,8 @@ De forma predeterminada, el color de relleno de un control **Botón** se atenuar
 
 También puede especificar el color de un control **Botón** estableciendo su propiedad **[RellenoAlMantener](properties-color-border.md)** en una fórmula que contenga la función **[ColorValue](../functions/function-colors.md)** función en lugar de la función **[ColorFade](../functions/function-colors.md)**, como en **ColorValue("Red")**.
 
-**Nota:** El valor de color puede ser cualquier definición de color CSS, ya sea un nombre o un valor hexadecimal.
+> [!NOTE]
+> El valor de color puede ser cualquier definición de color CSS, ya sea un nombre o un valor hexadecimal.
 
 * Reemplace la función **[ColorFade](../functions/function-colors.md)** con una función **[ColorValue](../functions/function-colors.md)** en uno de los botones que creó y observe los efectos.
 

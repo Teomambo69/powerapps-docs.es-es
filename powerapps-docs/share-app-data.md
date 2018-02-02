@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e6bae4500d3c3ac81c12da3c5b509dc1ea9e711e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b413bd52e9bbdd328ca5197ff5d5a76348298fe9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Compartir datos de Excel utilizados por la aplicación
 Puede compartir datos de Excel con los usuarios de la aplicación en una [cuenta en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
@@ -49,7 +49,8 @@ Para obtener más información, consulte [Uso compartido de carpetas en Dropbox]
    
     ![Comando Compartir](./media/share-app-data/onedrive-share.png)
    
-    **Nota**: En OneDrive para la Empresa, comparta el archivo en sí, no la carpeta que lo contiene.
+    > [!NOTE]
+> En OneDrive para la Empresa, comparta el archivo en sí, no la carpeta que lo contiene.
 3. En el cuadro de diálogo, seleccione **Correo electrónico**.
    
     ![Compartir por correo electrónico](./media/share-app-data/onedrive-email.png)
@@ -72,6 +73,6 @@ Para obtener más información, consulte [Compartir archivos y carpetas de OneDr
 
 Para obtener más información, consulte [Compartir archivos y carpetas de Google Drive](https://support.google.com/drive/answer/2494822).
 
-## <a name="known-limitations"></a>Limitaciones conocidas
+### <a name="known-limitations"></a>Limitaciones conocidas
 Para más información sobre cómo compartir datos de Excel en su organización, [repase estas limitaciones](connections/cloud-storage-blob-connections.md#sharing-excel-tables).
 

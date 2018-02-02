@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 7de7d1e208dffa47dbe8580321f93023d5111389
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 37c4eebc80f363088bd637fbcd41d37cbafb245d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="text-function-in-powerapps"></a>Función Text en PowerApps
 Da formato a un número o un valor de fecha y hora para mostrar como una cadena de texto.
@@ -72,8 +72,10 @@ Si un número tiene más dígitos a la derecha del separador decimal que marcado
 | **yyyy** |Muestra el año como número de cuatro dígitos. |
 | **h** |Muestra la hora como número sin cero inicial. |
 | **hh** |Muestra la hora como número con cero inicial cuando corresponda. Si el formato contiene **AM** o **PM**, la hora se muestra según el reloj de 12 horas. De lo contrario, la hora se muestra según el reloj de 24 horas. |
-| **m** |Muestra el minuto como número sin cero inicial.  Nota: El código **m** o **mm** debe aparecer inmediatamente después del código **h** o **hh** o inmediatamente antes del código **ss**; de lo contrario, **Text** muestra el mes en lugar de los minutos. |
-| **mm** |Muestra el minuto como número con cero inicial cuando corresponda. Nota: El marcador de posición **m** o **mm** debe aparecer inmediatamente después del marcador de posición **h** o **hh** o inmediatamente antes del marcador de posición **ss**. De lo contrario, **Text** muestra el mes en lugar de los minutos. |
+| **m** |Muestra el minuto como número sin cero inicial.  > [!NOTE]
+> El código **m** o **mm** debe aparecer inmediatamente después del código **h** o **hh** o inmediatamente antes del código **ss**; de lo contrario, **Text** muestra el mes en lugar de los minutos. |
+| **mm** |Muestra el minuto como número con cero inicial cuando corresponda. > [!NOTE]
+> El marcador de posición **m** o **mm** debe aparecer inmediatamente después del marcador de posición **h** o **hh** o inmediatamente antes del marcador de posición **ss**. De lo contrario, **Text** muestra el mes en lugar de los minutos. |
 | **s** |Muestra el segundo como número sin cero inicial. |
 | **ss** |Muestra el segundo como número con cero inicial cuando corresponda. |
 | **f** |Muestra las fracciones de segundos. |
@@ -123,7 +125,8 @@ Cuando escriba una fórmula, si no proporciona un marcador de posición de idiom
 
 **[$-en-US]** es el valor que se presume si este marcador de posición no está presente cuando se ejecuta la aplicación. 
 
-**NOTA:** En una versión futura, la sintaxis de este marcador de posición puede cambiar para evitar que se confunda con un marcador de posición similar, pero distinto, compatible con Excel.
+> [!NOTE]
+> En una versión futura, la sintaxis de este marcador de posición puede cambiar para evitar que se confunda con un marcador de posición similar, pero distinto, compatible con Excel.
 
 #### <a name="result-language-tag"></a>Etiqueta de idioma del resultado
 En el resultado de la función **Text** aparecen cadenas traducidas para mes, día de la semana y designaciones a.m. o p.m., además de separadores decimales y grupo adecuados.

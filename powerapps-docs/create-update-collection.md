@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: f0fc171930e190e9530782ee93b27644e36a5978
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c77ce03c92925225f8b16bd1d3bbb7083749cc9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Crear y actualizar una colección en su aplicación
 Use una colección para almacenar datos que se pueden usar en la aplicación. Una colección es un grupo de elementos que son similares. Por ejemplo, cree una colección MisImágenes que almacene todas las imágenes de los productos que vende su compañía. En PowerApps, puede agregar la colección MisImágenes y crear una aplicación que muestre todas las imágenes de estos productos. En otro ejemplo, puede crear una colección PriceList que incluya los productos y el precio de cada uno de ellos.
@@ -85,14 +85,16 @@ En los pasos siguientes se muestra cómo crear una colección dentro de la aplic
 5. Mueva los controles de texto Ciudad y Provincias de forma que se vean ambos:  
    ![][10]  
    
-    **Nota**: Puede reemplazar "Entrada de texto" por algo como "Ciudad" o "Provincia", como en la imagen.  
+    > [!NOTE]
+> Puede reemplazar "Entrada de texto" por algo como "Ciudad" o "Provincia", como en la imagen.  
 6. En la pestaña **Insertar**, seleccione **Botón**. Establezca su propiedad **[AlSeleccionar](controls/properties-core.md)** en la función siguiente:  
    ```Collect(Destinations, {Cities:City!Text, States:States!Text})```  
    
     Debería parecerse a lo siguiente:  
     ![][11]  
    
-    **Nota**: Puede usar esta misma función para agregar más columnas a esta colección. Por ejemplo, puede agregar otro control de entrada de texto para País para agregar una columna Países:
+    > [!NOTE]
+> Puede usar esta misma función para agregar más columnas a esta colección. Por ejemplo, puede agregar otro control de entrada de texto para País para agregar una columna Países:
    
     `Collect(Destinations, {Cities:City!Text, States:States!Text}, {Countries:Country!Text})`
 7. Cambie el nombre del control de botón **AddCityStateButton** y establezca su propiedad **[Texto](controls/properties-core.md)** en **Agregar ciudad y provincia**:  
@@ -154,7 +156,8 @@ Hay algunas secciones en este tutorial. Cuando haya finalizado, sabrá importar 
    
     ```Collect(OrderList, {Name:PriceGallery!Selected!Name, Qty:OrderQty!Value, Cost:OrderQty!Value*LookUp(PriceList, PriceGallery!Selected!Name in Name, Price)});SaveData(OrderList, "orderfile")```  
    
-    **Nota**: Cuando seleccione este botón más adelante en este procedimiento, creará y guardará una colección llamada **ListaDePedidos**. La colección contendrá el nombre de un producto que especifique en la galería, una cantidad que elija con el control deslizante y el costo total calculado al multiplicar la cantidad por el precio del producto.
+    > [!NOTE]
+> Cuando seleccione este botón más adelante en este procedimiento, creará y guardará una colección llamada **ListaDePedidos**. La colección contendrá el nombre de un producto que especifique en la galería, una cantidad que elija con el control deslizante y el costo total calculado al multiplicar la cantidad por el precio del producto.
 4. Seleccione la pestaña **Pantalla** y establezca la propiedad **[AlEstarVisible](controls/control-screen.md)** en la siguiente expresión:  
    
     ```If(IsEmpty(PriceList), LoadData(PriceList, "pricefile"));If(IsEmpty(OrderList), LoadData(OrderList, "orderfile"))```

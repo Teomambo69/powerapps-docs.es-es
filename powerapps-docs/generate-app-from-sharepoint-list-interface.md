@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/21/2017
 ms.author: sharik
-ms.openlocfilehash: 62f46339e2136494225bf218d372f539c389e1ad
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8ac8fb34f9cdeb0c9e0ce6172938cef33ecccbc5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Creación de una aplicación desde SharePoint mediante PowerApps
-[!VIDEO nb:cid:UUID:639d7eaf-bae5-447c-a34b-ec539a01a15c]
+
 
 
 En PowerApps, puede crear automáticamente una aplicación en la que los usuarios puedan administrar los elementos de una lista personalizada de SharePoint Online. La aplicación tendrá tres pantallas para que los usuarios puedan:
@@ -33,7 +33,8 @@ En PowerApps, puede crear automáticamente una aplicación en la que los usuario
 
 Si crea una aplicación de una lista personalizada desde la barra de comandos de SharePoint Online, la aplicación aparece como una vista de esa lista. También puede ejecutar la aplicación en un dispositivo Windows, iOS o Android, además de un explorador web.
 
-**Importante**: PowerApps no admite todos los tipos de datos de SharePoint. Para más información, consulte [Problemas conocidos](connections/connection-sharepoint-online.md#known-issues).
+> [!IMPORTANT]
+> PowerApps no admite todos los tipos de datos de SharePoint. Para más información, consulte [Problemas conocidos](connections/connection-sharepoint-online.md#known-issues).
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 1. Abra una lista personalizada en SharePoint Online, pulse o haga clic en **PowerApps** en la barra de comandos y, después, pulse o haga clic en **Crear una aplicación**.
@@ -48,7 +49,8 @@ Si crea una aplicación de una lista personalizada desde la barra de comandos de
     ![](./media/generate-app-from-sharepoint-list-interface/powerapp-studio-for-web.png)  
 3. Pulse o haga clic en la pestaña del explorador de la lista de SharePoint y, a continuación, pulse o haga clic en **Abrir**.
    
-    **Nota**: Es posible que deba actualizar la ventana del explorador (por ejemplo, presionando F5) para que se abra la aplicación.
+    > [!NOTE]
+> Es posible que deba actualizar la ventana del explorador (por ejemplo, presionando F5) para que se abra la aplicación.
    
     ![](./media/generate-app-from-sharepoint-list-interface/open-app-in-browser.png)
    

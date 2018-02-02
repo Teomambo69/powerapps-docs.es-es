@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: d4305884c14a4b85b2ed992a5df13a7d3bb2baa7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-delegation"></a>Descripción de delegación
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos:  las funciones **[Filtrar](functions/function-filter-lookup.md)**, **[Ordenar](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas.  Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan.  Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.  
@@ -95,7 +95,7 @@ Las restantes funciones, entre las que se incluyen las siguientes, no admiten la
 
 Un patrón habitual consiste en usar **AddColumns** y **Buscar** para combinar información de una tabla con la de otra, lo que suele conocerse como una combinación en el lenguaje de base de datos.  Por ejemplo:
 
-* **AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
+**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
 
 Aunque **Products** y **Suppliers** pueden ser orígenes de datos delegables y **Buscar** es una función delegable, la función **AddColumns** no se puede delegar.  El resultado de la fórmula completa se limitará a la primera parte del origen de datos **Products**.  
 
@@ -118,27 +118,26 @@ Los puntos azules solo se muestran en las fórmulas que operan en orígenes de d
 ## <a name="examples"></a>Ejemplos
 En este ejemplo, usaremos una tabla de SQL Server que contiene productos, en concreto frutas, nombres **[dbo]. [ Products]**.  En la pantalla nueva, PowerApps puede crear una aplicación básica de tres pantallas conectada a este origen de datos:
 
-![](media/delegation-overview/products-afd.png)
+![Aplicación de tres pantallas](media/delegation-overview/products-afd.png)
 
 Tenga en cuenta la fórmula de la propiedad **Elementos** de la galería.  Usa las funciones **SortByColumns** y **Buscar**, que se pueden delegar.
 
 Vamos a escribir **"Manzana"** en el control de entrada de texto de búsqueda.  Si estamos muy atentos, veremos durante un instante unos puntos que se mueven en la parte superior de la pantalla mientras se procesa la nueva entrada de la nueva búsqueda.  Dichos puntos indican que hay comunicación con el servidor SQL Server:
 
-![](media/delegation-overview/products-apple.png)
+![Control de entrada de texto de búsqueda](media/delegation-overview/products-apple.png)
 
 Dado que todo esto se puede delegar, aunque si la tabla **[dbo]. [ Products]** contiene millones de registros, se seguirán encontrando todos, para lo que nos desplazamos por la galería a medida que el usuario se desplaza por los resultados.
 
-Observará que aparece una coincidencia para "Manzana" y "Piña".  La función **Buscar** encontrará un término de búsqueda en cualquier parte de una columna de texto.  Sin embargo, supongamos que solo deseamos buscar el término de búsqueda únicamente al principio del nombre de fruta.  Podemos usar otra función que se puede delegar, **Filtrar**, con un término de búsqueda más complicado (por motivos de simplicidad quitaremos la llamada a **SortByColumns**):
+Observará que aparece una coincidencia para "Manzana" y "Piña".  La función **Buscar** encontrará un término de búsqueda en cualquier parte de una columna de texto.  Sin embargo, supongamos que solo deseamos buscar el término de búsqueda al principio del nombre de la fruta.  Podemos usar otra función que se puede delegar, **Filtrar**, con un término de búsqueda más complicado (por motivos de simplicidad quitaremos la llamada a **SortByColumns**):
 
-![](media/delegation-overview/products-apple-bluedot.png)
+![Quitar la llamada a SortByColumns](media/delegation-overview/products-apple-bluedot.png)
 
 Ahora solo se muestra **"Manzanas"**, pero no **"Piña"**.  Sin embargo, se muestra un punto azul al lado de la galería y hay una línea ondulada de azul debajo de una parte de la fórmula.  Incluso aparece un punto azul en la miniatura de la pantalla.  Si se mantiene el puntero sobre el punto azul que hay al lado de la galería, se ve lo siguiente:
 
-![](media/delegation-overview/products-apple-bluepopup.png)
+![Mantener el mouse sobre el punto azul](media/delegation-overview/products-apple-bluepopup.png)
 
 Aunque usamos **Filtrar**, que es una función delegable, con SQL Server, que es un origen de datos que se puede delegar, la fórmula que se utilizó en **Filtrar** no se puede delegar.  **Extrae** y **Largo** no se pueden delegar en ningún origen de datos.
 
 Pero ha funcionado, ¿no?  Bueno, más o menos.  Por eso aparece un punto azul, en lugar de un icono de peligro amarillo y una línea ondulada roja de error.  Si la tabla **[dbo]. [ Products]** contiene menos de 500 registros, ha funcionado perfectamente.   Todos los registros han pasado al dispositivo y **Filtrar** se ha aplicado localmente.  
 
 Si la tabla contiene más de 500 registros, en la galería solo se mostrará la fruta que empiezan por **"Manzana"** *en los primeros 500 registros de la tabla*.  Si **"Manzana, Fuji"** aparece como nombre en los registros 501 o 500 001, no se encontrará.
-

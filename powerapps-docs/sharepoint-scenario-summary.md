@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de principio a fin del escenario de integración de SharePoint Online | Microsoft Docs"
-description: Realice un tutorial de principio a fin por el escenario que se ha creado en esta serie de tutoriales.
+description: Realice un tutorial de principio a fin para el escenario que se ha creado en esta serie de tutoriales.
 services: 
 suite: powerapps
 documentationcenter: na
@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 064ff0778cbc02a81fb64214dbed64f32c04aa15
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
-**Nota**: Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> [!NOTE]
+> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones, flujos e informes en SharePoint según sus necesidades propias. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
 
@@ -37,11 +38,17 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
 4. Rellene el formulario con los siguientes valores:
    
    * **Title** = "Mobile devices for design team"
+
    * **Approved** = "Pending"
+
    * **Description** = "The design team will now use Contoso-supplied devices"
+
    * **EstimatedDays** = "30"
+
    * **ProjectType** = "New hardware"
+
    * **RequestDate** = "03/01/2017"
+
    * **Requestor** = "Emily Braun"
      
      ![Formulario de edición de solicitudes de proyecto](./media/sharepoint-scenario-summary/09-01-01-app-new.png)
@@ -100,8 +107,11 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
 4. En la pantalla **Update Details**, establezca los valores siguientes:
    
    * El campo **Status** = "Not started"
+
    * El campo **ProjectedStartDate** = "3/6/2017"
+
    * El campo **ProjectedEndDate** = "3/24/2017"
+
    * El campo **ProjectedDays** = "15"
      
      ![Actualizar detalles del proyecto](./media/sharepoint-scenario-summary/09-04-03-update.png)

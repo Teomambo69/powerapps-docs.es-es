@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: 023282c31ea90cd391d425faaf036603b5521d08
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-field-groups"></a>Usar grupos de campos
 Los grupos de campos proporcionan una manera de agrupar uno o más campos de una entidad. Los grupos de campos pueden acelerar y simplificar la creación y mantenimiento de aplicaciones. Un grupo de campos puede contener uno o varios campos, y un mismo campo puede aparecer en varios grupos de campos. Un campo no puede aparecer más de una vez en un mismo grupo de campos.
@@ -50,7 +50,8 @@ Common Data Service incluye varios grupos de campos predeterminados en entidades
 3. Para quitar un grupo de campos, haga clic en la **X** situada junto al nombre de campo de la lista **Campos del grupo de campos**.
 4. Pulse o haga clic en el botón **Guardar**.
 
-*Nota: La modificación de grupos de campos para [entidades estándar](guided-learning/learning-common-data-service-entities.md) no se admite actualmente, pero se pueden modificar los grupos de campos para las entidades personalizadas.*
+> [!NOTE]
+> La modificación de grupos de campos para [entidades estándar](guided-learning/manage-data.yml#step-2) no se admite actualmente, pero se pueden modificar los grupos de campos para las entidades personalizadas.*
 
 ## <a name="creating-a-field-group"></a>Creación de un grupo de campos
 Los grupos de campos predeterminados se crean automáticamente cuando se crea una entidad. La creación de grupos de campos adicionales no se admite actualmente.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 934a3627d902db6dcb853fddae06b3f1f229d2b6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbbf976b7c0fe4699e9c967b3ecac541efc2c223
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delete-an-app-from-powerapps"></a>Eliminar una aplicación de PowerApps
 En este artículo se muestra cómo eliminar una aplicación tanto de su cuenta de PowerApps como de las cuentas de cualquiera con quien se haya compartido la aplicación.
@@ -28,11 +28,12 @@ En este artículo se muestra cómo eliminar una aplicación tanto de su cuenta d
 1. Abra [powerapps.com](https://web.powerapps.com) y pulse o haga clic en **Aplicaciones** en la barra de navegación izquierda.
    
     ![](./media/delete-app/file-apps.png)
-2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo aquellas de las que sea el propietario o en las que contribuya.
+2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo las aplicaciones de las que sea propietario o aquellas aplicaciones a las que contribuya.
    
     ![](./media/delete-app/filter-list.png)
    
-    **Nota**: Si la aplicación que desea eliminar no aparece, asegúrese de que se encuentra en el entorno correcto.
+    > [!NOTE]
+> Si la aplicación que desea eliminar no aparece, asegúrese de que está en el entorno adecuado.
 3. Cerca del borde derecho, pulse o haga clic en el icono de información de la aplicación que desea eliminar.
    
     ![](./media/delete-app/app-options.png)
@@ -40,10 +41,12 @@ En este artículo se muestra cómo eliminar una aplicación tanto de su cuenta d
    
     ![](./media/delete-app/delete-icon.png)
    
-    **Nota**: Para poder eliminar una aplicación, debe tener el permiso de **colaborador**.
+    > [!NOTE]
+> Para poder eliminar una aplicación debe tener el permiso de **colaborador** en ella.
 5. En el cuadro de diálogo que aparece, pulse o haga clic en **Eliminar de la nube**.  
    
-    **Importante**: Esta acción eliminará de forma permanente esta aplicación no solo de su cuenta sino también de las cuentas de todos los usuarios con el que se haya compartido.
+    > [!IMPORTANT]
+> Esta acción eliminará permanentemente la aplicación no solo de su cuenta, sino también de las cuentas de todos los usuarios con las que se haya compartido.
    
     ![](./media/delete-app/delete-button.png)
 

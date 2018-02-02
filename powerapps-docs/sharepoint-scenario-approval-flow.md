@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 5fd4448eba2429dc7bd5027327b132c1b0ff5dd8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
-**Nota**: Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> [!NOTE]
+> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos. Microsoft Flow está integrado con SharePoint, por lo que resulta fácil crear un flujo de directamente desde una lista. El flujo que vamos a crear se desencadena cuando se agrega un elemento a la lista **Project Requests**. El flujo envía un correo electrónico al aprobador del proyecto, quien aprueba o rechaza la solicitud directamente en el correo electrónico. Después, el flujo envía un correo electrónico de aprobación o rechazo al solicitante del proyecto y actualiza nuestras listas de SharePoint en consecuencia.
 
@@ -123,25 +124,33 @@ De forma predeterminada, esta rama envía un correo electrónico de rechazo al s
 8. En el cuadro **Aprobado**, escriba "No". Ahora esta parte del flujo debería parecerse a la siguiente imagen.
    
     ![Actualización de lista](./media/sharepoint-scenario-approval-flow/03-01-08-no-update-complete.png)
-9. En la parte superior derecha de la pantalla, pulse o haga clic en **Crear flujo** y en **Listo**.
-   
-    ![Botón Listo](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+9. En la parte superior derecha de la pantalla, pulse o haga clic en **Crear flujo**.
    
     El flujo está completo y debería ser similar a la siguiente imagen si se contraen los cuadros.
    
     ![Flujo finalizado](./media/sharepoint-scenario-approval-flow/03-01-16-flow-complete.png)
 
+10. En la parte superior derecha de la pantalla, pulse o haga clic en **Listo**.
+   
+    ![Botón Listo](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+
 ## <a name="step-4-run-the-approval-flow"></a>Paso 4: Ejecución del flujo de aprobación
 1. En la lista **Solicitudes de proyecto**, haga clic en **editar rápido** y agregar un elemento como el siguiente:
    
    * **Title** = "New monitor for Megan"
-   * **Approved** = "Pending"
+
    * **Description** = "Megan needs a 24" monitor"
-   * **EstimatedDays** = "1"
+
    * **ProjectType** = "New hardware"
+
    * **RequestDate** = "02/03/2017"
+
    * **Requestor** = "Megan Bowen"
-     
+
+   * **EstimatedDays** = "1"
+
+   * **Approved** = "Pending"
+
      ![Elemento agregado a la lista](./media/sharepoint-scenario-approval-flow/03-02-01-list-add.png)
 2. Haga clic en **Listo** en la parte superior de la página cuando haya terminado.
    

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 541de1bcea9b76262d4f2d1cbe79c76b1c117245
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integración de PowerApps tanto en sitios web como en otros servicios
 Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones en un iframe para poder integrarlas tanto en sitios web como en otros servicios, como Power BI o SharePoint.
@@ -31,7 +31,7 @@ En este tema se muestra cómo establecer los parámetros para la inserción de a
 Tenga en mente las siguientes restricciones:
 
 * Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
-* PowerApps solo es compatible con Internet Explorer 11 cuando la función Vista de compatibilidad está desactivada.
+* Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
 
 También puede integrar PowerApps en SharePoint Online (sin usar un iframe). Para más información, consulte [Creación de una aplicación desde SharePoint mediante PowerApps](generate-app-from-sharepoint-list-interface.md).
 
@@ -43,7 +43,8 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 &appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
-**Nota**: Hemos agregado un salto de línea para que el identificador URI se muestre mejor en la página.
+> [!NOTE]
+> Hemos agregado un salto de línea para que el identificador URI se muestre mejor en la página.
 
 Lo único que tiene que hacer es sustituir el identificador de la aplicación por [AppID] en el identificador URI (incluido "[' & ']"). Le mostraremos cómo obtener ese valor en breve, pero primero aquí están todos los parámetros disponibles en el identificador URI:
 

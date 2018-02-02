@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/19/2017
 ms.author: jamesol
-ms.openlocfilehash: ebe54d21ffc55024e1af7ab81fb2835835f39e6f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3b53905bb335cf61eae3e184d4984d56907fe4c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="licensing-overview"></a>Introducción a las licencias
 Las licencias de PowerApps se conceden por usuario. Todos y cada uno de los usuarios que acceda al servicio para crear y ejecutar aplicaciones necesitan una licencia. Los clientes de Office 365 y Dynamics 365 pueden beneficiarse inmediatamente de las funcionalidades de PowerApps y Microsoft Flow que incluyen estas ofertas. Los clientes que desean crear aplicaciones y flujos que acceden a orígenes de datos de fuera de Office 365 y Dynamics 365, o que necesitan más funcionalidad, pueden comprar suscripciones independientes a PowerApps y Microsoft Flow. Hay diferencias importantes en la funcionalidad entre estos grupos de licencias.
@@ -80,7 +80,8 @@ Cuando el período de evaluación expira, los usuarios tienen estas opciones:
 * Los usuarios que tienen acceso a PowerApps o Microsoft Flow a través de Office 365 o Dynamics 365 también pueden acceder a PowerApps o Microsoft Flow.  Sin embargo, los usuarios perderán el acceso a las características que son exclusivas del plan 2, como se describe en la [página de precios de PowerApps][2].
 * Los usuarios que no tienen acceso a través de Office 365 o Dynamics 365 pueden solicitar una ampliación del periodo de evaluación o adquirir un plan independiente. Para más información, consulte [Compra de PowerApps para la organización][4].
 
-> **NOTA** Para adquirir PowerApps para una organización, es preciso ser administrador general o de facturación de Office 365 de un inquilino, o bien debe crear un inquilino.
+> [!NOTE]
+>   Para comprar PowerApps para una organización, es preciso ser administrador general o de facturación de Office 365 de un inquilino, o bien debe crear un inquilino.
 > 
 > 
 

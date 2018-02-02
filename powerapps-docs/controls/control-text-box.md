@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c6da4216a4ce2c95f20db322a3ec529299410deb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4fd0b50796bc8c1ba9574d1c401042e3d10c863c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
 Cuadro que muestra los datos como texto, números, fechas o moneda.
@@ -124,7 +124,8 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 * Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** en una fórmula como esta:<br>
   **Today()**
   
-    **Nota:** Al especificar una fórmula, no use comillas a menos que un argumento de la fórmula sea una cadena literal. En ese caso, incluya el argumento, no la fórmula, con comillas inglesas.
+    > [!NOTE]
+> Al especificar una fórmula, no use comillas, a menos que un argumento de la misma sea una cadena literal. En ese caso, incluya el argumento, no la fórmula, con comillas inglesas.
   
     ¿Desea más información sobre la función **[Today](../functions/function-now-today-istoday.md)** u [otras funciones](../formula-reference.md)?
 

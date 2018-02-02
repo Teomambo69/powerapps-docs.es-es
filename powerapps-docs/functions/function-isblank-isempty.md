@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: b9d93fe540d32bc547cec3254b5aa3968b460660
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c5972d35f98d15f1cad45e74763320011ab98c6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Funciones Blank, Coalesce, IsBlank e IsEmpty en PowerApps
 Comprueba si un valor está en blanco o una [tabla](../working-with-tables.md) no contiene [registros](../working-with-tables.md#records), y proporciona una manera de crear valores *en blanco*.
@@ -27,7 +27,8 @@ Comprueba si un valor está en blanco o una [tabla](../working-with-tables.md) n
 ## <a name="overview"></a>Información general
 *Blank* es un marcador de posición para "sin valor" o "valor desconocido". Un control **[Entrada de texto](../controls/control-text-input.md)** está *en blanco* si el usuario no ha escrito en él ningún carácter. El mismo control ya no está *en blanco* tan pronto como el usuario escribe un carácter en él.  Algunos orígenes de datos pueden almacenar y devolver valores NULL, que se representan en PowerApps como *en blanco*.
 
-**Nota**: Actualmente, solo se admite el almacenamiento de valores *en blanco* para colecciones locales. Sabemos que muchos orígenes de datos admiten valores *en blanco* (NULL) y estamos trabajando para superar esta limitación.
+> [!NOTE]
+> Actualmente, solo se admite el almacenamiento de valores *en blanco* en las colecciones locales. Sabemos que muchos orígenes de datos admiten valores *en blanco* (NULL) y estamos trabajando para superar esta limitación.
 
 Cualquier propiedad o valor calculado puede estar *en blanco*.  Por ejemplo, un valor booleano normalmente tiene uno de dos valores: **true** o **false**.  Pero además de estos dos, también puede estar *en blanco*.  Esto es similar a Microsoft Excel, donde una celda de la hoja de cálculo empieza como en blanco pero puede contener los valores **TRUE** o **FALSE**, entre otros. En cualquier momento, se puede quitar el contenido de la celda y volvería a un estado *en blanco*.
 
@@ -70,7 +71,8 @@ El valor devuelto para **EsBlanco** e **IsEmpty** es un valor booleano **true** 
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="blank"></a>En blanco
-Nota: Actualmente, el siguiente ejemplo solo funciona para colecciones locales.  Sabemos que muchos orígenes de datos admiten valores *en blanco* (NULL) y estamos trabajando para superar esta limitación.
+> [!NOTE]
+> Actualmente, el siguiente ejemplo solo funciona en colecciones locales.  Sabemos que muchos orígenes de datos admiten valores *en blanco* (NULL) y estamos trabajando para superar esta limitación.
 
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:

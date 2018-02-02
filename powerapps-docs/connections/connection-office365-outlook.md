@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/25/2017
+ms.date: 10/20/2017
 ms.author: archanan
-ms.openlocfilehash: 45b43f8d1518c09ffcd584f055391e442899dfa3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 637cccf5a5a88d012657172a9e312e232915a615
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Conexión a Office 365 Outlook desde PowerApps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -30,11 +30,10 @@ Puede agregar controles para realizar estas funciones en la aplicación. Por eje
 
 En este tema se muestra cómo agregar Office 365 Outlook como una conexión, agregar Office 365 Outlook como origen de datos a su aplicación y cómo utilizar estos datos en distintos controles.
 
-**Importante**: en el momento de redacción este documento, la operación del calendario no admite eventos recurrentes.
+> [!IMPORTANT]
+> En el momento de redacción este documento, la operación del calendario no admite eventos recurrentes.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-office-365-outlook"></a>Conexión a Office 365 Outlook
 1. [Agregue una conexión de datos](../add-data-connection.md) y seleccione **Office 365 Outlook**:  
@@ -66,7 +65,7 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
 1. En el menú **Insert** (Insertar), seleccione **Text** (Texto) y luego seleccione **Text input** (Entrada de texto).
 2. Repita el paso anterior dos veces más, con lo que tendrá tres casillas y organícelas en una columna:  
    
-    ![](./media/connection-office365-outlook/threetextinput.png)
+    ![Tres cuadros en una columna](./media/connection-office365-outlook/threetextinput.png)
 3. Cambie el nombre de los controles a:  
    
    * **entradaPara**
@@ -76,7 +75,7 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
    
     `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. Mueva el botón para que aparezca en todos los demás controles y establezca su propiedad **[Texto](../controls/properties-core.md)** en **"Enviar correo electrónico"**.
-6. Presione F5 o seleccione el botón Vista previa (![](./media/connection-office365-outlook/preview.png)). Escriba una dirección de correo electrónico válida en **entradaPara** y escriba el nombre que desee en los otros dos controles **Entrada de texto**.
+6. Presione F5 o seleccione el botón Vista previa (![botón Vista previa](./media/connection-office365-outlook/preview.png)). Escriba una dirección de correo electrónico válida en **entradaPara** y escriba el nombre que desee en los otros dos controles **Entrada de texto**.
 7. Seleccione **Enviar correo electrónico** para enviar el mensaje. Presione Esc para volver al área de trabajo predeterminada.
 
 ## <a name="send-a-message-with-an-attachment"></a>Envío de un mensaje con datos adjuntos
@@ -88,7 +87,8 @@ Para agregar datos adjuntos a un mensaje, siga los pasos descritos en la secció
 * ContentBytes
 * @odata.type
 
-**Nota**: la propiedad @odata.type solo se puede especificar para un archivo adjunto y se puede establecer en una cadena vacía.
+> [!NOTE]
+> La propiedad @odata.type se puede especificar para un solo archivo adjunto y se puede establecer en una cadena vacía.
 
 En este ejemplo, se enviará una foto como **file1.jpg**:
 
@@ -108,20 +108,23 @@ En este ejemplo, se enviará un archivo de audio junto con la foto:
 3. En la galería, establezca la propiedad **Texto** de la primera etiqueta en `ThisItem.Id`. Establezca la segunda etiqueta en `ThisItem.Subject`. Establezca la tercera etiqueta en `ThisItem.Body`.
 4. Seleccione la primera etiqueta de la galería y cambie su nombre a **IdCorreoElectrónico**:
    
-    ![Cerrar el panel de opciones](./media/connection-office365-outlook/renameheading.png)
+    ![Cambiar el nombre de la primera etiqueta](./media/connection-office365-outlook/renameheading.png)
 5. Seleccione la tercera etiqueta de la galería y agregue un **botón** (menú **Insertar**). Establezca la propiedad **AlSeleccionar** del botón en la fórmula siguiente:  
    
     `Office365.DeleteEmail(EmailID.Text)`
-6. Presione F5 o seleccione el botón Vista previa (![](./media/connection-office365-outlook/preview.png)). Seleccione uno de los correos electrónicos de la galería y haga clic en el botón. <br/><br/> **NOTA** Esto elimina los correos electrónicos seleccionados de la Bandeja de entrada. Por lo tanto, tenga cuidado al elegirlos.
+6. Presione F5 o seleccione el botón Vista previa (![botón Vista previa](./media/connection-office365-outlook/preview.png)). Seleccione uno de los correos electrónicos de la galería y haga clic en el botón. 
+    
+    > [!NOTE]
+    > Así se elimina el correo electrónico seleccionado de la Bandeja de entrada. Por lo tanto, tenga cuidado al elegirlos.
 7. Presione Esc para volver al área de trabajo predeterminada.
 
 ## <a name="mark-a-message-as-read"></a>Marca de un mensaje como leído
-Esta sección utiliza los mismos controles que [Eliminar correo electrónico](connection-office365-outlook.md#delete-email).
+En esta sección se usan los mismos controles que en [Eliminar un mensaje](connection-office365-outlook.md#delete-a-message).
 
 1. Establezca la propiedad **AlSeleccionar** del botón en la fórmula siguiente:  
    
     `Office365.MarkAsRead(EmailID.Text)`
-2. Presione F5 o seleccione el botón Vista previa (![](./media/connection-office365-outlook/preview.png)). Seleccione uno de los mensajes de correo electrónico no leídos y haga clic en el botón.
+2. Presione F5 o seleccione el botón Vista previa (![botón Vista previa](./media/connection-office365-outlook/preview.png)). Seleccione uno de los mensajes de correo electrónico no leídos y haga clic en el botón.
 3. Presione Esc para volver al área de trabajo predeterminada.
 
 ## <a name="helpful-links"></a>Vínculos útiles

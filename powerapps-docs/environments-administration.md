@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/11/2017
 ms.author: jamesol
-ms.openlocfilehash: 1eeb79d0c109181ae75b86a78cecdb4babe058ab
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f26c97681a4af40e042d1c943e108a424861f810
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-administration-in-powerapps"></a>Administración de entornos en PowerApps
 En el [centro de administración de PowerApps][1], administre los entornos que ha creado y aquellos a los que se le ha agregado con el rol de administrador de entorno. Desde el centro de administración, puede realizar estas acciones administrativas:
@@ -35,19 +35,22 @@ En el [centro de administración de PowerApps][1], administre los entornos que h
 ## <a name="access-the-powerapps-admin-center"></a>Acceso al centro de administración de PowerApps
 Para acceder al centro de administración de PowerApps:
 
-* Vaya directamente a [admin.powerapps.com][1] o
+* Vaya directamente a [admin.powerapps.com][1], o bien
+
 * Vaya a [powerapps.com][2] y seleccione el icono de engranaje en el encabezado de navegación.
   
     ![](./media/environment-admin/powerapps-gear-dropdown.png)
 
 Para administrar un entorno en el centro de administración de PowerApps, debe tener uno de estos roles:
 
-* El rol Administrador de entorno para el entorno o
-* El rol Administrador global del inquilino de Azure AD o de Office 365.
+* El rol Administrador de entorno del entorno, O BIEN
+
+* El rol Administrador global de su inquilino de Azure AD o de Office 365.
 
 También necesita Plan 2 de PowerApps o de Flow para acceder al centro de administración. Para más información, consulte la [página de precios de PowerApps][3].
 
-**Importante**: Los cambios realizados en el centro de administración de PowerApps afectan al [centro de administración de Flow][4] y viceversa.
+> [!IMPORTANT]
+> Los cambios que realice en el centro de administración de PowerApps afectan al [centro de administración de Flow][4], y viceversa.
 
 ## <a name="create-an-environment"></a>Creación de un entorno
 En primer lugar, haga clic en **+ Nuevo entorno** para abrir un cuadro de diálogo y crear un entorno.
@@ -120,18 +123,20 @@ Si un entorno carece de base de datos, un Administrador de entorno puede crear u
 Después de crear una base de datos, elija un modelo de seguridad. Para más información, consulte [Configurar seguridad de base de datos](database-security.md).
 
 ## <a name="manage-security-for-your-environments"></a>Administración de la seguridad para los entornos
+
 ### <a name="environment-permissions"></a>Permisos de entorno
 En un entorno, todos los usuarios en el inquilino de Azure AD lo son también de dicho entorno. No obstante, para que puedan desempeñan un rol con más privilegios, se les debe agregar a un rol de entorno específico. Los entornos tienen dos roles integrados que proporcionan acceso a los permisos dentro de un entorno:
 
 * El rol **Administrador de entorno** puede realizar todas las acciones administrativas en un entorno, incluidas las siguientes:
   
-  o    Agregar o quitar un usuario o grupo del rol Administrador de entorno o Creador de entorno.
+    * Agregar o quitar un usuario o grupo del rol Administrador de entorno o Creador de entorno.
   
-  o    Aprovisionar una base de datos de Common Data Service para el entorno.
+    * Aprovisionar una base de datos de Common Data Service para el entorno.
   
-  o    Ver y administrar todos los recursos creados dentro de un entorno.
+    * Ver y administrar todos los recursos creados en un entorno.
   
-  o    Establecer directivas de prevención de pérdida de datos. Para más información, consulte [Directivas para la prevención de pérdida de datos](prevent-data-loss.md).
+    * Establecer directivas para la prevención de pérdida de datos. Para más información, consulte [Directivas para la prevención de pérdida de datos](prevent-data-loss.md).
+
 * El rol **Creador de entorno** puede crear recursos dentro de un entorno, incluidas aplicaciones, conexiones, conectores personalizados, puertas de enlace y flujos con Microsoft Flow. Los creadores de entorno también pueden distribuir las aplicaciones que creen en un entorno a otros usuarios de su organización. Pueden compartir la aplicación con usuarios individuales, grupos de seguridad o todos los usuarios de la organización. Para más información, consulte [Compartir una aplicación en PowerApps](share-app.md).
 
 Para asignar un usuario o un grupo de seguridad a un rol de entorno, un Administrador de entorno puede realizar estos pasos en el [centro de administración de PowerApps][1]:

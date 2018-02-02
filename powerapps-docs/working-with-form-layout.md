@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: fc64817566f30f0370538c6e5d1619a1d54c0be3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f75eeddf5a3a7b693e81f561ffd227f95e41cc5f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Información sobre el diseño de formularios de datos en Microsoft PowerApps
 En PowerApps, puede crear fácilmente formularios que sean a la vez atractivos y eficientes. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
@@ -59,12 +59,17 @@ Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automát
     La etiqueta muestra el número del pedido de ventas del registro que seleccionó en la galería.
 3. (opcional) Dé formato a la etiqueta como se indica a continuación:
    
-   1. Establezca su propiedad **Align** en **Center**.
-   2. Establezca su propiedad **Size** en **20**.
-   3. Establezca su propiedad **Fill** en **Navy**.
-   4. Establezca su propiedad **Color** en **White**.
-   5. Establezca su propiedad **Width** en **Parent.Width**.
-   6. Establecer sus propiedades **X** e **Y** en **0**.
+    1. Establezca su propiedad **Align** en **Center**.
+   
+    2. Establezca su propiedad **Size** en **20**.
+   
+    3. Establezca su propiedad **Fill** en **Navy**.
+   
+    4. Establezca su propiedad **Color** en **White**.
+   
+    5. Establezca su propiedad **Width** en **Parent.Width**.
+   
+    6. Establecer sus propiedades **X** e **Y** en **0**.
       
       ![Barra de título](media/working-with-form-layout/title-bar.png)
 
@@ -97,7 +102,8 @@ También puede seleccionar tarjetas directamente en el formulario. Cuando se sel
 
 ![Selección de tarjetas de datos](media/working-with-form-layout/sales-order-data-card-selection.png)
 
-**Nota**: para eliminar una tarjeta (no solo ocultarla), selecciónela y presione Suprimir.
+> [!NOTE]
+> Para eliminar una tarjeta (no solo ocultarla), selecciónela y presione Supr.
 
 ## <a name="arrange-cards-in-columns"></a>Organización de tarjetas en columnas
 De forma predeterminada, los formularios de las aplicaciones para tableta tienen tres columnas, mientras que las aplicaciones para teléfono tienen una. Puede especificar no solo el número de columnas un formulario, sino también si todas las tarjetas deben ajustarse a los bordes de la columna.
@@ -124,7 +130,9 @@ Para aumentar la flexibilidad del diseño, pero conservar cierta estructura, pue
 3. Repita el paso anterior con las tarjetas **Order status** y **Customer purchase order reference**.
    
     ![Las tres tarjetas de la primera fila](media/working-with-form-layout/card-resize-2.png)
+
 4. Cambie el tamaño de las tarjetas **Name** y **Description** para que ocupen seis columnas (o 1/2) del formulario.
+
 5. Estire las dos primeras líneas de la dirección de envío para que ocupen todo el formulario:
 
 ¡Listo! El formulario deseado, en el que se mezclan filas con distintos números de columnas, está listo:

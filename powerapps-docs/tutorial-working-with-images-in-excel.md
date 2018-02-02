@@ -14,18 +14,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 13b15a29cf2f9e211328b815b8419799024e481e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
-&nbsp;
-
-[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
-
-* Obtenga información sobre cómo [agregar un origen de datos](add-data-connection.md)
 
 En este tutorial se hará lo siguiente:
 
@@ -35,7 +30,11 @@ En este tutorial se hará lo siguiente:
 * Guardar las imágenes creadas desde el control de entrada manuscrita en un archivo de Excel
 * Mostrar imágenes de un archivo de Excel en la aplicación
 
+[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
+* Obtenga información sobre cómo [agregar un origen de datos](add-data-connection.md)
+
 ## <a name="create-the-excel-file-as-a-table"></a>Creación del archivo de Excel como tabla
+
 1. En un archivo de Excel en blanco, asígnele a una columna el nombre **Image [imagen]**.
 2. Siga estos pasos para crear una tabla:    
    
@@ -77,7 +76,8 @@ En otro ejemplo, puede guardar imágenes en una cuenta de almacenamiento en nube
 
 En este ejemplo, se usa [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
 
-**NOTA** Cuando se muestran imágenes de un archivo de Excel, en la ruta de acceso a estas imágenes se deben usar barras diagonales. Cuando PowerApps guarda imágenes en una tabla de Excel (como con los pasos anteriores), la ruta de acceso usa barras diagonales inversas. De ese modo, también puede usar **SavePen_images** del ejemplo anterior. Si lo hace, cambie las rutas de acceso en la tabla de Excel para usar barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
+> [!NOTE]
+> Cuando se muestran imágenes de un archivo de Excel, en la ruta de acceso a estas imágenes se deben usar barras diagonales. Cuando PowerApps guarda imágenes en una tabla de Excel (como con los pasos anteriores), la ruta de acceso usa barras diagonales inversas. De ese modo, también puede usar **SavePen_images** del ejemplo anterior. Si lo hace, cambie las rutas de acceso en la tabla de Excel para usar barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
 
 1. Descargue [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
 2. En una hoja de cálculo de Excel, cree una tabla similar a la siguiente:

@@ -15,19 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2016
 ms.author: jamesol
-ms.openlocfilehash: 425376f218b01a9edab4dae90555b33cd1d26a80
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f8af05b00888891663da975be379211fad79c8a3
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-overview"></a>Información general sobre los entornos
 Los entornos son un concepto nuevo en PowerApps. En palabras simples, un entorno es un espacio para almacenar, administrar y compartir flujos, aplicaciones y datos empresariales de la organización. También sirven como contenedores para separar aplicaciones que pueden tener roles distintos, otros requisitos de seguridad o distintos públicos objetivos. Cómo se elige aprovechar los entornos depende de la organización y de las aplicaciones que se intenta compilar. Por ejemplo:
 
-1. Puede elegir solo compilar aplicaciones en un entorno único.
-2. Puede crear entornos separados que agrupen las versiones de prueba y producción de las aplicaciones.
-3. Puede crear entornos separados que correspondan a equipos o departamentos específicos de la empresa, donde cada uno contenga los datos y aplicaciones pertinentes para cada público.
-4. También puede crear entornos separados para las distintas ramas globales de la empresa.  
+* Puede elegir solo compilar aplicaciones en un entorno único.
+* Puede crear entornos separados que agrupen las versiones de prueba y producción de las aplicaciones.
+* Puede crear entornos separados que correspondan a equipos o departamentos específicos de la empresa, donde cada uno contenga los datos y aplicaciones pertinentes para cada público.
+* También puede crear entornos separados para las distintas ramas globales de la empresa.  
 
 ## <a name="environment-scope"></a>Ámbito del entorno
 Cada entorno se crea bajo un inquilino de Azure AD y solo los usuarios dentro de ese inquilino pueden tener acceso a sus recursos. Un entorno también está enlazado a una ubicación geográfica, como Estados Unidos. Cuando crea una aplicación en un entorno, esa aplicación se enruta solo a centros de datos en esa ubicación geográfica. Cualquier elemento que cree en ese entorno (incluidas conexiones, puertas de enlace, flujos con Microsoft Flow, etc.) también están enlazados a la ubicación de su entorno.
@@ -45,13 +45,14 @@ Los entornos tienen dos roles integrados que proporcionan acceso a los permisos 
 
 * El rol Administrador de entorno puede realizar todas las acciones administrativas en un entorno, incluidas las siguientes:
   
-  o    Agregar o quitar un usuario o grupo del rol Administrador de entorno o Creador de entorno
+    * Agregar o quitar un usuario o grupo de los roles Administrador de entorno o Creador de entorno.
   
-  o    Aprovisionar una base de datos de Common Data Service para el entorno
+    * Aprovisionar una base de datos de Common Data Service para el entorno.
   
-  o    Ver y administrar todos los recursos creados dentro de un entorno
+    * Ver y administrar todos los recursos creados en un entorno.
   
-  o    Establecer directivas para la prevención de pérdida de datos Para más información, consulte [Directivas para la prevención de pérdida de datos](prevent-data-loss.md).
+    * Establecer directivas para la prevención de pérdida de datos. Para más información, consulte [Directivas para la prevención de pérdida de datos](prevent-data-loss.md).
+
 * El rol Creador de entorno puede crear recursos dentro de un entorno, incluidas aplicaciones, conexiones, conectores personalizados, puertas de enlace y flujos con Microsoft Flow.
 
 Los creadores de entorno también pueden distribuir las aplicaciones que compilan en un entorno a otros usuarios de la organización, al compartir la aplicación con usuarios individuales, grupos de seguridad, o bien a todos los usuarios de la organización. Para más información, consulte [Compartir una aplicación en PowerApps](share-app.md).
@@ -79,9 +80,9 @@ Con la introducción de los entornos, ahora verá una experiencia nueva cuando i
 
 El selector mostrará un entorno si usted cumple con una de las siguientes condiciones:
 
-1. Es miembro del rol Administrador de entorno del entorno.
-2. Es miembro del rol Creador de entorno del entorno.
-3. No es administrador ni creador de entorno del entorno en cuestión, pero tiene acceso de "colaborador" al menos a una aplicación dentro del entorno. Para más información, consulte cómo [compartir una aplicación](share-app.md). **Nota**: En este caso, no podrá crear aplicaciones en este entorno. Solo podrá modificar las aplicaciones existentes que se compartieron con usted.
+* Es miembro del rol Administrador de entorno del entorno.
+* Es miembro del rol Creador de entorno del entorno.
+* No es administrador ni creador de entorno del entorno en cuestión, pero tiene acceso de "colaborador" al menos a una aplicación dentro del entorno. Para más información, consulte cómo [compartir una aplicación](share-app.md). En este caso, no podrá crear aplicaciones en este entorno. Solo podrá modificar las aplicaciones existentes que se compartieron con usted.
 
 ![](./media/environments-overview/EnvironmentPicker.png)
 
@@ -111,7 +112,7 @@ Cualquier usuario que haya participado en la versión preliminar de PowerApps ve
 
 | Usuario | Qué sucede |
 | --- | --- |
-| Usuario de la versión preliminar que creó una base de datos de Common Data Service |Verá un entorno llamado "Entorno de {su nombre}" que contiene la base de datos de Common Data Service que creó en la versión preliminar y cualquier aplicación que haya compilado en ella.  Se le agregará al rol Creador de entorno y Administrador de entorno de este entorno y como Propietario de base de datos de la base de datos en cuestión. Cuando PowerApps esté disponible al público general, actualizaremos los metadatos de Common Data Service. El impacto de este cambio significa que podrá seguir usando las entidades y aplicaciones que ya compiló en la base de datos de Common Data Service que creó en la versión preliminar; sin embargo, no podrá crear campos o entidades en dicha base de datos. Pronto publicaremos instrucciones sobre cómo puede crear un entorno con una base de datos que contenga los metadatos actualizados y migrar las aplicaciones a ese entorno.<br>**Nota**: Si cualquiera de las aplicaciones que compiló en la base de datos de Common Data Service en versión preliminar también usa un conector personalizado como origen de datos, se interrumpirá temporalmente en este entorno porque todos los conectores personalizados se migrarán al entorno predeterminado. Deberá volver a crear el conector personalizado en este entorno para reparar las aplicaciones afectadas. |
+| Usuario de la versión preliminar que creó una base de datos de Common Data Service |Verá un entorno llamado "Entorno de {su nombre}" que contiene la base de datos de Common Data Service que creó en la versión preliminar y cualquier aplicación que haya compilado en ella.  Se le agregará al rol Creador de entorno y Administrador de entorno de este entorno y como Propietario de base de datos de la base de datos en cuestión. Cuando PowerApps esté disponible al público general, actualizaremos los metadatos de Common Data Service. El impacto de este cambio significa que podrá seguir usando las entidades y aplicaciones que ya compiló en la base de datos de Common Data Service que creó en la versión preliminar; sin embargo, no podrá crear campos o entidades en dicha base de datos. Pronto publicaremos instrucciones sobre cómo puede crear un entorno con una base de datos que contenga los metadatos actualizados y migrar las aplicaciones a ese entorno. <br> Si cualquiera de las aplicaciones que compiló en la base de datos de Common Data Service en versión preliminar también usa un conector personalizado como origen de datos, se interrumpirá temporalmente en este entorno porque todos los conectores personalizados se migrarán al entorno predeterminado. Deberá volver a crear el conector personalizado en este entorno para reparar las aplicaciones afectadas. |
 | Usuario de versión preliminar en Estados Unidos |Los siguientes recursos que creó durante el período de versión preliminar de PowerApps estarán disponibles en el entorno predeterminado de su inquilino:<br>- Todas las aplicaciones que creó (excepto las que estén conectadas a una base de datos de Common Data Service de la versión preliminar).<br>- Todas las conexiones y los conectores personalizados que creó.<br>- Todas las puertas de enlace de datos locales que instaló. |
 | Usuario de versión preliminar fuera de Estados Unidos |Además del entorno predeterminado, también verá un entorno llamado "{Inquilino de Azure AD} (de la versión preliminar)" que contiene los recursos siguientes que creó durante el período de versión preliminar de PowerApps:<br>- Todas las aplicaciones que creó (excepto las que estén conectadas a una base de datos de Common Data Service de la versión preliminar).<br>- Todas las conexiones y los conectores personalizados que creó.<br>- Todas las puertas de enlace de datos locales que instaló.<br>Se le agregará al rol Creador de entorno de este entorno. |
 

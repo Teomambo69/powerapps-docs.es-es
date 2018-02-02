@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 6fe23146eccdbb777e4ff909671acc2882a32f37
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fe7d10a6c74b664e9829c4e78a4a9001d3fe0925
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="scan-a-barcode-in-microsoft-powerapps"></a>Examinar un código de barras en Microsoft PowerApps
 Escanee varios tipos de códigos de barras creando una aplicación y ejecutándola en un dispositivo, como un teléfono con cámara. El equivalente numérico del código de barras aparece en un control **Etiqueta**, y puede cargar esos datos en diversos [orígenes de datos](connections-list.md).
@@ -37,71 +37,83 @@ Si no está familiarizado con PowerApps, consulte [Introducción](getting-starte
 
 ## <a name="create-a-blank-app"></a>Crear una aplicación en blanco
 1. [Suscríbase a PowerApps](signup-for-powerapps.md) y, a continuación, haga lo *siguiente*:
-   
+
    * [Abra PowerApps](https://create.powerapps.com/api/start) en un explorador en un dispositivo con cámara.
    * [Instale PowerApps](http://aka.ms/powerappsinstall) desde la Tienda de Windows en un dispositivo con cámara. Abra PowerApps, inicie sesión y haga clic o pulse en **Nuevo** en el menú **Archivo** (a lo largo del borde izquierdo).
+
 2. En **Comenzar con una plantilla o un lienzo en blanco**, haga clic o pulse en **Diseño de teléfono** en el icono **Aplicación vacía**.
-   
+
     ![Crear una aplicación desde cero](./media/scan-barcode/create-from-blank.png)
+
 3. Si no ha usado PowerApps antes, familiarícese con las áreas clave de la aplicación haciendo un paseo introductorio (o haga clic o pulse en **Omitir**).
-   
+
     ![Pantalla inicial del paseo introductorio](./media/scan-barcode/quick-tour.png)
-   
-    **Nota**: Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
+
+    > [!NOTE]
+> Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
 
 ## <a name="add-a-barcode-control"></a>Agregar un control Barcode
 1. En la pestaña **Insertar**, haga clic o pulse en **Multimedia** y, a continuación, en **Barcode**.
-   
+
     ![Agregar escáner de código de barras](./media/scan-barcode/add-scanner.png)
+
 2. Asegúrese de que el control **Barcode** esté seleccionado. Para ello, confirme que se encuentra rodeado por un cuadro de selección (con controladores para cambiar el tamaño del control).
-   
+
     ![Cuadro de selección](./media/scan-barcode/selection-box.png)
+
 3. En la pestaña **Inicio**, haga clic o pulse en **Barcode1** y, a continuación, escriba o pegue **MyScanner** en **Cambiar nombre**.
-   
-    **Sugerencia**: el primer control **Barcode** que agregue tendrá el nombre **Barcode1** de forma predeterminada. Si elimina ese control y agrega otro control **Barcode**, se denominará **Barcode2** de forma predeterminada. Al cambiar manualmente el nombre de un control, se asegura de que las fórmulas harán referencia al control por su nombre correcto.
-   
+
+    > [!TIP]
+> El primer control **Barcode** que agregue tendrá el nombre **Barcode1** de forma predeterminada. Si elimina ese control y agrega otro control **Barcode**, se denominará **Barcode2** de forma predeterminada. Al cambiar manualmente el nombre de un control, se asegura de que las fórmulas harán referencia al control por su nombre correcto.
+
     ![Cambiar el nombre del control de código de barras](./media/scan-barcode/rename-barcode.png)
 
 ## <a name="add-a-text-input-control"></a>Agregar un control Text input
 1. En la pestaña **Insertar**, haga clic o pulse en **Text**, y, a continuación, en **Text input**.
-   
+
     Si la pestaña **Insertar** no aparece, maximice la ventana de PowerApps.
-   
+
     ![Agregar un control Text input](./media/scan-barcode/add-text-input.png)
+
 2. Arrastre el cuadro de selección (no los controladores de cambio de tamaño) alrededor del control **Text input** hacia abajo hasta que aparezca debajo de **MyScanner**.
-   
+
     ![Etiqueta con el cuadro de selección](./media/scan-barcode/move-input-text.png)
+
 3. Con el control **Text input** aún seleccionado, asegúrese de que aparece **Default** en la lista de propiedades y, a continuación, escriba o pegue **MyScanner.Text** en la barra de fórmulas.
-   
+
     ![Propiedad Texto del control Etiqueta](./media/scan-barcode/default-text.png)
 
 ## <a name="change-the-barcode-type"></a>Cambiar el tipo de código de barras
 1. En la pestaña **Insertar**, pulse o haga clic en **Controles** y, a continuación, en **Drop down**.
-   
+
     ![Agregar lista desplegable](./media/scan-barcode/insert-dropdown.png)
+
 2. Mueva el control **Drop down** de forma que aparezca debajo de los otros controles en la pantalla.
-   
+
     ![Mover lista desplegable](./media/scan-barcode/move-dropdown.png)
+
 3. Con el control **Drop down** aún seleccionado, asegúrese de que la lista de propiedades muestra **Items** y, a continuación, escriba o pegue esta cadena de texto en la barra de fórmulas:<br>
     **[Codabar, Code128, Code39, Ean, I2of5, Upc]**
-   
+
     ![Establecer la propiedad Items de la lista desplegable](./media/scan-barcode/items-property.png)
+
 4. En la pestaña **Inicio**, cambie el nombre del control **Drop down** a **ChooseType**.
-   
+
     ![Cambiar el nombre de la lista desplegable](./media/scan-barcode/rename-dropdown.png)
+
 5. Haga clic o pulse en **MyScanner** para seleccionarlo, asegúrese de que la lista de propiedades muestra **BarcodeType** y, a continuación, escriba o pegue esta cadena en la barra de fórmula:<br>
     **ElegirTipo.Valor.Seleccionado**
 
 ## <a name="test-the-app"></a>Probar la aplicación
 1. Para abrir el modo de vista previa, presione F5 (o haga clic o pulse en el icono de reproducción situado cerca de la esquina superior derecha).
-   
+
     ![Abrir el modo de vista previa](./media/scan-barcode/open-preview.png)
+
 2. Mantenga el código de barras en la cámara del dispositivo hasta que aparezca el componente numérico de la barra de código en el control **Etiqueta**.
-   
+
     Si no aparece el componente numérico, pruebe una opción distinta en la lista **BarcodeType**. Si siguen sin aparecer los datos correctos, escriba el número correcto en el control **Input text**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Conecte la aplicación a un origen de datos](add-data-connection.md) y configure la función **[Patch](functions/function-patch.md)** de forma que los usuarios puedan guardar los resultados.
 * Agregue un control **[Drop down](controls/control-drop-down.md)** y configúrelo para que los usuarios puedan elegir el tipo de código de barras que deseen examinar.
 * Agregue un control **[Slider](controls/control-slider.md)** y configúrelo para que los usuarios puedan ajustar la frecuencia de exploración o el alto del control **Barcode**.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: f99c293184a33ea204f21462badb5e6eb498ee40
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0d46a203c6381285c281e745dae8554896aee95a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -30,9 +30,7 @@ Puede mostrar esta información en una etiqueta en la aplicación. Por ejemplo, 
 
 En este tema se muestra cómo utilizar la conexión de Twitter, cómo usar la conexión de Twitter en una aplicación y cómo enumerar las funciones disponibles.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Conexión a Twitter
 1. Abra PowerApps, seleccione **Nuevo** y cree una **aplicación vacía**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  
@@ -72,7 +70,8 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
      
        El control de galería muestra automáticamente los tweets del identificador de Twitter que ha escrito.
      
-     **Sugerencia** Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una cronología.
+     > [!TIP]
+> Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
 3. Establezca la propiedad **Elementos** de la galería en `Twitter.HomeTimeline()`.
    
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
@@ -100,7 +99,8 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
      
        El control de galería muestra automáticamente quién está siguiendo el identificador de Twitter que ha escrito.
      
-     **Sugerencia** Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una cronología.
+     > [!TIP]
+> Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
 2. Establezca la propiedad **Elementos** de la galería en `Twitter.MyFollowers()`.
    
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
@@ -158,7 +158,8 @@ O bien, puede utilizar un control de texto de entrada para escribir un identific
    
     O bien, puede utilizar un control **Entrada de texto** para escribir un término de búsqueda, tal y como se dispone a lo largo de este tema.
    
-    **Sugerencia** Muestre los cinco primeros resultados mediante maxResults:  
+    > [!TIP]
+> Muestre los cinco primeros resultados mediante maxResults:  
    
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.

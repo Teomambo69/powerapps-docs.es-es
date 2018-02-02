@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 39cf496539a1db041a0ba025bd46a9f858200aee
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ff2c45b1d15bdb6d937756b5e7ed00e5c9e9fdfa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones en AppSource
 ¿Es un apasionado de la creación de aplicaciones en PowerApps? ¿Tiene una aplicación que le gustaría compartir con los clientes? Ahora se admiten soluciones de versiones de prueba de PowerApps en [AppSource.com](https://appsource.microsoft.com) como una manera de compartir aplicaciones con los clientes y generar clientes potenciales para su empresa.
@@ -93,7 +93,8 @@ UpdateIf(SiteInspectorCollect,ID=record.ID,
 RemoveIf(SiteInspectorCollect,ID=record.ID)
 ```
 
-**Nota**: las colecciones contienen datos solo mientras se ejecuta la aplicación; los cambios se descartan cuando se cierra la aplicación.
+> [!NOTE]
+> Las colecciones contienen datos solo mientras se ejecuta la aplicación; los cambios se descartan cuando se cierra la aplicación.
 
 En resumen, puede crear una versión de la aplicación con datos insertados, que simula la experiencia de la aplicación con conexión a datos externos. Después de insertar los datos, estará listo para publicar la aplicación como una solución de versión de prueba en AppSource.com.
 

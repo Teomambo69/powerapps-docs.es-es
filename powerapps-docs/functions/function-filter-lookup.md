@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: f06c242d7eed3d7519af829400708362ab1a77d6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f55b66e615b79852b86cc5ea88ee9fbef321f8aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Funciones Filtrar, Buscar y Búsqueda en PowerApps
 Busca uno o varios [registros](../working-with-tables.md#records) en una [tabla](../working-with-tables.md).
@@ -31,7 +31,7 @@ La función **Búsqueda** busca el primer registro de una tabla que satisface un
 
 En ambos casos, la fórmula se evalúa para cada registro de la tabla.  Los registros que dan como resultado *true* se incluyen en el resultado.  Además de los [operadores](operators.md) de la fórmula normal, puede usar los operadores **[in](operators.md#in-and-exactin-operators)** y **[exactin](operators.md#in-and-exactin-operators)** para las coincidencias de subcadenas.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 La función **Buscar** busca registros en una tabla que contengan una cadena en una de sus columnas. La cadena puede estar en cualquier lugar dentro de la columna. Por ejemplo, si busca "rob" o "bert" encontrará una coincidencia en una columna que contiene "Roberto". La búsqueda no distingue mayúsculas de minúsculas. A diferencia de **Filtrar** y **Búsqueda**, la función **Buscar** usa solo una cadena de coincidencia en lugar de una fórmula.
 
@@ -39,7 +39,7 @@ La función **Buscar** busca registros en una tabla que contengan una cadena en 
 
 Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una cadena o un número. Se pueden pasar a funciones y las funciones pueden devolverlas.  Las funciones **Filtrar**, **Buscar** y **Búsqueda** no modifican la tabla. En vez de eso, usan la tabla como argumento y devuelven una tabla, un registro o un solo valor de ella. Consulte cómo [trabajar con tablas](../working-with-tables.md) para más detalles.
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>Sintaxis
 **Filtrar**( *Table*, *Formula1* [, *Formula2*, ... ] )
@@ -53,7 +53,8 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 * *SearchString*: requerido. La cadena que se va a buscar. Si está *en blanco* o es una cadena vacía, se devolverán todos los registros.
 * *Column(s)*: requerido. Los nombres de las columnas dentro de *Table* que se van a buscar. Las columnas en las que se va a buscar deben contener texto. Los nombres de las columnas deben ser cadenas e ir entre comillas dobles. Sin embargo, los nombres de las columnas deben ser estáticos y no se pueden calcular con una fórmula. Si se encuentra *SearchString* dentro de los datos de cualquiera de estas columnas como una coincidencia parcial, se devolverá el registro completo.
 
-**Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+> [!NOTE]
+> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 **Búsqueda**( *Table*, *Formula* [, *ReductionFormula* ] )
 

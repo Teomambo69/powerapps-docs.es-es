@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/28/2017
 ms.author: jamesol
-ms.openlocfilehash: 2d25e6ddbaf15991655ffa94bbf9578946504f0e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8c2745a47b742ccc5f21f3302c39546edd361242
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migración de aplicaciones entre entornos e inquilinos mediante empaquetado
 Obtenga información sobre cómo migrar recursos de un entorno a otro mediante empaquetado. Estos entornos pueden estar en el mismo inquilino o en varios distintos.
@@ -35,7 +35,7 @@ Al exportar una aplicación, en el paquete también se exportan los recursos dep
 | Tipo de recurso | Admitido | Opciones de importación |
 | --- | --- | --- |
 | App |Sí |Hay dos opciones para importar una aplicación en un entorno: <ol><li><b>Crear una nueva</b>: la aplicación se creará como una nueva aplicación en el entorno donde se importe el paquete.</li> <li><b>Actualizar</b>: la aplicación ya existe en el entorno y se actualizará al importar este paquete.</li></ol> |
-| Flujo |Sí |Hay dos opciones para importar un flujo en un entorno: <ol><li><b>Crear uno nuevo</b>: el flujo se creará como un flujo nuevo en el entorno donde se importe el paquete.</li> <li><b>Actualizar</b>: el flujo ya existe en el entorno y se actualizará al importar este paquete.</li></ol> <div> <i> NOTA: Todos los recursos de los que el flujo depende también se incluirán en el paquete de aplicación que se exporte, y deberán configurarse cuando se importe el paquete.</i> |
+| Flujo |Sí |Hay dos opciones para importar un flujo en un entorno: <ol><li><b>Crear uno nuevo</b>: el flujo se creará como un flujo nuevo en el entorno donde se importe el paquete.</li> <li><b>Actualizar</b>: el flujo ya existe en el entorno y se actualizará al importar este paquete.</li></ol> <b>Nota: </b>Todos los recursos de los que el flujo depende también se incluirán en el paquete de aplicación que se exporte y deberán configurarse cuando se importe el paquete. |
 | Listas desplegables y personalizaciones de entidades CDS |Sí |Hay dos opciones para importar listas desplegables o entidades CDS en un entorno: <ol><li><b>Sobrescribir</b>: si hay un recurso con el mismo nombre, esta importación lo reemplazará. Si no existe ningún un recurso que coincida, se creará un nuevo recurso. <li><b>Combinar</b>: si hay una entidad o lista de selección con el mismo nombre, se agregarán los nuevos campos o entradas, pero no se quitarán los campos o las entradas que falten.</li></ol> |
 | Conectores personalizados |No |Si una aplicación depende de un conector personalizado, actualmente <b>no</b> se admite la exportación del conector como parte del paquete. <p></p> Si tiene una aplicación que depende de un conector personalizado, la única opción en este momento es volver a crear o actualizar manualmente el conector en el entorno de destino y seleccionar dicho conector al importar el paquete. |
 | Conexiones |No |Si una aplicación depende de una conexión (por ejemplo, una conexión SQL con credenciales), actualmente se admite la exportación de la conexión o las credenciales como parte del paquete. <p></p> Si tiene una aplicación que depende de una conexión compartida (como SQL), la única opción en este momento es volver a crear manualmente esa conexión en el entorno de destino con las credenciales apropiadas, y seleccionar dicha conexión al importar el paquete. |
@@ -50,7 +50,8 @@ La capacidad para importar una aplicación está disponible para cualquier usuar
 
 Un usuario debe tener un plan 2 de PowerApps o una licencia de evaluación gratuita del plan 2 de PowerApps para exportar o importar cualquier aplicación.
 
-*NOTA: Mientras el empaquetado esté en versión preliminar, todos los usuarios con una licencia válida de PowerApps podrán probarlo en sus aplicaciones y entornos.*
+> [!NOTE]
+> Mientras el empaquetado esté en versión preliminar, todos los usuarios con una licencia válida de PowerApps podrán probarlo en sus aplicaciones y entornos.
 
 ## <a name="exporting-an-app"></a>Exportación de una aplicación
 1. En http://web.powerapps.com, pulse o haga clic en **Aplicaciones**, seleccione el botón de puntos suspensivos de la aplicación que desea migrar y, a continuación, seleccione **Exportar (versión preliminar)**.
@@ -62,6 +63,7 @@ Un usuario debe tener un plan 2 de PowerApps o una licencia de evaluación gratu
 3. En la sección “Revisar el contenido del paquete”, puede agregar también comentarios o notas, o cambiar la configuración de cómo se importará cada recurso individual en el entorno de destino durante la importación del paquete.
    
     ![Configuración del contenido del paquete](./media/environment-and-tenant-migration/export-package-content.png)
+
 4. Cuando termine, seleccione **Exportar** y el archivo de paquete comienzará a descargarse en cuestión de segundos.
 
 ## <a name="importing-an-app"></a>Importación de una aplicación
@@ -81,7 +83,8 @@ Un usuario debe tener un plan 2 de PowerApps o una licencia de evaluación gratu
    
     ![Revisión de los resultados de la importación](./media/environment-and-tenant-migration/import-results.png)
 
-> **NOTA** Si está importando una aplicación y decidió **Actualizar** una aplicación existente, los nuevos cambios se guardarán como un borrador de las aplicaciones.  Deberá [publicar](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) los cambios en orden para que estén disponibles todos los demás usuarios de las aplicaciones.
+> [!NOTE]
+>  Si va a importar una aplicación y decidió **actualizar** una aplicación existente, los nuevos cambios se guardarán como borrador de las aplicaciones.  Deberá [publicar](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) los cambios en orden para que estén disponibles todos los demás usuarios de las aplicaciones.
 > 
 > 
 

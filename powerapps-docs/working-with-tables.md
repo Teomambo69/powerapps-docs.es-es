@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6af28020810394c90c86f87fc40e3cbe9c75a877
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
 Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
@@ -63,7 +63,8 @@ Todos los valores de una columna son del mismo tipo de datos. En el ejemplo ante
 
 Es posible que en otras herramientas haya hecho referencia a las columnas con el término "campos".
 
-**Nota:** Para orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, PowerApps los sustituye por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+> [!NOTE]
+> En los orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, PowerApps los sustituirá por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 ### <a name="table"></a>Tabla
 Una tabla consta de uno o varios registros, cada uno con varios campos que tienen nombres coherentes entre los registros.
@@ -96,17 +97,18 @@ Se van a analizar algunos ejemplos sencillos.
    
     De forma predeterminada, la galería muestra texto de marcador de posición de una tabla denominada **EjemploGaleríaTextual**. La propiedad **[Elementos](controls/properties-core.md)** de la galería se establece automáticamente en dicha tabla.
    
-    **Nota:** algunos controles se han reorganizado y ampliado con fines meramente ilustrativos.
+    > [!NOTE]
+> Algunos controles se han reorganizado y ampliado con fines meramente ilustrativos.
    
     ![](media/working-with-tables/gallery-items.png)
 2. En lugar de establecer la propiedad **[Elementos](controls/properties-core.md)** con el nombre de la tabla, defina una fórmula que incluya el nombre de la tabla como un argumento, como en este ejemplo:<br>
-   **Ordenar(EjemploGaleríaTextual, Encabezado, Descendente)**
+   **Sort(TextualGallerySample, Heading, Descending)**
    
     Esta fórmula incorpora la función **[Ordenar](functions/function-sort.md)**, que considera el nombre de una tabla como su primer argumento y el nombre de una columna de dicha tabla como su segundo argumento. La función también admite un tercer argumento opcional, que estipula que desea ordenar los datos en orden descendente.
    
     ![](media/working-with-tables/gallery-items-sort.png)
 3. Defina la propiedad **[Elementos](controls/properties-core.md)** con una fórmula que considere la fórmula del paso anterior como un argumento y devuelve una tabla, como en este ejemplo:<br>
-   **FirstN(Ordenar(EjemploGaleríaTextual, Encabezado, Descendente), 2)**
+   **FirstN(Sort(TextualGallerySample, Heading, Descending), 2)**
    
     En esta fórmula, use la función **[FirstN](functions/function-first-last.md)** para mostrar un número concreto de registros de una tabla. Se usa la función **[Ordenar](functions/function-sort.md)** como el primer argumento de **[FirstN](functions/function-first-last.md)** y un número (en este caso, **2**) como el segundo argumento, que especifica la cantidad de registros que se van a mostrar.
    
@@ -149,7 +151,9 @@ También puede generar una fórmula que calcula los datos de un registro individ
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>
     **Recopilar( RegistroSeleccionado, Galería1.Seleccionada )**
+
 2. Si el botón no está seleccionado, haga clic en él para seleccionarlo y después vuelva a hacer clic en él para ejecutar la fórmula.
+
 3. En el menú **Archivo**, seleccione **Colecciones**.
 
 ![](media/working-with-tables/selected-collection.png)
@@ -159,6 +163,7 @@ Esta fórmula devuelve un registro que incluye no solo los datos del registro qu
 Ahora que tiene el registro seleccionado, puede extraer campos individuales de él con el operador **.** .
 
 1. Presione Esc para volver al área de trabajo predeterminada y después agregue una etiqueta debajo de la galería.
+
 2. Defina la propiedad **[Texto](controls/properties-core.md)** de la etiqueta con esta fórmula:<br>
     **Galería.Seleccionada.Encabezado**
    
@@ -232,8 +237,8 @@ Tenga en cuenta que en la fórmula anterior, se han usado comillas dobles (") en
 ### <a name="disambiguation"></a>Anulación de ambigüedades
 Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [**@** de anulación de ambigüedades](functions/operators.md):
 
-* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla*[@*NombreCampo*]**.  
-* Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*NombreObjeto*]** (sin designar ninguna tabla).
+* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón **Tabla*[@*FieldName*]**.  
+* Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*]** (sin designar ninguna tabla).
 
 Si la tabla en la que se opera es una expresión, como **Filtrar( *tabla*, ... )**, entonces no se puede utilizar el operador de anulación de ambigüedades.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
 
