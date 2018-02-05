@@ -15,17 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 51b0045bd8b5e83f754c4d68e1dfe63566371ae1
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="pdf-viewer-control-in-powerapps"></a>Control Visor de archivos PDF en PowerApps
 Un control que muestra el contenido de un archivo PDF.
 
 ## <a name="description"></a>Descripción
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
+
+## <a name="limitations"></a>Limitaciones
+Tenga en cuenta que, dada a la arquitectura de seguridad de PowerApps, el visor de PDF solo admite vínculos HTTPS, no HTTP.  
+Si el documento PDF reside en un servidor con configuración de CORS con restricciones, es posible que no pueda verlo en su aplicación.  Si el documento no se puede abrir en PowerApps, se brinda al usuario final la posibilidad de abrirlo en un explorador externo.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Documento**: la dirección URL entre comillas dobles, de un archivo PDF.
@@ -94,8 +98,7 @@ Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorpor
 ## <a name="example"></a>Ejemplo
 * Agregue un control **Visor de archivos PDF** y establezca su propiedad **Documento** en la dirección URL, entre comillas dobles, de un archivo PDF, como en este ejemplo:<br>
   **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
-  
-    El control mostrará el archivo PDF.
-  
-    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
+    El control mostrará el archivo PDF.
+
+    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?

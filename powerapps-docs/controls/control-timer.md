@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c84eec1bdd541429d4524640d9e1ffa649b895fd
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -30,7 +30,7 @@ Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparec
 Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesita obtener una vista previa de la aplicación.  Esto permite al usuario configurar el temporizador en el diseñador sin restricciones de tiempo.
 
 ## <a name="key-properties"></a>Propiedades principales
-**Duración**: tiempo de ejecución del temporizador.
+**Duración**: el tiempo durante el que se ejecuta un temporizador, en milisegundos.  No hay valor máximo.
 
 **AlFinalizarTemporizador**: respuesta de la aplicación al finalizar la ejecución del temporizador.
 
@@ -113,29 +113,28 @@ Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesi
 ## <a name="examples"></a>Ejemplos
 ### <a name="show-a-countdown"></a>Mostrar una cuenta atrás
 1. Agregue un temporizador y asígnele el nombre **Countdown**.
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Establezca la propiedad **Duration** en **10000** y sus propiedades **Repetir** e **IniciarAutomáticamente** en **true**.
 3. (opcional) Configure la propiedad  **[Altura](properties-size-location.md)**  en **160**, su propiedad  **[Altura](properties-size-location.md)**  en **600** y su propiedad  **[Size](properties-text.md)**  en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
    <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000, 0)**
-   
+
     ¿Desea más información sobre la función **[RedondearMas](../functions/function-round.md)** u [otras funciones](../formula-reference.md)?
-   
+
     La etiqueta muestra cuántos segundos quedan para que se reinicie el temporizador.
 5. (opcional) Establezca la propiedad **[Visible](properties-core.md)** del temporizador en **false**.
 
 ### <a name="animate-a-control"></a>Animar un control
 1. Agregue un temporizador y asígnele el nombre **FadeIn**.
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Establezca la propiedad **Duration** en **5000** y sus propiedades **Repetir** e **IniciarAutomáticamente** en **true**.
 3. (opcional) Configure la propiedad  **[Altura](properties-size-location.md)**  en **160**, su propiedad  **[Altura](properties-size-location.md)**  en **600** y su propiedad  **[Size](properties-text.md)**  en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** para que muestre el mensaje **Welcome!** y establezca su propiedad **[Color](properties-color-border.md)** con esta fórmula:
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
-   
+
     ¿Desea más información sobre la función **[ColorFade](../functions/function-colors.md)** u [otras funciones](../formula-reference.md)?
-   
+
     El texto de la etiqueta se difumina a blanco, recupera su intensidad y el proceso se repite.
 5. (opcional) Establezca la propiedad **[Visible](properties-core.md)** del temporizador en **false**.
-
