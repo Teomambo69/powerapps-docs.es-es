@@ -86,7 +86,7 @@ Los controles de esta pantalla tienen otra opción. Pueden utilizar una referenc
 ## <a name="disambiguation-operator"></a>Operador de desambiguación
 Algunas funciones crean [ámbitos de registro](../working-with-tables.md#record-scope) para acceder a los campos de la tabla mientras se procesa cada registro, como **Filtrar**, **AddColumns** y **Suma**.  Los nombres de campo agregados con el ámbito de registro invalidan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador de desambiguación **@**:
 
-* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón **Tabla*[@*FieldName*]**.  
+* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla*[@*FieldName*]**.  
 * Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*]** (sin designar ninguna tabla).
 
 Para más información y ejemplos, vea la explicación acerca de los [ámbitos de registro](../working-with-tables.md#record-scope).
