@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: 7a81e7287f2891e428062241d747ea451dff9e10
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-an-app-from-scratch"></a>Crear una aplicación desde cero
 Cree su propia aplicación desde cero mediante cualquiera de los orígenes de datos existentes. Posteriormente, podrá agregar más orígenes si lo desea. Especifique la apariencia y el comportamiento de cada elemento de la interfaz de usuario para que pueda obtener el mejor resultado de acuerdo con sus objetivos y el flujo de trabajo especificados. Este enfoque es mucho más lento que [crear una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden crear aplicaciones mejor adaptadas a sus necesidades.
@@ -51,7 +51,7 @@ Puede consultar este tutorial para ver los conceptos generales o puede seguirlo 
 
 2. Dé a los datos un formato de tabla, llamada **Programa**, para que PowerApps pueda analizar la información.
 
-    Para más información, consulte [Crear o eliminar una tabla de Excel](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    Para más información, consulte [Crear o eliminar una tabla de Excel](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 
 3. Guarde el archivo con el nombre **eventsignup.xls**y, a continuación, cárguelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
 

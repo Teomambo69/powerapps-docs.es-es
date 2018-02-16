@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fb750e6345c6aa576e378134ed98be92c234a86b
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6696f03be879e1c6f764cc444aa874e0b4a73905
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Configurar alertas de datos para el panel de Power BI
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta. Para más información sobre las alertas, consulte [Alertas de datos en el servicio Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts).
+En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta. Para más información sobre las alertas, consulte [Alertas de datos en el servicio Power BI](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
 ## <a name="step-1-create-an-alert"></a>Paso 1: Creación de una alerta
 1. En el servicio Power BI, abra el panel que creó en la última tarea.

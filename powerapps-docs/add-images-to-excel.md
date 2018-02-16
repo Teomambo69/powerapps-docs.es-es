@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: sharik
-ms.openlocfilehash: f3e5fdce6948928cdd393e7a9933b3261af4e3f6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 75b3315833fc6ced9ef3d8eb252d0f8639ccd696
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Agregar imágenes en Excel desde PowerApps
 Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o eliminar imágenes de archivos o dibujos desde un control de **entrada manuscrita**. La aplicación necesita un archivo de Excel que debe crearse y cargarse en una cuenta de almacenamiento en la nube.
@@ -26,7 +26,7 @@ Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o e
 ## <a name="prerequisites"></a>Requisitos previos
 
 * Es necesario tener conocimientos acerca de cómo [agregar y configurar controles](add-configure-controls.md).
-* Es necesario tener conocimientos acerca de cómo [configurar los datos de Excel como tabla](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US).
+* Es necesario tener conocimientos acerca de cómo [configurar los datos de Excel como tabla](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US).
 * [PowerApps debe tener conexión ](add-data-connection.md) con una cuenta de almacenamiento en la nube (como Dropbox, OneDrive o Google Drive) en la que se pueda guardar un archivo de Excel.
 
 ## <a name="create-the-data-source-and-the-app"></a>Crear el origen de datos y la aplicación

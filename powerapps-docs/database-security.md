@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: kfend
-ms.openlocfilehash: a8c13158ab2c3f152aa99357684c818f48e637ae
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: ea4fc21eb98ddb4861739559062f01190fb14819
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configure-database-security"></a>Configurar seguridad de base de datos
 Common Data Service usa un modelo de seguridad basado en rol que ayuda a proteger el acceso a la base de datos. En este tema se explica cómo crear los artefactos de seguridad necesarios para ayudarle proteger una aplicación. Estos roles de usuario controlan el acceso en tiempo de ejecución a los datos y son independientes de los roles de entorno que rigen los administradores de entorno y los creadores de entorno. Para obtener información general acerca de los entornos, consulte [Environments overview](environments-overview.md) (Introducción a los entornos).
@@ -32,7 +32,7 @@ Es importante que sepa el nivel de acceso a estas entidades que necesitan los us
 
 Los dos niveles de permiso que se usan con más frecuencia son el acceso de solo lectura y el acceso total. Common Data Service incluye conjuntos de permisos en estos dos niveles de permisos para todas sus entidades. Los conjuntos de permisos de visualización proporcionan acceso de lectura a una entidad. Los conjuntos de permisos de mantenimiento proporcionan acceso completo a una entidad.
 
-El modelo de seguridad permite cualquier combinación de estos permisos que se asignarán a un rol de usuario. Los roles combinan los distintos permisos concedidos en los conjuntos de permisos que se les han agregado. Por lo tanto, los miembros de un rol pueden acceder a todos los datos a los que tienen acceso los conjuntos de permisos que se incluyen en el rol. Para más información acerca del modelo de seguridad de Common Data Service, consulte [Modelo de seguridad](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model).
+El modelo de seguridad permite cualquier combinación de estos permisos que se asignarán a un rol de usuario. Los roles combinan los distintos permisos concedidos en los conjuntos de permisos que se les han agregado. Por lo tanto, los miembros de un rol pueden acceder a todos los datos a los que tienen acceso los conjuntos de permisos que se incluyen en el rol. Para más información acerca del modelo de seguridad de Common Data Service, consulte [Modelo de seguridad](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
 
 ## <a name="identify-the-entities"></a>Identificación de las entidades
 Para configurar los controles de acceso correctos para una aplicación, debe saber qué entidades usa la aplicación. Para ver una lista de las entidades que usa una aplicación, siga estos pasos.

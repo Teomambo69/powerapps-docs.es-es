@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 40feb1f2412408e732be91e649ab2b4c54e4ba98
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
 
 * Aprender a crear aplicaciones empresariales y flujos de trabajo con la funcionalidad completa de PowerApps y Microsoft Flow.
 * Conectar a cualquier origen de datos mediante alguno de nuestros más de cien [conectores listos para su uso](connections-list.md) o creando sus propios [conectores personalizados](register-custom-api.md).
-* Explorar cómo utilizar [Common Data Service](https://docs.microsoft.com/en-us/common-data-service/entity-reference/introduction) para crear aplicaciones de negocio con el modelo de datos común y [el SDK](https://aka.ms/eek20s).
+* Explorar cómo utilizar [Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) para crear aplicaciones de negocio con el modelo de datos común y [el SDK](https://aka.ms/eek20s).
 * Exportar las soluciones creadas en su entorno individual y [mostrarlas en AppSource](dev-appsource-test-drive.md) para que los clientes puedan usar una versión de prueba.
 
 ## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>¿Quién puede registrarse en el Plan de la comunidad de PowerApps?

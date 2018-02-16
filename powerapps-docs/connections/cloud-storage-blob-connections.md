@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 665a772807179b2a33d6d47bb09483ebed69ed45
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -30,7 +30,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
 
 [!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
-* Un archivo de Excel con datos [con formato de tabla](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
+* Un archivo de Excel con datos [con formato de tabla](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
   
   1. Abra el archivo de Excel y seleccione cualquier celda de los datos que desea utilizar.
   2. En la pestaña **Insertar**, seleccione **Tabla**.
@@ -87,7 +87,7 @@ Si desea compartir una carpeta de Dropbox, la carpeta compartida debe asociarse 
 Hay [ciertas limitaciones](#sharing-excel-tables) con los conectores relacionados con archivos de Excel.
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
-Si aparece un mensaje de **tipo de datos no admitido** o **no tiene el formato de tabla** cuando intenta utilizar una conexión de Excel en la aplicación, [dé formato a los datos como tabla](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+Si aparece un mensaje de **tipo de datos no admitido** o **no tiene el formato de tabla** cuando intenta utilizar una conexión de Excel en la aplicación, [dé formato a los datos como tabla](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 
 Si los datos de Excel incluyen una columna calculada, no podrá utilizarlo para crear la aplicación y no podrá agregar datos a una aplicación existente.
 

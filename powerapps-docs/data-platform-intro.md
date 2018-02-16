@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: da01fe6e89e64e07b5ce4eb0350bc2ac1f54ff30
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>Descripción de las entidades de Common Data Service
 
@@ -72,7 +72,7 @@ Todas las entidades, ya sean estándar o personalizadas, se crean con un conjunt
 Cada entidad estándar contiene un conjunto de campos predeterminados que no se pueden cambiar ni eliminar. Para obtener una lista de las entidades y sus campos, y una lista de las listas desplegables, consulte [Entidades estándares](https://docs.microsoft.com/common-data-service/entity-reference/standard-entities).
 
 ### <a name="custom-fields"></a>Campos personalizados
-Puede crear campos personalizados en una entidad estándar o en una entidad personalizada. Debe especificar el nombre, el nombre para mostrar y el tipo de datos de cada campo personalizado. Para obtener una lista completa de los tipos compatibles, consulte [Entity field data types](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types) (Tipos de datos del campo Entidad).
+Puede crear campos personalizados en una entidad estándar o en una entidad personalizada. Debe especificar el nombre, el nombre para mostrar y el tipo de datos de cada campo personalizado. Para obtener una lista completa de los tipos compatibles, consulte [Entity field data types](https://docs.microsoft.com/common-data-service/entity-reference/field-data-types) (Tipos de datos del campo Entidad).
 
 ## <a name="lookup-relationships"></a>Relaciones de búsqueda
 Puede navegar entre los registros de las entidades si tienen una relación que se define como un campo del tipo de datos **Buscar**. Para crear una relación de búsqueda, agregue un campo del tipo de datos **Buscar** a una entidad y apunte a la entidad en la que desea buscar información. Para más información, consulte [Relaciones de entidad mediante un campo de búsqueda](data-platform-entity-lookup.md).

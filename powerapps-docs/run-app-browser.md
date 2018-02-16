@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/16/2018
 ms.author: litran
-ms.openlocfilehash: 0aff680aa5b8840330ee3a1758a895785f05da6f
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a833bc4a0364ccf427815cd75b43fad0f971c3e6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="use-powerapps-in-a-web-browser"></a>Usar PowerApps en un explorador web
 Si crea una aplicación en PowerApps, puede ejecutar esa aplicación en un explorador abriendo [Dynamics 365](https://home.dynamics.com) y, a continuación, haciendo clic o pulsando en el icono de la aplicación en la página principal.
 
 > [!NOTE]
-> Puede encontrar información general acerca de [Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/) o [ponerse en contacto con el soporte técnico](https://www.microsoft.com/en-us/dynamics365/contact-us) si tiene alguna pregunta acerca de una aplicación de Dynamics 365, como la de ventas.
+> Puede encontrar información general acerca de [Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/) o [ponerse en contacto con el soporte técnico](https://www.microsoft.com/dynamics365/contact-us) si tiene alguna pregunta acerca de una aplicación de Dynamics 365, como la de ventas.
 
 Se admiten los siguientes exploradores y sistemas operativos:
 

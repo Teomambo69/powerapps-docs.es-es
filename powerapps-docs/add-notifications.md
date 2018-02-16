@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6b3bab666ddd842c868dfdac752cd8897a5427b2
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -141,5 +141,5 @@ PowerAppsNotification.SendPushNotification(
 * Las notificaciones muestran el icono de PowerApps genérico, en lugar de un icono específico de la aplicación.
 * Cuando se utiliza Microsoft Flow, no se pueden enviar notificaciones push a varios destinatarios a la vez.
 
-Para obtener información de referencia, consulte el artículo [PowerApps Notification (versión preliminar)](https://docs.microsoft.com/en-us/connectors/powerappsnotification/).
+Para obtener información de referencia, consulte el artículo [PowerApps Notification (versión preliminar)](https://docs.microsoft.com/connectors/powerappsnotification/).
 

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e789a253a2c1d52cc85dadc6f532604021f6b004
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 
@@ -42,7 +42,7 @@ En este tutorial se hará lo siguiente:
    2. En la cinta **Insertar**, seleccione **Tabla**.
    3. En la ventana de diálogo, seleccione **La tabla tiene encabezados** y, luego, **Aceptar**.
       
-      Ahora, el archivo de Excel tiene formato de tabla. El artículo sobre cómo [dar formato de tabla a los datos](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370) proporciona información adicional sobre el formato de tabla en Excel.
+      Ahora, el archivo de Excel tiene formato de tabla. El artículo sobre cómo [dar formato de tabla a los datos](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370) proporciona información adicional sobre el formato de tabla en Excel.
    4. Asigne a la tabla el nombre **Drawings**:  
       
       ![Cambio del nombre de la tabla a Drawings](./media/tutorial-working-with-images-in-excel/drawings-table.png)

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 892f434d54c723d8de4ad6e9a48ced05cf23b311
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Crear una base de datos de Common Data Service
 Puede crear una base de datos y aplicaciones usando Common Data Service como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como administrador. Además, debe tener asignada la licencia adecuada. Para más información sobre la compra de un plan para utilizar Common Data Service, consulte la [información sobre los precios](pricing-billing-skus.md).
@@ -65,7 +65,7 @@ De forma predeterminada, una base de datos se crea en modo de acceso abierto. En
    * Para deshabilitar la seguridad, seleccione **Open access** (Acceso abierto).
 
 ## <a name="license-and-security-permissions"></a>Licencia y permisos de seguridad
-Para crear una base de datos, debe ser administrador en el entorno seleccionado y tener asignada la licencia correspondiente. En el entorno, puede configurar más permisos de seguridad para otros usuarios mediante la pestaña **Seguridad**. Para más información, consulte [Configurar seguridad de base de datos](database-security.md) y [Modelo de seguridad](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model).
+Para crear una base de datos, debe ser administrador en el entorno seleccionado y tener asignada la licencia correspondiente. En el entorno, puede configurar más permisos de seguridad para otros usuarios mediante la pestaña **Seguridad**. Para más información, consulte [Configurar seguridad de base de datos](database-security.md) y [Modelo de seguridad](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
 Con el modelo de datos común de Microsoft PowerApps, recopilamos y almacenamos los nombres de los campos y las entidades personalizadas en nuestros sistemas de diagnóstico.  Usamos esta información para mejorar el modelo de datos común para nuestros clientes. Los nombres de entidades y de campos creados nos servirán para comprender qué escenarios son habituales en toda la comunidad de Microsoft PowerApps y determinar las carencias en la cobertura de entidades estándar del servicio, por ejemplo, los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa; tampoco los replica fuera de la región en que esté aprovisionada la base de datos. Sin embargo, tenga en cuenta que es posible que los nombres de campos y entidades personalizadas se repliquen entre regiones y se eliminen de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a respetar su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).

@@ -14,14 +14,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 51138467e93dc4ef3fd2a08163536971c3811d23
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>Crear una relación entre entidades
-A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, podría tener una entidad **Clientes** y otra **Pedidos**, y la entidad **Pedidos** podría tener una relación de búsqueda con la entidad **Clientes** para mostrar qué cliente realizó el pedido. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Clientes** para el cliente que realizó el pedido. Para más información, consulte [Entity relationships and lookup fields](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships) (Relaciones de entidad y campos de búsqueda).
+A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, podría tener una entidad **Clientes** y otra **Pedidos**, y la entidad **Pedidos** podría tener una relación de búsqueda con la entidad **Clientes** para mostrar qué cliente realizó el pedido. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Clientes** para el cliente que realizó el pedido. Para más información, consulte [Entity relationships and lookup fields](https://docs.microsoft.com/common-data-service/entity-reference/relationships) (Relaciones de entidad y campos de búsqueda).
 
 ## <a name="define-a-relationship"></a>Definir una relación
 Puede crear varios tipos de relaciones de una entidad a otra (o entre una entidad y ella misma). Cada entidad puede tener una relación con más de una entidad, y cada entidad puede tener más de una relación con otra entidad. Algunos tipos de relación comunes son:

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e5bcf28febb2d37284203a4856a8fea590637aed
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Información sobre las puertas de enlace de datos locales para Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Instalación y configuración
@@ -85,7 +85,7 @@ La puerta de enlace se ejecuta como un servicio de Windows, por lo que se puede 
 
 **Configuración de un firewall o servidor proxy**
 
-Para más información sobre cómo proporcionar información de proxy para la puerta de enlace, consulte [Configuración de proxy para la puerta de enlace de datos local](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/).
+Para más información sobre cómo proporcionar información de proxy para la puerta de enlace, consulte [Configuración de proxy para la puerta de enlace de datos local](https://docs.microsoft.com/power-bi/service-gateway-proxy).
 
 Puede comprobar si el firewall o el servidor proxy podrían estar bloqueando conexiones; para ello, ejecute el siguiente comando desde un símbolo del sistema de PowerShell. Este comando probará la conectividad con Azure Service Bus. Esto solo prueba la conectividad de red y no tiene nada que ver con el servicio de servidor de nube o la puerta de enlace. Ayuda a determinar si el equipo realmente puede obtener acceso a internet.
 
@@ -140,7 +140,7 @@ La puerta de enlace de datos local está configurada para usar *NT SERVICE\PBIEg
 
 Esta no es la cuenta utilizada para conectarse a orígenes de datos locales ni la cuenta profesional o académica con la que inicia sesión en los servicios en la nube.
 
-Si tiene problemas de autenticación con el servidor proxy, puede cambiar la cuenta de servicio de Windows por una cuenta de usuario de dominio o una cuenta de servicio administrado, tal y como se describe en la [configuración del servidor proxy](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user).
+Si tiene problemas de autenticación con el servidor proxy, puede cambiar la cuenta de servicio de Windows por una cuenta de usuario de dominio o una cuenta de servicio administrado, tal y como se describe en la [configuración del servidor proxy](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 #### <a name="general"></a>General

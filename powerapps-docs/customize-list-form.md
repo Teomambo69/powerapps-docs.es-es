@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/02/2018
+ms.date: 02/05/2018
 ms.author: sharik
-ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: a1ebe4011619b0a2baaa3b9a98579bb22d02774e
+ms.sourcegitcommit: 290e81488ec5c2e0bb820ef0e3b7f5c0f54c80eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Personalización de un formulario de lista de SharePoint mediante PowerApps
 
@@ -30,9 +30,6 @@ PowerApps está directamente integrado en SharePoint: no es necesario descargar 
 Y como PowerApps se integra perfectamente en SharePoint, no es necesario administrar los formularios desde dos lugares: los permisos se heredan y se administran en SharePoint. Lo mejor de todo es que al tener PowerApps integrado con SharePoint, dispone de acceso a muchas características eficaces, como informes de análisis, reglas sencillas de apuntar y hacer clic para el formato condicional y conexiones a otros orígenes de datos.
 
 ¿Está preparado para empezar a personalizar? ¡Pues vamos a ello!
-
-> [!NOTE]
-> La implementación de esta funcionalidad en los clientes de SharePoint se va a realizar en fases. Si en este momento no ve la opción **Customize forms** (Personalizar formularios) en la lista de SharePoint, no se preocupe, la hará en breve.
 
 ## <a name="create-a-custom-list-form-app-in-powerapps"></a>Creación de una aplicación de formulario de lista personalizado en PowerApps
 

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 849bde71d8f5dcf6505721758e2edca0921146bb
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 49ff8b15b3697afb7367aa5d4a587b389c9b538c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 En este tema, aprenderá a insertar archivos multimedia en la aplicación, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
@@ -119,7 +119,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
        ![Crear una tabla](./media/add-images-pictures-audio-video/create-table.png)
 
-       Ahora, el archivo de Excel tiene formato de tabla. Para más información sobre el formato de tabla de Excel, consulte [Aplicar formato a una tabla de Excel](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
+       Ahora, el archivo de Excel tiene formato de tabla. Para más información sobre el formato de tabla de Excel, consulte [Aplicar formato a una tabla de Excel](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
 
    4. Asigne a la tabla el nombre **Drawings**:
 
@@ -163,7 +163,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
     ![Pantalla de ejemplo](./media/add-images-pictures-audio-video/screen.png)
 
-10. Presione F5 o seleccione Vista previa ( ![Botón Vista previa](./media/add-images-pictures-audio-video/preview.png) ).
+10. Presione F5 o seleccione Vista previa ( ![botón Vista previa](./media/add-images-pictures-audio-video/preview.png) ).
 
 11. Dibuje algo en MyPen y seleccione el botón.
 

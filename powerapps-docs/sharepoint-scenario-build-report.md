@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]
@@ -177,7 +177,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
    
     Esta fórmula crea una tabla denominada **Dates** con una sola columna de fecha. La tabla cubre todas las fechas de la otra tabla y se actualiza automáticamente si se agregan fechas adicionales (es decir, si se actualizan los datos).
    
-    Tanto esta fórmula como las restantes de esta sección usan expresiones de análisis de datos (DAX), un lenguaje de fórmulas de Power BI y otras tecnologías. Para más información, consulte [Aspectos básicos de DAX en Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-quickstart-learn-dax-basics/).
+    Tanto esta fórmula como las restantes de esta sección usan expresiones de análisis de datos (DAX), un lenguaje de fórmulas de Power BI y otras tecnologías. Para más información, consulte [Aspectos básicos de DAX en Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 3. Presione Entrar para crear la tabla **Dates**.
    
     ![Tabla Dates](./media/sharepoint-scenario-build-report/05-02-07-date-table.png)
