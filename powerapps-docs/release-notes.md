@@ -13,16 +13,27 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 02/13/2018
 ms.author: sharik
-ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
-ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
+ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
+
+> [!NOTE]
+> Las versiones se implementan durante varios días. Es posible que las funcionalidades nuevas o actualizadas no se muestren inmediatamente.
+
+## <a name="feb-12"></a>12 de febrero
+* El control de volumen para la reproducción de [vídeo](controls/control-audio-video.md) y [audio](controls/control-audio-video.md) incrustados ahora está en línea. Para silenciar la reproducción, en lugar de hacer clic o pulsar en un botón, los usuarios ahora deben usar el control de volumen para reducir el volumen.
+
+## <a name="feb-7"></a>7 de febrero
+1. Se han eliminado las propiedades Zoom, Brillo y Contraste de los controles de [Cámara](controls/control-camera.md) y [Escáner de código de barras](controls/control-barcodescanner.md).
+2. Se ha corregido el problema en el que los botones Borrar de los controles de [Entrada de texto](controls/control-text-input.md) limitaban el espacio asignado para que el usuario escriba texto. Como resultado de esta corrección, la propiedad [Borrar](controls/control-text-input.md#additional-properties) de un control de Entrada de texto solo se admite en los exploradores web Microsoft Edge (última versión) e Internet Explorer 11.
+3. Se han agregado mejoras de accesibilidad en los controles [multimedia](add-images-pictures-audio-video.md).
 
 ## <a name="jan-31"></a>31 de enero
 1. Se han agregado subtítulos a los controles de [Vídeo](controls/control-audio-video.md).
@@ -63,7 +74,3 @@ Para más información sobre las limitaciones conocidas, consulte [Problemas y r
 ## <a name="sept-6"></a>6 de septiembre
 1. Para las aplicaciones que cree, [realice un seguimiento del uso](app-analytics.md) en un panel integrado desde Power BI.
 2. Utilice un delimitador para dividir una cadena de texto en varias partes mediante la función **[Dividir](functions/function-split.md)**.
-
-## <a name="aug-15"></a>15 de agosto
-1. Descargue un [lista de aplicaciones](admin-view-apps.md) que se usan en su organización.
-2. Delegue las funciones **Suma**, **Promedio**, **Min** y **Max** funciones para SQL Server.

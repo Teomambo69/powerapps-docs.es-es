@@ -13,30 +13,30 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: 481e6d13cce7624cf46cadbf78f877fdfb9fd481
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 94efa8b116fac1f6f15509c511fc6e15134e8540
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Inserción del informe de proyecto de Power BI en SharePoint Online
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-La última tarea de este escenario consiste en insertar el informe de Power BI en el mismo sitio de SharePoint Online que hospeda nuestras dos listas. Power BI admite varios métodos de inserción y ha agregado recientemente la integración directamente en las páginas de SharePoint para vistas móviles y web.
+Ahora vamos a insertar el informe de Power BI en el mismo sitio de SharePoint Online que hospeda nuestras dos listas. Power BI admite varios métodos de inserción, como la integración directa en las páginas de SharePoint para vistas móviles y web.
 
-Con este tipo de inserción, Power BI inserta el informe como un elemento web, proporciona un acceso adecuado a los usuarios y le permite desplazarse desde el informe insertado al informe de powerbi.com. En primer lugar, se va a generar un vínculo de inserción en Power BI. Posteriormente, se utilizará ese vínculo en una página que vamos a crear. Para más información sobre cómo insertar, consulte [Insertar el elemento web de informes en SharePoint Online](https://powerbi.microsoft.com/documentation/powerbi-service-embed-report-spo) (y, específicamente, la sección de requisitos).
+Con este tipo de inserción, Power BI inserta el informe como un elemento web, proporciona un acceso adecuado a los usuarios y le permite desplazarse desde el informe insertado al informe de powerbi.com. En primer lugar, se va a generar un vínculo de inserción en Power BI. Posteriormente, se utilizará ese vínculo en una página que vamos a crear. Para obtener más información sobre cómo insertar, consulte [Insertar el elemento web de informes en SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo).
 
 ## <a name="step-1-generate-an-embed-link"></a>Paso 1: Generación de un vínculo de inserción
 1. Inicie sesión en Power BI y, en el panel de navegación izquierdo, haga clic o pulse en el nombre del informe.
    
     ![Ir al informe](./media/sharepoint-scenario-embed-report/08-01-01-reports.png)
-2. Haga clic o pulse en **Insertar en SharePoint Online**.
+2. Haga clic o pulse en **Archivo** y, luego, en **Insertar en SharePoint Online**.
    
     ![Insertar en SharePoint Online](./media/sharepoint-scenario-embed-report/08-01-02-embed-spo.png)
-3. Copie el vínculo de inserción del cuadro de diálogo a un archivo y, a continuación, haga clic en **Cerrar**. Usaremos el vínculo después de haber creado una página de SharePoint.
+3. Copie el vínculo de inserción del cuadro de diálogo a un archivo y, a continuación, haga clic o pulse en **Cerrar**. Usaremos el vínculo después de haber creado una página de SharePoint.
    
     ![Vínculo de inserción para SharePoint](./media/sharepoint-scenario-embed-report/08-01-03-embed-url.png)
 
@@ -62,7 +62,7 @@ Con este tipo de inserción, Power BI inserta el informe como un elemento web, p
     ![Inserción de informe completada](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
 ## <a name="step-3-grant-access-to-the-report"></a>Paso 3: Concesión de acceso al informe.
-Si usas grupos de Office 365, tal y como se recomienda, asegúrese de que los usuarios que necesitan acceder son miembros del área de trabajo del grupo en el servicio Power BI. Esto garantiza que los usuarios puedan ver el contenido de ese grupo. Para más información, consulte [Creación de grupos en Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi).
+Si usas grupos de Office 365, tal y como se recomienda, asegúrese de que los usuarios que necesitan acceder son miembros del área de trabajo del grupo en el servicio Power BI. Esto garantiza que los usuarios puedan ver el contenido de ese grupo. Para obtener más información, consulte [Colaboración en un área de trabajo de aplicación de Power BI](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
 Así concluye nuestro trabajo en Power BI para este escenario. Empezó extrayendo datos de nuestras listas de SharePoint en Power BI y ahora se ha cerrado el círculo con la inserción de un informe de Power BI de nuevo en SharePoint.
 

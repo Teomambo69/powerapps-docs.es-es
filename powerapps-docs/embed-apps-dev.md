@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: a5c0e2c69ccf5e7359318794e4c39bb66bba9dac
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.openlocfilehash: 9d0248cde622fbb153549cc94101352416822258
+ms.sourcegitcommit: 290e81488ec5c2e0bb820ef0e3b7f5c0f54c80eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integración de PowerApps tanto en sitios web como en otros servicios
 Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones en un iframe para poder integrarlas tanto en sitios web como en otros servicios, como Power BI o SharePoint.
@@ -72,10 +72,13 @@ El identificador de la aplicación está disponible en powerapps.com. Para la ap
 Ahora es muy fácil incrustar aplicaciones, solo hay que agregar el iframe al código HTML del sitio (o a cualquier otro servicio que admita iframes, como Power BI o SharePoint):
 
 ```
-<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
+<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
 ```
 
 Especifique los valores de ancho y alto del iframe y sustituya el identificador de la aplicación por `[AppID]`.
+
+> [!NOTE]
+> Incluya `allow="geolocation; microphone; camera"` en el código HTML de iframe para permitir que las aplicaciones usen estas funcionalidades en Google Chrome.
 
 La siguiente imagen muestra la aplicación "Pedido de activos" insertada en un sitio web de ejemplo de Contoso.
 

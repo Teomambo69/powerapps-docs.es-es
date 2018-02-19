@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f54274af043964f02ef02a5ce97c261a410391d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Publicación del informe de proyecto de Power BI y creación de un panel
 > [!NOTE]
@@ -37,7 +37,7 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
 3. Escriba una contraseña y, a continuación, haga clic o pulse en **Iniciar sesión**.
    
     ![Escribir contraseña de la cuenta](./media/sharepoint-scenario-publish-report/06-01-03-password.png)
-4. Elija un destino para el informe y, a continuación, haga clic o pulse en **Seleccionar**. Se recomienda la publicación en un área de trabajo del grupo para simplificar el acceso al informe en SharePoint. En este caso, vamos a publicar en el área de trabajo del grupo denominada **Project Management**. Para más información, consulte [Creación de grupos en Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi).
+4. Elija un destino para el informe y, a continuación, haga clic o pulse en **Seleccionar**. Se recomienda la publicación en un área de trabajo del grupo para simplificar el acceso al informe en SharePoint. En este caso, vamos a publicar en el área de trabajo del grupo denominada **Project Management**. Para obtener más información, consulte [Colaboración en un área de trabajo de aplicación de Power BI](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
    
     ![Área de trabajo de destino](./media/sharepoint-scenario-publish-report/06-01-04-workspace.png)
 5. Una vez finalizada la publicación, haga clic o pulse en **Abrir 'project-analysis.pbx' en Power BI**.
@@ -48,9 +48,6 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
     ![Informe del servicio Power BI](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
     Puede ver que, cuando se hizo la publicación, Power BI Desktop cargó un conjunto de datos **(d)** y un informe **(c)**. Va a crear paneles en el servicio, no en Power BI Desktop, y esta área de trabajo aún no tiene ningún panel **(b)**. Vamos a crear uno a continuación.
-   
-    > [!NOTE]
-> Power BI dispone de una nueva experiencia de navegación que se puede habilitar en su sitio. Si el aspecto del panel de navegación izquierdo es diferente al de la imagen anterior, consulte [La nueva experiencia de navegación de Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience) para más información.
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Paso 2: Configuración de las credenciales para la actualización
 1. En el servicio, haga clic o pulse en el ![icono de engranaje](./media/sharepoint-scenario-publish-report/icon-gear.png) en la esquina superior derecha. Después, haga clic o pulse en **Configuración**.
@@ -72,13 +69,16 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
     ![Origen de datos actualizado](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
 ## <a name="step-3-create-a-dashboard"></a>Paso 3: Creación de un panel
-1. En el servicio, haga clic o pulse en el gráfico de la esquina superior izquierda y, a continuación, haga clic o pulse en ![el icono de anclar](./media/sharepoint-scenario-publish-report/icon-pin.png).
+
+1. Para volver al informe, en **INFORMES**, haga clic o pulse en **project-analysis**.
+
+1. Haga clic o pulse en el gráfico de la esquina superior izquierda y, después, haga clic o pulse en ![el icono de anclar](./media/sharepoint-scenario-publish-report/icon-pin.png).
    
     ![Gráfico anclado](./media/sharepoint-scenario-publish-report/06-01-12-pin-projected.png)
 2. Escriba un nombre para el panel al que desea anclarlo y, a continuación, haga clic o pulse en **Anclar**.
    
     ![Gráfico anclado al nuevo panel](./media/sharepoint-scenario-publish-report/06-01-13-pin-new.png)
-3. Haga clic o pulse en el gráfico de la esquina superior izquierda y, después, haga clic o pulse en ![el icono de anclar](./media/sharepoint-scenario-publish-report/icon-pin.png).
+3. Haga clic o pulse en el gráfico de la esquina superior derecha y, después, haga clic o pulse en ![el icono de anclar](./media/sharepoint-scenario-publish-report/icon-pin.png).
    
     ![Gráfico anclado](./media/sharepoint-scenario-publish-report/06-01-14-pin-variance.png)
 4. Seleccione el panel existente, después, haga clic o pulse en **Anclar**.
