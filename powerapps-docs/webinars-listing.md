@@ -13,41 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/29/2018
+ms.date: 2/23/2018
 ms.author: v-malyng
-ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
+ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. No dude en sugerir temas adicionales en los comentarios de este tema.
 
 ## <a name="upcoming-webinars"></a>Seminarios web que se celebrarán en las próximas fechas ##
-**Getting Started | Product Integrations: Teams + PowerApps Tips and Tricks** (Introducción | Integraciones de productos: consejos y sugerencias para usar Teams + PowerApps)
-<br>por Audrie Gordon
-<br>*31 de enero, 10:00 (PST), 13:00 (EST)*
-
-En este seminario web verá la forma en que PowerApps y Teams funcionan conjuntamente para crear soluciones empresariales más eficaces en un instante. Le mostraremos cómo aprovechar PowerApps en sus canales de Teams y le daremos ideas para que aproveche estos productos de manera conjunta para mejorar la colaboración entre equipos.
-
-[Haga clic aquí para verlo el 31 de enero](https://www.youtube.com/watch?v=obBQk-aSElI)
-
-**Connector Series | The Power of Office Graph with PowerApps** (Connector Series | La potencia del uso de Office Graph con PowerApps)
-<br>por Audrie Gordon
-<br>*5 de febrero, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
-
-Audrie Gordon, jefa de programas del equipo de PowerApps, muestra cómo aprovechar PowerApps con tecnologías de Office Graph. Personalizaremos una de nuestras plantillas y maximizaremos el impacto de Office Group en un escenario empresarial típico.
-
-[Haga clic aquí para verlo el 5 de febrero](https://www.youtube.com/watch?v=AOGGyoElGaQ)
-
 **Profundización | Compilación de soluciones para aplicar revisiones en servidores con PowerApps, por Brian Blanchard**
-<br>por Audrie Gordon
-<br>*19 de febrero, 10:00 (PST), 13:00 (EST)*
+<br>por Brian Blanchard & Audrie Gordon
+<br>*26 de febrero, 10:00 (PST), 13:00 (EST)*
 
 Brian Blanchard, de Microsoft Retail Stores, nos demuestra cómo ha compilado aplicaciones para su equipo con el objetivo de administrar la programación de la aplicación de revisiones en los servidores. Compartirá tanto la versión de escritorio como la versión para móviles que usan hoy en día para agilizar y simplificar el proceso de aplicación de revisiones. Enhorabuena, Brian, por aprovechar PowerApps y Flow para ahorrar tiempo y dinero al equipo.
 
-[Haga clic aquí para verlo el 19 de febrero](https://www.youtube.com/watch?v=QAe0oBecowU)
+[Haga clic aquí para verlo el 26 de febrero](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ## <a name="past-webinars"></a>Seminarios web anteriores ##
 Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que deberá volver a escribir los detalles de registro y después recibirá un vínculo a la grabación por correo electrónico.
@@ -122,6 +107,12 @@ Los seminarios web están disponibles a petición tras su difusión en directo. 
 
 **Working with Connectors: Using the Planner Connector** (Trabajar con conectores: uso del conector de Planner)
 <br> por Audrie Gordon [Véalo ahora](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
+
+**Getting Started | Product Integrations: Teams + PowerApps Tips and Tricks** (Introducción | Integraciones de productos: consejos y sugerencias para usar Teams + PowerApps)
+<br>por Audrie Gordon [Véalo ahora](https://www.youtube.com/watch?v=obBQk-aSElI)
+
+**Connector Series | The Power of Office Graph with PowerApps** (Connector Series | La potencia del uso de Office Graph con PowerApps)
+<br>por Audrie Gordon [Véalo ahora](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
 ### <a name="app-designer-topics"></a>Temas del Diseñador de aplicaciones ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger** (Descubra lo que sucede entre bastidores con una desarrolladora de PowerApps, un examen más detallado de las plantillas: Marie Hoeger)
