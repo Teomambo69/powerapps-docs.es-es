@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0492f5559f5ec575a3161e693e728c1caa95ed3c
-ms.sourcegitcommit: 6a56c3fdba1c7f95fe4b286e041cc307610e279f
+ms.openlocfilehash: 29199a60004f2cf77e4c4eaea3d812c4d98fcc20
+ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="send-a-pull-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
-Las notificaciones push se utilizan en aplicaciones de escritorio en escenarios tanto empresariales como de consumidor para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
+Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
 
 ![Ejemplo de cómo es una notificación push](./media/add-notifications/pic1-notification-screenshot.png)
 
