@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: bbd440528e3af9e199e5e37bc5c4e9f4d36dbe21
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Funciones AddColumns, DropColumns, CambiarNombreColumnas y MostrarColumnas en PowerApps
 Forma una [tabla](../working-with-tables.md) agregando, quitando, cambiando el nombre y seleccionando sus [columnas](../working-with-tables.md#columns).

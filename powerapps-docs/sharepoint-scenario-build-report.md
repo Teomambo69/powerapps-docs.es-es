@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/10/2018
 ms.author: mblythe
 ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]

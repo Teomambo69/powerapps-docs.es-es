@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/02/2016
 ms.author: archanan
 ms.openlocfilehash: 28d4895da2d7d9bb871fdd2d803b2c6dad7874a1
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Conexión a Excel desde PowerApps
 ![Excel](./media/connection-excel/excelicon.png)

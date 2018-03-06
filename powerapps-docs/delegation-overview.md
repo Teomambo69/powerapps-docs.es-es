@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
 ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="understand-delegation"></a>Descripción de delegación
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos:  las funciones **[Filtrar](functions/function-filter-lookup.md)**, **[Ordenar](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas.  Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan.  Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.  
@@ -128,7 +128,7 @@ Vamos a escribir **"Manzana"** en el control de entrada de texto de búsqueda.  
 
 Dado que todo esto se puede delegar, aunque si la tabla **[dbo]. [ Products]** contiene millones de registros, se seguirán encontrando todos, para lo que nos desplazamos por la galería a medida que el usuario se desplaza por los resultados.
 
-Observará que aparece una coincidencia para "Manzana" y "Piña".  La función **Buscar** encontrará un término de búsqueda en cualquier parte de una columna de texto.  Sin embargo, supongamos que solo deseamos buscar el término de búsqueda al principio del nombre de la fruta.  Podemos usar otra función que se puede delegar, **Filtrar**, con un término de búsqueda más complicado (por motivos de simplicidad quitaremos la llamada a **SortByColumns**):
+Observará que aparece una coincidencia para "Manzana" y "Piña".  La función **Buscar** encontrará un término de búsqueda en cualquier parte de una columna de texto.  Sin embargo, supongamos que solo deseamos buscar el término de búsqueda únicamente al principio del nombre de fruta.  Podemos usar otra función que se puede delegar, **Filtrar**, con un término de búsqueda más complicado (por motivos de simplicidad quitaremos la llamada a **SortByColumns**):
 
 ![Quitar la llamada a SortByColumns](media/delegation-overview/products-apple-bluedot.png)
 
