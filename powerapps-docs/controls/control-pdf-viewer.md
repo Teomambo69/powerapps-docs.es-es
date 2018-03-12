@@ -15,21 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="pdf-viewer-control-in-powerapps"></a>Control Visor de archivos PDF en PowerApps
-Un control que muestra el contenido de un archivo PDF.
+# <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
+Un control experimental que muestra el contenido de un archivo PDF.
 
 ## <a name="description"></a>Descripción
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
 
 ## <a name="limitations"></a>Limitaciones
 Tenga en cuenta que, dada a la arquitectura de seguridad de PowerApps, el visor de PDF solo admite vínculos HTTPS, no HTTP.  
-Si el documento PDF reside en un servidor con configuración de CORS con restricciones, es posible que no pueda verlo en su aplicación.  Si el documento no se puede abrir en PowerApps, se brinda al usuario final la posibilidad de abrirlo en un explorador externo.
+Si el documento PDF reside en un servidor con configuración de CORS con restricciones, es posible que no pueda verlo en su aplicación.  Para resolver este problema, es preciso que el servidor que hospeda los documentos PDF permita solicitudes de CORS procedentes de powerapps.com.
+
+Si el documento no se puede abrir en PowerApps, se brinda al usuario final la posibilidad de abrirlo en un explorador externo.  Esta opción también está disponible en el menú de control para todos los documentos externos.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Documento**: la dirección URL entre comillas dobles, de un archivo PDF.
