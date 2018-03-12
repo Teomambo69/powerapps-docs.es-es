@@ -13,19 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/13/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.openlocfilehash: e259c4c235809f75c03b3ea87df580b9b17a790c
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
 
 > [!NOTE]
 > Las versiones se implementan durante varios días. Es posible que las funcionalidades nuevas o actualizadas no se muestren inmediatamente.
+
+## <a name="mar-5"></a>5 de marzo
+1. Se han agregado (y eliminado) [datos adjuntos](controls/control-attachments.md) a listas de SharePoint.
+2. Se abren archivos [PDF](controls/control-pdf-viewer.md) externos en un explorador web. (característica experimental)
 
 ## <a name="feb-12"></a>12 de febrero
 * El control de volumen para la reproducción de [vídeo](controls/control-audio-video.md) y [audio](controls/control-audio-video.md) incrustados ahora está en línea. Para silenciar la reproducción, en lugar de hacer clic o pulsar en un botón, los usuarios ahora deben usar el control de volumen para reducir el volumen.
@@ -54,7 +58,7 @@ Para más información sobre las limitaciones conocidas, consulte [Problemas y r
 
 ## <a name="nov-13"></a>13 de noviembre
 1. Selección de varios valores para el mismo campo en las listas de SharePoint.
-2. [Visión y descarga de datos adjuntos](controls/control-attachments.md) en las listas de SharePoint.
+2. [Visualización y descarga de datos adjuntos ](controls/control-attachments.md) en listas de SharePoint.
 3. [Personalización de los formularios de las listas de SharePoint](customize-list-form.md) mediante PowerApps.
 
 ## <a name="nov-10"></a>10 de noviembre
@@ -64,13 +68,3 @@ Para más información sobre las limitaciones conocidas, consulte [Problemas y r
 1. Se [muestran todas las reglas](working-with-rules.md) de una aplicación, no solo las del control seleccionado.
 2. Se agregan los iconos más solicitados por los creadores de aplicaciones.
 3. Se ha mejorado el rendimiento de las aplicaciones en dispositivos Android e iOS.
-
-## <a name="sept-20"></a>20 de septiembre
-1. Después de [guardar una aplicación](save-publish-app.md) por primera vez, los cambios adicionales se guardan automáticamente cada dos minutos de forma predeterminada.
-2. [Cree reglas](working-with-rules.md) fácilmente para el formato condicional sin escribir expresiones (establezca la condición y diseñe los resultados en el lienzo de PowerApps).
-3. Configure formularios, galerías y tablas de datos con mayor facilidad con un panel de datos de altura completa que aparece al agregar un control.
-4. Obtenga recomendaciones rápidas contextuales que le ayuden a crear una aplicación, independientemente de que inicie desde una aplicación en blanco, una plantilla, un origen de datos o SharePoint.
-
-## <a name="sept-6"></a>6 de septiembre
-1. Para las aplicaciones que cree, [realice un seguimiento del uso](app-analytics.md) en un panel integrado desde Power BI.
-2. Utilice un delimitador para dividir una cadena de texto en varias partes mediante la función **[Dividir](functions/function-split.md)**.

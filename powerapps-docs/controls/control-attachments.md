@@ -15,22 +15,32 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: 2fd5db380eead5403d4cc7d927da5a24aa24abc9
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
-Un control que permite a los usuarios descargar archivos en su dispositivo.  Pronto estará disponible la funcionalidad de carga.
+Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint.
+
+## <a name="limitations"></a>Limitaciones
+El control de datos adjuntos tiene las siguientes limitaciones temporales:
+1. La carga de los datos adjuntos solo funciona con orígenes de datos de la lista de SharePoint.  La compatibilidad con otros orígenes de datos se introducirá de forma incremental, se empezará con CDS.
+
+1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios.   Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
+
+1. No se pueden cargar archivos con un tamaño superior a 10 MB.  
 
 ## <a name="description"></a>Descripción
-Un control **Datos adjuntos** le permite abrir archivos almacenados en un origen de datos.
+Un control de **datos adjuntos** permite abrir los archivos almacenados en un origen de datos, así como agregar y eliminar archivos de una lista de SharePoint.
 
 ## <a name="key-properties"></a>Propiedades principales
 **[Items](properties-core.md)** : el origen de donde se describen los archivos que se pueden descargar.
 
 **MaxAttachments**: el número máximo de archivos que acepta el control.
+
+**MaxAttachmentSize**: el tamaño de archivo máximo permitido, en MB, de cada elemento adjunto nuevo.  Actualmente, el límite se encuentra en 10 MB.
 
 **OnAttach**: cómo responde la aplicación cuando el usuario agrega nuevos datos adjuntos.
 
@@ -39,7 +49,9 @@ Un control **Datos adjuntos** le permite abrir archivos almacenados en un origen
 **[OnSelect](properties-core.md)**: cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**AddAttachmentText**: el texto de la etiqueta del botón que se usa para agregar nuevos datos adjuntos.
+**AccessibleLabel**: la etiqueta anunciada por los lectores de pantalla.
+
+**AddAttachmentText**: el texto de la etiqueta del vínculo que se usa para agregar nuevos datos adjuntos.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
@@ -47,11 +59,13 @@ Un control **Datos adjuntos** le permite abrir archivos almacenados en un origen
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
-**NoAttachmentsText**: texto informativo que se muestra al usuario cuando no hay datos adjuntos para mostrar.
+**MaxAttachmentsText**: el texto que reemplaza al vínculo de "Adjuntar archivo" cuando el control contiene el número máximo de archivos permitidos.
+
+**NoAttachmentsText**: texto informativo que se muestra al usuario cuando no hay archivos adjuntos.
 
 **[Visible](properties-core.md)** : indica si un control está visible u oculto.
 

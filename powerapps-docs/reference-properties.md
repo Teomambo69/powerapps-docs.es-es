@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.
@@ -31,7 +31,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Audio](controls/control-audio-video.md)**: reproduzca un clip de audio o la parte de audio de un clip de vídeo.
 
-**[Escáner de código de barras](controls/control-barcodescanner.md)**: escanee un código de barras mediante un dispositivo que tiene una cámara.
+**[Escáner de código de barras (experimental)](controls/control-barcodescanner.md)**: escanee un código de barras mediante un dispositivo que tiene una cámara.
 
 **[Botón](controls/control-button.md)**: interactúe con la aplicación haciendo clic en él o pulsándolo.
 
@@ -77,7 +77,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Micrófono](controls/control-microphone.md)**: grabe y guarde sonidos en la aplicación o en un origen de datos.
 
-**[Visor de PDF](controls/control-pdf-viewer.md)**: muestre el contenido de un archivo PDF en Internet.
+**[Visor de PDF (experimental)](controls/control-pdf-viewer.md)**: muestre el contenido de un archivo PDF en Internet.
 
 **[Entrada manuscrita](controls/control-pen-input.md)**: dibuje una imagen o escriba texto y guárdelo en la aplicación o en un origen de datos.
 

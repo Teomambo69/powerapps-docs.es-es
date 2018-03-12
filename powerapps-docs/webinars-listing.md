@@ -13,26 +13,52 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 2/23/2018
+ms.date: 3/1/2018
 ms.author: v-malyng
-ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
-ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
+ms.openlocfilehash: d1f10a12a188acaf2ee4bc4590e7dba9f3587611
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. No dude en sugerir temas adicionales en los comentarios de este tema.
 
 ## <a name="upcoming-webinars"></a>Seminarios web que se celebrarán en las próximas fechas ##
-**Profundización | Compilación de soluciones para aplicar revisiones en servidores con PowerApps, por Brian Blanchard**
+**Connector Series | Project Online (PWA)**
+<br>por Audrie Gordon
+<br>*12 de marzo a las 10:00 (hora estándar del Pacífico), 13:00 (hora estándar del Este)*
+
+En esta demostración de Connector Series explicaremos el de las opciones del conector Project Online (también conocido como PWA). Únase y realice todas las preguntas que desee acerca de la compilación de aplicaciones que aprovechan las herramientas de administración de carteras y Project Online.
+
+[Haga clic aquí para verlo el 12 de marzo](https://www.youtube.com/watch?v=oncGxlmFqy8)
+
+
+**Deep Dive | Building Server Patching Solutions with PowerApps by Brian Blanchard (Part 2)** [En profundidad | Compilación de soluciones de aplicación de revisiones a servidores con PowerApps por Brian Blanchard (parte 2)]
 <br>por Brian Blanchard & Audrie Gordon
-<br>*26 de febrero, 10:00 (PST), 13:00 (EST)*
+<br>*19 de marzo a las 10:00 (hora estándar del Pacífico), 13:00 (hora estándar del Este)*
 
-Brian Blanchard, de Microsoft Retail Stores, nos demuestra cómo ha compilado aplicaciones para su equipo con el objetivo de administrar la programación de la aplicación de revisiones en los servidores. Compartirá tanto la versión de escritorio como la versión para móviles que usan hoy en día para agilizar y simplificar el proceso de aplicación de revisiones. Enhorabuena, Brian, por aprovechar PowerApps y Flow para ahorrar tiempo y dinero al equipo.
+Es la segunda parte de la demostración de Brian Blanchard acerca de cómo compiló una aplicación para que su equipo administrara las programaciones de aplicación de revisiones a servidores. En este seminario web compartirá detalles tanto de la configuración de Azure Automation como de los flujos de trabajo avanzados en Microsoft Flow. Enhorabuena, Brian, por aprovechar PowerApps y Flow para ahorrar tiempo y dinero al equipo.
 
-[Haga clic aquí para verlo el 26 de febrero](https://www.youtube.com/watch?v=QAe0oBecowU)
+[Haga clic aquí para verlo el 19 de marzo](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
+**Deep Dive | Click-Through PowerApps Analytics by Vivek Bavishi** (En profundidad | Análisis de clics mediante PowerApps por Vivek Bavishi)
+<br>por Vivek Bavishi & Audrie Gordon
+<br>*17 de abril a las 10:00 (hora estándar del Pacífico), 13:00 (hora estándar del Este)*
+
+Vivek Bavishi, del grupo International PowerApps Champions, y Audrie Gordon, del equipo de PowerApps, se unen para explicar un método sencillo para crear su propio análisis de clics mediante PowerApps y Flow. Amplíe las opciones de generación de informes para incluir estadísticas que permitan ver la forma en que los consumidores de aplicaciones navegan por estas, lo que le permitirá usar datos para validar suposiciones acerca del uso y diseño de aplicaciones. Los creadores de aplicaciones profesionales no deberían perderse esta presentación.
+
+[Haga clic aquí para verlo el 17 de abril](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+**Connector Series | The Advantages of Leveraging the Common Data Service** (Connector Series | Las ventajas de hacer uso de Common Data Service)
+<br>por Audrie Gordon
+<br>*23 de abril a las 10:30 hora del Pacífico, 13:30 hora estándar del Este*
+
+¿Ha empezado a explorar Common Data Service (también conocido como CDS)? ¿Está al día de las ventajas que supone usar esquemas de datos comunes en las aplicaciones empresariales? ¿Conoce la expectación que han despertado las atractivas novedades que han aparecido en ese tema?
+
+En este seminario web se examinarán en profundidad las ventajas del uso de Common Data Service en todas las suscripciones de Microsoft Cloud (para la habilitación de las aplicaciones Office 365, Azure y Dynamics 365). En este seminario web, podrá ver en directo a dónde vamos con CDS y lo eficaz que será modelar aplicaciones con esta plataforma. Estamos impacientes por mostrarle algunas de las posibilidades ilimitadas.
+
+[Haga clic aquí para verlo el 23 de abril](https://www.youtube.com/watch?v=JY8r46HnHoI)
 
 ## <a name="past-webinars"></a>Seminarios web anteriores ##
 Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que deberá volver a escribir los detalles de registro y después recibirá un vínculo a la grabación por correo electrónico.
@@ -113,6 +139,10 @@ Los seminarios web están disponibles a petición tras su difusión en directo. 
 
 **Connector Series | The Power of Office Graph with PowerApps** (Connector Series | La potencia del uso de Office Graph con PowerApps)
 <br>por Audrie Gordon [Véalo ahora](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**Profundización | Compilación de soluciones para aplicar revisiones en servidores con PowerApps, por Brian Blanchard**
+<br>por Brian Blanchard & Audrie Gordon [Ver ahora](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ### <a name="app-designer-topics"></a>Temas del Diseñador de aplicaciones ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger** (Descubra lo que sucede entre bastidores con una desarrolladora de PowerApps, un examen más detallado de las plantillas: Marie Hoeger)
