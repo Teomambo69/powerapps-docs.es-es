@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
+ms.sourcegitcommit: 87327f99636c68c62c755c4eb48861249a5a3add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -110,9 +110,9 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local
-1. En la pestaña **Contenido**, pulse o haga clic en **Multimedia** y, a continuación, en **Examinar**.
+1. En el menú **Archivo**, pulse o haga clic en **Multimedia** y, después, en **Examinar**.
 2. Pulse o haga clic en el archivo de imagen que desea agregar, pulse o haga clic en **Abrir**, y, a continuación, presione Esc para volver al área de trabajo predeterminada.
-3. Agregue un control **Imagen**, establezca la propiedad de sus **[Artículos](properties-core.md)** en el nombre del archivo que agregó.
+3. Agregue un control **Imagen** y en su propiedad **Image** escriba el nombre del archivo que agregó.
 
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
