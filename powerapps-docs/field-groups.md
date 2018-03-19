@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
-ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
+ms.sourcegitcommit: 397a968f57ce5aaaf2b86e804dfedda8cf34f307
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-field-groups"></a>Usar grupos de campos
 Los grupos de campos proporcionan una manera de agrupar uno o más campos de una entidad. Los grupos de campos pueden acelerar y simplificar la creación y mantenimiento de aplicaciones. Un grupo de campos puede contener uno o varios campos, y un mismo campo puede aparecer en varios grupos de campos. Un campo no puede aparecer más de una vez en un mismo grupo de campos.
