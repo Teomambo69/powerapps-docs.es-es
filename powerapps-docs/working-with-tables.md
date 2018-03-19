@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
+ms.sourcegitcommit: 397a968f57ce5aaaf2b86e804dfedda8cf34f307
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
 Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
