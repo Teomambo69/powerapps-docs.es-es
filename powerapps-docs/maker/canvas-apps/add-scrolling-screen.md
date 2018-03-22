@@ -1,0 +1,96 @@
+---
+title: Adición de una pantalla de desplazamiento | Microsoft Docs
+description: Cree una pantalla por la que puedan desplazarse los usuarios para ver más tipos de contenido de los que pueden mostrarse a la vez.
+services: ''
+suite: powerapps
+documentationcenter: na
+author: lonu
+manager: anneta
+editor: ''
+tags: ''
+ms.service: powerapps
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 10/25/2016
+ms.author: lonu
+ms.openlocfilehash: d4022716ec83d9b981d3ac2b9e123689452a115a
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2018
+---
+# <a name="add-a-scrolling-screen-in-powerapps"></a>Agregar una pantalla de desplazamiento en PowerApps
+Cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, es posible que quiera crear una aplicación en la que los datos aparezcan en un gráfico de columnas y en un gráfico de líneas. Si agrega una pantalla de desplazamiento, podrá incorporar diferentes controles que los usuarios podrán ver al desplazarse.
+
+Cuando se agregan varios controles en una sección, estos mantienen su posición relativa en dicha sección tanto si se trata de una aplicación para el teléfono como de una aplicación para la tableta. Tenga en cuenta que el tamaño y la orientación de la pantalla pueden determinar la organización de las secciones.  
+
+[!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
+
+## <a name="create-a-scrolling-screen"></a>Crear una pantalla de desplazamiento
+1. En la pestaña **Inicio**, pulse o haga clic en **Nueva pantalla**:
+   
+    ![Opción para agregar una pantalla a la aplicación][1]
+2. En la pestaña **Inicio**, pulse o haga clic en **Diseños** y en la opción que permite agregar un lienzo de desplazamiento infinito:  
+   
+    ![Opción para agregar un lienzo de desplazamiento infinito][2]
+   
+    Se agrega el lienzo:  
+   
+    ![Pantalla con un lienzo de desplazamiento infinito que aparece de forma predeterminada][3]
+
+## <a name="add-elements"></a>Agregar elementos
+Ahora, vamos a agregar algunos controles al lienzo para ver cómo funciona la pantalla de desplazamiento.
+
+1. En el lienzo que acaba de agregar, pulse o haga clic en **Agregar un elemento desde la pestaña Insertar**.
+   
+    ![][4]
+2. En la pestaña **Insertar**, pulse o haga clic en **Gráficos** y, a continuación, en **Gráfico de columnas**.
+   
+    ![Opción para agregar un gráfico de columnas][5]
+   
+    El gráfico de columnas aparece en la primera tarjeta de la pantalla:  
+   
+    ![Gráfico de columnas predeterminado][7]
+3. En la pestaña **Insertar**, pulse o haga clic en **Texto** y en **Entrada manuscrita**:  
+   
+    ![Opción para agregar un control de entrada manuscrita][8]
+4. Mueva el control de entrada manuscrita hasta situarlo bajo el gráfico y cambie su tamaño para que ocupe la parte inferior de la tarjeta:  
+   
+    ![Mueva el control de entrada manuscrita y cambie su tamaño][9]
+
+## <a name="add-a-section"></a>Agregar una sección
+Ahora, vamos a agregar una nueva tarjeta con otro control.
+
+1. En la parte inferior de la pantalla, pulse o haga clic en **Agregar sección**:  
+   
+    ![Opción para agregar una sección][10]
+   
+    Se agrega una nueva tarjeta a la pantalla:  
+   
+    ![Nueva tarjeta situada bajo la sección predeterminada][11]
+2. Con la tarjeta seleccionada, vaya a la pestaña **Insertar** y pulse o haga clic en **Gráficos** y en **Gráfico de líneas**.
+   
+    El nuevo gráfico es demasiado grande y no puede aparecer en la pantalla con los demás controles:  
+   
+    ![Gráfico de líneas agregado en la parte inferior de una nueva tarjeta][12]
+3. Para abrir el modo de vista previa, presione F5 (o haga clic o pulse en el icono de reproducción situado cerca de la esquina superior derecha).
+   
+    ![Abrir el modo de vista previa](./media/add-scrolling-screen/open-preview.png)
+4. Desplácese hacia abajo para ver el nuevo gráfico de líneas.  
+   
+    ![Vista previa con el gráfico de líneas][13]
+
+[1]: ./media/add-scrolling-screen/add-screen.png
+[2]: ./media/add-scrolling-screen/add-canvas.png
+[3]: ./media/add-scrolling-screen/default-canvas.png
+[4]: ./media/add-scrolling-screen/insert-visual.png
+[5]: ./media/add-scrolling-screen/add-chart.png
+[7]: ./media/add-scrolling-screen/default-chart.png
+[8]: ./media/add-scrolling-screen/add-pen.png
+[9]: ./media/add-scrolling-screen/move-resize-pen.png
+[10]: ./media/add-scrolling-screen/add-section.png
+[11]: ./media/add-scrolling-screen/new-card.png
+[12]: ./media/add-scrolling-screen/add-line-chart.png
+[13]: ./media/add-scrolling-screen/line-chart-preview.png

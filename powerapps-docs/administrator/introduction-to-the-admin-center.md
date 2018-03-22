@@ -1,13 +1,13 @@
 ---
-title: "Introducción al centro de administración | Microsoft Docs"
-description: "Introducción al centro de administración para PowerApps."
-services: 
+title: Introducción al centro de administración | Microsoft Docs
+description: Introducción al centro de administración para PowerApps.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/21/2017
 ms.author: deonhe
 ms.openlocfilehash: 9c306d70d7495313314c016e4e4fdd6685e4c9ed
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="introduction-to-the-admin-center-for-powerapps"></a>Introducción al centro de administración para PowerApps
 ![Introducción](./media/introduction-to-the-admin-center/overview.png)  

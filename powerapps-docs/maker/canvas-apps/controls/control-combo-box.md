@@ -1,13 +1,13 @@
 ---
 title: 'Control de cuadro combinado: referencia | Microsoft Docs'
-description: "Información acerca del control de cuadro combinado, incluyendo sus propiedades y ejemplos"
-services: 
+description: Información acerca del control de cuadro combinado, incluyendo sus propiedades y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
 ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
