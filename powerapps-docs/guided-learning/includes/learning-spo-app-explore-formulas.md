@@ -45,11 +45,3 @@ Así llegamos al final de la exploración de la aplicación generada y podemos e
 Antes de pasar la siguiente sección, queremos volver a SharePoint y mostrarle cómo se integra ahora la aplicación con la experiencia de la lista. Como puede ver, **FlooringApp** ahora funciona como un *vista* de la lista y para iniciar la aplicación, es preciso hacer clic en **Abrir**. Esta es una forma sencilla de administrar las listas con una experiencia personalizada fácil de usar.
 
 ![Aplicación como vista de la lista de Sharepoint](./media/learning-spo-app-explore-formulas/list-view.png)
-
-Una vez que ha terminado la sección de la aplicación SharePoint, puede elegir a dónde desea dirigirse:
-
-* [Administración de aplicaciones](https://docs.microsoft.com/powerapps/guided-learning/manage-apps#step-1)
-* [Generate an app (Common Data Service)](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) [Generación de una aplicación (Common Data Service)]
-
-La sección de administración muestra cómo compartir y controlar las versiones de las aplicaciones, y presenta los entornos, que son contenedores de aplicaciones, datos y otros recursos. Se recomienda que todos los usuarios lean la sección de administración en algún momento, pero la información que contiene la sección relativa a Common Data Service es excelente e incluye más personalizaciones de las aplicaciones. 
-

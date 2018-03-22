@@ -1,6 +1,6 @@
 ---
 title: Aprendizaje guiado de Microsoft PowerApps
-description: "Inicie su recorrido de aprendizaje con esta colección de cursos secuenciales y comprenda las funcionalidades tan amplias y versátiles de Microsoft PowerApps."
+description: Inicie su recorrido de aprendizaje con esta colección de cursos secuenciales y comprenda las funcionalidades tan amplias y versátiles de Microsoft PowerApps.
 layout: LandingPage
 author: mgblythe
 manager: anneta
@@ -8,11 +8,11 @@ ms.service: powerapps
 ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
-ms.openlocfilehash: 6da595d920e7911f6b776a628b3f8d91ccf3a0ca
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.openlocfilehash: ae2d09bf5ec5158a529b289e3fc36472b3cf7b5c
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/22/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -109,41 +109,6 @@ Creación de una aplicación en SharePoint </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #742874; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px; color: #ffffff">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="includes/media/index/i_common-data-service.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
-                              </div>
-                            </div>
-Creación de una aplicación en Common Data Service </h3>
-                          <ul class="noBullet" style="margin: 24px;">
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds.yml#step-1">Generación de una aplicación</a>
-                                <span style="margin-left: 32px; align-self: center;">6 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds.yml#step-2">Exploración de una aplicación generada</a>
-                                <span style="margin-left: 32px; align-self: center;">5 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds.yml#step-3">Personalización de la aplicación</a>
-                                <span style="margin-left: 32px; align-self: center;">12 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds.yml#step-4">Adición de un origen y un flujo de datos</a>
-                                <span style="margin-left: 32px; align-self: center;">11 m</span>
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          </li>
-          <li>
-            <div class="cardSize">
-                <div class="cardPadding">
-                  <div class="card" style="padding: 0 12px 54px 0;">
-                      <div class="cardText" style="box-shadow: 0 2px 5px #e8e8e8; border: 1px solid #dbdbdb;">
-                          <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #742874; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px; color: #ffffff">
-                            <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
-                              <div class="cardImage" style="width: 32px;">
                                 <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
@@ -159,45 +124,6 @@ Administración de aplicaciones </h3>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="manage-apps.yml#step-3">Entornos</a>
-                                <span style="margin-left: 32px; align-self: center;">8 m</span>
-                              </li>
-                          </ul>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          </li>
-          <li>
-            <div class="cardSize">
-                <div class="cardPadding">
-                  <div class="card" style="padding: 0 12px 54px 0;">
-                      <div class="cardText" style="box-shadow: 0 2px 5px #e8e8e8; border: 1px solid #dbdbdb;">
-                          <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #742874; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px; color: #ffffff">
-                            <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
-                              <div class="cardImage" style="width: 32px;">
-                                <img src="includes/media/index/i_common-data-service.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
-                              </div>
-                            </div>
-Administración de datos </h3>
-                          <ul class="noBullet" style="margin: 24px;">
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data.yml#step-1">Common Data Service</a>
-                                <span style="margin-left: 32px; align-self: center;">5 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data.yml#step-2">Descripción de las entidades de Common Data Service</a>
-                                <span style="margin-left: 32px; align-self: center;">8 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data.yml#step-3">Creación de entidades personalizadas</a>
-                                <span style="margin-left: 32px; align-self: center;">6 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data.yml#step-4">Administración de datos de entidad</a>
-                                <span style="margin-left: 32px; align-self: center;">7 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data.yml#step-5">Seguridad de Common Data Service</a>
                                 <span style="margin-left: 32px; align-self: center;">8 m</span>
                               </li>
                           </ul>
