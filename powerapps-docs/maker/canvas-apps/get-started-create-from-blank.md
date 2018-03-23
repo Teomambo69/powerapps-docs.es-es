@@ -1,13 +1,13 @@
 ---
-title: "Creación de una aplicación desde cero | Microsoft Docs"
-description: "Cree una aplicación desde cero mediante la configuración de cada elemento y comportamiento de la interfaz de usuario para administrar los datos diarios que necesita su negocio."
-services: 
+title: Creación de una aplicación desde cero | Microsoft Docs
+description: Cree una aplicación desde cero mediante la configuración de cada elemento y comportamiento de la interfaz de usuario para administrar los datos diarios que necesita su negocio.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
 ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-app-from-scratch"></a>Crear una aplicación desde cero
 Cree su propia aplicación desde cero mediante cualquiera de los orígenes de datos existentes. Posteriormente, podrá agregar más orígenes si lo desea. Especifique la apariencia y el comportamiento de cada elemento de la interfaz de usuario para que pueda obtener el mejor resultado de acuerdo con sus objetivos y el flujo de trabajo especificados. Este enfoque es mucho más lento que [crear una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden crear aplicaciones mejor adaptadas a sus necesidades.

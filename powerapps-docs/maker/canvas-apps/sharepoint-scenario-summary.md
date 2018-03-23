@@ -1,13 +1,13 @@
 ---
-title: "Tutorial de principio a fin del escenario de integración de SharePoint Online | Microsoft Docs"
+title: Tutorial de principio a fin del escenario de integración de SharePoint Online | Microsoft Docs
 description: Realice un tutorial de principio a fin para el escenario que se ha creado en esta serie de tutoriales.
-services: 
+services: ''
 suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
 ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]

@@ -1,13 +1,13 @@
 ---
 title: Funciones Abs, Exp, Ln, Power y Sqrt | Microsoft Docs
-description: "Información de referencia para las funciones Abs, Sqrt y otras en PowerApps, incluidos ejemplos y sintaxis"
-services: 
+description: Información de referencia para las funciones Abs, Sqrt y otras en PowerApps, incluidos ejemplos y sintaxis
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 25d9b49c7f527d7510e31dd937e1d8a580bb31cf
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.

@@ -1,13 +1,13 @@
 ---
-title: "Almacenamiento y publicación de una aplicación | Microsoft Docs"
+title: Almacenamiento y publicación de una aplicación | Microsoft Docs
 description: Instrucciones paso a paso para guardar y publicar aplicaciones para creadores de aplicaciones
-services: 
+services: ''
 suite: powerapps
 documentationcenter: na
 author: SKjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/14/2017
 ms.author: sharik
 ms.openlocfilehash: 739813b2b4905653543461008986901d4e2ee95b
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Guardar y publicar una aplicación en PowerApps
 Siempre que guarde cambios en una aplicación, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.

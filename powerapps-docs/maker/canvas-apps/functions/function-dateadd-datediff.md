@@ -1,13 +1,13 @@
 ---
 title: Funciones DateAdd, DateDiff y TimeZoneOffset | Microsoft Docs
-description: "Información de referencia de las funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps, con sintaxis y ejemplos"
-services: 
+description: Información de referencia de las funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps, con sintaxis y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/23/2017
 ms.author: gregli
 ms.openlocfilehash: 9fdae99e280e088139882271db7328490b3d4fcc
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.

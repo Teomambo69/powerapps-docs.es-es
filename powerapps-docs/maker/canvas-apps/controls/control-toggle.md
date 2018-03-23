@@ -1,13 +1,13 @@
 ---
 title: 'Control Alternar: referencia | Microsoft Docs'
-description: "Información sobre el control Alternar, con propiedades y ejemplos"
-services: 
+description: Información sobre el control Alternar, con propiedades y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.

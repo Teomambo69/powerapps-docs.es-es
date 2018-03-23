@@ -1,13 +1,13 @@
 ---
-title: "Creación de una aplicación para administrar proyectos | Microsoft Docs"
-description: "En esta tarea, se va a crear una aplicación desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos."
-services: 
+title: Creación de una aplicación para administrar proyectos | Microsoft Docs
+description: En esta tarea, se va a crear una aplicación desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
 ms.openlocfilehash: da64b3b8f5453c41bf5e9c6fcf61ce335b47ff71
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-app-to-manage-projects"></a>Crear una aplicación para administrar proyectos
 > [!NOTE]

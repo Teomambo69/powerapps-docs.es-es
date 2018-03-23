@@ -1,13 +1,13 @@
 ---
 title: 'Control Pantalla: referencia | Microsoft Docs'
-description: "Información sobre el control Pantalla, con propiedades y ejemplos"
-services: 
+description: Información sobre el control Pantalla, con propiedades y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.

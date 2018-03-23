@@ -1,12 +1,12 @@
 ---
 title: 'Control Columna: referencia | Microsoft Docs'
-description: "En este tema se proporciona información sobre el control Columna en Microsoft PowerApps."
+description: En este tema se proporciona información sobre el control Columna en Microsoft PowerApps.
 services: powerapps
 documentationcenter: na
 author: jasongre
 manager: kfend
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: 0e9c04c4786ff4cee11d7aae75245054e93391fa
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="column-control-in-powerapps"></a>Control Columna en PowerApps
 Proporciona la representación de un solo campo en un control [**Tabla de datos**](control-data-table.md).
