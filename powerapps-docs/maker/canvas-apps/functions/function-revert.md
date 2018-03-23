@@ -1,13 +1,13 @@
 ---
-title: "Función Revertir | Microsoft Docs"
-description: "Información de referencia de la función Revertir en PowerApps, con sintaxis y ejemplos"
-services: 
+title: Función Revertir | Microsoft Docs
+description: Información de referencia de la función Revertir en PowerApps, con sintaxis y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="revert-function-in-powerapps"></a>Función Revertir en PowerApps
 Actualiza y borra errores para los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).

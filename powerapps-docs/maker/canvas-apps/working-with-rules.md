@@ -1,13 +1,13 @@
 ---
-title: "Creación de una regla | Microsoft Docs"
-description: "Instrucciones detalladas para generar una lógica de aplicaciones mediante la creación de reglas"
-services: 
+title: Creación de una regla | Microsoft Docs
+description: Instrucciones detalladas para generar una lógica de aplicaciones mediante la creación de reglas
+services: ''
 suite: PowerApps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/10/2017
 ms.author: sharik
 ms.openlocfilehash: 30c069a65d19b965ee5c66411ca08723a6f510ae
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-rule-in-powerapps"></a>Creación de una regla en PowerApps
 Las reglas se crean para modificar automáticamente una aplicación en función de los criterios que se especifiquen. Por ejemplo, mostrar los elementos de cada lista en rojo, amarillo o verde según su estado, o bien mostrar un botón de aprobación sólo a determinados usuarios (por ejemplo, los administradores).

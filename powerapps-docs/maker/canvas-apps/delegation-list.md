@@ -1,13 +1,13 @@
 ---
-title: "Orígenes de datos delegables | Microsoft Docs"
-description: "Lista de todos los orígenes de datos delegables admitidos"
-services: 
+title: Orígenes de datos delegables | Microsoft Docs
+description: Lista de todos los orígenes de datos delegables admitidos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: archnair
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
 ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Tal como se describe en detalle en el artículo [Descripción de delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación para procesarlos localmente.

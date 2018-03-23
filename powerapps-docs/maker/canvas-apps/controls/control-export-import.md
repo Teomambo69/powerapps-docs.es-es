@@ -1,13 +1,13 @@
 ---
 title: 'Control Exportar y control Importar: referencia | Microsoft Docs'
-description: "Información sobre el control Exportar y el control Importar, que incluye propiedades y ejemplos"
-services: 
+description: Información sobre el control Exportar y el control Importar, que incluye propiedades y ejemplos
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Control Exportar y control Importar en PowerApps
 Controles para exportar datos a un archivo local y luego importarlos en otra aplicación de PowerApps.

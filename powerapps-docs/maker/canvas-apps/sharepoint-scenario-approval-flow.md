@@ -1,13 +1,13 @@
 ---
-title: "Creación de un flujo para administrar aprobaciones de proyectos | Microsoft Docs"
-description: "En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos."
-services: 
+title: Creación de un flujo para administrar aprobaciones de proyectos | Microsoft Docs
+description: En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/09/18
 ms.author: mblythe
 ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
 > [!NOTE]
