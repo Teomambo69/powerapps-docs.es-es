@@ -60,7 +60,7 @@ Otros elementos incluyen:
 ## <a name="b"></a>B
 **[Back](functions/function-navigate.md)**: muestra la pantalla anterior.  
 
-**[En blanco](functions/function-isblank-isempty.md)**: devuelve un valor *en blanco* que puede utilizarse para insertar un valor NULL en un origen de datos.
+**[Blank](functions/function-isblank-isempty.md)**: devuelve un valor *en blanco* que puede utilizarse para insertar un valor NULL en un origen de datos.
 
 ## <a name="c"></a>C
 **[Calendar](functions/function-clock-calendar.md)**: recupera información sobre el calendario para la configuración regional actual.
@@ -304,7 +304,7 @@ Otros elementos incluyen:
 
 **[Sum](functions/function-aggregates.md)**: calcula la suma de una expresión de tabla o un conjunto de argumentos.  
 
-**[Cambiar](functions/function-if.md)**: busca la coincidencia con un conjunto de valores y luego evalúa una fórmula correspondiente.
+**[Switch](functions/function-if.md)**: busca la coincidencia con un conjunto de valores y luego evalúa una fórmula correspondiente.
 
 ## <a name="t"></a>T
 **[Table](functions/function-table.md)**: crea una tabla temporal.  
