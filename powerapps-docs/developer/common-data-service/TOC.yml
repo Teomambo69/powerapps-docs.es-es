@@ -1,0 +1,19 @@
+- name: Información general
+  href: overview.md
+- name: Introducción a las soluciones
+  href: introduction-solutions.md
+- name: Entidades de datos de Common Data Service for Apps
+  href: entities.md
+  items:
+    - name: Metadatos de entidad
+      href: entity-metadata.md
+    - name: Metadatos de atributo
+      href: entity-attribute-metadata.md
+    - name: Metadatos de relaciones de entidad
+      href: entity-relationship-metadata.md
+    - name: Referencia de entidades
+      href: reference/entities/toc.yml
+- name: Aplicación de lógica de negocios con código
+  href: apply-business-logic-with-code.md
+- name: Uso de servicios web de Common Data Service for Apps
+  href: use-web-services.md
