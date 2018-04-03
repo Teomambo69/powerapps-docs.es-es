@@ -1,0 +1,231 @@
+- name: Crear aplicaciones
+  href: index.md
+  expanded: true
+  items:
+    - name: Registrarse para obtener una versión de evaluación de 30 días
+      href: signup-for-powerapps.md
+    - name: Registrarse en el Plan de la comunidad de PowerApps
+      href: dev-community-plan.md
+- name: Aplicaciones de lienzo
+  href: ./canvas-apps/getting-started.md
+  items:
+    - name: Inicios rápidos
+      items:
+        - name: Abrir una aplicación de ejemplo
+          href: ./canvas-apps/open-and-run-a-sample-app.md
+        - name: Generar una aplicación
+          items:
+            - name: Desde Common Data Service for Apps
+              href: ./canvas-apps/data-platform-create-app.md
+            - name: Desde SharePoint
+              href: ./canvas-apps/app-from-sharepoint.md
+            - name: Desde Excel
+              href: ./canvas-apps/get-started-create-from-data.md
+        - name: Personalizar un formulario de lista de SharePoint
+          href: ./canvas-apps/customize-list-form.md
+        - name: Crear una aplicación desde SharePoint
+          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
+    - name: Tutoriales
+      items:
+        - name: Personalizar una aplicación generada
+          items:
+            - name: Personalizar una pantalla de exploración
+              href: ./canvas-apps/customize-layout-sharepoint.md
+            - name: Personalizar un formulario
+              href: ./canvas-apps/customize-forms-sharepoint.md
+            - name: Personalizar una tarjeta
+              href: ./canvas-apps/customize-card.md
+        - name: Crear una aplicación desde cero
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: Compartir una aplicación
+          href: ./canvas-apps/share-app.md
+        - name: Insertar una aplicación en Power BI
+          href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: Descripción
+      items:
+        - name: Introducción a las fórmulas
+          href: ./canvas-apps/working-with-formulas.md
+        - name: Tablas y registros
+          href: ./canvas-apps/working-with-tables.md
+        - name: Formularios de datos
+          href: ./canvas-apps/working-with-forms.md
+        - name: Diseño del formulario de datos
+          href: ./canvas-apps/working-with-form-layout.md
+        - name: Tarjetas de datos
+          href: ./canvas-apps/working-with-cards.md
+        - name: Variables
+          href: ./canvas-apps/working-with-variables.md
+        - name: fórmulas
+          href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: Fechas y horas
+          href: ./canvas-apps/show-text-dates-times.md
+        - name: Orígenes de datos
+          href: ./canvas-apps/working-with-data-sources.md
+        - name: Comprensión de la integración de formularios de SharePoint
+          href: ./canvas-apps/sharepoint-form-integration.md
+        - name: Objeto visual personalizado de PowerApps
+          href: ./canvas-apps/powerapps-custom-visual.md
+        - name: Desarrollo de aplicaciones de lienzo
+          items:
+            - name: 'PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes'
+              href: ./canvas-apps/dev-enterprise-intro.md
+            - name: Compilación y certificación de conectores personalizados
+              href: ./canvas-apps/register-custom-api.md
+            - name: Integrar con sitios web y otras tecnologías
+              href: ./canvas-apps/embed-apps-dev.md
+            - name: Desarrollar aplicaciones que puedan ejecutarse sin conexión
+              href: ./canvas-apps/offline-apps.md
+            - name: Permitir que los clientes prueben las versiones de las aplicaciones
+              href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: Guías de procedimientos
+      items:
+        - name: Crear una aplicación a partir de una plantilla
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: Compilar una aplicación de Excel desde cero
+          href: ./canvas-apps/get-started-create-from-blank.md
+        - name: Personalizar una aplicación
+          items:
+            - name: Agregar y configurar un control
+              href: ./canvas-apps/add-configure-controls.md
+            - name: Agregar una pantalla
+              href: ./canvas-apps/add-screen-context-variables.md
+            - name: Agregar una conexión de datos
+              href: ./canvas-apps/add-data-connection.md
+            - name: Mostrar una lista de elementos
+              href: ./canvas-apps/add-gallery.md
+            - name: Mostrar elementos de distintas alturas
+              href: ./canvas-apps/gallery-dynamic-sizing.md
+            - name: Agregar un formulario
+              href: ./canvas-apps/add-form.md
+            - name: Mostrar el usuario actual
+              href: ./canvas-apps/show-current-user.md
+            - name: Agregar un control de lista
+              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
+            - name: Conectar listas mediante búsquedas
+              href: ./canvas-apps/sharepoint-lookup-fields.md
+            - name: Agregar un gráfico
+              href: ./canvas-apps/use-line-pie-bar-chart.md
+            - name: Agregar elementos multimedia
+              href: ./canvas-apps/add-images-pictures-audio-video.md
+            - name: Escanear un código de barras
+              href: ./canvas-apps/scan-barcode.md
+            - name: Agregar un flujo
+              href: ./canvas-apps/using-logic-flows.md
+            - name: Agregar una pantalla en desplazamiento
+              href: ./canvas-apps/add-scrolling-screen.md
+            - name: Crear una aplicación global
+              href: ./canvas-apps/global-apps.md
+        - name: Administrar la aplicación
+          items:
+            - name: Introducción a powerapps.com
+              href: ./canvas-apps/intro-maker-portal.md
+            - name: Editar una aplicación
+              href: ./canvas-apps/edit-app.md
+            - name: Cambiar el tamaño y la orientación de la pantalla
+              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+            - name: Cambiar el nombre y el icono de la aplicación
+              href: ./canvas-apps/set-name-tile.md
+            - name: Guardar y publicar una aplicación
+              href: ./canvas-apps/save-publish-app.md
+            - name: Eliminar una aplicación
+              href: ./canvas-apps/delete-app.md
+            - name: Restaurar la aplicación a una versión anterior
+              href: ./canvas-apps/restore-an-app.md
+        - name: Conectarse a datos
+          items:
+            - name: Administrar conexiones de datos
+              href: ./canvas-apps/add-manage-connections.md
+            - name: Conectarse a SharePoint
+              href: ./canvas-apps/connect-to-sharepoint.md
+            - name: Delegación
+              href: ./canvas-apps/delegation-overview.md
+            - name: Orígenes de datos delegables
+              href: ./canvas-apps/delegation-list.md
+            - name: Administrar puertas de enlace
+              href: ./canvas-apps/gateway-management.md
+            - name: Puertas de enlace
+              href: ./canvas-apps/gateway-reference.md
+        - name: Integrar con otras tecnologías
+          items:
+            - name: SharePoint Online
+              items:
+                - name: Introducción a la integración de SharePoint Online
+                  href: ./canvas-apps/sharepoint-scenario-intro.md
+                - name: Configurar listas de SharePoint Online
+                  href: ./canvas-apps/sharepoint-scenario-setup.md
+                - name: Generar una aplicación
+                  href: ./canvas-apps/sharepoint-scenario-generate-app.md
+                - name: Crear un flujo para aprobaciones
+                  href: ./canvas-apps/sharepoint-scenario-approval-flow.md
+                - name: Crear una aplicación desde cero
+                  href: ./canvas-apps/sharepoint-scenario-build-app.md
+                - name: Crear un informe de Power BI
+                  href: ./canvas-apps/sharepoint-scenario-build-report.md
+                - name: Publicar el informe de Power BI
+                  href: ./canvas-apps/sharepoint-scenario-publish-report.md
+                - name: Insertar un informe de Power BI
+                  href: ./canvas-apps/sharepoint-scenario-embed-report.md
+                - name: Crear un flujo para alertas
+                  href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
+                - name: Recorrer el escenario finalizado
+                  href: ./canvas-apps/sharepoint-scenario-summary.md
+            - name: Cognitive Services
+              href: ./canvas-apps/cognitive-services-api.md
+    - name: Referencia
+      items:
+        - name: Referencia sobre fórmulas
+          href: ./canvas-apps/formula-reference.md
+        - name: Referencia sobre controles
+          href: ./canvas-apps/reference-properties.md
+        - name: Referencia de conectores
+          href: ./canvas-apps/connections-list.md
+        - name: 'Requisitos del sistema, límites y configuración'
+          href: ./canvas-apps/limits-and-config.md
+    - name: Recursos
+      items:
+        - name: Trabajar con entornos
+          href: ./canvas-apps/working-with-environments.md
+        - name: Novedades
+          href: ./canvas-apps/release-notes.md
+        - name: Problemas y resoluciones habituales
+          href: ./canvas-apps/common-issues-and-resolutions.md
+        - name: Seminarios web próximos y recientes
+          href: ./canvas-apps/webinars-listing.md
+- name: Aplicaciones controladas por modelos
+  href: ./model-driven-apps/model-driven-app-overview.md
+  items:
+    - name: Información general de las aplicaciones de ejemplo
+      href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: Compartir una aplicación controlada por modelos
+      href: ./model-driven-apps/share-model-driven-app.md
+    - name: Ejecutar una aplicación controlada por modelos en un dispositivo móvil
+      href: ./model-driven-apps/run-app-client-model-driven.md
+- name: Common Data Service for Apps
+  href: ./common-data-service/data-platform-intro.md
+  items:
+    - name: Inicios rápidos
+      items:
+        - name: Crear una entidad
+          href: ./common-data-service/data-platform-create-entity.md
+        - name: Crear una entidad personalizada a partir de datos
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: Administrar campos
+          href: ./common-data-service/data-platform-manage-fields.md
+        - name: Crear un conjunto de opciones
+          href: ./common-data-service/custom-picklists.md
+        - name: Crear una relación
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: Crear una regla de negocio
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: Eliminar una entidad personalizada
+          href: ./common-data-service/data-platform-delete-entity.md
+    - name: Tutoriales
+      items:
+        - name: Crear una entidad personalizada que tiene componentes
+          href: ./common-data-service/create-custom-entity.md
+    - name: Ejemplos y recursos
+      href: ./common-data-service/samples-resources.md
+    - name: Para desarrolladores
+      href: ../developer/common-data-service/TOC.yml
+- name: Common Data Model
+  href: ../common-data-model/overview.md
