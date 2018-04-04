@@ -13,6 +13,10 @@
       items:
         - name: Abrir una aplicación de ejemplo
           href: ./canvas-apps/open-and-run-a-sample-app.md
+        - name: Crear una aplicación a partir de una plantilla
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: Crear una aplicación desde SharePoint
+          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
         - name: Generar una aplicación
           items:
             - name: Desde Common Data Service for Apps
@@ -21,10 +25,6 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: Desde Excel
               href: ./canvas-apps/get-started-create-from-data.md
-        - name: Personalizar un formulario de lista de SharePoint
-          href: ./canvas-apps/customize-list-form.md
-        - name: Crear una aplicación desde SharePoint
-          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
     - name: Tutoriales
       items:
         - name: Personalizar una aplicación generada
@@ -79,8 +79,8 @@
               href: ./canvas-apps/dev-appsource-test-drive.md
     - name: Guías de procedimientos
       items:
-        - name: Crear una aplicación a partir de una plantilla
-          href: ./canvas-apps/get-started-test-drive.md
+        - name: Personalizar un formulario de lista de SharePoint
+          href: ./canvas-apps/customize-list-form.md
         - name: Compilar una aplicación de Excel desde cero
           href: ./canvas-apps/get-started-create-from-blank.md
         - name: Personalizar una aplicación
@@ -145,6 +145,8 @@
               href: ./canvas-apps/gateway-management.md
             - name: Puertas de enlace
               href: ./canvas-apps/gateway-reference.md
+            - name: Solucionar problemas de Power Query
+              href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
         - name: Integrar con otras tecnologías
           items:
             - name: SharePoint Online
@@ -198,8 +200,8 @@
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: Compartir una aplicación controlada por modelos
       href: ./model-driven-apps/share-model-driven-app.md
-    - name: Ejecutar una aplicación controlada por modelos en un dispositivo móvil
-      href: ./model-driven-apps/run-app-client-model-driven.md
+    - name: Para desarrolladores
+      href: ../developer/model-driven-apps/TOC.yml
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:

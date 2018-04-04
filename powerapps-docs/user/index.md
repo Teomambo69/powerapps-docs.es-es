@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 302e64eb4668e16a26d391ac49b4057ca688f8cc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bc8b69c482bd8266b0915d079db05aacc847be19
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="find-and-run-apps-overview"></a>Información general sobre la búsqueda y ejecución de aplicaciones
 Los creadores de aplicaciones pueden crear aplicaciones de *lienzo* personalizadas basadas en roles y tareas que funcionan a su ritmo, ya sea un trabajador móvil sobre el terreno o un médico en un hospital con mucho trabajo. Los creadores de aplicaciones pueden personalizar casi todos los aspectos de una aplicación de lienzo y conectarse a varios orígenes de datos para ayudar a los usuarios a completar tareas específicas.
@@ -40,4 +40,4 @@ En esta sección se proporciona información sobre cómo buscar y ejecutar aplic
 ## <a name="next-steps"></a>Pasos siguientes
 * Asegúrese de que está usando una [plataforma de dispositivo y un explorador compatibles](../maker/canvas-apps/limits-and-config.md).
 * Para ejecutar aplicaciones de lienzo, descargue e instale PowerApps desde el [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps).
-* Para ejecutar aplicaciones controladas por modelos en un teléfono, descargue e instale Dynamics 365 para teléfonos desde el [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone). Para ejecutar aplicaciones controladas por modelos en una tableta, descargue Dynamics 365 para tabletas desde el [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8), [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) o la [Tienda Windows](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp). Para obtener más información, vea [Ejecución de una aplicación controlada por modelos en un dispositivo móvil](../maker/model-driven-apps/run-app-client-model-driven.md).
+* Para ejecutar aplicaciones controladas por modelos en un teléfono, descargue e instale Dynamics 365 para teléfonos desde el [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone). Para ejecutar aplicaciones controladas por modelos en una tableta, descargue Dynamics 365 para tabletas desde el [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8), [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) o la [Tienda Windows](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp). Para obtener más información, vea [Inicio rápido: Ejecución de una aplicación controlada por modelos en un dispositivo móvil](run-app-client-model-driven.md).
