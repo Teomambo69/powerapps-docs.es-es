@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3ceb9eae42e88e7cfb78492f9e58812481a0881d
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -60,7 +60,7 @@ Otros elementos incluyen:
 ## <a name="b"></a>B
 **[Back](functions/function-navigate.md)**: muestra la pantalla anterior.  
 
-**[Blank](functions/function-isblank-isempty.md)**: devuelve un valor *en blanco* que puede utilizarse para insertar un valor NULL en un origen de datos.
+**[En blanco](functions/function-isblank-isempty.md)**: devuelve un valor *en blanco* que puede utilizarse para insertar un valor NULL en un origen de datos.
 
 ## <a name="c"></a>C
 **[Calendar](functions/function-clock-calendar.md)**: recupera información sobre el calendario para la configuración regional actual.
@@ -165,7 +165,9 @@ Otros elementos incluyen:
 **[Hour](functions/function-datetime-parts.md)**: devuelve la parte de hora de un valor de fecha y hora.
 
 ## <a name="i"></a>I
-**[If](functions/function-if.md)**: devuelve un valor si una condición es true y otro valor si no lo es.  
+**[If](functions/function-if.md)**: devuelve un valor si una condición es true y otro valor si no lo es. 
+
+**[IfError](functions/function-iferror.md)**: detecta errores y proporciona un valor alternativo o lleva a cabo una acción. 
 
 **[IsBlank](functions/function-isblank-isempty.md)**: busca un valor [en blanco](functions/function-isblank-isempty.md).
 
@@ -282,6 +284,8 @@ Otros elementos incluyen:
 
 **[ShowColumns](functions/function-table-shaping.md)**: devuelve una tabla exclusivamente con las columnas seleccionadas.
 
+**[ShowError](functions/function-showerror.md)**: muestra un mensaje de error al usuario.
+
 **[Shuffle](functions/function-shuffle.md)**: reordena aleatoriamente los registros de una tabla.
 
 **[Sin](functions/function-trig.md)**: devuelve el seno de un ángulo especificado en radianes.
@@ -304,7 +308,7 @@ Otros elementos incluyen:
 
 **[Sum](functions/function-aggregates.md)**: calcula la suma de una expresión de tabla o un conjunto de argumentos.  
 
-**[Switch](functions/function-if.md)**: busca la coincidencia con un conjunto de valores y luego evalúa una fórmula correspondiente.
+**[Cambiar](functions/function-if.md)**: busca la coincidencia con un conjunto de valores y luego evalúa una fórmula correspondiente.
 
 ## <a name="t"></a>T
 **[Table](functions/function-table.md)**: crea una tabla temporal.  
