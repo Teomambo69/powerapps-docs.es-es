@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/15/2017
+ms.date: 03/27/2018
 ms.author: gregli
-ms.openlocfilehash: 40c933fb46883d7fa33ffa626d8ef317d4206060
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98cf32e1b379812e1d3175e6403b7c6fd7fb794b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="understand-delegation"></a>Descripción de delegación
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos:  las funciones **[Filtrar](functions/function-filter-lookup.md)**, **[Ordenar](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas.  Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan.  Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.  
@@ -30,7 +30,7 @@ La *delegación* es el lugar en el que la expresividad de las fórmulas de Power
 
 Esto se complica, y el motivo por el que existe este artículo, porque no todo lo que se puede expresar en una fórmula de PowerApps puede delegarse a todos los orígenes de datos.  El lenguaje de PowerApps imita el lenguaje de fórmulas de Excel, que se está diseñado con acceso completo e instantáneo a un libro completo en la memoria, con una amplia variedad de funciones numéricas y de manipulación de texto.  Como consecuencia, el lenguaje de PowerApps es mucho complejo de lo que la mayoría de orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
 
-**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.**  Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Siga las [sugerencias de los puntos azules](delegation-overview.md#blue-dot-suggestions) que marcan los lugares en los que no es posible la delegación.  Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede utilizar cualquier origen de datos y cualquier fórmula, ya que el procesamiento se puede realizar localmente si la fórmula no se puede delegar.  
+**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.**  Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Siga las [sugerencias de los puntos azules](delegation-overview.md#blue-dot-suggestions) que marcan los lugares en los que no es posible la delegación.  Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede utilizar cualquier origen de datos y cualquier fórmula, ya que el procesamiento se puede realizar localmente si la fórmula no se puede delegar. 
 
 ## <a name="delegable-data-sources"></a>Orígenes de datos delegables
 En la [lista de delegación](delegation-list.md) se encuentran todos los orígenes de datos que admiten la delegación orígenes y en hasta qué punto lo hacen.
@@ -77,13 +77,13 @@ Algunos elementos importantes que faltan en la lista anterior:
 En **Ordenar**, la fórmula solo puede ser el nombre de una columna individual y no puede incluir otros operadores o funciones.
 
 ### <a name="aggregate-functions"></a>Funciones de agregado
-**[Suma](functions/function-aggregates.md)**,  **[Promedio](functions/function-aggregates.md)**,  **[Min](functions/function-aggregates.md)** y  **[Max](functions/function-aggregates.md)**  pueden delegarse.  En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para más información, consulte la [lista de delegación](delegation-list.md).
+**[Suma](functions/function-aggregates.md)**,  **[Promedio](functions/function-aggregates.md)**,  **[Min](functions/function-aggregates.md)** y **[Max](functions/function-aggregates.md)** pueden delegarse.  En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para más información, consulte la [lista de delegación](delegation-list.md).
 
 Las funciones de recuento como  **[CountRows (ContarFilas)](functions/function-table-counts.md)**, **[ContarA](functions/function-table-counts.md)** y **[Contar](functions/function-table-counts.md)** no se pueden delegar.
 
 Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)** y **[VarP](functions/function-aggregates.md)**, no se pueden delegar.
 
-### <a name="other-functions"></a>Otras funciones
+## <a name="non-delegable-functions"></a>Funciones no delegables
 Las restantes funciones, entre las que se incluyen las siguientes, no admiten la delegación:
 
 * Forma de tabla: **[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[ShowColumns](functions/function-table-shaping.md)**, ...
@@ -104,11 +104,19 @@ Dado que **Buscar** y su origen de datos se pueden delegar, se puede encontrar u
 ## <a name="non-delegable-limits"></a>Límites no delegables
 Las fórmulas que no se puede delegar se procesarán localmente.  Esto permite usar todo el espectro del lenguaje de fórmulas de PowerApps.  Pero esto tiene un precio: primero deben pasarse todos los datos al dispositivo, lo que podría implicar la recuperación de una gran cantidad de datos a través de la red.  Esta operación puede tardar un tiempo, lo que daría la impresión de que la aplicación se ejecuta con lentitud, o incluso que está bloqueada.
 
-Para evitarlo, PowerApps impone un límite en la cantidad de datos que se pueden procesar localmente: 500 registros.  Elegimos este número para que tuviera acceso completo a los conjuntos de datos pequeños y pudiera pueda refinar su uso de conjuntos de datos grandes viendo los resultados parciales.
+Para evitarlo, PowerApps impone un límite en la cantidad de datos que se pueden procesar localmente: 500 registros de forma predeterminada.  Elegimos este número para que tuviera acceso completo a los conjuntos de datos pequeños y pudiera pueda refinar su uso de conjuntos de datos grandes viendo los resultados parciales.
 
 Obviamente si se usa este recurso es preciso tener cuidado, ya que puede ser confuso para los usuarios.  Por ejemplo, considere una función **Filtrar** función con una fórmula de selección que no se puede delegar y con un origen de datos de más de un millón de registros.  Como el filtrado se realizará localmente, solo se examinarán los primeros 500 registros.  Si el registro deseado es el 501, o el 500 001, **Filtrar** no lo tendrá en cuenta o no lo devolverá.
 
 Otro lugar en el que puede producirse confusión son las funciones de agregado.  Tomemos como ejemplo **Promedio** en una columna con el mismo origen de datos de un millón de registros.  Como **Promedio** aún no se puede delegar, solo se obtendrá el promedio de los primeros 500 registros.  Se debe tener cuidado, ya que algún usuario de la aplicación podría malinterpretar una respuesta parcial como una respuesta completa.
+
+## <a name="changing-the-limit"></a>Cambio del límite
+
+El número predeterminado de registros es de 500.  Para cambiar este número, vaya a la pestaña Archivo, seleccione Configuración de la aplicación en el panel de navegación, situado a la izquierda, y busque en Características experimentales.  Ahí encontrará la opción "Límite de filas de datos para las consultas no delegables", que puede cambiar de 1 a 2000.  Esta configuración se aplica a toda la aplicación.
+
+En algunos casos sabrá que 2000 (o 1000 o 1500) será suficiente para satisfacer las necesidades de su escenario.  Puede aumentar esta cifra con precaución para que se ajuste a su escenario.  Tenga en cuenta que, a medida que aumenta esta cifra, el rendimiento de la aplicación puede verse afectado, sobre todo en las tablas anchas que contienen muchas columnas.  La mejor respuesta sigue siendo delegar siempre lo que se pueda.
+
+Para asegurarse de que la aplicación se pueda adaptar a grandes conjuntos de datos, reduzca esta opción a 1.  Todo lo que no se pueda delegar ahora devolverá un único registro, que debería ser fácil de detectar al probar la aplicación.  De esta manera se pueden evitar sorpresas al intentar llevar a cabo una prueba de concepto de la aplicación para producción.
 
 ## <a name="blue-dot-suggestions"></a>Sugerencias de puntos azules
 Para que sea más fácil saber lo que se va a delegar y lo que no, se proporciona sugerencias de puntos azules cuando una fórmula algo que no se puede delegar.
