@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: cf484054928a34eb3f3383acbfc9490bc95a0aa3
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación controlada por modelos en un dispositivo móvil
 
@@ -49,4 +49,4 @@ Vaya a la [página principal de Dynamics 365](https://home.dynamics.com) o escri
 En este tutorial ha aprendido a ejecutar una aplicación controlada por modelos en un dispositivo móvil. También puede ejecutar aplicaciones de lienzo en un dispositivo móvil.
 
 > [!div class="nextstepaction"]
-> [Ejecución de una aplicación controlada por modelos en un dispositivo móvil](run-app-client.md)
+> [Ejecución de una aplicación de lienzo en un dispositivo móvil](run-app-client.md)
