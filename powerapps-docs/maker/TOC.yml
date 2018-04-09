@@ -41,6 +41,12 @@
           href: ./canvas-apps/share-app.md
         - name: Insertar una aplicación en Power BI
           href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: Ejemplos
+      items:
+        - name: Aplicación de informe de gastos
+          href: ./canvas-apps/expense-report-install.md
+        - name: Aplicación de servicio de asistencia
+          href: ./canvas-apps/help-desk-install.md
     - name: Descripción
       items:
         - name: Introducción a las fórmulas
@@ -65,6 +71,8 @@
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: Objeto visual personalizado de PowerApps
           href: ./canvas-apps/powerapps-custom-visual.md
+        - name: Transformación de Formularios de InfoPath a PowerApps
+          href: ./canvas-apps/transform-infopath.md
         - name: Desarrollo de aplicaciones de lienzo
           items:
             - name: 'PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes'
