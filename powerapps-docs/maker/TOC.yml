@@ -139,6 +139,8 @@
               href: ./canvas-apps/add-manage-connections.md
             - name: Conectarse a SharePoint
               href: ./canvas-apps/connect-to-sharepoint.md
+            - name: Preparación de datos de Excel
+              href: ./canvas-apps/how-to-excel-tips.md
             - name: Delegación
               href: ./canvas-apps/delegation-overview.md
             - name: Orígenes de datos delegables
