@@ -1,11 +1,11 @@
 ---
-title: 'Solución de problemas: no se puede crear o recuperar un mashup para esta base de datos | Microsoft Docs'
-description: Resuelva problemas mediante la creación de una entidad personalizada con CDS y Power Query mediante los cambios del administrador a las restricciones de AAD.
+title: Solución de problemas de Power Query | Microsoft Docs
+description: Resuelva problemas con Power Query para crear una entidad personalizada en Common Data Service para aplicaciones
 services: ''
 suite: powerapps
 documentationcenter: na
 author: mllopis
-manager: kfend
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -15,43 +15,32 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 919d88309f4f9bc0e73f63ab5fd5401194a2f264
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: dafed76565a4bd3fb3e2822319d344f49376b4fc
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="troubleshooting---unable-to-create-or-retrieve-a-mashup-for-this-database"></a>Solución de problemas: no se puede crear o recuperar un mashup para esta base de datos
-Al usar la característica **Nuevas entidades de datos (Technical Preview)**, puede encontrarse un error similar al siguiente:
+# <a name="troubleshooting-power-query"></a>Solución de problemas de Power Query
+Cuando usa Power Query para crear una entidad personalizada que contiene datos de orígenes externos, puede aparecer este error:
 
-    *Unable to create or retrieve a mashup for the current database*
+`Your Azure Active Directory administrator has set a policy that prevents you from using this feature. Please contact your administrator, who can grant permissions for this feature on your behalf.`
 
-Esto puede ocurrir cuando se utiliza la característica para crear *entidades personalizadas* en **Common Data Service (CD)** con datos procedentes de orígenes de datos externos mediante **Power Query**. El error se desencadena cuando **Power Query** no puede acceder a los datos que hay de la organización en **PowerApps o CDS**. Hay dos escenarios en los que esto puede ocurrir:
+El error aparece si Power Query no tiene acceso a los datos de la organización en PowerApps o en Common Data Service. Esta situación se da en dos conjuntos de circunstancias:
 
-* Un administrador de inquilinos de **Azure Active Directory** (AAD) ha deshabilitado la capacidad de los usuarios para consentir que las aplicaciones accedan a los datos de la compañía en su nombre.
-* Uso de un inquilino de Active Directory no administrado. Un inquilino no administrado es un directorio sin un administrador global creado para completar una oferta de suscripción de autoservicio. Para corregir esta situación, *en primer lugar* los usuarios deben convertirse en un inquilino administrado y, después, seguir una de las dos soluciones a este problema que se describen en la sección siguiente.
+* Un administrador de inquilinos de Azure Active Directory (AAD) ha deshabilitado la capacidad de los usuarios de dar su consentimiento para que las aplicaciones tengan acceso a los datos de la compañía en su nombre.
+* Uso de un inquilino de Active Directory no administrado. Un inquilino no administrado es un directorio sin un administrador global creado para completar una oferta de suscripción de autoservicio. Para corregir esta situación, los usuarios han de convertirse primero en un inquilino administrado y luego seguir una de las dos soluciones a este problema que se describen en la sección siguiente.
 
-Hay dos formas de solucionar el problema que se ha descrito anteriormente:
+Para resolver este problema, el administrador de AAD debe seguir los pasos descritos en cualquiera de los procedimientos más adelante en este tema.
 
-* Que el administrador de AAD siga los pasos necesarios para que los usuarios den su consentimiento para que las aplicaciones accedan a los datos de la compañía
-* Que el administrador de AAD permita a **Power Query** acceder a los datos
+## <a name="allow-users-to-consent-to-apps-that-access-company-data"></a>Permita que los usuarios den su consentimiento en aplicaciones con acceso a datos de la compañía
+Puede que este enfoque sea el más sencillo, pero concede permisos menos restrictivos.
 
-A continuación se describen todos los pasos necesarios para estas soluciones.
+1. En [https://portal.azure.com](https://portal.azure.com), abra la hoja **Azure Active Directory** y seleccione **Configuración de usuario**.
+1. Seleccione **Sí** en **Los usuarios pueden permitir que las aplicaciones accedan a los datos de la compañía en su nombre**  y, después, seleccione **Guardar**.
 
-## <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>Concesión del permiso para que los usuarios den su consentimiento para que las aplicaciones accedan a los datos de la empresa
-
-Puede ponerse en contacto con el administrador de inquilinos de AAD para que este realice los pasos siguientes, lo que permite que los usuarios den su consentimiento para que todas las aplicaciones accedan a los datos de la compañía:
-
-1. Visite [https://portal.azure.com](https://portal.azure.com)
-2. Abra la hoja **Azure Active Directory**.
-3. Seleccione **Configuración de usuario**.
-4. Seleccione **Sí** en **Los usuarios pueden permitir que las aplicaciones accedan a los datos de la compañía en su nombre**  y, después, seleccione **Guardar**.
-5. Una vez que haya completado ese proceso, se resolverá el problema.
-
-Es posible que este enfoque sea el más sencillo, pero permite para permisos menos restrictivos que la opción siguiente.
-
-## <a name="allowing-power-query-to-access-company-data"></a>Concesión del permiso para que Power Query acceda a los datos de la empresa
-Otra solución es que el administrador de inquilinos dé su consentimiento a **Power Query** sin modificar los permisos de todos los inquilinos. El administrador de inquilinos debe dar los siguientes pasos lograrlo:
+## <a name="allow-power-query-to-access-company-data"></a>Permita que Power Query tenga acceso a los datos de la compañía
+Como alternativa, el administrador de inquilinos puede dar su consentimiento a Power Query sin modificar los permisos de todo el inquilino.
 
 1. Instale [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps).
 2. Ejecute los siguientes comandos de PowerShell:
