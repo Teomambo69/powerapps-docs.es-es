@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d26b7a086e75a52d9da3369196f59d3fb439f50b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 Puede crear una entidad personalizada para almacenar datos específicos de su organización. Después, puede mostrar dichos datos si desarrolla una aplicación que haga referencia a la entidad. Después de crear una entidad, puede [crear o modificar uno o varios de sus campos](data-platform-manage-fields.md) y [crear relaciones entre entidades](data-platform-entity-lookup.md).
@@ -37,7 +37,7 @@ En estas instrucciones se mostrará cómo crear manualmente una entidad personal
 3. En el campo **Nombre para mostrar**, escriba un nombre que sea fácilmente reconocible para hacer referencia a esta entidad en el futuro. Esto también se usa en formularios, gráficos y otros objetos creados con esta entidad. Observará que se rellenan otros dos campos:
 
     * Nombre para mostrar en plural: se usa al interactuar con esta entidad desde PowerApps o Flow, y se usa como el nombre de la entidad en la API web de Common Data Service. El nombre en plural se debe generar de forma automática, pero se puede cambiar.
-    * Nombre: este es el nombre único de la entidad, no puede contener caracteres especiales ni espacios y debe ser único. El nombre también incluye un prefijo que se estableció cuando se creó el entorno y que se usa para garantizar que las entidades que se crean se puedan importar y exportar en otros entornos sin que estén en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service.
+    * Nombre. Se trata del nombre único de la entidad, no puede contener caracteres especiales ni espacios y debe ser único. El nombre también incluye un prefijo que se configura al crear el entorno y que se usa para garantizar que las entidades que se crean se puedan importar y exportar en otros entornos sin que entren en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service.
 
     > [!NOTE]
     > Los campos **Nombre para mostrar** se pueden actualizar en cualquier momento para mostrarlos de otra forma en las aplicaciones; el campo **Nombre** no se puede cambiar después de guardar la entidad, ya que se podría interrumpir una aplicación existente.
