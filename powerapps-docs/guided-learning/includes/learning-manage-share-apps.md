@@ -24,7 +24,7 @@ Si decide notificar a los usuarios por correo electrónico, todos los usuarios c
 No vamos a entrar en detalles sobre los permisos y licencias, pero queremos explicar un par de conceptos básicos relativos al uso compartido:
 
 * Los usuarios y colaboradores necesitan permisos para todas las conexiones de datos y puertas de enlace que utilice una aplicación compartida. Algunos permisos vienen implícitos en la aplicación, pero otros se deben conceder explícitamente.
-* Si la aplicación usa entidades de Common Data Service, los usuarios y los colaboradores necesitan tener acceso a la base de datos de Common Data Service. Los colaboradores también necesitarán una licencia de PowerApps "P2" si trabajan directamente con entidades.
+* Si la aplicación usa entidades de Common Data Service for Apps, los usuarios y los colaboradores necesitan tener acceso a la base de datos de Common Data Service for Apps. Los colaboradores también necesitarán una licencia de PowerApps "P2" si trabajan directamente con entidades.
 
 Compartir aplicaciones es fácil y es una excelente manera de hacer que una aplicación que le resulta útil se ponga a disposición de personas de su organización. En el siguiente tema explicaremos cómo controlar qué versión de una aplicación está activa cuando utiliza y comparte la aplicación.
 
