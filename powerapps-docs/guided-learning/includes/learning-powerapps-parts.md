@@ -4,6 +4,7 @@ En el primer tema del Aprendizaje guiado, conocerá las partes principales de Po
 * **PowerApps Studio**: cree aplicaciones eficaces con herramientas visuales fáciles de usar.
 * **PowerApps Mobile**: ejecute aplicaciones en dispositivos Android, iOS y Windows.
 * **Centro de administración de PowerApps**: administre los entornos de PowerApps y otros componentes.
+* **Common Data Service for Apps**: integre datos empresariales mediante Common Data Service
 
 No esperamos que dedique una gran cantidad de tiempo a aprender qué *es* PowerApps, pero creemos que profundizar un poco más resulta útil.
 
@@ -33,6 +34,11 @@ Si crea aplicaciones, aquí es donde pasará la mayor parte del tiempo. Aprender
 El **centro de administración de PowerApps** es el lugar central para administrar PowerApps para una organización. Aquí es donde se definen los diferentes **entornos**, que hospedan aplicaciones, conexiones de datos y otros elementos. En el centro de administración también se crean las bases de datos de Common Data Service, y se administran los permisos y las directivas de datos.
 
 ![Centro de administración de PowerApps](./media/learning-powerapps-parts/powerapps-admin-center.png)
+
+### <a name="microsoft-common-data-service-for-apps"></a>Microsoft Common Data Service for Apps
+**Common Data Service for Apps** facilita la integración de datos empresariales de varios orígenes. El servicio cuenta con una instancia de **Common Data Service** que incluye muchas **entidades** comunes a las aplicaciones y los procesos empresariales. El servicio almacena los datos de forma confiable y escalable, y hace que los datos estén disponibles, con el fin de que varias aplicaciones puedan usarlos. Las aplicaciones pueden haberse compilado en PowerApps, Dynamics 365, otras aplicaciones de Microsoft o aplicaciones de terceros. En la imagen siguiente se muestra una parte de una entidad en web.powerapps.com.
+
+![Entidad Contact de PowerApps](./media/learning-powerapps-parts/powerapps-contact.png)
 
 El siguiente tema ofrece información sobre el conjunto de las tecnologías relacionadas con las que PowerApps trabaja para crear un ecosistema eficaz para el desarrollo de aplicaciones.
 

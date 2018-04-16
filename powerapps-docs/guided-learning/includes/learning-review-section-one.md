@@ -7,12 +7,7 @@ PowerApps se conecta a los **orígenes de datos y servicios en la nube** que ya 
 La forma más fácil empezar a trabajar con PowerApps es ejecutar los ejemplos, practicar con las plantillas y generar aplicaciones con sus propios datos. Ha visto cómo generar una aplicación a partir de una lista de SharePoint. Ya tiene una base sólida, por lo que en muy poco tiempo podrá compilar y compartir aplicaciones. 
 
 ## <a name="whats-next"></a>¿Qué es lo próximo?
-¡Enhorabuena! Ha terminado la primera sección de Aprendizaje guiado de PowerApps. Independientemente la experiencia que tenía al empezar, esperamos que ahora tenga una imagen muy clara de lo que es PowerApps y cómo puede empezar a crear aplicaciones. Hemos incluido varios recursos útiles y descargas a continuación, por lo que debe seguir leyendo el aprendizaje guiado. En este momento, puede elegir a dónde desea dirigirse a continuación:
-
-* [Generate an app (SharePoint list)](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1) [Generación de una aplicación (lista de Sharepoint)]
-* [Generate an app (Common Data Service)](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) [Generación de una aplicación (Common Data Service)] 
-
-Ambas secciones muestran cómo generar y personalizar una aplicación. La sección de SharePoint tiene un poco más de información sobre la aplicación generada, mientras que la de Common Data Service incluye personalizaciones más complejas. Indudablemente puede recorrer ambas secciones, pero conviene que elija por cuál desea empezar. 
+¡Enhorabuena! Ha terminado la primera sección de Aprendizaje guiado de PowerApps. Independientemente la experiencia que tenía al empezar, esperamos que ahora tenga una imagen muy clara de lo que es PowerApps y cómo puede empezar a crear aplicaciones. Hemos incluido varios recursos útiles y descargas a continuación, por lo que debe seguir leyendo el aprendizaje guiado. Si está listo para más, obtenga información sobre cómo [crear y personalizar una aplicación desde una lista de SharePoint](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1)
 
 ## <a name="powerapps-resources"></a>Recursos de PowerApps
 * Investigue más a fondo la [documentación de PowerApps](https://docs.microsoft.com/powerapps/)
