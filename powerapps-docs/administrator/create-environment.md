@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 1d8034d877aee9131a98517d981ac68275b49a4d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a9138c636d70ea4701cbf685c3d7c7965c0e8469
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quickstart-create-an-environment"></a>Inicio rápido: Creación de un entorno
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirve como contenedor para separar aplicaciones que pueden tener otros roles, requisitos de seguridad o públicos de destino. PowerApps crea automáticamente un único entorno predeterminado para cada inquilino, que se comparte entre todos los usuarios de ese inquilino.
@@ -30,7 +30,7 @@ En este tutorial, obtendrá información sobre cómo crear un entorno y una base
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial rápido, se requieren los elementos siguientes:
- * Plan 2 de PowerApps o Plan 2 de Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
+ * Licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
  * Los permisos Administrador de entorno de PowerApps, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>Iniciar sesión en el Centro de administración de PowerApps

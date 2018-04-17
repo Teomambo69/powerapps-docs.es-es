@@ -14,16 +14,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 2215d02af78d0983292cfca8c9f8ac4f6737a3d0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: cc068fc475643ae68e74d22981679dd9b038eb83
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Crear una base de datos de Common Data Service
 Puede crear una base de datos y aplicaciones usando Common Data Service como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como **Administrador de entorno**. Además, debe tener asignada la licencia adecuada. Para más información sobre la compra de un plan para utilizar Common Data Service, consulte la [información sobre los precios](pricing-billing-skus.md).
 
-Existen tres maneras de crear una base de datos:
+Existen varias maneras de crear una base de datos:
 
 * En el Centro de administración de PowerApps
 * En el panel **Entidades** de powerapps.com

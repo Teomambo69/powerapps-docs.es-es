@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: ecfcc5ca60ac453d1cbeb252d6ad97085934c3b2
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: debe9dd0ab3aa948537820cccd3304a6b4225c54
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>Inicio rápido: Descarga de una lista de aplicaciones creadas en los entornos
 Si es un Administrador de entorno, puede ver y descargar una lista de aplicaciones creadas en los entornos que está administrando. Si es un Administrador global de Office 365 o de inquilinos de Azure Active Directory, puede ver y descargar la lista de aplicaciones creadas en todos los entornos de la organización.
@@ -28,7 +28,7 @@ En este tutorial, obtendrá información sobre cómo descargar una lista de apli
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial rápido, se requieren los elementos siguientes:
- * Plan 2 de PowerApps o Plan 2 de Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
+ * Licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
  * Los permisos Administrador de entorno de PowerApps, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>Iniciar sesión en el Centro de administración de PowerApps
