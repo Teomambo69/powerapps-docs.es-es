@@ -15,13 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 3eef0259c97819de9d98af248457faa90e373323
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.openlocfilehash: cc1483fbaffaac51f3c0999996cb3f91fac9e64a
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="find-and-run-apps-overview"></a>Información general sobre la búsqueda y ejecución de aplicaciones
+# <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?
 Los creadores de aplicaciones pueden crear aplicaciones de *lienzo* personalizadas basadas en roles y tareas que funcionan a su ritmo, ya sea un trabajador móvil sobre el terreno o un médico en un hospital con mucho trabajo. Los creadores de aplicaciones pueden personalizar casi todos los aspectos de una aplicación de lienzo y conectarse a varios orígenes de datos para ayudar a los usuarios a completar tareas específicas.
 
 Los creadores de aplicaciones también pueden crear aplicaciones *controladas por modelos* que se generen a partir de los datos de la organización. Las aplicaciones controladas por modelos son aplicaciones complejas y con capacidad de respuesta que ayudan a los usuarios a centrarse en su trabajo y no a tener que acordarse de realizar un conjunto de pasos manuales. Los creadores de aplicaciones controladas por modelos determinan qué datos necesita una aplicación y cómo se relacionará con otros datos, definen el proceso de negocio que sigue la aplicación y, después, agregan y configuran los componentes que aplican ese proceso. A diferencia de las aplicaciones de lienzo, que son muy personalizables, el diseño de las aplicaciones controladas por modelos se determina en gran medida por los componentes que el fabricante agrega a la aplicación.
