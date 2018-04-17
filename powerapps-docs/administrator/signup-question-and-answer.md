@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 01614846f0b1172e23e2399aa0f1f03f646df84d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="manage-licenses-in-my-org"></a>Administración de licencias en la organización
 En este tema se describe la forma en que los usuarios de la organización pueden obtener acceso para usar PowerApps y cómo controlar el servicio de PowerApps.
@@ -60,9 +60,9 @@ Por último, si su empresa desea restringir el uso de datos exclusivos de la org
 
 ## <a name="administration-of-powerapps"></a>Administración de PowerApps
 ### <a name="why-has-the-powerapps-icon-appeared-in-the-office-365-app-launcher"></a>¿Por qué ha aparecido el icono de PowerApps en el iniciador de aplicaciones de Office 365?
-Como se anunció en agosto, ahora Microsoft PowerApps es una parte fundamental del conjunto de Office 365. Tres meses después de este anuncio, se habilitó Microsoft PowerApps como servicio como parte de las SKU de Office 365 existentes. Como ahora los usuarios de todo el mundo pueden utilizar Microsoft PowerApps, ha aparecido en el iniciador de aplicaciones para ellos. Para saber qué SKU de Office 365 incluyen PowerApps, consulte [Licensing overview](pricing-billing-skus.md) (Introducción a las licencias).
+Microsoft PowerApps es una parte fundamental del conjunto de aplicaciones de Office 365 y está habilitado como un servicio que forma parte de la SKU de Office 365. Puesto que ahora los usuarios de todo el mundo pueden usar Microsoft PowerApps, este se muestra en la sección "Todas las aplicaciones" de la pantalla del iniciador de aplicaciones. Para saber qué SKU de Office 365 incluyen PowerApps, consulte [Licensing overview](pricing-billing-skus.md) (Introducción a las licencias).
 
-Si desea quitar el icono de PowerApps del iniciador de aplicaciones de forma predeterminada, consulte la sección siguiente.
+Si quiere que el icono de PowerApps no se muestre en la sección "Todas las aplicaciones" de forma predeterminada, consulte la sección siguiente.
 
 ### <a name="how-do-i-remove-powerapps-from-existing-users"></a>¿Cómo se quita PowerApps de los usuarios existentes?
 Si se ha asignado una licencia del plan 1 de PowerApps o del plan 2 de PowerApps a un usuario, puede realizar los pasos siguientes para quitar la licencia de PowerApps a dicho usuario:

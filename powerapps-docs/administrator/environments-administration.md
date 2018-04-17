@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0a6080b7ceb14de14b7ad6ae2f851843bac0c73b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>Administrar entornos en PowerApps
 En el [Centro de administración de PowerApps][1], administre los entornos que ha creado y aquellos a los que se le ha agregado con el rol Administrador de entorno o Administrador del sistema. Desde el centro de administración, puede realizar estas acciones administrativas:
@@ -47,10 +47,10 @@ Para administrar un entorno en el centro de administración de PowerApps, debe t
 
 * El rol Administrador global de su inquilino de Azure AD o de Office 365.
 
-También necesita Plan 2 de PowerApps o de Flow para acceder al centro de administración. Para más información, consulte la [página de precios de PowerApps][3].
+También necesita una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow para acceder al centro de administración. Para más información, consulte la [página de precios de PowerApps][3].
 
 > [!IMPORTANT]
-> Los cambios que realice en el centro de administración de PowerApps afectan al [centro de administración de Flow][4], y viceversa.
+> Los cambios que realice en el centro de administración de PowerApps afectan al [centro de administración de Microsoft Flow][4] y viceversa.
 
 ## <a name="create-an-environment"></a>Creación de un entorno
 Para obtener instrucciones sobre cómo crear un entorno, vea [Quickstart: Create an environment](create-environment.md) (Inicio rápido: Creación de un entorno).
@@ -66,7 +66,7 @@ Si es miembro del rol Administrador global del inquilino de Azure AD o de Office
 1. Abra el [centro de administración de PowerApps][1], busque el entorno cuyo nombre vaya a cambiar en la lista y haga clic o pulse en él.
 
     ![](./media/environment-admin/environment-list-updated3.png)
- 
+
 2. Haga clic o pulse en **Detalles**.
 
     ![](./media/environment-admin/environment-rename-details-2.png)
@@ -175,26 +175,57 @@ Los datos de una organización deben protegerse para que no se compartan con usu
 ![](./media/environment-admin/data-policies.png)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-### <a name="how-many-environments-can-i-create"></a>¿Cuántos entornos puedo crear?
-Cada usuario puede crear hasta dos entornos de prueba y dos entornos de producción, en función de sus licencias.
+### <a name="how-many-environments-and-databases-can-i-create"></a>¿Cuántos entornos y cuántas bases de datos puedo crear?
+Puede crear hasta dos entornos de prueba y dos entornos de producción, en función de sus licencias. Para obtener más información, consulte [este vínculo](environments-overview.md#creating-an-environment). Cada usuario puede aprovisionar dos bases de datos en dos entornos de prueba y dos entornos de producción, en función de sus licencias. 
 
-### <a name="how-many-databases-can-i-provision"></a>¿Cuántas bases de datos puedo aprovisionar?
-Cada usuario puede aprovisionar dos bases de datos en dos entornos de prueba y dos entornos de producción, en función de sus licencias. El usuario necesita un **Administrador de entorno** en el entorno.
+### <a name="which-license-includes-common-data-service"></a>¿Qué licencia incluye Common Data Service?
+Plan 2 de PowerApps.  Consulte la [página de precios de PowerApps][3] para más información sobre todos los planes que incluyen esta licencia.
+
+### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Al intentar crear un entorno, obtengo un error. ¿Cómo puedo resolver esto?
+Si obtiene el mensaje de error "El plan no es compatible con el tipo de entorno seleccionado o se alcanzó el límite de ese tipo de entorno." , puede que se deba a uno de estos dos motivos:
+
+1. Ya ha usado la cuota de creación de un tipo de entorno específico. Supongamos que estaba creando un entorno de prueba y ha recibido este mensaje de error. Significa que ya ha aprovisionado dos entornos de prueba. Puede ver todos los entornos en el [centro de administración de PowerApps][1].
+Si lo prefiere, puede eliminar un entorno existente de ese tipo específico y crear otro nuevo. Asegúrese de no perder los datos, las aplicaciones, los flujos y otros recursos que quiera conservar.
+
+2. No tiene ninguna cuota de creación de ese tipo de entorno específico. Compruebe qué tipo de entorno puede crear [aquí](environments-overview.md#creating-an-environment).
+
+Si recibe cualquier otro mensaje de error o tiene alguna pregunta más, póngase en contacto con nosotros [aquí][5].
+
+### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Al intentar crear una base de datos en un entorno, obtengo un error. ¿Cómo puedo resolver esto?
+En los escenarios siguientes, puede que obtenga un error al intentar crear una base de datos:
+
+1. **Entorno predeterminado**: actualmente, la creación de una base de datos no es compatible con el entorno predeterminados del inquilino. 
+
+2. **Entorno para un uso individual**: puede obtener un entorno para su uso individual registrándose en el plan de comunidad de PowerApps. Si aún no ha creado la base de datos, no podrá aprovisionar ninguna base de datos en el entorno para su uso individual. 
+
+3. **Entorno en una región diferente de la principal de su inquilino de AAD**: actualmente, solo puede aprovisionar una base de datos en los entornos creados en la región principal de su inquilino de Azure Active Directory. La capacidad de aprovisionar una base de datos en otras regiones estará disponible próximamente. Por lo tanto, asegúrese de que la región y la ubicación predeterminada del inquilino coincidan para poder crear una base de datos en ella.
+
+4. **Creación de bases de datos no admitida en algunas regiones**: en determinadas regiones, aún no se pueden crear bases de datos. Por ejemplo, los países de Sudamérica. Así pues, si la ubicación principal de su inquilino está en Sudamérica, por el momento no podrá aprovisionar una base de datos en ningún entorno. 
+    
+Estamos trabajando para admitir todos los casos mencionados anteriormente.
+Si recibe cualquier otro mensaje de error o tiene alguna pregunta más, póngase en contacto con nosotros [aquí][5].
+
+### <a name="when-will-my-trial-environment-expire"></a>¿Cuándo expirará el entorno de prueba?   
+Los entornos de prueba expiran una vez transcurridos 30 días de su creación. Si no quiere que su entorno expire, podrá convertirlo en un entorno de producción. Esta funcionalidad estará disponible pronto, pero, mientras tanto, no expirará ningún entorno de prueba.
+
+### <a name="does-my-current-database-created-with-previous-version-of-the-common-data-service-also-gets-counted-in-the-quota"></a>¿Mi base de datos actual creada con una versión anterior de Common Data Service también se contabiliza en la cuota?
+Si tenía una base de datos creada con una versión anterior de Common Data Service, también se contabilizará en la cuota de su entorno de producción. Si crea una base de datos en un entorno anterior al 15 de marzo de 2018, se contabilizará en el entorno de producción.
 
 ### <a name="can-i-rename-an-environment"></a>¿Puedo cambiar el nombre de un entorno?
 Sí, esta funcionalidad está disponible en el centro de administración de PowerApps. Para más información, consulte [Administración de entornos en PowerApps](environments-administration.md#rename-your-environment).
 
 ### <a name="can-i-delete-an-environment"></a>¿Puedo eliminar un entorno?
 Sí, esta funcionalidad está disponible en el centro de administración de PowerApps. Para más información, consulte [Administración de entornos en PowerApps](environments-administration.md#delete-your-environment).
+Tenga en cuenta que, actualmente, no puede eliminar un entorno de producción que contenga una base de datos que use la última versión de Common Data Service. Esta opción estará disponible próximamente.
 
 ### <a name="as-an-environment-admin-can-i-view-and-manage-all-resources-apps-flows-apis-etc-for-an-environment"></a>Como Administrador de entorno, ¿puedo ver y administrar todos los recursos (aplicaciones, flujos, API, etc.) para un entorno?
 Sí, la capacidad para ver las aplicaciones y los flujos de un entorno está disponible en el centro de administración de PowerApps. Para más información, consulte [Visualización de una instancia de PowerApps creada en su organización](admin-view-apps.md).
 
-### <a name="which-license-includes-common-data-service"></a>¿Qué licencia incluye Common Data Service?
-Plan 2 de PowerApps.  Consulte la [página de precios de PowerApps][3] para más información sobre todos los planes que incluyen esta licencia.
+
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
+[5]: https://go.microsoft.com/fwlink/?linkid=871628

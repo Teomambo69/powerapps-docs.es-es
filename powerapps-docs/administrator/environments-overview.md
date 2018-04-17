@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 1747eeb669411e1069d9767d590866d8a4e6eecb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="environments-overview"></a>Información general sobre los entornos
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirven como contenedores para separar aplicaciones que pueden tener roles distintos, otros requisitos de seguridad o distintos públicos objetivos. Cómo se elige aprovechar los entornos depende de la organización y de las aplicaciones que se intenta compilar. Por ejemplo:
@@ -97,39 +97,20 @@ La licencia determina si se pueden crear entornos.
 
 | Licencia | Se permite crear entornos |
 | --- | --- |
-| PowerApps P2 |√ |
-| Versión de prueba de PowerApps P2 |√ |
+| PowerApps P2 |√ (Dos entornos de producción y dos de prueba)|
+| Versión de prueba de PowerApps P2 |√ (Dos entornos de prueba)|
 | PowerApps P1 |x |
 | Versión de prueba de PowerApps P1 |x |
 | Planes de Dynamics 365 |x |
 | Planes de Office 365 |x |
 | Planes de equipos y aplicaciones de Dynamics 365 |x |
 
-Cada usuario puede crear un máximo de dos entornos de prueba. El P2 de PowerApps también puede crear hasta dos entornos de producción.
 
 ### <a name="where-can-environments-be-created"></a>¿Dónde se pueden crear entornos?
 Podrá crear entornos nuevos desde [PowerApps.com][2] y desde el [centro de administración de PowerApps][1]. Si crea un entorno, se le agregará automáticamente al rol Administrador de entorno para ese entorno. No hay límite para el número de entornos en los que se puede participar como miembro del rol Administrador de entorno o Creador de entorno. Para obtener más información sobre los entornos, vea [Administer environments in PowerApps](environments-administration.md) (Administración de entornos en PowerApps). Para obtener instrucciones sobre cómo crear un entorno, vea [Create an environment](create-environment.md) (Creación de un entorno).
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
-## <a name="what-will-change-for-powerapps-preview-users"></a>¿Qué cambiará para los usuarios de PowerApps versión preliminar?
-Cualquier usuario que haya participado en la versión preliminar de PowerApps verá algunos cambios en su experiencia debido a la introducción de los entornos.  La tabla siguiente muestra qué pueden esperar los usuarios en Estados Unidos y fuera de Estados Unidos:
-
-| Usuario | Qué sucede |
-| --- | --- |
-| Usuario de la versión preliminar que creó una base de datos de Common Data Service |Verá un entorno llamado "Entorno de {su nombre}" que contiene la base de datos de Common Data Service que creó en la versión preliminar y cualquier aplicación que haya compilado en ella.  Se le agregará al rol Creador de entorno y Administrador de entorno de este entorno y como Propietario de base de datos de la base de datos en cuestión. Cuando PowerApps esté disponible al público general, actualizaremos los metadatos de Common Data Service. El impacto de este cambio significa que podrá seguir usando las entidades y aplicaciones que ya compiló en la base de datos de Common Data Service que creó en la versión preliminar; sin embargo, no podrá crear campos o entidades en dicha base de datos. Pronto publicaremos instrucciones sobre cómo puede crear un entorno con una base de datos que contenga los metadatos actualizados y migrar las aplicaciones a ese entorno. <br> Si cualquiera de las aplicaciones que compiló en la base de datos de Common Data Service en versión preliminar también usa un conector personalizado como origen de datos, se interrumpirá temporalmente en este entorno porque todos los conectores personalizados se migrarán al entorno predeterminado. Deberá volver a crear el conector personalizado en este entorno para reparar las aplicaciones afectadas. |
-| Usuario de versión preliminar en Estados Unidos |Los siguientes recursos que creó durante el período de versión preliminar de PowerApps estarán disponibles en el entorno predeterminado de su inquilino:<br>- Todas las aplicaciones que creó (excepto las que estén conectadas a una base de datos de Common Data Service de la versión preliminar).<br>- Todas las conexiones y los conectores personalizados que creó.<br>- Todas las puertas de enlace de datos locales que instaló. |
-| Usuario de versión preliminar fuera de Estados Unidos |Además del entorno predeterminado, también verá un entorno llamado "{Inquilino de Azure AD} (de la versión preliminar)" que contiene los recursos siguientes que creó durante el período de versión preliminar de PowerApps:<br>- Todas las aplicaciones que creó (excepto las que estén conectadas a una base de datos de Common Data Service de la versión preliminar).<br>- Todas las conexiones y los conectores personalizados que creó.<br>- Todas las puertas de enlace de datos locales que instaló.<br>Se le agregará al rol Creador de entorno de este entorno. |
-
-Un *usuario de versión preliminar* es un usuario que usó Microsoft PowerApps antes de su lanzamiento a disponibilidad general.
-
-Dos semanas después de que PowerApps ingrese a su disponibilidad general, los entornos que contienen contenido de la versión preliminar se marcarán como de solo lectura (a excepción del entorno predeterminad); todas las aplicaciones y flujos existentes seguirán funcionando en estos entornos, pero no podrá crear aplicaciones ni flujos. Se recomienda encarecidamente que los usuarios de estos entornos migren su contenido al entorno predeterminado o a otro entorno personalizado. Consulte el siguiente blog (que se publicará esta semana) para obtener más información sobre el proceso de migración: consulte el [blog sobre anuncios de características de Common Data Service][3].
-
-### <a name="example-environments-for-a-preview-user-in-us"></a>Entornos de ejemplo para un usuario de versión preliminar en Estados Unidos
-![](./media/environments-overview/USuser1.png)
-
-### <a name="example-environments-for-a-preview-user-not-in-us"></a>Entornos de ejemplo para un usuario de versión preliminar fuera de Estados Unidos
-![](./media/environments-overview/non-USuser1.png)
 
 ## <a name="managing-environments-for-your-organization"></a>Administración de entornos de la organización
 En el Centro de administración de PowerApps, se pueden administrar todos los entornos que se han creado o a los que se le ha agregado con el rol Administrador de entorno. En el Centro de administración, puede realizar todas las acciones administrativas en un entorno, incluidas las siguientes:
