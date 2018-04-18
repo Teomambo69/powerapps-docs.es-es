@@ -4,7 +4,7 @@ description: Siga estos pasos para suscribirse a PowerApps como administrador.
 services: powerapps
 suite: powerapps
 documentationcenter: na
-author: jamesol-msft
+author: manasmams
 manager: anneta
 editor: ''
 tags: ''
@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
-ms.author: jamesol
-ms.openlocfilehash: af0d7bad79aea3443f4813945e0cc369ca0b8640
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: manasma
+ms.openlocfilehash: 43d39abbd78723202efd756edf6d070724e3157e
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>Compra de PowerApps para la organización
 En este artículo se muestra cómo adquirir PowerApps para su organización como administrador. Puede comprar PowerApps directamente a través del sitio web de PowerApps a través del Centro de administración de Office 365, o a través de su representante de Microsoft o su asociado. En este artículo se describen las opciones de prueba disponibles para PowerApps Plan 1 o Plan 2 y, después, se explica cómo comprar PowerApps Plan 1 o Plan 2 como organización. Para más información, consulte [PowerApps in your organization Q&A](signup-question-and-answer.md) (Preguntas y respuestas sobre PowerApps en su organización).
@@ -49,7 +49,7 @@ Puede adquirir suscripciones de PowerApps para su organización en el [Centro de
 >
 > * Si inicia sesión en PowerApps con una suscripción de Office 365 antes de que se produzca este cambio, se le pedirá que se registre para una evaluación gratuita de PowerApps Plan 2.
 > * No dude en registrarse para la evaluación si desea probar PowerApps hasta que se realice la actualización a su suscripción de Office 365.  
-> * Sin embargo, tenga en cuenta que la licencia de prueba puede incluir características de PowerApps que no estén disponibles a través de su suscripción a Office 365 cuando la prueba expire al cabo de 90 días.  Consulte los [precios de PowerApps][2] para ver qué funcionalidades están incluidas en su suscripción de Office 365.
+> * Sin embargo, tenga en cuenta que la licencia de prueba puede incluir características de PowerApps que no estén disponibles a través de su suscripción a Office 365 cuando la prueba expire al cabo de 30 días.  Consulte los [precios de PowerApps][2] para ver qué funcionalidades están incluidas en su suscripción de Office 365.
 
 
 ### <a name="purchase-a-subscription-trial"></a>Comprar una versión de prueba de la suscripción
@@ -81,15 +81,15 @@ Puede adquirir suscripciones de PowerApps para su organización en el [Centro de
 5. Escriba el número de licencias que quiere agregar y, después, seleccione **Desproteger ahora** o **Agregar al carro**.
 
    > [!NOTE]
-> Puede agregar otras suscripciones más adelante si es necesario.
-   >
+   > Puede agregar otras licencias más adelante si es necesario.
+
 
 6. Escriba la información necesaria en el flujo de compra.
 
     En **Facturación -> Suscripciones**, verá **Microsoft PowerApps Plan 1** o **Microsoft PowerApps Plan 2** enumerados. Si más adelante quiere agregar más licencias, vuelva a **Add subscriptions** (Agregar suscripciones) y seleccione **Change license quantity** (Cambiar la cantidad de licencias).
 
 ## <a name="add-ons"></a>Complementos
-Pronto estarán disponibles, pero aún no se admiten.
+Por el momento no se admiten.
 
 ## <a name="see-also"></a>Vea también
 [PowerApps in your organization Q&A](signup-question-and-answer.md) (Preguntas y respuestas sobre PowerApps en su organización)  
