@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint.
 
 ## <a name="limitations"></a>Limitaciones
 El control de datos adjuntos tiene las siguientes limitaciones temporales:
+1. La descarga de datos adjuntos no se admite en Internet Explorer.
+
 1. La carga de los datos adjuntos solo funciona con orígenes de datos de la lista de SharePoint.  La compatibilidad con otros orígenes de datos se introducirá de forma incremental, se empezará con CDS.
 
 1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios.   Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.

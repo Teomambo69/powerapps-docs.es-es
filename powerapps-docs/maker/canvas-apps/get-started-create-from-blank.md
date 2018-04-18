@@ -4,8 +4,8 @@ description: Cree una aplicación desde cero mediante la configuración de cada 
 services: ''
 suite: powerapps
 documentationcenter: na
-author: karthik-1
-manager: anneta
+author: AFTOwen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -14,18 +14,15 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: sharik
-ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: efc965d607198ed6366f3390960ccdf44b2ea210
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-an-app-from-scratch"></a>Crear una aplicación desde cero
 Cree su propia aplicación desde cero mediante cualquiera de los orígenes de datos existentes. Posteriormente, podrá agregar más orígenes si lo desea. Especifique la apariencia y el comportamiento de cada elemento de la interfaz de usuario para que pueda obtener el mejor resultado de acuerdo con sus objetivos y el flujo de trabajo especificados. Este enfoque es mucho más lento que [crear una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden crear aplicaciones mejor adaptadas a sus necesidades.
-
-> [!NOTE]
-> Este tema se ha escrito para PowerApps Studio para Windows, pero los pasos serán similares si [abre PowerApps en un explorador](create-app-browser.md).
 
 Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros:
 
@@ -36,7 +33,9 @@ En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o var
 ![Pantalla en la que un usuario puede agregar o actualizar datos](./media/get-started-create-from-blank/changescreen-final.png)
 
 ## <a name="prerequisites"></a>Requisitos previos
-Puede consultar este tutorial para ver los conceptos generales o puede seguirlo exactamente y completar estos pasos.
+Para conocer los conceptos generales, puede utilizar su propio archivo de Excel y seguir este tutorial. No obstante, los datos del archivo de Excel deben tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
+
+Para seguir exactamente los pasos siguientes, primero cree un archivo de Excel con estos datos de ejemplo.
 
 1. Copie estos datos y péguelos en un archivo de Excel.
 
@@ -51,7 +50,7 @@ Puede consultar este tutorial para ver los conceptos generales o puede seguirlo 
 
 2. Dé a los datos un formato de tabla, llamada **Programa**, para que PowerApps pueda analizar la información.
 
-    Para más información, consulte [Crear o eliminar una tabla de Excel](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
 
 3. Guarde el archivo con el nombre **eventsignup.xls**y, a continuación, cárguelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
 
@@ -192,7 +191,7 @@ Puede consultar este tutorial para ver los conceptos generales o puede seguirlo 
 
     El formulario se denominará **Form1** de forma predeterminada a menos que ya haya agregado y quitado algún formulario. En ese caso, cambie el nombre del formulario a **Form1**.
 
-3. Establezca la propiedad  **[DataSource](controls/control-form-detail.md)**  de **Form1** en **Schedule**.
+3. Establezca la propiedad **[DataSource](controls/control-form-detail.md)** de **Form1** en **Schedule**.
 
 4. Establezca la propiedad **Item** de **Form1** en esta expresión:
    <br>**BrowseGallery1.Selected**
