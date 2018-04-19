@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Compartir una aplicación controlada por modelos con PowerApps
 
