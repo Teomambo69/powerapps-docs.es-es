@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/21/2018
+ms.date: 04/09/2018
 ms.author: sharik
-ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
@@ -34,18 +34,20 @@ Detecte las actualizaciones más recientes para nuestras aplicaciones empresaria
 
 **Próximamente:** el PDF de las notas de la versión se seguirá actualizando como características de envío y también se pondrá a disposición de los usuarios en una página web.
 
-## <a name="mar-21"></a>21 de marzo
-1. Cree [aplicaciones controladas por modelos](../model-driven-apps/model-driven-app-overview.md), que empiezan con el modelo de datos y se compilan a partir de la forma de los datos y procesos de negocio fundamentales en Common Data Service para crear formularios, vistas y otros componentes. Las aplicaciones controladas por modelos generan automáticamente una interfaz de usuario excelente con capacidad de respuesta en todos los dispositivos.
-2. [Cree una base de datos](../../administrator/create-database.md) en la versión más reciente de Common Data Service en un entorno.
-3. Ahora Common Data Service for Apps incluye lo siguiente:
+## <a name="apr-9"></a>9 de abril
+* Controles para cortar (Ctrl+X), copiar (Ctrl+C), y pegar (Ctrl+V), incluidos los estilos de los controles, fórmulas y propiedades, entre aplicaciones en un explorador web.
 
+## <a name="mar-21"></a>21 de marzo
+1. Cree [aplicaciones controladas por modelos](../model-driven-apps/model-driven-app-overview.md), que empiezan con el modelo de datos y se compilan a partir de la forma de los datos y procesos de negocio fundamentales en Common Data Service for Apps para crear formularios, vistas y otros componentes. Las aplicaciones controladas por modelos generan automáticamente una interfaz de usuario excelente con capacidad de respuesta en todos los dispositivos.
+2. [Cree una base de datos](../../administrator/create-database.md) en la versión más reciente de CDS for Apps en un entorno.
+3. CDS for Apps ahora incluye lo siguiente:
     - **Tipos de datos adicionales** que admiten definiciones de entidades más complejas y proporcionan experiencias más enriquecidas. (Se aplica a las aplicaciones de lienzo y controladas por modelos).
-    - [Cree y personalice entidades](../common-data-service/data-platform-create-entity.md) en Common Data Service for Apps directamente desde el sitio de PowerApps. La **experiencia actualizada** incluye rendimiento mejorado, una interfaz de usuario más fácil de usar y funciones útiles como la creación en línea de conjuntos de opciones. (Se aplica a las aplicaciones de lienzo y controladas por modelos).
-    - Cree **reglas de negocio del lado servidor** para validar los datos introducidos en Common Data Service for Apps. (Se aplica a las aplicaciones de lienzo y controladas por modelos).
-    - Cree **campos calculados y consolidados** en entidades de Common Data Service for Apps directamente desde el sitio de PowerApps. (Se aplica a las aplicaciones de lienzo y controladas por modelos).  
-    - Los desarrolladores pueden usar el **Kit de desarrollo de software** (SDK) de Common Data Service for Apps para crear personalizaciones basadas en código para Common Data Service.
-    - Los usuarios avanzados pueden tener acceso a los datos almacenados en Common Data Service for Apps a través de una nueva **API web de OData**.
-    - [Importe datos](../common-data-service/data-platform-cds-newentity-pq.md) en Common Data Service con **Power Query**. Use Power Query en la web para importar datos directamente a Common Data Service for Apps desde varios orígenes
+    - [Cree y personalice entidades](../common-data-service/data-platform-create-entity.md) en CDS for Apps directamente desde el sitio de PowerApps. La **experiencia actualizada** incluye rendimiento mejorado, una interfaz de usuario más fácil de usar y funciones útiles como la creación en línea de conjuntos de opciones. (Se aplica a las aplicaciones de lienzo y controladas por modelos).
+    - Cree **reglas de negocio del lado servidor** para validar los datos introducidos en CDS for Apps. (Se aplica a las aplicaciones de lienzo y controladas por modelos).
+    - Cree **campos calculados y consolidados** en entidades de CDS for Apps directamente desde el sitio de PowerApps. (Se aplica a las aplicaciones de lienzo y controladas por modelos).  
+    - Los desarrolladores pueden usar el **Kit de desarrollo de software** (SDK) de CDS for Apps para crear personalizaciones basadas en código para CDS for Apps.
+    - Los usuarios avanzados pueden tener acceso a los datos almacenados en CDS for Apps a través de una nueva **API web de OData**.
+    - [Importe datos](../common-data-service/data-platform-cds-newentity-pq.md) a CDS for Apps con **Power Query**. Use Power Query en la Web para importar datos directamente a CDS for Apps desde varios orígenes.
 
 ## <a name="mar-5"></a>5 de marzo
 1. Se han agregado (y eliminado) [datos adjuntos](controls/control-attachments.md) a listas de SharePoint.
@@ -83,8 +85,3 @@ Detecte las actualizaciones más recientes para nuestras aplicaciones empresaria
 
 ## <a name="nov-10"></a>10 de noviembre
 * [Cambiar el nombre de las reglas](working-with-rules.md) en una aplicación y mostrar las reglas cuando el control seleccionado está en la condición de la regla.
-
-## <a name="oct-30"></a>30 de octubre
-1. Se [muestran todas las reglas](working-with-rules.md) de una aplicación, no solo las del control seleccionado.
-2. Se agregan los iconos más solicitados por los creadores de aplicaciones.
-3. Se ha mejorado el rendimiento de las aplicaciones en dispositivos Android e iOS.
