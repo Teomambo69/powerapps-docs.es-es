@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cc068fc475643ae68e74d22981679dd9b038eb83
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Crear una base de datos de Common Data Service
 Puede crear una base de datos y aplicaciones usando Common Data Service como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como **Administrador de entorno**. Además, debe tener asignada la licencia adecuada. Para más información sobre la compra de un plan para utilizar Common Data Service, consulte la [información sobre los precios](pricing-billing-skus.md).
@@ -57,7 +57,7 @@ Existen varias maneras de crear una base de datos:
 Cuando se crea una base de datos, los usuarios que tienen asignados roles de entorno continuarán manteniendo esos privilegios.  
     A los usuarios con el rol **Administrador de entorno** se les asigna ahora el rol **Administrador del sistema**. Los usuarios con el rol **Creador de entorno** continuarán con el mismo rol.
 
-Se pueden asignar usuarios adicionales a los roles predefinidos o incluso crear [roles personalizados][1]. Vea [Seguridad de base de datos](create-database.md) para obtener más detalles.
+Se pueden asignar usuarios adicionales a los roles predefinidos o incluso crear [roles personalizados][1]. Vea [Seguridad de base de datos](database-security.md) para obtener más detalles.
 
 > [!NOTE]
 > Al crear la base de datos, los grupos de seguridad asignados al rol Administrador de entorno o Creador de entorno ya no serán válidos. Actualmente, la asignación de permisos de base de datos no es compatible con el grupo de seguridad de AAD.
