@@ -38,3 +38,18 @@
       href: admin-manage-apps.md
     - name: Mover una aplicación entre inquilinos o entornos
       href: environment-and-tenant-migration.md
+    - name: Responder a solicitudes DSR para registros generados por el sistema
+      href: powerapps-gdpr-dsr-guide-systemlogs.md
+    - name: Responder a solicitudes DSR para datos de cliente de PowerApps
+      href: powerapps-gdpr-dsr-guide.md
+      items:
+        - name: Responder a solicitudes DSR para exportar
+          href: powerapps-gdpr-export-dsr.md
+        - name: Responder a solicitudes DSR para eliminar
+          href: powerapps-gdpr-delete-dsr.md
+    - name: Responder a solicitudes DSR para datos de cliente de CDS for Apps
+      href: common-data-service-gdpr-dsr-guide.md
+- name: Referencia
+  items:
+    - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
+      href: powerapps-powershell.md
