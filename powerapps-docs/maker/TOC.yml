@@ -6,6 +6,12 @@
       href: signup-for-powerapps.md
     - name: Registrarse en el Plan de la comunidad de PowerApps
       href: dev-community-plan.md
+    - name: Novedades
+      href: ./canvas-apps/release-notes.md
+    - name: Problemas y resoluciones habituales
+      href: ./canvas-apps/common-issues-and-resolutions.md
+    - name: Seminarios web próximos y recientes
+      href: ./canvas-apps/webinars-listing.md
 - name: Aplicaciones de lienzo
   href: ./canvas-apps/getting-started.md
   items:
@@ -123,12 +129,14 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: Crear una aplicación global
               href: ./canvas-apps/global-apps.md
-            - name: Crear aplicaciones accesibles
+            - name: Crear una aplicación accesible
               href: ./canvas-apps/accessible-apps.md
         - name: Administrar la aplicación
           items:
             - name: Introducción a powerapps.com
               href: ./canvas-apps/intro-maker-portal.md
+            - name: Trabajar con entornos
+              href: ./canvas-apps/working-with-environments.md
             - name: Editar una aplicación
               href: ./canvas-apps/edit-app.md
             - name: Cambiar el tamaño y la orientación de la pantalla
@@ -195,21 +203,13 @@
           href: ./canvas-apps/connections-list.md
         - name: 'Requisitos del sistema, límites y configuración'
           href: ./canvas-apps/limits-and-config.md
-    - name: Recursos
-      items:
-        - name: Trabajar con entornos
-          href: ./canvas-apps/working-with-environments.md
-        - name: Novedades
-          href: ./canvas-apps/release-notes.md
-        - name: Problemas y resoluciones habituales
-          href: ./canvas-apps/common-issues-and-resolutions.md
-        - name: Seminarios web próximos y recientes
-          href: ./canvas-apps/webinars-listing.md
 - name: Aplicaciones controladas por modelos
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
     - name: Información general de las aplicaciones de ejemplo
       href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: Crear la primera aplicación controlada por modelos
+      href: .//model-driven-apps/build-first-model-driven-app.md
     - name: Compartir una aplicación controlada por modelos
       href: ./model-driven-apps/share-model-driven-app.md
     - name: Para desarrolladores
