@@ -1,32 +1,29 @@
 ---
 title: Funciones Actualizar y UpdateIf | Microsoft Docs
 description: Información de referencia para las funciones Update y UpdateIf en PowerApps, incluidos ejemplos y sintaxis
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 1c117bdc138db757efa9de06bd2757c590269dbe
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3046aa93941a07d44345e09b442cb57b623946c3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>Funciones Update y UpdateIf en PowerApps
 Actualiza los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
 
 ## <a name="description"></a>Descripción
 ### <a name="update-function"></a>Función Update
-Use la función **Update** para reemplazar todo un registro en un origen de datos. En cambio, las funciones **UpdateIf** y  **[Patch](function-patch.md)**  modifican uno o varios valores de un registro, y dejan los demás valores como están.
+Use la función **Update** para reemplazar todo un registro en un origen de datos. En cambio, las funciones **UpdateIf** y **[Patch](function-patch.md)** modifican uno o varios valores de un registro, y dejan los demás valores como están.
 
 En el caso de una [colección](../working-with-data-sources.md#collections), tiene que coincidir todo el registro. Las colecciones permiten registros duplicados, por lo que podrían coincidir varios registros. Puede usar el argumento **All** para actualizar todas las copias de un registro; en caso contrario, se actualiza solo una copia del registro.
 

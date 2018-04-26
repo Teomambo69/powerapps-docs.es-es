@@ -1,25 +1,22 @@
 ---
 title: Funciones Abs, Exp, Ln, Power y Sqrt | Microsoft Docs
 description: Información de referencia para las funciones Abs, Sqrt y otras en PowerApps, incluidos ejemplos y sintaxis
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
-ms.openlocfilehash: 25d9b49c7f527d7510e31dd937e1d8a580bb31cf
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.
@@ -77,7 +74,7 @@ Los ejemplos de esta sección usan un [origen de datos](../working-with-data-sou
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **Origen**.
-2. Agregue un control **Etiqueta** y establezca su propiedad **[Texto](../controls/properties-core.md)** en esta fórmula:
+2. Agregue un control **Etiqueta** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    <br>
    **Sqrt( Value( Source.Text ) )**
 3. Escriba un número en **Origen** y confirme que el control **Etiqueta** muestra la raíz cuadrada del número que escribió.

@@ -1,24 +1,21 @@
 ---
 title: Visualización, ordenación y filtrado de los datos de una galería | Microsoft Docs
 description: Use una galería para mostrar imágenes y texto. Ordene y filtre las imágenes en PowerApps.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: 5bf013ffb77b757aed7a900ac4c35c2693859285
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 285d9c051c453f6710a1dbc94dbb47af15b6c71d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Mostrar, ordenar y filtrar los datos en una galería de PowerApps
 Cree una galería para mostrar imágenes y texto sobre diversos productos, y ordene y filtre esa información.

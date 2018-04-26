@@ -1,8 +1,6 @@
 ---
 title: Uso compartido de una aplicación | Microsoft Docs
 description: Comparta su aplicación proporcionando a otros usuarios permiso para ejecutarla o modificarla
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 22950d866ed8e61dd0824701ef8af86f5bed2dc6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5a469c875d82670e30d0be8bef86cc476ca5ea19
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>Compartir una aplicación en PowerApps
 Es estupendo crear aplicaciones que satisfagan sus propias necesidades empresariales, pero lo realmente estupendo de PowerApps es que puede compartir las aplicaciones con otras personas. En este tema, obtendrá información sobre cómo compartir aplicaciones con usuarios o grupos de seguridad específicos, o cómo compartirlas con toda la organización.

@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido para relaciones de entidad mediante un campo de búsqueda | Microsoft Docs
 description: Inicio rápido para crear una relación entre entidades mediante un campo de búsqueda.
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 37450b6e9f43780deaed4ff34b005472501bdb23
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-relationship"></a>Inicio rápido: Creación de una relación
 A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, es posible que tenga las entidades **Profesores** y **Clase**, y es posible que la entidad **Clase** tenga una relación de búsqueda con la entidad **Profesores** para mostrar qué profesor imparte la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Esto se conoce normalmente como un campo de búsqueda.

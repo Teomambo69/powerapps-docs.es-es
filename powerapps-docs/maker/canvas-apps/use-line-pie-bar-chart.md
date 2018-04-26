@@ -1,24 +1,21 @@
 ---
 title: Creación de gráficos | Microsoft Docs
 description: Visualización de categorías de datos como gráficos de líneas, gráficos circulares o gráficos de barras
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 727d19973056a9c738bd0087f99a36889ab50421
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9a4daa7135f54ed3a0b3e1f206ce0d201c42da8b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
 Use gráficos de líneas, gráficos circulares y gráficos de barras para mostrar los datos. Al trabajar con gráficos, los datos que importe deben estar estructurados de la manera siguiente:

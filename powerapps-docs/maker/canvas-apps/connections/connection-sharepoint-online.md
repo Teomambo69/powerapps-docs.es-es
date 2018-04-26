@@ -1,25 +1,22 @@
 ---
 title: Introducción a la conexión de SharePoint | Microsoft Docs
 description: Consulte las funciones, respuestas y ejemplos disponibles para SharePoint.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: sarafankit
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/12/2017
-ms.author: sharik
-ms.openlocfilehash: f79809b2eb74d4cea2ee9719a3a76e8149a533dc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: ankitsar
+ms.openlocfilehash: fe6017ee402f0026aab3ef281a02b472b6a503ad
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Conexión a SharePoint desde PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)

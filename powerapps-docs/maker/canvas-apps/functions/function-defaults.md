@@ -2,24 +2,22 @@
 title: Función Valores predeterminados | Microsoft Docs
 description: Información de referencia sobre la función Defaults de PowerApps, incluidos ejemplos y sintaxis
 services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: eb1c6b802eff4aa5bd02a2ec52626b8788c42b73
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: b62b2b8575d1ff0e5a55a97db6e6650af5a593c1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="defaults-function-in-powerapps"></a>Función Defaults en PowerApps
 Devuelve los valores predeterminados para un [origen de datos](../working-with-data-sources.md).  

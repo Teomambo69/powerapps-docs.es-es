@@ -1,25 +1,22 @@
 ---
 title: Funciones Redondear, RedondearMenos y RedondearMas | Microsoft Docs
 description: Información de referencia para las funciones Redondear, RedondearMenos y RedondearMas en PowerApps, incluida la sintaxis
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: cfb0e8351b1e51a07962e08b2894d02203b274c7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 07771027ea728d65bfb35d79fb67bdef1ac80f1a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>Funciones Redondear, RedondearMenos y RedondearMas en PowerApps
 Redondea un número.

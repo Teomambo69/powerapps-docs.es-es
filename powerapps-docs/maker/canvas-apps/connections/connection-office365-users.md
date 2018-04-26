@@ -1,25 +1,22 @@
 ---
 title: Introducción a la conexión de Usuarios de Office 365 | Microsoft Docs
 description: Ver cómo conectarse a Usuarios de Office 365 a través de algunos ejemplos y examinar todas las funciones
-services: ''
-suite: powerapps
-documentationcenter: na
-author: archnair
-manager: anneta
+documentationcenter: ''
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 06/07/2016
-ms.author: archanan
-ms.openlocfilehash: 83772491c5c88fa8947f007a2be4c6316a568cba
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 061d70ed1bae2971379acef4ea43ca85d805e756
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)

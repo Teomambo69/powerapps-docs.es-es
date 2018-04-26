@@ -1,25 +1,22 @@
 ---
 title: Propiedades principales | Microsoft Docs
 description: Información de referencia acerca de las propiedades Disabled, Visible y ReadOnly
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9631d197824b516f90d493c9db4aee75f3f7ce0d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="core-properties-in-powerapps"></a>Propiedades principales en PowerApps
 Configure la posibilidad de que el usuario puede ver un control e interactuar con él.
