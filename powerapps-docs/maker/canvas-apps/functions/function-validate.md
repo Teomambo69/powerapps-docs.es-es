@@ -1,25 +1,22 @@
 ---
 title: Función Validar | Microsoft Docs
 description: Información de referencia para la función Validate en PowerApps, incluidos ejemplos y sintaxis
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 933e97d569eb1be173dac7e609fa1a7151df1e18
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 2b3d91a6da0e17ded435aec74a88ea1bbdd4fac1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-function-in-powerapps"></a>Función Validate en PowerApps
 La función **Validate** comprueba si el valor de una única [columna](../working-with-tables.md#columns) o un [registro](../working-with-tables.md#records) completo es válido para un [origen de datos](../working-with-data-sources.md).  
@@ -59,12 +56,12 @@ Para estos ejemplos, los valores de la columna **Percentage** del origen de dato
 ### <a name="validate-with-a-single-column"></a>Validar con una sola columna
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Validate( Scores, Percentage, 10 )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*en blanco* |
+| **Validate( Scores, Percentage, 10 )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*blank* |
 | **Validate( Scores, Percentage, 120 )** |Comprueba si **120** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |"Los valores deben estar comprendidos entre 0 y 100". |
 
 ### <a name="validate-with-a-complete-record"></a>Validar con un registro completo
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*en blanco* |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*blank* |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si **120** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |"Los valores deben estar comprendidos entre 0 y 100". |
 

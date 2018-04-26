@@ -1,24 +1,21 @@
 ---
 title: Visualización de detalles sobre el usuario actual | Microsoft Docs
 description: Insertar la función User para mostrar el nombre y la dirección de correo electrónico del usuario con la sesión iniciada en PowerApps
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: b337188360ba592d504a7364fdbeb3a2973b8ee0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 11177ffa8913afe4d0245708dd8c9b2b0b50c8c2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-information-about-a-powerapps-user"></a>Mostrar información sobre un usuario de PowerApps
 La función User puede mostrar el nombre completo, la dirección de correo electrónico y la imagen asociada con el usuario que ha iniciado sesión. Puede utilizar esta información para rellenar automáticamente un formulario.

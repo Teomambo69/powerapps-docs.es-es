@@ -1,8 +1,6 @@
 ---
 title: Objeto visual personalizado de PowerApps para Power BI | Microsoft Docs
 description: Procedimiento y limitaciones para insertar una aplicación en la que se usa el mismo origen de datos y se puede filtrar al igual que otros elementos de informe en Power BI
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: tutorial
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: a1ca27ddaff4264fe961588701859fe1ad730c42
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: da3d21e3f4488f552568a95d856af175f9a042eb
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 

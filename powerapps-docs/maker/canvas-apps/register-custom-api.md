@@ -1,24 +1,21 @@
 ---
 title: Vínculos de contenido de un conector personalizado | Microsoft Docs
 description: Vínculos a contenido para crear, usar, compartir y certificar conectores personalizados.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/05/2017
 ms.author: mblythe
-ms.openlocfilehash: 2f8908241c03c5c0fd9a2d254aead52e29087387
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9f8e64efc3f7ff91fad0eba1cf20274c89aaeabe
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="custom-connectors-in-powerapps"></a>Conectores personalizados en PowerApps
 

@@ -1,24 +1,21 @@
 ---
 title: Inserción de archivos multimedia en una aplicación y su carga | Microsoft Docs
 description: Aprenda a mostrar los archivos multimedia de una aplicación y a cargarlos en un origen de datos.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: karthik-1
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 75ec8131a4e9a4be796f06669d8d25ff559eaf69
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 7ee752f5606f10f66ad7c8dc49e05233225c0a89
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 En este tema, aprenderá a insertar archivos multimedia en la aplicación, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.

@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido para crear una entidad personalizada | Microsoft Docs
 description: Inicio rápido para crear una entidad personalizada basada en otra entidad o desde cero.
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 2232083de556bafcc978423dafb0e98e564aaa3b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 Puede crear una entidad personalizada para almacenar datos específicos de su organización. Después, puede mostrar dichos datos si desarrolla una aplicación que haga referencia a la entidad. Después de crear una entidad, puede [crear o modificar uno o varios de sus campos](data-platform-manage-fields.md) y [crear relaciones entre entidades](data-platform-entity-lookup.md).

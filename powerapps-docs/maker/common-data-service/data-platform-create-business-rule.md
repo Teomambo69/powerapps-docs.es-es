@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido de Common Data Service for Apps | Microsoft Docs
 description: Inicio rápido para crear una regla de negocio
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 2d6920d8668f932703f96ec9fb25ddc563ebf119
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bc2822e304c3903275d0e1d4ab1d00ae2b8d8b4b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-new-business-rule"></a>Inicio rápido: Creación de una regla de negocio
 

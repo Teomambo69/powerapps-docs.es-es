@@ -1,25 +1,22 @@
 ---
 title: Compatibilidad global | Microsoft Docs
 description: Cree aplicaciones que se usen en todo el mundo.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 68f81dffa4ba861978dacb1b7ad6830b0736ed6e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="global-support"></a>Compatibilidad global
 PowerApps es un producto global.  Puede crear y usar aplicaciones en muchas regiones e idiomas diferentes.
@@ -110,7 +107,7 @@ Para más información, consulte la documentación de la función **[Language](f
 ### <a name="formatting-numbers-dates-and-times"></a>Formato de números, fechas y horas
 Los números, las fechas y las horas se escriben con diferentes formatos en las distintas partes del mundo.  El significado de las comas, los decimales y el orden del día, mes y año varían de una ubicación a otra.   
 
-La función  **[Text](functions/function-text.md)**  da formato a números y fechas utilizando la configuración de idioma del usuario.
+La función **[Text](functions/function-text.md)** da formato a números y fechas utilizando la configuración de idioma del usuario.
 
 **Text** requiere una cadena de formato para saber cómo desea dar formato al número o fecha.  Esta cadena de formato puede ser de dos formas:
 

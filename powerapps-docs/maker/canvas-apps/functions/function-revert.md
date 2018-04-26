@@ -1,25 +1,22 @@
 ---
 title: Función Revertir | Microsoft Docs
 description: Información de referencia de la función Revertir en PowerApps, con sintaxis y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 08cb0690904a4b63645828678232769b66a439a1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="revert-function-in-powerapps"></a>Función Revertir en PowerApps
 Actualiza y borra errores para los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
@@ -53,7 +50,7 @@ Compruebe la tabla **[Errores](function-errors.md)** y encuentre un error:
 
 | Registro | [Columna](../working-with-tables.md#columns) | Mensaje | Error |
 | --- | --- | --- | --- |
-| **{ ID: 1, Flavor: "Strawberry", Cantidad: 300 }** |*en blanco* |**"Otro usuario ha modificado el registro que está intentando modificar.  Revierta el registro e inténtelo de nuevo".** |**ErrorKind.Conflict** |
+| **{ ID: 1, Flavor: "Strawberry", Cantidad: 300 }** |*blank* |**"Otro usuario ha modificado el registro que está intentando modificar.  Revierta el registro e inténtelo de nuevo".** |**ErrorKind.Conflict** |
 
 Tomando como base la columna **Error**, tiene un botón **Volver a cargar** para que la propiedad **[AlSeleccionar](../controls/properties-core.md)** para establecer esta fórmula:<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

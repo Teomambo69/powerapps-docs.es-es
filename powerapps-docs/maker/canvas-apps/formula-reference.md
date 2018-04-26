@@ -1,25 +1,22 @@
 ---
 title: Funciones, señales y enumeraciones | Microsoft Docs
 description: Información de referencia para las funciones, las señales y las enumeraciones en PowerApps.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 3ceb9eae42e88e7cfb78492f9e58812481a0881d
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: d7dd33954d337bbfc65b486333e89c4598b11305
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:

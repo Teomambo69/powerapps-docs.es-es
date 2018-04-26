@@ -1,25 +1,22 @@
 ---
 title: Restauración de la aplicación a una versión anterior | Microsoft Docs
 description: Restaurar una aplicación
-services: ''
-suite: powerapps
 documentationcenter: na
 author: jamesol-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 87933ed18659af6624fd7cb3bab418a8e8eccecb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e13f5c7fa73c0d95c5be5c755f2d482b1efc8a71
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>Restaurar una aplicación a una versión anterior
 En este artículo se muestra cómo restaurar una aplicación a una versión anterior que se guardó en la nube desde su cuenta de PowerApps.

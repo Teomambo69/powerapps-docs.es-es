@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 307951163c4291ff29d8fe0bdec9237e0bbbe0e4
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: ccecf87da6ea93cf9764cce7fd9449e1e5c75934
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Administración de las aplicaciones creadas en la organización
 Si es un Administrador de entorno, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory, puede administrar las aplicaciones creadas en la organización.
@@ -34,7 +34,7 @@ Los administradores pueden hacer lo siguiente desde el Centro de administración
 * Los permisos Administrador de entorno de PowerApps, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
 ## <a name="manage-an-app"></a>Administrar una aplicación
-1. Inicie sesión en el Centro de administración en [https://admin.powerapps.com]([https://admin.powerapps.com).
+1. Inicie sesión en el Centro de administración en [https://admin.powerapps.com](https://admin.powerapps.com).
 2. En el panel de navegación, pulse o haga clic en **Entornos** y, después, pulse o haga clic en el entorno que contenga la aplicación que quiera administrar.
 
     Si no ve **Entornos** en el panel de navegación, significa que no tiene ningún Plan 2 de PowerApps o Plan 2 de Microsoft Flow, o bien ninguna licencia de prueba de Plan 2 de PowerApps.

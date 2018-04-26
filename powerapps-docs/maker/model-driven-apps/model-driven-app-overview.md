@@ -1,25 +1,22 @@
 ---
 title: Información general sobre la compilación de una aplicación controlada por modelos con PowerApps | Microsoft Docs
 description: Instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: Mattp123
-manager: bycho
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 872e06e3d260480f09f66c52b592540bae44bdda
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 1b9ee344192d84933d25a3208d2feb0873a298c1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>Información general sobre la compilación de una aplicación controlada por modelos
 

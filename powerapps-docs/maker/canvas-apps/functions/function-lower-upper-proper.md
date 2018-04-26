@@ -1,25 +1,22 @@
 ---
 title: Funciones Minusc, Mayusc y Nompropio | Microsoft Docs
 description: Información de referencia de las funciones Minusc, Mayusc y Nompropio de PowerApps, con sintaxis y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 2ed6a9f1d52da1818eaaec50194740fb55a09f8e
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e57ea9208f0ea3b7dd9ada7ebd9055a99ddc141c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>Funciones Minusc, Mayusc y Nompropio en PowerApps
 Convierte las letras de una cadena de texto en todo minúsculas, todo mayúsculas o en mayúsculas o minúsculas, según corresponda.

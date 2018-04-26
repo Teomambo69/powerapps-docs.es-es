@@ -1,25 +1,22 @@
 ---
 title: Función ShowError | Microsoft Docs
 description: Información de referencia de la función ShowError de PowerApps, con sintaxis y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: 7c1d5a8c7b35d316a2720d564977170029e28359
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 1191016f26192f997b8347cdbfecc7701c19cb8c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="showerror-function-in-powerapps"></a>Función ShowError en PowerApps
 Muestra un error al usuario.

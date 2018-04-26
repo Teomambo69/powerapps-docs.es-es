@@ -1,25 +1,22 @@
 ---
 title: Introducción a la conexión de Microsoft Translator | Microsoft Docs
 description: Consulte cómo conectarse a Microsoft Translator a través de algunos ejemplos y vea todas las funciones
-services: ''
-suite: powerapps
-documentationcenter: na
-author: archnair
-manager: anneta
+documentationcenter: ''
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/12/2017
-ms.author: archanan
-ms.openlocfilehash: e5680fbc24475f9eb5776994de1a60cdb1c052ac
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 33b82bac0f4090db926c5cdb2e8e4345e7b6af70
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Conexión a Microsoft Translator desde PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)

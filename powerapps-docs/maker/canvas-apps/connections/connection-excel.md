@@ -1,25 +1,22 @@
 ---
 title: Introducción a la conexión de Excel | Microsoft Docs
 description: Muestre y actualice datos en Excel almacenando el libro en una cuenta de almacenamiento en la nube y, después, conectándose a los datos desde la aplicación.
-services: ''
-suite: powerapps
-documentationcenter: na
-author: archnair
-manager: anneta
+documentationcenter: ''
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/02/2016
-ms.author: archanan
-ms.openlocfilehash: d57d279670bf49c330b68a30bcd99a4578d3bbf9
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: e8bdc3f7bbfa7fdd55e9a5273c084d0aa870cf6d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Conexión a Excel desde PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
@@ -32,7 +29,7 @@ Excel es una *variante* de una conexión. Para mostrar los datos de Excel en la 
 4. Para mostrar esta información en la aplicación, [genere una aplicación automáticamente](../get-started-create-from-data.md) o agregue y configure, por ejemplo, un control **Galería**.
 
 > [!NOTE]
-> Una vez que se conecte a la tabla de Excel desde PowerApps, PowerApps creará una columna nueva denominada **\_*PowerAppsId_ ***, con un identificador único para cada fila de la tabla de Excel.
+> Una vez que se conecte a la tabla de Excel desde PowerApps, PowerApps creará una columna nueva denominada **\_* PowerAppsId_ ***, con un identificador único para cada fila de la tabla de Excel.
 
 [La introducción a la conexión de almacenamiento en la nube](cloud-storage-blob-connections.md) muestra cómo agregar la conexión, agregar una tabla de Excel como origen de datos y usar los datos de Excel en la aplicación.
 

@@ -1,25 +1,22 @@
 ---
 title: Introducción a la conexión de Twitter | Microsoft Docs
 description: Consulte como conectar a Twitter a través de algunos ejemplos paso a paso y examine todas las funciones.
-services: ''
-suite: powerapps
 documentationcenter: ''
-author: archnair
-manager: anneta
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/12/2017
-ms.author: archanan
-ms.openlocfilehash: 7d39d971cf52c673e6d54dee10d72802de6d9450
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: af1cb1423ba68b6e2303422e1febac2e79574668
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)

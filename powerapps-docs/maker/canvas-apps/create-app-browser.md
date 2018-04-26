@@ -1,25 +1,22 @@
 ---
 title: Creación o modificación de aplicaciones en un explorador | Microsoft Docs
 description: Cree o modifique aplicaciones en un explorador utilizando PowerApps Studio para web.
-services: powerapps
-suite: powerapps
 documentationcenter: na
-author: skjerland
+author: aftowen
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/08/2018
-ms.author: sharik
-ms.openlocfilehash: 5d120cd0a754b2aa6ad45c5cc81435810e382c61
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 4c8b100e4993921c651590c80eda4297345cdd40
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Creación o modificación de aplicaciones en PowerApps Studio para web
 Cree y modifique aplicaciones en PowerApps Studio para web, que se abre en una ventana del explorador de Windows o en otras plataformas.

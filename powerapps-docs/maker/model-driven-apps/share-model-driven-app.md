@@ -1,25 +1,22 @@
 ---
 title: Tutorial para compartir una aplicación controlada por modelos con PowerApps | Microsoft Docs
 description: En este tutorial, obtendrá información sobre cómo compartir una aplicación controlada por modelos.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: Mattp123
-manager: brycho
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
-ms.workload: na
-ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
+ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 43a31d0fe4f77b47425d2df4f98caf611625f696
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Compartir una aplicación controlada por modelos con PowerApps
 

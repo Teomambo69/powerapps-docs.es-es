@@ -1,7 +1,6 @@
 ---
 title: Administración de campos personalizados en una entidad (inicio rápido) | Microsoft Docs
 description: Inicio rápido para crear, leer, actualizar y eliminar los campos personalizados de una entidad.
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 2175b684d88d1823fd2672f672e776ca1e26f164
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-manage-custom-fields"></a>Inicio rápido: Administración de campos personalizados
 En todas las entidades se pueden crear y actualizar uno o varios campos. Al crear un campo personalizado, especifica un conjunto de propiedades, como el nombre del campo, el nombre para mostrar y el tipo de datos que va a contener. Para obtener más información, vea [Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (Metadatos de atributo de entidad).
@@ -30,7 +28,7 @@ En todas las entidades se pueden crear y actualizar uno o varios campos. Al crea
 
 1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
-    ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "lista de entidades")
+    ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
 2. Pulse o haga clic en una entidad existente, o bien en [Crear una nueva entidad](data-platform-create-entity.md)
 

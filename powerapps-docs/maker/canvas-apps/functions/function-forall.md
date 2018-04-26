@@ -1,25 +1,22 @@
 ---
 title: Función ForAll | Microsoft Docs
 description: Información de referencia para la función ForAll en PowerApps, incluidos ejemplos y sintaxis
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: e2e0a0d638f8f0ff5f9924604a43fa38a556f8fe
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 7df5e270e92930fa494ec8a30a59d46d022fd915
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="forall-function-in-powerapps"></a>Función ForAll en PowerApps
 Calcula valores y realiza acciones para todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -39,7 +36,7 @@ Si el resultado de la fórmula es un valor *en blanco*, no habrá ningún regist
 ### <a name="taking-action"></a>Realización de acciones
 La fórmula puede incluir funciones que realicen acciones, como modificar los registros de un origen de datos con las funciones **[Revisión](function-patch.md)** y **[Recopilar](function-clear-collect-clearcollect.md)**.  La fórmula también puede llamar a métodos en las conexiones.  Se pueden realizar varias acciones por registro mediante el operador [**;** ](operators.md). No se puede modificar la tabla objeto de la función **ForAll**.
 
-Al escribir la fórmula, tenga en cuenta que los registros se pueden procesar en cualquier orden y, siempre que sea posible, en paralelo.  Se puede procesar el primer registro de la tabla después del último registro.  Tenga cuidado para evitar la ordenación de las dependencias.  Por esta razón, no puede usar las funciones **[UpdateContext](function-updatecontext.md)**, **[Clear](function-clear-collect-clearcollect.md)** y  **[ClearCollect](function-clear-collect-clearcollect.md)**  dentro de una función **ForAll** ya que se podrían usar fácilmente para mantener variables que son susceptibles de sufrir este efecto.  Puede usar **[Recopilar](function-clear-collect-clearcollect.md)**, pero el orden en que se agregan los registros no está definido.
+Al escribir la fórmula, tenga en cuenta que los registros se pueden procesar en cualquier orden y, siempre que sea posible, en paralelo.  Se puede procesar el primer registro de la tabla después del último registro.  Tenga cuidado para evitar la ordenación de las dependencias.  Por esta razón, no puede usar las funciones **[UpdateContext](function-updatecontext.md)**, **[Clear](function-clear-collect-clearcollect.md)** y **[ClearCollect](function-clear-collect-clearcollect.md)** dentro de una función **ForAll** ya que se podrían usar fácilmente para mantener variables que son susceptibles de sufrir este efecto.  Puede usar **[Recopilar](function-clear-collect-clearcollect.md)**, pero el orden en que se agregan los registros no está definido.
 
 Varias funciones que modifican los orígenes de datos, incluidas las funciones **Recopilar**, **Quitar** y **Actualizar**, devuelven el origen de datos que han cambiado como su valor devuelto.  Estos valores devueltos pueden ser grandes y consumir recursos significativos si se devuelven para cada registro de la tabla **ForAll**.  También es posible que estos valores devueltos no sean los esperados, ya que **ForAll** puede funcionar en paralelo y puede separar los efectos secundarios de estas funciones a partir de la obtención de su resultado.  Afortunadamente, si el valor devuelto desde **ForAll** no se utiliza realmente, y este suele ser el caso de las funciones de modificación de datos, el valor devuelto no se creará con lo que no habrá ningún problema de recursos u ordenación.  Sin embargo, si va a utilizar el resultado de una función **ForAll** y el de alguna de las funciones que devuelve un origen de datos, medite concienzudamente sobre cómo estructurar el resultado y pruébelas primero en conjuntos de datos pequeños.  
 

@@ -1,25 +1,22 @@
 ---
 title: Edición de una aplicación | Microsoft Docs
 description: Instrucciones paso a paso para editar aplicaciones y escenarios de bloqueo de sesión.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: karthik-1
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: a71aa71ec80a60f2aec4ce179abcade3f9eef964
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 782674cd8d9bbcc81580302a9936bcf47de4b68b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>Edición de una aplicación en PowerApps
 Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede editar una aplicación en PowerApps Studio para web o PowerApps Studio para Windows. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.

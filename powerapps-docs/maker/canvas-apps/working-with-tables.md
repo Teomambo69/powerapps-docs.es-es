@@ -1,25 +1,22 @@
 ---
 title: Información sobre tablas | Microsoft Docs
 description: Información de referencia para trabajar con tablas, columnas y registros
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
 Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
@@ -237,7 +234,7 @@ Tenga en cuenta que en la fórmula anterior, se han usado comillas dobles (") en
 ### <a name="disambiguation"></a>Anulación de ambigüedades
 Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [**@** de anulación de ambigüedades](functions/operators.md):
 
-* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla*[@*FieldName*]**.  
+* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla *[@* FieldName*]**.  
 * Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*]** (sin designar ninguna tabla).
 
 Si la tabla en la que se opera es una expresión, como **Filtrar( *tabla*, ... )**, entonces no se puede utilizar el operador de anulación de ambigüedades.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
