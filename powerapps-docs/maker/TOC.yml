@@ -35,14 +35,18 @@
       items:
         - name: Personalizar una aplicación generada
           items:
-            - name: Personalizar una pantalla de exploración
+            - name: 1 - Galerías
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: Personalizar un formulario
+            - name: 2 - Formularios
               href: ./canvas-apps/customize-forms-sharepoint.md
-            - name: Personalizar una tarjeta
+            - name: 3 - Tarjetas
               href: ./canvas-apps/customize-card.md
         - name: Crear una aplicación desde cero
-          href: ./canvas-apps/data-platform-create-app-scratch.md
+          items:
+            - name: Common Data Service for Apps
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: Excel
+              href: ./canvas-apps/get-started-create-from-blank.md
         - name: Compartir una aplicación
           href: ./canvas-apps/share-app.md
         - name: Insertar una aplicación en Power BI
@@ -95,8 +99,6 @@
       items:
         - name: Personalizar un formulario de lista de SharePoint
           href: ./canvas-apps/customize-list-form.md
-        - name: Compilar una aplicación de Excel desde cero
-          href: ./canvas-apps/get-started-create-from-blank.md
         - name: Personalizar una aplicación
           items:
             - name: Agregar y configurar un control
@@ -131,6 +133,9 @@
               href: ./canvas-apps/global-apps.md
             - name: Crear una aplicación accesible
               href: ./canvas-apps/accessible-apps.md
+              items:
+                - name: Color
+                  href: ./canvas-apps/accessible-apps-color.md
         - name: Administrar la aplicación
           items:
             - name: Introducción a powerapps.com
