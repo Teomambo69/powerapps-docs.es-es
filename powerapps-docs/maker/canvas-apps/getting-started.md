@@ -1,6 +1,6 @@
 ---
-title: Introducción | Microsoft Docs
-description: Información sobre cómo crear y usar aplicaciones empresariales personalizadas con Microsoft PowerApps
+title: ¿Qué son las aplicaciones de lienzo? | Microsoft Docs
+description: Diseño y compilación de una aplicación de línea de negocio personalizada a partir de un lienzo en PowerApps
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,13 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/14/2018
 ms.author: anneta
-ms.openlocfilehash: 2d45f6a054fb95ab3a4ebf037ac1115497724ef4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 984c53417f8684add431dffc6d7c7d89d707eaf2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="introduction-to-powerapps"></a>Introducción a PowerApps
+# <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Esto es PowerApps. PowerApps es un servicio que permite compilar aplicaciones empresariales que se ejecutan en un explorador o en una tableta o teléfono sin necesidad de tener experiencia en codificación. PowerApps combina los conceptos de arrastrar y colocar objeto visuales de PowerPoint con expresiones similares a las Excel tanto para la lógica como para trabajar con datos.
 
 Con PowerApps, se pueden integrar datos de negocio de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md) en una aplicación eficaz. También se pueden crear aplicaciones para que los usuarios las ejecuten en SharePoint, Power BI y Teams.

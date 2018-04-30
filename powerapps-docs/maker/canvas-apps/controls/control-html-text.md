@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bb652f3ba6decad7cb6f93007eaec6340f230ca1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 194f00a670f3c879325603f519c1c86e9ba6cf2c
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
@@ -32,7 +32,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**Texto HTML**: texto que aparece en un control de texto HTML y que puede contener etiquetas HTML.
+**HtmlText**: texto que aparece en un control de texto HTML y que puede contener etiquetas HTML.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
@@ -85,8 +85,22 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 
 ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
-1. Agregue un Control **Texto HTML** y establezca su propiedad **TextoHTML** con este valor:<br>
+1. Agregue un control **Texto HTML** y establezca su propiedad **HtmlText** en este valor:<br>
    **Source.Text**
    
      El control **Texto HTML** muestra el mismo texto que el **[Etiqueta](control-text-box.md)** pero convierte las etiquetas en los caracteres correspondientes.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+La finalidad del **texto HTML** no es ser interactivo. Solo debe usarse para la visualización de texto.
+
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
+* Texto con colores personalizados y su fondo
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **HtmlText** debe existir.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **HtmlText** no debe contener elementos interactivos, como `<button>`, `<a>` o `<input>`. El sistema de **[TabIndex](properties-accessibility.md)** en PowerApps no tiene en cuenta los elementos dentro de **HtmlText**.

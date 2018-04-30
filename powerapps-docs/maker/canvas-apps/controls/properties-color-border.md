@@ -1,25 +1,22 @@
 ---
 title: Propiedades de color y bordes | Microsoft Docs
 description: Información de referencia acerca de propiedades como BorderColor, HoverBorderColor y PressedBorderColor
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 913e9b78445db03fbd59fedbdd0bf9d992175bf1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5c30d0c96d3d6ad8eee0781a6c209419ba70c860
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Propiedades de color y bordes en PowerApps
 ## <a name="overview"></a>Información general
@@ -48,12 +45,17 @@ Estas propiedades estarán en vigor normalmente cuando el usuario no está inter
 
 * Se aplica a los controles **[Agregar imagen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Botón](control-button.md)**, **[Tarjeta](control-card.md)**, **[Casilla](control-check-box.md)**, **[Selector de fecha](control-date-picker.md)**, **[Mostrar formulario](control-form-detail.md)**, **[Desplegable](control-drop-down.md)**, **[Formulario de edición](control-form-detail.md)**, **[Exportar](control-export-import.md)**, **[Galería](control-gallery.md)**, **[Texto HTML](control-html-text.md)**, **[Icono](control-shapes-icons.md)**, **[Imagen](control-image.md)**, **[Importar](control-export-import.md)**, **[Cuadro de lista](control-text-box.md)**, **[Micrófono](control-list-box.md)**, **[Visor de PDF](control-microphone.md)**, **[Entrada manuscrita](control-pdf-viewer.md)**, **[Radio](control-pen-input.md)**, **[Clasificación](control-radio.md)**, **[Pantalla](control-rating.md)**, **[Forma](control-screen.md)**, **[Cuadro de texto](control-shapes-icons.md)**, **[Entrada de texto](control-text-input.md)**, **[Temporizador](control-timer.md)**, **[Alternancia](control-toggle.md)** y **[Vídeo](control-audio-video.md)**.
 
-**FocusedBorderThickness**: grosor del borde del control cuando se resalta el teclado.
+## <a name="focused"></a>Enfocado
+Estas propiedades tienen efecto cuando el control recibe el foco.
 
-* Se aplica a los controles **[Agregar imagen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Botón](control-button.md)**, **[Tarjeta](control-card.md)**, **[Casilla](control-check-box.md)**, **[Selector de fecha](control-date-picker.md)**, **[Mostrar formulario](control-form-detail.md)**, **[Desplegable](control-drop-down.md)**, **[Formulario de edición](control-form-detail.md)**, **[Exportar](control-export-import.md)**, **[Galería](control-gallery.md)**, **[Texto HTML](control-html-text.md)**, **[Icono](control-shapes-icons.md)**, **[Imagen](control-image.md)**, **[Importar](control-export-import.md)**, **[Cuadro de lista](control-text-box.md)**, **[Micrófono](control-list-box.md)**, **[Visor de PDF](control-microphone.md)**, **[Entrada manuscrita](control-pdf-viewer.md)**, **[Radio](control-pen-input.md)**, **[Clasificación](control-radio.md)**, **[Pantalla](control-rating.md)**, **[Forma](control-screen.md)**, **[Cuadro de texto](control-shapes-icons.md)**, **[Entrada de texto](control-text-input.md)**, **[Alternancia](control-toggle.md)** y **[Vídeo](control-audio-video.md)**.
+**FocusedBorderColor**: el color del borde de un control cuando recibe el foco.
+
+**FocusedBorderThickness**: el grosor del borde de un control cuando recibe el foco.
+
+* Estas propiedades se aplican a **[Agregar imagen](control-add-picture.md)**, **[Datos adjuntos](control-attachments.md)**, **[Audio](control-audio-video.md)**, **[Botón](control-button.md)**, **[Cámara](control-camera.md)**, **[Casilla](control-check-box.md)**, **[Cuadro combinado](control-combo-box.md)**, **[selector de fecha](control-date-picker.md)**, **[Lista desplegable](control-drop-down.md)**, **[Exportar](control-export-import.md)**, **[Galería](control-gallery.md)**, **[Icono](control-shapes-icons.md)**, **[Imagen](control-image.md)**, **[Importar](control-export-import.md)**, **[Etiqueta](control-text-box.md)**, **[Cuadro de lista](control-list-box.md)**, **[Micrófono](control-microphone.md)**, **[Radio](control-radio.md)**, **[Clasificación](control-rating.md)**, **[Forma](control-shapes-icons.md)**, **[Control deslizante](control-slider.md)**, **[Entrada de texto](control-text-input.md)**, **[Temporizador](control-timer.md)**, **[Alternar](control-toggle.md)** y **[Vídeo](control-audio-video.md)**.
 
 ## <a name="disabled"></a>Disabled
-Estas propiedades tienen efecto cuando se deshabilitan los controles.  Se puede deshabilitar un control si se estable la propiedad **[Disabled](properties-core.md)** en *true*.
+Estas propiedades tienen efecto cuando el control está deshabilitado.  Se puede deshabilitar un control si se estable la propiedad **[Disabled](properties-core.md)** en *true*.
 
 **DisabledBorderColor**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 

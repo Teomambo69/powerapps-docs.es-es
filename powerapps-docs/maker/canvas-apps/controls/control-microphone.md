@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control con el que el usuario puede grabar sonidos.
@@ -33,6 +33,8 @@ Si agrega este control, el usuario puede actualizar un origen de datos con uno o
 **AlDetener**: indica cómo la aplicación responde cuando el usuario detiene la grabación con un control de micrófono.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir la finalidad del micrófono.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -50,6 +52,10 @@ Si agrega este control, el usuario puede actualizar un origen de datos con uno o
 **[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -75,6 +81,8 @@ Si agrega este control, el usuario puede actualizar un origen de datos con uno o
 
 **[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
@@ -99,9 +107,24 @@ Si agrega este control, el usuario puede actualizar un origen de datos con uno o
 2. Agregue un control **Galería personalizada** muévalo debajo de **MyMic** establezca la propiedad **[Elementos](properties-core.md)** para el control **Galería personalizada** en **MySounds**.
 3. En la plantilla para el control **Galería personalizada** de control, agregue un control **[Audio](control-audio-video.md)** y establezca su propiedad **Multimedia** en **ThisItem.Url**.
 4. Presione F5, pulse o haga clic en **MyMic** para iniciar la grabación y luego pulse o haga clic en nuevo para detener la grabación.
-5. En el control **Galería personalizada**, pulse o haga clic en el botón de reproducción en el control  **[Audio](control-audio-video.md)**  para reproducir la grabación.
+5. En el control **Galería personalizada**, pulse o haga clic en el botón de reproducción en el control **[Audio](control-audio-video.md)** para reproducir la grabación.
 6. Agregue tantas grabaciones como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
 7. (opcional) En la plantilla para el control **Galería personalizada**, agregue un control **[Botón](control-button.md)**, establezca su propiedad **[AlSeleccionar](properties-core.md)** en **Quitar (MySounds, EsteElemento)**, presione F5 y, a continuación, quite una grabación haciendo clic o pulsando el correspondiente control **Botón**.
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las grabaciones localmente o la función **[Patch](../functions/function-patch.md)** para actualizar el origen de datos.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+Se aplican las mismas directrices para **[Botón](control-button.md)** porque **Micrófono** es simplemente un botón especializado. Además, tenga en cuenta lo siguiente:
+
+### <a name="audio-alternatives"></a>Alternativas de audio
+* Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades del habla o que no tienen micrófono. Por ejemplo, **[Entrada de texto](control-text-input.md)** para permitir que los usuarios escriban texto.
+
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[Image](properties-visual.md)** y el texto y el icono del botón (si procede)
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.

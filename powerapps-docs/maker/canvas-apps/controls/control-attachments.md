@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint.
@@ -33,6 +33,8 @@ El control de datos adjuntos tiene las siguientes limitaciones temporales:
 1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios.   Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
 
 1. No se pueden cargar archivos con un tamaño superior a 10 MB.  
+
+1. Actualmente, los dispositivos iOS solo pueden cargar archivos de documentos y cuentas de almacenamiento en la nube. Para adjuntar fotografías o vídeos, use el explorador web en el dispositivo iOS para ejecutar la aplicación.
 
 ## <a name="description"></a>Descripción
 Un control de **datos adjuntos** permite abrir los archivos almacenados en un origen de datos, así como agregar y eliminar archivos de una lista de SharePoint.
@@ -51,7 +53,7 @@ Un control de **datos adjuntos** permite abrir los archivos almacenados en un or
 **[OnSelect](properties-core.md)**: cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**AccessibleLabel**: la etiqueta anunciada por los lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
 
 **AddAttachmentText**: el texto de la etiqueta del vínculo que se usa para agregar nuevos datos adjuntos.
 
@@ -63,11 +65,17 @@ Un control de **datos adjuntos** permite abrir los archivos almacenados en un or
 
 **[DisplayMode](properties-core.md)**: indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **MaxAttachmentsText**: el texto que reemplaza al vínculo de "Adjuntar archivo" cuando el control contiene el número máximo de archivos permitidos.
 
 **NoAttachmentsText**: texto informativo que se muestra al usuario cuando no hay archivos adjuntos.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Visible](properties-core.md)** : indica si un control está visible u oculto.
 
@@ -89,4 +97,31 @@ Un control de **datos adjuntos** permite abrir los archivos almacenados en un or
 
     El campo de datos adjuntos asociado a la lista de SharePoint aparecerá en el formulario.
 
-¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
+[Aprenda a agregar y configurar un control](../add-configure-controls.md).
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **ItemColor** y **ItemFill**
+* **ItemHoverColor** y **ItemHoverFill**
+* **ItemPressedColor** y **ItemPressedFill**
+* **AddedItemColor** y **AddedItemFill**
+* **RemovedItemColor** y **RemovedItemFill**
+* **ItemErrorColor** y **ItemErrorFill**
+* **AddAttachmentColor** y **Fill**
+* **MaxAttachmentsColor** y **Fill**
+* **NoAttachmentsColor** y **Fill**
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+Las siguientes propiedades deben estar presentes:
+* **[AccessibleLabel](properties-accessibility.md)**
+* **AddAttachmentsText**
+* **MaxAttachmentsText**
+* **NoAttachmentsText**
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.

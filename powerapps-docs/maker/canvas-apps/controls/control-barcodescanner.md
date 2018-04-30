@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98357cb2f6d829906dfcdd4ecaa4acc3afdef26d
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>Control Escáner de código de barras (experimental) en PowerApps
 Un control experimental con el que el usuario puede realizar fotos mediante el escáner de código de barras del dispositivo.
@@ -31,6 +31,8 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **escáner de código de barras**: en un dispositivo que tenga más de un escáner de códigos de barras, el identificador numérico del escáner de códigos de barras que usa la aplicación.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -51,9 +53,13 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 **Foto**: la imagen capturada cuando el usuario realiza una foto.
 
+**ShowLiveBarcodeDetection**: indica si se muestran indicaciones visuales para señalar el estado de la detección de códigos de barras. Los rectángulos amarillos representan áreas que se van a examinar. Una línea verde que atraviesa un rectángulo indica la identificación correcta del código de barras.
+
 **Stream**: la imagen se actualiza automáticamente en la propiedad **TasaSecuencia**.
 
 **TasaSecuencia**: la frecuencia de actualización de la imagen en la propiedad **Stream**, en milisegundos.  Este valor puede oscilar entre 100 (1/10 centésimas de segundo) y 3 600 000 (1 hora).
+
+**Text**: valor del código de barras que el escáner identificó por última vez.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -75,6 +81,16 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 1. Agregue un control **Escáner de código de barras** y denomínelo **Mybarcode scanner**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Agregue un control **Etiqueta** y establezca su salida en el valor del código de barras.  
+2. Agregue un control **Etiqueta** y establezca su salida en el **texto** del código de barras.  
 3. Escanee un código de barras del tipo establecido en la propiedad BarcodeType.
 4. La etiqueta mostrará el código de barras escaneado.
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="video-alternatives"></a>Alternativas de vídeo
+* Considere la posibilidad de agregar un control **[Etiqueta](control-text-box.md)** con su propiedad **[Text](properties-core.md)** establecida en el **texto** del escáner de código de barras. Puesto que el escáner de código de barras no muestra el valor de código de barras identificado, al realizar el paso anterior el escáner se vuelve disponible para todos, y no solo para aquellos con discapacidades visuales.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+> [!NOTE]
+> Los lectores de pantalla anunciarán cuándo se ha encontrado un nuevo código de barras. El valor no se anunciará. Siempre que el código de barras esté a la vista, los lectores de pantalla recordarán cada 5 segundos que se sigue identificando el mismo código de barras.

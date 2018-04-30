@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: e85b7ce4c51e693d566fb50b51be48f9ab3edadd
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1874d03f5bf01adca9969bd74e7dbed1007d86e2
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="card-control-in-powerapps"></a>Control Card en PowerApps
 Proporciona la experiencia de edición y visualización de un solo campo de un control **[Formulario de presentación](control-form-detail.md)** o **[Formulario de edición](control-form-detail.md)**.
@@ -58,7 +58,7 @@ Consulte [Understand data cards](../working-with-cards.md) (Introducción a las 
 
 **DisplayName**: el nombre descriptivo de un campo en un origen de datos.
 
-* La función  **[DataSourceInfo](../functions/function-datasourceinfo.md)**  proporciona estos metadatos desde el origen de datos.
+* La función **[DataSourceInfo](../functions/function-datasourceinfo.md)** proporciona estos metadatos desde el origen de datos.
 * Los controles de la tarjeta deben usar **Parent.DisplayName** para hacer referencia al nombre del campo.
 
 **Error**: el mensaje de error descriptivo para mostrar de este campo cuando se produce un error de validación.
@@ -101,3 +101,11 @@ Consulte [Understand data cards](../working-with-cards.md) (Introducción a las 
 ## <a name="examples"></a>Ejemplos
 Encontrará ejemplos en [Tarjetas de datos](../working-with-cards.md) y la [introducción al diseño de los formularios de datos](../working-with-form-layout.md).
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[Fill](properties-color-border.md)** y cualquier control secundario. Por ejemplo, si una tarjeta contiene una **[etiqueta](control-text-box.md)** y esta tiene relleno transparente, la propiedad **[Fill](properties-color-border.md)** de la tarjeta se convierte de hecho en el color de fondo de la etiqueta. Por tanto, debe haber un contraste adecuado entre la propiedad **[Fill](properties-color-border.md)** de la tarjeta y la propiedad **[Color](properties-color-border.md)** de la etiqueta.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **DisplayName** debe existir.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dc10ac44c1c14f182c39176a6b0216f3ede3816d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 81465979cce5adf0596cf8c95f8887e0170007a9
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="slider-control-in-powerapps"></a>Control deslizante en PowerApps
 Un control con el que el usuario puede especificar un valor arrastrando un controlador.
@@ -37,23 +37,29 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 **[Valor](properties-core.md)**: el valor de un control de entrada.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
-
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **RellenoDeControladorActivo**: el color del controlador de un control deslizante cuando el usuario cambia el valor.
 
 **RellenoDeControlador**: el color del controlador (el elemento que cambia de posición) en un control de alternancia o control deslizante.
 
 **RellenoDeControladorAlMantener**: el color del texto del controlador cuando el usuario mantiene el puntero sobre él.
+
+**HandleSize**: el diámetro del controlador.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -77,7 +83,7 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 
 **MostrarValor**: indica si el valor de un control deslizante o una clasificación aparece cuando el usuario cambia ese valor o mantiene el puntero sobre el control.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -112,3 +118,24 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 7. Presione F5 y, a continuación, ajuste **MinPopulation** para que se muestren solo aquellas ciudades que tengan una población mayor que el valor especificado.
 8. Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **ValueFill** y **RailFill**
+* **ValueHoverFill** y **RailHoverFill**
+* **[FocusedBorderColor](properties-color-border.md)** y el color situado fuera del control
+* **ValueFill** y el color de fondo
+* **RailFill** y el color de fondo
+* **ValueHoverFill** y el color de fondo
+* **RailHoverFill** y el color de fondo
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+* El valor del control deslizante se debe mostrar al interactuar con el teclado. Esto puede lograrse mediante cualquiera de estos métodos:
+    * Establezca **ShowValue** en **true**.
+    * Agregue un control **[Etiqueta](control-text-box.md)** adyacente al control deslizante. Establezca la propiedad **[Text](properties-core.md)** de la etiqueta en la propiedad **[Value](properties-core.md)** del control deslizante.

@@ -1,25 +1,22 @@
 ---
 title: 'Control Visor de archivos PDF: referencia | Microsoft Docs'
 description: Información sobre el control Visor de archivos PDF, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e52f89f685aeb9c06678b973e926c0fd89bdf47f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -104,3 +101,12 @@ Si el documento no se puede abrir en PowerApps, se brinda al usuario final la po
     El control mostrará el archivo PDF.
 
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+No todas las características de accesibilidad de los documentos PDF se admiten ya que el **visor de PDF** aún se encuentra en la fase experimental. Por lo tanto, **ShowControls** debe establecerse en **true** para permitir que los usuarios abran el documento en una aplicación externa.
+
+Aprenda a crear documentos PDF accesibles con los estándares [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) y [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/).
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* Considere la posibilidad de agregar un encabezado mediante un control **[Etiqueta](control-text-box.md)** si el documento PDF no tiene ningún título. El encabezado puede colocarse inmediatamente delante del **visor de PDF**.

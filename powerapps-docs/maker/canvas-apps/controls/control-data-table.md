@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 431fb0233fa58d59a62a9d5d2cf07bfdd23d6271
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>Control Tabla de datos en PowerApps
 Muestra un conjunto de datos en formato tabular.
@@ -145,3 +145,16 @@ PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En est
    
     ![Editar formulario conectado a Tabla de datos](./media/control-data-table/connected-form-data-table.png)
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* [**Color**](properties-color-border.md) y [**Fill**](properties-color-border.md)
+* **HeadingColor** y **HeadingFill**
+* **SelectedColor** y **SelectedFill**
+* [**HoverColor**](properties-color-border.md) y [**HoverFill**](properties-color-border.md)
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **NoDataText** debe existir.

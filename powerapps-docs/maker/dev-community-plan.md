@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 3a7407f0f93ee5cd6bb749f79c258a1cf6c20b96
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
@@ -55,8 +55,8 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 | **Características principales** | |
 | Crear y ejecutar aplicaciones |Sí. Puede crear un número ilimitado de aplicaciones |
 | Compartir aplicaciones\* |No |
-| Usar Common Data Service |Sí |
-| Modelar los datos mediante Common Data Service |Sí |
+| Usar Common Data Service |Sí** |
+| Modelar los datos mediante Common Data Service |Sí** |
 | Administración de entornos y directivas de usuario de nivel empresarial |Sí |
 | **Conectividad** | |
 | Conectarse a Office 365, Dynamics 365 y otros conectores |Sí |
@@ -65,9 +65,9 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 | Tener acceso a datos locales mediante una puerta de enlace local |Sí |
 | Crear conectores personalizados para conectarse a sus propios sistemas |Sí. Puede crear un número ilimitado de conectores personalizados |
 | **Common Data Service** | |
-| Crear y ejecutar aplicaciones usando Common Data Service |Sí |
-| Modelar los datos en Common Data Service |Sí |
-| Crear una base de datos de Common Data Service |Sí |
+| Crear y ejecutar aplicaciones usando Common Data Service |Sí** |
+| Modelar los datos en Common Data Service |Sí** |
+| Crear una base de datos de Common Data Service |Sí** |
 | **Administración** | |
 | Agregar colaboradores como creadores de entornos y administradores |No |
 | Agregar colaboradores a los roles de base de datos |No |
@@ -75,6 +75,8 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 | Establecer directivas de datos para el entorno individual |Sí |
 
 *No puede compartir aplicaciones, flujos, conexiones, etc. con otros usuarios del inquilino. Tampoco puede agregar a otro usuario como administrador o creador del entorno, ni a los roles de la base de datos del centro de administración.
+
+**La creación de una base de datos con Common Data Service no está disponible actualmente en un entorno individual, y estará disponible de nuevo próximamente. Si creó una base de datos en un momento anterior, podrá seguir usándola sin ningún problema. 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>¿Cuáles son los límites de capacidad para el entorno individual?
 | **Capacidad** |  |

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3bab51ee290d779cd01789f55ee7c5908395537a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aec9071cf5cc7cbe451bae32dedc2ba119e21189
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -43,8 +43,6 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[FocusedBorderThickness](properties-color-border.md)** (GrosorDelBordeResaltado): grosor del borde del control cuando se resalta el teclado.
-
 **[Color](properties-color-border.md)**: el color del texto en un control.
 
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
@@ -54,6 +52,10 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 **[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
 **[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
@@ -99,7 +101,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -184,3 +186,15 @@ También puede especificar el color de un control **Botón** estableciendo su pr
 
 * Reemplace la función **[ColorFade](../functions/function-colors.md)** con una función **[ColorValue](../functions/function-colors.md)** en uno de los botones que creó y observe los efectos.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+* Se aplican requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[Text](properties-core.md)** debe existir.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+ 

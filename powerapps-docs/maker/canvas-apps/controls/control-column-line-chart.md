@@ -1,38 +1,35 @@
 ---
 title: 'Controles Gráfico de columnas y Gráfico de líneas: referencia | Microsoft Docs'
 description: Información sobre los controles Gráfico de columnas y Gráfico de líneas, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 039b267394ef6be5e3038fa0b07149f69fee6a51
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.
 
 ## <a name="description"></a>Descripción
-De forma predeterminada, un control **Gráfico de columnas** o un control **Gráfico de líneas** constan de varios controles agrupados juntos. Estos controles muestran un título, datos y una leyenda.
+**Gráfico de columnas** y **Gráfico de líneas** son controles agrupados. Cada grupo contiene tres controles: un control **[Etiqueta](control-text-box.md)** para el título, el gráfico y un control **Leyenda**.
 
-## <a name="key-properties"></a>Propiedades principales
+## <a name="chart-key-properties"></a>Propiedades principales del gráfico
 **[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
 **NúmeroDeSeries**: indica el número de columnas de datos reflejadas en un gráfico de columnas o de líneas.
 
-## <a name="all-properties"></a>Todas las propiedades
+## <a name="additional-chart-properties"></a>Propiedades adicionales del gráfico
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -41,9 +38,9 @@ De forma predeterminada, un control **Gráfico de columnas** o un control **Grá
 
 **[Color](properties-color-border.md)**: el color del texto en un control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
-
 **[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
@@ -91,6 +88,8 @@ De forma predeterminada, un control **Gráfico de columnas** o un control **Grá
 
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
 **[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
@@ -103,11 +102,11 @@ De forma predeterminada, un control **Gráfico de columnas** o un control **Grá
 
 **EjeYMáximo**: el valor máximo del eje y de un gráfico de columnas o de líneas.
 
-* La propiedad **EjeYMáximo** está disponible para el control **Gráfico de columnas** pero no para el control **Gráfico de líneas**.
+* La propiedad **YAxisMax** está disponible para el control **Gráfico de líneas** pero no para el control **Gráfico de columnas**.
 
 **EjeYMínimo**: el valor mínimo del eje y de un gráfico de columnas o de líneas.
 
-* La propiedad **EjeYMínimo** está disponible para el control **Gráfico de columnas** pero no para el control **Gráfico de líneas**.
+* La propiedad **YAxisMin** está disponible para el control **Gráfico de líneas** pero no para el control **Gráfico de columnas**.
 
 **YLabelAngle**: el ángulo de las etiquetas junto al eje y de un gráfico de líneas o de columnas.
 
@@ -126,3 +125,28 @@ De forma predeterminada, un control **Gráfico de columnas** o un control **Grá
    
     El control muestra datos de ingresos para cada producto durante tres años.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* Cada elemento de **ItemColorSet**
+* Cada elemento de **ItemColorSet** y el color de fondo
+* La propiedad **[Color](properties-color-border.md)** y el color de fondo
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* Debe haber un control **[Etiqueta](control-text-box.md)** inmediatamente delante del gráfico para que sirva de título.
+* Considere la posibilidad de agregar un resumen del gráfico. Por ejemplo, "El gráfico de líneas muestra un aumento constante en las ventas entre marzo y agosto de este año".
+
+    > [!NOTE]
+> Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
+
+### <a name="low-vision-support"></a>Apoyo para deficiencia visual
+* Debe haber un control **Leyenda** si se muestra más de una serie.
+* Considere la posibilidad de establecer **GridStyle** en GridStyle.All, que muestra ambos ejes. Esto ayuda a que todos los usuarios puedan determinar con precisión la escala de los datos.
+* Para el control **Gráfico de columnas**, considere la posibilidad de establecer **Markers** en **true**. Esto ayuda a los usuarios con deficiencia visual a determinar el valor de una columna.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+
+    > [!NOTE]
+> Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.

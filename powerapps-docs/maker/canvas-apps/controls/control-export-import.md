@@ -1,25 +1,22 @@
 ---
 title: 'Control Exportar y control Importar: referencia | Microsoft Docs'
 description: Información sobre el control Exportar y el control Importar, que incluye propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 958589deb4fdee42cb8e6df13ff15addbc06c07e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Control Exportar y control Importar en PowerApps
 Controles para exportar datos a un archivo local y luego importarlos en otra aplicación de PowerApps.
@@ -58,6 +55,10 @@ Al habilitar esta funcionalidad en la aplicación, puede exponerla a vulnerabili
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
 **[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
@@ -92,6 +93,8 @@ Al habilitar esta funcionalidad en la aplicación, puede exponerla a vulnerabili
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
 **[Text](properties-core.md)**: texto que aparece en un control o que el usuario escribe en un control.
 
 **[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
@@ -122,3 +125,6 @@ Al habilitar esta funcionalidad en la aplicación, puede exponerla a vulnerabili
 7. Presione F5, haga clic o pulse **MyData**, haga clic o pulse el archivo exportado y luego haga clic o pulse **Abrir**.
 8. Presione Esc, haga clic o pulse **Colecciones** en el menú **Archivo** y confirme que la aplicación actual tiene los datos que ha exportado.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+Se aplican las mismas directrices para **[Botón](control-button.md)** porque **Exportar** e **Importar** son simplemente botones especializados.

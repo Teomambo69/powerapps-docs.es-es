@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.
@@ -70,3 +70,18 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 8. (opcional) Pulse o haga clic en la otra opción del control **[Radio](control-radio.md)** y pulse o haga clic en el control **[Forma](control-shapes-icons.md)** para confirmar que **Target** aparece en el otro color.
 9. Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Cuando la **pantalla** es de hecho el fondo del texto, debe haber un contraste de color adecuado entre:
+* **[Fill](properties-color-border.md)** y el texto
+* **[BackgroundImage](properties-visual.md)** y el texto (si procede)
+
+Por ejemplo, si un control **Pantalla** contiene un control **[Etiqueta](control-text-box.md)** y esta tiene relleno transparente, la propiedad **[Fill](properties-color-border.md)** de la pantalla se convierte de hecho en el color de fondo de la etiqueta.
+
+Además de texto, podría también comprobar el contraste de color con objetos gráficos esenciales como las imágenes de estrella de un control **[Clasificación](control-rating.md)**.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* Debe haber un nombre significativo para cada **pantalla**. El nombre de la pantalla se puede ver y editar de la misma manera que otros controles: en la vista de árbol del panel de controles o en el encabezado del panel de propiedades.
+> [!NOTE]
+> Cuando se carga una nueva **pantalla**, los lectores de pantalla anunciarán su nombre. 

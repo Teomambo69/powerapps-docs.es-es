@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -46,6 +46,8 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **IsSearchable**: indica si el usuario puede buscar elementos antes de realizar la selección.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -58,6 +60,10 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **InputTextPlaceholder**: texto informativo que se muestra a los usuarios finales cuando no hay elementos seleccionados.
@@ -67,6 +73,8 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **OnNavigate**: cómo responde la aplicación cuando el usuario hace clic en un elemento.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
@@ -85,3 +93,26 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
     Aparecerá un **cuadro combinado** funcional en la aplicación.
 
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **ChevronFill** y **ChevronBackground**
+* **ChevronHoverFill** y **ChevronHoverBackground**
+* **SelectionColor** y **SelectionFill**
+* **SelectionFill** y **[Fill](properties-color-border.md)**
+* **SelectionTagColor** y **SelectionTagFill**
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+> [!NOTE]
+> En pantallas táctiles, los usuarios de lector de pantalla pueden desplazarse por el contenido del cuadro combinado secuencialmente. El cuadro combinado actúa como botón que muestra u oculta su contenido cuando se selecciona.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+> [!NOTE]
+> La tecla de tabulación permite desplazarse hasta el cuadro combinado o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del cuadro combinado. La tecla escape cierra la lista desplegable cuando está abierta.

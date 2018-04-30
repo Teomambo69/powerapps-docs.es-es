@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a760dd47cfe703cdf829037d0090c99fc215831e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 Control que muestra un icono de [Power BI ](https://powerbi.microsoft.com) dentro de una aplicación.
@@ -68,3 +68,9 @@ Una vez compartida, la aplicación de PowerApps será accesible a todos los usua
    
    ¿No tiene Power BI? [Regístrese](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+El **icono de Power BI** es simplemente un contenedor de contenido de Power BI. Aprenda a crear contenido accesible con estas [sugerencias de accesibilidad de Power BI](https://docs.microsoft.com/power-bi/desktop-accessibility).
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* Considere la posibilidad de agregar un encabezado mediante un control **[Etiqueta](control-text-box.md)** si el contenido de Power BI no tiene un icono. El encabezado puede colocarse inmediatamente delante del **icono de Power BI**.

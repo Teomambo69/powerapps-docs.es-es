@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7e5be9b68b501279329c23f9afe5d451487fa8d1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>Control Entrada manuscrita en PowerApps
 Control con el que el usuario puede dibujar, borrar y resaltar áreas de una imagen.
@@ -33,6 +33,8 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
 **Modo**: el control se encuentra en modo **Dibujar** o **Borrar**.  El modo Seleccionar está en desuso.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Puede utilizarse para describir el propósito del control, así como métodos de entrada alternativos.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -84,9 +86,24 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
    
     La imagen que ha dibujado aparecerá en el control **Galería de imágenes**.
 7. (opcional) En el control **Entrada manuscrita**, haga clic en o pulse el icono para borrar la imagen que ha dibujado, dibuje otra y pulse o haga clic en el control **[Botón](control-button.md)**.
-8. En el control **Galería de imágenes**, establezca la propiedad  **[AlSeleccionar](properties-core.md)**  del control  **[Imagen](control-image.md)**  con la siguiente fórmula:<br>
+8. En el control **Galería de imágenes**, establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Imagen](control-image.md)** con la siguiente fórmula:<br>
    **Remove(Doodles, ThisItem)**
 9. Pulse o haga clic en el control **Galería de imágenes** para eliminar un dibujo.
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar los dibujos en el entorno local o la función **[Patch](../functions/function-patch.md)** para guardarlas en un origen de datos.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[BorderColor](properties-color-border.md)** y el color situado fuera del control (si hay un borde)
+* **[Fill](properties-color-border.md)** y el color situado fuera del control (si no hay un borde)
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe existir.
+> [!IMPORTANT]
+> El control **Entrada manuscrita** no es accesible para los usuarios de lector de pantalla. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere un boceto, considere la posibilidad de agregar un control **[Agregar imagen](control-add-picture.md)**  para que los usuarios carguen una imagen. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+> [!IMPORTANT]
+> **Entrada manuscrita** no es accesible para los usuarios de teclado. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere una firma, podría agregar un control **[Entrada de texto](control-text-input.md)** para que los usuarios escriban su nombre. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.

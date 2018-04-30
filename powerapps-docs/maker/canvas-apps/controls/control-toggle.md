@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.
@@ -33,13 +33,13 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 **[Valor](properties-core.md)**: el valor de un control de entrada.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
 
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
@@ -52,6 +52,12 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 **FalseText**: el texto que se muestra cuando la alternancia está desactivada.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
+**HandleFill**: el color de relleno del controlador de alternancia.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -75,7 +81,7 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 
 **ShowLabel**: indica si se muestra una etiqueta de texto al lado del control de alternancia.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **TextPosition**: indica si la etiqueta está a la izquierda o la derecha del control de alternancia.
 
@@ -114,3 +120,30 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 
     La etiqueta muestra un precio distinto, en función de si **MemberDiscount** está activado o desactivado.
 4. Presione Esc para volver al área de trabajo predeterminada.
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **HandleFill** y **FalseFill**
+* **HandleFill** y **FalseHoverFill**
+* **HandleFill** y **TrueFill**
+* **HandleFill** y **TrueHoverFill**
+* **FalseFill** y el color de fuera de control
+* **FalseHoverFill** y el color de fuera de control
+* **TrueFill** y el color de fuera de control
+* **TrueHoverFill** y el color de fuera de control
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+* La propiedad **FalseText** debe existir.
+* La propiedad **TrueText** debe existir.
+
+### <a name="low-vision-support"></a>Apoyo para deficiencia visual
+* Considere la posibilidad de configurar **ShowLabel** como **true** para que los usuarios puedan determinar rápidamente el valor de alternancia.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.

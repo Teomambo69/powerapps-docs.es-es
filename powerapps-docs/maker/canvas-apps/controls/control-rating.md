@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4dd23b8c94ee4760e40b4513e7a88667f85c3a4b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.
@@ -33,17 +33,21 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
 **Max**: el valor máximo para el que el usuario puede establecer un control deslizante o una clasificación.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
-
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -59,7 +63,7 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
 
 **MostrarValor**: indica si el valor de un control deslizante o una clasificación aparece cuando el usuario cambia ese valor o mantiene el puntero sobre el control.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -91,3 +95,22 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
     La sugerencia del control **[Entrada de texto](control-text-input.md)** cambia para reflejar la baja clasificación.
 6. Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **RatingFill** y **[Fill](properties-color-border.md)**
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+> [!NOTE]
+> Los lectores de pantalla tratan el control **Clasificación** como botones de radio.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+* Considere la posibilidad de usar otro control si hay demasiadas estrellas. Puede resultar agotador navegar con un teclado y difícil seleccionar con precisión con una pantalla táctil.
+> [!NOTE]
+> Las mismas interacciones de teclado para los botones de radio se pueden emplear en **Clasificación**.

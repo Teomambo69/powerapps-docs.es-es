@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1388eac45e5086f677cb83c8db9593fe01a9819f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Control de gráficos circulares en PowerApps
 Control que muestra valores relativos comparados entre ellos.
@@ -27,12 +27,14 @@ Control que muestra valores relativos comparados entre ellos.
 ## <a name="description"></a>Descripción
 Agregue un control de **gráfico circular** si desea que aparezcan datos relativos de una tabla que contenga las etiquetas de la columna izquierda y valores en la segunda columna de la izquierda.
 
-## <a name="key-properties"></a>Propiedades principales
+Este control es un control agrupado que contiene tres controles: un control **[Etiqueta](control-text-box.md)** para el título, el gráfico y un control **Leyenda**.
+
+## <a name="chart-key-properties"></a>Propiedades principales del gráfico
 **[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
 **ShowLabels**: indica si un gráfico circular muestra el valor asociado con cada una de sus partes.
 
-## <a name="additional-properties"></a>Propiedades adicionales
+## <a name="additional-chart-properties"></a>Propiedades adicionales del gráfico
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -67,6 +69,8 @@ Agregue un control de **gráfico circular** si desea que aparezcan datos relativ
 
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
 **[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
@@ -90,3 +94,25 @@ Agregue un control de **gráfico circular** si desea que aparezcan datos relativ
    
     El control de **gráfico circular** muestra los datos de ingresos para cada producto en relación con los demás.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* Cada elemento de **ItemColorSet**
+* Cada elemento de **ItemColorSet** y el color de fondo
+* La propiedad **[Color](properties-color-border.md)** y el color de fondo
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* Debe haber un control **[Etiqueta](control-text-box.md)** inmediatamente delante del gráfico para que sirva de título.
+> [!NOTE]
+> Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
+
+### <a name="low-vision-support"></a>Apoyo para deficiencia visual
+* Debe haber un control **Leyenda**.
+* Considere la posibilidad de establecer **ShowLabels** en **true**. Esto ayuda a los usuarios con deficiencia visual a determinar rápidamente qué representa cada sector del gráfico circular.
+* Considere la posibilidad de establecer **LabelPosition** en **LabelPosition.Outside**. De esta forma, aumenta la legibilidad de las etiquetas debido a un contraste de color más uniforme.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+> [!NOTE]
+> Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.

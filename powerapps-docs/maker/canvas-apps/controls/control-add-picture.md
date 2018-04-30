@@ -1,25 +1,22 @@
 ---
 title: 'Control Agregar imagen: referencia | Microsoft Docs'
 description: Información sobre el control Agregar imagen, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6a7c60755f5623803d20bec4ec9881108b1116c6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8882873367442238012445c901bd86b33ff6863c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-picture-control-in-powerapps"></a>Control Agregar imagen en PowerApps
 Toma una fotografía o carga imágenes desde el dispositivo local.
@@ -27,10 +24,14 @@ Toma una fotografía o carga imágenes desde el dispositivo local.
 ## <a name="description"></a>Descripción
 Con este control los usuarios pueden tomar fotografías o cargar archivos de imagen desde su dispositivo y actualizar el origen de datos con este contenido. En un dispositivo móvil se presenta al usuario el cuadro de diálogo de elección del dispositivo para que elija entre tomar una foto o seleccionar una ya disponible.
 
-Este control es un control compuesto, formado por dos controles.  Presione o pulse una vez para seleccionar el control externo que muestra la imagen que se ha cargado.  Presione o pulse de nuevo para seleccionar el control de etiqueta interno.
+Este control es un control agrupado que contiene dos controles: un control **Imagen** y un control **Add media button** (Agregar botón multimedia). El control **Imagen** muestra la imagen cargada o un marcador de posición si no se ha cargado ninguna imagen. El control **Add media button** (Agregar botón multimedia) le solicita una imagen para cargar.
 
-## <a name="outer-control-properties"></a>Propiedades del control externo
-Estas propiedades se aplican al control externo.
+Consulte la [referencia del control Imagen](control-image.md) para conocer las propiedades de **Imagen**.
+
+## <a name="add-media-button-properties"></a>Propiedades de Add media button (Agregar botón multimedia)
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir el fin de agregar una imagen.
+
+**[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
@@ -38,29 +39,69 @@ Estas propiedades se aplican al control externo.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**ChangePictureText**: texto que aparece en el botón cuando se ha cargado una imagen.
+
+**[Color](properties-color-border.md)**: el color del texto en un control.
 
 **[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
+**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+
 **[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **Error**: si hay un problema al cargar una imagen, esta propiedad contendrá una cadena de error apropiada.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
+**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
+
+**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
+**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
+
 **[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+
+**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
 **Multimedia**: un identificador de la secuencia que reproduce un control de audio o de vídeo.
 
+**[AlCambiar](properties-core.md)**: indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
+
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+
+**[Padding](properties-size-location.md)**: la distancia entre el texto de un botón Exportar o Importar y los bordes de ese botón.
 
 **[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
+**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
+
 **[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+
+**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
+
+**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
+
+**[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
+**[Text](properties-core.md)**: texto que aparece en el botón cuando no se ha cargado una imagen.
+
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+
+**[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
+
+**[VerticalAlign](properties-text.md)**: la ubicación del texto en un control respecto al centro vertical de ese control.
 
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
@@ -70,43 +111,10 @@ Estas propiedades se aplican al control externo.
 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-## <a name="inner-text-properties"></a>Propiedades del texto interno
-Estas propiedades se aplican al control de etiqueta interno que dice de forma predeterminada "Pulse o haga clic para agregar una imagen".  Para seleccionar este control interno, presione o pulse el control **Agregar imagen** una vez y, luego, otra.
-
-**[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
-
-**[Color](properties-color-border.md)**: el color del texto en un control.
-
-**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
-
-**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
-
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
-
-**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
-
-**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
-
-**[AlCambiar](properties-core.md)**: indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
-
-**[Padding](properties-size-location.md)**: la distancia entre el texto de un botón Exportar o Importar y los bordes de ese botón.
-
-**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
-
-**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
-
-**[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
-
-**[Text](properties-core.md)**: texto que aparece en un control o que el usuario escribe en un control.
-
-**[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
-
-**[VerticalAlign](properties-text.md)**: la ubicación del texto en un control respecto al centro vertical de ese control.
-
 ## <a name="related-functions"></a>Funciones relacionadas
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
-## <a name="example"></a>Ejemplo
+## <a name="examples"></a>Ejemplos
 ### <a name="add-images-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
 1. Agregue un control **Agregar imagen** y, a continuación, haga clic en él tres veces.
    
@@ -127,3 +135,17 @@ Estas propiedades se aplican al control de etiqueta interno que dice de forma pr
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las imágenes localmente o la función **[Patch](../functions/function-patch.md)** para actualizar el origen de datos.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+Se aplican las mismas directrices para **[Botón](control-button.md)** e **[Imagen](control-image.md)**. Además, tenga en cuenta lo siguiente:
+
+### <a name="color-contrast"></a>Contraste de color
+* El control **Add media button** (Agregar botón multimedia) debe tener el contraste adecuado entre su texto y el fondo. Dado que la imagen cargada puede tener diversos colores, use una propiedad **[Fill](properties-color-border.md)** opaca en el control **Add media button** (Agregar botón multimedia) para garantizar un contraste uniforme.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* El control **Add media button** (Agregar botón multimedia) debe tener las propiedades **Text** y **ChangePictureText** que soliciten al usuario que agregue o cambie una imagen.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* **Add media button** (Agregar botón multimedia) debe tener la propiedad **[TabIndex](properties-accessibility.md)** igual a cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* **Add media button** (Agregar botón multimedia) debe tener claramente visibles los indicadores de enfoque. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+ 

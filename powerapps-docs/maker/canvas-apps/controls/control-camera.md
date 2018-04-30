@@ -1,25 +1,22 @@
 ---
 title: 'Control Cámara: referencia | Microsoft Docs'
 description: Información sobre el control Cámara, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: a3a724ad42082962ec8aea4e616f1d75aa7299ec
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="camera-control-in-powerapps"></a>Control Cámara en PowerApps
 Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.
@@ -31,6 +28,8 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **Cámara**: en un dispositivo que tenga más de una cámara, el identificador numérico de la cámara que usa la aplicación.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir la finalidad de realizar una foto.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
@@ -43,6 +42,10 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
@@ -54,6 +57,8 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **Stream**: la imagen se actualiza automáticamente en la propiedad **TasaSecuencia**.
 
 **TasaSecuencia**: la frecuencia de actualización de la imagen en la propiedad **Stream**, en milisegundos.  Este valor puede oscilar entre 100 (1/10 centésimas de segundo) y 3 600 000 (1 hora).
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -90,3 +95,21 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las fotos localmente o la función **[Revisión](../functions/function-patch.md)** para actualizar el origen de datos.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+Además de mostrar la fuente de la cámara, todo el control de cámara también funciona como un botón que realiza una foto. Por lo tanto, las consideraciones sobre accesibilidad son parecidas a las de los botones.
+
+### <a name="video-alternatives"></a>Alternativas de vídeo
+* Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades visuales. Por ejemplo, **[Agregar imagen](control-add-picture.md)** para permitir que los usuarios carguen una imagen desde sus dispositivos.
+
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[FocusedBorderColor](properties-color-border.md)** y el color exterior
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+ 

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/03/2016
+ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: ccece4f2915460e623bf0a7e527a7105e9ff2954
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 69e46e1e55b3f1dd4b1e0df20ef274a56e657809
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Dar formato a una tabla en Excel y sugerencias de nomenclatura
 Para utilizar datos de Excel en PowerApps, primero es necesario dar formato de tabla a esos datos. En este artículo se muestra cómo dar formato a una tabla en Excel y se ofrecen algunas sugerencias de asignación de nombres de columnas de Excel.
@@ -41,3 +41,7 @@ Para que le resulte fácil encontrar la tabla, vaya a **Diseño** en **Herramien
 En la tabla de Excel, pruebe a agregar la palabra clave "imagen" en la columna de imagen. Esto enlazará la columna de imagen con un control de imagen cuando se utilice esta tabla en una galería con controles de imagen.
 
 ![Conectar la tabla de Excel con imágenes](./media/how-to-excel-tips/connect-gallery.png)
+
+## <a name="next-steps"></a>Pasos siguientes
+* [Generar una aplicación desde Excel en PowerApps](get-started-create-from-data.md) según una tabla especificada. La aplicación tendrá tres pantallas de forma predeterminada: una para examinar registros, para mostrar detalles acerca de un registro y crear o actualizar un registro.
+* [Crear una aplicación desde el principio](get-started-create-from-blank.md) mediante la tabla a la que ha aplicado formato de Excel. Puede crear y personalizar manualmente la aplicación para mostrar, examinar o modificar los datos de la tabla.

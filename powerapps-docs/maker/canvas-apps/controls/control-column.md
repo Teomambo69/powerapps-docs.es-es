@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 0e9c04c4786ff4cee11d7aae75245054e93391fa
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: cf9a1f71215a2c58d12a726ed88bdd9fe8b9c970
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="column-control-in-powerapps"></a>Control Columna en PowerApps
 Proporciona la representación de un solo campo en un control [**Tabla de datos**](control-data-table.md).
@@ -64,3 +64,7 @@ El control [**Tabla de datos**](control-data-table.md) muestra un conjunto de da
    
     ![Control Columna con tamaño cambiado](./media/control-column/post-resize-column.png)
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **DisplayName** debe existir.

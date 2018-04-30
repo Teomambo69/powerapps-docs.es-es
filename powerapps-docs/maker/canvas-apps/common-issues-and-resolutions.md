@@ -13,16 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/05/2018
+ms.date: 04/12/2018
 ms.author: sharik
-ms.openlocfilehash: 6df3a0d92f8dd8352f93bdb377ac9c4b446e1e99
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8a241ff41abf5f3fe804330d6678b70cf0576ceb
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 ## <a name="recently-addedchanged"></a>Agregado o cambiado recientemente
+1. **Utilice una imagen personalizada como icono de aplicación**
+
+    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://web.powerapps.com). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
+
+1. **Copiar y pegar pantallas entre aplicaciones**
+
+    No se admite actualmente copiar y pegar pantallas entre aplicaciones. Para resolver este problema, agregue una nueva pantalla a la aplicación de destino, copie los controles de la pantalla de la aplicación de origen y, a continuación, péguelos en la pantalla de la aplicación de destino.
+
 1. **Cambio del diseño de los formularios de SharePoint**
 
     Al personalizar un formulario de lista de SharePoint en algunos idiomas, si se intenta cambiar el diseño de vertical (valor predeterminado) a horizontal, la aplicación puede mostrar varios errores (triángulos amarillos en controles). Para resolver estos errores y conservar el diseño horizontal, haga clic en **Deshacer**.

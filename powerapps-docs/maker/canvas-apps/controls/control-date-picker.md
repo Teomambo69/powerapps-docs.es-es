@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f2605680c7b6e8f7102fd3459230344863a93f55
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: cea6eca66bc5945004da85d32a57239d28e4302e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
@@ -40,13 +40,13 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 **Idioma**: determina el idioma utilizado para dar formato a las fechas, como los nombres de los meses. Si no se especifica esta propiedad, la configuración del dispositivo del usuario determina el idioma.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
 
 **[Color](properties-color-border.md)**: el color del texto en un control.
 
@@ -61,6 +61,10 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 **EndYear**: el último año en el que el usuario puede establecer el valor de un control Selector de fecha.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
@@ -84,7 +88,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **StartYear**: el primer año en el que el usuario puede establecer el valor de un control Selector de fecha.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
@@ -110,3 +114,15 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
     El control **[Etiqueta](control-text-box.md)** muestra el número de días entre hoy y la fecha que eligió.
 4. Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+* Se aplican requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+ 

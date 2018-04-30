@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3784e90bbf6ed45d2b67b6211efaab279e37feca
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9b51e1cf59c5df163027e8768c21d6ae544d7ba1
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="check-box-control-in-powerapps"></a>Control Casilla en PowerApps
 Un control que el usuario puede seleccionar o borrar para establecer su valor en **true** o **false**.
@@ -61,6 +61,10 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
 **[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
@@ -101,6 +105,8 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
 **[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
@@ -131,3 +137,21 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
     El control **[Selector de fecha](control-date-picker.md)** aparece cuando la propiedad **[Valor](properties-core.md)** de **chkReserve** es **true** pero no cuando es **false**.
 4. Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **CheckmarkFill** y **CheckboxBackgroundFill**
+* **CheckboxBackgroundFill** y **[Fill](properties-color-border.md)**
+* **CheckboxBackgroundFill** y **[PressedFill](properties-color-border.md)**
+* **CheckboxBackgroundFill** y **[HoverFill](properties-color-border.md)**
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[Text](properties-core.md)** debe existir.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+ 

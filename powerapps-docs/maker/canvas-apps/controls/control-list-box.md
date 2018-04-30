@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 71f3493064e7b877a501f9b91f93adedb0c68f6a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d68e0e08b42bf0342e27c14ab7d53c746c468992
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -35,13 +35,13 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
 [!INCLUDE [long-items](../../../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
 
 **[Color](properties-color-border.md)**: el color del texto en un control.
 
@@ -54,6 +54,10 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
 **[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
@@ -103,7 +107,7 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
-**[TabIndex](properties-accessibility.md)**: personaliza el orden de tabulación de los controles en tiempo de ejecución cuando se establece en un valor distinto de cero.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -149,3 +153,22 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
     ![Nombres de suelos en las listas desplegables](./media/control-list-box/selected-lists.png)
 6. (opcional) Presione Esc para volver al área de trabajo predeterminada.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **SelectionColor** y **SelectionFill**
+* **SelectionFill** y **[Fill](properties-color-border.md)**
+* **[HoverFill](properties-color-border.md)** y **[Fill](properties-color-border.md)**
+* **[PressedFill](properties-color-border.md)** y **[Fill](properties-color-border.md)**
+
+Y esto, además de los requisitos estándar de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+> [!NOTE]
+> La tecla de tabulación se desplaza hasta el control **Cuadro de lista** o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del control **Cuadro de lista**.

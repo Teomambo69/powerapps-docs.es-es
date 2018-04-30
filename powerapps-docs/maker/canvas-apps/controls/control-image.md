@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 82a545279ed297d3faa14ad0db47c30dea2660aa
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -31,6 +31,8 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Imagen](properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+
 **ApplyEXIFOrientation**: si se aplica automáticamente la orientación especificada en los datos EXIF insertados en la imagen.
 
 **AutoDisableOnSelect**: deshabilita automáticamente el control mientras se ejecuta el comportamiento AlSeleccionar.
@@ -40,8 +42,6 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[FocusedBorderThickness](properties-color-border.md)**: grosor del borde del control cuando se resalta el teclado.
 
 **CalculateOriginalDimensions**: habilita las propiedades **AltoOriginal** y **AnchoOriginal**.
 
@@ -56,6 +56,10 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **FlipHorizontal**: si la imagen se voltea horizontalmente antes de mostrarla.
 
 **FlipVertical**: si la imagen se voltea verticalmente antes de mostrarla.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -92,6 +96,8 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[RadiusTopLeft](properties-size-location.md)**: el grado al que se redondea la esquina superior izquierda de un control.
 
 **[RadiusTopRight](properties-size-location.md)**: el grado al que se redondea la esquina superior derecha de un control.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -130,3 +136,23 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
     El control **Galería** muestra imágenes de productos de moqueta, parquet y mosaico basados en vínculos en el archivo de Excel que ha descargado.
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+* Si el gráfico se utiliza como botón, se aplican los requisitos estándar de contraste de color.
+* Considere la posibilidad de comprobar si hay problemas de contraste en la imagen, si no es simplemente decorativa.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente si el gráfico se usa como botón o no solo como decoración.
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar vacía o la cadena **""** vacía si el gráfico es exclusivamente decorativo. De esta forma, los lectores de pantalla omiten el gráfico.
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** puede estar vacía o la cadena **""** vacía si el gráfico proporciona información redundante.
+    * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)**  establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
+> [!IMPORTANT]
+> Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el gráfico se utiliza como botón. De esta forma, los usuarios de teclado pueden navegar hasta él.
+* Los indicadores de foco deben ser claramente visibles si el gráfico se usa como botón. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+> [!NOTE]
+> Cuando **[TabIndex](properties-accessibility.md)**  es cero o mayor, el control **Imagen** se representa como un botón. No hay ningún cambio en la apariencia visual, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el control **Imagen** se identifica como una imagen.

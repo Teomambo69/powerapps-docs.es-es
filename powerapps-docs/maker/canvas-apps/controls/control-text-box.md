@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f0547963060d31f86b32cc2aaff38b116d35036b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e3cae08695af7a4625fd4deb58c8cf7cfe71fdd0
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
 Cuadro que muestra los datos como texto, números, fechas o moneda.
@@ -59,6 +59,10 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+
 **[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
@@ -94,6 +98,8 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -140,3 +146,27 @@ En este procedimiento, creará una colección, denominada **CityPopulations**, q
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 4. En el panel **Gallery1**, establezca la lista superior en **Population**, la del medio en **City** y la inferior en **Country**.
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+A pesar de su nombre, un control **Etiqueta** no tiene que usarse como etiqueta con otro control. Se puede utilizar para mostrar cualquier fragmento de texto.
+
+Un control **Etiqueta** se puede usar como botón o vínculo mediante la especificación del comportamiento **[OnSelect](properties-core.md)**. Cuando se utiliza de este modo, hay algunas consideraciones sobre accesibilidad parecidas a las que se tienen con los botones.
+
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
+* Se aplican otros requisitos estándar de contraste de color (si se usa como botón o vínculo)
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[Text](properties-core.md)** debe existir.
+> [!NOTE]
+> Los lectores de pantalla tratan los controles **Etiqueta** como botones cuando **[TabIndex](properties-accessibility.md)** es cero o superior.
+
+### <a name="low-vision-support"></a>Apoyo para deficiencia visual
+* El control **Etiqueta** debe parecerse a un vínculo, si se utiliza como vínculo.
+    * Establezca la propiedad **[Underline](properties-text.md)** en **true**.
+    * **[HoverColor](properties-color-border.md)** debe ser diferente de **[Color](properties-color-border.md)**
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el texto se utiliza como botón o vínculo. De esta forma, los usuarios de teclado pueden navegar hasta él.
+* Los indicadores de foco deben ser claramente visibles si el texto se usa como botón o vínculo. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.

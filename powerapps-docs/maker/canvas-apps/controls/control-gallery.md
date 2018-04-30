@@ -1,25 +1,22 @@
 ---
 title: 'Control Galería: referencia | Microsoft Docs'
 description: Información sobre el control Galería, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
-author: RickSaling
-manager: anneta
+author: fikaradz
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 9839059cca741e47f5f519a45e7291847c1bc792
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>Control Galería en PowerApps
 Un control que contiene otros controles y muestra un conjunto de datos.
@@ -37,6 +34,8 @@ Hay disponibles plantillas predefinidas de la galería para mostrar imágenes, t
 **Seleccionados**: el elemento seleccionado.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir cuáles es la lista de elementos.
+
 **TodosLosElementos**: todos los elementos de una galería, como valores de control adicionales que sean parte de la plantilla de la galería.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
@@ -96,3 +95,22 @@ Hay disponibles plantillas predefinidas de la galería para mostrar imágenes, t
 * [Obtener sonidos](control-microphone.md#example)
 * [Obtener dibujos](control-pen-input.md#create-a-set-of-images)
 
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="color-contrast"></a>Contraste de color
+Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber un contraste de color adecuado entre:
+* **[BorderColor](properties-color-border.md)**  y el color de fuera de la galería (si hay un borde)
+* **[Fill](properties-color-border.md)** y el color situado fuera de la galería (si hay un borde)
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+    > [!NOTE]
+> Los lectores de pantalla anunciarán cuándo cambian los elementos de la galería. La propiedad **AccessibleLabel** también se menciona. De esta forma, se proporciona contexto al anuncio y es incluso más importante cuando hay varias galerías en la misma pantalla.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* Considere la posibilidad de establecer **ShowScrollbar** en **true**. En la mayoría de los dispositivos de pantalla táctil, la barra de desplazamiento no se muestra hasta que comienza el desplazamiento.
+* Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber también una forma de que los usuarios de teclado seleccionen el elemento de la galería. Por ejemplo, agregar un control **[Botón](control-button.md)** cuya propiedad **OnSelect** esté establecida en **Select(Parent)**.
+
+    > [!NOTE]
+> Los controles situados fuera de la galería no se tienen en cuenta en el orden de desplazamiento por el teclado dentro de la galería. Se tiene en cuenta la propiedad **[TabIndex](properties-accessibility.md)** de los controles dentro de una galería. Consulte las [propiedades de accesibilidad](properties-accessibility.md) para obtener más información.

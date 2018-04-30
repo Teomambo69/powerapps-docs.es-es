@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1661477ced59a678ac278dfcebe5e6f661c3e3f1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
 
 ## <a name="description"></a>Descripción
-Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabación de un control **[Micrófono](control-microphone.md)** o el audio de una pista de audio de un archivo de vídeo. Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTube si especifica una dirección URL con subtítulos opcionales.
+Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabación de un control **[Micrófono](control-microphone.md)** o el audio de una pista de audio de un archivo de vídeo.
+
+Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTube o Azure Media Services.  Opcionalmente, se pueden mostrar subtítulos cuando se especifique.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Bucle**: indica si una secuencia de audio o vídeo empieza de nuevo automáticamente en cuanto termina de reproducirse.
@@ -35,6 +37,8 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 **MostrarControles**: indica si se muestra un reproductor de audio o vídeo, por ejemplo, un botón de reproducción y un control deslizante de volumen, y un control de entrada manuscrita muestra, por ejemplo, iconos para dibujar, borrar y borrar todo.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe ser el título de la secuencia de vídeo o audio.
+
 **PausarAutomáticamente**: indica si un clip de audio o vídeo se detiene automáticamente si el usuario se desplaza a otra pantalla.
 
 **IniciarAutomáticamente**: indica si un control de audio o vídeo empieza a reproducir automáticamente un clip cuando el usuario navega a la pantalla que contiene ese control.
@@ -50,6 +54,10 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
+
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -72,6 +80,8 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 **HoraDeInicio**: la hora después del inicio de una secuencia de audio o de vídeo cuando la secuencia empieza a reproducirse.
 
 **Time**: posición actual del control multimedia.
+
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
@@ -100,6 +110,40 @@ Un control **Audio** reproduce una secuencia de sonido de un archivo, una grabac
 5. Presione Esc para volver al área de trabajo predeterminada.
 
 ### <a name="play-a-youtube-video"></a>Reproducir un vídeo de YouTube
-1. Agregue un control **Vídeo** y establezca su propiedad **Multimedia** en la dirección URL, incluida entre comillas, de un vídeo de YouTube.
+1. Agregue un control **Vídeo** y establezca su propiedad **Multimedia** en la dirección URL del vídeo de YouTube entre comillas.
 2. Presione F5 y, a continuación, reproduzca la secuencia haciendo clic o pulsando en el botón de reproducción del control **Vídeo**.
 3. Presione Esc para volver al área de trabajo predeterminada.
+
+### <a name="play-a-video-from-azure-media-services"></a>Reproducción de un vídeo desde Azure Media Services
+1. Una vez que los vídeos se publiquen en AMS, copie la dirección URL del manifiesto. Inicie el punto de conexión de streaming del servicio, si no lo ha hecho todavía.
+1. Agregue un control **Vídeo** y establezca su propiedad **Multimedia** en la dirección URL del vídeo de AMS entre comillas.
+2. Presione F5 y, a continuación, reproduzca la secuencia haciendo clic o pulsando en el botón de reproducción del control **Vídeo**.
+3. Presione Esc para volver al área de trabajo predeterminada.
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="audio-and-video-alternatives"></a>Alternativas de audio y vídeo
+* **ShowControls** debe configurarse en true para que los usuarios puedan escuchar o ver elementos multimedia a su propio ritmo. Esto también permite a los usuarios activar o desactivar subtítulos y el modo de pantalla completa en los reproductores de vídeo.
+* Deben proporcionarse subtítulos para los vídeos.
+  *  En el caso de los vídeos de YouTube, utilice las herramientas de creación proporcionadas por YouTube para agregar subtítulos.
+  *  Para otros vídeos, cree subtítulos en formato WebVTT, cárguelos y configure el valor **ClosedCaptionsUrl** con la ubicación de la dirección URL. Existen varias limitaciones. Es necesario que los servidores que hospedan vídeo y subtítulos estén habilitados para CORS y los controlen mediante el protocolo HTTPS. Los subtítulos no funcionan en Internet Explorer.
+* Considere la posibilidad de proporcionar una transcripción de audio o vídeo con uno de estos métodos:
+  1. Ponga el texto en un elemento **[Label](control-text-box.md)** y colóquelo junto al reproductor multimedia. Opcionalmente, puede crear un elemento **[Button](control-button.md)** para alternar la presentación del texto.
+  2. Coloque el texto en otra pantalla. Cree un elemento **[Button](control-button.md)** que vaya a la pantalla y colóquelo junto al reproductor multimedia.
+  3. Si la descripción es breve, puede colocarse en **[AccessibleLabel](properties-accessibility.md)**.
+
+### <a name="color-contrast"></a>Contraste de color
+Debe haber un contraste de color adecuado entre:
+* **[FocusedBorderColor](properties-color-border.md)** y el color exterior
+* **[Image](properties-visual.md)** y los controles del reproductor multimedia (si procede)
+* **[Fill](properties-color-border.md)** y los controles del reproductor multimedia (si el relleno está visible)
+
+Proporcione subtítulos o transcripción si el contenido de vídeo tiene problemas de contraste de color.
+
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+* **AutoStart** debe ser false porque puede ser difícil para los usuarios del teclado detener la reproducción rápidamente.
