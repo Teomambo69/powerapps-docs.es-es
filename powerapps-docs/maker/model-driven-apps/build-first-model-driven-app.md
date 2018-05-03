@@ -12,17 +12,14 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: ad11ce81544095c5730e326325b4b5bf6b136e93
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3a9696a025608de3c142277da4059e7e8c5ec5ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>Guía de inicio rápido: Creación de su primera aplicación controlada por modelos desde cero
 El diseño de aplicaciones controladas por modelos es un enfoque de componentes centrado en el desarrollo de aplicaciones. En esta guía de inicio rápido, va a simplificar la creación de una aplicación controlada por modelos mediante una de las entidades estándar disponibles en el entorno [!INCLUDE [powerapps](../../includes/powerapps.md)]. 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
 Inicie sesión en [PowerApps](https://web.powerapps.microsoft.com/). Si todavía no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], haga clic en el vínculo **Inicio gratuito**. 

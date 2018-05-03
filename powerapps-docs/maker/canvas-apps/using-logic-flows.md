@@ -11,21 +11,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: bf9cbe451cc9ac5fa0ef98ba3e32963e240c0b5e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="start-a-flow-in-an-app"></a>Inicio de un flujo en una aplicación
 Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Suscríbase](../signup-for-powerapps.md) a PowerApps y, después, siga estos pasos:
-
-  * En la [Tienda Windows](http://aka.ms/powerappsinstall), instale PowerApps Studio para Windows, ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
-  * En [powerapps.com](http://web.powerapps.com), abra PowerApps Studio para web haciendo clic o pulsando en **Nueva aplicación** en la esquina inferior izquierda.
+* [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
 * Tiene que saber [configurar un control](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Creación de un flujo

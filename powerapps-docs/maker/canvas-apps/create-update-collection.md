@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 26cf15054a1cf5d00bda0e2f265ed242cb21421c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Crear y actualizar una colección en su aplicación
 Use una colección para almacenar datos que se pueden usar en la aplicación. Una colección es un grupo de elementos que son similares. Por ejemplo, cree una colección MisImágenes que almacene todas las imágenes de los productos que vende su compañía. En PowerApps, puede agregar la colección MisImágenes y crear una aplicación que muestre todas las imágenes de estos productos. En otro ejemplo, puede crear una colección PriceList que incluya los productos y el precio de cada uno de ellos.
@@ -23,7 +23,7 @@ Use una colección para almacenar datos que se pueden usar en la aplicación. Un
 Puede crear y usar colecciones en PowerApps. Empecemos.
 
 ### <a name="prerequisites"></a>Requisitos previos
-* [Suscríbase](../signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 * Cree una aplicación o abra una existente en PowerApps.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 * En estos pasos se utiliza el archivo [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) como datos de entrada de ejemplo. El archivo zip incluye un archivo XML que se puede convertir a Excel. De lo contrario, PowerApps lee automáticamente los archivos dentro los archivos .zip y lo importa correctamente. Puede descargar y usar estos datos de ejemplo o importar los suyos propios.

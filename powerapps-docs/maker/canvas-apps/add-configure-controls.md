@@ -12,17 +12,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 90689d708d5b86d243647a14282c6599e51f7450
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 702be2a4f1747b6f3303d1add30d9157f5665ee7
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>Adición y configuración de un control en PowerApps
 Añada diversos elementos de interfaz de usuario a su aplicación y configure aspectos de su apariencia y comportamiento directamente, desde la barra de herramientas, en la pestaña **Propiedades** o en la barra de fórmulas. Estos elementos de interfaz de usuario se denominan controles y los aspectos que configura se denominan propiedades.
 
 ## <a name="prerequisites"></a>Requisitos previos
-1. [Suscríbase](../signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
+1. [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 
 2. En PowerApps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo** (cerca del borde izquierdo).
 

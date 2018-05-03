@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: bf87535f31e214119bc59eca89e50d78a51637e6
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: e4c2f78fb00e726bd0b0bf3cde4fe4f42d40dddc
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-formulas"></a>Introducción a las fórmulas
 Configure la aplicación con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
@@ -32,7 +32,7 @@ En este tema se proporciona únicamente información general sobre cómo trabaja
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Suscríbase](../signup-for-powerapps.md) a PowerApps, [instálelo](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="show-a-simple-value"></a>Mostrar un valor simple

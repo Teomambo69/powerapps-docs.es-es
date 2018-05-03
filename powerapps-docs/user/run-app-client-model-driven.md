@@ -15,18 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
-ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
+ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación controlada por modelos en un dispositivo móvil
 
 Después de crear la aplicación y de compartirla con usted, puede ejecutarla en una serie de dispositivos móviles conocidos, como Windows, iOS, Android o en un explorador web. En este tutorial aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil. 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Para seguir este tutorial rápido, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
 
