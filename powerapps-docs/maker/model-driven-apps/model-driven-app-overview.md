@@ -12,20 +12,17 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 1b9ee344192d84933d25a3208d2feb0873a298c1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>Información general sobre la compilación de una aplicación controlada por modelos
 
 El diseño de aplicaciones controladas por modelos es un enfoque de componentes centrado en el desarrollo de aplicaciones. El diseño de aplicaciones controladas por modelos no requiere código y las aplicaciones que se creen pueden ser simples o muy complejas.  A diferencia del desarrollo de aplicaciones de lienzo en el que el diseñador tiene el control completo sobre el diseño de la aplicación, con las aplicaciones controladas por modelos gran parte del diseño se determina automáticamente y se diseña en gran medida por los componentes que se agregan a la aplicación. 
 
 ![Aplicación controlada por modelos de ejemplo](media/model-driven-app-overview/model-app-sample.png)
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 El diseño de aplicaciones controladas por modelos proporciona las ventajas siguientes:
 - Entornos de diseño sin código centrados en componentes enriquecidos. 
