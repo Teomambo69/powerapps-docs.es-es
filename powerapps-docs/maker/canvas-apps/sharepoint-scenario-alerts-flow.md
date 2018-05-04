@@ -1,25 +1,22 @@
 ---
 title: Configuración de alertas de datos para el panel de Power BI | Microsoft Docs
 description: En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 91d1fc6872992823aaa3c5c7baa9f36efd2fc99f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 663c5dfcad45e65044958c9d3b8b1aa111840a61
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Configurar alertas de datos para el panel de Power BI
 > [!NOTE]

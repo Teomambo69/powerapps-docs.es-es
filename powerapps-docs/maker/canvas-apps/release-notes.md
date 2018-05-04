@@ -1,8 +1,6 @@
 ---
 title: Novedades de PowerApps | Microsoft Docs
 description: Actualizaciones de PowerApps, organizadas por fecha de lanzamiento
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: sharik
-ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
@@ -33,6 +30,9 @@ Para más información sobre las limitaciones conocidas, consulte [Problemas y r
 Detecte las actualizaciones más recientes para nuestras aplicaciones empresariales, así como infinidad de nuevas funcionalidades para que compile sus propias aplicaciones y extensiones sobre nuestra plataforma. [Descargue el PDF de las notas de la versión de la primavera de 2018](https://aka.ms/businessappsreleasenotes), que cubre Dynamics 365, PowerApps, Microsoft Flow y Power BI.
 
 **Próximamente:** el PDF de las notas de la versión se seguirá actualizando como características de envío y también se pondrá a disposición de los usuarios en una página web.
+
+## <a name="apr-23"></a>23 de abril
+* Descargue los [datos adjuntos](controls/control-attachments.md) en Internet Explorer dentro de los formularios de lista personalizada de SharePoint.
 
 ## <a name="apr-9"></a>9 de abril
 * Controles para cortar (Ctrl+X), copiar (Ctrl+C), y pegar (Ctrl+V), incluidos los estilos de los controles, fórmulas y propiedades, entre aplicaciones en un explorador web.

@@ -1,25 +1,22 @@
 ---
 title: Creación de aplicaciones accesibles | Microsoft Docs
 description: Cómo hacer que las aplicaciones sean accesibles para personas con discapacidades
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: bc8a014909ceb817397107b4f64b59aa0c2013f2
-ms.sourcegitcommit: 97c0db2968dc07d1bcb21d02e6a6a5c345daa2d2
+ms.openlocfilehash: 2cd381eaa02829a8db7b4bf64e0ddf097f86abc6
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-accessible-apps"></a>Creación de aplicaciones accesibles
 Una aplicación accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.

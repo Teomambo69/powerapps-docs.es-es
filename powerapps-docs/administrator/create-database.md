@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Crear una base de datos de Common Data Service
 Puede crear una base de datos y aplicaciones usando Common Data Service como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como **Administrador de entorno**. Además, debe tener asignada la licencia adecuada. Para más información sobre la compra de un plan para utilizar Common Data Service, consulte la [información sobre los precios](pricing-billing-skus.md).
@@ -52,6 +52,8 @@ Existen varias maneras de crear una base de datos:
 
     ![](./media/create-database/Create-DB-From-Entities.png)
 
+> [!NOTE]
+> Actualmente, no es posible crear una base de datos fuera de la región de Azure AD. Pronto será posible crear una base de datos en una región distinta a la región principal de Azure AD, pero por ahora, asegúrese de crear una base de datos en un entorno que tenga la misma región que la región principal de Azure AD.
 
 ## <a name="security-model-for-the-databases"></a>Modelo de seguridad para las bases de datos
 Cuando se crea una base de datos, los usuarios que tienen asignados roles de entorno continuarán manteniendo esos privilegios.  
