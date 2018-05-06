@@ -228,8 +228,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: Crear una entidad personalizada a partir de datos
           href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: Administrar campos
-          href: ./common-data-service/data-platform-manage-fields.md
         - name: Crear un conjunto de opciones
           href: ./common-data-service/custom-picklists.md
         - name: Crear una relación
@@ -244,6 +242,18 @@
           href: ./common-data-service/create-custom-entity.md
     - name: Ejemplos y recursos
       href: ./common-data-service/samples-resources.md
+    - name: Descripción
+      items:
+        - name: Requisitos de licencia para entidades
+          href: ./common-data-service/data-platform-entity-licenses.md
+    - name: Guías de procedimientos
+      items:
+        - name: Administración de campos personalizados en una entidad
+          href: ./common-data-service/data-platform-manage-fields.md
+    - name: Referencia
+      items:
+        - name: Entidades restringidas que requieren licencias de Dynamics 365
+          href: ./common-data-service/data-platform-restricted-entities.md
     - name: Para desarrolladores
       href: ../developer/common-data-service/TOC.yml
 - name: Common Data Model

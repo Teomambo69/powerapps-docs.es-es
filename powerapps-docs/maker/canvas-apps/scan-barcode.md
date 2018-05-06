@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: d8f41cc03f0cfac88ef356966c7d07b6cf088cda
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Examen de un código de barras en PowerApps
 Escanee varios tipos de códigos de barras creando una aplicación y ejecutándola en un dispositivo, como un teléfono con cámara. El equivalente numérico del código de barras aparece en un control **Etiqueta**, y puede cargar esos datos en diversos [orígenes de datos](connections-list.md).
@@ -35,8 +35,7 @@ Si no está familiarizado con PowerApps, consulte [Introducción](getting-starte
 ## <a name="create-a-blank-app"></a>Crear una aplicación en blanco
 1. [Suscríbase a PowerApps](../signup-for-powerapps.md) y, a continuación, haga lo *siguiente*:
 
-   * [Abra PowerApps](https://create.powerapps.com/api/start) en un explorador en un dispositivo con cámara.
-   * [Instale PowerApps](http://aka.ms/powerappsinstall) desde la Tienda de Windows en un dispositivo con cámara. Abra PowerApps, inicie sesión y haga clic o pulse en **Nuevo** en el menú **Archivo** (a lo largo del borde izquierdo).
+1. [Abra PowerApps](https://create.powerapps.com) en un explorador en un dispositivo con cámara.
 
 2. En **Comenzar con una plantilla o un lienzo en blanco**, haga clic o pulse en **Diseño de teléfono** en el icono **Aplicación vacía**.
 
