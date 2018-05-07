@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 6206d520e8bb07c0919f482700c1af861e41109d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
 En este tutorial, podrá personalizar la galería y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización:
@@ -28,7 +28,7 @@ Este tutorial comienza con una aplicación que se generó a partir de un origen 
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-Puede revisar este tema para obtener solo los conceptos generales, o bien puede seguir cada paso si primero [genera esta aplicación](data-platform-create-app.md).
+[Generar una aplicación](data-platform-create-app.md) desde la entidad **Cuentas** de Common Data Service (CDS) for Apps.
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 1. Inicie sesión en [PowerApps](https://web.powerapps.com) y después, seleccione **Aplicaciones** cerca del borde izquierdo.

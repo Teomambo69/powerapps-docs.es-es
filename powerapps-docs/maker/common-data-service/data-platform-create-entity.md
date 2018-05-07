@@ -1,75 +1,97 @@
 ---
 title: Inicio rápido para crear una entidad personalizada | Microsoft Docs
-description: Inicio rápido para crear una entidad personalizada basada en otra entidad o desde cero.
-documentationcenter: na
-author: clwesene
+description: En este inicio rápido obtendrá información sobre cómo crear un entidad personalizada en PowerApps.
+services: ''
+suite: powerapps
+author: SKjerland
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: quickstart
 ms.component: cds
-ms.date: 3/21/2018
-ms.author: clwesene
-ms.openlocfilehash: 2232083de556bafcc978423dafb0e98e564aaa3b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.date: 05/01/2018
+ms.author: sharik
+ms.openlocfilehash: 397fdea9f5257cf5a1062867d45a53d592a0909c
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
-Puede crear una entidad personalizada para almacenar datos específicos de su organización. Después, puede mostrar dichos datos si desarrolla una aplicación que haga referencia a la entidad. Después de crear una entidad, puede [crear o modificar uno o varios de sus campos](data-platform-manage-fields.md) y [crear relaciones entre entidades](data-platform-entity-lookup.md).
+En PowerApps, una *entidad* define la información de la que se quiere realizar el seguimiento en forma de registros, que suelen incluir propiedades como el nombre de la empresa, la ubicación, los productos, el correo electrónico y el teléfono. Después, se pueden mostrar esos datos si se desarrolla una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar listas para usar para abarcar los escenarios típicos de una organización (por ejemplo, el seguimiento de las citas), pero puede haber ocasiones en las que sea necesario crear entidades personalizadas para almacenar datos específicos de la organización.
 
-En estas instrucciones se mostrará cómo crear manualmente una entidad personalizada; también se puede usar Power Query para crear una entidad basada en los datos existentes. Para obtener más información, vea [Creación de una entidad con Power Query](data-platform-cds-newentity-pq.md).
+En este inicio rápido, obtendrá información sobre cómo crear una entidad personalizada denominada Revisión del producto, que se puede usar para crear una aplicación en la que se muestren las clasificaciones y comentarios para los productos que vende la empresa.
 
-> [!NOTE]
-> Antes de crear una entidad, vea la [referencia de entidades](../../developer/common-data-service/reference/about-entity-reference.md). Estas entidades tratan los escenarios típicos, como cuentas y contactos. Si una de estas entidades cumple sus requisitos sin cambios o después de realizar cambios menores, puede ahorrarse tiempo partiendo de ella.
+## <a name="prerequisites"></a>Requisitos previos
+Para seguir este tutorial rápido, se requieren los elementos siguientes:
+* Licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
+* Un rol de seguridad de Administrador del sistema o Personalizador del sistema dentro de Common Data Service for Apps.
+
+## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
+Inicie sesión en PowerApps en [https://web.powerapps.com]([https://web.powerapps.com).
 
 ## <a name="create-an-entity"></a>Crear una entidad
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
+1. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
 
-    ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "lista de entidades")
+    ![Lista de entidades y sus detalles](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
 2. En la barra de comandos, pulse o haga clic en **Nueva entidad**.
-3. En el campo **Nombre para mostrar**, escriba un nombre que sea fácilmente reconocible para hacer referencia a esta entidad en el futuro. Esto también se usa en formularios, gráficos y otros objetos creados con esta entidad. Observará que se rellenan otros dos campos:
 
-    * Nombre para mostrar en plural: se usa al interactuar con esta entidad desde PowerApps o Flow, y se usa como el nombre de la entidad en la API web de Common Data Service. El nombre en plural se debe generar de forma automática, pero se puede cambiar.
-    * Nombre. Se trata del nombre único de la entidad, no puede contener caracteres especiales ni espacios y debe ser único. El nombre también incluye un prefijo que se configura al crear el entorno y que se usa para garantizar que las entidades que se crean se puedan importar y exportar en otros entornos sin que entren en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service.
+    Antes de crear una entidad, consulte la [referencia de entidades](../../developer/common-data-service/reference/about-entity-reference.md) para obtener una descripción de las entidades estándar disponibles. Estas entidades abarcan los escenarios típicos. Si una de estas entidades cumple sus requisitos sin cambios o después de realizar cambios menores, puede ahorrar tiempo si empieza con esa entidad. 
 
-    > [!NOTE]
-    > Los campos **Nombre para mostrar** se pueden actualizar en cualquier momento para mostrarlos de otra forma en las aplicaciones; el campo **Nombre** no se puede cambiar después de guardar la entidad, ya que se podría interrumpir una aplicación existente.
+3. En el panel **Nueva entidad**, en el cuadro **Nombre para mostrar**, escriba **Revisión del producto** y, después, escriba una descripción opcional (las descripciones son útiles si otros usuarios van a usar esta entidad). Los demás campos del panel se rellenan automáticamente, como se describe a continuación. Cuando termine, haga clic en **Siguiente**.
 
+    * **Nombre para mostrar en plural**: este campo se rellena automáticamente cuando se escribe un nombre para mostrar, pero se puede cambiar si es necesario. El nombre para mostrar en plural es el nombre de la entidad en la API web de Common Data Service y se usa al interactuar con esta entidad desde PowerApps o Flow.
+    * **Nombre**: este campo también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se configuró al crear el entorno y garantiza que las entidades que se crean se puedan importar y exportar en otros entornos sin que entren en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service. Para evitar que las aplicaciones existentes dejen de funcionar, no se puede cambiar el nombre después de guardar la entidad.
+     
     ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
 
-4. Haga clic en **Siguiente** y se le dirigirá a la página de detalles de la entidad. De forma predeterminada, todas las entidades se inician con un campo, "Nombre principal", que se usa cuando se crean búsquedas sobre esta entidad. Por lo general, se debe usar para almacenar el nombre o la descripción principal de los datos que se almacenan en la entidad.
-
-    > [!NOTE]
-    > El nombre y el nombre para mostrar del campo **Nombre principal** se pueden actualizar antes de guardar la entidad por primera vez. Por ejemplo, si quiere que este campo se denomine "Nombre del alumno" en lugar de "Nombre principal"
+4. En la página de detalles de la entidad, pulse o haga clic en el campo **Nombre principal** para abrir el panel **Nombre principal** y, después, en el cuadro **Nombre para mostrar**, sustituya **Nombre principal** con **Revisión del producto**. En el cuadro **Nombre**, sustituya **PrimaryName** con **RevisionProducto** y, después, pulse o haga clic en **Listo**.
+ 
+    De forma predeterminada, cada entidad contiene un campo Nombre principal, que los campos de búsqueda usan al establecer relaciones con otras entidades. Por lo general, en el campo Nombre principal se almacena el nombre o la descripción principal de los datos que se almacenan en la entidad. El nombre y el nombre para mostrar del campo Nombre principal se pueden actualizar antes de guardar la entidad por primera vez.
 
     ![Detalles de la entidad](./media/data-platform-cds-create-entity/newentitydetails.png "Detalles de la nueva entidad")
 
-5. Opcional: agregue un campo de texto a la entidad haciendo clic en **Agregar campo**. En el panel Nuevo campo, escriba el **Nombre para mostrar** para el campo y seleccione el tipo de datos. Para más información, consulte [Administración de campos en una entidad](data-platform-manage-fields.md).
+5. Para agregar un campo a la entidad, siga estos pasos:
+ 
+    a. En la barra de comandos, pulse o haga clic en **Agregar campo** para abrir el panel **Propiedades de campo**.
+
+    b. En el cuadro **Nombre para mostrar**, escriba **Fecha de revisión**.
+
+    c. En la lista desplegable **Tipo de datos**, seleccione **Solo fecha**.
+
+    d. Pulse o haga clic en la casilla **Necesario**.
+    
+    e. Pulse o haga clic en **Listo**.
+     
+    Para más información, consulte [Administración de campos en una entidad](data-platform-manage-fields.md).
 
     ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Panel Nuevo campo")
 
+6. Repita el paso anterior para agregar tres campos más con las configuraciones siguientes:
+    * **Nombre para mostrar** = Clasificación de producto; **Tipo de datos** = Número entero; pulse o haga clic en la casilla **Necesario**.
+    * **Nombre para mostrar** = Nombre del revisor; **Tipo de datos** = Texto.
+    * **Nombre para mostrar** = Comentario de revisor; **Tipo de datos** = Texto.
 
-6. Haga clic en **Listo** para agregar el campo y repita el paso 5 para agregar más campos.
+    Cuando termine, debería tener cinco campos enumerados en la página de detalles de la entidad.
+
+    ![Lista de campos](./media/data-platform-cds-create-entity/addedfields.png "Lista de campos")
+
+    Tenga en cuenta que todas las entidades tienen campos del sistema de solo lectura. De forma predeterminada, los campos del sistema no se muestran en la lista de campos, aunque existan en la entidad. Para ver todos los campos, cambie el filtro en la barra de comandos de **Predeterminado** a **Todo**. Para obtener más información sobre los metadatos relacionados con una entidad, vea [Metadatos de entidad](../../developer/common-data-service/entity-metadata.md).
+
 7. Haga clic en **Guardar entidad** para guardar la entidad y que esté disponible para su uso en las aplicaciones.
 
-    La entidad aparece en la lista de entidades de la base de datos. Para ver las entidades que ha creado, puede cambiar el filtro en la barra de comandos de "Predeterminado" a "Personalizado".
+    La entidad Revisión del producto debe aparecer en la lista de entidades en la base de datos. Si no la ve, cambie el filtro en la barra de comandos de **Predeterminado** a **Personalizado**.
 
-## <a name="system-fields"></a>Campos del sistema
-Todas las entidades tienen campos del sistema. Estos campos son de solo lectura. Por tanto, no se pueden modificar ni eliminar, y tampoco se les asignan valores. De forma predeterminada, los campos del sistema no se mostrarán en la lista de campos, aunque existan en la entidad. Para ver todos los campos, puede cambiar el filtro en la barra de comandos de **Predeterminado** a **Todo**.
-
-Para obtener más información sobre los metadatos relacionados con una entidad, vea [Metadatos de entidad](../../developer/common-data-service/entity-metadata.md)
+    ![Filtro](./media/data-platform-cds-create-entity/filter.png "Filtrar la selección")
 
 ## <a name="next-steps"></a>Pasos siguientes
-* [Administrar campos de una entidad](data-platform-manage-fields.md)
-* [Definir relaciones entre entidades](data-platform-entity-lookup.md)
-* [Generar una aplicación mediante una base de datos de Common Data Service](../canvas-apps/data-platform-create-app.md)
-* [Create an app from scratch using a Common Data Service database](../canvas-apps/data-platform-create-app-scratch.md) (Crear una aplicación desde cero mediante una base de datos de Common Data Service)
+En este inicio rápido, ha obtenido información sobre cómo crear una entidad personalizada denominada Revisión del producto que se puede usar para crear una aplicación en la que se muestren las clasificaciones y comentarios de cada producto que vende una empresa concreta. A continuación, obtendrá información sobre cómo definir relaciones entre las entidades (en este caso, entre la entidad estándar Producto y la entidad personalizada Revisión del producto) para que cada producto se pueda asociar con las revisiones y los comentarios que recibe.
+
+> [!div class="nextstepaction"]
+> [Crear una relación](data-platform-entity-lookup.md)
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
-Con el modelo de datos común de Microsoft PowerApps, recopilamos y almacenamos los nombres de los campos y las entidades personalizadas en nuestros sistemas de diagnóstico.  Usamos esta información para mejorar el modelo de datos común para nuestros clientes. Los nombres de entidades y de campos creados nos servirán para comprender qué escenarios son habituales en toda la comunidad de Microsoft PowerApps y determinar las carencias en la cobertura de entidades estándar del servicio, por ejemplo, los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa; tampoco los replica fuera de la región en que esté aprovisionada la base de datos. Sin embargo, tenga en cuenta que es posible que los nombres de campos y entidades personalizadas se repliquen entre regiones y se eliminen de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a respetar su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
-
+Con el modelo de datos común de Microsoft PowerApps, Microsoft recopila y almacena los nombres de los campos y las entidades personalizadas en nuestros sistemas de diagnóstico. Usamos esta información para mejorar el modelo de datos común para nuestros clientes. Los nombres de entidades y de campos que los creadores de aplicaciones crean nos servirán para comprender qué escenarios son habituales en toda la comunidad de Microsoft PowerApps y determinar las carencias en la cobertura de entidades estándar del servicio, por ejemplo, los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa; tampoco los replica fuera de la región en que esté aprovisionada la base de datos. Sin embargo, tenga en cuenta que es posible que los nombres de campos y entidades personalizadas se repliquen entre regiones y se eliminen de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a respetar su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).

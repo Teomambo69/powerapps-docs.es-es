@@ -1,25 +1,16 @@
 ---
-title: Colores accesibles en PowerApps | Microsoft Docs
+title: Colores accesibles | Microsoft Docs
 description: Directrices de contraste de color para PowerApps
-services: ''
-suite: powerapps
-documentationcenter: na
 author: tahoon
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 37e456cab861b438ee07804d6b131ed6b22d56b9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 56a11edcd1c43313e9b380ca8ac1c8a68d85772d
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="accessible-colors-in-powerapps"></a>Colores accesibles en PowerApps
 Los colores utilizados en una aplicación deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles.

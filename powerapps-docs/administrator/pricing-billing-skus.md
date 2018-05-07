@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: e74f75df09c22bd37e5459ec720324faf061e2e9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5fb57b7e790d22a4b055b073c7d60e1d65a69b81
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="licensing-overview"></a>Introducción a las licencias
 Las licencias de PowerApps se conceden por usuario. Todos y cada uno de los usuarios que acceda al servicio para crear y ejecutar aplicaciones necesitan una licencia. Los clientes de Office 365 y Dynamics 365 pueden beneficiarse inmediatamente de las funcionalidades de PowerApps y Microsoft Flow que incluyen estas ofertas. Los clientes que desean crear aplicaciones y flujos que acceden a orígenes de datos de fuera de Office 365 y Dynamics 365, o que necesitan más funcionalidad, pueden comprar suscripciones independientes a PowerApps y Microsoft Flow. Hay diferencias importantes en la funcionalidad entre estos grupos de licencias.
@@ -35,7 +35,7 @@ Las funcionalidades de PowerApps para Office 365 y Dynamics 365 permiten a los u
 |  | Planes incluidos |
 | --- | --- |
 | ¿Qué planes de Microsoft Office 365 incluye PowerApps? |Estos planes incluyen PowerApps para Office 365: <br><br>Office 365 Business Essentials <br>Office 365 Business Premium <br>Office 365 Education <br>Office 365 Education Plus <br>Office 365 Enterprise E1 <br>Office 365 Enterprise E3 <br>Office 365 Enterprise E5<br><br>*Office 365 Enterprise E2 incluye las mismas funcionalidades que Office 365 Enterprise E1, y Office 365 Enterprise E4 incluye las mismas funcionalidades que Office 365 Enterprise E3.*<br><br>Office 365 Enterprise F1 incluye PowerApps para Office 365 Enterprise F1. |
-| ¿Qué planes y aplicaciones de Microsoft Dynamics 365 incluye PowerApps? |Estas aplicaciones incluyen PowerApps para Dynamics 365:<br><br>Dynamics 365 for Sales, edición Enterprise <br>Dynamics 365 for Customer Service, edición Enterprise <br>Dynamics 365 for Operations, edición Enterprise <br>Dynamics 365 for Field Service, edición Enterprise <br>Dynamics 365 for Project Service Automation, edición Enterprise <br>Dynamics 365 for Team Members, edición Enterprise <br>Dynamics 365 for Financials, edición Business <br>Dynamics 365 for Team Members, edición Business <br>Dynamics 365 for Talent, edición Enterprise <br>Dynamics 365 for Retail, edición Enterprise <br><br>Estos planes incluyen Plan 2 de PowerApps:<br><br>Dynamics 365, edición Enterprise, plan 1<br>Dynamics 365, edición Enterprise, plan 2 <br><br>*PowerApps para Dynamics 365 también se incluye en las suscripciones existentes de CRM Online Enterprise, Professional, Basic y Essential.* |
+| ¿Qué planes y aplicaciones de Microsoft Dynamics 365 incluye PowerApps? |Estas aplicaciones incluyen PowerApps para Dynamics 365:<br><br>Dynamics 365 for Team Members Enterprise Edition <br>Dynamics 365 for Financials Business Edition <br>Dynamics 365 for Team Members Business Edition<br>Dynamics 365 for Talent <br><br>Estos planes incluyen Plan 2 de PowerApps:<br><br>Dynamics 365 Customer Engagement Plan Enterprise Edition<br>Dynamics 365 Plan Enterprise Edition <br>Dynamics 365 for Sales Enterprise Edition <br>Dynamics 365 for Customer Service Enterprise Edition<br>Dynamics 365 for Case Management Enterprise Edition <br>Dynamics 365 for Operations Enterprise Edition <br>Dynamics 365 for Field Service Enterprise Edition <br>Dynamics 365 for Project Service Automation Enterprise Edition<br>Solución Microsoft Relationship Sales <br><br>*PowerApps para Dynamics 365 también se incluye en las suscripciones de Dynamics CRM Online Enterprise, Professional, Basic y Essential.* |
 
 ### <a name="powerapps-for-office-365-enterprise-f1"></a>PowerApps para Office 365 Enterprise F1
 PowerApps se incluye con Office 365 Enterprise F1, con lo que los usuarios pueden ejecutar aplicaciones y automatizar flujos de trabajo. Sin embargo, este plan no permite a los usuarios crear aplicaciones (tal y como se puede hacer con otros planes, como Office 365 E1, E3 y E5). Esta tabla contiene información específica acerca de lo que pueden hacer los usuarios con PowerApps para Office 365 Enterprise F1:
