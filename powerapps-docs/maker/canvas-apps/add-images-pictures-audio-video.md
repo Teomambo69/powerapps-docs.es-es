@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 7ee752f5606f10f66ad7c8dc49e05233225c0a89
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 En este tema, aprenderá a insertar archivos multimedia en la aplicación, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
 
 ## <a name="prerequisites"></a>Requisitos previos
-[Regístrese](../signup-for-powerapps.md) en PowerApps e [instálelo](http://aka.ms/powerappsinstall). Cuando abra PowerApps, inicie sesión con las mismas credenciales que usó para registrarse.
+[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Agregar contenido multimedia desde un archivo o la nube
 Puede elegir el tipo de contenido multimedia que desea agregar; por ejemplo, imágenes, vídeo o audio.

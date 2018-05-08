@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: fa1dcd264e99a2bea333d7b6aa0bbf2e04cd47e9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4bf196041853e9f88c97aabcd3ff1c234b2608be
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
 Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre ellos. Para obtener información general de los entornos, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos), que explica en detalle por qué utilizar entornos y cómo puede crearlos y administrarlos. El ámbito de este artículo trata los siguientes temas sobre el entorno:
@@ -30,28 +30,22 @@ Cuando se registra y e inicia sesión por primera vez en powerapps.com, probable
 
 ![Entorno predeterminado](./media/working-with-environments/env-dropdown.png)
 
-El *entorno predeterminado* es accesible a todos. Puede empezar a crear aplicaciones en este entorno y compartirlas con otros usuarios. También puede tener acceso a otros entornos, como aquellos que [ha creado usted mismo](../../administrator/environments-administration.md) o aquellos creados por otros usuarios, pero a los que tiene acceso. Para intercambiar los entornos, haga clic en la lista desplegable de entorno en la esquina superior derecha y seleccione otro entorno. En este ejemplo, se va a cambiar de *Entorno predeterminado* a *Entorno 1*.
+El *entorno predeterminado* es accesible a todos. Puede empezar a crear aplicaciones en este entorno y compartirlas con otros usuarios. También puede tener acceso a otros entornos, como aquellos que [ha creado usted mismo](../../administrator/environments-administration.md) o aquellos creados por otros usuarios, pero a los que tiene acceso. Para intercambiar los entornos, haga clic en la lista desplegable de entorno en la esquina superior derecha y seleccione otro entorno. En este ejemplo se muestra el cambio de *Entorno predeterminado* a *Entorno 1*.
 
 ![Cambio de entorno](./media/working-with-environments/switch-env.png)
 
 Cuando cambie a un entorno diferente (por ejemplo, a Entorno 1), verá todas las aplicaciones que ha creado o a las que tiene acceso en este nuevo entorno.
 
 ## <a name="create-apps-in-the-right-environment"></a>Creación de aplicaciones en el entorno adecuado
-Puede crear aplicaciones en entornos existentes a los que tiene acceso o en un entorno nuevo. Sin embargo, crear su propio entorno requiere un plan específico. Para más información, consulte [este tema](../../administrator/pricing-billing-skus.md). Antes de crear una aplicación, **asegúrese siempre de que selecciona el entorno en el que desea que se encuentre la aplicación**. De lo contrario, tendrá que tratar con el traslado de aplicaciones entre entornos.
+Puede crear aplicaciones en un entorno que cree o para el que se le haya concedido acceso. Pero la creación de un entorno propio requiere un [plan específico](../../administrator/pricing-billing-skus.md). Antes de crear una aplicación, **asegúrese siempre de que selecciona el entorno en el que desea que se encuentre la aplicación**. De lo contrario, tendrá que tratar con el traslado de aplicaciones entre entornos.
 
-1. Si se encuentra en [powerapps.com](http://web.powerapps.com), seleccione el entorno en el que desea crear la aplicación. Si se encuentra en *PowerApps Studio* o en *PowerApps Studio para web*, vaya al paso 4.
+Para crear una aplicación en el entorno adecuado, siga uno de estos pasos:
 
-2. Seleccione **+ Nueva aplicación**.
+- Si PowerApps Studio no está abierto, [inicie sesión](http://web.powerapps.com), seleccione el entorno en el que le gustaría crear la aplicación, haga clic en **Aplicaciones** cerca del borde izquierdo y después en **Crear una aplicación**.
 
-3. Seleccione **Abrir PowerApps Studio** o **PowerApps Studio para web**.
-
-4. Cuando se abre *PowerApps Studio* o *PowerApps Studio para web*, vuelva a seleccionar el entorno en la esquina superior derecha. Se mejorará esta experiencia en el futuro pero, en la versión actual, debe seleccionar esta opción cada vez que desee crear una aplicación en un entorno nuevo.
-
-    ![Entorno de cambio de Studio](./media/working-with-environments/studio-switch-env.PNG)
+- Si PowerApps Studio está abierto, vuelva a seleccionar el entorno en la esquina superior derecha.
 
 5. En la página **Cuenta**, seleccione **Cambiar** junto al nombre del entorno actual.
-
-    ![Entorno de cambio de Studio](./media/working-with-environments/studio-env-dropdown.PNG)
 
 6. Seleccione el entorno en el que desea crear la aplicación.
 
@@ -62,14 +56,6 @@ Puede crear aplicaciones en entornos existentes a los que tiene acceso o en un e
     ![Entorno de cambio de Studio](./media/working-with-environments/new-app.PNG)
 
 ## <a name="view-apps-in-the-right-environment"></a>Visualización de aplicaciones en el entorno adecuado
-Si está trabajando en [powerapps.com](http://web.powerapps.com), PowerApps Studio para Windows o PowerApps Studio para web, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno adecuado.
-
-De nuevo, para cambiar los entornos de [powerapps.com](http://web.powerapps.com):
-
-![Cambio de entorno](./media/working-with-environments/switch-env.png)
-
-Para cambiar los entornos en PowerApps Studio para Windows o PowerApps Studio para web:
-
-![Entorno de cambio de Studio](./media/working-with-environments/studio-switch-env.PNG)
+Si está trabajando en [powerapps.com](http://web.powerapps.com) o PowerApps Studio, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno adecuado.
 
 Para más información acerca de los entornos, consulte [esta información general](../../administrator/environments-overview.md).

@@ -12,51 +12,30 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: 782674cd8d9bbcc81580302a9936bcf47de4b68b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d6c857a75a21123cdd0e826682fc595a503d67fd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>Edición de una aplicación en PowerApps
-Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede editar una aplicación en PowerApps Studio para web o PowerApps Studio para Windows. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
+Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede modificar una aplicación en PowerApps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
 
 ## <a name="verify-your-permissions"></a>Comprobación de los permisos
 1. Inicie sesión en [PowerApps](https://web.powerapps.com) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
    
     ![Opción Aplicaciones en el menú Archivo](./media/edit-app/file-apps.png)
-2. Abra el selector de categorías de aplicación y haga clic en o pulse **Aplicaciones que me pertenecen** o **Aplicaciones con las que colaboro**.
-   
-    ![Selector de categorías de aplicación](./media/edit-app/app-category.png)
-   
+
+2. En el selector de categorías de aplicación, pulse o haga clic en **Aplicaciones que puedo editar**.
+
     Puede editar cualquier aplicación de la lista que aparece. También puede buscar una aplicación escribiendo uno o más caracteres en el cuadro de búsqueda cerca de la esquina superior derecha.
-   
+
     > [!NOTE]
-> Si aún así no ve la aplicación que desea editar, compruebe que ha seleccionado el entorno correcto cerca de la esquina superior derecha.
+    > Si aún así no ve la aplicación que desea editar, compruebe que ha seleccionado el entorno correcto cerca de la esquina superior derecha.
    
     ![Lista de entornos](./media/edit-app/environment-list.png)
 
-## <a name="edit-an-app-in-powerapps-studio-for-web"></a>Edición de un aplicación en PowerApps Studio para web
-1. Siga los pasos del procedimiento anterior para encontrar la aplicación que desea editar.
-2. Haga clic o pulse el icono de información de la aplicación cerca del borde derecho.
-   
-    ![Icono de información](./media/edit-app/app-edit.png)
-3. Haga clic o pulse el icono **Editar** cerca de la esquina superior derecha y, a continuación, haga clic en o pulse **Modificar en la web**.
-   
-    ![Icono Editar](./media/edit-app/edit-icon.png)
-
-## <a name="edit-an-app-in-powerapps-studio-for-windows"></a>Edición de un aplicación en PowerApps Studio para Windows
-1. Abra PowerApps Studio para Windows.
-2. En la página que aparece de forma predeterminada, busque la aplicación que desea editar.
-   
-    Para encontrar más fácilmente una aplicación, haga clic o pulse el icono de búsqueda cerca de la esquina superior derecha y escriba uno o varios caracteres del nombre de la aplicación. También puede ordenar la lista por nombre, fecha de última modificación o fecha apertura más reciente. Si aún así la aplicación que desea todavía no aparece, confirme que se encuentra en el entorno de PowerApps adecuado, tal como se describe en el primer procedimiento.
-   
-    ![](./media/edit-app/sort-filter.png)
-3. Cerca del borde derecho, pulse o haga clic en el icono del lápiz para la aplicación que desea editar.
-   
-    Puede editar cualquier aplicación para la que el icono del lápiz es negro, no gris.
-   
-    ![](./media/edit-app/app-editstudio.png)
+1. Haga clic o pulse en los puntos suspensivos (...) de la aplicación que quiera modificar y, después, pulse o haga clic en **Editar**.
 
 ## <a name="collaborate-on-an-app"></a>Colaboración en una aplicación
 Cualquier persona que tenga un permiso **Can edit** (Puede editar) para una aplicación puede modificarla, pero no puede haber más de una persona a la vez editando la aplicación. Si se intenta modificar una aplicación que alguien ya está editando, aparece el mensaje a continuación. No puede continuar hasta que la otra persona cierre la aplicación (o se agote el tiempo de espera de su sesión).

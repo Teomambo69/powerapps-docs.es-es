@@ -9,12 +9,12 @@ En el primer tema del Aprendizaje guiado, conocerá las partes principales de Po
 No esperamos que dedique una gran cantidad de tiempo a aprender qué *es* PowerApps, pero creemos que profundizar un poco más resulta útil.
 
 ## <a name="webpowerappscom"></a>web.powerapps.com
-Si crea aplicaciones, aquí es donde pasará la mayor parte del tiempo. Aprenderá con las **plantillas y aplicaciones de ejemplo** que hay aquí disponibles, y verá todas las aplicaciones que ha creado. Puede crear las aplicaciones en **PowerApps Studio para web** o **PowerApps Studio para Windows**, y compartirlas con otras personas y organizaciones. Administrará datos: **conexiones**, **puertas de enlace** y **entidades** (hablaremos de todos ellos en breve). Y verá todos los **flujos** creados en **flows.microsoft.com**, que se pueden integrar con sus aplicaciones.
+Si crea aplicaciones, aquí es donde pasará la mayor parte del tiempo. Aprenderá con las **plantillas y aplicaciones de ejemplo** que hay aquí disponibles, y verá todas las aplicaciones que ha creado. Puede crear las aplicaciones en **PowerApps Studio** y después compartirlas con otros usuarios y organizaciones. Administrará datos: **conexiones**, **puertas de enlace** y **entidades** (hablaremos de todos ellos en breve). Y verá todos los **flujos** creados en **flows.microsoft.com**, que se pueden integrar con sus aplicaciones.
 
 ![Sitio de web.powerapps.com](./media/learning-powerapps-parts/powerapps-web-site.png)
 
 ## <a name="powerapps-studio"></a>PowerApps Studio
-**PowerApps Studio** está disponible como una aplicación web que puede usar en cualquier explorador moderno, y como una aplicación de Windows. PowerApps Studio tiene tres paneles y una cinta de opciones que hacen que crear aplicaciones sea **similar a crear un conjunto de diapositivas en PowerPoint**:
+**PowerApps Studio** está disponible como una aplicación web que se puede usar en cualquier explorador moderno. PowerApps Studio tiene tres paneles y una cinta de opciones que hacen que crear aplicaciones sea **similar a crear un conjunto de diapositivas en PowerPoint**:
 
 1. **Barra de navegación izquierda**, en la que se puede mostrar una miniatura de cada pantalla de la aplicación o una vista jerárquica de todos los controles de cada pantalla.
 2. **Panel central**, que muestra la pantalla en la que está trabajando.

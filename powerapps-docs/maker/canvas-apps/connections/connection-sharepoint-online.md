@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: fe6017ee402f0026aab3ef281a02b472b6a503ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Conexión a SharePoint desde PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,13 +49,11 @@ Puede agregar datos de una lista personalizada, pero no una biblioteca. Además,
 PowerApps lee las columnas que contienen espacios, pero estos se sustituyen por el código de escape hexadecimal **"\_x0020\_"**. Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Abra PowerApps realizando *cualquiera* de estos pasos:
+1. [Inicie sesión](../../signup-for-powerapps.md) en PowerApps.
 
-* [Suscríbase](../../signup-for-powerapps.md) a PowerApps, [instale PowerApps Studio para Windows](http://aka.ms/powerappsinstall), ábralo e inicie sesión con las mismas credenciales que usó para suscribirse.
+1. [Inicie sesión](http://web.powerapps.com) en PowerApps con las mismas credenciales que usó para suscribirse.
 
-* [Abra PowerApps Studio para la web](https://create.powerapps.com/api/start) en un explorador.
-
-    Para obtener una lista de exploradores admitidos y las limitaciones de la versión preliminar de PowerApps Studio para la web, consulte [Create or edit apps in a browser](../create-app-browser.md) (Crear o editar aplicaciones en un explorador).
+1. Junto al borde de la izquierda, seleccione **Aplicaciones** y, después, haga clic en **Crear una aplicación** en el titular.
 
 ## <a name="create-an-app"></a>Crear una aplicación
 * [Genere una aplicación automáticamente](../app-from-sharepoint.md) basándose en los datos de una lista de SharePoint.

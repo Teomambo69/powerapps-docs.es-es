@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 74ab73d78e87c25adf0cd300bb8a6321a578d749
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d77bc3c90b16fae60fb0daf78376beaa31d67098
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Descripción de las variables en PowerApps
 Si ha usado otra herramienta de programación como Visual Basic o JavaScript, probablemente se pregunte: **¿dónde están las variables?** PowerApps es ligeramente diferente y requiere otro enfoque. En lugar de buscar una variable, pregúntese lo siguiente: **¿qué haría en Excel?**
@@ -257,5 +257,5 @@ Vamos a recrear la máquina de sumar mediante una colección:
 12. Vuelva a obtener la vista previa pulsando la tecla F5, escriba números en el control de entrada de texto y seleccione botones.  Seleccione el botón **Guardar**.  Cierre y vuelva a cargar la aplicación y seleccione el botón **Cargar** para volver a cargar la colección.  
     
     > [!NOTE]
-    > **SaveData** y **LoadData** no funcionan cuando la ejecución tiene lugar en un explorador web. Debe usar la versión Studio instalada en Windows o en uno de los reproductores para dispositivos móviles.  
+    > **SaveData** y **LoadData** no funcionan cuando la ejecución tiene lugar en un explorador web. Debe usar PowerApps Studio para Windows o PowerApps Mobile.
 

@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 1454b995b50d2bb5d990ef57f91da6fb9105e660
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Instalar y configurar el ejemplo de informe de gastos de PowerApps
 
@@ -60,13 +60,13 @@ En esta lista se almacenan los informes de gastos.
 
 10. Haga clic en **Crear**.
 
-### <a name="create-costcenter-column"></a>Crear una columna CostCenter
+### <a name="create-cost-center-column"></a>Crear una columna Cost Center
 
 1. Haga clic en la lista **Gastos**.
 2. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
 3. Haga clic en **Configuración de la lista**.
 4. Haga clic en **Crear columna**.
-5. En el cuadro de texto **Nombre de columna**, escriba **CostCenter**.
+5. En el cuadro de texto **Nombre de columna**, escriba **Cost Center**.
 6. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Elección**.
 7. En el cuadro de texto **Escriba cada opción en una línea distinta**, especifique los valores siguientes, cada uno en una línea diferente: 
     - Microsoft
@@ -233,7 +233,7 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 ### <a name="create-sharepoint-connection"></a>Crear una conexión de SharePoint
 
 1.  Haga clic en **+ Nueva conexión**.
-2.  En el cuadro de búsqueda **Buscar**, escriba **Outlook**.
+2.  En el cuadro de texto **Buscar**, escriba **SharePoint**.
 3.  Seleccione **SharePoint** en la lista.
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
@@ -259,7 +259,7 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. Haga clic en **Guardar**.
-11. Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
+11. Haga clic en el **icono rojo** correspondiente a la **conexión de aprobación**.
 12. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-approvals.png)

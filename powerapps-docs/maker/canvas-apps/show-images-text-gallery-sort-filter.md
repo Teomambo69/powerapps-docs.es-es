@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: 285d9c051c453f6710a1dbc94dbb47af15b6c71d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 959431b69d4f432335997697d8f25b5b8815d63c
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Mostrar, ordenar y filtrar los datos en una galería de PowerApps
 Cree una galería para mostrar imágenes y texto sobre diversos productos, y ordene y filtre esa información.
@@ -28,7 +28,7 @@ En PowerApps, puede usar una galería para mostrar varios elementos relacionados
 > 
 
 ### <a name="prerequisites"></a>Requisitos previos
-* [Regístrese](../signup-for-powerapps.md) en PowerApps e [instálelo](http://aka.ms/powerappsinstall). Cuando abra PowerApps, inicie sesión con las mismas credenciales que usó para registrarse.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 * Cree una aplicación de tableta a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Tiene que saber [configurar un control](add-configure-controls.md).
 * En estos pasos se usa [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) como datos de entrada de ejemplo, que incluye imágenes .jpg. El archivo zip incluye un archivo XML que se puede convertir a Excel. De lo contrario, PowerApps lee automáticamente los archivos dentro los archivos .zip y lo importa correctamente. Puede descargar y usar estos datos de ejemplo o importar los suyos propios.

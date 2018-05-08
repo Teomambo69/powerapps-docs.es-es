@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 77e47b79ece6149f7d9068fc4092e09fbdca77d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Información sobre las puertas de enlace de datos locales para Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Instalación y configuración
@@ -138,6 +138,10 @@ La puerta de enlace de datos local está configurada para usar *NT SERVICE\PBIEg
 Esta no es la cuenta utilizada para conectarse a orígenes de datos locales ni la cuenta profesional o académica con la que inicia sesión en los servicios en la nube.
 
 Si tiene problemas de autenticación con el servidor proxy, puede cambiar la cuenta de servicio de Windows por una cuenta de usuario de dominio o una cuenta de servicio administrado, tal y como se describe en la [configuración del servidor proxy](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user).
+
+## <a name="tenant-level-administration"></a>Administración de nivel de inquilino 
+
+En la actualidad no hay un solo lugar donde los administradores de inquilinos puedan administrar todas las puertas de enlace que otros usuarios han instalado y configurado.  Si es un administrador de inquilinos, se recomienda pedir a los usuarios de la organización que lo agreguen como administrador para todas las puertas de enlace que instalen. Esto le permite administrar todas las puertas de enlace de la organización a través de la página Configuración de puerta de enlace o de [comandos de PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 #### <a name="general"></a>General

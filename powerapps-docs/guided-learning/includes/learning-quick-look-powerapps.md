@@ -10,7 +10,7 @@ Cada aplicación de ejemplo está diseñada para un propósito específico, como
 ![Aplicación de ejemplo de suelos de PowerApps](./media/learning-quick-look-powerapps/powerapps-flooring-sample.png)
 
 ## <a name="create-an-app-from-a-template"></a>Crear una aplicación a partir de una plantilla
-Otra manera eficaz de comenzar es **crear una aplicación a partir de una plantilla**. Básicamente, las plantillas son aplicaciones de ejemplo que se pueden abrir para entender cómo se ensamblan. Usan datos de ejemplo para ayudarle a hacerse una idea de lo que es posible, y abrirlas en PowerApps Studio le permitirá **ver cómo se crea una aplicación**. Tenga en cuenta que las plantillas solo están disponibles en PowerApps Studio para Windows en este momento, no en PowerApps Studio para web.
+Otra manera eficaz de comenzar es **crear una aplicación a partir de una plantilla**. Básicamente, las plantillas son aplicaciones de ejemplo que se pueden abrir para entender cómo se ensamblan. Usan datos de ejemplo para ayudarle a hacerse una idea de lo que es posible, y abrirlas en PowerApps Studio le permitirá **ver cómo se crea una aplicación**.
 
 ![Plantilla de aplicación de PowerApps](./media/learning-quick-look-powerapps/powerapps-templates.png)
 
@@ -24,7 +24,7 @@ Si su equipo empezó a usar PowerApps, quizás sus integrantes ya **hayan compar
 ![Uso compartido en PowerApps](./media/learning-quick-look-powerapps/powerapps-sharing.png)
 
 ## <a name="create-an-app-from-a-data-source"></a>Crear una aplicación a partir de un origen de datos
-Puede crear aplicaciones en **PowerApps Studio para web** o **PowerApps Studio para Windows**. Podrá conectarse a orígenes de datos y comenzar a crear aplicaciones en un diseñador visual.
+Crear aplicaciones en **PowerApps Studio**. Podrá conectarse a orígenes de datos y comenzar a crear aplicaciones en un diseñador visual.
 
 ![Aplicación de PowerApps a partir de datos](./media/learning-quick-look-powerapps/powerapps-app-from-data.png)
 

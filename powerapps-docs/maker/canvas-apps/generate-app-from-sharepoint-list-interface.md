@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 50e897e9d75eec037039e81e6dbed524206b10d3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 51a13472407c5483eed7cc2c202e46855905157d
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Creación de una aplicación desde SharePoint mediante PowerApps
 
@@ -53,7 +53,7 @@ La aplicación se abre en una pestaña independiente del explorador.
 ## <a name="manage-the-app"></a>Administración de la aplicación
 ![Barra de comandos](./media/generate-app-from-sharepoint-list-interface/command-bar.png)
 
-* Al pulsar o hacer clic en **Editar en PowerApps**, la aplicación se abre en una pestaña independiente del explorador donde puede actualizar la aplicación en PowerApps Studio para la web.
+* Al pulsar o hacer clic en **Editar en PowerApps**, la aplicación se abre en una pestaña independiente del explorador donde se puede actualizar en PowerApps Studio.
 
 * Al pulsar o hacer clic en **Hacer pública esta vista**, otras personas de su organización podrán verla. De forma predeterminada, solo puede ver las vistas que cree. Si quiere permitir a otros usuarios editar la aplicación, tendrá que [compartirla con ellos](share-app.md) y concederles permisos **Puede editar**.
 

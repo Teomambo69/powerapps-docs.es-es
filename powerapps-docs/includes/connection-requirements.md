@@ -1,4 +1,4 @@
 ## <a name="prerequisites"></a>Requisitos previos
-* Acceder a [powerapps.com](https://web.powerapps.com) o instalar [PowerApps](http://aka.ms/powerappsinstall)
+* Acceso a [PowerApps](https://web.powerapps.com)
 * Agregar la [conexión](../maker/canvas-apps/add-manage-connections.md)
 * Crear una aplicación a partir de una [plantilla](../maker/canvas-apps/get-started-test-drive.md), de [datos](../maker/canvas-apps/get-started-create-from-data.md) o desde [el principio](../maker/canvas-apps/get-started-create-from-blank.md)

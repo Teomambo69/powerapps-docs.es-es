@@ -1,6 +1,6 @@
 ---
-title: Administración de campos personalizados en una entidad (inicio rápido) | Microsoft Docs
-description: Inicio rápido para crear, leer, actualizar y eliminar los campos personalizados de una entidad.
+title: Administración de campos personalizados en una entidad | Microsoft Docs
+description: Tutorial sobre cómo crear, leer, actualizar y eliminar los campos personalizados de una entidad en CDS for Apps.
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -8,24 +8,23 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: article
 ms.component: cds
-ms.date: 3/21/2018
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: ff522ee5d5614888c6cc0fcfb1e7d6658a36c6ae
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="quickstart-manage-custom-fields"></a>Inicio rápido: Administración de campos personalizados
+# <a name="manage-custom-fields-in-an-entity"></a>Administración de campos personalizados en una entidad
 En todas las entidades se pueden crear y actualizar uno o varios campos. Al crear un campo personalizado, especifica un conjunto de propiedades, como el nombre del campo, el nombre para mostrar y el tipo de datos que va a contener. Para obtener más información, vea [Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (Metadatos de atributo de entidad).
 
 > [!NOTE]
-> Todas las entidades tienen [campos del sistema], como los campos que indican la última vez que se actualizó un registro y quién lo actualizó. Asimismo, las [entidades estándar](data-platform-intro.md#system-fields) tienen campos estándar (predeterminados). Ni los campos estándar ni los del sistema se pueden modificar o eliminar. Si crea un campo personalizado, debe proporcionar funcionalidad además de estos campos integrados.
+> Todas las entidades tienen campos del sistema, como los que indican la última vez que se actualizó un registro y quién lo actualizó. Además, las entidades estándar tienen campos estándar (predeterminados). Ni los campos estándar ni los del sistema se pueden modificar o eliminar. Si crea un campo personalizado, debe proporcionar funcionalidad además de estos campos integrados.
 
 ## <a name="create-a-field"></a>Crear un campo
-
 1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
@@ -62,7 +61,6 @@ En todas las entidades se pueden crear y actualizar uno o varios campos. Al crea
     Cuando la operación se complete correctamente recibirá una notificación. Si la operación no se realiza correctamente, aparecerá un mensaje de error que indica los problemas que han aparecido y cómo solucionarlos.
 
 ## <a name="create-a-calculated-or-roll-up-field"></a>Crear un campo calculado o consolidado
-
 Los campos calculados permiten automatizar los cálculos manuales que se usan en los procesos empresariales. Por ejemplo, puede que a un vendedor le interese conocer los ingresos ponderados de una oportunidad que se basan en los ingresos estimados de una oportunidad multiplicados por la probabilidad. O bien, que quiera aplicar automáticamente un descuento, si un pedido es superior a 500 USD. Un campo calculado puede contener valores resultantes de operaciones matemáticas sencillas, u operaciones condicionales como if-else, o mayor que y muchas otras. Los campos calculados se pueden crear mediante los tipos de datos siguientes:
 
 * Una línea de texto
@@ -74,7 +72,6 @@ Los campos calculados permiten automatizar los cálculos manuales que se usan en
 * Fecha y hora
 
 Para obtener más información sobre los tipos de expresiones admitidos y ejemplos, vea [Definir campos calculados](/dynamics365/customer-engagement/customize/define-calculated-fields).
-
 
 ## <a name="update-or-delete-a-field"></a>Actualizar o eliminar un campo
 1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda y, después, pulse o haga clic en una entidad.

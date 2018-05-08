@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 5a469c875d82670e30d0be8bef86cc476ca5ea19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>Compartir una aplicación en PowerApps
 Es estupendo crear aplicaciones que satisfagan sus propias necesidades empresariales, pero lo realmente estupendo de PowerApps es que puede compartir las aplicaciones con otras personas. En este tema, obtendrá información sobre cómo compartir aplicaciones con usuarios o grupos de seguridad específicos, o cómo compartirlas con toda la organización.
@@ -57,13 +57,13 @@ La notificación contiene otro tipo de vínculo en función del permiso que se a
 ### <a name="how-do-my-users-see-the-app-i-shared"></a>¿Cómo ven mis usuarios la aplicación que he compartido?
 Después de compartir una aplicación con uno o varios usuarios o grupos de seguridad, la forma en que estos ven la aplicación depende del permiso con el que la haya compartido.
 
-##### <a name="if-you-shared-an-app-with-user-permission"></a>Si se ha compartido una aplicación con el permiso *Usuario*
+##### <a name="if-you-shared-an-app-with-can-use-permission"></a>Si ha compartido una aplicación con el permiso *Puede usar*
 Las personas con las que haya compartido la aplicación recibirán una notificación por correo electrónico si ha seleccionado esa casilla en la pantalla para compartir aplicaciones. En el mensaje de correo electrónico, pueden pulsar o hacer clic en un vínculo para ejecutar la aplicación en [Dynamics 365](http://home.dynamics.com). Pronto se admitirán vínculos universales, lo que implica que si tiene PowerApps Studio o PowerApps Mobile instalados, la aplicación se abrirá en ese programa.
 
 Los usuarios también pueden ver la aplicación en AppSource en [Dynamics 365](http://home.dynamics.com) (por ejemplo, si no ha enviado un mensaje de correo electrónico). [Obtenga más información](../../user/app-source.md) sobre cómo pueden obtener los usuarios aplicaciones mediante AppSource.
 
-##### <a name="if-you-shared-an-app-with-contributor-permission"></a>Si ha compartido la aplicación con el permiso *Colaborador*
-Las personas con las que haya compartido la aplicación recibirán una notificación por correo electrónico si ha seleccionado esa casilla en la pantalla para compartir aplicaciones. En el mensaje de correo electrónico, pueden pulsar o hacer clic en un vínculo que abrirá la aplicación directamente para su edición mediante PowerApps Studio para la Web. También hay un vínculo para ejecutar la aplicación en [Dynamics 365](http://home.dynamics.com). Pronto se admitirán vínculos universales, lo que implica que si tiene PowerApps Studio o PowerApps Mobile instalados, la aplicación se abrirá en ese programa.
+##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>Si ha compartido una aplicación con el permiso *Puede editar*
+Las personas con las que haya compartido la aplicación recibirán una notificación por correo electrónico si ha seleccionado esa casilla en la pantalla para compartir aplicaciones. En el mensaje de correo electrónico, pueden pulsar o hacer clic en un vínculo que abrirá la aplicación directamente para la edición mediante PowerApps Studio. También hay un vínculo para ejecutar la aplicación en [Dynamics 365](http://home.dynamics.com). Pronto se admitirán vínculos universales, lo que implica que si tiene instalado PowerApps Studio o PowerApps Mobile, la aplicación se abrirá en ese programa.
 
 Los usuarios también pueden ver la aplicación en [powerapps.com](http://web.powerapps.com) (por ejemplo, si no se ha enviado un correo electrónico). Este es el lugar en el que los creadores de aplicaciones pueden examinar todas las aplicaciones que han creado o que han compartido con ellos con el permiso **Colaborador**. En cambio, [Dynamics 365](http://home.dynamics.com) es donde los usuarios pueden ejecutar rápidamente aplicaciones de PowerApps y otras aplicaciones empresariales.
 

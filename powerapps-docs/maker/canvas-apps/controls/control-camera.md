@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 78cf8d73758e931d009080f03962c3450088a553
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="camera-control-in-powerapps"></a>Control Cámara en PowerApps
 Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.
@@ -70,8 +70,6 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**Zoom**: el porcentaje en que se amplía una imagen de una cámara o la vista de un archivo en un visor de PDF.
-
 ## <a name="related-functions"></a>Funciones relacionadas
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
@@ -79,16 +77,16 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 ### <a name="add-photos-to-an-image-gallery-control"></a>Agregar fotos a un control Galería de imágenes
 1. Agregue un control **Cámara**, denomínelo **MyCamera** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
    **Collect(MyPix, MyCamera.Photo)**
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-   
+
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 2. Presione F5 y, a continuación, tome una foto haciendo clic o pulsando en **MyCamera**.
-3. Agregue un control **[Galería de imágenes](control-gallery.md)** y, luego, cambie de tamaño su control **[Imagen](control-image.md)**, su plantilla y el propio control **Galería de imágenes** para que quepa en la pantalla.
-4. Establezca la propiedad **[Elementos](properties-core.md)** del control **Galería de imágenes** en esta expresión:<br>**MyPix.Url**.
+3. Agregue un control **[Galería vertical](control-gallery.md)** y, luego, cambie de tamaño su control **[Imagen](control-image.md)**, su plantilla y el propio control **Galería de imágenes** para que quepa en la pantalla.
+4. Establezca la propiedad **[Elementos](properties-core.md)** del control **Galería de imágenes** en:<br>**MyPix**.
 5. Establezca la propiedad **[Elementos](properties-visual.md)** del control **Imagen** de la galería en esta expresión:<br>
    **ThisItem.Url**
-   
+
     La foto que realizó aparece en el control **Galería de imágenes**.
 6. Realice tantas fotografías como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
 7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix, ThisItem)**, presione F5 y luego pulse o haga clic en una foto para quitarla.
@@ -112,4 +110,3 @@ Debe haber un contraste de color adecuado entre:
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
- 

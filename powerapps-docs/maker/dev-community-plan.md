@@ -1,25 +1,22 @@
 ---
 title: 'Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual | Microsoft Docs'
 description: Regístrese para desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
+ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
@@ -76,7 +73,7 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 
 *No puede compartir aplicaciones, flujos, conexiones, etc. con otros usuarios del inquilino. Tampoco puede agregar a otro usuario como administrador o creador del entorno, ni a los roles de la base de datos del centro de administración.
 
-**La creación de una base de datos con Common Data Service no está disponible actualmente en un entorno individual, y estará disponible de nuevo próximamente. Si creó una base de datos en un momento anterior, podrá seguir usándola sin ningún problema. 
+\*\*La creación de una base de datos con Common Data Service no está disponible actualmente en un entorno individual, y estará disponible de nuevo próximamente. Si creó una base de datos en un momento anterior, podrá seguir usándola sin ningún problema. 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>¿Cuáles son los límites de capacidad para el entorno individual?
 | **Capacidad** |  |

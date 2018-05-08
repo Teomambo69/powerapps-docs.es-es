@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 194bc4d68d4b26360074d8ed431cacaf231d0cdf
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 0a257df76980bcf1801c9ed98de87ae06c4ae624
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda
 En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con campos de búsqueda.
@@ -91,7 +91,7 @@ Esto se hace en primer lugar, para que cuando agregue datos a la lista **Assets*
 ## <a name="create-an-app-from-the-assets-list"></a>Crear una aplicación de la lista Assets
 Puede usar esta aplicación para agregar datos a la lista **Assets**.
 
-1. Abra PowerApps Studio. Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) con la dirección de correo electrónico de su organización y siga las instrucciones para descargar PowerApps Studio desde la Tienda Windows.
+1. [Inicie sesión en PowerApps Studio](http://web.powerapps.com). Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) mediante la dirección de correo electrónico de la organización.
 
 2. En el menú **Archivo** (en el borde izquierdo), pulse o haga clic en **Nuevo** y, luego, pulse o haga clic en **SharePoint**.
 

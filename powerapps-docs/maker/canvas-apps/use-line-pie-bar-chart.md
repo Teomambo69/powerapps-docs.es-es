@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 9a4daa7135f54ed3a0b3e1f206ce0d201c42da8b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f4b6f604ecd7557f7b7b54769d66da850e18ef4f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
 Use gráficos de líneas, gráficos circulares y gráficos de barras para mostrar los datos. Al trabajar con gráficos, los datos que importe deben estar estructurados de la manera siguiente:
@@ -30,7 +30,7 @@ Por ejemplo, los datos deben tener un aspecto similar al siguiente:
 Puede crear y usar estos gráficos en PowerApps. Empecemos.
 
 ## <a name="prerequisites"></a>Requisitos previos
-* [Regístrese](../signup-for-powerapps.md) en PowerApps e [instálelo](http://aka.ms/powerappsinstall). Cuando abra PowerApps, inicie sesión con las mismas credenciales que usó para registrarse.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
 * Cree una aplicación a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 * Descargue [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip), que contiene datos de ejemplo como un archivo XML. Siga los pasos descritos en este tema para importarlo directamente desde su aplicación. Como alternativa, descomprima el archivo .zip, abra el archivo XML en Excel y guárdelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).

@@ -1,11 +1,9 @@
 Ya está familiarizado con todos los elementos de PowerApps y con las opciones para crear aplicaciones, así que es buen momento para empezar a compilar realmente una aplicación. Para este tema, se generará una aplicación de teléfono a partir de una lista de SharePoint Online, pero puede usar datos de muchos otros orígenes, como Excel, servicios en la nube como Salesforce y orígenes locales como SQL Server.
 
 ## <a name="connect-to-a-data-source"></a>Conexión a un origen de datos
-El primer paso a la hora de generar una aplicación a partir de datos es elegir qué PowerApps Studio usar y, a continuación, conectarse al origen de datos. En web.powerapps.com, haga clic o pulse en **Nueva aplicación**, a continuación, elija si desea utilizar PowerApps Studio para Windows o PowerApps Studio para web.
+En web.powerapps.com, pulse o haga clic en **Aplicaciones** cerca del borde izquierdo y, después, pulse o haga clic en **Crear una aplicación** en el titular.
 
-![Empezar a trabajar en web.powerapps.com](./media/learning-create-first-app-powerapps/generate-choose-studio.png)
-
-En PowerApps Studio tiene la opción de empezar a partir de datos, de una plantilla o desde el principio. Estamos creando una aplicación de teléfono para una lista de SharePoint, así que en **SharePoint** haga clic o pulse en **Diseño de teléfono**.
+En PowerApps, puede compilar una aplicación a partir de datos, una plantilla o desde cero. Estamos creando una aplicación de teléfono para una lista de SharePoint, así que en **SharePoint** haga clic o pulse en **Diseño de teléfono**.
 
 ![Aplicación de teléfono a partir de una lista de SharePoint](./media/learning-create-first-app-powerapps/generate-sharepoint-phone.png)
 

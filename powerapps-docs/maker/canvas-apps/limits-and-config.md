@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: 5cd2fdf5150d008f905e4c5c8177e6331545848e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5bf57ec96569751b3db656abdf04cebb1e13133a
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>Requisitos del sistema, límites y valores de configuración
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -37,7 +37,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
 | Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
 
-## <a name="supported-browsers-for-powerapps-studio-for-web"></a>Exploradores admitidos para PowerApps Studio para web
+## <a name="supported-browsers-for-powerapps-studio"></a>Exploradores admitidos para PowerApps Studio
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
 | Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
