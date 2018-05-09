@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f0b01c8bdb2043c1f1c219a4163f790c14b4e46
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4ae16517332864066f5b744e85ce3fe48c97a1df
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-to-handle-project-requests"></a>Generación de una aplicación para controlar solicitudes de proyecto
 > [!NOTE]
@@ -33,7 +33,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Crear una aplicación](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. Asigne un nombre a la aplicación, como "Project Requests app", y haga clic o pulse en **Crear**. Cuando la aplicación está lista, se abre en PowerApps Studio para web.
+2. Asigne un nombre a la aplicación, como "Project Requests app", y haga clic o pulse en **Crear**. Cuando la aplicación está lista, se abre en PowerApps Studio.
    
     ![Especifique un nombre para la aplicación](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
@@ -141,10 +141,10 @@ Esta sección es opcional, pero le ayudará a conocer mejor cómo funcionan las 
 
 Pero, ¿qué hace esta fórmula? Determina el origen de datos que aparece en la galería, filtra los datos en función del texto que se escriba en el cuadro de búsqueda y ordena los resultados en función del botón de ordenación de la aplicación. La fórmula usa *funciones* para realizar todas estas acciones. Las funciones toman parámetros (es decir, entrada), realizan una operación (por ejemplo, filtrado) y un devuelven un valor (es decir, salida):
 
-* La [función **SortByColumns**](functions/function-sort.md) ordena una tabla según una o varias columnas.
+* La [función **** SortByColumns](functions/function-sort.md) ordena una tabla según una o varias columnas.
 * La [función **Filter**](functions/function-filter-lookup.md) busca los registros en una tabla que satisface una fórmula que se especifica.
 * La [función **StartsWith**](functions/function-startswith.md) comprueba si una cadena de texto comienza por otra.
-* La [función**If**](functions/function-if.md) devuelve un valor si una condición es true y otro valor si es false.
+* La [función**** If](functions/function-if.md) devuelve un valor si una condición es true y otro valor si es false.
 
 Cuando se juntan las funciones en la fórmula, ocurre lo siguiente:
 
