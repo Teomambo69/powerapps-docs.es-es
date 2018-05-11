@@ -1,32 +1,29 @@
 ---
 title: 'Control Datos adjuntos: referencia | Microsoft Docs'
 description: Información sobre el control Datos adjuntos, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/29/2017
+ms.topic: reference
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 24610e4d70f39f08eec1e828c1be20183d8de3af
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint.
 
 ## <a name="limitations"></a>Limitaciones
 El control de datos adjuntos tiene las siguientes limitaciones temporales:
-1. La descarga de datos adjuntos no se admite en Internet Explorer.
+1. Internet Explorer admite la descarga de datos adjuntos solo dentro de los formularios de lista personalizada de SharePoint.
 
 1. La carga de los datos adjuntos solo funciona con orígenes de datos de la lista de SharePoint.  La compatibilidad con otros orígenes de datos se introducirá de forma incremental, se empezará con CDS.
 
@@ -97,7 +94,7 @@ Un control de **datos adjuntos** permite abrir los archivos almacenados en un or
 
     El campo de datos adjuntos asociado a la lista de SharePoint aparecerá en el formulario.
 
-[Aprenda a agregar y configurar un control](../add-configure-controls.md).
+[Aprenda a agregar y configurar un control].(../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
@@ -113,7 +110,7 @@ Debe haber un contraste de color adecuado entre:
 * **MaxAttachmentsColor** y **Fill**
 * **NoAttachmentsColor** y **Fill**
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 Las siguientes propiedades deben estar presentes:

@@ -1,45 +1,41 @@
 ---
 title: Lista de seminarios web | Microsoft Docs
 description: Muestra una lista de los seminarios web pasados y futuros, en la que se incluyen la fecha y hora, y los temas tratados.
-services: ''
-suite: powerapps
-documentationcenter: na
 author: audrieMSFT
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 4878f2de3bf023b9bf1c190a3695cb8ed1bc56b3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. No dude en sugerir temas adicionales en los comentarios de este tema.
 
 ## <a name="upcoming-webinars"></a>Seminarios web que se celebrarán en las próximas fechas ##
-**Getting Started | Understanding Model Driven App Templates with Casey Burke** (Introducción | Descripción de plantillas de aplicación controladas por modelos con Casey Burke)
-<br>por Casey Burke
-<br>*19 de abril a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
-
-El administrador de programas de Microsoft Casey Burke demostrará y desglosará la arquitectura de una plantilla de aplicaciones controladas por modelos. Aprenda cómo usar estas plantillas y personalizarlas para resolver sus propios objetivos de negocio.
-
-[Haga clic aquí para verlo el 19 de abril](https://www.youtube.com/watch?v=FShakkXKiS8) 
-
 **Deep Dive | Using PowerApps for Business Process Management (BPM) by Dawid van Heerden** (Profundización | Uso de PowerApps para la administración de procesos de negocio [BPM] por Dawid van Heerden)
 <br>por Audrie Gordon y Dawid van Heerden
-<br>*23 de abril a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
+<br>*24 de abril a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
 
 PowerApps es un programa fantástico para crear aplicaciones empresariales rápidamente. Este video muestra el poder de usar esta misma plataforma para impulsar procesos empresariales de varios pasos, implicando varios roles, pasos y opciones de enrutamiento.
 
-[Haga clic aquí para verlo el 23 de abril](https://www.youtube.com/watch?v=JY8r46HnHoI)
+[Haga clic aquí para verlo el 23 de abril](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
+
+**Model Driven App Components Part 1 | Managing Entities and Data Imports** (Componentes de aplicaciones controladas por modelos, parte 1 | Administración de entidades e importaciones de datos)
+<br>de Audrie Gordon y Clay Wesener
+<br>*1 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
+
+Trabaje en conjunto con Clay Wesener del equipo de PowerApps mientras le guía en la compilación de una base de datos CDS for Apps. Aprenderá a crear y recorrer entidades, así como campos. También obtendrá una ventaja inicial para saber cuáles son las características integradas desde el primer momento. 
+
+Esta es la primera parte de una serie de tres partes: Parte 1: Entidades, Parte 2: Formularios y vistas, Parte 3: Gráficos y paneles
+
+Es una oportunidad excelente para aprender a reutilizar campos y entidades estándar y cómo crear sus propios escenarios personalizados en cuestión de segundos.
+
+[Haga clic aquí para verlo el 1 de mayo](https://www.youtube.com/watch?v=02NWfHRYkeo)
 
 **Deep Dive | Laura Rogers from IWMentor Shares Best Practices for Production Apps** (Profundización | Laura Rogers de IWMentor comparte los procedimientos recomendados para aplicaciones de producción)
 <br>por Audrie Gordon y Laura Rodgers
@@ -48,6 +44,24 @@ PowerApps es un programa fantástico para crear aplicaciones empresariales rápi
 Laura Rogers de IW Mentor ha estado formando y entregando aplicaciones de producción a empresas durante muchos años. Todos hemos aprendido mucho de ella, especialmente los que trabajamos con tecnologías SharePoint. Durante este seminario web, Laura compartirá los procedimientos recomendados y las lecciones aprendidas para crear aplicaciones de nivel de producción mediante PowerApps y la plataforma de aplicaciones empresariales. Además, hará una demostración de una aplicación de producción excepcional para el seguimiento de facturas y medidas. No querrá perderse este evento. Sitio web de IW Mentor: https://www.iwmentor.com/
 
 [Haga clic aquí para verlo el 14 de mayo](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**Model Driven App Components Part 2 | Creating Forms and Views** (Componentes de aplicaciones controladas por modelos, parte 2 | Creación de formularios y vistas)
+<br>de Audrie Gordon y Clay Wesener
+<br>*15 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
+
+Las aplicaciones controladas por modelos brindan una experiencia enriquecida para los creadores de aplicaciones que diseñan escenarios de formularios simples a complejos. Aprenda a usar el nuevo diseñador de formularios para crear los formularios necesario para la aplicación modelo que empezamos en la parte 1. Anees le guiará por los componentes de los formularios, como pestañas, secciones y campos. También compartirá los procedimientos recomendados sobre cómo integrar filtros y lógica de negocios. 
+
+Esta es la primera parte de una serie de tres partes: Parte 1: Entidades, Parte 2: Formularios y vistas, Parte 3: Gráficos y paneles
+
+[Haga clic aquí para verlo el 15 de mayo](https://www.youtube.com/watch?v=v7VoX-V2ek4)
+
+**Model Driven App Components Part 3 | Exploring Charts and Dashboards** (Componentes de aplicaciones controladas por modelos, parte 3 | Exploración de gráficos y paneles)
+<br>de Audrie Gordon y Clay Wesener
+<br>*29 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)
+
+PowerApps ofrece un enfoque compuesto para generar informes, con funcionalidades de vistas y paneles sofisticadas. La serie Aplicaciones controladas por modelos concluye con gráficos y paneles útiles para optimizar y modernizar la solución en que hemos trabajado. ¡Vaya! Una aplicación llena de gran valor y diversión.
+
+[Haga clic aquí para verlo el 29 de mayo](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
 
 **Inside the Universal Audit App: See what PowerApps and Flow are capable of  with Paul Culmsee** (Dentro de la aplicación Universal Audit: vea lo que PowerApps y Flow son capaces de hacer con Paul Culmsee)
 <br>por Paul Culmsee

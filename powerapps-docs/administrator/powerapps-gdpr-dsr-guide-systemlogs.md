@@ -1,6 +1,6 @@
 ---
-title: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service | Microsoft Docs
-description: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service
+title: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps | Microsoft Docs
+description: Tutorial sobre cómo responder solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,16 +14,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 1b85ac81969407fe4e84c41fd93debeccddb0f05
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps
-Microsoft le ofrece la posibilidad de tener acceso, exportar y eliminar los registros generados por el sistema que se consideren personales en la amplia definición de *datos personales* del Reglamento general de protección de datos (RGDP). Ejemplos de registros generados por el sistema que se consideran personales en el RGPD:
+Microsoft le ofrece la posibilidad de tener acceso, exportar y eliminar los registros generados por el sistema que se consideren personales en la amplia definición de *datos personales* del Reglamento general de protección de datos (RGDP) de la Unión Europea (UE). Ejemplos de registros generados por el sistema que se consideran personales en el RGPD:
 * Datos de uso de productos y servicios tales como registros de actividad del usuario
 * Solicitudes de búsqueda de usuario y datos de consulta
 * Datos generados por los productos y servicios como consecuencia de la funcionalidad del sistema y la interacción entre usuarios u otros sistemas
@@ -31,9 +31,11 @@ Microsoft le ofrece la posibilidad de tener acceso, exportar y eliminar los regi
 Tenga en cuenta que no se admite la posibilidad de restringir ni rectificar datos de registros generados por el sistema. Los datos de registros generados por el sistema constituyen acciones objetivas realizadas en la nube de Microsoft y los datos de diagnóstico &mdash;que incluyen modificaciones a dichos datos&mdash; podrían poner en peligro el registro histórico de las acciones y aumentar los riesgos de seguridad y de fraude.
 
 ## <a name="accessing-and-exporting-system-generated-logs"></a>Acceso a registros generados por el sistema y exportación
-Los administradores tienen acceso a los registros generados por el sistema asociados a la utilización que haga un usuario de PowerApps y Microsoft Flow, así como de servicios y aplicaciones de CDS for Apps. Para tener acceso a registros generados por el sistema y exportarlos:
+Los administradores tienen acceso a los registros generados por el sistema asociados a la utilización que haga un usuario de PowerApps y Microsoft Flow, así como de servicios y aplicaciones de Common Data Service (CDS) for Apps.
 
-1. Vaya al [Portal de confianza de servicios Microsoft](https://servicetrust.microsoft.com/) e inicie sesión con las credenciales de un administrador global de Office 365.
+Para tener acceso a registros generados por el sistema y exportarlos:
+
+1. Vaya al [Portal de confianza de servicios Microsoft](https://servicetrust.microsoft.com/) e inicie sesión con las credenciales de administrador global de Office 365.
 
 2. En la lista desplegable **Privacidad** de la parte superior de la página, seleccione **Data Subject Request** (Solicitud del interesado).
 
@@ -55,7 +57,7 @@ En la tabla siguiente se resume el acceso y la exportación de registros generad
 | ¿Qué aspecto tendrán los datos de los registros generados por el sistema? |  Ejemplo de una entrada de registros generados por el sistema en formato JSON: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
->  Algunas características no permitirán la exportación ni la eliminación de registros generados por el sistema con información personal para que se pueda mantener la integridad de la información a efectos de auditoría y seguridad.
+>  Con el fin de garantizar la seguridad y la auditoría, algunas características no le permiten exportar ni eliminar los registros generados por el sistema para poder mantener la integridad de la información personal.
 >
 >
 
