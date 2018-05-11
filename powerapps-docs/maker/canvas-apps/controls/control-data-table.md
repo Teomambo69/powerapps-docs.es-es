@@ -1,24 +1,22 @@
 ---
 title: 'Control Tabla de datos: referencia | Microsoft Docs'
 description: Información sobre el control Tabla de datos, con propiedades y ejemplos
-services: powerapps
 documentationcenter: na
 author: jasongre
-manager: kfend
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>Control Tabla de datos en PowerApps
 Muestra un conjunto de datos en formato tabular.
@@ -154,7 +152,7 @@ Debe haber un contraste de color adecuado entre:
 * **SelectedColor** y **SelectedFill**
 * [**HoverColor**](properties-color-border.md) y [**HoverFill**](properties-color-border.md)
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **NoDataText** debe existir.

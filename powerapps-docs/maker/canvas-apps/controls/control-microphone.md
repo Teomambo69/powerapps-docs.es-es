@@ -1,25 +1,22 @@
 ---
 title: 'Control Micrófono: referencia | Microsoft Docs'
 description: Información sobre el control Micrófono, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control con el que el usuario puede grabar sonidos.
@@ -124,7 +121,7 @@ Se aplican las mismas directrices para **[Botón](control-button.md)** porque **
 Debe haber un contraste de color adecuado entre:
 * **[Image](properties-visual.md)** y el texto y el icono del botón (si procede)
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.

@@ -1,25 +1,22 @@
 ---
 title: 'Control Imagen: referencia | Microsoft Docs'
 description: Información sobre el control Imagen, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 82a545279ed297d3faa14ad0db47c30dea2660aa
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: bd07c6ee0a0084171c928c6908c33caae974d765
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -140,7 +137,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 ### <a name="color-contrast"></a>Contraste de color
-* Si el gráfico se utiliza como botón, se aplican los requisitos estándar de contraste de color.
+* Si el gráfico se utiliza como botón, se aplican los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 * Considere la posibilidad de comprobar si hay problemas de contraste en la imagen, si no es simplemente decorativa.
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
@@ -148,11 +145,13 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar vacía o la cadena **""** vacía si el gráfico es exclusivamente decorativo. De esta forma, los lectores de pantalla omiten el gráfico.
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** puede estar vacía o la cadena **""** vacía si el gráfico proporciona información redundante.
     * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)**  establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el gráfico se utiliza como botón. De esta forma, los usuarios de teclado pueden navegar hasta él.
 * Los indicadores de foco deben ser claramente visibles si el gráfico se usa como botón. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
-> [!NOTE]
+
+    > [!NOTE]
 > Cuando **[TabIndex](properties-accessibility.md)**  es cero o mayor, el control **Imagen** se representa como un botón. No hay ningún cambio en la apariencia visual, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el control **Imagen** se identifica como una imagen.

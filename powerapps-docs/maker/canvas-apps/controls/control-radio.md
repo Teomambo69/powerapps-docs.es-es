@@ -1,25 +1,22 @@
 ---
 title: 'Control Radio: referencia | Microsoft Docs'
 description: Información sobre el control Radio, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f28247ab3fce610571e2d5c27106bcf15c00cc8b
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 Lista que muestra todas las opciones, pero el usuario solo puede seleccionarlas de una en una.
@@ -144,7 +141,7 @@ Debe haber un contraste de color adecuado entre:
 * **RadioSelectionFill** y **RadioBackgroundFill**
 * **RadioBackgroundFill** y **[Fill](properties-color-border.md)**
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * Debe haber un **[valor](properties-core.md)** para cada opción de radio.

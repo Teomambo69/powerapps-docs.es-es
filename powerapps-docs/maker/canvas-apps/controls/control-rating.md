@@ -1,25 +1,22 @@
 ---
 title: 'Control Clasificación: referencia | Microsoft Docs'
 description: Información sobre el control Clasificación, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.
@@ -101,16 +98,18 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
 Debe haber un contraste de color adecuado entre:
 * **RatingFill** y **[Fill](properties-color-border.md)**
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
-> [!NOTE]
+
+    > [!NOTE]
 > Los lectores de pantalla tratan el control **Clasificación** como botones de radio.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
 * Considere la posibilidad de usar otro control si hay demasiadas estrellas. Puede resultar agotador navegar con un teclado y difícil seleccionar con precisión con una pantalla táctil.
-> [!NOTE]
+
+    > [!NOTE]
 > Las mismas interacciones de teclado para los botones de radio se pueden emplear en **Clasificación**.

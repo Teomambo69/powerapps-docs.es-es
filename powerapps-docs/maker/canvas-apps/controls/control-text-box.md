@@ -1,25 +1,22 @@
 ---
 title: 'Control Etiqueta: referencia | Microsoft Docs'
 description: Información sobre el control Etiqueta, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e3cae08695af7a4625fd4deb58c8cf7cfe71fdd0
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
 Cuadro que muestra los datos como texto, números, fechas o moneda.
@@ -155,11 +152,12 @@ Un control **Etiqueta** se puede usar como botón o vínculo mediante la especif
 ### <a name="color-contrast"></a>Contraste de color
 Debe haber un contraste de color adecuado entre:
 * **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
-* Se aplican otros requisitos estándar de contraste de color (si se usa como botón o vínculo)
+* Se aplican otros [requisitos estándar de contraste de color](../accessible-apps-color.md) (si se usa como botón o vínculo)
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[Text](properties-core.md)** debe existir.
-> [!NOTE]
+
+    > [!NOTE]
 > Los lectores de pantalla tratan los controles **Etiqueta** como botones cuando **[TabIndex](properties-accessibility.md)** es cero o superior.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual

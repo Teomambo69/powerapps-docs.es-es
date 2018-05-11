@@ -1,25 +1,22 @@
 ---
 title: Instalar y configurar el ejemplo de Help Desk de PowerApps | Microsoft Docs
 description: Instrucciones paso a paso para instalar y configurar el ejemplo Help Desk de PowerApps.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: sample
+ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: be5a2f1994a55abf6936ded4dfddf84d145115c5
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Instalar y configurar el ejemplo Help Desk de PowerApps
 
@@ -85,10 +82,10 @@ Esta lista almacena los vales del servicio Help Desk.
 7. En el cuadro de texto **Valor predeterminado**, escriba **Problema con equipo portátil/PC**.
 8. Haga clic en **Aceptar**.
 
-### <a name="create--complete-column"></a>Crear una columna de porcentaje completado
+### <a name="create-percentcomplete-column"></a>Crear una columna PercentComplete
 
 1. Haga clic en **Crear columna**.
-2. En el cuadro de texto **Nombre de columna**, escriba **% completado**.
+2. En el cuadro de texto **Nombre de columna**, escriba **PercentComplete**.
 3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Número (1, 10, 100)**.
 4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 5. Haga clic en **Aceptar**.
@@ -251,6 +248,7 @@ Esta lista almacena los vales del servicio Help Desk.
     
     > [!TIP] 
     > Si tiene más de un administrador, sepárelos mediante comas.  Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
+    > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
 
 5. Haga clic en **Archivo**.
 6. Haga clic en **Guardar**.

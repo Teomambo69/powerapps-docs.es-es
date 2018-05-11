@@ -1,25 +1,22 @@
 ---
 title: 'Control de cuadro combinado: referencia | Microsoft Docs'
 description: Información acerca del control de cuadro combinado, incluyendo sus propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -104,15 +101,17 @@ Debe haber un contraste de color adecuado entre:
 * **SelectionFill** y **[Fill](properties-color-border.md)**
 * **SelectionTagColor** y **SelectionTagFill**
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
-> [!NOTE]
+
+    > [!NOTE]
 > En pantallas táctiles, los usuarios de lector de pantalla pueden desplazarse por el contenido del cuadro combinado secuencialmente. El cuadro combinado actúa como botón que muestra u oculta su contenido cuando se selecciona.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
-> [!NOTE]
+
+    > [!NOTE]
 > La tecla de tabulación permite desplazarse hasta el cuadro combinado o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del cuadro combinado. La tecla escape cierra la lista desplegable cuando está abierta.

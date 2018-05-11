@@ -1,25 +1,22 @@
 ---
 title: 'Control Alternar: referencia | Microsoft Docs'
 description: Información sobre el control Alternar, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 0344a43707170bccebfd01d8b3a1bba24f3c183f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.
@@ -134,7 +131,7 @@ Debe haber un contraste de color adecuado entre:
 * **TrueFill** y el color de fuera de control
 * **TrueHoverFill** y el color de fuera de control
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.

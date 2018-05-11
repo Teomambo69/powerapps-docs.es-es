@@ -1,25 +1,22 @@
 ---
 title: 'Control Entrada de texto: referencia | Microsoft Docs'
 description: Información sobre el control Entrada de texto, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>Control Entrada de texto en PowerApps
 Un cuadro en el que el usuario puede escribir texto, números y otros datos.
@@ -166,7 +163,7 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 ### <a name="color-contrast"></a>Contraste de color
-* Se aplican requisitos estándar de contraste de color.
+* Se aplican [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.

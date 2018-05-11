@@ -1,25 +1,22 @@
 ---
 title: 'Control Cuadro de lista: referencia | Microsoft Docs'
 description: Información sobre el control Cuadro de lista, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d68e0e08b42bf0342e27c14ab7d53c746c468992
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 24fc5523b2f1d3cced7cdf4af8c30c65d28757a2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -162,7 +159,7 @@ Debe haber un contraste de color adecuado entre:
 * **[HoverFill](properties-color-border.md)** y **[Fill](properties-color-border.md)**
 * **[PressedFill](properties-color-border.md)** y **[Fill](properties-color-border.md)**
 
-Y esto, además de los requisitos estándar de contraste de color.
+Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
@@ -170,5 +167,6 @@ Y esto, además de los requisitos estándar de contraste de color.
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
-> [!NOTE]
+
+    > [!NOTE]
 > La tecla de tabulación se desplaza hasta el control **Cuadro de lista** o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del control **Cuadro de lista**.
