@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -41,6 +41,8 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **SelectMultiple**: si el usuario puede seleccionar un solo elemento o varios.
 
 **IsSearchable**: indica si el usuario puede buscar elementos antes de realizar la selección.
+
+**SearchFields**: campos de datos del origen de datos en los que se busca cuando el usuario escribe texto.  Para buscar en varios campos, establezca ComboBox1.SearchFields = ["MyFirstColumn", "MySecondColumn"]
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
