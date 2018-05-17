@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
 En este tutorial, podrá personalizar la galería y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización:
@@ -33,16 +33,18 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 1. Inicie sesión en [PowerApps](https://web.powerapps.com) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
-    ![Página principal de PowerApps](./media/customize-layout-sharepoint/sign-in.png)
+    [![Página principal de PowerApps](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 
 1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos (**...** ) y, a continuación, seleccione **Editar**.
 
+    ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
+
 ## <a name="change-the-layout"></a>Cambiar el diseño
-1. En la pantalla de exploración, seleccione la galería haciendo clic o pulsando en cualquier elemento, excepto el primero en la lista de cuentas.
+1. En el panel de navegación izquierdo, seleccione **BrowseGallery1**.
 
     Cuando se haya seleccionado la galería, aparecerá un cuadro de selección con indicadores alrededor.
 
-    ![Galería seleccionada](./media/customize-layout-sharepoint/select-gallery.png)
+    ![Seleccionar la galería](media/customize-layout-sharepoint/select-gallery-1.png)
 
 1. Cerca del borde derecho, seleccione **Cuentas** para abrir el panel **Datos**.
 
@@ -56,7 +58,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
     ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. En el panel **Datos**, abra la lista de opciones para el título.
+1. En el panel **Datos**, abra la lista de opciones de **Title2**.
 
     ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/show-title-options.png)
 
@@ -66,7 +68,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
     ![Galería final](./media/customize-layout-sharepoint/final-gallery.png)
 
-## <a name="change-the-sort-and-search-columns"></a>Cambio de columnas de ordenación y búsqueda
+## <a name="change-sort-and-search-columns"></a>Cambiar el orden y buscar en columnas
 1. Seleccione la galería como se describe en la sección anterior.
 
     ![Seleccionar la galería](./media/customize-layout-sharepoint/select-gallery-title.png)
@@ -88,7 +90,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
     Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
 
-## <a name="test-sorting-and-searching"></a>Prueba de ordenación y búsqueda
+### <a name="test-sorting-and-searching"></a>Prueba de ordenación y búsqueda
 1. Abra el modo de vista previa presionando F5 (o seleccionado el botón de reproducción cerca de la esquina superior derecha).
 
     ![Abrir el modo de vista previa](./media/customize-layout-sharepoint/open-preview.png)

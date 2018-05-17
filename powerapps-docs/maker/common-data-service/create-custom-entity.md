@@ -1,22 +1,18 @@
 ---
 title: Tutorial para la creación de una entidad personalizada que tiene componentes con PowerApps | Microsoft Docs
 description: Tutorial con instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
-documentationcenter: na
 author: Mattp123
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
+ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: dcd7acb9b6a7556e30cfa1aa46385024dcd0bcb5
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Tutorial: Creación de una entidad personalizada que tiene componentes en PowerApps
 

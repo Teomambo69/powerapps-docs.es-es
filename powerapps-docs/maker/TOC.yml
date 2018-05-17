@@ -226,16 +226,6 @@
       items:
         - name: Crear una entidad
           href: ./common-data-service/data-platform-create-entity.md
-        - name: Crear una entidad personalizada a partir de datos
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: Crear un conjunto de opciones
-          href: ./common-data-service/custom-picklists.md
-        - name: Crear una relación
-          href: ./common-data-service/data-platform-entity-lookup.md
-        - name: Crear una regla de negocio
-          href: ./common-data-service/data-platform-create-business-rule.md
-        - name: Eliminar una entidad personalizada
-          href: ./common-data-service/data-platform-delete-entity.md
     - name: Tutoriales
       items:
         - name: Crear una entidad personalizada que tiene componentes
@@ -250,6 +240,16 @@
       items:
         - name: Administración de campos personalizados en una entidad
           href: ./common-data-service/data-platform-manage-fields.md
+        - name: Crear una entidad personalizada a partir de datos
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: Crear un conjunto de opciones
+          href: ./common-data-service/custom-picklists.md
+        - name: Crear una relación entre entidades
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: Crear una regla de negocio
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: Eliminar una entidad personalizada
+          href: ./common-data-service/data-platform-delete-entity.md
     - name: Referencia
       items:
         - name: Entidades restringidas que requieren licencias de Dynamics 365

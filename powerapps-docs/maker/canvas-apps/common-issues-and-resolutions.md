@@ -1,8 +1,6 @@
 ---
 title: Problemas habituales de PowerApps y soluciones a los mismos | Microsoft Docs
-description: Obtenga información acerca de los problemas y soluciones de PowerApps
-services: ''
-suite: powerapps
+description: Lista de problemas y soluciones habituales de PowerApps.
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,19 +8,25 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/12/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 05/03/2018
 ms.author: sharik
-ms.openlocfilehash: 8a241ff41abf5f3fe804330d6678b70cf0576ceb
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
+En este artículo se enumeran algunos de los problemas habituales que los usuarios pueden experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
+
 ## <a name="recently-addedchanged"></a>Agregado o cambiado recientemente
+1. **Controles de cuadro combinado en galerías**
+
+    Cuando se usa un control de **cuadro combinado** en una galería, sus selecciones no se conservan cuando el usuario se va desplazando por la galería. Esto no ocurre si se usa un control de **cuadro combinado** en una galería que no permite el desplazamiento. En estos momentos no existe una solución alternativa.
+
+
 1. **Utilice una imagen personalizada como icono de aplicación**
 
     En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://web.powerapps.com). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.

@@ -1,25 +1,22 @@
 ---
-title: Inicio rápido para agregar datos a una entidad en Common Data Service mediante Power Query | Microsoft Docs
-description: Inicio rápido con instrucciones paso a paso para usar Power Query para agregar datos a una entidad nueva o existente en Common Data Service for Apps desde otro origen de datos.
-documentationcenter: na
+title: Adición de datos a una entidad en Common Data Service para aplicaciones mediante Power Query | Microsoft Docs
+description: Instrucciones paso a paso sobre cómo usar Power Query para agregar datos a una entidad nueva o existente en Common Data Service (CDS) para aplicaciones desde otro origen de datos.
 author: AFTOwen
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: e54553467714bad1f4bc17963f1011c0decc1963
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>Inicio rápido: Adición de datos a una entidad en Common Data Service mediante Power Query
-En este procedimiento, creará una entidad en [Common Data Service for Apps](data-platform-intro.md) y la rellenará con datos de una fuente OData mediante Power Query. Puede usar las mismas técnicas para integrar datos de estos orígenes en línea y locales, entre otros:
+# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Adición de datos a una entidad en Common Data Service para aplicaciones mediante Power Query
+En este procedimiento, creará una entidad en [Common Data Service (CDS) for Apps](data-platform-intro.md) y la rellenará con datos de una fuente OData mediante Power Query. Puede usar las mismas técnicas para integrar datos de estos orígenes en línea y locales, entre otros:
 
 * SQL Server
 * Salesforce

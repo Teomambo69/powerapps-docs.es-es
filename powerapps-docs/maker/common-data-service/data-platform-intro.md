@@ -1,25 +1,21 @@
 ---
 title: ¿Qué es Common Data Service for Apps? | Microsoft Docs
 description: Introducción a Common Data Service (CDS) for Apps, las entidades y la lógica del lado servidor.
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: 0f829548f8d2066d36fc722fa616aa388ccb1a69
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: fb0a7640e0a8b6da6664925528965d3fe6b8c82e
+ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>¿Qué es Common Data Service for Apps?
-Common Data Service (CDS) for Apps permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Los datos de CDS for Apps se almacenan en un conjunto de entidades. Una *entidad* es un conjunto de campos que se usan para almacenar datos, de forma similar a como lo hace una tabla en una base de datos. CDS for Apps incluye un conjunto básico de entidades estándar que cubre los escenarios típicos, pero también se pueden crear entidades personalizadas específicas para la organización y rellenarlas con datos mediante Power Query. Después, los creadores de aplicaciones pueden usar PowerApps para crear aplicaciones completas con estos datos.
+Common Data Service (CDS) for Apps permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Los datos de CDS for Apps se almacenan en un conjunto de entidades. Una *entidad* es un conjunto de campos que se usan para almacenar datos, de forma similar a como lo hace una tabla en una base de datos. CDS for Apps incluye un conjunto básico de entidades estándar que cubre los escenarios típicos, pero también se pueden crear entidades personalizadas específicas para la organización y rellenarlas con datos con Power Query. Después, los creadores de aplicaciones pueden usar PowerApps para crear aplicaciones completas con estos datos.
 
 Para obtener información sobre la compra de un plan para usar CDS for Apps, vea la [información sobre precios](../../administrator/pricing-billing-skus.md).
 

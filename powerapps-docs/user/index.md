@@ -1,25 +1,18 @@
 ---
-title: Tema de información general sobre la búsqueda y ejecución de aplicaciones | Microsoft Docs
-description: Tema de información general sobre la búsqueda y ejecución de aplicaciones
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+title: ¿Cómo se buscan y ejecutan las aplicaciones? | Microsoft Docs
+description: Información general sobre cómo buscar y ejecutar aplicaciones de PowerApps.
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-user
+ms.topic: overview
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: cc1483fbaffaac51f3c0999996cb3f91fac9e64a
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 484f6efb0c10bfa5a1d0e5ccdb0939422ddaf835
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?
 Los creadores de aplicaciones pueden crear aplicaciones de *lienzo* personalizadas basadas en roles y tareas que funcionan a su ritmo, ya sea un trabajador móvil sobre el terreno o un médico en un hospital con mucho trabajo. Los creadores de aplicaciones pueden personalizar casi todos los aspectos de una aplicación de lienzo y conectarse a varios orígenes de datos para ayudar a los usuarios a completar tareas específicas.

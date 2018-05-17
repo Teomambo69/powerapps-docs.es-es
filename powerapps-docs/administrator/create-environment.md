@@ -1,25 +1,18 @@
 ---
 title: Inicio rápido para crear un entorno | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo crear un entorno
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: a9138c636d70ea4701cbf685c3d7c7965c0e8469
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-create-an-environment"></a>Inicio rápido: Creación de un entorno
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirve como contenedor para separar aplicaciones que pueden tener otros roles, requisitos de seguridad o públicos de destino. PowerApps crea automáticamente un único entorno predeterminado para cada inquilino, que se comparte entre todos los usuarios de ese inquilino.

@@ -24,7 +24,7 @@
   items:
     - name: Comprar PowerApps
       href: signup-for-powerapps-admin.md
-    - name: Administración de licencias en la organización
+    - name: Administrar licencias de la organización
       href: signup-question-and-answer.md
     - name: Administración de directivas DLP
       href: prevent-data-loss.md
@@ -34,7 +34,7 @@
       href: environments-administration.md
     - name: Configurar la seguridad del entorno
       href: database-security.md
-    - name: Administración de aplicaciones en la organización
+    - name: Administrar aplicaciones de la organización
       href: admin-manage-apps.md
     - name: Mover una aplicación entre inquilinos o entornos
       href: environment-and-tenant-migration.md

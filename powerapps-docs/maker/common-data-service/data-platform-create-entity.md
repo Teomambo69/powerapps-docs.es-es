@@ -1,23 +1,18 @@
 ---
 title: Inicio rápido para crear una entidad personalizada | Microsoft Docs
 description: En este inicio rápido obtendrá información sobre cómo crear un entidad personalizada en PowerApps.
-services: ''
-suite: powerapps
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: quickstart
 ms.component: cds
+ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: 397fdea9f5257cf5a1062867d45a53d592a0909c
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 55ebd94fb0c895a64323e948d421c758c6af7cc8
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 En PowerApps, una *entidad* define la información de la que se quiere realizar el seguimiento en forma de registros, que suelen incluir propiedades como el nombre de la empresa, la ubicación, los productos, el correo electrónico y el teléfono. Después, se pueden mostrar esos datos si se desarrolla una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar listas para usar para abarcar los escenarios típicos de una organización (por ejemplo, el seguimiento de las citas), pero puede haber ocasiones en las que sea necesario crear entidades personalizadas para almacenar datos específicos de la organización.

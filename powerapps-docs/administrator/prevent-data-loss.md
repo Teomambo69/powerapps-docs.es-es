@@ -1,25 +1,18 @@
 ---
 title: Administración de directivas de prevención de pérdida de datos (DLP) | Microsoft Docs
 description: Tutorial sobre cómo administrar directivas de prevención de pérdida de datos para PowerApps.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f02e9023deb2bc0d11e9d94414f9e78651cab2b5
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 0215e013f6879ea8d04de8fe74e077c983370bff
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Administración de directivas de prevención de pérdida de datos (DLP)
 Los datos de una organización son fundamentales para su éxito. Los datos tienen que estar disponibles de inmediato para la toma de decisiones, pero tienen que protegerse de manera que no se compartan con personas que no deben tener acceso a ellos. Para proteger estos datos, PowerApps permite crear y aplicar directivas de prevención de pérdida de datos (DLP) que definen con qué conectores de consumidor se pueden compartir datos empresariales específicos. Por ejemplo, es posible que una organización que utiliza PowerApps no desee que los datos empresariales que se almacenan en SharePoint se publiquen automáticamente en su publicación de Twitter.

@@ -1,22 +1,18 @@
 ---
 title: Requisitos de licencia para entidades | Microsoft Docs
 description: Una descripción de los requisitos de licencia para las entidades en Common Data Service (CDS) for Apps.
-documentationcenter: na
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
+ms.topic: conceptual
 ms.date: 05/01/2018
 ms.author: clwesene
-ms.openlocfilehash: 7fc98e359b5daf1a170b63990005121fc2520d53
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 716e1c2b7e670d8a54e1106cd557bb509323ba8d
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
 Los creadores de aplicaciones pueden usar la mayoría de las entidades disponibles en Common Data Service (CDS) for Apps (incluidas las entidades personalizadas y las que forman parte de Common Data Service) para crear aplicaciones y flujos para los usuarios que solo tienen una licencia del Plan 1 de PowerApps o el Plan 1 de Microsoft Flow. En algunos casos, las entidades contienen lógica de negocios compleja o están asociadas a productos de Dynamics 365 que requieren que los usuarios de la aplicación tengan una licencia específica. Para obtener más información sobre los planes disponibles, vea la [página de precios de PowerApps](https://powerapps.microsoft.com/pricing).

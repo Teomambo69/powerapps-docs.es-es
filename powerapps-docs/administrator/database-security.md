@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 425600830a64652df7084a0222c02273a1607818
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
+ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="configure-environment-security"></a>Configurar la seguridad del entorno
 Common Data Service usa un modelo de seguridad basado en rol que ayuda a proteger el acceso a la base de datos. En este tema se explica cómo crear los artefactos de seguridad necesarios para ayudarle proteger una aplicación. Estos roles de usuario controlan el acceso en tiempo de ejecución a los datos y son independientes de los roles de entorno que rigen los administradores de entorno y los creadores de entorno. Para obtener información general acerca de los entornos, consulte [Environments overview](environments-overview.md) (Introducción a los entornos).
@@ -35,22 +35,30 @@ Para asignar un usuario o un grupo de seguridad a un rol de entorno, un Administ
 
 2. Haga clic en la pestaña **Seguridad**.
 
-3. Haga clic en el vínculo para administrar los roles de entorno en Dynamics 365.
+3. Compruebe si el usuario ya existe en el entorno. Para ello, seleccione la opción pertinente para **ver la lista de usuarios en el entorno**.
+    
+    ![](./media/database-security/security-viewuser.png)
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+4. Si el usuario no existe, puede agregarlo desde el centro de administración de PowerApps. Para ello, indique la dirección de correo electrónico del usuario en la organización y seleccione **Agregar usuario**.
 
-4. Seleccione el usuario de la lista de usuarios en el entorno.
+    ![](./media/database-security/security-adduser.png)
+
+    Espere unos minutos para ver si el usuario está disponible en la lista de usuarios del entorno.
+  
+5. Seleccione el usuario de la lista de usuarios en el entorno.
 
     ![](./media/environment-admin/D365-Select-User.png)
 
-5. Asigne el rol al usuario.
+6. Asigne el rol al usuario.
 
     ![](./media/environment-admin/D365-Assign-Role.png)
 
     > [!NOTE]
     > Actualmente, solo se pueden asignar roles a los usuarios. La asignación de un rol a un grupo de seguridad está en nuestro trabajo pendiente.
 
-6. Haga clic en **Aceptar** para actualizar las asignaciones al rol de entorno.
+7. Haga clic en **Aceptar** para actualizar las asignaciones al rol de entorno.
+
+
 
 
 ## <a name="predefined-security-roles"></a>Roles de seguridad predefinidos

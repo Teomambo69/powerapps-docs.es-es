@@ -1,25 +1,18 @@
 ---
 title: Inicio rápido para ejecutar aplicaciones en un explorador web | Microsoft Docs
 description: En este tutorial, obtendrá información sobre cómo ejecutar aplicaciones en un explorador web
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: 265061b8432bc33a8c60b1b268b52c49af4e65b1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Inicio rápido: Ejecución de una aplicación en un explorador web
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
