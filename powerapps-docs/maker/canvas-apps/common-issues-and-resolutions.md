@@ -1,27 +1,27 @@
 ---
 title: Problemas habituales de PowerApps y soluciones a los mismos | Microsoft Docs
 description: Lista de problemas y soluciones habituales de PowerApps.
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 05/03/2018
+ms.date: 05/10/2018
 ms.author: sharik
-ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 71e6d6977ff84ac8131acb9353f919c5ee80995b
+ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
-En este artículo se enumeran algunos de los problemas habituales que los usuarios pueden experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
+En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
 
 ## <a name="recently-addedchanged"></a>Agregado o cambiado recientemente
+1. **Inicio de un sitio web desde una aplicación insertada**
+
+    Los exploradores Internet Explorer y Microsoft Edge pueden bloquear una dirección URL o sitio web que esté en modo protegido o en una zona de seguridad más baja que el sitio web en el que se carga la aplicación. Para resolver este problema, [cambie la configuración de seguridad y privacidad](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings) de su explorador.
+
 1. **Controles de cuadro combinado en galerías**
 
     Cuando se usa un control de **cuadro combinado** en una galería, sus selecciones no se conservan cuando el usuario se va desplazando por la galería. Esto no ocurre si se usa un control de **cuadro combinado** en una galería que no permite el desplazamiento. En estos momentos no existe una solución alternativa.
