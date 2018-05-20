@@ -1,6 +1,6 @@
 - name: Introducción
-  href: 'get-started.yml#step-1'
+  href: get-started.yml?tutorial-step=1
 - name: Creación de una aplicación en SharePoint
-  href: 'create-app-sharepoint.yml#step-1'
+  href: create-app-sharepoint.yml?tutorial-step=1
 - name: Administración de aplicaciones
-  href: 'manage-apps.yml#step-1'
+  href: manage-apps.yml?tutorial-step=1
