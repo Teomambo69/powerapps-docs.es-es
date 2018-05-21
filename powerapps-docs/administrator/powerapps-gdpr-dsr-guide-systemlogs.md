@@ -1,26 +1,18 @@
 ---
-title: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps | Microsoft Docs
-description: Tutorial sobre cómo responder solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service (CDS) for Apps | Microsoft Docs
+description: Tutorial sobre cómo responder solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service (CDS) for Apps
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 970cf64f9312e1d9f820671d313ee497f3e27b61
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps
 Microsoft le ofrece la posibilidad de tener acceso, exportar y eliminar los registros generados por el sistema que se consideren personales en la amplia definición de *datos personales* del Reglamento general de protección de datos (RGDP) de la Unión Europea (UE). Ejemplos de registros generados por el sistema que se consideran personales en el RGPD:

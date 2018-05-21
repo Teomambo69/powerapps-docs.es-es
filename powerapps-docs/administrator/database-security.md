@@ -1,28 +1,21 @@
 ---
 title: Configuración de la seguridad del entorno | Microsoft Docs
 description: En este tema se explica cómo configurar la seguridad del entorno.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
-ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
+ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="configure-environment-security"></a>Configurar la seguridad del entorno
-Common Data Service usa un modelo de seguridad basado en rol que ayuda a proteger el acceso a la base de datos. En este tema se explica cómo crear los artefactos de seguridad necesarios para ayudarle proteger una aplicación. Estos roles de usuario controlan el acceso en tiempo de ejecución a los datos y son independientes de los roles de entorno que rigen los administradores de entorno y los creadores de entorno. Para obtener información general acerca de los entornos, consulte [Environments overview](environments-overview.md) (Introducción a los entornos).
+Common Data Service (CDS) for Apps usa un modelo de seguridad basado en rol que ayuda a proteger el acceso a la base de datos. En este tema se explica cómo crear los artefactos de seguridad necesarios para ayudarle proteger una aplicación. Estos roles de usuario controlan el acceso en tiempo de ejecución a los datos y son independientes de los roles de entorno que rigen los administradores de entorno y los creadores de entorno. Para obtener información general acerca de los entornos, consulte [Environments overview](environments-overview.md) (Introducción a los entornos).
 
 ## <a name="assign-security-roles-to-users"></a>Asignar roles de seguridad a los usuarios
 Los roles de seguridad controlan el acceso de un usuario a los datos a través de un conjunto de permisos y niveles de acceso. La combinación de niveles de acceso y permisos que se incluyen en un rol de seguridad específico establece los límites en la vista de los datos del usuario y en las interacciones del usuario con esos datos.
@@ -58,9 +51,6 @@ Para asignar un usuario o un grupo de seguridad a un rol de entorno, un Administ
 
 7. Haga clic en **Aceptar** para actualizar las asignaciones al rol de entorno.
 
-
-
-
 ## <a name="predefined-security-roles"></a>Roles de seguridad predefinidos
 En el entorno de PowerApps se incluyen los roles de seguridad predefinidos que reflejan las tareas comunes de usuario con niveles de acceso definidos para que coincidan con el objetivo de procedimiento recomendado de seguridad de proporcionar acceso a la cantidad mínima de datos empresariales necesarios para usar la aplicación.
 
@@ -77,7 +67,6 @@ En el entorno de PowerApps se incluyen los roles de seguridad predefinidos que r
 - El rol Creador de entorno no solo puede crear recursos dentro de un entorno, sino también distribuir las aplicaciones que cree en un entorno a otros usuarios de la organización. Pueden compartir la aplicación con usuarios individuales. Para más información, consulte [Compartir una aplicación en PowerApps](../maker/canvas-apps/share-app.md).
 
 - A los usuarios que crean aplicaciones que se conectan a la base de datos y que tienen que crear o actualizar entidades y roles de seguridad, también se les debe asignar rol Personalizador del sistema, junto con el rol Creador de entorno, dado que el rol Creador de entorno no tiene privilegios en la base de datos.
-
 
 ## <a name="create-or-configure-a-custom-security-role"></a>Crear o configurar un rol de seguridad personalizado
 Si la aplicación se basa en una entidad personalizada, se deben especificar los privilegios de forma explícita antes de que los usuarios puedan trabajar en ella. Para ello, se puede realizar una de las acciones siguientes:

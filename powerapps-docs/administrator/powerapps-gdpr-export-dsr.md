@@ -1,26 +1,18 @@
 ---
 title: Respuesta a las solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps | Microsoft Docs
-description: Tutorial de cómo responder las solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Tutorial de cómo responder las solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps.
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 97f5a6a970e07f9908c02074ef97234b58a52894
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1b9318bcf4624af48e6be95fd22c12c14bf75dff
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps
 El "derecho a la portabilidad de los datos" permite al interesado solicitar una copia de sus datos personales en formato electrónico (es decir, en un formato estructurado, comúnmente utilizado, legible por máquina e interoperable) que pueda ser transmitido a otro poseedor de los datos:

@@ -1,26 +1,18 @@
 ---
 title: Migración de aplicaciones entre entornos e inquilinos | Microsoft Docs
-description: Migrar aplicaciones entre entornos e inquilinos
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Tutorial sobre cómo migrar aplicaciones de PowerApps entre entornos e inquilinos
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
+ms-topic: conceptual
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/21/2018
+ms.component: pa-admin
+ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a63f525a44d1b617ba872dce7936fc97b151967
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migración de aplicaciones entre entornos e inquilinos mediante empaquetado
 Obtenga información sobre cómo migrar recursos de un entorno a otro mediante empaquetado. Estos entornos pueden estar en el mismo inquilino o en varios distintos.
@@ -96,36 +88,36 @@ La exportación de cualquier personalización de entidad o conjunto de opciones,
 
 1. En http://web.powerapps.com, seleccione el modo de diseño **Basado en modelos (versión preliminar)** en su entorno.
 
-  ![Seleccionar el modo de diseño Basado en modelos](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Seleccionar el modo de diseño Basado en modelos](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. Haga clic en **Opciones avanzadas** en la barra de navegación de la izquierda para iniciar el Explorador de soluciones para la solución predeterminada de este entorno.
 
-  ![Hacer clic en Opciones avanzadas](./media/environment-and-tenant-migration/select-advanced.png)
+    ![Hacer clic en Opciones avanzadas](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. Haga clic en **Exportar solución** y complete los pasos necesarios.  En cuestión de segundos se iniciará la descarga de un archivo de paquete de solución.
 
-  ![Seleccione Exportar](./media/environment-and-tenant-migration/select-export-solution.png)
+    ![Seleccione Exportar](./media/environment-and-tenant-migration/select-export-solution.png)
 
 ## <a name="importing-cds-customization-and-model-driven-apps"></a>Importación de personalizaciones de CDS y aplicaciones controladas por modelos
 Desafortunadamente, la importación de un paquete de solución de CDS requiere una solución alternativa manual en la experiencia, en la que estamos trabajando activamente para corregirla:
 
 1. En http://web.powerapps.com, seleccione el modo de diseño **Basado en modelos (versión preliminar)** en su entorno.
 
-  ![Seleccionar el modo de diseño Basado en modelos](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Seleccionar el modo de diseño Basado en modelos](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. Haga clic en **Opciones avanzadas** en la barra de navegación de la izquierda para iniciar el Explorador de soluciones para la solución predeterminada de este entorno.
 
-  ![Hacer clic en Opciones avanzadas](./media/environment-and-tenant-migration/select-advanced.png)
+    ![Hacer clic en Opciones avanzadas](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. Copie la dirección URL desde el explorador, realice los cambios siguientes y, después, vaya a la nueva dirección URL en el explorador:
 
-  - Estructura actual de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/edit.aspx?id={nombre_de_la_solución}
+    * Estructura actual de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/edit.aspx?id={nombre_de_la_solución}
 
-    ![Editar la dirección URL](./media/environment-and-tenant-migration/edit-url.png)
+        ![Editar la dirección URL](./media/environment-and-tenant-migration/edit-url.png)
 
-  - Estructura nueva de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * Estructura nueva de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-      ![Selección del paquete](./media/environment-and-tenant-migration/select-package.png)
+        ![Selección del paquete](./media/environment-and-tenant-migration/select-package.png)
 
 4. Seleccione el archivo de paquete de solución de CDS que quiera importar y complete el asistente.
 

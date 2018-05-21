@@ -1,26 +1,18 @@
 ---
-title: Compatibilidad con PowerShell | Microsoft Docs
-description: Descripción de los distintos cmdlets de PowerShell y un tutorial de cómo instalarlos y ejecutarlos
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: Compatibilidad con PowerShell (versión preliminar) | Microsoft Docs
+description: Descripción de los distintos cmdlets de PowerShell y un tutorial de cómo instalarlos y ejecutarlos.
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: reference
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 69508b2127c5c919db4a334045c6eed3bb9374af
-ms.sourcegitcommit: 0a781b50a8551f2e61c22725ef1c43ba4fdf752a
+ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>Compatibilidad con PowerShell para PowerApps (versión preliminar)
 Con el lanzamiento de la versión preliminar de los cmdlets de PowerShell para creadores y administradores de aplicaciones, puede automatizar muchas de las tareas de supervisión y administración que hoy solo son posibles manualmente en [PowerApps ](https://web.powerapps.com) o en el [Centro de administración de PowerApps](https://admin.powerapps.com).

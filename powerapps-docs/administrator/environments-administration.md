@@ -1,25 +1,18 @@
 ---
 title: Administración de entornos | Microsoft Docs
-description: Administrar entornos en PowerApps, incluida la creación, cambio de nombre, eliminación y seguridad
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Administración de entornos en PowerApps, incluida la creación, el cambio de nombre, la eliminación y la seguridad
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>Administrar entornos en PowerApps
 En el [Centro de administración de PowerApps][1], administre los entornos que ha creado y aquellos a los que se le ha agregado con el rol Administrador de entorno o Administrador del sistema. Desde el centro de administración, puede realizar estas acciones administrativas:

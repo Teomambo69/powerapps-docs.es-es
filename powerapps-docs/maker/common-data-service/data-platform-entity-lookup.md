@@ -1,29 +1,24 @@
 ---
-title: Inicio rápido para relaciones de entidad mediante un campo de búsqueda | Microsoft Docs
-description: Inicio rápido para crear una relación entre entidades mediante un campo de búsqueda.
-documentationcenter: na
+title: Creación de una relación entre entidades mediante un campo de búsqueda | Microsoft Docs
+description: Instrucciones paso a paso sobre cómo crear una relación entre entidades en PowerApps a través de un campo de búsqueda.
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-a-relationship"></a>Inicio rápido: Creación de una relación
+# <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, es posible que tenga las entidades **Profesores** y **Clase**, y es posible que la entidad **Clase** tenga una relación de búsqueda con la entidad **Profesores** para mostrar qué profesor imparte la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Esto se conoce normalmente como un campo de búsqueda.
 
 ## <a name="define-a-relationship"></a>Definir una relación
 Puede crear varios tipos de relaciones de una entidad a otra (o entre una entidad y ella misma). Cada entidad puede tener una relación con más de una entidad, y cada entidad puede tener más de una relación con otra entidad. Algunos tipos de relación comunes son:
-
 
 * **Varios a uno**: en este tipo de relación, cada registro de la entidad A se corresponde con más de un registro en la entidad B, pero cada registro de la entidad B solo se corresponde con un registro de la entidad A. Por ejemplo, una clase solo tiene un aula. Es el tipo de relación más común y se muestra en la lista de campos como un **Campo de búsqueda**
 * **Uno a varios**: en este tipo de relación, cada registro de la entidad B se puede corresponder con más de un registro en la entidad A, pero cada registro de la entidad A solo se corresponde con un registro de la entidad B. Por ejemplo, un mismo profesor imparte muchas clases.

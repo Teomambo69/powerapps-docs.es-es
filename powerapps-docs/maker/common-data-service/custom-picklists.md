@@ -1,24 +1,20 @@
 ---
-title: Inicio rápido para crear un conjunto de opciones | Microsoft Docs
-description: En este tutorial, creará un conjunto de opciones
-documentationcenter: na
+title: Creación de un conjunto de opciones | Microsoft Docs
+description: Instrucciones paso a paso sobre cómo crear un conjunto de opciones.
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e31bec33a90a962e302e2bc92c0f2a676ce1a4cc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-an-option-set"></a>Inicio rápido: Creación de un conjunto de opciones
+# <a name="create-an-option-set"></a>Creación de un conjunto de opciones
 
 Los conjuntos de opciones permiten incluir listas desplegables de valores fijos para un usuario de la aplicación para garantizar la coherencia de los datos, lo que en otras aplicaciones a veces se denominan listas desplegables o campos de elección. Al igual que las entidades, existe la posibilidad de usar conjuntos de opciones estándar o crear conjuntos de opciones personalizados para usarlos en una aplicación.
 

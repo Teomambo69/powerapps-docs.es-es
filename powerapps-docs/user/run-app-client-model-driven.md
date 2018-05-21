@@ -1,25 +1,18 @@
 ---
-title: Ejecución de una aplicación controlada por modelos en un dispositivo móvil con PowerApps | Microsoft Docs
-description: Tutorial sobre cómo ejecutar una aplicación controlada por modelos en un dispositivo móvil
-services: ''
-suite: powerapps
-documentationcenter: na
+title: Inicio rápido para ejecutar una aplicación controlada por modelos en un dispositivo móvil con PowerApps | Microsoft Docs
+description: En este inicio rápido aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil.
 author: Mattp123
-manager: brycho
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 5556739d0a067e9475cd253efdf733ae91218719
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación controlada por modelos en un dispositivo móvil
 

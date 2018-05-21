@@ -1,22 +1,18 @@
 ---
 title: Administración de campos personalizados en una entidad | Microsoft Docs
-description: Tutorial sobre cómo crear, leer, actualizar y eliminar los campos personalizados de una entidad en CDS for Apps.
-documentationcenter: na
+description: Tutorial sobre cómo crear, leer, actualizar y eliminar los campos personalizados de una entidad en Common Data Service (CDS) for Apps.
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
 ms.component: cds
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: ff522ee5d5614888c6cc0fcfb1e7d6658a36c6ae
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: a4ec386ef6a7eee02c2ac608bb6e00ed9ee39c19
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>Administración de campos personalizados en una entidad
 En todas las entidades se pueden crear y actualizar uno o varios campos. Al crear un campo personalizado, especifica un conjunto de propiedades, como el nombre del campo, el nombre para mostrar y el tipo de datos que va a contener. Para obtener más información, vea [Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (Metadatos de atributo de entidad).

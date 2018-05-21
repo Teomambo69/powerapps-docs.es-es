@@ -1,28 +1,21 @@
 ---
-title: Administración de licencias en la organización | Microsoft Docs
+title: Administración de licencias de la organización | Microsoft Docs
 description: Preguntas y respuestas frecuentes acerca de las licencias, la administración y el registro de usuarios a PowerApps en su inquilino de Office 365
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 8a734ef57a3820e38d52ad2bd87a2ab8979c0348
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="manage-licenses-in-my-org"></a>Administración de licencias en la organización
-En este tema se describe la forma en que los usuarios de la organización pueden obtener acceso para usar PowerApps y cómo controlar el servicio de PowerApps.
+# <a name="manage-powerapps-licenses-in-your-organization"></a>Administración de licencias de PowerApps de la organización
+En este artículo se describe la forma en que los usuarios de la organización pueden obtener acceso para usar PowerApps y cómo controlar el servicio de PowerApps.
 
 ## <a name="sign-up-for-powerapps"></a>Suscribirse a PowerApps
 ### <a name="what-is-powerapps"></a>¿Qué es PowerApps?

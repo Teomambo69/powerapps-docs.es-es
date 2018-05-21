@@ -1,24 +1,18 @@
 ---
 title: Exportación e importación de recursos | Microsoft Docs
-description: Exportar e importar recursos
-services: powerapps
-documentationcenter: na
+description: Exportación e importación de recursos en PowerApps
 author: nimakms
-manager: kfend
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 07/28/2017
-ms.author: kfend
-ms.openlocfilehash: c1788d4119d9b4efbeabe8d6fa4fa45f293c2a9d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: nimak
+ms.openlocfilehash: 752bea42eee356e04c2ab72d28a669ccd2771f70
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="export-and-import-resources"></a>Exportar e importar recursos
 Si ha creado varios entornos para admitir el desarrollo de la base de datos y las aplicaciones, debe mover los cambios de un entorno a otro. Puede usar **Exportar recursos** e **Importar recursos** para mover recursos entre entornos.
