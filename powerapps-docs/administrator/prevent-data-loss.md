@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0215e013f6879ea8d04de8fe74e077c983370bff
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 158abc3969090e081df41b6b52036d71b6949150
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Administración de directivas de prevención de pérdida de datos (DLP)
 Los datos de una organización son fundamentales para su éxito. Los datos tienen que estar disponibles de inmediato para la toma de decisiones, pero tienen que protegerse de manera que no se compartan con personas que no deben tener acceso a ellos. Para proteger estos datos, PowerApps permite crear y aplicar directivas de prevención de pérdida de datos (DLP) que definen con qué conectores de consumidor se pueden compartir datos empresariales específicos. Por ejemplo, es posible que una organización que utiliza PowerApps no desee que los datos empresariales que se almacenan en SharePoint se publiquen automáticamente en su publicación de Twitter.
@@ -22,7 +22,7 @@ Para crear, editar o eliminar directivas DLP, debe tener los permisos Administra
 Para obtener instrucciones sobre cómo crear una directiva DLP, vea [Quickstart: Create a data loss prevention (DLP) policy](create-dlp-policy.md) (Inicio rápido: Creación de una directiva de prevención de pérdida de datos [DLP]).
 
 ## <a name="find-a-dlp-policy"></a>Buscar una directiva DLP
-1. Inicie sesión en el Centro de administración en [https://admin.poweraps.com]([https://admin.powerapps.com).
+1. Inicie sesión en el Centro de administración en [https://admin.powerapps.com]([https://admin.powerapps.com).
 2. En el panel de navegación, pulse o haga clic en **Directivas de datos**. Si tiene una lista larga de directivas, use el cuadro **Buscar** cuadro para buscar directivas DLP específicas.
 
     ![](./media/prevent-data-loss/data-policies.png)
