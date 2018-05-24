@@ -12,21 +12,21 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: 3a9696a025608de3c142277da4059e7e8c5ec5ad
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: dfef87d9c85de3a8311081c3b99eaa9d072dc444
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>Guía de inicio rápido: Creación de su primera aplicación controlada por modelos desde cero
 El diseño de aplicaciones controladas por modelos es un enfoque de componentes centrado en el desarrollo de aplicaciones. En esta guía de inicio rápido, va a simplificar la creación de una aplicación controlada por modelos mediante una de las entidades estándar disponibles en el entorno [!INCLUDE [powerapps](../../includes/powerapps.md)]. 
 
 ## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
-Inicie sesión en [PowerApps](https://web.powerapps.microsoft.com/). Si todavía no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], haga clic en el vínculo **Inicio gratuito**. 
+Inicie sesión en [PowerApps](https://web.powerapps.com/). Si todavía no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], haga clic en el vínculo **Inicio gratuito**. 
 
 ## <a name="create-your-model-driven-app"></a>Creación de la aplicación controlada por modelos
 
-1.  Seleccione el entorno que desee, o bien, vaya al [Centro de administración de PowerApps](https://admin.powerapps.microsoft.com/) para crear uno.
+1.  Seleccione el entorno que desee, o bien, vaya al [Centro de administración de PowerApps](https://admin.powerapps.com/) para crear uno.
 2.  En el panel de navegación de la izquierda, seleccione **Basado en modelos**. 
 
     ![Controlado por modelos](media/build-first-model-driven-app/choose-design-mode.png)
