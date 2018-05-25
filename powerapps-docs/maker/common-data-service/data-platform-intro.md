@@ -8,11 +8,11 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: a2dea7da0cc87ad016d5eff6e04b9e03e66341db
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: fb079689ef76e4ad7815b8410ecff4a475877810
+ms.sourcegitcommit: ba587b467044161d1dbcd73625b37aa52b057270
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>¿Qué es Common Data Service for Apps?
 Common Data Service (CDS) for Apps permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Los datos de CDS for Apps se almacenan en un conjunto de entidades. Una *entidad* es un conjunto de campos que se usan para almacenar datos, de forma similar a como lo hace una tabla en una base de datos. CDS for Apps incluye un conjunto básico de entidades estándar que cubre los escenarios típicos, pero también se pueden crear entidades personalizadas específicas para la organización y rellenarlas con datos con Power Query. Después, los creadores de aplicaciones pueden usar PowerApps para crear aplicaciones completas con estos datos.
@@ -34,7 +34,7 @@ Al desarrollar una aplicación, puede usar entidades estándar, entidades person
 
 ![Captura de pantalla en la que se muestra una lista de entidades.](./media/data-platform-cds-intro/entitylist.png "Lista de entidades")
 
-Para obtener una lista completa de entidades, vea [Entity reference](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/reference/about-entity-reference) (Referencia de entidades).
+Para obtener una lista completa de entidades, vea [Entity reference](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/about-entity-reference) (Referencia de entidades).
 
 Puede ampliar la funcionalidad de entidades estándar mediante la creación de una o varias entidades personalizadas para almacenar información exclusiva de su organización. Para más información, consulte [Crear una entidad personalizada](create-custom-entity.md).
 
