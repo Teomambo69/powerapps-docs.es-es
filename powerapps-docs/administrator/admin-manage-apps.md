@@ -1,18 +1,17 @@
 ---
 title: Administración de las aplicaciones creadas en la organización | Microsoft Docs
 description: Tutorial sobre cómo administrar aplicaciones de PowerApps creadas en la organización
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: 32ac9582ef9319d1e48c309a700707a11fc455c0
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: 8ef92fec0245bbe27529be0acb214cad7d2b928e
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Administración de las aplicaciones creadas en la organización
 Si es un Administrador de entorno, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory, puede administrar las aplicaciones creadas en la organización.

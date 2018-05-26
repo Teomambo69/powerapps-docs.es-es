@@ -1,18 +1,17 @@
 ---
 title: Inicio rápido para ejecutar una aplicación basada en lienzo en un dispositivo móvil | Microsoft Docs
 description: En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil.
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: e18035a999334cc9fdd5bea279e7f3ce501d5bb6
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: 55fd0bb164fcbb552db68fb89d77c7a7d0807cdc
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.

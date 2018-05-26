@@ -1,18 +1,17 @@
 ---
 title: Inicio rápido para crear una directiva de prevención de pérdida de datos (DLP) | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo crear una directiva de prevención de pérdida de datos (DLP) en PowerApps
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: sharik
-ms.openlocfilehash: 1a82b09c3a8b4463f6739222abb9e8ff516dcd18
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>Inicio rápido: Creación de una directiva de prevención de pérdida de datos (DLP)
 Para proteger los datos de la organización, PowerApps permite crear y aplicar directivas que definen con qué conectores de consumidor se pueden compartir datos empresariales específicos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP). Las directivas DLP garantizan que los datos se administran de manera uniforme en toda la organización e impiden que los datos empresariales importantes se publiquen accidentalmente a conectores como sitios de redes sociales.

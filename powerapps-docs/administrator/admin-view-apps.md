@@ -1,18 +1,17 @@
 ---
 title: Inicio rápido para descargar una lista de aplicaciones creadas en los entornos | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo descargar una lista de aplicaciones creadas en los entornos.
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: a51e6b0cb8e9af517d55f7bad39fbe83a1a55098
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: d9c379ca95bb299c56639bb01803f45c1744d8f2
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>Inicio rápido: Descarga de una lista de aplicaciones creadas en los entornos
 Si es un Administrador de entorno, puede ver y descargar una lista de aplicaciones creadas en los entornos que está administrando. Si es un Administrador global de Office 365 o de inquilinos de Azure Active Directory, puede ver y descargar la lista de aplicaciones creadas en todos los entornos de la organización.
