@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
+ms.sourcegitcommit: 8cc8d165c10644e02009011b66bc174c169c3b05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Instalar y configurar el ejemplo Help Desk de PowerApps
 
@@ -24,29 +24,29 @@ Instrucciones paso a paso para instalar y configurar el ejemplo Help Desk de Pow
 
 Tiempo estimado para completar estos pasos: **10-15 minutos**
 
-En el vídeo siguiente puede ver una demostración de este proceso.
+> [!TIP]
+> En este [vídeo](https://youtu.be/z4cdtD6hB_4) puede ver una demostración de este proceso.
 
-[![Vídeo sobre la instalación de Help Desk](./media/help-desk-install/help-desk-install-video.png)](https://youtu.be/z4cdtD6hB_4 )
 
 ## <a name="help-desk-powerapps-sample-overview"></a>Información general sobre el ejemplo Help Desk de PowerApps
 Help Desk proporciona una experiencia muy intuitiva para poner en contacto a los usuarios finales con profesionales de soporte técnico. Obtenga respuestas con rapidez a sus dudas más importantes, mantenga un seguimiento del progreso de las incidencias abiertas y revise los detalles de solicitudes anteriores. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial de la aplicación Help Desk de PowerApps](./media/help-desk-install/Login-screen.png)
 
-Vea este vídeo para aprender a usar el ejemplo de Help Desk de PowerApps.
-
-[![Vídeo de demostración de Help Desk](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
+> [!TIP]
+> Vea este [vídeo](https://youtu.be/sl5fXwwnvzI) para aprender a usar el ejemplo de Help Desk de PowerApps.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Inicie sesión](https://web.powerapps.com/) en PowerApps.
+- Debe tener una licencia de SharePoint Online válida y permiso para crear listas.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Crear la lista de SharePoint de Help Desk
 
 Esta lista almacena los vales del servicio Help Desk.
 
 1. Abra un explorador web y vaya a https://portal.office.com.
-2. Inicie sesión con una cuenta que tenga permiso para crear listas.
+2. Inicie sesión con una cuenta que tenga permiso para crear listas de SharePoint.
 3. Desplácese a la colección de sitios en la que quiera alojar la lista de Help Desk.
 4. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
 5. Haga clic en **Agregar una aplicación**.
@@ -62,12 +62,13 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ### <a name="create-description-column"></a>Crear una columna de descripción
 
-1. Haga clic en **Crear columna**.
-2. En el cuadro de texto **Nombre de columna**, escriba **Descripción**.
-3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Varias líneas de texto**.
-4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **Sí**.
-5. En la lista de botones de radio **Especificar el tipo de texto que se permite**, seleccione **Texto sin formato**.
-6. Haga clic en **Aceptar**.
+1. Seleccione los puntos suspensivos junto a la lista de HelpDesk y haga clic en **Configuración**.
+2. Haga clic en **Crear columna**.
+3. En el cuadro de texto **Nombre de columna**, escriba **Descripción**.
+4. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Varias líneas de texto**.
+5. En la lista de botones de radio **Esta columna debe contener información**, seleccione **Sí**.
+6. En la lista de botones de radio **Especificar el tipo de texto que se permite**, seleccione **Texto sin formato**.
+7. Haga clic en **Aceptar**.
 
 ### <a name="create-category-column"></a>Crear una columna de categoría
 
@@ -137,14 +138,13 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="download-the-help-desk-powerapp"></a>Descargar la aplicación Help Desk de PowerApps
 
-1.  En un explorador web, vaya a http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip.
-2.  Descargue el paquete PowerApps y guárdelo en su equipo.
+1.  [Descargue](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 
 1.  En un explorador web, vaya a https://web.powerapps.com.
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
-3.  En el menú de la izquierda, seleccione **Conexiones**.
+3.  En el menú de la izquierda, seleccione **Datos** y luego **Conexiones**.
     
 ### <a name="create-office-365-outlook-connection"></a>Crear una conexión de Outlook de Office 365
 
@@ -157,7 +157,7 @@ Esta lista almacena los vales del servicio Help Desk.
 ### <a name="create-sharepoint-connection"></a>Crear una conexión de SharePoint
 
 1.  Haga clic en **+ Nueva conexión**.
-2.  En el cuadro de búsqueda **Buscar**, escriba **Outlook**.
+2.  En el cuadro de texto **Buscar**, escriba **SharePoint**.
 3.  Seleccione **SharePoint** en la lista.
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
@@ -209,16 +209,14 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>Configurar la aplicación de PowerApps para usar la lista de SharePoint
 
-1. En el explorador web, haga clic en **Aplicaciones**.
-2. Haga clic en los **puntos suspensivos** junto a la aplicación Help Desk de PowerApps.
-3. Haga clic en **Editar en la Web**.
-4. Haga clic en **Permitir**.
+1. En Pasos siguientes, haga clic en **Abrir aplicación**.
+2. Haga clic en **Permitir** cuando se le solicite permiso.
 
 ### <a name="delete-connections"></a>Eliminar conexiones
 
 1. Haga clic en **Ver**.
 2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en los **puntos suspensivos** junto a **HelpDesk**.
+3. En el panel **Datos**, haga clic en los **puntos suspensivos** junto a la conexión de SharePoint **HelpDesk**.
 4. Haga clic en **Quitar**.
 
 ### <a name="helpdesk-list"></a>Lista de Help Desk
@@ -274,7 +272,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 7.  Expanda **Cambiar**.
 8.  Expanda la caja **SIN INICIAR**.
-9.  Expanda la acción **Enviar un correo electrónico**.
+9.  Expanda la acción **Caso no iniciado**.
 10. Cambie el campo **Para** de modo que coincida con la dirección de correo electrónico del administrador de Help Desk.
 
     ![Pantalla Editar flujo](./media/help-desk-install/edit-flow-condition-send-email.png) 
@@ -287,11 +285,11 @@ Esta lista almacena los vales del servicio Help Desk.
 2. Haga clic en los **puntos suspensivos** junto a la aplicación Help Desk de PowerApps.
 3. Haga clic en **Abrir**. 
 
-Vea este vídeo para aprender a usar el ejemplo de Help Desk de PowerApps.
+> [!TIP]
+> Vea este [vídeo](https://youtu.be/sl5fXwwnvzI) para aprender a usar el ejemplo de Help Desk de PowerApps.
 
-[![Vídeo de demostración de Help Desk](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
 
-##<a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 - [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [Agregar y configurar un control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

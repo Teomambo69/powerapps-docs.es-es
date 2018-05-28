@@ -5,16 +5,26 @@ author: AFTOwen
 ms.service: powerapps
 ms.topic: tutorial
 ms.component: canvas
-ms.date: 04/24/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
-En este tutorial, podrá personalizar la galería y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización:
+En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
+
+Por ejemplo, la galería para este tutorial coincide con este gráfico de forma predeterminada. La dirección de correo electrónico destaca más que otros tipos de datos, y los usuarios pueden ordenar y filtrar la galería en base a texto en dicha dirección:
+
+![Galería predeterminada](./media/customize-layout-sharepoint/gallery-before.png)
+
+Sin embargo, los usuarios podrían estar más interesados en el nombre de cuenta más que en la dirección de correo electrónico, por lo que deberá volver a configurar la galería para que resalte, ordene y filtre en función de los datos clave de su organización. Además, podrá cambiar el título de la pantalla predeterminada para diferenciarlo de las otras pantallas en la aplicación.
+
+![Galería final](./media/customize-layout-sharepoint/gallery-after.png)
+
+También agregará una barra de desplazamiento para que los usuarios que no tienen pantallas táctiles o ruedas de mouse puedan examinar toda la galería.
 
 > [!div class="checklist"]
 > * Cambio del diseño de la galería
@@ -23,9 +33,9 @@ En este tutorial, podrá personalizar la galería y realizar otros cambios en un
 > * Cambio del título de pantalla
 > * Mostrar una barra de desplazamiento
 
-Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Sin embargo, se aplican los mismos conceptos a cualquier aplicación que se genere en PowerApps desde una lista de SharePoint, una tabla de Excel u otro origen de datos. 
+Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Pero se aplican los mismos conceptos a cualquier aplicación que se genere en PowerApps, sea desde una lista de SharePoint, una tabla de Excel o cualquier otro origen de datos.
 
-Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
+Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 [Generar una aplicación](data-platform-create-app.md) desde la entidad **Cuentas** de Common Data Service (CDS) for Apps.
@@ -38,6 +48,8 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos (**...** ) y, a continuación, seleccione **Editar**.
 
     ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
+
+1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
 ## <a name="change-the-layout"></a>Cambiar el diseño
 1. En el panel de navegación izquierdo, seleccione **BrowseGallery1**.
@@ -58,9 +70,11 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
     ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. En el panel **Datos**, abra la lista de opciones de **Title2**.
+1. En el panel **Datos**, abra la lista de opciones para el título.
 
-    ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/show-title-options.png)
+    El nombre de este control finalizará en un valor numérico, como **Título1**, pero el número puede diferir en función de otras acciones que haya realizado.
+
+    ![Abrir la lista de opciones para la etiqueta de título](./media/customize-layout-sharepoint/show-title-options.png)
 
 1. En la lista de opciones, seleccione **Account name (name)** (Nombre de cuenta [cuenta]) y, a continuación, cierre el panel **Datos**.
 
