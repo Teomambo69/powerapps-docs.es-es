@@ -10,10 +10,11 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
 ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168306"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Adición de datos a una entidad en Common Data Service para aplicaciones mediante Power Query
 En este procedimiento, creará una entidad en [Common Data Service (CDS) for Apps](data-platform-intro.md) y la rellenará con datos de una fuente OData mediante Power Query. Puede usar las mismas técnicas para integrar datos de estos orígenes en línea y locales, entre otros:

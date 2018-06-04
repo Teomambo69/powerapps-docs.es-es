@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168490"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Crear una base de datos de Common Data Service para aplicaciones
 Puede crear una base de datos y compilar aplicaciones mediante el uso de Common Data Service (CDS) para aplicaciones como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como **Administrador de entorno**. Además, debe tener asignada la licencia adecuada. Para obtener más información sobre la compra de un plan para utilizar CDS for Apps, consulte la [información sobre los precios](pricing-billing-skus.md).

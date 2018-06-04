@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
 ms.openlocfilehash: b89d7a59406d19759b84c34dbda84b98b10d5e58
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445738"
 ---
 # <a name="troubleshooting-power-query"></a>Solución de problemas de Power Query
 Cuando usa Power Query para crear una entidad personalizada que contiene datos de orígenes externos, puede aparecer este error:

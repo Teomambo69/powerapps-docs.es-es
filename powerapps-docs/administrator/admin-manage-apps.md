@@ -8,10 +8,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jimh
 ms.openlocfilehash: 8ef92fec0245bbe27529be0acb214cad7d2b928e
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552562"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Administración de las aplicaciones creadas en la organización
 Si es un Administrador de entorno, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory, puede administrar las aplicaciones creadas en la organización.

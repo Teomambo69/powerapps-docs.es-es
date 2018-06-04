@@ -8,10 +8,11 @@ ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
 ms.openlocfilehash: 66c96f7496266e03491e404de2bb329f82b6a2bf
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552930"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 En PowerApps, una *entidad* define la información de la que se quiere realizar el seguimiento en forma de registros, que suelen incluir propiedades como el nombre de la empresa, la ubicación, los productos, el correo electrónico y el teléfono. Después, se pueden mostrar esos datos si se desarrolla una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar listas para usar para abarcar los escenarios típicos de una organización (por ejemplo, el seguimiento de las citas), pero puede haber ocasiones en las que sea necesario crear entidades personalizadas para almacenar datos específicos de la organización.
