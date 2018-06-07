@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837134"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funciones EndsWith y StartsWith en PowerApps
 Comprueba si una cadena de texto comienza o termina con otra cadena de texto.

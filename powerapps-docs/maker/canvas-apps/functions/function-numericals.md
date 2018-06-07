@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829519"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
 ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829057"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funciones Average, Max, Min, StdevP, Sum y VarP de PowerApps
 Funciones de agregado que resumen un conjunto de números.

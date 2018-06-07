@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 9631d197824b516f90d493c9db4aee75f3f7ce0d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837358"
 ---
 # <a name="core-properties-in-powerapps"></a>Propiedades principales en PowerApps
 Configure la posibilidad de que el usuario puede ver un control e interactuar con él.

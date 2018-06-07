@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/06/2018
 ms.author: lanced
 ms.openlocfilehash: 44ee7b992f5817a5d6b8d791b05e1db671d3e6ba
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826991"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>Adición de una conexión de datos en PowerApps
 En PowerApps, añada una conexión de datos a una aplicación existente o a una que se cree desde cero. La aplicación puede conectarse a SharePoint, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
@@ -35,7 +36,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
     ![Crear una aplicación desde cero](./media/add-data-connection/blank-app-tile.png)
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
+1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
 3. En el panel central, pulse o haga clic en **conectar a datos**.
 

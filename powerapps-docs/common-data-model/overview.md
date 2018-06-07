@@ -1,21 +1,17 @@
 ---
 title: Introducción a Common Data Service | Microsoft Docs
 description: Obtenga información sobre cómo Common Data Service conecta Common Data Service for Apps con Common Data Service for Analytics.
-documentationcenter: na
 author: RobertBruckner
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
 ms.date: 03/14/2018
 ms.author: jdaly
-ms.openlocfilehash: ed7a1bfd7e3d3439cdcf2f20d1026c69a9abce4d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803259"
 ---
 # <a name="common-data-model-overview"></a>Introducción a Common Data Service
 

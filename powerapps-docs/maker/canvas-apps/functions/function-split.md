@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
 ms.openlocfilehash: 3cb894d044a1e6ac02234bc1fa4c5b9239959015
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830679"
 ---
 # <a name="split-function-in-powerapps"></a>Función Split en PowerApps
 Divide una cadena de texto en una tabla de subcadenas.

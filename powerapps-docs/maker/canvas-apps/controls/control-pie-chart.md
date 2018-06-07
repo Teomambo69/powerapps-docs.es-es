@@ -1,25 +1,23 @@
 ---
 title: 'Control Gráfico circular: referencia | Microsoft Docs'
 description: Información sobre el control de gráficos circulares, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31833686"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Control de gráficos circulares en PowerApps
 Control que muestra valores relativos comparados entre ellos.
@@ -104,7 +102,8 @@ Debe haber un contraste de color adecuado entre:
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * Debe haber un control **[Etiqueta](control-text-box.md)** inmediatamente delante del gráfico para que sirva de título.
-> [!NOTE]
+
+    > [!NOTE]
 > Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual
@@ -114,5 +113,6 @@ Debe haber un contraste de color adecuado entre:
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
-> [!NOTE]
+
+    > [!NOTE]
 > Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.

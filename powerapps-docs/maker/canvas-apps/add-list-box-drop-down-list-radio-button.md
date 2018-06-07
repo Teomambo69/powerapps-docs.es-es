@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
 ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825565"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Adición de un cuadro de lista, una lista desplegable o botones de selección
 PowerApps incluye opciones de selección múltiple y de selección única, como un cuadro de lista, una lista desplegable y botones de selección. En este tema, añadiremos estos controles y usaremos una fórmula de **Tabla** para crear las listas. Cuando se selecciona un elemento de la lista, se actualizan otros controles.

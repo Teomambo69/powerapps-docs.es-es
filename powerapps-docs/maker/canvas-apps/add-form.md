@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
 ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826278"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Mostrar, editar o agregar un registro de una tabla en PowerApps
 Para mostrar todos los campos de un registro, agregue y configure un control **[Formulario de presentación](controls/control-form-detail.md)**. Para editar cualquier campo de un registro (o para agregar un registro) y guardar los cambios en un origen de datos, agregue y configure un control **[Edit form](controls/control-form-detail.md)**.

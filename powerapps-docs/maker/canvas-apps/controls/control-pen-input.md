@@ -1,25 +1,23 @@
 ---
 title: 'Control Entrada manuscrita: referencia | Microsoft Docs'
 description: Información sobre el control Entrada manuscrita, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832180"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Control Entrada manuscrita en PowerApps
 Control con el que el usuario puede dibujar, borrar y resaltar áreas de una imagen.
@@ -101,9 +99,11 @@ Debe haber un contraste de color adecuado entre:
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe existir.
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > El control **Entrada manuscrita** no es accesible para los usuarios de lector de pantalla. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere un boceto, considere la posibilidad de agregar un control **[Agregar imagen](control-add-picture.md)**  para que los usuarios carguen una imagen. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
+
 > [!IMPORTANT]
 > **Entrada manuscrita** no es accesible para los usuarios de teclado. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere una firma, podría agregar un control **[Entrada de texto](control-text-input.md)** para que los usuarios escriban su nombre. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.

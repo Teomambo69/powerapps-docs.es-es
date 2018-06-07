@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: lonu
 ms.openlocfilehash: fd7b418de7a78220dfc1019c923749fb8e6ddf5c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825335"
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>Agregar una pantalla de desplazamiento en PowerApps
 Cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, es posible que quiera crear una aplicación en la que los datos aparezcan en un gráfico de columnas y en un gráfico de líneas. Si agrega una pantalla de desplazamiento, podrá incorporar diferentes controles que los usuarios podrán ver al desplazarse.
