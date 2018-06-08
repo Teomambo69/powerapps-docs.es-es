@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 01/09/18
 ms.author: mblythe
 ms.openlocfilehash: 2a3bb307d403d372d0cae89a0eb9d3fd86271768
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31835895"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
 > [!NOTE]

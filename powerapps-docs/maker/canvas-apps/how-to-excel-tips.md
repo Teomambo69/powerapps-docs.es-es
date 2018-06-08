@@ -1,25 +1,23 @@
 ---
 title: Formato de tablas en Excel | Microsoft Docs
 description: Para poder utilizar datos de Excel, es necesario dar formato a esos datos en una tabla. Agregar palabra clave "imagen" en los nombres de columna
-services: ''
-suite: powerapps
 documentationcenter: na
 author: yifwang
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: 69e46e1e55b3f1dd4b1e0df20ef274a56e657809
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: fd458fe6c8962bbc4443c1de7aad0f1c4eea7fac
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826637"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Dar formato a una tabla en Excel y sugerencias de nomenclatura
 Para utilizar datos de Excel en PowerApps, primero es necesario dar formato de tabla a esos datos. En este artículo se muestra cómo dar formato a una tabla en Excel y se ofrecen algunas sugerencias de asignación de nombres de columnas de Excel.

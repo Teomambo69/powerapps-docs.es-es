@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
 ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330684"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
 Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:

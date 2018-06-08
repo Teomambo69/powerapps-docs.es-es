@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
 ms.openlocfilehash: 5bf57ec96569751b3db656abdf04cebb1e13133a
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329856"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>Requisitos del sistema, límites y valores de configuración
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.

@@ -1,25 +1,23 @@
 ---
 title: 'Control Icono de Power BI: referencia | Microsoft Docs'
 description: Información sobre el control Icono de Power BI, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: a760dd47cfe703cdf829037d0090c99fc215831e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e7bc2e7e0aafa4d933c47bcf47300dc243c38523
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827152"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 Control que muestra un icono de [Power BI ](https://powerbi.microsoft.com) dentro de una aplicación.

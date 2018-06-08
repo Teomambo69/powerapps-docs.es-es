@@ -1,25 +1,23 @@
 ---
 title: 'Control Pantalla: referencia | Microsoft Docs'
 description: Información sobre el control Pantalla, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831432"
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.
@@ -83,5 +81,6 @@ Además de texto, podría también comprobar el contraste de color con objetos g
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * Debe haber un nombre significativo para cada **pantalla**. El nombre de la pantalla se puede ver y editar de la misma manera que otros controles: en la vista de árbol del panel de controles o en el encabezado del panel de propiedades.
-> [!NOTE]
+
+    > [!NOTE]
 > Cuando se carga una nueva **pantalla**, los lectores de pantalla anunciarán su nombre. 

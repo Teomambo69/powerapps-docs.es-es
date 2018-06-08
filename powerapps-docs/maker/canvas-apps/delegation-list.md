@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 08/15/2017
 ms.author: archanan
 ms.openlocfilehash: 87f1895801ec7d1121b042d6baf097b79801f019
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830245"
 ---
 # <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Tal como se describe en detalle en el artículo [Descripción de delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación para procesarlos localmente.

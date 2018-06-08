@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/01/2017
 ms.author: fikaradz
 ms.openlocfilehash: 466e0d9cb1acfe4cfeb72256db2deddfd3466e19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834199"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Mostrar elementos de alturas diferentes en una galería de PowerApps
 Si diferentes elementos del conjunto de datos contienen diferentes cantidades de datos en el mismo campo, puede mostrar por completo los elementos que contienen más datos sin tener que agregar espacio vacío después de los elementos que contienen menos datos. Agregue y configure un control de galería **Altura flexible** para que pueda:

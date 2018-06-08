@@ -1,22 +1,18 @@
 ---
 title: Conexión a Oracle Database | Microsoft Docs
 description: Aprenda a conectarse a Oracle Database y a utilizarlo para compilar aplicaciones en PowerApps.
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 04/14/2017
 ms.author: lanced
-ms.openlocfilehash: 83e5bdbb3dd08947f22f0be7ccf7ca5e55aac451
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 2b2a9c26c8187810f5253562a731384293ae5796
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803360"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Conectarse a una instancia de Oracle Database desde PowerApps
 Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instancia de Oracle Database después de crear una conexión y compilar una aplicación en PowerApps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.

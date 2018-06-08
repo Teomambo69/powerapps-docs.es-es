@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 1f4df70ce3274c4d83c39955df58ebc344038de3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832722"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>Funciones Quitar y RemoveIf en PowerApps
 Quita [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).

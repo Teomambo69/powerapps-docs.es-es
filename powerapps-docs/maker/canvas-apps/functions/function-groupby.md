@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837973"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones AgruparPor y Desagrupar en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).

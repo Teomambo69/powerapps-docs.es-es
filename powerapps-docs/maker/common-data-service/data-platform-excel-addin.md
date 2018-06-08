@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
 ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445906"
 ---
 # <a name="open-entity-data-in-excel"></a>Abrir los datos de la entidad en Excel
 Al abrir los datos de la entidad en Microsoft Excel, estos se pueden ver y editar de forma rápida y sencilla mediante el complemento de Excel de Microsoft PowerApps. Este complemento requiere Microsoft Excel 2016.

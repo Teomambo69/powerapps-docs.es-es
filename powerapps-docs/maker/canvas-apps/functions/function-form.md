@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
 ms.openlocfilehash: 6a32068d0de49ea0a6cf752fde0fd486159f39e9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836474"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
 Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)**.

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 12/19/2017
 ms.author: mblythe
 ms.openlocfilehash: 35dad5e3cbc2e78d5571cca5f9f120ca58ac3382
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828862"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>Integración de PowerApps, Microsoft Flow y Power BI con SharePoint Online
 ¿Tiene SharePoint Online y desea mejorar la automatización y simplificación de los procesos empresariales? ¿Ha trabajado con PowerApps, Microsoft Flow o Power BI, pero no está seguro de cómo usarlos con SharePoint Online? Ha venido al lugar correcto. Esta serie de tutoriales explora cómo crear una aplicación básica de administración de proyectos basada en listas de SharePoint y tres tecnologías claves que se integran con SharePoint Online: PowerApps, Microsoft Flow y Power BI. Estas tecnologías funcionan de forma conjunta, lo que facilita el *análisis* de su negocio, la *actuación* sobre los resultados y la *automatización* de los flujos de trabajo. Cuando haya terminado con esta serie de tutoriales, tendrá un escenario estupendo similar al siguiente:

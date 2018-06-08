@@ -1,25 +1,23 @@
 ---
 title: 'Control Temporizador: referencia | Microsoft Docs'
 description: Información sobre el control Temporizador, con propiedades y ejemplos
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 092e6c76b581027e711dbe0a8109f507a2bba292
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836916"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -165,6 +163,8 @@ Algunos escenarios están exentos de estos requisitos. Aprenda más sobre las [d
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[Text](properties-core.md)** debe existir.
 * No use **[Text](properties-core.md)** con información importante y urgente. Los usuarios de lector de pantalla no recibirán alertas de los cambios en **[Text](properties-core.md)**.
-> [!NOTE]
-> * Los lectores de pantalla anunciarán el tiempo transcurrido cada 5 segundos. Sin embargo, la propiedad **[Text](properties-core.md)** del temporizador no se incluirá en el anuncio.
+
+    > [!NOTE]
+> Los lectores de pantalla anunciarán el tiempo transcurrido cada 5 segundos. Sin embargo, la propiedad **[Text](properties-core.md)** del temporizador no se incluirá en el anuncio.
+
 * Considere la posibilidad de agregar un control **[Etiqueta](control-text-box.md)** para mostrar el tiempo transcurrido. Utilice la propiedad **[Text](properties-core.md)** del temporizador para indicar al usuario que inicie o detenga el temporizador.

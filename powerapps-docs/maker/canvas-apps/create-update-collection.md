@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
 ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330316"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Crear y actualizar una colección en su aplicación
 Use una colección para almacenar datos que se pueden usar en la aplicación. Una colección es un grupo de elementos que son similares. Por ejemplo, cree una colección MisImágenes que almacene todas las imágenes de los productos que vende su compañía. En PowerApps, puede agregar la colección MisImágenes y crear una aplicación que muestre todas las imágenes de estos productos. En otro ejemplo, puede crear una colección PriceList que incluya los productos y el precio de cada uno de ellos.

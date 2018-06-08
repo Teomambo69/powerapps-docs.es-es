@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.openlocfilehash: 485dfcf47f76a042afab80c769f994c6cbf1ceac
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31835964"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registro para obtener una licencia gratuita para probar PowerApps
 Para crear una aplicación en PowerApps, necesitará uno de los distintos tipos de licencias que proporcionan diferentes niveles de funcionalidad. Ya tiene una licencia para PowerApps si la organización ha comprado cualquiera de las versiones de Office 365 o Dynamics 365 para usted, o bien si ha comprado licencias del Plan 1 o Plan 2 de PowerApps para usted.

@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168444"
 ---
 # <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, es posible que tenga las entidades **Profesores** y **Clase**, y es posible que la entidad **Clase** tenga una relación de búsqueda con la entidad **Profesores** para mostrar qué profesor imparte la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Esto se conoce normalmente como un campo de búsqueda.

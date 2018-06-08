@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 8899a77d73f67a1b437a60218b3536d2989d5b8c
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168329"
 ---
 # <a name="data-groups"></a>Grupos de datos
 Los grupos de datos son una manera sencilla de clasificar servicios dentro de una [directiva de prevención de pérdida de datos (DLP)](prevent-data-loss.md). Los dos grupos de datos disponibles son el grupo **Business data only** (Solo datos empresariales) y el grupo **No business data allowed** (No se permiten datos empresariales). Las organizaciones pueden determinar libremente qué servicios se colocan en un grupo de datos determinado. Una buena manera de clasificar servicios es colocarlos en grupos, según el impacto sobre la organización. De forma predeterminada, todos los servicios se colocan en el grupo de datos **No business data allowed** (No se permiten datos empresariales). Se administran los servicios en un grupo de datos cuando se crean o modifican las propiedades de una directiva DLP desde el centro de administración.

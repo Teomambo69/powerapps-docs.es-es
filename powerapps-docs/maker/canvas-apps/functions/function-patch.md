@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838726"
 ---
 # <a name="patch-function-in-powerapps"></a>Función Revisión en PowerApps
 Modifica o crea uno o varios [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md) o combina registros fuera de un origen de datos.

@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: anneta
 ms.openlocfilehash: faa8db15596dc0da0d5b5638f5dd9c334517fc7c
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330960"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Mostrar texto y dar formato a fechas y horas en PowerApps
 Agregue fechas y horas y deles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/20/2017
 ms.author: mblythe
 ms.openlocfilehash: 0f4ea37d93b20a768fa16d1dcdb41f921336f043
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827060"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integración de PowerApps tanto en sitios web como en otros servicios
 Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones en un iframe para poder integrarlas tanto en sitios web como en otros servicios, como Power BI o SharePoint.

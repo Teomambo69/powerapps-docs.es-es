@@ -1,25 +1,18 @@
 ---
 title: 'Controles Audio y Vídeo: referencia | Microsoft Docs'
 description: Información sobre los controles Audio y Vídeo, con propiedades y ejemplos
-services: ''
-suite: powerapps
-documentationcenter: na
 author: fikaradz
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: aae87f408452cd83856c2e1c2e07065d4b8df49f
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803291"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
