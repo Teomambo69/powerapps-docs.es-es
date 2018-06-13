@@ -43,7 +43,7 @@
               href: ./canvas-apps/customize-card.md
         - name: Crear una aplicación desde cero
           items:
-            - name: Common Data Service para aplicaciones
+            - name: Common Data Service for Apps
               href: ./canvas-apps/data-platform-create-app-scratch.md
             - name: Excel
               href: ./canvas-apps/get-started-create-from-blank.md
@@ -81,7 +81,7 @@
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: Objeto visual personalizado de PowerApps
           href: ./canvas-apps/powerapps-custom-visual.md
-        - name: Transforme sus formularios de InfoPath para PowerApps
+        - name: Transformación de Formularios de InfoPath a PowerApps
           href: ./canvas-apps/transform-infopath.md
         - name: Desarrollo de aplicaciones de lienzo
           items:
@@ -219,7 +219,7 @@
       href: ./model-driven-apps/share-model-driven-app.md
     - name: Para desarrolladores
       href: ../developer/model-driven-apps/TOC.yml
-- name: Common Data Service para aplicaciones
+- name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:
     - name: Inicios rápidos
@@ -250,6 +250,8 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: Eliminar una entidad personalizada
           href: ./common-data-service/data-platform-delete-entity.md
+        - name: Importar o exportar datos desde una entidad
+          href: ./common-data-service/data-platform-import-export.md
         - name: Abrir los datos de la entidad en Excel
           href: ./common-data-service/data-platform-excel-addin.md
         - name: Crear un informe de Power BI

@@ -8,23 +8,26 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
+ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851716"
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
+> [!IMPORTANT]
+> **Anuncio de las notas de la versión**<br>
+> ¿Tiene preguntas sobre las próximas funciones y las publicadas recientemente en PowerApps?<br>
+[Vea las notas de la versión](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview). Se han capturado todos los detalles completos, de arriba abajo, que puede usar para la planificación.
+
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
 
 > [!NOTE]
 > Las versiones se implementan durante varios días. Es posible que las funcionalidades nuevas o actualizadas no se muestren inmediatamente.
 
-## <a name="announcing-the-business-applications-spring-18-release-notes"></a>Anuncio de la notas de la versión de aplicaciones empresariales de la primavera de 2018
-
-Detecte las actualizaciones más recientes para nuestras aplicaciones empresariales, así como infinidad de nuevas funcionalidades para que compile sus propias aplicaciones y extensiones sobre nuestra plataforma. [Descargue el PDF de las notas de la versión de la primavera de 2018](https://aka.ms/businessappsreleasenotes), que cubre Dynamics 365, PowerApps, Microsoft Flow y Power BI.
-
-**Próximamente:** el PDF de las notas de la versión se seguirá actualizando como características de envío y también se pondrá a disposición de los usuarios en una página web.
+## <a name="may-30"></a>30 de mayo
+1. [Control Editor de texto enriquecido](controls/control-richtexteditor.md) (experimental): permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG. 
 
 ## <a name="may-21"></a>21 de mayo
 1. Se permite a los usuarios de la aplicación importar y exportar datos de archivos de Excel o CSV almacenados localmente usando las características **Obtener datos desde Excel** y **Exportar datos**, ya disponibles para entornos actualizados de Common Data Service (CDS) for Apps. 

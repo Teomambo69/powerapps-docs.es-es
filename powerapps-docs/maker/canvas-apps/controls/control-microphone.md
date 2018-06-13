@@ -12,17 +12,20 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c79e30a404b1e653f1df6547c9fcc818efc79433
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583518"
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
-Un control con el que el usuario puede grabar sonidos.
+Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.
 
 ## <a name="description"></a>Descripción
-Si agrega este control, el usuario puede actualizar un origen de datos con uno o más sonidos desde donde se esté ejecutando la aplicación.
+Los usuarios de la aplicación pueden realizar grabaciones de audio si el dispositivo donde se ejecuta la aplicación tiene un micrófono.
+
+El audio se almacena en formato 3gp en Android y en formato AAC en iOS.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Micrófono**: en un dispositivo que tenga más de un micrófono, el identificador numérico del micrófono que usa la aplicación.
@@ -97,9 +100,9 @@ Si agrega este control, el usuario puede actualizar un origen de datos con uno o
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Agregue sonidos a un control Galería personalizada
 1. Agregue un **Micrófono**, asígnele el nombre **MyMic**y establezca su propiedad **AlDetener** en esta fórmula:<br>
    **Collect(MySounds, MyMic.Audio)**
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-   
+
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 2. Agregue un control **Galería personalizada** muévalo debajo de **MyMic** establezca la propiedad **[Elementos](properties-core.md)** para el control **Galería personalizada** en **MySounds**.
 3. En la plantilla para el control **Galería personalizada** de control, agregue un control **[Audio](control-audio-video.md)** y establezca su propiedad **Multimedia** en **ThisItem.Url**.

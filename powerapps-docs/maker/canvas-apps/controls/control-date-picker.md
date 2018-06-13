@@ -12,11 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9f2aae06422a130e2976d0276536842c6d565db5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: fe6fc6527348c6d38ba1d7934efb50ea071154d7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583564"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
@@ -69,6 +70,10 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
+**IconFill**: el color de primer plano del icono del selector de fecha.
+
+**IconBackground**: el color de fondo del icono del selector de fecha.
+
 **[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
@@ -100,14 +105,14 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Selector de fecha** y denomínelo **Deadline**.
-   
+
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Etiqueta](control-text-box.md)** y establezca su propiedad **[Texto](properties-core.md)** en esta fórmula:
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
-   
+
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.
-   
+
     El control **[Etiqueta](control-text-box.md)** muestra el número de días entre hoy y la fecha que eligió.
 4. Presione Esc para volver al área de trabajo predeterminada.
 
@@ -122,4 +127,3 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
- 

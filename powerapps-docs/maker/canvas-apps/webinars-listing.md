@@ -7,74 +7,25 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: 9100aadcbe9b2b4c431fd91da448d859f1830f48
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: a5cfa772ce4f7e9f5679164b9309baa31bfc6a96
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803383"
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. No dude en sugerir temas adicionales en los comentarios de este tema.
 
 ## <a name="upcoming-webinars"></a>Seminarios web que se celebrarán en las próximas fechas ##
-**Model Driven App Series Part 1 | Managing Entities and Data Imports** (Serie de aplicaciones controladas por modelos, parte 1 | Administración de entidades e importaciones de datos)
-<br>de Audrie Gordon y Clay Wesener
-<br>*1 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
-
-Trabaje en conjunto con Clay Wesener del equipo de PowerApps mientras le guía en la compilación de una base de datos CDS for Apps. Aprenderá a crear y recorrer entidades, así como campos. También obtendrá una ventaja inicial para saber cuáles son las características integradas desde el primer momento. 
-
-Esta es la primera de una serie de tres partes:
-<br>**Parte 1: Entidades**
-<br>Parte 2: Formularios y vistas
-<br>Parte 3: Gráficos y paneles
-
-Es una oportunidad excelente para aprender a reutilizar campos y entidades estándar y cómo crear sus propios escenarios personalizados en cuestión de segundos.
-
-[Haga clic aquí para verlo el 1 de mayo](https://www.youtube.com/watch?v=02NWfHRYkeo)
-
-**Model Driven App Series Part 2 | Creating Forms and Views** (Serie de aplicaciones controladas por modelos, parte 2 | Creación de formularios y vistas)
-<br>Por Audrie Gordon y Anees Ansari
-<br>*15 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
-
-Las aplicaciones controladas por modelos brindan una experiencia enriquecida para los creadores de aplicaciones que diseñan escenarios de formularios simples a complejos. Aprenda a usar el nuevo diseñador de formularios para crear los formularios necesario para la aplicación modelo que empezamos en la parte 1. Anees le guiará por los componentes de los formularios, como pestañas, secciones y campos. También compartirá los procedimientos recomendados sobre cómo integrar filtros y lógica de negocios. 
-
-Esta es la segunda de una serie de tres partes:
-<br>Parte 1: Entidades
-<br>**Parte 2: Formularios y vistas**
-<br>Parte 3: Gráficos y paneles
-
-[Haga clic aquí para verlo el 15 de mayo](https://www.youtube.com/watch?v=v7VoX-V2ek4)
-
-**Model Driven App Series Part 3 | Exploring Charts and Dashboards** (Serie de aplicaciones controladas por modelos, parte 3 | Exploración de gráficos y paneles)
-<br>por Audrie Gordon y Casey Burke
-<br>*29 de mayo a las 10:00 (hora estándar del Pacífico), 12:00 (hora estándar del Este)*
-
-PowerApps ofrece un enfoque compuesto para generar informes, con funcionalidades de vistas y paneles sofisticadas. La serie Aplicaciones controladas por modelos concluye con gráficos y paneles útiles para optimizar y modernizar la solución en que hemos trabajado. 
-
-Esta es la tercera de una serie de tres partes:
-<br>Parte 1: Entidades
-<br>Parte 2: Formularios y vistas
-<br>**Parte 3: Gráficos y paneles**
-
-[Haga clic aquí para verlo el 29 de mayo](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
 
 **Connector Series | Aplicaciones de Microsoft StaffHub (planificación de turnos) con PowerApps**
 <br>por Marc André Lépine
 <br>*25 de junio, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
-
+<br>
 Marc André Lépine, del grupo de PowerApps y Azure Flow de Azure Advisors se une a nosotros en esta sesión para explicar cómo creó una aplicación fantástica para complementar y ampliar las posibilidades que ofrece el conector de StaffHub. Al final de esta semana, mostrará cómo ampliar el conector mediante una API personalizada.  
 
 [Haga clic aquí para verlo el 5 de junio](https://www.youtube.com/watch?v=LAximnEnKy8)
-
-**Ampliación | Crear una solución basada en JSON con PowerApps y Flow**
-<br>por Marc André Lépine
-<br>*7 de junio, 10:00 (Hora estándar del Pacífico), 13:00 (Hora estándar del Este)*
-
-Marc André Lépine vuelve para compartir con todos algunas sugerencias de ampliación. Si no vio su primer vídeo, puede hacerlo desde aquí: https://www.youtube.com/watch?v=LAximnEnKy8
-
-En esta ocasión, Marc muestra la ventaja de PowerApps de "sin cortes" ampliando la funcionalidad del conector de StaffHub para incluir sus propios requisitos de empresa a través de un conector personalizado. (Es realmente sorprendente lo fácil que es hacerlo, por lo que no se pierda este evento, incluso si no es un desarrollador profesional). 
-
-[Haga clic aquí para verlo el 7 de junio](https://www.youtube.com/watch?v=ykNRxKvAirg)
 
 **Administración de PowerApps | Preguntas más frecuentes**
 <br>por Manas Maheshwari
@@ -84,7 +35,7 @@ Manas Maheshwari, administrador de programas senior del equipo de PowerApps vien
 
 [Haga clic aquí para verlo el 12 de junio](https://www.youtube.com/watch?v=9Sy_vT5kIts)
 
-**Inside the Universal Audit App: See what PowerApps and Flow are capable of  with Paul Culmsee** (Dentro de la aplicación Universal Audit: vea lo que PowerApps y Flow son capaces de hacer con Paul Culmsee)
+**Inside the Universal Audit App: See what PowerApps and Flow are capable of by Paul Culmsee** (Dentro de la aplicación Universal Audit: vea lo que PowerApps y Flow son capaces de hacer, por Paul Culmsee)
 <br>por Paul Culmsee
 <br>*14 de junio a las 18:00 (hora estándar del Pacífico), 21:00 (hora estándar del Este)*
 
@@ -92,8 +43,16 @@ Esta popular aplicación en el escaparate de PowerApps ha dado como resultado de
 
 [Haga clic aquí para verlo el 14 de junio](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
+**Getting Started | PowerApps Learning Paths - How to get good building apps fast!** (Introducción | Rutas de aprendizaje de PowerApps: cómo destacar rápidamente en la creación de aplicaciones)
+<br>por Audrie Gordon
+<br>*26 de junio a las 18:00 (hora estándar del Pacífico), 21:00 (hora estándar del Este)*
+
+Audrie Gordon, del equipo de PowerApps, compartirá procedimientos recomendados y estrategias de inicio rápido para aprender y adoptar PowerApps en la organización. No se pierda este debate especial después del horario comercial en directo en YouTube. 
+
+[Haga clic aquí para verlo el 26 de junio](https://www.youtube.com/watch?v=ykNRxKvAirg)
+
 ## <a name="past-webinars"></a>Seminarios web anteriores ##
-Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que deberá volver a escribir los detalles de registro y después recibirá un vínculo a la grabación por correo electrónico.
+Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que en algunos casos deberá volver a escribir los detalles de registro, y después recibirá un vínculo a la grabación por correo electrónico. 
 
 ### <a name="beginner-webinar-series"></a>Serie de seminarios web para principiantes ###
 **Top 5 Tips for Designing Apps that Mean Business** (Cinco principales sugerencias para diseñar aplicaciones serias)
@@ -196,6 +155,15 @@ Los seminarios web están disponibles a petición tras su difusión en directo. 
 
 **Model Driven App Components | Getting Started with Templates** (Componentes de aplicaciones controladas por modelos | Introducción a las plantillas)
 <br>por Charles Sterling & Casey Burke [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Understanding-Model-Driven-App-Templates/m-p/116833)
+
+**Model Driven App Series Part 1 | Managing Entities and Data Imports** (Serie de aplicaciones controladas por modelos, parte 1 | Administración de entidades e importaciones de datos)
+<br>por Audrie Gordon y Clay Wesener [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-1-Managing-Entities-and-Data/m-p/116837)
+
+**Model Driven App Series Part 2 | Creating Forms and Views** (Serie de aplicaciones controladas por modelos, parte 2 | Creación de formularios y vistas)
+<br>Por Audrie Gordon y Anees Ansari [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-2-Creating-Forms-and-Views-with/m-p/116838)
+
+**Model Driven App Series Part 3 | Exploring Charts and Dashboards** (Serie de aplicaciones controladas por modelos, parte 3 | Exploración de gráficos y paneles)
+<br>Por Audrie Gordon y Casey Burke [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-3-Exploring-Charts-and/m-p/119732)
 
 ### <a name="app-designer-series"></a>Serie de Diseñador de aplicaciones ###
 **Building Apps for Adoption and Usability** (Crear aplicaciones para su adopción y facilidad de uso)

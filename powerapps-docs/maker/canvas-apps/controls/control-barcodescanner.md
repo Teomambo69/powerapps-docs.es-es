@@ -1,25 +1,18 @@
 ---
 title: 'Control Escáner de código de barras: referencia | Microsoft Docs'
 description: Información sobre el control Escáner de código de barras, con propiedades y ejemplos
-services: ''
-suite: powerapps
-documentationcenter: na
 author: fikaradz
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 98357cb2f6d829906dfcdd4ecaa4acc3afdef26d
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803489"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>Control Escáner de código de barras (experimental) en PowerApps
 Un control experimental con el que el usuario puede realizar fotos mediante el escáner de código de barras del dispositivo.
@@ -47,7 +40,7 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario pulsa o hace clic en un control.
 
 **EnSecuencia**: indica cómo responde la aplicación cuando la propiedad **Stream** está actualizada.
 
@@ -92,5 +85,6 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
-> [!NOTE]
+
+    > [!NOTE]
 > Los lectores de pantalla anunciarán cuándo se ha encontrado un nuevo código de barras. El valor no se anunciará. Siempre que el código de barras esté a la vista, los lectores de pantalla recordarán cada 5 segundos que se sigue identificando el mismo código de barras.

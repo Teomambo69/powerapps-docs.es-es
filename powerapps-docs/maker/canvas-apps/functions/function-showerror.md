@@ -1,39 +1,51 @@
 ---
 title: Función ShowError | Microsoft Docs
 description: Información de referencia de la función ShowError de PowerApps, con sintaxis y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 03/21/2018
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: 1191016f26192f997b8347cdbfecc7701c19cb8c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5b75c2cabedba4caf11aa3f922acc0a71ffca377
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822544"
 ---
-# <a name="showerror-function-in-powerapps"></a>Función ShowError en PowerApps
-Muestra un error al usuario.
+# <a name="notify-function-in-powerapps"></a>Función Notify en PowerApps
+Muestra un mensaje de pancarta al usuario.
 
 ## <a name="description"></a>Descripción
-La función **ShowError** muestra un error al usuario.  Los mensajes se muestran cuando se crea la aplicación y cuando los usuarios finales la usan.
+La función **Notify** muestra un mensaje de pancarta al usuario en la parte superior de la pantalla, superpuesto sobre lo que se muestre actualmente.  
 
-**ShowError** solo se puede usar en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
+Se usa el color y el icono adecuados según el tipo del mensaje.   El tipo se especifica mediante el segundo argumento de la función:
 
-**ShowError** siempre devuelve *true*.
+| Argumento NotificationType | Descripción |
+| --- | --- |
+| **NotificationType.Error** | Muestra el mensaje como un error. |
+| **NotificationType.Information** (valor predeterminado) | Muestra el mensaje como información.  |
+| **NotificationType.Success** | Muestra el mensaje como correcto. |
+| **NotificationType.Warning** | Muestra el mensaje como una advertencia. |
 
-**ShowError** se puede emparejar con la función [**IfError**](function-iferror.md) para detectar y notificar errores con un mensaje de error personalizado.
+Los mensajes se muestran cuando se crea la aplicación y cuando los usuarios finales la usan.
+
+**Notify** solo se puede usar en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
+
+**Notify** se puede emparejar con la función [**IfError**](function-iferror.md) para detectar y notificar errores con un mensaje de error personalizado.
+
+PowerApps también puede enviar notificaciones de inserción mediante un mecanismo completamente diferente a **Notify**.  Para obtener más información, vea [Envío de una notificación push en PowerApps](../add-notifications.md).
+
+**Notify** siempre devuelve *true*.
+
+Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**ShowError**( *Mensaje* )
+**Notify**( *Mensaje*, [ *TipoDeNotificación* ] )
 
-* *Mensaje*: obligatorio.  Mensaje que se va a mostrar al usuario. 
+* *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
+* *TipoDeNotificación*: es opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
 
 ## <a name="examples"></a>Ejemplos
 
@@ -43,10 +55,40 @@ La función **ShowError** muestra un error al usuario.  Los mensajes se muestran
 
 2. Establezca la propiedad **OnSelect** del control **Botón** en:
 
-    **ShowError( "Hello, World" )**
+    **Notify( "Hello, World" )**
 
 3. Haga clic o presione el botón.  
 
-    Cada vez que se hace clic en el botón se muestra al usuario el mensaje **Hello, World**.
+    Cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una información.
 
-    ![En el entorno de creación se muestra Button.OnSelect, se llama a ShowError y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color rojo](media/function-showerror/hello-world.png)
+    ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color azul](media/function-showerror/hello-world.png)
+
+4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
+
+    **Notify( "Hello, World", NotificationType.Error )**
+
+5. Haga clic o presione el botón.
+
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como un error.
+
+    ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color rojo](media/function-showerror/hello-world-error.png)
+
+4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
+
+    **Notify( "Hello, World", NotificationType.Warning )**
+
+5. Haga clic o presione el botón.
+
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una advertencia.
+
+    ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color naranja](media/function-showerror/hello-world-warning.png)
+
+4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
+
+    **Notify( "Hello, World", NotificationType.Success )**
+
+5. Haga clic o presione el botón.
+
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una operación correcta.
+
+    ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color verde](media/function-showerror/hello-world-success.png)

@@ -10,13 +10,14 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 08/28/2017
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: d7dd33954d337bbfc65b486333e89c4598b11305
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822590"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -219,6 +220,8 @@ Otros elementos incluyen:
 
 **[Not](functions/function-logicals.md)**: lógica booleana NO.  Devuelve **true** si su argumento es **false** y devuelve **false** si su argumento es **true**.  También puede usar el [operador **!**](functions/operators.md).
 
+**[Notify](functions/function-showerror.md)**: muestra un mensaje de pancarta al usuario.
+
 **[Now](functions/function-now-today-istoday.md)**: devuelve el valor de fecha y hora actual.
 
 ## <a name="o"></a>O
@@ -280,8 +283,6 @@ Otros elementos incluyen:
 **[Set](functions/function-set.md)**: establece el valor de una variable global.
 
 **[ShowColumns](functions/function-table-shaping.md)**: devuelve una tabla exclusivamente con las columnas seleccionadas.
-
-**[ShowError](functions/function-showerror.md)**: muestra un mensaje de error al usuario.
 
 **[Shuffle](functions/function-shuffle.md)**: reordena aleatoriamente los registros de una tabla.
 

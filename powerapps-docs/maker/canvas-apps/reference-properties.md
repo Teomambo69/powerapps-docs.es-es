@@ -12,11 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: ae72dad8143c747714e8573ecc3cc5a9644044b4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 8d54c632780ac827704535af5d24881685a0e518
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583610"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.
@@ -85,6 +86,8 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Radio](controls/control-radio.md)** : muestre opciones que se excluyen mutuamente.
 
 **[Clasificación](controls/control-rating.md)**: indique un valor entre 1 y un número especificado.
+
+**[Editor de texto enriquecido (experimental)](controls/control-richtexteditor.md)**: permite a los usuarios de la aplicación aplicar formato de texto enriquecido.
 
 **[Pantalla](controls/control-screen.md)**: muestre y actualice los datos sobre una tarea específica.
 
