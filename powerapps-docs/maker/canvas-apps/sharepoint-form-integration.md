@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8ae6bd0e576abd3a4115e452b286607b5c695acb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
+ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834845"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291752"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
 Ahora puede [personalizar cualquier formulario de lista de SharePoint](customize-list-form.md) de manera fácil en PowerApps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
@@ -76,7 +76,7 @@ El control **SharePointIntegration** comunica las acciones de los usuarios entre
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->Las propiedades del control **SharePointIntegration** solo están disponibles cuando el formulario se ejecuta en SharePoint, y no es posible acceder a ellas al personalizar el formulario en PowerApps Studio.
+>Solo puede acceder a las propiedades del control **SharePointIntegration** cuando el formulario se ejecuta en SharePoint, es decir, no al personalizarlo en PowerApps Studio. Es posible que estas propiedades no estén disponibles en **OnStart** u **OnVisible**. 
 
 El control **SharePointIntegration** tiene las siguientes propiedades:
 
@@ -109,3 +109,5 @@ Ahora que comprende mejor el formulario generado predeterminado y el control **S
 * No olvide incluir **RequestHide()** en la fórmula **OnSuccess** de todos los formularios. Si lo olvida, SharePoint no sabrá cuándo ocultar el formulario.
 
 * Como no puede controlar que se oculte un formulario cuando un usuario pulsa o hace clic en **Cancelar** en SharePoint, asegúrese de restablecer los formularios de la fórmula **OnCancel** del control **SharePointIntegration**.
+
+* Es posible que las propiedades del control **SharePointIntegration** no estén disponibles en **OnStart** u **OnVisible**. Asimismo, estos eventos solo se ejecutan una vez durante la carga de la lista. Puede usar fórmulas **OnNew**, **OnView** u **OnEdit** para ejecutar lógicas antes de que el formulario se muestre al usuario cada vez. 
