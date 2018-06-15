@@ -202,8 +202,394 @@
       items:
         - name: Referencia sobre fórmulas
           href: ./canvas-apps/formula-reference.md
+          items:
+            - name: Abs
+              href: ./canvas-apps/functions/function-numericals.md
+            - name: Acceleration
+              href: ./canvas-apps/functions/signals.md
+            - name: Acos
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Acot
+              href: ./canvas-apps/functions/function-trig.md
+            - name: AddColumns
+              href: ./canvas-apps/functions/function-table-shaping.md
+            - name: And
+              href: ./canvas-apps/functions/function-logicals.md
+            - name: App
+              href: ./canvas-apps/functions/signals.md
+            - name: Asin
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Atan
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Atan2
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Average
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: Back
+              href: ./canvas-apps/functions/function-navigate.md
+            - name: En blanco
+              href: ./canvas-apps/functions/function-isblank-isempty.md
+            - name: Calendario
+              href: ./canvas-apps/functions/function-clock-calendar.md
+            - name: Char
+              href: ./canvas-apps/functions/function-char.md
+            - name: Clear
+              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+            - name: ClearCollect
+              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+            - name: Clock
+              href: ./canvas-apps/functions/function-clock-calendar.md
+            - name: Coalesce
+              href: ./canvas-apps/functions/function-isblank-isempty.md
+            - name: Collect
+              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+            - name: Color
+              href: ./canvas-apps/functions/function-colors.md
+            - name: ColorFade
+              href: ./canvas-apps/functions/function-colors.md
+            - name: ColorValue
+              href: ./canvas-apps/functions/function-colors.md
+            - name: Compass
+              href: ./canvas-apps/functions/signals.md
+            - name: Concat
+              href: ./canvas-apps/functions/function-concatenate.md
+            - name: Concatenate
+              href: ./canvas-apps/functions/function-concatenate.md
+            - name: Conexión
+              href: ./canvas-apps/functions/signals.md
+            - name: Número
+              href: ./canvas-apps/functions/function-table-counts.md
+            - name: Cos
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Cot
+              href: ./canvas-apps/functions/function-trig.md
+            - name: CountA
+              href: ./canvas-apps/functions/function-table-counts.md
+            - name: CountIf
+              href: ./canvas-apps/functions/function-table-counts.md
+            - name: CountRows
+              href: ./canvas-apps/functions/function-table-counts.md
+            - name: DataSourceInfo
+              href: ./canvas-apps/functions/function-datasourceinfo.md
+            - name: Fecha
+              href: ./canvas-apps/functions/function-date-time.md
+            - name: DateAdd
+              href: ./canvas-apps/functions/function-dateadd-datediff.md
+            - name: DateDiff
+              href: ./canvas-apps/functions/function-dateadd-datediff.md
+            - name: FechaHoraNumero
+              href: ./canvas-apps/functions/function-datevalue-timevalue.md
+            - name: FechaNumero
+              href: ./canvas-apps/functions/function-datevalue-timevalue.md
+            - name: Día
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: Defaults
+              href: ./canvas-apps/functions/function-defaults.md
+            - name: Degrees
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Deshabilitar
+              href: ./canvas-apps/functions/function-enable-disable.md
+            - name: Distinct
+              href: ./canvas-apps/functions/function-distinct.md
+            - name: Descargar
+              href: ./canvas-apps/functions/function-param.md
+            - name: DropColumns
+              href: ./canvas-apps/functions/function-table-shaping.md
+            - name: EditarFormulario
+              href: ./canvas-apps/functions/function-form.md
+            - name: Habilitar
+              href: ./canvas-apps/functions/function-enable-disable.md
+            - name: EndsWith
+              href: ./canvas-apps/functions/function-startswith.md
+            - name: Errors
+              href: ./canvas-apps/functions/function-errors.md
+            - name: EncodeUrl
+              href: ./canvas-apps/functions/function-encode-decode.md
+            - name: Exit
+              href: ./canvas-apps/functions/function-exit.md
+            - name: Exp
+              href: ./canvas-apps/functions/function-numericals.md
+            - name: Filtro
+              href: ./canvas-apps/functions/function-filter-lookup.md
+            - name: Find
+              href: ./canvas-apps/functions/function-find.md
+            - name: Primeras
+              href: ./canvas-apps/functions/function-first-last.md
+            - name: FirstN
+              href: ./canvas-apps/functions/function-first-last.md
+            - name: ForAll
+              href: ./canvas-apps/functions/function-forall.md
+            - name: GroupBy
+              href: ./canvas-apps/functions/function-groupby.md
+            - name: HashTags
+              href: ./canvas-apps/functions/function-hashtags.md
+            - name: Hora
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: If
+              href: ./canvas-apps/functions/function-if.md
+            - name: IfError
+              href: ./canvas-apps/functions/function-iferror.md
+            - name: EsBlanco
+              href: ./canvas-apps/functions/function-isblank-isempty.md
+            - name: IsEmpty
+              href: ./canvas-apps/functions/function-isblank-isempty.md
+            - name: IsMatch
+              href: ./canvas-apps/functions/function-ismatch.md
+            - name: IsNumeric
+              href: ./canvas-apps/functions/function-isnumeric.md
+            - name: IsToday
+              href: ./canvas-apps/functions/function-now-today-istoday.md
+            - name: Lenguaje
+              href: ./canvas-apps/functions/function-language.md
+            - name: Last
+              href: ./canvas-apps/functions/function-first-last.md
+            - name: LastN
+              href: ./canvas-apps/functions/function-first-last.md
+            - name: Inicio
+              href: ./canvas-apps/functions/function-param.md
+            - name: Left
+              href: ./canvas-apps/functions/function-left-mid-right.md
+            - name: Largo
+              href: ./canvas-apps/functions/function-len.md
+            - name: Ln
+              href: ./canvas-apps/functions/function-numericals.md
+            - name: LoadData
+              href: ./canvas-apps/functions/function-savedata-loaddata.md
+            - name: Ubicación
+              href: ./canvas-apps/functions/signals.md
+            - name: Buscar
+              href: ./canvas-apps/functions/function-filter-lookup.md
+            - name: Lower
+              href: ./canvas-apps/functions/function-lower-upper-proper.md
+            - name: Máx.
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: Mid
+              href: ./canvas-apps/functions/function-left-mid-right.md
+            - name: Min
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: Minute
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: Mod
+              href: ./canvas-apps/functions/function-mod.md
+            - name: Mes
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: Navigate
+              href: ./canvas-apps/functions/function-navigate.md
+            - name: NewForm
+              href: ./canvas-apps/functions/function-form.md
+            - name: 'No'
+              href: ./canvas-apps/functions/function-logicals.md
+            - name: Notify
+              href: ./canvas-apps/functions/function-showerror.md
+            - name: Now
+              href: ./canvas-apps/functions/function-now-today-istoday.md
+            - name: Operators
+              href: ./canvas-apps/functions/operators.md
+            - name: O bien
+              href: ./canvas-apps/functions/function-logicals.md
+            - name: Param
+              href: ./canvas-apps/functions/function-param.md
+            - name: Patch
+              href: ./canvas-apps/functions/function-patch.md
+            - name: Pi
+              href: ./canvas-apps/functions/function-trig.md
+            - name: PlainText
+              href: ./canvas-apps/functions/function-encode-decode.md
+            - name: Power
+              href: ./canvas-apps/functions/function-numericals.md
+            - name: Proper
+              href: ./canvas-apps/functions/function-lower-upper-proper.md
+            - name: Radians
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Rand
+              href: ./canvas-apps/functions/function-rand.md
+            - name: Actualizar
+              href: ./canvas-apps/functions/function-refresh.md
+            - name: Remove
+              href: ./canvas-apps/functions/function-remove-removeif.md
+            - name: RemoveIf
+              href: ./canvas-apps/functions/function-remove-removeif.md
+            - name: RenameColumns
+              href: ./canvas-apps/functions/function-table-shaping.md
+            - name: Replace
+              href: ./canvas-apps/functions/function-replace-substitute.md
+            - name: Reset
+              href: ./canvas-apps/functions/function-reset.md
+            - name: ResetForm
+              href: ./canvas-apps/functions/function-form.md
+            - name: Revert
+              href: ./canvas-apps/functions/function-revert.md
+            - name: RGBA
+              href: ./canvas-apps/functions/function-colors.md
+            - name: Right
+              href: ./canvas-apps/functions/function-left-mid-right.md
+            - name: Round
+              href: ./canvas-apps/functions/function-round.md
+            - name: RoundDown
+              href: ./canvas-apps/functions/function-round.md
+            - name: RoundUp
+              href: ./canvas-apps/functions/function-round.md
+            - name: SaveData
+              href: ./canvas-apps/functions/function-savedata-loaddata.md
+            - name: Search
+              href: ./canvas-apps/functions/function-filter-lookup.md
+            - name: Second
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: Select
+              href: ./canvas-apps/functions/function-select.md
+            - name: Set
+              href: ./canvas-apps/functions/function-set.md
+            - name: ShowColumns
+              href: ./canvas-apps/functions/function-table-shaping.md
+            - name: Shuffle
+              href: ./canvas-apps/functions/function-shuffle.md
+            - name: Sin
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Ordenar
+              href: ./canvas-apps/functions/function-sort.md
+            - name: SortByColumns
+              href: ./canvas-apps/functions/function-sort.md
+            - name: Split
+              href: ./canvas-apps/functions/function-split.md
+            - name: Sqrt
+              href: ./canvas-apps/functions/function-numericals.md
+            - name: StartsWith
+              href: ./canvas-apps/functions/function-startswith.md
+            - name: StdevP
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: Substitute
+              href: ./canvas-apps/functions/function-replace-substitute.md
+            - name: SubmitForm
+              href: ./canvas-apps/functions/function-form.md
+            - name: Suma
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: Switch
+              href: ./canvas-apps/functions/function-if.md
+            - name: Tabla
+              href: ./canvas-apps/functions/function-table.md
+            - name: Tan
+              href: ./canvas-apps/functions/function-trig.md
+            - name: Texto
+              href: ./canvas-apps/functions/function-text.md
+            - name: Hora
+              href: ./canvas-apps/functions/function-date-time.md
+            - name: HoraValor
+              href: ./canvas-apps/functions/function-datevalue-timevalue.md
+            - name: TimeZoneOffset
+              href: ./canvas-apps/functions/function-dateadd-datediff.md
+            - name: Today
+              href: ./canvas-apps/functions/function-now-today-istoday.md
+            - name: Trim
+              href: ./canvas-apps/functions/function-trim.md
+            - name: TrimEnds
+              href: ./canvas-apps/functions/function-trim.md
+            - name: Ungroup
+              href: ./canvas-apps/functions/function-groupby.md
+            - name: Actualizar
+              href: ./canvas-apps/functions/function-update-updateif.md
+            - name: UpdateContext
+              href: ./canvas-apps/functions/function-updatecontext.md
+            - name: UpdateIf
+              href: ./canvas-apps/functions/function-update-updateif.md
+            - name: Upper
+              href: ./canvas-apps/functions/function-lower-upper-proper.md
+            - name: Usuario
+              href: ./canvas-apps/functions/function-user.md
+            - name: Validate
+              href: ./canvas-apps/functions/function-validate.md
+            - name: Valor
+              href: ./canvas-apps/functions/function-value.md
+            - name: VarP
+              href: ./canvas-apps/functions/function-aggregates.md
+            - name: ViewForm
+              href: ./canvas-apps/functions/function-form.md
+            - name: Weekday
+              href: ./canvas-apps/functions/function-datetime-parts.md
+            - name: Año
+              href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Referencia sobre controles
           href: ./canvas-apps/reference-properties.md
+          items:
+            - name: Agregar imagen
+              href: ./canvas-apps/controls/control-add-picture.md
+            - name: Datos adjuntos
+              href: ./canvas-apps/controls/control-attachments.md
+            - name: Audio
+              href: ./canvas-apps/controls/control-audio-video.md
+            - name: Escáner de código de barras (experimental)
+              href: ./canvas-apps/controls/control-barcodescanner.md
+            - name: Botón
+              href: ./canvas-apps/controls/control-button.md
+            - name: Cámara
+              href: ./canvas-apps/controls/control-camera.md
+            - name: Tarjeta
+              href: ./canvas-apps/controls/control-card.md
+            - name: Casilla
+              href: ./canvas-apps/controls/control-check-box.md
+            - name: Gráfico de columnas
+              href: ./canvas-apps/controls/control-column-line-chart.md
+            - name: Columna
+              href: ./canvas-apps/controls/control-column.md
+            - name: Cuadro combinado
+              href: ./canvas-apps/controls/control-combo-box.md
+            - name: Tabla de datos
+              href: ./canvas-apps/controls/control-data-table.md
+            - name: Selector de fecha
+              href: ./canvas-apps/controls/control-date-picker.md
+            - name: Mostrar formulario
+              href: ./canvas-apps/controls/control-form-detail.md
+            - name: Desplegable
+              href: ./canvas-apps/controls/control-drop-down.md
+            - name: Formulario de edición
+              href: ./canvas-apps/controls/control-form-detail.md
+            - name: Exportar
+              href: ./canvas-apps/controls/control-export-import.md
+            - name: Galería
+              href: ./canvas-apps/controls/control-gallery.md
+            - name: Texto HTML
+              href: ./canvas-apps/controls/control-html-text.md
+            - name: Icono
+              href: ./canvas-apps/controls/control-shapes-icons.md
+            - name: Imagen
+              href: ./canvas-apps/controls/control-image.md
+            - name: Importar
+              href: ./canvas-apps/controls/control-export-import.md
+            - name: Gráfico de líneas
+              href: ./canvas-apps/controls/control-column-line-chart.md
+            - name: Cuadro de lista
+              href: ./canvas-apps/controls/control-list-box.md
+            - name: Micrófono
+              href: ./canvas-apps/controls/control-microphone.md
+            - name: Visor de PDF (experimental)
+              href: ./canvas-apps/controls/control-pdf-viewer.md
+            - name: Entrada manuscrita
+              href: ./canvas-apps/controls/control-pen-input.md
+            - name: Gráfico circular
+              href: ./canvas-apps/controls/control-pie-chart.md
+            - name: Icono de Power BI
+              href: ./canvas-apps/controls/control-power-bi-tile.md
+            - name: Radio
+              href: ./canvas-apps/controls/control-radio.md
+            - name: Clasificación
+              href: ./canvas-apps/controls/control-rating.md
+            - name: Editor de texto enriquecido (experimental)
+              href: ./canvas-apps/controls/control-richtexteditor.md
+            - name: Pantalla
+              href: ./canvas-apps/controls/control-screen.md
+            - name: Forma
+              href: ./canvas-apps/controls/control-shapes-icons.md
+            - name: Control deslizante
+              href: ./canvas-apps/controls/control-slider.md
+            - name: Etiquetas
+              href: ./canvas-apps/controls/control-text-box.md
+            - name: Entrada de texto
+              href: ./canvas-apps/controls/control-text-input.md
+            - name: Temporizador
+              href: ./canvas-apps/controls/control-timer.md
+            - name: Alternancia
+              href: ./canvas-apps/controls/control-toggle.md
+            - name: Vídeo
+              href: ./canvas-apps/controls/control-audio-video.md
         - name: Referencia de conectores
           href: ./canvas-apps/connections-list.md
         - name: 'Requisitos del sistema, límites y configuración'
