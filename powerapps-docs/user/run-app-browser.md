@@ -7,12 +7,12 @@ ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
 ms.author: matp
-ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
+ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552723"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36261727"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Inicio rápido: Ejecución de una aplicación en un explorador web
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
@@ -20,7 +20,7 @@ Cuando crea una aplicación o alguien comparte una aplicación con usted, puede 
 Para seguir este tutorial rápido, necesita una [suscripción a Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) que incluya Dynamics 365 y acceso a un [explorador y sistema operativo compatibles](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación que haya compilado o que otra persona haya compilado y compartido con usted.
 
 ## <a name="sign-in-to-dynamics-365"></a>Inicio de sesión en Dynamics 365
-Inicie sesión en Dynamics 365 en [https://home.dynamics.com]([https://home.dynamics.com).
+Inicie sesión en Dynamics 365 en [https://home.dynamics.com](https://home.dynamics.com).
 
 ## <a name="find-an-app-on-the-home-page"></a>Buscar una aplicación en la página principal
 En la página principal se pueden mostrar varios tipos de aplicaciones empresariales, pero se puede buscar una aplicación específica si se escribe al menos una parte de su nombre en el cuadro de búsqueda. También se puede filtrar la lista para mostrar solo las aplicaciones creadas por un origen específico, como PowerApps. Para ello, pulse o haga clic en **Filtro** y, después, seleccione el origen.
