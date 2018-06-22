@@ -12,6 +12,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552677"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?
 Los creadores de aplicaciones pueden crear aplicaciones de *lienzo* personalizadas basadas en roles y tareas que funcionan a su ritmo, ya sea un trabajador móvil sobre el terreno o un médico en un hospital con mucho trabajo. Los creadores de aplicaciones pueden personalizar casi todos los aspectos de una aplicación de lienzo y conectarse a varios orígenes de datos para ayudar a los usuarios a completar tareas específicas.

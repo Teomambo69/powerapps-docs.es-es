@@ -12,6 +12,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552424"
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>¿Qué función desempeñan los administradores de PowerApps?
 La administración de PowerApps, Microsoft Flow y Common Data Service (CDS) for Apps se realiza a través del [Centro de administración de PowerApps](https://admin.powerapps.com).

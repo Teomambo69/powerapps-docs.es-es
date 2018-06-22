@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31829685"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
 PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene tres componentes principales:

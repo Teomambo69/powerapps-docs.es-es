@@ -38,6 +38,8 @@
       href: admin-manage-apps.md
     - name: Mover una aplicación entre inquilinos o entornos
       href: environment-and-tenant-migration.md
+    - name: Exportar e importar recursos
+      href: export-import-packages.md
     - name: Respuesta a solicitudes de DSR
       items:
         - name: Registros generados por el sistema
