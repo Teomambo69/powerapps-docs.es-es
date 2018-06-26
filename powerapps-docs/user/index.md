@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 6c5a207ec2eb41d2cf19250bd5f319ed692a43e6
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34552677"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?

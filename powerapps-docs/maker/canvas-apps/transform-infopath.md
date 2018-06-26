@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 04/05/2018
 ms.author: rriley
 ms.openlocfilehash: 10fe4e9052b9c029046c515c229e95075988597a
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34803521"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>Transformación de Formularios de InfoPath a PowerApps
