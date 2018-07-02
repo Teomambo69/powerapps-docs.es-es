@@ -15,15 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 4e8a935dbef2c46478f99ecbf82a7fc837feb284
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1799f275ea777f031e260409f62fcab0667bae59
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949280"
 ---
 # <a name="model-driven-apps-developer-overview"></a>Aplicaciones controladas por modelos: introducción para desarrolladores
 
-PowerApps ofrece a usuarios, empresas, socios, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. La novedad incorporada en PowerApps en esta versión son las aplicaciones controladas por modelos que se compilan con el nuevo Common Data Service for Apps. Common Data Service for Apps ahora contiene la funcionalidad básica de las aplicaciones de Dynamics 365 Customer Engagement. Con las aplicaciones controladas por modelos, se pueden compilar aplicaciones que usen las mismas características de extensibilidad que esas aplicaciones.
+PowerApps ofrece a usuarios, empresas, socios, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. La novedad incorporada en PowerApps en esta versión son las aplicaciones controladas por modelos que se compilan con el nuevo Common Data Service for Apps. Common Data Service for Apps ya contiene la funcionalidad básica de las aplicaciones de Dynamics 365 Customer Engagement. Con las aplicaciones controladas por modelos, se pueden compilar aplicaciones que usen las mismas características de extensibilidad que esas aplicaciones.
 
 Las aplicaciones controladas por modelos son principalmente un enfoque de componentes sin código o con poca cantidad de código enfocado al desarrollo de aplicaciones. El valor que los desarrolladores pueden proporcionar es mediante la extensión de la aplicación. Antes de empezar a escribir código, comience por aprender a compilar una aplicación controlada por modelos y las opciones que se pueden aplicar sin necesidad de código. 
 

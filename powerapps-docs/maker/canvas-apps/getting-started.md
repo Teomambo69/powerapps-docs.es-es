@@ -7,12 +7,12 @@ ms.topic: overview
 ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329833"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311601"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
@@ -43,7 +43,7 @@ Ejecute sus propias aplicaciones (así como las que compartan con usted) en Wind
 ## <a name="learn-more"></a>Más información
 * Explorar los temas de referencia, conceptuales y paso a paso en el panel de navegación de la izquierda.
 * Utilice los [cursos de aprendizaje guiado](https://docs.microsoft.com/powerapps/guided-learning/), ya que podrá ir a su propio ritmo.
-* Consulte los [próximos seminarios web](webinars-listing.md#upcoming-webinars), ya que pueden ayudarle a sacar provecho de las características y funciones de PowerApps. También puede acceder a [seminarios web anteriores](webinars-listing.md#past-webinars) a petición.
+* Consulte los [seminarios web](webinars-listing.md) a los que puede acceder a petición, ya que pueden ayudarle a sacar provecho de las características y funciones de PowerApps.
 
 ## <a name="share-your-experience"></a>Compartir la experiencia
 * Leer y publicar en la [comunidad de PowerApps](https://aka.ms/powerapps-community), donde todos los usuarios de PowerApps pueden publicar una pregunta y otros usuarios responderla. Antes de publicar una pregunta, busque en la comunidad para ver si ya se ha respondido.

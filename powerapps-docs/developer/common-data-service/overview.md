@@ -15,29 +15,30 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 5ed61c77cc0cea3cf25e48b347f8a524cf62dfd5
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949295"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Introducción para desarrolladores de Common Data Service for Apps
-PowerApps ofrece a usuarios, empresas, socios, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. La novedad incorporada en PowerApps en esta versión es el nuevo Common Data Service for Apps. Common Data Service for Apps ahora contiene la funcionalidad básica de la plataforma Dynamics 365 Customer Engagement.
+PowerApps ofrece a usuarios, empresas, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. En esta versión, se ha agregado a PowerApps la ampliación de Common Data Service, que ahora se llama Common Data Service for Apps y contiene las principales funcionalidades de la plataforma Dynamics 365 que incorpora Dynamics 365 for Sales, Marketing y Customer Service.
 
 
 ## <a name="get-started"></a>Introducción
-Si ya tiene experiencia con las aplicaciones de Dynamics 365 Customer Engagement, encontrará que podrá aplicarla para personalizar y extender Common Data Service for Apps.
+Si ya tiene experiencia con las aplicaciones de Dynamics 365 for Sales, Marketing o Customer Service, encontrará que podrá aplicarla para personalizar y ampliar Common Data Service for Apps.
 
-Si no está familiarizado con las aplicaciones de Dynamics 365 Customer Engagement, en los temas siguientes se proporciona información general de los conceptos importantes para ayudarle a empezar a trabajar con Common Data Service for Apps.
+Si no está familiarizado con las aplicaciones de Dynamics 365 for Sales, Marketing o Customer Service, en los temas siguientes se proporciona información general de los conceptos importantes para ayudarle a empezar a utilizar Common Data Service for Apps.
 
 > [!NOTE]
 > - Las aplicaciones controladas por modelos se conectan a Common Data Service for Apps. Para obtener información sobre cómo los desarrolladores pueden agregar valor en el nivel de aplicación, vea [Model-driven apps Developer Overview](../model-driven-apps/overview.md) (Introducción para desarrolladores de aplicaciones controladas por modelos). El contenido de esta sección hará referencia únicamente a lo que los desarrolladores de extensiones pueden hacer en el nivel de servicio. 
-> - Dado que Common Data Service for Apps y Dynamics 365 Customer Engagement aprovechan la misma plataforma, encontrará información más completa para desarrolladores en la [Guía para desarrolladores de Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). En estos temas se proporciona una introducción con vínculos a la guía para desarrolladores y otras guías para obtener más información.
+> - Ya que Common Data Service for Apps es la misma plataforma usada por las aplicaciones de Dynamics 365 for Sales, Marketing o Customer Service, encontrará información más completa para desarrolladores en la [Guía para desarrolladores de Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). En estos temas se proporciona una introducción con vínculos a la guía para desarrolladores y otras guías para obtener más información.
 
 
 ## <a name="tools-and-resources-for-developers"></a>Herramientas y recursos para desarrolladores
 
-Los desarrolladores usarán las herramientas y recursos siguientes al trabajar con soluciones que usan Common Data Service para aplicaciones.
+Los desarrolladores usarán las herramientas y recursos siguientes al trabajar con soluciones que usan Common Data Service for Apps.
 
 ### <a name="tools-available-for-download-from-nuget"></a>Herramientas disponibles para su descarga desde NuGet
 
@@ -134,7 +135,7 @@ Más información: [Ampliar Dynamics 365 Customer Engagement para Outlook (Guía
 
 
 
-### <a name="community-tools-for-common-data-service-for-apps"></a>Herramientas de la comunidad para Common Data Service for Apps
+## <a name="community-tools-for-common-data-service-for-apps"></a>Herramientas de la comunidad para Common Data Service for Apps
 
 La comunidad de Dynamics 365 crea herramientas. Muchas de las más populares se distribuyen en [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación Windows que se conecta a Common Data Service for Apps, y proporciona herramientas para facilitar las tareas de personalización, configuración y funcionamiento. Incluye más de 30 complementos para realizar tareas de administración, personalización o configuración con más facilidad y en mucho menos tiempo.
 
