@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 5e9b9ec980e6dd4aeacfef42b40fe7f52c19d558
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4cdc1116de5882b69814bd91b4006debb8c5f5cf
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838749"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899350"
 ---
 # <a name="understand-data-sources-in-powerapps"></a>Información acerca de los orígenes de datos en PowerApps
 La mayoría de las aplicaciones de PowerApps utilizan información externa almacenada en servicios en la nube denominados **Orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
@@ -54,7 +54,7 @@ Los orígenes de datos en tabla se pueden usar del mismo modo que se usa una tab
 * El origen de datos tiene la mismos nombres de columna y tipos de datos que la tabla subyacente de la conexión.
   
     > [!NOTE]
-> En los orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, PowerApps los sustituirá por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+  > En los orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, PowerApps los sustituirá por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 * El origen de datos se carga desde el servicio automáticamente cuando se carga la aplicación.  Con la función **[Actualizar](functions/function-refresh.md)** se puede forzar la actualización de los datos.
 * Cuando los usuarios ejecutan una aplicación, pueden crear, modificar y eliminar registros, y aplicar esos cambios posteriormente a la tabla subyacente del servicio.
   * Los registros se pueden crear con las funciones **[Patch](functions/function-patch.md)** y **[Recopilar](functions/function-clear-collect-clearcollect.md)**.  

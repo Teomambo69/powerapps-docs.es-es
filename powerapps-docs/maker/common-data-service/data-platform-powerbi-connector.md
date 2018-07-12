@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d8323eb103751a1be78aeea0093b9d6651ddc3e2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445899"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898774"
 ---
 # <a name="create-a-power-bi-report"></a>Crear un informe de Power BI
 Common Data Service for Apps le permite conectarse directamente a los datos mediante Power BI Desktop para crear informes y publicarlos en Power BI. Desde Power BI, se puede usar los informes en los paneles, compartirlos con otros usuarios y acceder a distintas plataformas de aplicaciones móviles de Power BI.
@@ -57,11 +57,11 @@ Para usar Power BI con Common Data Service for Apps, necesita lo siguiente:
 
 4. El explorador mostrará todas las entidades disponibles para su entorno agrupadas en tres carpetas. Expanda la carpeta **Common Data Model**.
 
-    * Common Data Model: se trata de entidades estándares que normalmente están disponibles y se usan en todos los entornos como parte de Common Data Model.
-    * Entidades personalizadas: son entidades que ha creado o importado en su entorno.
-    * Sistema: contiene todas las entidades en su entorno, incluidas las entidades personalizadas y de Common Data Model.
+   * Common Data Model: se trata de entidades estándares que normalmente están disponibles y se usan en todos los entornos como parte de Common Data Model.
+   * Entidades personalizadas: son entidades que ha creado o importado en su entorno.
+   * Sistema: contiene todas las entidades en su entorno, incluidas las entidades personalizadas y de Common Data Model.
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
+     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
 
 5. Seleccione la entidad **Cuenta** para obtener una vista previa de los datos en el panel derecho y haga clic en **Cargar**.
 

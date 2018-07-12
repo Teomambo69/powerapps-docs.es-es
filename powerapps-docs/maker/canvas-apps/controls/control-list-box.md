@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 24fc5523b2f1d3cced7cdf4af8c30c65d28757a2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e43d786cf8eac8bb4ca6b13c953281614559c132
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837881"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899419"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -170,4 +170,4 @@ Y esto, además de los [requisitos estándar de contraste de color](../accessibl
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
 
     > [!NOTE]
-> La tecla de tabulación se desplaza hasta el control **Cuadro de lista** o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del control **Cuadro de lista**.
+  > La tecla de tabulación se desplaza hasta el control **Cuadro de lista** o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del control **Cuadro de lista**.
