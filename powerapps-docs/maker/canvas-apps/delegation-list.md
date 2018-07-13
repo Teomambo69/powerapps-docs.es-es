@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 87f1895801ec7d1121b042d6baf097b79801f019
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f1d9b6463cc597d13fa1b9c1389fbfcc6d5b5ded
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830245"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896291"
 ---
 # <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Tal como se describe en detalle en el artículo [Descripción de delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación para procesarlos localmente.
@@ -46,6 +46,7 @@ En este documento se describe el estado actual de la delegación admitida para c
 Esta lista de orígenes de datos, y funciones y predicados delegables se actualizará periódicamente para reflejar el estado actual de la compatibilidad con la delegación en PowerApps.
 
 ### <a name="top-level-delegable-functions"></a>Funciones delegables de nivel superior
+
 | &nbsp; | Common Data Service | SharePoint | SQL Server | Dynamics 365 | Salesforce |
 | --- | --- | --- | --- | --- | --- |
 | Average |No |No |Sí |No |No |
@@ -61,6 +62,7 @@ Esta lista de orígenes de datos, y funciones y predicados delegables se actuali
 <sup>1</sup>Solo para campos de cadena
 
 ### <a name="filter-and-lookup-delegable-predicates"></a>Predicados delegables de Filtrar y Buscar
+
 | &nbsp; | Common Data Service | SharePoint | SQL Server | Dynamics 365 | Salesforce |
 | --- | --- | --- | --- | --- | --- |
 | No |Sí |No |Sí |Sí |Sí |

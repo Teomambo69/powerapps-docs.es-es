@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: b8b25f5bfa3ddbce7b1c541afb7a935a2fe4aa36
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803489"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898177"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>Control Escáner de código de barras (experimental) en PowerApps
 Un control experimental con el que el usuario puede realizar fotos mediante el escáner de código de barras del dispositivo.
@@ -32,19 +32,9 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**Brillo**: indica la claridad que el usuario percibirá probablemente en una imagen.
-
-**Contraste**: indica cómo el usuario puede distinguir fácilmente colores similares en una imagen.
-
 **[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
-
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario pulsa o hace clic en un control.
-
-**EnSecuencia**: indica cómo responde la aplicación cuando la propiedad **Stream** está actualizada.
-
-**Foto**: la imagen capturada cuando el usuario realiza una foto.
 
 **ShowLiveBarcodeDetection**: indica si se muestran indicaciones visuales para señalar el estado de la detección de códigos de barras. Los rectángulos amarillos representan áreas que se van a examinar. Una línea verde que atraviesa un rectángulo indica la identificación correcta del código de barras.
 
@@ -63,8 +53,6 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
-
-**Ampliar**: el porcentaje en que se amplía una imagen de un escáner de código de barras o la vista de un archivo en un visor PDF.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
@@ -87,4 +75,4 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
 
     > [!NOTE]
-> Los lectores de pantalla anunciarán cuándo se ha encontrado un nuevo código de barras. El valor no se anunciará. Siempre que el código de barras esté a la vista, los lectores de pantalla recordarán cada 5 segundos que se sigue identificando el mismo código de barras.
+  > Los lectores de pantalla anunciarán cuándo se ha encontrado un nuevo código de barras. El valor no se anunciará. Siempre que el código de barras esté a la vista, los lectores de pantalla recordarán cada 5 segundos que se sigue identificando el mismo código de barras.

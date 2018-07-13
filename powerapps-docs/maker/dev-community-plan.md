@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 324fa80060a7c07bd5f0708df9fdabdbe7893236
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33078429"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899488"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
@@ -77,6 +77,7 @@ Con el entorno individual, tendrá las siguientes funcionalidades:
 \*\*La creación de una base de datos con Common Data Service no está disponible actualmente en un entorno individual, y estará disponible de nuevo próximamente. Si creó una base de datos en un momento anterior, podrá seguir usándola sin ningún problema. 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>¿Cuáles son los límites de capacidad para el entorno individual?
+
 | **Capacidad** |  |
 | --- | --- |
 | Ejecuciones de flujo/mes |750 |

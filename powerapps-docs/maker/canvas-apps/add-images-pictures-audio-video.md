@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d193c2691f689e935a5dbb92767a16d393098770
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330914"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896751"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 En este tema, aprenderá a insertar archivos multimedia en la aplicación, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
@@ -48,14 +48,14 @@ Puede elegir el tipo de contenido multimedia que desea agregar; por ejemplo, im�
     ![Configurar la propiedad Imagen](./media/add-images-pictures-audio-video/imageproperty.png)
 
     > [!NOTE]
-> El nombre de archivo debe especificarse sin la extensión y entre comillas simples.
+   > El nombre de archivo debe especificarse sin la extensión y entre comillas simples.
 
 7. Si agrega un control de vídeo o audio, establezca la propiedad **Media** (Multimedia) en el archivo que agregó:  
 
     ![Configurar la propiedad Media (Multimedia)](./media/add-images-pictures-audio-video/mediaproperty.png)
 
     > [!NOTE]
-> Para reproducir un vídeo de YouTube, la propiedad **Media** (Multimedia) del control de vídeo tiene que establecerse en la dirección URL correspondiente, que debe escribirse entre comillas dobles.
+   > Para reproducir un vídeo de YouTube, la propiedad **Media** (Multimedia) del control de vídeo tiene que establecerse en la dirección URL correspondiente, que debe escribirse entre comillas dobles.
 
 ## <a name="add-media-from-azure-media-services"></a>Agregar contenido multimedia desde Azure Media Services
 1. Desde su cuenta de Azure Media Services, cargue y publique sus recursos de vídeo desde **AMS > Configuración > Activos**.

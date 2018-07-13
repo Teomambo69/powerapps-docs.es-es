@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
-ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
+ms.openlocfilehash: f8f21235170483c908149898f92b57cc6c2cb9aa
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291752"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896429"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
 Ahora puede [personalizar cualquier formulario de lista de SharePoint](customize-list-form.md) de manera fácil en PowerApps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
@@ -66,7 +66,7 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
     * **OnCancel**: restablece los cambios realizados en **SharePointForm1**. SharePoint siempre oculta el formulario cuando un usuario pulsa o hace clic en **Cancelar** en SharePoint.
 
-        **SubmitForm(SharePointForm1)**
+        **ResetForm(SharePointForm1)**
 
 Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta en SharePoint (lo que hacen es cambiar el modo del formulario de PowerApps cuando el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint).
 
@@ -103,8 +103,8 @@ Ahora que comprende mejor el formulario generado predeterminado y el control **S
 
 * Use la fórmula **OnSave** del control **SharePointIntegration** para personalizar lo que sucede cuando un usuario pulsa o hace clic en **Guardar** en SharePoint. Si tiene varios formularios, asegúrese de enviar los cambios correspondientes solamente al formulario que usa actualmente.
 
-    >[!TIP]
-     Establezca diferentes valores para una variable en las fórmulas **OnNew**, **OnView** y **OnEdit**. Puede usar esta variable en la fórmula **OnSave** para determinar el formulario que usa.
+  > [!TIP]
+  >    Establezca diferentes valores para una variable en las fórmulas **OnNew**, **OnView** y **OnEdit**. Puede usar esta variable en la fórmula **OnSave** para determinar el formulario que usa.
 
 * No olvide incluir **RequestHide()** en la fórmula **OnSuccess** de todos los formularios. Si lo olvida, SharePoint no sabrá cuándo ocultar el formulario.
 

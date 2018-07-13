@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6ba2186e7f6618cdaa6eef8073e5f3897628ae8f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c221bae846dba06f83705c52c9cbe2f236ab2007
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838226"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896797"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funciones Sort y SortByColumns en PowerApps
 Ordena una [tabla](../working-with-tables.md).
@@ -57,7 +57,7 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 * *SortOrder(s)*: opcional.  **SortOrder.Ascending** o **SortOrder.Descending**.  **SortOrder.Ascending** es el valor predeterminado.  Si se suministran varios *ColumnNames*, todas las columnas, menos la última, deben incluir un *SortOrder*.
   
     > [!NOTE]
-> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +66,7 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 * *SortOrderTable*: requerido.  Tabla de valores de una sola columna según la cual ordenar.
   
     > [!NOTE]
-> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 En los ejemplos siguientes, usaremos el [origen de datos](../working-with-data-sources.md) **Helado**, que contiene los datos de esta tabla:

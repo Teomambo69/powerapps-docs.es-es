@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330592"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899971"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Instalar y configurar el ejemplo de informe de gastos de PowerApps
 
@@ -241,23 +241,23 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 
 ## <a name="import-the-expense-report-powerapp"></a>Importar la aplicación de PowerApps de informe de gastos
 
-1.  En un explorador web, vaya a https://web.powerapps.com.
-2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
-3.  En el menú de la izquierda, seleccione **Aplicaciones**. 
-4.  Haga clic en **Importar paquete (versión preliminar)**.
+1. En un explorador web, vaya a https://web.powerapps.com.
+2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
+3. En el menú de la izquierda, seleccione **Aplicaciones**. 
+4. Haga clic en **Importar paquete (versión preliminar)**.
     
-    ![Pantalla Importar paquete](./media/expense-report-install/import-package.png)
+   ![Pantalla Importar paquete](./media/expense-report-install/import-package.png)
 
-5.  Haga clic en el botón **Cargar** y seleccione el paquete de PowerApps que descargó en pasos anteriores.
-6.  Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
-7.  Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
+5. Haga clic en el botón **Cargar** y seleccione el paquete de PowerApps que descargó en pasos anteriores.
+6. Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
+7. Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
     
-    ![Pantalla Importar configuración](./media/expense-report-install/import-settings.png)
+   ![Pantalla Importar configuración](./media/expense-report-install/import-settings.png)
 
-8.  Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
-9.  En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+8. Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
+9. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
 
-    ![Pantalla Importar configuración](./media/expense-report-install/import-settings-sharepoint.png)
+   ![Pantalla Importar configuración](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. Haga clic en **Guardar**.
 11. Haga clic en el **icono rojo** correspondiente a la **conexión de aprobación**.
@@ -265,9 +265,9 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-approvals.png)
 
-13.  Haga clic en **Guardar**.
-14.  Haga clic en el **icono rojo** correspondiente a la **conexión de Office 365 Outlook**.
-15.  En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+13. Haga clic en **Guardar**.
+14. Haga clic en el **icono rojo** correspondiente a la **conexión de Office 365 Outlook**.
+15. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-office365outlook.png)
 
@@ -383,7 +383,7 @@ Vea este vídeo para aprender a usar el ejemplo de informe de gastos de PowerApp
 
 [![Vídeo de instalación del informe de gastos](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-##<a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 - [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [Agregar y configurar un control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

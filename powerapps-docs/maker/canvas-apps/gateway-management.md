@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: d51d134878b04f3cb10ff876ef488f1390e4ef30
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 939758c1550f1006f00bd9a386eb4b9cbcd69af0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826807"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899925"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 Instale una puerta de enlace de datos local para transferir datos de manera rápida y segura entre PowerApps y un origen de datos que no esté en la nube, como una base de datos de SQL Server local o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
@@ -67,7 +67,7 @@ Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, selecci
 3. Para compartir una conexión, haga clic o pulse en **Compartir** y, a continuación, agregue o quite usuarios.
 
     > [!NOTE]
-> Solo puede compartir algunos tipos de conexiones, como SQL Server. Para más información, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
+   > Solo puede compartir algunos tipos de conexiones, como SQL Server. Para más información, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
 
 Para más información sobre cómo administrar una conexión, consulte [Administración de conexiones](add-manage-connections.md).
 

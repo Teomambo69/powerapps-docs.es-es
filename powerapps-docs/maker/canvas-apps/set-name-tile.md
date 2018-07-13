@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 386ecbd360dc13c21d48e0c134a87e8b7d007547
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4bafb954b5723e813fade2ee633a51f4d8385e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830188"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895877"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>Cambiar el nombre y el icono de la aplicación en PowerApps
 Personalice una aplicación cambiando su nombre e icono.
@@ -46,7 +46,7 @@ Siga uno o varios de estos pasos:
 * Pulse o haga clic en **Browse file** (Examinar archivo), pulse o haga clic en la imagen que desea usar y luego pulse o haga clic en **Open** (Abrir).
 
     > [!NOTE]
-> Para obtener los mejores resultados posibles, use un icono de forma cuadrada.
+  > Para obtener los mejores resultados posibles, use un icono de forma cuadrada.
 
 ## <a name="next-step"></a>Paso siguiente
 En el menú **File** (Archivo), pulse o haga clic en **Save** (Guardar) para volver a publicar la aplicación con la nueva configuración.

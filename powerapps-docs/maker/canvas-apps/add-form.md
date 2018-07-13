@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826278"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895831"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Mostrar, editar o agregar un registro de una tabla en PowerApps
 Para mostrar todos los campos de un registro, agregue y configure un control **[Formulario de presentación](controls/control-form-detail.md)**. Para editar cualquier campo de un registro (o para agregar un registro) y guardar los cambios en un origen de datos, agregue y configure un control **[Edit form](controls/control-form-detail.md)**.
@@ -36,7 +36,7 @@ Para mostrar todos los campos de un registro, agregue y configure un control **[
     **FlooringEstimates.Name**
 
     > [!NOTE]
-> Si no está seguro de cómo agregar un control, cambiar su nombre o establecer una propiedad, consulte [Adición y configuración de un control en PowerApps](add-configure-controls.md).
+   > Si no está seguro de cómo agregar un control, cambiar su nombre o establecer una propiedad, consulte [Adición y configuración de un control en PowerApps](add-configure-controls.md).
 
     La lista muestra nombres de productos para el suelo del origen de datos.
 
@@ -45,7 +45,7 @@ Para mostrar todos los campos de un registro, agregue y configure un control **[
     ![Agregar un formulario](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-> En este tema se describe el control **Formulario de edición**, pero se aplican los mismos principios al control **Formulario de presentación**.
+   > En este tema se describe el control **Formulario de edición**, pero se aplican los mismos principios al control **Formulario de presentación**.
 
 3. Establezca la propiedad **[DataSource](controls/control-form-detail.md)** del formulario en **FlooringEstimates** y la propiedad **[Item](controls/control-form-detail.md)** del formulario en esta fórmula:
 
@@ -56,7 +56,7 @@ Para mostrar todos los campos de un registro, agregue y configure un control **[
 4. En el panel **Data** (Datos), haga clic o pulse en la casilla de cada campo para mostrarlo.
 
     > [!NOTE]
-> Si el panel **Data** (Datos) está cerrado, para abrirlo es preciso seleccionar el formulario del panel izquierdo y, después, pulsar o hacer clic en **Data** (Datos) en el panel derecho.
+   > Si el panel **Data** (Datos) está cerrado, para abrirlo es preciso seleccionar el formulario del panel izquierdo y, después, pulsar o hacer clic en **Data** (Datos) en el panel derecho.
 
     ![Mostrar campos en el formulario](./media/add-form/checkbox.png)
 

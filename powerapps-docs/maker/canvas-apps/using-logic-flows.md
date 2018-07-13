@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7079dc6194361cc700ccaad6c02ca0bcf8a9f9d6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329626"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895923"
 ---
 # <a name="start-a-flow-in-an-app"></a>Inicio de un flujo en una aplicación
 Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
@@ -52,7 +52,7 @@ Microsoft Flow se puede usar para crear lógica que realice una o varias tareas 
    3. En el cuadro **Dirección del sitio web**, escriba o pegue la dirección URL de un sitio de SharePoint Online que contenga una lista.
 
        > [!NOTE]
-> Especifique la dirección URL del sitio, sin incluir la lista.
+      > Especifique la dirección URL del sitio, sin incluir la lista.
 
    4. En el cuadro **Nombre de lista** , seleccione la lista que desea utilizar.
 
@@ -86,7 +86,7 @@ Microsoft Flow se puede usar para crear lógica que realice una o varias tareas 
 6. En el panel que aparece, seleccione el flujo que creó en el procedimiento anterior.
 
     > [!NOTE]
-> Si el flujo que ha creado no está disponible, compruebe si PowerApps está establecido en el entorno en el que lo creó.
+   > Si el flujo que ha creado no está disponible, compruebe si PowerApps está establecido en el entorno en el que lo creó.
 
     ![Agregar un flujo desde el panel de personalización](./media/using-logic-flows/add-flow-from-pane.png)
 

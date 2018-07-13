@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: e11521219fcd368801a6e943f45dbc713309ec36
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d8d5e29fc7f1c551ac637d86886bc658e7414110
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803429"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898016"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -33,7 +33,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 * Para una base de datos local, identifique una [puerta de enlace de datos](../gateway-management.md) que se haya compartido con usted (o cree una).
   
     > [!NOTE]
-> Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](../working-with-environments.md) del usuario.
+  > Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](../working-with-environments.md) del usuario.
 
 ## <a name="generate-an-app-automatically"></a>Generar una aplicación automáticamente
 1. En PowerApps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo** (en el borde izquierdo).
@@ -54,7 +54,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
        ![Conexión a un recurso local](./media/connection-azure-sqldatabase/connect-onprem.png)
      
        > [!NOTE]
-> Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse **Actualizar lista de puertas de enlace**.
+     > Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse **Actualizar lista de puertas de enlace**.
 6. Pulse o haga clic en **Conectar**.
 7. Pulse o haga clic en una opción en **Elegir un conjunto de datos**, pulse o haga clic en una opción en **Elegir una tabla** y, después, pulse o haga clic en **Conectar**.
    
@@ -77,7 +77,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
        ![Conexión a una base de datos en Azure](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
        > [!NOTE]
-> Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse el icono del reloj para actualizar la lista.
+     > Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse el icono del reloj para actualizar la lista.
 5. Pulse o haga clic en **Crear** para crear la conexión.
 6. Cree una aplicación mediante técnicas que son similares a las que describen en [Crear una aplicación desde cero](../get-started-create-from-blank.md).
 
@@ -98,7 +98,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
        ![Conexión a una base de datos en Azure](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
        > [!NOTE]
-> Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse el icono circular para actualizar la lista.
+     > Si no tiene una puerta de enlace, [instálela](../gateway-reference.md)y, después, haga clic o pulse el icono circular para actualizar la lista.
 6. Pulse o haga clic en **Conectar**.
 7. En **Elegir un conjunto de datos**, pulse o haga clic en opción.
 8. En **Elegir una tabla**, seleccione una o varias casillas y, después, pulse o haga clic en **Conectar**.

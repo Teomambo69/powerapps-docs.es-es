@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168260"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897303"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Tutorial: Creación de una entidad personalizada que tiene componentes en PowerApps
 
@@ -38,49 +38,49 @@ Inicie sesión en [PowerApps](https://powerapps.microsoft.com/). Si todavía no 
 1. En el panel de navegación de la izquierda, expanda **Datos**, haga clic en **Entidades** y, después, en **Nueva entidad**.
     ![Nueva entidad](media/create-custom-entity/create-new-entity.png)
 2. En el panel de la derecha, escriba los valores siguientes y, después, haga clic en **Siguiente**.
-  - **Nombre para mostrar**: *Mascota* 
-  - **Descripción**: *Entidad personalizada para realizar el seguimiento de los servicios para mascotas*
+   - **Nombre para mostrar**: *Mascota* 
+   - **Descripción**: *Entidad personalizada para realizar el seguimiento de los servicios para mascotas*
 3. Haga clic en **Guardar entidad**.
 
 ## <a name="add-and-customize-fields"></a>Agregar y personalizar campos
  
 1. En la pestaña **Campos**, seleccione el campo **Nombre principal**.
 2. En el panel de la derecha, realice los cambios siguientes en el campo **Nombre principal**: 
-  - Cambie el **Nombre para mostrar** de **Nombre principal** a *Nombre de la mascota*.
-  - Haga clic en **Se puede buscar**.  
+   - Cambie el **Nombre para mostrar** de **Nombre principal** a *Nombre de la mascota*.
+   - Haga clic en **Se puede buscar**.  
   
-    ![Cambiar el campo principal](media/create-custom-entity/primary-field.png)
+     ![Cambiar el campo principal](media/create-custom-entity/primary-field.png)
 3. Seleccione **Listo**.
 4. En la pestaña **Campos** de la barra de herramientas del diseñador de entidades haga clic en **Agregar campo**. En el panel **Propiedades de campo**, escriba o seleccione las opciones y los valores siguientes.
-  - **Nombre para mostrar**. *Especie*
-  - **Tipo de datos**. *Conjunto de opciones*
-  - **Conjunto de opciones**. *Nuevo conjunto de opciones*
+   - **Nombre para mostrar**. *Especie*
+   - **Tipo de datos**. *Conjunto de opciones*
+   - **Conjunto de opciones**. *Nuevo conjunto de opciones*
 5. Crear el conjunto de opciones
 
-  a. Haga clic en **Agregar nuevo elemento**. 
+   a. Haga clic en **Agregar nuevo elemento**. 
   
-  b. Reemplace **Nueva opción** con *Perro*. 
+   b. Reemplace **Nueva opción** con *Perro*. 
    
-  c. Haga clic en **Agregar nuevo elemento**. 
+   c. Haga clic en **Agregar nuevo elemento**. 
     
-  d.  Reemplace **Nueva opción** con *Gato*. 
+   d.  Reemplace **Nueva opción** con *Gato*. 
     
-  e. Seleccione **Guardar**. 
+   e. Seleccione **Guardar**. 
 
-  ![Nuevo conjunto de opciones](media/create-custom-entity/optionset-add-items.png)
+   ![Nuevo conjunto de opciones](media/create-custom-entity/optionset-add-items.png)
 
 6. Haga clic en **Se puede buscar** y después en **Listo**.
 
 7. En la barra de herramientas del diseñador de entidades haga clic en **Agregar campo**. En el panel **Propiedades de campo**, escriba o seleccione las opciones y los valores siguientes, y después haga clic en **Listo**.
-  - **Nombre para mostrar**. *Raza*
-  - **Tipo de datos**. *Texto*
-  - **Se puede buscar**. *Sí*
+   - **Nombre para mostrar**. *Raza*
+   - **Tipo de datos**. *Texto*
+   - **Se puede buscar**. *Sí*
 
 8. En la barra de herramientas del diseñador de entidades haga clic en **Agregar campo**. 
 
 9. En el panel **Propiedades de campo**, escriba o seleccione las opciones y los valores siguientes, y después haga clic en **Listo**. 
-  - **Nombre para mostrar**. *Fecha de la cita*
-  - **Tipo de datos**. *Fecha y hora*
+   - **Nombre para mostrar**. *Fecha de la cita*
+   - **Tipo de datos**. *Fecha y hora*
 
 10. Haga clic en **Guardar entidad**.
 
@@ -97,10 +97,10 @@ Tenga en cuenta que, cuando se agrega una relación varios a uno, se agrega auto
 
 1. Haga clic en la pestaña **Vistas** y, después, seleccione la vista **Mascotas activas**. Si no ve la vista **Mascotas activas**, haga clic en **Quitar filtro**.
 2. En el diseñador de vistas, haga clic en **Agregar columnas**, seleccione las columnas siguientes y, después, haga clic en **Aceptar**.
-  - Cuenta
-  - Fecha de la cita 
-  - Raza 
-  - Especie
+   - Cuenta
+   - Fecha de la cita 
+   - Raza 
+   - Especie
 3. Seleccione la columna **Creado el**, haga clic en **Quitar** y después en **Aceptar** para confirmar la eliminación de la columna.
 4. Para organizar las columnas, seleccione la columna que quiera mover y, después, pulse los botones de flecha <- y -> hasta que la vista tenga este aspecto.
     ![Vista de mascotas activas](media/create-custom-entity/active-pets-view.png)

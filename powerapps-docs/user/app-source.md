@@ -2,18 +2,21 @@
 title: Detección de aplicaciones a través de AppSource | Microsoft Docs
 description: Detecte las aplicaciones que se comparten con su organización a través de AppSource
 author: linhtranms
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/28/2016
-ms.author: litran
-ms.openlocfilehash: 3f1eee4a220b46fcae769054eef71c1c8ad41859
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.date: 07/09/2018
+ms.author: matp
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: ce7494e136c3cc4e0ff6e841f5145fee8a9185c2
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34074185"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925487"
 ---
 # <a name="discover-apps-via-appsource"></a>Detectar aplicaciones a través de AppSource
 Las aplicaciones que se crean y publican con PowerApps se detectan y utilizan en Dynamics 365 en la Web. Muestra todas las aplicaciones: las que haya decidido usar específicamente (es decir, al iniciarlas desde un correo electrónico compartido o abrirlas desde AppSource) o las que un administrador haya aprovisionado para su uso. Esto incluye todas las aplicaciones de PowerApps, así como las de Dynamics 365 de Microsoft. Puede buscar aplicaciones, filtrar por entorno y anclar las aplicaciones que use con más frecuencia a la parte superior de la página.

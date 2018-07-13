@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 396a2d5325b7b72f3637dba1edddeead49594167
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a0f55de520a180a646e1e73aac423abc74bfed1d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832590"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896245"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>Funciones FechaNumero, HoraNumero y FechaHoraNumero en PowerApps
 Convierte una fecha o una hora, o ambas, en un valor de fecha y hora.
@@ -61,7 +61,7 @@ Si escribió **10/11/2014** en un control de entrada de texto denominado **Start
     La etiqueta debería mostrar el **sábado, 11 de octubre de 2014**, si su equipo se ha configurado con la configuración regional **en**.
   
     > [!NOTE]
-> Puede utilizar varias opciones, excepto **FechaYHoraLargas**, con el parámetro **FormatoDeFechaYHora**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
+  > Puede utilizar varias opciones, excepto **FechaYHoraLargas**, con el parámetro **FormatoDeFechaYHora**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
 * **Texto(FechaNumero(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     La etiqueta mostrará ahora el **lunes 10 de noviembre de 2014**.
@@ -80,7 +80,7 @@ Si escribió **10/11/2014 1:50:24.765 p. m.** en un control de entrada de texto
     La etiqueta debería mostrar el **sábado, 11 de octubre de 2014 1:50:24 p. m.**, si su equipo se ha configurado con la configuración regional "en".
   
     > [!NOTE]
-> Puede utilizar varias opciones, excepto **FechaYHoraLargas**, con el parámetro **FormatoDeFechaYHora**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
+  > Puede utilizar varias opciones, excepto **FechaYHoraLargas**, con el parámetro **FormatoDeFechaYHora**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
 * **Texto(FechaHoraNumero(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     La etiqueta mostrará ahora el **lunes 10 de noviembre de 2014 1:50:24 p. m**.

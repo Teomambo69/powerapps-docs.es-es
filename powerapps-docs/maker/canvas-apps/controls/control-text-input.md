@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7f78cc61b4e6af34af7bf6944e70e783872bc255
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838473"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897510"
 ---
 # <a name="text-input-control-in-powerapps"></a>Control Entrada de texto en PowerApps
 Un cuadro en el que el usuario puede escribir texto, números y otros datos.
@@ -149,17 +149,23 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
 6. (opcional) Agregue más nombres a la colección y, a continuación, presione Esc para volver al área de trabajo predeterminada.
 
 ### <a name="prompt-for-a-password"></a>Solicitud de una contraseña
+
 1. Agregue un control Entrada de texto, llámelo **inputPassword**y establezca su propiedad **Mode** en **Password**.
-2. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:<br>
+
+1. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
-   
+
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
-3. Presione F5 y, a continuación, escriba **P@ssw0rd** en **inputPassword**.
-   
+
+1. Presione F5 y, a continuación, escriba **P@ssw0rd** en **inputPassword**.
+
     Cuando acabe de escribir la contraseña, la etiqueta dejará de mostrar**Acceso denegado** y empezará a mostrar **Acceso concedido**.
-4. Presione Esc para volver al área de trabajo predeterminada.
-5. (opcional) Agregue un control como una flecha, configúrelo para desplazarse a otra pantalla y que solo aparezca después de que el usuario escriba la contraseña.
-6. (opcional) Agregue un botón, configure su propiedad **[Texto](properties-core.md)** para que muestre **Iniciar sesión**, agregue un temporizador y deshabilite el control Entrada de texto durante un determinado período de tiempo si el usuario escribe una contraseña incorrecta y, a continuación, pulse o haga clic en el botón **Iniciar sesión**.
+
+1. Presione Esc para volver al área de trabajo predeterminada.
+
+1. (opcional) Agregue un control como una flecha, configúrelo para desplazarse a otra pantalla y que solo aparezca después de que el usuario escriba la contraseña.
+
+1. (opcional) Agregue un botón, configure su propiedad **[Texto](properties-core.md)** para que muestre **Iniciar sesión**, agregue un temporizador y deshabilite el control Entrada de texto durante un determinado período de tiempo si el usuario escribe una contraseña incorrecta y, a continuación, pulse o haga clic en el botón **Iniciar sesión**.
 
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad

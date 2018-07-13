@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 45baa2450dbb081b800263a9119729e1c2846008
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839163"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899465"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Información sobre el diseño de formularios de datos en Microsoft PowerApps
 En PowerApps, puede crear fácilmente formularios que sean a la vez atractivos y eficientes. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
@@ -57,17 +57,17 @@ Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automát
     La etiqueta muestra el número del pedido de ventas del registro que seleccionó en la galería.
 3. (opcional) Dé formato a la etiqueta como se indica a continuación:
    
-    1. Establezca su propiedad **Align** en **Center**.
+   1. Establezca su propiedad **Align** en **Center**.
    
-    2. Establezca su propiedad **Size** en **20**.
+   2. Establezca su propiedad **Size** en **20**.
    
-    3. Establezca su propiedad **Fill** en **Navy**.
+   3. Establezca su propiedad **Fill** en **Navy**.
    
-    4. Establezca su propiedad **Color** en **White**.
+   4. Establezca su propiedad **Color** en **White**.
    
-    5. Establezca su propiedad **Width** en **Parent.Width**.
+   5. Establezca su propiedad **Width** en **Parent.Width**.
    
-    6. Establecer sus propiedades **X** e **Y** en **0**.
+   6. Establecer sus propiedades **X** e **Y** en **0**.
       
       ![Barra de título](./media/working-with-form-layout/title-bar.png)
 

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: a5d818bf12bafaa5c557afae1d93b6ba0a6a7d2f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 5e292b9cab399e4433c5b209fe22f17dd955ea9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803452"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898490"
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -141,7 +141,7 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
-> Utilice el punto y coma "**;**" para separar varias fórmulas.
+   > Utilice el punto y coma "**;**" para separar varias fórmulas.
 3. Establezca la propiedad **[Predeterminad](properties-core.md)** de **Origen** en **ClearInput** (Borrar entrada).
 4. Presione **F5**y, a continuación, pruebe la aplicación agregando varios números juntos.
 

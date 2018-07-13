@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: dc68b0f404c2a8d636deb4e77c2ada4582ed3a37
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: baa4c71efb54cea6f04cd45b895009a3c3ce17c7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836755"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899304"
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>Información general de los conectores de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce, Twitter, etc. Para empezar a agregar datos a una aplicación, consulte [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -46,7 +46,7 @@ Los conectores estándar se comportan de forma diferente según el tipo de orige
     [Crear una aplicación desde cero](get-started-create-from-blank.md)
 
     > [!NOTE]
-> Para conectarse a datos en Excel, el libro debe estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [Conexiones de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
+  > Para conectarse a datos en Excel, el libro debe estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [Conexiones de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
 * Otros conectores usan orígenes de datos basados en funciones, como Twitter, Facebook y Office 365 Outlook. Cuando se trabaja con estos orígenes de datos, los datos se devuelven a PowerApps cuando se llama a funciones específicas del servicio subyacente. Por ejemplo, con el conector de Twitter se llama a `Twitter.MyFollowers()` para devolver una lista de los seguidores. Estos datos también se pueden usar en un formulario o una galería, pero es preciso un esfuerzo algo mayor que con los datos tabulares. Para más información, consulte [Twitter](connections/connection-twitter.md).
 

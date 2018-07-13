@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 8dc68646808e40792d3e55aa9ac547aa43a78efb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c916784df877b1228fd8d9322a80ccccdc61967f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827353"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897901"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funciones SaveData y LoadData en PowerApps
 Guarda y vuelve a cargar una [colección](../working-with-data-sources.md#collections).
@@ -39,6 +39,7 @@ El almacenamiento está cifrado y se encuentra en una ubicación privada en el d
 * *IgnoreNonexistentFile*: opcional. Valor booleano (**true**/**false**) que indica si la función **LoadData** debe mostrar o ignorar los errores cuando no encuentre un archivo coincidente. Si especifica **false**, se mostrarán los errores. Si especifica **true**, se omitirán los errores, lo que resulta útil para escenarios sin conexión. **SaveData** puede crear un archivo si el dispositivo está desconectado (es decir, si el estado **Connection.Connected** es **false**).
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100})),LoadData(LocalTweets, "Tweets", true))** |Si el dispositivo está conectado, cargue la colección LocalTweets del servicio Twitter; si no lo está, cargue la colección de la caché de archivos local. |El contenido se presenta tanto si el dispositivo está conectado como desconectado. |

@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: ecbdc81b2688ee9aabf5e0df6416212957ca2642
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 45a341d28b4138ce03ce50d7325f9daa0f159d1a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298501"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897441"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 En PowerApps, una *entidad* define la información de la que se quiere realizar el seguimiento en forma de registros, que suelen incluir propiedades como el nombre de la empresa, la ubicación, los productos, el correo electrónico y el teléfono. Después, se pueden mostrar esos datos si se desarrolla una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar listas para usar para abarcar los escenarios típicos de una organización (por ejemplo, el seguimiento de las citas), pero puede haber ocasiones en las que sea necesario crear entidades personalizadas para almacenar datos específicos de la organización.
@@ -38,10 +38,10 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
 
 3. En el panel **Nueva entidad**, en el cuadro **Nombre para mostrar**, escriba **Revisión del producto** y, después, escriba una descripción opcional (las descripciones son útiles si otros usuarios van a usar esta entidad). Los demás campos del panel se rellenan automáticamente, como se describe a continuación. Cuando termine, haga clic en **Siguiente**.
 
-    * **Nombre para mostrar en plural**: este campo se rellena automáticamente cuando se escribe un nombre para mostrar, pero se puede cambiar si es necesario. El nombre para mostrar en plural es el nombre de la entidad en la API web de Common Data Service y se usa al interactuar con esta entidad desde PowerApps o Flow.
-    * **Nombre**: este campo también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se configuró al crear el entorno y garantiza que las entidades que se crean se puedan importar y exportar en otros entornos sin que entren en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service. Para evitar que las aplicaciones existentes dejen de funcionar, no se puede cambiar el nombre después de guardar la entidad.
+   * **Nombre para mostrar en plural**: este campo se rellena automáticamente cuando se escribe un nombre para mostrar, pero se puede cambiar si es necesario. El nombre para mostrar en plural es el nombre de la entidad en la API web de Common Data Service y se usa al interactuar con esta entidad desde PowerApps o Flow.
+   * **Nombre**: este campo también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se configuró al crear el entorno y garantiza que las entidades que se crean se puedan importar y exportar en otros entornos sin que entren en conflicto con otros nombres de entidad. Este prefijo se puede cambiar si se actualiza el prefijo en el editor para la solución predeterminada de Common Data Service. Para evitar que las aplicaciones existentes dejen de funcionar, no se puede cambiar el nombre después de guardar la entidad.
      
-    ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
+     ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
 
 4. En la página de detalles de la entidad, pulse o haga clic en el campo **Nombre principal** para abrir el panel **Nombre principal** y, después, en el cuadro **Nombre para mostrar**, sustituya **Nombre principal** con **Revisión del producto**. En el cuadro **Nombre**, sustituya **PrimaryName** con **RevisionProducto** y, después, pulse o haga clic en **Listo**.
  
@@ -66,15 +66,15 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
     ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Panel Nuevo campo")
 
 6. Repita el paso anterior para agregar tres campos más con las configuraciones siguientes:
-    * **Nombre para mostrar** = Clasificación de producto; **Tipo de datos** = Número entero; pulse o haga clic en la casilla **Necesario**.
-    * **Nombre para mostrar** = Nombre del revisor; **Tipo de datos** = Texto.
-    * **Nombre para mostrar** = Comentario de revisor; **Tipo de datos** = Texto.
+   * **Nombre para mostrar** = Clasificación de producto; **Tipo de datos** = Número entero; pulse o haga clic en la casilla **Necesario**.
+   * **Nombre para mostrar** = Nombre del revisor; **Tipo de datos** = Texto.
+   * **Nombre para mostrar** = Comentario de revisor; **Tipo de datos** = Texto.
 
-    Cuando termine, debería tener cinco campos enumerados en la página de detalles de la entidad.
+     Cuando termine, debería tener cinco campos enumerados en la página de detalles de la entidad.
 
-    ![Lista de campos](./media/data-platform-cds-create-entity/addedfields.png "Lista de campos")
+     ![Lista de campos](./media/data-platform-cds-create-entity/addedfields.png "Lista de campos")
 
-    Tenga en cuenta que todas las entidades tienen campos del sistema de solo lectura. De forma predeterminada, los campos del sistema no se muestran en la lista de campos, aunque existan en la entidad. Para ver todos los campos, cambie el filtro en la barra de comandos de **Predeterminado** a **Todo**. Para obtener más información sobre los metadatos relacionados con una entidad, vea [Metadatos de entidad](../../developer/common-data-service/entity-metadata.md).
+     Tenga en cuenta que todas las entidades tienen campos del sistema de solo lectura. De forma predeterminada, los campos del sistema no se muestran en la lista de campos, aunque existan en la entidad. Para ver todos los campos, cambie el filtro en la barra de comandos de **Predeterminado** a **Todo**. Para obtener más información sobre los metadatos relacionados con una entidad, vea [Metadatos de entidad](../../developer/common-data-service/entity-metadata.md).
 
 7. Haga clic en **Guardar entidad** para guardar la entidad y que esté disponible para su uso en las aplicaciones.
 

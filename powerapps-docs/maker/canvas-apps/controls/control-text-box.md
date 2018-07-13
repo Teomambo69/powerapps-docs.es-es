@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cfc47e95cff02dfcbcc2d3ff456e32a4ca2c675e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838611"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899456"
 ---
 # <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
 Cuadro que muestra los datos como texto, números, fechas o moneda.
@@ -129,7 +129,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
   **Today()**
   
     > [!NOTE]
-> Al especificar una fórmula, no use comillas, a menos que un argumento de la misma sea una cadena literal. En ese caso, incluya el argumento, no la fórmula, con comillas inglesas.
+  > Al especificar una fórmula, no use comillas, a menos que un argumento de la misma sea una cadena literal. En ese caso, incluya el argumento, no la fórmula, con comillas inglesas.
   
     ¿Desea más información sobre la función **[Today](../functions/function-now-today-istoday.md)** u [otras funciones](../formula-reference.md)?
 
@@ -159,7 +159,7 @@ Debe haber un contraste de color adecuado entre:
 * La propiedad **[Text](properties-core.md)** debe existir.
 
     > [!NOTE]
-> Los lectores de pantalla tratan los controles **Etiqueta** como botones cuando **[TabIndex](properties-accessibility.md)** es cero o superior.
+  > Los lectores de pantalla tratan los controles **Etiqueta** como botones cuando **[TabIndex](properties-accessibility.md)** es cero o superior.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual
 * El control **Etiqueta** debe parecerse a un vínculo, si se utiliza como vínculo.

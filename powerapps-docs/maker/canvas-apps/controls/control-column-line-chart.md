@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836279"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898292"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.
@@ -139,7 +139,7 @@ Debe haber un contraste de color adecuado entre:
 * Considere la posibilidad de agregar un resumen del gráfico. Por ejemplo, "El gráfico de líneas muestra un aumento constante en las ventas entre marzo y agosto de este año".
 
     > [!NOTE]
-> Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
+  > Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual
 * Debe haber un control **Leyenda** si se muestra más de una serie.
@@ -150,4 +150,4 @@ Debe haber un contraste de color adecuado entre:
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 
     > [!NOTE]
-> Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.
+  > Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.

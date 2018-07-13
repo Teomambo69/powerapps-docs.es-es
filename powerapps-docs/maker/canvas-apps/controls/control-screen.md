@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 165b6544808da234773c2b7a2cdd0014d6fe5c2d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831432"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898721"
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.
@@ -83,4 +83,4 @@ Además de texto, podría también comprobar el contraste de color con objetos g
 * Debe haber un nombre significativo para cada **pantalla**. El nombre de la pantalla se puede ver y editar de la misma manera que otros controles: en la vista de árbol del panel de controles o en el encabezado del panel de propiedades.
 
     > [!NOTE]
-> Cuando se carga una nueva **pantalla**, los lectores de pantalla anunciarán su nombre. 
+  > Cuando se carga una nueva **pantalla**, los lectores de pantalla anunciarán su nombre. 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0cf09528f83b2729e50139a3b5f9b5b9c00b6119
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: 1ab3b17d03b2fd21fceb0675ca55d33302f67d31
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822567"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897773"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -41,19 +41,19 @@ En una aplicación en la que tenga permiso de **colaborador**, agregue una conex
 > Si desencadena una notificación push desde un flujo, actualmente no se puede enviar a más de un usuario o grupo de seguridad a la vez.
 
 1. En [Microsoft Flow](https://flow.microsoft.com), cree un desencadenador que especifique cuándo se envía la notificación push.
-   
+
     Por ejemplo, puede enviar una notificación cuando se agregue un registro a la entidad **Case** de Common Data Service.
-   
+
     ![Captura de pantalla de la creación de un flujo con un desencadenador de Common Data Service](./media/add-notifications/pic4-step1-flowupdated.png)
 2. Cree una acción para el flujo mediante el conector **PowerApps Notification** y escriba la **identificador** de la aplicación a la que desea enviar notificaciones.
-   
+
     También puede cambiar el nombre de la conexión para que refleje su escenario.
-   
+
     ![Captura de pantalla de creación de una conexión con la instancia de PowerApps que recibirá las notificaciones push](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. (opcional) Pase parámetros a la aplicación cuando se abra (después de que el usuario pulse la notificación push).
-   
+
     En este ejemplo, se distribuyen los campos **Case ID** e **Initial Owner** del contacto seleccionado.
-   
+
     ![Captura de pantalla del paso de parámetros opcionales en la notificación push](./media/add-notifications/pic6-step3-configure-notif.jpg)
 
 ## <a name="send-a-notification-from-an-app"></a>Envío de una notificación desde una aplicación
@@ -61,20 +61,20 @@ Puede enviar una notificación push de una aplicación a otra o a la misma aplic
 
 1. En [PowerApps](https://web.powerapps.com/), vaya a la aplicación a la que desea enviar notificaciones push.
 2. En la pestaña **Detalles**, copie el contenido de **Id. de la aplicación** de dicha aplicación.
-   
+
     ![Obtener el identificador de la aplicación](./media/add-notifications/grab-id.png)
 3. Vaya a la pestaña **Conexiones**, cree una conexión con el conector PowerApps Notification y péguela en el identificador de la aplicación del paso anterior.
-   
+
     ![Crear conexión](./media/add-notifications/create-connection.png)
 4. Agregue la conexión a la aplicación de desencadenador.
-   
+
     En nuestro ejemplo, usamos la misma aplicación que la aplicación de desencadenador. El usuario que se reasigna el caso también desencadena una notificación push para el nuevo propietario del caso.
-   
+
     ![Añadir conexión](./media/add-notifications/add-connection.png)
 5. Desde la conexión de la notificación push, llame al método **SendPushNotification**.
-   
+
     En nuestro ejemplo, esta notificación se desencadena mediante el uso de la propiedad **OnSuccess** en un formulario.
-   
+
     ![Fórmula de PowerApps](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>Carga de una página y contexto concretos cuando un usuario pulsa la notificación
@@ -91,16 +91,18 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 
 > [!TIP]
 > Se recomienda crear una primera página única en la aplicación para la notificación:
-
->1. Cree una página vacía que la aplicación no abra, agregue un control **Entrada de texto** y establezca su valor **timer.Duration**.
->2. Cuando cree la aplicación, establezca el temporizador en un valor distinto de cero. Cuando esté listo para publicar la aplicación, establezca el valor en **0** para desencadenar inmediatamente el temporizador.
+> 
+> 1. Cree una página vacía que la aplicación no abra, agregue un control **Entrada de texto** y establezca su valor **timer.Duration**.
+> 2. Cuando cree la aplicación, establezca el temporizador en un valor distinto de cero. Cuando esté listo para publicar la aplicación, establezca el valor en **0** para desencadenar inmediatamente el temporizador.
 
 ## <a name="syntax"></a>Sintaxis
+
 | Nombre | Descripción |
 | --- | --- |
 | SendPushNotification |Envía una notificación push a la aplicación que se especifica en la configuración de conexión de la notificación. |
 
 ### <a name="parameters"></a>Parámetros
+
 | Nombre | Tipo | Descripción |
 | --- | --- | --- |
 | recipients |Matriz de cadenas, se requiere |Una lista de: <ul> <li>Direcciones de correo electrónico para usuarios o grupos de seguridad</li> <li>Identificadores de objeto para usuarios o grupos de seguridad de Azure Active Directory</li></ul> |

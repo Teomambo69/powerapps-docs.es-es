@@ -1,23 +1,19 @@
 ---
 title: Enumeración de color y las funciones ColorFade, ColorValue y RGBA | Microsoft Docs
 description: Información de referencia para la enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: f4eeabf5708fffa6881b84402280d5639d96cc0a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6615dfee8f7c867bb25c237633fe031d614d517d
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838680"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948650"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps
 Uso de valores de color integrados, definición de los colores personalizados y combinación alfa.
@@ -51,6 +47,7 @@ La función **ColorFade** devuelve una versión más clara o más oscura de un c
 * *FadeAmount*: requerido.  Número entre -1 y 1.  -1 oscurece completamente un color hasta convertirlo en negro, 0 no afecta el color y 1 ilumina totalmente un color hasta convertirlo en blanco.  
 
 ## <a name="built-in-colors"></a>Colores integrados
+
 | Enumeración de color | ColorValue con código hexadecimal | RGBA | Muestra de color |
 | --- | --- | --- | --- |
 | **Color.AliceBlue** |**ColorValue( "#f0f8ff" )** |**RGBA( 240, 248, 255, 1 )** |![aliceblue](./media/function-colors/color-aliceblue.png) |

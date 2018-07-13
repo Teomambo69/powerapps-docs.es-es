@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8a763565ff8b48f95f68bdfd91fc21382ad9338f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827836"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896130"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Compartir datos de Excel utilizados por la aplicación
 Puede compartir datos de Excel con los usuarios de la aplicación en una [cuenta en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
@@ -48,7 +48,7 @@ Para obtener más información, consulte [Uso compartido de carpetas en Dropbox]
     ![Comando Compartir](./media/share-app-data/onedrive-share.png)
    
     > [!NOTE]
-> En OneDrive para la Empresa, comparta el archivo en sí, no la carpeta que lo contiene.
+   > En OneDrive para la Empresa, comparta el archivo en sí, no la carpeta que lo contiene.
 3. En el cuadro de diálogo, seleccione **Correo electrónico**.
    
     ![Compartir por correo electrónico](./media/share-app-data/onedrive-email.png)

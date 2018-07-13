@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 5f156e5f7d0acb48090ac921aa92f31f3a6d20ea
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298478"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898637"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Función DataSourceInfo en PowerApps
 Proporciona información sobre un [origen de datos](../working-with-data-sources.md).
@@ -59,7 +59,7 @@ Puede usar **DataSourceInfo** para obtener información sobre un origen de datos
 * *ColumnName*: opcional. Para la información en el nivel de columna, el nombre de columna como una cadena. La columna **Teléfono** se pasaría como **"Teléfono"** incluidas las comillas dobles. Para la información en el nivel de origen de datos, el argumento *ColumnName* no se puede usar.
   
     > [!NOTE]
-> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 Los ejemplos de esta sección usan este origen de datos, denominado **IceCream**:

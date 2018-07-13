@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: b0141315f041d81b929a53761952d9b5e355c82e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 04bfdd2d59b870184e5e42ac06135d00f52dcc70
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803038"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895693"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -47,7 +47,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
     ![Seleccionar la tabla de Excel](./media/cloud-storage-blob-connections/selecttable.png)
    
     > [!NOTE]
-> Recuerde que los datos de Excel deben tener formato de tabla.
+   > Recuerde que los datos de Excel deben tener formato de tabla.
 
 ## <a name="using-the-excel-data-in-your-app"></a>Usar los datos de Excel en la aplicación
 1. En la pestaña **Insertar**, seleccione **Galería** y seleccione un control de la galería **Con texto**.

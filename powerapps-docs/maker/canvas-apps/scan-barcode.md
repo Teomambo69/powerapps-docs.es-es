@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 3e1bc218e6be8dcbbb1a72672aedf1de5d1cd7e9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328729"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895946"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Examen de un código de barras en PowerApps
 Escanee varios tipos de códigos de barras creando una aplicación y ejecutándola en un dispositivo, como un teléfono con cámara. El equivalente numérico del código de barras aparece en un control **Etiqueta**, y puede cargar esos datos en diversos [orígenes de datos](connections-list.md).
@@ -36,18 +36,18 @@ Si no está familiarizado con PowerApps, consulte [Introducción](getting-starte
 ## <a name="create-a-blank-app"></a>Crear una aplicación en blanco
 1. [Suscríbase a PowerApps](../signup-for-powerapps.md) y, a continuación, haga lo *siguiente*:
 
-1. [Abra PowerApps](https://create.powerapps.com) en un explorador en un dispositivo con cámara.
+2. [Abra PowerApps](https://create.powerapps.com) en un explorador en un dispositivo con cámara.
 
-2. En **Comenzar con una plantilla o un lienzo en blanco**, haga clic o pulse en **Diseño de teléfono** en el icono **Aplicación vacía**.
+3. En **Comenzar con una plantilla o un lienzo en blanco**, haga clic o pulse en **Diseño de teléfono** en el icono **Aplicación vacía**.
 
     ![Crear una aplicación desde cero](./media/scan-barcode/create-from-blank.png)
 
-3. Si no ha usado PowerApps antes, familiarícese con las áreas clave de la aplicación haciendo un paseo introductorio (o haga clic o pulse en **Omitir**).
+4. Si no ha usado PowerApps antes, familiarícese con las áreas clave de la aplicación haciendo un paseo introductorio (o haga clic o pulse en **Omitir**).
 
     ![Pantalla inicial del paseo introductorio](./media/scan-barcode/quick-tour.png)
 
     > [!NOTE]
-> Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
+   > Siempre puede realizar el paseo más tarde haciendo clic o pulsando en el icono del signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, haciendo clic o pulsando en **Take the intro tour** (Realizar paseo introductorio).
 
 ## <a name="add-a-barcode-control"></a>Agregar un control Barcode
 1. En la pestaña **Insertar**, haga clic o pulse en **Multimedia** y, a continuación, en **Barcode**.
@@ -61,7 +61,7 @@ Si no está familiarizado con PowerApps, consulte [Introducción](getting-starte
 3. En la pestaña **Inicio**, haga clic o pulse en **Barcode1** y, a continuación, escriba o pegue **MyScanner** en **Cambiar nombre**.
 
     > [!TIP]
-> El primer control **Barcode** que agregue tendrá el nombre **Barcode1** de forma predeterminada. Si elimina ese control y agrega otro control **Barcode**, se denominará **Barcode2** de forma predeterminada. Al cambiar manualmente el nombre de un control, se asegura de que las fórmulas harán referencia al control por su nombre correcto.
+   > El primer control **Barcode** que agregue tendrá el nombre **Barcode1** de forma predeterminada. Si elimina ese control y agrega otro control **Barcode**, se denominará **Barcode2** de forma predeterminada. Al cambiar manualmente el nombre de un control, se asegura de que las fórmulas harán referencia al control por su nombre correcto.
 
     ![Cambiar el nombre del control de código de barras](./media/scan-barcode/rename-barcode.png)
 

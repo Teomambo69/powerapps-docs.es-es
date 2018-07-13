@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 697752312810473158b4f8cdfed4ef1d7618fdb7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832180"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898361"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Control Entrada manuscrita en PowerApps
 Control con el que el usuario puede dibujar, borrar y resaltar áreas de una imagen.
@@ -101,7 +101,7 @@ Debe haber un contraste de color adecuado entre:
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe existir.
 
     > [!IMPORTANT]
-> El control **Entrada manuscrita** no es accesible para los usuarios de lector de pantalla. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere un boceto, considere la posibilidad de agregar un control **[Agregar imagen](control-add-picture.md)**  para que los usuarios carguen una imagen. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.
+  > El control **Entrada manuscrita** no es accesible para los usuarios de lector de pantalla. Proporcione siempre una forma de entrada alternativa. Por ejemplo, si se requiere un boceto, considere la posibilidad de agregar un control **[Agregar imagen](control-add-picture.md)**  para que los usuarios carguen una imagen. Se pueden ofrecer ambos métodos y el usuario puede elegir el que mejor le convenga.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 

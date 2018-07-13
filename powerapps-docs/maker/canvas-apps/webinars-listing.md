@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: c0711ed071c1635373a66f5b61259f56d468cc9a
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bffc102ad61a05ae8f2b6a26276cbeec718483f6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311670"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898200"
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que, en algunos casos, deberá volver a escribir los detalles de registro y, después, recibirá un vínculo a la grabación por correo electrónico. 

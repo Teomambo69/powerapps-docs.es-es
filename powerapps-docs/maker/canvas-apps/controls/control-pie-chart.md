@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fe61a36278ce4f5fe2fb5ff16bdc0a86dc911e5e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833686"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899120"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Control de gráficos circulares en PowerApps
 Control que muestra valores relativos comparados entre ellos.
@@ -104,7 +104,7 @@ Debe haber un contraste de color adecuado entre:
 * Debe haber un control **[Etiqueta](control-text-box.md)** inmediatamente delante del gráfico para que sirva de título.
 
     > [!NOTE]
-> Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
+  > Los gráficos y el control **Leyenda** están ocultos para los usuarios de lector de pantalla. Como alternativa, se les presenta los datos en formato tabular. También pueden recorrer los botones que seleccionan datos en el gráfico.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual
 * Debe haber un control **Leyenda**.
@@ -115,4 +115,4 @@ Debe haber un contraste de color adecuado entre:
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 
     > [!NOTE]
-> Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.
+  > Cuando los usuarios de teclado se desplazan al gráfico, pueden recorrer los botones que seleccionan datos del gráfico.

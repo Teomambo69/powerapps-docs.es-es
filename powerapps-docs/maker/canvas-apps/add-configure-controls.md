@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 702be2a4f1747b6f3303d1add30d9157f5665ee7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330496"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896705"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>Adición y configuración de un control en PowerApps
 Añada diversos elementos de interfaz de usuario a su aplicación y configure aspectos de su apariencia y comportamiento directamente, desde la barra de herramientas, en la pestaña **Propiedades** o en la barra de fórmulas. Estos elementos de interfaz de usuario se denominan controles y los aspectos que configura se denominan propiedades.
@@ -68,7 +68,7 @@ En este procedimiento, agregará y configurará un control **Etiqueta**, pero pu
     ![Una etiqueta seleccionada](./media/add-configure-controls/selected-text-box.png)
 
     > [!IMPORTANT]
-> Si ya hay un control seleccionado, al seleccionar otro o un área en blanco de la pantalla, el primer elemento dejará de estar seleccionado.
+   > Si ya hay un control seleccionado, al seleccionar otro o un área en blanco de la pantalla, el primer elemento dejará de estar seleccionado.
 2. Reduzca la anchura del control **Etiqueta** arrastrando un controlador del borde derecho del cuadro de selección hacia la izquierda. El controlador central solo aparece al acercar la imagen.
 
     ![Una etiqueta cuyo tamaño ha cambiado](./media/add-configure-controls/shorter-text-box.png)
@@ -173,7 +173,7 @@ En lugar de configurar un control directamente en la pestaña **Propiedades** o 
     ![Función Today](./media/add-configure-controls/today-function.png)
 
     > [!TIP]
-> Hay varias formas de [dar formato a las fechas y horas](show-text-dates-times.md), además de realizar cálculos en ellas.
+   > Hay varias formas de [dar formato a las fechas y horas](show-text-dates-times.md), además de realizar cálculos en ellas.
 
 ## <a name="configure-two-controls-to-interact-with-each-other"></a>Configuración de dos controles para interactuar entre sí
 En este procedimiento, agregará una casilla y, a continuación, configurará la etiqueta que ya tiene para que aparezca solo cuando se activa la casilla.

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: c375429b7ac2341766c36ca58e1bbf3c78c9a6d1
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7c5d4f71c44c4bf247874fbbe901731b269feabd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803406"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898545"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Conexión a Microsoft Translator desde PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,46 +28,46 @@ En este tema se muestra cómo utilizar la conexión de Microsoft Translator, có
 
 ## <a name="connect-to-microsoft-translator"></a>Conexión a Microsoft Translator
 1. Abra PowerApps, seleccione **Nuevo** y cree una **aplicación vacía**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  
-   
+
    ![Abra una aplicación en blanco](./media/connection-microsoft-translator/blank-app.png)
 2. En el panel derecho, pulse o haga clic en la pestaña **Datos** y, después, en **Agregar origen de datos**.
 3. Seleccione **Nueva conexión** y, después, **Microsoft Translator**:  
-   
+
     ![Conexión a Microsoft Translator](./media/connection-microsoft-translator/addconnection.png)
-   
+
     ![Conexión a Microsoft Translator](./media/connection-microsoft-translator/add-translator.png)
 4. Seleccione **Conectar**. La conexión aparecerá bajo **Orígenes de datos**:  
-   
+
     ![Conexión a Microsoft Translator](./media/connection-microsoft-translator/translatordatasource.png)
 
 ## <a name="use-the-microsoft-translator-connection-in-your-app"></a>Utilice la conexión de Microsoft Translator en su aplicación
 ### <a name="translate-text"></a>Traducir texto
 1. En el menú **Insert** (Insertar), seleccione **Text** (Texto) y luego seleccione **Text input** (Entrada de texto). Cambie el nombre del control de entrada de texto a **Origen**:  
-   
+
     ![Cambiar nombre](./media/connection-microsoft-translator/renametosource.png)
 2. Agregar una lista **desplegable** (menú **Insertar** > **Controles**), cambie su nombre a **TargetLang** y muévalo debajo de **Origen**.
 3. Establezca la propiedad **[Elementos](../controls/properties-core.md)** de **TargetLang** a la fórmula siguiente:  
-   
+
     `MicrosoftTranslator.Languages()`
 4. Agregue una etiqueta, muévalo debajo de **TargetLang** y establezca su propiedad **[Texto](../controls/properties-core.md)** en la fórmula siguiente:  
-   
+
     `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Escriba algún texto en **Origen** y seleccione un idioma en **TargetLang**. La etiqueta muestra el texto que escribió en el idioma elegido:  
-   
+
     ![Traducir texto de inglés a español](./media/connection-microsoft-translator/translate-text.png)
 
 ### <a name="speak-translated-text"></a>Pronunciar texto traducido
 Si no lo ha hecho ya, siga los pasos descritos en la sección anterior para traducir el texto. Los pasos siguientes utilizan los mismos controles.
 
 1. Establezca la propiedad **[Elementos](../controls/properties-core.md)** de la lista desplegable **TargetLang** en la fórmula siguiente:  
-   
+
     `MicrosoftTranslator.SpeechLanguages()`
 2. Cambie el nombre de la segunda etiqueta (no del cuadro **Origen**) a **Destino**.
 3. Agregue un control **Audio** (menú **Insertar** > **Multimedia**) y establezca la propiedad **Multimedia** en la fórmula siguiente:  
-   
+
     `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Presione F5 o seleccione el botón Vista previa (![](./media/connection-microsoft-translator/preview.png)). Escriba algún texto en **Origen**, seleccione un idioma en **TargetLang** y seleccione el botón Reproducir en el control de audio.
-   
+
     La aplicación reproduce una versión de audio del texto que ha escrito en el idioma elegido.
 5. Presione Esc para volver al área de trabajo predeterminada.
 
@@ -75,10 +75,10 @@ Si no lo ha hecho ya, siga los pasos descritos en la sección anterior para trad
 Los pasos siguientes utilizan la misma entrada de texto **Origen** y los controles de texto **Destino**. Puede crear nuevos controles si lo prefiere, solo tiene que actualizar los nombres en la fórmula.
 
 1. Seleccione el control de texto **Destino** y establezca la propiedad **[Texto](../controls/properties-core.md)** en la fórmula siguiente:  
-   
+
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. Escriba algún texto en **Origen**.
-   
+
     La etiqueta se muestra el idioma del texto que ha escrito. Por ejemplo, la etiqueta muestra **Francés** si escribe **bonjour** o **Italiano** si escribe **ciao**.
 
 ## <a name="view-the-available-functions"></a>Visualización de las funciones disponibles
@@ -99,6 +99,7 @@ Obtener idiomas: Recupera todos los idiomas que admite Microsoft Translator.
 Ninguna
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Código |string |No | |
@@ -108,6 +109,7 @@ Ninguna
 Traducir texto: Traduce el texto a un idioma especificado mediante Microsoft Translator.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | query |string |yes |Texto que se traducirá |
@@ -122,11 +124,13 @@ Ninguna
 Detectar idioma: Detecta el idioma de origen del texto proporcionado
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | query |string |yes |Texto cuyo idioma se identificará |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Código |string |No | |
@@ -139,6 +143,7 @@ Obtener idiomas de voz: Recupera los idiomas disponibles para síntesis de voz.
 Ninguna
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Código |string |No | |
@@ -148,6 +153,7 @@ Ninguna
 Texto a voz: Convierte un texto proporcionado en voz como una secuencia de audio en formato de onda.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | query |string |yes |Texto que se convertirá |

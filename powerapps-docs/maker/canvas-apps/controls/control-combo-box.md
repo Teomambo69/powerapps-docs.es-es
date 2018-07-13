@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1c8004fd615e5f706103ad4c364f7818dd1cb091
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329511"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898283"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -110,11 +110,11 @@ Y esto, además de los [requisitos estándar de contraste de color](../accessibl
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
 
     > [!NOTE]
-> En pantallas táctiles, los usuarios de lector de pantalla pueden desplazarse por el contenido del cuadro combinado secuencialmente. El cuadro combinado actúa como botón que muestra u oculta su contenido cuando se selecciona.
+  > En pantallas táctiles, los usuarios de lector de pantalla pueden desplazarse por el contenido del cuadro combinado secuencialmente. El cuadro combinado actúa como botón que muestra u oculta su contenido cuando se selecciona.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
 
     > [!NOTE]
-> La tecla de tabulación permite desplazarse hasta el cuadro combinado o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del cuadro combinado. La tecla escape cierra la lista desplegable cuando está abierta.
+  > La tecla de tabulación permite desplazarse hasta el cuadro combinado o fuera de él. Las teclas de dirección permiten desplazarse por el contenido del cuadro combinado. La tecla escape cierra la lista desplegable cuando está abierta.

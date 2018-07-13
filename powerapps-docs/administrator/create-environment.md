@@ -7,12 +7,12 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimh
-ms.openlocfilehash: f648d68a19c646a2a69a8eebca85ac9e33af0686
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 857c080ff3b8205b9c74099954cd5156697deb77
+ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552861"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026220"
 ---
 # <a name="quickstart-create-an-environment"></a>Inicio rápido: Creación de un entorno
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirve como contenedor para separar aplicaciones que pueden tener otros roles, requisitos de seguridad o públicos de destino. PowerApps crea automáticamente un único entorno predeterminado para cada inquilino, que se comparte entre todos los usuarios de ese inquilino.
@@ -37,8 +37,6 @@ Inicie sesión en el Centro de administración en [https://admin.powerapps.com](
 
     ![Archivo y Compartir](./media/create-environment/new-environment-dialog.png)
 3. Una vez creado el entorno, recibirá un mensaje de confirmación en el cuadro de diálogo y se le pedirá que cree una base de datos. Pulse o haga clic en **Crear base de datos** para habilitar el acceso a Common Data Service.
-
-    **Nota:** En la actualidad, solo se puede crear una base de datos en la región principal Inquilino de Azure Active Directory.
 
     ![Archivo y Compartir](./media/create-environment/create-database-dialog.png)
 4. Seleccione la moneda y el idioma de los datos almacenados en la base de datos. No se puede cambiar la moneda ni el lenguaje una vez creada la base de datos. Cuando haya terminado, pulse o haga clic en **Crear base de datos**.

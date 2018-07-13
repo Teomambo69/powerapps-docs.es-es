@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 02664d3715b2e5b43a56a041e9de8b294559a862
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838726"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899166"
 ---
 # <a name="patch-function-in-powerapps"></a>Función Revisión en PowerApps
 Modifica o crea uno o varios [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md) o combina registros fuera de un origen de datos.
@@ -102,6 +102,7 @@ Después de que se han evaluado las fórmulas anteriores, el origen de datos ter
 ![](media/function-patch/icecream-after.png)
 
 #### <a name="merge-records-outside-of-a-data-source"></a>Combinar registros (fuera de un origen de datos)
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |Combina dos registros fuera de un origen de datos:<br><ul><li>Los valores de la columna **Name** de cada registro no coinciden. El resultado contiene el valor (**Jim**) en el registro que se aproxima más al final de la lista de argumentos en lugar del valor (**James**) en el registro que está más cerca del principio.</li><li>El primer registro contiene una columna (**Score**) que no existe en el segundo registro. El resultado contiene esa columna con su valor (**90**).</li><li>El segundo registro contiene una columna (**Passed**) que no existe en el primer registro. El resultado contiene esa columna con su valor (**true**). |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: 3615328bf1c272425779998545b0d16ac5626297
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1fdf6c92fb739f1293c90322b508b46f4ec5733e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832613"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898039"
 ---
 # <a name="set-function-in-powerapps"></a>Función Set en PowerApps
 Establece el valor de una variable global.
@@ -55,6 +55,7 @@ Las variables globales no pueden usar el mismo nombre que una colección o un co
 * *Value* (se requiere).  Valor que se asigna a la variable de contexto.
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |Crea o modifica la variable global **Counter** y establece su valor en **1**. |**Counter** tiene el valor **1**. Para hacer referencia a dicha variable, utilice el nombre **Counter** en una fórmula en cualquier pantalla. |

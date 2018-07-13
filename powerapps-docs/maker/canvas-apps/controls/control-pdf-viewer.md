@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c47fb9a120f41166bbe23d55de6b502209a0f20d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330845"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898499"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -96,15 +96,17 @@ Si el documento no se puede abrir en PowerApps, se brinda al usuario final la po
 **Zoom**: el porcentaje en que se amplía una imagen de una cámara o la vista de un archivo en un visor de PDF.
 
 ## <a name="example"></a>Ejemplo
-* Agregue un control **Visor de archivos PDF** y establezca su propiedad **Documento** en la dirección URL, entre comillas dobles, de un archivo PDF, como en este ejemplo:<br>
+
+Agregue un control **Visor de archivos PDF** y establezca su propiedad **Documento** en la dirección URL, entre comillas dobles, de un archivo PDF, como en este ejemplo:
+
   **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
-    El control mostrará el archivo PDF.
+    The control shows the PDF file.
 
-    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
-
+    Don't know how to [add and configure a control](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+
 No todas las características de accesibilidad de los documentos PDF se admiten ya que el **visor de PDF** aún se encuentra en la fase experimental. Por lo tanto, **ShowControls** debe establecerse en **true** para permitir que los usuarios abran el documento en una aplicación externa.
 
 Aprenda a crear documentos PDF accesibles con los estándares [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) y [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/).

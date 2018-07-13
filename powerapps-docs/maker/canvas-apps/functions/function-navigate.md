@@ -3,7 +3,7 @@ title: Funciones Atrás y Navegar | Microsoft Docs
 description: Información de referencia de las funciones Back y Navigate de PowerApps, con sintaxis y ejemplos
 documentationcenter: na
 author: gregli-msft
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: ecb8b8176dd8489866a5ca88a6b69e1520c3ad69
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834467"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948581"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.
@@ -63,6 +63,7 @@ Solo puede utilizar estas funciones dentro de una [fórmula de comportamiento](.
 * *UpdateContextRecord*: valor opcional.  Un registro que contiene el nombre de al menos una columna y un valor para cada columna. Este registro actualiza las variables de contexto de la pantalla nueva como si se pasaran a la función **[UpdateContext](function-updatecontext.md)**.
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Navigate( Details, ScreenTransition.None )** |Muestra la pantalla **Details** sin transición o cambio en el valor de una variable de contexto. |La pantalla **Details** aparece rápidamente. |

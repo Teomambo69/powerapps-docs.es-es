@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: bfdd2bc0ed784b9f2302d01f2fc8c176a7d9c4bb
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 33bfc61200d10ca50b80e31fec2bef62044e4be7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803567"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899649"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -27,13 +27,13 @@ En este tema se muestra cómo utilizar la conexión de Twitter, cómo usar la co
 
 ## <a name="connect-to-twitter"></a>Conexión a Twitter
 1. Abra PowerApps, seleccione **Nuevo** y cree una **aplicación vacía**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  
-   
+
    ![Abra una aplicación en blanco](./media/connection-twitter/blank-app.png)
 2. En el panel derecho, pulse o haga clic en la pestaña **Datos** y, después, en **Agregar origen de datos**.
 3. Seleccione **Conexión nueva** y, después, **Twitter**:  
-   
+
     ![Conexión a Twitter](./media/connection-twitter/addconnection.png)
-   
+
     ![Conexión a Twitter](./media/connection-twitter/add-twitter.png)
 4. Seleccione **Conectar**, escriba sus credenciales de inicio de sesión de Twitter y seleccione **Autorizar aplicación**.
 5. Seleccione **Agregar origen de datos**. La conexión aparecerá bajo **Orígenes de datos**:  
@@ -45,85 +45,85 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 ### <a name="show-a-timeline"></a>Mostrar una cronología
 1. En el menú **Insertar**, seleccione **Galería** y agregue cualquiera de las galerías **con texto**.
 2. Vamos a mostrar algunas cronologías:  
-   
+
    * Para mostrar la cronología del usuario actual, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en las fórmulas siguientes:
-     
+
        `Twitter.HomeTimeline().TweetText`  
        `Twitter.HomeTimeline({maxResults:3}).TweetText`  
    * Para mostrar la cronología de otro usuario, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en las fórmulas siguientes:  
-     
+
        `Twitter.UserTimeline( *TwitterHandle* ).TweetText`
-     
+
        Introduzca un identificador de Twitter con dobles comillas o un valor equivalente. Por ejemplo, escriba `"satyanadella"` o `"powerapps"` directamente en la expresión de la fórmula.
    * Agregue un control de entrada de texto denominado **Tweep** y establezca su propiedad predeterminada en `Tweep.Text`. En el cuadro de texto Tweep, escriba un identificador de Twitter como `satyanadella` (sin las comillas y sin el símbolo @).
-     
+
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
-     
+
        `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
-     
+
        El control de galería muestra automáticamente los tweets del identificador de Twitter que ha escrito.
-     
+
      > [!TIP]
-> Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
+     > Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
 3. Establezca la propiedad **Elementos** de la galería en `Twitter.HomeTimeline()`.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 4. Seleccione **TweetText** en la primera lista, seleccione **TweetedBy** en la segunda lista y seleccione **CreatedAt** en la tercera lista.
-   
+
     La galería ahora muestra los valores de las propiedades que haya elegido.
 
 ### <a name="show-followers"></a>Mostrar seguidores
 1. Con una galería **Con texto**, vamos a mostrar algunos seguidores:  
-   
+
    * Para mostrar los seguidores del usuario actual, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la siguiente fórmula:  
-     
+
        `Twitter.MyFollowers()`  
        `Twitter.MyFollowers({maxResults:3})`
    * Para mostrar los seguidores de otro usuario, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la siguiente fórmula:  
-     
+
        `Twitter.Followers( *TwitterHandle* )`
-     
+
        Introduzca un identificador de Twitter con dobles comillas o un valor equivalente. Por ejemplo, escriba `"satyanadella"` o `"powerapps"` directamente en la expresión de la fórmula.
    * Agregue un control de entrada de texto denominado **Tweep** y establezca su propiedad predeterminada en `Tweep.Text`. En el cuadro de texto Tweep, escriba un identificador de Twitter como `satyanadella` (sin las comillas y sin el símbolo @).
-     
+
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
-     
+
        `Twitter.Followers(Tweep.Text, {maxResults:5})`
-     
+
        El control de galería muestra automáticamente quién está siguiendo el identificador de Twitter que ha escrito.
-     
+
      > [!TIP]
-> Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
+     > Algunas de estas fórmulas utilizan el argumento **maxResults** para mostrar el número *x* de tweets más recientes en una escala de tiempo.
 2. Establezca la propiedad **Elementos** de la galería en `Twitter.MyFollowers()`.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 3. Seleccione **NombreUsuario** en la segunda lista y **NombreCompleto** en la tercera.
-   
+
     La galería ahora muestra los valores de las propiedades que haya elegido.
 
 ### <a name="show-followed-users"></a>Mostrar usuarios seguidos
 1. Con una galería **Con texto**, vamos a mostrar algunos usuarios seguidos:  
-   
+
    * Para mostrar los usuarios a los que está siguiendo el usuario actual, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la siguiente fórmula:  
-     
+
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
    * Para mostrar los usuarios a los que está siguiendo otro usuario, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la siguiente fórmula:
-     
+
        `Twitter.Following( *TwitterHandle* )`
-     
+
        Introduzca un identificador de Twitter con dobles comillas o un valor equivalente. Por ejemplo, escriba `"satyanadella"` o `"powerapps"` directamente en la expresión de la fórmula.
    * Agregue un control de entrada de texto denominado **Tweep** y establezca su propiedad predeterminada en `Tweep.Text`. En el cuadro de texto Tweep, escriba un identificador de Twitter como `satyanadella` (sin las comillas y sin el símbolo @).
-     
+
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
-     
+
        `Twitter.Following(Tweep.Text, {maxResults:5})`
-     
+
        El control de galería muestra automáticamente los otros identificadores que está siguiendo.
-     
+
      Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 2. Seleccione **Descripción** en la lista **Cuerpo1**, **NombreUsuario** en la lista **Título1** y **NombreCompleto** en la lista **Subtítulo1**.
-   
+
     La galería ahora muestra los valores de las propiedades que haya elegido.
 
 ### <a name="show-information-about-a-user"></a>Mostrar información sobre un usuario
@@ -144,22 +144,22 @@ O bien, puede utilizar un control de texto de entrada para escribir un identific
 
 ### <a name="search-tweets"></a>Buscar tweets
 1. Agregue una galería **Con texto** y establezca su propiedad **[Elementos](../controls/properties-core.md)** en la siguiente fórmula:  
-   
+
     `Twitter.SearchTweet( *SearchTerm* ).TweetText`
-   
+
     Escriba un *término de búsqueda* entre comillas dobles o haciendo referencia a un valor equivalente. Por ejemplo, escriba `"PowerApps"` o `"microsoft"` directamente en la fórmula.
-   
+
     O bien, puede utilizar un control **Entrada de texto** para escribir un término de búsqueda, tal y como se dispone a lo largo de este tema.
-   
+
     > [!TIP]
-> Muestre los cinco primeros resultados mediante maxResults:  
-   
+   > Muestre los cinco primeros resultados mediante maxResults:  
+
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 3. Seleccione **TweetText** en la primera lista, **TweetedBy** en la segunda lista y **CreatedAt** en la tercera lista.
-   
+
     La galería ahora muestra los valores de las propiedades que haya elegido.
 
 ### <a name="send-a-tweet"></a>Enviar un tweet
@@ -189,12 +189,14 @@ Esta conexión incluye las siguientes funciones:
 Obtener cronología del usuario: recupera una colección de los tweets más recientes enviados por el usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | NombreUsuario |string |yes |Identificador de Twitter |
 | maxResults |integer |no |Número máximo de tweets que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | TweetText |string |Sí | |
@@ -208,11 +210,13 @@ Obtener cronología del usuario: recupera una colección de los tweets más reci
 Obtener la cronología de inicio: recupera los tweets y retweets más recientes enviados por mí y mis seguidores.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | maxResults |integer |no |Número máximo de tweets que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | TweetText |string |Sí | |
@@ -226,12 +230,14 @@ Obtener la cronología de inicio: recupera los tweets y retweets más recientes 
 Buscar tweet: recupera una colección de tweets pertinentes que coinciden con una consulta especificada.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | searchQuery |string |yes |Texto de consulta (se puede usar cualquiera de los operadores de consulta admitidos por Twitter: http://www.twitter.com/search)) |
 | maxResults |integer |no |Número máximo de tweets que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | TweetText |string |Sí | |
@@ -245,12 +251,14 @@ Buscar tweet: recupera una colección de tweets pertinentes que coinciden con un
 Obtener seguidores: recupera los usuarios que siguen al usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | NombreUsuario |string |yes |Identificador de Twitter del usuario |
 | maxResults |integer |no |Número máximo de usuarios que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
@@ -266,11 +274,13 @@ Obtener seguidores: recupera los usuarios que siguen al usuario especificado.
 Obtener mis seguidores: recupera los usuarios que me siguen.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | maxResults |integer |no |Número máximo de usuarios que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
@@ -286,12 +296,14 @@ Obtener mis seguidores: recupera los usuarios que me siguen.
 Obtener seguimiento: recupera los usuarios a los que está siguiendo el usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | NombreUsuario |string |yes |Identificador de Twitter del usuario |
 | maxResults |integer |no |Número máximo de usuarios que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
@@ -307,11 +319,13 @@ Obtener seguimiento: recupera los usuarios a los que está siguiendo el usuario 
 Obtener mi seguimiento: recupera los usuarios a los que estoy siguiendo.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | maxResults |integer |no |Número máximo de usuarios que se van a recuperar, por ejemplo, {maxResults:5} |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
@@ -327,11 +341,13 @@ Obtener mi seguimiento: recupera los usuarios a los que estoy siguiendo.
 Obtener usuario: recupera los detalles sobre el usuario especificado (ejemplo: nombre de usuario, descripción, número de seguidores, etc.).
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | NombreUsuario |string |yes |Identificador de Twitter del usuario |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
@@ -347,12 +363,14 @@ Obtener usuario: recupera los detalles sobre el usuario especificado (ejemplo: n
 Enviar un nuevo tweet: Tweet
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | tweetText |string |no |Texto que se va a enviar, por ejemplo, {tweetText: "hola"} |
 | cuerpo |string |no |Elementos multimedia que se van a publicar |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | TweetId |string |Sí | |
@@ -361,11 +379,13 @@ Enviar un nuevo tweet: Tweet
 Cuando aparece un nuevo tweet: desencadena un flujo de trabajo cuando se envía un nuevo tweet que coincide con la consulta de búsqueda.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | searchQuery |string |yes |Texto de consulta (se puede usar cualquiera de los operadores de consulta admitidos por Twitter: http://www.twitter.com/search)) |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | value |array |No | |

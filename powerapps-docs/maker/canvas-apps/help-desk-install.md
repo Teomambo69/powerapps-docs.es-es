@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34470052"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896981"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Instalar y configurar el ejemplo Help Desk de PowerApps
 
@@ -173,27 +173,27 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="import-the-help-desk-powerapp"></a>Importar la aplicación Help Desk de PowerApps
 
-1.  En un explorador web, vaya a https://web.powerapps.com.
-2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
-3.  En el menú de la izquierda, seleccione **Aplicaciones**. 
-4.  Haga clic en **Importar paquete (versión preliminar)**.
+1. En un explorador web, vaya a https://web.powerapps.com.
+2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
+3. En el menú de la izquierda, seleccione **Aplicaciones**. 
+4. Haga clic en **Importar paquete (versión preliminar)**.
     
-    ![Pantalla Importar paquete](./media/help-desk-install/import-package.png)
+   ![Pantalla Importar paquete](./media/help-desk-install/import-package.png)
 
-5.  Haga clic en el botón **Cargar** y seleccione el paquete de PowerApps que descargó en pasos anteriores.
-6.  Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
-7.  Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
+5. Haga clic en el botón **Cargar** y seleccione el paquete de PowerApps que descargó en pasos anteriores.
+6. Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
+7. Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
     
-    ![Pantalla Importar configuración](./media/help-desk-install/import-settings.png)
+   ![Pantalla Importar configuración](./media/help-desk-install/import-settings.png)
 
-8.  Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
-9.  En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+8. Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
+9. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
 
-    ![Pantalla Importar configuración](./media/help-desk-install/import-settings-sharepoint.png)
+   ![Pantalla Importar configuración](./media/help-desk-install/import-settings-sharepoint.png)
 
 10. Haga clic en **Guardar**.
-11.  Haga clic en el **icono rojo** correspondiente a la **conexión de Office 365 Outlook**.
-12.  En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+11. Haga clic en el **icono rojo** correspondiente a la **conexión de Office 365 Outlook**.
+12. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
 
     ![Pantalla Importar configuración](./media/help-desk-install/import-settings-office365outlook.png)
 
@@ -241,13 +241,13 @@ Esta lista almacena los vales del servicio Help Desk.
 1. Seleccione **LoginScreen**.
 2. Seleccione **OnStart** en la lista desplegable.
 3. Expanda la ventana de fórmulas y busque la colección **AdminList**.
-4. Reemplace **user@microsoft.com** por los administradores de Help Desk.
+4. Reemplace <strong>user@microsoft.com</strong> por los administradores de Help Desk.
 
     ![Actualizar la lista de administradores](./media/help-desk-install/Change-admin.png)
     
-    > [!TIP] 
-    > Si tiene más de un administrador, sepárelos mediante comas.  Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
-    > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
+   > [!TIP]
+   > Si tiene más de un administrador, sepárelos mediante comas.  Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
+   > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
 
 5. Haga clic en **Archivo**.
 6. Haga clic en **Guardar**.

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: 3d7aa26696adb187906c9c793c546abd1b97764f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: c1c03202cb95500bb019a3c23a68e0e8d5418cc9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34583495"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898407"
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>Guía de inicio rápido: Creación de su primera aplicación controlada por modelos desde cero
 El diseño de aplicaciones controladas por modelos es un enfoque de componentes centrado en el desarrollo de aplicaciones. En esta guía de inicio rápido, va a simplificar la creación de una aplicación controlada por modelos mediante una de las entidades estándar disponibles en el entorno [!INCLUDE [powerapps](../../includes/powerapps.md)]. 
@@ -27,43 +27,43 @@ Inicie sesión en [PowerApps](https://web.powerapps.com/). Si todavía no tiene 
 
 ## <a name="create-your-model-driven-app"></a>Creación de la aplicación controlada por modelos
 
-1.  Seleccione el entorno que desee, o bien, vaya al [Centro de administración de PowerApps](https://admin.powerapps.com/) para crear uno.
-2.  En el panel de navegación de la izquierda, seleccione **Basado en modelos**. 
+1. Seleccione el entorno que desee, o bien, vaya al [Centro de administración de PowerApps](https://admin.powerapps.com/) para crear uno.
+2. En el panel de navegación de la izquierda, seleccione **Basado en modelos**. 
 
-    ![Controlado por modelos](media/build-first-model-driven-app/choose-design-mode.png)
+   ![Controlado por modelos](media/build-first-model-driven-app/choose-design-mode.png)
 
-  > [!IMPORTANT]
-  > Si el modo de diseño **Basado en modelos** no está disponible, puede que necesite [crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
+   > [!IMPORTANT]
+   > Si el modo de diseño **Basado en modelos** no está disponible, puede que necesite [crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
 3. En el panel izquierdo, seleccione **Aplicaciones** y, después, seleccione **Crear una aplicación**.
 
-4.  En la página **Crear una aplicación**, escriba la siguiente información y, después, seleccione **Listo**: 
-  - **Nombre**: escriba un nombre para la aplicación, como *Myfirstapp*. 
-  - **Descripción**: escriba una descripción breve de lo que la aplicación es o hace, como *Esta es mi primera aplicación*.
-Para más información sobre las propiedades de la aplicación adicionales, consulte [Crear una aplicación](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).
+4. En la página **Crear una aplicación**, escriba la siguiente información y, después, seleccione **Listo**: 
+   - **Nombre**: escriba un nombre para la aplicación, como *Myfirstapp*. 
+   - **Descripción**: escriba una descripción breve de lo que la aplicación es o hace, como *Esta es mi primera aplicación*.
+   Para más información sobre las propiedades de la aplicación adicionales, consulte [Crear una aplicación](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).
  
-    ![Crear nueva-aplicación](media/build-first-model-driven-app/create-new-app.png)
+   ![Crear nueva-aplicación](media/build-first-model-driven-app/create-new-app.png)
 
 ## <a name="add-components-to-your-app"></a>Agregar componentes a la aplicación
 Desde el diseñador de aplicaciones, va a agregar componentes a la aplicación.
-1.  Seleccione la flecha **Abrir el Diseñador del mapa del sitio** para abrir el diseñador. 
+1. Seleccione la flecha **Abrir el Diseñador del mapa del sitio** para abrir el diseñador. 
 
-    ![Crear mapa del sitio](media/build-first-model-driven-app/new-sitemap.png)
+   ![Crear mapa del sitio](media/build-first-model-driven-app/new-sitemap.png)
 
-2.  En el diseñador del mapa del sitio, seleccione **Nueva subárea**, en el panel derecho seleccione la pestaña **Propiedades** y, finalmente, seleccione las siguientes propiedades.
-  - **Tipo**: entidad
-  - **Entidad**: cuenta
+2. En el diseñador del mapa del sitio, seleccione **Nueva subárea**, en el panel derecho seleccione la pestaña **Propiedades** y, finalmente, seleccione las siguientes propiedades.
+   - **Tipo**: entidad
+   - **Entidad**: cuenta
 
-    ![Agregar componentes al mapa del sitio](media/build-first-model-driven-app/sitemap.png)
+   ![Agregar componentes al mapa del sitio](media/build-first-model-driven-app/sitemap.png)
 
-3.  Haga clic en **Guardar y cerrar**.
-4.  En el lienzo del diseñador de aplicaciones, seleccione **Formularios** y, después, en el panel derecho en el grupo **Formularios principales**, seleccione el formulario **Cuenta**.
+3. Haga clic en **Guardar y cerrar**.
+4. En el lienzo del diseñador de aplicaciones, seleccione **Formularios** y, después, en el panel derecho en el grupo **Formularios principales**, seleccione el formulario **Cuenta**.
 
-    ![Formulario principal de la cuenta](media/build-first-model-driven-app/main-form.png)
+   ![Formulario principal de la cuenta](media/build-first-model-driven-app/main-form.png)
 
-5.  En el lienzo del diseñador de aplicaciones, seleccione **Vistas** y, después, seleccione las vistas **Cuentas activas** , **Todas las cuentas** y **Mis cuentas activas**.
+5. En el lienzo del diseñador de aplicaciones, seleccione **Vistas** y, después, seleccione las vistas **Cuentas activas** , **Todas las cuentas** y **Mis cuentas activas**.
 
-    ![Vistas de cuentas](media/build-first-model-driven-app/views.png)
+   ![Vistas de cuentas](media/build-first-model-driven-app/views.png)
 
 6. En el lienzo del diseñador de aplicaciones, seleccione **Gráficos** y, después, seleccione el gráfico **Cuentas por sector**.
 7. En la barra de herramientas del diseñador de aplicaciones, haga clic en **Guardar**.

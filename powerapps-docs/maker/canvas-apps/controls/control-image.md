@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bd07c6ee0a0084171c928c6908c33caae974d765
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 91f1db2f4acd503efce8407dd2c3c60fee6e183e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835149"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899143"
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -145,14 +145,14 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente si el gráfico se usa como botón o no solo como decoración.
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar vacía o la cadena **""** vacía si el gráfico es exclusivamente decorativo. De esta forma, los lectores de pantalla omiten el gráfico.
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** puede estar vacía o la cadena **""** vacía si el gráfico proporciona información redundante.
-    * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)**  establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
+  * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)**  establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
 
     > [!IMPORTANT]
-> Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
+    > Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el gráfico se utiliza como botón. De esta forma, los usuarios de teclado pueden navegar hasta él.
 * Los indicadores de foco deben ser claramente visibles si el gráfico se usa como botón. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
 
     > [!NOTE]
-> Cuando **[TabIndex](properties-accessibility.md)**  es cero o mayor, el control **Imagen** se representa como un botón. No hay ningún cambio en la apariencia visual, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el control **Imagen** se identifica como una imagen.
+  > Cuando **[TabIndex](properties-accessibility.md)**  es cero o mayor, el control **Imagen** se representa como un botón. No hay ningún cambio en la apariencia visual, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el control **Imagen** se identifica como una imagen.

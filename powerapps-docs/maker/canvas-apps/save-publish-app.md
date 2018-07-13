@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: e265934336f3646f52b749ddcec5a5e734bd2c50
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 0192abca52f3ca3d28b911e24a9ca9cd07c95393
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828902"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895854"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Guardar y publicar una aplicación en PowerApps
 Siempre que guarde cambios en una aplicación, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -47,7 +47,7 @@ PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. 
    ![Revisar la publicación](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-> Es aconsejable que actualice o vuelva a publicar la aplicación dentro de los seis meses posteriores a la última vez que lo hizo, con el fin de que esté sincronizada con la versión más reciente de PowerApps. Si no lo hace, la aplicación puede dejar de funcionar sin previo aviso.
+   > Es aconsejable que actualice o vuelva a publicar la aplicación dentro de los seis meses posteriores a la última vez que lo hizo, con el fin de que esté sincronizada con la versión más reciente de PowerApps. Si no lo hace, la aplicación puede dejar de funcionar sin previo aviso.
 
 ## <a name="identify-the-live-version"></a>Identificar la versión activa
 En [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.

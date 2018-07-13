@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
-ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8b9e6d7b55eac51d9bf22d28945cfd4349fc957c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829519"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897786"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.
@@ -53,6 +53,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="single-number"></a>Número único
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Abs( -55 )** |Muestra el número sin el signo negativo. |55 |

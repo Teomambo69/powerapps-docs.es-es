@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e13f5c7fa73c0d95c5be5c755f2d482b1efc8a71
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ee9b19f647258e57b434c42b5f50bd71fc2d4bb2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832134"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895670"
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>Restaurar una aplicación a una versión anterior
 En este artículo se muestra cómo restaurar una aplicación a una versión anterior que se guardó en la nube desde su cuenta de PowerApps.
@@ -32,7 +32,7 @@ En este artículo se muestra cómo restaurar una aplicación a una versión ante
     ![Filtrar por aplicaciones de las que sea propietario](./media/restore-an-app/filter-list.png)
 
     > [!NOTE]
-> Si la aplicación que desea restaurar no aparece, asegúrese de que se encuentra en el entorno correcto.
+   > Si la aplicación que desea restaurar no aparece, asegúrese de que se encuentra en el entorno correcto.
 
 3. Cerca del borde derecho, haga clic o pulse el icono de información de la aplicación que desea restaurar.
 

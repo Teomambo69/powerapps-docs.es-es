@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e7da24eec1a85a1d57ab83476734639ef0f5dd25
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838864"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898085"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Función UpdateContext de PowerApps
 Crea o actualiza [variables de contexto](../working-with-variables.md#create-a-context-variable) de la pantalla actual.
@@ -68,6 +68,7 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 * *ContextVariable2*: *Value2*, ...: opcional. Variables de contexto adicionales que se van a crear o actualizar, y sus valores.
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |Crea o modifica la variable de contexto **Counter** y establece su valor en **1**. |**Counter** tiene el valor **1**. Puede hacer referencia a esa variable con el nombre **Counter** en una fórmula. |
@@ -85,10 +86,10 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 6. En la pantalla **Destino**, seleccione **Formas** en la pestaña **Insertar** y seleccione la flecha Anterior.
 7. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** de la flecha Anterior en esta fórmula:<br>**Navigate(Origen, ScreenTransition.Fade)**
 8. En la pantalla **Origen**, presione F5 y seleccione el botón de cualquiera de estos idiomas.
-   
+
     En la pantalla **Destino**, la etiqueta aparece en el idioma correspondiente a botón que ha seleccionado.
 9. Seleccione la flecha Anterior para volver a la pantalla **Origen** y seleccione el botón del otro idioma.
-   
+
     En la pantalla **Destino**, la etiqueta aparece en el idioma correspondiente a botón que ha seleccionado.
 10. Presione Esc para volver al área de trabajo predeterminada.
 

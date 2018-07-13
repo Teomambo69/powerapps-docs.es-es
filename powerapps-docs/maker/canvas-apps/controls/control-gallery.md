@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcb482844e430444fd95bb2d0c85a8da23c91d84
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837266"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897740"
 ---
 # <a name="gallery-control-in-powerapps"></a>Control Galería en PowerApps
 Un control que contiene otros controles y muestra un conjunto de datos.
@@ -107,11 +107,11 @@ Si la finalidad de hacer clic en cualquier parte en un elemento de la galería e
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
 
     > [!NOTE]
-> Los lectores de pantalla anunciarán cuándo cambian los elementos de la galería. La propiedad **AccessibleLabel** también se menciona. De esta forma, se proporciona contexto al anuncio y es incluso más importante cuando hay varias galerías en la misma pantalla.
+  > Los lectores de pantalla anunciarán cuándo cambian los elementos de la galería. La propiedad **AccessibleLabel** también se menciona. De esta forma, se proporciona contexto al anuncio y es incluso más importante cuando hay varias galerías en la misma pantalla.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * Considere la posibilidad de establecer **ShowScrollbar** en **true**. En la mayoría de los dispositivos de pantalla táctil, la barra de desplazamiento no se muestra hasta que comienza el desplazamiento.
 * Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber también una forma de que los usuarios de teclado seleccionen el elemento de la galería. Por ejemplo, agregar un control **[Botón](control-button.md)** cuya propiedad **OnSelect** esté establecida en **Select(Parent)**.
 
     > [!NOTE]
-> Los controles situados fuera de la galería no se tienen en cuenta en el orden de desplazamiento por el teclado dentro de la galería. Se tiene en cuenta la propiedad **[TabIndex](properties-accessibility.md)** de los controles dentro de una galería. Consulte las [propiedades de accesibilidad](properties-accessibility.md) para obtener más información.
+  > Los controles situados fuera de la galería no se tienen en cuenta en el orden de desplazamiento por el teclado dentro de la galería. Se tiene en cuenta la propiedad **[TabIndex](properties-accessibility.md)** de los controles dentro de una galería. Consulte las [propiedades de accesibilidad](properties-accessibility.md) para obtener más información.

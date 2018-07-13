@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: a3a5d24efffd7cd3c9430cafd5050dc96632ee76
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 0666350b9c60fdd3a1ed9cb2a3e7fa7b46bdd683
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803176"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896889"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Conectar al Power BI desde PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -30,7 +30,7 @@ En este tema se muestra cómo utilizar la conexión de Power BI en una aplicaci�
 ### <a name="list-the-alerts-that-youve-set-up-in-the-power-bi-service"></a>Enumerar las alertas que ha configurado en el servicio Power BI
 1. En el menú **Insert** (Insertar), seleccione **Gallery** (Galería) y agregue algunas de las **galerías de texto**.
 2. Para mostrar las alertas del usuario actual, establezca la propiedad [Items](../controls/properties-core.md) de la galería en la siguiente fórmula:
-   
+
    `PowerBI.GetAlerts()`
 
 La galería se actualizará con la lista de alertas. Para cada alerta, recibirá su nombre, número identificador e id. del espacio de trabajo del grupo en el que se configuró la alerta. Necesitará el id. de la alerta para obtener más información sobre ella.
@@ -64,6 +64,7 @@ Muestra las alertas que ha configurado en el servicio Power BI.
 Ninguna
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | value |array |No |Una matriz de las alertas de datos que ha configurado en el servicio Power BI. Cada elemento de la matriz incluirá: <ul><li>alertTitle: el título de la alerta.</li><li>alertId: el id. de la alerta.</li><li>groupId: el id. del grupo en el que se creó la alerta.</li></ul> |
@@ -75,11 +76,13 @@ Comprueba el estado de una alerta.
 > Las solicitudes que se realicen a este punto de conexión se limitarán por alerta si se llama con demasiada frecuencia.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | alertId |integer |Sí |El id. de la alerta que devuelve GetAlerts. |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | tileValue |number |No |El valor del icono cuando se desencadenó la alerta. |

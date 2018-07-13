@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836979"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896820"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Creación de una aplicación de Excel desde cero
 Cree su propia aplicación desde cero basándose en datos de Excel y en formato de tabla, y agregue luego datos de otros orígenes si lo desea. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
@@ -84,31 +84,31 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     ![Apertura del panel de datos](./media/get-started-create-from-blank/custom-gallery-sample.png)
 
-1. En **Origen de datos**, seleccione la flecha hacia abajo para abrir la lista de orígenes de datos para la aplicación y, a continuación, seleccione **Programa**.
+4. En **Origen de datos**, seleccione la flecha hacia abajo para abrir la lista de orígenes de datos para la aplicación y, a continuación, seleccione **Programa**.
 
     ![Selección de origen de datos](./media/get-started-create-from-blank/select-schedule.png)
 
-1. En **Diseño**, seleccione la flecha hacia abajo para abrir la lista de los diseños y, a continuación, seleccione **Título, subtítulo y cuerpo**.
+5. En **Diseño**, seleccione la flecha hacia abajo para abrir la lista de los diseños y, a continuación, seleccione **Título, subtítulo y cuerpo**.
 
     ![Seleccionar diseño](./media/get-started-create-from-blank/select-layout.png)
 
-1. En **Title2** (Título 2), cambie la columna que aparece de **Backup** a **Volunteer**.
+6. En **Title2** (Título 2), cambie la columna que aparece de **Backup** a **Volunteer**.
 
      ![Cambio de columna en etiqueta](./media/get-started-create-from-blank/change-title2.png)
 
-1. Cierre el panel **Datos** seleccionando el icono Cerrar en la esquina superior derecha.
+7. Cierre el panel **Datos** seleccionando el icono Cerrar en la esquina superior derecha.
 
     La galería muestra el nombre de cada voluntario y el día y la hora del turno de ese voluntario.
 
     ![Datos de Programa en la galería no ordenados](./media/get-started-create-from-blank/show-data-unsorted.png)
 
-4. Seleccione la galería y confirme que la lista de propiedades muestra **[Elementos](controls/properties-core.md)**.
+8. Seleccione la galería y confirme que la lista de propiedades muestra **[Elementos](controls/properties-core.md)**.
 
     Como se muestra en la barra de fórmulas, el valor de esta propiedad es **Programa**.
 
     ![Datos de Programa en la galería no ordenados](./media/get-started-create-from-blank/set-property.png)
 
-1. Cambie el valor de la propiedad **Elementos** copiando esta fórmula y pegándola en la barra de fórmulas:
+9. Cambie el valor de la propiedad **Elementos** copiando esta fórmula y pegándola en la barra de fórmulas:
 
     **SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
 
@@ -118,22 +118,22 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     Los usuarios pueden ordenar y filtrar la galería por nombre de voluntario tomando como base las funciones **SortByColumns** y **Search** en esa fórmula.
 
-    - Si un usuario escribe al menos una letra en el cuadro de búsqueda, la galería mostrará únicamente aquellos registros en los que el campo **Volunteer** contenga el texto escrito por el usuario.
-    - Si el usuario selecciona el botón de ordenación, la galería muestra los registros en orden ascendente o descendente (dependiendo de cuántas veces seleccione el botón el usuario) tomando como referencia el campo **Volunteer**.
+   - Si un usuario escribe al menos una letra en el cuadro de búsqueda, la galería mostrará únicamente aquellos registros en los que el campo **Volunteer** contenga el texto escrito por el usuario.
+   - Si el usuario selecciona el botón de ordenación, la galería muestra los registros en orden ascendente o descendente (dependiendo de cuántas veces seleccione el botón el usuario) tomando como referencia el campo **Volunteer**.
 
-    Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
+     Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
 
-5. Escriba una **i** en el cuadro de búsqueda, seleccione el botón de ordenación haciendo clic o pulsando en él y, a continuación, selecciónelo otra vez (o un número impar de veces más).
+10. Escriba una **i** en el cuadro de búsqueda, seleccione el botón de ordenación haciendo clic o pulsando en él y, a continuación, selecciónelo otra vez (o un número impar de veces más).
 
-    La galería muestra estos resultados.
+     La galería muestra estos resultados.
 
-    ![Ordenar y filtrar la galería](./media/get-started-create-from-blank/sort-filter.png)
+     ![Ordenar y filtrar la galería](./media/get-started-create-from-blank/sort-filter.png)
 
-1. Borre todo el texto del cuadro de búsqueda.
+11. Borre todo el texto del cuadro de búsqueda.
 
-6. En la parte superior de la pantalla, seleccione el control **[Label](controls/control-text-box.md)** y luego reemplace **[Title]** (Título) por **View records** (Ver registros).
+12. En la parte superior de la pantalla, seleccione el control **[Label](controls/control-text-box.md)** y luego reemplace **[Title]** (Título) por **View records** (Ver registros).
 
-    ![Cambiar la barra de título](./media/get-started-create-from-blank/change-title-bar.png)
+     ![Cambiar la barra de título](./media/get-started-create-from-blank/change-title-bar.png)
 
 ## <a name="create-the-change-screen"></a>Creación de la pantalla de cambio
 1. En la pestaña **Inicio**, seleccione la flecha abajo junto a **Nueva pantalla** y, a continuación, seleccione **Pantalla de formulario**.

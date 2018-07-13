@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: e73324d6cfce5edf7ece0350b2047dc7842373bb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836778"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896843"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Desarrollar aplicaciones que puedan ejecutarse sin conexión con PowerApps
 Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando hay conectividad limitada o no hay ninguna conectividad. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones que puedan ejecutarse sin conexión. Podrá:
@@ -41,19 +41,19 @@ Para centrarnos en los aspectos del desarrollo de aplicaciones sin conexión, mo
 De forma general, la aplicación hace lo siguiente:
 
 1. En el inicio de la aplicación (en función de la propiedad **AlEstarVisible** de la primera pantalla):
-   
+
    * Si el dispositivo está en línea, se accede directamente al conector de Twitter para recuperar los datos y se rellena una colección con esos datos.
    * Si el dispositivo está sin conexión, se cargan los datos desde un archivo de caché local mediante [LoadData](../canvas-apps/functions/function-savedata-loaddata.md).
    * Se permite al usuario enviar tweets; si está en línea, se envían directamente a Twitter y se actualiza la memoria caché local.
 2. Cada 5 minutos, en está en línea:
-   
+
    * Se envían los tweets que tenemos en la memoria caché local.
    * Se actualiza la memoria caché local y se guarda con [SaveData](../canvas-apps/functions/function-savedata-loaddata.md).
 
 ### <a name="step-1-create-a-new-phone-app"></a>Paso 1: Crear una nueva aplicación de teléfono
 1. Abra PowerApps Studio.
 2. Pulse o haga clic en **Nuevo** > **Aplicación en blanco** > **Diseño de teléfono**.
-   
+
     ![Aplicación en blanco, diseño de teléfono](./media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>Paso 2: Agregar una conexión de Twitter
@@ -63,7 +63,7 @@ De forma general, la aplicación hace lo siguiente:
 2. Pulse o haga clic en **Nueva conexión**, seleccione **Twitter** y pulse o haga clic en **Crear**.
 
 3. Escriba sus credenciales y cree la conexión.
-   
+
     ![Agregar una conexión de Twitter](./media/offline-apps/twitter-connection.png)
 
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Paso 3: Cargar los tweets en la colección LocalTweets en el inicio de la aplicación
@@ -127,20 +127,20 @@ Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>Paso 7: Agregar un botón para enviar el tweet
 1. Agregue un control **Botón** y establezca la propiedad **Texto** en "Tweet".
 2. Establezca la propiedad **AlSeleccionar** en la fórmula siguiente:
-   
+
     ```
     If (Connection.Connected,
-   
+
         Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-   
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-   
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-   
+
     );
-   
+
     UpdateContext({resetNewTweet: true});
-   
+
     UpdateContext({resetNewTweet: false})
     ```  
 
@@ -159,18 +159,18 @@ Agregue un nuevo control **Temporizador**:
 * Establezca la propiedad **AutoStart** en true.
 
 * Establezca **OnTimerEnd** en la fórmula siguiente:
-  
+
     ```
     If(Connection.Connected,
-  
+
         ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-  
+
         Clear(LocalTweetsToPost);
-  
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-  
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-  
+
         UpdateContext({statusText: "Online data"})
     )
     ```

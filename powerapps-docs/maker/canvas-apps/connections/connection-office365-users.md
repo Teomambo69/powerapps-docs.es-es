@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: a1e0ddd7dad50ec269a0946163cc7b822ddb0681
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 679d9b905aa1b7d7b1b731de400e6e133787769b
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803498"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897119"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)
@@ -27,7 +27,7 @@ En este tema se muestra cómo agregar Usuarios de Office 365 como una conexión 
 
 ## <a name="add-a-connection"></a>Agregar una conexión
 1. [Agregue una conexión de datos](../add-data-connection.md) y seleccione **Usuarios de Office 365**:  
-   
+
     ![Conexión a Office 365](./media/connection-office365-users/add-office.png)
 2. Seleccione **Connect** (Conectar) y, si se pide que inicie sesión, escriba su cuenta profesional.
 
@@ -37,7 +37,7 @@ La conexión de Usuarios de Office 365 se ha creado y agregado a la aplicación.
 ### <a name="show-information-about-the-current-user"></a>Mostrar información sobre el usuario actual
 1. En el menú **Insertar**, seleccione **Etiqueta**.
 2. En la barra de funciones, establezca su propiedad **[Text](../controls/properties-core.md)** en cualquiera de las siguientes fórmulas:
-   
+
     `Office365Users.MyProfile().Department`  
     `Office365Users.MyProfile().DisplayName`  
     `Office365Users.MyProfile().GivenName`  
@@ -54,13 +54,13 @@ La etiqueta muestra la información que ha especificado sobre el usuario actual.
 
 ### <a name="show-information-about-another-user"></a>Mostrar información sobre otro usuario
 1. En el menú **Insert** (Insertar), seleccione **Text** (Texto) y luego seleccione **Text input** (Entrada de texto). Cambie su nombre por **InfoAbout**:  
-   
+
     ![Cambiar el nombre del control](./media/connection-office365-users/renameinfoabout.png)
 2. En **InfoAbout**, escriba o pegue una dirección de correo electrónico de un usuario de su organización. Por ejemplo, escriba *yourName*@*yourCompany.com*.
 3. Agregue una **etiqueta** (menú **Insertar**) y establezca su propiedad **[Texto](../controls/properties-core.md)** en alguna de las siguientes fórmulas:
-   
+
    * Para mostrar información sobre otro usuario:  
-     
+
        `Office365Users.UserProfile(InfoAbout.Text).Department`  
        `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
        `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
@@ -73,7 +73,7 @@ La etiqueta muestra la información que ha especificado sobre el usuario actual.
        `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
        `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
    * Para mostrar información sobre el administrador de otro usuario:  
-     
+
        `Office365Users.Manager(InfoAbout.Text).Department`  
        `Office365Users.Manager(InfoAbout.Text).DisplayName`  
        `Office365Users.Manager(InfoAbout.Text).GivenName`  
@@ -100,28 +100,28 @@ Si crea un contacto y lo selecciona en la pantalla de exploración de la aplicac
 1. Agregue un control **Entrada de texto** (menú **Insert** [Insertar] > **Text** [Texto]) y cambie su nombre por **InfoAbout**.
 2. En **InfoAbout**, escriba la dirección de correo electrónico de un usuario de su organización. Por ejemplo, escriba *yourManagersName*@*yourCompany.com*.
 3. Agregue una galería **With text** (Con texto) (menú **Insert** [Insertar] > **Gallery** [Galería]) y establezca su propiedad **[Items](../controls/properties-core.md)** en la siguiente fórmula:
-   
+
     `Office365Users.DirectReports(InfoAbout.Text)`
-   
+
     La galería muestra información sobre los subordinados directos del usuario especificado.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 4. En la segunda lista, seleccione **JobTitle**. En la tercera lista, seleccione **DisplayName**. La galería se actualiza para mostrar estos valores.  
-   
+
 > [!NOTE]
 > El primer cuadro es en realidad un control de imagen. Si no tiene ninguna imagen, puede eliminar el control de imagen y agregar una etiqueta en su lugar. [Agregar y configurar controles](../add-configure-controls.md) es un buen recurso.
 
 ### <a name="search-for-users"></a>Búsqueda de usuarios
 1. Agregue un control **Entrada de texto** (menú **Insert** [Insertar] > **Text** [Texto]) y cambie su nombre por **SearchTerm**. Escriba un nombre para buscar. Por ejemplo, escriba su nombre.
 2. Agregue una galería **With text** (Con texto) (menú **Insert** [Insertar] > **Gallery** [Galería]) y establezca su propiedad **[Items](../controls/properties-core.md)** en la siguiente fórmula:
-   
+
     `Office365Users.SearchUser({searchTerm: SearchTerm.Text})`
-   
+
     La galería muestra los usuarios cuyo nombre contiene el texto de búsqueda que ha escrito.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 3. En la segunda lista, seleccione **Mail**. En la tercera lista, seleccione **DisplayName**.
-   
+
     La segunda y tercera etiqueta de la galería se actualizan.
 
 ## <a name="view-the-available-functions"></a>Visualización de las funciones disponibles
@@ -142,6 +142,7 @@ Obtener mi perfil: recupera el perfil del usuario actual.
 Ninguna
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
 | Departamento |string |Departamento del usuario. |
@@ -160,11 +161,13 @@ Ninguna
 Obtener perfil de usuario: recupera un perfil de usuario específico.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
 | Departamento |string |Departamento del usuario. |
@@ -183,11 +186,13 @@ Obtener perfil de usuario: recupera un perfil de usuario específico.
 Obtener administrador: recupera el perfil de usuario del administrador del usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
 | Departamento |string |Departamento del usuario. |
@@ -206,11 +211,13 @@ Obtener administrador: recupera el perfil de usuario del administrador del usuar
 Obtener subordinados directos: obtiene los subordinados directos.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
 | Departamento |string |Departamento del usuario. |
@@ -229,11 +236,13 @@ Obtener subordinados directos: obtiene los subordinados directos.
 Buscar usuarios: recupera los resultados de búsqueda de los perfiles de usuario.
 
 #### <a name="input-properties"></a>Propiedades de entrada
+
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | searchTerm |string |no |Cadena de búsqueda. Se aplica a: nombre para mostrar, nombre dado, apellido, correo electrónico, alias de correo electrónico y nombre principal de usuario |
 
 #### <a name="output-properties"></a>Propiedades de salida
+
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
 | Departamento |string |Departamento del usuario. |

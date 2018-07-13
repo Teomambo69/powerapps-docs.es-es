@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 60ec1fc7f896aeb3391ed794920e987b232d09f3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9b2c07e8599ada76aa2f2195fc1240321ed02ef9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833497"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898223"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
 Muestre una lista de elementos de cualquier origen de datos mediante la adición de un control **[Galería](controls/control-gallery.md)** a la aplicación. En este tema se utiliza Excel como origen de datos. Filtre la lista mediante la configuración del control **Galería** para mostrar únicamente aquellos elementos que coinciden con el criterio de filtro en un control **[Entrada de texto](controls/control-text-input.md)**.
@@ -52,7 +52,7 @@ Muestre una lista de elementos de cualquier origen de datos mediante la adición
 7. Pulse o haga clic en **Pantalla de lista** para agregar una pantalla que contenga un control **Galería** y otros controles, como una barra de búsqueda.
 
     > [!NOTE]
-> Si agrega un control **Galería** a una pantalla nueva o a una existente, puede hacer clic o pulsar cerca de la parte inferior del control **Galería** para seleccionarlo, pulsar o hacer clic en **Flooring Estimates** en el panel derecho y, después, pulsar o hacer clic en otro diseño del panel **Datos**. Para este tutorial, deje el diseño predeterminado.
+   > Si agrega un control **Galería** a una pantalla nueva o a una existente, puede hacer clic o pulsar cerca de la parte inferior del control **Galería** para seleccionarlo, pulsar o hacer clic en **Flooring Estimates** en el panel derecho y, después, pulsar o hacer clic en otro diseño del panel **Datos**. Para este tutorial, deje el diseño predeterminado.
 
     ![Elegir el diseño de la galería](./media/add-gallery/select-layout.png)
 

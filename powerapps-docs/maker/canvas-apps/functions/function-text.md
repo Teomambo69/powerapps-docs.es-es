@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: a63a972e7af3c821d2441519c2a887bbe110faac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fece9b928cdbfa955ada994e4cdd637eea3f7ac8
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838956"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899718"
 ---
 # <a name="text-function-in-powerapps"></a>Función Text en PowerApps
 Da formato a un número o un valor de fecha y hora para mostrar como una cadena de texto.
@@ -31,6 +31,7 @@ La función **Text** da formato a un número o a un valor de fecha y hora según
 Consulte [cómo trabajar con fechas y horas](../show-text-dates-times.md) para más información.
 
 ### <a name="predefined-datetime-formats"></a> Formatos predefinidos de fecha y hora
+
 | Formato predefinido | Descripción |
 | --- | --- |
 | **DateTimeFormat.LongDate** |Año completo, mes, día del mes y día de la semana. Los nombres del mes y del día de la semana no se abrevian. |
@@ -46,6 +47,7 @@ Consulte [cómo trabajar con fechas y horas](../show-text-dates-times.md) para m
 | **DateTimeFormat.UTC** |El valor de fecha y hora se convierte en UTC según la zona horaria del usuario actual y usa un formato basado en el estándar ISO 8601. |
 
 ### <a name="number-placeholders"></a>Marcadores de posición de número
+
 | Marcador de posición | Descripción |
 | --- | --- |
 | **0** (*cero*) |Muestra ceros no significativos si un número tiene menos dígitos que ceros en el formato. Por ejemplo, use el formato **#.00** si desea mostrar **8.9** como **8.90**. |
@@ -56,28 +58,29 @@ Consulte [cómo trabajar con fechas y horas](../show-text-dates-times.md) para m
 Si un número tiene más dígitos a la derecha del separador decimal que marcadores de posición en el formato, el número se redondea a tantas cifras decimales como marcadores de posición existen. Si hay más dígitos a la izquierda del separador decimal que marcadores de posición, se muestran los dígitos adicionales. Si el formato solo consta de signos numéricos (#) a la izquierda del separador decimal, los números menores que 1 comienzan con un separador decimal (por ejemplo **.47**).
 
 ### <a name="date-and-time-placeholders"></a>Marcadores de posición de fecha y hora
-| Marcador de posición | Descripción |
-| --- | --- |
-| **m** |Muestra el mes como número sin cero inicial. |
-| **mm** |Muestra el mes como número con cero inicial cuando corresponda. |
-| **mmm** |Muestra el mes abreviado (**Ene** a **Dic**). |
-| **mmmm** |Muestra el nombre completo del mes (**Enero** a **Diciembre**). |
-| **d** |Muestra el día como número sin cero inicial. |
-| **dd** |Muestra el día como número con cero inicial cuando corresponda. |
-| **ddd** |Muestra el día abreviado (**Dom** a **Sáb**). |
-| **dddd** |Muestra el nombre completo del día (**Domingo** a **Sábado**). |
-| **yy** |Muestra el año como número de dos dígitos. |
-| **yyyy** |Muestra el año como número de cuatro dígitos. |
-| **h** |Muestra la hora como número sin cero inicial. |
-| **hh** |Muestra la hora como número con cero inicial cuando corresponda. Si el formato contiene **AM** o **PM**, la hora se muestra según el reloj de 12 horas. De lo contrario, la hora se muestra según el reloj de 24 horas. |
-| **m** |Muestra el minuto como número sin cero inicial.  > [!NOTE]
-> El código **m** o **mm** debe aparecer inmediatamente después del código **h** o **hh** o inmediatamente antes del código **ss**; de lo contrario, **Text** muestra el mes en lugar de los minutos. |
-| **mm** |Muestra el minuto como número con cero inicial cuando corresponda. > [!NOTE]
-> El marcador de posición **m** o **mm** debe aparecer inmediatamente después del marcador de posición **h** o **hh** o inmediatamente antes del marcador de posición **ss**. De lo contrario, **Text** muestra el mes en lugar de los minutos. |
-| **s** |Muestra el segundo como número sin cero inicial. |
-| **ss** |Muestra el segundo como número con cero inicial cuando corresponda. |
-| **f** |Muestra las fracciones de segundos. |
-| **AM/PM**, **am/pm**, **A/P**, **a/p** |Muestra la hora según un reloj de 12 horas. **Text** muestra "AM", "am", "A" o "a" para las horas que van entre la medianoche hasta el mediodía y "PM", "pm", "P" o "p" para las horas que van desde el mediodía hasta la medianoche. |
+
+|                                                                                                 Marcador de posición                                                                                                  |                                                                                                     Descripción                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                    **m**                                                                                                     |                                                                               Muestra el mes como número sin cero inicial.                                                                                |
+|                                                                                                    **mm**                                                                                                    |                                                                        Muestra el mes como número con cero inicial cuando corresponda.                                                                         |
+|                                                                                                   **mmm**                                                                                                    |                                                                             Muestra el mes abreviado (**Ene** a **Dic**).                                                                             |
+|                                                                                                   **mmmm**                                                                                                   |                                                                          Muestra el nombre completo del mes (**Enero** a **Diciembre**).                                                                           |
+|                                                                                                    **d**                                                                                                     |                                                                                Muestra el día como número sin cero inicial.                                                                                 |
+|                                                                                                    **dd**                                                                                                    |                                                                         Muestra el día como número con cero inicial cuando corresponda.                                                                          |
+|                                                                                                   **ddd**                                                                                                    |                                                                              Muestra el día abreviado (**Dom** a **Sáb**).                                                                              |
+|                                                                                                   **dddd**                                                                                                   |                                                                            Muestra el nombre completo del día (**Domingo** a **Sábado**).                                                                            |
+|                                                                                                    **yy**                                                                                                    |                                                                                      Muestra el año como número de dos dígitos.                                                                                       |
+|                                                                                                   **yyyy**                                                                                                   |                                                                                      Muestra el año como número de cuatro dígitos.                                                                                      |
+|                                                                                                    **h**                                                                                                     |                                                                                Muestra la hora como número sin cero inicial.                                                                                |
+|                                                                                                    **hh**                                                                                                    | Muestra la hora como número con cero inicial cuando corresponda. Si el formato contiene **AM** o **PM**, la hora se muestra según el reloj de 12 horas. De lo contrario, la hora se muestra según el reloj de 24 horas. |
+|                                                                                                    **m**                                                                                                     |                                                                         Muestra el minuto como número sin cero inicial.  > [!NOTE]                                                                          |
+|            > El código **m** o **mm** debe aparecer inmediatamente después del código **h** o **hh** o inmediatamente antes del código **ss**; de lo contrario, **Text** muestra el mes en lugar de los minutos.            |                                                                                                                                                                                                                     |
+|                                                                                                    **mm**                                                                                                    |                                                                   Muestra el minuto como número con cero inicial cuando corresponda. > [!NOTE]                                                                   |
+| > El marcador de posición **m** o **mm** debe aparecer inmediatamente después del marcador de posición **h** o **hh** o inmediatamente antes del marcador de posición **ss**. De lo contrario, **Text** muestra el mes en lugar de los minutos. |                                                                                                                                                                                                                     |
+|                                                                                                    **s**                                                                                                     |                                                                               Muestra el segundo como número sin cero inicial.                                                                               |
+|                                                                                                    **ss**                                                                                                    |                                                                        Muestra el segundo como número con cero inicial cuando corresponda.                                                                        |
+|                                                                                                    **f**                                                                                                     |                                                                                         Muestra las fracciones de segundos.                                                                                          |
+|                                                                                    **AM/PM**, **am/pm**, **A/P**, **a/p**                                                                                    |               Muestra la hora según un reloj de 12 horas. **Text** muestra "AM", "am", "A" o "a" para las horas que van entre la medianoche hasta el mediodía y "PM", "pm", "P" o "p" para las horas que van desde el mediodía hasta la medianoche.                |
 
 ### <a name="literal-placeholders"></a>Marcadores de posición literales
 Puede incluir cualquiera de estos caracteres en su cadena de formato.  Aparecerán en el resultado de **Text** tal cual. Los caracteres adicionales están reservados para marcadores de posición futuros, por lo que no debe usarlos.
@@ -148,6 +151,7 @@ De manera predeterminada, la función **Text** usa el idioma del usuario que eje
 El usuario que ejecuta estas fórmulas se encuentra en Estados Unidos y seleccionó inglés como idioma.  La función **Language** muestra "en-US".
 
 ### <a name="number"></a>Número
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Text(&nbsp;1234.59,&nbsp;"####.#"&nbsp;)** |Da formato al número con un decimal. |"1234.6" |
@@ -169,6 +173,7 @@ El usuario que ejecuta estas fórmulas se encuentra en Estados Unidos y seleccio
 | **Text( Now(), "d-mmm-yy" )** |Da formato con caracteres de marcador de posición: <ul><li>**d** para un día del mes de solo un dígito o de dos dígitos<li>**-** como carácter literal copiado en el resultado<li>**mmm** para una abreviatura de tres letras del mes<li>**-** como otro carácter literal copiado en el resultado<li>**yy** para una abreviatura de dos dígitos del año</ul> |"23-Nov-15" |
 
 ### <a name="global-apps"></a>Aplicaciones globales
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Text( 1234567.89, "[$-en-US]$ #,###" )** |Interpreta **,** como un separador de agrupación puesto cada tres caracteres y **$** como el símbolo de moneda. Como no se mostrarán decimales, el valor se redondea hacia arriba al próximo número entero. En este caso, la etiqueta **[$-en-US]** es opcional, dado que se trata del valor predeterminado. |"$ 1,234,568" |

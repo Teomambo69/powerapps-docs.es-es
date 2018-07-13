@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 3cb894d044a1e6ac02234bc1fa4c5b9239959015
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7989a795afc0085bfa0e78d4b9d0bebeb26619c6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830679"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899281"
 ---
 # <a name="split-function-in-powerapps"></a>Función Split en PowerApps
 Divide una cadena de texto en una tabla de subcadenas.
@@ -36,6 +36,7 @@ Use la función **[Concat](function-concatenate.md)** función para volver a com
 * *Separador*: se requiere.  Separador que se usa para dividir la cadena.  Puede ser cero, uno o varios caracteres.
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," )** |Divide las diferentes frutas, tomando como base la coma, que es el separador.  La división la realiza solo la coma, no el espacio posterior a ella, lo que da lugar a que haya un espacio delante de "&nbsp;Oranges" y "&nbsp;Bananas". |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 16c585f553373faee609683774e7938e8bd165f1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ca359f550d81a73f448ce18d94d0d36efceb839b
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31824599"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897418"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>Creación de una conexión a SharePoint desde PowerApps
 Cree una conexión a SharePoint Online o a SharePoint local para poder generar una aplicación automáticamente o crear una desde cero.
@@ -61,7 +61,7 @@ A partir de la fecha de publicación de este artículo, PowerApps admite listas 
     ![Elegir SharePoint local](./media/connect-to-sharepoint/choose-onprem.png)
 
     > [!NOTE]
-> Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](working-with-environments.md) del usuario.
+   > Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](working-with-environments.md) del usuario.
 
 2. Especifique el nombre de usuario y la contraseña.
 

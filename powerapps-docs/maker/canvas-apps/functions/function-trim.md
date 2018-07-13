@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 38aa25c46bf8b29c413ca9c3df92f9528bfa97d5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f94144c0b279cc61c0af15c95e7cccf73bb124cd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831130"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898430"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>Funciones Trim y TrimEnds en PowerApps
 Quita los espacios de una cadena de texto.
@@ -41,6 +41,7 @@ Al recortar los espacios entre las palabras, **Trim** es coherente con la funci�
 * *SingleColumnTable*: requerido. Tabla de una sola columna a la que se van a quitar los espacios.
 
 ## <a name="example"></a>Ejemplo
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |Quita todos los espacios del principio y del final de una cadena, y los espacios adicionales de dentro de la cadena. |"Hello World" |

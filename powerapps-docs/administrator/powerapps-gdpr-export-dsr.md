@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 000f15ea7b1fa4e11cbe49b44e57017daf973a89
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8eb651bcd4ad9320dc8995864249f619bb76ab77
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552976"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896866"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps
 El "derecho a la portabilidad de los datos" permite al interesado solicitar una copia de sus datos personales en formato electrónico (es decir, en un formato estructurado, comúnmente utilizado, legible por máquina e interoperable) que pueda ser transmitido a otro poseedor de los datos:
@@ -39,7 +39,7 @@ Permisos de conexión  | | Creador de aplicaciones: Disponible <br> Administrado
 Configuración de usuario de PowerApps, configuración de la aplicación de usuario y notificaciones | | Creador de aplicaciones: Disponible <br> Administrador: disponible
 
 > ** Con la introducción de Common Data Service (CDS) for Apps, si se crea una base de datos dentro del entorno, los permisos de entorno y los permisos de aplicaciones controladas por modelos se almacenan como registros dentro de la instancia de base de datos CDS para aplicaciones. Para instrucciones sobre cómo responder a solicitudes DSR para usuarios que utilizan CDS for Apps, consulte [Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de Common Data Service for Apps](common-data-service-gdpr-dsr-guide.md).
-
+> 
 > *** Un administrador puede tener acceso a estos recursos desde el [portal de PowerApps ](https://web.powerapps.com) solo si el propietario del recurso le ha concedido explícitamente el acceso. Si no es así, deberá aprovechar los [cmdlets de PowerShell para administradores de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ## <a name="prerequisites"></a>Requisitos previos

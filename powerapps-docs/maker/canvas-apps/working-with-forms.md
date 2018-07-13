@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf66c1f7596b8a3ef4c8495db3f0ac2af8165d8c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330684"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899695"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
 Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:
@@ -157,7 +157,7 @@ Para seguir el resto de este tema al pie de la letra, cree una lista de SharePoi
 * Cree una aplicación desde cero, para teléfonos, y [conéctela al origen de datos](add-data-connection.md).
   
     > [!NOTE]
-> Las aplicaciones de tableta son muy similares, pero es posible que desee un [diseño de pantalla](#screen-design) distinto para aprovechar al máximo el espacio adicional de la pantalla.
+  > Las aplicaciones de tableta son muy similares, pero es posible que desee un [diseño de pantalla](#screen-design) distinto para aprovechar al máximo el espacio adicional de la pantalla.
   
     Los ejemplos que aparecen en el resto del tema se basan en un origen de datos llamado **Helado**.
 

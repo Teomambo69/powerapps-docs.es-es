@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: eaf538c1189dffd8fb2169f3eda3f525bcf623de
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 26991baa1feb1ef4821beaf791454def21960d4f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832037"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896636"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.
@@ -56,6 +56,7 @@ Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.m
 En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de julio de 2013, 1:02 p.m**.
 
 ### <a name="simple-dateadd"></a>DateAdd simple
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |Agrega tres días (unidades predeterminadas) a la fecha y hora actuales. |"18-07-2013 13:02" |
@@ -64,6 +65,7 @@ En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de juli
 | **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** |Resta 30 minutos de la fecha y hora actuales. |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>DateDiff simple
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |Devuelve la diferencia entre las dos unidades en las unidades predeterminadas de **Días**. |170 |

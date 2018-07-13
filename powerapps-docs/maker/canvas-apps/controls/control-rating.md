@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2cdf88c21e9cd8dd957fa5cf704280df325e85fd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834662"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898315"
 ---
 # <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.
@@ -105,7 +105,7 @@ Y esto, además de los [requisitos estándar de contraste de color](../accessibl
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
 
     > [!NOTE]
-> Los lectores de pantalla tratan el control **Clasificación** como botones de radio.
+  > Los lectores de pantalla tratan el control **Clasificación** como botones de radio.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
@@ -113,4 +113,4 @@ Y esto, además de los [requisitos estándar de contraste de color](../accessibl
 * Considere la posibilidad de usar otro control si hay demasiadas estrellas. Puede resultar agotador navegar con un teclado y difícil seleccionar con precisión con una pantalla táctil.
 
     > [!NOTE]
-> Las mismas interacciones de teclado para los botones de radio se pueden emplear en **Clasificación**.
+  > Las mismas interacciones de teclado para los botones de radio se pueden emplear en **Clasificación**.

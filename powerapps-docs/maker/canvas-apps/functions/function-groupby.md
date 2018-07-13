@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 290f4447d7a5793677cfa426edac85963363a9d1
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837973"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896659"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones AgruparPor y Desagrupar en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -51,7 +51,7 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 * *GroupColumnName*: requerido.  El nombre de la columna para el almacenamiento de datos de registro que no están en el *ColumnName(s)*.
   
     > [!NOTE]
-> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 **Desagrupar**( *Tabla*, *GroupColumnName* )
 
@@ -59,7 +59,7 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 * *GroupColumnName*: requerido. La columna que contiene la configuración de los datos de registro con la función **AgruparPor**.
   
     > [!NOTE]
-> En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="create-a-collection"></a>Crear una colección

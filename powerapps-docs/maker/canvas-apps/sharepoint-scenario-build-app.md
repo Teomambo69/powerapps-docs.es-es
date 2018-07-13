@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcf1bcec976e34f07745c315d75569bbc86e583f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330638"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899534"
 ---
 # <a name="create-an-app-to-manage-projects"></a>Crear una aplicación para administrar proyectos
 > [!NOTE]
@@ -155,7 +155,7 @@ En este paso, se proporciona una forma de navegar hasta las restantes pantallas 
      ![Actualizar texto del botón](./media/sharepoint-scenario-build-app/04-03-08-buttons-final.png)
      
      > [!NOTE]
-> El botón se etiqueta como **Update Details**, pero primero va a ir a la pantalla **ViewProjects** para seleccionar un proyecto para actualizar.
+     > El botón se etiqueta como **Update Details**, pero primero va a ir a la pantalla **ViewProjects** para seleccionar un proyecto para actualizar.
 
 ### <a name="run-the-app"></a>Ejecutar la aplicación
 La aplicación aún no hace mucho, pero se puede ejecutar si así lo desea:

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c175b1b35d063f4e20321c494d5472afa2776990
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836916"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899580"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -165,6 +165,6 @@ Algunos escenarios están exentos de estos requisitos. Aprenda más sobre las [d
 * No use **[Text](properties-core.md)** con información importante y urgente. Los usuarios de lector de pantalla no recibirán alertas de los cambios en **[Text](properties-core.md)**.
 
     > [!NOTE]
-> Los lectores de pantalla anunciarán el tiempo transcurrido cada 5 segundos. Sin embargo, la propiedad **[Text](properties-core.md)** del temporizador no se incluirá en el anuncio.
+  > Los lectores de pantalla anunciarán el tiempo transcurrido cada 5 segundos. Sin embargo, la propiedad **[Text](properties-core.md)** del temporizador no se incluirá en el anuncio.
 
 * Considere la posibilidad de agregar un control **[Etiqueta](control-text-box.md)** para mostrar el tiempo transcurrido. Utilice la propiedad **[Text](properties-core.md)** del temporizador para indicar al usuario que inicie o detenga el temporizador.

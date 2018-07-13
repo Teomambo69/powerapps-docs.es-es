@@ -1,23 +1,19 @@
 ---
 title: Función IsMatch | Microsoft Docs
 description: Información de referencia de la función IsMatch en PowerApps, que incluye la sintaxis
-documentationcenter: na
 author: gregli-msft
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 26bbef6e61845708e20efb3bd201ae61867d1026
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 908602af84c94d4a14dcd2017c2791ee5c25e6ad
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838427"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899258"
 ---
 # <a name="ismatch-function-in-powerapps"></a>Función IsMatch en PowerApps
 Comprueba si una cadena de texto coincide con un patrón.
@@ -134,21 +130,23 @@ El usuario escribe **Hello world** en **TextInput1**.
 | **IsMatch( TextInput1.Text, "hello", Contains & IgnoreCase )** |Comprueba si la entrada del usuario contiene la palabra "hello" (con distinción de mayúsculas y minúsculas). |**true** |
 
 ### <a name="predefined-patterns"></a>Patrones predefinidos
-| Fórmula | Descripción | Resultado |
-| --- | --- | --- |
-| **IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit & Digit )** |Busca la coincidencia con un número de la Seguridad Social de Estados Unidos. |**true** |
-| **IsMatch( "joan@contoso.com", Email )** |Busca la coincidencia con una dirección de correo electrónico. |**true** |
-| **IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )** |Busca la coincidencia con una secuencia de dígitos, un punto y luego cero o más dígitos. |**true** |
-| **IsMatch( "123", MultipleDigits & Period & OptionalDigits )** |Busca la coincidencia con una secuencia de dígitos, un punto y luego cero o más dígitos. Un punto no aparece en el texto, así que no hay coincidencia con este patrón. |**false** |
+
+|                                                            Fórmula                                                            |                                                                Descripción                                                                |  Resultado   |
+|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| **IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit & Digit )** |                                              Busca la coincidencia con un número de la Seguridad Social de Estados Unidos.                                               | **true**  |
+|                                           **IsMatch( "joan@contoso.com", Email )**                                            |                                                         Busca la coincidencia con una dirección de correo electrónico.                                                          | **true**  |
+|                              **IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )**                               |                                   Busca la coincidencia con una secuencia de dígitos, un punto y luego cero o más dígitos.                                   | **true**  |
+|                                **IsMatch( "123", MultipleDigits & Period & OptionalDigits )**                                 | Busca la coincidencia con una secuencia de dígitos, un punto y luego cero o más dígitos. Un punto no aparece en el texto, así que no hay coincidencia con este patrón. | **false** |
 
 ### <a name="regular-expressions"></a>Expresiones regulares
-| Fórmula | Descripción | Resultado |
-| --- | --- | --- |
-| **IsMatch( "986", "\d+" )** |Busca la coincidencia con un número entero mayor que cero. |**true** |
-| **IsMatch( "1.02", "\d+(\.\d\d)?" )** |Busca la coincidencia con un importe de divisa positivo. Si la entrada contiene un separador decimal, la entrada también debe contener 2 caracteres numéricos después de la coma decimal. Por ejemplo, 3,00 es válido, pero no 3,1. |**true** |
-| **IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )** |Busca la coincidencia con un importe de divisa negativo. Si la entrada contiene un separador decimal, la entrada también debe contener 2 caracteres numéricos después de la coma decimal. |**true** |
-| **IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )** |Busca la coincidencia con un número de la Seguridad Social de Estados Unidos.  Valida el formato, el tipo y la longitud del campo de entrada proporcionado. La cadena con la que se busca coincidencia debe estar formada por 3 caracteres numéricos seguidos de un guion, luego 2 caracteres numéricos seguidos de un guion y luego 4 caracteres numéricos. |**true** |
-| **IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )** |Lo mismo que el ejemplo anterior, pero uno de los guiones está fuera de lugar en la entrada. |**false** |
-| **IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )** |Valida una contraseña segura, que debe contener 8, 9 o 10 caracteres, además de al menos un dígito y al menos un carácter alfabético. La cadena no debe contener caracteres especiales. |**false** |
-| **IsMatch( "http://microsoft.com", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]\*)?" )** |Valida una dirección URL http, https o ftp. |**true** |
+
+|                                                                              Fórmula                                                                              |                                                                                                                                  Descripción                                                                                                                                   |  Resultado   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+|                                                                    **IsMatch( "986", "\d+" )**                                                                    |                                                                                                                    Busca la coincidencia con un número entero mayor que cero.                                                                                                                     | **true**  |
+|                                                               **IsMatch( "1.02", "\d+(\.\d\d)?" )**                                                               |                                        Busca la coincidencia con un importe de divisa positivo. Si la entrada contiene un separador decimal, la entrada también debe contener 2 caracteres numéricos después de la coma decimal. Por ejemplo, 3,00 es válido, pero no 3,1.                                         | **true**  |
+|                                                            **IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )**                                                             |                                                        Busca la coincidencia con un importe de divisa negativo. Si la entrada contiene un separador decimal, la entrada también debe contener 2 caracteres numéricos después de la coma decimal.                                                        | **true**  |
+|                                                         **IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )**                                                         | Busca la coincidencia con un número de la Seguridad Social de Estados Unidos.  Valida el formato, el tipo y la longitud del campo de entrada proporcionado. La cadena con la que se busca coincidencia debe estar formada por 3 caracteres numéricos seguidos de un guion, luego 2 caracteres numéricos seguidos de un guion y luego 4 caracteres numéricos. | **true**  |
+|                                                         **IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )**                                                         |                                                                                               Lo mismo que el ejemplo anterior, pero uno de los guiones está fuera de lugar en la entrada.                                                                                               | **false** |
+|                                         **IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )**                                         |                                        Valida una contraseña segura, que debe contener 8, 9 o 10 caracteres, además de al menos un dígito y al menos un carácter alfabético. La cadena no debe contener caracteres especiales.                                        | **false** |
+| **IsMatch( "<http://microsoft.com>", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]\*)?" )** |                                                                                                                     Valida una dirección URL http, https o ftp.                                                                                                                      | **true**  |
 

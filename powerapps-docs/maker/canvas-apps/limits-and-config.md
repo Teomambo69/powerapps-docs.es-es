@@ -7,17 +7,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: ffe1a027e378da3f9c505f4980681a4b5a11dbda
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e76710bc800782624ca1190086cc19dd47d60939
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34851762"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896107"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>Requisitos del sistema, límites y valores de configuración
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
 
 ## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>Plataformas compatibles para ejecutar aplicaciones con la aplicación PowerApps
+
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
 | iOS 9.3 o posterior |iOS 10 o posterior con al menos 2 GB de RAM |
@@ -25,6 +26,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
 ## <a name="supported-browsers-for-running-apps"></a>Exploradores admitidos para ejecutar aplicaciones
+
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
 | Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>MacOS |
@@ -34,6 +36,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
 
 ## <a name="supported-browsers-for-powerapps-studio"></a>Exploradores admitidos para PowerApps Studio
+
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
 | Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
@@ -58,7 +61,7 @@ Las llamadas realizadas desde una API conectada a través de una aplicación (po
 
 Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de permitidos las direcciones IP de una instancia de Azure SQL Database.
 
->   [!IMPORTANT] 
+> [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 1 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
 
 | Región | IP de salida |
