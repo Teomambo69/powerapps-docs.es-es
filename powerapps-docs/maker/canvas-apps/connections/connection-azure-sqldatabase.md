@@ -2,17 +2,19 @@
 title: Introducción a la conexión de SQL Server | Microsoft Docs
 description: Instrucciones paso a paso sobre cómo conectarse a Azure SQL o una base de datos de SQL Server local
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: d8d5e29fc7f1c551ac637d86886bc658e7414110
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: e1a07bc9c166ac37ad0efa7ae50dca87332cb3e2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898016"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020915"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)

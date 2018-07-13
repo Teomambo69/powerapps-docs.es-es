@@ -1,23 +1,20 @@
 ---
 title: 'Control Micrófono: referencia | Microsoft Docs'
 description: Información sobre el control Micrófono, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c79e30a404b1e653f1df6547c9fcc818efc79433
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e0c0c67ab4681eac8c63ceb860a760053547bf24
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34583518"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015050"
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.

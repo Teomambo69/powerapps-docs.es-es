@@ -1,23 +1,20 @@
 ---
 title: Información general sobre la creación de aplicaciones | Microsoft Docs
 description: Información general sobre la creación de aplicaciones de lienzo o en modo controlado por modelos, y la incorporación de Common Data Service
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: d9d0a56e0de283c43bb51a9375593950e1c98479
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.reviewer: ''
+ms.openlocfilehash: bed3109a067da091ca6fc242f1f63c8ff11724ab
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "31829685"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015855"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
 PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene tres componentes principales:

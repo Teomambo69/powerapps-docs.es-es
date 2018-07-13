@@ -1,26 +1,20 @@
 ---
 title: 'Control Editor de texto enriquecido: referencia | Microsoft Docs'
 description: Información sobre el control Editor de texto enriquecido, con propiedades y ejemplos
-services: ''
-suite: powerapps
-documentationcenter: na
 author: fikaradz
-manager: anneta
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/24/2018
 ms.author: fikaradz
-ms.openlocfilehash: 36fa317a4611c72ab4d2f6ce09e176b14b688a55
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 604b48a70f54a011e803342191e51dda12cbca3a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34585106"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016154"
 ---
 # <a name="rich-text-editor-control-experimental-in-powerapps"></a>Control Editor de texto enriquecido (experimental) en PowerApps
 Un control experimental que permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG.  El formato de salida es HTML.

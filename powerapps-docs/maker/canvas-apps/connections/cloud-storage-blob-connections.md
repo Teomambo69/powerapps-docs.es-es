@@ -2,17 +2,19 @@
 title: Introducción a la conexión de almacenamiento en la nube | Microsoft Docs
 description: Consulte cómo conectarse a una cuenta de almacenamiento en la nube y cómo mostrar los datos de Excel en la aplicación
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: 04bfdd2d59b870184e5e42ac06135d00f52dcc70
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: 3d7813280f0d17eca327e86a827da72e33f191e3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895693"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021030"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
