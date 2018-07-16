@@ -2,20 +2,24 @@
 title: Creación de aplicaciones accesibles | Microsoft Docs
 description: Cómo hacer que las aplicaciones sean accesibles para personas con discapacidades
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a7139f6dbc39bc1585156802e30236aa2b68359
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803084"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018730"
 ---
 # <a name="create-accessible-apps"></a>Creación de aplicaciones accesibles
 Una aplicación accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
+
+Use el **[Comprobador de accesibilidad](accessibility-checker.md)** para ayudarle a revisar los posibles problemas de accesibilidad de la aplicación. 
 
 ## <a name="layout-and-color"></a>Diseño y color
 Un diseño con sentido común y poco complicado ayuda a que las aplicaciones sean más accesibles para todos los usuarios.  Cuando realice una personalización intensa de las aplicaciones, tenga en cuenta las siguientes sugerencias.  Los temas de PowerApps son accesibles de forma predeterminada.
@@ -59,4 +63,7 @@ Si tiene un campo de firma que utiliza el control PenInput, debe habilitar un m�
 
 
 
-Relacionado: **[Propiedades de accesibilidad](controls/properties-accessibility.md)**
+Relacionado:
+- [Propiedades de accesibilidad](controls/properties-accessibility.md)
+- [Usar el Comprobador de accesibilidad](accessibility-checker.md)
+- [Colores accesibles en PowerApps](accessible-apps-color.md)
