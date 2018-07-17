@@ -7,14 +7,15 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 80baf43cbde0811d4ab5a7f5212aff767a9f6103
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34453593"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899948"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
+
 En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
 Por ejemplo, la galería para este tutorial coincide con este gráfico de forma predeterminada. La dirección de correo electrónico destaca más que otros tipos de datos, y los usuarios pueden ordenar y filtrar la galería en base a texto en dicha dirección:
@@ -39,9 +40,11 @@ Este tutorial comienza con una aplicación que se generó a partir de un origen 
 Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 [Generar una aplicación](data-platform-create-app.md) desde la entidad **Cuentas** de Common Data Service (CDS) for Apps.
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
+
 1. Inicie sesión en [PowerApps](https://web.powerapps.com) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
     [![Página principal de PowerApps](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
@@ -53,6 +56,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
 ## <a name="change-the-layout"></a>Cambiar el diseño
+
 1. En el panel de navegación izquierdo, seleccione **BrowseGallery1**.
 
     Cuando se haya seleccionado la galería, aparecerá un cuadro de selección con indicadores alrededor.
@@ -84,11 +88,12 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
     ![Galería final](./media/customize-layout-sharepoint/final-gallery.png)
 
 ## <a name="change-sort-and-search-columns"></a>Cambiar el orden y buscar en columnas
+
 1. Seleccione la galería como se describe en la sección anterior.
 
     ![Seleccionar la galería](./media/customize-layout-sharepoint/select-gallery-title.png)
 
-2. Cerca de la esquina superior izquierda, confirme que la lista de propiedades muestra **Elementos**.
+1. Cerca de la esquina superior izquierda, confirme que la lista de propiedades muestra **Elementos**.
 
     ![Propiedad Items](./media/customize-layout-sharepoint/items-property.png)
 
@@ -100,12 +105,13 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
     Con esta fórmula, se asegura de que:
 
-    - Si un usuario escribe uno o varios caracteres en la barra de búsqueda, la galería muestra sólo los nombres de cuenta que contengan el texto escrito por el usuario.
-    - Si un usuario selecciona el icono de orden, la galería se ordena alfabéticamente por nombre de cuenta en orden ascendente o descendente, según la cantidad de veces que el usuario seleccione el icono.
+    * Si un usuario escribe uno o varios caracteres en la barra de búsqueda, la galería muestra sólo los nombres de cuenta que contengan el texto escrito por el usuario.
+    * Si un usuario selecciona el icono de orden, la galería se ordena alfabéticamente por nombre de cuenta en orden ascendente o descendente, según la cantidad de veces que el usuario seleccione el icono.
 
-    Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
+     Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
 
 ### <a name="test-sorting-and-searching"></a>Prueba de ordenación y búsqueda
+
 1. Abra el modo de vista previa presionando F5 (o seleccionado el botón de reproducción cerca de la esquina superior derecha).
 
     ![Abrir el modo de vista previa](./media/customize-layout-sharepoint/open-preview.png)
@@ -121,6 +127,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 1. Quite todo el texto de la barra de búsqueda y cierre el modo de vista previa; para ello, presione Esc (o seleccione el icono de cerrar cerca de la esquina superior derecha).
 
 ## <a name="change-the-screen-title"></a>Cambio del título de pantalla
+
 1. Seleccione el título de la pantalla haciendo clic o pulsando en él.
 
     ![Seleccionar el título de la pantalla](./media/customize-layout-sharepoint/select-title.png)
@@ -133,18 +140,20 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
     ![Nuevo título de pantalla](./media/customize-layout-sharepoint/new-screen-title.png)
 
-## <a name="show-a-scroll-bar"></a>Mostrar una barra de desplazamiento
-Si es posible que los usuarios no tengan pantallas táctiles o ruedas del mouse, configure la galería para que muestre una barra de desplazamiento cuando el usuario mantenga el puntero sobre ella. De este modo, los usuarios pueden mostrar todas las cuentas incluso si no se pueden mostrar a la vez en la pantalla.
+## <a name="show-a-scrollbar"></a>Mostrar una barra de desplazamiento
+
+Si es posible que los usuarios no tengan pantallas táctiles ni ruedas del mouse, configure la galería para que muestre una barra de desplazamiento cuando el usuario mantenga el puntero sobre ella. De este modo, los usuarios pueden mostrar todas las cuentas incluso si no se pueden mostrar a la vez en la pantalla.
 
 1. Seleccione la galería como se describe en el primer procedimiento.
 
     ![Seleccionar la galería](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. En la pestaña **Galería**, seleccione **Mostrar barra de desplazamiento** y confirme que el valor de la propiedad ha cambiado a **true**. 
+1. En la pestaña **Galería**, seleccione **Mostrar barra de desplazamiento** y confirme que el valor de la propiedad ha cambiado a **true**.
 
     ![Mostrar barra de desplazamiento](./media/customize-layout-sharepoint/show-scrollbar.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 En este tutorial, ha personalizado la galería y realizado otros cambios en la pantalla predeterminada para examinar registros en una aplicación generada. También puede personalizar las pantallas predeterminadas para mostrar detalles y crear o actualizar cuentas. Como la pantalla de exploración contiene una galería, las otras dos pantallas en la aplicación contienen formularios. Se pueden cambiar, por ejemplo, qué tipos de datos de los formularios se muestran y en qué orden.
 
 > [!div class="nextstepaction"]

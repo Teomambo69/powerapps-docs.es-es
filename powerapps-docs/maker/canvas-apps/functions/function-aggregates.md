@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
+ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829057"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843236"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funciones Average, Max, Min, StdevP, Sum y VarP de PowerApps
 Funciones de agregado que resumen un conjunto de números.
@@ -44,7 +44,7 @@ Puede proporcionar los valores de estas funciones como:
 
 Estas funciones solo operan sobre valores numéricos. Se omiten otros tipos de valores, como cadenas o registros. Use la función **[Value](function-value.md)** para convertir en número una cadena.
 
-Las funciones **Average**, **Max**, **Min** y **Sum** se pueden delegar cuando se usan con un [origen de datos que admite la delegación de dichas funciones](../delegation-list.md).  Sin embargo, **StdevP** y **VarP** no se puede delegar en ningún origen de datos.  Si no se admite la delegación, solo se recuperará la primera parte de los datos y, después, la función se aplicará localmente.  Es posible que el resultado no represente la situación completa.  Aparecerá un punto azul durante la creación para recordarle esta limitación y sugerirle que cambie a alternativas que puedan delegarse siempre que sea posible. Para más información, consulte la [introducción a la delegación](../delegation-overview.md).
+Las funciones **Average**, **Max**, **Min** y **Sum** se pueden delegar cuando se usan con un [origen de datos que admite la delegación de dichas funciones](../delegation-list.md).  Sin embargo, **StdevP** y **VarP** no se puede delegar en ningún origen de datos.  Si no se admite la delegación, solo se recuperará la primera parte de los datos y, después, la función se aplicará localmente.  Es posible que el resultado no represente la situación completa.  Aparece una advertencia de delegación durante la creación para recordarle esta limitación y sugerirle que cambie a alternativas que puedan delegarse siempre que sea posible. Para más información, consulte la [introducción a la delegación](../delegation-overview.md).
 
 ## <a name="syntax"></a>Sintaxis
 **Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )

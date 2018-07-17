@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 3e3cd3b7339303e23411f3ef977cc33db6e5e8e0
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7fb35c1c59062b892fdd8e3a905d3ee485f6cf61
+ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445692"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026243"
 ---
 # <a name="administer-environments-in-powerapps"></a>Administrar entornos en PowerApps
 En el [Centro de administración de PowerApps][1], administre los entornos que ha creado y aquellos a los que se le ha agregado con el rol Administrador de entorno o Administrador del sistema. Desde el centro de administración, puede realizar estas acciones administrativas:
@@ -57,6 +57,10 @@ Cuando se abre el centro de administración, la pestaña Entornos aparece de for
 Si es miembro del rol Administrador global del inquilino de Azure AD o de Office 365, todos los entornos que hayan creado los usuarios de su inquilino aparecen porque es automáticamente Administrador de entorno para todos ellos.
 
 ## <a name="rename-your-environment"></a>Cambio del nombre del entorno
+
+> [!IMPORTANT]
+> Siga los pasos de esta sección para cambiar el nombre de un entorno de producción que no contiene una base de datos. No se puede cambiar el nombre de los entornos de prueba; para cambiar el nombre de cualquier entorno de producción que contiene una base de datos, debe usar el centro de administración de Dynamics 365.
+
 1. Abra el [centro de administración de PowerApps][1], busque el entorno cuyo nombre vaya a cambiar en la lista y haga clic o pulse en él.
 
     ![](./media/environment-admin/environment-list-updated3.png)
@@ -191,10 +195,6 @@ En los escenarios siguientes, puede que obtenga un error al intentar crear una b
 1. **Entorno predeterminado**: actualmente, la creación de una base de datos no es compatible con el entorno predeterminados del inquilino. 
 
 2. **Entorno para un uso individual**: puede obtener un entorno para su uso individual registrándose en el plan de comunidad de PowerApps. Si aún no ha creado la base de datos, no podrá aprovisionar ninguna base de datos en el entorno para su uso individual. 
-
-3. **Entorno en una región diferente de la principal de su inquilino de AAD**: actualmente, solo puede aprovisionar una base de datos en los entornos creados en la región principal de su inquilino de Azure Active Directory. La capacidad de aprovisionar una base de datos en otras regiones estará disponible próximamente. Por lo tanto, asegúrese de que la región y la ubicación predeterminada del inquilino coincidan para poder crear una base de datos en ella.
-
-4. **Creación de bases de datos no admitida en algunas regiones**: en determinadas regiones, aún no se pueden crear bases de datos. Por ejemplo, los países de Sudamérica. Así pues, si la ubicación principal de su inquilino está en Sudamérica, por el momento no podrá aprovisionar una base de datos en ningún entorno. 
     
 Estamos trabajando para admitir todos los casos mencionados anteriormente.
 Si recibe cualquier otro mensaje de error o tiene alguna pregunta más, póngase en contacto con nosotros [aquí][5].

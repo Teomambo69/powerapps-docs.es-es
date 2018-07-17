@@ -1,23 +1,19 @@
 ---
 title: Funciones, señales y enumeraciones | Microsoft Docs
 description: Información de referencia para las funciones, las señales y las enumeraciones en PowerApps.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: b131f9da9dbf0624185fc837c5582c9ef0477089
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822590"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948605"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -65,6 +61,8 @@ Otros elementos incluyen:
 
 **[Char](functions/function-char.md)**: traduce un código de carácter en una cadena.
 
+**[Choices](functions/function-choices.md)**: devuelve una tabla de posibles valores para una columna de búsqueda.
+
 **[Clear](functions/function-clear-collect-clearcollect.md)**: elimina todos los datos de una [colección](working-with-data-sources.md#collections).
 
 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**: elimina todos los datos de una colección y, después, agrega un conjunto de [registros](working-with-tables.md#records).
@@ -86,6 +84,8 @@ Otros elementos incluyen:
 **[Concat](functions/function-concatenate.md)**: concatena cadenas en un origen de datos.  
 
 **[Concatenate](functions/function-concatenate.md)**: concatena cadenas.
+
+**[Concurrent](functions/function-concurrent.md)**: evalúa varias fórmulas simultáneamente entre sí. 
 
 **[Connection](functions/signals.md)**: devuelve información sobre la conexión de red.
 
@@ -279,6 +279,8 @@ Otros elementos incluyen:
 **[Search](functions/function-filter-lookup.md)**: busca registros en una tabla que contengan una cadena en una de sus columnas.  
 
 **[Second](functions/function-datetime-parts.md)**: recupera la parte de segundo de un valor de fecha y hora.
+
+**[Select](functions/function-select.md)**: simula una acción de selección en un control, lo que provoca la evaluación de la fórmula **OnSelect**.
 
 **[Set](functions/function-set.md)**: establece el valor de una variable global.
 

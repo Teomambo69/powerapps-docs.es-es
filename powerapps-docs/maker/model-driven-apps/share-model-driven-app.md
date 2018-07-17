@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 134ae4dfb5fe111c4c40e96efa1e79a3993c4a46
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330385"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899764"
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Compartir una aplicación controlada por modelos con PowerApps
 
@@ -56,7 +56,7 @@ Para obtener más información sobre los privilegios de acceso y ámbito, vea [R
 4. Desde el Diseñador de roles de seguridad se seleccionan las acciones, como lectura, escritura o eliminación, y el ámbito para realizar esa acción. El ámbito determina la profundidad o altura dentro de la jerarquía de entornos a la que el usuario puede realizar una acción concreta. En el cuadro **Nombre del rol** escriba *Técnicos de peluquería para mascotas*.
 5. Haga clic en la pestaña **Entidades personalizadas** y, después, busque la entidad personalizada que quiere. En este ejemplo, se usará la entidad personalizada denominada **Mascota**. 
 6. En la fila **Mascota**, seleccione cuatro veces cada uno de los privilegios siguientes hasta que se seleccione ![Ámbito global de organización](media/share-model-driven-app/organizational-scope-privilege.png): **Leer, Escribir, Anexar**
-![Nuevo rol de seguridad](media/share-model-driven-app/custom-security-role.png)
+   ![Nuevo rol de seguridad](media/share-model-driven-app/custom-security-role.png)
 7. Como la aplicación de peluquería para mascotas también tiene una relación con la entidad de cuenta, haga clic en la pestaña **Registros principales** y, en la fila **Cuenta**, seleccione cuatro veces **Lectura** hasta que se seleccione ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png). 
 8. Haga clic en **Guardar y cerrar**. 
 9. En el Diseñador de roles de seguridad, en el cuadro **Nombre de rol**, escriba *Programadores de peluquería para mascotas*. 
@@ -68,6 +68,10 @@ Para obtener más información sobre los privilegios de acceso y ámbito, vea [R
 
 ## <a name="assign-security-roles-to-users"></a>Asignar roles de seguridad a los usuarios
 Los roles de seguridad controlan el acceso de un usuario a los datos a través de un conjunto de permisos y niveles de acceso. La combinación de niveles de acceso y permisos que se incluyen en un rol de seguridad específico establece los límites en la vista de los datos del usuario y en las interacciones del usuario con esos datos.
+
+> [!IMPORTANT]
+> Para usar una aplicación controlada por modelos, todos los usuarios de la aplicación en el entorno deben tener al menos el rol de seguridad de usuario de Common Data Service, independientemente de los roles de seguridad adicionales que asigne. En la mayoría de los casos, el rol de seguridad de usuario de Common Data Service proporciona suficientes privilegios para llevar a cabo las tareas básicas necesarias para usar una aplicación.
+> Tenga en cuenta que los usuarios que tienen el rol de seguridad de usuario de Common Data Service también tienen acceso de lectura y escritura a todos los registros de entidad estándar de cuenta, contacto y conexión, independientemente de quién sea el propietario. Si no quiere que los usuarios de la aplicación tengan privilegios para estos registros, cree un rol de seguridad personalizado. La manera más sencilla es copiar el rol de seguridad de usuario de Common Data Service y quitar los privilegios adecuados. Más información: [Copia de roles de seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/admin/copy-security-role)
 
 ### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>Asignar un rol de seguridad a los técnicos de peluquería para mascotas
 1. Desde el cuadro de diálogo **Compartir esta aplicación**, en **Assign users to the security role** (Asignar usuarios al rol de seguridad), haga clic en **Usuarios de seguridad**.

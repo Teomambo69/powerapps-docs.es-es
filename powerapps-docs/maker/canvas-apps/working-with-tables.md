@@ -1,23 +1,18 @@
 ---
 title: Información sobre tablas | Microsoft Docs
 description: Información de referencia para trabajar con tablas, columnas y registros
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
+ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839186"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864270"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
 Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
@@ -91,26 +86,28 @@ Al igual que con los números, las fórmulas relacionadas con tablas y registros
 
 Se van a analizar algunos ejemplos sencillos.
 
-1. Agregue un control **Galería de texto** y establezca su propiedad **[Elementos](controls/properties-core.md)** con el nombre de una tabla.
-   
-    De forma predeterminada, la galería muestra texto de marcador de posición de una tabla denominada **EjemploGaleríaTextual**. La propiedad **[Elementos](controls/properties-core.md)** de la galería se establece automáticamente en dicha tabla.
-   
-    > [!NOTE]
-> Algunos controles se han reorganizado y ampliado con fines meramente ilustrativos.
-   
+1. Cree una aplicación en blanco para un teléfono y agregue un control **[Galería](controls/control-gallery.md)** vertical que contenga otros controles.
+
+    De forma predeterminada, la pantalla muestra texto de marcador de posición de una tabla denominada **CustomGallerySample**. La propiedad **[Items](controls/properties-core.md)** del control **[Galería](controls/control-gallery.md)** de la pantalla se establece automáticamente en esa tabla.
+
     ![](media/working-with-tables/gallery-items.png)
+
+    > [!NOTE]
+    > Algunos controles se han reorganizado y ampliado con fines meramente ilustrativos.
+
 2. En lugar de establecer la propiedad **[Elementos](controls/properties-core.md)** con el nombre de la tabla, defina una fórmula que incluya el nombre de la tabla como un argumento, como en este ejemplo:<br>
-   **Sort(TextualGallerySample, Heading, Descending)**
-   
+    **Sort(CustomGallerySample, SampleHeading, Descending)**
+
     Esta fórmula incorpora la función **[Ordenar](functions/function-sort.md)**, que considera el nombre de una tabla como su primer argumento y el nombre de una columna de dicha tabla como su segundo argumento. La función también admite un tercer argumento opcional, que estipula que desea ordenar los datos en orden descendente.
-   
+
     ![](media/working-with-tables/gallery-items-sort.png)
+
 3. Defina la propiedad **[Elementos](controls/properties-core.md)** con una fórmula que considere la fórmula del paso anterior como un argumento y devuelve una tabla, como en este ejemplo:<br>
-   **FirstN(Sort(TextualGallerySample, Heading, Descending), 2)**
-   
+   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+
     En esta fórmula, use la función **[FirstN](functions/function-first-last.md)** para mostrar un número concreto de registros de una tabla. Se usa la función **[Ordenar](functions/function-sort.md)** como el primer argumento de **[FirstN](functions/function-first-last.md)** y un número (en este caso, **2**) como el segundo argumento, que especifica la cantidad de registros que se van a mostrar.
    
-    Toda la fórmula devuelve una tabla que contiene los dos primeros registros de la tabla **EjemploGaleríaTextual**, ordenados en función de la columna **Encabezado** en orden descendente.
+    Toda la fórmula devuelve una tabla que contiene los dos primeros registros de la tabla **CustomGallerySample**, ordenados por la columna **SampleHeading** en orden descendente.
    
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
@@ -139,7 +136,7 @@ Si especifica un origen de datos como un argumento para una de estas funciones, 
 * **[Actualizar](functions/function-update-updateif.md)**, **[ActualizarSi](functions/function-update-updateif.md)**: actualiza registros que reúnen uno o varios criterios especificados.
 * **[Eliminar](functions/function-remove-removeif.md)**, **[EliminarSi](functions/function-remove-removeif.md)**: elimina registros que reúnen uno o varios criterios especificados.
 
-Los siguientes controles tienen propiedades que son tablas:
+Estas propiedades se establecen en valores que son tablas:
 
 * **Elementos**: se aplica a galerías y cuadros de lista. Tabla que se va a mostrar en la galería.
 * **ElementosSeleccionados**: se aplica a cuadros de lista. Tabla de elementos que el usuario ha seleccionado.
@@ -150,24 +147,27 @@ También puede generar una fórmula que calcula los datos de un registro individ
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>
     **Recopilar( RegistroSeleccionado, Galería1.Seleccionada )**
 
-2. Si el botón no está seleccionado, haga clic en él para seleccionarlo y después vuelva a hacer clic en él para ejecutar la fórmula.
+2. Mientras mantiene presionada la tecla Alt, seleccione el botón.
 
 3. En el menú **Archivo**, seleccione **Colecciones**.
 
-![](media/working-with-tables/selected-collection.png)
+    ![](media/working-with-tables/selected-collection.png)
 
-Esta fórmula devuelve un registro que incluye no solo los datos del registro que está seleccionado actualmente en la galería, sino también cada control de dicha galería. Por ejemplo, el registro contiene una columna **Cuerpo** que coincide con la columna **Cuerpo** de la tabla original, y una columna **Cuerpo1**, que representa la etiqueta que muestra los datos de esa columna. Seleccione el icono de tabla en la columna **Cuerpo1** para profundizar en dichos datos.
+Esta fórmula devuelve un registro que incluye no solo los datos del registro que está seleccionado actualmente en la galería, sino también cada control de dicha galería. Por ejemplo, el registro contiene una columna **SampleText** que coincide con la columna **SampleText** de la tabla original y una columna **Subtitle1** que representa la etiqueta que muestra los datos de esa columna. Seleccione el icono de tabla de la columna **Subtitle1** para profundizar en esos datos.
+
+> [!NOTE]
+> La columna **Subtitle1** podría llamarse **Subtitle2** o similar si se han agregado elementos distintos a los que se especifican en este tema.
 
 Ahora que tiene el registro seleccionado, puede extraer campos individuales de él con el operador **.** .
 
-1. Presione Esc para volver al área de trabajo predeterminada y después agregue una etiqueta debajo de la galería.
+1. Agregue un control **[Etiqueta](controls/control-text-box.md)** y luego muévalo a la galería y el botón.
 
-2. Defina la propiedad **[Texto](controls/properties-core.md)** de la etiqueta con esta fórmula:<br>
-    **Galería.Seleccionada.Encabezado**
+1. Establezca la propiedad **[Text](controls/properties-core.md)** de la etiqueta en esta expresión:<br>
+    **"Selected: " & Gallery1.Selected.SampleHeading**
    
     ![](media/working-with-tables/gallery-selected.png)
 
-Ha usado la propiedad **Seleccionada**, que es un registro, y ha extraído la propiedad **Encabezado** de ahí.  
+Ha usado la propiedad **Selected**, que es un registro, y ha extraído la propiedad **SampleHeading** de ella.
 
 También puede usar un registro como un contenedor de uso general para los valores con nombre relacionados.
 
@@ -235,10 +235,10 @@ Tenga en cuenta que en la fórmula anterior, se han usado comillas dobles (") en
 ### <a name="disambiguation"></a>Anulación de ambigüedades
 Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [**@** de anulación de ambigüedades](functions/operators.md):
 
-* Para acceder a los valores desde ámbitos de registro anidados, utilice el operador **@** con el nombre de la tabla en la que opera y use el patrón ***Tabla *[@* FieldName*]**.  
-* Para acceder a los valores globales, como orígenes de datos, colecciones y variables de contexto, use el patrón **[@*ObjectName*]** (sin designar ninguna tabla).
+* Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_**[@**_FieldName_**]**
+* Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@**_ObjectName_**]** (sin designación de tabla).
 
-Si la tabla en la que se opera es una expresión, como **Filtrar( *tabla*, ... )**, entonces no se puede utilizar el operador de anulación de ambigüedades.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
+Si la tabla en la que se opera es una expresión, como **Filter(** _Table_**,** ... **)**, no se puede usar el operador de desambiguación.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
 
 Por ejemplo, imagine que tiene una colección **X**:
 

@@ -1,40 +1,42 @@
 ---
 title: 'Control Radio: referencia | Microsoft Docs'
 description: Información sobre el control Radio, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 10/25/2016
+ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
+ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837697"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886364"
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
-Lista que muestra todas las opciones, pero el usuario solo puede seleccionarlas de una en una.
+
+Control de entrada que muestra varias opciones entre las que los usuarios pueden seleccionar solo una cada vez.
 
 ## <a name="description"></a>Descripción
-Control **Radio**, con el que los usuarios tienen años de experiencia, se utiliza mejor con pocas opciones incompatibles entre sí.
+
+Un **control de radio**, un control de entrada HTML estándar, se aprovecha mejor con solo unas cuantas opciones mutuamente excluyentes.
+
+El control puede tener un diseño horizontal o vertical.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
+
+**[Default](properties-core.md)**: el valor de un control antes de que el usuario lo cambie.
 
 **[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**Layout**: indica si las opciones se disponen en vertical u horizontal.
 
 **[Valor](properties-core.md)**: el valor de un control de entrada.
 
 ## <a name="all-properties"></a>Todas las propiedades
+
 **[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
@@ -118,37 +120,44 @@ Control **Radio**, con el que los usuarios tienen años de experiencia, se utili
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
+
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
-1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
-   <br>**["Standard", "Premium"]**
-   
-    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Agregue un control **[Etiqueta](control-text-box.md)**, desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
-   <br>**If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
-   
-    ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
-3. Presione F5 y elija cualquiera de las opciones del control **Radio**.
-   
-    El control **[Etiqueta](control-text-box.md)** muestra el texto adecuado para su elección.
-4. (opcional) En el control **Radio**, elija la otra opción para confirmar que aparece el texto adecuado.
-5. Presione Esc para volver al área de trabajo predeterminada.
 
+1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
+
+    **["Standard", "Premium"]**
+
+    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
+
+2. Agregue un control **[Etiqueta](control-text-box.md)**, desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
+
+    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
+
+    ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
+
+3. Mientras mantiene presionada la tecla Alt, seleccione alguna opción del **control de radio**.
+
+    El control **[Etiqueta](control-text-box.md)** muestra el texto adecuado para su elección.
+
+4. (Opcional) Mientras mantiene presionada la tecla Alt, seleccione la otra opción para confirmar que aparece el texto adecuado.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+
 ### <a name="color-contrast"></a>Contraste de color
-Debe haber un contraste de color adecuado entre:
+
+Además de los [requisitos de contraste de color estándar](../accessible-apps-color.md), asegúrese de que haya un contraste de color adecuado entre:
+
 * **RadioSelectionFill** y **RadioBackgroundFill**
 * **RadioBackgroundFill** y **[Fill](properties-color-border.md)**
 
-Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
+### <a name="screen-reader-support"></a>Compatibilidad con el lector de pantalla
 
-### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* Debe haber un **[valor](properties-core.md)** para cada opción de radio.
+* Asegúrese de que cada opción tenga un **[valor](properties-core.md)**.
 * Podría también agregar un control **[Etiqueta](control-text-box.md)** inmediatamente delante del control **Radio** para que actúe como encabezado.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
-* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
-* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
- 
+
+* Establezca la propiedad **[TabIndex](properties-accessibility.md)** en cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* Establezca las propiedades **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para que los indicadores de foco sean claramente visibles.

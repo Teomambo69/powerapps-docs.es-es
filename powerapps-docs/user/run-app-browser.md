@@ -5,19 +5,29 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/07/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
-ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36261727"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925648"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Inicio rápido: Ejecución de una aplicación en un explorador web
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
 
-Para seguir este tutorial rápido, necesita una [suscripción a Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) que incluya Dynamics 365 y acceso a un [explorador y sistema operativo compatibles](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación que haya compilado o que otra persona haya compilado y compartido con usted.
+Para seguir este inicio rápido, necesita:
+- Una licencia de PowerApps. Esta está disponible con un plan de PowerApps, como la versión de prueba del [Plan 2 de PowerApps](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), o cualquiera de los planes de [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) o [Dynamics 365](https://dynamics.microsoft.com/pricing/) que incluyen PowerApps. 
+- Acceso a una aplicación que haya compilado o que otra persona haya compilado y compartido con usted.
+- Acceso a un explorador web y un sistema operativo compatibles.
+   - Para las aplicaciones de lienzo, vea [Requisitos del sistema, límites y valores de configuración](../maker/canvas-apps/limits-and-config.md)
+   - Para las aplicaciones controladas por modelos, vea: [Exploradores web y dispositivos móviles admitidos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+
 
 ## <a name="sign-in-to-dynamics-365"></a>Inicio de sesión en Dynamics 365
 Inicie sesión en Dynamics 365 en [https://home.dynamics.com](https://home.dynamics.com).

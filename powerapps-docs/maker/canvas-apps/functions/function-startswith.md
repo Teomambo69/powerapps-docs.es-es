@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837134"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899373"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funciones EndsWith y StartsWith en PowerApps
 Comprueba si una cadena de texto comienza o termina con otra cadena de texto.
@@ -29,7 +29,7 @@ La función **StartsWith** comprueba si una cadena de texto comienza con otra.
 
 Para ambas funciones, las pruebas no distinguen mayúsculas de minúsculas.  El valor devuelto por ambas es un valor booleano **true** o **false**.  
 
-Use **EndsWith** y **StartsWith** con la función **[Filter](function-filter-lookup.md)** para buscar los datos dentro de la aplicación. También puede usar el operador **[in](operators.md#in-and-exactin-operators)** o la función **[Search](function-filter-lookup.md)** para realizar una búsqueda en cualquier lugar dentro de las cadenas de texto, no solo al principio o al final.  La selección de las funciones dependerá de las necesidades de la aplicación y las funciones que se pueden [delegar](../delegation-overview.md) para el origen de datos específico.  Si una de estas funciones no se puede delegar, aparecerá un punto azul en el momento de la creación para avisarle de esta limitación.
+Use **EndsWith** y **StartsWith** con la función **[Filter](function-filter-lookup.md)** para buscar los datos dentro de la aplicación. También puede usar el operador **[in](operators.md#in-and-exactin-operators)** o la función **[Search](function-filter-lookup.md)** para realizar una búsqueda en cualquier lugar dentro de las cadenas de texto, no solo al principio o al final.  La selección de las funciones dependerá de las necesidades de la aplicación y las funciones que se pueden [delegar](../delegation-overview.md) para el origen de datos específico.  Si una de estas funciones no se puede delegar, aparece una advertencia de delegación en el momento de la creación para avisarle de esta limitación.
 
 ## <a name="syntax"></a>Sintaxis
 **EndsWith**( *Text*, *EndText* )
@@ -43,6 +43,7 @@ Use **EndsWith** y **StartsWith** con la función **[Filter](function-filter-loo
 * *StartText*: requerido.  El texto que desea buscar al principio de *Text*.  Si *StartText* es una cadena vacía, **StartsWith** devuelve *true*.
 
 ## <a name="examples"></a>Ejemplos
+
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **EndsWith( "Hola mundo", "mundo" )** |Comprueba si **"Hola mundo"** termina con **"mundo"**.  La prueba no distingue mayúsculas de minúsculas. |**true** |

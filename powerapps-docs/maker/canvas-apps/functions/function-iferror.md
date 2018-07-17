@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: 2bd8ba7dc9b764399165c75361215cee2edb4e7b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ebd4454184f684dbf85ec2b8a9056395b92dc47f
+ms.sourcegitcommit: 234de505a0e8c42459d87053fa00ea3e0ea0b909
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831455"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092792"
 ---
 # <a name="iferror-function-in-powerapps"></a>Función IfError en PowerApps
 Detecta errores y proporciona un valor alternativo o lleva a cabo una acción.
@@ -30,7 +30,7 @@ La función **IfError** comprueba todos sus argumentos en orden para detectar va
 
 Use **IfError** para reemplazar los valores de error por un valor válido.  Por ejemplo, si es posible que la entrada del usuario pueda tener como resultado una división por cero, reemplácela por un 0 u otro valor válido que sea adecuado para su aplicación de modo que se puedan efectuar cálculos descendentes.
 
-Use **IfError** en las [fórmulas de comportamiento](../working-with-formulas-in-depth.md) para llevar a cabo acciones, comprobar los resultados de los errores y, si es necesario, llevar a cabo otras acciones o mostrar un mensaje de error al usuario con [ **ShowError**](function-showerror.md).
+Use **IfError** en las [fórmulas de comportamiento](../working-with-formulas-in-depth.md) para llevar a cabo acciones, comprobar los resultados de los errores y, si es necesario, llevar a cabo otras acciones o mostrar un mensaje de error al usuario con [**Notify**](function-showerror.md).
 
 Si todos los argumentos de **IfError** generan un error, se devuelve el valor del último argumento (que será un valor de error). 
 
@@ -46,7 +46,7 @@ Si todos los argumentos de **IfError** generan un error, se devuelve el valor de
 | --- | --- | --- |
 | **IfError( 1, 2 )** |El primer argumento no es un error.  Se devuelve y no se evalúan los argumentos subsiguientes.   | 1 |
 | **IfError( 1/0, 2 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que genera un valor sin errores que se devuelve. | 2 | 
-| **IfError( 1/0, ShowError( "División por cero" ) )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que muestra un mensaje al usuario.  El valor devuelto de **IfError** es el valor devuelto de **ShowError**, convertido en el mismo tipo que el primer argumento de **IfError** (un número). | 1 |
+| **IfError( 1/0, Notify( "Se produjo un problema interno", NotificationType.Error ) )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que muestra un mensaje al usuario.  El valor devuelto de **IfError** es el valor devuelto de **Notify**, convertido al mismo tipo que el primer argumento de **IfError** (un número). | 1 |
 | **IfError( 1/0, 1/0, 2, 1/0, 3 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que también genera un valor de error (otra división por cero).  Se evalúa el tercer argumento, que no genera un valor de error que se devuelve.  Se ignoran los argumentos cuarto y quinto.  | 2 |
 
 ### <a name="step-by-step"></a>Paso a paso

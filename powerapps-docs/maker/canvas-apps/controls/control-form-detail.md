@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 78615949ab5c05b4cf7da56eae23dd1a0194c7ff
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ac74f459c35e7b2ec123540a5cf55c1ad6a21c0a
+ms.sourcegitcommit: 8d9e5f44bcd5cecd24de2c99d5ba04df9ea67275
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838703"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37406032"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -151,9 +151,9 @@ El formulario cambia de modo **Nuevo** a modo **Edición** cuando se produce cua
 
 * Esta propiedad solo se aplica al control **Formulario de edición**.
 * La propiedad **Válido** de un control de **formulario** agrega las propiedades **Válido** de todos los controles **[Tarjeta del formulario](control-card.md)**. La propiedad **Válido** de un formulario es **true** solamente si los datos en todas las tarjetas de ese formulario son válidos, de lo contrario, la propiedad **Válido** del formulario es **false**.
-* Para habilitar un botón para guardar los cambios solo cuando los datos en un formulario son válidos pero aún no se han enviado, establezca el botón **Habilitado** con esta fórmula:
+* Para habilitar un botón para guardar los cambios solo cuando los datos de un formulario sean válidos pero aún no se hayan enviado, establezca la propiedad **DisplayMode** del botón en esta fórmula:
   
-    **SubmitButton.Enabled = IsBlank( Form.Error ) || Form.Valid**
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
