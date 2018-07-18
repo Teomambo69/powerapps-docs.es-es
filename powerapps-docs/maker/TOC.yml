@@ -134,7 +134,9 @@
             - name: Crear una aplicación accesible
               href: ./canvas-apps/accessible-apps.md
               items:
-                - name: Color
+                - name: Buscar problemas de accesibilidad
+                  href: ./canvas-apps/accessibility-checker.md
+                - name: Usar el color para la accesibilidad
                   href: ./canvas-apps/accessible-apps-color.md
         - name: Administrar la aplicación
           items:
