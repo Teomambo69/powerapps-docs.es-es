@@ -1,23 +1,20 @@
 ---
 title: Función Carácter | Microsoft Docs
 description: Información de referencia para la función Char en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
-author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+dauthor: gregli-msft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b5d63b26498b94943f5340d9f57f3255390c7c94
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9c701527fb02613332cfa5bc542681f8c119f3b3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895992"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014567"
 ---
 # <a name="char-function-in-powerapps"></a>Función Char en PowerApps
 Traduce un código de carácter en una cadena.

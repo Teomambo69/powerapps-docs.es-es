@@ -1,23 +1,20 @@
 ---
 title: Presentación de elementos de alturas diferentes en una galería | Microsoft Docs
 description: Agregar y configurar una galería de alturas flexibles para que se ajuste automáticamente a la cantidad de contenido de cada elemento de la galería
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/01/2017
 ms.author: fikaradz
-ms.openlocfilehash: 466e0d9cb1acfe4cfeb72256db2deddfd3466e19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a6f475277e7cde25fea350634aa60e8b150e304d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834199"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018592"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Mostrar elementos de alturas diferentes en una galería de PowerApps
 Si diferentes elementos del conjunto de datos contienen diferentes cantidades de datos en el mismo campo, puede mostrar por completo los elementos que contienen más datos sin tener que agregar espacio vacío después de los elementos que contienen menos datos. Agregue y configure un control de galería **Altura flexible** para que pueda:

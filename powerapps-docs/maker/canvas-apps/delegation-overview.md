@@ -1,23 +1,20 @@
 ---
 title: Descripción de delegación | Microsoft Docs
 description: La delegación se usa para procesar eficazmente grandes conjuntos de datos.
-documentationcenter: na
-author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/05/2018
-ms.author: gregli
-ms.openlocfilehash: 7e9a6aac1e0df32fa83edaa0b8042dd2df143bf2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: lanced
+ms.openlocfilehash: 484d7b1149f158840238fc3d54713a1e6e33443b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897487"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023606"
 ---
 # <a name="understand-delegation"></a>Descripción de delegación
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos: las funciones **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.

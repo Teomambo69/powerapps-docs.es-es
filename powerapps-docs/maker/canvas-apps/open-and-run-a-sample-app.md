@@ -1,23 +1,20 @@
 ---
 title: Uso de una aplicación de ejemplo (inicio rápido) | Microsoft Docs
 description: Instrucciones paso a paso para crear una aplicación de lienzo en función de un ejemplo en PowerApps
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/11/2018
 ms.author: anneta
-ms.openlocfilehash: 4f1d30f9645bb49ac2d838791cb52fc071073601
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2051fdf0d9cb1d5fb2f796b22f55e8b59c52a692
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826830"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018316"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.

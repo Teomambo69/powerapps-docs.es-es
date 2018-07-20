@@ -1,23 +1,20 @@
 ---
 title: Introducción a las fórmulas | Microsoft Docs
 description: Use fórmulas para personalizar una aplicación.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: ed4e83fab0cf5a08c4b274863f11070471fc44a4
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b40abdc4c8d5d8a33a9aec32a1826476500405c8
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898732"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017879"
 ---
 # <a name="get-started-with-formulas"></a>Introducción a las fórmulas
 Configure la aplicación con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).

@@ -1,23 +1,20 @@
 ---
 title: Visualización, edición o adición de un registro de una tabla | Microsoft Docs
 description: Utilice un formulario para mostrar, editar o agregar un registro de una tabla en el origen de datos.
-documentationcenter: na
 author: karthik-1
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b98c5d165ba6de983a874f0a34fb92c5db8a69cd
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895831"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018960"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Mostrar, editar o agregar un registro de una tabla en PowerApps
 Para mostrar todos los campos de un registro, agregue y configure un control **[Formulario de presentación](controls/control-form-detail.md)**. Para editar cualquier campo de un registro (o para agregar un registro) y guardar los cambios en un origen de datos, agregue y configure un control **[Edit form](controls/control-form-detail.md)**.

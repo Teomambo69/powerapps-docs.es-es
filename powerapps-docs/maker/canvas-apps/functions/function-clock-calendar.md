@@ -1,23 +1,20 @@
 ---
 title: Funciones Calendar y Clock | Microsoft Docs
 description: Información de referencia para las funciones Calendar y Clock en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 0d725f00dc3617449eca9e16aedcf07c1414411f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9943fba1be1851a5037401a65d994a259e9cdc9d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831609"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018707"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Funciones Calendar y Clock en PowerApps
 Recupera información de calendario y reloj de la configuración regional actual.

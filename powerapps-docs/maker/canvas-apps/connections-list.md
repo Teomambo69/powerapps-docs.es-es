@@ -1,23 +1,20 @@
 ---
 title: Introducción a los conectores | Microsoft Docs
 description: Información general de todas las conexiones disponibles que puede usar para crear aplicaciones
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: baa4c71efb54cea6f04cd45b895009a3c3ce17c7
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 6ca9b6d873d4d5266486bc1c7b8b876e4f08574a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899304"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020938"
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>Información general de los conectores de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce, Twitter, etc. Para empezar a agregar datos a una aplicación, consulte [Adición de una conexión de datos en PowerApps](add-data-connection.md).

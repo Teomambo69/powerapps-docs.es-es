@@ -1,23 +1,20 @@
 ---
 title: Creación de una relación entre listas de SharePoint a través de un campo de búsqueda | Microsoft Docs
 description: Cree una relación entre listas de SharePoint mediante el uso de un campo de búsqueda.
-documentationcenter: na
 author: skjerland
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 0a257df76980bcf1801c9ed98de87ae06c4ae624
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 58097eec0bc483d8c38bf354513b70573e43049d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330086"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023537"
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda
 En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con campos de búsqueda.

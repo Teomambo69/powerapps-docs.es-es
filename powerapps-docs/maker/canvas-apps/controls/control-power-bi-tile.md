@@ -2,18 +2,19 @@
 title: 'Control Icono de Power BI: referencia | Microsoft Docs'
 description: Información sobre el control Icono de Power BI, con propiedades y ejemplos
 author: fikaradz
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9df201f5d2fd4017debe47626aedaaa2c735682f
-ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
+ms.openlocfilehash: f0a9c19434cb066cda48b5547e4fc6fda91adfed
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886387"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014705"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 

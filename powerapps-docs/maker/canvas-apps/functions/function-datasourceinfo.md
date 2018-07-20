@@ -2,17 +2,19 @@
 title: Función DataSourceInfo | Microsoft Docs
 description: Información de referencia sobre la función DataSourceInfo de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 696da621bfc14cd2dfd36f4a03d7e1117e07e670
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898637"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022249"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Función DataSourceInfo en PowerApps
 Proporciona información sobre un [origen de datos](../working-with-data-sources.md).

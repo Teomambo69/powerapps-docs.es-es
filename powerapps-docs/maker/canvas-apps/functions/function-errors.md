@@ -1,23 +1,20 @@
 ---
 title: Función Errores | Microsoft Docs
 description: Información de referencia para la función Errors en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 9e68b7580092c70f7e40ddd1d0b57118f6d592d8
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8799c492d3676de99217fabc5b99493a7c905393
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836159"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019236"
 ---
 # <a name="errors-function-in-powerapps"></a>Función Errors en PowerApps
 Proporciona información de error para los cambios anteriores en un [origen de datos](../working-with-data-sources.md).

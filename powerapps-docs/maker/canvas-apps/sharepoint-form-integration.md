@@ -1,23 +1,20 @@
 ---
 title: Comprensión de la integración de formularios de SharePoint | Microsoft Docs
 description: Comprensión de cómo funcionan los formularios personalizados con SharePoint
-documentationcenter: na
 author: sarafankit
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: f8f21235170483c908149898f92b57cc6c2cb9aa
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: f717213a2f545c5cd7358c21b3cf9490aaf1708d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896429"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020961"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
 Ahora puede [personalizar cualquier formulario de lista de SharePoint](customize-list-form.md) de manera fácil en PowerApps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.

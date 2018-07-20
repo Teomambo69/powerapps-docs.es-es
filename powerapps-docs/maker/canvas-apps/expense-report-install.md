@@ -1,23 +1,20 @@
 ---
 title: Instalar y configurar el ejemplo de informe de gastos de PowerApps | Microsoft Docs
 description: Instrucciones paso a paso para instalar y configurar un ejemplo de informe de gastos de PowerApps.
-documentationcenter: na
 author: caburk
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: sample
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899971"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094665"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Instalar y configurar el ejemplo de informe de gastos de PowerApps
 
@@ -384,8 +381,8 @@ Vea este vídeo para aprender a usar el ejemplo de informe de gastos de PowerApp
 [![Vídeo de instalación del informe de gastos](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
-- [Agregar y configurar un control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
+- [Agregar y configurar un control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 

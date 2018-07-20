@@ -1,22 +1,20 @@
 ---
 title: Almacenamiento de imágenes en un archivo Excel | Microsoft Docs
 description: Cómo guardar una imagen en una tabla de Excel de una cuenta de almacenamiento en nube
-documentationcenter: ''
 author: AFTOwen
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: c9a70a362071558e415b3077e8ff536088edd2db
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5c84da8bb0873fd42f5d352ae463f013113d8fcd
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835694"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023882"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 

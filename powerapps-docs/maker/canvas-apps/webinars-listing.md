@@ -2,17 +2,19 @@
 title: Lista de seminarios web | Microsoft Docs
 description: Muestra una lista de los seminarios web pasados y futuros, en la que se incluyen la fecha y hora, y los temas tratados.
 author: audrieMSFT
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: bffc102ad61a05ae8f2b6a26276cbeec718483f6
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 76abd84afc5b4814cfbf2ef14923c1c13e87befb
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898200"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021835"
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que, en algunos casos, deberá volver a escribir los detalles de registro y, después, recibirá un vínculo a la grabación por correo electrónico. 

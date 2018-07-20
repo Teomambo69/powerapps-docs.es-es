@@ -1,23 +1,20 @@
 ---
 title: Función Idioma | Microsoft Docs
 description: Información de referencia para la función Language en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: gregli
-ms.openlocfilehash: ec12bef225c59474fbc15a3ab0556694d206edd3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 57c7bc0f55e502fb89b71a331558199b6a9a1b52
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834822"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017649"
 ---
 # <a name="language-function-in-powerapps"></a>Función Language en PowerApps
 Devuelve la etiqueta de idioma del usuario actual.

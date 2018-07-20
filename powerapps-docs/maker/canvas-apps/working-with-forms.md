@@ -1,23 +1,20 @@
 ---
 title: Descripción de los formularios | Microsoft Docs
 description: Use los formularios para recopilar información de un origen de datos y mostrarla.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: bf66c1f7596b8a3ef4c8495db3f0ac2af8165d8c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: ec6526ff4cd690d6bcf5cbf3dcc98c6ee7b8ae28
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899695"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018155"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
 Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:

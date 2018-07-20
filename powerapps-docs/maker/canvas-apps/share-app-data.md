@@ -1,23 +1,20 @@
 ---
 title: Uso compartido de archivos de Excel usados por una aplicación | Microsoft Docs
 description: Compartir archivos de Excel en Dropbox, OneDrive y Google Drive. Los usuarios pueden editar ver archivos y carpetas.
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 78423a1f1594e69a40cc4b81123217f960b61879
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896130"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015004"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Compartir datos de Excel utilizados por la aplicación
 Puede compartir datos de Excel con los usuarios de la aplicación en una [cuenta en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.

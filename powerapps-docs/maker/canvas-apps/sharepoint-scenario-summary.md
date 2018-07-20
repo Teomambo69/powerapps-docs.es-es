@@ -1,23 +1,20 @@
 ---
 title: Tutorial de principio a fin del escenario de integración de SharePoint Online | Microsoft Docs
 description: Realice un tutorial de principio a fin para el escenario que se ha creado en esta serie de tutoriales.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: ab2f1fc08ce65261c5a433a098dcd0dec54b0f8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836663"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014958"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]

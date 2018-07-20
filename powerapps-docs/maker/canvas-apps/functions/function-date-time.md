@@ -1,23 +1,20 @@
 ---
 title: Funciones Fecha y hora | Microsoft Docs
 description: Información de referencia de las funciones de fecha y hora de PowerApps, con sintaxis y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 1d6c2485a8f54e0676cee5443085fb962f144831
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 440d7bc8a737fdc53a5c76ec80db7fcf0d515f7e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826738"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020110"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>Funciones de fecha y hora en PowerApps
 Convierte los componentes de fecha y hora en un valor de fecha y hora.

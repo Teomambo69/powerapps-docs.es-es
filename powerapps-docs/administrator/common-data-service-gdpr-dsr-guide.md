@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ef5d646e30f5d09dbfe5f111a3ad018b030f79d9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168237"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094757"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de Common Data Service for Apps
 
@@ -102,8 +102,8 @@ Puede encontrar los datos personales de los usuarios de CDS for Apps dentro de l
 
 |Recurso | Propósito | Acceso al sitio web | Acceso mediante programación
 | --- | --- | --- | ---
-| Registro de entidad | Conocido como la entidad de usuario del sistema, almacena los datos personales de un usuario. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Historial de auditoría | Permite a los clientes identificar los recursos que los usuarios crearon, accedieron, cambiaron o eliminaron a nivel de entidad. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Registro de entidad | Conocido como la entidad de usuario del sistema, almacena los datos personales de un usuario. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Historial de auditoría | Permite a los clientes identificar los recursos que los usuarios crearon, accedieron, cambiaron o eliminaron a nivel de entidad. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>Usuario
 Los datos personales del usuario se almacenan en Azure Active Directory y se sincronizan automáticamente con todos los entornos CDS for Apps. Los administradores del sistema no pueden actualizar estos datos personales directamente en CDS for Apps mientras el usuario está activo&mdash;deben actualizarlos en el Centro de administración de Office 365. Los administradores del sistema pueden agregar datos personales (por ejemplo, atributos personalizados) directamente en CDS for Apps, pero deben administrarlos manualmente.
@@ -199,7 +199,7 @@ En el [Centro de administración de PowerApps](https://admin.powerapps.com/), ha
 
 3. Vaya a **Configuración** > **Seguridad** > **Usuarios** y seleccione **Disabled Users View** (Vista de usuarios deshabilitados).
 
-4. Cree y descargue un archivo de plantilla de Excel de los datos personales del usuario. Consulte [Crear plantilla de Excel nueva](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template) para instrucciones detalladas.
+4. Cree y descargue un archivo de plantilla de Excel de los datos personales del usuario. Consulte [Crear plantilla de Excel nueva](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template) para instrucciones detalladas.
 
 8. Abra el archivo de plantilla de Excel que descargó, quite los datos personales del usuario y guarde el archivo.
 

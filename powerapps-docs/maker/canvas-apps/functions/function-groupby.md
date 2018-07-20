@@ -1,23 +1,20 @@
 ---
 title: Funciones AgruparPor y Desagrupar | Microsoft Docs
 description: Información de referencia para las funciones AgruparPor y Desagrupar en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 290f4447d7a5793677cfa426edac85963363a9d1
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 1c54b905c4942ab824d10acbb32dbc5d7a4a98a7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896659"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021421"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones AgruparPor y Desagrupar en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).

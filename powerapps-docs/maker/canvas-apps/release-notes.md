@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: e68614f2624a0d60e09563f92bf027fdf03d77b5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 55b60abd9dc07d5b6c1979190f20ef893265475f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023905"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094711"
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 > [!IMPORTANT]
 > **Anuncio de las notas de la versión**<br>
 > ¿Tiene preguntas sobre las próximas funciones y las publicadas recientemente en PowerApps?<br>
-[Vea las notas de la versión](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview). Se han capturado todos los detalles completos, de arriba abajo, que puede usar para la planificación.
+[Vea las notas de la versión](https://docs.microsoft.com/business-applications-release-notes/april18/powerapps/overview). Se han capturado todos los detalles completos, de arriba abajo, que puede usar para la planificación.
 
 Para más información sobre las limitaciones conocidas, consulte [Problemas y resoluciones habituales](common-issues-and-resolutions.md).
 
