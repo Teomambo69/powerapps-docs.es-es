@@ -1,23 +1,20 @@
 ---
 title: 'Control Temporizador: referencia | Microsoft Docs'
 description: Información sobre el control Temporizador, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c175b1b35d063f4e20321c494d5472afa2776990
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 666bb231aa9f0b6c6338cf5f3dc5adec48111768
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899580"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022709"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.

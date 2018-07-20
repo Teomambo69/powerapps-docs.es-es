@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: 74445d4a9398afe00407e7b1a1eae5b7d773dd22
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020409"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094734"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>Transformación de Formularios de InfoPath a PowerApps
 
@@ -134,6 +134,6 @@ Con PowerApps es posible llamar a una aplicación desde otra, por lo que en luga
 
 Con la información anterior, ya tiene todo lo necesario para empezar a crear aplicaciones de PowerApps de una en una. Para acompañarlo en su viaje, a continuación tiene algunos vínculos que le servirán de ayuda. Uno de esos vínculos es el que dirige al sitio de la comunidad de PowerApps. Implíquese en la comunidad y aumente sus conocimientos mucho más rápido de lo que lo haría por sí mismo.
 
-[**Referencia sobre fórmulas**](https://docs.microsoft.com/en-us/powerapps/formula-reference): una excelente manera de inspirarse mediante la exploración de algunas de las funciones predeterminadas.
+[**Referencia sobre fórmulas**](https://docs.microsoft.com/powerapps/formula-reference): una excelente manera de inspirarse mediante la exploración de algunas de las funciones predeterminadas.
 
 [**Comunidad de PowerApps**](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1): vea los ejemplos, relaciónese con otros usuarios, plantee sus dudas, responda a las de los demás y contribuya al crecimiento de la comunidad de PowerApps.

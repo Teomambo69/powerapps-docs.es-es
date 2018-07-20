@@ -1,23 +1,20 @@
 ---
 title: Función Valor | Microsoft Docs
 description: Información de referencia para la función Value en PowerApps, incluida la sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: c9f28f8b38099e373397afc7835398ece5f0f208
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 49088dbcdf2757e14659ee5109cbc86ba68b3bb4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827221"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014981"
 ---
 # <a name="value-function-in-powerapps"></a>Función Value en PowerApps
 Convierte una cadena de texto en un número.

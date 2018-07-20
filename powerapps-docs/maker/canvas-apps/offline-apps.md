@@ -1,23 +1,20 @@
 ---
 title: Desarrollo de aplicaciones que puedan ejecutarse sin conexión | Microsoft Docs
 description: Cree aplicaciones que puedan ejecutarse sin conexión para que los usuarios sean productivos, independientemente de la conexión.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896843"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023146"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Desarrollar aplicaciones que puedan ejecutarse sin conexión con PowerApps
 Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando hay conectividad limitada o no hay ninguna conectividad. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones que puedan ejecutarse sin conexión. Podrá:

@@ -1,22 +1,20 @@
 ---
 title: Adición de imágenes en Excel | Microsoft Docs
 description: Instrucciones paso a paso para agregar archivos de imagen y dibujos a Excel en una cuenta de almacenamiento en la nube
-documentationcenter: ''
-author: aftowen
-manager: kfile
-editor: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cc3609991ffb68f6846cb73b7ccfa37227d0c8e7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328844"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019497"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Agregar imágenes en Excel desde PowerApps
 Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o eliminar imágenes de archivos o dibujos desde un control de **entrada manuscrita**. La aplicación necesita un archivo de Excel que debe crearse y cargarse en una cuenta de almacenamiento en la nube.

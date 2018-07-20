@@ -1,23 +1,20 @@
 ---
 title: Creación de un informe de Power BI para analizar proyectos | Microsoft Docs
 description: En esta tarea, vamos a crear un informe de Power BI basado en dos listas de SharePoint.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 7ab372f8e8a03da35752614905017e24672480b3
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: e828b5aa6d29f4498114a8a9e36099c9cc3a2577
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897717"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022801"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]

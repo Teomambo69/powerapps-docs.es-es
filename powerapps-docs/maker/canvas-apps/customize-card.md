@@ -1,23 +1,20 @@
 ---
 title: Personalización de una tarjeta | Microsoft Docs
 description: Cambie el control predeterminado que aparece en una tarjeta de un formulario de detalles o edición en PowerApps
-documentationcenter: ''
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: aa9d5785f1c005da7c22c63bd94cb41e1a643ad3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 56a46493ef15eff7d65d19f12affb2a58dbba0b6
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829320"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023445"
 ---
 # <a name="customize-a-card-in-powerapps"></a>Personalización de una tarjeta en PowerApps
 Realice una personalización básica (sin desbloquear una tarjeta), por ejemplo, cambiando su control. Realizar una personalización avanzada mediante el desbloqueo de la tarjeta y, por ejemplo, agregar un control que no está disponible para esa tarjeta de forma predeterminada.

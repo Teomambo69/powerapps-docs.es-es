@@ -1,23 +1,20 @@
 ---
 title: Función Tabla | Microsoft Docs
 description: Información de referencia para la función Tabla en PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 28d393d9be240b3e9ba57d108761c7a38f013b24
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 94354c2e96a61f3f64362ced99d0bc27e1463c2f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826876"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015073"
 ---
 # <a name="table-function-in-powerapps"></a>Función Tabla en PowerApps
 Crea una [tabla](../working-with-tables.md) temporal.

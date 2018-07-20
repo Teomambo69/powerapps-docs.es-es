@@ -1,23 +1,20 @@
 ---
 title: Función Restablecer| Microsoft Docs
 description: Información de referencia de la función Reset en PowerApps, con sintaxis y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: bc87fd823b37869298b453aba439bda6aabbb112
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d9d83ab85ada125ff681040b4badbb8abfaafac0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825841"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020363"
 ---
 # <a name="reset-function-in-powerapps"></a>Función Reset en PowerApps
 Restablece un control a su valor predeterminado, descartando cualquier modificación del usuario.  

@@ -1,23 +1,20 @@
 ---
 title: PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes | Microsoft Docs
 description: Una introducción al desarrollo de soluciones en PowerApps.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 302b2557e56a4450116a0232282e87cc4634dd5e
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 79f0e852b62c41267224a2b3289b24fec65583a2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828336"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023859"
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes
 

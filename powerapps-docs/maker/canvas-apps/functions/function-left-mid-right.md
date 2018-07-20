@@ -1,23 +1,20 @@
 ---
 title: Funciones Izquierda, Mid y Derecha| Microsoft Docs
 description: Información de referencia de las funciones Left, Mid y Right de PowerApps, con sintaxis y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 419c272b68c356d4f1cefd5868dd8a15ca1027de
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5f9500551be3c1d929e62034f94fc587cc956fd5
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832357"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017166"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Funciones Left, Mid y Right en PowerApps
 Extrae la parte izquierda, central o derecha de una cadena de texto.

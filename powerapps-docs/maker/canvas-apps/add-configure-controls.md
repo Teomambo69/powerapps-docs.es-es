@@ -1,23 +1,20 @@
 ---
 title: Adición y configuración de un control | Microsoft Docs
 description: Instrucciones paso a paso para agregar y configurar controles directamente, desde la barra de herramientas, en la pestaña Propiedades o en la barra de fórmulas.
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 8a2849c32eaf474d1aa5bb981a09a3594cead600
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896705"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020133"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>Adición y configuración de un control en PowerApps
 Añada diversos elementos de interfaz de usuario a su aplicación y configure aspectos de su apariencia y comportamiento directamente, desde la barra de herramientas, en la pestaña **Propiedades** o en la barra de fórmulas. Estos elementos de interfaz de usuario se denominan controles y los aspectos que configura se denominan propiedades.

@@ -1,23 +1,20 @@
 ---
 title: Funciones If y Switch | Microsoft Docs
 description: Información de referencia de las funciones If y Switch de PowerApps, con sintaxis y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5293cd448d96633e2d8d2cda9dfbd6d3c162c953
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838404"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017396"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>Funciones If y Switch de PowerApps
 Determina si se cumple alguna condición de un conjunto (**Si**) o si el resultado de una fórmula coincide con algún valor de un conjunto (**Cambiar**) y luego devuelve un resultado o ejecuta una acción.

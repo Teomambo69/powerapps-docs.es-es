@@ -1,23 +1,20 @@
 ---
 title: Inserción de una aplicación nueva en un informe de Power BI | Microsoft Docs
 description: Inserte una aplicación que use el mismo origen de datos y se pueda filtrar como otros elementos de informe.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 33656e44f782a626eecc28787af984ace7339cd6
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830479"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018684"
 ---
 # <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>Tutorial: Inserción de una aplicación nueva en un informe de Power BI
 

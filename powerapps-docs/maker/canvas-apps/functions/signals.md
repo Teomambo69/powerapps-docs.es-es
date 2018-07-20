@@ -1,23 +1,20 @@
 ---
 title: Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación | Microsoft Docs
 description: Información de referencia, incluida la sintaxis y los ejemplos, para los sensores Acceleration, App, Compass, Connection y Location en PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 03cecb64b2b43ed827b5d20bc3f8f8f64b925ba2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 50f69d03df40499c187b7602d66af6e0b362abe2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834536"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019052"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación en PowerApps
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  

@@ -1,23 +1,20 @@
 ---
 title: Funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm | Microsoft Docs
 description: Información de referencia sobre las funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 6a32068d0de49ea0a6cf752fde0fd486159f39e9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4d91e646bbe50870e9d7570451b489fb0e118042
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836474"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017810"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
 Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)**.

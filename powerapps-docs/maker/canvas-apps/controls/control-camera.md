@@ -1,23 +1,20 @@
 ---
 title: 'Control Cámara: referencia | Microsoft Docs'
 description: Información sobre el control Cámara, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 78cf8d73758e931d009080f03962c3450088a553
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.reviewer: anneta
+ms.openlocfilehash: a25776238d58f2410d8cf85dc70796156f54870f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329948"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021950"
 ---
 # <a name="camera-control-in-powerapps"></a>Control Cámara en PowerApps
 Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.

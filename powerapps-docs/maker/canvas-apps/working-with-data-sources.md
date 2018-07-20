@@ -1,23 +1,20 @@
 ---
 title: Información acerca de los orígenes de datos | Microsoft Docs
 description: Información de referencia para trabajar con conexiones y orígenes de datos en Microsoft PowerApps.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 4cdc1116de5882b69814bd91b4006debb8c5f5cf
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899350"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020901"
 ---
 # <a name="understand-data-sources-in-powerapps"></a>Información acerca de los orígenes de datos en PowerApps
 La mayoría de las aplicaciones de PowerApps utilizan información externa almacenada en servicios en la nube denominados **Orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.

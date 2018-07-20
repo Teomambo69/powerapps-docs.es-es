@@ -1,23 +1,20 @@
 ---
 title: Registro para obtener una licencia de evaluación gratuita | Microsoft Docs
 description: Regístrese para que obtener una licencia gratuita para probar PowerApps durante 30 días como usuario individual.
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: 651862e23a2c3741952106c27e3d37315175402c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: ''
+ms.openlocfilehash: ddbd2f610ecba6d801efde2a00a9cb492e2382e3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898246"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021559"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registro para obtener una licencia gratuita para probar PowerApps
 Para crear una aplicación en PowerApps, necesitará uno de los distintos tipos de licencias que proporcionan diferentes niveles de funcionalidad. Ya tiene una licencia para PowerApps si la organización ha comprado cualquiera de las versiones de Office 365 o Dynamics 365 para usted, o bien si ha comprado licencias del Plan 1 o Plan 2 de PowerApps para usted.

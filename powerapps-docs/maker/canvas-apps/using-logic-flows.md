@@ -1,22 +1,20 @@
 ---
 title: Inicio de un flujo en una aplicación | Microsoft Docs
 description: Cree un flujo que realice una o varias tareas después de que un evento, como la selección de un botón por parte de un usuario, se produzca en una aplicación.
-documentationcenter: ''
 author: stepsic-microsoft-com
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 7079dc6194361cc700ccaad6c02ca0bcf8a9f9d6
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: c395a548d0a920a21e8d4128f75a3b01deb9de3a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895923"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019374"
 ---
 # <a name="start-a-flow-in-an-app"></a>Inicio de un flujo en una aplicación
 Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.

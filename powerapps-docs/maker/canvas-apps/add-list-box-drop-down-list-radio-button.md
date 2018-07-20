@@ -1,22 +1,20 @@
 ---
 title: Adición de un cuadro de lista, una lista desplegable y botones de selección | Microsoft Docs
 description: Creación o configuración de opciones de selección múltiple en PowerApps
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ecdd1cc5aa9ccbad7c2973f8ad899b213dcd96f3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825565"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023836"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Adición de un cuadro de lista, una lista desplegable o botones de selección
 PowerApps incluye opciones de selección múltiple y de selección única, como un cuadro de lista, una lista desplegable y botones de selección. En este tema, añadiremos estos controles y usaremos una fórmula de **Tabla** para crear las listas. Cuando se selecciona un elemento de la lista, se actualizan otros controles.

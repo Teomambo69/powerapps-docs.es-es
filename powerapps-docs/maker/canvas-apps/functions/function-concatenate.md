@@ -1,23 +1,20 @@
 ---
 title: Funciones Concat y Concatenate | Microsoft Docs
 description: Información de referencia sobre las funciones Concat y Concatenate de PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: a735cb17b0e70afcae439044491a603aa50ceae7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2ead46b4b34e2013205a412eacd86197a3c3b552
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826163"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015832"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funciones Concat y Concatenate de PowerApps
 Concatena cadenas de texto individuales y cadenas en [tablas](../working-with-tables.md).

@@ -1,23 +1,20 @@
 ---
 title: Información sobre las puertas de enlace de datos locales | Microsoft Docs
 description: Información de referencia, incluida la instalación y solución de problemas, para puertas de enlace de datos locales
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
-ms.component: canvas
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330454"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017764"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Información sobre las puertas de enlace de datos locales para Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Instalación y configuración

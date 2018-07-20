@@ -1,23 +1,20 @@
 ---
 title: 'Controles Gráfico de columnas y Gráfico de líneas: referencia | Microsoft Docs'
 description: Información sobre los controles Gráfico de columnas y Gráfico de líneas, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: ef7bd648b103755d724481225e726a9faab863dc
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898292"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018132"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.

@@ -1,23 +1,20 @@
 ---
 title: Propiedades de accesibilidad | Microsoft Docs
 description: Información de referencia acerca de propiedades como TabIndex y Tooltip
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 01/26/2017
 ms.author: fikaradz
-ms.openlocfilehash: 94d15ff14ccd57ccc392eae47b6c10d6cec50bb1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 59cc231dfc461a2301de90a7a995ec2ec82790cb
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825220"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022939"
 ---
 # <a name="accessibility-properties-in-powerapps"></a>Propiedades de accesibilidad en PowerApps
 Configuración de propiedades que contribuyen a formas alternativas de interacción con los controles adecuadas para los usuarios con discapacidades.

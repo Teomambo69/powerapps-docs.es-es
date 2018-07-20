@@ -1,23 +1,20 @@
 ---
 title: Uso de entornos | Microsoft Docs
 description: Intercambie los entornos y comprenda cómo cambia el contenido de las páginas.
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: 4bf196041853e9f88c97aabcd3ff1c234b2608be
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 04ed5dfb76cb26f629f36514a05eda9690669926
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329488"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020639"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
 Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre ellos. Para obtener información general de los entornos, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos), que explica en detalle por qué utilizar entornos y cómo puede crearlos y administrarlos. El ámbito de este artículo trata los siguientes temas sobre el entorno:

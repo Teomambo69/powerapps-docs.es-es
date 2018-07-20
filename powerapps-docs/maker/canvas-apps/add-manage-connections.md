@@ -1,23 +1,20 @@
 ---
 title: Incorporación y administración de conexiones con orígenes de datos en servicios en la nube | Microsoft Docs
 description: Agregue, elimine y actualice conexiones con orígenes de datos, como SharePoint, SQL Server, OneDrive para la Empresa, Salesforce y Office 365.
-documentationcenter: na
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: 63db86984ef68571329aa953cb6bbaac505d834e
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 40b215e0f7e8d681b5d857d08ce2677f2d271ef1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828382"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019846"
 ---
 # <a name="manage-your-connections-in-powerapps"></a>Administración de las conexiones en PowerApps
 En [powerapps.com](https://web.powerapps.com), puede crear una conexión entre PowerApps y uno o varios orígenes de datos, eliminar conexiones o actualizar las credenciales.

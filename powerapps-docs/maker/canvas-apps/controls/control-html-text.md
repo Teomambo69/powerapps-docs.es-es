@@ -1,23 +1,20 @@
 ---
 title: 'Control Texto HTML: referencia | Microsoft Docs'
 description: Información sobre el control Texto HTML, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: aacd47621148c03eef88dea31763ab4af2658bfc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d07bd95d403fa92a8fb9c3faca9f64e8666a393f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830799"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015487"
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.

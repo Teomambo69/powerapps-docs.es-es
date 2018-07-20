@@ -1,23 +1,20 @@
 ---
 title: Funciones Recopilar, Borrar y ClearCollect | Microsoft Docs
 description: Información de referencia sobre las funciones Collect, Clear y ClearCollect de PowerApps, incluidos ejemplos y sintaxis
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 9d67db7829361565072362b6ac37125dc0dc673a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5153ac79100e3c0875abbf081e480bfc66dfdbd0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834113"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019855"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Funciones Collect, Clear y ClearCollect en PowerApps
 Crea y borra [colecciones](../working-with-data-sources.md#collections) y agrega [registros](../working-with-tables.md#records) a cualquier [origen de datos](../working-with-data-sources.md).

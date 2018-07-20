@@ -1,23 +1,20 @@
 ---
 title: 'Control Cuadro de lista: referencia | Microsoft Docs'
 description: Información sobre el control Cuadro de lista, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e43d786cf8eac8bb4ca6b13c953281614559c132
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 30c55591e410b5526fc85b76b06002c2266e1867
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899419"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016591"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.

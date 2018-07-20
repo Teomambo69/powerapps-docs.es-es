@@ -2,17 +2,19 @@
 title: Obtención de un identificador de sesión o un identificador de aplicación | Microsoft Docs
 description: Cómo obtener un identificador de sesión o un identificador de aplicación para solucionar problemas en PowerApps
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta, brimcg
-ms.openlocfilehash: add591d1bf565f3ad89e0138257fdf365d6add8e
-ms.sourcegitcommit: 1126caa4c7516cd4dffcff7e0c3eca440a333a58
+ms.author: anneta
+ms.openlocfilehash: 2e9b1a38de104ce1bf5a17969ca2c79792ac6fd4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304693"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022272"
 ---
 # <a name="get-a-session-id-or-an-app-id"></a>Obtención de un identificador de sesión o un identificador de aplicación
 Si encuentra un problema con una aplicación que se creó en PowerApps, puede ayudar a Microsoft a solucionar el problema de manera mucho más efectiva si les proporciona un identificador de sesión, un identificador de aplicación o ambos para ese problema.

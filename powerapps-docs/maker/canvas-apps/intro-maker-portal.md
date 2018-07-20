@@ -1,23 +1,20 @@
 ---
 title: Introducción a powerapps.com | Microsoft Docs
 description: Un nuevo lugar de encuentro para todos los creadores de aplicaciones.
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330224"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017350"
 ---
 # <a name="introduction-to-powerappscom"></a>Introducción a powerapps.com
 El equipo de PowerApps va a volver a presentar [powerapps.com](http://web.powerapps.com) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:

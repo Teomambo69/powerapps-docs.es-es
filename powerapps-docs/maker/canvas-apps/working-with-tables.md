@@ -2,17 +2,19 @@
 title: Información sobre tablas | Microsoft Docs
 description: Información de referencia para trabajar con tablas, columnas y registros
 author: gregli-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
-ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
+ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864270"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021191"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
 Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.

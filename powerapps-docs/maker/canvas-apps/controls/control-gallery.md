@@ -1,23 +1,20 @@
 ---
 title: 'Control Galería: referencia | Microsoft Docs'
 description: Información sobre el control Galería, con propiedades y ejemplos
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/25/2017
-ms.author: sharik
-ms.openlocfilehash: fcb482844e430444fd95bb2d0c85a8da23c91d84
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: fikaradz
+ms.openlocfilehash: 781e8b968566be387bc1c8e13af570ba17f91ebf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897740"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016660"
 ---
 # <a name="gallery-control-in-powerapps"></a>Control Galería en PowerApps
 Un control que contiene otros controles y muestra un conjunto de datos.

@@ -1,23 +1,20 @@
 ---
 title: 'Control Tarjeta: referencia | Microsoft Docs'
 description: Información sobre el control Card, con propiedades y ejemplos
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 7d44ba120a68d08f5779b8383df5b2263f228438
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.reviewer: anneta
+ms.openlocfilehash: 6b1b2f246f8cb598b1f20f5a1418651491f73bd5
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838588"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021927"
 ---
 # <a name="card-control-in-powerapps"></a>Control Card en PowerApps
 Proporciona la experiencia de edición y visualización de un solo campo de un control **[Formulario de presentación](control-form-detail.md)** o **[Formulario de edición](control-form-detail.md)**.

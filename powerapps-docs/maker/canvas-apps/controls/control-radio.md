@@ -2,18 +2,19 @@
 title: 'Control Radio: referencia | Microsoft Docs'
 description: Información sobre el control Radio, con propiedades y ejemplos
 author: fikaradz
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
-ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
+ms.openlocfilehash: b09f2ef174ecea79c0a4297bf700ba84b96bccbe
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886364"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016062"
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 

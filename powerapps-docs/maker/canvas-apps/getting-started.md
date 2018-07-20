@@ -2,17 +2,19 @@
 title: ¿Qué son las aplicaciones de lienzo? | Microsoft Docs
 description: Diseñe y cree aplicaciones de lienzo en PowerApps para que los usuarios puedan administrar datos de línea de negocio en un explorador o en sus dispositivos móviles.
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: overview
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 965396dbeb087e2dfb52a151825884fc5a98c6e1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311601"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016407"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
