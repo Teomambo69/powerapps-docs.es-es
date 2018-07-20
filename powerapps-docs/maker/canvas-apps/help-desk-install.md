@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 96b824bc5ac9dc3a1200e14f1240105d52c076f6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023767"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094780"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Instalar y configurar el ejemplo Help Desk de PowerApps
 
@@ -288,7 +288,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
-- [Agregar y configurar un control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
+- [Agregar y configurar un control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
  

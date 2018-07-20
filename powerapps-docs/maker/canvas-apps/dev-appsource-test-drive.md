@@ -1,23 +1,20 @@
 ---
 title: Versión de prueba de las aplicaciones en AppSource para los clientes | Microsoft Docs
 description: Utilice AppSource para compartir aplicaciones con los clientes y genere clientes potenciales para su empresa.
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 11f0e0b8a0aa0dce59588c2e1eea21885f19b741
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836388"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023698"
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones en AppSource
 ¿Es un apasionado de la creación de aplicaciones en PowerApps? ¿Tiene una aplicación que le gustaría compartir con los clientes? Ahora se admiten soluciones de versiones de prueba de PowerApps en [AppSource.com](https://appsource.microsoft.com) como una manera de compartir aplicaciones con los clientes y generar clientes potenciales para su empresa.

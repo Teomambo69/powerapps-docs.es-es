@@ -1,23 +1,20 @@
 ---
 title: Creación de una aplicación a partir de una plantilla | Microsoft Docs
 description: Instrucciones paso a paso para crear una aplicación automáticamente en función de una plantilla de PowerApps.
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 29010630412de78945d9d35212210b7ce1a8407f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fba57fb26b023dcce771951953aea2eafa6b28e9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827905"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016315"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>Creación de una aplicación a partir de una plantilla de PowerApps
 Cree una aplicación de manera automática en función de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones y, después, ejecute la aplicación para entender su comportamiento predeterminado.
