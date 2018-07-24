@@ -2,19 +2,22 @@
 title: Colores accesibles | Microsoft Docs
 description: Directrices de contraste de color para PowerApps
 author: tahoon
+manager: kvivek
 ms.service: powerapps
 ms.topic: article
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 56a11edcd1c43313e9b380ca8ac1c8a68d85772d
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32329925"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014820"
 ---
 # <a name="accessible-colors-in-powerapps"></a>Colores accesibles en PowerApps
-Los colores utilizados en una aplicación deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles.
+Los colores utilizados en una aplicación deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
 
 ## <a name="minimum-contrast-for-text"></a>Contraste mínimo para el texto
 * El texto y su fondo deben tener al menos una relación de contraste 4.5:1
@@ -58,4 +61,4 @@ Asegúrese de que la aplicación no transmite información con solo color. Por e
 Indicaciones adicionales, como un **[icono](controls/control-shapes-icons.md)** o estilos de texto, como **[cursiva](controls/properties-text.md)** y **[subrayado](controls/properties-text.md)**, pueden ayudar a transmitir el significado.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Obtenga información sobre las [propiedades de accesibilidad](controls/properties-accessibility.md) en los controles de PowerApps.
+Obtenga información sobre las [propiedades de accesibilidad](controls/properties-accessibility.md) en los controles de PowerApps e intente [usar el Comprobador de accesibilidad](accessibility-checker.md).

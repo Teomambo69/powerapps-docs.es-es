@@ -1,23 +1,20 @@
 ---
 title: Almacenamiento y publicación de una aplicación | Microsoft Docs
 description: Instrucciones paso a paso para guardar y publicar aplicaciones para creadores de aplicaciones
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: 0192abca52f3ca3d28b911e24a9ca9cd07c95393
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: a605467b1d7448e3f53cccd49d025cdaca3f8f25
+ms.sourcegitcommit: 0d69781f6f9362ffd4bb0b61aab14371968fbb46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895854"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39119460"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Guardar y publicar una aplicación en PowerApps
 Siempre que guarde cambios en una aplicación, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -47,7 +44,7 @@ PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. 
    ![Revisar la publicación](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-   > Es aconsejable que actualice o vuelva a publicar la aplicación dentro de los seis meses posteriores a la última vez que lo hizo, con el fin de que esté sincronizada con la versión más reciente de PowerApps. Si no lo hace, la aplicación puede dejar de funcionar sin previo aviso.
+   > Siempre que publique una aplicación de lienzo, esta se actualizará para ejecutarse en la versión más reciente de PowerApps, lo que significa que obtendrá las ventajas de todas las características más recientes y las actualizaciones de rendimiento que se han agregado desde que publicó por última vez. Si no ha publicado una actualización desde hace varios meses, probablemente verá una mejora de rendimiento inmediata al volver a publicar ahora.
 
 ## <a name="identify-the-live-version"></a>Identificar la versión activa
 En [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.
