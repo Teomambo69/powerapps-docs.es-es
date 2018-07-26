@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017350"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195344"
 ---
 # <a name="introduction-to-powerappscom"></a>Introducción a powerapps.com
-El equipo de PowerApps va a volver a presentar [powerapps.com](http://web.powerapps.com) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:
+El equipo de PowerApps va a volver a presentar [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:
 
 * el encabezado
 * la página principal
@@ -45,7 +45,7 @@ Junto al de configuración, verá un icono de signo de interrogación para obten
 ![Encabezado: ayuda](./media/intro-maker-portal/help_items2.png)
 
 ## <a name="homepage"></a>Página principal
-Después de iniciar sesión en [powerapps.com](http://web.powerapps.com), llegará a la página principal de forma predeterminada. Se ha cambiado el diseño de esta página principal para ayudarle a empezar a trabajar rápidamente, tanto si crea aplicaciones como si quiere explorar Common Data Service.
+Después de iniciar sesión en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), llegará a la página principal de forma predeterminada. Se ha cambiado el diseño de esta página principal para ayudarle a empezar a trabajar rápidamente, tanto si crea aplicaciones como si quiere explorar Common Data Service.
 
 Si ha iniciado sesión en PowerApps antes y ha ejecutado o creado algunas aplicaciones, la primera sección que verá en la página principal es una lista de **aplicaciones recientes**. Están ordenadas según la fecha en que se abrieron más recientemente.
 
@@ -96,7 +96,7 @@ Debajo del titular **Usar Microsoft Common Data Service**, verá un conjunto de 
     ![Aplicaciones de ejemplo conectadas](./media/intro-maker-portal/connectedsampleapps2.png)
 
 ## <a name="new-apps-page"></a>Página de nuevas aplicaciones
-Puede acceder a la página **Aplicaciones** por medio de la barra de navegación izquierda en [powerapps.com](http://web.powerapps.com).
+Puede acceder a la página **Aplicaciones** por medio de la barra de navegación izquierda en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ![Navegación izquierda](./media/intro-maker-portal/leftnav2.png)
 

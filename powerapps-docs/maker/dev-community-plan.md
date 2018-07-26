@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 05/01/2016
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a187e50bd4d1819d1579c6db219588e3582f5c25
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017097"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195689"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>Plan de la comunidad de PowerApps: un entorno de desarrollo gratuito para uso individual
 Si desea desarrollar habilidades y obtener información sobre PowerApps, Microsoft Flow y Common Data Service, el Plan de la comunidad de PowerApps es el plan adecuado para usted. El Plan de la comunidad de PowerApps le ofrece un entorno de desarrollo gratuito para uso individual en el que puede:
@@ -33,7 +33,7 @@ Cualquiera con una [cuenta profesional o educativa](signup-for-powerapps.md#faq)
 ## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>¿Dónde puedo registrarme en el Plan de la comunidad de PowerApps?
 Regístrese en el [sitio web del Plan de la comunidad de PowerApps](https://powerapps.microsoft.com/communityplan). Si es ya es usuario de PowerApps con Office 365 o 365 Dynamics, también puede [crear un entorno para uso individual](https://web.powerapps.com/community/signup).
 
-Después de registrarse en el plan de la comunidad, será redirigido al [sitio de PowerApps](https://web.powerapps.com) y se desplegará su entorno individual. El entorno tendrá su nombre, por ejemplo, "Entorno de John Doe". Si ya hay un entorno con ese nombre, el entorno individual se llamará "Entorno de John Doe (1)".  La siguiente imagen muestra cómo aparece el entorno.
+Después de registrarse en el plan de la comunidad, será redirigido al [sitio de PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y se desplegará su entorno individual. El entorno tendrá su nombre, por ejemplo, "Entorno de John Doe". Si ya hay un entorno con ese nombre, el entorno individual se llamará "Entorno de John Doe (1)".  La siguiente imagen muestra cómo aparece el entorno.
 
 ![Entorno individual del Plan de la Comunidad](./media/dev-community-plan/individual-environment.png)
 

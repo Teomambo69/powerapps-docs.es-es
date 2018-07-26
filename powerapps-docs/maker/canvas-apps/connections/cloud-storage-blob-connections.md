@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: 3d7813280f0d17eca327e86a827da72e33f191e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 8e6aa988344c1ac04c2ff11eaa9d828cc8b929bc
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021030"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195666"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -33,7 +33,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
   4. Guarde los cambios.
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>Conexión al almacenamiento en la nube
-1. En [powerapps.com](https://web.powerapps.com), expanda **Administrar** y seleccione **Conexiones**:  
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda **Administrar** y seleccione **Conexiones**:  
    
     ![Seleccionar Conexiones](./media/cloud-storage-blob-connections/connections.png)
 2. Seleccione **Nueva conexión** y seleccione la conexión de almacenamiento en la nube. Por ejemplo, seleccione **OneDrive**.

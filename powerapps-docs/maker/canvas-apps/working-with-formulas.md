@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: b40abdc4c8d5d8a33a9aec32a1826476500405c8
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017879"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195275"
 ---
 # <a name="get-started-with-formulas"></a>Introducción a las fórmulas
 Configure la aplicación con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
@@ -30,7 +30,7 @@ En este tema se proporciona únicamente información general sobre cómo trabaja
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="show-a-simple-value"></a>Mostrar un valor simple

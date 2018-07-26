@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 4830721ba697f78987abd972dd1122250bacb9e8
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 2af0c39aca43d316e79b4f928e114dcfb88caf31
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020248"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194861"
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>Generación de una aplicación desde Excel en PowerApps
 En este tema, generará automáticamente la primera aplicación en PowerApps con los datos de una tabla de Excel. Podrá seleccionar un archivo de Excel, generar una aplicación y, después, ejecutar la aplicación que genere. En todas las aplicaciones generadas se incluyen pantallas para examinar los registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
@@ -30,7 +30,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 > Puede usar su propio archivo de Excel, pero los datos deberán tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla](how-to-excel-tips.md). 
 
 ## <a name="generate-the-app"></a>Generar la aplicación
-1. Inicie sesión en [PowerApps](https://web.powerapps.com).
+1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal de PowerApps](./media/get-started-create-from-data/sign-in.png)
 

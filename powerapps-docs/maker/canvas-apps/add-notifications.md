@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 45311aefca51d8d1a4fc6c8cc6dabc33872842df
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: f9b606246b0b1114aec1bec2fc2767b518215148
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020846"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195574"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -56,7 +56,7 @@ En una aplicación en la que tenga permiso de **colaborador**, agregue una conex
 ## <a name="send-a-notification-from-an-app"></a>Envío de una notificación desde una aplicación
 Puede enviar una notificación push de una aplicación a otra o a la misma aplicación.
 
-1. En [PowerApps](https://web.powerapps.com/), vaya a la aplicación a la que desea enviar notificaciones push.
+1. En [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), vaya a la aplicación a la que desea enviar notificaciones push.
 2. En la pestaña **Detalles**, copie el contenido de **Id. de la aplicación** de dicha aplicación.
 
     ![Obtener el identificador de la aplicación](./media/add-notifications/grab-id.png)

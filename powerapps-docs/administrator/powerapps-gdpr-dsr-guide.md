@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 14fe0c749a17a1a28ebc7c8680ff55df2392999e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 5bc3951f767677c2b8b35166d16c089259eec1ce
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552953"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218680"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de PowerApps
 
@@ -68,7 +68,7 @@ Aplicaciones controladas por modelos y permisos de aplicación controlados por m
 
 PowerApps ofrece las experiencias siguientes para buscar datos personales de un usuario concreto:
 
-- **Acceso al sitio web**: [sitio de PowerApps](https://web.powerapps.com), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
+- **Acceso al sitio web**: [sitio de PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
 - **Acceso de PowerShell**: cmdlets de PowerApps (para [creadores de aplicaciones](https://go.microsoft.com/fwlink/?linkid=871448) y [administradores](https://go.microsoft.com/fwlink/?linkid=871804)) y [cmdlets de puerta de enlace local](https://go.microsoft.com/fwlink/?linkid=872238)
 
 Para instrucciones detalladas sobre cómo puede usar estas experiencias para encontrar datos personales de un usuario específico para cada uno de estos tipos de recursos, consulte [Respuesta a solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps](powerapps-gdpr-export-dsr.md).

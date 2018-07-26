@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8562219c373a8880f7cc89f791b6c6373b6df0b3
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168444"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217944"
 ---
 # <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 A menudo, los datos de una entidad se relacionan con los datos de otra entidad. Por ejemplo, es posible que tenga las entidades **Profesores** y **Clase**, y es posible que la entidad **Clase** tenga una relación de búsqueda con la entidad **Profesores** para mostrar qué profesor imparte la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Esto se conoce normalmente como un campo de búsqueda.
@@ -29,7 +29,7 @@ Puede crear varios tipos de relaciones de una entidad a otra (o entre una entida
 
 Para agregar una relación de búsqueda a una entidad, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desea crear una relación.
 
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
@@ -53,7 +53,7 @@ Para agregar una relación de búsqueda a una entidad, cree una relación en la 
 
 Para agregar una relación uno a varios, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que quiere crear una relación.
 
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 

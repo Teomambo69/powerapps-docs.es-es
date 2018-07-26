@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4e12faf91b0ce19a4d2ef2ba2e4d9bbca8fb7093
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b38f0d1b029708e8130363d54ccc1354084b0ae4
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896314"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218174"
 ---
 # <a name="environments-overview"></a>Información general sobre los entornos
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirven como contenedores para separar aplicaciones que pueden tener roles distintos, otros requisitos de seguridad o distintos públicos objetivos. Cómo se elige aprovechar los entornos depende de la organización y de las aplicaciones que se intenta compilar. Por ejemplo:
@@ -75,7 +75,7 @@ El nombre del entorno predeterminado tiene el siguiente formato: "{nombre del in
 Puede crear entornos para un propósito diferente. Un entorno de prueba permite probar el entorno y la base de datos con la experiencia de Common Data Service. Caduca después de un período de tiempo concreto. Para obtener más información, vea [Administer environments in PowerApps](environments-administration.md) (Administración de entornos en PowerApps).
 
 ## <a name="choosing-an-environment"></a>Elección de un entorno
-Con la introducción de los entornos, ahora verá una experiencia nueva cuando ingrese en [https://web.powerapps.com](https://web.powerapps.com).  Las aplicaciones, conexiones y otros elementos visibles en el sitio ahora se filtrarán según el entorno actual seleccionado.  El entorno actual se especifica en el selector de entornos que se encuentra cerca del borde derecho del encabezado. Para elegir un entorno distinto, pulse o haga clic en el selector y verá una lista de los entornos disponibles. Pulse o haga clic en el entorno que desea ingresar.
+Con la introducción de los entornos, ahora verá una experiencia nueva cuando ingrese en [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  Las aplicaciones, conexiones y otros elementos visibles en el sitio ahora se filtrarán según el entorno actual seleccionado.  El entorno actual se especifica en el selector de entornos que se encuentra cerca del borde derecho del encabezado. Para elegir un entorno distinto, pulse o haga clic en el selector y verá una lista de los entornos disponibles. Pulse o haga clic en el entorno que desea ingresar.
 
 El selector mostrará un entorno si usted cumple con una de las siguientes condiciones:
 

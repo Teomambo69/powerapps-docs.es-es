@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 25a06525fba038dda2deebb333f53583301540f7
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023100"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195174"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Creación o modificación de aplicaciones en PowerApps Studio para web
 Cree y modifique aplicaciones en PowerApps Studio para web, que se abre en una ventana del explorador de Windows o en otras plataformas.
@@ -34,7 +34,7 @@ PowerApps Studio para web se abre en una nueva pestaña del explorador, donde po
 ## <a name="known-limitations"></a>Limitaciones conocidas
 1. **Crear una conexión**.
 
-    Para [crear una conexión](add-manage-connections.md) a un origen de datos que requiera la autenticación del servicio, vaya a [powerapps.com](https://web.powerapps.com) y [agregue la conexión](add-data-connection.md) a una aplicación en PowerApps Studio para web.
+    Para [crear una conexión](add-manage-connections.md) a un origen de datos que requiera la autenticación del servicio, vaya a [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y [agregue la conexión](add-data-connection.md) a una aplicación en PowerApps Studio para web.
 2. **Editar y guardar la aplicación en un entorno local**.
 
     Con PowerApps Studio para Windows obtendrá mejores resultados al modificar y guardar aplicaciones en el entorno local. En un explorador no se pueden guardar los cambios de una aplicación local. Debe guardar un archivo nuevo en lugar de reemplazar el que ha abierto.

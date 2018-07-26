@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: f611ef7be4d91b76f0be24116aabc7795d332520
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897303"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218473"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Tutorial: Creación de una entidad personalizada que tiene componentes en PowerApps
 
@@ -31,7 +31,7 @@ En el tutorial se sigue a la empresa Contoso, que tiene un negocio de peluquerí
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Inicie sesión en [PowerApps](https://powerapps.microsoft.com/). Si todavía no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], haga clic en el vínculo **Inicio gratuito** desde [powerapps.com](https://web.powerapps.com).
+Inicie sesión en [PowerApps](https://powerapps.microsoft.com/). Si todavía no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], haga clic en el vínculo **Inicio gratuito** desde [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Crear una entidad personalizada
 

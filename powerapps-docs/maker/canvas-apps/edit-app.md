@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: b1e9f514973313a1028aa3b1958bf8e01ff2c167
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b5678437ea1e604ce2932307d897f280f4633fc0
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023790"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194969"
 ---
 # <a name="edit-an-app-in-powerapps"></a>Edición de una aplicación en PowerApps
 Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede modificar una aplicación en PowerApps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
 
 ## <a name="verify-your-permissions"></a>Comprobación de los permisos
-1. Inicie sesión en [PowerApps](https://web.powerapps.com) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
+1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
    
     ![Opción Aplicaciones en el menú Archivo](./media/edit-app/file-apps.png)
 

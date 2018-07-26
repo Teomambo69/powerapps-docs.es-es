@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: e1a07bc9c166ac37ad0efa7ae50dca87332cb3e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a3862dbd0210d2975b276d86741709b24d6d08f6
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020915"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195482"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -23,7 +23,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com) con las mismas credenciales que usó para registrase.
+* [Regístrese](../../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Recopile la siguiente información para una base de datos que contenga al menos una tabla con una clave principal:
   
   * el nombre de la base de datos
@@ -64,7 +64,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 8. Personalice la aplicación mediante el uso de técnicas que son similares a las que se describe en [Create an app from Excel](../get-started-create-from-data.md) (Creación de una aplicación de Excel), a partir de cambiar el diseño de la aplicación.
 
 ## <a name="build-an-app-from-scratch"></a>Crear una aplicación desde cero
-1. Inicie sesión en [powerapps.com](https://web.powerapps.com) con la misma cuenta que usó para suscribirse a PowerApps.
+1. Inicie sesión en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con la misma cuenta que usó para suscribirse a PowerApps.
 2. En la barra de navegación izquierda, pulse o haga clic en **Conexiones**:  
    
     ![Administrar conexiones](./media/connection-azure-sqldatabase/manage-connections.png)

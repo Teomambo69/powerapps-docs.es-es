@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: a605467b1d7448e3f53cccd49d025cdaca3f8f25
-ms.sourcegitcommit: 0d69781f6f9362ffd4bb0b61aab14371968fbb46
+ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39119460"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194815"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Guardar y publicar una aplicación en PowerApps
 Siempre que guarde cambios en una aplicación, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -47,7 +47,7 @@ PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. 
    > Siempre que publique una aplicación de lienzo, esta se actualizará para ejecutarse en la versión más reciente de PowerApps, lo que significa que obtendrá las ventajas de todas las características más recientes y las actualizaciones de rendimiento que se han agregado desde que publicó por última vez. Si no ha publicado una actualización desde hace varios meses, probablemente verá una mejora de rendimiento inmediata al volver a publicar ahora.
 
 ## <a name="identify-the-live-version"></a>Identificar la versión activa
-En [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.
+En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.
 
 La versión **Activa** está publicada para todos los usuarios con quien se comparte la aplicación. La versión más reciente de cualquier aplicación está disponible solo para quienes tienen permisos de edición para ella.
 

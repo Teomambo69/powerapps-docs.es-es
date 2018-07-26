@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
 ms.author: anneta
-ms.openlocfilehash: 2051fdf0d9cb1d5fb2f796b22f55e8b59c52a692
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 293c5874e47d740d645b331aade04df662500db8
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018316"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194838"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
@@ -24,7 +24,7 @@ En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Abrir una aplicación de ejemplo
-1. Inicie sesión en [PowerApps](https://web.powerapps.com).
+1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![](./media/open-and-run-a-sample-app/sign-in.png)
 

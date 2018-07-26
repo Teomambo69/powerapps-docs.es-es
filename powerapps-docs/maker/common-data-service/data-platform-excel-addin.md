@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: ad1a2de5491a1725ada2e95c3eccc6513de9e304
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445906"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218496"
 ---
 # <a name="open-entity-data-in-excel"></a>Abrir los datos de la entidad en Excel
 Al abrir los datos de la entidad en Microsoft Excel, estos se pueden ver y editar de forma rápida y sencilla mediante el complemento de Excel de Microsoft PowerApps. Este complemento requiere Microsoft Excel 2016.
@@ -21,12 +21,12 @@ Al abrir los datos de la entidad en Microsoft Excel, estos se pueden ver y edita
 ![Complemento de Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Complemento de Excel de PowerApps")
 
 ## <a name="open-entity-data-in-excel"></a>Abrir los datos de la entidad en Excel
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda. Se muestran todas las entidades.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda. Se muestran todas las entidades.
 2. Haga clic en los puntos suspensivos (...) que hay a la derecha de la entidad que le interesa.
 3. Haga clic en **Abrir en Excel** y abra el libro que se genera. Dicho libro generado información de enlace de la entidad, un puntero a su entorno y un puntero para el complemento de Excel de PowerApps.  
 4. En Excel, haga clic en **Habilitar edición** para habilitar la ejecución del complemento de Excel de PowerApps. El complemento de Excel se ejecutará en un panel de la derecha de la ventana de Excel.
 5. Si es la primera vez que ejecuta el complemento, de Excel de PowerApps, haga clic en **Confiar en este complemento** para permitir que se ejecute el complemento de Excel.
-6. Si se le solicita que inicie sesión, haga clic en **Inicio de sesión** y hágalo con las mismas credenciales que usó en [powerapps.com](https://web.powerapps.com). El complemento de Excel utilizará un contexto de inicio de sesión anterior e iniciará sesión automáticamente, en caso de que sea posible. Por tanto, compruebe el nombre de usuario en la parte superior derecha del complemento de Excel.
+6. Si se le solicita que inicie sesión, haga clic en **Inicio de sesión** y hágalo con las mismas credenciales que usó en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). El complemento de Excel utilizará un contexto de inicio de sesión anterior e iniciará sesión automáticamente, en caso de que sea posible. Por tanto, compruebe el nombre de usuario en la parte superior derecha del complemento de Excel.
 
 El complemento de Excel lee automáticamente los datos de la entidad que ha seleccionado. Tenga en cuenta que no habrá ningún dato en el libro hasta que el complemento de Excel los lea.
 

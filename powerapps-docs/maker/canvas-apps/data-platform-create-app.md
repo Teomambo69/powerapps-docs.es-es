@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 50913e593cf279d0d1870cbe88fa1a3703059811
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3481bd697e29855a075598975e26d14121a49a0a
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016039"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195367"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>Inicio rápido: generación de una aplicación a partir de Common Data Service for Apps en PowerApps
 
 En este tutorial rápido, usará Microsoft PowerApps para generar automáticamente una aplicación basada en una lista de cuentas de ejemplo en [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com) antes de empezar.
+Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Para seguir este tutorial rápido, debe [cambiar a un entorno](working-with-environments.md) en el que se haya creado una base de datos en CDS for Apps que contenga datos y que permita actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](../../administrator/environments-administration.md#create-an-environment) que cumpla este requisito.
 
 ## <a name="generate-an-app"></a>Generar una aplicación
-1. Inicie sesión en [PowerApps](https://web.powerapps.com) y, si es necesario, cambie los entornos como se especificó anteriormente en este mismo tema.
+1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, si es necesario, cambie los entornos como se especificó anteriormente en este mismo tema.
 
     ![Página principal de PowerApps](./media/data-platform-create-app/sign-in.png)
 

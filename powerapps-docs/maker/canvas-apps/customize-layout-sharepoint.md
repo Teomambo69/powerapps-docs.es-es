@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: bb02f12bf452d1928408ea7c266469b524607b5f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fa5aa70beba25130144c5da9dac4fbaa383dfc67
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016798"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195620"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
 
@@ -39,7 +39,7 @@ También agregará una barra de desplazamiento para que los usuarios que no tien
 
 Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Pero se aplican los mismos conceptos a cualquier aplicación que se genere en PowerApps, sea desde una lista de SharePoint, una tabla de Excel o cualquier otro origen de datos.
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com) antes de empezar.
+Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -47,7 +47,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
+1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
     [![Página principal de PowerApps](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 

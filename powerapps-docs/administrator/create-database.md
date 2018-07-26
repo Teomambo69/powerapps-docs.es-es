@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ccd2b03f5f71b2a5037274363ddf9c4082f7071c
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168490"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218703"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Crear una base de datos de Common Data Service para aplicaciones
 Puede crear una base de datos y compilar aplicaciones mediante el uso de Common Data Service (CDS) para aplicaciones como almacén de datos. Puede crear sus propias entidades personalizadas o usar las predefinidas. Para crear una base de datos, primero debe crear un entorno o estar asignado a un entorno existente como **Administrador de entorno**. Además, debe tener asignada la licencia adecuada. Para obtener más información sobre la compra de un plan para utilizar CDS for Apps, consulte la [información sobre los precios](pricing-billing-skus.md).
@@ -42,7 +42,7 @@ Existen varias maneras de crear una base de datos:
 
 
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>Crear una base de datos en el panel Entidades de PowerApps
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
 2. Haga clic en **Crear base de datos** para crear la base de datos.
 

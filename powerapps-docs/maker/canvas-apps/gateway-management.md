@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018546"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194898"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 Instale una puerta de enlace de datos local para transferir datos de manera rápida y segura entre PowerApps y un origen de datos que no esté en la nube, como una base de datos de SQL Server local o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
@@ -35,7 +35,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 * Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](working-with-environments.md) del usuario.
 
 ## <a name="install-a-gateway"></a>Instalar una puerta de enlace
-1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace**.
+1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace**.
 
     ![Puertas de enlace en la barra de navegación izquierda](./media/gateway-management/manage-gateway.png)
 
@@ -46,7 +46,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
     Para más información sobre cómo instalar una puerta de enlace, consulte [Información sobre las puertas de enlace de datos locales](gateway-reference.md).
 
 ## <a name="view-and-manage-gateway-permissions"></a>Ver y administrar los permisos de la puerta de enlace
-1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
 
 2. Agregue un usuario a una puerta de enlace haciendo clic o pulsando en **Usuarios**, especificando un usuario o grupo y, finalmente, especificando un nivel de permiso:
 
@@ -57,7 +57,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, seleccione los orígenes de datos a los que puede conectarse el usuario mediante la puerta de enlace.
 
 ## <a name="view-and-manage-gateway-connections"></a>Ver y administrar las conexiones de puerta de enlace
-1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
 
 2. Pulse o haga clic en **Conexiones** y luego pulse o haga clic en una conexión para ver sus detalles, editar la configuración o eliminarla.
 

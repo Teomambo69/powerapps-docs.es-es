@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: d518cbf398d0f29b25da9dafcfa6e9026fcee88e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 501c5468291041eafd2147c102484ab81cabbe37
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897188"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218795"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) para eliminar datos de cliente de PowerApps
 
@@ -40,7 +40,7 @@ Permisos de conector personalizado |
 
 En el caso de los datos y recursos que requieren una revisión manual, PowerApps ofrece las siguientes experiencias para reasignar (si es necesario) o eliminar datos personales de un usuario concreto:
 
-* Acceso al sitio web: [sitio de PowerApps](https://web.powerapps.com), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
+* Acceso al sitio web: [sitio de PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
 
 * Acceso de PowerShell: cmdlets de PowerApps [para creadores de aplicaciones](https://go.microsoft.com/fwlink/?linkid=871448) y [administradores](https://go.microsoft.com/fwlink/?linkid=871804) y cmdlets de [puertas de enlace locales](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -62,7 +62,7 @@ Permisos de conector personalizado | | Creador de aplicaciones: Disponible <br> 
 ## <a name="prerequisites"></a>Requisitos previos
 
 ### <a name="for-users"></a>Para usuarios
-Cualquier usuario con una licencia válida de PowerApps puede realizar las operaciones de usuario descritas en este documento mediante [PowerApps ](https://web.powerapps.com) o los [cmdlets de PowerShell para creadores de aplicaciones](https://go.microsoft.com/fwlink/?linkid=871448).
+Cualquier usuario con una licencia válida de PowerApps puede realizar las operaciones de usuario descritas en este documento mediante [PowerApps ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o los [cmdlets de PowerShell para creadores de aplicaciones](https://go.microsoft.com/fwlink/?linkid=871448).
 
 #### <a name="unmanaged-tenant"></a>Inquilino no administrado
 Si es miembro de un [inquilino no administrado](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), lo que significa que el inquilino de Azure AD no tiene un administrador global, todavía podrá seguir los pasos descritos en esta imagen para quitar sus propios datos personales.  Pero como no hay ningún administrador global para el inquilino, debe seguir las instrucciones que se describen en [Paso 11: Eliminación del usuario de Azure Active Directory](#step-11-delete-the-user-from-azure-active-directory) a continuación para eliminar su propia cuenta del inquilino.
@@ -210,7 +210,7 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ```
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-site"></a>Eliminación de la aplicación de lienzo de un usuario mediante el sitio de PowerApps
-Un usuario puede eliminar una aplicación desde el [sitio de PowerApps](https://web.powerapps.com). Para obtener los pasos completos sobre cómo eliminar una aplicación, vea cómo eliminar una aplicación.
+Un usuario puede eliminar una aplicación desde el [sitio de PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Para obtener los pasos completos sobre cómo eliminar una aplicación, vea cómo eliminar una aplicación.
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>Eliminación de una aplicación de lienzo de un usuario mediante el Centro de administración de PowerApps
 Un administrador puede eliminar las aplicaciones creadas por un usuario en el [Centro de administración de PowerApps](https://admin.powerapps.com/) con estos pasos:

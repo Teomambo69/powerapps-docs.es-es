@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 625d76af5acc554ff9ab6c20d69f542cf959cd95
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d6f88534b4839381037243400ef69f292df8fb97
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018086"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195712"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Mostrar texto y dar formato a fechas y horas en PowerApps
 Agregue fechas y horas y deles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
@@ -23,7 +23,7 @@ Por ejemplo, agregue datos de usuarios sobre operaciones con acciones o reunione
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Cree una aplicación o abra una existente en PowerApps.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 5fffcbcd8f58ae05f3fe5b3b4f871cf39d003321
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898774"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218197"
 ---
 # <a name="create-a-power-bi-report"></a>Crear un informe de Power BI
 Common Data Service for Apps le permite conectarse directamente a los datos mediante Power BI Desktop para crear informes y publicarlos en Power BI. Desde Power BI, se puede usar los informes en los paneles, compartirlos con otros usuarios y acceder a distintas plataformas de aplicaciones móviles de Power BI.
@@ -29,7 +29,7 @@ Para usar Power BI con Common Data Service for Apps, necesita lo siguiente:
 
 ## <a name="finding-your-common-data-service-for-apps-environment-url"></a>Buscar la dirección URL del entorno de Common Data Service for Apps
 
-1. Abra [PowerApps](https://web.powerapps.com) y seleccione el entorno al que se va a conectar y haga clic en el **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**.
+1. Abra [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno al que se va a conectar y haga clic en el **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**.
 
     ![Entorno de CDS for Apps](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Entorno de CDS for Apps")
 

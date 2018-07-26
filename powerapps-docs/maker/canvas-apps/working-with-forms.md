@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: ec6526ff4cd690d6bcf5cbf3dcc98c6ee7b8ae28
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018155"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195758"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
 Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:
@@ -33,7 +33,7 @@ Tal como se describe en este tema, combine estos controles con fórmulas para cr
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="explore-a-generated-app"></a>Exploración de una aplicación generada

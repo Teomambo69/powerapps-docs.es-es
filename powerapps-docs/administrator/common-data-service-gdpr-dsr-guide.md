@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094757"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218059"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de Common Data Service for Apps
 
@@ -52,7 +52,7 @@ En este artículo se describen las acciones siguientes:
 
 CDS for Apps y la versión anterior de Common Data Service (CDS) tienen proceso independientes para interactuar con los datos personales.
 
-Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com) y siga estos pasos:
+Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y siga estos pasos:
 
 1. En la lista desplegable **Entorno**, seleccione el entorno.
 2. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
@@ -308,7 +308,7 @@ Puede encontrar los datos personales de los usuarios de la versión anterior de 
 
 |Recurso | Propósito | Acceso al sitio web |  Acceso mediante programación
 | --- | --- | --- | ---
-|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com) |      No
+|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    No
 
 #### <a name="entity-records"></a>Registros de entidad
 Los datos personales de un usuario se pueden almacenar en cualquier entidad de negocio.

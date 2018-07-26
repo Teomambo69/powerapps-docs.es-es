@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 734e36b00658455198b64317b6f068c0018755a4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018500"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195045"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>Adición de una conexión de datos en PowerApps
 En PowerApps, añada una conexión de datos a una aplicación existente o a una que se cree desde cero. La aplicación puede conectarse a SharePoint, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
@@ -26,7 +26,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 * Conéctese a SQL Server y actualice una tabla desde la aplicación.
 
 ## <a name="prerequisites"></a>Requisitos previos
-[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com) con las mismas credenciales que usó para registrase.
+[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 
 ## <a name="add-a-data-source"></a>Agregar un origen de datos
 1. En la pestaña **Inicio**, mantenga el mouse sobre el icono **Start from blank** (Empezar desde cero) y, luego, seleccione **Make this app.** (Crear esta aplicación).

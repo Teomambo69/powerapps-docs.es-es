@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: ddbd2f610ecba6d801efde2a00a9cb492e2382e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021559"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195206"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registro para obtener una licencia gratuita para probar PowerApps
 Para crear una aplicación en PowerApps, necesitará uno de los distintos tipos de licencias que proporcionan diferentes niveles de funcionalidad. Ya tiene una licencia para PowerApps si la organización ha comprado cualquiera de las versiones de Office 365 o Dynamics 365 para usted, o bien si ha comprado licencias del Plan 1 o Plan 2 de PowerApps para usted.
@@ -74,7 +74,7 @@ En caso contrario, se le pedirá que compruebe su correo electrónico.
 
 En el mensaje de correo electrónico, haga clic en el vínculo para comprobar su dirección de correo electrónico y (si se le solicita) proporcionar más información.
 
-Cuando aparezca este cuadro de diálogo, haga clic en **Iniciar** y, después, empiece a usar [PowerApps](http://web.powerapps.com).
+Cuando aparezca este cuadro de diálogo, haga clic en **Iniciar** y, después, empiece a usar [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ![Haga clic en Iniciar](./media/signup-for-powerapps/almost-there.png)
 
@@ -118,7 +118,7 @@ Transcurridos 30 días, se le pedirá que solicite una extensión de la evaluaci
 * Si el acceso a PowerApps se realiza únicamente a través de la evaluación (para la que se ha registrado en el [sitio de PowerApps](http://powerapps.microsoft.com/) o en la [página de precios](http://powerapps.microsoft.com/pricing)), puede solicitar una ampliación de 30 días de la licencia de evaluación para conservar el acceso a PowerApps.
 
 ### <a name="when-will-my-trial-license-expire"></a>¿Cuándo expirará mi licencia de evaluación?
-Para determinar cuándo va a expirar la licencia de evaluación, haga clic en el icono de engranaje cerca de la esquina superior derecha del [sitio de PowerApps](http://web.powerapps.com) y, después, seleccione **Planes**.
+Para determinar cuándo va a expirar la licencia de evaluación, haga clic en el icono de engranaje cerca de la esquina superior derecha del [sitio de PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, después, seleccione **Planes**.
 
 ![](./media/signup-for-powerapps/show-duration.png)
 

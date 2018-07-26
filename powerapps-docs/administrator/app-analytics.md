@@ -8,17 +8,17 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2017
 ms.author: jamesol
-ms.openlocfilehash: ba4b518cdc1b965a26a7e3fc3722dd23d601e693
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9abac88875c85551fe4d4f91413a1752e35b8320
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168214"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218864"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Visualización de informes de análisis de una aplicación
 ¿Ha compilado una aplicación y la ha compartido en su organización?  ¿Tiene curiosidad por saber cuántos de sus compañeros de trabajo la usan a diario?
 
-Se presenta el primero informe de análisis de PowerApps que ahora está disponible en [web.powerapps.com](https://web.powerapps.com); el **informe de uso de la aplicación**.
+Se presenta el primero informe de análisis de PowerApps que ahora está disponible en [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc); el **informe de uso de la aplicación**.
 
 El informe de uso de la aplicación le brinda la posibilidad de realizar un seguimiento del número de usuarios que han utilizado la aplicación los últimos 30 días, desglosados por día, plataforma de dispositivo y ubicación.
 
@@ -30,7 +30,7 @@ Todos los informes están disponibles para cualquier usuario con permiso de edic
 ## <a name="where-do-i-find-my-apps-reports"></a>¿Dónde encuentro los informes de mi aplicación?
 Para ver los informes de su aplicación, siga estos pasos:
 
-1. Vaya a [web.powerapps.com](https://web.powerapps.com).
+1. Vaya a [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Seleccione **Aplicaciones** en la barra de navegación izquierda
    
     ![Barra de navegación izquierda](./media/app-analytics/left-nav.png)

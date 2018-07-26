@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
-ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
+ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39137031"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195321"
 ---
 # <a name="share-an-app-in-powerapps"></a>Compartir una aplicación en PowerApps
 
@@ -33,7 +33,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 ## <a name="share-an-app"></a>Compartir una aplicación
 
-1. [Inicie sesión](https://web.powerapps.com) en PowerApps y después seleccione **Aplicaciones** cerca del borde izquierdo.
+1. [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y después seleccione **Aplicaciones** cerca del borde izquierdo.
 
     ![Mostrar la lista de aplicaciones](./media/share-app/file-apps.png)
 
@@ -59,7 +59,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
     Si concede a los usuarios permiso para modificar la aplicación, el mensaje también contiene un vínculo independiente para abrir la aplicación para su edición en PowerApps Studio.
 
-    Independientemente de si se envía una invitación, los usuarios pueden ejecutar la aplicación desde AppSource en [Dynamics 365](http://home.dynamics.com). Los usuarios que tienen el permiso **Puede editar** también pueden editar la aplicación desde [PowerApps](http://web.powerapps.com).
+    Independientemente de si se envía una invitación, los usuarios pueden ejecutar la aplicación desde AppSource en [Dynamics 365](http://home.dynamics.com). Los usuarios que tienen el permiso **Puede editar** también pueden editar la aplicación desde [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. Especifique el permiso para cada usuario o grupo de seguridad y después seleccione **Guardar**.
 
@@ -85,7 +85,7 @@ Si crea una aplicación basada en Common Data Service for Apps, debe asegurarse 
 
 #### <a name="create-a-security-role"></a>Crear un rol de seguridad
 
-1. [Inicie sesión en PowerApps](https://web.powerapps.com) y asegúrese de que se encuentra en el mismo entorno que la aplicación que desea compartir.
+1. [Inicie sesión en PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y asegúrese de que se encuentra en el mismo entorno que la aplicación que desea compartir.
 
 1. En la esquina superior derecha, seleccione el icono de engranaje y después seleccione **Personalizaciones avanzadas**.
 

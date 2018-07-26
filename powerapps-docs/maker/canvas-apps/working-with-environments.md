@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: 04ed5dfb76cb26f629f36514a05eda9690669926
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 865e5f419d5ff318ce232fff16b9240039129a29
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020639"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194999"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
 Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre ellos. Para obtener información general de los entornos, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos), que explica en detalle por qué utilizar entornos y cómo puede crearlos y administrarlos. El ámbito de este artículo trata los siguientes temas sobre el entorno:
@@ -39,7 +39,7 @@ Puede crear aplicaciones en un entorno que cree o para el que se le haya concedi
 
 Para crear una aplicación en el entorno adecuado, siga uno de estos pasos:
 
-- Si PowerApps Studio no está abierto, [inicie sesión](http://web.powerapps.com), seleccione el entorno en el que le gustaría crear la aplicación, haga clic en **Aplicaciones** cerca del borde izquierdo y después en **Crear una aplicación**.
+- Si PowerApps Studio no está abierto, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno en el que le gustaría crear la aplicación, haga clic en **Aplicaciones** cerca del borde izquierdo y después en **Crear una aplicación**.
 
 - Si PowerApps Studio está abierto, vuelva a seleccionar el entorno en la esquina superior derecha.
 
@@ -54,6 +54,6 @@ Para crear una aplicación en el entorno adecuado, siga uno de estos pasos:
     ![Entorno de cambio de Studio](./media/working-with-environments/new-app.PNG)
 
 ## <a name="view-apps-in-the-right-environment"></a>Visualización de aplicaciones en el entorno adecuado
-Si está trabajando en [powerapps.com](http://web.powerapps.com) o PowerApps Studio, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno adecuado.
+Si está trabajando en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o PowerApps Studio, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno adecuado.
 
 Para más información acerca de los entornos, consulte [esta información general](../../administrator/environments-overview.md).

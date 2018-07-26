@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: f7eb14e5e4c04613cd65ec3e87e8c6850a3005e9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b7506ff3380855c6e3c51b22918366dde9c8549c
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018983"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195137"
 ---
 # <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación desde cero mediante Common Data Service for Apps
 
@@ -29,7 +29,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 
-1. Inicie sesión en [PowerApps](http://web.powerapps.com).
+1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal de PowerApps](./media/data-platform-create-app-scratch/sign-in.png)
 

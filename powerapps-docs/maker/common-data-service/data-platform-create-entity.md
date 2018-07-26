@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 45a341d28b4138ce03ce50d7325f9daa0f159d1a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: a7fed26dafcf0b1d73ae6ba362964de5e9fd1ad5
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897441"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218726"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Inicio rápido: Creación de una entidad personalizada
 En PowerApps, una *entidad* define la información de la que se quiere realizar el seguimiento en forma de registros, que suelen incluir propiedades como el nombre de la empresa, la ubicación, los productos, el correo electrónico y el teléfono. Después, se pueden mostrar esos datos si se desarrolla una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar listas para usar para abarcar los escenarios típicos de una organización (por ejemplo, el seguimiento de las citas), pero puede haber ocasiones en las que sea necesario crear entidades personalizadas para almacenar datos específicos de la organización.
@@ -25,7 +25,7 @@ Para seguir este tutorial rápido, se requieren los elementos siguientes:
 * Un rol de seguridad de Administrador del sistema o Personalizador del sistema dentro de Common Data Service for Apps.
 
 ## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
-Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com).
+Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-an-entity"></a>Crear una entidad
 1. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.

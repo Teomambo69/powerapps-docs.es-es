@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: 842e19360c5f1536489f978cf880d941a6dee7d6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019995"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195114"
 ---
 # <a name="customize-forms-in-powerapps"></a>Personalizar formularios en PowerApps
 Personalice un control **Mostrar formulario** y un control **Editar formulario** para que muestren los datos más importantes y en el orden más intuitivo para ayudar a los usuarios a comprender y actualizar los datos fácilmente.
@@ -27,7 +27,7 @@ Si no está familiarizado con PowerApps, consulte [Introducción a PowerApps](ge
 [Generar una aplicación](data-platform-create-app.md) desde Common Data Service y, después, [personalizar la galería](customize-layout-sharepoint.md) en esa aplicación.
 
 ## <a name="show-and-hide-cards"></a>Mostrar y ocultar las tarjetas
-1. Inicie sesión en [PowerApps](http://web.powerapps.com).
+1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal del sitio de PowerApps](./media/customize-forms-sharepoint/sign-in.png)
 

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: 965396dbeb087e2dfb52a151825884fc5a98c6e1
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 005bc37baea420ba1734789d1ef36fd0bbcc3b8f
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016407"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195436"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
@@ -54,5 +54,5 @@ Ejecute sus propias aplicaciones (así como las que compartan con usted) en Wind
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Registro para obtener una licencia gratuita.](../signup-for-powerapps.md)
-- [Inicio de sesión en PowerApps.](https://web.powerapps.com)
+- [Inicio de sesión en PowerApps.](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Abrir una aplicación de ejemplo.](open-and-run-a-sample-app.md)

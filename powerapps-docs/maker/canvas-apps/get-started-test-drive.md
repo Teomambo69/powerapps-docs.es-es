@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: fba57fb26b023dcce771951953aea2eafa6b28e9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016315"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195252"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>Creación de una aplicación a partir de una plantilla de PowerApps
 Cree una aplicación de manera automática en función de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones y, después, ejecute la aplicación para entender su comportamiento predeterminado.
@@ -24,7 +24,7 @@ Para crear una aplicación a partir de una plantilla, se necesita una cuenta de 
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Crear una aplicación
-1. Inicie sesión en [PowerApps](http://web.powerapps.com).
+1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal de PowerApps](./media/get-started-test-drive/sign-in.png)
 

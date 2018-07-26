@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b2b472ae33bd16761d25fc965f24afc6bb9b957e
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168605"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218427"
 ---
 # <a name="create-an-option-set"></a>Creación de un conjunto de opciones
 
@@ -23,7 +23,7 @@ Los conjuntos de opciones se pueden crear de dos maneras, desde la lista Conjunt
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>Creación de un conjunto de opciones mientras se agrega un campo.
 
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de la entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
@@ -61,7 +61,7 @@ Los conjuntos de opciones se pueden crear de dos maneras, desde la lista Conjunt
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>Creación de un conjunto de opciones desde la lista Conjunto de opciones
 
-1. En [powerapps.com](https://web.powerapps.com), expanda la sección **Datos** y pulse o haga clic en **Conjuntos de opciones** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Conjuntos de opciones** en el panel de navegación de la izquierda.
 
     ![Conjunto de opciones](./media/data-platform-cds-newoptionset/optionsetlist.png "Lista Conjunto de opciones")
 
