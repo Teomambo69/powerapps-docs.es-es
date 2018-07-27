@@ -8,12 +8,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 267480158d7e44afd06962779b98c0468436841a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022617"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195298"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Creación de una aplicación de Excel desde cero
 Cree su propia aplicación desde cero basándose en datos de Excel y en formato de tabla, y agregue luego datos de otros orígenes si lo desea. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
@@ -42,7 +42,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 > Para conocer los conceptos generales, puede utilizar su propio archivo de Excel y seguir este tutorial. No obstante, los datos del archivo de Excel deben tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
-1. Inicie sesión en [PowerApps](http://web.powerapps.com).
+1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal de PowerApps](./media/get-started-create-from-blank/sign-in.png)
 
