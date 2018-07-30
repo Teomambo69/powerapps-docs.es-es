@@ -662,5 +662,8 @@
           href: ./common-data-service/data-platform-restricted-entities.md
     - name: Para desarrolladores
       href: ../developer/common-data-service/TOC.yml
-- name: Common Data Model
+- name: Common Data Service
   href: ../common-data-model/overview.md
+  items:
+    - name: Cómo usar Common Data Service
+      href: ../common-data-model/use-common-data-model.md
