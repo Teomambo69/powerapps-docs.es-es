@@ -1,46 +1,30 @@
 - name: Administrar PowerApps
-  href: index.md
-- name: Inicios rápidos
+  href: admin-guide.md
   items:
-    - name: Creación de un entorno
-      href: create-environment.md
-    - name: Crear una directiva DLP
-      href: create-dlp-policy.md
-    - name: Ver los usuarios activos en el inquilino
-      href: admin-view-user-licenses.md
-    - name: Ver las aplicaciones en los entornos
-      href: admin-view-apps.md
-- name: Descripción
-  items:
-    - name: Introducción a las licencias
-      href: pricing-billing-skus.md
-    - name: Información general sobre los entornos
-      href: environments-overview.md
-    - name: Introducción a los grupos de datos
-      href: introduction-to-data-groups.md
-    - name: Información general sobre las regiones
-      href: regions-overview.md
-- name: Guías de procedimientos
-  items:
-    - name: Comprar PowerApps
-      href: signup-for-powerapps-admin.md
-    - name: Administrar licencias de la organización
-      href: signup-question-and-answer.md
-    - name: Administración de directivas DLP
-      href: prevent-data-loss.md
-    - name: Crear una base de datos
-      href: create-database.md
-    - name: Administrar entornos
-      href: environments-administration.md
-    - name: Configurar la seguridad del entorno
-      href: database-security.md
-    - name: Administrar aplicaciones de la organización
-      href: admin-manage-apps.md
-    - name: Mover una aplicación entre inquilinos o entornos
-      href: environment-and-tenant-migration.md
-    - name: Exportar e importar recursos
-      href: export-import-packages.md
+    - name: Introducción
+      items:
+        - name: ¿Qué función desempeñan los administradores de PowerApps?
+          href: overview-role-powerapps-admin.md
+    - name: Licencias
+      items:
+        - name: Introducción a las licencias
+          href: pricing-billing-skus.md
+        - name: Administración de licencias en la organización
+          href: signup-question-and-answer.md
+        - name: Comprar PowerApps
+          href: signup-for-powerapps-admin.md
+    - name: Administración de PowerApps
+      items:
+        - name: Ver las aplicaciones en los entornos
+          href: admin-view-apps.md
+        - name: Administración de aplicaciones en la organización
+          href: admin-manage-apps.md
+        - name: Mover una aplicación entre inquilinos o entornos
+          href: environment-and-tenant-migration.md
+        - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
+          href: powerapps-powershell.md
     - name: Respuesta a solicitudes de DSR
+      href: powerapps-gdpr-dsr-guide-systemlogs.md
       items:
         - name: Registros generados por el sistema
           href: powerapps-gdpr-dsr-guide-systemlogs.md
@@ -53,9 +37,27 @@
               href: powerapps-gdpr-delete-dsr.md
         - name: CDS para datos de cliente de aplicaciones
           href: common-data-service-gdpr-dsr-guide.md
-        - name: Integración de datos para CDS para aplicaciones
-          href: data-integration-gdpr-dsr-guide.md
-- name: Referencia
-  items:
-    - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
-      href: powerapps-powershell.md
+    - name: Administrar entornos
+      href: environments-administration.md
+      items:
+        - name: Información general sobre los entornos
+          href: environments-overview.md
+        - name: Información general sobre las regiones
+          href: regions-overview.md
+        - name: Creación de un entorno
+          href: create-environment.md
+        - name: Crear una base de datos
+          href: create-database.md
+    - name: Configurar la seguridad del entorno
+      href: database-security.md
+      items:
+        - name: Introducción a los grupos de datos
+          href: introduction-to-data-groups.md
+        - name: Crear una directiva DLP
+          href: create-dlp-policy.md
+        - name: Administración de directivas DLP
+          href: prevent-data-loss.md
+    - name: Administración de suscripciones y cuentas de usuario
+      items:
+        - name: Ver los usuarios activos en el inquilino
+          href: admin-view-user-licenses.md
