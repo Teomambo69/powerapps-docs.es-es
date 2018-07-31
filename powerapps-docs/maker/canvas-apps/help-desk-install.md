@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094780"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195781"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Instalar y configurar el ejemplo Help Desk de PowerApps
 
@@ -36,7 +36,7 @@ Help Desk proporciona una experiencia muy intuitiva para poner en contacto a los
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Inicie sesión](https://web.powerapps.com/) en PowerApps.
+- [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
 - Debe tener una licencia de SharePoint Online válida y permiso para crear listas.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Crear la lista de SharePoint de Help Desk
@@ -140,7 +140,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="create-connections"></a>Crear conexiones
 
-1.  En un explorador web, vaya a https://web.powerapps.com.
+1.  En un explorador web, vaya a [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  En el menú de la izquierda, seleccione **Datos** y luego **Conexiones**.
     

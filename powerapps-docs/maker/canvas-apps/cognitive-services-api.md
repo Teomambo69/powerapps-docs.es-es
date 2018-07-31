@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
 ms.author: anneta
-ms.openlocfilehash: c47ddbbc2d50d05f1d4a913aaf7e9c743d5519e0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6175633b2fbec4e9949882c587916adb349290d4
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020662"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195459"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Uso de Cognitive Services en PowerApps
 En este artículo se muestra cómo compilar una aplicación básica que usa [Text Analytics API de Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). A continuación, le mostraremos cómo crear una aplicación que llama a la API.
@@ -71,7 +71,7 @@ Ahora que Text Analytics API está en funcionamiento, puede conectarse a ella de
 ### <a name="create-the-app-and-add-a-connection"></a>Creación de la aplicación y adición de una conexión
 En primer lugar, cree una aplicación de teléfono vacía y agregue una conexión con el conector de **Text Analytics**. Si necesita más información sobre estas tareas, consulte [Crear una aplicación desde cero](get-started-create-from-blank.md) y [Administración de las conexiones en PowerApps](add-manage-connections.md).
 
-1. En [web.powerapps.com](https://web.powerapps.com), elija **Iniciar desde cero** > ![Icono de aplicación para teléfono](./media/cognitive-services-api/icon-phone-app.png) (teléfono) > **Crear esta aplicación**.
+1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), elija **Iniciar desde cero** > ![Icono de aplicación para teléfono](./media/cognitive-services-api/icon-phone-app.png) (teléfono) > **Crear esta aplicación**.
 
     ![Iniciar desde cero](./media/cognitive-services-api/start-from-blank.png)
 

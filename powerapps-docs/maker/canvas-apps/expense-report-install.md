@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094665"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195735"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Instalar y configurar el ejemplo de informe de gastos de PowerApps
 
@@ -209,7 +209,7 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 
 ## <a name="create-connections"></a>Crear conexiones
 
-1.  En un explorador web, vaya a https://web.powerapps.com.
+1.  En un explorador web, vaya a [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  En el menú de la izquierda, seleccione **Conexiones**.
 

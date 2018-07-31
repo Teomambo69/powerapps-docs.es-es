@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/10/2018
 ms.author: anneta
-ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d5603ffacc0246dcffd1c54ab63b4e404250a7d5
+ms.sourcegitcommit: fc235972d0d4661f55df7a71e2dcedafd42706b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016499"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202307"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
@@ -31,7 +31,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Utilice una imagen personalizada como icono de aplicación**
 
-    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://web.powerapps.com). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
+    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
 
 1. **Copiar y pegar pantallas entre aplicaciones**
 
@@ -71,11 +71,15 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 6. **Ejecución de una aplicación en Windows 8.1**
 
-    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en PowerApps Studio en ese sistema operativo. Sin embargo, todavía puede ejecutar aplicaciones que se abren en  [powerapps.com](https://web.powerapps.com) o con PowerApps Mobile.
+    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en PowerApps Studio en ese sistema operativo. Sin embargo, todavía puede ejecutar aplicaciones que se abren en  [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con PowerApps Mobile.
 
 7. **Nombres de columna con espacios**
 
     Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, PowerApps lo reemplazará por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+
+8. <a name="out-of-memory"></a>**El explorador se está quedando sin memoria**
+
+    Si se queda sin memoria al usar PowerApps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
 
 ## <a name="older"></a>Anteriores
 1. **Cambio de un flujo en una aplicación compartida**
