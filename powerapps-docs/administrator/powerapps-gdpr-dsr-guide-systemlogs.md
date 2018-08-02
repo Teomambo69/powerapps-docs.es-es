@@ -2,18 +2,18 @@
 title: Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service (CDS) for Apps | Microsoft Docs
 description: Tutorial sobre cómo responder solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service (CDS) for Apps
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 18bba11ce747b1e04be6013bf41419c34232865a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 0511022621d891a6e45b27f1440e614df8b105a0
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897257"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349142"
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>Respuesta a solicitudes DSR sobre registros generados por el sistema en PowerApps, Microsoft Flow y Common Data Service for Apps
 Microsoft le ofrece la posibilidad de tener acceso, exportar y eliminar los registros generados por el sistema que se consideren personales en la amplia definición de *datos personales* del Reglamento general de protección de datos (RGDP) de la Unión Europea (UE). Ejemplos de registros generados por el sistema que se consideran personales en el RGPD:
@@ -106,7 +106,7 @@ Para determinar si es o no un usuario de un inquilino administrado o no administ
 1. Abra la dirección URL siguiente en un explorador y asegúrese de reemplazar la dirección de correo electrónico en la dirección URL:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
 
 2. Si es miembro de un **inquilino no administrado**, verá `"IsViral": true` en la respuesta.
-   ```
+  ```
       {
       ...
       "Login": "foobar@unmanagedcontoso.com",
@@ -114,6 +114,6 @@ Para determinar si es o no un usuario de un inquilino administrado o no administ
       "IsViral": **true**,
       ...
       }
-   ```
+  ```
 
 3. En caso contrario, pertenece a un inquilino administrado.

@@ -2,18 +2,18 @@
 title: Introducción a las regiones | Microsoft Docs
 description: Información sobre las regiones en PowerApps
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 818d751a45eee6d746d4f318a98169a771787d92
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7cf52b8f21c5188b799904175f473210fa1b45b4
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445784"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39348889"
 ---
 # <a name="regions-overview-in-powerapps"></a>Introducción a las regiones en PowerApps
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>¿Cómo averiguar dónde se implementa la aplicación?

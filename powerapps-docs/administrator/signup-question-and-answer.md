@@ -2,18 +2,18 @@
 title: Administración de licencias de la organización | Microsoft Docs
 description: Preguntas y respuestas frecuentes acerca de las licencias, la administración y el registro de usuarios a PowerApps en su inquilino de Office 365
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 8a734ef57a3820e38d52ad2bd87a2ab8979c0348
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1f46541fcfe485bf497a59d25432ac1dec8d7b3e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168053"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349786"
 ---
 # <a name="manage-powerapps-licenses-in-your-organization"></a>Administración de licencias de PowerApps de la organización
 En este artículo se describe la forma en que los usuarios de la organización pueden obtener acceso para usar PowerApps y cómo controlar el servicio de PowerApps.

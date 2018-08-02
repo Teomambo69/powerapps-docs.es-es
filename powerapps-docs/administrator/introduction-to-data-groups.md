@@ -2,18 +2,18 @@
 title: Grupos de datos | Microsoft Docs
 description: Tutorial de cómo usar grupos de datos en PowerApps.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 8899a77d73f67a1b437a60218b3536d2989d5b8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6a6217c0a344d0501c8a856b0632397044ceb465
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168329"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349648"
 ---
 # <a name="data-groups"></a>Grupos de datos
 Los grupos de datos son una manera sencilla de clasificar servicios dentro de una [directiva de prevención de pérdida de datos (DLP)](prevent-data-loss.md). Los dos grupos de datos disponibles son el grupo **Business data only** (Solo datos empresariales) y el grupo **No business data allowed** (No se permiten datos empresariales). Las organizaciones pueden determinar libremente qué servicios se colocan en un grupo de datos determinado. Una buena manera de clasificar servicios es colocarlos en grupos, según el impacto sobre la organización. De forma predeterminada, todos los servicios se colocan en el grupo de datos **No business data allowed** (No se permiten datos empresariales). Se administran los servicios en un grupo de datos cuando se crean o modifican las propiedades de una directiva DLP desde el centro de administración.

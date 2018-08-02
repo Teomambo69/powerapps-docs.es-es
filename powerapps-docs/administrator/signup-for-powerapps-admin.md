@@ -2,18 +2,18 @@
 title: Compra de PowerApps para la organización | Microsoft Docs
 description: Tutorial sobre cómo suscribirse a PowerApps como administrador.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4b26c16259a7699f1178641ead8c1b5908106468
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bfba09ace77fb0ab62a4c5b4cb6a01e040f07d2f
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168513"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349441"
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>Compra de PowerApps para la organización
 En este artículo se muestra cómo adquirir PowerApps para su organización como administrador. Puede comprar PowerApps directamente a través del sitio web de PowerApps a través del Centro de administración de Office 365, o a través de su representante de Microsoft o su asociado. En este artículo se describen las opciones de prueba disponibles para PowerApps Plan 1 o Plan 2 y, después, se explica cómo comprar PowerApps Plan 1 o Plan 2 como organización. Para más información, consulte [PowerApps in your organization Q&A](signup-question-and-answer.md) (Preguntas y respuestas sobre PowerApps en su organización).

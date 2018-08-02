@@ -2,18 +2,18 @@
 title: Migración de aplicaciones entre entornos e inquilinos | Microsoft Docs
 description: Tutorial sobre cómo migrar aplicaciones de PowerApps entre entornos e inquilinos
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms-topic: conceptual
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 9a846f3c47111b1b83881ed01026951469b236cc
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 3a4aeda30f8d4f01e2a85e186a769fa19ac29883
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898338"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349602"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migración de aplicaciones entre entornos e inquilinos mediante empaquetado
 Obtenga información sobre cómo migrar recursos de un entorno a otro mediante empaquetado. Estos entornos pueden estar en el mismo inquilino o en varios distintos.
@@ -112,13 +112,13 @@ Desafortunadamente, la importación de un paquete de solución de CDS requiere u
 
 3. Copie la dirección URL desde el explorador, realice los cambios siguientes y, después, vaya a la nueva dirección URL en el explorador:
 
-   * Estructura actual de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/edit.aspx?id={nombre_de_la_solución}
+    * Estructura actual de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/edit.aspx?id={nombre_de_la_solución}
 
-       ![Editar la dirección URL](./media/environment-and-tenant-migration/edit-url.png)
+        ![Editar la dirección URL](./media/environment-and-tenant-migration/edit-url.png)
 
-   * Estructura nueva de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * Estructura nueva de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-       ![Selección del paquete](./media/environment-and-tenant-migration/select-package.png)
+        ![Selección del paquete](./media/environment-and-tenant-migration/select-package.png)
 
 4. Seleccione el archivo de paquete de solución de CDS que quiera importar y complete el asistente.
 

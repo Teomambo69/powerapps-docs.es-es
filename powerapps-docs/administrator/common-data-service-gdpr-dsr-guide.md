@@ -3,18 +3,18 @@ title: Respuesta a solicitudes DSR para datos de cliente de Common Data Service 
 description: Tutorial sobre cómo responder a solicitudes DSR para datos de cliente de Common Data Service (CDS) for Apps
 author: jamesol-msft
 ms.reviewer: paulliew
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218059"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349027"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de Common Data Service for Apps
 
@@ -52,7 +52,7 @@ En este artículo se describen las acciones siguientes:
 
 CDS for Apps y la versión anterior de Common Data Service (CDS) tienen proceso independientes para interactuar con los datos personales.
 
-Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y siga estos pasos:
+Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com) y siga estos pasos:
 
 1. En la lista desplegable **Entorno**, seleccione el entorno.
 2. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
@@ -102,8 +102,8 @@ Puede encontrar los datos personales de los usuarios de CDS for Apps dentro de l
 
 |Recurso | Propósito | Acceso al sitio web | Acceso mediante programación
 | --- | --- | --- | ---
-| Registro de entidad | Conocido como la entidad de usuario del sistema, almacena los datos personales de un usuario. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Historial de auditoría | Permite a los clientes identificar los recursos que los usuarios crearon, accedieron, cambiaron o eliminaron a nivel de entidad. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Registro de entidad | Conocido como la entidad de usuario del sistema, almacena los datos personales de un usuario. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Historial de auditoría | Permite a los clientes identificar los recursos que los usuarios crearon, accedieron, cambiaron o eliminaron a nivel de entidad. | [Centro de administración de PowerApps](https://admin.powerapps.com) | A través de la [API web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>Usuario
 Los datos personales del usuario se almacenan en Azure Active Directory y se sincronizan automáticamente con todos los entornos CDS for Apps. Los administradores del sistema no pueden actualizar estos datos personales directamente en CDS for Apps mientras el usuario está activo&mdash;deben actualizarlos en el Centro de administración de Office 365. Los administradores del sistema pueden agregar datos personales (por ejemplo, atributos personalizados) directamente en CDS for Apps, pero deben administrarlos manualmente.
@@ -199,7 +199,7 @@ En el [Centro de administración de PowerApps](https://admin.powerapps.com/), ha
 
 3. Vaya a **Configuración** > **Seguridad** > **Usuarios** y seleccione **Disabled Users View** (Vista de usuarios deshabilitados).
 
-4. Cree y descargue un archivo de plantilla de Excel de los datos personales del usuario. Consulte [Crear plantilla de Excel nueva](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template) para instrucciones detalladas.
+4. Cree y descargue un archivo de plantilla de Excel de los datos personales del usuario. Consulte [Crear plantilla de Excel nueva](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template) para instrucciones detalladas.
 
 8. Abra el archivo de plantilla de Excel que descargó, quite los datos personales del usuario y guarde el archivo.
 
@@ -308,7 +308,7 @@ Puede encontrar los datos personales de los usuarios de la versión anterior de 
 
 |Recurso | Propósito | Acceso al sitio web |  Acceso mediante programación
 | --- | --- | --- | ---
-|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    No
+|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com) |      No
 
 #### <a name="entity-records"></a>Registros de entidad
 Los datos personales de un usuario se pueden almacenar en cualquier entidad de negocio.
