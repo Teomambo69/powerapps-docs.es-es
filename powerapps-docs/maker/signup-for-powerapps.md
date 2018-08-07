@@ -10,10 +10,10 @@ ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
 ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39195206"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registro para obtener una licencia gratuita para probar PowerApps
