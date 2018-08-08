@@ -1,6 +1,6 @@
 ---
-title: Versión de prueba de las aplicaciones en AppSource para los clientes | Microsoft Docs
-description: Utilice AppSource para compartir aplicaciones con los clientes y genere clientes potenciales para su empresa.
+title: Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource | Microsoft Docs
+description: Utilice AppSource para compartir aplicaciones de lienzo con los clientes y genere clientes potenciales para su empresa.
 author: linhtranms
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6499c0c2a7eb87ff56ec9e248f4a16e8b6c647f9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023698"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470555"
 ---
-# <a name="let-customers-test-drive-your-apps-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones en AppSource
-¿Es un apasionado de la creación de aplicaciones en PowerApps? ¿Tiene una aplicación que le gustaría compartir con los clientes? Ahora se admiten soluciones de versiones de prueba de PowerApps en [AppSource.com](https://appsource.microsoft.com) como una manera de compartir aplicaciones con los clientes y generar clientes potenciales para su empresa.
+# <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource
+
+¿Es un apasionado de la compilación de aplicaciones de lienzo en PowerApps? ¿Quiere compartir una aplicación de lienzo con los clientes? [AppSource.com](https://appsource.microsoft.com) admite soluciones de versión de prueba de PowerApps como una manera de compartir aplicaciones con los clientes y generar clientes potenciales para su empresa.
 
 ## <a name="what-is-a-test-drive-solution"></a>¿Qué es una solución de versión de prueba?
+
 Una solución de versión de prueba permite a sus clientes probar una aplicación real sin registrarse en un plan de PowerApps ni instalar ninguna aplicación. Los clientes simplemente inician sesión en AppSource.com con su cuenta de Azure Active Directory (AAD) y ejecutan la aplicación en un explorador web. Sin la versión de prueba, los clientes solo pueden leer acerca de la aplicación o ver un vídeo que la describe. Con la versión de prueba, los clientes se hacen una idea mejor acerca de la solución y de la funcionalidad de la aplicación. Y tienen una experiencia de uso real de la aplicación. Los clientes no pueden ver cómo está construida la aplicación, por lo que la propiedad intelectual está protegida. Recopilamos y compartimos información de clientes potenciales que han ejecutado la versión de prueba de la aplicación para ayudar en el desarrollo de su negocio.
 
 Este es el ejemplo de la [descripción de una aplicación](https://go.microsoft.com/fwlink/?linkid=848867) en AppSource.com:

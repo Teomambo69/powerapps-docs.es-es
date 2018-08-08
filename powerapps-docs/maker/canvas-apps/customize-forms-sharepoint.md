@@ -1,6 +1,6 @@
 ---
-title: Personalización de formularios | Microsoft Docs
-description: Especifique qué datos se mostrarán, en qué orden y en qué controles.
+title: Personalizar un formulario en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, especifique qué datos se mostrarán en un formulario de aplicación de lienzo, en qué orden y en qué controles.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 14ea731907624f882ae117a09c7f799a25389fe6
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195114"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471452"
 ---
-# <a name="customize-forms-in-powerapps"></a>Personalizar formularios en PowerApps
-Personalice un control **Mostrar formulario** y un control **Editar formulario** para que muestren los datos más importantes y en el orden más intuitivo para ayudar a los usuarios a comprender y actualizar los datos fácilmente.
+# <a name="customize-a-canvas-app-form-in-powerapps"></a>Personalizar un formulario de aplicación de lienzo en PowerApps
+
+En una aplicación de lienzo, personalice un control **Mostrar formulario** y un control **Editar formulario** para que muestren los datos más importantes y en el orden más intuitivo para ayudar a los usuarios a comprender y actualizar los datos fácilmente.
 
 Cada formulario consta de una o más tarjetas, cada una de las cuales muestra datos de una columna determinada del origen de datos. Siga los pasos descritos en este tema para especificar qué tarjetas aparecen en un formulario y subir o bajar las tarjetas dentro de un formulario.
 
 Si no está familiarizado con PowerApps, consulte [Introducción a PowerApps](getting-started.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 [Generar una aplicación](data-platform-create-app.md) desde Common Data Service y, después, [personalizar la galería](customize-layout-sharepoint.md) en esa aplicación.
 
 ## <a name="show-and-hide-cards"></a>Mostrar y ocultar las tarjetas
+
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal del sitio de PowerApps](./media/customize-forms-sharepoint/sign-in.png)

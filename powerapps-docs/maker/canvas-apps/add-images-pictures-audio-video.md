@@ -1,6 +1,6 @@
 ---
-title: Inserción de archivos multimedia en una aplicación y su carga | Microsoft Docs
-description: Aprenda a mostrar los archivos multimedia de una aplicación y a cargarlos en un origen de datos.
+title: Insertar archivos multimedia en una aplicación de lienzo y cargarlos | Microsoft Docs
+description: Aprenda a mostrar los archivos multimedia de una aplicación de lienzo y a cargarlos en un origen de datos.
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,20 +9,23 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 5c6c7b2973f85c1ebc3040e41d83653250599717
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 1b0c830dd5d0fb625bc8ac407bda47023036ed7f
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195022"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470187"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
-En este tema, aprenderá a insertar archivos multimedia en la aplicación, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
+
+En este tema, aprenderá a insertar archivos multimedia en la aplicación de lienzo, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Agregar contenido multimedia desde un archivo o la nube
+
 Puede elegir el tipo de contenido multimedia que desea agregar; por ejemplo, imágenes, vídeo o audio.
 
 1. En la pestaña **Contenido**, seleccione **Multimedia**.

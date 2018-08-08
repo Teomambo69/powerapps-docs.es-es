@@ -1,6 +1,6 @@
 ---
-title: Información acerca de los orígenes de datos | Microsoft Docs
-description: Información de referencia para trabajar con conexiones y orígenes de datos en Microsoft PowerApps.
+title: Comprender los orígenes de datos para aplicaciones de lienzo | Microsoft Docs
+description: Información de referencia para trabajar con conexiones y orígenes de datos en aplicaciones de lienzo.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,33 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a4dd3d2d21aa8e4f8501c9bc9812ba6658683f03
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020901"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470394"
 ---
-# <a name="understand-data-sources-in-powerapps"></a>Información acerca de los orígenes de datos en PowerApps
-La mayoría de las aplicaciones de PowerApps utilizan información externa almacenada en servicios en la nube denominados **Orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
+# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Comprender los orígenes de datos para aplicaciones de lienzo en PowerApps
+
+En PowerApps, la mayoría de las aplicaciones de lienzo utilizan información externa almacenada en servicios en la nube denominados **Orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
 
 En este artículo se describen los diferentes tipos de orígenes de datos y cómo trabajar con orígenes de datos de tabla.
 
-Es fácil crear una aplicación que realice las operaciones básicas de lectura y escritura a un origen de datos. Pero a veces desea más control sobre cómo fluyen los datos dentro y fuera de la aplicación.  Este artículo se describe cómo proporcionan más control las funciones **[Patch](functions/function-patch.md)**, **[DataSourceInfo](functions/function-datasourceinfo.md)**, **[Validate](functions/function-validate.md)** y **[Errores](functions/function-errors.md)**.
+Resulta muy fácil crear una aplicación que realice operaciones básicas de lectura y escritura en un origen de datos. Pero a veces desea más control sobre cómo fluyen los datos dentro y fuera de la aplicación.  Este artículo se describe cómo proporcionan más control las funciones **[Patch](functions/function-patch.md)**, **[DataSourceInfo](functions/function-datasourceinfo.md)**, **[Validate](functions/function-validate.md)** y **[Errores](functions/function-errors.md)**.
 
 ## <a name="kinds-of-data-sources"></a>Tipos de orígenes de datos
+
 Los orígenes de datos pueden estar conectados a un servicio en la nube, o bien pueden ser locales a una aplicación.
 
 ### <a name="connected-data-sources"></a>Orígenes de datos conectados
-Los orígenes de datos más frecuentes son las **tablas**, que se pueden usar tanto para recuperar como para guardar información. Las **conexiones** con los orígenes de datos se pueden usar para leer y escribir datos en libros de Microsoft Excel, listas de SharePoint, tablas SQL y muchos otros formatos, que pueden almacenarse en servicios en la nube, como OneDrive para la Empresa, DropBox, SQL Server, etc.
+
+Los orígenes de datos más frecuentes son las **tablas**, que se pueden usar tanto para recuperar como para guardar información. Puede utilizar las **conexiones** con los orígenes de datos para leer y escribir información en libros de Microsoft Excel, listas de SharePoint, tablas SQL y muchos otros formatos, que pueden guardarse en servicios en la nube tales como OneDrive para la Empresa, DropBox y SQL Server.
 
 Los orígenes de datos distintos de las tablas incluyen el correo electrónico, los calendarios, Twitter y las notificaciones, pero en este artículo no se habla de otros tipos de orígenes de datos.
 
 ### <a name="local-data-sources"></a>Orígenes de datos locales
+
 Con los controles **[Galería](controls/control-gallery.md)**, **[Formulario de presentación](controls/control-form-detail.md)** y **[Formulario de edición](controls/control-form-detail.md)**, resulta muy fácil crear una aplicación que lea y escriba datos en un origen de datos.  Para empezar, lea el artículo [Understand data forms](working-with-forms.md) (Introducción a los formularios de datos).  
 
 Cuando se solicita a PowerApps que cree una aplicación a partir de los datos, se utilizan estos controles. En segundo plano, la aplicación utiliza una tabla interna para almacenar y manipular los datos procedentes del origen de datos.
@@ -39,6 +43,7 @@ Cuando se solicita a PowerApps que cree una aplicación a partir de los datos, s
 Un tipo especial de origen de datos es la [colección](working-with-data-sources.md#collections), que está en la propia aplicación y no tiene el respaldo de una conexión a un servicio en la nube, por lo que la información no se puede compartir entre los distintos dispositivos de un mismo usuario ni entre usuarios. Las colecciones se pueden cargar y guardar localmente.
 
 ### <a name="kinds-of-tables"></a>Tipos de tablas
+
 Las tablas internas de una aplicación de PowerApps son valores fijos, como un número o una cadena son un valor. Las tablas internas no se almacenan en ningún lugar, solo existen en la memoria de la aplicación. La estructura y los datos de una tabla no se pueden modificar directamente. En su lugar, lo que puede hacer es crear una nueva tabla a través de una fórmula: dicha fórmula se usa para hacer una copia modificada de la tabla original.
 
 Las tablas externas se almacenan en un origen de datos para su posterior recuperación y uso compartido.  PowerApps proporciona "conexiones" para leer y escribir los datos almacenados.  En una conexión se puede acceder a varias tablas de información.  Seleccione las tablas que desea utilizar en la aplicación y cada uno de ellas pasará a ser un *origen de datos* independiente.  

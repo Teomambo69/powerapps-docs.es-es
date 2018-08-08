@@ -1,6 +1,6 @@
 ---
-title: Transformación de formularios de InfoPath a PowerApps | Microsoft Docs
-description: Empiece a transformar formularios de InfoPath a PowerApps, obtenga información sobre los escenarios habituales de InfoPath y descubra cómo crearlos en PowerApps.
+title: Transformar el formulario de InfoPath en una aplicación de lienzo | Microsoft Docs
+description: Comience a transformar su formulario InfoPath a PowerApps con información sobre escenarios comunes y sobre cómo crear estos elementos en una aplicación de lienzo.
 author: richardriley99
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: a249d0a9096117badfe3e4eb7ad9dcf6b75662a1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094734"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470118"
 ---
-# <a name="transform-your-infopath-forms-to-powerapps"></a>Transformación de Formularios de InfoPath a PowerApps
+# <a name="transform-your-infopath-form-to-powerapps"></a>Transformar el formulario de InfoPath en PowerApps
 
 ¿Ha creado grandes contenidos en InfoPath, pero le gustaría ofrecerlos en una plataforma más sólida?
 
 ## <a name="key-advantages-of-powerapps-over-infopath"></a>Principales ventajas de PowerApps con respecto a InfoPath
 
-Si es como la mayoría de los usuarios avanzados de InfoPath, llevará ya un tiempo utilizando un único conjunto de herramientas para crear sus formularios. Si bien está satisfecho con los formularios que ha creado, sabe que tienen sus limitaciones: el estilo &quot;clásico&quot;, una experiencia para dispositivos móviles no del todo satisfactoria, la incerteza de su viabilidad futura y la imposibilidad de conectar los formularios a otros servicios sin necesidad de escribir código.
+Como la mayoría de los usuarios avanzados de InfoPath, llevará cierto tiempo usando un único conjunto de aptitudes para crear sus formularios. Está satisfecho con los formularios, pero también sabe que tienen sus limitaciones: el estilo &quot;clásico&quot;, una experiencia para dispositivos móviles no del todo satisfactoria, la incertidumbre de su viabilidad futura y la imposibilidad de conectar los formularios a otros servicios sin necesidad de escribir código.
 
-El equipo de PowerApps es consciente de estos y otros retos. Por eso han trabajado duramente para incorporar una mejor experiencia para el usuario en PowerApps. El objetivo es permitirle crear aplicaciones en las que se puedan aprovechar los conocimientos empresariales y tecnológicos existentes, es decir, ofrecerle PowerApps para compilar e implementar rápidamente las soluciones empresariales adecuadas sin escribir código.
+El equipo de PowerApps ha sabido de estos y otros muchos desafíos. Ha trabajado arduamente para incorporar una mejor experiencia y permitirle crear aplicaciones de lienzo aprovechando sus conocimientos empresariales y tecnológicos existentes. Mediante PowerApps, se pueden compilar e implementar rápidamente las soluciones empresariales adecuadas sin escribir código.
 
 **Eficacia futura con PowerApps**  
 PowerApps es una plataforma de software como servicio (SaaS) que está diseñada para permitir la compilación rápida de aplicaciones de elevada funcionalidad que se pueden implementar en la Web, en SharePoint, en Dynamics 365, en Teams, en Power BI o en un dispositivo móvil sin ningún esfuerzo extra. Y, al ser tan fáciles de implementar (basta con facilitar la dirección URL a la aplicación publicada), también son muy fáciles de actualizar.

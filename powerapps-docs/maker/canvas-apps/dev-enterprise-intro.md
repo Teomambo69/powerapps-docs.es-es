@@ -1,6 +1,6 @@
 ---
 title: PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes | Microsoft Docs
-description: Una introducción al desarrollo de soluciones en PowerApps.
+description: Introducción al desarrollo de soluciones en PowerApps.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 79f0e852b62c41267224a2b3289b24fec65583a2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 81949441e8fbb7881d21820e8bd4d5d790648fc2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023859"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470831"
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes
 
-Los desarrolladores tienen la posibilidad de ampliar PowerApps y crear soluciones aún más potentes para las organizaciones y clientes.
+Los desarrolladores tienen la posibilidad de ampliar aplicaciones de lienzo en PowerApps, lo que habilita soluciones aún más potentes para las organizaciones y los clientes.
 
 ## <a name="powerapps-for-enterprise-developers"></a>PowerApps para desarrolladores empresariales
 

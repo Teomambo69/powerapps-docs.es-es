@@ -1,6 +1,6 @@
 ---
-title: Creación de una aplicación a partir de una plantilla | Microsoft Docs
-description: Instrucciones paso a paso para crear una aplicación automáticamente en función de una plantilla de PowerApps.
+title: Crear una aplicación a partir de una plantilla | Microsoft Docs
+description: Instrucciones paso a paso para crear una aplicación de lienzo automáticamente a partir de una plantilla de PowerApps.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,21 +9,23 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8b750760ab10c33d17f0e73f8b90a59e6a7b84f7
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195252"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471245"
 ---
-# <a name="create-an-app-from-a-powerapps-template"></a>Creación de una aplicación a partir de una plantilla de PowerApps
-Cree una aplicación de manera automática en función de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones y, después, ejecute la aplicación para entender su comportamiento predeterminado.
+# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Crear una aplicación a partir de una plantilla en PowerApps
+
+Cree automáticamente una aplicación de lienzo a partir de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones, y luego ejecute la aplicación para reconocer su comportamiento predeterminado.
 
 Para crear una aplicación a partir de una plantilla, se necesita una cuenta de almacenamiento en la nube (por ejemplo, DropBox, OneDrive o Google Drive) para almacenar los datos de ejemplo de la plantilla.
 
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Crear una aplicación
+
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     ![Página principal de PowerApps](./media/get-started-test-drive/sign-in.png)

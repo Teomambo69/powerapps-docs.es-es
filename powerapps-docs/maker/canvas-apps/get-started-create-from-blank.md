@@ -1,5 +1,6 @@
 ---
-title: Creación de una aplicación de Excel desde cero | Microsoft Docs
+title: Crear una aplicación de lienzo desde cero a partir de datos de Excel | Microsoft Docs
+description: En este tutorial, creará una aplicación de lienzo de dos pantallas para que los usuarios puedan crear, editar y eliminar registros en un archivo de Excel.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dafd6e4aafdc8f4709d25b9de8e6b997665c3d4a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195298"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469853"
 ---
-# <a name="create-an-excel-app-from-scratch"></a>Creación de una aplicación de Excel desde cero
-Cree su propia aplicación desde cero basándose en datos de Excel y en formato de tabla, y agregue luego datos de otros orígenes si lo desea. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
+# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Crear una aplicación de lienzo desde cero a partir de datos de Excel
+
+Cree su propia aplicación de lienzo desde cero a partir de datos de Excel, en formato de tabla, y agregue luego datos de otros orígenes si quiere. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 Para seguir exactamente los pasos de este tutorial, primero cree un archivo de Excel con estos datos de ejemplo.
 
 1. Copie estos datos y péguelos en un archivo de Excel.

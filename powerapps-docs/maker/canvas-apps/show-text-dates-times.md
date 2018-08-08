@@ -1,6 +1,6 @@
 ---
-title: Visualización de texto y aplicación de formato a una fecha u hora | Microsoft Docs
-description: Agregar fechas y horas y darles formato con PowerApps
+title: Mostrar texto, fechas y horas en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, muestre texto, fechas y horas en una aplicación de lienzo.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: d6f88534b4839381037243400ef69f292df8fb97
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8f4bf8908b8e83fe5976a52356db163cbb3a9813
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195712"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470693"
 ---
-# <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Mostrar texto y dar formato a fechas y horas en PowerApps
-Agregue fechas y horas y deles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
+# <a name="show-text-dates-and-times-in-powerapps"></a>Mostrar texto, fechas y horas en PowerApps
+En PowerApps, agregue fechas y horas a una aplicación de lienzo y asígneles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
 
 Por ejemplo, agregue datos de usuarios sobre operaciones con acciones o reuniones con clientes, de un origen externo o de otra aplicación creada en PowerApps. Si esos datos incluyen horas detalladas hasta el milisegundo, redondéelas al minuto más cercano para simplificarlas. Calcule cuántos días quedan hasta un hito importante. Si desea programar reuniones con los clientes cada cinco días, calcule esas fechas automáticamente. Si el 10 de mayo de 1985 está almacenado en campos independientes para el día, el mes y el año, consolide esos campos en un solo valor. También puede dividir cada fecha en valores independientes si su aplicación los administra por separado.
 

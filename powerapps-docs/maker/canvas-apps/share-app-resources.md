@@ -1,6 +1,6 @@
 ---
-title: Uso compartido de los recursos utilizados en la aplicación | Microsoft Docs
-description: Comprender cómo se comparten los recursos usados en su aplicación cuando se comparte una aplicación
+title: Compartir recursos utilizados en la aplicación de lienzo | Microsoft Docs
+description: Comprenda cómo compartir recursos que su aplicación de lienzo usa en PowerApps.
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 09d4f26139ae33195c666a2eb71d70e02b035f69
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 881a0eb85d252131d6249c171c95c0711e4887d4
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194907"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471406"
 ---
-# <a name="share-app-resources"></a>Compartir los recursos de la aplicación
-Antes de [compartir una aplicación](share-app.md), tenga en cuenta los tipos de recursos en los que se basa, por ejemplo, uno o varios de los siguientes:
+# <a name="share-canvas-app-resources-in-powerapps"></a>Compartir recursos de aplicaciones de lienzo en PowerApps
+
+Antes de [compartir una aplicación de lienzo](share-app.md), tenga en cuenta los tipos de recursos en los que se basa, por ejemplo, uno o varios de los siguientes:
 
 * una conexión a un origen de datos
 * una puerta de enlace de datos local
@@ -30,6 +31,7 @@ Algunos de estos recursos se comparten automáticamente cuando se comparte la ap
 También puede compartir las conexiones, los conectores personalizados y la puerta de enlace de datos local con toda la organización.
 
 ## <a name="connections"></a>Conexiones
+
 Algunos tipos de conexiones, como SQL Server, se comparten automáticamente, pero otras requieren que los usuarios creen sus propias conexiones a los orígenes de datos de la aplicación.
 
 En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), puede determinar si una conexión se compartirá automáticamente y puede actualizar los permisos de uso compartido. En la barra de navegación izquierda, haga clic o pulse **Manage** (Administrar), haga clic o pulse **Connections** (Conexiones) y luego haga clic o pulse una conexión. Si aparece la pestaña **Share** (Recurso compartido), la conexión se compartirá automáticamente.

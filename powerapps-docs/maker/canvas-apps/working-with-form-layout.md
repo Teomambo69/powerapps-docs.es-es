@@ -1,6 +1,6 @@
 ---
-title: Información sobre el diseño de formularios de datos | Microsoft Docs
-description: Cree atractivos diseños de formularios con filas y columnas.
+title: Comprender el diseño de formularios de datos para aplicaciones de lienzo | Microsoft Docs
+description: En PowerApps, cree atractivos diseños de formularios en aplicaciones de lienzo mediante filas y columnas.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 050e665a7a5c2a05ab9abfc989134028d303da4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7676c2d93eb5bbf55620a4d36f1f4818d52472d0
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017741"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470624"
 ---
-# <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Información sobre el diseño de formularios de datos en Microsoft PowerApps
-En PowerApps, puede crear fácilmente formularios que sean a la vez atractivos y eficientes. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
+# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Comprender el diseño de formularios de datos para aplicaciones de lienzo en PowerApps
+
+Cree fácilmente un formulario atractivo y eficaz al compilar una aplicación de lienzo en PowerApps. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
 
 ![Pedido de ventas de ejemplo](./media/working-with-form-layout/sales-order.png)
 
 En este tutorial, se le guiará por los pasos necesarios para crear un formulario. También se examinarán algunos temas avanzados como el cambio de tamaño dinámico de campos para llenar el espacio disponible.
 
 ## <a name="before-you-start"></a>Antes de comenzar
+
 Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automáticamente), lo más recomendable es [compilar una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
 
 ## <a name="add-a-gallery"></a>Agregar una galería
+
 1. Cree una aplicación para tableta desde cero.
-   
+
     Todo lo que se describe en este tema aquí también se aplica a los diseños para teléfono, pero las aplicaciones de teléfono suelen tener solo una columna vertical.
 2. Agregue la entidad **Pedido de ventas** en [Common Data Service](../common-data-service/data-platform-intro.md) como origen de datos de la aplicación.
-   
+
     Fuera de este tutorial, puede utilizar cualquier origen de datos, incluidas las listas de SharePoint y las tablas de Excel.
 3. Agregue un control **Galería** vertical y en su propiedad **Elementos**, seleccione **"Sales order"**.
    

@@ -1,6 +1,6 @@
 ---
 title: Integración de PowerApps tanto en sitios web como en otros servicios | Microsoft Docs
-description: Inserte aplicaciones en sitios web y en otros servicios.
+description: Inserte aplicaciones de lienzo en sitios web y otros servicios.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: ed0863d8d7987e7e7f129a9804b35e00e76aad36
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e48da773f34eb2abedd65c3ea88aab1bb184da02
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023813"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470785"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integración de PowerApps tanto en sitios web como en otros servicios
-Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones en un iframe para poder integrarlas tanto en sitios web como en otros servicios, como Power BI o SharePoint.
+Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones de lienzo en un iframe para poder integrarlas en sitios web y otros servicios, como Power BI o SharePoint.
 
 En este tema se muestra cómo establecer los parámetros para la inserción de aplicaciones y, después, se instará la aplicación Asset Ordering en un sitio web.
 

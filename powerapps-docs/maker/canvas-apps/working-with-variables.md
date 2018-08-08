@@ -1,6 +1,6 @@
 ---
-title: Descripción de las variables | Microsoft Docs
-description: Información de referencia para trabajar con estado, variables de contexto y colecciones
+title: Comprender las variables de aplicaciones de lienzo | Microsoft Docs
+description: Información de referencia para trabajar con estado, variables de contexto y colecciones en aplicaciones de lienzo
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: b5986c927b75ed7a6e38af913cbfb9877121d0a5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: db7e770b2f2e7fa974dbf25a7a7fecf5b8229aa9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017833"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469934"
 ---
-# <a name="understand-variables-in-powerapps"></a>Descripción de las variables en PowerApps
-Si ha usado otra herramienta de programación como Visual Basic o JavaScript, probablemente se pregunte: **¿dónde están las variables?** PowerApps es ligeramente diferente y requiere otro enfoque. En lugar de buscar una variable, pregúntese lo siguiente: **¿qué haría en Excel?**
+# <a name="understand-canvas-app-variables-in-powerapps"></a>Comprender las variables de aplicaciones de lienzo en PowerApps
+
+Si ha usado otra herramienta de programación como Visual Basic o JavaScript, probablemente se pregunte: **¿dónde están las variables?** PowerApps es ligeramente diferente y requiere otro enfoque. En lugar de buscar una variable al compilar una aplicación de lienzo, pregúntese lo siguiente: **¿qué haría en Excel?**
 
 En otras herramientas, lo más probable es que haya realizado explícitamente un cálculo y haya almacenado el resultado en una variable. Pero PowerApps y Excel recalculan automáticamente las fórmulas cuando los datos de entrada cambian, por lo que normalmente no tendrá que crear ni actualizar las variables. Si adopta este enfoque siempre que sea posible, podrá crear, comprender y mantener la aplicación más fácilmente.
 
@@ -26,6 +27,7 @@ En algunos casos deberá usar variables en PowerApps, que amplía el modelo de E
 En general debe evitar el uso de variables, pero a veces solo una variable puede habilitar la experiencia que busca.
 
 ## <a name="translate-excel-into-powerapps"></a>Traducir Excel a PowerApps
+
 ### <a name="excel"></a>Excel
 Revisemos el funcionamiento de Excel. Una celda puede contener un valor, como un número o una cadena, o una fórmula basada en los valores de otras celdas. Cuando el usuario introduce un valor diferente en una celda, Excel recalcula automáticamente las fórmulas que dependen del valor nuevo. No hace falta realizar ningún tipo de programación para habilitar este comportamiento.
 

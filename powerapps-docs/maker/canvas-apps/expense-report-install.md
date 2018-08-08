@@ -1,6 +1,6 @@
 ---
-title: Instalar y configurar el ejemplo de informe de gastos de PowerApps | Microsoft Docs
-description: Instrucciones paso a paso para instalar y configurar un ejemplo de informe de gastos de PowerApps.
+title: Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo | Microsoft Docs
+description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de informe de gastos en aplicaciones de lienzo.
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195735"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470049"
 ---
-# <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Instalar y configurar el ejemplo de informe de gastos de PowerApps
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
-Instrucciones paso a paso para instalar y configurar un ejemplo de informe de gastos de PowerApps.
+Instrucciones paso a paso para instalar y configurar el ejemplo de informe de gastos.
 
 Tiempo estimado para completar estos pasos: **10-15 minutos**
 
-En el vídeo siguiente puede ver una demostración de este proceso.
+En este vídeo puede ver una demostración de este proceso.
 
-[![Vídeo de instalación del informe de gastos](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
+[![Expense Report install Video](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw) (Vídeo de instalación del informe de gastos)
 
-## <a name="expense-report-powerapps-sample-overview"></a>Información general sobre el ejemplo de informe de gastos de PowerApps
+## <a name="overview-of-the-sample"></a>Información general sobre el ejemplo
+
 Mantenga un seguimiento de los informes de gastos desde que se envían hasta que se aprueban. Registre las partidas como una acumulación de gastos individuales y envíelos para su aprobación cuando estén listos. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial del informe de gastos de PowerApps](./media/expense-report-install/expense-report-powerapp.png)

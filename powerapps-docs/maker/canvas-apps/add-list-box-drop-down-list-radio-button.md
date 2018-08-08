@@ -1,6 +1,6 @@
 ---
-title: Adición de un cuadro de lista, una lista desplegable y botones de selección | Microsoft Docs
-description: Creación o configuración de opciones de selección múltiple en PowerApps
+title: Agregar un cuadro de lista, una lista desplegable y botones de radio a una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, cree o configure opciones de selección múltiple en una aplicación de lienzo.
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: ecdd1cc5aa9ccbad7c2973f8ad899b213dcd96f3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b4988157a8f194f7b1148cff79de1b5ce44add14
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023836"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471038"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Adición de un cuadro de lista, una lista desplegable o botones de selección
-PowerApps incluye opciones de selección múltiple y de selección única, como un cuadro de lista, una lista desplegable y botones de selección. En este tema, añadiremos estos controles y usaremos una fórmula de **Tabla** para crear las listas. Cuando se selecciona un elemento de la lista, se actualizan otros controles.
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>Agregar un cuadro de lista, una lista desplegable y botones de radio a una aplicación de lienzo en PowerApps
+
+PowerApps incluye opciones de selección múltiple y única para aplicaciones de lienzo, como un cuadro de lista, una lista desplegable y botones de radio. En este tema, añadiremos estos controles y usaremos una fórmula de **Tabla** para crear las listas. Cuando se selecciona un elemento de la lista, se actualizan otros controles.
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="add-a-list-box"></a>Adición de un cuadro de lista
+
 1. En la pestaña **Insertar**, seleccione **Controles** y, a continuación, seleccione **Cuadro de lista**:  
 
     ![][2]  

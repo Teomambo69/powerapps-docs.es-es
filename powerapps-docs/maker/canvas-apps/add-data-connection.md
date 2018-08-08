@@ -1,6 +1,6 @@
 ---
-title: Adición de una conexión de datos en una aplicación | Microsoft Docs
-description: Adición de una conexión de datos en una aplicación existente o en una aplicación en blanco
+title: Agregar una conexión de datos en una aplicación de lienzo | Microsoft Docs
+description: Agregue una conexión de datos en una aplicación de lienzo existente o en una aplicación en blanco.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: bf53c71a5dfbbfecbf6a094f26c9866e7f94f84d
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195045"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471061"
 ---
-# <a name="add-a-data-connection-in-powerapps"></a>Adición de una conexión de datos en PowerApps
-En PowerApps, añada una conexión de datos a una aplicación existente o a una que se cree desde cero. La aplicación puede conectarse a SharePoint, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
+# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Agregar una conexión de datos a una aplicación de lienzo en PowerApps
+
+En PowerApps, agregue una conexión de datos a una aplicación de lienzo existente o a una que se cree desde cero. La aplicación puede conectarse a SharePoint, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
 
 Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar la información del origen de datos de la aplicación, como en estos ejemplos:
 
@@ -26,6 +27,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 * Conéctese a SQL Server y actualice una tabla desde la aplicación.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 
 ## <a name="add-a-data-source"></a>Agregar un origen de datos

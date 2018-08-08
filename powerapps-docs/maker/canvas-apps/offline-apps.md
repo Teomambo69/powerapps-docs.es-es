@@ -1,6 +1,6 @@
 ---
-title: Desarrollo de aplicaciones que puedan ejecutarse sin conexión | Microsoft Docs
-description: Cree aplicaciones que puedan ejecutarse sin conexión para que los usuarios sean productivos, independientemente de la conexión.
+title: Desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión | Microsoft Docs
+description: Desarrolle aplicaciones de lienzo que puedan ejecutarse sin conexión para que los usuarios sean productivos, independientemente de la conexión.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023146"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39471222"
 ---
-# <a name="develop-offline-capable-apps-with-powerapps"></a>Desarrollar aplicaciones que puedan ejecutarse sin conexión con PowerApps
-Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando hay conectividad limitada o no hay ninguna conectividad. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones que puedan ejecutarse sin conexión. Podrá:
+# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>Desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión con PowerApps
 
-* Iniciar la aplicación móvil de PowerApps cuando esté sin conexión.
-* Ejecutar las aplicaciones que desarrolle cuando esté sin conexión.
+Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando no hay conectividad o bien esta es limitada. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión. Podrá:
+
+* Iniciar PowerApps Mobile cuando esté sin conexión.
+* Ejecutar aplicaciones que desarrolle cuando esté sin conexión.
 * Determinar si una aplicación está sin conexión, en línea o en una conexión de uso medido mediante el objeto de señal [conexión](../canvas-apps/functions/signals.md#connection).
 * Usar [colecciones](../canvas-apps/create-update-collection.md) y aprovechar funciones como [LoadData y SaveData](../canvas-apps/functions/function-savedata-loaddata.md) para el almacenamiento de datos básico cuando esté sin conexión.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Cómo crear aplicaciones que puedan ejecutarse sin conexión
+
 Lo primero que hay que pensar en escenarios sin conexión es cómo trabajan las aplicaciones con los datos. Las aplicaciones en PowerApps tienen acceso a los datos principalmente a través de un conjunto de [conectores](../canvas-apps/connections-list.md) que proporciona la plataforma, como SharePoint, Office 365 y Common Data Service. También puede crear conectores personalizados que permiten a las aplicaciones tener acceso a cualquier servicio que proporcione un punto de conexión REST. Podría tratarse de una API web o un servicio como Azure Functions. Todos estos conectores usan HTTPS a través de Internet, lo que significa que los usuarios deben estar en línea para acceder a los datos y otras funcionalidades que ofrece un servicio.
 
 ![Aplicación de PowerApps con conectores](./media/offline-apps/online-app.png)
@@ -37,7 +39,7 @@ Para centrarnos en los aspectos del desarrollo de aplicaciones sin conexión, mo
 
 De forma general, la aplicación hace lo siguiente:
 
-1. En el inicio de la aplicación (en función de la propiedad **AlEstarVisible** de la primera pantalla):
+1. En el inicio de la aplicación (en función de la propiedad **OnVisible** de la primera pantalla):
 
    * Si el dispositivo está en línea, se accede directamente al conector de Twitter para recuperar los datos y se rellena una colección con esos datos.
    * Si el dispositivo está sin conexión, se cargan los datos desde un archivo de caché local mediante [LoadData](../canvas-apps/functions/function-savedata-loaddata.md).

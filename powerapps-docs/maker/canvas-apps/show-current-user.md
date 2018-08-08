@@ -1,6 +1,6 @@
 ---
-title: Visualización de detalles sobre el usuario actual | Microsoft Docs
-description: Insertar la función User para mostrar el nombre y la dirección de correo electrónico del usuario con la sesión iniciada en PowerApps
+title: Mostrar detalles sobre el usuario actual en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, muestre el nombre y la dirección de correo electrónico del usuario que inició sesión en una aplicación de lienzo.
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 53d235a54aca1523cf243a315f5309bced1f15a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016269"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471199"
 ---
-# <a name="show-information-about-a-powerapps-user"></a>Mostrar información sobre un usuario de PowerApps
-La función User puede mostrar el nombre completo, la dirección de correo electrónico y la imagen asociada con el usuario que ha iniciado sesión. Puede utilizar esta información para rellenar automáticamente un formulario.
+# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Mostrar información sobre un usuario de PowerApps en una aplicación de lienzo
+
+En PowerApps, muestre el nombre completo, la dirección de correo electrónico y la imagen asociada al usuario que inició sesión en una aplicación de lienzo. Puede utilizar esta información, por ejemplo, para rellenar automáticamente un formulario.
 
 Por ejemplo, puede utilizar esta característica para:
 
@@ -30,6 +31,7 @@ Básicamente, puede usar la característica en cualquier lugar en el que los usu
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="show-user-details"></a>Mostrar los detalles del usuario
+
 1. En la pestaña **Insertar**, haga clic o pulse en **Multimedia** y, a continuación, en **Image**.
    
    ![][2]

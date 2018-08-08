@@ -1,28 +1,28 @@
 ---
-title: Inicio rápido para crear un entorno | Microsoft Docs
+title: Creación de un entorno | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo crear un entorno
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 857c080ff3b8205b9c74099954cd5156697deb77
-ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
+ms.author: jimholtz
+ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37026220"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349257"
 ---
-# <a name="quickstart-create-an-environment"></a>Inicio rápido: Creación de un entorno
+# <a name="create-an-environment"></a>Creación de un entorno
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirve como contenedor para separar aplicaciones que pueden tener otros roles, requisitos de seguridad o públicos de destino. PowerApps crea automáticamente un único entorno predeterminado para cada inquilino, que se comparte entre todos los usuarios de ese inquilino.
 
 Cada entorno puede tener una o ninguna base de datos de Common Data Service, lo que proporciona almacenamiento para las aplicaciones. Cuando los usuarios crean una aplicación en un entorno, esa aplicación se puede conectar a cualquier origen de datos, incluidas las conexiones, las puertas de enlace y los flujos. Pero solo se permite que la aplicación se conecte a las bases de datos de Common Data Service en ese mismo entorno. La forma elegida para aprovechar los entornos depende de la organización y de las aplicaciones que se intentan compilar. Para más información, consulte [Environments overview](environments-overview.md) (Información general de los entornos).
 
-En este tutorial, obtendrá información sobre cómo crear un entorno y una base de datos para ese entorno.
+En este tutorial, aprenderá a crear un entorno y una base de datos para el entorno.
 
 ## <a name="prerequisites"></a>Requisitos previos
- Para seguir este tutorial rápido, se requieren los elementos siguientes:
+ Para seguir este tema se requieren los elementos siguientes:
  * Licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
  * Los permisos Administrador de entorno de PowerApps, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
@@ -38,6 +38,8 @@ Inicie sesión en el Centro de administración en [https://admin.powerapps.com](
     ![Archivo y Compartir](./media/create-environment/new-environment-dialog.png)
 3. Una vez creado el entorno, recibirá un mensaje de confirmación en el cuadro de diálogo y se le pedirá que cree una base de datos. Pulse o haga clic en **Crear base de datos** para habilitar el acceso a Common Data Service.
 
+    **Nota:** En la actualidad, solo se puede crear una base de datos en la región principal Inquilino de Azure Active Directory.
+
     ![Archivo y Compartir](./media/create-environment/create-database-dialog.png)
 4. Seleccione la moneda y el idioma de los datos almacenados en la base de datos. No se puede cambiar la moneda ni el lenguaje una vez creada la base de datos. Cuando haya terminado, pulse o haga clic en **Crear base de datos**.
 
@@ -50,7 +52,7 @@ Inicie sesión en el Centro de administración en [https://admin.powerapps.com](
     Pulse o haga clic en el entorno para ver los detalles.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha obtenido información sobre cómo crear un entorno y una base de datos para ese entorno. A continuación, obtendrá información cómo administrar los entornos de la organización.
+En este tema, ha aprendido a crear un entorno y una base de datos para ese entorno. A continuación, obtendrá información cómo administrar los entornos de la organización.
 
 > [!div class="nextstepaction"]
 > [Administración de entornos en PowerApps](environments-administration.md)

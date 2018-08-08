@@ -1,6 +1,6 @@
 ---
-title: Creación de una relación entre listas de SharePoint a través de un campo de búsqueda | Microsoft Docs
-description: Cree una relación entre listas de SharePoint mediante el uso de un campo de búsqueda.
+title: Crear una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, cree una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo.
 author: skjerland
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 342fcc36fb8dba9cfaa42c94089329ad19501af8
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9ad61bdf115a79fe8284dad520a2e9710a59648b
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194962"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470532"
 ---
-# <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda
-En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con campos de búsqueda.
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda en PowerApps
+
+En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con un campo de búsqueda en una aplicación de lienzo.
 
 ## <a name="overview"></a>Información general
+
 SharePoint proporciona dos tipos de campos de búsqueda:
 
 * **Búsqueda**: vincula a otra lista: por ejemplo, una lista *Orders* puede tener un campo de búsqueda que vincule a los clientes de una lista *Customer*;
@@ -27,7 +29,8 @@ SharePoint proporciona dos tipos de campos de búsqueda:
 
 En este tutorial, compilará una aplicación que usa estos tipos de campos de búsqueda.
 
-### <a name="what-do-you-use-lookup-fields-for"></a>¿Para qué se usan los campos de búsqueda?
+### <a name="why-use-a-lookup-field"></a>¿Por qué usar un campo de búsqueda?
+
 Los datos de una empresa son numerosos y complejos. Los datos de una lista de SharePoint a menudo están relacionados con los de otra lista. Los campos de búsqueda son la principal forma de unir dichos datos empresariales.
 
 Por ejemplo, podría tener una lista **Orders** que tenga un campo de búsqueda que vincule a una lista **Customers** para mostrar el cliente que realizó el pedido. El campo de búsqueda de la lista **Orders** también permite obtener otros datos de la lista **Customers**. También podría usar un campo de búsqueda para conectar la lista **Orders** a una lista **Product** y obtener la información necesaria sobre el producto pedido, como imágenes del producto, especificaciones, detalles del fabricante, etc.

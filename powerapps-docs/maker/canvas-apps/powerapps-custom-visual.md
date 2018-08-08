@@ -1,6 +1,6 @@
 ---
 title: Objeto visual personalizado de PowerApps para Power BI | Microsoft Docs
-description: Procedimiento y limitaciones para insertar una aplicación en la que se usa el mismo origen de datos y se puede filtrar al igual que otros elementos de informe en Power BI
+description: Procedimiento y limitaciones para insertar una aplicación de lienzo en la que se usa el mismo origen de datos y se puede filtrar al igual que otros elementos de informe en Power BI
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 8e50763f11d04db4e9c8e0a6a6ae8ff316bc185a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015901"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470003"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
-Power BI habilita la información sobre los datos y mejora la toma de decisiones, mientras que PowerApps permite a todos los usuarios compilar y usar aplicaciones que se conectan a datos empresariales. Con el objeto visual personalizado de PowerApps, se pueden pasar datos en contexto a una aplicación de PowerApps, que se actualiza en tiempo real mientras se realizan cambios en el informe. Ahora, los usuarios de la aplicación pueden derivar información empresarial y realizar acciones desde el interior de sus informes y paneles de Power BI.
+Power BI habilita la información sobre los datos y mejora la toma de decisiones, mientras que PowerApps permite a todos los usuarios compilar y usar aplicaciones que se conectan a datos empresariales. Con el objeto visual personalizado de PowerApps, se pueden pasar datos en contexto a una aplicación de lienzo, que se actualiza en tiempo real mientras se realizan cambios en el informe. Ahora, los usuarios de la aplicación pueden derivar información empresarial y realizar acciones desde el interior de sus informes y paneles de Power BI.
 
 ## <a name="using-the-powerapps-custom-visual"></a>Uso del objeto visual personalizado de PowerApps
 

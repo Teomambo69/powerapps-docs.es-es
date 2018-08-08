@@ -1,6 +1,6 @@
 ---
-title: Inserción de una aplicación nueva en un informe de Power BI | Microsoft Docs
-description: Inserte una aplicación que use el mismo origen de datos y se pueda filtrar como otros elementos de informe.
+title: Insertar una nueva aplicación de lienzo en un informe de Power BI | Microsoft Docs
+description: Inserte una nueva aplicación de lienzo que use el mismo origen de datos y se pueda filtrar como otros elementos de informe.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,14 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a5239a5d7ca1600b281558461f2a08969cabb633
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018684"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470969"
 ---
-# <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>Tutorial: Inserción de una aplicación nueva en un informe de Power BI
+# <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Insertar una nueva aplicación de lienzo en un informe de Power BI
 
 Power BI permite ampliar sus características mediante la adición de *objetos visuales personalizados* a un informe. En este tutorial, se usa el objeto visual personalizado de PowerApps para crear una aplicación que se inserta en un informe de ejemplo. Esta aplicación interactúa con otros elementos de ese informe.
 

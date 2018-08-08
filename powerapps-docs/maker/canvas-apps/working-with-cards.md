@@ -1,6 +1,6 @@
 ---
 title: Descripción de las tarjetas de datos | Microsoft Docs
-description: Use tarjetas de formulario para recopilar y mostrar información de un origen de datos.
+description: En PowerApps, utilice tarjetas de formulario para recopilar y mostrar información de un origen de datos.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,23 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a229f77ea569c56e18fd955a66ce48a5e02f84a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020777"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470946"
 ---
-# <a name="understand-data-cards"></a>Tarjetas de datos
-Los controles **[Card](controls/control-card.md)** son los componentes fundamentales de los controles **[Edit form](controls/control-form-detail.md)** y **[Display form](controls/control-form-detail.md)**. El formulario representa todo el registro y cada tarjeta representa un único campo de ese registro.
+# <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
+
+Los controles **[Tarjeta](controls/control-card.md)** son los componentes fundamentales de los controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)** en aplicaciones de lienzo. El formulario representa todo el registro y cada tarjeta representa un único campo de ese registro.
 
 Puede interactuar con las tarjetas más fácilmente en el panel derecho después de seleccionar un control de formulario en el área de trabajo de diseño. En este panel, puede elegir los campos que desea mostrar, cómo mostrarlos y en qué orden. En este ejemplo se muestra un control **Formulario de edición** en una aplicación que se crea a partir de una lista de SharePoint denominada **Assets**.
 
-![](./media/working-with-cards/first-screen.png)
+![Primera pantalla](./media/working-with-cards/first-screen.png)
 
 Para empezar a trabajar con las tarjetas, consulte cómo [agregar un formulario](add-form.md) y cómo [entender los formularios de datos](working-with-forms.md). En el resto de este tema se explica con más detalle cómo funcionan las tarjetas y cómo puede personalizar o incluso crear las suyas propias.
 
 ## <a name="predefined-cards"></a>Tarjetas predefinidas
+
 PowerApps ofrece un conjunto predefinido de tarjetas para cadenas, números y otros tipos de datos. En el panel derecho, puede ver las variaciones disponibles y cambiar la tarjeta usada para un campo:
 
 ![](./media/working-with-cards/selected-card.png)

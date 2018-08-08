@@ -1,6 +1,6 @@
 ---
-title: Información sobre tablas | Microsoft Docs
-description: Información de referencia para trabajar con tablas, columnas y registros
+title: Comprender las tablas de aplicaciones de lienzo | Microsoft Docs
+description: Información de referencia sobre cómo trabajar con tablas, columnas y registros de aplicaciones de lienzo en PowerApps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0fce2e574644f8ec8077e86dc3a5b4ee5f2cd3a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021191"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469911"
 ---
-# <a name="understand-tables-and-records-in-powerapps"></a>Información sobre tablas y registros de PowerApps
-Puede crear una aplicación que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
+# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Comprender las tablas y los registros de aplicaciones de lienzo en PowerApps
+
+En PowerApps, puede crear una aplicación de lienzo que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
 
 * Un registro contiene una o varias categorías de información sobre una persona, un lugar o una cosa. Por ejemplo, un registro puede contener el nombre, la dirección de correo electrónico y el número de teléfono de un solo cliente. Otras herramientas hacen referencia a un registro como una "fila" o un "elemento".
 * Una tabla contiene uno o varios registros que incluyen las mismas categorías de información. Por ejemplo, una tabla puede contener los nombres, las direcciones de correo electrónico y los números de teléfono de 50 clientes.

@@ -1,6 +1,6 @@
 ---
-title: Descripción de los formularios | Microsoft Docs
-description: Use los formularios para recopilar información de un origen de datos y mostrarla.
+title: Comprender los formularios de aplicaciones de lienzo | Microsoft Docs
+description: En PowerApps, agregue un formulario a una aplicación de lienzo para que pueda recopilar y mostrar información de un origen de datos.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: c7bd68f37cc469b054a75012d4166c05375db6ff
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195758"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470256"
 ---
-# <a name="understand-data-forms-in-microsoft-powerapps"></a>Descripción de los formularios de datos en Microsoft PowerApps
-Agregue tres tipos de controles para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:
+# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Comprender los formularios de aplicaciones de lienzo en Microsoft PowerApps
+
+Agregue tres tipos de controles a una aplicación de lienzo para que el usuario pueda buscar un registro, mostrar los detalles sobre ese registro y editar o crear un registro:
 
 | Actividad | Control | Descripción |
 | --- | --- | --- |

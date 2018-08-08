@@ -1,6 +1,6 @@
 ---
-title: Presentación de una lista de elementos | Microsoft Docs
-description: Use una galería para mostrar una lista de elementos de la aplicación y filtre la lista especificando un criterio.
+title: Mostrar una lista de elementos en una aplicación de lienzo | Microsoft Docs
+description: Utilice una galería para mostrar una lista de elementos de la aplicación de lienzo y filtre la lista especificando un criterio.
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 4806d65416816897542973644da592f7e6b2e252
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 753a4508890f5ab007bef2a1f4d81bb46043a089
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020984"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470509"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
-Muestre una lista de elementos de cualquier origen de datos mediante la adición de un control **[Galería](controls/control-gallery.md)** a la aplicación. En este tema se utiliza Excel como origen de datos. Filtre la lista mediante la configuración del control **Galería** para mostrar únicamente aquellos elementos que coinciden con el criterio de filtro en un control **[Entrada de texto](controls/control-text-input.md)**.
+
+Muestre una lista de elementos de cualquier origen de datos agregando un control **[Galería](controls/control-gallery.md)** a la aplicación de lienzo. En este tema se utiliza Excel como origen de datos. Filtre la lista mediante la configuración del control **Galería** para mostrar únicamente aquellos elementos que coinciden con el criterio de filtro en un control **[Entrada de texto](controls/control-text-input.md)**.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 * Aprenda a [agregar y configurar un control](add-configure-controls.md) en PowerApps.
 
 * Configure los datos de ejemplo:

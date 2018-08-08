@@ -1,59 +1,66 @@
 ---
-title: Introducción a Common Data Service | Microsoft Docs
-description: Obtenga información sobre cómo Common Data Service conecta Common Data Service for Apps con Common Data Service for Analytics.
+title: Qué es Common Data Service| Microsoft Docs
+description: Common Data Service es una colección estandarizada, modular y extensible de esquemas de datos publicados por Microsoft que están diseñados para facilitarle la compilación, el uso y el análisis de datos.
 author: RobertBruckner
 ms.service: powerapps
 ms.topic: article
-ms.date: 03/14/2018
-ms.author: jdaly
-ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.date: 07/24/2018
+ms.author: robruc
+ms.openlocfilehash: 1469646301c273067ad035428f03c452ae223604
+ms.sourcegitcommit: abe4d4728db7f56088f618af5b820af78e7099c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803259"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "39332003"
 ---
-# <a name="common-data-model-overview"></a>Introducción a Common Data Service
+# <a name="what-is-the-common-data-model"></a>¿Qué es Common Data Service?
 
-**Common Data Service** (CDS) es una definición de código abierto de entidades estándar que representan los conceptos y actividades más usados en una variedad de dominios de aplicación y empresariales. Common Data Service ofrece entidades empresariales *bien definidas, modulares y extensibles* como Account, Business Unit, Case, Contact, Lead, Opportunity y Product, así como interacciones y relaciones entre proveedores, trabajadores y clientes, como actividades y acuerdos de nivel de servicio. 
+Si alguna vez ha experimenta dificultades con datos que son *prácticamente* los mismos o *deben* trabajar juntos, y luego ha dedicado un esfuerzo considerable a transformar campos y tablas para trabajar con el resto de sus datos, sabe que los elementos de datos comunes pueden ahorrar esfuerzo, agilizar el desarrollo futuro y permitir un análisis más rápido. Estas funcionalidades y otras son las que puede proporcionar Common Data Service (CDS).
 
-[Common Data Service for Apps](../maker/common-data-service/data-platform-intro.md) de Microsoft y Common Data Service for Analytics <!-- TODO add link when available  --> implementan Common Data Service. Estos servicios contienen datos que se ajustan a la definición de Common Data Service. Al compilarse sobre estos servicios, las aplicaciones empaquetadas y las soluciones analíticas pueden trabajar con formas de entidad bien definidas y compartir datos, con independencia de dónde procedan o se usen originalmente los datos. Las aplicaciones de línea de negocio personalizadas y las soluciones analíticas pueden aprovechar las mismas entidades para el uso compartido de datos y, por tanto, admitir necesidades y requisitos empresariales específicos. 
+**Common Data Service (CDS)** es una colección estandarizada, modular y extensible de esquemas de datos publicados por Microsoft que están diseñados para facilitarle la compilación, el uso y el análisis de datos. Esta colección de esquemas predefinidos, que consta de *entidades*, *atributos*, *metadatos semánticos* y *relaciones*, representa conceptos y actividades que se usan habitualmente, como cuenta y campaña, para simplificar la creación, la agregación y el análisis de datos. Más información: [repositorio de CDS en GitHub](https://aka.ms/cdmrepo)
 
-Microsoft y nuestros socios se comprometen a compilar nuestras aplicaciones sobre Common Data Service y a almacenar los datos empresariales en formato de CDS. Existe una *abundante y creciente colección de soluciones que funcionan de manera conjunta y eficaz cuando los datos se almacenan en formato de CDS*, lo que significa que se pueden implementar rápidamente nuevos procesos de negocio y obtener información sobre las operaciones empresariales sin fricción o complejidad. En el siguiente diagrama se muestran aplicaciones sobre Common Data Service que aprovechan las entidades de Common Data Service.
+![Common Data Model](media/cdm-entities.png)
 
-![Aplicaciones sobre Common Data Service que aprovechan las entidades de Common Data Service](media/cdm-overview.png)
+Más información: [póster de CDS](https://aka.ms/cdmposter)
 
-Common Data Service simplifica los desafíos de la administración de datos mediante la unificación de los datos en un formato conocido con *coherencia estructural y semántica entre las aplicaciones e implementaciones*. Ayuda a integrar y *eliminar la ambigüedad de los datos* recopilados de procesos empresariales, interacciones digitales, telemetría de productos, interacciones de usuarios y así sucesivamente. 
+## <a name="why-use-the-common-data-model"></a>¿Por qué usar Common Data Service?
 
-Los datos almacenados en Common Data Service for Apps *se integran de forma sencilla y automática* con Common Data Service for Analytics para los clientes que usan ambos servicios. Puede empezar a partir de los datos empresariales y transaccionales que ya posee (por ejemplo, clientes potenciales, información de campañas, compras de clientes anteriores) y combinarlos con datos de otros orígenes (como blogs o telemetría de productos) para obtener una imagen unificada.
+CDS simplifica el desarrollo de aplicaciones y administración de datos mediante la unificación de los datos en un formato conocido y la aplicación de coherencia estructural y semántica en varias aplicaciones e implementaciones. En otras palabras, cuando los datos se encuentran en CDS, puede usarlos en muchas aplicaciones diferentes, simplificar la creación o el uso de otras aplicaciones para usar los datos existentes y crear fácilmente informes para cada uno de ellos (o todos ellos). Además, los integradores de datos que traen datos desde diversos sistemas pueden centrarse en la llegada de los datos a CDS, en lugar de compilar un nuevo modelo para cada aplicación.
 
-Common Data Service también es *extensible*: se pueden agregar campos a cualquiera de las entidades personalizables que se incluyen con CDS o se pueden crear entidades personalizadas propias. El estándar CDS define un lenguaje común para las entidades empresariales que abarca toda la gama de procesos de negocio en ventas, servicios, operaciones de marketing, finanzas, talento y comercio, y para las entidades de clientes, usuarios y productos en el núcleo de los procesos empresariales de una empresa. Common Data Service facilita la interoperabilidad de los datos que abarcan varios canales, implementaciones de servicios y proveedores.
+Imagine que tiene tres aplicaciones empresariales: una aplicación de materiales, una aplicación de fabricación y una aplicación de ventas. Muchas veces, cada una de las aplicaciones se crearía en forma independiente, con diferentes estructuras que representan una entidad, como *cuenta*, que son prácticamente iguales (pero no). Con CDS, podría compilar los datos en un formato normalizado (con las entidades, atributos y relaciones de CDS). Luego, cada una de esas tres aplicaciones podría usar los mismos datos como base. Por supuesto, cada aplicación podría tener sus propios datos y esquemas adicionales, basados en la funcionalidad de cada aplicación. Pero en cuanto a desarrollo, las aplicaciones y los informes podrían extraer los elementos de datos comunes rápidamente, sin problemas y con confianza.
 
-Common Data Service proporciona una plataforma de desarrollo enriquecida y productiva a través de las características siguientes:
+¿Y qué hay de la necesidad de crear una cuarta aplicación? Los datos están listos (en el esquema de CDS), por lo que puede concentrar sus esfuerzos de desarrollo en la lógica de negocios, no en complicaciones de datos y transformaciones difíciles.
 
-- **Definición de entidades estándar**: Common Data Service proporciona una definición de entidades que representan las más usadas en todas las aplicaciones de negocio y productividad. El repositorio de CDS público de GitHub [(https://github.com/Microsoft/CDM)](https://github.com/Microsoft/CDM) se ampliará continuamente con entidades principales que abarcan todo el panorama de procesos de negocio, modelos de datos de la industria verticales adicionales y orígenes multidisciplinares como encuestas, motores de búsqueda y telemetría de productos.
-- **Integración de datos**: use Power Query como experiencia web integrada para importar y transformar visualmente los datos de los sistemas existentes y para combinar datos de orígenes en línea y locales sin código con o poca cantidad de código. Las habilidades de transformación de datos de Excel y Power BI se aplican sin problemas. Vea [Add data to an entity in the Common Data Service by using Power Query](../maker/common-data-service/data-platform-cds-newentity-pq.md) (Adición de datos a una entidad en Common Data Service mediante Power Query).
-    
-    Al importar datos a Common Data Service, se pueden asignar a entidades de Common Data Service estándar, o bien crear y asignar a entidades nuevas. Las plantillas estándar de asignación e integración de datos simplifican la conexión a orígenes de datos comunes, como Salesforce. Estas plantillas de asignación son totalmente personalizables y extensibles. En la captura de pantalla siguiente se muestra la importación de datos externos y la asignación a entidades estándar en Power Query. 
-    
-    ![Importación de datos externos y asignación a entidades estándar en Power Query ](media/cdm-mapping-entities.png)<br />
+En otras palabras, CDS ofrece lo siguiente para los datos:
 
-- **Extensibilidad**: las entidades se pueden ampliar sin que ello interrumpa el uso compartido de datos con otras aplicaciones.
-- **Fiabilidad**: como se puede depender de entidades comunes, se pueden crear componentes reutilizables enlazados a las entidades. Common Data Service admite la extensibilidad y el control de versiones que protege la inversión en desarrollo.
-- **Coherencia de entidades entre implementaciones**: las soluciones pueden conectar información de las plataformas de productividad con datos de aplicaciones empresariales. Por ejemplo, se puede conectar una cita de calendario o una tarea de Microsoft Outlook con una oportunidad de venta. 
+-   **Coherencia estructural y semántica** entre aplicaciones e implementaciones.
 
-[Common Data Service for Apps](../maker/common-data-service/data-platform-intro.md) implementa Common Data Service, que permite el desarrollo de aplicaciones empresariales para:
+-   **Integración simplificada y eliminación de ambigüedades de los datos** que se recopilan de procesos, interacciones digitales, telemetría de productos, interacciones de usuarios, etcétera.
 
-- **Aprovechar aplicaciones empresariales empaquetadas**: las aplicaciones de Dynamics 365 for Marketing, Sales, Service, Talent, Finance y Operations, así como aplicaciones de otros fabricantes aprovechan o se compilan sobre Common Data Service for Apps.
-- **Personalizar aplicaciones y compilar extensiones nativas para las necesidades**: los desarrolladores y personalizadores distribuyen las soluciones de aplicación con un ciclo de vida de aplicación bien definido. Las soluciones son la forma de distribuir aplicaciones y extensiones. Vea [Introducción a las soluciones](../developer/common-data-service/introduction-solutions.md).
-- **Compilar aplicaciones sin código o poca cantidad de código, controladas por modelos y de lienzo WYSIWYG con PowerApps**: use las mismas entidades compartidas que crean o usan las aplicaciones empaquetadas u otras aplicaciones de terceros, y cree aplicaciones independientes adicionales. Vea: 
-    - [Build a model-driven app](../maker/model-driven-apps/model-driven-app-overview.md) (Compilación de una aplicación controlada por modelos)
-    - [Build a canvas app](../maker/canvas-apps/getting-started.md) (Compilación de una aplicación de lienzo) 
-- **Automatizar los procesos empresariales con Flow**: use un flujo de proceso de negocio para definir un conjunto de fases y pasos para lograr un resultado deseado. Vea [Create a flow that uses the Common Data Service](/flow/common-data-model-intro) (Creación de un flujo que use Common Data Service).
- 
-En la próxima versión preliminar pública de **Common Data Service for Analytics** <!-- TODO add link when available  --> también se implementa Common Data Service, para admitir análisis de datos empresariales en un formato estandarizado, incluidas:
+-   **Una forma unificada** en la que las integraciones de datos pueden **combinar datos de empresa existentes con otros orígenes** y usar esos datos holísticamente para desarrollar nuevas aplicaciones o extraer conclusiones.
 
-- **Soluciones analíticas empaquetadas y personalizadas basadas en entidades de datos estándar**: las aplicaciones analíticas, como Sales Insights, que realiza el seguimiento del rendimiento de ventas histórico, proporcionan información coherente con independencia de dónde se usaran originalmente los datos; porque la experiencia de integración de datos asigna datos de otros orígenes (por ejemplo, Salesforce.com) a formas de entidad de Common Data Service. Esto simplifica la solución de análisis para centrarse en la semántica de los datos de entidades bien definidas, como clientes potenciales y oportunidades.
-- **Integración de datos de Power Query sin código o con poco código**: se usa la experiencia integrada para crear, rellenar, transformar y enriquecer las entidades. 
-- **Traer almacenamiento de Azure propio**: sacar partido de la pila de datos de Azure para que los datos estén disponibles para Common Data Service for Analytics. Las entidades se almacenan en el mismo formato de modelo de datos común, reconocido por las soluciones analíticas.
+-   **Posibilidad de extender el esquema y las entidades de CDS** para adaptar Common Data Service a la organización.
 
+Puede usar CDS para crear repositorios de datos que coincidan con el esquema, así como para transformar los datos existentes al esquema de Common Data Service. En cualquier caso, la eficacia que obtiene de la estandarización puede acelerar y simplificar todo lo que haga después con los datos.
+
+## <a name="who-uses-the-common-data-model"></a>¿Quién usa Common Data Service?
+
+CDS se utiliza en diversos clientes, asociados y productos, todo ello con el mismo objetivo de unificar los datos de forma conocida con significado semántico.
+
+-   **Creadores y desarrolladores de aplicaciones**: ya sea que estos usuarios utilicen plataformas basadas en código o una plataforma de poco o código o ninguno, como PowerApps, tienen que almacenar y administrar los datos de sus aplicaciones.
+
+-   **Integradores de datos**: estos usuarios son responsables de incorporar datos procedentes de diversos sistemas para hacerlos accesibles para que las aplicaciones los usen.
+
+Históricamente, el trabajo de compilación de una aplicación ha estado estrechamente ligado a la integración de datos, pero con CDS y las plataformas compatibles, ambas tareas pueden producirse por separado.
+
+## <a name="common-data-model-in-action"></a>Common Data Service en acción
+
+Microsoft y sus asociados usan CDS en sus propias aplicaciones y ofertas, y crean servicios y ofertas adicionales a partir de esquemas de CDS. Los ejemplos siguientes muestran cómo las organizaciones usan CDS:
+
+-   **Common Data Service (CDS) for Apps**, compatible con Dynamics y PowerApps, almacena los datos de acuerdo a la definición de CDS. De hecho, muchas de las entidades empresariales originales que se incluyen en CDS provienen de ofertas de Dynamics tales como Dynamics 365 for Sales y Dynamics 365 for Marketing.
+
+-   **Segmentos de mercado vertical** (por ejemplo, el sector sanitario) trabajan estrechamente con Microsoft para ampliar CDS a sus conceptos empresariales específicos, tales como *paciente* y *plan de atención médica*, por lo que pueden compartir datos y compilar servicios para que los asociados puedan intercambiar datos fácilmente, crear servicios y aplicaciones interoperables y crear análisis rápidos que sean fáciles de compartir.
+
+## <a name="next-step"></a>Paso siguiente
+
+[Cómo usar Common Data Service](use-common-data-model.md): describe CDS en detalle y se tratan casos de uso para crear otros datos en CDS o transformar los datos existentes en CDS.

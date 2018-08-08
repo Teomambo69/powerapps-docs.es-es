@@ -1,6 +1,6 @@
 ---
-title: Adición de una pantalla de desplazamiento | Microsoft Docs
-description: Cree una pantalla por la que puedan desplazarse los usuarios para ver más tipos de contenido de los que pueden mostrarse a la vez.
+title: Agregar una pantalla de desplazamiento a una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, cree una pantalla por la que puedan desplazarse los usuarios para ver más tipos de contenido de los que pueden mostrarse a la vez en una aplicación de lienzo.
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 4a8b92e012f9669f2b445ef864d3360ef42fbc01
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 742710a3814c87d9888e70cb50c635dddab904d1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015994"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471268"
 ---
-# <a name="add-a-scrolling-screen-in-powerapps"></a>Agregar una pantalla de desplazamiento en PowerApps
-Cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, es posible que quiera crear una aplicación en la que los datos aparezcan en un gráfico de columnas y en un gráfico de líneas. Si agrega una pantalla de desplazamiento, podrá incorporar diferentes controles que los usuarios podrán ver al desplazarse.
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Agregar una pantalla de desplazamiento a una aplicación de lienzo en PowerApps
+
+En una aplicación de lienzo, cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, cree una aplicación de teléfono que muestre datos en varios gráficos, que los usuarios podrán ver al desplazarse.
 
 Cuando se agregan varios controles en una sección, estos mantienen su posición relativa en dicha sección tanto si se trata de una aplicación para el teléfono como de una aplicación para la tableta. Tenga en cuenta que el tamaño y la orientación de la pantalla pueden determinar la organización de las secciones.  
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="create-a-scrolling-screen"></a>Crear una pantalla de desplazamiento
+
 1. En la pestaña **Inicio**, pulse o haga clic en **Nueva pantalla**:
-   
+
     ![Opción para agregar una pantalla a la aplicación][1]
+
 2. En la pestaña **Inicio**, pulse o haga clic en **Diseños** y en la opción que permite agregar un lienzo de desplazamiento infinito:  
    
     ![Opción para agregar un lienzo de desplazamiento infinito][2]

@@ -1,5 +1,5 @@
 ---
-title: Examen de un código de barras | Microsoft Docs
+title: Escanear un código de barras en una aplicación de lienzo | Microsoft Docs
 description: Examinar una variedad de tipos de código de barras, como UPC y Codabar
 author: AFTOwen
 manager: kvivek
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: befc72b875f7876bc0f9f907a094f0d97314c03c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 631277dc533d9792f08bf6a94bf9c345889c6795
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023330"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470601"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Examen de un código de barras en PowerApps
-Escanee varios tipos de códigos de barras creando una aplicación y ejecutándola en un dispositivo, como un teléfono con cámara. El equivalente numérico del código de barras aparece en un control **Etiqueta**, y puede cargar esos datos en diversos [orígenes de datos](connections-list.md).
+
+Escanee varios tipos de códigos de barras creando una aplicación de lienzo y ejecutándola en un dispositivo, como un teléfono, que tenga cámara. El equivalente numérico del código de barras aparece en un control **Etiqueta**, y puede cargar esos datos en diversos [orígenes de datos](connections-list.md).
 
 Si no está familiarizado con PowerApps, consulte [Introducción](getting-started.md).
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
+
 * Los códigos de barras deben ser al menos de 1" (2,5 cm) de alto y 1,5" (4 cm) de ancho.
 * Para examinar los códigos de barras con un teléfono, manténgalo en orientación vertical y muévalo lentamente de 7"(18 cm) hasta 10" (25 cm) de distancia del código de barras.
 * Los tipos de código de barras largos (por ejemplo, I2of5, que puede tener 15 o más caracteres) pueden dar resultados truncados o incorrectos, especialmente si el código de barras no se imprime con claridad.

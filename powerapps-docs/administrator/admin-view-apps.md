@@ -1,26 +1,26 @@
 ---
-title: Inicio rápido para descargar una lista de aplicaciones creadas en los entornos | Microsoft Docs
+title: Descargar una lista de aplicaciones creadas en los entornos | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo descargar una lista de aplicaciones creadas en los entornos.
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: d9c379ca95bb299c56639bb01803f45c1744d8f2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: f5bf3cd5e4fb6be96b8b1853390df1ee8f9bd027
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552608"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349832"
 ---
-# <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>Inicio rápido: Descarga de una lista de aplicaciones creadas en los entornos
+# <a name="download-a-list-of-apps-created-in-your-environments"></a>Descargar una lista de aplicaciones creadas en los entornos
 Si es un Administrador de entorno, puede ver y descargar una lista de aplicaciones creadas en los entornos que está administrando. Si es un Administrador global de Office 365 o de inquilinos de Azure Active Directory, puede ver y descargar la lista de aplicaciones creadas en todos los entornos de la organización.
 
-En este tutorial, obtendrá información sobre cómo descargar una lista de aplicaciones creadas en un entorno a un archivo .csv y, después, ver esa lista en Excel.
+En este tutorial, aprenderá a descargar una lista de aplicaciones creadas en un entorno a un archivo .csv y luego ver esa lista en Excel.
 
 ## <a name="prerequisites"></a>Requisitos previos
- Para seguir este tutorial rápido, se requieren los elementos siguientes:
+ Para seguir los pasos se requieren los elementos siguientes:
  * Licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow. Como alternativa, se puede suscribir a una [evaluación gratuita del Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=).
  * Los permisos Administrador de entorno de PowerApps, Administrador global de Office 365 o Administrador de inquilinos de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
@@ -43,7 +43,7 @@ Una vez creado el archivo .csv, ábralo en Excel. La lista contiene el nombre pa
 ![Archivo y Compartir](./media/admin-view-apps/excel-view.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha obtenido información sobre cómo descargar y ver una lista de aplicaciones creadas en un entorno dentro de la organización. A continuación, obtendrá información sobre cómo administrar las aplicaciones creadas en la organización.
+En este tema, ha aprendido a descargar y ver una lista de aplicaciones creadas en un entorno dentro de la organización. A continuación, obtendrá información sobre cómo administrar las aplicaciones creadas en la organización.
 
 > [!div class="nextstepaction"]
 > [Administración de las aplicaciones creadas en la organización](admin-manage-apps.md)

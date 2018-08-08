@@ -1,6 +1,6 @@
 ---
-title: Introducción a las fórmulas | Microsoft Docs
-description: Use fórmulas para personalizar una aplicación.
+title: Introducción a las fórmulas en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, use fórmulas para personalizar una aplicación de lienzo.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195275"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470670"
 ---
-# <a name="get-started-with-formulas"></a>Introducción a las fórmulas
-Configure la aplicación con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
+# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
+
+Configure la aplicación de lienzo con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
 
 * En Excel, se crean fórmulas que, por ejemplo, rellenan celdas y crean tablas y gráficos.
 * En PowerApps, va a crear fórmulas parecidas al configurar controles en lugar de celdas. Además, va a crear fórmulas que se aplican específicamente a aplicaciones en lugar de a hojas de cálculo.

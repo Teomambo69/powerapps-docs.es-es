@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido para generar una aplicación en PowerApps desde SharePoint | Microsoft Docs
-description: Genere una aplicación de forma automática en PowerApps para administrar datos en una lista de SharePoint.
+title: Generar una aplicación de lienzo en PowerApps desde SharePoint | Microsoft Docs
+description: En PowerApps, genere automáticamente una aplicación de lienzo para administrar datos de una lista de SharePoint.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: cb68c454053a36f49b72afa1718ca0d67ad364af
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195390"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469888"
 ---
-# <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>Inicio rápido para generar una aplicación en PowerApps desde SharePoint
+# <a name="generate-a-canvas-app-in-powerapps-from-sharepoint-data"></a>Generar una aplicación de lienzo en PowerApps a partir de datos de SharePoint
 
-En este tutorial, usará PowerApps para generar automáticamente la primera aplicación en función de una lista que se cree en SharePoint. En esta aplicación, se pueden examinar todos los elementos de la lista, mostrar detalles de un solo elemento y crear, actualizar o eliminar un elemento.
+En este tutorial, usará PowerApps para generar automáticamente la primera aplicación de lienzo a partir de una lista que cree en SharePoint. En esta aplicación, se pueden examinar todos los elementos de la lista, mostrar detalles de un solo elemento y crear, actualizar o eliminar un elemento.
 
 Si tiene cualquier lista de SharePoint, puede obtener información sobre conceptos y técnicas en este tutorial rápido. Para seguir este tutorial rápido con exactitud, cree una lista, con el nombre **SimpleApp**, que contenga una columna denominada **Título**, en un sitio de SharePoint Online. En la lista, cree entradas para **Vainilla**, **Chocolate** y **Fresa**.
 

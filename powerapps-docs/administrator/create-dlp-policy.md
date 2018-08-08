@@ -1,26 +1,26 @@
 ---
-title: Inicio rápido para crear una directiva de prevención de pérdida de datos (DLP) | Microsoft Docs
+title: Crear una directiva de prevención de pérdida de datos (DLP) | Microsoft Docs
 description: En este inicio rápido, obtendrá información sobre cómo crear una directiva de prevención de pérdida de datos (DLP) en PowerApps
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: jimh
-ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 49898aed97e2361704c88bcc1cd098a8fc0f101e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552378"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349464"
 ---
-# <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>Inicio rápido: Creación de una directiva de prevención de pérdida de datos (DLP)
+# <a name="create-a-data-loss-prevention-dlp-policy"></a>Crear una directiva de prevención de pérdida de datos (DLP)
 Para proteger los datos de la organización, PowerApps permite crear y aplicar directivas que definen con qué conectores de consumidor se pueden compartir datos empresariales específicos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP). Las directivas DLP garantizan que los datos se administran de manera uniforme en toda la organización e impiden que los datos empresariales importantes se publiquen accidentalmente a conectores como sitios de redes sociales.
 
-En este inicio rápido, obtendrá información sobre cómo crear una directiva DLP para un único entorno que impida que los datos que se almacenan en Common Data Service y las bases de datos de SharePoint se publiquen en Twitter.
+En este tutorial, aprenderá a crear una directiva DLP para un único entorno que impida que los datos que se almacenan en las bases de datos de SharePoint y Common Data Service se publiquen en Twitter.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para seguir este inicio rápido, se requiere **uno** de los elementos siguientes:
+Para seguir estos pasos se requiere **uno** de los elementos siguientes:
 * Permisos de administrador de inquilinos de Azure Active Directory
 * Permisos de administrador global de Office 365
 * Permisos de administrador de entorno de PowerApps, así como una licencia de Plan 2 de PowerApps o Plan 2 de Microsoft Flow, o bien una licencia de prueba de [Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=)
@@ -41,7 +41,7 @@ Inicie sesión en el Centro de administración en [https://admin.powerapps.com](
 
     ![](./media/create-dlp-policy/select-environment.png)
 
-    Si es un administrador de inquilinos, puede crear directivas DLP que se apliquen a uno o más entornos, o bien a todos los entornos del inquilino, incluidos aquellos creados con una licencia de prueba. Para este inicio rápido, haga clic en la opción **Aplicar SOLO a los entornos seleccionados** o tóquela, seleccione un entorno de la lista desplegable y, después, haga clic en la opción **Continuar** o tóquela.
+    Si es un administrador de inquilinos, puede crear directivas DLP que se apliquen a uno o más entornos, o bien a todos los entornos del inquilino, incluidos aquellos creados con una licencia de prueba. En este tema, pulse o haga clic en **Aplicar SOLO a los entornos seleccionados**, seleccione un entorno de la lista desplegable y pulse o haga clic en **Continuar**.
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 
@@ -64,7 +64,7 @@ Se crea la directiva Acceso a datos seguro para Contoso y aparece en la lista de
 Se recomienda que los administradores compartan una lista de directivas DLP con su organización para que los usuarios sean conscientes de las directivas antes de crear aplicaciones.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este inicio rápido, ha obtenido información sobre cómo crear una directiva DLP para un único entorno para impedir que los datos empresariales importantes se publiquen accidentalmente en conectores como Twitter. Para obtener más información sobre las directivas DLP, vea el artículo sobre cómo administrarlas.
+En este tema, ha aprendido a crear una directiva DLP para un único entorno que impide que los datos empresariales importantes se publiquen accidentalmente en conectores como Twitter. Para obtener más información sobre las directivas DLP, vea el artículo sobre cómo administrarlas.
 
 > [!div class="nextstepaction"]
 > [Administración de directivas de prevención de pérdida de datos (DLP)](prevent-data-loss.md)

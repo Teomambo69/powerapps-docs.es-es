@@ -1,6 +1,6 @@
 ---
-title: Creación de una aplicación desde cero mediante Common Data Service for Apps | Microsoft Docs
-description: Cree una aplicación para agregar, actualizar y eliminar registros.
+title: Crear una aplicación de lienzo desde cero con Common Data Service for Apps | Microsoft Docs
+description: En PowerApps, cree una aplicación de lienzo para agregar, actualizar y eliminar registros en Common Data Service for Apps.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: b7506ff3380855c6e3c51b22918366dde9c8549c
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: df2ed422cdfbaf8689dae7c8f3e6b54eba093b74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195137"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471360"
 ---
-# <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación desde cero mediante Common Data Service for Apps
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación de lienzo desde cero con Common Data Service for Apps
 
-Compile una aplicación para administrar datos almacenados en Common Data Service for Apps mediante entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
+Compile una aplicación de lienzo para administrar datos almacenados en Common Data Service for Apps mediante entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
 
 Al compilar una aplicación desde Common Data Service, no es necesario crear una conexión desde PowerApps, como ocurre con orígenes de datos como SharePoint, Dynamics 365 o Salesforce. Solo necesita especificar las entidades que desea mostrar, administrar o usar para ambas actividades en la aplicación.
 

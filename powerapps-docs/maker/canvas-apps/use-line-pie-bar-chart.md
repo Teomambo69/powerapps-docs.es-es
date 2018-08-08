@@ -1,6 +1,6 @@
 ---
-title: Creación de gráficos | Microsoft Docs
-description: Visualización de categorías de datos como gráficos de líneas, gráficos circulares o gráficos de barras
+title: Crear un gráfico en una aplicación de lienzo | Microsoft Docs
+description: En PowerApps, muestre categorías de datos como gráficos de líneas, gráficos circulares o gráficos de barras en una aplicación de lienzo.
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5fecc52a5100f2ed0d045fd0ebdc3834f83d5b39
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 63244a05d81f807609c965892f6a84e30577b490
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195919"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471153"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
-Use gráficos de líneas, gráficos circulares y gráficos de barras para mostrar los datos. Al trabajar con gráficos, los datos que importe deben estar estructurados de la manera siguiente:
+
+Utilice gráficos de líneas, gráficos circulares y gráficos de barras para mostrar los datos en una aplicación de lienzo. Cuando trabaje con gráficos, los datos que importe deben estar estructurados en función de los criterios siguientes:
 
 * Todas las series deben estar en la primera fila.
 * Las etiquetas deben estar en la columna izquierda.
@@ -29,6 +30,7 @@ Por ejemplo, los datos deben tener un aspecto similar al siguiente:
 Puede crear y usar estos gráficos en PowerApps. Empecemos.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 * [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Cree una aplicación a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.

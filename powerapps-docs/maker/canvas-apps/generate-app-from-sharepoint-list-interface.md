@@ -1,6 +1,6 @@
 ---
-title: Creación de una aplicación desde una lista de SharePoint | Microsoft Docs
-description: Cree una aplicación de tres pantallas para administrar los datos en una lista de SharePoint, independientemente de si el sitio es local o está en la nube.
+title: Generar una aplicación de lienzo a partir de una lista de SharePoint | Microsoft Docs
+description: Genere una aplicación de lienzo de tres pantallas para administrar los datos en una lista de SharePoint, independientemente de si el sitio es local o está en la nube.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9230c96c1b1c5e07ea5129f73a8edd95772aad84
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022478"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471429"
 ---
-# <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Creación de una aplicación desde SharePoint mediante PowerApps
+# <a name="generate-a-canvas-app-from-within-sharepoint-by-using-powerapps"></a>Generar una aplicación de lienzo desde SharePoint mediante PowerApps
 
-En PowerApps, puede crear automáticamente una aplicación en la que los usuarios puedan administrar los elementos de una lista personalizada de SharePoint Online. La aplicación tendrá tres pantallas para que los usuarios puedan:
+En PowerApps, genere automáticamente una aplicación de lienzo en la que los usuarios puedan administrar los elementos de una lista personalizada de SharePoint Online. La aplicación tendrá tres pantallas para que los usuarios puedan:
 
 * navegar por todos los registros de la lista (**BrowseScreen1**)
 * ver todos los campos de un registro específico (**DetailsScreen1**)

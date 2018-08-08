@@ -1,7 +1,7 @@
 ---
-title: Incorporación de una pantalla y desplazamiento por diferentes pantallas | Microsoft Docs
-description: Agregue una pantalla a una aplicación y utilice las flechas Siguiente y Atrás para desplazarse por diferentes pantallas en PowerApps.
-author: aftowen
+title: Agregar una pantalla a una aplicación de lienzo y navegar por diferentes pantallas | Microsoft Docs
+description: Agregue una pantalla a una aplicación de lienzo y utilice las flechas Siguiente y Atrás para navegar por diferentes pantallas en PowerApps.
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,21 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c7a100b6df278812ea93da8c4f5c503a841d4109
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 17ec7dd0723e219e1eaf9ad3b112faf049cf7d12
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022019"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469957"
 ---
-# <a name="add-a-screen-and-navigate-between-screens"></a>Agregar una pantalla y desplazarse por diferentes pantallas
+# <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Agregar una pantalla a una aplicación de lienzo y navegar por diferentes pantallas
+
 Cree una aplicación con varias pantallas e incorpore mecanismos que permitan a los usuarios desplazarse por ellas.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 * Tiene que saber [configurar un control](add-configure-controls.md).
 * Tiene que crear o abrir una aplicación.
 
 ## <a name="add-and-rename-a-screen"></a>Agregar una pantalla y cambiarle el nombre
+
 1. En la pestaña **Inicio**, pulse o haga clic en **Nueva pantalla**.
 
     ![Opción Agregar pantalla de la pestaña Inicio](./media/add-screen-context-variables/add-screen.png)

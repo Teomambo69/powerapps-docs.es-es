@@ -1,6 +1,6 @@
 ---
-title: Inicio de un flujo en una aplicación | Microsoft Docs
-description: Cree un flujo que realice una o varias tareas después de que un evento, como la selección de un botón por parte de un usuario, se produzca en una aplicación.
+title: Iniciar un flujo en una aplicación de lienzo | Microsoft Docs
+description: Cree un flujo que realice una o varias tareas después de que un evento, como la selección de un botón por parte de un usuario, se produzca en una aplicación de lienzo.
 author: stepsic-microsoft-com
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 9d681cc889a3f39fb0785ab0cba86e37ebe185b3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9096b00b7d1f08ebdb9e767ffcbcd9837aa797cf
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195896"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470463"
 ---
-# <a name="start-a-flow-in-an-app"></a>Inicio de un flujo en una aplicación
-Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
+# <a name="start-a-flow-in-a-canvas-app"></a>Iniciar un flujo en una aplicación de lienzo
+
+Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -25,6 +26,7 @@ Microsoft Flow se puede usar para crear lógica que realice una o varias tareas 
 * Tiene que saber [configurar un control](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Creación de un flujo
+
 1. Inicie sesión en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Flujos** en la barra de navegación izquierda.
 
 2. En la página **Mis flujos**, seleccione **Crear desde cero**.

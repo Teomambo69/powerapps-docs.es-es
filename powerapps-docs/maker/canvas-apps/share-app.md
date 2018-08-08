@@ -1,6 +1,6 @@
 ---
-title: Uso compartido de una aplicación | Microsoft Docs
-description: Comparta su aplicación proporcionando a otros usuarios permiso para ejecutarla o modificarla
+title: Compartir una aplicación de lienzo | Microsoft Docs
+description: Compartir la aplicación de lienzo proporcionando a otros usuarios permiso para ejecutarla o modificarla
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195321"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470647"
 ---
-# <a name="share-an-app-in-powerapps"></a>Compartir una aplicación en PowerApps
+# <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
-Después de compilar una aplicación que responde a una necesidad empresarial, especifique qué usuarios de su organización pueden ejecutar la aplicación y cuáles pueden modificarla e incluso volverla a compartir. Especifique cada usuario por nombre, o indique un grupo de seguridad en Azure Active Directory. Si todos los usuarios se beneficiarán de la aplicación, especifique que toda la organización puede ejecutarla.
+Después de compilar una aplicación que responde a una necesidad empresarial, especifique qué usuarios de su organización pueden ejecutarla y cuáles pueden modificarla e incluso volver a compartirla. Especifique cada usuario por nombre, o indique un grupo de seguridad en Azure Active Directory. Si todos los usuarios se beneficiarán de la aplicación, especifique que toda la organización puede ejecutarla.
 
 > [!IMPORTANT]
 > Para que una aplicación compartida funcione según lo esperado, también debe administrar los permisos para los orígenes de datos en los que se basa la aplicación, como [Common Data Service for Apps](#common-data-service-for-apps) o [Excel](share-app-data.md). Es posible que también deba compartir [otros recursos](share-app-resources.md) de los que depende la aplicación, como flujos, puertas de enlace o conexiones.

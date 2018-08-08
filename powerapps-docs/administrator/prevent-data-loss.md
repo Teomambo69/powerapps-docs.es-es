@@ -2,25 +2,25 @@
 title: Administración de directivas de prevención de pérdida de datos (DLP) | Microsoft Docs
 description: Tutorial sobre cómo administrar directivas de prevención de pérdida de datos para PowerApps.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 158abc3969090e081df41b6b52036d71b6949150
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 81117e352f3ad5131572cff2a61117042f47df38
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445715"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349418"
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Administración de directivas de prevención de pérdida de datos (DLP)
 Los datos de una organización son fundamentales para su éxito. Los datos tienen que estar disponibles de inmediato para la toma de decisiones, pero tienen que protegerse de manera que no se compartan con personas que no deben tener acceso a ellos. Para proteger estos datos, PowerApps permite crear y aplicar directivas de prevención de pérdida de datos (DLP) que definen con qué conectores de consumidor se pueden compartir datos empresariales específicos. Por ejemplo, es posible que una organización que utiliza PowerApps no desee que los datos empresariales que se almacenan en SharePoint se publiquen automáticamente en su publicación de Twitter.
 
 Para crear, editar o eliminar directivas DLP, debe tener los permisos Administrador de entorno o Administrador de inquilino de Azure Active Directory. Para obtener más información, vea [Administración de entornos en PowerApps](environments-administration.md).
 
-Para obtener instrucciones sobre cómo crear una directiva DLP, vea [Quickstart: Create a data loss prevention (DLP) policy](create-dlp-policy.md) (Inicio rápido: Creación de una directiva de prevención de pérdida de datos [DLP]).
+Para obtener instrucciones sobre cómo crear una directiva DLP, vea [Crear una directiva de prevención de pérdida de datos (DLP)](create-dlp-policy.md).
 
 ## <a name="find-a-dlp-policy"></a>Buscar una directiva DLP
 1. Inicie sesión en el Centro de administración en [https://admin.powerapps.com]([https://admin.powerapps.com).

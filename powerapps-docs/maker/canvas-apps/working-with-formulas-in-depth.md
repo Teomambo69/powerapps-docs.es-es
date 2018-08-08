@@ -1,6 +1,6 @@
 ---
-title: Información sobre las fórmulas de comportamiento | Microsoft Docs
-description: Información de referencia para trabajar con fórmulas de comportamiento
+title: Comprender las fórmulas de comportamiento de una aplicación de lienzo | Microsoft Docs
+description: Ofrece información de referencia sobre cómo trabajar con fórmulas de comportamiento, que cambian el estado de una aplicación de lienzo en PowerApps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 8ac9cfc2a949cf059d84b5338220e0366094e24b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0e7aabc06014c69aae640b799463431b6800dad
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015602"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471475"
 ---
-# <a name="understand-behavior-formulas-in-powerapps"></a>Información sobre las fórmulas de comportamiento en PowerApps
+# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Comprender las fórmulas de comportamiento de aplicaciones de lienzo en PowerApps
 
 La mayoría de las fórmulas calcula un valor.  Al igual que una hoja de cálculo de Excel, el cálculo nuevo se realiza automáticamente cuando cambian los valores.  Por ejemplo, es posible que desee mostrar el valor de un control **[Etiqueta](controls/control-text-box.md)** en rojo si el valor es menor que cero o en blanco, si no es el caso. De este modo, puede establecer la propiedad **[Color](controls/properties-color-border.md)** de ese control en esta fórmula:
-<br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
+
+**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
 En este contexto, ¿qué significa que el usuario seleccione un control **[Botón](controls/control-button.md)**?  No ha cambiado ningún valor, por lo que no es necesario hacer un cálculo nuevo. Excel no tiene un equivalente a un control **[Botón](controls/control-button.md)**.  
 
