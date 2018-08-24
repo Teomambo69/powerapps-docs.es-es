@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: ac13b62e77b5d8ed35939983b3989b5edb13361c
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 281e94f959fc87aae53e6881cf86ee0db5e53115
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018017"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021304"
 ---
 # <a name="ismatch-function-in-powerapps"></a>Función IsMatch en PowerApps
 Comprueba si una cadena de texto coincide con un patrón.
@@ -68,7 +68,7 @@ Los patrones predefinidos proporcionan una manera sencilla de buscar coincidenci
 | **Any** |Busca la coincidencia con cualquier carácter. |**.** |
 | **Comma** |Busca la coincidencia con una coma. |**,** |
 | **Digit** |Busca la coincidencia con un único dígito (del "0" al "9"). |**\\d** |
-| **Email** |Busca la coincidencia con una dirección de correo electrónico que contiene un símbolo "arroba" ("@") y un nombre de dominio que contiene un punto (".") |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |Busca la coincidencia con una dirección de correo electrónico que contiene un símbolo "arroba" ("\@") y un nombre de dominio que contiene un punto (".") |**.+\@.+\\.[^\\.]{2,}** |
 | **Hyphen** |Busca la coincidencia con un guion. |**\\-** |
 | **LeftParen** |Busca la coincidencia con un paréntesis izquierdo "(". |**\\(** |
 | **Letter** |Busca la coincidencia con una letra. |**\\p{L}** |
