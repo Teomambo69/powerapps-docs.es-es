@@ -9,32 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5c2d9e2b815d1ff2c3dc80bc6c37f1c2e78364ac
+ms.sourcegitcommit: b35470285b96750d660335284d830b4d0028befb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470049"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "42859513"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
-Instrucciones paso a paso para instalar y configurar el ejemplo de informe de gastos.
+Instrucciones paso a paso para instalar y configurar el ejemplo de informe de gastos. También puede obtener una vista previa de la aplicación de ejemplo [aquí](https://aka.ms/previewmyexpenses).
 
 Tiempo estimado para completar estos pasos: **10-15 minutos**
 
-En este vídeo puede ver una demostración de este proceso.
-
-[![Expense Report install Video](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw) (Vídeo de instalación del informe de gastos)
-
-## <a name="overview-of-the-sample"></a>Información general sobre el ejemplo
+> [!TIP]
+> Vea [este vídeo](https://youtu.be/kJXZPILfbwU) para una demostración sobre cómo usar la aplicación de ejemplo de informe de gastos. 
 
 Mantenga un seguimiento de los informes de gastos desde que se envían hasta que se aprueban. Registre las partidas como una acumulación de gastos individuales y envíelos para su aprobación cuando estén listos. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial del informe de gastos de PowerApps](./media/expense-report-install/expense-report-powerapp.png)
 
-Vea este vídeo para aprender a usar el ejemplo de informe de gastos de PowerApps.
-
-[![Vídeo de instalación del informe de gastos](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
+> [!TIP]
+> Vea [este](https://youtu.be/h6E9cdrOvMU) vídeo para aprender a usar el ejemplo de informe de gastos de PowerApps.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -377,9 +377,6 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 2. Haga clic en los **puntos suspensivos** junto a la aplicación Informe de gastos de PowerApps.
 3. Haga clic en **Abrir**.
 
-Vea este vídeo para aprender a usar el ejemplo de informe de gastos de PowerApps.
-
-[![Vídeo de instalación del informe de gastos](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
