@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: matp
 ms.reviewer: ''
-ms.openlocfilehash: 9bd73487d744f5597f934603bbf1d742ff08baea
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3c061d43a766bfdcd0a560c5959756f79751a7f2
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195413"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849152"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Conexión a Dynamics 365 desde PowerApps
 PowerApps le permite generar, personalizar, compartir y ejecutar rápidamente aplicaciones móviles con poco o ningún código. Mediante el conector de Dynamics 365, puede crear útiles aplicaciones móviles para compartir con su organización en tan solo unos minutos.

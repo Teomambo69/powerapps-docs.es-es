@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: 988c072f6abb33e8606826fd105bc2e7f2c2c452
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5a39ec04015fe360bc550d9ea4f708d887ba34c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018753"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833883"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Publicación del informe de proyecto de Power BI y creación de un panel
 > [!NOTE]

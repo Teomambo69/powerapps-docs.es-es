@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e0c0c67ab4681eac8c63ceb860a760053547bf24
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015050"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852145"
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.

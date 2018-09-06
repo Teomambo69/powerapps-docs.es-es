@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 30c55591e410b5526fc85b76b06002c2266e1867
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016591"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835181"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -27,7 +31,7 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
 
 **[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+Al agregar una galería, una lista o un gráfico, la lista de propiedades muestra **Elementos** de manera predeterminada, con el fin de que pueda especificar fácilmente los datos que el nuevo control debe mostrar. Por ejemplo, puede establecer la propiedad **Elementos** de una galería en la tabla **Cuenta** de Salesforce, una tabla denominada **Inventario** que se ha creado en Excel y cargado en la nube, o una lista de SharePoint llamada **ConferenceSpeakers**.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: e0e7aabc06014c69aae640b799463431b6800dad
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f7aed7812890482bb781e2d5ff7eac8c996b8837
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39471475"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850426"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Comprender las fórmulas de comportamiento de aplicaciones de lienzo en PowerApps
 

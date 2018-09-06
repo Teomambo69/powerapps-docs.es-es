@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: 475b1f9b1aace4dc9632379e8a4e3522a90f42b2
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349050"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864388"
 ---
 # <a name="licensing-overview"></a>Introducción a las licencias
 Las licencias de PowerApps se conceden por usuario. Todos y cada uno de los usuarios que acceda al servicio para crear y ejecutar aplicaciones necesitan una licencia. Los clientes de Office 365 y Dynamics 365 pueden beneficiarse inmediatamente de las funcionalidades de PowerApps y Microsoft Flow que incluyen estas ofertas. Los clientes que desean crear aplicaciones y flujos que acceden a orígenes de datos de fuera de Office 365 y Dynamics 365, o que necesitan más funcionalidad, pueden comprar suscripciones independientes a PowerApps y Microsoft Flow. Hay diferencias importantes en la funcionalidad entre estos grupos de licencias.

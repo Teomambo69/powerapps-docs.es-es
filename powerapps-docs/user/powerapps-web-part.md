@@ -11,12 +11,17 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: 21a7ce2cc3a3150ffbffaccca8ad9d4a7070507d
-ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: bbc916044108203927102b0f5852c8e1dcee36ff
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39137429"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857889"
 ---
 # <a name="run-a-canvas-app-from-a-sharepoint-page"></a>Ejecutar una aplicación de lienzo desde una página de SharePoint
 

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/14/2017
 ms.author: lanced
-ms.openlocfilehash: 6eea40490b7a41ae95445135fabbc33801386c4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f431373b2c36a84b54a3241ad2d49af019c37419
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021996"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858436"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Conectarse a una instancia de Oracle Database desde PowerApps
 Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instancia de Oracle Database después de crear una conexión y compilar una aplicación en PowerApps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.

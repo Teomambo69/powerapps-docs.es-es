@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 1b5395459dd5833d054755dadca37bc9b39785c9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f3932d21683b83008e95f03ba2aae646d2b8e491
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019075"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836470"
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>Funciones Enable y Disable en PowerApps
 Activa o desactiva una [señal](signals.md).

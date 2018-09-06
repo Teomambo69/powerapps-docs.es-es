@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b5087c648c2115c93e4cd122455830e2e40b61f8
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c1f11be30f56859ede0950feebc27dd1be39d011
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015418"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834736"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>Funciones FechaNumero, HoraNumero y FechaHoraNumero en PowerApps
 Convierte una fecha o una hora, o ambas, en un valor de fecha y hora.

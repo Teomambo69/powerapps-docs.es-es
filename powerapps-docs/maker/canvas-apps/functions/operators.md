@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 53ee881a81045f6c63c68d363b3a19d712bea9f7
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 41f20ff11a3c4b58b09e5b78f53f01ad97ddfa7d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017902"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852897"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>Operadores y tipos de datos de PowerApps
 Algunos de estos operadores dependen del idioma del autor.  Para más información, consulte [Aplicaciones globales](../global-apps.md).

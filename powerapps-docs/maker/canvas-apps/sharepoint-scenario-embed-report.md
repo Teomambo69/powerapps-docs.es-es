@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: 9e97020ae14ce6da9674e64559b42f98e45269f4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 9d15001795cc33d163e85b358a52aba759c83021
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023238"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865445"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Inserción del informe de proyecto de Power BI en SharePoint Online
 > [!NOTE]

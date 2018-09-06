@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 11a14b142dd300e7dad3435c1d22ad4ea210d7c2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d74f05c87cd5b9a3e7aed7891c6d2aaa54adfd1a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015970"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834317"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>Funciones Update y UpdateIf en PowerApps
 Actualiza los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: fe07a27d88bec7af2d97d76cab208ed67ca621c9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 8dc77c7410632b2ff0f50b132112240fd5e56258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021398"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853299"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps
 Uso de valores de color integrados, definición de los colores personalizados y combinación alfa.

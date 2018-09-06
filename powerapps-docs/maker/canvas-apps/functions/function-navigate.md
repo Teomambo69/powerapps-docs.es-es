@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 939a9319da134a2ea4ff3ed9209f2f33baf24f64
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017534"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857094"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.

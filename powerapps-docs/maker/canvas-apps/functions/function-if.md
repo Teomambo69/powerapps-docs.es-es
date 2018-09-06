@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 5293cd448d96633e2d8d2cda9dfbd6d3c162c953
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 40ac3089d3563d220ddac29197b0902f4de88a25
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017396"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836336"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>Funciones If y Switch de PowerApps
 Determina si se cumple alguna condición de un conjunto (**Si**) o si el resultado de una fórmula coincide con algún valor de un conjunto (**Cambiar**) y luego devuelve un resultado o ejecuta una acción.

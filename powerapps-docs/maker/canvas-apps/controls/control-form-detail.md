@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 6e34b107c9ad47b5eee7711f5c2b474eb3f1a836
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 992529f50ba14f3578c4f6ffe0ba7ba27d2d3661
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017856"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42838141"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.

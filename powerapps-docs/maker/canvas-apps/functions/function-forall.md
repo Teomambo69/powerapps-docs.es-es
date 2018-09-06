@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 664101cd6cc0872f981eb7b7c82e9a680ec0fc87
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016246"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857117"
 ---
 # <a name="forall-function-in-powerapps"></a>Función ForAll en PowerApps
 Calcula valores y realiza acciones para todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).

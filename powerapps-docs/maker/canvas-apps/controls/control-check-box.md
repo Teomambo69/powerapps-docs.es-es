@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: 5f36c6e07f1f1c507f5734e51c23ba6af83eca4b
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3504c80cbf2414959cadc218339d959d168d15ba
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017212"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858668"
 ---
 # <a name="check-box-control-in-powerapps"></a>Control Casilla en PowerApps
 Un control que el usuario puede seleccionar o borrar para establecer su valor en **true** o **false**.

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: cd2028434fb9199595360ddafdb2e41d32e6cf3a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 04f257b40e778d3611203f2bdc17aad5554a4ac6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019535"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865969"
 ---
 # <a name="find-function-in-powerapps"></a>Función Encontrar en PowerApps
 Busca una cadena de texto, si existe, dentro de otra cadena.

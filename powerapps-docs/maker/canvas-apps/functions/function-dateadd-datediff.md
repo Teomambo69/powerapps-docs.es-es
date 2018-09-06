@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: b07b8435b6068042529540956942a5b36d12db0c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015096"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865263"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.
