@@ -7,12 +7,18 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimholtz
-ms.openlocfilehash: f5bf3cd5e4fb6be96b8b1853390df1ee8f9bd027
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 8a94439a1f3de2d269600ed1894c8c3bf991d030
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349832"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42845324"
 ---
 # <a name="download-a-list-of-apps-created-in-your-environments"></a>Descargar una lista de aplicaciones creadas en los entornos
 Si es un Administrador de entorno, puede ver y descargar una lista de aplicaciones creadas en los entornos que está administrando. Si es un Administrador global de Office 365 o de inquilinos de Azure Active Directory, puede ver y descargar la lista de aplicaciones creadas en todos los entornos de la organización.

@@ -15,18 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b0e2d70a9295bdf1a8a6d6a71cb6075677bb991
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949295"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844063"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Introducción para desarrolladores de Common Data Service for Apps
+
 PowerApps ofrece a usuarios, empresas, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. En esta versión, se ha agregado a PowerApps la ampliación de Common Data Service, que ahora se llama Common Data Service for Apps y contiene las principales funcionalidades de la plataforma Dynamics 365 que incorpora Dynamics 365 for Sales, Marketing y Customer Service.
 
 
 ## <a name="get-started"></a>Introducción
+
 Si ya tiene experiencia con las aplicaciones de Dynamics 365 for Sales, Marketing o Customer Service, encontrará que podrá aplicarla para personalizar y ampliar Common Data Service for Apps.
 
 Si no está familiarizado con las aplicaciones de Dynamics 365 for Sales, Marketing o Customer Service, en los temas siguientes se proporciona información general de los conceptos importantes para ayudarle a empezar a utilizar Common Data Service for Apps.
@@ -52,7 +59,7 @@ Las herramientas siguientes se distribuyen en paquetes NuGet. En el tema [Guía 
 |Herramienta de registro de complementos `PluginRegistration.exe`|Herramienta que se usa para suscribir clases de complemento de ensamblado .NET a eventos de servidor. <br />Más información: <br />[Crear un complemento](apply-business-logic-with-code.md#create-a-plug-in)<br />[Tutorial: Registrar un complemento mediante la herramienta de registro de complementos (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
 |Herramienta SolutionPackager `SolutionPackager.exe`|Una herramienta que puede descomponer de manera reversible un archivo de solución comprimido de Common Data Service for Apps en varios archivos XML y otros archivos para que se puedan administrar con facilidad por un sistema de control de código fuente.<br /> Más información: <br />[Desarrollo en equipo de soluciones](introduction-solutions.md#team-development-of-solutions)<br />[Use la herramienta SolutionPackager para comprimir y extraer un archivo de solución (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
-### <a name="net-sdk-assemblies"></a>Ensamblados del SDK de .NET 
+### <a name="net-sdk-assemblies"></a>Ensamblados del SDK de .NET
 
 Los desarrolladores de .NET pueden usar los ensamblados siguientes. Las versiones más recientes están disponibles para descargar en los correspondientes paquetes NuGet.
 

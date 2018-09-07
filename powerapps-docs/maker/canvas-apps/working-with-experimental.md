@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/16/2018
 ms.author: gregli
-ms.openlocfilehash: d976a81603d48d72ecb2dc7c279b59d0e70800eb
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 741cec402c6a5b5ea30700badd265f5e950203e9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094826"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858484"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>Descripción de las características experimentales y de versión preliminar de PowerApps
 
@@ -51,9 +55,9 @@ Hacia el final de la versión preliminar, se puede habilitar la característica 
 ## <a name="documentation"></a>Documentación
 
 ¿Dónde se puede encontrar información sobre estas características?  Las características en versión preliminar se tratan como características terminadas y se puede obtener más información acerca de ellas como lo haría con cualquier otra característica del producto: 
-- [Documentación de PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/getting-started). Le proporcionaremos los conceptos básicos sobre la nueva característica: sus ventajas, cómo empezar a usarla e información de referencia.
+- [Documentación de PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started). Le proporcionaremos los conceptos básicos sobre la nueva característica: sus ventajas, cómo empezar a usarla e información de referencia.
 - [Foro de la comunidad de PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).  Otros explorarán la nueva característica con usted. Aprenda de sus experiencias y comparta las suyas.
-- [Blog de PowerApps](https://powerapps.microsoft.com/en-us/blog/).  A menudo, pero no siempre, una entrada de blog acompaña a una nueva característica.
+- [Blog de PowerApps](https://powerapps.microsoft.com/blog/).  A menudo, pero no siempre, una entrada de blog acompaña a una nueva característica.
 
 Las características experimentales son diferentes.  Son proyectos en desarrollo y no considera que estén terminadas. La breve descripción disponible en el panel **Configuración de la aplicación** (ver abajo) podría ser la única información acerca de ellas. Las características experimentales no aparecen normalmente en la documentación. El foro de la comunidad probablemente es la mejor fuente de información.  En algunos casos, una entrada de blog temprana describe la característica.  Si no encuentra suficiente información, pregunte en los foros o espere a que la característica pase a la fase de versión preliminar.
 

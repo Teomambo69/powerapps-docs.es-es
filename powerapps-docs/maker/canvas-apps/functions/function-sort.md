@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6ad538e537dd6e5c98e323b9bf72f901a07b2367
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022548"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830780"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funciones Sort y SortByColumns en PowerApps
 Ordena una [tabla](../working-with-tables.md).

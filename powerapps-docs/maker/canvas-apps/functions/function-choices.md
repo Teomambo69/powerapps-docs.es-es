@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/15/2018
 ms.author: gregli
-ms.openlocfilehash: 8f0985203017ec21d49fa98be870208c6ecf3ea5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022180"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832805"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.

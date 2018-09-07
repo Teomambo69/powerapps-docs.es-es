@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: dc93c1a753b74cd5c1160eaff9e353c00335d563
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020823"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831485"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Funciones Filtrar, Buscar y Búsqueda en PowerApps
 Busca uno o varios [registros](../working-with-tables.md#records) en una [tabla](../working-with-tables.md).

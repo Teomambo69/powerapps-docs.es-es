@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: 9b9130671d49d58ee2aabce316b9c369753cedef
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016614"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851331"
 ---
 # <a name="iferror-function-in-powerapps"></a>Función IfError en PowerApps
 Detecta errores y proporciona un valor alternativo o lleva a cabo una acción.

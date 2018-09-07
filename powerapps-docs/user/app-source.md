@@ -11,12 +11,17 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: ce7494e136c3cc4e0ff6e841f5145fee8a9185c2
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 512d45a92bf4fe3a8f5acb9d4bd5617bcdbaa4ca
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925487"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844671"
 ---
 # <a name="discover-apps-via-appsource"></a>Detectar aplicaciones a través de AppSource
 Las aplicaciones que se crean y publican con PowerApps se detectan y utilizan en Dynamics 365 en la Web. Muestra todas las aplicaciones: las que haya decidido usar específicamente (es decir, al iniciarlas desde un correo electrónico compartido o abrirlas desde AppSource) o las que un administrador haya aprovisionado para su uso. Esto incluye todas las aplicaciones de PowerApps, así como las de Dynamics 365 de Microsoft. Puede buscar aplicaciones, filtrar por entorno y anclar las aplicaciones que use con más frecuencia a la parte superior de la página.
