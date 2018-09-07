@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 6a6217c0a344d0501c8a856b0632397044ceb465
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e2424207cdc70f2f8135fa6ef5559cec2fc637d9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349648"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834007"
 ---
 # <a name="data-groups"></a>Grupos de datos
 Los grupos de datos son una manera sencilla de clasificar servicios dentro de una [directiva de prevención de pérdida de datos (DLP)](prevent-data-loss.md). Los dos grupos de datos disponibles son el grupo **Business data only** (Solo datos empresariales) y el grupo **No business data allowed** (No se permiten datos empresariales). Las organizaciones pueden determinar libremente qué servicios se colocan en un grupo de datos determinado. Una buena manera de clasificar servicios es colocarlos en grupos, según el impacto sobre la organización. De forma predeterminada, todos los servicios se colocan en el grupo de datos **No business data allowed** (No se permiten datos empresariales). Se administran los servicios en un grupo de datos cuando se crean o modifican las propiedades de una directiva DLP desde el centro de administración.

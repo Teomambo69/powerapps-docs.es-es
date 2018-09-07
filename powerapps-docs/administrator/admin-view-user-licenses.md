@@ -7,12 +7,18 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimholtz
-ms.openlocfilehash: e2c00f4ab10b2dc6cecc63d9539ffcf86a5bfcb8
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 41f557b7b4def385a505e3bc3047354add81955e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39348866"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832457"
 ---
 # <a name="download-a-list-of-active-users-in-your-tenant"></a>Descargar una lista de usuarios activos en el inquilino
 Si es administrador global de Office 365 o administrador de inquilinos de Azure Active Directory, puede descargar una lista de usuarios activos en el inquilino, para poder ver no solo quién ha obtenido acceso a PowerApps, Microsoft Flow o ambos, sino también las licencias asignadas a esos usuarios.

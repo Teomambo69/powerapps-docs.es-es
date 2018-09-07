@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: dafd6e4aafdc8f4709d25b9de8e6b997665c3d4a
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a1ee0b02465853306881ca4379182aef42bffd84
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469853"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833548"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Crear una aplicación de lienzo desde cero a partir de datos de Excel
 

@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: bfba09ace77fb0ab62a4c5b4cb6a01e040f07d2f
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: a8bd709c3dcc4871d637778c12a81f5be4f0a494
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349441"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42860546"
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>Compra de PowerApps para la organización
 En este artículo se muestra cómo adquirir PowerApps para su organización como administrador. Puede comprar PowerApps directamente a través del sitio web de PowerApps a través del Centro de administración de Office 365, o a través de su representante de Microsoft o su asociado. En este artículo se describen las opciones de prueba disponibles para PowerApps Plan 1 o Plan 2 y, después, se explica cómo comprar PowerApps Plan 1 o Plan 2 como organización. Para más información, consulte [PowerApps in your organization Q&A](signup-question-and-answer.md) (Preguntas y respuestas sobre PowerApps en su organización).

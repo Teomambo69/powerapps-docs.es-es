@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 4cd5c4bf27675da7660bb2aa240de3c533c263a6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: be961fe0a716351f59cb70b3a31116fd06039256
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019880"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863039"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Propiedades de color y bordes en PowerApps
 ## <a name="overview"></a>Información general

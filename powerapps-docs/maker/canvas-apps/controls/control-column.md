@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: fikaradz
-ms.openlocfilehash: fdd759c06cebd573236f6de4e126766c42c354f2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: e1c8ba704a01c989da990fd1b2b17f7b5def5541
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015211"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850864"
 ---
 # <a name="column-control-in-powerapps"></a>Control Columna en PowerApps
 Proporciona la representación de un solo campo en un control [**Tabla de datos**](control-data-table.md).

@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: df7ea7bd8a32354191d12d63881988dfd1c8e49e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349027"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843760"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de Common Data Service for Apps
 
@@ -52,7 +58,7 @@ En este artículo se describen las acciones siguientes:
 
 CDS for Apps y la versión anterior de Common Data Service (CDS) tienen proceso independientes para interactuar con los datos personales.
 
-Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com) y siga estos pasos:
+Para poder identificar qué tipo de entorno CDS tiene, inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y siga estos pasos:
 
 1. En la lista desplegable **Entorno**, seleccione el entorno.
 2. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
@@ -308,12 +314,12 @@ Puede encontrar los datos personales de los usuarios de la versión anterior de 
 
 |Recurso | Propósito | Acceso al sitio web |  Acceso mediante programación
 | --- | --- | --- | ---
-|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com) |      No
+|Registros de entidad | Captura las transacciones comerciales en la entidad de negocio correspondiente. | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |   No
 
 #### <a name="entity-records"></a>Registros de entidad
 Los datos personales de un usuario se pueden almacenar en cualquier entidad de negocio.
 
-Esta versión de CDS contiene su propio esquema e infraestructura de base de datos. Tiene sus propias entidades y las administra en [PowerApps](http://web.powerapps.com/).
+Esta versión de CDS contiene su propio esquema e infraestructura de base de datos. Tiene sus propias entidades y las administra en [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 Para ver una lista de sus entidades:
 
@@ -348,7 +354,7 @@ Para rectificar los datos personales que residen en el entorno de CDS, puede exp
 
 Los administradores del sistema CDS son responsables de identificar todas las entidades que contienen los datos personales de un usuario y de repetir los pasos siguientes para cada una de esas identidades.
 
-En [PowerApps](http://web.powerapps.com/):
+En [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc):
 
 1. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
 
@@ -379,7 +385,7 @@ En [PowerApps](http://web.powerapps.com/):
 ### <a name="export"></a>Exportar
 Puede exportar datos personales de cada entidad a una hoja de cálculo de Excel para verla.
 
-En [PowerApps](http://web.powerapps.com/):
+En [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc):
 
 1. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
 
@@ -404,7 +410,7 @@ Puede eliminar los datos personales que están almacenados en entidades mediante
 
 Los administradores del sistema CDS son responsables de identificar todas las entidades que contienen los datos personales de un usuario y de repetir los pasos siguientes para cada una de esas identidades.
 
-En [PowerApps](http://web.powerapps.com/):
+En [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc):
 
 1. En el panel de navegación, pulse o haga clic en **Datos** y, después, en **Entidades**.
 

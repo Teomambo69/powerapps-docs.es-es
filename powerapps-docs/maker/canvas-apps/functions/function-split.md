@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta anneta
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 6fa850add848463b755d0bfadf6d451f7e3556dd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 7cc3608d6a973c0ef301c9979b62f5ba898c029c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020800"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42848587"
 ---
 # <a name="split-function-in-powerapps"></a>Función Split en PowerApps
 Divide una cadena de texto en una tabla de subcadenas.

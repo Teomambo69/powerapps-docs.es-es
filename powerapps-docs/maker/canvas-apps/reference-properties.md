@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: d1cda8d13faa0c20786f8f7f466951b2fe5eb95e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018109"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863134"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.

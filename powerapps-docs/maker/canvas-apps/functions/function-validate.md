@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 6a8bff341484139e6d16092fc2ea3cbacb384777
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022847"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865679"
 ---
 # <a name="validate-function-in-powerapps"></a>Función Validate en PowerApps
 La función **Validate** comprueba si el valor de una única [columna](../working-with-tables.md#columns) o un [registro](../working-with-tables.md#records) completo es válido para un [origen de datos](../working-with-data-sources.md).  

@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/28/2017
 ms.author: nimak
-ms.openlocfilehash: db5861b9f598045436ad0bf796f04ed1df4b8903
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349763"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843375"
 ---
 # <a name="export-and-import-resources"></a>Exportar e importar recursos
 Si ha creado varios entornos para admitir el desarrollo de la base de datos y las aplicaciones, debe mover los cambios de un entorno a otro. Puede usar **Exportar recursos** e **Importar recursos** para mover recursos entre entornos.

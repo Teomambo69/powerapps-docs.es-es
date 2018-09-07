@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 56e994929036cc713e7bf7dfc04f46bf991a3530
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 88e51e4547732bed2d3e7ef3290bc8d933afded3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30024306"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849920"
 ---
 # <a name="use-web-resources"></a>Uso de recursos web
 

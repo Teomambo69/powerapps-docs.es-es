@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: ef7bd648b103755d724481225e726a9faab863dc
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 9c290d28db7ae35d33f4ceb2cd56c3a3ad79b01c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018132"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832845"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 0128c0b31e2941b59167a0515b993e9a5517d040
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023077"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865518"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Función UpdateContext de PowerApps
 Crea o actualiza [variables de contexto](../working-with-variables.md#create-a-context-variable) de la pantalla actual.

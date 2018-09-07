@@ -9,12 +9,16 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.reviewer: anneta
-ms.openlocfilehash: 6b1b2f246f8cb598b1f20f5a1418651491f73bd5
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: cc4338e37b7ecde2e2e2e9ad5c5ac6e96d116b58
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39021927"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849854"
 ---
 # <a name="card-control-in-powerapps"></a>Control Card en PowerApps
 Proporciona la experiencia de edición y visualización de un solo campo de un control **[Formulario de presentación](control-form-detail.md)** o **[Formulario de edición](control-form-detail.md)**.

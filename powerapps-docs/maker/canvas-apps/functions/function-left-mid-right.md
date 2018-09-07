@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 5f9500551be3c1d929e62034f94fc587cc956fd5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: dea20bf885afa8e687329aff4babff00b4f3263b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017166"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864965"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Funciones Left, Mid y Right en PowerApps
 Extrae la parte izquierda, central o derecha de una cadena de texto.

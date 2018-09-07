@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ae73d5df51b2656fc4f33e7258078140a180926d
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: fddbb40e7b4b5d94b1df02e32af6316cce0a17d9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349211"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862896"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Respuesta a solicitudes de derechos del interesado (DSR) sobre datos de cliente de PowerApps
 
@@ -68,7 +74,7 @@ Aplicaciones controladas por modelos y permisos de aplicación controlados por m
 
 PowerApps ofrece las experiencias siguientes para buscar datos personales de un usuario concreto:
 
-- **Acceso al sitio web**: [sitio de PowerApps](https://web.powerapps.com), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
+- **Acceso al sitio web**: [sitio de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Centro de administración de PowerApps](https://admin.powerapps.com/) y [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)
 - **Acceso de PowerShell**: cmdlets de PowerApps (para [creadores de aplicaciones](https://go.microsoft.com/fwlink/?linkid=871448) y [administradores](https://go.microsoft.com/fwlink/?linkid=871804)) y [cmdlets de puerta de enlace local](https://go.microsoft.com/fwlink/?linkid=872238)
 
 Para instrucciones detalladas sobre cómo puede usar estas experiencias para encontrar datos personales de un usuario específico para cada uno de estos tipos de recursos, consulte [Respuesta a solicitudes de derechos del interesado (DSR) para exportar datos de cliente de PowerApps](powerapps-gdpr-export-dsr.md).

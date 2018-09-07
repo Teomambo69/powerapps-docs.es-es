@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 9943fba1be1851a5037401a65d994a259e9cdc9d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6625df3f822462c86de1f720b7a310f5e516a6ca
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018707"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849880"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Funciones Calendar y Clock en PowerApps
 Recupera información de calendario y reloj de la configuración regional actual.

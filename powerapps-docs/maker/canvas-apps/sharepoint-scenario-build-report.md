@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: e828b5aa6d29f4498114a8a9e36099c9cc3a2577
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: adda4a7adae9961b77f01320e92527b53ac61e7f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022801"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42828786"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]
