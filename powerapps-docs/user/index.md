@@ -11,12 +11,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: 83670a844c62a6daea489d5484641e9c457653f8
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8396d62e0f427d005f6b9e486820316be869ed15
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925671"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42826738"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?
 Los creadores de aplicaciones pueden crear aplicaciones de *lienzo* personalizadas basadas en roles y tareas que funcionan a su ritmo, ya sea un trabajador móvil sobre el terreno o un médico en un hospital con mucho trabajo. Los creadores de aplicaciones pueden personalizar casi todos los aspectos de una aplicación de lienzo y conectarse a varios orígenes de datos para ayudar a los usuarios a completar tareas específicas.
