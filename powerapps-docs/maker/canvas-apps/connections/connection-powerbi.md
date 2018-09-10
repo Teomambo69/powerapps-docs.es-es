@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 619085bbc11214fbba308abc7a630a3631cb2ec1
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f639f82e6fc927f693b8f8353cdc125c487e4c1f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195183"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42829965"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Conectar al Power BI desde PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI es un conjunto de herramientas de análisis de negocios destinado a analizar datos y compartir información. Supervise su negocio y obtenga respuestas rápidamente con paneles muy completos disponibles en todos los dispositivos. En su aplicación, puede comprobar el estado de las alertas de datos que ha configurado en el servicio Power BI. Para más información sobre las alertas de datos en Power BI, vaya a la [página de documentación](https://https://docs.microsoft.com/power-bi/service-set-data-alerts).
+Power BI es un conjunto de herramientas de análisis de negocios destinado a analizar datos y compartir información. Supervise su negocio y obtenga respuestas rápidamente con paneles muy completos disponibles en todos los dispositivos. En su aplicación, puede comprobar el estado de las alertas de datos que ha configurado en el servicio Power BI. Para más información sobre las alertas de datos en Power BI, vaya a la [página de documentación](https:// https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
 En este tema se muestra cómo utilizar la conexión de Power BI en una aplicación y se enumeran las funciones disponibles.
 
