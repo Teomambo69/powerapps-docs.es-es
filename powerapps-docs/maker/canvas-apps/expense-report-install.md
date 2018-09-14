@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c2d9e2b815d1ff2c3dc80bc6c37f1c2e78364ac
-ms.sourcegitcommit: b35470285b96750d660335284d830b4d0028befb
+ms.openlocfilehash: 43d1dc6ef2d264dd60b6a9f3de0f5c0fed633283
+ms.sourcegitcommit: d3d665500b9c49c14657d044b084bdd64c52c5a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "42859513"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124484"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -204,7 +204,7 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 
 1.  En un explorador web, desplácese hasta el siguiente vínculo:
 
-    http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip.
+    [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
 2.  Descargue el paquete de ejemplo de PowerApps de informe de gastos y guárdelo en su equipo.
 

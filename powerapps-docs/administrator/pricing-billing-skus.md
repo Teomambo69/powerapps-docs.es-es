@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 09/11/2018
 ms.author: jamesol
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 301592978d483d1b6ff5930a01f6c6c0119c779e
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864388"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499554"
 ---
 # <a name="licensing-overview"></a>Introducción a las licencias
 Las licencias de PowerApps se conceden por usuario. Todos y cada uno de los usuarios que acceda al servicio para crear y ejecutar aplicaciones necesitan una licencia. Los clientes de Office 365 y Dynamics 365 pueden beneficiarse inmediatamente de las funcionalidades de PowerApps y Microsoft Flow que incluyen estas ofertas. Los clientes que desean crear aplicaciones y flujos que acceden a orígenes de datos de fuera de Office 365 y Dynamics 365, o que necesitan más funcionalidad, pueden comprar suscripciones independientes a PowerApps y Microsoft Flow. Hay diferencias importantes en la funcionalidad entre estos grupos de licencias.
@@ -92,7 +92,7 @@ Si desea desarrollar habilidades y obtener información sobre PowerApps, Microso
 Las licencias de PowerApps siempre incluyen funcionalidades de Microsoft Flow.  Además de que se incluirse en PowerApps, Microsoft Flow también está disponible como servicio independiente. Para más información acerca de las funcionalidades específicas de Microsoft Flow que incluye cada licencia de PowerApps, consulte la [página de precios de PowerApps][2].
 
 ## <a name="resource-capacity-is-included-with-each-license"></a>Todas las licencias incluyen la capacidad de los recursos
-Las licencias por usuario anteriores incluyen la capacidad de los recursos que se usa cuando se ejecuta una aplicación o un flujo. Dichos recursos incluyen el almacenamiento de datos, el almacenamiento de archivos y las ejecuciones de flujo. Las funcionalidades que se incluyen en las licencias por usuario se agrupan en el nivel de inquilino y cuando se agota la capacidad del inquilino, los clientes pueden adquirir capacidad adicional mediante licencias de complementos. La capacidad máxima de Common Data Service es 10 GB por base de datos y 5 TB para el almacenamiento de archivo por entorno. Si compra capacidad adicional y la capacidad disponible (con la combinación de licencias y complementos) es mayor que la capacidad máxima, puede usar la cantidad total en varios entornos. Para conocer la capacidad que incluye cada licencia de PowerApps, consulte la [página de precios de PowerApps][2].
+Las licencias por usuario anteriores incluyen la capacidad de los recursos que se usa cuando se ejecuta una aplicación o un flujo. Dichos recursos incluyen el almacenamiento de datos, el almacenamiento de archivos y las ejecuciones de flujo. Las funcionalidades que se incluyen en las licencias por usuario se agrupan en el nivel de inquilino y cuando se agota la capacidad del inquilino, los clientes pueden adquirir capacidad adicional mediante licencias de complementos. Si compra capacidad adicional y la capacidad disponible (con la combinación de licencias y complementos) es mayor que la capacidad máxima, puede usar la cantidad total en varios entornos. Para conocer la capacidad que incluye cada licencia de PowerApps, consulte la [página de precios de PowerApps][2].
 
 ## <a name="powerapps-licensing-examples"></a>Ejemplos de licencias PowerApps
 Veamos un ejemplo. ABC Inc. tiene 1.000 empleados, de los que 700 tienen una licencia de Office 365 Enterprise 3. Al principio, un usuario avanzado crea una aplicación de línea de negocio que simplifica cómo se realiza el seguimiento de los pedidos de los clientes. Más adelante, el departamento de recursos humanos trabaja con el de TI para implementar una aplicación que informe del tiempo no trabajado y de las ausencias, y dicha aplicación se basa en Common Data Service.
