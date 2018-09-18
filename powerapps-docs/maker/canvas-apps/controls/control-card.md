@@ -44,7 +44,7 @@ Consulte [Understand data cards](../working-with-cards.md) (Introducción a las 
 **DataField**: el nombre del campo dentro de un registro que esta tarjeta muestra y edita.
 
 * Especifique el nombre como una sola cadena estática incluida entre comillas dobles (por ejemplo, **"Nombre"**), no una fórmula.
-* Para desenlazar una tarjeta, establezca su propiedad **DataField***en blanco*. Las propiedades **Valid** y **Actualizar** se ignoran en las tarjetas desenlazadas.
+* Para desenlazar una tarjeta, establezca su propiedad **DataField** *en blanco*. Las propiedades **Valid** y **Actualizar** se ignoran en las tarjetas desenlazadas.
 
 **[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
 
