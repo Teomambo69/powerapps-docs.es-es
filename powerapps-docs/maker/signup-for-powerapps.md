@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39195206"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726915"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registro para obtener una licencia gratuita para probar PowerApps
 Para crear una aplicación en PowerApps, necesitará uno de los distintos tipos de licencias que proporcionan diferentes niveles de funcionalidad. Ya tiene una licencia para PowerApps si la organización ha comprado cualquiera de las versiones de Office 365 o Dynamics 365 para usted, o bien si ha comprado licencias del Plan 1 o Plan 2 de PowerApps para usted.
@@ -93,7 +93,7 @@ Cuando aparezca este cuadro de diálogo, haga clic en **Iniciar** y, después, e
     En la [lista completa de conectores](./canvas-apps/connections-list.md), los conectores Premium se muestran con una notificación:
 
     ![](./media/signup-for-powerapps/premium-badge.png)
-* **Acceso al centro de administración de PowerApps**, en el que puede administrar sus entornos, bases de datos, permisos de usuario y directivas de datos. [Más información](../administrator/introduction-to-the-admin-center.md)
+* **Acceso al centro de administración de PowerApps**, en el que puede administrar sus entornos, bases de datos, permisos de usuario y directivas de datos. [Más información](../administrator/admin-guide.md)
 * **Crear aplicaciones en modo controlado por modelos** en el que se agregan componentes a una aplicación y se permite a PowerApps crear su diseño y otros elementos de interfaz. 
 
 Para obtener más información sobre la capacidad y funcionalidad adicionales de la licencia de evaluación, vea la [página de precios](https://powerapps.microsoft.com/pricing/).
