@@ -6,23 +6,23 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 05/01/2018
 ms.author: clwesene
-ms.openlocfilehash: 758d5b5ff2c552a4c4ccbf210062f35d4e53209c
-ms.sourcegitcommit: efea7ed5ad8e80c87ba423fb094fa94b4e864d75
+ms.openlocfilehash: 4350f7141adf0fbce3e74271d6aff48c18c857e2
+ms.sourcegitcommit: 2bcc36916f0c591466eb3e007c2d30b99f2315c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39265519"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40009268"
 ---
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
 Los creadores de aplicaciones pueden usar la mayoría de las entidades disponibles en Common Data Service (CDS) for Apps (incluidas las entidades personalizadas y las que forman parte de Common Data Service) para crear aplicaciones y flujos para los usuarios que tengan una licencia del plan 1 de PowerApps o de Microsoft Flow. En algunos casos, las entidades contienen lógica de negocios compleja o están asociadas a aplicaciones de Dynamics 365 que requieren que los usuarios de la aplicación tengan una licencia específica. 
 
 
-|Entidad  |Descripción  |Requisito  |
+|Entidad    |Descripción    |Requisito    |
 |---------|---------|---------|
-|Entidades con lógica de negocios compleja  | Se trata de entidades que usan una lógica de negocios compleja del lado servidor. Por ejemplo, cualquier entidad que use un flujo de trabajo o un complemento de código en tiempo real.     | [Plan 2 de PowerApps](https://powerapps.microsoft.com/pricing/) o [Plan 2 de Flow](https://flow.microsoft.com/pricing/)  | 
-|Entidades restringidas    | Se trata de entidades que no son estándares en Common Data Service for Apps, pero se incluyen en una aplicación del plan Customer Engagement de Dynamics 365 o en una solución de terceros. Por ejemplo, el artículo de conocimientos, el objetivo y las entidades de derecho.    | [Plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)    |
+|Entidades con lógica de negocios compleja   | Se trata de entidades que usan una lógica de negocios compleja del lado servidor. Por ejemplo, cualquier entidad que use un flujo de trabajo o un complemento de código en tiempo real.       |  [Plan 2 de PowerApps](https://powerapps.microsoft.com/pricing/) o [Plan 2 de Flow](https://flow.microsoft.com/pricing/)        |
+|Entidades restringidas  |  Se trata de entidades que no son estándares en Common Data Service for Apps, pero se incluyen en una aplicación del plan Customer Engagement de Dynamics 365 o en una solución de terceros. Por ejemplo, el artículo de conocimientos, el objetivo y las entidades de derecho.     |  [Plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -37,7 +37,7 @@ Las entidades que incluyen la siguiente lógica compleja del lado servidor requi
     > [!NOTE]
     >  Solo los flujos de trabajo que se convierten en un flujo de trabajo en tiempo real se consideran de tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano se pueden seguir usando con el plan de PowerApps adecuado y no requieren licencias adicionales.
 
-Para saber si ha agregado o no lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y flujos de trabajo configurados en el entorno. Para consultar la lista de entidades que pueden contener una lógica del lado servidor después de instalar una aplicación de Dynamics 365, vea [Entidades complejas que requieren licencias del plan 2 de PowerApps](data-platform-complex-entities.md). 
+Para saber si ha agregado o no lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y flujos de trabajo configurados en el entorno. Para consultar la lista de entidades que pueden contener una lógica del lado servidor después de instalar una aplicación de Dynamics 365, vea [Entidades complejas que requieren licencias del plan 2 de PowerApps](data-platform-complex-entities.md).  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>Requisitos de licencia con impacto al agregar lógica de negocios compleja
 Los creadores de aplicaciones pueden agregar complementos de código y flujos de trabajo en tiempo real a entidades de CDS for Apps, pero al hacerlo se cambiarían los requisitos de licencia para los usuarios de las aplicaciones ya implementadas. Los creadores de aplicaciones deben tener cuidado al agregar lógica de negocios compleja a una entidad y primero deben comprobar qué aplicaciones usan la entidad y si los usuarios de esas aplicaciones tienen las licencias correspondientes.
