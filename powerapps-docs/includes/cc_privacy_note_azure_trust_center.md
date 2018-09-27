@@ -1,1 +1,0 @@
-Centro de confianza de Microsoft Azure
