@@ -1,6 +1,6 @@
 ---
-title: Aplicaciones de ejemplo controladas por modelos
-description: Obtenga información sobre cómo obtener, personalizar y quitar aplicaciones de ejemplo controladas por modelos.
+title: Aplicaciones controladas por modelos de ejemplo
+description: 'Comprenda cómo obtener, personalizar y quitar aplicaciones controladas por modelos de ejemplo.'
 documentationcenter: na
 author: caburk
 manager: kvivek
@@ -10,53 +10,53 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: 0b34a32281fb4f64bc918de81b3920edf5a7000b
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39664436"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="model-driven-sample-apps"></a>Aplicaciones de ejemplo controladas por modelos
 
-En [powerapps.com](https://powerapps.com), utilice una aplicación de ejemplo para explorar posibilidades de diseño y descubrir conceptos que puede aplicar al desarrollar sus propias aplicaciones. Cada aplicación de ejemplo usa datos ficticios para presentar un escenario real. 
+# <a name="model-driven-sample-apps"></a>Aplicaciones controladas por modelos de ejemplo
 
-No olvide consultar la documentación específica de cada aplicación de ejemplo para obtener más información. 
+En [powerapps.com](https://powerapps.com), use una aplicación de ejemplo para explorar posibilidades de diseño y para descubrir conceptos que puede aplicar cuando se desarrolla sus propias aplicaciones. Cada aplicación de ejemplo usa datos ficticios para mostrar un escenario del mundo real. 
 
-![Aplicación de ejemplo Fundraiser](media/overview-model-driven-samples/fundraiser-app1.png)
+Asegúrese de comprobar la documentación específica de cada aplicación de ejemplo para obtener más detalles. 
+
+![Aplicación de ejemplo de recaudador de fondos](media/overview-model-driven-samples/fundraiser-app1.png)
 
 
 ## <a name="get-sample-apps"></a>Obtener aplicaciones de ejemplo
 
-Para reproducir o modificar las aplicaciones de ejemplo controladas por modelos, primero se deben aprovisionar en una base de datos de Common Data Service. En primer lugar, cree un entorno y una base de datos de prueba y no olvide activar **Include sample apps and data** (Incluir aplicaciones y datos de ejemplo).
+Para ejecutar o editar aplicaciones controladas por modelos de ejemplo, primero se deben introducir las aplicaciones en una base de datos de Common Data Service. Primero cree un entorno y una base de datos de prueba y asegúrese de marcar la opción **Incluir aplicaciones y datos de ejemplo**.
 
-![Crear una base de datos](media/overview-model-driven-samples/create-database1.png)
+![Crear base de datos](media/overview-model-driven-samples/create-database1.png)
 
 
 > [!IMPORTANT]
-> Esta opción instala todas las aplicaciones de ejemplo disponibles en la base de datos. Las aplicaciones de ejemplo son para fines educativos y de demostración, y no se recomienda su instalación en bases de datos de producción. 
+> Esta opción instala todas las aplicaciones de ejemplo disponibles en la base de datos. Las aplicaciones de ejemplo son para fines educativos y de demostración y no se recomienda instalarlas en bases de datos de producción. 
 
 ## <a name="customize-a-sample-app"></a>Personalizar una aplicación de ejemplo
 
-1. Inicie sesión en [powerapps.com](https://powerapps.com) y elija **Basado en modelos** para el modo de diseño. 
+1. Inicie sesión en [powerapps.com](https://powerapps.com) y elija **Controlado por modelos** para el modo de diseño. 
 
-    ![Elección del modo de diseño](media/overview-model-driven-samples/choose-design-mode.png)
+    ![Elegir el modo de diseño](media/overview-model-driven-samples/choose-design-mode.png)
 
-2. En la página de inicio, mantenga el puntero sobre la aplicación de ejemplo y haga clic en **Personalizar**.
-3. Se abrirá el Diseñador de aplicaciones con varias opciones para personalizar la aplicación. 
-4. Para ver opciones de personalización adicionales, haga clic en **Opciones avanzadas** en la barra de navegación de la izquierda en el portal.
+2. En la página principal, pase el cursor por encima de la aplicación de ejemplo y haga clic en **Personalizar**.
+3. El diseñador de aplicaciones se abrirá proporcionando varias opciones para personalizar la aplicación. 
+4. Para ver más opciones de personalización, haga clic en **Avanzadas** en la navegación izquierda del portal.
 
-## <a name="remove-sample-apps-and-data"></a>Quitar datos y aplicaciones de ejemplo 
-- Para eliminar una aplicación de ejemplo es necesario eliminar la [solución administrada](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution) correspondiente. 
-- Al eliminar la solución también se eliminan los datos de ejemplo específicos de las entidades personalizadas para la aplicación.
-- Si se realizaron personalizaciones en la aplicación de ejemplo, puede haber [dependencias](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components), que deben quitarse antes de eliminar la solución.
+## <a name="remove-sample-apps-and-data"></a>Quitar aplicaciones y datos de ejemplo 
+- Eliminar una aplicación de ejemplo requiere eliminar la correspondiente [solución administrada](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution). 
+- Al eliminar la solución también se eliminan los datos de ejemplo específicos de las entidades personalizadas de la aplicación.
+- Si se realizaron personalizaciones en la aplicación de ejemplo, puede haber [dependencias](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components), que se deberán quitar antes de eliminar la solución.
 
 ### <a name="steps"></a>Pasos
-1. Inicie sesión en el [Centro de administración de PowerApps](https://admin.powerapps.com).
+1. Inicie sesión en el [portal de administración de PowerApps](https://admin.powerapps.com).
 
 2. Seleccione un entorno.
 
-3. Haga clic en **Centro de administración de Dynamics 365** 
+3. Haga clic en **Dynamics 365 Administration Center** 
 
     ![Centro de administración de Dynamics 365](media/overview-model-driven-samples/admin-center.png)
 
@@ -64,23 +64,23 @@ Para reproducir o modificar las aplicaciones de ejemplo controladas por modelos,
 
     ![Seleccionar la base de datos](media/overview-model-driven-samples/select-database.png)
 
-5. Vaya a **Configuración/soluciones**.
+5. Desplácese a **Configuración/Soluciones**.
 
-6. Seleccione la solución para la aplicación que se va a eliminar y haga clic en **Eliminar**.
+6. Seleccione la solución para la aplicación que se va a eliminar y haga clic **Eliminar**.
 
-    ![Eliminar la solución](media/overview-model-driven-samples/delete-solution.png)
+    ![Eliminar solución](media/overview-model-driven-samples/delete-solution.png)
 
-*Como alternativa, vaya a la lista de soluciones haciendo clic en **Opciones avanzadas** en el portal de creador y elimine todo el contenido de la dirección URL después de .dynamics.com/*
+*También puede acceder a la lista de soluciones haciendo clic en **Avanzadas** en el portal de creadores y eliminando todo lo que hay en la dirección URL después de .dynamics.com/*
 
 > [!IMPORTANT]
-> No elimine otras soluciones del sistema a menos que sea consciente del impacto.
+> No elimine otras soluciones del sistema a menos que tenga en cuenta su repercusión.
 
 ## <a name="install-or-uninstall-sample-data"></a>Instalar o desinstalar datos de ejemplo
-1. Siga los pasos 1 a 4 anteriores.
-2. Vaya a **Configuración/Administración de datos/Datos de ejemplo**.
-3. Si hay datos de ejemplo instalados, la opción para quitarlos está disponible. En caso contrario, estará disponible la opción para instalar. 
+1. Siga los pasos 1-4 anteriores.
+2. Acceda a **Configuración/Administración de datos/Datos de ejemplo**.
+3. Si hay datos de ejemplo instalados, la opción de eliminar está disponible. En caso contrario, estará disponible la opción de instalar. 
 
-    ![Quitar datos de ejemplo](media/overview-model-driven-samples/remove-sample-data.png)
+    ![quitar datos de ejemplo](media/overview-model-driven-samples/remove-sample-data.png)
 
 
 

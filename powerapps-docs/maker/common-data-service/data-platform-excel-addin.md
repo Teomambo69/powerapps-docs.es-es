@@ -1,6 +1,6 @@
 ---
-title: Apertura de los datos de entidad en Excel | Microsoft Docs
-description: Abra los datos de la entidad en Excel para la visualización y edición interactivas.
+title: Abrir datos de entidad en Excel | Microsoft Docs
+description: Abrir datos de entidad en Excel para la visualización y edición interactivas.
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,77 +8,76 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: ad1a2de5491a1725ada2e95c3eccc6513de9e304
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218496"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="open-entity-data-in-excel"></a>Abrir los datos de la entidad en Excel
-Al abrir los datos de la entidad en Microsoft Excel, estos se pueden ver y editar de forma rápida y sencilla mediante el complemento de Excel de Microsoft PowerApps. Este complemento requiere Microsoft Excel 2016.
+# <a name="open-entity-data-in-excel"></a>Abrir datos de entidad en Excel
+Al abrir datos de entidad en Microsoft Excel, puede ver y editar datos de forma rápida y sencilla usando el complemento de Excel Microsoft PowerApps. El complemento de Excel PowerApps requiere Microsoft Excel 2016.
 
-![Complemento de Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Complemento de Excel de PowerApps")
+![Complemento de Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Complemento de Excel PowerApps")
 
-## <a name="open-entity-data-in-excel"></a>Abrir los datos de la entidad en Excel
-1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y pulse o haga clic en **Entidades** en el panel de navegación de la izquierda. Se muestran todas las entidades.
-2. Haga clic en los puntos suspensivos (...) que hay a la derecha de la entidad que le interesa.
-3. Haga clic en **Abrir en Excel** y abra el libro que se genera. Dicho libro generado información de enlace de la entidad, un puntero a su entorno y un puntero para el complemento de Excel de PowerApps.  
-4. En Excel, haga clic en **Habilitar edición** para habilitar la ejecución del complemento de Excel de PowerApps. El complemento de Excel se ejecutará en un panel de la derecha de la ventana de Excel.
-5. Si es la primera vez que ejecuta el complemento, de Excel de PowerApps, haga clic en **Confiar en este complemento** para permitir que se ejecute el complemento de Excel.
-6. Si se le solicita que inicie sesión, haga clic en **Inicio de sesión** y hágalo con las mismas credenciales que usó en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). El complemento de Excel utilizará un contexto de inicio de sesión anterior e iniciará sesión automáticamente, en caso de que sea posible. Por tanto, compruebe el nombre de usuario en la parte superior derecha del complemento de Excel.
+## <a name="open-entity-data-in-excel"></a>Abrir datos de entidad en Excel
+1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda. Se muestran todas las entidades.
+2. Haga clic en los puntos suspensivos (...) a la derecha de la entidad que le interesa.
+3. Haga clic en **Abrir en Excel** y abra el libro generado. Este libro tiene información de enlace para la entidad, un puntero al entorno y un puntero al complemento de Excel PowerApps.  
+4. En Excel, haga clic en **Habilitar edición** para habilitar el complemento de Excel PowerApps para que se ejecute. El complemento de Excel se ejecuta en un panel a la derecha de la ventana de Excel.
+5. Si esta es la primera vez que ha ejecutado el complemento de Excel PowerApps, haga clic en **Confiar en este complemento** para permitir que el complemento de Excel se ejecute.
+6. Si se le solicita iniciar sesión, haga clic en **Iniciar sesión** y, a continuación, inicie sesión con las mismas credenciales que usó en [powerapps.com](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). El complemento de Excel usará un contexto de inicio de sesión anterior y establecerá la conexión, si puede. Por lo tanto, compruebe el nombre de usuario en la parte superior derecha del complemento de Excel.
 
-El complemento de Excel lee automáticamente los datos de la entidad que ha seleccionado. Tenga en cuenta que no habrá ningún dato en el libro hasta que el complemento de Excel los lea.
+El complemento de Excel lee automáticamente los datos de la entidad seleccionada. Tenga en cuenta que no habrá datos en el libro hasta que el complemento de Excel los lea.
 
-## <a name="view-and-refresh-data-in-excel"></a>Visualizar y actualizar los datos en Excel
-Después de que el complemento de Excel lea los datos de la entidad en el libro, se pueden actualizar en cualquier momento, solo es preciso hacer clic en **Actualizar** en el complemento de Excel.
+## <a name="view-and-refresh-data-in-excel"></a>Visualizar y actualizar datos en Excel
+Cuando el complemento de Excel lea datos de la entidad en el libro, puede actualizar los datos en cualquier momento haciendo clic en **Actualización** en el complemento de Excel.
 
-## <a name="edit-data-in-excel"></a>Editar datos en Excel
-Para cambiar los datos de la entidad y volver a publicarlos, haga clic en **Publicar** en el complemento de Excel.
+## <a name="edit-data-in-excel"></a>Editar datos de Excel
+Puede cambiar los datos de la entidad como sea necesario y después volver a publicarlos haciendo clic en **Publicar** en el complemento de Excel.
 
-Para editar un registro, seleccione una celda en la hoja de cálculo y cambie su valor.
+Para editar un registro, seleccione una celda en la hoja de cálculo y, a continuación, cambie el valor de la celda.
 
-Para agregar un registro nuevo, siga uno de estos pasos:
+Para agregar un nuevo registro, siga estos pasos:
 
-* Haga clic en cualquier parte en la hoja de cálculo y, después, en **Nuevo** en el complemento de Excel.
-* Haga clic en la última fila de la hoja de cálculo y presione la tecla TAB hasta que el cursor pase la última columna de la fila y se cree una fila nueva.
-* Haga clic en la fila inmediatamente inferior de la hoja de cálculo y empieza a escribir datos en una celda. Cuando cambia de celda, la hoja de cálculo se expande e incluye la nueva fila.
+* Haga clic en cualquier lugar de la hoja de cálculo y después haga clic en **Nuevo** en el complemento de Excel.
+* Haga clic en la última fila de la hoja de cálculo, pulse la tecla TAB hasta que el cursor salga de la última columna de esa fila y se creará una nueva fila.
+* Haga clic en la fila inmediatamente que hay debajo de la hoja de cálculo y empiece a introducir datos en una celda. Cuando salga de esa celda, la hoja de cálculo se expandirá para incluir la nueva fila.
 
-Para eliminar un, siga uno de estos pasos:
+Para eliminar un registro, siga estos pasos:
 
-* Haga clic con el botón derecho en el número de fila situado junto a la va a eliminar y, después, haga clic en **Eliminar**.
-* Haga clic con el botón derecho en la fila de la hoja de cálculo que va a eliminar y, después, haga clic en **Eliminar** > **Filas de la tabla**.
+* Haga clic con el botón secundario en el número de fila que hay junto a la fila de la hoja de cálculo que desea eliminar y, a continuación, haga clic en **Eliminar**.
+* Haga clic con el botón secundario en la fila de la hoja de cálculo que desea eliminar y, a continuación, haga clic en **Eliminar** > **Filas de la tabla**.
 
 ## <a name="add-or-remove-columns"></a>Agregar o quitar columnas
-Puede utilizar el diseñador para ajustar las columnas y entidades que se agregan automáticamente a la hoja de cálculo.
+Puede usar el diseñador para ajustar las columnas y las entidades que se agregan automáticamente a la hoja de cálculo.
 
-1. Para habilitar el diseñador de orígenes de datos del complemento de Excel, haga clic en el botón **Opciones** (el símbolo de engranaje) y active la casilla **Habilitar diseño**.
-2. Haga clic en **Diseño** en el complemento de Excel. Aparecerán todos los orígenes de datos.
-3. Junto al origen de datos, haga clic en el botón **Editar** (el símbolo del lápiz).
-4. Ajuste la lista del campo **Campos seleccionados** como sea necesario:
-   * Para agregar un campo de **Campos disponibles** a **Campos seleccionados**, haga clic en él y, después, en **Agregar**. Como alternativa, haga doble clic en el campo.
-   * Para quitar un campo de **Campos seleccionados**, haga clic en él y, después, en **Quitar**. Como alternativa, haga doble clic en el campo.
-   * Para cambiar el orden de los campos, haga clic en **Campos seleccionados** y, después, en **Arriba** o **Abajo**.
-5. Para aplicar los cambios al origen de datos, haga clic en **Actualizar** y, después, en **Listo** para salir del diseñador. Si ha agregado un campo (columna), haga clic en **Actualizar** para recopilar un conjunto de datos actualizado.
-
-> [!NOTE]
-> Asegúrese de incluir siempre el identificador y los campos obligatorios en el libro, ya que, de lo contrario, podría recibir errores al publicar.
+1. Habilite el diseñador de origen de datos del complemento de Excel haciendo clic en el botón **Opciones** (el símbolo de engranaje) y seleccionando la casilla **Habilitar diseño**.
+2. Haga clic en **Diseño** en el complemento de Excel. Se muestra una lista de todos los orígenes de datos.
+3. Junto al origen de datos, haga clic en el botón **Editar** (el símbolo de lápiz).
+4. Ajuste la lista en el campo **Campos seleccionados** como necesite:
+   * Para agregar un campo del campo **Campos disponibles** al campo **Campos seleccionados**, haga clic en el campo y, a continuación, haga clic en **Agregar**. O bien, haga doble clic en el campo.
+   * Para quitar un campo del campo **Campos seleccionados**, haga clic en el campo y, a continuación, haga clic en **Quitar**. O bien, haga doble clic en el campo.
+   * Para cambiar el orden de los campos, haga clic en el campo del campo **Campos seleccionados** y, a continuación, haga clic en **Arriba** o **Abajo**.
+5. Aplique los cambios al origen de datos haciendo clic en **Actualizar** y, a continuación, haga clic en **Hecho** para salir del diseñador. Si agregó un campo (columna), haga clic en **Actualizar** para obtener un conjunto de datos actualizado.
 
 > [!NOTE]
-> Al agregar campos de búsqueda, asegúrese de agregar tanto el identificador como los campos de visualización.
+> Asegúrese de incluir siempre el identificador y los campos necesarios en el libro, ya que podría recibir errores al publicar.
+
+> [!NOTE]
+> Al agregar campos de consulta, asegúrese de agregar el identificador y los campos de visualización.
 
 ## <a name="troubleshooting"></a>Solución de problemas
-Hay algunos problemas que se pueden resolver mediante algunos pasos sencillos.
+Existen algunos problemas que se pueden resolver a través de una serie de pasos sencillos.
 
-* No todas las entidades admiten la edición y creación de nuevos registros, estas entidades se abrirán en Excel y le permiten ver los datos, pero la publicación estará deshabilitada.
-* Los campos de búsqueda deben editarse mediante el complemento para garantizar que se hacer referencia al registro correcto; no se admite la actualización de estos campos mediante la opción de copiar y pegar o escribiendo directamente en el campo.
+* No todas las entidades admiten la edición y creación de nuevos registros, estas entidades se abrirán en Excel y le permitirán ver datos, aunque la publicación estará deshabilitada.
+* Los campos de búsqueda deben editarse con el complemento para garantizar que se hace referencia al registro correcto, no se permite actualizar estos campos mediante la función de copiar o pegar o introduciéndolos directamente en el campo.
 
 
-Si aparece algún problema que no se describe aquí, póngase en contacto con nosotros a través de las [páginas de soporte técnico](https://powerapps.microsoft.com/support/).
+Si se produce un problema que no se describe aquí, póngase en contacto con nosotros mediante las [páginas de soporte](https://powerapps.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Administrar campos de una entidad](data-platform-manage-fields.md)
 * [Definir relaciones entre entidades](data-platform-entity-lookup.md)
-* [Generación de una aplicación a partir de Common Data Service for Apps](../canvas-apps/data-platform-create-app.md)
-* [Crear una aplicación desde cero mediante una base de datos de Common Data Service for Apps](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generar una aplicación usando Common Data Service for Apps](../canvas-apps/data-platform-create-app.md)
+* [Crear una aplicación desde cero usando Common Data Service for Apps](../canvas-apps/data-platform-create-app-scratch.md)
 
