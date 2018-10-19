@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307847"
 ---
 # <a name="validate-function-in-powerapps"></a>Función Validate en PowerApps
 La función **Validate** comprueba si el valor de una única [columna](../working-with-tables.md#columns) o un [registro](../working-with-tables.md#records) completo es válido para un [origen de datos](../working-with-data-sources.md).  
@@ -66,6 +66,6 @@ Para estos ejemplos, los valores de la columna **Percentage** del origen de dato
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*blank* |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si **120** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |"Los valores deben estar comprendidos entre 0 y 100". |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **10**. |*blank* |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **120**. |"Los valores deben estar comprendidos entre 0 y 100". |
 

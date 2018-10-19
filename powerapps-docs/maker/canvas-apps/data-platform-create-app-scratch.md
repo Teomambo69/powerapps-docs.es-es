@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b90024e3864420c541b0e0e1ef0ad1d86b900aa0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852285"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317054"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación de lienzo desde cero con Common Data Service for Apps
 
@@ -35,11 +35,9 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    ![Página principal de PowerApps](./media/data-platform-create-app-scratch/sign-in.png)
+1. En **Cree su propia aplicación**, mantenga el puntero sobre el icono **Iniciar desde cero** de las aplicaciones de lienzo, o bien pulse el icono de teléfono o haga clic en él y, después, **Crear esta aplicación**.
 
-1. En **Make apps like these** (Crear aplicaciones como estas), mantenga el puntero sobre el icono **Iniciar desde cero**, pulse o haga clic en el icono del teléfono y, después, en **Crear esta aplicación**.
-
-    ![Icono de la aplicación en blanco](./media/data-platform-create-app-scratch/blank-app.png)
+    ![Icono de la aplicación en blanco](./media/data-platform-create-app-scratch/start-from-blank.png)
 
     Se puede diseñar una aplicación desde cero para teléfonos u otros dispositivos (por ejemplo, tabletas); este tema se centrará en el diseño de una aplicación para teléfonos.
 

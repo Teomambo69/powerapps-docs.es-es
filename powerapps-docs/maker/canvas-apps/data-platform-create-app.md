@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf19983217afad23b75a0f0dbd1e307e6539d3f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42825957"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316778"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>Generar una aplicación de lienzo en Common Data Service for Apps en PowerApps
 
@@ -34,11 +34,9 @@ Para seguir este tutorial rápido, debe [cambiar a un entorno](working-with-envi
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, si es necesario, cambie los entornos como se especificó anteriormente en este mismo tema.
 
-    ![Página principal de PowerApps](./media/data-platform-create-app/sign-in.png)
+1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 
-1. En **Make apps like these** (Crear aplicaciones como estas), mantenga el puntero sobre **Start from data** (Iniciar desde datos) y, después, haga clic en **Crear esta aplicación**.
-
-    ![Opción para crear una aplicación](./media/data-platform-create-app/make-this-app.png)
+    ![Opción para crear una aplicación](./media/data-platform-create-app/start-from-data.png)
 
 1. En el icono **Common Data Service**, seleccione **Diseño de teléfono**.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8e657023956793ab74094100ca2d5649e7c818b6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: b1531289c55772aaa9ee521c92cc8b5dbfe16ad4
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850818"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317031"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
 
@@ -37,11 +37,9 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 ## <a name="generate-the-app"></a>Generar la aplicación
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    ![Página principal de PowerApps](./media/get-started-create-from-data/sign-in.png)
+1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 
-1. En **Make apps like these** (Crear aplicaciones como estas), mantenga el puntero sobre **Start from data** (Iniciar desde datos) y, después, haga clic en **Crear esta aplicación**.
-
-    ![Opción para crear una aplicación](./media/get-started-create-from-data/make-this-app.png)
+    ![Opción para crear una aplicación](./media/get-started-create-from-data/start-from-data.png)
 
 1. En **Comenzar con los datos**, pulse o haga clic en **Diseño de teléfono** en el icono de la cuenta de almacenamiento en la nube.
 

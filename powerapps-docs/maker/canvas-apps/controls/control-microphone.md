@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307824"
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.
@@ -26,7 +26,7 @@ Un control que permite a los usuarios de la aplicación grabar sonidos desde sus
 ## <a name="description"></a>Descripción
 Los usuarios de la aplicación pueden realizar grabaciones de audio si el dispositivo donde se ejecuta la aplicación tiene un micrófono.
 
-El audio se almacena en formato 3gp en Android y en formato AAC en iOS.
+El audio se almacena en formato 3gp en Android, en formato AAC en iOS y en formato OGG en los navegadores web.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Micrófono**: en un dispositivo que tenga más de un micrófono, el identificador numérico del micrófono que usa la aplicación.

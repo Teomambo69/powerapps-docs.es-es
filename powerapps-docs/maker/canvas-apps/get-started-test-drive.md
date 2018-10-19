@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 738ec650827cf24e793c0bfda1a71f962cdc2d15
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859911"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316732"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Crear una aplicación a partir de una plantilla en PowerApps
 
@@ -32,9 +32,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    ![Página principal de PowerApps](./media/get-started-test-drive/sign-in.png)
-
-1. En **Make apps like these** (Crear aplicaciones como estas), mantenga el puntero sobre **Start from data** (Iniciar desde datos) y, después, pulse o haga clic en **Crear esta aplicación**.
+1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y pulse la opción **Crear esta aplicación** o haga clic en ella.
 
     ![Icono Crear esta aplicación](./media/get-started-test-drive/make-this-app.png)
 

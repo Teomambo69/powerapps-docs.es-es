@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 965c779a752d0bfd864a06d5fa886b0187839123
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836902"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49307870"
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
@@ -80,7 +80,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Etiqueta](control-text-box.md)**, llámelo **Source** y establezca su propiedad **[Texto](properties-core.md)** en esta cadena:
 
-\<p > Hemos realizado una tarea de globalización y localización particularmente \&nbsp; \&quot; intensiva \&quot; \<p >
+"\<p>Hemos\&nbsp;realizado una tarea de globalización y localización particularmente \&quot;intensiva\&quot;.\<p>"
 
 ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 

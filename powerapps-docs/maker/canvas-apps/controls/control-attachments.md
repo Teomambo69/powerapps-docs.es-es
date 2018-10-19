@@ -13,30 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad52396eda0c8db46dd38cb7176524df5feb7416
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834667"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384257"
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
-Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint.
+Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad de Common Data Service for Apps.
 
 ## <a name="limitations"></a>Limitaciones
-El control de datos adjuntos tiene las siguientes limitaciones temporales:
-1. Internet Explorer admite la descarga de datos adjuntos solo dentro de los formularios de lista personalizada de SharePoint.
+El control de datos adjuntos presenta estas limitaciones:
+1. Los datos adjuntos no son compatibles con las listas de SharePoint ni las entidades de CDS for Apps.
 
-1. La carga de los datos adjuntos solo funciona con orígenes de datos de la lista de SharePoint.  La compatibilidad con otros orígenes de datos se introducirá de forma incremental, se empezará con CDS.
-
-1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios.   Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
+1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios. Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
 
 1. No se pueden cargar archivos con un tamaño superior a 10 MB.  
 
-1. Actualmente, los dispositivos iOS solo pueden cargar archivos de documentos y cuentas de almacenamiento en la nube. Para adjuntar fotografías o vídeos, use el explorador web en el dispositivo iOS para ejecutar la aplicación.
-
 ## <a name="description"></a>Descripción
-Un control de **datos adjuntos** permite abrir los archivos almacenados en un origen de datos, así como agregar y eliminar archivos de una lista de SharePoint.
+Un control de **datos adjuntos** permite abrir, agregar y eliminar archivos de una lista de SharePoint o una entidad de CDS for Apps.
 
 ## <a name="key-properties"></a>Propiedades principales
 **[Items](properties-core.md)** : el origen de donde se describen los archivos que se pueden descargar.
@@ -86,7 +82,7 @@ Un control de **datos adjuntos** permite abrir los archivos almacenados en un or
 
 
 ## <a name="example"></a>Ejemplo
-1. Cree una aplicación de datos usando una lista de SharePoint como origen de datos.  Otra alternativa es agregar un formulario a la aplicación y establecer una lista de SharePoint como su origen de datos.
+1. Cree una aplicación de datos usando una lista de SharePoint como origen de datos. Como alternativa, puede agregar un formulario a la aplicación y establecer una lista de SharePoint como su origen de datos.
 
 2. Seleccione el control **Formulario** en la vista de árbol del lado izquierdo.
 

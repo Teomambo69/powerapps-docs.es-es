@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1ee0b02465853306881ca4379182aef42bffd84
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833548"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316916"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Crear una aplicación de lienzo desde cero a partir de datos de Excel
 
@@ -51,13 +51,11 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    ![Página principal de PowerApps](./media/get-started-create-from-blank/sign-in.png)
-
     Puede diseñar una aplicación desde cero para teléfonos o para otros dispositivos (por ejemplo, tabletas). Este tema se centra en el diseño de una aplicación para teléfonos.
 
-1. En **Crear aplicaciones como estas**, mantenga el puntero sobre el icono **Iniciar desde cero**, seleccione el icono del teléfono y, después, seleccione **Crear esta aplicación**.
+1. En **Cree su propia aplicación**, mantenga el puntero sobre el icono **Iniciar desde cero** de las aplicaciones de lienzo, seleccione el icono de teléfono y, después, **Crear esta aplicación**.
 
-    ![Icono de la aplicación en blanco](./media/get-started-create-from-blank/blank-app.png)
+    ![Icono de la aplicación en blanco](./media/get-started-create-from-blank/start-from-blank.png)
 
     PowerApps Studio crea una aplicación en blanco para teléfonos.
 

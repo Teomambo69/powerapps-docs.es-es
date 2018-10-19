@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 93d29f0a49a70077f975bed659203b4fb7d66489
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833474"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317077"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
@@ -33,9 +33,9 @@ Para empezar, genere automáticamente una aplicación a partir de uno de estos o
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-En el sitio de PowerApps, seleccione **Iniciar a partir de datos**, o bien seleccione una aplicación de ejemplo, como **Service Desk** o **Budget Tracker**.
+[Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y seleccione **Iniciar a partir de datos** o una aplicación de ejemplo, como **Service Desk** o **Budget Tracker**.
 
-![Blog de PowerApps](./media/getting-started/sample-apps.png)
+![Blog de PowerApps](./media/getting-started/create-page-samples.png)
 
 Después de generar una aplicación de forma automática, personalice su apariencia y comportamiento predeterminados en función de los flujos de trabajo de los usuarios. Por ejemplo, cambie los tipos de datos que aparecen, cómo se ordenan o incluso si los usuarios especifican un número escribiéndolo o ajustando un control deslizante. Agregue y personalice [pantallas](add-screen-context-variables.md), [galerías](customize-layout-sharepoint.md), [formularios](customize-forms-sharepoint.md) y otros controles.
 
