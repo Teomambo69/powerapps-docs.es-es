@@ -2,7 +2,7 @@
 title: Visualizar datos jerárquicos con aplicaciones controladas por modelos | MicrosoftDocs
 description: Aprenda cómo consultar y visualizar datos jerárquicos relacionados
 ms.custom: ''
-ms.date: 06/02/2018
+ms.date: 09/19/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,19 +23,16 @@ search.app:
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>Visualizar datos jerárquicos con aplicaciones controladas por modelos
 
-> [!NOTE]
-> Las visualizaciones de datos jerárquicas están disponibles únicamente para aplicaciones controladas por modelos configuradas para el cliente **Web**. Las visualizaciones no están disponibles para el cliente **Interfaz unificada**. Más información: [Crear una aplicación controlada por modelos usando el diseñador de aplicaciones](../model-driven-apps/create-edit-app.md)
-
 Cuando una entidad está configurada para tener una relación jerárquica que hace referencia a sí misma, puede configurar visualizaciones usando esa jerarquía. Más información: [Definir y consultar datos relacionados jerárquicamente](../common-data-service/define-query-hierarchical-data.md)
 
 Las entidades que tienen visualizaciones disponibles de forma predeterminada incluyen [Cuenta](/powerapps/developer/common-data-service/reference/entities/account), [Posición](/powerapps/developer/common-data-service/reference/entities/position) y [Usuario](/powerapps/developer/common-data-service/reference/entities/systemuser). En la vista de cuadrícula de estas entidades, puede ver el icono que muestra el gráfico de jerarquía a la izquierda del nombre del registro. El icono de jerarquía no está presente para todos los registros de forma predeterminada. El icono se muestra para los registros que ya están relacionados con la relación jerárquica.  
-  
- ![Cuentas con jerarquía](media/account-list-with-hierarchy.png)  
+> [!div class="mx-imgBorder"] 
+> ![Botón Ver jerarquía](media/view-hierarchy-button.png)  
   
  Si selecciona el icono de jerarquía, puede ver la jerarquía, con la vista de árbol a la izquierda y la vista de mosaico a la derecha, como se indica a continuación:  
   
 > [!div class="mx-imgBorder"] 
-> ![Árbol de cuenta y vista de ventanas](media/hierachy-security-accounts-tile-view.png)  
+> ![Vista de árbol y ventana en jerarquía](media/tree-view-and-tile-view-in-hierarchy.png)  
   
  Hay más entidades que pueden habilitarse para una jerarquía. Estas entidades incluyen [Contacto](/powerapps/developer/common-data-service/reference/entities/contact) y [Equipo](/powerapps/developer/common-data-service/reference/entities/team). Todas las entidades personalizadas pueden habilitarse para una jerarquía.  
   

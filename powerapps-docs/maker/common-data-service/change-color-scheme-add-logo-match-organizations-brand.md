@@ -82,18 +82,21 @@ Puede crear una vista y una sensación personalizadas (un tema) para su aplicaci
 5. Seleccione **Tema predeterminado de CRM**. 
 
 La captura de pantalla siguiente muestra una parte de la configuración predeterminada del tema.  
-  
-![Tema predeterminado](media/default-theme.png) 
+
+> [!div class="mx-imgBorder"] 
+> ![Tema predeterminado](media/default-theme.png) 
   
  Hemos clonado el tema predeterminado y cambiado los colores. Las siguientes capturas de pantalla muestran los nuevos colores para desplazamiento y resaltado. También puede elegir un nuevo logotipo del producto.  
   
  La captura de pantalla siguiente muestra el nuevo color de navegación.  
-  
- ![Colores del tema en verde claro](media/theme-gentle-green.png "Colores del tema en verde claro")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![Colores del tema en verde claro](media/theme-gentle-green.png "Colores del tema en verde claro")  
   
  La captura de pantalla siguiente muestra la cuadrícula de entidad de cuenta con el nuevo color del resalte.  
-  
- ![Cuadrícula de la cuenta con el tema en verde claro](media/themes-gentle-green-account-grid.png "Cuadrícula de la cuenta con el tema en verde claro")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![Cuadrícula de la cuenta con el tema en verde claro](media/themes-gentle-green-account-grid.png "Cuadrícula de la cuenta con el tema en verde claro")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>Obtener una vista previa y publicar un tema  

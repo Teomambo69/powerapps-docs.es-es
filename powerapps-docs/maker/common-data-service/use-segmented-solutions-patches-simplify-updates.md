@@ -72,8 +72,9 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
  Las ilustraciones siguientes proporcionan un ejemplo de crear una solución segmentada eligiendo activos de entidad desde las entidades `Account`, `Case` y `Contact`.  
   
  Comience eligiendo el componente **Entidad**.  
-  
- ![Agregar recursos existentes](media/solution-segmentation-add-existing-resources-admin.png "Agregar recursos existentes")  
+
+ > [!div class="mx-imgBorder"] 
+ > ![Agregar recursos existentes](media/solution-segmentation-add-existing-resources-admin.png "Agregar recursos existentes")  
   
  A continuación, seleccione los componentes de la solución.  
   
@@ -97,7 +98,8 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  Como resultado, la solución segmentada que se crea contiene tres entidades, `Account`, `Case`, y `Contact`. Cada entidad solo contiene los activos que fueron elegidos.  
   
- ![Solución con entidades](media/solution-segmentation-solution-entities-admin.png "Solución con entidades")  
+ > [!div class="mx-imgBorder"] 
+ > ![Solución con entidades](media/solution-segmentation-solution-entities-admin.png "Solución con entidades")  
   
 ## <a name="create-a-solution-patch"></a>Crear una revisión de la solución  
  Una revisión contiene cambios en la solución primaria, como agregar o editar componentes y activos. No es necesario incluir los componentes primarios a menos que prevea modificarlos.  
@@ -114,7 +116,8 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  Las ilustraciones siguientes proporcionan un ejemplo de crear una revisión para una solución existente. Empiece seleccionando **Clonar una revisión** (en la vista comprimida, el icono **Clonar una revisión** se muestra como dos cuadrados pequeños, como se indica a continuación).  
   
- ![Icono Clonar una revisión](media/solution-segmentation-click-patch-icon-admin.png "Icono Clonar una revisión")  
+ > [!div class="mx-imgBorder"] 
+ > ![Icono Clonar una revisión](media/solution-segmentation-click-patch-icon-admin.png "Icono Clonar una revisión")  
   
  En el cuadro de diálogo **Clonar para revisar** se ve que el número de versión de la revisión se basa en el número de versión de la solución primaria, pero el número de compilación se incrementa en uno. Cada revisión posterior tiene un número de compilación o de revisión más alto que la revisión precedente.  
   
@@ -122,7 +125,8 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  La captura de pantalla siguiente muestra la solución base **SegmentedSolutionExample**, versión **1.0.1.0** y revisión **SegmentedSolutionExample_Patch**, versión **1.0.2.0**.  
   
- ![Cuadrícula con soluciones y revisiones](media/solution-segmentation-solution-patch-grid-admin.png "Cuadrícula con soluciones y revisiones")  
+ > [!div class="mx-imgBorder"] 
+ > ![Cuadrícula con soluciones y revisiones](media/solution-segmentation-solution-patch-grid-admin.png "Cuadrícula con soluciones y revisiones")  
   
  En la revisión agregamos una nueva entidad personalizada llamada `Book`, e incluimos todos los activos de la entidad `Book` en la revisión.  
   
@@ -143,7 +147,8 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  Después de clonar, la nueva versión de la solución contiene tres entidades originales (`Account`, `Case`, y `Contact`), y la entidad personalizada llamada `Book` que se agregó en su revisión. Cada entidad solo contiene los activos que se agregaron en el ejemplo.  
   
- ![Solución clonada con revisión resumida](media/solution-segmentation-solution-rolled-up-patch-admin.png "Solución clonada con revisión resumida")  
+ > [!div class="mx-imgBorder"] 
+ > ![Solución clonada con revisión resumida](media/solution-segmentation-solution-rolled-up-patch-admin.png "Solución clonada con revisión resumida")  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  [Información general de las soluciones](solutions-overview.md) [Crear revisiones para simplificar las actualizaciones de la solución]

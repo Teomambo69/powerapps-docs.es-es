@@ -35,13 +35,15 @@ Puede crear y actualizar uno o varios campos personalizados de cualquier entidad
     > [!NOTE]
     > Los campos **Nombre para mostrar** se pueden actualizar en cualquier momento para que se muestre de forma diferente en sus aplicaciones, el campo **Nombre** no se puede cambiar una vez guardada la entidad, ya que esto podría dañar una aplicación existente.
 
-    ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel.png "Panel Nuevo campo")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel.png "Panel Nuevo campo")
 
 5. Seleccione el **Tipo de datos** del campo, esto controla la forma en que se almacena la información y también cómo se muestra en aplicaciones. Por ejemplo, el texto se almacena de forma diferente a un número decimal o una dirección URL. Para obtener información detallada de los tipos de datos disponibles, consulte [Metadatos de atributos de entidad](../../developer/common-data-service/entity-attribute-metadata.md).
 
     Si se le solicita, especifique información adicional para el tipo de datos que ha especificado. Según el tipo de datos, distintos campos se mostrarán. Si está creando un campo de tipo Conjunto de opciones o Conjunto de opciones de selección múltiple, puede seleccionar **Nuevo conjunto de opciones** y crear un nuevo conjunto de opciones cuando cree el campo. Para obtener más información, consulte [Crear un conjunto de opciones](custom-picklists.md)
 
-    ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Panel Nuevo campo")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Panel Nuevo campo")
 
 
 7. En **Obligatorio**, active la casilla si desea recomendar este campo como obligatorio en sus aplicaciones. Esto no proporciona una aplicación fija en todas las conexiones a Common Data Service. Si necesita asegurarse de si el campo se ha rellenado, cree una [Regla de negocio](data-platform-create-business-rule.md)

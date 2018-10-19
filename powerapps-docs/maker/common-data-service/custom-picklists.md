@@ -33,7 +33,8 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 4. En el panel del nuevo campo, introduzca el **Nombre para mostrar** para el campo, el **Nombre** se rellenará automáticamente y se usa como el nombre único para el campo. Se usa **Nombre para mostrar** al mostrar este campo a sus usuarios, se usa **Nombre** cuando crea la aplicación, en expresiones y fórmulas.
 
-    ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel.png "Panel Nuevo campo")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel.png "Panel Nuevo campo")
 
 5. Haga clic en la lista desplegable **Tipo de datos** y seleccione **Conjunto de opciones** o **Conjunto de opciones de selección múltiple**.
 
@@ -46,34 +47,40 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 7. Se abrirá un nuevo panel para crear el conjunto de opciones. El **Nombre para mostrar** y el **Nombre** se adoptarán por defecto del nombre del campo, pero se pueden cambiar si es necesario. Haga clic en **Agregar nuevo elemento** para empezar a crear la lista de opciones. Repita este paso hasta que se creen todos los elementos.
 
-    ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "Nuevo conjunto de opciones")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "Nuevo conjunto de opciones")
 
 8. Una vez que haya introducido los elementos, haga clic en **Guardar** para crear el conjunto de opciones.
 
-    ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "Nuevo conjunto de opciones")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "Nuevo conjunto de opciones")
 
 9. Haga clic en **Hecho** para cerrar el panel del campo y, a continuación, en **Guardar entidad** para guardar la entidad en Common Data Service.
 
     > [!NOTE]
     > Puede seleccionar uno de los elementos como **Predeterminado** para este campo y se seleccionará de forma predeterminada cuando los usuarios creen nuevos registros en la entidad.
 
-    ![Nuevo campo](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Panel Nuevo campo")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo campo](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Panel Nuevo campo")
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>Crear un conjunto de opciones desde la lista de conjuntos de opciones
 
 1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Conjuntos de opciones** en el panel de navegación de la izquierda.
 
-    ![Conjuntos de opciones](./media/data-platform-cds-newoptionset/optionsetlist.png "Lista de conjuntos de opciones")
+    > [!div class="mx-imgBorder"] 
+    > ![Conjuntos de opciones](./media/data-platform-cds-newoptionset/optionsetlist.png "Lista de conjuntos de opciones")
 
 2. Haga clic en **Nuevo conjunto de opciones**
 
 3. Se abrirá un nuevo panel para crear el conjunto de opciones, introduzca el **Nombre para mostrar** y el **Nombre**. Haga clic en **Agregar nuevo elemento** para empezar a crear la lista de opciones. Repita este paso hasta que se creen todos los elementos.
 
-    ![Creación de conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create.png "Creación de conjunto de opciones")
+    > [!div class="mx-imgBorder"] 
+    > ![Creación de conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create.png "Creación de conjunto de opciones")
 
 4. Una vez que haya introducido los elementos, haga clic en **Guardar** para crear el conjunto de opciones.
 
-    ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create-values.png "Nuevo conjunto de opciones")
+    > [!div class="mx-imgBorder"] 
+    > ![Nuevo conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create-values.png "Nuevo conjunto de opciones")
 
 5. Ahora puede utilizar este conjunto de opciones para crear un nuevo campo en una entidad.
 

@@ -1,1 +1,1 @@
-Las características de versión preliminar no están diseñadas para su uso en producción y pueden tener funcionalidad restringida. Estas características están disponibles antes de una versión oficial para que los clientes puedan obtener un acceso anticipado y proporcionar comentarios.
+Las vistas previas de características no se han diseñado para un uso de producción y pueden tener una funcionalidad restringida. Estas características están disponibles antes del lanzamiento oficial para que los clientes puedan tener un acceso anticipado y proporcionar comentarios.
