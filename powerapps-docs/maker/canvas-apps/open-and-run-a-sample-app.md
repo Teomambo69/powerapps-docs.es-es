@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d4e88ca0a1e683d2f72e02625e6228d1063352f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831816"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316829"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
@@ -30,11 +30,9 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 ## <a name="open-a-sample-app"></a>Abrir una aplicación de ejemplo
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    ![](./media/open-and-run-a-sample-app/sign-in.png)
-
 1. En la lista de aplicaciones de ejemplo, mantenga el puntero sobre una aplicación de ejemplo (como **Programa de estimación de costos**) con el mouse.
 
-    ![](./media/open-and-run-a-sample-app/sample-tile.png)
+    ![](./media/open-and-run-a-sample-app/cost-estimator.png)
 
 1. Pulse o haga clic en el icono del teléfono para crear una versión de la aplicación para dispositivos móviles (o deje seleccionado el icono de la tableta) y, después, pulse o haga clic en **Crear esta aplicación**.
 
