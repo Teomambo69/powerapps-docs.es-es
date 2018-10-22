@@ -1,6 +1,6 @@
 ---
-title: Información general de creación de aplicaciones | Microsoft Docs
-description: Información general de creación de aplicaciones en el modo de lienzo o el modo basado en modelos e incorporación de Common Data Service
+title: Información general sobre la creación de aplicaciones | Microsoft Docs
+description: Información general sobre la creación de aplicaciones de lienzo o en modo controlado por modelos, y la incorporación de Common Data Service
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,57 +8,62 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094619"
 ---
+# <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
+PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene tres componentes principales:
 
-# <a name="overview-of-creating-apps-in-powerapps"></a>Información general de creación de aplicaciones en PowerApps
-PowerApps es una plataforma de desarrollo de alta productividad para aplicaciones de negocio y tiene tres componentes fundamentales:
+- [Las aplicaciones de lienzo](canvas-apps/getting-started.md) comienzan con la experiencia del usuario, diseñando una interfaz muy personalizada con la potencia de un lienzo en blanco y conectándola a uno de los 200 orígenes de datos para elegir. Se pueden compilar aplicaciones de lienzo para aplicaciones web, móviles y de tableta.
+- [Las aplicaciones controladas por modelos](model-driven-apps/model-driven-app-overview.md) empiezan con el modelo de datos y se compilan a partir de la forma de los datos y procesos de negocio fundamentales en Common Data Service para crear formularios, vistas y otros componentes. Las aplicaciones controladas por modelos generan automáticamente una interfaz de usuario excelente con capacidad de respuesta en todos los dispositivos.
+- [Common Data Service](common-data-service/data-platform-intro.md) es la plataforma de datos que viene con PowerApps y que permite almacenar y modelar los datos de negocio. Es la plataforma en la que se compilan las aplicaciones de Dynamics 365; si es un cliente de Dynamics, los datos ya están en Common Data Service.
 
-- [Aplicaciones de lienzo](canvas-apps/getting-started.md) comience su experiencia de usuario creando una interfaz muy personalizada con el potencial de un lienzo en blanco y conectándola con los 200 orígenes de datos que elija. Puede crear aplicaciones de lienzo para la web, el móvil y la tableta.
-- [Aplicaciones basadas en modelos](model-driven-apps/model-driven-app-overview.md) comience a crear modelos de datos a partir de la forma de sus procesos y datos profesionales clave en Common Data Service para modelar formularios, vistas y otros componentes. Las aplicaciones basadas en modelos generan automáticamente excelentes interfaces de usuario que se pueden emplear en los dispositivos.
-- [Common Data Service](common-data-service/data-platform-intro.md) es la plataforma de datos que se suministra con PowerApps y que le permite almacenar y modelar los datos profesionales. Es la plataforma en la que se incorporan las aplicaciones de Dynamics 365. Si es cliente de Dynamics, sus datos ya estarán en Common Data Service.
-
-Le resultará fácil y sencillo intentar crear la primera aplicación. Tenemos un plan de prueba gratuita de 30 días y un plan comunitario gratuito. Descubra cuál es el mejor para usted y empiece a usarlo.
+Intentar la creación de la primera aplicación es fácil. Tenemos un plan de evaluación de 30 días y un plan de la comunidad gratuito; obtenga más información sobre cuál es mejor para usted y empiece a trabajar.
 
 ## <a name="canvas-apps"></a>Aplicaciones de lienzo
-Las aplicaciones de lienzo le ofrecen flexibilidad para organizar la experiencia de usuario y la interfaz del modo en que desea. Deje que su creatividad y olfato empresarial le guíen al determinar el aspecto de sus aplicaciones.
+Las aplicaciones de lienzo proporcionan la flexibilidad de organizar la experiencia del usuario y la interfaz de la forma que se quiera. Permita que el sentido creativo y empresarial le guíe a obtener el aspecto que quiere para las aplicaciones.
 
-Puede empezar a crear su aplicación desde las herramientas de Microsoft en las que se encuentren sus datos, como:
+Se puede empezar a compilar la aplicación desde las herramientas de Microsoft donde se encuentren los datos, por ejemplo:
 
 - [Desde una lista de SharePoint](canvas-apps/generate-app-from-sharepoint-list-interface.md)
 - [Desde un panel de Power BI](canvas-apps/embed-powerapps-powerbi.md)
 
-Crear una aplicación de lienzo es fácil; con PowerApps, puede buscar o crear su aplicación de diversas formas:
+Crear una aplicación de lienzo es fácil; con PowerApps, se puede buscar o crear la aplicación de varias maneras:
 
-- [Desde los datos](canvas-apps/app-from-sharepoint.md)
+- [Desde datos](canvas-apps/app-from-sharepoint.md)
 - [Desde un ejemplo](canvas-apps/open-and-run-a-sample-app.md)
 - [Desde un origen de Common Data Service](canvas-apps/data-platform-create-app.md)
 - [Desde un lienzo en blanco](canvas-apps/data-platform-create-app-scratch.md)
 - [A través de AppSource](../user/app-source.md)
 
-## <a name="model-driven-apps"></a>Aplicaciones basadas en modelos
-Al crear una aplicación basada en modelos, puede usar todo el potencial de Common Data Service para configurar rápidamente los formularios, las reglas de negocio y los flujos de procesos. Puede crear una aplicación basada en modelos a partir del sitio de PowerApps.
+## <a name="model-driven-apps"></a>Aplicaciones controladas por modelos
+Cuando se crea una aplicación controlada por modelos, se puede usar toda la potencia de Common Data Service para configurar rápidamente los formularios, las reglas de negocio y los flujos de proceso. Una aplicación controlada por modelos se crea desde el sitio de PowerApps.
 
-Empezar a usar las aplicaciones basadas en modelos es sencillo, y puede empezar con estos temas:
+La introducción a las aplicaciones controladas por modelos es sencilla y se puede empezar con estos temas:
 
 - [Crear una aplicación](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
-- [Creación y diseño de formularios](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
-- [Creación o edición de vistas](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
-- [Creación o edición de un gráfico del sistema](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)
+- [Crear y diseñar formularios](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
+- [Comprender las vistas](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
+- [Crear o editar un gráfico del sistema](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)
 - [Crear o editar paneles](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-dashboards)
-- [Adición de seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
-- [Adición de lógica de negocios](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
+- [Agregar seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
+- [Agregar lógica de negocio](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Common Data Service para aplicaciones
-Common Data Service le permite almacenar y administrar de forma segura datos en un conjunto de entidades estándar y personalizadas, y puede agregar campos a esas entidades cuando lo necesite.
+## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+Common Data Service permite almacenar y administrar los datos de forma segura en un conjunto de entidades estándar y personalizadas, y agregar datos a esas entidades cuando sea necesario.
 
-Comenzar a utilizar Common Data Service es fácil. Por ejemplo, puede empezar con estos elementos:
-- [Creación de una entidad personalizada](common-data-service/data-platform-create-entity.md)
-- [Administración de campos](common-data-service/data-platform-manage-fields.md)
-- [Creación de conjuntos de opciones personalizadas](common-data-service/custom-picklists.md)
-- [Creación de una regla de negocio](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+Empezar a usar Common Data Service es fácil. Por ejemplo, se puede empezar con estos elementos:
+- [Crear una entidad personalizada](common-data-service/data-platform-create-entity.md)
+- [Administrar campos](common-data-service/data-platform-manage-fields.md)
+- [Crear conjuntos de opciones personalizados](common-data-service/custom-picklists.md)
+- [Crear una regla de negocio](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
 
-Después de crear su aplicación, puede [compartirla](canvas-apps/share-app.md) con los integrantes del equipo.
+Después de compilar la aplicación, se puede [compartir](canvas-apps/share-app.md) con los miembros del equipo.
 
 
 
