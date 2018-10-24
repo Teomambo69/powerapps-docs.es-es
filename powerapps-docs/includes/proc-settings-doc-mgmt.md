@@ -1,1 +1,0 @@
-Vaya a **Configuración** > **Administración de documentos**.
