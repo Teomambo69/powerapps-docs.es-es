@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a229715d1041ca7d695c5c45f72631f2b4c67e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861555"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317100"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Generación de una aplicación de lienzo en PowerApps a partir de una lista de SharePoint
 
@@ -44,9 +44,9 @@ Los principios para generar una aplicación no cambiarán aunque cree una lista 
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-1. En **Make apps like these** (Crear aplicaciones como estas), mantenga el puntero sobre **Start from data** (Iniciar desde datos) y, después, haga clic en **Crear esta aplicación**.
+1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 
-    ![Opción para crear una aplicación](./media/app-from-sharepoint/make-this-app.png)
+    ![Opción para crear una aplicación](./media/app-from-sharepoint/start-from-data.png)
 
 1. En el icono de SharePoint, seleccione **Diseño de teléfono**.
 
