@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido para ejecutar una aplicación basada en lienzo en un dispositivo móvil | Microsoft Docs
-description: En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil.
+title: Ejecución de una aplicación basada en lienzo en un dispositivo móvil | Microsoft Docs
+description: Vea cómo ejecutar una aplicación de lienzo en un dispositivo móvil.
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -10,17 +10,22 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a80042065a830bb9d34007131cccbd995279e3dd
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925717"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851893"
 ---
-# <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación de lienzo en un dispositivo móvil
-Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
+# <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
+Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
 
-Para seguir este tutorial rápido, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue PowerApps desde el [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en un iPhone, iPad o dispositivo Android que ejecute un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
+Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue PowerApps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en dispositivos iPhone, iPad o Android que ejecuten un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
 
 ## <a name="open-powerapps-and-sign-in"></a>Abrir PowerApps e iniciar sesión
 Abra PowerApps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
@@ -77,7 +82,7 @@ Puede anclar una aplicación a la pantalla de inicio del dispositivo para un acc
 Para cerrar una aplicación, use el dedo para deslizarlo desde el borde izquierdo de la aplicación a la derecha. En los dispositivos Android, también puede presionar el botón Atrás y luego confirmar que quiere cerrar la aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha obtenido información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil. También puede ejecutar aplicaciones controladas por modelos en un dispositivo móvil.
+En este tema ha aprendido a ejecutar una aplicación de lienzo en un dispositivo móvil. También puede ejecutar aplicaciones controladas por modelos en un dispositivo móvil.
 
 > [!div class="nextstepaction"]
 > [Ejecución de una aplicación controlada por modelos en un dispositivo móvil](run-app-client-model-driven.md)

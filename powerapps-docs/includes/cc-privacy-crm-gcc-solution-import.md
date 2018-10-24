@@ -1,1 +1,1 @@
-Al habilitar una solución, consiente en compartir sus datos con un sistema externo. Los datos importados en Microsoft Dynamics 365 (en línea) desde sistemas externos están sujetos a nuestra [Declaración de privacidad de Microsoft](http://go.microsoft.com/fwlink/p/?LinkID=521839).
+Al habilitar una solución, el usuario da su consentimiento para compartir sus datos con un sistema externo. Los datos que se importan desde sistemas externos en Microsoft Dynamics 365 (en línea) están sujetos a la [privacidad y cookies de Microsoft](http://go.microsoft.com/fwlink/p/?LinkID=521839).

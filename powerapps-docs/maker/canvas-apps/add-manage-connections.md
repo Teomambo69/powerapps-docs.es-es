@@ -1,6 +1,6 @@
 ---
-title: Incorporación y administración de conexiones con orígenes de datos en servicios en la nube | Microsoft Docs
-description: Agregue, elimine y actualice conexiones con orígenes de datos, como SharePoint, SQL Server, OneDrive para la Empresa, Salesforce y Office 365.
+title: Adición y administración de conexiones en aplicaciones de lienzo | Microsoft Docs
+description: Agregue, elimine y actualice las conexiones de aplicaciones de lienzo con orígenes de datos tales como SharePoint, SQL Server y OneDrive para la Empresa.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: c114b803539c2d64695a0bd8c9d976d2604569eb
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195229"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834052"
 ---
-# <a name="manage-your-connections-in-powerapps"></a>Administración de las conexiones en PowerApps
-En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), puede crear una conexión entre PowerApps y uno o varios orígenes de datos, eliminar conexiones o actualizar las credenciales.
+# <a name="manage-canvas-app-connections-in-powerapps"></a>Administración de conexiones de aplicaciones de lienzo en PowerApps
+En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), cree una conexión con uno o varios orígenes de datos, elimine una conexión o actualice las credenciales.
 
-La conexión de datos de la aplicación puede establecerse con SharePoint, SQL Server, Office 365, OneDrive para la Empresa, Salesforce, Excel y otros muchos [orígenes de datos](connections-list.md).
+La conexión de datos de la aplicación de lienzo puede establecerse con SharePoint, SQL Server, Office 365, OneDrive para la Empresa, Salesforce, Excel y muchos otros [orígenes de datos](connections-list.md).
 
 Lo siguiente que haremos en este artículo es mostrar y administrar la información del origen de datos de la aplicación, como en estos ejemplos:
 

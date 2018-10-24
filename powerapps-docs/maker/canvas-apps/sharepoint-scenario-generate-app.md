@@ -1,6 +1,6 @@
 ---
-title: Generación de una aplicación para controlar solicitudes de proyecto | Microsoft Docs
-description: En esta tarea, se generará una *aplicación de tres pantallas* básica directamente desde una lista de SharePoint.
+title: Generación de una aplicación de lienzo para controlar solicitudes de proyecto | Microsoft Docs
+description: En esta tarea se va a generar una aplicación de lienzo básica de tres pantallas directamente a partir de una lista de SharePoint.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 7072d78b79adff65aac33c888bf0f980f953ef84
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023951"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834268"
 ---
-# <a name="generate-an-app-to-handle-project-requests"></a>Generación de una aplicación para controlar solicitudes de proyecto
+# <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 

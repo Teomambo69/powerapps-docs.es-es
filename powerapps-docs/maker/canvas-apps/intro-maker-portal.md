@@ -1,132 +1,133 @@
 ---
-title: Introducción a powerapps.com | Microsoft Docs
+title: Inicio de sesión por primera vez | Microsoft Docs
 description: Un nuevo lugar de encuentro para todos los creadores de aplicaciones.
-author: linhtranms
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 10/28/2016
-ms.author: litran
-ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.reviewer: ''
+ms.date: 08/06/2018
+ms.author: anneta
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195344"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849758"
 ---
-# <a name="introduction-to-powerappscom"></a>Introducción a powerapps.com
-El equipo de PowerApps va a volver a presentar [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) como el nuevo lugar de encuentro para los creadores de aplicaciones. Se ha rediseñado la página como el principal sitio donde los creadores puedan empezar a crear aplicaciones, usar Microsoft Common Data Service y administrar sus aplicaciones, todo en una sola ubicación. En este artículo, se le guiará por los siguientes elementos:
+# <a name="sign-in-to-powerapps-for-the-first-time"></a>Inicio de sesión en PowerApps por primera vez
 
-* el encabezado
-* la página principal
-* la página **Aplicaciones**
+Cuando inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), el sitio ofrece diversas opciones para que cree sus propias aplicaciones, abra las aplicaciones que usted u otros usuarios hayan creado y realice tareas relacionadas. Estas tareas van desde las más sencillas, como la identificación de la licencia o licencias que le proporcionan acceso, hasta funcionalidades más avanzadas, como la creación de conexiones personalizadas para orígenes de datos específicos.
 
-## <a name="header"></a>Encabezado
-Cuando se registra e inicia sesión por primera vez en powerapps.com, observará el nuevo encabezado del sitio. Cerca del borde izquierdo del encabezado está el botón cuadrado de Office. Se trata de un lugar rápido desde donde acceder a todos los demás productos de Office, como PowerPoint, OneNote y Word, así como a Microsoft Flow y Dynamics 365.
+Puede seleccionar opciones en tres áreas generales:
 
-![Encabezado: botón cuadrado](./media/intro-maker-portal/waffle.png)
+- El encabezado de la parte superior de la página
 
-Cerca del borde derecho del encabezado, en primer lugar verá una lista desplegable de entornos, donde puede cambiar rápidamente entre ellos. Probablemente, **Entorno predeterminado** está seleccionado de forma predeterminada. [Aprenda más acerca de los entornos](../../administrator/environments-overview.md).
+    ![Encabezado](media/intro-maker-portal/header.png)
 
-![Encabezado: entorno](./media/intro-maker-portal/environment.png)
+- La barra de navegación del borde izquierdo de la página
 
-Junto al menú desplegable de entornos, verá un icono de descarga. Haga clic en este icono o púlselo para mostrar un cuadro de diálogo con vínculos para descargar PowerApps Mobile (para dispositivos iOS o Android).
+    ![Barra de navegación](media/intro-maker-portal/nav-bar.png)
 
-![Encabezado: descarga](./media/intro-maker-portal/downloads2.png)
+- Los iconos grandes que aparecen en el centro de la página
 
-Junto al icono de descarga, verá un icono de engranaje para la configuración. Haga clic o pulse en este icono para mostrar vínculos para conexiones, puertas de enlace y el centro de administración.
+    ![Área central de la página principal](media/intro-maker-portal/center-area.png)
 
-![Encabezado: configuración](./media/intro-maker-portal/settings_items2.png)
+Para obtener mejores resultados, asegúrese de que la página principal se establece en el entorno adecuado.
 
-Junto al de configuración, verá un icono de signo de interrogación para obtener ayuda. Haga clic o pulse en este icono para mostrar vínculos a Aprendizaje guiado, Documentación, Soporte técnico, Comunidad, Blogs, Legal y Privacidad.
+## <a name="choose-an-environment"></a>Selección de un entorno
 
-![Encabezado: ayuda](./media/intro-maker-portal/help_items2.png)
+Tanto si va a crear una aplicación, como un flujo, una conexión de datos o una entidad en Common Data Service for Apps, gran parte de lo que hace en PowerApps se encuentra en un entorno específico. Los entornos crean límites entre distintos tipos de trabajo; por ejemplo, una organización podría tener entornos independientes para distintos departamentos. Muchas organizaciones usan entornos para separar aplicaciones que aún están en desarrollo de las que están listas para su uso generalizado. Puede que tenga acceso a varios entornos o solo a uno y, si cuenta con los permisos adecuados, tal vez pueda crear sus propios entornos.
 
-## <a name="homepage"></a>Página principal
-Después de iniciar sesión en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), llegará a la página principal de forma predeterminada. Se ha cambiado el diseño de esta página principal para ayudarle a empezar a trabajar rápidamente, tanto si crea aplicaciones como si quiere explorar Common Data Service.
+Para comprobar en qué entorno se encuentra, busque el selector de entornos junto al margen derecho del encabezado.
 
-Si ha iniciado sesión en PowerApps antes y ha ejecutado o creado algunas aplicaciones, la primera sección que verá en la página principal es una lista de **aplicaciones recientes**. Están ordenadas según la fecha en que se abrieron más recientemente.
+![Selector de entornos](media/intro-maker-portal/environment-switcher.png)
 
-![Aplicaciones recientes](./media/intro-maker-portal/recentapps2.png)
+Si crea una aplicación en un entorno, no podrá verla desde otro entorno. Además, las personas que quieran ejecutar la aplicación habrán de tener acceso al entorno en el que se creó.
 
-Cerca de la esquina superior derecha, aparece una flecha llamada **Aplicaciones** y vínculos directos a la página **Aplicaciones** para que pueda ver todas las aplicaciones.
+> [!IMPORTANT]
+> Asegúrese de que se encuentra en el entorno adecuado *antes* crear una aplicación, un flujo o un componente similar. No resulta fácil mover componentes de un entorno a otro.
 
-Si nunca ha iniciado sesión, creado una aplicación ni ejecutado una aplicación antes, no verá la sección **Aplicaciones recientes**. En su lugar verá el titular **Crear una aplicación**.
+Para más información, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos).
 
-![Crear una aplicación](./media/intro-maker-portal/createapp.png)
+## <a name="choose-an-app-type"></a>Elección de un tipo de aplicación
 
-Haga clic en **Introducción** o pulse esta opción en este banner para mostrar opciones para crear una aplicación con **PowerApps Studio**.
+En PowerApps, puede crear y ejecutar estos tipos de aplicaciones:
 
-![Modo Crear una aplicación](./media/intro-maker-portal/createmodal2.png)
+- **Aplicaciones de lienzo**: admiten el diseño de interfaz de usuario personalizada y la conexión a datos desde diversos orígenes.
+- **Aplicaciones controladas por modelos**: tienen una interfaz de usuario estándar y solo se conectan a datos en Common Data Service (CDS) for Apps. Sin embargo, resulta más fácil crear otros elementos, tales como vistas, paneles y diferentes tipos de lógica de negocios.
 
-Junto a **Introducción**, aparecen vínculos a nuestros vídeos de tutoriales sobre cómo crear rápidamente una aplicación a partir de datos (en SharePoint o PowerApps) y compartirla. El vínculo de la flecha **Más información** le llevará a un tema sobre cómo crear una aplicación a partir de datos existentes.
+De forma predeterminada, la página **principal** muestra las opciones para crear y ejecutar aplicaciones de lienzo. Para mostrar en su lugar las opciones controladas por modelos, elija un entorno que tenga una base de datos de CDS for Apps y luego abra el menú en la esquina inferior izquierda.
 
-Debajo del titular **Crear una aplicación**, se ve el titular **Usar Microsoft Common Data Service**.
+![Conmutación entre aplicaciones de lienzo y controladas por modelos](media/intro-maker-portal/mode-switcher.png)
 
-![Microsoft Common Data Service](./media/intro-maker-portal/cds2.png)
+## <a name="play-or-edit-an-app"></a>Reproducción o edición de una aplicación
 
-En **Common Data Service**, aparecerá un botón diferente en función de su licencia o permiso.
+Si ya ha creado una aplicación (u otra persona ha creado una y la ha compartido con usted), la puede reproducir o editar en la página**Aplicaciones**.
 
-* Si aparece el botón **Iniciar período de prueba**, carece de licencia de P2 de PowerApps, que es necesaria para Common Data Service. Haga clic o pulse en este botón para abrir la página donde puede registrarse en una prueba gratuita de 90 días de esta licencia. [Más información sobre las licencias de PowerApps](../signup-for-powerapps.md).
-* Si aparece el botón **Introducción**, se encuentra en un entorno que carece de base de datos de Common Data Service o no tiene acceso a ella. Haga clic o pulse en este botón para crear un entorno y una base de datos a la vez, para que pueda empezar a usar Common Data Service para las aplicaciones. [Más información acerca de cómo crear entornos](../../administrator/environments-administration.md).
-  
-    ![Crear un entorno y una base de datos](./media/intro-maker-portal/createenvanddb2.png)
-  
-    Si no desea crear un entorno, siempre puede cambiar a uno al que tenga acceso.
-* Si aparece el botón **Crear base de datos**, se encuentra en un entorno que carece de base de datos de Common Data Service, pero tiene permiso para crear una.
-  
-    ![Crear una base de datos](./media/intro-maker-portal/cds-createdb2.png)
-  
-    Si hace clic o pulsa en este botón, aprovisionará una base de datos para este entorno.
-  
-    ![Crear una base de datos](./media/intro-maker-portal/cds_createdb22.png)
-* Si aparece el botón **Explorar entidades**, se encuentra en un entorno con una base de datos de Common Data Service ya aprovisionada y tiene acceso a ella. Haga clic o pulse en este botón para abrir la página **Entidades**.
-  
-    ![Crear una base de datos](./media/intro-maker-portal/cds_browseentities2.png)
+- Puede encontrar una aplicación de lienzo filtrando por criterios tales como si se ha abierto recientemente.
 
-Debajo del titular **Usar Microsoft Common Data Service**, verá un conjunto de aplicaciones de ejemplo y aplicaciones de ejemplo conectadas ya creadas para que las use.
+    ![Lista de aplicaciones de lienzo](media/intro-maker-portal/org-apps.png)
 
-* **Aplicaciones de ejemplo**: las aplicaciones de ejemplo se han creado para diferentes escenarios empresariales con un diseño de teléfono o tableta. Puede hacer clic en una aplicación para ver rápidamente una descripción de lo que hace, el diseño con que se creó y qué funcionalidades demuestra, como cámara, GPS o botones de radio. Es una forma rápida de que los nuevos usuarios obtengan información sobre las funcionalidades de PowerApps, y se puede usar una plantilla para crear una aplicación idéntica en PowerApps Studio.
-  
-    ![Aplicaciones de ejemplo](./media/intro-maker-portal/sampleapps2.png)
-* **Aplicaciones de ejemplo conectadas**: estas aplicaciones se conectan a los datos a través de una conexión de datos como Office 365, Salesforce, Trello y Wunderlist. Este conjunto de aplicaciones es diferente de las aplicaciones de ejemplo anteriores. Al hacer clic o pulsar en una aplicación de ejemplo conectada, realmente está aprovisionando una nueva instancia de la aplicación (considérela una plantilla). Se le pedirá que escriba sus credenciales para conectarse a los datos. Lo que resulta muy útil con una aplicación de ejemplo conectada es que se aprovisiona una instancia automáticamente y luego puede abrirla en PowerApps Studio para aprender cómo se creó la aplicación correspondiente. El inconveniente es que puede tardar bastante tiempo (hasta un minuto) en crearse. Así que sea paciente y deje el explorador abierto cuando haga clic o pulse en una aplicación de ejemplo conectada.
-  
-    ![Aplicaciones de ejemplo conectadas](./media/intro-maker-portal/connectedsampleapps2.png)
+    También puede buscar una aplicación escribiendo uno o más caracteres en la barra de búsqueda que aparece cerca de la esquina superior derecha. Cuando encuentre la aplicación que busca, seleccione el icono de puntos suspensivos para mostrar las opciones de reproducción o edición de la aplicación.
 
-## <a name="new-apps-page"></a>Página de nuevas aplicaciones
-Puede acceder a la página **Aplicaciones** por medio de la barra de navegación izquierda en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    ![Menú de puntos suspensivos](media/intro-maker-portal/ellipsis-menu.png)
 
-![Navegación izquierda](./media/intro-maker-portal/leftnav2.png)
+- No puede filtrar la lista de aplicaciones controladas por modelos, pero puede buscar una aplicación escribiendo uno o más caracteres en la barra de búsqueda que aparece cerca de la esquina superior derecha. Cuando encuentre la aplicación que busca, seleccione el icono de puntos suspensivos para mostrar las opciones de reproducción o edición de la aplicación.
 
-Antes, la página **Aplicaciones** permitía cambiar entre la vista de iconos y la vista de lista. A partir del 26 de octubre de 2016, solo admite la vista de lista.
+    ![Lista de aplicaciones controladas por modelos con un menú de puntos suspensivos abierto](media/intro-maker-portal/model-driven-list.png)
 
-![Vista de lista de aplicaciones](./media/intro-maker-portal/listview2.png)
+## <a name="create-an-app"></a>Crear una aplicación
 
-Tenga en cuenta que la vista de lista solo muestra las aplicaciones en el entorno seleccionado. Para ver aplicaciones de un entorno diferente, cambie a él mediante el selector de entorno en el encabezado. [Más información sobre cómo cambiar de entorno](working-with-environments.md).
+En la página **principal** se ofrecen varias formas de crear aplicaciones:
 
-## <a name="whats-new"></a>Novedades
+- [Generación automática de una aplicación de lienzo a partir de un conjunto de datos](data-platform-create-app.md)
+- [Personalización de un ejemplo precompilado de una aplicación de lienzo](open-and-run-a-sample-app.md)
+- [Compilación de una aplicación de lienzo a partir de una pantalla en blanco](data-platform-create-app-scratch.md)
+- [Creación de su propia aplicación controlada por modelos](../model-driven-apps/overview-model-driven-samples.md)
+- [Personalización de un ejemplo precompilado de una aplicación controlada por modelos](../model-driven-apps/build-first-model-driven-app.md)
 
-* Si hace clic en una aplicación o la pulsa, ahora se abre en PowerApps Studio en una pestaña nueva.
-* De forma predeterminada, la página **Aplicaciones** muestra todas las aplicaciones para las que tenga permiso de edición. Para ver **Todas las aplicaciones** (incluidas las que solo puede utilizar), seleccione el filtro **Todas las aplicaciones**.
-  
-   ![Filtro de aplicaciones](./media/intro-maker-portal/allapps_filter.png)
+## <a name="learn-more"></a>Más información
 
-También existen:
+Hay dos formas de encontrar más información sobre las aplicaciones de lienzo o las aplicaciones controladas por modelos:
 
-* **Apps I can use** (Aplicaciones que puedo usar), donde aparecen todas las aplicaciones que se han compartido con usted con permiso Usuario (solo puede ejecutar la aplicación). Tenga en cuenta que también puede adquirir estas aplicaciones en [Dynamics 365](http://home.dynamics.com).
-* **Aplicaciones que me pertenecen**, con todas las aplicaciones que ha creado.
-* **Aplicaciones con las que colaboro**, que contiene todas las aplicaciones que se han compartido con usted con permiso Colaborador.
-* **Aplicaciones de ejemplo**, que incluye todas las aplicaciones de ejemplo (no conectadas).
+- En la barra de navegación izquierda, seleccione **Más información**.
+- En el encabezado, seleccione el icono de signo de interrogación.
 
-Si hace clic o pulsa en el círculo de información, se abre la página de detalles de la aplicación.
+    ![Lista de aplicaciones controladas por modelos con un menú de puntos suspensivos abierto](media/intro-maker-portal/help-icon.png)
 
-![Detalles de la aplicación](./media/intro-maker-portal/ibubble.png)
+Ambas opciones muestran vínculos a este conjunto de documentación, la comunidad de PowerApps (donde puede compartir información con usuarios de otras organizaciones) y el blog de PowerApps (donde se anuncian las características más recientes).
 
-Si hace clic en el botón de puntos suspensivos de una aplicación, aparecen opciones como Reproducir, Editar, Compartir y Detalles.
+## <a name="other-common-tasks"></a>Otras tareas frecuentes
 
-![Opciones de la aplicación](./media/intro-maker-portal/ellipsis.png)
+Al seleccionar las opciones en el encabezado y la barra de navegación izquierda, puede hacer más que crear y abrir las aplicaciones.
 
-Básicamente, estas son las novedades en powerapps.com, que están destinadas a los creadores de aplicaciones. Esperamos que le resulten útiles. Deje sus comentarios sobre lo que le ha gustado y lo que le gustaría ver. Nos encantaría recibir sus comentarios.
+### <a name="from-the-header"></a>Del encabezado
 
+- Seleccione la flecha hacia abajo para descargar clientes para dispositivos móviles y de otro tipo en los que puede ejecutar las aplicaciones.
+
+    Para más información, vea [Find and run apps](../../user/index.md) (Búsqueda y ejecución de aplicaciones).
+
+- Seleccione el icono de engranaje para realizar tareas tales como conectarse a orígenes de datos, identificar la licencia o licencias de PowerApps y abrir la página donde puede realizar tareas administrativas.
+
+    Para más información, vea estos temas:
+
+  - [Introducción a los conectores para aplicaciones de lienzo](connections-list.md)
+  - [Compilación y certificación de conectores personalizados para aplicaciones de lienzo](register-custom-api.md)
+  - [Administración de una puerta de enlace de datos local](gateway-management.md)
+  - [Administración de PowerApps](../../administrator/index.md)
+  - [Introducción a las licencias](../../administrator/pricing-billing-skus.md)
+  - [Información general sobre la compilación de una aplicación controlada por modelos](../model-driven-apps/model-driven-app-overview.md)
+
+### <a name="from-the-left-navigation-bar"></a>En la barra de navegación izquierda
+
+Extienda la funcionalidad de las aplicaciones mediante la realización de estas tareas:
+
+- Administre entidades, conjuntos de opciones y la integración de datos en [Common Data Service for Apps](../common-data-service/data-platform-intro.md).
+- Configuración de la lógica de negocios en [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
+- Cree, empaquete y mantenga [soluciones](../../developer/common-data-service/introduction-solutions.md).

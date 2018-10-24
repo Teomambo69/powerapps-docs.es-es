@@ -1,6 +1,6 @@
 ---
-title: Obtención de un identificador de sesión o un identificador de aplicación | Microsoft Docs
-description: Cómo obtener un identificador de sesión o un identificador de aplicación para solucionar problemas en PowerApps
+title: Obtención de un identificador de sesión o un identificador de aplicación de lienzo | Microsoft Docs
+description: Cómo obtener un identificador de sesión o un identificador de aplicación de lienzo para solucionar problemas en PowerApps
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/18/2018
 ms.author: anneta
-ms.openlocfilehash: 2e9b1a38de104ce1bf5a17969ca2c79792ac6fd4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022272"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42848664"
 ---
-# <a name="get-a-session-id-or-an-app-id"></a>Obtención de un identificador de sesión o un identificador de aplicación
-Si encuentra un problema con una aplicación que se creó en PowerApps, puede ayudar a Microsoft a solucionar el problema de manera mucho más efectiva si les proporciona un identificador de sesión, un identificador de aplicación o ambos para ese problema.
+# <a name="get-a-session-id-or-a-canvas-app-id"></a>Obtención de un identificador de sesión o un identificador de aplicación de lienzo
+Si encuentra un problema con una aplicación de lienzo que se creó en PowerApps, puede ayudar a Microsoft a solucionar el problema de manera mucho más efectiva si les proporciona un identificador de sesión, un identificador de aplicación o ambos para ese problema.
 
 ## <a name="get-the-session-id"></a>Obtención del identificador de sesión
 

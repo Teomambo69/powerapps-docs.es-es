@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido para ejecutar aplicaciones en un explorador web | Microsoft Docs
-description: En este tutorial, obtendrá información sobre cómo ejecutar aplicaciones en un explorador web
+title: Ejecución de aplicaciones en un explorador web | Microsoft Docs
+description: En este tema aprenderá a ejecutar aplicaciones en un explorador web
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -11,15 +11,20 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925648"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832434"
 ---
-# <a name="quickstart-run-an-app-in-a-web-browser"></a>Inicio rápido: Ejecución de una aplicación en un explorador web
-Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tutorial, obtendrá información sobre cómo ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
+# <a name="run-an-app-in-a-web-browser"></a>Ejecución de una aplicación en un explorador web
+Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
 
 Para seguir este inicio rápido, necesita:
 - Una licencia de PowerApps. Esta está disponible con un plan de PowerApps, como la versión de prueba del [Plan 2 de PowerApps](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), o cualquiera de los planes de [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) o [Dynamics 365](https://dynamics.microsoft.com/pricing/) que incluyen PowerApps. 
@@ -62,7 +67,7 @@ Si una aplicación requiere una conexión a un origen de datos o permiso para us
 Para cerrar una aplicación, cierre la sesión en la página de inicio de 365 Dynamics o abra otra aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha obtenido información sobre cómo ejecutar una aplicación de lienzo o controlada por modelos en un explorador web. Para obtener información sobre cómo ejecutar una aplicación de lienzo en un dispositivo móvil, continúe con el inicio rápido siguiente.
+En este tema ha aprendido a ejecutar una aplicación de lienzo o controlada por modelos en un explorador web. Para ver cómo ejecutar una aplicación de lienzo en un dispositivo móvil, continúe en el tema siguiente.
 
 > [!div class="nextstepaction"]
 > [Ejecución de una aplicación de lienzo en un dispositivo móvil](run-app-client.md)

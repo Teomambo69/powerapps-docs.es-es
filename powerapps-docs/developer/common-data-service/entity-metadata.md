@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: eb908978eee8d6473a46ca3894cee55ce4b036df
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60fafa90df656bb6d135a8cf7e2c2f3b4f8457da
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42840755"
 ---
 # <a name="entity-metadata"></a>Metadatos de entidad
 
-Cada entidad proporciona la capacidad de almacenar datos estructurados. Para los desarrolladores, las entidades se corresponden a las clases que se van a usar al trabajar con datos en Common Data Service.
+Cada entidad proporciona la capacidad de almacenar datos estructurados. En el caso de los desarrolladores, las entidades se corresponden a las clases que se van a usar al trabajar con datos en Common Data Service for Apps.
 
 ## <a name="entity-names"></a>Nombres de entidad
 Cada entidad tiene un nombre único que se define cuando se crea. Este nombre se presenta de varias maneras:
@@ -170,7 +176,7 @@ Algunas entidades tendrán otros conjuntos de opciones.
 **Ejemplo**: Opciones `StateCode` y `StatusCode` de la entidad `PhoneCall`
 
 
-|Columna1  |Columna2  |
+|`StateCode`|`StatusCode`|
 |---------|---------|
 |0: Abierto|1: Abierto|
 |1: Completado|2: Realizado <br />4: Recibido|

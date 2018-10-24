@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/30/2018
+ms.date: 08/15/2018
 ms.author: manasma
-ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 976ecbd9eeaff0ee5a274b943d4d35c21568201d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349096"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864277"
 ---
 # <a name="administer-environments-in-powerapps"></a>Administrar entornos en PowerApps
 En el [Centro de administración de PowerApps][1], administre los entornos que ha creado y aquellos a los que se le ha agregado con el rol Administrador de entorno o Administrador del sistema. Desde el centro de administración, puede realizar estas acciones administrativas:
@@ -178,7 +184,7 @@ Puede crear hasta dos entornos de prueba y dos entornos de producción, en funci
 Plan 2 de PowerApps.  Consulte la [página de precios de PowerApps][3] para más información sobre todos los planes que incluyen esta licencia.
 
 ### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Al intentar crear un entorno, obtengo un error. ¿Cómo puedo resolver esto?
-Si obtiene el mensaje de error "El plan no es compatible con el tipo de entorno seleccionado o se alcanzó el límite de ese tipo de entorno." , puede que se deba a uno de estos dos motivos:
+Si recibe el mensaje de error "El plan no es compatible con el tipo de entorno seleccionado o se alcanzó el límite de ese tipo de entorno.", puede implicar una de dos cosas:
 
 1. Ya ha usado la cuota de creación de un tipo de entorno específico. Supongamos que estaba creando un entorno de prueba y ha recibido este mensaje de error. Significa que ya ha aprovisionado dos entornos de prueba. Puede ver todos los entornos en el [centro de administración de PowerApps][1].
 Si lo prefiere, puede eliminar un entorno existente de ese tipo específico y crear otro nuevo. Asegúrese de no perder los datos, las aplicaciones, los flujos y otros recursos que quiera conservar.
@@ -190,14 +196,8 @@ Si recibe cualquier otro mensaje de error o tiene alguna pregunta más, póngase
 ### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Al intentar crear una base de datos en un entorno, obtengo un error. ¿Cómo puedo resolver esto?
 En los escenarios siguientes, puede que obtenga un error al intentar crear una base de datos:
 
-1. **Entorno predeterminado**: actualmente, la creación de una base de datos no es compatible con el entorno predeterminados del inquilino. 
-
-2. **Entorno para un uso individual**: puede obtener un entorno para su uso individual registrándose en el plan de comunidad de PowerApps. Si aún no ha creado la base de datos, no podrá aprovisionar ninguna base de datos en el entorno para su uso individual. 
-
-3. **Entorno en una región diferente de la principal de su inquilino de AAD**: actualmente, solo puede aprovisionar una base de datos en los entornos creados en la región principal de su inquilino de Azure Active Directory. La capacidad de aprovisionar una base de datos en otras regiones estará disponible próximamente. Por lo tanto, asegúrese de que la región y la ubicación predeterminada del inquilino coincidan para poder crear una base de datos en ella.
-
-4. **Creación de bases de datos no admitida en algunas regiones**: en determinadas regiones, aún no se pueden crear bases de datos. Por ejemplo, los países de Sudamérica. Así pues, si la ubicación principal de su inquilino está en Sudamérica, por el momento no podrá aprovisionar una base de datos en ningún entorno. 
-    
+**Entorno predeterminado**: actualmente, la creación de una base de datos no es compatible con el entorno predeterminados del inquilino. 
+  
 Estamos trabajando para admitir todos los casos mencionados anteriormente.
 Si recibe cualquier otro mensaje de error o tiene alguna pregunta más, póngase en contacto con nosotros [aquí][5].
 

@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: efe04d9bd9c761f432d16d4c9304c52e55503aeb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859170"
 ---
 # <a name="attribute-metadata"></a>Metadatos de atributo
 
@@ -121,7 +127,7 @@ En esta propiedad se pueden establecer los valores siguientes:
 |`ApplicationRequired`|2|**Requerido por la empresa**|La empresa requiere que el atributo tenga un valor.|
 |`Recommended`|3|**Recomendado por la empresa**|Se recomienda que el atributo tenga un valor.|
 
-Common Data Service solo impone la opción `SystemRequired` a los atributos creados por el sistema. Los atributos personalizados no se pueden establecer para que usen la opción `SystemRequired`. 
+Common Data Service for Apps solo aplica la opción `SystemRequired` a los atributos creados por el sistema. Los atributos personalizados no se pueden establecer para que usen la opción `SystemRequired`. 
 
 Las aplicaciones controladas por modelos aplicarán la opción `ApplicationRequired` y usarán otra presentación para la opción `Recommended`. Los creadores de clientes personalizados pueden usar esta información para requerir opciones de validación o presentación similares.
 
@@ -206,6 +212,7 @@ El servicio de organización proporciona clases de solicitud que se pueden usar 
 Cada uno de los atributos con opciones heredan de [EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) e incluyen una [propiedad OptionSet](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset). Esta propiedad contiene los [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata) que incluyen las opciones de la [propiedad Options](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options). 
 
 Con el servicio de organización, se pueden usar los mensajes siguientes para recuperar información sobre los conjuntos de opciones:
+
 |Clase de solicitud|Descripción|
 |--|--|
 |[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |Recupera datos sobre todos los conjuntos de opciones *globales*.|

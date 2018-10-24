@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9497d257372181323a920bd2c1098601021e4f79
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863676"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499531"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -38,9 +38,9 @@ Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesi
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
-**PausarAutomáticamente**: indica si un clip de audio o vídeo se detiene automáticamente si el usuario se desplaza a otra pantalla.
+**AutoPause**: indica si el control de temporizador se pausa automáticamente si el usuario se desplaza a otra pantalla.
 
-**IniciarAutomáticamente**: indica si un control de audio o vídeo empieza a reproducir automáticamente un clip cuando el usuario navega a la pantalla que contiene ese control.
+**AutoStart**: indica si el control de temporizador se empieza a reproducir automáticamente cuando el usuario se desplaza a la pantalla que contiene ese control.
 
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
@@ -92,7 +92,7 @@ Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesi
 
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
-**Inicio**: indica si se reproduce un clip de audio o vídeo.
+**Start**: indica si el temporizador se inicia.
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 

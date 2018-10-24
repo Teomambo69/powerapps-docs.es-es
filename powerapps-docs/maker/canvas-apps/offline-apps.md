@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
-ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40021396"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864411"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>Desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión con PowerApps
 
@@ -24,6 +28,11 @@ Uno de los escenarios más comunes a los que se enfrenta como desarrollador de a
 * Ejecutar aplicaciones que desarrolle cuando esté sin conexión.
 * Determinar si una aplicación está sin conexión, en línea o en una conexión de uso medido mediante el objeto de señal [conexión](../canvas-apps/functions/signals.md#connection).
 * Usar [colecciones](../canvas-apps/create-update-collection.md) y aprovechar funciones como [LoadData y SaveData](../canvas-apps/functions/function-savedata-loaddata.md) para el almacenamiento de datos básico cuando esté sin conexión.
+
+> [!NOTE]
+> Esta área de características está aún en desarrollo y no está optimizada actualmente para todos los escenarios. Las funciones SaveData() en un dispositivo local y LoadData() desde ese dispositivo funcionan mejor en su implementación actual en cantidades de datos relativamente pequeñas (por ejemplo, docenas de registros de texto de una tabla) que generalmente no superan los 2 MB. Esto resulta útil con algunos escenarios básicos "sin conexión", así como para aumentar el rendimiento de inicio de las aplicaciones de lienzo al almacenar localmente los datos en caché. Pero utilizar esta característica para guardar grandes cantidades de datos (por ejemplo, guardar miles de filas de una tabla o almacenar en caché imágenes o vídeos grandes) puede provocar errores o un comportamiento inesperado con la implementación actual y debe evitarse. Además, las funciones no resuelven automáticamente los conflictos de combinación cuando un dispositivo vuelve al modo de conectividad desde el modo sin conexión: la configuración sobre qué datos se guardan y cómo se controla la reconexión la decide el creador al escribir expresiones.
+>
+> Estamos trabajando para ampliar las funcionalidades de las aplicaciones sin conexión, para aumentar los límites de tamaño y la estabilidad y (en el futuro) para controlar automáticamente las decisiones sobre qué se debe guardar y cómo tratar los conflictos. Permanezca atento aquí y en el [blog de PowerApps](https://powerapps.microsoft.com/blog/) para ver las actualizaciones cuando están disponibles.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Cómo crear aplicaciones que puedan ejecutarse sin conexión
 

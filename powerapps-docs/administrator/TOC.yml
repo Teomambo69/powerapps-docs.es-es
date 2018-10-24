@@ -1,63 +1,79 @@
+items:
 - name: Administrar PowerApps
   href: admin-guide.md
   items:
-    - name: Introducción
-      items:
-        - name: ¿Qué función desempeñan los administradores de PowerApps?
-          href: overview-role-powerapps-admin.md
-    - name: Licencias
-      items:
-        - name: Introducción a las licencias
-          href: pricing-billing-skus.md
-        - name: Administración de licencias en la organización
-          href: signup-question-and-answer.md
-        - name: Comprar PowerApps
-          href: signup-for-powerapps-admin.md
-    - name: Administración de PowerApps
-      items:
-        - name: Ver las aplicaciones en los entornos
-          href: admin-view-apps.md
-        - name: Administración de aplicaciones en la organización
-          href: admin-manage-apps.md
-        - name: Mover una aplicación entre inquilinos o entornos
-          href: environment-and-tenant-migration.md
-        - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
-          href: powerapps-powershell.md
+  - name: Introducción
+    items:
+    - name: ¿Qué función desempeñan los administradores de PowerApps?
+      href: overview-role-powerapps-admin.md
+    - name: Notas del producto de la implementación de PowerApps Enterprise
+      href: admin-powerapps-enterprise-deployment.md
+  - name: Licencias
+    items:
+    - name: Introducción a las licencias
+      href: pricing-billing-skus.md
+    - name: Administración de licencias en la organización
+      href: signup-question-and-answer.md
+    - name: Comprar PowerApps
+      href: signup-for-powerapps-admin.md
+  - name: Administración de PowerApps
+    items:
+    - name: Ver las aplicaciones en los entornos
+      href: admin-view-apps.md
+    - name: Administración de aplicaciones en la organización
+      href: admin-manage-apps.md
+    - name: Mover una aplicación entre inquilinos o entornos
+      href: environment-and-tenant-migration.md
+    - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
+      href: powerapps-powershell.md
+  - name: Integración de datos
+    items:
+    - name: Integración de datos en CDS for Apps
+      href: data-integrator.md
     - name: Respuesta a solicitudes de DSR
-      href: powerapps-gdpr-dsr-guide-systemlogs.md
       items:
-        - name: Registros generados por el sistema
-          href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: Datos de cliente de PowerApps
-          href: powerapps-gdpr-dsr-guide.md
-          items:
-            - name: Exportación de datos
-              href: powerapps-gdpr-export-dsr.md
-            - name: Eliminación de datos
-              href: powerapps-gdpr-delete-dsr.md
-        - name: CDS para datos de cliente de aplicaciones
-          href: common-data-service-gdpr-dsr-guide.md
-    - name: Administrar entornos
-      href: environments-administration.md
-      items:
-        - name: Información general sobre los entornos
-          href: environments-overview.md
-        - name: Información general sobre las regiones
-          href: regions-overview.md
-        - name: Creación de un entorno
-          href: create-environment.md
-        - name: Crear una base de datos
-          href: create-database.md
-    - name: Configurar la seguridad del entorno
-      href: database-security.md
-      items:
-        - name: Introducción a los grupos de datos
-          href: introduction-to-data-groups.md
-        - name: Crear una directiva DLP
-          href: create-dlp-policy.md
-        - name: Administración de directivas DLP
-          href: prevent-data-loss.md
-    - name: Administración de suscripciones y cuentas de usuario
-      items:
-        - name: Ver los usuarios activos en el inquilino
-          href: admin-view-user-licenses.md
+      - name: Registros generados por el sistema
+        href: powerapps-gdpr-dsr-guide-systemlogs.md
+      - name: Integración de datos para CDS for Apps
+        href: data-integration-gdpr-dsr-guide.md
+      - name: Datos de cliente de PowerApps
+        href: powerapps-gdpr-dsr-guide.md
+        items:
+        - name: Exportación de datos
+          href: powerapps-gdpr-export-dsr.md
+        - name: Eliminación de datos
+          href: powerapps-gdpr-delete-dsr.md
+      - name: CDS para datos de cliente de aplicaciones
+        href: common-data-service-gdpr-dsr-guide.md
+  - name: Administrar entornos
+    href: environments-administration.md
+    items:
+    - name: Información general sobre los entornos
+      href: environments-overview.md
+    - name: Información general sobre las regiones
+      href: regions-overview.md
+    - name: Creación de un entorno
+      href: create-environment.md
+    - name: Crear una base de datos
+      href: create-database.md
+    - name: Versión preliminar de entornos
+      href: preview-environments.md
+  - name: Configurar la seguridad del entorno
+    href: database-security.md
+    items:
+    - name: Introducción a los grupos de datos
+      href: introduction-to-data-groups.md
+    - name: Crear una directiva DLP
+      href: create-dlp-policy.md
+    - name: Administración de directivas DLP
+      href: prevent-data-loss.md
+  - name: Administración de suscripciones y cuentas de usuario
+    items:
+    - name: Ver los usuarios activos en el inquilino
+      href: admin-view-user-licenses.md
+ms.openlocfilehash: 555f8872c3aaa5e656dfe3b3ad72004de63d8d7c
+ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46468844"

@@ -1,6 +1,6 @@
 ---
 title: Aplicación de lógica de negocios con código | Microsoft Docs
-description: Obtenga información sobre cómo los desarrolladores pueden usar código para aplicar la lógica de negocios en Common Data Service for Apps.
+description: Vea cómo los desarrolladores pueden usar código para aplicar la lógica de negocios en Common Data Service for Apps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 12925c57103b1ecc00dc19205af5f32d165bdc63
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843346"
 ---
 # <a name="apply-business-logic-with-code"></a>Aplicación de lógica de negocios con código
 
@@ -35,7 +41,7 @@ Más información: [Actividades de flujo de trabajo personalizadas (ensamblados 
 
 ## <a name="create-a-plug-in"></a>Crear un complemento
 
-Puede escribir un ensamblado .NET como complemento para el flujo de transacciones de datos para aplicar la lógica de negocios en el servidor. Con la plataforma de aplicaciones Common Data Service for Apps hay un marco que permite registrar eventos específicos para ejecutar en un ensamblado el código definido en una clase. Esa clase hereda una interfaz específica que expone un [método Execute](/dotnet/api/microsoft.xrm.sdk.iplugin.execute). Cuando se produce el evento registrado, se invoca el método `Execute` de la clase y se pasan datos contextuales sobre el evento.
+Puede escribir un ensamblado .NET como complemento para el flujo de transacciones de datos para aplicar la lógica de negocios en el servidor. Con Common Data Service for Apps hay un marco que permite registrar eventos específicos para ejecutar en un ensamblado el código definido en una clase. Esa clase hereda una interfaz específica que expone un [método Execute](/dotnet/api/microsoft.xrm.sdk.iplugin.execute). Cuando se produce el evento registrado, se invoca el método `Execute` de la clase y se pasan datos contextuales sobre el evento.
 
 Para registrar los ensamblados se usa la *herramienta de registro de complementos*.
 

@@ -1,20 +1,24 @@
 ---
 title: Objeto visual personalizado de PowerApps para Power BI | Microsoft Docs
 description: Procedimiento y limitaciones para insertar una aplicación de lienzo en la que se usa el mismo origen de datos y se puede filtrar al igual que otros elementos de informe en Power BI
-author: mgblythe
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
-ms.author: mblythe
-ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+ms.author: chmoncay
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
+ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470003"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860619"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -32,7 +36,9 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
     ![Seleccionar los datos de informe](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-3. Puede elegir una aplicación existente o crear una. Si decide crear una aplicación, puede elegir en qué entorno crearla.
+    Puede elegir una aplicación existente o crear una, pero el informe se deben publicar en el servicio Power BI y abrir en Microsoft Edge o Google Chrome.
+
+3.  Si decide crear una aplicación, puede elegir en qué entorno crearla.
 
     ![Aplicación nueva o existente](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -66,12 +72,12 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
 El objeto visual personalizado de PowerApps está disponible en versión preliminar y presenta las limitaciones siguientes:
 
-- No se pueden crear o modificar aplicaciones cuando se usa el objeto visual personalizado de PowerApps en Power BI Desktop, Internet Explorer o Mozilla Firefox. Se recomienda publicar primero el informe en el servicio Power BI. Después, use Microsoft Edge o Google Chrome para crear aplicaciones y realizar cambios en las aplicaciones.
+- No se pueden crear ni modificar aplicaciones cuando se usa el objeto visual personalizado de PowerApps en Power BI Desktop, Internet Explorer o Mozilla Firefox. Se recomienda publicar primero el informe en el servicio Power BI. Luego, use Microsoft Edge o Google Chrome para crear y actualizar aplicaciones.
 - Si se cambian los campos de datos asociados con el objeto visual, tendrá que modificar la aplicación desde dentro del servicio Power BI haciendo clic en el botón de puntos suspensivos (...) y seleccionando después **Editar**. En caso contrario, los cambios no se propagarán a PowerApps y la aplicación se comportará de forma inesperada.
 - El objeto visual personalizado de PowerApps no puede desencadenar una actualización del informe o el origen de datos de Power BI. Si se escriben datos desde la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente. Los cambios se reflejan en la siguiente actualización programada.
 - El objeto visual personalizado de PowerApps no puede filtrar los datos o devolver ningún dato al informe.
 - Tendrá que compartir la aplicación de PowerApps de forma independiente al informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
-- La aplicación móvil para Power BI no es compatible con el objeto visual personalizado de PowerApps.
+- Power BI Report Server y la aplicación móvil de Power BI no admiten el objeto visual personalizado de PowerApps.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

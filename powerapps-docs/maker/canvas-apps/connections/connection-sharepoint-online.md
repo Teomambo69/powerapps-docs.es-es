@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195528"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836744"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Conexión a SharePoint desde PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -44,7 +48,7 @@ Puede agregar datos de una lista personalizada, pero no una biblioteca. Además,
 | Metadatos administrados |Sí (solo lectura) | |
 | Clasificación |No | |
 
-PowerApps lee las columnas que contienen espacios, pero estos se sustituyen por el código de escape hexadecimal **"\_x0020\_"**. Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+PowerApps puede leer las columnas que contienen espacios, pero estos se sustituyen por el código de escape hexadecimal **"\_x0020\_"**. Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 ## <a name="prerequisites"></a>Requisitos previos
 1. [Inicie sesión](../../signup-for-powerapps.md) en PowerApps.
@@ -103,7 +107,7 @@ PowerApps lee las columnas que contienen espacios, pero estos se sustituyen por 
 
     ![Seleccionar tablas en SharePoint](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    No todos los tipos de listas aparecen de forma predeterminada. Si el nombre de la lista que desea usar no aparece, desplácese a la parte inferior y escriba el nombre de la lista en el cuadro que contiene el texto **Enter a custom list name** (Escriba el nombre de lista personalizado).
+    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas.  Si el nombre de la lista que desea usar no aparece, desplácese a la parte inferior y escriba el nombre de la lista en el cuadro que contiene el texto **Enter a custom list name** (Escriba el nombre de lista personalizado).
 
     ![Lista personalizada en SharePoint](./media/connection-sharepoint-online/custom-list.png)
 

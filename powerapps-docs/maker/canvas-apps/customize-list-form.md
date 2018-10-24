@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc2940f726c23c79bcf894bb61c3e6b884ca7112
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
+ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865786"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025680"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -31,7 +31,7 @@ Para seguir los pasos de este tema, tiene que crear una lista simple para que pu
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-En un sitio de SharePoint, cree una lista que contenga estas columnas:
+En un sitio de SharePoint, cree una lista y luego agregue estas columnas:
 
 - **NombreProducto** (única línea de texto)
 - **Detalles** (sí/no)
@@ -53,18 +53,11 @@ En un sitio de SharePoint, cree una lista que contenga estas columnas:
 
 ## <a name="hide-extra-fields"></a>Ocultar campos adicionales
 
-En el centro de la pantalla, PowerApps muestra el formulario, que contiene algunos campos que quizás no quiera mostrar.
+En el centro de la pantalla, PowerApps muestra el formulario, que contiene campos que no necesita.
 
-- En el panel **Datos**, desactive las casillas de esos campos.
+- En el panel **Datos**, desactive las casillas de los campos **Título** y **Datos adjuntos**.
 
-  - **Title**
-  - **Modificado**
-  - **Creado**
-  - **Creado por**
-  - **Modificado por**
-  - **Id.**
-
-    Esos campos desaparecen del formulario y quedan solo los que ha creado.
+    Esos campos desaparecen del formulario y quedan solo los que ha agregado.
 
     ![Lista de campos](./media/customize-list-form/field-list.png)
 
@@ -109,6 +102,8 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 1. Seleccione el botón de alternancia **Detalles** varias veces para ocultar y mostrar los últimos tres campos.
 
 Para [personalizar aún más el formulario](sharepoint-form-integration.md), ábralo, seleccione **Personalizar** junto a la parte superior de este y luego realice, guarde y publique los cambios.
+
+Si crea uno o varios elementos con este formulario, el campo **Título** estará vacío. Puede ocultar este campo si modifica la vista predeterminada.
 
 ## <a name="use-the-default-form"></a>Usar el formulario predeterminado
 

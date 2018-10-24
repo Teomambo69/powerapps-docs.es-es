@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 926d2b4b0d24f07a9a4cd42216e7d737db57308c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470647"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853851"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -81,7 +85,11 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 ### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
 
-Si crea una aplicación basada en Common Data Service for Apps, debe asegurarse de que los usuarios que vayan a ejecutarla tienen los permisos adecuados para las entidades en las que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que pueda realizar tareas como crear, leer, escribir o eliminar los registros relevantes. Si tiene permisos de **Administrador del sistema** o **personalizador del sistema** para la base de datos en este entorno, puede crear un rol personalizado y después agregarle usuarios.
+Si crea una aplicación basada en Common Data Service (CDS) for Apps, debe asegurarse de que los usuarios que vayan a ejecutarla tienen los permisos adecuados en las entidades en las que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que pueda realizar tareas como crear, leer, escribir o eliminar los registros relevantes. En muchos casos, querrá crear uno o varios roles de seguridad personalizado con los permisos exactos que los usuarios deben usar las aplicaciones. Luego puede asignar esos roles a los usuarios según corresponda. 
+
+#### <a name="prerequisite"></a>Requisito previo
+
+Para llevar a cabo los dos procedimientos siguientes, debe tener permisos de **administrador del sistema** en una base de datos de CDS for Apps.
 
 #### <a name="create-a-security-role"></a>Crear un rol de seguridad
 

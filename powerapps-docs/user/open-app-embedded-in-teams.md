@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido para agregar una aplicación a Microsoft Teams | Microsoft Docs
-description: En este inicio rápido, aprenderá a agregar una aplicación a un canal de Microsoft Teams para que los usuarios con los que se ha compartido la puedan abrir desde dentro de ese canal.
+title: Adición de una aplicación a Microsoft Teams | Microsoft Docs
+description: Vea cómo agregar una aplicación a un canal de Microsoft Teams para que los usuarios con los que la comparta puedan abrirla en ese canal.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -11,16 +11,21 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a5adb035fdde271ffe07cb6d0a46f332ae55c43f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218381"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850470"
 ---
-# <a name="quickstart-add-an-app-to-microsoft-teams"></a>Inicio rápido: Adición de una aplicación a Microsoft Teams
+# <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
-Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. Se puede personalizar la experiencia de Teams mediante la adición de aplicaciones de lienzo de PowerApps a los canales de Teams. En este tutorial, obtendrá información sobre cómo agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y, después, abrirla desde ese canal. 
+Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. Se puede personalizar la experiencia de Teams mediante la adición de aplicaciones de lienzo de PowerApps a los canales de Teams. En este tema aprenderá a agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y abrirla luego desde ese canal. 
 
 ![Aplicación insertada en Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
@@ -28,7 +33,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para seguir este tutorial rápido, necesita una [suscripción a Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) y un [canal en Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
+Para seguir este procedimiento, necesita una [suscripción a Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) y un [canal en Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
 ## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
 
@@ -87,7 +92,7 @@ Para quitar la aplicación del canal, haga clic en la pestaña **Presentación d
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y, después, la ha abierto desde ese canal. Para obtener más información sobre PowerApps, continúe con los tutoriales de PowerApps.
+En este tema ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y luego la ha abierto en ese canal. Para obtener más información sobre PowerApps, continúe con los tutoriales de PowerApps.
 
 > [!div class="nextstepaction"]
 > [Tutoriales de PowerApps](../maker/canvas-apps/get-started-create-from-blank.md)

@@ -1,5 +1,5 @@
 ---
-title: Diseñar aplicaciones controladas por modelos usando el diseñador de aplicaciones | MicrosoftDocs
+title: Diseño de aplicaciones controladas por modelos con el diseñador de aplicaciones | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -8,46 +8,46 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: aa6aca00-f95a-4f06-bec4-18b427b4618c
 ms.author: matp
 manager: kvivek
 author: Mattp123
 caps.latest.revision: 17
 topic-status: Drafting
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 41d3ce46bbaea3ec50033003a58fe502fbdc6224
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39712255"
 ---
+# <a name="design-model-driven-apps-by-using-the-app-designer"></a>Diseño de aplicaciones controladas por modelos con el diseñador de aplicaciones
 
-# <a name="design-model-driven-apps-by-using-the-app-designer"></a>Diseñar aplicaciones controladas por modelos usando el diseñador de aplicaciones
-
-Con PowerApps, las aplicaciones controladas por modelos están formadas por componentes como entidades, paneles, formularios, vistas, gráficos y procesos de negocio.  
+Con PowerApps, las aplicaciones controladas por modelos constan de componentes como entidades, paneles, formularios, vistas, gráficos y procesos de negocio.  
   
- El diseñador de la aplicación ayuda a reunir todos estos componentes rápidamente. Su estructura de información basada en ventanas y la interfaz simplificada hacen que el proceso de generar una aplicación sea mucho más fácil, y puede crear aplicaciones que son específicas de las funciones y los roles de negocio sin necesidad de escribir código.  
+ El diseñador de aplicaciones lo ayuda a reunir rápidamente todos estos componentes. Su interfaz simplificada y estructura de información basada en iconos hace que el proceso de compilar una aplicación sea mucho más sencillo y se pueden crear aplicaciones específicas para sus funciones y roles de negocio sin tener que escribir nada de código.  
   
- Cada aplicación que cree puede tener su propio mapa del sitio con el diseñador de mapas del sitio integrado y fácil de usar.  Solo tiene que arrastrar y colocar áreas, grupos, y subáreas al lienzo. Los componentes que seleccione en el mapa del sitio también se agregan como entidades en el diseñador de la aplicación.  
+ Cada aplicación que crea puede tener su propio mapa del sitio con el diseñador de mapa del sitio integrado y fácil de usar.  Solo debe arrastrar y colocar áreas, grupos y subáreas en el lienzo. Los componentes que selecciona en el mapa del sitio también se agregan como entidades en el diseñador de aplicaciones.  
   
- Puede agregar o quitar entidades que necesite, así como agregar otros componentes.  
+ Puede agregar o quitar entidades según sea necesario y, además, agregar otros componentes.  
   
- Una vez que ha terminado de agregar componentes, puede validar la aplicación para comprobar si le falta agregar componentes necesarios, agregarlos y, a continuación publicar la aplicación para los usuarios.  
+ Una vez que termine de agregar componentes, puede validar la aplicación para revisar si no agregó algún componente necesario, agregarlo y, luego, publicar la aplicación para los usuarios.  
   
- La siguiente tabla muestra los pasos que dará para crear una aplicación.  
+ En la tabla siguiente se muestran los pasos que deberá realizar para crear una aplicación.  
   
 |Paso|Descripción|Temas relacionados|  
 |----------|-----------------|--------------------|  
-|![Paso 1](media/walkthrough-green-1.png "Paso 1")|Defina propiedades de la aplicación.|[Creación o edición de aplicaciones](create-edit-app.md)|  
-|![Paso 2](media/walkthrough-green-2.png "Paso 2")|Defina la navegación para una aplicación mediante el diseñador del mapa del sitio.|[Cree un mapa del sitio para una aplicación](create-site-map-app.md)|  
-|![Paso 3](media/walkthrough-green-3.png "Paso 3")|Las aplicaciones están formadas por componentes como paneles, entidades, flujos de proceso de negocio, formularios, vistas y gráficos. Incluya los necesarios en la aplicación mediante el diseñador de la aplicación.|[Agregar o editar componentes de la aplicación](add-edit-app-components.md)|  
-|![Paso 4](media/walkthrough-green-4.png "Paso 4")|Compruebe en su aplicación los componentes necesarios que no ha agregado. Después de agregar todos los componentes necesarios, haga que la aplicación esté disponible para su uso. |[Validación y publicación de una aplicación](validate-app.md)|  
-|![Paso 5](media/walkthrough-green-5.png "Paso 5")|Otorgue a los usuarios acceso a las aplicaciones creadas mediante roles de seguridad.|[Compartir una aplicación controlada por modelos](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/share-model-driven-app)|  
+|![Paso 1](media/walkthrough-green-1.png "Paso 1")|Defina las propiedades de la aplicación.|[Crear o editar una aplicación](create-edit-app.md)|  
+|![Paso 2](media/walkthrough-green-2.png "Paso 2")|Defina la navegación de una aplicación con el diseñador de mapa del sitio.|[Crear un mapa del sitio para una aplicación](create-site-map-app.md)|  
+|![Paso 3](media/walkthrough-green-3.png "Paso 3")|Las aplicaciones constan de componentes como paneles, entidades, flujos de proceso de negocio, formularios, vistas y gráficos. Con el diseñador de aplicaciones, incluya los componentes necesarios en la aplicación.|[Agregar o editar componentes de una aplicación](add-edit-app-components.md)|  
+|![Paso 4](media/walkthrough-green-4.png "Paso 4")|Revise la aplicación para ver si dejó de agregar algún componente necesario. Una vez que agregue todos los componentes necesarios, ponga la aplicación a disposición de los usuarios. |[Validar y publicar una aplicación](validate-app.md)|  
+|![Paso 5](media/walkthrough-green-5.png "Paso 5")|Brinde a los usuarios acceso a las aplicaciones que creó mediante el uso de roles de seguridad.|[Compartir una aplicación controlada por modelos](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/share-model-driven-app)|  
   
-## <a name="support-matrix-for-the-app-designer-and-site-map-designer"></a>Matriz de compatibilidad para el diseñador de la aplicación y el diseñador del mapa del sitio  
- La siguiente tabla muestra los sistemas operativos y los exploradores admitidos.  
+## <a name="support-matrix-for-the-app-designer-and-site-map-designer"></a>Matriz de compatibilidad para el diseñador de aplicaciones y el diseñador de mapa del sitio  
+ En la tabla siguiente se muestran los sistemas operativos y los exploradores compatibles.  
   
 |Explorador/SO|Windows 10|Windows 8.1|Windows 8|Mac OS X|  
 |-----------------|----------------|-----------------|---------------|--------------|  

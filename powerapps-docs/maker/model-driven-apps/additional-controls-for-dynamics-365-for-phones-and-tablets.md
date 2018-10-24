@@ -1,5 +1,5 @@
 ---
-title: Controles adicionales para Dynamics 365 para teléfonos y tabletas | MicrosoftDocs
+title: Controles adicionales para Dynamics 365 para teléfonos y tabletas | Microsoft Docs
 description: Una lista de controles disponibles para su uso con Dynamics 365 para teléfonos y tabletas
 ms.custom: ''
 ms.date: 06/18/2018
@@ -9,23 +9,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7920ef78-2540-48ad-ba25-9ce9cb995ed1
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: d6293f1fc0913a7e2f66e3830702458e3249f0f0
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39699277"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>Controles adicionales para Dynamics 365 para teléfonos y tabletas 
 
- Puede usar un completo conjunto de controles adicionales para crear una experiencia más táctil en Dynamics 365 para teléfonos y tabletas. Esto incluye los controles deslizantes, modificadores, reproductor multimedia, máscaras de entrada, calendario, y otros controles.  
+ Puede usar un completo conjunto de controles adicionales para crear una experiencia más táctil en Dynamics 365 para teléfonos y tabletas. Esto incluye los controles deslizantes, modificadores, reproductor multimedia, máscaras de entrada, calendario y otros controles.  
 
  
 > [!NOTE]
@@ -53,7 +54,7 @@ search.app:
  A continuación se ofrecen descripciones de cada control que puede usar en formularios de Dynamics 365 para teléfonos y tabletas.  
   
 ## <a name="calendar-control"></a>Control del calendario  
- Use este control para configurar formularios de modo que aparezcan como vista de calendario en Dynamics 365 para teléfonos y tabletas. También puede usar este control para reemplazar paneles, listas, o cuadrículas de entidad para teléfonos y tabletas.  
+ Use este control para configurar formularios de modo que aparezcan como vista de calendario en Dynamics 365 para teléfonos y tabletas. También puede usar este control para reemplazar paneles, listas o cuadrículas de entidad para teléfonos y tabletas.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
@@ -62,9 +63,9 @@ search.app:
 |Duración|Duración en minutos. Si especifica un valor para Fecha de finalización, se omite Duración.|  
 |Descripción|Este es el pie de imagen que desea ver para elementos del calendario.|  
   
- La duración mínima que aparece en el calendario es de 30 minutos. Los elementos que tengan menos una duración de menos de 30 minutos aparecerán con una duración de 30 minutos.  
+ La duración mínima que aparece en el calendario es de 30 minutos. Los elementos que tengan una duración de menos de 30 minutos aparecerán con una duración de 30 minutos.  
   
- El control calendario admite todos los comportamientos de fecha (Local del usuario, Solo fecha e Independiente de la zona horaria).  
+ El control de calendario admite todos los comportamientos de fecha (Local del usuario, Solo fecha e Independiente de la zona horaria).  
   
 ## <a name="timeline-control"></a>Control de escala de tiempo  
  Proporcione una escala de tiempo de artículos de noticias y tweets de Twitter recientes y relevantes para una cuenta.  
@@ -104,9 +105,9 @@ search.app:
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |Máx.|Establezca el valor máximo que se muestra en el control deslizante.|  
-|Mín.|Establezca el valor mínimo que se muestra en el control deslizante.|  
-|valor|El valor que se muestra en el control deslizante.|  
-|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al entrar datos con este control.|  
+|Min|Establezca el valor mínimo que se muestra en el control deslizante.|  
+|Valor|El valor que se muestra en el control deslizante.|  
+|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al escribir datos con este control.|  
   
 ## <a name="option-sets"></a>Conjuntos de opciones  
  El control de conjunto de opciones muestra un conjunto de opciones para que los usuarios elijan cuando se escriben datos. Use este control para conjuntos de opciones con dos o tres opciones solo.  
@@ -141,15 +142,15 @@ search.app:
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |Máx.|Establezca el valor máximo que se debe mostrar en el medidor.|  
-|Mín.|Establezca el valor mínimo que se debe mostrar en el medidor.|  
-|valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
-|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al entrar datos con este control.|  
+|Min|Establezca el valor mínimo que se debe mostrar en el medidor.|  
+|Valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
+|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al escribir datos con este control.|  
   
 ## <a name="website-preview"></a>Vista previa del sitio web  
  Use el control de vista previa de sitio web para asignar un campo de dirección URL y mostrar una vista previa del sitio web.  
   
 > [!IMPORTANT]
->  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados de sistemas externos a una aplicación de PowerApps o a Dynamics 365 Customer Engagement están sujetos a nuestra declaración de privacidad en [Privacidad y cookies de Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados desde sistemas externos en Dynamics 365 están sujetos a la declaración de privacidad en [Cookies y privacidad de Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Avisos de privacidad](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   
@@ -158,22 +159,22 @@ search.app:
 |Campo|Muestra el campo al que está asignado el control.|  
   
 ## <a name="bullet-graph"></a>Gráfico de viñetas  
- El control de gráficos de viñetas muestra una sola medida clave con una medida comparativa e intervalos cualitativos para señalar inmediatamente si la medida es buena, malo u otro estado. Use este control en paneles para cualquier campo numérico o de divisa. Por ejemplo, puede asignar el valor a ingresos reales y el destino a los ingresos estimados para visualizar ingresos reales frente a estimados.  
+ El control de gráficos de viñetas muestra una sola medida clave con una medida comparativa e intervalos cualitativos para señalar inmediatamente si la medida es buena, mala o si tiene otro estado. Use este control en paneles para cualquier campo numérico o de divisa. Por ejemplo, puede asignar el valor a ingresos reales y el destino a los ingresos estimados para visualizar ingresos reales frente a estimados.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |Máx.|Establezca el valor máximo que se muestra en el gráfico.|  
-|Mín.|Establezca el valor mínimo que se muestra en el gráfico.|  
-|Correcto|Establezca un valor que sea considera bueno para la medida (opcional).|  
+|Min|Establezca el valor mínimo que se muestra en el gráfico.|  
+|Bien|Establezca un valor que sea considera bueno para la medida (opcional).|  
 |Incorrecto|Establezca un valor que sea considera malo para la medida (opcional).|  
-|valor|Muestra el campo al que está asignado el control.|  
+|Valor|Muestra el campo al que está asignado el control.|  
 |Destino|Asigne esto al campo con el que desee comparar el valor. Por ejemplo, si se asigna **Valor** a **Ingresos reales**, puede asignar **Destino** a **Ingresos estimados**, o puede proporcionar un valor estático.|  
   
 ## <a name="pen-control"></a>Control de lápiz  
- Use el control de lápiz para capturar entrada escrita como firmas.  
+ Use el control de lápiz para capturar entradas escritas como firmas.  
   
 > [!NOTE]
->  El mínimo requerido **Longitud máxima** especificado para el campo al que se asigna este control es 15000 horas.  
+>  El valor mínimo recomendado de **Longitud máxima** especificado para el campo al que se asigna este control es 15 000.  
 >   
 >  Asegúrese de seleccionar la opción **Ocultar en la Web** para este control.  
   
@@ -189,11 +190,11 @@ search.app:
 |Campo|Muestra el campo al que está asignado el control.|  
 |Origen|Establezca el origen de datos (Opciones agrupadas, Conjunto de opciones o Vista).|  
 |Conjunto de opciones|Seleccione el conjunto de opciones para este campo.|  
-|Vista|Seleccione la entidad y la vista para este campo.|  
+|Ver|Seleccione la entidad y la vista para este campo.|  
 |Campo|Seleccione el campo de la entidad principal de la vista que desee usar como origen de datos.|  
   
-## <a name="multimedia"></a>Multimedia  
- Puede incrustar vídeos para proporcionar una experiencia más rica a los clientes para el personal comercial y sobre el terreno. Use este control para asignar a un campo de dirección URL que contiene el vínculo de audio o vídeo que se reproducirá en el control.  
+## <a name="multimedia"></a>Contenido multimedia  
+ Puede insertar vídeos para proporcionar una experiencia más enriquecida a los clientes para el personal comercial y sobre el terreno. Use este control para asignar a un campo de dirección URL que contiene el vínculo de audio o vídeo que se reproducirá en el control.  
   
 > [!NOTE]
 >  Este control se admite en Android versiones 4.4 y posteriores.  
@@ -214,22 +215,22 @@ search.app:
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|Medios|Especifique la dirección URL de los medios que se reproducirán en este control.|  
+|Multimedia|Especifique la dirección URL de los medios que se reproducirán en este control.|  
   
 ## <a name="number-input"></a>Entrada numérica  
- Use el control de entrada de número para ayudar a los usuarios a escribir datos rápidamente. Los usuarios solo tienen que pulsar e los botones más y menos para cambiar un valor numérico en los incrementos que configure. Use este control para cualquier campo numérico o de divisa. Los usuarios también pueden escribir un número directamente en el campo. Este campo se admite únicamente en modo de edición.  
+ Use el control de entrada de número para ayudar a los usuarios a escribir datos rápidamente. Los usuarios solo tienen que pulsar los botones más y menos para cambiar un valor numérico en los incrementos que configure. Use este control para cualquier campo numérico o de divisa. Los usuarios también pueden escribir un número directamente en el campo. Este campo se admite únicamente en modo de edición.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al entrar datos con este control.|  
+|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al escribir datos con este control.|  
 |Campo|Muestra el campo al que está asignado el control.|  
   
 ## <a name="input-mask"></a>Máscara de entrada  
- Con el control de máscara de entrada, se establece el formato para un campo como número de teléfono o tarjeta de crédito para evitar especificar datos no válidos. Por ejemplo, si desea que los usuarios introduzcan un número de teléfono de Estados Unidos en el formato +1-222-555-1011, use la máscara de entrada +1-000-000-0000.  
+ Con el control de máscara de entrada, se establece el formato para un campo como número de teléfono o tarjeta de crédito para evitar especificar datos no válidos. Por ejemplo, si desea que los usuarios escriban un número de teléfono de Estados Unidos en el formato +1-222-555-1011, use la máscara de entrada +1-000-000-0000.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|Máscara|Introduzca la máscara que se debe usar para validar datos cuando los usuarios los introduzcan. Puede usar una combinación de los caracteres siguientes para la máscara:<br /><br /> 0 – dígito<br /><br /> 9 – dígito o espacio<br /><br /> # – dígito, signo o espacio<br /><br /> L – letra<br /><br /> I - letra o espacio<br /><br /> A – alfanumérico<br /><br /> A – alfanumérica o espacio<br /><br /> < - convierte los caracteres que siguen a minúscula<br /><br /> > - convierte los caracteres que siguen a mayúscula<br /><br /> &#124; – Deshabilita la conversión de mayúsculas y minúsculas<br /><br /> \ – Aplica un carácter de escape a cualquier carácter, convirtiéndolo en un literal<br /><br /> Todos los demás - literales|  
+|Máscara|Especifique la máscara que se debe usar para validar datos cuando los usuarios los escriban. Puede usar una combinación de los caracteres siguientes para la máscara:<br /><br /> 0 – dígito<br /><br /> 9 – dígito o espacio<br /><br /> # – dígito, signo o espacio<br /><br /> L – letra<br /><br /> I - letra o espacio<br /><br /> A – alfanumérico<br /><br /> A – alfanumérico o espacio<br /><br /> < - convierte los caracteres que siguen a minúscula<br /><br /> > - convierte los caracteres que siguen a mayúscula<br /><br /> &#124; – Deshabilita la conversión de casos<br /><br /> \ – Aplica un carácter de escape a cualquier carácter, convirtiéndolo en un literal<br /><br /> Todos los demás - literales|  
 |Campo|Muestra el campo al que está asignado el control.|  
   
 ## <a name="linear-gauge"></a>Medidor lineal  
@@ -238,9 +239,9 @@ search.app:
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |Máx.|Establezca el valor máximo que se debe mostrar en el medidor.|  
-|Mín.|Establezca el valor mínimo que se debe mostrar en el medidor.|  
-|valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
-|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al entrar datos con este control.|  
+|Min|Establezca el valor mínimo que se debe mostrar en el medidor.|  
+|Valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
+|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al escribir datos con este control.|  
   
 ## <a name="arc-knob"></a>Mando esférico  
  El mando esférico proporciona una forma de que los usuarios especifiquen datos deslizando el mando, y aparece en la pantalla como una esfera. El control de mando esférico permite introducir y ver solo números enteros. Use este control para cualquier campo numérico y de divisa. Puede tocar para cambiar el valor, también puede poner el enfoque en el número y editarlo usando el teclado numérico.  
@@ -251,9 +252,9 @@ search.app:
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |Máx.|Establezca el valor máximo que se debe mostrar en el medidor.|  
-|Mín.|Establezca el valor mínimo que se debe mostrar en el medidor.|  
-|valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
-|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al entrar datos con este control.|  
+|Min|Establezca el valor mínimo que se debe mostrar en el medidor.|  
+|Valor|Obtenga o establezca el valor que se debe mostrar en el medidor.|  
+|Paso|Establezca la cantidad que se debe sumar o restar del valor actual al escribir datos con este control.|  
   
 ## <a name="next-steps"></a>Pasos siguientes
 [Tutorial: Usar controles personalizados para visualizaciones de datos](use-custom-controls-data-visualizations.md)

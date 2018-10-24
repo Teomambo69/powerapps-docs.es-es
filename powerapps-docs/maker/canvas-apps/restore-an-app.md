@@ -1,6 +1,6 @@
 ---
-title: Restauración de la aplicación a una versión anterior | Microsoft Docs
-description: Restaurar una aplicación
+title: Restauración de la aplicación de lienzo a una versión anterior | Microsoft Docs
+description: Restauración de una aplicación de lienzo en PowerApps
 author: jamesol-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 3f59dac57fcdd344645f7af53c75e9fa1cb1a7a3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 611b13509d92cf550f3391754d389863d538cb08
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195091"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832490"
 ---
-# <a name="restore-an-app-to-a-previous-version"></a>Restaurar una aplicación a una versión anterior
-En este artículo se muestra cómo restaurar una aplicación a una versión anterior que se guardó en la nube desde su cuenta de PowerApps.
+# <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>Restauración de una aplicación de lienzo a una versión anterior en PowerApps
+En este artículo se muestra cómo restaurar una aplicación de lienzo a una versión anterior que se guardó en la nube desde la cuenta de PowerApps.
 
 ## <a name="restore-an-app-from-your-account"></a>Restaurar una aplicación desde su cuenta
 1. Abra [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en la barra de navegación izquierda.

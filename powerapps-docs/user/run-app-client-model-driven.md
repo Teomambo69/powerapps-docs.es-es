@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido para ejecutar una aplicación controlada por modelos en un dispositivo móvil con PowerApps | Microsoft Docs
-description: En este inicio rápido aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil.
+title: Ejecución de una aplicación controlada por modelos en un dispositivo móvil con PowerApps | Microsoft Docs
+description: Vea cómo ejecutar una aplicación controlada por modelos en un dispositivo móvil.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -11,18 +11,23 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: e8369d7816bfdf81126affd7c63c9e897e680546
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 316df7e4876a74ee779e85e54291579dcc9f7cb1
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925625"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830722"
 ---
-# <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Inicio rápido: Ejecución de una aplicación controlada por modelos en un dispositivo móvil
+# <a name="run-a-model-driven-app-on-a-mobile-device"></a>Ejecutar una aplicación controlada por modelos en un dispositivo móvil
 
-Después de crear la aplicación y de compartirla con usted, puede ejecutarla en una serie de dispositivos móviles conocidos, como Windows, iOS, Android o en un explorador web. En este tutorial aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil. 
+Después de crear la aplicación y de compartirla con usted, puede ejecutarla en una serie de dispositivos móviles conocidos, como Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil. 
 
-Para seguir este tutorial rápido, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
+Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
 
 ## <a name="run-the-model-driven-app"></a>Ejecución de la aplicación controlada por modelos
 
@@ -34,13 +39,13 @@ Instale la aplicación Dynamics 365 para teléfonos o Dynamics 365 para tabletas
  ![Aplicación móvil para teléfonos](media/run-app-client-model-driven/mobile-app-for-phone.png)
 
 ### <a name="run-in-your-phones-browser"></a>Ejecución de la aplicación en el explorador del teléfono
-Vaya a la [página principal de Dynamics 365](https://home.dynamics.com) o escriba la dirección URL de la aplicación directamente en el explorador web de su teléfono y siga las instrucciones en pantalla para cargar la aplicación. Más información: [Inicio rápido: Ejecución de una aplicación en un explorador web](run-app-browser.md)
+Vaya a la [página principal de Dynamics 365](https://home.dynamics.com) o escriba la dirección URL de la aplicación directamente en el explorador web de su teléfono y siga las instrucciones en pantalla para cargar la aplicación. Más información: [Ejecución de una aplicación en un explorador web](run-app-browser.md)
 
 ![Ejecución de la aplicación en el explorador del teléfono](media/run-app-client-model-driven/web-browser-on-phone.png)
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial ha aprendido a ejecutar una aplicación controlada por modelos en un dispositivo móvil. También puede ejecutar aplicaciones de lienzo en un dispositivo móvil.
+En este tema ha aprendido a ejecutar una aplicación controlada por modelos en un dispositivo móvil. También puede ejecutar aplicaciones de lienzo en un dispositivo móvil.
 
 > [!div class="nextstepaction"]
 > [Ejecución de una aplicación de lienzo en un dispositivo móvil](run-app-client.md)

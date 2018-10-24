@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37e5a701bb21d6454699b449f34629746d1547d1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: bad3dcf3b0268a8bb08036fec709281b2cbba253
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860166"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075366"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Control Entrada manuscrita en PowerApps
 Control con el que el usuario puede dibujar, borrar y resaltar áreas de una imagen.
@@ -27,6 +27,8 @@ Control con el que el usuario puede dibujar, borrar y resaltar áreas de una ima
 El usuario puede utilizar este control como una pizarra, dibujar diagramas y escribir palabras que se pueden convertir en texto mecanografiado.
 
 ## <a name="key-properties"></a>Propiedades principales
+**Imagen**: propiedad de salida que representa la imagen dibujada por el usuario final.
+
 **[Color](properties-color-border.md)**: el color de los trazos de entrada.
 
 **Modo**: el control se encuentra en modo **Dibujar** o **Borrar**.  El modo Seleccionar está en desuso.
@@ -46,7 +48,7 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
-**Input**: entrada.
+**Input**: **en desuso**. Si la entrada admite entradas de mouse, lápiz o táctiles.  El valor predeterminado (7) admite las tres.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 

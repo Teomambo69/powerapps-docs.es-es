@@ -1,5 +1,5 @@
 ---
-title: Usar el proveedor de datos de OData v4 de la entidad virtual con Common Data Service for Apps | MicrosoftDocs
+title: Uso del proveedor de datos de OData v4 en entidades virtuales con Common Data Service for Apps | Microsoft Docs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
@@ -8,49 +8,49 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-ms.assetid: null
-caps.latest.revision: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+ms.assetid: ''
+caps.latest.revision: ''
 author: Mattp123
 ms.author: matp
-manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+manager: brycho
+ms.openlocfilehash: 0bd2aed852b5d7eb9b354f30978725b1386a89aa
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39710218"
 ---
+# <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a>Configuración, requisitos y procedimientos recomendados del proveedor de datos de OData v4
 
-# <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a>Configuración, requisitos y prácticas recomendadas del proveedor de datos de OData v4
+En este tema se describe cómo configurar el proveedor de datos de OData v4, así como los requisitos y procedimientos recomendados para usar el proveedor de datos de OData v4 con el fin de conectarse con un servicio de web de OData v4. 
 
-En este tema se describe cómo configurar el proveedor de datos de OData v4 así como los requisitos y las prácticas recomendadas para usar el proveedor de datos de OData v4 para establecer la conexión con un servicio web de OData v4. 
+## <a name="odata-v4-data-provider-best-practices"></a>Procedimientos recomendados del proveedor de datos de OData v4
 
-## <a name="odata-v4-data-provider-best-practices"></a>Prácticas recomendadas del proveedor de datos de OData v4
+- Common Data Service (CDS) for Apps requiere que todas las entidades tengan un atributo de identificador; este identificador se conoce como "identificador único" y el valor debe ser un GUID.  Solo puede asignar campos de identificador a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en CDS for Apps.
+-  Las entidades de OData con propiedades que aceptan valores NULL deben establecerse para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de entidad de OData con el valor false en Acepta valores NULL debe tener el campo asignado en el atributo **Requisito de campo** de CDS for Apps establecido en **Requerido por la empresa**. 
+- Para recuperar varias consultas, por ejemplo, cuando cargue datos en una cuadrícula, controle el tamaño del conjunto de datos devuelto por el origen de datos externo usando los parámetros de consulta de selección y filtro.
+- Si aún no está habilitado, los administradores del sistema deben habilitar el seguimiento de complementos. Cuando lo esté, se capturan todos los errores del punto de conexión de OData en el registro de seguimiento de complementos. Más información: [Guía del administrador: Cuadro de diálogo Configuración del sistema: pestaña Personalización](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
 
-- Common Data Service for Apps requiere que todas las entidades tengan un atributo de id., este identificador es único y el valor debe ser un GUID.  Solo puede asignar los campos de id. a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en CDS for Apps.
--  Las entidades de OData que tengan propiedades con valores nulos se deben configurar para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de la entidad de OData con un valor nulo =False debe tener el campo asignado en el conjunto de atributos de **Requisitos de campo** de CDS for Apps como **Requerido por la empresa**. 
-- Para recuperar consultas múltiples como aquellas resultantes de cargar datos en una cuadrícula, debe controlar el tamaño del conjunto de datos devuelto desde el origen de datos externo; para ello, use los parámetros para seleccionar y filtrar la consulta.
-- Si no está habilitado, los administradores del sistema deben habilitar la opción de seguimiento de complementos. Una habilitada, todos los errores del extremo de OData se capturan en el registro de seguimiento de complementos. Más información: [Guía del administrador: Cuadro de diálogo Configuración del sistema - Pestaña Personalización](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
+## <a name="data-type-mapping"></a>Asignación de tipos de datos
 
-## <a name="data-type-mapping"></a>Asignaciones de tipos de datos
+En la tabla siguiente se enumera las asignaciones de tipos de datos de Entity Data Model (EDM) de OData con los tipos de datos de CDS for Apps. 
 
-En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Entity Data Model (EDM) con los tipos de datos de CDS for Apps. 
-
-|Tipos de datos de OData|Tipos de datos de CDS for Apps  |
+|Tipo de datos de OData|Tipos de datos de CDS for Apps  |
 |---------|---------|
 |`Edm.Boolean`|Dos opciones|
 |`Edm.DateTime`|Fecha y hora|
 |`Edm.DateTimeOffset`|Fecha y hora|
-|`Edm.Decimal`|Número decimal o divisa|
+|`Edm.Decimal`|Número decimal o moneda|
 |`Edm.Double`|Número de punto flotante|
 |`Edm.Guid`|Identificador único|
 |`Edm.Int32`|Número entero|
 |`Edm.Int64`|Número entero|
-|`Edm.String`|Línea de texto individual o varias líneas de texto|
+|`Edm.String`|Línea de texto única o varias líneas de texto|
 
 
-### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>Tipos de datos de OData EDM que no se admiten para asignarlos con entidades virtuales 
+### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>Tipos de datos de EDM de OData que no se admiten para la asignación con entidades virtuales 
 
 - `Edm.Binary `
 - `Edm.Time` 
@@ -61,30 +61,29 @@ En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Ent
 - `Edm.SByte`
 
  
-## <a name="add-a-data-source-using-the-odata-v4-data-provider"></a>Agregar un origen de datos con el proveedor de datos de OData v4
+## <a name="add-a-data-source-using-the-odata-v4-data-provider"></a>Adición de un origen de datos mediante el proveedor de datos de OData v4
 
-Este procedimiento muestra cómo usar el proveedor de datos de OData integrado como origen de datos de entidad virtual.   
+En este procedimiento se muestra cómo usar el proveedor de datos de OData incluido como origen de datos de entidades virtuales.   
   
-1. Acceda a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Administración** > **Orígenes de datos de entidad virtual**.  
-1. En la barra de herramientas Acciones, haga clic en **Nuevo**.  
-1. En el cuadro de diálogo **Seleccionar proveedor de datos**, seleccione uno de los siguientes orígenes de datos y, a continuación, haga clic en **Aceptar**.  
+1. Vaya a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Administración** > **Orígenes de datos de entidades virtuales**.  
+1. En la barra de herramientas de acciones, haga clic en **Nuevo**.  
+1. En el cuadro de diálogo **Seleccionar proveedor de datos**, elija los siguientes orígenes de datos y, a continuación, haga clic en **Aceptar**.  
   
-    - **Proveedor de datos OData v4**. CDS for Apps incluye un proveedor de datos de Odata v4 que se puede usar para conectarse a los orígenes de datos que admiten el estándar abierto de OData v4.  
-    - *Personalice el proveedor de datos*. Si ha importado un complemento del proveedor de datos, el proveedor de datos aparecerá aquí. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
+    - **Proveedor de datos de OData v4**. CDS for Apps incluye un proveedor de datos de Odata v4 que puede utilizarse para conectarse a orígenes de datos que admiten el estándar abierto de OData v4.  
+    - *Proveedor de datos personalizado*. Si ha importado un complemento de proveedor de datos, el proveedor de datos aparecerá aquí. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
-1. En la página de propiedades **Nuevo origen de datos**, rellene los siguientes campos y, a continuación, guarde el registro.  
+1. En la página de propiedades **Nuevo origen de datos**, complete los siguientes campos y, a continuación, guarde el registro.  
   
-    - **Nombre**. Escriba un nombre para describir el origen de datos.  
-    - **Uri**. Si usa el proveedor de datos de OData, especifique el URI del servicio web de OData. Por ejemplo, si está usando el proveedor de OData para conectarse a un servicio web hospedado en Azure, el URI puede parecerse a *`http://contosodataservice.azurewebsites.net/odata/`*.  
-    - **Tiempo de espera en segundos**. Escriba la cantidad de segundos que se debe esperar a una respuesta del servicio web antes de agotar el tiempo de espera de una solicitud de datos. Por ejemplo, escriba 30 para esperar un máximo de treinta segundos antes de que se agote el tiempo de espera.  
-    - **Modo de paginación**. Seleccione si usará la paginación del lado del cliente o del servidor para controlar cómo se paginan los resultados de la consulta. El valor predeterminado es la paginación del lado del cliente. Con la paginación del lado de servidor, el servidor controla la manera de paginar los resultados mediante el parámetro $skiptoken, que se agrega a la cadena de consulta. Más información: [Opción para omitir la consulta del sistema de token ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
-        -  **Devolver recuento alineado** Devuelve el número total de registros en el conjunto de resultados. Esta configuración se usa para habilitar la funcionalidad de la siguiente página cuando se devuelven los datos a una cuadrícula. Use un valor "false" si el extremo de OData no admite el parámetro de OData $inclinecount. El valor predeterminado es false.
-    - **Parámetros de solicitud**. Como alternativa, puede agregar parámetros de cadena de consulta o de encabezado personalizado que se usan para conectar con el servicio web de OData, como parámetros de autenticación para el servicio externo. Haga clic en **Cadena de consulta** para alternar entre el parámetro de cadena de consulta y el encabezado y el valor. Se pueden agregar hasta 10 cadenas de consulta o encabezado. 
-        > [!div class="mx-imgBorder"] 
-        > ![Registro de origen de datos de entidad virtual](media/virtual-entity-data-source.png) 
+    - **Nombre**. Escriba un nombre que describa el origen de datos.  
+    - **URI**. Si usa el proveedor de datos OData, escriba el URI del servicio web de OData. Por ejemplo, si utiliza el proveedor de OData para conectarse a un servicio web hospedado en Azure, el URI puede ser similar a *`http://contosodataservice.azurewebsites.net/odata/`*.  
+    - **Tiempo de espera en segundos**. Escriba el número de segundos que se esperará una respuesta del servicio web antes de que se agote el tiempo de espera de solicitud de datos. Por ejemplo, escriba 30 para esperar un máximo de treinta segundos antes de que se agote el tiempo de espera.  
+    - **Modo de paginación**. Elija si desea usar la paginación del lado cliente o servidor para controlar cómo se paginan los resultados de la consulta. El valor predeterminado es la paginación del lado cliente. Con la paginación del lado servidor, el servidor controla cómo se paginan los resultados mediante el parámetro $skiptoken, que se agrega a la cadena de consulta. Más información: [Opción de consulta del sistema de token de omisión ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
+        -  **Return inline count** (Devolver recuento alineado). Devuelve el número total de registros del conjunto de resultados. Esta configuración se utiliza para habilitar la funcionalidad de siguiente página cuando se devuelven datos a una cuadrícula. Use un valor false si el punto de conexión de OData no es compatible con el parámetro de OData $inclinecount. El valor predeterminado es false.
+    - **Parámetros de solicitud**. Si lo desea, puede agregar parámetros personalizados de cadena de consulta o encabezado usados para conectarse al servicio web de OData, como los parámetros de autenticación al servicio externo. Haga clic en **Cadena de consulta** para alternar entre valor y parámetro de cadena de consulta y encabezado. Se pueden agregar hasta 10 cadenas de consulta o encabezado. 
+        ![Registro de origen de datos de entidades virtuales](media/virtual-entity-data-source.png) 
 
 
 ## <a name="see-also"></a>Vea también  
 
-[Crear y editar entidades virtuales que contienen datos desde un origen de datos externo](create-edit-virtual-entities.md) <br/>
-[Blog de TechNet: interacción con datos de sistemas externos mediante nuevas entidades virtuales](https://blogs.technet.microsoft.com/lystavlen/2017/09/08/virtual-entities/)
+[Crear y editar entidades virtuales que contienen datos de un origen de datos externos](create-edit-virtual-entities.md) <br/>
+[Blog de TechNet: Interact with data from external systems using the new virtual entities (Interacción con datos de sistemas externos usando las nuevas entidades virtuales)](https://blogs.technet.microsoft.com/lystavlen/2017/09/08/virtual-entities/)

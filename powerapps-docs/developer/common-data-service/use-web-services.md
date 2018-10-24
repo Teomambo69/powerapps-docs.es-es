@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 7f89a74b37ebf322137d680e165c007cd8fa6d26
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7e9e14a9d44a3326fb8ac32b11e46b61cc119c27
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42854447"
 ---
 # <a name="use-common-data-service-for-apps-web-services"></a>Uso de servicios web de Common Data Service for Apps
 
-Common Data Service for App proporciona dos servicios web que se pueden usar para interactuar con los datos. Elija el que mejor coincida con el requisito y sus habilidades. Más información: [Elegir su estilo de desarrollo para Dynamics 365 Customer Engagement (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/choose-development-style).
+Common Data Service for App ofrece dos servicios web que se pueden usar para interactuar con los datos. Elija el que mejor coincida con el requisito y sus habilidades. Más información: [Elegir su estilo de desarrollo para Dynamics 365 Customer Engagement (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/choose-development-style).
 
 ## <a name="web-api"></a>API web
 La API web es un punto de conexión RESTful de OData v4. Úsela para cualquier lenguaje de programación que admita solicitudes HTTP y autenticación mediante OAuth 2.0.

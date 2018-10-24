@@ -1,6 +1,6 @@
 ---
 title: Uso de Cognitive Services en PowerApps | Microsoft Docs
-description: Creación de una aplicación básica que usa Text Analytics API de Microsoft Cognitive Services para analizar texto.
+description: Cree una aplicación de lienzo básica que use Text Analytics API de Microsoft Cognitive Services para analizar texto.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
 ms.author: anneta
-ms.openlocfilehash: 6175633b2fbec4e9949882c587916adb349290d4
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df823f68842ad3c7a7497e6dce9cc3540520527e
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195459"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875885"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Uso de Cognitive Services en PowerApps
-En este artículo se muestra cómo compilar una aplicación básica que usa [Text Analytics API de Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). A continuación, le mostraremos cómo crear una aplicación que llama a la API.
+En este artículo se muestra cómo compilar una aplicación de lienzo básica que use [Text Analytics API de Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
 
 > [!NOTE]
 > Si no está familiarizado con la compilación de aplicaciones en PowerApps, es aconsejable que lea [Creación de una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este artículo.
@@ -84,7 +88,7 @@ En primer lugar, cree una aplicación de teléfono vacía y agregue una conexió
     ![Conector de Text Analytics](./media/cognitive-services-api/create-connection-ta.png)
 
 ### <a name="add-controls-to-the-app"></a>Adición de controles a la aplicación
-El siguiente paso para crear aplicación es agregar todos los controles. Normalmente, al crear aplicaciones, agrego las fórmulas a los controles sobre la marcha pero, en este caso, nos centraremos primero en los controles y, después, agregaremos algunas fórmulas en la sección siguiente. La siguiente imagen muestra la aplicación con todos los controles.
+El siguiente paso para crear aplicación es agregar todos los controles. Normalmente, al compilar aplicaciones, se agregan fórmulas a los controles sobre la marcha, aunque en este caso nos centraremos primero en los controles y, después, agregaremos algunas fórmulas en la sección siguiente. La siguiente imagen muestra la aplicación con todos los controles.
 
 ![Aplicación finalizada](./media/cognitive-services-api/finished-app-no-data.png)
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19199ade5c7f89f9d3d113b41ac9651a9b007ef6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42847905"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640455"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Comprender las tablas y los registros de aplicaciones de lienzo en PowerApps
 
@@ -40,7 +40,7 @@ Puede crear una variedad de fórmulas que usan el nombre de una tabla como argum
 ### <a name="records"></a>Registros
 Cada registro contiene al menos una categoría de información sobre una persona, un lugar o una cosa. El ejemplo anterior muestra un registro para cada producto (**Chocolate**, **Pan** y **Agua**) y una columna para cada categoría de información (**Precio**, **Cantidad disponible** y **Cantidad en pedido**).
 
-En una fórmula, puede hacer referencia a un registro por sí mismo, fuera del contexto de una tabla, mediante el uso de llaves. Por ejemplo, este registro **{ Nombre: "Fresas", Precio: 7,99 }** no está asociado a una tabla.
+En una fórmula, puede hacer referencia a un registro por sí mismo, fuera del contexto de una tabla, mediante el uso de llaves. Por ejemplo, este registro **{ Nombre: "Fresas", Precio: 7,99 }** no está asociado a una tabla. Tenga en cuenta que los nombres de los campos, como **Nombre** y **Precio** en ese ejemplo, no están dentro de comillas dobles.
 
 ### <a name="fields"></a>Campos
 Un campo es un elemento individual de información de un registro. Puede visualizar este tipo de campo como un valor de una columna para un registro concreto.

@@ -1,6 +1,6 @@
 ---
-title: Información sobre las puertas de enlace de datos locales | Microsoft Docs
-description: Información de referencia, incluida la instalación y solución de problemas, para puertas de enlace de datos locales
+title: Información sobre las puertas de enlace de datos locales para aplicaciones de lienzo | Microsoft Docs
+description: Información de referencia sobre las puertas de enlace de datos locales, incluida la instalación en PowerApps y la solución de problemas
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017764"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726938"
 ---
-# <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Información sobre las puertas de enlace de datos locales para Microsoft PowerApps
+# <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>Información sobre las puertas de enlace de datos locales para aplicaciones de lienzo
 ## <a name="installation-and-configuration"></a>Instalación y configuración
 **Requisitos previos**
 
@@ -26,7 +30,6 @@ Mínimo:
 * Versión de 64 bits de Windows 7 o Windows Server 2008 R2 (o versiones posteriores)
 
 Recomendado:
-
 * CPU de 8 núcleos
 * 8 GB de memoria
 * Versión de 64 bits de Windows 2012 R2 (o posteriores)
@@ -50,7 +53,7 @@ Consideraciones relacionadas:
 
 4. En los cuadros de diálogo **Control de cuentas de usuario**, pulse o haga clic en **Sí** para continuar.
 
-5. En la siguiente pantalla del asistente, pulse o haga clic en **Iniciar sesión**.
+5. En la siguiente pantalla del asistente, haga clic o pulse **Iniciar sesión** y escriba las mismas credenciales que usa para iniciar sesión en PowerApps.
 
     ![Iniciar sesión](./media/gateway-reference/sign-in.png)
 
@@ -190,7 +193,7 @@ Puede usar la herramienta de terceros [Azure Speed Test](http://azurespeedtest.a
 
 #### <a name="high-availabilitydisaster-recovery"></a>Recuperación ante desastres y alta disponibilidad
 **Pregunta:** ¿Existen planes para habilitar escenarios de alta disponibilidad con la puerta de enlace?  
-**Respuesta:** Está en la hoja de ruta, pero aún no tenemos una previsión de tiempo.
+**Respuesta:** La alta disponibilidad se habilitar al combinar dos o más puertas de enlace en el mismo clúster.  Los clústeres de puerta de enlace de alta disponibilidad necesitan la actualización de noviembre de 2017 para puerta de enlace de datos local o una versión posterior.  Consulte el [anuncio de la entrada de blog](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow) para más detalles.
 
 **Pregunta:** ¿Qué opciones hay disponibles para la recuperación ante desastres?  
 **Respuesta:** Puede usar la clave de recuperación para restaurar o mover una puerta de enlace. Cuando se instala la puerta de enlace, especifique la clave de recuperación.

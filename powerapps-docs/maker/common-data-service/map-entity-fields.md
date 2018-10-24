@@ -1,6 +1,6 @@
 ---
-title: Asignar campos de entidad en PowerApps | MicrosoftDocs
-description: Aprenda cómo asignar campos de entidad
+title: Asignar campos de entidad en PowerApps| Microsoft Docs
+description: Obtenga información sobre cómo asignar campos de entidad
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
@@ -9,113 +9,114 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7c5aa1c3-bde9-43f1-a369-fdcdbf14dec0
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+tags: ''
+ms.openlocfilehash: 7e84e10a824ea218063cb2dccdc15ed7ae2340da
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39711626"
 ---
 # <a name="map-entity-fields"></a>Asignar campos de entidad
  
-Puede asignar atributos entre entidades que tienen una relación de entidad. Esto le permite establecer valores predeterminados para un registro creado en el contexto de otro registro. 
+Puede asignar atributos entre las entidades que tienen una relación de entidad. Esto le permitirá establecer valores predeterminados para un registro que se cree en el contexto de otro registro. 
 
-## <a name="easier-way-to-create-new-records-in-model-driven-apps"></a>Una forma más fácil de crear nuevos registros en aplicaciones controladas por modelos
+## <a name="easier-way-to-create-new-records-in-model-driven-apps"></a>Modo más sencillo de crear nuevos registros en aplicaciones controladas por modelos
 
-Supongamos que los usuarios desean agregar un nuevo registro de contacto para una persona que es un empleado de una cuenta específica. Pueden hacerlo de dos maneras distintas:  
+Supongamos que se quiere agregar un nuevo registro de contacto para alguien que es empleado de una cuenta específica. Puede hacerlo de dos formas distintas:  
   
-### <a name="the-hard-way"></a>La forma complicada
+### <a name="the-hard-way"></a>La forma difícil
 
-Pueden navegar simplemente a la aplicación para crear un nuevo registro de contacto desde cero. No obstante, luego deberán establecer la cuenta primaria y especificar varios elementos de información (como información de dirección y número de teléfono) que probablemente coincidirán con los de la cuenta primaria. Esto puede resultar largo y presenta posibilidad de errores.  
+Se podría simplemente navegar en la aplicación para crear un nuevo registro de contacto desde cero. A continuación, sin embargo, hay que establecer la cuenta principal y escribir varios elementos de información (como la información relativa a la dirección y el teléfono), los cuales son probablemente los mismos que la cuenta principal. Esto puede llevar mucho tiempo y presenta oportunidades para que se produzcan errores.  
   
 ### <a name="the-easier-way"></a>La forma más fácil
 
-La forma más sencilla es empezar con la entidad de cuenta y, mediante la subcuadrícula **Contactos** del formulario, seleccionar **+** para agregar un contacto. Primero guiará a los usuarios a buscar un contacto relacionado existente para que no creen accidentalmente un registro duplicado. Si no encuentran un registro existente, pueden seleccionar **Nuevo** y crear un nuevo registro de contacto. 
+La forma más fácil consiste en empezar con esta entidad de cuenta y, mediante la subcuadrícula **Contactos** del formulario, seleccione **+** para agregar un contacto. Primero hará de guía para que se busque cualquier contacto relacionado existente a fin de que no se cree accidentalmente un registro duplicado. Si no se encuentra un registro existente, se puede seleccionar **Nuevo** y crear un nuevo registro de contacto. 
 
-El nuevo formulario de registro de contacto incluirá cualquiera de los valores de atributo asignados de la cuenta (como información de dirección y de teléfono) como los valores predeterminados. Los usuarios pueden editar estos valores antes de guardar el registro.
+El nuevo formulario de registro de contacto incluirá cualquiera de los valores de atributo asignados de la cuenta (como la información relativa a la dirección y el teléfono) como valores predeterminados. Se pueden editar estos valores antes de que se guarde el registro.
 
-## <a name="how-this-works"></a>Cómo funciona
+## <a name="how-this-works"></a>Cómo funciona esto
 
-Cuando asigna campos de entidad para una relación de entidad 1:N, algunos datos del registro de entidad principal se copiarán en el nuevo formulario de la entidad relacionada para definir los valores predeterminados que los usuarios pueden editar antes de guardar.
+Al asignar campos de entidad para una relación de entidad 1:N, determinados elementos de datos del registro de entidad principal se copiarán en el nuevo formulario de entidad relacionada para establecer valores predeterminados que se pueden editar antes de guardarlos.
  
   
 > [!NOTE]
-> Estas asignaciones solo establecen los valores predeterminados en un registro antes de guardarlo. Los usuarios pueden modificar los valores antes de guardarlos. Los datos se transfieren son los datos en ese momento. No se sincroniza si cambian los datos de origen más adelante.
+> Estas asignaciones solo establecen valores predeterminados en un registro antes de guardarlo. Se pueden editar los valores antes de guardarlos. Los datos que se transfieren son los datos de ese momento. No se sincroniza si los datos de origen cambian posteriormente.
 >   
-> Estas asignaciones no se aplican a los registros relacionados creados mediante un flujo de trabajo o un proceso de diálogo. No se aplican automáticamente a los nuevos registros creados mediante código, aunque los desarrolladores pueden usar un mensaje especial llamado `InitializeFrom` ([Función InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom?view=dynamics-ce-odata-9) o [Clase InitializeFromRequest](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest?view=dynamics-general-ce-9)) para crear un nuevo registro mediante las asignaciones disponibles.  
+> Estas asignaciones no se aplican a los registros relacionados creados mediante un proceso del cuadro de diálogo o flujo de trabajo. No se aplican automáticamente a los nuevos registros creados mediante código, aunque los desarrolladores pueden usar un mensaje especial llamado `InitializeFrom` ([función InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom?view=dynamics-ce-odata-9) o [clase InitializeFromRequest](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest?view=dynamics-general-ce-9)) para crear un nuevo registro mediante las asignaciones disponibles.  
 
-## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
+## <a name="open-solution-explorer"></a>Abrir el Explorador de soluciones
 
-La única forma de asignar campos de una entidad es usar el explorador de soluciones.
+La única forma de asignar campos de entidad consiste en usar el Explorador de soluciones.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
   
-La asignación de campos se realiza en el contexto de una relación de entidad 1:N o N:1, de modo que primero debe [ver las relaciones de entidad 1:N o N:1](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships).
+La asignación de campos se realiza en el contexto de una relación de entidad 1:N o N:1, por lo que primero debe [ver relaciones de entidad 1:N o N:1](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships).
 
-## <a name="view-mappable-fields"></a>Ver los campos que se pueden asignar
+## <a name="view-mappable-fields"></a>Ver campos asignables
 
-Las asignaciones de campos no se definen realmente dentro de las relaciones de entidad, sino que se muestran en la interfaz de usuario de la relación. No todas las relaciones de entidad de 1:N los tienen. Al ver una lista de relaciones de entidad de 1:N (o N:1), puede filtrar las relaciones mostradas por tipo. Puede seleccionar **Todo**, **Personalizado**, **Personalizable** o **Se puede asignar**. Las relaciones entre entidades que se pueden asignar proporcionan acceso para permitir la asignación de campos de entidad. 
+Las asignaciones de campos no se definen realmente en las relaciones de entidad, pero se exponen en la interfaz de usuario de la relación. No todas las relaciones de entidad 1:N las tienen. Si ve una lista de relaciones de entidad 1:N (o N:1) para una entidad, puede filtrar las relaciones mostradas por tipo. Puede seleccionar **Todo**, **Personalizado**, **Personalizable** o **Asignable**. Las relaciones de entidad asignables proporcionan acceso para permitir la asignación de campos de entidad. 
 
-![Ver relaciones entre entidades que se pueden asignar](media/mappable-entity-relationships.png) 
+![Ver relaciones de entidad asignables](media/mappable-entity-relationships.png) 
 
-Al abrir una relación de entidad que se puede asignar, seleccione **Asignaciones** en la navegación izquierda.
+Al abrir una relación de entidad asignable, seleccione **Asignaciones** en la barra de navegación izquierda.
 
-![Seleccionar asignaciones para la relación de la entidad](media/map-entity-fields-ui-solution-explorer.png)
+![Seleccionar Asignaciones para la relación de entidad](media/map-entity-fields-ui-solution-explorer.png)
 
 ## <a name="delete-mappings"></a>Eliminar asignaciones
 
-Si existen asignaciones que no desea que se apliquen, puede seleccionarlas y hacer clic en el icono de ![eliminación](media/delete.gif) icono.
+Si hay alguna asignación que no desea aplicar, puede seleccionarla y hacer clic en el ![Icono de eliminación](media/delete.gif) .
 
 ## <a name="add-new-mappings"></a>Agregar nuevas asignaciones
 
-Para crear una nueva asignación, en la barra de herramientas haga clic en **Nuevo**. Se abrirá el cuadro de diálogo **Crear asignación de campos**.
+Para crear una nueva asignación, haga clic en **Nuevo** en la barra de herramientas. Esto abrirá el cuadro de diálogo **Crear asignación de campos**.
 
-![Cuadro de diálogo Crear asignación de campos](media/create-field-mapping-dialog.png)
+![Crear cuadro de diálogo Crear asignación de campos](media/create-field-mapping-dialog.png)
 
-Seleccione un campo de entidad de origen y campos de una entidad de destino con los valores que desee asignar. 
+Seleccione un campo de entidad de origen y un campo de entidad de destino con los valores que desea asignar. 
 
-![Configurar la asignación de campos](media/configure-field-mapping.png)
+![Configurar asignación de campos](media/configure-field-mapping.png)
 
-A continuación, seleccione **Aceptar** para cerrar el cuadro diálogo.
+A continuación, seleccione **Aceptar** para cerrar el cuadro de diálogo.
 
 Las siguientes reglas muestran qué tipos de datos se pueden asignar.  
   
-- Los dos campos deben ser del mismo tipo y del mismo formato.  
-- La longitud del campo de destino debe ser igual o mayor que la longitud del campo de origen.  
-- El campo de destino no puede estar asignado a otro campo.  
-- El campo de origen debe estar visible en el formulario.  
-- El campo de destino debe ser un campo en el que un usuario pueda especificar datos.  
-- Los valores de identificador de dirección no se pueden asignar.
-- Si realiza asignaciones a un campo (o desde este) que no aparece en un formulario, la asignación no se efectuará hasta que se agregue el campo a un formulario.
+- Ambos campos deben ser del mismo tipo y el mismo formato.  
+- La longitud del campo de destino debe ser igual o superior a la longitud del campo de origen.  
+- El campo de destino no se puede asignar a otro campo todavía.  
+- El campo de origen debe ser visible en el formulario.  
+- El campo de destino debe ser un campo en el que un usuario pueda escribir datos.  
+- Los valores de id. de dirección no se pueden asignar.
+- Si asigna a o desde un campo que no se muestra en un formulario, la asignación no se realizará hasta que se agregue el campo a un formulario.
 - Si los campos son conjuntos de opciones, los valores enteros de cada opción deben ser idénticos.  
   
 > [!NOTE]
->  Si necesita asignar campos de conjunto de opciones, se recomienda configurar ambos campos para que usen el mismo conjunto de opciones globales. Si no, puede resultar difícil mantener dos conjuntos de opciones separados sincronizadas manualmente. Si los valores enteros de cada opción no se asignan correctamente puede experimentar problemas con los datos. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)  
+>  Si tiene que asignar campos de conjuntos de opciones, recomendamos que configure ambos campos para usar el mismo conjunto de opciones global. De lo contrario, puede resultar difícil mantener dos conjuntos independientes de opciones sincronizadas manualmente. Si los valores enteros de cada opción no se asignan correctamente, puede generar problemas en sus datos. Más información: [Crear y editar conjuntos de opciones globales de Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)  
   
 ## <a name="automatically-generate-field-mappings"></a>Generar asignaciones de campos automáticamente  
 
 También puede generar asignaciones automáticamente seleccionando **Generar asignaciones** en el menú **Más acciones**.
 
-Debe prestar atención al hacerlo con entidades del sistema. Use esta opción cuando cree entidades personalizadas y desee aprovechar la asignación. 
+Debe tener cuidado al hacer esto con entidades del sistema. Use esto al crear entidades personalizadas y cuando desee aprovechar la asignación. 
 
 > [!WARNING]
-> Esto quita cualquier asignación existente y la reemplaza con asignaciones sugeridas que se basan únicamente en los campos con nombres y tipos de datos similares. Si usa esto en una entidad del sistema, podría perder algunas asignaciones esperadas. Para las entidades personalizadas, ayuda a ahorrar tiempo porque puede eliminar más fácilmente las asignaciones que no desea y agregar otras que la acción de generar asignaciones no ha creado.  
+> De este modo, se quitarán las asignaciones existentes, las cuales se reemplazarán por asignaciones recomendadas basadas solo en los campos con tipos de datos y nombres similares. Si usa esto en una entidad del sistema, podría perder algunas asignaciones previstas. En las entidades personalizadas, ayuda a ahorrar tiempo, ya que puede eliminar con mayor facilidad las asignaciones que no desea y agregar otras que la acción de generación de asignaciones no creó.  
 
 
-## <a name="publish-customizations"></a>Publicación de personalizaciones 
+## <a name="publish-customizations"></a>Publicar personalizaciones 
 
-Puesto que las asignaciones de campos no son metadatos, debe publicarlas para que los cambios surtan efecto. 
+Dado que las asignaciones de campos no son metadatos, debe publicarlas antes de que se apliquen los cambios. 
 <!-- TODO Need a general topic about publishing to link to in situations like this -->
 
 ### <a name="see-also"></a>Vea también
-[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
-[Documentación para desarrolladores: Personalizar asignaciones de atributos y entidades](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)<br />
-[Documentación para desarrolladores: API web para crear una nueva entidad desde otra entidad](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity)
+[Create and edit 1:N (one-to-many) or N:1 (many-to-one) entity relationships using solution explorer](create-edit-1n-relationships-solution-explorer.md) (Crear y editar relaciones de entidad 1:N (uno a varios) o N:1 (varios a uno) mediante el Explorador de soluciones)<br />
+[Developer Documentation: Customize entity and attribute mappings](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings) (Documentación para desarrolladores: personalizar asignaciones de atributos y entidades)<br />
+[Developer Documentation: Web API Create a new entity from another entity](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity) (Documentación para desarrolladores: API web: crear una entidad a partir de otra entidad)

@@ -1,6 +1,6 @@
 ---
-title: Edición de una aplicación | Microsoft Docs
-description: Instrucciones paso a paso para editar aplicaciones y escenarios de bloqueo de sesión.
+title: Edición de una aplicación de lienzo | Microsoft Docs
+description: Instrucciones paso a paso para editar aplicaciones de lienzo y escenarios de bloqueo de sesión en PowerApps.
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: b5678437ea1e604ce2932307d897f280f4633fc0
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 97dc8b245da9dc48a67f22243f11cf26b7bd6d8e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194969"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835084"
 ---
-# <a name="edit-an-app-in-powerapps"></a>Edición de una aplicación en PowerApps
-Edite cualquier aplicación que haya creado, que posea, o para la que tiene permisos **Can edit** (Puede editar). Puede modificar una aplicación en PowerApps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
+# <a name="edit-a-canvas-app-in-powerapps"></a>Edición de una aplicación de lienzo en PowerApps
+Edite cualquier aplicación que haya compilado, de la que sea propietario o en la que tenga permisos **Puede editar**. Puede modificar una aplicación en PowerApps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
 
 ## <a name="verify-your-permissions"></a>Comprobación de los permisos
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).

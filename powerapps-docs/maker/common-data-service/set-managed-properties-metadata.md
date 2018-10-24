@@ -1,6 +1,6 @@
 ---
-title: Establecer propiedades administradas en metadatos de Common Data Service for Apps | MicrosoftDocs
-description: Aprenda cómo establecer propiedades administradas para elementos de metadatos en una solución
+title: Establecer propiedades administradas en metadatos de Common Data Service para aplicaciones | Microsoft Docs
+description: Obtenga información sobre cómo establecer las propiedades administradas para los elementos de metadatos en una solución.
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,21 +9,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: edaa7d4a-a95f-4d66-a9d9-2ad6051332f7
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 46727f5a46e3fd518da52fac7d08a6e43992c00d
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39700749"
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service for Apps 
+# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service para aplicaciones 
 
 Las propiedades administradas se aplican únicamente al incluir metadatos con una solución administrada e importarlos en otro entorno. Estos valores permiten al responsable de la solución tener un determinado control sobre el nivel de personalización que desea permitir a los usuarios que instalen su solución administrada. 
 
@@ -32,33 +33,33 @@ Las propiedades administradas se aplican únicamente al incluir metadatos con un
 >
 >Para los metadatos que ofrecen funcionalidades para admitir la solución pero no contienen datos empresariales, ésta es una buena idea para limitar qué personalizaciones se permiten.
 
-La definición de las propiedades administradas debe hacerse mediante el explorador de soluciones.
+La definición de las propiedades administradas debe hacerse mediante el Explorador de soluciones.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-## <a name="entity-managed-properties"></a>Propiedades administradas de entidad
+## <a name="entity-managed-properties"></a>Propiedades administradas de la entidad
 
 Mientras [visualiza entidades](create-edit-entities-solution-explorer.md#view-entities), seleccione la entidad y seleccione **Propiedades administradas** en la barra de menús.  Se abrirá el cuadro de diálogo **Establecer propiedades administradas**.
 
-![Establecer propiedades administradas de entidad](media/set-managed-properties.png)
+![Establecer propiedades administradas de la entidad](media/set-managed-properties.png)
   
-Las entidades tienen más propiedades administradas que ningún otro tipo de componente de la solución. Si la entidad es personalizable, puede definir las siguientes opciones:  
+Las entidades tienen más propiedades administradas que cualquier otro tipo de componente de la solución. Si la entidad es personalizable, puede establecer las siguientes opciones:  
 
 |Opción|Descripción|
 |--|--|
-|**Se puede personalizar** |Controla el resto de opciones. Si esta opción es `False`, no se aplicará ninguno de los demás valores. Si es `True`, puede especificar las demás opciones de personalización. Cuando `False`, es equivalente a establecer el resto de opciones en falso.|
+|**Se puede personalizar** |Controla el resto de opciones. Si esta opción es `False`, no se aplican ninguno de los demás ajustes. Si es `True`, puede especificar otras opciones de personalización. Cuando `False`, es equivalente a establecer el resto de opciones en false.|
 |**Se puede modificar el nombre para mostrar**|Si el nombre para mostrar de la entidad puede modificarse.|
 |**Se puede cambiar propiedades adicionales** |Se aplica a cualquier elemento no cubierto por las otras opciones.|
-|**Se pueden crear nuevos formularios**|Si se pueden crear nuevos formularios para la entidad.|
-|**Se pueden crear nuevos gráficos**|Si se pueden crear nuevos gráficos para la entidad.|
-|**Se pueden crear vistas nuevas** |Si se pueden crear nuevas vistas para la entidad.|
+|**Se pueden crear nuevos formularios**|Si se pueden crear formularios para la entidad.|
+|**Se pueden crear nuevos gráficos**|Si se pueden crear gráficos para la entidad.|
+|**Se pueden crear nuevas vistas** |Si se pueden crear vistas para la entidad.|
 |**Puede cambiar la relación jerárquica**|Si los valores de las relaciones jerárquicas se pueden cambiar. Más información: [Definir y consultar datos relacionados jerárquicamente](define-query-hierarchical-data.md)|
-|**Puede habilitarse el seguimiento de cambios** |Si la propiedad **Seguimiento de cambios** de la entidad puede cambiar.|
+|**Puede habilitarse Change Tracking** |Si la propiedad **Change Tracking** de la entidad puede cambiar.|
 |**Se puede habilitar la sincronización con el índice de búsqueda externo** |Si la entidad se puede configurar para habilitar la búsqueda por relevancia. Más información: [Configurar la búsqueda por relevancia para mejorar resultados de búsquedas y rendimiento](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
 
 ## <a name="field-managed-properties"></a>Propiedades administradas de campos
 
-Consulte [Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
+Consulte [Crear y editar campos para Common Data Service para aplicaciones usando el Explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
 
 Mientras [visualiza campos](create-edit-field-solution-explorer.md#view-fields), seleccione un campo personalizado de una solución no administrada y elija **Más acciones** >  **Propiedades administradas** en la barra de menús.
 
@@ -68,15 +69,15 @@ Se abrirá el cuadro de diálogo **Establecer propiedades administradas**.
 
 ![Establecer propiedades administradas de campos](media/set-field-managed-property.png)
 
-La opción **Se puede personalizar** controla el resto de opciones. Si esta opción es **False**, no se aplicará ninguno de los demás valores. Si es **Verdadero**, puede especificar las demás opciones de personalización.  
+La opción **Se puede personalizar** controla todas las demás opciones. Si esta opción es **False**, no se aplicará ninguno de los demás valores. Si es **True**, puede especificar las demás opciones de personalización.  
   
-Si el campo es personalizable, defina las siguientes opciones como **Verdadero** o **Falso**.  
+Si el campo es personalizable, defina las siguientes opciones como **True** o **False**.  
   
 - **Se puede modificar el nombre para mostrar**
 - **Se puede cambiar el nivel de requisito** 
-- **Se puede cambiar propiedades adicionales** : esta propiedad controla cualquier otra personalización que no tiene una propiedad administrada específica.
+- **Se puede cambiar propiedades adicionales**: esta propiedad controla cualquier otra personalización que no tiene una propiedad administrada específica.
 
-Si establece todas las opciones individuales como **Falso**, es equivalente a establecer **Se puede personalizar** como **Falso**.  
+Si establece todas las opciones individuales como **False**, es equivalente a establecer **Se puede personalizar** como **False**.  
 
 Aplique sus opciones y haga clic en **Establecer** para cerrar el cuadro de diálogo.
 
@@ -93,7 +94,7 @@ Con las relaciones, la única propiedad administrada es **Se puede personalizar*
 ### <a name="see-also"></a>Vea también
 
 [Propiedades administradas](solutions-overview.md#managed-properties)<br />
-[Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
-[Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
-[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
-[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service para aplicaciones mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)
+[Crear y editar entidades con el Explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service para aplicaciones usando el Explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el Explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
+[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service para aplicaciones mediante el Explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)

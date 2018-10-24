@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014958"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850199"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones, flujos e informes en SharePoint según sus necesidades propias. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
+Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones de lienzo y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones de lienzo, flujos e informes en SharePoint según sus propias necesidades. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
 
 ## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Paso 1: Incorporación de un proyecto a la lista Project Requests
 1. En la lista **Project Requests**, pulse o haga clic en **Todos los elementos** y en **Project Requests app**.

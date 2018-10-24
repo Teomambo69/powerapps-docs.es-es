@@ -1,6 +1,6 @@
 ---
-title: Orígenes de datos delegables | Microsoft Docs
-description: Lista de todos los orígenes de datos delegables admitidos
+title: Orígenes de datos delegables en aplicaciones de lienzo | Microsoft Docs
+description: Lista de todos los orígenes de datos delegables admitidos en aplicaciones de lienzo
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: lanced
-ms.openlocfilehash: e8863d8e260ecaafd407e93d710917848ce184ad
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 98931d4692a61839e0530682bd2d40258c07b7df
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018615"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42825772"
 ---
-# <a name="delegable-data-sources"></a>Orígenes de datos delegables
-Tal como se describe en detalle en el artículo [Descripción de delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación para procesarlos localmente.
+# <a name="delegable-data-sources-in-canvas-apps"></a>Orígenes de datos delegables en aplicaciones de lienzo
+Tal y como se describe en detalle en el artículo de [descripción de la delegación](delegation-overview.md), la delegación se produce cuando PowerApps delega el procesamiento de datos en el origen de datos en lugar de mover datos a la aplicación de lienzo para procesarlos localmente.
 
 Solo se admite la delegación para los orígenes de datos tabulares. En esta lista se identifican los orígenes de datos tabulares y si son compatibles con la delegación, con detalles en la sección siguiente.
 

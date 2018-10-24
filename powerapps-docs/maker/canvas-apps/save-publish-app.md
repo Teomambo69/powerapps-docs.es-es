@@ -1,6 +1,6 @@
 ---
-title: Almacenamiento y publicación de una aplicación | Microsoft Docs
-description: Instrucciones paso a paso para guardar y publicar aplicaciones para creadores de aplicaciones
+title: Almacenamiento y publicación de una aplicación de lienzo | Microsoft Docs
+description: Instrucciones paso a paso para guardar y publicar aplicaciones de lienzo para creadores de aplicaciones
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194815"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42837021"
 ---
-# <a name="save-and-publish-an-app-in-powerapps"></a>Guardar y publicar una aplicación en PowerApps
-Siempre que guarde cambios en una aplicación, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
+# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
+Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
 
 Para información sobre cómo compartir una aplicación, consulte [Compartir una aplicación](share-app.md).
 

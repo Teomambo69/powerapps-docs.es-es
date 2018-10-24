@@ -1,6 +1,6 @@
 ---
-title: Creación de una aplicación para administrar proyectos | Microsoft Docs
-description: En esta tarea, se va a crear una aplicación desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos.
+title: Creación de una aplicación de lienzo para administrar proyectos | Microsoft Docs
+description: En esta tarea se va a compilar una aplicación de lienzo desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: b4daabf019236a4245db324121a6745290c8b3ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021628"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842380"
 ---
-# <a name="create-an-app-to-manage-projects"></a>Crear una aplicación para administrar proyectos
+# <a name="create-a-canvas-app-to-manage-projects"></a>Creación de una aplicación de lienzo para administrar proyectos
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-En esta tarea, se va a crear una aplicación desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos. Va a ver algunos de los mismos controles y fórmulas que en la primera aplicación, pero creará más partes de la aplicación en esta ocasión. El proceso es más complejo, pero aprenderá más, por lo que el equilibrio debería ser razonable.
+En esta tarea se va a compilar una aplicación de lienzo desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos. Va a ver algunos de los mismos controles y fórmulas que en la primera aplicación, pero creará más partes de la aplicación en esta ocasión. El proceso es más complejo, pero aprenderá más, por lo que el equilibrio debería ser razonable.
 
 > [!TIP]
 > El [paquete de descarga](https://aka.ms/o4ia0f) de este escenario incluye una versión terminada de esta aplicación: project-details-app.msapp.

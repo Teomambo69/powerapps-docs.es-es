@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 98407181bc654874d749bb57da22c9fde1259fb6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c1043d32fc4ab4213d2ac2e690ef69e13fec8ed3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195505"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831658"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Crear y actualizar una colección en su aplicación
 Use una colección para almacenar datos que se pueden usar en la aplicación. Una colección es un grupo de elementos que son similares. Por ejemplo, cree una colección MisImágenes que almacene todas las imágenes de los productos que vende su compañía. En PowerApps, puede agregar la colección MisImágenes y crear una aplicación que muestre todas las imágenes de estos productos. En otro ejemplo, puede crear una colección PriceList que incluya los productos y el precio de cada uno de ellos.
-
-Puede crear y usar colecciones en PowerApps. Empecemos.
 
 ### <a name="prerequisites"></a>Requisitos previos
 * [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
@@ -28,23 +30,30 @@ Puede crear y usar colecciones en PowerApps. Empecemos.
 * En estos pasos se utiliza el archivo [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) como datos de entrada de ejemplo. El archivo zip incluye un archivo XML que se puede convertir a Excel. De lo contrario, PowerApps lee automáticamente los archivos dentro los archivos .zip y lo importa correctamente. Puede descargar y usar estos datos de ejemplo o importar los suyos propios.
 
 ## <a name="create-a-single-column-collection"></a>Crear una colección de una sola columna
-En los pasos siguientes se muestra cómo crear una colección dentro de la aplicación mediante la función Recopilar y cómo agregar elementos a la colección.
+Utilice la función **Collect** para crear una colección y agregarle elementos.
 
-1. Abra la aplicación.
-2. En la pestaña **Insertar**, seleccione **Texto** y **Entrada de texto**:  
-   ![][1]  
-3. En la esquina superior izquierda, seleccione **Text1** y cambie el nombre del control a **Destino**:  
-   ![][2]  
-4. En la pestaña **Insertar**, seleccione **Botón** para agregar un control de botón al diseñador. En la lista desplegable, aparece la propiedad **[AlSeleccionar](controls/properties-core.md)**. Establézcala en la siguiente función:  
+1. En la aplicación, seleccione la pestaña **Insertar**, elija **Texto** y luego **Entrada de texto**.
+
+   ![][1]
+
+1. En la esquina superior izquierda, seleccione **Text1** y cambie el nombre del control a **Destino**:
+
+   ![][2]
+
+1. En la pestaña **Insertar**, seleccione **Botón** para agregar un control de botón al diseñador. En la lista desplegable, aparece la propiedad **[AlSeleccionar](controls/properties-core.md)**. Establézcala en la siguiente función:  
    
     ```Collect(Destinations, Destination!Text)```
    
-    Debería parecerse a lo siguiente:  
-    ![][3]  
-5. Seleccione el texto del botón y escriba **Agregar**:  
-   ![][5]  
-6. Seleccione el botón **Agregar** y muévalo bajo el control de texto. Puede moverlo a cualquier lugar:  
-   ![][6]  
+    Debería parecerse a lo siguiente:
+
+    ![][3]
+
+5. Seleccione el texto del botón y escriba **Agregar**:
+
+   ![][5]
+
+1. Seleccione el botón **Agregar** y muévalo bajo el control de texto. Puede moverlo a cualquier lugar:  
+   ![][6]
 
 En estos pasos, ha usado la función Recopilar para crear una colección denominada **Destinos**. También ha agregado un control de botón que, cuando se selecciona, agrega nuevos elementos a la colección. Ahora, vea lo que ha creado:
 

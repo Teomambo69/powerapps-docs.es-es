@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 98f2360e29af7cb0bdf5caf041dfa13b933e6323
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f40c05c3bdab521cb1230be15cefc5dbb58eac18
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844235"
 ---
 # <a name="common-data-service-for-apps-entities"></a>Entidades de Common Data Service for Apps
 
-Proporcionar almacenamiento para los datos es la función más importante de Common Data Service for Apps. Common Data Service incluye un conjunto básico de entidades que proporcionan estructura para los datos usados por las aplicaciones empresariales. 
+Proporcionar almacenamiento para los datos es la función más importante de Common Data Service for Apps. Common Data Service incluye un conjunto básico de entidades que facilitan la estructura de los datos que utilizan las aplicaciones empresariales. 
 
 Puede ver el conjunto básico de las entidades en la [referencia de entidades de Common Data Service for Apps](reference/about-entity-reference.md).
 
@@ -38,18 +44,18 @@ Hay varias maneras de modificar los metadatos de entidad mediante diseñadores.
 
 |Diseñador  |Descripción  |
 |---------|---------|
-|powerapps.com|El enfoque más sencillo y común para modificar el esquema consiste en usar el sitio [powerapps.com](https://web.powerapps.com/) para modificar el Common Data Service asociado a un entorno. Los cambios que se aplican aquí se ejecutan en el contexto de una solución predeterminada de Common Data Service no administrada. <!-- TODO: Add link to topic that describes this -->|
+|powerapps.com|El enfoque más sencillo y común para modificar el esquema consiste en usar el sitio [powerapps.com](https://web.powerapps.com/) para modificar la instancia de Common Data Service asociada a un entorno. Los cambios que se aplican aquí se ejecutan en el contexto de una solución predeterminada de Common Data Service no administrada. <!-- TODO: Add link to topic that describes this -->|
 |Explorador de soluciones predeterminado de Common Data Service|Hay otro diseñador disponible en el sitio [powerapps.com](https://web.powerapps.com/) cuando se modifica Common Data Service. En la esquina inferior izquierda, el botón **Opciones avanzadas** abre el Explorador de soluciones por la solución predeterminada de Common Data Service. |
 |Explorador de soluciones para la solución |Si se va a distribuir una solución, las entidades, atributos o relaciones se deben crear en el contexto de la solución no administrada que se va a usar para desarrollar la solución. <br /> Más información: [Crear un editor de soluciones y una solución](introduction-solutions.md#create-a-solution-publisher-and-solution)|
 |Desde el editor de formularios|Al modificar un formulario de aplicación controlada por modelos para una entidad, puede hacer clic en el botón **Nuevo campo** del **Explorador de campos**. Si se crea un campo de búsqueda, se creará una relación de entidad para admitirlo.|
 
 ### <a name="import-a-solution"></a>Importar una solución
 
-Una solución puede contener metadatos de entidad y otros componentes personalizados. La importación de una solución administrada o no administrada al inquilino de Common Data Service incluirá esas entidades o ampliará las existentes con los nuevos metadatos de entidad que contienen.
+Una solución puede contener metadatos de entidad y otros componentes personalizados. La importación de una solución administrada o no administrada al inquilino de Common Data Service for Apps incluirá esas entidades o ampliará las existentes con los nuevos metadatos de entidad que contengan.
 
 ### <a name="from-a-data-source-using-power-query"></a>Desde un origen de datos con Power Query
 
-Se pueden crear entidades y rellenarlas con datos mediante Power Query. Más información: [Add data to an entity in the Common Data Service by using Power Query](../../maker/common-data-service/data-platform-cds-newentity-pq.md) (Adición de datos a una entidad en Common Data Service mediante Power Query)
+Se pueden crear entidades y rellenarlas con datos mediante Power Query. Más información: [Add data to an entity in the Common Data Service by using Power Query](../../maker/common-data-service/data-platform-cds-newentity-pq.md) (Adición de datos a una entidad en Common Data Service mediante Power Query).
 
 ### <a name="use-metadata-services"></a>Usar servicios de metadatos
 

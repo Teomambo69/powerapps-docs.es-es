@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73279ba8fc0b640c24deb179a3737874bc0a55bf
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 8a7c52962c23df5f2efcf76c04aeba528e94217c
+ms.sourcegitcommit: 464ee88a958dda11c5de5603c608deab6c9cdcab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835763"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48578751"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Funciones Collect, Clear y ClearCollect en PowerApps
 Crea y borra [colecciones](../working-with-data-sources.md#collections) y agrega [registros](../working-with-tables.md#records) a cualquier [origen de datos](../working-with-data-sources.md).
@@ -82,10 +82,27 @@ En estos ejemplos, borrará y agregará registros a una colección denominada **
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **IceCream**, que incluye una cantidad de IceCream de pistacho y naranja. |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 | **Clear( IceCream )** |Quita todos los registros de la colección **IceCream**. |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 
-### <a name="step-by-step"></a>Paso a paso
+### <a name="collect-a-static-list"></a>Recopilar una lista estática
+
 1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función:<br>**Collect(Productos, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
    
-    Esta función crea una colección denominada **Products** que contiene una fila para cada uno de estos tres nombres de producto.
-2. Presione F5, haga clic en el botón y presione la tecla Esc para volver al área de trabajo de diseño.
-3. (Opcional) Para mostrar una vista previa de la colección que ha creado, haga clic en **Colecciones** en la pestaña **Contenido**.
+    Esta función crea una colección denominada **Products** que contiene una fila para cada uno de los tres nombres de producto.
+    
+1. Mientras mantiene presionada la tecla Alt, seleccione el botón.
 
+1. (opcional) Para obtener una vista previa de la colección que ha creado, seleccione **Colecciones** en el menú **Archivo**.
+
+### <a name="put-a-sharepoint-list-into-a-collection"></a>Colocar una lista de SharePoint en una colección
+
+1. [Cree una conexión a una lista de SharePoint](../connect-to-sharepoint.md). 
+
+1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función, sustituyendo *ListName* por el nombre de la lista de SharePoint:<br>
+**Collect**(**MySPCollection**, *ListName*)
+
+    Esta función crea una colección que se denomina **MySPCollection** y que contiene los mismos datos que la lista de SharePoint.
+    
+1. Mientras mantiene presionada la tecla Alt, seleccione el botón.
+
+1. (opcional) Para obtener una vista previa de la colección que ha creado, seleccione **Colecciones** en el menú **Archivo**.
+
+Para obtener información sobre cómo mostrar datos de una lista de SharePoint (por ejemplo, fechas, opciones y personas) en una galería, vea [Mostrar datos en una galería](../connections/connection-sharepoint-online.md#show-data-in-a-gallery). Para obtener información sobre cómo mostrar datos en un formulario (con listas desplegables, selectores de fechas y selectores de personas), vea [Controles Formulario de presentación y Formulario de edición](../controls/control-form-detail.md).

@@ -8,12 +8,18 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a4aeda30f8d4f01e2a85e186a769fa19ac29883
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 651301dafa17c6ec159d462f018d6ec1984485ba
+ms.sourcegitcommit: 7403ea7f103564fa7d1ae73a08a7dbdfeba7d999
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349602"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43263453"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migración de aplicaciones entre entornos e inquilinos mediante empaquetado
 Obtenga información sobre cómo migrar recursos de un entorno a otro mediante empaquetado. Estos entornos pueden estar en el mismo inquilino o en varios distintos.
@@ -112,11 +118,11 @@ Desafortunadamente, la importación de un paquete de solución de CDS requiere u
 
 3. Copie la dirección URL desde el explorador, realice los cambios siguientes y, después, vaya a la nueva dirección URL en el explorador:
 
-    * Estructura actual de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/edit.aspx?id={nombre_de_la_solución}
+    * Estructura actual de la dirección URL: `https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}`
 
         ![Editar la dirección URL](./media/environment-and-tenant-migration/edit-url.png)
 
-    * Estructura nueva de la dirección URL: https://{nombre_único_de_la_organización}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * Nueva estructura de la dirección URL: `https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx`
 
         ![Selección del paquete](./media/environment-and-tenant-migration/select-package.png)
 

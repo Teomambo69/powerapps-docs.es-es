@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: manasma
-ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e160098075b78a0a4de98da9c9915d0bef26d183
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349947"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297337"
 ---
 # <a name="environments-overview"></a>Información general sobre los entornos
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirven como contenedores para separar aplicaciones que pueden tener roles distintos, otros requisitos de seguridad o distintos públicos objetivos. Cómo se elige aprovechar los entornos depende de la organización y de las aplicaciones que se intenta compilar. Por ejemplo:
@@ -22,6 +28,7 @@ Un entorno es un espacio para almacenar, administrar y compartir los datos empre
 * Puede crear entornos separados que agrupen las versiones de prueba y producción de las aplicaciones.
 * Puede crear entornos separados que correspondan a equipos o departamentos específicos de la empresa, donde cada uno contenga los datos y aplicaciones pertinentes para cada público.
 * También puede crear entornos separados para las distintas ramas globales de la empresa.  
+* Obtenga acceso anticipado a las próximas funcionalidades de PowerApps uniéndose al [programa de versión preliminar de PowerApps](preview-environments.md).
 
 ## <a name="environment-scope"></a>Ámbito del entorno
 Cada entorno se crea bajo un inquilino de Azure AD y solo los usuarios dentro de ese inquilino pueden tener acceso a sus recursos. Un entorno también está enlazado a una ubicación geográfica, como Estados Unidos. Cuando crea una aplicación en un entorno, esa aplicación se enruta solo a centros de datos en esa ubicación geográfica. Cualquier elemento que cree en ese entorno (incluidas conexiones, puertas de enlace, flujos con Microsoft Flow, etc.) también están enlazados a la ubicación de su entorno.
@@ -75,7 +82,7 @@ El nombre del entorno predeterminado tiene el siguiente formato: "{nombre del in
 Puede crear entornos para un propósito diferente. Un entorno de prueba permite probar el entorno y la base de datos con la experiencia de Common Data Service. Caduca después de un período de tiempo concreto. Para obtener más información, vea [Administer environments in PowerApps](environments-administration.md) (Administración de entornos en PowerApps).
 
 ## <a name="choosing-an-environment"></a>Elección de un entorno
-Con la introducción de los entornos, ahora verá una experiencia nueva cuando ingrese en [https://web.powerapps.com](https://web.powerapps.com).  Las aplicaciones, conexiones y otros elementos visibles en el sitio ahora se filtrarán según el entorno actual seleccionado.  El entorno actual se especifica en el selector de entornos que se encuentra cerca del borde derecho del encabezado. Para elegir un entorno distinto, pulse o haga clic en el selector y verá una lista de los entornos disponibles. Pulse o haga clic en el entorno que desea ingresar.
+Con la introducción de los entornos, ahora verá una experiencia nueva cuando ingrese en [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  Las aplicaciones, conexiones y otros elementos visibles en el sitio ahora se filtrarán según el entorno actual seleccionado.  El entorno actual se especifica en el selector de entornos que se encuentra cerca del borde derecho del encabezado. Para elegir un entorno distinto, pulse o haga clic en el selector y verá una lista de los entornos disponibles. Pulse o haga clic en el entorno que desea ingresar.
 
 El selector mostrará un entorno si usted cumple con una de las siguientes condiciones:
 

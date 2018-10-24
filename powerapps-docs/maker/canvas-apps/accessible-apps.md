@@ -1,5 +1,5 @@
 ---
-title: Creación de aplicaciones accesibles | Microsoft Docs
+title: Creación de aplicaciones de lienzo accesibles | Microsoft Docs
 description: Cómo hacer que las aplicaciones sean accesibles para personas con discapacidades
 author: fikaradz
 manager: kvivek
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 119b7e6ff590f63ad938016c5f0127f5d6521d65
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018730"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834391"
 ---
-# <a name="create-accessible-apps"></a>Creación de aplicaciones accesibles
-Una aplicación accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
+# <a name="create-accessible-canvas-apps-in-powerapps"></a>Creación de aplicaciones de lienzo accesibles en PowerApps
+Una aplicación de lienzo accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
 
 Use el **[Comprobador de accesibilidad](accessibility-checker.md)** para ayudarle a revisar los posibles problemas de accesibilidad de la aplicación. 
 

@@ -1,6 +1,6 @@
 ---
-title: Compatibilidad global | Microsoft Docs
-description: Cree aplicaciones que se usen en todo el mundo.
+title: Integración de compatibilidad global en aplicaciones de lienzo | Microsoft Docs
+description: Utilice PowerApps para compilar aplicaciones que se usen en todo el mundo.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: dbca12ff3acc4327f88269a2333fe066c7f2fbec
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019811"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862585"
 ---
-# <a name="global-support"></a>Compatibilidad global
-PowerApps es un producto global.  Puede crear y usar aplicaciones en muchas regiones e idiomas diferentes.
+# <a name="build-global-support-into-canvas-apps"></a>Integración de compatibilidad global en aplicaciones de lienzo
+PowerApps es un producto global. Puede compilar y usar aplicaciones de lienzo en muchas regiones e idiomas diferentes.
 
 Tanto al compilar como al ejecutar aplicaciones, el texto que PowerApps muestra se ha traducido a diversos idiomas.  Verá los elementos de menú, cuadros de diálogo, pestañas de la cinta y otros textos en su idioma nativo.  La escritura y presentación de fechas y números también se ha adaptado a su idioma y región concretos.  Por ejemplo, algunas regiones del mundo usan "."como un separador decimal mientras que otros usan",".  
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab5542adb68bbd07e2725197230000bdd02b320f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833770"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640363"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 
@@ -61,6 +61,8 @@ No se recomienda tener más de tres iconos de Power BI cargados al mismo tiempo 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control. De forma predeterminada, se abre el informe de Power BI asociado al icono.
+
+**TileUrl**: dirección URL por medio de la cual se solicita un icono desde el servicio Power BI. Puede pasar un parámetro único en el icono de Power BI si anexa el parámetro a la dirección URL (por ejemplo:… & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"). Solo puede usar el operador equals en el parámetro.
 
 **[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 

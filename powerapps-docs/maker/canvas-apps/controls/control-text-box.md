@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42868413"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640409"
 ---
 # <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
 Cuadro que muestra los datos como texto, números, fechas o moneda.
@@ -75,6 +75,8 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 **[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
 **[AlturaDeLínea](properties-text.md)**: distancia entre, por ejemplo, líneas de texto o elementos de una lista.
+
+**Live**: indica cómo el lector de pantalla anuncia los cambios en el texto de la etiqueta.  Los valores pueden ser **Off**, **Assertive** y **Polite**. Esta propiedad es útil para anunciar cambios dinámicos en la interfaz de usuario de la aplicación de manera accesible.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 

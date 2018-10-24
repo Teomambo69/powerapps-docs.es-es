@@ -1,24 +1,24 @@
 ---
 title: 'Controles Formulario de presentación y Formulario de edición: referencia | Microsoft Docs'
 description: Información sobre los controles Formulario de presentación y Formulario de edición, con propiedades y ejemplos
-author: gregli-msft
+author: aneesmsft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
-ms.author: gregli
+ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 992529f50ba14f3578c4f6ffe0ba7ba27d2d3661
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
+ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42838141"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47459464"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -32,6 +32,12 @@ Si agrega un control **[Galería](control-gallery.md)**, puede configurarlo para
 
 ### <a name="record-selection"></a>Selección de registros
 Para cada tipo de formulario, establezca su propiedad **DataSource** en una tabla de registros y establezca la propiedad **Elemento** para mostrar un registro específico en esa tabla. Por ejemplo, puede establecer la propiedad **Elemento** de un formulario en la propiedad **SelectedItem** de un control **[Galería](control-gallery.md)**. Cuando el usuario selecciona un registro en la galería, aparece el mismo registro en el formulario, excepto que el formulario puede mostrar más campos. Si el usuario vuelve a la galería y selecciona un registro diferente, la propiedad **SelectedItem** de la galería cambia. Este cambio actualiza la propiedad **Elemento** del formulario, que mostrará el registro recién seleccionado.
+
+También puede establecer la propiedad **Elemento** de un formulario mediante un control **desplegable**, como se describe en [Mostrar, editar o agregar un registro](../add-form.md), o bien una función como **Lookup** o **First**. Por ejemplo, puede establecer la propiedad **Elemento** en cualquiera de estas fórmulas para mostrar la entrada de Fabrikam en la entidad **Cuentas** de Common Data Service for Apps:
+
+```First(Accounts)```
+
+```Lookup(Accounts, "Fabrikam" in name)```
 
 Cada control de formulario contiene uno o varios controles **[Tarjeta](control-card.md)**. Estableciendo la propiedad **[DataField](control-card.md)** de una tarjeta, se [especifica qué campo muestra esta tarjeta y otros detalles](../add-form.md).
 

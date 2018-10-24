@@ -1,6 +1,6 @@
 ---
-title: Requisitos del sistema, límites y valores de configuración | Microsoft Docs
-description: Requisitos del sistema, límites y valores de configuración para PowerApps
+title: Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo | Microsoft Docs
+description: Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo integradas en PowerApps
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/07/2018
 ms.author: anneta
-ms.openlocfilehash: 3c334baf876c64085621520daef9a0f153d54107
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5ba279e361dfe450de1187cf6aca87bc026178ba
+ms.sourcegitcommit: 60006ce9cb21c59e588c00f2ba5c41ffebbbba09
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39476884"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47456307"
 ---
-# <a name="system-requirements-limits-and-configuration-values"></a>Requisitos del sistema, límites y valores de configuración
+# <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
 
-## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>Plataformas compatibles para ejecutar aplicaciones con la aplicación PowerApps
+## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>Plataformas compatibles para ejecutar aplicaciones de lienzo con la aplicación PowerApps
 
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
@@ -27,7 +31,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Android 5 o posterior |Android 7 o posterior con al menos 4 GB de RAM |
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
-## <a name="supported-browsers-for-running-apps"></a>Exploradores admitidos para ejecutar aplicaciones
+## <a name="supported-browsers-for-running-canvas-apps"></a>Exploradores admitidos para ejecutar aplicaciones de lienzo
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
@@ -64,7 +68,7 @@ Las llamadas realizadas desde una API conectada a través de una aplicación (po
 Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de permitidos las direcciones IP de una instancia de Azure SQL Database.
 
 > [!IMPORTANT]
->   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 1 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
+>   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
 
 | Región | IP de salida |
 | --- | --- |
@@ -95,3 +99,6 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | *.azureedge.net |https |WebAuth |
 | *.blob.core.windows.net |https |Blob Storage |
 | vortex.data.microsoft.com |https |Telemetría |
+
+> [!NOTE]
+> Si usa una VPN, se debe configurar para excluir localhost de la tunelización para PowerApps Mobile.

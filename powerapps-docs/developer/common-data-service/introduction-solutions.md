@@ -15,21 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: b9e06888a23426a44eeaf4354bf456dd8b15cfad
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: bcf89d9c52e1e277f65f7f02013885f30862aa56
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864988"
 ---
 # <a name="introduction-to-solutions"></a>Introducción a las soluciones
 
-Las *soluciones* son cómo los personalizadores y desarrolladores crean, empaquetan y mantienen unidades de software que amplían Common Data Service for Apps. Los desarrolladores y personalizadores distribuyen soluciones para que las organizaciones puedan usar Common Data Service for Apps para instalar y desinstalar la funcionalidad empresarial definida por la solución.
+Las *soluciones* son la forma en que los personalizadores y desarrolladores crean, empaquetan y mantienen unidades de software que amplían Common Data Service for Apps. Por ejemplo, las aplicaciones de Dynamics 365 for Sales, Marketing y Customer Service se componen de soluciones. Los desarrolladores y personalizadores distribuyen soluciones para que las organizaciones puedan usar Common Data Service for Apps a fin de instalar y desinstalar la funcionalidad empresarial definida por la solución.
 
-Todas las personalizaciones que se realicen en Common Data Service for Apps forman parte de una solución. Se realiza el seguimiento de todos los cambios que se apliquen y las dependencias se pueden calcular. Cuando se exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que, después, se puede importar en otro entorno de Common Data Service for Apps.
+Todas las personalizaciones que se realicen en Common Data Service for Apps o en una solución instalada anteriormente forman parte de una solución. Se realiza el seguimiento de todos los cambios que se apliquen y las dependencias se pueden calcular. Cuando se exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que, después, se puede importar en otro entorno de Common Data Service for Apps.
 
 Si tiene previsto transportar las personalizaciones o extensiones entre otros entornos de Common Data Service for Apps o distribuir las soluciones mediante AppSource, debe entender el marco de trabajo de la solución.
 
-## <a name="unmanaged-and-managed-solutions"></a>Soluciones administradas y no administradas
+## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas
 
 Hay dos tipos de soluciones: *administradas* y *no administradas*.
 
@@ -39,8 +45,8 @@ Una solución **administrada** es una solución completa que está pensada para 
 - Se pueden agregar personalizaciones no administradas a los componentes de una solución administrada. Al hacerlo, se crea una dependencia entre las personalizaciones no administradas y la solución administrada. Cuando existe una dependencia, la solución administrada no se puede desinstalar hasta que se quite la dependencia.
 - Cuando se elimina una solución administrada (se desinstala), se quitan todas las personalizaciones y extensiones incluidas con ella.
 
- > [!IMPORTANT]
- > Cuando se desinstala una solución administrada, se pierden los datos siguientes: los datos almacenados en las entidades personalizadas que forman parte de la solución administrada y los almacenados en los atributos personalizados que forman parte de la solución administrada en otras entidades que no forman parte de la solución administrada.
+  > [!IMPORTANT]
+  > Cuando se desinstala una solución administrada, se pierden los datos siguientes: los datos almacenados en las entidades personalizadas que forman parte de la solución administrada y los almacenados en los atributos personalizados que forman parte de la solución administrada en otras entidades que no forman parte de la solución administrada.
 
 Una solución **no administrada** es la que todavía se está desarrollando o no está diseñada para ser distribuida. 
 - Mientras que una solución es no administrada, se pueden seguir agregando y quitando componentes. 
@@ -48,10 +54,11 @@ Una solución **no administrada** es la que todavía se está desarrollando o no
 - Cuando se elimina una solución no administrada, solo se elimina el contenedor de solución de las personalizaciones que incluya. Todas las personalizaciones no administradas siguen en vigor y pertenecen a la solución predeterminada. 
 - Cuando se completa la solución no administrada y se quiere distribuir, se exporta como una solución administrada.
 
- > [!NOTE]
- > No se puede importar una solución administrada al mismo entorno que contiene la solución no administrada de origen. Para probar una solución administrada, se necesita un entorno independiente al que importarla.
+  > [!NOTE]
+  > No se puede importar una solución administrada al mismo entorno que contiene la solución no administrada de origen. Para probar una solución administrada, se necesita un entorno independiente al que importarla.
 
 ## <a name="solution-publishers"></a>Editores de soluciones
+
 Cada solución se vincula a un editor de soluciones. El editor de soluciones proporciona información sobre cómo ponerse en contacto con el editor y también un valor de prefijo de personalización. El valor predeterminado es `new`.
 
 Cuando se incluyen cambios de esquema como parte de una solución, el prefijo de personalización del editor de soluciones se antepone al nombre de los elementos de esquema. Este valor también se anexa a todas las acciones personalizadas. Esto es útil porque permite que sea fácil reconocer qué solución agregó el elemento de esquema o la acción personalizada. No es necesario que todos los elementos de esquema y las acciones personalizadas de una solución usen el mismo prefijo de personalización, pero se recomienda encarecidamente.
@@ -67,7 +74,7 @@ Más información: [Mantener soluciones administradas (Guía para desarrolladore
 
 Para crear un editor de soluciones y una solución, hay que navegar hasta el área de personalización de Dynamics 365.
 
-Desde [powerapps.com](https://web.powerapps.com)
+Desde [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. Haga clic en el icono de *gofre* situado en la esquina superior izquierda.
 2. En el control flotante, seleccione **Todas las aplicaciones**.
@@ -116,7 +123,7 @@ En el diagrama siguiente se presentan cómo interactúan las soluciones administ
 
 En este ejemplo, el comportamiento predeterminado definido en la solución del sistema se invalida o anexa por las soluciones administradas. Después, las personalizaciones no administradas pueden invalidar o anexar las personalizaciones que son visibles en la aplicación.
 
-Más información: [Introducción a las soluciones (Guía para desarrolladores de Dynamics 365 Customer Engagement) > Soluciones administradas y no administradas](/dynamics365/customer-engagement/developer/introduction-solutions#unmanaged-and-managed-solutions)
+Más información: [Introducción a las soluciones (Guía para desarrolladores de Dynamics 365 Customer Engagement) > Soluciones administradas y no administradas](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions)
 
 ## <a name="managed-properties"></a>Propiedades administradas
 

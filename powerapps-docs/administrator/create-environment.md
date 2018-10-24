@@ -5,14 +5,20 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: jimholtz
-ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9d7a2093c938658d6717157fc6bd683aa3a55bb6
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349257"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297483"
 ---
 # <a name="create-an-environment"></a>Creación de un entorno
 Un entorno es un espacio para almacenar, administrar y compartir los datos empresariales, las aplicaciones y los flujos de la organización. También sirve como contenedor para separar aplicaciones que pueden tener otros roles, requisitos de seguridad o públicos de destino. PowerApps crea automáticamente un único entorno predeterminado para cada inquilino, que se comparte entre todos los usuarios de ese inquilino.
@@ -36,6 +42,8 @@ Inicie sesión en el Centro de administración en [https://admin.powerapps.com](
 2. En el cuadro de diálogo **Nuevo entorno**, escriba un nombre para el entorno y, después, seleccione una región y tipo de entorno en las listas desplegables. El valor predeterminado de la región es la región principal Inquilino de Azure Active Directory, pero se puede seleccionar cualquier región en la lista desplegable. No se puede cambiar la región una vez creado el entorno. Cuando haya terminado, pulse o haga clic en **Crear entorno**.
 
     ![Archivo y Compartir](./media/create-environment/new-environment-dialog.png)
+
+    Seleccione **Versión preliminar (Estados Unidos)** para obtener acceso anticipado a las próximas funcionalidades de PowerApps. Obtenga más información sobre el [programa de versión preliminar de PowerApps](preview-environments.md).
 3. Una vez creado el entorno, recibirá un mensaje de confirmación en el cuadro de diálogo y se le pedirá que cree una base de datos. Pulse o haga clic en **Crear base de datos** para habilitar el acceso a Common Data Service.
 
     **Nota:** En la actualidad, solo se puede crear una base de datos en la región principal Inquilino de Azure Active Directory.

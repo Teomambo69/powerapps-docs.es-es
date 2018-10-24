@@ -1,6 +1,6 @@
 ---
-title: Creación de una conexión a SharePoint desde PowerApps | Microsoft Docs
-description: En powerapps.com, cree una conexión a SharePoint, para usarla al generar una aplicación automáticamente o crear una desde cero.
+title: Creación de una conexión de una aplicación de lienzo con SharePoint | Microsoft Docs
+description: En PowerApps, cree una conexión con SharePoint que utilizará para generar una aplicación de lienzo automáticamente o crear una desde cero.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 170115f07da57878c553a1776fc26a9cd27a8258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195873"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844164"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>Creación de una conexión a SharePoint desde PowerApps
-Cree una conexión a SharePoint Online o a SharePoint local para poder generar una aplicación automáticamente o crear una desde cero.
+Cree una conexión a SharePoint Online o a SharePoint local para poder generar una aplicación de lienzo automáticamente o crear una desde cero.
 
 Si no está familiarizado con PowerApps, consulte [Introducción a PowerApps](getting-started.md).
 

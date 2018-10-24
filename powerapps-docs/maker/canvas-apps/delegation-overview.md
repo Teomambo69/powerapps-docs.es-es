@@ -1,6 +1,6 @@
 ---
-title: Descripción de delegación | Microsoft Docs
-description: La delegación se usa para procesar eficazmente grandes conjuntos de datos.
+title: Descripción de la delegación en una aplicación de lienzo | Microsoft Docs
+description: La delegación se usa para procesar eficazmente grandes conjuntos de datos en una aplicación de lienzo.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/05/2018
 ms.author: lanced
-ms.openlocfilehash: 484d7b1149f158840238fc3d54713a1e6e33443b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0ac78340f344ce42fd68d18940b1aaca41412a96
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023606"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42829760"
 ---
-# <a name="understand-delegation"></a>Descripción de delegación
-PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos: las funciones **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
+# <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
+PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: las funciones **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
 
 La clave para compilar aplicaciones eficientes es minimizar la cantidad de datos que debe contener el dispositivo. Quizás necesite solo unos pocos registros de un mar de millones o que un único valor agregado pueda representar miles de registros. O quizás solo se pueda recuperar el primer conjunto de registros, y el resto se trae cuando el usuario indica que desea más. De esta forma se puede reducir drásticamente la potencia de procesamiento, la memoria y el ancho de banda de red que necesita la aplicación, lo que conlleva menores tiempos de respuesta para los usuarios, incluso en teléfonos conectados a través de una red móvil. 
 

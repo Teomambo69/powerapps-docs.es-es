@@ -1,6 +1,6 @@
 ---
-title: Colores accesibles | Microsoft Docs
-description: Directrices de contraste de color para PowerApps
+title: Colores accesibles en aplicaciones de lienzo | Microsoft Docs
+description: Directrices de contraste de colores para aplicaciones de lienzo en PowerApps
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 96a04cdda99f379c799ccd68e2442572ac929d39
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014820"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862919"
 ---
-# <a name="accessible-colors-in-powerapps"></a>Colores accesibles en PowerApps
-Los colores utilizados en una aplicación deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
+# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Colores accesibles en aplicaciones de lienzo de PowerApps
+Los colores utilizados en una aplicación de lienzo deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
 
 ## <a name="minimum-contrast-for-text"></a>Contraste mínimo para el texto
 * El texto y su fondo deben tener al menos una relación de contraste 4.5:1

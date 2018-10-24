@@ -1,6 +1,6 @@
 ---
-title: Eliminación de una aplicación | Microsoft Docs
-description: Cómo eliminar una aplicación existente en PowerApps
+title: Eliminación de una aplicación de lienzo | Microsoft Docs
+description: Cómo eliminar una aplicación de lienzo existente en PowerApps
 author: jamesol-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: c8d5d5f5fbb9453ad9afeffda8383be0dae4eebc
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5fd2551ff0fac40acf54c77d6750ab983ee5819e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194975"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834765"
 ---
-# <a name="delete-an-app-from-powerapps"></a>Eliminar una aplicación de PowerApps
-En este artículo se muestra cómo eliminar una aplicación tanto de su cuenta de PowerApps como de las cuentas de cualquiera con quien se haya compartido la aplicación.
+# <a name="delete-a-canvas-app-from-powerapps"></a>Eliminación de una aplicación de lienzo de PowerApps
+En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuenta de PowerApps y de las cuentas de cualquiera con quien se haya compartido la aplicación.
 
 ## <a name="delete-an-app-from-your-account"></a>Eliminar una aplicación de la cuenta
 1. Abra [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y pulse o haga clic en **Aplicaciones** en la barra de navegación izquierda.

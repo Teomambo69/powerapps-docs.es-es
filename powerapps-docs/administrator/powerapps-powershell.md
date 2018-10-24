@@ -6,17 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2018
+ms.date: 08/23/2018
 ms.author: jamesol
-ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
-ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 0d5d2cee770e03c4e587db0bff624f34395ed92c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39367624"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864437"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>Compatibilidad con PowerShell para PowerApps (versión preliminar)
-Con el lanzamiento de la versión preliminar de los cmdlets de PowerShell para creadores y administradores de aplicaciones, puede automatizar muchas de las tareas de supervisión y administración que hoy solo son posibles manualmente en [PowerApps ](https://web.powerapps.com) o en el [Centro de administración de PowerApps](https://admin.powerapps.com).
+Con el lanzamiento de la versión preliminar de los cmdlets de PowerShell para creadores y administradores de aplicaciones, puede automatizar muchas de las tareas de supervisión y administración que hoy solo son posibles manualmente en [PowerApps ](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o en el [Centro de administración de PowerApps](https://admin.powerapps.com).
 
 ## <a name="installation"></a>Instalación
 Para ejecutar los cmdlets de PowerShell para creadores de aplicaciones, siga estos pasos:
@@ -126,6 +132,15 @@ Para hacer las operaciones de administración en los cmdlets de administración,
 >Get-Help Get-AdminPowerAppEnvironment -Examples
 >Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
+
+## <a name="version-history"></a>Historial de versiones
+| Versión | Fecha | Actualizaciones |
+| --- | --- | --- |
+| 1.0 | 23/04/2018 | <ol> <li> Lanzamiento inicial de los cmdlets de PowerApps para creadores de aplicaciones (versión preliminar), incluidos los cmdlets de administración de entornos, aplicaciones, flujos, aprobaciones de flujo, conexiones y conectores personalizados </li> <li> Lanzamiento inicial de los cmdlets de PowerApps para administradores (versión preliminar) incluidos los cmdlets administrativos de entornos, aplicaciones y flujos </li></ol>|
+| 2.0 | 24/05/2018 | <ol> <li> Correcciones de errores menores en los cmdlets de creadores y de administradores de aplicaciones </li> <li> Se agregan los nuevos cmdlets administrativos siguientes: <br> Get-AdminConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
+| 3.0 | 30/07/2018 | <ol> <li> Se agrega la posibilidad de paso de credenciales al cmdlet Add-PowerAppsAccount (para habilitar el scripting periódico). </li> <li>  Correcciones de errores menores en los cmdlets de creadores y de administradores de aplicaciones </li> <li> Se agrega el prefijo "PowerApp" o "Flow" a cada cmdlet para creadores de aplicaciones. </li> <li>  Se agrega el prefijo "AdminPowerApp" o "AdminFlow" a cada cmdlet para administradores. </li> <li> Se agregan los nuevos cmdlets administrativos siguientes: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
+| 4.0 | 15/08/2018 | Se agrega un parámetro opcional al cmdlet New-AdminPowerAppCdsDatabase para realizar la función sincrónica de forma predeterminada (es decir, no se devolverá hasta que se haya aprovisionado correctamente la base de datos).
+| 5.0 | 24/08/2018 | Se ha corregido un problema por el que los cmdlets de administradores de Flow no devolvían datos en algunos casos en función de la configuración de seguridad.
 
 ## <a name="questions"></a>¿Preguntas?
 

@@ -9,25 +9,29 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017925"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075389"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
 
 ## <a name="description"></a>Descripción
-Un control **Lista desplegable** conserva el estado real de la pantalla, en especial cuando la lista contiene un gran número de opciones. El control toma una sola línea a menos que el usuario seleccione las comillas angulares para revelar más opciones.
+Un control **Lista desplegable** conserva el estado real de la pantalla, en especial cuando la lista contiene un gran número de opciones. El control toma una sola línea a menos que el usuario seleccione las comillas angulares para revelar más opciones.  El control muestra un máximo de 500 elementos.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
+**[Valor predeterminado](properties-core.md)**: valor inicial de un control antes de que el usuario especifique otro.
 
-**[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
-
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**[Elementos](properties-core.md)**: origen de datos que contiene los elementos que aparecen en el control. Si el origen tiene varias columnas, establezca la propiedad **Valor** del control en la columna de datos que quiere mostrar.
+  
+**Valor**: columna de datos que quiere mostrar en el control (por ejemplo, si un origen de datos tiene varias columnas).
 
 **Seleccionados**: el elemento seleccionado.
 
@@ -117,24 +121,33 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
-1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[Texto](properties-core.md)** para mostrar **Recopilar**.
-   
-    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Botón](control-button.md)** en esta fórmula:
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-   
-    ¿Desea más información sobre la función **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
-3. Presione F5, haga clic o pulse el control **[Botón](control-button.md)** y luego presione Esc.
-4. Agregue un control **Lista desplegable**, denomínelo **Países** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
-   <br>**Distinct(CityPopulations, Country)**
-5. Agregue un control **Galería de texto** en orientación vertical y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
-   <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
-6. En el primer elemento del control **Galería de texto**, establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** superior en **ThisItem.City** y elimine el control **[Etiqueta](control-text-box.md)** inferior.
-7. Establezca la propiedad **[TamañoDePlantilla](control-gallery.md)** del control **Galería de texto** en **80**.
-8. Presione F5, pulse o haga clic en las comillas angulares de la lista **Countries** y luego elija una opción de esa lista.
-   
-    El control **Galería de texto** muestra solo esas ciudades del país que eligió.
 
+### <a name="simple-list"></a>Lista sencilla
+
+1. Agregue un control **Lista desplegable** y establezca su propiedad **[Items](properties-core.md)** en esta expresión:
+
+    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+
+    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
+
+1. Para mostrar los elementos de la lista, seleccione la flecha hacia abajo del control mientras presiona la tecla Alt.
+
+### <a name="list-from-a-data-source"></a>Lista de un origen de datos
+Los principios de este procedimiento se aplican a cualquier [origen de datos que proporcione tablas](../connections-list.md#tables) pero, para seguir estos pasos exactamente, debe abrir un entorno para el que se haya agregado una base de datos de Common Data Service for Apps y se hayan agregado datos de ejemplo.
+
+1. [Abra una aplicación en blanco](../data-platform-create-app-scratch.md#open-a-blank-app) y [especifique la entidad **Cuentas**](../data-platform-create-app-scratch.md#specify-an-entity).
+
+1. Agregue un control **Lista desplegable** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
+
+    ```Distinct(Accounts, address1_city)```
+
+    Esta fórmula muestra todas las ciudades de la entidad **Cuentas**. Si hay más de un registro con la misma ciudad, la función **[Distinct](../functions/function-distinct.md)** oculta la duplicación en el control de lista desplegable.
+
+1. (opcional) Cambie el nombre del control **Lista desplegable** a **Ciudades**, agregue un control vertical **Galería** y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:
+
+    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+
+    Esta función **[Filtro](../functions/function-filter-lookup.md)** muestra únicamente aquellos registros de la entidad **Cuentas** en los que la ciudad coincida con el valor seleccionado en el control **Ciudades**.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 ### <a name="color-contrast"></a>Contraste de color

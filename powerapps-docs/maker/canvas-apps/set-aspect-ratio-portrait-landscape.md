@@ -1,6 +1,6 @@
 ---
-title: Cambio del tamaño y la orientación de la pantalla | Microsoft Docs
-description: Instrucciones paso a paso para cambiar configuraciones como el tamaño y la orientación de la pantalla
+title: Cambio del tamaño y la orientación de la pantalla de una aplicación de lienzo | Microsoft Docs
+description: Instrucciones paso a paso para cambiar configuraciones tales como el tamaño y la orientación de la pantalla de una aplicación de lienzo en PowerApps
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 0f68fa188dd58b276dce4009cdb37fed33d81d69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab41707c06faa11dd2e1d519b72fb35ff6b9914a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015924"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835592"
 ---
-# <a name="change-screen-size-and-orientation-in-powerapps"></a>Cambiar el tamaño y la orientación de la pantalla en PowerApps
-Personalice una aplicación cambiando el tamaño y la orientación de la pantalla.
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Cambio del tamaño y la orientación de la pantalla de una aplicación de lienzo en PowerApps
+Personalice una aplicación de lienzo cambiando el tamaño y la orientación de la pantalla.
 
 ## <a name="prerequisites"></a>Requisitos previos
 1. Cree una aplicación o abra una para editarla.
