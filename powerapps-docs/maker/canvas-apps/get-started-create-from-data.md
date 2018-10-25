@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b1531289c55772aaa9ee521c92cc8b5dbfe16ad4
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806142"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
 
@@ -28,13 +28,15 @@ El archivo de Excel debe estar en una cuenta de almacenamiento en la nube, como 
 
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
-## <a name="prerequisites"></a>Requisitos previos ##
+## <a name="prerequisites"></a>Requisitos previos
+
 Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) en Excel y guárdelo en la [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
 > [!IMPORTANT]
 > Puede usar su propio archivo de Excel, pero los datos deberán tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla](how-to-excel-tips.md). 
 
 ## <a name="generate-the-app"></a>Generar la aplicación
+
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
@@ -54,6 +56,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
     ![Opción para crear una aplicación](./media/get-started-create-from-data/choose-table.png)
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
+
 1. Para abrir la vista previa, presione F5 (o haga clic o pulse en el icono de reproducción situado cerca de la esquina superior derecha).
 
     ![Abrir vista previa](./media/get-started-create-from-data/open-preview.png)
@@ -73,6 +76,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 1. Pulse o haga clic en la flecha siguiente del registro que ha agregado y, después, pulse o haga clic en el icono Papelera para eliminar ese registro.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Personalice la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades. Por ejemplo, puede ordenar y filtrar la lista por nombre de producto, no por categoría.
 
 > [!div class="nextstepaction"]

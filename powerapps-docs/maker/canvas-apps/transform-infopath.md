@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e17015c05d23f4bd9f8a0906e7b1d9d00e2c38f
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: c2d72368b36f2de854a0aa575f9ef44f2f966ace
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806234"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>Transformar el formulario de InfoPath en PowerApps
 
@@ -76,7 +76,7 @@ Siga estos pasos para comenzar:
 
 PowerApps compila una aplicación que se puede personalizar.
 
-Comience con una lista personalizada simple que solo contenga un par de campos de diferentes tipos para la primera aplicación. Esto le permitirá partir de una base sólida sin verse desbordado. No se preocupe; en poco tiempo se convertirá en un profesional y podrá abordar aplicaciones complejas. Para obtener ayuda con su primera aplicación, vea esta [documentación](generate-app-from-sharepoint-list-interface.md) o el [vídeo](https://youtu.be/BnYe_7fpZRM) de esta comunidad. En los ejemplos siguientes se muestran las tareas comunes de InfoPath y cómo realizarlas en PowerApps. Cada una de ellas se basa en una aplicación sencilla de lista de SharePoint.
+Comience con una lista personalizada simple que solo contenga un par de campos de diferentes tipos para la primera aplicación. Esto le permitirá partir de una base sólida sin verse desbordado. No se preocupe; en poco tiempo se convertirá en un profesional y podrá abordar aplicaciones complejas. Para obtener ayuda con su primera aplicación, vea esta [documentación](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) o el [vídeo](https://youtu.be/BnYe_7fpZRM) de esta comunidad. En los ejemplos siguientes se muestran las tareas comunes de InfoPath y cómo realizarlas en PowerApps. Cada una de ellas se basa en una aplicación sencilla de lista de SharePoint.
 
 ## <a name="how-do-you-do-that-with-powerapps"></a>¿Cómo se consigue con PowerApps?
 
