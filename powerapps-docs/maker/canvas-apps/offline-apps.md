@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864411"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991778"
 ---
-# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>Desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión con PowerApps
+# <a name="develop-offline-capable-canvas-apps"></a>Desarrollo de aplicaciones de lienzo que puedan ejecutarse sin conexión
 
 Uno de los escenarios más comunes a los que se enfrenta como desarrollador de aplicaciones móviles es posibilitar que sus usuarios puedan ser productivos cuando no hay conectividad o bien esta es limitada. PowerApps tiene un conjunto de características y comportamientos que le ayudarán a desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión. Podrá:
 

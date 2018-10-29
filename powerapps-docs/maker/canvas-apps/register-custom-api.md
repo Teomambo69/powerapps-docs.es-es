@@ -1,6 +1,6 @@
 ---
-title: Vínculos a contenido sobre los conectores personalizados | Microsoft Docs
-description: Incluye vínculos a contenido para crear, usar, compartir y certificar conectores personalizados en PowerApps.
+title: Vínculos a contenido sobre los conectores personalizados para aplicaciones personalizadas | Microsoft Docs
+description: Incluye vínculos a contenido para crear, usar, compartir y certificar conectores personalizados para aplicaciones de lienzo en PowerApps.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd07dbc90900e4690e677823d2303b96e57472f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 6975c19a973b90de0db7dfbc7ecb8e5e504f39a4
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859332"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991801"
 ---
-# <a name="custom-connectors-in-powerapps"></a>Conectores personalizados en PowerApps
+# <a name="custom-connectors-for-canvas-apps"></a>Conectores personalizados para aplicaciones de lienzo
 
 Puede compilar aplicaciones de lienzo y flujos de trabajo, sin tener que escribir nada de código, con [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) y [PowerApps](https://powerapps.microsoft.com). Con el objetivo de ayudarle a integrar sus procesos empresariales y de datos, dichos servicios ofrecen [más de 180 conectores](https://docs.microsoft.com/connectors/) para productos y servicios de Microsoft, así como para otros servicios, como GitHub, Salesforce y Twitter.
 

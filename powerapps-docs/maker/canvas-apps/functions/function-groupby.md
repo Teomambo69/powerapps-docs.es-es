@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0bdab9bcd45f456c00f933dfa7f1a8936e3fa85
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806211"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones AgruparPor y Desagrupar en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -68,7 +68,7 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 2. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** del botón **Original** en esta fórmula:
    
     **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-3. Presione F5, seleccione el botón **Original** y presione Esc.
+3. Mientras mantiene presionada la tecla Alt, seleccione el botón **Original**.
    
     Acaba de crear una [colección](../working-with-data-sources.md#collections), que se denomina **CityPopulations**, que contiene estos datos:
    
@@ -82,7 +82,7 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 2. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** de este botón en esta fórmula:
    
     **ClearCollect( CitiesByCountry, AgruparPor( CityPopulations, "Country", "Ciudades" ) )**
-3. Presione F5, seleccione el botón **Grupo** y presione Esc.
+3. Mientras mantiene presionada la tecla Alt, seleccione el botón **Grupo**.
    
     Acaba de crear una recopilación denominada **CitiesByCountry**, en la que se agrupan los registros de la colección anterior mediante la columna **País**.
    
@@ -99,7 +99,7 @@ Una tabla es un valor en PowerApps, como una cadena o un número. Puede especifi
 2. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** de este botón en esta fórmula:
    
     **ClearCollect( CitiesByCountryFiltered, Filtrar( CitiesByCountry, "e" in Country ) )**
-3. Presione F5, seleccione el botón que agregó y presione Esc.
+3. Mientras mantiene presionada la tecla Alt, seleccione el botón que ha agregado.
    
     Acaba de crear una tercera colección denominada **CitiesByCountryFiltered**, que incluye solo aquellos países que tienen una "e" en sus nombres (es decir, no España o Italia, por ejemplo).
    
@@ -126,8 +126,12 @@ Otra cosa que podemos hacer con una tabla agrupada consiste en agregar los resul
     ![](media/function-groupby/cities-sum.png)
    
     **[AddColumns](function-table-shaping.md)** comienza con la colección básica de **CitiesByCountry** y agrega una nueva columna denominada **Suma de las poblaciones de las ciudades**.  Los valores de esta columna se calculan fila por fila según la fórmula **Suma( Ciudades, Population )**.  **AddColumns** proporciona el valor de la columna **Ciudades** (una tabla) para cada fila y **[Suma](function-aggregates.md)** la **Población** de cada fila de esta subtabla.
-3. Ahora que tenemos la suma que queremos, podemos usar la función **[DropColumns](function-table-shaping.md)** para quitar las subtablas.  Modifique la propiedad **[AlSeleccionar](../controls/properties-core.md)** para que use esta fórmula:
-   
+
+    Ahora que tenemos la suma que queremos, podemos usar la función **[DropColumns](function-table-shaping.md)** para quitar las subtablas.
+  
+3. Agregue otro botón y establezca su propiedad **[Texto](../controls/properties-core.md)** para que el botón muestre **"SumOnly"**.
+4. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** del botón **"SumOnly"** en esta fórmula:
+
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Ciudades" ) )**
    
     Que da como resultado:

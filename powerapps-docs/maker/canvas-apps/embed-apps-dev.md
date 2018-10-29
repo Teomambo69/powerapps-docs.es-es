@@ -1,5 +1,5 @@
 ---
-title: Integración de PowerApps tanto en sitios web como en otros servicios | Microsoft Docs
+title: Integración de aplicaciones de lienzo en sitios web y en otros servicios | Microsoft Docs
 description: Inserte aplicaciones de lienzo en sitios web y otros servicios.
 author: mgblythe
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9cd4008bcb93e05d696fec082e400ee9661785b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 254d127237cff58728f208d62c30bf7aeb456a80
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835404"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991847"
 ---
-# <a name="integrate-powerapps-into-websites-and-other-services"></a>Integración de PowerApps tanto en sitios web como en otros servicios
+# <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones de lienzo en un iframe para poder integrarlas en sitios web y otros servicios, como Power BI o SharePoint.
 
 En este tema se muestra cómo establecer los parámetros para la inserción de aplicaciones y, después, se instará la aplicación Asset Ordering en un sitio web.
@@ -32,7 +32,7 @@ Tenga en mente las siguientes restricciones:
 * Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
 * Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
 
-También puede integrar PowerApps en SharePoint Online (sin usar un iframe). Para más información, consulte [Creación de una aplicación desde SharePoint mediante PowerApps](../canvas-apps/generate-app-from-sharepoint-list-interface.md).
+También puede integrar PowerApps en SharePoint Online (sin usar un iframe). Para más información, consulte [Creación de una aplicación desde SharePoint mediante PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Establecer los parámetros URI de la aplicación
 Si tiene una aplicación que desea insertar, el primer paso es establecer los parámetros para el identificador uniforme de recursos (URI), para que el iframe sepa dónde se encuentra la aplicación. El identificador URI tiene la forma siguiente:
