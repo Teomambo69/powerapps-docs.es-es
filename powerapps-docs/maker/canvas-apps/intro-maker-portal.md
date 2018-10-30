@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 02aaaf7fd149ca0d9f3e1325b98e5287c90bebec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849758"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317008"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Inicio de sesión en PowerApps por primera vez
 
@@ -62,25 +62,17 @@ En PowerApps, puede crear y ejecutar estos tipos de aplicaciones:
 - **Aplicaciones de lienzo**: admiten el diseño de interfaz de usuario personalizada y la conexión a datos desde diversos orígenes.
 - **Aplicaciones controladas por modelos**: tienen una interfaz de usuario estándar y solo se conectan a datos en Common Data Service (CDS) for Apps. Sin embargo, resulta más fácil crear otros elementos, tales como vistas, paneles y diferentes tipos de lógica de negocios.
 
-De forma predeterminada, la página **principal** muestra las opciones para crear y ejecutar aplicaciones de lienzo. Para mostrar en su lugar las opciones controladas por modelos, elija un entorno que tenga una base de datos de CDS for Apps y luego abra el menú en la esquina inferior izquierda.
-
-![Conmutación entre aplicaciones de lienzo y controladas por modelos](media/intro-maker-portal/mode-switcher.png)
+Si elige un entorno que tenga una base de datos de CDS para aplicaciones, puede crear aplicaciones basadas en modelos o lienzos desde la misma página **Inicio**.
 
 ## <a name="play-or-edit-an-app"></a>Reproducción o edición de una aplicación
 
-Si ya ha creado una aplicación (u otra persona ha creado una y la ha compartido con usted), la puede reproducir o editar en la página**Aplicaciones**.
+Si ha creado una aplicación, o bien otra persona ha creado una y la ha compartido con usted, la puede reproducir o editar en las páginas **Inicio** o **Aplicaciones**.
 
-- Puede encontrar una aplicación de lienzo filtrando por criterios tales como si se ha abierto recientemente.
+En la página **Aplicaciones**, puede filtrar la lista de aplicaciones por criterios tales como si se ha abierto recientemente.
 
-    ![Lista de aplicaciones de lienzo](media/intro-maker-portal/org-apps.png)
+![Lista de aplicaciones](./media/intro-maker-portal/find-apps.png)
 
-    También puede buscar una aplicación escribiendo uno o más caracteres en la barra de búsqueda que aparece cerca de la esquina superior derecha. Cuando encuentre la aplicación que busca, seleccione el icono de puntos suspensivos para mostrar las opciones de reproducción o edición de la aplicación.
-
-    ![Menú de puntos suspensivos](media/intro-maker-portal/ellipsis-menu.png)
-
-- No puede filtrar la lista de aplicaciones controladas por modelos, pero puede buscar una aplicación escribiendo uno o más caracteres en la barra de búsqueda que aparece cerca de la esquina superior derecha. Cuando encuentre la aplicación que busca, seleccione el icono de puntos suspensivos para mostrar las opciones de reproducción o edición de la aplicación.
-
-    ![Lista de aplicaciones controladas por modelos con un menú de puntos suspensivos abierto](media/intro-maker-portal/model-driven-list.png)
+También puede buscar una aplicación escribiendo uno o más caracteres en la barra de búsqueda que aparece cerca de la esquina superior derecha. Cuando encuentre la aplicación que quiera, seleccione el icono de banner para iniciar o modificar la aplicación.
 
 ## <a name="create-an-app"></a>Crear una aplicación
 

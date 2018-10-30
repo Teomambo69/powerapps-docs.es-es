@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 09/19/2018
+ms.date: 10/15/2018
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: b8cebc6f9db8a1a7c1a060aad461f4f32fcee05b
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46469752"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328703"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Integración de datos en Common Data Service for Apps
 
@@ -88,6 +88,9 @@ Antes de poder crear un proyecto de integración de datos, debe proporcionar una
 
     > [!div class="mx-imgBorder"] 
     > ![Lista de conexiones](media/data-integrator/CreateConnection1780.png "Connection list")
+
+> [!NOTE]
+> Asegúrese de que la cuenta que especifique para cada conexión tenga acceso a las entidades para las aplicaciones correspondientes. Además, la cuenta para cada conexión puede estar en un inquilino diferente. 
 
 ### <a name="how-to-create-a-connection-set"></a>Cómo crear un conjunto de conexiones
 
@@ -169,8 +172,6 @@ Los proyectos permiten el flujo de datos entre sistemas. Un proyecto contiene as
 
 ### <a name="execution-history"></a>Historial de ejecuciones
 
-<!--note from editor: Do you think most people reading this will know what "upsert" means?-->
-
 En el Historial de ejecuciones se muestra el historial de las ejecuciones de todos los proyecto con el nombre del proyecto, la marca de tiempo de cuándo se ejecutó el proyecto y el estado de ejecución, junto con el número de operaciones upsert y errores.
 
 -   Ejemplo de historial de ejecuciones de proyectos.
@@ -228,6 +229,12 @@ Tenga en cuenta también que, en Notificaciones, puede elegir notificaciones de 
 
 > [!div class="mx-imgBorder"] 
 > ![Notificación por correo electrónico](media/data-integrator/EmailNotification780.png "Email notification")
+
+> [!NOTE]
+> - Actualmente se admite la programación de 50 proyectos de integración en cualquier momento por cada inquilino adquirido. No obstante, puede crear varios proyectos y ejecutarlos de forma interactiva.
+Para los inquilinos de prueba, tenemos una limitación adicional: solo se ejecutarán para las primeras 50 ejecuciones de un proyecto programado.
+> - Aunque se admiten proyectos de programación que se vayan a ejecutar cada minuto, tenga en cuenta que esto puede suponer un gran esfuerzo para las aplicaciones y, a su vez, afectar al rendimiento general. Recomendamos a los usuarios probar las ejecuciones de proyecto en condiciones de carga reales y optimizar el rendimiento con actualizaciones menos frecuentes.
+En entornos de producción, se recomienda no ejecutar más de 5 proyectos por minuto por inquilino.
 
 ## <a name="customizing-projects-templates-and-mappings"></a>Personalización de proyectos, plantillas y asignaciones 
 
