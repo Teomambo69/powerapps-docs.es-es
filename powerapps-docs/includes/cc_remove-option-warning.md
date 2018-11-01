@@ -1,4 +1,4 @@
 > [!WARNING]
-> Si quita una opción que ha usado un registro de entidad, los datos de ese registro dejarán de ser válidos después de guardar los cambios en el conjunto de opciones globales.
+> Si quita una opción que haya sido usada por un registro de entidad, los datos para ese registro dejarán de ser válidos cuando guarde los cambios en el conjunto de opciones globales.
 >
->Antes de quitar una opción que se ha usado, debe cambiar los datos en cualquier registro de entidad que utiliza esa opción en un valor válido.
+>Antes de quitar una opción que haya sido usada debe cambiar a un valor válido los datos de los registros de entidad que usen esa opción.

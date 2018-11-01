@@ -1,97 +1,96 @@
 ---
-title: Información sobre los componentes de las aplicaciones basadas en modelos en PowerApps | Microsoft Docs
-description: Conozca los distintos componentes de una aplicación basada en modelos, como los datos, la interfaz de usuario, la lógica y la visualización.
-Keywords: fields, attributes, model-driven app
+title: Conocer los componentes de las aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+description: 'Comprender los distintos componentes de una aplicación controlada por modelos, como datos, IU, lógica y visualización.'
+Keywords: 'fields, attributes, model-driven app'
 author: Mattp123
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
 ms.service: crm-online
 ms.topic: article
-ms.openlocfilehash: 249f0d35ce9eb466303ef16658aa01198632875e
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39699021"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="understand-model-driven-app-components"></a>Información de componentes de aplicación basada en modelos
-Una aplicación basada en modelos bien diseñada consta de varios componentes que el diseñador selecciona con el diseñador para crear la apariencia y funcionalidades de la aplicación terminada. Los componentes y las propiedades de componente que usan los diseñadores para crear una aplicación se convierten en los metadatos. 
+# <a name="understand-model-driven-app-components"></a>Conocer los componentes de las aplicaciones basadas en modelos
+Una aplicación controlada por modelos bien diseñada se compone de varios componentes que selecciona usando el diseñador para crear la apariencia y funcionalidades de la aplicación terminada. Los componentes y propiedades de componentes que los diseñadores usan para crear una aplicación son los metadatos. 
 
-Para entender cómo se relaciona cada uno de estos componentes con el diseño de aplicaciones, aquí se separan en las categorías *datos*, *interfaz de usuario*, *lógica* y *visualización*. 
+Para conocer cómo cada uno de estos componentes se relaciona con el diseño de la aplicación, se separan aquí en las categorías de *datos*, *IU*, *lógica* y *visualización*. 
 
 ## <a name="data"></a>Datos
-Estos componentes determinan en qué datos se va a basar la aplicación.
+Estos componentes determinan en qué datos se basará la aplicación.
 
 
 |Componente  |Descripción  |Diseñador  |
 |---------|---------|---------|
-|Entidad     |Un elemento con propiedades del que se realiza el seguimiento, por ejemplo, un contacto o una cuenta. Existen muchas entidades estándar. Se puede personalizar una entidad estándar que no sea del sistema (entidad de producción) o crear una entidad personalizada desde cero.     | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
-|Campo     | Una propiedad que está asociada a una entidad. Un campo se define por un tipo de datos, que determina el tipo de datos que se pueden escribir o seleccionar. Algunos ejemplos son texto, número, fecha y hora, moneda o búsqueda (crea una relación con otra entidad). Normalmente, los campos se usan con formularios, vistas y búsquedas.        | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]   |
-|Relación     | Las relaciones de entidad definen cómo se pueden relacionar las entidades entre sí. Los tipos de relaciones disponibles son 1:N (uno a varios), N:1 (varios a uno) y N:N (varios a varios). Por ejemplo, agregar un campo de búsqueda a una entidad crea una relación 1:N entre las dos entidades y le permite colocar ese campo de búsqueda en un formulario.   | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
-|Campo de conjunto de opciones     | Se trata de un tipo de campo especial, que proporciona al usuario un conjunto de opciones predeterminadas. Cada opción tiene un valor numérico y una etiqueta. Cuando se agrega a un formulario, en este campo se muestra un control para que el usuario seleccione una opción.  Hay dos tipos de conjuntos de opciones; los conjuntos de opciones, donde el usuario solo puede seleccionar una opción, y los conjuntos de opciones de selección múltiple, que permiten más de una selección.  | Diseñador de conjuntos de opciones de [!INCLUDE [powerapps](../../includes/powerapps.md)]     |
+|Entidad     |Un artículo con propiedades de las que se realiza un seguimiento, como un contacto o una cuenta. Hay disponibles muchas entidades estándar. Puede personalizar una entidad estándar que no sea del sistema (entidad de producción) o crear una entidad personalizada desde cero.     | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
+|Campo     | Propiedad que está asociada a una entidad. Un campo está definido por un tipo de datos, que determina el tipo de datos que se pueden introducir o seleccionar. Por ejemplo: texto, número, fecha y hora, divisa o búsqueda (crea una relación con otra entidad). Los campos suelen usarse con formularios, vistas y búsquedas.        | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]   |
+|Relación     | Las relaciones de entidades definen cómo se pueden relacionar las entidades entre ellas. Existen los tipos de relaciones: 1: N (uno a varios), N: 1 (varios a uno) y N:N (varios a varios). Por ejemplo, al agregar un campo de búsqueda a una entidad se crea una nueva relación de 1:N entre las dos entidades y le permite colocar ese campo de búsqueda en un formulario.   | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
+|Campo Conjunto de opciones     | Este es un tipo especial de campo, que proporciona al usuario un conjunto de opciones predeterminadas. Cada opción tiene un valor y una etiqueta del número. Cuando se agrega a un formulario, este campo muestra un control para que el usuario pueda seleccionar una opción.  Hay dos tipos de conjuntos de opciones; conjuntos de opciones, donde el usuario solo puede seleccionar una opción y conjuntos de opciones de selección múltiple, que permiten más de una selección.  | Diseñador de conjunto de opciones de [!INCLUDE [powerapps](../../includes/powerapps.md)]     |
 
-Más información: [Definir datos para su aplicación basada en modelos](define-data-model-driven-app.md) 
+Más información: [Definir datos para su aplicación controlada por modelos](define-data-model-driven-app.md) 
 
-## <a name="ui"></a>Interfaz de usuario
+## <a name="ui"></a>IU
 Estos componentes determinan cómo interactúan los usuarios con la aplicación. 
 
 |Componente  |Descripción  |Diseñador  |
 |---------|---------|---------|
-|App     | Determina los elementos fundamentales de la aplicación, como los componentes, las propiedades, el tipo de cliente y la dirección URL de la aplicación.      | Diseñador de aplicaciones   |
-|Mapa del sitio     | Especifica la navegación de la aplicación.        | Diseñador de mapa del sitio        |
-|Formulario     | Un conjunto de campos de entrada de datos para una entidad determinada que coincide con los elementos de los que la organización realiza el seguimiento para la entidad. Por ejemplo, un conjunto de campos de entrada de datos donde los usuarios introducen la información pertinente para realizar el seguimiento de los pedidos anteriores de un cliente junto con las fechas específicas de la solicitud de los nuevos pedidos.        | Diseñador de formularios        |
-|Ver     | Las vistas definen cómo se muestra una lista de registros para una entidad específica en la aplicación. Una vista define las columnas para mostrar, el ancho de cada columna, el comportamiento de ordenación y los filtros predeterminados.   |  Diseñador de vistas       |
+|Aplicación     | Determina aspectos básicos de la aplicación como componentes, propiedades, tipo de cliente y dirección URL.      | Diseñador de aplicaciones   |
+|Mapa del sitio     | Especifica la navegación para su aplicación.        | Diseñador del mapa del sitio        |
+|Formulario     | Conjunto de campos de entrada de datos de una entidad dada que coincide con los elementos de los que su organización realiza un seguimiento para la entidad. Por ejemplo, un conjunto de campos de entrada de datos que realizan un seguimiento de los pedidos anteriores de un cliente junto con las fechas de nuevo pedido específicas solicitadas.        | Diseñador de formularios        |
+|Vista     | Las vistas definen cómo se muestra una lista de registros para una entidad específica en la aplicación. Una vista define las columnas para mostrar, el ancho de cada columna, el comportamiento de ordenación y los filtros predeterminados.   |  Diseñador de vistas       |
 
 ![Diseñador de aplicaciones y diseñador de formularios](media/model-driven-app-overview/app-and-form-designers.png)
 
 ## <a name="logic"></a>Lógica
-Determina los procesos de negocio, las reglas y la automatización que va a tener la aplicación. Los creadores de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan un diseñador que es específico del tipo de proceso o regla. 
+Determina los procesos de negocio, reglas y automatización que la aplicación tendrá. Los creadores de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan un diseñador que es específico al tipo de proceso o de regla. 
 
 
 |Tipo de lógica  |Descripción  |Diseñador  |
 |---------|---------|---------|
-|Flujo de proceso de negocio     | Un proceso en línea que guía a los usuarios a través de un proceso de negocio estándar. Por ejemplo, se puede usar un flujo de proceso de negocio si quiere que todos los usuarios controlen las solicitudes de servicio de cliente del mismo modo, o bien para requerir que el personal obtenga la aprobación de una factura antes de enviar un pedido.        | Diseñador de flujos de proceso de negocio        |
-|Flujo de trabajo     |  Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Los diseñadores usan los flujos de trabajo para iniciar la automatización que no requiere la intervención del usuario.       | Diseñador de flujos de trabajo        |
-|Acciones    |  Las acciones son un tipo de proceso que permite invocar acciones manualmente, incluidas las acciones personalizadas, directamente desde un flujo de trabajo.       |  Diseñador de procesos       |
-|Regla de negocio     | Se usa para aplicar la lógica de reglas o recomendaciones a un formulario, por ejemplo para establecer requisitos de campo, ocultar campos o validar datos. Los diseñadores de aplicaciones usan una interfaz sencilla para implementar y mantener reglas que cambian con rapidez y son de uso frecuente.         |  Diseñador de reglas de negocio       |
-|Flujo     | Flow es un servicio basado en la nube que permite crear flujos de trabajo automatizados entre aplicaciones y servicios para obtener notificaciones, sincronizar archivos, recopilar datos y mucho más.        | Microsoft Flow        |
+|Flujo de proceso de negocio     | Proceso en línea que guía a los usuarios a través de un proceso de negocio estándar. Por ejemplo, use un proceso de negocio si desea que todo el mundo administre las solicitudes de servicio al cliente de la misma forma, o para requerir que el personal obtenga aprobación para una factura antes de enviar un pedido.        | Diseñador de flujos de proceso de negocio        |
+|Flujo de trabajo     |  Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Los diseñadores usan flujos de trabajo para iniciar tareas de automatización que no requieren ninguna interacción del usuario.       | Diseñador de flujos de trabajo        |
+|Acciones    |  Las acciones son un tipo de proceso que le permiten invocar acciones manualmente, incluidas acciones personalizadas, directamente desde un flujo de trabajo.       |  Diseñador de procesos       |
+|Regla de negocio     | Se usa para aplicar lógica de reglas o de recomendación a un formulario, por ejemplo, para establecer los requisitos de campo, ocultar campos o validar datos. Los diseñadores de aplicaciones usan una interfaz básica para implementar y mantener reglas de evolución rápida y de uso general.         |  Diseñador de reglas de negocio       |
+|Flujo     | Un flujo es un servicio basado en la nube que le permite crear flujos de trabajo automáticos entre aplicaciones y servicios para obtener notificaciones, sincronizar archivos, recopilar datos, etc.        | Microsoft Flow        |
 
 ![Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio](media/model-driven-app-overview/designer-mash.png)
 
-Más información: [Aplicar lógica de negocios a su aplicación basada en modelos](guide-staff-through-common-tasks-processes.md)
+Más información: [Aplicar lógica de negocios a su aplicación controlada por modelos](guide-staff-through-common-tasks-processes.md)
 
 ## <a name="visualizations"></a>Visualizaciones
-Determina qué tipo de visualizaciones de datos e informes estarán disponibles para la aplicación.
+Determina qué tipo de visualizaciones y de creación de informes tendrá disponible la aplicación.
 
 
 |Componente  |Descripción  |Diseñador  |
 |---------|---------|---------|
-|Gráfico     | Una sola visualización gráfica que se puede mostrar dentro de una vista, en un formulario o se puede agregar a un panel.        | Diseñador de gráficos        |
-|Panel     | Funciona como una paleta para una o más visualizaciones gráficas que proporcionan una visión general de los datos de negocio que requieren acción.        | Diseñador de paneles        |
-|Embedded Power BI     | Agregue iconos y paneles de Embedded Power BI a la aplicación. Power BI es un servicio basado en la nube que proporciona información de inteligencia empresarial.        |  Combinación del diseñador de gráficos, el diseñador de paneles y Power BI       |
+|Gráfico     | Una única visualización gráfica que puede mostrarse en una vista, en un formulario o bien agregar a un panel.        | Diseñador de gráficos        |
+|Panel     | Funciona como una preferencia para una o varias visualizaciones gráficas que proporcionan una visión general de los datos profesionales en los que se puede actuar.        | Diseñador de paneles        |
+|Power BI incrustado     | Agregue ventanas y paneles de Power BI incrustado a la aplicación. Power BI es un servicio basado en la nube que ofrece información detallada de inteligencia empresarial.        |  Combinación de diseñador de gráficos, diseñador de paneles y Power BI       |
 
 ![Panel de ejemplo](media/model-driven-app-overview/dashboard-designer.png)
 
-## <a name="advanced-model-driven-app-making"></a>Creación de aplicaciones controladas por modelos avanzadas
-El Explorador de soluciones es una herramienta completa que se usa para la compilación de aplicaciones controladas por modelos avanzadas. En el Explorador de soluciones se puede navegar a través de una jerarquía formada por todos los componentes de aplicación mediante el panel de navegación del lado izquierdo de la herramienta.
+## <a name="advanced-model-driven-app-making"></a>Creación avanzada de aplicaciones controladas por modelos
+El explorador de soluciones es una herramienta completa que se usa para la creación avanzada de aplicaciones controladas por modelos. En el explorador de soluciones puede navegar por una jerarquía formada por todos los componentes de las aplicaciones usando el panel de navegación que hay a la izquierda de la herramienta.
 
 ![Explorador de soluciones](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
 
-Para abrir el Explorador de soluciones, haga clic en **Basado en modelos** en el panel izquierdo de [!INCLUDE [powerapps](../../includes/powerapps.md)].
+Para abrir el explorador de soluciones, seleccione **Controlado por modelos** en el panel izquierdo de [!INCLUDE [powerapps](../../includes/powerapps.md)].
 
-  ![Seleccionar Basado en modelos](media/model-driven-app-overview/app-type-picker-mod.png)
+  ![Seleccione Controlado por modelos](media/model-driven-app-overview/app-type-picker-mod.png)
 
-Después, haga clic en la pestaña **Opciones avanzadas**.
+A continuación, seleccione la pestaña **Avanzada**.
 
 Más información: [Creación y personalización avanzadas de aplicaciones](advanced-navigation.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Validar y publicar una aplicación basada en modelos](validate-app.md)
+[Validar y publicar una aplicación controlada por modelos](validate-app.md)
 
-[Compartir su aplicación basada en modelos](share-model-driven-app.md)
+[Compartir su aplicación controlada por modelos](share-model-driven-app.md)

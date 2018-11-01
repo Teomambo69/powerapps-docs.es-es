@@ -1,6 +1,6 @@
 ---
-title: Crear lógica de negocios personalizada con flujos | Microsoft Docs
-description: Obtenga información sobre los distintos tipos de lógica de negocios que puede usar en la aplicación.
+title: Crear lógica de negocios personalizada mediante flujos con Flow | MicrosoftDocs
+description: Obtenga información sobre los diferentes tipos de lógica de negocios que puede usar en su aplicación
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
@@ -9,20 +9,19 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 ms.assetid: 0b4e6602-5701-4859-81cc-6f6fe50901b2
 caps.latest.revision: 44
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: 3e8d40bab864d521ff6fe4091c807181059dc627
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39699022"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
 # <a name="create-custom-business-logic-with-flows"></a>Crear lógica de negocios personalizada con flujos
 
@@ -36,9 +35,9 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
   
 -   Flujos programados. Cree un flujo que realizará una o varias tareas en un programa como una vez al día, en una fecha específica, o después de una determinada hora. Más información: [Ejecutar flujos en un programa](/flow/run-scheduled-tasks)
   
--   Flujos de proceso de negocio.  Asegúrese de que los usuarios especifiquen datos de manera coherente y de que siguen los mismos pasos cada vez que trabajan con una aplicación mediante la creación de un flujo de proceso de negocio. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview)
+-   Flujos de proceso de negocio.  Asegúrese de que los usuarios especifiquen datos de manera coherente y siguen los mismos pasos cada vez que trabajan con una aplicación mediante la creación de un flujo de proceso de negocio. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview)
 
--   Common Data Service para aplicaciones. Es posible que los personalizadores de Dynamics 365 Customer Engagement conozcan los procesos clásicos de Common Data Service para aplicaciones, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
+-   Common Data Service for Apps. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de Common Data Service for Apps, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
   
 ## <a name="see-also"></a>Vea también  
-[Tutorial: Creación de recomendaciones y reglas de negocio para aplicar lógica en un formulario de aplicaciones controladas por modelos](create-business-rules-recommendations-apply-logic-form.md)
+[Tutorial: Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos](create-business-rules-recommendations-apply-logic-form.md)

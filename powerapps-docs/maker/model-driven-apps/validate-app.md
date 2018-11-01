@@ -1,80 +1,80 @@
 ---
-title: Validación y publicación de una aplicación basada en modelos mediante el diseñador de aplicaciones | Microsoft Docs
-description: Aprenda a validar y publicar una aplicación basada en modelos.
+title: Validación y publicación de una aplicación basada en modelos mediante el diseñador de aplicaciones | MicrosoftDocs
+description: Aprenda cómo validar y publicar una aplicación basada en modelos
 keywords: ''
 ms.date: 06/08/2018
 ms.service: crm-online
-ms.custom: ''
+ms.custom: null
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 5a9ec120-9ddc-4d92-b48c-0fee8c57d3c3
 ms.author: matp
 manager: kvivek
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.reviewer: null
+ms.suite: null
+ms.tgt_pltfrm: null
 caps.latest.revision: 10
 topic-status: Drafting
-ms.openlocfilehash: e3802ef423e7012974c24311c36b78cd56f8ed06
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39701821"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Validación y publicación de una aplicación basada en modelos mediante el diseñador de aplicaciones
 
-Valide una aplicación para buscar dependencias de recursos que son necesarias para que funcione la aplicación, pero que aún no se han agregado a ella. Después de una validación correcta, publicará la aplicación. 
+# <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Validar y publicar una aplicación controlada por modelos usando el diseñador de aplicaciones
+
+Validar una aplicación para comprobar dependencias de activos que se requieren para que funcione la aplicación, pero que aún no se han agregado a la aplicación. Después de una validación correcta, publique la aplicación. 
   
-Por ejemplo, ha agregado un Panel de rendimiento de servicio al cliente a la aplicación, que usa gráficos como Combinación de casos (por prioridad) o Tendencia de resolución de casos (por día) que aún no ha agregado. Cuando se valide esta aplicación, obtendrá una lista de todos los recursos necesarios que faltan.  
+Por ejemplo, ha agregado un Panel del rendimiento del servicio al cliente a la aplicación, que usa gráficos como Combinación de casos (por prioridad) o Tendencia de resolución de caso (por día) que no ha agregado. Cuando se valida esta aplicación, recibirá una lista de todos los activos necesarios que faltan.  
   
-Al validar la aplicación, el lienzo del diseñador de aplicaciones muestra los detalles acerca de los recursos que faltan.  
+Cuando se valida la aplicación, el lienzo del diseñador de la aplicación le muestra los detalles acerca de los activos que faltan.  
   
-1.  En el diseñador de aplicaciones, seleccione **Validar**.  
+1.  En el diseñador de la aplicaciones, seleccione **Validar**.  
   
-     Aparece una barra de notificación que muestra si la aplicación tiene errores o advertencias. En la barra de notificación se muestran advertencias en casos donde, por ejemplo, una entidad no tenga ningún formulario o vista, o la aplicación no contenga ningún componente. Si no hay un mapa del sitio configurado para la aplicación, puede aparecer un error. Puede publicar una aplicación sin solucionar las advertencias, pero es necesario corregir los errores antes de publicarla.  
+     Una barra de notificación aparece y muestra si la aplicación tiene algún error o advertencias. La barra de notificación muestra advertencias en casos donde, por ejemplo, una entidad no tiene ningún formulario ni vista, o la aplicación no tiene ningún componente. Un error podría producirse si un mapa del sitio no está configurado para la aplicación. Puede publicar una aplicación sin abordar las advertencias, pero debe solucionar los errores para poder publicarla.  
   
-     ![Barra de notificación que muestra las advertencias de la aplicación](media/app-designer-warning-notification.png "Notification bar showing warnings in the app")  
+     ![Barra de notificaciones con advertencias en la aplicación](media/app-designer-warning-notification.png "Barra de notificaciones con advertencias en la aplicación")  
   
-     El diseñador de aplicaciones también muestra un símbolo de advertencia con el número de dependencias en cada icono de artefacto o recurso al que le falta un recurso necesario.  
+     El diseñador de la aplicación también muestra un símbolo de advertencia con el número de dependencias en cada ventana de anomalía o activo donde falta un activo necesario.  
   
-     ![Advertencia de falta de componente en el icono del diseñador de aplicaciones](media/warning--button-on-app-designer-tile.png "Missing component warning on the app designer tile")  
+     ![Advertencia de componente que falta en la ventana del diseñador de la aplicación](media/warning--button-on-app-designer-tile.png "Advertencia de componente que falta en la ventana del diseñador de la aplicación")  
   
-2.  Para agregar los recursos necesarios, seleccione la pestaña **Requerido** en el lado derecho del lienzo. La pestaña **Requerido** está visible cuando al menos un recurso requerido falta en la aplicación.  
+2.  Para agregar los activos necesarios, seleccione la pestaña **Necesario** en el lado derecho del lienzo. La pestaña **Necesario** está visible cuando falta al menos un activo necesario en la aplicación.  
   
-     La pestaña muestra una lista de los componentes necesarios.  
+     La pestaña muestra una lista de componentes requeridos.  
   
-     ![Pestaña Requerido que muestra una lista de componentes que faltan en la aplicación](media/app-designer-required-components-tab.png "Required tab showing a list of missing components in the app")  
+     ![Pestaña Requerido que muestra una lista de componentes que faltan en la aplicación](media/app-designer-required-components-tab.png "Pestaña Requerido que muestra una lista de componentes que faltan en la aplicación")  
   
-3.  Seleccione los recursos que quiere agregar y, a continuación, seleccione **Agregar dependencias**. Cuando se agrega un recurso necesario, disminuye el número en el icono al que se ha agregado el recurso.  
+3.  Seleccione los activos que desea agregar y luego seleccione **Agregar dependencias**. Cuando se agrega un activo requerido, el recuento en la ventana a la que se ha agregado el activo disminuye.  
   
     > [!NOTE]
-    >  Si un recurso común se requiere en varios componentes de aplicación, por ejemplo, se requiere un formulario para un panel y una entidad y agrega ese recurso solo una vez desde el árbol de dependencias del panel, el número de dependencias disminuye solo en el icono de panel, pero no en el icono de entidad. Sin embargo, la dependencia se resolverá para ambos.  
+    >  Si hay un activo necesario común entre los distintos componentes de la aplicación, por ejemplo, se requiere un formulario para un panel y una entidad, y agrega ese activo solo una vez desde el árbol de dependencia del panel, el recuento de dependencias disminuirá solo en la ventana del panel, pero no en la ventana de la entidad. Sin embargo, la dependencia se resolverá para ambas.  
     >   
-    >  Seleccione **Get Latest Dependencies** (Obtener últimas dependencias) ![botón Get Latest Dependencies (Obtener últimas dependencias) en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Get Latest Dependencies button in the app designer") o seleccione de nuevo **Validar** para obtener el último conjunto de dependencias. Solo verá estos botones después de guardar la aplicación.  
+    >  Seleccione el botón **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de aplicaciones") o seleccione de nuevo **Validar** para obtener el último conjunto de dependencias. Verá solo estos botones después de guardar la aplicación.  
   
-     Seleccione **Ocultar dependencias** si no quiere agregar los componentes necesarios sugeridos. Cualquier advertencia sin resolver volverá a aparecer cuando abra la aplicación en el diseñador de aplicaciones y seleccione **Validar** o **Get Latest Dependencies** (Obtener las últimas dependencias) ![botón Get Latest Dependencies (Obtener las últimas dependencias) del diseñador de aplicaciones ](media/app-designer-get-latest-dependencies.png "Get Latest Dependencies button in the app designer").  
+     Seleccione **Ocultar dependencias** si no desea agregar componentes necesarios recomendados. Las advertencias sin resolver aparecerán otra vez cuando abre la aplicación, en el diseñador de la aplicación y selecciona **Validar** u **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de aplicaciones").  
   
     > [!NOTE]
-    >  Si oculta las dependencias ahora y quiere exportar esta aplicación más adelante, todas estas dependencias aparecerán de nuevo.  
+    >  Si ahora oculta dependencias y desea exportar esta aplicación más adelante, volverán a aparecer todas estas dependencias.  
   
-## <a name="publish-an-app-using-the-app-designer"></a>Publicación de una aplicación mediante el diseñador de aplicaciones
+## <a name="publish-an-app-using-the-app-designer"></a>Publicar una aplicación usando el diseñador de aplicaciones
 
 Publique una aplicación para que esté disponible para los usuarios.  
   
- Cuando haya agregado componentes, y haya validado y guardado la aplicación, seleccione **Publicar** en la barra de comandos. También puede publicar la aplicación desde el icono de la aplicación en la página [Mis aplicaciones](advanced-navigation.md#my-apps). En la vista **Aplicaciones que se están editando**, en la esquina inferior derecha del icono de la aplicación que quiere publicar, seleccione el botón **Más opciones** (**...**) y, luego, seleccione **Publicar**.  
+ Tras agregar componentes, validar y guardar la aplicación, en la barra de comandos, seleccione **Publicar**. También puede publicar la aplicación desde la ventana de la aplicación en la página [Mis aplicaciones](advanced-navigation.md#my-apps). En la vista **Aplicaciones que se están editando**, en la esquina inferior derecha de la ventana de la aplicación que desee publicar, seleccione el botón **Más opciones** (**...**) y después seleccione **Publicar**.  
   
- El estado de la aplicación cambia a Publicado. Puede verlo en la esquina superior derecha del diseñador de aplicaciones. La aplicación se mueve desde la vista **Aplicaciones que se están editando** hasta la vista **Aplicaciones publicadas**, y la fecha de publicación se muestra en el icono de la aplicación.  
+ El estado de la aplicación cambia a Publicado. Puede verlo en la esquina superior derecha del diseñador de aplicaciones. La aplicación cambia de la vista **Aplicaciones que se están editando** a la vista **Aplicaciones publicadas**, y la fecha publicada se muestra en la ventana de la aplicación.  
   
 > [!NOTE]
-> - Si la aplicación tiene un error de validación, verá el error en una barra de notificación. No podrá publicar la aplicación hasta que se resuelva el error.  
-> - No se puede publicar una aplicación hasta que se guarde.  
+> - Si su aplicación tiene un error de validación, se mostrará el error en una barra de notificación. No podrá publicar la aplicación hasta que se resuelva el error.  
+> - No puede publicar una aplicación hasta que la guarde.  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 [Compartir una aplicación controlada por modelos con PowerApps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
- [Ejecución de una aplicación controlada por modelos en un dispositivo móvil](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
+ [Ejecutar una aplicación controlada por modelos en un dispositivo móvil](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  
