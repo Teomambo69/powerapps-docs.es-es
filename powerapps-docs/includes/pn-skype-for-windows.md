@@ -1,0 +1,1 @@
+Skype para Windows

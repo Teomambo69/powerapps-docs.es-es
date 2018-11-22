@@ -1,0 +1,1 @@
+Devuelve un objeto de comportamiento de navegación para una fase que se puede usar para definir si los usuarios pueden emplear el botón **Crear** para crear otro registro de entidad en un escenario de navegación de flujo de proceso de negocio entre entidades.

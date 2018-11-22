@@ -1,0 +1,1 @@
+Devuelve el estado actual de la instancia de proceso.

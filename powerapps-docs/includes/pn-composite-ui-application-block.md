@@ -1,0 +1,1 @@
+Bloque de aplicaciones de UI compuesto

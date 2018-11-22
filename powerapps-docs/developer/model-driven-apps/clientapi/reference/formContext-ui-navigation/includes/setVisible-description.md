@@ -1,0 +1,1 @@
+Establece un valor que indica si el elemento está visible.

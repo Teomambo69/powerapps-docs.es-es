@@ -1,0 +1,1 @@
+Devuelve el nombre lógico para el registro en la fila.

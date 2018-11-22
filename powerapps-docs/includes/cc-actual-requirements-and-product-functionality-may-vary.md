@@ -1,0 +1,1 @@
+Los requisitos y la funcionalidad reales del producto pueden variar en función de la configuración de su sistema y del sistema operativo.

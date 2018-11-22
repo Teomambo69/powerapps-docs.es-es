@@ -1,0 +1,1 @@
+Informes de errores de aplicaciones de Microsoft

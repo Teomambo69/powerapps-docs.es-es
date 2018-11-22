@@ -1,0 +1,1 @@
+Obsoleto. Devuelve [GridEntity](../../gridentity.md) para GridRowData.

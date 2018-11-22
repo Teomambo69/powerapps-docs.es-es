@@ -1,0 +1,1 @@
+Devuelve una colección de fases del proceso.

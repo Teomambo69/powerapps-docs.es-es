@@ -1,0 +1,1 @@
+Muestra u oculta el control de procesos de negocio.

@@ -1,0 +1,1 @@
+Devuelve un objeto con un método **getValue** que devuelve el valor entero de la categoría del flujo de proceso de negocio.

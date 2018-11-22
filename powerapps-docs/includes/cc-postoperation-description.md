@@ -1,0 +1,1 @@
+Se produce después de la operación del sistema principal y dentro de la transacción de la base de datos.<br /><br />Use esta fase para modificar cualquier propiedad del mensaje antes de que se devuelva al autor de la llamada.<br /><br />Evite aplicar cambios en una entidad incluida en el mensaje porque esto desencadenará a un nuevo evento Actualizar.

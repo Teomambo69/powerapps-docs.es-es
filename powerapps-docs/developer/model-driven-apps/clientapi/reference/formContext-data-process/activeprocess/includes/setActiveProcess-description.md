@@ -1,0 +1,1 @@
+Define una **Proceso** como proceso activo.

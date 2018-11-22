@@ -1,0 +1,1 @@
+Define el estado de visualización de la pestaña.

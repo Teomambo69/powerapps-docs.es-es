@@ -1,0 +1,3 @@
+Cuando los usuarios de Dynamics 365 (en línea) imprimen datos de esa aplicación, en realidad "exportan" los datos desde el límite de seguridad que proporciona Dynamics 365 (en línea) a un entorno menos seguro, en este caso, una hoja de papel.  
+  
+ Un administrador tiene control total (en el nivel de rol de seguridad o entidad del usuario) sobre los datos que se pueden extraer. No obstante, después de extraer los datos, estos ya no están protegidos por el límite de seguridad proporcionado por Dynamics 365 (online) y en su lugar los controla directamente el cliente.

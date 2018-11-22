@@ -1,0 +1,1 @@
+Devuelve un valor que indica si el control de vista rápida está visible actualmente.

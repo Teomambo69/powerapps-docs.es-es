@@ -1,0 +1,1 @@
+Con el fin de habilitar escenarios de interacción y análisis, Microsoft Social Engagement se conecta a veces a los servicios de terceros Twitter y Facebook para recuperar contenido social. Cuando se establecen estas conexiones, algunos datos, como su dirección IP, pueden compartirse con esos servicios.

@@ -1,0 +1,1 @@
+Obtiene la fase seleccionada actual.

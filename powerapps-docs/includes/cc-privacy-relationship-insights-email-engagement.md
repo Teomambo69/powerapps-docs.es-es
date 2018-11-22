@@ -1,0 +1,13 @@
+Al habilitar la interacción por correo electrónico (una característica de Inteligencia integrada), cuando un correo marcado con la configuración **Seguir** se envía desde [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], la información sobre interacciones con el correo electrónico por parte de destinatarios se recopilará y almacenará en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] con el fin de calcular los KPI de la actividad de los destinatarios y las interacciones en los correos "seguidos".  
+  
+ Un administrador del sistema habilita la interacción por correo electrónico aprovisionando la característica de la pestaña **Interacción por correo electrónico** dentro de Inteligencia integrada. Los administradores pueden deshabilitar posteriormente la interacción por correo electrónico de la organización desde el nodo **Configuración de inteligencia**, en **Configuración**.  
+  
+ Cuando se deshabilita la característica, los correos electrónicos enviados desde [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] no se pueden seguir desde la interfaz de usuario ni mediante programación. Además, los datos de interacción de los destinatarios dejarán de recopilarse en los correos electrónicos enviados marcados con la configuración **Seguir**. Los datos obtenidos anteriormente permanecerán en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] y estarán disponibles de nuevo si se vuelve a habilitar la característica en la organización. Los datos se retienen durante 90 días después de que los clientes terminen la suscripción con Microsoft. Los usuarios de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] también pueden deshabilitar la funcionalidad Inteligencia integrada - Interacción por correo electrónico, por contacto o por cliente potencial cambiando la configuración **Seguir correo** en **Preferencias de contacto**.  
+  
+ En las secciones siguientes se detallan los componentes y servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] relacionados con la funcionalidad Interacción por correo electrónico.  
+  
+ [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
+  
+ **[!INCLUDE[pn_azure_storage_account](pn-azure-storage-account.md)]**  
+  
+ La funcionalidad interacción por correo electrónico usa [!INCLUDE[pn_azure_storage_account](pn-azure-storage-account.md)] para almacenar temporalmente blobs de interacción de correo electrónico.

@@ -1,0 +1,1 @@
+Elimina una función del evento [OnLoad](../../events/form-onload.md) del formulario.

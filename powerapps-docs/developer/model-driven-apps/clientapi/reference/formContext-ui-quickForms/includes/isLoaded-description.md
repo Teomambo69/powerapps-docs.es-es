@@ -1,0 +1,1 @@
+Devuelve si el enlace de datos para los controles constituyentes de un control de vista rápida está completo.

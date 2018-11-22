@@ -1,0 +1,1 @@
+Consulta integrada del lenguaje .NET (LINQ)

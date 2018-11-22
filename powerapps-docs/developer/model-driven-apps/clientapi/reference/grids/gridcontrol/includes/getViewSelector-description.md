@@ -1,0 +1,1 @@
+Use este método para obtener acceso a los [Métodos ViewSelector](../../viewselector.md) disponibles para el control de cuadrícula.

@@ -1,0 +1,1 @@
+Devuelve el identificador para el registro en la fila.

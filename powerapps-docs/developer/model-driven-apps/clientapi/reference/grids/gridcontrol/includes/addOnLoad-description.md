@@ -1,0 +1,1 @@
+Agrega controladores de eventos al [evento OnLoad de subcuadrícula](../../../events/subgrid-onload.md).

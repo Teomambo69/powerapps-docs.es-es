@@ -1,0 +1,1 @@
+Devuelve un valor que indica si el control del proceso de negocio está visible.

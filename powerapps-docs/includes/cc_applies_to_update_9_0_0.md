@@ -1,0 +1,1 @@
+Se aplica a Dynamics 365 (en línea), versión 9.x

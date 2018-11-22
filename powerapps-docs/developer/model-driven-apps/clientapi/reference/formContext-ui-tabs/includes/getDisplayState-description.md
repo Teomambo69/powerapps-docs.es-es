@@ -1,0 +1,1 @@
+Obtiene el estado de visualización de la pestaña.

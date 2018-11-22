@@ -1,0 +1,1 @@
+Obtiene la dirección URL del control de cuadrícula actual.

@@ -1,0 +1,1 @@
+Recupera una colección de registros de entidad.

@@ -1,0 +1,1 @@
+Este documento no le proporciona ningún derecho legal sobre la propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para fines de referencia interna.

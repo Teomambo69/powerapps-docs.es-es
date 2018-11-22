@@ -1,0 +1,1 @@
+Devuelve un valor que indica cómo ha iniciado el usuario el evento save.

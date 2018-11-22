@@ -1,0 +1,1 @@
+Devuelve una colección de cada [GridRow](../../gridrow.md) de la cuadrícula.

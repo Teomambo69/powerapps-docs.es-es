@@ -1,0 +1,1 @@
+Agrega una función como controlador de eventos del evento [OnStageChange](../../../events/onstagechange.md) de modo que sea llamado cuando cambie la fase del flujo de proceso de negocio.

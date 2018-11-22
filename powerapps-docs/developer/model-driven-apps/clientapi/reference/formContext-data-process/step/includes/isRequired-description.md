@@ -1,0 +1,1 @@
+Devuelve un valor booleano que indica si el paso es obligatorio en el flujo de proceso de negocio.

@@ -1,0 +1,1 @@
+Muestra un cuadro de diálogo de error.

@@ -1,0 +1,1 @@
+Define una instancia de proceso como instancia activa.

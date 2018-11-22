@@ -1,0 +1,1 @@
+Obtiene el tipo de cuadrícula (cuadrícula o subcuadrícula).

@@ -1,0 +1,1 @@
+Agrega una función a la que se debe llamar en el evento [OnLoad](../../events/form-onload.md) del formulario.

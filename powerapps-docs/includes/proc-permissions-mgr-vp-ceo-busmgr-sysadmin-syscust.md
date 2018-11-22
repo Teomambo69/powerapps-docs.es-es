@@ -1,0 +1,1 @@
+Asegúrese de disponer de roles de seguridad de administrador, vicepresidente, director general, administrador del sistema o personalizador del sistema, o los permisos equivalentes.

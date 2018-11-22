@@ -1,0 +1,1 @@
+Devuelve un valor que indica si el evento save se ha cancelado porque el método [preventDefault](../preventDefault.md) se usó en este controlador de eventos o en un controlador de eventos anterior.

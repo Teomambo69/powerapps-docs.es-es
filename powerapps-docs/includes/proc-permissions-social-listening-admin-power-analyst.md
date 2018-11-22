@@ -1,0 +1,1 @@
+Debe ser un administrador o analista avanzado de Social Engagement para realizar esta tarea.

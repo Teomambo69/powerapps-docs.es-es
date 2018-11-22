@@ -1,0 +1,1 @@
+Obtiene el tipo de formulario del registro.

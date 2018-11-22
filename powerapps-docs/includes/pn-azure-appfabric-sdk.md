@@ -1,0 +1,1 @@
+SDK V1.0 de Azure AppFabric

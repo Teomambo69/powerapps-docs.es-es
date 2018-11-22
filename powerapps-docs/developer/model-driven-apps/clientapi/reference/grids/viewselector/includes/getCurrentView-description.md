@@ -1,0 +1,1 @@
+Obtiene una referencia para la vista actual.

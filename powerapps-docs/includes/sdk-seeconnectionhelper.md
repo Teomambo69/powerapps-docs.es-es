@@ -1,0 +1,1 @@
+Para obtener más información sobre los requisitos de ejecución del código de ejemplo que aquí se proporciona, vea [Usar el ejemplo y el código auxiliar](../developer/org-service/use-sample-helper-code.md).

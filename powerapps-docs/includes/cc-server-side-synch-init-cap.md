@@ -1,0 +1,1 @@
+Sincronización del lado del servidor

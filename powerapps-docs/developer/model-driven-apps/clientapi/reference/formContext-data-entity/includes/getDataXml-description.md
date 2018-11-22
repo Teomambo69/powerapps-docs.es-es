@@ -1,0 +1,1 @@
+Devuelve una cadena que representa el XML que se enviará al servidor cuando se guarde el registro. Solo los datos de los campos que han cambiado se establecen en el servidor.

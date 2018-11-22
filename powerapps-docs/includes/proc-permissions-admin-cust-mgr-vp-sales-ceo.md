@@ -1,0 +1,1 @@
+Compruebe que tiene asignado uno de los siguientes roles de seguridad o permisos equivalente: Administrador del sistema, Personalizador del sistema, Jefe de ventas, Vicepresidente de ventas, Vicepresidente de marketing o Director general.

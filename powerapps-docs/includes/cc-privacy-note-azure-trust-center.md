@@ -1,0 +1,1 @@
+**Nota:** para obtener más información sobre otras ofertas de servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], visite el [Centro de confianza de Microsoft Azure](https://azure.microsoft.com/support/trust-center/).

@@ -1,0 +1,1 @@
+**Configuración** aparece en la barra de navegación.

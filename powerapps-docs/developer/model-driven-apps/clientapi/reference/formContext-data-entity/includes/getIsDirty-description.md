@@ -1,0 +1,1 @@
+Obtiene un valor booleano que indica si algunos campos del formulario se han modificado.

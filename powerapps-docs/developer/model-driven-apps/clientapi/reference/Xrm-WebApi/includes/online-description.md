@@ -1,0 +1,1 @@
+Proporciona métodos para usar la API web para crear y administrar registros y ejecutar funciones y acciones de la API web en aplicaciones basadas en modelos cuando se establece conexión con el servidor de aplicaciones basadas en modelos (modo en línea). 

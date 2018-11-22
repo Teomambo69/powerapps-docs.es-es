@@ -1,0 +1,1 @@
+Para obtener la herramienta de registro de complementos, consulte [Descargar herramientas de NuGet](../developer/common-data-service/download-tools-nuget.md).

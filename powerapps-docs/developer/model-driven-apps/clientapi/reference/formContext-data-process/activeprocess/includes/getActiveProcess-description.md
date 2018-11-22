@@ -1,0 +1,1 @@
+Devuelve un objeto de **Proceso** que representa el proceso activo.

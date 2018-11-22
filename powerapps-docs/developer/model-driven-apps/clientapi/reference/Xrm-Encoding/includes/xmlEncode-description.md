@@ -1,0 +1,1 @@
+Convierte una cadena en una cadena codificada en XML.

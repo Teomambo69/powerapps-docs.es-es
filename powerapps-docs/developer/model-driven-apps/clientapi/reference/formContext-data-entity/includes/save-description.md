@@ -1,0 +1,1 @@
+Guarda el registro sincrónicamente con las opciones de cerrar el formulario o abrir un nuevo formulario después de completar la operación de guardar.

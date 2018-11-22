@@ -1,0 +1,1 @@
+Quita controladores de eventos del [evento OnLoad de subcuadrícula](../../../events/subgrid-onload.md).

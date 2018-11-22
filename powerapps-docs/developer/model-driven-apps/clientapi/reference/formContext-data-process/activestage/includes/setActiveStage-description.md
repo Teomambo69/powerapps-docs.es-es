@@ -1,0 +1,1 @@
+Establece una fase completada como fase activa. 

@@ -1,0 +1,1 @@
+Codifica la cadena especificada para que pueda utilizarse en un atributo XML.

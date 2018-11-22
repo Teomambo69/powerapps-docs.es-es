@@ -1,0 +1,1 @@
+Establece el nombre de la entidad que se mostrará en el formulario.

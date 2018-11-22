@@ -1,0 +1,1 @@
+Obtiene una cadena para el valor del atributo principal de la entidad.

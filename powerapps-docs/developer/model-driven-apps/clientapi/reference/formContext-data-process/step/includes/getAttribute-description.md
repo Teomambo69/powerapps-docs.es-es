@@ -1,0 +1,1 @@
+Devuelve el nombre lógico del atributo asociado al paso.

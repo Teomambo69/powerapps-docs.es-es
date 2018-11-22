@@ -1,0 +1,1 @@
+Actualización 0.2 de Microsoft Dynamics CRM 2015

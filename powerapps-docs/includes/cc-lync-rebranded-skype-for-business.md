@@ -1,0 +1,1 @@
+Ahora, Lync se denomina Skype Empresarial. Actualmente, todavía se pueden ver referencias a “Lync” en Microsoft Dynamics 365, pero Dynamics 365 funcionará con Skype Empresarial.

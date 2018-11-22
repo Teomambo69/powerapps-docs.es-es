@@ -1,0 +1,1 @@
+Para ver los metadatos de las entidades de su organización, instale la solución Explorador de metadatos que se describe en [Exploración de los metadatos de su organización](../developer/browse-your-metadata.md). También puede examinar la documentación de referencia para las entidades en la [Referencia de entidad](../developer/about-entity-reference.md).

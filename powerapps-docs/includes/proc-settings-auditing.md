@@ -1,0 +1,1 @@
+Vaya a **Configuración** > **Auditoría**.

@@ -1,0 +1,1 @@
+Actualiza la cuadrícula.

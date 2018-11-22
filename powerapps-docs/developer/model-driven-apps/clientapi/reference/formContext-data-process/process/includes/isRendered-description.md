@@ -1,0 +1,1 @@
+Devuelve un valor booleano que indica si el proceso se ha representado.

@@ -1,0 +1,2 @@
+Esta característica se introdujo en la actualización de CRM Online 2015 y CRM 2015 (local).   
+ ¿Le interesa obtener esta característica? [Buscar el administrador o la persona de soporte de Dynamics 365.](../basics/find-administrator-support.md)

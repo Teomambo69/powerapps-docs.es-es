@@ -1,0 +1,1 @@
+Recupera un registro de entidad.

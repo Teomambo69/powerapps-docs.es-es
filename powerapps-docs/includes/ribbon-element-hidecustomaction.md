@@ -1,0 +1,1 @@
+Quita un elemento existente de la cinta de opciones para que no se procese para la cinta.

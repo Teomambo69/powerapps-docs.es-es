@@ -1,0 +1,1 @@
+Este documento se proporciona "tal cual". La información y las opiniones expresadas en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, podrían cambiar sin previo aviso.

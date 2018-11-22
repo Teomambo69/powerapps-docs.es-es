@@ -1,0 +1,1 @@
+Si designa a un partner de Microsoft (por ejemplo, al probar o adquirir Microsoft Social Engagement en respuesta a una solicitud u oferta de partner, o al designar a un partner para que ayude en el uso o la administración de Social Engagement), Microsoft pondrá su información a disposición del partner según usted lo indique.

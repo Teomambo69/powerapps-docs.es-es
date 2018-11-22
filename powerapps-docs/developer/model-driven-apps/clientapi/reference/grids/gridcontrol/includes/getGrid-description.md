@@ -1,0 +1,1 @@
+Obtiene acceso a la [Cuadrícula](../../grid.md) disponible en GridControl (gridContext).

@@ -1,0 +1,1 @@
+Agrega una función como controlador de eventos del evento [OnProcessStatusChange](../../../events/onprocessstatuschange.md) de modo que sea llamado cuando cambie el estado del flujo de proceso de negocio.

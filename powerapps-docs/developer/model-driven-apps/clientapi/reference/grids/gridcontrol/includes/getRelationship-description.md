@@ -1,0 +1,1 @@
+Obtiene información sobre la relación que se usa para filtrar lo subcuadrícula.

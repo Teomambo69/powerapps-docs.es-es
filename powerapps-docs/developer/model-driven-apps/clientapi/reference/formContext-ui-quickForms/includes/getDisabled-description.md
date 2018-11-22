@@ -1,0 +1,1 @@
+Obtiene un valor booleano que indica si el control está deshabilitado.

@@ -1,0 +1,1 @@
+Devuelve el nombre del elemento.

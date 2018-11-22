@@ -1,0 +1,1 @@
+Esta característica requiere que tenga una suscripción a Office 365 o una suscripción a un servicio en línea como SharePoint Online o Exchange Online. Para obtener más información, consulte [¿Qué es Office 365 y cómo se relaciona con Dynamics 365 (online)?](https://docs.microsoft.com/dynamics365/customer-engagement/admin/what-office-365-how-does-relate)

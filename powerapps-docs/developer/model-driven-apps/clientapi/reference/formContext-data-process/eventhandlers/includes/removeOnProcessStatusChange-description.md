@@ -1,0 +1,1 @@
+Quita un controlador de eventos del evento [OnProcessStatusChange](../../../events/onprocessstatuschange.md).

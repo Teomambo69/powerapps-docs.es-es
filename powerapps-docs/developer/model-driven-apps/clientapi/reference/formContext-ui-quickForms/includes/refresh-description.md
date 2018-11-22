@@ -1,0 +1,1 @@
+Actualiza los datos visualizados en un control de vista rápida.

@@ -1,0 +1,7 @@
+Microsoft Social Engagement ofrece servicios en línea hospedados disponibles para una gran variedad de clientes y consta de los siguientes componentes de funcionalidad social dentro de la aplicación:  
+  
+**Supervisión de medios sociales**: capacidad para escuchar y supervisar comunicaciones sociales disponibles públicamente en redes administradas y públicas gestionadas por terceros.  
+  
+**Análisis social**: capacidad para identificar, calcular y realizar consultas relacionadas con documentos y mensajes disponibles públicamente.  
+  
+ Tenga en cuenta que Microsoft Social Engagement puede permitir el acceso a servicios de terceros, como Twitter, Facebook, Tumblr, YouTube y blogs, cuyas prácticas de privacidad pueden diferir de las de Social Engagement. Tanto el uso que hacen los usuarios de estos servicios como la información que proporcionan en ellos están regulados por las declaraciones de privacidad específicas de esos servicios. Cuando se establecen estas conexiones, algunos datos, como la consulta de búsqueda utilizada para recuperar contenido social y su dirección IP, pueden compartirse con esos servicios. Se recomienda revisar estas otras declaraciones de privacidad. También se le anima a revisar los términos de Microsoft Online Services.

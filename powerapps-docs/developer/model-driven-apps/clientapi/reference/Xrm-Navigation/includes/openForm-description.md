@@ -1,0 +1,1 @@
+Abre un formulario de entidad o un formulario de creación rápida.

@@ -1,0 +1,1 @@
+Para obtener información actualizada de compatibilidad sobre CRM 2013, consulte [Compatibilidad con Microsoft Dynamics CRM 2013](https://support.microsoft.com/en-us/kb/3005167).

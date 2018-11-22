@@ -1,0 +1,1 @@
+Devuelve el identificador único de la fase.

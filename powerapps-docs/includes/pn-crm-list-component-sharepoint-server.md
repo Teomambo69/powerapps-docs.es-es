@@ -1,0 +1,1 @@
+Componente de lista de Microsoft Dynamics CRM para SharePoint Server

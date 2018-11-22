@@ -1,0 +1,1 @@
+Se produce antes de la operación del sistema principal y dentro de la transacción de la base de datos.<br /><br />Si desea cambiar cualquier valor de una entidad incluida en el mensaje, debe hacerlo aquí.<br /><br />Evite cancelar una operación aquí. La cancelación desencadenará una reversión de la transacción y tendrá una impacto importante en el rendimiento.

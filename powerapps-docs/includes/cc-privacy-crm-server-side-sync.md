@@ -1,0 +1,3 @@
+Si usa Dynamics 365, cuando usa la sincronización del lado servidor, los contactos y actividades de Dynamics 365 (incluidos los correos electrónicos, las citas, los contactos y las tareas) se sincronizan en el sistema de correo electrónico especificado (por ejemplo, Exchange).  
+  
+ Un administrador puede configurar funcionalidad de sincronización del lado del servidor para especificar los usuarios que tienen la posibilidad de enviar mensajes de correo electrónico o citas desde Dynamics 365 o de sincronizar actividades y contactos entre Dynamics 365 y el buzón del usuario. El administrador y los usuarios finales pueden personalizar aún más criterios de filtro, y los administradores pueden incluso definir los campos de entidad que se sincronizan.

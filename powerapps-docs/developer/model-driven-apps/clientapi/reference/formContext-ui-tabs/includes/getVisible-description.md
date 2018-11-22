@@ -1,0 +1,1 @@
+Devuelve un valor que indica si la pestaña está visible actualmente.

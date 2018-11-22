@@ -1,0 +1,1 @@
+Obtiene una colección de fases actualmente en la ruta activa con métodos para interactuar con las fases mostradas en el control de flujo de proceso de negocio.

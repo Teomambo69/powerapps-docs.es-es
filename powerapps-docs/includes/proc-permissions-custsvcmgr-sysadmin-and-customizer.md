@@ -1,0 +1,1 @@
+Compruebe que tiene el rol de seguridad de Administrador del servicio al cliente, Administrador del sistema o Personalizador del sistema o permisos equivalentes.

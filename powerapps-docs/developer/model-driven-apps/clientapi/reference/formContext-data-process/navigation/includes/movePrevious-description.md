@@ -1,0 +1,1 @@
+Retrocede a la fase anterior.

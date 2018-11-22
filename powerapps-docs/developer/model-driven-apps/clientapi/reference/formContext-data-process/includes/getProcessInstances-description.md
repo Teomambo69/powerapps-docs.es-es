@@ -1,0 +1,1 @@
+Devuelve todas las instancias de proceso para el registro de entidad a la que el usuario de la llamada tiene acceso.

@@ -1,0 +1,1 @@
+Devuelve un valor que indica si la sección está visible actualmente.

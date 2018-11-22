@@ -1,0 +1,1 @@
+Establece el estado actual de la instancia de proceso activa.

@@ -1,0 +1,1 @@
+Haga clic en **Guardar y cerrar**.

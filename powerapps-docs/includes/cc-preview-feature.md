@@ -1,0 +1,1 @@
+Para usar esta característica, debe activarla y aceptar los términos de licencia. [¿Qué son características de vista previa y cómo las puedo habilitar?](../admin/what-are-preview-features-how-do-i-enable-them.md).

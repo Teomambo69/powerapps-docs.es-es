@@ -1,0 +1,1 @@
+Devuelve una colección de pasos de la fase.

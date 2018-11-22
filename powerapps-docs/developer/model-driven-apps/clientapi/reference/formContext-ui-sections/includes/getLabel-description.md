@@ -1,0 +1,1 @@
+Devuelve la etiqueta de la sección.

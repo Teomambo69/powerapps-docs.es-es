@@ -1,0 +1,1 @@
+Convierte una cadena codificada en HTML en una cadena descodificada.

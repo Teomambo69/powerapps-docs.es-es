@@ -1,0 +1,1 @@
+Se aplica a PowerApps y Dynamics 365 (en línea), versión 9.x

@@ -1,0 +1,1 @@
+Hace que la cinta de opciones reevalúe los datos que controlan qué se muestra en ella.

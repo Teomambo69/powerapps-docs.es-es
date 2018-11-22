@@ -1,0 +1,1 @@
+Devuelve el objeto [formContext.ui](../../formContext-ui.md) que contiene la pestaña.

@@ -1,0 +1,1 @@
+Actualización de diciembre de 2016 para Dynamics 365 (online y local)

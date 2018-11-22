@@ -1,0 +1,1 @@
+Cancela la operación de guardar, pero seguirán ejecutándose todos los controladores restantes del evento.

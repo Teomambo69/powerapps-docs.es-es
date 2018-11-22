@@ -1,0 +1,1 @@
+Devuelve un valor de búsqueda que hace referencia al registro en la fila.

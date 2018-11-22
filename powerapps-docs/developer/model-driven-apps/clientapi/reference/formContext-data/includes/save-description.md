@@ -1,0 +1,1 @@
+Guarda el registro asincrónicamente con la opción de configurar las funciones de devolución de llamada para que se ejecuten una vez finalizada la operación de guardar.

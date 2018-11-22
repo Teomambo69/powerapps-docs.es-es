@@ -1,0 +1,1 @@
+Seguridad de la capa de transporte (TLS) o Capa de sockets seguros (SSL)

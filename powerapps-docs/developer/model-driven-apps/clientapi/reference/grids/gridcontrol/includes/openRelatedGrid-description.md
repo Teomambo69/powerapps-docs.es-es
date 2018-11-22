@@ -1,0 +1,1 @@
+Muestra la cuadrícula asociada para la cuadrícula. 

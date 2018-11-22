@@ -1,0 +1,1 @@
+Compruebe que tiene el rol de seguridad de Administrador del sistema o permisos equivalentes en Microsoft Dynamics 365.

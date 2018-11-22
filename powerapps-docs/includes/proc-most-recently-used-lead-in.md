@@ -1,0 +1,1 @@
+Es fácil volver a los últimos datos del cliente con los que estaba trabajando.

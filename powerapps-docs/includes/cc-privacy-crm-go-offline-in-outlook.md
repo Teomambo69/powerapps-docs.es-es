@@ -1,0 +1,5 @@
+Si utiliza Microsoft Dynamics 365 para Outlook, cuando se desconecta, se crea una copia de los datos con los que está trabajando y se almacenan en su equipo local. Los datos se transfieren de Dynamics 365 (en línea) a su equipo mediante una conexión segura, y se mantiene un vínculo entre la copia local y Dynamics 365 Online. La próxima vez que inicie sesión en Dynamics 365 (online), los datos locales se sincronizarán con Dynamics 365 (en línea).  
+  
+ Para determinar si los usuarios de una organización tienen permiso o no para desconectarse con Microsoft Dynamics 365 para Outlook, un administrador utiliza roles de seguridad.  
+  
+ Los usuarios y los administradores pueden configurar las entidades que se descargan mediante la sincronización sin conexión utilizando la configuración de **Filtros de sincronización** en el cuadro de diálogo **Opciones**. Como alternativa, los usuarios y los administradores pueden configurar los campos que se descargan (y cargan) mediante **Opciones avanzadas** en el cuadro de diálogo **Filtros de sincronización**.

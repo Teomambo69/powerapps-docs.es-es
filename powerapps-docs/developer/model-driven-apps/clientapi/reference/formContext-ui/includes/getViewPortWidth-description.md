@@ -1,0 +1,1 @@
+ Obtiene el ancho de la ventana gráfica en píxeles.

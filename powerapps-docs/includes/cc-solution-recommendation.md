@@ -1,0 +1,1 @@
+La instalación de una solución o la publicación de personalizaciones puede interferir en el funcionamiento normal del sistema. Le recomendamos que programe la importación de una solución cuando perjudique lo menos posible a los usuarios.

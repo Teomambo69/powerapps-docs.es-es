@@ -1,0 +1,1 @@
+Obtiene la altura de la ventana gráfica en píxeles.

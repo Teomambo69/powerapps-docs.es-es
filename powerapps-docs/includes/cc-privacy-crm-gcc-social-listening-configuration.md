@@ -1,0 +1,1 @@
+Al habilitar Social Engagement, acepta compartir sus datos con un sistema externo. Los datos importados en Microsoft Dynamics 365 (en línea) desde sistemas externos están sujetos a nuestra [Declaración de privacidad de Microsoft](http://go.microsoft.com/fwlink/p/?LinkID=521839).

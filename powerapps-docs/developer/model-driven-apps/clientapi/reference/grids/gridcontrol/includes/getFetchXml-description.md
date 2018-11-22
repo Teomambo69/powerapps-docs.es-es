@@ -1,0 +1,1 @@
+Obtiene la consulta FetchXML que representa los datos actuales, incluidos los datos filtrados y ordenados, en el control de cuadrícula. 

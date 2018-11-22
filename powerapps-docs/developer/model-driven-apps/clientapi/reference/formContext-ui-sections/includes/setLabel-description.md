@@ -1,0 +1,1 @@
+Define la etiqueta de la sección.

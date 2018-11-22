@@ -1,0 +1,1 @@
+Devuelve un objeto de **Fase** que representa la fase activa.

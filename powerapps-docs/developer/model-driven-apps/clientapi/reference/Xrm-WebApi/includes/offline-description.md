@@ -1,0 +1,1 @@
+Proporciona métodos para crear y administrar registros en los clientes móviles de aplicaciones basadas en modelos mientras se trabaja en modo *sin conexión*. 

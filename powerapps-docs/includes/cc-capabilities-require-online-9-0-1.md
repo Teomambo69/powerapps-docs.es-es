@@ -1,0 +1,1 @@
+Las capacidades de esta solución requieren [!INCLUDE [pn-crm-9-0-1-online](../includes/pn-crm-9-0-1-online.md)].

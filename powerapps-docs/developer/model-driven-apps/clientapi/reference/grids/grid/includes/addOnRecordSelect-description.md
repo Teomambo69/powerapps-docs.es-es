@@ -1,0 +1,1 @@
+Agrega una función para que se ejecute cuando el usuario seleccione un registro (fila) en la cuadrícula.

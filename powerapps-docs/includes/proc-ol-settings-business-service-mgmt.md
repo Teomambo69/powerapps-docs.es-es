@@ -1,0 +1,1 @@
+En el Panel de navegación, elija **Configuración** > **Empresa** > **Administración de servicios**.

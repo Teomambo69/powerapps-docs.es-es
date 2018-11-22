@@ -1,0 +1,1 @@
+Especifica una regla que detecta el tipo de formulario de Microsoft Dynamics 365.

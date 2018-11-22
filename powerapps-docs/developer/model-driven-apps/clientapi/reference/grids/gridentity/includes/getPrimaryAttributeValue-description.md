@@ -1,0 +1,1 @@
+Devuelve el valor del atributo principal del registro de la fila.

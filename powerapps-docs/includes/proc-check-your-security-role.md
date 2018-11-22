@@ -1,0 +1,1 @@
+Siga los pasos de la sección [Visualización del perfil de usuario](../basics/view-your-user-profile.md).

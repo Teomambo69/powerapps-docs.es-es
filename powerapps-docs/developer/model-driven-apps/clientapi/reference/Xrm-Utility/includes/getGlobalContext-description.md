@@ -1,0 +1,4 @@
+Obtiene el contexto global. 
+
+
+

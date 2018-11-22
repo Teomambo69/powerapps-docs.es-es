@@ -1,0 +1,1 @@
+Devuelve una cadena que representa el valor de GUID del registro.

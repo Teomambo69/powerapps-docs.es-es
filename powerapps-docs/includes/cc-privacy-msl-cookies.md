@@ -1,0 +1,2 @@
+Microsoft Social Engagement usa cookies de sesión para permitir que los usuarios se muevan entre las páginas del sitio sin necesidad de volver a iniciar sesión en cada página. Por indicación del usuario, podemos usar cookies para almacenar credenciales y, así, simplificar la autenticación para futuras sesiones.   
+ Las cookies de sesión son fundamentales para el funcionamiento de Microsoft Social Engagement. Por lo tanto, no es posible optar por no recibir estas cookies. Sin embargo, las cookies de inicio de sesión solo se almacenan tras la solicitud del usuario.

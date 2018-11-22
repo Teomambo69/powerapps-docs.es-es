@@ -1,0 +1,1 @@
+Almacén de claves de Azure

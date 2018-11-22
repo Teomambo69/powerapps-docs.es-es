@@ -1,0 +1,1 @@
+Especifica un valor con un tipo de datos decimal que puede pasarse como parámetro.

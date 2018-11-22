@@ -1,0 +1,1 @@
+Especifica una regla que detecta el tipo de presentación que se usa.

@@ -1,0 +1,1 @@
+Define una acción para agregar o sustituir elementos de la cinta de opciones.

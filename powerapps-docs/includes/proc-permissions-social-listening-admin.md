@@ -1,0 +1,1 @@
+Debe ser un administrador de Social Engagement para realizar esta tarea.

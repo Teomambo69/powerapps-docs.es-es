@@ -1,0 +1,1 @@
+Service Pack de diciembre de 2016 para Dynamics 365 (local)

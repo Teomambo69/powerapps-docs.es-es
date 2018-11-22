@@ -1,0 +1,1 @@
+Haga clic en **Centros de administración** > **Dynamics 365**.

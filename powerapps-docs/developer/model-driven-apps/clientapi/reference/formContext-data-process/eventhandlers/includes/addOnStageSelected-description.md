@@ -1,0 +1,1 @@
+Agrega una función como controlador de eventos del evento [OnStageSelected](../../../events/onstageselected.md) de modo que sea llamado cuando se seleccione una fase del flujo de proceso de negocio.

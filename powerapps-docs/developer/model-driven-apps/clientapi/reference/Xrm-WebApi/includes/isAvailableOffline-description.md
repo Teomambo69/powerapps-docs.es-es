@@ -1,0 +1,1 @@
+Devuelve un valor booleano que indica si una entidad está presente en el perfil del usuario y está disponible actualmente para su uso en modo sin conexión.

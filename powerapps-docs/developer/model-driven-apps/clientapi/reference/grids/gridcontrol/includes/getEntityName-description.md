@@ -1,0 +1,1 @@
+Obtiene el nombre lógico de los datos de entidad que se muestran en la cuadrícula.

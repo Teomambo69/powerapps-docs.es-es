@@ -1,0 +1,1 @@
+Obsoleto. Devuelve [GridRowData](../../gridrowdata.md) para GridRow.

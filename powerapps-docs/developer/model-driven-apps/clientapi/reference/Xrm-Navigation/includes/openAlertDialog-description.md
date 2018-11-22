@@ -1,0 +1,1 @@
+Muestra un cuadro de diálogo de alerta que contiene un mensaje y un botón.

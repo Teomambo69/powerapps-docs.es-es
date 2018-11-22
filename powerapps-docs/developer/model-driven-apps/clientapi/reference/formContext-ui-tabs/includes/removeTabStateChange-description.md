@@ -1,0 +1,2 @@
+Elimina una función a la que se debe llamar cuando se produce el evento [TabStateChange](../../events/tabstatechange.md).
+

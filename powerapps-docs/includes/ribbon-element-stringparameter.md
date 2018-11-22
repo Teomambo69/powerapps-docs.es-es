@@ -1,0 +1,1 @@
+Especifica un valor con un tipo de datos de cadena que puede pasarse como parámetro.

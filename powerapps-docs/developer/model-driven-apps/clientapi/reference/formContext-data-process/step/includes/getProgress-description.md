@@ -1,0 +1,1 @@
+Devuelve el progreso del paso de acción.

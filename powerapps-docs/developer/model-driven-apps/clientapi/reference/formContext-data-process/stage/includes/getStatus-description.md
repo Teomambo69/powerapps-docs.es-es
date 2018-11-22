@@ -1,0 +1,1 @@
+Devuelve el estado de la fase.

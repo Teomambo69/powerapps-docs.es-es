@@ -1,0 +1,1 @@
+Navegue hasta el [Centro de administración de Office 365](https://portal.office.com) e inicie sesión mediante las credenciales de administrador global de Office 365.

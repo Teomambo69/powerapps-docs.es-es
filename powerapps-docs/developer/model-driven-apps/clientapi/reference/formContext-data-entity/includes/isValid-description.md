@@ -1,0 +1,1 @@
+Obtiene un valor booleano que indica si todos los datos de la entidad son válidos.

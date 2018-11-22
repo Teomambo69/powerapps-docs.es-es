@@ -1,0 +1,1 @@
+Define el estado de visualización del control de procesos de negocio.

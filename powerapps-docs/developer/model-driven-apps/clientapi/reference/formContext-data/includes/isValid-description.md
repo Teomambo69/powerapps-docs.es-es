@@ -1,0 +1,1 @@
+Obtiene un valor booleano que indica si todos los datos del formulario son válidos. Esto incluye la entidad principal y los atributos independientes.

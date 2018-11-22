@@ -1,0 +1,1 @@
+Los usuarios que inician sesión localmente en un dispositivo que tiene instalado Microsoft Dynamics 365 for Outlook pueden acceder a los datos de Dynamics 365 almacenados localmente. No se admite el uso compartido de un dispositivo que ejecuta Dynamics 365 for Outlook.

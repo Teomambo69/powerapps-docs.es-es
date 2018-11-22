@@ -1,0 +1,1 @@
+Los valores de identificadores de configuración regional válidos pueden encontrarse en el [gráfico de identificadores de configuración regional (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128).
