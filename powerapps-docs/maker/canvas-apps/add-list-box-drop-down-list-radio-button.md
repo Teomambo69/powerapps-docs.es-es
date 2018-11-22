@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 11/22/2018
 ms.locfileid: "49991755"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Adición de un cuadro de lista, una lista desplegable o botones de selección a una aplicación de lienzo
