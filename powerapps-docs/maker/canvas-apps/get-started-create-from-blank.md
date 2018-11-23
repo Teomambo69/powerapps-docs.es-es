@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316916"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "51334005"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Crear una aplicación de lienzo desde cero a partir de datos de Excel
 
@@ -242,6 +242,8 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 1. Cierre el modo de vista previa presionando Esc (o seleccionando el icono de cerrar de la esquina superior derecha).
 
 ## <a name="next-steps"></a>Pasos siguientes
-* Presione Ctrl-S para guardar la aplicación en la nube para que se pueda ejecutar desde otros dispositivos.
-* [Comparta la aplicación](share-app.md) para que otras personas puedan ejecutarla.
-* Obtenga más información sobre [funciones](working-with-formulas.md) como **Revisión**, que puede usar para administrar los datos sin necesidad de crear un formulario estándar.
+
+- Presione Ctrl-S para guardar la aplicación en la nube para que se pueda ejecutar desde otros dispositivos.
+- [Comparta la aplicación](share-app.md) para que otras personas puedan ejecutarla.
+- Obtenga más información sobre [funciones](working-with-formulas.md) como **Revisión**, que puede usar para administrar los datos sin necesidad de crear un formulario estándar.
+- [Vincule esta aplicación a una solución](add-app-solution.md) para poder, por ejemplo, implementarla en un entorno distinto o publicarla en AppSource.

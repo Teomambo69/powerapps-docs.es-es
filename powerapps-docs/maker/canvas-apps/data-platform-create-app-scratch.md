@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 710df8899fa11e46a83e4ba670c4081b04fa7bde
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317054"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "51333980"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación de lienzo desde cero con Common Data Service for Apps
 
@@ -160,4 +160,5 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Abra una o varias aplicaciones de ejemplo](open-and-run-a-sample-app.md) y explore los distintos tipos de aplicaciones que se pueden crear.
+- [Vincule esta aplicación a una solución](add-app-solution.md) para poder, por ejemplo, implementarla en un entorno distinto o publicarla en AppSource.
+- [Abra una o varias aplicaciones de ejemplo](open-and-run-a-sample-app.md) y explore los distintos tipos de aplicaciones que se pueden crear.
