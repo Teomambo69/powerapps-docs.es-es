@@ -1,6 +1,6 @@
 ---
-title: Funciones Primero, FirstN, Último y LastN | Microsoft Docs
-description: Información de referencia sobre las funciones Primero, FirstN, Último y LastN de PowerApps, incluidos ejemplos y sintaxis
+title: Funciones First, FirstN, Last y LastN | Microsoft Docs
+description: Información de referencia sobre las funciones First, FirstN, Last y LastN de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -20,24 +20,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42844193"
 ---
-# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones Primero, FirstN, Último y LastN en PowerApps
+# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones First, FirstN, Last y LastN
 Devuelve el primer o último conjunto de [registros](../working-with-tables.md#records) de una tabla.
 
 ## <a name="description"></a>Descripción
-La función **Primero** devuelve el primer registro de una [tabla](../working-with-tables.md).
+La función **First** devuelve el primer registro de una [tabla](../working-with-tables.md).
 
 La función **FirstN** devuelve el primer conjunto de registros de una tabla; el segundo argumento especifica el número de registros que se van a devolver.
 
-La función **Último** devuelve el último registro de una tabla.
+La función **Last** devuelve el último registro de una tabla.
 
 La función **LastN** devuelve el último conjunto de registros de una tabla; el segundo argumento especifica el número de registros que se van a devolver.
 
-**Primero** y **Último** devuelven un único registro.  **FirstN** y **LastN** devuelven una tabla, incluso si se especifica solo un único registro.
+**First** y **Last** devuelven un único registro.  **FirstN** y **LastN** devuelven una tabla, incluso si se especifica solo un único registro.
 
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Primero**( *Table* )<br>**Último**( *Table* )
+**First**( *Table* )<br>**Last**( *Table* )
 
 * *Table*: requerido. La tabla sobre la cual se opera.
 
