@@ -333,7 +333,7 @@ items:
           href: ./canvas-apps/functions/function-exit.md
         - name: Exp
           href: ./canvas-apps/functions/function-numericals.md
-        - name: Filtro
+        - name: Filter
           href: ./canvas-apps/functions/function-filter-lookup.md
         - name: Find
           href: ./canvas-apps/functions/function-find.md
