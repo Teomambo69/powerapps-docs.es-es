@@ -50,13 +50,13 @@ Barb e Isaac van a crear aplicaciones en PowerApps mediante CDS para aplicacione
 
 Barb va a crear dos aplicaciones de lienzo:
 
-* La aplicación 1 &ndash; usa la entidad Contacto junto con una entidad personalizada que almacena información relacionada
-* La aplicación 2 &ndash; usa la entidad Contacto junto con la entidad Incidente, que es una entidad restringida
+* La aplicación 1 &ndash; usa la entidad Cita junto con una entidad personalizada que almacena información relacionada
+* La aplicación 2 &ndash; usa la entidad Cita junto con la entidad Incidente, que es una entidad restringida
 
 Isaac va a crear dos aplicaciones controladas por modelos:
 
-* La aplicación 3 &ndash; usa la entidad Contacto junto con una entidad personalizada que almacena información relacionada
-* La aplicación 4 &ndash; usa la entidad Contacto junto con la entidad Incidente, que es una entidad restringida
+* La aplicación 3 &ndash; usa la entidad Cita junto con una entidad personalizada que almacena información relacionada
+* La aplicación 4 &ndash; usa la entidad Cita junto con la entidad Incidente, que es una entidad restringida
 
 Barb e Isaac necesitan las licencias siguientes:
 * Barb necesita una licencia de Plan 1 de PowerApps para crear aplicaciones de lienzo usando CDS para aplicaciones. Si tuviera que crear una base de datos o una entidad personalizada, necesitaría una licencia de Plan 2 de PowerApps.

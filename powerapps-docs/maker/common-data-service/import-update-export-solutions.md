@@ -1,8 +1,8 @@
 ---
 title: 'Importar, actualizar y exportar soluciones | MicrosoftDocs'
-description: 'Obtener información sobre cómo importar, actualizar y exportar una solución'
+description: 'Obtener información sobre cómo importar, actualizar y exportar una solución en PowerApps'
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 11/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,42 +25,46 @@ search.app:
 ---
 # <a name="import-update-and-export-solutions"></a>Importar, actualizar y exportar soluciones 
 
- Puede importar soluciones manualmente usando los pasos siguientes. Importe únicamente las soluciones que se obtengan de una fuente de confianza. Es posible que las personalizaciones incluyan un código que puede enviar datos a orígenes externos. Únicamente puede importar la solución predeterminada a organización desde la que la exportó, pero no a otra organización.  
+ Puede importar soluciones manualmente usando los pasos siguientes. Importe únicamente las soluciones que se obtengan de una fuente de confianza. Es posible que las personalizaciones incluyan un código que puede enviar datos a orígenes externos. Únicamente puede importar la solución denominada **solución predeterminada** al entorno desde el que la exportó, pero no a otra diferente.  
   
-1. Vaya a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Soluciones**.  
+1.  Seleccione **Soluciones** en la barra de navegación izquierda.  
   
-2.  En el menú de la lista de soluciones, elija **Importar**.  
+2.  En el menún de la lista de soluciones, seleccione **Importar**.  
+
+    > [!div class="mx-imgBorder"]  
+    > ![Importar una solución](media/solution-import.png "Importar una solución") 
   
-3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, busque el archivo comprimido (.zip o .cab) que contiene la solución que desea importar. 
+3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, seleccione **Elegir archivo** y busque el archivo comprimido (.zip o .cab) que contiene la solución que desea importar. 
   
-4.  Elija **Siguiente**.  
+4.  Seleccione **Siguiente**.  
   
-5.  Puede ver la información de la solución antes de elegir **Importar**.  
+5.  Ver información acerca de la solución. Seleccione **importar**.  
   
-6.  Es posible que tenga que esperar unos momentos mientras la importación de la solución se completa. Si es correcta, puede ver los resultados y elija **Cerrar**.  
+6. Es posible que tenga que esperar unos momentos mientras la importación se completa. Vea los resultados y, a continuación, seleccione **Cerrar**.  
   
- Si importó cambios que requieren publicación, debe publicar las personalizaciones para que estén disponibles. 
+ Si importó cambios que requieren publicación, debe publicar las personalizaciones antes de que estén disponibles. 
   
- Si la importación no es correcta, verá un informe que mostrará los errores o advertencias capturados. Puede elegir **Descargar archivo de registro** para capturar detalles sobre la causa del error de importación. La causa más común para que la importación de la solución falle es que la solución no contenía algunos componentes de la solución requeridos.  
+ Si la importación no es correcta, verá un informe que mostrará los errores o advertencias capturados. Seleccione **Descargar archivo de registro** para capturar detalles sobre la causa del error de importación. La causa más común para que una importación falle es que la solución no contenía algunos componentes requeridos.  
   
- Cuando descargue el archivo de registro, encontrará un archivo XML que puede abrir mediante Office Excel y ver el contenido.  
+ Cuando descargue el archivo de registro, encontrará un archivo XML que puede abrir mediante Office Excel para ver el contenido.  
   
 > [!NOTE]
->  No se puede editar un conjunto de reglas de enrutamiento activo. Por tanto, si importa una solución que incluye un conjunto activo de reglas de enrutamiento a una organización donde la regla ya existe con el mismo identificador, la importación de la solución generará un error. Más información: [Crear reglas para enrutar casos automáticamente](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-rules-automatically-route-cases)  
+>  No se puede editar un conjunto de reglas de enrutamiento activo. Por tanto, si importa una solución que incluye un conjunto activo de reglas de enrutamiento a un entorno donde la regla ya existe con el mismo identificador, la importación generará un error. Más información: [Crear reglas para enrutar casos automáticamente](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-rules-automatically-route-cases)  
   
 <a name="BKMK_UpdateSolutions"></a>   
 
 ## <a name="update-solutions"></a>Actualizar soluciones  
  Hay ocasiones en las que podría desear instalar una actualización de una solución administrada existente. El proceso es similar a instalar una nueva solución administrada, salvo en que obtendrá algunas opciones diferentes. Si va a actualizar una solución que ha obtenido de otra persona, debe obtener instrucciones del editor de soluciones sobre las opciones que debe elegir.  
   
-1. Vaya a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Soluciones**.   
+1.  Seleccione **Soluciones** en la barra de navegación izquierda.
   
-2.  En el menú de la lista de soluciones elija **Importar**.  
+2.  En el menún de la lista de soluciones, seleccione **Importar**.  
   
-3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, busque el archivo comprimido (.zip o .cab) que contiene la solución que desea actualizar.  
-4.  Elija **Siguiente**.  
+3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, seleccione **Elegir archivo** y busque el archivo comprimido (.zip o .cab) que contiene la solución que desea actualizar.
+
+4.  Seleccione **Siguiente**.  
   
-5.  Puede ver la información de la solución antes de elegir **Siguiente**. Esta página mostrará una barra amarilla que indica que **Este paquete de solución contiene una actualización para una solución que ya está instalada**.  
+5.  Vea la información de la solución y seleccione **Siguiente**. Esta página mostrará una barra amarilla que indica que **Este paquete de solución contiene una actualización para una solución que ya está instalada**.  
   
 6.  Tendrá las siguientes opciones:  
   
@@ -72,26 +76,39 @@ search.app:
   
          Al seleccionar esta opción se sobrescriben las personalizaciones no administradas realizadas anteriormente en los componentes incluidos en esta solución. Todas las actualizaciones incluidas en esta solución surtirán efecto.  
   
-     Seleccione la opción correcta y elija **Siguiente**.  
+     Elija la opción correcta y seleccione **Siguiente**.  
   
-7.  Es posible que tenga que esperar unos momentos mientras la importación de la solución se completa. Si es correcta, puede ver los resultados y elija **Cerrar**.  
+7.  Es posible que tenga que esperar unos momentos mientras la importación se completa. Vea los resultados y, a continuación, seleccione **Cerrar**.  
   
- Si importó cambios que requieren publicación, debe publicar las personalizaciones para que estén disponibles. 
+ Si importó cambios que requieren publicación, debe publicar las personalizaciones antes de que estén disponibles. 
   
  Los editores de soluciones pueden pedirle que exporte las personalizaciones no administradas existentes, que actualice su solución administrada mediante la opción para sobrescribir personalizaciones y que vuelva a importar las personalizaciones no administradas. Esto le permitirá asegurarse de que se han aplicado los cambios que están esperando mientras se mantienen las personalizaciones.  
   
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportar soluciones  
- Se recomienda exportar las personalizaciones no administradas periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas.  
+ Se recomienda exportar las personalizaciones no administradas periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas. Puede exportar soluciones desde PowerApps o puede exportar mediante la experiencia clásica. 
+ 
+### <a name="export-from-powerapps"></a>Exportar desde PowerApps
   
-1. Vaya a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Soluciones**.   
+1.  Seleccione **Soluciones** en la barra de navegación izquierda.   
   
-2.  En la lista, seleccione la solución que desea exportar y elija **Exportar**.  
+2.  En la lista, seleccione la solución que desea exportar y luego seleccione **Exportar**. 
+
+3.  Seleccione el tipo de paquete **Como no administrado** o **Como administrado**. Esto iniciará la exportación, que puede tardar varios minutos en completarse. Una vez finalizada, el archivo .zip de exportación está disponible en la carpeta de descarga especificada por el explorador web.
+
+> [!div class="mx-imgBorder"]  
+> ![Exportar una solución](media/solution-export.PNG "Exportar una solución") 
+
+### <a name="export-from-the-classic-experience"></a>Exportación desde la experiencia clásica
+
+1.  Seleccione **Soluciones** desde la barra de navegación izquierda y después seleccione **Cambiar a clásica**. 
   
-3.  En el paso **Publicar personalizaciones** se le recordará que solo se exportan las personalizaciones publicadas y podrá utilizar la opción **Publicar todas las personalizaciones** antes de elegir **Siguiente**.  
+2.  En la lista, seleccione la solución que desea exportar y luego seleccione **Exportar**. 
   
-4.  Si la solución contiene componentes necesarios que faltan verá el paso **Faltan componentes necesarios**. Puede ignorar esta advertencia solo si tiene previsto volver a realizar la importación como una solución no administrada en la organización original. De lo contrario, siga las instrucciones del diálogo para cancelar la exportación y agregar los componentes necesarios.  
+3.  En el paso **Publicar personalizaciones** se le recordará que solo se exportan las personalizaciones publicadas y podrá utilizar la opción **Publicar todas las personalizaciones** antes de seleccionar **Siguiente**.  
+  
+4.  Si la solución contiene componentes necesarios que faltan verá el paso **Faltan componentes necesarios**. Puede ignorar esta advertencia solo si tiene previsto volver a realizar la importación como una solución no administrada en el entorno original. De lo contrario, siga las instrucciones del diálogo para cancelar la exportación y agregar los componentes necesarios.  
   
 5.  En el paso **Exportar configuración del sistema (avanzado)** puede elegir determinadas configuraciones del sistema para incluir en la solución. Si la solución depende de grupos de configuración del sistema, selecciónelos y elija **Siguiente**.  
   
@@ -99,16 +116,16 @@ search.app:
   
 6.  En el paso **Tipo de paquete**, es necesario elegir si se debe exportar la solución como una solución **No administrada** o **Administrada**.  
   
-7.  El siguiente paso le permite elegir una solución de destino para una versión determinada de Dynamics 365. Esta opción suelen usarla los ISV que desean exportar una solución que sea compatible con una versión anterior. A menos que pretende importar esta solución en una organización que no está actualizada a la misma versión que la versión de la organización que usted está usando, acepte la opción predeterminada.   
+7.  El siguiente paso le permite elegir una solución de destino para una versión determinada de Dynamics 365 for Customer Engagement. Esta opción suelen usarla los ISV que desean exportar una solución que sea compatible con una versión anterior. A menos que pretenda importar esta solución en un entorno que no esté actualizado a la misma versión que la versión del entorno que usted está usando, acepte la opción predeterminada.   
   
-8.  Elija **Exportar** para descargar el archivo de la solución.  
+8.  Seleccone **Exportar** para descargar el archivo de la solución.  
   
- El comportamiento exacto para descargar archivos varía entre exploradores.  
+ El comportamiento exacto para descargar archivos varía entre exploradores web.  
 
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>Opciones de configuración para la exportación de la solución  
- La siguiente tabla muestra las opciones disponibles cuando se exporta una solución:  
+ Si exporta la solución desde PowerApps, ignore esta sección. La siguiente tabla muestra las opciones disponibles cuando se exporta una solución desde la experiencia clásica.  
   
 |Grupo|Configuración|Descripción|  
 |-----------|-------------|-----------------|  
@@ -120,7 +137,7 @@ search.app:
 |Prefijo de pedido|Prefijo que se debe usar en todos los pedidos en la aplicación.|  
 |Longitud de cadena única|Número de caracteres anexados a los números de factura, oferta y pedido.|  
 |Calendario|Tipo de calendario|Tipo de calendario para el sistema. Establecido en Gregoriano EE.UU. de manera predeterminada|  
-|Código de formato de fecha|Especifica cómo se muestra la fecha en Dynamics 365.|  
+|Código de formato de fecha|Especifica cómo se muestra la fecha en Dynamics 365 for Customer Engagement|  
 |Separador de fecha|Carácter usado para separar el día, el mes y el año en las fechas en la aplicación.|  
 |Duración máxima de la cita|Número máximo de días que puede durar una cita.|  
 |Mostrar número de semana|Especifica si se muestra el número de semana en el calendario en la aplicación.|  

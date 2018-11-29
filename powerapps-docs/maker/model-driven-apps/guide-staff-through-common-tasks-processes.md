@@ -1,5 +1,5 @@
 ---
-title: Crear lógica de negocios personalizada mediante flujos con Flow | MicrosoftDocs
+title: Aplicar la lógica empresarial personalizada con reglas de negocio y flujos en aplicaciones basadas en modelos | Microsoft Docs
 description: Obtenga información sobre los diferentes tipos de lógica de negocios que puede usar en su aplicación
 ms.custom: ''
 ms.date: 08/02/2018
@@ -23,9 +23,27 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-custom-business-logic-with-flows"></a>Crear lógica de negocios personalizada con flujos
+# <a name="apply-custom-business-logic-with-business-rules-and-flows-in-model-driven-apps"></a>Aplicar la lógica empresarial personalizada con reglas de negocio y flujos en aplicaciones basadas en modelos
 
-Definir y forzar procesos de negocio coherentes es una de las principales razones por las que las personas utilizan aplicaciones basadas en modelos. Los procesos coherentes garantizan a los usuarios que usan una aplicación de PowerApps que puedan concentrarse en su trabajo y no en recordar realizar un conjunto de pasos manuales. Los flujos pueden ser sencillos o complejos y pueden cambiar con el tiempo.  
+Definir y forzar procesos de negocio coherentes es una de las principales razones por las que las personas utilizan aplicaciones basadas en modelos. Los procesos coherentes garantizan a los usuarios que usan una aplicación basada en modelos que puedan concentrarse en su trabajo y no en recordar realizar un conjunto de pasos manuales. 
+
+## <a name="business-rules"></a>Reglas de negocio
+
+Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de evolución rápida y de uso general. El *ámbito* der una regla de negocio define si la regla de negocio se ejecutará:
+
+|||  
+|-|-|  
+|**Si selecciona este elemento…**|**El ámbito se establece como...**|  
+|**Entidad**|Todos los formularios y el servidor|  
+|**Todos los formularios**|Todos los formularios|  
+|Formulario específico (formulario de **Cuenta**, por ejemplo)|Sólo ese formulario| 
+
+Para obtener más información sobre cómo definir reglas de negocio que se aplique a un formulario en una aplicación basada en modelos, consulte [Crear reglas de negocio para aplicar lógica en un formulario de aplicaciones controladas por modelos](create-business-rules-recommendations-apply-logic-form.md).
+
+> [!NOTE]
+> Para definir una regla de negocio para una entidad para que se aplique en el servidor o a *aplicaciones de lienzo* y *aplicaciones basadas en modelos*, consulte [Crear una reglas de negocio para una entidad](/powerapps/maker/common-data-service/data-platform-create-business-rule).
+
+## <a name="flows"></a>Flujos  
   
 Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objetivo diferente:  
 
@@ -37,7 +55,12 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
   
 -   Flujos de proceso de negocio.  Asegúrese de que los usuarios especifiquen datos de manera coherente y siguen los mismos pasos cada vez que trabajan con una aplicación mediante la creación de un flujo de proceso de negocio. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview)
 
--   Common Data Service for Apps. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de Common Data Service for Apps, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
+-   Flujos de trabajo y acciones. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de CDS for Apps, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
   
-## <a name="see-also"></a>Vea también  
-[Tutorial: Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos](create-business-rules-recommendations-apply-logic-form.md)
+## <a name="next-step"></a>Paso siguiente
+
+[Crear reglas de negocio para aplicar lógica en un formulario de aplicaciones basadas en modelos](create-business-rules-recommendations-apply-logic-form.md)
+
+### <a name="see-also"></a>Vea también
+
+[Aplicar lógica de negocios con Common Data Service para aplicaciones](../common-data-service/cds-processes.md)

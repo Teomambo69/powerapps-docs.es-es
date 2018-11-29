@@ -1,11 +1,11 @@
 ---
 title: Introducción a las soluciones | Microsoft Docs
-description: Obtenga información sobre cómo se usan las soluciones para crear aplicaciones de modelo.
+description: Conozca cómo se usan las soluciones para crear aplicaciones modelo.
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: shmcarth
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,152 +13,147 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/19/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: bcf89d9c52e1e277f65f7f02013885f30862aa56
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864988"
+  - PowerApps
+  - D365CE
 ---
-# <a name="introduction-to-solutions"></a>Introducción a las soluciones
 
-Las *soluciones* son la forma en que los personalizadores y desarrolladores crean, empaquetan y mantienen unidades de software que amplían Common Data Service for Apps. Por ejemplo, las aplicaciones de Dynamics 365 for Sales, Marketing y Customer Service se componen de soluciones. Los desarrolladores y personalizadores distribuyen soluciones para que las organizaciones puedan usar Common Data Service for Apps a fin de instalar y desinstalar la funcionalidad empresarial definida por la solución.
+# <a name="introduction-to-solutions"></a>Introducción a soluciones
 
-Todas las personalizaciones que se realicen en Common Data Service for Apps o en una solución instalada anteriormente forman parte de una solución. Se realiza el seguimiento de todos los cambios que se apliquen y las dependencias se pueden calcular. Cuando se exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que, después, se puede importar en otro entorno de Common Data Service for Apps.
+*Las soluciones* son la manera en que los personalizadores y desarrolladores crean, empaquetan y mantienen las unidades de software que extienden Common Data Service (CDS) para aplicaciones. Por ejemplo, las aplicaciones de Dynamics 365 for Sales, Marketing, Customer Service se componen de soluciones. Los personalizadores y los desarrolladores distribuyen soluciones de modo que las organizaciones puedan usar Common Data Service para aplicaciones para instalar y desinstalar la funcionalidad de su negocio definida por la solución.
 
-Si tiene previsto transportar las personalizaciones o extensiones entre otros entornos de Common Data Service for Apps o distribuir las soluciones mediante AppSource, debe entender el marco de trabajo de la solución.
+Cada personalización que crea para CDS for Apps o para una solución instalada anteriormente forma parte de una solución. Se realiza un seguimiento de cada cambio que se aplica y cualquier dependencia puede ser calculada. Cuando exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que puede importar a continuación en otro entorno de CDS for Apps.
+
+Si tiene previsto transportar personalizaciones o extensiones entre diferentes entornos de CDS for Apps o distribuir soluciones mediante AppSource, debe comprender el marco de trabajo de la solución.
 
 ## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas
 
-Hay dos tipos de soluciones: *administradas* y *no administradas*.
+Existen dos tipos de soluciones: *administradas* y *no administradas*.
 
-Una solución **administrada** es una solución completa que está pensada para su distribución e instalación. 
-- Los componentes de una solución administrada no se pueden editar.
-- Una solución administrada no se puede exportar.
-- Se pueden agregar personalizaciones no administradas a los componentes de una solución administrada. Al hacerlo, se crea una dependencia entre las personalizaciones no administradas y la solución administrada. Cuando existe una dependencia, la solución administrada no se puede desinstalar hasta que se quite la dependencia.
-- Cuando se elimina una solución administrada (se desinstala), se quitan todas las personalizaciones y extensiones incluidas con ella.
+Una solución **administrada** es una solución completada que está diseñada para distribuir e instalar. 
+- No puede editar los componentes de una solución administrada.
+- No puede exportar una solución administrada.
+- Puede agregar personalizaciones no administradas a componentes de una solución administrada. Al hacerlo, se crea una dependencia entre las personalizaciones no administradas y la solución administrada. Cuando exista una dependencia, la solución administrada no se puede desinstalar hasta que quite la dependencia.
+- Cuando se elimina una solución administrada (desinstalada), todas las personalizaciones y extensiones incluidas con ella se quitan.
 
   > [!IMPORTANT]
-  > Cuando se desinstala una solución administrada, se pierden los datos siguientes: los datos almacenados en las entidades personalizadas que forman parte de la solución administrada y los almacenados en los atributos personalizados que forman parte de la solución administrada en otras entidades que no forman parte de la solución administrada.
+  > Cuando desinstala una solución administrada, se pierden los siguientes datos: datos almacenados en las entidades personalizadas que forman parte de la solución adinistrada y datos almacenados en atributos personalizados que forman parte de la solución administrada en otras entidades que no forman parte de la solución administrada.
 
-Una solución **no administrada** es la que todavía se está desarrollando o no está diseñada para ser distribuida. 
-- Mientras que una solución es no administrada, se pueden seguir agregando y quitando componentes. 
-- Una solución no administrada se puede exportar para transportar personalizaciones no administradas de un entorno a otro.
-- Cuando se elimina una solución no administrada, solo se elimina el contenedor de solución de las personalizaciones que incluya. Todas las personalizaciones no administradas siguen en vigor y pertenecen a la solución predeterminada. 
-- Cuando se completa la solución no administrada y se quiere distribuir, se exporta como una solución administrada.
+Una solución **no administrada** es la que aún está en desarrollo o no está diseñada para distribuirse. 
+- Mientras una solución no esté administrada, puede seguir agregando y eliminando componentes. 
+- Puede exportar una solución no administrada para transportar personalizaciones no administradas desde un entorno a otro.
+- Cuando se elimina una solución no administrada, solo se elimina el contenedor de la solución de cualquier personalización incluida en ella. Todas las personalizaciones no administradas permanecen vigentes y pertenecen a la solución predeterminada. 
+- Cuando se completa la solución no administrada y se desea distribuir, se puede exportar como una solución administrada.
 
   > [!NOTE]
-  > No se puede importar una solución administrada al mismo entorno que contiene la solución no administrada de origen. Para probar una solución administrada, se necesita un entorno independiente al que importarla.
+  > No puede importar una solución administrada en el mismo entorno que contiene la solución no administrada original. Para probar una solución administrada, es necesario un entorno independiente para importarla.
 
 ## <a name="solution-publishers"></a>Editores de soluciones
 
-Cada solución se vincula a un editor de soluciones. El editor de soluciones proporciona información sobre cómo ponerse en contacto con el editor y también un valor de prefijo de personalización. El valor predeterminado es `new`.
+Cada solución está vinculada a un editor de soluciones. El editor de soluciones proporciona información sobre cómo ponerse en contacto con el editor, así como un valor de prefijo de personalización. El valor predeterminado es `new`.
 
-Cuando se incluyen cambios de esquema como parte de una solución, el prefijo de personalización del editor de soluciones se antepone al nombre de los elementos de esquema. Este valor también se anexa a todas las acciones personalizadas. Esto es útil porque permite que sea fácil reconocer qué solución agregó el elemento de esquema o la acción personalizada. No es necesario que todos los elementos de esquema y las acciones personalizadas de una solución usen el mismo prefijo de personalización, pero se recomienda encarecidamente.
+Cuando se incluyen cambios de esquema como parte de una solución, el prefijo de personalización del editor de soluciones se antepone al nombre de los elementos de esquema. Toda acción personalizada también tiene este valor anexado a ella. Esto es valioso porque permite reconocer fácilmente qué solución agregó el elemento de esquema o acción personalizada. No es necesario para todos los elementos y acciones personalizadas de esquema en una solución usar el mismo prefijo de personalización, pero se recomienda.
 
 > [!IMPORTANT]
-> Antes de empezar a crear una solución, se debe crear un registro de editor de soluciones y una solución vinculada a él. Debe asegurarse de que el prefijo de personalización representa un valor que tenga sentido para usted. 
+> Antes de comenzar a crear una solución, debe crear un registro de editor de soluciones y crear una solución nueva vinculada a él. Debe asegurarse de que el prefijo de personalización represente un valor que tenga sentido para usted. 
 
-La elección del editor de soluciones es importante en caso de que se quiera publicar una actualización de una solución que se ha enviado. Solo se puede aplicar una actualización a una solución administrada con el mismo editor que la solución administrada original. 
+La opción del editor de soluciones es importante en caso de que desee publicar una actualización de una solución que ha enviado. Una actualización solo se puede aplicar a una solución administrada con el mismo editor que la solución administrada original. 
 
-Más información: [Mantener soluciones administradas (Guía para desarrolladores de Dynamics 365 Customer Engagement) > Crear actualizaciones de solución administrada](/dynamics365/customer-engagement/developer/maintain-managed-solutions#create-managed-solution-updates)
+Más información: [Mantener soluciones administradas > Crear actualizaciones de soluciones administradas](/dynamics365/customer-engagement/developer/maintain-managed-solutions#create-managed-solution-updates)
 
-## <a name="create-a-solution-publisher-and-solution"></a>Crear un editor de soluciones y una solución 
+## <a name="create-a-solution-publisher-and-solution"></a>Cree un editor de soluciones y una solución 
 
-Para crear un editor de soluciones y una solución, hay que navegar hasta el área de personalización de Dynamics 365.
+Para crear un editor de soluciones y una solución necesita navegar al área de personalización de CDS for Apps.
 
 Desde [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
-1. Haga clic en el icono de *gofre* situado en la esquina superior izquierda.
-2. En el control flotante, seleccione **Todas las aplicaciones**.
-3. Busque**Dynamics 365: aplicación personalizada**.
- Puede hacer clic en los puntos suspensivos (...) y elegir **Pin this app** (Anclar esta aplicación) para que la próxima vez sea más fácil navegar hasta ella.
-4. Haga clic en la aplicación **Dynamics 365: aplicación personalizada** y selecciónela.
-5. Vaya a **Configuración** > **Personalización** > **Personalizaciones**.
+1. Seleccione el icono *gofre* en la esquina superior izquierda
+2. En control flotante, seleccione **Todas las aplicaciones**.
+3. Busque **CDS for Apps - aplicación personalizada**.
+ Es posible que desee hacer clic en las elipses (...) y elegir **Anclar esta aplicación** para que sea más sencillo navegar la próxima vez.
+4. Haga clic en la aplicación **CDS for Apps - aplicación personalizada** y selecciónela.
+5. Navegue a **Configuración** > **Personalización** > **Personalizaciones**.
 
 Desde [home.dynamics.com](http://home.dynamics.com/)
 
-1. Busque el icono **Dynamics 365: personalizado** y haga clic en él.
-2. Vaya a **Configuración** > **Personalización** > **Personalizaciones**.
+1. Busque la ventana **CDS for Apps - personalizada** y haga clic.
+2. Navegue a **Configuración** > **Personalización** > **Personalizaciones**.
 
 ### <a name="create-a-solution-publisher"></a>Crear un editor de soluciones
 
-1. En el área de personalizaciones, seleccione **Editores**.
+1. Desde el área de las personalizaciones, seleccione **Editores**.
 2. Haga clic en **Nuevo**.
-3. En el formulario de editor especifique un **Nombre para mostrar**. Se generará un valor **Nombre** en función del nombre para mostrar. Puede aceptar el valor generado o especificar uno nuevo.
-4. En el campo **prefijo**, especifique el prefijo de personalización que se debe anexar a los elementos de esquema personalizados que se agreguen al desarrollar la solución. El valor predeterminado es `new`. Elija un valor que represente a la organización y permita a los usuarios identificar qué componentes instalados en su sistema proceden de la solución.
-5. Se generará un valor **Prefijo de valor de opción** en función del prefijo de personalización elegido. Se trata de un valor que se anexará a los valores de las opciones de conjunto de opciones que se agreguen a los atributos de la solución. Este valor ayudará a identificar todas las opciones que se agreguen a la solución.
-6. En la sección **Detalles de contacto** del formulario, se puede agregar cualquier información de contacto que se quiera proporcionar a los usuarios que instalen la solución.
-7. Haga clic en **Guardar y cerrar** cuando haya terminado.
+3. En el formulario del editor escriba un **Nombre para mostrar**. Se generará un valor **Nombre** en función del nombre para mostrar. Puede aceptar el valor generado o especificar uno nuevo.
+4. En el campo **prefijo** , especifique el prefijo de personalización que debe anexarse a cualquier elemento de esquema personalizado que agregue al desarrollar su solución. El valor predeterminado es `new`. Elija un valor que represente a la organización y ayude a las personas a identificar qué componentes instalados en su sistema proceden de la solución.
+5. Un valor **Prefijo de valor de opción** se generará en función de su elección para el prefijo de personalización. Este es un valor que se anexará a cualquier valor de las opciones del conjunto de opciones que agregue a los atributos en la solución. Este valor ayudará a identificar las opciones que agregue a la solución.
+6. En la sección **Detalles de contacto** del formulario, puede agregar la información de contacto que desee proporcionar a las personas que instalen su solución.
+7. Haga clic en **Guardar y cerrar** cuando esté listo.
 
 ### <a name="create-a-solution"></a>Crear una solución
 
-1. En el área de personalizaciones, seleccione **Soluciones**.
+1. Desde el área de las personalizaciones, seleccione **Soluciones**.
 2. Haga clic en **Nuevo**.
-3. En el formulario de la solución, escriba un **Nombre para mostrar**. Se generará un valor **Nombre** en función del nombre para mostrar. Puede aceptar el valor generado o especificar uno nuevo.
-4. En el campo **Editor**, busque el editor que creó en [Crear un editor de soluciones](#create-a-solution-publisher)
-5. En el campo **Versión**, seleccione una versión adecuada para la solución, por ejemplo, 1.0.0.0.
+3. En el formulario de la solución escriba un **Nombre para mostrar**. Se generará un valor **Nombre** en función del nombre para mostrar. Puede aceptar el valor generado o especificar uno nuevo.
+4. En el campo **Editor** busque el editor que haya creado en [Crear un editor de soluciones](#create-a-solution-publisher)
+5. En el campo **Versión** seleccione una versión adecuada para la solución, como 1.0.0.0.
 6. Haga clic en **Guardar** cuando haya terminado.
 
 > [!IMPORTANT]
-> Siempre que se crea un componente de solución que se va a incluir en esta solución, use esta solución, o bien otra asociada con el mismo editor de soluciones para agregarlo.
-> Los componentes de solución creados en el contexto de una solución asociada a otro editor de soluciones se pueden agregar a esta solución, pero pueden tener valores de prefijo de personalización incoherentes establecidos.
+> Siempre que cree un nuevo componente de solución que se incluirá en esta solución, use esta solución u otra solución asociada con mismo editor de soluciones para agregarlo.
+> Los componentes de una solución creados en el contexto de una solución asociada a otro editor de soluciones se pueden agregar a esta solución, pero podrían tener valores de prefijo de personalización incoherentes establecidos.
 
 ## <a name="solution-layering"></a>Disposición en capas de la solución
 
-Se pueden instalar dos soluciones administradas que se contradigan entre sí o, para ciertas personalizaciones, que se apliquen al entorno para invalidar una solución administrada. ¿Cómo funciona esto?
+Es posible que dos soluciones administradas que se van a instalar se contradigan entre ellas o que algunas personalizaciones aplicadas al entorno reemplacen a una solución administrada. ¿Cómo funciona?
 
-Funciona porque Common Data Service for Apps evalúa las soluciones administradas en el orden en el que se instalan y cualquier personalización que no esté en una solución administrada se evalúa en último lugar.
+Funciona porque Common Data Service para aplicaciones evalúa las soluciones administradas por el orden en el que se instalan y cualquier personalización que no esté en una solución administrada se evalúa al final.
 
-En el diagrama siguiente se presentan cómo interactúan las soluciones administradas y las personalizaciones no administradas para controlar qué se incluye en la aplicación en tiempo de ejecución.
+El siguiente diagrama muestra cómo las soluciones administradas y la personalizaciones no administradas interactúan para controlar lo que está incluido en el tiempo de ejecución de la aplicación.
 
-![Diagrama en el que se muestra la disposición en capas de la solución](media/solution-layering.png)
+![Diagrama que muestra la disposición en capas de la solución](media/solution-layering.png)
 
-En este ejemplo, el comportamiento predeterminado definido en la solución del sistema se invalida o anexa por las soluciones administradas. Después, las personalizaciones no administradas pueden invalidar o anexar las personalizaciones que son visibles en la aplicación.
+En este ejemplo, el comportamiento predeterminado definido en la solución del sistema es reemplazado o anexado por soluciones administradas. Las personalizaciones no administrada pueden reemplazar o anexar las personalizaciones que sean visibles en la aplicación.
 
-Más información: [Introducción a las soluciones (Guía para desarrolladores de Dynamics 365 Customer Engagement) > Soluciones administradas y no administradas](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions)
+Más información: [Introducción a soluciones > Soluciones administradas y no administradas](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions).
 
 ## <a name="managed-properties"></a>Propiedades administradas
 
-Cuando se distribuye una solución administrada, cualquier usuario que instale la solución puede incluir en ella sus propias personalizaciones no administradas. Después, esas personalizaciones no administradas se pueden agregar a una solución que se distribuya como una solución administrada que depende de la solución. Pero, ¿qué ocurre si no quiere que los usuarios hagan esto? Como editor de la solución administrada puede usar propiedades administradas para deshabilitar personalizaciones específicas para los componentes de la solución administrada.
+Cuando distribuya una solución administrada, cualquier persona que instale la solución puede incluir sus propias personalizaciones no administradas. Esas personalizaciones no administrada se pueden a agregar a una solución que distribuyeron como una solución administrada que depende de su solución. ¿Pero qué sucede si no desea que los usuarios hagan esto? Como el editor de la solución administrada puede usar propiedades administradas para deshabilitar las personalizaciones específicas de los componentes de la solución administrada.
 
-Más información: [Usar propiedades administradas (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/use-managed-properties)
+Más información: [Usar propiedades administradas](use-managed-properties.md)
 
 ## <a name="modular-solutions"></a>Soluciones modulares
 
-Se puede usar el marco de trabajo de la solución para crear un conjunto discreto de componentes que proporcionan un conjunto de funcionalidades. Cada solución administrada se puede instalar y desinstalar para devolver la implementación del cliente a su estado original. Cada solución administrada que se crea se ejecuta sobre la solución del sistema y puede tener acceso a las funciones de la solución subyacente.
+Puede usar el marco de trabajo de la solución para crear un conjunto discreto de componentes que proporcionen un conjunto de funcionalidades. Cada solución administrada se puede instalar y desinstalar para devolver la implementación del cliente a su estado original. Cada solución administrada que cree se ejecuta sobre la solución del sistema y puede tener acceso a las capacidades de esa solución subyacente.
 
-También se pueden compilar soluciones administradas que se ejecuten sobre otras soluciones para crear un conjunto de funcionalidades que otras soluciones puedan compartir. De esta manera, se puede crear y mantener un módulo común como una solución para admitir varias soluciones. Por este motivo, los clientes solo tendrán que instalar las soluciones que sean adecuadas para ellos y no será necesario incluir la misma funcionalidad compartida en todas las soluciones. Si hay que publicar una actualización de la solución que admita varias soluciones, solo habrá que actualizar el módulo común.
+También puede crear soluciones administradas que se ejecuten sobre otras soluciones para crear un conjunto de funcionalidades que se puedan compartir por diferentes soluciones. De esta forma, puede crear y mantener un módulo común como una solución para admitir varias soluciones. Por este motivo, los clientes solo necesitan instalar las soluciones adecuadas para ellos y usted no necesita incluir la misma funcionalidad compartida en cada solución. Si necesita eliminar una actualización a la solución que admite varias soluciones, solo necesita actualizar el módulo común.
 
-Después, los clientes, implementadores de sistemas y otros proveedores de software independientes, pueden compilar soluciones sobre las soluciones para lograr las personalizaciones específicas que necesitan.
+Los clientes, los implementadores del sistema y otros ISV pueden a crear soluciones sobre sus soluciones para conseguuir las personalizaciones específicas que necesitan.
 
-Cuando un conjunto de funciones de negocio se compone de varias soluciones, se denominan paquetes. Puede usar el *Package Deployer* para combinar varias soluciones en una sola unidad instalable.
+Cuando forman un conjunto de funcionalidad de su negocio con varias soluciones, estas se denominan los paquetes. Puede usar el *Package Deployer* para combinar varias soluciones en una sola unidad instalable.
 
-## <a name="deploy-solution-packages"></a>Implementar paquetes de solución
+## <a name="deploy-solution-packages"></a>Implementar paquetes de soluciones
 
-Use *Package Deployer* para crear un instalador personalizado para un paquete que puede incluir: 
-- Uno o más archivos de solución.
+Use el *Package Deployer* para crear un instalador personalizado para un paquete que pueda incluir 
+- Uno o varios archivos de solución.
 - Archivos sin formato o archivos de datos de configuración exportados. 
-- Código personalizado que se puede ejecutar antes, durante o después de implementar el paquete.
-- Contenido HTML específico del paquete que se puede mostrar al principio y al final del proceso de implementación. Esto puede ser útil para proporcionar una descripción de las soluciones y los archivos que se implementan en el paquete.
+- El código personalizado que puede ejecutarse antes, durante o después de la implementación del paquete.
+- Contenido HTML específico del paquete que mostrarse al principio y al final del proceso de implementación. Puede resultar útil para proporcionar una descripción de las soluciones y los archivos que se implementan en el paquete.
 
-Más información: [Crear paquetes para el Dynamics 365 Package Deployer (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
+Más información: [Crear paquetes para CDS for Apps Package Deployer](package-deployer/create-packages-package-deployer.md).
 
-## <a name="team-development-of-solutions"></a>Desarrollo en equipo de soluciones
+## <a name="team-development-of-solutions"></a>Desarrollo del equipo de soluciones
 
-Un archivo de solución es un archivo binario único que no se presta al control de código fuente ni al desarrollo en equipo. No hay ningún medio para que varios desarrolladores puedan trabajar en los componentes personalizados de la solución.
+Un archivo de solución es un solo archivo binario que no permite el control de código fuente ni el desarrollo en equipo. No hay forma de que varios programadores trabajen en los componentes personalizados de la solución.
 
-La herramienta *SolutionPackager* resuelve el problema del control de código fuente y desarrollo en equipo de los archivos de solución. La herramienta identifica los componentes individuales del archivo de solución comprimido y los extrae en archivos individuales. La herramienta también puede volver a crear un archivo de solución empaquetando los archivos que se han extraído previamente. Esto permite que varias personas trabajen de forma independiente en una única solución y extraigan los cambios en una ubicación común. Como cada componente del archivo de solución se divide en varios archivos, es posible combinar personalizaciones sin sobrescribir los cambios anteriores. Un uso secundario de la herramienta SolutionPackager es que se puede invocar desde un proceso de compilación automatizado para generar un archivo de solución comprimido a partir de los archivos de componente extraídos previamente sin necesidad de una instancia activa de Dynamics 365.
+La herramienta *SolutionPackager* resuelve el problema del control del código fuente y el desarrollo en equipo de los archivos de solución. La herramienta identifica los componentes individuales del archivo de solución comprimido y los extrae en archivos individuales. La herramienta puede también volver a crear un archivo de solución empaquetando los archivos que se habían extraídos anteriormente. Esto permite a varios usuarios trabajar de forma independiente en una sola solución y extraer los cambios en una ubicación común. Ya que cada componente del archivo de solución está separado en varios archivos, es posible combinar personalizaciones sin sobrescribir cambios anteriores. Un uso secundario de la herramienta SolutionPackager es que puede ser invocada desde un proceso automatizado de compilación para generar un archivo de solución comprimido a partir de los archivos componentes extraídos anteriormente sin necesidad de una instancia de CDS for Apps activa.
 
-Más información: [Herramientas de solución para el desarrollo en equipo (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/solution-tools-team-development)
+Más información: [Herramientas de solución para el desarrollo en equipo](/dynamics365/customer-engagement/developer/solution-tools-team-development)
 
 ### <a name="see-also"></a>Vea también
 
-[Common Data Service for Apps Developer Overview](overview.md) (Introducción para desarrolladores de Common Data Service for Apps)
+[Información general para desarrolladores de Common Data Service para aplicaciones](overview.md)

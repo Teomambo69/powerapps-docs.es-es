@@ -27,10 +27,9 @@ search.app:
 
 En este tema, usará el panel de navegación de formulario que se usa para agregar vínculos a las entidades relacionadas. Cuando el usuario de una aplicación hace clic en uno de estos vínculos en un registro, se muestra la vista asociada para la entidad.   
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    ![Modo de diseño controlado por modelos](../model-driven-apps/media/model-driven-switch.png)
-
+  
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 

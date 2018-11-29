@@ -27,9 +27,8 @@ Un control de vista rápida en un formulario de aplicación basada en modelos mu
 > ![Formulario de vista rápida de contacto en el formulario de cuenta](media/quick-view-form-contact.png "Formulario de vista rápida de contacto en el formulario de cuenta")  
 
 Puede acceder a las **Propiedades de controles de vista rápida** desde el sitio de PowerApps. 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 

@@ -17,8 +17,12 @@ search.app:
 
 # <a name="create-a-business-rule-for-an-entity"></a>Crear una regla de negocio para una entidad
 
-Puede crear reglas de negocio y recomendaciones para aplicar lógica y validaciones sin escribir código ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general. 
-  
+Puede crear reglas de negocio y recomendaciones para aplicar lógica y validaciones sin escribir código ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general.
+
+> [!IMPORTANT]
+> Las reglas de negocio definidas para una entidad se aplican a las *aplicaciones de lienzo* y las *aplicaciones basadas en modelos* si la entidad se usa en la aplicación. No todas las acciones de reglas de negocio están disponibles en aplicaciones de lienzo en este momento. Más información: [Diferencias entre aplicaciones de lienzo y aplicaciones basadas en modelos](#differences-between-canvas-and-model-driven-apps)<br/><br/>
+> Para definir una regla de negocio que se aplique a un formulario en una aplicación basada en modelos, consulte [Crear reglas de negocio para aplicar lógica en un formulario de aplicaciones controladas por modelos](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md).
+
 Combinando condiciones y acciones puede realizar cualquiera de las siguientes reglas de negocio:  
   
 * Establecer valores de campo  

@@ -1,11 +1,9 @@
 ---
-title: 'Aplicaciones controladas por modelos: introducción para desarrolladores | Microsoft Docs'
-description: Obtenga información sobre cómo los desarrolladores pueden agregar valor a las aplicaciones controladas por modelos.
+title: Información general para desarrolladores de PowerApps de las aplicaciones basadas en modelos | Microsoft Docs
+description: Descubra cómo los desarrolladores pueden agregar valor a las aplicaciones basadas en modelos; tutorial; introducción para desarrolladores de aplicaciones basadas en modelos en PowerApps
 services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
-manager: faisalmo
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,60 +11,37 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/17/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 39fe83cdb059e0f1df634b9933f4a2f4251bca7b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852423"
+  - PowerApps
+  - D365CE
 ---
-# <a name="model-driven-apps-developer-overview"></a>Aplicaciones controladas por modelos: introducción para desarrolladores
 
-PowerApps ofrece a usuarios, empresas, socios, proveedores de software independientes (ISV) e integradores de sistemas (SI) una plataforma eficaz para la creación de aplicaciones de línea de negocio. La novedad incorporada en PowerApps en esta versión son las aplicaciones controladas por modelos que se compilan con el nuevo Common Data Service for Apps. Common Data Service for Apps ya contiene la funcionalidad básica de las aplicaciones de Dynamics 365 Customer Engagement. Con las aplicaciones controladas por modelos, se pueden compilar aplicaciones que usen las mismas características de extensibilidad que esas aplicaciones.
+# <a name="model-driven-apps-developer-guide"></a>Manual para desarrolladores de aplicaciones basadas en modelos
 
-Las aplicaciones controladas por modelos son principalmente un enfoque de componentes sin código o con poca cantidad de código enfocado al desarrollo de aplicaciones. El valor que los desarrolladores pueden proporcionar es mediante la extensión de la aplicación. Antes de empezar a escribir código, comience por aprender a compilar una aplicación controlada por modelos y las opciones que se pueden aplicar sin necesidad de código. 
+PowerApps proporciona a usuarios, empresas, partners, fabricantes independientes de software (ISV) e integradores de sistemas (SI) una plataforma eficaz para crear aplicaciones de línea de negocio. La nueva adición a PowerApps en esta versión son las aplicaciones basadas en modelos creadas con el nuevo Common Data Service para aplicaciones. Ahora Common Data Service para aplicaciones contiene la funcionalidad básica de las aplicaciones. Con las aplicaciones basadas en modelos puede crear aplicaciones que usan las mismas capacidades de extensibilidad que esas aplicaciones.
 
-## <a name="get-started"></a>Introducción
-Si ya tiene experiencia con las aplicaciones de Dynamics 365 Customer Engagement, encontrará que podrá aplicarla para compilar aplicaciones controladas por modelos. Hay algunos diseñadores nuevos disponibles pero, por lo general, los conceptos son los mismos.
+Las aplicaciones basadas en modelos son básicamente un enfoque centrado en los componentes sin código o con poco código para el desarrollo de aplicaciones. Los programadores aportan valor ampliando la aplicación. Antes de empezar a escribir código, empiece por [aprender a crear aplicaciones basadas en modelos](/powerapps/maker/model-driven-apps/model-driven-app-components) y qué opciones se pueden aplicar sin código. 
 
-> [!NOTE]
-> Las aplicaciones controladas por modelos se conectan a Common Data Service for Apps. Para obtener información sobre cómo los desarrolladores pueden agregar valor en el nivel de servicio, vea [Common Data Service for Apps Developer Overview](../common-data-service/overview.md) (Introducción para desarrolladores de Common Data Service for Apps).
-> El contenido de esta sección hará referencia únicamente a lo que los desarrolladores de extensiones pueden hacer que se aplica a la experiencia para los usuarios de aplicaciones controladas por modelos. 
-
-Si no está familiarizado con las aplicaciones de Dynamics 365 Customer Engagement, en los temas de esta sección se proporciona información general de los conceptos importantes para ayudar a los desarrolladores a empezar a trabajar con aplicaciones controladas por modelos. 
+Si ya tiene experiencia con aplicaciones de Dynamics 365 Customer Engagement, descubrirá que puede aplicar su experiencia en la creación de aplicaciones basadas en modelos. Están disponibles algunos diseñadores nuevos, pero los conceptos son los mismos.
 
 > [!NOTE]
-> Dado que Common Data Service for Apps y Dynamics 365 Customer Engagement aprovechan la misma plataforma, encontrará información más completa para desarrolladores en la [Guía para desarrolladores de Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). En estos temas se proporciona una introducción con vínculos a la guía para desarrolladores y otras guías para obtener más información.
+> Las aplicaciones basadas en modelos se conectan a Common Data Service for Apps. Para obtener información sobre cómo pueden aportar valor los desarrolladores en el nivel de servicio, vea [Información general para desarrolladores de aplicaciones sobre Common Data Service para aplicaciones](../common-data-service/overview.md).
+> El contenido de esta sección solo hará referencia a las extensiones que los desarrolladores pueden crear que se apliquen a la experiencia de los usuarios de aplicaciones basadas en modelos. 
 
+Si las aplicaciones de Common Data Service para aplicaciones son una novedad para usted, los temas de esta sección proporcionan información general sobre los conceptos importantes que ayudan a los desarrolladores a empezar a trabajar con aplicaciones basadas en modelos. 
 
-## <a name="community-tools-for-model-driven-apps"></a>Herramientas de la comunidad para aplicaciones controladas por modelos
+> [!div class="nextstepaction"]
+> [Introducción](supported-customizations.md)
 
-La comunidad de Dynamics 365 crea herramientas. Muchas de las más populares se distribuyen a través de [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación Windows que se conecta a Common Data Service for Apps, y proporciona herramientas para facilitar las tareas de personalización, configuración y funcionamiento. Incluye más de 30 complementos para realizar tareas de administración, personalización o configuración con más facilidad y en mucho menos tiempo.
+### <a name="related-topics"></a>Temas relacionados
 
-La siguiente es una lista seleccionada de herramientas de la comunidad distribuidas a través de XrmToolBox que se pueden usar cuando se trabaja con aplicaciones controladas por modelos.
+[Conocer los componentes de las aplicaciones basadas en modelos](/powerapps/maker/model-driven-apps/model-driven-app-components)<br/>
+[Crear la primera aplicación basada en modelos](/powerapps/maker/model-driven-apps/build-first-model-driven-app)
 
-|Herramienta  |Descripción  |
-|---------|---------|
-|[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/)|Importa y exporta traducciones con información contextual|
-|[Export to Excel](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|Exportar fácilmente los registros desde la vista o fetchxml seleccionado a Excel.|
-|[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)|Administrar iconos de entidades personalizadas en una única pantalla|
-|[Ribbon Workbench 2016](https://www.xrmtoolbox.com/plugins/RibbonWorkbench2016/)|Modificar la cinta de opciones de Dynamics CRM o la barra de comandos desde dentro de XrmToolbox|
-|[Diseñador de vistas](https://www.xrmtoolbox.com/plugins/Cinteros.XrmToolBox.ViewDesigner/)|Interfaz de usuario sencilla para crear diseños de vista y modificar consultas mediante FetchXML Builder|
-|[View Layout Replicator](https://www.xrmtoolbox.com/plugins/MsCrmTools.ViewLayoutReplicator/)|Aplicar el mismo diseño a varias vistas de la misma entidad en una sola operación|
-|[WebResources Manager](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/)|Administrar fácilmente los recursos web|
+### <a name="see-also"></a>Vea también
 
-Otra herramienta que no se distribuye a través de XrmToolBox es [CRM REST Builder](https://github.com/jlattimer/CRMRESTBuilder) de Jason Lattimer. Esta herramienta genera código de JavaScript para su uso con la API web.
-
-> [!NOTE]
-> Microsoft no admite las herramientas creadas por la comunidad. Si tiene preguntas o problemas con las herramientas de la comunidad, póngase en contacto con el publicador de la herramienta.
-
-
-
-
+[PowerApps para desarrolladores](/powerapps/#pivot=home&panel=developer)

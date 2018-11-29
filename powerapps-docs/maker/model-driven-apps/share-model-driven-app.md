@@ -49,7 +49,7 @@ Puesto que el entorno que mantendrá los registros de cuidado de mascotas tambi�
 Para obtener más información sobre los privilegios de acceso y de ámbito, consulte [Roles de seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
 
 ## <a name="create-a-custom-security-role"></a>Crear un rol de seguridad personalizado
-1. En el sitio de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione **Controlado por modelos** > **Aplicaciones** > **…**> **Compartir enlace**.
+1. En el sitio de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione **Aplicaciones** > **…**> **Compartir vínculo**.
 2. En el cuadro de diálogo **Compartir esta aplicación**, en **Crear un rol de seguridad**, seleccione **Configuración de seguridad**.
 3. En la página **Configuración**, seleccione **Nuevo**.  
 

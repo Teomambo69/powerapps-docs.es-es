@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ms.author: matp
 search.audienceType:
   - maker
@@ -31,16 +31,14 @@ Iniciar sesión en [PowerApps](https://web.powerapps.com/). Si aún no tiene una
 ## <a name="create-your-model-driven-app"></a>Cree su aplicación controlada por modelos
 
 1.  Seleccione el entorno que desee o vaya al [Centro de administración de PowerApps](https://admin.powerapps.com/) para crear uno nuevo.
-2.  En el panel de navegación izquierdo, seleccione **Controlado por modelos**. 
-
-    ![Controlado por modelos](media/build-first-model-driven-app/choose-design-mode.png)
 
   > [!IMPORTANT]
   > Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
-3. En el panel izquierdo, seleccione **Aplicaciones** y, a continuación, seleccione **Crear una aplicación**.
+2. En la página **Inicio**, seleccione la opción **Empezar en blanco** para una aplicación basada en modelos.
+![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
 
-4.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
+3.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
   - **Nombre**: escriba un nombre para la aplicación, como *Myfirstapp*. 
   - **Descripción**: escriba una breve descripción de lo que es o hace la aplicación, como *Esta es mi primera aplicación*.
 Para obtener información acerca de las propiedades adicionales de la aplicación, consulte [Crear una aplicación](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).

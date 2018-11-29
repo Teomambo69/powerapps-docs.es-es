@@ -57,9 +57,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
 > [!NOTE]
 >  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el botón ![Botón Guardado automático](media/auto-save-icon.png "Botón guardado automático") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-    ![Modo de diseño controlado por modelos](../model-driven-apps/media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
   

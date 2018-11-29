@@ -2,7 +2,7 @@
 title: Cree una solución | MicrosoftDocs
 description: Aprenda cómo crear soluciones
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 10/30/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -29,9 +29,9 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
   
  Para obtener más información sobre conceptos de una solución, consulte [Trabajar con soluciones](solutions-overview.md).  
   
-1.  Vaya a **[Configuración](../model-driven-apps/advanced-navigation.md#settings)** > **Soluciones**. 
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Soluciones** en el panel de navegación de la izquierda. 
   
-2.  Elija **Nuevo** y rellene los campos requeridos para la solución.  
+2.  Elija **Nueva solución** y rellene los campos requeridos para la solución.
   
     |Campo|Descripción|  
     |-----------|-----------------|  
@@ -40,7 +40,7 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
     |**Editor**|Puede seleccionar el editor predeterminado o crear un nuevo editor. A menos que tenga previsto distribuir la solución, debe usar únicamente al editor predeterminado para la organización.|  
     |**Versión**|Escriba un número para la versión de la solución. Solo es importante si exporta la solución. El número de versión se incluirá en el nombre de archivo cuando exporte la solución.|  
   
-3.  Elija **Guardar**.  
+3.  Seleccione **Guardar**.  
   
  Después de guardar la solución, puede ser conveniente agregar información a los campos que no son necesarios. Estos pasos son opcionales. Use el campo **Descripción** para describir la solución y elija un recurso web HTML como **Página de configuración** de la solución. La página de configuración la usan normalmente los ISV que distribuyen soluciones. Si se ha configurado, un nuevo nodo **Configuración** aparece bajo el nodo **Información** para mostrar este recurso web. Los desarrolladores usarán esta página para incluir instrucciones o controles para permitir definir los datos de configuración o iniciar su solución.  
   
@@ -61,3 +61,6 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
 
 > [!IMPORTANT]
 >  Si piensa incluir citas en soluciones, se recomienda no incluir solo citas y solo citas periódicas en soluciones independientes. Si instala y desinstala soluciones independientes con tipos de citas diferentes, se mostrará un error de SQL Server y tendrá que volver a crear las citas. 
+
+## <a name="see-also"></a>Vea también
+ [Usar soluciones](use-solution-explorer.md)

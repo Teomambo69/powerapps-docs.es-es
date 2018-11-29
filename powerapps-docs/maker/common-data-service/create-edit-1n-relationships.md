@@ -43,7 +43,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 > - Crear un nuevo campo de búsqueda para la entidad relacionada. <br />Más información: [Crear y editar campos](create-edit-fields.md)
 > - Importe una solución que contenga la definición de la relación entre entidades. <br />Más información: [Importar, actualizar y exportar soluciones](import-update-export-solutions.md)
 > - Use Power Query para crear nuevas entidades y rellenarlas con datos. <br />Más información: [Agregar datos a una entidad en Common Data Service para aplicaciones mediante Power Query](data-platform-cds-newentity-pq.md).
-> - Un programador puede usar [servicios web](../../developer/common-data-service/use-web-services.md#metadata-services) para escribir un programa para crear y actualizar relaciones entre entidades. <br />Más información: [Personalizar metadatos de relaciones entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - Un programador puede usar [servicios de metadatos](../../developer/common-data-service/metadata-services.md) para escribir un programa para crear y actualizar relaciones entre entidades. <br />Más información: [Personalizar metadatos de relaciones entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 

@@ -42,9 +42,9 @@ Puede establecer un tipo de control personalizado para que aparezca en el client
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Usar un control personalizado para agregar visualizaciones a un campo  
  Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un control personalizado deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un control personalizado o configurar un control personalizado para un campo personalizado.  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+     
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
   

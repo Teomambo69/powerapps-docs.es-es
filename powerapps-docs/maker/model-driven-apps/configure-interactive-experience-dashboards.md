@@ -157,17 +157,15 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Configure un panel interactivo de varias secuencias utilizando el diseño de 4 columnas  
  
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+  
+2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
-2.  Seleccione **Controlado por modelo** (parte inferior izquierda).  
+3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
   
-3.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
-
-4.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
+4.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.  
   
-5.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.  
-  
-6.  Cuando se abre el formulario del panel, rellene la información de filtro en la parte superior del formulario, como se indica aquí.  
+5.  Cuando se abre el formulario del panel, rellene la información de filtro en la parte superior del formulario, como se indica aquí.  
  
  > [!div class="mx-imgBorder"] 
  > ![Agregar filtros visuales](../model-driven-apps/media/interactive-dashboards-add-visual-filters.png "Agregar filtros visuales")  
@@ -220,7 +218,7 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
   
 1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
-2. Seleccione **Controlado por modelo** (parte inferior izquierda), **Datos** > **Entidades** > seleccione la entidad que desee. Seleccione la ficha **Paneles**.  
+2. Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. Seleccione la ficha **Paneles**.  
   
      O bien  
    
@@ -241,15 +239,13 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
   
 1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-2.  Seleccione **Controlado por modelo** (parte inferior izquierda).  
-  
-3.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
+2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
-4.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
+3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
   
-5.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.    
+4.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.    
   
-6.  Cuando se abre el formulario del panel, la **Entidad de filtro** se preestablece en la entidad para la que está creando el panel. La lista desplegable **Vista de entidad** contiene las vistas disponibles para la entidad. Seleccione la vista y rellene el resto de la información necesaria en la página.  
+5.  Cuando se abre el formulario del panel, la **Entidad de filtro** se preestablece en la entidad para la que está creando el panel. La lista desplegable **Vista de entidad** contiene las vistas disponibles para la entidad. Seleccione la vista y rellene el resto de la información necesaria en la página.  
   
  El resto de instalación es muy similar a la instalación del panel de varias secuencias de página principal que se describe en la sección anterior.  
   

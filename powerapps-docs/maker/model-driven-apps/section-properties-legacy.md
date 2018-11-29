@@ -28,9 +28,7 @@ search.app:
  Los encabezados y pies de página son similares a las secciones pero no se pueden quitar. Si no contienen nada no se mostrarán. 
 
 Puede acceder a las **Propiedades de sección** desde el sitio de PowerApps. 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 

@@ -43,7 +43,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 > [!NOTE]
 > También puede crear una nueva relación entre entidades de varios a varios (N:N) en su entorno mediante lo siguiente:
 > - Importe una solución que contenga la definición de la relación. Más información: [Importar, actualizar y exportar soluciones](import-update-export-solutions.md)
-> - Un programador puede usar [servicios de metadatos](../../developer/common-data-service/use-web-services.md#metadata-services) para escribir un programa para crear y actualizar relaciones entre entidades. Más información: [Documentación para desarrolladores: Personalizar metadatos de relaciones entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - Un programador puede usar [servicios de metadatos](../../developer/common-data-service/metadata-services.md) para escribir un programa para crear y actualizar relaciones entre entidades. Más información: [Documentación para desarrolladores: Personalizar metadatos de relaciones entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 

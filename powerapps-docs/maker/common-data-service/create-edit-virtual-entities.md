@@ -33,7 +33,7 @@ Las entidades virtuales están formadas por tres componentes principales: un *pr
   
 CDS for Apps incluye un proveedor de datos de OData que se puede usar para conectarse con un servicio web de OData v4 que tenga acceso a los datos externos. 
   
-Como alternativa, los programadores pueden crear sus propios proveedores de datos. Los proveedores de datos están instalados en un entorno como solución. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)
+Como alternativa, los programadores pueden crear sus propios proveedores de datos. Los proveedores de datos están instalados en un entorno como solución. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
  ![Diagrama de la entidad virtual](media/virtual-entity-diagram.png "Diagrama de la entidad virtual")  
   

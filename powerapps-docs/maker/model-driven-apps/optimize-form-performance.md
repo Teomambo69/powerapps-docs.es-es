@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>Optimizar el rendimiento de los formularios de aplicaciones controladas por modelos
 
-Los formularios que se cargan lentamente pueden reducir la productividad y la adopción por parte del usuario. Siga estas recomendaciones para maximizar la velocidad de carga de los formularios. Muchas de las prácticas recomendadas describe la forma en que un programador puede implementar scripts de formularios para la organización. Asegúrese de discutir estas prácticas recomendadas con los programadores que crean scripts de formularios para los formularios.  
+Los formularios que se cargan lentamente pueden reducir la productividad y la adopción por parte del usuario. Siga estas recomendaciones para maximizar la velocidad de carga de los formularios. Muchas de las prácticas recomendadas describen la forma en que un programador puede implementar scripts de formularios para la organización. Asegúrese de discutir estas prácticas recomendadas con los programadores que crean scripts de formularios para los formularios.  
   
 <a name="BKMK_FormDesign"></a>   
 ## <a name="form-design"></a>Diseño de formularios  

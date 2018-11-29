@@ -32,7 +32,7 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
 
 1. Iniciar sesión en [PowerApps](https://web.powerapps.com/). 
 
-2. Seleccione **Controlado por modelos** > **Datos** > **Entidades** >y, a continuación, seleccione la entidad que desee, como la entidad Cuenta. 
+2. Seleccione **Datos** > **Entidades** y, a continuación, seleccione la entidad que desee, como la entidad Cuenta. 
 
 3. Seleccione la pestaña **Formularios** y abra el formulario que desee, como el formulario principal **Cuenta**.
 

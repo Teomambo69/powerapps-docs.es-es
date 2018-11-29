@@ -28,9 +28,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Crea un panel  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).
-
-    ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -52,7 +50,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Editar un panel existente  
   
-1. En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).
+1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    

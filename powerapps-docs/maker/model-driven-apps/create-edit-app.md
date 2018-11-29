@@ -2,7 +2,7 @@
 title: Crear o editar una aplicación basada en modelos utilizando el diseñador de aplicaciones en PowerApps | MicrosoftDocs
 description: Aprender a crear o editar aplicaciones mediante el diseñador de aplicaciones
 keywords: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -38,14 +38,14 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Crear una aplicación  
 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  En la página **Inicio** de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco** para una aplicación basada en modelos.  
 
-    ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+    ![La opción empezar en blanco basada en modelos](media/start-from-blank-model-driven.png)
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. Seleccione **Aplicaciones** y, a continuación, seleccione **Crear una aplicación**.
+2. Seleccione **Crear esta aplicación**.
 
 3. En la página **Crear una nueva aplicación**, especifique los siguientes detalles: 
 
@@ -96,12 +96,12 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Editar una aplicación  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione una aplicación y, en la barra de herramientas, seleccione **Editar**.   
+2. En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione una aplicación basada en modelos y, en la barra de herramientas, seleccione **Editar**.   
 
 3. En el diseñador de aplicaciones, agregue o edite componentes de la aplicación, según sea necesario. Más información: [Agregar o editar componentes de la aplicación](add-edit-app-components.md)  
  

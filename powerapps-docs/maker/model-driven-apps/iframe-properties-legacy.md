@@ -25,9 +25,7 @@ Puede agregar los iFrame a un formulario para integrar contenido de otro sitio w
 
 Para ver las propiedades de IFrame, siga estos pasos.
 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-    ![Modo de diseño controlado por modelos](../model-driven-apps/media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 

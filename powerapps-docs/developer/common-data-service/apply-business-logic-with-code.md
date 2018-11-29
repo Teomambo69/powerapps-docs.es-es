@@ -1,71 +1,43 @@
 ---
-title: Aplicación de lógica de negocios con código | Microsoft Docs
-description: Vea cómo los desarrolladores pueden usar código para aplicar la lógica de negocios en Common Data Service for Apps.
+title: Aplicar lógica de negocios mediante código (Common Data Service (CDS) para aplicaciones) | MicrosoftDocs
+description: Aprenda cómo los desarrolladores pueden usar código para aplicar lógica de negocio en Common Data Service para aplicaciones.
 services: ''
 suite: powerapps
 documentationcenter: na
 author: JimDaly
-manager: faisalmo
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/26/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843346"
+  - PowerApps
+  - D365CE
 ---
-# <a name="apply-business-logic-with-code"></a>Aplicación de lógica de negocios con código
 
-Siempre que sea posible, primero se debe intentar aplicar una de las distintas opciones de proceso declarativo cuando un requisito implica la definición de lógica de negocios. Vea [Crear una lógica de negocios personalizada con procesos (Guía de personalización de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
+# <a name="apply-business-logic-using-code"></a>Aplicar la lógica de negocios usando código
 
-Cuando un proceso declarativo no cumple un requisito, como desarrollador tiene varias opciones. En este tema se presentarán opciones comunes para escribir código.
+Siempre que sea posible, primero debe considerar aplicar una de las diversas opciones de proceso declarativas para definir o aplicar la lógica de negocios. Más información: [Aplicar lógica de negocios en CDS para aplicaciones](../../maker/model-driven-apps/guide-staff-through-common-tasks-processes.md)
 
-## <a name="create-a-workflow-extension"></a>Crear una extensión de flujo de trabajo
-
-Se puede escribir un ensamblado .NET para proporcionar nuevas opciones en el Diseñador de procesos. Este método proporciona una nueva opción para los usuarios que usan el Diseñador de flujos de trabajo para aplicar una condición o realizar una acción nueva. Después, los usuarios que no son desarrolladores pueden reutilizar una extensión de flujo de trabajo para aplicar la lógica en el código.
-
-Más información: [Actividades de flujo de trabajo personalizadas (ensamblados de flujo de trabajo) (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies)
+Cuando un proceso declarativo no cumple un requisito, como un desarrollador tiene varias opciones. Este tema introducirá opciones comunes de escribir código.
 
 ## <a name="create-a-plug-in"></a>Crear un complemento
 
-Puede escribir un ensamblado .NET como complemento para el flujo de transacciones de datos para aplicar la lógica de negocios en el servidor. Con Common Data Service for Apps hay un marco que permite registrar eventos específicos para ejecutar en un ensamblado el código definido en una clase. Esa clase hereda una interfaz específica que expone un [método Execute](/dotnet/api/microsoft.xrm.sdk.iplugin.execute). Cuando se produce el evento registrado, se invoca el método `Execute` de la clase y se pasan datos contextuales sobre el evento.
+Puede escribir un ensamblado de .NET para ejecutar como complemento en la transacción de datos para aplicar lógica empresarial en el servidor. Con Common Data Service para aplicaciones puede usar un marco para registrar eventos específicos de ejecución de código definido en una clase en un ensamblado. 
 
-Para registrar los ensamblados se usa la *herramienta de registro de complementos*.
+Más información: [Escriba complementos para ampliar los procesos de negocio](plug-ins.md)
 
-En el método `Execute`, se puede usar el modelo de objetos definido en los ensamblados del SDK para evaluar los datos de evento contextuales y realizar las acciones oportunas para hacer lo siguiente:
-- Determinar si se debe cancelar la operación generando un error.
-- Realizar cambios en los datos contextuales pasados al método Execute.
-- Realizar operaciones adicionales para automatizar los procesos mediante el servicio de la organización.
+## <a name="create-a-workflow-extension"></a>Creación de una extensión de flujo
 
-### <a name="synchronous-and-asynchronous-plug-ins"></a>Complementos sincrónicos y asincrónicos
-Los complementos se pueden registrar para ejecutarse de forma sincrónica dentro de la transacción, o bien se pueden diferir y enviar a una cola que aplicará la lógica en el momento de menor impacto en el servidor. Por este motivo, se prefieren los complementos asincrónicos.
+Puede escribir un ensamblado de .NET para proporcionar nuevas opciones en el diseñador del proceso. Este método proporciona una nueva opción para las personas que usan el diseñador de flujo de trabajo para aplicar una condición o para realizar una nueva acción. Una extensión del flujo de trabajo se puede volver a usar por personas que no son programadores para aplicar la lógica de su código.
 
-Al registrar el complemento para que se ejecute de forma sincrónica para un evento, se puede elegir cuándo se debe ejecutar el código. Hay tres fases:
-
-|Evento  |Descripción  |
-|---------|---------|
-|Anterior a la validación|Se produce antes de que comience la transacción de base de datos. Se trata de un buen lugar para aplicar la lógica de negocios para determinar si se debe cancelar la operación antes de que comience la transacción para evitar la penalización de rendimiento que supone revertir la transacción.|
-|Anterior a la operación|Se produce una vez iniciada la transacción de base de datos. Si en esta fase se cancela una operación, se debe revertir la transacción|
-|Posterior a la operación|Se produce dentro de la transacción de base de datos una vez completada la operación de datos principal. Incluye los cambios que se hayan aplicado en los eventos anteriores pero se produce una penalización incluso mayor al cancelar la operación.|
-
-> [!NOTE]
-> Los complementos sincrónicos tienen restricciones sobre la cantidad de recursos del sistema que pueden usar. Si un complemento supera los umbrales o deja de responder, se producirá una excepción si se cancela la operación.
-
-Más información: [Desarrollo de complementos para la ampliación del proceso de negocio (Guía para desarrolladores de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
+Más información: [Extensiones de flujo de trabajo](workflow/workflow-extensions.md)
 
 ### <a name="see-also"></a>Vea también
 
-[Common Data Service for Apps Developer Overview](overview.md) (Introducción para desarrolladores de Common Data Service for Apps)
+[Información general para desarrolladores de Common Data Service para aplicaciones](overview.md)

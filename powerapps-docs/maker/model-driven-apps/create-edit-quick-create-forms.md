@@ -2,7 +2,7 @@
 title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de creación rápida.
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -53,9 +53,8 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
   
 ### <a name="how-to-create-a-quick-create-form"></a>Cómo crear un formulario de creación rápida  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     
@@ -92,7 +91,7 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 ### <a name="to-edit-a-quick-create-form"></a>Para editar un formulario de creación rápida  
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    

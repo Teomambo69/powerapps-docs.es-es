@@ -26,9 +26,8 @@ search.app:
 
  Al crear o editar una vista puede configurar el criterio de ordenación ascendente o descendente.   
   
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 
 2.  Expanda **Datos**, seleccione **Entidades** y, a continuación, seleccione la entidad que desee, como **Cuentas**.   
 3.  Seleccione la pestaña **Vistas** y, si se muestra, seleccione **Quitar filtro** y, a continuación, abra la vista que desee, como **Cuentas activas**.

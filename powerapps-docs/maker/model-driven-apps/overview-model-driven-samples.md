@@ -38,11 +38,14 @@ Para ejecutar o editar aplicaciones controladas por modelos de ejemplo, primero 
 
 ## <a name="customize-a-sample-app"></a>Personalizar una aplicación de ejemplo
 
-1. Inicie sesión en [powerapps.com](https://powerapps.com) y elija **Controlado por modelos** para el modo de diseño. 
+1. Iniciar sesión en [powerApps.com](https://powerapps.com)  
 
-    ![Elegir el modo de diseño](media/overview-model-driven-samples/choose-design-mode.png)
+    
 
-2. En la página principal, pase el cursor por encima de la aplicación de ejemplo y haga clic en **Personalizar**.
+2. En la página **Create**, pase el cursor por encima de la aplicación de ejemplo y haga clic en **Crear esta aplicación**.
+
+![Aplicación de ejemplo de modelo](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+
 3. El diseñador de aplicaciones se abrirá proporcionando varias opciones para personalizar la aplicación. 
 4. Para ver más opciones de personalización, haga clic en **Avanzadas** en la navegación izquierda del portal.
 

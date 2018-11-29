@@ -2,7 +2,7 @@
 title: Publicar cambios en PowerApps | MicrosoftDocs
 description: Aprenda a publicar los cambios realizados en una aplicación
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,7 +30,13 @@ search.app:
  
 ## <a name="publish-your-customizations"></a>Publique las personalizaciones
 
-- En el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer), seleccione **Publicar todas las personalizaciones**.  
+1.  Seleccione **Soluciones** en la barra de navegación izquierda.
+
+2.  Seleccione la solución que desea publicar para abrirla.
+
+3.  En la lista de comandos, seleccione **Publicar todas las personalizaciones**.  
+
+![Publicar todas las personalizaciones](media/publish-all-customizations.PNG "Publicar todas las personalizaciones")  
   
 > [!IMPORTANT]
 >  La preparación de personalizaciones puede tardar tiempo. Si aparece un mensaje que indica que la página del explorador ha dejado de responder, espere a que responda y no la cierre.  

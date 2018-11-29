@@ -66,7 +66,7 @@ Cuando se valida la aplicación, el lienzo del diseñador de la aplicación le m
 
 Publique una aplicación para que esté disponible para los usuarios.  
   
- Tras agregar componentes, validar y guardar la aplicación, en la barra de comandos, seleccione **Publicar**. También puede publicar la aplicación desde la ventana de la aplicación en la página [Mis aplicaciones](advanced-navigation.md#my-apps). En la vista **Aplicaciones que se están editando**, en la esquina inferior derecha de la ventana de la aplicación que desee publicar, seleccione el botón **Más opciones** (**...**) y después seleccione **Publicar**.  
+ Tras agregar componentes, validar y guardar la aplicación, en la barra de comandos, seleccione **Publicar**. También puede publicar la aplicación desde la ventana de la aplicación en la página [Mis aplicaciones](advanced-navigation.md#apps). En la vista **Aplicaciones que se están editando**, en la esquina inferior derecha de la ventana de la aplicación que desee publicar, seleccione el botón **Más opciones** (**...**) y después seleccione **Publicar**.  
   
  El estado de la aplicación cambia a Publicado. Puede verlo en la esquina superior derecha del diseñador de aplicaciones. La aplicación cambia de la vista **Aplicaciones que se están editando** a la vista **Aplicaciones publicadas**, y la fecha publicada se muestra en la ventana de la aplicación.  
   

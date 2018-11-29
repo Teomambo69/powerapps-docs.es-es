@@ -27,9 +27,7 @@ search.app:
 
 En este tema aprenderá a crear un gráfico del sistema. Los gráficos del sistema son gráficos propiedad de la organización, que los pone a disposición de cualquier persona con acceso para leer los datos que ejecutan la aplicación. Los gráficos del sistema no se pueden asignar ni compartir con usuarios específicos de la aplicación.  
   
-1. En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     

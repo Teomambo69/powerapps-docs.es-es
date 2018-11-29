@@ -48,9 +48,7 @@ search.app:
 
 ### <a name="open-the-view-editor"></a>Abrir el editor de vistas
 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-    ![Modo de diseño controlado por modelos](../model-driven-apps/media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Vistas**. 
 

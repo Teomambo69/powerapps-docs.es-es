@@ -2,7 +2,7 @@
 title: Tutorial para agregar o editar componentes de aplicación controlada por modelos con PowerApps | MicrosoftDocs
 description: Utilice el diseñador de aplicaciones de PowerApps para agregar o editar componentes.
 keywords: ''
-ms.date: 03/30/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -53,7 +53,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
 ## <a name="open-an-app"></a>Abra una aplicación
 1. Iniciar sesión en [PowerApps](https://web.powerapps.com/). 
 
-2. Seleccione **Controlado por modelo** > **Aplicaciones**, seleccione una aplicación existente o seleccione **Crear una aplicación**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
+2. Seleccione una aplicación basada en modelos ya existente o seleccione **Empezar en blanco**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Agregar un artefacto (entidad, panel, o flujo de proceso de negocio)  
  Cuando se agrega un panel o un flujo de proceso de negocio a una aplicación, las entidades que usan se agregan automáticamente a la aplicación. Cuando agrega una entidad, las ventanas de los activos se agregan automáticamente. Hay dos formas de agregar artefactos al lienzo del diseñador: mediante el botón **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Botón Agregar en el diseñador") en la barra de comandos o con los mosaicos de la pestaña **Componentes**.  

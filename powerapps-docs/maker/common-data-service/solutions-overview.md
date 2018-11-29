@@ -2,7 +2,7 @@
 title: Trabajar con soluciones en PowerApps | MicrosoftDocs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 06/21/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -27,32 +27,32 @@ search.app:
 <a name="BKMK_Solutions"></a>   
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
- Las soluciones existen para que una aplicación basada en modelos se pueda adquirir, compartir o transportar de otro modo desde una organización a otra. Puede obtener soluciones desde [AppSource](https://appsource.microsoft.com/) o desde un proveedor de software independiente (ISV). Una solución es un archivo que puede importar a un entorno como una aplicación o aplicar un conjunto de personalizaciones en una aplicación existente.  
+  En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como a otros componentes como entidades, conjuntos de opciones, etc. Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor independiente de software (ISV).
   
 Más información: [Notas del producto: Patrones y principios para los creadores de soluciones](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
   
 > [!NOTE]
 >  Si es un ISV que crea una aplicación que va a distribuir, deberá usar soluciones. Para obtener más información sobre cómo usar soluciones, consulte [Empaquetar y distribuir extensiones con soluciones](https://msdn.microsoft.com/library/gg334530.aspx).  
   
- Si solo está interesado en crear aplicaciones de PowerApps para el uso de la organización o en personalizar Dynamics 365, esto es lo que necesita saber sobre las soluciones:  
+ Si está interesado en crear aplicaciones de PowerApps para el uso de la organización o en personalizar Dynamics 365, esto es lo que necesita saber sobre las soluciones:  
   
 -   Crear soluciones es opcional. Puede crear o personalizar aplicaciones en su entorno de PowerApps directamente sin tener que crear una solución.  
   
--   Al personalizar directamente el entorno de PowerApps, trabaja con una solución especial denominada **Solución predeterminada de Common Data Services**. Esta solución contiene todos los componentes del sistema.  
+-   Al personalizar directamente el entorno de PowerApps sin crear ninguna solución, trabaja con una solución especial denominada **Solución predeterminada de Common Data Services**. Esta solución contiene todas las personalizaciones que realiza en el entorno de PowerApps.  
   
--   Puede exportar la solución predeterminada para crear una copia de seguridad de las personalizaciones que ha definido en su organización. Es adecuado disponer de esta en la peor situación.  
+-   Hay otra solución especial llamada **Solución predeterminada**. Esta solución contiene todos los componentes en el sistema, es creados por usted o por otros. Puede exportar la **Solución predeterminada** para crear una copia de seguridad de las personalizaciones que ha definido en su organización. Esto es una buena práctica para realizar copia de seguridad de los cambios en un escenario de peor caso.  
   
 <a name="BKMK_SolutionComponents"></a>   
-### <a name="solution-components"></a>Componentes de solución  
- Un componente de la solución representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente de la solución. La siguiente es una lista de componentes de la solución que puede ver en una solución:  
+### <a name="components"></a>Componentes  
+ Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. La siguiente es una lista de componentes que puede ver en una solución:  
   
 -   Cinta de la aplicación  
-
--   Aplicación 
   
 -   Plantilla de artículo  
   
 -   Regla de negocio  
+
+-   Aplicación de lienzo 
   
 -   Gráfico  
   
@@ -66,19 +66,23 @@ Más información: [Notas del producto: Patrones y principios para los creadores
   
 -   Plantilla de correo electrónico  
   
--   Entity  
+-   Entidad  
   
 -   Relación de entidad  
   
 -   Campo  
   
 -   Perfil de seguridad de campo  
+
+-   Flujo
   
 -   Formulario  
   
 -   Plantilla de combinación de correspondencia  
   
 -   Mensaje  
+
+-   Aplicación basada en modelo
   
 -   Conjunto de opciones  
   
@@ -100,46 +104,46 @@ Más información: [Notas del producto: Patrones y principios para los creadores
   
 -   Recurso web  
   
- La mayoría de los componentes están anidados en otros componentes de la solución. Por ejemplo, una entidad contiene formularios, vistas, gráficos, campos, relaciones de entidad, mensajes y reglas de negocio. Cada uno de los componentes de la solución necesita que exista una entidad. Un campo no puede existir fuera de una entidad. Decimos que el campo depende de la entidad. Existe el doble de tipos de componentes de la solución que se muestra en la lista anterior, pero la mayoría de ellos no aparecen en la aplicación.  
+ Algunos componentes se anidan en otros componentes. Por ejemplo, una entidad contiene formularios, vistas, gráficos, campos, relaciones de entidad, mensajes y reglas de negocio. Cada uno de los componentes necesita que exista una entidad. Un campo no puede existir fuera de una entidad. Decimos que el campo depende de la entidad. Existe el doble de tipos de componentes que se muestra en la lista anterior, pero la mayoría de ellos no se anidan en otros componentes y no son visibles en la aplicación.  
   
- El objetivo de tener componentes de la solución es mantener un seguimiento de las limitaciones sobre lo que se puede personalizar mediante propiedades administradas y todas las dependencias de soluciones para que se pueda exportar, importar y (en las soluciones administradas) eliminar sin dejar nada atrás.  
+ El objetivo de tener componentes es mantener un seguimiento de las limitaciones sobre lo que se puede personalizar mediante propiedades administradas y todas las dependencias para que se pueda exportar, importar y (en las soluciones administradas) eliminar sin dejar nada atrás.  
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
 ### <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas  
- Una solución **administrada** puede desinstalarse una vez importada. Todos los componentes de la solución se quitan al desinstalar la solución.  
+ Hay soluciones **administradas** y **no administradas**. Una solución **administrada** no se puede modificar y puede desinstalarse una vez importada. Todos los componentes de la solución se quitan al desinstalar la solución.  
   
- Cuando importa una solución **no administrada**, debe agregar todos los componentes de la solución a la solución predeterminada. No puede quitar componentes desinstalando la solución.  
+ Cuando importa una solución **no administrada**, debe agregar todos los componentes de la solución a su entorno. No puede quitar componentes desinstalando la solución.  
   
- Cuando importa una solución **no administrada** que contiene componentes de la solución que ya personalizó, las personalizaciones se sobrescribirán por las personalizaciones de la solución no administrada. No se puede deshacer esto.  
+ Cuando importa una solución **no administrada** que contiene componentes que ya personalizó, las personalizaciones se sobrescribirán por las personalizaciones de la solución no administrada importada. No se puede deshacer esto.  
   
 > [!IMPORTANT]
->  Instale una solución no administrada si solo desea agregar todos los componentes de la solución predeterminada y sobrescribir las personalizaciones existentes.  
+>  Instale una solución no administrada si solo desea agregar todos los componentes del entorno y sobrescribir las personalizaciones existentes.  
   
- Incluso si no va a distribuir solución, es posible que desee crear y usar una solución no administrada para tener una vista diferente que solo incluya las partes de la aplicación que ha personalizado. Siempre que personalice algún elemento, agréguelo a la solución no administrada que ha creado.  
+ Incluso si no va a distribuir las aplicaciones o personalizaciones, es posible que desee crear y usar una solución no administrada para tener una vista diferente que solo incluya las partes de la aplicación que ha personalizado. Siempre que personalice algún elemento, agréguelo a la solución no administrada que ha creado.  
   
- Solo puede exportar la solución predeterminada como una solución no administrada.  
+ Solo puede exportar la **Solución predeterminada** como una solución no administrada.  
   
- Para crear una solución **administrada**, puede elegir la opción de la solución administrada cuando se exporta la solución. Si crea una solución administrada, no puede importarla nuevamente a la misma organización usada para crearla. Solo puede importarla en otra organización.  
+ Para crear una solución **administrada**, puede elegir la opción **Como administrado** cuando se exporta la solución. Si crea una solución administrada, no puede importarla nuevamente al mismo entorno usado para crearla. Solo puede importarla en otro entorno.  
   
 <a name="BKMK_HowSolutionsAreApplied"></a>   
 ### <a name="how-solutions-are-applied"></a>Cómo se aplican las soluciones  
- Todas las soluciones se evalúan como capas para determinar lo que hace la aplicación hará realmente. En el siguiente diagrama se muestra cómo las soluciones administradas y no administradas se evalúan y cómo los cambios que se realicen en ellas aparecerán en la organización.  
+ Todas las soluciones se evalúan como capas para determinar lo que hace la aplicación hará realmente. En el siguiente diagrama se muestra cómo las soluciones administradas y no administradas se evalúan y cómo los cambios que se realicen en ellas aparecerán en el entorno.  
   
  ![Disposición en capas de la solución](media/solution-layering.png "Disposición en capas de la solución")  
   
  Empezando por abajo y siguiendo hasta el principio:  
   
  **Solución del sistema**  
- La solución del sistema es como una solución administrada que toda organización tiene. La solución del sistema es la definición de todos los componentes predefinidos del sistema.  
+ La solución del sistema es como una solución administrada que todo entorno tiene. La solución del sistema es la definición de todos los componentes predefinidos del sistema.  
   
  **Soluciones administradas**  
  Las soluciones administradas pueden editar componentes de la solución del sistema y agregar nuevos componentes. Si se instalan varias soluciones administradas, la primera que se instala aparece debajo de la solución administrada instalada más tarde. Esto significa que la segunda solución instalada puede personalizar la que se ha instalado antes. Cuando dos soluciones administradas tienen definiciones en conflicto, la regla general es la "última gana". Si desinstala una solución administrada, la solución administrada siguiente toma efecto. Si desinstala todas las soluciones administradas, el comportamiento predeterminado definido en la solución del sistema se aplica.  
   
  **Personalizaciones no administradas**  
- Las personalizaciones no administradas son los cambios que haya realizado en su organización a través de una solución no administrada. La solución del sistema define lo que se puede y no se puede personalizar mediante propiedades administradas. Los editores de soluciones administradas tienen la misma capacidad de restringir su capacidad de personalización de los componentes de la solución que agregan a su solución. Puede personalizar cualquier componente de la solución que no tenga propiedades administradas que le impidan personalizarlo.  
+ Las personalizaciones no administradas son los cambios que haya realizado en su entorno a través de una solución no administrada. La solución del sistema define lo que se puede y no se puede personalizar mediante propiedades administradas. Los editores de soluciones administradas tienen la misma capacidad de restringir su capacidad de personalización de los componentes de la solución que agregan a su solución. Puede personalizar cualquier componente de la solución que no tenga propiedades administradas que le impidan personalizarlo.  
   
  **Comportamiento de aplicación**  
- Esto es lo que se ve realmente en su organización. La solución predeterminada del sistema más todas las soluciones administradas, más todas las personalizaciones no administradas que ha aplicado.  
+ Esto es lo que se ve realmente en su entorno. La solución predeterminada del sistema más todas las soluciones administradas, más todas las personalizaciones no administradas que ha aplicado.  
   
 <a name="BKMK_ManagedProperties"></a>   
 ### <a name="managed-properties"></a>Propiedades administradas  

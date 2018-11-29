@@ -1,11 +1,11 @@
 ---
-title: Uso de scripting del lado cliente con aplicaciones controladas por modelos | Microsoft Docs
-description: Obtenga información sobre cómo los desarrolladores pueden usar JavaScript en scripts del lado cliente y aplicaciones controladas por modelos.
+title: Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript | Microsoft Docs
+description: Aprenda cómo los desarrolladores pueden usar JavaScript en scripts del lado cliente y aplicaciones basadas en modelos
 services: ''
 suite: powerapps
 documentationcenter: na
 author: JimDaly
-manager: faisalmo
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,38 +13,51 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/13/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 38a1a5371cbaf5d10c59a291127c13a1d00a3056
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42829408"
+  - PowerApps
+  - D365CE
 ---
-# <a name="client-scripting-with-model-driven-apps"></a>Scripting del lado cliente con aplicaciones controladas por modelos
 
-El scripting del lado cliente con JavaScript es uno de los métodos para aplicar lógica de procesos de negocio personalizada para mostrar datos en un formulario en una aplicación controlada por modelos, pero no debería ser la primera opción. *Las reglas de negocio* proporcionan una manera para que alguien que no conoce JavaScript y no sea desarrollador aplique lógica de procesos de negocio en un formulario. Más información: [Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario (Guía de personalización de Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+# <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript
+
+El scripting del cliente mediante JavaScript es una de las distintas formas de aplicar la lógica personalizada de procesos de negocios para mostrar los datos de un formulario en una aplicación basada en modelos, pero no debería ser su primera elección. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)
 
 > [!TIP]
-> Encontrará el diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando examine una entidad, busque la pestaña **Reglas de negocio**.
+> Encontrará al diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
 
-Si no se pueden alcanzar los requisitos de negocio con una regla de negocio, encontrará que el scripting del lado cliente con el modelo de objetos de la API cliente proporciona una manera eficaz de extender el comportamiento de la aplicación y habilitar la automatización en el cliente.
+Si el requisito empresarial no no se puede conseguir con una regla de negocio, descubrirá que el scripting de cliente que usa el modelo de objetos API de cliente proporciona una forma eficaz de ampliar el comportamiento de la aplicación y habilitar la automatización en el cliente.
 
-## <a name="resources"></a>Recursos
+## <a name="use-client-scripting-in-model-driven-apps"></a>Usar el scripting de cliente en aplicaciones basadas en modelos
 
-Los recursos siguientes para scripting del lado cliente están disponibles en la Guía para desarrolladores de Dynamics 365 Customer Engagement.
+Los formularios en las aplicaciones basadas en modelos son útiles para mostrar los datos al usuario. Un formulario en aplicaciones basadas en modelos puede contener elementos como campos, un formulario rápido o una cuadrícula. Un [evento](clientapi/events-forms-grids.md) se produce en formularios de aplicaciones basadas en modelos cuando:
+- Se carga un formulario
+- Se cambian los datos en un campo o un elemento dentro del formulario
+- Se guardan datos en un formulario
 
-- [Ejemplo de script en Customer Engagement mediante JavaScript](/dynamics365/customer-engagement/developer/clientapi/client-scripting)
-- [Eventos de formularios y cuadrículas en Customer Engagement](/dynamics365/customer-engagement/developer/clientapi/events-forms-grids)
-- [Comprender el modelo de objetos de la API del cliente](/dynamics365/customer-engagement/developer/clientapi/understand-clientapi-object-model)
-- [Tutorial: Escribir el primer script de cliente](/dynamics365/customer-engagement/developer/clientapi/walkthrough-write-your-first-client-script)
-- [Depurar el código JavaScript para Customer Engagement](/dynamics365/customer-engagement/developer/clientapi/debug-javascript-code)
-- [Prácticas recomendadas: ejemplo de script en Customer Engagement](/dynamics365/customer-engagement/developer/clientapi/client-scripting-best-practices)
-- [Referencia de la API de cliente de Customer Engagement](/dynamics365/customer-engagement/developer/clientapi/reference)
+Puede adjuntar el código de JavaScript para que "reaccione" a estos eventos de forma que se ejecute el código cuando se produzca el evento en el formulario. Adjunte el código de JavaScript (scripts) a estos eventos usando un [recurso web de script](script-jscript-web-resources.md) en aplicaciones basadas en modelos. 
+
+Las aplicaciones basadas en modelos proporcionan un amplio conjunto de **API de cliente** para interactuar con objetos de formulario y eventos para controlar qué y cuándo se debe mostrar en un formulario.
+
+> [!NOTE]
+> Algunas API de cliente son obsoletas en la versión actual de aplicaciones basadas en modelos. Asegúrese de tener en cuenta estas API al escribir el código del lado cliente para las aplicaciones basadas en modelos. Más información: [API de cliente obsoletas](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)
+
+## <a name="get-started-here"></a>Empecemos aquí
+
+[Eventos de formularios y cuadrículas](clientapi/events-forms-grids.md)<br/>
+[Comprender el modelo de objetos de la API de cliente](clientapi/understand-clientapi-object-model.md)<br/>
+[Tutorial: Escribir el primer script de cliente](clientapi/walkthrough-write-your-first-client-script.md)
+
+## <a name="reference"></a>Referencia
+
+[Referencia de API de cliente](clientapi/reference.md)
+
+
+### <a name="related-topics"></a>Temas relacionados
+
+[Recursos web para aplicaciones basadas en modelos](web-resources.md)<br/>
+[Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)
 

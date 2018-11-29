@@ -2,7 +2,7 @@
 title: 'Creación y edición de relaciones de entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones | MicrosoftDocs'
 description: Aprenda a crear relaciones entre entidades de uno a varios o de varios a uno con el explorador de soluciones de PowerApps
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/28/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''

@@ -40,6 +40,9 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
 
     * **Nombre para mostrar plural** - Este campo se rellena automáticamente cuando introduce un nombre para mostrar, pero puede cambiarlo si fuera necesario. El nombre para mostrar plural es el nombre de la entidad en la API web de Common Data Service y se usa para interactuar con esta entidad desde PowerApps o Flow.
     * **Nombre** - Este campo también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se definió cuando se creó el entorno y garantiza que las entidades que cree se puedan exportar e importar en otros entornos sin entrar en conflicto con otros nombres de entidad. Puede cambiar este prefijo actualizándolo en su publicador para la solución predeterminada de Common Data Service. Para evitar que se dañen las aplicaciones existentes, no puede cambiar el nombre después de guardar la entidad.
+
+       > [!NOTE]
+       > Para que el nombre de la entidad funcione con [búsqueda incrustada de conocimiento de Dynamics 365 for Customer Service](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search), la longitud máxima del nombre de entidad incluido el prefijo del editor no puede superar los 24 caracteres.
      
     ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
 

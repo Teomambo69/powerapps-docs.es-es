@@ -37,9 +37,7 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Acceda al editor de formularios a través del diseñador de aplicaciones en PowerApps
 
-1.  En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-    ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione la aplicación que desee y, en la barra de herramientas, seleccione **Editar**.  
 
@@ -60,9 +58,7 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Acceso al editor de formularios a través de la solución predeterminada
 
-1.  En el sitio de [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1.  Iniciar sesión en [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
 

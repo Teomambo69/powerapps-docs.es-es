@@ -45,9 +45,8 @@ Más información: [Comprender las vistas](create-edit-views.md)
 
 ## <a name="create-a-public-view-in-powerapps"></a>Crear una vista pública en PowerApps
 Como creador de aplicaciones, puede crear y editar vistas públicas usando PowerApps.
-1. En el sitio de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
