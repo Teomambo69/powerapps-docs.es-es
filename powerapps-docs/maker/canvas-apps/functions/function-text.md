@@ -1,5 +1,5 @@
 ---
-title: Función Texto | Microsoft Docs
+title: Función Text | Microsoft Docs
 description: Información de referencia para la función Text en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek

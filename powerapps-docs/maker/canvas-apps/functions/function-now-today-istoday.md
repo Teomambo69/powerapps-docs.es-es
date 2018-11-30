@@ -1,6 +1,6 @@
 ---
-title: Funciones Ahora, Hoy y EsHoy | Microsoft Docs
-description: Información de referencia de las funciones Ahora, Hoy y EsHoy de PowerApps, con sintaxis y ejemplos
+title: Funciones Now, Today e IsToday | Microsoft Docs
+description: Información de referencia de las funciones Now, Today e IsToday de PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -20,15 +20,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42843455"
 ---
-# <a name="now-today-and-istoday-functions-in-powerapps"></a>Funciones Ahora, Hoy y EsHoy en PowerApps
+# <a name="now-today-and-istoday-functions-in-powerapps"></a>Funciones Now, Today e IsToday en PowerApps
 Devuelve la fecha y hora actuales y comprueba si un valor de fecha y hora es el día de hoy.
 
 ## <a name="description"></a>Descripción
 La función **Now** devuelve la fecha y hora actuales como un valor de fecha y hora.
 
-La función **Today** devuelve la fecha actual como un valor de fecha y hora. La parte de la hora es la medianoche. **EsHoy** tiene el mismo valor a lo largo del día, desde hoy a medianoche hasta mañana a medianoche.
+La función **Today** devuelve la fecha actual como un valor de fecha y hora. La parte de la hora es la medianoche. **Today** tiene el mismo valor a lo largo del día, desde hoy a medianoche hasta mañana a medianoche.
 
-La función **EsHoy** comprueba si un valor de fecha y hora está comprendido entre hoy a medianoche y mañana a medianoche. Con esta función, se devuelve un valor booleano **true** o **false**.
+La función **IsToday** comprueba si un valor de fecha y hora está comprendido entre hoy a medianoche y mañana a medianoche. Con esta función, se devuelve un valor booleano **true** o **false**.
 
 Todas estas funciones funcionan con la hora local del usuario actual.
 
@@ -50,9 +50,9 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 
 **Today**()
 
-**IsToday**( *FechaHora* )
+**IsToday**( *DateTime* )
 
-* *FechaHora*: requerido.  El valor de fecha y hora para comprobar.
+* *DateTime*: requerido.  El valor de fecha y hora para comprobar.
 
 ## <a name="examples"></a>Ejemplos
 En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febrero de 2015** y el idioma es **en-us**.
@@ -70,7 +70,7 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
 #### <a name="display-a-clock-that-updates-in-real-time"></a>Mostrar un reloj actualizado en tiempo real
 
-1. Agregue un control **[Temporizador](../controls/control-timer.md)**, establezca su propiedad **Duration** en **1000** y establezca su propiedad **Repeat** en **true**.
+1. Agregue un control **[Timer](../controls/control-timer.md)**, establezca su propiedad **Duration** en **1000** y establezca su propiedad **Repeat** en **true**.
 
     El temporizador se ejecutará durante un segundo y volverá a empezar automáticamente, y así sucesivamente. 
 
@@ -82,7 +82,7 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
     ![Pantalla con un control de temporizador con la fórmula OnTimerEnd = Set(CurrentTime, Now()).](media/function-now-today-istoday/now-set-currenttime.png)
 
-1. Agregue un control **[Etiqueta](../controls/control-text-box.md)** y establezca su propiedad **Text** en esta fórmula:
+1. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **Text** en esta fórmula:
 
     **Text( CurrentTime, LongTime24 )**
 

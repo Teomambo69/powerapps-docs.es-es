@@ -1,5 +1,5 @@
 ---
-title: Función Restablecer| Microsoft Docs
+title: Función Reset | Microsoft Docs
 description: Información de referencia de la función Reset en PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
@@ -43,7 +43,7 @@ Los controles de entrada también se restablecen cuando su propiedad **Default**
 1. Inserte un control **Entrada de texto** en una pantalla.  De forma predeterminada, su nombre será **TextInput1** y el valor de su propiedad **Default** será **"Entrada de texto"**.
 2. Escriba un valor nuevo en el cuadro de texto.  
 3. Inserte un control **Botón** en la pantalla.
-4. Establezca la propiedad **AlSeleccionar** del botón en **Reset( TextInput1 )**.
+4. Establezca la propiedad **OnSelect** del botón en **Reset( TextInput1 )**.
 5. Seleccione el botón.  Esto puede hacerse incluso durante la creación mediante la realización de la selección hacia los extremos del control.
 6. El contenido del cuadro de texto volverá al valor de la propiedad **Default**.
 

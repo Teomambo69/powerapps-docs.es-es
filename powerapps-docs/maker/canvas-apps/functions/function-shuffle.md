@@ -1,6 +1,6 @@
 ---
 title: Función Shuffle | Microsoft Docs
-description: Información de referencia de la función Aleatorio de PowerApps, con sintaxis y ejemplos
+description: Información de referencia de la función Shuffle de PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -20,21 +20,21 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42863577"
 ---
-# <a name="shuffle-function-in-powerapps"></a>Función Aleatorio en PowerApps
+# <a name="shuffle-function-in-powerapps"></a>Función Shuffle en PowerApps
 Reordena aleatoriamente los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
 
 ## <a name="description"></a>Descripción
-La función **Aleatorio** reordena los registros de una tabla.
+La función **Shuffle** reordena los registros de una tabla.
 
-**Aleatorio** devuelve una tabla que tiene las mismas [columnas](../working-with-tables.md#columns) y número de filas que el argumento.
+**Shuffle** devuelve una tabla que tiene las mismas [columnas](../working-with-tables.md#columns) y número de filas que el argumento.
 
 ## <a name="syntax"></a>Sintaxis
-**Aleatorio**( *Tabla* )
+**Shuffle**( *Table* )
 
 * *Table*: requerido.  La tabla que se va a ordenar de forma aleatoria.
 
 ## <a name="example"></a>Ejemplo
 Si almacena detalles sobre las cartas de la baraja en una [colección](../working-with-data-sources.md#collections) denominada **Deck**, esta fórmula devuelve una copia de dicha colección que ha sido ordenada de forma aleatoria.
 
-**Aleatorio(Deck)**
+**Shuffle(Deck)**
 

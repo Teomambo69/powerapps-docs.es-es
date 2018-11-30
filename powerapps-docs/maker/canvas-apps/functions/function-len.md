@@ -29,9 +29,9 @@ Si especifica una cadena única como argumento, el valor devuelto es la longitud
 Si especifica una cadena [vacía](function-isblank-isempty.md), **Len** devuelve 0.
 
 ## <a name="syntax"></a>Sintaxis
-**Len**( *Cadena* )
+**Len**( *String* )
 
-* *Cadena*: requerido. La cadena que se va a medir.
+* *String*: requerido. La cadena que se va a medir.
 
 **Len**( *SingleColumnTable* )
 

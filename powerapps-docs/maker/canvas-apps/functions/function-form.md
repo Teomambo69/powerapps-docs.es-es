@@ -1,6 +1,6 @@
 ---
-title: Funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm | Microsoft Docs
-description: Información de referencia sobre las funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps, incluidos ejemplos y sintaxis
+title: Funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm | Microsoft Docs
+description: Información de referencia sobre las funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42865817"
 ---
-# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditarFormulario, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
+# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
 Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)**.
 
 ## <a name="overview"></a>Información general
@@ -33,14 +33,14 @@ Estas funciones cambian el estado del control **Editar formulario**.  El control
 | **FormMode.View** |El formulario se rellena con un registro existente pero el usuario no puede modificar los valores de los campos. |
 
 ## <a name="description"></a>Descripción
-Estas funciones a menudo se invocan desde la fórmula **[AlSeleccionar](../controls/properties-core.md)** de un control **[Botón](../controls/control-button.md)** o **[Imagen](../controls/control-image.md)** para que el usuario pueda guardar las modificaciones, abandonarlas o crear un registro. También puede [usar conjuntamente controles y estas funciones](../working-with-forms.md) para crear una solución completa.
+Estas funciones a menudo se invocan desde la fórmula **[OnSelect](../controls/properties-core.md)** de un control **[Botón](../controls/control-button.md)** o **[Imagen](../controls/control-image.md)** para que el usuario pueda guardar las modificaciones, abandonarlas o crear un registro. También puede [usar conjuntamente controles y estas funciones](../working-with-forms.md) para crear una solución completa.
 
 Estas funciones no devuelven ningún valor.
 
 ### <a name="submitform"></a>SubmitForm
-Use la función **SubmitForm** de la propiedad **[AlSeleccionar](../controls/properties-core.md)** de un control Botón para guardar los cambios de un control Formulario en el origen de datos.
+Use la función **SubmitForm** de la propiedad **[OnSelect](../controls/properties-core.md)** de un control Botón para guardar los cambios de un control Formulario en el origen de datos.
 
-Antes de enviar cualquier cambio, esta función comprueba problemas de validación con cualquier campo que se haya marcado como requerido o que tenga una o más restricciones en su valor. Este comportamiento es idéntico al de la función **[Validar](function-validate.md)**.
+Antes de enviar cualquier cambio, esta función comprueba problemas de validación con cualquier campo que se haya marcado como requerido o que tenga una o más restricciones en su valor. Este comportamiento es idéntico al de la función **[Validate](function-validate.md)**.
 
 **SubmitForm** también comprueba la propiedad **[Valid](../controls/control-form-detail.md)** del control Formulario, que es una agregación de todas las propiedades **[Valid](../controls/control-card.md)** de los controles **[Card](../controls/control-card.md)** que contiene el control Formulario. Si se produce un problema, no se envían los datos y las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)** del control Formulario se establecen en consecuencia.
 
@@ -49,8 +49,8 @@ Si se supera la validación, **SubmitForm** envía el cambio al origen de datos.
 * Si se realiza correctamente, se ejecutará el comportamiento **[OnSuccess](../controls/control-form-detail.md)** del formulario y se borrarán las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)**.  Si el formulario se encontraba en modo **FormMode.New**, se devolverá al modo **FormMode.Edit**.
 * Si no se realiza correctamente, se ejecutará el comportamiento **[OnFailure](../controls/control-form-detail.md)** del formulario y se establecerán las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)** en consecuencia.  El modo del formulario no se modifica.  
 
-### <a name="editform"></a>EditarFormulario
-La función **EditarFormulario** cambia el modo del control Formulario a **FormMode.Edit**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  Si la función **SubmitForm** se ejecuta cuando el formulario está en este modo, se cambiará un registro, no se creará.  **FormMode.Edit** es el valor predeterminado del control Formulario.
+### <a name="editform"></a>EditForm
+La función **EditForm** cambia el modo del control Formulario a **FormMode.Edit**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  Si la función **SubmitForm** se ejecuta cuando el formulario está en este modo, se cambiará un registro, no se creará.  **FormMode.Edit** es el valor predeterminado del control Formulario.
 
 ### <a name="newform"></a>NewForm
 La función **NewForm** cambia el modo del control Formulario a **FormMode.New**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se omite y los valores predeterminados de la propiedad **[DataSource](../controls/control-form-detail.md)** rellenan el formulario. Si la función **SubmitForm** se ejecuta cuando el formulario está en este modo, se creará un registro, no se cambiará.
@@ -75,7 +75,7 @@ El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina 
 
 * *FormName*: requerido. Control Formulario para enviar al origen de datos.
 
-**EditarFormulario**( *FormName* )
+**EditForm**( *FormName* )
 
 * *FormName*: requerido.  Control Formulario para cambiar al modo **FormMode.Edit**.
 
@@ -94,28 +94,28 @@ El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina 
 ## <a name="examples"></a>Ejemplos
 Consulte [Formularios de datos](../working-with-forms.md) para obtener ejemplos completos.
 
-1. Agregue un control Botón, establezca la propiedad **[Texto](../controls/properties-core.md)** para mostrar **Guardar** y establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** en esta fórmula:
+1. Agregue un control Botón, establezca la propiedad **[Text](../controls/properties-core.md)** para mostrar **Guardar** y establezca la propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **SubmitForm( EditarFormulario )**
-2. Establezca la propiedad **[OnFailure](../controls/control-form-detail.md)** de un control Formulario en blanco y la propiedad **[OnSuccess](../controls/control-form-detail.md)** en esta fórmula:
+    **SubmitForm( EditForm )**
+2. Establezca la propiedad **[OnFailure](../controls/control-form-detail.md)** de un control Formulario blank y la propiedad **[OnSuccess](../controls/control-form-detail.md)** en esta fórmula:
    
-    **Atrás()**
-3. Asigne el nombre **ErrorText** a un control **[Etiqueta](../controls/control-text-box.md)** y establezca su propiedad **[Texto](../controls/properties-core.md)** en esta fórmula:
+    **Back()**
+3. Asigne el nombre **ErrorText** a un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    
     **EditForm.Error**
    
     Cuando el usuario selecciona el botón **Guardar**, los cambios del control Formulario se envían al origen de datos subyacente.
    
-   * Si el envío se realiza correctamente, los cambios se guardan o, si el control Formulario está en modo **New**, se creará un registro. **ErrorText** está *en blanco* y vuelve a aparecer la pantalla anterior.
+   * Si el envío se realiza correctamente, los cambios se guardan o, si el control Formulario está en modo **New**, se creará un registro. **ErrorText** es *blank* y vuelve a aparecer la pantalla anterior.
    * Si se produce un error en el envío, **ErrorText** mostrará un mensaje de error descriptivo y la pantalla actual permanecerá visible para que el usuario pueda corregir el problema e intentarlo de nuevo.
-4. Agregue un control Botón, establezca su propiedad **[Texto](../controls/properties-core.md)** para que muestre **Cancelar** y establezca su propiedad **[AlSeleccionar](../controls/properties-core.md)** en esta fórmula:
+4. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para que muestre **Cancelar** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **ResetForm( EditarFormulario ); Atrás()**
+    **ResetForm( EditForm ); Back()**
    
     Si el usuario selecciona el botón **Cancelar**, los valores del control Formulario se restablecen a su estado original, el estado que tenían antes de que el usuario empezara a editarlo, vuelve a aparecer la pantalla anterior y se devuelve el control Formulario al modo **Edit** si estaba en modo **New**.
-5. Agregue un control Botón, establezca su propiedad **[Texto](../controls/properties-core.md)** para mostrar **Nuevo** y establezca su propiedad **[AlSeleccionar](../controls/properties-core.md)** en esta fórmula:
+5. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para mostrar **Nuevo** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **NewForm( EditarFormulario ); Navigate( EditarPantalla, None )**
+    **NewForm( EditForm ); Navigate( EditScreen, None )**
    
     Cuando el usuario selecciona el botón **New**, se activa el control Formulario en modo **New**, los valores predeterminados del origen de datos del control Formulario rellenan el control y aparece la pantalla que contiene el control Formulario. Cuando se ejecuta la función **SubmitForm**, se crea un registro en lugar de actualizarlo.
 

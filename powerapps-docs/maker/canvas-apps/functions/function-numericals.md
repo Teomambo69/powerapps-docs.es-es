@@ -43,7 +43,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 
 * *Number*: requerido. El número sobre el cual operar.
 
-**Power**( *Base*, *Exponent* )
+**Power**( *Base*, *Exponente* )
 
 * *Base*: requerido. Número base que se va a elevar.
 * *Exponent*: requerido. El exponente al que se eleva el número base.
@@ -77,7 +77,7 @@ Los ejemplos de esta sección usan un [origen de datos](../working-with-data-sou
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **Origen**.
-2. Agregue un control **Etiqueta** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
+2. Agregue un control **Label** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    <br>
    **Sqrt( Value( Source.Text ) )**
 3. Escriba un número en **Origen** y confirme que el control **Etiqueta** muestra la raíz cuadrada del número que escribió.

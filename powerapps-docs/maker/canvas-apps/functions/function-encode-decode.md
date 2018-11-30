@@ -40,7 +40,7 @@ El valor devuelto de estas funciones es la cadena codificada o descodificada.
 
 **PlainText**( *String* )
 
-* *Cadena*: requerido. Cadena de la que se van a quitar las etiquetas HTML y XML.
+* *String*: requerido. Cadena de la que se van a quitar las etiquetas HTML y XML.
 
 ## <a name="examples"></a>Ejemplos
 Si muestra una fuente RSS en una galería de texto y, después, establece la propiedad **[Text](../controls/properties-core.md)** de una etiqueta de esa galería en **ThisItem.description**, la etiqueta podría mostrar el código HTML o XML sin formato, como en este ejemplo:

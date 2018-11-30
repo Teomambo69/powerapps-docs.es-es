@@ -54,7 +54,7 @@ La función **Radians** convierte grados en radianes.
 ### <a name="notes"></a>Notas
 Si pasa un solo número a estas funciones, el valor que se devuelve es un resultado único.  Si pasa una [tabla](../working-with-tables.md) de una sola columna que contiene números, el valor que se muestra es una tabla de resultados de una sola columna, un resultado para cada registro en la tabla del argumento. Si tiene una tabla con varias columnas, puede convertirla en una tabla de una sola columna, como se describe en cómo [trabajar con tablas](../working-with-tables.md).  
 
-Si algún argumento resultase en un valor no definido, el resultado queda *en blanco*.  Esto puede ocurrir, por ejemplo, al utilizar las funciones inversas con argumentos que están fuera del intervalo.
+Si algún argumento resultase en un valor no definido, el resultado es *blank*.  Esto puede ocurrir, por ejemplo, al utilizar las funciones inversas con argumentos que están fuera del intervalo.
 
 ## <a name="syntax"></a>Sintaxis
 ### <a name="primary-functions"></a>Funciones principales
@@ -96,7 +96,7 @@ Si algún argumento resultase en un valor no definido, el resultado queda *en bl
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **COS (&nbsp;1,047197&nbsp;)** |Devuelve el coseno de 1,047197 radianes o 60 grados. |0,5 |
+| **Cos(&nbsp;1,047197&nbsp;)** |Devuelve el coseno de 1,047197 radianes o 60 grados. |0,5 |
 | **Cot(&nbsp;Pi()/4&nbsp;)** |Devuelve la cotangente de 0,785398... radianes o 45 grados. |1 |
 | **Sin(&nbsp;Pi()/2&nbsp;)** |Devuelve el seno de 1,570796 radianes o 90 grados. |1 |
 | **Tan (&nbsp;Radians(60)&nbsp;)** |Devuelve la tangente de 1,047197 radianes o 60 grados. |1,732050... |
@@ -117,7 +117,7 @@ Los ejemplos de esta sección usan un [origen de datos](../working-with-data-sou
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **COS (&nbsp;ValueTable&nbsp;)** |Devuelve el coseno de cada número en la tabla. |<style> img { max-width: none } </style> ![](media/function-trig/values-cos.png) |
+| **Cos(&nbsp;ValueTable&nbsp;)** |Devuelve el coseno de cada número en la tabla. |<style> img { max-width: none } </style> ![](media/function-trig/values-cos.png) |
 | **Cot(&nbsp;ValueTable&nbsp;)** |Devuelve la cotangente de cada número en la tabla. |<style> img { max-width: none } </style> ![](media/function-trig/values-cot.png) |
 | **Sin(&nbsp;ValueTable&nbsp;)** |Devuelve el seno de cada número en la tabla. |<style> img { max-width: none } </style> ![](media/function-trig/values-sin.png) |
 | **Tan(&nbsp;ValueTable&nbsp;)** |Devuelve la tangente de cada número en la tabla. |<style> img { max-width: none } </style> ![](media/function-trig/values-tan.png) |

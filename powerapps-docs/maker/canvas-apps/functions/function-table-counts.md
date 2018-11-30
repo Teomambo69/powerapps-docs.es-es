@@ -26,7 +26,7 @@ Cuenta todos los [registros](../working-with-tables.md#records) de una [tabla](.
 ## <a name="description"></a>Descripción
 La función **Count** cuenta el número de registros que contienen un número en una tabla de una sola columna.
 
-La función **CountA** cuenta el número de registros que no están *en blanco* en una tabla de una sola columna. Esta función incluye texto [vacío](function-isblank-isempty.md) ("") en el recuento.
+La función **CountA** cuenta el número de registros que no están *blank* en una tabla de una sola columna. Esta función incluye texto [vacío](function-isblank-isempty.md) ("") en el recuento.
 
 La función **CountIf** cuenta el número de registros de una tabla que son **true** para una fórmula lógica.  La fórmula puede hacer referencia a [columnas](../working-with-tables.md#columns) de la tabla.
 

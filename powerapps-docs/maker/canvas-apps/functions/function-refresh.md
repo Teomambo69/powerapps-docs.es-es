@@ -1,5 +1,5 @@
 ---
-title: Función Actualizar | Microsoft Docs
+title: Función Refresh | Microsoft Docs
 description: Información de referencia de la función Refresh de PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek

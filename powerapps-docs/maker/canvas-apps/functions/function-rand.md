@@ -45,7 +45,7 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 #### <a name="display-a-different-random-number-as-user-input-changes"></a>Mostrar un número aleatorio diferente a medida que cambia la entrada del usuario
 1. Agregue un control **[Control deslizante](../controls/control-slider.md)** y, si tiene otro nombre, cámbielo a **Slider1**.
 
-1. Agregue un control **[Etiqueta](../controls/control-text-box.md)** y establezca su propiedad **Text** en esta fórmula:
+1. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **Text** en esta fórmula:
 
     **Slider1.Value + Rand()**
 

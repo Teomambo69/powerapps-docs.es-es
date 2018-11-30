@@ -1,5 +1,5 @@
 ---
-title: Funciones Izquierda, Mid y Derecha| Microsoft Docs
+title: Funciones Left, Mid y Right| Microsoft Docs
 description: Información de referencia de las funciones Left, Mid y Right de PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
@@ -32,12 +32,12 @@ Las funciones **Left**, **Mid** y **Right** devuelven una parte de una cadena.
 
 Si especifica una cadena como argumento, la función devuelve la parte que ha solicitado de la cadena. Si especifica una [tabla](../working-with-tables.md) de una columna que contiene cadenas, la función devuelve una tabla de una columna de las partes que solicitó de esas cadenas. Si especifica una tabla con varias columnas, puede convertirla en una tabla de una columna, como se describe en la sección sobre cómo [trabajar con tablas](../working-with-tables.md).
 
-Si la posición inicial es negativa o sobrepasa el final de la cadena, **Mid** devuelve *en blanco*.  Puede comprobar la longitud de una cadena mediante la función **[Len](function-len.md)**. Si se solicitan más caracteres de los que contiene la cadena, la función devuelve tantos caracteres como sea posible.
+Si la posición inicial es negativa o sobrepasa el final de la cadena, **Mid** devuelve *blank*.  Puede comprobar la longitud de una cadena mediante la función **[Len](function-len.md)**. Si se solicitan más caracteres de los que contiene la cadena, la función devuelve tantos caracteres como sea posible.
 
 ## <a name="syntax"></a>Sintaxis
 **Left**( *String*, *NumberOfCharacters* )<br>**Mid**( *String*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *String*, *NumberOfCharacters* )
 
-* *Cadena*: requerido. La cadena hasta la cual se extrae el resultado o desde la que se extrae el resultado.
+* *String*: requerido. La cadena hasta la cual se extrae el resultado o desde la que se extrae el resultado.
 * *StartingPosition*: requerido (solo **Mid**).  La posición inicial.  El primer carácter de la cadena ocupa la posición 1.
 * *NumberOfCharacters*: requerido.  El número de caracteres que se va a devolver.
 
@@ -70,7 +70,7 @@ En cada ejemplo de esta sección se extraen cadenas de la [columna](../working-w
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Importe o cree una [colección](../working-with-data-sources.md#collections) denominada **Inventory** y muéstrela en una galería, como se describe en el primer procedimiento en [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Mostrar imágenes y texto en una galería).
-2. Establezca la propiedad **[Texto](../controls/properties-core.md)** de la etiqueta inferior de la galería en esta función:
+2. Establezca la propiedad **[Text](../controls/properties-core.md)** de la etiqueta inferior de la galería en esta función:
    
     **Right(ThisItem.ProductName, 3)**
    

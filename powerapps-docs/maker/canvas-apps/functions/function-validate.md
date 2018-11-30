@@ -1,5 +1,5 @@
 ---
-title: Función Validar | Microsoft Docs
+title: Función Validate | Microsoft Docs
 description: Información de referencia para la función Validate en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek

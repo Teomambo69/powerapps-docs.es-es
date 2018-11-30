@@ -34,9 +34,9 @@ La función **HashTags** analiza una cadena en busca de hashtags. Los hashtags c
 **HashTags** devuelve una [tabla](../working-with-tables.md) de una sola columna que contiene los hashtags de la cadena.  Si la cadena no contiene ningún hashtag, la función devuelve una tabla de una sola columna que está [vacía](function-isblank-isempty.md).
 
 ## <a name="syntax"></a>Sintaxis
-**HashTags**( *Cadena* )
+**HashTags**( *String* )
 
-* *Cadena*: requerido.  Cadena en la que se van a buscar hashtags.
+* *String*: requerido.  Cadena en la que se van a buscar hashtags.
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="step-by-step"></a>Paso a paso

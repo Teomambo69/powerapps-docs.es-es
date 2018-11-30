@@ -1,5 +1,5 @@
 ---
-title: Funciones Habilitar y Deshabilitar | Microsoft Docs
+title: Funciones Enable y Disable | Microsoft Docs
 description: Información de referencia para las funciones Enable y Disable en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -36,7 +36,7 @@ Estas funciones solo funcionan actualmente para la señal de **[ubicación](sign
 Estas funciones no tienen ningún valor devuelto. Se pueden usar únicamente en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Enable**( *Señal* )<br>**Disable**( *Señal* )
+**Enable**( *Signal* )<br>**Disable**( *Signal* )
 
 * *Señal*: requerido.  La señal que va a activar o desactivar.
 

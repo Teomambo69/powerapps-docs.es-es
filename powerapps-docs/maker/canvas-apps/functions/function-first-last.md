@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42844193"
 ---
-# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones First, FirstN, Last y LastN
+# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones First, FirstN, Last y LastN en PowerApps
 Devuelve el primer o último conjunto de [registros](../working-with-tables.md#records) de una tabla.
 
 ## <a name="description"></a>Descripción

@@ -61,7 +61,7 @@ De momento solo puede usar columnas de búsqueda con SharePoint y Common Data Se
 
     ![Lista parcial de los campos de la entidad Contact en Common Data Service](media/function-choices/entity-contact.png)
 
-    En cada cuenta se designa un contacto como contacto principal o este está *en blanco*.
+    En cada cuenta se designa un contacto como contacto principal o este está *blank*.
 
 2. [Genere una aplicación](../data-platform-create-app.md) desde la entidad **Accounts**.
 

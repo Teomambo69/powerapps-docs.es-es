@@ -1,5 +1,5 @@
 ---
-title: Función Errores | Microsoft Docs
+title: Función Errors | Microsoft Docs
 description: Información de referencia para la función Errors en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -33,8 +33,8 @@ Puede evitar que se produzcan algunos errores mediante las funciones **[Validate
 ## <a name="description"></a>Descripción
 La función **Errors** devuelve una [tabla](../working-with-tables.md) de errores que contiene las [columnas](../working-with-tables.md#columns) siguientes:
 
-* **Registro**.  Registro del origen de datos que contenía el error.  Si el error se produjo durante la creación de un registro, esta columna estará *en blanco*.
-* **Columna**.  Columna que produjo el error, en caso de que el error pueda atribuirse a una sola columna. De lo contrario, estará *en blanco*.
+* **Registro**.  Registro del origen de datos que contenía el error.  Si el error se produjo durante la creación de un registro, esta columna será *blank*.
+* **Columna**.  Columna que produjo el error, en caso de que el error pueda atribuirse a una sola columna. De lo contrario, será *blank*.
 * **Mensaje**.  Descripción del error.  Esta cadena de error se puede mostrar para el usuario final.  Tenga en cuenta que este mensaje puede generarlo el origen de datos, por lo que podría ser largo y contener nombres de columna sin formato carentes de significado para el usuario.
 * **Error**.  Código de error que se puede usar en las fórmulas para ayudar a resolver el error:
 
@@ -56,7 +56,7 @@ La función **Errors** devuelve una [tabla](../working-with-tables.md) de errore
 
 Los errores pueden devolverse para el origen de datos completo o para una sola fila seleccionada si se proporciona el argumento *Record* a la función.  
 
-La función **[Patch](function-patch.md)** u otras funciones de datos pueden devolver un valor *en blanco* si, por ejemplo, no se pudo crear un registro. Si pasa un valor *en blanco* a **Errors**, le devolverá información de error adecuada en estos casos.  El uso posterior de funciones de datos en el mismo origen de datos borrará esta información de error.
+La función **[Patch](function-patch.md)** u otras funciones de datos pueden devolver un valor *blank* si, por ejemplo, no se pudo crear un registro. Si pasa un valor *blank* a **Errors**, le devolverá información de error adecuada en estos casos.  El uso posterior de funciones de datos en el mismo origen de datos borrará esta información de error.
 
 Si no hay ningún error, la tabla que **Errors** devuelve estará [vacía](function-isblank-isempty.md) y se podrá probar con la función **[IsEmpty](function-isblank-isempty.md)**.
 

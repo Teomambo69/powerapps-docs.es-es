@@ -48,7 +48,7 @@ La función **Concatenate** concatena una combinación de cadenas individuales y
    
     **Collect(Products, {String:"Violin", Wind:"Trombone", Percussion:"Bongos"}, {String:"Cello", Wind:"Trumpet", Percussion:"Tambourine"})**
 2. Presione F5, haga clic en el botón y presione Esc para volver al área de trabajo de diseño.
-3. Agregue un control **[Etiqueta](../controls/control-text-box.md)** y establezca su propiedad **[Texto](../controls/properties-core.md)** en esta fórmula:
+3. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    
     **Concat(Products, String & " ")**
    
@@ -56,7 +56,7 @@ La función **Concatenate** concatena una combinación de cadenas individuales y
 
 #### <a name="concatenate"></a>Concatenate
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **AuthorName**.
-2. Agregue un control **[Etiqueta](../controls/control-text-box.md)** y establezca su propiedad **[Texto](../controls/properties-core.md)** en esta fórmula:<br>
+2. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:<br>
    **Concatenate("By ", AuthorName.Text)**
 3. Escriba su nombre en **AuthorName**.
    

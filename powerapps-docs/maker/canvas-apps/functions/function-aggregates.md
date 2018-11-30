@@ -1,5 +1,5 @@
 ---
-title: Funciones Promedio, Max., Mín., StdevP, Suma y VarP | Microsoft Docs
+title: Funciones Average, Max, Min, StdevP, Sum y VarP | Microsoft Docs
 description: Información de referencia sobre las funciones Average, Max, Min, StdevP, Sum y VarP de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek

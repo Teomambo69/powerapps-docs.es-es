@@ -26,11 +26,11 @@ Proporciona información sobre un [origen de datos](../working-with-data-sources
 ## <a name="overview"></a>Información general
 Los orígenes de datos pueden proporcionar una gran cantidad de información para optimizar la experiencia del usuario.
 
-Puede usar información de nivel de [columna](../working-with-tables.md#columns) para validar entradas de usuario y proporcionar una respuesta inmediata al usuario antes de usar la función **[Revisión](function-patch.md)**. La función **[Validate](function-validate.md)**  usa esta misma información.
+Puede usar información de nivel de [columna](../working-with-tables.md#columns) para validar entradas de usuario y proporcionar una respuesta inmediata al usuario antes de usar la función **[Patch](function-patch.md)**. La función **[Validate](function-validate.md)**  usa esta misma información.
 
 Puede usar información en el nivel de origen de datos para, por ejemplo, deshabilitar u ocultar los botones **Editar** y **Nuevo** de los usuarios que no tienen permisos para editar y crear [registros](../working-with-tables.md#records).
 
-Los orígenes de datos varían en la cantidad de información que proporcionan; incluso pueden no ofrecer ninguna.  Las [colecciones](../working-with-data-sources.md#collections) no proporcionan ninguna información. Si no se proporciona una parte de la información, se utilizará el valor predeterminado o se devolverá *en blanco*.
+Los orígenes de datos varían en la cantidad de información que proporcionan; incluso pueden no ofrecer ninguna.  Las [colecciones](../working-with-data-sources.md#collections) no proporcionan ninguna información. Si no se proporciona una parte de la información, se utilizará el valor predeterminado o se devolverá *blank*.
 
 ## <a name="description"></a>Descripción
 ### <a name="column-information"></a>Información de columna
@@ -39,9 +39,9 @@ Puede usar **DataSourceInfo** para obtener información sobre una columna concre
 | Argumento de información | Tipo de resultado | Descripción |
 | --- | --- | --- |
 | **DataSourceInfo.DisplayName** |Cadena |Nombre para mostrar de la columna. Si no se ha definido ningún nombre para mostrar, devolverá el nombre de la columna. |
-| **DataSourceInfo.MaxLength** |Número |Número máximo de caracteres que puede contener la columna. Solo se aplica a las columnas que contienen cadenas. Si no se configura un máximo, devuelve *en blanco*. |
-| **DataSourceInfo.MaxValue** |Número |Valor numérico máximo que puede contener una columna. Solo se aplica a las columnas que contienen números. Si no se configura un máximo, devuelve *en blanco*. |
-| **DataSourceInfo.MinValue** |Número |Valor numérico mínimo que puede contener una columna. Solo se aplica a las columnas que contienen números. Si no se configura un mínimo, devuelve *en blanco*. |
+| **DataSourceInfo.MaxLength** |Número |Número máximo de caracteres que puede contener la columna. Solo se aplica a las columnas que contienen cadenas. Si no se configura un máximo, devuelve *blank*. |
+| **DataSourceInfo.MaxValue** |Número |Valor numérico máximo que puede contener una columna. Solo se aplica a las columnas que contienen números. Si no se configura un máximo, devuelve *blank*. |
+| **DataSourceInfo.MinValue** |Número |Valor numérico mínimo que puede contener una columna. Solo se aplica a las columnas que contienen números. Si no se configura un mínimo, devuelve *blank*. |
 | **DataSourceInfo.Required** |Booleano |¿Es un valor requerido para esta columna? Si no se establece mediante el origen de datos devuelve **false**. |
 
 El tercer argumento es el nombre de una columna como una cadena.  Por ejemplo, la columna **Teléfono** de la colección **Personas** se pasaría como **"Teléfono"** incluidas las comillas dobles.
@@ -51,7 +51,7 @@ Puede usar **DataSourceInfo** para obtener información sobre un origen de datos
 
 | Argumento de información | Tipo de resultado | Descripción |
 | --- | --- | --- |
-| **DataSourceInfo.AllowedValues** |Booleano |¿Qué tipos de permisos se les pueden conceder a los usuarios para este origen de datos? Si no se establecen mediante el origen de datos, se devuelve *en blanco*. |
+| **DataSourceInfo.AllowedValues** |Booleano |¿Qué tipos de permisos se les pueden conceder a los usuarios para este origen de datos? Si no se establecen mediante el origen de datos, se devuelve *blank*. |
 | **DataSourceInfo.CreatePermission** |Booleano |¿Tiene permiso el usuario actual para crear registros en este origen de datos? Si no se establece mediante el origen de datos, devuelve **true**. |
 | **DataSourceInfo.DeletePermission** |Booleano |¿Tiene permiso el usuario actual para eliminar registros en este origen de datos? Si no se establece mediante el origen de datos, devuelve **true**. |
 | **DataSourceInfo.EditPermission** |Booleano |¿Tiene permiso el usuario actual para editar registros en este origen de datos? Si no se establece mediante el origen de datos, devuelve **true**. |

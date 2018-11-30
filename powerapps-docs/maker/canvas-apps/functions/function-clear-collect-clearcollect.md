@@ -1,5 +1,5 @@
 ---
-title: Funciones Recopilar, Borrar y ClearCollect | Microsoft Docs
+title: Funciones Collect, Clear y ClearCollect | Microsoft Docs
 description: Información de referencia sobre las funciones Collect, Clear y ClearCollect de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -27,7 +27,7 @@ Crea y borra [colecciones](../working-with-data-sources.md#collections) y agrega
 ### <a name="collect"></a>Collect
 La función **Collect** agrega registros a un origen de datos. Los elementos que se pueden agregar son:
 
-* Un valor único: el valor se coloca en el campo **[Value](function-value.md)** de un nuevo registro.  Todas las demás propiedades se dejan [en blanco](function-isblank-isempty.md).
+* Un valor único: el valor se coloca en el campo **[Value](function-value.md)** de un nuevo registro.  Todas las demás propiedades se dejan [blank](function-isblank-isempty.md).
 * Un registro: cada propiedad con nombre se coloca en la propiedad correspondiente de un nuevo registro.  Todas las demás propiedades se dejan en blanco.
 * Una [tabla](../working-with-tables.md): cada registro de la tabla se agrega como un registro independiente del origen de datos, como se ha descrito anteriormente. La tabla no se agrega como una tabla anidada a un registro. Para lograrlo, primero ajuste la tabla en un registro.
 
@@ -78,13 +78,13 @@ En estos ejemplos, borrará y agregará registros a una colección denominada **
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de IceCream de fresa. |<style> img { max-width: none } </style> ![](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **IceCream**, que incluye una cantidad de IceCream de pistacho y naranja. |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de helado de fresa. |<style> img { max-width: none } </style> ![](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **IceCream**, que incluye una cantidad de helado de pistacho y naranja. |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 | **Clear( IceCream )** |Quita todos los registros de la colección **IceCream**. |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 
 ### <a name="collect-a-static-list"></a>Recopilar una lista estática
 
-1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función:<br>**Collect(Productos, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
+1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función:<br>**Collect(Products, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
    
     Esta función crea una colección denominada **Products** que contiene una fila para cada uno de los tres nombres de producto.
     

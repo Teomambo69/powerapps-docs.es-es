@@ -66,5 +66,5 @@ Si todos los argumentos de **IfError** generan un error, se devuelve el valor de
 
 5. En **TextInput1**, escriba **ToInfinity**.
 
-    Label1 mostrará el valor **-1**, ya que se trata de una entrada no válida para la función Value.  Si no se ajustara la función Value con IfError, la etiqueta no mostraría ningún valor, ya que el valor de error se trata como un *espacio en blanco*. 
+    Label1 mostrará el valor **-1**, ya que se trata de una entrada no válida para la función Value.  Si no se ajustara la función Value con IfError, la etiqueta no mostraría ningún valor, ya que el valor de error se trata como *blank*. 
 

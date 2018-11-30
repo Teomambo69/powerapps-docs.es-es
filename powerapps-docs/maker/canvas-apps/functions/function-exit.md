@@ -1,5 +1,5 @@
 ---
-title: Función Salir | Microsoft Docs
+title: Función Exit | Microsoft Docs
 description: Información de referencia para la función Exit en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek

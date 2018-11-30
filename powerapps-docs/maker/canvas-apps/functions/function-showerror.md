@@ -48,10 +48,10 @@ PowerApps también puede enviar notificaciones de inserción mediante un mecanis
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Mensaje*, [ *TipoDeNotificación* ] )
+**Notify**( *Message*, [ *NotificationType* ] )
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
-* *TipoDeNotificación*: es opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
+* *NotificationType*: opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
 
 ## <a name="examples"></a>Ejemplos
 

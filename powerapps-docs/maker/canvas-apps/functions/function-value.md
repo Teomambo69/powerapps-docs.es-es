@@ -1,5 +1,5 @@
 ---
-title: Función Valor | Microsoft Docs
+title: Función Value | Microsoft Docs
 description: Información de referencia para la función Value en PowerApps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
@@ -36,12 +36,12 @@ Notas sobre el formato de la cadena:
 
 Si el número no tiene el formato correcto, **Value** devolverá un valor *blank*.
 
-Para convertir valores de fecha y hora, use las funciones [ **FechaNumero**](function-datevalue-timevalue.md), [ **HoraNumero**](function-datevalue-timevalue.md) o [ **FechaHoraNumero** ](function-datevalue-timevalue.md).
+Para convertir valores de fecha y hora, use las funciones [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md) o [**DateTimeValue**](function-datevalue-timevalue.md).
 
 ## <a name="syntax"></a>Sintaxis
 **Value**( *String* [, *LanguageTag* ] )
 
-* *Cadena*: requerido. Cadena que se convertirá en un valor numérico.
+* *String*: requerido. Cadena que se convertirá en un valor numérico.
 * *LanguageTag*: opcional.  Etiqueta del idioma en el que se va a analizar la cadena.  Si no se especifica, se usa el idioma del usuario actual.
 
 ## <a name="examples"></a>Ejemplos

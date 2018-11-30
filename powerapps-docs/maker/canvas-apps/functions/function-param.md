@@ -1,6 +1,6 @@
 ---
-title: Funciones Download, Launch y Parámetro | Microsoft Docs
-description: Información de referencia de las funciones Download, Launch y Parámetro de PowerApps, con sintaxis y ejemplos
+title: Funciones Download, Launch y Param | Microsoft Docs
+description: Información de referencia de las funciones Download, Launch y Param de PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42860026"
 ---
-# <a name="download-launch-and-param-functions-in-powerapps"></a>Funciones Download, Launch y Parámetro en PowerApps
+# <a name="download-launch-and-param-functions-in-powerapps"></a>Funciones Download, Launch y Param en PowerApps
 Descarga o inicia una página web o una aplicación con parámetros.  
 
 ## <a name="description"></a>Descripción
@@ -28,7 +28,7 @@ La función **Download** descarga un archivo de la Web al dispositivo local.  Se
 
 La función **Launch** inicia un página web o una aplicación.  Opcionalmente, esta función puede pasar parámetros a la aplicación.  
 
-La función **Param** recupera un parámetro pasado a la aplicación cuando se inició.  Si no se pasó el parámetro con nombre, **Param** devuelve *en blanco*.
+La función **Param** recupera un parámetro pasado a la aplicación cuando se inició.  Si no se pasó el parámetro con nombre, **Param** devuelve *blank*.
 
 ## <a name="syntax"></a>Sintaxis
 **Download**( *Address* )

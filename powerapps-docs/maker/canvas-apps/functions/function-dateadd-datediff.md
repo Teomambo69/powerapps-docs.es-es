@@ -37,16 +37,16 @@ Puede usar **DateAdd** con **TimeZoneOffset** para realizar la conversión entre
 Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.md) para más información.
 
 ## <a name="syntax"></a>Sintaxis
-**DateAdd**( *FechaHora*, *Suma* [, *Unidades* ] )
+**DateAdd**( *DateTime*, *Addition* [, *Units* ] )
 
-* *FechaHora*: requerido. Valor de fecha y hora con el que operar.
+* *DateTime*: requerido. Valor de fecha y hora con el que operar.
 * *Suma*: requerido. Número, en *unidades*, para agregar a *DateTime*.
 * *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **Segundos**, **Minutos**, **Horas**, **Días**, **Meses**, **Trimestres** o **Años**.  Si no se especifica, se usará **Días**.
 
-**DateDiff**( *FechaHoraInicio*, *FechaHoraFin* [, *Unidades* ])
+**DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
-* *FechaHoraInicio*: requerido. Valor de fecha y hora de inicio.
-* *FechaHoraFin*: requerido. Valor de fecha y hora de finalización.
+* *StartDateTime*: requerido. Valor de fecha y hora de inicio.
+* *EndDateTime*: requerido. Valor de fecha y hora de finalización.
 * *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **Segundos**, **Minutos**, **Horas**, **Días**, **Meses**, **Trimestres** o **Años**.  Si no se especifica, se usará **Días**.
 
 **TimeZoneOffset**( [ *DateTime* ] )
@@ -62,7 +62,7 @@ En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de juli
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |Agrega tres días (unidades predeterminadas) a la fecha y hora actuales. |"18-07-2013 13:02" |
 | **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )** |Agrega cuatro horas a la fecha y hora actuales. |"15-07-2013 17:02" |
-| **Text( DateAdd( Today(), 1, Months ),<br>"dd-mm-yyyy hh:mm" )** |Agrega un mes a la fecha actual, sin tiempo dado que **Hoy** no devuelve un componente de tiempo. |"15-08-2013 00:00" |
+| **Text( DateAdd( Today(), 1, Months ),<br>"dd-mm-yyyy hh:mm" )** |Agrega un mes a la fecha actual, sin tiempo dado que **Today** no devuelve un componente de tiempo. |"15-08-2013 00:00" |
 | **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** |Resta 30 minutos de la fecha y hora actuales. |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>DateDiff simple
@@ -71,7 +71,7 @@ En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de juli
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |Devuelve la diferencia entre las dos unidades en las unidades predeterminadas de **Días**. |170 |
 | **DateDiff( Now(), DateValue("1/1/2014"), Months )** |Devuelve la diferencia entre los dos valores en **Meses**. |6 |
-| **DateDiff( Now(), Today(), Minutes )** |Devuelve la diferencia entre la fecha y hora actuales y la fecha actual solamente (ninguna hora) en minutos.  Puesto que la **Ahora** es posterior a **Hoy**, el resultado es negativo. |-782 |
+| **DateDiff( Now(), Today(), Minutes )** |Devuelve la diferencia entre la fecha y hora actuales y la fecha actual solamente (ninguna hora) en minutos.  Puesto que **Now** es posterior a **Today**, el resultado es negativo. |-782 |
 
 ### <a name="converting-to-utc"></a>Conversión a UTC
 Para convertir a UTC (Hora universal coordinada), agregue **TimeZoneOffset** durante el tiempo especificado.  
@@ -82,7 +82,7 @@ Imagine, por ejemplo, que los valores de fecha y hora actuales son **15 de julio
 
 **TimeZoneOffset** toma como valor predeterminado la hora actual, por lo que no es necesario pasarle un argumento.
 
-Para ver el resultado, use la función **Texto** con el formato *dd-mm-aaaa hh:mm*, que devolverá **15-07-2013 20:02**.
+Para ver el resultado, use la función **Text** con el formato *dd-mm-aaaa hh:mm*, que devolverá **15-07-2013 20:02**.
 
 ### <a name="converting-from-utc"></a>Conversión desde UTC
 Para convertir desde UTC, reste **TimeZoneOffset** (agregando el signo negativo) para la hora especificada.
@@ -93,5 +93,5 @@ Imagine, por ejemplo, que los valores de fecha y hora UTC **15 de julio de 2013,
 
 Tenga en cuenta el signo negativo delante de **TimeZoneOffset** para restar el desplazamiento en lugar de sumarlo.
 
-Para ver el resultado, use la función **Texto** con el formato *dd-mm-aaaa hh:mm*, que devuelve **15-07-2013 13:02** en la Hora de verano del Pacífico.
+Para ver el resultado, use la función **Text** con el formato *dd-mm-aaaa hh:mm*, que devuelve **15-07-2013 13:02** en la Hora de verano del Pacífico.
 

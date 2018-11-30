@@ -115,9 +115,9 @@ De forma predeterminada, **IsMatch** busca una coincidencia completa de toda la 
 | **Multiline** |Busca la coincidencia entre varias líneas. |No modifica la expresión regular. |
 
 ## <a name="syntax"></a>Sintaxis
-**IsMatch**( *Texto*, *Pattern* [, *Options* ] )
+**IsMatch**( *Text*, *Pattern* [, *Options* ] )
 
-* *Texto*: requerido.  La cadena de texto que se va a probar.
+* *Text*: requerido.  La cadena de texto que se va a probar.
 * *Pattern*: requerido.  El patrón que se va a probar, como una cadena de texto.  Concatene los patrones predefinidos que define la enumeración **Match** o proporcione una expresión regular.
 * *Options*: valor opcional.  Una combinación de cadenas de texto de valores de enumeración **MatchOptions**.  De forma predeterminada, se usa **MatchOptions.Complete**.
 

@@ -1,5 +1,5 @@
 ---
-title: Función Valores predeterminados | Microsoft Docs
+title: Función Defaults | Microsoft Docs
 description: Información de referencia sobre la función Defaults de PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -30,7 +30,7 @@ Esta función devuelve un [registro](../working-with-tables.md#records) que cont
 
 Los orígenes de datos varían en la cantidad de información predeterminada que proporcionan; incluso pueden no ofrecer ninguna.  Cuando trabaje con una [colección](../working-with-data-sources.md#collections) u otro origen de datos que no admita valores predeterminados, la función **Defaults** devolverá un registro [vacío](function-isblank-isempty.md).
 
-Puede combinar la función **Defaults** con la función **[Revisión](function-patch.md)** para [crear un registro](../working-with-data-sources.md).
+Puede combinar la función **Defaults** con la función **[Patch](function-patch.md)** para [crear un registro](../working-with-data-sources.md).
 
 ## <a name="syntax"></a>Sintaxis
 **Defaults**( *DataSource* )

@@ -1,5 +1,5 @@
 ---
-title: Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación | Microsoft Docs
+title: Señales Acceleration, App, Compass, Connection y Location | Microsoft Docs
 description: Información de referencia, incluida la sintaxis y los ejemplos, para los sensores Acceleration, App, Compass, Connection y Location en PowerApps
 author: gregli-msft
 manager: kvivek
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2018
 ms.locfileid: "42832154"
 ---
-# <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación en PowerApps
+# <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  
 
 ## <a name="description-and-syntax"></a>Descripción y sintaxis
@@ -57,7 +57,7 @@ La señal **Connection** devuelve información acerca de la conexión de red. Cu
 | **Connection.Connected** |Devuelve un valor booleano **true** o **false** que indica si el dispositivo está conectado a una red. |
 | **Connection.Metered** |Devuelve un valor booleano **true** o **false** que indica si la se mide la conexión. |
 
-### <a name="location"></a>Ubicación
+### <a name="location"></a>Location
 La señal **Location** devuelve la ubicación del dispositivo según el sistema GPS (Global Positioning System) y otra información de dispositivo, como las comunicaciones de la torre de telefonía móvil y la dirección IP.
 
 Cuando un usuario tiene acceso a la información de ubicación por primera vez, el dispositivo puede solicitar que el usuario permita el acceso a esta información.
@@ -81,7 +81,7 @@ Desde el montículo del lanzador en Safeco Field en Seattle, Washington, un lanz
 | **Compass.Heading** |Devuelve el encabezado de brújula de la parte superior de la pantalla. En Safeco Field, la base del bateador está aproximadamente al suroeste del montículo del lanzador. |230.25 |
 | **Acceleration.X** |Devuelve la aceleración del dispositivo de lado a lado. El lanzador está lanzando el teléfono en línea recta con respecto a la parte superior de la pantalla, por lo que el dispositivo no cuenta con una aceleración de lado a lado. |0 |
 | **Acceleration.Y** |Devuelve la aceleración del dispositivo de la parte delantera a la trasera. El lanzador inicialmente ofrece al dispositivo una gran aceleración al lanzar el dispositivo, que pasa de 0 a 144 km por hora (40 metros por segundo) en medio segundo. Después de que el dispositivo esté en el aire, sin tener en cuenta la fricción del aire, no se acelera más. El dispositivo deja de acelerarse cuando el receptor lo atrapa, hasta que para. |8,2, cuando el lanzador lanza el dispositivo.<br><br>0, cuando el dispositivo está en el aire.<br><br>-8,2, cuando el receptor atrapa el dispositivo. |
-| **Acceleration.Z** |Devuelve la aceleración del dispositivo de la parte delantera a la trasera. Mientras está en el aire, el dispositivo experimenta los efectos de la gravedad. |0, antes de que el lanzador lace el dispositivo.<br><br>1, cuando el dispositivo está en el aire.<br><br>0, cuando el receptor atrapa el dispositivo. |
+| **Acceleration.Z** |Devuelve la aceleración del dispositivo de arriba a abajo. Mientras está en el aire, el dispositivo experimenta los efectos de la gravedad. |0, antes de que el lanzador lace el dispositivo.<br><br>1, cuando el dispositivo está en el aire.<br><br>0, cuando el receptor atrapa el dispositivo. |
 | **Acceleration** |Devuelve la aceleración como registro. |{ X: 0, Y: 264, Z: 0 } cuando el lanzador lanza el dispositivo. |
 | **Connection.Connected** |Devuelve un valor booleano que indica si el dispositivo está conectado a una red. |**true** |
 | **Connection.Metered** |Devuelve un valor booleano que indica si la se mide la conexión. |**true** |

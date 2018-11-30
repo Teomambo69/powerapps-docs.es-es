@@ -1,5 +1,5 @@
 ---
-title: Función Usuario | Microsoft Docs
+title: Función User | Microsoft Docs
 description: Información de referencia para la función User en PowerApps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek

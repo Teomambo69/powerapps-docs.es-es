@@ -1,5 +1,5 @@
 ---
-title: Función Idioma | Microsoft Docs
+title: Función Language | Microsoft Docs
 description: Información de referencia para la función Language en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -50,7 +50,7 @@ Las funciones **[Text](function-text.md)** y **[Value](function-value.md)** tamb
 ### <a name="users-locale"></a>Configuración regional del usuario
 Se supone que el sistema operativo host o el explorador usan la configuración regional predeterminada para la ubicación.
 
-| Fórmula | Ubicación | Valor devuelto |
+| Fórmula | Location | Valor devuelto |
 | --- | --- | --- |
 | **Language()** |Lisboa, Portugal |"pt-PT" |
 | **Language()** |Río de Janeiro, Brasil |"pt-BR" |

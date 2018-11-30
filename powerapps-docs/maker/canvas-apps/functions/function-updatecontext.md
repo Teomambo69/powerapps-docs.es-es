@@ -37,7 +37,7 @@ Para crear o actualizar una variable de contexto, pase un solo [registro](../wor
 * Si especifica el nombre de una variable que no existe todavía, **UpdateContext** crea una variable con ese nombre y establece el valor de esa variable en el valor que especifique.
 * Si previamente se ha definido una variable pero no se especifica en esta fórmula de **UpdateContext** específica, su valor sigue siendo el mismo.
 
-Se pueden crear implícitamente variables de contexto mediante la función **UpdateContext** o [**Navegar** ](function-navigate.md).  No es necesaria ninguna declaración explícita.  Si quita todas las referencias de **UpdateContext** y **Navegar** a una variable de contexto, posteriormente, esa variable de contexto dejará de existir.  Para borrar una variable, establezca su valor en el resultado de la función [**Blank**](function-isblank-isempty.md).
+Se pueden crear implícitamente variables de contexto mediante la función **UpdateContext** o [**Navigate**](function-navigate.md).  No es necesaria ninguna declaración explícita.  Si quita todas las referencias de **UpdateContext** y **Navigate** a una variable de contexto, posteriormente, esa variable de contexto dejará de existir.  Para borrar una variable, establezca su valor en el resultado de la función [**Blank**](function-isblank-isempty.md).
 
 Puede ver los valores de las variables, las definiciones y los usos con la vista Variables del menú Archivo en el entorno de creación.
 
@@ -53,7 +53,7 @@ Tal y como se muestra en los ejemplos más adelante en este tema, las variables 
 
 Una variable de contexto guarda su valor hasta que se cierra la aplicación.  Si define una variable de contexto y establece su valor en una pantalla concreta, esa información permanece intacta aunque el usuario cambie a otra pantalla.  Una vez que se cierre la aplicación, el valor de la variable de contexto se perderá y deberá volver a crearlo al cargar la aplicación de nuevo.  
 
-El ámbito de una variable de contexto se limita a una pantalla. Si desea definir una variable de contexto en una pantalla y modificarla desde otra pantalla, debe crear una fórmula que se basa en la función **[Navegar](function-navigate.md)**.  O bien, use una variable global.
+El ámbito de una variable de contexto se limita a una pantalla. Si desea definir una variable de contexto en una pantalla y modificarla desde otra pantalla, debe crear una fórmula que se basa en la función **[Navigate](function-navigate.md)**.  O bien, use una variable global.
 
 **UpdateContext** no devuelve ningún valor y solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
@@ -80,12 +80,12 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Asigne un nombre a la pantalla predeterminada **Origen**, agregue otra pantalla y asígnele el nombre **Destino**.
-2. En la pantalla **Origen**, agregue dos botones y establezca sus propiedades **[Texto](../controls/properties-core.md)** de forma que una sea **Inglés** y la otra **Español**.
-3. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** del botón **Inglés** en esta expresión:<br>**Navigate(Destino, ScreenTransition.Fade, {Language:"Inglés"})**
-4. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** del botón **Español** en esta expresión:<br>**Navigate(destino, ScreenTransition.Fade, {Language:"Español"})**
-5. En la pantalla **Destino**, agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)**  en esta expresión:<br>**If(Language="Inglés", "Hello!", "Hola!")**
+2. En la pantalla **Origen**, agregue dos botones y establezca sus propiedades **[Text](../controls/properties-core.md)** de forma que una sea **Inglés** y la otra **Español**.
+3. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Inglés** en esta expresión:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Español** en esta expresión:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+5. En la pantalla **Destino**, agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta expresión:<br>**If(Language="Inglés", "Hello!", "¡Hola!")**
 6. En la pantalla **Destino**, seleccione **Formas** en la pestaña **Insertar** y seleccione la flecha Anterior.
-7. Establezca la propiedad **[AlSeleccionar](../controls/properties-core.md)** de la flecha Anterior en esta fórmula:<br>**Navigate(Origen, ScreenTransition.Fade)**
+7. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** de la flecha Anterior en esta fórmula:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. En la pantalla **Origen**, presione F5 y seleccione el botón de cualquiera de estos idiomas.
 
     En la pantalla **Destino**, la etiqueta aparece en el idioma correspondiente a botón que ha seleccionado.

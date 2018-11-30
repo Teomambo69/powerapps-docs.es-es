@@ -1,5 +1,5 @@
 ---
-title: Función Carácter | Microsoft Docs
+title: Función Char | Microsoft Docs
 description: Información de referencia para la función Char en PowerApps, incluidos ejemplos y sintaxis
 dauthor: gregli-msft
 manager: kvivek

@@ -1,5 +1,5 @@
 ---
-title: Funciones Actualizar y UpdateIf | Microsoft Docs
+title: Funciones Update y UpdateIf | Microsoft Docs
 description: Información de referencia para las funciones Update y UpdateIf en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
@@ -36,7 +36,7 @@ Use la función **UpdateIf** para modificar uno o varios valores de uno o más r
 
 Para especificar una modificación, use un registro de cambio que contenga los nuevos valores de la propiedad. Si proporciona este registro de cambio en línea entre llaves, las fórmulas de propiedad pueden hacer referencia a las propiedades del registro que se van a modificar. Puede usar este comportamiento para modificar registros en función de una fórmula.
 
-De forma similar a **UpdateIf**, también puede usar la función  **[Patch](function-patch.md)** para cambiar columnas específicas de un registro sin que afecte a otras columnas.
+De forma similar a **UpdateIf**, también puede usar la función **[Patch](function-patch.md)** para cambiar columnas específicas de un registro sin que afecte a otras columnas.
 
 Tanto **Update** como **UpdateIf** devuelven el origen de datos modificado como una [tabla](../working-with-tables.md). Debe usar estas funciones en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 

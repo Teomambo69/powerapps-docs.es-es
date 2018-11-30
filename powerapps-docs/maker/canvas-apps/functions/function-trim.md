@@ -1,5 +1,5 @@
 ---
-title: Funciones Recortar y TrimEnds | Microsoft Docs
+title: Funciones Trim y TrimEnds | Microsoft Docs
 description: Información de referencia de las funciones Trim y TrimEnds en PowerApps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
@@ -35,7 +35,7 @@ Al recortar los espacios entre las palabras, **Trim** es coherente con la funci�
 ## <a name="syntax"></a>Sintaxis
 **Trim**( *String* )<br>**TrimEnds**( *String* )
 
-* *Cadena*: requerido. Cadena de texto a la que se van a quitar los espacios.
+* *String*: requerido. Cadena de texto a la que se van a quitar los espacios.
 
 **Trim**( *SingleColumnTable* )<br>**TrimEnds**( *SingleColumnTable* )
 
@@ -52,7 +52,7 @@ Los ejemplos siguientes usan una colección de una sola columna, llamada **Space
 
 ![](media/function-trim/input-strings.png)
 
-Para crear esta colección, establezca la propiedad **AlSeleccionar** de un control **[Botón](../controls/control-button.md)** en esta fórmula, abra el modo de vista previa y, a continuación, pulse o haga clic en el botón:
+Para crear esta colección, establezca la propiedad **OnSelect** de un control **[Botón](../controls/control-button.md)** en esta fórmula, abra el modo de vista previa y, a continuación, pulse o haga clic en el botón:
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | Fórmula | Descripción | Resultado |
