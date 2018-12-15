@@ -1,1 +1,1 @@
-Cuenta Microsoft
+Cuenta de Microsoft

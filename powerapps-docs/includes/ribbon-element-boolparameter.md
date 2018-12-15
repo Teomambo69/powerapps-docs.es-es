@@ -1,1 +1,1 @@
-Especifica un valor con un tipo de datos booleano que puede pasarse como parámetro.
+Especifica un valor con un tipo de datos booleano que puede pasarse como un parámetro.

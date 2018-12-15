@@ -1,1 +1,1 @@
-Sales
+Ventas

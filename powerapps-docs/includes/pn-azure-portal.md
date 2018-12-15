@@ -1,1 +1,1 @@
-Portal de Azure
+Azure Portal

@@ -1,1 +1,1 @@
-integración de telefonía informática (CTI)
+Integración de telefonía e informática (CTI)
