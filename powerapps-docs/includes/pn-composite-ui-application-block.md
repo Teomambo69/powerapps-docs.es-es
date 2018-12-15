@@ -1,1 +1,1 @@
-Bloque de aplicaciones de UI compuesto
+Composite UI Application Block

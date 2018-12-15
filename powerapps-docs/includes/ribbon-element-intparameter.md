@@ -1,1 +1,1 @@
-Especifica un valor con un tipo de datos entero que puede pasarse como parámetro.
+Especifica un valor con un tipo de datos entero que puede pasarse como un parámetro.

@@ -1,1 +1,1 @@
-Dynamics 365 para Good
+Dynamics 365 for Good

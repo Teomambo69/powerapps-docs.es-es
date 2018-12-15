@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fa6a8f741ed0e771eeefbbee82a23e876363e55
-ms.sourcegitcommit: 469be99b762cd62289a98f058c498ac25ff8801b
+ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
+ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44327783"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247595"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
 Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
@@ -58,9 +58,9 @@ Puede confirmar este comportamiento en las Herramientas de desarrollo del explor
 Puede incluir la misma fórmula en la función **Concurrent** para disminuir el tiempo total que necesita la operación:
 
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' );
-        ClearCollect( Customer, '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( Product, '[SalesLT].[Product]' ),
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
         ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
         
 Con este cambio, la aplicación captura las tablas en paralelo: 

@@ -1,1 +1,1 @@
-Especifica una regla que puede detectar si una cinta de opciones de un formulario se muestra en el contexto de una entidad específica.
+Especifica una regla que puede detectar si una cinta de opciones de formulario se muestra en el contexto de una entidad específica.
