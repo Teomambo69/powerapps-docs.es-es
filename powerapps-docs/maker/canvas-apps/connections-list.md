@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20a725ff417ad1a36b83b6a24ca1aaecc667da14
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f7a053aff947ffd543381956cf725a7e656d8a65
+ms.sourcegitcommit: ebe0a9c41b693a2134e9198ffc7e7a8eabee4330
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834571"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "51276381"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -59,7 +59,7 @@ Para más información sobre cómo personalizar la fórmula con actualizaciones 
 
 ## <a name="popular-connectors"></a>Conectores populares
 
-La tabla siguiente contiene vínculos a más información sobre nuestros conectores más utilizados. Para ver una lista completa de conectores, consulte el apartado [Todos los conectores](#all-connectors).
+La tabla siguiente contiene vínculos a más información sobre nuestros conectores más utilizados. Para ver una lista completa de conectores, consulte el apartado [Todos los conectores](#all-standard-connectors).
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |

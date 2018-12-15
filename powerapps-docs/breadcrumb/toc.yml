@@ -1,42 +1,56 @@
-- name: Documentos
+items:
+- name: Docs
   href: /
   topicHref: /
   items:
-    - name: PowerApps
-      tocHref: /powerapps/
-      topicHref: /powerapps/
+  - name: PowerApps
+    tocHref: /powerapps/
+    topicHref: /powerapps/
+    items:
+    - name: Crear aplicaciones
+      tocHref: /powerapps/maker/common-data-service/
+      topicHref: /powerapps/maker/index
+    - name: Crear aplicaciones
+      tocHref: /powerapps/maker/model-driven-apps/
+      topicHref: /powerapps/maker/index
+    - name: Crear aplicaciones
+      tocHref: /powerapps/maker/canvas-apps/
+      topicHref: /powerapps/maker/index
+    - name: Crear aplicaciones
+      tocHref: /powerapps/developer/common-data-service/
+      topicHref: /powerapps/maker/index
       items:
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/common-data-service/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/model-driven-apps/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/canvas-apps/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
+      - name: Common Data Service for Apps
+        tocHref: /powerapps/developer/common-data-service/
+        topicHref: /powerapps/maker/common-data-service/index
+        items:
+        - name: Desarrollador
           tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/maker/index
+          topicHref: /powerapps/developer/common-data-service/index
           items:
-            - name: Common Data Service para aplicaciones
-              tocHref: /powerapps/developer/common-data-service/
-              topicHref: /powerapps/maker/common-data-service/index
-              items:
-                - name: Desarrollador
-                  tocHref: /powerapps/developer/common-data-service/
-                  topicHref: /powerapps/developer/common-data-service/index
-        - name: Crear aplicaciones
+          - name: Servicio de organización
+            tocHref: /powerapps/developer/common-data-service/org-service/
+            topicHref: /powerapps/developer/common-data-service/org-service/index
+          - name: API web
+            tocHref: /powerapps/developer/common-data-service/webapi/
+            topicHref: /powerapps/developer/common-data-service/webapi/index
+    - name: Crear aplicaciones
+      tocHref: /powerapps/developer/model-driven-apps/
+      topicHref: /powerapps/maker/index
+      items:
+      - name: Aplicaciones controladas por modelos
+        tocHref: /powerapps/developer/model-driven-apps/
+        topicHref: /powerapps/maker/model-driven-apps/index
+        items:
+        - name: Desarrollador
           tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/maker/index
-          items:
-            - name: Aplicaciones basadas en modelos
-              tocHref: /powerapps/developer/model-driven-apps/
-              topicHref: /powerapps/maker/model-driven-apps/index
-              items:
-                - name: Desarrollador
-                  tocHref: /powerapps/developer/model-driven-apps/
-                  topicHref: /powerapps/developer/model-driven-apps/index
-        - name: Aprendizaje guiado
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/index
+          topicHref: /powerapps/developer/model-driven-apps/index
+    - name: Aprendizaje guiado
+      tocHref: /powerapps/guided-learning/
+      topicHref: /powerapps/guided-learning/index
+ms.openlocfilehash: 2644352beb08998cad2c80678ab8abead5e6a596
+ms.sourcegitcommit: 90d3d4e2f2c8070443ff05424f3f46f4a8cdec81
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50681740"

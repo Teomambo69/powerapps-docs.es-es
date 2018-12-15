@@ -1,1 +1,1 @@
-Representa datos recuperados de la aplicación Microsoft Dynamics 365 que pueden pasarse como un parámetro.
+Representa los datos recuperados de la aplicación de Microsoft Dynamics 365 que pueden pasarse como parámetro.

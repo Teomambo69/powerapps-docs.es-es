@@ -1,1 +1,1 @@
-Especifica una regla que devuelve false cuando la aplicación web se ve en un explorador móvil en un dispositivo de tableta.
+Especifica una regla que devolverá false cuando la aplicación web se visualice en un explorador móvil en una tableta.
