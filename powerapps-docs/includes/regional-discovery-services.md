@@ -1,4 +1,4 @@
-|Location|Dirección URL del servicio web de detección|
+|Ubicación|Dirección URL del servicio web de detección|
 |--------------|-------------------------------| 
 |Norteamérica|`https://disco.crm.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Norteamérica 2|`https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`|

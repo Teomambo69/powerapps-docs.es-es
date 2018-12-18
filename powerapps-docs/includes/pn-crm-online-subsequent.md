@@ -1,1 +1,1 @@
-Dynamics 365 (en línea)
+Dynamics 365 (online)

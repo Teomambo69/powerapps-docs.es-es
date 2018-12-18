@@ -1,1 +1,1 @@
-Se requiere conexión a Internet para descargar el proyecto de ejemplo y para restaurar los paquetes NuGet utilizados en el proyecto de ejemplo.
+Se requiere una conexión a Internet para descargar el proyecto de ejemplo y para restablecer los paquetes NuGet que se usan en el proyecto de ejemplo.
