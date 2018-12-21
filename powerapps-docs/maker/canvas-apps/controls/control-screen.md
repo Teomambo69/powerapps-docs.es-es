@@ -1,24 +1,24 @@
 ---
 title: 'Control Pantalla: referencia | Microsoft Docs'
 description: Información sobre el control Pantalla, con propiedades y ejemplos
-author: fikaradz
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15264a783922891a84e805cea211f2945bca3f3e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d90c82b29ebc77b67731903d7a950790e13661e1
+ms.sourcegitcommit: 6851486b8a44d76b6d87837952b7a7f38a8752b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570406"
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.
@@ -59,7 +59,7 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
    
     ¿Desea más información sobre la función **[Navegar](../functions/function-navigate.md)** u [otras funciones](../formula-reference.md)?
 4. En **Target**, agregue un control **[Forma](control-shapes-icons.md)** (como una flecha) y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
-   **Navigate(Origen, ScreenTransition.Fade)**
+   **Navigate(Source, ScreenTransition.Fade)**
 5. Establezca la propiedad **[Fill](properties-color-border.md)** de **Target** en esta fórmula:<br>
    **If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))**
 6. Desde **Source**, presione F5, pulse o haga clic en cualquiera de las opciones del control **[Radio](control-radio.md)** y pulse o haga clic en el control **[Forma](control-shapes-icons.md)**.
