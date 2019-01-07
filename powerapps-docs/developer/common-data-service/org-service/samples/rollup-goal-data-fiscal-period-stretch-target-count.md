@@ -58,7 +58,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 4. Crea ActivityPartys para el campo **De** de llamadas de teléfono.
 5. Crea una llamada de teléfono abierta.
 6. Cierra la primera llamada de teléfono y crea una segunda.
-7. Cierra la segunda una llamada de teléfono.
+7. Cierra la segunda llamada de teléfono.
 
 ### <a name="demonstrate"></a>Demostración
 

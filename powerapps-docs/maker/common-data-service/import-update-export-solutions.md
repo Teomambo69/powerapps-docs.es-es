@@ -97,8 +97,8 @@ search.app:
 
 3.  Seleccione el tipo de paquete **Como no administrado** o **Como administrado**. Esto iniciará la exportación, que puede tardar varios minutos en completarse. Una vez finalizada, el archivo .zip de exportación está disponible en la carpeta de descarga especificada por el explorador web.
 
-> [!div class="mx-imgBorder"]  
-> ![Exportar una solución](media/solution-export.PNG "Exportar una solución") 
+    > [!div class="mx-imgBorder"]  
+    > ![Exportar una solución](media/solution-export.png "Exportar una solución") 
 
 ### <a name="export-from-the-classic-experience"></a>Exportación desde la experiencia clásica
 

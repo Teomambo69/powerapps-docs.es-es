@@ -21,7 +21,7 @@ Este ejemplo muestra cómo otorgar a un usuario o equipo acceso a una cola. [Add
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
-[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)
+[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 

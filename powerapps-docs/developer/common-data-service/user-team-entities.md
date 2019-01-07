@@ -57,7 +57,7 @@ La administración de usuarios y equipos es el área de CDS para aplicaciones do
 **Utilidad de configuración de usuario** es una herramienta desarrollada por Comunidad XrmToolbox para CDS para aplicaciones. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de CDS para aplicaciones y no se incluyen en el soporte técnico.
+> Las herramientas de la comunidad no son un producto de CDS for Apps y no se incluyen en el soporte técnico.
 > Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Vea también  

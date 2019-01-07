@@ -1,8 +1,8 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
-description: <Description>
+title: Servicio asincrónico (Common Data Service para aplicaciones) | Microsoft Docs
+description: Comprenda cómo funciona el servicio asincrónico que administra trabajos del sistema.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

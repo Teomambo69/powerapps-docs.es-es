@@ -21,7 +21,7 @@ search.app:
 
 Los recursos web de Script(JScript) se usan para crear una biblioteca de funciones de JScript a las que se puede acceder desde cualquier parte.  
   
-<a name="BKMK_capabilties"></a>   
+<a name="BKMK_capabilities"></a>   
 ## <a name="capabilities-of-script-web-resources"></a>Capacidades de los recursos web de script  
  Con los recursos web de JavaScript, puede administrar de forma más eficiente el código usado en los scripts de formulario, los recursos web de página web (HTML) o los comandos de la cinta de opciones vinculándolos a una biblioteca compartida de funciones de JavaScript.  
   

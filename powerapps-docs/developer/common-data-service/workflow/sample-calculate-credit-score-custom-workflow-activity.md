@@ -2,7 +2,7 @@
 title: 'Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada (Common Data Service para aplicaciones) | Microsoft Docs'
 description: El ejemplo muestra una actividad de flujo de trabajo que calcula la puntuación de crédito basada en el número de la seguridad social (SSN) y el nombre.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/03/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -55,6 +55,18 @@ La siguiente actividad de flujo de trabajo de ejemplo calcula la puntuación de 
 ## <a name="example"></a>Ejemplo  
 
 ```csharp
+using System;
+using System.Activities;
+using System.Collections;
+using System.Reflection;
+
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Messages;
+using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk.Workflow;
+
+namespace Microsoft.Crm.Sdk.Samples
+{
 /// <summary>
 /// Calculates the credit score based on the SSN and name. 
 /// </summary>
@@ -181,6 +193,8 @@ public sealed partial class RetrieveCreditScore : CodeActivity
     [Output("Credit Score")]
     [AttributeTarget(CustomEntity, "new_creditscore")]
     public OutArgument<int> CreditScore { get; set; }
+    
+  }
 }
 ```
   

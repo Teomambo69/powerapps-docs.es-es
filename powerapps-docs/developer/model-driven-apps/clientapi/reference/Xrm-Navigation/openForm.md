@@ -1,6 +1,6 @@
 ---
 title: openForm (referencia de API de cliente) en aplicaciones basadas en modelos | MicrosoftDocs
-ms.date: 10/31/2018
+ms.date: 11/09/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -45,7 +45,7 @@ search.app:
 <li><b>entityName</b>: cadena (opcional). Nombre lógico de la entidad para la que se va a mostrar el formulario.</li>
 <li><b>formId</b>: cadena (opcional). Identificador de la instancia de formulario que se va a mostrar.</li>
 <li><b>height</b>: número (opcional). Alto de la ventana de formulario que se mostrará, en píxeles.</li>
-<li><b>navBar</b>: cadena (opcional). Controla si la barra de navegación se muestra y si la navegación por la aplicación está disponible mediante las áreas y subáreas definidas en el mapa del sitio. Los valores válidos son: "on", "off" o "entity".<ul><li><code>on</code>: se muestra la barra de navegación. Este es el comportamiento predeterminado si el parámetro <b>navBar</b> no se usa.</li>
+<li><b>navbar</b>: cadena (opcional). Controla si la barra de navegación se muestra y si la navegación por la aplicación está disponible mediante las áreas y subáreas definidas en el mapa del sitio. Los valores válidos son: "on", "off" o "entity".<ul><li><code>on</code>: se muestra la barra de navegación. Este es el comportamiento predeterminado si el parámetro <b>navbar</b> no se usa.</li>
 <li><code>off</code>: no se muestra la barra de navegación. Los usuarios pueden navegar usando otros elementos de la interfaz de usuario o los botones adelante y atrás.</li><li><code>entity</code>: en un formulario de entidad, solo están disponibles las opciones de navegación de entidades relacionadas. Después de navegar a una entidad relacionada, se muestra un botón atrás en la barra de navegación para permitir volver al registro original.</li></ul></li>
 <li><b>openInNewWindow</b>: booleano (opcional). Indica si se debe mostrar el formulario en una nueva ventana.</li>
 <li><b>windowPosition</b>: número (opcional). Especifique uno de los siguientes valores para la posición del formulario de la ventana en la pantalla:<ul><li><code>1:center</code></li><li><code>2:side</code></li></ul>
@@ -103,11 +103,9 @@ search.app:
 <td>No</td>
 <td>Una función para ejecutarse cuando:
 <ul>
-<li>El formulario de la entidad se muestra en los registros existentes.</li>
-<li>El registro se guarda en el formulario de la entidad que se muestra para un nuevo registro.</li>
 <li>El registro se guarda en el formulario de creación rápida.</li>
+<li>El registro se guarda en el formulario de creación rápida para un nuevo registro creado mediante en <b>Guardar y nuevo</b>. Esto solo se aplica a <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">interfaz unificada</a>.</li>
 </ul>
-<b>NOTA</b>: En [Interfaz unificada](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps), la función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método **openForm**.
 
 A esta funcionalidad se le pasa un objeto como parámetro. El objeto tiene una matriz <b>savedEntityReference</b> con las siguientes propiedades para identificar el registro(s) mostrado(s) o creado(s):
 <ul>
@@ -115,7 +113,20 @@ A esta funcionalidad se le pasa un objeto como parámetro. El objeto tiene una m
 <li><b>id</b>: Representación en cadena de un valor GUID del registro.</li>
 <li><b>name</b>: El valor del atributo principal del registro mostrado o creado.</li></ul>
 
-<b>NOTA</b>: Al abrir un formulario para un registro existente o crear un registro, <b>el savedEntityReference</b> contiene un solo artículo. Al abrir un formulario de creación rápida en [Interfaz unificada](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps) y crear varios registros haciendo clic en <b>Guardar y nuevo</b>, <b>savedEntityReference</b> contendrá varios elementos, cada uno representando el registro creado mediante el formulario de creación rápida.
+<b>NOTA</b>:
+<ul>
+<li>En el cliente web: <ul>
+    <li>La función <b>successCallback</b> no se ejecuta cuando se abre un formulario para un registro existente o nuevo.</li>
+    <li>La función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método <strong>openForm</strong>.</li>
+    <li>Al abrir un formulario de creación rápida y crear un registro, la matriz <b>savedEntityReference</b> contendrá un solo elemento.</li>
+  </ul>
+</li>
+<li>En la <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">interfaz unificada</a>:
+<ul>
+    <li>La función <b>successCallback</b> no se ejecuta cuando se abre un formulario para un registro existente o nuevo.</li>
+<li>La función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método <strong>openForm</strong>.</li>
+    <li>Al abrir un formulario de creación rápida y crear un registro, la matriz <b>savedEntityReference</b> contendrá un solo elemento.</li>
+<li>Al abrir un formulario de creación rápida y crear varios registros haciendo clic en <b>Guardar y nuevo</b>, la matriz <b>savedEntityReference</b> contendrá varios elementos, cada uno representando el registro creado mediante el formulario de creación rápida.</li>
 </td>
 </tr>
 <tr>
@@ -124,7 +135,7 @@ A esta funcionalidad se le pasa un objeto como parámetro. El objeto tiene una m
 <td>No</td>
 <td>Función que se ejecuta cuando la operación produce un error.<br>
 
-<b>NOTA</b>: en [interfaz unificada](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps), la función <b>errorCallback</b> se ejecutará solo si abre un formulario de creación rápida.</td>
+<b>NOTA</b>: en [interfaz unificada](/dynamics365/customer-engagement/admin/about-unified-interface), la función <b>errorCallback</b> se ejecutará solo si abre un formulario de creación rápida.</td>
 </tr>
 </table>
 

@@ -41,7 +41,7 @@ Defina las acciones que se deben realizar mediante una barra de comandos o contr
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo>
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro a las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo>
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]

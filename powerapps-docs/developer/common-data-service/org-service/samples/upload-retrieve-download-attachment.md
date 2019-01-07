@@ -30,9 +30,9 @@ El ejemplo muestra cómo cargar, recuperar y descargar un archivo adjunto para u
 
 Los métodos `IOrganizationService` están diseñados para usarse en un escenario donde se proporciona acceso mediante programación a los metadatos y los datos de una organización.
 
-## <a name="how-this-sample-works"></a>Cómo funciona este ejemplo
+## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
 
-Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), el ejemplo hará lo siguiente:
+Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), la muestra hará lo siguiente:
 
 ### <a name="setup"></a>Configuración
 
@@ -46,4 +46,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
 
-La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datps para obtener los mismos resultados.
+La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.

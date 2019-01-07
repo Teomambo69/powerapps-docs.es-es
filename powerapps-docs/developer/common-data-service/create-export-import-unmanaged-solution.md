@@ -83,7 +83,7 @@ Además de ser un requisito previo para crear una solución administrada, una so
 
   Cuando se exporta una solución con la aplicación web, en el paso **Exportar configuración del sistema (avanzado)**, puede elegir qué configuración del sistema incluir en la solución. Estas opciones están disponibles para programadores mediante <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest> a través de los miembros disponibles en la solicitud. Vea los comentarios para la solicitud para obtener más información acerca de qué configuración se incluye.  
 
-  Puede seleccionar una versión de destino cuando exporte una solución. Puede exportar una solución que sea compatible con versiones anteriores. Más información: [Exportar una solución para una versión determinada de Dynamics 365](export-solution-specific-version.md).  
+  <!--You can pick a target version when you export a solution. You can export a solution that is compliant with earlier versions. More information: [Export a solution for a specific Dynamics 365 version](export-solution-specific-version.md).-->  
 
 <a name="BKMK_ImportUnmanagedSolution"></a>   
 ## <a name="import-an-unmanaged-solution"></a>Importar una solución no administrada  

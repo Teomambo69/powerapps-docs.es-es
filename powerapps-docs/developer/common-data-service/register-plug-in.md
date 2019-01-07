@@ -234,7 +234,7 @@ En CDS para aplicaciones, solo de los mensajes siguientes admiten imágenes de l
 
 Existen dos tipos de imágenes de la entidad: **Imagen previa** y **Imagen posterior**. Cuando se configuran, estas imágenes estarán disponibles en el contexto de ejecución como propiedades <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages> respectivamente. Como los nombres sugieren, estas instantáneas representan el aspecto que tiene la entidad antes de la operación y tras la operación. Cuando configura una imagen de la entidad, definirá un valor *alias de entidad* que será el valor clave que se usará para acceder a una imagen específica de la entidad desde las propiedades `PreEntityImages` o `PostEntityImages`.
 
-#### <a name="availabilty-of-images"></a>Disponibilidad de imágenes
+#### <a name="availability-of-images"></a>Disponibilidad de imágenes
 
 Cuando configura una imagen de la entidad es importante que reconozca que el tipo de imágenes de la entidad disponibles depende de la fase de paso registrado y del tipo de operación. Por ejemplo:
 

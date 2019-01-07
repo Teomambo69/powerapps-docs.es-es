@@ -1,6 +1,6 @@
 ---
 title: Xrm.WebApi.online.execute (referencia de API de cliente) en aplicaciones basadas en modelos | Microsoft Docs
-ms.date: 10/31/2018
+ms.date: 11/21/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -42,7 +42,10 @@ search.app:
 <td>Sí</td>
 <td><p>Objeto que se pasará al extremo de la API web para ejecutar una acción, función o solicitud CRUD. El objeto muestra un método <b>getMetadata</b> que le permite definir los metadatos de la acción, la función o la solicitud CRUD que desea ejecutar. El método <b>getMetadata</b> tiene los siguientes parámetros:</p>
 <ul>
-<li><b>boundParameter</b>: cadena (opcional). Nombre de los parámetros asociados para que se ejecute la acción o función. <br/>Especifique **sin definir** si se está ejecutando una solicitud CRUD.<br/>Especifique **nulo** si la acción o función que se va a ejecutar no depende de ninguna entidad. <br/>Especifique el nombre lógico de la entidad o el nombre del conjunto de entidades en el caso de que la acción o función que se ejecute tenga uno vinculado. </li>
+<li><b>boundParameter</b>: cadena (opcional). Nombre de los parámetros asociados para que se ejecute la acción o función.
+<ul><li>Especifique <code>undefined</code> si se está ejecutando una solicitud CRUD.</li>
+<li>Especifique <code>null</code> si la acción o función que se va a ejecutar no depende de ninguna entidad.</li>
+<li>Especifique <code>entity</code> si la acción o función que se va a ejecutar depende de una entidad. </li></ul>
 <li><b>operationName</b>: (opcional). Cadena. Nombre de la acción, de la función o de uno de los valores siguientes si se está ejecutando una solicitud CRUD: "Create", "Retrieve", "RetrieveMultiple", "Update" o "Delete".</li>
 <li><b>operationType</b>: (opcional). Número. Indica el tipo de operación que se está ejecutando. Especifique uno de los siguientes valores:
 <br/><code>0: Action</code>
@@ -162,14 +165,13 @@ var Sdk = window.Sdk || {};
 /**
  * Request to execute WhoAmI function
  */
-Sdk.WhoAmIRequest = function () {
-    this.getMetadata = function () {
-        return {
-            boundParameter: null,
-            parameterTypes: {},
-            operationType: 1, // This is a function. Use '0' for actions and '2' for CRUD
-            operationName: "WhoAmI",
-        };
+Sdk.WhoAmIRequest = function () { };
+Sdk.WhoAmIRequest.prototype.getMetadata = function () {
+    return {
+        boundParameter: null,
+        parameterTypes: {},
+        operationType: 1, // This is a function. Use '0' for actions and '2' for CRUD
+        operationName: "WhoAmI",
     };
 };
 
@@ -181,9 +183,11 @@ Xrm.WebApi.online.execute(whoAmIRequest).then(
     function (result) {
         if (result.ok) {
             console.log("Status: %s %s", result.status, result.statusText);
-            var response = JSON.parse(result.responseText);
-            console.log("User Id: %s", response.UserId);
-            // perform other operations as required;
+            result.json().then(
+                function (response) {
+                    console.log("User Id: %s", response.UserId);
+                    // perform other operations as required;
+                });
         }
     },
     function (error) {

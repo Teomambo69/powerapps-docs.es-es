@@ -2,7 +2,7 @@
 title: Atributos de imagen (Common Data Service para aplicaciones) | Microsoft Docs
 description: 'Obtenga información sobre los atributos de la imagen que incluyen datos de la imagen con la aplicación y sobre los atributos de soporte, la recuperación de datos de la imagen y la carga de datos de la imagen.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/26/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,7 +19,7 @@ search.app:
 
 Los registros de entidad que incluyen datos de imagen proporcionan una experiencia única dentro de la aplicación. Como programador, usted necesita comprender cómo trabaja con datos de imagen.  
   
- Sólo determinadas entidades del sistema y las entidades personalizadas admiten imágenes. Para obtener información acerca de qué entidades del sistema admiten imágenes, consulte [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities.md#BKMK_EntityImages).  
+ Sólo determinadas entidades del sistema y las entidades personalizadas admiten imágenes. Para obtener información acerca de qué entidades del sistema admiten imágenes, consulte [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images).  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Atributos compatibles  

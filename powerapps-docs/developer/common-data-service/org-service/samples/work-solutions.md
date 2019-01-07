@@ -65,4 +65,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
 
-La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datps para obtener los mismos resultados.
+La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
