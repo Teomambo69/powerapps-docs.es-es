@@ -26,10 +26,14 @@ items:
       href: environment-and-tenant-migration.md
     - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
       href: powerapps-powershell.md
+    - name: Registro de actividad para PowerApps
+      href: https://docs.microsoft.com/power-platform/admin/logging-powerapps
   - name: Integración de datos
     items:
     - name: Integración de datos en CDS for Apps
       href: data-integrator.md
+    - name: Solución de problemas y administración de errores de integración de datos
+      href: data-integrator-error-management.md
     - name: Respuesta a solicitudes de DSR
       items:
       - name: Registros generados por el sistema
@@ -58,6 +62,8 @@ items:
       href: create-database.md
     - name: Versión preliminar de entornos
       href: preview-environments.md
+    - name: Entornos de prueba
+      href: trial-environments.md
   - name: Configurar la seguridad del entorno
     href: database-security.md
     items:
@@ -71,9 +77,9 @@ items:
     items:
     - name: Ver los usuarios activos en el inquilino
       href: admin-view-user-licenses.md
-ms.openlocfilehash: 555f8872c3aaa5e656dfe3b3ad72004de63d8d7c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: 59af13c7f64d8eaecd06972da17e9d3e17b18743
+ms.sourcegitcommit: a2222547ee563186675c625c7e769f8aa03842c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46468844"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342299"

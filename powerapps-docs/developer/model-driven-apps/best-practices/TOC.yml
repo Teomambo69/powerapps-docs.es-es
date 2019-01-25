@@ -1,0 +1,19 @@
+items:
+- name: Procedimientos recomendados e instrucciones para aplicaciones basadas en modelos
+  href: index.md
+  items:
+  - name: Aplicar lógica empresarial mediante scripting de cliente
+    href: business-logic/index.md
+    items:
+    - name: Evitar el uso de window.top
+      href: business-logic/avoid-window-top.md
+    - name: Interactuar con los recursos HTTP y HTTPS de forma asincrónica
+      href: business-logic/interact-http-https-resources-asynchronously.md
+    - name: Quitar personalizaciones desactivadas o deshabilitadas
+      href: business-logic/remove-deactivated-disabled-configurations.md
+ms.openlocfilehash: 3289c700ad61c47cc7f6907030516bab17c108b8
+ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54271557"

@@ -1,0 +1,21 @@
+items:
+- name: < Aplicar lógica de negocios con código
+  href: ../apply-business-logic-with-code.md
+- name: Diseño de personalización escalable
+  href: overview.md
+  items:
+  - name: Transacciones de bases de datos
+    href: database-transactions.md
+  - name: Problemas de simultaneidad
+    href: concurrency-issues.md
+    items:
+    - name: Ejemplo de numeración automática
+      href: auto-numbering-example.md
+  - name: Patrones de diseño de transacciones
+    href: transaction-design-patterns.md
+ms.openlocfilehash: d67792fc5bae75316f5a814a1289d06b0bca1e5a
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334141"
