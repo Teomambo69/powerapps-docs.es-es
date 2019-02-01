@@ -16,12 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cb500e681be7a3be6a1ac0e0dc54caa2981893c
-ms.sourcegitcommit: 5198d7d99f157cd42830f833712175a2228aae5e
+ms.openlocfilehash: 088804f429e23a8824c3c132c3011308935a5b66
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54069382"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290843"
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 
@@ -38,7 +38,9 @@ Para obtener más detalles sobre cómo buscar información en las notas de la ve
 
 ## <a name="release-notes"></a>Notas de la versión
 
-Para obtener información sobre las características nuevas que se van a publicar en los próximos meses y que puede usar para la planificación, vea las [notas de la versión de octubre de 2018](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features).
+Para información sobre las características nuevas que se van a publicar en los próximos meses y que puede usar para el planeamiento, consulte:
+- [Notas de la versión de octubre de 2018](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)
+- [Notas de la versión de abril de 2019](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
