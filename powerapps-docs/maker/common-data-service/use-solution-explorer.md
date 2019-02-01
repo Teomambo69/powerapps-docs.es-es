@@ -27,12 +27,11 @@ search.app:
 
  En PowerApps, puede ver una lista de soluciones seleccionando **Soluciones** en la navegación izquierda. A continuación puede seleccionar una solución para ver todos sus componentes. 
  
-> [!NOTE]
->  La experiencia de soluciones solo está disponibles con conexión y para entornos de la versión 9.1.0.267 y posteriores. Para comprobar la versión, vaya a …[Centro de administración de PowerApps](https://admin.powerapps.com/)> Entornos > seleccione el entorno > pestaña Detalles. Para las instancias con la versión anterior, la selección de una solución la abrirá en experiencia clásica. 
-
 > [!div class="mx-imgBorder"]  
 > ![Solución de demostración con todos los componentes](media/solution-all-items-list.PNG "Solución de demostración con todos los componentes")  
-  
+ 
+> [!NOTE]
+>  La experiencia de soluciones solo está disponibles con conexión y para entornos de la versión 9.1.0.267 y posteriores. Para comprobar la versión, vaya a …[Centro de administración de PowerApps](https://admin.powerapps.com/)> **Entornos** > seleccione el entorno > pestaña **Detalles**. Para los entornos de una versión anterior, la selección de una solución lo abrirá en la experiencia clásica.  
  
  Puede examinar todos los componentes de una solución desplazándose a través de los elementos. Si hay más de 100 elementos en la lista puede seleccionar **Cargar los siguientes 100 elementos** para ver más. 
  
@@ -44,7 +43,7 @@ search.app:
  También puede buscar un componente específico por su nombre. 
  
 > [!div class="mx-imgBorder"]  
-> ![Buscar componente](media/solution-search-box.PNG "Buscar componente")  
+> ![Buscar componente](media/solution-search-box.png "Buscar componente")  
  
  O bien filtre todos los elementos de la lista por tipo de componente.
   
@@ -56,7 +55,7 @@ search.app:
  Cuando selecciona cada componente, las acciones disponibles en la barra de comandos cambiarán según el tipo del componente seleccionado y si la solución es predeterminada o administrada. 
  
 > [!div class="mx-imgBorder"]  
-> ![Comandos específicos de componentes](media/component-commands.PNG "Comandos específicos de componentes")  
+> ![Comandos específicos de componentes](media/component-commands.png "Comandos específicos de componentes")  
  
  Cuando no seleccione ningún componente, la barra de comandos mostrará las acciones aplicadas a la propia solución. 
  
@@ -87,7 +86,7 @@ search.app:
 >  Actualmente, cuando agrega una entidad existente a una solución el sistema agrega automáticamente todos los componentes que son parte de la entidad a la solución. Si no es esto lo que prefiere, use el comando **Cambiar a clásico** para navegar a la experiencia clásica y agregar solo los componentes que desee. <!-- We will soon improve this experience from PowerApps and allow you to select only the specific component(s) under entity that you want to add into a solution. -->
   
 > [!div class="mx-imgBorder"]  
-> ![Solución de demostración que muestra la entidad de cuenta expandida](media/solution-entity-account.PNG "Solución de demostración que muestra la entidad de cuenta expandida")  
+> ![Solución de demostración que muestra la entidad de cuenta expandida](media/solution-entity-account.png "Solución de demostración que muestra la entidad de cuenta expandida")  
 
 ## <a name="classic-solution-explorer"></a>Explorador de soluciones clásico
 
@@ -95,18 +94,18 @@ En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Sol
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-- Al eliminar o quitar una solución administrada no se eliminará la aplicación de lienzo de PowerApps.
+- Al eliminar o quitar una solución administrada no se elimina en la aplicación de lienzo de PowerApps.
 - Los conectores personalizados no están disponibles en una solución.
-- Las aplicaciones de lienzo deberán abrirse una vez finalizada la importación de la solución para actualizar las conexiones.
-- Después de agregar un ensamblado de SDK existente, no aparecerá en la solución. 
-- Si las aplicaciones de lienzo se empaquetan en una solución administrada, seguirán siendo editables por los administradores en el nuevo entorno.
-- Las dependencias no están disponibles para las aplicaciones de lienzo
-- Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo 
--   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de común de Common Data Service
--   Las API de CDS para llamar a las aplicaciones de lienzo están bloqueados y no devolverán nada 
--   La aplicación de lienzo creada en una solución aún no se puede compartir como copropietario con Grupo de seguridad AAD
--   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico 
--   Las aplicaciones de lienzo existentes no reconocen las soluciones 
+- Las aplicaciones de lienzo deben abrirse una vez finalizada la importación de la solución para actualizar las conexiones.
+- Después de agregar un ensamblado de SDK existente, no aparece en la solución. 
+- Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino.
+- Las dependencias no están disponibles para las aplicaciones de lienzo.
+- Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
+-   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de común de Common Data Service (CDS) para aplicaciones.
+-   Las API de CDS para llamar a las aplicaciones de lienzo están bloqueados y no devuelve nada. 
+-   Las aplicaciones de lienzo creadas en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
+-   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
+-   Las aplicaciones de lienzo existentes no reconocen las soluciones. 
 
  Para obtener más información acerca de los componentes individuales de una solución, vea los temas siguientes:  
   

@@ -17,36 +17,41 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps
 
-Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service (CDS) para aplicaciones. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario final. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
+Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service (CDS) para aplicaciones. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
 
-El comprobador de soluciones analiza estos componentes de la solución. 
+El comprobador de soluciones analiza estos componentes de la solución: 
 - Complementos de CDS for Apps
 - Actividades personalizadas del flujo de trabajo de CDS for Apps 
 - Recursos web de CDS for Apps (HTML y JavaScript)
 - Configuraciones de CDS for Apps, como pasos de mensajes de SDK 
 
-El comprobador de soluciones trabaja con soluciones no administradas que se pueden exportar desde un entorno. El comprobador de soluciones no funciona con las soluciones siguientes. 
+El comprobador de soluciones trabaja con soluciones no administradas que se pueden exportar desde un entorno. El comprobador de soluciones *no* funciona con las soluciones siguientes: 
+
+
+<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
+
 - Las soluciones predeterminadas del (solución predeterminada y solución predeterminada de Common Data Services).
 - Soluciones que contienen JavaScript que usa ECMAScript 6 (2015) o versiones posteriores. Cuando se detecta JavaScript que usa una de estas versiones, se informará de un problema de la sintaxis JS001 para el recurso web.
 
-> [!NOTE]
-> Esta característica está actualmente en vista previa y disponible solo para organizaciones de la región de Norteamérica. 
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-
 
 ## <a name="enable-the-solution-checker"></a>Habilitar el comprobador de soluciones
-El comprobador de soluciones pasa a estar disponible en el área Soluciones de PowerApps después de instalar la solución del comprobador de PowerApps. Tenga en cuenta que no podrá encontrarla examinando o buscando en Microsoft AppSource. Debe instalarla siguiendo estos pasos.  
+El comprobador de soluciones pasa a estar disponible en el área Soluciones de PowerApps después de instalar la solución del comprobador de PowerApps. Tenga en cuenta que no podrá encontrarla examinando o buscando en Microsoft AppSource. Para instalarlo, siga estos pasos:  
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno Common Data Service donde desea habilitar el comprobador de soluciones. 
 2. En el panel de navegación izquierdo, seleccione **Soluciones**.
-3. En la barra de herramientas, seleccione **Comprobador de soluciones** y después seleccione **Instalar** – esto abre la página de Microsoft AppSource. Debe permitir elementos emergentes si el explorador bloquea la apertura de la página. 
+3. En la barra de herramientas, seleccione **Comprobador de soluciones** y después seleccione **Instalar** – esto abre la página de Microsoft AppSource. Debe permitir ventanas emergentes si el explorador bloquea la apertura de la página. 
 
-   ![Instalar comprobador de soluciones](media/solution-checker-install.png)
+   > [!div class="mx-imgBorder"]
+   > ![Instalar el comprobador de soluciones](media/solution-checker-install.png "Instalar el comprobador de soluciones")
 
 4. Seleccione **Prueba gratuita** en la página de AppSource. 
-5. Si está de acuerdo, acepte las condiciones y seleccione el entorno para instalar la solución de comprobador de PowerApps. 
-6.  Cuando se complete la instalación, actualice el lista **Solución** en el sitio de PowerApps para comprobar que el comprobador de soluciones está disponible.  
-7. Para comprobar una solución [Ejecute al comprobador de soluciones](#run-the-solution-checker).
+
+
+<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
+
+5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
+6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
+7. To check a solution, [Run the solution checker](#run-the-solution-checker).
 
 
 <!-- ### Components created with the PowerApps checker
@@ -66,20 +71,22 @@ Después de instalar el comprobador de PowerApps en el entorno, un elemento de m
 2. En el panel izquierdo, seleccione **Soluciones**. 
 3. Junto a la solución no administrada que desea analizar, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Ejecutar**. 
 
-   ![Ejecutar comando de comprobador de soluciones](media/solution-checker-run.png)
+   > [!div class="mx-imgBorder"]
+   > ![Comando ejecutar comprobador de soluciones](media/solution-checker-run.png "Comando ejecutar comprobador de soluciones")
 
 4.  El panel de estado situado en la parte superior derecha de la página **Soluciones** muestra **Comprobador de soluciones ejecutándose**. 
 
-    ![Estado del comprobador de soluciones](media/solution-checker-status.png)
+    > [!div class="mx-imgBorder"]
+    > ![Estado del comprobador de soluciones](media/solution-checker-status.png "Estado del comprobador de soluciones")
    
-     Tenga en cuenta lo siguiente:
-       - El comprobador de soluciones puede tardar varios minutos en completar el análisis. 
+    Tenga en cuenta lo siguiente:
+    - El comprobador de soluciones puede tardar varios minutos en completar el análisis. 
     
-       - Durante este tiempo observará el estado **Ejecutándose…** en la columna **Comprobación de solución** de la lista **Solución**. 
+    - Durante este tiempo observará el estado **Ejecutándose…** en la columna **Comprobación de solución** de la lista **Solución**. 
     
-       - Usted recibe un correo electrónico de notificación y una notificación en el área **Notificaciones** del sitio de PowerApps cuando finalice la comprobación.  
+    - Usted recibirá un correo electrónico de notificación y una notificación en el área **Notificaciones** del sitio de PowerApps cuando finalice la comprobación.  
 
-5.  [Vea el informe](#reviewing-the-solution-checker-report) cuando finalice la comprobación.
+5.  [Vea el informe](#review-the-solution-checker-report) cuando finalice la comprobación.
 
 ## <a name="cancel-a-check"></a>Cancelar una comprobación
 
@@ -96,9 +103,9 @@ Al instalar el comprobador de soluciones en el entorno, la columna **Comprobaci�
 |En ejecución     | La solución se está analizando.       |
 |No se pudo completar     |  El análisis de soluciones se ha solicitado pero no se ha completado correctamente.       |
 |Resultados en la *fecha y hora*   | El análisis de soluciones se ha completado y los resultados están disponible para descarga.      |
-| No se pudo completar. Resultado en la *fecha y hora*     | La última solicitud de análisis no se completó correctamente. Los últimos resultados correctos pueden descargarse.         |
-|Comprobado por Microsoft     | Ésta es una solución administrada de Microsoft. El análisis de soluciones no está permitido en estas soluciones.         |
-|Comprobado por el editor     |  Se trata de una solución administrada por terceros. Actualmente, los análisis de soluciones no está disponible para estas soluciones.        |
+|No se pudo completar. Resultado en la *fecha y hora*     | La última solicitud de análisis no se completó correctamente. Los últimos resultados correctos pueden descargarse.         |
+|Comprobado por Microsoft     | Esta es una solución administrada de Microsoft. El análisis de soluciones no está permitido en estas soluciones.         |
+|Comprobado por el editor     | Se trata de una solución administrada por terceros. Actualmente, los análisis de soluciones no está disponible para estas soluciones.        |
 
 
 ## <a name="review-the-solution-checker-report"></a>Revise el informe del comprobador de soluciones
@@ -113,9 +120,9 @@ Este es un resumen de cada columna del informe.
 |Campo del informe |Descripción  |Se aplica al componente   |
 |---------|---------|---------|
 |Problema     |   El título del problema identificado en la solución.      | Todo        |
-|Categoría     | La clasificación del problema identificado, por ejemplo, **Rendimiento**, **Uso** o **Compatibilidad**.      |  Todo       |
-|Gravedad     | Representa el impacto potencial del problema identificado. Los tipos de impacto disponibles son **Alto**, **Medio**, **Bajo**, **Informativo**.         |  Todo       |
-|Instrucciones     |  Vínculo al artículo que detalla el problema, el impacto, y solución recomendada. acciones.       |  Todo       |
+|Categoría     | La clasificación del problema identificado, por ejemplo, **Rendimiento**, **Uso** o **Compatibilidad**.      |  Todo     |
+|Gravedad     | Representa el impacto potencial del problema identificado. Los tipos de impacto disponibles son **Alto**, **Medio**, **Bajo** e **Informativo**.         |  Todo       |
+|Instrucciones     |  Vínculo al artículo que detalla el problema, el impacto, y acción recomendada.       |  Todo       |
 |Componente     |  El componente de soluciones donde se identificó el problema.        |   Todo      |
 |Location     |  La ubicación y/o el archivo de origen del componente donde se produjo el problema que se ha identificado, como el ensamblado o el nombre de archivo JavaScript.        |  Todo       |
 |Nº. de línea     |  La referencia de número de línea del problema en el componente del recurso web afectado.       |  Recursos web       |
@@ -126,9 +133,7 @@ Este es un resumen de cada columna del informe.
 |Comentarios     | Detalles acerca del problema que incluyen pasos de resolución de alto nivel.         |  Todo       |
 
 
-
 ## <a name="best-practice-rules-used-by-solution-checker"></a>Reglas de prácticas recomendadas usadas por el comprobador de soluciones
-
 
 |Componente de la solución  |Nombre de regla  |Descripción de la regla  |
 |---------|---------|---------|
@@ -162,5 +167,4 @@ Este es un resumen de cada columna del informe.
 
 
 ## <a name="see-also"></a>Vea también
-[Comprender características experimentales y de vista previa en PowerApps](../canvas-apps/working-with-experimental.md) <br/>
 [Guía y prácticas recomendadas para generar soluciones de PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/guidance/)

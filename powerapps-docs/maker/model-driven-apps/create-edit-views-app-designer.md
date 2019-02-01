@@ -1,8 +1,8 @@
 ---
-title: Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos usando el diseñador de aplicaciones con PowerApps | MicrosoftDocs
+title: Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos con PowerApps | MicrosoftDocs
 description: Aprender ahora a crear o editar vistas mediante el diseñador de aplicaciones
 keywords: ''
-ms.date: 05/24/2018
+ms.date: 11/27/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -26,9 +26,9 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-create-and-edit-public-or-system-model-driven-app-views-by-using-the-app-designer"></a>Tutorial: Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos usando el diseñador de aplicaciones
+# <a name="create-and-edit-public-or-system-model-driven-app-views"></a>Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos
 
-En este tutorial realizará varias tareas necesarias para trabajar con las vistas, como crear una vista pública, agregar una vista existente a una aplicación y cambiar las columnas, los filtros y el criterio de ordenación para una vista.
+En este tema realizará varias tareas necesarias para trabajar con las vistas, como crear una vista pública, agregar una vista existente a una aplicación y cambiar las columnas, los filtros y el criterio de ordenación para una vista.
 
 En PowerApps, las vistas definen cómo se muestran los registros de una entidad específica. Una vista define lo siguiente:
 -  Las columnas (atributos) que aparecen
@@ -55,40 +55,33 @@ Como creador de aplicaciones, puede crear y editar vistas públicas usando Power
 
 3. En la barra de herramientas, seleccione **Agregar vista**. 
 
-4. En el cuadro de diálogo **Propiedades de vista**, introduzca un nombre y, si lo desea, una descripción, y, a continuación, seleccione **Aceptar**. 
+4. En el cuadro de diálogo **Crear vista**, introduzca un nombre y, si lo desea, una descripción, y, a continuación, seleccione **Crear**. 
     
-5. En el diseñador de vistas, seleccione **Agregar columnas** para agregar las columnas adicionales que desee mostrar en la vista. Más información: [Agregar una columna a su vista](#add-a-column-to-your-view)
-6. Seleccione **Edite criterios de filtrado** para cambiar el filtrado de las siguientes formas: 
-    -  Para aplicar criterios de filtrado para concretar los datos que se muestran en la vista. Más información: [Definir criterios de filtrado](#define-filter-criteria). 
-    - Para agrupar los filtros mediante las opciones **Y** u **O** para restringir más los datos que se muestran en la vista. Más información: [Agrupar varios filtros](#group-multiple-filters)
-7. Seleccione **Configurar orden** para cambiar el orden de los datos configurando el criterio de ordenación principal y secundario de las columnas. Más información: [Establecer el orden principal y secundario de columnas](#set-primary-and-secondary-sort-order-for-columns)
-8. (Opcional) Configurar ancho de columna: 
-  
-    a. Seleccione una columna. Se abre la pestaña **Propiedades**.
-    
-    b. Configure **Establecer ancho** con el ancho de la columna que desee.
-    
-    > [!NOTE]
-    > El valor del ancho de la columna varía entre 25 y 300 píxeles.
-9. (Opcional) Reordene las columnas arrastrando una columna hasta la posición que desee. 
+5. En el diseñador de vistas, seleccione la columna más para agregar las columnas adicionales que desee mostrar en la vista. Más información: [Agregar una columna a su vista](#add-a-column-to-your-view)
 
-    Verá un indicador visual cuando mantenga la columna sobre una posición a la que puede moverla.
+   ![Agregar columna](../common-data-service/media/add-column-to-view.png)
 
-    ![Reordenar columnas](media/ViewAppDesigner_ReorderColumn.png "Reordenar columnas en una vista")
+6. En el diseñador de vistas, puede realizar las tareas siguientes: 
+   - Para cambiar el filtro de la columna seleccione el encabezado de columna que desea filtrar y en la lista desplegable seleccione **Filtrar por**.
+   - Para cambiar el orden de la columna seleccione el encabezado de columna que desea filtrar y en la lista desplegable seleccione Filtrar **Ordenar de la A a la Z** u **Ordenar de la Z a la A**.
+   - Configure el ancho de columna haciendo clic en la columna y arrastrándola a la posición deseada.
+   - Reordene las columnas arrastrando una columna hasta la posición que desee. 
 
     > [!NOTE]
-    > También puede cambiar el orden de las columnas mediante teclas de acceso directo de teclado. Corte la columna seleccionando CTRL+x, seleccione una columna y, después, péguela seleccionando CTRL+V. La columna se moverá a la derecha de la columna seleccionada.
-10. (Opcional) Vincule un icono o un archivo a una columna para distinguirlos de otras columnas en tiempo de ejecución. Más información: [Definir un recurso web](#define-a-web-resource)
-11. **Guarde y cierre** la vista. 
-12. Elija **Publicar** para que la vista quede disponible para otros usuarios de su organización. 
+    > También puede cambiar el orden de la columna haciendo clic en el encabezado de columna y seleccionando **Mover a la derecha** o **Mover a la izquierda**.
+
+10. Elija **Publicar** para guardar la vista y hacer que esté disponible para otros usuarios de su organización. 
    
 
-## <a name="open-and-add-a-view-in-the-app-designer"></a>Abrir y agregar una vista en el diseñador de aplicaciones.
+## <a name="work-with-views-in-app-designer"></a>Trabajar con vistas en el diseñador de aplicaciones
+En la siguiente sección se describe cómo crear y editar las vistas en diseñador de aplicaciones.
+
+### <a name="open-and-add-a-view-in-the-app-designer"></a>Abrir y agregar una vista en el diseñador de aplicaciones.
 
 En los pasos siguientes se explica cómo abrir y agregar una vista en el diseñador de aplicaciones.
-1. En el explorador de soluciones, seleccione **Aplicaciones** y, a continuación, seleccione la aplicación que desea editar para abrirla en el diseñador de aplicaciones. 
+1. En PowerApps seleccione **Aplicaciones** en el panel de navegación de la izquierda, seleccione **...** junto a la aplicación que desee y seleccione **Editar**. 
 
-2. En la sección **Vista de entidad**, seleccione **Vistas**.
+2. En sección **Vista de entidad** del diseñador de aplicaciones, seleccione **Vistas**.
 
     En este ejemplo, hemos seleccionado **Vistas** en la entidad **Cuenta**.
 
@@ -102,20 +95,21 @@ En los pasos siguientes se explica cómo abrir y agregar una vista en el diseña
 Para obtener más información sobre el diseñador de aplicaciones: [Diseñar aplicaciones de negocio personalizadas mediante el diseñador de aplicaciones](design-custom-business-apps-using-app-designer.md)
 
 
-## <a name="add-a-column-to-your-view"></a>Agregar una columna a su vista
+### <a name="add-a-column-to-your-view-in-app-designer"></a>Agregue una columna a la vista en diseñador de aplicaciones
 Las vistas muestran registros en una tabla que contiene filas y columnas. Cada fila es un registro y los campos que se muestra desde el registro dependen de las columnas que agregue a la vista.
 
-1. En el diseñador de aplicaciones, en la ficha **Componentes**, seleccione la lista **Atributos de columna** de la **Entidad principal** o la **Entidad relacionada**.
+1. En el diseñador de la aplicación, seleccione la vista de la entidad que desea y en el panel derecho junto a la vista que desee seleccione editar (botón de lápiz).  
+2. En la ficha **Componentes**, seleccione la lista **Atributos de columna** de la **Entidad principal** o la **Entidad relacionada**.
 
     ![Agregar una columna](media/ViewAppDesigner_AddColumn.png "Agregar una columna a la vista") 
 
-2. En la lista, seleccione el atributo que desee y arrástrelo hacia el encabezado de la columna. También puede agregar el atributo haciendo doble clic en él.
-3. Repita el paso 2 hasta que haya agregado todos los atributos que desee mostrar en la vista.
+3. En la lista, seleccione el atributo que desee y arrástrelo hacia el encabezado de la columna. También puede agregar el atributo haciendo doble clic en él.
+4. Repita el paso 3 hasta que haya agregado todos los atributos que desee mostrar en la vista.
 
 A medida que agrega atributos, puede arrastrarlos a cualquier posición entre los encabezados de columna existentes. También puede mover columnas después de agregarlas a la vista.
 
 
-## <a name="define-filter-criteria"></a>Defina criterios de filtrado
+### <a name="define-filter-criteria-in-app-designer"></a>Defina los criterios de filtro en diseñador de la aplicación
 Puede establecer criterios de filtrado para que solo se muestre un subconjunto de registros en una vista. Cuando un usuario abre la vista, se muestran solo los registros que cumplan los criterios de filtro definidos. Puede seleccionar campos para filtrar entre las entidades principales y las relacionadas.
 1. En el diseñador de aplicaciones, expanda la sección **Criterios de filtro**.
    
@@ -139,7 +133,7 @@ Puede filtrar los datos según los atributos de entidades relacionadas, además 
 
 Más información: [Crear y editar relaciones entre entidades](../common-data-service/create-edit-entity-relationships.md)
 
-## <a name="group-multiple-filters"></a>Agrupar varios filtros
+#### <a name="group-multiple-filters-in-app-designer"></a>Agrupar varios filtros en el diseñador de aplicaciones
 Puede agregar varios filtros para la vista si desea filtrar los registros usando más de un campo. 
 
 1. Seleccione los filtros que desea agrupar.
@@ -149,7 +143,7 @@ Puede agregar varios filtros para la vista si desea filtrar los registros usando
 
 Para quitar el filtro de un grupo, seleccione el grupo y seleccione **Desagrupar**. 
 
-## <a name="set-primary-and-secondary-sort-order-for-columns"></a>Establecer el orden principal y secundario de columnas
+### <a name="set-primary-and-secondary-sort-order-for-columns-in-app-designer"></a>Establecer el criterio de ordenación primario y secundario de las columnas del diseñador de aplicaciones
 Cuando se abre una vista, se ordenan los registros que se muestra en el orden que se establece cuando se crea la vista.   De forma predeterminada, los registros se ordenan según la primera columna en una vista cuando no se selecciona ningún orden. Puede elegir ordenar por una sola columna, o bien, elegir dos columnas —una principal y otra secundaria— para ordenar. Cuando se abre la vista, los registros se ordenan primero por la columna que desea usar para la ordenación principal y, después, por la columna que desea usar para la ordenación secundaria. 
 
 > [!NOTE]
@@ -162,7 +156,7 @@ Cuando se abre una vista, se ordenan los registros que se muestra en el orden qu
 
 Si quita la columna elegida para el orden principal, la columna elegida para el orden secundario se convierte en la principal.
 
-## <a name="define-a-web-resource"></a>Definir un recurso web
+### <a name="define-a-web-resource-in-app-designer"></a>Definir un recurso web en diseñador de aplicaciones
 Especifique un recursos web de tipo script, para asociar a una columna en la vista. Estos scripts ayudan a mostrar iconos para las columnas.
 
 1. Seleccione la columna a la que desea agregar el recurso web.
@@ -170,7 +164,7 @@ Especifique un recursos web de tipo script, para asociar a una columna en la vis
 3. En la lista despegable **Recurso web**, seleccione el recurso web que desee usar.
 4. En el cuadro de texto **Nombre de función**, escriba un nombre de función.
 
-## <a name="edit-a-public-or-system-view"></a>Editar una vista pública o de sistema
+### <a name="edit-a-public-or-system-view-in-app-designer"></a>Editar una vista pública o del sistema en diseñador de la aplicación
 Puede cambiar la forma en que se muestra una vista pública o de sistema agregando, configurando o quitando columnas.
 1. En la lista **Vistas** de una entidad, seleccione la flecha abajo **Mostrar la lista de referencias** ![Desplegable](media/DownArrow.png "Flecha desplegable").
     ![Editar vista](media/ViewAppDesigner_EditView.png "Editar una vista pública o de sistema")

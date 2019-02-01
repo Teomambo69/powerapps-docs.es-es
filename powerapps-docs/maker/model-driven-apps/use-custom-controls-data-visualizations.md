@@ -23,9 +23,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-use-custom-controls-for-model-driven-app-data-visualizations"></a>Tutorial: Utilizar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos
+# <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos
 
-En este tutorial aprenderá a configurar un control personalizado de un campo. 
+En este tema aprenderá a configurar un control personalizado de un campo. 
 
 Los controles personalizados le permiten transformar los componentes de la interfaz de usuario de la aplicación, como un campo o vista que normalmente contienen texto, en visualizaciones. Los controles personalizados se pueden configurar en campos, formularios, paneles, vistas y cuadrículas. Por ejemplo, un control deslizante se puede configurar en un campo de número.
 

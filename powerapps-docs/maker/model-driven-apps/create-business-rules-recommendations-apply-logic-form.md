@@ -1,7 +1,7 @@
 ---
 title: Crear reglas de negocio y recomendaciones de aplicaciones controladas por modelos | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 12/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -128,7 +128,22 @@ En este tutorial se muestra cómo crear reglas de negocio y recomendaciones para
 <a name="BKMK_LocalizingErrorMessages"></a>   
 ## <a name="localize-error-messages-used-in-business-rules"></a>Buscar los mensajes de error que se usan en reglas de negocio  
  Si tiene más de un idioma aprovisionado para su organización, deseará localizar los mensajes de error que haya configurado. Cada vez que se establece un mensaje, el sistema genera la etiqueta. Si exporta las traducciones de su organización, puede agregar versiones localizadas de sus mensajes y luego importar las etiquetas nuevamente en el sistema, de modo que los usuarios que utilicen otros idiomas distintos del idioma base puedan ver los mensajes traducidos.  
-  
+
+## <a name="is-your-business-rule-not-firing-for-a-form"></a>¿No se está desencadenando su regla de negocio para un formulario?
+Una regla de negocio puede no ejecutarse debido a que el campo al que se hace referencia en la regla de negocio no se incluye en el formulario. 
+1.  Abra el explorador de soluciones. Expanda la entidad deseada y seleccione **Formularios**. 
+2.  Abra el formulario que desea y en la cinta del diseñador de formularios seleccione **Reglas de negocio**. 
+3.  En el diseñador de formularios, abra la regla de negocio. 
+4.  En el diseñador de reglas de negocio seleccione cada condición y acción para comprobar todos los campos a los que se hace referencia en cada condición y acción. 
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/business-rule-field.png "El campo al que se hace referencia en las reglas de negocio existe en la entidad”")
+
+ 5. Compruebe que cada campo al que se hace referencia en la regla de negocio también está incluido en el formulario. De lo contrario, agregue el campo que falta al formulario.
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/account-name-on-form.png "Campo de nombre de cuenta en el formulario”")
+
 ## <a name="next-steps"></a>Pasos siguientes  
  [Crear una lógica de negocios personalizada con procesos](guide-staff-through-common-tasks-processes.md)   
  [Crear un flujo de proceso de negocio](/flow/create-business-process-flow)   
