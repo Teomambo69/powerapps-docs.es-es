@@ -1,0 +1,94 @@
+items:
+- name: Trabajar con datos mediante código
+  href: ../work-with-data-cds.md
+- name: Usar la API web
+  href: overview.md
+- name: Introducción
+  items:
+  - name: (C#)
+    href: get-started-dynamics-365-web-api-csharp.md
+    items:
+    - name: 'Inicio rápido: ejemplo de API web (C#)'
+      href: quick-start-console-app-csharp.md
+    - name: Inicio rápido mejorado (C#)
+      href: enhanced-quick-start.md
+- name: JavaScript del lado cliente
+  href: get-started-web-api-client-side-javascript.md
+- name: Autenticar
+  href: authenticate-web-api.md
+- name: Tipos y operaciones
+  href: web-api-types-operations.md
+- name: Realización de operaciones
+  href: perform-operations-web-api.md
+  items:
+  - name: Redacción de solicitudes HTTP y gestión de errores
+    href: compose-http-requests-handle-errors.md
+  - name: Consulta de los datos
+    href: query-data-web-api.md
+  - name: Recuperación y ejecución de consultas predefinidas
+    href: retrieve-and-execute-predefined-queries.md
+  - name: Crear una entidad
+    href: create-entity-web-api.md
+  - name: Recuperación de una entidad
+    href: retrieve-entity-using-web-api.md
+  - name: Actualización y eliminación de entidades
+    href: update-delete-entities-using-web-api.md
+  - name: Asociación y desasociación de entidades
+    href: associate-disassociate-entities-using-web-api.md
+  - name: Uso de las funciones
+    href: use-web-api-functions.md
+  - name: Uso de las acciones
+    href: use-web-api-actions.md
+  - name: Ejecución de operaciones por lotes
+    href: execute-batch-operations-using-web-api.md
+  - name: Suplantar a otro usuario
+    href: impersonate-another-user-web-api.md
+  - name: Realización de operaciones condicionales
+    href: perform-conditional-operations-using-web-api.md
+  - name: Detectar datos duplicados
+    href: manage-duplicate-detection-create-update.md
+- name: Diferencias entre versiones
+  href: web-api-versions.md
+- name: Trabajo con metadatos
+  href: use-web-api-metadata.md
+  items:
+  - name: Consulta de los metadatos
+    href: query-metadata-web-api.md
+  - name: Recuperación de metadatos por nombre o MetadataId
+    href: retrieve-metadata-name-metadataid.md
+  - name: Creación y actualización de definiciones de entidades
+    href: create-update-entity-definitions-using-web-api.md
+  - name: Creación y actualización de relaciones de entidades
+    href: create-update-entity-relationships-using-web-api.md
+  - name: Trabajo con conjuntos de opciones
+    href: create-update-optionsets.md
+- name: Detección de la URL de la organización
+  href: discover-url-organization-web-api.md
+  items:
+  - name: Ejemplo de servicio de detección global (C#)
+    href: samples/global-discovery-service-csharp.md
+- name: Importar datos
+  href: ../import-data.md
+- name: Muestreo de los datos
+  href: ../sample-data.md
+- name: Ejemplos
+  items:
+  - name: Plantillas de ejemplo de operaciones de datos
+    href: web-api-samples.md
+    items:
+    - name: Operaciones básicas
+      href: web-api-basic-operations-sample.md
+    - name: Consulta de los datos
+      href: web-api-query-data-sample.md
+    - name: Operaciones condicionales
+      href: web-api-conditional-operations-sample.md
+    - name: Funciones y acciones
+      href: web-api-functions-actions-sample.md
+    - name: Ejemplos
+      href: samples/toc.yml
+ms.openlocfilehash: 237ead719746e18fcea31901a43385806b099f58
+ms.sourcegitcommit: fe47ad47873a37fbe17b30d39fb2ca6035b7d152
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854565"
