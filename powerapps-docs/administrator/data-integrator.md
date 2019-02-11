@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 10/15/2018
+ms.date: 1/31/2019
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
-ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
+ms.openlocfilehash: 8723021a59ca1ecbbdff41ddfa793684fe1ee970
+ms.sourcegitcommit: 47a4218445e5715bc1f7bf7bd8735b2a42c33935
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328703"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55514039"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Integración de datos en Common Data Service for Apps
 
@@ -31,6 +31,9 @@ Comenzamos con aplicaciones propias; por ejemplo, Dynamics 365 for Finance and O
 > [!div class="mx-imgBorder"]
 > ![Origen de datos al destino](media/data-integrator/DataIntegratorP2P-new.PNG "Data source to destination")
 
+> [!TIP]
+> Consulte el blog [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/) (Actualizaciones del integrador de datos: nuevas características con una interfaz de usuario intuitiva que proporciona una experiencia fluida).
+
 ## <a name="how-can-you-use-the-data-integrator-for-your-business"></a>¿Cómo puede usar el integrador de datos para su empresa?
 
 El integrador de datos (para administradores) también admite escenarios de integración basados en procesos como Prospect to Cash (Cliente potencial a cliente) que proporcionan sincronización directa entre Dynamics 365 for Finance and Operations y Dynamics 365 for Sales. Las plantillas de Prospect to Cash (Cliente potencial a cliente) que están disponibles con la característica de integración de datos permiten el flujo de datos para cuentas, contactos, productos, presupuestos, pedidos y facturas de venta entre Finance and Operations y Sales. Mientras los datos fluyen entre Finance and Operations y Sales, puede realizar actividades de ventas y marketing en Sales, y controlar el cumplimiento de pedidos mediante la administración de inventario de Finance and Operations. 
@@ -40,7 +43,7 @@ El integrador de datos (para administradores) también admite escenarios de inte
 
 La integración de Prospect to Cash (Cliente potencial a cliente) permite a los vendedores controlar y supervisar sus procesos de ventas con los puntos fuertes de Dynamics 365 for Sales, mientras que todos los aspectos de cumplimiento y facturación se realizan mediante las completas funciones de Finance and Operations. Con la integración de Prospect to Cash (Cliente potencial a cliente) de Microsoft Dynamics 365, obtendrá el potencial combinado de ambos sistemas. 
 
-Vea el vídeo: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg) (Integración de cliente potencial a cliente)
+Vea el vídeo [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg) (Integración de cliente potencial a cliente)
 
 Para obtener más información sobre la integración de Prospect to Cash, vea la documentación sobre la [Solución Prospect to Cash](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
@@ -73,7 +76,7 @@ Antes de poder crear un proyecto de integración de datos, debe proporcionar una
 
 **Para crear una conexión**
 
-1. Vaya al [Centro de administración de PowerApps](https://admin.powerapps.com).
+1. Vaya a [PowerApps](https://web.powerapps.com).
 
 2. En Datos, haga clic en **Conexiones** y después en **Nueva conexión**.
 
@@ -113,7 +116,7 @@ Los conjuntos de conexiones son una colección de dos conexiones, los entornos p
 
 6. Repita los pasos eligiendo la próxima conexión (piense en estos elementos como el origen y el destino sin un orden específico).
 
-7. Especifique la organización para la asignación Unidad de negocio (si va a integrar entre los sistemas de Finance and Operations y Sales).
+7. Especifique la organización para la asignación de unidad de negocio (si va a integrar entre los sistemas de Finance and Operations y Sales).
   
     > [!NOTE]
     > Puede especificar varias asignaciones para cada conjunto de conexiones.
@@ -130,6 +133,8 @@ El conjunto de conexiones está listo para usarse en diversos proyectos de integ
 ### <a name="how-to-create-a-data-integration-project"></a>Cómo crear un proyecto de integración de datos
 
 Los proyectos permiten el flujo de datos entre sistemas. Un proyecto contiene asignaciones para una o más entidades. Las asignaciones indican qué campos se asignan a otros campos.
+
+<a name="CreateProject">
 
 **Para crear un proyecto de integración de datos**
 
@@ -156,7 +161,7 @@ Los proyectos permiten el flujo de datos entre sistemas. Un proyecto contiene as
     > [!div class="mx-imgBorder"] 
     > ![Creación de un conjunto de conexiones](media/data-integrator/CreateNewProjectSelectConnectionSet780.png "Create a new connection set")
 
-8. Haga clic en **Siguiente** y, después, elija la entidad jurídica para las asignaciones Unidad de negocio.
+8. Haga clic en **Siguiente** y, después, elija la entidad jurídica para las asignaciones de unidad de negocio.
 
     > [!div class="mx-imgBorder"] 
     > ![Creación de una asignación de entidad jurídica](media/data-integrator/CreateNewProjectLegalEntityMapping780.png "Create new legal entity mapping")
@@ -197,6 +202,10 @@ En el Historial de ejecuciones se muestra el historial de las ejecuciones de tod
 
     En cualquier caso, también podría optar por "volver a ejecutar la ejecución" manualmente.
 
+> [!NOTE]
+> Cada vez que ejecute un proyecto, de forma programada o manual, genera un registro detallado que muestra el nombre del proyecto, una marca de tiempo con la última actualización y el estado. Puede ver esto en el historial de ejecución de cada proyecto. El historial de ejecución del proyecto se mantiene durante 45 días; después, se purga automáticamente.
+
+
 ### <a name="how-to-set-up-a-schedule-based-refresh"></a>Cómo configurar una actualización basada en una programación
 
 En la actualidad se admiten dos tipos de ejecuciones y operaciones de escritura:
@@ -235,6 +244,7 @@ Tenga en cuenta también que, en Notificaciones, puede elegir notificaciones de 
 Para los inquilinos de prueba, tenemos una limitación adicional: solo se ejecutarán para las primeras 50 ejecuciones de un proyecto programado.
 > - Aunque se admiten proyectos de programación que se vayan a ejecutar cada minuto, tenga en cuenta que esto puede suponer un gran esfuerzo para las aplicaciones y, a su vez, afectar al rendimiento general. Recomendamos a los usuarios probar las ejecuciones de proyecto en condiciones de carga reales y optimizar el rendimiento con actualizaciones menos frecuentes.
 En entornos de producción, se recomienda no ejecutar más de 5 proyectos por minuto por inquilino.
+> - Cada vez que ejecute un proyecto, de forma programada o manual, genera un registro detallado que muestra el nombre del proyecto, una marca de tiempo con la última actualización y el estado. Puede ver esto en el historial de ejecución de cada proyecto. El historial de ejecución del proyecto se mantiene durante 45 días; después, se purga automáticamente.
 
 ## <a name="customizing-projects-templates-and-mappings"></a>Personalización de proyectos, plantillas y asignaciones 
 
@@ -266,9 +276,9 @@ Puede personalizar los proyectos y las plantillas de las maneras siguientes:
 
 4. Una vez que haya personalizado las asignaciones de campos, haga clic en **Guardar**.
 
-### <a name="how-to-customize-or-create-your-own-template"></a>Cómo personalizar o crear una plantilla propia 
+### <a name="how-to-create-your-own-template"></a>Creación de una plantilla propia 
 
-**Para crear una plantilla propia**
+**Creación de una plantilla propia mediante la modificación de las plantillas existentes**
 
 1. Vaya al [Centro de administración de PowerApps](https://admin.powerapps.com).
 
@@ -318,6 +328,51 @@ Puede personalizar los proyectos y las plantillas de las maneras siguientes:
 
     > [!div class="mx-imgBorder"] 
     > ![Personalizar plantilla Guardar como plantilla](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Customize template save as template")
+
+**Creación de una plantilla propia a partir de plantillas en blanco**
+
+1. Vaya al [Centro de administración de PowerApps](https://admin.powerapps.com).
+2. Cree un proyecto de integración de datos. Haga clic en la pestaña **Integración de datos** del panel de navegación de la izquierda.
+3. Seleccione **Nuevo proyecto** y proporcione un nombre al proyecto. Por ejemplo, "proyecto Demo_crearPlantillaPropia".
+4. En la página de lista **Seleccionar una plantilla**, elija una plantilla genérica en blanco. 
+   En este ejemplo, elija la plantilla **Sales to Fin and Ops** (De Sales a Finance y Operations), ya que deseamos mover datos de Dynamics 365 for Finance and Operations a Dynamics 365 for Sales.
+    
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-data-integration-project.png "Creación de un proyecto de integración de datos")
+
+4. Siga los pasos del 6 al 9 de <a href="#CreateProject">aquí</a> para terminar de crear un proyecto de integración de datos. Seleccione **Guardar**.
+
+5. Verá la página de tareas que está vacía, ya que es una plantilla en blanco sin tareas. Seleccione **Agregar tarea** para seleccionar una entidad de la lista desplegable y agregue una nueva tarea.
+   En este caso, con fines de demostración, crearemos una tarea **Activities Sales to Fin and Ops** (De Activities Sales a Finance y Operations) seleccionando la entidad **Actividades** para Dynamics 365 for Finance and Operations y Dynamics 365 for Sales. Seleccione **Crear**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/activities-sales-fin-opps-task.png "Tarea ActivitiesSales to Fin and Ops (De Activities Sales a Finance y Operations)")
+
+6. Verá que se ha agregado una nueva tarea **Activities Sales to Fin and Ops** (De Activities Sales a Finance and Operations). Seleccione **Guardar** para guardar los cambios.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/new-task-added.png "Nueva tarea agregada")
+
+7. Se crea el proyecto. Seleccione **Guardar como plantilla** en la página de lista **Proyectos**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-as-template.png "Guardar como plantilla")
+
+8. Proporcione un nombre y una descripción y, a continuación, seleccione **Guardar**. Además, seleccione **Compartir con todos los usuarios de la organización** para compartir esta plantilla.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-describe-share.png "Guardar proyecto como plantilla")
+
+Verá la plantilla recién creada en la página de lista **Plantillas**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/newly-created-template.png "Plantilla recién creada")
+
+Además, después de crear un proyecto de integración, cuando se elige **seleccionar una plantilla**, verá la plantilla recién creada como parte de la lista **Seleccionar una plantilla**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/new-data-integration-project.png "Nuevo proyecto de integración de datos")
+
 
 ## <a name="advanced-data-transformation-and-filtering"></a>Transformación de datos avanzada y filtrado 
 
