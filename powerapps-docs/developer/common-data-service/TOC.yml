@@ -66,6 +66,8 @@ items:
   - name: Marco de trabajo de eventos
     href: event-framework.md
     items:
+    - name: Describir el contexto de ejecución
+      href: understand-the-data-context.md
     - name: Comportamiento de operaciones de actualización especializadas
       href: special-update-operation-behavior.md
   - name: Servicio asincrónico
@@ -75,10 +77,20 @@ items:
     items:
     - name: Escribir un complemento
       href: write-plug-in.md
+    - name: Controlar las excepciones
+      href: handle-exceptions.md
+    - name: Suplantar a un usuario
+      href: impersonate-a-user.md
     - name: Registrar un complemento
       href: register-plug-in.md
     - name: Depurar un complemento
       href: debug-plug-in.md
+    - name: Seguimiento y registro
+      href: logging-tracing.md
+    - name: Analizar el rendimiento
+      href: analyze-performance.md
+    - name: Acceder a recursos web externos
+      href: access-web-services.md
     - name: Tutoriales
       items:
       - name: Escribir y registrar un complemento
@@ -87,6 +99,12 @@ items:
         href: tutorial-debug-plug-in.md
       - name: Actualizar un complemento
         href: tutorial-update-plug-in.md
+    - name: Código de ejemplo
+      items:
+      - name: Crear un complemento básico
+        href: org-service/samples/basic-followup-plugin.md
+      - name: Acceso web desde un complemento
+        href: org-service/samples/web-access-plugin.md
   - name: Extensiones de flujo de trabajo
     href: workflow/workflow-extensions.md
   - name: Diseño de personalización escalable
@@ -393,9 +411,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: Esquema FetchXML
     href: fetchxml-schema.md
-ms.openlocfilehash: 4d22298f104f83f0482503c7ddea55b7cdd8a6cf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.openlocfilehash: 8a04194b09d15fcc5ac407aeb4194c67830a9ed5
+ms.sourcegitcommit: 9192f6aff2782f980a34a60df9aca420f1ba29ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334118"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55958063"
