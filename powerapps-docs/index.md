@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: da5273e385da3f616404a531f91a96393ed63bc2
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: c99bf76db08bff81e47cfcf76c1fd3fb49c095e5
+ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290912"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091255"
 ---
 <div id="main"
    class="v2">
@@ -328,9 +328,9 @@ ms.locfileid: "55290912"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Entorno y seguridad</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/environments-administration">Administrar entornos</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/database-security">Configurar la seguridad del entorno</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/admin-view-apps">Ver aplicaciones en el entorno</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">Administrar entornos</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Configurar la seguridad del entorno</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">Ver aplicaciones en el entorno</a></p>
                                  </div>
                               </div>
                            </div>
@@ -348,8 +348,8 @@ ms.locfileid: "55290912"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Integración de datos y DSR</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/data-integrator">Integrar datos en CDS para aplicaciones</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/powerapps-gdpr-dsr-guide">Responder a solicitudes de Data Subject Rights (DSR)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">Integrar datos en CDS para aplicaciones</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">Responder a solicitudes de Data Subject Rights (DSR)</a></p>
                                  </div>
                               </div>
                            </div>
@@ -367,7 +367,7 @@ ms.locfileid: "55290912"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Licencias y compra</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/pricing-billing-skus">Introducción a las licencias</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">Introducción a las licencias</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">Requisitos de licencias para entidades</a></p>
 <!--                                   <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/powerapps-for-us-govt">PowerApps for US Government</a></p> -->
                                  </div>
@@ -387,10 +387,10 @@ ms.locfileid: "55290912"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Centro de administración de Power Platform</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/admin-guide">Administrar Power Platform</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/get-help-support">Ayuda y soporte técnico</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/analytics-common-data-service">Análisis de CDS para aplicaciones</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/manage-environments">Administrar entornos</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Administrar Power Platform</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Ayuda y soporte técnico</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Participación en las actualizaciones de abril de 2019</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/manage-environments">Administrar entornos</a></p>
                                  </div>
                               </div>
                            </div>
