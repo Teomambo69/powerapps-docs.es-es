@@ -760,6 +760,8 @@ items:
             href: ./model-driven-apps/create-edit-quick-create-forms.md
           - name: Crear un formulario de vista rápida
             href: ./model-driven-apps/create-edit-quick-view-forms.md
+          - name: Creación de un formulario de tarjeta
+            href: ./model-driven-apps/create-card-forms.md
         - name: Información general del editor de formularios
           href: ./model-driven-apps/form-editor-user-interface-legacy.md
           items:
@@ -1091,9 +1093,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Soporte técnico
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 6469215a60d5c90bebb35dae9dc06612d170c1d3
-ms.sourcegitcommit: fa8373c6765156825e5899c9df5753668e9393c0
+ms.openlocfilehash: c4cda0af7a907e3c82aaa7e864fa50701dbb9929
+ms.sourcegitcommit: 32b33d1325acc2c84ffd35c4084c652f417617e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57430228"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528446"
