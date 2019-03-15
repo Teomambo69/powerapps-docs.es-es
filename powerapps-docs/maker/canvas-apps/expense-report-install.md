@@ -1,30 +1,30 @@
 ---
 title: Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo | Microsoft Docs
 description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de informe de gastos en aplicaciones de lienzo.
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d1dc6ef2d264dd60b6a9f3de0f5c0fed633283
-ms.sourcegitcommit: d3d665500b9c49c14657d044b084bdd64c52c5a3
+ms.openlocfilehash: 2cfad6a3cadbd2154e582163dc4f55ee6d010b96
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124484"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072753"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
 Instrucciones paso a paso para instalar y configurar el ejemplo de informe de gastos. También puede obtener una vista previa de la aplicación de ejemplo [aquí](https://aka.ms/previewmyexpenses).
 
-Tiempo estimado para completar estos pasos: **10-15 minutos**
+Tiempo estimado para completar estos pasos: **10-15 minutos**
 
 > [!TIP]
 > Vea [este vídeo](https://youtu.be/kJXZPILfbwU) para una demostración sobre cómo usar la aplicación de ejemplo de informe de gastos. 
@@ -89,7 +89,7 @@ En esta lista se almacenan los informes de gastos.
 5. En el cuadro de texto **Nombre de columna**, escriba **Estado**.
 6. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Elección**.
 7. En el cuadro de texto **Escriba cada opción en una línea distinta**, especifique los valores siguientes, cada uno en una línea diferente: 
-    - Abierto
+    - Abrir
     - Pendiente
     - Approved
 8. En el cuadro de texto **Valor predeterminado**, escriba **Abierto**.
