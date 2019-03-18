@@ -210,8 +210,6 @@ items:
           href: ./canvas-apps/controls/control-attachments.md
         - name: Audio
           href: ./canvas-apps/controls/control-audio-video.md
-        - name: Escáner de código de barras web (experimental)
-          href: ./canvas-apps/controls/control-barcodescanner.md
         - name: Escáner de código de barras
           href: ./canvas-apps/controls/control-new-barcode-scanner.md
         - name: Botón
@@ -268,7 +266,7 @@ items:
           href: ./canvas-apps/controls/control-radio.md
         - name: Clasificación
           href: ./canvas-apps/controls/control-rating.md
-        - name: Editor de texto enriquecido (experimental)
+        - name: Editor de texto enriquecido
           href: ./canvas-apps/controls/control-richtexteditor.md
         - name: Pantalla
           href: ./canvas-apps/controls/control-screen.md
@@ -286,6 +284,8 @@ items:
           href: ./canvas-apps/controls/control-toggle.md
         - name: Vídeo
           href: ./canvas-apps/controls/control-audio-video.md
+        - name: Escáner de código de barras web (experimental)
+          href: ./canvas-apps/controls/control-barcodescanner.md
     - name: Configurar la funcionalidad de una aplicación
       href: ./canvas-apps/working-with-formulas.md
       items:
@@ -1093,9 +1093,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Soporte técnico
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: c4cda0af7a907e3c82aaa7e864fa50701dbb9929
-ms.sourcegitcommit: 32b33d1325acc2c84ffd35c4084c652f417617e3
+ms.openlocfilehash: af4a7b775ecbaec902c188325b2474ad3209a85c
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57528446"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073703"
