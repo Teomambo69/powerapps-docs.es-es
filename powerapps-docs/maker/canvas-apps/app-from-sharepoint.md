@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 042819241a40b9ad01f95085faf23b6393f62559
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317100"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198599"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Generación de una aplicación de lienzo en PowerApps a partir de una lista de SharePoint
 
-En este tema utilizará PowerApps para generar automáticamente una aplicación de lienzo basada en elementos de una lista de SharePoint. Puede generar la aplicación en PowerApps o SharePoint Online. En PowerApps, puede generar la aplicación a partir de una lista en un sitio de SharePoint local si se [conecta al sitio](connect-to-sharepoint.md) a través de una puerta de enlace de datos.
+En este tema utilizará PowerApps para generar automáticamente una aplicación de lienzo basada en elementos de una lista de SharePoint. Puede generar la aplicación en PowerApps o SharePoint Online. En PowerApps, puede generar la aplicación a partir de una lista en un sitio de SharePoint local si se [conecta al sitio](connections/connection-sharepoint-online.md#create-a-connection) a través de una puerta de enlace de datos.
 
 La aplicación que se genere contendrá tres pantallas:
 

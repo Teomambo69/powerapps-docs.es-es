@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9732a4e1d721a47906a71dba6e4a7ea5ac7bc87b
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
-ms.translationtype: HT
+ms.openlocfilehash: 147766eb9e9b17698882241e8eb3bd0ae7ba7e78
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801857"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172642"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  
@@ -43,7 +43,11 @@ La señal**App** devuelve información acerca de la aplicación en ejecución.
 
 | Propiedad | Descripción |
 | --- | --- |
-| **App.ActiveScreen** |Pantalla que se muestra. Devuelve un objeto de la pantalla, que puede usar para hacer referencia a propiedades de la pantalla o comparar con otra pantalla para determinar qué pantalla se muestra.  Mediante el uso de la función **[Back](function-navigate.md)** o **[Navigate](function-navigate.md)**, puede cambiar la pantalla mostrada. |
+| **App.ActiveScreen** | Pantalla que se muestra. Devuelve un objeto de la pantalla, que puede usar para hacer referencia a propiedades de la pantalla o comparar con otra pantalla para determinar qué pantalla se muestra. Para cambiar la pantalla mostrada, use el **[Atrás](function-navigate.md)** o **[Navigate](function-navigate.md)** función. |
+| **App.Width** | Devuelve el ancho de la ventana en la que se ejecuta la aplicación. Puede utilizar esta propiedad en una fórmula al establecer el **ancho** propiedad de la pantalla para crear una aplicación con capacidad de respuesta.  |
+| **App.Height** | Devuelve el alto de la ventana en la que se ejecuta la aplicación. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para crear una aplicación con capacidad de respuesta. |
+| **App.DesignWidth** | Devuelve el ancho de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **ancho** propiedad de la pantalla para garantizar una anchura mínima en una aplicación con capacidad de respuesta.  |
+| **App.DesignHeight** | Devuelve el alto de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para garantizar un alto mínimo en una aplicación con capacidad de respuesta.  |
 
 El **aplicación** objeto también tiene un [fórmula de comportamiento](../working-with-formulas-in-depth.md) que se pueden establecer.
 

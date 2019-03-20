@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
-ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
-ms.translationtype: HT
+ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57804456"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198645"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -98,7 +98,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 1. Personalizar el formulario de varias maneras, como los que se describen estos temas:
 
     - Cambie su tamaño, orientación o ambos (por ejemplo, para [ensanchar el formulario](set-aspect-ratio-portrait-landscape.md)).
-    - Agregue un control para que los usuarios puedan [cargar datos adjuntos](controls/properties-text.md).
+    - [Personalizar uno o más tarjetas](working-with-cards.md) (por ejemplo, Cambiar control de texto o una entrada de la pantalla de la tarjeta).
     - Cree un [campo de búsqueda](sharepoint-lookup-fields.md).
 
     Más información: [Comprensión de la integración de formularios de SharePoint](sharepoint-form-integration.md)

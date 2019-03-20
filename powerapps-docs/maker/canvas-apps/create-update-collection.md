@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aca1b78262ac359689d66f687f902103740fa3a6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800316"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198553"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Crear y actualizar una colección en una aplicación de lienzo
 
@@ -116,7 +116,7 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>Colocar una lista de SharePoint en una colección
 
-1. [Cree una conexión a una lista de SharePoint](connect-to-sharepoint.md).
+1. [Cree una conexión a una lista de SharePoint](connections/connection-sharepoint-online.md#create-a-connection).
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta función, sustituyendo *ListName* por el nombre de la lista de SharePoint:<br>
 
@@ -128,7 +128,7 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
 1. (opcional) Para obtener una vista previa de la colección que ha creado, seleccione **colecciones** en el **archivo** menú.
 
-Para obtener información acerca de cómo mostrar datos de una lista de SharePoint (por ejemplo, fechas, las opciones y las personas) en una galería: [Mostrar datos en una galería](connections/connection-sharepoint-online.md#show-data-in-a-gallery). Para obtener información acerca de cómo mostrar datos en un formulario (con las listas desplegables, los selectores de fecha y selectores de personas): [Controles de formulario de presentación y formulario de edición](controls/control-form-detail.md).
+Para obtener información acerca de cómo mostrar datos de una lista de SharePoint (por ejemplo, fechas, las opciones y las personas) en una galería: [Mostrar columnas de la lista en una galería](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Para obtener información acerca de cómo mostrar datos en un formulario (con las listas desplegables, los selectores de fecha y selectores de personas): [Controles de formulario de presentación y formulario de edición](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
