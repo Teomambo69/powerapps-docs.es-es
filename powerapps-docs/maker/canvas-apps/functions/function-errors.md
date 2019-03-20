@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859995"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803605"
 ---
 # <a name="errors-function-in-powerapps"></a>Función Errors en PowerApps
 Proporciona información de error para los cambios anteriores en un [origen de datos](../working-with-data-sources.md).
@@ -72,15 +72,15 @@ En este ejemplo, vamos a trabajar con el origen de datos **IceCream**:
 
 ![](media/function-errors/icecream.png)
 
-A través de la aplicación, un usuario carga el registro Chocolate en un formulario de entrada de datos y cambia el valor de **Quantity** a 90.  El registro con el que se va a trabajar se coloca en la [variable de contexto](../working-with-variables.md#create-a-context-variable) **EditRecord**:
+A través de la aplicación, un usuario carga el registro Chocolate en un formulario de entrada de datos y cambia el valor de **Quantity** a 90.  El registro con el que se va a trabajar se coloca en la [variable de contexto](../working-with-variables.md#use-a-context-variable) **EditRecord**:
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord: Primero (filtrar (IceCream, Flavor = "Chocolate"))})**
 
 Para realizar este cambio en el origen de datos, se usa la función **[Patch](function-patch.md)**:
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-donde **Gallery.Updates** se evalúa como **{ Quantity: 90 }**, ya que solo se ha modificado la propiedad **Quantity**.
+donde **Gallery.Updates** se evalúa como **{Quantity: 90}**, puesto que sólo el **cantidad** se ha modificado la propiedad.
 
 Por desgracia, justo antes de que se invoque la función **[Patch](function-patch.md)**, otra persona modifica la propiedad **Quantity** de Chocolate y la establece en 80.  PowerApps lo detecta y no permite que se produzca el cambio en conflicto.  Puede comprobar esta situación mediante la fórmula:
 
@@ -90,7 +90,7 @@ que devuelve **false**, ya que la función **Errors** ha devuelto la tabla sigui
 
 | Registro | Columna | Mensaje | Error |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |*blank* |"Otro usuario ha modificado el registro que está intentando modificar. Vuelva a cargar el registro e inténtelo de nuevo." |ErrorKind.Conflict |
+| {Sabor: "Chocolate", cantidad: 100 } |*blank* |"Otro usuario ha modificado el registro que está intentando modificar. Vuelva a cargar el registro e inténtelo de nuevo." |ErrorKind.Conflict |
 
 Puede colocar una etiqueta en el formulario para mostrar este error al usuario.
 

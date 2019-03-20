@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865495"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803145"
 ---
 # <a name="patch-function-in-powerapps"></a>Función Patch en PowerApps
 Modifica o crea uno o varios [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md) o combina registros fuera de un origen de datos.
@@ -30,21 +30,21 @@ En situaciones menos complejas, puede utilizar el control **Formulario de edici�
 ## <a name="overview"></a>Información general
 Use la función **Patch** para modificar uno o varios registros de un origen de datos.  Los valores de [campos](../working-with-tables.md#elements-of-a-table) específicos se modifican sin que otras propiedades se vean afectadas. Por ejemplo, esta fórmula cambia el número de teléfono de un cliente llamado Contoso:
 
-**Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )**
+`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )`
 
 Use **Patch** con la función **[Defaults](function-defaults.md)** para crear registros. Use este comportamiento para crear una [sola pantalla](../working-with-data-sources.md) tanto para crear como para editar registros. Por ejemplo, la siguiente fórmula crea un registro para un cliente llamado Contoso:
 
-**Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )**
+`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
 
 Incluso si no está trabajando con un origen de datos, puede usar **Patch** para combinar dos o más registros. Por ejemplo, esta fórmula combina dos registros en uno que identifica tanto el número de teléfono como la ubicación de Contoso:
 
-**Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
+`Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
 ## <a name="description"></a>Descripción
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>Modificar o crear un registro en un origen de datos
 Para usar esta función con un origen de datos, especifique el origen de datos y, a continuación, especifique un registro base:
 
-* Para modificar un registro, el registro base debe proceder de un origen de datos.  El registro base puede proceder de una propiedad **[Items](../controls/properties-core.md)** de la galería, haberse colocado en una [variable de contexto](../working-with-variables.md#create-a-context-variable) o proceder de algún otro sitio. Sin embargo, debe poder realizar un seguimiento del registro base hasta el origen de datos.  Esto es importante, ya que el registro incluirá información adicional para ayudar a encontrar el registro para la modificación.  
+* Para modificar un registro, el registro base debe proceder de un origen de datos.  El registro base puede proceder de una propiedad **[Items](../controls/properties-core.md)** de la galería, haberse colocado en una [variable de contexto](../working-with-variables.md#use-a-context-variable) o proceder de algún otro sitio. Sin embargo, debe poder realizar un seguimiento del registro base hasta el origen de datos.  Esto es importante, ya que el registro incluirá información adicional para ayudar a encontrar el registro para la modificación.  
 * Para crear un registro, use la función **[Defaults](function-defaults.md)** para crear un registro base con valores predeterminados.  
 
 A continuación, especifique uno o más registros de cambio, cada uno de los cuales contenga nuevos valores de propiedad que reemplacen los valores de propiedad en el registro base. Los registros de cambio se procesan en orden, desde el principio de la lista de argumentos hasta el final, donde los valores de propiedad últimos reemplazan a los primeros.
@@ -76,7 +76,7 @@ Especifique dos o más registros que desee combinar. Los registros se procesan e
 * *ChangeRecord(s)*: requerido.  Uno o más registros que contienen propiedades para modificar en *BaseRecord*.  Los registros de cambio se procesan en orden, desde el principio de la lista de argumentos hasta el final, donde los valores de propiedad últimos reemplazan a los primeros.
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>Modificar o crear un conjunto de registros en un origen de datos
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
+**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
 
 * *DataSource*: requerido. El origen de datos que contiene los registros que desea modificar o que contendrá los registros que desea crear.
 * *BaseRecordTable*: requerido. Una tabla de registros para modificar o crear.  Si el registro proviene de un origen de datos, el registro se encuentra y se modifica. Si se usa el resultado de **[Defaults](function-defaults.md)**, se crea un registro.

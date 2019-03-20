@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1393d6dcdd9b88f4bca9e536a776b8601ae4c1c1
+ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316778"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "57801788"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>Generar una aplicación de lienzo en Common Data Service for Apps en PowerApps
 
@@ -28,7 +28,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para seguir este tutorial rápido, debe [cambiar a un entorno](working-with-environments.md) en el que se haya creado una base de datos en CDS for Apps que contenga datos y que permita actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](../../administrator/environments-administration.md#create-an-environment) que cumpla este requisito.
+Para seguir este tutorial rápido, debe estar asignado a la [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles) rol de seguridad y se debe [cambie a un entorno](working-with-environments.md) en que se ha creado una base de datos en CDS for Apps, contiene datos, y permite realizar actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment) que cumpla este requisito.
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 

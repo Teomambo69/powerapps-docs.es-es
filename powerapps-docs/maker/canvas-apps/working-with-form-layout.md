@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d623daecb609fbe3d4e593a7e15f95051871e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836427"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "57800270"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Comprender el diseño de formularios de datos para aplicaciones de lienzo en PowerApps
 
@@ -32,20 +32,20 @@ En este tutorial, se le guiará por los pasos necesarios para crear un formulari
 
 Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automáticamente), lo más recomendable es [compilar una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
 
+En este tema se escribe como si tiene datos de un origen que se denomina **pedido de ventas** y que contiene los campos en el gráfico anterior. Si tiene una licencia de PowerApps Plan 2 o una [licencia de prueba](../signup-for-powerapps.md) y administrador del sistema o permisos del personalizador del sistema, puede [crear una entidad](../common-data-service/data-platform-create-entity.md) en Common Data Service (CDS) para las aplicaciones y agregar campos similares. 
+
 ## <a name="add-a-gallery"></a>Agregar una galería
 
-1. Cree una aplicación para tableta desde cero.
+1. Crear una aplicación de tableta desde cero y agregar el origen de datos.
 
     Todo lo que se describe en este tema aquí también se aplica a los diseños para teléfono, pero las aplicaciones de teléfono suelen tener solo una columna vertical.
-2. Agregue la entidad **Pedido de ventas** en [Common Data Service](../common-data-service/data-platform-intro.md) como origen de datos de la aplicación.
-
-    Fuera de este tutorial, puede utilizar cualquier origen de datos, incluidas las listas de SharePoint y las tablas de Excel.
-3. Agregue un control **Galería** vertical y en su propiedad **Elementos**, seleccione **"Sales order"**.
+    
+2. Agregue un control **Galería** vertical y en su propiedad **Elementos**, seleccione **"Sales order"**.
    
     (opcional) Para ajustarse a los ejemplos de este tutorial, cambie el **diseño** de la galería para que muestre solo el **título y subtítulo**.
    
     ![Lista de pedidos de ventas](./media/working-with-form-layout/gallery-layout.png)
-4. En la galería, pulse o haga clic en **SO004**.
+3. En la galería, pulse o haga clic en **SO004**.
    
     ![Lista de pedidos de ventas](./media/working-with-form-layout/sales-order-gallery-screen.png)
    
@@ -201,11 +201,11 @@ En resumen, ¿cuáles son las diferencias cuando la opción **Ajustar en columna
 ## <a name="set-width-and-height"></a>Establecer ancho y alto
 Como con todo en PowerApps, el diseño del formulario se rige por las propiedades de los controles de tarjeta. Como ya se ha descrito, para cambiar los valores de estas propiedades tiene que arrastrar controles a ubicaciones diferentes o arrastrar los controladores de agarre para cambiar el tamaño de los controles. Pero encontrará situaciones en las que deseará conocer y manipular estas propiedades con mayor precisión, especialmente al usar fórmulas para que los formularios sean dinámicos.
 
-### <a name="basic-layout-x-y-and-width"></a>Diseño básico: X, Y y Ancho
+### <a name="basic-layout-x-y-and-width"></a>Diseño básico: X, Y y ancho
 Las propiedades **X** e **Y** controlan la posición de las tarjetas. Cuando se trabaja con controles en el lienzo en blanco, estas propiedades proporcionan una posición absoluta. En un formulario, estas propiedades tienen un significado diferente:
 
-* **X**: orden dentro de una fila.
-* **Y**: número de fila.
+* **X**: Orden dentro de una fila.
+* **Y**: Número de fila.
 
 De forma similar a los controles en el lienzo, la propiedad **Ancho** especifica la anchura mínima de la tarjeta (más información sobre el aspecto mínimo en un momento).
 
@@ -224,7 +224,7 @@ Las tres tarjetas de la fila superior ya no caben horizontalmente y que se ha cr
 
 Este comportamiento se puede usar para crear un diseño totalmente dinámico en el que las tarjetas se colocan en función de un orden Z, rellenando el mayor espacio posible antes de pasar a la siguiente fila. Para lograr este efecto, asigne a todas las tarjetas el mismo valor de **Y** y use **X** para el orden de las tarjetas.
 
-### <a name="filling-spaces-widthfit"></a>Rellenar espacios: WidthFit (AjusteDeAncho)
+### <a name="filling-spaces-widthfit"></a>Rellenar espacios: WidthFit
 El desbordamiento del último ejemplo creaba un espacio después de **Estado de pedido**, que era la segunda tarjeta de la primera fila. Se podrían ajustar manualmente los valores de la propiedad **Ancho** de las dos tarjetas restantes para llenar este espacio, pero este método es tedioso.
 
 Como alternativa, use la propiedad **WidthFit** (AjusteDeAncho). Si esta propiedad establecida en **True** en una o varias tarjetas de una fila, el espacio restante de la fila se dividirá uniformemente entre ellas. A este comportamiento es a lo que se debe que antes se indicara que la propiedad **Ancho** de una tarjeta es un *mínimo* y que lo que se ve en realidad puede ser más ancho. Esta propiedad nunca hará que una tarjeta encoja, solo que se expanda.

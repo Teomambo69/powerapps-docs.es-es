@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7a053aff947ffd543381956cf725a7e656d8a65
-ms.sourcegitcommit: ebe0a9c41b693a2134e9198ffc7e7a8eabee4330
-ms.translationtype: HT
+ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "51276381"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801995"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -35,7 +35,7 @@ Puede especificar los datos que la aplicación recupera personalizando la propie
 
  ![Propiedad Items en orígenes de datos expandidos](./media/connections-list/ItemPropertyExpanded.png)
 
-Para más información sobre cómo personalizar la fórmula con tablas, vea estos temas:
+Para obtener más información sobre cómo personalizar su fórmula con tablas, vea estos temas:
 
   [Información acerca de los orígenes de datos en PowerApps](working-with-data-sources.md)<br> 
   [Creación de una aplicación a partir de datos de Excel](get-started-create-from-data.md)<br> 
@@ -53,13 +53,16 @@ Si el conector facilita acciones, tiene que seleccionar el origen de datos del m
 
 Si tiene que controlar actualizaciones de datos personalizadas con conectores de acción, cree una fórmula que incluya la función **Patch**. En la fórmula, identifique la acción y los campos que quiere enlazar a la acción.  
 
-Para más información sobre cómo personalizar la fórmula con actualizaciones personalizadas, vea estos temas:
+Para obtener más información sobre cómo personalizar la fórmula para actualizaciones personalizadas, vea estos temas:
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
+> [!NOTE]
+>  **PowerApps no funciona con el esquema dinámico**. El esquema dinámico frase hace referencia a la posibilidad de que la misma acción puede devolver una tabla con diferentes columnas diferentes. Las condiciones que pueden hacer que las columnas en las tablas que se diferencian incluir los parámetros de entrada de acción, el usuario o rol que se está ejecutando la acción y el grupo en el que el usuario está trabajando, entre otros. Por ejemplo, procedimientos almacenados de SQL Server pueden devolver columnas diferentes si se ejecutan con diferentes entradas. Para las acciones con el esquema dinámico, se muestra la documentación del conector **las salidas de esta operación son dinámicas.** como el valor devuelto. En cambio, Microsoft Flow funciona con el esquema dinámico y puede proporcionar una solución alternativa para su escenario.
+
 ## <a name="popular-connectors"></a>Conectores populares
 
-La tabla siguiente contiene vínculos a más información sobre nuestros conectores más utilizados. Para ver una lista completa de conectores, consulte el apartado [Todos los conectores](#all-standard-connectors).
+La tabla siguiente contiene vínculos a más información sobre nuestros conectores más utilizados. Para ver una lista completa de conectores, consulte el apartado [Todos los conectores](https://docs.microsoft.com/connectors/).
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |

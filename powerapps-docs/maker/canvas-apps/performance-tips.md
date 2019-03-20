@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
-ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
-ms.translationtype: HT
+ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247595"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801972"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
 Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
@@ -65,7 +65,7 @@ Puede incluir la misma fórmula en la función **Concurrent** para disminuir el 
         
 Con este cambio, la aplicación captura las tablas en paralelo: 
 
-![ClearCollect en paralelo](./media/performance-tips/perfconcurrent2.png)  
+![ClearCollect paralelo](./media/performance-tips/perfconcurrent2.png)  
 
 ## <a name="cache-lookup-data"></a>Almacenamiento en caché de datos de búsqueda
 Use la función **Set** para almacenar en caché local datos provenientes de tablas de búsqueda con el fin de evitar tener que recuperar repetidamente los datos desde el origen. Esta técnica permite optimizar el rendimiento si es probable que los datos no cambien durante una sesión. Como en este ejemplo, los datos se recuperan desde el origen una sola vez y, después, se hace referencia a ellos de manera local hasta que el usuario cierra la aplicación. 
@@ -101,3 +101,15 @@ Use los orígenes de datos y las fórmulas que se pueden delegar para que las ap
 
 ## <a name="republish-apps-regularly"></a>Volver a publicar aplicaciones de manera habitual
 Consulte la entrada de blog [Republish your apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/) (Volver a publicar las aplicaciones) para obtener mejoras en el rendimiento y características adicionales desde la plataforma de PowerApps.
+
+## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Evitar repetir la misma fórmula en varios lugares
+Si varias propiedades ejecutan la misma fórmula (especialmente si es compleja), considere la posibilidad de una vez establecidos y, a continuación, hacer referencia a la salida de la primera propiedad en las posteriores. Por ejemplo, no establezca la **DisplayMode** propiedad de los controles A, B, C, D y E en la misma fórmula compleja. En su lugar, establezca la **DisplayMode** propiedad en la fórmula compleja, establezca la B **DisplayMode** el resultado de la propiedad **DisplayMode** propiedad, y así sucesivamente para C, D y E.
+
+## <a name="enable-delayoutput-on-all-text-input-controls"></a>Habilitar DelayOutput en todos los controles de entrada de texto
+Si tiene varias fórmulas o las reglas que hacen referencia al valor de un **entrada de texto** , establezca el **DelayedOutput** propiedad de ese control en true. El **texto** se actualizará la propiedad de ese control solo después de que han dejado de pulsaciones de teclas escritas en una sucesión rápida. Las reglas o fórmulas no se ejecutan tantas veces y mejorará el rendimiento de la aplicación.
+
+## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>Evite el uso de Form.Updates en reglas y fórmulas
+Si hace referencia a un valor de entrada del usuario en una regla o una fórmula mediante el uso de un **Form.Updates** variable, se recorre en iteración todas las tarjetas del formulario datos y crea un registro cada vez. Para que la aplicación más eficaz, hacen referencia al valor directamente desde la tarjeta de datos o el valor del control.
+
+## <a name="next-steps"></a>Pasos siguientes
+Revise el [estándares de codificación](https://aka.ms/powerappscanvasguidelines) para maximizar el rendimiento de la aplicación y mantener aplicaciones más fáciles de mantener.

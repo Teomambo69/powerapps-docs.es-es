@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac78340f344ce42fd68d18940b1aaca41412a96
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
+ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42829760"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "57802547"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
-PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: las funciones **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** son solo algunas de ellas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
+PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: **[Filtro](functions/function-filter-lookup.md)**,  **[ordenación](functions/function-sort.md)**, y **[AddColumns](functions/function-table-shaping.md)** funciones por nombrar solo unos pocos. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
 
 La clave para compilar aplicaciones eficientes es minimizar la cantidad de datos que debe contener el dispositivo. Quizás necesite solo unos pocos registros de un mar de millones o que un único valor agregado pueda representar miles de registros. O quizás solo se pueda recuperar el primer conjunto de registros, y el resto se trae cuando el usuario indica que desea más. De esta forma se puede reducir drásticamente la potencia de procesamiento, la memoria y el ancho de banda de red que necesita la aplicación, lo que conlleva menores tiempos de respuesta para los usuarios, incluso en teléfonos conectados a través de una red móvil. 
 
@@ -29,17 +29,19 @@ La *delegación* es el lugar en el que la expresividad de las fórmulas de Power
 
 Esto se complica, y el motivo por el que existe este artículo, porque no todo lo que se puede expresar en una fórmula de PowerApps puede delegarse a todos los orígenes de datos. El lenguaje de PowerApps imita el lenguaje de fórmulas de Excel, que se está diseñado con acceso completo e instantáneo a un libro completo en la memoria, con una amplia variedad de funciones numéricas y de manipulación de texto. Como consecuencia, el lenguaje de PowerApps es mucho complejo de lo que la mayoría de orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
 
-**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.**  Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
+**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
 
 > [!NOTE]
 > Anteriormente las advertencias de delegación se marcaban en PowerApps como sugerencias de "punto azul", pero desde entonces las sugerencias de delegación se han reclasificado como advertencias. Si los datos del origen de datos superan los 500 registros y no se puede delegar una función, quizás PowerApps no pueda recuperar todos los datos y la aplicación pueda tener resultados incorrectos. Las advertencias de delegación permiten administrar la aplicación para que tenga resultados correctos.
 
 ## <a name="delegable-data-sources"></a>Orígenes de datos delegables
-En la [lista de delegación](delegation-list.md) se encuentran todos los orígenes de datos que admiten la delegación orígenes y en hasta qué punto lo hacen.
+Para determinados orígenes de datos tabulares solo se admite la delegación. Si un origen de datos admite la delegación, su [documentación del conector](https://docs.microsoft.com/connectors/) describe que admiten. Por ejemplo, estos orígenes de datos tabulares son los más populares, y admiten la delegación:
 
-A continuación agregaremos compatibilidad con la delegación a los orígenes de datos existentes y agregaremos más orígenes de datos.
+- [Common Data Service (CDS) para aplicaciones](https://docs.microsoft.com/connectors/commondataservice/) 
+- [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
+- [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-Los libros de Excel importados (que usan el origen de datos "Agregar datos estáticos a la aplicación"), las colecciones y las tablas almacenadas en variables de contexto no requieren delegación. Todos estos datos ya están en la memoria y se puede aplicar el lenguaje de PowerApps completo.
+Importar libros de Excel (mediante el **agregar datos estáticos a la aplicación** origen de datos), colecciones y tablas almacenadas en variables de contexto no requieren delegación. Todos estos datos ya están en la memoria y se puede aplicar el lenguaje de PowerApps completo.
 
 ## <a name="delegable-functions"></a>Funciones que se pueden delegar
 El siguiente paso es usar solo aquellas fórmulas que se puedan delegar. Aquí se incluyen los elementos de las fórmulas que se pueden delegar. Sin embargo, todos los orígenes de datos son diferentes, y no todos ellos admiten todos estos elementos. Compruebe si hay advertencias de delegación en la fórmula en cuestión.
@@ -68,9 +70,9 @@ La lista anterior no incluye estos elementos importantes:
 * **[*](functions/operators.md)**, **[/](functions/operators.md)**, **[Mod](functions/function-mod.md)**
 * **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)**)
 * **[ExactIn (ExactoEn)](functions/operators.md)**
-* Funciones de manipulación de cadenas: **[Minusc](functions/function-lower-upper-proper.md)**, **[Mayusc](functions/function-lower-upper-proper.md)**, **[Izquierda](functions/function-left-mid-right.md)**, **[Extrae](functions/function-left-mid-right.md)**, **[Largo](functions/function-left-mid-right.md)**, ...
-* Señales: **[Ubicación](functions/signals.md)**, **[Aceleración](functions/signals.md)**, **[Brújula](functions/signals.md)**, ...
-* Volátiles: **[Ahora](functions/function-now-today-istoday.md)**, **[Hoy](functions/function-now-today-istoday.md)**, **[Casual](functions/function-rand.md)**, ...
+* Funciones de manipulación de cadenas: **[Inferior](functions/function-lower-upper-proper.md)**,  **[superior](functions/function-lower-upper-proper.md)**,  **[izquierda](functions/function-left-mid-right.md)**, **[mediados](functions/function-left-mid-right.md)**,  **[Len](functions/function-left-mid-right.md)**,...
+* Señales: **[Ubicación](functions/signals.md)**,  **[aceleración](functions/signals.md)**,  **[brújula](functions/signals.md)**,...
+* Volátiles: **[Ahora](functions/function-now-today-istoday.md)**,  **[hoy](functions/function-now-today-istoday.md)**,  **[Rand](functions/function-rand.md)**,...
 * [Colecciones](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Funciones de ordenación

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
-ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
-ms.translationtype: HT
+ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860619"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804364"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -77,9 +77,9 @@ El objeto visual personalizado de PowerApps está disponible en versión prelimi
 - El objeto visual personalizado de PowerApps no puede desencadenar una actualización del informe o el origen de datos de Power BI. Si se escriben datos desde la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente. Los cambios se reflejan en la siguiente actualización programada.
 - El objeto visual personalizado de PowerApps no puede filtrar los datos o devolver ningún dato al informe.
 - Tendrá que compartir la aplicación de PowerApps de forma independiente al informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
-- Power BI Report Server y la aplicación móvil de Power BI no admiten el objeto visual personalizado de PowerApps.
+- Estas tecnologías no son compatibles con el objeto visual personalizado de PowerApps: Power BI Report Server, la aplicación móvil para Power BI e Internet Explorer.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 * Realice un sencillo [tutorial paso a paso](embed-powerapps-powerbi.md).
-* Consulte nuestro [vídeo](https://aka.ms/powerappscustomvisualvideo).
+* Visite nuestro [vídeo](https://aka.ms/powerappscustomvisualvideo).

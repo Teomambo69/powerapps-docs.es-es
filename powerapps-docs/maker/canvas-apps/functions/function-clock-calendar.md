@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6625df3f822462c86de1f720b7a310f5e516a6ca
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
+ms.sourcegitcommit: 55c6af2f767e90c999eea4d29589c1fe19dfc4db
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849880"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443744"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Funciones Calendar y Clock en PowerApps
 Recupera información de calendario y reloj de la configuración regional actual.
@@ -66,11 +66,11 @@ En los Estados Unidos, donde **[Language](function-language.md)** devuelve "en-U
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |El valor devuelto contiene los nombres completos de cada mes, empezando por "January". |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
-| **Calendar.MonthsShort()** |El valor devuelto contiene los nombres abreviados de cada mes, empezando por "January". |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
-| **Calendar.WeekdaysLong()** |El valor devuelto contiene los nombres completos de cada mes, empezando por "Sunday". |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
-| **Calendar.WeekdaysShort()** |El valor devuelto contiene los nombres abreviados de cada mes, empezando por "Sun" para "Sunday". |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
-| **Clock.AmPm()** |En este idioma se usa un reloj de 12 horas.  El valor devuelto contiene las versiones en mayúsculas de las designaciones completas de AM y PM. |[ "AM", "PM" ] |
-| **Clock.AmPmShort()** |En este idioma se usa un reloj de 12 horas.  El valor devuelto contiene las versiones en mayúsculas de las designaciones cortas de AM y PM. |[ "A", "P" ] |
+| **Calendar.MonthsLong()** |El valor devuelto contiene el nombre completo de cada mes, empezando por "January". |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
+| **Calendar.MonthsShort()** |El valor devuelto contiene el nombre abreviado del mes, empezando por "January". |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
+| **Calendar.WeekdaysLong()** |El valor devuelto contiene el nombre completo de cada día, empezando por "Sunday". |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
+| **Calendar.WeekdaysShort()** |El valor devuelto contiene el nombre abreviado del día, empezando por "Sunday". |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
+| **Clock.AmPm()** |En este idioma se usa un reloj de 12 horas. El valor devuelto contiene las versiones en mayúsculas de las designaciones completas de AM y PM. |[ "AM", "PM" ] |
+| **Clock.AmPmShort()** |En este idioma se usa un reloj de 12 horas. El valor devuelto contiene las versiones en mayúsculas de las designaciones cortas de AM y PM. |[ "A", "P" ] |
 | **Clock.IsClock24()** |En este idioma se usa un reloj de 12 horas. |**false** |
 

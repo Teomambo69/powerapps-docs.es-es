@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
+ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640363"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57804272"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 
@@ -37,6 +37,20 @@ Cuando se comparte una aplicación que incluye contenido de Power BI, no solo se
 ## <a name="performance"></a>Rendimiento
 
 No se recomienda tener más de tres iconos de Power BI cargados al mismo tiempo dentro de una aplicación. Puede controlar la carga y descarga de iconos si establece la propiedad **LoadPowerBIContent**.
+
+## <a name="pass-a-parameter"></a>Pasar un parámetro
+
+Al pasar un único parámetro de la aplicación, puede filtrar los resultados que aparecen en un icono de Power BI. Sin embargo, se admiten solo los valores de cadena y el operador equals y el filtro podría no funcionar si el nombre de tabla o el nombre de columna contiene espacios en blanco.
+
+Para pasar un valor de filtro único, modifique el valor de la **TileURL** propiedad, que sigue a esta sintaxis:
+
+```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+
+En ese valor, anexe esta sintaxis:
+
+```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+
+El parámetro filtrará un valor en el conjunto de datos del informe donde se origina el icono.
 
 ## <a name="key-properties"></a>Propiedades principales
 

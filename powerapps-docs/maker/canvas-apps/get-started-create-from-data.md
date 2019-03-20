@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 01/14/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
+ms.sourcegitcommit: b987589e946cacc86b806a0bd49b9b544ea489dd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806142"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297605"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
 
@@ -67,17 +67,49 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
 1. Para filtrar la lista, escriba o pegue uno o varios caracteres en el cuadro de búsqueda.
 
-1. Pulse o haga clic en el icono Más para agregar un registro, agregue los datos que quiera y, después, pulse o haga clic en el icono de marca de verificación para guardar los cambios.
+    Por ejemplo, escriba o pegue **miel** para mostrar el registro solo para la que cadena aparece en el nombre, categoría o información general sobre el producto.
 
-1. Pulse o haga clic en la flecha siguiente del registro que ha agregado, pulse o haga clic en el icono de lápiz para editar el registro, actualice uno o varios campos y, después pulse o haga clic en el icono de marca de verificación para guardar los cambios.
+    ![Ejemplo de filtro](./media/get-started-create-from-data/filter-example.png)
 
-1. Pulse o haga clic en la flecha siguiente del registro que ha agregado, pulse o haga clic en el icono de lápiz para editar el registro, actualice uno o varios campos y, después pulse o haga clic en el icono Cancelar para descartar los cambios.
+1. Agregar un registro:
 
-1. Pulse o haga clic en la flecha siguiente del registro que ha agregado y, después, pulse o haga clic en el icono Papelera para eliminar ese registro.
+    1. Seleccione el icono del signo más.
+
+        ![Icono con el signo más](./media/get-started-create-from-data/plus-icon.png)
+
+    1. Agregar los datos que desee y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
+
+        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
+
+1. Editar un registro:
+
+    1. Seleccione la flecha para el registro que desea editar.
+
+        ![Flecha siguiente](./media/get-started-create-from-data/next-arrow.png)
+
+    1. Seleccione el icono de lápiz.
+
+        ![Icono de lápiz](./media/get-started-create-from-data/pencil-icon.png)
+
+    1. Actualizar uno o varios campos y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
+
+        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
+
+        Como alternativa, seleccione el icono Cancelar para descartar los cambios.
+
+1. Eliminar un registro:
+
+    1. Seleccione la flecha siguiente del registro que desea eliminar.
+
+        ![Flecha siguiente](./media/get-started-create-from-data/next-arrow.png)
+
+    1. Seleccione el icono de Papelera.
+
+        ![Icono de la papelera](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Personalice la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades. Por ejemplo, puede ordenar y filtrar la lista por nombre de producto, no por categoría.
+Personalice la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades. Por ejemplo, puede ordenar y filtrar la lista por nombre de producto solo, no categoría o información general.
 
 > [!div class="nextstepaction"]
 > [Personalizar una pantalla de exploración predeterminada](customize-layout-sharepoint.md).

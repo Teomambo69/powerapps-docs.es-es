@@ -7,24 +7,36 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/02/2018
+ms.date: 11/09/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5701f85d28d987229aa56756b5c1817892bd5c0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
+ms.sourcegitcommit: 67f9974ee2fa06773c729876ba7ef95145c63a07
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42855111"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54253086"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 
 En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
 
 ## <a name="added-after-february-2018"></a>Agregado después de febrero de 2018
+
+1. **Problema de la cámara en dispositivos móviles Android** (1 de enero de 2019)
+
+    Si deja de funcionar en un dispositivo Android de control de la cámara, volver a publicar la aplicación y vuelva a abrirlo en el dispositivo. El control de cámara se actualizó en respuesta a un cambio en el sistema operativo Android, y la aplicación se beneficiará de la actualización cuando vuelve a publicar.
+
+1. **Desplazamiento en las galerías de altura flexible** (27 de noviembre de 2018)
+
+    Si experimenta una limitación cuando se desplaza con el dedo, elevación y empiece a desplácese de nuevo.
+
+1. **Plano con el mouse o entrada táctil no está smooth en PowerApps para Windows** (Sep. 24, 2018)
+
+    El control de entrada manuscrita tiene solo parcial admite para dibujar el uso del mouse o entrada en la aplicación de Windows táctil. Trazos podrían ser intermitentes. Para dibujar smooth, usar un lápiz o ejecutar la aplicación en un explorador.
 
 1. **Varios controles de medios en PowerApps Mobile** (2 de agosto de 2018)
 
@@ -39,7 +51,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. <a name="out-of-memory"></a>**Memoria insuficiente del explorador** (23 de julio de 2018)
 
-    Si se queda sin memoria al usar PowerApps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
+    Si se queda sin memoria al usar PowerApps, considere la posibilidad de descargar una versión de 64 bits de Internet Explorer, Microsoft Edge o Chrome.
 
 1. **Iniciar un sitio web desde una aplicación insertada** (10 de mayo de 2018)
 

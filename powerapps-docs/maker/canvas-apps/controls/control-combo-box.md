@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
+ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858322"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031363"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -36,7 +36,7 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 ## <a name="key-properties"></a>Propiedades principales
 **[Items](properties-core.md)**: el origen de datos del que se puede elegir.
 
-**DefaultItems**: los elementos seleccionados inicialmente, antes de que el usuario interactúe con el control.
+**DefaultSelectedItems** : los elementos seleccionados inicialmente antes de que el usuario interactúa con el control.
 
 **SelectedItems**: lista de los elementos seleccionados resultante de la interacción con el usuario.
 
@@ -54,8 +54,6 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
 **[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[Default](properties-core.md)**: la selección inicial antes de que el usuario la cambie en modo de selección individual.
 
 **DisplayFields**: lista de campos que se muestran en cada elemento que devuelve la búsqueda.  Lo más fácil es configurarlo mediante el panel Datos de la pestaña de la opción Propiedades.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cc3608d6a973c0ef301c9979b62f5ba898c029c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b8f8dc0d354dd17fedd16524fed0f358b70839d4
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "57798407"
 ---
 # <a name="split-function-in-powerapps"></a>Función Split en PowerApps
 Divide una cadena de texto en una tabla de subcadenas.
@@ -28,7 +28,7 @@ La función **Split** divide una cadena de texto en una tabla de subcadenas.  Se
 
 Para dividir la cadena de texto se usa una cadena de separación.  El separador puede ser cero, uno o varios caracteres que coinciden en conjunto con la cadena de texto.  Si se usa una longitud cero o una cadena *blank*, cada carácter se divide individualmente.  Los caracteres separadores coincidentes no se devuelven en el resultado.  Si no se encuentra ninguna coincidencia en el separador, toda la cadena de texto se devuelve como un único resultado.
 
-Use la función **[Concat](function-concatenate.md)** función para volver a combinar la cadena (sin los separadores).  
+Use la función **[Concat](function-concatenate.md)** función para volver a combinar la cadena (sin los separadores). Utilice la **[MatchAll](function-ismatch.md)** función para extraer partes de una cadena de texto mediante el uso de una expresión regular, que (en algunos casos), puede utilizar para dividir una cadena. 
 
 ## <a name="syntax"></a>Sintaxis
 **Split**(*Texto*, *Separador*)

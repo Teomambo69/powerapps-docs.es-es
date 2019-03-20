@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 06/11/2018
+ms.date: 12/17/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
-ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
+ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
+ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025680"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57804456"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -29,81 +29,79 @@ Para seguir los pasos de este tema, tiene que crear una lista simple para que pu
 > [!NOTE]
 > Si la opción **Personalizar formularios** no está disponible o no funciona correctamente, podría contener tipos de datos que [PowerApps no admite](connections/connection-sharepoint-online.md#known-issues). Además, no se puede mover el formulario a otra lista o [entorno](working-with-environments.md).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="create-a-list"></a>Crear una lista
 
-En un sitio de SharePoint, cree una lista y luego agregue estas columnas:
+En un sitio de SharePoint, cree una lista y, a continuación, agregar estas columnas a dicha lista:
 
-- **NombreProducto** (única línea de texto)
 - **Detalles** (sí/no)
 - **Precio** (moneda)
 - **Disponibilidad** (fecha sin hora)
 - **Color** (opción)
 
-## <a name="open-the-form-in-powerapps"></a>Abrir el formulario en PowerApps
+> [!div class="mx-imgBorder"]
+> ![Seleccione el contenido del sitio > Nuevo > lista, escriba el nombre de la lista y seleccione crear. Para cada columna, seleccione Agregar columna, especifique el tipo de lista (Sí/No, moneda, fecha, opción), especifique el nombre de lista (obtener más información, precios, disponibilidad, Color) y seleccione Guardar.](./media/customize-list-form/create-list.gif)
 
-1. Abra la lista que ha creado y luego seleccione **Nuevo** en la barra de comandos.
+## <a name="open-the-form"></a>Abra el formulario
 
-    El formulario se abre y muestra los campos que ha agregado, además de **Título** y **Datos adjuntos**.
-
-1. Junto a la parte superior del formulario, seleccione **Personalizar**.
+1. En la barra de comandos, seleccione **PowerApps**y, a continuación, seleccione **personalizar el formulario**.
 
     PowerApps Studio se abre en la misma pestaña del explorador.
 
 1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
-## <a name="hide-extra-fields"></a>Ocultar campos adicionales
+> [!div class="mx-imgBorder"]
+> ![En la barra de comandos, seleccione PowerApps y, a continuación, seleccione la forma de personalizar. PowerApps Studio se abre en la misma pestaña del explorador. Si se abre el cuadro de diálogo de PowerApps Studio Bienvenido, seleccione Omitir.](./media/customize-list-form/create-form.gif)
 
-En el centro de la pantalla, PowerApps muestra el formulario, que contiene campos que no necesita.
+## <a name="move-and-remove-a-field"></a>Mover y quitar un campo
 
-- En el panel **Datos**, desactive las casillas de los campos **Título** y **Datos adjuntos**.
+1. Arrastre el **disponibilidad** campo a la parte inferior de la lista de campos.
 
-    Esos campos desaparecen del formulario y quedan solo los que ha agregado.
+    Los campos aparecen en el orden que especifique.
 
-    ![Lista de campos](./media/customize-list-form/field-list.png)
+1. Mantenga el mouse sobre el **datos adjuntos** , seleccione el botón de puntos suspensivos (...) que aparece y, a continuación, seleccione **quitar**.
+
+    El campo que especifique desaparece del formulario.
+
+> [!div class="mx-imgBorder"]
+> ![Arrastre el campo de disponibilidad a la parte inferior de la lista de campos. Mantenga el mouse sobre el campo de datos adjuntos, seleccione el botón de puntos suspensivos (...) que aparece y, a continuación, seleccione Quitar.](./media/customize-list-form/move-remove-fields.gif)
 
 ## <a name="set-conditional-formatting"></a>Establecer formato condicional
 
 Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo aparezcan si **Detalles** está establecido en Sí.
 
-1. Seleccione la tarjeta **Precio** al hacer clic o pulsar en ella.
+1. En la barra de navegación izquierdo, expanda **Details_DataCard1**y tenga en cuenta el número que aparece al final de **DataCardValue**.
 
-    ![Selección de la tarjeta Disponibilidad](./media/customize-list-form/select-card.png)
+1. Establecer el **visibilidad** propiedad de la **Color**, **disponibilidad**, y **precio** tarjetas en esta fórmula (reemplazar, si es necesario, el número con la que anotó en el paso anterior):
 
-1. En la lista de propiedades, seleccione **Visible**.
-
-    ![Selección de la propiedad Visible](./media/customize-list-form/select-property.png)
-
-1. En la barra de fórmulas, escriba o pegue esta fórmula:
-
-    **If(DataCardValue3.Value = true, true)**
-
-    ![Establecimiento del valor de la propiedad Visible](./media/customize-list-form/build-formula.png)
-
-1. Repita los tres últimos pasos con las tarjetas **Disponibilidad** y **Color**.
+    **If(DataCardValue2.Value = true, true)**
 
 1. Mientras mantiene la tecla Alt presionada, seleccione el botón de alternancia **Detalles** varias veces (al hacer clic o pulsar en él).
 
     Los tres campos que ha configurado aparecen y desaparecen del formulario.
 
-1. (Opcional) Personalice el formulario de varias formas distintas, incluidas estas:
+> [!div class="mx-imgBorder"]
+> ![En la barra de navegación izquierda, tenga en cuenta el número que aparece al final de DataCardValue. Establezca la propiedad de visibilidad de Color, la disponibilidad y el precio de las tarjetas en esta fórmula. Mantenga presionada la tecla Alt y seleccionar el control de detalles varias veces.](./media/customize-list-form/conditional-format.gif)
 
-    - Cambie su tamaño, orientación o ambos (por ejemplo, para [ensanchar el formulario](set-aspect-ratio-portrait-landscape.md)).
-    - Agregue un control para que los usuarios puedan [cargar datos adjuntos](controls/properties-text.md).
-    - Cree un [campo de búsqueda](sharepoint-lookup-fields.md).
-
-## <a name="save-publish-and-show-the-form"></a>Guardar, publicar y mostrar el formulario
+## <a name="save-and-publish-the-form"></a>Guardar y publicar el formulario
 
 1. Abra el menú **Archivo**, seleccione **Guardar** y luego seleccione **Publicar en SharePoint** dos veces.
 
 1. En la esquina superior izquierda, seleccione la flecha Atrás y luego **Volver a SharePoint**.
 
-1. En la barra de comandos, seleccione **Nuevo** para abrir el formulario personalizado.
+> [!div class="mx-imgBorder"]
+> ![Abra el menú archivo, seleccione Guardar y, a continuación, seleccione Publicar en SharePoint de dos veces. En la esquina superior izquierda, seleccione la flecha Atrás y, a continuación, seleccione nuevo en SharePoint.](./media/customize-list-form/save-form.gif)
 
-1. Seleccione el botón de alternancia **Detalles** varias veces para ocultar y mostrar los últimos tres campos.
+## <a name="further-customize-your-form"></a>Personalizar aún más el formulario
 
-Para [personalizar aún más el formulario](sharepoint-form-integration.md), ábralo, seleccione **Personalizar** junto a la parte superior de este y luego realice, guarde y publique los cambios.
+1. Abra la lista, seleccione **New** en el comando de la barra y, a continuación, seleccione **personalizar** cerca de la parte superior del formulario.
 
-Si crea uno o varios elementos con este formulario, el campo **Título** estará vacío. Puede ocultar este campo si modifica la vista predeterminada.
+1. Personalizar el formulario de varias maneras, como los que se describen estos temas:
+
+    - Cambie su tamaño, orientación o ambos (por ejemplo, para [ensanchar el formulario](set-aspect-ratio-portrait-landscape.md)).
+    - Agregue un control para que los usuarios puedan [cargar datos adjuntos](controls/properties-text.md).
+    - Cree un [campo de búsqueda](sharepoint-lookup-fields.md).
+
+    Más información: [Comprensión de la integración de formularios de SharePoint](sharepoint-form-integration.md)
 
 ## <a name="use-the-default-form"></a>Usar el formulario predeterminado
 
@@ -131,41 +129,41 @@ Si crea uno o varios elementos con este formulario, el campo **Título** estará
 
     ![Eliminación del formulario personalizado](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="q--a"></a>Preguntas y respuestas
+## <a name="q--a"></a>PREGUNTAS Y RESPUESTAS
 
 ### <a name="forms-vs-apps"></a>Formularios frente a aplicaciones
 
-**P:** ¿En qué se diferencia un formulario personalizado de una aplicación independiente que se crea desde SharePoint o PowerApps?
+**P: ¿** ¿Cómo se diferencia un formulario personalizado desde una aplicación independiente que se crea desde SharePoint o PowerApps?
 
-**R:** Si personaliza el formulario de una lista de SharePoint, no aparece como aplicación en PowerApps Studio ni PowerApps Mobile. Solo puede abrir el formulario desde la lista para la que lo ha creado.
+**R:** Si personaliza el formulario para obtener una lista de SharePoint, el formulario no aparece como una aplicación en PowerApps Studio o PowerApps Mobile. Solo puede abrir el formulario desde la lista para la que lo ha creado.
 
-**P:** ¿Cuándo se debe personalizar un formulario para administrar datos de una lista de SharePoint y cuándo se debe crear una aplicación independiente?
+**P: ¿** ¿Cuándo se puede personalizar un formulario para administrar datos en una lista de SharePoint, y cuándo debo crear una aplicación independiente?
 
-**R:** Personalice un formulario si quiere que los usuarios administren los datos sin salir de SharePoint (por ejemplo, en un explorador de escritorio). Cree una aplicación si quiere que los usuarios administren los datos fuera de SharePoint (por ejemplo, en un dispositivo móvil).
+**R:** Personalizar un formulario si desea que los usuarios para administrar los datos sin salir de SharePoint (por ejemplo, en un explorador de escritorio). Cree una aplicación si quiere que los usuarios administren los datos fuera de SharePoint (por ejemplo, en un dispositivo móvil).
 
-**P:** ¿Se puede personalizar un formulario y crear una aplicación para la misma lista?
-
-**R:** Sí.
-
-**P:** ¿Se puede personalizar una lista y crear una aplicación con las mismas características?
+**P: ¿** ¿Puedo personalizar un formulario y crear una aplicación para la misma lista?
 
 **R:** Sí.
 
-**P:** ¿Se puede personalizar un formulario en un entorno distinto al predeterminado de la organización?
+**P: ¿** ¿Puedo personalizar una lista y crear una aplicación con las mismas características?
 
-**A:** No.
+**R:** Sí.
+
+**P: ¿** ¿Puedo personalizar un formulario en un entorno distinto al predeterminado de mi organización?
+
+**R:** No.
 
 ### <a name="manage-your-custom-form"></a>Administrar el formulario personalizado
 
-**P:** ¿Cómo se puede compartir fácilmente un formulario con otras personas?
+**P: ¿** ¿Cómo puedo fácilmente compartir mi formulario con otras personas?
 
-**R:** Abra el formulario, seleccione **Copiar vínculo** y luego envíe el vínculo a cualquiera que quiera usar el formulario.
+**R:** Abra el formulario, seleccione **Copiar vínculo**y, a continuación, envíe el vínculo a cualquier persona que desea utilizar el formulario.
 
-**P:** ¿Se puede actualizar un formulario sin que los cambios realizados sean visibles para otros usuarios?
+**P: ¿** ¿Puedo actualizar mi formulario sin realizar cambios visibles para otros usuarios?
 
 **R:** Sí. Puede modificar el formulario y guardarlo tantas veces como quiera, pero los cambios no serán visibles para nadie a menos que seleccione **Publicar en SharePoint** dos veces.
 
-**P:** Si se personaliza un formulario de lista y se comete un error, ¿se puede volver a la versión anterior?
+**P: ¿** ¿Si comete un error y personalizar un formulario de lista, puedo volver a una versión anterior?
 
 **R:** Sí.
 
@@ -183,31 +181,31 @@ Si crea uno o varios elementos con este formulario, el campo **Título** estará
     > [!NOTE]
     > Si recibe un mensaje de error que indica que la restauración no se pudo realizar porque otro usuario ha bloqueado el formulario, espere a que el usuario lo desbloquee y, a continuación, vuelva a intentarlo.
 
-**P:** ¿Se puede mover un formulario de una lista a otra?
+**P: ¿** ¿Puedo mover mi formulario de una lista a otra?
 
-**A:** No.
+**R:** No.
 
 ### <a name="administer-your-custom-form"></a>Administrar el formulario personalizado
 
-**P:** ¿Cómo se comparte un formulario?
+**P: ¿** ¿Cómo se puede compartir mi formulario?
 
-**R:** No es necesario compartir el formulario, ya que este hereda los permisos de la lista de SharePoint. Cuando haya terminado de personalizarlo, solo tiene que [volver a publicarlo en SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint) para que otros usuarios puedan usarlo.
+**R:** No necesita compartir el formulario, el formulario hereda los permisos de la lista de SharePoint. Cuando haya terminado de personalizarlo, solo tiene que [volver a publicarlo en SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint) para que otros usuarios puedan usarlo.
 
-**P:** ¿Quién puede personalizar formularios?
+**P: ¿** ¿Quién puede personalizar los formularios?
 
-**R:** Cualquier persona con permisos de SharePoint para administrar, diseñar o editar la lista asociada.
+**R:** Cualquier persona con permisos de SharePoint para administrar, diseñar o modificar la lista asociada.
 
-**P: ¿** ¿Se necesita una licencia de PowerApps para crear o utilizar formularios de lista personalizados?
+**P: ¿** ¿Necesito una licencia de PowerApps para crear o utilizar formularios de lista personalizados?
 
-**R:** Necesita un [plan de Office 365 que incluya PowerApps](../../administrator/pricing-billing-skus.md#licenses).
+**R:** Necesita un [plan de Office 365 que incluye PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses).
 
-**P:** ¿Qué sucede cuando los usuarios invitados acceden a una lista que tiene un formulario personalizado?
+**P: ¿** ¿Qué ocurre cuando los usuarios invitados tienen acceso a una lista que tiene un formulario personalizado?
 
-**R:** Los usuarios invitados reciben un mensaje de error si intentan acceder a un formulario de lista que se ha personalizado mediante PowerApps.
+**R:** Los usuarios invitados recibirán un mensaje de error si intentan tener acceso a un formulario de lista que se ha personalizado mediante PowerApps.
 
-**P:** ¿Cómo reciben los administradores una lista de todos los formularios personalizados de su organización?
+**P: ¿** Como administrador, ¿cómo obtengo una lista de todos los formularios personalizados de mi organización?
 
-**R:** Si es administrador de inquilinos de PowerApps o tiene permisos de administrador en el entorno predeterminado de PowerApps de la organización, haga lo siguiente:
+**R:** Si un administrador de inquilinos de PowerApps o tener permisos de administrador de entorno en el entorno de PowerApps predeterminado de su organización, realice lo siguiente:
 
 1. En el [centro de administración de PowerApps](https://admin.powerapps.com), seleccione el entorno predeterminado de la organización en la lista de entornos.
 

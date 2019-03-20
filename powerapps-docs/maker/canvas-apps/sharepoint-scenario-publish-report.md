@@ -1,24 +1,24 @@
 ---
 title: Publicación del informe de proyecto de Power BI y creación de un panel | Microsoft Docs
 description: En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el servicio Power BI. A continuación, se creará un panel basado en este informe.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5a39ec04015fe360bc550d9ea4f708d887ba34c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833883"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799373"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Publicación del informe de proyecto de Power BI y creación de un panel
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42833883"
 
 En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el servicio Power BI. A continuación, se creará un panel basado en este informe. Muchas veces, un informe tiene un gran número de visualizaciones y solo se usa un subconjunto en un panel. En este caso, vamos a agregar cuatro visualizaciones al panel.
 
-## <a name="step-1-publish-the-dataset-and-report"></a>Paso 1: Publicación del conjunto de datos y el informe
+## <a name="step-1-publish-the-dataset-and-report"></a>Paso 1: Publicar el informe y conjunto de datos
 1. En Power BI Desktop, en la pestaña **Inicio**, haga clic o pulse en **Publicar**.
    
     ![Publicar el conjunto de datos y el informe](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)
@@ -48,7 +48,7 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
    
     Puede ver que, cuando se hizo la publicación, Power BI Desktop cargó un conjunto de datos **(d)** y un informe **(c)**. Va a crear paneles en el servicio, no en Power BI Desktop, y esta área de trabajo aún no tiene ningún panel **(b)**. Vamos a crear uno a continuación.
 
-## <a name="step-2-configure-credentials-for-refresh"></a>Paso 2: Configuración de las credenciales para la actualización
+## <a name="step-2-configure-credentials-for-refresh"></a>Paso 2: Configurar las credenciales para la actualización
 1. En el servicio, haga clic o pulse en el ![icono de engranaje](./media/sharepoint-scenario-publish-report/icon-gear.png) en la esquina superior derecha. Después, haga clic o pulse en **Configuración**.
 2. Haga clic o pulse en **Conjuntos de datos** y, después, en **project-analysis**.
    
@@ -67,7 +67,7 @@ En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el ser
    
     ![Origen de datos actualizado](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
-## <a name="step-3-create-a-dashboard"></a>Paso 3: Creación de un panel
+## <a name="step-3-create-a-dashboard"></a>Paso 3: Crear un panel
 
 1. Para volver al informe, en **INFORMES**, haga clic o pulse en **project-analysis**.
 

@@ -1,24 +1,24 @@
 ---
 title: Configuración de alertas de datos para el panel de Power BI | Microsoft Docs
 description: En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6426dedc9ce9d1a4648f9c880a53337767ec53d3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836404"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799097"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Configurar alertas de datos para el panel de Power BI
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42836404"
 
 En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta. Para más información sobre las alertas, consulte [Alertas de datos en el servicio Power BI](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
-## <a name="step-1-create-an-alert"></a>Paso 1: Creación de una alerta
+## <a name="step-1-create-an-alert"></a>Paso 1: Crear una alerta
 1. En el servicio Power BI, abra el panel que creó en la última tarea.
 2. En la tarjeta con un solo número, pulse o haga clic en el botón de puntos suspensivos (**…**).
    
@@ -45,7 +45,7 @@ La alerta no se activará ahora mismo, aunque 56 esté por encima del umbral de 
 
 Cuando se activa la alerta, Power BI envía un mensaje de correo electrónico a su creador; en el paso siguiente, se verá cómo enviar correo adicional mediante Microsoft Flow.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Paso 2: Creación de un flujo que responda a la alerta
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Paso 2: Crear un flujo que responda a la alerta
 1. Inicie sesión en flow.microsoft.com y pulse o haga clic en **Servicios** y en **Power BI**.
    
     ![Power BI en Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)

@@ -1,24 +1,24 @@
 ---
 title: Introducción a la conexión de SharePoint | Microsoft Docs
 description: Consulte las funciones, respuestas y ejemplos disponibles para SharePoint.
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7f973b9a62e50ea646999d6d10b185fb02306dd
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836744"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798936"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Conexión a SharePoint desde PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -62,7 +62,7 @@ PowerApps puede leer las columnas que contienen espacios, pero estos se sustituy
 
     La aplicación tendrá tres pantallas de forma predeterminada: una para examinar registros, otra para mostrar detalles acerca de un registro y otra para crear o actualizar un registro. Cuando se genera la aplicación, lo más probable es que quiera personalizar [la pantalla de exploración](../customize-layout-sharepoint.md) y [las pantallas de detalles y de edición](../customize-forms-sharepoint.md) para adaptarlas a sus necesidades.
 
-    **Nota**: Si la lista de SharePoint contiene una columna **Opción**, **Buscar**, o **Persona o grupo**, consulte la sección [Mostrar datos en una galería](connection-sharepoint-online.md#show-data-in-a-gallery) de este mismo tema.
+    **Nota:** Si la lista de SharePoint contiene un **elección**, **búsqueda**, o **persona o grupo** columna, vea [mostrar datos en una galería](connection-sharepoint-online.md#show-data-in-a-gallery) más adelante en este tema.
 
 * Puede crear su propia aplicación desde cero: para ello [conéctese a SharePoint](../connect-to-sharepoint.md), revise los conceptos en [Crear una aplicación desde cero ](../get-started-create-from-blank.md) y aplíquelos en SharePoint en lugar de en Excel.
 
@@ -91,7 +91,7 @@ PowerApps puede leer las columnas que contienen espacios, pero estos se sustituy
 
        ![Especificar las credenciales](./media/connection-sharepoint-online/specify-creds.png)
 
-       **Nota**: Si no tiene una puerta de enlace de datos local instalada, [instale una](../gateway-reference.md) y pulse o haga clic en el icono para actualizar la lista de puertas de enlace.
+       **Nota:** Si no tiene una puerta de enlace de datos local instalada, [instale una](../gateway-reference.md) y, después, haga clic o pulse en el icono para actualizar la lista de puertas de enlace.
 
        En **Elegir una puerta de enlace**, pulse o haga clic en la puerta de enlace que desea usar.
 
@@ -128,7 +128,7 @@ Para mostrar datos de cualquiera de estos tipos de columnas en una galería, use
 
     También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.[ColumnName].** (con el punto final).
 
-    **Nota**: Para una columna **CreatedBy**, especifique **ThisItem.Autor.DisplayName** para mostrar los nombres de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
+    **Nota:** Para un **CreatedBy** columna, especificar **Thisitem.autor.DisplayName** para mostrar los nombres de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
 
 * Para una columna **Metadatos administrados**, especifique **ThisItem.[ColumnName].Label** para mostrar los datos de esa columna.
 

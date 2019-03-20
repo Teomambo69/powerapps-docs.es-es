@@ -1,24 +1,24 @@
 ---
 title: Crear una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo | Microsoft Docs
 description: En PowerApps, cree una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo.
-author: skjerland
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
-ms.author: sharik
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 88717f9ef894b4082b5881ea8c1f1209ce121e49
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 32a7c0a6848ee5b9521de65b9af0f28d85939f57
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864865"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799741"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda en PowerApps
 

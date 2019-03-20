@@ -13,21 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640409"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802018"
 ---
-# <a name="label-control-in-powerapps"></a>Control Etiqueta de PowerApps
+# <a name="label-control-in-canvas-apps"></a>Control de etiqueta en las aplicaciones de lienzo
+
 Cuadro que muestra los datos como texto, números, fechas o moneda.
 
 ## <a name="description"></a>Descripción
+
 En una etiqueta se muestran datos que se especifican como una cadena literal de texto, que aparece exactamente igual que se escribe o como una fórmula que se analiza como cadena de texto. Las etiquetas suelen aparecer fuera de cualquier otro control (por ejemplo, como encabezado que identifica una pantalla), como una etiqueta que identifica otro control (por ejemplo, un control de clasificación o de audio) o en una galería para mostrar un tipo específico de información sobre un elemento.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[AutoHeight](properties-core.md)**: establezca esta propiedad en true para permitir que la etiqueta se agrande automáticamente para mostrar todo el texto configurado. Establézcalo en false para truncar el texto con el alto asignado.
+
+**[AutoHeight](properties-core.md)**  : establézcalo en true para permitir que la etiqueta a su alto para mostrar todo el texto de crecimiento automático. Establézcalo en false para truncar el texto con el alto asignado.
 
 **[Color](properties-color-border.md)**: el color del texto en un control.
 
@@ -38,6 +41,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 **[DelayOutput](properties-core.md)**: establézcalo en true para retrasar la acción durante la entrada de texto.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
+
 **[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
 **AutoHeight**: indica si una etiqueta aumenta automáticamente su propiedad **[Altura](properties-size-location.md)** si su propiedad **[Texto](properties-core.md)** contiene más caracteres de los que el control permite mostrar a la vez.
@@ -62,7 +66,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 
 **[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -76,7 +80,11 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 
 **[AlturaDeLínea](properties-text.md)**: distancia entre, por ejemplo, líneas de texto o elementos de una lista.
 
-**Live**: indica cómo el lector de pantalla anuncia los cambios en el texto de la etiqueta.  Los valores pueden ser **Off**, **Assertive** y **Polite**. Esta propiedad es útil para anunciar cambios dinámicos en la interfaz de usuario de la aplicación de manera accesible.
+**[Live](properties-accessibility.md)**  : cómo un lector de pantalla anuncia los cambios en el valor de la etiqueta **texto** propiedad.
+
+* Cuando se establece en **desactivar**, el lector de pantalla no anuncia los cambios.
+* Cuando se establece en **educados**, el lector de pantalla finalice antes de anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando en términos.
+* Cuando se establece en **Assertive**, interrumpe el lector de pantalla para anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
@@ -95,6 +103,8 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 **[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
 
 **[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+
+**Rol** -el rol con semántica del texto de etiqueta, como título 1. No cambia el estilo de la etiqueta, pero hace que el resultado correcto semánticamente para la interpretación de los lectores de pantalla.
 
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
@@ -119,15 +129,19 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
+
 [**Text**( *Number*, "*FormatCodes*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Ejemplos
+
 ### <a name="show-a-literal-string"></a>Mostrar una cadena literal
+
 * Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** en **"Hola, mundo"** (dobles comillas incluidas).
   
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
 ### <a name="show-the-result-of-a-formula"></a>Mostrar el resultado de una fórmula
+
 * Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** en una fórmula como esta:<br>
   **Today()**
   
@@ -137,38 +151,45 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
     ¿Desea más información sobre la función **[Today](../functions/function-now-today-istoday.md)** u [otras funciones](../formula-reference.md)?
 
 ### <a name="show-data-in-a-gallery"></a>Mostrar datos en una galería
+
 En este procedimiento, creará una colección, denominada **CityPopulations**, que contiene datos sobre la población de varias ciudades de Europa. A continuación, mostrará los datos de una galería que contengan tres etiquetas y especificará el tipo de datos que se mostrará en cada etiqueta.
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. Presione F5, seleccione el botón y presione Esc.
 3. Agregue una galería de texto y establezca su propiedad **[Elementos](properties-core.md)** en **CityPopulations**.
-   
+
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 4. En el panel **Gallery1**, establezca la lista superior en **Population**, la del medio en **City** y la inferior en **Country**.
 
-
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+
 A pesar de su nombre, un control **Etiqueta** no tiene que usarse como etiqueta con otro control. Se puede utilizar para mostrar cualquier fragmento de texto.
 
 Un control **Etiqueta** se puede usar como botón o vínculo mediante la especificación del comportamiento **[OnSelect](properties-core.md)**. Cuando se utiliza de este modo, hay algunas consideraciones sobre accesibilidad parecidas a las que se tienen con los botones.
 
 ### <a name="color-contrast"></a>Contraste de color
+
 Debe haber un contraste de color adecuado entre:
+
 * **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
 * Se aplican otros [requisitos estándar de contraste de color](../accessible-apps-color.md) (si se usa como botón o vínculo)
 
-### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* La propiedad **[Text](properties-core.md)** debe existir.
+### <a name="screen-reader-support"></a>Compatibilidad con el lector de pantalla
 
-    > [!NOTE]
+* La propiedad **[Text](properties-core.md)** debe existir.
+* **[Live](properties-accessibility.md)**  debe establecerse en **educados** o **Assertive** si un lector de pantalla debe anunciar los cambios en el valor de la **texto** propiedad.
+
+  > [!NOTE]
   > Los lectores de pantalla tratan los controles **Etiqueta** como botones cuando **[TabIndex](properties-accessibility.md)** es cero o superior.
 
 ### <a name="low-vision-support"></a>Apoyo para deficiencia visual
+
 * El control **Etiqueta** debe parecerse a un vínculo, si se utiliza como vínculo.
-    * Establezca la propiedad **[Underline](properties-text.md)** en **true**.
-    * **[HoverColor](properties-color-border.md)** debe ser diferente de **[Color](properties-color-border.md)**
+  * Establezca la propiedad **[Underline](properties-text.md)** en **true**.
+  * **[HoverColor](properties-color-border.md)** debe ser diferente de **[Color](properties-color-border.md)**
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
+
 * **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el texto se utiliza como botón o vínculo. De esta forma, los usuarios de teclado pueden navegar hasta él.
 * Los indicadores de foco deben ser claramente visibles si el texto se usa como botón o vínculo. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.

@@ -1,24 +1,24 @@
 ---
 title: Creación de un informe de Power BI para analizar proyectos | Microsoft Docs
 description: En esta tarea, vamos a crear un informe de Power BI basado en dos listas de SharePoint.
-author: mgblythe
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/10/2018
-ms.author: mblythe
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: adda4a7adae9961b77f01320e92527b53ac61e7f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42828786"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799948"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]
@@ -30,9 +30,9 @@ En esta tarea, vamos a crear un informe de Power BI basado en las dos listas de 
 > El [paquete de descarga](https://aka.ms/o4ia0f) de este escenario incluye una versión terminada de este informe: project-analysis.pbix.
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Repaso rápido de Power BI Desktop
-Antes de profundizar en la creación de informes, revisemos Power BI Desktop. Es una herramienta eficaz, con gran cantidad de características, por lo que nos centraremos en proporcionar información general de las áreas que se van a utilizar en esta tarea. En Power BI Desktop hay tres áreas de trabajo o *vistas* principales: vista **Informe**, vista **Datos** y vista **Relaciones**. Power BI Desktop también incluye el **Editor de consultas**, que se abre en una ventana independiente.
+Antes de profundizar en la creación de informes, revisemos Power BI Desktop. Es una herramienta eficaz, con gran cantidad de características, por lo que nos centraremos en proporcionar información general de las áreas que se van a utilizar en esta tarea. Hay tres áreas de trabajo principal o *vistas* en Power BI Desktop: **Informe** vista, **datos** vista, y **relaciones** vista. Power BI Desktop también incluye el **Editor de consultas**, que se abre en una ventana independiente.
 
-La siguiente pantalla muestra los iconos de las tres vistas a la izquierda de Power BI Desktop: **Informe**, **Datos** y **Relaciones**, de arriba a abajo. La barra amarilla de la izquierda indica la vista activa; en este caso, se muestra la vista **Informe**. Para cambiar de vista, seleccione cualquiera de los tres iconos.
+La siguiente pantalla muestra los iconos de tres vistas a lo largo de la izquierda de Power BI Desktop: **Informe**, **datos**, y **relaciones**, de arriba a abajo. La barra amarilla de la izquierda indica la vista activa; en este caso, se muestra la vista **Informe**. Para cambiar de vista, seleccione cualquiera de los tres iconos.
 
 ![Vistas de Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -94,7 +94,7 @@ En este paso, en primer lugar se conectará a las dos listas. Luego limpiará lo
 2. En el panel central, seleccione la columna **FileSystemObjectType** y, después, haga clic o pulse **Quitar columnas**.
    
     ![Quitar columnas](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. Quitar las dos columnas después de la columna **Id**: **ServerRedirectedEmbedURL** y **ContentTypeId**. 
+3. Quitar las dos columnas después de la **Id** columna: **ServerRedirectedEmbedURL** y **ContentTypeId**. 
    > [!TIP]
    > Utilice la tecla Máyus para seleccionar ambas columnas y, después, haga clic o pulse **Quitar columnas**.
 4. Quite todas las columnas a la derecha de la columna **PMAssigned** (un total de 22 columnas). La tabla debe coincidir con la de la siguiente imagen:
@@ -105,11 +105,11 @@ En este paso, en primer lugar se conectará a las dos listas. Luego limpiará lo
     ![ Tabla Project Requests en el Editor de consultas](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>Cambiar el tipo de datos en las columnas de Project Details
-1. Seleccione la columna **ProjectedDays**, haga clic o pulse **Tipo de datos: cualquiera** y , luego, **Número entero**.
+1. Seleccione el **ProjectedDays** columna, haga clic o pulse **tipo de datos: Cualquier**, a continuación, **número entero**.
    
     ![Cambiar el tipo de datos a número entero](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. Repita el paso anterior en la columna **ActualDays**.
-3. Seleccione la columna **ApprovedDate**, haga clic o pulse **Tipo de datos: cualquiera** y, luego, **Fecha**.
+3. Seleccione el **ApprovedDate** columna, haga clic o pulse **tipo de datos: Cualquier**, a continuación, **fecha**.
    
     ![ Cambiar el tipo de datos a fecha](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -117,9 +117,9 @@ En este paso, en primer lugar se conectará a las dos listas. Luego limpiará lo
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Cambio del tipo de datos en las columnas de Project Requests
 
-1. Seleccione la columna **EstimatedDays**, haga clic o pulse **Tipo de datos: cualquiera** y , luego, **Número entero**.
+1. Seleccione el **EstimatedDays** columna, haga clic o pulse **tipo de datos: Cualquier**, a continuación, **número entero**.
 
-2. Seleccione la columna **RequestDate**, haga clic o pulse **Tipo de datos: cualquiera** y, luego, **Fecha**.
+2. Seleccione el **RequestDate** columna, haga clic o pulse **tipo de datos: Cualquier**, a continuación, **fecha**.
 
 ### <a name="apply-and-save-changes"></a>Aplicación y guardado de cambios
 
@@ -129,7 +129,7 @@ En este paso, en primer lugar se conectará a las dos listas. Luego limpiará lo
 
 2. Haga clic o pulse en **Archivo** y , luego, en **Guardar** y guarde el proyecto con el nombre project-analysis.pbix.
 
-## <a name="step-2-improve-the-data-model"></a>Paso 2: Mejora del modelo de datos
+## <a name="step-2-improve-the-data-model"></a>Paso 2: Mejorar el modelo de datos
 Ahora que los datos de las listas de SharePoint se encuentran en Power BI Desktop, pasaremos al modelado de datos. El modelado de datos puede ser un proceso lento, pero le mostraremos sucintamente varias cosas interesantes que puede hacer para sacar el máximo partido a los datos de las listas en Power BI Desktop:
 
 * Cambiar las relaciones entre dos tablas cualesquiera
@@ -170,7 +170,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
 1. Haga clic o pulse **Nueva tabla**.
    
     ![Nueva tabla](./media/sharepoint-scenario-build-report/05-02-05-modeling-table.png)
-2. Escriba esta fórmula en la barra de fórmulas: **Dates = CALENDARAUTO()**.
+2. Escriba esta fórmula en la barra de fórmulas: **Fechas = CALENDARAUTO()**.
    
     ![Barra de fórmulas con Dates = CALENDARAUTO()](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
@@ -185,7 +185,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
 1. Aún en la tabla de fechas, haga clic o pulse en **Nueva columna**.
    
     ![Nueva columna](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
+2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = switch, 1,0,7,0,1)**.
    
     Esta fórmula determina si una fecha de la columna **Date** es un día laborable. Si la fecha es un día laborable, la columna **IsWeekDay** obtiene el valor 1; de lo contrario, obtiene el valor 0.
 3. Presione Entrar para agregar la columna **IsWeekDay** a la tabla **Dates**.
@@ -284,7 +284,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
    
     ![Agregar medida MaxDaysPending](./media/sharepoint-scenario-build-report/05-02-12-measure-maxdayspending.png)
 
-## <a name="step-3-create-report-visualizations"></a>Paso 3: Creación de visualizaciones de informes
+## <a name="step-3-create-report-visualizations"></a>Paso 3: Crear visualizaciones de informes
 Ahora estamos en el paso en el que mucha gente piensa cuando piensan en el análisis de datos: la creación de visualizaciones para poder buscar patrones en los datos. En este paso, crearemos cuatro visualizaciones:
 
 * Un gráfico de columnas que muestra los días previstos frente a días reales de los proyectos

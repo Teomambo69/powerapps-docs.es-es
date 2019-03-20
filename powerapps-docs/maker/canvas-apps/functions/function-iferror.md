@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851331"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802317"
 ---
 # <a name="iferror-function-in-powerapps"></a>Función IfError en PowerApps
 Detecta errores y proporciona un valor alternativo o lleva a cabo una acción.
@@ -39,7 +39,7 @@ Si todos los argumentos de **IfError** generan un error, se devuelve el valor de
 **IfError**( *Value*, *Fallback1* [, *Fallback2*, ... ] )
 
 * *Value* (se requiere). Fórmulas para probar si hay un valor de error. 
-* *Fallback(s)*: obligatorio. Las fórmulas que se deben evaluar y los valores que se deben devolver si los argumentos anteriores devuelven un error.  Los argumentos *Fallback* se evalúan en orden hasta que se encuentra un valor sin errores.
+* *Fallback(s)*: obligatorio. Las fórmulas que se deben evaluar y los valores que se deben devolver si los argumentos anteriores devuelven un error.  *Reserva* argumentos se evalúan en orden hasta que se encuentra un valor sin errores.
 
 ## <a name="examples"></a>Ejemplos
 

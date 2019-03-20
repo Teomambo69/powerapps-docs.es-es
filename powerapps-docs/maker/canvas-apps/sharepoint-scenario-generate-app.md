@@ -1,24 +1,24 @@
 ---
 title: Generación de una aplicación de lienzo para controlar solicitudes de proyecto | Microsoft Docs
 description: En esta tarea se va a generar una aplicación de lienzo básica de tres pantallas directamente a partir de una lista de SharePoint.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834268"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799327"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
@@ -29,7 +29,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 > [!TIP]
 > El [paquete de descarga](https://aka.ms/o4ia0f) para este escenario incluye una versión terminada de esta aplicación: project-requests-app.msapp.
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Paso 1: Generación de una aplicación a partir de una lista de SharePoint
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Paso 1: Generar una aplicación a partir de una lista de SharePoint
 
 1. En la lista **Project Requests** que ha creado, pulse o haga clic en **PowerApps** y, después en, **Crear una aplicación**.
    
@@ -39,7 +39,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Especifique un nombre para la aplicación](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>Paso 2: Examen de la aplicación en PowerApps Studio
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>Paso 2: Revisar la aplicación en PowerApps Studio
 
 1. En PowerApps Studio, la barra de navegación izquierda muestra de forma predeterminada una vista jerárquica de las pantallas y los controles de la aplicación.
    
@@ -59,7 +59,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
       
       ![PowerApps Studio con la vista de miniaturas](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>Paso 3: Personalización de la pantalla de exploración de la aplicación
+## <a name="step-3-customize-the-apps-browse-screen"></a>Paso 3: Personalizar la pantalla de exploración de la aplicación
 
 1. Haga clic o pulse en la pantalla de exploración.
    
@@ -93,7 +93,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 
 6. Pulse o haga clic en **Archivo** y, luego, en **Guardar**. Haga clic o pulse en ![el icono Back to app](./media/sharepoint-scenario-generate-app/icon-back-to-app.png) (Volver a la aplicación) para volver a la aplicación.
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Paso 4: Revisión de la pantalla de detalles y la pantalla de edición de la aplicación
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Paso 4: Revise la pantalla de detalles de la aplicación y la pantalla de edición
 1. Haga clic o pulse en la pantalla de detalles.
    
     Esta pantalla tiene un diseño diferente que contiene un *formulario de presentación* que muestra los detalles de un elemento seleccionado en la galería. Tiene controles para editar y eliminar elementos, y para volver a la pantalla de exploración.
@@ -106,7 +106,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 
     ![Formulario de edición](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>Paso 5: Ejecución de la aplicación desde la lista
+## <a name="step-5-run-the-app-from-the-list"></a>Paso 5: Ejecute la aplicación en la lista
 
 1. En la lista **Project Requests**, pulse o haga clic en **Todos los elementos** y en **Project Requests app**.
    

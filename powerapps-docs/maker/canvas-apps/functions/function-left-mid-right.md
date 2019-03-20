@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dea20bf885afa8e687329aff4babff00b4f3263b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
+ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864965"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "57800546"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Funciones Left, Mid y Right en PowerApps
 Extrae la parte izquierda, central o derecha de una cadena de texto.
@@ -39,13 +39,13 @@ Si la posición inicial es negativa o sobrepasa el final de la cadena, **Mid** d
 
 * *String*: requerido. La cadena hasta la cual se extrae el resultado o desde la que se extrae el resultado.
 * *StartingPosition*: requerido (solo **Mid**).  La posición inicial.  El primer carácter de la cadena ocupa la posición 1.
-* *NumberOfCharacters*: requerido.  El número de caracteres que se va a devolver.
+* *NumberOfCharacters* : requerido (**izquierda** y **derecha** solo).  El número de caracteres que se va a devolver.  Si se omite para los **Mid** función, la función devuelve la parte de la posición inicial hasta el final de la cadena.
 
 **Left**( *SingleColumnTable*, *NumberOfCharacters* )<br>**Mid**( *SingleColumnTable*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *SingleColumnTable*, *NumberOfCharacters* )
 
 * *SingleColumnTable*: requerido. Una tabla de una columna de cadenas de la cual se extraen los resultados.
 * *StartingPosition*: requerido (solo **Mid**).  La posición inicial.  El primer carácter de la cadena ocupa la posición 1.
-* *NumberOfCharacters*: requerido.  El número de caracteres que se va a devolver.
+* *NumberOfCharacters* : requerido (**izquierda** y **derecha** solo).  El número de caracteres que se va a devolver.  Si se omite para los **Mid** función, la función devuelve la parte de la posición inicial hasta el final de la cadena.
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="single-string"></a>Cadena única
@@ -55,6 +55,7 @@ En los ejemplos de esta sección se usa un control de entrada de texto como [ori
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |Extrae un máximo de cinco caracteres del principio de la cadena. |"E. E". |
 | **Mid( Author.Text, 7, 4 )** |Extrae un máximo de cuatro caracteres de la cadena, empezando por el séptimo carácter. |"Cumm" |
+| **Mid( Author.Text, 7 )** |Extrae todos los caracteres, empezando por el séptimo carácter de la cadena. |"García" |
 | **Right( Author.Text, 5 )** |Extrae un máximo de cinco caracteres del final de la cadena. |"mings" |
 
 ### <a name="single-column-table"></a>Tabla de una sola columna

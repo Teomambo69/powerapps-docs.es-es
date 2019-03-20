@@ -7,102 +7,101 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2017
-ms.author: sharik
+ms.date: 12/07/2018
+ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05d633b20038ad61215a8e898b1ec7afa044b574
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5439399a22b47fcf4195cf878208e0e0bd4e0764
+ms.sourcegitcommit: 6858f3786e960ca53a400e04734561400dcac5b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42840778"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "57802593"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Iniciar un flujo en una aplicación de lienzo
 
 Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
 
+> [!NOTE]
+> Cuando un usuario ejecuta un flujo desde dentro de una aplicación, que el usuario debe tener permiso para realizar las tareas que se especifican en el flujo. En caso contrario, se producirá un error en el flujo.
+
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
-* Tiene que saber [configurar un control](add-configure-controls.md).
+- [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
+- Tiene que saber [configurar un control](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Creación de un flujo
 
-1. Inicie sesión en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Flujos** en la barra de navegación izquierda.
+1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-2. En la página **Mis flujos**, seleccione **Crear desde cero**.
+1. En la barra de navegación izquierdo, seleccione **lógica de negocios**y, a continuación, seleccione **flujos**.
+
+1. En la esquina superior izquierda de la **Mis flujos** página, seleccione **New**y, a continuación, seleccione **crear desde cero**.
 
     ![Opción para crear un flujo sin usar una plantilla](./media/using-logic-flows/create-from-blank.png)
 
-    **PowerApps** se agrega como el desencadenador predeterminado.
+1. La parte inferior de la página que aparece, seleccione **buscar entre cientos de conexiones y los desencadenadores**.
 
-    ![PowerApps como desencadenador que inicia el flujo](./media/using-logic-flows/set-trigger.png)
+1. En el cuadro de búsqueda, escriba **PowerApps**y, a continuación, seleccione el **PowerApps** icono.
 
-3. Seleccione **Nuevo paso** y, después, seleccione **Agregar una acción**.
+    ![Crear un desencadenador de PowerApps](./media/using-logic-flows/set-trigger.png)
+    
+1. En la siguiente página, seleccione el icono de PowerApps de nuevo y, a continuación, seleccione **nuevo paso**.
 
-    ![Opción para agregar una sección](./media/using-logic-flows/add-action.png)
+1. En el cuadro que dice **buscar conectores y acciones**, especificar una acción para el flujo, como en este ejemplo:
 
-4. En el cuadro que dice **Buscar todos los servicios y acciones**, especifique una acción para el flujo, como en el ejemplo:
-
-   1. Escriba **SharePoint** en el cuadro y seleccione **SharePoint - Create item** (SharePoint: crear elemento) en la lista **Acciones**.
+   1. Tipo **SharePoint** en el cuadro y, a continuación, seleccione **crear elemento** en la lista bajo **acciones**.
 
        ![Opción para crear un elemento de SharePoint](./media/using-logic-flows/create-sharepoint-item.png)
 
-   2. Si se le solicita, especifique las credenciales para conectarse a SharePoint.
+   1. Si se le solicita, especifique las credenciales para conectarse a SharePoint.
 
-   3. En el cuadro **Dirección del sitio web**, escriba o pegue la dirección URL de un sitio de SharePoint Online que contenga una lista.
+   1. En el cuadro **Dirección del sitio web**, escriba o pegue la dirección URL de un sitio de SharePoint Online que contenga una lista.
 
        > [!NOTE]
-      > Especifique la dirección URL del sitio, sin incluir la lista.
+       > No agregue el nombre de la lista a la URL.
 
-   4. En el cuadro **Nombre de lista** , seleccione la lista que desea utilizar.
+   1. En el **nombre de la lista** , especifique la lista que desea usar.
+   
+       ![Especifique la lista](./media/using-logic-flows/list-fields.png)
 
-   5. Haga clic o pulse en el cuadro **Título** y seleccione **Agregar contenido dinámico**.
+   1. Seleccione el cuadro de entrada para un campo en la lista (como **título**), seleccione **más** en el panel de contenido dinámico y, a continuación, seleccione **preguntar en PowerApps**. 
 
        ![Agregar el parámetro Preguntar en PowerApps al campo Título](./media/using-logic-flows/ask-in-powerapps.png)
 
-   6. En la lista de parámetros, seleccione **Preguntar en PowerApps**.
+1. (opcional) Especifique uno o varios pasos adicionales, como enviar correo electrónico de aprobación a una dirección que especifique o crear una entrada relacionada en otro origen de datos.
 
-       ![Agregar parámetro](./media/using-logic-flows/add-parameter.png)
-
-5. (opcional) Especifique una o varias acciones adicionales, como el envío de correo electrónico de aprobación a una dirección que especifique o la creación de una entrada relacionada en otro origen de datos.
-
-6. Cerca de la parte superior de la pantalla, escriba o pegue el nombre del flujo y, después, seleccione **Crear flujo**.
-
-    ![Asignar un nombre y guardar el flujo](./media/using-logic-flows/name-flow.png)
+1. Cerca de la esquina superior izquierda, escriba o pegue el nombre del flujo y, a continuación, seleccione **guardar** cerca de la esquina superior derecha.
 
 ## <a name="add-a-flow-to-an-app"></a>Agregar un flujo a una aplicación
-1. En el menú **Archivo** de PowerApps, seleccione **Nuevo**.
+1. En la barra de navegación izquierdo, seleccione **crear**.
 
-2. En el icono **Aplicación vacía**, seleccione **Diseño de teléfono**.
+1. Mantenga el mouse sobre el **desde cero una aplicación de lienzo** icono y, a continuación, seleccione **hacer que esta aplicación**.
 
-3. Agregue un control **[Entrada de texto](controls/control-text-input.md)** y llámelo **RecordTitle**.
+1. Agregue un control **[Entrada de texto](controls/control-text-input.md)** y llámelo **RecordTitle**.
 
-4. Agregue un control **[Botón](controls/control-button.md)** y muévalo debajo de **RecordTitle**.
+1. Agregue un control **[Botón](controls/control-button.md)** y muévalo debajo de **RecordTitle**.
 
-5. Con el control **[Botón](controls/control-button.md)** seleccionado, seleccione **Flujos** en la pestaña **Acción**.
+1. Con el control **[Botón](controls/control-button.md)** seleccionado, seleccione **Flujos** en la pestaña **Acción**.
 
     ![Opción Flujos en la pestaña Acción](./media/using-logic-flows/action-tab.png)
 
-6. En el panel que aparece, seleccione el flujo que creó en el procedimiento anterior.
+1. En el panel que aparece, seleccione el flujo que creó en el procedimiento anterior.
 
     > [!NOTE]
    > Si el flujo que ha creado no está disponible, compruebe si PowerApps está establecido en el entorno en el que lo creó.
 
     ![Agregar un flujo desde el panel de personalización](./media/using-logic-flows/add-flow-from-pane.png)
 
-7. En la barra de fórmulas, escriba o pegue **RecordTitle.Text)** al final de la fórmula que se han agregado automáticamente.
+1. En la barra de fórmulas, escriba o pegue **RecordTitle.Text)** al final de la fórmula que se han agregado automáticamente.
 
     ![Propiedad AlSeleccionar que incluye el flujo](./media/using-logic-flows/onselect-with-flow.png)
 
 ## <a name="test-the-flow"></a>Probar la aplicación
-1. Abra Versión preliminar, para lo que debe presionar F5 (o seleccione la flecha que hay cerca de la esquina superior derecha).
+1. Haga doble clic en el **entrada de texto** controlar y escriba o pegue el texto en él.
 
-    ![Propiedad AlSeleccionar que incluye el flujo](./media/using-logic-flows/open-preview.png)
+1. Mientras mantiene presionada la tecla Alt, seleccione el **[botón](controls/control-button.md)** control.
 
-2. Escriba o pegue el texto en **RecordTitle** y haga clic en el control **[Botón](controls/control-button.md)**.
-
-    Se crea un elemento de SharePoint en la que lista especificó con el texto que especificó como título. Si la lista estaba abierta cuando se ejecutó el flujo, tendrá que actualizar la ventana del explorador para mostrar los cambios.
+    Se crea un elemento de SharePoint en la lista que ha especificado con el texto que especificó como título. Si la lista estaba abierta cuando se ejecutó el flujo, tendrá que actualizar la ventana del explorador para mostrar los cambios.

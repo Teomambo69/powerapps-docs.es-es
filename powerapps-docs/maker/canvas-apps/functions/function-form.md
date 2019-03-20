@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865817"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802110"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
 Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)**.
@@ -59,10 +59,10 @@ La función **NewForm** cambia el modo del control Formulario a **FormMode.New**
 La función **ResetForm** restablece el contenido de un formulario a sus valores iniciales, el contenido que había antes de que el usuario realizara cambios. Si el formulario está en modo **FormMode.New**, se restablecerá al modo **FormMode.Edit**. El comportamiento **[OnReset](../controls/control-form-detail.md)** del control Formulario también se ejecutará.  También puede restablecer controles individuales con la función **[Reset](function-reset.md)** pero únicamente desde dentro del formulario.
 
 ### <a name="viewform"></a>ViewForm
-La función **ViewForm** cambia el modo del control Formulario a **FormMode.View**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  Las funciones **SubmitForm** y **RestForm** no tienen ningún efecto en este modo.
+La función **ViewForm** cambia el modo del control Formulario a **FormMode.View**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  El **SubmitForm** y **ResetForm** funciones no tienen ningún efecto en este modo.
 
-### <a name="displaymode-poperty"></a>Propiedad DisplayMode
-El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina también el valor de la propiedad **DisplayMode** que pueden usar las tarjetas de datos y controles del control de formulario.  Normalmente, la propiedad **DisplayMode** de la tarjeta de datos se establecerá en **Parent.DisplayMode** (que hace referencia al formulario) al igual que lo hará la propiedad **DisplayMode** del control (que hace referencia a la tarjeta de datos): 
+### <a name="displaymode-property"></a>Propiedad DisplayMode
+El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina también el valor de la propiedad **DisplayMode** que pueden usar las tarjetas de datos y controles del control de formulario.  A menudo, datos de la tarjeta **DisplayMode** propiedad se establecerá en **Parent.DisplayMode** (que hacen referencia a la forma) igual que el control **DisplayMode** (referencia de propiedad la tarjeta de datos): 
 
 | Modo | DisplayMode | Descripción |
 | --- | --- | --- |

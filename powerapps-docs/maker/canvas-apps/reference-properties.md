@@ -1,36 +1,40 @@
 ---
 title: Búsqueda de una propiedad | Microsoft Docs
 description: Busque una propiedad por control, por categoría o por orden alfabético.
-author: gregli-msft
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
-ms.author: gregli
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863134"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073680"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
+
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.
 
 ## <a name="controls"></a>Controles
+
 **[Agregar imagen](controls/control-add-picture.md)**: cargue imágenes desde el dispositivo local, para cargarlas en un origen de datos.
 
 **[Datos adjuntos](controls/control-attachments.md)**: cargue y descargue archivos desde el dispositivo local a un origen de datos.
 
 **[Audio](controls/control-audio-video.md)**: reproduzca un clip de audio o la parte de audio de un clip de vídeo.
 
-**[Escáner de código de barras (experimental)](controls/control-barcodescanner.md)**: escanee un código de barras mediante un dispositivo que tiene una cámara.
+**[Escáner de código de barras (experimental)](controls/control-barcodescanner.md)**  : examina los códigos en un explorador web (heredado o en desuso).
+
+**[Escáner](controls/control-new-barcode-scanner.md)**  : analiza los códigos de barras, los códigos QR y códigos de la matriz de datos en un dispositivo Android o iOS.
 
 **[Botón](controls/control-button.md)**: interactúe con la aplicación haciendo clic en él o pulsándolo.
 
@@ -56,7 +60,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Formulario de edición](controls/control-form-detail.md)**: edite y cree registros en un origen de datos mediante un formulario.
 
-**[Formulario de entidad](entity-form-control.md)** (característica experimental): agregue formularios dinámicos en el que los usuarios puedan ver datos relacionales de Common Data Service, editarlos y navegar por ellos.
+**[Formulario de la entidad](entity-form-control.md)**  -característica Experimental: Permite agregar formularios dinámicos en el que los usuarios pueden ver, navegar y editar datos relacionales de Common Data Service.
 
 **[Exportar](controls/control-export-import.md)** : exporte datos para usarlos en cualquier otro lugar de PowerApps.
 
@@ -88,7 +92,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Clasificación](controls/control-rating.md)**: indique un valor entre 1 y un número especificado.
 
-**[Editor de texto enriquecido (experimental)](controls/control-richtexteditor.md)**: permite a los usuarios de la aplicación aplicar formato de texto enriquecido.
+**[Editor de texto enriquecido](controls/control-richtexteditor.md)**  : permite que los usuarios de aplicación de formato de texto enriquecido.
 
 **[Pantalla](controls/control-screen.md)**: muestre y actualice los datos sobre una tarea específica.
 
@@ -106,7 +110,10 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Vídeo](controls/control-audio-video.md)**: reproduzca un clip de vídeo de un archivo local, un origen de datos o YouTube.
 
+**[Escáner de código de barras de Web (experimental)](controls/control-barcodescanner.md)**  : el escáner heredado, que está obsoleta, pero podría ser útil para la exploración de códigos en un explorador web.
+
 ## <a name="common-properties-by-category"></a>Propiedades comunes por categoría
+
 **[Color y borde](controls/properties-color-border.md)**: configure el color y borde de un control que puede cambiar cuando un usuario interactúa con él.
 
 **[Núcleo](controls/properties-core.md)**: configure si el usuario puede ver un control e interactuar con él.
@@ -118,7 +125,9 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Texto](controls/properties-text.md)**: configure la apariencia del texto en los controles, como las características de la fuente, la alineación y el alto de línea.  
 
 ## <a name="all-properties"></a>Todas las propiedades
+
 ### <a name="a"></a>A
+
 **[ActualZoom](controls/control-pdf-viewer.md)**: el zoom real del control, que puede diferir del zoom solicitado con la propiedad **Zoom**.  Se aplica al control **[Visor de PDF](controls/control-pdf-viewer.md)**.
 
 **[Align](controls/properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.  Se aplica a muchos controles.
@@ -134,6 +143,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **IniciarAutomáticamente**: indica si un control de audio o vídeo empieza a reproducir automáticamente un clip cuando el usuario navega a la pantalla que contiene ese control.  Se aplica a los controles **[Audio](controls/control-audio-video.md)**, **[Temporizador](controls/control-timer.md)** y **[Vídeo](controls/control-audio-video.md)**.
 
 ### <a name="b"></a>B
+
 **[ImagenDeFondo](controls/properties-visual.md)**: nombre de un archivo de imagen que aparece en el fondo de una pantalla.  Se aplica al control **[Pantalla](controls/control-screen.md)**.
 
 **[BorderColor](controls/properties-color-border.md)**: el color de un borde del control.  Se aplica a muchos controles.
@@ -145,6 +155,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Brillo](controls/control-camera.md)**: la claridad que el usuario es probable que perciba en una imagen.  Se aplica al control **[Cámara](controls/control-camera.md)**.
 
 ### <a name="c"></a>C
+
 **[CalculateOriginalDimensions](controls/control-image.md)**: habilita las propiedades **[AltoOriginal](controls/control-image.md)** y **[AnchoOriginal](controls/control-image.md)**.  Se aplica al control **[Imagen](controls/control-image.md)**.
 
 **[Cámara](controls/control-camera.md)**: en los dispositivos que tienen más de una cámara, el identificador numérico de la cámara que usa la aplicación.  Se aplica al control **[Cámara](controls/control-camera.md)**.
@@ -172,6 +183,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[CurrentPage](controls/control-pdf-viewer.md)**: el número de la página de un archivo PDF que se muestra realmente.  Se aplica al control **[Visor de PDF](controls/control-pdf-viewer.md)**.
 
 ### <a name="d"></a>D
+
 **[Data](controls/control-export-import.md)**: el nombre de una colección que desea exportar a un archivo local.  Se aplica al control **[Exportar](controls/control-export-import.md)**.
 
 **[DataField](controls/control-card.md)**: el nombre del campo de un registro que esta tarjeta muestra y edita.  Se aplica al control **[Tarjeta](controls/control-card.md)**.
@@ -203,6 +215,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Duración](controls/control-timer.md)**: tiempo de ejecución del temporizador.  Se aplica al control **[Temporizador](controls/control-timer.md)**.
 
 ### <a name="e"></a>E
+
 **[EndYear](controls/control-date-picker.md)**: el último año en el que el usuario puede establecer el valor de un control selector de fecha.  Se aplica al control **[Selector de fecha](controls/control-date-picker.md)**.
 
 **Error**: el significado de esta propiedad depende del control:
@@ -216,6 +229,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Seccionar](controls/control-pie-chart.md)**: las distancia entre las cuñas de un gráfico circular.  Se aplica al control **[Gráfico circular](controls/control-pie-chart.md)**.
 
 ### <a name="f"></a>F
+
 **[Fill](controls/properties-color-border.md)**: el color de fondo de un control.  Se aplica a muchos controles.
 
 **[FindNext](controls/control-pdf-viewer.md)**: busca la siguiente instancia de **FindText** en el documento.  Se aplica al control **[Visor de PDF](controls/control-pdf-viewer.md)**.
@@ -226,12 +240,14 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Font](controls/properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.  Se aplica a muchos controles.
 
-**[FontWeight](controls/properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.  Se aplica a muchos controles.
+**[FontWeight](controls/properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.  Se aplica a muchos controles.
 
 ### <a name="g"></a>G
+
 **[GridStyle](controls/control-column-line-chart.md)**: indica si un gráfico de columnas o de líneas muestra su eje x, su eje, ambos o ninguno.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 ### <a name="h"></a>H
+
 **[RellenoDeControladorActivo](controls/control-slider.md)**: el color del controlador de un control deslizante cuando el usuario cambia el valor.  Se aplica al control **[Control deslizante](controls/control-slider.md)**.
 
 **[RellenoDeControlador](controls/control-slider.md)**: el color del controlador (el elemento que cambia de posición) en un control de alternancia o control deslizante.  Se aplica al control **[Control deslizante](controls/control-slider.md)**.
@@ -251,6 +267,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Texto HTML](controls/control-html-text.md)**: texto que aparece en un control de texto HTML y que puede contener etiquetas HTML.  Se aplica al control **[Texto HTML](controls/control-html-text.md)**.
 
 ### <a name="i"></a>I
+
 **[Imagen](controls/properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.  Se aplica a los controles **[Audio](controls/control-audio-video.md)**, **[Image](controls/control-image.md)**, **[Microphone](controls/control-microphone.md)** y **[Video](controls/control-audio-video.md)**.
 
 **[PosiciónDeLaImagen](controls/properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.  Se aplica a muchos controles.
@@ -274,6 +291,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[ItemsGap](controls/control-column-line-chart.md)**: la distancia entre las columnas de un gráfico de columnas.  Se aplica al control **[Gráfico de columnas](controls/control-column-line-chart.md)**.
 
 ### <a name="l"></a>Grande
+
 **[LabelPosition](controls/control-pie-chart.md)**: ubicación de las etiquetas en un gráfico circular con respecto a sus cuñas.  Se aplica al control **[Gráfico circular](controls/control-pie-chart.md)**.
 
 **[LastSubmit](controls/control-form-detail.md)**: el último registro enviado correctamente, incluidos todos los campos que ha generado el servidor.  Se aplica al control **[Formulario de edición](controls/control-form-detail.md)**.
@@ -285,6 +303,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Bucle](controls/control-audio-video.md)**: indica si un clip de audio o de vídeo empieza de nuevo automáticamente en cuanto termina de reproducirse.  Se aplica a los controles **[Audio](controls/control-audio-video.md)** y **[Vídeo](controls/control-audio-video.md)**.
 
 ### <a name="m"></a>Mediana
+
 **[Marcadores](controls/control-column-line-chart.md)**: indica si un gráfico de columnas o de líneas muestra el valor de cada punto de datos.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 **[MarkerSuffix](controls/control-column-line-chart.md)**: texto que aparece después de cada valor en un gráfico de columnas en el que la propiedad **[Marcadores](controls/control-column-line-chart.md)** está establecida en **true**.  Se aplica al control **[Gráfico de columnas](controls/control-column-line-chart.md)**.
@@ -308,11 +327,13 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 * Control **[Entrada de texto](controls/control-text-input.md)**: el control se encuentra en modo **LíneaÚnica**, **Multilínea** o **Contraseña**.
 
 ### <a name="n"></a>N
+
 **[PasoDeNavegación](controls/control-gallery.md)**: lo lejos que se desplaza una galería si su propiedad **[MostrarNavegación](controls/control-gallery.md)** está establecida en **true** y el usuario selecciona una flecha de navegación de cualquier extremo de esa galería.  Se aplica al control **[Galería](controls/control-gallery.md)**.
 
 **[NúmeroDeSeries](controls/control-column-line-chart.md)**: el número de columnas de datos reflejadas en un gráfico de columnas o de líneas.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 ### <a name="o"></a>O
+
 **[AlCambiar](controls/properties-core.md)**: el comportamiento de una aplicación cuando el usuario cambia el valor de un control (por ejemplo, al ajustar un control deslizante).  Se aplica a muchos controles.
 
 **AlActivar**: el comportamiento de una aplicación cuando el valor de una casilla o de un control Alternar cambia a **true**.  Se aplica a los controles **[Casilla](controls/control-check-box.md)** y **[Alternancia](controls/control-toggle.md)**.
@@ -354,6 +375,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Desbordamiento](controls/control-text-box.md)**: indica si aparece una barra de desplazamiento en una etiqueta si su propiedad **[Wrap](controls/control-text-box.md)** (Ajuste) está establecida en **verdadero** y el valor de la propiedad **[Texto](controls/properties-core.md)** del control contiene más caracteres de los que el control permite mostrar a la vez.  Se aplica al control **[Etiqueta](controls/control-text-box.md)**.
 
 ### <a name="p"></a>P
+
 **[Padding](controls/properties-size-location.md)**: la distancia entre el texto de un botón Exportar o Importar y los bordes de ese botón.  Se aplica a los controles **[Add picture](controls/control-add-picture.md)**, **[Export](controls/control-export-import.md)** y **[Import](controls/control-export-import.md)**.
 
 **[RellenoInferior](controls/properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.  Se aplica a muchos controles.
@@ -381,6 +403,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[PressedFill](controls/properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.  Se aplica a muchos controles.
 
 ### <a name="r"></a>R
+
 **[RadioBackgroundFill](controls/control-radio.md)**: el color de fondo de los círculos en un control de botón de radio.  Se aplica al control **[Radio](controls/control-radio.md)**.
 
 **[RadioBorderColor](controls/control-radio.md)**: el color del círculo de cada opción de un control de botón de radio.  Se aplica al control **[Radio](controls/control-radio.md)**.
@@ -412,6 +435,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Reset](controls/properties-core.md)**: indica si un control vuelve a su valor predeterminado.  Se aplica a muchos controles.  Consulte también la función **[Reset](functions/function-reset.md)**.
 
 ### <a name="s"></a>S
+
 **Seleccionados**: el elemento seleccionado.  Se aplica a los controles **[Desplegable](controls/control-drop-down.md)** y **[Galería](controls/control-gallery.md)**.
 
 **[SelectedDate](controls/control-date-picker.md)**: la fecha seleccionada actualmente en un control de fecha.  Se aplica al control **[Selector de fecha](controls/control-date-picker.md)**.
@@ -455,6 +479,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Strikethrough](controls/properties-text.md)**: indica si aparece una línea sobre el texto de un control.  Se aplica a muchos controles.
 
 ### <a name="t"></a>T
+
 **[RellenoDePlantilla](controls/control-gallery.md)**: el color de fondo de una galería.  Se aplica al control **[Galería](controls/control-gallery.md)**.
 
 **[EspaciadoInternoDePlantilla](controls/control-gallery.md)**: la distancia entre los elementos de una galería.  Se aplica al control **[Galería](controls/control-gallery.md)**.
@@ -472,6 +497,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Transparencia](controls/control-image.md)**: el grado de visibilidad de los controles de detrás de una imagen.  Se aplica al control **[Imagen](controls/control-image.md)**.
 
 ### <a name="u"></a>U
+
 **[Underline](controls/properties-text.md)**: indica si aparece una línea debajo del texto de un control.  Se aplica a muchos controles.
 
 **[Sin guardar](controls/control-form-detail.md)**: true si el control **[Formulario de edición](controls/control-form-detail.md)** contiene cambios de usuario que no se guardaron.  Se aplica al control **[Formulario de edición](controls/control-form-detail.md)**.
@@ -481,6 +507,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Actualizaciones](controls/control-form-detail.md)**: los valores que se escriben en el origen de datos de un registro cargado en un control de formulario.  Se aplica al control **[Formulario de edición](controls/control-form-detail.md)**.
 
 ### <a name="v"></a>V
+
 **Válido**: si un control **[Tarjeta](controls/control-card.md)** o **[Formulario de edición](controls/control-form-detail.md)** contiene entradas válidas listas para enviarse al origen de datos.  Se aplica a los controles **[Tarjeta](controls/control-card.md)** y **[Formulario de edición](controls/control-form-detail.md)**.
 
 **[Valor](controls/properties-core.md)**: el valor de un control de entrada.  Se aplica a los controles **[Casilla](controls/control-check-box.md)**, **[Radio](controls/control-radio.md)**, **[Control deslizante](controls/control-slider.md)** y **[Alternancia](controls/control-toggle.md)**.
@@ -494,6 +521,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Visible](controls/properties-core.md)**: indica si un control aparece o está oculto.  Se aplica a muchos controles.
 
 ### <a name="w"></a>W
+
 **[Width](controls/properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.  Se aplica a muchos controles.
 
 **[WidthFit](controls/properties-size-location.md)** (AjusteDeAncho): indica si un control crece automáticamente en la horizontal para llenar el espacio vacío de un control de contenedor, como un control **[Formulario de edición](controls/control-form-detail.md)**. Si varias tarjetas tienen esta propiedad establecida en **true**, el espacio se divide entre ellas. Para más información, consulte [Understand data form layout in Microsoft PowerApps](working-with-form-layout.md) (Introducción al diseño de formularios de datos en Microsoft PowerApps).
@@ -503,11 +531,13 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[WrapCount](controls/control-gallery.md)**: el número de registros que aparecen en cada elemento de una galería.  Se aplica al control **[Galería](controls/control-gallery.md)**.
 
 ### <a name="x"></a>X
+
 **[X](controls/properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario). Se aplica a muchos controles. Para un control **[Tarjeta](controls/control-card.md)** en un contenedor con varias columnas, esta propiedad determina la columna en la que aparece la tarjeta.
 
 **[XLabelAngle](controls/control-column-line-chart.md)**: el ángulo de las etiquetas del eje x de un gráfico de columnas o de líneas.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 ### <a name="y"></a>Y
+
 **[Y](controls/properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario). Se aplica a muchos controles. Para un control **[Tarjeta](controls/control-card.md)** en un contenedor con varias filas, esta propiedad determina la fila en la que aparece la tarjeta.
 
 **[EjeYMáximo](controls/control-column-line-chart.md)**: el valor máximo del eje y de un gráfico de líneas.  Se aplica al control **[Gráfico de líneas](controls/control-column-line-chart.md)**.
@@ -517,4 +547,5 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[YLabelAngle](controls/control-column-line-chart.md)**: el ángulo de las etiquetas del eje y de un gráfico de líneas o de columnas.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)**.
 
 ### <a name="z"></a>Z
+
 **Zoom**: el porcentaje en que se amplía una imagen de una cámara o la vista de un archivo en un visor de PDF.  Se aplica a los controles **[Cámara](controls/control-camera.md)** y **[Visor de PDF](controls/control-pdf-viewer.md)**.

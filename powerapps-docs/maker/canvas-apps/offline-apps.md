@@ -1,24 +1,24 @@
 ---
 title: Desarrollar aplicaciones de lienzo que puedan ejecutarse sin conexión | Microsoft Docs
 description: Desarrolle aplicaciones de lienzo que puedan ejecutarse sin conexión para que los usuarios sean productivos, independientemente de la conexión.
-author: mgblythe
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/09/2017
-ms.author: mblythe
+ms.date: 01/31/2019
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
-ms.translationtype: HT
+ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991778"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800385"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Desarrollo de aplicaciones de lienzo que puedan ejecutarse sin conexión
 
@@ -29,10 +29,15 @@ Uno de los escenarios más comunes a los que se enfrenta como desarrollador de a
 * Determinar si una aplicación está sin conexión, en línea o en una conexión de uso medido mediante el objeto de señal [conexión](../canvas-apps/functions/signals.md#connection).
 * Usar [colecciones](../canvas-apps/create-update-collection.md) y aprovechar funciones como [LoadData y SaveData](../canvas-apps/functions/function-savedata-loaddata.md) para el almacenamiento de datos básico cuando esté sin conexión.
 
-> [!NOTE]
-> Esta área de características está aún en desarrollo y no está optimizada actualmente para todos los escenarios. Las funciones SaveData() en un dispositivo local y LoadData() desde ese dispositivo funcionan mejor en su implementación actual en cantidades de datos relativamente pequeñas (por ejemplo, docenas de registros de texto de una tabla) que generalmente no superan los 2 MB. Esto resulta útil con algunos escenarios básicos "sin conexión", así como para aumentar el rendimiento de inicio de las aplicaciones de lienzo al almacenar localmente los datos en caché. Pero utilizar esta característica para guardar grandes cantidades de datos (por ejemplo, guardar miles de filas de una tabla o almacenar en caché imágenes o vídeos grandes) puede provocar errores o un comportamiento inesperado con la implementación actual y debe evitarse. Además, las funciones no resuelven automáticamente los conflictos de combinación cuando un dispositivo vuelve al modo de conectividad desde el modo sin conexión: la configuración sobre qué datos se guardan y cómo se controla la reconexión la decide el creador al escribir expresiones.
->
-> Estamos trabajando para ampliar las funcionalidades de las aplicaciones sin conexión, para aumentar los límites de tamaño y la estabilidad y (en el futuro) para controlar automáticamente las decisiones sobre qué se debe guardar y cómo tratar los conflictos. Permanezca atento aquí y en el [blog de PowerApps](https://powerapps.microsoft.com/blog/) para ver las actualizaciones cuando están disponibles.
+## <a name="limitations"></a>Limitaciones
+
+**LoadData** y **SaveData** se combinan para formar un mecanismo sencillo para almacenar pequeñas cantidades de datos en un dispositivo local. Mediante el uso de estas funciones, puede agregar capacidades sin conexión sencillas a la aplicación.  
+
+Estas funciones están limitadas por la cantidad de memoria de la aplicación disponible, ya que operan en una colección en memoria. Memoria disponible puede variar en función del dispositivo, el sistema operativo, la memoria que usa PowerApps Mobile y la complejidad de la aplicación en cuanto a las pantallas y controles. Si almacena más de unos cuantos megabytes de datos, pruebe la aplicación con los escenarios esperados en los dispositivos en el que se espera que se ejecute. Por lo general debería tener entre 30 y 70 MB de memoria disponible.  
+
+Las funciones también no resuelven automáticamente los conflictos de combinación cuando un dispositivo se vuelve a la conectividad de sin conexión: configuración en los datos que se guardan y cómo controlar la reconexión es hasta el fabricante al escribir expresiones.
+
+Estamos trabajando para ampliar las funcionalidades para escenarios sin conexión. Permanezca atento aquí y en el [blog de PowerApps](https://powerapps.microsoft.com/blog/) para ver las actualizaciones cuando están disponibles.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Cómo crear aplicaciones que puedan ejecutarse sin conexión
 
@@ -74,27 +79,18 @@ De forma general, la aplicación hace lo siguiente:
 
     ![Agregar una conexión de Twitter](./media/offline-apps/twitter-connection.png)
 
-### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Paso 3: Cargar los tweets en la colección LocalTweets en el inicio de la aplicación
+### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Paso 3: Cargar tweets en la colección LocalTweets en el inicio de la aplicación
 Seleccione la propiedad **AlEstarVisible** de **Pantalla1** en la aplicación y copie en ella la siguiente fórmula:
 
-```
-If(Connection.Connected,
-
-    ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100}));
-
-    UpdateContext({statusText: "Online data"})
-
-    ,
-
+```powerapps-dot
+If( Connection.Connected,
+    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+        UpdateContext( {statusText: "Online data"} ),
     LoadData(LocalTweets, "Tweets", true);
-
-    UpdateContext({statusText: "Local data"})
-
+        UpdateContext( {statusText: "Local data"} )
 );
-
-LoadData(LocalTweetsToPost, "LocalTweets", true);
-
-SaveData(LocalTweets, "Tweets")
+LoadData( LocalTweetsToPost, "LocalTweets", true );
+SaveData( LocalTweets, "Tweets" )
 ```
 
 ![Fórmula para cargar tweets](./media/offline-apps/load-tweets.png)
@@ -104,9 +100,9 @@ Esta fórmula comprueba si el dispositivo está en línea:
 * Si el dispositivo está en línea, se cargan en la colección **LocalTweets** hasta 100 tweets con el término de búsqueda "PowerApps".
 * Si el dispositivo está sin conexión, se carga la memoria caché local desde un archivo denominado "Tweets", si está disponible.
 
-### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Paso 4: Agregar una galería y enlazarla a la colección LocalTweets
+### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Paso 4: Agregue una galería y enlazarla a la colección LocalTweets
 
-1. Inserte una nueva galería de alto flexible: **Insertar** > **Galería** > **Galería de altura flexible en blanco**.
+1. Inserta una nueva galería de altura flexible: **Insertar** > **galería** > **altura flexible en blanco**.
 
 2. Establezca la propiedad **Items** en **LocalTweets**.
 
@@ -120,9 +116,7 @@ Esta fórmula comprueba si el dispositivo está en línea:
 ### <a name="step-5-add-a-connection-status-label"></a>Paso 5: Agregar una etiqueta de estado de conexión
 Inserte un nuevo control **Label** y establezca su propiedad **Texto** en la fórmula siguiente:
 
-```
-If (Connection.Connected, "Connected", "Offline")
-```
+```If( Connection.Connected, "Connected", "Offline" )```
 
 Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto de la etiqueta es "Conectado", en caso contrario es "Sin conexión".
 
@@ -132,24 +126,18 @@ Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto
 
 2. Establezca la propiedad **Reset** de la entrada de texto a **resetNewTweet**.
 
-### <a name="step-7-add-a-button-to-post-the-tweet"></a>Paso 7: Agregar un botón para enviar el tweet
+### <a name="step-7-add-a-button-to-post-the-tweet"></a>Paso 7: Agregue un botón para enviar el tweet
 1. Agregue un control **Botón** y establezca la propiedad **Texto** en "Tweet".
 2. Establezca la propiedad **AlSeleccionar** en la fórmula siguiente:
 
-    ```
-    If (Connection.Connected,
-
-        Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
     );
-
-    UpdateContext({resetNewTweet: true});
-
-    UpdateContext({resetNewTweet: false})
+    UpdateContext( {resetNewTweet: true} );
+    UpdateContext( {resetNewTweet: false} )
     ```  
 
 Esta fórmula comprueba si el dispositivo está en línea:
@@ -168,18 +156,13 @@ Agregue un nuevo control **Temporizador**:
 
 * Establezca **OnTimerEnd** en la fórmula siguiente:
 
-    ```
-    If(Connection.Connected,
-
-        ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-
-        Clear(LocalTweetsToPost);
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-
-        UpdateContext({statusText: "Online data"})
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost);
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+        UpdateContext( {statusText: "Online data"} )
     )
     ```
 

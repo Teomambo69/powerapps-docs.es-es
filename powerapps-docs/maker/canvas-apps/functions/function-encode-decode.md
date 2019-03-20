@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30d3378f46e587e45314c30be1fce3c36b2bb120
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
+ms.sourcegitcommit: 1b8578e38a09220ac66c5123644714139fc3c9e5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833006"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800454"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Funciones EncodeUrl y PlainText en PowerApps
 Codifica y descodifica las cadenas.
 
 ## <a name="description"></a>Descripción
-La función **EncodeUrl** codifica una cadena de dirección URL, para lo que reemplaza los caracteres no alfanuméricos por % y un número hexadecimal.  
+El **EncodeUrl** función codifica una cadena de dirección URL, reemplazando algunos caracteres no alfanuméricos por % y un número hexadecimal.  
 
-La función **PlainText** quita las etiquetas HTML y XML, y convierte etiquetas como las siguientes en un símbolo adecuado:
+El **PlainText** función quita las etiquetas HTML y XML, convierte determinadas etiquetas como las siguientes en un símbolo adecuado:
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-El valor devuelto de estas funciones es la cadena codificada o descodificada.   
+El valor devuelto de estas funciones es la cadena codificada o descodificada. Esta función no quita todas las etiquetas HTML y XML. 
 
 ## <a name="syntax"></a>Sintaxis
 **EncodeUrl**( *String* )

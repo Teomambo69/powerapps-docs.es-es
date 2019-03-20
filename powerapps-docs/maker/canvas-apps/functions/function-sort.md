@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830780"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802340"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funciones Sort y SortByColumns en PowerApps
 Ordena una [tabla](../working-with-tables.md).
@@ -30,7 +30,7 @@ La fórmula se evalúa para cada [registro](../working-with-tables.md#records) d
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Para ordenar primero por una columna y luego por otra, debe insertar una fórmula **Sort** dentro de otra. Por ejemplo, puede usar esta fórmula para ordenar una tabla **Contacts** primero por una columna **LastName** y, luego, por una columna **FirstName**: **Sort( Sort( Contacts, LastName ), FirstName )**
+Para ordenar primero por una columna y luego por otra, debe insertar una fórmula **Sort** dentro de otra. Por ejemplo, puede usar esta fórmula para ordenar una **contactos** primero la tabla por una **LastName** columna y, a continuación, por un **FirstName** columna:  **Sort (Sort (Contacts, LastName), FirstName)**
 
 La función **SortByColumns** también se puede usar para ordenar una tabla según una o más columnas.
 
@@ -86,7 +86,7 @@ En los ejemplos siguientes, usaremos el [origen de datos](../working-with-data-s
 ### <a name="step-by-step"></a>Paso a paso
 Para ejecutar estos ejemplos, cree el origen de datos **IceCream** como una [colección](../working-with-data-sources.md#collections):
 
-1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**ClearCollect( IceCream, { Flavor: "Chocolate", Quantity: 100, OnOrder: 150 }, { Flavor:  "Vanilla", Quantity: 200, OnOrder: 20 }, { Flavor: "Strawberry", Quantity: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", Quantity: 60, OnOrder: 100 }, { Flavor: "Pistachio", Quantity: 200, OnOrder: 10 } )**
+1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**ClearCollect( IceCream, { Flavor: "Chocolate", cantidad: 100, OnOrder: 150 }, { Flavor:  "Vanilla", cantidad: 200, OnOrder: 20 }, { Flavor: "Fresa", cantidad: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", cantidad: 60, OnOrder: 100 }, { Flavor: "Pistachio", cantidad: 200, OnOrder: 10 } )**
 2. Obtenga una vista previa de la aplicación, seleccione el botón y, luego, presione Esc para volver al área de trabajo predeterminada.
 3. Seleccione **Colecciones** en el menú **Archivo** para mostrar la colección que acaba de crear y, luego, presione Esc para volver al área de trabajo predeterminada.
 
@@ -103,7 +103,7 @@ Para ejecutar estos ejemplos, cree el origen de datos **IceCream** como una [col
 1. Agregue otro botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     La fórmula anterior crea una tercera colección, denominada **SortByQuantity**, que contiene los mismos datos que **IceCream**. Sin embargo, la colección nueva contiene los datos ordenados numéricamente según la columna **Cantidad** en orden ascendente y, luego, según la columna **Sabor** en orden descendente.
+     La fórmula anterior crea una tercera colección, denominada **SortByQuantity**, que contiene los mismos datos que **IceCream**. Sin embargo, la nueva colección contiene los datos ordenados numéricamente según la **cantidad** columna en orden ascendente y después por el **Flavor** columna en orden descendente.
 2. Presione F5, seleccione el botón nuevo y, luego, presione Esc.
 3. Seleccione **Colecciones** en el menú **Archivo** para mostrar las tres colecciones y, luego, presione Esc para volver al área de trabajo predeterminada.
 4. Repita los últimos tres pasos, pero cambie el nombre de la colección que desea crear y reemplace la fórmula **SortByColumns** por una fórmula distinta de la tabla de ejemplos que apareció anteriormente en esta sección que usa **SortByColumns**.

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862585"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892285"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>Integración de compatibilidad global en aplicaciones de lienzo
 PowerApps es un producto global. Puede compilar y usar aplicaciones de lienzo en muchas regiones e idiomas diferentes.
 
-Tanto al compilar como al ejecutar aplicaciones, el texto que PowerApps muestra se ha traducido a diversos idiomas.  Verá los elementos de menú, cuadros de diálogo, pestañas de la cinta y otros textos en su idioma nativo.  La escritura y presentación de fechas y números también se ha adaptado a su idioma y región concretos.  Por ejemplo, algunas regiones del mundo usan "."como un separador decimal mientras que otros usan",".  
+Tanto al compilar como al ejecutar aplicaciones, el texto que PowerApps muestra se ha traducido a diversos idiomas.  Verá los elementos de menú, cuadros de diálogo, pestañas de la cinta y otros textos en su idioma nativo.  La escritura y presentación de fechas y números también se ha adaptado a su idioma y región concretos.  Por ejemplo, algunas regiones del mundo usan un **.** (punto o punto) como separador decimal mientras que otros usan un **,** (coma).  
 
 Las aplicaciones que cree también pueden ser globales.  Use **[Idioma](functions/function-language.md)**, **[Texto](functions/function-text.md)**, **[Valor](functions/function-value.md)**, **[FechaNumero](functions/function-datevalue-timevalue.md)** y otras funciones para adaptar lo que se muestra y se utiliza como entrada en diferentes idiomas.   
 
@@ -38,11 +38,11 @@ El entorno de creación se adapta a la configuración de idioma del autor.  La a
 ### <a name="names-in-formulas"></a>Nombres en las fórmulas
 La mayoría de los elementos de una fórmula están siempre en inglés:
 
-* Nombres de función: **If**, **Navigate**, **Collect**, ...
-* Nombres de propiedad de los controles: **Screen.Fill**, **Button.OnSelect**, **Textbox.Font**, ...
+* Nombres de función: **Si**, **vaya**, **recopilar**,...
+* Nombres de propiedad de control: **Screen.Fill**, **Button.OnSelect**, **Textbox.Font**,...
 * Nombres de enumeración: **Color.Aqua**, **DataSourceInfo.MaxValue**, **FontWeight.Bold**...
-* Registros de señal: **Compass.Heading**, **Location. Latitude**, **App.ActiveScreen**, ...
-* Operadores: **Parent**, **in**, **exactIn**, ...
+* Registros de señal: **Compass.Heading**, **ubicación. Latitude**, **App.ActiveScreen**, ...
+* Operadores: **Elemento primario**, **en**, **exactIn**,...
 
 A medida que se localiza la experiencia de creación, los controles y otros nombres de objetos se mostrarán en el idioma nativo del autor.  En español, algunos de los nombres de los controles aparecen como:
 
@@ -67,7 +67,7 @@ Algunos [separadores y operadores](functions/operators.md) cambiarán según el 
 
 | Separador decimal del idioma del autor | Separador decimal de PowerApps | Separador de lista de PowerApps | Operador de encadenamiento de PowerApps |
 | --- | --- | --- | --- |
-| **.** (punto) |**.** (punto) |**,** (coma) |**;**  (punto y coma) |
+| **.** (punto o punto) |**.** (punto o punto) |**,** (coma) |**;**  (punto y coma) |
 | **,** (coma) |**,** (coma) |**;**  (punto y coma) |**;;**  (doble punto y coma) |
 
 El cambio en el separador de lista de PowerApps es coherente con el separador de lista de Excel.  Esto afectará a lo siguiente:
@@ -76,15 +76,15 @@ El cambio en el separador de lista de PowerApps es coherente con el separador de
 * Campos de un [registro](working-with-tables.md#elements-of-a-table).
 * Registros de una [tabla de valores](working-with-tables.md#inline-syntax).
 
-Por ejemplo, considere la siguiente fórmula en "en-US":
+Por ejemplo, considere la siguiente fórmula expresada en un idioma y región que usa el punto como separador decimal, como Japón o en el Reino Unido:
 
-**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+![Fórmula de PowerApps si el valor de punto de slider1 mayor comas punto 12 59 paréntesis de apertura notificar abrir paréntesis "Valid"! Navigate puntos y comas "NextScreen" nUno paréntesis de cierre de paréntesis de apertura de paréntesis de cierre correcto de comas comas notificar abrir paréntesis "No válida, inténtelo de nuevo" error de comas Cerrar paréntesis de cierre de paréntesis](media/global-apps/operators-dot.png)
 
-En un idioma que usa "," como separador decimal, esta descripción aparecerá en la experiencia de creación como:
+Ahora puede ver esta misma fórmula en un idioma y región donde se usa una coma para el separador decimal, como Francia o España:
 
-**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+![Fórmula de PowerApps si el valor de punto de slider1 mayor que 12 comas 59 puntos y coma de paréntesis de apertura notificar abrir paréntesis "Valid"! doble punto y coma Navigate abrir paréntesis "NextScreen" coma nUno paréntesis de cierre de paréntesis de cierre correcto de punto y coma coma notificar abrir paréntesis "No válida, inténtelo de nuevo" cerrar el error de punto y coma paréntesis de cierre de paréntesis](media/global-apps/operators-comma.png)
 
-Tenga en cuenta que el operador de selección de propiedad **.** en **Slider1.Value** siempre es el mismo, independientemente de cuál sea el separador decimal.
+El resaltado muestra los operadores que cambian entre las dos versiones.  Tenga en cuenta que el operador de selección de propiedad **.** (punto o punto) en **Slider1.Value** es siempre el mismo, independientemente de cuál sea el separador decimal.
 
 La fórmula no cambia internamente; lo que cambia es cómo se muestra y cómo la edita el autor.  Dos autores diferentes que usen dos idiomas distintos pueden ver y editar la misma fórmula, y cada uno verá los separadores y operadores correspondientes a su idioma.
 
@@ -125,17 +125,17 @@ Para más información, consulte la documentación de la función **[Text](funct
 ### <a name="reading-numbers-dates-and-times"></a>Lectura de números, fechas y horas
 Hay cuatro funciones para leer los números, las fechas y las horas proporcionados por el usuario:
 
-* **[Valor](functions/function-value.md)**: convierte un número incluido en una cadena de texto en un valor numérico.
-* **[FechaNumero](functions/function-datevalue-timevalue.md)**: convierte un valor de fecha incluido en una cadena de texto en un valor de fecha y hora.  Se omiten las horas especificadas en la cadena de texto.
-* **[HoraNumero](functions/function-datevalue-timevalue.md)**: convierte un valor de hora incluido en una cadena de texto en un valor de fecha y hora.  Se omiten las fechas especificadas en la cadena de texto.
-* **[FechaHoraNumero](functions/function-datevalue-timevalue.md)**: convierte un valor de fecha y hora incluido en una cadena de texto en un valor de fecha y hora.  
+* **[Valor](functions/function-value.md)**: Convierte a un número en una cadena de texto en un valor numérico.
+* **[DateValue](functions/function-datevalue-timevalue.md)**: Convierte un valor de fecha en una cadena de texto en un valor de fecha y hora.  Se omiten las horas especificadas en la cadena de texto.
+* **[TimeValue](functions/function-datevalue-timevalue.md)**: Convierte un valor de tiempo en una cadena de texto en un valor de fecha y hora.  Se omiten las fechas especificadas en la cadena de texto.
+* **[DateTimeValue](functions/function-datevalue-timevalue.md)**: Convierte un valor de fecha y hora en una cadena de texto en un valor de fecha y hora.  
 
 Si usó Excel, todas estas funciones se combinan en la función única **Value**.  Se desglosan aquí porque PowerApps tiene tipos distintos de valores de fecha, hora y números.
 
 Todas estas funciones tienen los mismos argumentos:
 
-* *String, requerido*: cadena del usuario. Por ejemplo, una cadena escribe en un control de **entrada de texto** y lee el control con la propiedad **Text**.
-* *Language, opcional*: idioma en el que se va a interpretar la *cadena*.  De forma predeterminada, es el idioma configurado para el usuario.
+* *Cadena, se requiere*: Una cadena del usuario. Por ejemplo, una cadena escribe en un control de **entrada de texto** y lee el control con la propiedad **Text**.
+* *Language, opcional*: El idioma en que se va a interpretar la *cadena*.  De forma predeterminada, es el idioma configurado para el usuario.
 
 Por ejemplo:
 

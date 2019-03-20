@@ -1,27 +1,27 @@
 ---
 title: Integración de PowerApps, Microsoft Flow y Power BI con SharePoint Online (Introducción) | Microsoft Docs
-description: 'En esta serie de tutoriales se explora la creación de una aplicación de lienzo básica para la administración de proyectos basada en listas de SharePoint y tres tecnologías clave que se integran con SharePoint Online: PowerApps, Microsoft Flow y Power BI.'
-author: mgblythe
+description: 'Esta serie de tutoriales explora cómo crear una aplicación básica de canvas para administración de proyectos en función de las listas de SharePoint y tres tecnologías clave que se integran con SharePoint Online: PowerApps, Microsoft Flow y Power BI.'
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afbb6211ee947abd59e74a0712dd080f6911ec65
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 812a73163047914a8f0bcc651c831ee4022fcc28
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806188"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799074"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>Integración de PowerApps, Microsoft Flow y Power BI con SharePoint Online
-¿Tiene SharePoint Online y desea mejorar la automatización y simplificación de los procesos empresariales? ¿Ha trabajado con PowerApps, Microsoft Flow o Power BI, pero no está seguro de cómo usarlos con SharePoint Online? Ha venido al lugar correcto. En esta serie de tutoriales se explora la creación de una aplicación de lienzo básica para la administración de proyectos basada en listas de SharePoint y tres tecnologías clave que se integran con SharePoint Online: PowerApps, Microsoft Flow y Power BI. Estas tecnologías funcionan de forma conjunta, lo que facilita el *análisis* de su negocio, la *actuación* sobre los resultados y la *automatización* de los flujos de trabajo. Cuando haya terminado con esta serie de tutoriales, tendrá un escenario estupendo similar al siguiente:
+¿Tiene SharePoint Online y desea mejorar la automatización y simplificación de los procesos empresariales? ¿Ha trabajado con PowerApps, Microsoft Flow o Power BI, pero no está seguro de cómo usarlos con SharePoint Online? Ha venido al lugar correcto. Esta serie de tutoriales explora cómo crear una aplicación básica de canvas para administración de proyectos en función de las listas de SharePoint y tres tecnologías clave que se integran con SharePoint Online: PowerApps, Microsoft Flow y Power BI. Estas tecnologías funcionan de forma conjunta, lo que facilita el *análisis* de su negocio, la *actuación* sobre los resultados y la *automatización* de los flujos de trabajo. Cuando haya terminado con esta serie de tutoriales, tendrá un escenario estupendo similar al siguiente:
 
 ![Diagrama del escenario completo](./media/sharepoint-scenario-intro/composite-with-background.png)
 
@@ -31,9 +31,9 @@ En esta serie de tutoriales, la empresa Contoso tiene un sitio de SharePoint Onl
 ## <a name="getting-started-quickly"></a>Introducción rápida
 El escenario que se presenta en esta serie de tutoriales es sencillo en comparación con una aplicación de análisis y gestión de proyectos con todas las prestaciones, pero aún así se tarda algún tiempo en completar todas las tareas. Si solo desea obtener una introducción rápida al uso de PowerApps, Microsoft Flow y Power BI con SharePoint, consulte los artículos siguientes:
 
-* **PowerApps**: [Creación de una aplicación desde SharePoint mediante PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) y [Generación de una aplicación para administrar datos en una lista de SharePoint](app-from-sharepoint.md)
-* **Microsoft Flow**: [Espera de la aprobación en Microsoft Flow](https://docs.microsoft.com/flow/wait-for-approvals)
-* **Power BI**: [Insertar el elemento web de informes en SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
+* **PowerApps**: [Creación de una aplicación desde SharePoint mediante PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) y [generar una aplicación para administrar datos en una lista de SharePoint](app-from-sharepoint.md)
+* **Microsoft Flow**: [Esperar la aprobación en Microsoft Flow](https://docs.microsoft.com/flow/wait-for-approvals)
+* **Power BI**: [Insertar elemento web de informes en SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 
 Una vez que haya terminado, confiamos en que volverá para comprobar el escenario completo.
 

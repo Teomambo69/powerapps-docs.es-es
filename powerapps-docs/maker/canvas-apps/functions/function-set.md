@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 96b8b8276b385a49bd29be150b9a41ba08ba67ba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3292d03a55fe6296b8efdf2377efde5f2b4ad36e
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862827"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800500"
 ---
 # <a name="set-function-in-powerapps"></a>Función Set en PowerApps
 Establece el valor de una variable global.
@@ -26,14 +26,14 @@ Establece el valor de una variable global.
 ## <a name="overview"></a>Información general
 La función **Set** se usa para establecer el valor de una variable global, que guarda temporalmente un fragmento de información, como el número de veces que el usuario ha seleccionado un botón o el resultado de una operación de datos.  
 
-Las variables globales están disponibles en todas las pantallas de la aplicación.  Son las variables más simples y se pueden usar en la mayor parte de las situaciones.  También hay variables de contexto cuyo ámbito es una sola pantalla y colecciones que permiten modificar tablas a nivel de fila.  Para más información acerca de estas otras opciones, consulte cómo [usar variables](../working-with-variables.md).
+Las variables globales están disponibles en todas las pantallas de la aplicación. Son las variables más simples y se pueden usar en la mayor parte de las situaciones. También hay variables de contexto cuyo ámbito es una sola pantalla y colecciones que permiten modificar tablas a nivel de fila. Para obtener más información acerca de estas otras opciones, consulte [descripción de las variables](../working-with-variables.md).
 
-PowerApps se basa en fórmulas que se recalculan automáticamente a medida que el usuario interactúa con una aplicación.  Las variables globales no tienen esta ventaja y pueden hacer que la aplicación sea más difícil de crear y comprender.  Antes de utilizar una variable, consulte cómo [usar variables](../working-with-variables.md).
+PowerApps se basa en fórmulas que se recalculan automáticamente a medida que el usuario interactúa con una aplicación. Las fórmulas que dependen de una variable se actualización automáticamente cuando cambia. Sin embargo, la variable no se actualizará automáticamente si el valor de la fórmula se usa en el **establecer** cambios de función. Esto requiere que el creador de la aplicación actualizar manualmente la variable, que puede ser propenso a errores y más difícil para otros comprender. Antes de utilizar una variable, consulte [descripción de las variables](../working-with-variables.md).
 
 ## <a name="description"></a>Descripción
-Las variables globales se crean implícitamente mediante la función **Set**.  No es necesaria ninguna declaración explícita.  Si quita todas las funciones **Set** funciones de una variable global, esta dejará de existir.  Para borrar una variable, establezca su valor en el resultado de la función [**Blank**](function-isblank-isempty.md).
+Las variables globales se crean implícitamente mediante la función **Set**. No se requiere ninguna declaración explícita. Si quita todos los **establecer** las funciones de una variable global, que la variable global dejarán de existir. Para borrar una variable, establezca su valor en el resultado de la [ **en blanco** función](function-isblank-isempty.md).
 
-Puede ver los valores de las variables, las definiciones y los usos con la vista Variables del menú Archivo en el entorno de creación.
+Puede ver los valores de las variables, definiciones y usa con la vista de las Variables en el **archivo** menú en PowerApps Studio.
 
 Tal como mostrarán los ejemplos de este mismo tema, las variables de contexto pueden contener distintos tipos de información, entre los que se incluyen:
 

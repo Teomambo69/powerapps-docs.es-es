@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7aed7812890482bb781e2d5ff7eac8c996b8837
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850426"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803444"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Comprender las fórmulas de comportamiento de aplicaciones de lienzo en PowerApps
 
@@ -30,18 +30,18 @@ En este contexto, ¿qué significa que el usuario seleccione un control **[Botó
 
 Al seleccionar un control **[Botón](controls/control-button.md)**, el usuario inicia una secuencia de acciones, o comportamientos, que cambiará el estado de la aplicación:
 
-* Cambiar la pantalla que se muestra: funciones **[Back](functions/function-navigate.md)** y **[Navigate](functions/function-navigate.md)**.
-* Controlar una [señal](functions/signals.md): funciones **[Enable](functions/function-enable-disable.md)** y **[Disable](functions/function-enable-disable.md)**.
-* Actualizar o quitar elementos de un [origen de datos](working-with-data-sources.md): funciones **[Refresh](functions/function-refresh.md)**, **[Update](functions/function-update-updateif.md)**, **[UpdateIf](functions/function-update-updateif.md)**, **[Patch](functions/function-patch.md)**, **[Remove](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)**.
-* Actualizar una [variable de contexto](working-with-variables.md#create-a-context-variable): función **[UpdateContext](functions/function-updatecontext.md)**.
-* Crear, actualizar o quitar elementos de una [colección](working-with-data-sources.md#collections): funciones **[Collect](functions/function-clear-collect-clearcollect.md)**, **[Clear](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**.
+* Cambio de la pantalla que se muestra: **[Atrás](functions/function-navigate.md)**  y **[Navigate](functions/function-navigate.md)** funciones.
+* Control un [señal](functions/signals.md): **[Habilitar](functions/function-enable-disable.md)**  y **[deshabilitar](functions/function-enable-disable.md)** funciones.
+* Actualizar, actualizar o quitar elementos de un [origen de datos](working-with-data-sources.md): **[Actualizar](functions/function-refresh.md)**,  **[actualización](functions/function-update-updateif.md)**,  **[UpdateIf](functions/function-update-updateif.md)**, **[revisión](functions/function-patch.md)**,  **[Quitar](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)** funciones.
+* Actualización de un [variable de contexto](working-with-variables.md#use-a-context-variable):  **[UpdateContext](functions/function-updatecontext.md)**  función.
+* Crear, actualizar o quitar elementos de un [colección](working-with-data-sources.md#collections):  **[Recopilar](functions/function-clear-collect-clearcollect.md)**,  **[clara](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)** funciones.
 
 Como estas funciones cambian el estado de la aplicación, no se pueden volver a calcular automáticamente. Puede usarlas en las fórmulas para las propiedades **[OnSelect](controls/properties-core.md)**, **[OnVisible](controls/control-screen.md)**, **[OnHidden](controls/control-screen.md)**, además de otras propiedades del tipo **On...**, que se llaman fórmulas de comportamiento.
 
 ### <a name="more-than-one-action"></a>Más de una acción
 Use puntos y comas para crear una lista de acciones a realizar. Por ejemplo, es posible que desee actualizar una variable de contexto y, luego, volver a la pantalla anterior:
 
-* **UpdateContext( { x: 1 } ); Back()**
+* **UpdateContext( { x: 1}); Atrás()**
 
 Las acciones se realizan en el orden en que aparecen en la fórmula.  La función siguiente no se iniciará hasta que se complete la función actual. Si se produce un error, no se iniciarán las funciones subsiguientes.
 

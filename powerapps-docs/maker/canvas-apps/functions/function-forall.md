@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857117"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308786"
 ---
 # <a name="forall-function-in-powerapps"></a>Función ForAll en PowerApps
 Calcula valores y realiza acciones para todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -64,7 +64,7 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-* **ClearCollect( Squares, [ "1", "4", "9" ] )**
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-* **ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )**
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 Este ejemplo usa también una conexión con [Microsoft Translator](../connections/connection-microsoft-translator.md).  Para agregar esta conexión a la aplicación, consulte el tema acerca de cómo [administrar conexiones](../add-manage-connections.md).
 
@@ -104,7 +104,16 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-* **ClearCollect( Products, Table( { Product: "Widget", 'Quantity Requested': 6, 'Quantity Available': 3 }, { Product: "Gadget", 'Quantity Requested': 10, 'Quantity Available': 20 }, { Product: "Gizmo", 'Quantity Requested': 4, 'Quantity Available': 11 }, { Product: "Apparatus", 'Quantity Requested': 7, 'Quantity Available': 6 } ) )**
+```powerapps-dot
+ClearCollect( Products, 
+    Table( 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
+    )
+)
+```
 
 Nuestro objetivo es trabajar con una tabla derivada que incluya solo los artículos de los que se ha solicitado una cantidad mayor a la disponible y para los cuales hay que realizar un pedido:
 
@@ -115,7 +124,17 @@ Se puede realizar esta tarea de dos maneras diferentes, que generan el mismo res
 #### <a name="table-shaping-on-demand"></a>Forma de tabla a petición
 No haga esa copia  Podemos utilizar la fórmula siguiente en cualquier lugar que sea necesario:
 
-* **ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 Se crea un [ámbito de registro](../working-with-tables.md#record-scope) mediante las funciones **Filter** y **AddColumns** que permite realizar las operaciones de comparación y resta, respectivamente, con los campos **'Cantidad en pedido'** y **'Cantidad disponible'** de cada registro.
 
@@ -126,7 +145,16 @@ Y dado que no realizamos una copia, no hay ninguna copia adicional de la informa
 #### <a name="forall-on-demand"></a>Función ForAll a petición
 Otro enfoque consiste en utilizar la función **ForAll** para reemplazar las funciones de forma de tabla:
 
-* **ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) )**
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        { 
+            Product: Product, 
+            'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+        } 
+    ) 
+)
+```
 
 Esta fórmula puede ser más sencilla de leer y escribir para algunas personas.
 
@@ -137,15 +165,50 @@ En algunos casos, puede que sea necesario realizar una copia de los datos.  Pued
 
 Se utilizará la misma forma de tabla que en los dos ejemplos anteriores, pero se capturará el resultado en una colección:
 
-* **ClearCollect( NewOrder, ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" ) )**
-* **ClearCollect( NewOrder, ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ShowColumns( 
+        AddColumns( 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
+        "Quantity To Order"
+    )
+)
+```
+
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        } 
+    )
+)
+```
 
 Las funciones **ClearCollect** y **Collect** no se pueden delegar.  Como consecuencia, la cantidad de datos que se pueden mover de esta manera es limitada.
 
 #### <a name="collect-within-forall"></a>Recopilación dentro de ForAll
 Por último, se puede realizar la función **Collect** directamente dentro de **ForAll**:
 
-* **Clear( ProductsToOrder ); ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', Collect( NewOrder, { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        )
+    )
+)
+```
 
 Una vez más, la función **ForAll** no se puede delegar en este momento.  Si la tabla **Productos** es grande, la función **ForAll** buscará solo en el primer conjunto de registros y puede que se pasen por alto algunos productos que es necesario solicitar.  Pero en el caso de tablas que sabemos que seguirán siendo pequeñas, este enfoque es adecuado.
 

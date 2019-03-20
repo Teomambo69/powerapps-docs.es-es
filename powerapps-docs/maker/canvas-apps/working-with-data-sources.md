@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51b7cde36a70001ff8545c497da7c4b4d5d1fa3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803421"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Comprender los orígenes de datos para aplicaciones de lienzo en PowerApps
 
@@ -80,13 +80,13 @@ Sin embargo, los orígenes de datos de la colección se *pueden* crear y modific
 * La información se almacena y comparte a través de un servicio de almacenamiento (en este caso, una lista de SharePoint de un sitio de Office 365).
 * Una conexión hace que esta información esté disponible para la aplicación.  La conexión se encarga de autenticación del usuario que va a acceder a la información.
 * Cuando se inicia la aplicación, o cuando se pulsa la función **[A](functions/function-refresh.md)**, la información se extrae de la conexión y llega a un origen de datos de la aplicación para su uso local.
-* Las fórmulas se usan para leer la información y exponerla en controles que el usuario pueda ver. Para mostrar los registros de un origen de datos, use una galería en una pantalla y conecte la propiedad **[Elementos](controls/properties-core.md)** al origen de datos: **Gallery.Items = DataSource**.  Para conectar los controles dentro de la galería a la galería, use la propiedad **[Default](controls/properties-core.md)** de los controles.  
+* Las fórmulas se usan para leer la información y exponerla en controles que el usuario pueda ver. Puede mostrar los registros de un origen de datos mediante el uso de una galería en una pantalla y la **[elementos](controls/properties-core.md)** propiedad al origen de datos: **Gallery.Items = DataSource**.  Para conectar los controles dentro de la galería a la galería, use la propiedad **[Default](controls/properties-core.md)** de los controles.  
 * El origen de datos también es una tabla.  Por consiguiente, puede usar **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)**, **[AddColumns](functions/function-table-shaping.md)** y otras funciones para refinar y aumentar el origen de datos antes de usar su totalidad.  También puede usar **[Buscar](functions/function-filter-lookup.md)**, **[First](functions/function-first-last.md)**, **[Last](functions/function-first-last.md)** y otras funciones para trabajar con los registros individuales.
 
 ### <a name="modify-a-record"></a>Modificación de un registro
-En la sección anterior se ha explicado cómo leer un origen de datos.  Tenga en cuenta que las flechas del diagrama anterior son unidireccionales.  Los cambios en un origen de datos no se recuperan a través de la mismas fórmulas con las que se recuperaron los datos.  En su lugar, se utilizan fórmulas nuevas.  A menudo no se utiliza la misma pantalla para editar un registro que para explorar los registros, sobre todo en los dispositivos móviles.
+En la sección anterior, vimos cómo leer de un origen de datos.  Tenga en cuenta que las flechas del diagrama anterior son unidireccionales.  Los cambios en un origen de datos no se recuperan a través de la mismas fórmulas con las que se recuperaron los datos.  En su lugar, se utilizan fórmulas nuevas.  A menudo no se utiliza la misma pantalla para editar un registro que para explorar los registros, sobre todo en los dispositivos móviles.
 
-Tenga en cuenta que, para modificar un registro existente de un origen de datos, debe provenir originalmente del origen de datos.  El registro puede haber viajado a través de una galería, una [variable de contexto](working-with-variables.md#create-a-context-variable) y cualquier número de fórmulas, pero su origen debe de poder rastrearse hasta el origen de datos.  Esto es importante porque hay información adicional que acompaña al registro que lo identifica de forma única, lo que garantiza que el registro que se modifica es el correcto.    
+Tenga en cuenta que, para modificar un registro existente de un origen de datos, debe provenir originalmente del origen de datos.  El registro puede haber viajado a través de una galería, una [variable de contexto](working-with-variables.md#use-a-context-variable) y cualquier número de fórmulas, pero su origen debe de poder rastrearse hasta el origen de datos.  Esto es importante porque hay información adicional que acompaña al registro que lo identifica de forma única, lo que garantiza que el registro que se modifica es el correcto.    
 
 ![](media/working-with-data-sources/writing-to-a-datasource.png) El diagrama anterior muestra el flujo de información para actualizar un origen de datos:
 

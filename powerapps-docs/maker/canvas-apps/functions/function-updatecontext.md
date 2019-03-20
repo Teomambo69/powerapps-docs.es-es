@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865518"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803582"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Función UpdateContext de PowerApps
-Crea o actualiza [variables de contexto](../working-with-variables.md#create-a-context-variable) de la pantalla actual.
+Crea o actualiza [variables de contexto](../working-with-variables.md#use-a-context-variable) de la pantalla actual.
 
 ## <a name="overview"></a>Información general
 Use la función **UpdateContext** para crear una variable de contexto, que guarda temporalmente un fragmento de información, como el número de veces que el usuario ha seleccionado un botón o el resultado de una operación de datos.
@@ -62,11 +62,11 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 
 * *UpdateRecord*: requerido. Registro que contiene el nombre de al menos una columna y un valor para esa columna. Se crea o se actualiza una variable de contexto para cada columna y valor que especifique.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [,...]]} )
 
 * *ContextVariable1*: requerido.  Nombre de la variable de contexto que se va a crear o actualizar.
 * *Value1*: requerido.  Valor que se asigna a la variable de contexto.
-* *ContextVariable2*: *Value2*, ...: opcional. Variables de contexto adicionales que se van a crear o actualizar, y sus valores.
+* *ContextVariable2*: *Value2*,...: opcional. Variables de contexto adicionales que se van a crear o actualizar, y sus valores.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -76,7 +76,7 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Establece el valor de la variable de contexto **Counter** del ejemplo anterior en **2**. |**Counter** tiene el valor **2**. |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Crea o modifica las variables de contexto **Name** y **Score**, y establece sus valores en **Lily** y **10**, respectivamente. |**Name** tiene el valor **Lily**, y **Score** tiene el valor **10**. |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Crea o modifica la variable de contexto **Person** y establece su valor en un registro. El registro contiene dos columnas, llamadas **Name** y **Address**. El valor de la columna **Name** es **Milton**, y el valor de la columna **Address** es **1 Main St**. |**Person** tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**.<br><br>Haga referencia a este registro como un todo con el nombre **Person**, o haga referencia a una columna individual de este registro con **Person.Name** o **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable de contexto **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
+| **UpdateContext( {&nbsp;Person: Revisión (&nbsp;persona,&nbsp;{dirección:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)}&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable de contexto **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Asigne un nombre a la pantalla predeterminada **Origen**, agregue otra pantalla y asígnele el nombre **Destino**.

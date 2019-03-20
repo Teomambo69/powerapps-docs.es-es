@@ -1,30 +1,30 @@
 ---
 title: Configuración de listas para la integración de SharePoint Online con PowerApps, Microsoft Flow y Power BI | Microsoft Docs
 description: En esta tarea, se configuraran las listas de SharePoint para usarlas como origen de datos para aplicaciones, flujos, informes y paneles.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1694a3190740c788eb9cd53de1187ed32d0fbc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833329"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799189"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con PowerApps, Microsoft Flow y Power BI
 > [!NOTE]
 > Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-SharePoint tiene una gran cantidad de características para la colaboración y el uso compartido, pero nos centraremos en una característica de este escenario: las [listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
+SharePoint tiene una gran cantidad de características de colaboración y uso compartido, pero nos centraremos en una característica para este escenario: [Las listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
 
 ## <a name="step-1-understand-the-lists"></a>Paso 1: Información de las listas
 La primera lista es **Project Requests**, en la que un solicitante del proyecto agrega una solicitud. A continuación, el aprobador de proyecto examina la solicitud y la aprueba o rechaza.
@@ -34,7 +34,7 @@ La primera lista es **Project Requests**, en la que un solicitante del proyecto 
 | Título |Una línea de texto |Columna predeterminada, se utiliza para el nombre del proyecto |
 | Descripción |Una línea de texto | |
 | ProjectType |Una línea de texto |Valores: hardware nuevo, hardware actualizado, software nuevo, software actualizado |
-| RequestDate |Fecha | |
+| RequestDate |Date | |
 | Requestor |Una línea de texto | |
 | EstimatedDays |Número |Permite la comparación de la estimación del solicitante con la estimación del jefe de proyecto con la fecha real |
 | Approved |Una línea de texto |Valores: pendiente, sí o no |
@@ -48,9 +48,9 @@ La segunda lista es **Project Details**, que realiza un seguimiento de los detal
 | --- | --- | --- |
 | Título |Una línea de texto |Columna predeterminada, se utiliza para el nombre del proyecto |
 | RequestID |Número |Coincide con el valor de la lista **Project Requests** de la columna **ID** |
-| ApprovedDate |Fecha | |
+| ApprovedDate |Date | |
 | Estado |Una línea de texto |Valores: no iniciado, en curso, completado |
-| ProjectedStartDate |Fecha |El momento en que el jefe de proyecto estima que se va a iniciar el proyecto |
+| ProjectedStartDate |Date |El momento en que el jefe de proyecto estima que se va a iniciar el proyecto |
 | ProjectedEndDate |Fecha |El momento en que el jefe de proyecto estima que se va a finalizar el proyecto |
 | ProjectedDays |Número |Días hábiles; normalmente se calcularían, pero no en este escenario |
 | ActualDays |Número |Para los proyectos completados |
@@ -105,9 +105,9 @@ Para continuar con el escenario, debe crear las dos listas de SharePoint y relle
 4. Copie los datos y péguelos en la cuadrícula de SharePoint y haga clic en o pulse en **Done**  (Listo).
    
     ![Lista completada con datos](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. Repita el proceso de creación y copia de la lista "Project Details", para lo que usará el libro project-details.xlsx. Consulte la tabla Project Details en [Paso 1: Información de las listas](#step-1-understand-the-lists), ya que contiene los tipos de datos y los nombres de las columnas.
+5. Repita el proceso de creación y copia de la lista "Project Details", para lo que usará el libro project-details.xlsx. Consulte la tabla Project Details en [paso 1: Información de las listas](#step-1-understand-the-lists) para los tipos de datos y los nombres de columna.
 
-## <a name="step-3-update-connections-to-samples---optional"></a>Paso 3: Actualización de conexiones a ejemplos (opcional)
+## <a name="step-3-update-connections-to-samples---optional"></a>Paso 3: Actualizar las conexiones a ejemplos (opcional)
 Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete de descarga](https://aka.ms/o4ia0f) se han incluido dos aplicaciones de ejemplo y un informe. Este escenario se puede completar sin usar estos ejemplos, pero si desea usarlos, es preciso que actualice las conexiones a las listas de SharePoint. Actualícelas para que usen *sus* listas como origen de datos, en lugar de las nuestras.
 
 ### <a name="update-connections-for-the-sample-apps"></a>Actualizar las conexiones de las aplicaciones de ejemplo

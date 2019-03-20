@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
-ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
-ms.translationtype: HT
+ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2018
-ms.locfileid: "47459464"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802064"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -152,7 +152,7 @@ El formulario cambia de modo **Nuevo** a modo **Edición** cuando se produce cua
 
 * Esta propiedad solo se aplica al control **Formulario de edición**.
 * Utilice esta propiedad para extraer los valores de campo de las tarjetas en el control.  A continuación, puede utilizar estos valores para actualizar manualmente el origen de datos con una llamada de función **[Revisión](../functions/function-patch.md)** u otro método expuesto por una conexión.  No es necesario utilizar esta propiedad si usa la función **[SubmitForm](../functions/function-form.md)**.
-* Esta propiedad devuelve un registro de valores.  Por ejemplo, si el control de formulario contiene controles de tarjeta para los campos **Nombre** y **Cantidad** y los valores de la propiedad **[Actualizaciones](control-card.md)** para dichas tarjetas devuelven "Widget" y 10, respectivamente, la propiedad **Actualizaciones** para el control de formulario devolvería **{Nombre: "Widget", Cantidad: 10}**.
+* Esta propiedad devuelve un registro de valores.  Por ejemplo, si el control de formulario contiene controles de tarjeta para **nombre** y **cantidad** campos y los valores de la **[actualización](control-card.md)** las propiedades de esas tarjetas devuelven "Widget" y 10, respectivamente, la **actualizaciones** propiedad del control de formulario devolvería **{nombre: "Widget", cantidad: 10 }**.
 
 **Válido**: indica si un control **[Tarjeta](control-card.md)** o **Formulario de edición** contiene entradas válidas listas para enviarse al origen de datos.
 

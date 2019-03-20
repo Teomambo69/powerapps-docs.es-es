@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 01/31/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5aa9992b9371724c77bcc1d2baf439bb2d7b9dab
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3fb23fec6f6885a55b054889b90fed0c5efafd5e
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864336"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800362"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funciones SaveData y LoadData en PowerApps
 Guarda y vuelve a cargar una [colección](../working-with-data-sources.md#collections).
@@ -28,9 +28,15 @@ La función **SaveData** almacena una colección para su uso posterior con un no
 
 La función **LoadData** vuelve a cargar una colección por el nombre guardado anteriormente con **SaveData**. No se puede utilizar esta función para cargar una colección de otro origen.  
 
-**LoadData** no crea la colección; la función solo rellena una colección existente. Primero tiene que crear la colección con las [columnas](../working-with-tables.md#columns) correctas utilizando **[Recopilar](function-clear-collect-clearcollect.md)**.
+Utilice estas funciones para mejorar el rendimiento de inicio de la aplicación almacenando en caché datos en el **[App.OnStart](../controls/control-screen.md#additional-properties)** fórmulas en una primera ejecución y, a continuación, volver a cargar la memoria caché local en las ejecuciones posteriores. También puede usar estas funciones para agregar [capacidades sin conexión simple](../offline-apps.md) a la aplicación.
 
-El almacenamiento está cifrado y se encuentra en una ubicación privada en el dispositivo local, aislado de otros usuarios y otras aplicaciones.  
+No se puede utilizar estas funciones dentro de un explorador, ya sea al crear la aplicación en PowerApps Studio o cuando se ejecuta la aplicación en el Reproductor de web. Para probar la aplicación, puede ejecutarla en PowerApps Mobile en un dispositivo de Android o iPhone.
+
+Estas funciones están limitadas por la cantidad de memoria de la aplicación disponible, ya que operan en una colección en memoria. Memoria disponible puede variar en función del dispositivo y sistema operativo, la memoria que usa el Reproductor de PowerApps y la complejidad de la aplicación en cuanto a las pantallas y controles. Si almacena más de unos cuantos megabytes de datos, pruebe la aplicación con los escenarios esperados en los dispositivos en la que espera la aplicación se ejecute. Por lo general debería tener entre 30 y 70 MB de memoria disponible.  
+
+**LoadData** no crea la colección; la función solo rellena una colección existente. Primero tiene que crear la colección con las [columnas](../working-with-tables.md#columns) correctas utilizando **[Recopilar](function-clear-collect-clearcollect.md)**. Los datos cargados se anexará a la colección. Utilice la **[clara](function-clear-collect-clearcollect.md)** función primero si desea empezar con una colección vacía.
+
+El almacenamiento está cifrado y se encuentra en una ubicación privada en el dispositivo local, aislado de otros usuarios y otras aplicaciones.
 
 ## <a name="syntax"></a>Sintaxis
 **SaveData**( *Colección*, *Nombre* )<br>**LoadData**( *Collection*, *Name* [, *IgnoreNonexistentFile* ])

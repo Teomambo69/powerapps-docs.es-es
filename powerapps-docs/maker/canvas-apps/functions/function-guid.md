@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/09/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a45aa397aa65e11ab01e04367d859e11bf552f66
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
+ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43164603"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57802639"
 ---
 # <a name="guid-function-in-powerapps"></a>Función GUID en PowerApps
 Convierta una cadena de GUID ([identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier)) en un valor GUID o cree un valor GUID.
@@ -35,11 +35,7 @@ Si no se especifica un argumento, esta función crea un GUID.
 
 Para convertir un valor GUID en una cadena, simplemente úselo en un contexto de cadena. El valor GUID se convertirá en una cadena de representación hexadecimal con letras minúsculas y guiones. 
 
-> [!NOTE]
-> Actualmente hay un error conocido que permite que los valores GUID se comparen directamente con cadenas.  No establezca una dependencia de este comportamiento porque cambiará pronto y generará un error.  Para comparar una cadena con un valor GUID, transforme primero la cadena en un valor GUID con la función GUID y luego compare los valores GUID.  Así se normalizan los dos valores para que la comparación sea exacta.  Si no lo hace, el valor GUID se convertirá en una cadena automáticamente y la comparación dependerá del formato de la cadena y del uso de mayúsculas y minúsculas en cualquier carácter alfabético de la cadena.
-
-> [!NOTE]
-> Actualmente no hay forma de leer o escribir un valor GUID en una base de datos.  La compatibilidad con Common Data Service y SQL Server está en nuestra hoja de ruta. 
+Cuando se genera un nuevo GUID, esta función utiliza números pseudoaleatorios para crear una versión 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID. Al convertir una cadena en un GUID, esta función admite cualquier versión GUID mediante la aceptación de cualquier cadena de 32 dígitos hexadecimales.
 
 ## <a name="volatile-functions"></a>Funciones volátiles
 **GUID** es una función volátil cuando se usa sin argumento. Cada vez que se evalúa, la función devuelve un valor diferente.  
@@ -57,7 +53,6 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 ## <a name="syntax"></a>Sintaxis
 **GUID**( [ *GUIDString* ] )
 
-
 * *GUIDString* (opcional).  Cadena de texto que contiene la representación hexadecimal de un GUID. Si no se especifica ninguna cadena, se crea un GUID.
 
 ## <a name="examples"></a>Ejemplos
@@ -74,7 +69,7 @@ También puede especificar la cadena de GUID sin guiones. Esta fórmula devuelve
 
 Se utiliza en contexto para establecer el campo **Estado** de un nuevo registro de la base de datos en un valor establecido:
 
-* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Revisión (productos, de forma predeterminada (productos), {estado: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 Probablemente no quiera mostrar los GUID a los usuarios, pero los GUID pueden ayudarle a depurar la aplicación. Para mostrar el valor del campo **Estado** en el registro que creó en el ejemplo anterior, establezca la propiedad **Text** de un control **Label** en esta fórmula:
 

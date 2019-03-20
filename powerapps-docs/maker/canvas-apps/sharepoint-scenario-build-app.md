@@ -1,24 +1,24 @@
 ---
 title: Creación de una aplicación de lienzo para administrar proyectos | Microsoft Docs
 description: En esta tarea se va a compilar una aplicación de lienzo desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842380"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799902"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Creación de una aplicación de lienzo para administrar proyectos
 > [!NOTE]
@@ -41,7 +41,7 @@ PowerApps Studio tiene tres paneles y una cinta de opciones que hacen que crear 
 
 ![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
-## <a name="step-1-create-screens"></a>Paso 1: Creación de pantallas
+## <a name="step-1-create-screens"></a>Paso 1: Crear pantallas
 Una vez terminado el repaso, empiece a crear una aplicación.
 
 ### <a name="create-and-save-the-app"></a>Crear y guardar la aplicación
@@ -86,7 +86,7 @@ Ahora la aplicación debería parecerse a la siguiente imagen.
 
 ![Todas las pantallas de la aplicación](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
-## <a name="step-2-connect-to-a-sharepoint-list"></a>Paso 2: Conexión a una lista de SharePoint
+## <a name="step-2-connect-to-a-sharepoint-list"></a>Paso 2: Conectarse a una lista de SharePoint
 En este paso, se conectará a la lista de SharePoint **Detalles del producto**. Solo se usa una lista en esta aplicación, pero puede conectarse fácilmente a ambas si desea ampliarla.
 
 1. En la barra de navegación izquierda, pulse o haga clic en la pantalla **SelectTask**.
@@ -113,7 +113,7 @@ En este paso, se conectará a la lista de SharePoint **Detalles del producto**. 
    
     ![Pestaña Orígenes de datos](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>Paso 3: Preparación de la pantalla SelectTask
+## <a name="step-3-build-the-selecttask-screen"></a>Paso 3: La pantalla SelectTask
 En este paso, se proporciona una forma de navegar hasta las restantes pantallas de la aplicación mediante el uso de algunos de los controles, las fórmulas y las opciones de formato que proporciona PowerApps.
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>Actualizar el título e insertar el texto de introducción
@@ -169,7 +169,7 @@ La aplicación aún no hace mucho, pero se puede ejecutar si así lo desea:
 
 4. Haga clic o pulse ![en Icono Cerrar vista previa de aplicación](./media/sharepoint-scenario-build-app/icon-close-preview.png) en la esquina superior derecha para cerrar la aplicación.
 
-## <a name="step-4-build-the-assignmanager-screen"></a>Paso 4: Preparación de la pantalla AssignManager
+## <a name="step-4-build-the-assignmanager-screen"></a>Paso 4: La pantalla AssignManager
 En este paso, se va a usar una galería para mostrar todos los proyectos que se han aprobado pero aún carecen de administrador. Se agregarán otros controles, para que pueda asignar un administrador.
 
 > [!NOTE]
@@ -291,7 +291,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
    
    * Propiedad **Alto** = **60**
 
-   * Propiedad **AlSeleccionar** = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
+   * **OnSelect** propiedad = **Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
 
    * Esta fórmula actualiza la lista **Project Details** y establece un valor para el campo PMAssigned.
 
@@ -307,7 +307,7 @@ Ahora la pantalla completada debería parecerse a la siguiente imagen.
 
 ![Pantalla Assign Manager completada](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>Paso 5: Preparación de la pantalla ViewProjects
+## <a name="step-5-build-the-viewprojects-screen"></a>Paso 5: La pantalla ViewProjects
 En este paso, se cambiarán las propiedades para la galería en la pantalla **ViewProjects**. Esta galería muestra elementos de la lista **Project Details**. Seleccione un elemento en esta pantalla y edite los detalles en la pantalla **UpdateDetails**.
 
 1. En la barra de navegación izquierda, pulse o haga clic en la pantalla **ViewProjects**.
@@ -364,7 +364,7 @@ En este paso, se cambiarán las propiedades para la galería en la pantalla **Vi
      
      ![Pantalla View Project completada](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>Paso 6: Preparación de la pantalla UpdateDetails
+## <a name="step-6-build-the-updatedetails-screen"></a>Paso 6: La pantalla UpdateDetails
 En este paso, se conectará el formulario de edición en la pantalla **UpdateDetails** al origen de datos, y se harán algunos cambios en propiedades y campos. En esta pantalla, puede editar los detalles de un proyecto que haya seleccionado en la pantalla **View Projects**.
 
 1. En la barra de navegación izquierda, pulse o haga clic en la pantalla **UpdateDetails**.
@@ -404,7 +404,7 @@ La pantalla completada debería parecerse a la siguiente imagen (si los campos e
 
 ![Pantalla Update Details completada](./media/sharepoint-scenario-build-app/04-06-06-edit-final.png)
 
-## <a name="step-7-run-the-app"></a>Paso 7: Ejecución de la aplicación
+## <a name="step-7-run-the-app"></a>Paso 7: Ejecutar la aplicación
 Ahora que la aplicación está completa, ejecútela para ver cómo funciona. Se agregará un vínculo en el sitio de SharePoint a la aplicación. Podrá ejecutar la aplicación en el explorador, pero es posible que tenga que compartirla para que otras personas la ejecuten. Para más información, consulte [Uso compartido de las aplicaciones](https://powerapps.microsoft.com/guided-learning/learning-manage-share-apps).
 
 ### <a name="add-a-link-to-the-app"></a>Agregar un vínculo a la aplicación
@@ -496,7 +496,7 @@ Ahora que la aplicación está en este sitio de SharePoint, se va a asumir el ro
 ## <a name="formula-deep-dive"></a>Análisis en profundidad de una fórmula
 Se trata de la segunda sección opcional sobre las fórmulas de PowerApps. En la primera, se analizó una de las fórmulas que PowerApps genera para la galería de examen en una aplicación de tres pantallas. En este análisis en profundidad, se examinará una fórmula que se usa para la pantalla **AssignManager** de nuestra segunda aplicación. Esta es la fórmula:
 
-**Patch ( 'Project Details', LookUp ( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
+**Patch( 'Project Details', LookUp( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
 
 ¿Qué hace esta fórmula? Cuando selecciona un elemento en la galería y hace clic en el botón **Aceptar**, la fórmula actualiza la lista **Project Details**, lo que establece la columna **PMAssigned** en el valor que especifique en la entrada de texto. La fórmula usa funciones para realizar su trabajo:
 

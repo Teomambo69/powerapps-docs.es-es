@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857094"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803628"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.
@@ -28,7 +28,7 @@ La mayoría de las aplicaciones contienen varias pantallas.  Use las funciones *
 
 **Back** y **Navigate** cambian solo la pantalla que se muestra. Las pantallas que no se muestran actualmente siguen funcionando en segundo plano. Puede crear fórmulas que hagan referencia a propiedades de controles de otra pantalla. Por ejemplo, un usuario puede cambiar el valor de un control deslizante en una pantalla, navegar a una pantalla diferente que use ese valor en una fórmula y ver cómo afecta a lo que ocurre en la nueva pantalla.  Luego, el usuario puede navegar a la pantalla original y ver que el control deslizante ha conservado su valor.
 
-Las [variables de contexto](../working-with-variables.md#create-a-context-variable) también se conservan cuando un usuario navega entre pantallas. Puede usar **Navigate** para establecer una o varias variables de contexto para la pantalla que mostrará la fórmula, que es la única manera de establecer una variable de contexto desde fuera de la pantalla. Este enfoque se puede usar para pasar parámetros a una pantalla. Si ha usado otra herramienta de programación, este enfoque es similar a pasar parámetros a procedimientos.
+Las [variables de contexto](../working-with-variables.md#use-a-context-variable) también se conservan cuando un usuario navega entre pantallas. Puede usar **Navigate** para establecer una o varias variables de contexto para la pantalla que mostrará la fórmula, que es la única manera de establecer una variable de contexto desde fuera de la pantalla. Este enfoque se puede usar para pasar parámetros a una pantalla. Si ha usado otra herramienta de programación, este enfoque es similar a pasar parámetros a procedimientos.
 
 ## <a name="description"></a>Descripción
 ### <a name="back"></a>Back

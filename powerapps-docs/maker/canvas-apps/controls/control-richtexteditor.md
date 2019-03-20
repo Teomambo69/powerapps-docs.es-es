@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e469cc3769c8deeb5046dc79f34b9ae42788b2d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865183"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073292"
 ---
-# <a name="rich-text-editor-control-experimental-in-powerapps"></a>Control Editor de texto enriquecido (experimental) en PowerApps
-Un control experimental que permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG.  El formato de salida es HTML.
+# <a name="rich-text-editor-control-in-powerapps"></a>Control del editor de texto enriquecido en PowerApps
+Permite que los usuarios finales dar formato al texto dentro de una área de edición de WYSIWYG.  El formato de salida es HTML.
 
 ## <a name="description"></a>Descripción
 El control **Editor de texto enriquecido** proporciona al usuario de la aplicación un área de edición WYSIWYG para dar formato al texto.  El formato de entrada y salida del control es HTML.
@@ -40,20 +40,10 @@ Entre las características admitidas actualmente se incluyen las siguientes:
 
 Para usar el control dentro de un formulario, seleccione la tarjeta "Editar texto multilínea" y personalícela insertando el control Editor de texto enriquecido.
 
-## <a name="limitations"></a>Limitaciones
-La versión actual del control es experimental debido a las limitaciones temporales siguientes:
-- El control tiene características limitadas para dar formato al texto.  
-
-- El control se destina principalmente para su uso en exploradores en pantallas grandes.  El uso del control en un teléfono móvil puede ser una experiencia frustrante.
-
-- Problemas conocidos en la experiencia de creación cuando se usa Studio para Windows o el explorador Edge.  La recomendación actual es usar Web Studio en Chrome.
-
-
 ## <a name="key-properties"></a>Propiedades principales
 **[Default](properties-core.md)**: propiedad de entrada para el valor de texto inicial que se muestra en el editor.
 
 **HtmlText**: propiedad de salida para el texto enriquecido resultante en formato HTML.
-
 
 
 ## <a name="additional-properties"></a>Propiedades adicionales

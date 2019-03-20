@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43163646"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803789"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -208,6 +208,10 @@ Otros elementos incluyen:
 **[Lower](functions/function-lower-upper-proper.md)**: convierte todas las letras de una cadena de texto en minúsculas.
 
 ## <a name="m"></a>Mediana
+**[Coincidencia](functions/function-ismatch.md)**  : extrae una subcadena según un patrón.  Se pueden usar expresiones regulares.
+
+**[MatchAll](functions/function-ismatch.md)**  : extrae varias subcadenas en función de un patrón.  Se pueden usar expresiones regulares.
+
 **[Max](functions/function-aggregates.md)**: valor máximo de una expresión de tabla o un conjunto de argumentos.
 
 **[Mid](functions/function-left-mid-right.md)**: devuelve la parte media de una cadena.
@@ -255,6 +259,8 @@ Otros elementos incluyen:
 **[Rand](functions/function-rand.md)**: devuelve un número pseudoaleatorio.
 
 **[Refresh](functions/function-refresh.md)**: actualiza los registros de un origen de datos.
+
+**[Relacionar](functions/function-relate-unrelate.md)**  – se relaciona con los registros de dos entidades a través de una relación uno a varios o varios a varios.
 
 **[Remove](functions/function-remove-removeif.md)**: quita uno o más registros específicos de un origen de datos.
 
@@ -322,7 +328,7 @@ Otros elementos incluyen:
 
 **[Tan](functions/function-trig.md)**: devuelve la tangente de un ángulo especificado en radianes.
 
-**[Text](functions/function-text.md)**: da formato a un número como una cadena para mostrar.
+**[Texto](functions/function-text.md)**  : convierte cualquier valor y da formato a un valor de número o fecha y hora en una cadena de texto.
 
 **[ThisItem](functions/operators.md#thisitem-operator)**: cuando se está en una galería o un formulario, devuelve los datos para el elemento actual del contenedor.
 
@@ -341,9 +347,11 @@ Otros elementos incluyen:
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)**: quita una agrupación.
 
+**[Anular la relación](functions/function-relate-unrelate.md)**  – Unrelates registros de dos entidades de una relación uno a varios o varios a varios.
+
 **[Update](functions/function-update-updateif.md)**: reemplaza un registro en un origen de datos.
 
-**[UpdateContext](functions/function-updatecontext.md)**: establece el valor de una o varias [variables de contexto](working-with-variables.md#create-a-context-variable) de la pantalla actual.
+**[UpdateContext](functions/function-updatecontext.md)**: establece el valor de una o varias [variables de contexto](working-with-variables.md#use-a-context-variable) de la pantalla actual.
 
 **[UpdateIf](functions/function-update-updateif.md)**: modifica un conjunto de registros en un origen de datos en función de una condición.
 

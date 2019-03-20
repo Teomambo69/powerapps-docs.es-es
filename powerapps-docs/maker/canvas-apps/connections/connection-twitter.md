@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ab480b0bb2aa61c65e33f67cca5a3b0974ca2c8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834535"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802087"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -114,7 +114,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * Para mostrar los usuarios a los que está siguiendo otro usuario, establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la siguiente fórmula:
+   * Para mostrar los usuarios que está siguiendo otro usuario, establezca el **[elementos](../controls/properties-core.md)** propiedad de la galería en la siguiente fórmula:
 
        `Twitter.Following( *TwitterHandle* )`
 
@@ -192,7 +192,7 @@ Esta conexión incluye las siguientes funciones:
 | [OnNewTweet](connection-twitter.md#onnewtweet) |Desencadena un flujo de trabajo cuando se envía un nuevo tweet que coincide con la consulta de búsqueda. |
 
 ### <a name="usertimeline"></a>UserTimeline
-Obtener cronología del usuario: recupera una colección de los tweets más recientes enviados por el usuario especificado.
+Obtener cronología del usuario: Recupera una colección de los tweets más recientes enviados por el usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -213,7 +213,7 @@ Obtener cronología del usuario: recupera una colección de los tweets más reci
 | MediaUrls |array |No | |
 
 ### <a name="hometimeline"></a>HomeTimeline
-Obtener la cronología de inicio: recupera los tweets y retweets más recientes enviados por mí y mis seguidores.
+Obtener escala de tiempo de inicio: Recupera los tweets y retweets más recientes enviados por mí y mis seguidores.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -233,7 +233,7 @@ Obtener la cronología de inicio: recupera los tweets y retweets más recientes 
 | MediaUrls |array |No | |
 
 ### <a name="searchtweet"></a>SearchTweet
-Buscar tweet: recupera una colección de tweets pertinentes que coinciden con una consulta especificada.
+Buscar tweet: Recupera una colección de tweets pertinentes que coinciden con una consulta especificada.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -254,7 +254,7 @@ Buscar tweet: recupera una colección de tweets pertinentes que coinciden con un
 | MediaUrls |array |No | |
 
 ### <a name="followers"></a>Seguidores
-Obtener seguidores: recupera los usuarios que siguen al usuario especificado.
+Obtener seguidores: Recupera los usuarios que siguen al usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -268,7 +268,7 @@ Obtener seguidores: recupera los usuarios que siguen al usuario especificado.
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
-| Ubicación |string |Sí | |
+| Location |string |Sí | |
 | Identificador |integer |No | |
 | NombreUsuario |string |Sí | |
 | FollowersCount |integer |No | |
@@ -277,7 +277,7 @@ Obtener seguidores: recupera los usuarios que siguen al usuario especificado.
 | FriendsCount |integer |No | |
 
 ### <a name="myfollowers"></a>MyFollowers
-Obtener mis seguidores: recupera los usuarios que me siguen.
+Obtener Mis seguidores: Recupera los usuarios que me siguen.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -290,7 +290,7 @@ Obtener mis seguidores: recupera los usuarios que me siguen.
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
-| Ubicación |string |Sí | |
+| Location |string |Sí | |
 | Identificador |integer |No | |
 | NombreUsuario |string |Sí | |
 | FollowersCount |integer |No | |
@@ -299,7 +299,7 @@ Obtener mis seguidores: recupera los usuarios que me siguen.
 | FriendsCount |integer |No | |
 
 ### <a name="following"></a>Siguiendo
-Obtener seguimiento: recupera los usuarios a los que está siguiendo el usuario especificado.
+Obtener la siguiente: Recupera los usuarios a los que está siguiendo el usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -313,7 +313,7 @@ Obtener seguimiento: recupera los usuarios a los que está siguiendo el usuario 
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
-| Ubicación |string |Sí | |
+| Location |string |Sí | |
 | Identificador |integer |No | |
 | NombreUsuario |string |Sí | |
 | FollowersCount |integer |No | |
@@ -322,7 +322,7 @@ Obtener seguimiento: recupera los usuarios a los que está siguiendo el usuario 
 | FriendsCount |integer |No | |
 
 ### <a name="myfollowing"></a>Siguiendo
-Obtener mi seguimiento: recupera los usuarios a los que estoy siguiendo.
+Obtener mi seguimiento: Recupera los usuarios a los que estoy siguiendo.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -335,7 +335,7 @@ Obtener mi seguimiento: recupera los usuarios a los que estoy siguiendo.
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
-| Ubicación |string |Sí | |
+| Location |string |Sí | |
 | Identificador |integer |No | |
 | NombreUsuario |string |Sí | |
 | FollowersCount |integer |No | |
@@ -343,8 +343,8 @@ Obtener mi seguimiento: recupera los usuarios a los que estoy siguiendo.
 | StatusesCount |integer |No | |
 | FriendsCount |integer |No | |
 
-### <a name="user"></a>Usuario
-Obtener usuario: recupera los detalles sobre el usuario especificado (ejemplo: nombre de usuario, descripción, número de seguidores, etc.).
+### <a name="user"></a>User
+Obtener usuario: Recupera los detalles sobre el usuario especificado (ejemplo: nombre de usuario, descripción, número de seguidores, etc.).
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -357,7 +357,7 @@ Obtener usuario: recupera los detalles sobre el usuario especificado (ejemplo: n
 | Nombre de la propiedad | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
 | FullName |string |Sí | |
-| Ubicación |string |Sí | |
+| Location |string |Sí | |
 | Identificador |integer |No | |
 | NombreUsuario |string |Sí | |
 | FollowersCount |integer |No | |
@@ -366,7 +366,7 @@ Obtener usuario: recupera los detalles sobre el usuario especificado (ejemplo: n
 | FriendsCount |integer |No | |
 
 ### <a name="tweet"></a>El tweet
-Enviar un nuevo tweet: Tweet
+Publicar un tweet nuevo: El tweet
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -382,7 +382,7 @@ Enviar un nuevo tweet: Tweet
 | TweetId |string |Sí | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-Cuando aparece un nuevo tweet: desencadena un flujo de trabajo cuando se envía un nuevo tweet que coincide con la consulta de búsqueda.
+Cuando aparezca un nuevo tweet: Desencadena un flujo de trabajo cuando se envía un nuevo tweet que coincide con la consulta de búsqueda.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
