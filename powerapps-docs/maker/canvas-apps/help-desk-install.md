@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799856"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330249"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
@@ -47,7 +47,7 @@ Help Desk proporciona una experiencia fácil de usar para conectarse a los usuar
 
 Esta lista almacena los vales del servicio Help Desk.
 
-1. Abra un explorador web y vaya a https://portal.office.com.
+1. Abra un explorador web y vaya a https://admin.microsoft.com.
 2. Inicie sesión con una cuenta que tenga permiso para crear listas de SharePoint.
 3. Desplácese a la colección de sitios en la que quiera alojar la lista de Help Desk.
 4. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.

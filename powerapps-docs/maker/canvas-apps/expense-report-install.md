@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2cfad6a3cadbd2154e582163dc4f55ee6d010b96
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 166fea9e02ebdaa490b400274c971f0c7268ec76
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072753"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330295"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -44,7 +44,7 @@ Mantenga un seguimiento de los informes de gastos desde que se envían hasta que
 
 En esta lista se almacenan los informes de gastos.
 
-1. Abra un explorador web y vaya a https://portal.office.com.
+1. Abra un explorador web y vaya a https://admin.microsoft.com.
 2. Inicie sesión con una cuenta que tenga permiso para crear listas.
 3. Desplácese a la colección de sitios donde quiera alojar la lista de gastos.
 4. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.

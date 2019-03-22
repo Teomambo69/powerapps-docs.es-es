@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
-ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54079619"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330134"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
@@ -54,7 +54,7 @@ Ejecute sus propias aplicaciones (así como las que compartan con usted) en Wind
 ## <a name="share-your-experience"></a>Compartir la experiencia
 * Leer y publicar en la [comunidad de PowerApps](https://aka.ms/powerapps-community), donde todos los usuarios de PowerApps pueden publicar una pregunta y otros usuarios responderla. Antes de publicar una pregunta, busque en la comunidad para ver si ya se ha respondido.
 * Envíe una idea sobre cómo podemos mejorar PowerApps en [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) (Ideas para PowerApps).
-* Cree una [incidencia de soporte técnico](https://powerapps.microsoft.com/support/pro/) para obtener asistencia técnica. Si es un administrador de PowerApps de la organización, también puede abrir una incidencia de soporte técnico en el [Centro de administración de PowerApps](https://portal.office.com/Support/Support.aspx).
+* Cree una [incidencia de soporte técnico](https://powerapps.microsoft.com/support/pro/) para obtener asistencia técnica. Si es un administrador de PowerApps de la organización, también puede abrir una incidencia de soporte técnico en el [Centro de administración de PowerApps](https://admin.microsoft.com/Support/Support.aspx).
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Registro para obtener una licencia gratuita.](../signup-for-powerapps.md)
