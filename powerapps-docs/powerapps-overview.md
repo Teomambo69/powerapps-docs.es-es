@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
+ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251556"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58162272"
 ---
 # <a name="what-is-powerapps"></a>¿Qué es PowerApps?
 
@@ -23,6 +23,8 @@ PowerApps es un conjunto de aplicaciones, servicios, conectores y plataforma de 
 Las aplicaciones compiladas mediante PowerApps proporcionan funciones enriquecidas de flujo de trabajo y lógica de negocios para transformar los procesos de negocio manuales en procesos automatizados y digitales. Además, las aplicaciones compiladas mediante PowerApps tienen un diseño dinámico y se pueden ejecutar sin problemas en el explorador o en dispositivos móviles (teléfono o tableta). PowerApps "democratiza" la experiencia de compilación de aplicaciones de negocios personalizadas ya que permite a los usuarios crear aplicaciones empresariales personalizadas y con múltiples características sin escribir código.
 
 PowerApps también proporciona una plataforma extensible que permite a los desarrolladores profesionales interactuar mediante programación con datos y metadatos, aplicar lógica de negocios, crear conectores personalizados y realizar la integración con datos externos.
+
+Para obtener más información, consulte el [canal de PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) en YouTube.
 
 ## <a name="powerapps-for-app-makerscreators"></a>PowerApps para creadores de aplicaciones
 

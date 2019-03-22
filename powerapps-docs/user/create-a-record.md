@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 2/21/2019
+ms.date: 3/13/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,17 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f9b6b0ea2236027a0f27332115f34c25036f8ec
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56663301"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58073338"
 ---
 # <a name="create-a-new-record"></a>Creación de un registro
 
 
-El comando **Crear un registro** facilita y agiliza el proceso para agregar casi cualquier tipo de información al sistema. El comando está en la barra de navegación, por lo que estará disponible siempre que necesite agregar información al sistema. Cuando use esta opción, solo tendrá que completar unos pocos campos. Más adelante, cuando tenga más tiempo o información, podrá agregar más datos.  
+El comando **Crear un registro** o **Creación rápida** facilita y agiliza el proceso para agregar casi cualquier tipo de información al sistema. El comando está en la barra de navegación, por lo que estará disponible siempre que necesite agregar información al sistema. Cuando use esta opción, solo tendrá que completar unos pocos campos. Más adelante, cuando tenga más tiempo o información, podrá agregar más datos.  
+
+> [!NOTE]
+> La opción **creación rápida** solo está disponible para los registros habilitados por el administrador.
     
 1. En la barra de navegación, seleccione el **signo más**![Botón Crear registro](media/create-record-button.png "Botón Crear registro") y elija el elemento que quiera.  
   
