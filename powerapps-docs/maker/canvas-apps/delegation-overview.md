@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "57802547"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357630"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: **[Filtro](functions/function-filter-lookup.md)**,  **[ordenación](functions/function-sort.md)**, y **[AddColumns](functions/function-table-shaping.md)** funciones por nombrar solo unos pocos. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -37,7 +37,7 @@ Esto se complica, y el motivo por el que existe este artículo, porque no todo l
 ## <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Para determinados orígenes de datos tabulares solo se admite la delegación. Si un origen de datos admite la delegación, su [documentación del conector](https://docs.microsoft.com/connectors/) describe que admiten. Por ejemplo, estos orígenes de datos tabulares son los más populares, y admiten la delegación:
 
-- [Common Data Service (CDS) para aplicaciones](https://docs.microsoft.com/connectors/commondataservice/) 
+- [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/) 
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
@@ -131,7 +131,7 @@ Para que sea más fácil saber qué se delega y qué no, PowerApps proporciona u
 Las advertencias de delegación solo aparecen en las fórmulas que operan en orígenes de datos delegables. Si no ve una advertencia y cree que la fórmula no se delega correctamente, compruebe el tipo de origen de datos en la lista anterior de [orígenes de datos que se pueden delegar](delegation-overview.md#delegable-data-sources) de este tema.
 
 ## <a name="examples"></a>Ejemplos
-En este ejemplo se genera automáticamente una aplicación de tres pantallas basada en una tabla de SQL Server denominada **[dbo].[Fruit]**. Para obtener información sobre cómo generar la aplicación, puede aplicar principios similares a los del [tema sobre Common Data Service for Apps](data-platform-create-app.md) a SQL Server.
+En este ejemplo se genera automáticamente una aplicación de tres pantallas basada en una tabla de SQL Server denominada **[dbo].[Fruit]**. Para obtener información acerca de cómo generar la aplicación, puede aplicar los principios similares en el [tema sobre Common Data Service](data-platform-create-app.md) a SQL Server.
 
 ![Aplicación de tres pantallas](./media/delegation-overview/products-afd.png)
 

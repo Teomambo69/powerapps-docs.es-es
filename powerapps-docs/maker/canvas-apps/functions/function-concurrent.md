@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892262"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357101"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Función Concurrent de PowerApps
 Evalúa varias fórmulas simultáneamente entre sí.
@@ -47,7 +47,7 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 #### <a name="loading-data-faster"></a>Carga de datos más rápida
 
-1. Cree una aplicación y agregue cuatro orígenes de datos de Common Data Service for Apps, SQL Server o SharePoint. 
+1. Creación de una aplicación y agregar cuatro orígenes de datos de Common Data Service, SQL Server o SharePoint. 
 
     En este ejemplo se usan cuatro tablas de la [base de datos de ejemplo Adventure Works en SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Después de crear la base de datos, conéctese a ella desde PowerApps con el nombre de servidor completo (por ejemplo, srvname.database.windows.net):
 

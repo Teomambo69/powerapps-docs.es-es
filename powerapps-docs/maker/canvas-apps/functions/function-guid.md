@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
-ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57802639"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357078"
 ---
 # <a name="guid-function-in-powerapps"></a>Función GUID en PowerApps
 Convierta una cadena de GUID ([identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier)) en un valor GUID o cree un valor GUID.
 
 ## <a name="description"></a>Descripción
-Use la función **GUID** para convertir una cadena que contiene la representación hexadecimal de un GUID a un valor GUID que se puede pasar a una base de datos. Los valores GUID se usan como claves en sistemas de bases de datos tales como Common Data Service for Apps y SQL Server.
+Use la función **GUID** para convertir una cadena que contiene la representación hexadecimal de un GUID a un valor GUID que se puede pasar a una base de datos. Los valores de GUID se usan como claves por sistemas de bases de datos, como Common Data Service y SQL Server.
 
 La cadena que se pase puede contener letras mayúsculas o minúsculas, pero debe tener 32 dígitos hexadecimales en cualquiera de estos formatos:
 

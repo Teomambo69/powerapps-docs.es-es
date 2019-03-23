@@ -1,6 +1,6 @@
 ---
 title: Información general sobre la creación de aplicaciones | Microsoft Docs
-description: Información general sobre la creación de aplicaciones de lienzo o en modo controlado por modelos, y la incorporación de Common Data Service
+description: 'Información general sobre la creación de aplicaciones de lienzo o en modo controlado por modelos, y la incorporación de Common Data Service'
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,14 +8,9 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: c3e40df2d2ecc13e2c466aa91178ccb5d23548fe
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806097"
+ms.reviewer: null
 ---
+
 # <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
 
 PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene tres componentes principales:
@@ -57,7 +52,7 @@ La introducción a las aplicaciones controladas por modelos es sencilla y se pue
 - [Agregar seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [Agregar lógica de negocio](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+## <a name="common-data-service"></a>Common Data Service
 
 Common Data Service permite almacenar y administrar los datos de forma segura en un conjunto de entidades estándar y personalizadas, y agregar datos a esas entidades cuando sea necesario.
 

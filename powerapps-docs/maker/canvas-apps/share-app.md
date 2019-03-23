@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57a63ddf829e2a6c1062cad34e0f3c608d69afad
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804226"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357285"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
 Después de compilar una aplicación que responde a una necesidad empresarial, especifique qué usuarios de su organización pueden ejecutarla y cuáles pueden modificarla e incluso volver a compartirla. Especifique cada usuario por nombre, o indique un grupo de seguridad en Azure Active Directory. Si todos los usuarios se beneficiarán de la aplicación, especifique que toda la organización puede ejecutarla.
 
 > [!IMPORTANT]
-> Para que una aplicación compartida funcione según lo esperado, también debe administrar los permisos para los orígenes de datos en los que se basa la aplicación, como [Common Data Service for Apps](#common-data-service-for-apps) o [Excel](share-app-data.md). Es posible que también deba compartir [otros recursos](share-app-resources.md) de los que depende la aplicación, como flujos, puertas de enlace o conexiones.
+> Para que una aplicación compartida funcione según lo esperado, también debe administrar los permisos para el origen de datos u orígenes en el que se basa la aplicación, como [Common Data Service](#common-data-service) o [Excel](share-app-data.md). Es posible que también deba compartir [otros recursos](share-app-resources.md) de los que depende la aplicación, como flujos, puertas de enlace o conexiones.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -68,7 +68,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 1. Si la aplicación se conecta a los datos para el que los usuarios necesitan permisos de acceso, debe especificarlos.
 
-    Por ejemplo, la aplicación puede conectarse a una entidad en una base de datos de aplicaciones de CDS. Cuando se comparte una aplicación, el panel de uso compartido le pide que administrar la seguridad de esa entidad.
+    Por ejemplo, la aplicación puede conectarse a una entidad en una base de datos de Common Data Service. Cuando se comparte una aplicación, el panel de uso compartido le pide que administrar la seguridad de esa entidad.
 
     ![Establecer permisos](./media/share-app/set-permissions.png)
 
@@ -99,16 +99,16 @@ Puede cambiar los permisos para un usuario o un grupo de seguridad, seleccione s
 
 ## <a name="manage-entity-permissions"></a>Administrar permisos de entidad
 
-### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+### <a name="common-data-service"></a>Common Data Service
 
-Si crea una aplicación basada en CDS for Apps, debe asegurarse de que los usuarios con quién se comparte la aplicación tienen los permisos adecuados para la entidad o entidades en el que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que puede realizar tareas como crear, leer, escribir y eliminar los registros relevantes. En muchos casos, desea crear uno o varios roles de seguridad personalizado con los permisos exactos que los usuarios necesitan para ejecutar la aplicación. A continuación, puede asignar un rol a cada usuario según corresponda.
+Si crea una aplicación basada en Common Data Service, debe asegurarse de que los usuarios con quién se comparte la aplicación tienen los permisos adecuados para la entidad o entidades en el que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que puede realizar tareas como crear, leer, escribir y eliminar los registros relevantes. En muchos casos, desea crear uno o varios roles de seguridad personalizado con los permisos exactos que los usuarios necesitan para ejecutar la aplicación. A continuación, puede asignar un rol a cada usuario según corresponda.
 
 > [!NOTE]
 > Cuando se redactó este documento, puede asignar roles de seguridad a usuarios individuales, pero no a los grupos de seguridad.
 
 #### <a name="prerequisite"></a>Requisito previo
 
-Para llevar a cabo los dos procedimientos siguientes, debe tener permisos de **administrador del sistema** en una base de datos de CDS for Apps.
+Para llevar a cabo los dos procedimientos siguientes, debe tener **administrador del sistema** permisos para una base de datos de Common Data Service.
 
 #### <a name="create-a-security-role"></a>Crear un rol de seguridad
 

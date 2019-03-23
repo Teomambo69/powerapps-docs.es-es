@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801972"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357860"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
 Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
@@ -32,7 +32,7 @@ Cuando un usuario abre una aplicación, esta pasa a través de estas fases de ej
 ## <a name="limit-data-connections"></a>Límite de conexiones de datos 
 **No se conecte a más de 30 orígenes de datos desde la misma aplicación**. Las aplicaciones piden a los usuarios nuevos que inicien sesión en cada conector, por tanto, cada conector adicional aumenta la cantidad de tiempo que la aplicación necesita para iniciarse. Cuando se ejecuta una aplicación, cada conector requiere recursos de CPU, memoria y ancho de banda de red cuando la aplicación solicita datos a ese origen. 
 
-Para medir rápidamente el rendimiento de la aplicación, active Herramientas de desarrollo en [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) mientras se ejecuta la aplicación. Es más probable que la aplicación tarde más de 15 segundos en devolver datos si solicita con frecuencia datos a más de 30 orígenes de datos, como Common Data Service for Apps, Azure SQL, SharePoint y Excel en OneDrive.  
+Para medir rápidamente el rendimiento de la aplicación, active Herramientas de desarrollo en [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) mientras se ejecuta la aplicación. La aplicación es más probable que tarden más de 15 segundos para devolver los datos si solicita con frecuencia datos de más de 30 orígenes de datos, como Common Data Service, Azure SQL, SharePoint y Excel en OneDrive.  
 
 ## <a name="limit-the-number-of-controls"></a>Límite del número de controles 
 **No agregue más de 500 controles a la misma aplicación**. PowerApps genera DOM HTML para presentar cada control. Cuantos más controles agregue, más tiempo de generación necesita PowerApps. 

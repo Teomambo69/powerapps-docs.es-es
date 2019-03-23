@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800270"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356917"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Comprender el diseño de formularios de datos para aplicaciones de lienzo en PowerApps
 
@@ -32,7 +32,7 @@ En este tutorial, se le guiará por los pasos necesarios para crear un formulari
 
 Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automáticamente), lo más recomendable es [compilar una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
 
-En este tema se escribe como si tiene datos de un origen que se denomina **pedido de ventas** y que contiene los campos en el gráfico anterior. Si tiene una licencia de PowerApps Plan 2 o una [licencia de prueba](../signup-for-powerapps.md) y administrador del sistema o permisos del personalizador del sistema, puede [crear una entidad](../common-data-service/data-platform-create-entity.md) en Common Data Service (CDS) para las aplicaciones y agregar campos similares. 
+En este tema se escribe como si tiene datos de un origen que se denomina **pedido de ventas** y que contiene los campos en el gráfico anterior. Si tiene una licencia de PowerApps Plan 2 o una [licencia de prueba](../signup-for-powerapps.md) y administrador del sistema o permisos del personalizador del sistema, puede [crear una entidad](../common-data-service/data-platform-create-entity.md) en Common Data Service y agregar campos similares. 
 
 ## <a name="add-a-gallery"></a>Agregar una galería
 

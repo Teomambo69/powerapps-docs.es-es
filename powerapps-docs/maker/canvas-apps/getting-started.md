@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 6968e15bbfdb16d3f5443c51065765069ae8867b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330134"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357193"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
 
-Si no necesita un diseño personalizado y los datos se encuentran en Common Data Service (CDS) for Apps, puede generar automáticamente una aplicación controlada por modelos a partir de los datos y procesos empresariales. Este tipo de aplicación puede modelar formularios, vistas y otros componentes, y la interfaz de usuario predeterminada se ajusta de manera automática a teléfonos, equipos portátiles y otros dispositivos. Para obtener más información sobre este tipo de aplicación, vea [Información general sobre la compilación de una aplicación controlada por modelos](../model-driven-apps/model-driven-app-overview.md).
+Si no necesita un diseño personalizado y los datos en común están el servicio de datos, puede generar automáticamente una aplicación controlada por modelos desde sus datos y procesos empresariales. Este tipo de aplicación puede modelar formularios, vistas y otros componentes, y la interfaz de usuario predeterminada se ajusta de manera automática a teléfonos, equipos portátiles y otros dispositivos. Para obtener más información sobre este tipo de aplicación, vea [Información general sobre la compilación de una aplicación controlada por modelos](../model-driven-apps/model-driven-app-overview.md).
 
 ## <a name="build-an-app"></a>Compilar una aplicación
 Para empezar, genere automáticamente una aplicación a partir de uno de estos orígenes, entre otros:
 - [una aplicación de ejemplo](open-and-run-a-sample-app.md)
 - [una plantilla](get-started-test-drive.md)
-- [CDS for Apps](data-platform-create-app.md)
+- [Common Data Service](data-platform-create-app.md)
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
@@ -39,7 +39,7 @@ Para empezar, genere automáticamente una aplicación a partir de uno de estos o
 
 Después de generar una aplicación de forma automática, personalice su apariencia y comportamiento predeterminados en función de los flujos de trabajo de los usuarios. Por ejemplo, cambie los tipos de datos que aparecen, cómo se ordenan o incluso si los usuarios especifican un número escribiéndolo o ajustando un control deslizante. Agregue y personalice [pantallas](add-screen-context-variables.md), [galerías](customize-layout-sharepoint.md), [formularios](customize-forms-sharepoint.md) y otros controles.
 
-Una vez que haya generado automáticamente una o dos aplicaciones, y que tenga cierta experiencia con la personalización, cree una aplicación desde cero basada en [CDS for Apps](data-platform-create-app-scratch.md), [Excel](get-started-create-from-blank.md) u otro origen de datos. Al trabajar desde cero, el diseño, el flujo y los controles de la aplicación serán más flexible y podrá incorporar una mayor variedad de orígenes de datos.
+Una vez que ha generado automáticamente una aplicación o dos y tenga cierta experiencia con personalización, crear una aplicación desde cero basándose en [Common Data Service](data-platform-create-app-scratch.md), [Excel](get-started-create-from-blank.md), u otro origen de datos. Al trabajar desde cero, el diseño, el flujo y los controles de la aplicación serán más flexible y podrá incorporar una mayor variedad de orígenes de datos.
 
 ## <a name="share-and-run-an-app"></a>Compartir y ejecutar una aplicación
 Cuando termine la aplicación y la guarde en la nube, [compártala con otros usuarios](share-app.md) de la organización. Especifique qué usuarios o grupos pueden ejecutar la aplicación y si pueden personalizarla y compartirla con otros usuarios de la organización.

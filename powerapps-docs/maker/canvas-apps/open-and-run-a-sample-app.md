@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316829"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357469"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
+# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Crear una aplicación de lienzo de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
 
 En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para almacenar estos datos, necesitará una cuenta de almacenamiento en la nube, como Dropbox, Google Drive o OneDrive.
@@ -64,7 +64,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 1. Cerca del borde izquierdo, haga clic o pulse en **Guardar**. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha creado su propia aplicación en función de un ejemplo en el que se usan datos ficticios almacenados en la cuenta en la nube. Para obtener información sobre cómo crear una aplicación, también puede generar automáticamente una aplicación en función de datos de otros orígenes, como Common Data Service for Apps, SharePoint o Excel.
+En este tutorial, ha creado su propia aplicación en función de un ejemplo en el que se usan datos ficticios almacenados en la cuenta en la nube. Para obtener información sobre cómo crear una aplicación, puede generar automáticamente una aplicación basada en datos de otros orígenes, como Common Data Service, SharePoint o Excel.
 
 > [!div class="nextstepaction"]
 > [Generar una aplicación](data-platform-create-app.md)

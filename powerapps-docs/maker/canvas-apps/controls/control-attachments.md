@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384257"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357906"
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
-Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad de Common Data Service for Apps.
+Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad de Common Data Service.
 
 ## <a name="limitations"></a>Limitaciones
 El control de datos adjuntos presenta estas limitaciones:
-1. Los datos adjuntos no son compatibles con las listas de SharePoint ni las entidades de CDS for Apps.
+1. Los datos adjuntos son compatibles con las listas de SharePoint y las entidades de Common Data Service.
 
 1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios. Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
 
 1. No se pueden cargar archivos con un tamaño superior a 10 MB.  
 
 ## <a name="description"></a>Descripción
-Un control de **datos adjuntos** permite abrir, agregar y eliminar archivos de una lista de SharePoint o una entidad de CDS for Apps.
+Un **datos adjuntos** control le permite abrir, agregar y quitar archivos de una lista de SharePoint o una entidad de Common Data Service.
 
 ## <a name="key-properties"></a>Propiedades principales
 **[Items](properties-core.md)** : el origen de donde se describen los archivos que se pueden descargar.

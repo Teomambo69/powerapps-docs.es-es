@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832805"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357607"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -38,7 +38,7 @@ De momento no es posible [delegar](../delegation-overview.md) **Choices**. Si es
 
 Las referencias de columna deben ser directas al origen de datos. Por ejemplo, si el origen de datos es **Accounts** y la búsqueda es **SLA**, la referencia de columna sería **Accounts.SLA**. La referencia no se puede pasar a través de una función, una variable o un control. Para profundizar en este ejemplo, si **Accounts** se agrega a un control **Galería**, use la fórmula **Gallery.Selected.SLA** para hacer referencia al SLA de la cuenta seleccionada. Pero esta referencia se ha pasado a través de un control, por lo que no se puede pasar a la función **Columns**, sino que se debe seguir usando **Accounts.SLA**.
 
-De momento solo puede usar columnas de búsqueda con SharePoint y Common Data Service for Apps.
+En este momento, puede usar las columnas de búsqueda sólo con SharePoint y Common Data Service.
 
 ## <a name="syntax"></a>Sintaxis
 **Choices**( *column-reference* )
@@ -49,11 +49,11 @@ De momento solo puede usar columnas de búsqueda con SharePoint y Common Data Se
 
 #### <a name="choices-for-a-lookup"></a>Choices para una búsqueda
 
-1. [Cree una base de datos](../../../administrator/create-database.md) en Common Data Service for Apps y seleccione el cuadro **Incluir datos y aplicaciones de ejemplo**.
+1. [Crear una base de datos](../../../administrator/create-database.md) en Common Data Service y seleccione el **incluyen aplicaciones de ejemplo y datos** cuadro.
 
     Se crean muchas entidades, como **Accounts**.
 
-    **Nota**: Los nombres de entidad son singulares en web.powerapps.com y plurales en PowerApps Studio.
+    **Nota**: Los nombres de entidad son simples en web.powerapps.com y plural en PowerApps Studio.
 
     ![Lista parcial de los campos de la entidad Account en Commmon Data Service for Apps en la que se resalta que "Primary Contact" es un campo de búsqueda](media/function-choices/entity-account.png)
 

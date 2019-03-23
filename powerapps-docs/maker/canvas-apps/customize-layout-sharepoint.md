@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e77ddfcc572a776e80ab90d3907aaa7b67f01ea
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864781"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357147"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalizar una galería en PowerApps
 
 En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
@@ -47,7 +47,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Generar una aplicación](data-platform-create-app.md) desde la entidad **Cuentas** de Common Data Service (CDS) for Apps.
+[Generar una aplicación](data-platform-create-app.md) desde el **cuentas** entidad de Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 

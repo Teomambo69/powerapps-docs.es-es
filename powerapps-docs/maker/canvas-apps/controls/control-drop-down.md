@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308395"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357653"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
@@ -133,7 +133,7 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 1. Para mostrar los elementos de la lista, seleccione la flecha hacia abajo del control mientras presiona la tecla Alt.
 
 ### <a name="list-from-a-data-source"></a>Lista de un origen de datos
-Los principios de este procedimiento se aplican a cualquier [origen de datos que proporcione tablas](../connections-list.md#tables) pero, para seguir estos pasos exactamente, debe abrir un entorno para el que se haya agregado una base de datos de Common Data Service for Apps y se hayan agregado datos de ejemplo.
+Los principios de este procedimiento se aplican a ninguna [origen de datos que se proporciona tablas](../connections-list.md#tables) pero, para seguir estos pasos exactamente, debe abrir un entorno para el que una base de datos de Common Data Service ha sido creados y ver datos agregados.
 
 1. [Abra una aplicación en blanco](../data-platform-create-app-scratch.md#open-a-blank-app) y [especifique la entidad **Cuentas**](../data-platform-create-app-scratch.md#specify-an-entity).
 

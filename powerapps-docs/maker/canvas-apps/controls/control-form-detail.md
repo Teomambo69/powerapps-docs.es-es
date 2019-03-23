@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802064"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356848"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -33,7 +33,7 @@ Si agrega un control **[Galería](control-gallery.md)**, puede configurarlo para
 ### <a name="record-selection"></a>Selección de registros
 Para cada tipo de formulario, establezca su propiedad **DataSource** en una tabla de registros y establezca la propiedad **Elemento** para mostrar un registro específico en esa tabla. Por ejemplo, puede establecer la propiedad **Elemento** de un formulario en la propiedad **SelectedItem** de un control **[Galería](control-gallery.md)**. Cuando el usuario selecciona un registro en la galería, aparece el mismo registro en el formulario, excepto que el formulario puede mostrar más campos. Si el usuario vuelve a la galería y selecciona un registro diferente, la propiedad **SelectedItem** de la galería cambia. Este cambio actualiza la propiedad **Elemento** del formulario, que mostrará el registro recién seleccionado.
 
-También puede establecer la propiedad **Elemento** de un formulario mediante un control **desplegable**, como se describe en [Mostrar, editar o agregar un registro](../add-form.md), o bien una función como **Lookup** o **First**. Por ejemplo, puede establecer la propiedad **Elemento** en cualquiera de estas fórmulas para mostrar la entrada de Fabrikam en la entidad **Cuentas** de Common Data Service for Apps:
+También puede establecer la propiedad **Elemento** de un formulario mediante un control **desplegable**, como se describe en [Mostrar, editar o agregar un registro](../add-form.md), o bien una función como **Lookup** o **First**. Por ejemplo, puede establecer el **elemento** propiedad a cualquiera de estas fórmulas para mostrar la entrada de Fabrikam en el **cuentas** entidad en Common Data Service:
 
 ```First(Accounts)```
 

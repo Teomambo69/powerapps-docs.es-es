@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db511edd7e64f4d8ccd27cb59cae9a2c369e1a90
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804249"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357262"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -206,6 +206,6 @@ Este síntoma suele debido al uso de un **búsqueda** columna de SharePoint o un
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-Esta configuración está disponible en **desplegable** controles, así como **cuadro combinado** y **cuadro de lista** controles que permiten una selección a la vez. No puede usar el **depende** configuración para cualquiera de esos controles si permiten varias selecciones. No se recomienda este enfoque para trabajar con conjuntos de opciones en común Data Service for Apps.
+Esta configuración está disponible en **desplegable** controles, así como **cuadro combinado** y **cuadro de lista** controles que permiten una selección a la vez. No puede usar el **depende** configuración para cualquiera de esos controles si permiten varias selecciones. No se recomienda este enfoque para trabajar con conjuntos de opciones en común, el servicio de datos.
 
 El **depende** configuración no es compatible con datos estáticos o colecciones. Para configurar listas desplegables dependientes con estos orígenes, edite la expresión directamente en la barra de fórmulas. Además, PowerApps no admite el uso de dos campos choice en SharePoint sin ninguna tabla de búsqueda de coincidencias de datos y no se puede definir **campo coincidencia** dentro de esta interfaz de usuario.

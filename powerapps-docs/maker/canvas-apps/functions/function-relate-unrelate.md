@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c50b2452829f0878c40ccf5f2e47010596bc0b7b
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801604"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356779"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Relacionar y Anular relación con las funciones de PowerApps
 
@@ -26,7 +26,7 @@ Relacionar y Anular relación con los registros de dos entidades a través de un
 
 ## <a name="description"></a>Descripción
 
-El **relacionar** función vincula dos registros a través de una relación uno a varios o varios a varios en Common Data Service (CDS) para las aplicaciones. El **Unrelate** función invierte el proceso y quita el vínculo.
+El **relacionar** función vincula dos registros a través de una relación uno a varios o varios a varios en Common Data Service. El **Unrelate** función invierte el proceso y quita el vínculo.
 
 Para las relaciones uno a varios, la entidad muchos tiene un campo de clave externa que apunta a un registro de una entidad. **Relacionar** establece este campo para que apunte a un registro específico de una entidad, mientras que **Unrelate** establece este campo en *en blanco*. Si el campo ya se establece cuando **relacionar** es llama, el vínculo existente se pierde en favor de nuevo el vínculo. También puede establecer este campo con el [ **Patch** ](function-patch.md) función o un **[Editar formulario](../controls/control-form-detail.md)** control; que no necesita usar el **relacionar**  función.
 

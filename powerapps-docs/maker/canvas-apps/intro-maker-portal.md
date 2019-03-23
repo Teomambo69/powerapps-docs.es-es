@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02aaaf7fd149ca0d9f3e1325b98e5287c90bebec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 735894f8e28d25777aa7f66146f5782da2ab2f3e
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317008"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356802"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Inicio de sesión en PowerApps por primera vez
 
@@ -42,7 +42,7 @@ Para obtener mejores resultados, asegúrese de que la página principal se estab
 
 ## <a name="choose-an-environment"></a>Selección de un entorno
 
-Tanto si va a crear una aplicación, como un flujo, una conexión de datos o una entidad en Common Data Service for Apps, gran parte de lo que hace en PowerApps se encuentra en un entorno específico. Los entornos crean límites entre distintos tipos de trabajo; por ejemplo, una organización podría tener entornos independientes para distintos departamentos. Muchas organizaciones usan entornos para separar aplicaciones que aún están en desarrollo de las que están listas para su uso generalizado. Puede que tenga acceso a varios entornos o solo a uno y, si cuenta con los permisos adecuados, tal vez pueda crear sus propios entornos.
+Si va a crear una aplicación, un flujo, una conexión de datos o una entidad en común el servicio de datos, gran parte de lo que hacer en PowerApps se encuentra en un entorno específico. Los entornos crean límites entre distintos tipos de trabajo; por ejemplo, una organización podría tener entornos independientes para distintos departamentos. Muchas organizaciones usan entornos para separar aplicaciones que aún están en desarrollo de las que están listas para su uso generalizado. Puede que tenga acceso a varios entornos o solo a uno y, si cuenta con los permisos adecuados, tal vez pueda crear sus propios entornos.
 
 Para comprobar en qué entorno se encuentra, busque el selector de entornos junto al margen derecho del encabezado.
 
@@ -60,9 +60,9 @@ Para más información, consulte [Environments overview](../../administrator/env
 En PowerApps, puede crear y ejecutar estos tipos de aplicaciones:
 
 - **Aplicaciones de lienzo**: admiten el diseño de interfaz de usuario personalizada y la conexión a datos desde diversos orígenes.
-- **Aplicaciones controladas por modelos**: tienen una interfaz de usuario estándar y solo se conectan a datos en Common Data Service (CDS) for Apps. Sin embargo, resulta más fácil crear otros elementos, tales como vistas, paneles y diferentes tipos de lógica de negocios.
+- **Las aplicaciones controladas por modelos** tiene una interfaz de usuario estándar y conectarse a datos solo en Common Data Service. Sin embargo, resulta más fácil crear otros elementos, tales como vistas, paneles y diferentes tipos de lógica de negocios.
 
-Si elige un entorno que tenga una base de datos de CDS para aplicaciones, puede crear aplicaciones basadas en modelos o lienzos desde la misma página **Inicio**.
+Si elige un entorno que tiene una base de datos de Common Data Service, puede crear lienzo o controladas por modelos, las aplicaciones de la misma **inicio** página.
 
 ## <a name="play-or-edit-an-app"></a>Reproducción o edición de una aplicación
 
@@ -120,6 +120,6 @@ Al seleccionar las opciones en el encabezado y la barra de navegación izquierda
 
 Extienda la funcionalidad de las aplicaciones mediante la realización de estas tareas:
 
-- Administre entidades, conjuntos de opciones y la integración de datos en [Common Data Service for Apps](../common-data-service/data-platform-intro.md).
+- Administrar entidades, conjuntos de opciones y la integración de datos en [Common Data Service](../common-data-service/data-platform-intro.md).
 - Configuración de la lógica de negocios en [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
 - Cree, empaquete y mantenga [soluciones](../../developer/common-data-service/introduction-solutions.md).

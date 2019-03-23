@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6adc46eafda2f5bd9798c13b292a82d567e34a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4f303cdfba474448321d230bb61b698e8f959e5f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831345"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357423"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>Compartir recursos de aplicaciones de lienzo en PowerApps
 
 Antes de [compartir una aplicación de lienzo](share-app.md), tenga en cuenta los tipos de recursos en los que se basa, por ejemplo, uno o varios de los siguientes:
 
-* Entidades de Common Data Service for Apps
+* entidades en Common Data Service
 
     Para obtener información sobre cómo dar acceso a los usuarios a estos datos, vea [Administrar permisos de entidad](share-app.md#manage-entity-permissions).
     
