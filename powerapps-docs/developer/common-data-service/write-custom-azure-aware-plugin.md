@@ -22,7 +22,7 @@ search.app:
 
 # <a name="write-a-custom-azure-aware-plug-in"></a>Escribir un complemento con Azure personalizado
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
 Escribir un complemento que funcione con Azure es similar a escribir cualquier otro complemento de Dynamics 365 Common Data Service para aplicaciones. Sin embargo, además de invocar todos los métodos de servicio web que desee, el complemento debe incluir código para iniciar la publicación del contexto de la ejecución en Azure Service Bus.  
   
@@ -143,6 +143,5 @@ Para un complemento registrado para ejecutarse asincrónicamente, el <xref:Micro
 [Extensiones de Azure para Dynamics 365](azure-integration.md)<br />
 [Enviar los datos de Dynamics 365 a través del bus de servicio de Microsoft Azure](work-data-azure-solution.md)<br />
 [Escribir un complemento](write-plug-in.md)<br />
-<!--[Plug-in Isolation, Trust, and the Disallowed List](plugin-isolation-trusts-statistics.md)<br /> TODO -->
 [Canalización de ejecución del evento](event-framework.md)<br />
 [Registrar e implementar complementos](register-plug-in.md)

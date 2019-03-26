@@ -75,7 +75,7 @@ OData-Version: 4.0
 
 ## <a name="update-with-data-returned"></a>Actualizar con datos devueltos
   
-Para recuperar datos de una entidad que está actualizando puede crear la solicitud `PATCH` de forma que los datos del registro creado sean devueltos con un estado de 200 (OK).  Para obtener su resultado, debe usar la preferencia `return=representation` en los encabezados de solicitud.  
+Para recuperar datos de una entidad que está actualizando puede crear la solicitud `PATCH` de forma que los datos del registro creado sean devueltos con un estado de 200 (OK).  Para obtener este resultado, debe usar la preferencia `return=representation` en los encabezados de solicitud.  
   
  Para controlar qué propiedades se devuelven, anexe la opción de consulta `$select` a la dirección URL del conjunto de entidades.  Se ignorará la opción de consulta `$expand` si se utiliza.  
   

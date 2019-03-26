@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>Pasar parámetros a una dirección URL con la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
 
 Las acciones de la cinta de opciones se definen en el elemento de `<Actions>` de un elemento de `<CommandDefinition>` . Existen varias formas de pasar la información contextual de aplicaciones orientadas a modelos como parámetros de cadena de consulta a una dirección URL con la cinta de opciones.  
   

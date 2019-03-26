@@ -22,7 +22,7 @@ search.app:
 
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Crear, administrar, y publicar aplicaciones basadas en modelos con código
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
 Además de crear una aplicación basada en modelos usando el diseñador de aplicaciones PowerApps, puede mediante programación crear y administrar aplicaciones basadas en modelos. 
 

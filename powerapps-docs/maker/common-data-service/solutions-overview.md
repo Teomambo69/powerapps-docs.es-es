@@ -2,9 +2,9 @@
 title: Trabajar con soluciones en PowerApps | MicrosoftDocs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,18 +23,17 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-<a name="BKMK_Solutions"></a>   
+   
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
   En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como a otros componentes como entidades, conjuntos de opciones, etc. Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor independiente de software (ISV).
   
-Más información: [Notas del producto: Patrones y principios para los creadores de soluciones](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
+Más información: [Notas del producto: Administración del ciclo de vida de las soluciones](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Si es un ISV que crea una aplicación que va a distribuir, deberá usar soluciones. Para obtener más información sobre cómo usar soluciones, consulte [Empaquetar y distribuir extensiones con soluciones](https://msdn.microsoft.com/library/gg334530.aspx).  
   
- Si está interesado en crear aplicaciones de PowerApps para el uso de la organización o en personalizar Dynamics 365, esto es lo que necesita saber sobre las soluciones:  
+ Si solo está interesado en crear aplicaciones de PowerApps para el uso de la organización o en personalizar aplicaciones Dynamics 365 for Customer Engagement, esto es lo que necesita saber sobre las soluciones:  
   
 -   Crear soluciones es opcional. Puede crear o personalizar aplicaciones en su entorno de PowerApps directamente sin tener que crear una solución.  
   

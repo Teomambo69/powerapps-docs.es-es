@@ -2,11 +2,11 @@
 title: Use complementos para extender procesos de negocio (Common Data Service para aplicaciones) | Microsoft Docs
 description: Un complemento es un montaje de .NET que puede cargar al Common Data Service para aplicaciones. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -77,5 +77,13 @@ Estos temas le guían por el proceso de creación de algunos complementos básic
 Estos temas proporcionan los detalles que usará para crear complementos.
 
 - [Escribir un complemento](write-plug-in.md)
+- [Administrar excepciones](handle-exceptions.md)
 - [Registro de un complemento](register-plug-in.md)
 - [Depuración de complementos](debug-plug-in.md)
+- 
+Estos temas proporcionan información adicional sobre la escritura o la depuración de complementos o sobre el análisis de su rendimiento.
+
+- [Suplantar a un usuario](impersonate-a-user.md)
+- [Registro y seguimiento](logging-tracing.md)
+- [Analizar el rendimiento](analyze-performance.md)
+- [Obtener acceso a recursos web externos](access-web-services.md)]

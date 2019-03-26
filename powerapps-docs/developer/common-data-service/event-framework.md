@@ -18,8 +18,8 @@ search.app:
 # <a name="event-framework"></a>Marco de trabajo de eventos
 
 <!-- Re-write from
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/event-execution-pipeline
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
 
 See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
 
@@ -27,9 +27,9 @@ See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7t
 Make sure to call out the changes due to the legacy update messages. That information was moved.
 
 See 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
 
 
 -->
@@ -61,6 +61,33 @@ Un paso proporciona la información sobre a qué mensaje deben responder las ext
 Normalmente, se puede esperar encontrar un mensaje para la mayoría de las clases *Request* en los espacios de nombres <xref:Microsoft.Crm.Sdk.Messages> o<xref:Microsoft.Xrm.Sdk.Messages>, pero también encontrará mensajes para cualquier acción personalizada que se haya creado en la organización. Las operaciones que conlleven metadatos de la entidad no están disponibles.
 
 Los datos sobre mensajes se almacena en las entidades [SdkMessage](reference/entities/sdkmessage.md) y [SdkMessageFilter](reference/entities/sdkmessagefilter.md). La herramienta de registro de complementos filtrará esta información para mostrar solo los mensajes válidos.
+
+Para comprobar si una combinación de mensaje y entidad admite la ejecución de complementos usando una consulta de base de datos, usa Búsqueda avanzada o una herramienta de la comunidad (p. ej., [Creador de FetchXML](http://fxb.xrmtoolbox.com)) para ejecutar la siguiente consulta fetchXML. Cuando se usa Búsqueda avanzada, debe crear la consulta de forma interactiva.
+
+```xml
+<fetch>
+  <entity name='sdkmessage' >
+    <attribute name='name' />
+    <link-entity name='sdkmessagefilter' alias='filter' to='sdkmessageid' from='sdkmessageid' link-type='inner' >
+      <filter type='and' >
+        <condition attribute='iscustomprocessingstepallowed' operator='eq' value='1' />
+        <condition attribute='isvisible' operator='eq' value='1' />
+      </filter>
+      <attribute name='primaryobjecttypecode' />
+    </link-entity>
+    <filter>
+      <condition attribute='isprivate' operator='eq' value='0' />
+      <condition attribute='name' operator='not-in' >
+        <value>SetStateDynamicEntity</value>
+        <value>RemoveRelated</value>
+        <value>SetRelated</value>
+       <value>Execute</value>
+      </condition>
+    </filter>
+    <order attribute='name' />
+  </entity>
+</fetch>
+```
 
 > [!CAUTION]
 > El mensaje `Execute` está disponible, pero no debe registrar normalmente las extensiones ya que lo llaman todas las operaciones.
@@ -94,27 +121,4 @@ Si la extensión es un complemento, recibirá un parámetro que implementa la in
 
 Si la extensión es un webhook o extremo de bus de Azure Service, los datos que se enviarán al extremo registrado estarán en el formulario de un <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext> que implementa ambos <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> y <xref:Microsoft.Xrm.Sdk.IExecutionContext>
 
-### <a name="information-about-the-operation"></a>Información acerca de la operación
-
-Las propiedades de la interfaz <xref:Microsoft.Xrm.Sdk.IExecutionContext> son las que ofrecen la mayor parte de los detalles sobre el operación que se ha producido.
-
-Dos de las propiedades clave acerca del evento se encuentran en las propiedades <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>. Estos valores <xref:Microsoft.Xrm.Sdk.ParameterCollection> contienen los datos de la operación.
-
-Todas las propiedades de <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> son de solo lectura, pero la extensión puede modificar el contenido de las propiedades que son colecciones.
-
-En las fases **PreValidation** y **PreOperation**, la propiedad <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> contiene los parámetros de la clase <xref:Microsoft.Xrm.Sdk.OrganizationRequest>.
-
-En la fase **PostOperation**, <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> contiene los parámetros de la clase <xref:Microsoft.Xrm.Sdk.OrganizationResponse> que devolvió la operación.
-
-### <a name="shared-variables"></a>Variables compartidas
-
-La propiedad <xref:Microsoft.Xrm.Sdk.IExecutionContext.SharedVariables> permite incluir los datos que se pueden pasar de un complemento a un paso que se produce después en la canalización de ejecuciones. Dado que este es un valor de <xref:Microsoft.Xrm.Sdk.ParameterCollection>, los complementos pueden agregar, leer o modificar propiedades para compartir datos con pasos posteriores.
-
-### <a name="entity-images"></a>Imágenes de entidad
-
-Al registrar una paso para un complemento que incluye una entidad como uno de los parámetros, tiene la opción de especificar que una copia de los datos de la entidad se incluya como *instantánea* o imagen mediante las propiedades <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> y/o <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages>.
-
-Estos datos proporcionan un punto de comparación para los datos de entidad mientras atraviesan la canalización de eventos. El uso de estas imágenes proporciona un rendimiento mucho mejor que incluir código en un complemento para recuperar una entidad solo para comparar los valores de atributo
-
-
-
+Para obtener más información sobre el contexto de ejecución, lea [Conocer el contexto de ejecución](understand-the-data-context.md).

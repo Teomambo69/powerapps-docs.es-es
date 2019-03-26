@@ -2,13 +2,13 @@
 title: Pasar los datos de una página como parámetros de las acciones de la cinta de opciones (aplicaciones orientadas a modelos) | Documentos de Microsoft
 description: 'En este tema se describen las opciones para usar el elemento de <CrmParameter> para recuperar estos valores. '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 02/15/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: KumarVivek
-ms.author: kvivek
-manager: shilpas
+author: hazhouMSFT
+ms.author: hazhou
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -17,13 +17,11 @@ search.app:
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions -->
-
 Cuando define una acción en una cinta de opciones, suele necesario pasar datos desde la página a una función de JavaScript o a una dirección URL. En este tema se describen las opciones para usar el elemento [\<CrmParameter\>](https://msdn.microsoft.com/library/gg309332.aspx) para recuperar estos valores.
 
 ## <a name="form-and-grid-context-in-ribbon-actions"></a>Contexto de formulario y cuadrícula en las acciones de la cinta
 
-Para pasar la información del contexto de ejecución (*contexto de forma* o *contexto cuadrícula*) a la función JavaScript para las acciones de la cinta, especifique **PrimaryControl** como el valor de `<CrmParameter>` en la definición de la cinta. El valor de PrimaryControl que se pasa se usa como argumento en la función de JavaScript que proporciona el *contexto de forma* o *contexto cuadrícula* según donde se ejecute el comando de la cinta. 
+Para pasar la información del contexto de ejecución (*contexto de formulario* o *contexto cuadrícula*) a la función JavaScript para las acciones de la cinta, especifique **PrimaryControl** como el valor de contexto de formulario o **SelectedControl** para el contexto de cuadrícula como el valor `<CrmParameter>` en la definición de la cinta. **SelectedControl** pasará en el contexto de la cuadrícula, para las subcuadrículas y las cuadrículas de página principal. **PrimaryControl** o el valor **SelectedControl** se usa como argumento en la característica de JavaScript para *contexto de formulario* o *contexto de cuadrícula* respectivamente. 
 
 Por ejemplo, aquí tenemos una definición de la cinta de ejemplo donde pasamos el parámetro **PrimaryControl** a la función JavaScript:
 
@@ -39,7 +37,7 @@ Por ejemplo, aquí tenemos una definición de la cinta de ejemplo donde pasamos 
 </CommandDefinition>
 ```
 
-A continuación, en el archivo de recursos web **new_mySampleScript.js** al que se hace referencia en el ejemplo anterior, defina la función JavaScript con la variable **primaryControl** como argumento. Este argumento proporciona el contexto de *formulario* o *cuadrícula* según donde se ejecute el comando de la cinta:
+A continuación, en el archivo de recursos web **new_mySampleScript.js** al que se hace referencia en el ejemplo anterior, defina la función JavaScript con la variable **primaryControl** como argumento. Este argumento proporciona el contexto de *formulario* donde se ejecute el comando de la cinta:
 
 ```JavaScript
 function mySampleFunction(primaryControl) {

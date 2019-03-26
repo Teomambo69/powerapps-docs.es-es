@@ -86,7 +86,7 @@ Cuando se crea una clave, el sistema valida que la plataforma puede admitir la c
 
 ### <a name="unicode-characters-in-key-value"></a>Caracteres Unicode en valor de clave
 
-Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `<``>`,`*`,`%`,`&`,`:`,`\\`, las acciones de revisión o upsert no funcionarán. 
+Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `<`,`>`,`*`,`%`,`&`,`:`,`/`,`\\` las acciones de revisión o upsert no funcionarán. 
 
 Si solo necesita unicidad, este método funciona, pero si necesita usar estas claves como parte de la integración de datos, entonces es mejor crear la clave en los campos que no tendrán datos con dichos caracteres.
 

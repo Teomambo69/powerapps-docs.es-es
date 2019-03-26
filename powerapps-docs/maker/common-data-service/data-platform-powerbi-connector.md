@@ -1,13 +1,13 @@
 ---
 title: Crear un informe de PowerBI | Microsoft Docs
 description: Conectarse a sus datos desde PowerBI Desktop usando el conector de Common Data Service for Apps.
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -85,7 +85,7 @@ Como ejemplo, si tuviera un conjunto de opciones en la entidad llamado ApprovalS
 * ApprovalStatus: mostrará un valor entero único para cada elemento del conjunto de opciones, esto resulta útil al aplicar filtros, de modo que no se verá afectado si realiza cambios futuros en el nombre para mostrar.
 * ApprovalStatus_display: mostrará el nombre para mostrar fácil de usar del elemento y se usa con mayor frecuencia al mostrar la opción en una tabla o un gráfico.
 
-    |ApproalStatus|ApprovalStatus_Display|
+    |ApprovalStatus|ApprovalStatus_Display|
     |---------|---------|
     1|Enviado
     2|En revisión

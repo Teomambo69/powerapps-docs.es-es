@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service-for-apps"></a>Tutorial: Configurar Azure (SAS) para integración con Common Data Service para aplicaciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
 Este tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de CDS para aplicaciones registrados en Azure Service Bus.  
   

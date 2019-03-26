@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>Tutorial: Registrar un complemento basado en Azure con la herramienta de registro de complementos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
 
 Este tutorial muestra cómo registrar un paso del extremo de servicio con la herramienta de registro de complementos. Una vez configurado, Dynamics 365 (online) Common Data Service para aplicaciones puede publicar el contexto de ejecución de la operación actual a un extremo de la solución de Azure. Para este tutorial, el paso se registra para publicar el contexto de ejecución del mensaje <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> para una entidad `Account` en el Azure Service Bus.  
   

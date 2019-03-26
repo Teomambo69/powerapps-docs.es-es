@@ -1,5 +1,5 @@
 ---
-title: Detectar datos duplicados con la API web (Common Data Service for Apps) | Microsoft Docs
+title: Detectar datos duplicados con la API web (Common Data Service para aplicaciones) | Microsoft Docs
 description: Lea cómo detectar duplicados con el encabezado MSCRM.SuppressDuplicateDetection y la API web de Common Data Service para aplicaciones
 ms.custom: ''
 ms.date: 10/31/2018

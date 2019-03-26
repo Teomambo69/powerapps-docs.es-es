@@ -62,10 +62,7 @@ El final del lote debe contener un indicador de finalización como el siguiente:
   
 ```  
 --batch_WKQS9Yui9r--  
-```  
-  
->[!NOTE]
->  La API web no admite la preferencia odata.continue-on-error. Los errores que se producen en el lote detendrán el procesamiento del resto del lote.  
+```   
   
 <a name="bkmk_ChangeSets"></a>
 

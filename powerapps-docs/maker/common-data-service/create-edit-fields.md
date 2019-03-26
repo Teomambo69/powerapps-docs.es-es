@@ -1,7 +1,7 @@
 ---
 title: Cómo crear y editar campos para Common Data Service para aplicaciones | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/08/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -14,7 +14,7 @@ applies_to:
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
@@ -45,16 +45,25 @@ La información de este tema le ayudará a elegir el diseñador que puede usar.
 
 Debe usar el portal PowerApps para crear y editar campos para Common Data Service para aplicaciones a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
-- Crear un campo de búsqueda de clientes
-- Crear un campo en una solución distinta de la solución predeterminada de CDS
-- Definir transiciones de razón para el estado
-- Editar varios campos al mismo tiempo
-- Habilitar auditoría
-- Habilitar perfiles de seguridad de campo
-- Seleccionar si el campo aparece en el filtro global en la experiencia interactiva
-- Seleccionar si el campo se puede ordenar en paneles de experiencia interactiva
-- Establecer un nivel de requisito de campo como Recomendado por la empresa
-- Establecer propiedades administradas para un campo
+- Crear un campo de búsqueda de clientes. 
+   - Más información: [Diferentes tipos de búsquedas](types-of-fields.md#different-types-of-lookups)
+- Crear un campo en una solución distinta de la solución predeterminada de CDS. 
+   - Para obtener más información: [Información general de las soluciones](solutions-overview.md)
+- Definir transiciones de razón para el estado. 
+   - Más información: [Definir las transiciones de razón para el caso o las entidades personalizadas](define-status-reason-transitions.md)
+- Editar varios campos al mismo tiempo.
+- Habilitar la auditoría. 
+   - Más información: [Información general sobre auditorías](../../developer/common-data-service/auditing-overview.md)
+- Habilitar perfiles de seguridad de campo. 
+   - Más información: [Entidades de seguridad de campo](../../developer/common-data-service/field-security-entities.md)
+- Seleccionar si el campo aparece en el filtro global en la experiencia interactiva. 
+   - Más información: [Configurar paneles de experiencia interactiva de aplicaciones basadas en modelos](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- Seleccionar si el campo se puede ordenar en paneles de experiencia interactiva. 
+   - Más información: [Configurar paneles de experiencia interactiva de aplicaciones basadas en modelos](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- Establecer un nivel de requisito de campo como Recomendado por la empresa. 
+   - Más información: [Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones basadas en modelos](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+- Establecer propiedades administradas para un campo. 
+   - Más información: [Establecer propiedades administradas para campos](set-managed-properties-for-field.md)
 
 > [!NOTE]
 > Puede crear un campo de búsqueda en el portal PowerApps o en el explorador de soluciones creando una relación de uno a varios en la entidad. Pero sólo el explorador de soluciones ofrece la opción de crear esta relación cuando se crea un campo.

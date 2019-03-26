@@ -21,7 +21,7 @@ La plataforma Common Data Service para aplicaciones aplica una restricción adic
   
 ### <a name="get-the-public-key-token"></a>Obtener el token de clave pública  
   
-1.  Cargue el ensamblado que contiene el complemento sin conexión en la herramienta de registro de complementos. Para obtener más información sobre cómo usar la herramienta, consulte [Tutorial: registro de un complemento con la herramienta de registro de complementos](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool).  
+1.  Cargue el ensamblado que contiene el complemento sin conexión en la herramienta de registro de complementos. Para obtener más información sobre cómo usar la herramienta, consulte [Registrar un complemento](../register-plug-in.md).  
   
 2.  Seleccione el ensamblado de complementos en la vista de árbol de la herramienta.  
   
@@ -43,5 +43,5 @@ La plataforma Common Data Service para aplicaciones aplica una restricción adic
   
 ### <a name="see-also"></a>Vea también  
  [Desarrollo de complementos](/dynamics365/customer-engagement/developer/plugin-development)   
- [Ejemplo: complemento básico](/dynamics365/customer-engagement/developer/sample-create-basic-plugin)   
+ [Ejemplo: Crear un complemento básico](../org-service/samples/basic-followup-plugin.md)   
  [Registrar e implementar complementos](/dynamics365/customer-engagement/developer/register-deploy-plugins)

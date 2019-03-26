@@ -89,4 +89,4 @@ Puede realizar las siguientes acciones para una sola entidad:
 
  [Herramientas de desarrollador para CDS for Apps](developer-tools.md)<br />
  [Personalizar metadatos de entidad](customize-entity-metadata.md)<br />
- [Analizar el rendimiento del complemento](/dynamics365/customer-engagement/developer/analyze-plugin-performance)<br />
+ 

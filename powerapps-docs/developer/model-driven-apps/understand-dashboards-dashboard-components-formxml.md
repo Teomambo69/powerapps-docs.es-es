@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>Comprender los paneles: FormXML y componentes de panel
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
 
 Los paneles son uno de los diferentes tipos de formularios en aplicaciones basadas en modelos. Puede usar el atributo de `SystemForm.Type` o de `UserForm.Type` para determinar si el formulario es un panel. Un formulario de tipo de panel tiene el valor de propiedad "0".  
 

@@ -167,4 +167,6 @@ Este es un resumen de cada columna del informe.
 
 
 ## <a name="see-also"></a>Vea también
-[Guía y prácticas recomendadas para generar soluciones de PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/guidance/)
+[Prácticas recomendadas e instrucciones para Common Data Service para aplicaciones](../../developer/common-data-service/best-practices/index.md)<br />
+[Prácticas recomendadas e instrucciones para aplicaciones basadas en modelos](../../developer/model-driven-apps/best-practices/index.md)<br />
+[Problemas y soluciones comunes para el Comprobador de soluciones](common-issues-resolutions-solution-checker.md)<br />

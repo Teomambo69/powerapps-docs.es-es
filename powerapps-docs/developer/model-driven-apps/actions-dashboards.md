@@ -22,7 +22,7 @@ search.app:
 
 # <a name="actions-on-dashboards"></a>Acciones en los paneles
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
 
 Puede realizar acciones, como crear, recuperar, actualizar o eliminar paneles que pertenecen a una organización y a un usuario.  
   

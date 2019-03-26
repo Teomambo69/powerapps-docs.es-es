@@ -2,7 +2,7 @@
 title: Autenticación con las aplicaciones de .NET Framework (Common Data Service para aplicaciones) | Microsoft Docs
 description: Cómo las aplicaciones de .NET Framework se pueden autenticar en Common Data Service para aplicaciones
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -55,9 +55,6 @@ Use la versión 4.6.2 de .NET Framework o superior al crear aplicaciones cliente
 > Haga clic con el botón derecho del mouse en el nombre del proyecto en Visual Studio y luego haga clic en **Propiedades**. En la pestaña **Depuración** puede desactivar la opción **Habilitar proceso de hospedaje de Visual Studio**. 
 >
 > Esto afecta solo a la experiencia de depuración en VS 2015. Esto no afecta a los archivos binarios o ejecutables que se crean. El mismo problema no se produce en Visual Studio 2017.
-
-> [!IMPORTANT]
-> Cuando se desarrollan ensamblados de actividades de complementos y de flujo de trabajo, que no requieren autenticación, debe usar .NET Framework 4.5.2
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>Aplicaciones de .NET Framework sin ensamblados de SDK
 

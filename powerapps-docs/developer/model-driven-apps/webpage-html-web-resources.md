@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="webpage-html-web-resources"></a>Recursos web de página web (HTML)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
 
 Use los recursos web de la página web (HTML) para crear los elementos de la interfaz de usuario para las extensiones de cliente.
 

@@ -1,13 +1,13 @@
 ---
 title: Crear una relación entre entidades usando un campo de búsqueda | Microsoft Docs
 description: Instrucciones paso a paso sobre cómo crear una relación entre entidades en PowerApps usando un campo de búsqueda.
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 03/21/2018
-ms.author: clwesene
+ms.date: 02/21/2019
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -86,6 +86,9 @@ Actualmente solo está disponible mediante el menú Avanzado. En la página prin
 
 ## <a name="use-a-lookup-field-in-an-app"></a>Usar un campo de búsqueda en una aplicación
 Si [crea una aplicación automáticamente](../canvas-apps/data-platform-create-app.md) a partir de una entidad que contiene un campo de búsqueda, ésta aparece como control **Desplegable** que contiene datos del campo **Nombre principal** de la entidad.
+
+## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Agregue relaciones de 1:N y de N:N para las aplicaciones del lienzo
+Use la función **Relacionar** para vincular dos registros a través de una relación de uno a varios o de varios a varios en Common Data Service para aplicaciones. Más información: [Funciones Relacionar y Cancelar la relación en PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Generar una aplicación usando una base de datos de Common Data Service](../canvas-apps/data-platform-create-app.md)

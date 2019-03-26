@@ -2,7 +2,7 @@
 title: Tipos y operaciones de API web (Common Data Service para aplicaciones) | Microsoft Docs
 description: 'Este tema describe lo que está disponible para utilizarlo a través de la API web e introducirá temas importantes y cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/05/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -252,19 +252,20 @@ OData admite una gran variedad de tipos de datos pero Common Data Service para a
 |Memorando|Edm.String|Secuencia de caracteres UTF-8|  
 |Dinero|Edm.Decimal|Valores numéricos con precisión y escala fijas|  
 |Propietario|Propiedad de navegación de un solo valor|Una referencia al <xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" />. Los tipos de entidad systemuser y equipo heredan su propiedad ownerid del tipo de entidad principal.|  
+|Los atributos de lista desplegable|Edm.Int32|Entero de 32 bits firmado|  
+|Estado|Edm.Int32|Entero de 32 bits firmado|  
+|Estado|Edm.Int32|Entero de 32 bits firmado|  
+|String|Edm.String|Secuencia de caracteres UTF-8|  
+|Uniqueidentifier|Edm.Guid|Identificador único de 16 bytes (128 bits)|  
+
 <!-- TODO:
 |PartyList|Collection-valued navigation property to the `activityparty` entity type.|The activitypartyparticipationtypemask property contains a value to represent the role of the participant. See [Activity Party Types](../activityparty-entity.md#ActivityPartyTypes) for more information.|   -->
-|Picklist|Edm.Int32|Signed 32-bit integer|  
-|State|Edm.Int32|Signed 32-bit integer|  
-|Status|Edm.Int32|Signed 32-bit integer|  
-|String|Edm.String|Sequence of UTF-8 characters|  
-|Uniqueidentifier|Edm.Guid|16-byte (128-bit) unique identifier|  
-  
+
 <a name="bkmk_lookupProperties"></a>
  
 ### <a name="lookup-properties"></a>Propiedades de búsqueda
 
-Para la mayoría de las propiedades de navegación de un solo valor encontrará una propiedad calculada de sólo lectura que use la convención de nomenclatura siguiente: `_<name>_value` donde `<name>` coincide con el nombre de la propiedad de navegación de un solo valor. La excepción a este patrón es cuando un atributo de búsqueda de la entidad puede aceptar varios tipos de referencias de entidad. Un ejemplo común es cómo el atributo `customerid` de la entidad `incident` se puede establecer en una referencia que sea una entidad `contact` o `account`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades de navegación de valor único](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) encontrará  `customerid_account` y `customerid_contact` como propiedades de navegación de un solo valor aparte para reflejar el cliente asociado a una oportunidad. Si establece una de estas propiedades de navegación de un solo valor, la otra se establecerá como nula porque ambas están enlazadas al atributo `customerid`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) encontrará una propiedad de búsqueda `_customerid_value` que contiene el mismo valor que está establecido para cualquiera de las propiedades de navegación de un solo valor que contenga un valor.  
+Para la mayoría de las propiedades de navegación de un solo valor encontrará una propiedad calculada de sólo lectura que use la convención de nomenclatura siguiente: `_<name>_value` donde `<name>` coincide con el nombre de la propiedad de navegación de un solo valor. La excepción a este patrón es cuando un atributo de búsqueda de la entidad puede aceptar varios tipos de referencias de entidad. Un ejemplo común es cómo el atributo `customerid` de la entidad `incident` se puede establecer en una referencia que sea una entidad `contact` o `account`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades de navegación de valor único](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) encontrará  `customerid_account` y `customerid_contact` como propiedades de navegación de un solo valor aparte para reflejar el cliente asociado a una oportunidad. Si establece una de estas propiedades de navegación de un solo valor, la otra se establecerá como nula porque ambas están enlazadas al atributo `customerid`. En las [<xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) encontrará una propiedad de búsqueda `_customerid_value` que contiene el mismo valor que está establecido para cualquiera de las propiedades de navegación de un solo valor que contenga un valor.  
   
 Generalmente, debe evitar el uso de propiedades de búsqueda y usar las propiedades de navegación de un solo valor correspondientes en su lugar. Estas propiedades se han incluido porque pueden ser útiles para determinados escenarios de integración. Estas propiedades son de solo lectura y calculadas porque simplemente reflejarán los cambios aplicados mediante la correspondiente propiedad de navegación de un solo valor.  
   

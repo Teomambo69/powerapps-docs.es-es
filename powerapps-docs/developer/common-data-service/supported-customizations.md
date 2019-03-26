@@ -2,7 +2,7 @@
 title: Personalizaciones compatibles para Common Data Service para aplicaciones (Common Data Service para aplicaciones) | Microsoft Docs
 description: Lea cómo puede personalizar Common Data Service para aplicaciones mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en documentos.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 
 <!-- This is the portion of the old topic that applies to CDS
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->
 
 
@@ -86,17 +86,16 @@ La capacidad para crear las actividades de flujo de trabajo personalizadas (ensa
 
 ## <a name="support-for-net-framework-versions"></a>Compatibilidad con las versiones de .NET Framework
 
-A continuación se describen las consideraciones sobre compatibilidad del código personalizado escrito con Microsoft .NET Framework 4.5.2.
+A continuación se describen las consideraciones sobre compatibilidad del código personalizado escrito con Microsoft .NET Framework 4.6.2.
 
-- Cualquier cliente de servicio web creado con Microsoft .NET Framework 4.5.2 o posterior que llama a los servicios web es completamente compatible en CDS para aplicaciones.
+- Cualquier cliente de servicio web creado con Microsoft .NET Framework 4.6.2 o posterior que llama a los servicios web es completamente compatible en CDS para aplicaciones.
 
 > [!IMPORTANT]
 > Debe crear cualquier aplicación de cliente personalizada usando Microsoft .NET Framework 4.6.2 o posterior. Solo podrán conectar las aplicaciones que utilizan Seguridad de capa de transporte (TLS) 1.2 o superior. TLS 1.2 no es el protocolo predeterminado usado por .NET Framework 4.5.2, pero está en .NET Framework 4.6.2.
 > 
 > Si los clientes diseñados para versiones anteriores de Dynamics 365 Customer Engagement están diseñados para conectarse con cualquier versión o tipo de implementación puede prepararse volviendo a compilar la aplicación para usar .NET Framework 4.6.2. Más información: [Entrada de blog: Próximas actualizaciones de seguridad de conexión de Dynamics 365 Customer Engagement](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 
-- Se admiten todos los ensamblados .NET creados con Microsoft .NET Framework 4.5.2 para usar en CDS para aplicaciones como ensamblado de complemento o como actividad de flujo de trabajo personalizada.
-- Se admite cualquier visualización (gráfico) creada con .NET Framework 4.5.2.
+- Se admiten todos los ensamblados .NET creados con Microsoft .NET Framework 4.6.2 para usar en CDS para aplicaciones como ensamblado de complemento o como actividad de flujo de trabajo personalizada.
 
 ## <a name="unsupported-customizations"></a>Personalizaciones no admitidas
 

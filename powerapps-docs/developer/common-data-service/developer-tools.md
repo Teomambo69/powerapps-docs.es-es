@@ -1,9 +1,9 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
-description: <Description>
+title: Herramientas y recursos de desarrollo (Common Data Service para aplicaciones) | Microsoft Docs
+description: Información sobre las herramientas y recursos disponibles para trabajar con soluciones.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/31/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -15,10 +15,6 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- The information about SDK assemblies should be found elsewhere
-Perhaps this topic should call out the available tools at a high level?
-Community tools should go here?
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/developer-tools -->
 
 # <a name="developer-tools-and-resources"></a>Herramientas y recursos de desarrollo
 
@@ -33,7 +29,7 @@ Las siguientes herramientas se distribuyen en paquetes de NuGet. El tema [Guía 
 |Herramienta de generación de código `CrmSvcUtil.exe`|Herramienta de generación de código de la línea de comandos que genera clases de .NET Framework enlazadas en tiempo que representan el modelo de datos de la entidad que usa el servicio de la organización. <br />Más información: <br />[Servicio de organización](work-with-data-cds.md#organization-service)<br />[Crear las clases de entidad con enlace en tiempo de compilación con la herramienta de generación de código ](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
 |Herramienta Configuration Migration `DataMigrationUtility.exe`|Usado para mover datos de configuración en los entornos. Los datos de configuración se usan para definir funciones personalizadas y normalmente se almacenan en entidades personalizadas. Esta herramienta no está diseñada para mover datos profesionales. <br /> Más información: [Guía del administrador de Common Data Service para aplicaciones: Mover datos de configuración entre instancias y organizaciones con la herramienta de migración de configuración](/dynamics365/customer-engagement/admin/manage-configuration-data)|
 |Package Deployer `PackageDeployer.exe`|Se usa para implementar paquetes en las instancias de Common Data Service para aplicaciones. El paquete es una unidad instalable que incluye soluciones. <br /> Más información: <br />[Implementar paquetes de soluciones](introduction-solutions.md#deploy-solution-packages)<br />[Crear paquetes para Package Deployer de CDS for Apps](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
-|Herramienta de registro de complementos `PluginRegistration.exe`|Herramienta usada para suscribir tipos de complementos ensamblados de .NET a eventos del servidor. <br />Más información: <br />[Crear un complemento](apply-business-logic-with-code.md#create-a-plug-in)<br />[Tutorial: registrar un complemento mediante la herramienta de registro de complementos](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
+|Herramienta de registro de complementos `PluginRegistration.exe`|Herramienta usada para suscribir tipos de complementos ensamblados de .NET a eventos del servidor. <br />Más información: <br />[Crear un complemento](apply-business-logic-with-code.md#create-a-plug-in)<br />[Registro de un complemento](register-plug-in.md)|
 |Herramienta SolutionPackager `SolutionPackager.exe`|Herramienta que puede descomponer de forma reversible un archivo comprimido de solución de Common Data Service para aplicaciones en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente.<br /> Más información: <br />[Desarrollo del equipo de soluciones](introduction-solutions.md#team-development-of-solutions)<br />[Use la herramienta SolutionPackager para comprimir para extraer un archivo de solución](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
 ## <a name="net-sdk-assemblies"></a>Ensamblados .NET SDK 

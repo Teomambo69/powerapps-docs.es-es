@@ -1,12 +1,12 @@
 ---
-title: Tutorial para crear una entidad personalizada que tiene componentes con PowerApps | Microsoft Docs
-description: Tutorial instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
+title: Crear una entidad personalizada que tiene componentes con PowerApps | Microsoft Docs
+description: Tema con las instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: tutorial
-ms.date: 06/22/2018
+ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -15,11 +15,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps
+# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Crear una entidad personalizada que tenga componentes en PowerApps
 
 Con in PowerApps puede personalizar su aplicación para que se ajuste más al sector, la nomenclatura y los procesos de negocio únicos de la organización. El desarrollo de aplicaciones de PowerApps incluye agregar entidades predefinidas estándar o crear entidades personalizadas. Una entidad define la información a la que desea realizar seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. 
 
-En este tutorial cree una entidad y luego agregue o personalice componentes clave como campos, relaciones, vistas, y formularios. Aprenderá a:
+En este tema creará una entidad y luego agregará o personalizará componentes clave como campos, relaciones, vistas, y formularios. Aprenderá a:
 
 - Crear una entidad personalizada
 - Agregar campos personalizados a la entidad
@@ -27,7 +27,7 @@ En este tutorial cree una entidad y luego agregue o personalice componentes clav
 - Personalizar vistas 
 - Personalizar formularios
 
-Tutorial seguirá a la compañía, Contoso, que es un negocio de cuidado de animales domésticos que cuida perros y gatos. Contoso necesita una aplicación para seguimiento de clientes y animales domésticos que pueden usar los empleados a través de una variedad de dispositivos.
+El tema seguirá a la compañía, Contoso, que es un negocio de cuidado de animales domésticos que cuida perros y gatos. Contoso necesita una aplicación para seguimiento de clientes y animales domésticos que pueden usar los empleados a través de una variedad de dispositivos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -117,17 +117,16 @@ Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_
 
 Omita este paso si sólo desea usar la entidad Animal doméstico en una aplicación de lienzo. 
 
-1. En el panel de navegación izquierdo de PowerApps, seleccione **Aplicaciones basadas en modelos**.
-2. En el panel de navegación izquierdo, expanda **Datos**, seleccione **Entidades** y seleccione **Animal doméstico**.
-3. Seleccione la pestaña **Formularios** y, a continuación seleccione **Información** junto al tipo de formulario **Principal** para abrir el editor de formularios.
+1. En el panel de navegación izquierdo, expanda **Datos**, seleccione **Entidades** y seleccione **Animal doméstico**.
+2. Seleccione la pestaña **Formularios** y, a continuación seleccione **Información** junto al tipo de formulario **Principal** para abrir el editor de formularios.
     > [!div class="mx-imgBorder"] 
     > ![Editar formulario principal](media/create-custom-entity/main-form-edit.png)
-4. En el editor de formularios, arrastre y coloque los campos **Especie**, **Raza**, **Fecha de cita**, y **Cuenta** situados en el panel del Explorador de campos en la sección General del lienzo de formulario hasta que el formulario tenga este aspecto.
+3. En el editor de formularios, arrastre y coloque los campos **Especie**, **Raza**, **Fecha de cita**, y **Cuenta** situados en el panel del Explorador de campos en la sección General del lienzo de formulario hasta que el formulario tenga este aspecto.
     > [!div class="mx-imgBorder"] 
     > ![Seleccionar campos para formulario principal](media/create-custom-entity/main-form-edit2.png) 
-5. Seleccione **Guardar**.
-6. Seleccione **Publish**.
-7. Seleccione **Guardar y cerrar** para cerrar el diseñador de formularios.
+4. Seleccione **Guardar**.
+5. Seleccione **Publish**.
+6. Seleccione **Guardar y cerrar** para cerrar el diseñador de formularios.
 
 ## <a name="add-the-custom-entity-to-an-app"></a>Agregue la entidad personalizada a una aplicación
 
@@ -135,6 +134,6 @@ La entidad está lista ahora para usarse para crear una basada de lienzo o basad
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial aprendió cómo crear una entidad que puede usarse para crear una aplicación útil. 
+En este tema, aprendió cómo crear una entidad que puede usarse para crear una aplicación útil. 
 - Para obtener más información sobre cómo crear una aplicación basada en modelo, consulte [Crear la primera aplicación basada en modelo](../model-driven-apps/build-first-model-driven-app.md).
 - Para obtener más información sobre cómo crear una aplicación de lienzo, consulte [Cree una aplicación desde cero](../canvas-apps/get-started-create-from-blank.md).

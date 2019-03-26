@@ -21,7 +21,7 @@ search.app:
 ---
 # <a name="configure-connection-roles"></a>Configurar roles de conexión
 
-Con Common Data Service para aplicaciones puede definir **conexiones** entre registros de entidad sin crear una relación de entidad. En aplicaciones basadas en modelos los usuarios pueden establecer un vínculo con nombre entre registros para establecer una relación menos formal que no justifique la creación de una relación entre entidades real. Algunos ejemplos son *amigo*, *hermano*, *esposo*, *asistente* y *parte interesada*. Algunas conexiones pueden que el también pueden ser recíprocas, como *hijo* y *padre*, *marido* y *esposa*, o *doctor* y *paciente*.
+Con Common Data Service para aplicaciones puede definir **conexiones** entre registros de entidad sin crear una relación de entidad. En aplicaciones basadas en modelos los usuarios pueden establecer un vínculo con nombre entre registros para establecer una relación menos formal que no justifique la creación de una relación entre entidades real. Algunos ejemplos son *amigo*, *hermano*, *esposo*, *asistente* y *parte interesada*. Algunas conexiones puede que también sean recíprocas, como *hijo* y *padre*, *marido* y *esposa*, o *doctor* y *paciente*.
 
 Cuando las personas establezcan una conexión entre dos registros, también pueden agregar una descripción e información adicional como fechas de inicio y finalización para la relación. Más información: [Creación de conexiones para definir y ver relaciones entre registros](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
 
@@ -45,7 +45,7 @@ En esta vista puede ver todos los roles de conexión que estén disponibles para
 
 ## <a name="view-connection-roles-in-the-solution-explorer"></a>Vea roles de conexión en el explorador de soluciones.
 
-Puesto que los roles de conexión son *compatibles con las soluciones*, lo que significa que se pueden incluir en una solución, también puede agregar roles de conexión a una solución que distribuye.
+Puesto que los roles de conexión son *compatibles con las soluciones*, significa que se pueden incluir en una solución, también puede agregar roles de conexión a una solución que distribuye.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 

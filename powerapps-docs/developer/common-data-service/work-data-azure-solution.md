@@ -29,6 +29,6 @@ Un complemento interno denominado ServiceBusPlugin se proporciona con Common Dat
  También puede escribir una actividad personalizada de flujo de trabajo que pueda registrar el contexto de la ejecución en el bus de servicio e incluir esta actividad en los flujos de trabajo. El código de ejemplo para una actividad de flujo de trabajo personalizado con Azure se proporciona en el tema [Ejemplo: Actividad de flujo de trabajo personalizado con Azure](/dynamics365/customer-engagement/developer/sample-azure-aware-custom-workflow-activity) 
   
 ### <a name="see-also"></a>Vea también  
-[Escribir un complemento](write-plug-in.md)<br/>   
-[Canalización de ejecución del evento](event-framework.md#event-execution-pipeline)<br/>   
-[Entidad Service End point](reference/entities/serviceendpoint.md)<br/>
+[Escribir un complemento](write-plug-in.md)<br/>
+[Canalización de ejecución del evento](event-framework.md#event-execution-pipeline)<br/> 
+[Entidad ServiceEndpoint](reference/entities/serviceendpoint.md)<br/>

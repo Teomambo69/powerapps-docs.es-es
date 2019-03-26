@@ -2,17 +2,17 @@
 title: Definir las reglas de habilitación de la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
 description: Obtenga información sobre cómo definir las reglas específicas a supervisar cuando se habilitan los elementos de la cinta de opciones al configurar los elementos de la cinta de opciones.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 02/08/2019
 ms.service:
   - powerapps
 ms.custom:
   - ''
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
-author: JimDaly
-ms.author: jdaly
-manager: shilpas
-ms.reviewer: null
+author: JesseParsons
+ms.author: jeparson
+manager: annbe
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:
@@ -21,8 +21,6 @@ search.app:
 ---
 
 # <a name="define-ribbon-enable-rules"></a>Definir las reglas de habilitación de la cinta de opciones
-
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-enable-rules -->
 
 Al configurar los elementos de la cinta de opciones se pueden definir las reglas para supervisar cuando se habilitan los elementos de la cinta de opciones. El elemento `<EnableRule>` se usa de la siguiente manera:  
 
@@ -48,9 +46,9 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
 
 |   Value   |                                                                               Presentación                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       La barra de comandos se muestra mediante Microsoft Dynamics 365 for tablets.                                       |
+| `Modern`  |                                       La barra de comandos se muestra mediante [!INCLUDE[pn_moca_full](../../includes/pn-moca-full.md)].                                       |
 | `Refresh` |                                                      La barra de comandos se muestra mediante la interfaz de usuario actualizada.                                                      |
-| `Legacy`  | La cinta de opciones se muestra en los formularios de entidades que no se actualizaron o en una vista de lista en Dynamics 365 for Outlook. |
+| `Legacy`  | La cinta de opciones se muestra en los formularios de entidades que no se actualizaron o en una vista de lista en [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]. |
 
 ### <a name="crm-client-type-rule"></a>Regla de tipo de cliente CRM
 Usa el elemento `<CrmClientTypeRule>` para permitir la definición de reglas en función del tipo de cliente utilizado. Las opciones de tipo son las siguientes:  
@@ -60,27 +58,64 @@ Usa el elemento `<CrmClientTypeRule>` para permitir la definición de reglas en 
 -   `Outlook`  
 
 ### <a name="crm-offline-access-state-rule"></a>Regla de estado de acceso sin conexión de CRM
- Usa el elemento `<CrmOfflineAccessStateRule>`. Use este los criterios para habilitar un elemento de la cinta de opciones en función de si Dynamics 365 for Microsoft Office Outlook con acceso sin conexión está funcionando actualmente sin conexión.  
+ Usa el elemento `<CrmOfflineAccessStateRule>`. Use este criterio para habilitar un elemento de la cinta de opciones en función de si [!INCLUDE[pn_crm_outlook_offline_access](../../includes/pn-crm-outlook-offline-access.md)] está actualmente sin conexión.  
 
 ### <a name="crm-outlook-client-type-rule"></a>Regla de tipo de cliente Outlook de CRM
- Usa el elemento `<CrmOutlookClientTypeRule>`. Use esta regla si desea mostrar solo un botón para un tipo específico de Dynamics 365 for Outlook. Las opciones de tipo son las siguientes:  
+ Usa el elemento `<CrmOutlookClientTypeRule>`. Use esta regla si desea mostrar solo un botón para un tipo específico de [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]. Las opciones de tipo son las siguientes:  
 
 -   `CrmForOutlook`  
 
 -   `CrmForOutlookOfflineAccess`  
 
 ### <a name="custom-rule"></a>Regla personalizada
- Usa el elemento `<CustomRule>`. Use este tipo de regla para llamar a una función de una biblioteca de JavaScript que devuelve un valor booleano.  
+ Usa el elemento `<CustomRule>`. Use este tipo de regla para llamar a una función en una biblioteca de JavaScript que devuelva una promesa (interfaz unificada) o un valor booleano (interfaz unificada y cliente web).
+
+```JavaScript
+function EnableRule()
+{
+    const value = Xrm.Page.getAttribute("field1").getValue();
+    return value === "Active";
+}
+```
 
 > [!NOTE]
->  Las reglas personalizadas que no devuelven un valor rápidamente pueden afectar al rendimiento de la cinta de opciones. Si tiene que realizar la lógica que puede tardar algún tiempo en completarse, use la siguiente estrategia para crear su regla personalizada asincrónica:  
->   
-> 1.  Defina una regla que compruebe si tiene un objeto personalizado. Puede comprobar si tiene un objeto como `Window.ContosoCustomObject.RuleIsTrue` que acaba de adjuntar a la ventana.  
-> 2.  Si existe el objeto, debe devolverlo  
-> 3.  Si no existe el objeto, defina el objeto y establezca el valor como false.  
-> 4.  Antes de devolver un valor, use [settimeout](https://msdn.microsoft.com/library/ms536753\(VS.85\).aspx) <!-- TODO not sure about this link--> para ejecutar una función de devolución de llamada asincrónica para volver a establecer el objeto. Después devuelva false.  
-> 5.  Después de que la función de devolución de llamada haya realizado las operaciones necesarias para determinar el resultado correcto, establece el valor del objeto y usa el método `refreshRibbon` para actualizar la cinta de opciones.  
-> 6.  Cuando se actualiza la cinta de opciones, esta detecta el objeto así como el conjunto exacto de valores y se evalúa la regla.  
+>  Las reglas personalizadas que no devuelven un valor rápidamente pueden afectar al rendimiento de la cinta de opciones. Si tiene que realizar lógica que puede tardar algún tiempo en completarse (por ejemplo, una solicitud de red), use la siguiente estrategia para crear su regla personalizada asincrónica.
+
+ La reglas de la interfaz unificada admiten que se devuelva una promesa más que un valor booleano para la evaluación de reglas asincrónica. Si la promesa no se resuelve en 10 segundos, la regla se resolverá con un valor false.
+ > [!NOTE]
+>  Las reglas basadas en promesas solo funcionarán en la interfaz unificada, por lo que no se pueden usar si se sigue utilizando el típico cliente web.
+ ```JavaScript
+function EnableRule()
+{
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo');
+
+    return new Promise((resolve, reject) =>
+    {
+        request.onload = function (e)
+        {
+            if (request.readyState === 4)
+            {
+                if (request.status === 200)
+                {
+                    resolve(request.responseText === "true");
+                }
+                else
+                {
+                    reject(request.statusText);
+                }
+            }
+        };
+        request.onerror = function (e)
+        {
+            reject(request.statusText);
+        };
+
+        request.send(null);
+    });
+}
+```
+
 
 ### <a name="entity-rule"></a>Regla de entidad
  Usa el elemento `<EntityRule>`. Las reglas de la entidad permiten la evaluación de la entidad actual. Esto resulta útil al definir acciones personalizadas que se aplican a la plantilla de la entidad en lugar de a las entidades específicas. Por ejemplo, es posible que desee agregar un elemento de la cinta de opciones en todas las entidades excepto en algunas entidades específicas. Es más fácil definir la acción personalizada de la plantilla de la entidad que se aplica a todas las entidades y después usar una regla de la entidad para filtrar aquellas que se deben excluir.  
@@ -104,10 +139,10 @@ Usa el elemento `<CrmClientTypeRule>` para permitir la definición de reglas en 
  Usa el elemento `<OrRule>`. `OrRule` permite reemplazar el valor de comparación predeterminado AND para varios tipos de reglas de habilitación. Use el elemento `OrRule` para definir varias combinaciones posibles válidas para comprobar.
 
 ### <a name="outlook-item-tracking-rule"></a>Regla de seguimiento de elementos de Outlook
- Usa el elemento `<OutlookItemTrackingRule>`. Use el atributo `TrackedInCrm` de este elemento para determinar si se realiza el seguimiento del registro en Common Data Service para aplicaciones.  
+ Usa el elemento `<OutlookItemTrackingRule>`. Use el atributo `TrackedInCrm` de este elemento para determinar si se realiza el seguimiento del registro en PowerApps.  
 
 ### <a name="outlook-version-rule"></a>Regla de la versión de Outlook
- Usa el elemento `<OutlookVersionRule>`. Use esto para habilitar un elemento de la cinta de opciones de una versión determinada de Office Outlook, de la siguiente manera:  
+ Usa el elemento `<OutlookVersionRule>`. Use esto para habilitar un elemento de la cinta de opciones de una versión determinada de [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)], de la siguiente manera:  
 
 -   `2003`  
 
@@ -124,17 +159,8 @@ Usa el elemento `<CrmClientTypeRule>` para permitir la definición de reglas en 
 ### <a name="selection-count-rule"></a>Regla de recuento de selección
  Usa el elemento `<SelectionCountRule>`. Use este tipo de regla con una cinta de opciones para que aparezca una lista para habilitar un botón cuando se seleccionan los números de registros máximos y mínimos específicos en la cuadrícula. Por ejemplo, si el botón combina los registros, debe asegurarse de que al menos dos registros están seleccionados antes de habilitar el control de la cinta de opciones.  
 
-### <a name="sku-rule"></a>Regla de SKU
- Usa el elemento `<SkuRule>`. Use este tipo de regla para habilitar un elemento de la cinta de opciones para una versión de SKU determinada de Dynamics 365, de la siguiente manera:  
-
--   `OnPremise`  
-
--   `Online`  
-
--   `Spla`  
-
 ### <a name="value-rule"></a>Regla de valor
-Usa el elemento `<ValueRule>`. Use esta regla para comprobar el valor de un campo específico en el registro que se muestra en el formulario. Debe especificar `Field` y `Value` para comprobar.  
+Usa el elemento `<ValueRule>`. Use esta regla para comprobar el valor de un campo específico en el registro que se muestra en el formulario. Debe especificar `Field` y `Value` para comprobar.
 
 ### <a name="see-also"></a>Vea también  
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   

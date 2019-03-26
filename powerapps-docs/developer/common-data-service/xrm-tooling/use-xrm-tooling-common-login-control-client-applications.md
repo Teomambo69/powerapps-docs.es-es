@@ -2,7 +2,7 @@
 title: Usar el control de inicio de sesión común de útiles de XRM en las aplicaciones cliente (Common Data Service para aplicaciones)| Microsoft Docs
 description: 'El SDK de CDS para aplicaciones proporciona una plantilla para Visual Studio que le permite usar el control de inicio de sesión común en las aplicaciones cliente. El código para autenticación de CDS para aplicaciones, almacenamiento de credenciales y recuperación, y registro de diagnóstico está integrado en la plantilla, de modo que se pueden aprovechar rápidamente estas funciones en las aplicaciones cliente de Windows para CDS para aplicaciones.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,24 +25,22 @@ search.app:
 
 Existe una plantilla para Visual Studio que le permite usar el control de inicio de sesión común en las aplicaciones cliente. El código para autenticación de CDS para aplicaciones, almacenamiento de credenciales y recuperación, y registro de diagnóstico está integrado en la plantilla, de modo que se pueden aprovechar rápidamente estas funciones en las aplicaciones cliente de Windows para CDS para aplicaciones. El control común de inicio de sesión es una implementación de <xref:Microsoft.Xrm.Tooling.CrmConnectControl> y se asemeja a la siguiente imagen.  
   
- <!--TODO:
- ![XRM Tooling common login control](../media/crm-sdk-v6-commonlogincontrol.png "XRM Tooling common login control")   -->
+ 
+ ![Control de inicio de sesión común de útiles de XRM](../media/crm-sdk-v6-commonlogincontrol.png "Control de inicio de sesión común de útiles de XRM")
   
 <a name="Prereq"></a>
 
 ## <a name="prerequisites"></a>Requisitos previos
   
-- .NET Framework 4.5.2
-- Visual Studio 2012 o superior
-- Administrador del paquete de Nuget para la versión de Visual Studio  
+- .NET Framework 4.6.2
+- Visual Studio 2017 (recomendado)
 - Conectado a Internet para poder descargar/restaurar los paquetes de Nuget necesarios mientras usa la plantilla del proyecto.  
-- Plantillas SDK de CRM para Visual Studio que contienen la plantilla del control de inicio de sesión común. Puede obtenerla descargando las [plantillas de SDK de Microsoft Dynamics CRM](http://go.microsoft.com/fwlink/p/?LinkId=400925) de la galería de Visual Studio y haciendo doble clic en el archivo de `CRMSDKTemplates.vsix` para instalar la plantilla en Visual Studio.  
   
 <a name="NewProjectUsingTemplate"></a>
    
 ## <a name="create-a-wpf-application-using-the-common-login-control-template"></a>Crear una aplicación WPF con la plantilla de control de inicio de sesión común
   
- Aquí se describe una forma rápida para crear una aplicación Windows Presentation Foundation (WPF) que aprovecha el control de inicio de sesión común y el código subyacente para la autenticación, el almacenamiento de credenciales y la reutilización, y el seguimiento predeterminado o registro.  
+Aquí se describe una forma rápida para crear una aplicación Windows Presentation Foundation (WPF) que aprovecha el control de inicio de sesión común y el código subyacente para la autenticación, el almacenamiento de credenciales y la reutilización, y el seguimiento predeterminado o registro.  
   
 1.  Inicie Visual Studio y cree un nuevo proyecto.  
 2.  En el cuadro de diálogo **Nuevo proyecto**:  
@@ -51,8 +49,17 @@ Existe una plantilla para Visual Studio que le permite usar el control de inicio
     3.  Seleccione **Aplicación WPF para Dynamics 365**.  
     4.  Especifique el nombre y la ubicación del proyecto, y haga clic en **Aceptar**.  
   
- <!-- TODO:
- ![WPF Application for CDS for Apps template](../media/crm-sdk-v6-xrmtooling-newproject.png "WPF Application for CDS for Apps template")   -->
+> [!div class="mx-imgBorder"]
+> ![Aplicación WPF para la plantilla de CDS para aplicaciones](../media/crm-sdk-v6-xrm-tooling-newproject.png "Aplicación WPF para la plantilla de CDS para aplicaciones")   
+
+> [!NOTE]
+> **Problema conocido con Visual Studio 2015**
+> 
+> Cuando se ejecuta el proyecto/solución en VS 2015 en modo de depuración, es posible que no pueda conectarse. Esto ocurre independientemente de si está usando un marco de destino de 4.6.2 o más alto. Esto puede producirse porque el proceso de hospedaje de Visual Studio se compila con .NET 4.5, lo que significa de forma predeterminada que no es compatible con TLS 1.2. Puede deshabilitar el proceso de hospedaje de Visual Studio como solución. 
+>
+> Haga clic con el botón derecho del mouse en el nombre del proyecto en Visual Studio y luego haga clic en **Propiedades**. En la pestaña **Depuración** puede desactivar la opción **Habilitar proceso de hospedaje de Visual Studio**. 
+>
+> Esto afecta solo a la experiencia de depuración en VS 2015. Esto no afecta a los archivos binarios o ejecutables que se crean. El mismo problema no se produce en Visual Studio 2017.
   
 3.  Para probar el proyecto:  
   
@@ -76,18 +83,20 @@ Existe una plantilla para Visual Studio que le permite usar el control de inicio
   
     2.  En el cuadro de diálogo **Agregar nuevo artículo**, en la lista de plantillas instaladas, expanda **Visual C#** y seleccione **Plantillas SDK de CDS para aplicaciones**. Haga clic en **Formulario de inicio de sesión de CDS para aplicaciones WPF** y en **Aceptar**.  
   
- <!--TODO:
- ![Add the common login control template](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Add the common login control template")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Agregar la plantilla de control de inicio de sesión común](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Agregar la plantilla de control de inicio de sesión común")
   
 3.  El control de inicio de sesión `CrmLoginForm1.xaml` agregado recientemente se muestra en el área de diseñador de XAML. Si no se muestra, haga doble clic en el archivo `CrmLoginForm1.xaml` en el panel **Explorador de soluciones**.  
   
- <!--TODO: 
-![Verify that the login control renders properly](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Verify that the login control renders properly")   -->
+ 
+![Comprobar que el control de inicio de sesión se representa correctamente](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Comprobar que el control de inicio de sesión se representa correctamente")
   
 4.  Ahora debe llamar al control de inicio de sesión recién agregado desde la aplicación. Para ello, agregue un control **Botón** del archivo `MainWindow.xaml` y establezca el nombre y el contenido en **btnSignIn** y **Iniciar sesión en CDS para aplicaciones** respectivamente.  
   
- <!--TODO:
- ![Add a control to call the login form](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Add a control to call the login form")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Agregar un control para llamar al formulario de inicio de sesión](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Agregar un control para llamar al formulario de inicio de sesión")
   
 5.  Haga doble clic en el botón para agregar el código del evento de clic en el botón **btnSignIn** en el archivo `MainWindow.xaml.cs`.  
   
@@ -135,7 +144,7 @@ Existe una plantilla para Visual Studio que le permite usar el control de inicio
   
 8.  Así aparece el archivo `MainWindow.xaml.cs` después de agregar el código de los dos pasos anteriores:  
   
- <!--TODO: ![Sample code](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Sample code")   -->
+![Código de ejemplo](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Código de ejemplo")
   
 9. Para probar el proyecto:  
   
@@ -143,13 +152,15 @@ Existe una plantilla para Visual Studio que le permite usar el control de inicio
   
     2.  Pruebe la autenticación mediante sus credenciales para conectarse a CDS para aplicaciones y, a continuación, haga clic en **Iniciar sesión**. Si se realiza correctamente, aparecerá un mensaje que indica la versión y el nombre de la organización a la que está conectado. Haga clic en **Aceptar** para cerrar el mensaje.  
   
- <!--TODO:
- ![Project test results](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Project test results")   -->
+ 
+> [!div class="mx-imgBorder"]
+> ![Resultados de las pruebas del proyecto](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Resultados de las pruebas del proyecto") 
   
     3.  Si vuelve a hace clic en **Conectarse a Dynamics 365**, la aplicación le preguntará si desea elegir las credenciales guardadas en la última actividad de inicio de sesión o volver a especificar las nuevas credenciales.  
   
- <!--TODO:
- ![Stored credentials](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Stored credentials")   -->
+
+> [!div class="mx-imgBorder"]
+> ![Credenciales almacenadas](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Credenciales almacenadas")
   
 ### <a name="see-also"></a>Vea también  
 

@@ -2,11 +2,11 @@
 title: 'Tutorial: Depurar un complemento (Common Data Service para aplicaciones) | Microsoft Docs'
 description: 'Este tutorial es el segundo de una serie que le muestra cómo trabajar con los complementos. '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/28/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -60,6 +60,9 @@ Puesto que el complemento se ejecuta en un servidor remoto, no puede adjuntar un
 1. En el diálogo **Configuración de generador de perfiles** acepte la configuración predeterminada y haga clic en **Aceptar** para cerrar el cuadro diálogo.
 
     ![foo](media/tutorial-debug-plug-in-profiler-settings.png)
+
+
+Formar obtener más información acerca cómo ejecutar el generador de perfiles, consulte [Ejecute el generador de perfiles de complementos desde una ventana del símbolo del sistema](#run-profiler-standalone).
 
 ## <a name="capture-a-profile"></a>Capturar un perfil
 
@@ -122,3 +125,14 @@ Para obtener más información sobre tareas comunes que hará con los complement
 
 Si no sigue con el tutorial siguiente debe anular el registro del ensamblado de BasicPlugin que creó en este paso. Vea [Anular registro de ensamblado, complemento, y paso](tutorial-update-plug-in.md#unregister-assembly-plug-in-and-step) para obtener instrucciones.
 
+<a name="run-profiler-standalone"></a>
+
+## <a name="run-the-plug-in-profiler-from-a-command-prompt-window"></a>Ejecutar el generador de perfiles de complementos desde una ventana de símbolo del sistema
+
+ Aunque a menudo es preferible ejecutar el generador de perfiles de forma interactiva desde la herramienta de registro de complementos, el generador de perfiles se puede ejecutar desde una ventana del símbolo del sistema de la herramienta. Esto resulta útil para obtener el registro del perfil de complementos del servidor de un cliente de aplicaciones [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)] para depurar un complemento con errores. Un programador puede usar dicho registro para reproducir la ejecución del complemento en la herramienta de registro de complementos y depurar el complemento mediante [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)].
+
+### <a name="procedure-run-the-plug-in-profiler-from-a-command-prompt"></a>Procedimiento: Ejecutar el generador de perfiles de complementos desde el símbolo del sistema
+
+1. Abra una ventana del símbolo del sistema y establezca el directorio de trabajo en la carpeta donde descargó la herramienta de registro de complementos `PluginRegistration.exe`.
+2. Escriba este comando para ver los parámetros de tiempo de ejecución disponibles: `PluginProfiler.Debugger.exe /?`.  
+3. Revise la lista de parámetros compatibles y vuelva a ejecutar el programa PluginProfiler.Debugger.exe con los parámetros apropiados. 

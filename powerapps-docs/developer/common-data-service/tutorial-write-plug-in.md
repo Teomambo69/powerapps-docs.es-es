@@ -6,7 +6,7 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -48,13 +48,13 @@ Crear un complemento asincrónico registrado en el mensaje Crear de la entidad d
 
 ## <a name="create-a-plug-in-project"></a>Crear un proyecto de complemento
 
-Debe usar Visual Studio para escribir un complemento. Use estos pasos para escribir un complemento básico.
+Debe usar Visual Studio para escribir un complemento. Use estos pasos para escribir un complemento básico. Como alternativa, puede encontrar los archivos de la solución del complemento aquí: [Ejemplo: Crear un complemento básico](org-service/samples/basic-followup-plugin.md).
 
 ### <a name="create-a-visual-studio-project-for-the-plug-in"></a>Crear un proyecto en Visual Studio para el complemento
 
-1. Abra Visual Studio 2017 y abra un nuevo proyecto **Biblioteca de clase (.NET Framework)** mediante **.NET Framework 4.5.2**
+1. Abra Visual Studio 2017 y abra un nuevo proyecto **Biblioteca de clase (.NET Framework)** mediante **.NET Framework 4.6.2**
 
-    ![abra un nuevo proyecto de biblioteca de clases (.NET Framework) mediante .NET Framework 4.5.2](media/tutorial-write-plug-in-create-visual-studio-project.png)
+    ![abra un nuevo proyecto de biblioteca de clases (.NET Framework) mediante .NET Framework 4.6.2](media/tutorial-write-plug-in-create-visual-studio-project.png)
 
     El nombre usado para el proyecto será el nombre del complemento. Este tutorial usa el nombre `BasicPlugin`.
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **Administrar paquetes de NuGet...** en el menú contextual.
@@ -146,7 +146,7 @@ if (context.InputParameters.Contains("Target") &&
 ### <a name="about-the-code"></a>Acerca del código
 
 - El <xref:Microsoft.Xrm.Sdk.ITracingService> permite escribir en el registro de seguimiento.  Puede ver un ejemplo en la bloque de captura final. Más información: [Usar seguimiento](debug-plug-in.md#use-tracing)
-- El <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> proporciona el acceso al contexto del evento que ejecutó el complemento.  Más información: [Contexto de ejecución](write-plug-in.md#execution-context).
+- El <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> proporciona el acceso al contexto del evento que ejecutó el complemento.  Más información: [Entender el contexto de ejecución](understand-the-data-context.md).
 - El código comprueba que el contexto <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> incluya los parámetros esperados para la <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> para la que se registrará este complemento. Si la propiedad <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest.Target> está presente, la <xref:Microsoft.Xrm.Sdk.Entity> que se pasó a la solicitud estará disponible.
 - La interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> proporciona acceso a una variable de servicio que implementa la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationService> que proporciona los métodos que usted usará para interactuar con el servicio para crear la tarea.
 
@@ -230,10 +230,10 @@ Para registrar un complemento necesitará la herramienta de registro de compleme
 
     ![Cuadro de diálogo de registro de nuevo ensamblado](media/tutorial-write-plug-in-register-new-assembly-dialog.png)
 
-1. Compruebe que el **modo aislado** sea **espacio aislado** y la **ubicación** para almacenar el ensamblado sea **Base de datos**.
+1. Para los usuarios de Office 365, compruebe que el **modo aislado** sea **espacio aislado** y la **ubicación** para almacenar el ensamblado sea **Base de datos**.
 
     > [!NOTE]
-    > Otras opciones para **modo aislado** y **ubicación** se aplican a implementaciones locales de Microsoft Dynamics 365.
+    > Otras opciones para **modo aislado** y **ubicación** se aplican a implementaciones locales de Microsoft Dynamics 365. Para la ubicación, puede especificar la base de datos del servidor de D365, el almacenamiento local del servidor (disco) o los ensamblados de la caché de ensamblados global. Para obtener más información, vea [Almacenamiento de complementos](/dynamics365/customer-engagement/developer/register-deploy-plugins#plug-in-storage).
 
 1. Haga clic en **Registrar complementos seleccionados**.
 1. Verá un diálogo de confirmación **Complementos registrados**.

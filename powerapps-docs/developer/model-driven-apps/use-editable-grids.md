@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-editable-grids"></a>Usar cuadrículas editables
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365 -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365 -->
 
 La cuadrícula editable es un control personalizado que proporciona funciones de edición en línea enriquecidas en clientes web y móviles (Dynamics 365 for phones y Dynamics 365 for tablets) incluida la capacidad de agrupar, ordenar y filtrar los datos dentro de la misma cuadrícula de manera que no tenga que cambiar los registros o las vistas. El control de cuadrícula editable se admite en la cuadrícula principal y las subcuadrículas de un formulario en el cliente web y en paneles y en cuadrículas de formulario de los clientes móviles. Aunque el control de cuadrícula editable proporcione la función de edición, respeta la configuración de metadatos de la cuadrícula de solo lectura y de seguridad a nivel de campo. Las cuadrículas editables también admiten reglas de negocio y scripts de formularios para que pueda aplicar lógica de negocios personalizada según los requisitos de la organización.  
 

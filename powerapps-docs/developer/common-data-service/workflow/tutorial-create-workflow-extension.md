@@ -83,7 +83,7 @@ Este proyecto creará un ensamblado de flujo de trabajo simple que aumentará un
 
     ![crear proyecto de actividad de flujo de trabajo](media/tutorial-create-workflow-activity-create-workflow-activity-project.png)
 
-1. Vaya al menú **Proyecto** y seleccione **Propiedades**. En la pestaña **Aplicación**, especifique **.NET Framework 4.5.2** como marco de trabajo de destino.
+1. Vaya al menú **Proyecto** y seleccione **Propiedades**. En la pestaña **Aplicación**, especifique **.NET Framework 4.6.2** como marco de trabajo de destino.
 
     ![establecer propiedades del proyecto](media/tutorial-create-workflow-activity-workflow-project.png)
 

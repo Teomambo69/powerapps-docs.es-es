@@ -75,7 +75,7 @@ Más información:
 
 Puesto que los procesos usan la base de Windows Workflow puede registrar un ensamblado construido mediante la [Biblioteca de actividades de .NET Framework](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) que define las actividades personalizadas que aparecerán en el editor de la aplicación web y serán invocadas cuando el proceso se ejecute.
 
-Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2) de resumen. Esta clase proporciona el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) llamado por la plataforma CDS para aplicaciones cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
+Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma CDS para aplicaciones cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
 
 Las actividades de flujo de trabajo también pueden definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que CDS para aplicaciones usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
 
@@ -102,7 +102,7 @@ Más información: [Instalación de Visual Studio 2017](/visualstudio/install/in
 
 Estos son pasos generales usados para crear una actividad de flujo de trabajo personalizada mediante Visual Studio. Para ver un ejemplo paso a paso completo consulte [Tutorial: Crear extensión de flujo de trabajo ](tutorial-create-workflow-extension.md).
 
-1. Crear un proyecto de biblioteca de actividades de flujo de trabajo mediante .NET Framework 4.5.2 como marco de trabajo de destino
+1. Crear un proyecto de biblioteca de actividades de flujo de trabajo mediante .NET Framework 4.6.2 como marco de trabajo de destino
 1. Eliminar el archivo Activity1.xaml generado con el proyecto
 1. Instalar el paquete [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet.
 
@@ -128,7 +128,7 @@ Estos son pasos generales usados para crear una actividad de flujo de trabajo pe
 
     Más información: [Agregar parámetros](#add-parameters)
 
-1. Haga que su clase se derive de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2) e implemente el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) que contiene las operaciones que realizará la actividad.
+1. Haga que su clase se derive de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) e implemente el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) que contiene las operaciones que realizará la actividad.
 
     Más información: [Agregar código al método Execute](#add-your-code-to-the-execute-method)
 
@@ -232,7 +232,7 @@ public InArgument<OptionSetValue> IndustryCode { get; set; }
 
 ## <a name="add-your-code-to-the-execute-method"></a>Agregue su código al método Execute
 
-La lógica que incluye en el método [Método CodeActivity.Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) define lo que hace la actividad de flujo de trabajo.
+La lógica que incluye en el método [Método CodeActivity.Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) define lo que hace la actividad de flujo de trabajo.
 
 > [!IMPORTANT]
 > El código en el método `Execute` debe escribirse como sin estado. No se recomienda usar variables globales o de miembro para pasar datos de una invocación a otra.
@@ -240,7 +240,7 @@ La lógica que incluye en el método [Método CodeActivity.Execute(CodeActivityC
 
 ### <a name="reference-parameters"></a>Parámetros de referencia
 
-Para hacer referencia a los parámetros definidos para su clase usará los métodos [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.5.2) o [Argument.Set(ActivityContext, Object)](/dotnet/api/system.activities.argument.set?view=netframework-4.5.2) que proporcionan que requieren que la instancia [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) se pase al método `Execute`. El siguiente ejemplo muestra el acceso al valor de un parámetro de entrada y el establecimiento del valor de un parámetro de salida.
+Para hacer referencia a los parámetros definidos para su clase usará los métodos [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.6.2) o [Argument.Set(ActivityContext, Object)](/dotnet/api/system.activities.argument.set?view=netframework-4.6.2) que proporcionan que requieren que la instancia [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) se pase al método `Execute`. El siguiente ejemplo muestra el acceso al valor de un parámetro de entrada y el establecimiento del valor de un parámetro de salida.
 
 ```csharp
 using Microsoft.Xrm.Sdk.Workflow;
@@ -397,7 +397,8 @@ Cuando todos los procesos se convierten para usar el nuevo ensamblado, puede usa
 
 ### <a name="see-also"></a>Vea también
 
-[Tutorial: Crear extensión de flujo de trabajo](tutorial-create-workflow-extension.md)<br />
+[Prácticas recomendadas e instrucciones sobre el desarrollo de complementos y flujos de trabajo](../best-practices/business-logic/index.md)
+[Tutorial: Crear una extensión de flujo de trabajo](tutorial-create-workflow-extension.md)<br />
 [Ejemplo: crear una actividad de flujo de trabajo personalizada](sample-create-custom-workflow-activity.md)<br />
 [Ejemplo: actualizar el siguiente cumpleaños con una actividad de flujo de trabajo personalizada](sample-update-next-birthday-using-custom-workflow-activity.md)<br />
 [Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada](sample-calculate-credit-score-custom-workflow-activity.md)

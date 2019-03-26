@@ -1,6 +1,6 @@
 ---
 title: Agregar navegación de formulario de aplicación controlada por modelos para entidades relacionadas en PowerApps | MicrosoftDocs
-descriptoin: Learn how to add form navigation for related entities
+description: Aprenda a agregar navegación de formulario para entidades relacionadas
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''

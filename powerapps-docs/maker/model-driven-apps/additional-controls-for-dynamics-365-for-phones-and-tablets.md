@@ -92,7 +92,7 @@ search.app:
 |CC_Timeline_URL|Campo Dirección URL para asignar para mostrar la dirección URL de elemento de la escala de tiempo.|  
 |CC_Timeline_URL_Desc|Descripción para el campo Dirección URL.|  
 |CC_Timeline_ThumbnailURL|Campo para asignar para la miniatura de imagen/icono que se mostrará para cada elemento.|  
-|CC_Timeline_ThumnailURL_Desc|Descripción del campo `ThumbnailURL`.|  
+|CC_Timeline_ThumbnailURL_Desc|Descripción del campo `ThumbnailURL`.|  
 |CC_Timeline_Filter|Campo a asignar para filtro de la escala de tiempo.|  
 |CC_Timeline_Filter_Desc|Descripción para Filtro.|  
 |CC_Timeline_Footer|Recurso web para mostrar como pie de página de la escala de tiempo.|  

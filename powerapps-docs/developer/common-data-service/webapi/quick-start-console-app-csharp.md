@@ -2,7 +2,7 @@
 title: 'Tutorial: Ejemplo de web API (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
 description: 'Este ejemplo muestra cómo autenticarse con un servidor Common Data Service para aplicaciones y luego llamar a una operación básica de API Web, la función WhoAmI.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/02/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="quick-start-web-api-sample-c"></a>Tutorial: Ejemplo de API Web (C#)
 
-En este tutorial creará una aplicación de consola básica para conectarse al entorno de Common Data Service para aplicaciones usando la API web.
+En este tutorial creará una aplicación de consola básica para conectarse al entorno de Common Data Service para aplicaciones usando la API web. 
 
-Se autenticará con OAuth2 y usará [HttpClient](/dotnet/api/system.net.http.httpclient) para enviar una solicitud `GET` a <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> y la respuesta será un <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" />. Se mostrará el valor de la propiedad `UserId`.
+Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una solicitud `GET` al <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> y la respuesta será un <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" />. Se mostrará el valor de propiedad `UserId`.
 
 > [!NOTE]
-> Este ejemplo de tutorial no incluye tratamiento de errores. Es un ejemplo mínimo de lo que necesita para conectarse y usar la API web.
+> Esto es un ejemplo muy sencillo para mostrar cómo estar conectado con un mínimo de código. El siguiente [inicio rápido mejorado](enhanced-quick-start.md) se basará en este ejemplo para aplicar mejores patrones de diseño.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -35,16 +35,25 @@ Se autenticará con OAuth2 y usará [HttpClient](/dotnet/api/system.net.http.htt
  - Comprensión básica de lenguaje Visual C#
 
 > [!NOTE]
-> Para la autenticación mediante el uso de OAuth2 debe tener una aplicación registrada en Azure Active Directory. Este ejemplo de tutorial proporciona un valor de clientid del registro de la aplicación que puede usar con fin de ejecutar el código de instalación publicado por Microsoft. Para sus propias aplicaciones debe registrar sus aplicaciones. Más información: [Tutorial: Registrar una aplicación con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md)
+> Para la autenticación, debe tener una aplicación registrada en Azure Active Directory. Este ejemplo de tutorial proporciona un valor `clientid` de registro de la aplicación que puede usar con el fin de ejecutar el código de instalación publicado por Microsoft. Para sus propias aplicaciones debe registrar sus aplicaciones. Más información: [Tutorial: Registrar una aplicación con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md)
 
 ## <a name="create-visual-studio-project"></a>Crear proyecto en Visual Studio
 
-1. Cree un nuevo proyecto de aplicación de consola (.NET Framework) mediante .NET Framework 4.6.2
+1. Crear un nuevo proyecto de aplicación de consola (.NET Framework) mediante **.NET Framework 4.6.2**
 
     ![Inicie un proyecto de aplicación de consola](../media/quick-start-web-api-console-app-csharp-1.png)
 
     > [!NOTE]
-    > Este captura de pantalla muestra el nombre `WebAPIQuickStart`, pero puede elegir el nombre del proyecto y la solución que desee. 
+    > Este captura de pantalla muestra el nombre `WebAPIQuickStart`, pero puede elegir el nombre del proyecto y la solución que desee.
+
+    > [!IMPORTANT]
+    > **Problema conocido con Visual Studio 2015**
+    > 
+    > Cuando se ejecuta el proyecto/solución en VS 2015 en modo de depuración, es posible que no pueda conectarse. Esto ocurre independientemente de si está usando un marco de destino de 4.6.2 o más alto. Esto puede producirse porque el proceso de hospedaje de Visual Studio se compila con .NET 4.5, lo que significa de forma predeterminada que no es compatible con TLS 1.2. Puede deshabilitar el proceso de hospedaje de Visual Studio como solución. 
+    >
+    > Haga clic con el botón derecho del mouse en el nombre del proyecto en Visual Studio y luego haga clic en **Propiedades**. En la pestaña **Depuración** puede desactivar la opción **Habilitar proceso de hospedaje de Visual Studio**. 
+    >
+    > Esto afecta solo a la experiencia de depuración en VS 2015. Esto no afecta a los archivos binarios o ejecutables que se crean. El mismo problema no se produce en Visual Studio 2017.
 
 1. En el **Explorador de soluciones** haga clic con el botón secundario en el proyecto que ha creado y seleccione **Administrar paquetes de NuGet...** en el menú contextual.
 
@@ -83,7 +92,7 @@ Se autenticará con OAuth2 y usará [HttpClient](/dotnet/api/system.net.http.htt
     ```csharp
     static void Main(string[] args)
     {
-        // Set these values:
+       // Set these values:
         // e.g. https://yourorg.crm.dynamics.com
         string url = "<your environment url>";
         // e.g. you@yourorg.onmicrosoft.com
@@ -141,6 +150,14 @@ Se autenticará con OAuth2 y usará [HttpClient](/dotnet/api/system.net.http.htt
     // e.g. y0urp455w0rd
     string password = "<your password>";
     ```
+    Para obtener el valor `url`:
+
+    1. En el sitio [https://web.powerapps.com](https://web.powerapps.com) con el entorno adecuado seleccionado, seleccione **Configuración** ![botón Configuración](media/settings-icon.png) y elija **Personalización avanzada**. A continuación, seleccione **Recursos de desarrollador**.
+    1. En la página **Recursos de desarrollador**, busque el valor **Instancia de API web** y cópielo. 
+
+        Debería tener aspecto similar a `https://yourorgname.api.crm.dynamics.com/api/data/v9.1/`. Pero para este ejemplo, debe cortar de la parte final (`/api/data/v9.1/`) para que solo sea `https://yourorgname.api.crm.dynamics.com`.
+
+    Para las variables `userName` y `password`, use las mismas credenciales que usa para registrarse en el sitio [https://web.powerapps.com](https://web.powerapps.com).
 
 ## <a name="run-the-program"></a>Ejecute el programa.
 
@@ -155,4 +172,15 @@ Se autenticará con OAuth2 y usará [HttpClient](/dotnet/api/system.net.http.htt
 
 Se ha conectado con éxito a la API web.
 
-<!-- TODO: Include link to next steps topics -->
+El ejemplo de inicio rápido muestra un enfoque básico para crear un proyecto de Visual Studio sin ningún control de las excepciones o sin método para actualizar el token de acceso. 
+
+Es suficiente para comprobar que puede conectarse, pero no constituye un buen patrón de generar una aplicación.
+
+El tema del [inicio rápido mejorado](enhanced-quick-start.md) muestra cómo implementar los métodos de control de excepciones, el método de autenticación básica mediante una cadena de conexión, un método reutilizable para obtener acceso a los tokens y, además, presenta cómo crear métodos reutilizables para realizar operaciones de datos.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Aprenda a estructurar el código para crear mejores diseños.
+
+> [!div class="nextstepaction"]
+> [Inicio rápido mejorado](enhanced-quick-start.md)<br/>

@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 10/15/2018
+ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -35,15 +35,18 @@ Iniciar sesión en [PowerApps](https://web.powerapps.com/). Si aún no tiene una
   > [!IMPORTANT]
   > Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
-2. En la página **Inicio**, seleccione la opción **Empezar en blanco** para una aplicación basada en modelos.
-![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
+2. En la página **Inicio** , seleccione **Empezar en blanco una aplicación basada en modelos**.
+<!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
-  - **Nombre**: escriba un nombre para la aplicación, como *Myfirstapp*. 
+  - **Nombre**: escriba un nombre para la aplicación, como *Mi primera aplicación*. 
+  - **Nombre único**: de forma predeterminada, el nombre único usa el nombre que especifica en la casilla **Nombre** sin espacios y precedida por el prefijo del editor y un guión bajo (_). Por ejemplo, *crecf_Myfirstapp*. Más información: [Cambiar el prefijo del editor de soluciones](../common-data-service/change-solution-publisher-prefix.md)
   - **Descripción**: escriba una breve descripción de lo que es o hace la aplicación, como *Esta es mi primera aplicación*.
-Para obtener información acerca de las propiedades adicionales de la aplicación, consulte [Crear una aplicación](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).
- 
-    ![Crear nueva aplicación](media/build-first-model-driven-app/create-new-app.png)
+Para obtener información acerca de las propiedades adicionales de la aplicación, consulte [Crear una aplicación](create-edit-app.md#create-an-app).
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-new-app.png "Crear una nueva aplicación") 
+
 
 ## <a name="add-components-to-your-app"></a>Agregar componentes a la aplicación
 En el diseñador de aplicaciones puede agregar componentes a la aplicación.

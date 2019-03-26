@@ -63,9 +63,9 @@ Hay muchos diferentes tipos de campos, pero solo puede crear algunos. Para obten
 
 Cuando crea un campo, **Tipo de datos** proporciona las siguientes opciones:
 
-### <a name="text"></a>Texto 
+### <a name="text"></a>Text 
 
-Los campos de texto estándar pueden almacenar hasta de 4.000 caracteres. La opción [Longitud máxima](#max-length) predeterminada se establece en un valor menor que puede ajustar.
+Los campos de texto estándar pueden almacenar hasta de 4000 caracteres. La opción [Longitud máxima](#max-length) predeterminada se establece en un valor menor que puede ajustar.
 
 |Tipo de datos|Descripción|
 |--|--|

@@ -33,7 +33,7 @@ Puede aprovechar los nuevos operadores de condición de consulta para consultar 
 |`eq-or-under`|`UnderOrEqual`|Devuelve el registro al que se hace referencia y todos los registros secundarios por debajo de éste en la jerarquía.|  
 |`not-under`|`NotUnder`|Devuelve todos los registros que no están por debajo del registro al que se hace referencia en la jerarquía.|  
 |`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual o su jerarquía de subordinados|  
-|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual y sus equipos o su jerarquía de subordinados y sus equipos|  
+|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual y a sus equipos o su jerarquía de subordinados y sus equipos|  
   
 ### <a name="recursion-limits-when-querying-hierarchical-data"></a>Límites de la recursión al consultar datos jerárquicos  
  Dado que la consulta de datos jerárquicos puede emplear muchos recursos, hay un límite predeterminado de 100 condiciones permitidas de recursiones para consultas jerárquicas utilizando los operadores de condición `Above`, `AboveOrEqual`, `Under`, `UnderOrEqual`, y `NotUnder`.  

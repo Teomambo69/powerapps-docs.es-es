@@ -148,6 +148,6 @@ Si uno de los pasos del flujo de trabajo en tiempo real de la acción es una act
 ### <a name="see-also"></a>Vea también  
  [Crear flujos de trabajo en tiempo real](/dynamics365/customer-engagement/developer/create-real-time-workflows)   
  [Usar diálogos para procesos guiados](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes)   
- [Canalización de ejecución del evento](/dynamics365/customer-engagement/developer/event-execution-pipeline)   
+ [Canalización de ejecución del evento](event-framework.md#event-execution-pipeline)   
  [Escribir flujos de trabajo para automatizar los procesos de negocio](/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement)   
  [Personalizar el sistema](https://technet.microsoft.com/library/dn531158.aspx)

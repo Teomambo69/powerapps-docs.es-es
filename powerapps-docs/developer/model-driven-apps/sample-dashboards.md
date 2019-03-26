@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dashboards"></a>Paneles de ejemplo
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
 
 Este tema contiene paneles de muestra junto con las cadenas respectivas de FormXML. Puede especificar la cadena de FormXML de un panel mediante el atributo de `SystemForm.FormXml` para un panel perteneciente a una organización o `UserForm.FormXml` para un panel propiedad del usuario.  
   

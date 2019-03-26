@@ -2,7 +2,7 @@
 title: 'Característica de vista previa: Utilizar el proveedor de datos de Azure Cosmos DB para la API de SQL con Common Data Service for Apps | MicrosoftDocs'
 description: Aprenda a configurar el proveedor de datos de Azure Cosmos DB para el proveedor de datos de la API de SQL para usar con entidades virtuales.
 keywords: API de SQL
-ms.date: 06/27/2018
+ms.date: 02/15/2019
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -94,7 +94,7 @@ El filtro de consultas SQL admite los siguientes operadores.
     |Campo|Descripción|
     |--|--|
     |**Nombre**|Escriba un nombre para describir el origen de datos.|
-    |**Nombre de recopilación**|El id. de la base de datos de Azure Cosmos DB que contiene los datos que desea que se muestren en una entidad virtual.  |
+    |**Nombre de recopilación**|El nombre de la *base de datos* de Azure Cosmos DB que contiene la colección que desea que se muestren en una entidad virtual.  |
     |**Clave de autorización**|La clave principal o secundaria para la cuenta de Azure Cosmos DB. Puede encontrar la clave en el portal de administración de Azure, en la opción **Claves** en su cuenta de Azure Cosmos DB.|
     |**Uri**|El URI del grupo de recursos donde se encuentra la recopilación de Azure Cosmos DB. La dirección URI se forma como `https://contoso/documents.azure.com:443`. Puede encontrar el URI en el portal de administración de Azure, en la opción **Claves** para su cuenta de Azure Cosmos DB. |
     |**Tiempo de espera en segundos**|Escriba la cantidad de segundos que se debe esperar a una respuesta del servicio de Azure Cosmos DB antes de agotar el tiempo de espera de una solicitud de datos. Por ejemplo, escriba 30 para esperar un máximo de treinta segundos antes de que se agote el tiempo de espera. El tiempo de espera predeterminado es de 120 segundos.|

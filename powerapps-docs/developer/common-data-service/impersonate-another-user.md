@@ -62,7 +62,7 @@ Para suplantar a otro usuario, establezca la propiedad `CallerId` al valor de GU
 ## <a name="impersonate-another-using-in-plug-ins"></a>Suplantar a otro mediante complementos
 
 Puede registrar un complemento en el que puede especificar un usuario que deben usar las operaciones. En el código de un complemento puede reemplazar esta configuración.
-Más información: [Suplantación](write-plug-in.md#impersonation).
+Más información: [Suplantar a un usuario](impersonate-a-user.md).
 
 
 ### <a name="see-also"></a>Vea también

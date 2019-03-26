@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>Usar IFRAME y controles de recursos web en un formulario
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
 
 
 IFRAME y los controles de recursos web insertan contenido desde otra ubicación en las páginas mediante un elemento de IFRAME HTML.  

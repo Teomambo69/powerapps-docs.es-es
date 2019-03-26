@@ -1,8 +1,8 @@
 ---
-title: Mostrar iconos personalizados en lugar de valores en las vistas de lista con PowerApps | MicrosoftDocs
+title: Mostrar iconos personalizados junto con los valores en las vistas de lista con PowerApps | MicrosoftDocs
 description: Obtenga información sobre cómo mostrar gráficos de icono en una vista
 ms.custom: ''
-ms.date: 06/21/2018
+ms.date: 02/14/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,11 +23,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="display-custom-icons-instead-of-values-in-list-views"></a>Mostrar iconos personalizados en lugar de valores en vistas de lista
+# <a name="display-custom-icons-alongside-values-in-list-views"></a>Mostrar iconos personalizados junto con los valores en vistas de lista
 
 <a name="GridIcons"></a>   
 
- Los administradores y personalizadores de entornos de PowerApps pueden agregar gráficos a una vista y establecer la lógica usada para seleccionar el gráfico según los valores de una columna con JavaScript. La funcionalidad para mostrar vistas de lista que muestra iconos en lugar de texto o valores numéricos en algunas columnas se introdujo en información de relaciones. 
+ Los administradores y personalizadores de entornos de PowerApps pueden agregar gráficos a una vista y establecer la lógica usada para seleccionar un gráfico según el valor de la columna con JavaScript. La funcionalidad le permite personalizar las vistas de lista que muestran iconos junto al texto o los valores numéricos. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/icon-in-opportunity-view.png "La vista Todas las oportunidades con la columna Valoración que muestra los iconos y el valor de texto")
   
 > [!NOTE]
 >  Los iconos de cuadrícula se muestran únicamente en la interfaz web. No se muestran en [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] o la aplicación móvil.  
@@ -38,7 +41,7 @@ search.app:
   
 2.  Escriba una o más funciones JavaScript que establezcan qué iconos se mostrarán para qué valores (normalmente necesitará una función para cada columna que desea personalizar). Cada función debe aceptar un objeto de datos fila y un código de idioma (LCID) como entrada y devolver una matriz que contiene un nombre de imagen y texto de información sobre herramientas. Para ver una función de ejemplo, consulte [Función JavaScript de ejemplo](#SampleJavascript), más adelante en este tema.  
   
-3.  Inicie sesión en su entorno como administrador y abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer).  
+3.  Inicie sesión en el entorno como administrador y abra el explorador de soluciones.  
   
 4.  Se abre la ventana **Solución predeterminada**. Vaya a **Componentes** > **Recursos web** aquí.  
   
@@ -91,12 +94,15 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>Función JavaScript de ejemplo  
- La función JavaScript para mostrar iconos personalizados e informaciones sobre herramientas espera los dos argumentos siguientes: el objeto de fila completo especificado en layoutxml y el Id. de configuración regional del usuario que llama (LCID). El parámetro LCID permite especificar el texto de información sobre herramientas en varios idiomas. Para obtener más información sobre los idiomas admitidos por el entorno, consulte [Habilitar idiomas](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages) e [Instalar o actualizar paquetes de idioma para Dynamics 365](https://technet.microsoft.com/library/hh699674.aspx). Para ver una lista de valores de Id. de configuración regional (LCID) que puede usar en el código, consulte [Id. de configuración regional asignados por Microsoft](https://go.microsoft.com/fwlink/?linkid=829588).
+ La función JavaScript para mostrar iconos personalizados e informaciones sobre herramientas espera los dos argumentos siguientes: el objeto de fila completo especificado en layoutxml y el Id. de configuración regional del usuario que llama (LCID). El parámetro LCID permite especificar el texto de información sobre herramientas en varios idiomas. Para obtener más información sobre los idiomas admitidos por el entorno, consulte [Habilitar idiomas](/dynamics365/customer-engagement/admin/enable-languages) e [Instalar o actualizar paquetes de idioma para Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Para ver una lista de valores de Id. de configuración regional (LCID) que puede usar en el código, consulte [Id. de configuración regional asignados por Microsoft](https://go.microsoft.com/fwlink/?linkid=829588).
 
   
  Suponiendo que agregará iconos personalizados para un tipo de conjunto de opciones de atributo, que tiene un conjunto limitado de opciones predefinidas, asegúrese de que usa el valor entero de las opciones en lugar de etiqueta para evitar problemas de localización.  
   
  El siguiente código de ejemplo muestra iconos e informaciones sobre herramientas basándose en uno de tres valores (1: Muy interesado, 2: Algo interesado, 3: No interesado) en el atributo opportunityratingcode (Nivel de interés). El código de ejemplo también muestra cómo mostrar texto de información sobre herramientas localizado. Para que este ejemplo funcione, debe crear tres recursos web de imagen con imágenes 16x16 con los nombres siguientes: new_Hot, new_Warm y new_Cold.  
+
+> [!IMPORTANT]
+> Este ejemplo requiere la entidad oportunidad, que está disponible con aplicaciones Microsoft Dynamics 365 for Customer Engagement.
   
 ```  
 function displayIconTooltip(rowData, userLCID) {      
@@ -148,9 +154,9 @@ function displayIconTooltip(rowData, userLCID) {
 }  
 ```  
   
- De este modo se muestran iconos con informaciones sobre herramientas en la columna **Nivel de interés** que dependen del valor en cada fila. El resultado podría verse así:  
+ <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Ejemplo de gráficos de columna personalizados](media/custom-column-graphics-example.png "Ejemplo de gráficos de columna personalizados")  
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
  
  ### <a name="see-also"></a>Vea también
- [Creación o edición de vistas](../model-driven-apps/create-edit-views.md)
+[Conocer las vistas de las aplicaciones controladas por modelos](../model-driven-apps/create-edit-views.md)

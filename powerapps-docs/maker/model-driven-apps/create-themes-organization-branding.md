@@ -1,7 +1,7 @@
 ---
 title: Cambiar la combinación de colores o agregar un logotipo para que coincida con la marca de la organización | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -50,7 +50,7 @@ Puede crear una vista y una sensación personalizadas (un tema) para su aplicaci
   
 -   Efecto de pasar el puntero sobre el vínculo  
   
--   Color de control de proceso  
+-   Color de énfasis heredado (fondo principal para los controles de proceso)  
   
 -   Color predeterminado de entidad  
   

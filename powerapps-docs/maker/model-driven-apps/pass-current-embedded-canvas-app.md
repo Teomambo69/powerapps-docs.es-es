@@ -38,10 +38,10 @@ Imagine que desea agregar una aplicación incrustada de lienzo en el formulario 
       > [!IMPORTANT]
       > Use siempre un campo obligatorio que siempre tiene garantizado un valor. Si el campo no tiene un valor, su aplicación incrustada de lienzo no se actualizará como respuesta a cualquier cambio en los datos del formulario controlado por modelos de host.
 4.  Con este campo seleccionado, en la pestaña **Inicio**, en el grupo **Editar**, haga clic en **Cambiar propiedades**.
-5.  En el diálogo **Propiedades de campo** , seleccione la pestaña **Controles** .
+5.  En el cuadro de diálogo **Propiedades de campo** , seleccione la pestaña **Controles** .
 6.  En la pestaña **Controles** seleccione **Agregar control**.
-7.  En el diálogo **Agregar control** , en la lista de controles disponibles, seleccione **Aplicación de lienzo** y después seleccione **Agregar**.
-8.  En el diálogo **Propiedades de campo**, en la lista de controles seleccione **Aplicación de lienzo** y seleccione la opción **Web**.
+7.  En el cuadro de diálogo **Agregar control** , en la lista de controles disponibles, seleccione **Aplicación de lienzo** y después seleccione **Agregar**.
+8.  En el cuadro de diálogo **Propiedades de campo**, en la lista de controles seleccione **Aplicación de lienzo** y seleccione la opción **Web**.
 9.  En la sección debajo de la lista de controles, la lista de propiedades disponible para el control de aplicaciones de lienzo se muestra.
      - La propiedad **Nombre de entidad** especifica la entidad que proporcionará los datos a la aplicación incrustada de lienzo. Se establecerá en la entidad que contiene el campo que se agregó en un paso anterior.
          - Tenga en cuenta que, aunque esta propiedad parece cambiable, cambiarla no tendrá ningún efecto en la aplicación incrustada de lienzo. Está previsto que solo sirva como referencia para usted.
@@ -63,11 +63,11 @@ Imagine que desea agregar una aplicación incrustada de lienzo en el formulario 
 19. Seleccione la pestaña **La nube**. Proporcione un nombre único para la aplicación y después seleccione **Guardar** en la parte inferior derecha. Tenga en cuenta lo siguiente: 
     -  Guardar una aplicación por primera vez publica automáticamente la aplicación.
       -  En las operaciones de guardar posteriores, seleccione **Publicar** y después seleccione **Publicar esta versión** para que los cambios pasen a estar disponibles.
-20. En el menú seleccione **Atrás** y seleccione la ficha del explorador que tiene el editor de formularios abierto. Observe que la propiedad **Identificador de la aplicación** del control de apliaciones de lienzo ahora tiene un valor automáticamente rellenado. Tenga en cuenta lo siguiente: 
+20. En el menú, seleccione **Atrás** y seleccione la ficha del explorador que tiene el editor de formularios abierto. Observe que la propiedad **Identificador de la aplicación** del control de apliaciones de lienzo ahora tiene un valor automáticamente rellenado. Tenga en cuenta lo siguiente: 
     -   El editor de formularios tiene un vínculo directo con PowerApps Studio que se abrió en otra ficha del explorador en un paso anterior.
     -   El editor de formularios “escucha” para recibir el **Identificador de la aplicación** que se le envía.
     -   El **Identificador de la aplicación** se envía al editor de formularios cuando se guarda la aplicación.
-21. En el diálogo **Propiedades de campo** , seleccione la pestaña **Mostrar** .
+21. En el cuadro de diálogo **Propiedades de campo** , seleccione la pestaña **Mostrar** .
 22. Desactive **Mostrar etiqueta** en el formulario y seleccione **Aceptar**.
     -   Si ya tiene una aplicación de lienzo insertada en este formulario se muestra un mensaje que indica “solo una aplicación de lienzo se puede habilitar en un formulario.” Para agregar la aplicación nueva de lienzo primero debe [deshabilitar la aplicación incrustada actual de lienzo](embedded-canvas-app-guidelines.md#disable-an-embedded-canvas-app). Después, [habilite la nueva aplicación incrustada de lienzo](embedded-canvas-app-guidelines.md#enable-an-embedded-canvas-app).
 23. En la pestaña **Inicio**, seleccione **Guardar** y, después, seleccione **Publicar**.

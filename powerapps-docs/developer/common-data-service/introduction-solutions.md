@@ -11,9 +11,9 @@ tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
+ms.reviewer: kvivek
 ms.workload: na
-ms.date: 10/31/2018
+ms.date: 01/28/2019
 ms.author: jdaly
 search.audienceType:
   - developer
@@ -29,6 +29,9 @@ search.app:
 Cada personalización que crea para CDS for Apps o para una solución instalada anteriormente forma parte de una solución. Se realiza un seguimiento de cada cambio que se aplica y cualquier dependencia puede ser calculada. Cuando exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que puede importar a continuación en otro entorno de CDS for Apps.
 
 Si tiene previsto transportar personalizaciones o extensiones entre diferentes entornos de CDS for Apps o distribuir soluciones mediante AppSource, debe comprender el marco de trabajo de la solución.
+
+> [!NOTE]
+> Para obtener información detallada sobre cómo usar eficazmente las soluciones para una administración correcta de del ciclo de vida (ALM) de la aplicación, consulte [Notas del producto: Administración del ciclo de vida de la solución](https://www.microsoft.com/en-us/download/details.aspx?id=57777)
 
 ## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas
 

@@ -2,7 +2,7 @@
 title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de creación rápida.
 ms.custom: ''
-ms.date: 10/15/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -49,7 +49,8 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
  Aunque puede definir varios formularios de creación rápida, solo uno puede usarlo todo el mundo. El formulario que todo el mundo usará se establece mediante el pedido de formulario. Los formularios de creación rápida no se pueden asignar a los roles de seguridad y no proporcionan al usuario la capacidad de cambiar formularios.  
   
 > [!NOTE]
->  La entidad debe tener la opción **Permitir creación rápida** habilitada para que el formulario de creación rápida se muestre. 
+>  - La entidad debe tener la opción **Permitir creación rápida** habilitada para que el formulario de creación rápida se muestre. 
+>  - Algunos campos, como el campo CREATEDON, no están disponibles para agregar a un formulario de creación rápida.  
   
 ### <a name="how-to-create-a-quick-create-form"></a>Cómo crear un formulario de creación rápida  
   

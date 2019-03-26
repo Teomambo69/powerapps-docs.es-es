@@ -2,11 +2,11 @@
 title: Registrar un complemento (Common Data Service para aplicaciones) | Microsoft Docs
 description: Aprenda a registrar un complemento para aplicar lógica de negocios personalizada a Common Data Service para aplicaciones.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -160,8 +160,8 @@ Al registrar una paso, hay muchas opciones disponibles para usted que dependen d
 |**Atributos de filtro**|Con el mensaje `Update`, cuando configura la **Entidad principal**, al filtrar atributos se limita la ejecución del complemento a casos donde los atributos seleccionados se incluyen en la actualización. Esta es una práctica recomendada para rendimiento. |
 |**Controlador de eventos**|Este valor se rellenará en función del nombre del ensamblado y de la clase del complemento. |
 |**Nombre del paso**|Nombre del paso. Se indica previamente un valor en función de la configuración del paso, pero este valor puede ser reemplazado.|
-|**Ejecutar en contexto de usuario**|Proporciona opciones para aplicar suplantación para el paso. El valor predeterminado es **Usuario que llama**. Si el usuario que llama no tiene privilegios para realizar operaciones en el paso, es posible que necesite configurar esto como un usuario que tiene estos privilegios. Más información: [Suplantación](write-plug-in.md#impersonation) |
-|**Pedido de ejecución**|Pueden registrarse múltiples pasos para la misma fase del mismo mensaje. El número de este campo determina el orden en el que se aplicarán del más bajo al más alto. Edite esta opción para controlar el orden en el que los complementos se aplican en la fase.|
+|**Ejecutar en contexto de usuario**|Proporciona opciones para aplicar suplantación para el paso. El valor predeterminado es **Usuario que llama**. Si el usuario que llama no tiene privilegios para realizar operaciones en el paso, es posible que necesite configurar esto como un usuario que tiene estos privilegios. Más información: [Suplantar a un usuario](impersonate-a-user.md) |
+|**Pedido de ejecución**|Pueden registrarse múltiples pasos para la misma fase del mismo mensaje. El número de este campo determina el orden en el que se aplicarán del más bajo al más alto. <br/> **Nota**: debe establecer esta opción para controlar el orden en el que los complementos se aplican en la fase. No se recomendado para aceptar simplemente el valor predeterminado. Si todos los complementos de la misma fase, la entidad y el mensaje tienen el mismo valor, el valor [SdkMessageProcessingStep.SdkMessageFilterId](/dynamics365/customer-engagement/developer/entities/sdkmessageprocessingstep#BKMK_SdkMessageFilterId) determinará el orden en el que se ejecutan.|
 |**Descripción**|Descripción del paso. Este valor se rellena previamente pero puede sobrescribirse.|
 
 > [!NOTE]

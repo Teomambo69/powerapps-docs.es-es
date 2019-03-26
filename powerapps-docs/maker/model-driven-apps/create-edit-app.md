@@ -2,7 +2,7 @@
 title: Crear o editar una aplicación basada en modelos utilizando el diseñador de aplicaciones en PowerApps | MicrosoftDocs
 description: Aprender a crear o editar aplicaciones mediante el diseñador de aplicaciones
 keywords: ''
-ms.date: 10/15/2018
+ms.date: 02/05/2019
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -26,9 +26,9 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-create-a-model-driven-app-by-using-the-app-designer"></a>Tutorial: Crear o editar una aplicación controlada por modelos utilizando el diseñador de aplicaciones
+# <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Crear o editar una aplicación controlada por modelos utilizando el diseñador de aplicaciones
 
-En este tutorial aprenderá los aspectos básicos de cómo crear y editar una aplicación controlada por modelos usando el diseñador de aplicaciones basado en mosaicos.
+En este tema aprenderá los aspectos básicos de cómo crear y editar una aplicación controlada por modelos usando el diseñador de aplicaciones basado en mosaicos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
@@ -38,16 +38,12 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Crear una aplicación  
 
-1.  En la página **Inicio** de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco** para una aplicación basada en modelos.  
-
-    ![La opción empezar en blanco basada en modelos](media/start-from-blank-model-driven.png)
+1.  En la página **Inicio** de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. Seleccione **Crear esta aplicación**.
-
-3. En la página **Crear una nueva aplicación**, especifique los siguientes detalles: 
+2. En la página **Crear una nueva aplicación**, especifique los siguientes detalles: 
 
     - **Nombre**: introduzca un nombre para la aplicación.  
   
@@ -60,21 +56,6 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
   
     - **Icono**: De forma predeterminada, la casilla en miniatura **Usar aplicación predeterminada** está activada. Para seleccionar otro recurso web como icono para la aplicación, desactive la casilla y seleccione un icono de la lista desplegable. Este icono se mostrará en la ventana de vista previa de la aplicación.  
   
-    - Seleccione el tipo de cliente para el que se usará la aplicación.  
-  
-        - **Interfaz unificada**: Este es el más reciente cliente del explorador web dinámico que tiene una interfaz similar para PC y dispositivos móviles.  
-
-        - **Web**: este es el cliente de explorador web clásico de Dynamics 365 Customer Engagement.  
-    
-    - **Sufijo de la dirección URL de la aplicación**: La dirección URL de la aplicación se completa automáticamente en función del nombre de la aplicación que especifique. Aparecerá una vista previa del aspecto que tiene la dirección URL completa. La dirección URL de la aplicación debe ser única.  
-  
-         Por ejemplo: https://\<org>.crm#.dynamics.com/Apps/\<URL de aplicación>
-
-         Para local: http://\<server>/\<org name>/Apps/\<App URL> 
-  
-      > [!NOTE]
-      >  Si desactiva el campo de **sufijo de dirección URL de la aplicación** y después guarda la aplicación, la dirección URL de la aplicación se generará automáticamente con el identificador de la aplicación.  
-  
     - **Usar la solución existente para crear la aplicación**: Seleccione esta opción para crear la aplicación desde una lista de soluciones instaladas. Si selecciona esta opción, **Listo** cambia a **Siguiente** en el encabezado. Si selecciona **Siguiente**, la página **Crear aplicaciones desde una solución existente** se abre. En la lista desplegable **Seleccione solución**, seleccione una solución desde donde desea crear la aplicación. Si está disponible algún mapa del sitio para la solución seleccionada, la lista desplegable **Seleccione mapa de sitio** aparecerá. Seleccione mapa del sitio y, a continuación, seleccione **Listo**.
 
       > [!NOTE]
@@ -82,14 +63,14 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 
       ![Usar la solución existente para crear la página de aplicaciones](media/use-existing-solution-to-create-the-app.png "Usar una solución existente para crear la aplicación") 
 
-    - **Elija una página de bienvenida**: Esta opción permite elegir entre los recursos web disponibles en su organización. Las páginas de bienvenida que cree pueden contener información útil para los usuarios, como vínculos a vídeos, instrucciones de actualización o información de introducción. La página de bienvenida aparece cuando se abre una aplicación. Los usuarios pueden seleccionar **No mostrar esta pantalla de bienvenida la próxima vez** en la página de inicio de sesión para deshabilitar la página para que no aparezca la próxima vez que se inicie la aplicación. Para obtener más información acerca de cómo crear un recurso web, por ejemplo, un archivo HTML que pueda usar como página de bienvenida, consulte: [Crear y editar recursos web para extender la aplicación web](create-edit-web-resources.md).  
+    - **Elija una página de bienvenida**: Esta opción permite elegir entre los recursos web disponibles en su organización. Las páginas de bienvenida que cree pueden contener información útil para los usuarios, como vínculos a vídeos, instrucciones de actualización o información de introducción. La página de bienvenida aparece cuando se abre una aplicación. Los usuarios pueden seleccionar **No mostrar esta pantalla de bienvenida la próxima vez** en la página de inicio de sesión para deshabilitar la página para que no aparezca la próxima vez que se inicie la aplicación. Tenga en cuenta que la opción **No mostrar esta pantalla de bienvenida la próxima vez** es una configuración de usuario y no se puede controlar por los administradores o proveedores de la aplicación. Para obtener más información acerca de cómo crear un recurso web, por ejemplo, un archivo HTML que pueda usar como página de bienvenida, consulte: [Crear y editar recursos web para extender la aplicación web](create-edit-web-resources.md).  
       
     Para editar propiedades de la aplicación más adelante, vaya a la pestaña **Propiedades** en el diseñador de aplicaciones. Más información: [Administrar propiedades de aplicaciones](manage-app-properties.md)  
   
      > [!NOTE]
      >  No puede cambiar el nombre único y el sufijo de la dirección URL de la aplicación en la pestaña **Propiedades**.  
   
-4. Seleccione **Listo** o&mdash;si seleccionó **Usar una solución existente para crear la aplicación**&mdash;seleccione **Siguiente** para elegir entre las soluciones disponibles que se importaron en la organización.  
+3. Seleccione **Listo** o&mdash;si seleccionó **Usar una solución existente para crear la aplicación**&mdash;seleccione **Siguiente** para elegir entre las soluciones disponibles que se importaron en la organización.  
   
     Una nueva aplicación se crea y se muestra en estado de borrador. Verá el lienzo del diseñador de aplicaciones para la nueva aplicación. Desde ahí puede agregar componentes, como entidades, vistas y paneles para que su aplicación resulte útil. Más información: [Agregar o editar componentes de la aplicación](add-edit-app-components.md)  
    
