@@ -1,10 +1,10 @@
 items:
-- name: Common Data Service for Apps
+- name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
 - name: Información general para desarrolladores
   href: overview.md
 - name: Introducción
-  href: get-started-CDS-developers.md
+  href: get-started-cds-developers.md
   items:
   - name: Personalizaciones compatibles
     href: supported-customizations.md
@@ -174,7 +174,7 @@ items:
       href: register-web-hook.md
     - name: Probar el registro de webhook
       href: test-webhook-registration.md
-- name: Trabajar con entidades de CDS para aplicaciones
+- name: Trabajo con entidades de Common Data Service
   href: entities.md
   items:
   - name: Entidades de cliente
@@ -415,9 +415,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: Esquema FetchXML
     href: fetchxml-schema.md
-ms.openlocfilehash: 036e92f1578877cc9b7bdc90742cc5436bf5897e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 3a162e476d0d3c9c4935d185b9e3942c86960edd
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330203"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357055"
