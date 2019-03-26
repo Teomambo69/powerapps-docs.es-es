@@ -1,6 +1,6 @@
 ---
-title: Crear una aplicación de lienzo desde cero con Common Data Service for Apps | Microsoft Docs
-description: En PowerApps, cree una aplicación de lienzo para agregar, actualizar y eliminar registros en Common Data Service for Apps.
+title: Creación de una aplicación de lienzo desde cero con Common Data Service | Microsoft Docs
+description: En PowerApps, cree una aplicación de lienzo para agregar, actualizar y eliminar registros en Common Data Service.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dab8caea5679701735685a5c4383c77cd7ed44f6
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.openlocfilehash: 0528d3324e85984e05b549f8b8ba282fdc1df4af
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091232"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356894"
 ---
-# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Crear una aplicación de lienzo desde cero con Common Data Service for Apps
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Creación de una aplicación de lienzo desde cero con Common Data Service
 
-Compile una aplicación de lienzo para administrar datos almacenados en Common Data Service for Apps mediante entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
+Compile una aplicación de lienzo para administrar datos almacenados en Common Data Service mediante entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
 
 Al compilar una aplicación desde Common Data Service, no es necesario crear una conexión desde PowerApps, como ocurre con orígenes de datos como SharePoint, Dynamics 365 o Salesforce. Solo necesita especificar las entidades que desea mostrar, administrar o usar para ambas actividades en la aplicación.
 

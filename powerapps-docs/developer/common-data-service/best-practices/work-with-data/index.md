@@ -1,6 +1,6 @@
 ---
-title: 'Programadores: Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para Common Data Service para aplicaciones | Microsoft Docs'
-description: Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para programadores de Common Data Service para aplicaciones en PowerApps
+title: 'Desarrolladores: Procedimientos recomendados e instrucciones al trabajar con datos en Common Data Service | Microsoft Docs'
+description: Procedimientos recomendados e instrucciones dirigidos a desarrolladores que trabajan con datos de Common Data Service en PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -22,13 +22,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service-for-apps"></a>Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para Common Data Service para aplicaciones
+# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Procedimientos recomendados e instrucciones al trabajar con datos en Common Data Service
 
-La siguiente lista contiene todas las prácticas recomendadas y orientación sobre cómo integrar datos con código con Common Data Service para aplicaciones.
+Aquí se enumeran todos los procedimientos recomendados y las instrucciones relacionados con la integración de datos mediante código con Common Data Service.
 
-|Práctica recomendada  |Descripción  |
+|Procedimiento recomendado  |Descripción  |
 |---------|---------|
-|[Límites de la API (Common Data Service para aplicaciones)](../../api-limits.md)     |Comprenda los límites de las solicitudes de la API.         |
+|[Límites de API (Common Data Service)](../../api-limits.md)     |Conozca los límites de las solicitudes de API.         |
 
 # <a name="see-also"></a>Vea también
-[Trabajar con datos usando código en Common Data Service para aplicaciones (PowerApps)](../../work-with-data-cds.md)<br />
+[Trabajar con datos mediante código en Common Data Service (PowerApps)](../../work-with-data-cds.md)<br />
