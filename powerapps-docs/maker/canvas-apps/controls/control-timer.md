@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
-ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.openlocfilehash: 5d20e2324f2efb4f866ed4fc183f289733c10a41
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57804387"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491674"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -26,7 +26,9 @@ Control que determina la forma en que la aplicación responde una vez transcurri
 ## <a name="description"></a>Descripción
 Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparecer o cambian otras propiedades de un control una vez transcurrido un tiempo determinado.
 
-Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesita obtener una vista previa de la aplicación.  Esto permite al usuario configurar el temporizador en el diseñador sin restricciones de tiempo.
+> [!NOTE]
+> En PowerApps Studio, los temporizadores se ejecutan solo en modo de vista previa.
+
 
 ## <a name="key-properties"></a>Propiedades principales
 **Duración**: el tiempo durante el que se ejecuta un temporizador, en milisegundos.  No hay valor máximo.
@@ -142,33 +144,31 @@ Para que el temporizador se ejecute en el diseñador, tenga en cuenta que necesi
 
 5. Seleccione el botón de temporizador para iniciar o detener la animación. El texto de la etiqueta se difumina a blanco, recupera su intensidad y el proceso se repite.
 
-
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
-Se aplican las mismas directrices para **[Botón](control-button.md)** porque **Temporizador** es simplemente un botón especializado.
+Las mismas directrices para la **[botón](control-button.md)** controlan se aplican a la **temporizador** controlar si los usuarios pueden interactuar con él.
 
-> [!IMPORTANT]
-> Controlar el **Temporizador** sin intervención directa del usuario no se admite como función de accesibilidad. Por ejemplo, para ocultar un temporizador de la vista se pueden colocar otros controles encima de él o configurar su propiedad **[Visible](properties-core.md)** en **false**. El temporizador se inicia automáticamente cuando se muestra una pantalla y, al cabo de un tiempo, ejecuta alguna acción automáticamente. Actualmente, no hay ninguna manera general de hacer este escenario accesible.
+### <a name="background-timers"></a>Temporizadores en segundo plano
+Temporizadores en segundo plano se ejecuten automáticamente y están ocultos. Para usarlos en una función auxiliar donde el tiempo transcurrido es de escaso interés para el usuario. Por ejemplo, puede actualizar los datos cada minuto o mostrar un mensaje de notificación solo para una determinada cantidad de tiempo.
 
-Otras directrices de accesibilidad son las siguientes.
+Temporizadores en segundo plano deben tener su **[Visible](properties-core.md)** propiedad establecida en false para que están ocultos de todos los usuarios.
 
-### <a name="timing"></a>Intervalos
-Si un control **Temporizador** se inicia o detiene automáticamente, considere si los usuarios tienen tiempo suficiente para leer y usar el contenido. Puede que los usuarios de lector de pantalla y teclado necesiten más tiempo para reaccionar a un evento programado.
+### <a name="timing-considerations"></a>Consideraciones de control de tiempo
+Si un **temporizador** se ejecuta automáticamente, considere si los usuarios tienen tiempo suficiente para leer y usar el contenido. Los usuarios de teclado y el lector de pantalla pueden necesitar más tiempo para reaccionar a un evento programado.
 
 Cualquiera de estas estrategias sirve:
-* Permitir que los usuarios cancelen el evento programado
-* Permitir que los usuarios ajusten el límite de tiempo antes de que comience
-* Advertir 20 segundos antes de que expire el límite de tiempo y proporcionar una manera sencilla de ampliar el límite
+* Permitir a los usuarios cancelen el evento programado.
+* Permitir que los usuarios ajusten el límite de tiempo antes de que comience.
+* Advertir 20 segundos antes de que expire el límite de tiempo y proporcionan una manera sencilla para ampliar el límite.
 
 Algunos escenarios están exentos de estos requisitos. Aprenda más sobre las [directrices de WCAG 2.0 para los límites de tiempo](https://www.w3.org/TR/WCAG20/#time-limits).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* La propiedad **[Text](properties-core.md)** debe existir.
-* No use **[Text](properties-core.md)** con información importante y urgente. Los usuarios de lector de pantalla no recibirán alertas de los cambios en **[Text](properties-core.md)**.
+* Si un temporizador desencadena cambios en la pantalla actual, use un [región activa](../accessible-apps-live-regions.md) para indicar a los usuarios de lector de pantalla lo que ha cambiado.
 
     > [!NOTE]
-  > Los lectores de pantalla anunciarán el tiempo transcurrido cada 5 segundos. Sin embargo, la propiedad **[Text](properties-core.md)** del temporizador no se incluirá en el anuncio.
+    > Si el temporizador está visible y en ejecución, los lectores de pantalla anunciarán el tiempo transcurrido cada cinco segundos.
 
-* Considere la posibilidad de agregar un control **[Etiqueta](control-text-box.md)** para mostrar el tiempo transcurrido. Utilice la propiedad **[Text](properties-core.md)** del temporizador para indicar al usuario que inicie o detenga el temporizador.
-
-### <a name="support-in-powerapps-studio"></a>Soporte técnico en PowerApps Studio
-Al crear una aplicación, los temporizadores se deshabilitan para impedir que los eventos de activación. Puede probar los temporizadores en PowerApps Studio si abrir la vista previa, o puede guardar la aplicación y probarlas en el Reproductor de web o PowerApps Mobile.
+* No use la **[texto](properties-core.md)** propiedad de un control para obtener información importante y urgente. Los lectores de pantalla no anuncian los cambios realizados en  **[texto](properties-core.md)**.
+* Para los temporizadores interactiva:
+    * La propiedad **[Text](properties-core.md)** debe existir.
+    * Considere la posibilidad de agregar un **[etiqueta](control-text-box.md)** control para mostrar el tiempo transcurrido. Utilice el temporizador **[texto](properties-core.md)** propiedad para indicar al usuario para iniciar o detener el temporizador.

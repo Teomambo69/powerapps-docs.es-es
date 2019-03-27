@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073292"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491628"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Control del editor de texto enriquecido en PowerApps
 Permite que los usuarios finales dar formato al texto dentro de una área de edición de WYSIWYG.  El formato de salida es HTML.
@@ -62,3 +62,14 @@ Para usar el control dentro de un formulario, seleccione la tarjeta "Editar text
 **[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
+* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+### <a name="keyboard-support"></a>Compatibilidad con el teclado
+* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+
+> [!TIP]
+> Use **ALT+0** mientras se centra el editor para obtener información sobre otros métodos abreviados de teclado.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddb15340c9532e82d95f1bea70959dc59cdc7283
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853828"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491651"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
@@ -67,7 +67,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -108,7 +108,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 1. Agregue un control **Selector de fecha** y denomínelo **Deadline**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Agregue un control **[Etiqueta](control-text-box.md)** y establezca su propiedad **[Texto](properties-core.md)** en esta fórmula:
+2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
@@ -128,3 +128,6 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 * Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+
+> [!TIP]
+> Cuando se abre el calendario, presione **retroceder** y **AV PÁG** para navegar entre los meses y **CTRL+MAYÚS+RE PÁG** y **MAYÚS + AV PÁG** a navegar entre años.

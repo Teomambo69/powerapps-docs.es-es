@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 961f8908014ef9cd85eadacb97a7c1dfc7e52b25
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801006"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491608"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Control escáner de código de barras para las aplicaciones de lienzo
 
@@ -72,3 +72,11 @@ El control admite estos tipos de códigos de barras, los códigos de la matriz d
 **[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+
+## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
+Las mismas directrices para la **[botón](control-button.md)** controlan se aplican a la **escáner** controlar porque es un botón que inicia el análisis.
+
+### <a name="visual-alternatives"></a>Alternativas visuales
+* El escáner es un botón que no se muestra el resultado del examen. Considere la posibilidad de que se muestra el resultado del examen con un **[etiqueta](control-text-box.md)** control. Establezca la etiqueta **[texto](properties-core.md)** propiedad en el escáner **valor** propiedad. Establezca la etiqueta **[Live](properties-accessibility.md)** propiedad **educados** para que los usuarios de lector de pantalla se le notifican los cambios. Este cambio hace que el valor escaneado que sea accesible a todos, con independencia de la capacidad de visual.
+
+* Los usuarios con discapacidades visuales y motor preferible no para apuntar a la cámara en un código de barras. Considere la posibilidad de agregar otro formulario de entrada, como un **[entrada de texto](control-text-input.md)** control para los usuarios escriban códigos de barras.
