@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357147"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545093"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalizar una galería en PowerApps
 
@@ -53,8 +53,6 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
-    [![Página principal de PowerApps](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
-
 1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos (**...** ) y, a continuación, seleccione **Editar**.
 
     ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
@@ -69,25 +67,15 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
     ![Seleccionar la galería](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. Cerca del borde derecho, seleccione **Cuentas** para abrir el panel **Datos**.
-
-    ![Abrir el panel **Datos**](./media/customize-layout-sharepoint/open-data-pane.png)
-
-1. En el panel **Datos**, abra la lista de opciones en **Diseño**.
-
-    ![Mostrar las opciones de diseño](./media/customize-layout-sharepoint/show-layouts.png)
-
-1. En la lista de opciones, seleccione la opción que muestra solo un título.
+1. En el **propiedades** ficha del panel derecho, abra la lista de opciones de **diseño**y, a continuación, seleccione la opción que muestra solo un título.
 
     ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. En el panel **Datos**, abra la lista de opciones para el título.
+1. Junto a **campos**, seleccione **editar**y, a continuación, seleccione la flecha hacia abajo del cuadro de título.
 
     El nombre de este control finalizará en un valor numérico, como **Título1**, pero el número puede diferir en función de otras acciones que haya realizado.
 
-    ![Abrir la lista de opciones para la etiqueta de título](./media/customize-layout-sharepoint/show-title-options.png)
-
-1. En la lista de opciones, seleccione **Account name (name)** (Nombre de cuenta [cuenta]) y, a continuación, cierre el panel **Datos**.
+1. En la lista de opciones, seleccione **nombreCuenta**y, a continuación, cierre el **datos** panel.
 
     La galería muestra el nombre de cada cuenta.
 
@@ -154,9 +142,7 @@ Si es posible que los usuarios no tengan pantallas táctiles ni ruedas del mouse
 
     ![Seleccionar la galería](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. En la pestaña **Galería**, seleccione **Mostrar barra de desplazamiento** y confirme que el valor de la propiedad ha cambiado a **true**.
-
-    ![Mostrar barra de desplazamiento](./media/customize-layout-sharepoint/show-scrollbar.png)
+1. La galería **Mostrar barra de desplazamiento** propiedad **true**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

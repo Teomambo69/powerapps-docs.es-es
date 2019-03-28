@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198553"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545116"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Crear y actualizar una colección en una aplicación de lienzo
 
@@ -86,7 +86,7 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
     ![Establezca la propiedad Items de la galería y cambie los campos que muestra](./media/create-update-collection/configure-gallery.png)
 
-1. Cerrar la **datos** panel y establezca el **diseño** campo **título y subtítulo**.
+1. Cerrar la **datos** panel, seleccione la galería y, a continuación, establezca el **diseño** campo **título y subtítulo**.
 
     ![Establezca la propiedad Items de la galería y cambie los campos que muestra](./media/create-update-collection/change-layout.png)
 

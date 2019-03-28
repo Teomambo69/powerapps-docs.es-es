@@ -1,5 +1,5 @@
 ---
-title: Crear una aplicación de lienzo desde cero a partir de datos de Excel | Microsoft Docs
+title: Creación de una aplicación de lienzo desde cero a partir de datos de Excel | Microsoft Docs
 description: En este tutorial, creará una aplicación de lienzo de dos pantallas para que los usuarios puedan crear, editar y eliminar registros en un archivo de Excel.
 author: AFTOwen
 manager: kvivek
@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/23/2018
+ms.date: 03/26/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
+ms.sourcegitcommit: 926f42cd61ac3751540d42e74e4408bc82afc444
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2018
-ms.locfileid: "51334005"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58504052"
 ---
-# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Crear una aplicación de lienzo desde cero a partir de datos de Excel
+# <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Creación de una aplicación de lienzo desde cero a partir de datos de Excel
 
-Cree su propia aplicación de lienzo desde cero a partir de datos de Excel, en formato de tabla, y agregue luego datos de otros orígenes si quiere. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores de aplicaciones con experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
+Cree su propia aplicación de lienzo desde cero a partir de datos de Excel, en formato de tabla, y agregue luego datos de otros orígenes si quiere. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores que tengan más experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -34,10 +34,10 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
     | --- | --- | --- | --- |
     | Sábado |10 a.m. a mediodía |Vasquez |Kumashiro |
     | Sábado |mediodía a 2 p.m. |Ice |Singhal |
-    | Sábado |2 p.m. a 4 p.m. |Myk |Mueller |
+    | Sábado |2 p.m. - 4 p.m. |Myk |Mueller |
     | Domingo |10 a.m. a mediodía |Li |Adams |
-    | Domingo |10 a.m. a mediodía |Singh |Morgan |
-    | Domingo |10 a.m. a mediodía |Batye |Nguyen |
+    | Domingo | mediodía a 2 p.m. |Singh |Morgan |
+    | Domingo | 2 p.m. - 4 p.m. |Batye |Nguyen |
 
 2. Dé a los datos un formato de tabla, llamada **Programa**, para que PowerApps pueda analizar la información.
 
@@ -49,19 +49,27 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 > Para conocer los conceptos generales, puede utilizar su propio archivo de Excel y seguir este tutorial. No obstante, los datos del archivo de Excel deben tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
+
 1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+
+1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
+
+    > [!div class="mx-imgBorder"]
+    >![Creación de una aplicación de lienzo en blanco](./media/get-started-create-from-blank/blank-app.png)
+
+1. Especifique el nombre de la aplicación, seleccione **Teléfono** y, luego, **Crear**.
 
     Puede diseñar una aplicación desde cero para teléfonos o para otros dispositivos (por ejemplo, tabletas). Este tema se centra en el diseño de una aplicación para teléfonos.
 
-1. En **Cree su propia aplicación**, mantenga el puntero sobre el icono **Iniciar desde cero** de las aplicaciones de lienzo, seleccione el icono de teléfono y, después, **Crear esta aplicación**.
-
-    ![Icono de la aplicación en blanco](./media/get-started-create-from-blank/start-from-blank.png)
+    > [!div class="mx-imgBorder"]
+    >![Especificación del nombre y el formato de la aplicación](./media/get-started-create-from-blank/excel-demo.png)
 
     PowerApps Studio crea una aplicación en blanco para teléfonos.
 
 1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
 ## <a name="connect-to-data"></a>Conectarse a datos
+
 1. En el centro de la pantalla, seleccione **Conectarse a datos**.
 
 1. En el panel **Datos**, seleccione la conexión de su cuenta de almacenamiento en la nube, si aparece. De lo contrario, siga estos pasos para agregar una conexión:
@@ -73,97 +81,93 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
 1. En **Elegir una tabla**, active la casilla de **Programa** y, a continuación, seleccione **Conectar**.
 
+1. Cierre el panel **Datos** mediante el icono de cierre (X) que encontrará en la esquina superior derecha.
+
 ## <a name="create-the-view-screen"></a>Creación de la pantalla de vista
 
-1. En la pestaña **Inicio**, seleccione la flecha abajo junto a **Nueva pantalla** para abrir una lista de tipos de pantalla y, a continuación, seleccione **Pantalla de lista**.
-
-    ![Agregar una pantalla de lista](./media/get-started-create-from-blank/add-list-screen.png)
+1. En la pestaña **Inicio**, seleccione la flecha abajo junto a **Nueva pantalla** para abrir una lista de tipos de pantalla y, luego, seleccione **Lista**.
 
     Se agrega una pantalla con varios controles predeterminados, como un cuadro de búsqueda y un control de **[Galería](controls/control-gallery.md)** . La galería cubre toda la pantalla en el cuadro de búsqueda.
 
-2. Seleccione la galería haciendo clic o pulsando hacia el centro.
+1. En la parte superior de la pantalla nueva, seleccione el control **[Etiqueta](controls/control-text-box.md)** y reemplace **[Título]** por **Ver registros**.
+
+     ![Cambiar la barra de título](./media/get-started-create-from-blank/change-title-bar.png)
+
+1. En la barra de navegación izquierda, seleccione **BrowseGallery1**.
 
     Se muestra un cuadro de selección con indicadores alrededor de la galería.
 
     ![Agregar una pantalla de lista](./media/get-started-create-from-blank/select-gallery.png)
 
-3. En el panel derecho, seleccione **CustomGallerySample** para abrir el panel **Datos**.
+1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione la flecha abajo del menú **Diseño**.
 
-    ![Apertura del panel de datos](./media/get-started-create-from-blank/custom-gallery-sample.png)
+    ![Apertura del menú de diseño](./media/get-started-create-from-blank/select-layout.png)
 
-4. En **Origen de datos**, seleccione la flecha hacia abajo para abrir la lista de orígenes de datos para la aplicación y, a continuación, seleccione **Programa**.
+1. Seleccione **Título, subtítulo y cuerpo**.
 
-    ![Selección de origen de datos](./media/get-started-create-from-blank/select-schedule.png)
+1. En la barra de fórmulas, reemplace **CustomGallerySample** por **Programa** y ambas instancias de **SampleText** por **Volunteer**.
 
-5. En **Diseño**, seleccione la flecha hacia abajo para abrir la lista de los diseños y, a continuación, seleccione **Título, subtítulo y cuerpo**.
+1. En el borde derecho de la barra de fórmulas, seleccione la flecha abajo y, luego, **Aplicar formato al texto**.
 
-    ![Seleccionar diseño](./media/get-started-create-from-blank/select-layout.png)
+    La fórmula coincide con la de este ejemplo:
 
-6. En **Title2** (Título 2), cambie la columna que aparece de **Backup** a **Volunteer**.
+    ```powerapps-dot
+    SortByColumns(
+        Search(
+            Schedule,
+            TextSearchBox1.Text,
+            "Volunteer"
+        ),
+        "Volunteer",
+        If(
+            SortDescending1,
+            SortOrder.Descending,
+            SortOrder.Ascending
+        )
+    )
+    ```
 
-     ![Cambio de columna en etiqueta](./media/get-started-create-from-blank/change-title2.png)
+1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione **Editar**, junto a la etiqueta **Campos**.
 
-7. Cierre el panel **Datos** seleccionando el icono Cerrar en la esquina superior derecha.
+1. En el cuadro **Title2**, seleccione **Volunteer**.
 
-    La galería muestra el nombre de cada voluntario y el día y la hora del turno de ese voluntario.
+1. Cierre el panel **Datos** mediante el icono de cierre (X) que encontrará en la esquina superior derecha.
 
-    ![Datos de Programa en la galería no ordenados](./media/get-started-create-from-blank/show-data-unsorted.png)
+Los usuarios pueden ordenar y filtrar la galería por nombre de voluntario tomando como base las funciones **SortByColumns** y **Search** en esa fórmula.
 
-8. Seleccione la galería y confirme que la lista de propiedades muestra **[Elementos](controls/properties-core.md)**.
+- Si un usuario escribe al menos una letra en el cuadro de búsqueda, la galería mostrará únicamente aquellos registros en los que el campo **Volunteer** contenga el texto escrito por el usuario.
+- Si el usuario selecciona el botón de ordenación (entre el de actualización y el "más" de la barra de títulos), la galería mostrará los registros en orden ascendente o descendente, dependiendo de cuántas veces seleccione el botón el usuario, tomando como referencia el campo **Volunteer**.
 
-    Como se muestra en la barra de fórmulas, el valor de esta propiedad es **Programa**.
-
-    ![Datos de Programa en la galería no ordenados](./media/get-started-create-from-blank/set-property.png)
-
-9. Cambie el valor de la propiedad **Elementos** copiando esta fórmula y pegándola en la barra de fórmulas:
-
-    **SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
-
-    La galería muestra datos en orden alfabético por nombre de voluntario.
-
-    ![Datos de Programa en la galería ordenados](./media/get-started-create-from-blank/show-data-sorted.png)
-
-    Los usuarios pueden ordenar y filtrar la galería por nombre de voluntario tomando como base las funciones **SortByColumns** y **Search** en esa fórmula.
-
-   - Si un usuario escribe al menos una letra en el cuadro de búsqueda, la galería mostrará únicamente aquellos registros en los que el campo **Volunteer** contenga el texto escrito por el usuario.
-   - Si el usuario selecciona el botón de ordenación, la galería muestra los registros en orden ascendente o descendente (dependiendo de cuántas veces seleccione el botón el usuario) tomando como referencia el campo **Volunteer**.
-
-     Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
-
-10. Escriba una **i** en el cuadro de búsqueda, seleccione el botón de ordenación haciendo clic o pulsando en él y, a continuación, selecciónelo otra vez (o un número impar de veces más).
-
-     La galería muestra estos resultados.
-
-     ![Ordenar y filtrar la galería](./media/get-started-create-from-blank/sort-filter.png)
-
-11. Borre todo el texto del cuadro de búsqueda.
-
-12. En la parte superior de la pantalla, seleccione el control **[Label](controls/control-text-box.md)** y luego reemplace **[Title]** (Título) por **View records** (Ver registros).
-
-     ![Cambiar la barra de título](./media/get-started-create-from-blank/change-title-bar.png)
+Para obtener más información sobre estas y otras funciones, vea la [referencia de fórmulas](formula-reference.md).
 
 ## <a name="create-the-change-screen"></a>Creación de la pantalla de cambio
-1. En la pestaña **Inicio**, seleccione la flecha abajo junto a **Nueva pantalla** y, a continuación, seleccione **Pantalla de formulario**.
 
-     ![Adición de pantalla de formulario](./media/get-started-create-from-blank/add-form-screen.png)
+1. En la pestaña **Inicio**, seleccione la flecha abajo junto a **Nueva pantalla** y, luego, seleccione **Formulario**.
 
-1. En la pantalla que acaba de agregar, seleccione **Conectarse a datos** para abrir el panel **Datos** y, a continuación, establezca el origen de datos en **Programa**.
+1. En la barra de navegación izquierda, seleccione **EditForm1**.
 
-1. En **Campos**, seleccione todas las casillas para mostrar todos los campos en el formulario.
+1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione la flecha abajo junto a **Origen de datos** y, luego, **Programa** en la lista que aparece.
 
-     ![Mostrar campos](./media/get-started-create-from-blank/show-fields.png)
+1. Junto al origen de datos que acaba de especificar, seleccione **Editar campos**.
 
-1. Arrastre campo **Volunteer** para que aparezca en la parte superior de la lista de campos.
+1. En el panel **Campos**, seleccione **Agregar campo**, marque la casilla de cada campo y, luego, seleccione **Agregar**.
+
+1. Seleccione la flecha junto al nombre de cada campo para contraerlo y, luego, arrastre el campo **Volunteer** para que aparezca al principio de la lista de campos.
 
      ![Cambio del orden de los campos](./media/get-started-create-from-blank/reorder-fields.png)
 
-1. Seleccione el formulario y establezca su propiedad **Elemento** en la expresión escribiéndola o pegándola en la barra de fórmulas:<br>**BrowseGallery1.Selected**
+1. Cierre el panel **Campos** mediante el icono de cierre (X) que encontrará en la esquina superior derecha.
+
+1. Para establecer la propiedad **Elemento** del formulario, escriba o pegue la expresión en la barra de fórmulas:
+
+    `BrowseGallery1.Selected`
 
 1. En la parte superior de la pantalla, seleccione el control **[Label](controls/control-text-box.md)** y luego reemplace **[Title]** (Título) por **Change records** (Cambiar registros).
 
     ![Cambiar la barra de título](./media/get-started-create-from-blank/change-title-bar2.png)
 
 ## <a name="delete-and-rename-screens"></a>Eliminación y cambio de nombre de pantallas
+
 1. En la barra de navegación izquierda, seleccione el botón de puntos suspensivos (...) para **Screen1**y, a continuación, seleccione **Eliminar**.
 
     ![Eliminar pantalla](./media/get-started-create-from-blank/delete-screen.png)
@@ -173,11 +177,14 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 1. Seleccione los puntos suspensivos (...) para **Screen3**, seleccione **Cambiar nombre** y, a continuación, escriba o pegue **ChangeScreen**.
 
 ## <a name="configure-icons-on-the-view-screen"></a>Configuración de iconos en la pantalla de vista
+
 1. Cerca de la parte superior de **ViewScreen**, seleccione el icono de flecha circular.
 
     ![Agregar registro](./media/get-started-create-from-blank/refresh-icon.png)
 
-1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:<br>**Refresh(Programa)**
+1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
+
+    `Refresh(Schedule)`
 
     Cuando el usuario seleccione este icono, los datos de **Programa** se actualizarán desde el archivo de Excel.
 
@@ -187,7 +194,9 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     ![Agregar registro](./media/get-started-create-from-blank/add-record.png)
 
-1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:<br>**NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)**
+1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
+
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, aparece la pantalla **ChangeScreen** con los campos vacíos, de forma que el usuario puede crear un registro más fácilmente.
 
@@ -195,16 +204,21 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     ![Selección de flecha](./media/get-started-create-from-blank/select-arrow.png)
 
-1. Establezca la propiedad **OnSelect** de la flecha en esta fórmula:<br>**EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)**
+1. Establezca la propiedad **OnSelect** de la flecha en esta fórmula:
+
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, **ChangeScreen** aparece con cada campo que muestra los datos para el registro seleccionado, por lo que el usuario puede editar o eliminar el registro más fácilmente.
 
 ## <a name="configure-icons-on-the-change-screen"></a>Configuración de iconos en la pantalla de cambio
-1. En **ChangeScreen**, seleccione el icono "x" en la esquina superior izquierda.
+
+1. En **ChangeScreen**, seleccione el icono "X" en la esquina superior izquierda.
 
     ![Icono Cancelar](./media/get-started-create-from-blank/cancel-icon.png)
 
-1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:<br>**ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)**
+1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
+
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se descartan y se abre la pantalla de vista.
 
@@ -212,7 +226,9 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     ![Icono de marca de verificación](./media/get-started-create-from-blank/checkmark-icon.png)
 
-1. Establezca la propiedad **OnSelect** de la marca de verificación en esta fórmula:<br>**SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)**
+1. Establezca la propiedad **OnSelect** de la marca de verificación en esta fórmula:
+
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se guardan y se abre la pantalla de vista.
 
@@ -222,14 +238,27 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     ![Icono de la papelera](./media/get-started-create-from-blank/trash-icon.png)
 
-1. Establezca la propiedad **OnSelect** para el icono de papelera en esta fórmula:<br>**Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)**
+1. Establezca la propiedad **Visible** para el icono de papelera en esta fórmula:
+
+    `EditForm1.Mode = FormMode.Edit`
+
+    Este icono solo aparecerá si el formulario está en el modo **Editar**, no en el modo **Nuevo**.
+
+1. Establezca la propiedad **OnSelect** para el icono de papelera en esta fórmula:
+
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, el registro seleccionado se elimina del origen de datos y se abre la pantalla de vista.
 
 ## <a name="test-the-app"></a>Probar la aplicación
-1. Seleccione **ViewScreen** y abra el modo de vista previa presionando F5 (o seleccionando el icono de **Vista previa** situado cerca de la esquina superior derecha).
+
+1. Seleccione **ViewScreen** y abra el modo de vista previa presionando F5 o mediante el icono de **Vista previa** cerca de la esquina superior derecha.
 
     ![Abrir el modo de vista previa](./media/get-started-create-from-blank/open-preview.png)
+
+1. Escriba o pegue una o varias letras en el cuadro de búsqueda para filtrar la lista en función del nombre del voluntario.
+
+1. Seleccione el icono de ordenación una o varias veces para mostrar los datos en orden ascendente o descendente, según el nombre del voluntario.
 
 1. Agregue un registro.
 
