@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357101"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616694"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Función Concurrent de PowerApps
 Evalúa varias fórmulas simultáneamente entre sí.
@@ -131,7 +131,7 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 4. Agregue un control [**Tabla de datos**](../controls/control-data-table.md) y establezca su propiedad **Items** en **Results**.
 
-1. En la pestaña **Propiedades** del panel derecho, seleccione **Resultados** para abrir el panel **Datos**.
+1. En el **propiedades** ficha del panel derecho, seleccione **editar campos** para abrir el **campos** panel.
 
 1. En la lista de campos, active la casilla de cada campo para mostrarlos todos en la tabla de datos.
 

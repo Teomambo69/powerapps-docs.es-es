@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5daff973e3d6a90c6ca7748e0684a7a68c23226
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799028"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616717"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
 
@@ -26,64 +26,60 @@ Muestre una lista de elementos de cualquier origen de datos agregando un control
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Aprenda a [agregar y configurar un control](add-configure-controls.md) en PowerApps.
+- Aprenda a [agregar y configurar un control](add-configure-controls.md) en PowerApps.
 
-* Configure los datos de ejemplo:
+- Configure los datos de ejemplo:
     1. Descargue [este archivo de Excel](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx), que contiene datos de ejemplo para este tutorial.
 
     2. Cargue el archivo de Excel en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive para la Empresa.
 
-## <a name="add-a-gallery-control"></a>Adición de un control Galería
-1. Abra PowerApps y haga clic o pulse en **Nueva aplicación** cerca del borde izquierdo.
+- Abra una aplicación en blanco:
+    1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-2. En el icono **Blank app** (Aplicación vacía), pulse o haga clic en **Phone layout** (Diseño de teléfono).
+    1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
 
-3. En el cuadro de diálogo **PowerApps Studio**, pulse o haga clic en **Skip** (Omitir).
+    1. Especifique el nombre de la aplicación, seleccione **Teléfono** y, luego, **Crear**.
 
-4. [Agregue una conexión](add-data-connection.md) a la tabla **FlooringEstimates** del archivo de Excel.
+    1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
 
-5. (opcional) Agregue un control **Galería** a la pantalla predeterminada, para lo que debe hacer clic o pulsar la pestaña **Insertar**, pulsar o hacer clic en **Galería** y, después, pulsar o hacer clic en un control **Galería** que esté vacío (en blanco) o que contenga un conjunto predeterminado de controles.
+    1. [Agregue una conexión](add-data-connection.md) a la tabla **FlooringEstimates** del archivo de Excel.
 
-    Estas opciones incluyen controles **Galería** que se desplazan de forma horizontal o vertical. También se puede agregar un control **Galería** que base automáticamente su tamaño en la cantidad de contenido de cada elemento.
+## <a name="add-a-gallery-to-a-blank-screen"></a>Agregue una galería en una pantalla en blanco
 
-    ![Agregar galería](./media/add-gallery/gallery-dropdown.png)
+1. En el **insertar** ficha, seleccione **galería**y, a continuación, seleccione **Vertical**.
 
-6. En la pestaña **Inicio**, pulse o haga clic en **Nueva pantalla**.
+    ![Agregar galería vertical](./media/add-gallery/gallery-dropdown.png)
 
-    Puede agregar una pantalla que esté vacía, que se desplace, que contenga un control **Galería** o que contenga un formulario.
+1. En el **propiedades** ficha del panel derecho, abrirlo el **elementos** lista y, a continuación, seleccione **Flooring Estimates**.
 
-7. Pulse o haga clic en **Pantalla de lista** para agregar una pantalla que contenga un control **Galería** y otros controles, como una barra de búsqueda.
+    ![Estimaciones de suelos](./media/add-gallery/select-layout.png)
 
-    > [!NOTE]
-   > Si agrega un control **Galería** a una pantalla nueva o a una existente, puede hacer clic o pulsar cerca de la parte inferior del control **Galería** para seleccionarlo, pulsar o hacer clic en **Flooring Estimates** en el panel derecho y, después, pulsar o hacer clic en otro diseño del panel **Datos**. Para este tutorial, deje el diseño predeterminado.
+1. (opcional) En el **diseño** lista, seleccione una opción diferente.
 
-    ![Elegir el diseño de la galería](./media/add-gallery/select-layout.png)
+## <a name="add-a-gallery-in-a-screen"></a>Agregue una galería en una pantalla
 
-8. Pulse o haga clic en el control **Galería** de la pantalla que acaba de agregar.
+1. En el **inicio** ficha, seleccione **nueva pantalla** > **pantalla lista**.
 
-9. En la pestaña **Propiedades** del panel derecho, pulse o haga clic en **CustomGallerySample**.
+    Una pantalla que contenga un **galería** control y otros controles, como una barra de búsqueda, aparece.
 
-10. En el panel **Data** (Datos), pulse o haga clic en **CustomGallerySample** y, después, en **FlooringEstimates**.
-
-    ![Seleccionar origen de datos](./media/add-gallery/choose-data.png)
+1. Establezca la propiedad **Elementos** de la galería en `FlooringEstimates`.
 
     El control **Galería** muestra los datos de ejemplo.
 
     ![Mostrar datos](./media/add-gallery/show-data-default.png)
 
-    La ordenación y la búsqueda se configurarán en este mismo tema más adelante.
-
 ## <a name="add-a-control-to-the-gallery-control"></a>Agregar un control al control Galería
-Antes de realizar cualquier personalización, elija un diseño del control **Galería**. El primer conjunto de controles de un control **Galería** es la plantilla, que determina el aspecto de todos los datos de dicho control.
+Antes de realizar cualquier otra personalización, asegúrese de que el diseño de su **galería** control más acerque lo que desea. Desde allí, puede modificar aún más el **galería** plantilla, que determina cómo todos los datos en el **galería** aparezca el control.
 
-1. Seleccione la plantilla, para lo que debe hacer clic o pulsar cerca de la parte inferior del control **Galería** y, después, pulsar o hacer clic en el icono del lápiz en la esquina superior izquierda.
+1. Seleccione la plantilla haciendo clic o pulsar cerca de la parte inferior de la **galería** control y, a continuación, seleccionando el icono de lápiz en la esquina superior izquierda.
 
     ![Editar plantilla de galería](./media/add-gallery/edit-item.png)
 
 2. Con la plantilla aún seleccionada, agregue un control **[Etiqueta](controls/control-text-box.md)** y, después, muévalo y ajuste su tamaño para que no se superponga con otros controles de la plantilla.
 
     ![Agregar etiqueta](./media/add-gallery/add-text-box.png)
-3. Abra el panel **Data** (Datos), para lo que debe seleccionar la plantilla y, después, pulsar o hacer clic en **Flooring Estimates** en el panel derecho.
+
+3. Seleccione la galería y, a continuación, seleccione **editar** junto a **campos** en el **propiedades** ficha del panel derecho.
 
 4. Seleccione la etiqueta que ha agregado en este procedimiento y abra la lista resaltada en el panel **Data** (Datos).
 
@@ -91,55 +87,53 @@ Antes de realizar cualquier personalización, elija un diseño del control **Gal
 
 5. En dicha lista, pulse o haga clic en **Price**.
 
-    ![Cambiar el enlace de la etiqueta](./media/add-gallery/change-binding.png)
-
     El control **Galería** muestra los valores nuevos.
 
     ![Galería final](./media/add-gallery/final-gallery.png)
 
-## <a name="filter-the-gallery-control"></a>Filtro del control Galería
-La propiedad **[Elementos](controls/properties-core.md)** de una control **Galería** determina los elementos que muestra. En este procedimiento, se configura esa propiedad para que el control **Galería** muestre solo los elementos para los que el nombre del producto contenga el texto de **TextSearchBox1**.
+## <a name="filter-and-sort-a-gallery"></a>Filtrar y ordenar una galería
+La propiedad **[Elementos](controls/properties-core.md)** de una control **Galería** determina los elementos que muestra. En este procedimiento, configurará esa propiedad para que también determina los registros que aparecen se basa en criterios de filtro y en qué orden.
 
-![Cuadro de búsqueda de texto](./media/add-gallery/text-search-box.png)
-
-1. Seleccione el control **Galería**, para lo que debe hacer clic o pulsar cerca de la parte inferior del control Galería.
-
-2. En la pestaña **Opciones avanzadas**, establezca la pestaña**[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
-
-    **If(IsBlank(TextSearchBox1.Text), FlooringEstimates, Filter(FlooringEstimates, TextSearchBox1.Text in Text(Name)))**
-
-    Para más información acerca de las funciones de esta fórmula, consulte la [referencia de las fórmulas](formula-reference.md).
-
-3. Escriba una parte o la totalidad de un nombre de producto en el cuadro de búsqueda.
-
-    El control **Galería** muestra solo los elementos que cumplen el criterio de filtro.
-
-## <a name="sort-the-gallery-control"></a>Orden del control Galería
-La propiedad **[Elementos](controls/properties-core.md)** de un control **Galería** determina el orden en que muestra los elementos. En este procedimiento, configurará esa propiedad para que el control **Galería** muestra el orden de los elementos según lo establecido por **ImageSortUpDown1**.
-
-![Imagen para ordenar](./media/add-gallery/image-sorting.png)
+![Icono de ordenación y de cuadro de búsqueda](./media/add-gallery/text-search-box.png)
 
 1. Establezca la propiedad **[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
 
-    **Sort(If(IsBlank(TextSearchBox1.Text), FlooringEstimates, Filter(FlooringEstimates, TextSearchBox1.Text in Text(Name))), Name, If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
+    ```powerapps-dot
+    Sort
+        (If
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
+            Filter(
+                FlooringEstimates,
+                TextSearchBox1.Text in Text(Name)
+            )
+        ),
+        Name,
+        If(
+            SortDescending1,
+            SortOrder.Descending,
+            SortOrder.Ascending
+        )
+    )
+    ```
 
-2. Seleccione el icono de ordenación para cambiar el criterio de ordenación del control **Galería** por los nombres de los productos.
+    Para más información acerca de las funciones de esta fórmula, consulte la [referencia de las fórmulas](formula-reference.md).
 
-Para ordenar *y* filtrar un control **Galería**:
+1. Haga doble clic en el cuadro de búsqueda y, a continuación, escriba la totalidad o parte de un nombre de producto en ella.
 
-* Reemplace las dos instancias de *DataSource* de esta fórmula por el nombre del origen de datos.
+    Solo los elementos que cumplen el criterio de filtro aparecen.
 
-* Reemplace las dos instancias de *ColumnName* por el nombre de la columna por la que desea ordenar y filtrar.
+1. Mientras se presiona la tecla Alt, seleccione el icono de ordenación una o varias veces para cambiar el criterio de ordenación.
 
-**Sort(If(IsBlank(TextSearchBox1.Text),** *DataSource*, **Filter(** *DataSource*, **TextSearchBox1.Text in Text(** *ColumnName* **))),** *ColumnName*, **If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
+    Activar o desactivar los registros entre ascendente y descendente por orden alfabético según el nombre del producto.
 
 ## <a name="highlight-the-selected-item"></a>Resalte del elemento seleccionado
-En la propiedad **RellenoDePlantilla** del control **Galería** escriba una fórmula similar a la de este ejemplo:
+Establecer el **galería** del control **Rellenodeplantilla** propiedad en una fórmula que es similar a este ejemplo, pero puede especificar distintos colores si desea:
 
 **If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Cambio de la elección predeterminada
-En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, especifique el quinto elemento del origen de datos **FlooringEstimates**:
+En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, puede especificar el quinto elemento de la **FlooringEstimates** origen de datos:
 
 **Last(FirstN(FlooringEstimates, 5))**
 

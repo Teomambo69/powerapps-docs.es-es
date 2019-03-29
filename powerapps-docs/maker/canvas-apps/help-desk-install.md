@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330249"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581102"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
@@ -138,7 +138,7 @@ Esta lista almacena los vales del servicio Help Desk.
 2. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 3. Haga clic en **Aceptar**.
 
-## <a name="download-the-help-desk-powerapp"></a>Descargar la aplicación Help Desk de PowerApps
+## <a name="download-the-app"></a>Descargar la aplicación
 
 1.  [Descargue](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
 
@@ -172,7 +172,7 @@ Esta lista almacena los vales del servicio Help Desk.
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
 
-## <a name="import-the-help-desk-powerapp"></a>Importar la aplicación Help Desk de PowerApps
+## <a name="import-the-app"></a>Importar la aplicación
 
 1. En un explorador web, vaya a https://web.powerapps.com.
 2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
@@ -209,33 +209,27 @@ Esta lista almacena los vales del servicio Help Desk.
 
     ![Pantalla Importar configuración](./media/help-desk-install/import-done.png)
 
-## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>Configurar la aplicación de PowerApps para usar la lista de SharePoint
+## <a name="configure-the-app-to-use-the-sharepoint-list"></a>Configurar la aplicación para usar la lista de SharePoint
 
 1. En Pasos siguientes, haga clic en **Abrir aplicación**.
 2. Haga clic en **Permitir** cuando se le solicite permiso.
 
 ### <a name="delete-connections"></a>Eliminar conexiones
 
-1. Haga clic en **Ver**.
-2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en los **puntos suspensivos** junto a la conexión de SharePoint **HelpDesk**.
-4. Haga clic en **Quitar**.
+1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En el **datos** panel, seleccione los puntos suspensivos (...) junto a **HelpDesk**y, a continuación, seleccione **quitar**.
 
 ### <a name="helpdesk-list"></a>Lista de Help Desk
 
-1. Haga clic en **Ver**.
-2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en **+ Agregar origen de datos**.
-4. Seleccione **SharePoint**.
-5. Haga clic en **Crear**.
-6. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista de HelpDesk.
+1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En el **datos** panel, seleccione **agregar origen de datos** > **nueva conexión** > **SharePoint**  >  **Crear**.
+1. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista de HelpDesk.
 
     > [!TIP] 
-    > Si el sitio no aparece en la lista, escriba en el cuadro de texto la dirección URL que lleva al sitio de SharePoint y haga clic en **Ir**.
+    > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y, a continuación, seleccione **vaya**.
 
-7. En el cuadro de texto **Buscar** de la parte superior de la lista, escriba **HelpDesk**.
-8. Active la casilla junto a la lista **HelpDesk**.
-9. Haga clic en **Conectar**.
+1. En el **búsqueda** cuadro en la parte superior de la lista, escriba o pegue **HelpDesk**.
+1. Active la casilla de verificación junto a **HelpDesk**y, a continuación, seleccione **Connect**.
 
 ### <a name="update-admin-list"></a>Actualizar la lista de administradores
 
@@ -247,20 +241,17 @@ Esta lista almacena los vales del servicio Help Desk.
     ![Actualizar la lista de administradores](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-   > Si tiene más de un administrador, sepárelos mediante comas.  Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
+   > Si tiene más de un administrador, use una coma para delimitar la lista de administradores. Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
    > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
 
-5. Haga clic en **Archivo**.
-6. Haga clic en **Guardar**.
-7. Haga clic en **Publicar**.
-8. Haga clic en **Publicar esta versión**.
+1. Seleccione **archivo** > **guardar** > **publicar** > **publicar esta versión**.
 
 ## <a name="modify-the-flow"></a>Modificar el flujo
 
 1.  En el menú de la izquierda, seleccione **Flujos**.
 2.  Si es necesario, inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  Seleccione **Mis flujos** en el menú superior.
-4.  Junto al flujo **HelpDeskFlow**, haga clic en el **icono de lápiz**. 
+4.  Junto a la **HelpDeskFlow** flujo, haga clic en el icono de lápiz. 
  
     ![Pantalla Editar flujo](./media/help-desk-install/edit-flow.png)
 
@@ -281,18 +272,16 @@ Esta lista almacena los vales del servicio Help Desk.
 
 11. Haga clic en **Actualizar flujo**.
 
-## <a name="play-the-powerapp"></a>Reproducir la aplicación de PowerApps
+## <a name="play-the-app"></a>Reproducir la aplicación
 
 1. En el explorador web, haga clic en **Aplicaciones**.
-2. Haga clic en los **puntos suspensivos** junto a la aplicación Help Desk de PowerApps.
+2. Haga clic en el botón de puntos suspensivos (...) situado junto a la aplicación Help Desk.
 3. Haga clic en **Abrir**. 
 
 > [!TIP]
 > Vea este [vídeo](https://youtu.be/sl5fXwwnvzI) para aprender a usar el ejemplo de Help Desk de PowerApps.
 
-
 ## <a name="next-steps"></a>Pasos siguientes
 - [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [Agregar y configurar un control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
-- [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
- 
+- [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

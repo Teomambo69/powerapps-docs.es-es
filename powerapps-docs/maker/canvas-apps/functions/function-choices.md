@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
+ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357607"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58623404"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -83,10 +83,10 @@ En este momento, puede usar las columnas de búsqueda sólo con SharePoint y Com
 
 8. En la tarjeta de **Primary Contact**, seleccione el control **Cuadro combinado**.
 
-    La propiedad **Items** de ese control se establece en una de dos fórmulas en función del estado de la casilla **Usar nombres de columna para mostrar** de Configuración avanzada.
+    El **elementos** propiedad de ese control se establece en una fórmula que identifica la columna por su nombre para mostrar, como se muestra en el primer ejemplo, o su nombre lógico, como se muestra en el segundo ejemplo:
 
-   - Si la casilla está activada, la propiedad se establece en esta fórmula:<br>**Choices( Accounts.'Primary Contact' )**
-   - Si la casilla está desactivada, la propiedad se establece en esta fórmula:<br>**Choices( Accounts.primarycontactid )**
+   - **Choices( Accounts.'Primary Contact' )**
+   - **Choices( Accounts.primarycontactid )**
 
      ![Pantalla de lienzo con un control de formulario. El control **Cuadro combinado** de la tarjeta **Primary Contact** está seleccionado y aparece la propiedad Items con la fórmula Choices( Accounts.'Primary Contact' )](media/function-choices/accounts-primary-contact.png)
 
@@ -94,10 +94,9 @@ En este momento, puede usar las columnas de búsqueda sólo con SharePoint y Com
 
 10. En la pestaña **Insertar**, seleccione **Tabla de datos**.
 
-11. Establezca la propiedad **Items** del control **Tabla de datos** en una de estas fórmulas:
+11. Establecer el **elementos** propiedad de la **tabla de datos** control en esta fórmula:
 
-     - Si la casilla **Usar nombres de columna para mostrar** de Configuración avanzada está activada, use esta fórmula:<br>**Choices( Accounts.'Primary Contact' )**
-     - De lo contrario, use esta fórmula:<br>**Choices( Accounts.primarycontactid )**
+     **Choices( Accounts.'Primary Contact' )**
 
 12. Abra el panel **Datos** y luego active las casillas de **firstname**, **lastname** o cualquier otro campo que quiera mostrar.
 
