@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
-ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
+ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
+ms.sourcegitcommit: 6b116a4079eb56ebd598d317a12df8856ff3e52a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58623404"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58671964"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -63,41 +63,43 @@ En este momento, puede usar las columnas de búsqueda sólo con SharePoint y Com
 
     En cada cuenta se designa un contacto como contacto principal o este está *blank*.
 
-2. [Genere una aplicación](../data-platform-create-app.md) desde la entidad **Accounts**.
+1. [Genere una aplicación](../data-platform-create-app.md) desde la entidad **Accounts**.
 
-3. En la lista de pantallas y controles junto al borde izquierdo, desplácese hacia abajo hasta que aparezca **EditScreen1** y luego seleccione **EditForm1** justo debajo.
+1. En la lista de pantallas y controles junto al borde izquierdo, desplácese hacia abajo hasta que aparezca **EditScreen1** y luego seleccione **EditForm1** justo debajo.
 
     ![En la barra de navegación izquierda, selección de EditForm1 en EditScreen1](media/function-choices/select-editform.png)
 
-4. En la pestaña **Propiedades** del panel derecho, seleccione **Accounts**.
+1. En el **propiedades** ficha del panel derecho, seleccione **editar campos**.
 
-    ![Selección de Accounts para abrir el panel Datos](media/function-choices/open-data-pane.png)
+    ![Abra el panel de datos](media/function-choices/open-data-pane.png)
 
-5. En el panel **Datos**, desplácese hacia abajo hasta la lista de campos.
+1. En el **campos** panel, seleccione **Agregar campo**.
+
+1. Busque el **contacto principal** campo, seleccione su casilla de verificación y, a continuación, seleccione **agregar**.
 
     ![Selección de Accounts para abrir el panel Datos](media/function-choices/field-list.png)
 
-6. Busque la casilla **Primary Contact** y actívela si está desactivada.
+    El **contacto principal** campo aparece en la parte inferior del formulario. Si el campo muestra un error, seleccione **orígenes de datos** en el **vista** pestaña, seleccione el botón de puntos suspensivos (...) para el **cuentas** origen de datos y, a continuación, seleccione **actualizar** .
 
-7. (Opcional) Arrastre el campo **Primary Contact** desde la parte inferior a la parte superior de la lista de campos.
+1. (Opcional) Arrastre el campo **Primary Contact** desde la parte inferior a la parte superior de la lista de campos.
 
-8. En la tarjeta de **Primary Contact**, seleccione el control **Cuadro combinado**.
+1. En la tarjeta de **Primary Contact**, seleccione el control **Cuadro combinado**.
 
     El **elementos** propiedad de ese control se establece en una fórmula que identifica la columna por su nombre para mostrar, como se muestra en el primer ejemplo, o su nombre lógico, como se muestra en el segundo ejemplo:
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![Pantalla de lienzo con un control de formulario. El control **Cuadro combinado** de la tarjeta **Primary Contact** está seleccionado y aparece la propiedad Items con la fórmula Choices( Accounts.'Primary Contact' )](media/function-choices/accounts-primary-contact.png)
+     ![Pantalla de lienzo con un control de formulario. El cuadro combinado se selecciona el control de cuadro dentro de la tarjeta de contacto principal y la propiedad Items con las opciones de la fórmulas (cuentas. "Contacto principal") aparece](media/function-choices/accounts-primary-contact.png)
 
-9. En la pestaña **Inicio**, seleccione **Nueva pantalla** y luego **En blanco**.
+1. En la pestaña **Inicio**, seleccione **Nueva pantalla** y luego **En blanco**.
 
-10. En la pestaña **Insertar**, seleccione **Tabla de datos**.
+1. En la pestaña **Insertar**, seleccione **Tabla de datos**.
 
-11. Establecer el **elementos** propiedad de la **tabla de datos** control en esta fórmula:
+1. Establecer el **elementos** propiedad de la **tabla de datos** control en esta fórmula:
 
      **Choices( Accounts.'Primary Contact' )**
 
-12. Abra el panel **Datos** y luego active las casillas de **firstname**, **lastname** o cualquier otro campo que quiera mostrar.
+1. En el medio de la **tabla de datos** de control, seleccione el vínculo que se inicia **elija los campos...** y, a continuación, seleccione las casillas de verificación para el campo o campos que desea mostrar (por ejemplo, **firstname** y **lastname**).
 
      ![Pantalla de lienzo con un control de tabla de datos. La propiedad Items está establecida en la fórmula Choices( Accounts.'Primary Contact' ) y la tabla muestra las columnas firstname y lastname del primer conjunto de registros de la entidad Contacts](media/function-choices/full-accounts-pc.png)
