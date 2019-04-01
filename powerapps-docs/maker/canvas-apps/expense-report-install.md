@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 166fea9e02ebdaa490b400274c971f0c7268ec76
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330295"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581079"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -34,20 +34,20 @@ Mantenga un seguimiento de los informes de gastos desde que se envían hasta que
 ![Pantalla inicial del informe de gastos de PowerApps](./media/expense-report-install/expense-report-powerapp.png)
 
 > [!TIP]
-> Vea [este](https://youtu.be/h6E9cdrOvMU) vídeo para aprender a usar el ejemplo de informe de gastos de PowerApps.
+> Vea [este](https://youtu.be/h6E9cdrOvMU) vídeo para aprender a usar el ejemplo de informe de gastos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
 
-## <a name="create-the-expenses-sharepoint-list"></a>Crear la lista de SharePoint de gastos
+## <a name="create-the-expenses-list"></a>Creación de la lista Gastos
 
 En esta lista se almacenan los informes de gastos.
 
 1. Abra un explorador web y vaya a https://admin.microsoft.com.
 2. Inicie sesión con una cuenta que tenga permiso para crear listas.
 3. Desplácese a la colección de sitios donde quiera alojar la lista de gastos.
-4. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
+4. Haga clic en el icono de engranaje situado en la parte superior derecha de la página web.
 5. Haga clic en **Agregar una aplicación**.
 6. En el cuadro de texto **Buscar una aplicación**, escriba **Personalizado**.
 7. Haga clic en el **icono de búsqueda**.
@@ -55,14 +55,14 @@ En esta lista se almacenan los informes de gastos.
 9. En el cuadro de texto **Nombre**, escriba **Gastos**.
 
     > [!IMPORTANT]
-    > Si elige otro nombre para la lista, asegúrese de anotarlo ya que tendrá que sustituirlo en todos los casos por Gastos durante el proceso de instalación y configuración.
+    > Si elige otro nombre para la lista, anótelo, ya que tendrá que sustituirlo en todos los casos por Gastos durante el proceso de instalación y configuración.
 
 10. Haga clic en **Crear**.
 
 ### <a name="create-cost-center-column"></a>Crear una columna Cost Center
 
 1. Haga clic en la lista **Gastos**.
-2. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
+2. Haga clic en el icono de engranaje situado en la parte superior derecha de la página web.
 3. Haga clic en **Configuración de la lista**.
 4. Haga clic en **Crear columna**.
 5. En el cuadro de texto **Nombre de columna**, escriba **Cost Center**.
@@ -127,12 +127,12 @@ En esta lista se almacenan los informes de gastos.
 4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **Sí**.
 5. Haga clic en **Aceptar**.
 
-## <a name="create-the-line-items-sharepoint-list"></a>Crear la lista de SharePoint de elementos de línea
+## <a name="create-the-lineitems-list"></a>Creación de la lista LineItems
 
-En esta lista se almacenan los elementos de línea asociados a los informes de gastos.
+En esta lista se almacenan los elementos de línea asociados a cada informe de gastos.
 
-1. Desplácese a la misma colección de sitios donde creó la lista de gastos.
-2. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
+1. Desplácese a la misma colección de sitios en la que ha creado la lista Gastos.
+2. Haga clic en el icono de engranaje situado en la parte superior derecha de la página web.
 3. Haga clic en **Agregar una aplicación**.
 4. En el cuadro de texto **Buscar una aplicación**, escriba **Personalizado**.
 5. Haga clic en el **icono de búsqueda**.
@@ -140,14 +140,14 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 7. En el cuadro de texto **Nombre**, escriba **LineItems**.
 
     > [!IMPORTANT] 
-    > Si elige otro nombre para la lista, asegúrese de anotarlo ya que tendrá que sustituirlo en todos los casos por Gastos durante el proceso de instalación y configuración.
+    > Si elige otro nombre para la lista, anótelo, ya que tendrá que sustituirlo en todos los casos por LineItems durante el proceso de instalación y configuración.
 
 8. Haga clic en **Crear**.
  
 ### <a name="create-category-column"></a>Crear una columna de categoría
 
 1. Haga clic en la lista **LineItems**.
-2. Haga clic en el **icono de engranaje** situado en la parte superior derecha de la página web.
+2. Haga clic en el icono de engranaje situado en la parte superior derecha de la página web.
 3. Haga clic en **Configuración de la lista**.
 4. Haga clic en **Crear columna**.
 5. En el cuadro de texto **Nombre de columna**, escriba **Categoría**.
@@ -200,13 +200,13 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 2. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 3. Haga clic en **Aceptar**.
 
-## <a name="download-the-expense-report-powerapp"></a>Descargar la aplicación de PowerApps de informe de gastos
+## <a name="download-the-expense-report-app"></a>Descargar la aplicación Informe de gastos
 
-1.  En un explorador web, desplácese hasta el siguiente vínculo:
+1. En un explorador web, desplácese hasta el siguiente vínculo:
 
     [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
-2.  Descargue el paquete de ejemplo de PowerApps de informe de gastos y guárdelo en su equipo.
+2. Descargue el paquete de ejemplo Informe de gastos de PowerApps y guárdelo en su equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 
@@ -214,14 +214,14 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  En el menú de la izquierda, seleccione **Conexiones**.
 
-### <a name="create-approvals-connection"></a>Crear una conexión de aprobaciones
+### <a name="create-an-approvals-connection"></a>Creación de una conexión de aprobaciones
 
 1.  Haga clic en **+ Nueva conexión**.
 2.  En el cuadro de búsqueda **Buscar**, escriba **Aprobaciones**.
 3.  Seleccione **Aprobaciones** en la lista.
 4.  Haga clic en **Crear**.
     
-### <a name="create-office-365-outlook-connection"></a>Crear una conexión de Outlook de Office 365
+### <a name="create-an-office-365-outlook-connection"></a>Creación de una conexión de Office 365 Outlook
 
 1.  Haga clic en **+ Nueva conexión**.
 2.  En el cuadro de búsqueda **Buscar**, escriba **Office 365 Outlook**.
@@ -229,7 +229,7 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
 
-### <a name="create-sharepoint-connection"></a>Crear una conexión de SharePoint
+### <a name="create-a-sharepoint-connection"></a>Creación una conexión de SharePoint
 
 1.  Haga clic en **+ Nueva conexión**.
 2.  En el cuadro de texto **Buscar**, escriba **SharePoint**.
@@ -237,151 +237,128 @@ En esta lista se almacenan los elementos de línea asociados a los informes de g
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
 
-## <a name="import-the-expense-report-powerapp"></a>Importar la aplicación de PowerApps de informe de gastos
+## <a name="import-the-app"></a>Importación de la aplicación
 
 1. En un explorador web, vaya a https://web.powerapps.com.
-2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
-3. En el menú de la izquierda, seleccione **Aplicaciones**. 
-4. Haga clic en **Importar paquete (versión preliminar)**.
-    
-   ![Pantalla Importar paquete](./media/expense-report-install/import-package.png)
+1. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
+1. En la barra de navegación izquierda, seleccione **Aplicaciones** e **Importar paquete (versión preliminar)**.
 
-5. Haga clic en el botón **Cargar** y seleccione el paquete de PowerApps que descargó en pasos anteriores.
-6. Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
-7. Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
-    
-   ![Pantalla Importar configuración](./media/expense-report-install/import-settings.png)
+    ![Pantalla Importar paquete](./media/expense-report-install/import-package.png)
 
-8. Haga clic en el **icono rojo** correspondiente a la **conexión de SharePoint**.
-9. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+1. Seleccione **Cargar** y, después, el paquete que ha descargado anteriormente.
+1. Para los tipos de recurso **Aplicación** y **Flujo**, establezca **IMPORTAR CONFIGURACIÓN** en **Crear como nueva**.
+1. Para las conexiones **SharePoint** y **Outlook**, establezca **IMPORTAR CONFIGURACIÓN** en **Seleccionar durante la importación**.
 
-   ![Pantalla Importar configuración](./media/expense-report-install/import-settings-sharepoint.png)
+    ![Pantalla Importar configuración](./media/expense-report-install/import-settings.png)
 
-10. Haga clic en **Guardar**.
-11. Haga clic en el **icono rojo** correspondiente a la **conexión de aprobación**.
-12. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+1. Seleccione el icono rojo correspondiente a la **conexión de SharePoint**.
+1. En la lista de conexiones, seleccione el elemento que tenga su nombre de usuario.
+
+    ![Pantalla Importar configuración](./media/expense-report-install/import-settings-sharepoint.png)
+
+1. Seleccione **Guardar**.
+1. Seleccione el icono rojo correspondiente a la **conexión de aprobación**.
+1. En la lista de conexiones, seleccione el elemento que tenga su nombre de usuario.
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-approvals.png)
 
-13. Haga clic en **Guardar**.
-14. Haga clic en el **icono rojo** correspondiente a la **conexión de Office 365 Outlook**.
-15. En la lista de conexiones, haga clic en el elemento que tenga su nombre de usuario.
+1. Seleccione **Guardar**.
+1. Seleccione el icono rojo correspondiente a la **conexión de Office 365 Outlook**.
+1. En la lista de conexiones, seleccione el elemento que tenga su nombre de usuario.
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-office365outlook.png)
 
-16. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
     > [!TIP] 
     > Cuando haya terminado, tendrá un aspecto similar al siguiente:
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-settings-done.png)
 
-17. Haga clic en **Importar** y espere hasta que finalice el proceso.
+1. Seleccione **Importar** y espere hasta que finalice el proceso.
 
     ![Pantalla Importar configuración](./media/expense-report-install/import-done.png)
 
-## <a name="configure-the-powerapp-to-use-the-sharepoint-lists"></a>Configurar la aplicación de PowerApps para usar las listas de SharePoint
+## <a name="configure-the-app-to-use-the-sharepoint-lists"></a>Configurar la aplicación para usar las listas de SharePoint
 
-1. En el explorador web, haga clic en **Aplicaciones**.
-2. Haga clic en los **puntos suspensivos** junto a la aplicación Informe de gastos de PowerApps.
-3. Haga clic en **Editar en la Web**.
-4. Haga clic en **Permitir**.
+1. En el explorador web, seleccione **Aplicaciones**.
+2. Seleccione el botón de puntos suspensivos (...) situado junto a la aplicación de informe de gastos.
+3. Seleccione **Editar en la Web** > **Permitir**.
 
 ### <a name="delete-connections"></a>Eliminar conexiones
-1. Haga clic en **Ver**.
-2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en los **puntos suspensivos** junto a **Gastos**.
-4. Haga clic en **Quitar**.
-5. En el panel **Datos**, haga clic en los **puntos suspensivos** junto a **LineItems**.
-6. Haga clic en **Quitar**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
+1. En el panel **Datos**, seleccione los puntos suspensivos (...) al lado de  **Gastos** y seleccione **Quitar**.
+1. Repita el paso anterior para quitar el origen de datos **LineItems**.
 
 ### <a name="expenses-list"></a>Lista de gastos
 
-1. Haga clic en **Ver**.
-2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en **+ Agregar origen de datos**.
-4. Haga clic en **+ Nueva conexión**.
-5. Seleccione **SharePoint**.
-6. Haga clic en **Crear**.
-7. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista de gastos.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
+1. En el panel **Datos**, seleccione **Agregar origen de datos** > **Nueva conexión** > **SharePoint** > **Crear**.
+1. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista Gastos.
 
     > [!TIP] 
-    > Si el sitio no aparece en la lista, escriba en el cuadro de texto la dirección URL que lleva al sitio de SharePoint y haga clic en **Ir**.
+    > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y seleccione **Ir**.
 
-8. En el cuadro de texto **Buscar** de la parte superior de la lista, escriba **Gastos**.
-9. Active la casilla junto a la lista **Gastos**.
-10. Haga clic en **Conectar**.
+1. En el cuadro **Búsqueda** de la parte superior de la lista, escriba o pegue **Gastos**.
+1. Active la casilla de junto a **Gastos** y seleccione **Conectar**.
 
 ### <a name="lineitems-list"></a>Lista de LineItems
 
-1. Haga clic en **Ver**.
-2. Haga clic en **Orígenes de datos**.
-3. En el panel **Datos**, haga clic en **+ Agregar origen de datos**.
-4. Haga clic en **+ Nueva conexión**.
-5. Seleccione **SharePoint**.
-6. Haga clic en **Crear**.
-7. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista de LineItems.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
+1. En el panel **Datos**, seleccione **SharePoint**.
+1. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista LineItems.
 
     > [!TIP] 
-    > Si el sitio no aparece en la lista, escriba en el cuadro de texto la dirección URL que lleva al sitio de SharePoint y haga clic en **Ir**.
+    > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y seleccione **Ir**.
 
-8. En el cuadro de texto **Buscar** de la parte superior de la lista, escriba **LineItems**.
-9. Active la casilla junto a la lista **LineItems**.
-10. Haga clic en **Conectar**.
-11. Haga clic en **Archivo**.
-12. Haga clic en **Guardar**.
-13. Haga clic en **Publicar**.
-14. Haga clic en **Publicar esta versión**.
+1. En el cuadro **Búsqueda** de la parte superior de la lista, escriba o pegue **LineItems**.
+1. Active la casilla de junto a **LineItems** y seleccione **Conectar**.
+1. Seleccione **Archivo** > **Guardar** > **Publicar** > **Publicar esta versión**.
 
-## <a name="modify-the-flow"></a>Modificar el flujo
+## <a name="modify-the-flow"></a>Modificación del flujo
 
-1.  En el menú de la izquierda, seleccione **Flujos**.
-2.  Si es necesario, inicie sesión con las mismas credenciales que utilizó para suscribirse.
-3.  Seleccione **Mis flujos** en el menú superior.
-4.  Junto al flujo **ApproveExpense**, haga clic en el **icono de lápiz**.
- 
+1. En la barra de navegación izquierda, seleccione **Flujos**.
+1. Si es necesario, proporcione las mismas credenciales que usó para suscribirse.
+1. Cerca de la parte superior de la pantalla, seleccione **Mis flujos**.
+1. Junto al flujo **ApproveExpense**, seleccione el icono de lápiz.
+
     ![Pantalla Editar flujo](./media/expense-report-install/edit-flow.png)
 
-5.  Expanda la acción **Obtener elementos**. 
-6.  Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos de SharePoint que ha creado.
-    
+1. Expanda la acción **Obtener elementos**. 
+1. Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos que ha creado en SharePoint.
+
     ![Pantalla Editar flujo](./media/expense-report-install/edit-flow-getitems.png)
 
     > [!TIP] 
-    > No es necesario que se escriban manualmente, se pueden elegir en las listas desplegables.
+    > No es necesario que se escriban manualmente, se pueden seleccionar en las listas desplegables.
 
-7.  Expanda la **Condición**.
-8.  Expanda la sección **En caso positivo**.
-9.  Expanda la acción **Cambiar estado de elemento a Aprobado**.
-10. Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos de SharePoint que ha creado.
+1. Expanda la **Condición**.
+1. Expanda la sección **En caso positivo**.
+1. Expanda la acción **Cambiar estado de elemento a Aprobado**.
+1. Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos que ha creado en SharePoint.
 
     ![Pantalla Editar flujo](./media/expense-report-install/edit-flow-condition-ifyes.png) 
 
     > [!TIP] 
-    > No es necesario que se escriban manualmente, se pueden elegir en las listas desplegables.
+    > No es necesario que se escriban manualmente, se pueden seleccionar en las listas desplegables.
 
-11. Expanda la sección **En caso negativo**.
-12. Expanda la acción **Cambiar estado de elemento a Abierto**.
-13. Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos de SharePoint que ha creado. 
+1. Expanda la sección **En caso negativo**.
+1. Expanda la acción **Cambiar estado de elemento a Abierto**.
+1. Modifique los campos **Dirección del sitio** y **Nombre de lista** para que coincidan con la lista Gastos que ha creado en SharePoint. 
 
     ![Pantalla Editar flujo](./media/expense-report-install/edit-flow-condition-ifno.png)
 
     > [!TIP] 
-    > No es necesario que se escriban manualmente, se pueden elegir en las listas desplegables.
+    > No es necesario que se escriban manualmente, se pueden seleccionar en las listas desplegables.
 
-14. Haga clic en **Actualizar flujo**.
+14. Seleccione **Actualizar flujo**.
 
-## <a name="play-the-powerapp"></a>Reproducir la aplicación de PowerApps
+## <a name="play-the-app"></a>Reproducir la aplicación
 
-1. En el explorador web, haga clic en **Aplicaciones**.
-2. Haga clic en los **puntos suspensivos** junto a la aplicación Informe de gastos de PowerApps.
-3. Haga clic en **Abrir**.
-
+1. En el explorador web, seleccione **Aplicaciones**.
+1. Seleccione los puntos suspensivos (...) situados junto a la aplicación de informe de gastos y seleccione **Abrir**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Personalizar un formulario de lista de SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [Agregar y configurar un control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
-- [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
-
-
-
+- [Editar y administrar permisos para una lista de SharePoint o una biblioteca](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
