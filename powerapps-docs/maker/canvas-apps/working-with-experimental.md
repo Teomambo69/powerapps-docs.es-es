@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 07/16/2018
+ms.date: 03/20/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 741cec402c6a5b5ea30700badd265f5e950203e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 50785382404496c7409eab1b545fdc0b2d930d44
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858484"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765561"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>Descripción de las características experimentales y de versión preliminar de PowerApps
 
@@ -32,9 +32,9 @@ Para ayudar a equilibrar las mejoras y el impacto en las aplicaciones existentes
 
 Las características pasan por tres fases en el proceso para convertirse en partes oficiales del producto:
 
-1. **Experimental**: esta característica es un proyecto en desarrollo. No empiece a depender de ella aún, podría sufrir cambios significativos.
-1. **Versión preliminar**: esta característica está casi lista y es estable. Ahora se comienzan a migrar aplicaciones existentes a ella.
-1. **Enviada**: esta característica está completada. Todas las aplicaciones tienen esta característica habilitada y no se puede desactivar esta función.
+1. **Experimental**:  Esta característica es un trabajo en curso. No empiece a depender de ella aún, podría sufrir cambios significativos.
+1. **Vista previa**:  Esta característica está casi listo y es estable. Ahora se comienzan a migrar aplicaciones existentes a ella.
+1. **Enviado**:  Se hace esta característica. Todas las aplicaciones tienen esta característica habilitada y no se puede desactivar esta función.
 
 En cada fase, el número de personas que usan la característica aumenta, lo que nos ayuda a validar si la característica es lo que necesita y que no estamos incluyendo efectos secundarios no deseados.
 
@@ -44,13 +44,15 @@ En cada fase, el número de personas que usan la característica aumenta, lo que
 
 Esta tabla puede ayudarle a decidir cuándo debe empezar a usarlas: 
 
-| Fase | ¿Cuándo debe usarse? | ¿Puedo usarla con confianza? | ¿Está habilitada de forma predeterminada para las nuevas aplicaciones? | 
+| Fase | ¿Cuándo debo usarlo? | ¿Puedo usarla con confianza? | ¿Está habilitada de forma predeterminada para las nuevas aplicaciones? | 
 |----|----|----|-----|------|
 | **Experimental** | Si es un usuario pionero, ve algo útil para usted y quiere ayudar a probar la característica. | No.  Las características experimentales pueden cambiar radicalmente o desaparecer por completo en cualquier momento. | No. Debe solicitar explícitamente su participación en el uso de la característica.  |  
 | **Versión preliminar** | Las nuevas aplicaciones incluyen automáticamente esta característica.  Se comienza a habilitar y probar en las aplicaciones existentes porque con el tiempo esta característica también estará disponible para ellas. | Sí. Esta característica está en camino de convertirse en parte permanente del producto.  | Sí. Es posible que quiera desactivarla si surge un problema.  Informe de los problemas, esta es la razón principal por la cual la característica está en versión preliminar. | 
 | **Enviada** (ya no aparece en **Configuración avanzada**) | Todas las aplicaciones tienen esta característica. | Sí. | Sí.  La mayoría no se puede deshabilitar.  |  
 
-Hacia el final de la versión preliminar, se puede habilitar la característica para todas las aplicaciones al mismo tiempo y se marca para su **validación final**.  Este cambio le ofrece a la mayoría de los usuarios una última oportunidad para probar la característica mientras siguen pudiendo desactivarla. Los comentarios oportunos son fundamentales durante este período, ya que, en la fase siguiente, se distribuye por completo la característica y no se puede desactivar.  
+Hacia el final de la versión preliminar, se puede habilitar la característica para todas las aplicaciones al mismo tiempo y se marca para su **validación final**.  Este cambio le ofrece a la mayoría de los usuarios una última oportunidad para probar la característica mientras siguen pudiendo desactivarla. Los comentarios oportunos son fundamentales durante este período, ya que, en la fase siguiente, se distribuye por completo la característica y no se puede desactivar.
+
+En la transición final **Shipped**, podemos quitar el conmutador de versión preliminar en aplicaciones para que la característica ya está activada, activación eficazmente la característica de forma permanente. Este cambio se aplicará a la mayoría de las aplicaciones porque la característica se habrán en forma predeterminada antes de ese momento. Para las aplicaciones donde la característica está desactivada, el modificador de vista previa seguirán disponible activar, con la característica de prueba y desactivar en la misma sesión de PowerApps Studio. Sin embargo, si guarda la aplicación cuando el modificador está activado, no estará disponible cuando se vuelve a cargar la aplicación, por lo que no se puede desactivar la característica nuevo. En ese momento, puede [restaurar la aplicación a una versión anterior](restore-an-app.md) para devolver la aplicación a un estado antes de que se ha activado la característica.
 
 ## <a name="documentation"></a>Documentación
 

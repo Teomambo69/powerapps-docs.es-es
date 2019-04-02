@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abf88db2bfb97a6541ee638ba8be5af27c20bc5f
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459583"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765592"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>Información de referencia acerca de la plantilla de pantalla de calendario para las aplicaciones de lienzo
 
@@ -191,7 +191,7 @@ Estar familiarizado con cómo agregar y configurar las pantallas y otros control
     ```
 
     > [!NOTE]
-    > Las definiciones para  **\_firstDayOfMonth**,  **\_firstDayInView**, y  **\_lastDayOfMonth** son casi idénticas a las en el [calendario desplegable](#calendar-dropdown) sección de este tema.
+    > Las definiciones para  **\_firstDayOfMonth**,  **\_firstDayInView**, y  **\_lastDayOfMonth** son casi idénticas a las en el [calendario desplegable](#calendar-drop-down) sección de este tema.
 
     Las tres primeras líneas del código anterior, que se ejecutan cuando el usuario selecciona el botón de contenido adicional de mes próximo, establecen las variables que son necesarias para mostrar la vista de calendario adecuado. El código restante se ejecuta sólo si el usuario no ha seleccionado anteriormente este mes para el calendario seleccionado.
 

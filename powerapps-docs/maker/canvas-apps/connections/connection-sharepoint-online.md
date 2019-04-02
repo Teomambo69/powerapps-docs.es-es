@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198622"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765511"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
@@ -34,7 +34,7 @@ Conectarse a un sitio de SharePoint para generar automáticamente una aplicació
 Si desea administrar los datos en una lista personalizada, puede PowerApps [generar automáticamente una aplicación de tres pantallas de](../app-from-sharepoint.md). Los usuarios pueden examinar la lista en la primera pantalla, mostrar detalles de un elemento en la segunda pantalla y crear o actualizar los elementos de la tercera pantalla.
 
 > [!NOTE]
-> Si la lista de SharePoint contiene un **elección**, **búsqueda**, o **persona o grupo** columna, vea [mostrar datos en una galería](connection-sharepoint-online.md#show-data-in-a-gallery) más adelante en este tema.
+> Si la lista de SharePoint contiene un **elección**, **búsqueda**, o **persona o grupo** columna, vea [mostrar datos en una galería](connection-sharepoint-online.md#show-list-columns-in-a-gallery) más adelante en este tema.
 
 ## <a name="create-a-connection"></a>Crear una conexión
 
