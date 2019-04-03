@@ -1,6 +1,6 @@
 ---
-title: Personalización de una tarjeta | Microsoft Docs
-description: Cambie el control predeterminado que aparece en una tarjeta de un formulario de detalles o edición en PowerApps
+title: Personalizar una tarjeta en una aplicación de lienzo | Microsoft Docs
+description: Cambie el control predeterminado que aparece en una tarjeta de detalles o edición de formulario en una aplicación de lienzo
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,80 +13,70 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31c0810b9da5a52bcd5cc3b28b6def858541e15b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
+ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42841795"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58870917"
 ---
-# <a name="customize-a-card-in-powerapps"></a>Personalización de una tarjeta en PowerApps
+# <a name="customize-a-card-in-a-canvas-app"></a>Personalizar una tarjeta en una aplicación de lienzo
+
 Realice una personalización básica (sin desbloquear una tarjeta), por ejemplo, cambiando su control. Realizar una personalización avanzada mediante el desbloqueo de la tarjeta y, por ejemplo, agregar un control que no está disponible para esa tarjeta de forma predeterminada.
 
 Para obtener información general, consulte [Introducción a las tarjetas de datos](working-with-cards.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Aprenda a [agregar y configurar controles](add-configure-controls.md).
-* Puede consultar este tema para ver solo los conceptos generales, o bien puede seguirlo paso a paso si completa los procedimientos de estos temas:
+- Aprenda a [agregar y configurar controles](add-configure-controls.md).
+- Puede revisar este tema para ver los conceptos generales, o bien puede seguir paso a paso si completa los procedimientos descritos en estos temas en primer lugar:
 
-  1. [Generar una aplicación](data-platform-create-app.md).
-  2. [Personalizar su galería](customize-layout-sharepoint.md).
-  3. [Personalizar sus formularios](customize-forms-sharepoint.md).
+    1. [Generar una aplicación](data-platform-create-app.md).
+    1. [Personalizar su galería](customize-layout-sharepoint.md).
+    1. [Personalizar sus formularios](customize-forms-sharepoint.md).
 
 ## <a name="customize-a-locked-card"></a>Personalizar una tarjeta bloqueada
-En este procedimiento, se va a reemplazar un control **[Entrada de texto](controls/control-text-input.md)** por un **[Control deslizante](controls/control-slider.md)** sin desbloquear la tarjeta.
 
-1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+En este procedimiento, va a reemplazar un **[entrada de texto](controls/control-text-input.md)** controlar con un **[control deslizante] (controles, control-slider.md** control sin desbloquear la tarjeta.
 
-    ![Página principal de PowerApps](./media/customize-card/sign-in.png)
+1. En la aplicación que ha generado y personalizado, seleccione **EditForm1** en el panel de navegación izquierdo de la barra y, a continuación, seleccione **editar campos** en el **propiedades** ficha del panel derecho.
 
-1. Abra la aplicación que ha generado y personalizado, seleccione **EditForm1** y, después, abra el panel **Datos** haciendo clic en **Cuentas** en el panel de la derecha.
+1. En la lista de campos, seleccione la flecha hacia abajo para **Number of Employees**y, a continuación, abra la lista bajo **tipo de Control**.
 
-1. En la lista de campos, haga clic en la flecha hacia abajo de **Número de empleados** para mostrar una lista de opciones y, después, haga clic en **Editar control deslizante**.
+    > [!div class="mx-imgBorder"]
+    > ![Lista desplegable de opciones para una tarjeta de número](./media/customize-card/card-selector.png)
 
-    ![Lista desplegable de opciones para una tarjeta de número](./media/customize-card/card-selector.png)
+1. Seleccione **editar control deslizante**.
 
     La pantalla refleja el cambio.
 
-    ![EditForm1 con el control deslizante](./media/customize-card/add-slider.png)
+    > [!div class="mx-imgBorder"]
+    > ![EditForm1 con el control deslizante](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>Desbloquear y personalizar una tarjeta
-En este procedimiento, se desbloqueará una tarjeta y se reemplazará un control **[Alternar](controls/control-toggle.md)** por un control **[Casilla](controls/control-check-box.md)**.
 
-1. En **EditForm1**, muestre el campo **Enviar materiales de marketing**.
+En este procedimiento, desbloqueará una tarjeta y actualizar la **Max** propiedad de la **control deslizante** control que acaba de agregar.
 
-    ![Mostrar el campo Enviar materiales de marketing](./media/customize-card/show-field.png)
+1. En **EditForm1**, seleccione el **control deslizante** en controlar la **Number of Employees** tarjeta.
 
-2. Con esa tarjeta seleccionada, pulse o haga clic en **Opciones avanzadas** junto a la parte superior del panel derecho y, después, pulse o haga clic en el icono de candado para desbloquear la tarjeta.
+    > [!div class="mx-imgBorder"]
+    > ![Seleccione el control deslizante](./media/customize-card/select-slider.png)
 
-    ![Mostrar el campo Enviar materiales de marketing](./media/customize-card/unlock-card.png)
+1. En el **avanzadas** ficha del panel derecho, seleccione el icono de candado para desbloquear la tarjeta.
 
-1. En la tarjeta, elimine el control **Alternar**, agregue un control **Casilla** y asígnele el nombre **chkMktg**.
+    > [!div class="mx-imgBorder"]
+    > ![Desbloqueo de tarjeta](./media/customize-card/lock-icon.png)
 
-    ![Reemplazar Alternar con Casilla](./media/customize-card/add-checkbox.png)
+1. Establecer el **Max** propiedad de la **control deslizante** control a 10 000.
 
-1. Seleccione la tarjeta que acaba de actualizar.
+    > [!div class="mx-imgBorder"]
+    > ![Max (propiedad) en la ficha Opciones avanzadas](./media/customize-card/max-property.png)
 
-    ![Seleccionar tarjeta](./media/customize-card/select-card.png)
+    El **control deslizante** control muestra un valor más preciso.
 
-1. En el panel de la derecha, asegúrese de que se sigue mostrando la pestaña **Opciones avanzadas** y, después, pulse o haga clic en **Más opciones**.
-
-    ![Botón Más opciones](./media/customize-card/more-options.png)
-
-1. Cambie el valor de la propiedad **Update** de la tarjeta por esta expresión:
-<br>`chkMktg.Value`
-
-1. Cambie el valor de la propiedad **Y** del mensaje de error de esa tarjeta por esta expresión:<br>
-`chkMktg.Y + chkMktg.Height`
-
-    ![Seleccionar el mensaje de error para la nueva tarjeta](./media/customize-card/select-error.png)
-
-1. Cambie el valor de la propiedad **Text** de **chkMktg** a **Sí**.
-
-    La pantalla refleja los cambios y se resuelven los errores.
-
-    ![Pantalla final con los errores resueltos](./media/customize-card/final-screen.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intervalo del control deslizante: 0-10,000](./media/customize-card/final-slider.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Ahora que tiene un conocimiento básico de cómo generar una aplicación y personalizar una galería, un formulario y una tarjeta, puede [generar su propia aplicación desde cero](data-platform-create-app-scratch.md).
