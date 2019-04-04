@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c89042e1f94e6f891bfdc255c38f72929c27cb1e
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357354"
 ---
-
 # <a name="best-practices-and-guidance-for-the-common-data-service"></a>Procedimientos recomendados e instrucciones para Common Data Service
 
 Common Data Service es un marco de trabajo extensible con el que los desarrolladores podrán crear experiencias muy personalizadas y adaptadas. Al personalizar, extender o integrar con Common Data Service, los desarrolladores deben tener en cuenta los procedimientos recomendados y las instrucciones establecidas. 
