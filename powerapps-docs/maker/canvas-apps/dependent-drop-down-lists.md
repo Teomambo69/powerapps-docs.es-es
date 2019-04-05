@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 02/28/2019
+ms.date: 04/04/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357262"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042764"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -28,7 +28,7 @@ Como práctica recomendada, cree un origen de datos para los valores de la "prin
 
 Para el escenario de este tema, almacén de problemas de los empleados enviar a un **incidentes** lista a través de un formulario. Los empleados especifican no solo la ubicación del almacén en que se produjo el incidente, sino también el departamento de esa ubicación. No todas las ubicaciones tienen los mismos departamentos, por lo que un **ubicaciones** lista garantiza que los empleados no pueden especificar un departamento para una ubicación que no tiene ese departamento.
 
-En este tema usa las listas de SharePoint como orígenes de datos, pero todos los orígenes de datos tabulares funcionan del mismo modo.
+En este tema usa las listas de SharePoint de Microsoft como orígenes de datos, pero todos los orígenes de datos tabulares funcionan del mismo modo.
 
 ## <a name="create-data-sources"></a>Crear orígenes de datos
 
@@ -49,7 +49,7 @@ Un **ubicaciones** lista muestra los departamentos en cada ubicación.
 | Pembroke       | Generar          |
 | Pembroke       | Floral           |
 
-Un **incidentes** lista muestra información de contacto y la información sobre cada incidente. Crear la columna de fecha como un **fecha** columna, pero crear las demás columnas como **una línea de texto** columnas para simplificar la configuración y evitar [delegación](./delegation-overview.md) advertencias en PowerApps.
+Un **incidentes** lista muestra información de contacto y la información sobre cada incidente. Crear la columna de fecha como un **fecha** columna, pero crear las demás columnas como **una línea de texto** columnas para simplificar la configuración y evitar [delegación](./delegation-overview.md) advertencias en Microsoft PowerApps.
 
 | Nombre | Apellido | Número de teléfono     | Location | Departamento | Descripción       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -86,7 +86,7 @@ Después de este cambio, puede omitir el **título** columna, o puede [quitarlo]
 
 ## <a name="replace-the-controls"></a>Reemplace los controles
 
-1. En el **campos** panel, seleccione la flecha abajo junto a **ubicación**.
+1. En el **campos** panel, seleccione la flecha situada junto a **ubicación**.
 
     Si ha cerrado el **campos** panel, puede abrirlo de nuevo seleccionando **SharePointForm1** en la barra de navegación izquierda y seleccione **editar campos** en el **Propiedades** ficha del panel derecho.
 
@@ -108,7 +108,7 @@ Después de este cambio, puede omitir el **título** columna, o puede [quitarlo]
 1. Seleccione la casilla de verificación para esa lista y, a continuación, seleccione **Connect**.
 
     > [!div class="mx-imgBorder"]
-    > ![Panel de datos](./media/dependent-drop-down-lists/select-list.png)
+    > ![Panel Data (Datos)](./media/dependent-drop-down-lists/select-list.png)
 
     La lista de conexiones, se muestra el **incidentes** lista, en el que se basa el formulario, y el **ubicaciones** lista, que identificará las ubicaciones y departamentos en el formulario.
 
@@ -144,7 +144,7 @@ Si cambia el nombre de los controles, puede identificar más fácilmente y son m
 
 ## <a name="configure-the-departments"></a>Configurar los departamentos
 
-1. Seleccione **ddDepartment** y, a continuación, en el **propiedades** ficha del panel derecho, seleccione **depende.**
+1. Seleccione **ddDepartment**y, a continuación, en el **propiedades** ficha del panel derecho, seleccione **depende.**
 
 1. En **principal control**, asegúrese de que **ddLocation** aparece en la lista superior y **resultado** aparece en la lista inferior.
 
@@ -202,7 +202,7 @@ Confirme si se muestra el campo correcto para el control de cualquiera de estas 
     > ![Cuadro combinado de cambio](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **Mi lista de desplegable secundaria contiene elementos duplicados.**
-Este síntoma suele debido al uso de un **búsqueda** columna de SharePoint o un **opciones** función en PowerApps. Para quitar la duplicación, encapsular una **Distinct** función alrededor de los datos correctamente. Más información: [Función DISTINCT](functions/function-distinct.md)
+Este síntoma suele debido al uso de un **búsqueda** columna de SharePoint o un **opciones** función en PowerApps. Para quitar la duplicación, encapsular una **Distinct** función alrededor de los datos correctamente. Más información: [Función DISTINCT](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 

@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6b23b97195f000e6e17bb6fd6f0e9f3a2da4f09
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799051"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042695"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
-Las aplicaciones que crea suelen ser más útiles cuando están disponibles allí donde las personas realizan su trabajo. PowerApps permite insertar aplicaciones de lienzo en un iframe para poder integrarlas en sitios web y otros servicios, como Power BI o SharePoint.
+Las aplicaciones que se generación a menudo son más útiles cuando están disponibles allí donde las personas hacen su trabajo. Mediante la integración de aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios Web y otros servicios, como Power BI o SharePoint.
 
 En este tema se muestra cómo establecer los parámetros para la inserción de aplicaciones y, después, se instará la aplicación Asset Ordering en un sitio web.
 
@@ -29,10 +29,10 @@ En este tema se muestra cómo establecer los parámetros para la inserción de a
 
 Tenga en mente las siguientes restricciones:
 
-* Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
-* Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
+- Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
+- Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
 
-También puede integrar PowerApps en SharePoint Online (sin usar un iframe). Para más información, consulte [Creación de una aplicación desde SharePoint mediante PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online).
+También puede integrar las aplicaciones de lienzo en SharePoint Online sin usar un iframe. Más información: [Usar el elemento web de PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Establecer los parámetros URI de la aplicación
 Si tiene una aplicación que desea insertar, el primer paso es establecer los parámetros para el identificador uniforme de recursos (URI), para que el iframe sepa dónde se encuentra la aplicación. El identificador URI tiene la forma siguiente:
@@ -58,10 +58,10 @@ El identificador de la aplicación está disponible en powerapps.com. Para la ap
 1. En [powerapps.com](https://powerapps.microsoft.com), en la pestaña **Aplicaciones**, pulse o haga clic en los puntos suspensivos (**...** ) y, a continuación, seleccione **Detalles**.
    
     ![Ir a los detalles de la aplicación](./media/embed-apps-dev/details.png)
-2. Copie el **Id. de aplicación**.
+1. Copie el **Id. de aplicación**.
    
     ![Copiar el identificador de la aplicación desde los detalles](./media/embed-apps-dev/app-id.png)
-3. Sustituya el valor `[AppID]` en el identificador URI. Para la aplicación "Pedido de activos", el identificador URI tiene el siguiente aspecto:
+1. Sustituya el valor `[AppID]` en el identificador URI. Para la aplicación "Pedido de activos", el identificador URI tiene el siguiente aspecto:
    
     ```
     https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
@@ -85,8 +85,7 @@ La siguiente imagen muestra la aplicación "Pedido de activos" insertada en un s
 
 Tenga en cuenta los puntos siguientes para autenticar a los usuarios de la aplicación:
 
-* Si el sitio web usa autenticación basada en Azure Active Directory (AAD), no será necesario ningún inicio de sesión adicional.
-* Si el sitio web utiliza cualquier otro mecanismo de inicio de sesión o no está autenticado, los usuarios verán un mensaje de inicio de sesión en el iframe. Después de iniciar sesión, podrán ejecutar la aplicación siempre y cuando el autor de la aplicación la haya compartido con ellos.
+- Si el sitio web usa autenticación basada en Azure Active Directory (AAD), no será necesario ningún inicio de sesión adicional.
+- Si el sitio web utiliza cualquier otro mecanismo de inicio de sesión o no está autenticado, los usuarios verán un mensaje de inicio de sesión en el iframe. Después de iniciar sesión, podrán ejecutar la aplicación siempre y cuando el autor de la aplicación la haya compartido con ellos.
 
 Como ve, insertar aplicaciones es fácil y eficaz. La inserción le permite llevar las aplicaciones a los lugares en los que usted y sus clientes trabajan (sitios web, paneles de Power BI y páginas de SharePoint, entre otros).
-

@@ -1,30 +1,32 @@
 ---
 title: Introducción a la conexión de SharePoint | Microsoft Docs
-description: Consulte las funciones, respuestas y ejemplos disponibles para SharePoint.
+description: Consulte las funciones disponibles, respuestas y ejemplos para SharePoint.
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 07/12/2017
+ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
+ms.sourcegitcommit: 4fe0a71efd54c1f4d22a279aa74c6bde3d908b9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765511"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59007898"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
 Conectarse a un sitio de SharePoint para generar automáticamente una aplicación desde una lista personalizada, o cree una conexión antes de agregar datos a una aplicación existente o crear una aplicación desde cero.
+
+Función de donde residen sus datos, puede tardar uno o ambos de estos enfoques:
 
 - Mostrar datos de una lista personalizada en un sitio de SharePoint Online o un sitio local.
 - Mostrar imágenes y reproducir archivos de audio o vídeos en una biblioteca (SharePoint Online solo).
@@ -65,7 +67,7 @@ Si desea administrar los datos en una lista personalizada, puede PowerApps [gene
         Especifique **Windows** como tipo de autenticación y, después, especifique sus credenciales. (Si las credenciales incluyen un nombre de dominio, especifíquelo como *dominio\alias*).
 
         > [!div class="mx-imgBorder"]
-        > ![Especificar credenciales](./media/connection-sharepoint-online/specify-creds.png)
+        > ![Especificar las credenciales](./media/connection-sharepoint-online/specify-creds.png)
 
         En **elegir una puerta de enlace**, seleccione la puerta de enlace que desea usar y, a continuación, seleccione **crear**.
 
@@ -96,7 +98,7 @@ Si desea administrar los datos en una lista personalizada, puede PowerApps [gene
     > [!div class="mx-imgBorder"]
     > ![En elegir una lista, seleccione la casilla de verificación para los documentos o una o varias listas que desea usar y, a continuación, seleccione Conectar](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas.  Si el nombre de la lista que desea usar no aparece, desplácese a la parte inferior y escriba el nombre de la lista en el cuadro que contiene el texto **Enter a custom list name** (Escriba el nombre de lista personalizado).
+    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hacia abajo y, a continuación, escriba el nombre de la lista en el cuadro que contiene **escriba el nombre de tabla personalizada**.
 
     > [!div class="mx-imgBorder"]
     > ![Escriba el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizada.](./media/connection-sharepoint-online/custom-list.png)
@@ -111,20 +113,20 @@ Aplicar los conceptos de [crear una aplicación desde cero](../get-started-creat
 
 Si su lista personalizada contiene cualquiera de estos tipos de columnas, mostrar esos datos en un **galería** control mediante el uso de la barra de fórmulas para establecer el **texto** propiedad de uno o varios **etiqueta** controles de dicha galería:
 
-- Para una columna **Opción** o **Buscar**, especifique **ThisItem.[ColumnName].Value** para mostrar los datos de esa columna.
+- Para un **elección** o **búsqueda** columna, especificar **ThisItem.** _ColumnName_**. Valor** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Location.Value** si tiene una columna **Opción** denominada **Ubicación** y especifique **ThisItem.PostalCode.Value** si tiene una columna **Búsqueda** denominada **CódigoPostal**.
 
-- Para una columna **Persona o grupo**, especifique **ThisItem.[ColumnName].DisplayName** para mostrar el nombre del usuario o del grupo.
+- Para un **persona o grupo** columna, especificar **ThisItem.** _ColumnName_**. DisplayName** para mostrar el nombre del usuario o el grupo.
 
     Por ejemplo, especifique **ThisItem.Manager.DisplayName** para mostrar los nombres de una columna **Persona o grupo** denominada **Administrador**.
 
-    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.[ColumnName].** (con el punto final).
+    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.** _ColumnName_**.** (incluido el punto final).
 
     > [!NOTE]
     > Para un **CreatedBy** columna, especificar **Thisitem.autor.DisplayName** para mostrar los nombres de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
 
-- Para una columna **Metadatos administrados**, especifique **ThisItem.[ColumnName].Label** para mostrar los datos de esa columna.
+- Para un **Managed Metadata** columna, especificar **ThisItem.** _ColumnName_**. Etiqueta** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Languages.Label** si tiene una columna **Metadatos administrados** denominada **Idiomas**.
 

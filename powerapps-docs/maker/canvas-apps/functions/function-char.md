@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d29d883a14e34dd89d766a6aeffb17275bde6b
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803467"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042646"
 ---
 # <a name="char-function-in-powerapps"></a>Función Char en PowerApps
 
@@ -60,16 +60,16 @@ El **Char** función convierte un número en una cadena con el carácter ASCII c
     - **TemplateSize**: 30
     - **TemplatePadding**: 0
 
-    El valor de la **elementos** propiedad multiplica 16 por el número de columna proporcionada por la columna valor de la **elementos** propiedad desde la Galería primera (0-7 en ThisItem.Value). La fórmula, a continuación, agrega el resultado a uno de los números de fila desde la Galería de segundo (0-15 en el registro de ámbito que la [ **ForAll** ](function-forall.md) función proporciona).
+    El valor de la **elementos** propiedad multiplica 16 por el número de columna proporcionada por la columna valor de la **elementos** propiedad desde la Galería de la primera (0-7 en `ThisItem.Value`). La fórmula, a continuación, agrega el resultado a uno de los números de fila desde la Galería de segundo (0-15 en el registro de ámbito que la [ **ForAll** ](function-forall.md) función proporciona).
 
 1. Dentro de la segunda Galería (vertical), agregue un **etiqueta** controlar y establecer estas propiedades:
 
-    - **Texto**: `ThisItem.Value`
+    - **Text**: `ThisItem.Value`
     - **ancho**: 50
 
 1. Dentro de la Galería (vertical) segundo, agregue otro **etiqueta** controlar y establecer estas propiedades:
 
-    - **Texto**: `Char( ThisItem.Value )`
+    - **Text**: `Char( ThisItem.Value )`
     - **ancho**: 50
     - **X**: 50
 

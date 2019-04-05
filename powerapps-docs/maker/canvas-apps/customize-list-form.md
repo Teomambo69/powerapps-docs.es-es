@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 12/17/2018
+ms.date: 04/04/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765488"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042741"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -73,7 +73,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 1. Establecer el **visibilidad** propiedad de la **Color**, **disponibilidad**, y **precio** tarjetas en esta fórmula (reemplazar, si es necesario, el número con la que anotó en el paso anterior):
 
-    **If(DataCardValue2.Value = true, true)**
+    **Si (DataCardValue2.Value = true, true)**
 
 1. Mientras mantiene la tecla Alt presionada, seleccione el botón de alternancia **Detalles** varias veces (al hacer clic o pulsar en él).
 
@@ -95,13 +95,13 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 1. Abra la lista, seleccione **New** en el comando de la barra y, a continuación, seleccione **personalizar** cerca de la parte superior del formulario.
 
-1. Personalizar el formulario de varias maneras, como los que se describen estos temas:
+1. Personalizar el formulario en una variedad de formas, como las que se describen estos temas:
 
     - Cambie su tamaño, orientación o ambos (por ejemplo, para [ensanchar el formulario](set-aspect-ratio-portrait-landscape.md)).
     - [Personalizar uno o más tarjetas](working-with-cards.md) (por ejemplo, Cambiar control de texto o una entrada de la pantalla de la tarjeta).
     - Cree un [campo de búsqueda](sharepoint-lookup-fields.md).
 
-    Más información: [Comprensión de la integración de formularios de SharePoint](sharepoint-form-integration.md)
+    Más información: [Comprensión de la integración de formularios de SharePoint](sharepoint-form-integration.md).
 
 ## <a name="use-the-default-form"></a>Usar el formulario predeterminado
 
@@ -157,7 +157,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 **P: ¿** ¿Cómo puedo fácilmente compartir mi formulario con otras personas?
 
-**R:** Abra el formulario, seleccione **Copiar vínculo**y, a continuación, envíe el vínculo a cualquier persona que desea utilizar el formulario.
+**R:** Abra el formulario, seleccione **Copiar vínculo**y, a continuación, envíe el vínculo a nadie que desee utilizar el formulario.
 
 **P: ¿** ¿Puedo actualizar mi formulario sin realizar cambios visibles para otros usuarios?
 
@@ -179,7 +179,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 1. Vuelva a la página **Versiones** de la otra pestaña del explorador, busque la versión que quiere restaurar y luego seleccione **Restaurar**.
 
     > [!NOTE]
-    > Si recibe un mensaje de error que indica que la restauración no se pudo realizar porque otro usuario ha bloqueado el formulario, espere a que el usuario lo desbloquee y, a continuación, vuelva a intentarlo.
+    > Si recibe un mensaje de error que dice que la restauración no se pudo porque el formulario está bloqueado por otro usuario, espere hasta que el usuario desbloquea el formulario y, a continuación, vuelva a intentarlo.
 
 **P: ¿** ¿Puedo mover mi formulario de una lista a otra?
 
@@ -189,7 +189,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 **P: ¿** ¿Cómo se puede compartir mi formulario?
 
-**R:** No necesita compartir el formulario, el formulario hereda los permisos de la lista de SharePoint. Cuando haya terminado de personalizarlo, solo tiene que [volver a publicarlo en SharePoint](customize-list-form.md#save-and-publish-the-form) para que otros usuarios puedan usarlo.
+**R:** No necesita compartir el formulario, este hereda los permisos de la lista de SharePoint. Cuando haya terminado de personalizarlo, solo tiene que [volver a publicarlo en SharePoint](customize-list-form.md#save-and-publish-the-form) para que otros usuarios puedan usarlo.
 
 **P: ¿** ¿Quién puede personalizar los formularios?
 
@@ -211,6 +211,6 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 1. En la parte superior de la página del entorno predeterminado, seleccione **Recursos**.
 
-1. En la lista de aplicaciones, busque aplicaciones con un tipo de aplicación de **formulario de SharePoint**, que son los formularios personalizados.
+1. En la lista de aplicaciones, busque aplicaciones con un **formularios de SharePoint** tipo de aplicación, estos son los formularios personalizados.
 
     ![Lista de formularios personalizados](./media/customize-list-form/all-customized-forms.png)

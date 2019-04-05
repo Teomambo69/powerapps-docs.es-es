@@ -1,6 +1,6 @@
 ---
 title: PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes | Microsoft Docs
-description: Introducción al desarrollo de soluciones en PowerApps.
+description: Introducción al desarrollo de soluciones con las aplicaciones de lienzo.
 author: ImadYanni
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a99af6cbc963a82fc0f375336e0db9c07cbdc411
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799005"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042645"
 ---
-# <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes
+# <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Aplicaciones de lienzo para desarrolladores empresariales, asociados e ISV
 
 Los desarrolladores tienen la posibilidad de ampliar aplicaciones de lienzo en PowerApps, lo que habilita soluciones aún más potentes para las organizaciones y los clientes.
 
@@ -28,7 +28,7 @@ Los desarrolladores tienen la posibilidad de ampliar aplicaciones de lienzo en P
 
 Los desarrolladores empresariales permiten que sus organizaciones compilen robustas soluciones personalizadas en PowerApps:
 
-- **Creación de conectores personalizados**: Desarrolle conectores personalizados para conectarse a los datos de su organización y los servicios web a través de Microsoft Flow. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Creación de conectores personalizados**: Desarrolle conectores personalizados para conectarse a los datos de su organización y los servicios web. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
 
 - **Crear funciones de Azure**: Elabore instancias de Azure Functions para ampliar las aplicaciones con lógica de servidor personalizada. [Más información](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
 
