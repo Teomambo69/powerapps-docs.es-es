@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357630"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098055"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: **[Filtro](functions/function-filter-lookup.md)**,  **[ordenación](functions/function-sort.md)**, y **[AddColumns](functions/function-table-shaping.md)** funciones por nombrar solo unos pocos. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -29,7 +29,7 @@ La *delegación* es el lugar en el que la expresividad de las fórmulas de Power
 
 Esto se complica, y el motivo por el que existe este artículo, porque no todo lo que se puede expresar en una fórmula de PowerApps puede delegarse a todos los orígenes de datos. El lenguaje de PowerApps imita el lenguaje de fórmulas de Excel, que se está diseñado con acceso completo e instantáneo a un libro completo en la memoria, con una amplia variedad de funciones numéricas y de manipulación de texto. Como consecuencia, el lenguaje de PowerApps es mucho complejo de lo que la mayoría de orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
 
-**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
+**Trabajar con grandes conjuntos de datos requiere el uso de orígenes de datos y las fórmulas que se pueden delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
 
 > [!NOTE]
 > Anteriormente las advertencias de delegación se marcaban en PowerApps como sugerencias de "punto azul", pero desde entonces las sugerencias de delegación se han reclasificado como advertencias. Si los datos del origen de datos superan los 500 registros y no se puede delegar una función, quizás PowerApps no pueda recuperar todos los datos y la aplicación pueda tener resultados incorrectos. Las advertencias de delegación permiten administrar la aplicación para que tenga resultados correctos.
@@ -57,22 +57,22 @@ Las funciones **Filter** y **LookUp** se pueden usar con columnas de la tabla pa
 * **[In (En)](functions/operators.md)**
 * **[=](functions/operators.md)**, **[<>](functions/operators.md)**, **[>=](functions/operators.md)**, **[<=](functions/operators.md)**, **[>](functions/operators.md)**, **[<](functions/operators.md)**
 * **[+](functions/operators.md)**, **[-](functions/operators.md)**
-* **[TrimEnds (RecortarExtr)](functions/function-trim.md)**
-* **[EsBlanco](functions/function-isblank-isempty.md)**
-* **[StartsWith (EmpiezaPor)](functions/function-startswith.md)**
+* **[TrimEnds](functions/function-trim.md)**
+* **[IsBlank](functions/function-isblank-isempty.md)**
+* **[StartsWith](functions/function-startswith.md)**, **[EndsWith](functions/function-startswith.md)**
 * Valores constantes que son iguales en todos los registros, como las propiedades del control y [las variables globales y de contexto](working-with-variables.md).
 
-También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **Left( Language(), 2 )** no depende de ninguna columna del registro y, por tanto, devuelve el mismo valor para todos los registros. Efectivamente es una constante. El uso de variables de contexto, colecciones y señales puede no ser constante y, por tanto, evita la delegación de **Filter** y **LookUp**.  
+También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **izquierda (lenguaje(), 2)**, **fecha (2019, 3, 31)**, y **Today()** no dependen de las columnas del registro y, por lo tanto, devuelven el mismo valor para todos los registros. Estos valores se pueden enviar al origen de datos como una constante y no bloquearán la delegación. 
 
 La lista anterior no incluye estos elementos importantes:
 
-* **[If (Si)](functions/function-if.md)**
+* **[If](functions/function-if.md)**
 * **[*](functions/operators.md)**, **[/](functions/operators.md)**, **[Mod](functions/function-mod.md)**
 * **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)**)
-* **[ExactIn (ExactoEn)](functions/operators.md)**
+* **[ExactIn](functions/operators.md)**
 * Funciones de manipulación de cadenas: **[Inferior](functions/function-lower-upper-proper.md)**,  **[superior](functions/function-lower-upper-proper.md)**,  **[izquierda](functions/function-left-mid-right.md)**, **[mediados](functions/function-left-mid-right.md)**,  **[Len](functions/function-left-mid-right.md)**,...
 * Señales: **[Ubicación](functions/signals.md)**,  **[aceleración](functions/signals.md)**,  **[brújula](functions/signals.md)**,...
-* Volátiles: **[Ahora](functions/function-now-today-istoday.md)**,  **[hoy](functions/function-now-today-istoday.md)**,  **[Rand](functions/function-rand.md)**,...
+* Volátiles: **[RAND](functions/function-rand.md)**,...
 * [Colecciones](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Funciones de ordenación
@@ -87,24 +87,32 @@ Las funciones de recuento como **[CountRows](functions/function-table-counts.md)
 
 Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)** y **[VarP](functions/function-aggregates.md)**, no se pueden delegar.
 
+### <a name="table-shaping-functions"></a>Funciones de forma de tabla
+
+**[AddColumns](functions/function-table-shaping.md)**,  **[DropColumns](functions/function-table-shaping.md)**,  **[Cambiarnombrecolumnas](functions/function-table-shaping.md)**, y **[Mostrarcolumnas](functions/function-table-shaping.md)** admite parcialmente la delegación.  Se pueden delegar las fórmulas en sus argumentos.  Sin embargo, el resultado de estas funciones están sujetas al límite de registro que no sean de delegación.
+
+Al igual que en este ejemplo, los creadores de usar a menudo **AddColumns** y **búsqueda** para combinar información de una tabla en otra, conocido comúnmente como una combinación en la jerga de base de datos:
+
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
+)
+```
+
+Aunque **productos** y **proveedores** pueden ser orígenes de datos delegables y **búsqueda** es una función delegable, la salida de la **AddColumns**función no puede delegar. El resultado de la fórmula completa se limita a la primera parte de la **productos** origen de datos. Dado que la función **LookUp** y su origen de datos se pueden delegar, se puede encontrar una coincidencia con **Suppliers** en cualquier lugar del origen de datos, aunque sea grande. 
+
+Si usas **AddColumns** de esta manera, **búsqueda** debe realizar llamadas independientes al origen de datos para cada uno de los primeros registros de **productos**, lo que hace que una gran cantidad de red CHATTER. Si **proveedores** es lo suficientemente pequeño y no cambia con frecuencia, podría llamar a la **recopilar** funcionando en [ **OnStart** ](functions/signals.md) en caché los datos origen de la aplicación cuando se inicia. Como alternativa, puede reestructurar la aplicación para que extraiga en los registros relacionados solo cuando el usuario pide para ellos.  
+ 
 ## <a name="non-delegable-functions"></a>Funciones no delegables
 Las demás funciones no admiten la delegación, incluidas estas importantes funciones:
 
-* Forma de tabla: **[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[ShowColumns](functions/function-table-shaping.md)**, ...
 * **[Primero](functions/function-first-last.md)**, **[FirstN](functions/function-first-last.md)**, **[Último](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
 * **[Recopilar](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
 * **[CountIf](functions/function-table-counts.md)**, **[RemoveIf](functions/function-remove-removeif.md)**, **[UpdateIf](functions/function-update-updateif.md)**
 * **[GroupBy](functions/function-groupby.md)**, **[Desagrupar](functions/function-groupby.md)**
-
-Un patrón habitual consiste en usar **AddColumns** y **Buscar** para combinar información de una tabla con la de otra, lo que suele conocerse como una combinación en el lenguaje de base de datos.  Por ejemplo:
-
-**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
-
-Aunque **Products** y **Suppliers** pueden ser orígenes de datos delegables y **LookUp** es una función delegable, la función **AddColumns** no se puede delegar.  El resultado de la fórmula completa se limitará a la primera parte del origen de datos **Products**.  
-
-Dado que la función **LookUp** y su origen de datos se pueden delegar, se puede encontrar una coincidencia con **Suppliers** en cualquier lugar del origen de datos, aunque sea grande. Un posible inconveniente es que **LookUp** realizará llamadas independientes al origen de datos en todos los primeros registros de **Products**, lo que provocará mucha charla en la red. Si **Suppliers** es suficientemente pequeño y no cambia con frecuencia, puede almacenar en la memoria caché de la aplicación el origen de datos con una llamada **Collect** cuando se inicia la aplicación (para lo que se usa [**OnVisible**](controls/control-screen.md) en la pantalla inicial) y usar **LookUp** en su lugar.  
 
 ## <a name="non-delegable-limits"></a>Límites no delegables
 Las fórmulas que no se pueden delegar se procesan localmente. Esto permite usar todo el espectro del lenguaje de fórmulas de PowerApps. Pero esto tiene un precio: primero deben pasarse todos los datos al dispositivo, lo que podría implicar la recuperación de una gran cantidad de datos a través de la red. Esta operación puede tardar un tiempo, lo que daría la impresión de que la aplicación se ejecuta con lentitud, o incluso que está bloqueada.

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/24/2018
+ms.date: 04/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b0701c9fcf7033ab8d57bb039972ce63c8faf29
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802409"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096176"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Funciones AddColumns, DropColumns, RenameColumns y ShowColumns en PowerApps
 Forma una [tabla](../working-with-tables.md) agregando, quitando, cambiando el nombre y seleccionando sus [columnas](../working-with-tables.md#columns).
@@ -49,9 +49,20 @@ Use la función **RenameColumns** para cambiar el nombre de una o varias columna
 
 La función **ShowColumns** incluye columnas de una tabla y quita todas las demás columnas. Puede usar **ShowColumns** para crear una tabla de una sola columna a partir de una tabla de varias columnas.  **ShowColumns** incluye columnas y **DropColumns** las excluye.  
 
-Para todas estas funciones, el resultado es una nueva tabla con la transformación aplicada.  La tabla original no se modifica.
+Para todas estas funciones, el resultado es una nueva tabla con la transformación aplicada. La tabla original no se modifica. No se puede modificar una tabla existente con una fórmula. Common Data Service, SharePoint, SQL Server y otros orígenes de datos proporcionan herramientas para modificar las columnas de tablas, que a menudo se conocen como el esquema, entidades y listas. Las funciones en este tema solo transforman una tabla de entrada, sin modificar el original, en una tabla de salida para su uso posterior.
 
-[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
+Los argumentos de estas funciones admiten la delegación. Por ejemplo, un **filtro** función que se usa como argumento para la incorporación de cambios en las búsquedas de registros relacionados a través de todos los anuncios, incluso si la **' [dbo]. [ AllListings]'** origen de datos contiene un millón de filas:
+
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
+)
+```
+
+Sin embargo, el resultado de estas funciones está sujeto a la [límite de registros que no sean de delegación](../delegation-overview.md#non-delegable-limits).  En este ejemplo, se devuelven solo 500 registros incluso si la **RealEstateAgents** origen de datos tiene registros 501 o más.
+
+Si usas **AddColumns** de esta manera, **filtro** debe realizar llamadas independientes al origen de datos para cada uno de los primeros registros de **RealEstateAgents**, lo que hace que una gran cantidad de chatter de red. Si **[dbo]. [ AllListings]** es lo suficientemente pequeño y no cambia con frecuencia, podría llamar a la **recopilar** funcionando en [ **OnStart** ](signals.md#app) para almacenar en caché el origen de datos en la aplicación Cuando se inicia. Como alternativa, puede reestructurar la aplicación para que extraiga en los registros relacionados solo cuando el usuario pide para ellos.  
 
 ## <a name="syntax"></a>Sintaxis
 **AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
@@ -87,17 +98,44 @@ Ninguno de estos ejemplos modificar el origen de datos **IceCreamSales**. Cada f
 | --- | --- | --- |
 | **AddColumns (IceCreamSales, "Revenue", UnitPrice * QuantitySold)** |Agrega una columna **Revenue** al resultado.  Para cada registro, se evalúa **UnitPrice * QuantitySold**, y el resultado se coloca en la nueva columna. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns (IceCreamSales, "UnitPrice")** |Excluye la columna **UnitPrice** del resultado. Use esta función para excluir columnas y usar **ShowColumns** para incluirlas. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales, "Flavor" )** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Cambia el nombre de la **UnitPrice** columna del resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **Mostrarcolumnas (IceCreamSales, "Sabor")** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **Cambiarnombrecolumnas (IceCreamSales, "UnitPrice", "Price")** |Cambia el nombre de la **UnitPrice** columna del resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **Cambiarnombrecolumnas (IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns (IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold),<br>"UnitPrice", "Price"),<br>"Cantidad")** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Paso a paso
-1. Importe o cree una colección denominada **Inventory**, como se describe en el primer subprocedimiento del artículo sobre [visualización de imágenes y texto en una galería](../show-images-text-gallery-sort-filter.md).
-2. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
-   
-    **ClearCollect(Inventory2, RenameColumns(Inventory, "ProductName", "JacketID"))**
-3. Presione F5, seleccione el botón que acaba de crear y presione Esc para volver al área de trabajo de diseño.
-4. En el menú **Archivo**, seleccione **Colecciones**.
-5. Confirme que ha creado una colección, denominada **Inventory2**. La nueva colección contiene la misma información que **Inventory** salvo que la columna denominada **ProductName** en **Inventory** se denomina **JacketID** en **Inventory2**.
 
+Vamos a probar algunos de los ejemplos de anteriormente en este tema.  
+
+1. Crear una colección mediante la adición de un **[botón](../controls/control-button.md)** control y estableciendo su **OnSelect** propiedad en esta fórmula:
+
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
+        Table(
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
+        )
+    )
+    ```
+
+1. Ejecute la fórmula, seleccione el botón mientras mantiene presionada la tecla Alt.
+
+1. Agregue un segundo **botón** , establezca su **OnSelect** fórmula, para la propiedad y, a continuación, ejecútelo:
+
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
+    ) 
+    ```
+1. En el **archivo** menú, seleccione **colecciones**y, a continuación, seleccione **IceCreamSales** para mostrar esa colección.
+ 
+    Como se muestra en este gráfico, la segunda fórmula no ha modificado esta colección. El **AddColumns** función usa **IceCreamSales** como un argumento de solo lectura; la función no modifica la tabla al que hace referencia ese argumento.
+    
+    ![Visor de la colección que muestra los tres registros de la colección de ventas de helado que no incluya una columna de ingresos](media/function-table-shaping/ice-cream-sales-collection.png)
+
+1. Seleccione **FirstExample**.
+
+    Como se muestra en este gráfico, la segunda fórmula devuelve una nueva tabla con la columna agregada. El **ClearCollect** función captura la nueva tabla en la **FirstExample** colección, agregar algo a la tabla original, tal como transmita a través de la función sin modificar el origen:
+
+    ![Visor de la colección que muestra los tres registros de la colección del primer ejemplo que incluye una nueva columna de ingresos](media/function-table-shaping/first-example-collection.png)
