@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 147766eb9e9b17698882241e8eb3bd0ae7ba7e78
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: d13f4a0669ae9f0d7ef9a5f4ef7115e006256bd9
+ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58172642"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59480248"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  
