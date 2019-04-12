@@ -1,6 +1,6 @@
 ---
 title: Funciones Download, Launch y Param | Microsoft Docs
-description: Información de referencia de las funciones Download, Launch y Param de PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y ejemplos para las funciones Download, Launch y parámetro en las aplicaciones de lienzo
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c465a8cd23511c0cffbbfab9b70dd436be06d37
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4a53d8c20bd4b7784cb94daa574682c041f104ea
+ms.sourcegitcommit: b316e0eee9946ef09e0512577ce2d11cd27aa864
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860026"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59508318"
 ---
-# <a name="download-launch-and-param-functions-in-powerapps"></a>Funciones Download, Launch y Param en PowerApps
+# <a name="download-launch-and-param-functions-in-canvas-apps"></a>Funciones download, Launch y parámetro en las aplicaciones de lienzo
 Descarga o inicia una página web o una aplicación con parámetros.  
 
 ## <a name="description"></a>Descripción
-La función **Download** descarga un archivo de la Web al dispositivo local.  Se pide al usuario una ubicación para guardar el archivo.  **Download** devuelve la ubicación donde el archivo se almacenó localmente como una cadena.  
+La función **Download** descarga un archivo de la Web al dispositivo local. Se pide al usuario una ubicación para guardar el archivo.  **Download** devuelve la ubicación donde el archivo se almacenó localmente como una cadena.  
 
-La función **Launch** inicia un página web o una aplicación.  Opcionalmente, esta función puede pasar parámetros a la aplicación.  
+La función **Launch** inicia un página web o una aplicación.  Opcionalmente, esta función puede pasar parámetros a la aplicación.
 
-La función **Param** recupera un parámetro pasado a la aplicación cuando se inició.  Si no se pasó el parámetro con nombre, **Param** devuelve *blank*.
+En Internet Explorer y Microsoft Edge, la **iniciar** función abre un sitio Web o aplicación solo si su configuración de seguridad es iguales o superior a los de la aplicación que contiene la función. Si, por ejemplo, agrega el **iniciar** función a una aplicación que se ejecutará en el **sitios de confianza** seguridad de la zona, asegúrese de que el sitio Web o aplicación que quiere que la función para abrir está en el **confianza sitios** o **intranet Local** zona (no en **sitios restringidos**). Más información: [Cambiar la configuración de seguridad y privacidad de Internet Explorer 11](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings).  
+
+La función **Param** recupera un parámetro pasado a la aplicación cuando se inició. Si no se pasó el parámetro con nombre, **Param** devuelve *blank*.
 
 ## <a name="syntax"></a>Sintaxis
 **Download**( *Address* )
