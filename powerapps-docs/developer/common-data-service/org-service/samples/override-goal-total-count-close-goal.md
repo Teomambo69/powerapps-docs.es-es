@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Reemplazar el recuento total de objetivo y cerrar el objetivo (Common Data Service para las aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Reemplazar el recuento total de objetivo y cerrar el objetivo (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo reemplazar el recuento total de objetivos y cerrar el objetivo.
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
+title: Detectar datos duplicados con la API web (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -16,7 +16,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="-detect-duplicate-data-using-the-web-api"></a># Detección de datos duplicados con la API web
+## <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 
 <!-- 
 Related topics
@@ -31,11 +31,11 @@ powerapps-docs/developer/common-data-service/webapi/detect-duplicate-data.md
 Also: powerapps-docs/developer/common-data-service/webapi/manage-duplicate-detection-create-update.md
 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/detect-duplicate-data-for-developers
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/enable-disable-duplicate-detection
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/run-duplicate-detection
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/duplicate-detection-create-update
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/duplicate-detection-messages
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/duplicaterule-entities
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/detect-duplicate-data-for-developers
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/enable-disable-duplicate-detection
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/run-duplicate-detection
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/duplicate-detection-create-update
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/duplicate-detection-messages
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/duplicaterule-entities
 
 -->

@@ -1,6 +1,6 @@
 ---
-title: Importar o exportar datos desde Common Data Service for Apps
-description: Importación y exportación masivas de datos desde archivos de Excel o CSV a las entidades de Common Data Service for Apps usando las funcionalidades Obtener datos de Excel y Exportar datos
+title: Importar o exportar datos desde Common Data Service
+description: Importación y exportación masivas de datos desde archivos de Excel o CSV a las entidades de Common Data Service usando las funcionalidades Obtener datos de Excel y Exportar datos
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,9 +13,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="import-or-export-data-from-common-data-service-for-apps"></a>Importar o exportar datos desde Common Data Service for Apps
+# <a name="import-or-export-data-from-common-data-service"></a>Importar o exportar datos desde Common Data Service
 
-Para importar y exportar datos de forma masiva desde archivos de Microsoft Excel o CSV, use las funciones Obtener datos de archivo de Excel y Exportar datos para entornos actualizados de Common Data Service for Apps.
+Para importar y exportar datos de forma masiva desde archivos de Microsoft Excel o CSV, use las funciones Obtener datos de archivo de Excel y Exportar datos para entornos actualizados de Common Data Service.
 
 Existen dos formas de importar archivos en entidades desde archivos de Excel o CSV.
 
@@ -66,7 +66,7 @@ Cada entidad tiene campos necesarios que deben existir en el archivo de entrada.
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>Opción 2: Importar incorporando su propio archivo de origen
 
-Si es un usuario avanzado y conoce los campos necesarios para una determinada entidad par Common Data Service for Apps, defina su propio archivo de origen de Excel o CSV. Siga los pasos de **Importar el archivo**.
+Si es un usuario avanzado y conoce los campos necesarios para una determinada entidad par Common Data Service, defina su propio archivo de origen de Excel o CSV. Siga los pasos de **Importar el archivo**.
 
 ## <a name="navigate-mapping-errors"></a>Desplazarse por los errores de la asignación
 
@@ -92,7 +92,7 @@ Si obtiene errores de asignación después de cargar el archivo, seleccione **Es
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Asegurar la univocidad al importar datos en una entidad de Excel o de CSV
 
-Las entidades de Common Data Service for Apps usan una clave principal para identificar de forma exclusiva los registros dentro de una tabla de entidades de Common Data Service. La clave principal de una entidad de Common Data Service es un identificador único global (GUID). Forma la base predeterminada para la identificación de registro. Las operaciones de datos, como la importación de datos en entidades de Common Data Service, exponen las claves principales predeterminadas.
+Las entidades de Common Data Service usan una clave principal para identificar de forma exclusiva los registros dentro de una tabla de entidades de Common Data Service. La clave principal de una entidad de Common Data Service es un identificador único global (GUID). Forma la base predeterminada para la identificación de registro. Las operaciones de datos, como la importación de datos en entidades de Common Data Service, exponen las claves principales predeterminadas.
 
 Ejemplo:  
 La clave principal de una entidad **Cuenta** es **accountid**.

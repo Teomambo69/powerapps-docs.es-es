@@ -4,7 +4,7 @@ description: Aprenda a crear entidades con el explorador de soluciones
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Crear y editar entidades con el explorador de soluciones
 
-Puede crear fácilmente una entidad mediante el portal de PowerApps para la mayoría de las situaciones comunes, pero no todas las capacidades se implementan ahí. Cuando necesite cumplir los requisitos descritos en [Creación y edición de entidades en Common Data Service para aplicaciones](create-edit-entities.md), puede cumplirlas creando o editar entidades mediante el Explorador de soluciones.
+Puede crear fácilmente una entidad mediante el portal de PowerApps para la mayoría de las situaciones comunes, pero no todas las capacidades se implementan ahí. Cuando necesite cumplir los requisitos descritos en [Creación y edición de entidades en Common Data Service](create-edit-entities.md), puede cumplirlas creando o editar entidades mediante el Explorador de soluciones.
 
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -106,9 +106,9 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 También puede realizar los siguientes cambios:
-- [Creación y edición de campos para Common Data Service para aplicaciones](create-edit-fields.md)
+- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
 - [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)
-- [Crear y diseñar formularios](../model-driven-apps/create-design-forms.md)
+- [Creación y diseño de formularios](../model-driven-apps/create-design-forms.md)
 - [Crear un flujo de proceso de negocio para estandarizar los procesos](/flow/create-business-process-flow)
 
 ## <a name="delete-an-entity"></a>Eliminación de una entidad
@@ -197,6 +197,6 @@ Algunas opciones se usan únicamente al crear una entidad virtual.
 Más información: [Crear y editar entidades virtuales que contienen datos desde un origen de datos externo](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>Vea también
-[Creación y edición entidades en Common Data Service para aplicaciones](create-edit-entities.md)<br />
+[Creación y edición entidades en Common Data Service](create-edit-entities.md)<br />
 [Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Crear una solución](create-solution.md)

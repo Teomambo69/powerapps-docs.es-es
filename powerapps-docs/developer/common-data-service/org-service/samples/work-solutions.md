@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Trabajar con soluciones (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Trabajar con soluciones (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo trabajar con soluciones.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-work-with-solutions"></a>Ejemplo: trabajar con soluciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-work-solutions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-work-solutions -->
 
 Este ejemplo muestra cómo cómo realizar las siguientes acciones con soluciones:
 

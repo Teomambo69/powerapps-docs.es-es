@@ -1,8 +1,8 @@
 ---
-title: Proveedores de datos de entidades virtuales personalizados (Common Data Service para aplicaciones) | MicrosoftDocs
-description: 'Al utilizar el SDK de datos de CDS for Apps, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.'
+title: Proveedores de datos de entidades virtuales personalizados (Common Data Service) | MicrosoftDocs
+description: 'Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="custom-virtual-entity-data-providers"></a>Proveedores de datos de entidad virtuales personalizados
 
-Al utilizar el SDK de datos de CDS for Apps, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente. Cada proveedor de datos consta de un conjunto reutilizable de complementos de CDS for Apps que implementan las operaciones CRUD admitidas. (La versión inicial está limitada a las operaciones de lectura **Retrieve** y **RetrieveMultiple**.) En esta sección se ofrece información fundamental sobre los proveedores de datos y enfoques para desarrollar proveedores personalizados, incluido el código de ejemplo.
+Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente. Cada proveedor de datos consta de un conjunto reutilizable de complementos de Common Data Service que implementan las operaciones CRUD admitidas. (La versión inicial está limitada a las operaciones de lectura **Retrieve** y **RetrieveMultiple**.) En esta sección se ofrece información fundamental sobre los proveedores de datos y enfoques para desarrollar proveedores personalizados, incluido el código de ejemplo.
 
 > [!NOTE]
 > Como alternativa a la creación de un proveedor de origen de datos personalizado, debe considerar adaptar el origen de datos a un proveedor de datos existente. Por ejemplo, si crea una interfaz de OData v4 con el origen de datos externo entonces podrá acceder directamente a él con el proveedor de datos OData v4 estándar proporcionado. El mecanismo para agregar esta interfaz REST varía con la tecnología de servicio de datos subyacente, por ejemplo consulte [Servicios de datos de WCF 4.5](https://docs.microsoft.com/dotnet/framework/data/wcf/). OData es ampliamente compatible en el sector gracias a una gran variedad de herramientas dedicadas y tecnologías compatibles.
@@ -33,9 +33,9 @@ Los proveedores de datos personalizados requieren recursos de desarrollo importa
 
 
 <!-- TODO:
-- CDS for Apps metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
-- CDS for Apps event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
-- CDS for Apps plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
+- Common Data Service metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
+- Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
+- Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
 
 El ensamblado de `Microsoft.Xrm.Sdk.Data.dll` está disponible como paquete de NuGet: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
 
@@ -56,10 +56,10 @@ El proveedor de datos Odata v4 estándar y el proveedor de datos Cosmos DB son e
 
 ## <a name="steps-to-use-a-custom-data-provider"></a>Pasos para usar un proveedor de datos personalizado
 
-Hay varios pasos que se deben seguir para crear una solución de proveedor de datos de entidad virtual que se pueda importar a las aplicaciones de CDS for Apps:
+Hay varios pasos que se deben seguir para crear una solución de proveedor de datos de entidad virtual que se pueda importar a las aplicaciones de Common Data Service:
 
 1. Desarrolle el complemento DLL de proveedor de datos personalizado (o conjunto de DLL).
-2. Registre el proveedor de datos personalizado con el servicio de CDS for Apps mediante la herramienta de registro de complementos (PRT).
+2. Registre el proveedor de datos personalizado con el servicio de Common Data Service mediante la herramienta de registro de complementos (PRT).
 3. Cree una solución de proveedor de datos.
 4. Personalice la entidad de origen de datos para reflejar el tipo de datos o instancia específica.
 5. Exporte la solución de proveedor de datos personalizada.
@@ -78,9 +78,9 @@ Para ambos eventos, debe:
 
 1. Convertir la información respectiva en el contexto de ejecución en una consulta compatible con el origen de datos externos.
 2. Recuperar los datos del sistema externo.
-3. Para **Retrieve**, convierta los datos en una <xref:Microsoft.Xrm.Sdk.Entity>; en caso contrario, para **RetrieveMultiple**, conviértalos en una <xref:Microsoft.Xrm.Sdk.EntityCollection>. Este resultado se devuelve a través de la plataforma de CDS for Apps al usuario que ejecuta la consulta. 
+3. Para **Retrieve**, convierta los datos en una <xref:Microsoft.Xrm.Sdk.Entity>; en caso contrario, para **RetrieveMultiple**, conviértalos en una <xref:Microsoft.Xrm.Sdk.EntityCollection>. Este resultado se devuelve a través de la plataforma de Common Data Service al usuario que ejecuta la consulta. 
 
-Las clases en el espacio de nombres <xref:Microsoft.Xrm.Sdk.Data> proporcionan un marco para ayudarle a asignar la información de la consulta de CDS for Apps desde el contexto de ejecución a una consulta en el formato adecuado para el origen de datos externos. Este mismo marco le ayudará a convertir los datos que se devuelven a los tipos <xref:Microsoft.Xrm.Sdk.Entity> o <xref:Microsoft.Xrm.Sdk.EntityCollection> adecuados que espera la plataforma de CDS for Apps. 
+Las clases en el espacio de nombres <xref:Microsoft.Xrm.Sdk.Data> proporcionan un marco para ayudarle a asignar la información de la consulta de Common Data Service desde el contexto de ejecución a una consulta en el formato adecuado para el origen de datos externos. Este mismo marco le ayudará a convertir los datos que se devuelven a los tipos <xref:Microsoft.Xrm.Sdk.Entity> o <xref:Microsoft.Xrm.Sdk.EntityCollection> adecuados que espera la plataforma de Common Data Service. 
 
 #### <a name="data-provider-exceptions"></a>Excepciones del proveedor de datos
 

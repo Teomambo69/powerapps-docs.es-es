@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Compartir registros utilizando GrantAccess, ModifyAccess y RevokeAccess (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Compartir registros utilizando GrantAccess, ModifyAccess y RevokeAccess (Common Data Service) | Microsoft Docs'
 description: 'Este ejemplo muestra cómo compartir un registro usando un mensaje de concesión, modificación y revocación de acceso.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>Ejemplo: compartir registros utilizando los mensajes GrantAccess, ModifyAccess y RevokeAccess
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
 
-Change sample to make sure it works with CDS
+Change sample to make sure it works with Common Data Service
 -->
 
 Este ejemplo muestra cómo compartir un registro con los siguientes mensajes:
 
-[GrantAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
+[GrantAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
 
-[ModifyAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
+[ModifyAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
 
-[RevokeAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
+[RevokeAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
 
 Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GrantModifyRevokeAccess).
 

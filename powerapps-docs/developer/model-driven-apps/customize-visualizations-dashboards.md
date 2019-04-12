@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customize-visualizations-and-dashboards"></a>Personalizar visualizaciones y paneles
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
 
 La visualización de datos y el análisis en aplicaciones basadas en modelos le permiten ver y analizar gráficamente los datos de su negocio, y le ayudarán a obtener ideas más profundas para tomar decisiones empresariales importantes. Puede configurar los paneles de forma tal que le permitan ver los datos de varias áreas como ventas, marketing y servicio. Incluso puede ajustar los datos que se presentan en las visualizaciones y los paneles según los requisitos empresariales al aplicar los filtros relacionados.  
   
@@ -48,7 +48,7 @@ La visualización de datos y el análisis en aplicaciones basadas en modelos le 
   
  [Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
   
- [Cambiar la navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
+ [Cambiar navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)  
   

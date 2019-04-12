@@ -1,5 +1,5 @@
 ---
-title: Habilitar y deshabilitar la detección de duplicados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Habilitar y deshabilitar la detección de duplicados (Common Data Service) | Microsoft Docs
 description: 'Este tema ofrece información sobre cómo habilitar la detección de duplicados para todas las entidades de una organización, para una entidad específica y para operaciones específicas y cómo deshabilitar la detección de duplicados globalmente o para un tipo de entidad anulando la publicación de las reglas de detección de duplicados o eliminando las reglas publicadas.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -47,7 +47,7 @@ Antes de ejecutar la detección de duplicados, habilítela para cada una de las 
   
 - Establezca los siguientes atributos en `true`:  
   
-  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`. Cree y actualice los registros en CDS for Apps mediante la aplicación web o Dynamics 365 for Outlook. Este atributo habilita o deshabilita la detección de duplicados para los registros creados o actualizados con mensajes de <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> y de <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>. Sin embargo, no afecta a los registros creados o actualizados con los métodos <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> y <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> .  
+  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`. Cree y actualice los registros en Common Data Service mediante la aplicación web o Dynamics 365 for Outlook. Este atributo habilita o deshabilita la detección de duplicados para los registros creados o actualizados con mensajes de <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> y de <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>. Sin embargo, no afecta a los registros creados o actualizados con los métodos <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> y <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> .  
   
   - `Organization.IsDuplicateDetectionEnabledForOfflineSync`. Sincronice los registros sin conexión cuando Dynamics 365 for Outlook pase de desconectado a conectado.  
   

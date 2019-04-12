@@ -1,5 +1,5 @@
 ---
-title: Servicio de exportación de datos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Servicio de exportación de datos (Common Data Service) | Microsoft Docs
 description: 'Capacidades, requisitos previos, API y programación del servicio de exportación de datos.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>Servicio de exportación de datos
 
-La exportación de datos es un servicio complementario habilitado como solución de Common Data Service para aplicaciones que agrega la capacidad de replicar los datos de Common Data Service para aplicaciones en un almacén de base de datos de Microsoft Azure SQL en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destino admitidos son la base de datos de Microsoft Azure SQL y Microsoft Azure SQL Server en las máquinas virtuales de Microsoft Azure. La exportación de datos sincroniza inteligentemente los esquemas y datos completos de Dynamics 365 inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en el sistema Dynamics 365 (en línea).  
+La exportación de datos es un servicio complementario habilitado como solución de Common Data Service que agrega la capacidad de replicar los datos de Common Data Service en un almacén de base de datos de Microsoft Azure SQL en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destino admitidos son la base de datos de Microsoft Azure SQL y Microsoft Azure SQL Server en las máquinas virtuales de Microsoft Azure. La exportación de datos sincroniza inteligentemente los esquemas y datos completos de Dynamics 365 inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en el sistema Dynamics 365 (en línea).  
   
- El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desde CDS for Apps.  Para obtener más información, vea [Exportación de datos](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
+ El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desde Common Data Service.  Para obtener más información, vea [Exportación de datos](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Los requisitos previos para utilizar el servicio Exportación de datos  
- Puesto que este servicio necesita acceso a una base de datos de Microsoft Azure SQL externa desde CDS for Apps, deben cumplirse varios requisitos previos para poder tener acceso correctamente a este servicio. Los siguientes requisitos previos se describen más detalladamente desde el punto de vista de un administrador en la sección [Requisitos previos para usar el servicio de exportación de datos](https://technet.microsoft.com/library/mt744592.aspx).  
+ Puesto que este servicio necesita acceso a una base de datos de Microsoft Azure SQL externa desde Common Data Service, deben cumplirse varios requisitos previos para poder tener acceso correctamente a este servicio. Los siguientes requisitos previos se describen más detalladamente desde el punto de vista de un administrador en la sección [Requisitos previos para usar el servicio de exportación de datos](https://technet.microsoft.com/library/mt744592.aspx).  
   
- El servicio CDS for Apps debe configurarse para que:  
+ El servicio de Common Data Service debe configurarse para que:  
   
 - Las entidades que se exportarán están habilitadas con seguimiento de cambios. Para obtener más información, consulte [Usar el seguimiento de cambios para sincronizar los datos con sistemas externos](use-change-tracking-synchronize-data-external-systems.md).  
   
@@ -35,7 +35,7 @@ La exportación de datos es un servicio complementario habilitado como solución
   
  La base de datos de Azure SQL de destino debe estar configurada de modo que:  
   
-- La suscripción debe admitir el volumen de datos que se replican desde la instancia de CDS for Apps.  
+- La suscripción debe admitir el volumen de datos que se replican desde la instancia de Common Data Service.  
   
 - Las configuraciones de firewall deben permitir el acceso desde la dirección IP del servicio Exportación de datos. Para obtener más información, consulte [Configurar una regla de firewall a nivel de servidor de base de datos de Azure SQL mediante Azure Portal](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).  
   
@@ -62,7 +62,7 @@ Para soluciones y servicios en línea, Azure proporciona un servicio de [Key Vau
 También se aconseja que agregue el dominio https://discovery.crmreplication.azure.net/ a la lista de sitios de confianza en el explorador y habilite ventanas emergentes para este sitio.  
   
 ## <a name="programming-for-the-data-export-service"></a>Programación para el servicio Exportación de datos  
- El servicio de exportación de datos expone una API basada en REST que se divide en dos grupos: un conjunto de operaciones de `Metadata` para explorar la estructura organizativa, las relaciones y la información de conexión de CDS for Apps, y un conjunto de operaciones de `Profiles` para configurar y administrar cada replicación de datos.  Esta API se define y se documenta completamente en las direcciones URL [Swagger](http://swagger.io/) siguientes:  
+ El servicio Exportación de datos expone una API basada en REST que se divide en dos grupos: un conjunto de operaciones de `Metadata` para explorar la estructura organizativa de Common Data Service, relaciones e información de conexión; y un conjunto de operaciones de `Profiles` para configurar y administrar cada replicación de datos.  Esta API se define y se documenta completamente en las direcciones URL [Swagger](http://swagger.io/) siguientes:  
   
 |Extremo de Swagger|Descripción|  
 |----------------------|-----------------|  
@@ -100,7 +100,7 @@ También se aconseja que agregue el dominio https://discovery.crmreplication.azu
 |profiles/{id}/failures|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|Obtener la cadena de conexión a un blob que contiene detalles erróneos para un perfil determinado|  
   
 ### <a name="gain-access"></a>Obtener acceso  
-Puesto que solo están autorizados los administradores del sistema de CDS for Apps a realizar operaciones de exportación de datos, estas API aplican autorización de autor de llamada mediante el uso de [tokens de seguridad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) de Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)). El fragmento de código siguiente demuestra cómo generar dicho token para una aplicación web mediante el nombre y la contraseña del administrador.   Debe reemplazar el `AppId`, `crmAdminUser` y `crmAdminPassword` con los valores adecuados al servicio. Este método se puede usar para desarrollo y prueba, pero deben usarse medios más seguros para producción, como el uso del Almacén de claves de Azure.  
+Puesto que sólo están autorizados los administradores del sistema de Common Data Service a realizar operaciones de exportación de datos, estas API aplican autorización de autor de llamada mediante el uso de [tokens de seguridad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) de Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)). El fragmento de código siguiente demuestra cómo generar dicho token para una aplicación web mediante el nombre y la contraseña del administrador.   Debe reemplazar el `AppId`, `crmAdminUser` y `crmAdminPassword` con los valores adecuados al servicio. Este método se puede usar para desarrollo y prueba, pero deben usarse medios más seguros para producción, como el uso del Almacén de claves de Azure.  
   
 ```csharp  
   

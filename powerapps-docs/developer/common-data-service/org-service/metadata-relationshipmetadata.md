@@ -1,5 +1,5 @@
 ---
-title: Crear y recuperar la relación entre entidades (Common Data Service para aplicaciones) | Microsoft Docs
+title: Crear y recuperar la relación entre entidades (Common Data Service) | Microsoft Docs
 description: Muestra ejemplos de códigos para crear y recuperar relaciones entre entidades.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>Crear y recuperar relaciones entre entidades
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
 
 Este tema muestra cómo crear y recuperar relaciones entre entidades.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: escucha de Rest (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: escucha de Rest (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo escribir un agente de escucha de Azure Service Bus para un contrato de extremo REST.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rest-listener"></a>Ejemplo: agente de escucha de REST
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rest-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rest-listener -->
 
 Este ejemplo muestra cómo escribir una aplicación de escucha de `Azure Service Bus` para un contrato de extremo de `REST`. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RESTListener).
 

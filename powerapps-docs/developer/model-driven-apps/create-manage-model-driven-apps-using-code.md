@@ -2,7 +2,7 @@
 title: 'Crear, administrar, y publicar aplicaciones basadas en modelos con código | Microsoft Docs'
 description: 'Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en PowerApps.'
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/04/2019
 ms.service:
   - powerapps
 ms.custom:
@@ -39,11 +39,7 @@ La creación de una aplicación basada en modelos implica los pasos siguientes:
 
 ## <a name="create-your-model-driven-app-and-define-its-properties"></a>Crear la aplicación basada en modelos y definir sus propiedades
 
-Para poder crear una aplicación debe disponer del rol de seguridad de Administrador del sistema o de Personalizador del sistema o permisos equivalentes. Puede seleccionar uno de los siguientes tipos de aplicación para especificar al cliente que la aplicación se usará para: 
-- **Web**: este es el cliente de explorador web clásico de Dynamics 365.
-- **Interfaz unificada**: se ejecuta en la nueva interfaz unificada, que proporciona importantes ventajas asociadas a la accesibilidad y el diseño dinámico. Para obtener más información sobre la nueva interfaz unificada, vea la sección [Marco de trabajo de interfaz unificada para las nuevas aplicaciones](/dynamics365/get-started/whats-new/customer-engagement/new-in-version-9#unified-interface-framework-for-new-apps). 
-
-Seleccione el tipo de aplicación especificando un valor entero para el atributo **clienttype**: 2 para **Web** y 4 para **Interfaz unificada**. Si no especifica ningún tipo de aplicación, se establece en **Web** de forma predeterminada. 
+Para poder crear una aplicación debe disponer del rol de seguridad de Administrador del sistema o de Personalizador del sistema o permisos equivalentes. 
 
 Especifique como mínimo las siguientes propiedades para crear una aplicación:
 - **name**: único para la aplicación
@@ -62,8 +58,7 @@ Accept: application/json
 {
     "name": "SDKTestApp",
     "uniquename":"SDKTestApp",
-    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f",
-    "clienttype": 4
+    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f"    
 }
 ```
 
@@ -81,7 +76,7 @@ Puede agregar o quitar componentes de una aplicación como el mapa del sitio, la
 
 Utilice la acción <xref:Microsoft.Dynamics.CRM.AddAppComponents> o el mensaje <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest> para agregar componentes a la aplicación basada en modelos. La acción requiere que especifique lo siguiente:
 - **AppId**: identificador de la aplicación en la que desea agregar componentes
-- **Components** Una colección de componentes que se va a agregar. Debe especificar el identificador y el tipo de entidad del componente que desea agregar. Para obtener una lista de los tipos de entidad en la API web de CDS for Apps, consulte <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
+- **Components** Una colección de componentes que se va a agregar. Debe especificar el identificador y el tipo de entidad del componente que desea agregar. Para obtener una lista de los tipos de entidad en la API web de Common Data Service, consulte <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
 
 La siguiente solicitud de la API web agrega una vista (savedquery) y un formulario (systemform) a la aplicación:
 
@@ -212,7 +207,7 @@ Accept: application/json
 
 ## <a name="manage-access-to-model-driven-app-using-security-roles"></a>Administrar el acceso a la aplicación basada en modelos mediante roles de seguridad
 
-Para proporcionar a los usuarios acceso a las aplicaciones de forma que puedan acceder a ellas desde su área **Configuración** > **Mis aplicaciones** o desde la página de inicio de Dynamics 365, puede asociar roles de seguridad a las aplicaciones basada en modelos. Los usuarios asignados a los roles de seguridad asociados pueden ver y usar las aplicaciones basada en modelos en CDS for Apps. 
+Para proporcionar a los usuarios acceso a las aplicaciones de forma que puedan acceder a ellas desde su área **Configuración** > **Mis aplicaciones** o desde la página de inicio de Dynamics 365, puede asociar roles de seguridad a las aplicaciones basada en modelos. Los usuarios asignados a los roles de seguridad asociados pueden ver y usar las aplicaciones basada en modelos en Common Data Service. 
 
 Utilice la propiedad de navegación **appmoduleroles_association** de la entidad [Entidad AppModule](../common-data-service/reference/entities/appmodule.md) para asociar una aplicación basada en modelos con un rol de seguridad. La siguiente solicitud muestra cómo asociar una aplicación basada en modelos con un rol de seguridad:
 

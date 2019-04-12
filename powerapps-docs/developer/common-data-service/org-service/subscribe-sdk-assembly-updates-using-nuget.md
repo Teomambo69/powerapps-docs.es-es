@@ -1,5 +1,5 @@
 ---
-title: Suscribirse a actualizaciones de ensamblado de SDK mediante NuGet (Common Data Service para aplicaciones) | Microsoft Docs
+title: Suscribirse a actualizaciones de ensamblado de SDK mediante NuGet (Common Data Service) | Microsoft Docs
 description: Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado nuget.org. El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Suscribirse a las actualizaciones de ensamblados de SDK mediante NuGet
 
-Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado [nuget.org](http://www.nuget.org). El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK. Visual Studio ha admitido esta capacidad desde la versión 2010 y hay incluso un cliente independiente NuGet para los desarrolladores que no desarrollan en Visual Studio. Otra ventaja de usar paquetes NuGet en los proyectos es que las referencias y las dependencias de ensamblados se gestionan automáticamente. Los paquetes NuGet están disponibles para Common Data Service para aplicaciones así como para versiones anteriores de Dynamics 365 Customer Engagement.  
+Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado [nuget.org](http://www.nuget.org). El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK. Visual Studio ha admitido esta capacidad desde la versión 2010 y hay incluso un cliente independiente NuGet para los desarrolladores que no desarrollan en Visual Studio. Otra ventaja de usar paquetes NuGet en los proyectos es que las referencias y las dependencias de ensamblados se gestionan automáticamente. Los paquetes NuGet están disponibles para Common Data Service así como para versiones anteriores de Dynamics 365 Customer Engagement.  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
 ## <a name="where-to-find-the-nuget-sdk-packages"></a>Dónde encontrar los paquetes de NuGet SDK
 
-El SDK de NuGet se encuentra en el perfil [crmsdk](https://www.nuget.org/profiles/crmsdk). Estos son los paquetes oficiales de CDS para aplicaciones. Seleccione cualquier paquete de la lista para navegar hasta la página de detalles del paquete. Los siguientes son los paquetes actuales de NuGet relevantes para CDS para aplicaciones.  
+El SDK de NuGet se encuentra en el perfil [crmsdk](https://www.nuget.org/profiles/crmsdk). Estos son los paquetes oficiales de Common Data Service. Seleccione cualquier paquete de la lista para navegar hasta la página de detalles del paquete. Los siguientes son los paquetes actuales de NuGet relevantes para Common Data Service.  
 
 
 |Paquete|Descripción|

@@ -1,5 +1,5 @@
 ---
-title: Recuperar metadatos y detectar cambios en metadatos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Recuperar metadatos y detectar cambios en metadatos (Common Data Service) | Microsoft Docs
 description: Las clases del espacio de nombres Query y las clases RetrieveMetadataChangesRequest y RetrieveMetadataChangesResponse permiten crear consultas eficaces de metadatos y capturar los cambios que se producen según suceden en el tiempo.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -27,7 +27,7 @@ Las clases del espacio de nombres <xref:Microsoft.Xrm.Sdk.Metadata.Query> y las 
   
 ## <a name="strategies-for-using-metadata"></a>Estrategias para usar metadatos  
 
- Los metadatos permiten crear aplicaciones que se adaptan a medida que cambia el modelo de datos de Common Data Service para aplicaciones. Los metadatos son importantes para los siguientes tipos de aplicaciones:  
+ Los metadatos permiten crear aplicaciones que se adaptan a medida que cambia el modelo de datos de Common Data Service. Los metadatos son importantes para los siguientes tipos de aplicaciones:  
   
 -   Interfaz de usuario para aplicaciones cliente  
   

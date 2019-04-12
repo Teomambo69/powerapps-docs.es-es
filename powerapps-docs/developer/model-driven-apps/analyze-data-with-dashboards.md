@@ -1,6 +1,6 @@
 ---
 title: Analizar datos con paneles (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Las entidades de paneles de Dynamics 365 Common Data Service para aplicaciones le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.'
+description: 'Las entidades de paneles de Dynamics 365 Common Data Service le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="analyze-data-with-dashboards"></a>Analizar datos con paneles
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
 
-Las entidades de paneles de Common Data Service para aplicaciones le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.  
+Las entidades de paneles de Common Data Service le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.  
   
 ## <a name="types-of-dashboards"></a>Tipos de paneles  
 Existen dos tipos de paneles: paneles propiedad de la organización y paneles propiedad del usuario.  
@@ -45,6 +45,8 @@ Un panel propiedad del usuario está representado por entidad `UserForm` , se pu
  [Acciones en los paneles](actions-dashboards.md)   
  [Crear un panel](create-dashboard.md)   
  [Paneles de ejemplo](sample-dashboards.md)   
- [Entidades del panel](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities)   <!-- TODO: Need to find the topic in powerapps repo to link--> [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
- [Ejemplo: Asignar un panel propiedad del usuario a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)  <!-- TODO: Need to find the topic in powerapps repo to link--> [Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)     
+ [Entidades de panel](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities)   <!-- TODO: Need to find the topic in powerapps repo to link-->
+ [Ejemplo: crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
+ [Ejemplo: Asignar un panel propiedad del usuario a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)  <!-- TODO: Need to find the topic in powerapps repo to link--> 
+ [Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)     
  [Personalizar visualizaciones y paneles](customize-visualizations-dashboards.md)

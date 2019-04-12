@@ -1,6 +1,6 @@
 ---
-title: Escribir una aplicación de escucha para una solución de Microsoft Azure (Common Data Service para aplicaciones) | Microsoft Docs
-description: El tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service para aplicaciones de Dynamics 365 (online) que se publican para Azure Service Bus.
+title: Escribir una aplicación de escucha para una solución de Microsoft Azure (Common Data Service) | Microsoft Docs
+description: El tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service de Dynamics 365 (online) que se publican para Azure Service Bus.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
 
-Este tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service para aplicaciones de Dynamics 365 (online) que se publican para Azure Service Bus. Como requisito previo, debería familiarizarse con la manera de escribir un escucha de Azure Service Bus antes de intentar comprender los detalles de un escucha de Dynamics 365. Para obtener más información, consulte la [Documentación del bus de servicio de Azure](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
+Este tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service de Dynamics 365 (online) que se publican para Azure Service Bus. Como requisito previo, debería familiarizarse con la manera de escribir un escucha de Azure Service Bus antes de intentar comprender los detalles de un escucha de Dynamics 365. Para obtener más información, consulte la [Documentación del bus de servicio de Azure](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
   
 <a name="bkmk_writequeued"></a>
 

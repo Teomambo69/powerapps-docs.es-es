@@ -4,7 +4,7 @@ description: Obtenga información sobre las formas diferentes en que se puede ed
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,7 +39,7 @@ Hay dos formas de editar una entidad mediante un diseñador:
 
 En el portal de PowerApps y en el explorador de soluciones puede realizar lo siguiente:
 
-- **Editar campos de la entidad**. Más información: [Crear y editar campos para Common Data Service for Apps](create-edit-fields.md)
+- **Editar campos de la entidad**. Más información: [Crear y editar campos para Common Data Service](create-edit-fields.md)
   
 - **Editar relaciones entre entidades**. Más información: [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)
 

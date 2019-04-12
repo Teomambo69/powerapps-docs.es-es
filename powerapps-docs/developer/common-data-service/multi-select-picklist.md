@@ -1,5 +1,5 @@
 ---
-title: Atributos de lista desplegable de selección múltiple (Common Data Service para aplicaciones) | Microsoft Docs
+title: Atributos de lista desplegable de selección múltiple (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre los atributos de lista desplegable de selección múltiple que permiten almacenar varias opciones seleccionables en un único atributo.
 ms.custom: ''
 ms.date: 10/31/2018

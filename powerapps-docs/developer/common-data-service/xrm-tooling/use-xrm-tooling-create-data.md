@@ -1,10 +1,10 @@
 ---
-title: Utilizar útiles de XRM para crear datos (Common Data Service para aplicaciones)| Microsoft Docs
-description: Utilizar la clase CrmServiceClient para crear datos en CDS para aplicaciones
+title: Utilizar útiles de XRM para crear datos (Common Data Service)| Microsoft Docs
+description: Utilizar la clase CrmServiceClient para crear datos en Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ Existen siete métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Conne
   
 ## <a name="createnewrecord"></a>CreateNewRecord  
 
-Este método se usa para crear un tipo de datos de la entidad en CDS para aplicaciones. Para utilizarlo, es necesario conocer el nombre de esquema de la entidad en la que desea crear un registro y se debe crear una carga de datos para pasar al método. En este ejemplo se crea un registro de cuenta.  
+Este método se usa para crear un tipo de datos de la entidad en Common Data Service. Para utilizarlo, es necesario conocer el nombre de esquema de la entidad en la que desea crear un registro y se debe crear una carga de datos para pasar al método. En este ejemplo se crea un registro de cuenta.  
   
 ```csharp 
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>",“<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -73,7 +73,7 @@ En este ejemplo se creó un objeto de carga de datos llamado `indata`. A continu
   
 ## <a name="createannotation"></a>CreateAnnotation
   
-Este método se usa para crear y adjuntar un objeto de nota a cualquier registro de entidad. Aunque puede rellenar todas las variables de la nota en el primer paso, solo debe proporcionar los campos de texto para el asunto y la nota. En la práctica, esto normalmente se usa para adjuntar notas generadas por el sistema a una entidad, o para adjuntar los archivos almacenados en CDS para aplicaciones a una entidad. Además, si proporciona su propia interfaz de usuario para crear notas para su usuario, así es cómo normalmente adjuntaría la nota a la entidad del titular en CDS para aplicaciones. Este ejemplo es la continuación del ejemplo anterior para crear una nota en la cuenta recién creada.  
+Este método se usa para crear y adjuntar un objeto de nota a cualquier registro de entidad. Aunque puede rellenar todas las variables de la nota en el primer paso, solo debe proporcionar los campos de texto para el asunto y la nota. En la práctica, esto normalmente se usa para adjuntar notas generadas por el sistema a una entidad, o para adjuntar los archivos almacenados en Common Data Service a una entidad. Además, si proporciona su propia interfaz de usuario para crear notas para su usuario, así es cómo normalmente adjuntaría la nota a la entidad del titular en Common Data Service. Este ejemplo es la continuación del ejemplo anterior para crear una nota en la cuenta recién creada.  
   
 ```csharp
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -108,4 +108,4 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Usar API de útiles de XRM para ejecutar acciones en CDS para aplicaciones](use-xrm-tooling-execute-actions.md)
+[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)

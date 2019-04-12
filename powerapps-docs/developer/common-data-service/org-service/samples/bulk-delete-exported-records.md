@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Eliminación en masa de registros exportados (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Eliminación en masa de registros exportados (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo realizar una eliminación en masa de registros
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-bulk-delete-exported-records"></a>Ejemplo: eliminación en masa de los registros exportados
 
-Este ejemplo muestra cómo realizar una eliminación en masa de los registros que se exportaron anteriormente desde Common Data Service para aplicaciones mediante la opción **Exportar a Excel**. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteExported).
+Este ejemplo muestra cómo realizar una eliminación en masa de los registros que se exportaron anteriormente desde Common Data Service mediante la opción **Exportar a Excel**. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteExported).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

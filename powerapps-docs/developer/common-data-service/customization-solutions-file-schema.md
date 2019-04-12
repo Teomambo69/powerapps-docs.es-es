@@ -1,10 +1,10 @@
 ---
-title: Esquema de archivo de soluciones de personalización (Common Data Service para aplicaciones) | Microsoft Docs
-description: A continuación se presenta la definición de esquema de un archivo de personalización de soluciones de Common Data Service para aplicaciones.
+title: Esquema de archivo de soluciones de personalización (Common Data Service) | Microsoft Docs
+description: A continuación se presenta la definición de esquema de un archivo de personalización de soluciones de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
 
 # <a name="customization-solutions-file-schema"></a>Esquema de archivo de soluciones de personalización
 
 
-A continuación se presenta la definición de esquema de un archivo de personalización de importación/exportación de Common Data Service para aplicaciones. 
+A continuación se presenta la definición de esquema de un archivo de personalización de importación/exportación de Common Data Service. 
 
 Puede encontrar el esquema en la carpeta `Schemas\9.0.0.2090\CustomizationsSolution.xsd` al descargar el archivo zip de esquemas.
 

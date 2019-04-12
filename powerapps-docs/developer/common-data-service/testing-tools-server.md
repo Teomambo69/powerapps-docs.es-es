@@ -1,5 +1,5 @@
 ---
-title: Herramientas de prueba para desarrollo del lado del servidor (Common Data Service para aplicaciones) | Microsoft Docs
+title: Herramientas de prueba para desarrollo del lado del servidor (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre los marcos de prueba para desarrollo del lado del servidor.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="testing-tools-for-server-side-development"></a>Herramientas de pruebas para el desarrollo de servidor
 
-Muchos programadores recomiendan encarecidamente incluir prueba de unidad como parte del proceso de desarrollo. Otros no están convencidos. Common Data Service para aplicaciones no ofrece herramientas de prueba, pero debe tener en cuenta que hay herramientas de la comunidad disponibles que puede usar. Un marco popular para el desarrollo del lado del servidor es [Fake Xrm Easy](https://dynamicsvalue.com/home). Este marco se puede combinar con los marcos de prueba de .NET Framework que elija. [FakeItEasy](https://fakeiteasy.github.io/) es una opción común.
+Muchos programadores recomiendan encarecidamente incluir prueba de unidad como parte del proceso de desarrollo. Otros no están convencidos. Common Data Service no ofrece herramientas de prueba, pero debe tener en cuenta que hay herramientas de la comunidad disponibles que puede usar. Un marco popular para el desarrollo del lado del servidor es [Fake Xrm Easy](https://dynamicsvalue.com/home). Este marco se puede combinar con los marcos de prueba de .NET Framework que elija. [FakeItEasy](https://fakeiteasy.github.io/) es una opción común.
 
 > [!NOTE]
 > Microsoft no proporciona soporte para herramientas creadas por la comunidad. Si tiene algún problema con una herramienta de la comunidad, póngase en contacto con el editor.

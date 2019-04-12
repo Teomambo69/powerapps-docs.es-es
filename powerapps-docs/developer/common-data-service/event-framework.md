@@ -1,5 +1,5 @@
 ---
-title: ' Marco de trabajo de eventos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: ' Marco de trabajo de eventos (Common Data Service) | Microsoft Docs'
 description: Describe el marco de trabajo de eventos y los desarrolladores de información deben saber cuándo utilizarlo.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -34,7 +34,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 -->
 
-La capacidad de ampliar el comportamiento predeterminado de Common Data Service para aplicaciones depende de detectar cuándo se producen eventos en el servidor. El *marco de trabajo de eventos* proporciona la capacidad de registrar el código personalizado para que se ejecute en respuesta a eventos específicos. 
+La capacidad de ampliar el comportamiento predeterminado de Common Data Service depende de detectar cuándo se producen eventos en el servidor. El *marco de trabajo de eventos* proporciona la capacidad de registrar el código personalizado para que se ejecute en respuesta a eventos específicos. 
 
 Todas las funcionalidades de ampliar el comportamiento predeterminado de la plataforma dependen del marco de trabajo de eventos. Cuando se configura un flujo de trabajo para responder a un evento usando el diseñador de flujo de trabajo sin necesidad de escribir código, el evento lo proporciona el marco de trabajo de eventos. 
 
@@ -50,7 +50,7 @@ Para aprovechar el marco de trabajo de eventos para las extensiones personalizad
 
 ## <a name="available-events"></a>Eventos disponibles
 
-Como se describe en [Uso de mensajes con el servicio de la organización](org-service/use-messages.md), las operaciones de datos en la plataforma de CDS for Apps se basan en los mensajes y cada mensaje tiene un nombre. Hay mensajes , `Create`, `Retrieve`, `RetrieveMultiple`, `Update`, `Delete`, `Associate` y `Disassociate` que satisfacen las operaciones de datos principales que se producen con las entidades. Hay también mensajes especializados para operaciones más complejas. Las acciones personalizadas agregan nuevos mensajes.
+Como se describe en [Uso de mensajes con el servicio de la organización](org-service/use-messages.md), las operaciones de datos en la plataforma de Common Data Service se basan en los mensajes y cada mensaje tiene un nombre. Hay mensajes , `Create`, `Retrieve`, `RetrieveMultiple`, `Update`, `Delete`, `Associate` y `Disassociate` que satisfacen las operaciones de datos principales que se producen con las entidades. Hay también mensajes especializados para operaciones más complejas. Las acciones personalizadas agregan nuevos mensajes.
 
 Cuando se usa la herramienta de registro de complementos para asociar una extensión con un mensaje en particular, lo registrará como *paso*. La captura de pantalla siguiente es el cuadro de diálogo **Registrar nuevo paso** utilizado al registrar un complemento.
 

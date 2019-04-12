@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: conexiones de la consulta por los roles recíprocos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: conexiones de la consulta por los roles recíprocos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear las conexiones de consulta con roles recíprocos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>Ejemplo: consultar conexiones por roles recíprocos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
 Este ejemplo muestra cómo crear roles coincidentes y después encontrar un rol coincidente para un rol determinado. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryByReciprocalRole).
 

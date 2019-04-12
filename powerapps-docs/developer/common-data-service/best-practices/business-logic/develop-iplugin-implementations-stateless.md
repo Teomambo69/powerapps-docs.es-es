@@ -189,7 +189,7 @@ Los miembros de sólo lectura, estáticos y constantes son intrínsecamente segu
 
 ## <a name="additional-information"></a>Información adicional
 
-Después de Common Data Service para aplicaciones cree una instancia de la clase del complemento, la plataforma almacena en memoria caché esa instancia del complemento por razones de rendimiento. La plataforma administra el tiempo en que la instancia del complemento se retiene en memoria caché.  Algunas operaciones, como cambiar las propiedades de registro del complemento, desencadenarán una notificación para la plataforma de actualizar la memoria caché.  En estos escenarios, el complemento se reinicializará.
+Después de Common Data Service cree una instancia de la clase del complemento, la plataforma almacena en memoria caché esa instancia del complemento por razones de rendimiento. La plataforma administra el tiempo en que la instancia del complemento se retiene en memoria caché.  Algunas operaciones, como cambiar las propiedades de registro del complemento, desencadenarán una notificación para la plataforma de actualizar la memoria caché.  En estos escenarios, el complemento se reinicializará.
 
 Puesto que la plataforma almacena en caché instancias de la clase del complemento, no se llama al constructor para cada invocación de ejecución de complemento.  Por este motivo, las implementaciones de IPlugin no deberían depender de la temporización de las operaciones en el constructor aparte de la obtención de datos de configuración estáticos. 
 

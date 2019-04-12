@@ -1,5 +1,5 @@
 ---
-title: Aplicar SLA a entidades (Common Data Service para aplicaciones) | Microsoft Docs
+title: Aplicar SLA a entidades (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo aplicar SLA a entidades personalizadas habilitando entidades para aplicar los SLA. También puede crear KPI de SLA.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="apply-slas-to-entities"></a>Aplicar SLA a entidades
 
-Los contratos de nivel de servicio (SLA) de Common Data Service para aplicaciones ayudan a definir el nivel de servicio o de soporte que su organización acuerda proporcionar a un cliente incluidos los elementos para definir métricas o indicadores clave de rendimiento (KPI) para lograr el nivel de servicio. Puede aplicar SLA a entidades personalizadas y las siguientes entidades del sistema:  
+Los contratos de nivel de servicio (SLA) de Common Data Service ayudan a definir el nivel de servicio o de soporte que su organización acuerda proporcionar a un cliente incluidos los elementos para definir métricas o indicadores clave de rendimiento (KPI) para lograr el nivel de servicio. Puede aplicar SLA a entidades personalizadas y las siguientes entidades del sistema:  
   
 -   Todas las entidades de actividad (como Correo electrónico, Tarea, y Cita) salvo las citas periódicas (RecurringAppointmentMaster)  
   
@@ -57,7 +57,7 @@ Los contratos de nivel de servicio (SLA) de Common Data Service para aplicacione
    
 ## <a name="apply-slas-to-entity-records"></a>Aplicar SLAs a registros de entidad  
 
- Mediante el cliente web de CDS for Apps puede crear SLAs para una entidad habilitada para SLA y establecer un SLA como predeterminado para la entidad para que se aplique automáticamente a los nuevos registros de entidad.  
+ Mediante el cliente web de Common Data Service puede crear SLAs para una entidad habilitada para SLA y establecer un SLA como predeterminado para la entidad para que se aplique automáticamente a los nuevos registros de entidad.  
   
  Sin embargo, si desea aplicar manualmente SLA a registros de entidad basados en cualquier requisito personalizado de negocio, puede actualizar mediante programación el registro de la entidad para establecer el valor del atributo `SLAId` con el registro de SLA activo que desee.  
   
@@ -65,7 +65,7 @@ Los contratos de nivel de servicio (SLA) de Common Data Service para aplicacione
 
 ## <a name="limitations-to-applying-slas-in-dynamics-365-online"></a>Limitaciones a la aplicación de SLA en Dynamics 365 (online)  
 
- En CDS for Apps, las limitaciones siguientes son aplicables para SLAs por cada instancia de CDS for Apps (organización):  
+ En Common Data Service, las siguientes limitaciones son aplicables para SLA por cada instancia (organización) de Common Data Service:  
   
 -   Puede tener un máximo de 7 entidades que pueden tener SLAs activos. Se mostrará un error al activar un SLA si se supera el límite.  
   

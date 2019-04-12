@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Vincular atributos personalizados entre series e instancias (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Vincular atributos personalizados entre series e instancias (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo vincular atributos personalizados entre series e instancias.
 ms.custom: ''
 ms.date: 10/31/2018

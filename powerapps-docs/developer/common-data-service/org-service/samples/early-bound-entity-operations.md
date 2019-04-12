@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: crear, actualizar el enlace en tiempo de compilación de registros relacionados (Common Data Service para las aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: crear, actualizar el enlace en tiempo de compilación de registros relacionados (Common Data Service) | Microsoft Docs'
 description: 'En este ejemplo se muestra cómo crear, recuperar, actualizar y eliminar operaciones en una cuenta mediante la clase enlazada en tiempo de compilación. '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ show deep insert equivalent
 
 sample-initialize-record-existing-record.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
 
 -->
 

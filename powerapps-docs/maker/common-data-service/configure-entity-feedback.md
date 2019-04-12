@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo habilitar comentarios para una ent
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,8 @@ Edite la entidad para habilitar **Comentarios**. Más información: [Editar una 
 
 De forma predeterminada, los usuarios deben ir a la lista de registros asociados del registro al que desee agregar comentarios. Para facilitar que los usuarios agreguen comentarios, es posible que desee agregar una subcuadrícula de comentarios al formulario de la entidad para la que habilita comentarios.  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> Más información:  [Información general sobre las propiedades de subcuadrícula](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->
+Más información:  [Información general sobre las propiedades de subcuadrícula](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>Agregar un campo consolidado al formulario de entidad para mostrar las clasificaciones  
 

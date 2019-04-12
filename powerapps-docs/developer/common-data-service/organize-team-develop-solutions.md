@@ -1,5 +1,5 @@
 ---
-title: Organizar su equipo para desarrollar soluciones (Common Data Service para aplicaciones) | Microsoft Docs
+title: Organizar su equipo para desarrollar soluciones (Common Data Service) | Microsoft Docs
 description: En este documento se enumeran algunas estrategias que se pueden usar cuando varios desarrolladores trabajan en la misma solución
 ms.custom: ''
 ms.date: 10/31/2018
@@ -40,11 +40,11 @@ Cuando varios desarrolladores tienen que trabajar en la misma solución, puede q
 <a name="BKMK_OneOrgPerDev"></a>   
 ### <a name="one-organization-per-developer"></a>Una organización por desarrollador  
 
- Cada desarrollador puede trabajar en su propia organización. Para comprobar sus cambios en CDS para aplicaciones, deben exportar su solución como solución no administrada. La solución de la organización de cada desarrollador se importa a continuación a una solución maestra. Use la solución maestra para exportar la solución administrada.  
+ Cada desarrollador puede trabajar en su propia organización. Para comprobar sus cambios en Common Data Service, deben exportar su solución como solución no administrada. La solución de la organización de cada desarrollador se importa a continuación a una solución maestra. Use la solución maestra para exportar la solución administrada.  
   
 <a name="BKMK_DeployingSolutionsFromDevThroughToProduction"></a>   
 ## <a name="deploy-solutions-from-development-through-test-and-production-environments"></a>Implementar soluciones desde el desarrollo a través de los entornos de producción y prueba  
- En organizaciones de desarrollo, las soluciones se implementan en los diferentes entornos de prueba y de ensayo para análisis antes de que se implementan en un entorno de producción. En las notas del producto [Implementar soluciones de Microsoft Dynamics CRM 2011 y CRM Online desde desarrollo a través de entornos de prueba y producción](http://go.microsoft.com/fwlink/p/?LinkId=232288) se explora cómo implementar soluciones de Dynamics 365 en escenarios reales en entornos de prueba y producción de formas confiables y repetibles usando la automatización. El documento también resalta las restricciones específicas que existen cuando implementa y prueba las soluciones en CDS para aplicaciones.  
+ En organizaciones de desarrollo, las soluciones se implementan en los diferentes entornos de prueba y de ensayo para análisis antes de que se implementan en un entorno de producción. En las notas del producto [Implementar soluciones de Microsoft Dynamics CRM 2011 y CRM Online desde desarrollo a través de entornos de prueba y producción](http://go.microsoft.com/fwlink/p/?LinkId=232288) se explora cómo implementar soluciones de Dynamics 365 en escenarios reales en entornos de prueba y producción de formas confiables y repetibles usando la automatización. El documento también resalta las restricciones específicas que existen cuando implementa y prueba las soluciones en Common Data Service.  
   
 ### <a name="see-also"></a>Vea también  
  [Planificación del desarrollo de soluciones](/dynamics365/customer-engagement/developer/plan-solution-development)   

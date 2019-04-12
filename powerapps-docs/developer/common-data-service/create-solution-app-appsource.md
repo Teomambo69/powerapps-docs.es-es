@@ -1,5 +1,5 @@
 ---
-title: 'Paso 3: Crear una solución administrada para la aplicación (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Paso 3: Crear una solución administrada para la aplicación (Common Data Service) | Microsoft Docs'
 description: Obtenga información sobre cómo crear una solución administrada para incluir todos los componentes de su aplicación. Esto es necesario para publicar una aplicación en Appsource.
 ms.custom: ''
 ms.date: 10/31/2018

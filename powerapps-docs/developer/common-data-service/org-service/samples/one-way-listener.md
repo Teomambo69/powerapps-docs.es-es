@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: escucha unidireccional (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: escucha unidireccional (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo la aplicación registra un complemento de servicio remoto que se ejecuta cada vez que un mensaje se publica en un extremo unidireccional.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-one-way-listener"></a>Ejemplo: módulo de escucha unidireccional
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-one-way-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-one-way-listener -->
 
 Este ejemplo muestra cómo escribir un escucha de `Azure Service Bus` para un contrato de extremo unidireccional. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OneWayListeners).
 

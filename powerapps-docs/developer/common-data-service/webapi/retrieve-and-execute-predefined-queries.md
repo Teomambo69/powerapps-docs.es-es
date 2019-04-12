@@ -1,10 +1,10 @@
 ---
-title: Recuperar y ejecutar consultas predefinidas (Common Data Service para aplicaciones)| Microsoft Docs
-description: Common Data Service para aplicaciones proporciona una forma de que los administradores creen vistas del sistema que están disponibles para todos los usuarios. Lea cómo puede crear una consulta predefinida y usar FetchXML para crear una cadena de consulta para recuperar datos
+title: Recuperar y ejecutar consultas predefinidas (Common Data Service)| Microsoft Docs
+description: Common Data Service proporciona una forma de que los administradores creen vistas del sistema que están disponibles para todos los usuarios. Lea cómo puede crear una consulta predefinida y usar FetchXML para crear una cadena de consulta para recuperar datos
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,13 +24,13 @@ search.app:
 
 # <a name="retrieve-and-execute-predefined-queries"></a>Recuperar y ejecutar consultas predefinidas
 
-Common Data Service (CDS) para aplicaciones proporciona una forma de que los administradores creen vistas del sistema que están disponibles para todos los usuarios. Los usuarios individuales pueden guardar consultas de búsqueda avanzada para su reutilización en la aplicación. Ambas representan consultas predefinidas que puede recuperar y ejecutar utilizando la API web. También puede redactar una consulta utilizando FetchXml y usarla para recuperar datos.
+Common Data Service proporciona una forma de que los administradores creen vistas del sistema que están disponibles para todos los usuarios. Los usuarios individuales pueden guardar consultas de búsqueda avanzada para su reutilización en la aplicación. Ambas representan consultas predefinidas que puede recuperar y ejecutar utilizando la API web. También puede redactar una consulta utilizando FetchXml y usarla para recuperar datos.
 
 <a name="bkmk_predefinedQueries"></a>
 
 ## <a name="predefined-queries"></a>Consultas predefinidas
 
-Common Data Service para aplicaciones permite definir, guardar, y ejecutar dos tipos de consultas que se muestran aquí.
+Common Data Service permite definir, guardar, y ejecutar dos tipos de consultas que se muestran aquí.
 
 |Tipo de consulta|Descripción|
 |----------------|-----------------|

@@ -3,7 +3,7 @@ title: Cambiar la combinación de colores o agregar un logotipo para que coincid
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -116,7 +116,7 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
 ### <a name="theme-contrast"></a>Contraste de temas  
  Se recomienda el siguiente método para proporcionar colores de contraste:  
   
--   Elija cuidadosamente los colores de contraste. El tema predeterminado predefinido de Common Data Service para aplicaciones tiene los coeficientes de contraste correctos para asegurar una facilidad de uso óptima. Use coeficientes similares para los nuevos temas.  
+-   Elija cuidadosamente los colores de contraste. El tema predeterminado predefinido de Common Data Service tiene los coeficientes de contraste correctos para asegurar una facilidad de uso óptima. Use coeficientes similares para los nuevos temas.  
   
 -   Para el modo de contraste alto, use la configuración predeterminada de colores.  
   

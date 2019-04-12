@@ -1,5 +1,5 @@
 ---
-title: Use la clase FilterExpression (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar la clase FilterExpression (Common Data Service) | Microsoft Docs
 description: Conozca cómo puede utilizar la clase FilterExpression para crear una consulta que exprese múltiples condiciones
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-filterexpression-class"></a>Usar la clase FilterExpression
 
-En Common Data Service para aplicaciones, puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> para crear una consulta que exprese varias condiciones. Por ejemplo, puede crear una expresión de consulta que sea equivalente a una instrucción SQL como `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'`.  
+En Common Data Service, puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> para crear una consulta que exprese varias condiciones. Por ejemplo, puede crear una expresión de consulta que sea equivalente a una instrucción SQL como `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'`.  
   
  La tabla siguiente enumera las propiedades de la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   

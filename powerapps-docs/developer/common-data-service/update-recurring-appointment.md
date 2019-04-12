@@ -1,5 +1,5 @@
 ---
-title: Actualizar una cita periódica (Common Data Service para aplicaciones) | Microsoft Docs
+title: Actualizar una cita periódica (Common Data Service) | Microsoft Docs
 description: Actualice una serie de citas recurrentes utilizando el método IOrganizationService.Entity o el mensaje UpdateRequest en la entidad RecurringAppointmentMaster.
 ms.custom: ''
 ms.date: 10/31/2018

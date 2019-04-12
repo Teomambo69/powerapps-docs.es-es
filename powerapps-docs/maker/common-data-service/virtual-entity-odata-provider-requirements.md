@@ -1,9 +1,9 @@
 ---
-title: Usar el proveedor de datos de OData v4 de la entidad virtual con Common Data Service for Apps | MicrosoftDocs
+title: Usar el proveedor de datos de OData v4 de la entidad virtual con Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -28,16 +28,16 @@ En este tema se describe cómo configurar el proveedor de datos de OData v4 así
 
 ## <a name="odata-v4-data-provider-best-practices"></a>Prácticas recomendadas del proveedor de datos de OData v4
 
-- Common Data Service for Apps requiere que todas las entidades tengan un atributo de id., este identificador es único y el valor debe ser un GUID.  Solo puede asignar los campos de id. a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en CDS for Apps.
--  Las entidades de OData que tengan propiedades con valores nulos se deben configurar para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de la entidad de OData con un valor nulo =False debe tener el campo asignado en el conjunto de atributos de **Requisitos de campo** de CDS for Apps como **Requerido por la empresa**. 
+- Common Data Service requiere que todas las entidades tengan un atributo de id., este identificador es único y el valor debe ser un GUID.  Solo puede asignar los campos de id. a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en Common Data Service.
+-  Las entidades de OData que tengan propiedades con valores nulos se deben configurar para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de la entidad de OData con un valor nulo =False debe tener el campo asignado en el conjunto de atributos de **Requisitos de campo** de Common Data Service como **Requerido por la empresa**. 
 - Para recuperar consultas múltiples como aquellas resultantes de cargar datos en una cuadrícula, debe controlar el tamaño del conjunto de datos devuelto desde el origen de datos externo; para ello, use los parámetros para seleccionar y filtrar la consulta.
 - Si no está habilitado, los administradores del sistema deben habilitar la opción de seguimiento de complementos. Una habilitada, todos los errores del extremo de OData se capturan en el registro de seguimiento de complementos. Más información: [Guía del administrador: Cuadro de diálogo Configuración del sistema - Pestaña Personalización](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
 
 ## <a name="data-type-mapping"></a>Asignaciones de tipos de datos
 
-En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Entity Data Model (EDM) con los tipos de datos de CDS for Apps. 
+En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Entity Data Model (EDM) con los tipos de datos de Common Data Service. 
 
-|Tipos de datos de OData|Tipos de datos de CDS for Apps  |
+|Tipos de datos de OData|Tipo de datos de Common Data Service  |
 |---------|---------|
 |`Edm.Boolean`|Dos opciones|
 |`Edm.DateTime`|Fecha y hora|
@@ -69,7 +69,7 @@ Este procedimiento muestra cómo usar el proveedor de datos de OData integrado c
 1. En la barra de herramientas Acciones, haga clic en **Nuevo**.  
 1. En el cuadro de diálogo **Seleccionar proveedor de datos**, seleccione uno de los siguientes orígenes de datos y, a continuación, haga clic en **Aceptar**.  
   
-    - **Proveedor de datos OData v4**. CDS for Apps incluye un proveedor de datos de Odata v4 que se puede usar para conectarse a los orígenes de datos que admiten el estándar abierto de OData v4.  
+    - **Proveedor de datos OData v4**. Common Data Service incluye un proveedor de datos de Odata v4 que se puede usar para conectarse a los orígenes de datos que admiten el estándar abierto de OData v4.  
     - *Personalice el proveedor de datos*. Si ha importado un complemento del proveedor de datos, el proveedor de datos aparecerá aquí. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
 1. En la página de propiedades **Nuevo origen de datos**, rellene los siguientes campos y, a continuación, guarde el registro.  

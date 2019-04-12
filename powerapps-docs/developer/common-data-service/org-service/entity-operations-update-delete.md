@@ -1,5 +1,5 @@
 ---
-title: Actualización y eliminación de entidades con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Actualización y eliminación de entidades con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Más información sobre cómo actualizar y eliminar entidades con el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,10 +20,10 @@ search.app:
 <!-- 
 Adding parity with Web API topics
 
-include information from https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
+include information from https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
 
 -->
 
@@ -146,7 +146,7 @@ var AccountTasksRelationship = new Relationship("Account_Tasks");
 //Update the account name
 account["name"] = "New Account name";
 
-//Update the email address for the primary contact of the the account
+//Update the email address for the primary contact of the account
 var contact = new Entity("contact");
 contact.Id = retrievedAccount.RelatedEntities[primaryContactRelationship]
 .Entities.FirstOrDefault().Id;
@@ -190,7 +190,7 @@ account.Id = retrievedAccount.Id;
 //Update the account
 account.Name = "New Account name";
 
-//Update the email address for the primary contact of the the account
+//Update the email address for the primary contact of the account
 account.account_primary_contact = new Contact
 { Id = retrievedAccount.PrimaryContactId.Id, EMailAddress1 = "someone_a@example.com" };
 
@@ -225,7 +225,7 @@ Para actualizar una entidad puede cambiar los valores para que el registro repre
 
 ## <a name="use-upsert"></a>Usar upsert
 
-Normalmente, en escenarios de integración de datos deberá crear o actualizar los datos en CDS for Apps desde otros orígenes. CDS for Apps puede tener ya registros con el mismo identificador único, que puede ser una clave alternativa. Si existe un registro de entidad, debe actualizarlo. Si no existe, debe crearlo para sincronizar los datos que se agregan con los datos de origen. Es cuando hay que usar upsert.
+Normalmente, en escenarios de integración de datos deberá crear o actualizar los datos en Common Data Service desde otros orígenes. Common Data Service puede tener ya registros con el mismo identificador único, que puede ser una clave alternativa. Si existe un registro de entidad, debe actualizarlo. Si no existe, debe crearlo para sincronizar los datos que se agregan con los datos de origen. Es cuando hay que usar upsert.
 
 El siguiente ejemplo usa <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> dos veces. La primera vez se crea el registro de la entidad cuenta, y la segunda vez que se actualiza porque tiene un valor `accountnumber` y hay una clave alternativa que está usando ese atributo.
 
@@ -358,7 +358,7 @@ Más información:
 
 ## <a name="legacy-update-messages"></a>Mensajes de actualización heredados
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update -->
 
 Hay varios mensajes especializados obsoletos que realizan operaciones de actualización. En versiones anteriores se requería usar estos mensajes, pero ahora las mismas operaciones deben realizarse con <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> o la clase <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> con <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>
 

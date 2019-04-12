@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar registros de uso compartido de campos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar registros de uso compartido de campos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar los registros de uso compartido de campo para una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>Ejemplo: recuperar los registros de uso compartido de campo
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
 
 Este ejemplo muestra cómo recuperar los registros de `PrincipalObjectAttributeAccess` (uso compartido de campo) para una entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldSharing).
 

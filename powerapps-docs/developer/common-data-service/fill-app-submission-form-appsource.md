@@ -1,5 +1,5 @@
 ---
-title: 'Paso 1: Rellenar el formulario de envío de la aplicación en AppSource (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Paso 1: Rellenar el formulario de envío de la aplicación en AppSource (Common Data Service) | Microsoft Docs'
 description: Aprenda a rellenar el formulario de envío de una aplicación en AppSource con el fin de proporcionar algunos detalles iniciales sobre su appApp.
 ms.custom: ''
 ms.date: 10/31/2018

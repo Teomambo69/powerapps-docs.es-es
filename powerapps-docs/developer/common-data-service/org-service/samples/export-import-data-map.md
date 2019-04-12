@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Exportación e importación de datos mediante la asignación de datos complejos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Exportación e importación de datos mediante la asignación de datos complejos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un mapa de datos y exportarlo
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-export-and-import-a-data-map"></a>Ejemplo: exportar e importar una asignación de datos
 
-Este ejemplo muestra cómo crear una asignación de importación (asignación de datos) en Common Data Service para aplicaciones, exportarla como datos con formato XML, importar las asignaciones modificadas y crear una nueva asignación de importación en CDS for Apps basada en las asignaciones importadas. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap).
+Este ejemplo muestra cómo crear una asignación de importación (asignación de datos) en Common Data Service, exportarla como datos con formato XML, importar las asignaciones modificadas y crear una nueva asignación de importación en Common Data Service basada en las asignaciones importadas. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

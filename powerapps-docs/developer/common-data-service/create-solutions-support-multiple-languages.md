@@ -1,5 +1,5 @@
 ---
-title: Creación de soluciones compatibles con varios idiomas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Creación de soluciones compatibles con varios idiomas (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-solutions-that-support-multiple-languages"></a>Crear soluciones que admitan varios idiomas
 
-Common Data Service para aplicaciones admite varios idiomas. Si desea que su solución se instale para organizaciones que incluyen distintos idiomas base o que disponen de varios idiomas aprovisionados, tenga esto en cuenta al planear su solución. En la siguiente tabla se enumeran tácticas para usar junto con los componentes de la solución para incluir en una solución que admita varios idiomas.  
+Common Data Service admite varios idiomas. Si desea que su solución se instale para organizaciones que incluyen distintos idiomas base o que disponen de varios idiomas aprovisionados, tenga esto en cuenta al planear su solución. En la siguiente tabla se enumeran tácticas para usar junto con los componentes de la solución para incluir en una solución que admita varios idiomas.  
   
 |Táctica|Tipo de componente de la solución|  
 |------------|-----------------------------|  
@@ -34,7 +34,7 @@ Common Data Service para aplicaciones admite varios idiomas. Si desea que su sol
  <a name="BKMK_Localizable_Web_Resources"></a>
 
  ## <a name="string-resx-web-resources"></a>Recursos web de cadena (RESX)
- Al añadir los recursos web de cadena (RESX) a CDS for Apps, los desarrolladores tienen una opción más eficaz para crear recursos web que admiten varios idiomas. Más información [Recursos web de cadenas (RESX)](/dynamics365/customer-engagement/developer/resx-web-resources).
+ Al añadir los recursos web de cadena (RESX) a Common Data Service, los desarrolladores tienen una opción más eficaz para crear recursos web que admiten varios idiomas. Más información [Recursos web de cadenas (RESX)](/dynamics365/customer-engagement/developer/resx-web-resources).
 
  Para versiones anteriores, vea [Opción de desarrollador](https://msdn.microsoft.com/library/hh670609(v=crm.8).aspx#BKMK_DeveloperOption)
   
@@ -73,7 +73,7 @@ Common Data Service para aplicaciones admite varios idiomas. Si desea que su sol
   
 4. En la hoja de cálculo, proporcione las traducciones correspondientes.  
   
-5. Vuelva a importar traducciones a la misma organización de CDS for Apps con la funcionalidad de "Importar traducciones" y publique sus cambios.  
+5. Vuelva a importar traducciones a la misma organización de Common Data Service con la funcionalidad de "Importar traducciones" y publique sus cambios.  
   
 6. La próxima vez que exporte la solución, contendrá todas las traducciones que haya proporcionado.  
   
@@ -112,9 +112,9 @@ Common Data Service para aplicaciones admite varios idiomas. Si desea que su sol
  Una vez importadas las traducciones, el texto personalizado aparece para los usuarios que trabajan en los idiomas a los que tradujo el texto.  
   
 > [!NOTE]
-> CDS for Apps no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
+> Common Data Service no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
   
- Puesto que solo se permite personalizar texto en el idioma base, puede trabajar en CDS for Apps con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de CDS for Apps. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
+ Puesto que sólo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
   
 <a name="BKMK_LocalizationInBaseLanguageStrings"></a>   
 
@@ -171,7 +171,7 @@ Common Data Service para aplicaciones admite varios idiomas. Si desea que su sol
   
 6. Mientras usa el idioma base de la organización se puede navegar al área **Soluciones** en **Configuración** y agregar el diálogo localizado como parte de una solución.  
   
-   El diálogo creado en el otro idioma se mostrará solo a los usuarios que ven CDS for Apps con ese idioma.  
+   El diálogo creado en el otro idioma se mostrará solo a los usuarios que ven Common Data Service con ese idioma.  
   
 <a name="BKMK_UseXMLWebResourcesAsLanguageResources"></a>   
 

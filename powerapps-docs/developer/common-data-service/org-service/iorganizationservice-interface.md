@@ -1,6 +1,6 @@
 ---
-title: Interfaz IOrganizationService (Common Data Service para aplicaciones) | Microsoft Docs
-description: Obtenga más información sobre los métodos comunes expuestos para realizar operaciones de datos con CDS for Apps.
+title: Interfaz IOrganizationService (Common Data Service) | Microsoft Docs
+description: Obtenga más información sobre los métodos comunes expuestos para realizar operaciones de datos con Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

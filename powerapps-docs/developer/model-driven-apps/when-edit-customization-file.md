@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="when-to-edit-the-customizations-file"></a>Cuándo modificar el archivo de personalizaciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
 
 El archivo customizations.xml que se exporta como parte de una solución no administrada se puede editar para realizar tareas específicas de personalización. Después de modificar el archivo puede comprimir el archivo editado así como los demás archivos exportados en la solución no administrada. Aplique los cambios importando esa solución modificada no administrada.  
   
@@ -48,7 +48,7 @@ El archivo customizations.xml que se exporta como parte de una solución no admi
  Las definiciones de vistas para entidades se incluyen en el archivo customizations.xml y se pueden editar manualmente. El editor de vistas de la aplicación es la herramienta más utilizada para este fin. La edición del archivo customizations.xml es un método alternativo. Para obtener más información: consulte [Personalizar vistas de entidad](customize-entity-views.md).  
   
  **Editar el archivo ISV.config**  
-  En CDS para aplicaciones, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
+  Para Common Data Service, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
   
 ## <a name="unsupported-tasks"></a>Tareas no compatibles  
  La definición de otros componentes de la solución editando el archivo customizations.xml exportado no se admite. Esto incluye lo siguiente:  

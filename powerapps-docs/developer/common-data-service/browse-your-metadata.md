@@ -1,5 +1,5 @@
 ---
-title: Examinar los metadatos de la organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Examinar los metadatos de la organización (Common Data Service) | Microsoft Docs
 description: Use el explorador de metadatos de la entidad para ver las entidades y sus propiedades en Dynamics 365 Customer Engagement. El Explorador de metadatos de la entidad es una solución administrada que puede descargar e instalar en su organización.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,17 +17,17 @@ search.app:
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>Examinar los metadatos del entorno
 
-Use el explorador de metadatos de la entidad para ver las entidades y sus propiedades en Common Data Service para aplicaciones. El Explorador de metadatos de la entidad es una solución administrada que puede descargar mediante los vínculos siguientes.
+Use el explorador de metadatos de la entidad para ver las entidades y sus propiedades en Common Data Service. El Explorador de metadatos de la entidad es una solución administrada que puede descargar mediante los vínculos siguientes.
 
 
 |                                                                                               Versión                                                                                                |                                                                                     Download                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Common Data Service para aplicaciones | [Descargas de Microsoft: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
+| Common Data Service | [Descargas de Microsoft: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
 
 Después de descargar la solución, debe instalarla. Para obtener información sobre cómo instalar una solución administrada, consulte [Importar, actualizar, y exportar soluciones](/dynamics365/customer-engagement/developer/customize/import-update-export-solutions).  
 
 ## <a name="open-as-an-app"></a>Abrir como aplicación
-CDS for Apps está configurada como aplicación. Después de instalar la solución **Examinador de metadatos de la entidad**, busque la aplicación **Metadata Tools** y ábralo. **Entidades** es la vista predeterminada. En el área de navegación **Herramientas**, puede seleccionar **Metadatos de la entidad** para inspeccionar las entidades individuales.
+Common Data Service se configura como aplicación. Después de instalar la solución **Examinador de metadatos de la entidad**, busque la aplicación **Metadata Tools** y ábralo. **Entidades** es la vista predeterminada. En el área de navegación **Herramientas**, puede seleccionar **Metadatos de la entidad** para inspeccionar las entidades individuales.
 
 ## <a name="open-from-the-solution-configuration-page"></a>Abrir desde la página de configuración de la solución
 Para versiones anteriores debe usar los siguientes pasos, pero también funcionan para la última versión.  
@@ -80,13 +80,13 @@ Puede realizar las siguientes acciones para una sola entidad:
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**Explorador de metadatos** es una herramienta desarrollada por la comunidad de XrmToolbox para CDS for Apps. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
+**Explorador de metadatos** es una herramienta desarrollada por Comunidad XrmToolbox para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de CDS for Apps y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
+> Las herramientas de la comunidad no son un producto de Common Data Service y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Vea también
 
- [Herramientas de desarrollador para CDS for Apps](developer-tools.md)<br />
+ [Herramientas para desarrolladores de Common Data Service](developer-tools.md)<br />
  [Personalizar metadatos de entidad](customize-entity-metadata.md)<br />
  

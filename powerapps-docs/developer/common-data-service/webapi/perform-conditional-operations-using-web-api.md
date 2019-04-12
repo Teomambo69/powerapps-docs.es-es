@@ -1,10 +1,10 @@
 ---
-title: Realizar operaciones condicionales utilizando la API web (Common Data Service para aplicaciones)| Microsoft Docs
+title: Realizar operaciones condicionales utilizando la API web (Common Data Service)| Microsoft Docs
 description: Aprenda a crear condiciones que decidan si y cómo realizar ciertas operaciones mediante la API web
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Realizar operaciones condicionales mediante la API web
 
-CDS para aplicaciones ofrece compatibilidad con un conjunto de operaciones condicionales que dependen del mecanismo de control de versiones de recursos HTTP estándar conocido como *ETags*.  
+Common Data Service ofrece compatibilidad para un conjunto de operaciones condicionales que dependen del mecanismo de control de versiones de recursos HTTP estándar, conocido como *ETags*.  
   
 <a name="bkmk_ETags"></a>
   
@@ -31,13 +31,13 @@ CDS para aplicaciones ofrece compatibilidad con un conjunto de operaciones condi
 
 El protocolo HTTP define una *etiqueta de entidad* o [ETag](https://msdn.microsoft.com/en-us/library/dd541486.aspx) en el término abreviado, para identificar versiones específicas de un recurso. Las ETags son identificadores opacos cuyos valores exactos dependen de la implementación. Los valores de ETag se producen en dos variedades: validación segura y débil. La validación segura indica que un recurso único, identificado mediante un URI específico, será idéntico en el nivel binario si su valor de ETag correspondiente no se modifica. La validación débil solo garantiza que la representación del recurso equivale semánticamente al mismo valor de ETag.  
   
-Common Data Service para aplicaciones genera una propiedad `@odata.etag` de validación débil para todas las instancias de entidad y esta propiedad se devuelve automáticamente con cada registro de entidad recuperado. Para obtener más información, consulte [Recuperar una entidad usando la API web](retrieve-entity-using-web-api.md).  
+Common Data Service genera una propiedad `@odata.etag` de validación débil para todas las instancias de entidad y esta propiedad se devuelve automáticamente con cada registro de entidad recuperado. Para obtener más información, consulte [Recuperar una entidad usando la API web](retrieve-entity-using-web-api.md).  
   
 <a name="bkmk_ifMatchHeaders"></a>
  
 ## <a name="if-match-and-if-none-match-headers"></a>Encabezados If-Match e If-None-Match
 
-Use los encabezados [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) e [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) con valores ETag para comprobar si la versión actual de un recurso coincide con la recuperada por última vez, coincide con cualquier versión anterior o no coincide con ninguna versión.  Estas comparaciones conforman la base de la compatibilidad de operaciones condicional. Common Data Service para aplicaciones proporciona ETags para admitir las recuperaciones condicionales, la simultaneidad optimista y las operaciones upsert limitadas.
+Use los encabezados [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) e [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) con valores ETag para comprobar si la versión actual de un recurso coincide con la recuperada por última vez, coincide con cualquier versión anterior o no coincide con ninguna versión.  Estas comparaciones conforman la base de la compatibilidad de operaciones condicional. Common Data Service proporciona ETags para admitir las recuperaciones condicionales, la simultaneidad optimista y las operaciones upsert limitadas.
  
 Las consultas que expanden propiedades de navegación valorada como colección pueden devolver datos en caché para las propiedades que no reflejan cambios recientes. Se recomienda usar el encabezado `If-None-Match` con valor `null` para reemplazar el almacenamiento en la memoria caché del explorador. Consulte [Encabezados HTTP](compose-http-requests-handle-errors.md#bkmk_headers) para obtener más información. Utilice el encabezado `If-None-Match` con un valor ETag específico para asegurarse de que solo se devuelven los datos modificados.
   

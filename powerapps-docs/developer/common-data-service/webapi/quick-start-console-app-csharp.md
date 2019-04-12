@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Ejemplo de web API (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
-description: 'Este ejemplo muestra cómo autenticarse con un servidor Common Data Service para aplicaciones y luego llamar a una operación básica de API Web, la función WhoAmI.'
+title: 'Tutorial: Ejemplo de web API (C#) (Common Data Service) | Microsoft Docs'
+description: 'Este ejemplo muestra cómo autenticarse con un servidor Common Data Service y luego llamar a una operación básica de API Web, la función WhoAmI.'
 ms.custom: ''
 ms.date: 02/02/2019
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-web-api-sample-c"></a>Tutorial: Ejemplo de API Web (C#)
 
-En este tutorial creará una aplicación de consola básica para conectarse al entorno de Common Data Service para aplicaciones usando la API web. 
+En este tutorial creará una aplicación de consola básica para conectarse al entorno de Common Data Service usando la API web. 
 
 Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una solicitud `GET` al <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> y la respuesta será un <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" />. Se mostrará el valor de propiedad `UserId`.
 
@@ -28,10 +28,10 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
 
  - Visual Studio (2017 recomendado)
  - Conexión a Internet
- - Una cuenta de usuario válida para la estancia de Common Data Service para aplicaciones
+ - Una cuenta de usuario válida para la estancia de Common Data Service
     - Su nombre de usuario
     - Su contraseña
- - Dirección URL a CDS del entorno de aplicaciones con el que quiere conectarse
+ - Dirección URL al entorno de aplicaciones Common Data Service con el que quiere conectarse
  - Comprensión básica de lenguaje Visual C#
 
 > [!NOTE]

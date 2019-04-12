@@ -1,10 +1,10 @@
 ---
-title: Herramientas de descarga desde NuGet (Common Data Service para aplicciones) | Microsoft Docs
+title: Herramientas de descarga desde NuGet (Common Data Service) | Microsoft Docs
 description: 'Descargue el registro de complementos, la implementación de paquetes y otras herramientas principales de Nuget.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

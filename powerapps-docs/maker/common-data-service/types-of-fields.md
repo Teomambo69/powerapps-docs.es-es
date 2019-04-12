@@ -1,9 +1,9 @@
 ---
-title: Tipos de datos de campos en Common Data Service for Apps | MicrosoftDocs
+title: Tipos de datos de campos en Common Data Service | MicrosoftDocs
 description: Comprender los distintos tipos de datos de campos disponibles para su aplicación
 keywords: ''
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -58,8 +58,8 @@ Los nombres usados para los tipos dependen del diseñador usado. [Portal de Powe
 |**Número entero**|**Número entero**<br />Formato de *Ninguno*|`IntegerType`|
 
 Para obtener más descripciones para cada tipo que puede agregar o editar, consulte el tema sobre el diseñador correspondiente:
- - [Crear y editar campos para Common Data Service for Apps usando el portal de PowerApps: Tipos de datos de campos](create-edit-field-portal.md#field-data-types)
- - [Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps: Tipos de datos de campos](create-edit-field-solution-explorer.md#field-data-types)
+ - [Crear y editar campos para Common Data Service usando el portal de PowerApps: Tipos de datos de campos](create-edit-field-portal.md#field-data-types)
+ - [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps: Tipos de datos de campos](create-edit-field-solution-explorer.md#field-data-types)
 
 Para obtener más información acerca de cómo se definen los tipos de datos de campos en la API, consulte [Metadatos de atributos](/powerapps/developer/common-data-service/entity-attribute-metadata)
 

@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-actions"></a>Definir acciones de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
 
 Defina las acciones que se deben realizar mediante una barra de comandos o control de la cinta de opciones en un elemento de `<CommandDefinition>` junto con las reglas que supervisan si el control está habilitado o está visibles en la cinta de opciones.  
   

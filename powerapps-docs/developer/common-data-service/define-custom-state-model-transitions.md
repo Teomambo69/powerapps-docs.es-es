@@ -1,5 +1,5 @@
 ---
-title: Definir transiciones de modelos de estados personalizados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Definir transiciones de modelos de estados personalizados (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre la definición de las transiciones de modelos de estado personalizados para la entidad Incidente (caso) o entidades personalizadas.
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,10 +1,10 @@
 ---
 title: Definir claves alternativas con el explorador de soluciones | MicrosoftDocs
-description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a los registros de Common Data Service for Apps usando el explorador de soluciones
+description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a los registros de Common Data Service usando el explorador de soluciones
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="define-alternate-keys-using-solution-explorer"></a>Definir claves alternativas con el explorador de soluciones
+# <a name="define-alternate-keys-using-solution-explorer"></a>Definir las claves alternativas con el explorador de soluciones
 
-El explorador de soluciones proporciona una forma de ver y crear claves alternativas para Common Data Service for Apps.
+El explorador de soluciones proporciona una forma de ver y crear claves alternativas para Common Data Service.
 
 El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Definir claves alternativas para hacer referencia a registros](define-alternate-keys-reference-records.md)<br />

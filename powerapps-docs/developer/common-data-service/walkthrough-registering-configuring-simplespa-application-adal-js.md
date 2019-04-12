@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Registrar y configurar aplicación SimpleSPA con adal.js (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Registrar y configurar aplicación SimpleSPA con adal.js (Common Data Service) | Microsoft Docs'
 description: En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Dynamics 365 Customer Engagement usando adal.js y Uso compartido de recursos de origen cruzado (CORS).
 keywords: ''
 ms.date: 02/12/2019
@@ -22,11 +22,11 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 
-En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service para aplicaciones usando adal.js y Uso compartido de recursos de origen cruzado (CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Dynamics 365 (online)](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
+En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado (CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Dynamics 365 (online)](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
-- CDS para las aplicaciones de PowerApps  
+- PowerApps Common Data Service  
   
 - Debe tener una cuenta de usuario del sistema de Dynamics 365 (online) con el rol administrador para Office 365.  
   
@@ -38,7 +38,7 @@ En este tutorial se describe el proceso para registrar y configurar la Aplicaci�
 
 ## <a name="goal-of-this-walkthrough"></a>Objetivo de este tutorial
 
-Al completar este tutorial podrá ejecutar una aplicación SPA sencilla en Visual Studio que proporcione la capacidad para que un usuario se autentique y recupere datos de CDS para aplicaciones. Esta aplicación consta de una página HTML de ejemplo.  
+Al completar este tutorial podrá ejecutar una aplicación SPA sencilla en Visual Studio que proporcione la capacidad para que un usuario se autentique y recupere datos de Common Data Service. Esta aplicación consta de una página HTML de ejemplo.  
 
 Cuando se depura la aplicación inicialmente solo habrá un botón **Iniciar sesión**.  
 
@@ -46,12 +46,12 @@ Haga clic en **Iniciar sesión** y pasará a una página de inicio de sesión pa
 
 Tras escribir sus credenciales volverá a la página HTML donde encontrará que el botón **Iniciar sesión** está oculto y un botón **Cerrar sesión** y **Obtener cuentas** están visibles. También verá un saludo con información de su cuenta de usuario.  
 
-Haga clic en el botón **Obtener cuentas** para recuperar 10 registros de cuenta de su organización de CDS para aplicaciones. El botón **Obtener cuentas** está deshabilitado como se muestra en la captura de pantalla siguiente:  
+Haga clic en el botón **Obtener cuentas** para recuperar 10 registros de cuenta de su organización de Common Data Service. El botón **Obtener cuentas** está deshabilitado como se muestra en la captura de pantalla siguiente:  
   
 ![La página SimpleSPA](media/simple-spa.png "La página SimpleSPA")  
 
 > [!NOTE]
->  La carga inicial de datos de CDS para aplicaciones puede ser lenta mientras se realizan las operaciones para permitir la autenticación, pero las operaciones posteriores son mucho más rápidas.  
+>  La carga inicial de datos de Common Data Service puede ser lenta mientras se realizan las operaciones para permitir la autenticación, pero las operaciones posteriores son mucho más rápidas.  
 
 Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la sesión.  
 
@@ -79,7 +79,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
       "use strict";  
   
       //Set these variables to match your environment  
-      var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your CDS for Apps organization  
+      var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your Common Data Service organization  
       var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
       var clientId = "[client id]"; //The ClientId you got when you registered the application  
       var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
@@ -279,7 +279,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
     ```javascript  
     //Set these variables to match your environment  
-    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps CDS for Apps  
+    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps Common Data Service  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
     var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
@@ -288,9 +288,9 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
 ## <a name="register-the-application"></a>Registrar la aplicación  
   
-1.  [Iniciar sesión](https://portal.azure.com) en el portal de administración de Azure con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Office 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
+1.  [Iniciar sesión](https://portal.azure.com) en el portal de administración de Azure con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Microsoft 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
   
-     Si no tiene un inquilino de Azure (cuenta) o tiene una pero su suscripción a Office 365 con CDS para aplicaciones no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.  
+     Si no tiene un inquilino de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.  
   
      Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
   
@@ -379,4 +379,4 @@ Si no obtiene los resultados deseados, compruebe dos veces los valores que estab
  [Crear aplicaciones cliente](connect-cds.md)<br />
  [Tutorial: Registrar una aplicación con Azure Active Directory](walkthrough-register-app-azure-active-directory.md) <br />
  [Crear aplicaciones web mediante autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md)<br />
- [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a CDS para aplicaciones](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+ [Usar OAuth con Uso compartido de recursos de origen cruzado para conectar una aplicación de una sola página a Common Data Service](oauth-cross-origin-resource-sharing-connect-single-page-application.md)

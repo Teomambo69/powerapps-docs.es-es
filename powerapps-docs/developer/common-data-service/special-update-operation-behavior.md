@@ -1,5 +1,5 @@
 ---
-title: Comportamiento de operaciones de actualización especializadas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Comportamiento de operaciones de actualización especializadas (Common Data Service) | Microsoft Docs
 description: Describe el comportamiento especial en complementos y flujos de trabajo para eventos de actualización debido a mensajes obsoletos.
 ms.custom: ''
 ms.date: 10/31/2018

@@ -37,7 +37,7 @@ Cuando se desarrollan los ensamblados personalizados, se deben tener en cuenta a
     - Mayor complejidad del mantenimiento
     - Incremento potencial de la duración de la ejecución de los complementos
 
-2. El límite de tamaño de un ensamblado de espacio aislado es 16 MB en Common Data Service para aplicaciones.
+2. El límite de tamaño de un ensamblado de espacio aislado es 16 MB en Common Data Service.
 
 <a name='guidance'></a>
 
@@ -48,11 +48,11 @@ Cuando se desarrollan los ensamblados personalizados, se deben tener en cuenta a
 
 ### <a name="consolidate-plug-ins-or-custom-workflow-activities-into-a-single-assembly"></a>Consolidar actividades de complementos o de flujo de trabajo personalizado en un solo ensamblado
 
-Las actividades de complementos y de flujo de trabajo personalizado desarrolladas para Common Data Service para aplicaciones deben coexistir en único proyecto de Visual Studio. Considere realizar combinar las actividades individuales de complementos y de flujo de trabajo personalizado en solo proyecto/ensamblado de Visual Studio a menos que los complementos se inscriban en las excepciones siguientes:
+Las actividades de complementos y de flujo de trabajo personalizado desarrolladas para Common Data Service deben coexistir en único proyecto de Visual Studio. Considere realizar combinar las actividades individuales de complementos y de flujo de trabajo personalizado en solo proyecto/ensamblado de Visual Studio a menos que los complementos se inscriban en las excepciones siguientes:
 
 1. La actividad de complementos o de flujo de trabajo personalizado debe implementarse selectivamente en un entorno pero no en otros usuarios.
 
-2. El tamaño físico del ensamblado está cerca de 16 MB o los supera para una instancia de Common Data Service para aplicaciones.
+2. El tamaño físico del ensamblado está cerca de 16 MB o los supera para una instancia de Common Data Service.
 
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>Mover actividades de complementos/actividades personalizadas a múltiples ensamblados
@@ -66,12 +66,12 @@ PowerApps y Microsoft Dynamics 365 (online) tiene una limitación de tamaño de 
 ### <a name="multiple-assemblies"></a>Múltiples ensamblados
 Tener múltiples ensamblados puede impactar a algunas áreas:
 
-1. Rendimiento: cada ensamblado tiene un ciclo de vida administrado por Common Data Service para aplicaciones.  Esto incluye la carga, el almacenamiento en caché y la descarga de ensamblados.  Disponer con más de un ensamblado hace que se desarrolle más trabajo en el servidor, que carga y almacena en caché el ensamblado, y puede afectar al tiempo de ejecución total de la actividad del complemento y de flujo de trabajo personalizado.
+1. Rendimiento: cada ensamblado tiene un ciclo de vida administrado por Common Data Service.  Esto incluye la carga, el almacenamiento en caché y la descarga de ensamblados.  Disponer con más de un ensamblado hace que se desarrolle más trabajo en el servidor, que carga y almacena en caché el ensamblado, y puede afectar al tiempo de ejecución total de la actividad del complemento y de flujo de trabajo personalizado.
 
 2. Mantenimiento: tener más de un proyecto de Visual Studio de actividad de complementos y de flujo de trabajo personalizado conlleva una administración del ciclo de vida de la aplicación (ALM) más compleja. Incrementa el riesgo y la cantidad de tiempo de actualizar o aplicar parches al proyecto pertinente para una actividad de complemento y de flujo de trabajo personalizado, empaquetando estas actividades dentro de una solución y administrándolas en una implementación.
 
 ### <a name="assembly-larger-than-16-mb"></a>Ensamblado mayor que 16 MB
-No podrá registrar un ensamblado personalizado dentro de Common Data Service para aplicaciones que sea mayor que 16 MB.
+No podrá registrar un ensamblado personalizado dentro de Common Data Service que sea mayor que 16 MB.
 
 <a name='additional'></a>
 

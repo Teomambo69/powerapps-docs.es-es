@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Limpiar historial de una cola (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Limpiar historial de una cola (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo liberar el historial de una cola
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Ejemplo: limpiar el historial de una cola
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- Este ejemplo muestra cómo limpiar el historial de la cola mediante [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) con elementos inactivos. Encuentra las llamadas de teléfono completadas en la cola y quita los elementos asociados de la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue).
+ Este ejemplo muestra cómo limpiar el historial de la cola mediante [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) con elementos inactivos. Encuentra las llamadas de teléfono completadas en la cola y quita los elementos asociados de la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -42,7 +42,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. Recupera el queueitem con llamadas de teléfono inactivas de una cola con el mensaje [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9).
+1. Recupera el queueitem con llamadas de teléfono inactivas de una cola con el mensaje [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9).
 
 ### <a name="clean-up"></a>Limpiar
 

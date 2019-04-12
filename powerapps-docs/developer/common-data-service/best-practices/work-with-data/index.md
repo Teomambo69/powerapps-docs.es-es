@@ -1,6 +1,6 @@
 ---
-title: 'Desarrolladores: Procedimientos recomendados e instrucciones al trabajar con datos en Common Data Service | Microsoft Docs'
-description: Procedimientos recomendados e instrucciones dirigidos a desarrolladores que trabajan con datos de Common Data Service en PowerApps.
+title: 'Programadores: Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para Common Data Service | Microsoft Docs'
+description: Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para programadores de Common Data Service en PowerApps
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,24 +16,19 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357791"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Procedimientos recomendados e instrucciones al trabajar con datos en Common Data Service
 
-Aquí se enumeran todos los procedimientos recomendados y las instrucciones relacionados con la integración de datos mediante código con Common Data Service.
+# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones sobre cómo trabajar con datos para Common Data Service
 
-|Procedimiento recomendado  |Descripción  |
+La siguiente lista contiene todas las prácticas recomendadas y orientación sobre cómo integrar datos con código con Common Data Service.
+
+|Práctica recomendada  |Descripción  |
 |---------|---------|
-|[Límites de API (Common Data Service)](../../api-limits.md)     |Conozca los límites de las solicitudes de API.         |
+|[Límites de la API (Common Data Service)](../../api-limits.md)     |Comprenda los límites de las solicitudes de la API.         |
 
 # <a name="see-also"></a>Vea también
-[Trabajar con datos mediante código en Common Data Service (PowerApps)](../../work-with-data-cds.md)<br />
+[Trabajar con datos usando código en Common Data Service (PowerApps)](../../work-with-data-cds.md)<br />

@@ -1,9 +1,8 @@
 ---
 title: openForm (referencia de API de cliente) en aplicaciones basadas en modelos | MicrosoftDocs
-ms.date: 11/09/2018
-ms.service: crm-online
+ms.date: 03/10/2019
+ms.service: powerapps
 ms.topic: reference
-applies_to: Dynamics 365 (online)
 ms.assetid: 0206c43b-b1fc-490d-a867-1d75331885a8
 author: KumarVivek
 ms.author: kvivek
@@ -15,8 +14,6 @@ search.app:
   - D365CE
 ---
 # <a name="openform-client-api-reference"></a>openForm (referencia de la API de cliente)
-
-
 
 [!INCLUDE[./includes/openForm-description.md](./includes/openForm-description.md)]
 
@@ -95,17 +92,14 @@ search.app:
 <td>formParameters</td>
 <td>Objeto</td>
 <td>No</td>
-<td>Un objeto de diccionario que pasa parámetros adicionales al formulario. Los parámetros no válidos provocarán un error.<br/><br/>Para obtener información acerca de cómo pasar parámetros a un formulario, consulte [Establecer valores de campo mediante parámetros que se pasan a un formulario](../../../set-field-values-using-parameters-passed-form.md) y [Configurar un formulario para aceptar parámetros de cadena de consulta personalizada](../../../configure-form-accept-custom-querystring-parameters.md) </td>
+<td>Un objeto de diccionario que pasa parámetros adicionales al formulario. Los parámetros no válidos provocarán un error.<br/><br/>Para obtener información acerca de cómo pasar parámetros a un formulario, consulte <a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/set-field-values-using-parameters-passed-form
+">Establecer valores de campo mediante parámetros que se pasan a un formulario</a> y <a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/configure-form-accept-custom-querystring-parameters">Configurar un formulario para aceptar parámetros de cadena de consulta personalizada</a></td>
 </tr>
 <tr>
 <td>successCallback</td>
 <td>Función</td>
 <td>No</td>
-<td>Una función para ejecutarse cuando:
-<ul>
-<li>El registro se guarda en el formulario de creación rápida.</li>
-<li>El registro se guarda en el formulario de creación rápida para un nuevo registro creado mediante en <b>Guardar y nuevo</b>. Esto solo se aplica a <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">interfaz unificada</a>.</li>
-</ul>
+<td>Una función que se ejecuta cuando se guarda el registro en el formulario de creación rápida.
 
 A esta funcionalidad se le pasa un objeto como parámetro. El objeto tiene una matriz <b>savedEntityReference</b> con las siguientes propiedades para identificar el registro(s) mostrado(s) o creado(s):
 <ul>
@@ -114,19 +108,10 @@ A esta funcionalidad se le pasa un objeto como parámetro. El objeto tiene una m
 <li><b>name</b>: El valor del atributo principal del registro mostrado o creado.</li></ul>
 
 <b>NOTA</b>:
-<ul>
-<li>En el cliente web: <ul>
+  <ul>
     <li>La función <b>successCallback</b> no se ejecuta cuando se abre un formulario para un registro existente o nuevo.</li>
-    <li>La función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método <strong>openForm</strong>.</li>
-    <li>Al abrir un formulario de creación rápida y crear un registro, la matriz <b>savedEntityReference</b> contendrá un solo elemento.</li>
+    <li>La función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método <strong>openForm</strong>.</li>    
   </ul>
-</li>
-<li>En la <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">interfaz unificada</a>:
-<ul>
-    <li>La función <b>successCallback</b> no se ejecuta cuando se abre un formulario para un registro existente o nuevo.</li>
-<li>La función <b>successCallback</b> solo se ejecuta al guardar un registro en un formulario de creación rápida que se abrió mediante el método <strong>openForm</strong>.</li>
-    <li>Al abrir un formulario de creación rápida y crear un registro, la matriz <b>savedEntityReference</b> contendrá un solo elemento.</li>
-<li>Al abrir un formulario de creación rápida y crear varios registros haciendo clic en <b>Guardar y nuevo</b>, la matriz <b>savedEntityReference</b> contendrá varios elementos, cada uno representando el registro creado mediante el formulario de creación rápida.</li>
 </td>
 </tr>
 <tr>

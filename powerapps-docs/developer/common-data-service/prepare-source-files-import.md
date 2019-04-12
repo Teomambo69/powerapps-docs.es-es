@@ -1,5 +1,5 @@
 ---
-title: Preparar archivos de origen para la importación (Common Data Service para aplicaciones) | Microsoft Docs
+title: Preparar archivos de origen para la importación (Common Data Service) | Microsoft Docs
 description: 'La importación de datos es compatible con archivos de origen con formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="prepare-source-files-for-import"></a>Preparar archivos de origen para importar
 
-Antes de que pueda importar datos a Common Data Service (CDS) para aplicaciones debe crear los archivos de origen de datos.  
+Antes de que pueda importar datos a Common Data Service debe crear los archivos de origen de datos.  
   
-Los archivos de origen de datos que se usan en una importación deben tener el formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto. El uso de archivos de origen permite la transferencia de datos desde sistemas de bases de datos que utilizan diferentes formatos a CDS para aplicaciones.  
+Los archivos de origen de datos que se usan en una importación deben tener el formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto. El uso de archivos de origen permite la transferencia de datos desde sistemas de bases de datos que utilizan diferentes formatos a Common Data Service.  
   
 Un archivo de origen puede contener datos para un tipo de entidad o varios tipos de entidades, como cuentas y contactos. Para los archivos de origen que contienen datos de varias entidades, debe proporcionar una asignación que incluya la etiqueta `<EntitiesPerFile>`. Establezca el valor de esta etiqueta en múltiple para indicar que hay más de un tipo de entidad en el archivo de origen. Agregue el atributo `Dedupe = “Eliminate”` a la etiqueta `<EntityMap>`. Esto garantiza que, si el archivo contiene filas duplicadas para el tipo de entidad, se usa una sola fila para minimizar los errores relacionados con las búsquedas.  
   

@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo: Crear una actividad de flujo de trabajo personalizada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear una actividad de flujo de trabajo (Common Data Service) | Microsoft Docs'
 description: El ejemplo muestra cómo escribir una actividad de flujo de trabajo personalizada que puede crear una cuenta y una tarea para la cuenta. Este ejemplo usa un enlace anticipado.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples

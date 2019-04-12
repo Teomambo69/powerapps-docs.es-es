@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Auditar acceso de usuario (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Auditar acceso de usuario (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo auditar el acceso de usuarios
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-audit-user-access"></a>Ejemplo: acceso de usuario de auditoría
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-audit-user-access -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-audit-user-access -->
 
 Este código de ejemplo muestra cómo auditar el acceso de usuarios. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditUserAccess).
 

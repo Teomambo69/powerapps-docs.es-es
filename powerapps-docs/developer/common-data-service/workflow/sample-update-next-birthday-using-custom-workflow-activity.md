@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo: Actualizar el cumpleaños próximo mediante una actividad de flujo de trabajo personalizada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Actualizar el cumpleaños próximo mediante una actividad de flujo de trabajo personalizada (Common Data Service) | Microsoft Docs'
 description: 'La siguiente actividad de flujo de trabajo de ejemplo devuelve el próximo cumpleaños. Use esto en un flujo de trabajo que envíe una felicitación de cumpleaños a un cliente. '
 ms.custom: ''
 ms.date: 12/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples

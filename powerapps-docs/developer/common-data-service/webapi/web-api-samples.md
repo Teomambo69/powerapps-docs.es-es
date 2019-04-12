@@ -1,10 +1,10 @@
 ---
-title: Ejemplos de operaciones de datos de API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'El SDK Common Data Service para aplicaciones proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Encuentre aquí las implementaciones en C# y JavaScript del ejemplo de operaciones básicas, datos de consulta, operaciones condicionales y funciones y acciones'
+title: Ejemplos de operaciones de datos de API web (Common Data Service) | Microsoft Docs
+description: 'El SDK Common Data Service proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Encuentre aquí las implementaciones en C# y JavaScript del ejemplo de operaciones básicas, datos de consulta, operaciones condicionales y funciones y acciones'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-data-operations-samples"></a>Ejemplos de operaciones de datos de API web
 
-Puede usar la API web de Common Data Service para aplicaciones con una gran variedad de lenguajes o bibliotecas de programación. Esta guía proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Este tema introduce los ejemplos disponibles para cada grupo de operaciones y cómo realizar estas operaciones con otros lenguajes o bibliotecas.
+Puede usar la API web de Common Data Service con una gran variedad de lenguajes o bibliotecas de programación. Esta guía proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Este tema introduce los ejemplos disponibles para cada grupo de operaciones y cómo realizar estas operaciones con otros lenguajes o bibliotecas.
 
 <!-- TODO:
 > [!NOTE]
@@ -30,7 +30,7 @@ Puede usar la API web de Common Data Service para aplicaciones con una gran vari
   
 ## <a name="web-api-sample-matrix"></a>Matriz de ejemplos de la API web
 
-En la siguiente tabla se describen los ejemplos de la API web de Common Data Service para aplicaciones y sus implementaciones específicas del lenguaje.  
+En la siguiente tabla se describen los ejemplos de la API web de Common Data Service y sus implementaciones específicas del lenguaje.  
   
 |Descripción en lenguaje neutro|Implementación en C#|Implementación JavaScript del lado del cliente|  
 |-----------------------------------|------------------------|--------------------------------------------|  
@@ -65,7 +65,7 @@ La siguiente tabla muestra los temas que hacen referencia a los problemas comune
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
 [Ejemplo de operaciones básicas de la API web](web-api-basic-operations-sample.md)<br />
 [Ejemplo de datos de consulta de la API web](web-api-query-data-sample.md)<br />
 [Ejemplo de operaciones condicionales de la API web](web-api-conditional-operations-sample.md)<br />

@@ -4,7 +4,7 @@ description: Aprenda cómo usar soluciones para crear o personalizar aplicacione
 ms.custom: ''
 ms.date: 10/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -101,8 +101,8 @@ En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Sol
 - Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino.
 - Las dependencias no están disponibles para las aplicaciones de lienzo.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
--   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de común de Common Data Service (CDS) para aplicaciones.
--   Las API de CDS para llamar a las aplicaciones de lienzo están bloqueados y no devuelve nada. 
+-   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service (Common Data Service).
+-   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelven nada. 
 -   Las aplicaciones de lienzo creadas en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
 -   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
 -   Las aplicaciones de lienzo existentes no reconocen las soluciones. 

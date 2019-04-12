@@ -1,5 +1,5 @@
 ---
-title: Códigos de error del servicio web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Códigos de error del servicio web (Common Data Service) | Microsoft Docs
 description: Este tema enumera los códigos de error que puede encontrar al depurar el código. Estos códigos de error también están disponibles en el paquete de Dynamics 365 SDK
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,9 +21,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 
 <a name="BKMK_CRMErrors"></a>   
 
-## <a name="common-data-service-for-apps-errors"></a>Errores de Common Data Service para aplicaciones 
+## <a name="common-data-service-errors"></a>Errores de Common Data Service 
 
- La siguiente lista muestra los códigos de error que se usan en Common Data Service para aplicaciones. Para obtener más información, consulte [controlar excepciones en el código](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code).  
+ La siguiente lista muestra los códigos de error que se usan en Common Data Service. Para obtener más información, consulte [controlar excepciones en el código](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code).  
 
 > [!div class="mx-tdBreakAll"]  
 > 

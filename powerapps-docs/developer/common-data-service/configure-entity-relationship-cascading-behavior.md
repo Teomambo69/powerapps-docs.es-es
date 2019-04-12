@@ -1,6 +1,6 @@
 ---
-title: Configurar el comportamiento en cascada de las relaciones entre entidades (Common Data Service para aplicaciones) | MicrosoftDocs
-description: Configure comportamientos en cascada para una relación entre entidades de uno a varios en Common Data Service para aplicaciones para preservar la integridad de los datos y automatizar los procesos de negocio.
+title: Configurar el comportamiento en cascada de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
+description: Configure comportamientos en cascada para una relación entre entidades de uno a varios en Common Data Service para preservar la integridad de los datos y automatizar los procesos de negocio.
 services: ''
 suite: powerapps
 documentationcenter: na

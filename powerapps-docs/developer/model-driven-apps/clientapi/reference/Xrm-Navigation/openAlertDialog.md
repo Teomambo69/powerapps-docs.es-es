@@ -1,7 +1,7 @@
 ---
 title: openAlertDialog (referencia de API de cliente) en aplicaciones basadas en modelos | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 8615a284-41b4-479c-81bd-577b3b7c79ad

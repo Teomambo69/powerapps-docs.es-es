@@ -1,5 +1,5 @@
 ---
-title: Trabajar con claves alternativas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Trabajar con claves alternativas (Common Data Service) | Microsoft Docs
 description: En este tema se explica cómo crear claves alternativas para una entidad. Las claves alternativas pueden crearse mediante programación o usando las herramientas de personalización
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="work-with-alternate-keys"></a>Trabajar con claves alternativas
 
-Todos los registros de Common Data Service para aplicaciones tienen identificadores únicos definidos como GUID. Éstos son clave principal para cada entidad. Si necesita integrarse con un almacén de datos externos, es posible que pueda agregar una columna a las tablas de base de datos externas para incluir una referencia al identificador único de CDS for Apps. Esto permite tener una referencia local al vínculo con el registro de CDS for Apps. Sin embargo, a veces no puede modificar la base de datos externa. Con claves alternativas, ahora puede definir un atributo de una entidad CDS for Apps para que corresponda a un identificador único (o una combinación única de columnas) usado por el almacén de datos externos. Esta clave alternativa se puede usar para identificar de manera única un registro en CDS for Apps en lugar de la clave principal. Debe poder definir qué atributos representan una única identidad para sus registros. Una vez identifique los atributos que son únicos con la entidad, puede declararlos como claves alternativas con la interfaz de usuario de personalización (UI) o en el código. En este tema se proporciona información acerca de la definición de claves alternativas en el modelo de datos.  
+Todos los registros de Common Data Service tienen identificadores únicos definidos como GUID. Éstos son clave principal para cada entidad. Si necesita integrarse con un almacén de datos externos, es posible que pueda agregar una columna a las tablas de base de datos externas para incluir una referencia al identificador único de Common Data Service. Esto permite tener una referencia local al vínculo con el registro de Common Data Service. Sin embargo, a veces no puede modificar la base de datos externa. Con claves alternativas, ahora puede definir un atributo de una entidad de Common Data Service para que corresponda a un identificador único (o una combinación única de columnas) usado por el almacén de datos externos. Esta clave alternativa se puede usar para identificar de manera única un registro en Common Data Service en lugar de la clave principal. Debe poder definir qué atributos representan una única identidad para sus registros. Una vez identifique los atributos que son únicos con la entidad, puede declararlos como claves alternativas con la interfaz de usuario de personalización (UI) o en el código. En este tema se proporciona información acerca de la definición de claves alternativas en el modelo de datos.  
 
 <a name="BKMK_Declare"></a>
 
@@ -47,7 +47,7 @@ Debe conocer las siguientes restricciones al crear claves alternativas:
 
 - **Número máximo de definiciones de clave alternativa para una entidad**  
 
-   Puede haber un máximo de 5 definiciones de clave alternativa para una entidad en una instancia de CDS for Apps.  
+   Puede haber un máximo de 5 definiciones de clave alternativa para una entidad en una instancia de Common Data Service.  
 
 - **Caracteres Unicode en valor de clave**
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Acceso web desde un complemento (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Acceso web desde un complemento (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo escribir un complemento que tiene acceso a recursos en la red.
 ms.custom: ''
 ms.date: 1/16/2019

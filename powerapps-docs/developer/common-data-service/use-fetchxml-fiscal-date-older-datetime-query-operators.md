@@ -1,5 +1,5 @@
 ---
-title: Fecha fiscal y operadores de consultas de fecha y hora más antiguo de en FetchXML (Common Data Service para aplicaciones) | Microsoft Docs
+title: Fecha fiscal y operadores de consultas de fecha y hora más antiguo de en FetchXML (Common Data Service) | Microsoft Docs
 description: Aprenda a usar operadores condicionales de fecha fiscal de FetchXML y cláusulas &quot;más antiguo de&quot; para los valores de fecha y hora
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="fiscal-date-and-older-than-datetime-query-operators-in-fetchxml"></a>Fecha fiscal y operadores de consultas de fecha y hora más antiguo de en FetchXML
 
-Una consulta FetchXML en Common Data Service para aplicaciones puede usar valores de fecha fiscal especiales y cláusulas *más antiguo de* para valores de fecha y hora en consultas. Por ejemplo, una consulta FetchXML puede buscar todos los pedidos completados en el último mes fiscal o casos urgentes con alta gravedad que tengan más de 15 minutos.  
+Una consulta FetchXML en Common Data Service puede usar valores de fecha fiscal especiales y cláusulas *más antiguo de* para valores de fecha y hora en consultas. Por ejemplo, una consulta FetchXML puede buscar todos los pedidos completados en el último mes fiscal o casos urgentes con alta gravedad que tengan más de 15 minutos.  
   
 > [!NOTE]
 >  Para todas las consultas de fechas fiscales, la consulta FetchXML usa la configuración del año fiscal de la organización.  

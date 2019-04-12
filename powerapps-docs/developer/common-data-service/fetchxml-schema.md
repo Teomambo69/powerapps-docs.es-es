@@ -1,6 +1,6 @@
 ---
-title: Uso del esquema FetchXML (Common Data Service para aplicaciones) | Microsoft Docs
-description: El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service para aplicaciones
+title: Uso del esquema FetchXML (Common Data Service) | Microsoft Docs
+description: El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="fetchxml-schema"></a>Esquema FetchXML
 
-El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service para aplicaciones. A continuación se presenta el esquema del lenguaje de consultas FetchXML. Para obtener más información, vea [Usar FetchXML para crear una consulta ](use-fetchxml-construct-query.md).
+El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service. A continuación se presenta el esquema del lenguaje de consultas FetchXML. Para obtener más información, vea [Usar FetchXML para crear una consulta ](use-fetchxml-construct-query.md).
 
 Puede encontrar este esquema en la carpeta `Schemas\9.0.0.2090\Fetch.xsd` al descargar el archivo zip de esquemas.
 Descargue los [esquemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).

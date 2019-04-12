@@ -4,7 +4,7 @@ description: Aprenda cómo asignar campos de entidad
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -98,7 +98,7 @@ Las siguientes reglas muestran qué tipos de datos se pueden asignar.
 - Si los campos son conjuntos de opciones, los valores enteros de cada opción deben ser idénticos.  
   
 > [!NOTE]
->  Si necesita asignar campos de conjunto de opciones, se recomienda configurar ambos campos para que usen el mismo conjunto de opciones globales. Si no, puede resultar difícil mantener dos conjuntos de opciones separados sincronizadas manualmente. Si los valores enteros de cada opción no se asignan correctamente puede experimentar problemas con los datos. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)  
+>  Si necesita asignar campos de conjunto de opciones, se recomienda configurar ambos campos para que usen el mismo conjunto de opciones globales. Si no, puede resultar difícil mantener dos conjuntos de opciones separados sincronizadas manualmente. Si los valores enteros de cada opción no se asignan correctamente puede experimentar problemas con los datos. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)  
   
 ## <a name="automatically-generate-field-mappings"></a>Generar asignaciones de campos automáticamente  
 

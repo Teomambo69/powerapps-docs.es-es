@@ -1,10 +1,10 @@
 ---
-title: Utilice útiles de XRM para recuperar datos (Common Data Service para aplicaciones)| Microsoft Docs
-description: Utilizar la clase CrmServiceClient para recuperar datos de CDS para aplicaciones
+title: Utilizar útiles de XRM para recuperar datos (Common Data Service)| Microsoft Docs
+description: Utilizar la clase CrmServiceClient para recuperar datos de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-retrieve-data"></a>Utilizar los útiles de XRM para recuperar datos
 
-Existen muchos métodos disponibles en la clase de <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para recuperar datos en CDS para aplicaciones. Los siguientes ejemplos muestran cómo puede recuperar un registro por identificador o consulta FetchXML.  
+Existen muchos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para recuperar datos en Common Data Service. Los siguientes ejemplos muestran cómo puede recuperar un registro por identificador o consulta FetchXML.  
   
 ## <a name="getentitydatabyid"></a>GetEntityDataById  
 
@@ -106,5 +106,5 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Use útiles de XRM para conectarse a CDS para aplicaciones](use-crmserviceclient-constructors-connect.md)<br />
-[Usar API de útiles de XRM para ejecutar acciones en CDS para aplicaciones](use-xrm-tooling-execute-actions.md)
+[Uso de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)

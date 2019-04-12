@@ -1,10 +1,10 @@
 ---
-title: Crear y actualizar conjuntos de opciones utilizando la API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: Aprenda a crear y actualizar entidades. Common Data Service para aplicaciones usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
+title: Crear y actualizar conjuntos de opciones utilizando la API web (Common Data Service) | Microsoft Docs
+description: Aprenda a crear y actualizar entidades. Common Data Service usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

@@ -1,10 +1,10 @@
 ---
-title: Suplantar a otro usuario utilizando la API web (Common Data Service para aplicaciones)| Microsoft Docs
-description: La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para aplicaciones para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Lea cómo puede suplantar a otro usuario en Common Data Service para aplicaciones utilizando la API web
+title: Suplantar a otro usuario utilizando la API web (Common Data Service)| Microsoft Docs
+description: La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Lea cómo puede suplantar a otro usuario en Common Data Service utilizando la API web
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/18/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -34,7 +34,7 @@ Hay ocasiones en las que el código deberá realizar operaciones en nombre de ot
 
 ## <a name="requirements-for-impersonation"></a>Requisitos de la suplantación
 
-La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para aplicaciones para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Esto es necesario porque varios clientes y servicios en nombre de un usuario de CDS for Apps pueden llamar a los servicios web de Common Data Service para aplicaciones, por ejemplo, en un flujo de trabajo o una solución de ISV personalizada. La suplantación implica dos cuentas distintas de usuario: una cuenta de usuario (A) que se usa al ejecutar código para realizar algunas tareas en nombre de otro usuario (B).  
+La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Esto es necesario porque varios clientes y servicios en nombre de un usuario de Common Data Service pueden llamar a los servicios web de Common Data Service, por ejemplo, en un flujo de trabajo o una solución de ISV personalizada. La suplantación implica dos cuentas distintas de usuario: una cuenta de usuario (A) que se usa al ejecutar código para realizar algunas tareas en nombre de otro usuario (B).  
   
 La cuenta de usuario (A) debe tener el privilegio `prvActOnBehalfOfAnotherUser`, que se incluye en el rol de seguridad Delegado. El conjunto real de privilegios que se utiliza para modificar los datos es la intersección de los privilegios que el usuario con rol de delegado posee con la del usuario que se suplanta. Es decir, al usuario (A) se le permite hacer algo solo si el usuario (A) y el usuario (B) tienen el privilegio necesario para realizar la acción.  
   
@@ -42,12 +42,17 @@ La cuenta de usuario (A) debe tener el privilegio `prvActOnBehalfOfAnotherUser`,
 
 ## <a name="how-to-impersonate-a-user"></a>Cómo suplantar a un usuario
 
-Para suplantar a un usuario, agregue un encabezado de solicitud llamado MSCRMCallerID con un valor GUID igual al systemuserid del usuario suplantado antes de enviar la solicitud al servicio web. En este ejemplo, una nueva entidad de cuenta se crea en nombre del usuario con el systemuserid 00000000-0000-0000-000000000002.  
+Hay dos formas de suplantar a un usuario, ambas posibles pasando un encabezado con el correspondiente identificador de usuario.
+
+ 1. **Preferido:** Suplanta a un usuario en función de la identificación de objeto de Azure Active Directory (AAD) pasando ese valor junto con el `CallerObjectId` del encabezado.
+2. **Datos heredados:** Para suplantar a un usuario en función de su systemuserid puede aprovechar `MSCRMCallerID` con el valor de guid correspondiente.
+
+ En este ejemplo, se crea una nueva entidad de cuenta en nombre del usuario con un identificador de objeto de Azure Active Directory `e39c5d16-675b-48d1-8e67-667427e9c084`.   
   
  **Solicitud**  
 ```http 
 POST [Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-MSCRMCallerID: 00000000-0000-0000-000000000002  
+CallerObjectId: e39c5d16-675b-48d1-8e67-667427e9c084  
 Accept: application/json  
 Content-Type: application/json; charset=utf-8  
 OData-MaxVersion: 4.0  
@@ -84,30 +89,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 ETag: W/"506868"  
   
-{  
-    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby,createdonbehalfby,owninguser,createdby(fullname),createdonbehalfby(fullname),owninguser(fullname))/$entity",  
-    "@odata.etag": "W/\"506868\"",  
-    "name": "Sample Account created using impersonation",  
-    "accountid": "00000000-0000-0000-000000000003",  
-    "createdby": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    },  
-    "createdonbehalfby": {  
-        "@odata.etag": "W/\"320678\"",  
-        "fullname": "Actual User",  
-        "systemuserid": "00000000-0000-0000-000000000001",  
-        "ownerid": "00000000-0000-0000-000000000001"  
-    },  
-    "owninguser": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    }  
-}  
+{
+  "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby(fullname,azureactivedirectoryobjectid),createdonbehalfby(fullname,azureactivedirectoryobjectid),owninguser(fullname,azureactivedirectoryobjectid))/$entity",
+  "@odata.etag": "W/\"2751197\"",
+  "name": "Sample Account created using impersonation",
+  "accountid": "00000000-0000-0000-000000000003",
+  "createdby": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  },
+  "createdonbehalfby": {
+    "@odata.etag": "W/\"2632445\"",
+    "fullname": "Actual User",
+    "azureactivedirectoryobjectid": "3d8bed3e-79a3-47c8-80cf-269869b2e9f0",
+    "systemuserid": "278742b0-1e61-4fb5-84ef-c7de308c19e2",
+    "ownerid": "278742b0-1e61-4fb5-84ef-c7de308c19e2"
+  },
+  "owninguser": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  }
+}
 ```  
   
 ### <a name="see-also"></a>Vea también

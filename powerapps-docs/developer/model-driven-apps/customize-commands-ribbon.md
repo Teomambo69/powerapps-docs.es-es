@@ -1,6 +1,6 @@
 ---
 title: Personalice los comandos y la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
-description: Common Data Service para aplicaciones muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una barra de comandos en lugar de una cinta de opciones. Dynamics 365 para tabletas también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.
+description: Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una barra de comandos en lugar de una cinta de opciones. Dynamics 365 para tabletas también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="customize-commands-and-the-ribbon"></a>Personalización de comandos y la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
 
- Common Data Service para aplicaciones muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una *barra de comandos* en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
+ Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una *barra de comandos* en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
   
  La barra de comandos ofrece un mejor rendimiento. La cinta de opciones se sigue mostrando en la aplicación web para determinados formularios de entidad y aún se usa para las vistas de lista en Dynamics 365 for Outlook.  
   

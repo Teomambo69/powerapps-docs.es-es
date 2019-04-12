@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear un complemento básico (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear un complemento básico (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo escribir un complemento sencillo que cree una actividad de seguimiento.
 ms.custom: ''
 ms.date: 1/29/2019
@@ -15,11 +15,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Ejemplo: Crear un complemento básico
+# <a name="sample-create-a-basic-plug-in"></a>Ejemplo: Crear un complemento básico
 
 En este ejemplo se muestra cómo escribir un complemento sencillo que cree una actividad de seguimiento. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/FollowupPlugin).
 
-## Cómo ejecutar esta muestra
+## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
 1. Descargar o clonar el informe de [Muestras](https://github.com/Microsoft/PowerApps-Samples) para que tenga una copia local. Este ejemplo se encuentra en PowerApps-Samples-master\cds\orgsvc\C#\FollowupPlugin.
 2. Abra la solución de ejemplo en Visual Studio, vaya a las propiedades del proyecto y comprueba que el ensamblado se firmará durante la compilación. Presione la F6 para compilar el ensamblado del ejemplo (FollowupPlugin.dll).
@@ -28,20 +28,20 @@ En este ejemplo se muestra cómo escribir un complemento sencillo que cree una a
 5. Después de que se ejecute el complemento, debe ver una nueva entrada de registro de seguimiento “FollowupPlugin: Successfully created the task activity” y una nueva actividad con el asunto “Enviar correo electrónico al nuevo cliente.” programada para que se active en 7 días.
 6. Cuando haya terminado con la prueba, cancele el registro del ensamblado y el paso.
 
-## Qué hace este ejemplo
+## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 
 Cuando se ejecuta en el momento de la creación de una cuenta, el complemento crea una actividad para recordar al usuario realizar un seguimiento del cliente de la cuenta en 7 días.
 
-## Cómo funciona esta muestra
+## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
 
 Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), la muestra hará lo siguiente:
 
-### Demostración
+### <a name="demonstrate"></a>Demostración
 
 1. Cómo crear una actividad de tareas y programarla para una fecha futura.
 2. Cómo usar el servicio de seguimiento para registrar información en tiempo de ejecución.
 3. Cómo seleccionar las excepciones desde servicio web y procesarlas.
 
-### Vea también
-[[Escribir un complemento](../../write-plug-in.md)](../../write-plug-in.md)  
-[[Registro de un complemento](../../register-plug-in.md)](../../register-plug-in.md)
+### <a name="see-also"></a>Vea también
+[Escribir un complemento](../../write-plug-in.md)  
+[Registro de un complemento](../../register-plug-in.md)

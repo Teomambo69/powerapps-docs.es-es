@@ -2,7 +2,7 @@
 title: formContext.ui (referencia API de cliente) en aplicaciones basadas en modelo| Microsoft Docs
 description: Aprenda a trabajar con procesos en aplicaciones basadas en modelos mediante la API de cliente.
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: f93e0e21-f911-4681-81b0-82ccf98ee28b

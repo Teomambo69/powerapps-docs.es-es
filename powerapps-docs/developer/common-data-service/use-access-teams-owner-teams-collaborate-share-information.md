@@ -1,5 +1,5 @@
 ---
-title: Usar equipos de acceso y equipos del propietario para colaborar y compartir información (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar equipos de acceso y equipos del propietario para colaborar y compartir información (Common Data Service) | Microsoft Docs
 description: Aprenda a utilizar equipos de acceso y equipos de propietarios para colaborar y compartir información.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>Usar equipos de acceso y de propietario para colaborar y compartir información
 
-Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir objetos de negocio y colaborar con los usuarios en distintas unidades de negocio en Common Data Service para aplicaciones. Pese a que un equipo pertenece a una unidad de negocio, puede incluir usuarios de otras unidades de negocio. Un usuario se pueden asociar con más de un equipo.  
+Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir objetos de negocio y colaborar con los usuarios en distintas unidades de negocio en Common Data Service. Pese a que un equipo pertenece a una unidad de negocio, puede incluir usuarios de otras unidades de negocio. Un usuario se pueden asociar con más de un equipo.  
   
  Un equipo de propietarios tiene registros y roles de seguridad asignados. Los privilegios del equipo se definen mediante roles de seguridad. Además de los privilegios proporcionados por el equipo, los miembros del equipo tienen los privilegios definidos por sus roles de seguridad individuales y por los roles de los otros equipos de los que son integrantes. Un equipo tiene derechos de acceso completo a los registros propiedad del equipo.  
   
@@ -36,7 +36,7 @@ Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir obje
   
 - Las directivas empresariales requieren la propiedad de registros por parte de entidades distintas a usuarios.  
   
-- El número de equipos se conoce en el momento del diseño del sistema CDS para aplicaciones.  
+- El número de equipos no se conoce en el momento del diseño del sistema de Common Data Service.  
   
 - La creación diaria de informes sobre el progreso de los equipos propietarios es obligatoria.  
   
@@ -44,7 +44,7 @@ Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir obje
   
 - Los equipos se forman y se disuelven dinámicamente. Normalmente, esto ocurre si no se proporcionan criterios claros para definir los equipos, como la zona de ventas, el producto o el volumen.  
   
-- El número de equipos no se conoce en el momento del diseño del sistema CDS para aplicaciones.  
+- El número de equipos no se conoce en el momento del diseño del sistema de Common Data Service.  
   
 - Los miembros del equipo requieren derechos de acceso diferentes para los registros. Puede compartir un registro con varios equipos de acceso, donde cada equipo proporciona distintos derechos de acceso al registro. Por ejemplo, se asigna a un equipo el derecho de acceso de lectura sobre la cuenta y, a otro equipo, los derechos de acceso de lectura, escritura y uso compartido para la misma cuenta.  
   

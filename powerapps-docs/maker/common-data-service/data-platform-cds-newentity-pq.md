@@ -1,14 +1,14 @@
 ---
-title: Agregar datos a una entidad en Common Data Service for Apps usando Power Query | Microsoft Docs
-description: Instrucciones paso a paso para ver cómo se usa Power Query para agregar datos a una entidad nueva o existente en Common Data Service (CDS) for Apps desde otro origen de datos.
-author: AFTOwen
+title: Agregar datos a una entidad en Common Data Service usando Power Query | Microsoft Docs
+description: Instrucciones paso a paso para ver cómo se usa Power Query para agregar datos a una entidad nueva o existente en Common Data Service desde otro origen de datos.
+author: mllopis
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
-ms.author: anneta
+ms.author: millopis
 search.audienceType:
   - maker
 search.app:
@@ -16,8 +16,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service for Apps usando Power Query
-En este procedimiento, creará una entidad en [Common Data Service (CDS) for Apps](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service usando Power Query
+En este procedimiento, creará una entidad en [Common Data Service](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
 
 * SQL Server
 * Salesforce

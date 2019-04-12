@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de funciones y acciones de API web (JavaScript de lado de cliente) (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones JavaScript de lado de cliente.'
+title: Ejemplo de funciones y acciones de API web (JavaScript de lado de cliente) (Common Data Service) | Microsoft Docs
+description: 'Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service y JavaScript de lado de cliente.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente)
 
-Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones con JavaScript de lado de cliente.  
+Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service usando JavaScript de lado de cliente.  
   
 > [!NOTE]
 >  Este ejemplo implementa las operaciones detalladas en el [Ejemplo de funciones y acciones de la API web](../web-api-functions-actions-sample.md) y utiliza las construcciones comunes de JavaScript del lado cliente que se describen en [Ejemplos de API web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md)  
@@ -39,14 +39,14 @@ Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin 
 
  Para ejecutar este ejemplo, se requiere lo siguiente:  
   
-- Obtenga acceso a CDS for Apps en línea o la versión local 8.0 o superior.  
+- Obtenga acceso a Common Data Service o la versión local 8.0 o superior.  
 - Una cuenta de usuario con privilegios para importar soluciones y realizar operaciones CRUD, normalmente un rol de seguridad de administrador o personalizador del sistema.  
   
 <a name="bkmk_runsample"></a>
  
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [ Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824048) y descargue el archivo de ejemplo Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque el archivo de la solución administrada WebAPIFunctionsandActions_1_0_0_0_managed.zip. Importe la solución administrada en su organización de CDS for Apps y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [ Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824048) y descargue el archivo de ejemplo Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque el archivo de la solución administrada WebAPIFunctionsandActions_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_codeSample"></a>
 
@@ -98,7 +98,7 @@ El recurso web WebAPIFunctionsAndActions.html proporciona el contexto en el que 
  <h2>Instructions</h2>  
  <p>  
   Choose your preferences and run the JavaScript code.  
-  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Edge,   
+  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Microsoft Edge,   
   press F12 to load the Developer Tools).  
  </p>  
  <form id="preferences">  
@@ -711,7 +711,7 @@ Sdk.createAccountWithOpportunityToWin = function () {
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](../overview.md)<br />
+[Utilizar API Web de Common Data Service](../overview.md)<br />
 [Usar funciones de la API web](../use-web-api-functions.md)<br />
 [Usar acciones de la API web](../use-web-api-actions.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />

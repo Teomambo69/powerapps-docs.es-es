@@ -40,7 +40,7 @@ Recuperar todas las columnas puede provocar:
 
 ## <a name="guidance"></a>Instrucciones
 
-Para obtener un rendimiento óptimo, debe seleccionar solo una cantidad mínima de datos necesarios por su aplicación cuando se consultan datos de Common Data Service para aplicaciones. 
+Para obtener un rendimiento óptimo, debe seleccionar solo una cantidad mínima de datos necesarios por su aplicación cuando se consultan datos de Common Data Service. 
 
 ### <a name="columnset-parameter"></a>Parámetro de ColumnSet
 

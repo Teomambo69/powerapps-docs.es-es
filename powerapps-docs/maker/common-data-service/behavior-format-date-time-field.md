@@ -1,9 +1,9 @@
 ---
-title: Comportamiento y formato del campo Fecha y hora en Common Data Service para aplicaciones | MicrosoftDocs
+title: Comportamiento y formato del campo Fecha y hora en Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Comportamiento y formato del campo de fecha y hora
 
-En Common Data Service para aplicaciones, el tipo de datos de fecha y hora se utiliza en muchos campos de entidad estándar. Dependiendo del tipo de fecha que represente el campo, puede elegir distintos comportamientos del campo: **Local de usuario**, **Solo fecha** o **Independiente de zona horaria**.  
+En Common Data Service, el tipo de datos de fecha y hora se utiliza en muchos campos de entidad estándar. Dependiendo del tipo de fecha que represente el campo, puede elegir distintos comportamientos del campo: **Local de usuario**, **Solo fecha** o **Independiente de zona horaria**.  
   
 <a name="Behavior"></a>   
 

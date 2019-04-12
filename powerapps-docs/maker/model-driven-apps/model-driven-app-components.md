@@ -1,7 +1,7 @@
 ---
 title: Conocer los componentes de las aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: 'Comprender los distintos componentes de una aplicación controlada por modelos, como datos, IU, lógica y visualización.'
-Keywords: 'fields, attributes, model-driven app'
+Keywords: 'campos, atributos, aplicación basada en modelos'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker

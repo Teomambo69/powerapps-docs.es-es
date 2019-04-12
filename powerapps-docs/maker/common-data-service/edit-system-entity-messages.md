@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo editar mensajes de entidad del sis
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="edit-system-entity-messages"></a>Editar mensajes de entidades del sistema
 
-El nombre para mostrar predeterminado de algunas entidades del sistema se usa en texto y mensajes de error de la interfaz de usuario en Common Data Service for Apps. Si cambia el nombre para mostrar, también debe actualizar los mensajes que usan el nombre para mostrar predeterminado. Por ejemplo, si cambia el nombre para mostrar de *Cuenta* a *Empresa*, podría aparecer un mensaje de error con el nombre antiguo.  
+El nombre para mostrar predeterminado de algunas entidades del sistema se usa en texto y mensajes de error de la interfaz de usuario en Common Data Service. Si cambia el nombre para mostrar, también debe actualizar los mensajes que usan el nombre para mostrar predeterminado. Por ejemplo, si cambia el nombre para mostrar de *Cuenta* a *Empresa*, podría aparecer un mensaje de error con el nombre antiguo.  
 
 No puede editar mensajes del sistema mediante el portal de PowerApps, debe usar el explorador de soluciones.
 

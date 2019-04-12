@@ -1,5 +1,5 @@
 ---
-title: Herramientas de prueba para desarrollo del lado del cliente (Common Data Service para aplicaciones) | Microsoft Docs
+title: Herramientas de prueba para desarrollo del lado del cliente (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre los marcos de prueba para desarrollo del lado del cliente.
 ms.custom: ''
 ms.date: 10/31/2018

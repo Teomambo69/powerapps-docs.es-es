@@ -1,16 +1,16 @@
 ---
-title: Tutorial para compartir una aplicación controlada por modelos con PowerApps | Microsoft Docs
-description: En este tutorial aprenderá a compartir una aplicación controlada por modelos
+title: Compartir una aplicación controlada por modelos con PowerApps | Microsoft Docs
+description: Aprenda a compartir una aplicación basada en modelos
 documentationcenter: ''
 author: Mattp123
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 03/21/2018
+ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -19,11 +19,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Compartir una aplicación controlada por modelos con PowerApps
+# <a name="share-a-model-driven-app-with-powerapps"></a>Compartir una aplicación controlada por modelos con PowerApps
 
 Las aplicaciones de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan la seguridad basada en roles para compartir. El concepto básico en la seguridad basada en roles es que el rol de seguridad contiene privilegios que definen un conjunto de acciones que se pueden realizar en la aplicación. Todos los usuarios de la aplicación deben estar asignados a uno o más roles predefinidos o personalizados. O bien, también se pueden asignar roles a equipos. Cuando se asigna un usuario o un equipo a uno de estos roles, se concede a la persona o miembros del equipo el conjunto de privilegios asociados a este rol. 
 
-En este tutorial realizará las tareas para compartir una aplicación controlada por modelos para que otros puedan usarla. Aprenderá a:
+En este tema realizará las tareas para compartir una aplicación controlada por modelos para que otros puedan usarla. Aprenderá a:
 - Crear un rol de seguridad personalizado
 - Asignar usuarios al rol de seguridad personalizado
 - Asignar el rol de seguridad a una aplicación
@@ -35,7 +35,7 @@ Para compartir una aplicación debe tener el rol de administrador del entorno de
 Iniciar sesión en [PowerApps](https://powerapps.microsoft.com/). Si aún no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el vínculo **Introducción gratuita**.
 
 ## <a name="share-an-app"></a>Compartir una aplicación 
-En este tutorial se realizará un seguimiento de la compañía, Contoso, que es una empresa de cuidado de mascotas orientada a perros y gatos. Una aplicación que contiene una entidad personalizada para realizar un seguimiento de la empresa de cuidado de mascotas ya se ha creado y publicado. Ahora la aplicación se debe compartir para que el personal de la empresa pueda usarla. Para compartir la aplicación, un administrador o el creador de la aplicación asigna uno o varios roles de seguridad a los usuarios y a la aplicación. 
+En este tema se realizará un seguimiento de la compañía, Contoso, que es una empresa de cuidado de mascotas orientada a perros y gatos. Una aplicación que contiene una entidad personalizada para realizar un seguimiento de la empresa de cuidado de mascotas ya se ha creado y publicado. Ahora la aplicación se debe compartir para que el personal de la empresa pueda usarla. Para compartir la aplicación, un administrador o el creador de la aplicación asigna uno o varios roles de seguridad a los usuarios y a la aplicación. 
 
 ## <a name="create-or-configure-a-security-role"></a>Crear o configurar un rol de seguridad
 El entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)] incluye [roles de seguridad predefinidos](#about-predefined-security-roles) que reflejan tareas de usuario comunes con niveles de acceso definidos para que coincidan con el objetivo de seguridad recomendado de proporcionar acceso a la cantidad mínima de datos profesionales necesarios para usar la aplicación. Recuerde que la aplicación de cuidado de mascotas de Contoso está basada en una entidad personalizada. Puesto que la entidad es personalizada, los privilegios se deben especificar explícitamente antes de que los usuarios puedan trabajar con ella. Para hacerlo, puede realizar lo siguiente.
@@ -50,22 +50,36 @@ Para obtener más información sobre los privilegios de acceso y de ámbito, con
 
 ## <a name="create-a-custom-security-role"></a>Crear un rol de seguridad personalizado
 1. En el sitio de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione **Aplicaciones** > **…**> **Compartir vínculo**.
+
 2. En el cuadro de diálogo **Compartir esta aplicación**, en **Crear un rol de seguridad**, seleccione **Configuración de seguridad**.
+
 3. En la página **Configuración**, seleccione **Nuevo**.  
 
 4. En el diseñador de roles de seguridad, seleccione las acciones, como leer, escribir o eliminar, y el ámbito para realizar dicha acción. El ámbito determina la profundidad o altura dentro de la jerarquía de entornos en la que el usuario puede realizar una acción determinada. En el cuadro **Nombre del rol**, introduzca *Técnicos de cuidado de mascotas*.
+
 5. Seleccione la pestaña **Entidades personalizadas** y, a continuación, localice la entidad personalizada que desee. Para este ejemplo, se utiliza la entidad personalizada **Mascota**. 
+
 6. En la fila **Mascota**, seleccione cada uno de los siguientes privilegios cuatro veces hasta que se seleccione el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png): **Leer, Escribir, Anexar**
-> [!div class="mx-imgBorder"] 
-> ![Nuevo rol de seguridad](media/share-model-driven-app/custom-security-role.png)
+
+   > [!div class="mx-imgBorder"] 
+   > ![Nuevo rol de seguridad](media/share-model-driven-app/custom-security-role.png)
+
 7. Puesto que la aplicación de cuidado de mascotas también tiene una relación con la entidad Cuenta, seleccione la pestaña **Registros principales** y, en la fila **Cuenta** seleccione **Leer** cuatro veces hasta que se haya seleccionado el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png). 
-8. Seleccione **Guardar y cerrar**. 
-9. En el diseñador de roles de seguridad, en el cuadro **Nombre del rol**, introduzca *Programadores del cuidado de mascotas*. 
-10. Seleccione la pestaña **Entidades personalizadas** y, a continuación, localice la entidad **Mascota**. 
-11. En la fila **Mascota**, seleccione cada uno de los siguientes privilegios cuatro veces hasta que se seleccione el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png): **Crear, Leer, Escribir, Eliminar, Anexar, Anexar a, Asignar, Compartir**
-12. Puesto que la aplicación de cuidado de mascotas también tiene una relación con la entidad Cuenta y los programadores deben poder crear y modificar registros de cuenta, seleccione la pestaña **Registros principales** y, en la fila **Cuenta** seleccione cada uno de los siguientes privilegios cuatro veces hasta que se haya seleccionado el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png). 
+
+8. Seleccione la pestaña **Personalización** y luego en la lista de privilegios seleccione el privilegio **Leer** junto a **Aplicación basada en modelo** para seleccionar el ámbito de organización. ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png).
+
+9. Seleccione **Guardar y cerrar**. 
+
+10. En el diseñador de roles de seguridad, en el cuadro **Nombre del rol**, introduzca *Programadores del cuidado de mascotas*. 
+
+11. Seleccione la pestaña **Entidades personalizadas** y, a continuación, localice la entidad **Mascota**. 
+
+12. En la fila **Mascota**, seleccione cada uno de los siguientes privilegios cuatro veces hasta que se seleccione el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png): **Crear, Leer, Escribir, Eliminar, Anexar, Anexar a, Asignar, Compartir**
+
+13. Puesto que la aplicación de cuidado de mascotas también tiene una relación con la entidad Cuenta y los programadores deben poder crear y modificar registros de cuenta, seleccione la pestaña **Registros principales** y, en la fila **Cuenta** seleccione cada uno de los siguientes privilegios cuatro veces hasta que se haya seleccionado el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png). 
     **Crear, Leer, Escribir, Eliminar, Anexar, Anexar a, Asignar, Compartir**
-13. Seleccione **Guardar y cerrar**.
+
+14. Seleccione **Guardar y cerrar**.
 
 ## <a name="assign-security-roles-to-users"></a>Asignar roles de seguridad a usuarios
 Los roles de seguridad controlan el acceso del usuario a los datos a través de un conjunto de niveles de acceso y permisos. La combinación de niveles de acceso y permisos que se incluyen en un determinado rol de seguridad define los límites de visualización de datos para el usuario, así como las interacciones del usuario con estos.

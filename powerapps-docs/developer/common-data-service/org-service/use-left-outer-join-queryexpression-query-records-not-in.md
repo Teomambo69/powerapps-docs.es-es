@@ -1,5 +1,5 @@
 ---
-title: Use una combinación externa izquierda en QueryExpression para consultar los registros que &quot;no están en&quot; (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar una combinación externa izquierda en QueryExpression para consultar los registros que &quot;no están en&quot; (Common Data Service) | Microsoft Docs
 description: Lea cómo usar una combinación externa izquierda mediante la clase QueryExpression para realizar una consulta que aplique un filtro a la tabla combinada y cree una consulta para buscar registros &quot;no incluidos en&quot; un conjunto
 ms.custom: ''
 ms.date: 10/31/2018

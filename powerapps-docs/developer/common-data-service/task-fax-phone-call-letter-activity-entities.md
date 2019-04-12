@@ -1,5 +1,5 @@
 ---
-title: 'Entidades de actividad tarea, fax, llamada de teléfono y carta (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Entidades de actividad tarea, fax, llamada de teléfono y carta (Common Data Service) | Microsoft Docs'
 description: Obtenga más información sobre las entidades que le permiten administrar actividades básicas que se efectúan en una solución de administración de relaciones
 ms.custom: ''
 ms.date: 10/31/2018

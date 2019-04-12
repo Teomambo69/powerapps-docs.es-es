@@ -1,10 +1,10 @@
 ---
-title: Use cmdlets de PowerShell para útiles de XRM para conectar a CDS para aplicaciones (Common Data Service para aplicaciones)| Microsoft Docs
-description: 'Descubra cómo utilizar cmdlets de Powershell para que los útiles de XRM, como Get-CrmConnection y Get-CrmOrganizations, se conecten a Common Data Service para aplicaciones y recuperen organizaciones a las que el usuario actual tiene acceso'
+title: Usar cmdlets PowerShell para útiles de XRM para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
+description: 'Descubra cómo utilizar cmdlets de Powershell para que los útiles de XRM, como Get-CrmConnection y Get-CrmOrganizations, se conecten a Common Data Service y recuperen organizaciones a las que el usuario actual tiene acceso'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-cds-for-apps"></a>Utilizar cmdlets de PowerShell para útiles de XRM para conectarse a CDS para aplicaciones
+# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Usar cmdlets PowerShell para útiles de XRM para conectarse a Common Data Service
 
-Los útiles de XRM le proporcionan los siguientes cmdlets de Windows PowerShell que puede utilizar para conectarse a CDS para aplicaciones y recuperar las organizaciones a las que el usuario actual tiene acceso: `Get-CrmConnection` y `Get-CrmOrganizations`.  
+Los útiles de XRM le proporcionan los siguientes cmdlets de Windows PowerShell que puede utilizar para conectarse a Common Data Service y recuperar las organizaciones a las que el usuario actual tiene acceso: `Get-CrmConnection` y `Get-CrmOrganizations`.  
   
 <a name="Prereq"></a>   
 
@@ -95,18 +95,18 @@ Get-Help “Crm”
   
 <a name="RetrieveOrgs"></a>   
 
-## <a name="use-the-cmdlet-to-retrieve-organizations-from-cds-for-apps"></a>Uso del cmdlet para recuperar organizaciones de CDS para aplicaciones  
+## <a name="use-the-cmdlet-to-retrieve-organizations-from-common-data-service"></a>Uso del cmdlet para recuperar organizaciones de Common Data Service  
 
 Use el cmdlet `Get-CrmOrganizations` para recuperar las organizaciones a las que tiene acceso.  
   
-1.  Especifique las credenciales para conectarse a la instancia de CDS para aplicaciones. Si ejecuta el siguiente comando se le pedirá que escriba su nombre de usuario y contraseña para conectarse a la instancia de CDS para aplicaciones y se almacenará en la variable `$Cred`.  
+1.  Especifique las credenciales para conectarse a la instancia de Common Data Service y haga clic en Iniciar sesión. Si ejecuta el siguiente comando se le pedirá que escriba su nombre de usuario y contraseña para conectarse a la instancia de Common Data Service y se almacenará en la variable `$Cred`.  
   
     ```powershell  
     $Cred = Get-Credential  
     ```  
 2.  Use el siguiente comando para recuperar sus organizaciones y almacenar la información en la variable `$CRMOrgs`: 
 
-    - Si va a conectarse a la instancia de CDS para aplicaciones:  
+    - Si se va a conectar a una instancia de Common Data Service:  
   
         ```powershell  
         $CRMOrgs = Get-CrmOrganizations -Credential $Cred -DeploymentRegion NorthAmerica –OnlineType Office365  
@@ -121,7 +121,7 @@ Use el cmdlet `Get-CrmOrganizations` para recuperar las organizaciones a las que
         $CRMOrgs = Get-CrmOrganizations –ServerUrl http://<CRM_Server_Host> –Credential $Cred  
         ```      
   
-    -   If you’re connecting to the CDS for Apps server using the claims-based authentication against the specified Home realm:  
+    -   If you’re connecting to the Common Data Service server using the claims-based authentication against the specified Home realm:  
   
         ```powershell  
         $CRMOrgs = Get-CrmOrganizations –ServerUrl http://<CRM_Server_Host> –Credential $Cred –HomRealmURL http://<Identity_Provider_Address>  
@@ -134,39 +134,39 @@ Use el cmdlet `Get-CrmOrganizations` para recuperar las organizaciones a las que
     ```  
   
     <!-- TODO:
-     ![CDS for Apps organization information](../media/xrmtooling-powershell-1.png)   -->
+     ![Common Data Service organization information](../media/xrmtooling-powershell-1.png)   -->
   
     > [!TIP]
-    >  Puede usar la variable que se usó para almacenar las organizaciones de CDS para aplicaciones recuperadas (en este caso, `$CRMOrgs`) con el cmdlet `Get-CrmConnection` para conectarse a CDS para aplicaciones. Para especificar el nombre de la organización, utilice el siguiente comando: `$CRMOrgs.UniqueName`.  
+    >  Puede usar la variable que se usó para almacenar las organizaciones de Common Data Service recuperadas (en este caso, `$CRMOrgs`) con el cmdlet `Get-CrmConnection` para conectarse a Common Data Service. Para especificar el nombre de la organización, utilice el siguiente comando: `$CRMOrgs.UniqueName`.  
     >   
     >  Si hay más de un valor de organización almacenado en la variable `$CRMOrgs`, puede referirse a la organización `nth` con el siguiente comando: `$CRMOrgs[n-1]`. Por ejemplo, para referirse al nombre único de la segunda organización de la variable `$CRMOrgs`, use el siguiente comando: `$CRMOrgs[1].UniqueName`. Más información: [Acceso de valores en una matriz](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692791\(v=technet.10\))  
   
 <a name="ConnecttoCRM"></a>
    
-## <a name="use-the-cmdlet-to-connect-to-cds-for-apps"></a>Use el cmdlet para conectarse al servidor de CDS para aplicaciones  
+## <a name="use-the-cmdlet-to-connect-to-common-data-service"></a>Uso del cmdlet para conectarse a Common Data Service  
 
-Use el cmdlet `Get-CrmConnection` para conectarse a una instancia de CDS para aplicaciones. El cmdlet le permite usar el control común de inicio de sesión de los útiles de XRM para especificar sus credenciales y conectarse a CDS para aplicaciones o especificar sus credenciales como parámetros en línea. Más información: [Usar el control de inicio de sesión común de los útiles de XRM](use-xrm-tooling-common-login-control-client-applications.md)
+Usar cmdlet `Get-CrmConnection` para conectarse a una instancia de Common Data Service El cmdlet le permite usar el control común de inicio de sesión de los útiles de XRM para especificar sus credenciales y conectarse a Common Data Service o especificar sus credenciales como parámetros en línea. Más información: [Usar el control de inicio de sesión común de los útiles de XRM](use-xrm-tooling-common-login-control-client-applications.md)
 
 > [!IMPORTANT]
 > Antes de usar el cmdlet `Get-CrmConnection`, asegúrese de que usa el siguiente comando de aplicar el uso de TLS 1.2 por PowerShell para conectarse a la instancia de Customer Engagement:<br/>
 > `[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12`<br/>
 > Para obtener más información acerca de los requisitos de TLS 1.2 para la conexión de Customer Engagement: [Entrada de blog: Próximas actualizaciones para la seguridad de conexión de Dynamics 365 Customer Engagement](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)   
   
-### <a name="connect-to-cds-for-apps-by-using-the-common-login-control"></a>Conexión a CDS para aplicaciones mediante el control de inicio de sesión común  
+### <a name="connect-to-common-data-service-by-using-the-common-login-control"></a>Conexión a Common Data Service mediante el control de inicio de sesión común  
   
-1.  Si desea usar el control de inicio de sesión común para proporcionar sus credenciales para conectarse a CDS para aplicaciones, use el siguiente comando. La información de conexión se almacena en la variable `$CRMConn` para poder usarla más adelante.  
+1.  Si desea usar el control de inicio de sesión común para proporcionar sus credenciales para conectarse a Common Data Service, use el siguiente comando. La información de conexión se almacena en la variable `$CRMConn` para poder usarla más adelante.  
   
     ```powershell  
     $CRMConn = Get-CrmConnection -InteractiveMode  
     ```  
   
-2.  Se abre el cuadro de diálogo **LoginControl**. Especifique las credenciales para conectarse a la instancia de CDS para aplicaciones y haga clic en **Iniciar sesión**.  
+2.  Se abre el cuadro de diálogo **LoginControl**. Especifique las credenciales para conectarse a la instancia de Common Data Service y haga clic en **Iniciar sesión**.  
   
-### <a name="connect-to-cds-for-apps-by-specifying-credentials-inline"></a>Conexión a CDS para aplicaciones especificando las credenciales en línea  
+### <a name="connect-to-common-data-service-by-specifying-credentials-inline"></a>Conectarse a Common Data Service especificando credenciales en línea  
   
-1.  Para conectarse a CDS para aplicaciones, use los comandos siguientes. Tenga en cuenta que estos comandos usan la variable `$Cred` que se creó anteriormente para almacenar las credenciales mientras se recuperaban las organizaciones. La información de conexión se guarda en la variable `$CRMConn`:
+1.  Para conectarse a Common Data Service, utilice los comandos siguientes. Tenga en cuenta que estos comandos usan la variable `$Cred` que se creó anteriormente para almacenar las credenciales mientras se recuperaban las organizaciones. La información de conexión se guarda en la variable `$CRMConn`:
 
-    <!-- -   If you’re connecting to a CDS for Apps instance:   -->
+    <!-- -   If you’re connecting to a Common Data Service instance:   -->
   
         ```powershell  
         $CRMConn = Get-CrmConnection -Credential $Cred -DeploymentRegion <Deployment region name> –OnlineType Office365 –OrganizationName <OrgName>  
@@ -182,7 +182,7 @@ Use el cmdlet `Get-CrmConnection` para conectarse a una instancia de CDS para ap
         $CRMConn = Get-CrmConnection –ServerUrl http://<CRM_Server_Host> -Credential $Cred -OrganizationName <OrgName>  
         ```
   
-    -   If you’re connecting to the CDS for Apps server using the claims-based authentication against the specified Home realm:  
+    -   If you’re connecting to the Common Data Service server using the claims-based authentication against the specified Home realm:  
   
         ```powershell  
         $CRMConn = Get-CrmConnection –ServerUrl http://<CRM_Server_Host> -Credential $Cred -OrganizationName <OrgName> –HomRealmURL http://<Identity_Provider_Address>  
@@ -198,10 +198,10 @@ Use el cmdlet `Get-CrmConnection` para conectarse a una instancia de CDS para ap
     ```  
   
     <!--TODO:
-     ![CDS for Apps connection information and status](../media/xrm-tooling-powershell-2.png "CDS for Apps connection information and status")   -->
+     ![Common Data Service connection information and status](../media/xrm-tooling-powershell-2.png "Common Data Service connection information and status")   -->
   
 ### <a name="see-also"></a>Vea también
   
-[Use la API de útiles de XRM para conectarse a CDS para aplicaciones](use-crmserviceclient-constructors-connect.md)<br />
+[Uso de la API de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
 [Crear aplicaciones cliente de Windows mediante las herramientas XRM](build-windows-client-applications-xrm-tools.md)<br />
 [Blog: Módulo de PowerShell para realizar operaciones de datos y manipular la configuración de usuarios y del sistema en CRM](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

@@ -1,5 +1,5 @@
 ---
-title: Usar una clave alternativa para crear un registro (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar una clave alternativa para crear un registro (Common Data Service) | Microsoft Docs
 description: Se pueden utilizar teclas alternativas para crear instancias de clases Entity y EntityReference. Este tema analiza los patrones de uso y las excepciones posibles que se pueden lanzar cuando se usan claves alternativas.
 ms.custom: ''
 ms.date: 10/31/2018

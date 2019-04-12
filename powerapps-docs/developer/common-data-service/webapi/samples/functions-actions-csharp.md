@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo de funciones y acciones de API web (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
-description: 'Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones y C#.'
+title: 'Ejemplo de funciones y acciones de API web (C#) (Common Data Service) | Microsoft Docs'
+description: 'Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service y C#.'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Ejemplo de funciones y acciones de la API web (C#)
 
-Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones.  
+Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service.  
   
 > [!NOTE]
 > Este ejemplo implementa las operaciones detalladas en el [Ejemplo de funciones y acciones de la API web](../web-api-functions-actions-sample.md) y utiliza las construcciones comunes del lado cliente C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
@@ -31,7 +31,7 @@ Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlaz
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Los requisitos previos de todos los ejemplos en C# de la API web de Common Data Service para aplicaciones se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
+Los requisitos previos de todos los ejemplos en C# de la API web de Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_runSample"></a>
 
@@ -42,7 +42,7 @@ Vaya a [Ejemplo de funciones y acciones de la API web (C#)](https://github.com/M
 |Archivo|Objetivo/descripción|  
 |----------|--------------------------|  
 |SampleProgram.cs|Contiene el código de origen primario para este ejemplo.|  
-|App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de Common Data Service para aplicaciones con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
+|App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de Common Data Service con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
 |SampleHelper.cs|Contiene el código auxiliar para ayudar a realizar tareas comunes, como la configuración, la autenticación y la administración de errores de respuestas `HTTP`.<br/> Este archivo se comparte con todos los ejemplos de API web en el repositorio. Contiene métodos auxiliares para administrar excepciones y el token OAuth. Consulte el ejemplo simple de la API web para obtener más información sobre los métodos de este archivo.|
 |SampleMethod.cs|Contiene todos los métodos que admiten el código de origen en el ejemplo. Las funciones que se usan en `SampleProgram.cs` se pueden definir en este archivo. |
 |FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|El proyecto, la configuración del paquete NuGet, y los archivos de información de ensamblado de la solución Visual Studio 2017 estándar para este ejemplo.|  
@@ -52,7 +52,7 @@ A continuación, use el procedimiento siguiente para ejecutar este servicio.
   
 1. Busque y haga doble clic en el archivo de la solución, FunctionsAndActions.sln, para cargar la solución en Visual Studio. Cree la solución **FunctionsAndActions**.  Debe descargar e instalar automáticamente todos los paquetes NuGet necesarios que faltan o deben actualizarse.  
   
-2. Edite el archivo de configuración, App.config, para especificar información de conexión para el servidor de Common Data Service para aplicaciones.  
+2. Edite el archivo de configuración, App.config, para especificar información de conexión para el servidor de Common Data Service.  
   
 3. Ejecute el proyecto **FunctionsAndActions** desde Visual Studio.  Todas las soluciones de ejemplo se configuran para ejecutarse en modo de depuración de forma predeterminada.  
   
@@ -443,7 +443,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](../overview.md)<br />
+[Utilizar API Web de Common Data Service](../overview.md)<br />
 [Usar funciones de la API web](../use-web-api-functions.md)<br />
 [Usar acciones de la API web](../use-web-api-actions.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />

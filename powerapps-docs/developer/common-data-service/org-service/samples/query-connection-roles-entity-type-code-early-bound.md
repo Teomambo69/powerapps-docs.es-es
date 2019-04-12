@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: consulta de rol de conexión por el código de tipo de entidad (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: consulta de rol de conexión por el código de tipo de entidad (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo hacer una consulta a una conexión
 ms.custom: ''
 ms.date: 10/31/2018

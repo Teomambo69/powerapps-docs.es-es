@@ -1,5 +1,5 @@
 ---
-title: Servicio asincrónico (Common Data Service para aplicaciones) | Microsoft Docs
+title: Servicio asincrónico (Common Data Service) | Microsoft Docs
 description: Comprenda cómo funciona el servicio asincrónico que administra trabajos del sistema.
 ms.custom: ''
 ms.date: 11/27/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="asynchronous-service"></a>Servicio asincrónico
 
-El servicio asincrónico ejecuta operaciones a largo plazo independientemente del funcionamiento del núcleo de Common Data Service para aplicaciones principal. Esto permite un rendimiento general del sistema y una escalabilidad mejorados. El servicio asincrónico representa una cola primero en entrar, primero en salir (FIFO) administrada, para la ejecución de complementos registrados asincrónicos, de flujos de trabajo y operaciones como correo masivo, importación masiva y propagación de actividad de la campaña. Estas operaciones se registran con el servicio asincrónico y se ejecutan periódicamente cuando el servicio procesa la cola.
+El servicio asincrónico ejecuta operaciones a largo plazo independientemente del funcionamiento del núcleo de Common Data Service principal. Esto permite un rendimiento general del sistema y una escalabilidad mejorados. El servicio asincrónico representa una cola primero en entrar, primero en salir (FIFO) administrada, para la ejecución de complementos registrados asincrónicos, de flujos de trabajo y operaciones como correo masivo, importación masiva y propagación de actividad de la campaña. Estas operaciones se registran con el servicio asincrónico y se ejecutan periódicamente cuando el servicio procesa la cola.
 
 
 Después de que se produzca un evento y se hayan procesado todas las extensiones síncronas, la plataforma serializa el contexto de todas las extensiones asincrónicas y lo guarda en la base de datos como **trabajo del sistema** en [Entidad de AsyncOperation](reference/entities/asyncoperation.md). El trabajo del sistema define y sigue la ejecución de operaciones asincrónicas. A medida que se puede disponer de los recursos, los trabajos del sistema se procesan y las operaciones que definen se ejecutan. Cualquier operación de datos definida en la extensión se procesará de nuevo por la canalización de ejecución de eventos, pero este vez como operación sincrónica.

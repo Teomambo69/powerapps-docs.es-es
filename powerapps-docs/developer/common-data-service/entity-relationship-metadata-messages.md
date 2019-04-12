@@ -1,5 +1,5 @@
 ---
-title: Mensajes de metadatos de relaciones entre entidades (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Mensajes de metadatos de relaciones entre entidades (Common Data Service) | MicrosoftDocs
 description: 'El artículo describe los mensajes que se pueden usar para crear, recuperar, actualizar y eliminar relaciones entre entidades con la API web y el servicio de la organización.'
 ms.custom: ''
 ms.date: 10/31/2018

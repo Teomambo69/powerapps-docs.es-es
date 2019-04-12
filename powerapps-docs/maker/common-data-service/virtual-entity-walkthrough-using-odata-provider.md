@@ -1,10 +1,10 @@
 ---
-title: Recorrido por la entidad virtual usando el proveedor de datos de OData v4 en Common Data Service for Apps | MicrosoftDocs
+title: Recorrido por la entidad virtual usando el proveedor de datos de OData v4 en Common Data Service | MicrosoftDocs
 description: Aprenda a usar el proveedor de datos de OData v4 con una entidad virtual
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

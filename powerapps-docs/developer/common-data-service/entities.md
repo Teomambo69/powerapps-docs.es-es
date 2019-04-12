@@ -1,6 +1,6 @@
 ---
-title: Entidades de Common Data Service para aplicaciones | Microsoft Docs
-description: Conozca las entidades disponibles en Common Data Service para aplicaciones.
+title: Entidades de Common Data Service | Microsoft Docs
+description: Conozca las entidades disponibles en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -25,15 +25,15 @@ search.app:
 Was Mike Carter
 This topic was not migrated it was written for PowerApps 
 
-Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
+Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 
 -->
 
-# <a name="common-data-service-for-apps-entities"></a>Entidades de Common Data Service para aplicaciones
+# <a name="common-data-service-entities"></a>Entidades de Common Data Service
 
-Proporcionar almacenamiento para los datos es la función más importante de Common Data Service para aplicaciones. Common Data Service incluye un conjunto básico de entidades que proporcionan la estructura para los datos que utilizan las aplicaciones empresariales. 
+Proporcionar almacenamiento para los datos es la función más importante de Common Data Service. Common Data Service incluye un conjunto básico de entidades que proporcionan la estructura para los datos que utilizan las aplicaciones empresariales. 
 
-Puede ver el conjunto básico de entidades en [Common Data Service para aplicaciones](reference/about-entity-reference.md).
+Puede ver el conjunto básico de entidades en [Common Data Service](reference/about-entity-reference.md).
 
 ## <a name="modify-entities"></a>Modificar entidades
 
@@ -53,7 +53,7 @@ Hay varias formas de editar metadatos de entidad mediante un diseñadores.
 
 ### <a name="import-a-solution"></a>Importación de soluciones
 
-Las soluciones pueden contener metadatos de la entidad y otros componentes personalizados. Importar una solución administrada o no administrada aparecen en el inquilino de Common Data Service para aplicaciones incluirá esas entidades o extenderá las entidades existentes con los nuevos metadatos de la entidad que contienen.
+Las soluciones pueden contener metadatos de la entidad y otros componentes personalizados. Importar una solución administrada o no administrada aparecen en el inquilino de Common Data Service incluirá esas entidades o extenderá las entidades existentes con los nuevos metadatos de la entidad que contienen.
 
 ### <a name="from-a-data-source-using-power-query"></a>Desde un origen de datos mediante Power Query
 
@@ -61,7 +61,7 @@ Puede crear entidades y rellenarlas con datos mediante Power Query. Más informa
 
 ### <a name="use-metadata-services"></a>Usar servicios de metadatos
 
-Los servicios web expuestos en CDS for Apps incluyen funcionalidades para crear, leer, escribir y eliminar metadatos de entidades. Estos servicios se utilizan con más frecuencia para leer los metadatos porque esos datos pueden informar al código en tiempo de ejecución sobre cómo se ha personalizado el entorno. Más información: [Servicios de metadatos](metadata-services.md)
+Los servicios web expuestos en Common Data Service incluyen funcionalidades para crear, leer, escribir y eliminar metadatos de entidades. Estos servicios se utilizan con más frecuencia para leer los metadatos porque esos datos pueden informar al código en tiempo de ejecución sobre cómo se ha personalizado el entorno. Más información: [Servicios de metadatos](metadata-services.md)
 
 ## <a name="entity-metadata"></a>Metadatos de la entidad
 
@@ -86,6 +86,6 @@ Los metadatos de la entidad incluyen la información siguiente:
 
 ### <a name="see-also"></a>Vea también
 
-[Información general para desarrolladores de Common Data Service para aplicaciones](overview.md)
+[Información general de Common Data Service](overview.md)
 
 

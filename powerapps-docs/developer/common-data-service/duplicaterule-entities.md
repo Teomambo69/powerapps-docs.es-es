@@ -1,5 +1,5 @@
 ---
-title: Entidades de reglas de duplicados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de reglas de duplicados (Common Data Service) | Microsoft Docs
 description: Estas entidades contienen datos que definen las reglas de detección de duplicados.
 ms.custom: ''
 ms.date: 10/31/2018

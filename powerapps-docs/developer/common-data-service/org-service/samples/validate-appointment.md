@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Validar una cita (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Validar una cita (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo validar una cita
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-validate-an-appointment"></a>Ejemplo: validar una cita
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-validate-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-validate-appointment -->
 
-En este ejemplo se muestra cómo validar una cita usando el mensaje [ValidateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment).
+En este ejemplo se muestra cómo validar una cita usando el mensaje [ValidateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

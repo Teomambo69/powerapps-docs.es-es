@@ -1,5 +1,5 @@
 ---
-title: Usar webhooks para crear los controladores externos para eventos de servidor (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar webhooks para crear los controladores externos para eventos de servidor (Common Data Service) | Microsoft Docs
 description: Puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Utilice webhooks para crear controladores externos para eventos de servidor
 
-Con Common Data Service para aplicaciones, puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
+Con Common Data Service, puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
 
 Los webhooks permiten a desarrolladores e ISV integrar datos de Customer Engagement en su propio código personalizado hospedado en servicios externos. Con el modelo de webhooks, puede proteger el extremo usando un encabezado de autenticación o claves de parámetro de string de consulta. Esto es más sencillo que el modelo de autenticación SAS que se puede usar actualmente para la integración de Azure Service Bus.
 
 Cuando decida entre el modelo de webhook y la integración de Azure Service Bus, aquí se muestran algunos elementos a tener en cuenta:
 
-- Azure Service Bus funciona para un procesamiento de alta escala y proporciona un mecanismo completo de puesta en cola si CDS para aplicaciones está impulsando muchos eventos.
+- Azure Service Bus funciona para un procesamiento de alta escala y proporciona un mecanismo completo de puesta en cola si Common Data Service está impulsando muchos eventos.
 - Los webhooks solo se pueden escalar al punto en el que el servicio web hospedado puede controlar los mensajes.
 - Los webhooks permiten pasos sincrónicos y asincrónicos. Azure Service Bus solo permite pasos asincrónicos.
 - Los webhooks envian solicitudes POST con carga JSON y pueden ser consumidos por cualquier lenguaje de programación o aplicación web hospedada en cualquier lugar.
@@ -35,12 +35,12 @@ Cuando decida entre el modelo de webhook y la integración de Azure Service Bus,
 Existen tres partes para utilizar webhooks:
 
 - Crear o configurar un servicio para consumir solicitudes de webhook.
-- Registrar paso de webhook en el servicio de CDS para aplicaciones o
+- Registrar el paso de webhook en Common Data Service, o
 - Llamar un webhook desde un complemento o actividad personalizada de flujo de trabajo. 
 
 ### <a name="start-by-registering-a-test-webhook"></a>Empezar registrando un webhook de prueba
 
-Para comprender cómo crear y configurar un servicio para consumir una solicitud de webhook de CDS para aplicaciones, conviene empezar entendiendo cómo registrar un webhook. Más información: [Registrar un webhook](register-web-hook.md)
+Para comprender cómo crear y configurar un servicio para consumir una solicitud de webhook de Common Data Service, conviene empezar entendiendo cómo registrar un webhook. Más información: [Registrar un webhook](register-web-hook.md)
 
 Cuando haya registrado un webhook de ejemplo puede usar un sitio de registro de solicitudes para explorar los datos contextuales que se pasarán. Más información: [Probar registro de webhook con sitio de registro de solicitudes](test-webhook-registration.md)
 
@@ -359,8 +359,8 @@ Si su webhook se registra para ejecutarse de forma asincrónica, puede examinar 
 ### <a name="see-also"></a>Vea también
 
 [Escribir un complemento](write-plug-in.md)<br />
-[Registrar un complemento](register-plug-in.md)<br />
-[Servicio asincrónico de CDS para aplicaciones](asynchronous-service.md)<br />
+[Registro de un complemento](register-plug-in.md)<br />
+[Servicio asincrónico de Common Data Service](asynchronous-service.md)<br />
 [Ejemplo: complemento personalizado con Azure](/org-service/samples/azure-aware-custom-plugin.md)<br />
 [Ejemplo: actividad personalizada de flujo de trabajo basada en Azure](org-service/samples/azure-aware-custom-workflow-activity.md)<br />
 [Funciones de Azure](https://azure.microsoft.com/services/functions/)<br />

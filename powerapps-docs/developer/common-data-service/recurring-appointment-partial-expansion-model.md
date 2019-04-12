@@ -1,5 +1,5 @@
 ---
-title: Modelo parcial de la extensión de citas periódicas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Modelo parcial de la extensión de citas periódicas (Common Data Service) | Microsoft Docs
 description: El modelo de expansión parcial es un trabajo asincrónico que se ejecuta a intervalos predefinidos y se define en el nivel de organización y se usa para crear instancias de citas recurrentes.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>Modelo de expansión parcial de citas periódicas
 
-Common Data Service para aplicaciones implementa un modelo de expansión parcial para crear repeticiones de citas periódicas en la base de datos. La información de periodicidad, que se especifica al crear un registro `RecurringAppointmentMaster`, se usa para crear o sincronizar repeticiones individuales por fases. De esta forma se controla la creación de un gran número de registros de cita en CDS para aplicaciones debido a la creación o sincronización de citas periódicas que tienen un intervalo de periodicidad grande o infinito (que no tienen fecha de finalización).  
+Common Data Service implementa un modelo de expansión parcial para crear repeticiones de citas periódicas en la base de datos. La información de periodicidad, que se especifica al crear un registro `RecurringAppointmentMaster`, se usa para crear o sincronizar repeticiones individuales por fases. De esta forma se controla la creación de un gran número de registros de cita en Common Data Service debida a la creación o sincronización de citas periódicas que tienen un intervalo de periodicidad grande o infinito (que no tienen fecha de finalización).  
 
- El modelo de expansión parcial es un trabajo asincrónico en CDS para aplicaciones que se ejecuta a intervalos predefinidos y se define en el nivel de organización mediante el atributo de `Organization.RecurrenceExpansionJobBatchInterval`. Además, el modelo de expansión de repeticiones depende de un parámetro en el nivel de organización, por ejemplo, “N”, donde “N” representa el número máximo de repeticiones que se pueden crear forma sincrónica. Puede especificar un valor apropiado para esta variable mediante el atributo `Organization.RecurrenceExpansionSynchCreateMax`. Estas propiedades se describen en detalle la sección [Parámetros para el trabajo de expansión parcial](#Parameter) más adelante.  
+ El modelo de expansión parcial es un trabajo asincrónico en Common Data Service que se ejecuta a intervalos predefinidos y se define en el nivel de organización mediante el atributo de `Organization.RecurrenceExpansionJobBatchInterval`. Además, el modelo de expansión de repeticiones depende de un parámetro en el nivel de organización, por ejemplo, “N”, donde “N” representa el número máximo de repeticiones que se pueden crear forma sincrónica. Puede especificar un valor apropiado para esta variable mediante el atributo `Organization.RecurrenceExpansionSynchCreateMax`. Estas propiedades se describen en detalle la sección [Parámetros para el trabajo de expansión parcial](#Parameter) más adelante.  
 
 <a name="Scenario1"></a>   
 ## <a name="when-the-recurring-appointment-instances-are-less-than-or-equal-to-n"></a>Cuando las repeticiones de una cita periódica son “N” o menos  
- Si el número de repeticiones que se van a generar debido a la información de periodicidad es igual o menor que “N”, se crea dicho número de repeticiones forma sincrónica a partir de la fecha de inicio efectiva de la cita. Cada repetición se almacena como un registro de cita en CDS para aplicaciones.  
+ Si el número de repeticiones que se van a generar debido a la información de periodicidad es igual o menor que “N”, se crea dicho número de repeticiones forma sincrónica a partir de la fecha de inicio efectiva de la cita. Cada repetición se almacena como un registro de cita en Common Data Service.  
 
 <a name="Scenario2"></a>   
 
 ## <a name="when-the-recurring-appointment-instances-are-more-than-n"></a>Cuando las repeticiones de una cita periódica son más de “N”  
- Para cada cita periódica creada en CDS para aplicaciones, se crea un trabajo de expansión asincrónico. Las repeticiones de la cita periódica se expanden en las siguientes fases:  
+ Para cada cita periódica creada en Common Data Service, se crea un trabajo de expansión asincrónico. Las repeticiones de la cita periódica se expanden en las siguientes fases:  
 
 1. **Expansión sincrónica**: las primeras “N” repeticiones de la cita periódica se crean de forma sincrónica desde la fecha de inicio efectiva. Cada repetición se almacena como un registro de cita con el atributo `Appointment.InstanceTypeCode` establecido en “2” (repetición periódica). La expansión del resto de las repeticiones se pasa a un trabajo asincrónico. La fecha de inicio efectiva es la fecha a partir de la cual se debe expandir la serie de citas periódicas.  
 

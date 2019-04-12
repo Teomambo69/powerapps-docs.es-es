@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Trabajar con el servicio de detección <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Trabajar con el servicio de detección <Topic Title> (Common Data Service) | Microsoft Docs'
 description: Este código de muestra cómo usar los servicios de detección
 ms.custom: ''
 ms.date: 10/31/2018

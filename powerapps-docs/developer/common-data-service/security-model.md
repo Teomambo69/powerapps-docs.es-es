@@ -1,5 +1,5 @@
 ---
-title: Modelo de seguridad (Common Data Service para aplicaciones) | Microsoft Docs
+title: Modelo de seguridad (Common Data Service) | Microsoft Docs
 description: 'PowerApps ofrece un modelo de seguridad que protege la integridad y privacidad de los datos, y admite una colaboración y un acceso a los datos eficaces'
 ms.custom: ''
 ms.date: 10/31/2018

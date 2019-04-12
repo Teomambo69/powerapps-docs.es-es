@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de operaciones básicas de API web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejemplo de operaciones básicas de API web (Common Data Service) | Microsoft Docs
 description: 'Este grupo de ejemplos demuestra cómo realizar operaciones CRUD (crear, recuperar, actualizar y eliminar) mediante la API web. Estos están implementados mediante JavaScript del lado cliente y C#'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-basic-operations-sample"></a>Ejemplo de operaciones básicas de la API web
 
-Este grupo de ejemplos demuestra cómo realizar operaciones básicas CRUD (crear, recuperar, actualizar y eliminar) y asociativas mediante la API web de Common Data Service para aplicaciones.  
+Este grupo de ejemplos demuestra cómo realizar operaciones básicas CRUD (crear, recuperar, actualizar y eliminar) y asociativas mediante la API web de Common Data Service.  
   
 -   [Ejemplo de operaciones básicas de la API web (C#)](samples/basic-operations-csharp.md)  
   
@@ -33,7 +33,7 @@ Este grupo de ejemplos demuestra cómo realizar operaciones básicas CRUD (crear
  
 ## <a name="demonstrates"></a>Demostraciones  
 
-Este ejemplo se divide en las siguientes secciones, que contienen operaciones de datos de consulta de la API web de CDS para aplicaciones que se describen minuciosamente en los temas conceptuales asociados especificados.  
+Este ejemplo se divide en las siguientes secciones, que contienen operaciones de datos de consulta de la API web de Common Data Service que se describen minuciosamente en los temas conceptuales asociados especificados.  
   
 |Sección de código|Temas conceptuales asociados|  
 |------------------|----------------------------------|  
@@ -44,7 +44,7 @@ Este ejemplo se divide en las siguientes secciones, que contienen operaciones de
 |[Sección 5: Eliminar entidades (limpieza de ejemplo)](#bkmk_section5)|[Eliminación básica](update-delete-entities-using-web-api.md#bkmk_delete)|  
   
 > [!NOTE]
->  Para razones de brevedad, se han omitido los encabezados HTTP menos pertinentes. Las direcciones URL de los registros variarán con la dirección de la organización base y el identificador del registro asignado por el servidor de CDS para aplicaciones.  
+>  Para razones de brevedad, se han omitido los encabezados HTTP menos pertinentes. Las direcciones URL de los registros variarán con la dirección de la organización base y el identificador del registro asignado por el servidor de Common Data Service.  
   
 <a name="bkmk_section1"></a>
    
@@ -855,7 +855,7 @@ This section demonstrates how to delete entity instances. The corresponding mess
   
 ### <a name="see-also"></a>Vea también  
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
 [Cree una entidad usando API web](create-entity-web-api.md)<br />
 [Recuperar una entidad usando API web](retrieve-entity-using-web-api.md)<br />
 [Actualizar y eliminar entidades mediante la API web](update-delete-entities-using-web-api.md)<br />

@@ -1,5 +1,5 @@
 ---
-title: Escribir un complemento (Common Data Service para aplicaciones) | Microsoft Docs
+title: Escribir un complemento (Common Data Service) | Microsoft Docs
 description: Obtener información sobre los conceptos y los detalles técnicos necesarios para escribir complementos
 ms.custom: ''
 ms.date: 10/31/2018

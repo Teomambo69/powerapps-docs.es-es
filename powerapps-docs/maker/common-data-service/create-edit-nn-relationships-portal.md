@@ -1,10 +1,10 @@
 ---
-title: Crear relaciones entre entidades de varios a varios en Common Data Service para aplicaciones mediante el portal PowerApps | MicrosoftDocs
+title: Crear relaciones entre entidades de varios a varios en Common Data Service mediante el portal PowerApps | MicrosoftDocs
 description: Aprender a crear relaciones de varios a varios
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,13 +22,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="create-many-to-many-entity-relationships-in-common-data-service-for-apps-using-powerapps-portal"></a>Crear relaciones entre entidades de varios a varios en Common Data Service para aplicaciones mediante el portal PowerApps
+# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-powerapps-portal"></a>Crear relaciones entre entidades de varios a varios en Common Data Service mediante el portal PowerApps
 
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma de crear y editar relaciones entre entidades de varios a varios para Common Data Service para aplicaciones.
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma de crear y editar relaciones entre entidades de varios a varios para Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
 - [Crear relaciones entre entidades N:N (varios a varios)](create-edit-nn-relationships.md)
-- [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service para aplicaciones mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)
+- [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)
 
 ## <a name="view-many-to-many-entity-relationships"></a>Ver relaciones entre entidades de varios a varios
 
@@ -86,4 +86,4 @@ Al eliminar la relación de varios a varios se eliminará la entidad de relació
 ### <a name="see-also"></a>Vea también
 
 [Crear relaciones entre entidades N:N (varios a varios)](create-edit-nn-relationships.md)<br />
-[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service para aplicaciones mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)
+[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)

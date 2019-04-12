@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear y recuperar filtros de Outlook (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear y recuperar filtros de Outlook (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar filtros para Microsoft Dynamics 365 for Outlook
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>Ejemplo: crear y recuperar filtros de Outlook
 
-Este código de ejemplo es para Common Data Service para aplicaciones. Para descargar el ejemplo, consulte [ejemplo: crear y recuperar filtros de Outlook](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
+Este código de ejemplo es para Common Data Service. Para descargar el ejemplo, consulte [ejemplo: crear y recuperar filtros de Outlook](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

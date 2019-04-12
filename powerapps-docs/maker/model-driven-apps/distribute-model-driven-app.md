@@ -3,7 +3,7 @@ title: Distribuir una aplicación controlada por modelos usando una solución | 
 description: Aprenda a distribuir una aplicación controlada por modelos usando soluciones
 keywords: ''
 ms.date: 08/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:

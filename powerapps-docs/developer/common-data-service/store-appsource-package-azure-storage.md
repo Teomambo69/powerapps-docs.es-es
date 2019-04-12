@@ -1,5 +1,5 @@
 ---
-title: 'Paso 5: Almacenar el paquete de AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Paso 5: Almacenar el paquete de AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service) | Microsoft Docs'
 description: 'Para mantener la seguridad de los archivos, todos los desarrolladores de aplicaciones deben almacenar su archivo de paquete AppSource en una cuenta de almacenamiento del objeto binario de Microsoft Azure y usar una clave de firma de acceso compartido (SAS) para compartir el archivo de paquete. El archivo de paquete se recupera de la ubicación de Azure Storage para certificación y, después, para versiones de prueba de AppSource.'
 ms.custom: ''
 ms.date: 10/31/2018

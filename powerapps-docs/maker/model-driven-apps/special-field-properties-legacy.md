@@ -1,7 +1,7 @@
 ---
 title: Propiedades de campos especiales de aplicaciones controladas por modelos para formularios principales en PowerApps | MicrosoftDocs
 description: Comprender las propiedades de campo especial para formularios principales
-Keywords: Main forms; Special field properties; Dynamics 365
+Keywords: Formularios principales; Propiedades de campos especiales; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 6ad7e43c-b6a1-48c4-9dfb-ed830142a841
 search.audienceType:

@@ -1,5 +1,5 @@
 ---
-title: Acerca de referencia de entidades (Common Data Service para aplicaciones) | Microsoft Docs
+title: Acerca de referencia de entidades (Common Data Service) | Microsoft Docs
 description: 'Utilice esta referencia para comprender las operaciones disponibles que se pueden realizar para entidades específicas, los atributos predeterminados de cada entidad y las relaciones entre entidades.'
 services: ''
 suite: powerapps
@@ -35,7 +35,7 @@ Utilice esta referencia para comprender las operaciones disponibles que se puede
 > - La entidad admite algún tipo de operación de modificación de datos directa.
 >    - Esto excluye entidades con las que no puede trabajar directamente. 
 >
-> Para ver toda la información de metadatos de una entidad de su entorno, vea [Guía de desarrolladores de CDS for Apps: Exploración de los metadatos de su organización](/dynamics365/customer-engagement/developer/browse-your-metadata).
+> Para ver toda la información de metadatos de una entidad de su entorno, vea [Guía de desarrolladores de Common Data Service: Exploración de los metadatos de su organización](/dynamics365/customer-engagement/developer/browse-your-metadata).
 
 
 ## <a name="entity-properties"></a>Propiedades de entidad
@@ -73,7 +73,7 @@ Para cada relación de uno a varios las propiedades siguientes se incluyen:
 |`ReferencingAttribute`|El nombre lógico del atributo de la entidad relacionada que contiene una referencia a la clave principal de la entidad principal.|
 |`IsHierarchical`|Si la relación representa una relación jerárquica como que se hace referencia a sí misma.|
 |`IsCustomizable`|Si las propiedades de la relación se pueden cambiar.|
-|`ReferencedEntityNavigationPropertyName`|El nombre de la propiedad de navegación valorada como colección de la API web para esta relación.<br />Más información:[Propiedades de navegación de la guía del desarrollador de Common Data Service para aplicaciones](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`ReferencedEntityNavigationPropertyName`|El nombre de la propiedad de navegación valorada como colección de la API web para esta relación.<br />Más información:[Propiedades de navegación de la guía del desarrollador de Common Data Service](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`AssociatedMenuConfiguration`|Datos usados por aplicaciones basadas en modelos para controlar si y cómo se puede acceder a los datos de la entidad relacionada en la interfaz de usuario de la entidad principal.|
 |`CascadeConfiguration`|Datos que describen qué operaciones realizadas en la entidad principal se ejecutarán en cascada sobre las entidades relacionadas.<br />Más información: [Configuración en cascada](../entity-relationship-metadata.md#cascade-configuration)|
 
@@ -88,7 +88,7 @@ Para cada relación de varios a varios las propiedades siguientes se incluyen:
 |`IntersectEntityName`|El nombre lógico de la entidad de intersección que admite esta relación de varios a varios|
 |`Entity1LogicalName`|El nombre lógico de la primera entidad de la relación.|
 |`Entity1IntersectAttribute`|El nombre lógico del atributo de la entidad de intersección que incluye una referencia a la clave principal de la primera entidad.|
-|`Entity1NavigationPropertyName`|El nombre de la propiedad de navegación valorada como colección de la API web para esta relación.<br />Más información: [Propiedades de navegación de la guía del desarrollador de Common Data Service para aplicaciones](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`Entity1NavigationPropertyName`|El nombre de la propiedad de navegación valorada como colección de la API web para esta relación.<br />Más información: [Propiedades de navegación de la guía del desarrollador de Common Data Service](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`Entity1AssociatedMenuConfiguration`|Datos usados por aplicaciones basadas en modelos para controlar si y cómo se puede acceder a los primeros datos de la entidad relacionada en la interfaz de usuario de la segunda entidad.|
 |`Entity2LogicalName`|El nombre lógico de la segunda entidad de la relación.|
 |`Entity2IntersectAttribute`|El nombre lógico del atributo de la entidad de intersección que incluye una referencia a la clave principal de la segunda entidad.|

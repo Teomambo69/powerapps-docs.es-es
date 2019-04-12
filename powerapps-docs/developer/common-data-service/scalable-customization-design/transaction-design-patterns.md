@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: Patrones de diseño de transacciones de bases de datos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: Patrones de diseño de transacciones de bases de datos (Common Data Service) | Microsoft Docs'
 description: 'El cuarto de una serie de temas. '
 ms.custom: ''
 ms.date: 11/18/2018
@@ -18,17 +18,17 @@ search.app:
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Diseño de la personalización escalable: Patrones de diseño de transacciones
 
 > [!NOTE]
-> Este es el cuarto de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md).
+> Este es el cuarto de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service](overview.md).
 
 Esta sección describe los patrones de diseño a evitar o minimizar y sus implicaciones. Cada patrón de diseño debe considerarse en el contexto del problema empresarial que se va a solucionar y puede resultar útil como opciones a investigar.
 
 ## <a name="dont-avoid-locking"></a>No evitar el bloqueo
 
-El bloqueo es un componente muy importante de SQL Server y de CDS para aplicaciones, y es esencial para el funcionamiento adecuado y la coherencia del sistema. Por este motivo es importante comprender las implicaciones en el diseño, sobre todo a escala.
+El bloqueo es un componente muy importante de SQL Server y de Common Data Service, y es esencial para el funcionamiento adecuado y la coherencia del sistema. Por este motivo es importante comprender las implicaciones en el diseño, sobre todo a escala.
 
 ## <a name="transaction-usage-nolock-hint"></a>Use de transacciones: Sugerencia Nolock
 
-Una funcionalidad de CDS para aplicaciones que utilizan mucho las vistas es la capacidad de especificar que una consulta pueda realizarse con una sugerencia Nolock, que indica a la base de datos de que no se necesita un bloqueo para esta consulta. 
+Una funcionalidad de plataforma de Common Data Service que utilizan mucho las vistas es la capacidad de especificar que una consulta pueda realizarse con una sugerencia Nolock, que indica a la base de datos de que no se necesita un bloqueo para esta consulta. 
 
 Las vistas usan este método porque no hay un vínculo directo entre la acción de iniciar la vista y las acciones posteriores. Otras actividades puede producirlas bien ese usuario u otros y no es práctico ni ventajoso bloquear la tabla completa de datos que muestra la vista mientras hasta que el usuario prosiga. 
 
@@ -139,9 +139,9 @@ Pese a que diseñar varios niveles de actividad funcional es una buena práctica
  
 En la administración de casos, primero se activa la actualización de un caso con un propietario predeterminado en función del cliente y después tener un proceso independiente para enviar automáticamente comunicaciones a ese cliente y actualizar la última fecha de contacto para el caso es una acción perfectamente lógica para hacer funcionalmente. 
 
-La dificultad, sin embargo, es que esto significa que hay varias solicitudes a CDS para aplicaciones para actualizar el mismo registro, que tiene varias implicaciones:
+La dificultad, sin embargo, es que esto significa que hay varias solicitudes a Common Data Service para actualizar el mismo registro, que tiene varias implicaciones:
 
-- Cada petición es una actualización independiente de la plataforma, lo que aumenta la carga total al servidor de CDS para aplicaciones y la duración total de la transacción, lo que aumenta la posibilidad de bloqueo.
+- Cada petición es una actualización independiente de la plataforma, lo que aumenta la carga total al servidor de Common Data Service y la duración total de la transacción, lo que aumenta la posibilidad de bloqueo.
 - También significa que el registro de casos se bloqueará en la primera acción realizada en ese caso, lo que indica que el bloqueo está retenido en el resto de la transacción. Si acceden al caso múltiples procesos en paralelo de varios registros, esto podría bloquear otras actividades. 
 
 La consolidación de actualizaciones en el mismo registro para un solo paso de actualización, y después en la transacción, puede ser muy ventajoso para la escalabilidad total, sobre todo si el registro es muy polémico o muchas personas obtienen acceso a él rápidamente tras la creación, por ejemplo, como con un caso.
@@ -150,9 +150,9 @@ Decidir si consolidar actualizaciones en el mismo registro para un solo proceso 
 
 ## <a name="only-update-things-you-need-to"></a>Actualizar solo lo que se necesita
 
-Pese a que sea importante no reducir las ventajas de un sistema de CDS para aplicaciones excluyendo actividades que pueden ser beneficiosas, a menudo se efectúan solicitudes para incluir personalizaciones que agregan muy poco valor empresarial pero entrañan una gran complejidad técnica.
+Pese a que sea importante no reducir las ventajas de un sistema de Common Data Service excluyendo actividades que pueden ser beneficiosas, a menudo se efectúan solicitudes para incluir personalizaciones que agregan muy poco valor empresarial pero entrañan una gran complejidad técnica.
  
-Si cada vez que se crea una tarea también se actualiza el registro de usuario con el número de tareas que han asignado, esto podría presentar un nivel secundario de bloqueo ya que el registro del usuario ahora estría muy disputado. Agregaría otro recurso que cada solicitud tendría que bloquear o por el que esperar, pese a que no fuera fundamental para la acción. En este ejemplo, considere detenidamente si almacenar el recuento de tareas con respecto al usuario es importante o si el recuento se puede calcular a petición o almacenarse en otra parte como usando las funcionalidades de jerarquía y campo consolidado para CDS para aplicaciones de forma nativa. 
+Si cada vez que se crea una tarea también se actualiza el registro de usuario con el número de tareas que han asignado, esto podría presentar un nivel secundario de bloqueo ya que el registro del usuario ahora estría muy disputado. Agregaría otro recurso que cada solicitud tendría que bloquear o por el que esperar, pese a que no fuera fundamental para la acción. En este ejemplo, considere detenidamente si almacenar el recuento de tareas con respecto al usuario es importante o si el recuento se puede calcular a petición o almacenarse en otra parte como usando las funcionalidades de jerarquía y campo consolidado para Common Data Service de forma nativa. 
 
 ![Ejemplo de problema que ilustra las actualizaciones que no son necesarias](media/only-update-things-you-need-to.png)
 
@@ -177,12 +177,12 @@ Un interacción entre diferentes comportamientos necesita a menudo considerarse 
 |Validación previa|Sincrónico|Complemento|Validación a corto plazo de los valores de entrada|Acciones de ejecución prolongada.<br /><br />Cuando se crean elementos relacionados que se deben revertirse si los pasos posteriores no se realizan correctamente.|
 |Operación previa|Sincrónico|Flujo de trabajo/Complemento|Validación a corto plazo de los valores de entrada.<br /><br />Cuando se crean elementos relacionados que se deben revertirse como parte de un error en el paso de la plataforma.|Acciones de ejecución prolongada.<br /><br />Cuando se crea un elemento y el GUID resultante deberá ser almacenado según el elemento que creará o actualizará el paso de la plataforma.|
 |Operación posterior |Sincrónico|Flujo de trabajo/Complemento|Acciones corta ejecución que sigan naturalmente el paso de la plataforma y necesiten revertirse si se producen errores en los pasos posteriores, por ejemplo, la creación de una tarea para el propietario de una cuenta recién creada.<br /><br />Creación de los elementos relacionados que necesita el GUID del elemento creado y que deben revertir el paso de la plataforma en caso de error.|Acciones de ejecución prolongada.<br /><br />Si el error no debería afectar a la terminación del paso de la canalización de la plataforma.|
-|No en la canalización de eventos|Asincrónico|Flujo de trabajo/Complemento|Acciones de duración media de podrían tener una repercusión en la experiencia de usuario.<br /><br />Acciones que no se pueden revertir de ninguna forma en de error.<br /><br />Acciones que no deberían forzar la reversión del paso de la plataforma en caso de error.|Acciones de ejecución muy prolongada.<br /><br />No se deben administrar en CDS para aplicaciones.<br /><br />Acciones de coste muy bajo. La sobrecarga de generar el comportamiento de asincrónico para acciones de coste muy bajo puede ser prohibitiva; en lo posible realícelas de forma sincrónica y evite la sobrecarga de un procesamiento asincrónico.|
+|No en la canalización de eventos|Asincrónico|Flujo de trabajo/Complemento|Acciones de duración media de podrían tener una repercusión en la experiencia de usuario.<br /><br />Acciones que no se pueden revertir de ninguna forma en de error.<br /><br />Acciones que no deberían forzar la reversión del paso de la plataforma en caso de error.|Acciones de ejecución muy prolongada.<br /><br />No se deben administrar en Common Data Service.<br /><br />Acciones de coste muy bajo. La sobrecarga de generar el comportamiento de asincrónico para acciones de coste muy bajo puede ser prohibitiva; en lo posible realícelas de forma sincrónica y evite la sobrecarga de un procesamiento asincrónico.|
 |N/D<br />Toma el contexto de la ubicación desde donde se invoca||Acciones personalizadas|Combinaciones de acciones iniciadas desde un origen externo, por ejemplo, en un recurso web|Cuando se desencadene siempre en respuesta a un evento de la plataforma, use el complemento/flujo de trabajo en esos casos.|
 
 ## <a name="plug-insworkflows-arent-batch-processing-mechanisms"></a>Los complementos y los flujos de trabajo no son mecanismos de procesamiento por lotes
 
-Las acciones muy duraderas o de gran volumen no están dirigidas a ejecutarse desde complementos o flujos de trabajo. CDS para aplicaciones no está diseñada para ser una plataforma de cálculo y en particular no está diseñada especialmente como el controlador para generar grandes grupos de actualizaciones no relacionadas.
+Las acciones muy duraderas o de gran volumen no están dirigidas a ejecutarse desde complementos o flujos de trabajo. Common Data Service no está diseñada para ser una plataforma de cálculo y en particular no está diseñada especialmente como el controlador para generar grandes grupos de actualizaciones no relacionadas.
 
 Si tiene necesidad de hacer eso, descárguelo y ejecútelo desde un servicio independiente, como un rol de trabajador de Azure. 
 
@@ -215,7 +215,7 @@ Un área muy común de ampliación es la escalabilidad de configurar la segurida
 
 ## <a name="diagram-related-actions"></a>Diagrama de las acciones relacionadas
 
-Una actividad que es muy beneficiosa como medida preventiva, así como herramienta para diagnosticar problemas de bloqueo, es hacer un diagrama de las acciones relacionados desencadenadas en la plataforma de CDS para aplicaciones. Al hacerlo ayuda a resaltar las dependencias intencionales e involuntarias y se desencadena en el sistema. Si no puede hacerlo para su solución, puede que no tenga una clara imagen de lo cómo funciona la implementación realmente. Crear un diagrama así puede poner de manifiesto consecuencias involuntarias y es una buena práctica en cualquier momento en una implementación. 
+Una actividad que es muy beneficiosa como medida preventiva, así como herramienta para diagnosticar problemas de bloqueo, es hacer un diagrama de las acciones relacionados desencadenadas en la plataforma de Common Data Service. Al hacerlo ayuda a resaltar las dependencias intencionales e involuntarias y se desencadena en el sistema. Si no puede hacerlo para su solución, puede que no tenga una clara imagen de lo cómo funciona la implementación realmente. Crear un diagrama así puede poner de manifiesto consecuencias involuntarias y es una buena práctica en cualquier momento en una implementación. 
 
 El siguiente ejemplo resalta cómo en un principio dos procesos funcionaban a la perfección juntos, pero con el mantenimiento continuado se agrega un nuevo paso para crear una tarea que puede provocar un bucle involuntario. El uso de esta técnica de documentación puede resaltar esto en la fase de diseño y evitar que el sistema se vea afectado.
 
@@ -231,7 +231,7 @@ Cuando determinados errores aparecen, usar los archivos de seguimiento del servi
 
 ## <a name="summary"></a>Resumen
 
-El contenido en [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md) y los temas posteriores [Transacciones de base de datos](database-transactions.md), [Problemas de simultaneidad](concurrency-issues.md) y este mismo ha descrito los conceptos siguientes con los ejemplos y estrategias que le ayudarán a entender cómo diseñar e implementar de las personalizaciones escalables para CDS para aplicaciones.
+El contenido en [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md) y los temas posteriores [Transacciones de base de datos](database-transactions.md), [Problemas de simultaneidad](concurrency-issues.md) y este mismo ha descrito los conceptos siguientes con los ejemplos y estrategias que le ayudarán a entender cómo diseñar e implementar de las personalizaciones escalables para Common Data Service.
 
 Algunos conceptos clave para recordar incluyen lo siguiente: 
 

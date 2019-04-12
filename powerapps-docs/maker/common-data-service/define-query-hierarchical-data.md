@@ -1,10 +1,10 @@
 ---
-title: Definir y consultar datos jerárquicos con Common Data Service for Apps | MicrosoftDocs
+title: Definir y consultar datos jerárquicos con Common Data Service | MicrosoftDocs
 description: Aprenda a definir y consultar datos relacionados jerárquicamente
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -35,7 +35,7 @@ Algunas entidades estándar ya tienen definidas jerarquías. Otras entidades, in
 
 ## <a name="define-hierarchical-data"></a>Definir datos jerárquicos
 
-Con Common Data Service for Apps, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) *que hacen referencia a sí mismas* de registros relacionados. 
+Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) *que hacen referencia a sí mismas* de registros relacionados. 
 
 > [!NOTE]
 > *Que hacen referencia a sí mismas* significa que la entidad está relacionada consigo misma. Por ejemplo, la entidad Cuenta tiene un campo de búsqueda para asociarlo al registro de otra entidad Cuenta.

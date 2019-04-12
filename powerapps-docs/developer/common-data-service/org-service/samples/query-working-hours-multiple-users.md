@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: consulte las horas laborables de varios usuarios (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: consulte las horas laborables de varios usuarios (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo consultar las horas laborables de varias horas
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Ejemplo: consultar las horas laborables de varios usuarios
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
 
-Este ejemplo muestra cómo recuperar las horas de trabajo de varios usuarios utilizando el mensaje [QueryMultipleSchedulesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23).
+Este ejemplo muestra cómo recuperar las horas de trabajo de varios usuarios utilizando el mensaje [QueryMultipleSchedulesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23).
 
 Este ejemplo requiere usuarios adicionales que no están presentes en el sistema. Creación del usuario necesario manualmente **tal cual** se muestra en **Office 365** antes de ejecutar el ejemplo. Reemplace `yourorg` por el valor de `OrgName` de su organización.
 

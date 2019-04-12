@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Convertir una cita en una cita periódica (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Convertir una cita en una cita periódica (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo convertir una cita en una serie de citas periódicas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>Ejemplo: convertir una cita en una cita periódica
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
 
-Este ejemplo muestra cómo convertir una cita en una serie de citas periódicas mediante el mensaje [AddRecurrenceRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring).
+Este ejemplo muestra cómo convertir una cita en una serie de citas periódicas mediante el mensaje [AddRecurrenceRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

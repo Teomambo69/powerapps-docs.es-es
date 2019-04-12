@@ -4,7 +4,7 @@ description: Aprenda cómo consultar y visualizar datos jerárquicos relacionado
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Consultar datos jerárquicos  
- Con Common Data Service for Apps, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) que hacen referencia a sí mismas de registros relacionados. En el pasado, para ver datos jerárquicos era necesario consultar iterativamente los registros relacionados. Actualmente, puede consultar los datos relacionados como una jerarquía, en un paso. Podrá consultar los registros de entidad, usando la lógica de **Bajo** y **No menor que**. Los operadores jerárquicos **Bajo** y **No menor que** aparecen en Búsqueda avanzada y el editor de flujo de trabajo. Para obtener más información acerca de cómo utilizar estos operadores, consulte [Configurar pasos del flujo de trabajo](/flow/configure-workflow-steps). Para obtener más información sobre Búsqueda avanzada, consulte [Crear, editar o guardar la búsqueda de Búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)..  
+ Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) que hacen referencia a sí mismas de registros relacionados. En el pasado, para ver datos jerárquicos era necesario consultar iterativamente los registros relacionados. Actualmente, puede consultar los datos relacionados como una jerarquía, en un paso. Podrá consultar los registros de entidad, usando la lógica de **Bajo** y **No menor que**. Los operadores jerárquicos **Bajo** y **No menor que** aparecen en Búsqueda avanzada y el editor de flujo de trabajo. Para obtener más información acerca de cómo utilizar estos operadores, consulte [Configurar pasos del flujo de trabajo](/flow/configure-workflow-steps). Para obtener más información sobre Búsqueda avanzada, consulte [Crear, editar o guardar la búsqueda de Búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)..  
   
  Los siguientes ejemplos muestran los distintos escenarios para consultar jerarquías:  
   

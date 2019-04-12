@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
+title: 'Recuperar, actualizar y eliminar entidades (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,6 +1,6 @@
 ---
-title: Use complementos para extender procesos de negocio (Common Data Service para aplicaciones) | Microsoft Docs
-description: Un complemento es un montaje de .NET que puede cargar al Common Data Service para aplicaciones. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
+title: Use complementos para extender procesos de negocio (Common Data Service) | Microsoft Docs
+description: Un complemento es un montaje de .NET que puede cargar al Common Data Service. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 ms.custom: ''
 ms.date: 1/23/2019
 ms.reviewer: ''
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Use complementos para ampliar los procesos de negocio
 
-Un complemento es un montaje de .NET que puede cargar al Common Data Service para aplicaciones. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
+Un complemento es un montaje de .NET que puede cargar al Common Data Service. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 
 > [!IMPORTANT]
-> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en CDS para aplicaciones](../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../maker/common-data-service/cds-processes.md)<br/><br/>
 > Use las extensiones cuando un proceso declarativo no cumpla su requisito.
 
 Las clases en el ensamblado que puede registrar un paso debe implementar la interfaz <xref:Microsoft.Xrm.Sdk.IPlugin>. Esta interfaz expone un solo método: <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>. Cuando un evento aparece con una clase registrada a él, los datos contextuales se pasan al método `Execute`. En el método `Execute` puede:

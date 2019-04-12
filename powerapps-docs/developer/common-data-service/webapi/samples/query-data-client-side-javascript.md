@@ -3,7 +3,7 @@ title: Ejemplo de datos de consulta de la API web (JavaScript del lado del clien
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-query-data-sample-client-side-javascript"></a>Ejemplo de datos de consulta de la API web (JavaScript del lado del cliente)
 
-Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante la API web de Common Data Service para aplicaciones usando la API web JavaScript del lado del cliente  
+Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante la API web de Common Data Service usando la API web JavaScript del lado del cliente  
   
 > [!NOTE]
 >  Este ejemplo implementa las operaciones detalladas en el [Ejemplo de datos de consulta de la API web](../web-api-query-data-sample.md) y utiliza las construcciones comunes del lado cliente JavaScript que se describen en [Ejemplos de API web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md)  
@@ -33,7 +33,7 @@ Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante l
 
  Para ejecutar este ejemplo, se requiere lo siguiente:  
   
-- Acceder al entorno CDS for Apps.  
+- Acceda al entorno de Common Data Service.  
   
 - Una cuenta de usuario con privilegios para importar soluciones y realizar operaciones CRUD, normalmente un rol de seguridad de administrador o personalizador del sistema.  
   
@@ -41,7 +41,7 @@ Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante l
 
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [Ejemplo de datos de consulta Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824050) y descargue el archivo de ejemplo: Ejemplo de datos de consulta Microsoft CRM de la API web (JavaScript del lado cliente).zip. Extraiga el contenido del archivo de ejemplo y busque el archivo de la solución administrada WebAPIQueryData_1_0_0_0_managed.zip. Importe la solución administrada en la organización CDS for Apps y ejecute el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [Ejemplo de datos de consulta Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824050) y descargue el archivo de ejemplo: Ejemplo de datos de consulta Microsoft CRM de la API web (JavaScript del lado cliente).zip. Extraiga el contenido del archivo de ejemplo y busque el archivo de la solución administrada WebAPIQueryData_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y ejecute el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_codeSample"></a>
 
@@ -757,7 +757,7 @@ distinct=\"false\" page=\"3\" count=\"4\"> \
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](../overview.md)<br />
+[Utilizar API Web de Common Data Service](../overview.md)<br />
 [Consultar datos utilizando la API web](../query-data-web-api.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />
 [Ejemplo de datos de consulta de la API web](../web-api-query-data-sample.md)<br />

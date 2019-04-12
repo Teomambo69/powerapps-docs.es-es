@@ -1,6 +1,6 @@
 ---
 title: Metadatos de entidad | Microsoft Docs
-description: Conozca el uso de metadatos de entidad en Common Data Service para aplicaciones.
+description: Conozca el uso de metadatos de entidad en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -25,12 +25,12 @@ search.app:
 Was Mike Carter
 This topic was not migrated it was written for PowerApps 
 
-Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
+Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 
 -->
 # <a name="entity-metadata"></a>Metadatos de la entidad
 
-Cada entidad proporciona la capacidad de almacenar datos estructurados. Para los desarrolladores, las entidades se corresponden con las clases que usará al trabajar con datos en Common Data Service para aplicaciones.
+Cada entidad proporciona la capacidad de almacenar datos estructurados. Para los desarrolladores, las entidades se corresponden con las clases que usará al trabajar con datos en Common Data Service.
 
 ## <a name="entity-names"></a>Nombres de entidad
 Cada entidad tiene un nombre único definido cuando se crea. Este nombre aparece de diversas formas:
@@ -55,7 +55,7 @@ Cada entidad también tiene tres propiedades que pueden mostrar valores localiza
 |`DisplayCollectionName`|Versión plural del nombre. Por ejemplo, Cuentas|
 |`Description`|Frase sucinta que describe a la entidad, por ejemplo, *Empresa que representa a un cliente o cliente potencial. La empresa a la que se factura en transacciones comerciales.*|
 
-Estos son los valores localizables que se usan para referirse a las entidades en una aplicación. Estos valores se puede cambiar en cualquier momento. Para agregar o editar valores localizados, consulte [Guía de personalización de CDS for Apps: traducir texto de entidad y de campo personalizados a otros idiomas](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
+Estos son los valores localizables que se usan para referirse a las entidades en una aplicación. Estos valores se puede cambiar en cualquier momento. Para agregar o editar valores localizados, consulte [Guía de personalización de Common Data Service: traducir texto de entidad y de campo personalizados a otros idiomas](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
 
 
 ## <a name="primary-key"></a>Clave principal
@@ -90,7 +90,7 @@ Cada entidad que admite imágenes de entidad tendrá tres atributos de respaldo.
 |`EntityImageId`|`UniqueIdentifierType`|El identificador único de la imagen.|
 
 Más información: 
-- [Atributos de imagen de la guía para desarrolladores de Common Data Service para aplicaciones](/dynamics365/customer-engagement/developer/image-attributes)
+- [Atributos de imagen de la guía para desarrolladores de Common Data Service](/dynamics365/customer-engagement/developer/image-attributes)
 - [Ejemplo de la guía para desarrolladores de Common Data Service: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 
 > [!NOTE]
@@ -156,8 +156,8 @@ Por ejemplo, `PostComment`, `PostLike` y `PostRole` son cada uno elementos secun
 Cada definición de clave alternativa describe uno o varios atributos en la combinación que identificará de forma exclusiva una instancia de entidad. Las claves alternativas se aplican normalmente solo para la integración con sistemas externos. Puede definir las claves alternativas para identificar de forma única un registro. Esto es valioso si está integrando datos con un sistema que no admita las claves de identificador único de GUID. Puede definir un solo valor de campo o combinación de valores de campo para identificar una entidad de forma única. Agregar una clave alternativa aplicará una restricción de unicidad en estos atributos. No podrá crear o actualizar otro registro de entidad para tener los mismos valores.
 
 Más información: 
- - [Guía de personalización de Common Data Service para aplicaciones: definir claves alternativas para hacer referencia a registros de CDS for Apps](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
- - [Guía para desarrolladores sobre cómo definir claves alternativas para una entidad: sincronizar los datos de CDS for Apps con sistemas externos](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
+ - [Guía de personalización de Common Data Service: definir claves alternativas para hacer referencia a registros de Common Data Service](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
+ - [Guía para desarrolladores sobre cómo definir claves alternativas para una entidad: sincronizar los datos de Common Data Service con sistemas externos](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
 
 ## <a name="entity-states"></a>Estados de entidad
 
@@ -191,4 +191,4 @@ Para las entidades personalizadas, puede definir criterios adicionales para tran
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades de Common Data Service para aplicaciones](entities.md)
+[Entidades Common Data Service](entities.md)

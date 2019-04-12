@@ -4,7 +4,7 @@ description: Aprenda cómo cambiar la navegación en un formulario
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
   
  Las relaciones de entidad configuradas para mostrarse se pueden reemplazar en el editor de formularios. También puede incluir vínculos de navegación para mostrar recursos web u otros sitios web mediante la navegación del formulario.  
   
- Para obtener instrucciones paso a paso, consulte [Crear y editar relaciones de entidad para Common Data Service for Apps](../common-data-service/create-edit-entity-relationships.md)  
+ Para obtener instrucciones paso a paso, consulte [Crear y editar relaciones de entidad para Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
   
  Para habilitar la edición de la navegación debe seleccionar primero **Navegación** en el grupo **Seleccionar** de la pestaña **Inicio** del diseñador de formularios.  
  

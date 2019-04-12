@@ -1,5 +1,5 @@
 ---
-title: 'Paso 2: Registrar una cuenta de Microsoft Partner Network (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Paso 2: Registrar una cuenta de Microsoft Partner Network (Common Data Service) | Microsoft Docs'
 description: Los creadores de aplicaciones deben ser miembros de Microsoft Partner Network (MPN) para poder publicar aplicaciones en AppSource.
 ms.custom: ''
 ms.date: 10/31/2018

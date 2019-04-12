@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Compartir un registro mediante un equipo de acceso (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Compartir un registro mediante un equipo de acceso (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo permitir el acceso a un registro utilizando un equipo de acceso.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>Ejemplo: Compartir un registro utilizando un equipo de acceso
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
 
 Este ejemplo muestra cómo permitir el acceso a un registro utilizando un equipo de acceso. Todos los integrantes del equipo recibirán el mismo acceso al registro que se concede al equipo. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ShareRecordUsingAccessTeam).
 

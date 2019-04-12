@@ -1,6 +1,6 @@
 ---
-title: Registrar un complemento (Common Data Service para aplicaciones) | Microsoft Docs
-description: Aprenda a registrar un complemento para aplicar lógica de negocios personalizada a Common Data Service para aplicaciones.
+title: Registrar un complemento (Common Data Service) | Microsoft Docs
+description: Aprenda a registrar un complemento para aplicar lógica de negocios personalizada a Common Data Service.
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -48,14 +48,14 @@ Usará la Plugin Registration Tool (PRT) para registrar los pasos y ensamblados 
 
 PRT es una de las herramientas disponibles para descargar de NuGet. Siga las instrucciones de [Descargar herramientas de NuGet](download-tools-nuget.md). El tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
 
-Después de descargar la PRT, siga los pasos de [Conectar con la Plugin Registration Tool](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) del [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md) para conectarse al CDS del entorno de aplicaciones.
+Después de descargar la PRT, siga los pasos de [Conectar con la Plugin Registration Tool](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) del [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md) para conectarse al entorno de Common Data Service.
 
 ## <a name="register-an-assembly"></a>Registrar un ensamblado
 
-Registrar un ensamblado es el proceso de cargar el ensamblado a la base de datos de CDS para aplicaciones. Consulte las instrucciones que se encuentran en [Registrar el ensamblado](tutorial-write-plug-in.md#register-your-assembly) en el [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md)
+Registrar un ensamblado es el proceso de cargar el ensamblado a la base de datos de Common Data Service. Consulte las instrucciones que se encuentran en [Registrar el ensamblado](tutorial-write-plug-in.md#register-your-assembly) en el [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md)
 
 > [!NOTE]
-> Encontrará opciones relacionadas con el *modo aislado* y *ubicación* para el ensamblado. Estos hacen referencia a opciones que se aplican a implementaciones locales. CDS para aplicaciones no está disponible para implementaciones locales, por lo que usted siempre aceptará las opciones predeterminadas de **Espacio aislado** y **Base de datos** para estas opciones.
+> Encontrará opciones relacionadas con el *modo aislado* y *ubicación* para el ensamblado. Estos hacen referencia a opciones que se aplican a implementaciones locales. Common Data Service no está disponible para implementaciones locales, por lo que usted siempre aceptará las opciones predeterminadas de **Espacio aislado** y **Base de datos** para estas opciones.
 
 Cuando un ensamblado se carga se almacena en la entidad `PluginAssembly`. La mayoría de las propiedades se establecen utilizando la reflexión de la entidad importada. Los bytes codificados base64 del ensamblado se almacenan en el atributo `Content`. Mientras ve las **Propiedades** del ensamblado en la PRT, solo puede editar el valor de atributo **Descripción**.
 
@@ -195,7 +195,7 @@ Los complementos asincrónicos solo pueden registrarse para la fase **PostOperat
 
 |Opción|Descripción|
 |--|--|
-|**Servidor**|El complemento se ejecutará en el servidor de CDS para aplicaciones.|
+|**Servidor**|El complemento se ejecutará en el servidor de Common Data Service.|
 |**Sin conexión**|El complemento se ejecutará en el cliente de Dynamics 365 for Outlook cuando el usuario esté en modo sin conexión.|
 
 <!-- TODO Add link to where more information about offline-plugins will be documented -->
@@ -214,7 +214,7 @@ Si el paso del complemento se registra en las fases **PreValidation** o **PreOpe
 
 #### <a name="messages-that-support-entity-images"></a>Mensajes que admiten imágenes de la entidad
 
-En CDS para aplicaciones, solo de los mensajes siguientes admiten imágenes de la entidad:
+En Common Data Service, solo de los mensajes siguientes admiten imágenes de la entidad:
 
 |Mensaje|Propiedad de clases de solicitud| Descripción|
 |--|--|--|

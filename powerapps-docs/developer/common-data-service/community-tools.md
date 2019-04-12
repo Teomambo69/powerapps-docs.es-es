@@ -1,6 +1,6 @@
 ---
-title: Herramientas de la comunidad para Common Data Service para aplicaciones (Common Data Service para aplicaciones) | Microsoft Docs
-description: Lea sobre las herramientas creadas por la comunidad que ayudan a realizar diversas tareas con PowerApps CDS for Apps.
+title: Herramientas de la comunidad para Common Data Service (Common Data Service) | Microsoft Docs
+description: Lea sobre las herramientas creadas por la comunidad que ayudan a realizar diversas tareas con PowerApps Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="community-tools-for-common-data-service"></a>Herramientas de la comunidad para Common Data Service
 
-La comunidad CDS for Apps crea herramientas. Muchas de las más populares se distribuyen en [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service para aplicaciones y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
+La comunidad de Common Data Service crea herramientas. Muchas de las más populares se distribuyen en [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
 
-A continuación se presenta una lista seleccionada de herramientas de la comunidad distribuidas mediante XrmToolBox que puede usar con Common Data Service para aplicaciones.
+A continuación se presenta una lista seleccionada de herramientas de la comunidad distribuidas mediante XrmToolBox que puede usar con Common Data Service.
 
 |Herramienta  |Descripción  |
 |---------|---------|

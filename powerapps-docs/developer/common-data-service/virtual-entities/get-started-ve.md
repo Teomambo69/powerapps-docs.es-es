@@ -1,8 +1,8 @@
 ---
-title: Introducción a las entidades virtuales (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service para aplicaciones, sin replicación de datos y a menudo sin código personalizado.'
+title: Introducción a las entidades virtuales (Common Data Service) | Microsoft Docs
+description: 'Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service, sin replicación de datos y a menudo sin código personalizado.'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="get-started-with-virtual-entities"></a>Introducción a las entidades virtuales
 
-Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service para aplicaciones, sin replicación de datos y a menudo sin código personalizado. La implementación inicial de esta característica permite solamente la compatibilidad de solo lectura de tales entidades y tiene una serie de limitaciones que se describen en la sección [Limitaciones de las entidades virtuales](#limitations-of-virtual-entities) a continuación. Además de estas limitaciones, las entidades virtuales se comportan de la misma forma que otras entidades personalizadas. 
+Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service, sin replicación de datos y a menudo sin código personalizado. La implementación inicial de esta característica permite solamente la compatibilidad de solo lectura de tales entidades y tiene una serie de limitaciones que se describen en la sección [Limitaciones de las entidades virtuales](#limitations-of-virtual-entities) a continuación. Además de estas limitaciones, las entidades virtuales se comportan de la misma forma que otras entidades personalizadas. 
 
 Las entidades virtuales reemplazan los enfoques anteriores de cliente y servidor para la integración de datos externos, que requerían código personalizado y tenían numerosas limitaciones, incluidas la integración imperfecta, la duplicación de datos o el compromiso amplio de recursos de desarrollo.  Además, para los administradores y personalizadores del sistema, el uso de entidades virtuales simplifica la configuración y la administración.
 
@@ -28,12 +28,12 @@ Las entidades virtuales reemplazan los enfoques anteriores de cliente y servidor
 
 ## <a name="virtual-entities-data-providers-and-data-sources"></a>Entidades virtuales, proveedores de datos y orígenes de datos
 
-Una entidad virtual es una definición de una entidad en los metadatos de la plataforma CDS for Apps sin las tablas físicas asociadas para las instancias de entidad que se crean en la base de datos de CDS for Apps. Por el contrario, en tiempo de ejecución, cuando se necesita una instancia de entidad, su estado se recupera de forma dinámica desde el sistema externo asociado. Cada tipo de entidad virtual está asociado a un *proveedor de datos de entidad virtual* y (opcionalmente) a alguna información de configuración de un *origen de datos de entidad virtual* asociado. 
+Una entidad virtual es una definición de una entidad en los metadatos de la plataforma Common Data Service sin las tablas físicas asociadas para las instancias de entidad que se crean en la base de datos de Common Data Service. Por el contrario, en tiempo de ejecución, cuando se necesita una instancia de entidad, su estado se recupera de forma dinámica desde el sistema externo asociado. Cada tipo de entidad virtual está asociado a un *proveedor de datos de entidad virtual* y (opcionalmente) a alguna información de configuración de un *origen de datos de entidad virtual* asociado. 
 
 <!-- TODO:
-A data provider is a particular type of CDS for Apps plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
+A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
 
-Los siguientes proveedores de datos se incluyen con Common Data Service para aplicaciones:
+Los siguientes proveedores de datos se incluyen con Common Data Service:
 - Un proveedor [OData v4](http://www.odata.org/documentation/) se incluye con el servicio y se instala de forma predeterminada.
 - Hay un proveedor de [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (anteriormente *Microsoft Document DB*) disponible en [AppSource](https://appsource.microsoft.com).
 
@@ -48,12 +48,12 @@ En este ejemplo, también se proporciona un origen de datos de entidad virtual c
 ## <a name="limitations-of-virtual-entities"></a>Limitaciones de las entidades virtuales
 
 En esta versión, hay algunas limitaciones de las entidades virtuales que debe tener en cuenta al evaluar si puede usar entidades virtuales con los datos externos.
-- Los datos son de solo lectura. La característica de entidad virtual no admite que los cambios realizados en CDS for Apps se inserten de nuevo en el sistema externo.
+- Los datos son de solo lectura. La característica de entidad virtual no admite que los cambios realizados en Common Data Service se inserten de nuevo en el sistema externo.
 - Se admiten únicamente las entidades que son propiedad de la organización. No se admite el filtrado de seguridad que se aplica a entidades que son propiedad del usuario. El acceso a los datos de la entidad virtual se puede activar o desactivar para usuarios individuales según su rol de seguridad. No se admite la seguridad de nivel de campo.
-- Debe ser posible modelar los datos externos como una entidad de CDS for Apps. Esto significa:
+- Debe ser posible modelar los datos externos como una entidad de Common Data Service. Esto significa:
     - Todas las entidades del origen de datos externo deben tener una clave principal de GUID asociada.  
-    - Todas las propiedades de entidad deben representarse como atributos de CDS for Apps. Puede usar tipos simples que representen texto, números, conjuntos de opciones, fechas, imágenes y búsquedas. 
-    - Debe ser capaz de modelar las relaciones de entidad en CDS for Apps.
+    - Todas las propiedades de entidad deben representarse como atributos de Common Data Service. Puede usar tipos simples que representen texto, números, conjuntos de opciones, fechas, imágenes y búsquedas. 
+    - Debe ser capaz de modelar las relaciones de entidad en Common Data Service.
     - No se puede calcular ni consolidar un atributo de una entidad virtual.Los cálculos que desee deben realizarse en el lado externo, probablemente dentro del proveedor de datos o dirigidos por él.
 - No se admite auditoría o seguimiento de los cambios.  Estos pueden implementarse en el almacén de datos externo.
 - No se pueden habilitar entidades virtuales para colas.
@@ -63,7 +63,7 @@ En esta versión, hay algunas limitaciones de las entidades virtuales que debe t
 
 <!-- TODO: Make bulleted list into table?  Make more complete by reviewing API modification tables. -->
 
-Para obtener más información sobre cómo se reflejan estas limitaciones en la API de CDS for Apps, consulte [Consideraciones de la API de entidades virtuales](api-considerations-ve.md). 
+Para obtener más información sobre cómo se reflejan estas limitaciones en la API de Common Data Service, consulte [Consideraciones de la API de entidades virtuales](api-considerations-ve.md). 
 
 ### <a name="see-also"></a>Vea también
 

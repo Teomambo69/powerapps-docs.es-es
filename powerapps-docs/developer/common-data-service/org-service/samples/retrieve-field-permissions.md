@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar permisos de campos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar permisos de campos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar campos protegidos para un usuario
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-field-permissions"></a>Ejemplo: recuperar permisos de campo
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
 
-El ejemplo muestra cómo recuperar campos protegidos para un usuario según los pasos descritos en [Entidades de seguridad de campo](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/field-security-entities). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission).
+El ejemplo muestra cómo recuperar campos protegidos para un usuario según los pasos descritos en [Entidades de seguridad de campo](https://docs.microsoft.com/dynamics365/customer-engagement/developer/field-security-entities). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission).
 
 Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los usuarios requeridos manualmente en **Office 365** para ejecutar el ejemplo sin errores. Para este ejemplo cree un perfil de usuario **tal cual** se muestra abajo. Reemplace `yourorg` por el nombre de la organización.
 

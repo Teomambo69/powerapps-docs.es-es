@@ -1,6 +1,6 @@
 ---
-title: Usar FetchXML para consultar datos (Common Data Service para aplicaciones) | Microsoft Docs
-description: FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service (CDS) para aplicaciones. Se basa en un esquema que describe las funciones del idioma.
+title: Usar FetchXML para consultar datos (Common Data Service) | Microsoft Docs
+description: FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service. Se basa en un esquema que describe las funciones del idioma.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="use-fetchxml-to-construct-a-query"></a>Usar FetchXML para crear una consulta
 
-FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service (CDS) para aplicaciones. Se basa en un esquema que describe las funciones del idioma. El idioma FetchXML admite funciones de consulta similares a las expresiones de consulta. Además, se usa como formulario serializado de consulta, usado para guardar una consulta como una vista guardada propiedad del usuario en la [entidad UserQuery](reference/entities/savedquery.md) y como una vista guardada propiedad de la organización en la [Entidad SavedQuery](reference/entities/userquery.md).  
+FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service. Se basa en un esquema que describe las funciones del idioma. El idioma FetchXML admite funciones de consulta similares a las expresiones de consulta. Además, se usa como formulario serializado de consulta, usado para guardar una consulta como una vista guardada propiedad del usuario en la [entidad UserQuery](reference/entities/savedquery.md) y como una vista guardada propiedad de la organización en la [Entidad SavedQuery](reference/entities/userquery.md).  
   
 Una consulta FetchXML se puede ejecutar mediante la **API de la web** o el **servicio de la organización**.
 

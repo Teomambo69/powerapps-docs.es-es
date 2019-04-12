@@ -1,6 +1,6 @@
 ---
-title: Crear una entidad personalizada (Common Data Service para aplicaciones) | MicrosoftDocs
-description: Muestra cómo mediante programación se crea una entidad personalizada en Common Data Service (CDS) para aplicaciones.
+title: Crear una entidad personalizada (Common Data Service) | MicrosoftDocs
+description: Muestra cómo mediante programación se crea una entidad personalizada en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

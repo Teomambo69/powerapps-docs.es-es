@@ -1,10 +1,10 @@
 ---
-title: Componer solicitudes HTTP y ocuparse de los errores (Common Data Service para aplicaciones)| Microsoft Docs
+title: Componer solicitudes HTTP y ocuparse de los errores (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre los métodos y encabezados de HTTP que forman parte de las solicitudes HTTP que interactúan con la API web y cómo identificar y controlar errores devueltos en la respuesta.
 ms.custom: ''
 ms.date: 11/05/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -117,7 +117,7 @@ Puede usar encabezados adicionales para habilitar funcionalidades específicas.
 
 ## <a name="identify-status-codes"></a>Identificar códigos de estado
 
- Tanto si la solicitud http es correcta como si no, la respuesta incluirá un código de estado. Los códigos de estado devueltos por la API web de Common Data Service para aplicaciones incluyen lo siguiente.  
+ Tanto si la solicitud http es correcta como si no, la respuesta incluirá un código de estado. Los códigos de estado devueltos por la API web de Common Data Service incluyen lo siguiente.  
   
 |Código|Descripción|Escriba|  
 |----------|-----------------|----------|  

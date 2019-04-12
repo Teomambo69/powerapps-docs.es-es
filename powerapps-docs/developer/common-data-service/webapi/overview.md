@@ -1,10 +1,10 @@
 ---
-title: Usar la API web de Common Data Service para aplicaciones (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'La API web de Common Data Service para aplicaciones implementa OData v4 y proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos.'
+title: Usar la API web de Common Data Service (Common Data Service)| Microsoft Docs
+description: 'La API web de Common Data Service implementa OData v4 y proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,11 +21,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-the-common-data-service-for-apps-web-api"></a>Usar la API web de Common Data Service para aplicaciones
+# <a name="use-the-common-data-service-web-api"></a>Utilizar API Web de Common Data Service
 
-La API web es uno de dos servicios web que puede usar para trabajar con datos y metadatos en Common Data Service para aplicaciones. El otro es el [Servicio de organización](../org-service/overview.md).
+La API web es uno de dos servicios web que puede usar para trabajar con datos y metadatos en Common Data Service. El otro es el [Servicio de organización](../org-service/overview.md).
 
-La API web de CDS para aplicaciones proporciona una experiencia de desarrollo que se puede usar en una gran variedad de lenguajes de programación, plataformas, y dispositivos. La API web implementa OData (Open Data Protocol), versión 4.0, un estándar de OASIS para crear y consumir API RESTful con orígenes de datos enriquecidos. Puede obtener más información sobre este protocolo en [http://www.odata.org/](http://www.odata.org/). Los detalles sobre esta norma están disponibles en [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0).  
+La API web de Common Data Service proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos. La API web implementa OData (Open Data Protocol), versión 4.0, un estándar de OASIS para crear y consumir API RESTful con orígenes de datos enriquecidos. Puede obtener más información sobre este protocolo en [http://www.odata.org/](http://www.odata.org/). Los detalles sobre esta norma están disponibles en [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0).  
   
 Dado que la API web se basa en estándares abiertos, no proporcionamos ensamblados para una experiencia de desarrollador específica. Puede crear solicitudes HTTP para operaciones específicas o usar bibliotecas de terceros para generar clases para cualquier idioma o plataforma que desee. Puede encontrar una lista de bibliotecas compatibles con OData versión 4.0 en [http://www.odata.org/libraries/](http://www.odata.org/libraries/).  
 

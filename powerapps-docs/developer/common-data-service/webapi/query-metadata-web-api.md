@@ -1,10 +1,10 @@
 ---
-title: Consultar metadatos utilizando la API web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Consultar datos utilizando la API web (Common Data Service) | Microsoft Docs
 description: La posibilidad de consultar metadatos del sistema está disponible mediante la API web así como usando el servicio de organización mediante RetrieveMetadataChangesRequest
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="query-metadata-using-the-web-api"></a>Consulta de metadatos utilizando la API web
 
-Puesto que Common Data Service para aplicaciones es una aplicación basada en metadatos, los desarrolladores pueden necesitar consultar los metadatos del sistema en tiempo de ejecución para adaptarse a la forma en que se ha configurado una organización. Esta funcionalidad usa un estilo de RESTful de la consulta.
+Puesto que Common Data Service es una aplicación basada en metadatos, los desarrolladores pueden necesitar consultar los metadatos del sistema en tiempo de ejecución para adaptarse a la forma en que se ha configurado una organización. Esta funcionalidad usa un estilo de RESTful de la consulta.
 
 > [!NOTE]
 > También puede generar una consulta con un estilo basado en objetos usando <xref href="Microsoft.Dynamics.CRM.EntityQueryExpression?text=EntityQueryExpression ComplexType" /> con <xref href="Microsoft.Dynamics.CRM.RetrieveMetadataChanges?text=RetrieveMetadataChanges Function" />. Esta característica permite capturar cambios en los metadatos entre dos periodos de tiempo así como devolver un conjunto de metadatos definidos por una consulta especificada.
@@ -345,7 +345,7 @@ Puede usar la ruta de conjuntos de entidades `GlobalOptionSetDefinitions` para r
 
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web con metadatos de Common Data Service para aplicaciones](use-web-api-metadata.md)<br />
+[Usar la API web con metadatos de Common Data Service](use-web-api-metadata.md)<br />
 [Recuperar metadatos por nombre o identificador de metadatos](retrieve-metadata-name-metadataid.md)<br />
 [Entidades de metadatos y atributos con la API web](create-update-entity-definitions-using-web-api.md)<br />
 [Relaciones de entidades de metadatos con la API web](create-update-entity-relationships-using-web-api.md)

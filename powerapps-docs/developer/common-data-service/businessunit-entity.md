@@ -1,6 +1,6 @@
 ---
-title: Entidad BusinessUnit (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'Una organización en Common Data Service (CDS) para aplicaciones, como una sociedad de cartera o una compañía, se compone de unidades de negocio.'
+title: Entidad BusinessUnit (Common Data Service) | Microsoft Docs
+description: 'Una organización en Common Data Service, como una sociedad de cartera o una compañía, se compone de unidades de negocio.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="businessunit-entity"></a>Entidad BusinessUnit
 
-Una organización en Common Data Service (CDS) para aplicaciones, como una sociedad de cartera o una compañía, se compone de unidades de negocio. Una *unidad de negocio* es una unidad de la organización superior. Las unidades de negocio pueden ser elementos principales de otras unidades de negocio (unidades de negocio secundarias). La primera unidad de negocio creada para una organización se denomina unidad de negocio raíz. Las unidades de negocio se pueden eliminar, pero la unidad de negocio raíz no se puede eliminar.  
+Una organización en Common Data Service, como una sociedad de cartera o una compañía, se compone de unidades de negocio. Una *unidad de negocio* es una unidad de la organización superior. Las unidades de negocio pueden ser elementos principales de otras unidades de negocio (unidades de negocio secundarias). La primera unidad de negocio creada para una organización se denomina unidad de negocio raíz. Las unidades de negocio se pueden eliminar, pero la unidad de negocio raíz no se puede eliminar.  
   
 - Una *unidad de negocio principal* es cualquier unidad de negocio con una o varias unidades de negocio que le informan en la jerarquía.  
   

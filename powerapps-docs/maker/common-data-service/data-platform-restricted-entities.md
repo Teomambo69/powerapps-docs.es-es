@@ -1,13 +1,13 @@
 ---
 title: Entidades restringidas que requieren licencias de Dynamics 365 | Microsoft Docs
-description: Una lista de entidades restringidas en Common Data Service (CDS) for Apps que requieren licencias de Dynamics 365.
-author: clwesene
+description: Una lista de entidades restringidas en Common Data Service que requieren licencias de Dynamics 365.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -15,8 +15,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Entidades restringidas que requieren licencias de Dynamics 365
-Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service (CDS) for Apps para crear aplicaciones y flujos para los usuarios que solo tengan una licencia de Plan 1 de PowerApps. Sin embargo, algunas entidades contienen lógica de negocios compleja que requiere a los usuarios de la aplicación tener una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow (para obtener más información, consulte [Requisitos de licencia de entidad](data-platform-entity-licenses.md)). Un conjunto incluso inferior a entidades vinculadas a productos de Dynamics 365 requiere a los usuarios de aplicaciones de lienzo y controladas por modelos que tengan una licencia del producto de Dynamics 365 correspondiente si tienen que crear, actualizar o eliminar registros dentro de las entidades. Estas se conocen como entidades *restringidas*.
+# <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Entidades con restricciones que requieren licencias de Dynamics 365
+Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service para crear aplicaciones y flujos para los usuarios que solo tengan una licencia de Plan 1 de PowerApps. Sin embargo, algunas entidades contienen lógica de negocios compleja que requiere a los usuarios de la aplicación tener una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow (para obtener más información, consulte [Requisitos de licencia de entidad](data-platform-entity-licenses.md)). Un conjunto incluso inferior a entidades vinculadas a productos de Dynamics 365 requiere a los usuarios de aplicaciones de lienzo y controladas por modelos que tengan una licencia del producto de Dynamics 365 correspondiente si tienen que crear, actualizar o eliminar registros dentro de las entidades. Estas se conocen como entidades *restringidas*.
 
 Las entidades pueden estar restringidas a una licencia de Dynamics 365 por las siguientes razones:
 

@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Ejemplo de servicio de organización (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
-description: En este tutorial se muestra cómo conectarse al servicio de la organización de Common Data Service para aplicaciones
+title: 'Tutorial: Ejemplo de servicio de organización (C#) (Common Data Service) | Microsoft Docs'
+description: En este tutorial se muestra cómo conectarse al servicio de la organización de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-organization-service-sample-c"></a>Tutorial: ejemplo de servicio de organización (C#)
 
-Aquí es donde comienza a trabajar con los ensamblados de .NET SDK para trabajar con datos usando Common Data Service para aplicaciones.
+Aquí es donde comienza a trabajar con los ensamblados de .NET SDK para trabajar con datos usando Common Data Service.
 
 En este tutorial creará una aplicación de consola mínima para conectarse al servicio de organización con la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. También pasará la información de conexión con una cadena de conexión al constructor.
 
@@ -31,10 +31,10 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
 
  - Visual Studio (2017 recomendado)
  - Conexión a Internet
- - Una cuenta de usuario válida para la estancia de Common Data Service para aplicaciones
+ - Una cuenta de usuario válida para la estancia de Common Data Service
     - Su nombre de usuario
     - Su contraseña
- - Dirección URL a CDS del entorno de aplicaciones con el que quiere conectarse
+ - Dirección URL al entorno de aplicaciones Common Data Service con el que quiere conectarse
  - Comprensión básica de lenguaje Visual C#
 
 ## <a name="create-visual-studio-project"></a>Crear proyecto en Visual Studio
@@ -127,7 +127,7 @@ Se ha conectado con éxito al servicio de organización.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Estos temas explicarán cómo trabajar con CDS de las entidades de aplicaciones:
+Estos temas explicarán cómo trabajar con las entidades Common Data Service:
 
 [Operaciones de la entidad con el servicio de organización](entity-operations.md)<br />
 [Crear entidades con el servicio de la organización](entity-operations-create.md)<br />

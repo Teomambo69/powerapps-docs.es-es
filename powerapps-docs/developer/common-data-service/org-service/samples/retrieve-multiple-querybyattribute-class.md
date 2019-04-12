@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar varios con la clase QueryByAttribute (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar varios con la clase QueryByAttribute (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar la clase QueryByAttribute
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 
 # <a name="sample-retrieve-multiple-with-the-querybyattribute-class"></a>Ejemplo: recuperar varios con la clase QueryByAttribute
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-querybyattribute-class -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-querybyattribute-class -->
 
-Este ejemplo muestra cómo utilizar [QueryByAttribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.query.querybyattribute?view=dynamics-general-ce-9) en el método [RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleQueryByAttribute).
+Este ejemplo muestra cómo utilizar [QueryByAttribute](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.query.querybyattribute?view=dynamics-general-ce-9) en el método [RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleQueryByAttribute).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

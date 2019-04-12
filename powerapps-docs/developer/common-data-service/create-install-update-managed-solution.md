@@ -1,5 +1,5 @@
 ---
-title: 'Crear, instalar y actualizar una solución administrada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Crear, instalar y actualizar una solución administrada (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,5 +1,5 @@
 ---
-title: Entidades de calendario (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de calendario (Common Data Service) | Microsoft Docs
 description: Lea cómo almacenar datos para los calendarios de servicio de atención al cliente y para las programaciones de vacaciones usando entidades de calendario.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,7 +21,7 @@ La entidad de calendario almacena datos para los calendarios de servicio de aten
   
  Un calendario describe la disponibilidad de un servicio o un recurso. Los calendarios están relacionados con los registros `calendarrule`, que incluyen detalles acerca de la duración, la hora de inicio y de finalización, y los patrones periódicos de los eventos incluidos en el calendario.  
   
- Existen dos tipos de reglas de calendarios en Common Data Service para aplicaciones:  
+ Existen dos tipos de reglas de calendarios en Common Data Service:  
   
 - **Raíz**: una regla de calendario que contiene un calendario interno o que tiene reglas (hoja) anidadas. Puede especificar un calendario interno para una regla de calendario raíz mediante el atributo `CalendarRule.InnerCalendarId`. El valor de atributo de `CalendarRule.InnerCalendarId` de una regla raíz es el mismo que el valor de atributo de `CalendarRule.CalendarId` de sus reglas hoja.  
   

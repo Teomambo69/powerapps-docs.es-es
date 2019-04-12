@@ -1,9 +1,9 @@
 ---
-title: Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones utilizando el explorador de soluciones | MicrosoftDocs
+title: Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,12 +19,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-for-apps-using-solution-explorer"></a>Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones utilizando el explorador de soluciones
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones
 
-El explorador de soluciones proporciona una forma de crear y editar conjuntos de opciones globales para Common Data Service para aplicaciones mediante Common Data Service para aplicaciones.
+El explorador de soluciones proporciona una forma de crear y editar conjuntos de opciones globales para Common Data Service.
 
 El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones](create-edit-global-option-sets.md)
+- [Creación y edición de conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)
 - [Crear un conjunto de opciones](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
@@ -40,7 +40,7 @@ Con el explorador de soluciones abierto, en **Componentes** seleccione **Conjunt
 ![Ver conjuntos de opciones globales](media/view-global-option-sets-solution-explorer.png)
 
 > [!NOTE]
-> Algunos conjuntos de opciones globales del sistema no se pueden personalizar. Estas opciones pueden cambiar con actualizaciones o nuevas versiones, por lo que le recomendamos que no los use a menos que esté seguro de que sus requisitos se alinean con la manera en que CDS para aplicaciones usa estos valores.
+> Algunos conjuntos de opciones globales del sistema no se pueden personalizar. Estas opciones pueden cambiar con actualizaciones o nuevas versiones, por lo que le recomendamos que no los use a menos que esté seguro de que sus requisitos se alinean con la manera en que Common Data Service usa estos valores.
 
 ## <a name="create-a-global-option-set"></a>Creación de un conjunto de opciones global
 
@@ -81,7 +81,7 @@ Para eliminar un conjunto de opciones global, mientras ve la lista seleccione el
   
 ### <a name="see-also"></a>Vea también
  
-[Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones](create-edit-global-option-sets.md)<br />
+[Creación y edición de conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)<br />
 [Crear un conjunto de opciones](custom-picklists.md)<br />
 [Crear y editar campos](create-edit-fields.md)<br />
 [Documentación para desarrolladores: Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

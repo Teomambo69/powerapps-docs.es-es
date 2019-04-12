@@ -1,5 +1,5 @@
 ---
-title: Usar ExecuteAsync para ejecutar mensajes de forma asincrónica (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar ExecuteAsync para ejecutar mensajes de forma asincrónica (Common Data Service) | Microsoft Docs
 description: Puede usar el mensaje de ExecuteAsync para importar soluciones de forma asincrónica
 ms.custom: ''
 ms.date: 10/31/2018

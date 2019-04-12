@@ -27,16 +27,16 @@ search.app:
 Puede realizar acciones, como crear, recuperar, actualizar o eliminar paneles que pertenecen a una organización y a un usuario.  
   
 ## <a name="actions-on-an-organization-owned-dashboard"></a>Acciones en un panel que pertenece a una organización  
- Para realizar las siguientes acciones en un panel que pertenece a una organización (`SystemForm`), debe tener el rol de administrador del sistema o del personalizador del sistema asignado a su cuenta en Common Data Service (CDS) para aplicaciones:  
+ Para realizar las siguientes acciones en un panel que pertenece a una organización (`SystemForm`), debe tener el rol de administrador del sistema o del personalizador del sistema asignado a su cuenta en Common Data Service:  
   
-- Crear, recuperar, actualizar y eliminar. Puede crear o actualizar un panel de propiedad de la organización mediante los servicios web de CDS para Apps o mediante la personalización del formulario de entidad. Para obtener información detallada acerca de cómo crear un panel, consulte [Crear un panel](create-dashboard.md).  
+- Crear, recuperar, actualizar y eliminar. Puede crear o actualizar un panel de propiedad de la organización mediante los servicios web de Common Data Service o mediante la personalización del formulario de entidad. Para obtener información detallada acerca de cómo crear un panel, consulte [Crear un panel](create-dashboard.md).  
   
 - Defina un panel que pertenece a la organización como el panel predeterminado para una organización al definir el valor de atributo de `SystemForm.IsDefault` en `true` mientras crea o actualiza el panel.  
   
   > [!IMPORTANT]
-  >  Mediante los métodos disponibles en los servicios web de CDS para aplicaciones, es posible establecer dos paneles como el valor predeterminado. Asegúrese de que no ningún otro panel sea el panel predeterminado para la organización antes de actualizar esta configuración mediante programación.  
+  >  Mediante los métodos disponibles en los servicios web de Common Data Service, es posible establecer dos paneles como el valor predeterminado. Asegúrese de que no ningún otro panel sea el panel predeterminado para la organización antes de actualizar esta configuración mediante programación.  
   
-  Después de actualizar un panel que pertenece a una organización, debe publicar los cambios en los metadatos para hacerlos visibles en la organización. Puede usar el mensaje de <xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> o el mensaje de <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> para publicar los cambios realizados en un panel que pertenece a una organización. Para un código de ejemplo que muestre esta situación, consulte [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUS) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->.  
+  Después de actualizar un panel que pertenece a una organización, debe publicar los cambios en los metadatos para hacerlos visibles en la organización. Puede usar el mensaje de <xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> o el mensaje de <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> para publicar los cambios realizados en un panel que pertenece a una organización. Para un código de ejemplo que muestre esta situación, consulte [Ejemplo: Crear, recuperar, actualizar y eliminar un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->.  
   
   Para obtener una lista de mensajes admitidos en la entidad de paneles que pertenecen a la organización, vea [Entidad SystemForm](../common-data-service/reference/entities/systemform.md).  
   
@@ -58,6 +58,6 @@ Puede realizar acciones, como crear, recuperar, actualizar o eliminar paneles qu
  [Uso de FormXML para paneles](understand-dashboards-dashboard-components-formxml.md)   
  [Crear un panel](create-dashboard.md)   
  [Paneles de ejemplo](sample-dashboards.md)   
- [Entidades del panel](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->  
- [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
+ [Entidades de panel](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->  
+ [Ejemplo: crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
  [Ejemplo: Asignar un panel propiedad del usuario a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->

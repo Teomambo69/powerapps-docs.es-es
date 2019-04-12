@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: habilitar la seguridad de campo para una entidad (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: habilitar la seguridad de campo para una entidad (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo habilitar la seguridad de campo para una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>Ejemplo: habilitar la seguridad de campo para una entidad
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
 
 En este ejemplo se muestra cómo habilitar la seguridad de campo para una entidad.  Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/FieldSecurity). 
 

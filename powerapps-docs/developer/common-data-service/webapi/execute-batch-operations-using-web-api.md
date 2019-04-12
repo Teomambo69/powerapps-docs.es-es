@@ -1,10 +1,10 @@
 ---
-title: Ejecución de operaciones por lotes utilizando la API web (Common Data Service para aplicaciones)| Microsoft Docs
+title: Ejecución de operaciones por lotes utilizando la API web (Common Data Service)| Microsoft Docs
 description: Las operaciones por lotes le permiten agrupar varias operaciones en una sola solicitud HTTP. Lea cómo ejecutar las operaciones por lotes con la API web
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

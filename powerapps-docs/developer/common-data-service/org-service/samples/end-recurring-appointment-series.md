@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: finalizar una cita periódica (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: finalizar una cita periódica (Common Data Service) | Microsoft Docs'
 description: En este ejemplo muestra cómo finalizar una serie de citas periódicas
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-end-a-recurring-appointment-series"></a>Ejemplo: cerrar una serie de citas periódicas
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
 
-Este ejemplo muestra cómo finalizar una serie de citas periódicas con el mensaje [DeleteOpenInstancesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment).
+Este ejemplo muestra cómo finalizar una serie de citas periódicas con el mensaje [DeleteOpenInstancesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

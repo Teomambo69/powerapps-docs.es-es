@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Enviar un correo electrónico utilizando una plantilla (Common Data Service for Apps) | Microsoft Docs'
+title: 'Ejemplo: Enviar un correo electrónico utilizando una plantilla (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo enviar un mensaje de correo electrónico usando una plantilla.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-send-an-email-using-a-template"></a>Ejemplo: enviar un mensaje de correo electrónico usando una plantilla
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-email-template -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-email-template -->
 
-Este ejemplo muestra cómo enviar un mensaje de correo electrónico usando una plantilla con el mensaje de [SendEmailFromTemplateRequest.](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.sendemailfromtemplaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SendEmailUsingTemp).
+Este ejemplo muestra cómo enviar un mensaje de correo electrónico usando una plantilla con el mensaje de [SendEmailFromTemplateRequest.](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.sendemailfromtemplaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SendEmailUsingTemp).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

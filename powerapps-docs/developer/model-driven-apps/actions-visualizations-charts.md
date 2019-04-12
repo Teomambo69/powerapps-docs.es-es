@@ -1,6 +1,6 @@
 ---
 title: Acciones en visualizaciones (gráficos) (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Con los servicios web de Common Data Service para aplicaciones, puede realizar las siguientes acciones en las entidades de la visualización.'
+description: 'Con los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de la visualización.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="actions-on-visualizations-charts"></a>Acciones en visualizaciones (gráficos)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
 
-Con los servicios web de Common Data Service (CDS) para aplicaciones, puede realizar las siguientes acciones en las entidades de la visualización.  
+Con los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de la visualización.  
   
 ## <a name="actions-on-organization-owned-visualizations"></a>Acciones en visualizaciones que pertenecen a una organización  
  Para realizar acciones sobre una visualización que pertenece a una organización (`SavedQueryVisualization`), debe tener el rol de administrador del sistema o personalizador del sistema. Puede realizar las siguientes acciones sobre una visualización que pertenece a una organización:  
@@ -39,10 +39,10 @@ Con los servicios web de Common Data Service (CDS) para aplicaciones, puede real
   > [!NOTE]
   >  No puede cambiar ni actualizar una visualización para asociarla a otra entidad una vez que haya creado la visualización. Esto implica que el atributo `SavedQueryVisualization.PrimaryEntityTypeCode` no es válido para la acción de actualización en la visualización que pertenece a la organización.
   
-- Especificar una visualización que pertenece a una organización como visualización predeterminada para la entidad asociada estableciendo el atributo `SavedQueryVisualization.IsDefault` en `true`. Cuando establece una visualización que pertenece a una organización como visualización predeterminada para una entidad, la visualización se muestra de forma predeterminada cuando selecciona ver las visualizaciones de esta entidad en CDS for Apps.
+- Especificar una visualización que pertenece a una organización como visualización predeterminada para la entidad asociada estableciendo el atributo `SavedQueryVisualization.IsDefault` en `true`. Cuando establece una visualización que pertenece a una organización como visualización predeterminada para una entidad, la visualización se muestra de forma predeterminada cuando selecciona ver las visualizaciones de esta entidad en Common Data Service.
   
   > [!NOTE]
-  >  Mediante los servicios web de CDS for Apps, si establece una visualización que pertenece a una organización como predeterminada para una entidad que ya tiene otra visualización establecida como predeterminada, ambas visualizaciones se marcan como visualizaciones predeterminadas para la entidad.  Para establecer una visualización como visualización predeterminada para una entidad, asegúrese de que no se configura ninguna otra visualización como visualización predeterminada para la entidad.  
+  >  Mediante los servicios web de Common Data Service, si establece una visualización que pertenece a una organización como predeterminada para una entidad que ya tiene otra visualización establecida como predeterminada, ambas visualizaciones se marcan como visualizaciones predeterminadas para la entidad.  Para establecer una visualización como visualización predeterminada para una entidad, asegúrese de que no se configura ninguna otra visualización como visualización predeterminada para la entidad.  
   
   Para obtener una lista de mensajes admitidos en la entidad de visualización que pertenece a la organización, vea [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md).
   
@@ -69,5 +69,8 @@ Con los servicios web de Common Data Service (CDS) para aplicaciones, puede real
  [Descripción de los gráficos: representación de datos y gráficos subyacentes](understand-charts-underlying-data-chart-representation.md)   
  [Crear un gráfico](create-visualization-chart.md)   
  [Gráficos de muestra](sample-charts.md)   
- [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un gráfico](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!--TODO: Need to find the topic in Powerapps repo to link --> [Ejemplo: recuperar todos los gráficos asociados a una entidad](/dynamics365/customer-engagement/developer/customize-dev/sample-retrieve-all-charts-attached-entity)   <!--TODO: Need to find the topic in Powerapps repo to link --> [Ejemplo: Asignar un gráfico a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-chart-another-user)   <!--TODO: Need to find the topic in Powerapps repo to link --> [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md)   
+ [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un gráfico](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!--TODO: Need to find the topic in Powerapps repo to link --> 
+ [Ejemplo: recuperar todos los gráficos asociados a una entidad](/dynamics365/customer-engagement/developer/customize-dev/sample-retrieve-all-charts-attached-entity)   <!--TODO: Need to find the topic in Powerapps repo to link -->
+ [Ejemplo: Asignar un gráfico a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-chart-another-user)   <!--TODO: Need to find the topic in Powerapps repo to link -->
+ [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md)   
  [Entidad UserQueryVisualization](../common-data-service/reference/entities/userqueryvisualization.md)

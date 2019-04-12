@@ -1,5 +1,5 @@
 ---
-title: 'Insertar, actualizar, eliminar y ordenar las opciones globales del conjunto de opciones (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Insertar, actualizar, eliminar y ordenar las opciones globales del conjunto de opciones (Common Data Service) | Microsoft Docs'
 description: 'Ejemplos de código para mostrar cómo insertar, actualizar, eliminar y ordenar opciones en un conjunto de opciones globales'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
 
 -->
 

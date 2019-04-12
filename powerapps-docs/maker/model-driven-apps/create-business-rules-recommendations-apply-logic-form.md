@@ -1,9 +1,9 @@
 ---
 title: Crear reglas de negocio y recomendaciones de aplicaciones controladas por modelos | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 03/15/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -24,9 +24,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Tutorial: Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos
+# <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos
 
-En este tutorial se muestra cómo crear reglas de negocio y recomendaciones para aplicar lógica del formulario en una aplicación basada en modelos sin escribir código de JavaScript ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general. Se pueden aplicar a formularios principales y de creación rápida y funcionan en aplicaciones basadas en modelos, aplicaciones web de Dynamics 365 Customer Engagement, Dynamics 365 for tablets y Dynamics 365 for Outlook (en modo en línea o fuera de línea).
+En este tema se muestra cómo crear reglas de negocio y recomendaciones para aplicar lógica del formulario en una aplicación basada en modelos sin escribir código de JavaScript ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general. Se pueden aplicar a formularios principales y de creación rápida y funcionan en aplicaciones basadas en modelos, aplicaciones web de Dynamics 365 Customer Engagement, Dynamics 365 for tablets y Dynamics 365 for Outlook (en modo en línea o fuera de línea).
 
 > [!NOTE]
 > Para definir una regla de negocio para una entidad para que se aplique a todos los formularios y servidores, consulte [Crear una reglas de negocio para una entidad](/powerapps/maker/common-data-service/data-platform-create-business-rule).
@@ -129,7 +129,13 @@ En este tutorial se muestra cómo crear reglas de negocio y recomendaciones para
 ## <a name="localize-error-messages-used-in-business-rules"></a>Buscar los mensajes de error que se usan en reglas de negocio  
  Si tiene más de un idioma aprovisionado para su organización, deseará localizar los mensajes de error que haya configurado. Cada vez que se establece un mensaje, el sistema genera la etiqueta. Si exporta las traducciones de su organización, puede agregar versiones localizadas de sus mensajes y luego importar las etiquetas nuevamente en el sistema, de modo que los usuarios que utilicen otros idiomas distintos del idioma base puedan ver los mensajes traducidos.  
 
-## <a name="is-your-business-rule-not-firing-for-a-form"></a>¿No se está desencadenando su regla de negocio para un formulario?
+## <a name="common-issues"></a>Problemas comunes
+En esta sección se describen los problemas comunes que se pueden producir al usar reglas de negocio. 
+
+### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>El campo Nombre completo no es compatible con aplicaciones de la interfaz unificada
+Las acciones o condiciones que usan un campo **Nombre completo** (nombre completo) no se admiten en aplicaciones basadas en la interfaz unificada.  Como alternativa, puede usar acciones o condiciones con los campos **Nombre de pila** (firstname) y **Apellido** (lastname). 
+
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>¿No se está desencadenando su regla de negocio para un formulario?
 Una regla de negocio puede no ejecutarse debido a que el campo al que se hace referencia en la regla de negocio no se incluye en el formulario. 
 1.  Abra el explorador de soluciones. Expanda la entidad deseada y seleccione **Formularios**. 
 2.  Abra el formulario que desea y en la cinta del diseñador de formularios seleccione **Reglas de negocio**. 

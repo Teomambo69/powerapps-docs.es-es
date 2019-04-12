@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo de operaciones condicionales de API web (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
-description: 'Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web y C# de Common Data Service para aplicaciones'
+title: 'Ejemplo de operaciones condicionales de API web (C#) (Common Data Service) | Microsoft Docs'
+description: 'Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web y C# de Common Data Service'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,16 +22,16 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample-c"></a>Ejemplo de operaciones condicionales de la API web (C#)
 
-Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de de CDS for Apps y C#.  
+Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web y C# de Common Data Service y C#.  
   
 > [!NOTE]
-> Este ejemplo implementa las operaciones de Common Data Service para aplicaciones y la salida de la consola detalladas en el [Ejemplo de operaciones condicionales de API web](../web-api-conditional-operations-sample.md) y utiliza las construcciones comunes de C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
+> Este ejemplo implementa las operaciones de Common Data Service y la salida de la consola detalladas en el [Ejemplo de operaciones condicionales de API web](../web-api-conditional-operations-sample.md) y utiliza las construcciones comunes de C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_Prereqs"></a>
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Los requisitos previos de todos los ejemplos en C# de la API web de CDS for Apps se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
+Los requisitos previos de todos los ejemplos en C# de la API web de Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_RunSample"></a>
  
@@ -42,7 +42,7 @@ Vaya a [Microsoft CRM API Conditional Operations Sample (C#)](https://github.com
 |Archivo|Descripción|  
 |----------|-----------------|  
 |SampleProgram.cs|Contiene el código de origen para este ejemplo.|  
-|App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de CDS for Apps con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
+|App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de Common Data Service con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
 |SampleHelper.cs|Contiene el código auxiliar para ayudar a realizar tareas comunes, como la configuración, la autenticación y la administración de errores de respuestas `HTTP`. <br/> Este archivo se comparte con todos los ejemplos de API web en el repositorio. Contiene métodos auxiliares para administrar excepciones y el token OAuth. Consulte el ejemplo simple de la API web para obtener más información sobre los métodos de este archivo.|
 |SampleMethod.cs|Contiene todos los métodos que admiten el código de origen en el ejemplo. Las funciones que se usan en SampleProgram.cs se pueden definir en este archivo. |
 |ConditionalOperations.sln<br /> ConditionalOperations.csproj<br /> Packages.config<br /> AssemblyInfo.cs|La solución de Visual Studio estándar 2017, proyecto, paquete NuGet, y archivos de información de ensamblado para este ejemplo.|  
@@ -51,7 +51,7 @@ Vaya a [Microsoft CRM API Conditional Operations Sample (C#)](https://github.com
   
 1. Cree la solución (**Generar** > **Generar solución**). Debe descargar y actualizar automáticamente todos los paquetes NuGet necesarios.  
   
-1. Edite el archivo App.Config en la solución para especificar la instancia del servidor de CDS for Apps con la que desee ejecutar este ejemplo.  
+1. Edite el archivo App.Config en la solución para especificar la instancia del servidor de Common Data Service con la que desee ejecutar este ejemplo.  
   
 1. Ejecute el proyecto.  Todos los proyectos de ejemplo se configuran para ejecutarse en modo de depuración de forma predeterminada.  
   
@@ -402,7 +402,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](../overview.md)<br />
+[Utilizar API Web de Common Data Service](../overview.md)<br />
 [Realizar operaciones condicionales mediante la API web](../perform-conditional-operations-using-web-api.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />
 [Ejemplo de operaciones condicionales de la API web](../web-api-conditional-operations-sample.md)

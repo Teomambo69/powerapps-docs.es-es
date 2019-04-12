@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico (Common Data Service para aplicaciones | MicrosoftDocs)'
+title: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico (Common Data Service | MicrosoftDocs)'
 description: El ejemplo muestra cómo implementar un complemento de entidad virtual personalizado genérico en Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -25,7 +25,7 @@ search.app:
 
 ## <a name="demonstrates"></a>Demostraciones
 
-Este ejemplo muestra una implementación mínima para un complemento de proveedor de datos de entidad virtual genérico de CDS para aplicaciones, **DropboxRetrieveMultiplePlugin**, para el servicio de uso compartido de archivos [Dropbox](https://www.dropbox.com/). Utiliza el método "básico" de traducir la expresión <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> creando la clase visitante personalizada **DropBoxExpressionVisitor**. Devuelve una colección de archivos que cumplen con los criterios de búsqueda como <xref:Microsoft.Xrm.Sdk.EntityCollection>. 
+Este ejemplo muestra una implementación mínima para un complemento de proveedor de datos de entidad virtual genérico de Common Data Service, **DropboxRetrieveMultiplePlugin**, para el servicio de uso compartido de archivos [Dropbox](https://www.dropbox.com/). Utiliza el método "básico" de traducir la expresión <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> creando la clase visitante personalizada **DropBoxExpressionVisitor**. Devuelve una colección de archivos que cumplen con los criterios de búsqueda como <xref:Microsoft.Xrm.Sdk.EntityCollection>. 
 
 ## <a name="getting-started"></a>Introducción
 

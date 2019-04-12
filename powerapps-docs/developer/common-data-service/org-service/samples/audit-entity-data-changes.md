@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Auditar los cambios de datos de entidades (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Auditar los cambios de datos de entidades (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo auditar cambios de datos en entidades.
 ms.custom: ''
 ms.date: 10/31/2018

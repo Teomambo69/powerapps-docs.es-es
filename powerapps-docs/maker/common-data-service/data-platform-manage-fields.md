@@ -1,13 +1,13 @@
 ---
 title: Administrar campos personalizados en una entidad | Microsoft Docs
-description: 'Tutorial sobre cómo crear, leer, actualizar y eliminar campos personalizados de una entidad en Common Data Service (CDS) for Apps.'
-author: clwesene
+description: 'Tutorial sobre cómo crear, leer, actualizar y eliminar campos personalizados de una entidad en Common Data Service.'
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

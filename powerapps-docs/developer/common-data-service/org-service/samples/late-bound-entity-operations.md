@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear, recuperar, actualizar y eliminar (enlace en tiempo de ejecución) (Common Data Service para las aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear, recuperar, actualizar y eliminar (enlace en tiempo de ejecución) (Common Data Service) | Microsoft Docs'
 description: 'Este ejemplo muestra las operaciones de crear, recuperar, actualizar y eliminar en una cuenta mediante la clase Entity de enlace en tiempo de ejecución.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="sample-late-bound-entity-operations"></a>Ejemplo: operaciones de entidad en tiempo de ejecución
 
-<!-- show deep insert equivilent 
+<!-- show deep insert equivalent 
 
 sample-initialize-record-existing-record.md
 sample-create-retrieve-update-delete-late-bound.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
 
 -->
 Este ejemplo muestra las operaciones de crear, recuperar, actualizar y eliminar en una cuenta mediante la clase Entity de enlace en tiempo de ejecución. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/LateBoundEntityOperations).

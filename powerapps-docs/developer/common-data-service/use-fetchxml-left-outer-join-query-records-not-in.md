@@ -1,5 +1,5 @@
 ---
-title: Usar una combinación externa izquierda en FetchXML para consultar los registros que &bdquo;no están en&bdquo; (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar una combinación externa izquierda en FetchXML para consultar los registros que &bdquo;no están en&bdquo; (Common Data Service) | Microsoft Docs
 description: Aprenda a usar una combinación izquierda mediante la clase FetchXML para realizar una consulta que filtre en la tabla de combinación y cree una consulta para buscar registros "no incluidos en" un conjunto
 ms.custom: ''
 ms.date: 10/31/2018

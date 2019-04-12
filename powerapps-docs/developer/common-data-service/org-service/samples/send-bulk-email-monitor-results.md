@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Enviar un correo electrónico en masa y supervisar los resultados (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Enviar un correo electrónico en masa y supervisar los resultados (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo enviar mensajes de correo electrónico en masa y supervisar los resultados
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-send-bulk-email-and-monitor-results"></a>Ejemplo: enviar los resultados de supervisión y correo electrónico en masa
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
 
 Este ejemplo muestra cómo enviar correos electrónicos en masa mediante <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> y controlar los resultados recuperando registros de la entidad `AsyncOperation`. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkEmail).
 

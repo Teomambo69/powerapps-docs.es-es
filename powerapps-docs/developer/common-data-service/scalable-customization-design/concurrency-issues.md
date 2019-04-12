@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: problemas de simultaneidad (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: problemas de simultaneidad (Common Data Service) | Microsoft Docs'
 description: 'El tercero de una serie de temas. '
 ms.custom: ''
 ms.date: 1/15/2019
@@ -19,7 +19,7 @@ search.app:
 # <a name="scalable-customization-design-concurrency-issues"></a>Diseño de personalización escalable: problemas de simultaneidad
 
 > [!NOTE]
-> Este es el tercero de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md).
+> Este es el tercero de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service](overview.md).
 > El tema anterior [Diseño de personalización escalable: transacciones de bases de datos](database-transactions.md) describe cómo se aplican las transacciones de base de datos y el efecto que tienen en los diversos tipos de personalizaciones.
 
 Cuando tiene solicitudes simultáneas, la posibilidad de colisiones en los bloqueos se incrementa. Cuanto más dure la transacción, más tiempo se mantendrán los bloqueos. Las probabilidades de colisión aumentan incluso más y el impacto total sería mayor en los usuarios finales. 
@@ -32,15 +32,15 @@ Algunos ámbitos fundamentales para los que considerar el diseño, y comprobarlo
 
 - **Actividad controlada por el usuario**: directamente a través de la interfaz de usuario.
 - **Acciones asincrónicas**: actividad que se produce posteriormente como resultado de otras acciones. Cuando esta actividad se vaya a procesar no se conocerá en el momento en se desencadena la acción de inicio.
-- **Actividades por lotes**: controlado bien desde Common Data Service para aplicaciones (CDS para aplicaciones) (como los trabajos de eliminación de forma masiva o el procesamiento de sincronización en el servidor) o bien por orígenes externos como la integración desde otro sistema.
+- **Actividades por lotes**: controlado bien desde Common Data Service (como los trabajos de eliminación de forma masiva o el procesamiento de sincronización en el servidor) o bien por orígenes externos como la integración desde otro sistema.
 
 ## <a name="async-operations-in-parallel"></a>Operaciones asincrónicas en paralelo
 
-Un error común es que los flujos de trabajo o los complementos asincrónicos se procesan en serie desde una cola y no debería haber conflictos entre ellos. Esto no es preciso, ya que CDS para aplicaciones procesa múltiples actividades asincrónicas en paralelo tanto en cada instancia de servicio asíncrono, como a través de las instancias de servicio difundidas por los diferentes servidores para aumentar el rendimiento. Cada servicio asincrónico recupera realmente trabajos que se van a realizar por lotes de aproximadamente 20 por servicio, en función de la configuración y la carga.
+Un error común es que los flujos de trabajo o los complementos asincrónicos se procesan en serie desde una cola y no debería haber conflictos entre ellos. Esto no es preciso, ya que Common Data Service procesa múltiples actividades asincrónicas en paralelo tanto en cada instancia de servicio asíncrono, como a través de las instancias de servicio difundidas por los diferentes servidores para aumentar el rendimiento. Cada servicio asincrónico recupera realmente trabajos que se van a realizar por lotes de aproximadamente 20 por servicio, en función de la configuración y la carga.
 
 Si inicia múltiples actividades asincrónicas desde el mismo evento en el mismo registro, seguramente se procesarán en paralelo. Cuando se activan en el mismo registro, un modelo común se actualiza al mismo registro primario; por lo tanto, hay muchas posibilidades de conflicto. 
 
-Cuando se desencadena un evento, como la creación de una cuenta, la lógica asincrónica de CDS para aplicaciones podría crear entradas en la [Entidad AsyncOperation (trabajo del sistema)](../reference/entities/asyncoperation.md) para cada proceso o acción que se emprenda. El servicio asincrónico controla esta tabla, selecciona solicitudes de esperada por lotes y, después, los procesa. Debido a que los flujos de trabajo se desencadenan a la vez, existen muchas probabilidades de que se seleccionen en el mismo lote y se procesarán a la vez. 
+Cuando se desencadena un evento, como la creación de una cuenta, la lógica asincrónica de Common Data Service podría crear entradas en la [Entidad AsyncOperation (trabajo del sistema)](../reference/entities/asyncoperation.md) para cada proceso o acción que se emprenda. El servicio asincrónico controla esta tabla, selecciona solicitudes de esperada por lotes y, después, los procesa. Debido a que los flujos de trabajo se desencadenan a la vez, existen muchas probabilidades de que se seleccionen en el mismo lote y se procesarán a la vez. 
 
 ## <a name="why-its-important-to-understand-transactions"></a>Por qué es importante entender las transacciones
 

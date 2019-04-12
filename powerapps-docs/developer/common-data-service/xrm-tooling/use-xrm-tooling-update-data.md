@@ -1,10 +1,10 @@
 ---
-title: Utilizar útiles de XRM para actualizar datos (Common Data Service para aplicaciones)| Microsoft Docs
-description: Utilizar la clase CrmServiceClient para actualizar datos en CDS para aplicaciones
+title: Utilizar útiles de XRM para actualizar datos (Common Data Service)| Microsoft Docs
+description: Utilizar la clase CrmServiceClient para actualizar datos en Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,13 +23,13 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>Usar útiles de XRM para actualizar los datos
 
-Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para actualizar datos en CDS para aplicaciones: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
+Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para actualizar datos en Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
   
 Una acción de actualización que usa la API de los útiles de XRM requiere una carga de datos. La carga útil de datos requiere la forma de un objeto Dictionary\<string, CrmDataTypeWrapper>. <xref:Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper> se usa para informes a la interfaz del tipo de control debe ser aplicado al punto de datos al que está haciendo referencia.  
   
 ## <a name="updateentity"></a>UpdateEntity  
 
-Este es el método de delimitador para actualizar cualquier registro de CDS para aplicaciones, con la excepción del establecimiento del estado o del estado de un registro. Para usarlo, debe conocer la siguiente información: nombre de esquema de la entidad que desea actualizar, el campo de clave principal de la entidad que desea actualizar, el GUID del registro que desea actualizar y, por último, la matriz de carga de datos con la que desea actualizar.  
+Este es el método de delimitador para actualizar cualquier registro de Common Data Service, con la excepción del establecimiento del estado o del estado de un registro. Para usarlo, debe conocer la siguiente información: nombre de esquema de la entidad que desea actualizar, el campo de clave principal de la entidad que desea actualizar, el GUID del registro que desea actualizar y, por último, la matriz de carga de datos con la que desea actualizar.  
   
 ```csharp  
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -79,11 +79,11 @@ else
   
 ## <a name="updatestateandstatusforentity"></a>UpdateStateAndStatusForEntity 
  
-Este método se usa para establecer el estado de un registro en CDS para aplicaciones. Por ejemplo, todos los registros comienzan normalmente en un estado "abierto". El nombre del estado cambia en función del tipo de registro o incluso de las decisiones de los desarrolladores. Una oferta, por ejemplo, tiene varios estados posibles, **Borrador**, **Activo**, **Cerrar**, **Perdido**, **Ganado**.  
+Este método se usa para establecer el estado de un registro en Common Data Service. Por ejemplo, todos los registros comienzan normalmente en un estado "abierto". El nombre del estado cambia en función del tipo de registro o incluso de las decisiones de los desarrolladores. Una oferta, por ejemplo, tiene varios estados posibles, **Borrador**, **Activo**, **Cerrar**, **Perdido**, **Ganado**.  
   
 <!-- TODO:
 > [!TIP]
->  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in CDS for Apps. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
+>  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in Common Data Service. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
   
 Actualizar el estado de una entidad requiere que sepa cuál es el estado y de destino, por nombres o id. Los nombres y los id. se pueden encontrar consultando los metadatos de la entidad y mirando los campos de estado. En este ejemplo se mostrará cómo establecer el estado de un registro de cuenta en **Inactivo**.  
   
@@ -124,7 +124,7 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Use útiles de XRM para conectarse a CDS para aplicaciones](use-crmserviceclient-constructors-connect.md)<br />
-[Usar API de útiles de XRM para ejecutar acciones en CDS para aplicaciones](use-xrm-tooling-execute-actions.md)<br />
+[Uso de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)<br />
 <!-- TODO:
 [Work with attribute metadata](../org-service/work-attribute-metadata.md) -->

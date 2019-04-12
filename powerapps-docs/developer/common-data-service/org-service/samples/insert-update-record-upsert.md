@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Insertar o actualizar registro mediante Upsert (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Insertar o actualizar registro mediante Upsert (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo insertar o actualizar registros mediante el mensaje de Upsert.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>Ejemplo: Insertar o actualizar un registro mediante Upsert
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-insert-update-record-upsert -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-insert-update-record-upsert -->
 
-Este código de ejemplo muestra cómo insertar o actualizar registros mediante el mensaje de [UpsertReques](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.upsertrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/InsertRecordUsingUpsert).
+Este código de ejemplo muestra cómo insertar o actualizar registros mediante el mensaje de [UpsertReques](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.upsertrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/InsertRecordUsingUpsert).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

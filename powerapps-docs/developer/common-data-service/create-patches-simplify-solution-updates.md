@@ -1,5 +1,5 @@
 ---
-title: Creación de revisiones para simplificar las actualizaciones de solución (Common Data Service para aplicaciones) | Microsoft Docs
+title: Creación de revisiones para simplificar las actualizaciones de solución (Common Data Service) | Microsoft Docs
 description: 'Si se agrega una entidad a una solución y se exporta esa solución, las revisiones le ayudan a administrar las entidades y todos los activos relacionados con dichas entidades.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,12 +19,12 @@ search.app:
 
 Si se agrega una entidad a una solución y se exporta esa solución, la entidad y todos sus activos relacionados se exportan en esa solución. Estos activos incluyen atributos, formularios, vistas, relaciones, visualizaciones y cualquier otro activo que se empaquete con la entidad. Exportar todos los objetos significa que puede editar involuntariamente objetos en la implementación de destino, o transferir dependencias involuntarias.  
   
- Para evitarlo, puede crear y publicar revisiones de la solución que contengan subcomponentes de entidades, en lugar de publicar la entidad completa y todos sus activos.  La solución original y una o varias revisiones relacionadas se pueden consolidar (combinar) en un momento posterior en una versión actualizada de la solución, que a continuación puede reemplazar la solución original en la organización Common Data Service para aplicaciones.  
+ Para evitarlo, puede crear y publicar revisiones de la solución que contengan subcomponentes de entidades, en lugar de publicar la entidad completa y todos sus activos.  La solución original y una o varias revisiones relacionadas se pueden consolidar (combinar) en un momento posterior en una versión actualizada de la solución, que a continuación puede reemplazar la solución original en la organización Common Data Service.  
   
 ## <a name="patches"></a>Revisiones  
  Puede aplicar revisiones a soluciones administradas o no administradas e incluir solo cambios en las entidades y los activos relacionados. Las revisiones no contienen componentes del sistema no personalizados ni relaciones de las que dependa porque estos componentes ya existen en la organización en la que se ha realizado la implementación. En algún momento del ciclo de desarrollo, puede consolidar todas las revisiones en una nueva versión de la solución para reemplazar la solución original desde la que se crearon las revisiones.  
   
- Las revisiones se almacenan en la base de datos de CDS for Apps como registros de entidad de `Solution`. Un atributo de `ParentSolutionId` no nulo indica que la solución es una revisión. Las revisiones se pueden crear y administrar a través del Servicio de organización o las API web, que son útiles para desarrollar automatización como un script de instalación del producto. Sin embargo, la aplicación web de CDS for Apps proporciona varios formularios web que le permiten crear y administrar revisiones interactivamente.  
+ Las revisiones se almacenan en la base de datos de Common Data Service como registros de entidad de `Solution`. Un atributo de `ParentSolutionId` no nulo indica que la solución es una revisión. Las revisiones se pueden crear y administrar a través del Servicio de organización o las API web, que son útiles para desarrollar automatización como un script de instalación del producto. Sin embargo, la aplicación web de Common Data Service proporciona varios formularios web que le permiten crear y administrar revisiones interactivamente.  
   
 - Las revisiones solo se pueden crear desde una solución primaria mediante <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> o <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" />.  
   
@@ -48,7 +48,7 @@ Si se agrega una entidad a una solución y se exporta esa solución, la entidad 
   
 - No use revisiones no administradas con fines de producción.  
   
-- Las revisiones se admiten solo en las organizaciones de CDS for Apps versión 8.0 o superior.  
+- Las revisiones se admiten solo en las organizaciones de Common Data Service versión de 8.0 o superior.  
   
   Las herramientas SolutionPackager y PackageDeployer de esta versión admiten revisiones de la solución. Consulte la ayuda en línea de la herramienta para conocer las opciones de línea de comandos que estén relacionadas con revisiones.  
   
@@ -99,7 +99,7 @@ Si se agrega una entidad a una solución y se exporta esa solución, la entidad 
   
  Para una solución no administrada, debe desinstalar todas las revisiones de la solución base en primer lugar, en el orden inverso de versión al que se crearon, antes de desinstalar la solución base.  
   
- Para una solución administrada, simplemente desinstale la solución base. El sistema CDS for Apps automáticamente desinstala las revisiones en orden inverso de versión antes de desinstalar la solución base. También puede simplemente desinstalar una sola revisión.  
+ Para una solución administrada, simplemente desinstale la solución base. El sistema Common Data Service automáticamente desinstala las revisiones en orden inverso de versión antes de desinstalar la solución base. También puede simplemente desinstalar una sola revisión.  
   
 ## <a name="update-a-solution"></a>Actualizar una solución  
  Actualizar una solución implica consolidar (combinar) todas las revisiones a esa solución en una nueva versión de la solución. Posteriormente, la solución se desbloquea y se pueden editar (solo solución no administrada) o exportar de nuevo. Para una solución administrada, no se permiten más modificaciones de la solución salvo para crear revisiones desde la solución recién actualizada. Para consolidar revisiones en una solución no administrada, use <xref:Microsoft.Crm.Sdk.Messages.CloneAsSolutionRequest> o <xref href="Microsoft.Dynamics.CRM.CloneAsSolution?text=CloneAsSolution Action" />. La clonación de una solución crea una nueva versión de la solución no administrada, incorporando todas sus revisiones, con un número de versión*major.minor* más alto, el mismo nombre único y un nombre para mostrar.  

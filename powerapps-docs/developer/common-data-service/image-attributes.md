@@ -1,5 +1,5 @@
 ---
-title: Atributos de imagen (Common Data Service para aplicaciones) | Microsoft Docs
+title: Atributos de imagen (Common Data Service) | Microsoft Docs
 description: 'Obtenga información sobre los atributos de la imagen que incluyen datos de la imagen con la aplicación y sobre los atributos de soporte, la recuperación de datos de la imagen y la carga de datos de la imagen.'
 ms.custom: ''
 ms.date: 11/26/2018
@@ -19,7 +19,7 @@ search.app:
 
 Los registros de entidad que incluyen datos de imagen proporcionan una experiencia única dentro de la aplicación. Como programador, usted necesita comprender cómo trabaja con datos de imagen.  
   
- Sólo determinadas entidades del sistema y las entidades personalizadas admiten imágenes. Para obtener información acerca de qué entidades del sistema admiten imágenes, consulte [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images).  
+ Sólo determinadas entidades del sistema y las entidades personalizadas admiten imágenes. Para obtener información acerca de qué entidades del sistema admiten imágenes, consulte [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Atributos compatibles  
@@ -85,9 +85,9 @@ Los registros de entidad que incluyen datos de imagen proporcionan una experienc
 |![Imagen antes del cambio de tamaño](media/crm-itpro-cust-imagebeforeresize.png "Imagen antes del cambio de tamaño")<br /><br /> 300x428|![Imagen después del cambio de tamaño](media/crm-itpro-cust-imageafterresize.jpg "Imagen después del cambio de tamaño")<br /><br /> 144x144|  
 |![Segundo ejemplo de cambio de tamaño de la imagen](media/crm-itpro-cust-imagebeforeresizeexample2.png "Segundo ejemplo de cambio de tamaño de la imagen")<br /><br /> 91x130|![Segundo ejemplo de cambio de tamaño](media/crm-itpro-cust-imageafterresizeexample2.jpg "Segundo ejemplo de cambio de tamaño")<br /><br /> 91x91|  
   
- Más información: [Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md).  
+ Más información: [Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images).  
   
 ### <a name="see-also"></a>Vea también  
  [Introducción a las entidades en Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entities)   
  [Introducción a los atributos de entidad en Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md)
+ [Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)

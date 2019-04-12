@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: ejemplo de numeración automática (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: ejemplo de numeración automática (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo es necesario tener en cuenta las transacciones y las configuración en una personalización de código.
 ms.custom: ''
 ms.date: 1/15/2019
@@ -18,9 +18,9 @@ search.app:
 # <a name="scalable-customization-design-auto-numbering-example"></a>Diseño de la personalización escalable: ejemplo de numeración automática
 
 > [!NOTE]
-> Este ejemplo describe una serie de temas sobre diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md).
+> Este ejemplo describe una serie de temas sobre diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service](overview.md).
 
-Un escenario que muestra el error de comunicación habitual de cómo se administran las transacciones en CDS para aplicaciones es la implementación de un esquema de numeración automática.
+Un escenario que muestra el error de comunicación habitual de cómo se administran las transacciones en Common Data Service para aplicaciones es la implementación de un esquema de numeración automática.
 
 En este escenario el requisito se normalmente:
 
@@ -37,7 +37,7 @@ El método típico implica las siguientes variaciones:
 - Registre el nuevo número para el registro recién generado.
 - Vuelva a almacenar el nuevo número como el último número utilizado en el almacén de indexado automático de números.
 
-En las siguientes secciones se describen diferentes métodos que se pueden utilizar en CDS para aplicaciones y se resaltan las implicaciones, mostrando la importancia y las ventajas de entender la forma en que se usan las transacciones. 
+En las siguientes secciones se describen diferentes métodos que se pueden utilizar en Common Data Service y se resaltan las implicaciones, mostrando la importancia y las ventajas de entender la forma en que se usan las transacciones. 
 
 ## <a name="approach-1-out-of-a-transaction"></a>Método 1: Fuera de una transacción
 

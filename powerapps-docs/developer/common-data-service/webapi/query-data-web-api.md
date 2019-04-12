@@ -1,10 +1,10 @@
 ---
-title: Consultar datos utilizando la API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: Lea distintas formas de hacer consultas con Common Data Service para aplicaciones para los datos de las aplicaciones mediante la web API de Common Data Service para aplicaciones y otros sistemas para consultar las opciones que se pueden aplicar en estas consultas
+title: Consultar datos utilizando la API web (Common Data Service) | Microsoft Docs
+description: Lea distintas formas de hacer consultas con Common Data Service para los datos de las aplicaciones mediante la web API de Common Data Service y otros sistemas para consultar las opciones que se pueden aplicar en estas consultas
 ms.custom: ''
 ms.date: 02/06/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -214,9 +214,9 @@ La API web admite estas funciones de consulta de cadena de OData estándar:
 > [!NOTE]
 >  Este es un subconjunto de las [funciones de consulta integradas 11.2.5.1.2](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` y otras funciones de cadena no se admiten en la API web.  
   
-### <a name="common-data-service-for-apps-web-api-query-functions"></a>Usar las funciones de consulta de la API web de Common Data Service para aplicaciones
+### <a name="common-data-service-web-api-query-functions"></a>Usar las funciones de consulta de la API web de Common Data Service
  
-Common Data Service para aplicaciones ofrece varias funciones especiales que aceptan parámetros, devuelven valores booleanos y se pueden usar como criterios de filtro en una consulta. Para obtener una lista de estas funciones, vea <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Lo siguiente es un ejemplo de la búsqueda <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> para cuentas con varios empleados entre 5 y 2000.  
+Common Data Service ofrece varias funciones especiales que aceptan parámetros, devuelven valores booleanos y se pueden usar como criterios de filtro en una consulta. Para obtener una lista de estas funciones, vea <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Lo siguiente es un ejemplo de la búsqueda <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> para cuentas con varios empleados entre 5 y 2000.  
   
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
@@ -249,7 +249,7 @@ Utilizando `$apply` puede agregar y agrupar los datos dinámicamente.  Casos de 
 |Fecha y hora de registro creado por última vez|`$apply=aggregate(createdon with max as lastCreate)`|
 |Fecha y hora de registro creado por primera vez|`$apply=aggregate(createdon with min as firstCreate)`|
 
-Las funciones agregadas están limitados a una colección de 50.000 registros.  La información adicional acerca de usar la funcionalidad agregada con CDS para aplicaciones se puede encontrar aquí: [Uso de FetchXML para generar una consulta](../use-fetchxml-construct-query.md)
+Las funciones agregadas están limitados a una colección de 50.000 registros.  La información adicional acerca de usar la funcionalidad agregada con Common Data Service se puede encontrar aquí: [Uso de FetchXML para generar una consulta](../use-fetchxml-construct-query.md)
 
 Los detalles adicionales en la agregación de datos de OData se pueden encontrar aquí: [Extensión de OData para la versión 4.0 de agregación de datos](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).  Tenga en cuenta que las aplicaciones Dynamics 365 for Customer Engagement solo admite un subconjunto de estos métodos agregados.
 
@@ -514,7 +514,7 @@ OData-Version: 4.0
 }  
 ```  
 
--   **Recuperar cuentas secundarias para el ID de cuenta especificado**  
+-   **Recupere cuentas secundarias para el ID de cuenta especificado**  
   
 **Solicitud**  
 
@@ -633,7 +633,7 @@ OData-Version: 4.0
 
 <a bkmk="bkmk_retrieverelatedentitysingleandcollectionnavprop"></a>
   
-### <a name="retrieve-related-entities-by-expanding-both-single-valued-and-collection-valued-navigation-properties"></a>Recuperar entidades relacionadas para una instancia de entidad expandiendo las propiedades de navegación de un solo valor y de valor de colección
+### <a name="retrieve-related-entities-by-expanding-both-single-valued-and-collection-valued-navigation-properties"></a>Recuperar entidades relacionadas para una instancia de entidad expandiendo las propiedades de navegación valoradas tanto como de un valor como colección:
 
 El siguiente ejemplo muestra cómo puede expandir entidades relacionadas para los conjuntos de entidad mediante propiedades de navegación únicas o de colección. Como se ha explicado anteriormente, si expande parámetros de navegación valorados como colección para recuperar entidades relacionadas para conjuntos de entidades, se devuelve una propiedad `@odata.nextLink` para las entidades relacionadas. Debe usar el valor de la propiedad `@odata.nextLink` con una nueva solicitud `GET` para devolver los datos requeridos.  
   
@@ -704,7 +704,7 @@ OData-Version: 4.0
 
 ## <a name="filter-results-based-on-values-of-collection-valued-navigation-properties"></a>Filtrar resultados según los valores de las propiedades de navegación valorada como colección
 
-No puede usar OData `$filter` para limitar el número de registros de entidad devueltos con los criterios aplicados a las propiedades de navegación con valor de colección en una sola operación.
+No puede usar OData `$filter` para limitar el número de registros de entidad devueltos con los criterios aplicado a las propiedades colección valoradas de navegación en una sola operación.
 
 > [!NOTE]
 > Es posible usar `$filter` en `$expand` para filtrar los resultados para los registros relacionados en una operación de recuperación. Puede usar una lista separada por punto y coma de opciones de consulta del sistema entre paréntesis después del nombre de la propiedad de navegación valorada como colección. Se admiten las siguientes opciones de consulta del sistema: `$expand`, `$select`, `$filter`, `$top` y `$orderby`. Más información: [Opciones para aplicar a entidades expandidas](retrieve-entity-using-web-api.md#options-to-apply-to-expanded-entities)
@@ -715,7 +715,7 @@ Las dos opciones para filtrar resultados según los valores de las propiedades d
 
 Normalmente, el uso de FetchXML debe proporcionar un mejor rendimiento, porque el filtrado se puede aplicar del lado del servidor en una sola operación. El ejemplo siguiente muestra cómo aplicar el filtro en valores de propiedades de colección para una entidad de vínculo.
 
-El siguiente ejemplo recupera registros del tipo de entidad `systemuser` que están vinculados con `team` y los tipos de entidad `teammembership`, eso significa que recuperan los registros `systemuser` que son también administradores de un equipo.
+El siguiente ejemplo recupera registros `systemuser` del tipo de entidad con los que están vinculados a `team` y los tipos de entidad `teammembership`, eso significa que recuperan los registros `systemuser` que son también administradores de un equipo.
 
 ```xml
 <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
@@ -739,17 +739,17 @@ El siguiente ejemplo recupera registros del tipo de entidad `systemuser` que est
 ```
 Para obtener más información: [Crear consultas con FetchXML](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml).
 
-2. **Iterar en los resultados filtrando entidades individuales basadas en valores en la colección mediante varias operaciones**
+2. **Iterar en los resultados filtrando entidades individuales basadas en valores en la colección con varias operaciones**
 
-Para obtener los mismos resultados que el ejemplo de FetchXML superior, puede recuperar los registros de dos tipos de entidad y después hacer corresponder de forma iterativa los valores de la colección de una entidad con el valor de la otra entidad, por lo tanto se filtran las entidades en función de los valores de la colección.
+Para obtener los mismos resultados que el ejemplo de FetchXML superior, puede recuperar los registros de dos tipos de entidad y después coincidir iterativo los valores de la colección de una entidad el valor de la otra entidad, por lo tanto de filtrando las entidades en función de los valores de la recopilación.
 
-Siga los pasos en el siguiente ejemplo para comprender cómo se pueden filtrar resultados mediante el método de iteración:
+Siga los pasos en el siguiente ejemplo para comprender cómo podemos filtrar resultados mediante el método de iteración:
 
 1. Obtenga una lista distinta de valores <xref href="Microsoft.Dynamics.CRM.team" />._administratorid_value.
       - `GET [OrganizationURI]/api/data/v9.0/teams?$select=_administratorid_value&$filter=_administrator_value ne null`
-      - A continuación revise los valores devueltos para quitar duplicados y obtener una lista distinta. Por ejemplo, cree una matriz nueva y revise los resultados de la consulta para comprobar si ya se encuentran en la nueva matriz, si no, agréguelos. Esto debería darle una lista de valores `systemuserid` distintos.
+      - A continuación bucle con los valores devueltos para quitar duplicados y obtener una lista distinta. Por ejemplo, cree un nuevo matriz, bucle con los resultados de la consulta para comprobar si ya se encuentran en la nueva matriz, si no, agréguelos. Esto debería darle una lista de valores `systemuserid` distintos
       - La manera en que haría esto en JavaScript en lugar de C# debería ser diferente, pero esencialmente debe poder obtener los mismos resultados.
-2. Consulte <xref href="Microsoft.Dynamics.CRM.systemuser" /> mediante <xref href="Microsoft.Dynamics.CRM.ContainValues?text=ContainValues Query Function" /> para comparar los valores `systemuserid` con la lista recopilada en el paso 1.  
+2. Consulta <xref href="Microsoft.Dynamics.CRM.systemuser" /> mediante <xref href="Microsoft.Dynamics.CRM.ContainValues?text=ContainValues Query Function" /> para comparar los valores `systemuserid` con la lista recopilada en el paso 1.  
 
 ### <a name="see-also"></a>Vea también
 

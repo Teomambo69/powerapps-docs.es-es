@@ -1,10 +1,10 @@
 ---
-title: Recuperar metadatos por nombre o MetadataId (Common Data Service para aplicaciones) | Microsoft Docs
-description: Common Data Service para aplicaciones usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
+title: Recuperar metadatos por nombre o MetadataId (Common Data Service) | Microsoft Docs
+description: Common Data Service usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -294,7 +294,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web con metadatos de Common Data Service para aplicaciones](use-web-api-metadata.md)<br />
+[Usar la API web con metadatos de Common Data Service](use-web-api-metadata.md)<br />
 [Consulta de metadatos utilizando la API web](query-metadata-web-api.md)<br />
 [Crear y actualizar definiciones de entidad mediante la API web](create-update-entity-definitions-using-web-api.md)<br /> 
 [Crear y actualizar relaciones de entidad mediante la API web](create-update-entity-relationships-using-web-api.md)

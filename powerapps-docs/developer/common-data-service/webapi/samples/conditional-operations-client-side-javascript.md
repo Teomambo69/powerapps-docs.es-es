@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de operaciones condicionales de API web (JavaScript de lado de cliente) (Common Data Service para aplicaciones) | Microsoft Docs
-description: Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service para aplicaciones y JavaScript de lado de cliente.
+title: Ejemplo de operaciones condicionales de API web (JavaScript de lado de cliente) (Common Data Service) | Microsoft Docs
+description: Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service y JavaScript de lado de cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample-client-side-javascript"></a>Ejemplo de operaciones condicionales de la API web (JavaScript del lado del cliente)
 
-Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service para aplicaciones usando JavaScript de lado de cliente.  
+Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service utilizando JavaScript de lado de cliente.  
   
 > [!NOTE]
 >  Este ejemplo implementa las operaciones detalladas en el [ejemplo de operaciones condicionales de la API web](../web-api-conditional-operations-sample.md) y utiliza las construcciones comunes del lado cliente de JavaScript que se describen en [ejemplos de API web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
@@ -34,7 +34,7 @@ Este ejemplo muestra cómo realizar operaciones condicionales mediante la API we
 
  Para ejecutar este ejemplo, se requiere lo siguiente:  
   
--   Obtenga acceso a CDS for Apps en línea versión 8.0 o superior.  
+-   Obtenga acceso a Common Data Service online versión 8.0 o superior.  
   
 -   Una cuenta de usuario con privilegios para importar soluciones y realizar operaciones CRUD, normalmente un rol de seguridad de administrador o personalizador del sistema.  
   
@@ -42,7 +42,7 @@ Este ejemplo muestra cómo realizar operaciones condicionales mediante la API we
  
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [Microsoft CRM API web ejemplo de operaciones condicionales (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824046) y descargue el archivo de ejemplo Microsoft CRM ejemplo de operaciones condicionales de la API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque la solución administrada WebAPIConditionalOperations_1_0_0_0_managed.zip. Importe la solución administrada en su organización de CDS for Apps y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [Microsoft CRM API web ejemplo de operaciones condicionales (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824046) y descargue el archivo de ejemplo Microsoft CRM ejemplo de operaciones condicionales de la API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque la solución administrada WebAPIConditionalOperations_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_sampleCode"></a>
 
@@ -83,7 +83,7 @@ Para ejecutar este ejemplo, vaya a [Microsoft CRM API web ejemplo de operaciones
  <h2>Instructions</h2>  
  <p>  
   Choose your preferences and run the JavaScript code.  
-  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Edge,   
+  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Microsoft Edge,   
   press F12 to load the Developer Tools).  
  </p>  
  <form id="preferences">  
@@ -441,7 +441,7 @@ Sdk.startSample = function () {
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](../overview.md)<br />
+[Utilizar API Web de Common Data Service](../overview.md)<br />
 [Realizar operaciones condicionales mediante la API web](../perform-conditional-operations-using-web-api.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />
 [Ejemplo de operaciones condicionales de la API web](../web-api-conditional-operations-sample.md)<br />

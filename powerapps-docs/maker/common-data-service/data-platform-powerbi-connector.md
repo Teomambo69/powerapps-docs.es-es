@@ -1,6 +1,6 @@
 ---
 title: Crear un informe de PowerBI | Microsoft Docs
-description: Conectarse a sus datos desde PowerBI Desktop usando el conector de Common Data Service for Apps.
+description: Conectarse a sus datos desde PowerBI Desktop usando el conector de Common Data Service.
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -14,44 +14,44 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-a-power-bi-report"></a>Crear un informe de Power BI
-Common Data Service for Apps le permite conectarse directamente a sus datos usando Power BI Desktop para crear informes y publicarlos en Power BI. Desde Power BI, los informes se pueden usar en paneles, se pueden compartir con otros usuarios y se puede acceder a ellos desde varias plataformas en las aplicaciones móviles de Power BI.
+# <a name="create-a-power-bi-report"></a>Cree un informe de Power BI
+Common Data Service le permite conectarse directamente a sus datos usando Power BI Desktop para crear informes y publicarlos en Power BI. Desde Power BI, los informes se pueden usar en paneles, se pueden compartir con otros usuarios y se puede acceder a ellos desde varias plataformas en las aplicaciones móviles de Power BI.
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para usar Power BI con Common Data Service for Apps, necesita lo siguiente:
+Para usar Power BI con Common Data Service, necesita lo siguiente:
 
 * Descargar e instalar Power BI Desktop, que es una aplicación gratuita que se ejecuta en su ordenador local. Puede descargar Power BI Desktop [aquí](https://powerbi.microsoft.com/desktop/).
-* Un entorno de Common Data Service for Apps con permisos de creador para acceder al portal y permisos de lectura para acceder a los datos de las entidades.
+* Un entorno de Common Data Service con permisos de creador para acceder al portal y permisos de lectura para acceder a los datos de las entidades.
 
-## <a name="finding-your-common-data-service-for-apps-environment-url"></a>Buscar la dirección URL de su entorno de Common Data Service for Apps
+## <a name="finding-your-common-data-service-environment-url"></a>Buscar la dirección URL de su entorno de Common Data Service
 
 1. Abra [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno al que se va a conectar, haga clic en **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**
 
-    ![Entorno de CDS for Apps](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Entorno de CDS for Apps")
+    ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Entorno de Common Data Service")
 
 2. Haga clic en **Recursos** en la sección de recursos para desarrolladores, que se abrirá una nueva pestaña.
 
-    ![Entorno de CDS for Apps](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Entorno de CDS for Apps")
+    ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Entorno de Common Data Service")
 
 3. Copie la raíz de la dirección URL en la nueva pestaña, ésta es la dirección URL única para el entorno. La dirección URL tendrá el formato **https://yourenvironmentid.crm.dynamics.com/**, asegúrese de no copiar el resto de la dirección URL. Téngala a mano para que pueda usarla cuando cree su informe de PowerBI.
 
     > [!div class="mx-imgBorder"] 
-    > ![Entorno de CDS for Apps](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Entorno de CDS for Apps")
+    > ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Entorno de Common Data Service")
 
-## <a name="connecting-to-common-data-service-for-apps-from-power-bi-desktop"></a>Conectarse a Common Data Service for Apps desde Power BI Desktop
+## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Conectarse a Common Data Service desde Power BI Desktop
 
 1. Inicie **Power BI Desktop**. Si es la primera vez, se le presentará una pantalla de bienvenida o se le redirigirá directamente a un lienzo en blanco. En cualquier caso, haga clic en **Obtener datos** y seleccione **Más** para abrir la lista completa de orígenes de datos disponibles para Power BI Desktop.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop")
 
-2. Haga clic en **Servicios en línea** y en **Common Data Service for Apps (Beta)** de la lista de conectores. Haga clic en **Conectar**.
+2. Haga clic en **Servicios en línea** y en **Common Data Service (Beta)** de la lista de conectores. Haga clic en **Conectar**.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. Pegue la **dirección URL de su entorno de Common Data Service for Apps** en el campo **Dirección URL del servidor** y haga clic en **Aceptar**. Si ésta es la primera vez, se le pedirá que inicie sesión usando las mismas credenciales que usa para conectarse a PowerApps y a Common Data Service for Apps.
+3. Pegue la **Dirección URL de entorno de Common Data Service** en el campo **Dirección URL del servidor** y haga clic en **Aceptar**. Si ésta es la primera vez, se le pedirá que inicie sesión usando las mismas credenciales que usa para conectarse a PowerApps y a Common Data Service.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 
@@ -94,7 +94,7 @@ Como ejemplo, si tuviera un conjunto de opciones en la entidad llamado ApprovalS
 
 ## <a name="navigating-relationships"></a>Navegar por las relaciones
 
-Para las relaciones de Common Data Service for Apps es necesario que cree una relación en PowerBI Desktop entre las dos entidades usando un campo GUID, que es un identificador único generado por el sistema que garantiza que las relaciones se crean para los registros creados en los que puede haber ambigüedad o duplicación con otros campos. Puede leer más acerca de la administración de relaciones en Power BI Desktop [aquí](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
+Para las relaciones de Common Data Service es necesario que cree una relación en PowerBI Desktop entre las dos entidades usando un campo GUID, que es un identificador único generado por el sistema que garantiza que las relaciones se crean para los registros creados en los que puede haber ambigüedad o duplicación con otros campos. Puede leer más acerca de la administración de relaciones en Power BI Desktop [aquí](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
 
 Mientras algunas relaciones pueden crearse automáticamente, puede revisar y asegurarse de que se han establecido las relaciones correctas al crear el informe:
 

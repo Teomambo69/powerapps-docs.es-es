@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: promover un mensaje de correo electrónico (Common Data Service for Apps) | Microsoft Docs'
+title: 'Ejemplo: promover un mensaje de correo electrónico (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-promote-an-email-message"></a>Ejemplo: promover un mensaje de correo electrónico 
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-promote-email-message -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-promote-email-message -->
 
-Este ejemplo muestra cómo crear una instancia de actividad de correo electrónico a partir del mensaje de correo electrónico especificado en Common Data Service for Apps usando el mensaje [DeliverPromoteEmailRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail).
+Este ejemplo muestra cómo crear una instancia de actividad de correo electrónico a partir del mensaje de correo electrónico especificado en Common Data Service usando el mensaje [DeliverPromoteEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

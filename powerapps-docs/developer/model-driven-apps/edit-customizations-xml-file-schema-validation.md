@@ -22,7 +22,7 @@ search.app:
 
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Editar el archivo XML de personalizaciones con la validación de esquema
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
 
 El archivo customizations.xml se incluye en el archivo .zip comprimido exportado como solución. Determinadas partes del archivo customizations.xml se pueden editar manualmente. La información sobre el esquema ayuda a confirmar que cualquier modificación que cree es válida.  
   
@@ -49,13 +49,13 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
   
 - VisualizationDataDescription.xsd  
   
-  Estos archivos también están instalados localmente en el servidor de Common Data Service para aplicaciones [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] en: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
+  Estos archivos también están instalados localmente en el servidor de Common Data Service [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] en: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd es el esquema de la solución exportada. Contiene referencias a los demás archivos XSD. Todos los archivos deben encontrarse en la misma carpeta.  
   
 <a name="BKMK_UseSchemaValidation"></a>   
 ## <a name="using-schema-validation"></a>Usar la validación de esquema  
- Como el archivo XML exportado es un archivo de texto, puede modificarlo con un editor de texto como [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)]. Sin embargo, se recomienda usar una aplicación que admita validación de esquema XSD como [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. La validación de XSD en [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> proporciona información de [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] y comprobación de esquemas para evitar errores.  
+ Como el archivo XML exportado es un archivo de texto, puede modificarlo con un editor de texto como [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)]. Sin embargo, se recomienda usar una aplicación que admita validación de esquema XSD como [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. Validación de XSD en [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> proporciona información de [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] y comprobación de esquemas para evitar errores.  
   
  Los archivos de esquema XSD utilizados para validar el archivo customization.xml en una solución están disponibles aquí. [!INCLUDE[schema_download](../../includes/schema-download.md)]. Asegúrese de copiar todos los archivos de esa carpeta en el mismo directorio. Necesitará asociar el archivo customizations.xml al archivo CustomizationsSolution.xsd. Ese archivo contiene vínculos al resto de archivos XSD en la carpeta.  
   
@@ -78,10 +78,10 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
   
 ### <a name="see-also"></a>Vea también
 
-[Cuándo editar el archivo de personalizaciones para Common Data Service para aplicaciones](when-edit-customization-file.md)<br/> 
+[Cuándo editar el archivo de personalizaciones para Common Data Service](when-edit-customization-file.md)<br/> 
 [Esquema central de cinta de opciones](ribbon-core-schema.md)<br/>
 [Esquema de tipos de cinta](ribbon-types-schema.md)<br/>
-[Esquema WSS de cinta](ribbon-wss-schema.md)<br/>
+[Esquema WSS de cinta de opciones](ribbon-wss-schema.md)<br/>
 [Esquema de mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
 [Esquema XML de formulario](form-xml-schema.md)     
 [Esquema de archivo de configuración ISV](/dynamics365/customer-engagement/developer/customize-dev/isv-configuration-file-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->

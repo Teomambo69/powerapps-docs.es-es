@@ -1,5 +1,5 @@
 ---
-title: Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ (Common Data Service) | Microsoft Docs
 description: Lea cómo puede usar enlaces en tiempo de ejecución con las consulta integradas del lenguaje .NET (LINQ)
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-late-bound-entity-class-with-a-linq-query"></a>Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ
 
-En Common Data Service para aplicaciones puede usar enlaces en tiempo de ejecución con las consulta integradas del lenguaje .NET (LINQ). El enlace en tiempo de ejecución usa el nombre lógico del atributo, y se resuelve en un tiempo de ejecución.  
+En Common Data Service puede usar enlaces en tiempo de ejecución con las consulta integradas del lenguaje .NET (LINQ). El enlace en tiempo de ejecución usa el nombre lógico del atributo, y se resuelve en un tiempo de ejecución.  
   
 <a name="usinglatebindingjoin"></a>   
 

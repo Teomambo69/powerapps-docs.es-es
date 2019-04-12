@@ -1,5 +1,5 @@
 ---
-title: Uso del servicio de detección con los ensamblados SDK (Common Data Service para aplicaciones) | Microsoft Docs
+title: Uso del servicio de detección con los ensamblados SDK (Common Data Service) | Microsoft Docs
 description: Describe cómo usar los servicios de detección con ensamblados SDK de .NET.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -43,7 +43,7 @@ Hay tres mensajes que puede usar y que heredan todos de las clase <xref:Microsof
   
 |Mensaje|Descripción|  
 |-------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|Recupera el id. del usuario que inició sesión en CDS for Apps.|  
+|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|Recupera el id. del usuario que inició sesión en Common Data Service.|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationRequest>|Recupera información acerca de una organización.|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationsRequest>|Recupera información sobre las organizaciones a las que pertenezca el usuario.|  
 

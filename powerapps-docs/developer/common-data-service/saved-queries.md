@@ -1,6 +1,6 @@
 ---
-title: Consultas guardadas (Common Data Service para aplicaciones) | Microsoft Docs
-description: Conozca cómo las consultas guardadas aumentan el entorno de búsqueda en CDS para aplicaciones.
+title: Consultas guardadas (Common Data Service) | Microsoft Docs
+description: Conozca cómo las consultas guardadas aumentan el entorno de búsqueda en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="saved-queries"></a>Consultas guardadas
 
-Las consultas guardadas son las entidades de negocio que definen los parámetros y los criterios de una búsqueda del entorno de Common Data Service (CDS) para aplicaciones. Las consultas guardadas admiten búsquedas de entidades cruzadas. Hay dos entidades disponibles para consultas en relación con el entorno de Common Data Service (CDS) para aplicaciones.  
+Las consultas guardadas son las entidades de negocio que definen los parámetros y los criterios de una búsqueda del entorno de Common Data Service. Las consultas guardadas admiten búsquedas de entidades cruzadas. Hay dos entidades disponibles para consultas en relación con el entorno de Common Data Service.  
   
 - Una *consulta de usuario*, llamada una vista guardada en la aplicación, es propiedad de un usuario individual, se puede asignar y compartir con otros usuarios, y pueden verla otros usuarios en función de sus privilegios de acceso. Esto es adecuado para consultas usadas frecuentemente que abarcan tipos de entidad y consultas que realizan agregación. Más información: [Editar UserQuery](reference/entities/userquery.md) 
 

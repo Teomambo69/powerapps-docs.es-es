@@ -1,5 +1,5 @@
 ---
-title: Detectar datos duplicados con código (Common Data Service para aplicaciones) | Microsoft Docs
+title: Detectar datos duplicados con código (Common Data Service) | Microsoft Docs
 description: La detección de duplicados permite a las organizaciones establecer directivas de detección de duplicados y crear reglas de detección de duplicados para entidades de negocio y personalizadas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="detect-duplicate-data-using-code"></a>Detección de datos duplicados con código
 
-La detección de duplicados permite a las organizaciones establecer directivas de detección de duplicados y crear reglas de detección de duplicados para entidades de negocio y personalizadas. Estas reglas se pueden aplicar en diferentes tipos de registros en Common Data Service (CDS) para aplicaciones. Por ejemplo, una organización puede definir que un cliente potencial es un duplicado de un contacto, si tienen el mismo nombre y número de teléfono. En función de las reglas de detección de duplicados establecidas por el administrador, el sistema advierte al usuario acerca de posibles duplicados cuando el usuario intenta crear nuevos registros o actualizar los registros existentes. Para mantener la calidad de los datos, puede programar un trabajo de detección de duplicados para comprobar si existen duplicados en todos los registros que coincidan con determinados criterios. Para limpiar los datos, puede eliminar, desactivar o combinar los duplicados que surgen del informe de un trabajo de detección de duplicados.
+La detección de duplicados permite a las organizaciones establecer directivas de detección de duplicados y crear reglas de detección de duplicados para entidades de negocio y personalizadas. Estas reglas se pueden aplicar en diferentes tipos de registros en Common Data Service. Por ejemplo, una organización puede definir que un cliente potencial es un duplicado de un contacto, si tienen el mismo nombre y número de teléfono. En función de las reglas de detección de duplicados establecidas por el administrador, el sistema advierte al usuario acerca de posibles duplicados cuando el usuario intenta crear nuevos registros o actualizar los registros existentes. Para mantener la calidad de los datos, puede programar un trabajo de detección de duplicados para comprobar si existen duplicados en todos los registros que coincidan con determinados criterios. Para limpiar los datos, puede eliminar, desactivar o combinar los duplicados que surgen del informe de un trabajo de detección de duplicados.
 
 > [!NOTE]
 > Para obtener información sobre cómo crear reglas y ejecutar trabajos del sistema para la detección de datos duplicados mediante la interfaz de usuario (IU) consulte [Detectar datos duplicados para poder corregirlos o eliminarlos](/dynamics365/customer-engagement/admin/detect-duplicate-data).

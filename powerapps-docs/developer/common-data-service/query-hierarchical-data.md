@@ -1,5 +1,5 @@
 ---
-title: Consultar datos jerárquicos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Consultar datos jerárquicos (Common Data Service) | Microsoft Docs
 description: Lea cómo puede aprovechar los nuevos operadores de condición de consulta para consultar entidades con relaciones jerárquicas explícitas.
 ms.custom: ''
 ms.date: 10/31/2018

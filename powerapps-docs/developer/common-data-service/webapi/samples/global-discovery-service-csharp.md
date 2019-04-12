@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo de servicio de detección global de API web (C#) (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo de servicio de detección global de API web (C#) (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar los servicios de detección global de la API web
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ Este ejemplo está disponible en GitHub en [https://github.com/Microsoft/PowerAp
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 
-Este ejemplo devuelve las instancias disponibles de Common Data Service para aplicaciones para una credencial de usuario determinada.
+Este ejemplo devuelve las instancias disponibles de Common Data Service para una credencial de usuario determinada.
 
 ## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
 
@@ -50,7 +50,7 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
     {
 
       string GlobalDiscoUrl = "https://globaldisco.crm.dynamics.com/";
-      AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common", false);
+      AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com", false);
 
       UserCredential cred = new UserCredential(username, password);
       AuthenticationResult authResult = authContext.AcquireToken(GlobalDiscoUrl, clientId, cred);

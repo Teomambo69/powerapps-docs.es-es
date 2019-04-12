@@ -1,10 +1,10 @@
 ---
-title: Asociar y eliminar la asociación de entidades utilizando la API web (Common Data Service para aplicaciones)| Microsoft Docs
+title: Asociar y eliminar la asociación de entidades utilizando la API web (Common Data Service)| Microsoft Docs
 description: 'Aprenda a agregar referencia a una propiedad de navegación valorada como colección, eliminar una referencia y cambiar una referencia existente mediante la API web'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

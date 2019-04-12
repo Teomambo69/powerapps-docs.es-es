@@ -1,6 +1,6 @@
 ---
 title: Solución de problemas de Power Query | Microsoft Docs
-description: Puede resolver problemas usando Power Query para crear una entidad personalizada en Common Data Service for Apps.
+description: Puede resolver problemas usando Power Query para crear una entidad personalizada en Common Data Service.
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -20,7 +20,7 @@ Cuando usa Power Query for Excel para crear una entidad personalizada que contie
 
 >“El administrador de Azure Active Directory ha establecido una política que le impide usar esta función. Póngase en contacto con al administrador, que puede conceder los permisos para esta función en su nombre”.
 
-El error se produce si Power Query no puede acceder a los datos de la organización en PowerApps o Common Data Service for Apps. Esta situación surge bajo dos grupos de circunstancias:
+El error se produce si Power Query no puede acceder a los datos de la organización en PowerApps o Common Data Service. Esta situación surge bajo dos grupos de circunstancias:
 
 * Un administrador de inquilinos de Azure Active Directory (Azure AD) ha deshabilitado la capacidad de los usuarios de consentir aplicaciones que acceden a datos de la compañía en su nombre.
 * Uso de un inquilino de Active Directory no administrado. Un inquilino no administrado es un directorio sin un administrador global que se creó para completar una oferta de suscripción de autoservicio. Para corregir este escenario, los usuarios primero deben realizar la conversión a un inquilino administrado y después seguir una de las dos soluciones a este problema. Las soluciones se describen en la siguiente sección.

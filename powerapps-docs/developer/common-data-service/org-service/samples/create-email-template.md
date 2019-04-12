@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear un correo electrónico utilizando una plantilla (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear un correo electrónico utilizando una plantilla (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear una instancia de un registro de correo electrónico.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-an-email-using-a-template"></a>Ejemplo: crear un mensaje de correo electrónico usando una plantilla
 
-Este ejemplo muestra cómo crear una instancia de registro de mensaje de correo electrónico usando el mensaje [InstantiateTemplateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate). 
+Este ejemplo muestra cómo crear una instancia de registro de mensaje de correo electrónico usando el mensaje [InstantiateTemplateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate). 
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

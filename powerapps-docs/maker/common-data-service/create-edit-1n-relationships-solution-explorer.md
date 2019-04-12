@@ -4,7 +4,7 @@ description: Aprenda a crear relaciones entre entidades de uno a varios o de var
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones 
 
-El explorador de soluciones proporciona una forma de crear y editar relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) para Common Data Service para aplicaciones.
+El explorador de soluciones proporciona una forma de crear y editar relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) para Common Data Service.
 
 El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
 - [Crear relaciones 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)

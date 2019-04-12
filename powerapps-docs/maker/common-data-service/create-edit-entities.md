@@ -1,10 +1,10 @@
 ---
-title: Creación y edición entidades en Common Data Service para aplicaciones | MicrosoftDocs
+title: Creación y edición entidades en Common Data Service | MicrosoftDocs
 description: Aprenda a crear y editar entidades
 ms.custom: ''
 ms.date: 05/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-entities-in-common-data-service-for-apps"></a>Creación y edición entidades en Common Data Service para aplicaciones
+# <a name="create-and-edit-entities-in-common-data-service"></a>Creación y edición entidades en Common Data Service
 
 Antes de crear una entidad personalizada, evalúe si el uso de una entidad existente cumplirá sus requisitos. Más información: [¿Crear nuevos metadatos o usar los metadatos existentes?](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 

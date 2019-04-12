@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Validar y ejecutar consulta guardada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Validar y ejecutar consulta guardada (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo validar y ejecutar una consulta guardada.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-validate-and-execute-a-saved-query"></a>Ejemplo: validar y ejecute una consulta guardada
 
 <!-- Needs supporting conceptual topic 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-validate-execute-saved-query
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-validate-execute-saved-query
 -->
-Este ejemplo muestra cómo usar el mensaje [IOrganizationService.ValidateSavedQueryRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.validatesavedqueryrequest?view=dynamics-general-ce-9) para validar una consulta FetchXML y, a continuación, usar el mensaje [IOrganizationService.ExecuteByIdSavedQueryRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.executebyidsavedqueryrequest?view=dynamics-general-ce-9) para ejecutar la consulta. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateandExecuteSavedQuery).
+Este ejemplo muestra cómo usar el mensaje [IOrganizationService.ValidateSavedQueryRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.validatesavedqueryrequest?view=dynamics-general-ce-9) para validar una consulta FetchXML y, a continuación, usar el mensaje [IOrganizationService.ExecuteByIdSavedQueryRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.executebyidsavedqueryrequest?view=dynamics-general-ce-9) para ejecutar la consulta. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateandExecuteSavedQuery).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

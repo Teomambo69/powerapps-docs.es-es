@@ -1,5 +1,5 @@
 ---
-title: Crear acciones propias (Common Data Service para aplicaciones) | Microsoft Docs
+title: Crear acciones propias (Common Data Service) | Microsoft Docs
 description: Las acciones son mensajes personalizados que le ayudan a ampliar la funcionalidad de Dynamics 365 Customer Engagement. Más información sobre cómo crear sus propias acciones
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,11 +17,11 @@ search.app:
 ---
 # <a name="create-your-own-actions"></a>Crear acciones propias
 
-Para ampliar la funcionalidad de Common Data Service para aplicaciones creando mensajes personalizados denominados *acciones*. Estas acciones tendrán clases de solicitud/de respuesta asociadas y se generará una acción API web. Por lo general, las acciones se utilizan para agregar una nueva funcionalidad específica del dominio al servicio web de la organización o para combinar varias solicitudes de mensaje de servicio web de la organización en una sola solicitud. Por ejemplo, en un centro de atención telefónica de soporte técnico, es posible que desee combinar los mensajes Crear, Asignar y Setstate en un único mensaje nuevo Escalar.  
+Para ampliar la funcionalidad de Common Data Service creando mensajes personalizados denominados *acciones*. Estas acciones tendrán clases de solicitud/de respuesta asociadas y se generará una acción API web. Por lo general, las acciones se utilizan para agregar una nueva funcionalidad específica del dominio al servicio web de la organización o para combinar varias solicitudes de mensaje de servicio web de la organización en una sola solicitud. Por ejemplo, en un centro de atención telefónica de soporte técnico, es posible que desee combinar los mensajes Crear, Asignar y Setstate en un único mensaje nuevo Escalar.  
   
  La lógica de negocios de una acción se implementa mediante un flujo de trabajo. Cuando crea una acción, el flujo de trabajo asociado en tiempo real se registra automáticamente para ejecutarse en la fase 30 (operación principal) de la canalización de ejecuciones. Para obtener más información sobre flujos de trabajo en tiempo real, consulte [Tipos de flujo de trabajo](/dynamics365/customer-engagement/developer/process-categories).  
   
- Si bien las acciones se admiten en CDS for Apps, la creación de una acción en código (mediante XAML) se admite únicamente para las implementaciones locales y con conexión a Internet (IFD). Los clientes de Online deben crear acciones interactivamente en la aplicación web.  
+ Si bien las acciones se admiten en Common Data Service, la creación de una acción en código (mediante XAML) se admite únicamente para las implementaciones locales y con conexión a Internet (IFD). Los clientes de Online deben crear acciones interactivamente en la aplicación web.  
   
 <a name="about_actions"></a>   
 
@@ -71,7 +71,7 @@ Para ampliar la funcionalidad de Common Data Service para aplicaciones creando m
 
 ## <a name="package-an-action-for-distribution"></a>Empaquetar una acción para la distribución
 
- Para distribuir la acción de modo que se pueda importar a una organización de CDS for Apps, agregue la acción a una solución de CDS for Apps. Esto se realiza fácilmente usando la aplicación web y desplazándose a **Configuración** > **Personalizaciones** > **Soluciones**. También puede escribir código para crear la solución. Para obtener más información sobre cómo usar soluciones, consulte [Empaquetar y distribuir las extensiones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).  
+ Para distribuir la acción de modo que se pueda importar a una organización de Common Data Service, agregue la acción a una solución de Common Data Service. Esto se realiza fácilmente usando la aplicación web y desplazándose a **Configuración** > **Personalizaciones** > **Soluciones**. También puede escribir código para crear la solución. Para obtener más información sobre cómo usar soluciones, consulte [Empaquetar y distribuir las extensiones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).  
   
 <a name="bkmk_gentypes"></a>
 
@@ -81,13 +81,13 @@ Para ampliar la funcionalidad de Common Data Service para aplicaciones creando m
   
 Para descargar el CrmSvcUtil.exe, consulte [Descargar herramientas de NuGet](download-tools-NuGet.md).
   
- El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos para una instalación local de CDS for Apps. Se suministran los valores de los parámetros para la instalación.  
+ El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos para una instalación local de Common Data Service. Se suministran los valores de los parámetros para la instalación.  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:http://<serverName>/<organizationName>/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /domain:<domainName> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
 ```  
   
- El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con CDS for Apps. Se suministran los valores de los parámetros adecuados para su cuenta y servidor.  
+ El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con Common Data Service. Se suministran los valores de los parámetros adecuados para su cuenta y servidor.  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
@@ -143,7 +143,7 @@ Las plataforma de <xref:Microsoft.Xrm.Sdk.IExecutionContext.Depth> existentes co
 Si uno de los pasos del flujo de trabajo en tiempo real de la acción es una actividad de flujo de trabajo personalizada, dicha actividad de flujo de trabajo personalizada se ejecuta dentro del entorno aislado de tiempo de ejecución en el espacio aislado y estará sujeta al límite de tiempo de espera de dos minutos, similar al modo en que se administran los complementos en el espacio aislado. Sin embargo, no hay restricciones en cuanto a la cantidad de tiempo total que la acción en sí puede tardar. Además, si la acción participa en una transacción en la que está habilitada la reversión, se aplicarán los tiempos de espera de SQL Server.  
 
 > [!TIP]
->  Una de las prácticas recomendadas consiste en ejecutar las operaciones de ejecución prolongadas fuera de CDS for Apps con procesos asincrónicos .NET o en segundo plano.  
+>  Una de las prácticas recomendadas consiste en ejecutar las operaciones de ejecución prolongada fuera de Common Data Service con procesos asincrónicos .NET o en segundo plano.  
   
 ### <a name="see-also"></a>Vea también  
  [Crear flujos de trabajo en tiempo real](/dynamics365/customer-engagement/developer/create-real-time-workflows)   

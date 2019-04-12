@@ -1,5 +1,5 @@
 ---
-title: Acceso a servicios web externos (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Acceso a servicios web externos (Common Data Service) | MicrosoftDocs
 description: Aprenda a obtener acceso a un servicio web desde un complemento o una actividad de flujo de trabajo.
 ms.custom: ''
 ms.date: 2/6/2019
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Acceso a servicios web externos
+# <a name="access-external-web-services"></a>Acceso a servicios web externos
 
 Los complementos y las actividades personalizadas de flujo de trabajo que se ejecutan en un espacio aislado pueden obtener acceso a la red con los protocolos HTTP y HTTPS. Esta funcionalidad proporciona soporte para obtener acceso a los servicios web populares como sitios sociales, fuentes de noticias, servicios web, etc. Las siguientes restricciones de acceso web se aplican a esta funcionalidad de espacios aislados.  
   
@@ -26,10 +26,10 @@ Los complementos y las actividades personalizadas de flujo de trabajo que se eje
 
 Otros métodos de acceso a los servicios web incluyen el uso de webhooks y [!INCLUDE [pn_azure_service_bus](../../includes/pn_azure_service_bus.md)]. Consulte los vínculos proporcionados más abajo para obtener más información sobre estos temas.
 
-## Vea también
+## <a name="see-also"></a>Vea también
 
-[[Complementos](plug-ins.md)](plug-ins.md)<br />
-[[Extensiones de flujo de trabajo](workflow/workflow-extensions.md)](workflow/workflow-extensions.md)<br />
-[[Integración de Azure](azure-integration.md)](azure-integration.md)<br />
-[[Utilizar WebHooks](use-webhooks.md)](use-webhooks.md)<br />
-[[Ejemplo: acceso web desde un complemento de espacio aislado](org-service/samples/web-access-plugin.md)](org-service/samples/web-access-plugin.md)
+[Complementos](plug-ins.md)<br />
+[Extensiones de flujo de trabajo](workflow/workflow-extensions.md)<br />
+[Integración de Azure](azure-integration.md)<br />
+[Utilizar WebHooks](use-webhooks.md)<br />
+[Ejemplo: acceso web desde un complemento de espacio aislado](org-service/samples/web-access-plugin.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Agregar un registro a la cola (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Agregar un registro a la cola (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo agregar registros a una cola.
 ms.custom: ''
 ms.date: 10/31/2018

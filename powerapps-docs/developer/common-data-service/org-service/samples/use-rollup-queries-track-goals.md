@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar consultas consolidadas para realizar el seguimiento de objetivos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar consultas consolidadas para realizar el seguimiento de objetivos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar consultas de informe para hacer un seguimiento de los objetivos
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>Ejemplo: usar consultas de informe para realizar un seguimiento de los objetivos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
 
 Este ejemplo muestra cómo usar consultas de informe para hacer un seguimiento de los objetivos. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueriesTrackGoals).
 

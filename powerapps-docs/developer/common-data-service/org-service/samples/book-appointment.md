@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Reservar una cita (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Reservar una cita (Common Data Service) | Microsoft Docs'
 description: 'En este ejemplo muestra cómo reservar o programar una cita '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-book-an-appointment"></a>Ejemplo: reservar una cita
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-book-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-book-appointment -->
 
-Este ejemplo muestra cómo reservar o programar una cita mediante el mensaje [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment).
+Este ejemplo muestra cómo reservar o programar una cita mediante el mensaje [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -40,7 +40,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. Crea la instancia de la cita con el mensaje [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) y comprueba si se ha programado la cita o no.
+1. Crea la instancia de la cita con el mensaje [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) y comprueba si se ha programado la cita o no.
 
 ### <a name="clean-up"></a>Limpiar
 

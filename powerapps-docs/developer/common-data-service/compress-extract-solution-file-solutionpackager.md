@@ -1,5 +1,5 @@
 ---
-title: Herramienta SolutionPackager (Common Data Service para aplicaciones) | Microsoft Docs
+title: Herramienta SolutionPackager (Common Data Service) | Microsoft Docs
 description: SolutionPackager es una herramienta que puede descomponer de forma reversible un archivo comprimido de solución Dynamics 365 Customer Engagement en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="solutionpackager-tool"></a>Herramienta SolutionPackager 
 
-SolutionPackager es una herramienta que puede descomponer de forma reversible un archivo comprimido de solución de Common Data Service (CDS) para aplicaciones en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente. Las secciones siguientes muestran cómo ejecutar la herramienta y cómo usar la herramienta con soluciones administradas y no administradas.  
+SolutionPackager es un herramienta que puede descomponer de forma reversible un archivo comprimido de solución de Common Data Service en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente. Las secciones siguientes muestran cómo ejecutar la herramienta y cómo usar la herramienta con soluciones administradas y no administradas.  
   
 <a name="bkm_where"></a>   
 
@@ -198,7 +198,7 @@ El siguiente ejemplo de código XML muestra un archivo de asignación completo l
 
 ## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas  
 
- Un archivo comprimido de solución (.zip) CDS for Apps se puede exportar en uno de dos tipos como se indica a continuación.  
+ Un archivo comprimido de solución Common Data Service (.zip) se puede exportar en uno de dos tipos como se indica a continuación.  
   
  **Solución administrada**  
  Una solución completada lista para importarse en una organización. Una vez importados, los componentes no se pueden agregar ni quitar, aunque podrán permitir opcionalmente una mayor personalización. Esto se recomienda cuando el desarrollo de la solución esté completo.  
@@ -206,7 +206,7 @@ El siguiente ejemplo de código XML muestra un archivo de asignación completo l
  **Solución no administrada**  
  Una solución abierta sin restricciones sobre qué se puede agregar, quitar o modificar. Esto se recomienda durante el desarrollo de una solución.  
   
- El formato de un archivo comprimido de solución será diferente en función del tipo, ya sea administrado o no administrado. El SolutionPackager puede procesar archivos de solución comprimidos de cualquier tipo. Sin embargo, la herramienta no puede convertir un tipo a otro. La única forma de convertir los archivos de solución a un tipo diferente, por ejemplo de no administrada a administrada, es importando el archivo de solución no administrada .zip en un servidor de CDS for Apps y después exportando la solución como una solución administrada.  
+ El formato de un archivo comprimido de solución será diferente en función del tipo, ya sea administrado o no administrado. El SolutionPackager puede procesar archivos de solución comprimidos de cualquier tipo. Sin embargo, la herramienta no puede convertir un tipo a otro. La única forma de convertir los archivos de solución a un tipo diferente, por ejemplo de no administrada a administrada, es importando el archivo de solución no administrada .zip en un servidor de Common Data Service y después exportando la solución como una solución administrada.  
   
  SolutionPackager puede procesar archivos .zip de soluciones administradas y no administradas como un conjunto combinado mediante el parámetro /PackageType:Both. Para realizar esta operación, es necesario exportar la solución dos veces en cada tipo, nombrando los archivos .zip de la forma siguiente.  
   

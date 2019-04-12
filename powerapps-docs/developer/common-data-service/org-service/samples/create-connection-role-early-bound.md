@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear un rol de conexión (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear un rol de conexión (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un rol de conexión.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-connection-role"></a>Ejemplo: crear un rol de conexión
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
 
 Este ejemplo muestra cómo crear un rol de conexión que puede usarse para cuentas y contactos. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConnectionRole).
 

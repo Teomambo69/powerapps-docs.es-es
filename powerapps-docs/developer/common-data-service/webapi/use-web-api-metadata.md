@@ -1,10 +1,10 @@
 ---
-title: Usar la API web con metadatos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar la API web con metadatos (Common Data Service) | Microsoft Docs
 description: La sección proporciona instrucciones sobre cómo usar la API web con los tipos de entidad incluidos en la referencia EntityType de metadatos de la API web.
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,5 +63,5 @@ Puede comprobar si las entidades son elegibles para participar en una relación 
 
 <!-- TODO [Metadata and data models](../metadata-data-models.md)<br /> -->
 [Examinar los metadatos del entorno](../browse-your-metadata.md)<br />
-<!--  TODO [Use the Organization service with Common Data Service for Apps metadata](../org-service/use-organization-service-metadata.md)<br /> -->
-[Usar para la API web de Common Data Service for Apps](overview.md)
+<!--  TODO [Use the Organization service with Common Data Service metadata](../org-service/use-organization-service-metadata.md)<br /> -->
+[Utilizar API Web de Common Data Service](overview.md)

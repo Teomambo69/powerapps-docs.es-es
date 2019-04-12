@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Trabajar con registros de grupos de actividad (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Trabajar con registros de grupos de actividad (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo trabajar con registros del grupo de actividad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-work-with-activity-party-records"></a>Ejemplo: trabajar con registros de grupo de actividad
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
 
 Este código de ejemplo muestra cómo trabajar con registros del grupo de actividad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ActivityPartyRecords).
 

@@ -1,5 +1,5 @@
 ---
-title: Escribir un complemento con Azure personalizado (Common Data Service para aplicaciones) | Microsoft Docs
+title: Escribir un complemento con Azure personalizado (Common Data Service) | Microsoft Docs
 description: El ejemplo muestra como el código del pluggin puede ser agragado para obtener el proveedor de servicio Azure e iniciar la publicación del contexto de ejecución en el bus de servicio mediante la llamada IExecutionContext .
 keywords: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
-Escribir un complemento que funcione con Azure es similar a escribir cualquier otro complemento de Dynamics 365 Common Data Service para aplicaciones. Sin embargo, además de invocar todos los métodos de servicio web que desee, el complemento debe incluir código para iniciar la publicación del contexto de la ejecución en Azure Service Bus.  
+Escribir un complemento que funcione con Azure es similar a escribir cualquier otro complemento de Dynamics 365 Common Data Service. Sin embargo, además de invocar todos los métodos de servicio web que desee, el complemento debe incluir código para iniciar la publicación del contexto de la ejecución en Azure Service Bus.  
   
 <a name="bkmk_design"></a>
 
@@ -42,7 +42,7 @@ Tenga en cuenta que es posible que los complementos registrados sincrónicos pub
 El siguiente código de complementos de ejemplo se ha agregado para obtener el proveedor de servicios de Azure e iniciar la publicación del contexto de ejecución en el bus de servicio llamando a <xref:Microsoft.Xrm.Sdk.IServiceEndpointNotificationService.Execute(Microsoft.Xrm.Sdk.EntityReference,Microsoft.Xrm.Sdk.IExecutionContext)>. Se ha agregado código de seguimiento para facilitar la depuración de complementos porque el complemento se debe ejecutar en el espacio asilado.  
 
 > [!NOTE]
-> El `serviceEndpointId` que se ha pasado al constructor en este código es el único que obtiene de la creación de un extremo de servicio como el que se describe en [Tutorial: Configurar Azure (SAS) para integración con CDS para aplicaciones](walkthrough-configure-azure-sas-integration.md)
+> `serviceEndpointId` que se ha pasado al constructor en este código es el único que obtiene de la creación de un extremo de servicio como el que se describe en [Tutorial: Configurar Azure (SAS) para integración con Common Data Service](walkthrough-configure-azure-sas-integration.md).
 >
 > Puede consultar los extremos de servicio disponibles para su entorno mediante una solicitud `GET` a una API web con su explorador con una consulta como esta: *`[organization Uri]`*`/api/data/v9.0/serviceendpoints?$select=name,description,serviceendpointid`.
   

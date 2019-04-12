@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar dirección URL absoluta y la dirección URL de la colección de sitios(Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar dirección URL absoluta y la dirección URL de la colección de sitios(Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo recuperar la dirección URL absoluta y la dirección URL de la colección de sitios de una ubicación de SharePoint.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record"></a>Ejemplo: recuperar una dirección URL absoluta y una dirección URL de colección de sitios de un registro de ubicación
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/integration-dev/sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/integration-dev/sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record -->
 
-En este ejemplo se muestra cómo recuperar la dirección URL absoluta y la dirección URL de la colección de sitios de un registro de ubicación de SharePoint Server mediante el mensaje [RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9).
+En este ejemplo se muestra cómo recuperar la dirección URL absoluta y la dirección URL de la colección de sitios de un registro de ubicación de SharePoint Server mediante el mensaje [RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

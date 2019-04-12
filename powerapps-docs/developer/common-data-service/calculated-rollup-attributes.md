@@ -1,5 +1,5 @@
 ---
-title: Atributos calculados y consolidados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Atributos calculados y consolidados (Common Data Service) | Microsoft Docs
 description: 'Obtenga información sobre elementos y características comunes, atributos calculados, atributos consolidados, recuperar un valor de campo consolidado calculado inmediatamente y enumeración de SourceTypeMasks.'
 ms.custom: ''
 ms.date: 10/31/2018

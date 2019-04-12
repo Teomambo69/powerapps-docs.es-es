@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo resumir los datos de objetivos para un período personalizado en comparación con los ingresos de destino.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>Ejemplo: datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
 
 Este ejemplo muestra cómo resumir los datos de objetivos para un período personalizado en comparación con los ingresos de destino. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RollupGoalData).
 

@@ -1,5 +1,5 @@
 ---
-title: Referencia de archivos de componente de la solución (Common Data Service para aplicaciones) | Microsoft Docs
+title: Referencia de archivos de componente de la solución (Common Data Service) | Microsoft Docs
 description: Este tema describe la estructura de carpetas y el esquema de nombres de archivos utilizados por la herramienta SolutionPackager. La herramienta se usa para descomponer (desempaquetar) archivos de la solución de Dynamics 365 en archivos XML que puedan administrarse mediante un sistema de control de código fuente.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>Referencia de archivo de componente de la solución (SolutionPackager)
 
-Este tema describe la estructura de carpetas y el esquema de nombres de archivos utilizados por la herramienta SolutionPackager. La herramienta se usa para descomponer (desempaquetar) archivos de la solución de Common Data Service para aplicaciones en archivos XML que puedan administrarse mediante un sistema de control de código fuente. La herramienta también puede compliar (empaquetar) estos archivos XML individuales en un archivo de la solución que pueden importarse en CDS para aplicaciones. Para obtener más información acerca de la herramienta SolutionPackager, consulte [herramienta SolutionPackager](compress-extract-solution-file-solutionpackager.md).  
+Este tema describe la estructura de carpetas y el esquema de nombres de archivos utilizados por la herramienta SolutionPackager. La herramienta se usa para descomponer (desempaquetar) archivos de la solución de Common Data Service en archivos XML que puedan administrarse mediante un sistema de control de código fuente. La herramienta también puede compliar (empaquetar) estos archivos XML individuales en un archivo de la solución que pueden importarse en Common Data Service. Para obtener más información acerca de la herramienta SolutionPackager, consulte [herramienta SolutionPackager](compress-extract-solution-file-solutionpackager.md).  
   
  Las secciones siguientes describen los archivos que se crearán para cada tipo de componente de la solución y cuáles de estos archivos son menos adecuados para incluirlos en el control de código fuente. Las carpetas que se indican en las secciones son todas relativas a la carpeta especificada en el parámetro `/folder` del comando **SolutionPackager**.  
   

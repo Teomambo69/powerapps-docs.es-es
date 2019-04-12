@@ -1,5 +1,5 @@
 ---
-title: Usar la clase QueryExpression (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar la clase QueryExpression (Common Data Service) | Microsoft Docs
 description: 'En Dynamics 365 (online) Customer Engagement, puede usar la clase QueryExpression para crear consultas complejas para su uso con el método IOrganizationService.QueryBase) o el mensaje RetrieveMultipleRequest'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-queryexpression-class"></a>Usar la clase QueryExpression
 
-En Common Data Service para aplicaciones, puede usar una clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> para crear consultas complejas para uso con el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> el método o el mensaje <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest>. Se pueden configurar los parámetros de la consulta en <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> con las clases <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>, <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> y <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
+En Common Data Service, puede usar una clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> para crear consultas complejas para uso con el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> el método o el mensaje <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest>. Se pueden configurar los parámetros de la consulta en <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> con las clases <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>, <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> y <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   
  La clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> permite crear consultas complejas. La clase <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> está diseñada para ser una forma simple de búsqueda para las entidades en las que los atributos coinciden con los valores especificados.  
   

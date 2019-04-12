@@ -1,5 +1,5 @@
 ---
-title: Personalizar etiquetas compatibles con varios idiomas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Personalizar etiquetas compatibles con varios idiomas (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo personalizar etiquetas para que admitan varios idiomas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>Personalizar etiquetas para admitir varios idiomas
 
-Al crear personalizaciones en Common Data Service para aplicaciones puede admitir varios idiomas utilizando etiquetas.  
+Al crear personalizaciones en Common Data Service puede admitir varios idiomas utilizando etiquetas.  
 
 <a name="BKMK_UsingLabels"></a>   
 
@@ -28,7 +28,7 @@ Al crear personalizaciones en Common Data Service para aplicaciones puede admiti
 |Clase de <xref:Microsoft.Xrm.Sdk.Label>|<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" />|
 |Clase de <xref:Microsoft.Xrm.Sdk.LocalizedLabel>|<xref href="Microsoft.Dynamics.CRM.LocalizedLabel?text=LocalizedLabel ComplexType" />|
 
- Las etiquetas son cadenas localizadas que se muestran a los usuarios en las aplicaciones cliente. Se implementan mediante `Label` (clase <xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> o <xref:Microsoft.Xrm.Sdk.Label>), que admite paquetes de idiomas. Las cadenas que se muestran a los usuarios, como nombres de entidades u opciones de un conjunto de opciones, se pueden almacenar en varios idiomas. Los usuarios pueden seleccionar el idioma que desean mostrar en los formularios y vistas en CDS for Apps.  
+ Las etiquetas son cadenas localizadas que se muestran a los usuarios en las aplicaciones cliente. Se implementan mediante `Label` (clase <xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> o <xref:Microsoft.Xrm.Sdk.Label>), que admite paquetes de idiomas. Las cadenas que se muestran a los usuarios, como nombres de entidades u opciones de un conjunto de opciones, se pueden almacenar en varios idiomas. Los usuarios pueden seleccionar el idioma que desean mostrar en los formularios y vistas en Common Data Service.  
 
  En la siguiente tabla se enumeran todos los metadatos que usan `Label`.  
 
@@ -83,14 +83,14 @@ Al crear personalizaciones en Common Data Service para aplicaciones puede admiti
  Una vez importadas las traducciones, el texto personalizado aparece para los usuarios que trabajan en los idiomas a los que tradujo el texto.  
 
 > [!NOTE]
-> CDS for Apps no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
+> Common Data Service no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
 
- Puesto que solo se permite personalizar texto en el idioma base, puede trabajar en CDS for Apps con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de CDS for Apps. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
+ Puesto que sólo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
 
 <a name="BKMK_ManagingLanguages"></a>   
 
 ## <a name="manage-languages-for-your-organization"></a>Administrar idiomas para la organización  
- CDS for Apps permite instalar el paquete de varios idiomas en un servidor y permite al usuario seleccionar un paquete de idioma. Para obtener más información acerca de cómo instalar paquetes de idiomas, consulte [Habilitar idiomas](/dynamics365/customer-engagement/admin/enable-languages). Esta sección contiene información acerca de los mensajes que se usan para administrar los idiomas ya instalados para la organización.  
+ Common Data Service permite instalar el paquete de varios idiomas en un servidor y permite al usuario seleccionar un paquete de idioma. Para obtener más información acerca de cómo instalar paquetes de idiomas, consulte [Habilitar idiomas](/dynamics365/customer-engagement/admin/enable-languages). Esta sección contiene información acerca de los mensajes que se usan para administrar los idiomas ya instalados para la organización.  
 
  En la siguiente tabla se enumeran los mensajes que se pueden usar para trabajar con los paquetes de idiomas. Use estos mensajes con el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> .  
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Especificar un elemento de cola para trabajar en él (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Especificar un elemento de cola para trabajar en él (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo especificar un usuario que trabajará en un elemento de cola.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-specify-a-queue-item-to-work-on"></a>Ejemplo: Especificar un elemento de cola para trabajar
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-specify-queue-item-work-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-specify-queue-item-work-early-bound -->
 
-Este ejemplo muestra cómo usar [PickFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.pickfromqueuerequest?view=dynamics-general-ce-9) para especificar un usuario que va a trabajar en un elemento de cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SpecifyQueueItem).
+Este ejemplo muestra cómo usar [PickFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.pickfromqueuerequest?view=dynamics-general-ce-9) para especificar un usuario que va a trabajar en un elemento de cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SpecifyQueueItem).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

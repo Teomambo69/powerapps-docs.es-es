@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-display-rules"></a>Defina las reglas de la visualización de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
 
 Al configurar los elementos de la cinta de opciones se pueden definir las reglas específicas para supervisar cuándo se mostrarán los elementos de la cinta de opciones.  
 
@@ -181,7 +181,7 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
 - NoRelationship  
 
   `<SkuRule>`  
-  Use este tipo de regla para mostrar un elemento de la cinta de opciones para una versión de SKU determinada de Common Data Service para aplicaciones de la siguiente manera:  
+  Use este tipo de regla para mostrar un elemento de la cinta de opciones para una versión de SKU determinada de Common Data Service de la siguiente manera:  
 
 - OnPremise  
 

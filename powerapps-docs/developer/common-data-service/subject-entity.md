@@ -1,5 +1,5 @@
 ---
-title: Entidad de tema (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidad de Tema (Common Data Service) | Microsoft Docs
 description: 'Más información sobre la clasificación de registros de entidad en PowerApps, como artículos y documentación de ventas. Usando temas, puede crear una jerarquía de temas para organizar y mantener la información.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="subject-entity"></a>Entidad de tema
 
-Un *tema* clasifica los registros de entidad, como los artículos y la documentación de ventas. Usando temas, puede crear una jerarquía de temas para organizar y mantener la información de Common Data Service (CDS) para aplicaciones. Cualquier entidad de CDS para aplicaciones puede usar la información organizada en el árbol de temas. La entidad `Subject` clasifica lo siguiente:  
+Un *tema* clasifica los registros de entidad, como los artículos y la documentación de ventas. Usando temas, puede crear una jerarquía de temas para organizar y mantener la información de Common Data Service. Cualquier entidad de Common Data Service puede usar la información organizada en el árbol de temas. La entidad `Subject` clasifica lo siguiente:  
   
 - Artículos de Knowledge Base  
   

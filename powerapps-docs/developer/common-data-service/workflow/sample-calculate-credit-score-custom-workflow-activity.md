@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada (Common Data Service) | Microsoft Docs'
 description: El ejemplo muestra una actividad de flujo de trabajo que calcula la puntuación de crédito basada en el número de la seguridad social (SSN) y el nombre.
 ms.custom: ''
 ms.date: 12/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada
 
-Este código de ejemplo es para Common Data Service para aplicaciones. Descargue el ejemplo completo aquí [Ejemplos de actividades de flujo de trabajo personalizadas](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
+Este código de ejemplo es para Common Data Service. Descargue el ejemplo completo aquí [Ejemplos de actividades de flujo de trabajo personalizadas](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

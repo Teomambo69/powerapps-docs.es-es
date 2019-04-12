@@ -1,5 +1,5 @@
 ---
-title: Ejecutar importación de datos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejecutar importación de datos (Common Data Service) | Microsoft Docs
 description: 'La importación de datos se ejecuta directamente en Dynamics 365 Server y requiere tres trabajos asincrónicos para hacer el análisis, la transformación guiada por mapa y la carga.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,15 +17,15 @@ search.app:
 ---
 # <a name="run-data-import"></a>Ejecutar importación de datos
 
-La importación de los datos se ejecuta directamente en el servidor de Common Data Service para aplicaciones. Para ejecutar la importación de datos, configure trabajos asincrónicos para ejecutarse en segundo plano que realicen lo siguiente, en este orden:  
+La importación de los datos se ejecuta directamente en el servidor de Common Data Service. Para ejecutar la importación de datos, configure trabajos asincrónicos para ejecutarse en segundo plano que realicen lo siguiente, en este orden:  
   
 - Analizar datos de origen incluidos en el archivo de importación.  
   
 - Transformar datos analizados mediante la asignación de datos.  
   
-- Cargar los datos transformados en CDS para aplicaciones.  
+- Cargue los datos transformados en Common Data Service.  
   
-  Todos los usuarios de CDS para aplicaciones que dispongan de los permisos adecuados podrán ejecutar la importación de datos.  
+  Todos los usuarios de Common Data Service que dispongan de los permisos adecuados podrán ejecutar la importación de datos.  
   
 <a name="parse"></a>   
 ## <a name="parse-source-data"></a>Analizar datos de origen  
@@ -51,9 +51,9 @@ La importación de los datos se ejecuta directamente en el servidor de Common Da
   
 <a name="upload"></a>   
 ## <a name="upload-transformed-data-to-the-target-server"></a>Cargar datos transformados al servidor de destino  
- Tras completar correctamente la transformación, los datos están listos para cargarse en el servidor de CDS para aplicaciones.  
+ Tras completar correctamente la transformación, los datos están listos para cargarse en el servidor de Common Data Service.  
   
- Utilice el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> para enviar un trabajo asincrónico para cargar los datos transformados en CDS para aplicaciones. El identificador único de la importación asociada (importación de datos) debe especificarse en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> de la solicitud. Un identificador único del trabajo asincrónico que se ejecuta en segundo plano y carga los datos en CDS para aplicaciones se devuelve en la propiedad <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> de respuesta del mensaje. Todos los archivos de importación asociados con la importación especificada (importación de datos) se importan.  
+ Utilice el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> para enviar un trabajo asincrónico para cargar los datos transformados en Common Data Service. El identificador único de la importación asociada (importación de datos) debe especificarse en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> de la solicitud. Un identificador único del trabajo asincrónico que se ejecuta en segundo plano y carga los datos en Common Data Service se devuelve en la propiedad <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> de respuesta del mensaje. Todos los archivos de importación asociados con la importación especificada (importación de datos) se importan.  
   
  Cada trabajo de importación tiene un número de secuencia único que almacena en el atributo de `ImportSequenceNumber` de registros que crea. El atributo de `Organization.CurrentImportSequenceNumber` contiene un número de secuencia único del pasado trabajo de importación que se ejecutó en el sistema. Puede usar estos números de secuencia únicos para efectuar un seguimiento de los registros que pertenecen a un trabajo de importación.  
   
@@ -65,14 +65,14 @@ La importación de los datos se ejecuta directamente en el servidor de Common Da
   
 <a name="import_audit"></a>   
 ## <a name="import-auditing-data"></a>Importación de datos de auditoría  
- Las entidades de CDS para aplicaciones disponen de cuatro atributos predeterminados que se usan para el seguimiento de la fecha y hora en que se ha creado y modificado un registro por última vez, así como la persona que lo ha creado y modificado.  
+ Las entidades de Common Data Service disponen de cuatro atributos predeterminados que se usan para el seguimiento de la fecha y hora en que se ha creado y modificado un registro por última vez, así como la persona que lo ha creado y modificado.  
   
  El atributo de `createdon` especifica la fecha y la hora en que se creó el registro. Para importar datos en el atributo de `createdon`, asigne la columna de origen que incluye estos datos al atributo de `overriddencreatedon`. Durante la importación, el atributo de `createdon` del registro se actualiza con el valor que se asignó al atributo de `overriddencreatedon` y el atributo de `overriddencreatedon` se establece en la fecha y hora en que se importaron los datos. Si no se asigna ningún valor de origen al atributo de `overriddencreatedon`, el atributo de `createdon` se establece en la fecha y hora de importación de los datos y el atributo de `overriddencreatedon` no se establece en ningún valor.  
   
 > [!NOTE]
 >  Para reemplazar el valor del atributo de `createdon` durante la importación, necesita disponer del privilegio de `prvOverrideCreatedOnCreatedBy`. Tenga en cuenta que el nombre del privilegio implica que también puede reemplazar el atributo de `createdby` durante la importación. Sin embargo, actualmente esta función no es compatible.  
   
- No puede importar datos en los atributos de `modifiedon`, `createdby` y `modifiedby`. Si tiene que almacenar datos relacionados con la persona que creó y modificó los datos y cuándo se han modificado los datos, puede crear atributos personalizados en CDS para aplicaciones y asignar las columnas de origen a los nuevos atributos personalizados.  
+ No puede importar datos en los atributos de `modifiedon`, `createdby` y `modifiedby`. Si tiene que almacenar datos relacionados con la persona que creó y modificó los datos y cuándo se han modificado los datos, puede crear atributos personalizados en Common Data Service y asignar las columnas de origen a los nuevos atributos personalizados.  
   
 ### <a name="see-also"></a>Vea también
 

@@ -1,6 +1,6 @@
 ---
 title: Ver datos con visualizaciones (gráficos) (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service para aplicaciones. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel.'
+description: 'Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,9 @@ search.app:
 ---
 # <a name="view-data-with-visualizations-charts"></a>Ver los datos con visualizaciones (gráficos)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/view-data-with-visualizations-charts -->
-
-
-Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service para aplicaciones. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel. Más información: [Analizar datos con paneles](analyze-data-with-dashboards.md)  
+Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel. Más información: [Analizar datos con paneles](analyze-data-with-dashboards.md)  
   
- Puede usar un gráfico o a un recurso web como visualización en CDS para aplicaciones. Para los gráficos, puede usar el diseñador de gráficos en aplicaciones basadas en modelos. Sin embargo, para usar un recurso web en una visualización, debe usar el SDK o importar una visualización XML personalizada en aplicaciones basadas en modelos.
+ Puede usar un gráfico o a un recurso web como visualización en Common Data Service. Para los gráficos, puede usar el diseñador de gráficos en aplicaciones basadas en modelos. Sin embargo, para usar un recurso web en una visualización, debe usar el SDK o importar una visualización XML personalizada en aplicaciones basadas en modelos.
   
 <a name="VisualizationTypes"></a>   
 ## <a name="visualization-ownership"></a>Propiedad de la visualización  
@@ -50,7 +47,7 @@ Las visualizaciones le permiten ver gráficamente los datos profesionales. Una v
 ### <a name="chart-types-in-microsoft-chart-controls"></a>Tipos de gráficos en Microsoft Chart Controls  
  Los controles de gráfico de Microsoft se usan para crear gráficos en aplicaciones basadas en modelos. Controles de gráfico de Microsoft permite crear diferentes tipos de gráfico como columnas, barras, áreas, apilados, líneas, burbujas y circulares.  
   
- Se admiten los siguientes tipos de gráficos predefinidos en CDS para aplicaciones: *Columna*, *Área*, *Barra*, *Línea*, *Circular*, y *Embudo*. Sin embargo, puede ampliar la funcionalidad mediante la creación de otros tipos de gráficos de Controles de gráfico de Microsoft compatibles como de varias series, apilados y 100% apilada (comparación) especificando el contenido adecuado en la descripción de datos y en las cadenas XML de descripción de presentación para un gráfico. Más información: [Especificar datos del gráfico](understand-charts-underlying-data-chart-representation.md)  
+ Se admiten los siguientes tipos de gráficos predefinidos en Common Data Service: *Columna*, *Área*, *Barra*, *Línea*, *Circular*, y *Embudo*. Sin embargo, puede ampliar la funcionalidad mediante la creación de otros tipos de gráficos de Controles de gráfico de Microsoft compatibles como de varias series, apilados y 100% apilada (comparación) especificando el contenido adecuado en la descripción de datos y en las cadenas XML de descripción de presentación para un gráfico. Más información: [Especificar datos del gráfico](understand-charts-underlying-data-chart-representation.md)  
   
 <a name="WebResources"></a>   
 ## <a name="web-resource-visualizations"></a>Visualizaciones de recurso web  
@@ -60,7 +57,7 @@ Las visualizaciones le permiten ver gráficamente los datos profesionales. Una v
   
 <a name="SupportedVisualizationEntities"></a>   
 ## <a name="entities-supported-for-visualizations"></a>Entidades admitidas para las visualizaciones  
- Puede crear y adjuntar visualizaciones a aquellas entidades de CDS para aplicaciones que admitan la nueva interfaz de cinta de opciones. Esto se debe a que todos los controles gráficos solamente están presentes en la interfaz de la cinta de opciones de CDS para aplicaciones. También se admiten las entidades personalizadas para las visualizaciones. Puede desactivar el soporte técnico de visualización para las entidades personalizadas si lo desea. Sin embargo, no puede deshabilitar el soporte de visualización para las entidades predeterminadas.  
+ Puede crear y adjuntar visualizaciones a aquellas entidades de Common Data Service que admitan la nueva interfaz de cinta de opciones. Esto se debe a que todos los controles gráficos solamente están presentes en la interfaz de la cinta de opciones de Common Data Service. También se admiten las entidades personalizadas para las visualizaciones. Puede desactivar el soporte técnico de visualización para las entidades personalizadas si lo desea. Sin embargo, no puede deshabilitar el soporte de visualización para las entidades predeterminadas.  
   
  A continuación se enumeran las entidades predeterminadas que se admiten para las visualizaciones.  
   

@@ -1,6 +1,6 @@
 ---
 title: Metadatos de relación entre entidades | Microsoft Docs
-description: Conozca el uso de metadatos de relaciones entre entidades que se usan en Common Data Service para aplicaciones.
+description: Conozca el uso de metadatos de relaciones entre entidades que se usan en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -50,8 +50,8 @@ Con las aplicaciones basadas en modelos, esto habilita una experiencia que le pe
 
 Para los desarrolladores, habilita nuevos tipos de consulta en función de la jerarquía mediante los operadores `Under` y `Not Under`.
 
-Más información: [Guía para desarrolladores para Common Data Service para aplicaciones: coonsult y visualización de datos relacionados jerárquicamente](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
+Más información: [Guía para desarrolladores para Common Data Service: consulta y visualización de datos relacionados jerárquicamente](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades de Common Data Service para aplicaciones](entities.md)
+[Entidades Common Data Service](entities.md)

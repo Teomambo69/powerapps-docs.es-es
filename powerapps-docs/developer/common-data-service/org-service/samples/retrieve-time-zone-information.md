@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar información de zona horaria (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar información de zona horaria (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar la información de zona horaria
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-time-zone-information"></a>Ejemplo: recuperar información de zona horaria
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
 
 Este ejemplo muestra cómo recuperar la información de zona horaria. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveTimeZone).
 

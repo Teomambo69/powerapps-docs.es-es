@@ -1,5 +1,5 @@
 ---
-title: Trabajar con metadatos mediante código (Common Data Service para aplicaciones) | Microsoft Docs
+title: Trabajar con metadatos mediante código (Common Data Service) | Microsoft Docs
 description: 'La [API web](webapi/overview.md) y el [Servicio de organización](org-service/overview.md) incluyen funciones para realizar operaciones CRUD en el esquema de la entidad'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -30,10 +30,10 @@ Algunos ejemplos:
 
 ## <a name="browse-the-metadata-for-your-organization"></a>Examinar los metadatos de la organización
 
-Desarrollar una buena comprensión de los metadatos en el sistema le pueden ayudar a entender cómo funciona la plataforma de Common Data Service for Apps. Los diseñadores disponibles para editar metadatos no pueden mostrar todos los detalles encontrados en los metadatos. Puede instalar una aplicación basada en modelos llamada *Explorador de metadatos* que le permitirá ver todas las entidades y propiedades de metadatos ocultas que se encuentran en el sistema. Más información sobre el *Explorador de metadatos*: [Explorar los metadatos de su organización](browse-your-metadata.md)
+Desarrollar una buena comprensión de los metadatos en el sistema le pueden ayudar a entender cómo funciona la plataforma de Common Data Service. Los diseñadores disponibles para editar metadatos no pueden mostrar todos los detalles encontrados en los metadatos. Puede instalar una aplicación basada en modelos llamada *Explorador de metadatos* que le permitirá ver todas las entidades y propiedades de metadatos ocultas que se encuentran en el sistema. Más información sobre el *Explorador de metadatos*: [Explorar los metadatos de su organización](browse-your-metadata.md)
 
 ## <a name="programmatically-work-with-metadata"></a>Trabajar con metadatos mediante programación
 
 Para obtener más información sobre cómo trabajar mediante programación con metadatos utilizando:
-- **API web**: [Usar la API web con metadatos de CDS para aplicaciones](webapi/use-web-api-metadata.md)
-- **Servicio de organización**: [Usar el servicio de organización con metadados de CDS para aplicaciones](org-service/work-with-metadata.md)
+- **API web**: [Use la API web con metadatos de Common Data Service](webapi/use-web-api-metadata.md)
+- **Servicio de organización**: [Usar el servicio de organización con metadados de Common Data Service](org-service/work-with-metadata.md)

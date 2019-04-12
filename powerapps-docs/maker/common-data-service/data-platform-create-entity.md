@@ -22,7 +22,7 @@ En este tema, aprenderá a crear una entidad personalizada llamada Valoración d
 ## <a name="prerequisites"></a>Requisitos previos
 Para realizar este procedimiento, los elementos siguientes son necesarios:
 * Una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow. Como alternativa, puede suscribirse a una [prueba gratuita de Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=)
-* Un rol de seguridad de administrador del sistema o de personalizador del sistema en Common Data Service for Apps.
+* Un rol de seguridad de administrador del sistema o de personalizador del sistema en Common Data Service.
 
 ## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
 Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).

@@ -4,7 +4,7 @@ description: Aprenda a agregar navegación de formulario para entidades relacion
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -83,4 +83,4 @@ En este tema, usará el panel de navegación de formulario que se usa para agreg
 > La instalación de una solución o la publicación de personalizaciones puede interferir en el funcionamiento normal del sistema. Le recomendamos que programe la importación de una solución cuando perjudique lo menos posible a los usuarios.
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Creación y edición de relaciones de entidad para Common Data Service for Apps](../common-data-service/create-edit-entity-relationships.md)
+ [Creación y edición de relaciones de entidad para Common Data Service](../common-data-service/create-edit-entity-relationships.md)

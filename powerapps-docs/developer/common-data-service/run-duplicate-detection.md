@@ -1,5 +1,5 @@
 ---
-title: Ejecutar detección de duplicados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejecutar detección de duplicados (Common Data Service) | Microsoft Docs
 description: 'Ejecute la detección de duplicados para un registro específico, un tipo de entidad o en las operaciones de creación o actualización.'
 ms.custom: ''
 ms.date: 10/31/2018

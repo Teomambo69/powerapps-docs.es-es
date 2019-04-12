@@ -1,6 +1,6 @@
 ---
-title: Autenticación con las aplicaciones de .NET Framework (Common Data Service para aplicaciones) | Microsoft Docs
-description: Cómo las aplicaciones de .NET Framework se pueden autenticar en Common Data Service para aplicaciones
+title: Autenticación con las aplicaciones de .NET Framework (Common Data Service) | Microsoft Docs
+description: Cómo las aplicaciones de .NET Framework se pueden autenticar en Common Data Service
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -58,10 +58,10 @@ Use la versión 4.6.2 de .NET Framework o superior al crear aplicaciones cliente
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>Aplicaciones de .NET Framework sin ensamblados de SDK
 
-Si prefiere no tener una dependencia en ningún ensamblado de SDK, puede usar también los patrones descritos en [Usar OAuth con Common Data Service para aplicaciones](authenticate-oauth.md) sin aceptar ninguna dependencia de cualquier montaje del SDK. Sin los ensamblados de SDK, puede usar solo los servicios web de OData Restful (API web y servicio de detección global de OData). Los [Ejemplos de las operaciones de datos de API web (C#)](webapi/web-api-samples-csharp.md) demuestran este método.
+Si prefiere no tener una dependencia en ningún ensamblado de SDK, puede usar también los patrones descritos en [Usar OAuth con Common Data Service](authenticate-oauth.md) sin aceptar ninguna dependencia de cualquier montaje del SDK. Sin los ensamblados de SDK, puede usar solo los servicios web de OData Restful (API web y servicio de detección global de OData). Los [Ejemplos de las operaciones de datos de API web (C#)](webapi/web-api-samples-csharp.md) demuestran este método.
 
 ### <a name="see-also"></a>Vea también
 
-[Autenticación con servicios web Common Data Service para aplicaciones](authentication.md)<br />
-[Usar OAuth con Common Data Service para aplicaciones](authenticate-oauth.md)
+[Autenticación con servicios web Common Data Service](authentication.md)<br />
+[Usar OAuth con Common Data Service](authenticate-oauth.md)
 

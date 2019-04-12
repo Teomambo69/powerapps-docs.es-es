@@ -1,5 +1,5 @@
 ---
-title: Conjunto de opciones personalizados (Common Data Service para aplicaciones) | Microsoft Docs
+title: Conjunto de opciones personalizados (Common Data Service) | Microsoft Docs
 description: Describe cómo trabajar con los conjuntos de opciones globales y locales en código.
 ms.custom: ''
 ms.date: 10/31/2018

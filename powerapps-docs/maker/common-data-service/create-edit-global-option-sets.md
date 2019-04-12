@@ -1,9 +1,9 @@
 ---
-title: Información general sobre creación y edición de conjuntos de opciones globales (listas desplegables) para Common Data Service para aplicaciones | MicrosoftDocs
+title: Información general sobre creación y edición de conjuntos de opciones globales (listas desplegables) para Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ Hay dos diseñadores que puede usar para crear o editar conjuntos de opciones gl
 |Diseñador| Descripción|
 |--|--|
 |[Portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear un conjunto de opciones](custom-picklists.md) |
-|Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md) |
+|Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > También puede crear conjuntos de opciones globales en su entorno mediante lo siguiente:
@@ -50,7 +50,7 @@ Debe usar el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&
 
 - Asignar colores a opciones
 - Cambiar el orden de las opciones
-- Creación de un conjunto de opciones global en una solución distinta de la solución predeterminada de CDS
+- Creación de un conjunto de opciones global en una solución distinta de la solución predeterminada de Common Data Service
 - Establecer propiedades administradas
 - Establezca propiedades usadas para entidades virtuales
 - Ver dependencias
@@ -58,7 +58,7 @@ Debe usar el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&
 ## <a name="see-also"></a>Vea también
 
 [Crear un conjunto de opciones](custom-picklists.md)<br />
-[Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md)<br />
+[Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md)<br />
 [Documentación para desarrolladores: Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
   
 

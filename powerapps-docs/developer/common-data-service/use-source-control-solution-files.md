@@ -1,5 +1,5 @@
 ---
-title: Control de origen con archivos de la solución (Common Data Service para aplicaciones) | Microsoft Docs
+title: Control de origen con archivos de la solución (Common Data Service) | Microsoft Docs
 description: 'La herramienta SolutionPackager puede usarse con cualquier sistema de control de código fuente. Cuando un archivo .zip de solución se extrae a una carpeta, simplemente agregue y envíe los archivos al sistema de control de código fuente. Estos archivos se pueden sincronizar a continuación en otro equipo donde se pueden comprimir en un nuevo archivo .zip de solución idéntico.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -36,7 +36,7 @@ La herramienta SolutionPackager puede usarse con cualquier sistema de control de
   
 1. El desarrollador A y B trabajan en la misma solución.  
   
-2. En equipos independientes, ambos obtienen los últimos orígenes de la solución del control de código fuente, empaquetan e importan un archivo .zip de solución no administrada en organizaciones independientes CDS para aplicaciones.  
+2. En equipos independientes, ambos obtienen los últimos orígenes de la solución del control de código fuente, empaquetan e importan un archivo .zip de solución no administradas en organizaciones independientes de Common Data Service.  
   
 3. El desarrollador A personaliza la vista del sistema "Contactos activos" y el formulario principal para la entidad Contacto.  
   
@@ -88,7 +88,7 @@ La herramienta SolutionPackager puede usarse con cualquier sistema de control de
   
         3.  Si el cambio anterior se considera no necesario, el desarrollador B permite que su copia del archivo sobrescriba la versión en el control de código fuente y la envíe.  
   
-    Si trabaja en una organización compartida o en organizaciones independientes, el desarrollo del equipo de soluciones de CDS para aplicaciones requiere que los que trabajan activamente con una solución común conozcan el trabajo de otros usuarios. La herramienta SolutionPackager no elimina completamente esta necesidad pero habilita la combinación fácil de cambios que no están en conflicto en el nivel de control de código fuente y resalta de forma proactiva los componentes concisos donde han surgido los conflictos.  
+    Si trabaja en una organización compartida o en organizaciones independientes, el desarrollo del equipo de soluciones de Common Data Service requiere que los que trabajan activamente con una solución común conozcan el trabajo de otros usuarios. La herramienta SolutionPackager no elimina completamente esta necesidad pero habilita la combinación fácil de cambios que no están en conflicto en el nivel de control de código fuente y resalta de forma proactiva los componentes concisos donde han surgido los conflictos.  
   
     Las secciones siguientes son procesos genéricos para usar eficazmente la herramienta SolutionPackager en el control de código fuente al desarrollar con equipos. Estos funcionan por igual con las organizaciones independientes o con las organizaciones compartidas de desarrollo, aunque con las organizaciones compartidas la exportación y el extracto incluirán naturalmente todos los cambios presentes en la solución, no solo los creados por el desarrollador que realiza la exportación. De forma similar, cuando se importa un archivo .zip de solución se producirá el comportamiento natural de sobrescribir todos los componentes.  
   
@@ -96,7 +96,7 @@ La herramienta SolutionPackager puede usarse con cualquier sistema de control de
 ## <a name="create-a-solution"></a>Crear una solución  
  El siguiente procedimiento identifica los pasos típicos usados al crear una solución por primera vez.  
   
-1. En una organización limpia, cree una solución en el servidor de CDS para aplicaciones y, a continuación, agregue o cree componentes como sea necesario.  
+1. En una organización limpia, cree una solución en el servidor de Common Data Service y, a continuación, agregue o cree componentes como sea necesario.  
   
 2. Cuando esté listo para proteger, siga estos pasos.  
   

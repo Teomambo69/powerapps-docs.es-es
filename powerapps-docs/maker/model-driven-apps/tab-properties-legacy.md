@@ -1,7 +1,7 @@
 ---
 title: Propiedades de pestaña para formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Comprender las propiedades de pestañas para formularios principales
-Keywords: Tab properties; Dynamics 365; Main forms
+Keywords: Propiedades de pestaña; Dynamics 365; formularios principales
 author: matp
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: Mattp123
 manager: kvivek
 ms.date: 06/07/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: e0790865-c5a4-4e86-bce2-584af2b8ed93
 search.audienceType:

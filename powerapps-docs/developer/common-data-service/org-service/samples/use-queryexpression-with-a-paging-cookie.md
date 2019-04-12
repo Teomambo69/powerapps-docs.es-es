@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar QueryExpresion con una cookie de paginación (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar QueryExpresion con una cookie de paginación (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar la cookie de paginación en una QueryExpresion
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-use-queryexpression-with-a-paging-cookie"></a>Ejemplo: usar QueryExpression con una cookie de paginación
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-queryexpression-with-a-paging-cookie -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-queryexpression-with-a-paging-cookie -->
 
-Este ejemplo muestra cómo usar la cookie de paginación en una consulta de QueryExpression para recuperar páginas sucesivas de resultados de la consulta. Usa el método [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseQueryExpressionwithPaging).
+Este ejemplo muestra cómo usar la cookie de paginación en una consulta de QueryExpression para recuperar páginas sucesivas de resultados de la consulta. Usa el método [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseQueryExpressionwithPaging).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

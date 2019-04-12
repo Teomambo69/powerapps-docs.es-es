@@ -1,12 +1,12 @@
 ---
-title: 'Tutorial: Actualizar un complemento (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Actualizar un complemento (Common Data Service) | Microsoft Docs'
 description: 'Este tutorial es el tercero de una serie que le muestra cómo trabajar con los complementos. '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

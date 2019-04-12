@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Detectar varios registros duplicados (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Detectar varios registros duplicados (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo detectar y registrar varios registros duplicados para un tipo de entidad especificado.
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,10 +1,10 @@
 ---
-title: Entidades y metadatos en Common Data Service para aplicaciones | MicrosoftDocs
-description: Conozca entidades y metadatos en Common Data Service para aplicaciones | MicrosoftDocs
+title: Entidades y metadatos en Common Data Service | MicrosoftDocs
+description: Obtener más información sobre entidades y metadatos en Common Data Service
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,15 +24,15 @@ search.app:
   - D365CE
 ---
 
-# <a name="entities-and-metadata-in-common-data-service-for-apps"></a>Entidades y metadatos en Common Data Service para aplicaciones
+# <a name="entities-and-metadata-in-common-data-service"></a>Entidades y metadatos en Common Data Service
 
-Common Data Service para aplicaciones está diseñado de modo que pueda crear de forma rápida y sencilla un modelo de datos para su aplicación. Normalmente, no será necesario que se preocupe con algunos de los detalles sobre los metadatos que este tema introducirá. Pero si desea desarrollar conocimientos más profundos sobre cómo funcionan las aplicaciones que usan CDS para aplicaciones o si usted está evaluando lo que es posible, la comprensión de los metadatos que usa CDS para aplicaciones puede proporcionarle información detallada.
+Common Data Service está diseñado de modo que pueda crear de forma rápida y sencilla un modelo de datos para su aplicación. Normalmente, no será necesario que se preocupe con algunos de los detalles sobre los metadatos que este tema introducirá. Pero si desea desarrollar conocimientos más profundos sobre cómo funcionan las aplicaciones que usan Common Data Service o si usted está evaluando lo que es posible, la comprensión de los metadatos que usa Common Data Service puede proporcionarle información detallada.
 
-*Metadatos* significa datos acerca de datos. CDS para aplicaciones le proporciona una plataforma flexible porque es relativamente fácil editar las definiciones de los datos que usará el entorno. En CDS para aplicaciones, los metadatos son una colección de entidades. Las entidades describen las clases de datos que se almacenan en la base de datos.  Cada entidad corresponde a una tabla de la base de datos y cada campo (también denominado atributo) en una entidad representa una columna de la tabla. Los metadatos de la entidad controlan los tipos de registros que puede crear y el tipo de acciones que se pueden realizar en ellos. Cuando utiliza las herramientas de personalización para crear o editar entidades, campos y relaciones entre entidades, está editando estos metadatos. 
+*Metadatos* significa datos acerca de datos. Common Data Service le proporciona una plataforma flexible porque es relativamente fácil editar las definiciones de los datos que usará el entorno. En Common Data Service, los metadatos son una colección de entidades. Las entidades describen las clases de datos que se almacenan en la base de datos.  Cada entidad corresponde a una tabla de la base de datos y cada campo (también denominado atributo) en una entidad representa una columna de la tabla. Los metadatos de la entidad controlan los tipos de registros que puede crear y el tipo de acciones que se pueden realizar en ellos. Cuando utiliza las herramientas de personalización para crear o editar entidades, campos y relaciones entre entidades, está editando estos metadatos. 
   
 Los distintos clientes que los usuarios usan para interactuar con los datos del entorno dependen de los metadatos de la entidad y se adaptan cuando usted personaliza los metadatos. Estos clientes también dependen de otros datos para controlar los elementos visuales que se van a mostrar, la lógica personalizada que se va a aplicar y cómo se aplicará la seguridad. Estos datos del sistema también se almacenan en las entidades, pero las entidades propiamente dichas no están disponibles para la personalización.
 
-Puede obtener información sobre entidades estándar, atributos, y las relaciones entre entidades incluidas de forma predeterminada en CDS para aplicaciones revisando la [Referencia de entidad](/powerapps/developer/common-data-service/reference/about-entity-reference).
+Puede obtener información sobre entidades estándar, atributos, y las relaciones entre entidades incluidas de forma predeterminada en Common Data Service revisando la [Referencia de entidad](/powerapps/developer/common-data-service/reference/about-entity-reference).
 
 > [!TIP]
 > Los diseñadores disponibles para editar metadatos no pueden mostrar todos los detalles encontrados en los metadatos. Puede instalar una aplicación basada en modelos llamada **Explorador de metadatos** que le permitirá todas las entidades y propiedades de metadatos que se encuentran en el sistema. Más información: [Examinar los metadatos para su entorno](https://docs.microsoft.com/dynamics365/customer-engagement/developer/browse-your-metadata).
@@ -41,7 +41,7 @@ Puede obtener información sobre entidades estándar, atributos, y las relacione
 
 ## <a name="create-new-metadata-or-use-existing-metadata"></a>¿Crear nuevos metadatos o usar los metadatos existentes?
 
-CDS para aplicaciones incluye varias entidades estándar que admiten las principales capacidades de aplicación de negocios. Por ejemplo, los datos sobre los clientes o clientes potenciales están destinados a almacenarse mediante las entidades de cuenta o contacto.  
+Common Data Service incluye varias entidades estándar que admiten las principales capacidades de aplicación de negocios. Por ejemplo, los datos sobre los clientes o clientes potenciales están destinados a almacenarse mediante las entidades de cuenta o contacto.  
   
 Cada una de estas entidades también contiene varios campos que representan los datos comunes que el sistema puede necesitar para almacenar la entidad respectiva.  
   

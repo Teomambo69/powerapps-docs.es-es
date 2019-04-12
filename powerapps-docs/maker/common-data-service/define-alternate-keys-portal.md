@@ -4,7 +4,7 @@ description: Aprenda a definir claves alternativas usando el portal de PowerApps
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-powerapps-portal"></a>Definir claves alternativas usando el portal de PowerApps
 
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de ver y crear claves alternativas de entidades con Common Data Service for Apps.
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de ver y crear claves alternativas de entidades con Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Definir claves alternativas para hacer referencia a registros](define-alternate-keys-reference-records.md)

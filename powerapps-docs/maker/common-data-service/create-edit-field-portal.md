@@ -1,9 +1,9 @@
 ---
-title: Crear y editar campos para Common Data Service para aplicaciones mediante el portal de PowerApps | MicrosoftDocs
+title: Crear y editar campos para Common Data Service mediante el portal de PowerApps | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,24 +12,24 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-portal"></a>Crear y editar campos para Common Data Service para aplicaciones mediante el portal de PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Crear y editar campos para Common Data Service mediante el portal de PowerApps
 
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service para aplicaciones.
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de campos para Common Data Service para aplicaciones](create-edit-fields.md)
-- [Crear y editar campos para Common Data Service para aplicaciones mediante el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)
+- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
+- [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Campos de vista
 
-1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Basadas en modelos** o **Lienzo**.
+1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
 2. Seleccione **Datos**  > **Entidades** y seleccione la entidad que contiene los campos que desea ver.
 3. Con la pestaña **Campos** seleccionada, seleccione las vistas siguientes: 
 
@@ -52,8 +52,8 @@ En principio, solo tres propiedades de campo están disponibles:
  |Propiedad|Descripción|
  |--|--|
  |**Nombre para mostrar**|El texto que se muestra para el campo en la interfaz de usuario.|
- |**Nombre**|El nombre único en el entorno. Se generará un nombre para usted basado en el nombre para mostrar que ha especificado, pero puede editarlo antes de guardar. Una vez que un campo se crea el nombre no se puede cambiar, ya que se puede hacer referencia a él en sus aplicaciones o código. El nombre tendrá el prefijo de personalización para su **Editor predeterminado de CDS** antepuesto.|
- |**Tipo de datos**|Controla cómo se almacenan los valores y también cómo se formatean en algunas aplicaciones. Un vez se guarda un campo, no puede cambiar el tipo de datos ya que puede afectar a los datos en la entidad.|
+ |**Nombre**|El nombre único en el entorno. Se generará un nombre para usted basado en el nombre para mostrar que ha especificado, pero puede editarlo antes de guardar. Una vez que un campo se crea el nombre no se puede cambiar, ya que se puede hacer referencia a él en sus aplicaciones o código. El nombre tendrá el prefijo de personalización para su **Editor predeterminado de Common Data Service** antepuesto.|
+ |**Tipo de datos**|Controla cómo se almacenan los valores y también cómo se formatean en algunas aplicaciones. Una vez que se guarda un campo, no puede cambiar el tipo de datos excepto convertir campos de texto a campos de numeración automática.|
 
 Puede establecer opciones adicionales en función de su elección de **Tipo de datos**.
 
@@ -75,6 +75,7 @@ Los campos de texto estándar pueden almacenar hasta de 4000 caracteres. La opci
 |**Dirección URL**|Valor de texto validado como dirección URL y generado como un vínculo para abrir la dirección URL.|
 |**Símbolo del valor**|Un valor del texto para un símbolo de valor que mostrará un vínculo que se abrirá para mostrar una oferta para el símbolo de valor bursátil. |
 |**Teléfono**|Valor de texto validado como número de teléfono generado como vínculo para realizar una llamada de teléfono con Skype. |
+|**Numeración automática**|Una combinación personalizable de números y letras que es generada automáticamente por el servidor cuando se crea el registro. Más información: [Campos de numeración automática](autonumber-fields.md) |
 
 #### <a name="max-length"></a>Longitud máxima
 
@@ -170,7 +171,7 @@ Más información: [Definir campos consolidados que agregan valores](define-roll
 
 ## <a name="number-field-options"></a>Opciones de campo de número
 
-Cada tipo de campo de número tiene valores mínimos y máximos absolutos. Puede establecer el **Valor mínimo** y el **Valor máximo** dentro de estos valores absolutos. Haga esto para que CDS para aplicaciones valide los valores de los datos que desea almacenar en el campo.
+Cada tipo de campo de número tiene valores mínimos y máximos absolutos. Puede establecer el **Valor mínimo** y el **Valor máximo** dentro de estos valores absolutos. Haga esto para que Common Data Service valide los valores de los datos que desea almacenar en el campo.
 
 Para los tipos de datos **Número de punto flotante** y **Número decimal**, puede especificar varias **Posiciones decimales**.
 
@@ -224,8 +225,8 @@ Cualquiera de los campos que proporcionan la entrada de texto directa tienen un 
 
 
 ### <a name="see-also"></a>Vea también  
-[Creación y edición de campos para Common Data Service para aplicaciones](create-edit-fields.md)<br />
-[Crear y editar campos para Common Data Service para aplicaciones mediante el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Creación y edición de campos para Common Data Service](create-edit-fields.md)<br />
+[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Definir campos consolidados que agregan valores](define-rollup-fields.md)<br />

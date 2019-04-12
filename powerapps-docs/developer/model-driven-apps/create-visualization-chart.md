@@ -51,7 +51,7 @@ Para crear una visualización mediante programación, debe crear un registro par
 
  Los gráficos de varias series asignan valores de eje (vertical) de varias series a un solo valor de eje (horizontal) de categorías. Solo se diferencia de los gráficos de una sola serie en que estos gráficos tienen varios elementos `<measurecollection>` y `<series>` correspondientes especificados en las cadenas XML. Cada elemento `<measurecollection>` contiene un elemento secundario `<measure>` que define un valor de eje (vertical) de series para el mismo valor (horizontal) de categorías. Más información: [Descripción de los gráficos: representación de datos y gráficos subyacentes](understand-charts-underlying-data-chart-representation.md).  
   
- Para obtener un gráfico de varias series de ejemplo y las correspondientes cadenas XML de descripción de datos y de presentación, consulte [TODO: Gráfico de varias series]<!--(sample-charts.md#MultiSeriesChart)-->.
+ Para obtener un gráfico de varias series de ejemplo y las correspondientes cadenas XML de descripción de datos y de presentación, consulte [TODO: Multi-Series Chart].<!--(sample-charts.md#MultiSeriesChart)-->.
   
 <a name="CreateWRVisualization"></a>   
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Si desea crear una visualización del recurso web mediante la aplicación web Dynamics 365 Common Data Service para aplicaciones debe crear un archivo XML en el siguiente formato y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
+ Si desea crear una visualización del recurso web mediante la aplicación web Dynamics 365 Common Data Service debe crear un archivo XML en el siguiente formato y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
   
 ```xml  
 <visualization>  
@@ -102,4 +102,4 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
  [Acciones en el gráfico](actions-visualizations-charts.md)   
  [Gráficos de muestra](sample-charts.md)   
  [Análisis y visualización de datos](customize-visualizations-dashboards.md)   
- [Ejemplo: crear, recuperar, actualizar y eliminar (CRUD) un gráfico](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!-- TODO need to replace the link with powerapps -->
+ [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un gráfico](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!-- TODO need to replace the link with powerapps -->

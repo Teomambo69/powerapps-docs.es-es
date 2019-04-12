@@ -1,5 +1,5 @@
 ---
-title: Creación de extensiones para la herramienta de generación de código (Common Data Service para aplicaciones) | Microsoft Docs
+title: Creación de extensiones para la herramienta de generación de código (Common Data Service) | Microsoft Docs
 description: 'El paquete de descarga del SDK incluye una extensión a la herramienta de generación de código CrmSvcUtil que puede usar para generar enumeraciones para todos los valores del conjunto de opciones incluidos los conjuntos de opciones globales, la lista desplegable, el estado y los valores de estado.'
 ms.custom: ''
 ms.date: 10/31/2018

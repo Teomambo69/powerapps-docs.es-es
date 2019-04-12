@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de operaciones condicionales de API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condicionalmente en la versión del registro de entidad contenido en el servidor de Common Data Service para aplicaciones y/o mantenido actualmente por el cliente.
+title: Ejemplo de operaciones condicionales de API web (Common Data Service) | Microsoft Docs
+description: Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condicionalmente en la versión del registro de entidad contenido en el servidor de Common Data Service y/o mantenido actualmente por el cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,11 +22,11 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample"></a>Ejemplo de operaciones condicionales de la API web
 
-Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condicionalmente en la versión del registro de entidad contenido en el servidor de Common Data Service para aplicaciones y/o mantenido actualmente por el cliente. Para obtener más información, consulte [realizar operaciones condicionales mediante la API web](perform-conditional-operations-using-web-api.md). Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
+Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condicionalmente en la versión del registro de entidad contenido en el servidor de Common Data Service y/o mantenido actualmente por el cliente. Para obtener más información, consulte [realizar operaciones condicionales mediante la API web](perform-conditional-operations-using-web-api.md). Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
   
  [Ejemplo de operaciones condicionales de la API web (C#)](samples/conditional-operations-csharp.md)  
  
- La API web de Common Data Service para aplicaciones sigue las convenciones del protocolo [OData v4.0](http://www.odata.org/documentation/), que usa [ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) para implementar el control de versiones del recurso. Las operaciones condicionales de la API web dependen de este mecanismo de versiones.  
+ La API web de Common Data Service sigue las convenciones del protocolo [OData v4.0](http://www.odata.org/documentation/), que usa [ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) para implementar el control de versiones del recurso. Las operaciones condicionales de la API web dependen de este mecanismo de versiones.  
   
  En este tema se explican la estructura y el contenido de los ejemplos en un nivel superior de lenguaje neutro. Detalla las solicitudes y las respuestas HTTP, y la salida del programa asociada, en el caso correspondiente. Revise los temas de ejemplo vinculados anteriores para obtener implementaciones específicas del idioma y detalles relacionados sobre cómo realizar las operaciones descritas en este tema.  
   
@@ -40,7 +40,7 @@ Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condici
 |[Simultaneidad optimista al eliminar y actualizar](#bkmk_optimisiticConcurrency)|[Aplicar simultaneidad optimista](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency)|  
 |[Controlar operaciones de upsert](#bkmk_controllingUpsert)|[Limitar operaciones de upsert](perform-conditional-operations-using-web-api.md#bkmk_limitUpsertOperations)|  
   
- Las siguientes secciones contienen una breve explicación de las operaciones de la API web de Common Data Service para aplicaciones realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola, que es la misma para cada implementación de idioma. Para razones de brevedad, se han omitido los encabezados HTTP menos pertinentes. Las direcciones URL de los registros variarán con la dirección de la organización base y el identificador del registro asignado por el servidor de Common Data Service para aplicaciones.  
+ Las siguientes secciones contienen una breve explicación de las operaciones de la API web de Common Data Service realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola, que es la misma para cada implementación de idioma. Para razones de brevedad, se han omitido los encabezados HTTP menos pertinentes. Las direcciones URL de los registros variarán con la dirección de la organización base y el identificador del registro asignado por el servidor de Common Data Service.  
   
 <a name="bkmk_sampleData"></a>
    
@@ -488,6 +488,6 @@ Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condici
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
 [Realizar operaciones condicionales mediante la API web](perform-conditional-operations-using-web-api.md)<br />
 [Ejemplo de operaciones condicionales de la API web (C#)](samples/conditional-operations-csharp.md)   

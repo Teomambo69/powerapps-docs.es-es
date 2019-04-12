@@ -4,7 +4,7 @@ description: Aprenda a crear y editar entidades con el portal de PowerApps
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,10 +25,10 @@ search.app:
 
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>Crear y editar entidades con el portal PowerApps
 
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar entidades para Common Data Service para aplicaciones.
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar entidades para Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
-- [Creación y edición entidades en Common Data Service para aplicaciones](create-edit-entities.md)
+- [Creación y edición entidades en Common Data Service](create-edit-entities.md)
 - [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>Ver entidades
@@ -62,7 +62,7 @@ Escriba datos para los campos siguientes:
 |--|--|
 |**Nombre**|Este es el nombre singular de la entidad que aparecerá en la aplicación. Se puede cambiar posteriormente.|
 |**Nombre plural para mostrar**|Este es el nombre plural de la entidad que aparecerá en la aplicación. Se puede cambiar posteriormente.|
-|**Nombre**|Este campo se rellena previamente según el **Nombre para mostrar** que escriba. Incluye el prefijo de personalización para el editor de soluciones de CDS. No se puede cambiar esto una vez guardada la entidad.|
+|**Nombre**|Este campo se rellena previamente según el **Nombre para mostrar** que escriba. Incluye el prefijo de personalización para el editor de soluciones de Common Data Service. No se puede cambiar esto una vez guardada la entidad.|
 |**Descripción**|Proporcione una descripción significativa del objetivo de la entidad.|
 
 Seleccione **Siguiente** para continuar, se cerrará el panel **Nueva entidad** y se mostrará la lista de campos.
@@ -144,7 +144,7 @@ Si la entidad tiene las dependencias que impiden que sea eliminado verá un mens
 
 ### <a name="see-also"></a>Vea también
 
-[Creación y edición entidades en Common Data Service para aplicaciones](create-edit-entities.md)<br />
+[Creación y edición entidades en Common Data Service](create-edit-entities.md)<br />
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)
 
 

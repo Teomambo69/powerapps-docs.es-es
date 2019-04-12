@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Descubra las dependencias de solución (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Descubra las dependencias de solución (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo detectar las dependencias de las soluciones.
 ms.custom: ''
 ms.date: 10/31/2018

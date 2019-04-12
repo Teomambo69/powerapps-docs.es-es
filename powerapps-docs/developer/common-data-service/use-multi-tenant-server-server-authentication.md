@@ -1,8 +1,8 @@
 ---
-title: Usar autenticación multiempresa entre servidores (Common Data Service para aplicaciones) | Microsoft Docs
-description: Describe cómo configurar un usuario de la aplicación para la autenticación entre servidores con Common Data Service para aplicaciones.
+title: Usar autenticación entre servidores multiempresa (Common Data Service) | Microsoft Docs
+description: Describe cómo configurar un usuario de la aplicación para la autenticación entre servidores con Common Data Service.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 2/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,9 +19,9 @@ search.app:
 
 Es el escenario más común y el que se usa para las aplicaciones distribuidas con Microsoft AppSource, pero también puede usar multiempresa sin enumerar su aplicación con Microsoft AppSource.  
   
-Cada CDS para aplicaciones está asociado a un inquilino de Azure Active Directory. Su aplicación o servicio web se registra con su propio inquilino de Azure AD.  
+Cada organización de Common Data Service está asociada a un inquilino de Azure Active Directory. Su aplicación o servicio web se registra con su propio inquilino de Azure AD.  
   
-En este escenario cualquier inquilino de CDS para aplicaciones puede usar potencialmente la aplicación multiempresa después de conceder consentimiento para que la aplicación acceda a los datos.  
+En este escenario cualquier inquilino de Common Data Service puede usar potencialmente la aplicación multiempresa después de conceder consentimiento para que la aplicación acceda a los datos en su inquilino.  
   
 <a name="bkmk_Requirements"></a>   
 
@@ -31,7 +31,7 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
 - Un inquilino de Azure AD que usará para publicar la aplicación o el servicio.  
   
-- 2 suscripciones a CDS para aplicaciones  
+- 2 Suscripciones de Common Data Service  
   
   -   Una debe asociarse con el inquilino de Azure AD que usará para publicar la aplicación o el servicio.  
   
@@ -47,15 +47,13 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
 1. Crear una aplicación web multiempresa registrada con el inquilino de Azure AD.  
   
-2. Crear un usuario de la aplicación asociado con la aplicación registrada en el inquilino de CDS para aplicaciones  
+2. Crear un usuario de la aplicación asociado con la aplicación registrada en el inquilino de Common Data Service  
   
-3. Crear un rol de seguridad personalizado y asignarlo al usuario de la aplicación en su inquilino de CDS para aplicaciones  
+3. Crear un rol de seguridad personalizado y asignarlo al usuario de la aplicación en su inquilino de Common Data Service  
   
-4. Probar la aplicación con el inquilino de CDS para aplicaciones  
+4. Pruebe la aplicación con el inquilino de Common Data Service  
   
-5. Probar la aplicación con un inquilino de CDS para aplicaciones distinto  
-  
-   Para ver un ejemplo completo de este proceso, consulte [Tutorial: Autenticación multiempresa entre servidores](/dynamics365/customer-engagement/developer/walkthrough-multi-tenant-server-server-authentication).  
+5. Pruebe la aplicación con el inquilino aparte de Common Data Service  
   
 <a name="bkmk_CreateAMultitenantWebApp"></a>
    
@@ -84,7 +82,7 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
  ![Diálogo Cambiar autenticación MVC de ASP.NET](media/mvc-change-authentication-dialog.png "Diálogo Cambiar autenticación MVC de ASP.NET")  
   
- Cuando se configura un proyecto con estas opciones se configurará para usar el software intermedio y el andamio de OWIN para una aplicación básica que admita este escenario. Con unas modificaciones básicas puede ser adaptado para funcionar con CDS para aplicaciones. Este es el método demostrado en [Tutorial: Autenticación multiempresa entre servidores](/dynamics365/customer-engagement/developer/walkthrough-multi-tenant-server-server-authentication).  
+ Cuando se configura un proyecto con estas opciones se configurará para usar el software intermedio y el andamio de OWIN para una aplicación básica que admita este escenario. Con unas modificaciones básicas puede ser adaptado para funcionar con Common Data Service. 
   
  En el proceso de crear y registrar la aplicación para desarrollo probablemente usará `http://localhost` como valores de **Dirección URL de inicio de sesión** y **Dirección URL de respuesta** para que pueda probar y depurar su aplicación localmente antes de publicarla. Necesitará cambiar estos valores antes de publicar la aplicación.  
   
@@ -92,15 +90,15 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
 <a name="bkmk_GrantApplicationRights"></a>
    
-## <a name="grant-your-application-rights-to-access-cds-for-apps-data"></a>Conceda a la aplicación derechos para tener acceso a los datos de CDS para aplicaciones
+## <a name="grant-your-application-rights-to-access-common-data-service-data"></a>Conceda a la aplicación derechos para tener acceso a los datos de Common Data Service
   
- Ésta es la razón por la que su instancia de CDS para aplicaciones debe estar asociada al inquilino de Azure AD. Si el inquilino de Azure AD no está asociado con un inquilino de CDS para aplicaciones, no podrá realizar los pasos siguientes.  
+ Ésta es la razón por la que su instancia de Common Data Service debe estar asociada al inquilino de Azure AD. Si el inquilino de Azure AD no está asociado con un inquilino de Common Data Service, no podrá realizar los pasos siguientes.  
   
 1. Vaya a [https://portal.azure.com](https://portal.azure.com) y seleccione **Azure Active Directory**.  
   
 2. Haga clic en **Registros de la aplicación** y busque la aplicación que ha creado mediante Visual Studio.  
   
-3. Debe proporcionar los privilegios de la aplicación para tener acceso a los datos de CDS para aplicaciones. En el área **Acceso de API** haga clic en **Permisos requeridos**. Debe ver que ya tiene permisos para **Windows Azure Active Directory**.  
+3. Debe proporcionar los privilegios de la aplicación para tener acceso a los datos de Common Data Service. En el área **Acceso de API** haga clic en **Permisos requeridos**. Debe ver que ya tiene permisos para **Windows Azure Active Directory**.  
   
 4. Haga clic en **Agregar** y, a continuación, en **Seleccionar una API**. En la lista, seleccione **Dynamics 365** y luego haga clic en el botón **Seleccionar**.  
   
@@ -112,8 +110,8 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
 <a name="bkmk_CreateAppUser"></a>
    
-## <a name="create-an-application-user--associated-with-the-registered-application--in-cds-for-apps"></a>Crear un usuario de la aplicación asociado con la aplicación registrada en CDS para aplicaciones  
- Cuando su aplicación tiene acceso a los datos de CDS para aplicaciones de uno de los suscriptores de su aplicación, necesitará un usuario de la aplicación en la organización de CDS para aplicaciones del suscriptor. Como cualquier usuario de CDS para aplicaciones, este usuario de la aplicación debe estar asociado al menos a un rol de seguridad que defina los datos a los que el usuario tiene acceso.  
+## <a name="create-an-application-user--associated-with-the-registered-application--in-common-data-service"></a>Crear un usuario de la aplicación asociado con la aplicación registrada en Common Data Service  
+ Cuando su aplicación tiene acceso a los datos de Common Data Service de uno de los suscriptores de su aplicación, necesitará un usuario de la aplicación en la organización de Common Data Service del suscriptor. Como cualquier usuario de Common Data Service, este usuario de la aplicación debe estar asociado al menos a un rol de seguridad que defina los datos a los que el usuario tiene acceso.  
   
  La [entidad SystemUser](reference/entities/systemuser.md) tiene tres nuevos atributos para almacenar estos datos.  
   
@@ -123,10 +121,10 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
 |[ApplicationIdUri](reference/entities/systemuser.md#BKMK_ApplicationIdUri)|**URI de Id. de aplicación**|StringType|El URI usado como identificador lógico único para la aplicación externa. Se puede usar para validar la aplicación|  
 |[AzureActiveDirectoryObjectId](reference/entities/systemuser.md#BKMK_AzureActiveDirectoryObjectId)|**Id. de objeto de Azure AD**|UniqueIdentifierType|Es el Id. de objeto del directorio de la aplicación|  
   
- Este valor de la propiedad `systemuser``AzureActiveDirectoryObjectId` debe ser una referencia al Id. de objeto de Azure Active Directory de la aplicación registrada. Esta referencia se establecerá en CDS para aplicaciones cuando se crea el usuario de la aplicación basándose en el valor de `ApplicationId`.  
+ Este valor de la propiedad `systemuser``AzureActiveDirectoryObjectId` debe ser una referencia al Id. de objeto de Azure Active Directory de la aplicación registrada. Esta referencia se establecerá en Common Data Service cuando se crea el usuario de la aplicación basándose en el valor de `ApplicationId`.  
   
 > [!NOTE]
->  Cuando está desarrollando inicialmente la aplicación con su propio inquilino de CDS para aplicaciones y el inquilino de Azure AD asociado con él, puede crear simplemente el usuario de la aplicación porque la aplicación registrada ya forma parte del inquilino de Azure AD.  
+>  Cuando está desarrollando inicialmente la aplicación con su propio inquilino de Common Data Service y el inquilino de Azure AD asociado con él, puede crear simplemente el usuario de la aplicación porque la aplicación registrada ya forma parte del inquilino de Azure AD.  
 > 
 >  Sin embargo, para crear el usuario de la aplicación en otra organización para probar, o cuando un suscriptor usará su aplicación, primero deben conceder consentimiento para su aplicación, por lo que los pasos del proceso son diferentes. Para obtener más información, consulte [Probar la aplicación mediante un inquilino de Dynamics 365 independiente](#bkmk_TestUsingSeparateTenant).  
   
@@ -134,14 +132,14 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
  
 ### <a name="create-a-security-role-for-the-application-user"></a>Crear un rol de seguridad para el usuario de la aplicación  
 
- En el siguiente paso creará un usuario de la aplicación de CDS para aplicaciones. Los privilegios y derechos de acceso para este usuario serán definidos por un rol de seguridad personalizado que establezca. Antes de crear el usuario de la aplicación, debe crear un rol de seguridad personalizado para poder asociar el usuario con él. Más información: [Creación o edición de roles de seguridad](https://technet.microsoft.com/library/dn531130.aspx)  
+ En el siguiente paso creará un usuario de la aplicación de Common Data Service. Los privilegios y derechos de acceso para este usuario serán definidos por un rol de seguridad personalizado que establezca. Antes de crear el usuario de la aplicación, debe crear un rol de seguridad personalizado para poder asociar el usuario con él. Más información: [Creación o edición de roles de seguridad](https://technet.microsoft.com/library/dn531130.aspx)  
   
 > [!NOTE]
->  El usuario de la aplicación no puede estar asociado con uno de los roles de seguridad de CDS para aplicaciones predeterminados. Debe crear un rol de seguridad personalizado para asociar con el usuario de la aplicación.  
+>  El usuario de la aplicación no puede estar asociado con uno de los roles de seguridad de Common Data Service predeterminados. Debe crear un rol de seguridad personalizado para asociar con el usuario de la aplicación.  
   
 <a name="bkmk_ManuallyCreateUser"></a>   
 
-### <a name="manually-create-a-cds-for-apps-application-user"></a>Cree manualmente un usuario de aplicación de CDS para aplicaciones  
+### <a name="manually-create-a-common-data-service-application-user"></a>Crear manualmente un usuario de aplicaciones de Common Data Service  
 
  El procedimiento para crear este usuario es diferente de crear un usuario con licencia. Lleve a cabo los pasos siguientes:  
   
@@ -171,21 +169,21 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
 <a name="bkmk_TestUsingYourTenant"></a>  
  
-## <a name="test-your-application-using-your-cds-for-apps-tenant"></a>Probar la aplicación con el inquilino de CDS para aplicaciones 
+## <a name="test-your-application-using-your-common-data-service-tenant"></a>Pruebe la aplicación con el inquilino de Common Data Service 
  
- Puesto que la aplicación se ha registrado con el inquilino de Azure AD y el usuario de la aplicación en su organización de desarrollo ya está configurado, puede continuar desarrollando su aplicación con su propio inquilino de CDS para aplicaciones. Pero esto no es una prueba válida de la capacidad multiempresa. Debe probar la aplicación con un inquilino de CDS para aplicaciones distinto.  
+ Puesto que la aplicación se ha registrado con el inquilino de Azure AD y el usuario de la aplicación en su organización de desarrollo ya está configurado, puede continuar desarrollando su aplicación con su propio inquilino de Common Data Service. Pero esto no es una prueba válida de la capacidad multiempresa. Debe probar la aplicación con un inquilino aparte de Common Data Service.  
   
 <a name="bkmk_TestUsingSeparateTenant"></a>   
 
-## <a name="test-your-application-using-a-separate-cds-for-apps-tenant"></a>Probar la aplicación con un inquilino de CDS para aplicaciones distinto  
+## <a name="test-your-application-using-a-separate-common-data-service-tenant"></a>Pruebe la aplicación con el inquilino aparte de Common Data Service  
 
- Antes de probar su aplicación con un inquilino de CDS para aplicaciones aparte, un administrador para el inquilino de Azure AD debe conceder consentimiento para la aplicación. El administrador concede consentimiento navegando a la aplicación con un explorador. La primera vez que tiene acceso a la aplicación, verá un diálogo como éste:  
+ Antes de probar su aplicación con un inquilino aparte de Common Data Service, un administrador para el inquilino de Azure AD debe conceder consentimiento para la aplicación. El administrador concede consentimiento navegando a la aplicación con un explorador. La primera vez que tiene acceso a la aplicación, verá un diálogo como éste:  
   
  ![Conceder consentimiento para acceder a datos de Dynamics 365](media/grant-consent-to-access-crm-data.PNG "Conceder consentimiento para acceder a datos de Dynamics 365")  
   
  Cuando concede consentimiento, su aplicación registrada se agregará a la lista de aplicaciones de Azure AD Enterprise y está disponible para los usuarios del inquilino de Azure AD.  
   
- Solo después de que un administrador haya concedido consentimiento, debe crear el usuario de la aplicación en el inquilino de CDS para aplicaciones del suscriptor. Puede crear manualmente el usuario de la aplicación mediante los pasos que se describen en [Crear manualmente un usuario de la aplicación de Dynamics 365](#bkmk_ManuallyCreateUser).  
+ Solo después de que un administrador haya concedido consentimiento, debe crear el usuario de la aplicación en el inquilino de Common Data Service del suscriptor. Puede crear manualmente el usuario de la aplicación mediante los pasos que se describen en [Crear manualmente un usuario de la aplicación de Dynamics 365](#bkmk_ManuallyCreateUser).  
   
  Para las pruebas iniciales es posible que desee realizar manualmente estos pasos. Cuando esté listo para poner su aplicación o servicio disponible para suscriptores necesitará un procedimiento más eficiente. Esto se cubre en la siguiente sección.  
   
@@ -193,7 +191,7 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
    
 ## <a name="prepare-a-method-to-deploy-the-application-user"></a>Preparar un método para implementar el usuario de la aplicación  
 
- Después de que los suscriptores concedan su consentimiento a la aplicación o servicio necesitará una forma fácil y fiable para que agreguen el usuario de la aplicación y cualquier otro componente requerido a su organización de CDS para aplicaciones.  
+ Después de que los suscriptores concedan su consentimiento a la aplicación o servicio necesitará una forma fácil y fiable para que agreguen el usuario de la aplicación y cualquier otro componente requerido a su organización de Common Data Service.  
   
  Debe incluir un rol de seguridad personalizado que defina qué privilegios requiere su aplicación y después asegurarse de que el usuario de la aplicación está asociado con ese rol de seguridad personalizado. Dado que un rol de seguridad personalizado se puede incluir en una solución, debe preparar una solución administrada que contiene la definición del rol de seguridad personalizado y cualquier otro componente de la solución que requiera su aplicación.  
   
@@ -203,7 +201,7 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
 - [Copia de roles de seguridad](/dynamics365/customer-engagement/admin/copy-security-role)  
 - [Agregar componentes de la solución](/dynamics365/customer-engagement/customize/create-solution.md#add-solution-components)
   
-  Para obtener información sobre la creación de una solución de CDS para aplicaciones, vea los temas siguientes:
+  Para obtener información sobre la creación de una solución de Common Data Service, vea los temas siguientes:
   
 - [Usar soluciones para las personalizaciones](../../maker/common-data-service/use-solutions-for-your-customizations.md)  
 - [Empaquetar y distribuir las extensiones con soluciones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)  
@@ -212,10 +210,9 @@ En este escenario cualquier inquilino de CDS para aplicaciones puede usar potenc
   
   Existen varias formas de conseguirlo, incluida la escritura de su propio programa mediante los servicios web y haciendo que el suscriptor ejecute el programa.  
   
-  El Dynamics 365 Package Deployer es una aplicación que se puede usar para preparar un paquete para automatizar la transferencia de soluciones y datos a otra organización de CDS para aplicaciones. Más información: [Crear paquetes para Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
+  El Dynamics 365 Package Deployer es una aplicación que se puede usar para preparar un paquete para automatizar la transferencia de soluciones y datos a otra organización de Common Data Service. Más información: [Crear paquetes para Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
   
 ### <a name="see-also"></a>Vea también  
- [Tutorial: Autenticación multiempresa entre servidores](/dynamics365/customer-engagement/developer/walkthrough-multi-tenant-server-server-authentication)   
  [Usar autenticación entre servidores de una sola empresa](use-single-tenant-server-server-authentication.md)   
  [Crear aplicaciones web mediante autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md)   
  [Conectar con Dynamics 365](/dynamics365/customer-engagement/developer/connect-customer-engagement)

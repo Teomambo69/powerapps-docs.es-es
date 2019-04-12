@@ -1,5 +1,5 @@
 ---
-title: Entidades de importación de datos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de importación de datos (Common Data Service) | Microsoft Docs
 description: 'Elabora una lista de las entidades de importación de datos utilizadas para crear asignaciones de datos, configurar y ejecutar importaciones de datos, y registrar la información de errores.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="data-import-entities"></a>Entidades de importación de datos
 
-Las entidades de importación de datos de Common Data Service para aplicaciones están configuradas para crear asignaciones de datos, configurar y ejecutar importaciones de datos, y registrar la información con errores.  
+Las entidades de importación de datos de Common Data Service están configuradas para crear asignaciones de datos, configurar y ejecutar importaciones de datos, y registrar la información con errores.  
 
  En la siguiente tabla se muestran las entidades que se usan para configurar, ejecutar y registrar los errores de las operaciones de importación.  
 
@@ -33,10 +33,10 @@ Las entidades de importación de datos de Common Data Service para aplicaciones 
 |                    Nombre de entidad (nombre)                     |                                                                                                                      Descripción                                                                                                                       |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                       importmap (asignación de datos)                        |                                                                                                           Asignación de datos que se usa para importar.                                                                                                            |
-|                  columnmapping (asignación de columna)                   |                                                           Asignación entre una columna en el archivo de origen y un atributo de destino en CDS for Apps.                                                           |
+|                  columnmapping (asignación de columna)                   |                                                           Asignación entre una columna en el archivo de origen y un atributo de destino en Common Data Service.                                                           |
 |                  lookupmapping (asignación de búsqueda)                   |       Asignación entre una columna en el archivo de origen, o el resultado de una transformación compleja y un atributo de destino de tipo <xref:Microsoft.Xrm.Sdk.EntityReference>. Se usa junto con la asignación de columnas o la asignación compleja de transformación.        |
-|                   ownermapping (asignación de propietario)                    |                                                             Asignación entre un usuario especificado en el archivo de origen y un usuario en CDS for Apps.                                                             |
-|                picklistmapping (asignación de lista desplegable)                 | Asignación entre una columna en el archivo de origen y un atributo de destino de <xref:Microsoft.Xrm.Sdk.OptionSetValue>, booleano, estado o tipo de estado de CDS for Apps. Se usa junto con la asignación de columnas. |
+|                   ownermapping (asignación de propietario)                    |                                                             Asignación entre un usuario especificado en el archivo de origen y un usuario en Common Data Service.                                                             |
+|                picklistmapping (asignación de lista desplegable)                 | Asignación entre una columna en el archivo de origen y un atributo de destino de <xref:Microsoft.Xrm.Sdk.OptionSetValue>, booleano, estado o tipo de estado de Common Data Service. Se usa junto con la asignación de columnas. |
 |          transformationmapping (asignación de transformación)           |                                                                                                            Asignación compleja de transformación.                                                                                                             |
 | transformationparametermapping (asignación de parámetros de transformación) |                                                                                           Asignación de parámetros que se usa en la asignación compleja de transformación.                                                                                            |
 
@@ -46,13 +46,15 @@ Las entidades de importación de datos de Common Data Service para aplicaciones 
  [Entidad ImportFile](reference/entities/importfile.md)   
  [Entidad ImportLog](reference/entities/importlog.md)   
  [Entidad ImportMap](reference/entities/importmap.md)   
- <!-- jdaly These links will have content when we re-gen docs after bug 689487 is checked in. START --> [Entidad ColumnMapping](reference/entities/columnmapping.md)   
+ <!-- jdaly These links will have content when we re-gen docs after bug 689487 is checked in. START -->
+ [Entidad ColumnMapping](reference/entities/columnmapping.md)   
  [Entidad LookupMapping](reference/entities/lookupmapping.md)   
  [Entidad OwnerMapping](reference/entities/ownermapping.md)   
  [Entidad PicklistMapping](reference/entities/picklistmapping.md)   
  [Entidad TransformationMapping](reference/entities/transformationmapping.md)    
  [Entidad TransformationParameterMapping](reference/entities/transformationparametermapping.md)   
- <!-- jdaly These links will have content  when we re-gen docs after bug 689487 is checked in. END --> [Ejemplo: Exportar e importar una asignación de datos](/dynamics365/customer-engagement/developer/sample-export-import-data-map)   
+ <!-- jdaly These links will have content  when we re-gen docs after bug 689487 is checked in. END -->
+ [Ejemplo: exportar e importar una asignación de datos](/dynamics365/customer-engagement/developer/sample-export-import-data-map)   
  [Crear asignaciones de datos para importar](create-data-maps-for-import.md)<br />
  [Agregar asignaciones de transformación para la importación](add-transformation-mappings-import.md)<br />
  [Configurar la importación de datos](configure-data-import.md)<br />

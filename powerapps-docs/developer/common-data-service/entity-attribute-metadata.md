@@ -1,6 +1,6 @@
 ---
 title: Metadatos de atributo | Microsoft Docs
-description: Conozca el uso de metadatos de atributo en Common Data Service para aplicaciones.
+description: Conozca el uso de metadatos de atributo en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -24,7 +24,7 @@ search.app:
 
 <!-- This topic was not migrated it was written for PowerApps 
 Was Mike Carter
-Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entity-attributes
+Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
 
 -->
 # <a name="attribute-metadata"></a>Metadatos del atributo
@@ -127,7 +127,7 @@ Esta propiedad puede tener los valores siguientes establecidos:
 |`ApplicationRequired`|2|**Requerido por la empresa**|La empresa requiere que el atributo tenga un valor.|
 |`Recommended`|3|**Recomendado por la empresa**|Se recomienda que el atributo tenga un valor.|
 
-Common Data Service para aplicaciones solo aplica la opción `SystemRequired` para los atributos creados por el sistema. Los atributos personalizados no se pueden configurar para que utilicen la opción `SystemRequired`. 
+Common Data Service solo aplica la opción `SystemRequired` para los atributos creados por el sistema. Los atributos personalizados no se pueden configurar para que utilicen la opción `SystemRequired`. 
 
 Las aplicaciones basadas en modelos aplicarán la opción `ApplicationRequired` y utilizarán una presentación diferente para la opción `Recommended`. Los autores de clientes personalizados pueden usar esta información para requerir una validación similar u opciones de presentación.
 
@@ -141,8 +141,8 @@ Más información: [Propiedades administradas](introduction-solutions.md#managed
 Los atributos calculados y consolidados liberan al usuario de tener que realizar cálculos manualmente y le permiten centrarse en su trabajo. Los administradores del sistema pueden definir un campo para que contenga el valor de muchos cálculos comunes sin necesidad de trabajar con un desarrollador. Los programadores también pueden aprovechar las capacidades de la plataforma para realizar estos cálculos en vez de en su propio código.
 
 Más información: 
-- [Guía de personalización Common Data Service para aplicaciones: definir campos consolidados que agreguen valores](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [Guía de personalización Common Data Service para aplicaciones: atributos calculados y consolidados](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [Guía de personalización Common Data Service: definir campos consolidados que agreguen valores](/dynamics365/customer-engagement/customize/define-rollup-fields)
+- [Guía de personalización Common Data Service: atributos calculados y consolidados](/dynamics365/customer-engagement/customize/define-calculated-fields)
 - [Atributos calculados y consolidados](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
 ## <a name="attribute-format"></a>Formato de atributos
@@ -222,7 +222,7 @@ Con el servicio de organización puede usar los siguientes mensajes para recuper
 
 Más información: 
 - [Ejemplo: volcar metadatos de lista desplegable de atributo a un archivo](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Guía para desarrolladores de Common Data Service para aplicaciones: personalizar conjuntos de opciones global](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Guía para desarrolladores de Common Data Service: personalizar conjuntos de opciones global](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Usar la API web para recuperar opciones
 
@@ -243,9 +243,9 @@ Al crear un nuevo registro de entidades en el contexto del registro de entidades
 Para los programadores que crean clientes personalizados, se puede conseguir el mismo comportamiento si se utiliza el mensaje `InitializeFrom` (servicio de la organización [Clase InitializeFromRequest](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) o la API web [función InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom)) para recopilar los datos de la entidad con los valores predeterminados configurados establecidos.
 
 Más información 
-- [Guía de personalización de Common Data Service para aplicaciones: asignar campos de entidad](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Guía para desarrolladores de Common Data Service para aplicaciones: personalizar asignaciones de entidades y atributos](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Guía de personalización de Common Data Service: asignar campos de entidad](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Guía para desarrolladores de Common Data Service: personalizar asignaciones de entidades y atributos](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades de Common Data Service para aplicaciones](entities.md)
+[Entidades Common Data Service](entities.md)

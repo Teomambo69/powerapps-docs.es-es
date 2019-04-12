@@ -1,10 +1,10 @@
 ---
-title: Crear y actualizar relaciones de entidades utilizando la API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: Aprenda a crear y actualizar entidades. Common Data Service para aplicaciones usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
+title: Crear y actualizar relaciones de entidades utilizando la API web (Common Data Service) | Microsoft Docs
+description: Aprenda a crear y actualizar entidades. Common Data Service usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -241,7 +241,7 @@ Para eliminar una relación mediante web API, use el método HTTP DELETE con el 
 
 <!-- TODO:
 [Customize entity relationship metadata](../customize-entity-relationship-metadata.md)<br /> -->
-[Usar la API web con metadatos de Common Data Service para aplicaciones](use-web-api-metadata.md)<br />
+[Usar la API web con metadatos de Common Data Service](use-web-api-metadata.md)<br />
 [Consulta metadatos utilizando la API web](query-metadata-web-api.md)<br />
 [Recuperar metadatos por nombre o identificador de metadatos](retrieve-metadata-name-metadataid.md)<br />
 [Entidades de modelo y atributos mediante la API web](create-update-entity-definitions-using-web-api.md)

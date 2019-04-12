@@ -1,13 +1,13 @@
 ---
 title: Abrir datos de entidad en Excel | Microsoft Docs
 description: Abrir datos de entidad en Excel para la visualización y edición interactivas.
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -78,6 +78,6 @@ Si se produce un problema que no se describe aquí, póngase en contacto con nos
 ## <a name="next-steps"></a>Pasos siguientes
 * [Administrar campos de una entidad](data-platform-manage-fields.md)
 * [Definir relaciones entre entidades](data-platform-entity-lookup.md)
-* [Generar una aplicación usando Common Data Service for Apps](../canvas-apps/data-platform-create-app.md)
-* [Crear una aplicación desde cero usando Common Data Service for Apps](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generar una aplicación usando Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Crear una aplicación desde cero usando Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

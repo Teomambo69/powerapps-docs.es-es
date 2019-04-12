@@ -4,7 +4,7 @@ description: Obtenga información sobre los diferentes tipos de lógica de negoc
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -55,7 +55,7 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
   
 -   Flujos de proceso de negocio.  Asegúrese de que los usuarios especifiquen datos de manera coherente y siguen los mismos pasos cada vez que trabajan con una aplicación mediante la creación de un flujo de proceso de negocio. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview)
 
--   Flujos de trabajo y acciones. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de CDS for Apps, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
+-   Flujos de trabajo y acciones. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de Common Data Service, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
   
 ## <a name="next-step"></a>Paso siguiente
 
@@ -63,4 +63,4 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
 
 ### <a name="see-also"></a>Vea también
 
-[Aplicar lógica de negocios con Common Data Service para aplicaciones](../common-data-service/cds-processes.md)
+[Aplicar lógica de negocios con Common Data Service](../common-data-service/cds-processes.md)

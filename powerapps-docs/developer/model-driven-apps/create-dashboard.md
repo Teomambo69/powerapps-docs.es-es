@@ -1,6 +1,6 @@
 ---
 title: Crear un panel (aplicaciones basadas en modelos) | Microsoft Docs
-description: Los paneles propiedad de la organización se pueden crear usando los servicios web (SDK) de Common Data Service para aplicaciones o personalizando el formulario de entidad de Common Data Service para aplicaciones editando el archivo customizations.xml.
+description: Los paneles propiedad de la organización se pueden crear usando los servicios web (SDK) de Common Data Service o personalizando el formulario de entidad de Common Data Service editando el archivo customizations.xml.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="create-a-dashboard"></a>Crear un panel
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-Los paneles propiedad de la organización se pueden crear usando Common Data Service para aplicaciones o personalizando el formulario de entidad de Common Data Service para aplicaciones editando el archivo customizations.xml.  
+Los paneles propiedad de la organización se pueden crear usando Common Data Service o personalizando el formulario de entidad de Common Data Service editando el archivo customizations.xml.  
   
 > [!NOTE]
 >  Algunos paneles que están creados mediante el SDK o a través de la personalización del formulario de entidad no son compatibles con el diseñador de paneles en la aplicación web. Para obtener más información, consulte [Limitaciones: Creación de paneles mediante el SDK o a través de la personalización del formulario](#Limitations) más adelante en este tema.  
@@ -152,7 +152,7 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 #### <a name="create-a-dashboard-by-customizing-an-entity-form"></a>Cree un panel al personalizar el formulario de entidad  
   
-1. Inicie sesión en Common Data Service para aplicaciones.  
+1. Inicie sesión en Common Data Service.  
   
 2. Exporte una solución. Para obtener información sobre cómo hacerlo, vea [Exportar, preparar para editar e importar la cinta de opciones](export-prepare-edit-import-ribbon.md).  
   
@@ -179,13 +179,13 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 6. Guarde el archivo customizations.xml.  
   
-7. Importe el archivo .zip como solución en CDS for Apps. Más información: [Exportar, preparar para editar e importar la cinta de opciones](export-prepare-edit-import-ribbon.md).  
+7. Importe el archivo .zip como una solución en Common Data Service. Más información: [Exportar, preparar para editar e importar la cinta de opciones](export-prepare-edit-import-ribbon.md).  
   
 <a name="Limitations"></a>   
 
 ## <a name="limitations-creating-dashboards-by-using-the-sdk-or-through-form-customization"></a>Limitaciones: Creación de paneles mediante el SDK o a través de la personalización del formulario  
 
- Algunos paneles que están creados o modificados mediante CDS for Apps o a través de la personalización del formulario de entidad no son compatibles con el diseñador de paneles en la aplicación web. Evite lo siguiente mientras crea o edita un panel mediante el SDK o a través de la personalización del formulario.  
+ Algunos paneles que están creados o modificados mediante el Common Data Service o a través de la personalización del formulario de entidad no son compatibles con el diseñador de paneles en la aplicación web. Evite lo siguiente mientras crea o edita un panel mediante el SDK o a través de la personalización del formulario.  
   
 ### <a name="general"></a>General  
   
@@ -212,4 +212,5 @@ _dashboardId = _serviceProxy.Create(dashboard);
  [Uso de FormXML para paneles](understand-dashboards-dashboard-components-formxml.md)   
  [Acciones en los paneles](actions-dashboards.md)   
  [Paneles de ejemplo](sample-dashboards.md)   
- [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked--> [Personalizar formularios de entidad](customize-entity-forms.md)
+ [Ejemplo: crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->
+ [Personalizar formularios de entidad](customize-entity-forms.md)

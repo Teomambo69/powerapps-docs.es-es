@@ -3,7 +3,7 @@ title: Visualización o descarga de recursos para desarrolladores | MicrosoftDoc
 description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio
 keywords: ''
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,9 +54,9 @@ Esta sección proporciona los vínculos para que los desarrolladores busquen rec
 <!-- TODO update 512122 to go to https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget -->
 
 
-## <a name="connect-your-apps-to-this-instance-of-common-data-service-for-apps"></a>Conectar sus aplicaciones a esta instancia de Common Data Service for Apps
+## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Conectar sus aplicaciones a esta instancia de Common Data Service
 
-En esta sección se proporciona la información necesaria para conectarse a su instancia de Common Data Service for Apps.
+En esta sección se proporciona la información necesaria para conectarse a su instancia de Common Data Service.
 
 ### <a name="instance-web-api"></a>API web de la instancia
 
@@ -75,9 +75,9 @@ Esta información describe de forma única la instancia. Hay un **Id.** de GUID 
 Esta información es necesaria cuando se usan extensiones de Azure con su instancia.
 Más información: [Documentación para desarrolladores: Extensiones de Azure para Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/azure-extensions)
 
-## <a name="connect-your-apps-to-the-common-data-service-for-apps-discovery-service"></a>Conectar sus aplicaciones al servicio de detección de Common Data Service for Apps
+## <a name="connect-your-apps-to-the-common-data-service-discovery-service"></a>Conectar sus aplicaciones al servicio de detección de Common Data Service
 
-Puesto que los usuarios pueden acceder a varios entornos de CDS for Apps, los servicios de detección permiten recuperar los entornos disponibles a los que puede acceder un usuario en función de sus credenciales.
+Puesto que los usuarios pueden acceder a varios entornos de Common Data Service, los servicios de detección permiten recuperar los entornos disponibles a los que puede acceder un usuario en función de sus credenciales.
 
 ### <a name="discovery-web-api"></a>API web de detección
 

@@ -1,5 +1,5 @@
 ---
-title: Usar seguimiento de cambios para sincronizar datos con sistemas externos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar seguimiento de cambios para sincronizar datos con sistemas externos (Common Data Service) | Microsoft Docs
 description: La característica de seguimiento de Dynamics 365 Customer Engagement proporciona una forma de mantener los datos sincronizados con alto rendimiento detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Uso del seguimiento de cambios para sincronizar los datos con sistemas externos
 
-La característica de seguimiento de Common Data Service para aplicaciones proporciona una forma de mantener los datos sincronizados con alto rendimiento detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez. Anteriormente, sin esta nueva característica, era difícil crear un mecanismo confiable y eficaz para determinar los registros que se habían cambiado en CDS para aplicaciones. Este tema analiza cómo recuperar los cambios de una entidad.  
+La característica de seguimiento de Common Data Service proporciona una forma de mantener los datos sincronizados con alto rendimiento detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez. Anteriormente, sin esta nueva característica, era difícil crear un mecanismo confiable y eficaz para determinar los registros que se habían cambiado en Common Data Service. Este tema analiza cómo recuperar los cambios de una entidad.  
   
 <a name="BKMK_enable"></a>   
 ## <a name="enable-change-tracking-for-an-entity"></a>Habilitar el seguimiento de cambios de una entidad  
@@ -122,7 +122,7 @@ Las opciones de consulta del sistema `$filter`, `$orderby` y `$top` no se admite
   
 - Si un cliente tiene un conjunto de cambios para una entidad, supongamos la versión 1, un registro se crea y elimina antes de la siguiente consulta cambios, éste obtendrá el elemento eliminado incluso aunque no tuviera el elemento para empezar.  
   
-- Los registros se recuperan en el orden determinado por la lógica del lado del servidor. Normalmente, el usuario final obtendrá siempre todos los registros nuevos o actualizados primero (clasificados por número de versión) seguidos de los registros eliminados.  Si hay 3000 registros creados o actualizados y 2000 registros eliminados, CDS para aplicaciones devuelve una colección de 5000 registros, que tienen las primeras 3000 entradas formadas por registros nuevos o actualizados y las 2000 últimas entradas de registros eliminados.  
+- Los registros se recuperan en el orden determinado por la lógica del lado del servidor. Normalmente, el usuario final obtendrá siempre todos los registros nuevos o actualizados primero (clasificados por número de versión) seguidos de los registros eliminados.  Si hay 3000 registros creados o actualizados y 2000 registros eliminados, Common Data Service devuelve una colección de 5000 registros, que tienen las primeras 3000 entradas formadas por registros nuevos o actualizados y las 2000 últimas entradas de registros eliminados.  
   
 - Si la colección de registros nuevos o actualizados es superior a 5000, el usuario puede desplazarse entre las páginas de la colección.  
   

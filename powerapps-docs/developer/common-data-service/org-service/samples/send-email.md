@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Enviar un correo electrónico (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Enviar un correo electrónico (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo enviar un correo electrónico.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-send-an-email"></a>Ejemplo: enviar un mensaje de correo electrónico
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-email -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-email -->
 
-Este ejemplo muestra cómo enviar un mensaje [SendEmailRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.sendemailrequest?view=dynamics-general-ce-9) por correo electrónico. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SenEmail).
+Este ejemplo muestra cómo enviar un mensaje [SendEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.sendemailrequest?view=dynamics-general-ce-9) por correo electrónico. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SenEmail).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

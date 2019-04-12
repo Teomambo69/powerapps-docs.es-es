@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejemplos de consulta Linq (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service-for-apps"></a>Ejemplos de la consulta LINQ mediante OrganizationServiceContext con Common Data Service para aplicaciones
+# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service"></a>Ejemplos de la consulta LINQ mediante OrganizationServiceContext con Common Data Service
 
 Este tema contiene muchos ejemplos de código de consultas LINQ.  
   

@@ -1,5 +1,5 @@
 ---
-title: Comprender cómo se combinan las soluciones administradas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Comprender cómo se combinan las soluciones administradas (Common Data Service) | Microsoft Docs
 description: 'Para evitar que múltiples soluciones instaladas interfieran entre sí, siga las prácticas recomendadas mientras construye una solución.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,12 +19,12 @@ search.app:
 
 Al preparar la solución administrada para la instalación, recuerde que es posible que una organización tenga varias soluciones instaladas o que admita la instalación de otras soluciones en el futuro. Cree una solución que siga las prácticas recomendadas de manera que su solución no interfiera con otras soluciones.  
   
- Los procesos que utiliza Common Data Service para aplicaciones para combinar las personalizaciones hacen hincapié en mantener la funcionalidad de la solución. Si bien se hacen todos los esfuerzos necesarios para mantener la presentación, algunas incompatibilidades entre las personalizaciones pueden requerir que la resolución computarizada modifique algunos detalles de la presentación a favor de mantener la funcionalidad de la personalización.  
+ Los procesos que utiliza Common Data Service para combinar las personalizaciones hacen hincapié en mantener la funcionalidad de la solución. Si bien se hacen todos los esfuerzos necesarios para mantener la presentación, algunas incompatibilidades entre las personalizaciones pueden requerir que la resolución computarizada modifique algunos detalles de la presentación a favor de mantener la funcionalidad de la personalización.  
   
 <a name="BKMK_MergingFormCustomizations"></a>   
 
 ## <a name="merge-form-customizations"></a>Combinar personalizaciones de formularios  
- Las únicas personalizaciones de formularios que deben combinarse son aquellas que se realizan en cualquiera de los formularios de entidad existentes en la organización. Normalmente, esto significa que las personalizaciones de formularios solo se deben combinar cuando la solución personaliza los formularios que se incluyeron para las entidades creadas cuando se instaló CDS para aplicaciones. Una forma de evitar la combinación de formularios consiste en proporcionar formularios nuevos para cualquier entidad de CDS para aplicaciones. Los formularios para entidades personalizadas no requerirán combinación a menos que esté creando una solución que actualice o modifique una solución administrada existente que creó las entidades personalizadas y los formularios respectivos.  
+ Las únicas personalizaciones de formularios que deben combinarse son aquellas que se realizan en cualquiera de los formularios de entidad existentes en la organización. Normalmente, esto significa que las personalizaciones de formularios solo se deben combinar cuando la solución personaliza los formularios que se incluyeron para las entidades creadas cuando se instaló Common Data Service. Una forma de evitar la combinación de formularios consiste en proporcionar formularios nuevos para cualquier entidad de Common Data Service. Los formularios para entidades personalizadas no requerirán combinación a menos que esté creando una solución que actualice o modifique una solución administrada existente que creó las entidades personalizadas y los formularios respectivos.  
   
  Cuando una solución se empaqueta como una solución administrada, las definiciones de formulario almacenadas en FormXML se comparan con el FormXML original y solo se incluyen las diferencias en la solución administrada. Cuando la solución administrada se instala en una organización nueva, las diferencias de personalización del formulario se combinan con el FormXML para que el formulario existente cree una nueva definición del formulario. Esta nueva definición del formulario es lo que ve el usuario o y lo que puede modificar un personalizador del sistema. Cuando se desinstala la solución administrada, solo se quitan los elementos del formulario que se encuentran en la solución administrada.  
   

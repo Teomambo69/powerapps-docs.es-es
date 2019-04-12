@@ -1,5 +1,5 @@
 ---
-title: Personalizar los metadatos de entidades (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Personalizar los metadatos de entidades (Common Data Service) | MicrosoftDocs
 description: 'Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad.'
 ms.custom: ''
 ms.date: 10/31/2018

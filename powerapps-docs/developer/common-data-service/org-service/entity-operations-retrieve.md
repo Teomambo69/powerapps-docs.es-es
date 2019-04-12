@@ -1,5 +1,5 @@
 ---
-title: Recuperación de entidades con el servicio de organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Recuperación de entidades con el servicio de organización (Common Data Service) | Microsoft Docs
 description: Describe las opciones disponibles cuando se recupera un registro mediante programación
 ms.custom: ''
 ms.date: 10/31/2018

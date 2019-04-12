@@ -1,5 +1,5 @@
 ---
-title: Ejecutar mensajes en una sola transacción de la base de datos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejecutar mensajes en una sola transacción de la base de datos (Common Data Service) | Microsoft Docs
 description: Puede ejecutar dos o varias solicitudes de servicio de la organización en una sola transacción de la base de datos mediante el uso de la solicitud de mensajes ExecuteTransactionRequest.
 ms.custom: ''
 ms.date: 10/31/2018

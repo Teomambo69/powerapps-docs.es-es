@@ -1,5 +1,5 @@
 ---
-title: Consultas de entidades (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de cola (Common Data Service) | Microsoft Docs
 description: 'Las colas en PowerApps son fundamentales para organizar, asignar prioridades y supervisar el progreso de su trabajo.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -72,7 +72,7 @@ La siguiente información pertenece a las colas:
 ## <a name="enable-entities-for-queues"></a>Habilitar entidades para las colas  
  Para habilitar una entidad personalizable, (`EntityMetadata.IsCustomizable = true`), para las colas, use el mensaje <xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest> para establecer el atributo <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsValidForQueue> en `true`. La entidad de cola y la entidad de elemento de cola son entidades personalizables, pero no se pueden habilitar para la colas.  
   
- La siguiente lista contiene las entidades cola habilitadas predeterminadas en Common Data Service (CDS) para las aplicaciones:  
+ La siguiente lista contiene las entidades cola habilitadas predeterminadas en Common Data Service:  
   
 -   Cita  
   

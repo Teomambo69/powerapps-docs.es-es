@@ -1,6 +1,6 @@
 ---
 title: Dependencias de recursos web (aplicaciones basadas en modelos) | Microsoft Docs
-description: Obtenga más información sobre la definición de dependencias entre recursos web en CDS para aplicaciones
+description: Obtenga más información sobre la definición de dependencias entre recursos web en Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="web-resource-dependencies"></a>Dependencias de recursos web
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/web-resource-dependencies -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resource-dependencies -->
 
 Puede definir dependencias entre otros recursos web. La finalidad principal de esta característica es permitir asociación de recursos web de cadena (RESX) con los recursos web de JavaScript que se utilizan. También es la forma en que se pueden configurar los recursos web requeridos por los recursos web HTML para usarlos sin conexión para que también estén disponible sin conexión. 
 
@@ -42,7 +42,8 @@ Sin embargo, las dependencias de recursos web no se limitan a recursos web RESX 
 <a name="attribute-dependencies"></a>
 
 # <a name="attribute-dependencies"></a>Dependencias de atributos
-<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference --> A partir de aplicaciones basadas en modelos, si los recursos web JavaScript dependen de un valor de atributo de la entidad que no desea mostrar en el formulario, puede establecer el atributo como una dependencia para los recursos web de JavaScript. Esto significa que el atributo estará disponible en el conjunto de atributos de API del cliente para que pueda obtener o establecer el valor en el código. Cuando se agrega una dependencia de este modo, el conjunto de controles de atributo estará vacía porque no habrá ningún control en el formulario.
+<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
+ A partir de aplicaciones basadas en modelos, si los recursos web JavaScript dependen de un valor de atributo de la entidad que no desea mostrar en el formulario, puede establecer el atributo como una dependencia para los recursos web de JavaScript. Esto significa que el atributo estará disponible en el conjunto de atributos de API del cliente para que pueda obtener o establecer el valor en el código. Cuando se agrega una dependencia de este modo, el conjunto de controles de atributo estará vacía porque no habrá ningún control en el formulario.
 
 Antes de esta característica se debe agregar manualmente el atributo al formulario y, después, configurar el control para ocultar. Ahora puede establecer esta dependencia más directamente y eliminar la posibilidad de que alguien quite el campo oculto del formulario. 
 

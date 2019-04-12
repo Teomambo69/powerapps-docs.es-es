@@ -1,6 +1,6 @@
 ---
-title: Personalizaciones compatibles para Common Data Service para aplicaciones (Common Data Service para aplicaciones) | Microsoft Docs
-description: Lea cómo puede personalizar Common Data Service para aplicaciones mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en documentos.
+title: Personalizaciones compatibles para Common Data Service (Common Data Service) | Microsoft Docs
+description: Lea cómo puede personalizar Common Data Service mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en documentos.
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -16,27 +16,27 @@ search.app:
   - D365CE
 ---
 
-<!-- This is the portion of the old topic that applies to CDS
+<!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->
 
 
-# <a name="supported-customizations-for-common-data-service-for-apps"></a>Personalizaciones compatibles para Common Data Service para aplicaciones
+# <a name="supported-customizations-for-common-data-service"></a>Personalizaciones compatibles para Common Data Service
 
-Puede personalizar Common Data Service para aplicaciones mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en la documentación oficial. Estas personalizaciones están admitidas y se pueden actualizar.
+Puede personalizar Common Data Service mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en la documentación oficial. Estas personalizaciones están admitidas y se pueden actualizar.
 
-Las personalizaciones realizadas con otros métodos que no sean los que aquí se describen no están admitidas y podrían causar problemas durante la instalación de actualizaciones y mejoras de CDS para aplicaciones. Consulte [Personalizaciones no admitidas](#unsupported-customizations) para obtener más información.
+Las personalizaciones realizadas con otros métodos que no sean los que aquí se describen no están admitidas y podrían causar problemas durante la instalación de actualizaciones y mejoras en Common Data Service. Consulte [Personalizaciones no admitidas](#unsupported-customizations) para obtener más información.
 
 Los temas cubiertos en los artículos técnicos publicados en sitios de Microsoft como docs.microsoft.com, msdn.microsoft.com o technet.microsoft.com, son compatibles pero quizá no se actualicen.
 
 
 ## <a name="customizations-using-powerapps-portal"></a>Personalizaciones con el portal PowerApps
 
-Hay una variedad de herramientas que se incluyen con CDS para aplicaciones que puede utilizar para personalizarlo. Las personalizaciones realizadas con las herramientas y la aplicación web del portal PowerApps son completamente compatibles y se pueden actualizar por completo.
+Hay una variedad de herramientas que se incluyen con Common Data Service que puede utilizar para personalizarlo. Las personalizaciones realizadas con las herramientas y la aplicación web del portal PowerApps son completamente compatibles y se pueden actualizar por completo.
 
 Se pueden usar los siguientes métodos de personalización para generar personalizaciones completamente compatibles:
 
-- Personalización en el portal PowerApps o la solución del explorador. Para obtener más información, consulte [Qué es Common Data Service para aplicaciones](../../maker/common-data-service/data-platform-intro.md)
+- Personalización en el portal PowerApps o la solución del explorador. Para más información, vea [Qué es Common Data Service](../../maker/common-data-service/data-platform-intro.md)
 
 - Configuración en la aplicación web. Para obtener más información, vea [Administrar PowerApps](../../administrator/admin-guide.md).
 
@@ -45,14 +45,14 @@ Se pueden usar los siguientes métodos de personalización para generar personal
 > [!NOTE]
 > Completamente compatible significa que el soporte técnico para programadores puede proporcionar ayuda para las personalizaciones y que el soporte técnico para aplicaciones puede ayudar a los clientes a ejecutar dichas modificaciones.
 
-Para obtener más información sobre el uso de las herramientas de personalización en la aplicación web, consulte [Qué es Common Data Service para aplicaciones](../../maker/common-data-service/data-platform-intro.md).
+Para obtener más información sobre el uso de las herramientas de personalización en la aplicación web, consulte [Qué es Common Data Service](../../maker/common-data-service/data-platform-intro.md).
 
 
 ## <a name="customizations-applied-using-code"></a>Personalizaciones aplicadas con código
 
-La documentación de este sitio para desarrolladores, artículos técnicos y código de ejemplo publicados en este sitio, y la información publicada por el equipo de soporte técnico para programadores de CDS para aplicaciones se incluyen en el área de personalización aplicada utilizando código. Las acciones y niveles específicos de compatibilidad y capacidad de actualización se describen más adelante en este tema.
+La documentación de este sitio para desarrolladores, artículos técnicos y código de ejemplo publicados en este sitio, y la información publicada por el equipo de soporte técnico para programadores de Common Data Service se incluyen en el área de personalización aplicada utilizando código. Las acciones y niveles específicos de compatibilidad y capacidad de actualización se describen más adelante en este tema.
 
-### <a name="cds-for-apps-web-services"></a>Servicios web de CDS para aplicaciones
+### <a name="common-data-service-web-services"></a>Servicios API web de Common Data Service
 
 El uso de los servicios web es completamente compatible. Esto incluye: API web, servicio de organización, servicio de detección y servicio de datos de la organización. Nos esforzamos por mantener las API compatibles con versiones anteriores, pero nos reservamos el derecho de cambiar las API para las características adicionales. Los atributos de entidad también pueden cambiar en versiones futuras.
 
@@ -88,22 +88,22 @@ La capacidad para crear las actividades de flujo de trabajo personalizadas (ensa
 
 A continuación se describen las consideraciones sobre compatibilidad del código personalizado escrito con Microsoft .NET Framework 4.6.2.
 
-- Cualquier cliente de servicio web creado con Microsoft .NET Framework 4.6.2 o posterior que llama a los servicios web es completamente compatible en CDS para aplicaciones.
+- Cualquier cliente de servicio web creado con Microsoft .NET Framework 4.6.2 o posterior que llama a los servicios web es completamente compatible en Common Data Service.
 
 > [!IMPORTANT]
 > Debe crear cualquier aplicación de cliente personalizada usando Microsoft .NET Framework 4.6.2 o posterior. Solo podrán conectar las aplicaciones que utilizan Seguridad de capa de transporte (TLS) 1.2 o superior. TLS 1.2 no es el protocolo predeterminado usado por .NET Framework 4.5.2, pero está en .NET Framework 4.6.2.
 > 
 > Si los clientes diseñados para versiones anteriores de Dynamics 365 Customer Engagement están diseñados para conectarse con cualquier versión o tipo de implementación puede prepararse volviendo a compilar la aplicación para usar .NET Framework 4.6.2. Más información: [Entrada de blog: Próximas actualizaciones de seguridad de conexión de Dynamics 365 Customer Engagement](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 
-- Se admiten todos los ensamblados .NET creados con Microsoft .NET Framework 4.6.2 para usar en CDS para aplicaciones como ensamblado de complemento o como actividad de flujo de trabajo personalizada.
+- Se admiten todos los ensamblados .NET creados con Microsoft .NET Framework 4.6.2 para usar en Common Data Service como ensamblado de complemento o como actividad de flujo de trabajo personalizada.
 
 ## <a name="unsupported-customizations"></a>Personalizaciones no admitidas
 
-Las modificaciones en CDS para aplicaciones que se realizan sin usar los métodos descritos en esta documentación o las herramientas de CDS para aplicaciones no se admiten ni se mantienen durante la instalación de actualizaciones o mejoras de CDS para aplicaciones. No se admite nada que no esté reflejado en esta documentación y en los documentos relacionados. Además, las modificaciones no admitidas podrían provocar problemas cuando se actualice a través de la instalación de revisiones, los Service Pack o mejoras de CDS para aplicaciones. 
+Las modificaciones en Common Data Service basadas en modelos que se realizan sin usar los métodos descritos en esta documentación o las herramientas del Common Data Service no se admiten ni se mantienen durante la instalación de actualizaciones o mejoras de Common Data Service. No se admite nada que no esté reflejado en esta documentación y en los documentos relacionados. Además, las modificaciones no admitidas podrían provocar problemas cuando se actualice a través de la instalación de revisiones, los Service Pack o mejoras de Common Data Service. 
 
 La siguiente es una lista de los tipos de acciones no admitidas por los que recibimos preguntas frecuentes:
 
-- Hacer referencia a cualquier biblioteca de vínculos dinámicos (DLL) de CDS para aplicaciones que no sean las siguientes:
+- Hacer referencia a cualquier biblioteca de vínculos dinámicos (DLL) de Common Data Service que no sean las siguientes:
 
     - Microsoft.Crm.Outlook.Sdk.dll
     - Microsoft.Crm.Sdk.Proxy.dll
@@ -120,7 +120,7 @@ La siguiente es una lista de los tipos de acciones no admitidas por los que reci
 
 - Los ensamblados de Workflow y de complemento deben contener toda la lógica necesaria dentro del dll respectivo. Los complementos pueden hacer referencia a algunos ensamblados .Net principales. Sin embargo, no se admiten las dependencias de ensamblados .Net que interactúen con las APIs de Windows de bajo nivel, como la interfaz de diseño gráfico. Anteriormente, Dynamics 365 permitía que los ensamblados hicieran referencia a estas interfaces, pero para cumplir nuestros estándares de seguridad, son necesarios cambios en este funcionamiento.
 
-- No se admite la creación de un ensamblado de complementos para un ensamblado de CDS para aplicaciones estándar (Microsoft.Crm.*.dll) ni realizar una actualización o eliminar un `pluginassembly` creado en una plataforma.
+- No se admite la creación de un ensamblado de complementos para un ensamblado de Microsoft Common Data Service estándar (Microsoft.Crm.*.dll) ni realizar una actualización o eliminar un `pluginassembly` creado en una plataforma.
 
 - No se admite la edición de un archivo de solución para editar cualquiera de los componentes de la solución que no sean las cintas de opciones, los formularios, el mapa del sitio o las consultas guardadas. Para obtener más información, consulte [Cuándo editar personalizaciones](when-edit-customization-file.md). No se admite la definición de nuevos componentes de la solución mediante la edición del archivo de solución. No se admite la edición de los archivos de recursos web exportados con una solución. Excepto por los pasos que se documentan en [Mantener soluciones administradas](maintain-managed-solutions.md), no se admite la edición del contenido de una solución administrada.
 

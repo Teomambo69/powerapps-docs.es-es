@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: consultar las horas laborables de un usuario (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: consultar las horas laborables de un usuario (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar las horas laborables de un usuario
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-query-the-working-hours-of-a-user"></a>Ejemplo: consultar las horas laborables de un usuario
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-working-hours-user -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-working-hours-user -->
 
-Este ejemplo muestra cómo recuperar las horas laborables de un usuario que usa el mensaje [QueryScheduleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.queryschedulerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryWorkingHours
+Este ejemplo muestra cómo recuperar las horas laborables de un usuario que usa el mensaje [QueryScheduleRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.queryschedulerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryWorkingHours
 ).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra

@@ -1,5 +1,5 @@
 ---
-title: Administrar excepciones en el código (Common Data Service para aplicaciones) | Microsoft Docs
+title: Administrar excepciones en el código (Common Data Service) | Microsoft Docs
 description: Este artículo analiza las excepciones que se devuelven desde una llamada al método de servicio web de Dynamics 365 Customer Engagement. El ejemplo de este artículo resalta los errores y las excepciones comunes que el diseño de su aplicación debe controlar.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="handle-exceptions-in-your-code"></a>Administrar las excepciones en su código
 
-Existe un número de excepciones que se pueden obtener de una llamada al método de servicio web de Common Data Service para aplicaciones. El diseño de su aplicación debe respetar y manejar de manera adecuada estas excepciones. En los ensamblados de SDK.NET, todas las llamadas al método de servicio web usan un canal de comunicaciones al servidor basado en la tecnología de Windows Communication Foundation. En términos de WCF, las excepciones obtenidas del canal reciben el nombre de *errores*.  
+Existe un número de excepciones que se pueden obtener de una llamada al método de servicio web de Common Data Service. El diseño de su aplicación debe respetar y manejar de manera adecuada estas excepciones. En los ensamblados de SDK.NET, todas las llamadas al método de servicio web usan un canal de comunicaciones al servidor basado en la tecnología de Windows Communication Foundation. En términos de WCF, las excepciones obtenidas del canal reciben el nombre de *errores*.  
 
 <a name="BKMK_Common"></a>   
 
 ## <a name="common-exceptions-and-faults"></a>Excepciones y errores comunes  
 
- El siguiente código se usa en la mayoría de los ejemplos de servicios web de CDS for Apps. Resalta los errores y las excepciones comunes que debe manejar el diseño de su aplicación.  
+ El siguiente código se usa en la mayoría de los ejemplos de servicios web de Common Data Service. Resalta los errores y las excepciones comunes que debe manejar el diseño de su aplicación.  
   
 ```csharp
 catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
@@ -83,13 +83,13 @@ catch (System.Exception ex)
   
 -   [SecurityNegotiationException](https://msdn.microsoft.com/library/system.servicemodel.security.securitynegotiationexception.aspx)  
   
- Al conectarse a CDS for Apps, es posible que se muestre una excepción `SecurityAccessDeniedException` si utiliza una cuenta Microsoft válida y su cuenta no está asociada con ninguna organización de CDS for Apps. Se puede mostrar una `MessageSecurityException` si su cuenta Microsoft no es válido o se produjo un error de autenticación.  
+ Al conectarse a Common Data Service, es posible que se muestre una excepción `SecurityAccessDeniedException` si utiliza una cuenta Microsoft válida y su cuenta no está asociada con ninguna organización de Common Data Service. Se puede mostrar una `MessageSecurityException` si su cuenta Microsoft no es válido o se produjo un error de autenticación.  
   
 <a name="BKMK_BusinessRuleErrors"></a>
 
 ## <a name="custom-errors-from-business-rules"></a>Errores personalizados de reglas de negocio
  
- Con CDS for Apps, los personalizadores pueden crear reglas de negocio que se evalúan en el servidor. Los personalizadores pueden lanzar mensajes de error según las condiciones fijadas en la regla de negocio. Los programadores deben asegurarse de incluir un control de errores sólido en el código para obtener y resolver estas excepciones.  
+ Con Common Data Service, los personalizadores pueden crear reglas de negocio que se evalúan en el servidor. Los personalizadores pueden lanzar mensajes de error según las condiciones fijadas en la regla de negocio. Los programadores deben asegurarse de incluir un control de errores sólido en el código para obtener y resolver estas excepciones.  
   
  El siguiente es un ejemplo de registro de seguimiento que se produce cuando se devuelve uno de estos errores desde una regla de negocio denominada **Nombre de regla de negocio del ámbito de entidad que devuelve el error** y el mensaje de error es **mensaje de error personalizado**.  
   
@@ -133,5 +133,5 @@ Sync workflow 'Name of Entity Scope Business Rule returning Error' terminated wi
  [Solución de problemas y control de errores](/dynamics365/customer-engagement/developer/troubleshooting-error-handling)   
  [Sugerencias para la solución de problemas](/dynamics365/customer-engagement/developer/troubleshooting-tips)   
  [Códigos de error de servicio web](web-service-error-codes.md)   
- [Administrar las excepciones en complementos](/dynamics365/customer-engagement/developer/handle-exceptions-plugins)   
- [Centro para desarrolladores .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/development-guide)
+ [Administrar las excepciones en complementos](../handle-exceptions.md)   
+ [Centro para desarrolladores .NET Framework](https://docs.microsoft.com/dotnet/framework/development-guide)

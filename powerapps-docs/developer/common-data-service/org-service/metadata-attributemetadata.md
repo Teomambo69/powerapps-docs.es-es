@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
+title: Metadatos de atributos de metadatos (Common Data Service) | MicrosoftDocs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,4 +17,4 @@ search.app:
 ---
 # <a name="work-with-attribute-metadata"></a>Trabajar con metadatos de atributos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata -->

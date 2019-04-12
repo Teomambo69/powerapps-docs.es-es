@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar tipo de cambio de divisas (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar tipo de cambio de divisas (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo crear una nueva divisa y recuperar y mostrar el tipo de cambio de divisas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>Ejemplo: recuperar el tipo de cambio de divisas
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
 
 Este ejemplo muestra cómo crear una nueva divisa, y cómo recuperar y mostrar el tipo de cambio de la divisa con respecto a la divisa base de la organización. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveCurrencyExchangeRate).
 

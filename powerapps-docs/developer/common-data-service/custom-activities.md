@@ -1,5 +1,5 @@
 ---
-title: Actividades personalizadas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Actividades personalizadas (Common Data Service) | Microsoft Docs
 description: Las actividades personalizadas admiten las necesidades de comunicación de una empresa como la mensajería instantánea (IM) y el servicio de mensajes cortos (SMS) en Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="custom-activities"></a>Actividades personalizadas
 
-En Common Data Service para aplicaciones, puede crear actividades personalizadas para satisfacer las necesidades de comunicación de una empresa como mensajería instantánea (IM) y servicio de mensajes cortos (SMS). Para crear una actividad personalizada en CDS for Apps, cree una entidad personalizada, y especifíquela como una entidad de actividad con la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> .  
+En Common Data Service, puede crear actividades personalizadas para satisfacer las necesidades de comunicación de una empresa como mensajería instantánea (IM) y servicio de mensajes cortos (SMS). Para crear una actividad personalizada en Common Data Service, cree una entidad personalizada, y especifíquela como una entidad de actividad con la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> .  
   
  Sin embargo, al contrario que otras entidades personalizadas, no puede especificar un atributo primario para una actividad personalizada porque, de forma predeterminada, cada actividad personalizada debe tener un atributo primario llamado "Asunto".  
   
@@ -27,7 +27,7 @@ En Common Data Service para aplicaciones, puede crear actividades personalizadas
   
 ## <a name="privileges-and-access-rights"></a>Privilegios y derechos de acceso 
  
- Se requiere el mismo conjunto de privilegios y derechos de acceso de CDS for Apps para trabajar con actividades personalizadas como los necesarios para trabajar con entidades personalizadas. Para obtener más información acerca de las entidades personalizadas, vea [Personalizar metadatos de entidad](customize-entity-metadata.md).  
+ Se requiere el mismo conjunto de privilegios y derechos de acceso de Common Data Service para trabajar con actividades personalizadas como los necesarios para trabajar con entidades personalizadas. Para obtener más información acerca de las entidades personalizadas, vea [Personalizar metadatos de entidad](customize-entity-metadata.md).  
   
 ## <a name="creating-a-custom-activity"></a>Creación de una actividad personalizada  
  Para crear una entidad de actividad personalizada, establezca los valores de las propiedades enumeradas en la tabla siguiente.  

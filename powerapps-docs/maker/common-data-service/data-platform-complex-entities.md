@@ -1,13 +1,13 @@
 ---
 title: Entidades complejas que requieren licencias de Plan 2 de PowerApps | Microsoft Docs
-description: Una lista de entidades complejas en Common Data Service (CDS) for Apps que requieren una licencia de Plan 2 de PowerApps.
-author: clwesene
+description: Una lista de entidades complejas en Common Data Service que requieren una licencia de Plan 2 de PowerApps.
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 07/17/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

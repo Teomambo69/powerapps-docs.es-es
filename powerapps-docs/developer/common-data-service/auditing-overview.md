@@ -1,6 +1,6 @@
 ---
-title: Visión general de las auditorías (Common Data Service para aplicaciones) | Microsoft Docs
-description: Lea cómo la capacidad de auditoría de CDS para aplicaciones se puede usar para registrar cambios de datos de atributos y entidades con el tiempo para usarlos para fines de análisis e informes.
+title: Visión general de las auditorías (Common Data Service) | Microsoft Docs
+description: Lea cómo la capacidad de auditoría de Common Data Service se puede usar para registrar cambios de datos de atributos y entidades con el tiempo para usarlos para fines de análisis e informes.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="auditing-overview"></a>Información general de auditoría
 
-Las organizaciones a menudo deben cumplir varias normativas para garantizar la disponibilidad del historial de la interacción con el cliente, registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad. Es posible que las organizaciones deseen realizar un seguimiento de los cambios en los datos de Common Data Service para aplicaciones por motivos de seguridad y análisis.  
+Las organizaciones a menudo deben cumplir varias normativas para garantizar la disponibilidad del historial de la interacción con el cliente, registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad. Es posible que las organizaciones deseen realizar un seguimiento de los cambios en los datos de Common Data Service por motivos de seguridad y análisis.  
   
- CDS for Apps admite una posibilidad de auditoría en la que los cambios en los datos de entidad y atributo en una organización se pueden registrar con el tiempo para usarlos para fines de análisis e informes. La auditoría se admite en todas las entidades y atributos personalizados y en la mayoría de entidades y atributos personalizables. La auditoría no se admite en los cambios en los metadatos, las operaciones de recuperación, las operaciones de exportación ni durante la autenticación. Para obtener información sobre cómo configurar la auditoría, vea [Configurar entidades y atributos para auditoría](configure-entities-attributes-auditing.md).  
+ Common Data Service admite una posibilidad de auditoría en la que los cambios en los datos de entidad y atributo en una organización se pueden registrar con el tiempo para usarlos para fines de análisis e informes. La auditoría se admite en todas las entidades y atributos personalizados y en la mayoría de entidades y atributos personalizables. La auditoría no se admite en los cambios en los metadatos, las operaciones de recuperación, las operaciones de exportación ni durante la autenticación. Para obtener información sobre cómo configurar la auditoría, vea [Configurar entidades y atributos para auditoría](configure-entities-attributes-auditing.md).  
   
 ## <a name="supported-for-auditing"></a>Se admite para auditoría  
- A continuación se muestran las capacidades de auditoría para CDS for Apps:  
+ A continuación se muestran las capacidades de auditoría para Common Data Service:  
 <!-- TODO: Jim, I don't think this is online only. Please correct the tokens here. -->
   
 * Auditoría de entidades personalizables
@@ -41,7 +41,7 @@ Las organizaciones a menudo deben cumplir varias normativas para garantizar la d
 * Las API de auditoría para desarrolladores
   
 ## <a name="not-supported-for-auditing"></a>Lo que no se admite para auditoría  
- A continuación se muestra lo que no se puede auditar para CDS for Apps:  
+ A continuación se muestra lo que no se puede auditar para Common Data Service:  
   
 * Auditoría de las operaciones de lectura
 * Auditoría de cambios en los metadatos 
@@ -70,7 +70,7 @@ Las organizaciones a menudo deben cumplir varias normativas para garantizar la d
   
 -   Eliminación de los registros de auditoría  
   
--   Cuándo (fecha y hora) un usuario obtiene acceso a los datos de CDS for Apps, durante cuánto tiempo y desde qué cliente.  
+-   Cuándo (fecha y hora) un usuario obtiene acceso a los datos de Common Data Service, durante cuánto tiempo y desde qué cliente.  
   
  La habilitación o deshabilitación de la seguridad a nivel de campo estableciendo el atributo <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsSecured> no se puede auditar.  
   

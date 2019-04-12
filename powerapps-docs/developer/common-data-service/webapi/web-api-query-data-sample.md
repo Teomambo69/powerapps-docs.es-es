@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de datos de consulta de API web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ejemplo de datos de consulta de API web (Common Data Service) | Microsoft Docs
 description: 'Este grupo de ejemplos demuestra cómo consultar datos utilizando la API web. Estos están implementados mediante JavaScript del lado cliente y C#'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-query-data-sample"></a>Ejemplo de datos de consulta de la API web
 
-Este grupo de ejemplos demuestra cómo consultar datos utilizando la API web de Common Data Service para aplicaciones. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:
+Este grupo de ejemplos demuestra cómo consultar datos utilizando la API web de Common Data Service. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:
 
 - [Ejemplo de datos de consulta de la API web (JavaScript del lado del cliente)](samples/query-data-client-side-javascript.md)
 
@@ -49,7 +49,7 @@ Este ejemplo se divide en las siguientes secciones principales, que contienen op
 |[FetchXML queries](#bkmk_fetchxml)|[FetchXML schema](../org-service/fetchxml-schema.md)<br /><br /> [Page large result sets with FetchXML](../org-service/page-large-result-sets-with-fetchxml.md)<br /><br /> [Use custom FetchXML](retrieve-and-execute-predefined-queries.md#bkmk_useFetchXML)| -->
 |[Consultas predefinidas](#bkmk_predefinedqueries)|[Recuperar y ejecutar consultas predefinidas](retrieve-and-execute-predefined-queries.md)<br /><br /> <xref href="Microsoft.Dynamics.CRM.userquery?text=userquery EntityType" /><br /><br /> <xref href="Microsoft.Dynamics.CRM.savedquery?text=savedquery EntityType" />|
 
-Las siguientes secciones contienen una breve explicación de las operaciones de la API web de CDS para aplicaciones realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola.
+Las siguientes secciones contienen una breve explicación de las operaciones de la API web de Common Data Service realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola.
 
 <a name="bkmk_sampleData"></a>
 
@@ -211,11 +211,11 @@ Contact basic info:
  
 Use opciones de filtro para establecer criterios para los resultados deseados. Puede crear filtros sencillos y complejos con una combinación de funciones de consulta, operadores de comparación, y operadores lógicos. Más información:[Filtrar resultados](query-data-web-api.md#bkmk_filter).  
   
-Las funciones de consulta son funciones que se pueden usar como criterios de filtro en una consulta. Hay funciones de consulta estándar y funciones de consulta específicas de CDS para aplicaciones. Estas funciones aceptan parámetros y devuelven un valor `Boolean`. En este ejemplo se muestra cómo crear una consulta para cada tipo.  
+Las funciones de consulta son funciones que se pueden usar como criterios de filtro en una consulta. Hay funciones de consulta estándar y funciones de consulta específicas de Common Data Service. Estas funciones aceptan parámetros y devuelven un valor `Boolean`. En este ejemplo se muestra cómo crear una consulta para cada tipo.  
   
 ### <a name="standard-query-functions"></a>Funciones estándar de consulta
 
-CDS para aplicaciones admite un pequeño subconjunto de funciones de consulta integradas de OData, específicamente: `contains`, `endswith` y `startswith`. Por ejemplo, la función de consulta estándar `contains` permite filtrar las propiedades que coincidan con una cadena. En esta operación, consultamos todos los contactos con `fullname` que contienen la cadena `(sample)`. Más información:[Funciones estándar de consulta](query-data-web-api.md#bkmk_buildInQueryFunctions).  
+Common Data Service admite un pequeño subconjunto de funciones de consulta integradas de OData, específicamente: `contains`, `endswith` y `startswith`. Por ejemplo, la función de consulta estándar `contains` permite filtrar las propiedades que coincidan con una cadena. En esta operación, consultamos todos los contactos con `fullname` que contienen la cadena `(sample)`. Más información:[Funciones estándar de consulta](query-data-web-api.md#bkmk_buildInQueryFunctions).  
   
  **Solicitud HTTP**  
   
@@ -361,11 +361,11 @@ Contacts filtered by fullname containing '(sample)':
   
 ```  
   
-### <a name="common-data-service-for-apps-query-functions"></a>Funciones de consulta de Common Data Service para aplicaciones
+### <a name="common-data-service-query-functions"></a>Funciones de consulta de Common Data Service
 
-Las funciones de consulta de CDS para aplicaciones proporcionan un gran número de opciones para generar consultas que son relevantes para CDS para aplicaciones. Para obtener una lista completa de estas funciones, vea <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Más información: [Crear una consulta con funciones](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
+Las funciones de consulta de Common Data Service proporcionan un gran número de opciones para generar consultas que son relevantes para Common Data Service. Para obtener una lista completa de estas funciones, vea <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Más información: [Crear una consulta con funciones](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
   
-Usará estas funciones de consulta de forma similar a las funciones de consulta estándar. La diferencia principal es que cuando usa funciones de consulta de CDS para aplicaciones, debe proporcionar el nombre completo de la función incluidos los nombres de parámetros. Por ejemplo, para obtener una lista de contactos creados en la última hora, puede generar una consulta mediante la <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" />.  
+Usará estas funciones de consulta de forma similar a las funciones de consulta estándar. La diferencia principal es que cuando usa funciones de consulta de Common Data Service, debe proporcionar el nombre completo de la función incluidos los nombres de parámetros. Por ejemplo, para obtener una lista de contactos creados en la última hora, puede generar una consulta mediante la <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" />.  
   
  **Solicitud HTTP**  
   
@@ -1091,7 +1091,7 @@ Contacts top 5 results:
 
 ### <a name="result-count"></a>Número de resultados
 
-Puede obtener únicamente el recuento de registros de una propiedad valorada como colección o un recuento de entidades que coinciden en un filtro. Realizar un recuento nos indica el número de entidades posibles en el resultado. Sin embargo, el servidor de CDS para aplicaciones devolverá 5000 como recuento máximo aunque el resultado puede tener más. En este ejemplo, construimos un filtro con `jobtitle` que contiene `Senior` o `Manager` y también solicitamos un `$count` del resultado. La respuesta contiene el recuento en la propiedad `@odata.count` así como los resultados de la consulta. Más información:[Recuperar un recuento de entidades](query-data-web-api.md#bkmk_retrieveCount).  
+Puede obtener únicamente el recuento de registros de una propiedad valorada como colección o un recuento de entidades que coinciden en un filtro. Realizar un recuento nos indica el número de entidades posibles en el resultado. Sin embargo, el servidor de Common Data Service devolverá 5000 como recuento máximo aunque el resultado puede tener más. En este ejemplo, construimos un filtro con `jobtitle` que contiene `Senior` o `Manager` y también solicitamos un `$count` del resultado. La respuesta contiene el recuento en la propiedad `@odata.count` así como los resultados de la consulta. Más información:[Recuperar un recuento de entidades](query-data-web-api.md#bkmk_retrieveCount).  
   
  **Solicitud HTTP**  
   
@@ -2233,7 +2233,7 @@ Saved User Query:
   
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
 [Consultar datos utilizando la API web](query-data-web-api.md)<br />
 [Recuperar y ejecutar consultas predefinidas](retrieve-and-execute-predefined-queries.md)<br />
 [Ejemplo de datos de consulta API (C#)](samples/query-data-csharp.md)<br />

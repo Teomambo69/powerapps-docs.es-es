@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customization-xml-reference"></a>Referencia de XML de personalización
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customization-xml-reference -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customization-xml-reference -->
 
 El archivo customizations.xml es uno de los archivos incluidos en una solución no administrada exportada. El archivo contiene todas o partes seleccionadas de las personalizaciones y configuraciones para el sistema. 
   
@@ -36,12 +36,14 @@ El archivo customizations.xml es uno de los archivos incluidos en una solución 
 
  [Esquema central de cinta de opciones](ribbon-core-schema.md) [Esquema de tipos de cinta de opciones](ribbon-types-schema.md)  
  [Esquema WSS de cinta de opciones](ribbon-wss-schema.md)  
- [Esquema de mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> [Esquema XML de formulario](form-xml-schema.md)<br/> 
+ [Esquema de mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> 
+ [Esquema XML de formulario](form-xml-schema.md)<br/> 
  [Esquema FetchXML](../common-data-service/fetchxml-schema.md) 
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
- [Esquemas utilizados en Dynamics 365](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> [Cuándo editar el archivo de personalizaciones](../common-data-service/when-edit-customization-file.md)  
+ [Esquemas utilizados en Dynamics 365](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> 
+ [Cuándo editar el archivo de personalizaciones](../common-data-service/when-edit-customization-file.md)  
 [Editar el archivo de personalizaciones con la validación de esquema](edit-customizations-xml-file-schema-validation.md)  
  [Personalizar la cinta de opciones para Dynamics 365](customize-commands-ribbon.md)  
- [Cambiar la navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO need to fix the link--> 
+ [Cambiar la navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 

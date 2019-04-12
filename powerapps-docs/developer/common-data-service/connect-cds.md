@@ -1,6 +1,6 @@
 ---
-title: Crear aplicaciones cliente (Common Data Service para aplicaciones) | Microsoft Docs
-description: Introduce los conceptos necesarios para crear aplicaciones cliente personalizadas que se conecten a CDS for Apps mediante código.
+title: Crear aplicaciones cliente (Common Data Service) | Microsoft Docs
+description: Introduce los conceptos necesarios para crear aplicaciones cliente personalizadas que se conecten a Common Data Service mediante código.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -22,13 +22,13 @@ Más información: [Visión general de creación de aplicaciones en PowerApps](.
 
 Si las opciones de PowerApps no cumplen los requisitos, puede crear una aplicación cliente con código.
 
-## <a name="connecting-to-cds-for-apps"></a>Conexión a CDS for Apps
+## <a name="connecting-to-common-data-service"></a>Conectarse a Common Data Service
 
-Para conectarse a un entorno de CDS for Apps necesita la dirección URL de la información de entorno y de credenciales de una cuenta de usuario con acceso al entorno. La estrategia que usará depende de si tiene esta información o necesita obtenerla del usuario de la aplicación. 
+Para conectarse a un entorno de Common Data Service necesita la dirección URL de la información de entorno y de credenciales de una cuenta de usuario con acceso al entorno. La estrategia que usará depende de si tiene esta información o necesita obtenerla del usuario de la aplicación. 
 
 ### <a name="discovery-service"></a>Servicio de detección
 
-Los usuarios pueden tener acceso a numerosos entornos de CDS for Apps. A menos que su aplicación se conecte únicamente a un entorno específico, puede permitir al usuario elegir a qué entorno desea conectarse usando sus credenciales para *detectar* los entornos que sus credenciales le permiten usar. 
+Los usuarios pueden tener acceso a varios entornos de Common Data Service. A menos que su aplicación se conecte únicamente a un entorno específico, puede permitir al usuario elegir a qué entorno desea conectarse usando sus credenciales para *detectar* los entornos que sus credenciales le permiten usar. 
 
 Para usar el servicio de detección debe autenticar al usuario para el servicio de detección y recuperar los entornos que tiene a su disposición. Debe implementar por lo general alguna forma que le permita elegir a qué entorno desea conectarse. El siguiente paso es usar la información sobre ese entorno para autenticarlo otra vez para el acceso a ese entorno específico.
 
@@ -38,4 +38,4 @@ Más información: [Servicios de detección](discovery-service.md)
 
 Cuando sepa a qué entorno conectar el usuario, debe autenticarlo en ese entorno.
 
-Más información: [Autenticación con servicios web Common Data Service para aplicaciones](authentication.md)
+Más información: [Autenticación con servicios web Common Data Service](authentication.md)

@@ -1,5 +1,5 @@
 ---
-title: Personalizar asignaciones de entidades y atributos en PowerApps (Common Data Service para aplicaciones) | Microsoft Docs
+title: Personalizar asignaciones de entidades y atributos en PowerApps (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo asignar atributos entre entidades que tienen una relación de entidad en PowerApps. Esto le permite establecer valores predeterminados para un registro creado en el contexto de otro registro.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,7 +23,7 @@ Puede asignar atributos entre entidades que tienen una relación de entidad. Est
 
 ## <a name="behavior-in-the-application"></a>Comportamiento en la aplicación
 
- La asignación en Common Data Service (CDS) para aplicaciones simplifica la entrada de datos cuando se crean nuevos registros que están asociados con otro registro. Cuando una entidad tiene una relación entre entidades con otra entidad, puede crear nuevos registros de entidades relacionadas con la ficha **Crear relacionados** en la cinta de opciones. Al crear un nuevo registro de esta forma, los datos asignados del registro de la entidad primaria se copian al formulario para el nuevo registro de la entidad relacionada. Al asignar atributos de entidad, se controlan los datos que se copian agregando nuevas asignaciones en la relación entre las dos entidades. Si crea un registro sin usar la vista asociada de la entidad primaria, los datos no se asignarán.  
+ La asignación en Common Data Service simplifica la entrada de datos cuando se crean nuevos registros que están asociados con otro registro. Cuando una entidad tiene una relación entre entidades con otra entidad, puede crear nuevos registros de entidades relacionadas con la ficha **Crear relacionados** en la cinta de opciones. Al crear un nuevo registro de esta forma, los datos asignados del registro de la entidad primaria se copian al formulario para el nuevo registro de la entidad relacionada. Al asignar atributos de entidad, se controlan los datos que se copian agregando nuevas asignaciones en la relación entre las dos entidades. Si crea un registro sin usar la vista asociada de la entidad primaria, los datos no se asignarán.  
 
  Por ejemplo, es posible que desee configurar una asignación entre los campos de dirección en cuentas y los campos de dirección en contactos. Con esta asignación, cuando un usuario agrega un contacto asociado a una cuenta específica, los campos de dirección del contacto se rellenan automáticamente.  
 

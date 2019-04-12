@@ -4,7 +4,7 @@ definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,7 +63,7 @@ Debe usar el explorador de soluciones para establecer iconos de entidades.
   
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** es una herramienta desarrollada por la comunidad XrmToolbox para Dynamics 365 Customer Engagement. Consulte el tema [Herramientas para desarrolladores de Common Data Service for Apps](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) para consultar las herramientas desarrolladas por la comunidad.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** es una herramienta desarrollada por la comunidad XrmToolbox para Dynamics 365 Customer Engagement. Consulte el tema [Herramientas para desarrolladores de Common Data Service](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) para consultar las herramientas desarrolladas por la comunidad.
 
 > [!NOTE]
 > Las herramientas de la comunidad no son un producto de Microsoft y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).

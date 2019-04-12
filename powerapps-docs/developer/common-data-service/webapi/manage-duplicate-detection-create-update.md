@@ -1,10 +1,10 @@
 ---
-title: Detectar datos duplicados con la API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: Lea cómo detectar duplicados con el encabezado MSCRM.SuppressDuplicateDetection y la API web de Common Data Service para aplicaciones
+title: Detectar datos duplicados con la API web (Common Data Service)| Microsoft Docs
+description: Lea cómo detectar duplicados con el encabezado MSCRM.SuppressDuplicateDetection y la API web de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 
-La API web de Common Data Service (CDS) para aplicaciones le permite detectar registros duplicados de un registro existente para mantener la integridad de los datos. Para obtener información detallada sobre Detección de datos duplicados usando código, consulte [Detectar datos duplicados con código](../detect-duplicate-data-with-code.md) 
+La API web de Common Data Service le permite detectar registros duplicados de un registro existente para mantener la integridad de los datos. Para obtener información detallada sobre Detección de datos duplicados usando código, consulte [Detectar datos duplicados con código](../detect-duplicate-data-with-code.md) 
 
 ## <a name="detect-duplicates-during-create-operation"></a>Detectar duplicados durante las operaciones de creación
 
@@ -40,7 +40,7 @@ Use encabezado de preferencia `MSCRM.SuppressDuplicateDetection` y establezca el
 
 
 > [!NOTE]
-> Asegúrese de que existen reglas de detección de duplicados adecuadas. Common Data Service para aplicaciones incluye reglas de detección de duplicados predeterminadas para cuentas, contactos y clientes potenciales, pero no para otros tipos de registros. Si desea que el sistema detecte duplicados para otros tipos de registro, deberá crear una nueva regla. <br/>- Para obtener información sobre cómo crear una regla de detección de duplicados usando la interfaz de usuario, consulte [Configurar reglas de detección de duplicados para mantener limpios los datos](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Para obtener información sobre cómo crear reglas de detección de duplicados usando código, [consulte Entidades de regla de duplicados](../duplicaterule-entities.md). 
+> Asegúrese de que existen reglas de detección de duplicados adecuadas. Common Data Service incluye reglas de detección de duplicados predeterminadas para cuentas, contactos y clientes potenciales, pero no para otros tipos de registros. Si desea que el sistema detecte duplicados para otros tipos de registro, deberá crear una nueva regla. <br/>- Para obtener información sobre cómo crear una regla de detección de duplicados usando la interfaz de usuario, consulte [Configurar reglas de detección de duplicados para mantener limpios los datos](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Para obtener información sobre cómo crear reglas de detección de duplicados usando código, [consulte Entidades de regla de duplicados](../duplicaterule-entities.md). 
 
 
 

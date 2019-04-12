@@ -1,6 +1,6 @@
 ---
-title: Filtros y plantillas de Outlook y sin conexión (Common Data Service para aplicaciones) | Microsoft Docs
-description: Los datos que deben sincronizarse entre el servidor de Common Data Service para aplicaciones y Dynamics 365 for Outlook se determinan con los filtros de datos para Office Outlook
+title: Filtros y plantillas de Outlook y sin conexión (Common Data Service) | Microsoft Docs
+description: Los datos que deben sincronizarse entre el servidor de Common Data Service y Dynamics 365 for Outlook se determinan con los filtros de datos para Office Outlook
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,8 +17,8 @@ search.app:
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>Plantillas y filtros de Outlook y sin conexión
 
-Los filtros de datos para Office Outlook determinan qué datos deben sincronizarse entre Common Data Service para aplicaciones y Dynamics 365 for Outlook. CDS para aplicaciones permite cambiar el filtro predeterminado mediante el SDK e insertar estos cambios en usuarios específicos o en todos los usuarios.  
-Puede escribir código que permite a los administradores crear y publicar plantillas de filtro. Esto permite que un administrador de CDS para aplicaciones cree los filtros comunes o deseables que pueden publicarse para que los usuarios sincronicen con el almacén de Outlook y con la base de datos sin conexión. Esto también proporciona una manera de personalizar la plantilla de filtro predeterminada que se aplicará a los usuarios que se agregan al sistema una vez que las plantillas se publiquen originalmente. El administrador también tiene la posibilidad de actualizar o eliminar los filtros del usuario después de que se publican.  
+Los filtros de datos para Office Outlook determinan qué datos deben sincronizarse entre Common Data Service y Dynamics 365 for Outlook. Common Data Service admite la capacidad de cambiar el filtro predeterminado mediante el SDK y de insertar estos cambios en cualquier usuario o en todos.  
+Puede escribir código que permite a los administradores crear y publicar plantillas de filtro. Esto permite que un administrador de Common Data Service cree los filtros comunes o deseables que pueden publicarse para que los usuarios sincronicen con el almacén de Outlook Store y con la base de datos sin conexión. Esto también proporciona una manera de personalizar la plantilla de filtro predeterminada que se aplicará a los usuarios que se agregan al sistema una vez que las plantillas se publiquen originalmente. El administrador también tiene la posibilidad de actualizar o eliminar los filtros del usuario después de que se publican.  
 Para admitir estas personalizaciones, hay cuatro nuevos tipos de consulta para la consulta guardada (vista). Cuando cree un registro de consulta guardada (vista), especifique uno de estos tipos en el atributo de `SavedQuery.QueryType`, mediante la enumeración de <xref:Microsoft.Crm.Sdk.SavedQueryQueryType> . Solo son accesibles con los métodos descritos aquí; no existe una interfaz de usuario disponible para cambiarlos. Puede especificar distintos filtros para evitar sincronizar todo con Outlook para su teléfono móvil. Las plantillas de filtro son compatibles con la solución de modo que pueden exportarse junto con una solución.  
   
  La siguiente tabla muestra los nuevos tipos de la consulta usados para los filtros y las plantillas de filtro.  
@@ -40,7 +40,7 @@ Los usuarios nuevos automáticamente reciben los filtros de las plantillas de fi
 
 Existe un nuevo tipo de filtro que los administradores pueden definir, llamado filtros del sistema. Estos filtros se definen como registros de `SavedQuery` con el tipo de consulta de <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters> o de <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>. Los filtros del sistema se aplican automáticamente a todos los usuarios y los usuarios no pueden modificarlos.  
 
-Hay un límite en el número de filtros que puede agregar. Este valor está controlado por el administrador de implementaciones de CDS para aplicaciones, a fin de evitar que los usuarios o los administradores creen demasiados filtros, lo que afecta el rendimiento del servidor. El mismo valor del límite se aplica a todas las entidades.  
+Hay un límite en el número de filtros que puede agregar. Este valor está controlado por el administrador de implementaciones de Common Data Service para evitar que los usuarios o los administradores creen demasiados filtros, lo que afecta el rendimiento del servidor. El mismo valor del límite se aplica a todas las entidades.  
 
 De forma predeterminada, existen configuraciones ilimitadas de los filtros del sistema y los filtros de los usuarios.  
 

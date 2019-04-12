@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Actualizar un extremo de servicio importado de una solución (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Actualizar un extremo de servicio importado de una solución (Common Data Service) | Microsoft Docs'
 description: El tutorial demuestra cómo actualizar un extremo de servicio importado de una solución.
 keywords: ''
 ms.date: 10/31/2018
@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-update-a-service-endpoint-imported-from-a-solution"></a>Tutorial: Actualizar un extremo de servicio importado de una solución
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
 
 Un paso adicional es necesario después de importar en una organización una solución que contiene uno o varios extremos de servicio configurados para autorización SAS. Si la solución que contiene los extremos de servicio se exporta, la solución exportada no contiene la clave SAS para cada extremo de servicio. Tras importar la solución en una organización, deberá dar un paso adicional para proporcionar la clave SAS para cada extremo de servicio.  
   

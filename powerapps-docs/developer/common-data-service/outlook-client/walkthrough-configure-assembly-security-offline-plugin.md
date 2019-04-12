@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Configurar seguridad de ensamblados para complemento sin conexión (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Configurar seguridad de ensamblados para complemento sin conexión (Common Data Service) | Microsoft Docs'
 description: El tema proporciona un tutorial sobre la configuración de la seguridad de ensamblado para un complemento sin conexión.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="walkthrough-configure-assembly-security-for-an-offline-plug-in"></a>Tutorial: configurar la seguridad de ensamblado para un complemento sin conexión
 
-La plataforma Common Data Service para aplicaciones aplica una restricción adicional de seguridad a los ensamblados de complementos sin conexión registrados. Cuando Dynamics 365 for Microsoft Office Outlook con acceso sin conexión está instalado, una clave AllowList se agrega al registro del sistema en el equipo cliente. Por cada ensamblado que contenga un complemento sin conexión que registre, debe agregar una subclave de registro a la clave AllowList con el nombre de clave derivado del token de clave pública del ensamblado. Si no lo hace, la plataforma no ejecutará el complemento sin conexión aunque el complemento esté registrado. Este recorrido describe cómo agregar esta subclave a un ensamblado de complementos.  
+La plataforma Common Data Service aplica una restricción adicional de seguridad a los ensamblados de complementos sin conexión registrados. Cuando Dynamics 365 for Microsoft Office Outlook con acceso sin conexión está instalado, una clave AllowList se agrega al registro del sistema en el equipo cliente. Por cada ensamblado que contenga un complemento sin conexión que registre, debe agregar una subclave de registro a la clave AllowList con el nombre de clave derivado del token de clave pública del ensamblado. Si no lo hace, la plataforma no ejecutará el complemento sin conexión aunque el complemento esté registrado. Este recorrido describe cómo agregar esta subclave a un ensamblado de complementos.  
   
 ### <a name="get-the-public-key-token"></a>Obtener el token de clave pública  
   

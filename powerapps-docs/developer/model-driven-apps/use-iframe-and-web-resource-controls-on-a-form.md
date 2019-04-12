@@ -74,7 +74,7 @@ IFRAME y los controles de recursos web insertan contenido desde otra ubicación 
  [!INCLUDE[languagecode](../../includes/languagecode.md)]  
 
 > [!NOTE]
->  Se sugiere usar el nombre de la entidad en lugar del código de tipo porque el código de tipo de entidad para entidades personalizadas puede variar entre las organizaciones de CDS para aplicaciones.  
+>  Se sugiere usar el nombre de la entidad en lugar del código de tipo porque el código de tipo de entidad para entidades personalizadas puede variar entre las organizaciones de Common Data Service.  
 
 ### <a name="example"></a>Ejemplo  
  El siguiente ejemplo muestra la dirección URL sin parámetros.  

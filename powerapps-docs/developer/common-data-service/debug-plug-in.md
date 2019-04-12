@@ -1,12 +1,12 @@
 ---
-title: Depuración de complementos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Depuración de complementos (Common Data Service) | Microsoft Docs
 description: Aprenda a depurar complementos mediante la herramienta de registro de complementos.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -54,7 +54,7 @@ Si desea usar un marco de automatización de prueba, descubrirá que la comunida
 
 Como se describe en [Usar el servicio de seguimiento](write-plug-in.md#use-the-tracing-service), puede escribir mensajes en la [entidad de PluginTraceLog](reference/entities/plugintracelog.md) en el código del complemento mediante el <xref:Microsoft.Xrm.Sdk.ITracingService>.<xref:Microsoft.Xrm.Sdk.ITracingService.Trace*> .
 
-Para poder usar este servicio, debe habilitar el seguimiento en el entorno de CDS for Apps. El proceso se describe en [Ver registros de seguimiento](tutorial-write-plug-in.md#view-trace-logs).
+Para poder usar este servicio, debe habilitar el seguimiento en el entorno de Common Data Service. El proceso se describe en [Ver registros de seguimiento](tutorial-write-plug-in.md#view-trace-logs).
 
 > [!NOTE]
 > El registro de seguimiento ocupa espacio de almacenamiento de la organización, especialmente cuando se generan muchos seguimientos y excepciones. Solo debe activar el registro de seguimiento para depurar y solucionar problemas, y desactivarla después de que la investigación esté completa.

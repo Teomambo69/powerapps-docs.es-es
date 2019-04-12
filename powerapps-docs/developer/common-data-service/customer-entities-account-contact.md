@@ -1,5 +1,5 @@
 ---
-title: 'Entidades de cliente (cuenta, contacto) (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Entidades de cliente (cuenta, contacto) (Common Data Service) | Microsoft Docs'
 description: 'Las entidades Account y Contact en Dynamics 365 son esenciales para identificar y administrar clientes, vender productos y servicios, y proporcionar un mejor servicio a los clientes. Se usa una entidad de dirección de cliente para almacenar la dirección y la información de envío para un cliente.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,17 +20,17 @@ search.app:
 <!-- 
 Was Mike Carter
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customer-entities-account-contact
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/customer-entities-account-contact
 
 Refactor so that the links to entity reference are in the body, not just in the See allso.
 Add some h2 sections so it is skimmable
  -->
 
-Las entidades *cuenta* y *contacto* en Common Data Service para aplicaciones son esenciales para identificar y administrar clientes, vender los productos y servicios, y proporcionar un servicio superior a los clientes. Se usa una entidad de *dirección de cliente* para almacenar la dirección y la información de envío para un cliente.  
+Las entidades *cuenta* y *contacto* en Common Data Service son esenciales para identificar y administrar clientes, vender los productos y servicios, y proporcionar un servicio superior a los clientes. Se usa una entidad de *dirección de cliente* para almacenar la dirección y la información de envío para un cliente.  
   
 ## <a name="account-entity"></a>Entidad de cuenta
  
-La entidad de cuenta es una de las entidades de CDS for Apps a la que más se asocian otras entidades. En CDS for Apps, una cuenta representa una compañía con la que la unidad de negocio tiene una relación. La información incluida en una cuenta es toda la información de contacto, información de la compañía, categoría, tipo de relación e información de dirección pertinentes. Otra información pertinente incluye los siguientes elementos:  
+La entidad de cuenta es una de las entidades de las aplicaciones Common Data Service a la que más se asocian otras entidades. En Common Data Service, una cuenta representa una compañía con la que la unidad de negocio tiene una relación. La información incluida en una cuenta es toda la información de contacto, información de la compañía, categoría, tipo de relación e información de dirección pertinentes. Otra información pertinente incluye los siguientes elementos:  
   
 - Una cuenta puede ser un elemento primario de prácticamente cualquier otra entidad. Esto incluye otra cuenta.  
   
@@ -46,7 +46,7 @@ Más información: [Entidad de cuenta](reference/entities/account.md).
   
 ## <a name="contact-entity"></a>Entidad de contacto
 
-En CDS for Apps, un contacto representa una persona, normalmente un individuo, con el que una unidad de negocio tiene una relación, como un cliente, un proveedor o un compañero. La entidad contacto es una de las entidades a la que se vinculan la mayoría de las otras entidades. Un contacto puede ser una entidad independiente. En esta entidad se incluyen información profesional, personal y familiar, y varias direcciones. Más información: [Entidad Contacto](reference/entities/contact.md).
+En Common Data Service, un contacto representa una persona, normalmente un individuo, con el que una unidad de negocio tiene una relación, como un cliente, un proveedor o un compañero. La entidad contacto es una de las entidades a la que se vinculan la mayoría de las otras entidades. Un contacto puede ser una entidad independiente. En esta entidad se incluyen información profesional, personal y familiar, y varias direcciones. Más información: [Entidad Contacto](reference/entities/contact.md).
   
 Tanto cuentas como contactos se consideran parte de la administración de clientes y se relacionan unos con otros de las siguientes formas:  
   

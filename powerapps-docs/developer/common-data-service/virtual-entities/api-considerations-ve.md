@@ -1,8 +1,8 @@
 ---
-title: Consideraciones sobre la API de entidades virtuales (Common Data Service para aplicaciones) | Microsoft Docs
+title: Consideraciones sobre la API de entidades virtuales (Common Data Service) | Microsoft Docs
 description: Describe consideraciones sobre API para entidades virtuales
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="api-considerations-of-virtual-entities"></a>Consideraciones sobre API para entidades virtuales
 
-Hay dos grandes categorías de cambios en el sistema de metadatos que están asociados con la introducción de entidades virtuales en Common Data Service para aplicaciones:
+Hay dos grandes categorías de cambios en el sistema de metadatos que están asociados con la introducción de entidades virtuales en Common Data Service:
 
 - Adición de un nuevo ensamblado, espacios de nombres, clases y otros tipos para admitir el desarrollo de proveedores de datos de entidad virtuales personalizados
 - Cambios a la plataforma principal, incluidas algunas propiedades adicionales para admitir la asignación de origen de datos externos y modificación de comportamientos de propiedades de entidad y atributo existentes que reflejan las limitaciones de la implementación inicial de esta característica
@@ -43,11 +43,11 @@ Este ensamblado se distribuye como paquete de NuGet: [Microsoft.CrmSdk.Data](htt
 
 ## <a name="changes-to-the-core-platform"></a>Cambios en la plataforma principal
 
-Los siguientes cambios a los tipos de referencia de CDS for Apps estándar se introdujeron para poder admitir entidades virtuales.
+Los siguientes cambios a los tipos de referencia de Common Data Service estándar se introdujeron para poder admitir entidades virtuales.
 
 ### <a name="new-entities"></a>Nuevas entidades
 
-CDS for Apps expone orígenes y proveedores de datos de entidad virtuales como las siguientes nuevas entidades: [EntityDataProvider](../reference/entities/entitydataprovider.md) y [EntityDataSource](../reference/entities/entitydatasource.md). 
+Common Data Service expone orígenes y proveedores de datos de entidad virtuales como las siguientes nuevas entidades: [EntityDataProvider](../reference/entities/entitydataprovider.md) y [EntityDataSource](../reference/entities/entitydatasource.md). 
 
 ### <a name="new-metadata-properties"></a>Nuevas propiedades de metadatos
 

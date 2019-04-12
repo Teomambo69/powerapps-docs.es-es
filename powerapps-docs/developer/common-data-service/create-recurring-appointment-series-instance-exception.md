@@ -1,5 +1,5 @@
 ---
-title: 'Cree una serie, una instancia, o una excepción de citas periódicas (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Cree una serie, una instancia, o una excepción de citas periódicas (Common Data Service) | Microsoft Docs'
 description: 'Crear mediante programación una cita periódica maestra (serie), instancias de cita periódica individuales, excepciones a dichas instancias o convertir una cita en periódica.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>Crear una instancia, excepción o serie de cita periódica.
 
-Al crear una cita periódica maestra (serie), Common Data Service para aplicaciones crea instancias individuales de la cita en función de la información periódica especificada. También puede crear instancias individuales de citas periódicas y las excepciones a dichas instancias, y puede convertir una cita en una cita periódica.  
+Al crear una cita periódica maestra (serie), Common Data Service crea instancias individuales de la cita en función de la información periódica especificada. También puede crear instancias individuales de citas periódicas y las excepciones a dichas instancias, y puede convertir una cita en una cita periódica.  
   
 <a name="bkmk_createseries"></a>   
 
@@ -61,7 +61,7 @@ Al crear una cita periódica maestra (serie), Common Data Service para aplicacio
 <a name="bkmk_convert"></a>   
 
 ## <a name="convert-an-appointment-to-a-recurring-appointment"></a>Convertir una cita en una cita periódica  
- Una cita periódica es una cita con información de la frecuencia. Puede convertir una cita existente en CDS for Apps en una cita periódica mediante <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest>. Cuando se convierte una cita existente en una cita periódica, los datos de la cita existente se copian en una nueva instancia de cita periódica maestra y se elimina la cita existente.  
+ Una cita periódica es una cita con información de la frecuencia. Puede convertir una cita existente en Common Data Service en una cita periódica mediante <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest>. Cuando se convierte una cita existente en una cita periódica, los datos de la cita existente se copian en una nueva instancia de cita periódica maestra y se elimina la cita existente.  
   
 ### <a name="see-also"></a>Vea también  
  [Entidades de cita periódica](/dynamics365/customer-engagement/developer/recurring-appointment-entities)   

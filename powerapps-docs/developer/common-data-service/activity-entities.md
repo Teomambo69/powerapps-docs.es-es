@@ -1,5 +1,5 @@
 ---
-title: Entidades de actividad (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de actividad (Common Data Service) | Microsoft Docs
 description: 'En Dynamics 365 (en línea), las actividades son las tareas que usted o sus equipos realizan cuando se ponen en contacto con los clientes, por ejemplo, enviar cartas o hacer llamadas de teléfono.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="activity-entities"></a>Entidades de actividad
 
-En Common Data Service para aplicaciones, las actividades son las tareas que usted o sus equipos realizan cuando se ponen en contacto con los clientes, por ejemplo, enviar cartas o hacer llamadas de teléfono. Puede crear las actividades por usted mismo, asignarlas a otra persona o compartirlas con otros usuarios o equipos. Una actividad es cualquier acción que se pueda incluir en un calendario y tiene las dimensiones de tiempo (hora de inicio, hora de finalización, fecha de vencimiento y duración) que ayudan a determinar cuándo se ha producido la acción o va se va a producir. Las actividades tienen algunas propiedades básicas que ayudan a determinar qué acción representa la actividad, por ejemplo, el tema y la descripción. Un estado de la actividad puede ser abierto, cancelado o completado. El estado completado de una actividad tendrá varios valores de estado secundarios asociados para aclarar el modo en que la actividad se ha completado.  
+En Common Data Service, las actividades son las tareas que usted o sus equipos realizan cuando se ponen en contacto con los clientes, por ejemplo, enviar cartas o hacer llamadas de teléfono. Puede crear las actividades por usted mismo, asignarlas a otra persona o compartirlas con otros usuarios o equipos. Una actividad es cualquier acción que se pueda incluir en un calendario y tiene las dimensiones de tiempo (hora de inicio, hora de finalización, fecha de vencimiento y duración) que ayudan a determinar cuándo se ha producido la acción o va se va a producir. Las actividades tienen algunas propiedades básicas que ayudan a determinar qué acción representa la actividad, por ejemplo, el tema y la descripción. Un estado de la actividad puede ser abierto, cancelado o completado. El estado completado de una actividad tendrá varios valores de estado secundarios asociados para aclarar el modo en que la actividad se ha completado.  
   
- Las actividades conllevan uno o varios participantes, denominados usuarios de la actividad en CDS for Apps. Para una actividad de reunión, los participantes son los contactos o usuarios que asisten a la reunión. Para una actividad de llamada de teléfono o fax, los usuarios son el autor de la llamada y la persona a la que se llama. El diagrama siguiente muestra las relaciones entre entidades para las actividades.  
+ Las actividades conllevan uno o varios participantes, denominados usuarios de la actividad en Common Data Service. Para una actividad de reunión, los participantes son los contactos o usuarios que asisten a la reunión. Para una actividad de llamada de teléfono o fax, los usuarios son el autor de la llamada y la persona a la que se llama. El diagrama siguiente muestra las relaciones entre entidades para las actividades.  
   
  ![Diagrama de actividades](media/entity-model-activity.gif "Diagrama de actividades")  
   
- Para satisfacer las necesidades de comunicación de la empresa actual, como mensajería instantánea (IM) y SMS, puede crear actividades personalizadas en CDS for Apps.  
+ Para satisfacer las necesidades de comunicación de la empresa actual, como mensajería instantánea (IM) y SMS, puede crear actividades personalizadas en Common Data Service.  
   
  **Otras entidades de actividad**  
   

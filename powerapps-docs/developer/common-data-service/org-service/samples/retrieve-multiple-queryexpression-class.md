@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar varios con la clase QueryExpression (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar varios con la clase QueryExpression (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo crear una tarea para un fax mediante usando QueryExpression.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>Ejemplo: Recuperación múltiple con la clase de QueryExpression
 
 <!-- Re-title? This is really about retrieving  related records 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-queryexpression-class
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-queryexpression-class
 -->
-Este ejemplo muestra cómo recuperar múltiples entidades utilizando el método [IOrganizationService.RetrieveMultiple(QueryBase)](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_IOrganizationService_RetrieveMultiple_Microsoft_Xrm_Sdk_Query_QueryBase_)con [QueryExpression](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.query.queryexpression?view=dynamics-general-ce-9) junto con sus columnas de entidades relacionadas. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleByQueryExpression).
+Este ejemplo muestra cómo recuperar múltiples entidades utilizando el método [IOrganizationService.RetrieveMultiple(QueryBase)](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_IOrganizationService_RetrieveMultiple_Microsoft_Xrm_Sdk_Query_QueryBase_)con [QueryExpression](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.query.queryexpression?view=dynamics-general-ce-9) junto con sus columnas de entidades relacionadas. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleByQueryExpression).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

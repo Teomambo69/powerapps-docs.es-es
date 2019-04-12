@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Liberar un elemento en la cola (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Liberar un elemento en la cola (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar el mensaje ReleaseToQueueRequest.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>Ejemplo: Liberar un elemento en la cola
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
 Couldn't each of the operations in this series of samples be added to just one sample?
  -->
- Este ejemplo muestra cómo usar [ReleaseToQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) para anular la asociación de un usuario de un elemento de cola con el que trabajó y devolver un elemento de cola a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems).
+ Este ejemplo muestra cómo usar [ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) para anular la asociación de un usuario de un elemento de cola con el que trabajó y devolver un elemento de cola a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

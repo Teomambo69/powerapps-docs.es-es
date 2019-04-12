@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar FetchXML con una cookie de paginación (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar FetchXML con una cookie de paginación (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar la cookie de paginación en una FetchXML
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>Ejemplo: usar FetchXML con una cookie de paginación
 
 <!-- This could be greatly simplified IMHO 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
 -->
-Este ejemplo muestra cómo usar la cookie de paginación en una consulta de FetchXML para recuperar páginas sucesivas de resultados de la consulta. Usa el método [IOrganizationService. RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging).
+Este ejemplo muestra cómo usar la cookie de paginación en una consulta de FetchXML para recuperar páginas sucesivas de resultados de la consulta. Usa el método [IOrganizationService. RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

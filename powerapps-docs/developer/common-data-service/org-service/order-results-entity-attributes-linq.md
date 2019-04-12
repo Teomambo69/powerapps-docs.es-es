@@ -1,5 +1,5 @@
 ---
-title: Ordenar los resultados mediante atributos de entidad con LINQ (Common Data Service para aplicaciones) | Microsoft Docs
+title: Ordenar los resultados mediante atributos de entidad con LINQ (Common Data Service) | Microsoft Docs
 description: Lea cómo puede usar los atributos de búsqueda o de OptionSet (lista desplegable) para ordenar los resultados de una consulta LINQ.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="order-results-using-entity-attributes-with-linq"></a>Ordenar resultados mediante atributos de entidad con LINQ
 
-En Common Data Service (CDS) para aplicaciones puede usar la búsqueda o los atributos OptionSet (Picklist) para ordenar los resultados de una consulta LINQ. Este tema muestra varios ejemplos de este tipo de consulta.  
+En Common Data Service (Common Data Service) puede usar la búsqueda o los atributos OptionSet (Picklist) para ordenar los resultados de una consulta LINQ. Este tema muestra varios ejemplos de este tipo de consulta.  
   
 ## <a name="using-a-lookup-value-to-order-by"></a>Uso de un valor de búsqueda para ordenar  
 

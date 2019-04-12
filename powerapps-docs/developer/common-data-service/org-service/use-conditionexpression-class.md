@@ -1,5 +1,5 @@
 ---
-title: Use la clase ConditionExpression (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar la clase ConditionExpression (Common Data Service) | Microsoft Docs
 description: 'Conozca cómo puede utilizar la clase ConditionExpression para comparar un atributo con un valor o conjunto de valores utilizando un operador, como &quot;igual a&quot; o &quot;mayor que&quot;.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-conditionexpression-class"></a>Usar la clase ConditionExpression
 
-En Common Data Service para aplicaciones, puede usar la clase de <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> para comparar un atributo con un valor o un conjunto de valores al usar un operador, como "igual a" o "mayor que". La clase de `ConditionExpression` le permite pasar expresiones de condición como parámetros a otras clases, como <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> y <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
+En Common Data Service, puede usar la clase de <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> para comparar un atributo con un valor o un conjunto de valores al usar un operador, como "igual a" o "mayor que". La clase de `ConditionExpression` le permite pasar expresiones de condición como parámetros a otras clases, como <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> y <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   
  La siguiente tabla enumera las propiedades que puede definir para crear una condición que usa la clase de `ConditionExpression`.  
   

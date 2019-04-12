@@ -1,10 +1,10 @@
 ---
-title: 'Ejemplo: inicio rápido para la API de útiles de XMR (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: inicio rápido para la API de útiles de XMR (Common Data Service) | Microsoft Docs'
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="sample-quick-start-for-xrm-tooling-api"></a>Ejemplo: inicio rápido para la API de útiles de XMR
 
-El ejemplo de QuickStart es una muestra de código administrado por .NET Framework que indica cómo conectar una instancia de Common Data Service para aplicaciones mediante una API de útiles de XMR y realiza operaciones de creación, actualización, recuperación y eliminación básicas en una entidad. Para obtener más información acerca de los útiles de XMR, consulte [Crear aplicaciones cliente de Windows mediante los útiles XRM](build-windows-client-applications-xrm-tools.md).
+El ejemplo de QuickStart es una muestra de código administrado por .NET Framework que indica cómo conectar una instancia de Common Data Service mediante una API de útiles de XMR y realiza operaciones de creación, actualización, recuperación y eliminación básicas en una entidad. Para obtener más información acerca de los útiles de XMR, consulte [Crear aplicaciones cliente de Windows mediante los útiles XRM](build-windows-client-applications-xrm-tools.md).
 
 Descargue el ejemplo: [Trabajar con API de útiles de XRM](https://code.msdn.microsoft.com/XRM-Tooling-Sample-24a5c55c).
 
@@ -33,14 +33,14 @@ Descargue el ejemplo: [Trabajar con API de útiles de XRM](https://code.msdn.mic
   
 ## <a name="requirements"></a>Requisitos
 
-Debe tener acceso a un entorno de CDS para aplicaciones.
+Debe tener acceso a un entorno de Common Data Service.
 
 ## <a name="demonstrates"></a>Demostraciones
 
 - El código de ejemplo se genera a través de la plantilla **Aplicación WPF para CRM** SDK que proporciona un control de inicio de sesión común integrado para autenticación y almacenamiento en caché y reutilización de credenciales. Para obtener más información sobre el control de inicio de sesión común y cómo usar la plantilla de SDK en Visual Studio, consulte [Usar el control de inicio de sesión común de los útiles de XRM](use-xrm-tooling-common-login-control-client-applications.md).  
-- No se usó un código auxiliar para definir una conexión con CDS para aplicaciones.  
-- Luego de conectarse a CDS para aplicaciones, el ejemplo realiza operaciones de creación, actualización, recuperación y eliminación en una entidad de cuenta.  
-- Almacena las credenciales de usuario en un archivo de configuración (`Default_QuickStartXRMToolingWPFClient.exe.config`) en la carpeta `c:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient` cuando el ejemplo se ejecuta por primera vez y, posteriormente pregunta al usuario si desea almacenar o especificar las nuevas credenciales en el tiempo de ejecución para iniciar sesión en CDS para aplicaciones.  
+- No se utiliza ningún código de aplicación auxiliar para establecer una conexión con Common Data Service.  
+- Luego de conectarse a Common Data Service, el ejemplo realiza operaciones de creación, actualización, recuperación y eliminación en una entidad de cuenta.  
+- Almacena las credenciales de usuario en un archivo de configuración (`Default_QuickStartXRMToolingWPFClient.exe.config`) en la carpeta `c:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient` cuando el ejemplo se ejecuta por primera vez y, posteriormente pregunta al usuario si desea almacenar o especificar las nuevas credenciales en el tiempo de ejecución para iniciar sesión en Common Data Service.  
 - Genera los siguientes archivos de registro, si se produce algún problema, para ayudar en la solución de problemas:  
 - Login_ErrorLog.log: Para informar errores de inicio de sesión. Este archivo está disponible en `C:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient`.  
 - QuickStartXRMToolingWPFClient.log: Para informar sobre errores de funcionamiento. Este archivo está disponible en la misma ubicación que la aplicación ejecutable, que se encuentra en la carpeta de depuración del proyecto de Visual Studio.  
@@ -173,7 +173,7 @@ namespace QuickStartXRMToolingWPFClient
             updateData.Add("telephone1", new CrmDataTypeWrapper("555-0161", CrmFieldType.String));   
             bool updateAccountStatus = _ctrl.CrmConnectionMgr.CrmSvc.UpdateEntity("account","accountid",_accountId,updateData);  
   
-            // Validate if the the account record was updated successfully, and then display the updated information  
+            // Validate if the account record was updated successfully, and then display the updated information  
             if (updateAccountStatus == true)  
             {  
                 UpdateStatus("***************************************");  
@@ -258,4 +258,4 @@ namespace QuickStartXRMToolingWPFClient
 [Usar el control de inicio de sesión común de los útiles de XRM](use-xrm-tooling-common-login-control-client-applications.md)<br />
 [Crear aplicaciones cliente de Windows mediante las herramientas XRM](build-windows-client-applications-xrm-tools.md)<br />
 <!-- TODO:
-[Tutorials for Learning About CDS for Apps Development](../tutorials-resources-sdk.md)<br /> -->
+[Tutorials for Learning About Common Data Service Development](../tutorials-resources-sdk.md)<br /> -->

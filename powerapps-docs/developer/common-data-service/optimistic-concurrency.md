@@ -1,5 +1,5 @@
 ---
-title: Simultaneidad optimista (Common Data Service para aplicaciones) | Microsoft Docs
+title: Simultaneidad optimista (Common Data Service) | Microsoft Docs
 description: La simultaneidad optimista ofrece la capacidad de que las aplicaciones detecten si un registro de entidad ha cambiado en el servidor desde el momento en que la aplicación recuperó el registro y cuando intenta actualizar o eliminar ese registro.
 ms.custom: ''
 ms.date: 10/31/2018

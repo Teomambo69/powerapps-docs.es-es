@@ -1,5 +1,5 @@
 ---
-title: Autenticación con los servicios web de Common Data Service para aplicaciones (Common Data Service para aplicaciones) | Microsoft Docs
+title: Autenticación con los servicios web de Common Data Service (Common Data Service) | Microsoft Docs
 description: Introduce opciones de autenticación que dependen del marco de software que use.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="authentication-with-common-data-service-for-apps-web-services"></a>Autenticación con servicios web Common Data Service para aplicaciones
+# <a name="authentication-with-common-data-service-web-services"></a>Autenticación con servicios web Common Data Service
 
-Al crear aplicaciones cliente que usan servicios web de CDS for Apps necesita autenticarse para tener acceso a datos. Cómo se autentica depende del marco de software que usa y del servicio web con el que desea conectarse.
+Al crear aplicaciones cliente que usan servicios web de Common Data Service necesita autenticarse para tener acceso a datos. Cómo se autentica depende del marco de software que usa y del servicio web con el que desea conectarse.
 
 ## <a name="net-framework-applications"></a>Aplicaciones de .NET Framework
 
@@ -35,7 +35,7 @@ OAuth también se requiere para admitir:
  - Uso de secretos de cliente para habilitar escenarios de autenticación entre servidores.
  - Uso compartido de recursos de origen cruzado (CORS) para conectar una Aplicación de una sola página (SPA).
 
-Más información: [Usar OAuth con Common Data Service para aplicaciones](authenticate-oauth.md)
+Más información: [Usar OAuth con Common Data Service](authenticate-oauth.md)
 
 ### <a name="office-365"></a>Office 365
 
@@ -49,4 +49,4 @@ Más información: [Autenticación con las aplicaciones de .NET Framework](authe
 
 Si usa elementos distintos de .NET Framework, debe autenticarse mediante el uso de OAuth y debe usar los servicios web de OData RESTful (servicio de detección de API web y de detección global de OData).
 
-Más información:  [Usar OAuth con Common Data Service para aplicaciones](authenticate-oauth.md)
+Más información:  [Usar OAuth con Common Data Service](authenticate-oauth.md)

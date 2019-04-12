@@ -1,10 +1,10 @@
 ---
-title: Crear y editar entidades virtuales con Common Data Service for Apps | MicrosoftDocs
+title: Crear y editar entidades virtuales con Common Data Service | MicrosoftDocs
 description: Aprenda a crear entidades virtuales
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,13 +25,13 @@ search.app:
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Crear y editar entidades virtuales que contienen datos desde un origen de datos externo
 
-Una entidad virtual es una entidad personalizada de Common Data Service for Apps que tiene campos que contienen datos de un origen de datos externo. Las entidades virtuales aparecen en la aplicación para los usuarios como registros de entidad normales, pero contienen datos procedentes de una base de datos externa, como una base datos SQL de Azure. Los registros basados en las entidades virtuales están disponibles en todos los clientes, incluidos los clientes personalizados desarrollados con los servicios web de CDS for Apps.  
+Una entidad virtual es una entidad personalizada de Common Data Service que tiene campos que contienen datos de un origen de datos externo. Las entidades virtuales aparecen en la aplicación para los usuarios como registros de entidad normales, pero contienen datos procedentes de una base de datos externa, como una base datos SQL de Azure. Los registros basados en las entidades virtuales están disponibles en todos los clientes, incluidos los clientes personalizados desarrollados con los servicios web de Common Data Service.  
   
 En el pasado, para integrar los orígenes de datos dispares habría que crear un conector para mover datos o para desarrollar un complemento personalizado, en el lado del cliente o del servidor. Sin embargo, con las entidades virtuales, puede conectarse directamente con un origen de datos externo en el tiempo de ejecución de forma que los datos específicos del origen de datos externo estén disponibles en un entorno, sin necesidad de replicación de datos.  
 
-Las entidades virtuales están formadas por tres componentes principales: un *proveedor de datos*, un registro de *origen de datos* y una *entidad virtual*. El proveedor de datos está formado por complementos y una entidad de origen de datos. El origen de datos es un registro de entidad de CDS for Apps, que incluye los metadatos que representan el esquema de los parámetros de conexión. Cada entidad virtual hace referencia a un origen de datos en la definición de la entidad.  
+Las entidades virtuales están formadas por tres componentes principales: un *proveedor de datos*, un registro de *origen de datos* y una *entidad virtual*. El proveedor de datos está formado por complementos y una entidad de origen de datos. El origen de datos es un registro de entidad en Common Data Service, que incluye los metadatos que representan el esquema de los parámetros de conexión. Cada entidad virtual hace referencia a un origen de datos en la definición de la entidad.  
   
-CDS for Apps incluye un proveedor de datos de OData que se puede usar para conectarse con un servicio web de OData v4 que tenga acceso a los datos externos. 
+Common Data Service incluye un proveedor de datos de OData que se puede usar para conectarse con un servicio web de OData v4 que tenga acceso a los datos externos. 
   
 Como alternativa, los programadores pueden crear sus propios proveedores de datos. Los proveedores de datos están instalados en un entorno como solución. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
@@ -41,7 +41,7 @@ Como alternativa, los programadores pueden crear sus propios proveedores de dato
   
 ## <a name="virtual-entity-benefits"></a>Ventajas de la entidad virtual  
   
-- Los desarrolladores pueden implementar complementos para leer los datos externos usando los servicios web de CDS for Apps y la herramienta de registro de complementos.  
+- Los desarrolladores pueden implementar complementos para leer los datos externos usando los servicios web de Common Data Service y la herramienta de registro de complementos.  
 - Los personalizadores del sistema usan el explorador de soluciones de PowerApps para configurar el registro del origen de datos y crear las entidades virtuales que se usan para tener acceso a datos externos sin necesidad de escribir código.  
 - Los usuarios finales trabajan con los registros creados por la entidad virtual para ver los datos en campos, cuadrículas, resultados de la búsqueda e informes y paneles basados en Fetch XML.  
   
@@ -58,7 +58,7 @@ Como alternativa, los programadores pueden crear sus propios proveedores de dato
     |Proveedor de datos|Descripción|
     |--|--|
     |*Proveedor de datos personalizado*|Si ha importado un complemento del proveedor de datos, el proveedor de datos aparecerá aquí. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)|
-    |**Proveedor de datos OData v4**|CDS for Apps incluye un proveedor de datos de OData que puede usarse con los servicios web de OData v4. Más información: [Configuración, requisitos y prácticas recomendadas del proveedor de datos de OData v4](virtual-entity-odata-provider-requirements.md)|
+    |**Proveedor de datos OData v4**|Common Data Service incluye un proveedor de datos OData que puede usarse con los servicios web de OData v4. Más información: [Configuración, requisitos y prácticas recomendadas del proveedor de datos de OData v4](virtual-entity-odata-provider-requirements.md)|
 
   
 ### <a name="add-a-secured-field-to-a-data-source"></a>Agregar un campo protegido a un origen de datos
@@ -75,7 +75,7 @@ Puede crear los campos de un origen de datos igual que con cualquier otra entida
   
 ## <a name="create-a-virtual-entity"></a>Crear entidad virtual
   
-Puede crear una entidad virtual igual que cualquier otra entidad en CDS for Apps con la incorporación de algunos atributos adicionales descritos aquí. Las entidades virtuales deben crearse usando el explorador de soluciones.
+Puede crear una entidad virtual al igual que cualquier otra entidad en Common Data Service con la incorporación de algunos atributos adicionales descritos aquí. Las entidades virtuales deben crearse usando el explorador de soluciones.
 
 > [!NOTE]
 >  Aunque puede crear una entidad virtual seleccionando **Ninguno** como origen de datos, para adquirir datos una entidad virtual requiere un origen de datos. Más información [Agregar un origen de datos para usarlo con las entidades virtuales](#AddDataSource)
@@ -140,10 +140,10 @@ Las entidades virtuales presentan estas restricciones.
 - Los campos de la entidad virtual no se pueden usar en paquetes acumulativos ni campos calculados.
 - Una entidad virtual no puede ser un tipo de actividad de entidad.  
 - Muchas características que afectan a filas de la tabla de la entidad no se pueden habilitar con entidades virtuales.  Los ejemplos incluyen colas, administración del conocimiento, SLA, detección de duplicados, seguimiento de los cambios, capacidad de Mobile offline, seguridad de campo, Búsqueda por relevancia, portales para soluciones de portal web de Dynamics 365 y relaciones N:N entre entidades virtuales.  
-- Las entidades virtuales son propiedad de la organización y no admiten los conceptos de seguridad de nivel de fila de Common Data Service para aplicaciones. Se recomienda implementar su propio modelo de seguridad para el origen de datos externo.  
-- Se recomienda centrarse en un único origen de datos al usar las entidades virtuales en las búsquedas avanzadas. Por ejemplo, no se admite crear una búsqueda avanzada que, en última instancia, cree una combinación entre los datos nativos de Common Data Service para aplicaciones y los datos externos de la entidad virtual.  
+- Las entidades virtuales son propiedad de la organización y no admiten los conceptos de seguridad de nivel de fila de Common Data Service. Se recomienda implementar su propio modelo de seguridad para el origen de datos externo.  
+- Se recomienda centrarse en un único origen de datos al usar las entidades virtuales en las búsquedas avanzadas. Por ejemplo, no se admite crear una búsqueda avanzada que, en última instancia, cree una combinación entre los datos nativos de Common Data Service y los datos externos de la entidad virtual.  
 - Las propiedades de metadatos de campos que se validan en la actualización no se aplican a las entidades virtuales. Por ejemplo, un campo Número entero en un campo de la entidad virtual puede establecerse para tener un valor mínimo de cero. Sin embargo, ya que el valor se proporcionará de un origen de datos externos, una consulta devolverá valores menores que cero cuando se recuperen de una entidad virtual.  La propiedad de valor mínimo no se implica en la consulta.  Aún debería filtrar los valores para que sean mayores que 0 si es lo se desea.
-- Las entidades virtuales no admiten el seguimiento de los cambios y no se pueden sincronizar usando una característica de CDS for Apps, como el Servicio de exportación de datos.
+- Las entidades virtuales no admiten el seguimiento de los cambios y no se pueden sincronizar usando una característica de Common Data Service, como el Servicio de exportación de datos.
   
 ### <a name="see-also"></a>Vea también  
 

@@ -1,13 +1,13 @@
 ---
-title: Crear una regla de negocio en Common Data Service for Apps | Microsoft Docs
-description: Instrucciones paso a paso para ver cómo crear una regla de negocio en Common Data Service (CDS) for Apps.
-author: clwesene
+title: Crear una regla de negocio en Common Data Service | Microsoft Docs
+description: Instrucciones paso a paso para ver cómo crear una regla de negocio en Common Data Service.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

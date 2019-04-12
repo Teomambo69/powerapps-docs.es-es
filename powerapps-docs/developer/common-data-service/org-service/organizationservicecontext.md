@@ -1,5 +1,5 @@
 ---
-title: Usar OrganizationServiceContext (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar OrganizationServiceContext (Common Data Service) | Microsoft Docs
 description: 'La clase OrganizationServiceContext permite controlar los cambios, administrar identidades y relaciones, y proporciona acceso al proveedor de LINQ.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-organizationservicecontext"></a>Usar OrganizationServiceContext
 
-En el Common Data Service para aplicaciones, puede usar las distintas clases que implementan la interfaz de <xref:Microsoft.Xrm.Sdk.IOrganizationService> para acceder a los servicios web. Como alternativa, puede usar el <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> generado por la herramienta de generación de código para acceder a la funcionalidad adicional. La clase `OrganizationServiceContext` permite controlar los cambios, administrar identidades y relaciones, y proporciona acceso al proveedor de LINQ. Esta clase también contiene un método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> que se usa para enviar los cambios a datos que el contexto está siguiendo. Esta clase se basa en el mismo concepto que el de la clase [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) en los servicios de datos de Windows Communication Foundation (WCF).  
+En el Common Data Service, puede usar las distintas clases que implementan la interfaz de <xref:Microsoft.Xrm.Sdk.IOrganizationService> para acceder a los servicios web. Como alternativa, puede usar el <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> generado por la herramienta de generación de código para acceder a la funcionalidad adicional. La clase `OrganizationServiceContext` permite controlar los cambios, administrar identidades y relaciones, y proporciona acceso al proveedor de LINQ. Esta clase también contiene un método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> que se usa para enviar los cambios a datos que el contexto está siguiendo. Esta clase se basa en el mismo concepto que el de la clase [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) en los servicios de datos de Windows Communication Foundation (WCF).  
   
 Para generar esta clase, proporcione un valor para el parámetro de `/serviceContextName` cuando genere enlaces en tiempo de compilación. La herramienta de generación de código usa este nombre como nombre de la clase generada. Para obtener más información acerca de cómo utilizar la herramienta de generación de código, consulte [Generar clases de entidad con enlace en tiempo de compilación con la herramienta de generación de código (CrmSvcUtil.exe)](generate-early-bound-classes.md). Puede usar el contexto del servicio de la organización cuando desarrolle aplicaciones, complementos y actividades de flujo de trabajo.  
   
@@ -37,13 +37,13 @@ AdventureWorksCycleServiceContext context = new AdventureWorksCycleServiceContex
   
 Tras crear el objeto del contexto del servicio de la organización, puede iniciar el seguimiento para crear, editar o eliminar entidades. 
   
-El contexto del servicio de la organización debe seguir a cualquier entidad o relación que desee enviar a CDS para aplicaciones. Por ejemplo, podría recuperar un registro con una consulta LINQ y el contexto realizaría el seguimiento de esa entidad o podría usar el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> para hacer que el contexto inicie el seguimiento de la entidad. Puede trabajar con datos en una aplicación cliente y crear entidades nuevas o relacionadas, y modificar las entidades existentes, pero debe llamar al método `SaveChanges` en las entidades seguidas para confirmar los cambios en CDS para aplicaciones.  
+El contexto del servicio de la organización debe seguir cualquier entidad o relación que desee enviar a Common Data Service. Por ejemplo, podría recuperar un registro con una consulta LINQ y el contexto realizaría el seguimiento de esa entidad o podría usar el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> para hacer que el contexto inicie el seguimiento de la entidad. Puede trabajar con datos en una aplicación cliente y crear entidades nuevas, crear entidades relacionadas, y modificar las entidades existentes, pero debe llamar al método de `SaveChanges` en las entidades seguidas para confirmar los cambios en Common Data Service.  
   
 <a name="track_changes"></a>
 
 ## <a name="track-changes"></a>Seguimiento de cambios
  
-Para determinar cómo el contexto sigue a una entidad, puede comprobar la propiedad de <xref:Microsoft.Xrm.Sdk.Entity.EntityState> en la instancia de entidad. Debe notificar al contexto del servicio de la organización que siga a una entidad de CDS para aplicaciones llamando a varios métodos o utilizando una consulta de LINQ. El contexto de servicio sigue a todas las entidades devueltas por una consulta de LINQ.  
+Para determinar cómo el contexto sigue a una entidad, puede comprobar la propiedad de <xref:Microsoft.Xrm.Sdk.Entity.EntityState> en la instancia de entidad. Debe notificar al contexto del servicio de la organización que siga a una entidad de Common Data Service llamando a varios métodos o utilizando una consulta de LINQ. El contexto de servicio sigue a todas las entidades devueltas por una consulta de LINQ.  
   
 Puede agregar objetos al contexto de servicio llamando a uno de los siguientes métodos en <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.  
   
@@ -57,7 +57,7 @@ Puede agregar objetos al contexto de servicio llamando a uno de los siguientes m
 
 ## <a name="track-related-objects"></a>Seguimiento de objetos relacionados
 
-En CDS para aplicaciones, el contexto del servicio de organización permite crear y actualizar relaciones entre entidades. Las propiedades de navegación generadas por la herramienta CrmSvcUtil.exe y ubicadas en las clases de enlace en tiempo de compilación permiten acceder y cambiar propiedades y relaciones relacionadas con la entidad. El contexto del servicio de la organización debe seguir la entidad relacionada para que la entidad relacionada esté disponible para actualizarse en el servidor.  
+En Common Data Service, el contexto del servicio de la organización permite crear y actualizar relaciones entre entidades. Las propiedades de navegación generadas por la herramienta CrmSvcUtil.exe y ubicadas en las clases de enlace en tiempo de compilación permiten acceder y cambiar propiedades y relaciones relacionadas con la entidad. El contexto del servicio de la organización debe seguir la entidad relacionada para que la entidad relacionada esté disponible para actualizarse en el servidor.  
   
 Use los siguientes métodos en el <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> para trabajar con entidades relacionadas y agregar la entidad al contexto del servicio:  
   
@@ -106,8 +106,8 @@ A veces puede ser necesario realizar acciones en función de los cambios en el <
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnBeginLinkTracking(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship,Microsoft.Xrm.Sdk.Entity)>|Llamado después de que un vínculo se asocie a `OrganizationServiceContext`.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|Llamado después de que una entidad se desasocie de `OrganizationServiceContext`.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|Llamado después de que un vínculo se desasocie de `OrganizationServiceContext`.|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|Se llama inmediatamente antes de que se envíe una solicitud a CDS para aplicaciones.|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|Se llama inmediatamente después de que se envíe una solicitud a CDS para aplicaciones, independientemente de si se produjo una excepción o no.|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|Llamado inmediatamente antes de que una solicitud se envíe a Common Data Service.|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|Llamado inmediatamente después de que una solicitud se envíe a Common Data Service, independientemente de si se produjo una excepción o no.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSavingChanges(Microsoft.Xrm.Sdk.Client.SaveChangesOptions)>|Llamado antes de que ocurra una operación tras una llamada a `SaveChanges`.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSaveChanges(Microsoft.Xrm.Sdk.SaveChangesResultCollection)>|Llamado cuando todas las operaciones de una llamada a `SaveChanges` se han completado, o si hay un error.|  
 
@@ -116,7 +116,7 @@ A veces puede ser necesario realizar acciones en función de los cambios en el <
 
 ## <a name="data-operations"></a>Operaciones de datos
 
-Puede modificar, crear y eliminar objetos del contexto de servicio de la organización, y CDS para aplicaciones hace un seguimiento de los cambios realizados en estos objetos. Cuando se llama al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Cuando se llama al método, CDS para aplicaciones genera y ejecuta comandos que realizan las instrucciones de inserción, actualización o eliminación equivalentes en los datos de CDS para aplicaciones.  
+Puede modificar, crear y eliminar objetos del contexto de servicio de la organización, y Common Data Service hace un seguimiento de los cambios realizados en estos objetos. Cuando se llama al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Cuando se llama al método, Common Data Service genera y ejecuta comandos que realizan las instrucciones de inserción, actualización o eliminación equivalentes en los datos de Common Data Service.  
   
 Al trabajar con clases de entidad de enlace de tiempo de compilación, se utiliza el nombre de entidad y el nombre de esquema del atributo para especificar una entidad o un atributo con el que trabajar. Los nombres de esquema del atributo se definen en <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.SchemaName> y <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName>, o puede usar los nombres de clase y de propiedad mostrados en el archivo generado por el código. El siguiente ejemplo muestra cómo asignar un valor al atributo de correo electrónico de una nueva instancia de contacto.  
   
@@ -130,7 +130,7 @@ contact.EMailAddress1 = “sonny@contoso.com”;
 
 ## <a name="create-a-new-entity-record"></a>Creación de un nuevo registro
 
- Si desea insertar datos en CDS para aplicaciones mediante el modelo de datos de entidad, debe crear una instancia de un tipo de entidad y agregar el objeto a un contexto de servicio de la organización. El contexto de servicio de la organización debe realizar un seguimiento del objeto para poder guardarlo en CDS para aplicaciones.  
+ Si desea insertar datos en Common Data Service mediante el modelo de datos de la entidad, debe crear una instancia de un tipo de entidad y agregar el objeto a un contexto de servicio de la organización. El contexto de servicio de la organización debe realizar un seguimiento del objeto para poder guardarlo en Common Data Service.  
   
  Cuando se crea un nuevo registro de entidad, se agrega el objeto al contexto de servicio de la organización mediante el <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddObject(Microsoft.Xrm.Sdk.Entity)>. Método.  
   
@@ -155,13 +155,13 @@ orgContext.SaveChanges();
 
 Existen varios puntos a tener en cuenta en el código de ejemplo anterior. Primero, después de que se cree una instancia de un nuevo contacto, pasa ese objeto de contacto al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddObject(Microsoft.Xrm.Sdk.Entity)> de manera que el contexto puede seguir realizando un seguimiento del objeto. El segundo punto es que el nuevo objeto se guarda en el servidor mediante el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> .  
   
-Después de agregar un objeto al contexto y antes de que se llame al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>, el contexto genera un identificador para el nuevo objeto. Una excepción que contiene el valor `SaveChangesResults` se genera desde el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> si falla alguna actualización en los datos de CDS para aplicaciones.  
+Después de agregar un objeto al contexto y antes de que se llame al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>, el contexto genera un identificador para el nuevo objeto. Una excepción que contiene el valor `SaveChangesResults` se genera desde el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> si falla alguna actualización en los datos de Common Data Service.  
   
 <a name="update"></a>   
 
 ## <a name="update-an-entity-record"></a>Actualizar un registro de entidad  
 
-CDS para aplicaciones hace un seguimiento de los cambios en los objetos asociados al contexto de servicio de la organización. Para modificar un registro de entidad existente, primero debe agregar el objeto al contexto. Para agregar un objeto al contexto, primero debe recuperar el registro de entidad de CDS para aplicaciones y después agregar el objeto al contexto mediante el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>. Una vez el contexto esté realizando el seguimiento del objeto, puede actualizar el registro estableciendo los atributos de la entidad.  
+Common Data Service hace un seguimiento de los cambios en los objetos asociados al contexto de servicio de la organización. Para modificar un registro de entidad existente, primero debe agregar el objeto al contexto. Para agregar un objeto al contexto, primero debe recuperar el registro de entidad de Common Data Service y después agregar el objeto al contexto mediante el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>. Una vez el contexto esté realizando el seguimiento del objeto, puede actualizar el registro estableciendo los atributos de la entidad.  
   
 El siguiente ejemplo muestra cómo actualizar un atributo de cuenta con clases de enlaces en tiempo de compilación.  
   
@@ -181,11 +181,11 @@ Account.EMailAddress1 = null;
 
 ## <a name="delete-an-entity-record"></a>Elimine un registro de entidad   
 
-Para eliminar un registro de entidad, el contexto de servicio de la organización debe realizar un seguimiento del objeto. Una vez el objeto esté en el contexto, puede usar el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)> para marcar el objeto en el contexto para su eliminación. Tenga en cuenta que el registro de entidad de CDS para aplicaciones no se eliminará hasta que se llame al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> .  
+Para eliminar un registro de entidad, el contexto de servicio de la organización debe realizar un seguimiento del objeto. Una vez el objeto esté en el contexto, puede usar el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)> para marcar el objeto en el contexto para su eliminación. Tenga en cuenta que el registro de entidad de Common Data Service no se eliminará hasta que se llame al método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> .  
   
 ### <a name="see-also"></a>Vea también
 
-[Ejemplos de la consulta LINQ mediante OrganizationServiceContext con Common Data Service para aplicaciones](linq-query-examples.md)<br />
+[Ejemplos de la consulta LINQ mediante OrganizationServiceContext con Common Data Service](linq-query-examples.md)<br />
 [Generar clases para programación en tiempo de compilación con el servicio de la organización](generate-early-bound-classes.md)<br />
 <xref:Microsoft.Xrm.Sdk.IOrganizationService><br />
 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>

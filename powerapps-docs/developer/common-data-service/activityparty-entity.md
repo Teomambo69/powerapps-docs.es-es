@@ -1,5 +1,5 @@
 ---
-title: Entidad ActivityParty (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidad ActivityParty (Common Data Service) | Microsoft Docs
 description: Un grupo de actividad representa a una persona o grupo asociado a una actividad. Una actividad puede tener varios grupos de actividad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,7 +23,7 @@ Un grupo de actividad representa a una persona o grupo asociado a una actividad.
 
 ## <a name="activity-party-types"></a>Tipos de grupo de actividad  
 
- Hay 11 tipos de parte de actividad en Common Data Service para aplicaciones. El tipo de grupo de actividad se guarda como valor entero en el atributo `ActivityParty.ParticipationTypeMask`. La siguiente tabla muestra los diferentes tipos de grupo de actividad, el valor entero correspondiente para el atributo `ActivityParty.ParticipationTypeMask` y la descripción.  
+ Hay 11 tipos de parte de actividad en Common Data Service. El tipo de grupo de actividad se guarda como valor entero en el atributo `ActivityParty.ParticipationTypeMask`. La siguiente tabla muestra los diferentes tipos de grupo de actividad, el valor entero correspondiente para el atributo `ActivityParty.ParticipationTypeMask` y la descripción.  
   
 |Tipo de grupo de actividad|Value|Descripción|  
 |-------------------------|-----------|-----------------|  
@@ -41,7 +41,7 @@ Un grupo de actividad representa a una persona o grupo asociado a una actividad.
   
 <a name="SupportedActivityPartyTypes"></a>   
 ## <a name="activity-party-types-available-for-each-activity"></a>Tipos de grupo de actividad disponibles para cada actividad  
- No todos los tipos del grupo de actividad están disponibles para cada actividad en CDS for Apps, salvo en el caso de una actividad personalizada. Una actividad personalizada admite todos los tipos de grupo de actividad. Puede asociar un tipo de grupo de actividad para una actividad mediante el atributo respectivo de una actividad. Por ejemplo, para asociar un tipo de grupo de actividad de `Organizer` a una actividad de cita, debe especificar un valor o una matriz de valores del `ActivityParty` tipo en el atributo `Appointment.Organizer`.  
+ No todos los tipos del grupo de actividad están disponibles para cada actividad en Common Data Service, salvo en el caso de una actividad personalizada. Una actividad personalizada admite todos los tipos de grupo de actividad. Puede asociar un tipo de grupo de actividad para una actividad mediante el atributo respectivo de una actividad. Por ejemplo, para asociar un tipo de grupo de actividad de `Organizer` a una actividad de cita, debe especificar un valor o una matriz de valores del `ActivityParty` tipo en el atributo `Appointment.Organizer`.  
   
  Para controlar qué dirección de correo electrónico debe usarse para enviar correos electrónicos al grupo de actividad, o para responder a mensajes de correo electrónico del grupo de actividad, establezca el atributo `ActivityParty.AddressUsed`.  
   

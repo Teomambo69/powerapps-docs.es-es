@@ -1,10 +1,10 @@
 ---
-title: Ejemplo de funciones y acciones de API web (Common Data Service para aplicaciones) | Microsoft Docs
-description: 'Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones. Estos están implementados mediante JavaScript del lado cliente y C#'
+title: Ejemplo de funciones y acciones de API web (Common Data Service) | Microsoft Docs
+description: 'Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service. Estos están implementados mediante JavaScript del lado cliente y C#'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Ejemplo de funciones y acciones de la API web
 
-Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service para aplicaciones. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
+Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
   
 -   [Ejemplo de funciones y acciones de la API web (C#)](samples/functions-actions-csharp.md)  
   
@@ -46,13 +46,13 @@ Este ejemplo se divide en las siguientes secciones principales, que contienen op
 |[Uso de la acción personalizada sin enlazar con parámetros](#bkmk_unboundCustomActionWithParams)|[Utilizar una acción personalizada](use-web-api-actions.md#bkmk_customActions)<br /><br /> [Acciones sin enlazar](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" />|  
 |[Administrar excepciones de la acción personalizada](#bkmk_boundCustomActionErrorHandling)|[Utilizar una acción personalizada](use-web-api-actions.md#bkmk_customActions)<br /><br /> [Acciones sin enlazar](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" />|  
   
-Las siguientes secciones contienen una breve explicación de las operaciones de la API web de CDS para aplicaciones realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola.  
+Las siguientes secciones contienen una breve explicación de las operaciones de la API web de Common Data Service realizadas, junto con mensajes HTTP correspondientes y la salida asociada de la consola.  
   
 <a name="bkmk_sampleData"></a>
    
 ## <a name="sample-data"></a>Datos de ejemplo  
 
-Para garantizar que las operaciones de este ejemplo funcionan correctamente, primero creamos datos de ejemplo en el servidor de CDS para aplicaciones. Estos datos de ejemplo se eliminarán del servidor a menos que el usuario elija no eliminarlos. Los datos de este ejemplo se crean individualmente de la siguiente forma.  
+Para garantizar que las operaciones de este ejemplo funcionan correctamente, primero creamos datos de ejemplo en el servidor de Common Data Service. Estos datos de ejemplo se eliminarán del servidor a menos que el usuario elija no eliminarlos. Los datos de este ejemplo se crean individualmente de la siguiente forma.  
   
 - Cree una cuenta (por ejemplo: `Fourth Coffee`) y asóciela con un incidente que tiene tres tareas de 30 minutos (90 minutos en total). Tras crear las tareas, se marcan como completadas. La operación calculará el tiempo total que se tardó en completar estas tres tareas.  
   
@@ -318,7 +318,7 @@ Bound Action: AddToQueue
   
 ## <a name="working-with-custom-actions"></a>Trabajar con acciones personalizadas  
 
-Si define las acciones personalizadas para la solución, puede llamarlas mediante la API web de CDS para aplicaciones. Independientemente de si las operaciones incluidas en la acción personalizada tienen efectos secundarios, potencialmente pueden modificar datos y, por tanto, se consideran acciones en lugar de funciones. No hay forma de crear una función personalizada. Más información:[Usar una acción personalizada](use-web-api-actions.md#bkmk_customActions).  
+Si define las acciones personalizadas para la solución, puede llamarlas mediante la API web de Common Data Service. Independientemente de si las operaciones incluidas en la acción personalizada tienen efectos secundarios, potencialmente pueden modificar datos y, por tanto, se consideran acciones en lugar de funciones. No hay forma de crear una función personalizada. Más información:[Usar una acción personalizada](use-web-api-actions.md#bkmk_customActions).  
   
 Este ejemplo se suministra con dos acciones personalizadas. Ambas requieren parámetros pero una está enlazada y la otra sin enlazar.  
   
@@ -486,7 +486,7 @@ Expected custom error: ContactFirstName and ContactLastName are required when Cu
   
 ### <a name="see-also"></a>Vea también  
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
 [Usar funciones de la API web](use-web-api-functions.md)<br />
 [Usar acciones de la API web](use-web-api-actions.md)<br />
 [Ejemplo de funciones y acciones de la API web (C#)](samples/functions-actions-csharp.md)<br />

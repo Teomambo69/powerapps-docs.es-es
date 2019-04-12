@@ -1,5 +1,5 @@
 ---
-title: Seguimiento de dependencias para componentes de la solución (Common Data Service para aplicaciones) | Microsoft Docs
+title: Seguimiento de dependencias para componentes de la solución (Common Data Service) | Microsoft Docs
 description: Las dependencias de los componentes de la solución ayudan a garantizar una experiencia confiable cuando trabaja con soluciones. Pueden verse en la aplicación haciendo clic en Mostrar dependencias
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Seguimiento de las dependencias de los componentes de la solución
 
-Las soluciones están hechas de componentes de soluciones. Usará el área **Soluciones** en Common Data Service para aplicaciones para crear o agregar componentes de la solución. Puede realizar estas acciones mediante programación usando el mensaje de <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> o cualquier mensaje que cree o actualice componentes de la solución que incluyen un parámetro de `SolutionUniqueName`.  
+Las soluciones están hechas de componentes de soluciones. Usará el área **Soluciones** en Common Data Service para crear o agregar componentes de la solución. Puede realizar estas acciones mediante programación usando el mensaje de <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> o cualquier mensaje que cree o actualice componentes de la solución que incluyen un parámetro de `SolutionUniqueName`.  
   
  Los componentes de la solución a menudo dependen de otros componentes. No puede eliminar cualquier componente de la solución que tenga dependencia de otro componente de la solución. Por ejemplo, una cinta personalizada requiere normalmente recursos web de imagen o de script para mostrar iconos y realizar acciones mediante scripts. Mientras la cinta personalizada esté en la solución, serán necesarios los recursos web específicos que use. Para poder eliminar los recursos web debe quitar las referencias a ellos en la cinta personalizada. Estas dependencias de componentes de solución se pueden ver en la aplicación haciendo clic en **Mostrar dependencias**.  
   
@@ -50,7 +50,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
   Existen tres tipos de dependencias de componentes de solución:  
   
   **Elemento interno de la solución**  
-  Las dependencias internas las administra CDS for Apps. Existen cuando un componente de la solución en particular no puede existir sin otro componente de la solución.  
+  Las dependencias internas las administra Common Data Service. Existen cuando un componente de la solución en particular no puede existir sin otro componente de la solución.  
   
   **Publicado**  
   Las dependencias públicas se crean cuando dos componentes de la solución se relacionan mutuamente y luego se publican. Para eliminar este tipo de dependencia, debe eliminarse la asociación y, a continuación, se deben volver a publicar las entidades.  
@@ -120,7 +120,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
 <a name="BKMK_Entity"></a>   
 
 ### <a name="entity-entity"></a>Entidad (Entity)  
- La estructura primaria usada para modelar y administrar datos en CDS for Apps. Los gráficos, los formularios, las relaciones de entidad, las vistas y los atributos asociados a una entidad se eliminan automáticamente cuando se elimina la entidad debido a las dependencias internas entre ellos. Las entidades con frecuencia tienen publicadas dependencias con procesos, paneles y plantillas de correo electrónico.  
+ La estructura primaria usada para modelar y administrar datos en Common Data Service. Los gráficos, los formularios, las relaciones de entidad, las vistas y los atributos asociados a una entidad se eliminan automáticamente cuando se elimina la entidad debido a las dependencias internas entre ellos. Las entidades con frecuencia tienen publicadas dependencias con procesos, paneles y plantillas de correo electrónico.  
   
 <a name="BKMK_FieldSecurityProfile"></a>   
 ### <a name="field-security-profile-fieldsecurityprofile"></a>Perfil de seguridad de campo (FieldSecurityProfile)  
@@ -152,7 +152,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
   
 <a name="BKMK_Role"></a>   
 ### <a name="security-role-role"></a>Rol de seguridad (rol)  
- Agrupación de privilegios de seguridad. Se asignan a los usuarios roles que autorizan su acceso al sistema CDS for Apps. Los formularios de entidad se pueden asociar con roles de seguridad específicos para controlar quién puede ver el formulario. Esto crea una dependencia publicada entre el rol de seguridad y el formulario.  
+ Agrupación de privilegios de seguridad. Se asignan a los usuarios roles que autorizan su acceso al sistema de Common Data Service. Los formularios de entidad se pueden asociar con roles de seguridad específicos para controlar quién puede ver el formulario. Esto crea una dependencia publicada entre el rol de seguridad y el formulario.  
   
 > [!NOTE]
 >  Solo los roles de seguridad de la unidad de negocio de la organización se pueden agregar a una solución. Solo un usuario con acceso de lectura a estos roles de seguridad puede agregarlos a una solución.  

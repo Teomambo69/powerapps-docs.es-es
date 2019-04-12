@@ -1,5 +1,5 @@
 ---
-title: Usar agregación FetchXML (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar agregación FetchXML (Common Data Service) | Microsoft Docs
 description: 'Más información sobre las características de agrupación y agregación que le permiten calcular la suma, media, mínimo, máximo y recuento.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="use-fetchxml-aggregation"></a>Usar el agregado FetchXML
 
-En Common Data Service para aplicaciones, `FetchXML` incluye características de agrupación y agregación que le permiten calcular la suma, media, mínimo, máximo y recuento.  
+En Common Data Service, `FetchXML` incluye características de agrupación y agregación que le permiten calcular la suma, media, mínimo, máximo y recuento.  
   
  Se admiten las siguientes funciones de agregado:  
   
@@ -101,7 +101,7 @@ System.Console.WriteLine("===============================");
 ```
   
 ### <a name="limitation-with-null-values-while-computing-average"></a>Limitación con valores nulos mientras se calcula el promedio  
- Los valores **null** no se consideran cuando CDS para aplicaciones calcula el promedio de los datos. En su lugar, se usa cero (0).  
+ Los valores **null** no se consideran cuando Common Data Service calcula la media de los datos. En su lugar, se usa cero (0).  
   
  En el siguiente ejemplo, con los siguientes datos, el promedio de la Cuenta 1 (dos entradas) se mostrará como 250, mientras que el promedio de la Cuenta 2 (dos entradas) se mostrará como 125.  
   
@@ -206,7 +206,7 @@ System.Console.WriteLine("===============================");
 
 ## <a name="max"></a>Max
 
- Los valores **null** no se consideran cuando Common Data Service (CDS) para aplicaciones calcula el máximo de los datos. En su lugar, se usa cero (0).  
+ Los valores **null** no se consideran cuando Common Data Service calcula el máximo de los datos. En su lugar, se usa cero (0).  
   
  El siguiente ejemplo muestra cómo usar el atributo `max``aggregate`.  
   
@@ -238,7 +238,7 @@ System.Console.WriteLine("===============================");
  
 ## <a name="min"></a>Min
 
- Los valores **null** no se consideran cuando CDS para aplicaciones calcula el mínimo de los datos. En su lugar, se usa cero (0).  
+ Los valores **null** no se consideran cuando Common Data Service calcula el mínimo de los datos. En su lugar, se usa cero (0).  
   
  El siguiente ejemplo muestra cómo usar el atributo `min``aggregate`.  
   

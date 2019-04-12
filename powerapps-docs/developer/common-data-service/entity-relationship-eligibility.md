@@ -1,5 +1,5 @@
 ---
-title: Idoneidad de las relaciones entre entidades (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Idoneidad de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
 description: En el artículo se enumeran los mensajes que puede usar para determinar si las entidades pueden participar en relaciones entre entidades.
 ms.custom: ''
 ms.date: 10/31/2018

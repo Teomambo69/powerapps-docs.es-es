@@ -1,6 +1,6 @@
 ---
-title: Ejecución de varias solicitudes con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
-description: El mensaje ExecuteMultipleRequest admite un rendimiento mayor de los mensajes en masa que pasan escenarios en Common Data Service para aplicaciones.
+title: Ejecución de varias solicitudes con el servicio de la organización (Common Data Service) | Microsoft Docs
+description: El mensaje ExecuteMultipleRequest admite un rendimiento mayor de los mensajes en masa que pasan escenarios en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -19,12 +19,12 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
 
 -->
 El objetivo principal de ejecutar varias solicitudes es mejorar el rendimiento en entornos de latencia alta mediante la reducción de volumen de datos total que se transmite a través de la red.
 
-Puede utilizar el mesaje <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> para admitir un rendimiento superior de mensajes en masa que pasan entre escenarios de Common Data Service para aplicaciones. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> acepta una colección de entrada de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests> de mensajes, ejecuta cada una de las solicitudes de mensajes en el orden que aparecen en la colección de entrada y opcionalmente devuelve una colección de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> que contiene la respuesta de cada mensaje o el error que se han producido. Cada solicitud de mensaje en la colección de entrada se procesa en una transacción independiente de la base de datos. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> se ejecuta usando el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> .  
+Puede utilizar el mesaje <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> para admitir un rendimiento superior de mensajes en masa que pasan entre escenarios de Common Data Service. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> acepta una colección de entrada de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests> de mensajes, ejecuta cada una de las solicitudes de mensajes en el orden que aparecen en la colección de entrada y opcionalmente devuelve una colección de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> que contiene la respuesta de cada mensaje o el error que se han producido. Cada solicitud de mensaje en la colección de entrada se procesa en una transacción independiente de la base de datos. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> se ejecuta usando el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> .  
   
 En general, <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> se comporta de la misma manera que si ejecutara cada solicitud de mensaje en la colección de solicitudes de entrada por separado, excepto que con mejor rendimiento. Se respeta el uso del parámetro <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.CallerId> del proxy de servicio y se aplicará a la ejecución de cada mensaje en la colección de solicitudes de entrada. Los complementos y las actividades de flujo de trabajo se ejecutan como se podría esperar para cada mensaje procesado.  
   
@@ -111,9 +111,9 @@ Existen varias restricciones relacionadas con el uso de <xref:Microsoft.Xrm.Sdk.
   
 -   **No se permite la recursión**: <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> no puede invocar a <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>. Un parámetro <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> que se encuentre en la colección de solicitudes generará un error para ese elemento de la solicitud.  
   
--   **Tamaño de lote máximo**: hay un límite en cuanto a la cantidad de solicitudes que se pueden agregar a una colección de solicitudes. Si se supera ese límite, se genera un error incluso antes de que se ejecute la primera solicitud. Un límite de 1000 solicitudes es típico aunque este cantidad máxima puede establecerse para la implementación de CDS for Apps.
+-   **Tamaño de lote máximo**: hay un límite en cuanto a la cantidad de solicitudes que se pueden agregar a una colección de solicitudes. Si se supera ese límite, se genera un error incluso antes de que se ejecute la primera solicitud. Un límite de 1000 solicitudes es típico aunque este cantidad máxima puede establecerse para la implementación de aplicaciones Common Data Service.
   
--   **Limitación de llamadas simultáneas**: para CDS for Apps hay un límite de 2 ejecuciones simultáneas de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> por organización. Si se supera ese límite, se genera un error de *Servidor ocupado* incluso antes de que se ejecute la primera solicitud. 
+-   **Limitación de llamadas simultáneas**: para Common Data Service hay un límite de 2 ejecuciones simultáneas de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> por organización. Si se supera ese límite, se genera un error de *Servidor ocupado* incluso antes de que se ejecute la primera solicitud. 
 
   
 <a name="fault"></a>

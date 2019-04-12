@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar transiciones de estado válidas (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar transiciones de estado válidas (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar transiciones de estado válidas.
 ms.custom: ''
 ms.date: 10/31/2018

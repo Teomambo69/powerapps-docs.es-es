@@ -1,6 +1,6 @@
 ---
 title: Presentación de la barra de comandos o de la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
-description: Los datos que definen comandos en Common Data Service para aplicaciones se pueden mostrar en varias formas según el cliente y las diferencias en cómo se tratan algunas entidades. Necesita tener en cuenta estos factores cuando cambia comandos de la cinta de opciones o define nuevos.
+description: Los datos que definen comandos en Common Data Service se pueden mostrar en varias formas según el cliente y las diferencias en cómo se tratan algunas entidades. Necesita tener en cuenta estos factores cuando cambia comandos de la cinta de opciones o define nuevos.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="command-bar-or-ribbon-presentation"></a>Presentación de la barra de comandos o la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
 
-Los datos que definen comandos en Common Data Service para aplicaciones se pueden mostrar en varias formas según el cliente y las diferencias en cómo se tratan algunas entidades. Necesita tener en cuenta estos factores cuando cambia comandos de la cinta de opciones o define nuevos.
+Los datos que definen comandos en Common Data Service se pueden mostrar en varias formas según el cliente y las diferencias en cómo se tratan algunas entidades. Necesita tener en cuenta estos factores cuando cambia comandos de la cinta de opciones o define nuevos.
   
 <a name="BKMK_DifferentPresentations"></a>   
 ## <a name="different-presentations-of-commands"></a>Diferentes presentaciones de comandos  

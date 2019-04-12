@@ -1,6 +1,6 @@
 ---
-title: Generar clases de enlace en tiempo de compilación con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
-description: CrmSvcUtil.exe es una herramienta de generación de código de línea de comandos para su uso con Common Data Service para aplicaciones. Esta herramienta genera clases de enlace en tiempo de compilación de .NET Framework que representan el modelo de datos de la entidad usado por CDS for Apps.
+title: Generar clases de enlace en tiempo de compilación con el servicio de la organización (Common Data Service) | Microsoft Docs
+description: CrmSvcUtil.exe es una herramienta de generación de código de línea de comandos para su uso con Common Data Service. Esta herramienta genera clases de enlace en tiempo de compilación de .NET Framework que representan el modelo de datos de la entidad usado por Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="generate-early-bound-classes-for-the-organization-service"></a>Generar clases de enlace en tiempo de compilación para el servicio de la organización
 
-**CrmSvcUtil.exe** es una herramienta de generación de código de línea de comandos para su uso con Common Data Service para aplicaciones. Esta herramienta genera clases de enlace en tiempo de compilación de .NET Framework que representan el modelo de datos de la entidad usado por CDS for Apps. La herramienta de generación de código (CrmSvcUtil.exe) se distribuye como parte del paquete de NuGet [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools). 
+**CrmSvcUtil.exe** es una herramienta de generación de código de línea de comandos para su uso con Common Data Service. Esta herramienta genera clases de enlace en tiempo de compilación de .NET Framework que representan el modelo de datos de la entidad usado por Common Data Service. La herramienta de generación de código (CrmSvcUtil.exe) se distribuye como parte del paquete de NuGet [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools). 
 
 > [!NOTE]
 > Para obtener información sobre cómo descargar la herramienta de generación de código (CrmSvcUtil.exe), consulte [Descargar herramientas de NuGet](../download-tools-NuGet.md).
@@ -28,11 +28,11 @@ La herramienta **CrmSvcUtil.exe** crea un archivo de salida de Microsoft Visual 
 
 ## <a name="generate-an-organizationservicecontext-class"></a>Generar una clase OrganizationServiceContext
 
-La herramienta también se puede usar para generar una clase derivada de clases de <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> que actúa como un contenedor de entidad en el modelo de datos de la entidad. Este contexto de servicio proporciona las instalaciones para realizar el seguimiento de los cambios y la administración de identidades, simultaneidad, y relaciones. Esta clase también expone un método de <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> que permite escribir insertos, actualizar y eliminar registros en CDS for Apps. Para obtener más información, consulte [Usar OrganizationServiceContext](organizationservicecontext.md).  
+La herramienta también se puede usar para generar una clase derivada de clases de <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> que actúa como un contenedor de entidad en el modelo de datos de la entidad. Este contexto de servicio proporciona las instalaciones para realizar el seguimiento de los cambios y la administración de identidades, simultaneidad, y relaciones. Esta clase también expone un método de <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> que permite escribir insertos, actualizar y eliminar registros en Common Data Service. Para obtener más información, consulte [Usar OrganizationServiceContext](organizationservicecontext.md).  
 
 ## <a name="use-generated-classes"></a>Use clases generadas
 
-Las clases creadas por la herramienta de generación de código están diseñadas para integrarse a una biblioteca de clases referenciada por los proyectos que usan CDS for Apps. Luego de haber generado el archivo de clase mediante la herramienta, debería agregar el archivo al proyecto de Visual Studio. También deberá agregar referencias a varios ensamblados de los que dependen las clases generadas.  
+Las clases creadas por la herramienta de generación de códigos están diseñadas para integrarse a una biblioteca de clases referenciada por los proyectos que usan Common Data Service. Luego de haber generado el archivo de clase mediante la herramienta, debería agregar el archivo al proyecto de Visual Studio. También deberá agregar referencias a varios ensamblados de los que dependen las clases generadas.  
 
 A continuación se enumeran los ensamblados a los que se debe hacer referencia en el proyecto cuando se usa el archivo de código generado.  
 
@@ -49,7 +49,7 @@ La herramienta de generación de código toma varios parámetros que determinan 
 
 Ejecute la herramienta `CrmSvcUtil.exe` desde la carpeta `Tools\CoreTools` creada cuando descargue las herramientas mediante el script descrito en [Herramientas de descargue de NuGet](../download-tools-NuGet.md). Si ejecuta la herramienta desde otra ubicación de la carpeta, asegúrese de que una copia del ensamblado `Microsoft.Xrm.Sdk.dll` se encuentre en la misma carpeta.  
 
-El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con CDS for Apps. Para usar el inicio de sesión interactivo, puede proporcionar simplemente estas opciones:
+El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con Common Data Service. Para usar el inicio de sesión interactivo, puede proporcionar simplemente estas opciones:
 
 ```ms-dos
 CrmSvcUtil.exe /interactivelogin ^
@@ -88,7 +88,7 @@ CrmSvcUtil.exe ^
 > [!NOTE]
 > Los ejemplos anteriores usan el carácter (`^`) para desglosar la lista de parámetros para mejorar la legibilidad. Puede crear los parámetros de comando con argumentos mediante el bloc de notas y después pegándolos en la línea de comandos.
 
-- Para los parámetros `username` y `password`, escriba el nombre de usuario y la contraseña que se usan para iniciar sesión a CDS for Apps. 
+- Para los parámetros `username` y `password`, escriba el nombre de usuario y la contraseña que se usan para iniciar sesión a Common Data Service. 
 - Para el parámetro de `url`, puede buscar la dirección URL correcta en la aplicación web al seleccionar **Configuración**. A continuación, desplácese hasta **Personalizaciones** y luego seleccione **Recursos de desarrollador**. La URL se muestra en **Servicio de organización**.  
 
 Para enumerar los parámetros de línea de comandos admitidos, use el siguiente comando.
@@ -118,8 +118,8 @@ La siguiente tabla muestra los parámetros de las herramientas de generación de
 |`help`|`?`|Mostrar la información de uso.|Falso|
 |`nologo`||Suprimir pancartas en tiempo de ejecución.|Falso|
 |`generateActions`||Generar clases de solicitud y respuesta para acciones personalizadas.|Falso|
-|`interactivelogin`|`il`|Cuando se use, se mostrará un diálogo para iniciar sesión en el servicio CDS for Apps. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos.|Falso|  
-|`connectionstring`|`connstr`|Contiene información, proporcionada como una sola cadena, para conectarse a una organización de CDS for Apps. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos. Para obtener más información, consulte [Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service para aplicaciones.](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).|Falso|
+|`interactivelogin`|`il`|Cuando se use, se mostrará un diálogo para iniciar sesión en el servicio Common Data Service. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos.|Falso|  
+|`connectionstring`|`connstr`|Contiene información, proporcionada como una sola cadena, para conectarse a una organización de Common Data Service. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos. Para obtener más información, consulte [Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).|Falso|
 
 
 <a name="bkmk_sampleconfig"></a>

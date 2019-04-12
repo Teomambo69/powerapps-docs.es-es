@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Ejecución de varias solicitudes (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Ejecución de varias solicitudes (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo ejecutar varias solicitudes de mensaje de la organización mediante una sola llamada al método de servicio web.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-execute-multiple-requests"></a>Ejemplo: ejecutar varias solicitudes
 
-En este ejemplo se muestra cómo ejecutar varias solicitudes de la organización mediante una sola llamada al método de servicio web, pasando [ExecuteMultipleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) como parámetro. Reducir el número de solicitudes de mensajes que se deben transferir a través de la red da lugar a un mayor rendimiento del procesamiento de mensajes.
+En este ejemplo se muestra cómo ejecutar varias solicitudes de la organización mediante una sola llamada al método de servicio web, pasando [ExecuteMultipleRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) como parámetro. Reducir el número de solicitudes de mensajes que se deben transferir a través de la red da lugar a un mayor rendimiento del procesamiento de mensajes.
 
 Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExecutemultipleRequests).
 

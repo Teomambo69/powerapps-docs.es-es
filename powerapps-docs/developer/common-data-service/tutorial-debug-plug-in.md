@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar un complemento (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Depurar un complemento (Common Data Service) | Microsoft Docs'
 description: 'Este tutorial es el segundo de una serie que le muestra cómo trabajar con los complementos. '
 ms.custom: ''
 ms.date: 1/28/2019
@@ -49,7 +49,7 @@ Puesto que el complemento se ejecuta en un servidor remoto, no puede adjuntar un
 
     ![Instale el generador de perfiles](media/tutorial-debug-plug-in-install-profiler.md.png)
 
-1. Esto instalará una nueva solución administrada con el nombre Generador de perfiles de complementos en su entorno de CDS para aplicaciones. Esto llevará un minuto o dos para completar.
+1. Esto instalará una nueva solución administrada con el nombre Generador de perfiles de complementos en su entorno de Common Data Service. Esto llevará un minuto o dos para completar.
 
 ## <a name="start-profiling"></a>Iniciar generación de perfiles
 

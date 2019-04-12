@@ -1,5 +1,5 @@
 ---
-title: Paginar grandes conjuntos de resultados con FetchXML (Common Data Service para aplicaciones) | Documentos de Microsoft
+title: Paginar grandes conjuntos de resultados con FetchXML (Common Data Service) | Documentos de Microsoft
 description: Lea cómo puede paginar los resultados de una consulta FetchXML mediante la cookie de paginación.
 ms.custom: ''
 ms.date: 10/31/2018

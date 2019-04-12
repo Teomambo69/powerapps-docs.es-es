@@ -1,5 +1,5 @@
 ---
-title: Usar la clase ColumnSet (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar la clase ColumnSet (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-columnset-class"></a>Use la clase ColumnSet
 
-En Common Data Service para aplicaciones, puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> para especificar qué atributos se devuelven de una consulta definida mediante las clases <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> y <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>. También es un parámetro para el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> y se usa como propiedad en varias clases de solicitudes de mensaje que devuelven datos en una <xref:Microsoft.Xrm.Sdk.EntityCollection>.
+En Common Data Service, puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> para especificar qué atributos se devuelven de una consulta definida mediante las clases <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> y <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>. También es un parámetro para el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> y se usa como propiedad en varias clases de solicitudes de mensaje que devuelven datos en una <xref:Microsoft.Xrm.Sdk.EntityCollection>.
 
 > [!NOTE]
 > La clase <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> tiene una propiedad <xref:Microsoft.Xrm.Sdk.Query.ColumnSet.AllColumns> que especifica que todas las columnas de la entidad deben ser devueltas. Como práctica recomendada del rendimiento, no debería utilizarla para código de producción. Más información: [No recuperar la entidad todas las columnas mediante API de consulta](/dynamics365/customer-engagement/guidance/data/retrieve-specific-columns-entity-via-query-apis)

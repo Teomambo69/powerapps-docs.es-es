@@ -1,5 +1,5 @@
 ---
-title: Asociar y desasociar entidades con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Asociar y desasociar entidades con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Más información sobre cómo asociar y desasociar entidades con el servicio de la organización
 ms.custom: ''
 ms.date: 10/31/2018

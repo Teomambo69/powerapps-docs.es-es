@@ -1,9 +1,9 @@
 ---
-title: 'Característica de vista previa: Utilizar el proveedor de datos de Azure Cosmos DB para la API de SQL con Common Data Service for Apps | MicrosoftDocs'
+title: 'Característica de vista previa: Utilizar el proveedor de datos de Azure Cosmos DB para la API de SQL con Common Data Service | MicrosoftDocs'
 description: Aprenda a configurar el proveedor de datos de Azure Cosmos DB para el proveedor de datos de la API de SQL para usar con entidades virtuales.
 keywords: API de SQL
 ms.date: 02/15/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -52,9 +52,9 @@ Supongamos que tiene un documento de Azure Cosmos DB en una colección denominad
 
 ![JSON de ejemplo para documento de API de SQL](media/documentdbexample.png)
 
-Esta tabla indica las asignaciones de tipo de datos para el documento de la API de SQL en la recopilación *Pedidos* con Common Data Service for Apps.
+Esta tabla indica las asignaciones de tipo de datos para el documento de la API de SQL en la recopilación *Pedidos* con Common Data Service.
 
-|Datos de la API de SQL|CDS for Apps|
+|Datos de la API de SQL|Common Data Service|
 |--|--|
 |`id`|Clave principal|
 |`name`|Línea de texto única|
@@ -67,7 +67,7 @@ Esta tabla indica las asignaciones de tipo de datos para el documento de la API 
 
 > [!NOTE]
 > - Los atributos con un prefijo de subrayado (_) se generan mediante la API de SQL.
-> - Los atributos que están configurados como opcionales en el documento de la API de SQL y se asignan en CDS for Apps como **Necesario para la empresa** generarán un error de tiempo de ejecución.
+> - Los atributos que están configurados como opcionales en el documento de la API de SQL y se asignan en Common Data Service como **Necesario para la empresa** generarán un error de tiempo de ejecución.
 > - los valores de atributo de identificador deben ser guids.
 > - Para obtener más información sobre el uso de fechas en la API de SQL, consulte [Trabajar con fechas en Azure Cosmos DB](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/).
 
@@ -78,7 +78,7 @@ El filtro de consultas SQL admite los siguientes operadores.
 - Operadores de comparación:`<`,`>`,`<=`, `>=`,`!=`
 - Operadores lógicos: `and`, `or` 
 - Operadores de conjuntos: `in`, `not in`
-- Operadores de cadena: `like`, `contains`, b`egins with`, `ends with`
+- Operadores de cadena: `like`, `contains`, `begins with`, `ends with`
 
 > [!NOTE]
 > El uso del operador like se traduce en el equivalente a los operadores `contains`/`begins with`/`ends with`. La API de SQL no admite argumentos de patrón como se explica en el tema [Like (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql). El proveedor de datos de Azure Cosmos DB para la API de SQL puede traducir el caso único especial `Like('[aA]%')` a `BeginsWith('a')` o `BeginsWith('A')`. Tenga en cuenta que la comparación de cadenas en la API de SQL distingue entre mayúsculas y minúsculas.

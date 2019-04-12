@@ -1,10 +1,10 @@
 ---
-title: Use constructores CrmServiceClient para conectarse a CDS para aplicaciones (Common Data Service para aplicaciones)| Microsoft Docs
-description: 'Puede crear una instancia de la clase CrmServiceClient y, a continuación, utilizar uno de los constructores para conectar a Common Data Service para aplicaciones'
+title: Use constructores CrmServiceClient para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
+description: 'Puede crear una instancia de la clase CrmServiceClient y, a continuación, utilizar uno de los constructores para conectar a Common Data Service'
 ms.custom: ''
 ms.date: 12/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,11 +21,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-crmserviceclient-constructors-to-connect-to-cds-for-apps"></a>Usar constructores CrmServiceClient para conectarse a CDS para aplicaciones
+# <a name="use-crmserviceclient-constructors-to-connect-to-common-data-service"></a>Usar constructores CrmServiceClient para conectarse a Common Data Service
 
-Use los distintos constructores para crear una instancia de la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para conectarse a aplicaciones de Dynamics 365 for Customer Engagement. Más información: [Constructores de CrmServiceClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient.-ctor)
+Use los distintos constructores para crear una instancia de la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para conectarse a aplicaciones de Dynamics 365 for Customer Engagement. Más información: [Constructores de CrmServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient.-ctor)
 
-El constructor [cadena de conexión](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient.-ctor?view=dynamics-xrmtooling-ce-9#Microsoft_Xrm_Tooling_Connector_CrmServiceClient__ctor_System_String_) es la forma más sencilla y cómoda para obtener una instancia de la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. Más información: [Usar cadenas de conexión en útiles de XRM para conectarse a aplicaciones Dynamics 365 for Customer Engagement](use-connection-strings-xrm-tooling-connect.md).
+El constructor [cadena de conexión](https://docs.microsoft.com/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient.-ctor?view=dynamics-xrmtooling-ce-9#Microsoft_Xrm_Tooling_Connector_CrmServiceClient__ctor_System_String_) es la forma más sencilla y cómoda para obtener una instancia de la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. Más información: [Usar cadenas de conexión en útiles de XRM para conectarse a aplicaciones Dynamics 365 for Customer Engagement](use-connection-strings-xrm-tooling-connect.md).
 
 ### <a name="see-also"></a>Vea también
 

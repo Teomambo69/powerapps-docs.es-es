@@ -1,5 +1,5 @@
 ---
-title: Configurar entidades y atributos para la auditoría (Common Data Service para aplicaciones) | Microsoft Docs
+title: Configurar entidades y atributos para la auditoría (Common Data Service) | Microsoft Docs
 description: Explica los requisitos de configuración para habilitar y deshabilitar la auditoría de entidades y sus atributos.
 ms.custom: ''
 ms.date: 10/31/2018

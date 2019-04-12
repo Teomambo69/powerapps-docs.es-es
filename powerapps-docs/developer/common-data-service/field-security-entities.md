@@ -1,5 +1,5 @@
 ---
-title: Entidades de seguridad de campo (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de seguridad de campo (Common Data Service) | Microsoft Docs
 description: 'Obtenga información sobre el uso de las entidades de seguridad de campo para aplicar seguridad de nivel de campo, que limita el acceso del campo a determinados usuarios y equipos.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="field-security-entities"></a>Entidades de seguridad de campo
 
-Use las entidades de seguridad de campo para aplicar seguridad de nivel de campo, que limita el acceso del campo a determinados usuarios y equipos. El ámbito de la seguridad de nivel de campo es global, lo cual significa que se aplica a todos los registros de la organización, independientemente del nivel jerárquico de la unidad de negocio al que pertenece el registro o el usuario. La seguridad de campo funciona en todos los Common Data Service para aplicaciones, incluido el cliente web, Microsoft Dynamics 365 for Outlook y Microsoft Dynamics. Se aplica a todos los componentes, como los servicios web, los informes, la búsqueda, el acceso sin conexión, las vistas filtradas, la auditoría y la detección de duplicados de CDS for Apps. Para esta versión, la seguridad de campo se puede aplicar a los campos personalizados y a muchos campos predefinidos (OOB).  
+Use las entidades de seguridad de campo para aplicar seguridad de nivel de campo, que limita el acceso del campo a determinados usuarios y equipos. El ámbito de la seguridad de nivel de campo es global, lo cual significa que se aplica a todos los registros de la organización, independientemente del nivel jerárquico de la unidad de negocio al que pertenece el registro o el usuario. La seguridad de campo funciona en todos los Common Data Service, incluido el cliente web, Microsoft Dynamics 365 for Outlook y Microsoft Dynamics. Se aplica a todos los componentes, como los servicios web, los informes, la búsqueda, el acceso sin conexión, las vistas filtradas, la auditoría y la detección de duplicados de Common Data Service. Para esta versión, la seguridad de campo se puede aplicar a los campos personalizados y a muchos campos predefinidos (OOB).  
   
  Para obtener más información sobre cómo los campos protegidos cambian el comportamiento de los métodos, vea [Cómo se puede usar la seguridad de campos para controlar el acceso a los valores de campo Dynamics 365](/dynamics365/customer-engagement/developer/security-dev/use-field-security-control-access-field-values).  
   
 > [!IMPORTANT]
->  Los perfiles de seguridad de nivel de campo impiden que los usuarios involuntarios obtengan acceso a los datos de CDS for Apps en función de las definiciones del perfil. Si los ACL de SQL Server están mal configurados o si existe un problema de inyección de SQL, los adversarios pueden obtener acceso directo a los datos de SQL Server omitiendo las restricciones de seguridad de nivel de campo. Para obtener más información, consulte [Información general sobre amenazas de seguridad de la aplicación web](https://msdn.microsoft.com/library/f13d73y6.aspx).  
+>  Los perfiles de seguridad de nivel de campo impiden que los usuarios involuntarios obtengan acceso a los datos de Common Data Service en función de las definiciones del perfil. Si los ACL de SQL Server están mal configurados o si existe un problema de inyección de SQL, los adversarios pueden obtener acceso directo a los datos de SQL Server omitiendo las restricciones de seguridad de nivel de campo. Para obtener más información, consulte [Información general sobre amenazas de seguridad de la aplicación web](https://msdn.microsoft.com/library/f13d73y6.aspx).  
   
 <a name="bkmk_setup"></a>   
 

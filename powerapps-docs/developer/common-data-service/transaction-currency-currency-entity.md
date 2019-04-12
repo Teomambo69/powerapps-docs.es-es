@@ -1,5 +1,5 @@
 ---
-title: Entidad Divisa de la transacción (divisa) (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidad Divisa de la transacción (divisa) (Common Data Service) | Microsoft Docs
 description: 'Obtenga más información sobre la divisa de la transacción, que es una función multidivisa que permite a los usuarios realizar transacciones financieras en varias monedas. Es posible agregar, comparar o analizar varios registros en diferentes monedas de transacción con respecto a una moneda única utilizando la moneda base.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="transaction-currency-currency-entity"></a>Entidad de divisa de la transacción (divisa)
 
-Common Data Service para aplicaciones es un sistema multidivisa, en el que cada registro se puede asociar con su propia divisa. Esta divisa se denomina la divisa de la *transacción*. Las características de multidivisa permiten a los usuarios realizar transacciones financieras, como oportunidades, ofertas, pedidos y facturas en varias divisas. Esta característica también ofrece al usuario final una opción de divisa cuando se produce una transacción financiera.  
+Common Data Service es un sistema multidivisa, en el que cada registro se puede asociar con su propia divisa. Esta divisa se denomina la divisa de la *transacción*. Las características de multidivisa permiten a los usuarios realizar transacciones financieras, como oportunidades, ofertas, pedidos y facturas en varias divisas. Esta característica también ofrece al usuario final una opción de divisa cuando se produce una transacción financiera.  
   
  Se pueden agregar, comparar o analizar varios registros en distintas divisas de la transacción en relación con una sola divisa, mediante el uso de un tipo de cambio. Esto se conoce como la *divisa base*. Primero se define una divisa base de la organización y después se definen los tipos de cambios para asociar la divisa base con las divisas de la transacción. La divisa base es la divisa con la que se cotizan otras divisas. El tipo de cambio es el valor de una divisa de la transacción equivalente a una divisa base.  
   
@@ -43,7 +43,7 @@ Todas las entidades que participan en transacciones financieras admiten la divis
   
 Para especificar la precisión decimal de la divisa de la transacción, puede usar el atributo `TransactionCurrency.CurrencyPrecision`. Para especificar el origen de la precisión para los atributos del tipo dinero, use el atributo <xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata.PrecisionSource> Atributo:  
   
-Todas las propiedades monetarias de un registro comparten la misma divisa de la transacción; por ejemplo, vea el atributo `Account.CreditLimit`. Para cada atributo monetario de una entidad, Common Data Service para aplicaciones crea automáticamente un atributo monetario correspondiente, de solo lectura y calculado por el sistema que se denomina "base". Este es un atributo monetario que guarda el valor del atributo correspondiente en una divisa base equivalente; por ejemplo, vea el atributo `Account.CreditLimit_Base`.  
+Todas las propiedades monetarias de un registro comparten la misma divisa de la transacción; por ejemplo, vea el atributo `Account.CreditLimit`. Para cada atributo monetario de una entidad, Common Data Service crea automáticamente un atributo monetario correspondiente, de solo lectura y calculado por el sistema que se denomina "base". Este es un atributo monetario que guarda el valor del atributo correspondiente en una divisa base equivalente; por ejemplo, vea el atributo `Account.CreditLimit_Base`.  
   
 La fórmula siguiente se usa para calcular el valor base:  
   

@@ -1,5 +1,5 @@
 ---
-title: Consultas de zona horaria (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de zona horaria (Common Data Service) | Microsoft Docs
 description: 'Las entidades de zona horaria contienen información sobre zonas horarias, como la zona horaria soportada, el código de zona horaria, la zona horaria localizada, y almacena información sobre cómo se calculan los tiempos.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="time-zone-entities"></a>Entidades de zona horaria
 
-Las entidades de *zona horaria* se pueden usar cuando se escribe un código que funciona en varias zonas horarias. Las siguientes tres entidades de solo lectura en Common Data Service para aplicaciones contienen información de zona horaria:  
+Las entidades de *zona horaria* se pueden usar cuando se escribe un código que funciona en varias zonas horarias. Las siguientes tres entidades de solo lectura en Common Data Service contienen información de zona horaria:  
   
 - La *entidad de definición de zona horaria* almacena información básica de cada zona horaria admitida, incluidos el código de zona horaria y el nombre de zona horaria estándar.  
   

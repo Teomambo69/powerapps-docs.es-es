@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: volcar metadatos de la entidad en un archivo (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: volcar metadatos de la entidad en un archivo (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo escribir todos los metadatos de la entidad en un archivo XML.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dump-entity-metadata-to-a-file"></a>Ejemplo: volcar metadatos de entidad en un archivo
 
-Este ejemplo muestra cómo escribir todos los metadatos de la entidad en un archivo `XML`. Utiliza el mensaje [RetrieveAllEntitiesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9).
+Este ejemplo muestra cómo escribir todos los metadatos de la entidad en un archivo `XML`. Utiliza el mensaje [RetrieveAllEntitiesRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9).
 
 El siguiente ejemplo crea un nuevo archivo en `\Entities\bin\Debug\EntityInfo.xml`. Puede abrir este archivo en Office Excel para ver un informe tabular. Es posible que necesite esta información para descubrir el código de tipo de entidad para una entidad personalizada para usar en los informes. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/DumpEntityMetadata).
 

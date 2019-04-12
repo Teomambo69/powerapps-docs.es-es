@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear extensión de flujo de trabajo (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Crear extensión de flujo de trabajo (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -33,8 +33,8 @@ Este tutorial usa un ejemplo muy sencillo para centrarse en los requisitos y el 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - Debe tener Windows Workflow Foundation incluido como componente individual con Visual Studio 2017.  Más información: [Requisitos de Visual Studio](workflow-extensions.md#visual-studio-requirements)
-- Una instancia de Common Data Service para aplicaciones y privilegios de administrador
-- Descripción de cómo configurar flujos de trabajo. Más información: [Flujos de trabajo clásicos de Common Data Service (CDS) para aplicaciones](/flow/workflow-processes)
+- Una instancia de Common Data Service y privilegios de administrador
+- Descripción de cómo configurar flujos de trabajo. Más información: [Flujos de trabajo clásicos de Common Data Service](/flow/workflow-processes)
 - Una aplicación basada en modelos que le permite editar cuentas.
 
 ## <a name="goal"></a>Objetivo
@@ -204,7 +204,7 @@ Los ensamblados personalizados de actividades de flujo de trabajo se registran m
     ![cuadro de diálogo de registro de ensamblado](media/tutorial-create-workflow-activity-register-assembly-dialog.png)
 
     > [!NOTE]
-    > Nota: Con CDS para aplicaciones se seleccionan las únicas opciones válidas para los pasos 3 y 4 y se deshabilitan las opciones no válidas.
+    > Nota: Con Common Data Service se seleccionan las únicas opciones válidas para los pasos 3 y 4 y se deshabilitan las opciones no válidas.
 
 1. Haga clic en **Registrar complementos seleccionados**. Debe ver un diálogo de confirmación.
 
@@ -222,7 +222,7 @@ Los ensamblados personalizados de actividades de flujo de trabajo se registran m
     |Descripción||Devuelve el valor del parámetro de entrada más 10.|No es visible en la interfaz de usuario del diseñador de procesos, pero puede resultar útil al generar documentación de los datos extraídos de la entidad PluginType que almacena esta información.|
     |FriendlyName|un valor de GUID|IncrementByTen|Nombre descriptivo para el complemento.|
     |Nombre|SampleWorkflowActivity.IncrementByTen|Incrementar en 10|El nombre del menú representado|
-    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Muestra|El nombre del submenú agregado al menú principal del diseñador del proceso de CDS para aplicaciones.|
+    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Muestra|El nombre del submenú agregado al menú principal del diseñador del proceso de Common Data Service.|
 
     > [!NOTE]
     > Si el **Nombre** y **WorkflowActivityGroupName** están establecidas como null, la actividad personalizada no será visible en el diseñador de procesos.

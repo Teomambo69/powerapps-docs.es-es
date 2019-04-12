@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: transacciones de bases de datos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: transacciones de bases de datos (Common Data Service) | Microsoft Docs'
 description: El segundo de una serie de temas. Este tema se centra en el impacto de las transacciones de bases de datos en el diseño de la personalización escalable
 ms.custom: ''
 ms.date: 1/15/2019
@@ -19,12 +19,12 @@ search.app:
 # <a name="scalable-customization-design-database-transactions"></a>Diseño de la personalización escalable: transacciones de bases de datos
 
 > [!NOTE]
-> Este es el segundo de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md).
+> Este es el segundo de una serie de temas sobre el diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service](overview.md).
 
-Uno de los conceptos fundamentales que encierran muchos de los retos que surgen aquí es el de las transacciones de bases de datos. En Common Data Service (CDS) para aplicaciones, la base de datos está en el centro de casi todas las solicitudes al sistema y es el sitio donde la coherencia de los datos se aplica principalmente.
+Uno de los conceptos fundamentales que encierran muchos de los retos que surgen aquí es el de las transacciones de bases de datos. En Common Data Service, la base de datos está en el centro de casi todas las solicitudes al sistema y es el sitio donde la coherencia de los datos se aplica principalmente.
 
-- Ninguna de las operaciones de CDS para aplicaciones, bien interna o como parte de las personalizaciones de código, funciona totalmente de forma aislada.
-- Todas las operaciones de datos de CDS para aplicaciones interactúan con los mismos recursos de base de datos, bien en el nivel de los datos o de la infraestructura como el procesador, la memoria o el uso de E/S.
+- Ninguna de las operaciones de Common Data Service para aplicaciones, bien interna o como parte de las personalizaciones de código, funciona totalmente de forma aislada.
+- Todas las operaciones de datos de Common Data Service para aplicaciones interactúan con los mismos recursos de base de datos, bien en el nivel de los datos o de la infraestructura como el procesador, la memoria o el uso de E/S.
 - Para protegerse frente a los cambios conflictivos, cada solicitud bloquea recursos para poder verse o modificarse.
 - Esos bloqueos se efectúan dentro de las transacciones y no se liberan hasta que la transacción se confirma o anula.
 
@@ -32,7 +32,7 @@ Uno de los conceptos fundamentales que encierran muchos de los retos que surgen 
 
 Una razón habitual por la que los problemas surgen en esta área está la falta de conocimiento sobre cómo las personalizaciones pueden afectar a las transacciones.
 
-Aunque los detalles de cómo se hace esto están fuera del alcance de este tema, el elemento más sencillo que se debe considerar es cómo CDS para aplicaciones interactúa con los datos en su base de datos. SQL Server determina los bloqueos adecuados que se realizarán las transacciones en esos datos como por ejemplo:
+Aunque los detalles de cómo se hace esto están fuera del alcance de este tema, el elemento más sencillo que se debe considerar es cómo Common Data Service interactúa con los datos en su base de datos. SQL Server determina los bloqueos adecuados que se realizarán las transacciones en esos datos como por ejemplo:
 - Cuando se recupera un registro en particular, SQL Server requiere un bloqueo de lectura en ese registro.
 - Cuando se recupera una variedad de registros, en algunos escenarios se puede aplicar un bloqueo de lectura en ese intervalo de registros o en la tabla completa.
 - Cuando se crea un registro, se genera un bloqueo de escritura en ese registro.
@@ -52,7 +52,7 @@ Debe tenerse en cuenta que las transacciones solo se retienen mientras dure una 
 
 ## <a name="blocking"></a>Bloqueo
 
-Mientras que el tipo de bloqueo del ejemplo anterior puede ser un inconveniente por sí mismo, también puede traer consecuencias más serias so considera que CDS para aplicaciones es una plataforma que puede procesar cientos de acciones simultáneas. Mientras que retener un bloqueo en un registro de cuenta individual puede tener implicaciones razonablemente limitadas, ¿qué sucede cuando se disputa un recurso con más intensidad?
+Mientras que el tipo de bloqueo del ejemplo anterior puede ser un inconveniente por sí mismo, también puede traer consecuencias más serias so considera que Common Data Service es una plataforma que puede procesar cientos de acciones simultáneas. Mientras que retener un bloqueo en un registro de cuenta individual puede tener implicaciones razonablemente limitadas, ¿qué sucede cuando se disputa un recurso con más intensidad?
 
 Por ejemplo, cuando se proporciona un número de referencia único a cada cuenta puede causar que un solo recurso que esté registrando los números de referencia usados se bloquee por cada proceso de creación de cuenta. Como se describe en el [ejemplo de numeración automática](auto-numbering-example.md), si muchas cuentas que se generan en paralelo, con superposición de solicitudes que necesitan tener acceso a ese recurso de numeración automática, este se bloqueará hasta que completen la acción. Cuanto más dure cada proceso de creación de cuenta y se produzcan más solicitudes simultáneas, más bloqueos habrá.
 
@@ -81,9 +81,9 @@ Es importante tener esto en cuenta ya que la depuración un problema normalmente
 
 ## <a name="transaction-control"></a>Control de las transacciones
 
-Mientras que en la mayoría de los casos la forma en que se usan las transacciones puede dejarse a la plataforma que lo administre, hay situaciones donde la lógica necesaria es lo suficientemente compleja que resulta necesario entender y gestionar las transacciones para lograr los resultados deseados. CDS para aplicaciones ofrece una variedad de enfoques de personalización diferentes que tienen un impacto distinto en la forma en que se usan las transacciones.
+Mientras que en la mayoría de los casos la forma en que se usan las transacciones puede dejarse a la plataforma que lo administre, hay situaciones donde la lógica necesaria es lo suficientemente compleja que resulta necesario entender y gestionar las transacciones para lograr los resultados deseados. Common Data Service ofrece una variedad de enfoques de personalización diferentes que tienen un impacto distinto en la forma en que se usan las transacciones.
 
-Cuando entienda cómo cada tipo de personalización participa en las transacciones de la plataforma, podrá modelar situaciones complejas de forma eficaz en CDS para aplicaciones y predecir su comportamiento.
+Cuando entienda cómo cada tipo de personalización participa en las transacciones de la plataforma, podrá modelar situaciones complejas de forma eficaz en Common Data Service para aplicaciones y predecir su comportamiento.
 
 Como se mencionó anteriormente, una transacción solo se retiene durante la duración de una solicitud a la plataforma, no es algo se mantenga después de completar el paso de la plataforma. De esta manera se evita que un cliente externo retenga las transacciones durante largos periodos de tiempo y se bloquen otras actividades de la plataforma.
 
@@ -228,7 +228,7 @@ Cuando las solicitudes se realizan de forma externa a través de servicios web, 
 
 Cuando se realizan múltiples solicitudes en un complemento con el mismo contexto de ejecución, el contexto de ejecución común es el que mantiene la referencia de la transacción y garantiza con complementos sincrónicos que cada solicitud se realiza dentro de la misma transacción. La capacidad de mantener un contexto de ejecución en las solicitudes no está disponible fuera de los complementos, por lo que una transacción no se puede mantener a través de solicitudes independientes realizadas de forma externa.
 
-Hay dos mensajes especiales donde se pueden pasar múltiples acciones a la plataforma de CDS para aplicaciones como parte de una sola solicitud de servicio web.
+Hay dos mensajes especiales donde se pueden pasar múltiples acciones a la plataforma de Common Data Service como parte de una sola solicitud de servicio web.
 
 |Mensaje|Descripción|
 |--|--|

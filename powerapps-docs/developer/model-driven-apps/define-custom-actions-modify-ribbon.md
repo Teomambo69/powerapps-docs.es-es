@@ -22,9 +22,9 @@ search.app:
 
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Definir acciones personalizadas para modificar la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
 
-El valor predeterminado, una barra de comandos de la aplicación o la cinta de opciones están definidos por los metadatos de Common Data Service para aplicaciones. Estos datos predeterminados no se puede cambiar, pero se pueden incluir definiciones de acciones específicas que reemplazarán la cinta de opciones predeterminada.  
+El valor predeterminado, una barra de comandos de la aplicación o la cinta de opciones están definidos por los metadatos de Common Data Service. Estos datos predeterminados no se puede cambiar, pero se pueden incluir definiciones de acciones específicas que reemplazarán la cinta de opciones predeterminada.  
   
 ## <a name="types-of-custom-actions"></a>Tipos de acciones personalizadas  
  Existen dos tipos de acciones personalizadas para las cintas de opciones:  
@@ -60,4 +60,5 @@ El valor predeterminado, una barra de comandos de la aplicación o la cinta de o
   
 ### <a name="see-also"></a>Vea también  
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
- [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link--> [Definir escalabilidad para elementos de la cinta de opciones](define-scaling-ribbon-elements.md)
+ [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link-->
+ [Definir la escalabilidad para elementos de la cinta de opciones](define-scaling-ribbon-elements.md)

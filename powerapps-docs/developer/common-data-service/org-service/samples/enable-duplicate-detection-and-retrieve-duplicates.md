@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: habilitar la detección de duplicados y recuperar duplicados (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: habilitar la detección de duplicados y recuperar duplicados (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo habilitar la detección de duplicados y recuperar registros duplicados.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-enable-duplicate-detection-and-retrieve-duplicates"></a>Ejemplo: habilitar la detección de duplicados y recuperar los duplicados
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-enable-duplicate-detection-and-retrieve-duplicates -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-enable-duplicate-detection-and-retrieve-duplicates -->
 
 En este ejemplo se muestra cómo habilitar la detección de duplicados y recuperar registros duplicados. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EnableDuplicateDetection).
 

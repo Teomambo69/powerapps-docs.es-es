@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service para aplicaciones) | Microsoft Docs
+title: Autenticación de usuarios de Office 365 con los servicios web de Common Data Service (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="authenticate-office-365-users-with-common-data-service-for-apps-web-services"></a>Autenticación de usuarios de Office 365 con servicios web de Common Data Service para aplicaciones
+# <a name="authenticate-office-365-users-with-common-data-service-web-services"></a>Autenticación de usuarios de Office 365 con servicios web de Common Data Service
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/authenticate-office-365-users-customer-engagement-web-services 
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-office-365-users-customer-engagement-web-services 
 
 This topic is extremely stale and needs help
 There is no more Microsoft Account or LiveId for several years now.

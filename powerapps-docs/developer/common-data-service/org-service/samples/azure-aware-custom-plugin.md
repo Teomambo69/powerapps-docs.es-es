@@ -1,5 +1,5 @@
 ---
-title: Complemento personalizado con Azure (Common Data Service para aplicaciones) | Microsoft Docs
+title: Complemento personalizado con Azure (Common Data Service) | Microsoft Docs
 description: Este complemento personalizado puede publicar el contexto de la ejecución de canalización en Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-azure-aware-custom-plug-in"></a>Ejemplo: complemento personalizado con Azure
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
 
 El complemento demuestra cómo obtener el contexto de la ejecución y el servicio de seguimiento del parámetro de proveedor de servicios del método `Execute`. A continuación, el complemento publica el contexto en el extremo de Azure Service Bus y escribe información en el registro de seguimiento para facilitar la depuración. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/Azureplugin).
 

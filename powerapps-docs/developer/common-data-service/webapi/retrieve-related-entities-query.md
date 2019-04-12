@@ -1,10 +1,10 @@
 ---
-title: Recuperar entidades relacionadas con una consulta (Common Data Service para aplicaciones) | Microsoft Docs
+title: Recuperar entidades relacionadas con una consulta (Common Data Service) | Microsoft Docs
 description: Lea cómo recuperar entidades relacionadas para una entidad ampliando las propiedades de navegación.
 ms.custom: ''
 ms.date: 02/06/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Recuperar entidades relacionadas con una consulta
+# <a name="retrieve-related-entities-with-a-query"></a>Recuperar entidades relacionadas con una consulta
 
 Use la opción de consulta del sistema `$expand` en las propiedades de navegación para controlar qué datos de entidades relacionadas se devuelven. Hay dos tipos de propiedades de navegación:  
   
@@ -36,11 +36,11 @@ Si incluye solo el nombre de la propiedad de navegación, recibirá todas las pr
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 
-## Recuperar entidades relacionadas ampliando las propiedades de navegación con un valor
+## <a name="retrieve-related-entities-by-expanding-single-valued-navigation-properties"></a>Recuperar entidades relacionadas ampliando las propiedades de navegación con un valor
 
 El ejemplo siguiente muestra cómo recuperar el contacto para todos los registros de la cuenta. Para los registros de contacto relacionados, solo recuperamos contactid y fullname.  
   
-****Solicitud****  
+**Solicitud**  
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$select=name&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
@@ -49,7 +49,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Respuesta**** 
+**Respuesta** 
  
 ```http 
 HTTP/1.1 200 OK  
@@ -155,7 +155,7 @@ OData-Version: 4.0
 
 En lugar de devolver entidades relacionadas para conjuntos de entidades, también puede devolver referencias (vínculos) a las entidades relacionadas expandiendo la propiedad de navegación de un solo valor con la opción `$ref`. El siguiente ejemplo devuelve vínculos a los registros de contacto para todas las cuentas.  
   
- ****Solicitud****
+ **Solicitud**
 
 ```http  
 GET [Organization URI]/api/data/v9.0/accounts?$select=name&$expand=primarycontactid/$ref HTTP/1.1  
@@ -164,7 +164,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
- ****Respuesta****
+ **Respuesta**
  
 ```http 
 HTTP/1.1 200 OK  
@@ -270,13 +270,13 @@ OData-Version: 4.0
 
 <a bkmk="bkmk_retrieverelatedentityexpandcollectionnavprop"></a>
 
-## Recuperar entidades relacionadas ampliando las propiedades de navegación de una colección
+## <a name="retrieve-related-entities-by-expanding-collection-valued-navigation-properties"></a>Recuperar entidades relacionadas ampliando las propiedades de navegación de una colección
 
 Si expande parámetros de navegación valorados como colección para recuperar entidades relacionadas para conjuntos de entidades, una propiedad `@odata.nextLink` será devuelta en su lugar para las entidades relacionadas. Debe usar el valor de la propiedad `@odata.nextLink` con una nueva solicitud `GET` para devolver los datos requeridos.  
 
 El siguiente ejemplo recupera las tareas asignados a los 5 mejores registros de cuenta.  
   
-****Solicitud****
+**Solicitud**
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
@@ -285,7 +285,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Respuesta**** 
+**Respuesta** 
  
 ```http 
 HTTP/1.1 200 OK  
@@ -347,13 +347,13 @@ OData-Version: 4.0
 
 <a bkmk="bkmk_retrieverelatedentitysingleandcollectionnavprop"></a>
   
-## Recuperar entidades relacionadas para una instancia de entidad expandiendo las propiedades de navegación de un solo valor y de valor de colección
+## <a name="retrieve-related-entities-by-expanding-both-single-valued-and-collection-valued-navigation-properties"></a>Recuperar entidades relacionadas para una instancia de entidad expandiendo las propiedades de navegación valoradas tanto como de un valor como colección:
 
 El siguiente ejemplo muestra cómo puede expandir entidades relacionadas para los conjuntos de entidad mediante propiedades de navegación únicas o de colección. Como se ha explicado anteriormente, si expande parámetros de navegación valorados como colección para recuperar entidades relacionadas para conjuntos de entidades, se devuelve una propiedad `@odata.nextLink` para las entidades relacionadas. Debe usar el valor de la propiedad `@odata.nextLink` con una nueva solicitud `GET` para devolver los datos requeridos.  
   
 En este ejemplo, recuperamos el contacto y tareas asignadas a las 3 cuentas superiores.  
   
-****Solicitud****
+**Solicitud**
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
@@ -362,7 +362,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Respuesta****  
+**Respuesta**  
 
 ```http 
 HTTP/1.1 200 OK  
@@ -416,12 +416,12 @@ OData-Version: 4.0
   
 ```
 
-## Vea también
+## <a name="see-also"></a>Vea también
 
-[[Consultar datos utilizando la API web](query-data-web-api.md)](query-data-web-api.md)<br />
-[[Realizar operaciones mediante la API web](perform-operations-web-api.md)](perform-operations-web-api.md)<br />
-[[Componer solicitudes HTTP y administrar errores](compose-http-requests-handle-errors.md)](compose-http-requests-handle-errors.md)<br />
-[[Cree una entidad usando API web](create-entity-web-api.md)](create-entity-web-api.md)<br />
-[[Recuperar una entidad usando API web](retrieve-entity-using-web-api.md)](retrieve-entity-using-web-api.md)<br />
-[[Actualizar y eliminar entidades mediante la API web](update-delete-entities-using-web-api.md)](update-delete-entities-using-web-api.md)<br />
-[[Asociar y anular la asociación de entidades mediante la API web](associate-disassociate-entities-using-web-api.md)](associate-disassociate-entities-using-web-api.md)
+[Consultar datos utilizando la API web](query-data-web-api.md)<br />
+[Realizar operaciones mediante la API web](perform-operations-web-api.md)<br />
+[Componer solicitudes HTTP y administrar errores](compose-http-requests-handle-errors.md)<br />
+[Cree una entidad usando API web](create-entity-web-api.md)<br />
+[Recuperar una entidad usando API web](retrieve-entity-using-web-api.md)<br />
+[Actualizar y eliminar entidades mediante la API web](update-delete-entities-using-web-api.md)<br />
+[Asociar y anular la asociación de entidades mediante la API web](associate-disassociate-entities-using-web-api.md)

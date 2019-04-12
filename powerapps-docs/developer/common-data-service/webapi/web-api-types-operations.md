@@ -1,10 +1,10 @@
 ---
-title: Tipos y operaciones de API web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Tipos y operaciones de API web (Common Data Service) | Microsoft Docs
 description: 'Este tema describe lo que está disponible para utilizarlo a través de la API web e introducirá temas importantes y cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema.'
 ms.custom: ''
 ms.date: 02/05/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -127,7 +127,7 @@ Cada elemento `Annotation` incluye un atributo `Term` que describe el tipo de an
 
 ## <a name="entity-types"></a>Tipos de entidad
 
-La <xref:Microsoft.Dynamics.CRM.EntityTypeIndex> muestra cada uno de los tipos de entidades del sistema expuestos a través de la API web que almacena datos empresariales. Un tipo de entidad es un tipo estructurado con nombre con una clave. Define las propiedades y las relaciones con nombre de una entidad. Los tipos de entidad pueden obtenerse mediante herencia individual de otros tipos de entidad. <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> enumera cada uno de los tipos de entidad usados para administrar metadatos del sistema. Ambos son tipos de entidad pero la manera de trabajar con ellos es diferente. Consultar [Usar la API Web con los metadatos de Common Data Service para aplicaciones](use-web-api-metadata.md) para obtener información sobre el uso de las entidades del modelo. Cada tipo de entidad se incluye en un elemento `EntityType` en el `$metadata`. A continuación se presenta la definición del <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" /> de `$metadata` con las propiedades y las propiedades de navegación quitadas.  
+La <xref:Microsoft.Dynamics.CRM.EntityTypeIndex> muestra cada uno de los tipos de entidades del sistema expuestos a través de la API web que almacena datos empresariales. Un tipo de entidad es un tipo estructurado con nombre con una clave. Define las propiedades y las relaciones con nombre de una entidad. Los tipos de entidad pueden obtenerse mediante herencia individual de otros tipos de entidad. <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> enumera cada uno de los tipos de entidad usados para administrar metadatos del sistema. Ambos son tipos de entidad pero la manera de trabajar con ellos es diferente. Consultar [Usar la API Web con los metadatos de Common Data Service](use-web-api-metadata.md) para obtener información sobre el uso de las entidades del modelo. Cada tipo de entidad se incluye en un elemento `EntityType` en el `$metadata`. A continuación se presenta la definición del <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" /> de `$metadata` con las propiedades y las propiedades de navegación quitadas.  
   
 ```xml  
 <EntityType Name="account" BaseType="mscrm.crmbaseentity">  
@@ -166,7 +166,7 @@ De manera predeterminada, el nombre del conjunto de entidades coincide con el va
 
 ### <a name="alternate-keys"></a>Claves alternativas
 
-Aunque Common Data Service para aplicaciones permite crear claves alternativas, solo la clave principal se encontrará en las entidades predeterminadas.  
+Aunque Common Data Service permite crear claves alternativas, solo la clave principal se encontrará en las entidades predeterminadas.  
   
  Ninguna de las entidades del sistema tienen claves alternativas definidas. Si define claves alternativas para una entidad, se incluirán en el elemento `$metadata` `EntityType` como una `Annotation` como la siguiente:  
   
@@ -233,7 +233,7 @@ Cada propiedad también pueden tener limitaciones sobre si se puede actualizar. 
 
 ### <a name="primitive-types"></a>Tipos primitivos
  
-OData admite una gran variedad de tipos de datos pero Common Data Service para aplicaciones no los usa todos. En la siguiente tabla se describe cómo se asignan los tipos de servicio de organización de CDS para aplicaciones a tipos primitivos OData.  
+OData admite una gran variedad de tipos de datos pero Common Data Service no los usa todos. En la siguiente tabla se describe cómo se asignan los tipos de servicio de organización de Common Data Service a tipos primitivos OData.  
   
 |Tipo de servicio de organización|Tipo de la API web|Descripción|  
 |-------------------------------|------------------|-----------------|  
@@ -373,6 +373,6 @@ Los *tipos de enumeración* o *EnumTypes* son tipos primitivos con nombre cuyos 
   
 ### <a name="see-also"></a>Vea también  
 
-[Usar para la API web de Common Data Service for Apps](overview.md)<br />
-[Autentique Common Data Service para aplicaciones con la API web](authenticate-web-api.md)<br />
+[Utilizar API Web de Common Data Service](overview.md)<br />
+[Autentique Common Data Service con la API web](authenticate-web-api.md)<br />
 [Realizar operaciones mediante la API web](perform-operations-web-api.md)

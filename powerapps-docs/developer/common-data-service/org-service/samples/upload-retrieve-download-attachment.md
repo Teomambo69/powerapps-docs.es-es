@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Cargar, recuperar y descargar un archivo adjunto(Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Cargar, recuperar y descargar un archivo adjunto(Common Data Service) | Microsoft Docs'
 description: 'Este ejemplo muestra cómo cargar, recuperar y descargar un archivo adjunto'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>Ejemplo: cargar, recuperar y descargar datos adjuntos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
 
-El ejemplo muestra cómo cargar, recuperar y descargar un archivo adjunto para una anotación utilizando los métodos [IOrganizationService.Create](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9) y [IOrganizationService.Retrieve](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement).
+El ejemplo muestra cómo cargar, recuperar y descargar un archivo adjunto para una anotación utilizando los métodos [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9) y [IOrganizationService.Retrieve](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

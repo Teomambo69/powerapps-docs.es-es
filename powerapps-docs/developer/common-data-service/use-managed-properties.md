@@ -1,5 +1,5 @@
 ---
-title: Usar propiedades administradas (Common Data Service para aplicaciones) | Microsoft Docs
+title: Usar propiedades administradas (Common Data Service) | Microsoft Docs
 description: Las propiedades administradas le ayudan a definir qué componentes de la solución administrada se pueden personalizar
 ms.custom: ''
 ms.date: 10/31/2018

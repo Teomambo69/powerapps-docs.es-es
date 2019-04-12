@@ -1,5 +1,5 @@
 ---
-title: Crear atributos de numeración automática (Common Data Service para aplicaciones) | Microsoft Docs
+title: Crear atributos de numeración automática (Common Data Service) | Microsoft Docs
 description: 'Obtenga información sobre cómo crear un atributo de numeración automática del mismo modo que se crea un atributo de cadena mediante la clase StringAttributeMetadata excepto que en este caso se usa la nueva propiedad AutoNumberFormat. Utilice la propiedad AutoNumberFormat para definir un modelo que incluya números secuenciales y cadenas aleatorias mediante la composición de marcadores de posición, que indica la longitud y el tipo de valores que se generan.'
 keywords: Atributos de numeración automática
 ms.custom: ''
@@ -18,7 +18,7 @@ search.app:
 ---
 # <a name="create-auto-number-attributes"></a>Crear atributos de numeración automática
 
-Con Common Data Service para aplicaciones puede agregar un atributo de numeración automática para todas las entidades. Actualmente, puede agregar el atributo mediante programación. No hay ninguna interfaz de usuario para agregar este tipo de atributo. El tema explica cómo puede crear mediante programación un atributo de numeración automática y establecer un valor de semilla para los elementos de la secuencia. Además, el tema muestra cómo establecer el número de secuencia del registro siguiente si necesita restablecer el valor de semilla en cualquier momento más adelante.
+Con Common Data Service puede agregar un atributo de numeración automática para todas las entidades. Actualmente, puede agregar el atributo mediante programación. No hay ninguna interfaz de usuario para agregar este tipo de atributo. El tema explica cómo puede crear mediante programación un atributo de numeración automática y establecer un valor de semilla para los elementos de la secuencia. Además, el tema muestra cómo establecer el número de secuencia del registro siguiente si necesita restablecer el valor de semilla en cualquier momento más adelante.
 > [!NOTE]
 >El establecimiento de un valor de semilla es opcional. No es necesario llamar a la semilla si no es necesario volver a sembrar el valor.
 
@@ -136,7 +136,7 @@ Estos ejemplos muestran cómo puede configurar la propiedad **AutoNumberFormat**
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMMddhh}-{RANDSTRING:6}`|`CAS-002002-2017091309-HTZOUR`|
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMM}-{RANDSTRING:6}-{DATETIMEUTC:hhmmss}`|`CAS-002000-201709-Z8M2Z6-110901`|
 
-Los marcadores de posición de cadena aleatoria son opcionales. Puede incluir más de un marcador de posición de cadena aleatoria. Utilice cualquiera de los marcadores de posición de valor de formato para de fecha y hora [Cadenas con formato de fecha y hora estándar](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
+Los marcadores de posición de cadena aleatoria son opcionales. Puede incluir más de un marcador de posición de cadena aleatoria. Utilice cualquiera de los marcadores de posición de valor de formato para de fecha y hora [Cadenas con formato de fecha y hora estándar](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 ### <a name="string-length"></a>Longitud de cadena
 
@@ -263,11 +263,11 @@ OData-Version: 4.0
 
 ### <a name="auto-number-manager"></a>Auto Number Manager
 
-**[Auto Number Manager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** para XrmToolBox es una herramienta impulsada por la comunidad para CDS for Apps que proporciona una interfaz de usuario para configurar, actualizar y quitar el formato de numeración automática en atributos nuevos y existentes.
+**[Auto Number Manager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** para XrmToolBox es una herramienta impulsada por la comunidad para Common Data Service que proporciona una interfaz de usuario para configurar, actualizar y quitar el formato de numeración automática en atributos nuevos y existentes.
 Consulte el tema [Herramientas del desarrollador](developer-tools.md) para ver las herramientas desarrolladas por la comunidad y [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) para obtener más información sobre Auto Number Manager.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de CDS for Apps y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Las herramientas de la comunidad no son un producto de Common Data Service y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
 
 
 ### <a name="see-also"></a>Vea también

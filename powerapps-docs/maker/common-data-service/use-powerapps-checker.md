@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 12/04/2018
+ms.date: 03/20/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -17,22 +17,18 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps
 
-Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service (CDS) para aplicaciones. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
+Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
 
 El comprobador de soluciones analiza estos componentes de la solución: 
-- Complementos de CDS for Apps
-- Actividades personalizadas del flujo de trabajo de CDS for Apps 
-- Recursos web de CDS for Apps (HTML y JavaScript)
-- Configuraciones de CDS for Apps, como pasos de mensajes de SDK 
+- Complementos de Common Data Service
+- Actividades personalizadas del flujo de trabajo de Common Data Service 
+- Recursos web de Common Data Service (HTML y JavaScript)
+- Configuraciones de Common Data Service, como pasos de mensaje del SDK 
 
-El comprobador de soluciones trabaja con soluciones no administradas que se pueden exportar desde un entorno. El comprobador de soluciones *no* funciona con las soluciones siguientes: 
+El comprobador de soluciones trabaja con soluciones no administradas que se pueden exportar desde un entorno. 
 
-
-<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
-
-- Las soluciones predeterminadas del (solución predeterminada y solución predeterminada de Common Data Services).
-- Soluciones que contienen JavaScript que usa ECMAScript 6 (2015) o versiones posteriores. Cuando se detecta JavaScript que usa una de estas versiones, se informará de un problema de la sintaxis JS001 para el recurso web.
-
+> [!NOTE]
+> El comprobador de soluciones no funciona con soluciones que contienen JavaScript que usa ECMAScript 6 (2015) o versioenes posteriores. Cuando se detecta JavaScript que usa una de estas versiones, se informará de un problema de la sintaxis JS001 para el recurso web.
 
 ## <a name="enable-the-solution-checker"></a>Habilitar el comprobador de soluciones
 El comprobador de soluciones pasa a estar disponible en el área Soluciones de PowerApps después de instalar la solución del comprobador de PowerApps. Tenga en cuenta que no podrá encontrarla examinando o buscando en Microsoft AppSource. Para instalarlo, siga estos pasos:  
@@ -62,7 +58,7 @@ When you install the PowerApps checker these solution specific components are cr
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your CDS for Apps environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Ejecutar el comprobador de soluciones
 Después de instalar el comprobador de PowerApps en el entorno, un elemento de menú **Comprobador de soluciones** está disponible cuando seleccione una solución no administrada en el área **Soluciones** de PowerApps. 
@@ -157,7 +153,7 @@ Este es un resumen de cada columna del informe.
 |Recursos web  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | No se dirija a los servicios de Microsoft Dynamics CRM 2011 SOAP.   |
 |Recursos web  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | No use complementos del explorador o API heredados de Internet Explorer.   |
 |Recursos web  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | No use el modelo de objetos de Microsoft Dynamics CRM 2011 en desuso.  |
-|Recursos web  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | No use URL de extremo absolutos de CDS for Apps.    |
+|Recursos web  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | No use las direcciones URL absoutas del extremo de Common Data Service.    |
 |Recursos web  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Use contextos del cliente.   |
 |Recursos web  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Usar parámetros API de diálogo.   |
 |Recursos web  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Use configuración de organización.   |
@@ -167,6 +163,6 @@ Este es un resumen de cada columna del informe.
 
 
 ## <a name="see-also"></a>Vea también
-[Prácticas recomendadas e instrucciones para Common Data Service para aplicaciones](../../developer/common-data-service/best-practices/index.md)<br />
+[Prácticas recomendadas e instrucciones para Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Prácticas recomendadas e instrucciones para aplicaciones basadas en modelos](../../developer/model-driven-apps/best-practices/index.md)<br />
 [Problemas y soluciones comunes para el Comprobador de soluciones](common-issues-resolutions-solution-checker.md)<br />

@@ -1,5 +1,5 @@
 ---
-title: Vincular atributos personalizados de cita periódica maestra y entidades de cita (Common Data Service para aplicaciones) | Microsoft Docs
+title: Vincular atributos personalizados de cita periódica maestra y entidades de cita (Common Data Service) | Microsoft Docs
 description: Vincular los atributos personalizados de la entidad RecurringAppointmentMaster con los atributos personalizados de la entidad Appointment para copiar automáticamente los datos.
 ms.custom: ''
 ms.date: 10/31/2018

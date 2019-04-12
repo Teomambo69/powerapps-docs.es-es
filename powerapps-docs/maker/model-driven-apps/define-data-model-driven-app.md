@@ -1,7 +1,7 @@
 ---
 title: Definir datos para su aplicación controlada por modelos en PowerApps | MicrosoftDocs
 description: Comprender cómo definir datos para su aplicación controlada por modelos
-Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
+Keywords: 'datos, entidad, campos, relación, atributos, aplicación basada en modelos'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker
@@ -20,11 +20,11 @@ search.app:
 ---
 # <a name="define-data-for-your-model-driven-app"></a>Definir datos para su aplicación controlada por modelos
 
-Los datos de su aplicación controlada por modelos se definen en [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md). 
+Los datos de su aplicación controlada por modelos se definen en [Common Data Service](../common-data-service/data-platform-intro.md). 
 
 Puede definir los datos de la aplicación mediante los siguientes componentes: *entidad*, *campo* y *relación*.
 
-Para obtener más información acerca de cómo trabajar con estos componentes en CDS for Apps para definir datos para su aplicación controlada por modelos, consulte los temas siguientes en la sección de CDS for Apps:
+Para obtener más información acerca de cómo trabajar con estos componentes en Common Data Service para definir datos para su aplicación controlada por modelos, consulte los temas siguientes en la sección de Common Data Service:
 
 |Componente |Tema|
 |-----|----|

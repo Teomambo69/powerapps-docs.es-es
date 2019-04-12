@@ -1,5 +1,5 @@
 ---
-title: Programación de enlace en tiempo de ejecución y enlace en tiempo de compilación con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Programación de enlace en tiempo de ejecución y enlace en tiempo de compilación con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Describe los diferentes estilos de programación disponibles al usar los ensamblados SDK de .NET con el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018

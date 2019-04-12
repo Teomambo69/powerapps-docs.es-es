@@ -49,7 +49,7 @@ Si es una solución adecuada, siga estas sugerencias para minimizar el impacto e
 
 - Evite incluir las tareas prolongadas, especialmente las que pueden no ser deterministas, como la invocación de las llamadas de servicio externas o las consultas complejas a Dynamics 365.
 
-- Limite o evite realizar consultas de datos adicionales desde Common Data Service para aplicaciones
+- Limite o evite realizar consultas de datos adicionales desde Common Data Service
 
 ### <a name="virtual-entities"></a>Entidades virtuales
 
@@ -57,7 +57,7 @@ Por lo general Retrieve y RetrieveMultiple se invocan en el complementos para re
 
 ### <a name="retrieve-caution"></a>Precaución de Retrieve
 
-Common Data Service para aplicaciones activará al menos dos mensajes Retrieve para cada carga de formulario de entidad.  Una recuperación contiene atributos limitados, lo que puede variar en función de la entidad y las llamadas posteriores incluirán más atributos.  Si se espera que se produzca una sola acción durante la carga de un formulario, no confíe totalmente en el desencadenador de un mensaje Retrieve.
+Common Data Service activará al menos dos mensajes Retrieve para cada carga de formulario de entidad.  Una recuperación contiene atributos limitados, lo que puede variar en función de la entidad y las llamadas posteriores incluirán más atributos.  Si se espera que se produzca una sola acción durante la carga de un formulario, no confíe totalmente en el desencadenador de un mensaje Retrieve.
 
 <a name='additional'></a>
 

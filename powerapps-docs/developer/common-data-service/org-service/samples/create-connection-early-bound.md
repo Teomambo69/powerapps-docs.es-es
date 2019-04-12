@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear un rol de conexión (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear un rol de conexión (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un rol de conexión.
 ms.custom: ''
 ms.date: 10/31/2018

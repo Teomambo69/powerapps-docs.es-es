@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar detección de duplicados al crear y actualizar registros (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar detección de duplicados al crear y actualizar registros (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo invocar la detección de duplicados para crear y actualizar registros de entidad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>Ejemplo: Uso de detección de duplicados para crear y actualizar registros
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records --> Este ejemplo muestra cómo invocar la detección de duplicados para crear y actualizar registros de entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD).
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records -->
+ Este ejemplo muestra cómo invocar la detección de duplicados para crear y actualizar registros de entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

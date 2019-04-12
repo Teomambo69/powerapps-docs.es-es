@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Agregar una entidad de seguridad (usuario o equipo) a una cola (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Agregar una entidad de seguridad (usuario o equipo) a una cola (Common Data Service) | Microsoft Docs'
 description: Agregar una entidad de seguridad a una cola
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Ejemplo: Agregar una entidad de seguridad (usuario o equipo) a una cola 
 
-Este ejemplo muestra cómo otorgar a un usuario o equipo acceso a una cola. [AddPrincipalToQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) agrega el principal especificado a la lista de miembros de la cola. Si la entidad de seguridad pasada es un equipo, cada miembro del equipo se agrega a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue).
+Este ejemplo muestra cómo otorgar a un usuario o equipo acceso a una cola. [AddPrincipalToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) agrega el principal especificado a la lista de miembros de la cola. Si la entidad de seguridad pasada es un equipo, cada miembro del equipo se agrega a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

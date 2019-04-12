@@ -1,5 +1,5 @@
 ---
-title: Mensajes de metadatos de atributos de entidad (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Mensajes de metadatos de atributos de entidad (Common Data Service) | MicrosoftDocs
 description: 'Acerca de los mensajes usados para editar los metadatos de atributos de entidad, también conocidos como propiedades o campos.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 Was Mike Carter
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
 
 Un atributo de entidad es un contenedor para un grupo de datos en una entidad. Los términos *atributo* y *propiedad* (propiedad de clase) se usan indistintamente con el término *atributo de entidad*. Las aplicaciones basadas en modelos utilizan el término *campo* para referirse a atributos de entidad.  
 

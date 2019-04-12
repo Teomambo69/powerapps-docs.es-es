@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Reprogramar y cancelar una cita periódica (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Reprogramar y cancelar una cita periódica (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo reprogramar y cancelar una cita periódica.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>Ejemplo: reprogramar y cancelar una cita periódica
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-reschedule-cancel-recurring-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-reschedule-cancel-recurring-appointment -->
 
-Este ejemplo muestra cómo reprogramar y cancelar las instancias de cita de una serie de citas periódicas mediante el mensaje [RescheduleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.reschedulerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RecurringAppointment).
+Este ejemplo muestra cómo reprogramar y cancelar las instancias de cita de una serie de citas periódicas mediante el mensaje [RescheduleRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.reschedulerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RecurringAppointment).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

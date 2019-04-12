@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Introducción a la personalización de aplicaciones basada en modelos mediante código
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
 Split to just include MDA issues
  -->
 
@@ -41,13 +41,13 @@ Se pueden usar los siguientes métodos de personalización para generar personal
 - Reporting Services. Para obtener más información, vea [Guía de informes y análisis para aplicaciones basadas en modelos](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365)
 
 > [!NOTE]
-> El comportamiento de aplicaciones basadas en modelos depende de personalizaciones aplicadas al Common Data Service para aplicaciones asociado. Más información: [Personalizaciones compatibles para Common Data Service para aplicaciones](../common-data-service/supported-customizations.md)
+> El comportamiento de aplicaciones basadas en modelos depende de personalizaciones aplicadas al Common Data Service asociado. Más información: [Personalizaciones compatibles para Common Data Service](../common-data-service/supported-customizations.md)
 > *Compatible completamente* significa que la compatibilidad del programador puede proporcionar ayuda para personalizaciones y que la compatibilidad de aplicaciones puede ayudar a los clientes que ejecutan dichas modificaciones.
 
 
 ## <a name="customizations-applied-using-code"></a>Personalizaciones aplicadas con código
 
-La documentación de este sitio para desarrolladores, artículos técnicos, código de ejemplo publicados en este sitio, y la información publicada por el equipo de soporte técnico para programadores de CDS para aplicaciones se incluyen en el área de personalización aplicada utilizando código. Las acciones y niveles específicos de compatibilidad y capacidad de actualización se describen más adelante en este tema.
+La documentación de este sitio para desarrolladores, artículos técnicos, código de ejemplo publicados en este sitio, y la información publicada por el equipo de soporte técnico para programadores de Common Data Service se incluyen en el área de personalización aplicada utilizando código. Las acciones y niveles específicos de compatibilidad y capacidad de actualización se describen más adelante en este tema.
 
 ### <a name="client-side-javascript"></a>JavaScript del lado del cliente
 
@@ -83,7 +83,7 @@ La siguiente es una lista de los tipos de acciones no admitidas por los que reci
 
 ### <a name="see-also"></a>Vea también
 
-[Personalizaciones compatibles para Common Data Service para aplicaciones](../common-data-service/supported-customizations.md)<br/>
+[Personalizaciones compatibles para Common Data Service](../common-data-service/supported-customizations.md)<br/>
 [Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript](client-scripting.md)<br/>
 [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)<br/>
 [Recursos web en aplicaciones basadas en modelos](web-resources.md)

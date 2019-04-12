@@ -4,7 +4,7 @@ description: Aprender a definir transiciones de razón para el estado
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
 Puede especificar las transiciones de razón para el estado de la entidad Incidente (**Caso**) o de entidad personalizada.
 
 > [!NOTE]
-> Aunque la entidad de incidente (caso) no se incluye en n entorno predeterminado de Common Data Service for Apps, se usa en [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) y se define dentro del [Modelo común de datos](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json)
+> Aunque la entidad de incidente (caso) no se incluye en un entorno predeterminado de Common Data Service, se usa en [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) y se define dentro del [Modelo común de datos](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json)
   
 Las transiciones de razón para el estado son un nivel de filtrado adicional y opcional para definir qué valor puede cambiarse para cada razón para el estado. Definir una lista limitada de opciones válidas puede facilitar a los usuarios la selección de la siguiente razón para el estado de un registro cuando tiene un gran número de combinaciones para valores válidos de razón para el estado.  
   
@@ -60,7 +60,7 @@ Los metadatos para el campo definen qué valores de estado son válidos para un 
 Puede modificar las opciones de campo de razón para el estado para que las entidades de entidad de caso y personalizadas definan qué otras opciones de razón para el estado pueden elegir. La única restricción es que cada opción de razón para el estado de un estado activo debe permitir al menos una ruta a un estado inactivo. Si no, podría crear una condición donde no sería posible resolver ni cancelar el caso.  
 
 > [!NOTE]
-> Editar las transiciones de razón para el estado requiere el uso del explorador de soluciones. Consulte [Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
+> Editar las transiciones de razón para el estado requiere el uso del explorador de soluciones. Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
   
  Cuando edita un campo de razón para el estado, el botón **Editar las transiciones de la razón para el estado** está en el menú. 
 
@@ -81,7 +81,7 @@ La captura de pantalla a continuación proporciona un ejemplo que cumple los sig
   
 ### <a name="see-also"></a>Vea también  
 
-[Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Metadatos de entidad > Estados de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Definir transiciones de modelo de estado personalizadas](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

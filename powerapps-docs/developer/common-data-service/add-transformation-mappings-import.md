@@ -1,5 +1,5 @@
 ---
-title: Agregar asignaciones de transformación para la importación (Common Data Service para aplicaciones) | Microsoft Docs
+title: Agregar asignaciones de transformación para la importación (Common Data Service) | Microsoft Docs
 description: La asignación de transformación permite la modificación opcional de los datos de origen antes de la importación.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,7 +21,7 @@ Use la asignación de transformación para modificar los datos antes de importar
   
  Para implementar la asignación de transformación, use la entidad de asignación de transformaciones (`TransformationMapping`) y la entidad de asignación de parámetros de transformación (`TransformationParameterMapping`).  
   
- Los datos transformados deben ser compatibles con los tipos de atributos de entidad Common Data Service para aplicaciones.  
+ Los datos transformados deben ser compatibles con los tipos de atributos de entidad Common Data Service.  
   
  La propiedad `TransformationMapping.TransformationTypeName` describen el tipo de transformación. Los valores válidos para esta propiedad se muestran en la tabla siguiente:  
   
@@ -133,7 +133,7 @@ Use la asignación de transformación para modificar los datos antes de importar
 |Valor|Valor de reemplazo (igual que el valor asignado).|  
   
 > [!NOTE]
->  Las transformaciones de fecha solo se pueden usar para fechas con formato correcto. Para obtener información sobre cómo dar formato a las fechas, vea la Ayuda de CDS for Apps.  
+>  Las transformaciones de fecha solo se pueden usar para fechas con formato correcto. Para obtener información sobre cómo dar formato a las fechas, vea la Ayuda de Common Data Service.  
   
 <a name="BKMK_AddToDate"></a>   
 ## <a name="add-to-date"></a>Agregar a fecha  

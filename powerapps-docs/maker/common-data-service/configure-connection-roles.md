@@ -3,7 +3,7 @@ title: Configurar roles de conexión | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
 ---
 # <a name="configure-connection-roles"></a>Configurar roles de conexión
 
-Con Common Data Service para aplicaciones puede definir **conexiones** entre registros de entidad sin crear una relación de entidad. En aplicaciones basadas en modelos los usuarios pueden establecer un vínculo con nombre entre registros para establecer una relación menos formal que no justifique la creación de una relación entre entidades real. Algunos ejemplos son *amigo*, *hermano*, *esposo*, *asistente* y *parte interesada*. Algunas conexiones puede que también sean recíprocas, como *hijo* y *padre*, *marido* y *esposa*, o *doctor* y *paciente*.
+Con Common Data Service puede definir **conexiones** entre registros de entidad sin crear una relación de entidad. En aplicaciones basadas en modelos los usuarios pueden establecer un vínculo con nombre entre registros para establecer una relación menos formal que no justifique la creación de una relación entre entidades real. Algunos ejemplos son *amigo*, *hermano*, *esposo*, *asistente* y *parte interesada*. Algunas conexiones puede que también sean recíprocas, como *hijo* y *padre*, *marido* y *esposa*, o *doctor* y *paciente*.
 
 Cuando las personas establezcan una conexión entre dos registros, también pueden agregar una descripción e información adicional como fechas de inicio y finalización para la relación. Más información: [Creación de conexiones para definir y ver relaciones entre registros](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
 
@@ -29,7 +29,7 @@ Cualquiera con acceso de escritura a la entidad **Rol de conexión** puede estab
 
 ## <a name="view-connection-roles"></a>Ver roles de conexión
 
-Hay varios roles estándar de conexión ya configurados en CDS para aplicaciones. Para verlos debe desplazarse al área de Configuración. 
+Hay varios roles estándar de conexión ya configurados en Common Data Service. Para verlos debe desplazarse al área de Configuración. 
 
 ### <a name="navigate-to-the-settings-area"></a>Navegue al área de Configuración.
 
@@ -91,7 +91,7 @@ Los valores **Categoría** predeterminados son:
 - EQUIPO DE VENTAS
 - Servicio
 
-Puede agregar nuevas categorías o modificar las existentes editando el conjunto de opciones globales **Categoría**. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)
+Puede agregar nuevas categorías o modificar las existentes editando el conjunto de opciones globales **Categoría**. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)
 
 ### <a name="select-record-types"></a>Seleccionar tipos de registro
 
@@ -125,7 +125,7 @@ Si configura más de un rol de conexión coincidente, esos roles de conexión re
 ### <a name="see-also"></a>Vea también
 <!-- This is in the basics guide. It needs to be migrated -->
 [Crear conexiones para definir y ver relaciones entre registros](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)<br />
+[Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)<br />
 [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)
 
 

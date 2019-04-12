@@ -3,7 +3,7 @@ title: Tipos de entidades | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="types-of-entities"></a>Tipos de entidades
 
-Antes de crear o modificar entidades en Common Data Service for Apps, debe comprender que hay diferentes tipos de entidades. Una vez que se crea una entidad personalizada, estos tipos no se pueden cambiar. Las dos divisiones principales se basan en la propiedad de la entidad y en si las entidades son entidades de actividad.  
+Antes de crear o modificar entidades en Common Data Service, debe comprender que hay diferentes tipos de entidades. Una vez que se crea una entidad personalizada, estos tipos no se pueden cambiar. Las dos divisiones principales se basan en la propiedad de la entidad y en si las entidades son entidades de actividad.  
   
 <a name="BKMK_EntityOwnership"></a>
 
@@ -51,7 +51,7 @@ Una actividad puede considerarse cualquier acción de la que se puede crear una 
   
 Las entidades de actividad solo pueden pertenecer a un usuario o equipo, no pueden ser propiedad de una organización.  
   
-En la tabla siguiente se muestran las entidades de actividad que están disponibles en un entorno predeterminado de CDS for Apps.
+En la tabla siguiente se muestran las entidades de actividad que están disponibles en un entorno predeterminado de Common Data Service.
   
 |Nombre|Descripción|Mostrar en los menús de actividades|Referencia|
 |----------|-----------------|----------------|---------------|  

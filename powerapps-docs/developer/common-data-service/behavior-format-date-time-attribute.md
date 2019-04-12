@@ -1,5 +1,5 @@
 ---
-title: Comportamiento y formato del atributo Fecha y hora (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Comportamiento y formato del atributo Fecha y hora (Common Data Service) | MicrosoftDocs
 description: La clase DateTimeAttributeMetadata se usa para definir y administrar los atributos de tipo DateTime en Dynamics 365 Customer Engagement.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="behavior-and-format-of-the-date-and-time-attribute"></a>Comportamiento y formato del atributo de fecha y hora
 
-Si tiene usuarios y oficinas en todo el mundo, es importante representar correctamente valores de fecha y hora en varias zonas horarias. Los `DateTimeAttributeMetadata` (clase <xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> o <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>) se usan para definir y administrar atributos de tipo `DateTime` en Common Data Service para aplicaciones. Use la propiedad `DateTimeBehavior` (para el servicio de la organización, consulte <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>) para definir si almacenar valores de fecha y hora con o sin información de zona horaria, y use la propiedad `DateTimeAttributeMetadata.Format` para especificar el formato de visualización de estos atributos.  
+Si tiene usuarios y oficinas en todo el mundo, es importante representar correctamente valores de fecha y hora en varias zonas horarias. Los `DateTimeAttributeMetadata` (clase <xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> o <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>) se usan para definir y administrar atributos de tipo `DateTime` en Common Data Service. Use la propiedad `DateTimeBehavior` (para el servicio de la organización, consulte <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>) para definir si almacenar valores de fecha y hora con o sin información de zona horaria, y use la propiedad `DateTimeAttributeMetadata.Format` para especificar el formato de visualización de estos atributos.  
 
   
- También puede usar el área personalización en CDS for Apps para definir el comportamiento y el formato de los atributos de fecha y hora. Más información: [Comportamiento y formato del campo de fecha y hora](/dynamics365/customer-engagement/customize/behavior-format-date-time-field).  
+ También puede usar el área personalización en Common Data Service para definir el comportamiento y el formato de los atributos de fecha y hora. Más información: [Comportamiento y formato del campo de fecha y hora](/dynamics365/customer-engagement/customize/behavior-format-date-time-field).  
   
 > [!NOTE]
->  Todos los atributos de fecha y hora en Common Data Service para aplicaciones admiten valores que se pueden remontar hasta el 1/1/1753 a las 12:00.  
+>  Todos los atributos de fecha y hora en Common Data Service admiten valores que se pueden remontar hasta el 1/1/1753 a las 12:00.  
   
 <a name="SpecifyBehavior"></a>   
 
@@ -69,7 +69,7 @@ Console.WriteLine("Created attribute '{0}' with UserLocal behavior\nfor the Acco
   
 > [!IMPORTANT]
 >  -   Una vez que cree un atributo de fecha y hora con el comportamiento establecido como `DateOnly` o `TimeZoneIndependent`, no puede cambiar el comportamiento del atributo. Más información: [Cambiar el comportamiento de un atributo de fecha y hora](behavior-format-date-time-attribute.md#ChangeBehavior)  
-> -   Los atributos de fecha y hora con el comportamiento `DateOnly` o `TimeZoneIndependent` se tratarán como si tuvieran el comportamiento `UserLocal` cuando se editen en una versión anterior del cliente de Dynamics 365 for Outlook en modo sin conexión. Esto se debe a que el cliente no comprende todos los nuevos comportamientos y no los tratará de forma distinta de `UserLocal`. Ningún atributo de fecha y hora se convierte a los nuevos comportamientos en la actualización, por lo que la recomendación aquí sería actualizar todos los clientes de CDS for Apps a la última versión antes de que un personalizador adopte uno de los comportamientos nuevos. Cuando está en línea, la modificación de los datos de los campos con los nuevos comportamientos funcionará bien.  
+> -   Los atributos de fecha y hora con el comportamiento `DateOnly` o `TimeZoneIndependent` se tratarán como si tuvieran el comportamiento `UserLocal` cuando se editen en una versión anterior del cliente de Dynamics 365 for Outlook en modo sin conexión. Esto se debe a que el cliente no comprende todos los nuevos comportamientos y no los tratará de forma distinta de `UserLocal`. Ningún atributo de fecha y hora se convierte a los nuevos comportamientos en la actualización, por lo que la recomendación aquí sería actualizar todos los clientes de Common Data Service a la última versión antes de que un personalizador adopte uno de los comportamientos nuevos. Cuando está en línea, la modificación de los datos de los campos con los nuevos comportamientos funcionará bien.  
   
 <a name="SpecifyFormat"></a>   
 
@@ -99,25 +99,25 @@ Console.WriteLine("Created attribute '{0}' with UserLocal behavior\nfor the Acco
    
 ## <a name="change-the-behavior-of-a-date-and-time-attribute"></a>Cambiar el comportamiento de un atributo de fecha y hora  
 
- Puede actualizar un atributo de fecha y hora para cambiar su comportamiento si tiene el rol Personalizador del sistema en su instancia de CDS for Apps y la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` para el atributo de fecha y hora se establece en `True`.  
+ Puede actualizar un atributo de fecha y hora para cambiar su comportamiento si tiene el rol Personalizador del sistema en su instancia de Common Data Service y la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` para el atributo de fecha y hora se establece en `True`.  
   
 > [!CAUTION]
 >  Antes de modificar el comportamiento de un atributo de fecha y hora, debe comprobar todas las dependencias del atributo, como reglas de negocio, flujos de trabajo, atributos calculados o consolidados, para asegurarse de que no hay problemas como resultado de modificar el comportamiento. Los personalizadores del sistema pueden limitar la modificación del comportamiento de los atributos existentes de fecha y hora usando la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior`.  
 >   
 >  Como mínimo, después de modificar el comportamiento de un atributo de fecha y hora, debe abrir cada regla de negocio, flujo de trabajo, atributo calculado y atributo consolidado dependiente del atributo de fecha y hora cambiado, revisar la información y guardar el registro, para asegurarse de que se usarán el atributo y el valor más recientes del campo de fecha y hora.  
 >   
->  Después de modificar el comportamiento de los datos y el tiempo de un atributo calculado o consolidado, abra el editor de definición de campos calculados o consolidados y guarde la definición del campo para asegurarse de que el atributo sigue siendo válido después del cambio de comportamiento. Los personalizadores del sistema pueden abrir el editor de definición del atributo calculado o consolidado haciendo clic en **Editar** junto a **Tipo de campo** en el área personalización en CDS for Apps. Más información: [Definir los campos calculados](/dynamics365/customer-engagement/customize/define-calculated-fields) y [Definir campos consolidados](/dynamics365/customer-engagement/developer/customize/define-rollup-fields)  
+>  Después de modificar el comportamiento de los datos y el tiempo de un atributo calculado o consolidado, abra el editor de definición de campos calculados o consolidados y guarde la definición del campo para asegurarse de que el atributo sigue siendo válido después del cambio de comportamiento. Los personalizadores del sistema pueden abrir el editor de definición del atributo calculado o consolidado haciendo clic en **Editar** junto a **Tipo de campo** en el área personalización en Common Data Service. Más información: [Definir los campos calculados](/dynamics365/customer-engagement/customize/define-calculated-fields) y [Definir campos consolidados](/dynamics365/customer-engagement/developer/customize/define-rollup-fields)  
   
 -   El comportamiento de los atributos `CreatedOn` y `ModifiedOn` para las entidades predefinidas y personalizadas se establece en `UserLocal` de forma predeterminada, y la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `False`, lo que implica que no puede modificar el comportamiento de estos atributos. Aunque los usuarios pueden cambiar el valor de propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` de estos atributos para entidades personalizadas, aún no pueden modificar el comportamiento de los atributos.  
   
 -   Para nuevos atributos de fecha y hora personalizados, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True`. Esto implica que puede cambiar el comportamiento de un atributo personalizado de fecha y hora de `UserLocal` a `DateOnly` o `TimeZoneIndependent`; no se permite ninguna otra transición de comportamiento.  
   
-     Para los atributos de fecha y hora personalizados que forman parte de una organización de CDS for Apps, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True` a menos que el atributo o la entidad principal no se pueda personalizar.  
+     Para los atributos de fecha y hora que forman parte de una organización de Common Data Service, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True` a menos que el atributo o la entidad principal no se puede personalizar.  
   
     > [!NOTE]
     >  Cuando se actualiza la propiedad `DateTimeAttributeMetadata.DateTimeBehavior` de un atributo de `UserLocal` a `DateOnly`, asegúrese de cambiar también la propiedad `DateTimeAttributeMetadata.Format` de `DateAndTime` a `DateOnly`. De lo contrario, aparecerá una excepción.  
   
--   Los siguientes atributos de fecha y hora predefinidos de CDS for Apps se establecen de forma predeterminado en `DateOnly` y la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `False` de estos atributos, lo que implica que no puede modificar el comportamiento de estos atributos:  
+-   Los siguientes atributos de fecha y hora predefinidos de Common Data Service se establecen de forma predeterminado en `DateOnly` y la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `False` de estos atributos, lo que implica que no puede modificar el comportamiento de estos atributos:  
   
     |Atributo de fecha y hora|Entidad primaria|  
     |-----------------------------|-------------------|  
@@ -186,11 +186,11 @@ Console.WriteLine("Published customizations to the Account entity.\n");
 <a name="Convert"></a>   
 ## <a name="convert-behavior-of-existing-date-and-time-values-in-the-database"></a>Convertir el comportamiento de valores existentes de fecha y hora en la base de datos 
 
- Cuando se actualiza un atributo de fecha y hora para cambiar su comportamiento de `UserLocal` a `DateOnly` o `TimeZoneIndependent`, no convierte automáticamente los valores del atributo existente en la base de datos. El cambio de comportamiento sólo afecta a los valores que se introducirán o actualizarán en el atributo *después* de que haya cambiado el comportamiento. Los valores de fecha y hora existentes del sistema continúan estando en UTC y CDS for Apps los muestra de acuerdo con el nuevo comportamiento cuando se recuperan mediante el SDK o en la interfaz de usuario como se explica en la sección anterior. Para los atributos cuyo comportamiento ha cambiado de `UserLocal` a `DateOnly`, puede convertir los valores UTC existentes en la base de datos al valor `DateOnly` adecuado para evitar cualquier anomalía de datos mediante el mensaje `ConvertDateAndTimeBehavior`.  
+ Cuando se actualiza un atributo de fecha y hora para cambiar su comportamiento de `UserLocal` a `DateOnly` o `TimeZoneIndependent`, no convierte automáticamente los valores del atributo existente en la base de datos. El cambio de comportamiento sólo afecta a los valores que se introducirán o actualizarán en el atributo *después* de que haya cambiado el comportamiento. Los valores de fecha y hora existentes del sistema continúan estando en UTC y Common Data Service los muestra de acuerdo con el nuevo comportamiento cuando se recuperan mediante el SDK o en la interfaz de usuario como se explica en la sección anterior. Para los atributos cuyo comportamiento ha cambiado de `UserLocal` a `DateOnly`, puede convertir los valores UTC existentes en la base de datos al valor `DateOnly` adecuado para evitar cualquier anomalía de datos mediante el mensaje `ConvertDateAndTimeBehavior`.  
   
  El mensaje le permite especificar una regla de conversión (Si trabaja con el servicio de organización, consulte <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.ConversionRule>) para seleccionar la zona horaria para usar en la conversión de los valores de UTC a DateOnly. Puede especificar una de las siguientes reglas de conversión:  
   
--   `SpecificTimeZone`: Convierte el valor UTC a un valor DateOnly de acuerdo con el código de zona horaria de CDS for Apps especificado. En este caso, también debe especificar un valor para el parámetro <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode>.  
+-   `SpecificTimeZone`: Convierte el valor UTC a un valor DateOnly de acuerdo con el código de zona horaria de Common Data Service especificado. En este caso, también debe especificar un valor para el parámetro <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode>.  
   
 -   `CreatedByTimeZone`: Convierte un valor UTC en un valor DateOnly que el usuario que creó el registro vería en la interfaz de usuario.  
   
@@ -201,7 +201,7 @@ Console.WriteLine("Published customizations to the Account entity.\n");
  Puede usar uno de los cuatro miembros de la clase <xref:Microsoft.Xrm.Sdk.DateTimeBehaviorConversionRule> para especificar un valor válido para el parámetro <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.ConversionRule>.  
   
 > [!NOTE]
->  Debe tener el rol de administrador del sistema en su instancia de CDS for Apps para ejecutar el mensaje <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest>.  
+>  Debe tener el rol de administrador del sistema en su instancia de Common Data Service para ejecutar el mensaje <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest>.  
   
  Cuando ejecute el mensaje `ConvertDateAndTimeBehavior` (Si trabaja con el servicio de organización, consulte el mensaje <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest>), se crea un trabajo del sistema (operación asincrónica) para ejecutar la solicitud de conversión. El atributo `ConvertDateAndTimeBehaviorResponse.JobId` en la respuesta del mensaje muestra el Id. de trabajo del sistema que se crea como resultado de la solicitud de la conversión. Cuando finalice el trabajo del sistema, verifique los detalles del trabajo (`AsyncOperation.Message`) para ver detalles o errores de conversión, si los hay.  
   
@@ -210,7 +210,7 @@ Console.WriteLine("Published customizations to the Account entity.\n");
   
  Algunos aspectos importantes que se deben tener en cuenta mientras usa el mensaje `ConvertDateAndTimeBehavior`:  
   
--   Debe evitar cualquier cambio importante en las soluciones en CDS for Apps durante la ejecución del mensaje, como importar una solución o eliminar un entidad o el atributo principal. Si lo hace podría producirse un comportamiento inesperado; sin embargo, no se producirá pérdida de datos.  
+-   Debe evitar cualquier cambio importante en las soluciones en Common Data Service durante la ejecución del mensaje, como importar una solución o eliminar un entidad o el atributo principal. Si lo hace podría producirse un comportamiento inesperado; sin embargo, no se producirá pérdida de datos.  
   
 -   Las actualizaciones realizadas en el sistema como resultado de ejecutar el mensaje no ejecutarán flujos de trabajo y complementos.  
   

@@ -1,5 +1,5 @@
 ---
-title: Configurar la importación de datos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Configurar la importación de datos (Common Data Service) | Microsoft Docs
 description: La información de configuración que se necesita para importar datos se incluye en la entidad de importación de datos y la entidad del archivo de origen.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
 <!-- 
 Was Mike Carter's
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-data-import 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-data-import 
 
 Child topic of 
 powerapps-docs/developer/common-data-service/import-data.md
@@ -49,7 +49,7 @@ La información de configuración que se necesita para importar datos se incluye
 - Lea el contenido del archivo de origen en el `ImportFile.Content`.  
   
 > [!IMPORTANT]
->  No se recomienda actualizar registros utilizando la importación de datos mediante programación. Para actualizar, use las capacidades de exportación e importación de los datos de la aplicación web de CDS for Apps. Use **Exportar a Excel** para exportar registros a un archivo de hoja de cálculo XML 2003 (.xml). Este es el único tipo de archivo de origen válido para el modo de actualización. Volver a importar los datos desde el archivo de origen de hoja de cálculo XML 2003 (.xml) garantiza que la integridad de los datos en CDS for Apps se mantenga. Para importar datos actualizados, utilice el Asistente para la importación de datos de CDS for Apps. Para obtener más información sobre el Asistente para la importación de datos, consulte la Ayuda de CDS for Apps.  
+>  No se recomienda actualizar registros utilizando la importación de datos mediante programación. Para actualizar, use las capacidades de exportación e importación de los datos de la aplicación web de Common Data Service. Use **Exportar a Excel** para exportar registros a un archivo de hoja de cálculo XML 2003 (.xml). Este es el único tipo de archivo de origen válido para el modo de actualización. Volver a importar los datos desde el archivo de origen de hoja de cálculo XML 2003 (.xml) garantiza que la integridad de los datos en Common Data Service se mantenga. Para importar datos actualizados, utilice el Asistente para la importación de datos de Common Data Service. Para obtener más información sobre el Asistente para la importación de datos, consulte la Ayuda de Common Data Service.  
  
 ### <a name="see-also"></a>Vea también
 

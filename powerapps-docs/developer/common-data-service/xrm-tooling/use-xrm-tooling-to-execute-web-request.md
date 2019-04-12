@@ -4,7 +4,7 @@ description: 'El objeto de clase CrmServiceClient se puede usar para realizar, c
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,15 +24,15 @@ search.app:
 
 El objeto de clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> se usa para realizar acciones en los datos de Dynamics 365, como crear, actualizar, recuperar o eliminar datos.
 
-Ahora puede utilizar el método <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> para ejecutar una solicitud web con la API web de XRM.
+Ahora puede usar el <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> método para ejecutar una solicitud web con la API web de XRM.
 
-El siguiente código de ejemplo demuestra cómo puede ejecutar una solicitud web mediante el método <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->. 
+El siguiente código de ejemplo demuestra cómo puede ejecutar una solicitud web mediante <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> . 
 
 >[!NOTE]
 > Este método solo es aplicable cuando se especifica el tipo de autenticación como `OAuth` o `Certificate`.
 
 ## <a name="create-a-record"></a>Crear un registro
-El siguiente código de ejemplo demuestra cómo crear un registro mediante el método <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->. En este ejemplo, creará una cuenta y, a continuación, muestre el identificador en el objeto de respuesta.  
+El siguiente código de ejemplo demuestra cómo crear un registro mediante <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> . En este ejemplo, creará una cuenta y, a continuación, muestre el identificador en el objeto de respuesta.  
 
 ```csharp
  Dictionary<string, List<string>> ODataHeaders = new Dictionary<string, List<string>>() {

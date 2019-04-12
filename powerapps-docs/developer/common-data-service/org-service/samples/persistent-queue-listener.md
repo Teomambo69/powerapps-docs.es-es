@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: escucha de cola persistente (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: escucha de cola persistente (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo escribir una aplicación de escucha de Azure Service Bus para un contrato persistente de extremo de cola.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-persistent-queue-listener"></a>Ejemplo: escucha de cola persistente
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-persistent-queue-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-persistent-queue-listener -->
 
 Este ejemplo muestra cómo escribir una aplicación de escucha de Azure Service Bus para un contrato persistente de extremo de cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PersistentQueueListener).
 

@@ -1,9 +1,9 @@
 ---
-title: Crear y editar campos para Common Data Service para aplicaciones mediante el explorador de soluciones de PowerApps | MicrosoftDocs
+title: Crear y editar campos para Common Data Service mediante el explorador de soluciones de PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,13 +19,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-solution-explorer"></a>Crear y editar campos para Common Data Service para aplicaciones mediante el explorador de soluciones de PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps
 
-El explorador de soluciones proporciona una forma de crear y editar campos para Common Data Service para aplicaciones.
+El explorador de soluciones proporciona una forma de crear y editar campos para Common Data Service.
 
 El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de campos para Common Data Service para aplicaciones](create-edit-fields.md)
-- [Crear y editar campos para Common Data Service para aplicaciones mediante el portal de PowerApps](create-edit-field-portal.md)
+- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
+- [Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -142,7 +142,7 @@ Si elige **Usar Conjunto de opciones existente** el diseñador mostrará una lis
 
 ![Configurar un conjunto de opciones global](media/global-option-set-solution-explorer.png)
 
-También puede configurar conjuntos de opciones globales por separado. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service para aplicaciones (listas desplegables)](create-edit-global-option-sets.md)
+También puede configurar conjuntos de opciones globales por separado. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)
 
 > [!NOTE]
 > Si define cada conjunto de opciones como conjunto de opciones global, la lista de conjuntos de opciones globales crecerá y puede resultar difícil de administrar. Si sabe que el conjunto de opciones solo se usará en un lugar, use un conjunto de opciones local.
@@ -260,8 +260,8 @@ Cualquiera de los campos que proporcionan la entrada de texto directa tienen un 
 
 
 ### <a name="see-also"></a>Vea también  
-[Creación y edición de campos para Common Data Service para aplicaciones](create-edit-fields.md)<br />
-[Crear y editar campos para Common Data Service para aplicaciones mediante el portal de PowerApps](create-edit-field-portal.md)<br />
+[Creación y edición de campos para Common Data Service](create-edit-fields.md)<br />
+[Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Definir campos consolidados que agregan valores](define-rollup-fields.md)<br />

@@ -1,6 +1,6 @@
 ---
-title: Suplantar a otro usuario (Common Data Service para aplicaciones) | Microsoft Docs
-description: Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para aplicaciones para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado.
+title: Suplantar a otro usuario (Common Data Service) | Microsoft Docs
+description: Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="impersonate-another-user"></a>Suplantar a otro usuario
 
-Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para aplicaciones para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. 
+Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. 
 
-Esto es necesario porque varios clientes y servicios de los servicios web de CDS for Apps pueden llamar en nombre de un usuario de CDS for Apps.
+Esto es necesario porque varios clientes y servicios de los servicios web de Common Data Service pueden llamar en nombre de un usuario de Common Data Service.
 
 La suplantación implica dos diferentes cuentas de usuario: 
 
@@ -40,7 +40,7 @@ Es decir, al *suplantador* se le permite hacer algo *solo si* el *suplantador* y
 
 ## <a name="impersonation-with-server-to-server-authentication"></a>Suplantación con la autenticación de servidor a servidor
 
-Si está creando una aplicación de cliente web que requiere una cuenta de usuario que pueda actuar en nombre del usuario de suscripción, puede usar la cuenta especial *usuario de la aplicación* de modo que no sea necesario usar una licencia de usuario de CDS for Apps de pago.
+Si está creando una aplicación de cliente web que requiere una cuenta de usuario que pueda actuar en nombre del usuario de suscripción, puede usar la cuenta especial *usuario de la aplicación* de modo que no sea necesario usar una licencia de usuario de Common Data Service de pago.
 
 Más información: [Crear aplicaciones web mediante la autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md).
 
@@ -59,7 +59,7 @@ Para suplantar a otro usuario, establezca la propiedad `CallerId` al valor de GU
 - <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.CallerId>
 - <xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient>.<xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient.CallerId>
 
-## <a name="impersonate-another-using-in-plug-ins"></a>Suplantar a otro mediante complementos
+## <a name="impersonate-another-user-using-plug-ins"></a>Suplantar a otro mediante complementos
 
 Puede registrar un complemento en el que puede especificar un usuario que deben usar las operaciones. En el código de un complemento puede reemplazar esta configuración.
 Más información: [Suplantar a un usuario](impersonate-a-user.md).

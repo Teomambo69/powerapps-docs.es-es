@@ -1,5 +1,5 @@
 ---
-title: 'Paso 4: Crear un paquete de AppSource para la aplicación (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Paso 4: Crear un paquete de AppSource para la aplicación (Common Data Service) | Microsoft Docs'
 description: Obtenga información sobre cómo crear un paquete de AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -32,7 +32,7 @@ Debe crear un paquete de AppSource (archivo .zip) para incluir los archivos de d
 
 Un paquete le permite agrupar y distribuir varios archivos relacionados con la aplicación a la vez. 
 
-1. Crear un paquete de Dynamics 365 para incluir los archivos de datos de configuración y la solución que haya creado en [Paso 2: crear una solución administrada para su aplicación](create-solution-app-appsource.md). Un paquete también puede contener código personalizado que puede ejecutarse antes, durante o después de que se implemente el paquete en la instancia de CDS for Apps. Para obtener más información sobre la creación de archivos de paquete, consulte [Crear paquetes para el Package Deployer de Dynamics 365](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
+1. Crear un paquete de Dynamics 365 para incluir los archivos de datos de configuración y la solución que haya creado en [Paso 2: crear una solución administrada para su aplicación](create-solution-app-appsource.md). Un paquete también puede contener código personalizado que puede ejecutarse antes, durante o después de que se implemente el paquete en la instancia de Common Data Service. Para obtener más información sobre la creación de archivos de paquete, consulte [Crear paquetes para el Package Deployer de Dynamics 365](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
 
     Después de crear un paquete, el paquete constará de lo siguiente:
 

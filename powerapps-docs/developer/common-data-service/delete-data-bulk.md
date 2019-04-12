@@ -1,5 +1,5 @@
 ---
-title: Eliminar datos de forma masiva (Common Data Service para aplicaciones) | Microsoft Docs
+title: Eliminar datos de forma masiva (Common Data Service) | Microsoft Docs
 description: Eliminar datos de forma masiva ayuda a mantener la calidad de los datos y a administrar el consumo de almacenamiento del sistema eliminando los datos que ya no son necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="delete-data-in-bulk"></a>Eliminar datos en masa
 
-La característica *eliminación en masa* ayuda a mantener la calidad de los datos y a administrar el consumo de almacenamiento del sistema en Common Data Service (CDS) para aplicaciones mediante la eliminación de datos que ya no son necesarios. Por ejemplo, puede eliminar los siguientes datos en masa:  
+La característica *eliminación en masa* ayuda a mantener la calidad de los datos y a administrar el consumo de almacenamiento del sistema en Common Data Service mediante la eliminación de datos que ya no son necesarios. Por ejemplo, puede eliminar los siguientes datos en masa:  
   
 - Datos obsoletos.  
   

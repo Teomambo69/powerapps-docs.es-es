@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar simultaneidad optimista con operaciones de actualización y eliminación (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar simultaneidad optimista con operaciones de actualización y eliminación (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar simultaneidad optimista para operaciones de actualización y eliminación.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-optimistic-concurrency-with-update-and-delete-operations"></a>Ejemplo: Uso de simultaneidad optimista con operaciones de actualización y eliminación
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-optimistic-concurrency-update-delete-operations -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-optimistic-concurrency-update-delete-operations -->
 
 Este ejemplo muestra cómo usar simultaneidad optimista para operaciones de actualización y eliminación. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OptimisticConcurrency).
 

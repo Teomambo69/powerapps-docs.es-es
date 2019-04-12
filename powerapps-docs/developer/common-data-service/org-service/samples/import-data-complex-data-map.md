@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Importación de datos mediante la asignación de datos complejos (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Importación de datos mediante la asignación de datos complejos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear nuevos registros mediante la importación de datos
 ms.custom: ''
 ms.date: 10/31/2018

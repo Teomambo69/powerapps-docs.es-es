@@ -1,13 +1,13 @@
 ---
 title: Requisitos de licencia para entidades | Microsoft Docs
-description: Una explicación de los requisitos de licencia para las entidades de Common Data Service (CDS) for Apps.
-author: clwesene
+description: Una explicación de los requisitos de licencia para las entidades de Common Data Service.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -16,13 +16,13 @@ search.app:
 ---
 
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
-Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service (CDS) for Apps (incluidas las entidades personalizadas y las entidades que forman parte del modelo común de datos) para crear aplicaciones y flujos para los usuarios que tienen una licencia de Plan 1 de PowerApps o de Plan 1 de Microsoft Flow. En algunos casos, las entidades contienen lógica de negocios compleja o están ligadas a aplicaciones de Dynamics 365 para las que es necesario que los usuarios tengan una licencia específica. 
+Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service (incluidas las entidades personalizadas y las entidades que forman parte del modelo común de datos) para crear aplicaciones y flujos para los usuarios que tienen una licencia de Plan 1 de PowerApps o de Plan 1 de Microsoft Flow. En algunos casos, las entidades contienen lógica de negocios compleja o están ligadas a aplicaciones de Dynamics 365 para las que es necesario que los usuarios tengan una licencia específica. 
 
 
 |Entidad    |Descripción    |Requisito    |
 |---------|---------|---------|
 |Entidades con lógica de negocios compleja   | Estas son entidades que usan una lógica de negocios compleja de servidor. Por ejemplo, cualquier entidad que use un flujo de trabajo en tiempo real o un complemento de código.       |  [Plan de 2 PowerApps](https://powerapps.microsoft.com/pricing/) o [Plan 2 de Flow](https://flow.microsoft.com/pricing/)        |
-|Entidades restringidas  |  Estas son entidades que no son estándar en Common Data Service for Apps pero que se incluyen en una aplicación de Dynamics 365 Customer Engagement o en una solución de terceros. Por ejemplo, las entidades de artículo de conocimientos, de objetivo y de derecho.     |  [Un plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)      | 
+|Entidades restringidas  |  Estas son entidades que no son estándar en Common Data Service pero que se incluyen en una aplicación de Dynamics 365 Customer Engagement o en una solución de terceros. Por ejemplo, las entidades de artículo de conocimientos, de objetivo y de derecho.     |  [Un plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -40,13 +40,13 @@ Las entidades que incluyen la siguiente lógica compleja de servidor requieren q
 Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno. Para la lista de entidades que puedan contener lógica de servidor después de instalar una aplicación de Dynamics 365, consulte [Entidades complejas que requieren licencias de Plan 2 de PowerApps](data-platform-complex-entities.md)  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>Elementos que afectan a los requisitos de licencia al agregar lógica de negocios compleja
-Los creadores de aplicaciones pueden agregar complementos de código y flujos de trabajo en tiempo real a las entidades de CDS para aplicaciones, pero el hacerlo podría cambiar los requisitos de licencia para los usuarios de aplicaciones ya implementadas. Los creadores de aplicaciones deben ser prudentes al agregar lógica de negocios compleja a una entidad y primero deben comprobar qué aplicaciones usan la entidad y si los usuarios de esas aplicaciones tienen las licencias adecuadas.
+Los creadores de aplicaciones pueden agregar complementos de código y flujos de trabajo en tiempo real a las entidades de Common Data Service, pero el hacerlo podría cambiar los requisitos de licencia para los usuarios de aplicaciones ya implementadas. Los creadores de aplicaciones deben ser prudentes al agregar lógica de negocios compleja a una entidad y primero deben comprobar qué aplicaciones usan la entidad y si los usuarios de esas aplicaciones tienen las licencias adecuadas.
 
 ## <a name="restricted-entities"></a>Entidades restringidas
 Algunas entidades que están ligadas a la funcionalidad de las aplicaciones de Dynamics 365 requieren que los usuarios de la aplicación tengan la licencia correspondiente para esa aplicación si desean crear, actualizar, o eliminar registros dentro de las entidades. Para obtener una lista completa de las entidades restringidas, consulte [Entidades restringidas que requieren licencias de Dynamics 365](data-platform-restricted-entities.md).
 
 ## <a name="licensing-examples"></a>Ejemplos de licencias
-Barb e Isaac van a crear aplicaciones en PowerApps mediante CDS para aplicaciones para almacenar los datos.
+Barb e Isaac van a crear aplicaciones en PowerApps mediante Common Data Service para almacenar los datos.
 
 Barb va a crear dos aplicaciones de lienzo:
 
@@ -59,7 +59,7 @@ Isaac va a crear dos aplicaciones controladas por modelos:
 * La aplicación 4 &ndash; usa la entidad Cita junto con la entidad Incidente, que es una entidad restringida
 
 Barb e Isaac necesitan las licencias siguientes:
-* Barb necesita una licencia de Plan 1 de PowerApps para crear aplicaciones de lienzo usando CDS para aplicaciones. Si tuviera que crear una base de datos o una entidad personalizada, necesitaría una licencia de Plan 2 de PowerApps.
+* Barb necesita una licencia de Plan 1 de PowerApps para crear aplicaciones de lienzo usando Common Data Service. Si tuviera que crear una base de datos o una entidad personalizada, necesitaría una licencia de Plan 2 de PowerApps.
 
 * Isaac necesita una licencia de Plan 2 de PowerApps para crear aplicaciones controladas por modelos.
 
@@ -77,7 +77,7 @@ Los usuarios de la aplicación necesitan las licencias siguientes:
 Ahora, veamos lo que sucede cuando Isaac agrega un flujo de trabajo en tiempo real a la entidad personalizada que Barb e Isaac usan en sus aplicaciones.
 
 Barb e Isaac necesitan las licencias siguientes:
-* Barb sigue necesitando una licencia de Plan 1 de PowerApps para crear aplicaciones de lienzo usando CDS para aplicaciones.
+* Barb sigue necesitando una licencia de Plan 1 de PowerApps para crear aplicaciones de lienzo usando Common Data Service.
 
 * Isaac sigue necesitando una licencia de Plan 2 de PowerApps para crear aplicaciones controladas por modelos.
 

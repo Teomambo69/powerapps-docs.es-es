@@ -1,6 +1,6 @@
 ---
-title: Servicios de detección (Common Data Service para aplicaciones) | Microsoft Docs
-description: Servicio de detección de CDS for Apps se puede acceder desde la API web o el servicio de organización.
+title: Servicios de detección (Common Data Service) | Microsoft Docs
+description: Al servicio de detección de Common Data Service se puede acceder desde la API web o el servicio de organización.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -27,5 +27,5 @@ Al servicio de detección se puede acceder desde la API web o el servicio de org
 
 ### <a name="see-also"></a>Vea también
 
-[Usar para la API web de Common Data Service para aplicaciones](webapi/overview.md)<br />
-[Usar para el servicio de organización Common Data Service para aplicaciones](org-service/overview.md)
+[Utilizar API Web de Common Data Service](webapi/overview.md)<br />
+[Usar el servicio de organización de Common Data Service](org-service/overview.md)

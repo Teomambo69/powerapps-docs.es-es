@@ -1,6 +1,6 @@
 ---
-title: Operaciones de entidad que usan el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
-description: Obtenga más información sobre la clase entidad que se usa para las operaciones de datos mediante el servicio de la organización de CDS for Apps
+title: Operaciones de entidad que usan el servicio de la organización (Common Data Service) | Microsoft Docs
+description: Obtenga más información sobre la clase entidad que se usa para las operaciones de datos mediante el servicio de la organización de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Operaciones de la entidad con el servicio de la organización
 
-Al ejecutar con datos de Common Data Service para aplicaciones mediante el servicio de la organización usará la clase <xref:Microsoft.Xrm.Sdk.Entity> con el estilo de enlace en tiempo e ejecución o con clases de entidad generadas mediante en el estilo de enalce en tiempo de compilación. Las tipos de entidad generadas heredan de la clase <xref:Microsoft.Xrm.Sdk.Entity>, por lo que de entender la clase <xref:Microsoft.Xrm.Sdk.Entity> es importante para cualquiera de los estilos.
+Al ejecutar con datos de Common Data Service mediante el servicio de la organización usará la clase <xref:Microsoft.Xrm.Sdk.Entity> con el estilo de enlace en tiempo e ejecución o con clases de entidad generadas mediante en el estilo de enalce en tiempo de compilación. Las tipos de entidad generadas heredan de la clase <xref:Microsoft.Xrm.Sdk.Entity>, por lo que de entender la clase <xref:Microsoft.Xrm.Sdk.Entity> es importante para cualquiera de los estilos.
 
 Este tema describirá algunas de las propiedades y métodos más utilizados de la clase <xref:Microsoft.Xrm.Sdk.Entity>.
 
@@ -199,7 +199,7 @@ Account account2 = retrievedEntity.ToEntity<Account>();
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Estos temas aportarán más información sobre cómo trabajar con las entidades CDS for Apps.
+Estos temas aportarán más información sobre cómo trabajar con las entidades Common Data Service.
 
 [Tutorial: ejemplo de servicio de organización (C#)](quick-start-org-service-console-app.md)
 [Consultar datos](entity-operations-query-data.md)<br />

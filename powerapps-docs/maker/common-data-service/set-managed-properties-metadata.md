@@ -1,10 +1,10 @@
 ---
-title: Establecer propiedades administradas en metadatos de Common Data Service for Apps | MicrosoftDocs
+title: Establecer propiedades administradas en metadatos de Common Data Service | MicrosoftDocs
 description: Aprenda cómo establecer propiedades administradas para elementos de metadatos en una solución
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service for Apps 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service 
 
 Las propiedades administradas se aplican únicamente al incluir metadatos con una solución administrada e importarlos en otro entorno. Estos valores permiten al responsable de la solución tener un determinado control sobre el nivel de personalización que desea permitir a los usuarios que instalen su solución administrada. 
 
@@ -58,7 +58,7 @@ Las entidades tienen más propiedades administradas que ningún otro tipo de com
 
 ## <a name="field-managed-properties"></a>Propiedades administradas de campos
 
-Consulte [Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
+Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
 
 Mientras [visualiza campos](create-edit-field-solution-explorer.md#view-fields), seleccione un campo personalizado de una solución no administrada y elija **Más acciones** >  **Propiedades administradas** en la barra de menús.
 
@@ -94,6 +94,6 @@ Con las relaciones, la única propiedad administrada es **Se puede personalizar*
 
 [Propiedades administradas](solutions-overview.md#managed-properties)<br />
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
-[Crear y editar campos para Common Data Service for Apps usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
-[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service para aplicaciones mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)
+[Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)

@@ -1,5 +1,5 @@
 ---
-title: Creación de entidades con el servicio de organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Creación de entidades con el servicio de organización (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,8 @@ Este tema incluye ejemplos que usan los de enlace en tiempo de ejecución y enla
 
 Los ejemplos siguientes muestran cómo crear un registro de entidad con los estilos de enlace en tiempo de ejecución y en tiempo de compilación.
 
-<!-- TODO make this an include? --> Cada uno de los ejemplos usa una variable `svc` que representa una instancia de una clase que implementa los métodos en la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationService>. Para obtener más información sobre las clases que admiten esta interfaz, consulte [Interfaz IOrganizationService](iorganizationservice-interface.md).
+<!-- TODO make this an include? -->
+Cada uno de los ejemplos usa una variable `svc` que representa una instancia de una clase que implementa los métodos en la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationService>. Para obtener más información sobre las clases que admiten esta interfaz, consulte [Interfaz IOrganizationService](iorganizationservice-interface.md).
 
 > [!NOTE]
 > Cada entidad tiene un atributo de identificador único que puede especificar el crear una entidad. En la mayoría de los casos debe permitir que el sistema lo establezca automáticamente porque los valores generados por el sistema se optimizan para el máximo rendimiento.
@@ -228,7 +229,7 @@ Más información: [Detección de datos duplicados con el servicio de la organiz
 
 Cuando las personas crean registros nuevos en la aplicación, se crean normalmente en el contexto de otro registro. Por ejemplo, se puede crear un nuevo registro de contacto en el contexto de una cuenta. Cuando esto ocurre es posible que algunos valores de atributo de la entidad de la cuenta se copien en el formulario de contacto. Esto agiliza la creación del nuevo registro relacionado porque el nuevo registro tendrá algunos valores predeterminados establecidos para que la persona que edita el registro que se va a crear no necesite especificar esos valores. Pueden cambiar los valores si quieren antes de guardar.
 
-Los valores que se copiarán cuando se crea un nuevo registro de esta manera están controlados por las configuraciones que se aplican al entorno de CDS for Apps, por lo que puede variar entre entornos. 
+Los valores que se copiarán cuando se crea un nuevo registro de esta manera están controlados por las configuraciones que se aplican al entorno de Common Data Service, por lo que puede variar entre entornos. 
 
 Más información: 
 - [Asignar campos de entidad](../../../maker/common-data-service/map-entity-fields.md)

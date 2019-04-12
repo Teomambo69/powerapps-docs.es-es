@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Convertir consultas entre entre Fetch y QyeryExpression (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Convertir consultas entre entre Fetch y QyeryExpression (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo convertir consultas entre FetchXML y QueryExpression
 ms.custom: ''
 ms.date: 10/31/2018

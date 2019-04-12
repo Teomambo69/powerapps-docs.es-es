@@ -1,10 +1,10 @@
 ---
-title: Configure el seguimiento para los útiles de XRM (Common Data Service para aplicaciones)| Microsoft Docs
+title: Configure el seguimiento para los útiles de XRM (Common Data Service)| Microsoft Docs
 description: 'Aprenda cómo puede configurar el seguimiento para componentes como llamadas a operaciones, advertencias, excepciones y otros eventos importantes en útiles de XRM.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

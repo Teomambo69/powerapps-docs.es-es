@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: escucha bidireccional (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: escucha bidireccional (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo escribir un módulo de escucha de Azure Service Bus para un contrato de extremo bidireccional.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-two-way-listener"></a>Ejemplo: escucha bidireccional
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-two-way-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-two-way-listener -->
 
 Este ejemplo muestra cómo escribir un escucha de `Azure Service Bus` para un contrato de extremo bidireccional. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/TwoWayListener).
 

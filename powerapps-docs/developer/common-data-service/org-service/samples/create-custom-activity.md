@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear una actividad personalizada (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Crear una actividad personalizada (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear una actividad personalizada.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-custom-activity"></a>Ejemplo: crear una actividad personalizada
 
-El ejemplo muestra cómo crear una actividad personalizada con [CreateEntityRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) y [CreateAttributeRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity). 
+El ejemplo muestra cómo crear una actividad personalizada con [CreateEntityRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) y [CreateAttributeRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity). 
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

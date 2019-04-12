@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Escribir y registrar un complemento (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Tutorial: Escribir y registrar un complemento (Common Data Service) | Microsoft Docs'
 description: Este tutorial es el primero de una serie que le muestra cómo trabajar con los complementos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -38,7 +38,7 @@ Crear un complemento asincrónico registrado en el mensaje Crear de la entidad d
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Acceso de nivel de administrador a entorno de Common Data Service para aplicaciones
+- Acceso de nivel de administrador a entorno de Common Data Service
 - Una aplicación basada en modelos que incluye las entidades de cuenta y tarea.
     - Si no dispone de una aplicación basada en modelos que incluya estas, vea [Crear la primera aplicación basada en modelos desde cero](../../maker/model-driven-apps/build-first-model-driven-app.md) para conocer los pasos para crear una en unos minutos.
 - Visual Studio 2017

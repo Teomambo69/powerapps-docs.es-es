@@ -1,5 +1,5 @@
 ---
-title: Entidades de actividad de correo electrónico (Common Data Service para aplicaciones) | Microsoft Docs
+title: Entidades de actividad de correo electrónico (Common Data Service) | Microsoft Docs
 description: La actividad de correo electrónico en Dynamics 365 permite realizar el seguimiento y administrar comunicaciones de correo electrónico con los clientes.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="email-activity-entities"></a>Entidades de actividad de correo electrónico
 
-La actividad de correo electrónico permite realizar el seguimiento y administrar comunicaciones de correo electrónico con los clientes. Common Data Service para aplicaciones incluye el software de E-mail Router que administra enrutamiento de correo electrónico que sale y entra en CDS for Apps. La actividad de correo electrónico se entrega con protocolos de correo electrónico. E-mail Router admite los siguientes protocolos de correo electrónico: servicios web de Exchange, POP3 y SMTP. Además del software E-mail Router, la actividad de correo electrónico también se puede ofrecer mediante Dynamics 365 for Outlook.  
+La actividad de correo electrónico permite realizar el seguimiento y administrar comunicaciones de correo electrónico con los clientes. Common Data Service incluye el software de E-mail Router que administra enrutamiento de correo electrónico que sale y entra en Common Data Service. La actividad de correo electrónico se entrega con protocolos de correo electrónico. E-mail Router admite los siguientes protocolos de correo electrónico: servicios web de Exchange, POP3 y SMTP. Además del software E-mail Router, la actividad de correo electrónico también se puede ofrecer mediante Dynamics 365 for Outlook.  
   
 <a name="Actions"></a>   
 
@@ -37,12 +37,12 @@ La actividad de correo electrónico permite realizar el seguimiento y administra
    Si los atributos de organización `Organization.RequireApprovalForuserEmail` y `Organization.RequireApprovalForQueueEmail` (correos electrónicos de proceso solo para usuarios o colas aprobados) se establecen en **true** (1), se produce lo siguiente: los mensajes de correo electrónico se entregan o se envían solamente desde un usuario o una cola si la dirección de correo electrónico principal del usuario o cola está aprobada. Los atributos `SystemUser.EmailRouterAccessApproval` y `Queue.EmailRouterAccessApproval` indican el estado de la dirección de correo electrónico principal del usuario y la cola respetivamente, y el valor debe establecerse como 1. De lo contrario, los mensajes entrantes y salientes se bloquearán. Puede actualizar el registro de usuarios o de colas para cambiar el valor del atributo, si no está ya en estado aprobado, siempre que su cuenta de usuario disponga del privilegio **prvApproveRejectEmailAddress** asignado.
   
 > [!NOTE]
->  En CDS for Apps, el atributo `Email.StatusCode` no puede ser **null**.  
+>  En Common Data Service, el atributo `Email.StatusCode` no puede ser **null**.  
   
 <a name="BulkE-Mail"></a>   
 
 ## <a name="bulk-email"></a>Correo en masa  
- CDS for Apps admite el envío de correo electrónico a una lista importante de destinatarios a través de una solicitud de correo electrónico en masa. Cuando se envía una solicitud de correo electrónico en masa a CDS for Apps, se crea una operación asincrónica en la cola de servicio asincrónica que envía los mensajes de correo electrónico mediante un proceso en segundo plano. Esto le proporciona un rendimiento del sistema mejorado.  
+ Common Data Service admite el envío de correo electrónico a una lista importante de destinatarios a través de una solicitud de correo electrónico en masa. Cuando se envía una solicitud de correo electrónico en masa a Common Data Service, se crea una operación asincrónica en la cola de servicio asincrónica que envía los mensajes de correo electrónico mediante un proceso en segundo plano. Esto le proporciona un rendimiento del sistema mejorado.  
   
  Los mensajes <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> y <xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> se usan para enviar mensajes de correo electrónico en masa. A continuación se enumera la secuencia utilizada para enviar correo electrónico en masa:  
   
@@ -52,7 +52,7 @@ La actividad de correo electrónico permite realizar el seguimiento y administra
   
 3. El servicio asincrónico envía cada mensaje de correo electrónico. Los mensajes de correo electrónico tienen estado de envío "pendiente".  
   
-4. El enrutador de correo electrónico, Dynamics 365 for Outlook, o un componente de envío de correo electrónico de terceros sondea CDS for Apps en busca de mensajes de correo electrónico pendientes y, si se encuentra uno, los descarga mediante la solicitud `BackgroundSendEmail`.  
+4. El enrutador de correo electrónico, Dynamics 365 for Outlook, o un componente de envío de correo electrónico de terceros sondea Common Data Service en busca de mensajes de correo electrónico pendientes y, si se encuentra uno, los descarga mediante la solicitud `BackgroundSendEmail`.  
   
 5. La solicitud `BackgroundSendEmail` realiza las operaciones siguientes: comprueba si hay mensajes de correo electrónico pendientes, descarga el correo electrónico al llamador del mensaje <xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> y sincroniza las descargas si hay varios llamadores.  
   

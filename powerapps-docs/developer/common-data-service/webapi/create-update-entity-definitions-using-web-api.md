@@ -1,10 +1,10 @@
 ---
-title: Crear y actualizar definiciones de entidades utilizando la API web (Common Data Service para aplicaciones) | Microsoft Docs
+title: Crear y actualizar definiciones de entidades utilizando la API web (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo crear y actualizar definiciones de entidad mediante la API web.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -792,7 +792,7 @@ Como se menciona en [Actualizar entidades](create-update-entity-definitions-usin
   
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web con metadatos de Common Data Service para aplicaciones](use-web-api-metadata.md)<br />
+[Usar la API web con metadatos de Common Data Service](use-web-api-metadata.md)<br />
 [Consulta metadatos utilizando la API web](query-metadata-web-api.md)<br />
 [Recuperar metadatos por nombre o identificador de metadatos](retrieve-metadata-name-metadataid.md)<br />
 [Relaciones entre entidades de modelo mediante la API web](create-update-entity-relationships-using-web-api.md)<br />

@@ -1,10 +1,10 @@
 ---
-title: Recuperar una entidad utilizando la API web (Common Data Service para aplicaciones)| Microsoft Docs
-description: Lea cómo formar una solicitud GET mediante la API web de Common Data Service para aplicaciones para recuperar datos de una entidad especificada como el recurso con un identificador único
+title: Recuperar una entidad utilizando la API web (Common Data Service)| Microsoft Docs
+description: Lea cómo formar una solicitud GET mediante la API web de Common Data Service para recuperar datos de una entidad especificada como el recurso con un identificador único
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 Para recuperar más de una entidad a la vez, consulte [Ejemplo de consulta básica](query-data-web-api.md#bkmk_basicQuery) en el tema [Consultar datos con la API web](query-data-web-api.md).
 
 > [!CAUTION]
->  El ejemplo anterior devolverá todas las propiedades del registro de cuenta, algo que va en contra de las recomendaciones de rendimiento para recuperar datos. Este ejemplo sirve para ilustrar cómo puede realizar una recuperación básica de una instancia de entidad en CDS para aplicaciones. Puesto que todas las propiedades se devolvieron, no hemos incluido la información de respuesta para la solicitud en este ejemplo.
+>  El ejemplo anterior devolverá todas las propiedades del registro de cuenta, algo que va en contra de las recomendaciones de rendimiento para recuperar datos. Este ejemplo sirve para ilustrar cómo puede realizar una recuperación básica de una instancia de entidad en Common Data Service. Puesto que todas las propiedades se devolvieron, no hemos incluido la información de respuesta para la solicitud en este ejemplo.
 >
 >  Como práctica recomendada para mejorar el rendimiento, debe usar siempre la opción de consulta del sistema `$select` para limitar las propiedades devueltas al recuperar datos. Consulte la siguiente sección, **Recuperar propiedades específicas**, para obtener información sobre este.
   

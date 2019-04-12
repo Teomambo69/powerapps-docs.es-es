@@ -1,5 +1,5 @@
 ---
-title: Comportamiento de las relaciones entre entidades (Common Data Service para aplicaciones) | MicrosoftDocs
+title: Comportamiento de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

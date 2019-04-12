@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico(Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar los datos adjuntos de correo electrónico asociados con una plantilla de correo electrónico
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>Ejemplo: recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
 
-Este ejemplo muestra cómo recuperar los datos adjuntos de correo electrónico asociados con una plantilla de correo electrónico mediante el método [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach).
+Este ejemplo muestra cómo recuperar los datos adjuntos de correo electrónico asociados con una plantilla de correo electrónico mediante el método [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9). Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

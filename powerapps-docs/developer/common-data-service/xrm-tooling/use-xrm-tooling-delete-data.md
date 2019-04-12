@@ -1,10 +1,10 @@
 ---
-title: Utilizar útiles de XRM para eliminar datos (Common Data Service para aplicaciones)| Microsoft Docs
-description: Utilizar la clase CrmServiceClient para eliminar datos de CDS para aplicaciones
+title: Utilizar útiles de XRM para eliminar datos (Common Data Service)| Microsoft Docs
+description: Utilizar la clase CrmServiceClient para eliminar datos de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,11 +23,11 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-delete-data"></a>Usar útiles de XRM para eliminar datos
 
-Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para eliminar datos en CDS para aplicaciones: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)>.  
+Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para eliminar datos en Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)>.  
   
 ## <a name="deleteentity"></a>DeleteEntity  
 
-DeleteEntity se usa para quitar una fila única de datos de CDS para aplicaciones. Para usar este método, debe conocer el nombre de esquema de la entidad que desea afectar y el GUID de la fila que desea quitar.  
+DeleteEntity se usa para quitar una fila única de datos de Common Data Service. Para usar este método, debe conocer el nombre de esquema de la entidad que desea afectar y el GUID de la fila que desea quitar.  
   
 ```csharp  
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
@@ -93,5 +93,5 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Use útiles de XRM para conectarse a CDS para aplicaciones](use-crmserviceclient-constructors-connect.md)<br />
-[Usar API de útiles de XRM para ejecutar acciones en CDS para aplicaciones](use-xrm-tooling-execute-actions.md)
+[Uso de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)

@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="developer-tools"></a>Herramientas del desarrollador
 
-La comunidad de Common Data Service para aplicaciones crea herramientas. Muchas de las más populares se distribuyen a través de [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service para aplicaciones y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
+La comunidad de Common Data Service crea herramientas. Muchas de las más populares se distribuyen a través de [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
 
 A continuación se presenta una lista seleccionada de herramientas de la comunidad distribuidas mediante XrmToolBox que puede usar cuando trabaja con aplicaciones basadas en modelos.
 

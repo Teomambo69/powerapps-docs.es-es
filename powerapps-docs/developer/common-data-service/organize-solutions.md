@@ -1,5 +1,5 @@
 ---
-title: Organizar sus soluciones (Common Data Service para aplicaciones) | Microsoft Docs
+title: Organizar sus soluciones (Common Data Service) | Microsoft Docs
 description: En este documento se enumeran algunas estrategias para organizar sus soluciones
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 Antes de crear soluciones, dedique un tiempo de planificar con antelación. Por ejemplo, piense cuántas soluciones desea lanzar y si las soluciones compartirán componentes.  
   
- Además, determine cuántas organizaciones de Common Data Service para aplicaciones necesitará para desarrollar su línea de soluciones. Puede usar una sola organización para la mayoría de las estrategias descritas en este tema. Sin embargo, si decide tener solo una organización y más adelante se da cuenta de que necesita más, puede ser desafiante cambiar las soluciones si los usuarios ya las han instalado. Si bien el uso de varias organizaciones puede introducir una mayor complejidad, puede brindar más flexibilidad.  
+ Además, determine cuántas organizaciones de Common Data Service necesitará para desarrollar su línea de soluciones. Puede usar una sola organización para la mayoría de las estrategias descritas en este tema. Sin embargo, si decide tener solo una organización y más adelante se da cuenta de que necesita más, puede ser desafiante cambiar las soluciones si los usuarios ya las han instalado. Si bien el uso de varias organizaciones puede introducir una mayor complejidad, puede brindar más flexibilidad.  
   
 <a name="BKMK_OptionsToModularize"></a>   
 ## <a name="strategies-to-organize-your-solutions"></a>Estrategias para organizar sus soluciones  
@@ -38,7 +38,7 @@ Antes de crear soluciones, dedique un tiempo de planificar con antelación. Por 
 <a name="BKMK_NoCustomSolution"></a> 
   
 ### <a name="no-custom-solutions"></a>Soluciones sin personalizar  
- No es necesario que cree soluciones. Puede personalizar CDS para aplicaciones directamente con la solución predeterminada.  
+ No es necesario que cree soluciones. Puede personalizar Common Data Service directamente con la solución predeterminada.  
   
  Aún puede exportar la solución predeterminada como una solución no administrada para transportarla entre las organizaciones.  
   
@@ -69,7 +69,7 @@ Antes de crear soluciones, dedique un tiempo de planificar con antelación. Por 
 ### <a name="solution-libraries"></a>Bibliotecas de la solución  
  Para un ISV con varias soluciones o una implementación empresarial de gran tamaño, es posible que muchos componentes de la solución deban compartirse. Las mejores formas para que las soluciones compartan componentes es a través de las bibliotecas de la solución. Cree una biblioteca de la solución mediante la creación de una solución no administrada en una organización independiente y a continuación, empaquete esos componentes en una solución administrada. Instale la solución administrada en otra organización y deje que los desarrolladores relacionen estos componentes compartidos.  
   
- El marco de soluciones de CDS para aplicaciones permite crear capas de soluciones mutuamente dependientes. Normalmente, puede crear una biblioteca de soluciones que represente una solución "básica". Otras soluciones pueden generarse sobre esta solución base. Esto permite una separación más ordenada de los componentes. Los equipos de desarrollo que trabajan en las bibliotecas de la solución y los que trabajen en soluciones dependientes pueden desarrollar a diferentes ritmos. Las soluciones dependientes deben ser crearse después de que se instalen las bibliotecas de la solución.  
+ Common Data Service Solutions Framework le permite construir capas de soluciones que dependen una de otra. Normalmente, puede crear una biblioteca de soluciones que represente una solución "básica". Otras soluciones pueden generarse sobre esta solución base. Esto permite una separación más ordenada de los componentes. Los equipos de desarrollo que trabajan en las bibliotecas de la solución y los que trabajen en soluciones dependientes pueden desarrollar a diferentes ritmos. Las soluciones dependientes deben ser crearse después de que se instalen las bibliotecas de la solución.  
   
  Esto requiere la creación de una solución de requisito previo que los clientes se deben instalar antes de instalar una solución dependiente. Los desarrolladores que trabajen en las bibliotecas de la solución pueden seguir trabajando en ellas y actualizarlas siempre que no interrumpan ninguna de las soluciones dependientes que los necesiten.  
   

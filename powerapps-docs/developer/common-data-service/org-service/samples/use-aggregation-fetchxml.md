@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar agregación en FetchXML (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Usar agregación en FetchXML (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar datos de registros agregados mediante FetchXML.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>Ejemplo: uso de agregación en FetchXML
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
 Este ejemplo muestra cómo recuperar datos de registros agregados mediante FetchXML.
 

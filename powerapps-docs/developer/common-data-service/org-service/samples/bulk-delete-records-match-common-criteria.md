@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Eliminación de registros en masa que coincidan con criterios comunes (Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Eliminación de registros en masa que coincidan con criterios comunes (Common Data Service) | Microsoft Docs'
 description: 'Este ejemplo muestra cómo eliminar registros en masa, que coinciden con criterios comunes.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>Ejemplo: eliminar registros en masa que coincidan con los criterios comunes
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
 
 Este ejemplo muestra cómo eliminar registros, en masa, que coinciden con los criterios comunes. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteMatchCriteria).
 

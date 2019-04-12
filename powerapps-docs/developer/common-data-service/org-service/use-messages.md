@@ -1,5 +1,5 @@
 ---
-title: Utilizar mensajes con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
+title: Utilizar mensajes con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Conocer cómo se usan los mensajes para invocar operaciones con el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018

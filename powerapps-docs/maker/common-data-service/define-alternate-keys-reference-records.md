@@ -1,10 +1,10 @@
 ---
-title: Definir claves alternativas para hacer referencia a registros con Common Data Service for Apps | MicrosoftDocs
-description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a los registros de Common Data Service for Apps
+title: Definir claves alternativas para hacer referencia a registros con Common Data Service | MicrosoftDocs
+description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a los registros de Common Data Service
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definir claves alternativas para hacer referencia a registros
 
-Las *claves alternativas* ofrecen una forma eficaz y precisa de integrar datos con sistemas externos. Es esencial en los casos en que un sistema externo no almacena los Id. de identificador único global (GUID) que identifican de forma única registros en Common Data Service for Apps. 
+Las *claves alternativas* ofrecen una forma eficaz y precisa de integrar datos con sistemas externos. Es esencial en los casos en que un sistema externo no almacena los Id. de identificador único global (GUID) que identifican de forma única registros en Common Data Service. 
 
 Un sistema de integración de datos usará claves alternativas para identificar de forma exclusiva registros mediante uno o más valores del campo de la entidad que representen una única combinación. Cada clave alternativa tiene un nombre único. 
 
@@ -61,7 +61,7 @@ La información de este tema le ayudará a elegir el diseñador que puede usar.
 
 Debería usar el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para crear claves alternativas, a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
-- Crear una clave alternativa en una solución distinta de la solución predeterminada de Common Data Service for Apps
+- Crear una clave alternativa en una solución distinta de la solución predeterminada de Common Data Service
 - Desea realizar fácilmente un seguimiento del trabajo del sistema que realiza el seguimiento del progreso de creación de los índices de soporte
 
 

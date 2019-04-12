@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Recuperar registros de una tabla de intersección(Common Data Service para aplicaciones) | Microsoft Docs'
+title: 'Ejemplo: Recuperar registros de una tabla de intersección(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar registros de una tabla de intersección.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>Ejemplo: recuperar registros de una tabla de intersección
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table -->Este ejemplo muestra cómo recuperar los registros de una tabla de intersección. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable).
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table -->
+Este ejemplo muestra cómo recuperar los registros de una tabla de intersección. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

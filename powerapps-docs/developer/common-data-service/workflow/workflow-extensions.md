@@ -1,5 +1,5 @@
 ---
-title: Extensiones de flujo de trabajo (Common Data Service para aplicaciones) | Microsoft Docs
+title: Extensiones de flujo de trabajo (Common Data Service) | Microsoft Docs
 description: Puede extender las opciones disponibles en el diseñador para flujos de trabajo. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase CodeActivity. Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Extensiones de flujo de trabajo
 
-Puede extender las opciones disponibles en el diseñador para flujos de trabajo que se usan en Common Data Service para aplicaciones. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
+Puede extender las opciones disponibles en el diseñador para flujos de trabajo que se usan en Common Data Service. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
 
 Puede usar estas extensiones personalizadas en el diseñador usado para flujos de trabajo, acciones personalizadas, y diálogos.
 
 > [!IMPORTANT]
-> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service para aplicaciones](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../../maker/common-data-service/cds-processes.md)<br/><br/>
 > Use las extensiones de flujo de trabajo cuando un proceso declarativo no cumpla su requisito.
 
 ## <a name="when-to-create-a-workflow-extension"></a>Cuándo crear una extensión de flujo de trabajo
@@ -66,7 +66,7 @@ Si tiene soluciones de Dynamics 365 Customer Engagement Sales o Service, puede e
 Más información: 
 
 - [Configurar fases y pasos del flujo de trabajo](/flow/configure-workflow-steps)
-- [Usar diálogos de CDS para aplicaciones para procesos guiados](/flow/use-cds-for-apps-dialogs)
+- [Usar diálogos de Common Data Service para procesos guiados](/flow/use-cds-for-apps-dialogs)
 - [Crear una acción personalizada](/flow/create-actions)
 
 
@@ -75,9 +75,9 @@ Más información:
 
 Puesto que los procesos usan la base de Windows Workflow puede registrar un ensamblado construido mediante la [Biblioteca de actividades de .NET Framework](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) que define las actividades personalizadas que aparecerán en el editor de la aplicación web y serán invocadas cuando el proceso se ejecute.
 
-Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma CDS para aplicaciones cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
+Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma de Common Data Service cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
 
-Las actividades de flujo de trabajo también pueden definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que CDS para aplicaciones usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
+Las actividades de flujo de trabajo también pueden definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que Common Data Service usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
 
 ## <a name="visual-studio-requirements"></a>Requisitos de Visual Studio
 
@@ -236,7 +236,7 @@ La lógica que incluye en el método [Método CodeActivity.Execute(CodeActivityC
 
 > [!IMPORTANT]
 > El código en el método `Execute` debe escribirse como sin estado. No se recomienda usar variables globales o de miembro para pasar datos de una invocación a otra.
-> Para mejorar el rendimiento, CDS para aplicaciones almacena en caché las instancias de actividad personalizada de flujo de trabajo. Por este motivo, no se llama al constructor para cada invocación de la actividad personalizada de flujo de trabajo. Además, varios subprocesos del sistema podrían ejecutar la actividad personalizada de flujo de trabajo al mismo tiempo. Solo debe usar la información que se pasa mediante el parámetro [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) al método `Execute`.
+> Para mejorar el rendimiento, Common Data Service almacena en caché las instancias de actividad personalizada de flujo de trabajo. Por este motivo, no se llama al constructor para cada invocación de la actividad personalizada de flujo de trabajo. Además, varios subprocesos del sistema podrían ejecutar la actividad personalizada de flujo de trabajo al mismo tiempo. Solo debe usar la información que se pasa mediante el parámetro [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) al método `Execute`.
 
 ### <a name="reference-parameters"></a>Parámetros de referencia
 
@@ -308,16 +308,16 @@ Para los actividades de flujos de trabajo personalizadas debe especificar las pr
 |Descripción|No es visible en la interfaz de usuario del diseñador de procesos, pero puede resultar útil al generar documentación de los datos extraídos de la entidad PluginType que almacena esta información.|
 |FriendlyName|Nombre descriptivo para el complemento.|
 |Nombre|El nombre del menú representado|
-|WorkflowActivityGroupName|El nombre del submenú agregado al menú principal del diseñador del proceso de CDS para aplicaciones.|
+|WorkflowActivityGroupName|El nombre del submenú agregado al menú principal del diseñador del proceso de Common Data Service.|
 
 ![Establecer propiedades descriptivas](media/create-workflow-activity-set-properties.png)
 
 > [!NOTE]
 > Estos valores no serán visibles en la solución no administrada al probar la actividad de flujo de trabajo. No obstante, cuando se exporta una solución administrada que incluye esta actividad de flujo de trabajo estos valores serán visibles en el diseñador de procesos.
 
-## <a name="debug-workflow-activities"></a>Depurar actividades de flujo de trabajo personalizadas
+## <a name="debug-workflow-activities"></a>Depurar actividades de flujo de trabajo
 
-Con las actividades de flujo de trabajo personalizadas implementadas en CDS para aplicaciones puede capturar perfiles para reproducir para depuración local y usar el servicio de seguimiento para escribir la información en una entidad. 
+Con las actividades de flujo de trabajo personalizadas implementadas en Common Data Service puede capturar perfiles para reproducir para depuración local y usar el servicio de seguimiento para escribir la información en una entidad. 
 
 El siguiente ejemplo muestra el uso del servicio de seguimiento para escribir el mensaje siguiente: `Add your message.`
 

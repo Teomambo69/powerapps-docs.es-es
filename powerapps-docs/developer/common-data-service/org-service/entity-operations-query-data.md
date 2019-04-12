@@ -1,6 +1,6 @@
 ---
-title: Datos de consulta con el servicio de la organización (Common Data Service para aplicaciones) | Microsoft Docs
-description: Presenta las distintas formas para consultar datos con los ensamblados SDK de CDS for Apps.
+title: Datos de consulta con el servicio de la organización (Common Data Service) | Microsoft Docs
+description: Presenta las distintas formas para consultar datos con los ensamblados SDK de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

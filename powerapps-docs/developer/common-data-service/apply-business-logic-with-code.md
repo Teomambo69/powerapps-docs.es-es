@@ -1,6 +1,6 @@
 ---
-title: Aplicar lógica de negocios mediante código (Common Data Service (CDS) para aplicaciones) | MicrosoftDocs
-description: Aprenda cómo los desarrolladores pueden usar código para aplicar lógica de negocio en Common Data Service para aplicaciones.
+title: Aplicar lógica de negocios mediante código (Common Data Service) | MicrosoftDocs
+description: Aprenda cómo los desarrolladores pueden usar código para aplicar lógica de negocio en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -22,13 +22,13 @@ search.app:
 
 # <a name="apply-business-logic-using-code"></a>Aplicar la lógica de negocios usando código
 
-Siempre que sea posible, primero debe considerar aplicar una de las diversas opciones de proceso declarativas para definir o aplicar la lógica de negocios. Más información: [Aplicar lógica de negocios en CDS para aplicaciones](../../maker/model-driven-apps/guide-staff-through-common-tasks-processes.md)
+Siempre que sea posible, primero debe considerar aplicar una de las diversas opciones de proceso declarativas para definir o aplicar la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../maker/common-data-service/cds-processes.md)
 
 Cuando un proceso declarativo no cumple un requisito, como un desarrollador tiene varias opciones. Este tema introducirá opciones comunes de escribir código.
 
 ## <a name="create-a-plug-in"></a>Crear un complemento
 
-Puede escribir un ensamblado de .NET para ejecutar como complemento en la transacción de datos para aplicar lógica empresarial en el servidor. Con Common Data Service para aplicaciones puede usar un marco para registrar eventos específicos de ejecución de código definido en una clase en un ensamblado. 
+Puede escribir un ensamblado de .NET para ejecutar como complemento en la transacción de datos para aplicar lógica empresarial en el servidor. Con Common Data Service puede usar un marco para registrar eventos específicos de ejecución de código definido en una clase en un ensamblado. 
 
 Más información: [Escriba complementos para ampliar los procesos de negocio](plug-ins.md)
 
@@ -40,4 +40,4 @@ Más información: [Extensiones de flujo de trabajo](workflow/workflow-extension
 
 ### <a name="see-also"></a>Vea también
 
-[Información general para desarrolladores de Common Data Service para aplicaciones](overview.md)
+[Información general de Common Data Service](overview.md)

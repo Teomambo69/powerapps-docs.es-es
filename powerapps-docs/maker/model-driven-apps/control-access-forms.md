@@ -2,9 +2,9 @@
 title: Controlar el acceso a formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Aprenda a controlar el acceso a los formularios principales
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -40,14 +40,14 @@ search.app:
   
  Para conocer los procedimientos paso a paso, consulte [Assign security roles to forms](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form).  
   
- Si tiene más de un formulario principal o móvil definido para una entidad, puede seleccionar los formularios que podrán utilizar los usuarios en función de sus roles de seguridad. Dado que cada entidad debe poder mostrar un formulario para cualquier usuario, al menos un formulario debe designarse como formulario de "reserva" (un formulario visible para los usuarios cuyos roles de seguridad no tienen ningún formulario explícitamente asignado).  
+ Si tiene más de un formulario principal u otro tipo de formulario definido para una entidad, puede seleccionar los formularios que podrán utilizar los usuarios en función de sus roles de seguridad. Dado que cada entidad debe poder mostrar un formulario para cualquier usuario, al menos un formulario debe designarse como formulario de "reserva" (un formulario visible para los usuarios cuyos roles de seguridad no tienen ningún formulario explícitamente asignado).  
   
 > [!NOTE]
->  Los formularios de creación rápida y de vista rápida no se pueden asignar a roles de seguridad.  
+>  Los formularios de creación rápida, vista rápida y formularios de tarjeta no se pueden asignar a roles de seguridad.  
   
- En el editor de formularios o desde la cuadrícula de formularios puede asignar roles de seguridad a un formulario. No obstante, mientras haya solo un formulario para la entidad, no podrá desactivar la opción **Habilitado para reserva** en el cuadro de diálogo **Asignar roles de seguridad**. En este caso, aunque haya asignado roles de seguridad al formulario, cualquier persona asociada a un rol de seguridad que no incluyó podrá ver el formulario debido a que está habilitado para reserva.  
+ En el editor de formularios o desde la cuadrícula de formularios puede asignar roles de seguridad a un formulario principal. No obstante, mientras haya solo un formulario para la entidad, no podrá desactivar la opción **Habilitado para reserva** en el cuadro de diálogo **Asignar roles de seguridad**. En este caso, aunque haya asignado roles de seguridad al formulario, cualquier persona asociada a un rol de seguridad que no incluyó podrá ver el formulario debido a que está habilitado para reserva.  
   
- Después de crear un segundo formulario principal o móvil para la entidad, podrá desactivar la opción **Habilitado para reserva** para uno de ellos. El sistema siempre garantizará que al menos un formulario esté habilitado para reserva.  
+ Después de crear un segundo formulario principal para la entidad, podrá desactivar la opción **Habilitado para reserva** para uno de ellos. El sistema siempre garantizará que al menos un formulario esté habilitado para reserva.  
   
  Si tiene más de un formulario principal, puede especificar que un orden de formularios para controlar el formulario que podrá ver un usuario sea aquel que ve de forma predeterminada. Si hay más de un formulario que pueden usar, puede cambiar los formularios y aquel que elija será su formulario predeterminado hasta que elija otro. Esta preferencia se almacena en el explorador. Si usa un equipo o un explorador diferente, verá el formulario predeterminado original.  
   

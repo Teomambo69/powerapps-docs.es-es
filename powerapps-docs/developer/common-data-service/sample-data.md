@@ -1,5 +1,5 @@
 ---
-title: Agregar y quitar datos de ejemplo (Common Data Service para aplicaciones) | Microsoft Docs
+title: Agregar y quitar datos de ejemplo (Common Data Service) | Microsoft Docs
 description: Cómo instalar o desinstalar datos de ejemplo usando la web API o el servicio de la organización
 ms.custom: ''
 ms.date: 10/31/2018
