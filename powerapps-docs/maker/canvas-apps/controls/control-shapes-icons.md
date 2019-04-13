@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 34e76821a10ef5803028bc7fd31bbd70c2845b36
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
+ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849211"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59541824"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
 
 ## <a name="description"></a>Descripción
-Estos controles incluyen flechas, formas geométricas, iconos de acción y símbolos para los que puede configurar propiedades como el relleno, el tamaño y la ubicación. También puede configurar su propiedad **[AlSeleccionar](properties-core.md)** para que la aplicación responda si el usuario hace clic en el control o lo pulsa.
+Estos controles incluyen flechas, formas geométricas, iconos de acción y símbolos para los que puede configurar propiedades como el relleno, el tamaño y la ubicación. También puede configurar sus **[Alseleccionar](properties-core.md)** propiedad para que la aplicación responde si el usuario selecciona el control.
 
 ## <a name="key-properties"></a>Propiedades principales
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)**  : cómo responde la aplicación cuando el usuario selecciona un control.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
@@ -44,9 +44,9 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 **[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)**  : el color del borde de un control cuando el usuario selecciona ese control.
 
-**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+**[PressedFill](properties-color-border.md)**  : el color de fondo de un control cuando el usuario selecciona ese control.
 
 **[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
@@ -68,15 +68,19 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
-2. Agregue un control **[Pantalla](control-screen.md)** y denomínelo **Source**.
-3. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>**Navigate(Target, ScreenTransition.Fade)**
-4. Presione F5 y pulse o haga clic en el control **Forma**.
+1. Agregue un control **[Pantalla](control-screen.md)** y denomínelo **Source**.
+
+1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
+
+  `Navigate(Target, ScreenTransition.Fade)`
+  
+1. Presione F5 y, a continuación, seleccione el **forma** control.
 
     Aparecerá la pantalla **Target**.
 
-5. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
-   <br>**Navigate(Origen, ScreenTransition.Fade)**
+1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
@@ -85,31 +89,32 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 Lo siguiente se aplica solo a gráficos que se usan como botones o no solo como decoración.
 
 Para los iconos:
-* **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
-* Se aplican otros [requisitos de contraste de color estándar](../accessible-apps-color.md) (si se usan como botón)
+- **[Color](properties-color-border.md)** y **[Fill](properties-color-border.md)**
+- Se aplican otros [requisitos de contraste de color estándar](../accessible-apps-color.md) (si se usan como botón)
 
 Para las formas con bordes:
-* **[BorderColor](properties-color-border.md)** y el color fuera del control
-* **[FocusedBorderColor](properties-color-border.md)** y el color fuera del control (si se usa como botón)
+- **[BorderColor](properties-color-border.md)** y el color fuera del control
+- **[FocusedBorderColor](properties-color-border.md)** y el color fuera del control (si se usa como botón)
 
 Para las formas sin bordes:
-* **[Fill](properties-color-border.md)** y el color fuera del control
-* **[PressedFill](properties-color-border.md)** y el color fuera del control (si se usa como botón)
-* **[HoverFill](properties-color-border.md)** y el color fuera del control (si se usa como botón)
+- **[Fill](properties-color-border.md)** y el color fuera del control
+- **[PressedFill](properties-color-border.md)** y el color fuera del control (si se usa como botón)
+- **[HoverFill](properties-color-border.md)** y el color fuera del control (si se usa como botón)
 
-### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente si el gráfico se usa como botón o no solo como decoración.
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar vacía o la cadena **""** vacía si el gráfico es exclusivamente decorativo. De esta forma, los lectores de pantalla omiten el gráfico.
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** puede estar vacía o la cadena **""** vacía si el gráfico proporciona información redundante.
+### <a name="screen-reader-support"></a>Compatibilidad con el lector de pantalla
+- **[AccessibleLabel](properties-accessibility.md)**  debe establecerse en una cadena vacía si el gráfico se usa como un botón o en caso contrario, no solo como decoración.
 
-    Por ejemplo, un icono **Configuración** con su propiedad **[AccessibleLabel](properties-accessibility.md)** establecida en **Configuración**. Este icono no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán el icono como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el icono no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
+- **[AccessibleLabel](properties-accessibility.md)**  debe estar vacía o una cadena vacía **""** si el gráfico proporciona información redundante o es exclusivamente decorativo. Este valor hace que los lectores de pantalla omiten el gráfico.
 
-    > [!IMPORTANT]
-    > Los lectores de pantalla siempre leerán los iconos o formas que tienen **[TabIndex](properties-accessibility.md)** de cero o mayor, incluso si **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
+Por ejemplo, puede establecer el **[AccessibleLabel](properties-accessibility.md)** propiedad de un **configuración** icono para **configuración**. Este icono no se usa como un botón. Se encuentra junto a un **[etiqueta](control-text-box.md)** que también dice **configuración**. Los lectores de pantalla leerán el icono y la etiqueta como **configuración**, que es innecesariamente detallado. En este caso, no necesita el icono de un  **[AccessibleLabel](properties-accessibility.md)**.
+
+> [!IMPORTANT]
+> Los lectores de pantalla leerán leer un icono o forma como **botón** si su **[AccessibleLabel](properties-accessibility.md)** está establecida en una cadena vacía y su **[TabIndex ](properties-accessibility.md)** se establece en cero o mayor. Estos iconos o formas se representan como botones. 
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
-* **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el gráfico se utiliza como botón. De esta forma, los usuarios de teclado pueden navegar hasta él.
-* Los indicadores de foco deben ser claramente visibles si el gráfico se usa como botón. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+- **[TabIndex](properties-accessibility.md)**  debe ser cero o mayor si el gráfico se utiliza como un botón. Si establece este valor para un icono o forma, los usuarios de teclado pueden navegar a él.
+
+- Los indicadores de foco deben ser claramente visibles si el gráfico se utiliza como un botón. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para lograr este resultado.
 
     > [!NOTE]
-  > Cuando **[TabIndex](properties-accessibility.md)** es cero o mayor, el icono o forma se representa como un botón. No hay ningún cambio en la apariencia visual, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el icono o forma se identifica como una imagen.
+    > Cuando **[TabIndex](properties-accessibility.md)** es cero o mayor, el icono o forma se representa como un botón. No cambia su aspecto, pero los lectores de pantalla identifican correctamente la imagen como un botón. Cuando **[TabIndex](properties-accessibility.md)** es menor que cero, el icono o forma se identifica como una imagen.
