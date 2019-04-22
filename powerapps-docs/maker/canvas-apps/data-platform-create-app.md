@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 38e2798ae60206ff0584254916e4f750096155e4
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671478"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo a partir de Common Data Service en PowerApps
 
@@ -28,7 +28,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para seguir este tutorial rápido, debe estar asignado a la [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles) rol de seguridad y se debe [cambie a un entorno](working-with-environments.md) en que se ha creado una base de datos en Common Data Service, contiene datos, y permite realizar actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment) que cumpla este requisito.
+Para seguir este tutorial rápido, debe estar asignado a la [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) rol de seguridad y se debe [cambie a un entorno](working-with-environments.md) en que se ha creado una base de datos en Common Data Service, contiene datos, y permite realizar actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment) que cumpla este requisito.
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59425320"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control de galería de aplicaciones de lienzo
@@ -100,7 +100,7 @@ Si un usuario se desplaza el **altura Flexible** control de galería antes de qu
 
 * [Mostrar texto](control-text-box.md#show-data-in-a-gallery)
 * [Mostrar imágenes](control-image.md#show-a-set-of-images-from-a-data-source)
-* [Filtrar los datos seleccionando una opción de lista](control-drop-down.md#example)
+* [Filtrar datos mediante la selección de una opción de la lista](control-drop-down.md#example)
 * [Filtrar datos mediante el ajuste de un control deslizante](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>Obtener datos del usuario

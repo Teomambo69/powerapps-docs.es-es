@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c09bd3dead3ca3ac31f5c052929625b271efac3
-ms.sourcegitcommit: 7f67cd28c781a48f6a211ed82c2c861ae3acf1a5
+ms.openlocfilehash: 6fedff6d6ffc34fe390ec6978672d699480a7cb9
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "57800753"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671593"
 ---
 # <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
 
@@ -36,11 +36,13 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
+**Alto** -el alto de la pantalla. Si la aplicación es la capacidad de respuesta ([**escala para ajustarse a** ](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) es **desactivar**) y el dispositivo en el que se ejecuta la aplicación es menor que esta propiedad, la pantalla puede desplazar verticalmente.
+
 **[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
 
-**AlEstarOculto**: el comportamiento de una aplicación cuando el usuario navega fuera de una pantalla.
+**Nombre** -el nombre de la pantalla.
 
-**AlEstarVisible**: el comportamiento de una aplicación cuando el usuario navega a una pantalla.
+**AlEstarOculto**: el comportamiento de una aplicación cuando el usuario navega fuera de una pantalla.
 
 **OnStart**: el comportamiento de la aplicación cuando el usuario la abre.
 
@@ -48,6 +50,14 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 - No se pueden establecer [variables de contexto](../working-with-variables.md) con la función [**UpdateContext**](../functions/function-updatecontext.md) porque no ha aparecido aún ninguna pantalla. Sin embargo, puede pasar variables de contexto en la función **Navegar** y crear y rellenar una [colección](../working-with-variables.md) mediante el uso de la función [**Recopilar**](../functions/function-clear-collect-clearcollect.md).
 - Cuando se actualiza una aplicación, se ejecuta la fórmula en la que se establece esta propiedad cuando la aplicación se carga en PowerApps Studio. Para ver el impacto de cambiar esta propiedad, tiene que guardar, cerrar y volver a cargar la aplicación.
 - La propiedad **AlIniciar** es realmente una propiedad de la aplicación, no de la pantalla. Por comodidad a la hora de editar, se ve y se modifica como una propiedad en la primera pantalla de la aplicación. Si se quita la primera pantalla o se reorganizan las pantallas, puede ser difícil encontrar esta propiedad. En este caso, guarde, cierre y vuelva a cargar la aplicación y la propiedad volverá a aparecer como una propiedad de la primera pantalla.
+
+**AlEstarVisible**: el comportamiento de una aplicación cuando el usuario navega a una pantalla.
+
+**Orientación** -la orientación de la pantalla. Si su **ancho** es mayor que su **alto**, será la orientación **Layout.Horizontal**; en caso contrario, será **Layout.Vertical** .
+
+**Tamaño** -un entero positivo que clasifica el tamaño de la pantalla. La clasificación se determina comparando la pantalla **ancho** propiedad a los valores de la [ **App.SizeBreakpoints** ](../functions/signals.md) propiedad. El **ScreenSize** tipo consta de cuatro valores (**pequeño**, **medio**, **grande**, y **ExtraLarge** ) que se corresponden con los enteros del 1 al 4.
+
+**Ancho** -el ancho de la pantalla. Si la aplicación es la capacidad de respuesta ([**escala para ajustarse a** ](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) es **desactivar**) y el dispositivo en el que se ejecuta la aplicación es más estrecho que esta propiedad, la pantalla puede desplazarse horizontalmente.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870940"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Personalizar un formulario de aplicación de lienzo en PowerApps
@@ -39,7 +39,7 @@ Si no está familiarizado con el lienzo pps, consulte [¿cuáles son las aplicac
 1. En la barra de navegación izquierda, escriba o pegue **d.** en la barra de búsqueda para filtrar la lista de elementos y, a continuación, seleccione **DetailForm1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Pantalla de selección de detalles](./media/customize-forms-sharepoint/select-detailform.png)
+    > ![Seleccione la pantalla de detalles](./media/customize-forms-sharepoint/select-detailform.png)
 
 1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione **Editar campos** para abrir el panel **Campos**.
 
@@ -63,7 +63,7 @@ Si no está familiarizado con el lienzo pps, consulte [¿cuáles son las aplicac
     Las tarjetas en **DetailForm1** reflejar el cambio.
 
     > [!div class="mx-imgBorder"]
-    > ![Tarjetas reordenadas](./media/customize-forms-sharepoint/reordered-card.png)
+    > ![Tarjetas Reordenadas](./media/customize-forms-sharepoint/reordered-card.png)
 
 1. (opcional) Reordene las demás tarjetas en esta secuencia:
 

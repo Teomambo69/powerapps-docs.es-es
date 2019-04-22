@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d13f4a0669ae9f0d7ef9a5f4ef7115e006256bd9
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480248"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671570"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  
@@ -48,12 +48,13 @@ La señal**App** devuelve información acerca de la aplicación en ejecución.
 | **App.Height** | Devuelve el alto de la ventana en la que se ejecuta la aplicación. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para crear una aplicación con capacidad de respuesta. |
 | **App.DesignWidth** | Devuelve el ancho de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **ancho** propiedad de la pantalla para garantizar una anchura mínima en una aplicación con capacidad de respuesta.  |
 | **App.DesignHeight** | Devuelve el alto de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para garantizar un alto mínimo en una aplicación con capacidad de respuesta.  |
+| **App.SizeBreakpoints** | Una tabla de una columna de números que delimitan el tamaño de pantalla de intervalos de direcciones que el [ **Screen.Size** ](../controls/control-screen.md) devuelve de la propiedad. Para personalizar los puntos de interrupción todos de la aplicación de pantallas de uso se pueden cambiar los valores de esta tabla.
 
 El **aplicación** objeto también tiene un [fórmula de comportamiento](../working-with-formulas-in-depth.md) que se pueden establecer.
 
 | Propiedad  | Descripción |
 | --- | --- |
-| **OnStart** | El comportamiento de la aplicación cuando el usuario lo inicia. Esta propiedad se utiliza habitualmente para recuperar y almacenar en caché datos en colecciones con el **[recopilar](function-clear-collect-clearcollect.md)** función, configure las variables con el **[establecer](function-set.md)** función y navegue a una pantalla inicial con el **[Navigate](function-navigate.md)** función. Esta fórmula se evalúa antes de que aparezca la primera pantalla. No hay pantalla se carga, por lo que no puede establecer las variables de contexto con el **[UpdateContext](function-updatecontext.md)** función. Sin embargo, puede pasar variables de contexto con el **Navigate** función. |
+| **App.OnStart** | El comportamiento de la aplicación cuando el usuario lo inicia. A menudo, los creadores de usar esta propiedad para recuperar y almacenar en caché datos en colecciones con el **[recopilar](function-clear-collect-clearcollect.md)** función, configure las variables con el **[establecer](function-set.md)** función y navegue a una pantalla inicial con el **[Navigate](function-navigate.md)** función. Esta fórmula se evalúa antes de que aparezca la primera pantalla. No hay pantalla se carga, por lo que no puede establecer las variables de contexto con el **[UpdateContext](function-updatecontext.md)** función. Sin embargo, puede pasar variables de contexto con el **Navigate** función. |
 
 El **aplicación** objeto aparece en la parte superior de la lista jerárquica de los controles del panel de navegación izquierdo, y puede seleccionar este objeto como un control en una pantalla. Después de seleccionar el objeto, puede ver y editar uno de sus propiedades, si selecciona esa propiedad en la lista desplegable situada a la izquierda de la barra de fórmulas.  
 

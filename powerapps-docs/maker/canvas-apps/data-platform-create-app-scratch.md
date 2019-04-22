@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480225"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59686233"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Creación de una aplicación de lienzo desde cero con Common Data Service
 
@@ -30,7 +30,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 - Antes de crear una aplicación desde cero, familiarícese con los conceptos básicos de PowerApps mediante la [generación de una aplicación](data-platform-create-app.md) y, después, personalice la [galería](customize-layout-sharepoint.md), [formularios](customize-forms-sharepoint.md) y [tarjetas](customize-card.md) de esa aplicación.
 - [Cambie a un entorno](working-with-environments.md) en el que se haya creado una base de datos con datos de ejemplo. Si tiene una licencia apropiada, puede [crear un entorno](../../administrator/create-environment.md) para satisfacer esta necesidad.
-- Para crear una aplicación, debe estar asignado al rol de seguridad [Creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles).
+- Para crear una aplicación, debe estar asignado al rol de seguridad [Creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles).
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 

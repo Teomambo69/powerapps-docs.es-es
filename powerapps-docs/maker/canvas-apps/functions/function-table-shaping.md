@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
-ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59096176"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Funciones AddColumns, DropColumns, RenameColumns y ShowColumns en PowerApps
@@ -98,10 +98,10 @@ Ninguno de estos ejemplos modificar el origen de datos **IceCreamSales**. Cada f
 | --- | --- | --- |
 | **AddColumns (IceCreamSales, "Revenue", UnitPrice * QuantitySold)** |Agrega una columna **Revenue** al resultado.  Para cada registro, se evalúa **UnitPrice * QuantitySold**, y el resultado se coloca en la nueva columna. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns (IceCreamSales, "UnitPrice")** |Excluye la columna **UnitPrice** del resultado. Use esta función para excluir columnas y usar **ShowColumns** para incluirlas. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **Mostrarcolumnas (IceCreamSales, "Sabor")** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **Cambiarnombrecolumnas (IceCreamSales, "UnitPrice", "Price")** |Cambia el nombre de la **UnitPrice** columna del resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
-| **Cambiarnombrecolumnas (IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns (IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold),<br>"UnitPrice", "Price"),<br>"Cantidad")** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **ShowColumns( IceCreamSales, "Flavor" )** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Cambia el nombre de la **UnitPrice** columna del resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Paso a paso
 

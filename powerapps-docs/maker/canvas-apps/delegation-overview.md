@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
-ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59098055"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
@@ -29,7 +29,7 @@ La *delegación* es el lugar en el que la expresividad de las fórmulas de Power
 
 Esto se complica, y el motivo por el que existe este artículo, porque no todo lo que se puede expresar en una fórmula de PowerApps puede delegarse a todos los orígenes de datos. El lenguaje de PowerApps imita el lenguaje de fórmulas de Excel, que se está diseñado con acceso completo e instantáneo a un libro completo en la memoria, con una amplia variedad de funciones numéricas y de manipulación de texto. Como consecuencia, el lenguaje de PowerApps es mucho complejo de lo que la mayoría de orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
 
-**Trabajar con grandes conjuntos de datos requiere el uso de orígenes de datos y las fórmulas que se pueden delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
+**El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
 
 > [!NOTE]
 > Anteriormente las advertencias de delegación se marcaban en PowerApps como sugerencias de "punto azul", pero desde entonces las sugerencias de delegación se han reclasificado como advertencias. Si los datos del origen de datos superan los 500 registros y no se puede delegar una función, quizás PowerApps no pueda recuperar todos los datos y la aplicación pueda tener resultados incorrectos. Las advertencias de delegación permiten administrar la aplicación para que tenga resultados correctos.
@@ -57,8 +57,8 @@ Las funciones **Filter** y **LookUp** se pueden usar con columnas de la tabla pa
 * **[In (En)](functions/operators.md)**
 * **[=](functions/operators.md)**, **[<>](functions/operators.md)**, **[>=](functions/operators.md)**, **[<=](functions/operators.md)**, **[>](functions/operators.md)**, **[<](functions/operators.md)**
 * **[+](functions/operators.md)**, **[-](functions/operators.md)**
-* **[TrimEnds](functions/function-trim.md)**
-* **[IsBlank](functions/function-isblank-isempty.md)**
+* **[TrimEnds (RecortarExtr)](functions/function-trim.md)**
+* **[EsBlanco](functions/function-isblank-isempty.md)**
 * **[StartsWith](functions/function-startswith.md)**, **[EndsWith](functions/function-startswith.md)**
 * Valores constantes que son iguales en todos los registros, como las propiedades del control y [las variables globales y de contexto](working-with-variables.md).
 
@@ -66,10 +66,10 @@ También se pueden usar partes de la fórmula que se evalúen en un valor consta
 
 La lista anterior no incluye estos elementos importantes:
 
-* **[If](functions/function-if.md)**
+* **[If (Si)](functions/function-if.md)**
 * **[*](functions/operators.md)**, **[/](functions/operators.md)**, **[Mod](functions/function-mod.md)**
 * **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)**)
-* **[ExactIn](functions/operators.md)**
+* **[ExactIn (ExactoEn)](functions/operators.md)**
 * Funciones de manipulación de cadenas: **[Inferior](functions/function-lower-upper-proper.md)**,  **[superior](functions/function-lower-upper-proper.md)**,  **[izquierda](functions/function-left-mid-right.md)**, **[mediados](functions/function-left-mid-right.md)**,  **[Len](functions/function-left-mid-right.md)**,...
 * Señales: **[Ubicación](functions/signals.md)**,  **[aceleración](functions/signals.md)**,  **[brújula](functions/signals.md)**,...
 * Volátiles: **[RAND](functions/function-rand.md)**,...

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870917"
 ---
 # <a name="customize-a-card-in-a-canvas-app"></a>Personalizar una tarjeta en una aplicación de lienzo

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042764"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
@@ -108,7 +108,7 @@ Después de este cambio, puede omitir el **título** columna, o puede [quitarlo]
 1. Seleccione la casilla de verificación para esa lista y, a continuación, seleccione **Connect**.
 
     > [!div class="mx-imgBorder"]
-    > ![Panel Data (Datos)](./media/dependent-drop-down-lists/select-list.png)
+    > ![Panel de datos](./media/dependent-drop-down-lists/select-list.png)
 
     La lista de conexiones, se muestra el **incidentes** lista, en el que se basa el formulario, y el **ubicaciones** lista, que identificará las ubicaciones y departamentos en el formulario.
 
