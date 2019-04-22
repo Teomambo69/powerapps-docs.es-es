@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
-ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59541824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993835"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
@@ -26,10 +26,18 @@ Gráficos para los que puede configurar las propiedades de aspecto y comportamie
 ## <a name="description"></a>Descripción
 Estos controles incluyen flechas, formas geométricas, iconos de acción y símbolos para los que puede configurar propiedades como el relleno, el tamaño y la ubicación. También puede configurar sus **[Alseleccionar](properties-core.md)** propiedad para que la aplicación responde si el usuario selecciona el control.
 
-## <a name="key-properties"></a>Propiedades principales
+## <a name="key-properties-icons-and-shapes"></a>Propiedades de clave (iconos y formas)
 **[Fill](properties-color-border.md)**: el color de fondo de un control.
 
 **[OnSelect](properties-core.md)**  : cómo responde la aplicación cuando el usuario selecciona un control.
+
+## <a name="key-properties-icons-only"></a>Propiedades de clave (sólo para iconos)
+
+**Icono** -el tipo de icono que se va a mostrar (por ejemplo, **ArrowDown** o **ShoppingCart**). 
+
+**Rotación** -el número de grados para girar el icono. 
+
+**Color** : el color del icono por nombre o los valores RGBA.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.

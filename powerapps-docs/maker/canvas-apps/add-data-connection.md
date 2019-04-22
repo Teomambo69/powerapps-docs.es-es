@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993812"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Agregar una conexión de datos a una aplicación de lienzo en PowerApps
 
@@ -58,7 +58,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
     ![Añadir conexión](./media/add-data-connection/add-connection.png)
 
-1. En la barra de búsqueda, escriba o pegue las primeras letras de la conexión que desee y, a continuación, seleccione, a continuación, conexión cuando aparezca.
+1. En la barra de búsqueda, escriba o pegue las primeras letras de la conexión que desee y, a continuación, seleccione la conexión cuando aparezca.
 
     ![Búsqueda de una conexión](./media/add-data-connection/search-connections.png)
 
@@ -67,7 +67,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
     Algunos conectores, como **Office 365 Outlook**, no requieren ningún paso adicional y puede mostrar datos procedentes de ellos inmediatamente. Otros conectores le pedirán que proporcione las credenciales, especifique un conjunto determinado de datos o que realice otros pasos. Por ejemplo, [SharePoint](connections/connection-sharepoint-online.md) y [SQL Server](connections/connection-azure-sqldatabase.md) requieren información adicional antes de poder utilizarlas.
 
 ## <a name="identify-or-change-a-data-source"></a>Identificar o cambiar un origen de datos
-Si va a actualizar una aplicación, es posible que necesite identificar o cambiar el origen de datos que aparece en una galería, un formulario u otro control. Por ejemplo, podría tener que identificar un origen de datos cuando actualice una aplicación que otra persona ha creado o que usted creó hace tiempo.
+Si va a actualizar una aplicación, es posible que necesite identificar o cambiar el origen de datos que aparece en una galería, un formulario u otro control. Por ejemplo, es posible que necesite identificar un origen de datos, como actualizar una aplicación creada por otra persona o usted creó hace tiempo.
 
 1. Seleccione el control, como una galería, para el que desea identificar o cambiar el origen de datos.
 
