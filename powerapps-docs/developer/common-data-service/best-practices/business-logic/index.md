@@ -1,6 +1,6 @@
 ---
-title: 'Programadores: Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para Common Data Service | Microsoft Docs'
-description: Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para programadores de Common Data Service en PowerApps.
+title: 'Desarrolladores: Procedimientos recomendados e instrucciones para el desarrollo de complementos y flujos de trabajo en Common Data Service | Microsoft Docs'
+description: Procedimientos recomendados e instrucciones dirigidos a desarrolladores que trabajan en el desarrollo de complementos y flujos de trabajo con Common Data Service en PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,27 +16,33 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60e489ffd35f0e07f9a22f65336b242b7e0e2652
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61528421"
 ---
-# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para Common Data Service
+# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Procedimientos recomendados e instrucciones para el desarrollo de complementos y flujos de trabajo en Common Data Service
 
-La siguiente lista contiene todas las instrucciones y prácticas recomendadas sobre la programación de complementos y flujos de trabajo en Common Data Service.
+Aquí se enumeran todas las instrucciones y procedimientos recomendados para el desarrollo de complementos y flujos de trabajo en Common Data Service.
 
-|Práctica recomendada  |Descripción  |
+|Procedimiento recomendado  |Descripción  |
 |---------|---------|
-|[Evitar usar de tipos de solicitud por lotes en complementos y actividades de flujo de trabajo](avoid-batch-requests-plugin.md)     |No debería usar clases de solicitud de mensajes ExecuteMultipleRequest o ExecuteTransactionRequest en situaciones con complementos o actividad de flujo de trabajo.         |
-|[Desarrollar implementaciones de IPlugin como sin estado](develop-iplugin-implementations-stateless.md)     |Los miembros de clases que implementan IPlugin se exponen a problemas potenciales de seguridad de los subprocesos que pueden llevar a incoherencia o problemas de rendimiento.         |
-|[No duplicar el registro de paso de complemento](do-not-duplicate-plugin-step-registration.md)     |Duplicar el registro de paso de complemento provocará que el complemento se desencadene varias veces en el mismo mensaje o evento.         |
-|[Incluir atributos de filtrado con el registro de complementos](include-filtering-attributes-plugin-registration.md)     |Si no se configura ningún atributo de filtrado para un paso de registro de complementos, el complemento se ejecutará cada vez que un mensaje de la actualización se produzca para ese evento.         |
-|[Limitar el registro de complementos para los mensajes Retrieve y de RetrieveMultiple](limit-registration-plugins-retrieve-retrievemultiple.md)     |Si se agrega lógica de complementos síncrona a los eventos de mensaje Retrieve y de RetrieveMultiple, se puede producir lentitud.         |
-|[Optimizar el desarrollo de ensamblados personalizados](optimize-assembly-development.md)     |Considere combinar actividades separadas de complementos y flujo de trabajo personalizado en un único ensamblado personalizado para mejorar el rendimiento y la capacidad de retención y traspase actividades de complementos y flujo de trabajo personalizado a múltiples ensamblados personalizados si el tamaño de un ensamblado está cerca de los límite de tamaño de ensamblados en espacios independientes.         |
-|[Establecer KeepAlive en false para interactuar con hosts externos en un complemento](set-keepalive-false-interacting-external-hosts-plugin.md)     |La propiedad KeepAlive establecida en true en el encabezado de solicitud HTTP o que no se haya definido explícitamente en false puede prolongar el tiempo de ejecución de los complementos.         |
-|[Utilizar InvalidPluginExecutionException en actividades de complementos y de flujo de trabajo](use-invalidpluginexecutionexception-plugin-workflow-activities.md)     |Use InvalidPluginExecutionException al publicar errores en el contexto de las actividades de complemento o de flujo de trabajo.         |
+|[Evitar el uso de tipos de solicitud por lotes en actividades de complementos y flujos de trabajo](avoid-batch-requests-plugin.md)     |No se deben usar las clases de solicitud de mensaje ExecuteMultipleRequest o ExecuteTransactionRequest en el contexto de un complemento o una actividad de flujo de trabajo.         |
+|[Desarrollar implementaciones IPlugin como sin estado](develop-iplugin-implementations-stateless.md)     |Los miembros de clases que implementan IPlugin están expuestos a posibles problemas de seguridad de subprocesos que podrían producir problemas de rendimiento o incoherencia de datos.         |
+|[No duplicar el registro de pasos en complementos](do-not-duplicate-plugin-step-registration.md)     |El registro de pasos duplicados en un complemento hará que dicho complemento se desencadene varias veces en el mismo mensaje o evento.         |
+|[Incluir atributos de filtro con el registro de complementos](include-filtering-attributes-plugin-registration.md)     |Si no se establecen atributos de filtro para un paso de registro de complemento, el complemento se ejecutará cada vez que se produzca un mensaje de actualización para ese evento.         |
+|[Limitar el registro de complementos para mensajes Retrieve y RetrieveMultiple](limit-registration-plugins-retrieve-retrievemultiple.md)     |Agregar lógica de complemento sincrónico a los eventos de mensajes Retrieve y RetrieveMultiple puede provocar ralentización.         |
+|[Optimizar el desarrollo de ensamblados personalizados](optimize-assembly-development.md)     |Considere la posibilidad de combinar actividades distintas de flujos de trabajo y complementos en un único ensamblado personalizado para mejorar el rendimiento y el mantenimiento, y mueva las actividades de flujos de trabajo y complementos a varios ensamblados personalizados si el tamaño de un ensamblado está próximo a las restricciones de tamaño de ensamblado.         |
+|[Establecer KeepAlive en False al interactuar con hosts externos en un complemento](set-keepalive-false-interacting-external-hosts-plugin.md)     |Si se establece la propiedad KeepAlive en True en el encabezado de solicitud HTTP o no se define explícitamente como False, podría provocar que los complementos tarden más tiempo en ejecutarse.         |
+|[Usar InvalidPluginExecutionException en actividades de complementos y flujos de trabajo](use-invalidpluginexecutionexception-plugin-workflow-activities.md)     |Use InvalidPluginExecutionException al provocar errores en el contexto de un complemento o una actividad de flujo de trabajo.         |
 
 # <a name="see-also"></a>Vea también
-[Aplicar la lógica de negocios usando código](../../apply-business-logic-with-code.md)<br />
-[Use complementos para ampliar los procesos de negocio](../../plug-ins.md)<br />
+[Aplicar lógica de negocios con código](../../apply-business-logic-with-code.md)<br />
+[Usar complementos para extender procesos de negocio](../../plug-ins.md)<br />
 [Extensiones de flujo de trabajo](../../workflow/workflow-extensions.md)<br />

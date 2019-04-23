@@ -10,11 +10,11 @@ ms.service: powerapps
 ms.custom:
 - powerapps-hub
 ms.openlocfilehash: e20fa35acda2953bff2068ffd3c3c20e6d051fe0
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543289"
 ---
 <div id="main"
    class="v2">

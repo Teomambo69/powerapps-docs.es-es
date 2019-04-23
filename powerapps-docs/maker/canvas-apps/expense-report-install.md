@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61561068"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
