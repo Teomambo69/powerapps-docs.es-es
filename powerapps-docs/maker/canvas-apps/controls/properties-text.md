@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 2b88e765fcc56a2d76ede30a44fcfbaae70aaea3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559895"
 ---
 # <a name="text-properties-in-powerapps"></a>Propiedades de texto en PowerApps
 Configure el texto que aparece en un control o en la información sobre herramientas, como una sugerencia cuando el usuario escribe datos, y especifique otras características relacionadas con el texto.
@@ -28,7 +28,7 @@ Configure el texto que aparece en un control o en la información sobre herramie
 
 * Se aplica a los controles **[Agregar imagen](control-add-picture.md)**, **[Botón](control-button.md)**, **[Casilla](control-check-box.md)**, **[Gráfico de columnas](control-column-line-chart.md)**, **[Selector de fecha](control-date-picker.md)**, **[Lista desplegable](control-drop-down.md)**, **[Exportar](control-export-import.md)**, **[Texto HTML](control-html-text.md)**, **[Importar](control-export-import.md)**, **[Gráfico de líneas](control-text-box.md)**, **[Cuadro de lista](control-column-line-chart.md)**, **[Gráfico circular](control-list-box.md)**, **[Radio](control-pie-chart.md)**, **[Cuadro de texto](control-radio.md)**, **[Entrada de texto](control-text-input.md)** y **[Temporizador](control-timer.md)**.
 
-**FontWeight**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**FontWeight** : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 * Se aplica a los controles **[Agregar imagen](control-add-picture.md)**, **[Botón](control-button.md)**, **[Casilla](control-check-box.md)**, **[Selector de fecha](control-date-picker.md)**, **[Lista desplegable](control-drop-down.md)**, **[Exportar](control-export-import.md)**, **[Importar](control-export-import.md)**, **[Cuadro de lista](control-text-box.md)**, **[Radio](control-list-box.md)**, **[Cuadro de texto](control-radio.md)**, **[Entrada de texto](control-text-input.md)** y **[Temporizador](control-timer.md)**.
 

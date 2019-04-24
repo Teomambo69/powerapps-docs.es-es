@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cad1d7f138a8f831631d9a57b55c54b30d537b9c
-ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
-ms.translationtype: MT
+ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993927"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Crear diseños de capacidad de respuesta en las aplicaciones de lienzo
 
@@ -209,7 +209,7 @@ Puede usar la pantalla **orientación** propiedad para determinar si la pantalla
 |--|----------|---|
 | **superior** | **X** | `0` |
 | **superior** | **Y** | `0` |
-| **superior** | **Width** | `If(Parent.Orientation = Layout.Vertical, Parent.Height, Parent.Width, Parent.Width / 2)` |
+| **superior** | **Width** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
 | **superior** | **Height**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
 | **inferior** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
 | **inferior** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
