@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a46635276f6598cf0591dc21ae5aeb855b6667c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560493"
 ---
 # <a name="text-input-control-in-powerapps"></a>Control Entrada de texto en PowerApps
 Un cuadro en el que el usuario puede escribir texto, números y otros datos.
@@ -64,7 +64,7 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **Formato**: indica si se han restringido las entradas de usuario a solo números o a cualquier tipo de texto.
 

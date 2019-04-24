@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f452fedfbb26394bcaf4d490fa608f066469fb53
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544566"
 ---
 # <a name="user-function-in-powerapps"></a>Función User en PowerApps
 Muestra información sobre el usuario actual.

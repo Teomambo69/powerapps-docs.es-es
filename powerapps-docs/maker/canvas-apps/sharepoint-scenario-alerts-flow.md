@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61537585"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Configurar alertas de datos para el panel de Power BI
 > [!NOTE]

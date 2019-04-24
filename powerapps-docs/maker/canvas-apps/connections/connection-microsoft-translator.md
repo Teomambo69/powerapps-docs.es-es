@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545709"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Conexión a Microsoft Translator desde PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -112,7 +112,7 @@ Ninguna
 | Nombre |string |No | |
 
 ### <a name="translate"></a>Traducir
-Traducir texto: Traduce el texto a un idioma especificado mediante Microsoft Translator.
+Translate text: Traduce el texto a un idioma especificado mediante Microsoft Translator.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -127,7 +127,7 @@ Traducir texto: Traduce el texto a un idioma especificado mediante Microsoft Tra
 Ninguna
 
 ### <a name="detect"></a>Detectar
-Detectar idioma: Detecta el idioma de origen del texto proporcionado
+Detectar idioma: Detecta el idioma de origen del texto proporcionado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 

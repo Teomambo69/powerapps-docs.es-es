@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563628"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Funciones GroupBy y Ungroup en PowerApps
 Agrupa y desagrupa [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).

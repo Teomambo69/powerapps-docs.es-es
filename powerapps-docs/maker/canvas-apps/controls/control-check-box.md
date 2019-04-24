@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3504c80cbf2414959cadc218339d959d168d15ba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559458"
 ---
 # <a name="check-box-control-in-powerapps"></a>Control Casilla en PowerApps
 Un control que el usuario puede seleccionar o borrar para establecer su valor en **true** o **false**.
@@ -66,7 +66,7 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 

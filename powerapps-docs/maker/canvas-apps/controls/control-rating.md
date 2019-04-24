@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1979ad63ce9cd5fbe3f3a9a3fa5a56df5e80966e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526065"
 ---
 # <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6ab5ddf93351547afb752e838ab4929c7138df87
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560447"
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.

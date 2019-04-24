@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
-ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61552052"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -84,15 +84,21 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
-1. Agregue un control de **cuadro combinado** desde la pestaña Insertar, menú Controles.  
-2. En la pestaña de opciones Propiedades, haga clic en Datos.  
-3. Seleccione el origen de datos, el diseño y las propiedades relacionadas a continuación.
-4. Establezca la propiedad **SelectMultiple** en la ficha Opciones avanzadas.
+1. En el **insertar** pestaña, abra el **controles** menú y, a continuación, seleccione **cuadro combinado**.  
 
-    Aparecerá un **cuadro combinado** funcional en la aplicación.
+1. En el **propiedades** ficha del panel derecho, abrirlo el **seleccionar un origen de datos** lista (junto a **elementos**) y, a continuación, agregar o seleccione un origen de datos.
 
-    ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
+1. En la misma ficha, seleccione **editar** (junto a **campos**).
 
+1. En el **datos** panel, abra el **texto primario** lista y, a continuación, seleccione la columna que desea mostrar en el **cuadro combinado** control.
+
+1. Mientras mantiene presionada la tecla Alt, seleccione la flecha abajo para abrir el **cuadro combinado** control.
+
+    El control muestra los datos de la columna especificada en el origen de datos que especificó.
+    
+1. (opcional) Para mostrar el primer registro de forma predeterminada, establezca el **DefaultSelectedItems** propiedad en esta expresión, reemplazando *DataSource* con el nombre del origen de datos:
+
+    `First(DataSource)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 ### <a name="color-contrast"></a>Contraste de color

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
-ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49307870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544232"
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.

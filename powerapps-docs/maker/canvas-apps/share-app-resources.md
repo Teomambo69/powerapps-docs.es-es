@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4f303cdfba474448321d230bb61b698e8f959e5f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61535941"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>Compartir recursos de aplicaciones de lienzo en PowerApps
 

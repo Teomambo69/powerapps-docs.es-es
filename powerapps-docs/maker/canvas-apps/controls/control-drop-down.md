@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544278"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.

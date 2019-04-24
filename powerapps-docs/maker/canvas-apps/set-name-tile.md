@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: bca875eb2160702c749f8556613b6ebe5a426cb4
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536313"
 ---
 # <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>Cambio del nombre y el icono de la aplicación de una aplicación de lienzo en PowerApps | Microsoft Docs
 Personalice una aplicación de lienzo cambiándole el nombre y el icono.

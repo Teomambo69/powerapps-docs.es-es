@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9c032c237018fbd564dd1143f20951dfb42d9795
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520476"
 ---
 # <a name="reset-function-in-powerapps"></a>Función Reset en PowerApps
 Restablece un control a su valor predeterminado, descartando cualquier modificación del usuario.  

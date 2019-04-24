@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 66dcd1bc01e6336b9ea4904ef11838bc578cf6ec
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562747"
 ---
 # <a name="mod-function-in-powerapps"></a>Función Mod en PowerApps
 Devuelve el resto de una división.

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
-ms.translationtype: MT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562793"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.

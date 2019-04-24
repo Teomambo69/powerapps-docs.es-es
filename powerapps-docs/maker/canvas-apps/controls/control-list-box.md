@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544432"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -60,7 +60,7 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
@@ -140,9 +140,9 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
      ![Nombres de suelos en las listas desplegables](./media/control-list-box/flooring-names.png)
 4. Establezca la propiedad **[Elementos](properties-core.md)** de cada control **[Lista desplegable](control-drop-down.md)** en uno de estos valores:
    
-   * ListaMoqueta: **If("Moqueta" en CategoryList.SelectedItems.Value, true)**
-   * ListaParquet: **If("Parquet" en CategoryList.SelectedItems.Value, true)**
-   * ListaMosaico: **If("Mosaico" en CategoryList.SelectedItems.Value, true)**
+   * Listamoqueta: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 5. Presione F5 y, a continuación, elija uno o más elementos de **CategoryList**.

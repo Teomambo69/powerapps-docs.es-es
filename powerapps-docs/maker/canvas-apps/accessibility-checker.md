@@ -11,11 +11,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 11ec805a713743e2524651128b036ccaaade69e3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61542553"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Revisar una aplicación de lienzo para mejorar la accesibilidad en PowerApps
 
@@ -70,7 +70,7 @@ El Comprobador de accesibilidad clasifica cada problema como un error, una adver
 | **Desactive el inicio automático**                 | Advertencia  | Cuando la propiedad **Autostart** de un control **Audio** o **Vídeo** está establecida en **true**. | Establezca la propiedad **Autostart** del control en **false**. | Los archivos de vídeo y audio que se reproducen automáticamente pueden distraer a los usuarios. Permítales elegir si quieren reproducir un clip. |
 | **Revise el nombre de la pantalla**                 | Sugerencia      | Cuando una pantalla tiene un nombre predeterminado, que leerán los lectores de pantalla cuando el usuario navega por la aplicación. | Asigne un nombre a la pantalla que describa lo que aparece en ella o su uso.| Las personas que son ciegas, que tienen deficiencia visual o discapacidad de lectura dependen de los nombres en pantalla para navegar mediante el lector de pantalla. |
 | **Agregue texto de indicación del estado**          | Sugerencia      |  Cuando un control tiene un estado, por ejemplo, un interruptor, pero las etiquetas de valor están desactivadas. | Establezca la propiedad **ShowValue** del control en **true** para mostrar su estado actual. | Los usuarios no obtendrán confirmación de sus acciones si el estado del control no se muestra. |
-| **Compruebe el orden de los elementos de la pantalla**| Sugerencia      | Cuando la propiedad **TabIndex** es mayor que 1. Los creadores de aplicaciones pueden establecer un orden de tabulación personalizado configurando la propiedad **TabIndex** en un valor numérico como 1, 2, 3 y 4. Esta sugerencia le recuerda que revise el orden interactivo para esta pantalla. Como práctica recomendada, siga un diseño en el que la propiedad **TabIndex** sea 0.  | Asegúrese de que los elementos de la pantalla coincidan con el orden en el cual quiere que se pueda navegar por ellos mediante pestañas. | Cuando un lector de pantalla lee los elementos de una aplicación, debe aparecer en el orden en el que los vería un usuario, en lugar de en uno menos intuitivo.  |
+| **Compruebe el orden de los elementos de la pantalla**| Sugerencia      | Cuando la propiedad **TabIndex** es mayor que 1. Los creadores de aplicaciones pueden establecer un orden de tabulación personalizado configurando la propiedad **TabIndex** en un valor numérico como 1, 2, 3 y 4. Esta sugerencia le recuerda que revise el orden interactivo para esta pantalla. Como práctica recomendada, siga un diseño en el que la propiedad **TabIndex** sea 0.  | Asegúrese de que los elementos de la pantalla coincidan con el orden en el cual quiere que se pueda navegar por ellos mediante pestañas. | Cuando un lector de pantalla lee los elementos de una aplicación, debe aparecer en el orden en el que los vería un usuario, en lugar de en uno menos intuitivo.  |
 | **Agregue otro método de entrada**           | Sugerencia      | Cuando una aplicación contiene un control **Lápiz**. Esta sugerencia le recuerda que incluya un método de entrada independiente. | Agregue un control **Entrada de texto** además del control **Lápiz** para ofrecer una experiencia accesible. | Algunos usuarios no pueden usar un lápiz y necesitan otro método para indicar información como, por ejemplo, teclear una firma. |
 
 ## <a name="next-steps"></a>Pasos siguientes

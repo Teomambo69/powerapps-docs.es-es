@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548717"
 ---
 # <a name="label-control-in-canvas-apps"></a>Control de etiqueta en las aplicaciones de lienzo
 

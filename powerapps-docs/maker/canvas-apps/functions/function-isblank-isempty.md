@@ -15,11 +15,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563921"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Funciones Blank, Coalesce, IsBlank e IsEmpty en PowerApps
 Comprueba si un valor está en blanco o una [tabla](../working-with-tables.md) no contiene [registros](../working-with-tables.md#records), y proporciona una manera de crear valores *blank*.
@@ -77,7 +77,7 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
+    **ClearCollect (ciudades, {nombre: "Seattle", tiempo: "Lluvioso"})**
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 4. En el menú **Archivo**, haga clic o pulse en **Colecciones**.
 
@@ -92,7 +92,7 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
     La etiqueta muestra **false** porque el campo **Weather** contiene un valor ("Rainy").
 7. Agregue un segundo botón y establezca su propiedad **OnSelect** en esta fórmula:
 
-    **Patch( Cities, First( Cities ), { Weather: Blank() } )**
+    **Revisión (ciudades, primero (ciudades), {meteorológico: Blank() } )**
 8. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     El campo **Weather** del primer registro de **Cities** se sustituye por un valor *blank*, de forma que se reemplaza el valor inicial "Rainy" que estaba ahí anteriormente.
@@ -136,7 +136,7 @@ Otros ejemplos:
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
+    **Collect( IceCream, { Flavor: "Fresa", cantidad: 300 }, { Flavor: "Chocolate", cantidad: 100 } )**
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     Se crea una colección denominada **IceCream** con estos datos:

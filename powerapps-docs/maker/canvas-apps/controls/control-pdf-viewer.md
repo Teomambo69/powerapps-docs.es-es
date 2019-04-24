@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d3add2ccb460e11211baa993c61902856c8f083
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548809"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -27,10 +27,17 @@ Un control experimental que muestra el contenido de un archivo PDF.
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
 
 ## <a name="limitations"></a>Limitaciones
-Tenga en cuenta que, dada a la arquitectura de seguridad de PowerApps, el visor de PDF solo admite vínculos HTTPS, no HTTP.  
-Si el documento PDF reside en un servidor con configuración de CORS con restricciones, es posible que no pueda verlo en su aplicación.  Para resolver este problema, es preciso que el servidor que hospeda los documentos PDF permita solicitudes de CORS procedentes de powerapps.com.
+1. La arquitectura de seguridad de PowerApps requiere que el Visor de PDF admitir sólo vínculos HTTPS, no HTTP.  
 
-Si el documento no se puede abrir en PowerApps, se brinda al usuario final la posibilidad de abrirlo en un explorador externo.  Esta opción también está disponible en el menú de control para todos los documentos externos.
+2. El **documento** propiedad debe vincular directamente al archivo PDF. No se admiten las redirecciones del servidor o vistas HTML del documento.
+
+3. El servidor que hospeda el documento no debe requerir la autenticación.
+
+4. Es posible que no pueda ver un documento PDF de la aplicación si el documento reside en un servidor que tenga restricciones de recursos entre orígenes (CORS) configuración de uso compartido. Para resolver este problema, el servidor que hospeda los documentos PDF debe permitir solicitudes entre orígenes desde powerapps.com.
+
+Usuarios de la aplicación pueden solucionar estas limitaciones al abrir los documentos PDF en un explorador externo, como se le pregunte si el control no puede abrir un documento. Esta opción también está disponible en el menú de control para todos los documentos externos.
+
+Los creadores de aplicaciones pueden solucionar estas limitaciones mediante la inclusión de documentos PDF como recursos multimedia en la aplicación. De este modo, el control de Visor de PDF siempre puede mostrar el documento.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Documento**: la dirección URL entre comillas dobles, de un archivo PDF.

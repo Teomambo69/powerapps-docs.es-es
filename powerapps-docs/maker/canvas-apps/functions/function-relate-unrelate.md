@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61527523"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Relacionar y Anular relación con las funciones de PowerApps
 
@@ -100,7 +100,7 @@ Primero vamos a crear una aplicación sencilla para ver y reasignar las reservas
 
 1. Crear un [aplicación de tableta desde cero](../data-platform-create-app-scratch.md).
 
-1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
 
 1. En el **datos** panel, seleccione **agregar origen de datos** > **Common Data Service** > **productos**  >  **Conectar**.  
 
@@ -170,7 +170,7 @@ Con esta aplicación, el usuario puede mover una reserva de un producto a otro. 
 
 En este momento, puede mover la relación de un registro a otro, pero no se puede quitar la relación por completo. Puede usar el **Unrelate** función para desconectarse de un registro de reserva de cualquier producto.
 
-1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
 
 1. En el **datos** panel, seleccione **agregar origen de datos** > **Common Data Service** > **reservas**  >  **Conectar**.
 
@@ -271,7 +271,7 @@ Podrá crear otra aplicación que es similar a la que creó anteriormente en est
 
     ![Configurar icono Cancelar](media/function-relate-unrelate/contacts-unrelate.png)
 
-1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
 
 1. En el **datos** panel, seleccione **agregar origen de datos** > **Common Data Service** > **contactos**  >  **Conectar**.
 

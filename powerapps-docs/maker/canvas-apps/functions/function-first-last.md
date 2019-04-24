@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551109"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones First, FirstN, Last y LastN en PowerApps
 Devuelve el primer o último conjunto de [registros](../working-with-tables.md#records) de una tabla.

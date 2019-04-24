@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 198275ef72129b17cbf73a5f4eb47fd342de3b24
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548763"
 ---
 # <a name="slider-control-in-powerapps"></a>Control deslizante en PowerApps
 Un control con el que el usuario puede especificar un valor arrastrando un controlador.

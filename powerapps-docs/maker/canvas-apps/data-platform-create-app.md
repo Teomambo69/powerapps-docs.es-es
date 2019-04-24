@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
-ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549706"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo a partir de Common Data Service en PowerApps
 

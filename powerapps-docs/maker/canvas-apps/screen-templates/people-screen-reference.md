@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 09b92a1e2bc87ac6f4e2ec651aa67a845e0f07b1
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540778"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Información de referencia acerca de la plantilla de pantalla de las personas para las aplicaciones de lienzo
 

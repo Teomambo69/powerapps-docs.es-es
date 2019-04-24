@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554398"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
@@ -172,7 +172,7 @@ Esta lista almacena los vales del servicio Help Desk.
 4.  Haga clic en **Crear**.
 5.  En la ventana emergente, seleccione la cuenta con la que inició sesión.
 
-## <a name="import-the-app"></a>Importar la aplicación
+## <a name="import-the-app"></a>Importación de la aplicación
 
 1. En un explorador web, vaya a https://web.powerapps.com.
 2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
@@ -216,17 +216,17 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ### <a name="delete-connections"></a>Eliminar conexiones
 
-1. En el **vista** ficha, seleccione **orígenes de datos**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
 1. En el **datos** panel, seleccione los puntos suspensivos (...) junto a **HelpDesk**y, a continuación, seleccione **quitar**.
 
 ### <a name="helpdesk-list"></a>Lista de Help Desk
 
-1. En el **vista** ficha, seleccione **orígenes de datos**.
-1. En el **datos** panel, seleccione **agregar origen de datos** > **nueva conexión** > **SharePoint**  >  **Crear**.
+1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
+1. En el panel **Datos**, seleccione **Agregar origen de datos** > **Nueva conexión** > **SharePoint** > **Crear**.
 1. En la lista **Sitios recientes**, seleccione el sitio de SharePoint en el que creó la lista de HelpDesk.
 
     > [!TIP] 
-    > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y, a continuación, seleccione **vaya**.
+    > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y seleccione **Ir**.
 
 1. En el **búsqueda** cuadro en la parte superior de la lista, escriba o pegue **HelpDesk**.
 1. Active la casilla de verificación junto a **HelpDesk**y, a continuación, seleccione **Connect**.
@@ -244,9 +244,9 @@ Esta lista almacena los vales del servicio Help Desk.
    > Si tiene más de un administrador, use una coma para delimitar la lista de administradores. Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
    > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
 
-1. Seleccione **archivo** > **guardar** > **publicar** > **publicar esta versión**.
+1. Seleccione **Archivo** > **Guardar** > **Publicar** > **Publicar esta versión**.
 
-## <a name="modify-the-flow"></a>Modificar el flujo
+## <a name="modify-the-flow"></a>Modificación del flujo
 
 1.  En el menú de la izquierda, seleccione **Flujos**.
 2.  Si es necesario, inicie sesión con las mismas credenciales que utilizó para suscribirse.

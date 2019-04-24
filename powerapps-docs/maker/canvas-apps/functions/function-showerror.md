@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519777"
 ---
 # <a name="notify-function-in-powerapps"></a>Función Notify en PowerApps
 Muestra un mensaje de pancarta al usuario.
@@ -45,7 +45,7 @@ PowerApps también puede enviar notificaciones de inserción mediante un mecanis
 
 **Notify** siempre devuelve *true*.
 
-Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
+Nota: Esta función se denominaba anteriormente **ShowError** cuando solo pueden mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
 **Notify**( *Message*, [ *NotificationType* ] )

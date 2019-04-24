@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548786"
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 
@@ -68,7 +68,7 @@ El control puede tener un diseño horizontal o vertical.
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 

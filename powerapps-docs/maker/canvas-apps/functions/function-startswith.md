@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61547080"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funciones EndsWith y StartsWith en PowerApps
 Comprueba si una cadena de texto comienza o termina con otra cadena de texto.
@@ -68,7 +68,7 @@ Los ejemplos que aparecen en el resto de este tema muestran los resultados de bu
 
 Para crear este origen de datos como una colección, cree un control **[Botón](../controls/control-button.md)** y establezca la propiedad **OnSelect** en esta fórmula:
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (clientes, tabla ({nombre: "Fred Garcia", empresa: "Northwind Traders"}, {nombre: "Cole Miller", empresa: "Contoso"}, {nombre: "Glenda Johnson", empresa: "Contoso"}, {nombre: "Mike Collins", empresa: "Adventure Works"}, {nombre: "Colleen Jones", empresa: "Adventure Works" } ) )**
 
 Como en este ejemplo, puede mostrar una lista de registros en un [**control Galería**](../controls/control-gallery.md) en la parte inferior de una pantalla. Cerca de la parte superior de la pantalla, puede agregar un control [**Entrada de texto**](../controls/control-text-input.md) denominado **SearchInput**, de modo que los usuarios puedan especificar los registros que más les interesen.
 

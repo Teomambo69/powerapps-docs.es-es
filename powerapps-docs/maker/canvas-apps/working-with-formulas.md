@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a76b039ace1b323f7e1160e919722cc83bc6d091
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61558586"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
 

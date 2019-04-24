@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c4e02adfdd5c1c4e49bb1a605ccfff463369f750
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: cc7eefbe2989ed1aa0e893c2d826215aec48003b
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557043"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
 Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre ellos. Para obtener información general de los entornos, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos), que explica en detalle por qué utilizar entornos y cómo puede crearlos y administrarlos. El ámbito de este artículo trata los siguientes temas sobre el entorno:
 
 * Cómo cambiar el entorno en powerapps.com
-* Cómo crear una aplicación en el entorno adecuado
+* cómo crear una aplicación en el entorno adecuado
 * Cómo ver una aplicación en el entorno adecuado
 
 ## <a name="switch-the-environment"></a>Cambio de entorno

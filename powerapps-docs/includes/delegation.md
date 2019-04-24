@@ -1,9 +1,17 @@
+---
+ms.openlocfilehash: 7b0f9ce710887c870d22a6362f9cd28245d72519
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62092758"
+---
 ## <a name="delegation"></a>Delegación
-Siempre que sea posible, PowerApps delegará las operaciones de filtrado y ordenación en el origen de datos y la página a través de los resultados a petición. Por ejemplo, cuando se inicia una aplicación que muestra un control **[Galería](../maker/canvas-apps/controls/control-gallery.md)** lleno de datos, inicialmente solo se traerá al dispositivo el primer conjunto de registros. A medida que el usuario se desplace por los datos, se traerán más datos del origen de datos. El resultado es un inicio más rápido de la aplicación y acceso a conjuntos de datos muy grandes.
+Cuando sea posible, PowerApps delegará las operaciones de filtro y ordenación al origen de datos y se desplazará por los resultados a petición. Por ejemplo, al iniciar una aplicación que muestre un control **[galería](../maker/canvas-apps/controls/control-gallery.md)** relleno con datos, inicialmente solo se pasará al dispositivo el primer conjunto de registros. Cuando el usuario se desplace, se mueven datos adicionales desde el origen de datos. El resultado es una reducción del tiempo de inicio de la aplicación y el acceso a conjuntos de datos muy grandes.
 
-Sin embargo, la delegación no siempre es posible. La compatibilidad de funciones y operadores con la delegación varía según el origen de datos. Si la delegación completa de una fórmula no es posible, el entorno de creación indicará la parte que no se puede delegar con una advertencia. Si es posible, considere la posibilidad de cambiar la fórmula para que no incluya las funciones y los operadores que no se pueden delegar.  La [lista de delegación](../maker/canvas-apps/delegation-list.md) especifica los orígenes de datos y las operaciones que se pueden delegar.
+Sin embargo, es posible que la delegación no siempre se pueda realizar. Los orígenes de datos varían en cuanto a las funciones y los operadores que admiten con la delegación. Si no es posible la delegación completa de una fórmula, el entorno de creación marcará con una advertencia la parte que no se puede delegar. Cuando sea posible, considere la posibilidad de cambiar la fórmula para evitar funciones y operadores que no se puedan delegar.  La [lista de delegación](../maker/canvas-apps/delegation-list.md) detalla los orígenes de datos y operaciones que se pueden delegar.
 
-Si la delegación no es posible, PowerApps solo descargará un conjunto reducido de registros para trabajar localmente. Las funciones de filtrado y ordenación trabajarán con un conjunto reducido de registros. En la **[Galería](../maker/canvas-apps/controls/control-gallery.md)** puede no estará disponible la historia completa, y esto puede resultar confuso a los usuarios. 
+Si la delegación no es posible, PowerApps extraerá solo un pequeño conjunto de registros para trabajar localmente. Las funciones de filtro y ordenación operarán en un conjunto reducido de registros. Es posible que en la **[galería](../maker/canvas-apps/controls/control-gallery.md)** no esté todo disponible, lo que podría generar confusión a los usuarios. 
 
-Consulte la [información general sobre delegación](../maker/canvas-apps/delegation-overview.md) para obtener más información.
+Para más información, consulte la [introducción a la delegación](../maker/canvas-apps/delegation-overview.md).
 

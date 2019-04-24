@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8282cc8d9b277420d09a6fe73412a9c8698d39a5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562862"
 ---
 # <a name="isnumeric-function-in-powerapps"></a>Función IsNumeric en PowerApps
 Comprueba si un valor es numérico.

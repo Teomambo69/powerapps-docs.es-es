@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 748f76835e9a66281f4723b88ed7249a7a07e091
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544202"
 ---
 # <a name="now-today-and-istoday-functions-in-powerapps"></a>Funciones Now, Today e IsToday en PowerApps
 Devuelve la fecha y hora actuales y comprueba si un valor de fecha y hora es el día de hoy.

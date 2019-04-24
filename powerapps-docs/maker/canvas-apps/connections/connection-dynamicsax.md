@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1f1c58e95696be70ec0b1f58b88aa30713dda1ce
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545486"
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Conexión de Microsoft PowerApps a Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)

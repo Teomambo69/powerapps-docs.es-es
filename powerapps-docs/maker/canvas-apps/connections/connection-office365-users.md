@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557381"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)
@@ -142,7 +142,7 @@ Esta conexión incluye las siguientes funciones:
 | [SearchUser](connection-office365-users.md#searchuser) |Recupera los resultados de búsqueda de los perfiles de usuario. |
 
 ### <a name="myprofile"></a>MyProfile
-Obtener mi perfil: recupera el perfil del usuario actual.
+Obtener mi perfil: Recupera el perfil del usuario actual.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 Ninguna
@@ -164,7 +164,7 @@ Ninguna
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
 
 ### <a name="userprofile"></a>UserProfile
-Obtener perfil de usuario: recupera un perfil de usuario específico.
+Obtener perfil de usuario: Recupera un perfil de usuario específico.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -189,7 +189,7 @@ Obtener perfil de usuario: recupera un perfil de usuario específico.
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
 
 ### <a name="manager"></a>Manager
-Obtener administrador: recupera el perfil de usuario del administrador del usuario especificado.
+Obtener administrador: Recupera el perfil de usuario del administrador del usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -214,7 +214,7 @@ Obtener administrador: recupera el perfil de usuario del administrador del usuar
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
 
 ### <a name="directreports"></a>DirectReports
-Obtener subordinados directos: obtiene los subordinados directos.
+Obtener subordinados directos: Obtener subordinados directos
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -239,7 +239,7 @@ Obtener subordinados directos: obtiene los subordinados directos.
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
 
 ### <a name="searchuser"></a>SearchUser
-Buscar usuarios: recupera los resultados de búsqueda de los perfiles de usuario.
+Buscar usuarios: Recupera los resultados de búsqueda de los perfiles de usuario.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 

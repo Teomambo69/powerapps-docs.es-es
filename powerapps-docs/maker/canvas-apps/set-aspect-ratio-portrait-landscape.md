@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c4d9f648a4519ef30887d8d0739d7dc3d940555b
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58172688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536067"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Cambio del tamaño y la orientación de la pantalla de una aplicación de lienzo en PowerApps
 Personalice una aplicación de lienzo cambiando el tamaño y la orientación de la pantalla.

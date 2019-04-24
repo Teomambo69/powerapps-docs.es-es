@@ -1,6 +1,6 @@
 ---
-title: Propiedades de accesibilidad | Microsoft Docs
-description: Información de referencia acerca de propiedades como TabIndex y Tooltip
+title: Propiedades de accesibilidad para las aplicaciones de lienzo | Microsoft Docs
+description: Información de referencia sobre las propiedades como TabIndex y Tooltip
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5fa8b6fecdf690114cbf6a0945f2dfec66b067c3
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560424"
 ---
-# <a name="accessibility-properties-in-powerapps"></a>Propiedades de accesibilidad en PowerApps
+# <a name="accessibility-properties-for-canvas-apps"></a>Propiedades de accesibilidad para las aplicaciones de lienzo
+
 Configuración de propiedades que contribuyen a formas alternativas de interacción con los controles adecuadas para los usuarios con discapacidades.
 
-### <a name="properties"></a>Propiedades
+## <a name="properties"></a>Propiedades
+
 **AccessibleLabel**: etiqueta para lectores de pantalla. Un valor vacío para los controles Imagen, Icono y Forma hará que el lector de pantalla no los vea y los trate como adornos.
+
+**Live** : cómo los lectores de pantalla deben anunciar los cambios al contenido. Disponible solo en el **[etiqueta](control-text-box.md)** control.
+
+* Cuando se establece en **desactivar**, el lector de pantalla no anuncia los cambios.
+* Cuando se establece en **educados**, el lector de pantalla finalice antes de anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando en términos.
+* Cuando se establece en **Assertive**, interrumpe el lector de pantalla para anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando.
+
+Obtenga información sobre cómo [anunciar cambios dinámicos con las regiones activas](../accessible-apps-live-regions.md).
 
 **TabIndex**: orden de navegación del teclado en relación con otros controles.
 

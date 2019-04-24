@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553593"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 Instale una puerta de enlace de datos local para transferir datos de manera rápida y segura entre una aplicación de lienzo integrada en PowerApps y un origen de datos que no esté en la nube, como una base de datos local de SQL Server o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
@@ -54,9 +54,9 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 
 2. Agregue un usuario a una puerta de enlace haciendo clic o pulsando en **Usuarios**, especificando un usuario o grupo y, finalmente, especificando un nivel de permiso:
 
-   * **Puede usar**: usuarios que pueden crear conexiones en la puerta de enlace para las aplicaciones y los flujos, pero no pueden compartir la puerta de enlace. Use este permiso para los usuarios que ejecutan aplicaciones pero no las comparten.
-   * **Puede usar + compartir**: usuarios que pueden crear una conexión en la puerta de enlace para las aplicaciones y los flujos, y compartir automáticamente la puerta de enlace cuando se comparte una aplicación. Use este permiso con usuarios que tienen que compartir aplicaciones con otros usuarios o con la organización.
-   * **Administración**: administradores que tienen control total sobre la puerta de enlace, lo que incluye agregar usuarios, establecer permisos, crear conexiones a todos los orígenes de datos disponibles y eliminar la puerta de enlace.
+   * **Puede usar**: Usuarios pueden crear conexiones en la puerta de enlace para las aplicaciones y flujos, pero no se pueden compartir la puerta de enlace. Use este permiso para los usuarios que ejecutan aplicaciones pero no las comparten.
+   * **Puede usar + compartir**: Usuarios pueden crear una conexión de la puerta de enlace para las aplicaciones y flujos y compartir automáticamente la puerta de enlace al compartir una aplicación. Use este permiso con usuarios que tienen que compartir aplicaciones con otros usuarios o con la organización.
+   * **Administrador**: Administradores que tienen control total de la puerta de enlace, incluida la adición de usuarios, establecer permisos, crear conexiones a todos los orígenes de datos disponibles y eliminar la puerta de enlace.
 
 Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, seleccione los orígenes de datos a los que puede conectarse el usuario mediante la puerta de enlace.
 

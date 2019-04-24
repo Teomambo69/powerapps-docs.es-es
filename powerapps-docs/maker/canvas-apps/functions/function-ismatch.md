@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7141d3b9a2ba6bf18bffe1756d0d7de048606cad
-ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "57798384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563434"
 ---
 # <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>Funciones IsMatch, Match y MatchAll en PowerApps
 Comprueba si una coincidencia o extrae las partes de una cadena de texto según un patrón.

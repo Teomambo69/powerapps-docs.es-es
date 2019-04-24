@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 97f9324230e1d935cb056eada294e11d8bfb4d73
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61535837"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
 
@@ -31,8 +31,6 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 **[Datos adjuntos](controls/control-attachments.md)**: cargue y descargue archivos desde el dispositivo local a un origen de datos.
 
 **[Audio](controls/control-audio-video.md)**: reproduzca un clip de audio o la parte de audio de un clip de vídeo.
-
-**[Escáner de código de barras (experimental)](controls/control-barcodescanner.md)**  : examina los códigos en un explorador web (heredado o en desuso).
 
 **[Escáner](controls/control-new-barcode-scanner.md)**  : analiza los códigos de barras, los códigos QR y códigos de la matriz de datos en un dispositivo Android o iOS.
 

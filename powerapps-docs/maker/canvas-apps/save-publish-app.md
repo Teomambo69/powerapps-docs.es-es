@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536733"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -60,5 +60,6 @@ La versión **Activa** está publicada para todos los usuarios con quien se comp
 Para publicar la versión más reciente, pulse o haga clic en **Publicar esta versión** y pulse o haga clic en **Publicar esta versión** en el cuadro de diálogo **Publicar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
+* Busque y ejecute la aplicación un [explorador](../../user/run-app-browser.md) o en un [teléfono](../../user/run-app-client.md).
 * [Cambie el nombre de una aplicación](set-name-tile.md) desde powerapps.com.
 * [Restaure una aplicación](restore-an-app.md) si tiene varias versiones de una aplicación.

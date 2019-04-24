@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d5765c1e425a3196b5e560bb621f391d36f6580c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42841602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544623"
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.

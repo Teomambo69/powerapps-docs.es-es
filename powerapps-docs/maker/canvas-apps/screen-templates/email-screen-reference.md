@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8f77fe1194ace2f8cb5abeb3f9657cc76aab263a
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538823"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Información de referencia sobre la plantilla de filtro de correo electrónico para las aplicaciones de lienzo
 

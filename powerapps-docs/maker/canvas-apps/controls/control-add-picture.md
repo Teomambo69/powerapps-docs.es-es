@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544669"
 ---
 # <a name="add-picture-control-in-powerapps"></a>Control Agregar imagen en PowerApps
 Toma una fotografía o carga imágenes desde el dispositivo local.
@@ -63,7 +63,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
 
 **[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.
 
 **[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
