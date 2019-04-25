@@ -1,0 +1,120 @@
+- name: Trabajar con datos mediante código
+  href: ../work-with-data-cds.md
+- name: Usar el servicio de organización
+  href: overview.md
+- name: Introducción
+  items:
+    - name: 'Inicio rápido: Creación de una aplicación de consola'
+      href: quick-start-org-service-console-app.md
+    - name: Programación enlazada en tiempo de ejecución y en tiempo de compilación
+      href: early-bound-programming.md
+    - name: Interfaz de IOrganizationService
+      href: iorganizationservice-interface.md
+    - name: OrganizationServiceContext
+      href: organizationservicecontext.md
+    - name: Creación de una aplicación cliente
+      href: create-client-app.md
+      items:
+        - name: Suscripción a las actualizaciones del ensamblado de SDK con NuGet
+          href: subscribe-sdk-assembly-updates-using-nuget.md
+        - name: Visual Studio y .NET Framework
+          href: visual-studio-dot-net-framework.md
+        - name: Servicio de detección
+          href: discovery-service.md
+        - name: Uso de las herramientas XRM
+          href: ../xrm-tooling/build-windows-client-applications-xrm-tools.md
+- name: Operaciones de entidad
+  href: entity-operations.md
+  items:
+    - name: Consulta de los datos
+      href: entity-operations-query-data.md
+      items:
+        - name: Creación de consultas con QueryExpression
+          href: build-queries-with-queryexpression.md
+          items:
+            - name: Uso de la clase QueryExpression
+              href: use-queryexpression-class.md
+            - name: Uso de la clase ConditionExpression
+              href: use-conditionexpression-class.md
+            - name: Uso de la clase FilterExpression
+              href: use-filterexpression-class.md
+            - name: Uso de la clase ColumnSet
+              href: use-the-columnset-class.md
+            - name: Paginación de grandes conjuntos de resultados con QueryExpression
+              href: page-large-result-sets-with-queryexpression.md
+            - name: Uso de una combinación externa izquierda en QueryExpression para consultar registros "not in"
+              href: use-left-outer-join-queryexpression-query-records-not-in.md
+            - name: Uso de la clase QueryByAttribute
+              href: use-querybyattribute-class.md
+            - name: Paginación de grandes conjuntos de resultados con FetchXML
+              href: page-large-result-sets-with-fetchxml.md
+    - name: Creación de entidades
+      href: entity-operations-create.md
+    - name: Recuperación de una entidad
+      href: entity-operations-retrieve.md
+    - name: Actualización y eliminación de entidades
+      href: entity-operations-update-delete.md
+    - name: Asociación y desasociación de entidades
+      href: entity-operations-associate-disassociate.md
+- name: Uso de mensajes
+  href: use-messages.md
+- name: Operaciones especiales
+  items:
+    - name: Uso de ExecuteAsync
+      href: use-executeAsync.md
+    - name: Uso de ExecuteTransaction
+      href: use-executetransaction.md
+    - name: Ejecución de varias solicitudes
+      href: execute-multiple-requests.md
+- name: Uso de OrganizationServiceContext
+  items:
+    - name: Creación de consultas con LINQ (Language Integrated Query .NET)
+      href: build-queries-with-linq-net-language-integrated-query.md
+    - name: Ejemplos de consultas LINQ
+      href: linq-query-examples.md
+    - name: Ordenación de resultados mediante atributos de entidad con LINQ
+      href: order-results-entity-attributes-linq.md
+    - name: Paginación de grandes conjuntos de resultados con LINQ
+      href: page-large-result-sets-linq.md
+    - name: Uso de la clase de entidad enlazada en tiempo de ejecución con una consulta LINQ
+      href: use-late-bound-entity-class-linq-query.md
+    - name: Uso de LINQ para construir una consulta
+      href: use-linq-construct-query.md
+- name: Detectar datos duplicados
+  href: detect-duplicate-data.md
+- name: Generación de clases para la programación enlazada en tiempo de compilación
+  href: generate-early-bound-classes.md
+  items:
+    - name: Creación de extensiones para la herramienta de generación de código
+      href: extend-code-generation-tool.md
+- name: Trabajo con metadatos
+  href: work-with-metadata.md
+  items:
+    - name: Creación de una entidad personalizada
+      href: create-custom-entity.md
+    - name: Trabajo con metadatos de atributo
+      href: metadata-attributemetadata.md
+    - name: 'Inserción, actualización, eliminación y ordenación de opciones de conjuntos de opciones globales'
+      href: metadata-global-option-set-options.md
+    - name: Personalización de conjuntos de opciones
+      href: metadata-option-sets.md
+    - name: Creación y recuperación de relaciones de entidades
+      href: metadata-relationshipmetadata.md
+    - name: Recuperación y detección de cambios en metadatos
+      href: metadata-retrieve-detect-changes.md
+    - name: 'Recuperación, actualización y eliminación de entidades'
+      href: metadata-retrieve-update-delete-entities.md
+    - name: Creación de una entidad para enviar actividades de correo electrónico
+      href: create-update-entity-emailed.md
+- name: Importar datos
+  href: ../import-data.md
+- name: Muestreo de los datos
+  href: ../sample-data.md
+- name: Procedimientos de codificación
+  items:
+    - name: Manipulación de excepciones en su código
+      href: handle-exceptions-code.md
+    - name: Códigos de error del servicio web
+      href: web-service-error-codes.md
+- name: Ejemplos
+  href: samples/toc.yml

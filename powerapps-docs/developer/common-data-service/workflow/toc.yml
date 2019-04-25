@@ -1,0 +1,14 @@
+- name: Aplicar lógica de negocios con código
+  href: ../apply-business-logic-with-code.md
+- name: Extensiones de flujo de trabajo
+  href: workflow-extensions.md
+- name: Depuración de actividades de flujo de trabajo
+  href: debug-workflow-activites.md
+- name: 'Tutorial: Creación de una extensión de flujo de trabajo'
+  href: tutorial-create-workflow-extension.md
+- name: 'Ejemplo: Creación de una actividad de flujo de trabajo personalizada'
+  href: sample-create-custom-workflow-activity.md
+- name: 'Ejemplo: Actualización del siguiente cumpleaños con una actividad de flujo de trabajo personalizada'
+  href: sample-update-next-birthday-using-custom-workflow-activity.md
+- name: 'Ejemplo: Cálculo de una evaluación de crédito con una actividad de flujo de trabajo personalizada'
+  href: sample-calculate-credit-score-custom-workflow-activity.md

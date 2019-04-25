@@ -1,0 +1,11 @@
+- name: Extender el cliente de Outlook
+  href: extend-dynamics-365-outlook.md
+  items:
+    - name: Plantillas y filtros sin conexión y de Outlook
+      href: offline-outlook-filters-templates.md
+    - name: 'Ejemplo: Creación y recuperación de filtros de Outlook'
+      href: sample-create-retrieve-outlook-filters.md
+    - name: "Ejemplo: Uso de métodos de Dynamics\_365 para Outlook"
+      href: sample-outlook-methods.md
+    - name: Uso sin conexión de servicios web
+      href: offline-use-services.md
