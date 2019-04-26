@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562724"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Crear diseños de capacidad de respuesta en las aplicaciones de lienzo
 
@@ -50,7 +50,7 @@ Para realizar el diseño de la aplicación responder a cambios en las dimensione
 
 Estas fórmulas que hacen referencia a la **ancho**, **alto**, **DesignWidth**, y **DesignHeight** propiedades de la aplicación. La aplicación **ancho** y **alto** propiedades corresponden a las dimensiones de la ventana del explorador o dispositivo en el que se ejecuta la aplicación. Si el usuario cambia el tamaño de la ventana del explorador (o gira el dispositivo si ha desactivado **bloquear orientación**), los valores de estas propiedades cambian dinámicamente. Las fórmulas en la pantalla **ancho** y **alto** se vuelven a evaluar las propiedades cuando cambian estos valores.
 
-El **DesignWidth** y **DesignHeight** propiedades proceden de las dimensiones que se especifican en el **tamaño y orientación de pantalla** panel de **configuración de la aplicación** . Por ejemplo, si selecciona el diseño de teléfono en orientación vertical, **DesignWidth** es 640, y **DesignHeight** es 1136.
+El **DesignWidth** y **DesignHeight** propiedades proceden de las dimensiones que se especifican en el **tamaño y orientación de pantalla** panel de **configuración de la aplicación**. Por ejemplo, si selecciona el diseño de teléfono en orientación vertical, **DesignWidth** es 640, y **DesignHeight** es 1136.
 
 Ya que se usan en las fórmulas de la pantalla **ancho** y **alto** propiedades, se puede considerar **DesignWidth** y **DesignHeight** como las dimensiones mínimas para el que podrá diseñar la aplicación. Si el área real disponible para la aplicación es incluso más pequeño que estos mínimos las dimensiones, las fórmulas de la pantalla **ancho** y **alto** propiedades garantizan que sus valores no se convierten en un tamaño inferior a cantidades mínimas. En ese caso, el usuario debe desplazarse para ver todo el contenido de la pantalla.
 
@@ -113,7 +113,7 @@ Para crear ese efecto, deberá actualizar el **alto** propiedad de la **superior
 
 Con estas fórmulas en su lugar, debe cambiar solamente el **alto** propiedad de la **superior** control para expresar una fracción del alto de la pantalla diferentes. El **inferior** control se desplaza y cambia de tamaño para tener en cuenta el cambio automáticamente.
 
-Puede usar estos patrones fórmulas para expresar las relaciones de diseño comunes entre un control denominado **C**y su elemento primario o un control relacionado, denominado **d.**.
+Puede usar estos patrones fórmulas para expresar las relaciones de diseño comunes entre un control denominado **C**y su elemento primario o un control relacionado, denominado **d**.
 
 | Relación entre C y su elemento primario | Propiedad | Fórmula | Ilustración |
 |--|--|--|--|
@@ -148,7 +148,7 @@ Medida que genera las pantallas que contienen más controles, se convertirá en 
 
 ### <a name="galleries"></a>Galerías
 
-Si usa una galería en la aplicación, deberá disponer de los controles dentro de la plantilla de la galería. Puede colocar estos controles para escribir las fórmulas que usan la **primario** operador, que hará referencia a la plantilla de la galería. En las fórmulas en los controles dentro de una plantilla de la galería, use el **Parent.TemplateHeight** y **Parent.TemplateWidth** propiedades; no use **Parent.Width** y  **Parent.Height**, que hacen referencia el tamaño total de la galería.
+Si usa una galería en la aplicación, deberá disponer de los controles dentro de la plantilla de la galería. Puede colocar estos controles para escribir las fórmulas que usan la **primario** operador, que hará referencia a la plantilla de la galería. En las fórmulas en los controles dentro de una plantilla de la galería, use el **Parent.TemplateHeight** y **Parent.TemplateWidth** propiedades; no use **Parent.Width** y **Parent.Height**, que hacen referencia el tamaño total de la galería.
 
 ![Galería vertical que muestra la plantilla de ancho y alto](media/create-responsive-layout/gallery-vertical.png)
 
@@ -239,7 +239,7 @@ Esta fórmula se evalúa como **true** cuando el tamaño es de tamaño medio o g
 
 Si desea un control para ocupar una fracción del ancho de pantalla en función del tamaño de pantalla diferentes, establezca el control **ancho** propiedad en esta fórmula:
 
-```
+```powerapps-dot
 Parent.Width *  
     Switch(Parent.Size,  
         ScreenSize.Small, 0.5,  

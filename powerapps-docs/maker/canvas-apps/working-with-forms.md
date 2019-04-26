@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318244"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Comprender los formularios de aplicaciones de lienzo en Microsoft PowerApps
 
@@ -120,7 +120,7 @@ Esta pantalla incluye las siguientes fórmulas clave:
 | Controles **[Tarjeta](controls/control-card.md)** |En un control **[Editar formulario](controls/control-form-detail.md)**, proporciona controles para que el usuario pueda editar uno o varios campos de un registro. |Establezca la propiedad **[DataField](controls/control-card.md)** en el nombre de un campo entre comillas dobles (por ejemplo, **"Nombre"**). |
 | **ImageCancel1** |Cuando el usuario selecciona este control, se descartan los cambios en curso y se abre la pantalla **Detalles**. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**ResetForm( EditForm1 ); Back()** |
 | **ImageAccept1** |Cuando el usuario selecciona este control, los cambios se envían al origen de datos. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**SubmitForm( EditForm1 )** |
-| **EditForm1** |Si se aceptan los cambios, se vuelve a la pantalla anterior. |Establezca la propiedad **[OnSuccess](controls/control-form-detail.md)** en esta fórmula:<br>**Atrás()** |
+| **EditForm1** |Si se aceptan los cambios, se vuelve a la pantalla anterior. |Establezca la propiedad **[OnSuccess](controls/control-form-detail.md)** en esta fórmula:<br>**Back()** |
 | **EditForm1** |Si no se aceptan los cambios, el usuario continúa en la pantalla actual para poder corregir cualquier problema e intente volver a enviar. |Deje en blanco la propiedad **[OnFailure](controls/control-form-detail.md)**. |
 | **LblFormError1** |Si no se aceptan los cambios, se muestra un mensaje de error. |Establezca la propiedad **[Text](controls/properties-core.md)** en este valor:<br>**EditForm1.Error** |
 
@@ -334,18 +334,22 @@ En la aplicación que PowerApps generó a partir de los datos, no analizamos dos
 
 ![Controles de ordenación y búsqueda en la pantalla de exploración](./media/working-with-forms/afd-browse-search-sort.png)
 
-Cuando el usuario selecciona el botón de ordenación, se invierte el criterio de ordenación de la galería. Para crear este comportamiento, usamos una *variable de contexto* para hacer seguimiento de la dirección en que se ordena la galería. Cuando el usuario selecciona el botón, se actualiza la variable y se invierte la dirección. La propiedad **[OnSelect](controls/properties-core.md)** del botón de ordenación se establece en esta fórmula: **UpdateContext( {SortDescending1: !SortDescending1} )**
+Cuando el usuario selecciona el botón de ordenación, se invierte el criterio de ordenación de la galería. Para crear este comportamiento, usamos una *variable de contexto* para hacer seguimiento de la dirección en que se ordena la galería. Cuando el usuario selecciona el botón, se actualiza la variable y se invierte la dirección. El **[Alseleccionar](controls/properties-core.md)** propiedad del botón de ordenación se establece en esta fórmula: **UpdateContext( {SortDescending1: !SortDescending1} )**
 
 La función **[UpdateContext](functions/function-updatecontext.md)** crea la variable de contexto **SortDescending1** si todavía no existe. La función leerá el valor de la variable y lo establecerá en la lógica opuesta con el operador **!** . Si el valor es *true*, se convierte en *false*. Si el valor es *false*, se convierte en *true*.
 
 La fórmula de la propiedad **[Items](controls/properties-core.md)** del control **[Galería](controls/control-gallery.md)** usa esta variable de contexto junto con el texto del control **TextSearchBox1**:
 
-    Gallery1.Items = Sort( If( IsBlank(TextSearchBox1.Text),
-                               Assets,
-                               Filter( Assets,
-                                       TextSearchBox1.Text in Text(ApproverEmail) ) ),
-                            ApproverEmail,
-                            If(SortDescending1, Descending, Ascending) )
+```powerapps-dot
+Sort( 
+    If( IsBlank(TextSearchBox1.Text),
+        Assets,
+        Filter( Assets, TextSearchBox1.Text in Text(ApproverEmail) ) 
+    ),
+    ApproverEmail,
+    If(SortDescending1, Descending, Ascending) 
+)
+```
 
 Desglosemos esto:
 

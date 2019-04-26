@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321037"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Funciones Filter, Search y LookUp en PowerApps
 Busca uno o varios [registros](../working-with-tables.md#records) en una [tabla](../working-with-tables.md).
@@ -78,7 +78,7 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Busca un registro cuyo valor de **Flavor** sea igual a "Chocolate". En este caso, devuelve uno.  Para el primer registro que se encuentra, devuelve el valor de **Cantidad** de ese registro. |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Busca un registro cuyo valor de **Quantity** sea mayor que 100. En este caso, devuelve varios.  Para el primer registro que se encuentra, que es el **Flavor** "Vanilla", devuelve la suma de las columnas **Quantity** y **OnOrder**. |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Busca un registro cuyo valor de **Flavor** sea igual a "Pistachio". En este caso no devuelve ninguno.  Como no se encontró ninguno, **Búsqueda** devuelve *blank*. |*blank* |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |Busca un registro cuyo valor de **Flavor** sea igual a "Vanilla". En este caso, devuelve uno.  Como no se proporcionó ninguna fórmula de reducción, se devuelve todo el registro. |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |Busca un registro cuyo valor de **Flavor** sea igual a "Vanilla". En este caso, devuelve uno.  Como no se proporcionó ninguna fórmula de reducción, se devuelve todo el registro. |{Sabor: "Vanilla", cantidad: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>Experiencia de búsqueda del usuario
 En muchas aplicaciones, puede escribir uno o varios caracteres en un cuadro de búsqueda para filtrar una lista de registros en un conjunto de datos grande. A medida que escribe, la lista muestra solo los registros que coinciden con los criterios de búsqueda.
@@ -89,7 +89,7 @@ Los ejemplos que aparecen en el resto de este tema muestran los resultados de bu
 
 Para crear este origen de datos como una colección, cree un control **[Botón](../controls/control-button.md)** y establezca la propiedad **OnSelect** en esta fórmula:
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (clientes, tabla ({nombre: "Fred Garcia", empresa: "Northwind Traders"}, {nombre: "Cole Miller", empresa: "Contoso"}, {nombre: "Glenda Johnson", empresa: "Contoso"}, {nombre: "Mike Collins", empresa: "Adventure Works"}, {nombre: "Colleen Jones", empresa: "Adventure Works" } ) )**
 
 Como en este ejemplo, puede mostrar una lista de registros en un [**control Galería**](../controls/control-gallery.md) en la parte inferior de una pantalla. Cerca de la parte superior de la pantalla, puede agregar un control [**Entrada de texto**](../controls/control-text-input.md) denominado **SearchInput**, de modo que los usuarios puedan especificar los registros que más les interesen.
 

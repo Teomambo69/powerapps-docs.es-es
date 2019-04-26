@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321042"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.
@@ -41,13 +41,13 @@ Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.m
 
 * *DateTime*: requerido. Valor de fecha y hora con el que operar.
 * *Suma*: requerido. Número, en *unidades*, para agregar a *DateTime*.
-* *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **Segundos**, **Minutos**, **Horas**, **Días**, **Meses**, **Trimestres** o **Años**.  Si no se especifica, se usará **Días**.
+* *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **segundos**, **minutos**, **horas**, **días**, **meses**,  **Trimestres**, o **años**.  Si no se especifica, se usará **Días**.
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime*: requerido. Valor de fecha y hora de inicio.
 * *EndDateTime*: requerido. Valor de fecha y hora de finalización.
-* *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **Segundos**, **Minutos**, **Horas**, **Días**, **Meses**, **Trimestres** o **Años**.  Si no se especifica, se usará **Días**.
+* *Unidades*: opcional. El tipo de *unidades* para agregar: **Milisegundos**, **segundos**, **minutos**, **horas**, **días**, **meses**,  **Trimestres**, o **años**.  Si no se especifica, se usará **Días**.
 
 **TimeZoneOffset**( [ *DateTime* ] )
 

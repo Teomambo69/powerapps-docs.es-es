@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318344"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>Mostrar texto, fechas y horas en PowerApps
 En PowerApps, agregue fechas y horas a una aplicación de lienzo y asígneles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
@@ -216,7 +216,7 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
 4. Establezca la propiedad **[Items](controls/properties-core.md)** de **Day** en esta fórmula:
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
 
-5. Agregue un control **[Etiqueta](controls/control-text-box.md)** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
+5. Agregue un control **[Label](controls/control-text-box.md)** y establezca su propiedad **[Text](controls/properties-core.md)** en esta fórmula:
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
     La fecha **miércoles, 1 de enero de 2014** aparece de forma predeterminada. Seleccione valores diferentes en los controles **[Lista desplegable](controls/control-drop-down.md)** para cambiar la fecha en el control **[Etiqueta](controls/control-text-box.md)**.
