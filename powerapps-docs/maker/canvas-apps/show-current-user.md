@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 12a6cd6f3df6c83f39b08608e1057f5e31e7d46e
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63319188"
 ---
 # <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Mostrar información sobre un usuario de PowerApps en una aplicación de lienzo
 
