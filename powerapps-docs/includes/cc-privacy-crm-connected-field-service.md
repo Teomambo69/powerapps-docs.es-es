@@ -1,33 +1,41 @@
-Al instalar [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)], cuando se proporciona la información de suscripción de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], se implementarán los recursos de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] necesarios (listados a continuación) y la instancia de [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] enviará datos (como comandos y registros) a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para habilitar los escenarios habilitados para IoT que registran dispositivos y, después, envían y reciben comandos de dichos dispositivos registrados. Un administrador puede desinstalar Connected Field Service para quitar la funcionalidad y después navegar al portal de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para administrar cualquier servicio de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] relacionado que ya no se necesite.  
+---
+ms.openlocfilehash: ce9db35844f46e9779055ec30dcba0f9459c3a16
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61583491"
+---
+Al instalar [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)], cuando proporcione la información de su suscripción [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], se implementarán los recursos [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] necesarios (enumerados a continuación) y su instancia [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] enviará datos (como comandos y registros) a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para habilitar escenarios compatibles con IoT que registren dispositivos y luego envíen y reciban comandos a los dispositivos registrados. Un administrador puede desinstalar el servicio de campo conectado para eliminar la funcionalidad y después ir a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Portal para administrar cualquier servicio relacionado [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] que ya no sea necesario.  
   
- En las próximas secciones se detallan los componentes y servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] que tienen que ver con la funcionalidad Connected Field Service.  
+ En las siguientes secciones se detallan los componentes y servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] que intervienen con la funcionalidad de servicio de campo conectado.  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
  [Cola de Service Bus](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-get-started-with-queues/)  
   
- Proporciona una cola para los mensajes entrantes y salientes (comandos) que fluyen entre [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Cuando se envía una alerta de IoT a [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], o se envía un comando de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] a IoT Hub, se pondrá en cola aquí.  
+ Esto proporciona una cola para los mensajes (comandos) entrantes y salientes que fluyen entre [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Cuando se envía una alerta de IoT a [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] o se envía un comando desde [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] al centro de IoT, se pondrá en cola aquí.  
   
  [Logic Apps](https://azure.microsoft.com/services/logic-apps/)  
   
- Proporciona un servicio de orquestación que usa un conector de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y un conector de cola. Los ​​​conectores de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] se usan para generar entidades específicas de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y los conectores de cola se usan para hacer el sondeo de la cola.  
+ Esto proporciona un servicio de orquestación que utiliza un conector [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y un conector de cola. Los conectores [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] se utilizan para construir entidades específicas para [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] y los conectores de cola se utilizan para sondear la cola.  
   
- [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)  
+ [Stream analytics](https://azure.microsoft.com/services/stream-analytics/)  
   
- Proporciona un motor de procesamiento de eventos completamente administrado en tiempo real que ayuda a desbloquear un conocimiento más profundo de los datos. Stream Analytics facilita la configuración de cálculos analíticos en tiempo real de las transmisiones de datos de dispositivos, sensores, sitios web, medios sociales, aplicaciones, sistemas de la infraestructura y otros. Funciona como un embudo para enviar alertas selectivas de IoT a [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
+ Esto proporciona un motor de procesamiento de eventos en tiempo real totalmente administrado que ayuda a obtener información detallada de los datos. Stream Analytics facilita la configuración de cálculos analíticos en tiempo real sobre la transmisión de datos desde dispositivos, sensores, sitios web, redes sociales, aplicaciones, sistemas de infraestructura y mucho más. Funciona como un embudo para enviar alertas de IoT selectivas a [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
  [IoT Hub](https://azure.microsoft.com/services/iot-hub/)  
   
- Connected Field Services usa el IoT Hub para administrar el estado de los dispositivos y activos registrados. Además, IoT Hub envía los comandos y las notificaciones a los dispositivos conectados, y hace el seguimiento de la entrega de los mensajes con acuse de recibo. Los mensajes de los dispositivo se envían de forma duradera para adaptarse a los dispositivos conectados ​intermitentemente.  
+ Los servicios de campo conectados utilizan IoT Hub para administrar el estado de los dispositivos y recursos registrados. Además, IoT Hub envía comandos y notificaciones a los dispositivos conectados y realice un seguimiento de la entrega de los mensajes con acuses de recibo. Los mensajes de dispositivo se envían de una forma duradera para hospedar dispositivos conectados intermitentemente.  
   
  **Simulador**  
   
- Se trata de una aplicación web de prueba para emular el dispositivo que envía o recibe comandos del IoT Hub.  
+ Esta es una aplicación web de prueba para emular el dispositivo que envía o recibe comandos desde el centro de IoT.  
   
  [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)  
   
- Connected Field Service usa SQL [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para almacenar mensajes de latido de dispositivos para que PowerBI los use posteriormente para mostrar el estado de los dispositivos en [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
+ Servicio de campo conectado que utiliza SQL de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para almacenar los mensajes de latido de dispositivo para su uso posterior en Power BI para mostrar el estado de los dispositivos de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
  [Azure Blob Storage](https://azure.microsoft.com/services/storage/)  
   
- Las consultas que utilizará Stream Analytics se almacenan en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage.
+ Las consultas que Stream Analytics va a utilizar se almacenan en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage.
