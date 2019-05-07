@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544600"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Control de Web escáner de código de barras (experimental) en PowerApps
 
@@ -66,7 +67,7 @@ El control muestra la que fuente de la cámara en la aplicación para que los us
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 

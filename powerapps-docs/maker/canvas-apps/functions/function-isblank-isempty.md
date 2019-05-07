@@ -20,6 +20,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61563921"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Funciones Blank, Coalesce, IsBlank e IsEmpty en PowerApps
 Comprueba si un valor está en blanco o una [tabla](../working-with-tables.md) no contiene [registros](../working-with-tables.md#records), y proporciona una manera de crear valores *blank*.
@@ -48,7 +49,7 @@ La función **IsBlank** comprueba un valor *blank*. Los valores *en blanco* se e
 * La parte *else* de una función **[If](function-if.md)** no se especificó y todas las condiciones fueron **false**.
 * Usó la función **[Update](function-update-updateif.md)** pero no especificó un valor para todas las columnas. Como resultado, no se colocó ningún valor en las columnas que no especificó.
 
-La función **Coalesce** evalúa sus argumentos en orden y devuelve el primer valor que no sea *blank*.  Utilice esta función para reemplazar un valor *blank* por un valor diferente, sin cambiar los valores que no son *blank*.  Si todos los argumentos son *blank*, la función devuelve *blank*.  Todos los argumentos de **Coalesce** debe ser del mismo tipo; por ejemplo, no puede combinar números con cadenas de texto.  **Coalesce( value1, value2 )** es el equivalente más conciso de **If( Not( IsBlank( value1 ) ), value1, value2 )** y no requiere que **value1** se evalúe dos veces.  
+La función **Coalesce** evalúa sus argumentos en orden y devuelve el primer valor que no sea *blank*.  Utilice esta función para reemplazar un valor *blank* por un valor diferente, sin cambiar los valores que no son *blank*.  Si todos los argumentos son *blank*, la función devuelve *blank*.  Todos los argumentos de **Coalesce** debe ser del mismo tipo; por ejemplo, no puede combinar números con cadenas de texto.  **Coalesce( value1; value2 )** es el equivalente más conciso de **If( Not( IsBlank( value1 ) ); value1; value2 )** y no requiere que **value1** se evalúe dos veces.  
 
 La función **IsEmpty** comprueba si una tabla contiene registros. Es equivalente a usar la función **[CountRows](function-table-counts.md)** y la comprobación de cero. Puede usar **IsEmpty** para comprobar errores de origen de datos en combinación con la función **[Errors](function-errors.md)**.
 
@@ -57,7 +58,7 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 ## <a name="syntax"></a>Sintaxis
 **Blank**()
 
-**Coalesce**( *Valor1* [, *Valor2*, ... ] )
+**Coalesce**( *Valor1* [; *Valor2*; ... ] )
 
 * *Valores*: requerido. Valores que se van a comprobar.  Cada valor se evalúa en orden hasta que se encuentra un valor que no es *blank*.  Los valores situados después del primer valor no *blank* no se evalúan.  
 
@@ -77,7 +78,7 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **ClearCollect (ciudades, {nombre: "Seattle", tiempo: "Lluvioso"})**
+    **ClearCollect (ciudades; {nombre: "Seattle"; tiempo: "Lluvioso"})**
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 4. En el menú **Archivo**, haga clic o pulse en **Colecciones**.
 
@@ -92,7 +93,7 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
     La etiqueta muestra **false** porque el campo **Weather** contiene un valor ("Rainy").
 7. Agregue un segundo botón y establezca su propiedad **OnSelect** en esta fórmula:
 
-    **Revisión (ciudades, primero (ciudades), {meteorológico: Blank() } )**
+    **Revisión (ciudades; primero (ciudades); {meteorológico: Blank() } )**
 8. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     El campo **Weather** del primer registro de **Cities** se sustituye por un valor *blank*, de forma que se reemplaza el valor inicial "Rainy" que estaba ahí anteriormente.
@@ -105,14 +106,14 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Coalesce( Blank(), 1 )** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. Como el primer argumento es *blank*, la evaluación continúa con el argumento siguiente hasta que se encuentra un valor no *blank*. |**1** |
-| **Coalesce( Blank(), Blank(), Blank(), Blank(), 2, 3 )** |**Coalesce** comienza al principio de la lista de argumentos y evalúa cada uno de ellos por orden hasta que encuentra un valor que no sea *blank*.  En este caso, los cuatro primeros argumentos devuelven *blank*, por lo que la evaluación continúa con el quinto argumento. El quinto argumento no es *blank*, por lo que la evaluación se detiene ahí. Se devuelve el valor del quinto argumento y no se evalúa el sexto argumento. |**2** |
+| **Coalesce( Blank(); 1 )** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. Como el primer argumento es *blank*, la evaluación continúa con el argumento siguiente hasta que se encuentra un valor no *blank*. |**1** |
+| **Coalesce( Blank(); Blank(); Blank(); Blank(); 2; 3 )** |**Coalesce** comienza al principio de la lista de argumentos y evalúa cada uno de ellos por orden hasta que encuentra un valor que no sea *blank*.  En este caso, los cuatro primeros argumentos devuelven *blank*, por lo que la evaluación continúa con el quinto argumento. El quinto argumento no es *blank*, por lo que la evaluación se detiene ahí. Se devuelve el valor del quinto argumento y no se evalúa el sexto argumento. |**2** |
 
 ### <a name="isblank"></a>IsBlank
 1. Cree una aplicación desde el principio, agregue un control de entrada de texto y llámelo **FirstName**.
 2. Agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
 
-    **If( IsBlank( FirstName.Text ), "First Name is a required field." )**
+    **If( IsBlank( FirstName.Text ); "First Name is a required field." )**
 
     De forma predeterminada, la propiedad **[Text](../controls/properties-core.md)** de un control de entrada de texto se establece en **"Entrada de texto"**. Como la propiedad contiene un valor, no está en blanco, y la etiqueta no muestra ningún mensaje.
 3. Quite todos los caracteres del control de entrada de texto, espacios incluidos.
@@ -129,14 +130,14 @@ Otros ejemplos:
 | **IsBlank( "" )** |Una cadena que no contiene ningún carácter. |**true** |
 | **IsBlank( "Hello" )** |Una cadena que contiene uno o más caracteres. |**false** |
 | **IsBlank( *AnyCollection* )** |Como la [colección](../working-with-data-sources.md#collections) existe, no está en blanco, incluso si no contiene ningún registro. Para comprobar si existe una colección vacía, use **IsEmpty** en su lugar. |**false** |
-| **IsBlank( Mid( "Hello", 17, 2 ) )** |El carácter inicial de **[Mid](function-left-mid-right.md)** está más allá del final de la cadena.  El resultado es una cadena vacía. |**true** |
-| **IsBlank( If( false, false ) )** |Una función **[If](function-if.md)** sin *ElseResult*.  Como la condición es siempre **false**, esta función **[If](function-if.md)** siempre devuelve *blank*. |**true** |
+| **IsBlank( Mid( "Hello"; 17; 2 ) )** |El carácter inicial de **[Mid](function-left-mid-right.md)** está más allá del final de la cadena.  El resultado es una cadena vacía. |**true** |
+| **IsBlank( If( false; false ) )** |Una función **[If](function-if.md)** sin *ElseResult*.  Como la condición es siempre **false**, esta función **[If](function-if.md)** siempre devuelve *blank*. |**true** |
 
 ### <a name="isempty"></a>IsEmpty
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **Collect( IceCream, { Flavor: "Fresa", cantidad: 300 }, { Flavor: "Chocolate", cantidad: 100 } )**
+    **Collect( IceCream; { Flavor: "Fresa"; cantidad: 300 }; { Flavor: "Chocolate"; cantidad: 100 } )**
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     Se crea una colección denominada **IceCream** con estos datos:
@@ -159,7 +160,7 @@ También puede usar **IsEmpty** para comprobar si una tabla calculada está vac�
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |La tabla de una columna contiene tres registros y, por lo tanto, no está vacía. |**false** |
+| **IsEmpty( [&nbsp;1;&nbsp;2;&nbsp;3 ] )** |La tabla de una columna contiene tres registros y, por lo tanto, no está vacía. |**false** |
 | **IsEmpty( [&nbsp;] )** |La tabla de una columna no contiene registros y está vacía. |**true** |
-| **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** |La tabla de una columna no contiene valores que sean mayores que 5.  El resultado del filtro no contiene ningún registro y está vacío. |**true** |
+| **IsEmpty( Filter( [&nbsp;1;&nbsp;2;&nbsp;3&nbsp;]; Value > 5 ) )** |La tabla de una columna no contiene valores que sean mayores que 5.  El resultado del filtro no contiene ningún registro y está vacío. |**true** |
 

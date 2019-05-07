@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042741"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -73,7 +74,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 1. Establecer el **visibilidad** propiedad de la **Color**, **disponibilidad**, y **precio** tarjetas en esta fórmula (reemplazar, si es necesario, el número con la que anotó en el paso anterior):
 
-    **If(DataCardValue2.Value = true, true)**
+    **If(DataCardValue2.Value = true; true)**
 
 1. Mientras mantiene la tecla Alt presionada, seleccione el botón de alternancia **Detalles** varias veces (al hacer clic o pulsar en él).
 

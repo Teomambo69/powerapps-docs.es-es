@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559871"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="customize-a-card-in-a-canvas-app"></a>Personalizar una tarjeta en una aplicación de lienzo
 
@@ -37,7 +38,7 @@ Para obtener información general, consulte [Introducción a las tarjetas de dat
 
 ## <a name="customize-a-locked-card"></a>Personalizar una tarjeta bloqueada
 
-En este procedimiento, va a reemplazar un **[entrada de texto](controls/control-text-input.md)** controlar con un **[control deslizante] (controles, control-slider.md** control sin desbloquear la tarjeta.
+En este procedimiento, va a reemplazar un **[entrada de texto](controls/control-text-input.md)** controlar con un **[control deslizante] (controles; control-slider.md** control sin desbloquear la tarjeta.
 
 1. En la aplicación que ha generado y personalizado, seleccione **EditForm1** en el panel de navegación izquierdo de la barra y, a continuación, seleccione **editar campos** en el **propiedades** ficha del panel derecho.
 

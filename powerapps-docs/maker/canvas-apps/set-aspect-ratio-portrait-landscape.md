@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61536067"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Cambio del tamaño y la orientación de la pantalla de una aplicación de lienzo en PowerApps
 Personalice una aplicación de lienzo cambiando el tamaño y la orientación de la pantalla.
@@ -47,7 +48,7 @@ Creación de una aplicación o abra uno para su edición y, a continuación, sel
 
     Si desactiva esta opción, la aplicación se ajusta a la relación de aspecto del dispositivo en el que se está ejecutando y se ocupa de todo el espacio disponible. No se escala la aplicación y, como resultado, las pantallas pueden mostrar más información.
 
-    Cuando esta opción está desactivada, **Bloquear relación de aspecto** automáticamente está desactivada y deshabilitada. Además, el **ancho** se establece la propiedad de todas las pantallas en `Max(App.Width, App.DesignWidth)`y sus **alto** propiedad está establecida en `Max(App.Height, App.DesignHeight)` para que realizan el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, se pueden crear aplicaciones que responden a diferentes dispositivos y las dimensiones de la ventana. Más información: [Crear un diseño con capacidad de respuesta](create-responsive-layout.md)
+    Cuando esta opción está desactivada, **Bloquear relación de aspecto** automáticamente está desactivada y deshabilitada. Además, el **ancho** se establece la propiedad de todas las pantallas en `Max(App.Width; App.DesignWidth)`y sus **alto** propiedad está establecida en `Max(App.Height; App.DesignHeight)` para que realizan el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, se pueden crear aplicaciones que responden a diferentes dispositivos y las dimensiones de la ventana. Más información: [Crear un diseño con capacidad de respuesta](create-responsive-layout.md)
 
 1. En **Bloquear relación de aspecto**, especifique **Activar** o **Desactivar**.
 

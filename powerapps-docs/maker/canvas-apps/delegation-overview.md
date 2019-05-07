@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63318100"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: **[Filtro](functions/function-filter-lookup.md)**,  **[ordenación](functions/function-sort.md)**, y **[AddColumns](functions/function-table-shaping.md)** funciones por nombrar solo unos pocos. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -62,7 +63,7 @@ Las funciones **Filter** y **LookUp** se pueden usar con columnas de la tabla pa
 * **[StartsWith](functions/function-startswith.md)**, **[EndsWith](functions/function-startswith.md)**
 * Valores constantes que son iguales en todos los registros, como las propiedades del control y [las variables globales y de contexto](working-with-variables.md).
 
-También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **izquierda (lenguaje(), 2)**, **fecha (2019, 3, 31)**, y **Today()** no dependen de las columnas del registro y, por lo tanto, devuelven el mismo valor para todos los registros. Estos valores se pueden enviar al origen de datos como una constante y no bloquearán la delegación. 
+También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **izquierda (lenguaje(); 2)**, **fecha (2019, 3, 31)**, y **Today()** no dependen de las columnas del registro y, por lo tanto, devuelven el mismo valor para todos los registros. Estos valores se pueden enviar al origen de datos como una constante y no bloquearán la delegación. 
 
 La lista anterior no incluye estos elementos importantes:
 
@@ -93,10 +94,10 @@ Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)**
 
 Al igual que en este ejemplo, los creadores de usar a menudo **AddColumns** y **búsqueda** para combinar información de una tabla en otra, conocido comúnmente como una combinación en la jerga de base de datos:
 
-```powerapps-dot
-AddColumns( Products, 
-    "Supplier Name", 
-    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-comma
+AddColumns( Products; 
+    "Supplier Name"; 
+    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 

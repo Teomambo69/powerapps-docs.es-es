@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559704"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="char-function-in-powerapps"></a>Función Char en PowerApps
 
@@ -46,7 +47,7 @@ El **Char** función convierte un número en una cadena con el carácter ASCII c
 
 1. En una pantalla vacía en una aplicación de tableta, agregue un [ **galería** ](../controls/control-gallery.md) controlar con un **en blanco Horizontal** diseño y, a continuación, establezca estas propiedades:
 
-    - **elementos**: `[0,1,2,3,4,5,6,7]`
+    - **elementos**: `[0;1;2;3;4;5;6;7]`
     - **ancho**: 800
     - **alto**: 500
     - **TemplateSize**: 100
@@ -54,7 +55,7 @@ El **Char** función convierte un número en una cadena con el carácter ASCII c
 
 1. Dentro de esa galería, agregue un **galería** controlar con un **en blanco Vertical** diseño y, a continuación, establezca estas propiedades:
 
-    - **elementos**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **elementos**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
     - **ancho**: 100
     - **alto**: 500
     - **TemplateSize**: 30
@@ -79,7 +80,7 @@ Ha creado un gráfico de los primeros 128 caracteres ASCII. Caracteres que apare
 
 Para mostrar los caracteres ASCII extendidos, establezca el **elementos** propiedad de la Galería de segundo en esta fórmula, que agrega 128 a cada valor de carácter:
 
-`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
 
 ![Caracteres ASCII extendidos](media/function-char/chart-higher.png)
 

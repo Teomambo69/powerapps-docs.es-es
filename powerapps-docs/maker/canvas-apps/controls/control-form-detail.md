@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544313"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Controles Formulario de presentación y Formulario de edición en PowerApps
 Muestra, edición y creación de un registro en un origen de datos.
@@ -37,7 +38,7 @@ También puede establecer la propiedad **Elemento** de un formulario mediante un
 
 ```First(Accounts)```
 
-```Lookup(Accounts, "Fabrikam" in name)```
+```Lookup(Accounts; "Fabrikam" in name)```
 
 Cada control de formulario contiene uno o varios controles **[Tarjeta](control-card.md)**. Estableciendo la propiedad **[DataField](control-card.md)** de una tarjeta, se [especifica qué campo muestra esta tarjeta y otros detalles](../add-form.md).
 
@@ -152,7 +153,7 @@ El formulario cambia de modo **Nuevo** a modo **Edición** cuando se produce cua
 
 * Esta propiedad solo se aplica al control **Formulario de edición**.
 * Utilice esta propiedad para extraer los valores de campo de las tarjetas en el control.  A continuación, puede utilizar estos valores para actualizar manualmente el origen de datos con una llamada de función **[Revisión](../functions/function-patch.md)** u otro método expuesto por una conexión.  No es necesario utilizar esta propiedad si usa la función **[SubmitForm](../functions/function-form.md)**.
-* Esta propiedad devuelve un registro de valores.  Por ejemplo, si el control de formulario contiene controles de tarjeta para **nombre** y **cantidad** campos y los valores de la **[actualización](control-card.md)** las propiedades de esas tarjetas devuelven "Widget" y 10, respectivamente, la **actualizaciones** propiedad del control de formulario devolvería **{nombre: "Widget", cantidad: 10 }**.
+* Esta propiedad devuelve un registro de valores.  Por ejemplo, si el control de formulario contiene controles de tarjeta para **nombre** y **cantidad** campos y los valores de la **[actualización](control-card.md)** las propiedades de esas tarjetas devuelven "Widget" y 10, respectivamente, la **actualizaciones** propiedad del control de formulario devolvería **{nombre: "Widget"; cantidad: 10 }**.
 
 **Válido**: indica si un control **[Tarjeta](control-card.md)** o **Formulario de edición** contiene entradas válidas listas para enviarse al origen de datos.
 
@@ -160,7 +161,7 @@ El formulario cambia de modo **Nuevo** a modo **Edición** cuando se produce cua
 * La propiedad **Válido** de un control de **formulario** agrega las propiedades **Válido** de todos los controles **[Tarjeta del formulario](control-card.md)**. La propiedad **Válido** de un formulario es **true** solamente si los datos en todas las tarjetas de ese formulario son válidos, de lo contrario, la propiedad **Válido** del formulario es **false**.
 * Para habilitar un botón para guardar los cambios solo cuando los datos de un formulario sean válidos pero aún no se hayan enviado, establezca la propiedad **DisplayMode** del botón en esta fórmula:
   
-    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid; DisplayMode.Edit; DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[BorderColor](properties-color-border.md)**: el color de un borde del control.

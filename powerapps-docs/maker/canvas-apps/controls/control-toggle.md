@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61560447"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.
@@ -105,14 +106,14 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**If**( *Condition*, *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control Alternar y asígnele el nombre **MemberDiscount**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**If(MemberDiscount.Value = true, "Price: $75", "Price: $100")**
+   <br>**If(MemberDiscount.Value = true; "Price: $75"; "Price: $100")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5 y cambie el valor de **MemberDiscount**.

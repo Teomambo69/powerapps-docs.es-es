@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61538823"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Información de referencia sobre la plantilla de filtro de correo electrónico para las aplicaciones de lienzo
 
@@ -55,9 +56,9 @@ El **icono Agregar** control permite a los usuarios de aplicación para las pers
 * Propiedad: **Visible**<br>
     Valor: Lógica para mostrar el control solo cuando un usuario escribe una dirección de correo electrónico válida en el cuadro de búsqueda:
 
-    ```powerapps-dot
+    ```powerapps-comma
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text, Match.Email ) &&
+        IsMatch( TextSearchBox.Text; Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Línea por línea, el bloque de código anterior indica que el **icono Agregar** control será visible solo si:
@@ -69,14 +70,14 @@ El **icono Agregar** control permite a los usuarios de aplicación para las pers
 * Propiedad: **OnSelect**<br>
     Valor: Seleccionar esta opción agrega la dirección de correo electrónico válida para el **MyPeople** colección. Esta colección se usa por la pantalla como la lista de destinatarios:
 
-    ```powerapps-dot
-    Collect( MyPeople,
+    ```powerapps-comma
+    Collect( MyPeople;
         { 
-            DisplayName: TextSearchBox.Text, 
-            UserPrincipalName: TextSearchBox.Text, 
+            DisplayName: TextSearchBox.Text; 
+            UserPrincipalName: TextSearchBox.Text; 
             Mail: TextSearchBox.Text
         }
-    );
+    );;
     Reset( TextSearchBox )
     ```
   
@@ -89,9 +90,9 @@ El **icono Agregar** control permite a los usuarios de aplicación para las pers
 * Propiedad: **elementos**<br>
     Valor: Los resultados de búsqueda de 15 primeros del texto de búsqueda que escribió en el **TextSearchBox** control:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
+    ```powerapps-comma
+    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
     )
     ```
 
@@ -111,12 +112,12 @@ El **icono Agregar** control permite a los usuarios de aplicación para las pers
 * Propiedad: **OnSelect**<br>
     Valor: Para agregar el usuario a una colección de nivel de aplicación de código y, a continuación, seleccione el usuario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -138,17 +139,17 @@ Al seleccionar este control hace tres cosas simultáneamente:
 * Propiedad: **Height**<br>
     Valor: Lógica para establecer el alto, en función del número de elementos de la Galería:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
         304
     )
     ```
 
   El alto de esta galería se ajusta al número de elementos de la galería, con una altura máxima de 304.
   
-  Tarda `TemplateHeight + TemplatePadding * 2` como el alto de una sola fila de total **EmailPeopleGallery**, a continuación, se multiplica por el número de filas. Puesto que `WrapCount = 2`, es el número de filas true `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
+  Tarda `TemplateHeight + TemplatePadding * 2` como el alto de una sola fila de total **EmailPeopleGallery**, a continuación, se multiplica por el número de filas. Puesto que `WrapCount = 2`, es el número de filas true `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
 
 * Propiedad: **ShowScrollbar**<br>
     Valor: `EmailPeopleGallery.Height >= 304`
@@ -160,7 +161,7 @@ Al seleccionar este control hace tres cosas simultáneamente:
    ![Control EmailPeopleGallery título](media/email-screen/email-people-gall-text.png)
 
 * Propiedad: **OnSelect**<br>
-    Valor: `Set(_selectedUser, ThisItem)`
+    Valor: `Set(_selectedUser; ThisItem)`
 
   Establece el **_selectedUser** variable para el elemento seleccionado en **EmailPeopleGallery**.
 
@@ -169,7 +170,7 @@ Al seleccionar este control hace tres cosas simultáneamente:
    ![Control MonthDayGallery título](media/email-screen/email-people-gall-delete.png)
 
 * Propiedad: **OnSelect**<br>
-    Valor: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Valor: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Busca el registro en el **MyPeople** colección, donde **UserPrincipalName** coincide con el **UserPrincipalName** el elemento seleccionado, y quita ese registro desde el colección.
 
@@ -178,15 +179,15 @@ Al seleccionar este control hace tres cosas simultáneamente:
 * Propiedad: **OnSelect**<br>
     Valor: Lógica para enviar el mensaje de correo electrónico del usuario:
 
-    ```powerapps-dot
-    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
-    'Office365'.SendEmail( _emailRecipientString, 
-        TextEmailSubject.Text,  
-        TextEmailMessage.Text, 
+    ```powerapps-comma
+    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
+    'Office365'.SendEmail( _emailRecipientString; 
+        TextEmailSubject.Text;  
+        TextEmailMessage.Text; 
         { Importance:"Normal" }
-    );
-    Reset( TextEmailSubject );
-    Reset( TextEmailMessage );
+    );;
+    Reset( TextEmailSubject );;
+    Reset( TextEmailMessage );;
     Clear( MyPeople )
     ```
 
@@ -198,7 +199,7 @@ Al seleccionar este control hace tres cosas simultáneamente:
   1. Por último, restablece el **TextEmailSubject** y **TextEmailMessage** controla y borra el **MyPeople** colección.
 
 * Propiedad: **DisplayMode**<br>
-    Valor: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` Para que un envío de correo electrónico, debe tener la línea de asunto de correo electrónico, texto y el destinatario (**MyPeople**) colección no debe estar vacía.
+    Valor: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` Para que un envío de correo electrónico, debe tener la línea de asunto de correo electrónico, texto y el destinatario (**MyPeople**) colección no debe estar vacía.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

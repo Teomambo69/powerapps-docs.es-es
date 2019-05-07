@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61563690"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Funciones Left, Mid y Right en PowerApps
 Extrae la parte izquierda, central o derecha de una cadena de texto.
@@ -35,13 +36,13 @@ Si especifica una cadena como argumento, la función devuelve la parte que ha so
 Si la posición inicial es negativa o sobrepasa el final de la cadena, **Mid** devuelve *blank*.  Puede comprobar la longitud de una cadena mediante la función **[Len](function-len.md)**. Si se solicitan más caracteres de los que contiene la cadena, la función devuelve tantos caracteres como sea posible.
 
 ## <a name="syntax"></a>Sintaxis
-**Left**( *String*, *NumberOfCharacters* )<br>**Mid**( *String*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *String*, *NumberOfCharacters* )
+**Left**( *String*; *NumberOfCharacters* )<br>**Mid**( *String*; *StartingPosition*; *NumberOfCharacters* )<br>**Right**( *String*; *NumberOfCharacters* )
 
 * *String*: requerido. La cadena hasta la cual se extrae el resultado o desde la que se extrae el resultado.
 * *StartingPosition*: requerido (solo **Mid**).  La posición inicial.  El primer carácter de la cadena ocupa la posición 1.
 * *NumberOfCharacters* : requerido (**izquierda** y **derecha** solo).  El número de caracteres que se va a devolver.  Si se omite para los **Mid** función, la función devuelve la parte de la posición inicial hasta el final de la cadena.
 
-**Left**( *SingleColumnTable*, *NumberOfCharacters* )<br>**Mid**( *SingleColumnTable*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *SingleColumnTable*, *NumberOfCharacters* )
+**Left**( *SingleColumnTable*; *NumberOfCharacters* )<br>**Mid**( *SingleColumnTable*; *StartingPosition*; *NumberOfCharacters* )<br>**Right**( *SingleColumnTable*; *NumberOfCharacters* )
 
 * *SingleColumnTable*: requerido. Una tabla de una columna de cadenas de la cual se extraen los resultados.
 * *StartingPosition*: requerido (solo **Mid**).  La posición inicial.  El primer carácter de la cadena ocupa la posición 1.
@@ -53,10 +54,10 @@ En los ejemplos de esta sección se usa un control de entrada de texto como [ori
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Left( Author.Text, 5 )** |Extrae un máximo de cinco caracteres del principio de la cadena. |"E. E". |
-| **Mid( Author.Text, 7, 4 )** |Extrae un máximo de cuatro caracteres de la cadena, empezando por el séptimo carácter. |"Cumm" |
-| **Mid( Author.Text, 7 )** |Extrae todos los caracteres, empezando por el séptimo carácter de la cadena. |"García" |
-| **Right( Author.Text, 5 )** |Extrae un máximo de cinco caracteres del final de la cadena. |"mings" |
+| **Left( Author.Text; 5 )** |Extrae un máximo de cinco caracteres del principio de la cadena. |"E. E". |
+| **Mid( Author.Text; 7; 4 )** |Extrae un máximo de cuatro caracteres de la cadena, empezando por el séptimo carácter. |"Cumm" |
+| **Mid( Author.Text; 7 )** |Extrae todos los caracteres, empezando por el séptimo carácter de la cadena. |"García" |
+| **Right( Author.Text; 5 )** |Extrae un máximo de cinco caracteres del final de la cadena. |"mings" |
 
 ### <a name="single-column-table"></a>Tabla de una sola columna
 En cada ejemplo de esta sección se extraen cadenas de la [columna](../working-with-tables.md#columns) **Address** de este origen de datos, denominado **People**, y se devuelve una tabla de una columna que contiene los resultados:
@@ -65,15 +66,15 @@ En cada ejemplo de esta sección se extraen cadenas de la [columna](../working-w
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** |Extrae los ocho primeros caracteres de cada cadena. |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
-| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** |Extrae los siete caracteres centrales de cada cadena, comenzando por el quinto carácter. |![](media/function-left-mid-right/people-table-mid.png) |
-| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** |Extrae los siete últimos caracteres de cada cadena. |![](media/function-left-mid-right/people-table-right.png) |
+| **Left( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 8 )** |Extrae los ocho primeros caracteres de cada cadena. |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
+| **Mid( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 5; 7 )** |Extrae los siete caracteres centrales de cada cadena, comenzando por el quinto carácter. |![](media/function-left-mid-right/people-table-mid.png) |
+| **Right( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 7 )** |Extrae los siete últimos caracteres de cada cadena. |![](media/function-left-mid-right/people-table-right.png) |
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Importe o cree una [colección](../working-with-data-sources.md#collections) denominada **Inventory** y muéstrela en una galería, como se describe en el primer procedimiento en [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Mostrar imágenes y texto en una galería).
 2. Establezca la propiedad **[Text](../controls/properties-core.md)** de la etiqueta inferior de la galería en esta función:
    
-    **Right(ThisItem.ProductName, 3)**
+    **Right(ThisItem.ProductName; 3)**
    
     La etiqueta muestra los tres últimos caracteres de cada nombre de producto.
 

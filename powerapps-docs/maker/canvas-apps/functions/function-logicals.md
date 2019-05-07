@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61562839"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Funciones And, Or y Not en PowerApps
 Funciones de lógica booleana usadas comúnmente para manipular los resultados de pruebas y comparaciones.
@@ -33,8 +34,8 @@ La función **Not** devuelve **true** si su argumento es **falso** y devuelve **
 Estas funciones trabajan con valores lógicos. No se les puede pasar un número o una cadena directamente, sino que se debe realizar una comparación o prueba. Por ejemplo, una comparación como **x > 1** es una fórmula lógica que se evalúa como el valor booleano **true** si **x** es mayor que **1**. Si **x** es menor que **1**, la fórmula se evalúa como **false.**
 
 ## <a name="syntax"></a>Sintaxis
-**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
-**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
 **Not**( *LogicalFormula* )
 
 * *LogicalFormula(s)*: requerido.  Fórmulas lógicas para evaluar y con las que operar.
@@ -43,11 +44,11 @@ Estas funciones trabajan con valores lógicos. No se les puede pasar un número 
 ### <a name="step-by-step"></a>Paso a paso
 Use esta función para determinar si el valor de un control deslizante está fuera del intervalo de 50 a 100:
 
-**Or(Slider1.Value < 50, Slider1.Value> 100)**
+**Or(Slider1.Value < 50; Slider1.Value> 100)**
 
 Si una [tabla](../working-with-tables.md) contuviera una [columna](../working-with-tables.md#columns) **Dept** y una columna **Salary**, podría usar esta función en una columna **Result** para mostrar **true** en todas las filas donde el valor de la columna **Dept** fuera **HR** o el valor de la columna **Salary** fuera mayor que **200000**:
 
-**Or(Dept = HR, Salary >= 200000)**
+**Or(Dept = HR; Salary >= 200000)**
 
 Como alternativa, use el operador || para obtener los mismos resultados que los que devuelven las fórmulas anteriores:
 

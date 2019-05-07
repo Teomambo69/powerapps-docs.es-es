@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61519423"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="split-function-in-powerapps"></a>Función Split en PowerApps
 Divide una cadena de texto en una tabla de subcadenas.
@@ -31,7 +32,7 @@ Para dividir la cadena de texto se usa una cadena de separación.  El separador 
 Use la función **[Concat](function-concatenate.md)** función para volver a combinar la cadena (sin los separadores). Utilice la **[MatchAll](function-ismatch.md)** función para extraer partes de una cadena de texto mediante el uso de una expresión regular, que (en algunos casos), puede utilizar para dividir una cadena. 
 
 ## <a name="syntax"></a>Sintaxis
-**Split**(*Texto*, *Separador*)
+**Split**(*Texto*; *Separador*)
 
 * *Text*: se requiere.  Texto que se divide.
 * *Separador*: se requiere.  Separador que se usa para dividir la cadena.  Puede ser cero, uno o varios caracteres.
@@ -40,13 +41,13 @@ Use la función **[Concat](function-concatenate.md)** función para volver a com
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," )** |Divide las diferentes frutas, tomando como base la coma, que es el separador.  La división la realiza solo la coma, no el espacio posterior a ella, lo que da lugar a que haya un espacio delante de "&nbsp;Oranges" y "&nbsp;Bananas". |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
-| **TrimEnds( Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," ) )** |Igual que el ejemplo anterior, pero en este caso la función [**TrimEnds** quita el espacio](function-trim.md), por lo que se usa solo la tabla de una columna que ha generado **Split**. También podríamos haber usado el separador **",&nbsp;"** que incluye el espacio después de la coma, pero es posible que no hubiera funcionado correctamente en caso de dos espacios, o ninguno. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
-| **Split( "08/28/17", "/" )** |Divide la fecha, y se usa una barra diagonal como separador. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
-| **Split( "Hello,&nbsp;World", "," )** |Divide las palabras, y se usa una coma como separador.  El segundo resultado comienza con un espacio, ya que era el carácter inmediatamente posterior a la coma. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
-| **Split( "Hello,&nbsp;World", "o" )** |Divide la cadena, y usa el carácter "o" como separador. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
-| **Split( "Hello,&nbsp;World", "l" )** |Divide la cadena, y usa el carácter individual "l" como separador. Puesto que no había ningún carácter entre los dos **l** de **Hello**, se ha devuelto un valor *blank*. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
-| **Split( "Hello,&nbsp;World", "ll" )** |Divide la cadena, y usa el carácter doble "ll" como separador. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
-| **Split( "Hello,&nbsp;World", "%" )** |Divide la cadena, y usa el signo de porcentaje como separador. Como dicho separador no aparece en la cadena, se devuelve toda la cadena como un resultado. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
-| **Split( "Hello,&nbsp;World", "" )** |Divide la cadena, y usa una cadena vacía como separador (cero caracteres). De esta forma la cadena se divide en cada carácter. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
+| **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas"; "," )** |Divide las diferentes frutas, tomando como base la coma, que es el separador.  La división la realiza solo la coma, no el espacio posterior a ella, lo que da lugar a que haya un espacio delante de "&nbsp;Oranges" y "&nbsp;Bananas". |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
+| **TrimEnds( Split( "Apples,&nbsp;Oranges,&nbsp;Bananas"; "," ) )** |Igual que el ejemplo anterior, pero en este caso la función [**TrimEnds** quita el espacio](function-trim.md), por lo que se usa solo la tabla de una columna que ha generado **Split**. También podríamos haber usado el separador **",&nbsp;"** que incluye el espacio después de la coma, pero es posible que no hubiera funcionado correctamente en caso de dos espacios, o ninguno. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
+| **Split( "08/28/17"; "/" )** |Divide la fecha, y se usa una barra diagonal como separador. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
+| **Split( "Hello,&nbsp;World"; "," )** |Divide las palabras, y se usa una coma como separador.  El segundo resultado comienza con un espacio, ya que era el carácter inmediatamente posterior a la coma. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
+| **Split( "Hello,&nbsp;World"; "o" )** |Divide la cadena, y usa el carácter "o" como separador. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
+| **Split( "Hello,&nbsp;World"; "l" )** |Divide la cadena, y usa el carácter individual "l" como separador. Puesto que no había ningún carácter entre los dos **l** de **Hello**, se ha devuelto un valor *blank*. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
+| **Split( "Hello,&nbsp;World"; "ll" )** |Divide la cadena, y usa el carácter doble "ll" como separador. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
+| **Split( "Hello,&nbsp;World"; "%" )** |Divide la cadena, y usa el signo de porcentaje como separador. Como dicho separador no aparece en la cadena, se devuelve toda la cadena como un resultado. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
+| **Split( "Hello,&nbsp;World"; "" )** |Divide la cadena, y usa una cadena vacía como separador (cero caracteres). De esta forma la cadena se divide en cada carácter. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
 

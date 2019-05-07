@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61540778"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Información de referencia acerca de la plantilla de pantalla de las personas para las aplicaciones de lienzo
 
@@ -50,11 +51,11 @@ Otros controles de un par interactúan o tienen una dependencia en el cuadro de 
 * Propiedad: **elementos**<br>
     Valor: Lógica para buscar los usuarios cuando el usuario empieza a escribir:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
+    ```powerapps-comma
+    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ), 
+                searchTerm: Trim( TextSearchBox.Text ); 
                 top: 15
             }
         )
@@ -76,12 +77,12 @@ El `Office365Users.SearchUser` operación se encapsula en un `If(!IsBlank(Trim(T
 * Propiedad: **OnSelect**<br>
     Valor: Para agregar el usuario a una colección de nivel de aplicación de código y, a continuación, seleccione el usuario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -98,9 +99,9 @@ Al seleccionar este control hace tres cosas simultáneamente:
 * Propiedad: **Imagen**<br>
     Valor: Lógica para recuperar la foto del perfil del usuario.
 
-    ```powerapps-dot
+    ```powerapps-comma
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -126,7 +127,7 @@ Esta es la colección de personas inicializado o agregado a seleccionando el **U
 ![Control PeopleAddedGallery título](media/people-screen/people-people-gall-title.png)
 
 * Propiedad: **OnSelect**<br>
-    Valor: `Set( _selectedUser, ThisItem )`
+    Valor: `Set( _selectedUser; ThisItem )`
 
 Establece el **_selectedUser** variable para el elemento seleccionado en **EmailPeopleGallery**.
 
@@ -135,7 +136,7 @@ Establece el **_selectedUser** variable para el elemento seleccionado en **Email
 ![PeopleAddedGallery iconRemove control](media/people-screen/people-people-gall-delete.png)
 
 * Propiedad: **OnSelect**<br>
-    Valor: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Valor: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Busca el registro en el **MyPeople** colección, donde **UserPrincipalName** coincide con el **UserPrincipalName** el elemento seleccionado y, a continuación, quita que grabar desde el colección.
 

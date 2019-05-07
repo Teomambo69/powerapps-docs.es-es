@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548027"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-the-entity-form-control"></a>Usar el control Formulario de la entidad
 Cree aplicaciones más rápidamente mediante el control **Formulario de entidad** para agregar formularios enriquecidos para una entidad de Common Data Service.
@@ -48,12 +49,12 @@ Estas son las propiedades fundamentales de un control **Formulario de la entidad
 Ejemplo: Si el **formulario de la entidad** control muestra una lista de registros de pedido de ventas, el **seleccionados** propiedad le proporcionará el registro que está seleccionado actualmente. También puede acceder a un campo dentro de un registro. (Por ejemplo, especifique el valor del campo **Account** del registro seleccionado como **Selected.Account**).
 
 **CamposSeleccionables**: especifica qué campos deben aparecer como vínculos. Establezca el valor de esta propiedad con esta sintaxis:  
-**{NombreDeCampo1: true, NombreDeCampo2: true}**  
+**{NombreDeCampo1: true; NombreDeCampo2: true}**  
 Ejemplo: Si desea que el **SalesOrderId** y **cuenta** los campos que aparecerán como vínculos en un formulario, establezca la **Camposseleccionables** propiedad de ese formulario en este valor:  
-**{SalesOrderId : true, Account : true}**
+**{SalesOrderId : true; Account : true}**
 
 **CampoSeleccionado**: determina en qué campo se hizo clic o se pulsó. Esto solo se aplica a los campos especificados como **CamposSeleccionables**.  
-Ejemplo: Si establece la **Camposseleccionables** propiedad **{SalesOrderId: true, la cuenta: true}** y el usuario pulsa o hace clic en el **cuenta** campo,  **SelectedField.Account** se establece en true.
+Ejemplo: Si establece la **Camposseleccionables** propiedad **{SalesOrderId: true; la cuenta: true}** y el usuario pulsa o hace clic en el **cuenta** campo,  **SelectedField.Account** se establece en true.
 
 **OnFieldSelect**: cómo responde una aplicación cuando el usuario hace clic o pulsa en un campo. Esto solo se aplica a los campos especificados como **CamposSeleccionables**.
 

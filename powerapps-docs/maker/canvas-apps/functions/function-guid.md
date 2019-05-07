@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61563257"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="guid-function-in-powerapps"></a>Función GUID en PowerApps
 Convierta una cadena de GUID ([identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier)) en un valor GUID o cree un valor GUID.
@@ -69,7 +70,7 @@ También puede especificar la cadena de GUID sin guiones. Esta fórmula devuelve
 
 Se utiliza en contexto para establecer el campo **Estado** de un nuevo registro de la base de datos en un valor establecido:
 
-* **Revisión (productos, de forma predeterminada (productos), {estado: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Revisión (productos; de forma predeterminada (productos); {estado: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 Probablemente no quiera mostrar los GUID a los usuarios, pero los GUID pueden ayudarle a depurar la aplicación. Para mostrar el valor del campo **Estado** en el registro que creó en el ejemplo anterior, establezca la propiedad **Text** de un control **Label** en esta fórmula:
 
@@ -81,7 +82,7 @@ El control **Label** mostrará **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 1. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** de un control de **[botón](../controls/control-button.md)** en esta fórmula:
 
-    **ClearCollect( NewGUIDs, ForAll( [ 1, 2, 3, 4, 5 ], GUID() ) )**
+    **ClearCollect( NewGUIDs; ForAll( [ 1; 2; 3; 4; 5 ]; GUID() ) )**
 
     Con esta fórmula se crea una tabla de una sola columna que se usa para iterar cinco veces, lo que produce cinco GUID.
 
@@ -99,4 +100,4 @@ El control **Label** mostrará **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 Para generar un GUID único en lugar de una tabla, utilice esta fórmula:
 
-**Set( NewGUID, GUID() )**
+**Set( NewGUID; GUID() )**

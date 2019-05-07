@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548717"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="label-control-in-canvas-apps"></a>Control de etiqueta en las aplicaciones de lienzo
 
@@ -130,7 +131,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Text**( *Number*, "*FormatCodes*" )](../functions/function-text.md)
+[**Text**( *Number*; "*FormatCodes*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -155,7 +156,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 En este procedimiento, creará una colección, denominada **CityPopulations**, que contiene datos sobre la población de varias ciudades de Europa. A continuación, mostrará los datos de una galería que contengan tres etiquetas y especificará el tipo de datos que se mostrará en cada etiqueta.
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   **ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
 2. Presione F5, seleccione el botón y presione Esc.
 3. Agregue una galería de texto y establezca su propiedad **[Elementos](properties-core.md)** en **CityPopulations**.
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61546601"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Funciones Collect, Clear y ClearCollect en PowerApps
 
@@ -48,7 +49,7 @@ También puede usar la función **[Patch](function-patch.md)** para crear regist
 
 La función **Clear** elimina todos los registros de una colección.  Las columnas de la colección se conservarán.
 
-Tenga en cuenta que **Clear** solo funciona en colecciones y no en otros orígenes de datos.  Puede usar **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )** para este propósito.  Tenga cuidado, ya que esto quitará todos los registros del almacenamiento del origen de datos y puede afectar a otros usuarios.
+Tenga en cuenta que **Clear** solo funciona en colecciones y no en otros orígenes de datos.  Puede usar **[RemoveIf](function-remove-removeif.md)( *DataSource*; true )** para este propósito.  Tenga cuidado, ya que esto quitará todos los registros del almacenamiento del origen de datos y puede afectar a otros usuarios.
 
 Puede usar la función **[Remove](function-remove-removeif.md)** para quitar registros de forma selectiva.
 
@@ -62,7 +63,7 @@ La función **ClearCollect** elimina todos los registros de una colección y, de
 
 ## <a name="syntax"></a>Sintaxis
 
-**Collect**( *DataSource*, *Elemento*, ... )
+**Collect**( *DataSource*; *Elemento*; ... )
 
 * *DataSource*: requerido. Origen de datos al que quiere agregar datos.  Si todavía no existe, se crea una colección.
 * *Item(s)*: requerido.  Uno o varios registros o tablas que se van a agregar al origen de datos.  
@@ -71,7 +72,7 @@ La función **ClearCollect** elimina todos los registros de una colección y, de
 
 * *Collection*: requerido. Colección que quiere borrar.
 
-**ClearCollect**( *Colección*, *Elemento*, ... )
+**ClearCollect**( *Colección*; *Elemento*; ... )
 
 * *Collection*: requerido. Colección que quiere borrar, a la que después va a agregar datos.
 * *Item(s)*: requerido.  Uno o varios registros o tablas que se van a agregar al origen de datos.  
@@ -86,8 +87,8 @@ En estos ejemplos, borrará y agregará registros a una colección denominada **
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de helado de fresa. |<style> IMG {max-width: Ninguno} </style> ![tabla con un único registro](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **IceCream**, que incluye una cantidad de helado de pistacho y naranja. |![Tabla con dos registros](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
+| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de helado de fresa. |<style> IMG {max-width: Ninguno} </style> ![tabla con un único registro](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
+| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **IceCream**, que incluye una cantidad de helado de pistacho y naranja. |![Tabla con dos registros](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 | **Clear( IceCream )** |Quita todos los registros de la colección **IceCream**. |![Tabla vacía](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>El origen de datos **IceCream** también se ha modificado. |
 
 Para obtener ejemplos paso a paso de cómo crear una colección, vea [crear y actualizar una colección](../create-update-collection.md).

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61562834"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="iferror-function-in-powerapps"></a>Función IfError en PowerApps
 Detecta errores y proporciona un valor alternativo o lleva a cabo una acción.
@@ -36,7 +37,7 @@ Use **IfError** en las [fórmulas de comportamiento](../working-with-formulas-in
 Si todos los argumentos de **IfError** generan un error, se devuelve el valor del último argumento (que será un valor de error). 
 
 ## <a name="syntax"></a>Sintaxis
-**IfError**( *Value*, *Fallback1* [, *Fallback2*, ... ] )
+**IfError**( *Value*; *Fallback1* [; *Fallback2*; ... ] )
 
 * *Value* (se requiere). Fórmulas para probar si hay un valor de error. 
 * *Fallback(s)*: obligatorio. Las fórmulas que se deben evaluar y los valores que se deben devolver si los argumentos anteriores devuelven un error.  *Reserva* argumentos se evalúan en orden hasta que se encuentra un valor sin errores.
@@ -45,10 +46,10 @@ Si todos los argumentos de **IfError** generan un error, se devuelve el valor de
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **IfError( 1, 2 )** |El primer argumento no es un error.  Se devuelve y no se evalúan los argumentos subsiguientes.   | 1 |
-| **IfError( 1/0, 2 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que genera un valor sin errores que se devuelve. | 2 | 
-| **IfError( 1/0, Notify( "Se produjo un problema interno", NotificationType.Error ) )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que muestra un mensaje al usuario.  El valor devuelto de **IfError** es el valor devuelto de **Notify**, convertido al mismo tipo que el primer argumento de **IfError** (un número). | 1 |
-| **IfError( 1/0, 1/0, 2, 1/0, 3 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que también genera un valor de error (otra división por cero).  Se evalúa el tercer argumento, que no genera un valor de error que se devuelve.  Se ignoran los argumentos cuarto y quinto.  | 2 |
+| **IfError( 1; 2 )** |El primer argumento no es un error.  Se devuelve y no se evalúan los argumentos subsiguientes.   | 1 |
+| **IfError( 1/0; 2 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que genera un valor sin errores que se devuelve. | 2 | 
+| **IfError( 1/0; Notify( "Se produjo un problema interno"; NotificationType.Error ) )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que muestra un mensaje al usuario.  El valor devuelto de **IfError** es el valor devuelto de **Notify**, convertido al mismo tipo que el primer argumento de **IfError** (un número). | 1 |
+| **IfError( 1/0; 1/0; 2; 1/0; 3 )** | El primer argumento devuelve un valor de error (debido a la división por cero).  Se evalúa el segundo argumento, que también genera un valor de error (otra división por cero).  Se evalúa el tercer argumento, que no genera un valor de error que se devuelve.  Se ignoran los argumentos cuarto y quinto.  | 2 |
 
 ### <a name="step-by-step"></a>Paso a paso
 
@@ -58,7 +59,7 @@ Si todos los argumentos de **IfError** generan un error, se devuelve el valor de
 
 3. Establezca la fórmula para la propiedad **Text** de **Label1** en:
 
-    **IfError( Value( TextInput1.Text ), -1 )**
+    **IfError( Value( TextInput1.Text ); -1 )**
 
 4. En **TextInput1**, escriba **1234**.  
 

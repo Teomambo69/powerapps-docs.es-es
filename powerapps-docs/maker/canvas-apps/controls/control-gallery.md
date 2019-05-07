@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544255"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control de galería de aplicaciones de lienzo
 
@@ -92,7 +93,7 @@ Si un usuario se desplaza el **altura Flexible** control de galería antes de qu
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Ejemplos
 

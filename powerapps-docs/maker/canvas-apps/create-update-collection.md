@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61561735"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Crear y actualizar una colección en una aplicación de lienzo
 
@@ -50,15 +51,15 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
 1. En la barra de fórmulas, reemplace **DropDownSample** con esta expresión:
 
-    `["Red","Green","Blue"]`
+    `["Red";"Green";"Blue"]`
 
 1. Agregar un **botón** , establezca su **texto** propiedad **"Agregar"** y establezca su **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Collect(
-        ProductList,
+        ProductList;
         {
-            Product: ProductName.Text,
+            Product: ProductName.Text;
             Color: Colors.Selected.Value
         }
     )
@@ -106,7 +107,7 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
 1. Establecer el icono **OnSelect** propiedad en esta fórmula:
 
-    `Remove(ProductList, ThisItem)`
+    `Remove(ProductList; ThisItem)`
 
 1. Fuera de la galería, agregue un botón, establezca su **texto** propiedad **"Borrar"** y establezca su **OnSelect** propiedad en esta fórmula:
 
@@ -120,7 +121,7 @@ Usar una colección para almacenar los datos que los usuarios pueden administrar
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta función, sustituyendo *ListName* por el nombre de la lista de SharePoint:<br>
 
-    `Collect(MySPCollection, ListName)`
+    `Collect(MySPCollection; ListName)`
 
     Esta función crea una colección que se denomina **MySPCollection** y que contiene los mismos datos que la lista de SharePoint.
 

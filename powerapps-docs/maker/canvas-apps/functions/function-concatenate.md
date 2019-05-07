@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551339"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funciones Concat y Concatenate de PowerApps
 Concatena cadenas de texto individuales y cadenas en [tablas](../working-with-tables.md).
@@ -33,12 +34,12 @@ Use la función **[Split](function-split.md)** para dividir una cadena en una ta
 La función **Concatenate** concatena una combinación de cadenas individuales y una tabla de cadenas con una sola columna. Cuando se usa con cadenas individuales, esta función es equivalente a usar el [operador](operators.md) **&**. Puede usar una fórmula que incluye la función **[ShowColumns](function-table-shaping.md)** para crear una tabla de una columna a partir de una tabla con varias columnas.
 
 ## <a name="syntax"></a>Sintaxis
-**Concat**( *Table*, *Formula* )
+**Concat**( *Table*; *Formula* )
 
 * *Table*: requerido.  La tabla sobre la cual se opera.
 * *Formula*: requerido.  Fórmula para aplicar en todos los registros de la tabla.
 
-**Concatenate**( *String1* [, *String2*, ...] )
+**Concatenate**( *String1* [; *String2*; ...] )
 
 * *String(s)*: requerido.  Combinación de cadenas individuales o una tabla de cadenas de una columna.
 
@@ -46,22 +47,22 @@ La función **Concatenate** concatena una combinación de cadenas individuales y
 #### <a name="concat"></a>Concat
 1. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **Collect(Products, {String:"Violin", Wind:"Trombone", Percussion:"Bongos"}, {String:"Cello", Wind:"Trumpet", Percussion:"Tambourine"})**
+    **Collect(Products; {String:"Violin"; Wind:"Trombone"; Percussion:"Bongos"}; {String:"Cello"; Wind:"Trumpet"; Percussion:"Tambourine"})**
 2. Presione F5, haga clic en el botón y presione Esc para volver al área de trabajo de diseño.
 3. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    
-    **Concat(Products, String & " ")**
+    **Concat(Products; String & " ")**
    
     La etiqueta muestra **Violin Cello**.
 
 #### <a name="concatenate"></a>Concatenate
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **AuthorName**.
 2. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:<br>
-   **Concatenate("By ", AuthorName.Text)**
+   **Concatenate("By "; AuthorName.Text)**
 3. Escriba su nombre en **AuthorName**.
    
     La etiqueta muestra **By** antes del nombre.
 
 Si tuviera una tabla **Employees** que incluye una columna **FirstName** y una columna **LastName**, esta fórmula concatenaría los datos de cada fila de esas columnas.
-<br>**Concatenate(Employees.FirstName, " ", Employees.LastName)**
+<br>**Concatenate(Employees.FirstName; " "; Employees.LastName)**
 

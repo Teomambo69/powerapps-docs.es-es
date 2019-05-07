@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61538412"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Desarrollo de aplicaciones de lienzo que puedan ejecutarse sin conexión
 
@@ -82,15 +83,15 @@ De forma general, la aplicación hace lo siguiente:
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Paso 3: Cargar tweets en la colección LocalTweets en el inicio de la aplicación
 Seleccione la propiedad **AlEstarVisible** de **Pantalla1** en la aplicación y copie en ella la siguiente fórmula:
 
-```powerapps-dot
-If( Connection.Connected,
-    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
-        UpdateContext( {statusText: "Online data"} ),
-    LoadData(LocalTweets, "Tweets", true);
+```powerapps-comma
+If( Connection.Connected;
+    ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
+        UpdateContext( {statusText: "Online data"} );
+    LoadData(LocalTweets; "Tweets"; true);;
         UpdateContext( {statusText: "Local data"} )
-);
-LoadData( LocalTweetsToPost, "LocalTweets", true );
-SaveData( LocalTweets, "Tweets" )
+);;
+LoadData( LocalTweetsToPost; "LocalTweets"; true );;
+SaveData( LocalTweets; "Tweets" )
 ```
 
 ![Fórmula para cargar tweets](./media/offline-apps/load-tweets.png)
@@ -110,13 +111,13 @@ Esta fórmula comprueba si el dispositivo está en línea:
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
    * **"RT: " & ThisItem.RetweetCount**
-   * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
+   * **Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)**
 4. Agregue un control **Imagen** y establezca la propiedad **Image** en **ThisItem.UserDetails.ProfileImageUrl**.
 
 ### <a name="step-5-add-a-connection-status-label"></a>Paso 5: Agregar una etiqueta de estado de conexión
 Inserte un nuevo control **Label** y establezca su propiedad **Texto** en la fórmula siguiente:
 
-```If( Connection.Connected, "Connected", "Offline" )```
+```If( Connection.Connected; "Connected"; "Offline" )```
 
 Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto de la etiqueta es "Conectado", en caso contrario es "Sin conexión".
 
@@ -130,13 +131,13 @@ Esta fórmula comprueba si el dispositivo está en línea. Si lo está, el texto
 1. Agregue un control **Botón** y establezca la propiedad **Texto** en "Tweet".
 2. Establezca la propiedad **AlSeleccionar** en la fórmula siguiente:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
-    );
-    UpdateContext( {resetNewTweet: true} );
+    ```powerapps-comma
+    If( Connection.Connected;
+        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
+    );;
+    UpdateContext( {resetNewTweet: true} );;
     UpdateContext( {resetNewTweet: false} )
     ```  
 
@@ -156,12 +157,12 @@ Agregue un nuevo control **Temporizador**:
 
 * Establezca **OnTimerEnd** en la fórmula siguiente:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
-        Clear( LocalTweetsToPost);
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+    ```powerapps-comma
+    If( Connection.Connected;
+        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
+        Clear( LocalTweetsToPost);;
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+        SaveData( LocalTweetsToPost; "LocalTweetsToPost" );;
         UpdateContext( {statusText: "Online data"} )
     )
     ```

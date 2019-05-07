@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61520064"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>Funciones Acos, Acot, Asin, Atan, Atan2, Cos, Cot, Degrees, Pi, Radians, Sin y Tan en PowerApps
 Calcula valores trigonométricos.
@@ -42,7 +43,7 @@ La función **Asin** devuelve el arcoseno, o seno inverso, de su argumento. El a
 
 La función **Atan** devuelve la arcotangente, o tangente inversa, de su argumento. La arcotangente es el ángulo cuya tangente es el argumento. El ángulo devuelto se expresa en radianes en el intervalo de -&pi;/2 a &pi;/2.
 
-La función **Atan2** devuelve la arcotangente, o tangente inversa, de las coordenadas *x* e *y* especificadas como argumentos. La arcotangente es el ángulo desde el eje *x* a una línea que contiene el origen (0, 0) y un punto con las coordenadas (*x*, *y*). El ángulo se expresa en radianes entre -&pi; y &pi;, excluyendo -&pi;.  Un resultado positivo representa un ángulo con rotación levógira (hacia la izquierda) desde el eje *x*; un resultado negativo representa un ángulo con rotación dextrógira (hacia la derecha).  **Atan2(&nbsp;*a*,&nbsp;*b*&nbsp;)** es igual a **Atan(&nbsp;*b*/*a*&nbsp;)**, excepto que ***a*** puede ser igual a 0 (cero) con la función **Atan2**.
+La función **Atan2** devuelve la arcotangente, o tangente inversa, de las coordenadas *x* e *y* especificadas como argumentos. La arcotangente es el ángulo desde el eje *x* a una línea que contiene el origen (0, 0) y un punto con las coordenadas (*x*, *y*). El ángulo se expresa en radianes entre -&pi; y &pi;, excluyendo -&pi;.  Un resultado positivo representa un ángulo con rotación levógira (hacia la izquierda) desde el eje *x*; un resultado negativo representa un ángulo con rotación dextrógira (hacia la derecha).  **Atan2(&nbsp;*a*;&nbsp;*b*&nbsp;)** es igual a **Atan(&nbsp;*b*/*a*&nbsp;)**, excepto que ***a*** puede ser igual a 0 (cero) con la función **Atan2**.
 
 ### <a name="helper-functions"></a>Funciones auxiliares
 La función **Degrees** convierte radianes en grados.  &pi; radianes equivalen a 180 grados.
@@ -75,7 +76,7 @@ Si algún argumento resultase en un valor no definido, el resultado es *blank*. 
 
 * *SingleColumnTable*: requerido. Una tabla de números de una sola columna sobre la cual operar.
 
-**Atan2**( *X*, *Y* )
+**Atan2**( *X*; *Y* )
 
 * *X*: requerido.  coordenadas del eje *X*.
 * *Y*: requerido.  coordenadas del eje *Y*.
@@ -96,16 +97,16 @@ Si algún argumento resultase en un valor no definido, el resultado es *blank*. 
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Cos(&nbsp;1,047197&nbsp;)** |Devuelve el coseno de 1,047197 radianes o 60 grados. |0,5 |
+| **Cos(&nbsp;1;047197&nbsp;)** |Devuelve el coseno de 1,047197 radianes o 60 grados. |0,5 |
 | **Cot(&nbsp;Pi()/4&nbsp;)** |Devuelve la cotangente de 0,785398... radianes o 45 grados. |1 |
 | **Sin(&nbsp;Pi()/2&nbsp;)** |Devuelve el seno de 1,570796 radianes o 90 grados. |1 |
 | **Tan (&nbsp;Radians(60)&nbsp;)** |Devuelve la tangente de 1,047197 radianes o 60 grados. |1,732050... |
-| **Acos(&nbsp;0,5&nbsp;)** |Devuelve el arcocoseno de 0,5 en radianes. |1,047197... |
+| **Acos(&nbsp;0;5&nbsp;)** |Devuelve el arcocoseno de 0,5 en radianes. |1,047197... |
 | **Acot(&nbsp;1&nbsp;)** |Devuelve la arcocotangente de 1, en radianes. |0,785398... |
 | **Asin(&nbsp;1&nbsp;)** |Devuelve el arcoseno de 1, en radianes. |1,570796... |
 | **Atan (&nbsp;1,732050&nbsp;)** |Devuelve la arcotangente de 1,732050, en radianes. |1,047197... |
-| **Atan2(&nbsp;5,&nbsp;3&nbsp;)** |Devuelve la arcotangente del ángulo del eje *x* de la línea que contiene el origen (0,0) y la coordenada (5,3), que es aproximadamente 31 grados. |0,540419... |
-| **Atan2(&nbsp;4,&nbsp;4&nbsp;)** |Devuelve la arcotangente del ángulo del eje *x* de la línea que contiene el origen (0,0) y la coordenada (4,4), que es exactamente &pi;/4 radianes o 45 grados. |0,785398... |
+| **Atan2(&nbsp;5;&nbsp;3&nbsp;)** |Devuelve la arcotangente del ángulo del eje *x* de la línea que contiene el origen (0,0) y la coordenada (5,3), que es aproximadamente 31 grados. |0,540419... |
+| **Atan2(&nbsp;4;&nbsp;4&nbsp;)** |Devuelve la arcotangente del ángulo del eje *x* de la línea que contiene el origen (0,0) y la coordenada (4,4), que es exactamente &pi;/4 radianes o 45 grados. |0,785398... |
 | **Degrees (&nbsp;1,047197&nbsp;)** |Devuelve el número equivalente de grados de 1,047197 radianes. |60 |
 | **Pi()** |El número trascendente &pi;. |3,141592... |
 | **Radians (&nbsp;15&nbsp;)** |Devuelve el número equivalente de radianes para 15 grados. |0,261799... |

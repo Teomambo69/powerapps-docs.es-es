@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551224"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="distinct-function-in-powerapps"></a>Función Distinct de PowerApps
 Resume los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md), quitando los duplicados.
@@ -29,7 +30,7 @@ La función **Distinct** evalúa una fórmula en cada uno de los registros de un
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Distinct**( *Table*, *Formula* )
+**Distinct**( *Table*; *Formula* )
 
 * *Table*: requerido.  Tabla en la cual se realizará la evaluación.
 * *Formula*: requerido.  La fórmula que se evalúa en cada registro.
@@ -37,5 +38,5 @@ La función **Distinct** evalúa una fórmula en cada uno de los registros de un
 ## <a name="example"></a>Ejemplo
 Si tuviera una tabla **Employees** con una columna **Department**, esta función mostraría el nombre de cada departamento único en esa columna, independientemente de cuántas veces apareció cada nombre en esa columna:
 
-**Distinct(Employees, Department)**
+**Distinct(Employees; Department)**
 
