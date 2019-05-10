@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61552052"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670870"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.

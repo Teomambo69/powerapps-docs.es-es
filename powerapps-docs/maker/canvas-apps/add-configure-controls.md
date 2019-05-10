@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3311433b3950bcf48dc6c7b7969da501e542952c
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530580"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670901"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Agregar y configurar un control de aplicación de lienzo en PowerApps
 
@@ -51,7 +51,7 @@ Para demostrar cómo funciona esta lista, seleccione **etiqueta** en el **insert
 
 ![Screen2 en la lista](./media/add-configure-controls/add-label.png)
 
-En la pantalla, un cuadro con seis identificadores alrededor de la etiqueta de forma predeterminada. Ese tipo de cuadro que rodea a cualquier control que está seleccionado. Si selecciona la pantalla haciendo clic o pulsando en ella (pero fuera de la etiqueta), el cuadro desaparece de la etiqueta. Para seleccionar la etiqueta de nuevo, puede hacer clic o pulse en él, o puede hacer clic o pulse **Label2** en la lista jerárquica de los controles.
+En la pantalla, un cuadro con seis identificadores alrededor de la etiqueta de forma predeterminada. Ese tipo de cuadro que rodea a cualquier control que está seleccionado. Si selecciona la pantalla haciendo clic o pulsando en ella (pero fuera de la etiqueta), el cuadro desaparece de la etiqueta. Para seleccionar la etiqueta de nuevo, puede hacer clic o pulse en él, o puede hacer clic o pulse en su nombre en la lista jerárquica de los controles.
 
 > [!IMPORTANT]
 > Siempre debe seleccionar un control antes de que pueda configurar.

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.openlocfilehash: 66fe60c0d74c86705615522621d8f277fcc343ae
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59042741"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088166"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
 
@@ -72,9 +71,9 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 1. En la barra de navegación izquierdo, expanda **Details_DataCard1**y tenga en cuenta el número que aparece al final de **DataCardValue**.
 
-1. Establecer el **visibilidad** propiedad de la **Color**, **disponibilidad**, y **precio** tarjetas en esta fórmula (reemplazar, si es necesario, el número con la que anotó en el paso anterior):
+1. Establecer el **Visible** propiedad de la **Color**, **disponibilidad**, y **precio** tarjetas en esta fórmula (reemplazar, si es necesario, el número con la que anotó en el paso anterior):
 
-    **If(DataCardValue2.Value = true; true)**
+    **If(DataCardValue2.Value = true, true)**
 
 1. Mientras mantiene la tecla Alt presionada, seleccione el botón de alternancia **Detalles** varias veces (al hacer clic o pulsar en él).
 
@@ -198,7 +197,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 **P: ¿** ¿Necesito una licencia de PowerApps para crear o utilizar formularios de lista personalizados?
 
-**R:** Necesita un [plan de Office 365 que incluye PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses).
+**R:** Necesita un [plan de Office 365 que incluye PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
 **P: ¿** ¿Qué ocurre cuando los usuarios invitados tienen acceso a una lista que tiene un formulario personalizado?
 

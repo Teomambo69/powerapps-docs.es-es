@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
+ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553845"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65046051"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>Integración de compatibilidad global en aplicaciones de lienzo
 PowerApps es un producto global. Puede compilar y usar aplicaciones de lienzo en muchas regiones e idiomas diferentes.
@@ -71,7 +70,7 @@ Algunos [separadores y operadores](functions/operators.md) cambiarán según el 
 | **.** (punto o punto) |**.** (punto o punto) |**,** (coma) |**;**  (punto y coma) |
 | **,** (coma) |**,** (coma) |**;**  (punto y coma) |**;;**  (doble punto y coma) |
 
-El cambio en el separador de lista de PowerApps es coherente con el separador de lista de Excel.  Esto afectará a lo siguiente:
+El cambio en el separador de lista de PowerApps es coherente con lo que ocurre con el separador de lista de Excel.  Esto afectará a lo siguiente:
 
 * Argumentos en llamadas a funciones.
 * Campos de un [registro](working-with-tables.md#elements-of-a-table).
@@ -101,7 +100,7 @@ Entre otras cosas, puede usar **Language** para mostrar texto traducido a los us
 
 Y, a continuación, utilizar una fórmula como la siguiente para extraer las cadenas traducidas de la tabla:
 
-**LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Tenga en cuenta que las cadenas traducidas a otros idiomas podrían ocupar más espacio que las que están en su idioma.  En muchos casos, las etiquetas y otros elementos que muestran las cadenas en la interfaz de usuario necesitarán ser más anchos para dar cabida a esas cadenas.
 
@@ -114,8 +113,8 @@ La función **[Text](functions/function-text.md)** da formato a números y fecha
 
 **Text** requiere una cadena de formato para saber cómo desea dar formato al número o fecha.  Esta cadena de formato puede ser de dos formas:
 
-* **Una enumeración independiente de la configuración regional.**  Por ejemplo, **Text( Now(); DateTimeFormat.LongDate )**.  Esta fórmula dará formato a la fecha actual con el formato correspondiente al idioma.  Esta es la mejor manera de especificar la cadena de formato.
-* **Una cadena de formato personalizado.**  Por ejemplo, **Text( Now(); "[$-en-US]dddd, mmmm dd, yyyy" )** muestra el mismo texto que la enumeración cuando se utiliza en el idioma "en-US".  La ventaja de la cadena de formato personalizado es que puede especificar exactamente lo que desea.
+* **Una enumeración independiente de la configuración regional.**  Por ejemplo, **Text( Now(), DateTimeFormat.LongDate )**.  Esta fórmula dará formato a la fecha actual con el formato correspondiente al idioma.  Esta es la mejor manera de especificar la cadena de formato.
+* **Una cadena de formato personalizado.**  Por ejemplo, **Text( Now(), "[$-en-US]dddd, mmmm dd, yyyy" )** muestra el mismo texto que la enumeración cuando se utiliza en el idioma "en-US".  La ventaja de la cadena de formato personalizado es que puede especificar exactamente lo que desea.
 
 "[$-en-US]" al principio de la cadena de formato personalizado indica a **Text** en qué idioma debe interpretar la cadena de formato personalizado.  Esto se inserta automáticamente y su valor predeterminado es el idioma de creación.  Normalmente no necesitará cambiarlo.  Resulta útil cuando los autores de distintos idiomas están modificando la misma aplicación.
 
@@ -140,10 +139,10 @@ Todas estas funciones tienen los mismos argumentos:
 
 Por ejemplo:
 
-* **Value( "12,345.678"; "en-US" )** o **Value( "12,345.678" )** cuando "en-US" es el idioma del usuario, devuelve el número **12345.678**, listo para usarlo en cálculos.
-* **FechaNumero( "1/2/01"; "es-ES" )** o **FechaNumero( "1/2/01" )** cuando "es-ES" es el idioma del usuario, devuelve el valor de fecha y hora **February 1, 2001 at midnight**.
-* **HoraNumero( "11:43:02"; "fr-FR" )** o **FechaNumero( "11:43:02" )** cuando "fr-FR" es el idioma del usuario, devuelve el valor de fecha y hora **January 1, 1970 at 11:43:02**.
-* **FechaHoraNumero( "11:43:02 1/2/01"; "de-DE" )** o **FechaNumero( "11:43:02" )** cuando "de-DE" es el idioma del usuario, devuelve el valor de fecha y hora **February 1, 2001 at 11:43:02**.
+* **Value( "12,345.678", "en-US" )** o **Value( "12,345.678" )** cuando "en-US" es el idioma del usuario, devuelve el número **12345.678**, listo para usarlo en cálculos.
+* **FechaNumero( "1/2/01", "es-ES" )** o **FechaNumero( "1/2/01" )** cuando "es-ES" es el idioma del usuario, devuelve el valor de fecha y hora **February 1, 2001 at midnight**.
+* **HoraNumero( "11:43:02", "fr-FR" )** o **FechaNumero( "11:43:02" )** cuando "fr-FR" es el idioma del usuario, devuelve el valor de fecha y hora **January 1, 1970 at 11:43:02**.
+* **FechaHoraNumero( "11:43:02 1/2/01", "de-DE" )** o **FechaNumero( "11:43:02" )** cuando "de-DE" es el idioma del usuario, devuelve el valor de fecha y hora **February 1, 2001 at 11:43:02**.
 
 Para más información, consulte la documentación de las funciones **[Value](functions/function-value.md)** y **[FechaNumero, HoraNumero y FechaHoraNumero](functions/function-datevalue-timevalue.md)**, y cómo [trabajar con fechas y horas](show-text-dates-times.md).
 

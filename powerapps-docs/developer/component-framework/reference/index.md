@@ -8,23 +8,18 @@ ms.assetid: ''
 author: nkrb
 ms.author: nabuthuk
 manager: Jdaly
-ms.openlocfilehash: 8351f48019635dd0a6ec9921d8888d8ca4b77f80
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4e84956807b91e535e709aa2e0739fdf121bc2f7
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394392"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "64524289"
 ---
 # <a name="powerapps-component-framework-api-reference"></a>Referencia de la API del Marco de componentes de PowerApps
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Esta sección contiene documentación de referencia para crear controles personalizados mediante el Marco de componentes de PowerApps.
-
-> [!IMPORTANT]
-> - Marco de componentes de PowerApps es una característica en vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+Esta sección contiene documentación de referencia para crear componentes personalizados mediante el marco de componentes de PowerApps.
 
 |Nombre|Descripción|
 |----|-----------|

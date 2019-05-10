@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5ee975343afc16faaca52194b16cedff57e7e9f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a32dd9f483682ba462aae1d3bd9d257d3204b8f5
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560084"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670444"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -87,7 +86,7 @@ Su notificación push puede pasar parámetros concretos a la aplicación. Por ej
 Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del caso** en cuanto se abra la aplicación:
 
 1. Agregue un control **Timer** (Temporizador) y establezca su propiedad **OnTimerEnd** en esta fórmula:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (opcional) Oculte el control **Timer** (Temporizador) estableciendo la propiedad **Visible** en **false**.
 3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()**.
 
@@ -115,25 +114,25 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 ### <a name="sample-formulas"></a>Fórmulas de ejemplo
 Enviar una notificación básica.
 
-```
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
-{
-  recipients: [""f60ccf6f-7579-4f92-967c-2920473c966b", 72f988bf-86f1-41af-91ab-2d7cd011db47],
-  message: "A new case was assigned to you."
- }
+    {
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
+        message: "A new case was assigned to you."
+    }
 )
 ```
 
 Enviar una notificación que abra una aplicación y distribuya parámetros concretos.
 
-```
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
-{
-  recipients:["email1@contoso.com", "email2@contoso.com"],
-  message:"message in the notif toast",
-  params:Table({key:"notificationKey", value:"The value for notificationKey"}),
-  openApp:true
- }
+    {
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
+        openApp: true
+    }
 )
 ```
 

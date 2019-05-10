@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321955"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670918"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 Cambia la pantalla que se muestra.
@@ -60,7 +59,7 @@ Solo puede utilizar estas funciones dentro de una [fórmula de comportamiento](.
 ## <a name="syntax"></a>Sintaxis
 **Back**()
 
-**Navigate**( *Screen* [; *Transition* [; *UpdateContextRecord* ] ] )
+**Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
 
 * *Screen*: requerido. La pantalla que se va a mostrar.
 * *Transición* : opcional.  La transición visual usada entre la pantalla actual y la siguiente pantalla. Consulte la lista de valores válidos para este argumento anteriormente en este tema. El valor predeterminado es **ninguno**.
@@ -71,15 +70,15 @@ Solo puede utilizar estas funciones dentro de una [fórmula de comportamiento](.
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Navegar (detalles)** |Muestra la pantalla **Details** sin transición o cambio en el valor de una variable de contexto. |La pantalla **Details** aparece rápidamente. |
-| **Navigate( Details; ScreenTransition.Fade )** |Muestra la pantalla **Details** con una transición **Fade**.  No se cambia ningún valor de una variable de contexto. |La pantalla actual desaparece para mostrar la pantalla **Details**. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade** y actualiza el valor de la variable de contexto **ID** a **12**. |La pantalla actual desaparece para mostrar la pantalla **Details** y la variable de contexto **ID** de esa pantalla se establece en **12**. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;;&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade**. Actualiza el valor de la variable de contexto **ID** a **12** y actualiza el valor de la variable de contexto **Shade** a **Color.Red**. |La pantalla actual desaparece para mostrar la pantalla **Details**. La variable de contexto **ID** en la pantalla **Details** está establecida en **12** y la variable de contexto **Shade** está establecida en **Color.Red**. Si establece la propiedad **Fill** de un control de la pantalla **Details** en **Shade**, ese control se muestra en rojo. |
+| **Navigate( Details, ScreenTransition.Fade )** |Muestra la pantalla **Details** con una transición **Fade**.  No se cambia ningún valor de una variable de contexto. |La pantalla actual desaparece para mostrar la pantalla **Details**. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade** y actualiza el valor de la variable de contexto **ID** a **12**. |La pantalla actual desaparece para mostrar la pantalla **Details** y la variable de contexto **ID** de esa pantalla se establece en **12**. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade**. Actualiza el valor de la variable de contexto **ID** a **12** y actualiza el valor de la variable de contexto **Shade** a **Color.Red**. |La pantalla actual desaparece para mostrar la pantalla **Details**. La variable de contexto **ID** en la pantalla **Details** está establecida en **12** y la variable de contexto **Shade** está establecida en **Color.Red**. Si establece la propiedad **Fill** de un control de la pantalla **Details** en **Shade**, ese control se muestra en rojo. |
 
 ### <a name="step-by-step"></a>Paso a paso
 1. Asigne un nombre a la pantalla predeterminada **DefaultScreen**, agréguele una etiqueta y establezca la propiedad **[Text](../controls/properties-core.md)** de esa etiqueta para que muestre **Default**.
 2. Agregue una pantalla y asígnele el nombre **AddlScreen**.
 3. Agregue una etiqueta a **AddlScreen** y establezca la propiedad **[Text](../controls/properties-core.md)** de la etiqueta para que muestre **Addl**.
-4. Agregue un botón a **AddlScreen** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función:<br>**Navigate(DefaultScreen; ScreenTransition.Fade)**
+4. Agregue un botón a **AddlScreen** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta función:<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
 5. En **AddlScreen**, presione F5 y luego seleccione el botón.<br>**DefaultScreen** aparezca a través de una transición atenuada.
 
 [Otro ejemplo](../add-screen-context-variables.md)

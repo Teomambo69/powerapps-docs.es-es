@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed812fb8da85d36ff7c0790fe401b33043786cb8
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550327"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670385"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que se generación a menudo son más útiles cuando están disponibles allí donde las personas hacen su trabajo. Mediante la integración de aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios Web y otros servicios, como Power BI o SharePoint.
@@ -38,8 +38,7 @@ También puede integrar las aplicaciones de lienzo en SharePoint Online sin usar
 Si tiene una aplicación que desea insertar, el primer paso es establecer los parámetros para el identificador uniforme de recursos (URI), para que el iframe sepa dónde se encuentra la aplicación. El identificador URI tiene la forma siguiente:
 
 ```
-https://web.powerapps.com/webplayer/iframeapp?source=iframe
-&appId=/providers/Microsoft.PowerApps/apps/[AppID]
+https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
 > [!NOTE]
@@ -70,7 +69,7 @@ El identificador de la aplicación está disponible en powerapps.com. Para la ap
 ## <a name="embed-your-app-in-a-website"></a>Insertar la aplicación en un sitio web
 Ahora es muy fácil incrustar aplicaciones, solo hay que agregar el iframe al código HTML del sitio (o a cualquier otro servicio que admita iframes, como Power BI o SharePoint):
 
-```
+```html
 <iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
 ```
 
