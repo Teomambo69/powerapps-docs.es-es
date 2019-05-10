@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548786"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517368"
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 
@@ -40,6 +39,8 @@ El control puede tener un diseño horizontal o vertical.
 **Layout**: indica si las opciones se disponen en vertical u horizontal.
 
 **[Valor](properties-core.md)**: el valor de un control de entrada.
+
+**Seleccionado** : el registro de datos que representa el elemento seleccionado.
 
 ## <a name="all-properties"></a>Todas las propiedades
 
@@ -107,6 +108,8 @@ El control puede tener un diseño horizontal o vertical.
 
 **[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
+**(En desuso) SelectedText** : un valor de cadena que representa el elemento seleccionado.
+
 **[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
 **[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
@@ -127,19 +130,19 @@ El control puede tener un diseño horizontal o vertical.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
 1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
 2. Agregue un control **[Etiqueta](control-text-box.md)**, desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
 
-    **If("Premium" in Pricing.Selected.Value; "$200 per day"; "$150 per day")**
+    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 

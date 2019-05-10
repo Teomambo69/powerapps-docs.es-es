@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321715"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517436"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
@@ -37,7 +36,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 * El control muestra **12/31/2017** si el usuario pulsa o hace clic en el último día de 2017, la propiedad **Formato** está establecida en **FechaCorta** y la propiedad **Idioma** está establecida en **en-us**.
 * El control muestra **dimanche 31 decembre 2017** si el usuario pulsa o hace clic en el último día de 2017, la propiedad **Formato** está establecida en **FechaLarga** y la propiedad **Idioma** está establecida en **fr-fr**.
 
-**Idioma**: determina el idioma utilizado para dar formato a las fechas, como los nombres de los meses. Si no se especifica esta propiedad, la configuración del dispositivo del usuario determina el idioma.
+**Lenguaje** : determina el idioma que se usa para dar formato a fechas, incluidos los nombres de meses. Si no se especifica esta propiedad, la configuración del dispositivo del usuario determina el idioma. Los valores admitidos son "EN-us" y "FR".
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
@@ -76,6 +75,8 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **IconBackground**: el color de fondo del icono del selector de fecha.
 
+**InputTextPlaceholder** : texto informativo que aparece si no se especifican fechas.
+
 **[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
 **[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
@@ -110,7 +111,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.

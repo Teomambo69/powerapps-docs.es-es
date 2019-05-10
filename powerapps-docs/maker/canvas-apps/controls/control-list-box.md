@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a7128ace53cc1e0754eb7247282b2ecae7642672
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544432"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517423"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -31,6 +30,8 @@ Un control **Cuadro de lista** siempre muestra todas las opciones disponibles (a
 **[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
 
 **[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
+
+**Seleccionado** : el registro de datos que representa el elemento seleccionado.
 
 Al agregar una galería, una lista o un gráfico, la lista de propiedades muestra **Elementos** de manera predeterminada, con el fin de que pueda especificar fácilmente los datos que el nuevo control debe mostrar. Por ejemplo, puede establecer la propiedad **Elementos** de una galería en la tabla **Cuenta** de Salesforce, una tabla denominada **Inventario** que se ha creado en Excel y cargado en la nube, o una lista de SharePoint llamada **ConferenceSpeakers**.
 
@@ -97,6 +98,8 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 
 **[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
+**(En desuso) SelectedText** : un valor de cadena que representa el elemento seleccionado.
+
 **[ColorDeSelección](properties-color-border.md)**: color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.
 
 **[RellenoDeSelección](properties-color-border.md)**: el color de fondo de uno o varios elementos seleccionados en una lista o un área seleccionada de un control de entrada manuscrita.
@@ -122,11 +125,11 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 **[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Cuadro de lista**, denomínelo **CategoryList** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -134,16 +137,16 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 2. Agregar tres controles **[Lista desplegable](control-drop-down.md)**, muévalas a **CategoryList**y asígneles un nombre **ListaMoqueta**, **ListaParquet**, y **ListaMosaico**.
 3. Establecer la propiedad **[Elementos](properties-core.md)** de cada control **[Lista desplegable](control-drop-down.md)** en uno de estos valores:
    
-   * ListaMoqueta: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * ListaParquet: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * ListaMosaico: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * ListaMoqueta: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * ListaParquet: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * ListaMosaico: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Nombres de suelos en las listas desplegables](./media/control-list-box/flooring-names.png)
 4. Establezca la propiedad **[Elementos](properties-core.md)** de cada control **[Lista desplegable](control-drop-down.md)** en uno de estos valores:
    
-   * Listamoqueta: **If("Carpet" in CategoryList.SelectedItems.Value; true)**
-   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value; true)**
-   * TileList: **If("Tile" in CategoryList.SelectedItems.Value; true)**
+   * Listamoqueta: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 5. Presione F5 y, a continuación, elija uno o más elementos de **CategoryList**.

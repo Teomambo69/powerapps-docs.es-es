@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544278"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517383"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
@@ -34,7 +33,9 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
   
 **Valor**: columna de datos que quiere mostrar en el control (por ejemplo, si un origen de datos tiene varias columnas).
 
-**Seleccionados**: el elemento seleccionado.
+**Seleccionado** : el registro de datos que representa el elemento seleccionado.
+
+**AllowEmptySelection** : indica si el control muestra una selección vacía si no se ha seleccionado ningún elemento. Usuarios de la aplicación también pueden borrar sus opciones al seleccionar el elemento en blanco.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 **[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
@@ -99,6 +100,8 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 
 **[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
+**(En desuso) SelectedText** : un valor de cadena que representa el elemento seleccionado.
+
 **[ColorDeSelección](properties-color-border.md)**: color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.
 
 **[RellenoDeSelección](properties-color-border.md)**: el color de fondo de uno o varios elementos seleccionados en una lista o un área seleccionada de un control de entrada manuscrita.
@@ -127,7 +130,7 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Items](properties-core.md)** en esta expresión:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -140,13 +143,13 @@ Los principios de este procedimiento se aplican a ninguna [origen de datos que s
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Esta fórmula muestra todas las ciudades de la entidad **Cuentas**. Si hay más de un registro con la misma ciudad, la función **[Distinct](../functions/function-distinct.md)** oculta la duplicación en el control de lista desplegable.
 
 1. (opcional) Cambie el nombre del control **Lista desplegable** a **Ciudades**, agregue un control vertical **Galería** y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Esta función **[Filtro](../functions/function-filter-lookup.md)** muestra únicamente aquellos registros de la entidad **Cuentas** en los que la ciudad coincida con el valor seleccionado en el control **Ciudades**.
 

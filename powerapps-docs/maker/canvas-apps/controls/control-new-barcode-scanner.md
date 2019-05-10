@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543979"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517335"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Control escáner de código de barras para las aplicaciones de lienzo
 
@@ -60,6 +60,8 @@ El control admite estos tipos de códigos de barras, los códigos de la matriz d
 **FlashlightEnabled** : indica si el linterna se habilita automáticamente cuando se abre el analizador.
 
 **[Alto](properties-size-location.md)**  : el alto del botón que activa el analizador.
+
+**PreferFrontCamera** : indica si la cámara frontal, cuando esté disponible, se usa para el análisis.
 
 **[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
