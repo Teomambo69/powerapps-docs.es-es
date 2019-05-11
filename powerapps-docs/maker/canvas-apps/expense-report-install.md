@@ -1,24 +1,24 @@
 ---
 title: Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo | Microsoft Docs
 description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de informe de gastos en aplicaciones de lienzo.
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561068"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535299"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -29,7 +29,7 @@ Tiempo estimado para completar estos pasos: **10-15 minutos**
 > [!TIP]
 > Vea [este vídeo](https://youtu.be/kJXZPILfbwU) para una demostración sobre cómo usar la aplicación de ejemplo de informe de gastos. 
 
-Mantenga un seguimiento de los informes de gastos desde que se envían hasta que se aprueban. Registre las partidas como una acumulación de gastos individuales y envíelos para su aprobación cuando estén listos. Esta aplicación requiere un mínimo de configuración para personalizarla.
+Realizar un seguimiento de los informes de gastos de envío para la aprobación. Partidas como gastos individuales se acumulan y enviarlo para su aprobación cuando esté listo. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial del informe de gastos de PowerApps](./media/expense-report-install/expense-report-powerapp.png)
 

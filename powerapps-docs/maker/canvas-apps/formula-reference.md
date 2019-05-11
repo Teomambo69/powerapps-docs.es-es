@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
+ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559596"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525633"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -49,6 +49,8 @@ Otros elementos incluyen:
 **[App](functions/signals.md)**: devuelve información sobre la aplicación que se está ejecutando, por ejemplo, qué pantalla se muestra actualmente.
 
 **[Asin](functions/function-trig.md)**: devuelve el arco seno de un número, en radianes.
+
+**[AsType](functions/function-astype-istype.md)**  : trata una referencia de registro como un tipo de entidad concreto.
 
 **[Atan](functions/function-trig.md)**: devuelve el arco tangente de un número, en radianes.
 
@@ -183,6 +185,8 @@ Otros elementos incluyen:
 **[IsNumeric](functions/function-isnumeric.md)**: busca un valor numérico.
 
 **[IsToday](functions/function-now-today-istoday.md)**: comprueba si un valor de fecha y hora coincide con algún momento del día actual.
+
+**[IsType](functions/function-astype-istype.md)**  : comprueba si una referencia de registro se refiere a un tipo de entidad concreto.  
 
 ## <a name="l"></a>Grande
 **[Language](functions/function-language.md)**: devuelve la etiqueta de idioma del usuario actual.

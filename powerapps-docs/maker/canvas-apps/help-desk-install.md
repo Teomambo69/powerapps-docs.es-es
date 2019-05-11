@@ -1,24 +1,24 @@
 ---
 title: Instalar y configurar el ejemplo de servicio de asistencia en aplicaciones de lienzo | Microsoft Docs
 description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de servicio de asistencia en aplicaciones de lienzo.
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9d1b7eaecc7bd519e9423e6e64387cb6cad76c7f
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554398"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535258"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
