@@ -1,5 +1,5 @@
 ---
-title: Uso de una aplicación de ejemplo (inicio rápido) | Microsoft Docs
+title: Uso de una aplicación de ejemplo | Microsoft Docs
 description: Instrucciones paso a paso para crear una aplicación de lienzo en función de un ejemplo en PowerApps
 author: AFTOwen
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
+ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540345"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65546874"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Inicio rápido: Crear una aplicación de lienzo de un ejemplo en PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Crear una aplicación de lienzo de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
 
 En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para almacenar estos datos, necesitará una cuenta de almacenamiento en la nube, como Dropbox, Google Drive o OneDrive.
