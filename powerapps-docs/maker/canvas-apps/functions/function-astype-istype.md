@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65526063"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Funciones AsType y IsType en las aplicaciones de lienzo
 
@@ -46,31 +47,31 @@ El **AsType** función trata una referencia de registro como un tipo de entidad 
 
 Use estas funciones juntas para probar primero el tipo de entidad de un registro y, a continuación, tratarlo como un registro de ese tipo para que los campos están disponibles:
 
-```powerapps-dot
-If( IsType( First( Accounts ).Owner, Users ),
-    AsType( First( Accounts ).Owner, Users ).'Full Name',
-    AsType( First( Accounts ).Owner, Teams ).'Team Name'
+```powerapps-comma
+If( IsType( First( Accounts ).Owner; Users );
+    AsType( First( Accounts ).Owner; Users ).'Full Name';
+    AsType( First( Accounts ).Owner; Teams ).'Team Name'
 )
 ```
 
 Necesita estas funciones solo si está accediendo a los campos de una referencia de registro. Por ejemplo, puede utilizar referencias de registros en el [ **filtro** ](function-filter-lookup.md) funcionando sin necesidad de **IsType** o **AsType**:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Users ) )
+```powerapps-comma
+Filter( Accounts; Owner = First( Users ) )
 ```
 
 De forma similar, puede utilizar referencias de registros con el [ **Patch** ](function-patch.md) función:
 
-```powerapps-dot
-Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
+```powerapps-comma
+Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
 ```  
 
 Si se utilizan en un contexto de registro, por ejemplo, dentro de un [ **galería** ](../controls/control-gallery.md) o [ **Editar formulario** ](../controls/control-form-detail.md) control, es posible que deba usar el [global operador de desambiguación](operators.md#disambiguation-operator) para hacer referencia al tipo de entidad. Por ejemplo, esta fórmula sería eficaz para una galería que muestra una lista de contactos donde **nombre de la compañía** es un **cliente** búsqueda.
 
-```powerapps-dot
-If( IsType( ThisItem.'Company Name', [@Accounts] ),
-    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+```powerapps-comma
+If( IsType( ThisItem.'Company Name'; [@Accounts] );
+    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
 )
 ```
 
@@ -80,12 +81,12 @@ Si la referencia del registro es *en blanco*, **IsType** devuelve *false*, y **A
 
 ## <a name="syntax"></a>Sintaxis
 
-**AsType**( *RecordReference*, *EntityType* )
+**AsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de varias entidades.
 - *EntityType* : requerido. La entidad concreta para que se va a probar.
 
-**IsType**( *RecordReference*, *EntityType* )
+**IsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de varias entidades.
 - *EntityType* : requerido. La entidad concreta que se va a convertir.
@@ -130,11 +131,11 @@ Si la referencia del registro es *en blanco*, **IsType** devuelve *false*, y **A
 
 1. Establecer el **texto** propiedad de **subtítulo1** en esta fórmula:
 
-    ```powerapps-dot
-    If( IsBlank( ThisItem.'Company Name' ), "--",
-        IsType( ThisItem.'Company Name', [@Accounts] ),
-            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+    ```powerapps-comma
+    If( IsBlank( ThisItem.'Company Name' ); "--";
+        IsType( ThisItem.'Company Name'; [@Accounts] );
+            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
     )
     ```
 

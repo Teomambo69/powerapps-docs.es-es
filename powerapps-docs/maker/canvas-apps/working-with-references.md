@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65527098"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>Comprender las referencias de registros y polimórficas búsquedas en las aplicaciones de lienzo
 
@@ -78,10 +79,10 @@ Necesita una fórmula que puedan adaptarse a esta variación. También deberá a
 
 Con estos datos en los orígenes de colocar, use esta fórmula para mostrar el nombre de un usuario o un equipo:
 
-```powerapps-dot
-If( IsType( ThisItem.Owner, [@Teams] ),
-    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
-    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
+```powerapps-comma
+If( IsType( ThisItem.Owner; [@Teams] );
+    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
+    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
 ```
 
 > [!div class="mx-imgBorder"]
@@ -100,10 +101,10 @@ El **AsType** función devuelve un error si el **propietario** campo no coincide
 
 A continuación, reemplace la fórmula anterior por este otro:
 
-```powerapps-dot
+```powerapps-comma
 IfError(
-    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
-    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
+    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
+    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
 ```
 
 ## <a name="filter-based-on-an-owner"></a>Filtrar por propietario
@@ -120,8 +121,8 @@ Agregar un **cuadro combinado** controlar por encima de la galería y establezca
 
 Para filtrar la Galería por un usuario específico seleccionado de este cuadro combinado, establezca la galería **elementos** fórmula para la propiedad.
 
-```powerapps-dot
-Filter( Accounts, Owner = ComboBox1.Selected )
+```powerapps-comma
+Filter( Accounts; Owner = ComboBox1.Selected )
 ```
 
 > [!div class="mx-imgBorder"]
@@ -136,7 +137,7 @@ Puede obtener un poco más elegante que admiten el filtrado por un usuario o un 
 
 1. Liberar algo de espacio en la parte superior de la pantalla al cambiar el tamaño de la galería y mover el cuadro combinado, inserte un [ **Radio** control](controls/control-radio.md) por encima de la galería y, a continuación, establezca estas propiedades para el nuevo control:
 
-    - **elementos**: `[ "All", "Users", "Teams" ]`
+    - **elementos**: `[ "All"; "Users"; "Teams" ]`
     - **Diseño**: `Layout.Horizontal`
 
 1. Para el **cuadro combinado** , establezca esta propiedad (si el cuadro combinado desaparece, seleccione **usuarios** en el control de radio):
@@ -152,8 +153,8 @@ Puede obtener un poco más elegante que admiten el filtrado por un usuario o un 
 
 1. Por último, establezca el **elementos** propiedad de la **galería** control en esta fórmula:
 
-    ```powerapps-dot
-    Filter( Accounts,
+    ```powerapps-comma
+    Filter( Accounts;
         Radio1.Selected.Value = "All"
         Or (Radio1.Selected.Value = "Users" And Owner = ComboBox1.Selected)
         Or (Radio1.Selected.Value = "Teams" And Owner = ComboBox1_1.Selected)
@@ -179,8 +180,8 @@ Si desea filtrar según el tipo de propietario, puede usar el **IsType** funció
 
 Puede actualizar el **propietario** campo en la misma manera que cualquier otra búsqueda. Para establecer el propietario de la cuenta seleccionada actualmente en el primer equipo:
 
-```powerapps-dot
-Patch( Accounts, Gallery1.Selected, { Owner: First( Teams ) } )
+```powerapps-comma
+Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 ```
 
 Este enfoque no es diferente de una búsqueda normal porque la aplicación conoce el tipo de **primero (equipos)**. Si desea que el primer usuario en su lugar, reemplace esa parte con **primero (usuarios)**. El **Patch** función sabe que la **propietario** campo se puede establecer en cualquiera de estos dos tipos de entidad.
@@ -206,8 +207,8 @@ Para agregar esta funcionalidad a la aplicación:
 
 1. Seleccione el texto copiado **Radio** controlar y, a continuación, cambiar estas propiedades:
 
-    - Elementos: `[ "Users", "Teams" ]`
-    - Valor predeterminado: `If( IsType( Gallery1.Selected.Owner, Users ), "Users", "Teams" )`
+    - Elementos: `[ "Users"; "Teams" ]`
+    - Valor predeterminado: `If( IsType( Gallery1.Selected.Owner; Users ); "Users"; "Teams" )`
 
     > [!div class="mx-imgBorder"]
     > ![Quita la opción todos del control de radio](media/working-with-references/patch-noall.png) 
@@ -216,9 +217,9 @@ Para agregar esta funcionalidad a la aplicación:
 
 1. Seleccione el visible **cuadro combinado** y, a continuación, establezca el **DefaultSelectedItems** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( IsType( Gallery1.Selected.Owner, Users ),
-        AsType( Gallery1.Selected.Owner, Users ),
+    ```powerapps-comma
+    If( IsType( Gallery1.Selected.Owner; Users );
+        AsType( Gallery1.Selected.Owner; Users );
         Blank()
     )
     ```
@@ -232,9 +233,9 @@ Para agregar esta funcionalidad a la aplicación:
 
 1. Seleccione el visible **cuadro combinado** para que los equipos y, a continuación, establezca su **DefaultSelectedItems** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( IsType( Gallery1.Selected.Owner, Teams ),
-        AsType( Gallery1.Selected.Owner, Teams ),
+    ```powerapps-comma
+    If( IsType( Gallery1.Selected.Owner; Teams );
+        AsType( Gallery1.Selected.Owner; Teams );
         Blank()
     )
     ```
@@ -246,10 +247,10 @@ Para agregar esta funcionalidad a la aplicación:
 
 1. Establecer el **OnSelect** propiedad del botón en esta fórmula:
 
-    ```powerapps-dot
-    Patch( Accounts, Gallery1.Selected,
-        { Owner: If( Radio1_1.Selected.Value = "Users",
-                ComboBox1_2.Selected,
+    ```powerapps-comma
+    Patch( Accounts; Gallery1.Selected;
+        { Owner: If( Radio1_1.Selected.Value = "Users";
+                ComboBox1_2.Selected;
                 ComboBox1_3.Selected ) } )
     ```
 
@@ -293,10 +294,10 @@ Puede mostrar un **propietario** campo dentro de un formulario mediante la adici
 
 1. Insertar un **etiqueta** en la tarjeta personalizada y, a continuación, establezca la etiqueta **texto** propiedad a la fórmula que usó en la Galería:
 
-    ```powerapps-dot
-    If( IsType( ThisItem.Owner, Teams ),
-        "Team: " & AsType( ThisItem.Owner, Teams ).'Team Name',
-        "User: " & AsType( ThisItem.Owner, Users ).'Full Name' )
+    ```powerapps-comma
+    If( IsType( ThisItem.Owner; Teams );
+        "Team: " & AsType( ThisItem.Owner; Teams ).'Team Name';
+        "User: " & AsType( ThisItem.Owner; Users ).'Full Name' )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -335,14 +336,14 @@ El tratamiento de la **cliente** y **propietario** campos son tan similares que 
 | La galería **elementos** propiedad | **Cuentas** | **Contactos** |
 | De forma **elementos** propiedad | **Cuentas** | **Contactos** |
 | El primer argumento de **revisión**<br>en el botón **Alseleccionar** propiedad | **Cuentas** | **Contactos** |
-| Filtrar del radio **elementos** propiedad | **[&nbsp;"All",&nbsp;"Users"&nbsp;"Equipos"&nbsp;]** | **[&nbsp;"All",&nbsp;"Accounts",&nbsp;"Contacts"&nbsp;]** |
-| Revisión del radio **elementos** propiedad | **[ "Users", "Teams" ]** | **["Accounts", "Contacts"]** |
+| Filtrar del radio **elementos** propiedad | **[&nbsp;"All";&nbsp;"Users"&nbsp;"Equipos"&nbsp;]** | **[&nbsp;"All";&nbsp;"Accounts";&nbsp;"Contacts"&nbsp;]** |
+| Revisión del radio **elementos** propiedad | **[ "Users"; "Teams" ]** | **["Accounts"; "Contacts"]** |
 | Del cuadro combinado **Visible** propiedad | **"Usuarios"** y **"Equipos"** | **"Cuentas"** y **"Contacts"** |
 
 Por ejemplo, la nueva galería debe tener esto **elementos** propiedad:
 
-```powerapps-dot
-Filter( Contacts,
+```powerapps-comma
+Filter( Contacts;
     Radio1.Selected.Value = "All"
     Or (Radio1.Selected.Value = "Accounts" And 'Company Name' = ComboBox1.Selected)
     Or (Radio1.Selected.Value = "Contacts" And 'Company Name' = ComboBox1_1.Selected)
@@ -360,11 +361,11 @@ Dos diferencias importantes entre **cliente** y **propietario** requieren una ac
 
 Ambos cambios están en la misma fórmula, que aparece en la tarjeta personalizada en el formulario, así como el **texto** propiedad del control de etiqueta de la Galería:
 
-```powerapps-dot
-If( IsBlank( ThisItem.'Company Name' ), "",
-    IsType( ThisItem.'Company Name', [@Accounts] ),
-        "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-    "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+```powerapps-comma
+If( IsBlank( ThisItem.'Company Name' ); "";
+    IsType( ThisItem.'Company Name'; [@Accounts] );
+        "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+    "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
 )
 ```
 
@@ -403,12 +404,12 @@ De nuevo, deberá agregar un origen de datos: esta vez para **Faxes**. En el **v
 
 Una diferencia importante para **referente a** es que no se limita a **cuentas** y **contactos**. De hecho, la lista de entidades es extensible con entidades personalizadas. La mayoría de la aplicación puede dar cabida a este punto sin modificaciones, pero debe actualizar la fórmula para la etiqueta en la galería y el formulario:
 
-```powerapps-dot
-If( IsBlank( ThisItem.Regarding ), "",
-    IsType( ThisItem.Regarding, [@Accounts] ),
-        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
-    IsType( ThisItem.Regarding, [@Contacts] ),
-        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
+```powerapps-comma
+If( IsBlank( ThisItem.Regarding ); "";
+    IsType( ThisItem.Regarding; [@Accounts] );
+        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
+    IsType( ThisItem.Regarding; [@Contacts] );
+        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
     ""
 )
 ```
@@ -515,11 +516,11 @@ Registros proceden de la **actividad** entidad, pero, sin embargo, puede usar el
 
 Con esta fórmula, puede mostrar el tipo de registro en un control label dentro de la Galería:
 
-```powerapps-dot
-If( IsType( ThisItem, [@Faxes] ), "Fax",
-    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
-    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
-    IsType( ThisItem, [@Chats] ), "Chat",
+```powerapps-comma
+If( IsType( ThisItem; [@Faxes] ); "Fax";
+    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
+    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
+    IsType( ThisItem; [@Chats] ); "Chat";
     "Unknown"
 )
 ```
@@ -529,14 +530,14 @@ If( IsType( ThisItem, [@Faxes] ), "Fax",
 
 También puede usar **AsType** para tener acceso a los campos del tipo específico. Por ejemplo, esta fórmula determina el tipo de cada actividad y cuando, para las llamadas de teléfono, se muestra la dirección de número y llamada de teléfono desde el **números de teléfono** entidad:
 
-```powerapps-dot
-If( IsType( ThisItem, [@Faxes] ), "Fax",
-    IsType( ThisItem, [@'Phone Calls'] ),
+```powerapps-comma
+If( IsType( ThisItem; [@Faxes] ); "Fax";
+    IsType( ThisItem; [@'Phone Calls'] );
        "Phone Call: " &
-       AsType( ThisItem, [@'Phone Calls'] ).'Phone Number' &
-       " (" & AsType( ThisItem, [@'Phone Calls'] ).Direction & ")",
-    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
-    IsType( ThisItem, [@Chats] ), "Chat",
+       AsType( ThisItem; [@'Phone Calls'] ).'Phone Number' &
+       " (" & AsType( ThisItem; [@'Phone Calls'] ).Direction & ")";
+    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
+    IsType( ThisItem; [@Chats] ); "Chat";
     "Unknown"
 )
 ```
@@ -571,7 +572,7 @@ Además de esta diferencia, utiliza el **referente a** búsqueda de la misma man
 >
 > Sin embargo, el orden inverso **notas** relación uno a varios está disponible, por lo que puede filtrar una lista de notas de un registro que está habilitado para los datos adjuntos. También puede usar el [ **relacionar** ](functions/function-relate-unrelate.md) función para agregar una nota a un registro **notas** tabla, pero la nota se debe crear en primer lugar, como en este ejemplo:
 >
->`Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note" } ) )`
+>`Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note" } ) )`
 
 ## <a name="activity-parties"></a>Grupos de actividad
 

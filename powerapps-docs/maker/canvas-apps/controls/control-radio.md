@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65517368"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 
@@ -130,19 +131,19 @@ El control puede tener un diseño horizontal o vertical.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
 1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    **["Standard", "Premium"]**
+    **["Standard"; "Premium"]**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
 2. Agregue un control **[Etiqueta](control-text-box.md)**, desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
 
-    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
+    **If("Premium" in Pricing.Selected.Value; "$200 per day"; "$150 per day")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 
