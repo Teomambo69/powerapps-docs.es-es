@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320866"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609362"
 ---
 # <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad de Common Data Service.
@@ -27,9 +27,9 @@ Un control que permite a los usuarios descargar archivos en su dispositivo, así
 El control de datos adjuntos presenta estas limitaciones:
 1. Los datos adjuntos son compatibles con las listas de SharePoint y las entidades de Common Data Service.
 
-1. La carga y eliminación de una funcionalidad solo funcionan dentro de un formulario.  El control de datos adjuntos parecerá que está deshabilitado en modo de edición, pero no dentro de los formularios. Tenga en cuenta que con el fin de guardar las incorporaciones y eliminaciones de archivos en el back-end, el usuario final debe guardar el formulario.
+1. Cargar y eliminar trabajo funcionalidad solo dentro de un formulario. El control datos adjuntos aparece deshabilitado cuando en modo de edición y no dentro de un formulario. Para guardar las eliminaciones y adiciones de archivos, el usuario de la aplicación debe guardar el formulario. Debido a esta limitación, el control de datos adjuntos no está disponible desde el **insertar** pestaña, pero aparece en el formulario cuando se habilita el campo de formulario de datos adjuntos en un formulario de SharePoint o en Common Data Service.
 
-1. No se pueden cargar archivos con un tamaño superior a 10 MB.  
+1. Puede cargar archivos de solo si son 10 MB.  
 
 ## <a name="description"></a>Descripción
 Un **datos adjuntos** control le permite abrir, agregar y quitar archivos de una lista de SharePoint o una entidad de Common Data Service.
