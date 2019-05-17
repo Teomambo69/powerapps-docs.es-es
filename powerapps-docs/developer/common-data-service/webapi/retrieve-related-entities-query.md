@@ -3,7 +3,6 @@ title: Recuperar entidades relacionadas con una consulta (Common Data Service) |
 description: Lea cómo recuperar entidades relacionadas para una entidad ampliando las propiedades de navegación.
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''

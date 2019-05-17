@@ -2,8 +2,7 @@
 title: Usar la API web de Common Data Service (Common Data Service)| Microsoft Docs
 description: 'La API web de Common Data Service implementa OData v4 y proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos.'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,9 @@ applies_to:
 ms.assetid: 15c4039e-a3ca-4116-ba1d-3ac88cba3ae1
 caps.latest.revision: 15
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+ms.reviewer: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -25,7 +25,10 @@ search.app:
 
 La API web es uno de dos servicios web que puede usar para trabajar con datos y metadatos en Common Data Service. El otro es el [Servicio de organización](../org-service/overview.md).
 
-La API web de Common Data Service proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos. La API web implementa OData (Open Data Protocol), versión 4.0, un estándar de OASIS para crear y consumir API RESTful con orígenes de datos enriquecidos. Puede obtener más información sobre este protocolo en [http://www.odata.org/](http://www.odata.org/). Los detalles sobre esta norma están disponibles en [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0).  
+La API web de Common Data Service proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos. La API web implementa OData (Open Data Protocol), versión 4.0, un estándar de OASIS para crear y consumir API RESTful con orígenes de datos enriquecidos. Puede obtener más información sobre este protocolo en [http://www.odata.org/](http://www.odata.org/). Los detalles sobre esta norma están disponibles en [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0). 
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Utilizar la API web de Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api).
   
 Dado que la API web se basa en estándares abiertos, no proporcionamos ensamblados para una experiencia de desarrollador específica. Puede crear solicitudes HTTP para operaciones específicas o usar bibliotecas de terceros para generar clases para cualquier idioma o plataforma que desee. Puede encontrar una lista de bibliotecas compatibles con OData versión 4.0 en [http://www.odata.org/libraries/](http://www.odata.org/libraries/).  
 

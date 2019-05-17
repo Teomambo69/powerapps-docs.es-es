@@ -1,6 +1,6 @@
 ---
-title: 'Desarrolladores: Procedimientos recomendados e instrucciones al trabajar con metadatos en Common Data Service | Microsoft Docs'
-description: Procedimientos recomendados e instrucciones dirigidos a desarrolladores que trabajan con metadatos en Common Data Service en PowerApps.
+title: 'Programadores: Prácticas recomendadas e instrucciones cuando se trabaja con metadatos para Common Data Service | Microsoft Docs'
+description: Prácticas recomendadas e instrucciones cuando se trabaja con metadatos para programadores de Common Data Service en PowerApps
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,26 +16,21 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 35e07c87e515759a6e61a0c0a027c190b11bef53
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528398"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Procedimientos recomendados e instrucciones al trabajar con metadatos en Common Data Service
 
-Aquí se enumeran todas las instrucciones y procedimientos recomendados para interactuar y trabajar con metadatos en Common Data Service.
+# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones cuando se trabaja con metadatos para Common Data Service
+
+La siguiente lista contiene todas las instrucciones y prácticas recomendadas sobre cómo interactuar y trabajar con metadatos en Common Data Service.
 
 
-|Procedimiento recomendado  |Descripción  |
+|Práctica recomendada  |Descripción  |
 |---------|---------|
-|[Recuperar metadatos publicados](retrieve-published-metadata.md)     |La recuperación de metadatos no publicados no solo supone más sobrecarga para el procesamiento de la solicitud, haciendo que este se ralentice, sino que también podría devolver metadatos no solicitados por el usuario.         |
-|[Recuperar columnas específicas de una entidad a través de las API de consulta](retrieve-specific-columns-entity-via-query-apis.md)     |Las consultas enviadas para recuperar datos deben incluir columnas concretas en la instancia ColumnSet asociada a la consulta, en lugar de Todas las columnas.         |
+|[Recuperar metadatos publicados](retrieve-published-metadata.md)     |La recuperación de metadatos no publicados no solo agregará sobrecarga al procesamiento de la solicitud, con un rendimiento inferior, pero también puede devolver metadatos que no espera el solicitante.         |
+|[Recuperar columnas específicas para una entidad mediante API de consulta](retrieve-specific-columns-entity-via-query-apis.md)     |Las consultas enviadas para recuperar datos deben incluir columnas específicas en la instancia de ColumnSet asociadas a la consulta en lugar de a todas las columnas.         |
 
 # <a name="see-also"></a>Vea también
-[Trabajar con metadatos mediante código](../../metadata-services.md)<br />
+[Trabajar con metadatos con código](../../metadata-services.md)<br />

@@ -2,7 +2,7 @@
 title: Usar Upsert para insertar o actualizar un registro (Common Data Service) | Microsoft Docs
 description: El mensaje UpsertRequest (actualizar o insertar) le ayuda a simplificar varios escenarios de integración de datos en los que no sabe si ya existe un registro en Dynamics 365. En tales casos no sabrá si debe llamar a una operación UpdateRequest o CreateRequest. Esto da lugar a que consulte el registro primero para determinar si existe antes de realizar la operación adecuada. El mensaje UpsertRequest le ayuda a solucionar este problema
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Use Upsert para insertar o actualizar un registro
 
-Puede reducir la complejidad que caracteriza a los escenarios de integración de datos mediante el mensaje <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest>. Al cargar datos en Common Data Service Customer Engagement desde un sistema externo, por ejemplo en un escenario de integración de datos en masa, quizá no sepa si ya existe un registro en Common Data Service. En tales casos no sabrá si debe llamar a una operación <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> o <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>. Esto da lugar a que consulte el registro primero para determinar si existe antes de realizar la operación adecuada. Ahora puede reducir esta complejidad y cargar los datos en Common Data Service más eficazmente utilizando el nuevo mensaje <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Actualizar o Insertar).  
+Puede reducir la complejidad que caracteriza a los escenarios de integración de datos mediante el mensaje <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest>. Al cargar datos en Common Data Service desde un sistema externo, por ejemplo en un escenario de integración de datos en masa, quizá no sepa si ya existe un registro en Common Data Service. En tales casos no sabrá si debe llamar a una operación <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> o <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>. Esto da lugar a que consulte el registro primero para determinar si existe antes de realizar la operación adecuada. Ahora puede reducir esta complejidad y cargar los datos en Common Data Service más eficazmente utilizando el nuevo mensaje <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Actualizar o Insertar).  
   
 <a name="BKMK_UsingUpsert"></a>   
 ## <a name="using-upsert"></a>Mediante Upsert  

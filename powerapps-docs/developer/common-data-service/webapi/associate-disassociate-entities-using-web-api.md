@@ -3,7 +3,6 @@ title: Asociar y eliminar la asociación de entidades utilizando la API web (Com
 description: 'Aprenda a agregar referencia a una propiedad de navegación valorada como colección, eliminar una referencia y cambiar una referencia existente mediante la API web'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

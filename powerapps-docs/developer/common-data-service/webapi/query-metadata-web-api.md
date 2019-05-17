@@ -3,7 +3,6 @@ title: Consultar datos utilizando la API web (Common Data Service) | Microsoft D
 description: La posibilidad de consultar metadatos del sistema está disponible mediante la API web así como usando el servicio de organización mediante RetrieveMetadataChangesRequest
 ms.custom: ''
 ms.date: 11/04/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 3ad4a332-a304-421f-a9fa-82ea3e0503fe
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

@@ -2,8 +2,7 @@
 title: Realizar operaciones utilizando la API web (Common Data Service)| Microsoft Docs
 description: 'La API web Common Data Service proporciona un servicio web moderno de RESTful que puede usar para interactuar con Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos. Lea sobre las operaciones que se pueden realizar mediante la API web'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -24,6 +23,10 @@ search.app:
 # <a name="perform-operations-using-the-web-api"></a>Realizar operaciones mediante la API web
 
 La API web proporciona un servicio web moderno de RESTful que puede usar para interactuar con Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos.
+
+> [!NOTE]
+> La información en esta sección también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local). 
+
 
 ## <a name="in-this-section"></a>En esta sección
 

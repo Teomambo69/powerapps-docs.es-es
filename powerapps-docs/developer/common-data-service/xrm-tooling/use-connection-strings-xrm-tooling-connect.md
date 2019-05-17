@@ -2,7 +2,7 @@
 title: Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
 description: Los útiles de XRM le permiten conectarse a su entorno de Common Data Service mediante las cadenas de conexión
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
 caps.latest.revision: 21
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -23,33 +23,37 @@ search.app:
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service
 
-Con Common Data Service, los útiles de XRM le permiten conectarse a su entorno de Common Data Service mediante las cadenas de conexión. Esto es similar al concepto de cadenas de conexión que se utilizan con SQL Server. Las cadenas de conexión tienen compatibilidad nativa en archivos de configuración, incluida la capacidad de cifrar las secciones de configuración para máxima seguridad. Esto permite configurar las conexiones de Common Data Service en tiempo de implementación, y no codificar de forma rígida en su aplicación para conectarse al entorno de Common Data Service.  
-  
+Con Common Data Service, los útiles de XRM le permiten conectarse a su entorno de Common Data Service mediante las cadenas de conexión. Esto es similar al concepto de cadenas de conexión que se utilizan con **SQL Server**. Las cadenas de conexión tienen compatibilidad nativa en archivos de configuración, incluida la capacidad de cifrar las secciones de configuración para máxima seguridad. Esto permite configurar las conexiones de Common Data Service en tiempo de implementación, y no codificar de forma rígida en su aplicación para conectarse al entorno de Common Data Service.  
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Usar cadenas de conexión para conectarse a Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect)
+
 <a name="Create"></a> 
 
 ## <a name="create-a-connection-string"></a>Crear una cadena de conexión
 
- La cadena de conexión se especifica en el archivo app.config o web.config para su proyecto, como se muestra en el siguiente ejemplo.  
+ Especifique la cadena de conexión en el archivo `app.config` o `web.config` del proyecto, como se muestra en el ejemplo siguiente.  
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
+    <add name="MyCDSServer" connectionString="AuthType=Office365;Url=http://contoso:8080/Test;UserName=jsmith@contoso.onmicrosoft.com; 
+  Password=passcode" />  
 </connectionStrings>  
 ```  
   
 > [!IMPORTANT]
->  Si agrega cualquier información confidencial al archivo app.config o web.config, por ejemplo, una contraseña de cuenta, asegúrese de tomar las precauciones de seguridad apropiadas para proteger la información.  
+> Si agrega alguna información confidencial al `web.config file` o `app.config`, como la contraseña de una cuenta, asegúrese de tomar las precauciones de seguridad adecuadas para proteger la información.  
   
  Después de crear la cadena de conexión, úsela para crear un objeto <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.  
   
 ```csharp  
 //Use the connection string named "MyCDSServer"  
 //from the configuration file  
-CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionStrings["MyCDSServer"].ConnectionString);  
+CrmServiceClient svc = new CrmServiceClient(ConnectionString);  
 ```  
   
 > [!NOTE]
->  Tendrá que usar la directiva `using` en siguiente el código para hacer referencia al espacio de nombres de `System.Configuration` para obtener acceso a la cadena de conexión en el código: `using System.Configuration;`  
+> Tendrá que usar la directiva `using` en siguiente el código para hacer referencia al espacio de nombres de `System.Configuration` para obtener acceso a la cadena de conexión en el código: `using System.Configuration;`  
   
  Después de crear un objeto <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>, puede usar el objeto para realizar acciones en Common Data Service. Más información: [Use los útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)  
   
@@ -74,28 +78,14 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 |`LoginPrompt`|Especifica si se le piden al usuario credenciales si las credenciales no se proporcionan. Los valores válidos son:<br /><br /> -   `Always`: Pide siempre al usuario que especifique credenciales.<br />-   `Auto`: Permite que el usuario seleccione en la interfaz de control de inicio de sesión si se muestra un mensaje o no.<br />-   `Never`: No pide al usuario que especifique credenciales. Si usa un método de conexión que no tiene interfaz de usuario, debe usar este valor.<br /><br /> Este parámetro es aplicable solo cuando especifica el tipo de autenticación como `OAuth`.|  
 |`StoreName` o `CertificateStoreName`|Especifica el nombre del almacén donde el certificado identificado por huella digital se encuentra. Cuando está establecida, se requiere Huella digital.|
 |`Thumbprint` o `CertThumbprint`| Especifica la huella digital del certificado que se usará durante una conexión S2S. Cuando se establece, se requiere AppID y se omiten los valores UserID y Password.|
-|`SkipDiscovery`|Especifica si se llama detección de instancia para determinar el uri de conexión para una instancia determinada. A partir de la versión de Nuget Microsoft.CrmSdk.XrmTooling.CoreAssembly Versión 9.0.2.7, predeterminado = true. Las versiones más antiguas establecen de forma predeterminada como false. <br/> Nota: Si se establece en true, es importante que el usuario proporcione el URI correcto y preciso para la instancia de destino.| 
-  
+|`SkipDiscovery`|Especifica si se llama detección de instancia para determinar el uri de conexión para una instancia determinada. A partir de la versión de NuGet Microsoft.CrmSdk.XrmTooling.CoreAssembly Versión 9.0.2.7, predeterminado = true. Las versiones más antiguas establecen de forma predeterminada como false. <br/> Nota: Si se establece en true, es importante que el usuario proporcione el URI correcto y preciso para la instancia de destino.|
+
 <a name="Examples"></a>
 
 ## <a name="connection-string-examples"></a>Ejemplos de cadena de conexión
  
-Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con distintas implementaciones y escenarios de autenticación.  
+Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con implementaciones y escenarios de autenticación. Los ejemplos de la cadena de conexión para instancias locales y de implementación IFD están ahora disponibles en la documentación de Customer Engagement en: [Usar cadenas de conexión en útiles de XRM para conectarse a Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
-<!-- TODO: Get rid of on-premises examples & settings? or just comment them out? -->
-
-<!-- ### Integrated on-premises authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
-```  
-  
-### Named account using on-premises authentication  
-  
-```xml  
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test; Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```  
-   -->
 ### <a name="named-account-using-office-365"></a>Cuenta con nombre utilizando Office 365  
   
 ```xml
@@ -121,18 +111,6 @@ Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar c
   TokenCacheStorePath =c:\MyTokenCache;
   LoginPrompt=Auto"/>  
 ```  
-  
-<!-- ### OAuth using named account in Common Data Service on-premises with UX to prompt for authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com; Password=passcode;Url=https://contoso:8080/Test;AppId=<GUID>;RedirectUri=app://<GUID>;TokenCacheStorePath =c:\MyTokenCache;LoginPrompt=Auto"/>  
-```  
-  
-### IFD using a named account with delegation to a sub realm  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=IFD;Url=http://contoso:8080/Test; HomeRealmUri=https://server-1.server.com/adfs/services/trust/mex/;Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```   -->
 
 ### <a name="certificate-based-authentication"></a>Autenticación basada en certificados
 
@@ -148,7 +126,6 @@ Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar c
   />
 ```
 
-  
 <a name="ConnectionStatus"></a>
 
 ## <a name="determine-your-connection-status"></a>Determinación del estado de la conexión

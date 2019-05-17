@@ -37,7 +37,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Consultar datos jerárquicos  
- Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) que hacen referencia a sí mismas de registros relacionados. En el pasado, para ver datos jerárquicos era necesario consultar iterativamente los registros relacionados. Actualmente, puede consultar los datos relacionados como una jerarquía, en un paso. Podrá consultar los registros de entidad, usando la lógica de **Bajo** y **No menor que**. Los operadores jerárquicos **Bajo** y **No menor que** aparecen en Búsqueda avanzada y el editor de flujo de trabajo. Para obtener más información acerca de cómo utilizar estos operadores, consulte [Configurar pasos del flujo de trabajo](/flow/configure-workflow-steps). Para obtener más información sobre Búsqueda avanzada, consulte [Crear, editar o guardar la búsqueda de Búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)..  
+ Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones que hacen referencia a sí mismas de registros relacionados. En el pasado, para ver datos jerárquicos era necesario consultar iterativamente los registros relacionados. Actualmente, puede consultar los datos relacionados como una jerarquía, en un paso. Podrá consultar los registros de entidad, usando la lógica de **Bajo** y **No menor que**. Los operadores jerárquicos **Bajo** y **No menor que** aparecen en Búsqueda avanzada y el editor de flujo de trabajo. Para obtener más información acerca de cómo utilizar estos operadores, consulte [Configurar pasos del flujo de trabajo](/flow/configure-workflow-steps). Para obtener más información sobre Búsqueda avanzada, consulte [Crear, editar o guardar la búsqueda de Búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)..  
   
  Los siguientes ejemplos muestran los distintos escenarios para consultar jerarquías:  
   
@@ -53,17 +53,22 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
   
  ![Consultar oportunidades relacionadas de la cuenta](media/query-account-related-opportunities.png "Consultar oportunidades relacionadas de la cuenta")  
   
- Para consultar los datos como jerarquía, debe habilitar como jerárquica una de las relaciones que hacen referencia a sí mismas de uno a varios (1: N) de la entidad. Para activar la jerarquía:  
+ Para consultar los datos como jerarquía, debe habilitar como jerárquica una de las relaciones que hacen referencia a sí mismas de uno a varios o de varios a uno de la entidad. Para activar la jerarquía:  
   
-1.  Abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer). 
-  
-2.  Seleccione la entidad que desee, seleccione **Relaciones de 1:N** y seleccione una relación (1: N). 
 
-3.  En **Definición de relación**, establezca **Jerárquica** en **Sí**.  
+1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+
+2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
+
+3. Haga clic en **Relaciones**.
+
+4.  Seleccione una relación que hace referencia a sí misma.
+
+5.  En el panel de detalles de la relación, marque **Jerárquico**.  
   
 > [!NOTE]
-> - Algunas de las relaciones (1:N) predefinidas no se pueden personalizar. Esto evitará que configure esas relaciones como jerárquicas.  
-> - Puede especificar una relación jerárquica para las relaciones que hacen referencia a sí mismas del sistema. Esto incluye las relaciones 1:N que hacen referencia a sí mismas de tipo sistema, como la relación "contact_master_contact".  
+> - Algunas de las relaciones predefinidas no se pueden personalizar. Esto evitará que configure esas relaciones como jerárquicas.  
+> - Puede especificar una relación jerárquica para las relaciones que hacen referencia a sí mismas del sistema. Esto incluye las relaciones que hacen referencia a sí mismas de tipo sistema, como la relación "contact_master_contact".  
   
 <a name="BKMK_Visualizedata"></a>   
 ## <a name="visualize-hierarchical-data"></a>Visualice datos jerárquicos  
@@ -85,18 +90,19 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
   
  Cosas más importantes para recordar al crear visualizaciones:  
   
--   Solo se pueden configurar como jerárquica una relación que hace referencia a sí misma (1: N) por entidad. En esta relación la entidad principal y la entidad relacionada deben ser del mismo tipo, por ejemplo, account_parent_account o new_new_widget_new_widget.  
+-   Solo se pueden configurar como jerárquica una relación que hace referencia a sí misma (1: N) por entidad. En esta relación la entidad principal y la entidad relacionada deben ser del mismo tipo, por ejemplo, account_parent_account o Widget_new_Widget_new_Widget.  
   
 -   Actualmente, una jerarquía o una visualización se basa en una entidad solo. Puede describir la jerarquía de cuenta mostrando cuentas en varios niveles, pero no puede mostrar cuentas y contactos en la misma visualización de la jerarquía.  
   
 -   El número máximo de campos que se pueden mostrar en un mosaico es cuatro. Si desea agregar más campos al formulario rápido que se usa para la vista de mosaico, sólo los primeros cuatro campos se mostrarán.  
   
 ### <a name="visualization-example"></a>Ejemplo de visualización  
- Miremos un ejemplo de crear la visualización para una entidad personalizada. Hemos creado una entidad personalizada llamada new_Widget, hemos creado una relación que hace referencia a sí misma (1:N) **new_new_widget_new_widget** y la hemos marcado como jerárquica, como se indica aquí.  
-  
- ![Definición de relación del widget](media/widget-relationship-definition.png "Definición de relación del widget")  
-  
- A continuación, en la vista de cuadrícula **Configuración de la jerarquía** seleccionamos la relación jerárquica **new_new_widget_new_widget**. En el formulario, completamos los atributos requeridos. Si aún no ha marcado la relación (1:N) como jerárquica, el vínculo del formulario le devolverá al formulario de definición de la relación, donde puede marcar la relación como jerárquica.  
+ Miremos un ejemplo de crear la visualización para una entidad personalizada. Hemos creado una entidad personalizada llamada new_Widget, hemos creado una relación que hace referencia a sí misma y marcado como jerárquica, como se indica aquí.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Definición de relación del widget](media/widget-relationship-definition.png "Definición de relación del widget")  
+   
+ A continuación, en la vista de cuadrícula **Configuración de la jerarquía** seleccionamos la relación jerárquica **Widget_new_Widget_new_Widget**. En el formulario, completamos los atributos requeridos. Si aún no ha marcado la relación como jerárquica, el vínculo del formulario le devolverá al editor de entidades clásico, donde también puede marcar la relación como jerárquica.  
   
  Para el **Formulario de vista rápida**, creamos un formulario rápido llamado **Formulario de ventana de jerarquía del widget**. En este formulario, agregamos cuatro campos para mostrar en cada ventana.  
   

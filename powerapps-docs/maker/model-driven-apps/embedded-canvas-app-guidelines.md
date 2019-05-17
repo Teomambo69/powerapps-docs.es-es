@@ -3,7 +3,7 @@ title: Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustad
 ms.custom: ''
 ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -55,9 +55,10 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
      - Para hacer referencia directamente el registro puede usar [Primera función](../canvas-apps/functions/function-first-last.md). Ejemplo: First(ModelDrivenFormIntegration.Data).Name
 -   Cambiar manualmente el identificador de la aplicación en las propiedades de control de la aplicación de lienzo debe ser evitado al máximo.
      - El identificador de la aplicación de la aplicación de lienzo se genera y se rellena automáticamente en su lugar. 
-     - Si por alguna razón no necesita editarlo manualmente, debe asegurarse de que cualquier identificador de aplicación que use corresponde con una aplicación de lienzo *incrustada* y no solo a una aplicación independiente de lienzo.
+     - Si por alguna razón no necesita editarlo manualmente, debe asegurarse de que cualquier identificador de aplicación que use corresponde con una aplicación de lienzo *incrustada* y no solo a una aplicación independiente de lienzo. 
      - La aplicación incrustada de lienzo también debe haberse creado con el mismo contexto de datos que el formulario controlado por modelos va a enviar.
-     - Una vez actualizado el identificador de la aplicación seleccione **Personalizar** para establecer la conexión a la nueva aplicación.
+     - Una vez actualizado el identificador de la aplicación seleccione **Personalizar** para abrirlo en PowerApps Studio y establecer la conexión a la nueva aplicación.
+     - Realice un pequeño cambio en la aplicación para ponerla en un estado sin guardar y a continuación, guarde y publique la aplicación.
 - Cuando vea un formulario controlado por modelos con una aplicación incrustada de lienzo, si recibe un mensaje de error del estilo “no hemos encontrado la aplicación” asegúrese de que la aplicación incrustada de lienzo esté en la misma solución que el formulario controlado por modelos.
 - Cuando se ve un formulario controlado por modelos con una aplicación incrustada de lienzo, si recibe un mensaje de error como “parece que no tiene acceso a la aplicación. Solicite al propietario que la comparta con usted” asegúrese de que el autor ha compartido la aplicación incrustada de lienzo con usted. Más información: [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md).
 
@@ -78,10 +79,12 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
 - Al crear un nuevo registro, una aplicación incrustada de lienzo de un formulario no se muestra incluso después de que se guarde el registro. 
 -    El objeto ModelDrivenFormIntegration.Data no funciona actualmente con los controles de formulario de presentación y los controles de formulario de edición.
 - No puede usar el privilegio **Aplicación de lienzo** en un rol de seguridad para conceder acceso a usuarios de la aplicación a una aplicación incrustada o independiente de lienzo. Para obtener más información sobre compartir una aplicación incrustada de lienzo, consulte: [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md).
-- Si responde escribiendo los mismos datos que se muestran en el formulario controlado por modelos de host, el formulario seguirá mostrando datos antiguos hasta que se actualice. 
+- Si responde escribiendo los mismos datos que se muestran en el formulario controlado por modelos de host, el formulario seguirá mostrando datos antiguos hasta que se actualice. Una forma simple de hacer esto es usar el método [RefreshForm](embedded-canvas-app-actions.md).
+- Si no ve IntelliSense en los [métodos para realizar acciones predefinidas](embedded-canvas-app-actions.md) en las aplicaciones de lienzo incrustadas que se crearon antes de que la funcionalidad estuviera disponible; guarde, cierre y vuelva a abrir la aplicación. 
 
 ## <a name="see-also"></a>Vea también
 [Insertar una aplicación de lienzo en un formulario controlado por modelos](embed-canvas-app-in-form.md) <br />
 [Pasar el registro actual como contexto de datos a una aplicación incrustada de lienzo](pass-current-embedded-canvas-app.md) <br />
 [Pasar una lista de registros relacionados como contexto de datos a una aplicación incrustada de lienzo](pass-related-embedded-canvas-app.md) <br />
+[Realice acciones predefinidas en el formulario de host desde una aplicación de lienzo insertada](embedded-canvas-app-actions.md) <br />
 [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md)

@@ -6,9 +6,9 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 04/11/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,9 +39,9 @@ Use el Explorador de soluciones para realizar las tareas de creación y personal
 
 1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2.  En el panel de navegación izquierdo, seleccione **Soluciones**.  
-3.  Seleccione **Cambiar a clásica** en la barra de herramientas para abrir el explorador de soluciones. 
-
+3.  Seleccione **Cambiar a clásica** en la barra de herramientas para abrir la vista **Todas las soluciones**. 
     Tenga en cuenta que el comando **Cambiar a clásica** no está disponible cuando se selecciona una solución en la lista.
+4.  En la lista de soluciones disponibles seleccione la solución que desee en la columna **Nombre para mostrar** para abrir el explorador de soluciones.
 
 ## <a name="apps"></a>Aplicaciones
 El área de aplicaciones muestra todas las aplicaciones basadas en modelos y de lienzo en las que tiene privilegios en su entorno. Además de iniciar una aplicación, desde el área de aplicaciones también puede asignar roles de seguridad a ella. 

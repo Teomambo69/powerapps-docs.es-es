@@ -149,7 +149,7 @@ public bool EligibleCreateOneToManyRelationship(string referencedEntity,
 
 ## <a name="create-an-nn-entity-relationship"></a>Crear una relación de N:N entre entidades  
 
- El siguiente ejemplo usa un método [EligibleCreateManyToManyRelationship](#EligibleCreateManyToManyRelationship) para comprobar que las entidades `Account` y `Campaign` puedan participar en una relación de N:N entre entidades y luego crea la relación entre entidades con <xref:Microsoft.Xrm.Sdk.Messages.CreateManyToManyRequest>.  
+ El siguiente ejemplo usa un método [EligibleCreateManyToManyRelationship](#BKMK_EligibleCreateManyToManyRelationship) para comprobar que las entidades `Account` y `Campaign` puedan participar en una relación de N:N entre entidades y luego crea la relación entre entidades con <xref:Microsoft.Xrm.Sdk.Messages.CreateManyToManyRequest>.  
   
 ```csharp
 bool accountEligibleParticipate =

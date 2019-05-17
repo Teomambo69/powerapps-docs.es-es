@@ -2,7 +2,7 @@
 title: Configure el seguimiento para los útiles de XRM (Common Data Service)| Microsoft Docs
 description: 'Aprenda cómo puede configurar el seguimiento para componentes como llamadas a operaciones, advertencias, excepciones y otros eventos importantes en útiles de XRM.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: d7586a5a-40da-427e-bbeb-4f8a371a8dcf
 caps.latest.revision: 8
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -28,8 +28,7 @@ Puede habilitar el seguimiento para registrar datos relacionados con los hitos d
 - Origen de seguimientos  
 - Agente de escucha de seguimientos  
 - Nivel de seguimiento que no sea **Desconectado**. Estos son los otros valores que puede especificar: **Error**, **Advertencia**, **Información** y **Detallado**.  
-  
- Aquí se muestra configuración para habilitar el seguimiento para un componente en útiles de XRM. Por ejemplo, la siguiente configuración solo habilita el seguimiento para el componente de Microsoft.Xrm.Tooling.CrmConnectControl:  
+Aquí se muestra configuración para habilitar el seguimiento para un componente en útiles de XRM. Por ejemplo, la siguiente configuración solo habilita el seguimiento para el componente de Microsoft.Xrm.Tooling.CrmConnectControl:  
   
 ```xml  
 </configuration>  

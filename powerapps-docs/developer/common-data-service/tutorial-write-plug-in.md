@@ -2,7 +2,7 @@
 title: 'Tutorial: Escribir y registrar un complemento (Common Data Service) | Microsoft Docs'
 description: Este tutorial es el primero de una serie que le muestra cómo trabajar con los complementos.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

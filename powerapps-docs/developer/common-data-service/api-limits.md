@@ -17,17 +17,19 @@ search.app:
 ---
 # <a name="api-limits"></a>Límites de la API
 
-Limitamos el número de solicitudes de API realizadas por cada usuario, por instancia de organización, en una ventana deslizante de cinco minutos. Además, limitamos el número de solicitudes simultáneas que pueden llegar en cualquier momento.  Cuando se supera uno de estos límites, la plataforma generará una excepción.
+Se limita el número de solicitudes de API realizadas por cada usuario, por instancia de organización, en una ventana deslizante de cinco minutos. Asimismo, limitamos el número de solicitudes simultáneas que pueden producirse en un momento dado.  Cuando se supere uno de estos límites, la plataforma generará una excepción.
 
-El límite ayudará a garantizar que los usuarios que ejecutan aplicaciones no pueden interferirse entre sí en función de las restricciones de recursos. Los límites no afectarán a los usuarios normales de la plataforma. Solo podrán verse afectadas las aplicaciones que realicen un gran número de solicitudes de API. El límite le ayudará a proporcionar cierto grado de protección contra aumentos aleatorios e inesperados en los volúmenes de solicitudes que ponen en peligro las características de disponibilidad y rendimiento de la plataforma de Common Data Service.
+El límite le ayudará a asegurarse de que los usuarios que ejecuten aplicaciones no puedan interferir unos con otros basándose en limitaciones de recursos. Los límites no afectarán a los usuarios normales de la plataforma. Solo podrán verse afectadas las aplicaciones que realicen un gran número de solicitudes de API. El límite le ayudará a proporcionar cierto grado de protección contra aumentos aleatorios e inesperados en los volúmenes de solicitudes que ponen en peligro las características de disponibilidad y rendimiento de la plataforma de Common Data Service.
+
+Dado que los complementos y las actividades de flujo de trabajo personalizadas se ejecutan en el servidor independientemente de un usuario que ha iniciado sesión, las llamadas de la API realizadas desde el código del complemento no contará para este límite de solicitudes de API externas.
 
 Si su aplicación tiene el potencial para superar el límite, tenga en cuenta la guía que se proporciona en la sección [¿Qué debo hacer si mi aplicación supera el límite?](#what-should-i-do-if-my-application-exceeds-the-limit) siguiente.
 
 ## <a name="what-happens-when-the-limit-is-exceeded"></a>¿Qué ocurre cuando se supera el límite?
 
-Cuando se supera el límite, todas las solicitudes del mismo usuario devolverán respuestas de error.
+Cuando se supera el límite, todas las solicitudes al mismo usuario devolverán respuestas de error.
 
-Si usa los ensamblados de .NET SDK, la plataforma responderá con un error de WFC de `FaultException<OrganizationServiceFault>`.  
+Si utiliza los conjuntos de .NET SDK, la plataforma responderá con un error de WCF `FaultException<OrganizationServiceFault>`.  
 
 | Código de error | Mensaje |
 |------------|-------------------------------------|

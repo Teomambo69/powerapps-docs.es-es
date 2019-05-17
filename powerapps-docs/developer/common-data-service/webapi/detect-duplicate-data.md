@@ -3,11 +3,11 @@ title: Detectar datos duplicados con la API web (Common Data Service) | Microsof
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

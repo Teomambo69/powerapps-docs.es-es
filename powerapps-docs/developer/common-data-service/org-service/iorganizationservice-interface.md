@@ -58,6 +58,5 @@ Cada una de las clases que implementan la interfaz de <xref:Microsoft.Xrm.Sdk.IO
 ## <a name="see-also"></a>Vea también
 
 [Uso de mensajes con el servicio de la organización](use-messages.md)<br />
-[Crear una aplicación cliente](create-client-app.md)<br />
 [Escribir un complemento](../write-plug-in.md)<br />
 [Operaciones de la entidad con el servicio de organización](entity-operations.md)

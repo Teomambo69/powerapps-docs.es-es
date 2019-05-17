@@ -3,7 +3,6 @@ title: Ejemplo de funciones y acciones de API web (Common Data Service) | Micros
 description: 'Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service. Estos están implementados mediante JavaScript del lado cliente y C#'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 ms.assetid: 953c3137-6171-4e6e-b249-6a96221c6e96
 caps.latest.revision: 16
 author: brandonsimons
+ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
   - developer

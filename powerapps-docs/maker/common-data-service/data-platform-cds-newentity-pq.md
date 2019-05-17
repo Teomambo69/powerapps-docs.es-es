@@ -67,7 +67,7 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
 
 1. En el lista de **Campos de nombre principal**, haga clic o pulse en **ContactName** y, a continuación, haga clic o pulse en **Siguiente** en la esquina inferior derecha.
 
-    Puede especificar otro campo de nombre principal diferente, asignar una columna diferente de la tabla de origen a cada campo de la entidad que está creando, o ambas cosas. Para seguir este tutorial de forma precisa, deje la asignación de columnas predeterminada.
+    Puede especificar otro campo de nombre principal diferente, asignar una columna diferente de la tabla de origen a cada campo de la entidad que está creando, o ambas cosas. También puede especificar si las columnas de texto del resultado de la consulta se deben crear como Texto multilínea o Texto de una línea en Common Data Service. Para seguir este tutorial de forma precisa, deje la asignación de columnas predeterminada.
 
 1. Cuando el **Estado de carga** sea **Completado**, seleccione **Hecho** en la esquina inferior derecha.
 

@@ -9,7 +9,7 @@ applies_to:
   - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 04/03/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
@@ -36,6 +36,8 @@ Se abrirá el cuadro de diálogo **Agregar recurso web** o **Propiedades de recu
 
 ![Cuadro de diálogo Agregar recurso web](media/add-web-resource-dialog.png)
 
+> [!IMPORTANT]
+> Debe seleccionar la opción **Visible de forma predeterminada** para que el recurso web aparezca en el formulario y esté disponible para los usuarios.
 
 ## <a name="web-resource-properties"></a>Propiedades de recurso web
 

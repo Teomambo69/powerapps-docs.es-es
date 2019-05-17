@@ -3,7 +3,6 @@ title: Ejemplo de operaciones básicas de API web (JavaScript de lado de cliente
 description: 'Este ejemplo muestra cómo realizar operaciones básicas CRUD (Crear, Recuperar, Actualizar y Eliminar) y de asociación y disociación en instancias de entidades usando JavaScript de lado de cliente y la API web de Common Data Service.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 11847c67-2807-4cb5-998b-90f45d3d98a7
 caps.latest.revision: 27
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

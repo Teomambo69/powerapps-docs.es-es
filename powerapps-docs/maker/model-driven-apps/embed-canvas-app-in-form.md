@@ -3,7 +3,7 @@ title: Insertar una aplicación de lienzo en un formulario controlado por modelo
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -53,5 +53,6 @@ Para las directrices acerca de cómo trabajar con aplicaciones incrustadas de li
 [Información general sobre conectores de aplicaciones de lienzo para PowerApps](../canvas-apps/connections-list.md) <br />
 [Pasar el registro actual como contexto de datos a una aplicación incrustada de lienzo](pass-current-embedded-canvas-app.md) <br />
 [Pasar una lista de registros relacionados como contexto de datos a una aplicación incrustada de lienzo](pass-related-embedded-canvas-app.md) <br />
+[Realice acciones predefinidas en el formulario de host desde una aplicación de lienzo insertada](embedded-canvas-app-actions.md) <br />
 [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md) <br />
 [Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas](embedded-canvas-app-guidelines.md)

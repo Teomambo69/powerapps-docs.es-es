@@ -3,7 +3,6 @@ title: Detectar datos duplicados con la API web (Common Data Service)| Microsoft
 description: Lea cómo detectar duplicados con el encabezado MSCRM.SuppressDuplicateDetection y la API web de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,9 +11,9 @@ applies_to:
   - Dynamics 365 (online)
 ms.assetid: AE107774-4545-44B4-94C8-A0271EFA7876
 caps.latest.revision: 11
-author: SushantSikka
+author: susikka
 ms.author: susikka
-manager: amyla
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:

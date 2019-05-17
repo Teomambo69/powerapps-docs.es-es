@@ -42,7 +42,7 @@ Un *tema* es similar a una cola, pero implementa un modelo de publicación o sus
 > [!IMPORTANT]
 >  Para usar estos contratos de cola o tema, debe escribir sus aplicaciones de escucha mediante [Azure SDK](http://azure.microsoft.com/downloads/archive-net-downloads/) versión 1.7 o superior.  
   
-El uso de colas y temas en el diseño de software multisistema puede dar lugar al desemparejamiento del sistema. Si la aplicación de escucha llega a estar no disponible, la entrega del mensaje de Dynamics 365 se realizará correctamente y la aplicación de escucha podrá seguir procesando el mensaje de la cola cuando vuelva a estar en línea. [!INCLUDEMás información [Colas, temas y suscripciones](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+El uso de colas y temas en el diseño de software multisistema puede dar lugar al desemparejamiento del sistema. Si la aplicación de escucha llega a estar no disponible, la entrega del mensaje de Dynamics 365 se realizará correctamente y la aplicación de escucha podrá seguir procesando el mensaje de la cola cuando vuelva a estar en línea. [!INCLUDEMás información: [Colas, temas y suscripciones](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 

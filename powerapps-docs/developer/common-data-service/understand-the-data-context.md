@@ -54,7 +54,7 @@ Como se describe en [Usar mensajes con el servicio de la organización](org-serv
 
 Como se describe en [Marco de trabajo de eventos](event-framework.md), las operaciones pasan a través de una serie de fases y puede registrar el complemento en fases que se producen antes de que los datos se escriban en la base de datos. En las fases **PreValidation** y **PreOperation**, puede leer y cambiar los valores de los `InputParameters` de modo que puede controlar el resultado esperado de la operación de datos.
 
-Si encuentra que los valores de la colección de `InputParameters` representan una condición que no puede permitir, puede lanzar una <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> (preferentemente en la fase de **PreValidation**) que cancelará la operación y mostrará un error al usuario con un complemento sincrónico, o registrará el error si el complemento es asincrónico. Más información: [Cancelación de una operación](#cancelling-an-operation)
+Si encuentra que los valores de la colección de `InputParameters` representan una condición que no puede permitir, puede lanzar una <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> (preferentemente en la fase de **PreValidation**) que cancelará la operación y mostrará un error al usuario con un complemento sincrónico, o registrará el error si el complemento es asincrónico. Más información: [Cancelación de una operación](handle-exceptions.md#cancelling-an-operation)
 
 ## <a name="outputparameters"></a>OutputParameters
 

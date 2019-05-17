@@ -4,7 +4,7 @@ description: 'En este tema, aprenderá a acceder a vistas de entidad'
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -31,7 +31,7 @@ search.app:
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>Abra una vista para editar en el último diseñador de vistas
 
 > [!IMPORTANT]
-> La versión más reciente del diseñador de vistas está funcionando actualmente en vista previa. Algunas características como el filtrado avanzado, controles personalizados, así como propiedades de columnas aún no se admiten. Para realizar estas tareas [abra la vista en el diseñador clásico de vistas](#open-a-view-in-solution-explorer).
+> La versión más reciente del diseñador de vistas está funcionando actualmente en vista previa. Algunas características como el filtrado avanzado, controles personalizados, así como propiedades de columnas aún no se admiten. Para realizar estas tareas [Abra una vista para editar en el explorador de soluciones](#open-a-view-for-editing-in-solution-explorer).
 
 1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 

@@ -3,7 +3,6 @@ title: Crear una entidad utilizando la API web (Common Data Service) | Microsoft
 description: Lea cómo crear una solicitud POST para enviar datos para crear una entidad en Common Data Service mediante la API web
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

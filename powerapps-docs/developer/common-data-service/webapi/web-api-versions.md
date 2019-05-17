@@ -3,7 +3,6 @@ title: Versiones de la API web de Common Data Service (Common Data Service)| Mic
 description: 'Leer cómo funciona el control de versiones de la API web de Common Data Service. Las versiones API web de Common Data Service admiten diferencias específicas de versión en el mismo entorno que es diferente del comportamiento en las versiones de v8.x, en las que se añadió nuevas capacidades'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: d9bb79a5-2bfa-4ffe-8cb4-60f192359489
 caps.latest.revision: 34
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

@@ -3,7 +3,6 @@ title: Componer solicitudes HTTP y ocuparse de los errores (Common Data Service)
 description: Obtenga información sobre los métodos y encabezados de HTTP que forman parte de las solicitudes HTTP que interactúan con la API web y cómo identificar y controlar errores devueltos en la respuesta.
 ms.custom: ''
 ms.date: 11/05/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

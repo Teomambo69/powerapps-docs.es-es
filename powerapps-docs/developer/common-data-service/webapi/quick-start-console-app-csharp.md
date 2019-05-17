@@ -3,11 +3,11 @@ title: 'Tutorial: Ejemplo de web API (C#) (Common Data Service) | Microsoft Docs
 description: 'Este ejemplo muestra cómo autenticarse con un servidor Common Data Service y luego llamar a una operación básica de API Web, la función WhoAmI.'
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

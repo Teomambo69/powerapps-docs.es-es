@@ -100,6 +100,10 @@ Cuando se procesan recursos web HTML en el Comprobador de soluciones, el recurso
 
 ECMAScript 6 (2015) o las versiones posteriores no se admiten actualmente en el Comprobador de soluciones. Cuando el Comprobador de soluciones analiza JavaScript con ECMAScript 6 o versiones posteriores, se registra un problema de sintaxis web no admitida para el recurso web.  
 
+## <a name="multiple-violations-reported-for-plug-ins-and-workflow-activities-based-on-call-scope"></a>Informes de varias infracciones para complementos y actividades de flujo de trabajo en función de ámbito de llamada
+
+Para reglas de complemento y de actividad de flujo de trabajo donde el problema sólo es relevante en el contexto de llamadas, la herramienta Comprobador de soluciones inicia su análisis en la implementación de la interfaz de IPlugin y atraviesa un gráfico de llamada para detectar problemas en el ámbito de esa implementación.  En algunos casos, muchas rutas de llamada pueden llegar a la misma ubicación donde se detecta el problema.  Puesto que el problema es relevante al ámbito de llamadas, la herramienta puede informar en función de ese ámbito para proporcionar una mejor imagen del impacto en lugar de en ubicaciones distintas. Como resultado, varios problemas pueden hacer referencia a una sola ubicación que deben ser corregida.
+
 ## <a name="see-also"></a>Vea también
 [Prácticas recomendadas e instrucciones para Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Prácticas recomendadas e instrucciones para aplicaciones basadas en modelos](../../developer/model-driven-apps/best-practices/index.md)<br />

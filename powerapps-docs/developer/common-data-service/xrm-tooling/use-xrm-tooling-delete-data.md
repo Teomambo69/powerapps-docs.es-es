@@ -2,7 +2,7 @@
 title: Utilizar útiles de XRM para eliminar datos (Common Data Service)| Microsoft Docs
 description: Utilizar la clase CrmServiceClient para eliminar datos de Common Data Service
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: 7e503d2c-89df-4846-8528-632b5ee12bd5
 caps.latest.revision: 14
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -27,30 +27,26 @@ Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connect
   
 ## <a name="deleteentity"></a>DeleteEntity  
 
-DeleteEntity se usa para quitar una fila única de datos de Common Data Service. Para usar este método, debe conocer el nombre de esquema de la entidad que desea afectar y el GUID de la fila que desea quitar.  
+`DeleteEntity` se usa para quitar una fila única de datos de Common Data Service. Para usar este método, debe conocer el nombre de esquema de la entidad que desea afectar y el GUID de la fila que desea quitar.  
   
 ```csharp  
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
+CrmServiceClient svc = new CrmServiceClient(connectionstring);  
   
 // Verify that you are connected  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    //Display the CRM version number and org name that you are connected to  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     // Delete the entity record  
-    crmSvc.DeleteEntity("account", <accountId>);  
+    svc.DeleteEntity("account", <accountId>);  
 }  
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
     // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  
@@ -59,31 +55,28 @@ else
   
 ## <a name="deleteentityassociation"></a>DeleteEntityAssociation  
 
-DeleteEntityAssociation quita la asociación de varios a varios entre registros en entidades. En este ejemplo, quitaremos la asociación entre un registro en las entidades de cliente potencial y de cuenta.  
+`DeleteEntityAssociation` quita la asociación de varios a varios entre registros en entidades. En este ejemplo, quitaremos la asociación entre un registro en las entidades de cliente potencial y de cuenta.  
   
 ```csharp  
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
+CrmServiceClient svc = new CrmServiceClient(connectionstring);  
   
 // Verify that you are connected  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     Guid accountId = new Guid("<Account_GUID>");  
     Guid leadId = new Guid("<Lead_GUID>");  
     string accountLeadRelationshipName= "accountleads_association";   
-    crmSvc.DeleteEntityAssociation("account" , accountId, "lead" ,  leadId, accountLeadRelationshipName)  
+    svc.DeleteEntityAssociation("account" , accountId, "lead" ,  leadId, accountLeadRelationshipName)  
 }  
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
     // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  

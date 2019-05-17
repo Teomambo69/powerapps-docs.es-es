@@ -22,7 +22,7 @@ search.app:
 
 # <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Trabajar con datos de eventos de Common Data Service en la solución Centro de eventos de Azure
 
-Azure Event Hub es un servicio de publicación-suscripción muy escalable que puede ingerir millones de eventos por segundo y enviarlos a varias aplicaciones. La interface Dynamics 365-Azure permite publicar datos de eventos de Azure Customer Engagement en el [!INCLUDEAzure Service Bus y ponerlos a disposición de los suscriptores de la solución del centro de eventos. La siguiente información describe las tareas generales que se deben realizar para enviar datos de eventos de Azure a una solución del centro de eventos.  
+Azure Event Hub es un servicio de publicación-suscripción muy escalable que puede ingerir millones de eventos por segundo y enviarlos a varias aplicaciones. La interface Dynamics 365-Azure permite publicar datos de eventos de Azure Customer Engagement en el [!INCLUDE!Azure Service Bus y ponerlos a disposición de los suscriptores de la solución del centro de eventos. La siguiente información describe las tareas generales que se deben realizar para enviar datos de eventos de Azure a una solución del centro de eventos.  
   
 > [!NOTE]
 >  Se necesitan una suscripción de Azure y una licencia del centro de eventos para el acceso a los centros de eventos. Esta característica se introdujo en la Actualización 1 de CRM Online 2016 y CRM 2016 Service Pack 1 (local).

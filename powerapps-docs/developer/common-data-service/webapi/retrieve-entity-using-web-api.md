@@ -3,7 +3,6 @@ title: Recuperar una entidad utilizando la API web (Common Data Service)| Micros
 description: Lea cómo formar una solicitud GET mediante la API web de Common Data Service para recuperar datos de una entidad especificada como el recurso con un identificador único
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

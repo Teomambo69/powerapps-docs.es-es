@@ -3,11 +3,11 @@ title: 'Ejemplo de servicio de detección global de API web (C#) (Common Data Se
 description: Este ejemplo muestra cómo usar los servicios de detección global de la API web
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

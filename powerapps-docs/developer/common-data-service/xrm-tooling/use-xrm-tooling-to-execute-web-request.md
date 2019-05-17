@@ -1,8 +1,8 @@
 ---
-title: Utilice útiles de XRM para ejecutar acciones en Dynamics 365 (Guía para desarrolladores de Dynamics 365 Customer Engagement) | MicrosoftDocs
+title: Use los útiles XRM para ejecutar acciones en Common Data Service| MicrosoftDocs
 description: 'El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Dynamics 365'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -12,7 +12,6 @@ applies_to:
   - Dynamics 365 (online)
 ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
-author: Navakiran
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
@@ -32,6 +31,7 @@ El siguiente código de ejemplo demuestra cómo puede ejecutar una solicitud web
 > Este método solo es aplicable cuando se especifica el tipo de autenticación como `OAuth` o `Certificate`.
 
 ## <a name="create-a-record"></a>Crear un registro
+
 El siguiente código de ejemplo demuestra cómo crear un registro mediante <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> . En este ejemplo, creará una cuenta y, a continuación, muestre el identificador en el objeto de respuesta.  
 
 ```csharp
@@ -41,34 +41,26 @@ El siguiente código de ejemplo demuestra cómo crear un registro mediante <!--<
         {"OData-Version", new List<string>(){"4.0"}}
       };
 
+using (CrmServiceClient svc = new CrmServiceClient(conn))
+ {
+    if (svc.IsReady)
+    {
+      HttpResponseMessage response = svc.ExecuteCrmWebRequest(HttpMethod.Get, "accounts?$select=name", "{ \"name\":\"Test Account\"}", ODataHeaders, "application/json");
 
-            using (CrmServiceClient svc = new CrmServiceClient(conn))
-            {
+    if (response.IsSuccessStatusCode)
+     {
+        var accountUri = response.Headers.GetValues("OData-EntityId").FirstOrDefault();
+        Console.WriteLine("Account URI: {0}", accountUri);
+       }
+    else
+     {
+       Console.WriteLine(response.ReasonPhrase);
+        }
 
-                if (svc.IsReady)
-                {
-                    HttpResponseMessage response = svc.ExecuteCrmWebRequest(HttpMethod.Get, "accounts?$select=name", "{ \"name\":\"Test Account\"}", ODataHeaders, "application/json");
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        
-                        var accountUri = response.Headers.GetValues("OData-EntityId").FirstOrDefault();
-
-                       Console.WriteLine("Account URI: {0}", accountUri);
-                    }
-                    else
-                    {
-                        Console.WriteLine(response.ReasonPhrase);
-                    }
-
-                }
-                else
-                {
-                    Console.WriteLine(svc.LastCrmError);
-                }
-
-
-
-            }
+  }
+    else
+      {
+        Console.WriteLine(svc.LastCrmError);
+           }
+}
 ```
-

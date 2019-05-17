@@ -3,7 +3,6 @@ title: Ejemplo de operaciones condicionales de API web (Common Data Service) | M
 description: Este grupo de ejemplos demuestra cómo realizar operaciones que se basen condicionalmente en la versión del registro de entidad contenido en el servidor de Common Data Service y/o mantenido actualmente por el cliente.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: f2e5d22b-93fe-43b7-af15-3e281f3b3084
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

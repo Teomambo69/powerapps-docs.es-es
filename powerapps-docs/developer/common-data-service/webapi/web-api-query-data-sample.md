@@ -3,7 +3,6 @@ title: Ejemplo de datos de consulta de API web (Common Data Service) | Microsoft
 description: 'Este grupo de ejemplos demuestra cómo consultar datos utilizando la API web. Estos están implementados mediante JavaScript del lado cliente y C#'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 9457ce4f-0ef6-4085-8346-fe3134ec7106
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

@@ -34,7 +34,7 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 
 ## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
 
-Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), la muestra hará lo siguiente:
+Para simular el escenario descrito anteriormente, el ejemplo hará lo siguiente:
 
 ### <a name="setup"></a>Configuración
 

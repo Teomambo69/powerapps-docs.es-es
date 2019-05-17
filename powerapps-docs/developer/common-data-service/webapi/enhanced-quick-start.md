@@ -3,7 +3,6 @@ title: Inicio rápido mejorado (Common Data Service) | Microsoft Docs
 description: Crear un nuevo proyecto en Visual Studio para compilar una aplicación de consola que utilice la API web de Common Data Service
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
-manager: ''
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -33,9 +33,9 @@ La forma de recopilar credenciales de usuario dependen del tipo de cliente que e
 
 Para habilitar son necesarios tres pasos:
 
-1. [Agregar la referencia a System.Configuration para el proyecto de Visual Studio](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
-1. [Editar el archivo de configuración de aplicación](#2-edit-the-application-configuration-file)
-1. [Agregar la instrucción using a Program.cs](#3-add-using-statement-to-programcs)
+1. [Agregar la referencia a System.Configuration para el proyecto de Visual Studio](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
+1. [Editar el archivo de configuración de aplicación](#edit-the-application-configuration-file)
+1. [Agregar la instrucción using a Program.cs](#add-using-statement-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Agregar la referencia a System.Configuration para el proyecto de Visual Studio

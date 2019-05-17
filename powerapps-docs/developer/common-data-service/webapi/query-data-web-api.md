@@ -3,7 +3,6 @@ title: Consultar datos utilizando la API web (Common Data Service) | Microsoft D
 description: Lea distintas formas de hacer consultas con Common Data Service para los datos de las aplicaciones mediante la web API de Common Data Service y otros sistemas para consultar las opciones que se pueden aplicar en estas consultas
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: annbe
 search.audienceType:
   - developer

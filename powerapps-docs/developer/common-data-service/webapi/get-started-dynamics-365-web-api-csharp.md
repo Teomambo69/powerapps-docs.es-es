@@ -3,7 +3,6 @@ title: 'Introducción a la API web de Common Data Service (C#) (Common Data Serv
 description: 'Aprenda a acceder a la API web de Common Data Service con lenguaje de programación de Microsoft Visual C#'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 8105ff3d-4c8e-4f86-bbb9-e37bdb4c272e
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: kvivek
 search.audienceType:
   - developer

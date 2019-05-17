@@ -2,19 +2,14 @@
 title: Usar la API web con metadatos (Common Data Service) | Microsoft Docs
 description: La sección proporciona instrucciones sobre cómo usar la API web con los tipos de entidad incluidos en la referencia EntityType de metadatos de la API web.
 ms.custom: ''
-ms.date: 11/04/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-ms.assetid: a0edc029-c6db-48ac-9538-b0270fe94440
-caps.latest.revision: 10
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -24,7 +19,9 @@ search.app:
 # <a name="use-the-web-api-with-metadata"></a>Usar la API web con metadatos
 
 Puede realizar cualquier operación de metadatos con la API web que puede realizar mediante el servicio de la organización. Esta sección proporciona instrucciones sobre cómo usar la API web con los tipos de entidad incluidos en <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex>.  
-  
+> [!NOTE]
+> La información en esta sección también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local).
+
  Hay cuatro rutas del conjunto de entidades expuestas para realizar operaciones con las entidades de metadatos como se describe en la siguiente tabla.  
   
 |Ruta del conjunto de entidades|Descripción|  
@@ -60,8 +57,6 @@ Puede comprobar si las entidades son elegibles para participar en una relación 
 
 ### <a name="see-also"></a>Vea también
 
-
-<!-- TODO [Metadata and data models](../metadata-data-models.md)<br /> -->
 [Examinar los metadatos del entorno](../browse-your-metadata.md)<br />
-<!--  TODO [Use the Organization service with Common Data Service metadata](../org-service/use-organization-service-metadata.md)<br /> -->
-[Utilizar API Web de Common Data Service](overview.md)
+[Usar la API Web de Common Data Service](overview.md)
+[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)

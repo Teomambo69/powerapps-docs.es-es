@@ -3,7 +3,6 @@ title: 'Ejemplos de operaciones de datos de API web (C#) (Common Data Service)| 
 description: 'En este tema se proporciona una descripción de distintos ejemplos de API web que están implementados mediante C#'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 66e26684-819e-45f7-bec4-c250be4d6fed
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:
@@ -139,7 +139,7 @@ throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", 
   
 ### <a name="response-success-and-error-handling"></a>Tratamiento de errores y aciertos de respuesta
 
-En general, los ejemplos adoptan un enfoque directo procesar respuestas HTTP. Si la solicitud se realiza correctamente, la información sobre la operación se envía normalmente a la consola. Si la respuesta también contiene una carga útil de JSON o encabezados útiles, esta información se procesa si se ha realizado correctamente. Y, por último, si se creó una entidad de Common Data Service, la colección `entityUris` se actualizará con el URI de ese recurso. El método [DeleteRequiredRecords](#bkmk_deleteRequiredRecords) usa esta colección para eliminar opcionalmente los datos creados por el ejemplo desde el servidor de Common Data Service.  
+En general, los ejemplos adoptan un enfoque directo procesar respuestas HTTP. Si la solicitud se realiza correctamente, la información sobre la operación se envía normalmente a la consola. Si la respuesta también contiene una carga útil de JSON o encabezados útiles, esta información se procesa si se ha realizado correctamente. Y, por último, si se creó una entidad de Common Data Service, la colección `entityUris` se actualizará con el URI de ese recurso. El método `DeleteRequiredRecords` usa esta colección para eliminar opcionalmente los datos creados por el ejemplo desde el servidor de Common Data Service.  
   
 Si se produce error en la solicitud, el programa envía un mensaje contextual sobre la operación que ha producido error y, a continuación inicia una excepción personalizada de tipo `Exception`. El controlador de excepciones genera más información sobre la excepción y después controla los pases a un bloque `finally` que incluye lógica de limpieza, una vez más incluyendo una llamada a `DeleteRequiredRecords`. El siguiente código demuestra este método de tratamiento de errores en una solicitud POST para crear un registro.  
   

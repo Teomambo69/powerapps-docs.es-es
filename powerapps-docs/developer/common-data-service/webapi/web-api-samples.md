@@ -3,7 +3,6 @@ title: Ejemplos de operaciones de datos de API web (Common Data Service) | Micro
 description: 'El SDK Common Data Service proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Encuentre aquí las implementaciones en C# y JavaScript del ejemplo de operaciones básicas, datos de consulta, operaciones condicionales y funciones y acciones'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: cdcb02f5-3baa-4fb7-8fb3-6fe53c2d4271
 caps.latest.revision: 11
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

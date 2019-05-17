@@ -1,20 +1,14 @@
 ---
 title: Acerca de referencia de entidades (Common Data Service) | Microsoft Docs
 description: 'Utilice esta referencia para comprender las operaciones disponibles que se pueden realizar para entidades específicas, los atributos predeterminados de cada entidad y las relaciones entre entidades.'
-services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/31/2018
+ms.date: 03/31/2019
 ms.author: jdaly
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:

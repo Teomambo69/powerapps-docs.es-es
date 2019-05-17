@@ -2,8 +2,7 @@
 title: Identificación de la dirección URL de la organización mediante la API web (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo usar la API web para detectar en el tiempo de ejecución las organizaciones o instancias a las que pertenece el usuario que ha iniciado sesión
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -27,7 +27,15 @@ search.app:
 
 Con el servicio de detección de la API web, puede usar los parámetros `$filter` y `$select` estándar para una solicitud de servicio de API web para personalizar la lista devuelta de datos de la instancia.
 <!-- TODO should only talk about the global discovery service -->
+
+## <a name="global-discovery-service"></a>Servicio de detección global
+
 Además de los servicios de detección específicos del centro de datos, que están disponibles en el extremo 2011 (SOAP) y a través de la API web, también hay un servicio de detección global de la API web que abarca todos los centros de datos operativos. Para obtener más información acerca del servicio de detección en el extremo de 2011, consulte [Servicio de detección](../org-service/discovery-service.md)
+
+> [!NOTE]
+> Se recomienda que los usuarios cambien del antiguo servicio de detección regional (`https://disco.crm.dynamics.com`) al servicio de detección global (`https://globaldisco.crm.dynamics.com`).
+> 
+> Para usuarios de Dynamics 365 US Government, el servicio de detección global está disponible sólo para usuarios de **GCC** y la dirección URL es `https://globaldisco.crm9.dynamics.com`. Más información: [Direcciones URL de Dynamics 365 Government](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>Información proporcionada por el servicio de detección 
@@ -39,6 +47,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 ```  
   
 En el ejemplo anterior, el servicio de detección global Common Data Service se utiliza para obtener la información de la organización de la instancia con un nombre único de "myorg". Se tratará con mayor detenimiento más información acerca de esta solicitud más adelante en este tema.  
+
+ 
+
   
 ### <a name="scope-of-the-returned-information"></a>Ámbito de la información devuelta
 
@@ -58,27 +69,15 @@ En general, la dirección de la API web del servicio de detección tiene el sigu
 
 La dirección base del servicio de detección global es: `https://globaldisco.crm.dynamics.com/`. Esto da como resultado la dirección de servicio de `https://globaldisco.crm.dynamics.com/api/discovery/`.  
   
-<!-- TODO:
-The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available Common Data Service datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
-  
 ## <a name="using-the-discovery-service"></a>Uso del servicio de detección  
 
 Se usa un conjunto de entidad denominado `Instances` para recopilar información de la instancia. Puede usar `$select` y `$filter` con el conjunto de entidades Instancias para filtrar los datos devueltos. También puede usar `$metadata` para obtener el documento de metadatos del servicio.  
   
 ### <a name="authentication"></a>Autenticación
 
-Las instancias de la API web de Common Data Service del servicio de detección requieren autenticación con tokens de acceso de OAuth. Las instancias de IFD o locales de la API web de detección adoptan el modelo de autenticación de su implementación, admitiendo los tokens de OAuth o autenticación integrada de Windows (IWA) de un proveedor de tokens de confianza. La autenticación de sesión de aplicación web no es compatible.  
-  
-Cuando se configura el servicio de detección para la autenticación de OAuth, una solicitud enviada a la API web de servicio sin un token de acceso desencadena un desafío del portador con la autoridad del extremo "común" y el id. de recurso del servicio.  De manera similar, cuando se configura una implementación local para OAuth, un desafío del portador devuelve la dirección URL de la entidad local y el id. de recurso del servicio.  
-  
-### <a name="web-api-versioning"></a>Control de versiones de la API web
+Las instancias de la API web de Common Data Service del servicio de detección requieren autenticación con tokens de acceso de OAuth.
 
-Se admite el control de versiones del servicio de detección para un centro de datos o una implementación local o de IFD y consta de números de versión como se usan por el servicio de la organización. Sin embargo, el servicio de detección global de Common Data Service no está vinculado al número de versión de la implementación de Common Data Service. En su lugar, el servicio global usa sus propios números de versión. En el momento de redactar este documento,el servicio de detección global de Common Data Service es la versión 1.0 (v1.0). Por ejemplo:  
-  
-```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
-```  
-  
+Cuando se configura el servicio de detección para la autenticación de OAuth, una solicitud enviada a la API web de servicio sin un token de acceso desencadena un desafío del portador con la autoridad del extremo "común" y el id. de recurso del servicio.
 ### <a name="cors-support"></a>Soporte técnico de CORS
 
 La API web del servicio de detección admite la norma CORS para acceso de origen cruzado como hace la Web API.  Para obtener más información sobre el soporte técnico de CORS, consulte [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página](../oauth-cross-origin-resource-sharing-connect-single-page-application.md).  
@@ -87,9 +86,9 @@ La API web del servicio de detección admite la norma CORS para acceso de origen
   
 -   Obtenga los detalles de una instancia determinada. Si sale del GUID, se devuelven todas las instancias a las que el usuario autenticado tiene acceso.  
   
-    ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(<guid>)  
-    GET https://dev.crm.external.contoso.com/api/discovery/v8.1/Instances(<guid>)  
+    ```http      
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   Puede usar el atributo UniqueName como clave alternativa.  
@@ -107,7 +106,10 @@ La API web del servicio de detección admite la norma CORS para acceso de origen
 -   Recupere el valor de la propiedad del id. de la instancia específica.  
   
     ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(UniqueName='myorg')/Id/$value  
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(UniqueName='myorg')/Id/$value  
     ```
 
-<!-- TODO: Add a see also section -->
+## <a name="see-also"></a>Vea también
+
+[Ejemplo de servicio de detección global de la API web (C#)](samples/global-discovery-service-csharp.md)
+

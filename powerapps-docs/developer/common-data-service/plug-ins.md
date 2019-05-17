@@ -2,8 +2,8 @@
 title: Use complementos para extender procesos de negocio (Common Data Service) | Microsoft Docs
 description: Un complemento es un montaje de .NET que puede cargar al Common Data Service. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 ms.custom: ''
-ms.date: 1/23/2019
-ms.reviewer: ''
+ms.date: 03/27/2019
+ms.reviewer: phecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -30,6 +30,9 @@ Las clases en el ensamblado que puede registrar un paso debe implementar la inte
 - Emprender otras acciones con el servicio de organización para agregar la automatización
 
 Los complementos se pueden configurar para ejecutarse de forma sincrónica o asincrónica. Un complemento sincrónico hará la operación espere hasta que se complete el código del complemento. Este tiene un impacto en el rendimiento percibido del sistema. Las operaciones en un complemento asincrónico se ubican en una cola y se ejecutan tras completar la operación, para que la operación puede completarse con una interrupción mínima.
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](./includes/cc-d365ce-note-section.md)] [Escriba complementos para ampliar procesos de negocio (Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
 
 ## <a name="when-to-use-plug-ins"></a>Cuándo usar complementos
 

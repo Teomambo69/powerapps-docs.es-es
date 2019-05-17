@@ -3,7 +3,6 @@ title: Ejemplos de operaciones de datos de API web (JavaScript de lado de client
 description: En este tema se proporciona una descripción de distintos ejemplos de API Web que están implementados mediante JavaScript del lado cliente
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: a32e9a04-7bc1-41dd-b9af-bb4f21a613c6
 caps.latest.revision: 15
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

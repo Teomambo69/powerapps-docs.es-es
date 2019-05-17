@@ -25,13 +25,13 @@ Puede crear varios tipos de relaciones desde una entidad a otra (o entre una ent
 * **Uno a varios** - En este tipo de relación, cada registro de la entidad B puede coincidir con más de un registro de la entidad A, pero cada registro de la entidad A solo puede coincidir con un registro de la entidad B. Por ejemplo, un único profesor da varias clases.
 * **Varios a varios** - En este tipo de relación, cada registro de la entidad A puede coincidir con más de un registro de la entidad B, y viceversa. Por ejemplo, los alumnos asisten a muchas clases y cada clase puede tener varios alumnos.
 
+Además, puede establecer comportamientos en cascada avanzados en relaciones de varios a uno y de uno a varios siempre que se realice una acción en la entidad principal.
+
 ## <a name="add-a-lookup-field-many-to-one-relationship"></a>Agregar un campo de búsqueda (relación de varios a uno)
 
 Para agregar una relación de búsqueda a una entidad, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desee crear una relación.
 
 1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
-
-    ![Detalles de entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
@@ -42,7 +42,7 @@ Para agregar una relación de búsqueda a una entidad, cree una relación en la 
     > [!div class="mx-imgBorder"] 
     > ![Relación de varios a uno](./media/data-platform-cds-newrelationship/manytoone-1.png "Relación de varios a uno")
 
-5. Después de seleccionar una entidad, los campos de búsqueda se mostrarán en la entidad principal y adoptarán de forma predeterminada el nombre de las entidades (en este ejemplo, Clase), aunque puede cambiarlo si es necesario.
+5. Después de seleccionar una entidad, los campos de búsqueda se mostrarán en la entidad principal y adoptarán de forma predeterminada el nombre de la entidad (en este ejemplo, Clase), aunque puede cambiarlo si es necesario.
 
     ![Relación de varios a uno](./media/data-platform-cds-newrelationship/manytoone-2.png "Relación de varios a uno")
 
@@ -57,15 +57,13 @@ Para agregar una relación de uno a varios, cree una relación en la pestaña **
 
 1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
-    ![Detalles de entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
-
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
 3. Haga clic en **Relaciones**.
 
 4. Haga clic en la flecha abajo, a la derecha de **Agregar relación**; se le ofrecerá la opción de ambos tipos de relaciones. Haga clic en **Uno a varios**, se abrirá un nuevo panel para que elija la entidad con la que desea crear una relación. Seleccione la entidad en la lista desplegable **Entidad relacionada**.
-
-    ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-1.png "Relación de uno a varios")
+    > [!div class="mx-imgBorder"] 
+    > ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-1.png "Relación de uno a varios")
 
 5. Después de seleccionar una entidad, los campos de búsqueda se mostrarán en la entidad principal y adoptarán de forma predeterminada el nombre de las entidades (en este ejemplo, Clase), aunque puede cambiarlo si es necesario.
 
@@ -81,8 +79,53 @@ Para agregar una relación de uno a varios, cree una relación en la pestaña **
     > ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-3.png "Relación de uno a varios")
 
 ## <a name="add-a-many-to-many-relationship"></a>Agregar una relación de varios a varios
+Para agregar una relación de varios a varios, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desee crear una relación.
 
-Actualmente solo está disponible mediante el menú Avanzado. En la página principal de PowerApps, haga clic en “Avanzado” en el menú izquierdo. Para obtener información sobre cómo crear la relación, consulte [Crear relaciones de N:N](/dynamics365/customer-engagement/customize/create-and-edit-nn-many-to-many-relationships)
+1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+
+2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
+
+3. Haga clic en **Relaciones**.
+
+4. Haga clic en la flecha abajo, a la derecha de **Agregar relación**; se le ofrecerá la opción de ambos tipos de relaciones. Haga clic en **Varios a varios**, se abrirá un nuevo panel para que elija la entidad con la que desea crear una relación. Seleccione la entidad en la lista desplegable **Entidad relacionada**.
+
+5. Después de seleccionar una entidad, los nombres para la relación y la entidad de relación aparecerán. Adoptarán de forma predeterminada los nombres de las entidades combinadas, pero puede cambiarlos si es necesario.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Relación de varios a varios](./media/data-platform-cds-newrelationship/manytomany-1.png "Relación de varios a varios")
+
+6. Haga clic en **Hecho** para agregar la relación a la entidad y, a continuación, haga clic en **Guardar entidad**.
+
+
+## <a name="add-advanced-relationship-behavior"></a>Agregar comportamiento de relación avanzado
+
+Mientras crea una relación de uno a varios o de varios a uno, también puede definir comportamientos avanzados.
+
+![Comportamiento avanzado](./media/data-platform-cds-newrelationship/advanced-1.png "Comportamiento avanzado")
+
+Estas opciones también se denominan comportamientos en cascada ya que se despliegan en cascada en la jerarquía de entidades relacionadas. Por ejemplo, podría ser deseable eliminar las pruebas y las tareas relacionadas de un estudiante si este se quita del sistema. Este tipo de comportamiento se llama relación jerárquica.
+
+Además, puede decidir que no desea que las acciones se sitúen en cascada en la jerarquía. Por ejemplo, en la relación de profesor a clase, puede decidir que la entidad secundaria (clase) *no* se debe eliminar cuando se elimina un superior (profesor). Esto se llama relación de referencia.
+
+Cuando modela los datos empresariales mediante la creación de entidades personalizadas o cuando utiliza las entidades existentes del Common Data Model, analice el comportamiento que necesita y las consecuencias para la jerarquía completa de entidades relacionadas y elija entre uno de los siguientes comportamientos estándar:
+
+* **De referencia, Quitar vínculo:** En una relación de referencia entre dos entidades, se puede navegar a registros relacionados, pero las acciones realizadas en una no afectarán a la otra. Por ejemplo, si tiene una relación de uno a varios entre profesores y clases, al eliminar un profesor no se producirá ningún impacto en la clase relacionada.
+
+* **De referencia, restringir eliminación:** En una relación de referencia con restricción de eliminación, se puede navegar a registros relacionados. Las acciones realizadas en el registro primario no se aplicarán al registro secundario, pero el registro primario no se puede eliminar mientras exista el registro secundario. Esto es útil si no desea que los registros secundarios se queden huérfanos. Esto fuerza al usuario a eliminar todos los elementos secundarios antes de eliminar el elemento principal.
+
+    > [!div class="mx-imgBorder"] 
+    > ![De referencia, restringir eliminación](./media/data-platform-cds-newrelationship/advanced-3.png "De referencia, restringir eliminación")
+
+* **Jerárquica:** En una relación jerárquica entre dos entidades, cualquier acción realizada en un registro de la entidad principal se realiza también en los registros de la entidad secundaria relacionados con el registro de la entidad principal. Por ejemplo, esto haría que todos registros secundarios se eliminaran cuando eliminara el elemento principal.
+
+* **Personalizado:** En una relación personalizada entre dos entidades, seleccione el comportamiento asociado con un conjunto de acciones posibles. 
+
+    > [!div class="mx-imgBorder"] 
+    > ![Comportamiento personalizado](./media/data-platform-cds-newrelationship/advanced-2.png "Comportamiento personalizado")
+
+Para obtener más información sobre valores predeterminados y comportamientos personalizados: [Configurar comportamiento de relaciones entre entidades](entity-relationship-behavior.md).
+
+
 
 ## <a name="use-a-lookup-field-in-an-app"></a>Usar un campo de búsqueda en una aplicación
 Si [crea una aplicación automáticamente](../canvas-apps/data-platform-create-app.md) a partir de una entidad que contiene un campo de búsqueda, ésta aparece como control **Desplegable** que contiene datos del campo **Nombre principal** de la entidad.

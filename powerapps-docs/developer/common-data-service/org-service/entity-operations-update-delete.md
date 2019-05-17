@@ -2,7 +2,7 @@
 title: Actualización y eliminación de entidades con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Más información sobre cómo actualizar y eliminar entidades con el servicio de la organización.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,16 +17,6 @@ search.app:
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>Actualización y eliminación de entidades con el servicio de la organización
 
-<!-- 
-Adding parity with Web API topics
-
-include information from https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
-
--->
-
 Este tema incluye ejemplos que usan los de enlace en tiempo de ejecución y enlace en tiempo de compilación Más información: [Programación en tiempo de ejecución y en tiempo de compilación con el servicio de la organización](early-bound-programming.md)
 
 Cada uno de los ejemplos usa una variable `svc` que representa una instancia de una clase que implementa los métodos en la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationService>. Para obtener más información sobre las clases que admiten esta interfaz, consulte [Interfaz IOrganizationService](iorganizationservice-interface.md).
@@ -37,13 +27,20 @@ Cada uno de los ejemplos usa una variable `svc` que representa una instancia de 
 > Debe crear una nueva instancia de entidad, establecer el atributo de identificador y los valores de atributo que está cambiando, y utilizar esa instancia de entidad para actualizar el registro.
 
 > [!NOTE]
-> Los metadatos de los atributos incluyen una propiedad `RequiredLevel`. Cuando esta opción se establece en `SystemRequired`, no puede establecer estos atributos a un valor nulo. Más información: [Nivel de requisito de atributo](../entity-attribute-metadata.md#attribute-requirement-level)
+> Los metadatos de los atributos incluyen una propiedad `RequiredLevel`. Cuando esta opción se establece en `SystemRequired`, no puede establecer estos atributos a un valor nulo. Si intenta esto obtendrá el código de error `-2147220989` con el mensaje `Attribute: <attribute name> cannot be set to NULL`.
+> 
+> Más información: [Nivel de requisito de atributo](../entity-attribute-metadata.md#attribute-requirement-level)
 
 ## <a name="basic-update"></a>Actualización básica
 
 Los dos ejemplos abajo usan el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> para establecer los valores de atributo de una entidad que se recuperó anteriormente.
 
 Use la propiedad <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.Id> para transferir el valor del identificador único de la entidad recuperada para la instancia de entidad que se utiliza para realizar la operación de actualización.
+
+> [!NOTE]
+> Si intenta actualizar un registro sin un valor de clave principal se mostrará el error: `Entity Id must be specified for Update`.
+> 
+> Si no tiene un valor de clave principal, también puede actualizar registros usando las claves alternativas. Más información: [Actualización con clave alternativa](#update-with-alternate-key)
 
 ### <a name="late-bound-example"></a>Ejemplo de enlace en tiempo de ejecución
 
@@ -223,6 +220,30 @@ svc.Update(account);
 
 Para actualizar una entidad puede cambiar los valores para que el registro represente un duplicado de otro registro. Más información: [Detección de datos duplicados con el servicio de la organización](detect-duplicate-data.md)
 
+## <a name="update-with-alternate-key"></a>Actualizar con clave alternativa
+
+Si tiene una clave alternativa definida para una entidad, puede usarla en lugar de la clave principal para actualizar un registro. No puede usar la clase enlazada en tiempo de compilación para especificar la clave alternativa. Debe usar el constructor [Entity(String, KeyAttributeCollection)](/dotnet/api/microsoft.xrm.sdk.entity.-ctor#Microsoft_Xrm_Sdk_Entity__ctor_System_String_Microsoft_Xrm_Sdk_KeyAttributeCollection_) para especificar la clave alternativa.
+
+Si desea usar enlaces de tipo de compilación, puede convertir <xref:Microsoft.Xrm.Sdk.Entity> en una clase enlazada en tiempo de compilación mediante el método <xref:Microsoft.Xrm.Sdk.Entity.ToEntity``1>.
+
+El siguiente ejemplo muestra cómo actualizar una entidad `Account` mediante una clave alternativa definida para el atributo `accountnumber`.
+
+> [!IMPORTANT]
+> De forma predeterminada, no hay claves alternativas definida para ninguna entidad. Este método se puede usar únicamente cuando el entorno está configurado para definir una clave alternativa para una entidad.
+
+```csharp
+var accountNumberKey = new KeyAttributeCollection();
+accountNumberKey.Add(new KeyValuePair<string, object>("accountnumber", "123456"));
+
+Account exampleAccount = new Entity("account", accountNumberKey).ToEntity<Account>();
+exampleAccount.Name = "New Account Name";
+svc.Update(exampleAccount);
+```
+
+Más información: 
+- [Trabajar con claves alternativas](../define-alternate-keys-entity.md)
+- [Usar una clave alternativa para crear un registro](../use-alternate-key-create-record.md)
+
 ## <a name="use-upsert"></a>Usar upsert
 
 Normalmente, en escenarios de integración de datos deberá crear o actualizar los datos en Common Data Service desde otros orígenes. Common Data Service puede tener ya registros con el mismo identificador único, que puede ser una clave alternativa. Si existe un registro de entidad, debe actualizarlo. Si no existe, debe crearlo para sincronizar los datos que se agregan con los datos de origen. Es cuando hay que usar upsert.
@@ -371,4 +392,3 @@ Más información: [Comportamiento de operaciones de actualización especializad
 [Crear entidades con el servicio de la organización](entity-operations-create.md)<br />
 [Recuperar una entidad usando un servicio de organización](entity-operations-retrieve.md)<br />
 [Asociar y desasociar entidades con el servicio de la organización](entity-operations-associate-disassociate.md)<br />
-

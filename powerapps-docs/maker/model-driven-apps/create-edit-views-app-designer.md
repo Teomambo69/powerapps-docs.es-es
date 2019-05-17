@@ -3,7 +3,7 @@ title: Crear y editar vistas públicas o del sistema de aplicaciones controladas
 description: Aprender ahora a crear o editar vistas mediante el diseñador de aplicaciones
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -57,7 +57,7 @@ Como creador de aplicaciones, puede crear y editar vistas públicas usando Power
 
 4. En el cuadro de diálogo **Crear vista**, introduzca un nombre y, si lo desea, una descripción, y, a continuación, seleccione **Crear**. 
     
-5. En el diseñador de vistas, seleccione la columna más para agregar las columnas adicionales que desee mostrar en la vista. Más información: [Agregar una columna a su vista](#add-a-column-to-your-view)
+5. En el diseñador de vistas, seleccione la columna más para agregar las columnas adicionales que desee mostrar en la vista. Más información: [Agregar una columna a su vista en diseñador de aplicaciones](#add-a-column-to-your-view-in-app-designer) 
 
    ![Agregar columna](../common-data-service/media/add-column-to-view.png)
 

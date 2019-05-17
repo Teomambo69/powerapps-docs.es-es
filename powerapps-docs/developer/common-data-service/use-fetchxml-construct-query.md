@@ -44,7 +44,7 @@ En el siguiente ejemplo, la instrucción **FetchXML** recupera todas las cuentas
    <entity name='account'>  
       <attribute name='accountid'/>   
       <attribute name='name'/>   
-</entity>  
+   </entity>  
 </fetch>  
   
 ```  
@@ -73,7 +73,8 @@ En el siguiente ejemplo, la instrucción **FetchXML** recupera todas las cuentas
 <fetch mapping='logical' count='3'>  
   <entity name='account'>  
    <attribute name='name' alias='name'/>  
-  </entity></fetch>  
+  </entity>
+</fetch>  
 ```  
   
 Este ejemplo muestra una combinación interna entre EntityMap y AttributeMap donde EntityMapID coincide.  

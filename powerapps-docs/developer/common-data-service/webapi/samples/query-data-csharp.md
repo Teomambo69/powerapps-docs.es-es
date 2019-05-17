@@ -3,7 +3,6 @@ title: 'Ejemplo de datos de consulta de API web (C#) (Common Data Service) | Mic
 description: 'Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante la API web y C# de Common Data Service'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 ms.assetid: 91183105-bc99-4e34-a1b3-1085e1a51f82
 caps.latest.revision: 16
 author: brandonsimons
+ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
   - developer

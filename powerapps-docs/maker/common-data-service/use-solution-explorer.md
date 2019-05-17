@@ -75,16 +75,13 @@ search.app:
 > [!div class="mx-imgBorder"]  
 > ![Agregar componente existente a una solución](media/solution-add-existing-component.PNG "Agregar componente existente a una solución")  
   
- Con soluciones que son administradas no habrá comandos disponibles y verá el mensaje que se muestra a continuación. Necesitará establecer el componente de la solución llamada **Solución predeterminada** e intentar modificarlo ahí o agregarlo a otra solución no administrada que ha creado. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
+ Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Necesitará establecer el componente de la solución llamada **Solución predeterminada** e intentar modificarlo ahí o agregarlo a otra solución no administrada que ha creado. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
 
 > [!div class="mx-imgBorder"]  
 > ![Solución administrada](media/managed-solution.PNG "Solución administrada")  
 
  Muchas de las personalizaciones que deseará hacer incluyen las entidades. Puede usar el filtro **Entidad** para mostrar una lista de todas las entidades de la solución actual que se pueden personalizar de alguna forma. Cuando profundiza en una entidad puede ver los componentes que forman parte de la entidad como se indica con la entidad Cuenta en la captura de pantalla siguiente. 
- 
-> [!NOTE]
->  Actualmente, cuando agrega una entidad existente a una solución el sistema agrega automáticamente todos los componentes que son parte de la entidad a la solución. Si no es esto lo que prefiere, use el comando **Cambiar a clásico** para navegar a la experiencia clásica y agregar solo los componentes que desee. <!-- We will soon improve this experience from PowerApps and allow you to select only the specific component(s) under entity that you want to add into a solution. -->
-  
+   
 > [!div class="mx-imgBorder"]  
 > ![Solución de demostración que muestra la entidad de cuenta expandida](media/solution-entity-account.png "Solución de demostración que muestra la entidad de cuenta expandida")  
 
@@ -94,18 +91,18 @@ En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Sol
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-- Al eliminar o quitar una solución administrada no se elimina en la aplicación de lienzo de PowerApps.
 - Los conectores personalizados no están disponibles en una solución.
 - Las aplicaciones de lienzo deben abrirse una vez finalizada la importación de la solución para actualizar las conexiones.
-- Después de agregar un ensamblado de SDK existente, no aparece en la solución. 
 - Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino.
 - Las dependencias no están disponibles para las aplicaciones de lienzo.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
 -   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service (Common Data Service).
 -   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelven nada. 
--   Las aplicaciones de lienzo creadas en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
+-   Las aplicaciones y flujos de lienzo creados en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
 -   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
--   Las aplicaciones de lienzo existentes no reconocen las soluciones. 
+- Los flujos desencadenados por botón no están disponibles en soluciones.
+- Los flujos desencadenados por aplicaciones del lienzo no están disponibles en soluciones.
+- Los flujos desencadenados desde aplicaciones de Microsoft 365 como SharePoint y Excel no están disponibles en soluciones.
 
  Para obtener más información acerca de los componentes individuales de una solución, vea los temas siguientes:  
   

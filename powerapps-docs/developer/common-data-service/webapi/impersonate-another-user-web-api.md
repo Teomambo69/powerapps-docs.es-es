@@ -3,7 +3,6 @@ title: Suplantar a otro usuario utilizando la API web (Common Data Service)| Mic
 description: La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Lea cómo puede suplantar a otro usuario en Common Data Service utilizando la API web
 ms.custom: ''
 ms.date: 03/18/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

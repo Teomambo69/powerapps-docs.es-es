@@ -24,6 +24,9 @@ El servicio de organización está optimizado para su uso con .NET Framework y l
 
 Algunas funciones de extensión, como los complementos y las extensiones de flujo de trabajo, dependen de .NET Framework y de las clases definidas en estos ensamblados, por lo que el servicio de organización es la única opción al usar estos métodos para ampliar Common Data Service.
 
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Utilizar el servicio de organización del servicio Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+
 ## <a name="organization-service-assemblies"></a>Ensamblados del servicio de organización
 
 Es útil reconocer que el servicio de organización es lo que define la plataforma. El servicio de organización define las operaciones admitidas como mensajes. Cada mensaje tiene un nombre. Estos mensajes corresponden a los eventos emitidos por el marco de trabajo de eventos. Más información: [Marco de trabajo de eventos](../event-framework.md)

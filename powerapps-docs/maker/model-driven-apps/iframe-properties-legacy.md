@@ -41,7 +41,7 @@ Para ver las propiedades de IFrame, siga estos pasos.
 |---------|--------------|-----------------|  
 |**Generales**|**Nombre**|**Requerido**: nombre único para el iFrame. El nombre solo puede contener caracteres alfanuméricos y de subrayado.|  
 ||**Dirección URL**|**Requerido**: dirección URL de la página que se mostrará en el iFrame.|  
-||**Pasar código tipo de objeto de registro e id. único como parámetros**|Los datos de la organización, el usuario y el registro se pueden pasar al iFrame. Más información: [Transferir parámetros a iFrames](iframe-properties-legacy.md#BKMK_PassParametersToIFRAMEs)|  
+||**Pasar código tipo de objeto de registro e id. único como parámetros**|Los datos de la organización, el usuario y el registro se pueden pasar al iFrame. Más información: [Transferir parámetros a iFrames](#pass-parameters-to-iframes) |  
 ||**Etiqueta**|**Requerido**: etiqueta para mostrar para el iFrame.|  
 ||**Mostrar etiqueta en el formulario**|Si la etiqueta debe mostrarse.|  
 ||**Restringir scripting entre marcos cuando sea posible**|Se considera un riesgo de seguridad permitir que las páginas de un sitio web distinto interactúen con la aplicación Dynamics 365 mediante scripts. Use esta opción para limitar el scripting entre marcos en las páginas de las que no tiene el control.<br /><br />|  

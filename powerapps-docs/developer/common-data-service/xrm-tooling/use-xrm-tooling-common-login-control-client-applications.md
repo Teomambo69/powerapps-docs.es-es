@@ -2,7 +2,7 @@
 title: Usar el control de inicio de sesión común de útiles de XRM en las aplicaciones cliente (Common Data Service)| Microsoft Docs
 description: 'El SDK de Common Data Service proporciona una plantilla para Visual Studio que le permite usar el control de inicio de sesión común en las aplicaciones cliente. El código para autenticación de Common Data Service, almacenamiento de credenciales y recuperación, y registro de diagnóstico está integrado en la plantilla, de modo que se pueden aprovechar rápidamente estas funciones en las aplicaciones cliente de Windows para Common Data Service.'
 ms.custom: ''
-ms.date: 1/16/2019
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: f77b2a20-0a30-4211-a1d9-74923d3eeae1
 caps.latest.revision: 27
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -25,14 +25,13 @@ search.app:
 
 Existe una plantilla para Visual Studio que le permite usar el control de inicio de sesión común en las aplicaciones cliente. El código para autenticación de Common Data Service, almacenamiento de credenciales y recuperación, y registro de diagnóstico está integrado en la plantilla, de modo que se pueden aprovechar rápidamente estas funciones en las aplicaciones cliente de Windows para Common Data Service. El control común de inicio de sesión es una implementación de <xref:Microsoft.Xrm.Tooling.CrmConnectControl> y se asemeja a la siguiente imagen.  
   
- 
- ![Control de inicio de sesión común de útiles de XRM](../media/crm-sdk-v6-commonlogincontrol.png "Control de inicio de sesión común de útiles de XRM")
+![Control de inicio de sesión común de útiles de XRM](../media/crm-sdk-v6-commonlogincontrol.png "Control de inicio de sesión común de útiles de XRM")
   
 <a name="Prereq"></a>
 
 ## <a name="prerequisites"></a>Requisitos previos
   
-- .NET Framework 4.6.2
+- .NET Framework 4.6.2 o superior.
 - Visual Studio 2017 (recomendado)
 - Conectado a Internet para poder descargar/restaurar los paquetes de Nuget necesarios mientras usa la plantilla del proyecto.  
   
@@ -40,7 +39,7 @@ Existe una plantilla para Visual Studio que le permite usar el control de inicio
    
 ## <a name="create-a-wpf-application-using-the-common-login-control-template"></a>Crear una aplicación WPF con la plantilla de control de inicio de sesión común
   
-Aquí se describe una forma rápida para crear una aplicación Windows Presentation Foundation (WPF) que aprovecha el control de inicio de sesión común y el código subyacente para la autenticación, el almacenamiento de credenciales y la reutilización, y el seguimiento predeterminado o registro.  
+Aquí se describe una forma rápida para crear una aplicación **Windows Presentation Foundation (WPF)** que aprovecha el control de inicio de sesión común y el código subyacente para la autenticación, el almacenamiento de credenciales y la reutilización, y el seguimiento predeterminado o registro.  
   
 1.  Inicie Visual Studio y cree un nuevo proyecto.  
 2.  En el cuadro de diálogo **Nuevo proyecto**:  
@@ -49,8 +48,8 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
     3.  Seleccione **Aplicación WPF para Dynamics 365**.  
     4.  Especifique el nombre y la ubicación del proyecto, y haga clic en **Aceptar**.  
   
-> [!div class="mx-imgBorder"]
-> ![Aplicación WPF para plantilla de Common Data Service](../media/crm-sdk-v6-xrm-tooling-newproject.png "Aplicación WPF para plantilla de Common Data Service")   
+     > [!div class="mx-imgBorder"]
+     > ![Aplicación WPF para plantilla de Common Data Service](../media/crm-sdk-v6-xrm-tooling-newproject.png "Aplicación WPF para plantilla de Common Data Service")   
 
 > [!NOTE]
 > **Problema conocido con Visual Studio 2015**
@@ -61,11 +60,12 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
 >
 > Esto afecta solo a la experiencia de depuración en VS 2015. Esto no afecta a los archivos binarios o ejecutables que se crean. El mismo problema no se produce en Visual Studio 2017.
   
-3.  Para probar el proyecto:  
+3. Para probar el proyecto:
   
-    1.  Guarde el proyecto y presione F5, o haga clic en **Depurar** > **Iniciar depuración** para comprobar si el proyecto se compila correctamente. Si la compilación es correcta, verá una MainWindow con el botón **Iniciar sesión en Dynamics 365**. Haga clic en el botón para mostrar el control de inicio de sesión común.  
-  
+    1. Guarde el proyecto y presione **F5**, o haga clic en **Depurar** > **Iniciar depuración** para comprobar si el proyecto se compila correctamente. Si la compilación es correcta, verá una MainWindow con el botón **Iniciar sesión en Dynamics 365**. Haga clic en el botón para mostrar el control de inicio de sesión común.  
+
     2.  Pruebe la autenticación mediante sus credenciales para conectarse a Common Data Service y, a continuación, haga clic en **Iniciar sesión**. Un mensaje muestra el estado de conexión de Common Data Service.  
+
   
  Para obtener un ejemplo en el que se usa una plantilla de control de inicio de sesión común para conectarse a Common Data Service y se realizan distintas operaciones, consulte [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md).  
   
@@ -75,34 +75,34 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
 
  Si ya tiene una aplicación cliente de WPF, puede agregar fácilmente la plantilla de control de inicio de sesión común a la aplicación para aprovechar la experiencia de inicio de sesión uniforme y el código subyacente para autenticación de Common Data Service, el almacenamiento de credenciales y la reutilización, y el seguimiento predeterminado o registro. En este caso, debe crear un control en la interfaz de usuario de la aplicación cliente existente para llamar al control de inicio de sesión común, crear una instancia del objeto de conexión de Common Data Service y después usar el objeto de conexión para realizar distintas operaciones en Common Data Service.  
   
-1.  Abra un proyecto de aplicación WPF existente en Visual Studio. Para este ejemplo, supongamos que el nombre del proyecto de aplicación WPF es SampleWPFApp.  
+1. Abra un proyecto de aplicación WPF existente en Visual Studio. Para este ejemplo, supongamos que el nombre del proyecto de aplicación WPF es `SampleWPFApp`.  
   
-2.  Agregue una plantilla de control de inicio de sesión común al proyecto.  
+2. Agregue una plantilla de control de inicio de sesión común al proyecto.  
   
-    1.  En el panel **Explorador de soluciones**, haga clic con el botón secundario en el nombre del proyecto y después haga clic en **Agregar** > **Nuevo elemento**.  
+    1. En el panel **Explorador de soluciones**, haga clic con el botón secundario en el nombre del proyecto y después haga clic en **Agregar** > **Nuevo elemento**.  
   
+
     2.  En el cuadro de diálogo **Agregar nuevo artículo**, en la lista de plantillas instaladas, expanda **Visual C#** y seleccione **Plantillas del SDK de Common Data Service**. Haga clic en **Formulario de inicio de sesión de Common Data Service para aplicaciones WPF**, y haga clic en **Aceptar**.  
+
+          > [!div class="mx-imgBorder"]
+          > ![Agregar la plantilla de control de inicio de sesión común](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Agregar la plantilla de control de inicio de sesión común")
   
- 
- > [!div class="mx-imgBorder"]
- > ![Agregar la plantilla de control de inicio de sesión común](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Agregar la plantilla de control de inicio de sesión común")
+3. El control de inicio de sesión `CrmLoginForm1.xaml` agregado recientemente se muestra en el área de diseñador de XAML. Si no se muestra, haga doble clic en el archivo `CrmLoginForm1.xaml` en el panel **Explorador de soluciones**.  
   
-3.  El control de inicio de sesión `CrmLoginForm1.xaml` agregado recientemente se muestra en el área de diseñador de XAML. Si no se muestra, haga doble clic en el archivo `CrmLoginForm1.xaml` en el panel **Explorador de soluciones**.  
+    > [!div class="mx-imgBorder"]
+    > ![Comprobar que el control de inicio de sesión se representa correctamente](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Comprobar que el control de inicio de sesión se representa correctamente")
   
- 
-![Comprobar que el control de inicio de sesión se representa correctamente](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Comprobar que el control de inicio de sesión se representa correctamente")
-  
+
 4.  Ahora debe llamar al control de inicio de sesión recién agregado desde la aplicación. Para ello, agregue un control **Botón** del archivo `MainWindow.xaml` y establezca el nombre y el contenido en **btnSignIn** y **Iniciar sesión en Common Data Service** respectivamente.  
-  
  
- > [!div class="mx-imgBorder"]
- > ![Agregar un control para llamar al formulario de inicio de sesión](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Agregar un control para llamar al formulario de inicio de sesión")
+     > [!div class="mx-imgBorder"]
+     > ![Agregar un control para llamar al formulario de inicio de sesión](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Agregar un control para llamar al formulario de inicio de sesión")
   
-5.  Haga doble clic en el botón para agregar el código del evento de clic en el botón **btnSignIn** en el archivo `MainWindow.xaml.cs`.  
+5. Haga doble clic en el botón para agregar el código del evento de clic en el botón **btnSignIn** en el archivo `MainWindow.xaml.cs`.  
   
 6.  Agregue el siguiente código de ejemplo en el evento de clic del botón **btnSignIn** para llamar al control `CrmLoginForm1` y cree una instancia del objeto de conexión de Common Data Service.  
-  
-    ```csharp
+ 
+```csharp
     // Establish the Login control.  
     CRMLoginForm1 ctrl = new CRMLoginForm1();  
   
@@ -125,11 +125,11 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
     {  
         MessageBox.Show("Cannot connect; try again!", "Connection Status");  
     }  
-    ```  
+```  
   
-7.  Agregue la definición del evento `ctrl_ConnectionToCrmCompleted` debajo del evento de clic del botón:  
+7. Agregue la definición del evento `ctrl_ConnectionToCrmCompleted` debajo del evento de clic del botón:  
   
-    ```csharp  
+```csharp  
     private void ctrl_ConnectionToCrmCompleted(object sender, EventArgs e)  
     {  
         if (sender is CRMLoginForm1)  
@@ -140,11 +140,12 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
             });  
         }  
     }  
-    ```  
+ ```  
   
-8.  Así aparece el archivo `MainWindow.xaml.cs` después de agregar el código de los dos pasos anteriores:  
-  
-![Código de ejemplo](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Código de ejemplo")
+8. Así aparece el archivo `MainWindow.xaml.cs` después de agregar el código de los dos pasos anteriores:
+
+    > [!div class="mx-imgBorder"]
+    > ![Código de ejemplo](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Código de ejemplo")
   
 9. Para probar el proyecto:  
   
@@ -153,14 +154,14 @@ Aquí se describe una forma rápida para crear una aplicación Windows Presentat
     2.  Pruebe la autenticación mediante sus credenciales para conectarse a Common Data Service y, a continuación, haga clic en **Iniciar sesión**. Si se realiza correctamente, aparecerá un mensaje que indica la versión y el nombre de la organización a la que está conectado. Haga clic en **Aceptar** para cerrar el mensaje.  
   
  
-> [!div class="mx-imgBorder"]
-> ![Resultados de las pruebas del proyecto](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Resultados de las pruebas del proyecto") 
-  
-    3.  Si vuelve a hace clic en **Conectarse a Dynamics 365**, la aplicación le preguntará si desea elegir las credenciales guardadas en la última actividad de inicio de sesión o volver a especificar las nuevas credenciales.  
-  
+    > [!div class="mx-imgBorder"]
+    > ![Resultados de las pruebas del proyecto](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Resultados de las pruebas del proyecto") 
 
-> [!div class="mx-imgBorder"]
-> ![Credenciales almacenadas](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Credenciales almacenadas")
+  
+    3. Si vuelve a hace clic en **Conectarse a Dynamics 365**, la aplicación le preguntará si desea elegir las credenciales guardadas en la última actividad de inicio de sesión o volver a especificar las nuevas credenciales.  
+  
+        > [!div class="mx-imgBorder"]
+        > ![Credenciales almacenadas](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Credenciales almacenadas")
   
 ### <a name="see-also"></a>Vea también  
 

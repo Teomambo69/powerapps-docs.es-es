@@ -3,7 +3,7 @@ title: Elegir y configurar columnas en vistas de aplicaciones controladas por mo
 description: Aprenda a seleccionar y configurar vistas para la aplicación
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -46,7 +46,7 @@ search.app:
   > La versión más reciente del diseñador de vistas está funcionando actualmente en vista previa. Algunas características como habilitar o deshabilitar la presencia de una columna y agregar una columna de búsqueda aún no se admiten. Para realizar estas tareas [abra la vista en el diseñador clásico de vistas](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer).
   >  -   [Habilite o deshabilite presencia para una columna](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
   >
-  >  -   [Agregue columnas de búsqueda](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+  >  -   [Agregue columnas de búsqueda](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_AddFindColumns) 
 
 
 
@@ -111,6 +111,8 @@ Haga clic en el encabezado de columna y arrástrelo a la ubicación correcta.
   
 > [!TIP]
 >   También puede seleccionar el encabezado de la columna que desea mover y desde el desplegable seleccione **Mover a la derecha** o **Mover a la izquierda**.  
+
+
   
 ## <a name="next-steps"></a>Pasos siguientes
 [Creación o edición de vistas](create-edit-views.md)

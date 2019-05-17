@@ -2,8 +2,7 @@
 title: Tipos y operaciones de API web (Common Data Service) | Microsoft Docs
 description: 'Este tema describe lo que está disponible para utilizarlo a través de la API web e introducirá temas importantes y cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema.'
 ms.custom: ''
-ms.date: 02/05/2019
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: d80cfb87-d4f1-4c75-bcc8-4f54d1351e26
 caps.latest.revision: 27
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -23,7 +22,10 @@ search.app:
 ---
 # <a name="web-api-types-and-operations"></a>Tipos y operaciones de API web
 
-Para usar la API web necesita encontrar información sobre qué hay disponible para usar. El servicio se describe a través los documentos de servicio y de metadatos a los que puede obtener acceso. Este tema introducirá conceptos importantes y describirá cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema.  
+Para usar la API web necesita encontrar información sobre qué hay disponible para usar. El servicio se describe a través los documentos de servicio y de metadatos a los que puede obtener acceso. Este tema introducirá conceptos importantes y describirá cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema. 
+
+> [!NOTE]
+> La información en este tema también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local).
   
 <a name="bkmk_terminology"></a>
   
@@ -375,4 +377,5 @@ Los *tipos de enumeración* o *EnumTypes* son tipos primitivos con nombre cuyos 
 
 [Utilizar API Web de Common Data Service](overview.md)<br />
 [Autentique Common Data Service con la API web](authenticate-web-api.md)<br />
-[Realizar operaciones mediante la API web](perform-operations-web-api.md)
+[Realizar operaciones mediante la API web](perform-operations-web-api.md)<br/>
+[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)

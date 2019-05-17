@@ -3,7 +3,6 @@ title: Usar funciones de API web (Common Data Service) | Microsoft Docs
 description: Las funciones son operaciones reutilizables que se utilizan con una solicitud GET para recuperar datos de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: c6de9c12-e8e3-4ed5-a6ed-18ade572065f
 caps.latest.revision: 45
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
