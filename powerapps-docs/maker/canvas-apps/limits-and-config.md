@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
-ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
+ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65516820"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "65884061"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -96,10 +96,10 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener la información de usuario (por ejemplo, la foto del perfil) |
 | gallery.azure.com |https |Aplicaciones de ejemplo y plantilla |
 | \*.azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
-| \*.powerapps.com |https | create.powerapps.com + web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com |
+| \*.powerapps.com |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*.azureedge.net |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
 | \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | create.powerapps.com + web.powerapps.com |
+| \*.flow.microsoft.com | https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetría |
 
 > [!NOTE]
