@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2019
 ms.locfileid: "65828173"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funciones Back y Navigate en PowerApps
 
@@ -71,7 +72,7 @@ Cuando el **volver** función que se ejecuta, la transición inversa se usa de f
 
 * *Transición* : opcional. La transición visual usada entre la pantalla actual y la pantalla anterior. Consulte la lista de valores válidos para este argumento anteriormente en este tema. De forma predeterminada, la transición a través del cual se devuelve una pantalla es el inverso de la transición a través del cual se puso de manifiesto.
 
-**Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
+**Navigate**( *Screen* [; *Transition* [; *UpdateContextRecord* ] ] )
 
 * *Screen*: requerido. La pantalla que se va a mostrar.
 * *Transición* : opcional.  La transición visual usada entre la pantalla actual y la siguiente pantalla. Consulte la lista de valores válidos para este argumento anteriormente en este tema. El valor predeterminado es **ninguno**.
@@ -82,9 +83,9 @@ Cuando el **volver** función que se ejecuta, la transición inversa se usa de f
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
 | **Navegar (detalles)** |Muestra la pantalla **Details** sin transición o cambio en el valor de una variable de contexto. |La pantalla **Details** aparece rápidamente. |
-| **Navigate( Details, ScreenTransition.Fade )** |Muestra la pantalla **Details** con una transición **Fade**.  No se cambia ningún valor de una variable de contexto. |La pantalla actual desaparece para mostrar la pantalla **Details**. |
-| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade** y actualiza el valor de la variable de contexto **ID** a **12**. |La pantalla actual desaparece para mostrar la pantalla **Details** y la variable de contexto **ID** de esa pantalla se establece en **12**. |
-| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade**. Actualiza el valor de la variable de contexto **ID** a **12** y actualiza el valor de la variable de contexto **Shade** a **Color.Red**. |La pantalla actual desaparece para mostrar la pantalla **Details**. La variable de contexto **ID** en la pantalla **Details** está establecida en **12** y la variable de contexto **Shade** está establecida en **Color.Red**. Si establece la propiedad **Fill** de un control de la pantalla **Details** en **Shade**, ese control se muestra en rojo. |
+| **Navigate( Details; ScreenTransition.Fade )** |Muestra la pantalla **Details** con una transición **Fade**.  No se cambia ningún valor de una variable de contexto. |La pantalla actual desaparece para mostrar la pantalla **Details**. |
+| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade** y actualiza el valor de la variable de contexto **ID** a **12**. |La pantalla actual desaparece para mostrar la pantalla **Details** y la variable de contexto **ID** de esa pantalla se establece en **12**. |
+| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;;&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Muestra la pantalla **Details** con una transición **Fade**. Actualiza el valor de la variable de contexto **ID** a **12** y actualiza el valor de la variable de contexto **Shade** a **Color.Red**. |La pantalla actual desaparece para mostrar la pantalla **Details**. La variable de contexto **ID** en la pantalla **Details** está establecida en **12** y la variable de contexto **Shade** está establecida en **Color.Red**. Si establece la propiedad **Fill** de un control de la pantalla **Details** en **Shade**, ese control se muestra en rojo. |
 | **Back()** | Muestra la pantalla anterior con la transición de valor devuelto predeterminado. | Muestra la pantalla anterior a través de la transición inversa de la transición a través del cual aparece la pantalla actual. |
 | **Back (ScreenTransition.Cover)** |  Muestra la pantalla anterior con el **cubrir** transición. | Muestra la pantalla anterior a través de la **cubrir** transición, independientemente de la transición a través del cual aparece la pantalla actual. |
 
@@ -100,8 +101,8 @@ Cuando el **volver** función que se ejecuta, la transición inversa se usa de f
 
 1. En **Screen2**, agregue un botón y establezca su **[Alseleccionar](../controls/properties-core.md)** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Navigate( Screen1, ScreenTransition.Cover )
+    ```powerapps-comma
+    Navigate( Screen1; ScreenTransition.Cover )
     ```
 
 1. Mientras mantiene presionada la **Alt** clave, seleccione el botón.
@@ -110,7 +111,7 @@ Cuando el **volver** función que se ejecuta, la transición inversa se usa de f
 
 1. En **Screen1**, agregue un botón y establezca su **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Back()
     ```
 
