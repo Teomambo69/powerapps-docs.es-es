@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 09/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
+ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319657"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974569"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Creación de una aplicación de lienzo desde cero con Common Data Service
 
@@ -61,7 +60,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. En la barra de navegación izquierda, seleccione **BrowseGallery1** y establezca el valor de la propiedad **Items** en esta fórmula:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Esta fórmula especifica que:
 
@@ -93,7 +92,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
     ![Establecer las propiedades Datasource e Item del formulario](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione **Editar campos** para abrir el panel **Campos**.
+1. En el **propiedades** ficha del panel derecho, seleccione **editar campos** para abrir el **campos** panel.
 
 1. Seleccione **Agregar campo** y seleccione las casillas para estos campos:
 
@@ -103,6 +102,9 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
     - **Dirección 1: Código postal**
     - **Número de empleados**
     - **Ingresos anuales**
+
+    > [!NOTE]
+    > Fuera de este escenario, puede crear un campo personalizado seleccionando **nuevo campo**, proporcionar la información necesaria y, a continuación, seleccionando **realiza**. Más información: [Crear un campo](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Seleccione y agregue un campo")
 
 1. Seleccione **Agregar**.
 
@@ -124,25 +126,25 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. Establezca la propiedad **OnSelect** del icono "más" en esta fórmula:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Icono Agregar](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Establezca la propiedad **OnSelect** de la primera flecha que apunta a la derecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Icono Siguiente](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. En **FormScreen**, establezca la propiedad **OnSelect** del icono Cancelar en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono Cancelar](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Establezca la propiedad **OnSelect** del icono de marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de marca de verificación](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -150,7 +152,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. Establezca la propiedad **Color** del icono **Papelera** en **White** y su propiedad **OnSelect** en esta fórmula:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de la papelera](./media/data-platform-create-app-scratch/trash-icon.png)
 
