@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e96bf33b5ca5446c309eeb8a35ff0dd1c7fc5847
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: f9acc04a9159349075647ca4e318f15939a230f7
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65941633"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216646"
 ---
 # <a name="data-types-in-canvas-apps"></a>Tipos de datos en aplicaciones de lienzo
 
@@ -62,10 +62,6 @@ Dado que todos los tipos de datos admiten *en blanco*, el **booleano** y **opci�
 
 Cuatro de estos tipos de datos se basa en un [Unicode](https://en.wikipedia.org/wiki/Unicode) cadena de texto.
 
-### <a name="size-limits"></a>Límites de tamaño
-
-Estos tipos de datos no tienen ningún límite preestablecido respecto de su longitud. La implementación subyacente de JavaScript en el explorador o en el dispositivo puede imponer un límite, pero suele ser más de 100 MB. Sin embargo, la cantidad de memoria disponible en el dispositivo puede imponer otro límite que es probable que inferior a 100 MB. Para determinar si la aplicación se ejecutará dentro de estos límites, probar escenarios comunes en todos los dispositivos en los que se debe ejecutar.
-
 ### <a name="image-and-media-resources"></a>Recursos de imágenes y multimedia
 
 A través de la **archivo** menú, puede agregar archivos de imagen, audio y vídeo como recursos de la aplicación. El nombre del archivo importado se convierte en el nombre del recurso en la aplicación. En este gráfico, el logotipo de Northwind Traders, que se denomina **nwindlogo**, se ha agregado a una aplicación:
@@ -94,11 +90,21 @@ Ese URI muestra una versión escalada de diamantes púrpuras dos:
 
 ![](media/data-types/double-diamonds.png)
 
-Puede mostrar la imagen más reciente que se capturan en un [ **cámara** ](../controls/control-camera.md) controlar si establece la **imagen** propiedad de un control de imagen para el **Photo** propiedad del control de cámara. La aplicación guarda la imagen en la memoria y el **Photo** propiedad del control de cámara devuelve una referencia de URI a la imagen. Por ejemplo, puede tardar una imagen y la cámara **Photo** propiedad podría devolver **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
+Puede mostrar la imagen más reciente que se capturan en un [ **cámara** ](../controls/control-camera.md) controlar si establece la **imagen** propiedad de un control de imagen para el **Photo** propiedad del control de cámara. La aplicación guarda la imagen en la memoria y el **Photo** propiedad del control de cámara devuelve una referencia de URI a la imagen. Por ejemplo, puede tardar una imagen y la cámara **Photo** propiedad podría devolver **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
 
 Use un URI para hacer referencia a una imagen u otro archivo de medios que se almacenan en una base de datos. De este modo, la aplicación no recupera los datos reales hasta que sea realmente necesario. Por ejemplo, podrían devolver los datos adjuntos en una entidad de Common Data Service **"appres://datasources/Contacts/table/..."** Como se muestra en el ejemplo de la cámara, puede mostrar esta imagen estableciendo el **imagen** propiedad de un control de imagen para esta referencia, que recupera los datos binarios.
 
 Al guardar un tipo de datos de medios, como una imagen, en una base de datos, la aplicación envía la imagen real o los datos de medios, no la referencia URI.
+
+### <a name="size-limits"></a>Límites de tamaño
+
+Como las cadenas de texto y los URI, estos tipos de datos no tienen ningún límite preestablecido en su longitud.
+
+Los datos binarios que también hacen referencia a estos tipos de datos no tienen ningún límite preestablecido en tamaño. Por ejemplo, una imagen capturada a través del control de cámara que ahora se hace referencia como **"appres: / /..."** puede ser como grande y de alta resolución que logre reunir la cámara del dispositivo. La resolución, velocidad de fotogramas y otros atributos de archivos multimedia no están limitados por el tipo de datos, pero los controles específicos para reproducir y medios de captura pueden tener sus propias limitaciones.
+
+Sin embargo, todos los tamaños de datos están sujetos a la cantidad de memoria disponible en la aplicación. Los exploradores que se ejecutan en un equipo de escritorio normalmente admiten más de 100 megabytes de datos. Sin embargo, la cantidad de memoria disponible en un dispositivo como un teléfono podría ser mucho menor, normalmente en el intervalo 30-70 megabytes. Para determinar si la aplicación se ejecutará dentro de estos límites, probar escenarios comunes en todos los dispositivos en los que se debe ejecutar.
+
+Como práctica recomendada, almacenar datos en memoria solo mientras según sea necesario. Cargar imágenes en una base de datos tan pronto como pueda; Descargar imágenes solo cuando el usuario de la aplicación las solicita.
 
 ## <a name="number-and-currency"></a>Número y moneda
 
@@ -121,7 +127,7 @@ Fecha/hora disminución de los valores de estas categorías:
 
 Esta tabla muestra algunos ejemplos:
 
-| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor de muestra y escrito 7 horas al oeste UTC | Muestra y especifica 4 horas al este de UTC | 
+| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor de muestra y escrito 7 horas al oeste UTC | Muestra y especifica 4 horas al este de UTC |
 |--------------------------|------------------------------|------------------------------|
 | **Usuario local** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El sábado,&nbsp;puede&nbsp;18,&nbsp;2019<br>9:00 P. M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>8:00 A. M. |
 | **Zona horaria independiente** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | 
@@ -152,6 +158,12 @@ UNIX reflejan el número de segundos desde el 1 de enero de 1970 00:00:00 UTC. D
 Por ejemplo, tiempo de Unix muestra 9 de septiembre de 2001, de 01:46:40 UTC como 1.000.000.000. Para mostrar que el valor en una aplicación de lienzo de fecha y hora, multiplicar ese número por 1000 para poder convertirlo en milisegundos y, a continuación, utilizarlo en un [ **texto** ](function-text.md) función. La fórmula **texto (1000000000 * 1000, DateTimeFormat.UTC)** devuelve la cadena **2001-09-09T01:46:40.000Z**.
 
 Sin embargo, esa función devuelve **el sábado, 8 de septiembre de 2001 18:46:40** si usas el **DateTimeFormat.LongDateTime24** formato en una zona horaria que es menos 7 horas de desplazamiento a la hora UTC (7 horas al oeste UTC). Este resultado muestra el **DateTime** valor correctamente según la zona horaria local.
+
+Para convertir en una hora Unix, divida el resultado de **valor** por 1.000:
+<br>**RoundDown( Value( UnixTime ) / 1000, 0 )**
+
+Si necesita la hora de Unix en un **fecha** valor para cálculos o mostrar dentro de PowerApps, use la siguiente fórmula:
+<br>**DateAdd( Date( 1970,1,1 ), UnixTime, Seconds )**
 
 ### <a name="sql-server"></a>SQL Server
 
@@ -194,7 +206,7 @@ Pero puede usar esta fórmula:
 
 `If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
-Para conjuntos de opciones globales (las entidades que comparten), el nombre de la enumeración de conjunto de opciones coincide con el nombre del conjunto de opciones globales. Para conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones que tienen el mismo nombre. Por ejemplo, el **cuentas** entidad podría tener un **OrderStatus** opción establecida, y su nombre podría ser **OrderStatus (cuentas)**. Ese nombre contiene uno o más espacios y paréntesis, por lo que debe delimitar con comillas simples si se hace referencia en una fórmula.
+Para conjuntos de opciones globales (las entidades que comparten), el nombre de la enumeración de conjunto de opciones coincide con el nombre del conjunto de opciones globales. Para conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones que tienen el mismo nombre. Por ejemplo, el **cuentas** entidad podría tener un **OrderStatus** opción establecida, y su nombre podría ser **OrderStatus (cuentas)** . Ese nombre contiene uno o más espacios y paréntesis, por lo que debe delimitar con comillas simples si se hace referencia en una fórmula.
 
 Además, los valores de las dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de opción de dos denominado **TaxStatus** podría tener las etiquetas **sujetos** y **no sujeto**, que corresponden a *true* y *false* respectivamente. Para mostrar, puede usar esta fórmula:
 

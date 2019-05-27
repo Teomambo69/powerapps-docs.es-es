@@ -7,52 +7,78 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 438076c5e1b3e0643af809755078fbc491cea9c5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eb020d854549b6dc8878f07ae26390523a1bc03
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562839"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66215979"
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Funciones And, Or y Not en PowerApps
+
 Funciones de lógica booleana usadas comúnmente para manipular los resultados de pruebas y comparaciones.
 
 ## <a name="description"></a>Descripción
-La función **And** devuelve **true** si todos los argumentos son **verdaderos**.  El **&&**[operador](operators.md) es equivalente a **And**.
 
-La función **Or** devuelve **true** si todos sus argumentos son **verdaderos**.  El operador **||** es equivalente a **Or**.
+La función **And** devuelve **true** si todos los argumentos son **verdaderos**.
 
-La función **Not** devuelve **true** si su argumento es **falso** y devuelve **false** si su argumento es **verdadero**.  El operador **!** es equivalente a **Not**.
+La función **Or** devuelve **true** si todos sus argumentos son **verdaderos**.
 
-Estas funciones trabajan con valores lógicos. No se les puede pasar un número o una cadena directamente, sino que se debe realizar una comparación o prueba. Por ejemplo, una comparación como **x > 1** es una fórmula lógica que se evalúa como el valor booleano **true** si **x** es mayor que **1**. Si **x** es menor que **1**, la fórmula se evalúa como **false.**
+La función **Not** devuelve **true** si su argumento es **falso** y devuelve **false** si su argumento es **verdadero**.
+
+Estas funciones funcionan del mismo modo que en Excel. También puede usar [operadores](operators.md) para realizar estas mismas operaciones, mediante la sintaxis de Visual Basic o JavaScript:
+
+| Notación de función | Notación de operador de Visual Basic | Notación de operador de JavaScript |
+| -------------|------------|--------|
+| **Y (x, y)** | **x y y** | **x & & y** |
+| **O (x, y)** | **x o y** | **x &#124;&#124; y** |
+| **No (x)** | **No x** | **! x** |
+
+Estas funciones trabajan con valores lógicos. No puede pasar a un número o una cadena directamente; en su lugar, debe realizar una comparación o una prueba. Por ejemplo, esta fórmula lógica **x > 1** se evalúa como el valor booleano **true** si **x** es mayor que **1**. Si **x** es menor que **1**, la fórmula se evalúa como **false**.
 
 ## <a name="syntax"></a>Sintaxis
-**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+
+**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
-* *LogicalFormula(s)*: requerido.  Fórmulas lógicas para evaluar y con las que operar.
+- *LogicalFormula(s)* : requerido.  Fórmulas lógicas para evaluar y con las que operar.
 
 ## <a name="examples"></a>Ejemplos
-### <a name="step-by-step"></a>Paso a paso
-Use esta función para determinar si el valor de un control deslizante está fuera del intervalo de 50 a 100:
 
-**Or(Slider1.Value < 50; Slider1.Value> 100)**
+Los ejemplos en esta sección usan estas variables globales:
 
-Si una [tabla](../working-with-tables.md) contuviera una [columna](../working-with-tables.md#columns) **Dept** y una columna **Salary**, podría usar esta función en una columna **Result** para mostrar **true** en todas las filas donde el valor de la columna **Dept** fuera **HR** o el valor de la columna **Salary** fuera mayor que **200000**:
+- **a** = *false*
+- **b** = *true*
+- **x** = 10
+- **y** = 100
+- **s** = "Hello World"
 
-**Or(Dept = HR; Salary >= 200000)**
+Para crear estas variables globales en una aplicación, inserte un [ **botón** ](../controls/control-button.md) y establezca su **OnSelect** propiedad en esta fórmula:
 
-Como alternativa, use el operador || para obtener los mismos resultados que los que devuelven las fórmulas anteriores:
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
+```
 
-**Slider1.Value < 50 || Slider1.Value> 100**
+Seleccione el botón (haciendo clic en él mientras se mantenga presionada la tecla Alt) y, a continuación, establezca el **texto** propiedad de un [ **etiqueta** ](../controls/control-text-box.md) control en una fórmula en la primera columna de la tabla siguiente.
 
-**Dept = "HR" || Salary > 200000**
-
+| Fórmula | Descripción | Resultado |
+|---------|-------------|--------|
+| **Y (a, b)** | Comprueba los valores de **un** y **b**.  Uno de los argumentos es *false*, por lo que la función devuelve *false*. | *false* |
+| **una b And** | Igual que el ejemplo anterior, mediante la notación de Visual Basic. | *false* |
+| **un & & b** | Igual que el ejemplo anterior, mediante la notación de JavaScript. | *false* |
+| **O (a, b)** | Comprueba los valores de **un** y **b**. Uno de los argumentos es *true*, por lo que la función devuelve *true*. | *true* |
+| **una b Or** | Igual que el ejemplo anterior, mediante la notación de Visual Basic. | *true* |
+| **a &#124;&#124; b** | Igual que el ejemplo anterior, mediante la notación de JavaScript. | *true* |
+| **Not( a )** | Comprueba el valor de **un**. El argumento es *false*, por lo que la función devuelve el resultado opuesto. | *true* |
+| **No una** | Igual que el ejemplo anterior, mediante la notación de Visual Basic. | *true* |
+| **! una** | Igual que el ejemplo anterior, mediante la notación de JavaScript. | *true* |
+| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 y&nbsp;no&nbsp;IsBlank (&nbsp;s&nbsp;)** | Las pruebas si la longitud de **s** es inferior a 20 y si no es un **en blanco** valor. La longitud es inferior a 20 y el valor no está en blanco. Por lo tanto, el resultado es *true*. | *true* |
+| **O (&nbsp;Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;x 10,&nbsp;<&nbsp;y 100,&nbsp;<&nbsp;100&nbsp;)** | Las pruebas si la longitud de **s** es menor que 10, si **x** es inferior a 100 y si **y** es menor que 100. El primero y tercer argumentos son false, pero la segunda es true. Por lo tanto, la función devuelve *true*. | *true* |
+| **No ESBLANCO (&nbsp;s&nbsp;)** | Las pruebas si **s** es *en blanco*, que devuelve *false*. **No** devuelve este resultado, que es el opuesto *true*. | *true* |

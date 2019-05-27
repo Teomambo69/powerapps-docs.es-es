@@ -1,25 +1,24 @@
 ---
 title: Uso de Cognitive Services en PowerApps | Microsoft Docs
 description: Cree una aplicación básica de canvas que usa Azure Cognitive Services Text Analytics API para analizar el texto.
-author: gregli-msft
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
-ms.author: gregli
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556422"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224931"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Uso de Cognitive Services en PowerApps
 Este artículo muestra cómo crear una aplicación básica de canvas que usa el [Azure Cognitive Services Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar el texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
@@ -113,7 +112,7 @@ Siga los pasos a continuación para crear esta pantalla. Si se especifica un nom
    
     ![Aplicación con etiquetas y la galería](./media/cognitive-services-api/partial-app-step3.png)
 
-9. En el panel izquierdo, seleccione **Screen1** > puntos suspensivos (**...** ) > **Eliminar** (no necesita esta pantalla en la aplicación).
+9. En el panel izquierdo, seleccione **Screen1** > puntos suspensivos ( **...** ) > **Eliminar** (no necesita esta pantalla en la aplicación).
 
 Simplificaremos esta aplicación para centrarnos en llamar a Text Analytics API, pero puede agregar elementos tales como lógica para mostrar y ocultar los controles en función de las casillas que están activadas, para controlar los errores si el usuario no selecciona ninguna opción, etc.
 
@@ -128,34 +127,34 @@ Ya tiene una aplicación bonita, pero aún no hace nada. Eso se solucionará en 
 
 Con esa información, vamos a agregar la fórmula de la propiedad **AlSeleccionar** del botón. Aquí es donde se produce la magia.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -171,9 +170,9 @@ Vamos a ver con detalle lo que sucede:
 
   * En las tres llamadas, especifique **tiTextToAnalyze.Text** como texto de entrada.
 
-  * En **DetectLanguage()**, se codifica **numberOfLanguagesToDetect** de forma rígida como 1, pero puede pasar este parámetro en función de alguna lógica de la aplicación.
+  * En **DetectLanguage()** , se codifica **numberOfLanguagesToDetect** de forma rígida como 1, pero puede pasar este parámetro en función de alguna lógica de la aplicación.
 
-  * En **KeyPhrases()** y **DetectSentiment()**, **lenguaje** está codificado de forma rígida como "es-es", pero puede pasar este parámetro en función de alguna lógica de la aplicación. Por ejemplo, puede detectar primero el idioma y luego establecer este parámetro en función de lo que devuelva **DetectLanguage()**.
+  * En **KeyPhrases()** y **DetectSentiment()** , **lenguaje** está codificado de forma rígida como "es-es", pero puede pasar este parámetro en función de alguna lógica de la aplicación. Por ejemplo, puede detectar primero el idioma y luego establecer este parámetro en función de lo que devuelva **DetectLanguage()** .
 
 * Para cada llamada que se realiza, agregue los resultados a la colección correspondiente:
 
@@ -190,9 +189,9 @@ Para mostrar los resultados de las llamadas a la API, haga referencia a la colec
    
     La función **First()** devuelve el primer registro (y único en este caso) de **languageCollect** y la aplicación muestra el valor de **name** (el único campo) asociado con ese registro.
 
-2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
-    Esta fórmula utiliza también la función **First()**, obtiene el valor de **Value** (0-1) del primer y único registro y, a continuación, le da formato como un porcentaje.
+    Esta fórmula utiliza también la función **First()** , obtiene el valor de **Value** (0-1) del primer y único registro y, a continuación, le da formato como un porcentaje.
 
 3. Establezca la propiedad **Items** de la galería de frases clave en: `phrasesCollect`.
    

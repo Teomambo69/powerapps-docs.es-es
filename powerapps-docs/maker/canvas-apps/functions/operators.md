@@ -13,14 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8436656150d3abf36c8c4a26efc46e940e35f06
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: 284e9dfca0dff9a3bb92c2f5b073cfbe962ce5e9
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940475"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66215991"
 ---
 # <a name="operators-in-powerapps"></a>Operadores de PowerApps
+
 Algunos de estos operadores dependen del idioma del autor.  Para más información, consulte [Aplicaciones globales](../global-apps.md).
 
 
@@ -51,7 +52,7 @@ Algunos de estos operadores dependen del idioma del autor.  Para más informaci�
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;El&quot; en &quot;El teclado y el monitor...&quot;**                                                      |                                                                                                                Prueba de subcadena (no distingue mayúsculas de minúsculas)                                                                                                                 |
 |                                **@**                                | [Operador de desambiguación](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       Desambiguación de campo                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      Desambiguación global                                                                                                                       |
-| **,**<br>[[depende del idioma](../global-apps.md)]  |                   Separador de lista                    | **If( X < 10, "Bajo", "Bien" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Separa: <ul><li>argumentos en llamadas a funciones</li><li>campos en un [registro](../working-with-tables.md#elements-of-a-table)</li><li>registros en una [tabla de valores](../working-with-tables.md#inline-syntax)</li></ul>.  Este carácter depende del idioma. |
+| **,**<br>[[depende del idioma](../global-apps.md)]  |                   Separador de lista                    | **If( X < 10, "Bajo", "Bien" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Separa: <ul><li>argumentos en llamadas a funciones</li><li>campos en un [registro](../working-with-tables.md#elements-of-a-table)</li><li>registra en un [tabla](../working-with-tables.md#inline-value-tables)</li></ul> Este carácter depende del idioma. |
 | **;**<br>[[depende del idioma](../global-apps.md)] |                  Encadenamiento de fórmulas                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          Separar invocaciones de funciones en las propiedades del comportamiento. El operador de encadenamiento depende del idioma.                                                                          |
 |                             **Parent**                              |         [Operador Parent](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           Acceso a las propiedades de un contenedor de control                                                                                                            |
 |                            **ThisItem**                             |       [Operador ThisItem](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          Acceder a los campos de una galería o un control de formulario                                                                                                           |
@@ -84,10 +85,10 @@ En PowerApps se puede hacer referencia a todos los controles por su nombre desde
 Los controles de esta pantalla tienen otra opción. Puede usar una referencia relativa: **Parent.Fill**. El operador **[Parent](operators.md#parent-operator)** hace referencia al control que hospeda este control, y que hace que todas sus propiedades estén disponibles. **[Parent](operators.md#parent-operator)** resulta muy útil, ya que no depende del nombre del control. Puede copiar y pegar un control contenedor sin necesidad de ajustar ninguna de las referencia del contenedor. Este operador también hace que la relación entre los controles primarios y secundarios sea más clara al leer fórmulas.
 
 ## <a name="disambiguation-operator"></a>Operador de desambiguación
-Algunas funciones crean [ámbitos de registro](../working-with-tables.md#record-scope) para acceder a los campos de la tabla mientras se procesa cada registro, como **Filter**, **AddColumns** y **Sum**.  Los nombres de campo agregados con el ámbito de registro invalidan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador de desambiguación **@**:
+Algunas funciones crean [ámbitos de registro](../working-with-tables.md#record-scope) para acceder a los campos de la tabla mientras se procesa cada registro, como **Filter**, **AddColumns** y **Sum**.  Los nombres de campo agregados con el ámbito de registro invalidan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador de desambiguación **@** :
 
-* Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_**[@**_FieldName_**]**
-* Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@**_ObjectName_**]** (sin designación de tabla).
+* Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_ **[@** _FieldName_ **]**
+* Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@** _ObjectName_ **]** (sin designación de tabla).
 
 Para obtener más información y ejemplos, vea los [ámbitos de registro](../working-with-tables.md#record-scope).
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
-ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
+ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
+ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "65884061"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224650"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -84,7 +84,6 @@ Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de
 | Estados Unidos | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | Estados Unidos (acceso anticipado)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
-
 ## <a name="required-services"></a>Servicios requeridos
 Esta lista identifica todos los servicios con los que PowerApps Studio se comunica y sus usos. La red **no** debe bloquear estos servicios.
 
@@ -104,3 +103,7 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 
 > [!NOTE]
 > Si usa una VPN, se debe configurar para excluir localhost de la tunelización para PowerApps Mobile.
+
+## <a name="size-limits"></a>Límites de tamaño
+
+Puede encontrar información sobre los límites de tamaño en texto, hipervínculos, imágenes y multimedia en [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).

@@ -10,13 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 369304ded3fdc9fcd69459da9875e6080d5d860c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: MT
+ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
+ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562236"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66034895"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Crear un componente para aplicaciones de lienzo
 
@@ -51,9 +50,12 @@ Componentes no son compatibles con el **UpdateContext** funcionan, pero puede cr
 
 ## <a name="import-and-export"></a>Importación y exportación
 
-Si exporta un componente, cree un archivo local que se puede importar a otra aplicación. Si la aplicación contiene una versión modificada del mismo componente, se le pedirá que decida si desea reemplazar la versión modificada o cancelar la importación. Cuando se redactó este documento, no se puede guardar los componentes en la nube o compartirlos dentro de un entorno.
+Para importar uno o más componentes de una aplicación a otro, seleccione **importar componentes** en la lista desplegable de componentes. Un cuadro de diálogo enumera todas las aplicaciones que contienen los componentes que tienen permiso para editar. Seleccione una aplicación y, a continuación, seleccione **importar** para importar la versión publicada más reciente de todos los componentes en esa aplicación. Después de importar al menos un componente, puede editar su copia y eliminar cualquiera que no necesita.
 
-![Importación y exportación](./media/create-component/import.png)
+> [!div class="mx-imgBorder"]
+> ![Cuadro de diálogo Importar componentes](./media/create-component/import-components.png)
+
+Si exporta un componente, cree un archivo local que se puede importar a otra aplicación. Si la aplicación contiene una versión modificada del mismo componente, se le pedirá que decida si desea reemplazar la versión modificada o cancelar la importación. 
 
 ## <a name="custom-properties"></a>Propiedades personalizadas
 
@@ -105,7 +107,7 @@ En este ejemplo, creará un componente de menú que se parece a este gráfico y 
 
 1. Establezca el componente **elementos** propiedad en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table({Item:"SampleText"})
     ```
 
@@ -115,7 +117,7 @@ En este ejemplo, creará un componente de menú que se parece a este gráfico y 
 
 1. Asegúrese de que se muestra la lista de propiedades el **elementos** propiedad (tal como se hace de forma predeterminada) y, a continuación, establezca el valor de esa propiedad en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent.Items
     ```
 
@@ -141,8 +143,8 @@ A continuación, deberá agregar el componente a una pantalla y especificar una 
 
 1. Establecer el **elementos** propiedad de **MenuComponent_1** en esta fórmula:
 
-    ```powerapps-comma
-    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
+    ```powerapps-dot
+    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
     ```
 
     Esta instancia es similar a este gráfico, pero puede personalizar el texto y otras propiedades de cada instancia.
@@ -161,7 +163,7 @@ Hasta ahora, ha creado un componente y agregarlo a una aplicación. A continuaci
 
 1. En el **avanzadas** pestaña, establezca el valor de la **seleccionados** propiedad en esta expresión, ajuste el número en el nombre de la Galería si es necesario:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.Item
     ```
 
@@ -169,7 +171,7 @@ Hasta ahora, ha creado un componente y agregarlo a una aplicación. A continuaci
 
 1. En la pantalla predeterminada de la aplicación, agregue una etiqueta y establezca su **texto** propiedad en esta expresión, ajuste el número en el nombre del componente si es necesario:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent_1.Selected
     ```
 
@@ -181,7 +183,7 @@ Hasta ahora, ha creado un componente y agregarlo a una aplicación. A continuaci
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-- Cuando se redactó este documento, los orígenes de datos no se guardan con los componentes, por lo que se deshabilitan los formularios y las tablas de datos. 
+- Cuando se redactó este documento, los orígenes de datos no se guardan con los componentes, por lo que se deshabilitan los formularios y las tablas de datos.
 - Si crea una variable en un componente, esa variable se limita solo a ese componente y no aparece con variables de aplicación.
 - PowerApps no admite colecciones de componentes.
 - No se puede insertar un componente en una galería, un formulario o una tarjeta de datos.

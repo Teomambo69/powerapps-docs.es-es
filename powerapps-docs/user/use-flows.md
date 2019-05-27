@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 5/22/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e840907c5e660489b2f6d5e1e5d1ec7d44f613d
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
+ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444349"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66034838"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>Uso de Microsoft Flow para automatizar procesos
 
@@ -34,7 +34,7 @@ Conexión con Microsoft Flow desde la aplicación para administrar los flujos.
 > [!NOTE]
 > Para administrar y ejecutar Microsoft Flow desde su aplicación, Microsoft Flow debe estar habilitado en la configuración del sistema para su organización. Más información:  [Flujos de su organización](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. En la barra de herramientas, seleccione **Flujos**.  
+1. En la barra de comandos, seleccione **flujo**.  
   
    > [!div class="mx-imgBorder"]
    > ![Menú de Microsoft Flow](media/flow.png "Microsoft Flow menu") 
@@ -45,7 +45,10 @@ Conexión con Microsoft Flow desde la aplicación para administrar los flujos.
   
    -   Seleccione **Vea sus flujos** para abrir una nueva pestaña del explorador que le dirigirá al sitio de Microsoft Flow, donde se muestran los flujos del entorno de Flow.  
   
-   -   Seleccione **Iniciar sesión en Flow** para conectar con Microsoft Flow y mostrar los flujos que tiene a su disposición para ejecutar. Esto solo aparece si en ese momento no ha iniciado sesión en Microsoft Flow.  
-   
-    Para obtener información sobre cómo crear un flujo, vea [Introducción a Microsoft Flow](/flow/getting-started).  
+   -   Seleccione **Iniciar sesión en Flow** para conectar con Microsoft Flow y mostrar los flujos que tiene a su disposición para ejecutar. Esto solo aparece si en ese momento no ha iniciado sesión en Microsoft Flow.   
+
+    Para obtener información sobre cómo crear un flujo, vea [Introducción a Microsoft Flow](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow).  
+    
+ 
+    
   

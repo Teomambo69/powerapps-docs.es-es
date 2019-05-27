@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
+ms.openlocfilehash: eb90f35286098f27454e6cad883b0113a211af78
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357584"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609405"
 ---
 # <a name="what-is-powerapps"></a>¿Qué es PowerApps?
 
-PowerApps es un conjunto de aplicaciones, servicios, conectores y plataforma de datos que proporciona un entorno de desarrollo rápido de aplicaciones para crear aplicaciones personalizadas para necesidades empresariales. Con PowerApps, puede crear rápidamente aplicaciones empresariales personalizadas que se conectan a los datos empresariales almacenados *ya sea* en la plataforma de datos subyacente (**Common Data Service**) *o* en varios orígenes de datos en línea y locales (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, etc.). 
+PowerApps es un conjunto de aplicaciones, servicios, conectores y plataforma de datos que proporciona un entorno de desarrollo rápido de aplicaciones para crear aplicaciones personalizadas para necesidades empresariales. Con PowerApps, puede crear rápidamente aplicaciones empresariales personalizadas que se conectan a los datos empresariales almacenados *ya sea* en la plataforma de datos subyacente ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *o* en varios orígenes de datos en línea y locales (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, etc.). 
 
 Las aplicaciones compiladas mediante PowerApps proporcionan funciones enriquecidas de flujo de trabajo y lógica de negocios para transformar los procesos de negocio manuales en procesos automatizados y digitales. Además, las aplicaciones compiladas mediante PowerApps tienen un diseño dinámico y se pueden ejecutar sin problemas en el explorador o en dispositivos móviles (teléfono o tableta). PowerApps "democratiza" la experiencia de compilación de aplicaciones de negocios personalizadas ya que permite a los usuarios crear aplicaciones empresariales personalizadas y con múltiples características sin escribir código.
 

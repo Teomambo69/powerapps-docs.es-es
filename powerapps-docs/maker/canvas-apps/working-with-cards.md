@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db0e42a45af217e9e5703242c2a5a867a52b687b
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: MT
+ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63317838"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216617"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
 
@@ -97,9 +97,6 @@ Como otro ejemplo, desbloquee la tarjeta **ImageURL** y, a continuación, agregu
 
 En la barra de fórmulas, establezca la propiedad **Image** de este control en *TextBox*.**Text**, en la que *TextBox* es el nombre del control **Entrada de texto** que contiene la URL:
 
-> [!TIP]
-> Presione la tecla Alt para mostrar el nombre de cada control.
-
 ![](./media/working-with-cards/show-image.png)
 
 Ahora ya podemos ver las imágenes y editar sus direcciones URL. Observe que podríamos haber usado **Parent.Default** como la propiedad **Image**, pero no se habría actualizado si el usuario hubiera cambiado la dirección URL.
@@ -139,7 +136,7 @@ Echemos un vistazo a los controles que componen una tarjeta de entrada de datos 
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-Mantenga presionada la tecla Alt para mostrar los nombres de los controles que componen esta tarjeta:
+En este gráfico, los controles dentro de la tarjeta de datos han sido etiquetados:
 
 ![](./media/working-with-cards/dissect-card2.png)
 
