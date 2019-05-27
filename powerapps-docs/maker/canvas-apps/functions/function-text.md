@@ -56,7 +56,7 @@ El **texto** función también puede convertir cualquier tipo de datos en una re
 | **0** (*cero*) |Muestra ceros no significativos si un número tiene menos dígitos que ceros en el formato. Por ejemplo, use el formato **#.00** si desea mostrar **8.9** como **8.90**. |
 | **#** |Sigue las mismas reglas que **0** (cero). Sin embargo, **Text** no muestra ceros adicionales cuando el número tiene menos dígitos en cualquier lado del decimal que símbolos # en el formato. Por ejemplo, se muestra **8.9** si el formato personalizado es **#.##** y el número al que debe darse formato es **8.9**. |
 | **.** (*punto*) |Muestra el punto decimal de un número. Depende del idioma del formato personalizado. consulte [aplicaciones globales](#global-apps) para obtener más detalles. |
-| **,** (*coma*) |Muestra el separador de agrupación de un número; a menudo, se usa para los miles. **Text** separa los grupos con comas si el formato contiene una coma encerrada entre signos numéricos ( **#** ) o ceros. Depende del idioma del formato personalizado. consulte [aplicaciones globales](#global-apps) para obtener más detalles. |
+| **,** (*coma*) |Muestra el separador de agrupación de un número; a menudo, se usa para los miles. **Text** separa los grupos con comas si el formato contiene una coma encerrada entre signos numéricos (**#**) o ceros. Depende del idioma del formato personalizado. consulte [aplicaciones globales](#global-apps) para obtener más detalles. |
 
 Si un número tiene más dígitos a la derecha del separador decimal que marcadores de posición en el formato, el número se redondea a tantas cifras decimales como marcadores de posición existen. Si hay más dígitos a la izquierda del separador decimal que marcadores de posición, se muestran los dígitos adicionales. Si el formato solo consta de signos numéricos (#) a la izquierda del separador decimal, los números menores que 1 comienzan con un separador decimal (por ejemplo **.47**).
 
@@ -109,10 +109,10 @@ Puede incluir cualquiera de estos caracteres en su cadena de formato.  Aparecer�
 ## <a name="global-apps"></a>Aplicaciones globales
 La función **Text** es globalmente compatible. Para una amplia variedad de idiomas, sabe cómo escribir correctamente fechas, horas, monedas y números. Para ello, necesita dos tipos de información:
 
-* **El idioma del formato personalizado:** ¿Para los creadores, cómo un formato personalizado se debe interpretar? Los caracteres separadores ( **.** y **,** ) tienen significados distintos en diferentes idiomas. Si especifica un formato personalizado, puede incluir a un marcador de posición o tomar el valor predeterminado, que refleja el idioma al que el dispositivo está configurado. Incluso más fácil, puede usar uno de los [formatos de fecha y hora predefinidos](#predefined-datetime-formats), que son independientes del lenguaje.
+* **El idioma del formato personalizado:** ¿Para los creadores, cómo un formato personalizado se debe interpretar? Los caracteres separadores (**.** y **,**) tienen significados distintos en diferentes idiomas. Si especifica un formato personalizado, puede incluir a un marcador de posición o tomar el valor predeterminado, que refleja el idioma al que el dispositivo está configurado. Incluso más fácil, puede usar uno de los [formatos de fecha y hora predefinidos](#predefined-datetime-formats), que son independientes del lenguaje.
 * **El idioma del resultado:** ¿Para los usuarios, en qué idioma debe el resultado de la función aparece? Nombres de meses y días de la semana deben estar en el idioma adecuado para el usuario de la aplicación, que se puede especificar mediante la adición de un tercer argumento opcional para el **texto** función. 
 
-En ambos casos, especifique el idioma mediante el uso de un [etiqueta de idioma](function-language.md#language-tags). Para ver la lista de idiomas compatibles, escriba **texto (1234, "",)** en la barra de fórmulas o **avanzadas** ficha del panel derecho y, a continuación, desplácese por la lista de configuraciones regionales sugeridas para el tercer argumento.
+En ambos casos, especifique el idioma mediante el uso de un [etiqueta de idioma](function-language.md#language-tags). Para ver la lista de idiomas compatibles, escriba **Text(1234, "",)** en la barra de fórmulas o **avanzadas** ficha del panel derecho y, a continuación, desplácese por la lista de configuraciones regionales sugeridas para el tercer argumento.
 
 ### <a name="language-placeholder"></a>Marcador de posición
 Para especificar el idioma del formato personalizado, use:
@@ -176,13 +176,13 @@ A menos que se especifique lo contrario, el usuario que ejecuta estas fórmulas 
 | **Text( Now(), DateTimeFormat.LongTime24 )** |Da formato como una cadena de hora larga, con un reloj de 24 horas. |"14:37:47" |
 | **Text( Now(), DateTimeFormat.ShortDate )** |Da formato como una cadena de fecha corta, en el idioma y la configuración local del usuario actual. |"11/23/2015" |
 | **Text( Now(), "d-mmm-yy" )** |Da formato con caracteres de marcador de posición: <ul><li>**d** para un día del mes de solo un dígito o de dos dígitos<li>**-** como carácter literal copiado en el resultado<li>**mmm** para una abreviatura de tres letras del mes<li>**-** como otro carácter literal copiado en el resultado<li>**yy** para una abreviatura de dos dígitos del año</ul> |"23-Nov-15" |
-| **Texto (1448318857 * 1000, "mmm. dd, aaaa (hh: mm: ss A.M./P.M.) ")** | Si se multiplica el valor de origen por 1.000 se muestra un valor de fecha y hora de Unix en formato legible. | "23 de noviembre de 2015 (02:47:37 p. M.)" |
+| **Text(1448318857 * 1000, "mmm. dd, aaaa (hh: mm: ss A.M./P.M.) ")** | Si se multiplica el valor de origen por 1.000 se muestra un valor de fecha y hora de Unix en formato legible. | "23 de noviembre de 2015 (02:47:37 p. M.)" |
 
 ### <a name="global-apps"></a>Aplicaciones globales
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Texto (1234567,89, "# [$-fr-FR] ###, ## &euro;", "fr-FR")** | Se muestra un espacio como separador de agrupación, la coma como separador decimal, y **&euro;** como símbolo de moneda. |"1&nbsp;234&nbsp;567,89 &euro;" |
+| **Text(1234567,89, "# [$-fr-FR] ###, ## &euro;", "fr-FR")** | Se muestra un espacio como separador de agrupación, la coma como separador decimal, y **&euro;** como símbolo de moneda. |"1&nbsp;234&nbsp;567,89 &euro;" |
 | **Text(1234567,89; "[$-fr-FR]# ###,## &euro;")** | Si los datos de origen siguen personalizado francés de con una coma como separador decimal, debe cambiar la configuración regional en francés y separe los argumentos con un punto y coma en lugar de una coma para obtener el mismo resultado que el anterior. |"1&nbsp;234&nbsp;567,89 &euro;" |
 | **Text( Date(2016,1,31), "dddd mmmm d" )** |Muestra el día de la semana, el mes y el día del mes en el idioma del usuario actual. Como ninguno de los marcadores de posición depende del idioma, no es necesario tener una etiqueta de idioma de texto de formato. |"El sábado&nbsp;enero&nbsp;31" |
 | **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Muestra el día de la semana, el mes y el día del mes en el idioma "es-ES". |"domingo&nbsp;enero&nbsp;31" |
