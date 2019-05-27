@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
-ms.translationtype: HT
+ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
+ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216617"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66225175"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
 
@@ -157,6 +157,9 @@ Para rellenar estos controles con datos, se pueden tomar sus propiedades de las 
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |El control de cuadro de texto muestra el nombre descriptivo, proporcionado por usted o los metadatos del origen de datos, y que se establece en la propiedad **[DisplayName](controls/control-card.md)** de la tarjeta. |
 | **InputText.Default** |**Parent.Default** |Inicialmente, el control de entrada de texto muestra el valor del campo del origen de datos, según lo proporcionado por el valor predeterminado de la tarjeta. |
 | **TextErrorMessage.Text** |**Parent.Error** |Si se produce un problema de validación, la propiedad **Error** de la tarjeta proporciona el correspondiente mensaje de error. |
+
+> [!NOTE]
+> El **Parent.Error** propiedad es una propiedad de solo salida que no se puede establecer mediante una fórmula. Por lo tanto, esta propiedad no aparecerá en la lista de propiedades cerca de la esquina superior izquierda o en el **propiedades** o **avanzadas** pestañas cerca del borde derecho. La barra de fórmulas sugiere esta propiedad si está escribiendo una fórmula que podría hacer referencia a la propiedad.
 
 Para extraer información de estos controles y volver a insertarla en el origen de datos, tenemos las siguientes fórmulas clave:
 
