@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
-ms.translationtype: HT
+ms.openlocfilehash: 0a20218d3670775f67b26c907ce5a3a54fa0af7b
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034895"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216665"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Crear un componente para aplicaciones de lienzo
 
@@ -184,7 +184,6 @@ Hasta ahora, ha creado un componente y agregarlo a una aplicación. A continuaci
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
 - Cuando se redactó este documento, los orígenes de datos no se guardan con los componentes, por lo que se deshabilitan los formularios y las tablas de datos.
-- Si crea una variable en un componente, esa variable se limita solo a ese componente y no aparece con variables de aplicación.
 - PowerApps no admite colecciones de componentes.
 - No se puede insertar un componente en una galería, un formulario o una tarjeta de datos.
 - Una instancia de un componente principal es un local maestro y ámbito de la aplicación. Si cambia una instancia de patrón, solo las copias del componente dentro de la aplicación reflejará el cambio. Copias en otras aplicaciones seguirá siendo el mismo, a menos que vuelva a importar la biblioteca de componentes. Todas las instancias maestras en esas aplicaciones se detectarán automáticamente y actualizadas.
