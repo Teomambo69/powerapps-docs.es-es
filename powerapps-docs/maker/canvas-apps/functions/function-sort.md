@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/28/2019
 ms.locfileid: "61519653"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funciones Sort y SortByColumns en PowerApps
 Ordena una [tabla](../working-with-tables.md).
@@ -35,40 +34,40 @@ Para ordenar primero por una columna y luego por otra, debe insertar una fórmul
 
 La función **SortByColumns** también se puede usar para ordenar una tabla según una o más columnas.
 
-La lista de parámetros para **SortByColumns** proporciona los nombres de las columnas según las cuales ordenar y la dirección de ordenación por columna.  La ordenación se realiza según el orden de los parámetros (ordenados primero por la primera columna, luego la segunda, etc.).  Los nombres de columna se especifican como cadenas y requieren comillas dobles si se incluyen directamente en la lista de parámetros.  Por ejemplo, **SortByColumns( CustomerTable; "LastName" )**.
+La lista de parámetros para **SortByColumns** proporciona los nombres de las columnas según las cuales ordenar y la dirección de ordenación por columna.  La ordenación se realiza según el orden de los parámetros (ordenados primero por la primera columna, luego la segunda, etc.).  Los nombres de columna se especifican como cadenas y requieren comillas dobles si se incluyen directamente en la lista de parámetros.  Por ejemplo, **SortByColumns( CustomerTable, "LastName" )** .
 
 Puede combinar **SortByColumns** con un control **[Menú desplegable](../controls/control-drop-down.md)** o **[Cuadro de lista](../controls/control-list-box.md)** para permitir que los usuarios seleccionen la columna según la cual ordenar.
 
-Además de ordenar de manera ascendente o descendente, **SortByColumns** puede ordenar según una tabla de valores de una sola columna.  Por ejemplo, puede ordenar el registro según el nombre de un día de la semana si suministra **[ "Lunes"; "Martes"; "Miércoles"; "Jueves"; "Viernes"; "Sábado"; "Domingo" ]** como el criterio de ordenación.  Todos los registros que incluyan **Lunes"** aparecerán primero, seguidos de los registros que incluyan **Martes**, etc.  Los registros encontrados que no aparezcan en la tabla de ordenación se colocan al final de la lista.
+Además de ordenar de manera ascendente o descendente, **SortByColumns** puede ordenar según una tabla de valores de una sola columna.  Por ejemplo, puede ordenar el registro según el nombre de un día de la semana si suministra **[ "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" ]** como el criterio de ordenación.  Todos los registros que incluyan **Lunes"** aparecerán primero, seguidos de los registros que incluyan **Martes**, etc.  Los registros encontrados que no aparezcan en la tabla de ordenación se colocan al final de la lista.
 
 Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una cadena o un número.  Se pueden pasar a funciones y las funciones pueden devolverlas.  **Sort** y **SortByColumn** no modifican una tabla; en lugar de eso, toman una tabla como argumento y devuelven una tabla nueva que se ordenó.  Consulte cómo [trabajar con tablas](../working-with-tables.md) para más detalles.
 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Sort**( *Table*; *Formula* [; *SortOrder* ] )
+**Sort**( *Table*, *Formula* [, *SortOrder* ] )
 
 * *Table*: requerido. La tabla que se va a ordenar.
 * *Formula*: requerido. Esta fórmula se evalúa para cada registro de la tabla y los resultados se usan para ordenar la tabla.  Puede hacer referencia a columnas dentro de la tabla.
 * *SortOrder*: opcional. Especifique **SortOrder.Descending** para ordenar la tabla en orden descendente. **SortOrder.Ascending** es el valor predeterminado.
 
-**SortByColumns**( *Table*; *ColumnName1* [; *SortOrder1*; *ColumnName2*; *SortOrder2*; ... ] )
+**SortByColumns**( *Table*, *ColumnName1* [, *SortOrder1*, *ColumnName2*, *SortOrder2*, ... ] )
 
 * *Table*: requerido. La tabla que se va a ordenar.
-* *ColumnName(s)*: requerido. Los nombres de las columnas según las cuales ordenar, como cadenas.
-* *SortOrder(s)*: opcional.  **SortOrder.Ascending** o **SortOrder.Descending**.  **SortOrder.Ascending** es el valor predeterminado.  Si se suministran varios *ColumnNames*, todas las columnas, menos la última, deben incluir un *SortOrder*.
+* *ColumnName(s)* : requerido. Los nombres de las columnas según las cuales ordenar, como cadenas.
+* *SortOrder(s)* : opcional.  **SortOrder.Ascending** o **SortOrder.Descending**.  **SortOrder.Ascending** es el valor predeterminado.  Si se suministran varios *ColumnNames*, todas las columnas, menos la última, deben incluir un *SortOrder*.
   
     > [!NOTE]
-  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"** . Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"** .
 
-**SortByColumns**( *Table*; *ColumnName*; *SortOrderTable* )
+**SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
 * *Table*: requerido. La tabla que se va a ordenar.
 * *ColumnName*: requerido. El nombre de la columna según la cual ordenar, como cadenas.
 * *SortOrderTable*: requerido.  Tabla de valores de una sola columna según la cual ordenar.
   
     > [!NOTE]
-  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
+  > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"** . Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"** .
 
 ## <a name="examples"></a>Ejemplos
 En los ejemplos siguientes, usaremos el [origen de datos](../working-with-data-sources.md) **IceCream**, que contiene los datos de esta tabla:
@@ -77,23 +76,23 @@ En los ejemplos siguientes, usaremos el [origen de datos](../working-with-data-s
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Sort( IceCream; Flavor )**<br><br>**SortByColumns( IceCream; "Flavor" )** |Ordena **IceCream** según su columna **Flavor**. La columna **Sabor** contiene cadenas, por lo que la tabla se ordena alfabéticamente. De manera predeterminada, el criterio de ordenación es ascendente. |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
-| **Sort( IceCream; Quantity )**<br><br>**SortByColumns( IceCream; "Quantity" )** |Ordena **IceCream** según su columna **Quantity**.  La columna **Cantidad** contiene números, por lo que la tabla se ordena numéricamente.  De manera predeterminada, el criterio de ordenación es ascendente. |![](media/function-sort/icecream-quantity-asc.png) |
-| **Sort( IceCream; Quantity; SortOrder.Descending )**<br><br>**SortByColumns( IceCream; "Quantity"; SortOrder.Descending )** |Ordena **IceCream** según su columna **Quantity**.  La columna **Cantidad** contiene números, por lo que se ordena numéricamente.  El criterio de ordenación se especificó como descendente. |![](media/function-sort/icecream-quantity-desc.png) |
-| **Sort( IceCream; Quantity + OnOrder )** |Ordena **IceCream** por la suma de sus columnas **Quantity** y **OnOrder** para cada registro individualmente. La suma es un número, por lo que la tabla se ordena numéricamente.  De manera predeterminada, el criterio de ordenación es ascendente.  Como ordenamos según una fórmula y no según valores de columna sin formato, no hay ningún equivalente usando **SortByColumns**. |![](media/function-sort/icecream-total.png) |
-| **Sort( Sort( IceCream; OnOrder ); Quantity )**<br><br>**SortByColumns( IceCream; "OnOrder"; Ascending; "Quantity"; Ascending )** |Ordena **IceCream** primero según su columna **OnOrder** y, luego, según su columna **Quantity**.  Observe que "Pistacho" apareció arriba de "Vainilla" en la primera ordenación según **OnOrder** y, luego, pasaron a su lugar adecuado según **Quantity**. |![](media/function-sort/icecream-onorder-quantity.png) |
-| **SortByColumns( IceCream; "Flavor"; [&nbsp;"Pistachio";&nbsp;"Strawberry"&nbsp;] )** |Ordena **IceCream** según su columna **Flavor** en función de la tabla con una sola columna que contiene "Pistacho" y "Fresa".  Los registros que tienen un **Sabor** "Pistacho" aparecerán primero en el resultado, seguidos de los registros que contienen "Fresa".  En el caso de los valores de la columna **Sabor** que no tienen coincidencia, como "Vainilla", aparecerán después de los elementos que sí tuvieron coincidencia. |![](media/function-sort/icecream-onflavor-sorttable.png) |
+| **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |Ordena **IceCream** según su columna **Flavor**. La columna **Sabor** contiene cadenas, por lo que la tabla se ordena alfabéticamente. De manera predeterminada, el criterio de ordenación es ascendente. |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
+| **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )** |Ordena **IceCream** según su columna **Quantity**.  La columna **Cantidad** contiene números, por lo que la tabla se ordena numéricamente.  De manera predeterminada, el criterio de ordenación es ascendente. |![](media/function-sort/icecream-quantity-asc.png) |
+| **Sort( IceCream, Quantity, SortOrder.Descending )**<br><br>**SortByColumns( IceCream, "Quantity", SortOrder.Descending )** |Ordena **IceCream** según su columna **Quantity**.  La columna **Cantidad** contiene números, por lo que se ordena numéricamente.  El criterio de ordenación se especificó como descendente. |![](media/function-sort/icecream-quantity-desc.png) |
+| **Sort( IceCream, Quantity + OnOrder )** |Ordena **IceCream** por la suma de sus columnas **Quantity** y **OnOrder** para cada registro individualmente. La suma es un número, por lo que la tabla se ordena numéricamente.  De manera predeterminada, el criterio de ordenación es ascendente.  Como ordenamos según una fórmula y no según valores de columna sin formato, no hay ningún equivalente usando **SortByColumns**. |![](media/function-sort/icecream-total.png) |
+| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", Ascending, "Quantity", Ascending )** |Ordena **IceCream** primero según su columna **OnOrder** y, luego, según su columna **Quantity**.  Observe que "Pistacho" apareció arriba de "Vainilla" en la primera ordenación según **OnOrder** y, luego, pasaron a su lugar adecuado según **Quantity**. |![](media/function-sort/icecream-onorder-quantity.png) |
+| **SortByColumns( IceCream, "Flavor", [&nbsp;"Pistachio",&nbsp;"Strawberry"&nbsp;] )** |Ordena **IceCream** según su columna **Flavor** en función de la tabla con una sola columna que contiene "Pistacho" y "Fresa".  Los registros que tienen un **Sabor** "Pistacho" aparecerán primero en el resultado, seguidos de los registros que contienen "Fresa".  En el caso de los valores de la columna **Sabor** que no tienen coincidencia, como "Vainilla", aparecerán después de los elementos que sí tuvieron coincidencia. |![](media/function-sort/icecream-onflavor-sorttable.png) |
 
 ### <a name="step-by-step"></a>Paso a paso
 Para ejecutar estos ejemplos, cree el origen de datos **IceCream** como una [colección](../working-with-data-sources.md#collections):
 
-1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**ClearCollect( IceCream; { Flavor: "Chocolate"; cantidad: 100; OnOrder: 150 }; { Flavor:  "Vanilla"; cantidad: 200; OnOrder: 20 }; { Flavor: "Fresa"; cantidad: 300; OnOrder: 0 }; { Flavor: "Mint Chocolate"; cantidad: 60; OnOrder: 100 }; { Flavor: "Pistachio"; cantidad: 200; OnOrder: 10 } )**
+1. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**ClearCollect( IceCream, { Flavor: "Chocolate", cantidad: 100, OnOrder: 150 }, { Flavor:  "Vanilla", cantidad: 200, OnOrder: 20 }, { Flavor: "Fresa", cantidad: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", cantidad: 60, OnOrder: 100 }, { Flavor: "Pistachio", cantidad: 200, OnOrder: 10 } )**
 2. Obtenga una vista previa de la aplicación, seleccione el botón y, luego, presione Esc para volver al área de trabajo predeterminada.
 3. Seleccione **Colecciones** en el menú **Archivo** para mostrar la colección que acaba de crear y, luego, presione Esc para volver al área de trabajo predeterminada.
 
 #### <a name="sort"></a>Ordenar
 1. Agregue otro botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
-   **ClearCollect( SortByFlavor; Sort( IceCream; Flavor ) )**
+   **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
      La fórmula anterior crear otra colección, denominada **SortByFlavor**, que contiene los mismos datos que **IceCream**. Sin embargo, la colección nueva contiene los datos ordenados alfabéticamente según la columna **Sabor** en orden ascendente.
 2. Presione F5, seleccione el botón nuevo y, luego, presione Esc.
@@ -102,7 +101,7 @@ Para ejecutar estos ejemplos, cree el origen de datos **IceCream** como una [col
 
 #### <a name="sortbycolumns"></a>SortByColumns
 1. Agregue otro botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
-   **ClearCollect( SortByQuantity; SortByColumns( IceCream; "Quantity"; Ascending; "Flavor"; Descending ) )**
+   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
      La fórmula anterior crea una tercera colección, denominada **SortByQuantity**, que contiene los mismos datos que **IceCream**. Sin embargo, la nueva colección contiene los datos ordenados numéricamente según la **cantidad** columna en orden ascendente y después por el **Flavor** columna en orden descendente.
 2. Presione F5, seleccione el botón nuevo y, luego, presione Esc.

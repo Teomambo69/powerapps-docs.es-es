@@ -13,14 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19c5382baba643e673edb7e77e0398616e880980
-ms.sourcegitcommit: 2b1ed0db9312152f330bd8a8ea663f01b40e7c23
+ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66185652"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66249821"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Métodos abreviados de teclado para las aplicaciones de lienzo
+
+> [!NOTE]
+> Métodos abreviados pueden variar en función de lenguaje.
 
 ## <a name="file"></a>Archivo
 
@@ -56,6 +59,7 @@ ms.locfileid: "66185652"
 | CTRL += o CTRL+MAYÚS += | Acercar. |
 | CTRL +- o CTRL+MAYÚS +- | Alejar. |
 | Ctrl+0 | Ajustar canvas a la página. |
+| MAYÚS + ENTRAR | Un salto de línea en una fórmula. |
 
 ## <a name="preview"></a>Vista previa
 
@@ -88,7 +92,7 @@ ms.locfileid: "66185652"
 | Ctrl+] | Traer adelante un control. |
 | Ctrl+[ | Envío de un control con versiones anteriores. |
 | CTRL + MAYÚS +] | Traer al frente. |
-| CTRL + MAYÚS +] | Enviar al fondo. |
+| CTRL + MAYÚS +[ | Enviar al fondo. |
 
 ## <a name="resize"></a>cambio de tamaño
 
