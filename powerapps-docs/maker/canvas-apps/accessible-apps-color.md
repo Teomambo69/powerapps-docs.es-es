@@ -55,14 +55,14 @@ Si no hay ningún borde, debería haber un contraste de color adecuado entre:
 * **[HoverFill](controls/properties-color-border.md)** y el color situado fuera del control
 
 ### <a name="graphical-objects"></a>Objetos gráficos
-Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles donde se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)**,  **[imagen](controls/control-image.md)**,  **[micrófono](controls/control-microphone.md)**, y **[devídeo](controls/control-audio-video.md)**.
+Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles donde se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)** ,  **[imagen](controls/control-image.md)** ,  **[micrófono](controls/control-microphone.md)** , y **[devídeo](controls/control-audio-video.md)** .
 
 En el caso del contenido de vídeo, considere la comprobación de los problemas de contraste. De forma alternativa o adicional, proporcione [subtítulos](controls/control-audio-video.md) que describan el vídeo.
 
 ## <a name="provide-other-visual-cues"></a>Provisión de otras indicaciones visuales
 Asegúrese de que la aplicación no transmite información con solo color. Por ejemplo, los usuarios que no puedan distinguir el color rojo no serán capaces de diferenciar un mensaje de error rojo de un mensaje de éxito verde.
 
-Indicaciones adicionales, como un **[icono](controls/control-shapes-icons.md)** o estilos de texto, como **[cursiva](controls/properties-text.md)** y **[subrayado](controls/properties-text.md)**, pueden ayudar a transmitir el significado.
+Indicaciones adicionales, como un **[icono](controls/control-shapes-icons.md)** o estilos de texto, como **[cursiva](controls/properties-text.md)** y **[subrayado](controls/properties-text.md)** , pueden ayudar a transmitir el significado.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga información sobre las [propiedades de accesibilidad](controls/properties-accessibility.md) en los controles de PowerApps e intente [usar el Comprobador de accesibilidad](accessibility-checker.md).

@@ -43,14 +43,14 @@ Puede configurar solo un **[etiqueta](controls/control-text-box.md)** control co
 * **Cortés**: Los lectores de pantalla anuncian los cambios después de finalizar hablando. Use este valor para las notificaciones no críticas que no requieren atención inmediata.
 * **Seguro de sí mismo**: Los lectores de pantalla de interrupción a sí mismos para anunciar los cambios inmediatamente. Utilice esto para las notificaciones críticas que requieren atención inmediata.
 
-Si cambia el contenido de texto de una región activa, los lectores de pantalla anunciarán el contenido de texto completo, no solo la parte modificada. Si el valor de la **[texto](controls/properties-core.md)** propiedad está establecida en una cadena vacía **""**, el lector de pantalla no anuncia nada.
+Si cambia el contenido de texto de una región activa, los lectores de pantalla anunciarán el contenido de texto completo, no solo la parte modificada. Si el valor de la **[texto](controls/properties-core.md)** propiedad está establecida en una cadena vacía **""** , el lector de pantalla no anuncia nada.
 
 Para repetir un mensaje, borrar el contenido de texto estableciendo el valor de la **[texto](controls/properties-core.md)** propiedad en la cadena vacía **""** y, a continuación, establezca el valor para el mensaje.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 * Establezca siempre **[Visible](controls/properties-core.md)** en true. Algunos lectores de pantalla no detectan las regiones activas que desaparecen y vuelva a aparecer.
-* Evite cambiar el valor de  **[Live](controls/properties-accessibility.md)**. Algunos lectores no detectan cuando una región en vivo no se convierte en vivo de pantalla y viceversa.
+* Evite cambiar el valor de  **[Live](controls/properties-accessibility.md)** . Algunos lectores no detectan cuando una región en vivo no se convierte en vivo de pantalla y viceversa.
 * Coloque la región activa en una posición lógica en la aplicación, aunque no estén visible. Asegúrese de que su contenido es razonable en contexto con los elementos antes y después. Los usuarios pueden acceder una región activa en cualquier momento mediante la navegación normal con un lector de pantalla, no solo cuando se producen cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes

@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61562885"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="hashtags-function-in-powerapps"></a>Función HashTags en PowerApps
 Extrae los hashtags (#cadenas) de una cadena de texto.
@@ -43,7 +42,7 @@ La función **HashTags** analiza una cadena en busca de hashtags. Los hashtags c
 ### <a name="step-by-step"></a>Paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)**, asígnele el nombre **Tweet** y escriba esta frase:
    
-    **Esta #aplicación es #SORPRENDENTE y puede #contar123 # o #123abc; pero no #1-23 ni #$\*(#\@")**
+    **Esta #aplicación es #SORPRENDENTE y puede #contar123 # o #123abc, pero no #1-23 ni #$\*(#\@")**
 2. Agregue una galería vertical personalizada y establezca su propiedad **[Elementos](../controls/properties-core.md)** en esta función:
    
     **HashTags(Tweet.Text)**

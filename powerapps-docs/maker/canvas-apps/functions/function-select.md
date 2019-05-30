@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61520682"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-powerapps"></a>Función Select en PowerApps
 Simula una acción de selección en un control, lo que provoca la evaluación de la fórmula **OnSelect**.
@@ -84,7 +83,7 @@ Un control no puede usar **Select** directa o indirectamente a través de otros 
 
 5. Establezca la propiedad **OnSelect** del control de imagen en esta fórmula:
 
-    **Notify( "Imagen seleccionada"; operación correcta)**
+    **Notify( "Imagen seleccionada", operación correcta)**
 
 6. Mientras mantiene presionada la tecla Alt, haga clic en los distintos elementos de la galería o púlselos.
 

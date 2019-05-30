@@ -32,7 +32,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Audio](controls/control-audio-video.md)**: reproduzca un clip de audio o la parte de audio de un clip de vídeo.
 
-**[Escáner](controls/control-new-barcode-scanner.md)**  : analiza los códigos de barras, los códigos QR y códigos de la matriz de datos en un dispositivo Android o iOS.
+**[Escáner](controls/control-new-barcode-scanner.md) ** : analiza los códigos de barras, los códigos QR y códigos de la matriz de datos en un dispositivo Android o iOS.
 
 **[Botón](controls/control-button.md)**: interactúe con la aplicación haciendo clic en él o pulsándolo.
 
@@ -58,9 +58,9 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Formulario de edición](controls/control-form-detail.md)**: edite y cree registros en un origen de datos mediante un formulario.
 
-**[Formulario de la entidad](entity-form-control.md)**  -característica Experimental: Permite agregar formularios dinámicos en el que los usuarios pueden ver, navegar y editar datos relacionales de Common Data Service.
+**[Formulario de la entidad](entity-form-control.md) ** -característica Experimental: Permite agregar formularios dinámicos en el que los usuarios pueden ver, navegar y editar datos relacionales de Common Data Service.
 
-**[Exportar](controls/control-export-import.md)** : exporte datos para usarlos en cualquier otro lugar de PowerApps.
+**[Exportar](controls/control-export-import.md) **: exporte datos para usarlos en cualquier otro lugar de PowerApps.
 
 **[Galería](controls/control-gallery.md)**: muestre una lista de los registros que pueden contener varios tipos de datos.
 
@@ -86,11 +86,11 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Icono de Power BI](controls/control-power-bi-tile.md)**: mostrar un icono de Power BI dentro de una aplicación.
 
-**[Radio](controls/control-radio.md)** : muestre opciones que se excluyen mutuamente.
+**[Radio](controls/control-radio.md) **: muestre opciones que se excluyen mutuamente.
 
 **[Clasificación](controls/control-rating.md)**: indique un valor entre 1 y un número especificado.
 
-**[Editor de texto enriquecido](controls/control-richtexteditor.md)**  : permite que los usuarios de aplicación de formato de texto enriquecido.
+**[Editor de texto enriquecido](controls/control-richtexteditor.md) ** : permite que los usuarios de aplicación de formato de texto enriquecido.
 
 **[Pantalla](controls/control-screen.md)**: muestre y actualice los datos sobre una tarea específica.
 
@@ -108,7 +108,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Vídeo](controls/control-audio-video.md)**: reproduzca un clip de vídeo de un archivo local, un origen de datos o YouTube.
 
-**[Escáner de código de barras de Web (experimental)](controls/control-barcodescanner.md)**  : el escáner heredado, que está obsoleta, pero podría ser útil para la exploración de códigos en un explorador web.
+**[Escáner de código de barras de Web (experimental)](controls/control-barcodescanner.md) ** : el escáner heredado, que está obsoleta, pero podría ser útil para la exploración de códigos en un explorador web.
 
 ## <a name="common-properties-by-category"></a>Propiedades comunes por categoría
 
@@ -238,7 +238,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Font](controls/properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.  Se aplica a muchos controles.
 
-**[FontWeight](controls/properties-text.md)**  : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.  Se aplica a muchos controles.
+**[FontWeight](controls/properties-text.md) ** : el peso del texto en un control: **Negrita**, **seminegrita**, **Normal**, o **más claro**.  Se aplica a muchos controles.
 
 ### <a name="g"></a>G
 
@@ -354,7 +354,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[AlDetener](controls/control-microphone.md)**: el comportamiento de una aplicación cuando el usuario detiene la grabación con un control de micrófono. Se aplica al control **[Micrófono](controls/control-microphone.md)**.
 
-**[EnSecuencia](controls/control-camera.md)**: el comportamiento de una aplicación cuando se actualiza la propiedad  **[Secuencia](controls/control-camera.md)**.  Se aplica al control **[Cámara](controls/control-camera.md)**.
+**[EnSecuencia](controls/control-camera.md)**: el comportamiento de una aplicación cuando se actualiza la propiedad ** [Secuencia](controls/control-camera.md)**.  Se aplica al control **[Cámara](controls/control-camera.md)**.
 
 **[OnSuccess](controls/control-form-detail.md)** (ConResultadoCorrecto): el comportamiento de una aplicación cuando una operación de datos ha sido correcta.  Se aplica al control **[Formulario de edición](controls/control-form-detail.md)**.
 

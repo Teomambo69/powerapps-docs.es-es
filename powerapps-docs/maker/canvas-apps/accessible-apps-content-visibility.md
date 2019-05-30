@@ -32,16 +32,16 @@ Use cualquiera de estas técnicas:
 
 * Establecer **[tamaño](controls/properties-text.md)** en 0.
 * Establecer **[ancho](controls/properties-size-location.md)** y **[alto](controls/properties-size-location.md)** en 1.
-* Establecer  **[X](controls/properties-size-location.md)**,  **[Y](controls/properties-size-location.md)**, o ambas propiedades tal que el control está fuera de la pantalla.
+* Establecer  **[X](controls/properties-size-location.md)** ,  **[Y](controls/properties-size-location.md)** , o ambas propiedades tal que el control está fuera de la pantalla.
 * Establecer **[Color](controls/properties-color-border.md)** y las propiedades relacionadas con transparente.
 * Colocar un rectángulo **[forma](controls/control-shapes-icons.md)** anteriormente el contenido y el conjunto **[rellenar](controls/properties-color-border.md)** en el mismo color que el color de fondo de la pantalla.
 
 > [!NOTE]
-> Los usuarios todavía pueden usar un teclado para tener acceso a un control interactivo, como un  **[botón](controls/control-button.md)**, aunque se oculte utilizando una de las técnicas de la lista anterior. Establecer **[TabIndex](controls/properties-accessibility.md)** en -1 si desea impedir que los usuarios acceso al control presionando la tecla Tab.
+> Los usuarios todavía pueden usar un teclado para tener acceso a un control interactivo, como un  **[botón](controls/control-button.md)** , aunque se oculte utilizando una de las técnicas de la lista anterior. Establecer **[TabIndex](controls/properties-accessibility.md)** en -1 si desea impedir que los usuarios acceso al control presionando la tecla Tab.
 
 ## <a name="hide-content-from-screen-reader-users-and-show-it-to-sighted-users"></a>Ocultar el contenido de los usuarios de lector de pantalla y mostrarla a los usuarios de visión reducidos
 
-* Para  **[imagen](controls/control-image.md)**,  **[icono](controls/control-shapes-icons.md)**, y **[forma](controls/control-shapes-icons.md)** establecer controles, **[AccessibleLabel](controls/properties-accessibility.md)** en la cadena vacía "".
+* Para  **[imagen](controls/control-image.md)** ,  **[icono](controls/control-shapes-icons.md)** , y **[forma](controls/control-shapes-icons.md)** establecer controles, **[AccessibleLabel](controls/properties-accessibility.md)** en la cadena vacía "".
 
 ## <a name="next-steps"></a>Pasos siguientes
 

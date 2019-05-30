@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544255"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control de galería de aplicaciones de lienzo
 
@@ -45,7 +44,7 @@ Si un usuario se desplaza el **altura Flexible** control de galería antes de qu
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
-**[AccessibleLabel](properties-accessibility.md)**  : etiqueta de la Galería (no los elementos que contiene) para los lectores de pantalla. Debe describir cuáles es la lista de elementos.
+**[AccessibleLabel](properties-accessibility.md) ** : etiqueta de la Galería (no los elementos que contiene) para los lectores de pantalla. Debe describir cuáles es la lista de elementos.
 
 **TodosLosElementos**: todos los elementos de una galería, como valores de control adicionales que sean parte de la plantilla de la galería.
 
@@ -93,7 +92,7 @@ Si un usuario se desplaza el **altura Flexible** control de galería antes de qu
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -118,7 +117,7 @@ Si un usuario se desplaza el **altura Flexible** control de galería antes de qu
 
 Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber un contraste de color adecuado entre:
 
-* **[BorderColor](properties-color-border.md)**  y el color de fuera de la galería (si hay un borde)
+* **[BorderColor](properties-color-border.md) ** y el color de fuera de la galería (si hay un borde)
 * **[Fill](properties-color-border.md)** y el color situado fuera de la galería (si hay un borde)
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla

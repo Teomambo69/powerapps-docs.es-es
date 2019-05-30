@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63318429"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
@@ -28,7 +27,7 @@ Gráficos para los que puede configurar las propiedades de aspecto y comportamie
 Estos controles incluyen flechas, formas geométricas, iconos de acción y símbolos para los que puede configurar propiedades como el relleno, el tamaño y la ubicación. También puede configurar sus **[Alseleccionar](properties-core.md)** propiedad para que la aplicación responde si el usuario selecciona el control.
 
 ## <a name="key-properties-icons-and-shapes"></a>Propiedades de clave (iconos y formas)
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+**[Fill](properties-color-border.md)** : el color de fondo de un control.
 
 **[OnSelect](properties-core.md)**  : cómo responde la aplicación cuando el usuario selecciona un control.
 
@@ -41,35 +40,35 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 **Color** : el color del icono por nombre o los valores RGBA.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
 **[PressedBorderColor](properties-color-border.md)**  : el color del borde de un control cuando el usuario selecciona ese control.
 
 **[PressedFill](properties-color-border.md)**  : el color de fondo de un control cuando el usuario selecciona ese control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Navegar**( *NombrePantalla*; *TransiciónDePantalla* )](../functions/function-navigate.md)
+[**Navegar**( *NombrePantalla*, *TransiciónDePantalla* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -81,7 +80,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Presione F5 y, a continuación, seleccione el **forma** control.
 
@@ -89,7 +88,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
@@ -115,7 +114,7 @@ Para las formas sin bordes:
 
 - **[AccessibleLabel](properties-accessibility.md)**  debe estar vacía o una cadena vacía **""** si el gráfico proporciona información redundante o es exclusivamente decorativo. Este valor hace que los lectores de pantalla omiten el gráfico.
 
-Por ejemplo, puede establecer el **[AccessibleLabel](properties-accessibility.md)** propiedad de un **configuración** icono para **configuración**. Este icono no se usa como un botón. Se encuentra junto a un **[etiqueta](control-text-box.md)** que también dice **configuración**. Los lectores de pantalla leerán el icono y la etiqueta como **configuración**, que es innecesariamente detallado. En este caso, no necesita el icono de un  **[AccessibleLabel](properties-accessibility.md)**.
+Por ejemplo, puede establecer el **[AccessibleLabel](properties-accessibility.md)** propiedad de un **configuración** icono para **configuración**. Este icono no se usa como un botón. Se encuentra junto a un **[etiqueta](control-text-box.md)** que también dice **configuración**. Los lectores de pantalla leerán el icono y la etiqueta como **configuración**, que es innecesariamente detallado. En este caso, no necesita el icono de un  **[AccessibleLabel](properties-accessibility.md)** .
 
 > [!IMPORTANT]
 > Los lectores de pantalla leerán leer un icono o forma como **botón** si su **[AccessibleLabel](properties-accessibility.md)** está establecida en una cadena vacía y su **[TabIndex ](properties-accessibility.md)** se establece en cero o mayor. Estos iconos o formas se representan como botones. 
