@@ -7,29 +7,34 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553927"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451444"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
-Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.  
+
+Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.
 
 ## <a name="description-and-syntax"></a>Descripción y sintaxis
-Todas las señales devuelven un [registro](../working-with-tables.md#records) de información. Puede usar y almacenar esta información como un registro, o puede extraer propiedades individuales mediante el **operador** [.](operators.md)
+
+Las señales son valores que pueden cambiar en cualquier momento, independientemente de cómo el usuario puede estar interactuando con la aplicación. Volver a calcular las fórmulas que se basan en las señales automáticamente a medida que cambian estos valores.
+
+Las señales devuelven normalmente un [registro](../working-with-tables.md#records) de información. Puede usar y almacenar esta información como un registro, o puede extraer propiedades individuales mediante el **operador** [.](operators.md)
 
 > [!NOTE]
 > El **aceleración** y **brújula** funciones devuelven valores precisos en un reproductor nativo como en iOS o Android, pero estas funciones devuelven valores cero al crea o modificar una aplicación en el explorador.
 
 ### <a name="acceleration"></a>Acceleration
+
 La señal **Acceleration** devuelve la aceleración del dispositivo en tres dimensiones en relación con la pantalla del dispositivo. La aceleración se mide en unidades *g* de 9,81 m/s<sup>2</sup> o 32,2 ft/s<sup>2</sup> (la aceleración que imparte la Tierra en los objetos en su superficie debida a la gravedad).
 
 | Propiedad | Descripción |
@@ -39,28 +44,14 @@ La señal **Acceleration** devuelve la aceleración del dispositivo en tres dime
 | **Acceleration.Z** |Arriba y abajo.  El valor de arriba es un número positivo. |
 
 ### <a name="app"></a>App
-La señal**App** devuelve información acerca de la aplicación en ejecución.
+
+Entre otras propiedades, la **aplicación** objeto incluye una señal que indica qué pantalla se muestra.
 
 | Propiedad | Descripción |
 | --- | --- |
-| **App.ActiveScreen** | Pantalla que se muestra. Devuelve un objeto de la pantalla, que puede usar para hacer referencia a propiedades de la pantalla o comparar con otra pantalla para determinar qué pantalla se muestra. Para cambiar la pantalla mostrada, use el **[Atrás](function-navigate.md)** o **[Navigate](function-navigate.md)** función. |
-| **App.Width** | Devuelve el ancho de la ventana en la que se ejecuta la aplicación. Puede utilizar esta propiedad en una fórmula al establecer el **ancho** propiedad de la pantalla para crear una aplicación con capacidad de respuesta.  |
-| **App.Height** | Devuelve el alto de la ventana en la que se ejecuta la aplicación. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para crear una aplicación con capacidad de respuesta. |
-| **App.DesignWidth** | Devuelve el ancho de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **ancho** propiedad de la pantalla para garantizar una anchura mínima en una aplicación con capacidad de respuesta.  |
-| **App.DesignHeight** | Devuelve el alto de la aplicación en PowerApps Studio. Puede utilizar esta propiedad en una fórmula al establecer el **alto** propiedad de la pantalla para garantizar un alto mínimo en una aplicación con capacidad de respuesta.  |
-| **App.SizeBreakpoints** | Una tabla de una columna de números que delimitan el tamaño de pantalla de intervalos de direcciones que el [ **Screen.Size** ](../controls/control-screen.md) devuelve de la propiedad. Para personalizar los puntos de interrupción todos de la aplicación de pantallas de uso se pueden cambiar los valores de esta tabla.
+| **App.ActiveScreen** |Pantalla que muestra. Devuelve un objeto de la pantalla, que puede usar para hacer referencia a propiedades de la pantalla o comparar a otra pantalla para determinar qué pantalla se muestra. Puede usar el **[Atrás](function-navigate.md)** o **[Navigate](function-navigate.md)** función para cambiar la pantalla que muestra. |
 
-El **aplicación** objeto también tiene un [fórmula de comportamiento](../working-with-formulas-in-depth.md) que se pueden establecer.
-
-| Propiedad  | Descripción |
-| --- | --- |
-| **App.OnStart** | El comportamiento de la aplicación cuando el usuario lo inicia. A menudo, los creadores de usar esta propiedad para recuperar y almacenar en caché datos en colecciones con el **[recopilar](function-clear-collect-clearcollect.md)** función, configure las variables con el **[establecer](function-set.md)** función y navegue a una pantalla inicial con el **[Navigate](function-navigate.md)** función. Esta fórmula se evalúa antes de que aparezca la primera pantalla. No hay pantalla se carga, por lo que no puede establecer las variables de contexto con el **[UpdateContext](function-updatecontext.md)** función. Sin embargo, puede pasar variables de contexto con el **Navigate** función. |
-
-El **aplicación** objeto aparece en la parte superior de la lista jerárquica de los controles del panel de navegación izquierdo, y puede seleccionar este objeto como un control en una pantalla. Después de seleccionar el objeto, puede ver y editar uno de sus propiedades, si selecciona esa propiedad en la lista desplegable situada a la izquierda de la barra de fórmulas.  
-
-Después de cambiar el **OnStart** propiedad, puede probarla mediante el mouse sobre el **aplicación** objeto en el panel de navegación izquierdo, seleccione los puntos suspensivos (...) que aparece y, a continuación, seleccione **ejecutar OnStart**. A diferencia de cuando se cargue la aplicación por primera vez, se establecerán ya las variables y las colecciones existentes. Use la **[ClearCollect](function-clear-collect-clearcollect.md)** función en lugar de la **recopilar** función colecciones vacías para empezar.
-
- ![Menú contextual del elemento App con ejecutar OnStart](media/appobject-runonstart.png)
+Más información: [**Aplicación** objeto](object-app.md) documentación.
 
 ### <a name="compass"></a>Compass
 La señal **Compass** devuelve el encabezado de brújula de la parte superior de la pantalla. El encabezado se basa en el norte magnético.
