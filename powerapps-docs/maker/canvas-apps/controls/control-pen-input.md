@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61546256"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="pen-input-control-in-powerapps"></a>Control Entrada manuscrita en PowerApps
 Control con el que el usuario puede dibujar, borrar y resaltar áreas de una imagen.
@@ -71,7 +72,7 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Recopilar**( *CollectionName*, *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
+[**Recopilar**( *CollectionName*; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
 
 ## <a name="example"></a>Ejemplo
 ### <a name="create-a-set-of-images"></a>Crear un conjunto de imágenes
@@ -80,7 +81,7 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Botón](control-button.md)** , desplácelo bajo **MyDoodles** y establezca la propiedad **[Text](properties-core.md)** del control **[Botón](control-button.md)** para que muestre **Agregar**.
 3. Establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Botón](control-button.md)** en esta fórmula:<br>
-   **Collect(Doodles, {Sketch:MyDoodles.Image})**
+   **Collect(Doodles; {Sketch:MyDoodles.Image})**
 4. Agregue un control **Galería de imágenes**, desplácelo bajo el control **[Botón](control-button.md)** y reduzca el ancho del control **Galería de imágenes** hasta que muestre tres elementos.
 5. Establezca la propiedad **[Elementos](properties-core.md)** del control **Galería de imágenes** en **Doodles** y presione F5.
 6. Dibuje una imagen en **MyDoodles** y pulse o haga clic en el control **[Botón](control-button.md)** .
@@ -88,7 +89,7 @@ El usuario puede utilizar este control como una pizarra, dibujar diagramas y esc
     La imagen que ha dibujado aparecerá en el control **Galería de imágenes**.
 7. (opcional) En el control **Entrada manuscrita**, haga clic en o pulse el icono para borrar la imagen que ha dibujado, dibuje otra y pulse o haga clic en el control **[Botón](control-button.md)** .
 8. En el control **Galería de imágenes**, establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Imagen](control-image.md)** con la siguiente fórmula:<br>
-   **Remove(Doodles, ThisItem)**
+   **Remove(Doodles; ThisItem)**
 9. Pulse o haga clic en el control **Galería de imágenes** para eliminar un dibujo.
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar los dibujos en el entorno local o la función **[Patch](../functions/function-patch.md)** para guardarlas en un origen de datos.

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "66265699"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Desarrollo de aplicaciones de lienzo que puedan ejecutarse sin conexión
 
@@ -78,14 +79,14 @@ En un nivel alto, la aplicación lleva a cabo estas tareas:
 
 1. En el **vista de árbol** panel, seleccione **aplicación**y, a continuación, establezca su **OnStart** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
-            Set( statusText, "Online data" ),
-        LoadData( LocalTweets, "LocalTweets", true );
-            Set( statusText, "Local data" )
-    );
-    SaveData( LocalTweets, "LocalTweets" );
+    ```powerapps-comma
+    If( Connection.Connected;
+        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
+            Set( statusText; "Online data" );
+        LoadData( LocalTweets; "LocalTweets"; true );;
+            Set( statusText; "Local data" )
+    );;
+    SaveData( LocalTweets; "LocalTweets" );;
     ```
 
     > [!div class="mx-imgBorder"]
@@ -113,7 +114,7 @@ Esta fórmula comprueba si el dispositivo está en línea:
 1. En la plantilla de la galería, agregue tres [ **etiqueta** ](controls/control-text-box.md) controles y establezca el **texto** propiedad de cada etiqueta en uno de estos valores:
 
     - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
-    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)`
     - `ThisItem.TweetText`
 
 1. Poner el texto en la última etiqueta en negrita para que la galería es similar a este ejemplo.
@@ -127,7 +128,7 @@ Esta fórmula comprueba si el dispositivo está en línea:
 
 1. Establezca la etiqueta más reciente **texto** propiedad en esta fórmula:
 
-    `If( Connection.Connected, "Connected", "Offline" )`
+    `If( Connection.Connected; "Connected"; "Offline" )`
 
 Esta fórmula determina si el dispositivo está en línea. Si es así, la etiqueta muestra **conectado**; en caso contrario, muestra **Offline**.
 
@@ -148,26 +149,26 @@ Esta fórmula determina si el dispositivo está en línea. Si es así, la etique
 
 1. Establezca el botón **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
-    );
-    Reset( NewTweetTextInput );
+    ```powerapps-comma
+    If( Connection.Connected;
+        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
+    );;
+    Reset( NewTweetTextInput );;
     ```  
 
 1. En el **OnStart** propiedad para el **aplicación**, agregue una línea al final de la fórmula:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
-            Set( statusText, "Online data" ),
-        LoadData( LocalTweets, "LocalTweets", true );
-            Set( statusText, "Local data" )
-    );
-    SaveData( LocalTweets, "LocalTweets" );
-    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
+    ```powerapps-comma
+    If( Connection.Connected;
+        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
+            Set( statusText; "Online data" );
+        LoadData( LocalTweets; "LocalTweets"; true );;
+            Set( statusText; "Local data" )
+    );;
+    SaveData( LocalTweets; "LocalTweets" );;
+    LoadData( LocalTweetsToPost; "LocalTweetsToPost"; true );;  // added line
     ```
 
     > [!div class="mx-imgBorder"]
@@ -193,12 +194,12 @@ A continuación, la fórmula restablece el texto en el cuadro de entrada de text
 
 1. Establecer el temporizador **OnTimerEnd** en esta fórmula:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
-        Clear( LocalTweetsToPost );
-        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
-        SaveData( LocalTweets, "LocalTweets" );
+    ```powerapps-comma
+    If( Connection.Connected;
+        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
+        Clear( LocalTweetsToPost );;
+        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
+        SaveData( LocalTweets; "LocalTweets" );;
    )
     ```
 

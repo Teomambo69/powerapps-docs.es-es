@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321037"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Funciones Filter, Search y LookUp en PowerApps
 Busca uno o varios [registros](../working-with-tables.md#records) en una [tabla](../working-with-tables.md).
@@ -41,12 +42,12 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Filter**( *Table*, *Formula1* [, *Formula2*, ... ] )
+**Filter**( *Table*; *Formula1* [; *Formula2*; ... ] )
 
 * *Table*: requerido. La tabla en la que se va a buscar.
 * *Formula(s)*: requerido. La fórmula por la que se evalúa cada registro de la tabla. La función devuelve todos los registros cuyo resultado es **true**. Puede hacer referencia a columnas dentro de la tabla. Si se proporciona más de una fórmula, los resultados de todas las fórmulas se combinan con la función **[And](function-logicals.md)**.
 
-**Search**( *Table*, *SearchString*, *Column1* [, *Column2*, ... ] )
+**Search**( *Table*; *SearchString*; *Column1* [; *Column2*; ... ] )
 
 * *Table*: requerido. La tabla en la que se va a buscar.
 * *SearchString*: requerido. La cadena que se va a buscar. Si es *blank* o es una cadena vacía, se devolverán todos los registros.
@@ -55,7 +56,7 @@ Las [tablas](../working-with-tables.md) son un valor en PowerApps, tal como una 
 > [!NOTE]
 > En el caso de orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, especifique cada uno de ellos como **"\_x0020\_"**. Por ejemplo, especifique **"Nombre de columna"** como **"Nombre_x0020_de_columna"**.
 
-**LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
+**LookUp**( *Table*; *Formula* [; *ReductionFormula* ] )
 
 * *Table*: requerido. La tabla en la que se va a buscar. En la interfaz de usuario, la sintaxis se muestra como *origen* encima del cuadro de función.
 * *Formula*: requerido.
@@ -69,16 +70,16 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Filter( IceCream, OnOrder > 0 )** |Devuelve aquellos registros en los que **OnOrder** es mayor que cero. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
-| **Filter( IceCream, Quantity + OnOrder > 225 )** |Devuelve aquellos registros en los que la suma de las columnas **Cantidad** y **OnOrder** es mayor que 225. |![](media/function-filter-lookup/icecream-overstock.png) |
-| **Filter( IceCream, "chocolate" in Lower( Flavor ) )** |Devuelve aquellos registros donde aparece la palabra "chocolate" en el nombre **Flavor**, sin tener en cuenta mayúsculas o minúsculas. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Filter( IceCream, Quantity < 10  && OnOrder < 20 )** |Devuelve aquellos registros donde la **cantidad** es menor que 10 y la cantidad **OnOrder** es menor que 20.  No hay registros que coincidan con estos criterios, por lo que se devolverá una tabla vacía. |![](media/function-filter-lookup/icecream-empty.png) |
-| **Search( IceCream, "choc", "Flavor" )** |Devuelve aquellos registros donde aparece la cadena "choc" en el nombre **Flavor**, sin tener en cuenta mayúsculas o minúsculas. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Search( IceCream, "", "Flavor" )** |Dado que el término de búsqueda está vacío, se devolverán todos los registros. |![](media/function-filter-lookup/icecream.png) |
-| **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Busca un registro cuyo valor de **Flavor** sea igual a "Chocolate". En este caso, devuelve uno.  Para el primer registro que se encuentra, devuelve el valor de **Cantidad** de ese registro. |100 |
-| **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Busca un registro cuyo valor de **Quantity** sea mayor que 100. En este caso, devuelve varios.  Para el primer registro que se encuentra, que es el **Flavor** "Vanilla", devuelve la suma de las columnas **Quantity** y **OnOrder**. |250 |
-| **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Busca un registro cuyo valor de **Flavor** sea igual a "Pistachio". En este caso no devuelve ninguno.  Como no se encontró ninguno, **Búsqueda** devuelve *blank*. |*blank* |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |Busca un registro cuyo valor de **Flavor** sea igual a "Vanilla". En este caso, devuelve uno.  Como no se proporcionó ninguna fórmula de reducción, se devuelve todo el registro. |{Sabor: "Vanilla", cantidad: 200, OnOrder: 75 } |
+| **Filter( IceCream; OnOrder > 0 )** |Devuelve aquellos registros en los que **OnOrder** es mayor que cero. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
+| **Filter( IceCream; Quantity + OnOrder > 225 )** |Devuelve aquellos registros en los que la suma de las columnas **Cantidad** y **OnOrder** es mayor que 225. |![](media/function-filter-lookup/icecream-overstock.png) |
+| **Filter( IceCream; "chocolate" in Lower( Flavor ) )** |Devuelve aquellos registros donde aparece la palabra "chocolate" en el nombre **Flavor**, sin tener en cuenta mayúsculas o minúsculas. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Filter( IceCream; Quantity < 10  && OnOrder < 20 )** |Devuelve aquellos registros donde la **cantidad** es menor que 10 y la cantidad **OnOrder** es menor que 20.  No hay registros que coincidan con estos criterios, por lo que se devolverá una tabla vacía. |![](media/function-filter-lookup/icecream-empty.png) |
+| **Search( IceCream; "choc"; "Flavor" )** |Devuelve aquellos registros donde aparece la cadena "choc" en el nombre **Flavor**, sin tener en cuenta mayúsculas o minúsculas. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Search( IceCream; ""; "Flavor" )** |Dado que el término de búsqueda está vacío, se devolverán todos los registros. |![](media/function-filter-lookup/icecream.png) |
+| **LookUp( IceCream; Flavor = "Chocolate"; Quantity )** |Busca un registro cuyo valor de **Flavor** sea igual a "Chocolate". En este caso, devuelve uno.  Para el primer registro que se encuentra, devuelve el valor de **Cantidad** de ese registro. |100 |
+| **LookUp( IceCream; Quantity > 150; Quantity + OnOrder )** |Busca un registro cuyo valor de **Quantity** sea mayor que 100. En este caso, devuelve varios.  Para el primer registro que se encuentra, que es el **Flavor** "Vanilla", devuelve la suma de las columnas **Quantity** y **OnOrder**. |250 |
+| **LookUp( IceCream; Flavor = "Pistachio"; OnOrder )** |Busca un registro cuyo valor de **Flavor** sea igual a "Pistachio". En este caso no devuelve ninguno.  Como no se encontró ninguno, **Búsqueda** devuelve *blank*. |*blank* |
+| **LookUp( IceCream; Flavor = "Vanilla" )** |Busca un registro cuyo valor de **Flavor** sea igual a "Vanilla". En este caso, devuelve uno.  Como no se proporcionó ninguna fórmula de reducción, se devuelve todo el registro. |{Sabor: "Vanilla", cantidad: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>Experiencia de búsqueda del usuario
 En muchas aplicaciones, puede escribir uno o varios caracteres en un cuadro de búsqueda para filtrar una lista de registros en un conjunto de datos grande. A medida que escribe, la lista muestra solo los registros que coinciden con los criterios de búsqueda.
@@ -89,7 +90,7 @@ Los ejemplos que aparecen en el resto de este tema muestran los resultados de bu
 
 Para crear este origen de datos como una colección, cree un control **[Botón](../controls/control-button.md)** y establezca la propiedad **OnSelect** en esta fórmula:
 
-**ClearCollect (clientes, tabla ({nombre: "Fred Garcia", empresa: "Northwind Traders"}, {nombre: "Cole Miller", empresa: "Contoso"}, {nombre: "Glenda Johnson", empresa: "Contoso"}, {nombre: "Mike Collins", empresa: "Adventure Works"}, {nombre: "Colleen Jones", empresa: "Adventure Works" } ) )**
+**ClearCollect (clientes; tabla ({nombre: "Fred Garcia"; empresa: "Northwind Traders"}; {nombre: "Cole Miller"; empresa: "Contoso"}; {nombre: "Glenda Johnson"; empresa: "Contoso"}; {nombre: "Mike Collins"; empresa: "Adventure Works"}; {nombre: "Colleen Jones"; empresa: "Adventure Works" } ) )**
 
 Como en este ejemplo, puede mostrar una lista de registros en un [**control Galería**](../controls/control-gallery.md) en la parte inferior de una pantalla. Cerca de la parte superior de la pantalla, puede agregar un control [**Entrada de texto**](../controls/control-text-input.md) denominado **SearchInput**, de modo que los usuarios puedan especificar los registros que más les interesen.
 
@@ -103,15 +104,15 @@ Para filtrar según la columna **Nombre**, establezca la propiedad **Elementos**
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |Filtra el origen de datos **Clientes** para los registros en los que la cadena de búsqueda aparece al principio de la columna **Nombre**. La prueba no distingue mayúsculas de minúsculas. Si el usuario escribe **co** en el cuadro de búsqueda, la galería mostrará **Colleen Jones** y **Cole Miller**. La galería no mostrará **Mike Collins** porque la columna **Nombre** de ese registro no comienza por la cadena de búsqueda. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
-| **Filter( Customers, SearchInput.Text in Name )** |Filtra el origen de datos **Clientes** para los registros en los que la cadena de búsqueda aparece en cualquier parte de la columna **Nombre**. La prueba no distingue mayúsculas de minúsculas. Si el usuario escribe **co** en el cuadro de búsqueda, la galería mostrará **Colleen Jones,** **Cole Miller** y **Mike Collins** ya que la cadena de búsqueda aparece en algún lugar de la columna **Nombre** de todos esos registros. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
-| **Search( Customers, SearchInput.Text, "Name" )** |De forma parecida al uso del operador **in**, la función **Search** busca una coincidencia en cualquier parte de la columna **Nombre** de cada registro. Tenga en cuenta que debe incluir el nombre de la columna entre comillas dobles. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Filter( Customers; StartsWith( Name; SearchInput.Text ) )** |Filtra el origen de datos **Clientes** para los registros en los que la cadena de búsqueda aparece al principio de la columna **Nombre**. La prueba no distingue mayúsculas de minúsculas. Si el usuario escribe **co** en el cuadro de búsqueda, la galería mostrará **Colleen Jones** y **Cole Miller**. La galería no mostrará **Mike Collins** porque la columna **Nombre** de ese registro no comienza por la cadena de búsqueda. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
+| **Filter( Customers; SearchInput.Text in Name )** |Filtra el origen de datos **Clientes** para los registros en los que la cadena de búsqueda aparece en cualquier parte de la columna **Nombre**. La prueba no distingue mayúsculas de minúsculas. Si el usuario escribe **co** en el cuadro de búsqueda, la galería mostrará **Colleen Jones,** **Cole Miller** y **Mike Collins** ya que la cadena de búsqueda aparece en algún lugar de la columna **Nombre** de todos esos registros. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Search( Customers; SearchInput.Text; "Name" )** |De forma parecida al uso del operador **in**, la función **Search** busca una coincidencia en cualquier parte de la columna **Nombre** de cada registro. Tenga en cuenta que debe incluir el nombre de la columna entre comillas dobles. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
 
 Puede expandir la búsqueda para incluir la columna **Empresa** además de la columna **Nombre**:
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |Filtra el origen de datos **Clientes** de aquellos registros en los que la columna **Nombre** o la columna **Empresa** comienza por la cadena de búsqueda (por ejemplo, **co**).  El operador [**&#124;&#124;** ](operators.md) será *true* si la función **StartsWith** es también *true*. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
-| **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |Filtra el origen de datos **Clientes** de aquellos registros en los que la columna **Nombre** o la columna **Empresa** contienen la cadena de búsqueda en cualquier lugar (por ejemplo, **co**). |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
-| **Search( Customers, SearchInput.Text, "Name", "Company" )** |De forma parecida al uso del operador **in**, la función **Search** busca en el origen de datos **Customers** aquellos registros en los que la columna **Name** o la columna **Company** contienen la cadena de búsqueda en cualquier lugar (por ejemplo, **co**). La función **Search** es más fácil de leer y escribir que **Filter** si desea especificar varias columnas y varios operadores **in**. Tenga en cuenta que debe incluir los nombres de las columnas entre comillas dobles. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Filter( Customers; StartsWith( Name; SearchInput.Text ) &#124;;&#124;; StartsWith( Company; SearchInput.Text ) )** |Filtra el origen de datos **Clientes** de aquellos registros en los que la columna **Nombre** o la columna **Empresa** comienza por la cadena de búsqueda (por ejemplo, **co**).  El operador [**&#124;&#124;** ](operators.md) será *true* si la función **StartsWith** es también *true*. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
+| **Filter( Customers; SearchInput.Text in Name &#124;;&#124;; SearchInput.Text in Company )** |Filtra el origen de datos **Clientes** de aquellos registros en los que la columna **Nombre** o la columna **Empresa** contienen la cadena de búsqueda en cualquier lugar (por ejemplo, **co**). |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Search( Customers; SearchInput.Text; "Name"; "Company" )** |De forma parecida al uso del operador **in**, la función **Search** busca en el origen de datos **Customers** aquellos registros en los que la columna **Name** o la columna **Company** contienen la cadena de búsqueda en cualquier lugar (por ejemplo, **co**). La función **Search** es más fácil de leer y escribir que **Filter** si desea especificar varias columnas y varios operadores **in**. Tenga en cuenta que debe incluir los nombres de las columnas entre comillas dobles. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559389"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.
@@ -113,11 +114,11 @@ Controles que muestran datos como gráficos con ejes x e y.
 **YLabelAngle**: el ángulo de las etiquetas junto al eje y de un gráfico de líneas o de columnas.
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
+   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/26/2019
 ms.locfileid: "66225157"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Propiedades de color y bordes en PowerApps
 
@@ -40,11 +41,11 @@ Puede especificar los colores de muchas maneras:
 
 - [**ColorFade** ](../functions/function-colors.md) función: Especificar cómo descolorida es de un color, desde completamente negro (-100%) para completamente en blanco (100%), como en este ejemplo:
 
-  - **ColorFade( Color.Red, 50% )**
+  - **ColorFade( Color.Red; 50% )**
 
 - [**RGBA** ](../functions/function-colors.md) función: Especifique los componentes rojos, verde y azules de un color de 0 a 255 y especifique un canal alfa de 0% (completamente transparente) a 100% (totalmente opaco), como en este ejemplo:
 
-  - **RGBA( 255, 0, 255, 25% )**
+  - **RGBA( 255; 0; 255; 25% )**
 
 Propiedades de color también pueden hacer referencia a otras propiedades de color. Por ejemplo, **Label.PressedColor** puede establecerse en la fórmula **Label1.Color**, automáticamente en cascada a un cambio de una propiedad a otro.
 
