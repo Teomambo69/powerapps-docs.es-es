@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c1107fd96070e62ffc8df53ad756dea01da7c5f7
+ms.sourcegitcommit: db2d38f0351fd41f74fa44f7a1d80703a6b38527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540046"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66723962"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -52,8 +52,8 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Especifique por nombre o alias de los usuarios o grupos de seguridad en Azure Active Directory con el que desea compartir la aplicación.
 
     - Para permitir que toda la organización ejecutar la aplicación (pero no modificarla ni compartirla), escriba **todo el mundo** en el panel de uso compartido.
-    - Puede compartir una aplicación con una lista de alias, los nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt; jane.doe@contoso.com>**) si los elementos están separados por puntos y coma. Si hay más de una persona tiene el mismo nombre pero distintos alias, la primera persona se agregará a la lista. Información sobre herramientas aparece si un nombre o alias ya tiene permiso o no se puede resolver. 
-    
+    - Puede compartir una aplicación con una lista de alias, los nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt; jane.doe@contoso.com>** ) si los elementos están separados por puntos y coma. Si hay más de una persona tiene el mismo nombre pero distintos alias, la primera persona se agregará a la lista. Información sobre herramientas aparece si un nombre o alias ya tiene permiso o no se puede resolver. 
+
     ![Especifique los usuarios y los copropietarios](./media/share-app/share-everyone.png)
 
     > [!NOTE]
@@ -62,7 +62,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Si desea permitir que aquellos con quienes comparte la aplicación para editar y compartirlo (además de ejecutarlo), seleccione el **copropietario** casilla de verificación.
 
     No puede conceder **copropietario** permiso para una seguridad del grupo si se [creó la aplicación desde dentro de una solución](add-app-solution.md).
-    
+
     > [!NOTE]
     > Independientemente de los permisos, no habrá dos personas pueden editar una aplicación al mismo tiempo. Si una persona abre la aplicación para su edición, otras personas pueden ejecutarla, pero no editarlo.
 
@@ -70,7 +70,8 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
     Por ejemplo, la aplicación puede conectarse a una entidad en una base de datos de Common Data Service. Cuando se comparte una aplicación, el panel de uso compartido le pide que administrar la seguridad de esa entidad.
 
-    ![Establecer permisos](./media/share-app/set-permissions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Asignar un rol de seguridad](media/share-app/cds-assign-security-role.png)
 
     Para obtener más información acerca de cómo administrar la seguridad de una entidad, vea [administrar permisos de entidad](share-app.md#manage-entity-permissions) más adelante en este tema.
 
@@ -95,6 +96,7 @@ Puede cambiar los permisos para un usuario o un grupo de seguridad, seleccione s
 ## <a name="security-group-considerations"></a>Consideraciones de grupo de seguridad
 
 - Si comparte una aplicación con un grupo de seguridad, los miembros de ese grupo y cualquiera que se una a él tendrán los permisos que especifique para dicho grupo. Cualquier persona que abandone el grupo perderá esos permisos a menos que pertenezca a un grupo diferente que tenga acceso o le otorgue permisos como usuario individual.
+
 - Todos los miembros de un grupo de seguridad tienen los mismos permisos para una aplicación que el grupo general. Sin embargo, puede especificar mayores permisos para uno o varios miembros de ese grupo para permitirles mayor acceso. Por ejemplo, puede otorgar permisos de grupo de seguridad A ejecutar una aplicación, pero también puede asignar el usuario B, que pertenece a ese grupo, **copropietario** permiso. Todos los miembros del grupo de seguridad pueden ejecutar la aplicación, pero solo el usuario B puede modificarla. Si asigna a un grupo de seguridad **copropietario** permiso y el usuario B permiso para ejecutar la aplicación, ese usuario puede seguir editando la aplicación.
 
 ## <a name="manage-entity-permissions"></a>Administrar permisos de entidad
@@ -104,47 +106,19 @@ Puede cambiar los permisos para un usuario o un grupo de seguridad, seleccione s
 Si crea una aplicación basada en Common Data Service, debe asegurarse de que los usuarios con quién se comparte la aplicación tienen los permisos adecuados para la entidad o entidades en el que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que puede realizar tareas como crear, leer, escribir y eliminar los registros relevantes. En muchos casos, desea crear uno o varios roles de seguridad personalizado con los permisos exactos que los usuarios necesitan para ejecutar la aplicación. A continuación, puede asignar un rol a cada usuario según corresponda.
 
 > [!NOTE]
-> Cuando se redactó este documento, puede asignar roles de seguridad a usuarios individuales, pero no a los grupos de seguridad.
+> Cuando se redactó este documento, puede asignar roles de seguridad a usuarios individuales y grupos de seguridad de Azure Active Directory, pero no a los grupos de Office.
 
 #### <a name="prerequisite"></a>Requisito previo
 
-Para llevar a cabo los dos procedimientos siguientes, debe tener **administrador del sistema** permisos para una base de datos de Common Data Service.
+Para asignar un rol, debe tener **administrador del sistema** permisos para una base de datos de Common Data Service.
 
-#### <a name="create-a-security-role"></a>Crear un rol de seguridad
+#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Asignar a un grupo de seguridad en Azure AD a un rol
 
-1. En el panel para compartir, seleccione **establecer permisos** en **permisos datos**y, a continuación, seleccione el **Roles de seguridad** vínculo.
+1. En el panel para compartir, seleccione **asignar un rol de seguridad** en **permisos datos**.
 
-    ![Abrir roles de seguridad](media/share-app/security-roles.png)
+1. Seleccione la función o funciones en Common Data Service que desea asignar al usuario o el grupo de seguridad en Azure AD con el que desea compartir la aplicación.
 
-1. En **Todos los roles**, seleccione **Nuevo** y después escriba o pegue el nombre del rol que va a crear.
-
-    ![Crear un rol de seguridad](media/share-app/new-role.png)
-
-1. Seleccione una o más pestañas para buscar las entidades que usa su aplicación y después seleccione los permisos que quiera conceder al rol de seguridad.
-
-    Por ejemplo, este gráfico muestra que el **principales registros** ficha contiene el **cuentas** entidad y los usuarios a los que se asignó este rol de seguridad puede crear, leer, escribir y eliminar registros en esa entidad .
-
-    ![Especificar permisos](media/share-app/grant-access.png)
-
-1. Haga clic en **Guardar y cerrar**.
-
-#### <a name="assign-a-user-to-a-role"></a>Asignar un usuario a un rol
-
-1. En el panel para compartir, seleccione **establecer permisos** en **permisos datos**y, a continuación, seleccione el **usuarios** vínculo.
-
-    ![Vínculo Usuarios](media/share-app/open-users.png)
-
-1. En la esquina superior derecha, escriba o pegue el nombre del usuario al que quiera asignar a la función y después seleccione el icono de búsqueda.
-
-    ![Búsqueda de usuarios](media/share-app/search-users.png)
-
-1. En los resultados de búsqueda, desplace el cursor hasta el resultado que quiera y seleccione la casilla que aparece.
-
-1. En el banner superior, seleccione **Administrar roles**.
-
-1. En el cuadro de diálogo que aparece, seleccione las casillas de verificación para **usuario de Common Data Service** y el rol que necesita el usuario para la aplicación, y, a continuación, seleccione **Aceptar.**
-
-    ![Asignar un usuario a un rol](media/share-app/assign-users.png)
+    ![Lista de roles de seguridad](media/share-app/cds-assign-security-role-list.png)
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (versión anterior)
 
