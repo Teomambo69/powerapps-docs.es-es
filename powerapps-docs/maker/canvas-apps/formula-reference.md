@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451404"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736218"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -187,7 +187,10 @@ Otros elementos incluyen:
 
 **[IsToday](functions/function-now-today-istoday.md)** : comprueba si un valor de fecha y hora coincide con algún momento del día actual.
 
-**[IsType](functions/function-astype-istype.md)**  : comprueba si una referencia de registro se refiere a un tipo de entidad concreto.  
+**[IsType](functions/function-astype-istype.md)**  : comprueba si una referencia de registro se refiere a un tipo de entidad concreto.
+
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)**  -genera una cadena de texto JSON para una tabla, un registro o un valor.
 
 ## <a name="l"></a>Grande
 **[Language](functions/function-language.md)** : devuelve la etiqueta de idioma del usuario actual.
