@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66760968"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Crear una galería de detalle en una aplicación de lienzo
 
@@ -71,7 +72,7 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer el **elementos** propiedad de la Galería de detalle en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.'Order Details'
     ```
 
@@ -103,7 +104,7 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.'Product Name'
     ```
 
@@ -141,7 +142,7 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la imagen **imagen** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.Picture
     ```
 
@@ -161,7 +162,7 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Quantity
     ```
 
@@ -179,8 +180,8 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Si no incluye la etiqueta de idioma ( **[$-en-US]** ), se agregarán según su idioma y región. Si usa una etiqueta de idioma diferente, deseará quitar la **$** justo después del corchete de cierre ( **]** ) y, a continuación, agregue su propio símbolo de moneda en dicha posición.
@@ -197,8 +198,8 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Nuevamente, si no incluye la etiqueta de idioma ( **[$-en-US]** ), se agregarán según su idioma y región. Si la etiqueta es diferente, deseará utilizar su propio símbolo de moneda en lugar de la **$** justo después del corchete de cierre ( **]** ).
@@ -273,8 +274,8 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Sum( Gallery1.Selected.'Order Details', Quantity )
+    ```powerapps-comma
+    Sum( Gallery1.Selected.'Order Details'; Quantity )
     ```
 
     Esta fórmula muestra una advertencia de delegación, pero puede ignorar porque ningún orden solo contendrá más de 500 productos.
@@ -288,8 +289,8 @@ Antes de empezar este tema, debe instalar la base de datos, como se describe ant
 
 1. Establezca la copia **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     Esta fórmula muestra una advertencia de delegación, pero puede ignorar porque ningún orden solo contendrá más de 500 productos.
@@ -357,7 +358,7 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Establezca el cuadro combinado **elementos** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Choices( 'Order Details'.Product )
     ```
 
@@ -418,7 +419,7 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Establecer el **imagen** propiedad de la imagen:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ComboBox1.Selected.Picture
     ```
 
@@ -467,8 +468,8 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Cambiar el tamaño y mueva la etiqueta a la derecha del control de entrada de texto y establezca la etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -488,8 +489,8 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Establecer la nueva etiqueta **texto** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -518,18 +519,18 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Cambiar el tamaño y mover este icono para el borde derecho del área de color azul claro y, a continuación, establecer el icono **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Patch( 'Order Details',
-        Defaults('Order Details'),
+    ```powerapps-comma
+    Patch( 'Order Details';
+        Defaults('Order Details');
         {
-            Order: Gallery1.Selected,
-            Product: ComboBox1.Selected,
-            Quantity: Value(TextInput1.Text),
+            Order: Gallery1.Selected;
+            Product: ComboBox1.Selected;
+            Quantity: Value(TextInput1.Text);
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );
-    Refresh( Orders );
-    Reset( ComboBox1 );
+    );;
+    Refresh( Orders );;
+    Reset( ComboBox1 );;
     Reset( TextInput1 )
     ```
 
@@ -582,8 +583,8 @@ En una galería, puede mostrar datos, pero no se puede actualizar o agregar regi
 
 1. Cambiar el tamaño y mueva el icono de Papelera en el lado derecho de la plantilla de la Galería de detalle y establece el icono **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Remove( 'Order Details', ThisItem ); Refresh( Orders )
+    ```powerapps-comma
+    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -608,7 +609,7 @@ Para recapitular, ha agregado otra galería para mostrar detalles del pedido y l
 - Una relación de varios a uno de los **Order Details** entidad a la **productos del pedido** entidad: `ThisItem.Product.'Product Name'` y `ThisItem.Product.Picture`
 - El **opciones** función para obtener una lista de productos: `Choices( 'Order Details'.Product' )`
 - El **seleccionados** registro relacionados con la propiedad de un cuadro combinado como la completa varios a uno: `ComboBox1.Selected.Picture` y `ComboBox1.Selected.'List Price'`
-- El **Patch** función para crear un **Order Details** registro: `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
-- El **quitar** función para eliminar un **Order Details** registro: `Remove( 'Order Details', ThisItem )`
+- El **Patch** función para crear un **Order Details** registro: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
+- El **quitar** función para eliminar un **Order Details** registro: `Remove( 'Order Details'; ThisItem )`
 
 Esta serie de temas ha sido un tutorial rápido del uso de relaciones de Common Data Service y opción se establece en una aplicación de lienzo con fines formativos. Antes de publicar cualquier aplicación en producción, debe considerar la validación de campos, control de errores y muchos otros factores.

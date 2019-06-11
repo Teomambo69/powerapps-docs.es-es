@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66736408"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="json-function-in-powerapps"></a>Función JSON en PowerApps
 
@@ -34,16 +35,16 @@ Compatibilidad de aplicaciones de lienzo el [tipos de datos](data-types.md) que 
 |-----------|-------------|---------|
 | **Boolean** | *True* o *false*. | `true` |
 | **Color** | Cadena que contiene la representación hexadecimal de 8 dígitos para el color. Esta representación toma el formato #*rrggbbaa*, donde *rr* es el componente rojo, *gg* es verde, *bb* es azul y *aa* es el canal alfa. Para el canal alfa, **00** es completamente transparente, y **ff** es completamente opaco. Puede pasar la cadena a la [ **ColorValue** ](function-colors.md) función.  | `"#102030ff"` |
-| **Moneda** | Número que usa el separador decimal adecuado para el idioma del usuario. Si es necesario, se usa la notación científica. | `1.345` |
+| **Moneda** | Número que usa el separador decimal adecuado para el idioma del usuario. Si es necesario, se usa la notación científica. | `1,345` |
 | **Fecha** | Cadena que contiene la fecha en ISO 8601 **aaaa-mm-dd** formato. | `"2019-03-31"` |
 | **DateTime** | Cadena que contiene una imagen ISO 8601 fecha y hora. Fecha y hora son valores en UTC, tal como indica el final "Z".  | `"2019-03-31T22:32:06.822Z"`  |
 | **GUID** | Cadena que contiene el valor de GUID. Letras estén en minúsculas. | `"751b58ac-380e-4a04-a925-9f375995cc40"`
 | **Imagen de medios** | Si **IncludeBinaryData** se especifica, se codifican los archivos multimedia en una cadena. Referencias que usan http Web: o https: No se modifican el esquema de dirección URL. Las referencias a los datos binarios en memoria se codifican con el ["datos:*mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) formato. Datos en memoria incluyen imágenes que los usuarios capturar mediante el [ **cámara** ](../controls/control-camera.md) control y cualquier otra referencia con el appres: y blob: Esquemas de dirección URL.| `"data:image/jpeg;base64,/9j/4AA..."` |
-| **Número** | Número que usa el separador decimal adecuado para el idioma del usuario. Si es necesario, se usa la notación científica. | `1.345` |
+| **Número** | Número que usa el separador decimal adecuado para el idioma del usuario. Si es necesario, se usa la notación científica. | `1,345` |
 | **Opción&nbsp;establecido** | Valor numérico de la opción de conjunto, no la etiqueta que se usa para mostrarlo. El valor numérico se usa porque es independiente del lenguaje.  | `1001` |
 | **Tiempo** | Cadena que contiene un ISO 8601 *ss. fff* formato.  | `"23:12:49.000"` |
-| **Record** | Delimitado por comas de lista, entre **{** y **}** , de los campos y sus valores. Esta notación es similar para los registros de aplicaciones de lienzo, pero siempre es el nombre entre comillas dobles. Este formato no admite registros que se basan en relaciones de varios a uno.  | `{ "First Name": "Fred", "Age": 21 }` |
-| **Table** | Delimitado por comas de lista, entre **[** y **]** , de registros. Este formato no admite las tablas que se basan en las relaciones uno a varios.  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
+| **Record** | Delimitado por comas de lista, entre **{** y **}** , de los campos y sus valores. Esta notación es similar para los registros de aplicaciones de lienzo, pero siempre es el nombre entre comillas dobles. Este formato no admite registros que se basan en relaciones de varios a uno.  | `{ "First Name": "Fred"; "Age": 21 }` |
+| **Table** | Delimitado por comas de lista, entre **[** y **]** , de registros. Este formato no admite las tablas que se basan en las relaciones uno a varios.  | `[ { "First Name": "Fred"; "Age": 21 }; { "First Name": "Jean"; "Age": 20 } ]` |
 | **Dos&nbsp;opción** | Valor booleano de la opción dos, *true* o *false*, no la etiqueta que se usa para mostrarlo. El valor booleano se utiliza porque es independiente del lenguaje. | `false` |
 | **Hyperlink, Text** | Cadena entre comillas dobles. La función convierte las comillas dobles incrustadas con una barra diagonal inversa, reemplaza las nuevas líneas por "\n" y realiza otras sustituciones de JavaScript estándares. | `"This is a string."` |
 
@@ -65,7 +66,7 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 ## <a name="syntax"></a>Sintaxis
 
-**JSON**( *DataStructure* [, *Format* ] )
+**JSON**( *DataStructure* [; *Format* ] )
 
 * *DataStructure* : requerido. La estructura de datos para convertir en JSON.  Se admiten las tablas, los registros y los valores primitivos, arbitrariamente anidados.
 * *Formato* : opcional.  **JSONFormat** valor enum. El valor predeterminado es **Compact**, que no se agregarán nuevas líneas o los espacios y bloquea los datos binarios y columnas no admitidas.
@@ -76,16 +77,16 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 1. Insertar un [ **botón** ](../controls/control-button.md) y establezca su **OnSelect** fórmula para la propiedad.
 
-    ```powerapps-dot
-    ClearCollect( CityPopulations,
-        { City: "London",    Country: "United Kingdom", Population: 8615000 },
-        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
-        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
-        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
-        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
-        { City: "Munich",    Country: "Germany",        Population: 1494000 }
-    );
-    ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )
+    ```powerapps-comma
+    ClearCollect( CityPopulations;
+        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
+        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
+        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
+        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
+        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
+        { City: "Munich";    Country: "Germany";        Population: 1494000 }
+    );;
+    ClearCollect( CitiesByCountry; GroupBy( CityPopulations; "Country"; "Cities" ) )
     ```
 
 1. Seleccione el botón mientras mantiene presionada la tecla Alt.
@@ -102,8 +103,8 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 1. Inserte otro botón y establezca su **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
+    ```powerapps-comma
+    Set( CitiesByCountryJSON; JSON( CitiesByCountry ) )
     ```
 
     Esta fórmula establece la variable global **CitiesByCountryJSON** a la representación JSON de **CitiesByCountry**.
@@ -112,7 +113,7 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 1. Insertar un [ **etiqueta** ](../controls/control-text-box.md) y establezca su **texto** propiedad a esta variable.
 
-    ```powerapps-dot
+    ```powerapps-comma
     CitiesByCountryJSON
     ```
 
@@ -124,8 +125,8 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 1. Cambiar la fórmula del segundo botón para que la salida sea más legible.
 
-    ```powerapps-dot
-    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
+    ```powerapps-comma
+    Set( CitiesByCountryJSON; JSON(CitiesByCountry; JSONFormat.IndentFour ))
     ```
 
 1. Seleccione el segundo botón mientras mantiene presionada la tecla Alt.
@@ -184,15 +185,15 @@ Si una columna tiene un nombre para mostrar y un nombre lógico, el resultado co
 
 1. Agregar un [ **botón** ](../controls/control-button.md) y establezca su **OnSelect** fórmula para la propiedad.
 
-    ```powerapps-dot
-    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
+    ```powerapps-comma
+    Set( ImageJSON; JSON( SampleImage; JSONFormat.IncludeBinaryData ) )
     ```
 
 1. Seleccione el botón mientras mantiene presionada la tecla Alt.
 
 1. Agregue una etiqueta y establezca su **texto** propiedad a esta variable.
 
-    ```powerapps-dot
+    ```powerapps-comma
     ImageJSON
     ```
 

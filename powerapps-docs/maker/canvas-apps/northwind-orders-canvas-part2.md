@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66805405"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Crear un formulario de resumen en una aplicación de lienzo
 
@@ -96,7 +97,7 @@ En esta sección, agregará controles para mostrar un resumen de cualquier pedid
 
 1. En la barra de fórmulas, establezca el **DataSource** propiedad del formulario para este valor:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Orders
     ```
 
@@ -215,7 +216,7 @@ En este ejemplo, no necesita las partes de tiempo de los campos de fecha porque 
 
 1. Establezca el formulario resumen **elemento** propiedad en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected
     ```
 
@@ -239,7 +240,7 @@ En este ejemplo, no necesita las partes de tiempo de los campos de fecha porque 
 1. Abra el **tipo de Control** lista:
 
     > [!div class="mx-imgBorder"]
-    > ![Abra el ** lista de Control de tipo **](media/northwind-orders-canvas-part2/alt-02.png)
+    > ![Abra el ** lista de Control de tipo **](media/northwind-orders-canvas-part2/alt-02,png)
 
 1. Seleccione el **ver texto** tarjeta de datos:
 
@@ -294,7 +295,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el **imagen** propiedad de la imagen en esta fórmula, reemplazando el número al final de DataCardValue si es necesario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     DataCardValue7.Selected.Picture
     ```
 
@@ -327,7 +328,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. En el **vista de árbol** panel, confirme que es el nombre del formulario **Form1**y, a continuación, establezca el icono **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SubmitForm( Form1 )
     ```
 
@@ -338,8 +339,8 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono **DisplayMode** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -349,7 +350,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono **DisabledColor** este valor para propiedad:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -380,7 +381,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono cancelar **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ResetForm( Form1 )
     ```
 
@@ -391,8 +392,8 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono cancelar **DisplayMode** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -402,7 +403,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono cancelar **DisabledColor** este valor para propiedad:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -433,7 +434,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono Agregar **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     NewForm( Form1 )
     ```
 
@@ -444,8 +445,8 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono Agregar **DisplayMode** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -458,7 +459,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono Agregar **DisabledColor** este valor para propiedad:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -492,8 +493,8 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono de Papelera **OnSelect** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    Remove( Orders, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Orders; Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -503,8 +504,8 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono de Papelera **DisplayMode** propiedad en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -514,7 +515,7 @@ El **pedidos** entidad tiene una relación de varios a uno con el **empleados** 
 
 1. Establecer el icono de Papelera **DisabledColor** este valor para propiedad:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -537,7 +538,7 @@ Para recapitular, ha agregado un formulario en el que el usuario puede mostrar y
 - Un icono para guardar los cambios en un pedido: `SubmitForm( Form1 )`
 - Un icono para cancelar los cambios en un orden: `ResetForm( Form1 )`
 - Un icono para crear un pedido: `NewForm( Form1 )`
-- Un icono para eliminar un pedido: `Remove( Orders, Gallery1.Selected )`
+- Un icono para eliminar un pedido: `Remove( Orders; Gallery1.Selected )`
 
 ## <a name="next-step"></a>Paso siguiente
 
