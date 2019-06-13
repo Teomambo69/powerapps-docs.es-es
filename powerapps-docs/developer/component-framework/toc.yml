@@ -4,13 +4,27 @@
       href: overview.md
     - name: ¿Qué son los componentes personalizados?
       href: custom-controls-overview.md
-    - name: 'Crear, depurar e implementar componentes personalizados mediante la CLI de Microsoft PowerApps'
-      href: create-custom-controls-using-pcf.md
-    - name: Implementación de componentes personalizados en TypeScript
-      href: implementing-controls-using-typescript.md
-    - name: Actualizar los componentes existentes del Marco de componentes de PowerApps al nuevo formato de herramientas
-      href: updating-existing-controls.md
-    - name: Limitaciones del Marco de componentes de PowerApps
+    - name: Obtención de las herramientas
+      href: get-powerapps-cli.md
+    - name: Tutorial
+      items:
+        - name: Implementación de contenido de ejemplo
+          href: implementing-controls-using-typescript.md
+    - name: Procedimiento
+      items:
+        - name: Creación y compilación de un componente personalizado
+          href: create-custom-controls-using-pcf.md
+        - name: Depuración de un componente personalizado
+          href: debugging-custom-controls.md
+        - name: Empaquetado de un componente personalizado
+          href: import-custom-controls.md
+        - name: Incorporación de componentes en entidades o campos
+          href: add-custom-controls-to-a-field-or-entity.md
+        - name: Actualización de componentes personalizados existentes
+          href: updating-existing-controls.md
+        - name: Publicación de componentes personalizados en AppSource
+          href: publish-components-app-source.md
+    - name: Limitaciones
       href: limitations.md
     - name: Preguntas más frecuentes
       href: faq.md
