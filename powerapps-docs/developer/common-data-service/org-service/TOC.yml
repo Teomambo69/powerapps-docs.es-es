@@ -70,16 +70,16 @@
   items:
     - name: Creación de consultas con LINQ (Language Integrated Query .NET)
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: Ejemplos de consultas LINQ
-      href: linq-query-examples.md
+    - name: Uso de LINQ para construir una consulta
+      href: use-linq-construct-query.md
+    - name: Uso de la clase de entidad enlazada en tiempo de ejecución con una consulta LINQ
+      href: use-late-bound-entity-class-linq-query.md
     - name: Ordenación de resultados mediante atributos de entidad con LINQ
       href: order-results-entity-attributes-linq.md
     - name: Paginación de grandes conjuntos de resultados con LINQ
       href: page-large-result-sets-linq.md
-    - name: Uso de la clase de entidad enlazada en tiempo de ejecución con una consulta LINQ
-      href: use-late-bound-entity-class-linq-query.md
-    - name: Uso de LINQ para construir una consulta
-      href: use-linq-construct-query.md
+    - name: Ejemplos de consultas LINQ
+      href: linq-query-examples.md
 - name: Detectar datos duplicados
   href: detect-duplicate-data.md
 - name: Generación de clases para la programación enlazada en tiempo de compilación
