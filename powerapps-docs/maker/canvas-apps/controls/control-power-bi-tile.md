@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa5385d0da6572523300c267a4237b0d24c22bc1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
+ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526318"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316759"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 
@@ -44,11 +44,15 @@ Al pasar un único parámetro de la aplicación, puede filtrar los resultados qu
 
 Para pasar un valor de filtro único, modifique el valor de la **TileURL** propiedad, que sigue a esta sintaxis:
 
-```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+```
+"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
+```
 
 En ese valor, anexe esta sintaxis:
 
-```&$filter=<TableName>/<ColumnName> eq '<Value>' ```
+```
+&$filter=<TableName>/<ColumnName> eq '<Value>'
+```
 
 El parámetro filtrará un valor en el conjunto de datos del informe donde se origina el icono.
 
@@ -64,27 +68,27 @@ El parámetro filtrará un valor en el conjunto de datos del informe donde se or
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control. De forma predeterminada, se abre el informe de Power BI asociado al icono.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control. De forma predeterminada, se abre el informe de Power BI asociado al icono.
 
 **TileUrl**: dirección URL por medio de la cual se solicita un icono desde el servicio Power BI. Puede pasar un parámetro único en el icono de Power BI si anexa el parámetro a la dirección URL (por ejemplo:… & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"). Solo puede usar el operador equals en el parámetro.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
 
