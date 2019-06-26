@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/31/2018
+ms.date: 06/17/2019
 ms.author: yingchin
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c0926c2c38adac6b3377de9a87eef4dd7d7a7cf7
+ms.sourcegitcommit: 9c4d95eeace85a3e91a00ef14fefe7cce0af69ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536405"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349805"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
 Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
@@ -79,10 +79,11 @@ Use la función **Set** para almacenar en caché local datos provenientes de tab
 La información de contacto con cambia con frecuencia, así como tampoco lo hacen los valores predeterminados ni la información del usuario. Por tanto, puede usar habitualmente esta técnica también con las funciones **Defaults** y **User**. 
 
 ## <a name="avoid-controls-dependency-between-screens"></a>Evitar la dependencia de controles entre pantallas
-Si el valor de un control depende del valor de un control en otra pantalla, administre los datos mediante una variable, una colección o una referencia a origen de datos.
+Para mejorar el rendimiento, las pantallas de una aplicación se cargan en memoria solo según sean necesarios. Esta optimización puede verse limitada si, por ejemplo, 1 de la pantalla se carga y una de sus fórmulas utiliza una propiedad de un control de pantalla de 2. Ahora, pantalla 2 debe cargarse para satisfacer la dependencia antes de que se puede mostrar la pantalla 1. Imagine pantalla 2 tiene una dependencia en la pantalla 3, que no tiene otra dependencia de pantalla de 4 y así sucesivamente. Esta cadena de dependencia puede hacer que se puede cargar varias pantallas.
 
-## <a name="use-global-variables"></a>Uso de variables globales
-Para pasar el estado de la aplicación de una pantalla a otra, cree o modifique un valor de variable global mediante el uso de la función [**Set**](functions/function-set.md) en lugar de las funciones **Navigate** y **UpdateContext**.
+Por esta razón, evite las fórmulas dependencias entre pantallas. En algunos casos puede usar una variable global o una colección para compartir información entre pantallas.
+
+Hay una excepción. En el ejemplo anterior, imagine que es la única manera de mostrar la pantalla 1 navegando desde la pantalla de 2. A continuación, pantalla 2 habría ya se ha cargado en memoria cuando estaba pantalla 1 que se cargue. No es necesario ningún trabajo adicional para satisfacer la dependencia para la pantalla 2 y, por tanto, no hay ningún impacto en el rendimiento.
 
 ## <a name="use-delegation"></a>Uso de la delegación
 Siempre que sea posible, use las funciones que delegan el procesamiento de datos al origen de datos en lugar de recuperar los datos en el dispositivo local para el procesamiento. Si una aplicación debe procesar localmente los datos, la operación requiere mucha más potencia de procesamiento, memoria y ancho de banda de red, especialmente si el conjunto de datos es grande.
