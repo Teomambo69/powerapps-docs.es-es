@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c521fd5961bc9b8d940a374383baca1aeef0cbe4
-ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
+ms.openlocfilehash: da68abeec51df102647ea32a17b3d76451f2f1aa
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65986365"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456730"
 ---
 # <a name="connect-to-common-data-service"></a>Conectarse a Common Data Service
 
