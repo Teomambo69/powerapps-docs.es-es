@@ -1,1 +1,0 @@
-Ejecuta una única operación de acción, función o CRUD.

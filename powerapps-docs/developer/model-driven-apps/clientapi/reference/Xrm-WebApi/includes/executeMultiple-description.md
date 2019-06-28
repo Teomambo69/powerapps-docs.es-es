@@ -1,1 +1,0 @@
-Ejecuta una colección de operaciones de acción, función o CRUD.
