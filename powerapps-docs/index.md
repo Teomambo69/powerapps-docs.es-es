@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 9ef852744a302ee502fdb9eadfaac7289537a4ab
-ms.sourcegitcommit: 444bd58ec52339516c45e49ea0f42447417faf4e
+ms.openlocfilehash: e22a8e4dd147e1e5dba102de12c5bc28dcde5efc
+ms.sourcegitcommit: dc4100c826085130fb1c5e841b8477be0d5c8ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63769783"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67395419"
 ---
 <div id="main"
    class="v2">
@@ -296,6 +296,7 @@ ms.locfileid: "63769783"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Campos</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Aplicar lógica de negocios</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Soluciones</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Seguridad de Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Notas del producto: Uso de soluciones ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Generación de informes de Power BI a partir de los datos de Common Data Service</a></p>
                                  </div>
@@ -468,7 +469,7 @@ ms.locfileid: "63769783"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">Personalizar visualizaciones y paneles</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Aplicar lógica empresarial mediante scripting de cliente</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">Personalizar comandos y cinta de opciones</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Crear controles personalizados</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Compilación de componentes personalizados (marco de componentes de PowerApps)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">Crear, administrar y publicar aplicaciones</a></p>
                                  </div>
                               </div>
@@ -581,6 +582,7 @@ ms.locfileid: "63769783"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">Uso de soluciones</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">Herramienta SolutionPackager</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Herramienta Package Deployer</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Uso del Comprobador de PowerApps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Publicar la aplicación en AppSource</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Notas del producto: Uso de soluciones ALM</a></p>
                                  </div>

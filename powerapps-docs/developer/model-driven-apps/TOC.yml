@@ -26,8 +26,8 @@
       href: use-editable-grids.md
     - name: Consultar y editar un tema de la organización
       href: query-and-edit-an-organization-theme.md
-    - name: Crear controles personalizados con el Marco de componentes de PowerApps
-      href: /powerapps/developer/control-framework/overview
+    - name: Compilación de componentes personalizados con el marco de componentes de PowerApps
+      href: /powerapps/developer/component-framework/overview
 - name: Aplicar visualizaciones de datos mediante código
   href: customize-visualizations-dashboards.md
   items:
@@ -757,9 +757,9 @@
             - name: isAvailableOffline
               href: clientapi/reference/xrm-webapi/isAvailableOffline.md
             - name: execute
-              href: clientapi/reference/xrm-webapi/execute.md
+              href: clientapi/reference/xrm-webapi/online/execute.md
             - name: executeMultiple
-              href: clientapi/reference/xrm-webapi/executeMultiple.md
+              href: clientapi/reference/xrm-webapi/online/executeMultiple.md
     - name: Procedimientos recomendados
       href: best-practices/business-logic/index.md
 - name: Personalizar comandos y cinta de opciones
