@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/28/2019
 ms.locfileid: "67456763"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="data-types-in-canvas-apps"></a>Tipos de datos en aplicaciones de lienzo
 
@@ -29,7 +30,7 @@ En este artículo proporciona detalles para los tipos de datos que la compatibil
 | Tipo de datos | Descripción | Ejemplos |
 |-----------|-------------|---------|
 | **Boolean** | Un *true* o *false* valor.  Se pueden usar directamente en **si**, **filtro** y otras funciones sin una comparación.  | *true* |
-| **Color** | Una especificación de color, incluido un canal alfa. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255, 128, 0, 0.5 )** |
+| **Color** | Una especificación de color, incluido un canal alfa. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255; 128; 0; 0,5 )** |
 | **Moneda** | Un valor de moneda que se almacena en un número de punto flotante. Los valores de moneda son los mismos que los valores number con opciones de formato de moneda.  | **123**<br>**4.56** |
 | **Fecha** | Una fecha sin un tiempo, en la zona horaria del usuario de la aplicación. | **Fecha (2019, 5, 16)** |
 | **DateTime** | Una fecha con un tiempo, en la zona horaria del usuario de la aplicación. | **Fechahoranumero ("16 de mayo de 2019 1:23:09 PM")** |
@@ -39,9 +40,9 @@ En este artículo proporciona detalles para los tipos de datos que la compatibil
 | **Multimedia** | Una cadena de texto URI para una grabación de audio o vídeo. | **Mi vídeo** agregado como un recurso de aplicación<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **Número** | Número de punto flotante. | **123**<br>**-4.567**<br>**8.903e121** |
 | **Conjunto de opciones** | Una opción de un conjunto de opciones, respaldado por un número. Este tipo de datos combina una etiqueta de texto localizable con un valor numérico. La etiqueta aparece en la aplicación y se almacena el valor numérico y se usa para las comparaciones. | **ThisItem.OrderStatus** |
-| **Record** | Registro de los valores de datos. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **{La empresa: "Northwind Traders",<br>personal: 35, <br>NonProfit: false }** |
+| **Record** | Registro de los valores de datos. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **{La empresa: "Northwind Traders";<br>personal: 35; <br>NonProfit: false }** |
 | **Referencia de registro** | Una referencia a un registro en una entidad. Estas referencias se suelen usar con las búsquedas polimórficas. Más información: [Trabajar con referencias](../working-with-references.md).| **First(Accounts).Owner** |
-| **Table** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy,"<br>LastName: "Anderson" } )**
+| **Table** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney";<br>LastName: "Higa"}; <br>{FirstName: "Nancy,"<br>LastName: "Anderson" } )**
 | **Texto** | Una cadena de texto Unicode. | **"Hello, World"** |
 | **Tiempo** | Una vez sin una fecha, en la zona horaria del usuario de la aplicación. | **Tiempo (11, 23, 45)** |
 | **Opción dos** | Una opción de un conjunto de dos opciones, respaldado por un valor booleano. Este tipo de datos combina una etiqueta de texto localizable con un valor booleano. La etiqueta aparece en la aplicación y se almacena el valor booleano y se usa para las comparaciones. | **ThisItem.Taxable** |
@@ -52,7 +53,7 @@ Muchos de estos tipos de datos son similares y tienen la misma representación s
 
 Todos los tipos de datos pueden tener un valor de *en blanco* (es decir, ningún valor). El término "null" se usa a menudo en las bases de datos de este concepto.  
 
-Use la **en blanco** funcionando con el **establecer** o **Patch** función para establecer una variable o campo para *en blanco*. Por ejemplo, **conjunto (x, Blank())** quita cualquier valor en la variable global **x**.  
+Use la **en blanco** funcionando con el **establecer** o **Patch** función para establecer una variable o campo para *en blanco*. Por ejemplo, **conjunto (x; Blank())** quita cualquier valor en la variable global **x**.  
 
 Probar un *en blanco* valor mediante el uso de la [ **IsBlank** ](function-isblank-isempty.md) función. Reemplace posible *en blanco* valores con los que no sean de*en blanco* valores usando el [ **Coalesce** ](function-isblank-isempty.md) función.
 
@@ -82,7 +83,7 @@ Las aplicaciones de lienzo hacen referencia a cada imagen u otro archivo de medi
 
 Por ejemplo, el **imagen** propiedad de un control image acepta no sólo los recursos de la aplicación, sino también vínculos a imágenes en la web, como "https://northwindtraders.com/logo.jpg". La propiedad también admite imágenes en línea que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
 
-```powerapps-dot
+```powerapps-comma
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -160,10 +161,10 @@ Por ejemplo, tiempo de Unix muestra 9 de septiembre de 2001, de 01:46:40 UTC com
 Sin embargo, esa función devuelve **el sábado, 8 de septiembre de 2001 18:46:40** si usas el **DateTimeFormat.LongDateTime24** formato en una zona horaria que es menos 7 horas de desplazamiento a la hora UTC (7 horas al oeste UTC). Este resultado muestra el **DateTime** valor correctamente según la zona horaria local.
 
 Para convertir en una hora Unix, divida el resultado de **valor** por 1.000:
-<br>**RoundDown( Value( UnixTime ) / 1000, 0 )**
+<br>**RoundDown( Value( UnixTime ) / 1000; 0 )**
 
 Si necesita la hora de Unix en un **fecha** valor para cálculos o mostrar dentro de PowerApps, use la siguiente fórmula:
-<br>**DateAdd( Date( 1970,1,1 ), UnixTime, Seconds )**
+<br>**DateAdd( Date( 1970;1;1 ); UnixTime; Seconds )**
 
 ### <a name="sql-server"></a>SQL Server
 
@@ -173,11 +174,11 @@ Las aplicaciones de lienzo usan la información de zona horaria incluida en **Da
 
 Las aplicaciones de lienzo, leer y escribir valores de la [ **tiempo** ](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) tipo de datos en SQL Server como cadenas de texto en el [formato de duración ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Por ejemplo, debe analizar este formato de cadena y usar el [ **tiempo** ](function-date-time.md) función para convertir la cadena de texto **"PT2H1M39S"** a un **tiempo** valor:
 
-```powerapps-dot
+```powerapps-comma
 First(
     ForAll(
-        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-        Time( Value( hours ), Value( minutes ), Value( seconds ) )
+        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+        Time( Value( hours ); Value( minutes ); Value( seconds ) )
     )
 ).Value
 ```
@@ -200,18 +201,18 @@ Cuando un usuario de la aplicación selecciona una opción y guarda ese cambio, 
 
 Las etiquetas son solo con fines de visualización. No se puede realizar las comparaciones directas con las etiquetas debido a que son específicos de un idioma. En su lugar, cada conjunto de opciones tiene una enumeración que funciona con el número de subyacente o un valor booleano. Por ejemplo, no puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = "Active", ...`
+`If( ThisItem.OrderStatus = "Active"; ...`
 
 Pero puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
 
 Para conjuntos de opciones globales (las entidades que comparten), el nombre de la enumeración de conjunto de opciones coincide con el nombre del conjunto de opciones globales. Para conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones que tienen el mismo nombre. Por ejemplo, el **cuentas** entidad podría tener un **OrderStatus** opción establecida, y su nombre podría ser **OrderStatus (cuentas)** . Ese nombre contiene uno o más espacios y paréntesis, por lo que debe delimitar con comillas simples si se hace referencia en una fórmula.
 
 Además, los valores de las dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de opción de dos denominado **TaxStatus** podría tener las etiquetas **sujetos** y **no sujeto**, que corresponden a *true* y *false* respectivamente. Para mostrar, puede usar esta fórmula:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
 
 También puede usar esta fórmula equivalente:
 
-`If( ThisItem.Taxable, ...`
+`If( ThisItem.Taxable; ...`
