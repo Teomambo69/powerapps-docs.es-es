@@ -75,6 +75,18 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Exportar a una tabla dinámica de Excel
               href: ../user/export-excel-pivottable.md
+        - name: Informes
+          items:
+            - name: Trabajo con los informes
+              href: ../user/work-with-reports.md
+            - name: Creación de los informes mediante el Asistente para informes
+              href: ../user/create-report-with-wizard.md
+            - name: Adición de un informe existente
+              href: ../user/add-existing-report.md
+            - name: Edición del filtro predeterminado de un informe
+              href: ../user/edit-report-filter.md
+            - name: Solución de problemas con los informes
+              href: ../user/troubleshoot-reports.md
         - name: Automatizar procesos
           items:
             - name: Trabajar con procesos de negocio
@@ -883,19 +895,25 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: Cómo deshabilitar el guardado automático en un formulario
                       href: ./model-driven-apps/manage-auto-save.md
-            - name: Insertar una aplicación de lienzo en un formulario
+            - name: Inserción de una aplicación de lienzo en un formulario controlado por modelos
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
-                - name: Pasar el registro actual a una aplicación de lienzo insertada
-                  href: ./model-driven-apps/pass-current-embedded-canvas-app.md
-                - name: Pasar los registros relacionados a una aplicación de lienzo insertada
-                  href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+                - name: Adición de una aplicación de lienzo insertada
+                  href: ./model-driven-apps/embedded-canvas-app-add-classic-designer.md
+                - name: Edición de una aplicación de lienzo insertada
+                  href: ./model-driven-apps/embedded-canvas-app-edit-classic-designer.md
+                - name: Personalización del tamaño y la orientación de la pantalla
+                  href: ./model-driven-apps/embedded-canvas-app-customize-screen.md
                 - name: Acciones predefinidas en el formulario de host
                   href: ./model-driven-apps/embedded-canvas-app-actions.md
+                - name: Control ModelDrivenFormIntegration
+                  href: ./model-driven-apps/embedded-canvas-app-properties-actions.md
                 - name: Compartir una aplicación de lienzo insertada
                   href: ./model-driven-apps/share-embedded-canvas-app.md
                 - name: Instrucciones para aplicaciones de lienzo insertadas
                   href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+                - name: Migración de lienzos insertados a partir de la versión preliminar pública
+                  href: ./model-driven-apps/embedded-canvas-app-migrate-from-preview.md
             - name: Inserción de un informe de Power BI en un formulario
               href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
             - name: Trabajar con vistas
@@ -954,6 +972,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: Utilizar temas para aplicar la marca de organización
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: Adición de informes a una aplicación
+          href: ./model-driven-apps/add-reporting-to-app.md
     - name: Validar y publicar una aplicación
       href: ./model-driven-apps/validate-app.md
     - name: Compartir una aplicación
