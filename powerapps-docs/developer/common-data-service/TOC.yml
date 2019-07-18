@@ -26,6 +26,8 @@
           href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
         - name: Usar una combinación externa izquierda en FetchXML para consultar registros "not in"
           href: use-fetchxml-left-outer-join-query-records-not-in.md
+        - name: Paginación de grandes conjuntos de resultados con FetchXML
+          href: org-service/page-large-result-sets-with-fetchxml.md
     - name: Consultas guardadas
       href: saved-queries.md
     - name: Consultar datos jerárquicos

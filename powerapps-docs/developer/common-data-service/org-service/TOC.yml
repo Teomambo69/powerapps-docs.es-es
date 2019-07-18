@@ -46,8 +46,6 @@
               href: use-left-outer-join-queryexpression-query-records-not-in.md
             - name: Uso de la clase QueryByAttribute
               href: use-querybyattribute-class.md
-            - name: Paginación de grandes conjuntos de resultados con FetchXML
-              href: page-large-result-sets-with-fetchxml.md
     - name: Creación de entidades
       href: entity-operations-create.md
     - name: Recuperación de una entidad
