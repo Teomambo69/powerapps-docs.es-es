@@ -6,22 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 03/18/2018
+ms.date: 07/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 6a8432e93f854b1c0794512da42ef25c9aa02adc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: cfc849574153ea4ab983112528a91974d80dea7f
+ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528605"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68308747"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
 
-PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene tres componentes principales:
+PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene cuatro componentes principales:
 
 - [Las aplicaciones de lienzo](canvas-apps/getting-started.md) comienzan con la experiencia del usuario, diseñando una interfaz muy personalizada con la potencia de un lienzo en blanco y conectándola a uno de los 200 orígenes de datos para elegir. Se pueden compilar aplicaciones de lienzo para aplicaciones web, móviles y de tableta.
 - [Las aplicaciones controladas por modelos](model-driven-apps/model-driven-app-overview.md) empiezan con el modelo de datos y se compilan a partir de la forma de los datos y procesos de negocio fundamentales en Common Data Service para crear formularios, vistas y otros componentes. Las aplicaciones controladas por modelos generan automáticamente una interfaz de usuario excelente con capacidad de respuesta en todos los dispositivos.
+- [Los portales](portals/overview.md) comienzan a crear sitios web orientados hacia el exterior que permiten a los usuarios ajenos a la organización iniciar sesión con una amplia variedad de identidades, crear y ver datos en Common Data Service, o incluso examinar contenido de forma anónima.
 - [Common Data Service](common-data-service/data-platform-intro.md) es la plataforma de datos que viene con PowerApps y que permite almacenar y modelar los datos de negocio. Es la plataforma en la que se compilan las aplicaciones de Dynamics 365; si es un cliente de Dynamics, los datos ya están en Common Data Service.
 
 Intentar la creación de la primera aplicación es fácil. Tenemos un plan de evaluación de 30 días y un plan de la comunidad gratuito; obtenga más información sobre cuál es mejor para usted y empiece a trabajar.

@@ -1007,6 +1007,62 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Para desarrolladores
       href: ../developer/model-driven-apps/overview.md
+- name: Portales (versión preliminar)
+  items:
+    - name: ¿Qué son los portales de PowerApps?
+      href: ./portals/overview.md
+    - name: Diseño y compilación de un portal
+      items:
+        - name: Plantillas de portal
+          href: ./portals/portal-templates.md
+        - name: Creación de un portal
+          href: ./portals/create-portal.md
+        - name: Creación de un portal de Dynamics 365
+          href: ./portals/create-dynamics-portal.md
+        - name: Anatomía del diseñador de portales
+          href: ./portals/portal-designer-anatomy.md
+        - name: Exploradores web compatibles con el diseñador de portales
+          href: ./portals/supported-browser.md
+        - name: Creación y administración de páginas web
+          href: ./portals/create-manage-webpages.md
+        - name: Creación de una página
+          href: ./portals/compose-page.md
+        - name: Uso de plantillas
+          href: ./portals/work-with-templates.md
+    - name: Administración de portales existentes
+      href: ./portals/manage-existing-portals.md
+    - name: Configuración del sitio
+      href: ./portals/configure-site-settings.md
+    - name: Administración avanzada del portal
+      items:
+        - name: Información general
+          href: ./portals/admin/admin-overview.md
+        - name: Detalles del portal
+          href: ./portals/admin/portal-details.md
+        - name: Descarga de la clave pública del portal
+          href: ./portals/admin/get-public-key.md
+        - name: Visualización de los registros de errores del portal
+          href: ./portals/admin/view-portal-error-log.md
+        - name: Restablecimiento de un portal
+          href: ./portals/admin/reset-portal.md
+        - name: Cambio de la dirección URL base de un portal
+          href: ./portals/admin/change-base-url.md
+        - name: Activación del modo de mantenimiento
+          href: ./portals/admin/enable-maintenance-mode.md
+        - name: Configuración de la integración con Power BI
+          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Ejecución del comprobador del portal
+          href: ./portals/admin/portal-checker.md
+        - name: Renovación de la clave de autenticación del portal
+          href: ./portals/admin/manage-auth-key.md
+        - name: Configuración de la restricción de direcciones IP
+          href: ./portals/admin/ip-address-restrict.md
+        - name: Actualización al dominio de portales de PowerApps
+          href: ./portals/admin/update-portal-domain.md
+    - name: Problemas conocidos
+      href: ./portals/known-issues.md
+    - name: Preguntas más frecuentes sobre los portales de PowerApps
+      href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:

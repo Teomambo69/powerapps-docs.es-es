@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: b4832962165c9d275cbee9aa76ad1dc21e3d1d67
-ms.sourcegitcommit: ec05425ad7baf4102da95a071c11b5bb4381ed53
+ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
+ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229671"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313330"
 ---
 <div id="main"
    class="v2">
@@ -215,7 +215,7 @@ ms.locfileid: "68229671"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Los creadores de aplicaciones pueden crear rápidamente aplicaciones empresariales personalizadas sin escribir código para administrar datos críticos de su organización. Se pueden crear dos tipos de aplicaciones en PowerApps: <strong>aplicaciones de lienzo</strong> y <strong>aplicaciones basadas en modelos</strong>. <strong>Common Data Service</strong> es la plataforma de datos que permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Más información: <a href="/powerapps/maker">Crear aplicaciones</a>.</p>
+                           <p>Los creadores de aplicaciones pueden crear rápidamente aplicaciones empresariales personalizadas sin escribir código para administrar datos críticos de su organización. En PowerApps se pueden crear tres tipos de aplicaciones: <strong>Aplicaciones de lienzo</strong>, <strong>aplicaciones basadas en modelos</strong> y <strong>portales</strong>. <strong>Common Data Service</strong> es la plataforma de datos que permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Más información: <a href="/powerapps/maker">Crear aplicaciones</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -273,6 +273,28 @@ ms.locfileid: "68229671"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-themes-organization-branding">Usar temas para personalización de marca</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/share-model-driven-app">Share an app</a> (Compartir una aplicación)</p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">Distribuir una aplicación</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">Portales</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">¿Qué son los portales de PowerApps?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Creación de un portal</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Administración de portales existentes</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Administración de portales</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Preguntas más frecuentes sobre los portales de PowerApps</a></p>
                                  </div>
                               </div>
                            </div>
