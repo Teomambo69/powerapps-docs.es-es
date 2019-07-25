@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556744"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68474008"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -31,11 +31,11 @@ Si el conector ofrece tablas, agregue el origen de datos y luego seleccione la t
 
  ![Propiedad Items en orígenes de datos sin formato](./media/connections-list/ItemPropertyPlain.png)
 
-Puede especificar los datos que la aplicación recupera personalizando la propiedad **Items** del control que muestra los datos. Retomando el ejemplo anterior, puede ordenar o filtrar los datos de la tabla **Lecciones** utilizando ese nombre como argumento para las funciones **Search** y **SortByColumn**. En este gráfico, la fórmula en la que se establece la propiedad **Items** especifica que los datos se ordenan y filtran según el texto de **TextSearchBox1**. 
+Puede especificar los datos que recupera la aplicación personalizando la propiedad **elementos** del control que muestra los datos. Retomando el ejemplo anterior, puede ordenar o filtrar los datos de la tabla **Lecciones** utilizando ese nombre como argumento para las funciones **Search** y **SortByColumn**. En este gráfico, la fórmula en la que se establece la propiedad **Items** especifica que los datos se ordenan y filtran según el texto de **TextSearchBox1**. 
 
  ![Propiedad Items en orígenes de datos expandidos](./media/connections-list/ItemPropertyExpanded.png)
 
-Para obtener más información sobre cómo personalizar su fórmula con tablas, vea estos temas:
+Para obtener más información sobre cómo personalizar la fórmula con tablas, vea estos temas:
 
   [Información acerca de los orígenes de datos en PowerApps](working-with-data-sources.md)<br> 
   [Creación de una aplicación a partir de datos de Excel](get-started-create-from-data.md)<br> 
@@ -53,12 +53,12 @@ Si el conector facilita acciones, tiene que seleccionar el origen de datos del m
 
 Si tiene que controlar actualizaciones de datos personalizadas con conectores de acción, cree una fórmula que incluya la función **Patch**. En la fórmula, identifique la acción y los campos que quiere enlazar a la acción.  
 
-Para obtener más información sobre cómo personalizar la fórmula para actualizaciones personalizadas, vea estos temas:
+Para obtener más información sobre cómo personalizar la fórmula para las actualizaciones personalizadas, vea estos temas:
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps no funciona con el esquema dinámico**. El esquema dinámico frase hace referencia a la posibilidad de que la misma acción puede devolver una tabla con diferentes columnas diferentes. Las condiciones que pueden hacer que las columnas en las tablas que se diferencian incluir los parámetros de entrada de acción, el usuario o rol que se está ejecutando la acción y el grupo en el que el usuario está trabajando, entre otros. Por ejemplo, procedimientos almacenados de SQL Server pueden devolver columnas diferentes si se ejecutan con diferentes entradas. Para las acciones con el esquema dinámico, se muestra la documentación del conector **las salidas de esta operación son dinámicas.** como el valor devuelto. En cambio, Microsoft Flow funciona con el esquema dinámico y puede proporcionar una solución alternativa para su escenario.
+>  **PowerApps no funciona con el esquema dinámico**. La frase esquema dinámico hace referencia a la posibilidad de que la misma acción pueda devolver una tabla diferente con columnas diferentes. Entre otras, las condiciones que pueden hacer que las columnas de las tablas difieran son los parámetros de entrada de la acción, el usuario o el rol que ejecuta la acción y el grupo en el que está trabajando el usuario. Por ejemplo, SQL Server procedimientos almacenados pueden devolver diferentes columnas si se ejecutan con diferentes entradas. En el caso de las acciones con esquema dinámico, la documentación del conector muestra **que las salidas de esta operación son dinámicas.** como valor devuelto. Por el contrario, Microsoft Flow funciona con el esquema dinámico y podría proporcionar una solución alternativa para su escenario.
 
 ## <a name="popular-connectors"></a>Conectores populares
 
