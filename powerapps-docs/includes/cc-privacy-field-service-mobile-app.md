@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fe2aa8cc0002bdd2531b1e2014a2fb19cd122e4d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61583015"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225297"
 ---
 Si instala y usa la aplicación móvil [!INCLUDE[pn_fieldservice_mobile_app_long](pn-fieldservice-mobile-app-long.md)] en un dispositivo móvil, los usuarios dan su consentimiento para la transmisión del identificador de dispositivo, del identificador de usuario final asignado y del identificador asignado de la organización a Microsoft y Resco.net, Inc. para fines de prestación de servicios y comprobación de que el software tiene la licencia adecuada.  
 &nbsp;<br />

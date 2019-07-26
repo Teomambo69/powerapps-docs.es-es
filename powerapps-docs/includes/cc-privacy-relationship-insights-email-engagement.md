@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 252f09737dbf55309a64ef5d02d479fde0e61c0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61585227"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224857"
 ---
 Al habilitar Interacción por correo electrónico, una característica de Inteligencia integrada, cuando un correo electrónico marcado con la configuración **Follow** (Seguir) se envía desde [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], la información sobre las interacciones de los destinatarios con el correo electrónico se recopilará y almacenará en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] con el fin de calcular los KPI de actividad de destinatario y la interacciones en los correos electrónicos "seguidos".  
   

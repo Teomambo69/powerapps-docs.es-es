@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034838"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67457209"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>Uso de Microsoft Flow para automatizar procesos
 
@@ -34,7 +34,7 @@ Conexión con Microsoft Flow desde la aplicación para administrar los flujos.
 > [!NOTE]
 > Para administrar y ejecutar Microsoft Flow desde su aplicación, Microsoft Flow debe estar habilitado en la configuración del sistema para su organización. Más información:  [Flujos de su organización](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. En la barra de comandos, seleccione **flujo**.  
+1. En la barra de comandos, seleccione **Flow**.  
   
    > [!div class="mx-imgBorder"]
    > ![Menú de Microsoft Flow](media/flow.png "Microsoft Flow menu") 
@@ -47,7 +47,7 @@ Conexión con Microsoft Flow desde la aplicación para administrar los flujos.
   
    -   Seleccione **Iniciar sesión en Flow** para conectar con Microsoft Flow y mostrar los flujos que tiene a su disposición para ejecutar. Esto solo aparece si en ese momento no ha iniciado sesión en Microsoft Flow.   
 
-    Para obtener información sobre cómo crear un flujo, vea [Introducción a Microsoft Flow](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow).  
+    Para obtener información sobre cómo crear un flujo, vea [Introducción a Microsoft Flow](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow).  
     
  
     

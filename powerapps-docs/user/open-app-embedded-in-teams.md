@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 01/18/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 34fc4f9603ebfcb9944b871f211a6b1541235ed5
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850470"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321664"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
@@ -84,9 +84,9 @@ En la aplicación de escritorio de Microsoft Teams:
 
 * Las aplicaciones tienen que cargar contenido, como imágenes y archivos .pdf a través de una conexión segura (https).
 * No todos los sensores, como **Aceleración**, **Brújula**, y **Ubicación**, son compatibles.
-* Se admiten únicamente estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
+* Solo se admiten estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
 
-## <a name="clean-up-resources"></a>Limpiar los recursos
+## <a name="clean-up-resources"></a>Limpieza de recursos
 
 Para quitar la aplicación del canal, haga clic en la pestaña **Presentación de productos** > **Quitar**.
 

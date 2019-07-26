@@ -1,5 +1,13 @@
-Los usuarios de Dynamics 365 Online con licencia y con determinados roles de seguridad (director general - administrador de negocio, jefe de ventas, comercial, administrador del sistema, personalizador del sistema y vicepresidente de ventas) están autorizados automáticamente a acceder al servicio con Dynamics 365 para teléfonos y con otros clientes.  
+---
+ms.openlocfilehash: 0dce4a00f3dc6834fa6ebe60c8b0659ebd397a82
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67213258"
+---
+Los usuarios con licencia de Dynamics 365 Online con roles de seguridad específicos (presidente, director general, director de ventas, vendedor, administrador del sistema, personalizador del sistema y vicepresidente de ventas) están automáticamente autorizados a acceder al servicio utilizando Dynamics 365 para teléfonos, así como para otros clientes.  
   
- Un administrador tiene control total (en el nivel de rol de seguridad o entidad de usuario) sobre la capacidad de acceso y el nivel de acceso autorizado asociado al cliente de teléfono. Los usuarios pueden acceder a Dynamics 365 (online) mediante Dynamics 365 para teléfonos, y los datos de los clientes se almacenarán en caché en el dispositivo donde se ejecute el cliente específico.  
+ Un administrador tiene control total (a nivel de entidad o rol de seguridad de usuario) sobre la capacidad de acceso y el nivel de acceso autorizado asociado con el cliente de teléfono. Los usuarios pueden acceder a Dynamics 365 (en línea) mediante Dynamics 365 para teléfonos, y los datos del cliente se almacenan en caché en el dispositivo que ejecuta el cliente específico.  
   
- En función de la configuración específica en los niveles de seguridad y entidad de usuario, los tipos de datos de clientes que se pueden exportar desde Dynamics 365 (online) y almacenar en caché en el dispositivo de un usuario final incluyen datos de registro, metadatos de registro, datos de entidad, metadatos de entidad y lógica de negocios.
+ Según las configuraciones específicas a nivel de seguridad de usuario y entidad, los tipos de datos de cliente que pueden exportarse desde Dynamics 365 (en línea) y almacenarse en caché en el dispositivo de un usuario final incluyen datos de registro, metadatos de registro, datos de entidad, metadatos de entidad y lógica de negocio.

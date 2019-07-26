@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843375"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61528628"
 ---
 # <a name="export-and-import-resources"></a>Exportar e importar recursos
 Si ha creado varios entornos para admitir el desarrollo de la base de datos y las aplicaciones, debe mover los cambios de un entorno a otro. Puede usar **Exportar recursos** e **Importar recursos** para mover recursos entre entornos.
@@ -49,7 +49,7 @@ El paquete de exportación contendrá todos los cambios de **entidades y listas 
 5. Incluya los recursos relacionados si es necesario:
    1. Si detectamos recursos relacionados, le mostraremos una lista con una selección previa.
    2. Para excluir todos los recursos relacionados, haga clic en la casilla del encabezado o anule la selección de cada recurso individualmente.
-   3. Haga clic en **Siguiente**.
+   3. Haga clic en **Next**.
 6. Agregue un **Nombre** para el paquete exportado.
 7. También puede personalizar las acciones de configuración para que se realicen al importar los recursos:
    1. Para cada recurso, haga clic en **Configuración de importación** para ver un cuadro de diálogo.

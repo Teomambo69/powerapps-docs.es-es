@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 308e36938c673a5f6ba83be02591a7199af20432
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444441"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61529571"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
