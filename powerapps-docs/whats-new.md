@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 01/04/2019
+ms.date: 06/17/2019
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -16,12 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 088804f429e23a8824c3c132c3011308935a5b66
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 88ad7ca8770520bdc45016a70af6a3623bcc7797
+ms.sourcegitcommit: b8fa5cafa443c2affa735f68b892039604579be4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290843"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67152625"
 ---
 # <a name="whats-new-in-powerapps"></a>Novedades de PowerApps
 
@@ -36,11 +36,11 @@ Para obtener más detalles sobre cómo buscar información en las notas de la ve
 > [!NOTE]
 > Las versiones se implementan durante varios días. Es posible que las funcionalidades nuevas o actualizadas no se muestren inmediatamente.
 
-## <a name="release-notes"></a>Notas de la versión
+## <a name="release-plan"></a>Plan de versión
 
 Para información sobre las características nuevas que se van a publicar en los próximos meses y que puede usar para el planeamiento, consulte:
-- [Notas de la versión de octubre de 2018](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)
 - [Notas de la versión de abril de 2019](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
+- [Plan de versión 2 de 2019](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 676ad765672e4fceff71c90fe07eb348b911508c
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61526249"
+---
 # <a name="microsoft-powerapps-documentation"></a>Documentación de Microsoft PowerApps
 
 Este es el repositorio de GitHub para la documentación técnica del producto de **PowerApps**. Esta documentación se publica en [https://docs.microsoft.com/powerapps](https://docs.microsoft.com/powerapps).

@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9f951167f56ffd3d211182a89a21d54916ee6b6e
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851893"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61531950"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
@@ -41,13 +41,13 @@ Para que sea más fácil encontrar la aplicación, abra el menú **PowerApps** y
 
 Los siguientes filtros están disponibles:
 
-* **Todas las aplicaciones**: todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las que otros compartieron con usted.
+* **Todas las aplicaciones**: Muestra todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las aplicaciones que otros compartieron con usted.
 
-* **Mis aplicaciones**: las aplicaciones que ha ejecutado al menos una vez.
+* **Mis aplicaciones**: Muestra las aplicaciones que ha ejecutado al menos una vez.
 
-* **Aplicaciones de ejemplo**: aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudar a explorar las posibilidades de diseño.
+* **Aplicaciones de ejemplo**: Muestra aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudarle a explorar las posibilidades de diseño.
 
-* **Favoritos**: muestra las aplicaciones que se han marcado haciendo clic en los puntos suspensivos (...) en el icono de la aplicación y, después, en **Favoritos**. Para quitar una aplicación de esta lista, pulse los puntos suspensivos (...) en el icono de la aplicación y, después, pulse **Quitar de Favoritos**.
+* **Favoritos**: Muestra las aplicaciones que ha marcado pulsando el botón de puntos suspensivos (...) en el icono de la aplicación y, a continuación, puntee en **favorito**. Para quitar una aplicación de esta lista, pulse los puntos suspensivos (...) en el icono de la aplicación y, después, pulse **Quitar de Favoritos**.
 
     ![Marcar como favorito](./media/run-app-client/favorite.png)
 
@@ -57,7 +57,7 @@ Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fec
 
 Si conoce el nombre de la aplicación que quiere ejecutar, pulse el icono de búsqueda en la parte superior de Powerapps y, después, escriba parte del nombre en el cuadro de búsqueda.
 
-![Search](./media/run-app-client/search.png)
+![Buscar](./media/run-app-client/search.png)
 
 Si filtró las aplicaciones, se buscará en la lista filtrada.
 
@@ -71,7 +71,7 @@ Si es la primera vez que usa PowerApps, en una pantalla se muestra el gesto de d
 ## <a name="give-consent"></a>Dar consentimiento
 Si una aplicación requiere una conexión a un origen de datos o permiso para usar las funcionalidades del dispositivo (como la cámara o los servicios de ubicación), debe dar su consentimiento antes de usar la aplicación. Habitualmente, solo se le solicitará la primera vez.
 
-![Conexión](./media/run-app-client/app-connection.png)
+![Connection](./media/run-app-client/app-connection.png)
 
 ## <a name="pin-an-app-to-the-home-screen"></a>Anclar una aplicación a la pantalla de inicio
 Puede anclar una aplicación a la pantalla de inicio del dispositivo para un acceso rápido. Pulse los puntos suspensivos (...) del icono de la aplicación, pulse **Anclar a página principal** y, luego, siga las instrucciones que aparecen.

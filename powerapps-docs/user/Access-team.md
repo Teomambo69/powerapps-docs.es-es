@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444418"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63318529"
 ---
 # <a name="share-records-using-access-team"></a>Compartir registros con Access Team
 
@@ -35,7 +35,7 @@ La característica de equipos de acceso concede acceso a registros mediante el u
   > [!div class="mx-imgBorder"]
   > ![Mis cuentas activas](media/AccessTeam1.png "My active accounts")
 
-3. En la sección de **los miembros del equipo de acceso**, seleccione **Más comandos** (**…**) > **Agregar usuario**.
+3. En la sección de **los miembros del equipo de acceso**, seleccione **Más comandos** ( **…** ) > **Agregar usuario**.
 
   > [!div class="mx-imgBorder"]
   > ![Agregar usuario al equipo de acceso](media/AccessTeam2.png "Add user to Access Team")

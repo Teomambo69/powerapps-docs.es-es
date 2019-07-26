@@ -1,7 +1,15 @@
-Para usar Microsoft Dynamics 365 para Outlook, debe iniciar sesión con sus credenciales (una dirección de correo electrónico y una contraseña). Puede elegir guardar esta información localmente para que no se le vuelva a solicitar cada vez que abra Outlook. Si elige guardar esta información localmente, Dynamics 365 para Outlook se conectará de forma automática a Microsoft Dynamics 365 (online) cada vez que abra Outlook.  
+---
+ms.openlocfilehash: f569037c328b44e5e55212329d2f607d95a03724
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225399"
+---
+Si quiere usar Microsoft Dynamics 365 para Outlook, debe iniciar sesión con sus credenciales (una dirección de correo electrónico y una contraseña). Puede guardar esta información localmente para que no tenga que escribir las credenciales cada vez que abre Outlook. Si decide guardar esta información localmente, Dynamics 365 para Outlook se conectará de manera automática a Microsoft Dynamics 365 (en línea) cada vez que abra Outlook.  
   
- Una vez que inicie sesión y use Dynamics 365 para Outlook por primera vez, la conexión entre su equipo y Dynamics 365 (online) siempre estará abierta mientras tenga acceso a Internet. Solo puede desconectar la conexión entre el equipo y Dynamics 365 usando una opción de configuración, pero si se desconecta la conexión, Dynamics 365 para Outlook puede presentar un rendimiento menor.  
+ Después de que inicia sesión y usa Dynamics 365 para Outlook por primera vez, la conexión entre el equipo y Dynamics 365 (en línea) siempre estará abierta cuando tenga acceso a Internet. Puede elegir desactivar la conexión entre el equipo y Dynamics 365 solo mediante una opción de configuración, pero si la desactiva, el rendimiento de Dynamics 365 para Outlook podría disminuir.  
   
- Si usa Dynamics 365 para Outlook para realizar un seguimiento del correo electrónico, el hilo de correo electrónico será visible para los usuarios de la organización que tengan permiso para verlo.  
+ Si usa Dynamics 365 para Outlook para hacer seguimiento del correo electrónico, el hilo de correo será visible para los usuarios de la organización que tengan los permisos para verlo.  
   
-Por cada correo electrónico que reciba, Dynamics 365 para Outlook enviará a Dynamics 365 (online) la dirección de correo electrónico del remitente y del destinatario, y la línea de asunto del mensaje. Esto permite a Dynamics 365 (online) validar si el servicio de Dynamics 365 (online) debe almacenar o no un mensaje de correo específico. Cuando realiza el seguimiento de un elemento, el servicio de Dynamics 365 mantiene una copia del mismo, que será visible para los demás usuarios de su organización que tengan los permisos adecuados. Si detiene el seguimiento de un elemento, esa copia se elimina automáticamente de Dynamics 365 (online) solo si es el propietario del elemento.
+Para cada correo que reciba, Dynamics 365 para Outlook enviará la dirección de correo electrónico del remitente, la dirección de correo electrónico del destinatario y la línea de asunto del mensaje a Dynamics 365 (en línea). Esto permite que Dynamics 365 (en línea) valide si un correo determinado se debe almacenar o no con el servicio de Dynamics 365 (en línea). Cuando hace seguimiento de un elemento, el servicio de Dynamics 365 conserva una copia del elemento, el que será visible para los demás usuarios de la organización que tengan los permisos correspondientes. Cuando deja de hacer seguimiento de un elemento, esa copia se elimina automáticamente de Dynamics 365 (en línea) solo si el elemento es de su propiedad.
