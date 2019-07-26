@@ -17,11 +17,11 @@ search.app:
 - D365CE
 - D365CE
 ms.openlocfilehash: 37e9602d48bbfbb802afefa0f6d47fad241dc6f5
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491536"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321641"
 ---
 # <a name="import-data"></a>Importar datos
 

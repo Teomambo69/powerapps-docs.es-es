@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 175216611d77ad249e3ddb7a9bd72c29fdfcad73
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251602"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61556008"
 ---
 # <a name="work-with-business-processes"></a>Trabajar con procesos de negocio
 

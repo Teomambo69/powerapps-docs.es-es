@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e79412c79a3b2a6d5c7f7f51c8cfcad8e4f5cc78
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290973"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456981"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Preguntas frecuentes sobre las actividades y la pared de escala de tiempo  
 
@@ -38,7 +38,7 @@ Sí. Puede agregar actividades a entidades que son de solo lectura, como notas, 
 
 ## <a name="are-html-tags-supported-in-notes"></a>¿Se admiten etiquetas HTML en **Notas**?
 
-No. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega <TAG> </TAG> a un campo de nota, se mostrará como <TAG_XXX="XX"> </TAG>.
+No. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega `<TAG> </TAG>` a un campo de nota, se mostrará como. `<TAG_XXX="XX"> </TAG>`
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>¿Cómo puedo mejorar el rendimiento en la pared de escala de tiempo?
 

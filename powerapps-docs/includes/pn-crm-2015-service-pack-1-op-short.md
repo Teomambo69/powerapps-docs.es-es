@@ -1,1 +1,9 @@
-Service Pack 1 de CRM 2015 (local)
+---
+ms.openlocfilehash: d660dfc53776bfc61b830d7ada59bb6054b7fca7
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67222426"
+---
+CRM 2015 Service Pack 1 (local)
