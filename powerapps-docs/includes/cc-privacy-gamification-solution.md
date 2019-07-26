@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61582980"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212514"
 ---
 Al instalar y habilitar la solución [!INCLUDE[pn_gamification](pn-gamification.md)], los identificadores de cuenta del usuario (como nombre, apellido y dirección de correo electrónico) se almacenarán en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para permitir la autorización con el servicio [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], que se hospeda en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Esto se aplica a todos los usuarios que estén habilitados en el servicio [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] por su administrador. La solución [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] envía datos de indicadores clave de rendimiento (KPI), configurados por un administrador, al servicio [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] y esos datos se almacenan en almacenamiento estructurado y almacenamiento de blobs de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)].  El avatar, los reconocimientos personalizados y el logotipo de la compañía se almacenan en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], pero la información no se devuelve a [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
   

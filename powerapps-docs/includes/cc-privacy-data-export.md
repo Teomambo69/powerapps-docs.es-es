@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e9b0446c2fb09cad33f5a3ae4bb69103f7d07d70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61586634"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212643"
 ---
 Al utilizar el servicio de exportación de datos, cuando se activa un perfil de exportación de datos desde [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)], los datos de las entidades agregadas al perfil se envían a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. La sincronización inicial incluye todos los datos asociados con las entidades agregadas al perfil de exportación, pero a partir de entonces la sincronización solo incluye nuevos cambios, que se envían continuamente al servicio de exportación de datos. Los datos enviados al servicio de exportación de datos se almacenan temporalmente en [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] y [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage, se procesan en [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)] y finalmente se sincronizan (insertan, actualizan o eliminan) con la base de datos de destino especificada en la suscripción [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Cuando se hayan sincronizado los datos, se eliminan de [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] y [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage. Si se produce un error durante la sincronización de datos, los datos mínimos correspondientes al tipo de entidad, al identificador de registro y a la hora de sincronización se almacenan en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage para permitir la descarga de una lista de registros que no se actualizaron.  
   

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: ce9db35844f46e9779055ec30dcba0f9459c3a16
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61583491"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225795"
 ---
 Al instalar [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)], cuando proporcione la información de su suscripción [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], se implementarán los recursos [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] necesarios (enumerados a continuación) y su instancia [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] enviará datos (como comandos y registros) a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para habilitar escenarios compatibles con IoT que registren dispositivos y luego envíen y reciban comandos a los dispositivos registrados. Un administrador puede desinstalar el servicio de campo conectado para eliminar la funcionalidad y después ir a [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Portal para administrar cualquier servicio relacionado [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] que ya no sea necesario.  
   
@@ -26,7 +26,7 @@ Al instalar [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-se
   
  [IoT Hub](https://azure.microsoft.com/services/iot-hub/)  
   
- Los servicios de campo conectados utilizan IoT Hub para administrar el estado de los dispositivos y recursos registrados. Además, IoT Hub envía comandos y notificaciones a los dispositivos conectados y realice un seguimiento de la entrega de los mensajes con acuses de recibo. Los mensajes de dispositivo se envían de una forma duradera para hospedar dispositivos conectados intermitentemente.  
+ Los servicios de campo conectados utilizan IoT Hub para administrar el estado de los dispositivos y recursos registrados. Además, IoT Hub envía comandos y notificaciones a los dispositivos conectados y realice un seguimiento de la entrega de los mensajes con acuses de recibo. Los mensajes de dispositivo se envían de forma duradera para alojar dispositivos conectados intermitentemente.  
   
  **Simulador**  
   

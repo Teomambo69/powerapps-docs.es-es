@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850039"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61526503"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Visualización de informes de análisis de una aplicación
 ¿Ha compilado una aplicación y la ha compartido en su organización?  ¿Tiene curiosidad por saber cuántos de sus compañeros de trabajo la usan a diario?
@@ -53,7 +53,7 @@ Sí, para descargar un archivo .csv con los datos de cualquiera de los gráficos
     ![Descargar datos del gráfico](./media/app-analytics/analytics-download.png)
 
 ## <a name="are-there-going-to-be-any-other-reports"></a>¿Va a haber otros informes?
-Sí De hecho estamos planeando desarrollar informes similares sobre el rendimiento de la aplicación y el informe de errores.
+?! De hecho estamos planeando desarrollar informes similares sobre el rendimiento de la aplicación y el informe de errores.
 
 Si tiene comentarios, preguntas o solicitudes concretas, use el [foro PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
 
