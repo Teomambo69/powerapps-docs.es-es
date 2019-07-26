@@ -1001,6 +1001,16 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Creación de ayuda interactiva
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: Transición de aplicaciones de cliente web
+      items:
+        - name: Introducción rápida a transiciones
+          href: ./model-driven-apps/transition-web-app.md
+        - name: Introducción rápida al uso de un entorno existente para la transición
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: Cuaderno de estrategias de interfaz unificada
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: Enfoque de una transición de interfaz unificada
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: Accesibilidad en el diseñador de aplicaciones de PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Personalizar Dynamics 365 App for Outlook
