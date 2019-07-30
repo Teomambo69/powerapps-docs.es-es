@@ -29,7 +29,7 @@ Cambie la configuración de pantalla de una aplicación para que se adapte a sus
     
 ## <a name="to-set-personal-options"></a>Para establecer las opciones personales  
   
-1.  En la esquina superior derecha de la pantalla, seleccione el botón Opciones del botón **configuración** del botón Opciones de ![powerapps]de(media/options-button.png "powerapps") .  
+1.  En la esquina superior derecha de la pantalla, seleccione el botón Opciones del botón **configuración** del botón Opciones de ![powerapps](media/options-button.png "de powerapps") .  
   
 2.  Seleccione **configuración**de personalización.  
   
