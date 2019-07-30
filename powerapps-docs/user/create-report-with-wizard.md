@@ -66,12 +66,12 @@ Todos los informes que se crean mediante el Asistente para informes son informes
 7. Seleccione el **tipo de registro** y la **columna** de los datos que desea que se agrupen en el informe. Cuando haya terminado de realizar las selecciones, haga clic en **Aceptar**.
 
     > [!div class="mx-imgBorder"]
-    > ![pantalla] de agrupación de DD (media/report_wizard_5.png "Agregar pantalla") de agrupación
+    > ![pantalla](media/report_wizard_5.png " de agrupación de DD Agregar pantalla") de agrupación
   
 8. Seleccione **haga clic aquí para agregar una columna** a las columnas de datos relacionadas con el tipo de registro que eligió en el paso anterior.  
 
     > [!div class="mx-imgBorder"]
-    > ![Agregar pantalla] de agrupación (media/report_wizard_6.png "Agregar pantalla") de agrupación
+    > ![Agregar pantalla](media/report_wizard_6.png " de agrupación Agregar pantalla") de agrupación
 
 9. En la pantalla **Agregar columna** , elija los datos que desea que aparezcan para la columna y, a continuación, seleccione **Aceptar**. 
 

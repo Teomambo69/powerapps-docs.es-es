@@ -27,7 +27,7 @@ ms.locfileid: "61563303"
 La interfaz unificada para aplicaciones controladas por modelos proporciona una experiencia de usuario coherente y accesible en todos los dispositivos, ya sea en un equipo de escritorio, portátil, tableta o teléfono. Las aplicaciones se escalan mediante el reflujo de los componentes en la pantalla. El diseño con capacidad de respuesta se adapta a su entorno en función del tamaño de la pantalla, por lo que se puede mostrar más información en el espacio disponible.
 
 > [!div class="mx-imgBorder"]
-> La ![interfaz unificada se adapta a la pantalla] La (media/Reflow.png "interfaz unificada se adapta a la pantalla")
+> La ![interfaz unificada se adapta a la pantalla](media/Reflow.png " La interfaz unificada se adapta a la pantalla")
 
 ## <a name="navigation"></a>Explora
 
