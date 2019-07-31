@@ -822,6 +822,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Agregar o editar componentes de una aplicación
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: Adición de la entidad de equipo como una opción de búsqueda
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: Trabajar con fórmulas
               href: ./model-driven-apps/create-design-forms.md
               items:
