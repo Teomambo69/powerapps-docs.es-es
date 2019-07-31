@@ -67,7 +67,7 @@ Los gráficos proporcionan una vista rápida de cómo se realiza el seguimiento 
 
 -   Mantenga el mouse sobre el gráfico para ver una información sobre herramientas que proporciona información rápida sobre esa área del gráfico.
 -   Haga clic en el área de un gráfico para ver una vista de cuadrícula con más detalles sobre los datos del gráfico.
--   Para expandir un gráfico, haga clic en(media/expandviewbutton.png "el botón Expandir") gráfico expandir![vista] **del gráfico**expandir vista del gráfico.
+-   Para expandir un gráfico, haga clic enel botón **Expandir gráfico** expandir![vista](media/expandviewbutton.png " del gráfico") expandir vista del gráfico.
 -   Para ver los registros del gráfico o actualizar el gráfico, seleccione ![más comandos](media/MoreButton.png "más") comandos y, a continuación, elija una acción: **Actualizar** o **Ver registros**.
      
      > [!div class="mx-imgBorder"]
