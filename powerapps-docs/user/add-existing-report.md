@@ -57,7 +57,7 @@ Para obtener información sobre cómo crear un informe personalizado, consulte l
   
    2.  El cuadro de texto **Informe primario** muestra el informe primario del informe actual, si existe.  
   
-   3. **Categorías**. Elija el botón de botón de puntos(media/ellipsis-button.png "suspensivos") del ![botón]de puntos suspensivos **para este campo** y, a continuación, especifique las categorías que desea incluir en este informe.  
+   3. **Categorías**. Elija el botón de botón de puntos suspensivos del ![botón](media/ellipsis-button.png "de puntos suspensivos") **para este campo** y, a continuación, especifique las categorías que desea incluir en este informe.  
   
    4. **Tipos de registro relacionados**. Para que el informe aparezca en la lista de informes en una página para tipos de registros específicos, elija el botón de puntos suspensivos del botón de puntos ![](media/ellipsis-button.png "suspensivos") de los puntos suspensivos **para este campo** y, a continuación, seleccione tipos de registro.  
   
