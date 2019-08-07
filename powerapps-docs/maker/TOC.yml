@@ -51,6 +51,8 @@
               href: ../user/assign-or-share-records.md
             - name: Compartir registros con Access Team
               href: ../user/Access-team.md
+            - name: Agregar un rol de conexión
+              href: ../user/add-connection-role.md
             - name: Desactivar cuentas o contactos
               href: ../user/deactivate-activate-account-contact.md
             - name: Realizar un seguimiento del progreso con gráficos y paneles
@@ -1242,6 +1244,8 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: Entidades restringidas que requieren licencias de Dynamics 365
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: 'Integración de SharePoint, OneNote y OneDrive'
+      href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: Crear un informe de Power BI
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Traducir texto de campos y entidades personalizado
