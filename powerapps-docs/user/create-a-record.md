@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 3/13/2019
+ms.date: 8/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,24 +15,26 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: e21c9763e42dd45c7bed4691dfc27899263bef00
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61545099"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783613"
 ---
 # <a name="create-a-new-record"></a>Creación de un registro
 
 
-El comando **Crear un registro** o **Creación rápida** facilita y agiliza el proceso para agregar casi cualquier tipo de información al sistema. El comando está en la barra de navegación, por lo que estará disponible siempre que necesite agregar información al sistema. Cuando use esta opción, solo tendrá que completar unos pocos campos. Más adelante, cuando tenga más tiempo o información, podrá agregar más datos.  
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+El comando **Crear un registro** o **Creación rápida** facilita y agiliza el proceso para agregar casi cualquier tipo de información al sistema. El comando está en la barra de navegación, por lo que estará disponible siempre que necesite agregar información al sistema. También puede guardar un registro y crear uno nuevo directamente desde el formulario **creación rápida** .
 
 > [!NOTE]
 > La opción **creación rápida** solo está disponible para los registros habilitados por el administrador.
     
 1. En la barra de navegación, seleccione el **signo más**![Botón Crear registro](media/create-record-button.png "Botón Crear registro") y elija el elemento que quiera.  
   
-2.  Rellene los campos y seleccione **Guardar y cerrar**.  
+2.  Rellene los campos y seleccione **Guardar y cerrar**. O bien, para guardar y crear otro registro, seleccione la flecha hacia abajo y, a continuación, seleccione **guardar & crear nuevo**.
 
   ![Guardado de un registro](media/quick_create.png "Guardado de un registro")
   

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 08/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,15 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3894efdf379c5568ae6f95baa87e9ec77dae5d8
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 11d9318ac06e264b6b917c81358d060d97864eb8
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61564415"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783558"
 ---
 # <a name="set-personal-options"></a>Establecer las opciones personales
 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Cambie la configuración de pantalla de una aplicación para que se adapte a sus preferencias. Por ejemplo, puede elegir la página que desea ver en cuanto inicie sesión en la aplicación. También puede personalizar muchas otras opciones, como el idioma, la moneda y la zona horaria.  
     
@@ -111,6 +113,7 @@ Cambie la configuración de pantalla de una aplicación para que se adapte a sus
 |                                                                                           Configurar reglas de seguimiento de carpetas                                                                                           |                                                                                                                                        Configure carpetas para que realicen un seguimiento automático del correo electrónico entrante.                                                                                                                                          |
 |                                                           **Creación automática de registros en Dynamics 365**                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                       Crear                                                                                                        |                                                                                                                                                                                 Seleccione esta opción para permitir que Dynamics 365 cree clientes potenciales o contactos automáticamente a partir de la información de los mensajes de correo electrónico de seguimiento.                                                                                                                                                                                  |
+|                                                                                                  Mostrar correos electrónicos como conversación en la escala de tiempo                                                                                                 |                                                                                                                                                                                                                                                    Seleccione esta lista para mostrar los mensajes de correo electrónico en un subproceso de conversación, la forma en que muchas aplicaciones de correo electrónico funcionan al ver los mensajes de correo electrónico en una conversación.                                                                                                                                                                                                                                                    |
 |                                                                                                  Ver el buzón de correo                                                                                                  |                                                                                                                                                                                                                                                    Seleccione este vínculo para ver los detalles del buzón.                                                                                                                                                                                                                                                    |
   
 ## <a name="privacy-tab-options"></a>Opciones de la pestaña privacidad  

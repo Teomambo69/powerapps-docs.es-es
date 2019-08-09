@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/26/2018
+ms.date: 8/02/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,14 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 308e36938c673a5f6ba83be02591a7199af20432
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61529571"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783626"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un seguimiento de todas las comunicaciones con un cliente o un contacto. Por ejemplo, puede tomar notas, agregar publicaciones, agregar una tarea, enviar un correo electrónico, agregar detalles de llamada telefónica o fijar citas. El sistema automáticamente agrega una marca de tiempo a cada actividad y muestra quién la creó. Usted y otras personas de su equipo pueden desplazarse por las actividades para ver el historial mientras trabajan con un cliente. 
 
@@ -30,6 +32,7 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Si está configurado el campo **Referente a** de una actividad, la actividad aparece en el registro con el que está asociada. 
 - También puede elegir el panel de filtro para filtrar las actividades por tipo de registro y fecha. 
 - Cuando se crea una nueva actividad, obtendrá una notificación sobre **lo que se perdió** en el muro de la **escala de tiempo**.
+- Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
   > ![Vista de la escala de tiempo de actividades en PowerApps](media/TimelineViewOfActivity.png "Timeline view of activities in PowerApps")  
@@ -95,6 +98,17 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 5. Para usar una plantilla para el cuerpo del correo electrónico, en la barra de comandos, haga clic en **Insertar plantilla** y, a continuación, seleccione la plantilla.   
   
 6. Cuando haya terminado de rellenar el formulario, seleccione **Enviar**. 
+
+
+    > [!NOTE]
+    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **Personalización configuración** > de la pestaña**correo electrónico** y seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](set-personal-options.md).
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecer opciones personales](media/emailsettings1.png "Establecer opciones personales")
+   
+    > [!div class="mx-imgBorder"]
+    > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
+
   
 ## <a name="add-an-appointment"></a>Adición de una cita  
 
@@ -118,10 +132,14 @@ También puede agregar notas fácilmente en el área de actividades.
 
 3. Cuando haya terminado de rellenar el formulario, seleccione **Agregar nota** para guardar la nota.
 
+
+> [!NOTE]
+> También puede agregar una nota con el **signo más** en la sección superior del muro de la **escala de tiempo**.
+
    > [!div class="mx-imgBorder"]
    > ![Agregar una nota](media/addnote.png "Add a note")
 
-Una vez que se haya agregado la nota, puede eliminarla o editarla. También puede agregar una nota con el **signo más** en la sección superior del muro de la **escala de tiempo**.
+Una vez que se haya agregado la nota, puede eliminarla o editarla.
 
 
 > [!div class="mx-imgBorder"]
@@ -154,17 +172,13 @@ En el muro de la **escala de tiempo**, seleccione ![botón Más ](media/MoreButt
 
 ## <a name="use-the-filter-pane"></a>Uso del panel de filtros
 
-Filtre rápidamente las actividades, notas o publicaciones del muro de la escala de tiempo por tipo de registro o tipo de actividad y fecha con el panel de filtro.
+Filtre rápidamente las actividades, notas o publicaciones del muro de la escala de tiempo por tipo de registro o tipo de actividad y fecha con el panel de filtro. Puede seleccionar varios filtros y opciones de filtro al mismo tiempo. Puede filtrar y ver la fecha de vencimiento de la actividad, la fecha de modificación o el estado de la actividad.
 
-1. En el muro de la **escala de tiempo**, seleccione ![botón Más ](media/MoreButton.png "More button") y, a continuación, seleccione **Abrir panel de filtro**.
+- En el plano de la **escala de tiempo** , seleccione Abrir el icono de embudo del **Panel de filtros** .
 
 > [!div class="mx-imgBorder"]
 > ![Panel de filtro de la escala de tiempo ](media/filterpane.png "Filter pane in the Timeline")
 
-2. Cuando haya terminado la visualización de la información filtrada, para borrar el filtro, seleccione el icono de embudo **Borrar todos los filtros**. Así se restablecerá el filtro y aparecerá toda la información en el muro de la escala de tiempo.
-
-> [!div class="mx-imgBorder"]
-> ![Restablecer el filtro](media/resetfilter.png "Reset the filter")
 
 ## <a name="manage-activities"></a>Administración de actividades
 Administre actividades directamente desde el muro de la escala de tiempo, incluida la asignación de una actividad a otra persona, la eliminación o el cierre de una actividad, la adición de una actividad a una cola, la apertura un registro asociado o la edición de notas y publicaciones.
