@@ -842,6 +842,8 @@
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: Propiedades del diseñador de formularios
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: Configuración de las propiedades de encabezado
+                      href: ./model-driven-apps/form-designer-header-properties.md
                     - name: Uso de la vista de árbol
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Tipo de formularios
