@@ -2,7 +2,7 @@
 title: Usar soluciones en PowerApps | MicrosoftDocs
 description: Aprenda cómo usar soluciones para crear o personalizar aplicaciones
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -12,10 +12,10 @@ applies_to:
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
   - powerapps
-author: Mattp123
+author: caburk
 ms.assetid: 72bacfbb-96a3-4daa-88ff-11bdaaac9a3d
 caps.latest.revision: 57
-ms.author: matp
+ms.author: caburk
 manager: kvivek
 search.audienceType:
   - maker
@@ -93,16 +93,17 @@ En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Sol
 
 - Los conectores personalizados no están disponibles en una solución.
 - Las aplicaciones de lienzo deben abrirse una vez finalizada la importación de la solución para actualizar las conexiones.
-- Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino.
+- Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino, pero no volver a publicarse.
 - Las dependencias no están disponibles para las aplicaciones de lienzo.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
 -   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service (Common Data Service).
--   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelven nada. 
+-   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelve nada. 
 -   Las aplicaciones y flujos de lienzo creados en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
 -   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
 - Los flujos desencadenados por botón no están disponibles en soluciones.
 - Los flujos desencadenados por aplicaciones del lienzo no están disponibles en soluciones.
 - Los flujos desencadenados desde aplicaciones de Microsoft 365 como SharePoint y Excel no están disponibles en soluciones.
+- Los flujos en soluciones no admiten la autenticación delegada. Por ejemplo, el acceso a un flujo no se concede automáticamente en función del acceso a la lista de SharePoint de la que se creó el flujo.
 
  Para obtener más información acerca de los componentes individuales de una solución, vea los temas siguientes:  
   

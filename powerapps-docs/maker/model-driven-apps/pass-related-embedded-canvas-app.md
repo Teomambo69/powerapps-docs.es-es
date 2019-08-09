@@ -1,7 +1,7 @@
 ---
 title: Pasar una lista de registros relacionados como contexto de datos con una aplicación incrustada de lienzo | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/17/2018
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -24,12 +24,11 @@ search.app:
 ---
 
 # <a name="pass-a-list-of-related-records-as-data-context-to-an-embedded-canvas-app"></a>Pasar una lista de registros relacionados como contexto de datos a una aplicación incrustada de lienzo
+> [!IMPORTANT]
+> Las aplicaciones de lienzo incrustadas en formularios basados en modelos ahora están fuera de vista previa y disponibles en general. Los pasos que aparecen a continuación están obsoletos y son aplicables únicamente a la versión pública de vista previa de las aplicaciones de lienzo insertadas en los formularios basados en modelos.
+> Para la lista actualizada de pasos para la última versión, vea: [Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md)
 
 En este tema se explica cómo agregar una aplicación incrustada de lienzo y pasar una lista de registros relacionados al registro actual (formulario principal) como contexto de datos a la aplicación incrustada de lienzo.
-
-> [!NOTE]
-> Esta característica está actualmente en vista previa. <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 Digamos que desea agregar una aplicación incrustada de lienzo en el formulario principal de una cuenta y pasar una lista de contactos relacionados con el registro de cuenta actual a la aplicación incrustada de lienzo. Para ello, siga estos pasos:
 
@@ -49,7 +48,7 @@ Digamos que desea agregar una aplicación incrustada de lienzo en el formulario 
          -  Los criterios de filtro para una vista no se usan en el momento de la creación. Por tanto, los datos que ve al crear aplicaciones incrustadas de lienzo no están filtrados, son simplemente una lista de los pocos registros superiores a los que tiene acceso. En el tiempo de ejecución, los criterios de filtrado de la vista se aplican como se prevé, por tanto, los usuarios solo ven los datos relevantes.
      -  La propiedad **Identificador de la aplicación** especifica el identificador de la aplicación incrustada de lienzo. Se genera y rellena automáticamente en su lugar cuando crea la aplicación de lienzo.
          -  Tenga en cuenta que, cualquier cambio efectuado en el valor Identificador de la aplicación rompe el vínculo entre el formulario controlado por modelos y la aplicación incrustada de lienzo.
-10. Seleccione el botón **Personalizar** para crear o editar la aplicación de lienzo. Esto abre PowerApps Studio en una nueva ficha del explorador.
+10. Seleccione el botón **Personalizar** para crear o editar la aplicación de lienzo. Esto abre PowerApps Studio en una nueva pestaña del explorador.
      > [!IMPORTANT]
      > Si abrir PowerApps Studio está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de web.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo. 
 11. En PowerApps Studio, observe que hay un control **ModelDrivenFormIntegration** en el panel izquierdo. Este control es responsable de llevar datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo. 
@@ -65,7 +64,7 @@ Digamos que desea agregar una aplicación incrustada de lienzo en el formulario 
       -  En las operaciones de guardar posteriores, tiene que seleccionar **Publicar** y después **Publicar esta versión** para que los cambios pasen a estar disponibles.
 20. Seleccione **Atrás** y seleccione la ficha del explorador que tiene el editor de formularios abierto. 
 21. Observe que la propiedad **Identificador de la aplicación** del control de **aplicaciones de lienzo** ahora tiene un valor automáticamente rellenado. Tenga en cuenta lo siguiente: 
-     -  El editor de formularios tiene un vínculo directo con PowerApps Studio que se abrió en otra ficha del explorador en un paso anterior.
+     -  El editor de formularios tiene un vínculo directo con PowerApps Studio que se abrió en otra pestaña del explorador en un paso anterior.
      -  El editor de formularios ha estado escuchando para recibir el Identificador de la aplicación que se le va a enviar.
      -  El identificador de la Aplicación se le suministró cuando la aplicación se guardó.
 22. En el cuadro de diálogo **Establecer las propiedades** , seleccione la pestaña **Mostrar** , desactive **Mostrar etiqueta en el formulario**y, a continuación seleccione **Aceptar**.
@@ -80,7 +79,11 @@ Este tema le ha mostrado cómo empezar a insertar una aplicación de lienzo en e
 
 ## <a name="see-also"></a>Vea también
 [Insertar una aplicación de lienzo en un formulario controlado por modelos](embed-canvas-app-in-form.md) <br />
-[Pasar el registro actual como contexto de datos a una aplicación incrustada de lienzo](pass-current-embedded-canvas-app.md) <br />
+[Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md) <br />
+[Editar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-edit-classic-designer.md) <br />
+[Personalizar el tamaño y orientación de la pantalla de una aplicación de lienzo insertada en un formulario basado en modelos](embedded-canvas-app-customize-screen.md) <br />
 [Realice acciones predefinidas en el formulario de host desde una aplicación de lienzo insertada](embedded-canvas-app-actions.md) <br />
+[Propiedades y acciones del control ModelDrivenFormIntegration](embedded-canvas-app-properties-actions.md) <br />
 [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md) <br />
-[Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas](embedded-canvas-app-guidelines.md)
+[Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas](embedded-canvas-app-guidelines.md) <br />
+[Migrar aplicaciones de lienzo insertadas en formularios basados en modelos creados mediante la versión de vista previa pública a la más reciente](embedded-canvas-app-migrate-from-preview.md) <br />

@@ -3,8 +3,7 @@ title: 'Crear, administrar, y publicar aplicaciones basadas en modelos con códi
 description: 'Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en PowerApps.'
 keywords: ''
 ms.date: 03/04/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -191,7 +190,7 @@ OData-Version: 4.0
 
 Después de agregar los componentes necesarios a la aplicación basada en modelos y validarla, debe publicarla para que esté disponible para los usuarios.
 
-Utilice la acción <xref:Microsoft.Dynamics.CRM.PublishXml> o el mensaje <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> para publicar la aplicación basada en modelos. La siguiente solicitud de la API web muestra cómo publicar la aplicación basada en modelos con identificador dd621d4a-d898-e711-80e7-00155db763be:
+Utilice la acción <xref:Microsoft.Dynamics.CRM.PublishXml> o el mensaje <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> para publicar la aplicación basada en modelos. La siguiente solicitud muestra cómo publicar la aplicación basada en modelos con identificador dd621d4a-d898-e711-80e7-00155db763be:
 
 ```http
 POST [Organization URI]/api/data/v9.0/PublishXml HTTP/1.1
@@ -225,8 +224,9 @@ Accept: application/json
 
 Para desvincular un rol de seguridad de una aplicación basada en modelos, use la solicitud DELETE con la misma propiedad de navegación. Por ejemplo:
 
-`DELETE [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
-`
+```
+DELETE  [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
+```
 
 ## <a name="manage-your-model-driven-apps-and-its-components"></a>Administrar las aplicaciones basada en modelos y sus componentes
 
@@ -249,7 +249,7 @@ Para recuperar componentes de una aplicación basada en modelos, utilice la func
 
 ### <a name="retrieve-security-roles-associated-with-published-model-driven-app"></a>Recuperar roles de seguridad asociados con aplicaciones basadas en modelos publicadas
 
-Para recuperar los roles de seguridad asociados con la aplicación basada en modelos, utilice la opción consulta del sistema `$expand` con la propiedad de navegación **appmoduleroles_association**. Por ejemplo, esta es la solicitud para recuperar todos los roles de seguridad asociados con una aplicación basada en modelos con el identificador siguiente: dd621d4a d898 e711 80e7 00155db763be:
+Para recuperar los roles de seguridad asociados con la aplicación basada en modelos, utilice la opción consulta del sistema `$expand` con la propiedad de navegación **appmoduleroles_association**. Por ejemplo, esta es la solicitud para recuperar todos los roles de seguridad asociados con una aplicación basada en modelos con el identificador siguiente: dd621d4a-d898-e711-80e7-00155db763be:
 
 `GET [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)?$expand=appmoduleroles_association&$select=name,appmoduleroles_association`
 

@@ -26,10 +26,10 @@ El proveedor de consulta Consulta integrada del lenguaje .NET (LINQ) en Common D
 ## <a name="linq-operators"></a>Operadores LINQ  
  Todas expresiones de consulta LINQ tienen un formato similar. La siguiente tabla muestra las cláusulas más comunes en una expresión de consulta LINQ al usar el proveedor de consulta LINQ de Common Data Service.  
 
-### <a name="from"></a>from  
+### <a name="from"></a>desde  
  Cuando se usa el contexto de servicio generado y el enlace en tiempo de compilación, use el conjunto de entidades `IQueryable`, como `AccountSet`, en el contexto generado.  
 
- Cuando se use el contexto generado, el método `CreateQuery` del objeto del contexto del servicio de la organización le da acceso a las entidades de Common Data Service.  
+ Cuando se use el contexto generado, el método `CreateQuery` del objeto del contexto del servicio de la organización le da acceso a las entidades Common Data Service.  
 
  Ejemplo:  
 
@@ -120,7 +120,7 @@ select new Contact
 
 ## <a name="filter-multiple-entities"></a>Filtrar varias entidades  
 
- Puede crear consultas integradas del lenguaje .NET (LINQ) complejas en Common Data Service. Se usan varias cláusulas múltiples de `Join` con cláusulas de filtro para crear un resultado que se filtra por atributos de varias entidades.  
+ Puede crear consultas complejas Consulta integrada del lenguaje .NET (LINQ) en Common Data Service. Se usan varias cláusulas múltiples de `Join` con cláusulas de filtro para crear un resultado que se filtra por atributos de varias entidades.  
 
  El siguiente ejemplo muestra cómo crear una consulta LINQ que funciona con dos entidades y que filtra el resultado según los valores de cada una de las entidades.  
 
@@ -149,8 +149,8 @@ select new Contact
 }
  ```
 ### <a name="see-also"></a>Vea también  
- [Ejemplo: crear una consulta LINQ](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query.md)   
- [Ejemplo: ejemplos de consulta LINQ](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries.md)   
- [Crear consultas con LINQ (consulta integrada del lenguaje .NET)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query.md)   
- [Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query.md)   
+ [Ejemplo: crear una consulta LINQ](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query)   
+ [Ejemplo: ejemplos de consulta LINQ](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
+ [Crear consultas con LINQ (consulta integrada del lenguaje .NET)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
+ [Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
  [Blog: Controlador LINQPad 4 para API REST/Web de Dynamics CRM está disponible en CodePlex](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

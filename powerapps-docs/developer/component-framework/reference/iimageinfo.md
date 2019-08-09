@@ -14,6 +14,10 @@ ms.assetid: 16691acb-a58c-4ca6-b6a8-58c76c9db1ca
 
 # <a name="iimageinfo"></a>IImageInfo
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Propiedades
+
 ## <a name="url"></a>URL
 
 La dirección URL de la imagen condicional.

@@ -4,7 +4,7 @@ description: Aprenda a crear o editar un recurso web.
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Los recursos web son archivos virtuales almacenados en el sistema. Cada recurso 
   
 Por ejemplo, si crea una página HTML como un recurso web llamado "new_myWebResource.htm", podría abrir esa página en un explorador que use una dirección URL como ésta:  
  
-`<base URL>/WebResources/new_myWebResource.htm   `
+`<base URL>/WebResources/new_myWebResource.htm`
   
 donde *\<base URL>* es la parte de la dirección URL se usa para ver aplicaciones que finalizan en `dynamics.com`. Puesto que el recurso web son datos del sistema, sólo los usuarios con licencia de la organización pueden tener acceso a ellos de esta forma. Normalmente, recursos web se incluyen en formularios en lugar de hacer referencia a ellos directamente. El uso más común consiste en proporcionar bibliotecas de JavaScript para scripts de formularios.  
     

@@ -9,18 +9,13 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 ---
 
-# <a name="faqs"></a>P + F
+# <a name="faq"></a>Preguntas más frecuentes
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## <a name="multiple-components-in-single-manifest-file"></a>Componentes múltiples en solo archivo de manifiesto
 
 No es posible definir varios componentes en un solo archivo de manifiesto. 
-
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="calling-processesactions"></a>Llamada a procesos/acciones
 

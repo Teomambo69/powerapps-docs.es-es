@@ -3,8 +3,7 @@ title: Editar el archivo XML de personalizaciones con la validación de esquema 
 description: El archivo customizations.xml se incluye en el archivo .zip comprimido exportado como solución. Determinadas partes del archivo customizations.xml se pueden editar manualmente. La información sobre el esquema ayuda a confirmar que cualquier modificación que cree es válida.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -49,7 +48,7 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
   
 - VisualizationDataDescription.xsd  
   
-  Estos archivos también están instalados localmente en el servidor de Common Data Service [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] en: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
+  Estos archivos también están instalados en el servidor local de [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service en: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd es el esquema de la solución exportada. Contiene referencias a los demás archivos XSD. Todos los archivos deben encontrarse en la misma carpeta.  
   
@@ -78,7 +77,7 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
   
 ### <a name="see-also"></a>Vea también
 
-[Cuándo editar el archivo de personalizaciones para Common Data Service](when-edit-customization-file.md)<br/> 
+[Cuándo modificar el archivo de personalizaciones para Common Data Service](when-edit-customization-file.md)<br/> 
 [Esquema central de cinta de opciones](ribbon-core-schema.md)<br/>
 [Esquema de tipos de cinta](ribbon-types-schema.md)<br/>
 [Esquema WSS de cinta de opciones](ribbon-wss-schema.md)<br/>

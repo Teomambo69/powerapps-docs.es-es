@@ -1,8 +1,8 @@
 ---
-title: Trabajar con claves alternativas (Common Data Service) | Microsoft Docs
+title: Trabajar con teclas alternativas (Common Data Service) | Microsoft Docs
 description: En este tema se explica cómo crear claves alternativas para una entidad. Las claves alternativas pueden crearse mediante programación o usando las herramientas de personalización
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="work-with-alternate-keys"></a>Trabajar con claves alternativas
 
-Todos los registros de Common Data Service tienen identificadores únicos definidos como GUID. Éstos son clave principal para cada entidad. Si necesita integrarse con un almacén de datos externos, es posible que pueda agregar una columna a las tablas de base de datos externas para incluir una referencia al identificador único de Common Data Service. Esto permite tener una referencia local al vínculo con el registro de Common Data Service. Sin embargo, a veces no puede modificar la base de datos externa. Con claves alternativas, ahora puede definir un atributo de una entidad de Common Data Service para que corresponda a un identificador único (o una combinación única de columnas) usado por el almacén de datos externos. Esta clave alternativa se puede usar para identificar de manera única un registro en Common Data Service en lugar de la clave principal. Debe poder definir qué atributos representan una única identidad para sus registros. Una vez identifique los atributos que son únicos con la entidad, puede declararlos como claves alternativas con la interfaz de usuario de personalización (UI) o en el código. En este tema se proporciona información acerca de la definición de claves alternativas en el modelo de datos.  
+Todos los registros de Common Data Service tienen ID únicos definidos como GUID. Éstos son clave principal para cada entidad. Si necesita integrarse con un almacén de datos externos, es posible que pueda agregar una columna a las tablas de base de datos externas para incluir una referencia al identificador único de Common Data Service. Esto permite tener una referencia local al vínculo con el registro Common Data Service . Sin embargo, a veces no puede modificar la base de datos externa. Con claves alternativas, ahora puede definir un atributo de una entidad Common Data Service para que corresponda a un identificador único (o una combinación única de columnas) usado por el almacén de datos externos. Esta clave alternativa se puede usar para identificar de manera única un registro en Common Data Service en lugar de la clave principal. Debe poder definir qué atributos representan una única identidad para sus registros. Una vez identifique los atributos que son únicos con la entidad, puede declararlos como claves alternativas con la interfaz de usuario de personalización (UI) o en el código. En este tema se proporciona información acerca de la definición de claves alternativas en el modelo de datos.  
 
 <a name="BKMK_Declare"></a>
 
@@ -38,7 +38,10 @@ Debe conocer las siguientes restricciones al crear claves alternativas:
   |--------------------------|---------------------|
   | DecimalAttributeMetadata |   Número decimal    |
   | IntegerAttributeMetadata |    Número entero     |
-  | StringAttributeMetadata  | Línea de texto única |
+  | StringAttributeMetadata  | Línea única de texto |
+  | DateTimeAttributeMetadata   |      Fecha y hora    |
+  | LookupAttributeMetadata     |       Búsqueda        |
+  | PicklistAttributeMetadata   |      Conjunto de opciones       |
 
 
 - **Tamaño de clave válido**  
@@ -51,7 +54,7 @@ Debe conocer las siguientes restricciones al crear claves alternativas:
 
 - **Caracteres Unicode en valor de clave**
 
-  Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `<``>`,`*`,`%`,`&`,`:`,`\\`, las acciones de revisión o upsert no funcionarán.  Si solo necesita unicidad, este método funciona, pero si necesita usar estas claves como parte de la integración de datos, entonces es mejor crear la clave en los campos que no tendrán datos con dichos caracteres.
+  Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `<``>`,`*`,`%`,`&`,`:`,`\\`, las acciones get o patch no funcionarán.  Si solo necesita unicidad, este método funciona, pero si necesita usar estas claves como parte de la integración de datos, entonces es mejor crear la clave en los campos que no tendrán datos con dichos caracteres.
 
 <a name="BKMK_crud"></a>   
 

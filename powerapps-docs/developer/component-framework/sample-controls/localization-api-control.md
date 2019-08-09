@@ -14,15 +14,10 @@ ms.author: nabuthuk
 
 Este ejemplo muestra cómo se realiza la localización para controles personalizados. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
 
-El marco de componentes de PowerApps usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources). 
+El marco de componentes de PowerApps usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
 > ![Componente de API de localización](../media/localization-api-control.png "Componente de API de localización")
-
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="manifest"></a>Manifiesto 
 
@@ -451,5 +446,5 @@ Cuando esta línea de origen se ejecute, el marco de componentes de PowerApps id
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br/>
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)

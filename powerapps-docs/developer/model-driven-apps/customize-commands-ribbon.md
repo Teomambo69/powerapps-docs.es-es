@@ -1,10 +1,9 @@
 ---
 title: Personalice los comandos y la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
-description: Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una barra de comandos en lugar de una cinta de opciones. Dynamics 365 para tabletas también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.
+description: Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una barra de comandos en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

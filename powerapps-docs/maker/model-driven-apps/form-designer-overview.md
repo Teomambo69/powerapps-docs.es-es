@@ -1,9 +1,9 @@
 ---
 title: Información general del diseñador de formularios controlado por modelos | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/13/2018
+ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -30,19 +30,18 @@ El nuevo diseñador de formularios controlados por modelos proporciona una moder
 > [!NOTE]
 > Esta característica está actualmente en vista previa. <br />
 > [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] <br /><br />
-> Esta característica está disponible actualmente para todas las regiones, excepto Estados Unidos. y Europa. Deberá estar disponibles en Estados Unidos. y Europa a principios de enero de 2019. Si desea probar la característica inmediatamente, puede crear un entorno en las regiones donde está disponible actualmente como Australia, Canadá, India, o Japón.
 
-El diseñador muestra una vista previa de tiempo real de WYSIWYG (solo interfaz unificada) durante la creación. Los cambios en el formulario se reflejan inmediatamente en la vista previa que habilita los creadores de la aplicación para ver exactamente cómo aparecerá el formulario para los usuarios cuando se publique. 
+El diseñador muestra una vista previa de tiempo real de WYSIWYG (solo interfaz unificada) mientras crea un formulario. Los cambios en el formulario se reflejan inmediatamente en la vista previa que le habilita para ver exactamente cómo aparecerá el formulario para los usuarios cuando se publique. 
 
-Realizar tareas comunes, como propiedades del valor, es más fácil y más rápido con un panel siempre disponible de propiedades. Además, Guardar y publicar son una sola acción que mejora la productividad del fabricante.
+Realizar tareas comunes, como propiedades del valor, es más fácil y más rápido con un panel siempre disponible de propiedades. Además, **Guardar** y **Publicar** son una sola acción, lo que optimiza las tareas.
 
 La interfaz del diseñador de formularios tiene las siguientes áreas: 
-- Barra de comandos – Muestra las acciones disponibles como guardar, publicar, deshacer, y rehacer. 
-- Paneles - Muestra paneles con funciones específicas como un panel de campos que se usa para agregar campos a un formulario. 
-- Vista previa de formularios – Muestra una vista previa en tiempo real del formulario tal como aparecerá para los usuarios finales cuando se publique. 
+- Barra de comandos – Muestra las acciones disponibles como **guardar**, **publicar**, **deshacer**, y **rehacer**. 
+- Paneles - Muestra paneles con funciones específicas como un panel de **campos** que se usa para agregar campos a un formulario. 
+- Vista previa de formularios – Muestra una vista previa en tiempo real del formulario tal como aparecerá para los usuarios cuando se publique. 
 - El panel de la propiedad – Muestra propiedades del elemento seleccionado y también permite realizar cambios.
 
    ![Diseño del Diseñador de formularios](media/form-designer.png)
 
 ## <a name="see-also"></a>Vea también
-[Crear y editar formularios usando el diseñador de formularios controlado mediante modelos](create-and-edit-forms.md)
+[Crear o editar formularios usando el diseñador de formularios](create-and-edit-forms.md)

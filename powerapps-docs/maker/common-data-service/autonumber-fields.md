@@ -49,7 +49,7 @@ Por ejemplo, un número predefinido de fecha generaría registros como *2019-26-
 ### <a name="custom"></a>Personalizada
 
 Para creadores más avanzados con casos de uso específicos, proporcionamos la opción de personalizar completamente el formato deseado de un campo de numeración automática. El formato puede estar compuesto de constantes de cadena, incrementando automáticamente los números, fechas con formato o secuencias alfanuméricas aleatorias.
-Para obtener información detallada sobre cómo definir formatos personalizados, consulte [Opciones de AutoNumberFormat](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options).
+Para obtener información detallada sobre cómo definir formatos personalizados, consulte [Opciones de AutoNumberFormat](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options).
 
 ## <a name="seed-values"></a>Valores de inicialización
 
@@ -57,9 +57,7 @@ El valor de inicialización de un campo de numeración automática es el número
 
 
 > [!IMPORTANT]
-> Designar una inicialización personalizada se admite actualmente únicamente al crear un nuevo campo de numeración automática. 
->
-> Establecer el valor de inicialización sólo cambia el valor numérico actual para el atributo especificado en el entorno actual. No implica un valor de inicio común para el atributo. El valor de inicialización no se incluye en una solución cuando se importa en un entorno diferente. 
+> Establecer el valor de inicialización sólo cambia el valor numérico actual para el atributo especificado en el entorno actual. El valor de inicialización no se incluye en una solución cuando se importa en un entorno diferente. 
 
 ## <a name="create-an-autonumber-field"></a>Crear un campo de numeración automática
   
@@ -85,4 +83,4 @@ El valor de inicialización de un campo de numeración automática es el número
 9. Seleccione **Listo**.
 
 ## <a name="see-also"></a>Vea también
- [Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)
+ [Crear y editar campos para Common Data Service utilizando el portal PowerApps](create-edit-field-portal.md)

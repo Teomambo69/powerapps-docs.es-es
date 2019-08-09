@@ -3,8 +3,7 @@ title: Definir las reglas de visualización de la pestaña cinta de opciones (ap
 description: Obtenga información sobre cómo definir las reglas de visualización de la pestaña de la cinta de opciones.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-ribbon-tab-display-rules"></a>Definir las reglas de visualización de la pestaña de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
 
 Las reglas de visualización de las pestañas controlan si una pestaña específica se muestra para una cinta o si no se muestra.  
   

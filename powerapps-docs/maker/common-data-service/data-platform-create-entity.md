@@ -20,9 +20,7 @@ En PowerApps, una *entidad* define la información de la que desea realizar un s
 En este tema, aprenderá a crear una entidad personalizada llamada Valoración de producto que puede usar para crear una aplicación que muestre calificaciones y comentarios de los productos que vende su compañía.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para realizar este procedimiento, los elementos siguientes son necesarios:
-* Una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow. Como alternativa, puede suscribirse a una [prueba gratuita de Plan 2 de PowerApps](https://web.powerapps.com/signup?redirect=marketing&email=)
-* Un rol de seguridad de administrador del sistema o de personalizador del sistema en Common Data Service.
+Para seguir este procedimiento, debe tener un rol de seguridad de administrador del sistema o personalizador del sistema en Common Data Service.
 
 ## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
 Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
@@ -36,21 +34,35 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
 
     Antes de crear una entidad, compruebe la [referencia de entidad](../../developer/common-data-service/reference/about-entity-reference.md) para ver una descripción de las entidades estándar disponibles. Estas entidades cubren los escenarios típicos. Si una de estas entidades cumple sus requisitos tal como están o tras pocos cambios, puede ahorrar tiempo comenzando con esa entidad. 
 
-3. En el panel **Nueva entidad**, en el cuadro **Nombre para mostrar**, introduzca **Valoración de producto** y, si lo desea, introduzca una descripción (las descripciones son útiles si otras personas usan esta entidad). Los demás campos del panel se rellenan automáticamente, como se describe a continuación. Cuando acabe, haga clic en **Siguiente**.
+3. En el panel **Nueva entidad**, haga lo siguiente:
 
-    * **Nombre para mostrar plural** - Este campo se rellena automáticamente cuando introduce un nombre para mostrar, pero puede cambiarlo si fuera necesario. El nombre para mostrar plural es el nombre de la entidad en la API web de Common Data Service y se usa para interactuar con esta entidad desde PowerApps o Flow.
-    * **Nombre** - Este campo también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se definió cuando se creó el entorno y garantiza que las entidades que cree se puedan exportar e importar en otros entornos sin entrar en conflicto con otros nombres de entidad. Puede cambiar este prefijo actualizándolo en su publicador para la solución predeterminada de Common Data Service. Para evitar que se dañen las aplicaciones existentes, no puede cambiar el nombre después de guardar la entidad.
+    a. En el cuadro **Nombre para mostrar**, introduzca **Valoración de producto**.
+
+    Observe que los cuadros siguientes se rellenan automáticamente mientras escribe un nombre para mostrar:
+
+    * **Nombre para mostrar plural** - Este cuadro se rellena automáticamente cuando introduce un nombre para mostrar, pero puede cambiarlo si fuera necesario. El nombre para mostrar plural es el nombre de la entidad en la API web de Common Data Service y se usa para interactuar con esta entidad desde PowerApps o Flow.
+    * **Nombre** - Este cuadro también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se definió cuando se creó el entorno y garantiza que las entidades que cree se puedan exportar e importar en otros entornos sin entrar en conflicto con otros nombres de entidad. Puede cambiar este prefijo actualizándolo en su publicador para la solución predeterminada de Common Data Service. Para evitar que se dañen las aplicaciones existentes, no puede cambiar el nombre después de guardar la entidad.
 
        > [!NOTE]
-       > Para que el nombre de la entidad funcione con [búsqueda incrustada de conocimiento de Dynamics 365 for Customer Service](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search), la longitud máxima del nombre de entidad incluido el prefijo del editor no puede superar los 24 caracteres.
-     
-    ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
+       > Para que el nombre de la entidad funcione con la [búsqueda de conocimiento incrustado de Dynamics 365 for Customer Service](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search), la longitud máxima del nombre de entidad, incluido el prefijo del editor, no puede superar los 24 caracteres.
 
-4. En la página de detalles de la entidad, haga clic o pulse en el campo **Nombre principal** para abrir el panel **Nombre principal** y, en el cuadro **Nombre para mostrar**, sustituya **Nombre principal** por **Valoración de producto**. En el cuadro **Nombre**, reemplace **PrimaryName** por **ProductReview** y haga clic o pulse en **Hecho**.
- 
-    De forma predeterminada, cada entidad contiene un campo Nombre principal, que se usa en los campos de búsqueda al establecer relaciones con otras entidades. El campo Nombre principal almacena normalmente el nombre o la descripción principal de los datos almacenados en la entidad. Puede actualizar el nombre y el nombre para mostrar del campo Nombre principal antes de guardar la entidad por primera vez.
+    b. En la sección **Campo principal**, en el cuadro **Nombre para mostrar**, reemplace **Nombre** por **Valoración del producto**. 
+
+    De forma predeterminada, cada entidad contiene un campo **Campo principal**, que se usa en los campos de búsqueda al establecer relaciones con otras entidades. El campo principal almacena normalmente el nombre o la descripción principal de los datos almacenados en la entidad. Puede actualizar el nombre y el nombre para mostrar del campo principal antes de guardar la entidad por primera vez.
+
+    Además, observe que el campo principal también tiene su propio cuadro **Nombre** , que funciona semejantemente al nombre de entidad descrito anteriormente. El nombre del campo principal se rellena automáticamente cuando se especifica un nombre para mostrar, usa la misma prefijo que la entidad, y no se puede cambiar después de que se crean a la entidad.
+
+    c. Abra la sección **Más valores** y expanda el acordeón **Descripción**. Puede especificar una descripción para la entidad si lo desea (las descripciones son útiles si otras personas usan esta entidad). 
+    
+    d. Cuando acabe, haga clic en **Crear**.
+     
+    ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Nuevo panel de entidad")
+
+4. En la página de detalles de la entidad, observe que la entidad ahora se está aprovisionando en segundo plano. Una vez completado el aprovisionamiento, la entidad se guardará y estará disponible para su uso en aplicaciones. Los campos, relaciones, y las claves se pueden agregar a la entidad en cualquier momento (incluso mientras el aprovisionamiento aún está en curso), pero las vistas, formularios, gráficos, paneles, y las reglas de negocio se pueden agregar sólo a la entidad después de completar el aprovisionamiento.
 
     ![Detalles de entidad](./media/data-platform-cds-create-entity/newentitydetails.png "Detalles de nueva entidad")
+
+5. En la pestaña **Campos**, observe el **Campo principal** al que dio nombre en el paso anterior. Haga clic o pulse en el campo **Campo principal** para abrir el panel **Campo principal** si desea realizar personalizaciones adicionales al campo. Tenga en cuenta que **Nombre** ya no se puede cambiar más, ya que la entidad ya se ha guardado.
 
 5. Para agregar un campo a la entidad, realice lo siguiente:
  
@@ -80,7 +92,7 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
 
     Tenga en cuenta que todas las entidades tienen campos del sistema de solo lectura. De forma predeterminada, los campos del sistema no se muestran en la lista de campos aunque existan en la entidad. Para ver todos los campos, cambie el filtro en la barra de comandos de **Predeterminado** a **Todos**. Para obtener más información sobre los metadatos relacionados con una entidad, consulte [Metadatos de entidad](../../developer/common-data-service/entity-metadata.md).
 
-7. Haga clic en **Guardar entidad** para guardar la entidad y para que esté disponible para su uso en aplicaciones.
+7. Haga clic en **Guardar entidad** para guardar los últimos cambios a la entidad.
 
     La entidad Valoración de producto debería aparecer en la lista de entidades en la base de datos. Si no la ve, cambie el filtro en la barra de comandos de **Predeterminado** a **Personalizado**.
 

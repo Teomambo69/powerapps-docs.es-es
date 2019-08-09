@@ -1,5 +1,5 @@
 ---
-title: Descripción general de marco de componentes de PowerApps | MicrosoftDocs
+title: Qué son componentes personalizados | MicrosoftDocs
 description: 'Use el marco de componentes de PowerApps para crear componentes personalizados para proporcionar una mejor experiencia de usuario para que los usuarios vean y trabajen con datos en formularios, vistas, y paneles.'
 manager: kvivek
 ms.date: 04/23/2019
@@ -13,14 +13,9 @@ ms.author: nabuthuk
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Los componentes personalizados son un tipo de componente de la solución, lo que significa que se pueden incluir en una solución e instalar en diferentes entornos. Más información: [Empaquetar y distribuir extensiones utilizando soluciones](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
+Los componentes personalizados son un tipo de componente de la solución, lo que significa que se pueden incluir en una solución e instalar en diferentes entornos. Más información: [Empaquetar y distribuir extensiones utilizando soluciones](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
 Puede agregar los componentes personalizados incluyéndolos en una solución y después importándolos en el sistema. Una vez que están en el sistema, administradores y personalizadores del sistema pueden configurar campos de formulario, subcuadrículas, vistas y subcuadrículas del panel para usarlos en lugar del componente predeterminado.
-
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 Los componentes personalizados están compuestos de tres componentes:
 

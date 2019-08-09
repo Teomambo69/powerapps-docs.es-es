@@ -3,8 +3,7 @@ title: Escribir un complemento con Azure personalizado (Common Data Service) | M
 description: El ejemplo muestra como el código del pluggin puede ser agragado para obtener el proveedor de servicio Azure e iniciar la publicación del contexto de ejecución en el bus de servicio mediante la llamada IExecutionContext .
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -42,7 +41,7 @@ Tenga en cuenta que es posible que los complementos registrados sincrónicos pub
 El siguiente código de complementos de ejemplo se ha agregado para obtener el proveedor de servicios de Azure e iniciar la publicación del contexto de ejecución en el bus de servicio llamando a <xref:Microsoft.Xrm.Sdk.IServiceEndpointNotificationService.Execute(Microsoft.Xrm.Sdk.EntityReference,Microsoft.Xrm.Sdk.IExecutionContext)>. Se ha agregado código de seguimiento para facilitar la depuración de complementos porque el complemento se debe ejecutar en el espacio asilado.  
 
 > [!NOTE]
-> `serviceEndpointId` que se ha pasado al constructor en este código es el único que obtiene de la creación de un extremo de servicio como el que se describe en [Tutorial: Configurar Azure (SAS) para integración con Common Data Service](walkthrough-configure-azure-sas-integration.md).
+> El `serviceEndpointId` que se ha pasado al constructor en este código es el único que obtiene de la creación de un extremo de servicio como el que se describe en [Tutorial: Configurar Azure (SAS) para integración con Common Data Service.](walkthrough-configure-azure-sas-integration.md)
 >
 > Puede consultar los extremos de servicio disponibles para su entorno mediante una solicitud `GET` a una API web con su explorador con una consulta como esta: *`[organization Uri]`*`/api/data/v9.0/serviceendpoints?$select=name,description,serviceendpointid`.
   
@@ -141,7 +140,7 @@ Para un complemento registrado para ejecutarse asincrónicamente, el <xref:Micro
 ### <a name="see-also"></a>Vea también
 
 [Extensiones de Azure para Dynamics 365](azure-integration.md)<br />
-[Enviar los datos de Dynamics 365 a través del bus de servicio de Microsoft Azure](work-data-azure-solution.md)<br />
+[Enviar datos de Dynamics 365 a través del Bus de servicio de Microsoft Azure](work-data-azure-solution.md)<br />
 [Escribir un complemento](write-plug-in.md)<br />
 [Canalización de ejecución del evento](event-framework.md)<br />
 [Registrar e implementar complementos](register-plug-in.md)

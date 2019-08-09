@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 04/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -46,110 +46,97 @@ Los paneles de experiencia interactiva pueden convertirse en un área de trabajo
 ### <a name="multi-stream-dashboard-standard-view"></a>Vista estándar del panel de varias secuencias  
  En el panel de varias secuencias, verá una fila de filtros visuales en la parte superior con las secuencias de datos por debajo de ellos.  
  
-![Panel interactivo de varias secuencias](../model-driven-apps/media/interactive-dashboards-multi-stream.png) 
+![Panel interactivo de varias secuencias](media/interactive-dashboards-multi-stream.png) 
    
 ### <a name="multi-stream-dashboard-tile-view"></a>Vista de ventana del panel de varias secuencias  
  El mismo panel, solo en la vista de ventana.  
   
- ![Vista de ventana del panel de varias secuencias](../model-driven-apps/media/interactive-dashboards-multi-stream-tiles.png "Vista de ventana del panel de varias secuencias")  
+ ![Vista de ventana del panel de varias secuencias](media/interactive-dashboards-multi-stream-tiles.png "Vista de ventana del panel de varias secuencias")  
   
 ### <a name="multi-stream-dashboard-layouts"></a>Diseños de paneles de varias secuencias  
  Para los paneles de varias secuencias, puede elegir entre cuatro diseños diferentes.  
 
  > [!div class="mx-imgBorder"] 
- > ![Diseños de paneles de varias secuencias](../model-driven-apps/media/interactive-dashboards-multi-stream-layout.png "Diseños de paneles de varias secuencias")  
+ > ![Diseños de paneles de varias secuencias](media/interactive-dashboards-multi-stream-layout.png "Diseños de paneles de varias secuencias")  
   
 ### <a name="multi-stream-entity-specific-dashboard"></a>Panel específico de la entidad de varias secuencias  
- El panel específico de la entidad para la entidad `Case` aparece aquí.  
+ El panel específico de la entidad para la entidad de caso aparece aquí.  
   
- ![Abrir panel de casos](../model-driven-apps/media/interactive-dashboard-cases-dashboard.PNG "Abrir panel de casos")  
+ ![Abrir panel de casos](media/interactive-dashboard-cases-entity-specific.png "Abrir panel de casos")  
   
 ### <a name="single-stream-dashboard"></a>Panel de secuencia única  
  El panel de secuencia única contiene la secuencia de datos a la izquierda y filtros visuales y las ventanas a la derecha.  
   
- ![Panel del centro de servicio interactivo de secuencia única](../model-driven-apps/media/interactive-dashboards-single-stream.png "Panel del centro de servicio interactivo de secuencia única")  
+ ![Panel del centro de servicio interactivo de secuencia única](media/interactive-dashboards-single-stream.png "Panel del centro de servicio interactivo de secuencia única")  
   
 ### <a name="single-stream-dashboard-layouts"></a>Diseños de paneles de secuencia única  
  Para los paneles de secuencia única, puede elegir entre cuatro diseños diferentes.  
  
  > [!div class="mx-imgBorder"] 
- > ![Diseños de paneles de secuencia única](../model-driven-apps/media/interactive-dashboards-single-stream-layout.png "Diseños de paneles de secuencia única")  
+ > ![Diseños de paneles de secuencia única](media/interactive-dashboards-single-stream-layout.png "Diseños de paneles de secuencia única")  
   
 <a name="BKMK_Enable"></a>   
-## <a name="configure-entities-fields-and-security-roles-for-the-interactive-dashboards"></a>Configurar entidades, campos, y los roles de seguridad para los paneles interactivos  
- Cuando configura paneles interactivos, la primera tarea es habilitar las entidades, campos, y los roles de seguridad para la experiencia activa.  
+## <a name="configure-fiter-fields-and-security-roles-for-the-interactive-dashboards"></a>Configurar campos de filtro y roles de seguridad para los paneles interactivos  
+ Cuando configura paneles interactivos, la primera tarea es habilitar campos de filtro y roles de seguridad, para que se puedan configurar paneles interactivos para ellos. Los paneles interactivos ahora están habilitados para todas las entidades y entidades personalizadas de forma predeterminada. 
   
-### <a name="entities-enabled-for-interactive-experience"></a>Entidades habilitadas para experiencia interactiva
- Todas las entidades compatibles con la interfaz unificada tienen habilitado el panel de la experiencia interactiva.
-  
-### <a name="configure-fields"></a>Configurar campos  
- Para que un campo aparezca en el filtro global y se incluya en la ordenación de secuencia de datos, debe establecer dos indicadores, tal como se muestra en el siguiente ejemplo para el campo **IsEscalated** de la entidad Caso.  
+### <a name="configure-filter-fields"></a>Configurar campos de filtro  
+ Para que un campo aparezca en el filtro global y se incluya en el orden de secuencia de datos, debe establecer dos indicadores:
+
+- Aparece en el filtro global en la experiencia interactiva
+- Se puede ordenar en el panel de experiencia interactiva
+
+En este ejemplo hay dos opciones interactivas del panel disponibles en la entidad Caso para el campo **IsEscalated**.  
 
  > [!div class="mx-imgBorder"] 
- > ![Habilitar un campo para filtro global y ordenación](../model-driven-apps/media/global-filter-sort-8.png "Habilitar un campo para filtro global y ordenación")  
+ > ![Habilitar un campo para filtro global y ordenación](media/enable-filter-sort.png "Habilitar un campo para filtro global y ordenación")  
   
-### <a name="configure-global-filter-fields"></a>Configurar campos de filtro global  
- Para que un campo aparezca en el filtro global, es necesario configurar el indicador **Aparece en el filtro global en la experiencia interactiva** para este campo. Los campos que configure aparecerán en el control flotante de filtro global cuando se haga clic en el icono de filtro global en el encabezado del panel. En la ventana de control flotante, los representantes de servicio pueden seleccionar los campos que desean filtrar globalmente, en gráficos, y también en secuencias y ventanas que se basan en la entidad de filtro. Para obtener más información acerca de la entidad de filtro vea la sección "Configurar paneles interactivos de varias secuencias" más adelante en este tema.  
+### <a name="configure-the-appears-in-global-filter-in-interactive-experience-option"></a>Configurar la opción 'Aparece en el filtro global en la experiencia interactiva'
+
+1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
+2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
+3. En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.
+4. En la pestaña **General**, seleccione la casilla **Aparece en el filtro global en la experiencia interactiva**. Seleccione **Guardar y cerrar**.
+5. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
+  
+ Los campos que habilita para **Aparece en el filtro global en la experiencia interactiva** aparecen en la ventana de control flotante de filtro global cuando se hace clic en el icono de filtro global en el encabezado del panel. En la ventana de control flotante, los representantes de servicio pueden seleccionar los campos que desean filtrar globalmente, en gráficos, y también en secuencias y ventanas que se basan en la entidad de filtro.   
   
  La ventana de control flotante de filtro global se muestra aquí:  
   
- ![Agregar dos campos de filtro global](../model-driven-apps/media/interactive-dashboards-global-filter-two-fields.png "Agregar dos campos de filtro global")  
+ ![Agregar dos campos de filtro global](media/global-filter-escalated.png "Campos de filtro global")  
   
-> [!NOTE]
->  Cuando se configura un filtro visual (gráfico interactivo) basándose en los campos como prioridad o estado, una práctica recomendada también es permitir que estos campos (prioridad, estado) aparezcan en el filtro global.  
+> [!TIP]
+>  Cuando se configura un filtro visual basándose en los campos como prioridad o estado, una práctica recomendada también es permitir que estos campos (prioridad, estado) aparezcan en el filtro global.  
   
-El siguiente procedimiento proporciona los pasos para establecer el indicador de filtro global:
+### <a name="configure-the-sortable-in-interactive-experience-dashboard-option"></a>Configurar la opción 'Se puede ordenar en el panel de experiencia interactiva'
   
 1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
+2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
+3. En el panel de navegación, seleccione Campos y en la cuadrícula, haga doble clic en el campo que desee habilitar.
+4. En la pestaña **General**, seleccione la casilla **Se puede ordenar en el panel de experiencia interactiva**. Seleccione **Guardar y cerrar**.
+5. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
   
-2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea. Si no se muestra la entidad que desea, seleccione **Agregar existentes** para agregarla.  
+Los campos que configure para ordenación aparecerán en la lista desplegable en el encabezado de la secuencia. 
+
+El siguiente ejemplo muestra el cuadro de diálogo de control flotante con la lista de campos disponibles para ordenar, en la lista desplegable. La ordenación predeterminada siempre se establece en el campo **Fecha de modificación**.  
   
-3.  En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.  
-  
-4.  En la pestaña **General**, seleccione la casilla **Aparece en el filtro global en la experiencia interactiva**. Seleccione **Guardar y cerrar**.  
-  
-5.  Seleccione **Publicar** para que los cambios surtan efecto.  
-  
-6.  Seleccione **Preparar personalizaciones de cliente**.  
-  
-### <a name="configure-sortable-fields"></a>Configurar campos que se pueden ordenar  
- Para que un campo se use para ordenar datos de secuencia, debe establecer el indicador **Se puede ordenar en el panel de experiencia interactiva** para este campo. Los campos que configure para ordenar aparecerán en la lista desplegable en el cuadro de diálogo de control flotante **Editar propiedad** cuando el usuario selecciona **Más (...)** en el encabezado de secuencia. El siguiente ejemplo muestra el cuadro de diálogo de control flotante con la lista de campos disponibles para ordenar, en la lista desplegable **Ordenar por**. La ordenación predeterminada siempre se establece en el campo **Fecha de modificación**.  
-  
- ![Ordenar por lista desplegable](../model-driven-apps/media/interactive-dashboard-sortable-fields-dropdown.png "Ordenar por lista desplegable")  
-  
-El siguiente procedimiento proporciona los pasos para establecer el indicador de ordenación:
-  
-1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).   
-2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea. Si no se muestra la entidad estándar que desea, seleccione **Agregar existentes** para agregarla.  
-  
-3.  En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.  
-  
-4.  En la pestaña **General**, seleccione la casilla **Se puede ordenar en el panel de experiencia interactiva**. Seleccione **Guardar y cerrar**.  
-  
-5.  Seleccione **Publicar** para que los cambios surtan efecto.  
-  
-6.  Seleccione **Preparar personalizaciones de cliente**.  
-  
+ ![Ordenar por lista desplegable](media/sort-field.png "Ordenar por lista desplegable")    
+    
 ### <a name="enable-security-roles"></a>Habilitar roles de seguridad  
  Seleccione y habilite roles de seguridad que podrán ver los paneles interactivos.  
   
-El siguiente procedimiento proporciona los pasos para habilitar los roles de seguridad para la experiencia interactiva:
-  
+#### <a name="enable-security-roles-for-interactive-dashboards"></a>Habilitar roles de seguridad para paneles interactivos
+
 1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
   
 2. En **Componentes**, seleccione **Paneles**.  
   
-4.  En la cuadrícula, seleccione el panel interactivo que desea y seleccione **Habilitar roles de seguridad** en la barra de tareas.  
+3.  En la cuadrícula, seleccione el panel interactivo que desea y seleccione **Habilitar roles de seguridad** en la barra de tareas.  
   
-5.  En el diálogo **Asignar roles de seguridad**, seleccione la opción **Mostrar solo a estos roles de seguridad determinados** y seleccione los roles que desea habilitar. Seleccione **Aceptar**.  
+4.  En el diálogo **Asignar roles de seguridad**, seleccione la opción **Mostrar solo a estos roles de seguridad determinados** y seleccione los roles que desea habilitar. Seleccione **Aceptar**.  
   
-6.  Seleccione **Publicar** para que los cambios surtan efecto.  
+5.  Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.    
   
-7.  Seleccione **Preparar personalizaciones de cliente**.  
-  
- ![Habilitar roles de seguridad](../model-driven-apps/media/interactive-dashboards-enable-security-roles.png "Habilitar roles de seguridad")  
-  
- ![Asignar roles de seguridad](../model-driven-apps/media/interactive-dashboards-assign-security-roles.png "Asignar roles de seguridad")  
+ ![Habilitar roles de seguridad](media/security-roles.png "Habilitar roles de seguridad")    
   
 <a name="BKMK_Configure"></a>   
 ## <a name="configure-interactive-experience-dashboards"></a>Configurar paneles de experiencia interactiva  
@@ -161,29 +148,29 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
   
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
-3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
+3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**. 
   
 4.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.  
   
 5.  Cuando se abre el formulario del panel, rellene la información de filtro en la parte superior del formulario, como se indica aquí.  
  
  > [!div class="mx-imgBorder"] 
- > ![Agregar filtros visuales](../model-driven-apps/media/interactive-dashboards-add-visual-filters.png "Agregar filtros visuales")  
+ > ![Agregar filtros visuales](media/interactive-dashboards-add-visual-filters.png "Agregar filtros visuales")  
   
-   - **Entidad de filtro**: Los filtros visuales (interactivos gráficos) y los atributos de filtro global se basan en esta entidad.  
+   - **Entidad de filtro**: Los filtros visuales y los atributos de filtro global se basan en esta entidad.  
       
-    - **Vista de entidad**: Los filtros visuales (gráficos interactivos) se basan en esta vista.  
+    - **Vista de entidad**: Los filtros visuales se basan en esta vista.  
       
     - **Filtrar por**: El campo al que se aplica el filtro temporal.  
       
     - **Plazo de tiempo**: El valor predeterminado del filtro temporal para el campo **Filtrar por**.  
       
- Una vez especificada la información de filtrado, comience a agregar componentes para los gráficos y las secuencias de datos. Para agregar un componente, simplemente seleccione el elemento del centro del gráfico o la secuencia y, cuando aparezca el cuadro de diálogo, especifique la información necesaria, como se muestra en las siguientes ilustraciones.  
+ Una vez especificada la información de filtrado, comience a agregar componentes para los gráficos y las secuencias de datos. Para agregar un componente, simplemente seleccione el elemento del centro del gráfico o la secuencia y, cuando aparezca el cuadro de diálogo, seleccione la información necesaria de la lista desplegable, como se muestra en las siguientes ilustraciones.  
   
  Agregue el gráfico de anillos **Casos por prioridad**.
   
  > [!div class="mx-imgBorder"] 
- > ![Agregar un componente de gráfico de anillos.](../model-driven-apps/media/interactive-dashboards-add-chart-circle.png "Agregar un componente de gráfico de anillos.")  
+ > ![Agregar un componente de gráfico de anillos.](media/interactive-dashboards-add-chart-circle.png "Agregar un componente de gráfico de anillos.")  
   
  Algunos gráficos, como los gráficos de barras o los gráficos circulares, se generan mostrando los datos almacenados en el sistema. Los gráficos de anillos y gráficos de etiqueta cargan se cargan como imágenes estáticas y no aparecen en la vista previa de los datos reales.  
   
@@ -191,28 +178,23 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
 >  Los gráficos configurados para los filtros visuales pueden usar los campos de la entidad **Filtro** y también entidades relacionadas. Cuando se usan los gráficos basados en campos de entidad relacionados, los representantes del servicio al cliente pueden filtrar gráficos con estos campos de entidad relacionados. Los campos que se basan en la entidad relacionada tienen normalmente el siguiente formato en la ventana de configuración de gráficos: "nombre del campo (nombre de la entidad)", como el campo **Modificado por (delegado)**. Para crear gráficos de varias entidades, debe agregar campos de una entidad relacionada a cualquiera de las vistas y luego usar estos campos mientras crea gráficos.  
  
  > [!div class="mx-imgBorder"] 
- > ![Crear gráficos para filtros visuales](../model-driven-apps/media/interactive-dashboard-visual-charts-x-y-axes.PNG "Crear gráficos para filtros visuales")  
+ > ![Crear gráficos para filtros visuales](media/interactive-dashboard-visual-charts-x-y-axes.PNG "Crear gráficos para filtros visuales")  
   
- A continuación, hay que configurar las secuencias. Al igual que ocurre al agregar componentes en los gráficos, seleccione el elemento dentro del panel de secuencia. Cuando aparezca el cuadro de diálogo, seleccione **Vista** o **Cola** en función del elemento que desea que use la secuencia. Introduzca la información requerida tal y como se muestra en las ilustraciones siguientes.  
-  
-> [!NOTE]
->  La opción **Cola** está disponible en el cuadro de diálogo solo para entidades habilitadas para cola. En el caso de los paneles de entidad, si la entidad no está habilitada para cola, no verá la opción **Cola** en el cuadro de diálogo. Solo puede usar la opción **Vista** en la secuencia de paneles para las entidades que no están habilitadas para cola.  
+ A continuación, hay que configurar las secuencias. Al igual que ocurre al agregar componentes en los gráficos, seleccione el elemento dentro del panel de secuencia. Cuando aparezca el cuadro de diálogo, seleccione **Vista** o **Cola** en función del elemento que desea que use la secuencia. Introduzca la información requerida tal y como se muestra en la ilustración siguiente.  
   
  Configure la secuencia para los **Elementos disponibles para trabajar en ellos** como se muestra aquí:  
   
- ![Agregar una secuencia de mis casos activos.](../model-driven-apps/media/interactive-dashboards-add-stream-case.png "Agregar una secuencia de mis casos activos.")  
-  
- El siguiente ejemplo es un ejemplo del panel de gráficos, de izquierda a derecha: gráfico de anillos, gráfico de etiqueta y gráfico de barras:  
+ ![Agregar una secuencia de mis casos activos.](media/add-stream-dashboard.png "Agregar una secuencia de mis casos activos.")  
+
+> [!NOTE]
+>  La opción **Cola** está disponible en el cuadro de diálogo solo para entidades habilitadas para cola. En el caso de los paneles de entidad, si la entidad no está habilitada para cola, no verá la opción **Cola** en el cuadro de diálogo. Solo puede usar la opción **Vista** en la secuencia de paneles para las entidades que no están habilitadas para cola.    
+ 
+La siguiente ilustración es un ejemplo de un panel de gráficos completamente y un panel de secuencias:  
  
  > [!div class="mx-imgBorder"] 
- > ![Todos los gráficos interactivos](../model-driven-apps/media/interactive-dashboards-add-all-charts.png "Todos los gráficos interactivos")  
+ > ![Panel completamente configurado](media/example-stream-visual.png "Panel completamente configurado")  
   
- Esta ilustración es un ejemplo del panel de secuencia con varias secuencias:  
- 
- > [!div class="mx-imgBorder"] 
- > ![Agregar todas las secuencias](../model-driven-apps/media/interactive-dashboards-add-all-streams.png "Agregar todas las secuencias")  
-  
- Después de completar la configuración del panel, guárdelo y publique las personalizaciones para que los cambios surtan efecto. Además, asegúrese de seleccionar **Preparar personalizaciones de cliente**.  
+ Después de completar la configuración del panel, guárdelo y publique las personalizaciones para que los cambios surtan efecto.   
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Editar o eliminar secuencias individuales de un panel existente  
   
@@ -235,14 +217,15 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
  También puede eliminar una secuencia individual de un panel. Para ello, seleccione la secuencia y, en la barra de comandos, seleccione **Eliminar**.  
   
 ### <a name="configure-an-entity-specific-dashboard"></a>Configurar un panel específico de la entidad  
- Un panel específico de la entidad es un panel de varias secuencias. La configuración de este panel es similar a configurar un panel de varias secuencias de la página principal, pero se realiza en un lugar distinto de la interfaz de usuario y hay otras diferencias de menor importancia. Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel específico de la entidad se preestablecen en la entidad para la que está creando el panel.  
+ Un panel específico de la entidad es un panel de varias secuencias. La configuración de este panel es similar a configurar un panel de varias secuencias de la página principal, pero se realiza en un lugar distinto de la interfaz de usuario y hay otras diferencias de menor importancia. 
+
+Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel específico de la entidad se preestablecen en la entidad para la que está creando el panel.  
   
 1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
 3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**.  
-  
 4.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.    
   
 5.  Cuando se abre el formulario del panel, la **Entidad de filtro** se preestablece en la entidad para la que está creando el panel. La lista desplegable **Vista de entidad** contiene las vistas disponibles para la entidad. Seleccione la vista y rellene el resto de la información necesaria en la página.  
@@ -252,11 +235,11 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
 ### <a name="configure-a-single-stream-dashboard"></a>Configurar un panel de secuencia única  
  La configuración de un panel de secuencia única es similar a la del panel de varias secuencias. Todos los pasos de navegación de la interfaz de usuario son los mismos que para el panel de varias secuencias. Puede elegir un diseño que incluya ventanas o el diseño que no las incluye. Si se incluyen ventanas, siempre se muestran en el panel. Para configurar una ventana, seleccione el icono del centro de la ventana. Cuando se abre la ventana **Agregar ventana**, complete los datos necesarios. La ilustración siguiente es un ejemplo de configuración de ventanas.  
   
- ![Agregar una ventana al panel de secuencia única](../model-driven-apps/media/interactive-dashboard-add-tile-single-stream.png "Agregar una ventana al panel de secuencia única")  
+ ![Agregar una ventana al panel de secuencia única](media/add-tile.png "Agregar una ventana al panel de secuencia única")  
   
 <a name="BKMK_ConfigureColors"></a>   
 ## <a name="configure-dashboard-colors"></a>Configurar los colores del panel  
- Para todos los campos del tipo **Conjunto de opciones** y **Dos opciones**, como **Tipo de caso**, **Se ha remitido a una instancia superior** o **Prioridad** de la entidad `Case`, puede configurar un color determinado que aparecerá en los gráficos y secuencias para valores de campos específicos. Por ejemplo, los casos prioritarios se pueden mostrar en rojo, los casos de prioridad media en azul, y los casos de prioridad baja en verde en los gráficos interactivos. En las secuencias, habrá una barra vertical fina de color junto a la descripción del elemento de trabajo.  
+ Para todos los campos del tipo **Conjunto de opciones** y **Dos opciones**, como **Tipo de caso**, **Se ha remitido a una instancia superior** o **Prioridad** de la entidad **Caso**, puede configurar un color determinado que aparecerá en los gráficos y secuencias para valores de campos específicos. Por ejemplo, los casos prioritarios se pueden mostrar en rojo, los casos de prioridad media en azul, y los casos de prioridad baja en verde en los gráficos interactivos. En las secuencias, habrá una barra vertical fina de color junto a la descripción del elemento de trabajo.  
   
 > [!NOTE]
 >  La codificación de color no está disponible para los gráficos de etiqueta y los gráficos de anillos. Estos gráficos aparecen en el panel en tonos de blanco, gris, y negro.  
@@ -277,13 +260,17 @@ El siguiente procedimiento proporciona los pasos para habilitar los roles de seg
 En el siguiente ejemplo, modificamos el color para el campo **Se ha remitido a una instancia superior**. Use el botón **Editar** para abrir el cuadro de diálogo **Modificar valor de lista**:  
  
  > [!div class="mx-imgBorder"] 
- > ![Cambiar color en el panel](../model-driven-apps/media/interactive-dashboards-change-color-edit-button.PNG "Cambiar color en el panel")  
+ > ![Cambiar color en el panel](media/edit-color.png "Cambiar color en el panel")  
   
 Cuando se abra el cuadro de diálogo **Modificar valor de lista**, elija el color como se muestra aquí:  
   
- ![Modificar el color del panel](../model-driven-apps/media/interactive-dashboards-modify-color-value.png "Modificar el color del panel")  
+ ![Modificar el color del panel](media/modify-color.png "Modificar el color del panel")  
+
+De forma similar, si va al campo **Prioridad** para modificar los colores de las opciones de prioridad de casos, elija el color en la subárea **Opciones** de la pestaña **General**, tal como se muestra a continuación:
+
+ ![Modificar el color del panel](media/priority-color-modify.png "Cambiar color del panel para prioridad de caso")  
   
-### <a name="next-steps"></a>Pasos siguientes  
+### <a name="see-also"></a>Vea también  
  
 [Crear o editar paneles](create-edit-dashboards.md)
  

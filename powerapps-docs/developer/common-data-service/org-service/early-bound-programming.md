@@ -1,5 +1,5 @@
 ---
-title: Programación de enlace en tiempo de ejecución y enlace en tiempo de compilación con el servicio de la organización (Common Data Service) | Microsoft Docs
+title: Programación en tiempo de ejecución y en tiempo de compilación con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Describe los diferentes estilos de programación disponibles al usar los ensamblados SDK de .NET con el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -136,7 +136,26 @@ El estilo que elija depende de usted. La siguiente tabla ofrece las ventajas y l
 
 Porque todas las clases heredan desde la clase <xref:Microsoft.Xrm.Sdk.Entity> que se utiliza con programación de enlace en tiempo de ejecución, puede trabajar con las entidades, los atributos y las relaciones no definidas en las clases.
 
-### <a name="example"></a>Ejemplo
+### <a name="examples"></a>Ejemplos
+
+El siguiente ejemplo muestra una forma de mezclar los de enlace en tiempo de ejecución y en tiempo de compilación utilizando <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.  
+  
+```csharp  
+// Create an organization service context object  
+AWCServiceContext context = new AWCServiceContext(_serviceProxy);  
+  
+// Instantiate an account object using the Entity class.  
+Entity testaccount = new Entity("account");  
+  
+// Set several attributes. For account, only the name is required.   
+testaccount["name"] = "Fourth Coffee";  
+testaccount["emailaddress1"] = "marshd@contoso.com";  
+  
+// Save the entity using the organization service context object.  
+context.AddToAccountSet(testaccount);  
+context.SaveChanges();  
+  
+```  
 
 Si un atributo personalizado no estaba incluido en las clases generadas, aún puede usarlo.
 
@@ -152,6 +171,17 @@ var account = new Account();
 
 //Create the account
 Guid accountid = svc.Create(account);
+```
+
+#### <a name="assign-an-early-bound-instance-to-a-late-bound-instance"></a>Asignar una instancia con enlace en tiempo de compilación a una instancia con enlace en tiempo de ejecución  
+ El siguiente ejemplo muestra cómo asignar una instancia con enlace en tiempo de compilación a una instancia con enlace en tiempo de ejecución.  
+  
+```csharp
+Entity incident = ((Entity)context.InputParameters[ParameterName.Target]).ToEntity<Incident>();  
+Task relatedEntity = new Task() { Id = this.TaskId };  
+  
+incident.RelatedEntities[new Relationship("Incident_Tasks")] =   
+new EntityCollection(new Entity[] { relatedEntity.ToEntity<Entity>() });  
 ```
 
 ### <a name="see-also"></a>Vea también

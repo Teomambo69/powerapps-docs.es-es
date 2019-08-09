@@ -14,6 +14,8 @@ ms.assetid: 66599c2f-6651-4b27-92da-a38897acdfb5
 
 # <a name="resources-element"></a>elemento de recursos
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [resources-description](includes/resources-description.md)]
 
 ## <a name="parent-elements"></a>Elementos primarios

@@ -2,8 +2,8 @@
 title: Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada en PowerApps | MicrosoftDocs
 description: Aprenda a configurar el control de cuadrícula para la aplicación
 keywords: ''
-ms.date: 06/06/2018
-ms.service: crm-online
+ms.date: 06/03/2019
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -74,7 +74,8 @@ Cuando se agrega el control de cuadrícula de solo lectura a la lista de control
 
     ![Editar comportamiento de redistribución](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "Editar comportamiento de redistribución")
 
-    b. Seleccione el tipo de flujo de cuadrícula del desplegable **Enlazar a opciones estáticas**.
+    b. Seleccione el tipo de flujo de cuadrícula del desplegable **Enlazar a opciones estáticas**. 
+
     |Tipo de flujo|Descripción|
     |--------------|--------------------|
     |**Redistribución**|Permite a la cuadrícula mostrarse en modo lista en función de cuando no haya espacio suficiente de visualización.|

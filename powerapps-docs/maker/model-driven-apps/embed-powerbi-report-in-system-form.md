@@ -29,9 +29,9 @@ search.app:
 Puede usar informes de Power BI en aplicaciones basadas en modelos PowerApps para incluir informes y análisis enriquecido en los formularios del sistema y permitir a los usuarios conseguir más. Esto desbloquea la capacidad de agregar datos en entre los sistemas, y adaptarlos al contexto de un solo registro.
  
 ## <a name="prerequisites"></a>Requisitos previos
-Insertar contenido de Power BI es una característica opcional y está deshabilitada en todos los entornos de forma predeterminada. Debe habilitarla para poder insertar contenido de Power BI. Más información: [Visualizaciones de Power BI en la organización](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
+Insertar contenido de Power BI es una característica opcional y está deshabilitada en todos los entornos de forma predeterminada. Debe habilitarla para poder insertar contenido de Power BI. Más información: [Visualizaciones de Power BI en la organización](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
 
-Esta característica requiere exportar una solución, modificarla para agregar el fragmento de código XML, y luego volver a importarla al entorno. Asegúrese de importar los cambios en el entorno de destino mediante una solución administrada únicamente. Vea [Importar, actualizar y exportar soluciones](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) para obtener instrucciones sobre instalar una actualización en una solución administrada existente.
+Esta característica requiere exportar una solución, modificarla para agregar el fragmento de código XML, y luego volver a importarla al entorno. Asegúrese de importar los cambios en el entorno de destino mediante una solución administrada únicamente. Vea [Importar, actualizar y exportar soluciones](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) para obtener instrucciones sobre instalar una actualización en una solución administrada existente.
 
 ## <a name="embed-without-contextual-filtering"></a>Insertar sin filtrado contextual
 Puede usar los informes y ventanas de Power BI simplemente insertándolos, y obtener el mismo informe exacto. Esto no implica contextualizarlos en el formulario actual basado en modelos y, por tanto, obtiene el mismo informe o ventana en todos los registros de la entidad. Por ejemplo, el siguiente informe muestra la ubicación geográfica de todas las cuentas a la vez, y es muy útil para mostrar la información de resumen.
@@ -90,7 +90,7 @@ El filtrado se realiza agregando un elemento `<PowerBIFilter>` en el bloque `<pa
         <PowerBIGroupId>00000000-0000-0000-0000-000000000000</PowerBIGroupId>
         <PowerBIReportId>544c4162-6773-4944-900c-abfd075f6081</PowerBIReportId>
         <TileUrl>https://xyz.powerbi.com/reportEmbed?reportId=544c4162-6773-4944-900c-abfd075f6081</TileUrl>
-        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"</PowerBIFilter>
+        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"}}</PowerBIFilter>
     </parameters>
 </control>
 ```
@@ -140,14 +140,14 @@ Puede crear expresiones de filtro más complejas consultando ejemplos de [Constr
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. La vista de los datos de informe que se muestran en PowerApps es igual que en Power BI, y los roles de seguridad y los privilegios de PowerApps no afectan a los datos que se muestran. Por lo tanto, los datos son esencialmente iguales que los que vería el creador del conjunto de datos de Power BI. Para aplicar las restricciones de acceso a datos similares a los roles de seguridad y equipos de PowerApps, use [Seguridad de nivel de fila (RLS) con Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-rls).
+5. La vista de los datos de informe que se muestran en PowerApps es igual que en Power BI, y los roles de seguridad y los privilegios de PowerApps no afectan a los datos que se muestran. Por lo tanto, los datos son esencialmente iguales que los que vería el creador del conjunto de datos de Power BI. Para aplicar las restricciones de acceso a datos similares a los roles de seguridad y equipos de PowerApps, use [Seguridad de nivel de fila (RLS) con Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 6. Si el formulario no muestra el informe de Power BI después de importar la solución y de publicar las personalizaciones, ábrala en el editor de formularios basados en modelos y guárdelo, para que se genere el JSON de formulario.
 
 
 ### <a name="see-also"></a>Vea también
 
-[Insertar un panel de Power BI en un panel personal basado en modelos de PowerApps](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Insertar un panel de Power BI en un panel personal basado en modelos de PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[Uso de Power BI con Dynamics 365 for Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi)
+[Integrar Power BI Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [Importar, actualizar y exportar soluciones](../common-data-service/import-update-export-solutions.md)

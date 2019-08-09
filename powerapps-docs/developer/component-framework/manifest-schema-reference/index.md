@@ -19,11 +19,6 @@ ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
 
 Esta sección contiene la documentación de referencia del esquema de manifiesto generado con el PowerApps CLI.
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 |Elemento|Descripción|
 |----|-----------|
 |[code](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|

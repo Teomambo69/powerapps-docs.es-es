@@ -1,8 +1,8 @@
 ---
 title: Definir claves alternativas para hacer referencia a registros con Common Data Service | MicrosoftDocs
-description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a los registros de Common Data Service
+description: Aprenda a definir claves alternativas que se pueden usar para hacer referencia a registros en Common Data Service
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -75,6 +75,9 @@ Solo estos tipos de campos se pueden usar para crear claves alternativas:
  - Decimal
  - Número entero (entero)
  - Una sola línea de texto (cadena)
+ - Fecha y hora
+ - Búsqueda
+ - Conjunto de opciones
 
 ### <a name="number-of-keys"></a>Número de claves
 

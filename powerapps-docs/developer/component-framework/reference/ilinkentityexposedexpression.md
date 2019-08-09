@@ -14,34 +14,39 @@ ms.assetid: e9a70a4c-71e6-4a06-bcc9-6da37cdf52c1
 
 # <a name="ilinkentityexposedexpression"></a>ILinkEntityExposedExpression
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [ilinkentityexposedexpression-description](includes/ilinkentityexposedexpression-description.md)]
 
+## <a name="properties"></a>Propiedades
+
 ## <a name="name"></a>nombre
-El "nombre" de la entidad para vincular.
+
+El `name` de la entidad para vincular.
 
 **Tipo**:  `string`
 
 ## <a name="from"></a>from
 
-El atributo "desde" en la relación vínculo-entidad.
+El atributo `from` en la relación vínculo-entidad.
 
 **Tipo**:  `string`
 
 ## <a name="to"></a>to
 
-El atributo "hasta" en la relación vínculo-entidad.
+El atributo `to` en la relación vínculo-entidad.
 
 **Tipo**:  `string`
 
 ## <a name="linktype"></a>linkType
 
-El “tipo” de vínculo, al que hace referencia el atributo vínculo-entidad. '
+El `type` de vínculo, al que hace referencia el atributo vínculo-entidad. '
 
 **Tipo**:  `string`
 
 ## <a name="alias"></a>alias
 
-El "alias" de la relación vínculo-entidad.
+El `alias` de la relación vínculo-entidad.
 
 **Tipo**:  `string`
 

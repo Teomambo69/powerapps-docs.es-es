@@ -1,5 +1,5 @@
 ---
-title: Usar el proveedor de datos de OData v4 de la entidad virtual con Common Data Service | MicrosoftDocs
+title: Uso del proveedor de datos OData v4 de entidades virtuales con Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
@@ -28,16 +28,16 @@ En este tema se describe cómo configurar el proveedor de datos de OData v4 así
 
 ## <a name="odata-v4-data-provider-best-practices"></a>Prácticas recomendadas del proveedor de datos de OData v4
 
-- Common Data Service requiere que todas las entidades tengan un atributo de id., este identificador es único y el valor debe ser un GUID.  Solo puede asignar los campos de id. a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en Common Data Service.
--  Las entidades de OData que tengan propiedades con valores nulos se deben configurar para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de la entidad de OData con un valor nulo =False debe tener el campo asignado en el conjunto de atributos de **Requisitos de campo** de Common Data Service como **Requerido por la empresa**. 
+- Common Data Service requiere que todas las entidades tengan un atributo de id. este identificador es único y el valor debe ser un GUID.  Solo puede asignar los campos de id. a campos externos con el tipo de datos `Edm.Guid`.  No puede asignar un tipo de datos `Edm.Int32` a un campo de tipo de datos de identificador único en Common Data Service.
+-  Las entidades de OData que tengan propiedades con valores nulos se deben configurar para que coincidan con el campo asignado en la entidad virtual. Por ejemplo, una propiedad de la entidad de OData con un valor nulo =False debe tener el campo asignado en el conjunto de atributos de **Requisito de campo** de Common Data Service como **Requerido por la empresa**. 
 - Para recuperar consultas múltiples como aquellas resultantes de cargar datos en una cuadrícula, debe controlar el tamaño del conjunto de datos devuelto desde el origen de datos externo; para ello, use los parámetros para seleccionar y filtrar la consulta.
 - Si no está habilitado, los administradores del sistema deben habilitar la opción de seguimiento de complementos. Una habilitada, todos los errores del extremo de OData se capturan en el registro de seguimiento de complementos. Más información: [Guía del administrador: Cuadro de diálogo Configuración del sistema - Pestaña Personalización](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
 
 ## <a name="data-type-mapping"></a>Asignaciones de tipos de datos
 
-En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Entity Data Model (EDM) con los tipos de datos de Common Data Service. 
+En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Entity Data Model (EDM) con los tipos de datos Common Data Service. 
 
-|Tipos de datos de OData|Tipo de datos de Common Data Service  |
+|Tipos de datos de OData|Tipos de datos de Common Data Service  |
 |---------|---------|
 |`Edm.Boolean`|Dos opciones|
 |`Edm.DateTime`|Fecha y hora|
@@ -52,9 +52,9 @@ En la siguiente tabla se enumeran las asignaciones de tipo de datos de OData Ent
 
 ### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>Tipos de datos de OData EDM que no se admiten para asignarlos con entidades virtuales 
 
-- `Edm.Binary `
+- `Edm.Binary`
 - `Edm.Time` 
-- `Edm.Float `
+- `Edm.Float`
 - `Edm.Single` 
 - `Edm.Int16` 
 - `Edm.Byte` 

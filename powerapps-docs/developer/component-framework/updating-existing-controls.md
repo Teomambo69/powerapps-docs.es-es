@@ -11,17 +11,11 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
 ---
-# <a name="updating-existing-custom-controls"></a>Actualizar controles personalizados existentes 
+# <a name="updating-existing-custom-components"></a>Actualizar componentes personalizados existentes 
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Si usted es participante de Versión preliminar privada del marco de componentes de PowerApps y ha creado ya componentes personalizados, deberá realizar algunas actualizaciones de menor importancia para que sea compatible con las nuevas estructuras de proyecto centradas en ALM. Para usar las nuevas herramientas de creación del marco de componentes de PowerApps con su origen de componentes personalizados existentes del marco de componentes de PowerApps, algunos cambios son necesarios.
-
-> [!IMPORTANT]
-> - Las herramientas de Microsoft PowerApps CLI son una versión preliminar y pueden ser diferentes de la versión lanzada comercialmente.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - Si proporciona comentarios acerca del software a Microsoft, usted concede a Microsoft, sin cargo alguno, el derecho de usar, compartir y comercializar sus comentarios de cualquier modo y con cualquier objetivo. 
-> - Microsoft no ofrece soporte técnico para esta versión preliminar de característica. El soporte técnico de Microsoft no podrá ayudarle con los problemas o las preguntas que pueda tener.
 
 ## <a name="creating-an-empty-project"></a>Crear un proyecto vacío
 
@@ -83,7 +77,7 @@ Los proyectos antiguos requería la creación y edición manuales de un archivo 
 El archivo de escritura cambia de nombre a `ManifestTypes.d.ts` y ahora se genera en una subcarpeta llamada `generated`. Además, los tipos `InputsOutputs.IInputBag` y `InputsOutputs.IOutputBag` cambian de nombre a `IInputs` y `IOutputs` respectivamente.
 Para utilizar el nuevo archivo de escritura:
 
-1. Importe el nuevo archivo `ManifestTypes.d.ts` agregando la siguiente línea en la parte superior del archivo de origen del componente:  import { IInputs, IOutputs } from `./generated/ManifestTypes`.
+1. Importe el nuevo archivo `ManifestTypes.d.ts` agregando la siguiente línea en la parte superior del archivo de origen del componente: { IInputs, IOutputs } from `./generated/ManifestTypes`.
 2. Cambie el nombre de todas las referencias de **InputsOutputs.IInputBag** a **IInputs**.
 3. Cambie el nombre de todas las referencias de **InputsOutputs.IOutputBag** a IOutputs**.
 4. Compile el proyecto para generar un nuevo archivo **ManifestTypes.d.ts** usando el comando `npm run build`.

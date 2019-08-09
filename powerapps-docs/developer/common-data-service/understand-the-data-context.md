@@ -1,14 +1,14 @@
 ---
-title: Entender el contexto de ejecución (Common Data Service) | Microsoft Docs
+title: Conocer el contexto de ejecución (Common Data Service) | Microsoft Docs
 description: Información sobre los datos que se pasan a los complementos cuando se ejecutan.
 ms.custom: ''
-ms.date: 1/23/2019
-ms.reviewer: ''
+ms.date: 06/20/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: phecke
-ms.author: pehecke
-manager: kvivek
+author: JimDaly
+ms.author: jdaly
+manager: ryjones
 search.audienceType:
   - developer
 search.app:
@@ -18,7 +18,11 @@ search.app:
 
 # <a name="understand-the-execution-context"></a>Entender el contexto de ejecución
 
-La **Canalización de ejecución de eventos** pasa a los complementos registrados una cantidad grande de datos sobre la operación que se procesa en estos momentos y el entorno de ejecución del complemento. Puede obtener acceso a estos datos en el código del complemento si establece una variable que implemente la interfaz <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>:
+La **Canalización de ejecución de eventos** pasa a los complementos registrados una cantidad grande de datos sobre la operación que se procesa en estos momentos y el entorno de ejecución del complemento.
+
+## <a name="for-plug-ins"></a>Para complementos
+
+Con complementos puede obtener acceso a estos datos en el código si establece una variable que implemente la interfaz <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>:
 
 ```csharp
 // Obtain the execution context from the service provider.  
@@ -26,9 +30,47 @@ IPluginExecutionContext context = (IPluginExecutionContext)
     serviceProvider.GetService(typeof(IPluginExecutionContext));
 ```
 
-Este <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> proporciona información sobre la <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.Stage> para el que está registrado el complemento, así como información sobre el <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext> que proporciona información sobre cualquier operación en otro complemento que activó la operación actual.
+Este <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> proporciona información sobre la <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.Stage> para la que está registrado el complemento así como información sobre el <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext> Consulte [ParentContext](#parentcontext)
 
-Pero el resto de la información disponible es proporcionada por la interfaz <xref:Microsoft.Xrm.Sdk.IExecutionContext> que implementa esta clase. Todas las propiedades de esta clase proporcionan información útil que puede necesitar para acceder en el código, pero dos de las más importante son las propiedades <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>. 
+## <a name="for-custom-workflow-activities"></a>Para actividades personalizadas del flujo de trabajo
+
+Con actividades personalizadas del flujo de trabajo puede obtener acceso a estos datos en el código si establece una variable que implemente la interfaz <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>:
+
+```csharp
+// Obtain the execution context using the GetExtension method.  
+protected override void Execute(CodeActivityContext context)
+{
+ IWorkflowContext workflowContext = context.GetExtension<IWorkflowContext>();
+...
+```
+
+Este <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> proporciona información sobre el flujo de trabajo en el que se ejecuta el complemento.
+
+|Propiedad  |Descripción  |
+|---------|---------|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.ParentContext>|Obtiene el contexto principal. Consulte [ParentContext](#parentcontext)|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.StageName>|Obtiene la información de la fase de la instancia de proceso.|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowCategory>|Obtiene la información de categoría del proceso de la instancia del proceso: Es un flujo de trabajo o un diálogo (obsoleto).|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode>|Indica cómo se debe ejecutar el flujo de trabajo. 0 = asincrónico, = 1 sincrónico|
+
+## <a name="parentcontext"></a>ParentContext
+
+El `ParentContext` proporciona información sobre cualquier operación que desencadene la ejecución del complemento o de la actividad de flujo de trabajo personalizada.
+
+Salvo casos documentos específicos, debe evitar tomar una dependencia de los valores que encuentre en `ParentContext` para aplicar la lógica de negocios. El orden específico en el que se realizan las operaciones no está garantizado y puede cambiar a lo largo del tiempo.
+
+Si elige tomar una dependencia en valores encontrados en el `ParentContext`, deberá dar pasos para asegurarse de que el código es resistente para adaptarse a cambios potenciales. Debe probar la lógica periódicamente para comprobar que las condiciones de las depende se mantienen en vigor a lo largo del tiempo.
+
+## <a name="executioncontext"></a>ExecutionContext
+
+El resto de la información disponible es proporcionada por la interfaz <xref:Microsoft.Xrm.Sdk.IExecutionContext> que implementan las clases <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> y <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.
+
+Para los complementos todas las propiedades de esta clase proporcionan información útil que puede necesitar para tener acceso desde su código. 
+
+> [!NOTE]
+> Para las actividades de flujo de trabajo personalizadas no se usan normalmente estas propiedades.
+
+Dos de las más importantes son las propiedades <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>.
 
 Otras propiedades usadas con frecuencia son <xref:Microsoft.Xrm.Sdk.IExecutionContext.SharedVariables>, <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages>.
 
@@ -44,6 +86,7 @@ Los valores <xref:Microsoft.Xrm.Sdk.ParameterCollection> se definen como estruct
 ```csharp
 var entity = (Entity)context.InputParameters["Target"];
 ```
+
 Use la documentación de <xref:Microsoft.Xrm.Sdk.Messages> y <xref:Microsoft.Crm.Sdk.Messages> para conocer los nombres de los mensajes definidos en los ensamblados del SDK. Para acciones personalizadas, consulte los nombres de los parámetros definidos en el sistema.
 
 ## <a name="inputparameters"></a>InputParameters
@@ -106,10 +149,12 @@ public class PostOperation : IPlugin
     }
 }
 ```
+
 > [!IMPORTANT]
 > Cualquier tipo de datos agregado a la colección de variables compartidas debe ser serializable; en caso contrario, el servidor no sabrá como serializar los datos y la ejecución de complementos no se realizará correctamente.  
-  
- Para un complemento registrado en la fase 20 ó 40, para tener acceso a las variables compartidas de un complemento registrado en la fase 10 que se ejecuta al crear, actualizar, eliminar o por una clase <xref:Microsoft.Crm.Sdk.Messages.RetrieveExchangeRateRequest>, debe tener acceso a la colección <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>.**SharedVariables**. Para el resto de los casos, <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>.**SharedVariables** contiene la colección. 
+
+> [!NOTE]
+> Para un complemento registrado para las fases **PreOperation** o **PostOperation** para tener acceso a las variables compartidas de un complemento registrado para la fase **PreValidation** que se ejecuta al **Crear**, **Actualizar**, **Eliminar** o por una <xref:Microsoft.Crm.Sdk.Messages.RetrieveExchangeRateRequest>, debe tener acceso a la colección <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>**.SharedVariables**. Para el resto de los casos, <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>.**SharedVariables** contiene la colección.
 
 ## <a name="entity-images"></a>Imágenes de entidad
 
@@ -123,7 +168,12 @@ Al definir una imagen de la entidad, especifique un valor de alias de entidad qu
 var oldAccountName = (string)context.PreEntityImages["a"]["name"];
 ```
 
-Más información: [Definir imágenes de entidad](register-plug-in.md#define-entity-images)
+Más información:
+
+- [Definir imágenes de entidad](register-plug-in.md#define-entity-images)
+- [Imágenes de la entidad para las extensiones de flujo de trabajo](workflow/workflow-extensions.md#entity-images-for-workflow-extensions)
+
+
 
 ### <a name="see-also"></a>Vea también
 

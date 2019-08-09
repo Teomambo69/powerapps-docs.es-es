@@ -1,6 +1,6 @@
 ---
-title: Usar seguimiento de cambios para sincronizar datos con sistemas externos (Common Data Service) | Microsoft Docs
-description: La característica de seguimiento de Dynamics 365 Customer Engagement proporciona una forma de mantener los datos sincronizados con alto rendimiento detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez.
+title: Uso del seguimiento de cambios para sincronizar los datos con sistemas externos (Common Data Service) | Microsoft Docs
+description: La característica de seguimiento de Dynamics 365 Customer Engagement proporciona una forma de mantener los datos sincronizados de forma eficiente detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Uso del seguimiento de cambios para sincronizar los datos con sistemas externos
 
-La característica de seguimiento de Common Data Service proporciona una forma de mantener los datos sincronizados con alto rendimiento detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez. Anteriormente, sin esta nueva característica, era difícil crear un mecanismo confiable y eficaz para determinar los registros que se habían cambiado en Common Data Service. Este tema analiza cómo recuperar los cambios de una entidad.  
+La característica de seguimiento de Common Data Service proporciona una forma de mantener los datos sincronizados de forma eficiente detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez. Anteriormente, sin esta nueva característica, era difícil crear un mecanismo confiable y eficaz para determinar los registros que se habían cambiado en Common Data Service. Este tema analiza cómo recuperar los cambios de una entidad.  
   
 <a name="BKMK_enable"></a>   
 ## <a name="enable-change-tracking-for-an-entity"></a>Habilitar el seguimiento de cambios de una entidad  
 
- Antes de recuperar los cambios para una entidad, asegúrese de que la característica de seguimiento de cambios está habilitada para esa entidad. Esta característica se pueden habilitar en la interfaz de usuario (UI) de personalización o mediante programación estableciendo la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled> como `True`. La anotación `Org.OData.Capabilities.V1.ChangeTracking ` se agrega a los conjuntos de entidades que tienen habilitado el seguimiento de cambios. Para ver las anotaciones en los metadatos de la entidad, haga lo siguiente 
+ Antes de recuperar los cambios para una entidad, asegúrese de que la característica de seguimiento de cambios está habilitada para esa entidad. Esta característica se pueden habilitar en la interfaz de usuario (UI) de personalización o mediante programación estableciendo la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled> como `True`. La anotación `Org.OData.Capabilities.V1.ChangeTracking` se agrega a los conjuntos de entidades que tienen habilitado el seguimiento de cambios. Para ver las anotaciones en los metadatos de la entidad, haga lo siguiente 
 
  ```http 
  GET [Organization URI]/api/data/v9.0/$metadata?annotations=true

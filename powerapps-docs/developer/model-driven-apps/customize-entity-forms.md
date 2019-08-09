@@ -3,8 +3,7 @@ title: Personalización de los formularios de la entidad (aplicaciones basadas e
 description: 'Los formularios ofrecen la interfaz de usuario (UI) que los usuarios usan para crear, ver, o editar registros de la entidad. Use el diseñador de formulario en las herramientas de personalización para crear y modificar formularios de entidad. Este tema le confiere la información necesaria para crear o editar formularios mediante programación.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -56,10 +55,10 @@ Los formularios ofrecen la interfaz de usuario (UI) que los usuarios usan para c
 |     `Description`     |                `<Descriptions>`                 | `Description` es una cadena y `<Descriptions>` contiene las etiquetas localizadas para la descripción del formulario.<br /><br /> Las etiquetas localizadas se pueden recuperar mediante <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest>. |
 | `FormActivationState` |             `<FormActivationState>`             |                                  Especifica el estado del formulario.<br /><br /> Solo los formularios de tipo "principal" se pueden desactivar.<br /><br /> Valores válidos:<br /><br /> -   0: Inactivo<br />-   1: Activo                                  |
 |       `FormId`        |                   `<formid>`                    |                                                                                                     Identificador único del formulario                                                                                                     |
-|  `FormPresentation`   |              `<FormPresentation>`               |                                     Especifica si este formulario está en el diseño actualizado de la UI en Common Data Service.                                      |
+|  `FormPresentation`   |              `<FormPresentation>`               |                                     Especifica si este formulario está en el diseño actualizado de la interfaz de usuario en Common Data Service.                                      |
 |       `FormXml`       |                    `<form>`                     |                                                                                                Representación XML del diseño de formularios.                                                                                                 |
 |  `IntroducedVersion`  |              `<IntroducedVersion>`              |                                                                                          Versión de la solución en la que se agregó el formulario.                                                                                          |
-|     `IsAIRMerged`     |                       N/D                       |                                           Especifica si este formulario se combina con el diseño actualizado de la UI en Common Data Service.                                           |
+|     `IsAIRMerged`     |                       N/D                       |                                           Especifica si este formulario se combina con el diseño actualizado de la interfaz de usuario en Common Data Service.                                           |
 |   `IsCustomizable`    |               `<IsCustomizable>`                |                            Información que especifica si se puede personalizar este componente.<br /><br /> Esta propiedad administrada se aplica únicamente si el formulario se creó con la importación de una solución administrada.                            |
 |      `IsDefault`      |                       N/A                       |                                                                          Información que especifica si el formulario o el panel es el predeterminado del sistema.                                                                          |
 |        `Name`         |               `<LocalizedNames>`                |       `Name` es una cadena y `<LocalizedNames>` contiene las etiquetas localizadas para el nombre del formulario.<br /><br /> Las etiquetas localizadas se pueden recuperar mediante <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest>.       |

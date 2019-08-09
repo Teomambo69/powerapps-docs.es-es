@@ -1,9 +1,9 @@
 ---
-title: Extensiones de flujo de trabajo (Common Data Service) | Microsoft Docs
+title: Extensiones del flujo de trabajo (Common Data Service | Microsoft Docs
 description: Puede extender las opciones disponibles en el diseñador para flujos de trabajo. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase CodeActivity. Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 06/20/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -17,13 +17,16 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Extensiones de flujo de trabajo
 
-Puede extender las opciones disponibles en el diseñador para flujos de trabajo que se usan en Common Data Service. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
+Puede extender las opciones disponibles en el diseñador para flujos de trabajo utilizado en Common Data Service. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
 
 Puede usar estas extensiones personalizadas en el diseñador usado para flujos de trabajo, acciones personalizadas, y diálogos.
 
 > [!IMPORTANT]
-> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service para aplicaciones](../../../maker/common-data-service/cds-processes.md)
+> 
 > Use las extensiones de flujo de trabajo cuando un proceso declarativo no cumpla su requisito.
+> 
+> Este contenido es para los ensamblados de flujo de trabajo de Common Data Service y se aplica a aplicaciones Dynamics 365 for Customer Engagement (en línea) también. Las opciones para implementaciones locales de aplicaciones Dynamics 365 for Customer Engagement se describen aquí: [Opciones locales](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options).
 
 ## <a name="when-to-create-a-workflow-extension"></a>Cuándo crear una extensión de flujo de trabajo
 
@@ -75,7 +78,7 @@ Más información:
 
 Puesto que los procesos usan la base de Windows Workflow puede registrar un ensamblado construido mediante la [Biblioteca de actividades de .NET Framework](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) que define las actividades personalizadas que aparecerán en el editor de la aplicación web y serán invocadas cuando el proceso se ejecute.
 
-Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el [Método Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma de Common Data Service cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
+Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el método [Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma Common Data Service cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
 
 Las actividades de flujo de trabajo también pueden definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que Common Data Service usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
 
@@ -87,10 +90,10 @@ Puede usar la edición gratuita Visual Studio 2017 Community o las ediciones Pro
 
 Para comprobar la instalación o agregar este componente:
 
-1. Abra Visual Studio 2017
+1. Abrir Visual Studio 2017
 1. Seleccione **Herramientas** > **Obtener herramientas y características…** . Se abrirá el instalador de Visual Studio
 1. En la pestaña **Cargas de trabajo**, asegúrese de que la carga de trabajo **Desarrollo de escritorio .NET** está seleccionada.
-    ![Cargas de trabajo de Visual Studio necesarias](media/visual-studio-workloads-workflow-extensions.png)
+    ![Necesario para cargas de trabajo de Visual Studio](media/visual-studio-workloads-workflow-extensions.png)
 1. Seleccione **Componentes individuales** y baje hasta la sección **Actividades de desarrollo**.
     ![Componentes individuales de Visual Studio requeridos](media/visual-studio-individual-components-workflow-extensions.png)
 1. Si **Windows Workflow Foundation** no está seleccionado, selecciónelo. El componente **Windows Communication Foundation** se incluirá también.
@@ -102,7 +105,9 @@ Más información: [Instalación de Visual Studio 2017](/visualstudio/install/in
 
 Estos son pasos generales usados para crear una actividad de flujo de trabajo personalizada mediante Visual Studio. Para ver un ejemplo paso a paso completo consulte [Tutorial: Crear extensión de flujo de trabajo ](tutorial-create-workflow-extension.md).
 
-1. Crear un proyecto de biblioteca de actividades de flujo de trabajo mediante .NET Framework 4.6.2 como marco de trabajo de destino
+1. Crear un proyecto de biblioteca de actividades de flujo de trabajo mediante .NET Framework 4.6.2 como marco de trabajo de destino.
+    > [!IMPORTANT]
+    > Si bien los ensamblados construidos con versiones posteriores deben funcionar normalmente, si usan características introducidas después de 4.6.2 se producirá un error.
 1. Eliminar el archivo Activity1.xaml generado con el proyecto
 1. Instalar el paquete [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet.
 
@@ -143,7 +148,7 @@ Estos son pasos generales usados para crear una actividad de flujo de trabajo pe
 
 ## <a name="add-parameters"></a>Agregar parámetros
 
-Al definir los parámetros para la clase debe definirlos como tipos [InArgument<T>](/dotnet/api/system.activities.inargument-1), [OutArgument<T>](/dotnet/api/system.activities.outargument-1), o [InOutArgument<T>](/dotnet/api/system.activities.inoutargument-1). Estos tipos proporcionan métodos heredados de una [Clase de argumento](/dotnet/api/system.activities.argument) común para Obtener o Establecer los parámetros. El código usará estos métodos en el método Execute . Más información: [Agregar código al método Execute](#add-your-code-to-the-execute-method)
+Al definir los parámetros para la clase debe definirlos como tipos [InArgument\<T>](/dotnet/api/system.activities.inargument-1), [OutArgument\<T>](/dotnet/api/system.activities.outargument-1) o [InOutArgument\<T>](/dotnet/api/system.activities.inoutargument-1). Estos tipos proporcionan métodos heredados de una [Clase de argumento](/dotnet/api/system.activities.argument) común para Obtener o Establecer los parámetros. El código usará estos métodos en el método Execute . Más información: [Agregar código al método Execute](#add-your-code-to-the-execute-method)
 
 Si su actividad de flujo de trabajo personalizada utiliza parámetros de entrada o salida debe agregar los atributos .NET adecuados a las propiedades de clase pública que las definen. Estos datos los leerá el diseñador de procesos para definir cómo los parámetros se pueden configurar en el diseñador de procesos.
 
@@ -268,7 +273,7 @@ namespace SampleWorkflowActivity
 
 ### <a name="get-contextual-information"></a>Obtener información contextual
 
-Cuando el código requiere información contextual puede tener acceso a esta mediante el [método CodeActivityContext.GetExtension<T>](/dotnet/api/system.activities.activitycontext.getextension) con la interfaz <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>. Este objeto se obtiene de la interfaz <xref:Microsoft.Xrm.Sdk.IExecutionContext> que proporciona acceso a muchas propiedades de sólo lectura que describen el contexto de la operación. El `IWorkflowContext` proporciona información contextual similar específica del flujo de trabajo que se ejecuta que usa el ensamblado de flujo de trabajo.
+Cuando el código requiere información contextual puede tener acceso a esta mediante el método [CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension) con la interfaz <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>. Este objeto se obtiene de la interfaz <xref:Microsoft.Xrm.Sdk.IExecutionContext> que proporciona acceso a muchas propiedades de sólo lectura que describen el contexto de la operación. El `IWorkflowContext` proporciona información contextual similar específica del flujo de trabajo que se ejecuta que usa el ensamblado de flujo de trabajo.
 
 Use el siguiente código en la función `Execute` para acceder a `IWorkflowContext`:
 
@@ -280,9 +285,12 @@ protected override void Execute(CodeActivityContext context)
 ...
 ```
 
+> [!IMPORTANT]
+> No debe incluir dependencias lógicas basadas en la información de contexto. Cuando la actividad de flujo de trabajo personalizada se usa en un flujo de trabajo, todos los parámetros de entrada relevantes deben establecerse en el diseñador. El valor de salida o el comportamiento de la actividad personalizada se deben determinar siempre exclusivamente por los parámetros de entrada de forma que no haya factores ocultos que cambien el comportamiento. Cuando alguien usa la actividad personalizada en el diseñador, el comportamiento siempre debe ser predecible.
+
 ### <a name="use-the-organization-service"></a>Usar el servicio de la organización
 
-Cuando necesite realizar operaciones de datos con el servicio de la organización puede tener acceso a este mediante el método [CodeActivityContext.GetExtension<T>](/dotnet/api/system.activities.activitycontext.getextension) con la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>. Desde ahí puede usar el método <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> para acceder a una sesión del proxy de servicio que puede usar para realizar operaciones de datos. La propiedad <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> se puede usar para determinar el contexto del usuario a usar si desea que la operación se realice en el mismo contexto que el proceso que llama.
+Cuando necesite realizar operaciones de datos con el servicio de la organización puede tener acceso a este mediante el método [CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension) con la interfaz <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>. Desde ahí puede usar el método <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> para acceder a una sesión del proxy de servicio que puede usar para realizar operaciones de datos. La propiedad <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> se puede usar para determinar el contexto del usuario a usar si desea que la operación se realice en el mismo contexto que el proceso que llama.
 Use el siguiente código en la función `Execute` para acceder al servicio de la organización:
 
 ```csharp
@@ -393,6 +401,44 @@ Si realiza cambios que incluyen cambios importantes en clases públicas o firmas
     ![versión establecida del flujo de trabajo](media/workflow-set-version.png)
 
 Cuando todos los procesos se convierten para usar el nuevo ensamblado, puede usar la herramienta de registro de complementos para anular el registro del ensamblado, por lo que dejará de estar disponible. Más información: [Anular registro de componentes](../register-plug-in.md#unregister-components)
+
+## <a name="performance-guidance"></a>Guía de rendimiento
+
+Las consideraciones de rendimiento para las extensiones de flujo de trabajo son las mismas que para los complementos ordinarios. Más información: [Consideraciones sobre rendimiento](../write-plug-in.md#performance-considerations)
+
+A diferencia de un complemento ordinario, con las extensiones de flujo de trabajo no tiene la oportunidad de registrar explícitamente el código para un paso específico. Esto significa que no controla si el código en la extensión del flujo de trabajo se ejecutará de forma sincrónica o asincrónica. Deberá prestarse especial atención al código que se ejecuta de forma sincrónica porque afectará directamente a la experiencia del usuario de la aplicación.
+
+Como componentes que pueden reutilizarse, las extensiones de flujo de trabajo se pueden agregar a cualquier flujo de trabajo o acción personalizada. El flujo de trabajo se puede configurar como un flujo de trabajo *en tiempo real*, lo que significa que se ejecutará de forma sincrónica. Las acciones personalizadas estarán son asincrónicas, pero no participan en una transacción a menos que tengan **Habilitar reversión** establecido.
+
+> [!IMPORTANT]
+> Cuando la extensión de flujos de trabajo se usa en un flujo de trabajo sincrónico o una acción personalizada el tiempo empleado en ejecutar el código afecta directamente a la experiencia de usuario. Por este motivo, las extensiones de flujo de trabajo no deben requerir más de dos segundos en completarse cuando se usen de forma sincrónica. Si la extensión requiere más tiempo que esto, deberá documentarlo y desalentar el uso de la extensión en flujos de trabajo síncronos o acciones personalizadas.
+
+También debe tener en cuenta que en un flujo de trabajo sincrónico o una acción personalizada que participe en la transacción, los errores lanzados por la extensión de flujos de trabajo producirán que la transacción completa se revierta, lo que representa una operación muy costosa que puede afectar al rendimiento.
+
+Puede usar el valor en la propiedad <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode> para determinar si el complemento se está ejecutando de forma sincrónica.
+
+## <a name="real-time-workflow-stages"></a>Fases de flujo de trabajo en tiempo real
+
+Cuando una extensión de flujos de trabajo se usa en un flujo de trabajo (sincrónico) en tiempo real será invocada en fases de canalización de ejecuciones de eventos que se muestran en la tabla siguiente. Para más información: [Canalización de ejecución de eventos](../event-framework.md#event-execution-pipeline)
+
+|Mensaje  |Fase  |
+|---------|---------|
+|**Crear**|PostOperation|
+|**Eliminar**|PreOperation|
+|**Update**|PreOperation o <br /> PostOperation|
+
+Puede usar el valor en la propiedad <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.StageName> para detectar la fase.
+
+Para la operación **Actualización**, la fase se puede configurar con opciones **Antes** o **Después** en el diseñador de flujos de trabajo. Más información: [Uso de flujos de trabajo en tiempo real](/flow/configure-workflow-steps#using-real-time-workflows)
+
+Si la extensión de flujos de trabajo depende de los datos pasados en el contexto de ejecución, la fase que ejecuta controlará si los datos están disponibles en <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> y <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>.
+
+> [!NOTE]
+> No se recomienda incluir dependencias lógicas basadas en <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> y <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>. Las extensiones de flujos de trabajo deben depender de los [parámetros de entrada y salida](#input-and-output-parameters) configurados para que la persona que usa la extensión de flujos de trabajo pueda comprender el comportamiento esperado sin información oculta.
+
+## <a name="entity-images-for-workflow-extensions"></a>Imágenes de la entidad para las extensiones de flujo de trabajo
+
+No hay forma de configurar imágenes de entidad para extensiones de flujos de trabajo, ya que puede registrar solo el ensamblado y la actividad de flujo de trabajo se ejecuta en el contexto del flujo de trabajo. Para extensiones de flujos de trabajo hay disponibles imágenes de entidad mediante los valores clave `PreBusinessEntity` y `PostBusinessEntity` respectivamente para imágenes anteriores y posteriores a la entidad. Más información: [Imágenes de entidad](../understand-the-data-context.md#entity-images)
 
 
 ### <a name="see-also"></a>Vea también

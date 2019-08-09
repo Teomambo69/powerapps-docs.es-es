@@ -2,7 +2,7 @@
 title: Visual Studio y .NET Framework (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre herramientas y requisitos de desarrollo de código administrado.
 ms.custom: ''
-ms.date: 01/25/2019
+ms.date: 07/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,9 +17,11 @@ search.app:
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio y .NET Framework
 
-Los ensamblados del SDK .NET para Common Data Service se basan en .NET Framework 4.6.2. 
+Los ensamblados .NET SDK para Common Data Service se basan en .NET Framework 4.6.2. 
 
 Puede usar Visual Studio para crear aplicaciones de código administrado mediante .NET Framework 4.6.2 o posterior. 
+
+Los complementos y ensamblados de flujo de trabajo personalizadas deben usar .NET Framework 4.6.2. Si bien los ensamblados construidos con versiones posteriores deben funcionar normalmente, si usan características introducidas después de 4.6.2 se producirá un error.
 
 > [!IMPORTANT]
 > Debe crear cualquier aplicación de cliente personalizada usando Microsoft .NET Framework 4.6.2 o posterior.
@@ -30,9 +32,9 @@ Puede usar Visual Studio para crear aplicaciones de código administrado mediant
 > [!TIP]
 > Al instalar .NET Framework 4.6.2 en el equipo de desarrollo, asegúrese de instalar el paquete de desarrollador y no sólo el tiempo de ejecución. Esto habilitará el marco 4.6.2 para elegirlo en el cuadro de diálogo **Nuevo proyecto** de Visual Studio y en el menú desplegable del marco de destino de las propiedades del proyecto.  
 
-Puede usar una edición Community de Visual Studio para desarrollo. 
+Puede usar una edición Visual Studio Community para desarrollo. 
 
-[comment]: <> (However, use of extensions isn’t supported in the Express edition so you won’t be able to install useful extensions in that version of Visual Studio)
+[comment]: <> (Sin embargo, el uso de extensiones no se admite en la edición Express por lo que no podrá instalar extensiones útiles en esa versión de Visual Studio)
 
 Más información: [Compatibilidad de versiones de .NET Framework](/dynamics365/customer-engagement/developer/supported-extensions#SupportNET)
 

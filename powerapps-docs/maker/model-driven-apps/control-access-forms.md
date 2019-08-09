@@ -2,7 +2,7 @@
 title: Controlar el acceso a formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Aprenda a controlar el acceso a los formularios principales
 ms.custom: ''
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -71,11 +71,15 @@ search.app:
   
 <a name="BKMK_UseFormScripting"></a>   
 ## <a name="use-form-scripting"></a>Usar el scripting de formularios  
+El contexto del formulario de cliente API (formContext) proporciona una referencia al formulario o a un elemento en el formulario, como por ejemplo, un control de vista rápida o una fila de una cuadrícula editable, en el que se ejecuta el código actual. Más información: [Contexto de formulario de la API del cliente](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
- Por último, en la aplicación web es posible, aunque no se recomienda, que un desarrollador use scripts en el evento Onload del formulario para usar la colección [Xrm.Page.ui.formSelector.items](http://go.microsoft.com/fwlink/p/?LinkID=513300) para consultar los formularios disponibles y usar el método de navegación para dirigir a los usuarios a un determinado formulario. Recuerde que el [método de navegación](http://go.microsoft.com/fwlink/p/?LinkID=513301) provocará que el formulario se cargue de nuevo (y el evento Onload se produzca de nuevo). Su lógica del controlador de eventos debe comprobar siempre alguna condición antes de que use el método de navegación para evitar un bucle sin fin o la restricción innecesaria de las opciones de los usuarios para desplazarse entre los formularios.  
+> [!IMPORTANT]
+> Con aplicaciones Dynamics 365 for Customer Engagement versión 9.0, el objeto Xrm.Page está [obsoleto](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), y ahora debe utilizar el método [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) de la pasada en objeto de contexto de ejecución para devolver referencia al formulario adecuado o a un elemento en el formulario.
+<!-- 
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
- Este método no funcionará en Dynamics 365 for tablets porque no existen formularios múltiples disponibles para seleccionar.  
+ This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 
-### <a name="next-steps"></a>Pasos siguientes  
+### <a name="see-also"></a>Vea también  
 
 [Asignar roles de seguridad a formularios](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)

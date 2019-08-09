@@ -16,7 +16,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service usando Power Query
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service con Power Query
 En este procedimiento, creará una entidad en [Common Data Service](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
 
 * SQL Server
@@ -87,3 +87,6 @@ Si selecciona **Cargar en entidad existente**, puede especificar la entidad a la
 Estamos encantados con esta funcionalidad y estamos deseando oír sus comentarios. [Envíenos sus sugerencias y comentarios](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) sobre esta función.
 
 Si aparece un [mensaje de error sobre permisos](data-platform-cds-newentity-troubleshooting-mashup.md), consulte con el administrador.
+
+> [!WARNING]
+> Hay un límite de 500.000 filas por ejecución y por proyecto que se pueden cargar usando esta característica.

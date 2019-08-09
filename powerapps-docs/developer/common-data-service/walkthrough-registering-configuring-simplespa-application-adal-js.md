@@ -1,10 +1,9 @@
 ---
-title: 'Tutorial: Registrar y configurar aplicación SimpleSPA con adal.js (Common Data Service) | Microsoft Docs'
-description: En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Dynamics 365 Customer Engagement usando adal.js y Uso compartido de recursos de origen cruzado (CORS).
+title: 'Tutorial: Registrar y configurar la aplicación SimpleSPA con adal.js (Common Data Service) | Microsoft Docs'
+description: En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Dynamics 365 Customer Engagement usando adal.js y Uso compartido de recursos de origen cruzado(CORS).
 keywords: ''
 ms.date: 02/12/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 
-En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado (CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Dynamics 365 (online)](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
+En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado(CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Dynamics 365 (online)Dynamics 365 (online)](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
@@ -179,7 +178,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
        retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v9.1/accounts";  
        message.appendChild(retrievingAccountsMessage)  
   
-       // Function to perform operation is passed as a parameter to the aquireToken method  
+       // Function to perform operation is passed as a parameter to the acquireToken method  
        authContext.acquireToken(organizationURI, retrieveAccounts)  
   
       }  
@@ -290,9 +289,9 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
 1.  [Iniciar sesión](https://portal.azure.com) en el portal de administración de Azure con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Microsoft 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
   
-     Si no tiene un inquilino de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.  
+     Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.  
   
-     Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
+     Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2.  Haga clic en **Azure Active Directory** en la columna de la izquierda de la página. Es posible que deba desplazarse por la columna izquierda para ver el icono y la etiqueta de **Azure Active Directory**.  
   

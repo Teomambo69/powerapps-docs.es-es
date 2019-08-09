@@ -1,5 +1,5 @@
 ---
-title: Identificación de la dirección URL de la organización mediante la API web (Common Data Service) | Microsoft Docs
+title: Detectar la dirección URL de su organización con la API web (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre cómo usar la API web para detectar en el tiempo de ejecución las organizaciones o instancias a las que pertenece el usuario que ha iniciado sesión
 ms.custom: ''
 ms.date: 04/22/2019
@@ -35,7 +35,7 @@ Además de los servicios de detección específicos del centro de datos, que est
 > [!NOTE]
 > Se recomienda que los usuarios cambien del antiguo servicio de detección regional (`https://disco.crm.dynamics.com`) al servicio de detección global (`https://globaldisco.crm.dynamics.com`).
 > 
-> Para usuarios de Dynamics 365 US Government, el servicio de detección global está disponible sólo para usuarios de **GCC** y la dirección URL es `https://globaldisco.crm9.dynamics.com`. Más información: [Direcciones URL de Dynamics 365 Government](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
+> Para usuarios de Dynamics 365 US Government, el servicio de detección global está disponible para usuarios de **GCC** y **GCC High** , y la dirección URL es diferente de la dirección URL del servicio de detección global regular. Más información: [Direcciones URL de Dynamics 365 Government](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>Información proporcionada por el servicio de detección 
@@ -46,7 +46,7 @@ Además de los servicios de detección específicos del centro de datos, que est
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
 ```  
   
-En el ejemplo anterior, el servicio de detección global Common Data Service se utiliza para obtener la información de la organización de la instancia con un nombre único de "myorg". Se tratará con mayor detenimiento más información acerca de esta solicitud más adelante en este tema.  
+En el ejemplo anterior, el servicio de detección global de Common Data Service se utiliza para obtener la información de la organización de la instancia con un nombre único de "myorg". Se tratará con mayor detenimiento más información acerca de esta solicitud más adelante en este tema.  
 
  
 
@@ -65,7 +65,7 @@ Para el servicio de detección global, el conjunto de entidades `Instances` devu
 
 En general, la dirección de la API web del servicio de detección tiene el siguiente formato: `<service base address>/api/discovery/`.  A continuación, se identifican las direcciones para cada tipo de implementación. Encontrará con facilidad las direcciones de la API web y el número de versión para su implementación en la aplicación web de Common Data Service si navega hasta **Configuración > Personalización > Recursos de desarrollador**  
   
-### <a name="common-data-service-discovery-services"></a>Servicios de descarga de Common Data Service  
+### <a name="common-data-service-discovery-services"></a>Common Data Service Servicios de detección  
 
 La dirección base del servicio de detección global es: `https://globaldisco.crm.dynamics.com/`. Esto da como resultado la dirección de servicio de `https://globaldisco.crm.dynamics.com/api/discovery/`.  
   
@@ -78,7 +78,7 @@ Se usa un conjunto de entidad denominado `Instances` para recopilar información
 Las instancias de la API web de Common Data Service del servicio de detección requieren autenticación con tokens de acceso de OAuth.
 
 Cuando se configura el servicio de detección para la autenticación de OAuth, una solicitud enviada a la API web de servicio sin un token de acceso desencadena un desafío del portador con la autoridad del extremo "común" y el id. de recurso del servicio.
-### <a name="cors-support"></a>Soporte técnico de CORS
+### <a name="cors-support"></a>Compatibilidad con CORS
 
 La API web del servicio de detección admite la norma CORS para acceso de origen cruzado como hace la Web API.  Para obtener más información sobre el soporte técnico de CORS, consulte [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página](../oauth-cross-origin-resource-sharing-connect-single-page-application.md).  
   

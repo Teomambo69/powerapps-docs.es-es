@@ -3,8 +3,7 @@ title: Crear recursos web accesibles (aplicaciones basadas en modelos) | Microso
 description: El tema presenta instrucciones generales y vínculos a varios recursos que pueden ayudarle a diseñar elementos de la interfaz de usuario para recursos web que sean accesibles a las personas con discapacidades.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -61,7 +60,7 @@ Al incluir recursos web que proporcionen elementos de la interfaz de usuario en 
 ## <a name="accessibility-testing-tools"></a>Herramientas de pruebas de accesibilidad  
  La siguiente lista proporciona algunas herramientas de pruebas de accesibilidad disponibles públicamente:  
   
- [Comprobador de accesibilidad de Visual Studio](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
+ [Visual Studio Accessibility Checker](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
  Si usa Visual Studio para editar archivos de recursos web en HTML, descubrirá que existen herramientas integradas para comprobar si hay problemas relacionados con la accesibilidad. En el menú **Herramientas**, seleccione **Comprobar accesibilidad** para ver un informe que proporciona instrucciones sobre problemas relacionados con la accesibilidad.  
   
  [UI Accessibility Checker](http://acccheck.codeplex.com/)  

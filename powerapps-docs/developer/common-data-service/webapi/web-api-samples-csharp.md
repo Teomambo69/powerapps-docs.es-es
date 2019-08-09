@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplos de operaciones de datos de API web (C#) (Common Data Service)| Microsoft Docs'
+title: 'Ejemplos de operaciones de datos de la API web (C#) (Common Data Service)| Microsoft Docs'
 description: 'En este tema se proporciona una descripción de distintos ejemplos de API web que están implementados mediante C#'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -33,13 +33,13 @@ En este tema se proporciona información sobre los ejemplos de la API web implem
    
 ## <a name="prerequisites"></a>Requisitos previos
 
-A continuación se enumeran los requisitos para crear y ejecutar los ejemplos en C# de API web de Common Data Service:  
+Los siguientes elementos son necesarios para crear y ejecutar los ejemplos en C# de la API web de Common Data Service:  
   
-- Una versión Microsoft Visual Studio de 2015 o posterior.  Una versión gratuita, [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx), está disponible para descarga [aquí](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx).  
+- Una versión más reciente de Microsoft Visual Studio 2015 o posterior.  Una versión gratuita, [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx), está disponible para descarga [aquí](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx).  
 
-- Obtenga acceso a Common Data Service con privilegios para realizar operaciones CRUD.  
+- Acceso a Common Data Service con privilegios para realizar operaciones CRUD.  
  
-- Para ejecutar ejemplos con Common Data Service, debe registrar la aplicación con Azure Active Directory para obtener un Id. de cliente y una dirección URL de redirección. Para obtener más información, consulte [Tutorial: Registrar una aplicación Common Data Service en Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
+- Para ejecutar ejemplos con Common Data Service, debe registrar la aplicación con Azure Active Directory para obtener un Id. de cliente y una dirección URL de redirección. Para obtener más información, consulte [Tutorial: Registrar una aplicación Common Data Service con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
 > [!NOTE]
 > Estos ejemplos requieren la versión 2.x del ensamblado [Microsoft.IdentityModel.Client.ActiveDirectory](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet) para una autenticación basada en OAuth.
@@ -75,7 +75,7 @@ Esta implementación de C# depende de las acciones siguientes:
 
 Dado que C# y la mayoría de los otros lenguajes administrados no admiten nativamente el formato de datos de JSON, la mejor opción actual es usar una biblioteca para esta funcionalidad. Para obtener más información, consulte [Introducción a la notación de objetos de JavaScript (JSON) en JavaScript y .NET](https://msdn.microsoft.com/library/bb299886.aspx). Json.NET es una opción popular para proyectos de Microsoft .NET. Proporciona un marco de trabajo sólido, de alto rendimiento y código abierto (con [licencia MIT](https://opensource.org/licenses/MIT)) para serializar, convertir, analizar, consultar y dar formato a datos JSON. Para obtener más información, vea la [Documentación de Json.NET](http://www.newtonsoft.com/json/help/html/Introduction.htm).  
   
-En los ejemplos de C#, esta biblioteca se usa principalmente para serializar datos entre objetos .NET y los cuerpos de mensajes HTTP. Aunque la biblioteca proporciona varios métodos para realizar esta tarea, el enfoque usado por los ejemplos es crear instancias [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) individuales para representar instancias de entidad de Common Data Service.  Por ejemplo, el siguiente código crea la variable `contact1` que representa una instancia <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> de Common Data Service, después suministra valores para un conjunto seleccionado de propiedades para este tipo.  
+En los ejemplos de C#, esta biblioteca se usa principalmente para serializar datos entre objetos .NET y los cuerpos de mensajes HTTP. Aunque la biblioteca proporciona varios métodos para realizar esta tarea, el enfoque usado por los ejemplos es crear instancias [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) individuales para representar instancias de entidad de Common Data Service (registros).  Por ejemplo, el siguiente código crea la variable `contact1` que representa una instancia de Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" />, después suministra valores para un conjunto seleccionado de propiedades para este tipo.  
   
 ```csharp  
   
@@ -160,7 +160,7 @@ throw new Exception(string.Format(" Operation Failed", response.Content));
   
 ```  
 
- [HttpStatusCode](https://msdn.microsoft.com/library/hh435235.aspx).NoContent es equivalente a un código de estado HTTP 204, “Sin contenido”. Aquí, este código de estado indica que la solicitud POST se realizó correctamente. Para obtener más información, consulte [Componer solicitudes HTTP y administrar errores](https://msdn.microsoft.com/en-us/library/gg334391.aspx).  
+ [HttpStatusCode](https://msdn.microsoft.com/library/hh435235.aspx).NoContent es equivalente a un código de estado HTTP 204, “Sin contenido”. Aquí, este código de estado indica que la solicitud POST se realizó correctamente. Para obtener más información, consulte [Componer solicitudes HTTP y administrar errores](https://msdn.microsoft.com/library/gg334391.aspx).  
   
 ### <a name="characteristics-and-methods"></a>Características y métodos
   
@@ -172,7 +172,7 @@ La mayoría de los ejemplos tienen el mismo patrón arquitectónico general, con
    
 ### <a name="see-also"></a>Vea también  
 
-[Utilizar API Web de Common Data Service](overview.md)<br />
+[Usar la API web de Common Data Service](overview.md)<br />
 [Ejemplos de la API web](web-api-samples.md)<br />
 [Ejemplos de la API web (JavaScript del lado del cliente)](web-api-samples-client-side-javascript.md)<br />
 [Ejemplo de operaciones básicas de la API web (C#)](samples/basic-operations-csharp.md)<br />

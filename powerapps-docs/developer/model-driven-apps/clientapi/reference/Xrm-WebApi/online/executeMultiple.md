@@ -18,9 +18,9 @@ search.app:
 [!INCLUDE[./includes/executeMultiple-description.md](./includes/executeMultiple-description.md)]
 
 > [!NOTE]
-> Este método solo es compatible para el modo con conexión ([Xrm.WebApi.online](online.md)). 
+> Este método solo es compatible para el modo con conexión ([Xrm.WebApi.online](../online.md)). 
 
-Si desea ejecutar varias solicitudes en una transacción, debe pasar un conjunto de cambios como parámetro a este método. [Conjuntos de cambios](../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) representan un conjunto de operaciones que se ejecuta en una transacción. También puede pasar solicitudes individuales y conjuntos de cambios conjuntamente como parámetros a este método.
+Si desea ejecutar varias solicitudes en una transacción, debe pasar un conjunto de cambios como parámetro a este método. [Conjuntos de cambios](../../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) representan un conjunto de operaciones que se ejecuta en una transacción. También puede pasar solicitudes individuales y conjuntos de cambios conjuntamente como parámetros a este método.
 
 > [!NOTE]
 > No puede incluir operaciones de lectura (recuperar, recuperar varios y funciones de la API web) en un conjunto de cambios. Esto se debe a las especificaciones de OData v4.
@@ -106,5 +106,5 @@ En caso de éxito, devuelve una promesa que contiene una matriz de objetos con l
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Xrm.WebApi](../xrm-webapi.md)
+[Xrm.WebApi](../../xrm-webapi.md)
 

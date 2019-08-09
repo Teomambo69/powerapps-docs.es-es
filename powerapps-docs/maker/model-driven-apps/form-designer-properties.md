@@ -82,4 +82,4 @@ Ubicado en el panel derecho del diseñador de formularios basados en modelos, el
 
 ## <a name="see-also"></a>Vea también
 [Información general del diseñador de formularios controlado por modelos](form-designer-overview.md) <br />
-[Crear y editar formularios usando el diseñador de formularios](create-and-edit-forms.md)
+[Crear o editar formularios usando el diseñador de formularios](create-and-edit-forms.md)

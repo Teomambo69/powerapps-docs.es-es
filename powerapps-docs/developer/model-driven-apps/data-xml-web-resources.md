@@ -3,8 +3,7 @@ title: Recursos web (XML) de datos (aplicaciones basadas en modelos) | Microsoft
 description: Obtener información sobre el uso de recursos web de datos (XML) para guardar y obtener acceso a los datos.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="data-xml-web-resources"></a>Recursos web (XML) de datos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/data-xml-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/data-xml-web-resources -->
 
 Use recursos web de datos (XML) para guardar y obtener acceso a los datos.  
   
@@ -41,5 +40,6 @@ Use recursos web de datos (XML) para guardar y obtener acceso a los datos.
  [Uso de recursos web de página web (HTML)](webpage-html-web-resources.md)   
  [Uso de recursos web de hojas de estilo (CSS)](css-web-resources.md)   
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
- [Usar recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
- [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo--> [Uso de recursos web de hoja de estilo (XSL)](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Uso de recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
+ [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Uso de recursos web de hoja de estilo (XSL)](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

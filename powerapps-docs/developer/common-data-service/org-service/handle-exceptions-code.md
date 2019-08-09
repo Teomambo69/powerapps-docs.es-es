@@ -2,7 +2,7 @@
 title: Administrar excepciones en el código (Common Data Service) | Microsoft Docs
 description: Este artículo analiza las excepciones que se devuelven desde una llamada al método de servicio web de Dynamics 365 Customer Engagement. El ejemplo de este artículo resalta los errores y las excepciones comunes que el diseño de su aplicación debe controlar.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="handle-exceptions-in-your-code"></a>Administrar las excepciones en su código
 
-Existe un número de excepciones que se pueden obtener de una llamada al método de servicio web de Common Data Service. El diseño de su aplicación debe respetar y manejar de manera adecuada estas excepciones. En los ensamblados de SDK.NET, todas las llamadas al método de servicio web usan un canal de comunicaciones al servidor basado en la tecnología de Windows Communication Foundation. En términos de WCF, las excepciones obtenidas del canal reciben el nombre de *errores*.  
+Existe un número de excepciones que se pueden obtener de una llamada de método de servicio web Common Data Service. El diseño de su aplicación debe respetar y manejar de manera adecuada estas excepciones. En los ensamblados de SDK.NET, todas las llamadas al método de servicio web usan un canal de comunicaciones al servidor basado en la tecnología de Windows Communication Foundation. En términos de WCF, las excepciones obtenidas del canal reciben el nombre de *errores*.  
 
 <a name="BKMK_Common"></a>   
 
 ## <a name="common-exceptions-and-faults"></a>Excepciones y errores comunes  
 
- El siguiente código se usa en la mayoría de los ejemplos de servicios web de Common Data Service. Resalta los errores y las excepciones comunes que debe manejar el diseño de su aplicación.  
+El siguiente código se usa en la mayoría de los ejemplos de servicios web de Common Data Service. Resalta los errores y las excepciones comunes que debe manejar el diseño de su aplicación.  
   
 ```csharp
 catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
@@ -71,27 +71,23 @@ catch (System.Exception ex)
 > [!NOTE]
 >  Si está accediendo al servicio web de detección, su código deberá obtener <xref:Microsoft.Xrm.Sdk.DiscoveryServiceFault> en lugar del fallo <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault> mostrado anteriormente.  
   
- Además de estas excepciones y errores, el código debe administrar las siguientes excepciones:  
+Además de estas excepciones y errores, el código debe administrar las siguientes excepciones:  
   
--   [SecurityTokenValidationException](https://msdn.microsoft.com/library/system.identitymodel.tokens.securitytokenvalidationexception.aspx)  
+- [SecurityTokenValidationException](/dotnet/api/system.identitymodel.tokens.securitytokenvalidationexception)  
+- [ExpiredSecurityTokenException](/dotnet/api/system.servicemodel.security.expiredsecuritytokenexception)  
+- [SecurityAccessDeniedException](/dotnet/api/system.servicemodel.security.securityaccessdeniedexception)  
+- [MessageSecurityException](/dotnet/api/system.servicemodel.security.messagesecurityexception)  
+- [SecurityNegotiationException](/dotnet/api/system.servicemodel.security.securitynegotiationexception)  
   
--   [ExpiredSecurityTokenException](https://msdn.microsoft.com/library/system.servicemodel.security.expiredsecuritytokenexception.aspx)  
-  
--   [SecurityAccessDeniedException](https://msdn.microsoft.com/library/system.servicemodel.security.securityaccessdeniedexception.aspx)  
-  
--   [MessageSecurityException](https://msdn.microsoft.com/library/system.servicemodel.security.messagesecurityexception.aspx)  
-  
--   [SecurityNegotiationException](https://msdn.microsoft.com/library/system.servicemodel.security.securitynegotiationexception.aspx)  
-  
- Al conectarse a Common Data Service, es posible que se muestre una excepción `SecurityAccessDeniedException` si utiliza una cuenta Microsoft válida y su cuenta no está asociada con ninguna organización de Common Data Service. Se puede mostrar una `MessageSecurityException` si su cuenta Microsoft no es válido o se produjo un error de autenticación.  
+Al conectarse a Common Data Service, es posible que se muestre una excepción `SecurityAccessDeniedException` si utiliza una cuenta de Microsoft válida y su cuenta no está asociada con ninguna organización de Common Data Service. Se puede mostrar una `MessageSecurityException` si su cuenta Microsoft no es válido o se produjo un error de autenticación.  
   
 <a name="BKMK_BusinessRuleErrors"></a>
 
 ## <a name="custom-errors-from-business-rules"></a>Errores personalizados de reglas de negocio
  
- Con Common Data Service, los personalizadores pueden crear reglas de negocio que se evalúan en el servidor. Los personalizadores pueden lanzar mensajes de error según las condiciones fijadas en la regla de negocio. Los programadores deben asegurarse de incluir un control de errores sólido en el código para obtener y resolver estas excepciones.  
+Con Common Data Service, los personalizadores pueden crear reglas de negocio que se evalúan en el servidor. Los personalizadores pueden lanzar mensajes de error según las condiciones fijadas en la regla de negocio. Los programadores deben asegurarse de incluir un control de errores sólido en el código para obtener y resolver estas excepciones.  
   
- El siguiente es un ejemplo de registro de seguimiento que se produce cuando se devuelve uno de estos errores desde una regla de negocio denominada **Nombre de regla de negocio del ámbito de entidad que devuelve el error** y el mensaje de error es **mensaje de error personalizado**.  
+El siguiente es un ejemplo de registro de seguimiento que se produce cuando se devuelve uno de estos errores desde una regla de negocio denominada **Nombre de regla de negocio del ámbito de entidad que devuelve el error** y el mensaje de error es **mensaje de error personalizado**.  
   
 ```csharp
 Unhandled Exception: System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]: custom error messageDetail:   
@@ -123,15 +119,16 @@ Sync workflow 'Name of Entity Scope Business Rule returning Error' terminated wi
 </OrganizationServiceFault>  
 ```  
   
- Más información: [Crear y editar reglas de negocio](https://technet.microsoft.com/library/dn531086.aspx)  
+Más información: [Crear una regla de negocio para una entidad](../../../maker/common-data-service/data-platform-create-business-rule.md).  
   
-<a name="BKMK_AdditionalInfo"></a>   
-## <a name="additional-information-about-exceptions"></a>Información adicional acerca de excepciones  
- Cuando se genera una excepción no detectada que contiene información confidencial que el usuario no tiene permiso para ver, la información confidencial de la excepción se oculta al usuario y se proporciona un número de referencia. Este número de referencia hace referencia a la entrada del registro de evento de servidor relacionado y a la entrada de seguimiento del servidor. El administrador del sistema puede buscar estas entradas y buscar más información sobre la excepción.  
+<a name="BKMK_AdditionalInfo"></a>
+
+## <a name="additional-information-about-exceptions"></a>Información adicional acerca de excepciones
+
+Cuando se genera una excepción no detectada que contiene información confidencial que el usuario no tiene permiso para ver, la información confidencial de la excepción se oculta al usuario y se proporciona un número de referencia. Este número de referencia hace referencia a la entrada del registro de evento de servidor relacionado y a la entrada de seguimiento del servidor. El administrador del sistema puede buscar estas entradas y buscar más información sobre la excepción.  
   
 ### <a name="see-also"></a>Vea también  
- [Solución de problemas y control de errores](/dynamics365/customer-engagement/developer/troubleshooting-error-handling)   
- [Sugerencias para la solución de problemas](/dynamics365/customer-engagement/developer/troubleshooting-tips)   
+
  [Códigos de error de servicio web](web-service-error-codes.md)   
  [Administrar las excepciones en complementos](../handle-exceptions.md)   
  [Centro para desarrolladores .NET Framework](https://docs.microsoft.com/dotnet/framework/development-guide)

@@ -3,8 +3,7 @@ title: Definir comandos de la cinta de opciones (aplicaciones basadas en modelos
 description: Un comando de la cinta de opciones crea una definición reutilizable a la que los elementos de control de la cinta de opciones pueden hacer referencia.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-ribbon-commands"></a>Definir comandos de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-commands -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-commands -->
 
 Un comando *de la cinta de opciones* crea una definición reutilizable a la que los elementos de control de la cinta de opciones pueden hacer referencia.  
   

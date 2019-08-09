@@ -3,8 +3,7 @@ title: Cuándo editar el archivo de personalizaciones (Common Data Service) | Mi
 description: El archivo customizations.xml que se exporta como parte de una solución no administrada se puede editar para realizar tareas específicas de personalización. Después de modificar el archivo puede comprimir el archivo editado así como los demás archivos exportados en la solución no administrada. Aplique los cambios importando esa solución modificada no administrada.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -38,7 +37,7 @@ El archivo customizations.xml que se exporta como parte de una solución no admi
  Para obtener más información acerca de la edición de la cinta de opciones modificando el archivo customization.xml manualmente, consulte [Personalizar la cinta de opciones para Microsoft Dynamics 365](../model-driven-apps/customize-commands-ribbon.md).  
   
  **Editar el SiteMap**  
- El SDK describe el proceso de editar el mapa del sitio editando el archivo customization.xml directamente. Sin embargo, es recomendable usar el diseñador del mapa del sitio en Common Data Service para crear o actualizar los mapas del sitio. Más información: [Crear un mapa del sitio para una aplicación mediante el diseñador del mapa del sitio](../../maker/model-driven-apps/create-site-map-app.md)
+ El SDK describe el proceso de editar el mapa del sitio editando el archivo customization.xml directamente. Sin embargo, es recomendable usar el diseñador del mapa del sitio en Common Data Service para crear y actualizar los mapas del sitio. Más información: [Crear un mapa del sitio para una aplicación mediante el diseñador del mapa del sitio](../../maker/model-driven-apps/create-site-map-app.md)
   
  También puede utilizar uno de los editores del mapa del sitio desarrollados por la comunidad, como el [Editor de mapa del sitio XrmToolBox](https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/).   
   
@@ -52,7 +51,7 @@ El archivo customizations.xml que se exporta como parte de una solución no admi
  Las definiciones de vistas para entidades se incluyen en el archivo customizations.xml y se pueden editar manualmente. El editor de vistas de la aplicación es la herramienta más utilizada para este fin. La edición del archivo customizations.xml es un método alternativo. Para obtener más información: consulte [Personalizar vistas de entidad en Microsoft Dynamics 365](../model-driven-apps/customize-entity-views.md).
   
  **Editar el archivo ISV.config**  
- En versiones anteriores de Common Data Service de Dynamics 365, ISV.Confg era la forma de agregar extensiones a la aplicación cliente así como otras opciones de configuración. En Microsoft Dynamics CRM 2011 y Microsoft Dynamics 365 Online, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
+ En versiones anteriores de Dynamics 365 Common Data Service, ISV.Confg era la forma de agregar extensiones a la aplicación cliente así como otras opciones de configuración. En Microsoft Dynamics CRM 2011 y Microsoft Dynamics 365 Online, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
   
 ## <a name="unsupported-tasks"></a>Tareas no compatibles  
  La definición de otros componentes de la solución editando el archivo customizations.xml exportado no se admite. Esto incluye lo siguiente:  

@@ -2,13 +2,13 @@
 title: Gráficos de ejemplo (aplicaciones basadas en modelos) | Microsoft Docs
 description: El tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de presentación y descripción de los datos.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 01/17/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: shilpas
+manager: null
 search.audienceType:
   - developer
 search.app:
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-charts"></a>Gráficos de muestra
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
 
 Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de presentación y descripción de los datos. Puede especificar lo siguiente:  
   
@@ -586,5 +586,5 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
  [Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)   
  [Crear un gráfico](create-visualization-chart.md)   
  [Ver los datos con visualizaciones (gráficos)](view-data-with-visualizations-charts.md)   
- [Código de ejemplo de gráficos (visualizaciones)](/dynamics365/customer-engagement/developer/customize-dev/sample-code-charts-visualizations)
+ 
 

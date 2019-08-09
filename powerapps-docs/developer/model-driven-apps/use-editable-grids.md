@@ -1,6 +1,6 @@
 ---
 title: Usar cuadrículas editables en aplicaciones basadas en modelos | Microsoft Docs
-description: 'La cuadrícula editable es un nuevo control personalizado en Dynamics 365 Customer Engagement que proporciona amplias capacidades de edición en línea en clientes web y móviles (Dynamics 365 para teléfonos y Dynamics 365 para tabletss) incluida la capacidad de agrupar, ordenar y filtrar datos dentro de la misma cuadrícula para que no tenga que cambiar registros o vistas.'
+description: 'La cuadrícula editable es un nuevo control personalizado en Dynamics 365 Customer Engagement que proporciona funciones de edición en línea enriquecidas en clientes web y móviles (Dynamics 365 for phones y Dynamics 365 for tablets) incluida la capacidad de agrupar, ordenar y filtrar los datos dentro de la misma cuadrícula de manera que no tenga que cambiar los registros o las vistas.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -28,7 +28,7 @@ La cuadrícula editable es un control personalizado que proporciona funciones de
 ## <a name="enable-editable-grids"></a>Habilitar cuadrículas editables  
  Puede habilitar cuadrículas editables en el nivel de entidad para usar en la cuadrícula principal, o en el nivel de formulario para reemplazar subcuadrículas de solo lectura (cuadrículas asociadas) con una cuadrícula editable.  
   
- Puede habilitar el control de cuadrícula editable para una entidad mediante la herramienta de personalización en aplicaciones basadas en modelos (pestaña **Configuración** > **Personalizaciones**  > **Personalización del sistema** > **Entidades** > *[Entity_Name]* > **Controles**).  
+ Puede habilitar el control de cuadrícula editable para una entidad mediante la herramienta de personalización en aplicaciones basadas en modelos (pestaña **Configuración** > **Personalizaciones**  > **Personalización del sistema** > **Entidades** > *[Entity_Name]* > **Controles**.  
   
  Para habilitar la cuadrícula editable para una cuadrícula en un formulario, abra el editor de formularios, haga doble clic en la cuadrícula de sólo lectura que desea sustituir con la cuadrícula editables, y luego agregue/habilite la cuadrícula editable en la pestaña **Controles**.  
   
@@ -111,7 +111,7 @@ namespace Microsoft.Crm.Sdk.Samples
   
         // Specify which language code to use in the sample. If you are using a language  
         // other than US English, you will need to modify this value accordingly.  
-        // See http://msdn.microsoft.com/en-us/library/0h88fahh.aspx  
+        // See https://msdn.microsoft.com/library/0h88fahh.aspx  
         public const int _languageCode = 1033;  
   
         // Define the IDs/variables needed for this sample.  

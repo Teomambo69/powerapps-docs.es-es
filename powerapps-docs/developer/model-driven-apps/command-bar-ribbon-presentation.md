@@ -3,8 +3,7 @@ title: Presentación de la barra de comandos o de la cinta de opciones (aplicaci
 description: Los datos que definen comandos en Common Data Service se pueden mostrar en varias formas según el cliente y las diferencias en cómo se tratan algunas entidades. Necesita tener en cuenta estos factores cuando cambia comandos de la cinta de opciones o define nuevos.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -64,7 +63,7 @@ Los datos que definen comandos en Common Data Service se pueden mostrar en varia
 ### <a name="dynamics-365-for-tablets"></a>Dynamics 365 for tablets  
  Dynamics 365 for tablets muestra los comandos de forma optimizada para la experiencia táctil. Las comandos aparecen en la barra de comandos en la parte inferior derecha de la pantalla en orden de derecha a izquierda.  
   
- ![Comandos de formularios de cuenta para Dynamics 365 para tabletas](media/customization-nobile-app-account-form-command.PNG "Comandos de formularios de cuenta para Dynamics 365 para tabletas")  
+ ![Comandos de formulario de cuenta para Dynamics 365 for tablets](media/customization-nobile-app-account-form-command.PNG "Comandos de formulario de cuenta para Dynamics 365 for tablets")  
   
 > [!NOTE]
 >  Los iconos configurados para comandos no se mostrarán y las etiquetas que sean demasiado largas se truncarán.  
@@ -73,13 +72,13 @@ Los datos que definen comandos en Common Data Service se pueden mostrar en varia
   
  Los comandos de la subcuadrícula se muestran cuando el usuario pulsa y presiona el control de subcuadrícula. Estos comandos se muestran en la parte inferior izquierda de la pantalla en orden de izquierda a derecha.  
   
- ![Comandos de subcuadrícula de la actividad en Dynamics 365 for tablets](media/customization-mobile-app-activity-subgrid.PNG "Comandos de subcuadrícula de la actividad en Dynamics 365 for tablets")  
+ ![Comandos de la subcuadrícula de actividad en Dynamics 365 for tablets](media/customization-mobile-app-activity-subgrid.PNG "Comandos de la subcuadrícula de actividad en Dynamics 365 for tablets")  
   
 <a name="BKMK_CommandData"></a>   
 ## <a name="command-data"></a>Datos de comandos  
  A pesar de estas presentaciones tan diferentes, los datos que definen los comandos de las entidades son coherentes independientemente de cómo se muestran los comandos. Contiene definiciones de las pestañas y los grupos con escalabilidad, pero las partes visibles de estos contenedores de los controles se muestran únicamente en la interfaz clásica de usuario.  
   
- En la experiencia actualizada de usuario y Dynamics 365 para tabletas, las pestañas y los grupos siguen actuando como contenedores de los controles, pero no hay ninguna indicación visual de estos contenedores y no se aplica escalabilidad.  
+ En la experiencia actualizada de usuario y Dynamics 365 for tablets, las pestañas y los grupos siguen actuando como contenedores de los controles, pero no hay ninguna indicación visual de estos contenedores y no se aplica escalabilidad.  
   
 <a name="BKMK_FilteringCommands"></a>   
 ## <a name="filtering-commands-based-on-presentation-and-client"></a>Filtrado de comandos en función de la presentación y el cliente  
@@ -95,11 +94,11 @@ Los datos que definen comandos en Common Data Service se pueden mostrar en varia
   
 - `Legacy`: Experiencia clásica de usuario  
   
-- `Modern` Dynamics 365 para tabletas  
+- `Modern`: Dynamics 365 for tablets  
   
   Use este elemento mientras define comandos para controlar si se muestran en las distintas presentaciones.  
   
-  También hay un elemento preexistente de `<CrmClientTypeRule>`, pero el atributo de `Type` del elemento solo puede distinguir entre clientes `Web` y de `Outlook`. Esta regla evaluará el cliente de Dynamics 365 para tabletas como cliente web.  
+  También hay un elemento preexistente de `<CrmClientTypeRule>`, pero el atributo de `Type` del elemento solo puede distinguir entre clientes `Web` y de `Outlook`. Esta regla evaluará el cliente de Dynamics 365 for tablets para tabletas como cliente web.  
   
 ### <a name="see-also"></a>Vea también  
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   

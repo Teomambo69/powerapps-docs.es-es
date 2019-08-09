@@ -2,9 +2,9 @@
 title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de creación rápida.
 ms.custom: ''
-ms.date: 01/25/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -108,6 +108,63 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
 4.  Cuando haya terminado, seleccione **Guardar**.  
   
 5.  Seleccione **Publicar** para ver el formulario modificado en la aplicación.  
+
+## <a name="allow-quick-create-property-form-behavior-for-activities"></a>Comportamiento de formulario de la propiedad Permitir creación rápida para actividades
+Introducida en la actualización 9.1.0.2007, la propiedad **Permitir creación rápida** se puede habilitar o deshabilitar para todas las actividades estándar, salvo citas periódicas. Esta propiedad le permite cambiar el formulario que se muestra de forma predeterminada para la mayoría de las actividades. De forma predeterminada, se habilita la propiedad **Permitir creación rápida** y el formulario de creación de creación rápida es el formulario que se muestra en las áreas de aplicación y las entidades de actividad que lo admiten. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/allow-quick-create.png "Propiedad Permitir creación rápida en entidad de cita")
+
+
+### <a name="unified-interface-client-form-display-behavior"></a>Comportamiento de visualización del formulario de cliente de la interfaz unificada
+En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Permitir creación rápida** está *habilitada* en el cliente de la interfaz unificada.
+ 
+|Ubicación en la que se accede al formulario  |Formulario mostrado  |
+|---------|---------|
+|Cuadrícula asociada a actividad específica  | Creación rápida      |
+|Subcuadrícula de actividades específicas   |  Creación rápida     |
+|Cuadrícula de actividades (activitypointer)     | Creación rápida     |
+|Cuadrícula asociada de actividades (activitypointer)   | Creación rápida    |
+|Subcuadrícula de actividades (activitypointer)  | Creación rápida    |
+|Barra de comandos global + botón<sup>1</sup>    | Creación rápida    |
+|Muro de escala de tiempo   | Creación rápida    |
+|Cuadrícula de actividades (activitypointer)   | Principal   |
+|Cuadrícula de actividades específicas    | Principal   |
+
+<sup>1</sup>Las actividades aparecen en los botones globales **Crear** o **+ Nuevo** cuando se habilita la propiedad **Permitir creación rápida**. En este caso, se utiliza el formulario de creación rápida si existe o el formulario principal si no. Si está deshabilitado **Permitir creación rápida**, la entrada para la entidad no aparecerá.
+
+### <a name="classic-web-client-form-display-behavior"></a>Comportamiento de visualización de formulario del cliente web clásico
+
+En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Permitir creación rápida** está *habilitada* en el cliente web clásico.
+
+|Ubicación en la que se accede al formulario  |Formulario mostrado  |
+|---------|---------|
+|Cuadrícula asociada a actividad específica  | Creación rápida      |
+|Subcuadrícula de actividades específicas   |  Creación rápida     |
+|Cuadrícula de actividades (activitypointer)     | Principal     |
+|Cuadrícula asociada de actividades (activitypointer)   | Principal    |
+|Subcuadrícula de actividades (activitypointer)  | Principal    |
+|Barra de comandos global + botón    | Principal    |
+|Cuadrícula de actividades específicas   | Principal    |
+
+ #### <a name="classic-web-client-social-pane-behavior"></a>Comportamiento social del panel del cliente web clásico
+ 
+El panel social es un caso especial porque no usa la propiedad **Permitir creación rápida** pero usa formularios diferentes para diferentes entidades de actividad según lo indicado aquí.
+
+
+|Actividad  |Formulario mostrado  |
+|---------|---------|
+|Tarea     | Creación rápida    |
+|Llamada de teléfono   | Creación rápida     |
+|Correo electrónico   | Principal     |
+|Cita  | Principal     |
+|Actividad personalizada     | Principal      |
+
+### <a name="solution-import-allow-quick-create-value-behavior"></a>Importar soluciones con comportamiento de valor Permitir creación rápida
+
+Cuando importa una solución de la versión 8.2 independientemente del valor de la propiedad **Permitir creación rápida** en la solución, se restablecerán las siguientes entidades al valor de visualización del formulario predeterminado y el formulario principal mostrará: tarea, llamada de teléfono, correo electrónico, y cita. En esta situación, necesitará restablecer la opción **Permitir creación rápida** de nuevo a *habilitada* para aquellas entidades de actividad después de importar.
+ 
+Si existe una personalización creada en una solución de la versión 9.0 a entidades donde está habilitada **Permitir creación rápida** , el valor no cambiará después de importar.  Sin embargo, si ha establecido la opción **Permitir creación rápida** como *deshabilitada* para entidades de tarea, llamada de teléfono, correo electrónico y cita, el valor se sobrescribirá como habilitada. En esta situación, necesitará restablecer la opción **Permitir creación rápida** de nuevo a deshabilitada para aquellas entidades de actividad después de importar. 
   
-### <a name="next-steps"></a>Pasos siguientes  
+### <a name="see-also"></a>Vea también  
 [Información general de la interfaz de usuario del editor de formularios](form-editor-user-interface-legacy.md)

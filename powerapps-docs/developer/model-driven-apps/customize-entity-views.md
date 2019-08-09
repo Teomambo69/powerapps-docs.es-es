@@ -3,8 +3,7 @@ title: Personalización de las vistas de la entidad (aplicaciones basadas en mod
 description: Obtenga información sobre cómo personalizar las vistas de entidad.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

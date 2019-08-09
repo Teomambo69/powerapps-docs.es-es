@@ -2,7 +2,7 @@
 title: Modelo de seguridad (Common Data Service) | Microsoft Docs
 description: 'PowerApps ofrece un modelo de seguridad que protege la integridad y privacidad de los datos, y admite una colaboración y un acceso a los datos eficaces'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -33,8 +33,5 @@ Combine la seguridad basada en roles, la seguridad de nivel de registro y la seg
 Como programador, debe saber que las consultas se ejecutan en el contexto de un usuario, y solo devolverán los registros a los que tiene derecho el usuario a leer.
 Además, solo podrá realizar operaciones basadas en los privilegios asignados a su cuenta de usuario con los roles de seguridad.
 
-Para obtener información detallada sobre los conceptos de seguridad, consulte [Conceptos de seguridad](/dynamics365/customer-engagement/admin/security-concepts)
+Para obtener información detallada, consulte [Seguridad en Common Data Service](/power-platform/admin/wp-security)
 
-### <a name="see-also"></a>Vea también
-
-[Entidad BusinessUnit](businessunit-entity.md)

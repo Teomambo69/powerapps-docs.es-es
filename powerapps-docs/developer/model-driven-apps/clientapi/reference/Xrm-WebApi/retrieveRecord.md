@@ -1,7 +1,7 @@
 ---
 title: retrieveRecord (referencia API de cliente) en aplicaciones basadas en modelo| MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: d4e92999-3b79-4783-8cac-f656fc5f7fda
@@ -80,12 +80,12 @@ En caso de resultar correcto, devuelve una promesa con un objeto JSON con los at
 
 ### <a name="basic-retrieve"></a>Recuperación básica 
 
-Recupera el nombre y los ingresos de un registro de cuenta con ID de registro = 5531d753-95af-e711-a94e-000d3a11e605.
+Recupera el nombre y los ingresos de un registro de cuenta con el ID. de registro = 5531d753-95af-e711-a94e-000d3a11e605.
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name,revenue").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Revenue: ${result.revenue}`);
+        console.log("Retrieved values: Name: " + result.name + ", Revenue: " + result.revenue);
         // perform operations on record retrieval
     },
     function (error) {
@@ -101,12 +101,13 @@ El ejemplo anterior muestra lo siguiente en la consola; puede ver otros valores 
 
 ### <a name="retrieve-related-entities-for-an-entity-instance-by-expanding-single-valued-navigation-properties"></a>Recupere entidades relacionadas para una instancia de entidad expandiendo las propiedades de navegación de un solo valor
 
- El ejemplo siguiente muestra cómo recuperar el contacto de un registro de cuenta con el identificador de registro = a8a19cdd 88df e311 b8e5 6c3be5a8b200. Para el registro de contacto relacionado, solo estamos recuperando las propiedades **contactid** y **fullname**.
+ El ejemplo siguiente muestra cómo recuperar el contacto para un registro de cuenta con el Id. de registro = a8a19cdd-88df-e311-b8e5-6c3be5a8b200. Para el registro de contacto relacionado, solo estamos recuperando las propiedades **contactid** y **fullname**.
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name&$expand=primarycontactid($select=contactid,fullname)").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Primary Contact ID: ${result.primarycontactid.contactid}, Primary Contact Name: ${result.primarycontactid.fullname}`);
+        console.log("Retrieved values: Name: " + result.name + ", Primary Contact ID: " + result.primarycontactid.contactid +
+                ", Primary Contact Name: " + result.primarycontactid.fullname);
         // perform operations on record retrieval
     },
     function (error) {

@@ -14,6 +14,8 @@ ms.assetid: 058c0319-4d46-40fc-a4f6-e9f722a6b3c7
 
 # <a name="formatting"></a>Formato
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [formatting-description](includes/formatting-description.md)]
 
 ## <a name="methods"></a>Métodos

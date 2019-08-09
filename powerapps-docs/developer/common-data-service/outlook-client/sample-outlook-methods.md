@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Usar métodos de Dynamics 365 for Outlook (Common Data Service)| Microsoft Docs'
+title: 'Ejemplo: Usar métodos Dynamics 365 for Outlook (Common Data Service)| Microsoft Docs'
 description: Este ejemplo muestra cómo usar los métodos disponibles en el ensamblado `Microsoft.Crm.Outlook.Sdk.dll`.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="sample-use-dynamics-365-for-outlook-methods"></a>Ejemplo: usar métodos de Dynamics 365 para Outlook
+# <a name="sample-use-dynamics-365-for-outlook-methods"></a>Ejemplo: Usar métodos de Dynamics 365 for Outlook
 
-Este código de ejemplo es para Common Data Service. Para descargar el ejemplo, consulte [ejemplo: uso de Dynamics 365 para métodos de Outlook](https://msdn.microsoft.com/en-us/library/gg309513.aspx).
+Este código de muestra es para Common Data Service. Para descargar el ejemplo, consulte [Ejemplo: Uso de métodos Dynamics 365 for Outlook](https://msdn.microsoft.com/library/gg309513.aspx).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -85,7 +85,7 @@ if (outlookService.IsCrmClientLoaded)
   
 ### <a name="see-also"></a>Vea también  
 
-[Ampliar Dynamics 365 para Outlook](extend-dynamics-365-outlook.md)<br />
+[Ampliar Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOnline><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOffline>

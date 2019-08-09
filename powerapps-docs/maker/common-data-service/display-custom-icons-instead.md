@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo mostrar gráficos de icono en una 
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -104,7 +104,7 @@ search.app:
 > [!IMPORTANT]
 > Este ejemplo requiere la entidad oportunidad, que está disponible con aplicaciones Microsoft Dynamics 365 for Customer Engagement.
   
-```  
+```javascript
 function displayIconTooltip(rowData, userLCID) {      
     var str = JSON.parse(rowData);  
     var coldata = str.opportunityratingcode_Value;  

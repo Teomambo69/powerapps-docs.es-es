@@ -1,20 +1,13 @@
 ---
 title: Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript | Microsoft Docs
-description: Aprenda cómo los desarrolladores pueden usar JavaScript en scripts del lado cliente y aplicaciones basadas en modelos
+description: Aprenda cómo los desarrolladores pueden usar JavaScript en scripts del lado cliente para aplicar lógica de negocios personalizada en aplicaciones basadas en modelos y aplicaciones Dynamics 365 for Customer Engagement
 services: ''
 suite: powerapps
-documentationcenter: na
-author: JimDaly
-manager: kvivek
-editor: ''
-tags: ''
+author: KumarVivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/31/2018
-ms.author: jdaly
+ms.date: 06/27/2019
+ms.author: kvivek
 search.audienceType:
   - developer
 search.app:
@@ -24,12 +17,14 @@ search.app:
 
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript
 
-El scripting del cliente mediante JavaScript es una de las distintas formas de aplicar la lógica personalizada de procesos de negocios para mostrar los datos de un formulario en una aplicación basada en modelos, pero no debería ser su primera elección. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)
+El scripting del cliente mediante JavaScript es una de las distintas formas de aplicar la lógica personalizada de procesos de negocios para mostrar los datos en un formulario en una aplicación basada en modelos.
 
-> [!TIP]
-> Encontrará al diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
+> [!IMPORTANT]
+> Todos los conceptos y API de script del cliente que se explican en esta documentación también se aplican a aplicaciones Dynamics 365 for Customer Engagement porque las aplicaciones Customer Engagement son en realidad aplicaciones basadas en modelos basadas en la plataforma Common Data Service.
 
-Si el requisito empresarial no no se puede conseguir con una regla de negocio, descubrirá que el scripting de cliente que usa el modelo de objetos API de cliente proporciona una forma eficaz de ampliar el comportamiento de la aplicación y habilitar la automatización en el cliente.
+Los scripts de cliente no deben ser su primera opción sin embargo para aplicar lógica de proceso de negocio personalizada en formularios de aplicación basados en modelos. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form). Encontrará al diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
+
+Sin embargo, si el requisito empresarial no se puede conseguir con una regla de negocio, descubrirá que el scripting de cliente que usa el modelo de objetos API de cliente proporciona una forma eficaz de ampliar el comportamiento de la aplicación y habilitar la automatización en el cliente.
 
 ## <a name="use-client-scripting-in-model-driven-apps"></a>Usar el scripting de cliente en aplicaciones basadas en modelos
 
@@ -59,5 +54,6 @@ Las aplicaciones basadas en modelos proporcionan un amplio conjunto de **API de 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Recursos web para aplicaciones basadas en modelos](web-resources.md)<br/>
-[Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)
+[Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)<br/>
+[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)
 

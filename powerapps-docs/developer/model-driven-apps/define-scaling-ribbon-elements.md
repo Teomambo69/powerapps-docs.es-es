@@ -3,8 +3,7 @@ title: Definir la escalabilidad de elementos de la cinta de opciones (aplicacion
 description: Obtenga información sobre cómo definir la escalabilidad para los elementos de la cinta de opciones.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-scaling-for-ribbon-elements"></a>Definir escalabilidad para elementos de la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
 
 Para las cintas de opciones de aplicación y las cintas de opciones actualizadas de formulario de entidad no hay escalabilidad. La escalabilidad solo se aplica a los formularios de las entidades que no se actualizaron y las cintas de opciones de lista que se muestran mediante Dynamics 365 for Outlook.  
   

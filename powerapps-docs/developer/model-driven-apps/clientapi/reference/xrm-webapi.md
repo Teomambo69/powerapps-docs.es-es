@@ -42,6 +42,6 @@ Proporciona propiedades y métodos para usar las API web para crear y administra
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Utilizar API Web de Common Data Service](../../../common-data-service/webapi/overview.md)
+[Usar la API web de Common Data Service](../../../common-data-service/webapi/overview.md)
 
 [Objeto Xrm de API de cliente](../clientapi-xrm.md)

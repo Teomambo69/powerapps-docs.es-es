@@ -1,8 +1,8 @@
 ---
-title: 'Tutorial: Ejemplo de servicio de organización (C#) (Common Data Service) | Microsoft Docs'
+title: 'Inicio rápido: Ejemplo de servicio de organización (C#) (Common Data Service) | Microsoft Docs'
 description: En este tutorial se muestra cómo conectarse al servicio de la organización de Common Data Service
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -29,15 +29,15 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- - Visual Studio (2017 recomendado)
+ - Visual Studio (2017 recomendada)
  - Conexión a Internet
- - Una cuenta de usuario válida para la estancia de Common Data Service
+ - Cuenta de usuario válida para una instancia de Common Data Service
     - Su nombre de usuario
     - Su contraseña
- - Dirección URL al entorno de aplicaciones Common Data Service con el que quiere conectarse
+ - Dirección URL al entorno de Common Data Service con el que quiere conectarse
  - Comprensión básica de lenguaje Visual C#
 
-## <a name="create-visual-studio-project"></a>Crear proyecto en Visual Studio
+## <a name="create-visual-studio-project"></a>Crear proyecto de Visual Studio
 
 1. Cree un nuevo proyecto de aplicación de consola (.NET Framework) mediante .NET Framework 4.6.2
 
@@ -50,7 +50,7 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
 
     ![Agregar paquete de NuGet](../media/quick-start-org-service-console-app-2.png)
 
-1. Busque el paquete de NuGet `Microsoft.CrmSdk.XrmTooling.CoreAssembly` más reciente e instálelo.
+1. Busque la versión del paquete `Microsoft.CrmSdk.XrmTooling.CoreAssembly` NuGet más reciente e instálelo.
 
     ![Instalar el paquete Microsoft.CrmSdk.XrmTooling.CoreAssembly NuGet](../media/quick-start-org-service-console-app-3.png)
 
@@ -66,7 +66,7 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. Reemplace el método `Main` con el siguiente:
+1. Reemplace el método `Main` con el siguiente. Los valores admitidos para *AuthType* se enumeran en [Parámetros de cadena de conexión](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters).
 
     ```csharp
     static void Main(string[] args)
@@ -75,7 +75,7 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
         string url = "<your environment url>";
         // e.g. you@yourorg.onmicrosoft.com
         string userName = "<your user name>";
-        // e.g. y0urp455w0rd
+        // e.g. y0urp455w0rd 
         string password = "<your password>";
 
         string conn = $@"
@@ -100,7 +100,7 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
     }
     ```
 
-1. Edite los siguientes valores para agregar información para el entorno:
+1. Edite los siguientes valores para agregar información para el entorno. Puede encontrar la dirección URL del entorno en la aplicación web en **Configuración > Personalización > Recursos para desarrolladores**.
 
     ```csharp
     // e.g. https://yourorg.crm.dynamics.com
@@ -127,7 +127,7 @@ Se ha conectado con éxito al servicio de organización.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Estos temas explicarán cómo trabajar con las entidades Common Data Service:
+Estos temas explicarán cómo trabajar con entidades de Common Data Service:
 
 [Operaciones de la entidad con el servicio de organización](entity-operations.md)<br />
 [Crear entidades con el servicio de la organización](entity-operations-create.md)<br />

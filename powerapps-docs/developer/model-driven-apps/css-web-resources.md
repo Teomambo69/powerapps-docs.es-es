@@ -3,8 +3,7 @@ title: Recursos web de CSS (aplicaciones basadas en modelos) | Microsoft Docs
 description: 'Use los recursos web de las hojas de estilo en cascada (CSS) para crear hojas de estilo para usar con recursos web de páginas web. '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -20,16 +19,16 @@ search.app:
   - D365CE
 ---
 
-# <a name="css-web-resources"></a>Recursos web CSS
+# <a name="css-web-resources"></a>Recursos web de CSS
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/css-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/css-web-resources -->
 
 Use los recursos web de las hojas de estilo en cascada (CSS) para crear hojas de estilo para usar con recursos web de páginas web.  
   
 ## <a name="capabilities-of-css-web-resources"></a>Capacidades de los recursos web de CSS  
  Con los recursos web de CSS, puede administrar el aspecto de los recursos web de páginas web al vincularlos a una biblioteca compartida de estilos CSS.  
   
-### <a name="limitations-of-css-web-resources"></a>Limitaciones de los recursos web de CSS  
+### <a name="limitations-of-css-web-resources"></a>Limitaciones de los recursos web CSS  
  Como todos los recursos web, los recursos web de CSS solo están disponibles en el contexto de seguridad. Solo los usuarios con licencia con los privilegios necesarios pueden tener acceso a ellos.
   
 ## <a name="referencing-a-style-sheet-web-resource-from-a-webpage-web-resource"></a>Referencia a un recurso web de hoja de estilo desde un recurso web de página web  

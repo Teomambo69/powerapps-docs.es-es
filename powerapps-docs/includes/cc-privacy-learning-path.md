@@ -1,19 +1,11 @@
----
-ms.openlocfilehash: 719e72ff70580386b9b0a9bca3dcdc591574d026
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456994"
----
-Al habilitar la característica Ruta de aprendizaje, permite que el contenido HTML estático, las imágenes y los scripts se almacenen en Content Delivery Network de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Además, todo el contenido dinámico que se muestra se almacenará en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Redis Cache, que se usa para el almacenamiento previo en caché desde [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] SQL Database.  
+Al habilitar la característica Ruta de aprendizaje, permite que el contenido html estático, las imágenes y los scripts se almacenen en Red de entrega de contenido (red CDN) de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Además, todo el contenido dinámico que se muestra se almacenará en Caché en Redis de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], que se usa para el almacenamiento previo en caché desde la base de datos SQL de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)].  
   
  Un administrador puede habilitar y deshabilitar el uso de la característica Ruta de aprendizaje dentro de una instancia de [!INCLUDE[pn_crm_online_shortest](pn-crm-online-shortest.md)] mediante Habilitar la ayuda guiada en la organización de [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)].  
   
  En las próximas secciones se detallan los componentes y servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] relacionados con la funcionalidad Ruta de aprendizaje.  
   
 > [!NOTE]
->  Para obtener más información sobre las ofertas de servicio de Azure adicionales, visite el [Centro de confianza de Azure](https://azure.microsoft.com/support/trust-center/).  
+>  Para obtener más información acerca de otras ofertas de servicios de Azure, consulta el [Centro de confianza de Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
   
  [Cloud Services](https://azure.microsoft.com/services/cloud-services/)  
   
@@ -27,9 +19,9 @@ Al habilitar la característica Ruta de aprendizaje, permite que el contenido HT
   
  [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)  
   
- Ruta de aprendizaje usa SQL Database para almacenar lo siguiente:  
+ Ruta de aprendizaje usa SQL Database para almacenar:  
   
--   Content  
+-   Contenido  
   
 -   Metadatos de contenido  
   
@@ -39,9 +31,9 @@ Al habilitar la característica Ruta de aprendizaje, permite que el contenido HT
   
  Tanto el código HTML como las imágenes, [!INCLUDE[pn_JavaScript](pn-javascript.md)] y CSS se almacenan en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage.  
   
- [Azure Content Delivery Network (CDN)](https://azure.microsoft.com/services/cdn/)  
+ [Red de entrega de contenido (CDN) de Azure](https://azure.microsoft.com/services/cdn/)  
   
- Ruta de aprendizaje usa [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Content Delivery Network para presentar contenido estático al tiempo de ejecución de la encuesta, como HTML, imágenes, [!INCLUDE[pn_JavaScript](pn-javascript.md)] y CSS.  
+ Ruta de aprendizaje usa la Red de entrega de contenido de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] para presentar contenido estático al tiempo de ejecución de la encuesta, como HTML, imágenes, [!INCLUDE[pn_JavaScript](pn-javascript.md)] y CSS.  
   
  [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)  
   

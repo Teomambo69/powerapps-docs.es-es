@@ -2,7 +2,7 @@
 title: Escribir un complemento (Common Data Service) | Microsoft Docs
 description: Obtener información sobre los conceptos y los detalles técnicos necesarios para escribir complementos
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -20,7 +20,7 @@ search.app:
 El proceso para escribir, registrar y depurar un complemento es:
 
 1. **Crear un proyecto de biblioteca de clases de .NET Framework en Visual Studio**
-1. **Agregar el paquete `Microsoft.CrmSdk.CoreAssemblies` NuGet al proyecto**
+1. **Agregar el paquete `Microsoft.CrmSdk.CoreAssemblies`NuGet al proyecto**
 1. **Implementar la interfaz <xref:Microsoft.Xrm.Sdk.IPlugin> en clases que se registrarán como pasos.**
 1. **Agregar su código al método <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> requerido por la interfaz**
     1. **Obtener las referencias a los servicios que necesita**
@@ -43,13 +43,17 @@ El contenido de este tema analiza los pasos anteriores **en negrita** y ofrece l
 
 Tenga en cuenta las siguientes restricciones cuando cree ensamblados.
 
+### <a name="use-net-framework-462"></a>Usar .NET Framework 4.6.2
+
+Los complementos y ensamblados de flujo de trabajo personalizadas deben usar .NET Framework 4.6.2. Si bien los ensamblados construidos con versiones posteriores deben funcionar normalmente, si usan características introducidas después de 4.6.2 se producirá un error.
+
 ### <a name="optimize-assembly-development"></a>Optimizar el desarrollo de ensamblados
 
 El ensamblado debe incluir múltiples clases (o tipos) de complementos, pero no pueden ser mayores de 16 MB. Se recomienda consolidar complementos y ensamblados de flujo de trabajo en un único ensamblado siempre que el tamaño se mantenga por debajo de 16 MB. Más información: [Optimizar desarrollo de ensamblados](/dynamics365/customer-engagement/guidance/server/optimize-assembly-development)
 
 ### <a name="assemblies-must-be-signed"></a>Las ensamblados deben estar firmados
 
-Todos los ensamblados deben estar firmados antes de poder registrarlos. Esto se puede hacer mediante la pestaña Firma de Visual Studio en el proyecto o mediante [Sn.exe (herramienta Nombre seguro)](/dotnet/framework/tools/sn-exe-strong-name-tool)el.
+Todos los ensamblados deben estar firmados antes de poder registrarlos. Esto se puede hacer mediante la pestaña Firma de Visual Studio en el proyecto o mediante [Sn.exe (herramienta Nombre seguro)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ### <a name="do-not-depend-on-net-assemblies-that-interact-with-low-level-windows-apis"></a>No dependen de los ensamblados .NET que interactúan con API de Windows de bajo nivel
 
@@ -76,7 +80,7 @@ public SamplePlugin()
 public SamplePlugin(string unsecure)  
 public SamplePlugin(string unsecure, string secure)
 ```
-Los datos de configuración seguro se almacenan en una entidad aparte que sólo los administradores del sistema tienen privilegios para leer. Más información: [Establecer datos de configuración](register-plug-in.md#set-configuration-data)
+Los datos de configuración seguro se almacenan en una entidad aparte que sólo los administradores del sistema tienen privilegios para leer. Más información: [Registrar paso del complemento > Establecer datos de configuración](register-plug-in.md#set-configuration-data)
 
 ## <a name="services-you-can-use-in-your-code"></a>Servicios que puede usar en el código
 
@@ -105,17 +109,19 @@ IOrganizationServiceFactory serviceFactory =
     (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
 IOrganizationService svc = serviceFactory.CreateOrganizationService(context.UserId);
 ```
+
 La variable `context.UserId` usada con <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>.<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> procede del contexto de ejecución de la propiedad <xref:Microsoft.Xrm.Sdk.IExecutionContext.UserId>, por lo que se llama después de haber accedido al contexto de ejecución.
 
 Más información:
- - [Operaciones de la entidad](org-service/entity-operations.md)
- - [Consultar datos](org-service/entity-operations-query-data.md)
- - [Crear entidades](org-service/entity-operations-create.md)
- - [Recuperar una entidad](org-service/entity-operations-retrieve.md)
- - [Actualizar y eliminar entidades](org-service/entity-operations-update-delete.md)
- - [Asociar y desasociar entidades](org-service/entity-operations-associate-disassociate.md)
- - [Usar mensajes](org-service/use-messages.md)
- - [Programación en tiempo de ejecución y en tiempo de compilación](org-service/early-bound-programming.md)
+
+- [Operaciones de la entidad](org-service/entity-operations.md)
+- [Consultar datos](org-service/entity-operations-query-data.md)
+- [Crear entidades](org-service/entity-operations-create.md)
+- [Recuperar una entidad](org-service/entity-operations-retrieve.md)
+- [Actualizar y eliminar entidades](org-service/entity-operations-update-delete.md)
+- [Asociar y desasociar entidades](org-service/entity-operations-associate-disassociate.md)
+- [Usar mensajes](org-service/use-messages.md)
+- [Programación en tiempo de ejecución y en tiempo de compilación](org-service/early-bound-programming.md)
 
 Puede usar tipos de compilación en un complemento. Basta incluir el archivo de tipos generado en el proyecto. Pero debería tener en cuenta que todos los tipos de entidad proporcionados por los parámetros de entrada del contexto de ejecución serán tipos de ejecución. Deberá convertirlos a tipos de compilación. Por ejemplo puede realizar las siguientes acciones cuando sabe que el parámetro `Target` representa una entidad de cuenta.
 
@@ -127,6 +133,7 @@ Pero nunca debe intentar establecer el valor con un tipo de compilación. No int
 ```csharp
 context.InputParameters["Target"] = new Account() { Name = "MyAccount" }; // WRONG: Do not do this. 
 ```
+
 Esto hará que se produzca una <xref:System.Runtime.Serialization.SerializationException>.
 
 ## <a name="use-the-tracing-service"></a>Utilizar el servicio de seguimiento.
@@ -152,7 +159,10 @@ Más información: [Usar el seguimiento](debug-plug-in.md#use-tracing), [Registr
 
 ## <a name="performance-considerations"></a>Consideraciones sobre el rendimiento
 
-Al agregar lógica de negocios para el complemento necesita tener muy en cuenta el impacto que tendrán en el rendimiento general. La lógica de negocios en complementos no debe tardar más de 2 segundos en completarse.
+Al agregar lógica de negocios para el complemento necesita tener muy en cuenta el impacto que tendrán en el rendimiento general.
+
+> [!IMPORTANT]
+> La lógica de negocios en complementos registrados para pasos sincrónicos no debe tardar más de 2 segundos en completarse.
 
 ### <a name="time-and-resource-constraints"></a>Restricciones de tiempo y de recursos
 
@@ -179,12 +189,12 @@ La información en tiempo de ejecución sobre complementos y extensiones de fluj
 |TerminateMemoryContributionPercent|Finalización del porcentaje de contribución del tipo de complemento al proceso de trabajo debido al uso excesivo de la memoria. |
 |TerminateOtherContributionPercent|Finalización del porcentaje de contribución del tipo de complemento al proceso de trabajo por razones desconocidas. |
 
-Estos datos también están disponibles para que usted los examine mediante [Panel Complementos de Información de la organización](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics#plug-ins), junto con muchos otros informes útiles.
+Estos datos también están disponibles para que los examine mediante el [Centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/). Seleccione **Análisis** > **Common Data Service** > **Complementos**.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Registrar un complemento](register-plug-in.md)<br />
+[Registro de un complemento](register-plug-in.md)<br />
 [Depuración de complementos](debug-plug-in.md)
 
 ### <a name="see-also"></a>Vea también

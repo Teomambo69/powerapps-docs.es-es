@@ -18,11 +18,6 @@ Este componente de ejemplo explora los distintos métodos disponibles como parte
 > [!div class="mx-imgBorder"]
 > ![Componente API de navegación](../media/navigation-api-control.png "Componente API de navegación")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```xml
@@ -216,31 +211,31 @@ El método `openAlertDialog` ofrece la posibilidad de mostrar un diálogo de ale
 En este ejemplo al hacer clic en el `openAlertDialogButton` aparece un diálogo de alerta y establece su valor coo `Alert dialog closed` cuando se cierra el diálogo usando el botón `OK` o el botón `X`.
 
 > [!NOTE]
-> Esto es similar a llamar al método [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) en ClientAPI.  
+> Esto es similar a llamar al método [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) en ClientAPI.  
 
 El método `openConfirmDialog` ofrece la posibilidad de mostrar un diálogo de alerta que contiene un mensaje y dos botones. Puede usar este método para implementar lógica diferente basada en el botón en el que hace clic. Puede implementar la devolución de llamada correcta que se realiza cuando se cierra el diálogo al hacer clic en uno de los botones.
   
 Este ejemplo muestra un diálogo de confirmación al hacer clic en el `openConfirmDialogButton` y establece su valor como `Ok` o `Cancel`, o `X` según el botón en el que se hizo clic.
 
 > [!NOTE]
-> Esto es similar a llamar al método [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) en ClientAPI.
+> Esto es similar a llamar al método [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) en ClientAPI.
   
 El método `openFile` ofrece la posibilidad de abrir un archivo. Deberá pasar el objeto de archivo que tiene el nombre de archivo, el contenido, mimetype y filesize. También puede pasar del parámetro opcional del modo en el que desea abrir el archivo como 1 o 2, 1 es el valor predeterminado que abre el archivo en modo de lectura o abierto.
   
 Este ejemplo abre un archivo denominado `SampleDemo.txt` en modo de guardar al hacer clic en el `openFileButton`.
 
 > [!NOTE]
-> Esto es similar a llamar al método [Xrm.Navigation.openFile](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) en ClientAPI.
+> Esto es similar a llamar al método [Xrm.Navigation.openFile](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) en ClientAPI.
 
 El método `openUrl` ofrece la posibilidad de abrir una dirección URL. Necesita pasar la dirección URL como cadena el método y también pasar los parámetros opcionales de alto, ancho y openInNewWindow como true si desea que la dirección URL se abra en una nueva ventana.
   
 Este ejemplo abre una ventana nueva y carga la página principal de microsoft.com al hacer clic en el `openUrlButton`.
 
 > [!NOTE]
-> Esto es similar a llamar al método [Xrm.Navigation.openUrl](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) en ClientAPI.
+> Esto es similar a llamar al método [Xrm.Navigation.openUrl](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) en ClientAPI.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br/>
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)

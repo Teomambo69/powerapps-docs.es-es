@@ -3,8 +3,7 @@ title: Definir acciones personalizadas para modificar la cinta de opciones (apli
 description: Obtenga información sobre cómo definir acciones personalizadas para modificar la cinta de opciones.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
-title: Realice acciones en el formulario de host desde una aplicación de lienzo insertada | MicrosoftDocs
+title: Realice acciones en el formulario basado en modelos host desde una aplicación de lienzo insertada | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/29/2019
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,17 +23,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="perform-predefined-actions-on-the-host-form-from-within-an-embedded-canvas-app"></a>Realice acciones predefinidas en el formulario de host desde una aplicación de lienzo insertada
-Las aplicaciones de lienzo incrustadas permiten realizar acciones predefinidas en el formulario de host. Estas acciones permiten a creadores navegar, actualizar y guardar el formulario de host. Con estas acciones, una aplicación de lienzo incrustada puede actuar como parte más integral del formulario y de la aplicación basada en modelos.  
+# <a name="perform-predefined-actions-on-the-host-model-driven-form-from-within-an-embedded-canvas-app"></a>Realice acciones predefinidas en el formulario basado en modelos host desde una aplicación de lienzo insertada
+Las aplicaciones de lienzo incrustadas permiten realizar acciones predefinidas en el formulario basado en modelos host. Estas acciones permiten a creadores navegar, actualizar y guardar el formulario basado en modelos host. Con estas acciones, una aplicación de lienzo incrustada puede actuar como parte más integral del formulario basado en modelos y de la aplicación basada en modelos.  
 
-> [!NOTE]
-> Esta característica está actualmente en vista previa. <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] 
-
-El objeto **ModelDrivenFormIntegration** ahora incluye los siguientes nuevos métodos para permitir a los creadores realizar acciones en el formulario de host.  
+El objeto **ModelDrivenFormIntegration** ahora incluye los siguientes nuevos métodos para permitir a los creadores realizar acciones en el formulario basado en modelos host.  
   
 ### <a name="navigatetomainformentityname-mainformname-recordid"></a>NavigateToMainForm(entityName, mainFormName, recordId)
-Navega el formulario de host a un formulario principal y muestra el registro especificado.  
+Navega el formulario basado en modelos host a un formulario principal y muestra el registro especificado.  
 * **entityName** - Parámetro de cadena requerido que especifica la entidad principal del formulario principal.  
 * **formName** - Parámetro de cadena requerido que especifica el nombre del formulario principal al que navegar.  
 * **recordId** - Parámetro de cadena requerido que especifica el identificador del registro para mostrar en el formulario principal.  
@@ -48,7 +44,7 @@ Al llamar al método NavigateToMainForm se pueden mostrar los siguientes mensaje
   
   
 ### <a name="navigatetoviewentityname-viewname"></a>NavigateToView(entityName, viewName)
-Navega el formulario de host a una vista.  
+Navega el formulario basado en modelos host a una vista.  
 * **entityName** - Parámetro de cadena requerido que especifica la entidad principal de la vista.  
 * **viewName** - Parámetro de cadena requerido que especifica el nombre del formulario principal al que navegar.  
  
@@ -72,8 +68,8 @@ Al llamar al método OpenQuickCreateForm se pueden mostrar los siguientes mensaj
   
   
 ### <a name="refreshformshowprompt"></a>RefreshForm(showPrompt)  
-Actualiza los datos en el formulario de host.  
-* **showPrompt** - Parámetro booleano requerido que indica si un mensaje de confirmación se debe mostrar al usuario antes de guardar los datos sin guardar en el formulario de host. Los valores de deben ser “True “o “False”.
+Actualiza los datos en el formulario basado en modelos host.  
+* **showPrompt** - Parámetro booleano requerido que indica si un mensaje de confirmación se debe mostrar al usuario antes de guardar los datos sin guardar en el formulario basado en modelos host. Los valores de deben ser “True “o “False”.
  
 Al llamar al método RefreshForm se pueden mostrar los siguientes mensajes de error.
   
@@ -83,7 +79,7 @@ Al llamar al método RefreshForm se pueden mostrar los siguientes mensajes de er
   
   
 ### <a name="saveform"></a>SaveForm()  
-Guarda los datos en el formulario de host.  
+Guarda los datos en el formulario basado en modelos host.  
 
 
 > [!NOTE]
@@ -91,7 +87,10 @@ Guarda los datos en el formulario de host.
 
 ## <a name="see-also"></a>Vea también
 [Insertar una aplicación de lienzo en un formulario controlado por modelos](embed-canvas-app-in-form.md) <br />
-[Pasar el registro actual como contexto de datos a una aplicación incrustada de lienzo](pass-current-embedded-canvas-app.md) <br />
-[Pasar una lista de registros relacionados como contexto de datos a una aplicación incrustada de lienzo](pass-related-embedded-canvas-app.md) <br />
+[Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md) <br />
+[Editar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-edit-classic-designer.md) <br />
+[Personalizar el tamaño y orientación de la pantalla de una aplicación de lienzo insertada en un formulario basado en modelos](embedded-canvas-app-customize-screen.md) <br />
+[Propiedades y acciones del control ModelDrivenFormIntegration](embedded-canvas-app-properties-actions.md) <br />
 [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md) <br />
-[Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas](embedded-canvas-app-guidelines.md)
+[Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas](embedded-canvas-app-guidelines.md) <br />
+[Migrar aplicaciones de lienzo insertadas en formularios basados en modelos creados mediante la versión de vista previa pública a la más reciente](embedded-canvas-app-migrate-from-preview.md) <br />

@@ -3,8 +3,7 @@ title: Definir las reglas de habilitación de la cinta de opciones (aplicaciones
 description: Obtenga información sobre cómo definir las reglas específicas a supervisar cuando se habilitan los elementos de la cinta de opciones al configurar los elementos de la cinta de opciones.
 keywords: ''
 ms.date: 02/08/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

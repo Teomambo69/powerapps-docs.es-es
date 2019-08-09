@@ -18,14 +18,14 @@ search.app:
 ---
 # <a name="create-auto-number-attributes"></a>Crear atributos de numeración automática
 
-Con Common Data Service puede agregar un atributo de numeración automática para todas las entidades. Actualmente, puede agregar el atributo mediante programación. No hay ninguna interfaz de usuario para agregar este tipo de atributo. El tema explica cómo puede crear mediante programación un atributo de numeración automática y establecer un valor de semilla para los elementos de la secuencia. Además, el tema muestra cómo establecer el número de secuencia del registro siguiente si necesita restablecer el valor de semilla en cualquier momento más adelante.
+Con Common Data Service puede agregar un atributo de numeración automática para cualquier entidad. Actualmente, puede agregar el atributo mediante programación. No hay ninguna interfaz de usuario para agregar este tipo de atributo. El tema explica cómo puede crear mediante programación un atributo de numeración automática y establecer un valor de semilla para los elementos de la secuencia. Además, el tema muestra cómo establecer el número de secuencia del registro siguiente si necesita restablecer el valor de semilla en cualquier momento más adelante.
 > [!NOTE]
 >El establecimiento de un valor de semilla es opcional. No es necesario llamar a la semilla si no es necesario volver a sembrar el valor.
 
 
 Puede crear un atributo de numeración automática del mismo modo que se crea un atributo de cadena mediante la clase **StringAttributeMetadata** excepto que en este caso se usa la nueva propiedad **AutoNumberFormat**. Utilice la propiedad **AutoNumberFormat** para definir un modelo que incluya números secuenciales y cadenas aleatorias mediante la composición de marcadores de posición, que indica la longitud y el tipo de valores que se generan. Las cadenas aleatorias le ayudan a evitar duplicados o colisiones, en especial cuando los clientes sin conexión intentan crear números automáticamente.
 
-Cuando se crea un atributo de numeración automática, los valores de la propiedad **StringAttributeMetadata.FormatName** o de la propiedad **StringAttributeMetadata.Format** deben ser de texto. Puesto que estos son los valores predeterminados, normalmente no será necesario definir esta propiedad. No se puede crear un atributo de numeración automática que utiliza cualquier otro tipo de formato especial como Email, Phone, TextArea, Url o cualquier otro [formato existente](https://msdn.microsoft.com/en-us/library/microsoft.xrm.sdk.metadata.stringformatname.aspx).
+Cuando se crea un atributo de numeración automática, los valores de la propiedad **StringAttributeMetadata.FormatName** o de la propiedad **StringAttributeMetadata.Format** deben ser de texto. Puesto que estos son los valores predeterminados, normalmente no será necesario definir esta propiedad. No se puede crear un atributo de numeración automática que utiliza cualquier otro tipo de formato especial como Email, Phone, TextArea, Url o cualquier otro [formato existente](https://msdn.microsoft.com/library/microsoft.xrm.sdk.metadata.stringformatname.aspx).
 
 SQL genera el segmento secuencial y, por tanto, SQL garantiza la exclusividad.
 
@@ -61,7 +61,7 @@ CreateAttributeRequest widgetSerialNumberAttributeRequest = new CreateAttributeR
 
 Puede crear y actualizar definiciones de entidad mediante la API web.
 
-Más información: [Crear y actualizar definiciones de entidad mediante la API web > Crear atributos](https://msdn.microsoft.com/en-us/library/mt593078.aspx#Anchor_3).
+Más información: [Crear y actualizar definiciones de entidad mediante la API web > Crear atributos](https://msdn.microsoft.com/library/mt593078.aspx#Anchor_3).
 
 #### <a name="request"></a>Solicitud
 ```http
@@ -235,7 +235,7 @@ _serviceProxy.Execute(req);
 ```
 Con la acción **SetAutoNumberSeed** de la API web.
 
-Más información: [Use las acciones de API de web > Acciones sin enlazar](https://msdn.microsoft.com/en-us/library/mt607600.aspx#bkmk_unboundActions)
+Más información: [Use las acciones de API de web > Acciones sin enlazar](https://msdn.microsoft.com/library/mt607600.aspx#bkmk_unboundActions)
 
 #### <a name="request"></a>Solicitud
 
@@ -267,7 +267,7 @@ OData-Version: 4.0
 Consulte el tema [Herramientas del desarrollador](developer-tools.md) para ver las herramientas desarrolladas por la comunidad y [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) para obtener más información sobre Auto Number Manager.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de Common Data Service y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Las herramientas de la Comunidad no son un producto de Common Data Service y no se amplía el soporte para las herramientas de comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
 
 
 ### <a name="see-also"></a>Vea también

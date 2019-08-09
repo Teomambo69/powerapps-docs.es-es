@@ -16,11 +16,6 @@ ms.author: nabuthuk
 
 Con el lanzamiento del marco de componentes de PowerApps, ahora puede crear sus propios componentes personalizados para mejorar la experiencia de usuario en aplicaciones basadas en modelo. Aunque puede crear sus propios componentes, hay algunas limitaciones que restringen a los programadores a implementar algunas características en los componentes personalizados. A continuación se indican algunas de las limitaciones:
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="support-for-external-libraries"></a>Compatibilidad con bibliotecas externas
 
 Para la vista previa pública, los componentes deben agrupar todo el contenido de bibliotecas externas en la agrupación de código principal. Para ver un ejemplo de cómo la interfaz de línea de comandos de PowerApps puede ayudar a agrupar su contenido de biblioteca externa en una agrupación específica del componente, vea el ejemplo de [Componente de Flip angular](sample-controls/angular-flip-control.md).

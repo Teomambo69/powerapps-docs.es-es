@@ -1,10 +1,9 @@
 ---
 title: Acciones en visualizaciones (gráficos) (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Con los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de la visualización.'
+description: 'Mediante los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de visualización.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
 
-Con los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de la visualización.  
+Mediante los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de visualización.  
   
 ## <a name="actions-on-organization-owned-visualizations"></a>Acciones en visualizaciones que pertenecen a una organización  
  Para realizar acciones sobre una visualización que pertenece a una organización (`SavedQueryVisualization`), debe tener el rol de administrador del sistema o personalizador del sistema. Puede realizar las siguientes acciones sobre una visualización que pertenece a una organización:  

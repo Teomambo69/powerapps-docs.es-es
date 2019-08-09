@@ -2,7 +2,7 @@
 title: Visualizar datos jerárquicos con aplicaciones controladas por modelos | MicrosoftDocs
 description: Aprenda cómo consultar y visualizar datos jerárquicos relacionados
 ms.custom: ''
-ms.date: 09/19/2018
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -25,7 +25,7 @@ search.app:
 
 Cuando una entidad está configurada para tener una relación jerárquica que hace referencia a sí misma, puede configurar visualizaciones usando esa jerarquía. Más información: [Definir y consultar datos relacionados jerárquicamente](../common-data-service/define-query-hierarchical-data.md)
 
-Las entidades que tienen visualizaciones disponibles de forma predeterminada incluyen [Cuenta](/powerapps/developer/common-data-service/reference/entities/account), [Posición](/powerapps/developer/common-data-service/reference/entities/position) y [Usuario](/powerapps/developer/common-data-service/reference/entities/systemuser). En la vista de cuadrícula de estas entidades, puede ver el icono que muestra el gráfico de jerarquía a la izquierda del nombre del registro. El icono de jerarquía no está presente para todos los registros de forma predeterminada. El icono se muestra para los registros que ya están relacionados con la relación jerárquica.  
+Las entidades que tienen visualizaciones disponibles de forma predeterminada incluyen [Cuenta](/powerapps/developer/common-data-service/reference/entities/account), [Posición](/powerapps/developer/common-data-service/reference/entities/position) y [Usuario](/powerapps/developer/common-data-service/reference/entities/systemuser). En la vista de cuadrícula de estas entidades, puede ver el icono que muestra el gráfico de jerarquía a la izquierda del nombre del registro. El icono de jerarquía no está presente para todos los registros de forma predeterminada. El icono se muestra para los registros que están relacionados con la relación jerárquica.  
 > [!div class="mx-imgBorder"] 
 > ![Botón Ver jerarquía](media/view-hierarchy-button.png)  
   

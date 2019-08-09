@@ -1,11 +1,11 @@
 ---
 title: 'Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en PowerApps | Microsoft Docs'
-description: 'Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en PowerApps'
+description: 'Descripción de la accesibilidad en aplicaciones basadas en modelo con el diseñador de aplicaciones, el diseñador del mapa del sitio y página Mis aplicaciones en PowerApps'
 keywords: Diseñador de aplicaciones; diseñador del mapa del sitio; mis aplicaciones; Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 05/20/2019
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -22,7 +22,8 @@ search.app:
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones de PowerApps
 
 Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](http://www.microsoft.com/enable/default.aspx)  
-  
+ 
+En este tema se describen las características de accessiblidad disponibles con aplicaciones basadas en modelos.  
   
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
 PowerApps ofrece métodos abreviados de teclado para resolver los problemas a los que se enfrentan las personas con destreza manual limitada o discapacidad motriz.  
@@ -105,4 +106,4 @@ PowerApps ofrece métodos abreviados de teclado para resolver los problemas a lo
 
 ## <a name="see-also"></a>Vea también
 
-[Uso de métodos abreviados de teclado en aplicaciones de Dynamics 365 Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Usar métodos abreviados de teclado en aplicaciones Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)

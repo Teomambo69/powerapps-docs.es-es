@@ -14,6 +14,8 @@ ms.assetid: 45f4872d-c1d2-4c5a-8721-251b96ede370
 
 # <a name="property-element"></a>elemento propiedad
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [property-description](includes/property-description.md)]
 
 ## <a name="attributes"></a>Atributos
@@ -23,7 +25,7 @@ ms.assetid: 45f4872d-c1d2-4c5a-8721-251b96ede370
 |`name`|Nombre de la propiedad.|`string`|Sí|
 |`display-name-key`|Se usa en las pantallas de personalización como cadenas localizadas que describen el nombre de la propiedad.|`string`|Sí|
 |`of-type`|Deeine el tipo de datos de la propiedad|Consulte [Notas](#remarks)|Opcional|
-|`usage`|El atributo de uso identifica si la propiedad está diseñada para representar un atributo de entidad que el componente puede cambiar (enlazada) o valores de sólo lectura (entrada)|`bound`,`input` o `output`|Opcional|
+|`usage`|El atributo de uso identifica si la propiedad está diseñada para representar un atributo de entidad que el componente puede cambiar (enlazada) o valores de sólo lectura (entrada)|`bound` o `input`|Opcional|
 |`required`|Si la propiedad es requerida o no|`boolean`|Opcional|
 |`of-type-group`|Nombre del grupo de tipos definido en el manifiesto|`string`|Opcional|
 |`description-key`|Se usa en las pantallas de personalización como cadenas localizadas que describen la descripción de la propiedad.|`string`|Opcional|

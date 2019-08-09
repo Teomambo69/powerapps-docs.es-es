@@ -1,8 +1,8 @@
 ---
 title: Referencia API de cliente para aplicaciones basadas en modelos | MicrosoftDocs
 description: El tema se proporciona la referencia de API de clientes para aplicaciones basadas en modelos.
-ms.date: 10/31/2018
-ms.service: crm-online
+ms.date: 06/27/2019
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
   - Dynamics 365 (online)
@@ -23,8 +23,9 @@ search.app:
 Esta sección contiene documentación de referencia para modelos de objetos de API de cliente que se pueden usar con las bibliotecas JavaScript.
 
 > [!IMPORTANT]
-> El modelo de objetos de API de cliente también contiene el espacio de nombres **Xrm.Internal** y no se pueden usar los objetos/métodos en este espacio de nombres. Estos objetos, así como partes del Document Object Model (DOM) HTML, está sujetos a modificaciones sin previo aviso. Recomendamos no usar estas funciones o cualquier script que dependa del DOM.<br/><br/>
-También, al depurar puede encontrar métodos y objetos en el modelo de API de cliente sin documentar. Solo se admiten objetos y métodos documentados.
+> - Todos las API de script del cliente disponibles en esta documentación también se aplican a aplicaciones Dynamics 365 for Customer Engagement porque las aplicaciones Customer Engagement son en realidad aplicaciones basadas en modelos basadas en la plataforma Common Data Service.
+> - El modelo de objetos de API de cliente también contiene el espacio de nombres **Xrm.Internal** y no se pueden usar los objetos/métodos en este espacio de nombres. Estos objetos, así como partes del Document Object Model (DOM) HTML, está sujetos a modificaciones sin previo aviso. Recomendamos no usar estas funciones o cualquier script que dependa del DOM.
+> - También, al depurar puede encontrar métodos y objetos en el modelo de API de cliente sin documentar. Solo se admiten objetos y métodos documentados.
 
 Los temas de esta sección se organizan del siguiente modo:
 - Comienza con la referencia de todos los eventos, colecciones y el objeto de contexto de ejecución.

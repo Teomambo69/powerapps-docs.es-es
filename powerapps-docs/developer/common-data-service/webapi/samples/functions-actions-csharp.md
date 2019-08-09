@@ -1,6 +1,6 @@
 ---
-title: 'Ejemplo de funciones y acciones de API web (C#) (Common Data Service) | Microsoft Docs'
-description: 'Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service y C#.'
+title: 'Ejemplo de funciones y acciones de la API web (C#) (Common Data Service)| Microsoft Docs'
+description: 'Este ejemplo muestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y C#'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Ejemplo de funciones y acciones de la API web (C#)
 
-Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service.  
+Este ejemplo muestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service.  
   
 > [!NOTE]
 > Este ejemplo implementa las operaciones detalladas en el [Ejemplo de funciones y acciones de la API web](../web-api-functions-actions-sample.md) y utiliza las construcciones comunes del lado cliente C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
@@ -31,7 +31,7 @@ Este ejemplo demuestra cómo llamar a funciones y acciones enlazadas y sin enlaz
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Los requisitos previos de todos los ejemplos en C# de la API web de Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
+Los requisitos previos de todos los ejemplos en C# de la API web Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de la API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_runSample"></a>
 
@@ -45,7 +45,7 @@ Vaya a [Ejemplo de funciones y acciones de la API web (C#)](https://github.com/M
 |App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de Common Data Service con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
 |SampleHelper.cs|Contiene el código auxiliar para ayudar a realizar tareas comunes, como la configuración, la autenticación y la administración de errores de respuestas `HTTP`.<br/> Este archivo se comparte con todos los ejemplos de API web en el repositorio. Contiene métodos auxiliares para administrar excepciones y el token OAuth. Consulte el ejemplo simple de la API web para obtener más información sobre los métodos de este archivo.|
 |SampleMethod.cs|Contiene todos los métodos que admiten el código de origen en el ejemplo. Las funciones que se usan en `SampleProgram.cs` se pueden definir en este archivo. |
-|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|El proyecto, la configuración del paquete NuGet, y los archivos de información de ensamblado de la solución Visual Studio 2017 estándar para este ejemplo.|  
+|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|La solución de Visual Studio 2017 estándar, proyecto, configuración del paquete NuGet, y archivos de información de ensamblado para este ejemplo.|  
 |WebAPIFunctionsandActions_1_0_0_0_managed.zip|Una solución administrada personalizada que contenga dos acciones personalizadas llamada por este ejemplo.|  
   
 A continuación, use el procedimiento siguiente para ejecutar este servicio.  
@@ -221,7 +221,7 @@ namespace PowerApps.Samples
                     //Add a new letter tracking activity to the current user's queue. Uses the AddToQueue 
                     //action: https://msdn.microsoft.com/library/mt607880.aspx, which is bound to the queue 
                     //entity type: https://msdn.microsoft.com/library/mt607886.aspx, and returns a 
-                    //AddToQueueResponse complex type: https://msdn.microsoft.com/en-us/library/mt608105.aspx.
+                    //AddToQueueResponse complex type: https://msdn.microsoft.com/library/mt608105.aspx.
                     string queueItemId;
                     //Create a letter tracking instance.
                     string letterUri;
@@ -443,7 +443,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](../overview.md)<br />
+[Usar la API web de Common Data Service](../overview.md)<br />
 [Usar funciones de la API web](../use-web-api-functions.md)<br />
 [Usar acciones de la API web](../use-web-api-actions.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />

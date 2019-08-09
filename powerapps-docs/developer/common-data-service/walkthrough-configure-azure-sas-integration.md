@@ -1,10 +1,9 @@
 ---
 title: 'Tutorial: Configurar Microsoft Azure (SAS) para integración (Common Data Service) | Microsoft Docs'
-description: 'El tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service registrados en Azure Service Bus.'
+description: 'El tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service para aplicaciones registrados en Azure Service Bus.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,10 +23,10 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
-Este tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service registrados en Azure Service Bus.  
+Este tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service para aplicaciones registrados en Azure Service Bus.  
   
 > [!NOTE]
->  Este tutorial se aplica a cualquier implementación de Common Data Service cuando se usa autorización SAS para mensajería de Azure. Para obtener más información sobre la autorización de Azure Service Bus, consulte [Autenticación y autorización de Service Bus](https://azure.microsoft.com/en-us/documentation/articles/service-bus-authentication-and-authorization/).  
+>  Este tutorial se aplica a cualquier implementación de Common Data Service cuando se usa autorización SAS para mensajería de Azure. Para obtener más información sobre la autorización de Azure Service Bus, consulte [Autenticación y autorización de Service Bus](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/).  
 >   
 > Debe usar la herramienta de registro de complementos. Para descargar la herramienta de registro de complementos, consulte [Descargar herramientas de NuGet](download-tools-NuGet.md).
   
@@ -48,7 +47,7 @@ Este tutorial le guiará por el proceso de configuración del emisor de Azure Se
   
 ## <a name="create-a-service-endpoint"></a>Crear un extremo de servicio
 
-Una [entidad ServiceEndpoint](reference/entities/serviceendpoint.md) contiene datos de configuración que son necesarios para mensajería externa con un extremo de soluciones de Azure Service Bus. Utilizando la herramienta de registro de complementos, puede crear fácilmente una entidad de extremo de servicio en una organización de Common Data Service y configurar el emisor, el ámbito, y las reglas del extremo de bus de servicio. D:\GitHub\power-apps\powerapps-docs-pr\powerapps-docs\developer\common-data-service\reference\entities\serviceendpoint.md
+Una [entidad ServiceEndpoint](reference/entities/serviceendpoint.md) contiene datos de configuración que son necesarios para mensajería externa con un extremo de soluciones de Azure Service Bus. Utilizando la herramienta de registro de complementos, puede crear fácilmente una entidad de extremo de servicio en una organización de Common Data Service y configurar el emisor, el ámbito, y las reglas del extremo de bus de servicio.
   
 ### <a name="register-a-service-endpoint"></a>Registrar un extremo de servicio  
   

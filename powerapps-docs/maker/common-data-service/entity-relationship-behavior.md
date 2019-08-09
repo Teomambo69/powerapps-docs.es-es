@@ -1,5 +1,6 @@
 ---
-title: Comportamiento de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
+redirect_url: 'create-edit-entity-relationships#entity-relationship-behavior'
+title: Comportamiento de relación de entidades (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

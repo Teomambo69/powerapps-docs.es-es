@@ -19,9 +19,9 @@ search.app:
 
 Es el escenario más común y el que se usa para las aplicaciones distribuidas con Microsoft AppSource, pero también puede usar multiempresa sin enumerar su aplicación con Microsoft AppSource.  
   
-Cada organización de Common Data Service está asociada a un inquilino de Azure Active Directory. Su aplicación o servicio web se registra con su propio inquilino de Azure AD.  
+Cada organización de Common Data Service se asocia a un inquilino de Azure Active Directory. Su aplicación o servicio web se registra con su propio inquilino de Azure AD.  
   
-En este escenario cualquier inquilino de Common Data Service puede usar potencialmente la aplicación multiempresa después de conceder consentimiento para que la aplicación acceda a los datos en su inquilino.  
+En este escenario cualquier inquilino de Common Data Service puede usar potencialmente la aplicación multiempresa después de conceder consentimiento para que la aplicación acceda a los datos.  
   
 <a name="bkmk_Requirements"></a>   
 
@@ -31,7 +31,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
 - Un inquilino de Azure AD que usará para publicar la aplicación o el servicio.  
   
-- 2 Suscripciones de Common Data Service  
+- 2 suscripciones a Common Data Service  
   
   -   Una debe asociarse con el inquilino de Azure AD que usará para publicar la aplicación o el servicio.  
   
@@ -51,9 +51,9 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
 3. Crear un rol de seguridad personalizado y asignarlo al usuario de la aplicación en su inquilino de Common Data Service  
   
-4. Pruebe la aplicación con el inquilino de Common Data Service  
+4. Probar la aplicación con el inquilino de Common Data Service  
   
-5. Pruebe la aplicación con el inquilino aparte de Common Data Service  
+5. Probar la aplicación con un inquilino de Common Data Service distinto  
   
 <a name="bkmk_CreateAMultitenantWebApp"></a>
    
@@ -63,9 +63,9 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
  Este tema no se centrará la manera exacta de hacer esto. Existen varias opciones posibles para abordar esto y realizar selecciones que se ajusten a sus requisitos o sus preferencias. Consulte los siguientes vínculos para obtener más información y ejemplos:  
   
-- [Crear una aplicación web SaaS multiempresa mediante Azure AD &amp; OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-multitenant-openidconnect/)  
+- [Crear una aplicación web SaaS multiempresa mediante Azure AD &amp; OpenID Connect](https://azure.microsoft.com/documentation/samples/active-directory-dotnet-webapp-multitenant-openidconnect/)  
   
-- [Crear una aplicación web SaaS multiempresa que llame a la API web utilizando Azure AD](https://azure.microsoft.com/en-us/documentation/samples/active-directory-webapp-webapi-multitenant-openidconnect-aspnetcore/)  
+- [Crear una aplicación web SaaS multiempresa que llame a la API web utilizando Azure AD](https://azure.microsoft.com/documentation/samples/active-directory-webapp-webapi-multitenant-openidconnect-aspnetcore/)  
   
   Azure AD requiere los siguientes valores para registrar la aplicación:  
   
@@ -74,11 +74,11 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
 |**URI de Id. de aplicación**|El identificador para una aplicación. Este valor se envía a Azure AD durante la autenticación para indicar para qué aplicación desea un símbolo el autor de la llamada. Además, este valor se incluye en el símbolo para que la aplicación sepa que era el destino deseado.|  
 |**Dirección URL de respuesta y URI de redireccionamiento**|En el caso de una API web o una aplicación web, la dirección URL de respuesta es la ubicación a la que Azure AD enviará la respuesta de autenticación, incluido un símbolo si la autenticación se realizó correctamente.|  
 |**Id. de cliente**|El identificador para una aplicación, que es generado por Azure AD cuando se registra la aplicación. Al solicitar un símbolo o código de autorización, el identificador y la clave de cliente se envían a Azure AD durante la autenticación.|  
-|**Clave**|La clave que se envía junto con un Id. de cliente al autenticar en Azure AD para llamar a una API web.|  
+|**Key**|La clave que se envía junto con un Id. de cliente al autenticar en Azure AD para llamar a una API web.|  
   
  Cuando se registra la aplicación se le asignará un **Id. de objeto de Azure Active Directory**, un identificador único para la aplicación registrada.  
   
- Si crea una nueva aplicación ASP.NET MVC con Visual Studio tendrá opciones para especificar que la aplicación admitirá la funcionalidad multiempresa. La plantilla para una aplicación MVC proporciona la opción de especificar el tipo de autenticación que aparece. Tendrá la opción de elegir el método de autenticación configurando las propiedades del proyecto cuando lo cree. En el siguiente diagrama se muestran las opciones disponibles:  
+ Si crea una nueva aplicación ASP.NET MVC con Visual Studio tendrá que opciones para especificar que la aplicación admitirá la funcionalidad multiempresa. La plantilla para una aplicación MVC proporciona la opción de especificar el tipo de autenticación que aparece. Tendrá la opción de elegir el método de autenticación configurando las propiedades del proyecto cuando lo cree. En el siguiente diagrama se muestran las opciones disponibles:  
   
  ![Diálogo Cambiar autenticación MVC de ASP.NET](media/mvc-change-authentication-dialog.png "Diálogo Cambiar autenticación MVC de ASP.NET")  
   
@@ -86,7 +86,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
  En el proceso de crear y registrar la aplicación para desarrollo probablemente usará `http://localhost` como valores de **Dirección URL de inicio de sesión** y **Dirección URL de respuesta** para que pueda probar y depurar su aplicación localmente antes de publicarla. Necesitará cambiar estos valores antes de publicar la aplicación.  
   
- Cuando registre la aplicación debe generar una clave, también denominada `ClientSecret`. Estas claves se pueden configurar para una duración de 1 ó 2 años. Como host de la aplicación debe tratar este valor como una contraseña y es su responsabilidad administrar la renovación de las claves antes de que expiren. La conviene utilizar Key Vault. Más información: [https://azure.microsoft.com/en-us/services/key-vault/](https://azure.microsoft.com/en-us/services/key-vault/)  
+ Cuando registre la aplicación debe generar una clave, también denominada `ClientSecret`. Estas claves se pueden configurar para una duración de 1 ó 2 años. Como host de la aplicación debe tratar este valor como una contraseña y es su responsabilidad administrar la renovación de las claves antes de que expiren. La conviene utilizar Key Vault. Más información: [https://azure.microsoft.com/services/key-vault/](https://azure.microsoft.com/services/key-vault/)  
   
 <a name="bkmk_GrantApplicationRights"></a>
    
@@ -139,7 +139,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
 <a name="bkmk_ManuallyCreateUser"></a>   
 
-### <a name="manually-create-a-common-data-service-application-user"></a>Crear manualmente un usuario de aplicaciones de Common Data Service  
+### <a name="manually-create-a-common-data-service-application-user"></a>Cree manualmente un usuario de la aplicación de Common Data Service  
 
  El procedimiento para crear este usuario es diferente de crear un usuario con licencia. Lleve a cabo los pasos siguientes:  
   
@@ -169,15 +169,15 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
 <a name="bkmk_TestUsingYourTenant"></a>  
  
-## <a name="test-your-application-using-your-common-data-service-tenant"></a>Pruebe la aplicación con el inquilino de Common Data Service 
+## <a name="test-your-application-using-your-common-data-service-tenant"></a>Probar la aplicación con el inquilino de Common Data Service 
  
- Puesto que la aplicación se ha registrado con el inquilino de Azure AD y el usuario de la aplicación en su organización de desarrollo ya está configurado, puede continuar desarrollando su aplicación con su propio inquilino de Common Data Service. Pero esto no es una prueba válida de la capacidad multiempresa. Debe probar la aplicación con un inquilino aparte de Common Data Service.  
+ Puesto que la aplicación se ha registrado con el inquilino de Azure AD y el usuario de la aplicación en su organización de desarrollo ya está configurado, puede continuar desarrollando su aplicación con su propio inquilino de Common Data Service. Pero esto no es una prueba válida de la capacidad multiempresa. Debe probar la aplicación con un inquilino de Common Data Service distinto.  
   
 <a name="bkmk_TestUsingSeparateTenant"></a>   
 
-## <a name="test-your-application-using-a-separate-common-data-service-tenant"></a>Pruebe la aplicación con el inquilino aparte de Common Data Service  
+## <a name="test-your-application-using-a-separate-common-data-service-tenant"></a>Probar la aplicación con un inquilino de Common Data Service distinto  
 
- Antes de probar su aplicación con un inquilino aparte de Common Data Service, un administrador para el inquilino de Azure AD debe conceder consentimiento para la aplicación. El administrador concede consentimiento navegando a la aplicación con un explorador. La primera vez que tiene acceso a la aplicación, verá un diálogo como éste:  
+ Antes de probar su aplicación con un inquilino de Common Data Service aparte, un administrador para el inquilino de Azure AD debe conceder consentimiento para la aplicación. El administrador concede consentimiento navegando a la aplicación con un explorador. La primera vez que tiene acceso a la aplicación, verá un diálogo como éste:  
   
  ![Conceder consentimiento para acceder a datos de Dynamics 365](media/grant-consent-to-access-crm-data.PNG "Conceder consentimiento para acceder a datos de Dynamics 365")  
   
@@ -210,7 +210,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
   Existen varias formas de conseguirlo, incluida la escritura de su propio programa mediante los servicios web y haciendo que el suscriptor ejecute el programa.  
   
-  El Dynamics 365 Package Deployer es una aplicación que se puede usar para preparar un paquete para automatizar la transferencia de soluciones y datos a otra organización de Common Data Service. Más información: [Crear paquetes para Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
+  El Package Deployer de Dynamics 365 es una aplicación que se puede usar para preparar un paquete para automatizar la transferencia de soluciones y datos a otra organización de Common Data Service. Más información: [Crear paquetes para Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
   
 ### <a name="see-also"></a>Vea también  
  [Usar autenticación entre servidores de una sola empresa](use-single-tenant-server-server-authentication.md)   

@@ -2,7 +2,7 @@
 title: Crear aplicaciones cliente (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 05/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,6 +17,7 @@ search.app:
 ---
 # <a name="create-a-client-application"></a>Crear una aplicación cliente
 
+El contenido se proporcionará próximamente...
 <!-- 
 
 New page to be the focus for the tasks surrounding discovery service and authentication to create a client application for the organization service.

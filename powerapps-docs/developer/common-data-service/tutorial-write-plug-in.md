@@ -38,13 +38,13 @@ Crear un complemento asincrónico registrado en el mensaje Crear de la entidad d
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Acceso de nivel de administrador a entorno de Common Data Service
+- Acceso de nivel de administrador a un entorno Common Data Service
 - Una aplicación basada en modelos que incluye las entidades de cuenta y tarea.
     - Si no dispone de una aplicación basada en modelos que incluya estas, vea [Crear la primera aplicación basada en modelos desde cero](../../maker/model-driven-apps/build-first-model-driven-app.md) para conocer los pasos para crear una en unos minutos.
 - Visual Studio 2017
 - Conocimientos del lenguaje de programación Visual C#
 - Descargue la herramienta de registro de complementos.
-    - Información sobre la descarga de la herramientas de registro de complementos en: [Descargar herramientas de NuGet](download-tools-nuget.md). El tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
+    - Información sobre la descarga de la herramientas de registro de complementos en: [Descargar herramientas de NuGet](download-tools-nuget.md). Este tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
 
 ## <a name="create-a-plug-in-project"></a>Crear un proyecto de complemento
 
@@ -209,7 +209,7 @@ En Visual Studio, presione **F6** para crear el ensamblado. Compruebe que se com
 1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Crear una clave de alta seguridad**.
 1. En la pestaña **Generar** de las propiedades del proyecto, compruebe que la opción **Configuración** esté establecida como **Depurar**.
 1. Pulse **F6** para crear el complemento de nuevo.
-1. Usando el Explorador de Windows, busque el complemento creado en:` \bin\Debug\BasicPlugin.dll`.
+1. Usando el Explorador de Windows, busque el complemento creado en:`\bin\Debug\BasicPlugin.dll`.
 
 > [!NOTE]
 > Cree el ensamblado usando la configuración de **Depuración** porque usará el generador de perfiles de complementos para depurarlo en un tutorial posterior.   Antes de incluir un complemento con la solución, debe generarlo mediante la configuración de versión.

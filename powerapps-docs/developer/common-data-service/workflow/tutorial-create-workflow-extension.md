@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Crear extensión de flujo de trabajo (Common Data Service) | Microsoft Docs'
-description: <Description>
+description: Este tutorial mostrará el proceso para ampliar el diseñador de flujos de trabajo para agregar actividades personalizadas y lógica mediante un ensamblado de flujo de trabajo.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -33,8 +33,8 @@ Este tutorial usa un ejemplo muy sencillo para centrarse en los requisitos y el 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - Debe tener Windows Workflow Foundation incluido como componente individual con Visual Studio 2017.  Más información: [Requisitos de Visual Studio](workflow-extensions.md#visual-studio-requirements)
-- Una instancia de Common Data Service y privilegios de administrador
-- Descripción de cómo configurar flujos de trabajo. Más información: [Flujos de trabajo clásicos de Common Data Service](/flow/workflow-processes)
+-  Una instancia y privilegios de administrador de Common Data Service
+- Descripción de cómo configurar flujos de trabajo. Más información: [Flujos de trabajo de Common Data Service clásico](/flow/workflow-processes)
 - Una aplicación basada en modelos que le permite editar cuentas.
 
 ## <a name="goal"></a>Objetivo
@@ -73,9 +73,9 @@ En el segundo, una acción **Actualizar registro** asignará la salida del paso 
 
 Este proyecto creará un ensamblado de flujo de trabajo simple que aumentará un valor decimal por 10.
 
-1. Inicie Visual Studio.
+1. Iniciar Visual Studio.
 1. En el menú **Archivo**, haga clic en **Nuevo**, y haga clic en **Proyecto**.
-1. En el cuadro de diálogo **Nuevo proyecto**, en **Otros lenguajes**, amplíe Visual C# y seleccione **Flujo de trabajo** y, a continuación, seleccione **Biblioteca de actividades**.
+1. En el cuadro de diálogo **Nuevo proyecto**, amplíe **Visual C#** y seleccione **Flujo de trabajo** y, a continuación, seleccione **Biblioteca de actividades**.
 1. Especifique un nombre y una ubicación para la solución y, a continuación, haga clic en **Aceptar**.
 
     > [!NOTE]
@@ -92,7 +92,7 @@ Este proyecto creará un ensamblado de flujo de trabajo simple que aumentará un
 
     ![administrar paquetes nuget](media/tutorial-create-workflow-activity-manage-nuget-packages.png)
 
-1. Busque el paquete [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet e instálelo.
+1. Busque el paquete [Microsoft.CrmSdk.Workflow NuGet](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) e instálelo.
 
     > [!NOTE]
     > Asegúrese de que el paquete que instale es propiedad de [crmsdk](https://www.nuget.org/profiles/crmsdk). Este paquete incluirá el `Microsoft.Xrm.Workflow.dll` e incluirá una dependencia en el paquete [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) para que también se incluya el ensamblado `Microsoft.Xrm.Sdk.dll` necesario. 
@@ -189,7 +189,7 @@ Agregue la lógica en el método Execute para aplicar la lógica para aumentar e
 
 ## <a name="register-your-assembly"></a>Registrar el ensamblado
 
-Los ensamblados personalizados de actividades de flujo de trabajo se registran mediante la herramienta de registro de complementos. La herramienta proporciona una interfaz gráfica de usuario y admite el registro de ensamblajes que contienen complementos o actividades de flujo de trabajo personalizadas. Para obtener la herramienta de registro de complementos, consulte [Descargar herramientas de NuGet](../download-tools-nuget.md)
+Los ensamblados personalizados de actividades de flujo de trabajo se registran mediante la herramienta de registro de complementos. La herramienta proporciona una interfaz gráfica de usuario y admite el registro de ensamblajes que contienen complementos o actividades de flujo de trabajo personalizadas. Para obtener la herramienta de registro de complementos, consulte [Descargar herramientas de NuGet](../download-tools-nuget.md).
 
 [!INCLUDE [cc-connect-plugin-registration-tool](../includes/cc-connect-plugin-registration-tool.md)]
 

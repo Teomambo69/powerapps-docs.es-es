@@ -2,7 +2,7 @@
 title: Trabajar con soluciones en PowerApps | MicrosoftDocs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 01/28/2019
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -37,7 +37,7 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
   
 -   Crear soluciones es opcional. Puede crear o personalizar aplicaciones en su entorno de PowerApps directamente sin tener que crear una solución.  
   
--   Al personalizar directamente el entorno de PowerApps sin crear ninguna solución, trabaja con una solución especial denominada **Solución predeterminada de Common Data Services**. Esta solución contiene todas las personalizaciones que realiza en el entorno de PowerApps.  
+-   Al personalizar directamente el entorno de PowerApps sin crear ninguna solución, trabaja con una solución especial denominada **Solución predeterminada de Common Data Service**. Esta solución contiene todas las personalizaciones que realiza en el entorno de PowerApps.  
   
 -   Hay otra solución especial llamada **Solución predeterminada**. Esta solución contiene todos los componentes en el sistema, es creados por usted o por otros. Puede exportar la **Solución predeterminada** para crear una copia de seguridad de las personalizaciones que ha definido en su organización. Esto es una buena práctica para realizar copia de seguridad de los cambios en un escenario de peor caso.  
   
@@ -150,7 +150,7 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
   
 <a name="BKMK_Dependencies"></a>   
 ### <a name="solution-dependencies"></a>Dependencias de soluciones  
- Debido al modo en que las soluciones administradas se estructuran, algunas soluciones administradas pueden ser dependientes de los componentes de la solución en otras soluciones administradas. Algunos editores de soluciones aprovecharán esta característica para crear soluciones modulares. Es posible que tenga que instalar una solución administrada "base" primero y luego puede instalar una segunda administrada que personalice aún más los componentes de la solución administrada base. La segunda solución administrada depende de los componentes de la solución que forman parte de la primera solución.  
+ Debido al modo en que las soluciones administradas se estructuran, algunas soluciones administradas pueden ser dependientes de los componentes de la solución en otras soluciones administradas. Algunos editores de soluciones aprovecharán esta característica para crear soluciones modulares. Es posible que tenga que instalar una solución administrada "base" primero y luego puede instalar una segunda solución administrada que personalice aún más los componentes de la solución administrada base. La segunda solución administrada depende de los componentes de la solución que forman parte de la primera solución.  
   
  El sistema sigue estas dependencias entre las soluciones. Si intenta instalar una solución que requiere una solución base que no está instalada, no podrá instalar la solución. Recibirá un mensaje que indica que la solución requiere que se instale otra solución primero. De forma similar, debido a las dependencias, no puede desinstalar la solución base mientras una solución que depende de esta aún está instalada. Es necesario desinstalar la solución dependiente antes de desinstalar la solución base.  
   

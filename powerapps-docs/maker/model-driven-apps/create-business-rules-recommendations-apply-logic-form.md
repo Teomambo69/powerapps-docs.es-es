@@ -26,7 +26,7 @@ search.app:
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos
 
-En este tema se muestra cómo crear reglas de negocio y recomendaciones para aplicar lógica del formulario en una aplicación basada en modelos sin escribir código de JavaScript ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general. Se pueden aplicar a formularios principales y de creación rápida y funcionan en aplicaciones basadas en modelos, aplicaciones web de Dynamics 365 Customer Engagement, Dynamics 365 for tablets y Dynamics 365 for Outlook (en modo en línea o fuera de línea).
+En este tema se muestra cómo crear reglas de negocio y recomendaciones para aplicar lógica del formulario en una aplicación basada en modelos sin escribir código de JavaScript ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general. Se pueden aplicar a formularios principales y de creación rápida y funcionan en aplicaciones basadas en modelos, aplicaciones web de Dynamics 365 Customer Engagement, Dynamics 365 for tablets y Dynamics 365 for Outlook (modo con o sin conexión).
 
 > [!NOTE]
 > Para definir una regla de negocio para una entidad para que se aplique a todos los formularios y servidores, consulte [Crear una reglas de negocio para una entidad](/powerapps/maker/common-data-service/data-platform-create-business-rule).
@@ -150,7 +150,14 @@ Una regla de negocio puede no ejecutarse debido a que el campo al que se hace re
      > [!div class="mx-imgBorder"] 
      > ![](media/account-name-on-form.png "Campo de nombre de cuenta en el formulario”")
 
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="frequently-asked-questions-faq"></a>Preguntas más frecuentes
+*¿Pueden las reglas de negocio desbloquear campos de un formulario de solo lectura?*
+- Sí, una regla de negocio puede desbloquear campos y editar acciones en un formulario de sólo lectura.
+
+*¿Cómo soluciono problemas de una regla de negocio que no funciona?* 
+- Consulte [¿No se desencadena la regla de negocio para un formulario?](#is-your-business-rule-not-firing-for-a-form) en este tema.
+
+## <a name="see-also"></a>Vea también  
  [Crear una lógica de negocios personalizada con procesos](guide-staff-through-common-tasks-processes.md)   
  [Crear un flujo de proceso de negocio](/flow/create-business-process-flow)   
 

@@ -9,17 +9,11 @@ ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 ---
 
-# <a name="implement-controls-using-typescript"></a>Implemente controles mediante TypeScript
+# <a name="implement-components-using-typescript"></a>Implementar componentes con TypeScript
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-En este tutorial le guiará por crear un nuevo componente personalizado en Typescript. El componente de ejemplo es un componente de entrada lineal.  El componente de entrada lineal permite a los usuarios especificar valores numéricos mediante un control deslizante visual en lugar de escribir directamente los valores. 
-
-> [!IMPORTANT]
-> - Las herramientas de Microsoft PowerApps CLI son una versión preliminar y pueden ser diferentes de la versión lanzada comercialmente.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - Si proporciona comentarios acerca del software a Microsoft, usted concede a Microsoft, sin cargo alguno, el derecho de usar, compartir y comercializar sus comentarios de cualquier modo y con cualquier objetivo. 
-> - Microsoft no ofrece soporte técnico para esta versión preliminar de característica. El soporte técnico de Microsoft no podrá ayudarle con los problemas o las preguntas que pueda tener.
+En este tutorial le guiará por crear un nuevo componente personalizado en Typescript. El componente de ejemplo es un componente de entrada lineal. El componente de entrada lineal permite a los usuarios especificar valores numéricos mediante un control deslizante visual en lugar de escribir directamente los valores. 
 
 ## <a name="creating-a-new-component-project"></a>Crear un nuevo proyecto de componente
 
@@ -30,6 +24,7 @@ Para crear un nuevo proyecto, siga los pasos indicados abajo:
 3. `cd` en el nuevo directorios y ejecute el comando `cd LinearControl` 
 4. Cree el proyecto de componente usando el comando `pac pcf init --namespace SampleNamespace --name TSLinearInputControl --template field` 
 5. Instale las herramientas de generación del proyecto usando el comando `npm install` 
+6. Abra el proyecto cualquier entorno de desarrollo de su elección y empiece a implementar el componente personalizado.
 
 ## <a name="implementing-manifest"></a>Implementar el manifiesto
 
@@ -44,7 +39,7 @@ Un componente personalizado es por la información en el archivo de manifiesto `
 2. Cambie el nombre de `sampleProperty` y cambie el tipo de propiedad
 
     ```XML
-    <property name="sliderValue" display-name-key="sliderValue _Display_Key" description-key=" sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
+    <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
     ```
 
 3. El atributo of-type-group hace referencia a un grupo de números permitidos. Agregue el siguiente elemento type-group como elemento del mismo nivel que el elemento <property> del manifiesto. El type-group especifica el valor de componente y puede contener valores enteros, de divisa, punto flotante, o decimales.
@@ -59,8 +54,10 @@ Un componente personalizado es por la información en el archivo de manifiesto `
     ```
 
 4. Guarde los cambios en el archivo `ControlManifest.Input.xml`.
-5. Cree el proyecto de componente usando el comando `npm run build`.
-6. La generación crea un archivo de declaración Typescript actualizado en `TSLinearInputControl/generated folder`.  El archivo `ManifestTypes.d.ts` define las propiedades a las que el componente obtendrá acceso al código de origen Typescript.
+5. Ahora, cree una nueva carpeta dentro de la carpeta LinearControl y llámela css.
+6. Cree un archivo css para [agregar estilos al componente personalizado](#adding-style-to-the-custom-component)
+7. Cree el proyecto de componente usando el comando `npm run build`.
+8. La generación crea un archivo de declaración Typescript actualizado en `TSLinearInputControl/generated folder`.  El archivo `ManifestTypes.d.ts` define las propiedades a las que el componente obtendrá acceso al código de origen Typescript.
 
 ## <a name="implementing-component-logic"></a>Implementar lógica del componente
 
@@ -243,8 +240,64 @@ El método `init` del control de entrada lineal crea un elemento de entrada y es
     ```
 
 5. Guarde el `TS_LinearInputControl.css` 
-6. Vuelva a generar el proyecto usando el comando `npm run build `.
-7. Inspeccione la salida de compilación en `./out/controls/TSLinearInputControl` y observe que el archivo `TS_LinearInputControl.css` ahora está incluido con los artefactos de generación compilados. 
+6. Vuelva a generar el proyecto usando el comando  
+   ```CLI
+   npm run build
+   ```
+7. Inspeccione la salida de compilación en **./out/controls/TSLinearInputControl** y observe que el archivo **TS_LinearInputControl.css** ahora está incluido con los artefactos de generación compilados. 
+
+## <a name="debugging-your-custom-component"></a>Depurar el componente personalizado
+
+Una vez que termine de implementar la lógica del componente personalizado, ejecute el siguiente comando de iniciar el proceso de depuración 
+
+```CLI
+npm start
+```
+
+## <a name="packaging-your-custom-components"></a>Empaquetar componentes personalizados
+
+Siga los pasos indicados a continuación para crear e importar un archivo de [solución](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview):
+
+1. Cree una nueva carpeta **Solutions** dentro de la carpeta **LinearComponent** y vaya a la carpeta. 
+2. Cree un nuevo proyecto de solución en la carpeta **LinearComponent** usando el comando 
+ 
+    ```CLI
+     pac solution init --publisherName developer --customizationPrefix dev 
+    ```
+
+   > [!NOTE]
+   > Los valores [publisherName](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) y [cutomizationPrefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) deben ser únicos a su entorno.
+ 
+3. Cuando se crea el nuevo proyecto de solución, debe hacer referencia a la ubicación donde se ubica el componente creado. Puede agregar la referencia usando el comando 
+
+    ```CLI
+     pac solution add-reference --path c:\users\LinearComponent
+    ```
+
+4. Para generar un archivo zip del proyecto de la solución, deberá `cd` en el directorio del proyecto de la solución y compilar el proyecto usando el comando 
+
+    ```CLI
+     msbuild /t:restore
+    ```
+
+5. Ejecute de nuevo el siguiente comando msbuild
+    ```CLI
+     msbuild
+    ```
+
+    > [!NOTE]
+    > Asegúrese de que está activado **Destinos de NuGet y tareas de compilación**. Para habilitarlo
+    > - Abra **Instalador de Visual Studio**
+    > - Para VS 2017, haga clic en **Modificar**
+    > - Haga clic en **Componentes individuales**
+    > - En **Herramientas de código**, active **Destinos de NuGet y tareas de compilación**
+
+6. El archivo zip generado de la solución se encuentra en `Solution\\bin\debug\`.
+7. Debe [importar la solución](https://docs.microsoft.com/dynamics365/customer-engagement/customize/import-update-export-solutions) manualmente mediante el portal web una vez que el archivo zip esté listo.
+
+## <a name="adding-custom-components-to-a-field-or-an-entity"></a>Agregar componentes personalizados a un campo o una entidad
+
+Para agregar un componente personalizado como el componente del conjunto de datos o un componente de una tabla sencilla a una cuadrícula o vista, siga los pasos a los que se hace referencia en el tema [Agregar componentes a campos y entidades](add-custom-controls-to-a-field-or-entity.md).
 
 ### <a name="see-also"></a>Vea también
 

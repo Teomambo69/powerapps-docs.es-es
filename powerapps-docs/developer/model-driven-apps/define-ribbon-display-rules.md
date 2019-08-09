@@ -3,8 +3,7 @@ title: Definir las reglas de visualización de la cinta de opciones (aplicacione
 description: 'Obtenga información sobre cómo definir las reglas específicas a supervisar cuando se muestran los elementos de la cinta de opciones al configurar los elementos de la cinta de opciones. '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -43,9 +42,9 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
  Los valores `Type` corresponden a lo siguiente:  
 
 
-|   Value   |                                                                               Presentación                                                                               |
+|   Valor   |                                                                               Presentación                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       La barra de comandos se muestra mediante Microsoft Dynamics 365 for tablets.                                       |
+| `Modern`  |                                       La barra de comandos se muestra mediante Dynamics 365 for tablets.                                       |
 | `Refresh` |                                                      La barra de comandos se muestra mediante la interfaz de usuario actualizada.                                                      |
 | `Legacy`  | La cinta de opciones se muestra en los formularios de entidades que no se actualizaron o en una vista de lista en Dynamics 365 for Outlook. |
 
@@ -57,7 +56,7 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
 - Outlook  
 
   `<CrmOfflineAccessStateRule>`  
-  Use estos criterios para visualizar un elemento de la cinta de opciones en función de si Dynamics 365 for Microsoft Office Outlook con acceso sin conexión está funcionando actualmente sin conexión.  
+  Use este criterio para mostrar un elemento de la cinta de opciones en función de si Dynamics 365 for Microsoft Office Outlook con acceso sin conexión está actualmente sin conexión.  
 
   `<CrmOutlookClientTypeRule>`  
   Use esta regla si desea mostrar un botón para el tipo específico de Dynamics 365 for Outlook. Las opciones de `Type` son las siguientes:  
@@ -181,7 +180,7 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
 - NoRelationship  
 
   `<SkuRule>`  
-  Use este tipo de regla para mostrar un elemento de la cinta de opciones para una versión de SKU determinada de Common Data Service de la siguiente manera:  
+  Use este tipo de regla para mostrar un elemento de la cinta de opciones para una versión de SKU determinada de Common Data Service, de la siguiente manera:  
 
 - OnPremise  
 

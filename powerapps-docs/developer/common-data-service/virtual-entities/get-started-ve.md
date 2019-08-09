@@ -55,13 +55,12 @@ En esta versión, hay algunas limitaciones de las entidades virtuales que debe t
     - Todas las propiedades de entidad deben representarse como atributos de Common Data Service. Puede usar tipos simples que representen texto, números, conjuntos de opciones, fechas, imágenes y búsquedas. 
     - Debe ser capaz de modelar las relaciones de entidad en Common Data Service.
     - No se puede calcular ni consolidar un atributo de una entidad virtual.Los cálculos que desee deben realizarse en el lado externo, probablemente dentro del proveedor de datos o dirigidos por él.
+    - Aunque puede agregar columnas de entidades virtuales como una consulta en una cuadrícula u otras vistas de la interfaz de usuario, no puede filtrar u ordenar por esta columna de consulta de entidad virtual.
 - No se admite auditoría o seguimiento de los cambios.  Estos pueden implementarse en el almacén de datos externo.
 - No se pueden habilitar entidades virtuales para colas.
 - No se admite el almacenamiento en caché sin conexión de valores para las entidades virtuales.
 - Una entidad virtual no puede representar una actividad y no admite flujos de proceso de negocio.
 - Una vez creada, una entidad virtual no se puede cambiar para que sea una entidad estándar (no virtual).  Lo contrario también es cierto: una entidad estándar no se puede convertir en una entidad virtual.
-
-<!-- TODO: Make bulleted list into table?  Make more complete by reviewing API modification tables. -->
 
 Para obtener más información sobre cómo se reflejan estas limitaciones en la API de Common Data Service, consulte [Consideraciones de la API de entidades virtuales](api-considerations-ve.md). 
 

@@ -38,4 +38,5 @@ Cuando lanza una excepción <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionExcept
 El mensaje de excepción para los complementos asincrónicos registrados se escribe en un registro de trabajo del sistema [Entidad AsyncOperation](reference/entities/asyncoperation.md) que se puede ver en el área **Trabajos del sistema** de la aplicación web. No se mostrará ningún diálogo al usuario. Los complementos asincrónicos no participan en la transacción de base de datos que los colocó en la cola, por consiguiente no pueden cancelar la transacción.
 
 > [!NOTE]
-> Para los complementos locales no registrados en el espacio asilado, la información de la excepción se escribe en el registro de eventos de la aplicación del servidor de D365 que ejecuta el complemento. El registro de eventos se puede ver con la herramienta administrativa Visor de eventos.
+> - Para los complementos locales no registrados en el espacio asilado, la información de la excepción se escribe en el registro de eventos de la aplicación del Dynamics 365 Server que ejecuta el complemento. El registro de eventos se puede ver con la herramienta administrativa Visor de eventos.
+> - En la interfaz unificada, el cuadro de diálogo de error no admite contenido o mensajería con código HTML.

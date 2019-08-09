@@ -1,10 +1,9 @@
 ---
 title: Crear un panel (aplicaciones basadas en modelos) | Microsoft Docs
-description: Los paneles propiedad de la organización se pueden crear usando los servicios web (SDK) de Common Data Service o personalizando el formulario de entidad de Common Data Service editando el archivo customizations.xml.
+description: Se pueden crear paneles propiedad de la orgqanización utilizando los servicios web (SDK) de Common Data Service o mediante la personalización del formulario de entidad en Common Data Service al modificar el archivo customizations.xml.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-Los paneles propiedad de la organización se pueden crear usando Common Data Service o personalizando el formulario de entidad de Common Data Service editando el archivo customizations.xml.  
+Los paneles de propiedad de la organización se pueden crear usando los Common Data Service o personalizando el formulario de entidad en Common Data Service mediante la edición del archivo customizations.xml.  
   
 > [!NOTE]
 >  Algunos paneles que están creados mediante el SDK o a través de la personalización del formulario de entidad no son compatibles con el diseñador de paneles en la aplicación web. Para obtener más información, consulte [Limitaciones: Creación de paneles mediante el SDK o a través de la personalización del formulario](#Limitations) más adelante en este tema.  

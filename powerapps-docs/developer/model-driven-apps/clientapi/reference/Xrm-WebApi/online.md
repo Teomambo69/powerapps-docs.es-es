@@ -1,7 +1,7 @@
 ---
 title: Xrm.WebApi.online (referencia de API de cliente) en aplicaciones basadas en modelos | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 848c277b-bd44-4388-852a-0f59a3a15538
@@ -29,8 +29,8 @@ El objeto **onlineWebApi** proporciona los siguientes métodos:
 - [retrieveRecord](retrieveRecord.md)
 - [retrieveMultipleRecords](retrieveMultipleRecords.md)
 - [updateRecord](updateRecord.md)
-- [execute](execute.md)
-- [executeMultiple](executeMultiple.md)
+- [execute](online/execute.md)
+- [executeMultiple](online/executeMultiple.md)
 
 ### <a name="related-topics"></a>Temas relacionados
 

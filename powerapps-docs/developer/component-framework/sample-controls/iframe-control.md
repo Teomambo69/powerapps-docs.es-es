@@ -17,11 +17,6 @@ Este ejemplo describe cómo vincular un componente personalizado a distintos cam
 > [!div class="mx-imgBorder"]
 > ![Componente de IFRAME](../media/iframe-control.png "Componente de IFRAME")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```xml
@@ -97,7 +92,7 @@ private renderBingMapIFrame(): void
 private updateBingMapURL(latitude:number, longitude:number): void
 {
     // Bing Map API:
-    // https://msdn.microsoft.com/en-us/library/dn217138.aspx
+    // https://msdn.microsoft.com/library/dn217138.aspx
     // Provide bing map query string parameters to format and style map view
     let bingMapUrlPrefix = "https://www.bing.com/maps/embed?h=400&w=300&cp=";
     let bingMapUrlPostfix = "&lvl=12&typ=d&sty=o&src=SHELL&FORM=MBEDV8";
@@ -178,5 +173,5 @@ El método [updateView](../reference/control/updateview.md) se invoca siempre qu
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)<br />
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br />
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br />
 [Descripción general de marco de componentes de PowerApps](../overview.md)

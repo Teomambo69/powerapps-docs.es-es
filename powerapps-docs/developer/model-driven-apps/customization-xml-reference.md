@@ -3,8 +3,7 @@ title: Referencia XML de personalización (aplicaciones basadas en modelos) | Mi
 description: El archivo customizations.xml es uno de los archivos incluidos en una solución no administrada exportada. El archivo contiene todas las partes o partes seleccionadas de las personalizaciones y configuraciones para el sistema.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

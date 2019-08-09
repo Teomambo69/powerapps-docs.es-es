@@ -13,6 +13,8 @@ ms.topic: article
 
 # <a name="manifest-element"></a>Elemento manifiesto
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [mode-description](includes/mode-description.md)]
 
 ## <a name="child-elements"></a>Elementos secundarios

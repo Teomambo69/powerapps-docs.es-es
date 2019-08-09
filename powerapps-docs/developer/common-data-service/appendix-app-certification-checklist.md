@@ -31,7 +31,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>Comprobación de estado</td>
 <td><ul>
 <li>Buscar el tipo de registro de la aplicación: gratuita, prueba o contacto. Si se ha registrado en Contacto , el editor debe habilitar la prueba.</li>
-<li>Compruebe que el <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/create-package-app-appsource"> paquete</a> enviado contiene todos los artefactos necesarios para publicar en AppSource.</li>
+<li>Compruebe que el <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/create-package-app-appsource">paquete</a> enviado contiene todos los artefactos necesarios para publicar en AppSource.</li>
 <li>Descargue el documento funcional de extremo a extremo (E2E) del portal de Socio en la nube y valide si el documento se actualiza con escenarios funcionales y viaje usuario/administrador.</li>
 </ul>
 </td>
@@ -40,13 +40,13 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>Validación de código</td>
 <td>
 <ul>
-<li>La validación de código para las aplicaciones de lienzo se efectuará a través de la <a href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/accessibility-checker">herramienta Accessibility Checker</a> en PowerApps para comprobar lo siguiente:
+<li>La validación de código para las aplicaciones de lienzo se efectuará a través de la <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">herramienta Accessibility Checker</a> en PowerApps para comprobar lo siguiente:
 <ul>
 <li>Errores y advertencias estáticos de fórmula: Si se encuentran problemas, el equipo de la certificación compartirá los comentarios para resolver y reenviar a AppSource.</li>
 <li>Errores en tiempo de ejecución: Pueden producirse cuando la aplicación se abre en modo de ejecución para ver. Los problemas que se encuentren se comunicarán por correo electrónico.</li>
 <li>Errores y advertencias de accesibilidad: Todos los errores de accesibilidad se deben resolver siguiendo las instrucciones del Comprobador de soluciones.</li>
 </ul></li>
-<li>La validación de código para la solución de Common Data Service se efectuará a través de la herramienta <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">de la análisis del código de OnDemand (ODCA)</a>.</li>
+<li>La validación de código para la solución de Common Data Service se efectuará a través de la herramienta de la análisis del código de <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">OnDemand (ODCA)</a>.</li>
 <li>Los problemas comunicados desde ODCA serán validados manualmente para su corrección y se reducirán los problemas de falsos positivos para bajar la gravedad.</li>
 <li>El informe generado se comparte con el editor a través del correo electrónico.</li>
 </ul>
@@ -84,7 +84,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 </td>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Aplicaciones de lienzo</a>, y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> y que se conectan a orígenes de datos <i>distintos</i> de Common Data Service
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> que se conectan a orígenes de datos <i>distintos</i> de Common Data Service
 </td>
 <td>Comprobación de estado</td>
 <td><ul>

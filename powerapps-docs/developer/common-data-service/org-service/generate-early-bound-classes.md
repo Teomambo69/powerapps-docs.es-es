@@ -1,5 +1,5 @@
 ---
-title: Generar clases de enlace en tiempo de compilación con el servicio de la organización (Common Data Service) | Microsoft Docs
+title: Generar clases con enlaces en tiempo de compilación para el servicio de la organización (Common Data Service) | Microsoft Docs
 description: CrmSvcUtil.exe es una herramienta de generación de código de línea de comandos para su uso con Common Data Service. Esta herramienta genera clases de enlace en tiempo de compilación de .NET Framework que representan el modelo de datos de la entidad usado por Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ search.app:
 
 ## <a name="generate-entity-classes"></a>Generar clases de entidad
 
-La herramienta **CrmSvcUtil.exe** crea un archivo de salida de Microsoft Visual C# o Visual Basic .NET que contiene las clases con establecimiento inflexible de tipos para las entidades en su organización. Esto incluye las entidades y los atributos personalizados. Este archivo de salida contiene una clase para cada entidad, y brinda enlace en tiempo de compilación y soporte de IntelliSense en Visual Studio para ayudarlo a medida que escribe el código. Las clases generadas son las clases parciales que pueden ampliarse con lógica empresarial personalizada en archivos separados. También puede crear extensiones para esta herramienta. Para obtener más información, consulte [Crear extensiones para la herramienta de generación de código](extend-code-generation-tool.md).  
+La herramienta **CrmSvcUtil.exe** crea un archivo de salida de Microsoft Visual C# o Visual Basic .NET que contiene las clases con establecimiento inflexible de tipos para las entidades en su organización. Esto incluye las entidades y los atributos personalizados. Este archivo de salida contiene una clase para cada entidad, y brinda enlace en tiempo de compilación y soporte de IntelliSense en Visual Studio para ayudarlo a medida que escribe el código personalizado. Las clases generadas son las clases parciales que pueden ampliarse con lógica empresarial personalizada en archivos separados. También puede crear extensiones para esta herramienta. Para obtener más información, consulte [Crear extensiones para la herramienta de generación de código](extend-code-generation-tool.md).  
 
 ## <a name="generate-an-organizationservicecontext-class"></a>Generar una clase OrganizationServiceContext
 
@@ -37,9 +37,9 @@ Las clases creadas por la herramienta de generación de códigos están diseñad
 A continuación se enumeran los ensamblados a los que se debe hacer referencia en el proyecto cuando se usa el archivo de código generado.  
 
 - `Microsoft.Crm.Sdk.Proxy.dll`  
-- `Microsoft.Xrm.Sdk.dll ` 
+- `Microsoft.Xrm.Sdk.dll` 
 
-Estos ensamblados forman parte de [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/). Use los paquetes de este Nuget para agregar estos ensamblados al proyecto de Visual Studio.
+Estos ensamblados forman parte de [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) NuGet. Use los paquetes de este Nuget para agregar estos ensamblados al proyecto de Visual Studio.
 
 <a name="bkmk_RuntheCodeGenerationUtility"></a>
 
@@ -47,7 +47,7 @@ Estos ensamblados forman parte de [Microsoft.CrmSdk.CoreAssemblies](https://www.
 
 La herramienta de generación de código toma varios parámetros que determinan los contenidos del archivo que se va a crear. Los parámetros se pueden efectuar desde la línea de comandos al ejecutar la herramienta o en un archivo de configuración de la aplicación conectado a .NET. 
 
-Ejecute la herramienta `CrmSvcUtil.exe` desde la carpeta `Tools\CoreTools` creada cuando descargue las herramientas mediante el script descrito en [Herramientas de descargue de NuGet](../download-tools-NuGet.md). Si ejecuta la herramienta desde otra ubicación de la carpeta, asegúrese de que una copia del ensamblado `Microsoft.Xrm.Sdk.dll` se encuentre en la misma carpeta.  
+Ejecute la herramienta `CrmSvcUtil.exe` desde la carpeta `Tools\CoreTools` creada cuando descargue las herramientas mediante el script descrito en [Descargar herramientas de NuGet](../download-tools-NuGet.md). Si ejecuta la herramienta desde otra ubicación de la carpeta, asegúrese de que una copia del ensamblado `Microsoft.Xrm.Sdk.dll` se encuentre en la misma carpeta.  
 
 El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con Common Data Service. Para usar el inicio de sesión interactivo, puede proporcionar simplemente estas opciones:
 
@@ -118,7 +118,7 @@ La siguiente tabla muestra los parámetros de las herramientas de generación de
 |`help`|`?`|Mostrar la información de uso.|Falso|
 |`nologo`||Suprimir pancartas en tiempo de ejecución.|Falso|
 |`generateActions`||Generar clases de solicitud y respuesta para acciones personalizadas.|Falso|
-|`interactivelogin`|`il`|Cuando se use, se mostrará un diálogo para iniciar sesión en el servicio Common Data Service. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos.|Falso|  
+|`interactivelogin`|`il`|Cuando se utiliza, se mostrará un diálogo para iniciar sesión en el servicio Common Data Service. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos.|Falso|  
 |`connectionstring`|`connstr`|Contiene información, proporcionada como una sola cadena, para conectarse a una organización de Common Data Service. Se omiten todos los demás parámetros relacionados con la conexión especificados en la línea de comandos. Para obtener más información, consulte [Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).|Falso|
 
 

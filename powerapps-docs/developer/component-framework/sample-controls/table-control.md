@@ -18,11 +18,6 @@ Este componente de ejemplo genera una tabla con dos columnas. La columna de la i
 > [!div class="mx-imgBorder"]
 > ![Componente de tabla](../media/table-control.png "Componente de tabla")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```xml
@@ -424,5 +419,5 @@ El método de devolución de llamada inserta esta información como HTML en un d
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br/>
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)

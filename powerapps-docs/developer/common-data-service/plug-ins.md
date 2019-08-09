@@ -1,5 +1,5 @@
 ---
-title: Use complementos para extender procesos de negocio (Common Data Service) | Microsoft Docs
+title: Usar complementos para ampliar los procesos de negocio (Common Data Service) | Microsoft Docs
 description: Un complemento es un montaje de .NET que puede cargar al Common Data Service. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 ms.custom: ''
 ms.date: 03/27/2019
@@ -20,7 +20,7 @@ search.app:
 Un complemento es un montaje de .NET que puede cargar al Common Data Service. Las clases dentro del ensamblado pueden registrarse en los eventos específicos (pasos) dentro del marco de eventos. El código dentro de la clase ofrece una forma de responder al evento para poder aumentar o modificar el comportamiento predeterminado de la plataforma.
 
 > [!IMPORTANT]
-> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service para aplicaciones](../../maker/common-data-service/cds-processes.md)<br/><br/>
 > Use las extensiones cuando un proceso declarativo no cumpla su requisito.
 
 Las clases en el ensamblado que puede registrar un paso debe implementar la interfaz <xref:Microsoft.Xrm.Sdk.IPlugin>. Esta interfaz expone un solo método: <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>. Cuando un evento aparece con una clase registrada a él, los datos contextuales se pasan al método `Execute`. En el método `Execute` puede:
@@ -46,7 +46,7 @@ La gente a menudo compara flujos de trabajo y complementos como las opciones par
 
 - La integración de bus del servicio Azure y los vínculos web se pueden usar para insertar datos a los sistemas externos donde la lógica se puede aplicar con diferentes recursos.
 
-- El Microsoft Flow ofrece muchas capacidades que antes se ejecutaban usando complementos.
+- Microsoft Flow ofrece muchas capacidades que antes se ejecutaban usando complementos.
 
 Puede tener numerosas opciones disponibles. Debería evaluar cada una de ellas para comprender la mejor forma que cumpla sus requisitos.
 
@@ -83,10 +83,10 @@ Estos temas proporcionan los detalles que usará para crear complementos.
 - [Administrar excepciones](handle-exceptions.md)
 - [Registro de un complemento](register-plug-in.md)
 - [Depuración de complementos](debug-plug-in.md)
-- 
+ 
 Estos temas proporcionan información adicional sobre la escritura o la depuración de complementos o sobre el análisis de su rendimiento.
 
 - [Suplantar a un usuario](impersonate-a-user.md)
 - [Registro y seguimiento](logging-tracing.md)
 - [Analizar el rendimiento](analyze-performance.md)
-- [Obtener acceso a recursos web externos](access-web-services.md)]
+- [Acceso a recursos web externos](access-web-services.md)

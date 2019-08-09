@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de funciones y acciones de API web (JavaScript de lado de cliente) (Common Data Service) | Microsoft Docs
-description: 'Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service y JavaScript de lado de cliente.'
+title: Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente) (Common Data Service)| Microsoft Docs
+description: 'Este ejemplo demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y JavaScript del lado del cliente.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente)
 
-Este ejemplo demuestra cómo desarrollar a funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service usando JavaScript de lado de cliente.  
+Este ejemplo demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service utilizando JavaScript del lado del cliente.  
   
 > [!NOTE]
 >  Este ejemplo implementa las operaciones detalladas en el [Ejemplo de funciones y acciones de la API web](../web-api-functions-actions-sample.md) y utiliza las construcciones comunes de JavaScript del lado cliente que se describen en [Ejemplos de API web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md)  
@@ -239,7 +239,7 @@ Sdk.request = function (action, uri, data, addHeader) {
  * @function Sdk.startSample  
  * @description Initiates a chain of promises to show use of Functions and Actions with the Web API.  
  * Functions and actions represent re-usable operations you can perform using the Web API.  
- * For more info, see https://msdn.microsoft.com/en-us/library/mt607990.aspx#bkmk_actions  
+ * For more info, see https://msdn.microsoft.com/library/mt607990.aspx#bkmk_actions  
  * The following standard CRM Web API functions and actions are invoked:  
  *  - WhoAmI, a basic unbound function  
  *  - GetTimeZoneCodeByLocalizedName, an unbound function that requires parameters  
@@ -260,13 +260,13 @@ Sdk.startSample = function () {
  .then(function () {  
   console.log("-- Working with functions --");  
   // Bound and Unbound functions  
-  // See https://msdn.microsoft.com/en-us/library/gg309638.aspx#bkmk_boundAndUnboundFunctions  
+  // See https://msdn.microsoft.com/library/gg309638.aspx#bkmk_boundAndUnboundFunctions  
   
   console.log("Using functions to look up your full name.");  
   // Calling a basic unbound function without parameters.  
   // Retrieves the user's full name using a series of function requests.  
   //  - Call WhoAmI via the Sdk.getUsersFullName function.  
-  // For more info on the WhoAmI function, see https://msdn.microsoft.com/en-us/library/mt607925.aspx  
+  // For more info on the WhoAmI function, see https://msdn.microsoft.com/library/mt607925.aspx  
   return Sdk.getUsersFullName();  
  })  
  .then(function (fullName) {  
@@ -315,7 +315,7 @@ Sdk.startSample = function () {
    totalTime);  
   
   console.log("-- Working with Actions --");  
-  // For more info about Action, see https://msdn.microsoft.com/en-us/library/mt607600.aspx  
+  // For more info about Action, see https://msdn.microsoft.com/library/mt607600.aspx  
   
   console.log("Unbound Action: WinOpportunity");  
   // Calling an unbound action that requires parameters.  
@@ -343,7 +343,7 @@ Sdk.startSample = function () {
   //  - Get a reference to the current user.  
   //  - Get a reference to the letter activity.  
   //  - Add letter to current user's queue via the bound action AddToQueue.  
-  // For more info on AddToQueue, see https://msdn.microsoft.com/en-us/library/mt607880.aspx  
+  // For more info on AddToQueue, see https://msdn.microsoft.com/library/mt607880.aspx  
   
   return Sdk.request("GET", "/WhoAmI");  
  })  
@@ -384,7 +384,7 @@ Sdk.startSample = function () {
   // This custom action is installed when you install this sample's solution to your CRM server.  
   //  - Add a note to an existing contact (e.g.: contactUri)  
   //  - Get the note info and the contact's full name.  
-  // For more info, see https://msdn.microsoft.com/en-us/library/mt607600.aspx#bkmk_customActions  
+  // For more info, see https://msdn.microsoft.com/library/mt607600.aspx#bkmk_customActions  
   //sample_AddNoteToContact custom action parameters  
   var parameters = {  
    NoteTitle: "The Title of the Note",  
@@ -711,7 +711,7 @@ Sdk.createAccountWithOpportunityToWin = function () {
   
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](../overview.md)<br />
+[Usar la API web de Common Data Service](../overview.md)<br />
 [Usar funciones de la API web](../use-web-api-functions.md)<br />
 [Usar acciones de la API web](../use-web-api-actions.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />

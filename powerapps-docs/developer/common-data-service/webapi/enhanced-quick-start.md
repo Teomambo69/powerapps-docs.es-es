@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido mejorado (Common Data Service) | Microsoft Docs
-description: Crear un nuevo proyecto en Visual Studio para compilar una aplicación de consola que utilice la API web de Common Data Service
+title: Inicio rápido mejorado (Common Data Service)| Microsoft Docs
+description: Crear un nuevo proyecto en Visual Studio para crear una aplicación de consola que use la API web de Common Data Service
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
@@ -185,7 +185,7 @@ Estas aplicaciones auxiliares también se usan en [SampleHelper.cs](https://gith
     > [!NOTE]
     > No agregue esto dentro la clase `SampleHelpers`.
 
-    Esta clase garantiza que el token de acceso se actualice cada vez que se realiza la operación. Cada token de acceso caducará después de aproximadamente una hora. Esta clase implementa un <xref:System.Net.Http.DelegatingHandler> que funcionará con el contexto de autenticación de Azure Active Directory Authentication Library (ADAL) para llamar al método `AquireToken` cada vez que se realice una operación, de modo que no necesita explícitamente administrar la caducidad del token.
+    Esta clase garantiza que el token de acceso se actualice cada vez que se realiza la operación. Cada token de acceso caducará después de aproximadamente una hora. Esta clase implementa un <xref:System.Net.Http.DelegatingHandler> que funcionará con el contexto de autenticación de Azure Active Directory Authentication Library (ADAL) para llamar al método `AcquireToken` cada vez que se realice una operación, de modo que no necesita explícitamente administrar la caducidad del token.
 
     ```csharp
     /// <summary>

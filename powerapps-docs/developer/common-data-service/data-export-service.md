@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>Servicio de exportación de datos
 
-La exportación de datos es un servicio complementario habilitado como solución de Common Data Service que agrega la capacidad de replicar los datos de Common Data Service en un almacén de base de datos de Microsoft Azure SQL en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destino admitidos son la base de datos de Microsoft Azure SQL y Microsoft Azure SQL Server en las máquinas virtuales de Microsoft Azure. La exportación de datos sincroniza inteligentemente los esquemas y datos completos de Dynamics 365 inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en el sistema Dynamics 365 (en línea).  
+Exportación de datos es un servicio complementario habilitado como solución de Common Data Service que agrega la capacidad de replicar los datos de Common Data Service en un almacén de Microsoft Azure SQL Database en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destinos admitidos son Microsoft Azure SQL Database y Microsoft Azure SQL Server en máquinas virtuales de Microsoft Azure. Exportación de datos sincroniza inteligentemente los esquemas y datos completos de Dynamics 365 inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en el sistema Dynamics 365 (online).  
   
- El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desde Common Data Service.  Para obtener más información, vea [Exportación de datos](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
+ El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desdeCommon Data Service.  Para obtener más información, vea [Exportación de datos](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Los requisitos previos para utilizar el servicio Exportación de datos  
  Puesto que este servicio necesita acceso a una base de datos de Microsoft Azure SQL externa desde Common Data Service, deben cumplirse varios requisitos previos para poder tener acceso correctamente a este servicio. Los siguientes requisitos previos se describen más detalladamente desde el punto de vista de un administrador en la sección [Requisitos previos para usar el servicio de exportación de datos](https://technet.microsoft.com/library/mt744592.aspx).  
   
- El servicio de Common Data Service debe configurarse para que:  
+ El servicio Common Data Service deben configurarse para que:  
   
 - Las entidades que se exportarán están habilitadas con seguimiento de cambios. Para obtener más información, consulte [Usar el seguimiento de cambios para sincronizar los datos con sistemas externos](use-change-tracking-synchronize-data-external-systems.md).  
   
@@ -37,11 +37,11 @@ La exportación de datos es un servicio complementario habilitado como solución
   
 - La suscripción debe admitir el volumen de datos que se replican desde la instancia de Common Data Service.  
   
-- Las configuraciones de firewall deben permitir el acceso desde la dirección IP del servicio Exportación de datos. Para obtener más información, consulte [Configurar una regla de firewall a nivel de servidor de base de datos de Azure SQL mediante Azure Portal](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).  
+- Las configuraciones de firewall deben permitir el acceso desde la dirección IP del servicio Exportación de datos. Para obtener más información, consulte [Configurar una regla de firewall a nivel de servidor de base de datos de Azure SQL mediante Azure Portal](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/).  
   
 - Se recomienda que la opción “Permitir acceso a servicios de Azure” esté habilitada.  
   
-- El usuario de la base de datos, especificado en la cadena de conexión de Exportación de datos, debe tener los permisos adecuados para crear y modificar en la base de datos de destino.  Como mínimo incluyen: `CRTB`, `CRTY`, `CRVW`, `CRPR`, y `ALUS`. Para obtener más información, consulte [Permisos (motor de base de datos)](https://msdn.microsoft.com/en-us/library/ms191291.aspx).  
+- El usuario de la base de datos, especificado en la cadena de conexión de Exportación de datos, debe tener los permisos adecuados para crear y modificar en la base de datos de destino.  Como mínimo incluyen: `CRTB`, `CRTY`, `CRVW`, `CRPR`, y `ALUS`. Para obtener más información, consulte [Permisos (motor de base de datos)](https://msdn.microsoft.com/library/ms191291.aspx).  
   
 - Al menos un usuario tiene permisos extensos en el esquema. El siguiente script crea nuevo usuario de ese tipo.  
   
@@ -57,7 +57,7 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-Para soluciones y servicios en línea, Azure proporciona un servicio de [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) para salvaguardar claves criptográficas, contraseñas y otros secretos.  Para usar Almacén de claves de Azure, este servicio propiedad del cliente se debe configurar para conceder permiso a "Servicio de exportación de datos de Dynamics 365”, que se usará para almacenar con seguridad la cadena de conexión de SQL Azure. Para realizar esta configuración con un script de PowerShell, consulte [Cómo configurar Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Como alternativa, este servicio se puede administrar con su API de REST; consulte [Administración de Key Vault](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
+Para soluciones y servicios en línea, Azure proporciona un servicio de [Key Vault](https://azure.microsoft.com/services/key-vault/) para salvaguardar claves criptográficas, contraseñas y otros secretos.  Para usar Almacén de claves de Azure, este servicio propiedad del cliente se debe configurar para conceder permiso a "Servicio de exportación de datos de Dynamics 365”, que se usará para almacenar con seguridad la cadena de conexión de SQL Azure. Para realizar esta configuración con un script de PowerShell, consulte [Cómo configurar Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Como alternativa, este servicio se puede administrar con su REST API; consulte [Administración de Key Vault](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
   
 También se aconseja que agregue el dominio https://discovery.crmreplication.azure.net/ a la lista de sitios de confianza en el explorador y habilite ventanas emergentes para este sitio.  
   
@@ -100,7 +100,7 @@ También se aconseja que agregue el dominio https://discovery.crmreplication.azu
 |profiles/{id}/failures|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|Obtener la cadena de conexión a un blob que contiene detalles erróneos para un perfil determinado|  
   
 ### <a name="gain-access"></a>Obtener acceso  
-Puesto que sólo están autorizados los administradores del sistema de Common Data Service a realizar operaciones de exportación de datos, estas API aplican autorización de autor de llamada mediante el uso de [tokens de seguridad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) de Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)). El fragmento de código siguiente demuestra cómo generar dicho token para una aplicación web mediante el nombre y la contraseña del administrador.   Debe reemplazar el `AppId`, `crmAdminUser` y `crmAdminPassword` con los valores adecuados al servicio. Este método se puede usar para desarrollo y prueba, pero deben usarse medios más seguros para producción, como el uso del Almacén de claves de Azure.  
+Puesto que sólo están autorizados los administradores del sistema de Common Data Service a realizar operaciones de exportación de datos, estas API aplican autorización de autor de llamada mediante el uso de Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) [tokens de seguridad](https://azure.microsoft.com/documentation/articles/active-directory-token-and-claims/). El fragmento de código siguiente demuestra cómo generar dicho token para una aplicación web mediante el nombre y la contraseña del administrador.   Debe reemplazar el `AppId`, `crmAdminUser` y `crmAdminPassword` con los valores adecuados al servicio. Este método se puede usar para desarrollo y prueba, pero deben usarse medios más seguros para producción, como el uso del Almacén de claves de Azure.  
   
 ```csharp  
   
@@ -119,7 +119,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
   
 ```  
   
-Para instrucciones sobre cómo obtener un `AppId`, consulte [Autorizar acceso a aplicaciones web mediante OAuth 2.0 y Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-protocols-oauth-code/). Para obtener más información sobre la seguridad de usuarios de Azure, consulte [Escenarios de autenticación para Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/).  
+Para instrucciones sobre cómo obtener un `AppId`, consulte [Autorizar acceso a aplicaciones web mediante OAuth 2.0 y Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-code/). Para obtener más información sobre la seguridad de usuarios de Azure, consulte [Escenarios de autenticación para Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/).  
   
 ### <a name="error-handling-and-failure-processing"></a>Gestión de errores y procesamiento de errores  
  Una vez que un perfil está correctamente configurado, el proceso de sincronización suele ser muy fiable. Sin embargo, si un registro no se sincroniza, se aplica el procesamiento de errores siguiente:  

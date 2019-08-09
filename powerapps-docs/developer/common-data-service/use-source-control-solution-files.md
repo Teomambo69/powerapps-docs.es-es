@@ -1,5 +1,5 @@
 ---
-title: Control de origen con archivos de la solución (Common Data Service) | Microsoft Docs
+title: Control de código fuente con archivos de solución(Common Data Service) | Microsoft Docs
 description: 'La herramienta SolutionPackager puede usarse con cualquier sistema de control de código fuente. Cuando un archivo .zip de solución se extrae a una carpeta, simplemente agregue y envíe los archivos al sistema de control de código fuente. Estos archivos se pueden sincronizar a continuación en otro equipo donde se pueden comprimir en un nuevo archivo .zip de solución idéntico.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ La herramienta SolutionPackager puede usarse con cualquier sistema de control de
  Cuando sean necesarias más personalizaciones y cambios para la solución, los desarrolladores deberán modificar o personalizar los componentes con los medios existentes, exportar de nuevo para crear un archivo .zip y extraer el archivo comprimido de solución en la misma carpeta.  
   
 > [!IMPORTANT]
->  Excepto en las secciones que se describen en [al editar el archivo de personalización](/model-driven-apps/when-edit-customization-file.md), edición de manual de los archivos de componente extraídos y archivos .zip no se admiten.  
+>  Excepto en las secciones que se describen en [al editar el archivo de personalización](../model-driven-apps/when-edit-customization-file.md), edición de manual de los archivos de componente extraídos y archivos .zip no se admiten.  
   
  Cuando la herramienta SolutionPackager extrae los archivos componentes no sobrescribe los archivos componentes existentes del mismo nombre si el contenido del archivo es idéntico. Además, la herramienta respeta el atributo de solo lectura en los archivos componentes generando una advertencia en la ventana de la consola indicando que determinados archivos no se escribirán. Esto permite al usuario comprobar, desde el control de código fuente, el conjunto de archivos mínimo que está modificando. El parámetro de `/clobber` se puede usar para reemplazar y para hacer que los archivos de solo lectura se escriban o eliminen. El parámetro de `/allowWrite` se puede usar para evaluar el impacto que tiene una operación de extracción sin hacer realmente que ningún archivo se escriba o elimine. El uso de parámetros de `/allowWrite` con registro detallado es válido.  
   
@@ -36,7 +36,7 @@ La herramienta SolutionPackager puede usarse con cualquier sistema de control de
   
 1. El desarrollador A y B trabajan en la misma solución.  
   
-2. En equipos independientes, ambos obtienen los últimos orígenes de la solución del control de código fuente, empaquetan e importan un archivo .zip de solución no administradas en organizaciones independientes de Common Data Service.  
+2. En equipos independientes, ambos obtienen los últimos orígenes de la solución del control de código fuente, empaquetan e importan un archivo .zip de solución no administrada en organizaciones de Common Data Service independientes.  
   
 3. El desarrollador A personaliza la vista del sistema "Contactos activos" y el formulario principal para la entidad Contacto.  
   

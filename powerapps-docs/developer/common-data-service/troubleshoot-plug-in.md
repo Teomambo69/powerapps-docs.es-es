@@ -1,8 +1,8 @@
 ---
-title: Solución de problemas de complementos (Common Data Service para aplicaciones) | Microsoft Docs
+title: Solución de problemas complementos (Common Data Service for Apps) | Microsoft Docs
 description: Contiene información sobre los errores que se puedan producir debido a complementos y cómo corregirlos.
 ms.custom: ''
-ms.date: 04/21/2019
+ms.date: 04/26/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -25,7 +25,10 @@ Código de error: `-2147220911`<br />
 Mensaje de error: `There is no active transaction. This error is usually caused by custom plug-ins that ignore errors from service calls and continue processing.`
 
 Este puede ser un error difícil de solucionar porque la causa puede estar en el código de otra persona. Para comprender el mensaje, debe apreciar que en el momento en que se produce un error relacionado con una operación de datos en un complemento sincrónico, se terminará la transacción de toda la operación.
-[Diseño de personalización escalable en Common Data Service](scalable-customization-design/overview.md) La causa más común es simplemente que un desarrollador puede creer que puede intentar realizar una operación que *podría* tener éxito, por lo que envuelven esa operación en un bloque try/catch e intentan de tragar el error si produce error.
+
+Más información: [Diseño de personalización escalable en Common Data Service](scalable-customization-design/overview.md)
+
+La causa más común es simplemente que un desarrollador puede creer que puede intentar realizar una operación que *podría* tener éxito, por lo que envuelven esa operación en un bloque try/catch e intentan de tragar el error si produce error.
 
 Si bien esto puede funcionar para una aplicación cliente, en la ejecución de un complemento los errores de operaciones de datos harán que se revierta toda la transacción. No se puede tragar el error, por lo que debe asegurarse de siempre devolver un <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException>.
 
@@ -67,3 +70,74 @@ Puede registrar el complemento para ejecutarse en el contexto de un usuario cono
 <!-- But if you prefer that the logic in your plug-in adapt to the privileges that the calling user has, you really need to verify the user's privileges in your code.
 
 TODO: Add content that shows how to do this -->
+
+## <a name="error-message-size-exceeded-when-sending-context-to-sandbox"></a>Error: Se ha superado el tamaño de mensaje al enviar contexto a espacio aislado
+
+<!-- This is the error code for an unexpected error we should be providing a specific error code. Bug 1470173 is tracking this. -->
+Código de error: `-2147220970`<br />
+Mensaje de error: `Message size exceeded when sending context to Sandbox. Message size: ### Mb`
+
+Este error se produce cuando la carga de un mensaje es superior a 116,85 MB **Y** un complemento se registra para el mensaje. El mensaje de error incluirá el tamaño de la carga que produjo este error.
+ 
+El límite le ayudará a asegurarse de que los usuarios que ejecuten aplicaciones no puedan interferir unos con otros basándose en limitaciones de recursos. El límite le ayudará a proporcionar cierto grado de protección contra cargas de mensaje excesivamente grandes que ponen en peligro las características de disponibilidad y rendimiento de la plataforma Common Data Service.
+ 
+116,85 MB es bastante grande, por lo que debería ser raro que se produzca este caso. La situación más probable donde puede producirse este caso es cuando se recupera un registro con varios registros relacionados que incluyen archivos binarios grandes.
+ 
+Si encuentra este error, puede hacer lo siguiente:
+
+1.  Quitar el complemento del mensaje. Si no complementos registrados para el mensaje, la operación se completará sin un error.
+2.  Si el error se produce en un cliente personalizado, puede modificar el código de forma que no intente realizar el trabajo en una sola operación. En su lugar, escriba código para recuperar los datos en partes menores.
+
+## <a name="error-the-given-key-was-not-present-in-the-dictionary"></a>Error: La clave dada no estaba en el diccionario
+
+Common Data Service usa con frecuencia clases derivadas de la clase abstracta <xref:Microsoft.Xrm.Sdk.DataCollection`2> que representa una colección de claves y valores. Por ejemplo, con los complementos la propiedad <xref:Microsoft.Xrm.Sdk.IExecutionContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> es una <xref:Microsoft.Xrm.Sdk.ParameterCollection> derivada de la clase <xref:Microsoft.Xrm.Sdk.DataCollection`2>. Estas clases son esencialmente objetos de diccionario en las que puede tener acceso a un valor específico con el nombre de clave.
+
+### <a name="error-codes"></a>Códigos de error
+
+Este error se produce cuando el valor de clave en código no existe en la colección. Se trata de un error en tiempo de ejecución en lugar de un error de plataforma. Cuando este error aparece en un complemento, el código de error dependerá de si el error se capturó.
+
+Si el desarrollador capturó la excepción y devolvió una <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> como se describe en[ Administrar excepciones en complementos](handle-exceptions.md), el siguiente error será devuelto:
+
+Código de error: `-2147220891`<br />
+Mensaje de error: `ISV code aborted the operation.`
+
+No obstante, con este error es común que el desarrollador no lo capture correctamente y el siguiente error será devuelto:
+
+Código de error: `-2147220956`<br />
+Mensaje de error: `An unexpected error occurred from ISV code.`
+
+> [!NOTE]
+> "ISV" son las siglas de *Fabricante independiente de software*.
+
+### <a name="causes"></a>Causas
+
+Este error aparece con frecuencia en tiempo de diseño y puede deberse a la falta de ortografía o al uso incorrecto de mayúsculas y minúsculas. Los valores de clave distinguen entre mayúsculas y minúsculas.
+
+En tiempo de ejecución el error es debido con frecuencia a que el desarrollador asume que el valor estará presente, aunque no lo estará. Por ejemplo, en un complemento que se registra para la actualización de una entidad, solo se incluirán los valores que se cambien en la <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.Attributes> .
+
+### <a name="prevention"></a>Prevención
+
+Para evitar este error que debe comprobar que existe la clave antes de intentar usarla para tener acceso a un valor. 
+
+Por ejemplo, cuando tenga acceso a un atributo de entidad, puede usar el método <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.Contains(System.String)> para comprobar si un atributo existe en una entidad como se muestra en el siguiente código.
+
+```csharp
+// Obtain the execution context from the service provider.  
+IPluginExecutionContext context = (IPluginExecutionContext)
+    serviceProvider.GetService(typeof(IPluginExecutionContext));
+
+// The InputParameters collection contains all the data passed in the message request.  
+if (context.InputParameters.Contains("Target") &&
+    context.InputParameters["Target"] is Entity)
+    {
+    // Obtain the target entity from the input parameters.  
+    Entity entity = (Entity)context.InputParameters["Target"];
+
+    //Check whether the name attribute exists.
+    if(entity.Contains("name"))
+    {
+        string name = entity["name"];
+    }
+```
+
+Algunos desarrolladores usan el método <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.GetAttributeValue``1(System.String)> para evitar este error cuando acceden a atributos de entidad, pero tenga en cuenta que este método devolverá el valor predeterminado del tipo si no existe el atributo. Si el valor predeterminado es nulo, esto funciona como se espera. Pero si el valor predeterminado no devuelve null, por ejemplo con un `DateTime`, el valor devuelto será `1/1/0001 00:00` en lugar de null.

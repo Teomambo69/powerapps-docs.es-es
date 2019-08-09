@@ -1,5 +1,5 @@
 ---
-title: Realizar operaciones condicionales utilizando la API web (Common Data Service)| Microsoft Docs
+title: Realizar operaciones condicionales mediante la API web (Common Data Service)| Microsoft Docs
 description: Aprenda a crear condiciones que decidan si y cómo realizar ciertas operaciones mediante la API web
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,13 +23,13 @@ search.app:
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Realizar operaciones condicionales mediante la API web
 
-Common Data Service ofrece compatibilidad para un conjunto de operaciones condicionales que dependen del mecanismo de control de versiones de recursos HTTP estándar, conocido como *ETags*.  
+Common Data Service ofrece compatibilidad con un conjunto de operaciones condicionales que dependen del mecanismo de control de versiones de recursos HTTP estándar conocido como *ETags*.  
   
 <a name="bkmk_ETags"></a>
   
 ## <a name="etags"></a>ETags
 
-El protocolo HTTP define una *etiqueta de entidad* o [ETag](https://msdn.microsoft.com/en-us/library/dd541486.aspx) en el término abreviado, para identificar versiones específicas de un recurso. Las ETags son identificadores opacos cuyos valores exactos dependen de la implementación. Los valores de ETag se producen en dos variedades: validación segura y débil. La validación segura indica que un recurso único, identificado mediante un URI específico, será idéntico en el nivel binario si su valor de ETag correspondiente no se modifica. La validación débil solo garantiza que la representación del recurso equivale semánticamente al mismo valor de ETag.  
+El protocolo HTTP define una *etiqueta de entidad* o [ETag](https://msdn.microsoft.com/library/dd541486.aspx) en el término abreviado, para identificar versiones específicas de un recurso. Las ETags son identificadores opacos cuyos valores exactos dependen de la implementación. Los valores de ETag se producen en dos variedades: validación segura y débil. La validación segura indica que un recurso único, identificado mediante un URI específico, será idéntico en el nivel binario si su valor de ETag correspondiente no se modifica. La validación débil solo garantiza que la representación del recurso equivale semánticamente al mismo valor de ETag.  
   
 Common Data Service genera una propiedad `@odata.etag` de validación débil para todas las instancias de entidad y esta propiedad se devuelve automáticamente con cada registro de entidad recuperado. Para obtener más información, consulte [Recuperar una entidad usando la API web](retrieve-entity-using-web-api.md).  
   

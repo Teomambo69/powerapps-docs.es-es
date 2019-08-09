@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/11/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -64,11 +64,11 @@ Use el área de Configuración para configurar los parámetros del entorno, acti
 Primero, vea si el valor que necesita está en el menú ![Icono Configuración](media/powerapps-gear.png)  > **Personalizaciones avanzadas**.
 
 Para buscar configuraciones no disponibles desde **Personalizaciones avanzadas**:  
-1.  Acceda a su entorno desde Dynamics 365 Administration Center. Para entornos ubicados en Norteamérica, acceda a [https://port.crm.dynamics.com/G/instances/InstancePicker.aspx](https://port.crm.dynamics.com/G/instances/InstancePicker.aspx). Para otras ubicaciones, consulte Inicio de sesión directo en Dynamics 365 Administration Center.
-2.  Seleccione el entorno que desee y seleccione **Abrir**.
+1.  Desde una aplicación basada en modelode PowerApps, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) en la barra de herramientas de la aplicación y, a continuación seleccione **Opciones avanzadas**. 
+2.  Seleccione **Configuración** y seleccione el área de configuración que desee.
 
     > [!div class="mx-imgBorder"] 
-    > ![Abrir entorno](media/open-environment.png)
+    > ![Áreas de configuración](media/settings-areas.png) 
 
 ## <a name="see-also"></a>Vea también
 [Creación o edición de una aplicación basada en modelos usando el diseñador de aplicaciones](create-edit-app.md)

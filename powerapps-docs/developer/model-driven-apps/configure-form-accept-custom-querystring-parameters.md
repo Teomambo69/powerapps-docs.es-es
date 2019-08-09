@@ -3,8 +3,7 @@ title: Configure un formulario para aceptar parámetros querystring personalizad
 description: Aprenda cómo configurar un formulario para aceptar parámetros querystring personalizados. Use estos parámetros para definir los valores predeterminados al crear un nuevo registro en la aplicación.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>Configurar un formulario para aceptar parámetros querystring personalizados
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
 
 La capacidad de transferir valores a una página web mediante cadenas de consulta representa un riesgo de seguridad. Las aplicaciones basadas en modelos aplican la práctica óptima de comparar siempre cualquier parámetro pasado como cadena de consulta con una lista de los nombres de parámetros y de tipos de datos esperados.  
   

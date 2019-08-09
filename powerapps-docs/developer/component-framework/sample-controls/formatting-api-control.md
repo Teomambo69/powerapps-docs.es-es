@@ -21,11 +21,6 @@ Este componente de ejemplo explora los distintos métodos disponibles como parte
 > [!div class="mx-imgBorder"]
 > ![Formato del componente API](../media/formatting-api.png "Formato del componente API")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```xml
@@ -261,7 +256,7 @@ text-align: center;
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br/>
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
 
 

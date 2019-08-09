@@ -18,11 +18,6 @@ En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear con
 > [!div class="mx-imgBorder"]
 > ![Flip angular](../media/angular-flip.png "Flip angular")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```XML
@@ -298,5 +293,5 @@ border-radius : 4px
 ### <a name="related-topics"></a>Temas relacionados
 
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)<br />
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br />
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br />
 [Descripción general de marco de componentes de PowerApps](../overview.md)

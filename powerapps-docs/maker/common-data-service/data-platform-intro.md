@@ -1,12 +1,13 @@
 ---
 title: ¿Qué es Common Data Service? | Microsoft Docs
-description: 'Introducción a Common Data Service, entidades y lógica de servidor.'
+description: 'Introducción a Common Data Service, entidades, lógica de servidor, seguridad, y capacidades de desarrollador.'
 author: clwesene
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: overview
 ms.component: cds
-ms.date: 05/01/2018
+ms.date: 06/21/2019
+ms.reviewer: matp
 ms.author: matp
 search.audienceType:
   - maker
@@ -22,7 +23,7 @@ Common Data Service le permite almacenar y administrar de forma segura los datos
 
 Para obtener información sobre cómo comprar un plan para usar Common Data Service, consulte [Información de precios](../../administrator/pricing-billing-skus.md).
 
-## <a name="why-use-common-data-service"></a>Por qué utilizar Common Data Service
+## <a name="why-use-common-data-service"></a>¿Por qué usar Common Data Service?
 Las entidades estándar y personalizadas de Common Data Service proporcionan una opción de almacenamiento de datos segura y basada en la nube. Las entidades le permiten crear una definición orientada al negocio de los datos de su organización para su uso en aplicaciones. Si no está seguro de si las entidades son la mejor opción para usted, considere estas ventajas:
 
 * **Fácil de administrar** &ndash; Los metadatos y los datos se almacenan en la nube. No tiene que preocuparse de los detalles de cómo se almacenan.
@@ -41,7 +42,7 @@ Las aplicaciones de Dynamics 365, como Dynamics 365 for Sales, Service o Talent 
 * **Habilidades reutilizables en Dynamics 365 y PowerApps** &ndash; Los usuarios con habilidades anteriores en PowerApps o Dynamics 365 ahora pueden aprovecharlas en la nueva plataforma de Common Data Service. La creación de entidades, formularios, gráficos, etcétera ahora son funciones comunes en sus aplicaciones.
 
     > [!NOTE]
-    > Actualmente, Dynamics 365 for Finance and Operations requiere la configuración del integrador de datos para que sus datos profesionales de Finance and Operations estén disponibles en Common Data Service.
+    > Dynamics 365 for Finance and Operations requiere actualmente la configuración del integrador de datos para que los datos profesionales de Finance and Operations estén disponibles en Common Data Service.
 
 ## <a name="integrating-data-into-the-common-data-service"></a>Integrar datos en Common Data Service
 
@@ -54,7 +55,7 @@ La creación de una aplicación implica normalmente datos de más de un origen y
 Para obtener más información sobre cómo integrar datos en Common Data Service, consulte [Agregar datos a una entidad en Common Data Service usando Power Query](data-platform-cds-newentity-pq.md).
 
 ## <a name="interacting-with-entities"></a>Interactuar con entidades
-Cuando desarrolla una aplicación, puede usar entidades estándar, entidades personalizadas o ambas. Common Data Service ofrece entidades estándar de forma predeterminada. Estas están diseñadas, de acuerdo con prácticas recomendadas, para capturar los conceptos y escenarios más comunes en una organización.
+Cuando desarrolla una aplicación, puede usar entidades estándar, entidades personalizadas o ambas. Common Data Service proporciona entidades estándar de forma predeterminada. Estas están diseñadas, de acuerdo con prácticas recomendadas, para capturar los conceptos y escenarios más comunes en una organización.
 
 ![Captura de pantalla que muestra una lista de entidades.](./media/data-platform-cds-intro/entitylist.png "Lista de entidades")
 
@@ -70,14 +71,18 @@ Las entidades de Common Data Service pueden aprovechar la lógica y validación 
 * Los **flujos de trabajo** le permiten automatizar los procesos de negocio sin interacción del usuario. Para obtener más información, consulte [Información general de flujos de trabajo](/dynamics365/customer-engagement/customize/workflow-processes).
 * La **lógica de negocios con código** admite escenarios avanzados de desarrollador para ampliar la aplicación directamente con código. Para obtener más información, consulte [Aplicar lógica de negocios con código](../../developer/common-data-service/apply-business-logic-with-code.md).
 
+## <a name="security"></a>Seguridad
+Common Data Service tiene un rico modelo de seguridad que protege la integridad de los datos y privacidad de los usuarios al tiempo que promueve una colaboración y un acceso a los datos eficaces. Puede combinar unidades de negocio, la seguridad basada en roles, la seguridad de registros y la seguridad basada en campos para definir el acceso generala la información que los usuarios tienen en un entorno de Common Data Service. Más información: [Seguridad en Common Data Service](/power-platform/admin/wp-security) 
+
 ## <a name="developer-capabilities"></a>Capacidades de desarrollador
 Además de las características disponibles mediante el portal de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), Common Data Service también incluye características para que los desarrolladores puedan acceder de forma programática a los metadatos y datos para crear entidades y lógica de negocios, así como para interactuar con datos. Para obtener más información, consulte [Información general para desarrolladores de Common Data Service](../../developer/common-data-service/overview.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para empezar a utilizar Common Data Service:
-* [Crear una aplicación usando una base de datos de Common Data Service](../canvas-apps/data-platform-create-app-scratch.md).
-* [Crear una entidad personalizada](create-custom-entity.md) y, a continuación, [crear una aplicación que use esa entidad](../canvas-apps/data-platform-create-app.md).
-* [Usar Power Query](./data-platform-cds-newentity-pq.md) para conectarse a un origen de datos en línea o local e importar los datos directamente en Common Data Service.
+- [Crear una aplicación de lienzo mediante una base de datos Common Data Service](../canvas-apps/data-platform-create-app-scratch.md).
+- [Crear una entidad personalizada](create-custom-entity.md) y, a continuación, [crear una aplicación de lienzo que use la entidad](../canvas-apps/data-platform-create-app.md).
+- [Crear una aplicación basada en modelos](/powerapps/maker/model-driven-apps/build-first-model-driven-app) con Common Data Service.
+- [Usar Power Query](./data-platform-cds-newentity-pq.md) para conectarse a un origen de datos en línea o local e importar los datos directamente en Common Data Service.
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
 Con el modelo común de datos de Microsoft PowerApps, Microsoft recopila y almacena la entidad personalizada y los nombres de campo en nuestros sistemas de diagnóstico. Usamos esta información para mejorar el modelo común de datos para los clientes. La entidad y los nombres de campo que los creadores de la aplicación crean nos ayudan a comprender los escenarios que son comunes en la comunidad de Microsoft PowerApps y a determinar los huecos en la cobertura de las entidades estándar del servicio, como los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa o replica fuera de la región en la que se proporciona la base de datos. No obstante, tenga en cuenta que la entidad personalizada y los nombres de campo se pueden replicar en las regiones y que se eliminan de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a proteger su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).

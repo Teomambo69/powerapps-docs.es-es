@@ -2,11 +2,11 @@
 title: ' Marco de trabajo de eventos (Common Data Service) | Microsoft Docs'
 description: Describe el marco de trabajo de eventos y los desarrolladores de información deben saber cuándo utilizarlo.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -16,23 +16,6 @@ search.app:
   - D365CE
 ---
 # <a name="event-framework"></a>Marco de trabajo de eventos
-
-<!-- Re-write from
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
-
-See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
-
-
-Make sure to call out the changes due to the legacy update messages. That information was moved.
-
-See 
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
-
-
--->
 
 La capacidad de ampliar el comportamiento predeterminado de Common Data Service depende de detectar cuándo se producen eventos en el servidor. El *marco de trabajo de eventos* proporciona la capacidad de registrar el código personalizado para que se ejecute en respuesta a eventos específicos. 
 
@@ -62,7 +45,27 @@ Normalmente, se puede esperar encontrar un mensaje para la mayoría de las clase
 
 Los datos sobre mensajes se almacena en las entidades [SdkMessage](reference/entities/sdkmessage.md) y [SdkMessageFilter](reference/entities/sdkmessagefilter.md). La herramienta de registro de complementos filtrará esta información para mostrar solo los mensajes válidos.
 
-Para comprobar si una combinación de mensaje y entidad admite la ejecución de complementos usando una consulta de base de datos, usa Búsqueda avanzada o una herramienta de la comunidad (p. ej., [Creador de FetchXML](http://fxb.xrmtoolbox.com)) para ejecutar la siguiente consulta fetchXML. Cuando se usa Búsqueda avanzada, debe crear la consulta de forma interactiva.
+Para comprobar si un mensaje y una combinación de entidad admite la ejecución de complementos utilizando una consulta de base de datos, puede usar la consulta de la API web siguiente:
+
+```
+{{webapiurl}}sdkmessages?$select=name
+&$filter=isprivate eq false 
+and (name ne 'SetStateDynamicEntity' 
+and name ne 'RemoveRelated' 
+and name ne 'SetRelated' and 
+name ne 'Execute') 
+and sdkmessageid_sdkmessagefilter/any(s:s/iscustomprocessingstepallowed eq true 
+and s/isvisible eq true)
+&$expand=sdkmessageid_sdkmessagefilter($select=primaryobjecttypecode;
+$filter=iscustomprocessingstepallowed eq true and isvisible eq true)
+&$orderby=name
+```
+
+> [!TIP]
+> Puede exportar estos datos a una hoja de cálculo de Excel usando esta consulta y las instrucciones proporcionadas en esta entrada de blog: [Encontrar mensajes y entidades elegibles para complementos mediante Common Data Service](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+
+
+También puede usar el FetchXML siguiente para recuperar esta información. El [Creador de FetchXML](http://fxb.xrmtoolbox.com) es una herramienta útil para ejecutar este tipo de consulta.
 
 ```xml
 <fetch>
@@ -81,7 +84,7 @@ Para comprobar si una combinación de mensaje y entidad admite la ejecución de 
         <value>SetStateDynamicEntity</value>
         <value>RemoveRelated</value>
         <value>SetRelated</value>
-       <value>Execute</value>
+          <value>Execute</value>
       </condition>
     </filter>
     <order attribute='name' />
@@ -90,7 +93,7 @@ Para comprobar si una combinación de mensaje y entidad admite la ejecución de 
 ```
 
 > [!CAUTION]
-> El mensaje `Execute` está disponible, pero no debe registrar normalmente las extensiones ya que lo llaman todas las operaciones.
+> El mensaje `Execute` está disponible, pero no debe registrar las extensiones ya que lo llaman todas las operaciones.
 
 > [!NOTE]
 > Existen algunos casos donde los complementos y los flujos de trabajo que se registran para el evento de actualizar se pueden llamar dos veces. Más información: [Comportamiento de operaciones de actualización especializadas](special-update-operation-behavior.md)
@@ -101,10 +104,10 @@ Al registrar un paso mediante la herramienta de registro de complementos tambié
 
 |Nombre|Descripción|
 |--|--|
-|**PreValidation**<br />Fase: 10|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
-|**PreOperation**<br />Fase: 20|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
-|**MainOperation**<br />Fase: 30|Solo para uso interno.|
-|**PostOperation**<br />Fase: 40|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
+|**PreValidation**|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
+|**PreOperation**|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
+|**MainOperation**|Solo para uso interno.|
+|**PostOperation**|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
 
 La fase que debe elegir depende del fin de la extensión. No es necesario aplicar toda la lógica empresarial en un solo paso. Puede aplicar múltiples pasos para que la lógica sobre si permite que una operación continúe esté en la fase **PreValidation** y que la lógica para modificar las propiedades del mensaje puede se produzca en la fase **PostOperation**.
 

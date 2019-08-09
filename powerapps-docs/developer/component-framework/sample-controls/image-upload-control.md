@@ -20,11 +20,6 @@ La imagen seleccionada se genera en el componente. Mientras tanto, se muestra el
 > [!div class="mx-imgBorder"]
 > ![Componente de carga de imagen](../media/image-upload-control.png "Componente de carga de imagen")
 
-> [!IMPORTANT]
-> - El marco de componentes de PowerApps es una característica de vista previa.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifiesto
 
 ```xml
@@ -388,5 +383,5 @@ El método `device.pickFile` abre un cuadro de diálogo para seleccionar archivo
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de marco de componentes de PowerApps](../index.md)<br/>
+[Referencia de la API de marco de componentes de PowerApps](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)

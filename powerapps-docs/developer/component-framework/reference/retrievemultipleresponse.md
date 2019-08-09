@@ -14,6 +14,10 @@ ms.assetid: 08ea66d3-b4af-44af-a3ae-cb2ebad043e8
 
 # <a name="retrievemultipleresponse"></a>RetrieveMultipleResponse
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Propiedades
+
 ## <a name="entities"></a>entities
 
 Una matriz de objetos JSON, donde cada objeto representa el registro de entidad recuperada que contiene los atributos y sus valores.

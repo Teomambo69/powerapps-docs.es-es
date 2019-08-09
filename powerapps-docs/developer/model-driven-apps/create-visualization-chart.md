@@ -3,8 +3,7 @@ title: Crear una visualización (gráfico) (aplicaciones basadas en modelos) | M
 description: Este tema muestra cómo crear una visualización del gráfico y una visualización del recurso web.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -21,8 +20,6 @@ search.app:
 ---
 
 # <a name="create-a-visualization-chart"></a>Crear una visualización (gráfico)
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-visualization-chart -->
 
 Para crear una visualización mediante programación, debe crear un registro para la [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md) o la [Entidad UserQueryVisualization](../common-data-service/reference/entities/userqueryvisualization.md) para crear un gráfico propiedad de la organización o propiedad del usuario respectivamente. Este tema muestra cómo crear una visualización del gráfico y una visualización del recurso web.  
   
@@ -51,7 +48,7 @@ Para crear una visualización mediante programación, debe crear un registro par
 
  Los gráficos de varias series asignan valores de eje (vertical) de varias series a un solo valor de eje (horizontal) de categorías. Solo se diferencia de los gráficos de una sola serie en que estos gráficos tienen varios elementos `<measurecollection>` y `<series>` correspondientes especificados en las cadenas XML. Cada elemento `<measurecollection>` contiene un elemento secundario `<measure>` que define un valor de eje (vertical) de series para el mismo valor (horizontal) de categorías. Más información: [Descripción de los gráficos: representación de datos y gráficos subyacentes](understand-charts-underlying-data-chart-representation.md).  
   
- Para obtener un gráfico de varias series de ejemplo y las correspondientes cadenas XML de descripción de datos y de presentación, consulte [TODO: Multi-Series Chart].<!--(sample-charts.md#MultiSeriesChart)-->.
+ Para obtener un gráfico de varias series de ejemplo y las correspondientes cadenas XML de descripción de datos y de presentación, consulte [Gráfico de varias series](sample-charts.md#multi-series-chart).
   
 <a name="CreateWRVisualization"></a>   
 
@@ -72,7 +69,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Si desea crear una visualización del recurso web mediante la aplicación web Dynamics 365 Common Data Service debe crear un archivo XML en el siguiente formato y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
+ Si desea crear una visualización del recurso web mediante la aplicación web Dynamics 365 Common Data Service, debe crear un archivo XML en el siguiente formato y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
   
 ```xml  
 <visualization>  

@@ -1,8 +1,8 @@
 ---
-title: Registrar y llevar seguimientos (Common Data Service) | Microsoft Docs
+title: Registro y seguimiento (Common Data Service) | Microsoft Docs
 description: Use el registro de seguimiento para almacenar la información de ejecución de los complementos para ayudar en la depuración de los complementos.
 ms.custom: ''
-ms.date: 1/28/2019
+ms.date: 05/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,97 +17,82 @@ search.app:
 ---
 # <a name="tracing-and-logging"></a>Registro y seguimiento
 
- El uso del seguimiento es un método alternativo para solucionar problemas en un complemento o una actividad de flujo de trabajo personalizada (código personalizado), en comparación con depurar en [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. El seguimiento ayuda a los desarrolladores registrando información personalizada en tiempo de ejecución como ayuda en el diagnóstico de la causa de los errores del código. El seguimiento es especialmente útil para solucionar problemas de código personalizado registrado de [!INCLUDE[pn_CRM_Online](../../includes/pn-crm-online.md)] ya que es el único método que solución de problemas compatible para ese escenario. El seguimiento se admite para código personalizado registrado en espacio aislado (confianza parcial) y de total confianza y durante la ejecución sincrónica o asincrónica. El seguimiento no se admite para código personalizado que se ejecuta en [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../../includes/pn-microsoft-dynamics-crm-for-outlook.md)] u otro cliente móvil.  
+Use seguimiento para solucionar problemas de una actividad de flujo de trabajo personalizada o de un complemento (código personalizado). El seguimiento ayuda a los desarrolladores registrando información en tiempo de ejecución como ayuda en el diagnóstico de la causa de los errores del código. El seguimiento es compatible con la ejecución síncrona o asincrónica.
   
- El registro de información de seguimiento en tiempo de ejecución para aplicaciones [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)] se consigue mediante un servicio llamado <xref:Microsoft.Xrm.Sdk.ITracingService>. La información proporcionada a este servicio por el código personalizado se puede registrar en tres distintas secciones que se identifican aquí.  
-
-> [!NOTE]
-> El seguimiento de registros con la interfaz `ITracingService` funciona solo cuando el complemento se registra en modo entorno limitado.
+El registro de información de seguimiento en tiempo de ejecución para Common Data Service se consigue mediante un servicio llamado <xref:Microsoft.Xrm.Sdk.ITracingService>. La información proporcionada a este servicio por el código personalizado se puede registrar en tres distintas secciones que se identifican aquí.  
 
 - **Registro de seguimiento**  
   
-     Los registro de seguimiento del tipo **PluginTraceLog** pueden encontrarse en la aplicación web accediendo a **Configuración** y eligiendo la ventana **Registro de seguimiento de complementos**. La ventana solo es visible si tiene acceso a los registros de la entidad de registro de seguimiento en su rol de seguridad asignado. La escritura de estos registros se controla mediante la configuración de seguimiento mencionada en la siguiente sección.
-  
-    > [!NOTE]
+    Los registros del registro de seguimiento se escriben en la [Entidad PluginTraceLog](reference/entities/plugintracelog.md). La escritura de estos registros se controla mediante la configuración de seguimiento mencionada en [Habilitar registro de seguimiento](#enable-trace-logging).
+
+    Estos datos se pueden encontrar en aplicaciones basadas en modelos navegando a **Configuración** y eligiendo la ventana **Registro de seguimiento de complementos**. La ventana solo es visible si tiene acceso a los registros de la entidad de registro de seguimiento en su rol de seguridad asignado.
+
+    Es posible que le resulte más fácil ver estos datos mediante API web en el explorador utilizando el ejemplo mostrado en [Utilizar seguimiento](debug-plug-in.md#use-tracing) o utilizando la herramienta de la comunidad [Visor de seguimiento de complementos](#plug-in-trace-viewer).
+
+    > [!IMPORTANT]
     > El registro de seguimiento ocupa espacio de almacenamiento de la organización, especialmente cuando se generan muchos seguimientos y excepciones. Solo debe activar el registro de seguimiento para depurar y solucionar problemas, y desactivarla después de que la investigación esté completa.  
   
 - **Diálogo de errores**  
   
-     Un complemento registrado sincrónico o una actividad de flujo de trabajo personalizada que devuelve una excepción a la plataforma produce un cuadro de diálogo de error en la aplicación web que se muestran al usuario que ha iniciado sesión. El usuario puede seleccionar el botón **Descargar archivo de registro** en el cuadro de diálogo para ver el registro que contiene la excepción y la salida de seguimiento.  
+     Un complemento registrado sincrónico o una actividad de flujo de trabajo personalizada que devuelve una excepción de la plataforma produce un cuadro de diálogo de error en la aplicación web que se muestran al usuario que ha iniciado sesión. El usuario puede seleccionar el botón **Descargar archivo de registro** en el cuadro de diálogo para ver el registro que contiene la excepción y la salida de seguimiento.  
   
 - **Trabajo del sistema**  
   
      Para un complemento registrado asincrónico o actividades de flujo de trabajo personalizadas que devuelven una excepción, la información de seguimiento aparece en el área **Detalles** del formulario **Trabajo del sistema** en la aplicación web.  
   
-<a name="bkmk_trace-settings"></a>   
-## <a name="enable-trace-logging"></a>Habilitar registro de seguimiento  
- Para habilitar el registro de seguimiento en una organización que admite esta característica, en la aplicación web vaya a **Configuración** > **Administración** > **Configuración del sistema**. En la pestaña **Personalización**, busque el menú desplegable con la etiqueta **Habilitar registro para registro de seguimientos de complemento** y seleccione una de las opciones disponibles.  
-  
-|Opción|Descripción|  
-|------------|-----------------|  
-|Desactivada|La escritura en el registro de seguimiento está deshabilitada. No se creará ningún registro de **PluginTraceLog**. Sin embargo, el código personalizado puede seguir llamando al método <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])> aunque no se escriba ningún registro.|  
-|Excepciones|La información de seguimiento se escribe en el registro si se pasa una excepción a la plataforma desde código personalizado.|  
-|Todo|La información de seguimiento se escribe en el registro cuando se completa el código o se pasa una excepción a la plataforma desde el código personalizado.|  
-  
- Si el valor del registro de seguimiento se establece en **Excepción** y el código personalizado devuelve una excepción a la plataforma, se crea un registro de seguimiento y también se escribe información de seguimiento en otra ubicación. Para código personalizado que se ejecuta forma sincrónica, la información se muestra al usuario en un cuadro de diálogo de errores, de lo contrario, para código asincrónico, la información se escribe en el trabajo del sistema relacionado.  
-  
- De forma predeterminada, los roles de administrador del sistema y personalizador del sistema tienen los privilegios necesarios para cambiar el valor del registro de seguimiento, que se almacena en un registro de entidad <xref:Microsoft.Xrm.Sdk.Deployment.TraceSettings>. La configuración de seguimiento tiene un ámbito de organización.  
-  
-## <a name="write-to-the-tracing-service"></a>Escriba en el servicio de seguimiento.  
- Antes de escribir en el servicio de seguimiento, primero debe extraer el objeto de servicio de seguimiento del contexto de ejecución pasado. A continuación, agregue simplemente llamadas <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])> a su código personalizado donde corresponda pasando la información relevante de diagnóstico en esa llamada al método.  
+<a name="bkmk_trace-settings"></a>
 
- Descargue el ejemplo: [Trabajar con complementos](https://code.msdn.microsoft.com/Sample-Create-a-basic-plug-64d86ade).
+## <a name="enable-trace-logging"></a>Habilitar registro de seguimiento
+
+Si los registros de seguimiento se escriben depende del valor del valor del atributo [PluginTraceLogSetting](/powerapps/developer/common-data-service/reference/entities/organization#BKMK_PluginTraceLogSetting) de la entidad [Organización](/powerapps/developer/common-data-service/reference/entities/organization).
+
+Para habilitar el registro de seguimiento puede actualizar mediante programación este valor o en la aplicación web ir a **Configuración** > **Administración** > **Configuración del sistema**. En la pestaña **Personalización**, busque el menú desplegable con la etiqueta **Habilitar registro para registro de seguimientos de complemento** y seleccione una de las opciones disponibles.  
+  
+|Value|Opción|Descripción|  
+|------------|-----------------|-----------------|  
+|0|Desactivado|La escritura en el registro de seguimiento está deshabilitada. No se creará ningún registro de **PluginTraceLog**. Sin embargo, el código personalizado puede seguir llamando al método <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])> aunque no se escriba ningún registro.|  
+|1|Excepciones|La información de seguimiento se escribe en el registro si se pasa una excepción a la plataforma desde código personalizado.|  
+|2|Todo|La información de seguimiento se escribe en el registro cuando se completa el código o se pasa una excepción a la plataforma desde el código personalizado.|  
+  
+Si el valor del registro de seguimiento se establece en **Excepción** y el código personalizado devuelve una excepción a la plataforma, se crea un registro de seguimiento y también se escribe información de seguimiento en otra ubicación. Para código personalizado que se ejecuta forma sincrónica, la información se muestra al usuario en un cuadro de diálogo de errores, de lo contrario, para código asincrónico, la información se escribe en el trabajo del sistema relacionado.  
+
+## <a name="write-to-the-tracing-service"></a>Escriba en el servicio de seguimiento.
+
+Antes de escribir en el servicio de seguimiento, primero debe extraer el objeto de servicio de seguimiento del contexto de ejecución pasado. A continuación, agregue simplemente llamadas <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])> a su código personalizado donde corresponda pasando la información relevante de diagnóstico en esa llamada al método.  
+
   
  ```csharp
-//Extract the tracing service for use in debugging sandboxed plug-ins.
+//Extract the tracing service for use in debugging plug-ins.
  ITracingService tracingService =
      (ITracingService)serviceProvider.GetService(typeof(ITracingService));
 
- // Obtain the execution context from the service provider.
- IPluginExecutionContext context = (IPluginExecutionContext)
-     serviceProvider.GetService(typeof(IPluginExecutionContext));
-
- // For this sample, execute the plug-in code only while the client is online. 
- tracingService.Trace("AdvancedPlugin: Verifying the client is not offline.");
- if (context.IsExecutingOffline || context.IsOfflinePlayback)
-     return;
-
- // The InputParameters collection contains all the data passed 
- // in the message request.
- if (context.InputParameters.Contains("Target") &&
-     context.InputParameters["Target"] is Entity)
- {
-     // Obtain the target entity from the Input Parameters.
-     tracingService.Trace
-         ("AdvancedPlugin: Getting the target entity from Input Parameters.");
-     Entity entity = (Entity)context.InputParameters["Target"];
-
-     // Obtain the image entity from the Pre Entity Images.
-     tracingService.Trace
-         ("AdvancedPlugin: Getting image entity from PreEntityImages.");
-     Entity image = (Entity)context.PreEntityImages["Target"];
+ // Use the tracing service 
+ tracingService.Trace("Write your message here.");
+ 
 ```
 
-  
- A continuación, genere e implemente el complemento o actividad de flujo de trabajo personalizada. Durante la ejecución del código personalizado, la información proporcionada en las llamadas al método **Trace** es escrita en un registro de entidad del registro de seguimiento por <xref:Microsoft.Xrm.Sdk.ITracingService>, si lo admite la organización y está habilitada, y también se puede poner a disposición del usuario en un diálogo web o un trabajo del sistema como se describe en la sección anterior. La información de seguimiento escrita en el registro de seguimiento está configurada en los valores de seguimiento. Para obtener más información, consulte [Habilitar el registro de seguimiento](#bkmk_trace-settings).  
+A continuación, genere e implemente el complemento o actividad de flujo de trabajo personalizada. Durante la ejecución del código personalizado, la información proporcionada en las llamadas al método **Trace** es escrita en un registro de entidad del registro de seguimiento por <xref:Microsoft.Xrm.Sdk.ITracingService>, si lo admite la organización y está habilitada, y también se puede poner a disposición del usuario en un diálogo web o un trabajo del sistema como se describe en la sección anterior. La información de seguimiento escrita en el registro de seguimiento está configurada en los valores de seguimiento. Para obtener más información, consulte [Habilitar el registro de seguimiento](#bkmk_trace-settings).  
   
 > [!NOTE]
-> Si el código personalizado se ejecuta en una transacción de la base de datos y se produce una excepción que provoca una reversión de la transacción, todos los cambios en los datos de la entidad realizados por el código se desharán. Sin embargo, los registros **PluginTraceLog** se mantendrán después de que la reversión se complete.  
+> Si el código personalizado se ejecuta en una transacción de la base de datos y se produce una excepción que provoca una reversión de la transacción, todos los cambios en los datos de la entidad realizados por el código se desharán. Sin embargo, los registros [PluginTraceLog](reference/entities/plugintracelog.md) se mantendrán después de que la reversión se complete.  
   
 ## <a name="additional-information-about-the-tracing-service"></a>Información adicional sobre el servicio de seguimiento.
 
- El <xref:Microsoft.Xrm.Sdk.ITracingService> trata por lotes la información que se le proporciona con el método **Seguimiento**. La información se escribe en un nuevo registro **PluginTraceLog** después de que el código personalizado se ejecuta correctamente hasta completarse o genera una excepción.  
+El <xref:Microsoft.Xrm.Sdk.ITracingService> trata por lotes la información que se le proporciona con el método **Seguimiento**. La información se escribe en un nuevo registro [PluginTraceLog](reference/entities/plugintracelog.md) después de que el código personalizado se ejecuta correctamente hasta completarse o genera una excepción.  
   
- Los registros PluginTraceLog tienen una duración finita. Un trabajo en segundo plano de eliminación en masa se ejecuta una vez al día para eliminar los registros que tienen más de 24 horas desde su creación. Este trabajo puede deshabilitarse cuando es necesario. 
+Los registros [PluginTraceLog](reference/entities/plugintracelog.md) tienen una duración finita. Un trabajo en segundo plano de eliminación en masa se ejecuta una vez al día para eliminar los registros que tienen más de 24 horas desde su creación. 
+
+> [!CAUTION]
+> Mientras este trabajo se puede deshabilitar o la frecuencia con la que aparece puede ser ajustada, si no se restablece el valor original con frecuencia es la causa de problemas de rendimiento más adelante.
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
  ### <a name="plug-in-trace-viewer"></a>Visor de seguimiento de complementos
 
-**Visor de seguimiento de complementos** es una herramienta desarrollada por Comunidad XrmToolbox para aplicaciones [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)]. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
+**Visor de seguimiento de complementos** es una herramienta desarrollada por la comunidad XrmToolbox. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la Comunidad no son un producto de aplicaciones [!include[pn_microsoft_dynamics](../../includes/pn-microsoft-dynamics.md)] y no se amplía el soporte para las herramientas de comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).  
+> Las herramientas de la comunidad no son un producto de Microsoft y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).  
 
 ### <a name="see-also"></a>Vea también
 

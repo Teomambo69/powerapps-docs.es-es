@@ -4,16 +4,16 @@ description: Cómo depurar un control personalizado mediante la depuración de F
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
-ms.topic: index-page
+ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 ---
-# <a name="debugging-csutom-components"></a>Depurar componentes personalizados
+# <a name="debug-custom-components"></a>Depurar componentes personalizados
 
 Una vez que termine de implementar la lógica del control personalizado, ejecute el siguiente comando de iniciar el proceso de depuración `npm start`
 
 > [!NOTE]
-> Hoy solo puede visualizar el control de campo, pero se proporcionará próximamente compatibilidad para el conjunto de datos.
+> Actualmente solo puede visualizar el control de campo, pero se proporcionará próximamente compatibilidad para el conjunto de datos.
 
 > [!div class="mx-imgBorder"]
 > ![host-local](media/local-host.png "host local")
@@ -50,7 +50,7 @@ También puede interactuar con el control localmente en tiempo real y observar e
 
 ## <a name="fiddler-autoresponder"></a>Fiddler AutoResponder
 
-Use Fiddler AutoResponder para depurar rápidamente sus componentes personalizados. Instale [Fiddler](https://www.telerik.com/download/fiddler) y siga los pasos para configurar [AutoResponder](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder)
+Use Fiddler AutoResponder para depurar rápidamente sus componentes personalizados. Instale [Fiddler](https://www.telerik.com/download/fiddler) y siga los pasos para configurar [AutoResponder](https://docs.microsoft.com/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder)
 
 ### <a name="related-topics"></a>Temas relacionados
 

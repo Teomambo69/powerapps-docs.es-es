@@ -1,6 +1,6 @@
 ---
 title: Metadatos de atributo | Microsoft Docs
-description: Conozca el uso de metadatos de atributo en Common Data Service.
+description: Información sobre el uso de los metadatos de atributos en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -82,8 +82,8 @@ En la siguiente tabla:
 |Recogida|`CalendarRulesType`|No|Contiene una colección de registros de entidad `CalendarRules`.<br />No hay atributos reales que usen est tipo. Cuando se genera un proxy, la herramienta de generación de código creará los dos atributos simulados que no están presentes en los metadatos. Estos atributos representan una vista de registros de reglas de calendario asociados en una relación de uno a varios al registro de entidades.|
 |Recogida|`PartyListType`|No|Contiene una colección de registros de entidad `ActivityParty`.<br />Más información: [Entidad ActivityParty](reference/entities/activityparty.md).|
 |Fecha y hora|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Sí<br />**Fecha y hora**|Contiene un valor de fecha y hora.<br />Todos los atributos de fecha y hora admiten valores de hasta 1/1/1753 12:00.|
-|Imagen|`ImageType`<br />[ImageAttributeMetadata]()|Sí<br />**Imagen**|Contiene datos para admitir la recuperación de datos de imagen para un registro de entidades.<br />Más información: [Imágenes de entidad](entity-metadata.md#entity-images)|
-|Propiedad administrada|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|No|Contiene datos que describen si el componente de la solución almacenado en el registro de la entidad se puede personalizar cuando está incluido en una solución administrada.<br />Más información: [Propiedades administradas](introduction-solutions.md#managed-properties)|
+|Imagen|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Sí<br />**Imagen**|Contiene datos para admitir la recuperación de datos de imagen para un registro de entidades.<br />Más información: [Imágenes de entidad](entity-metadata.md#entity-images)|
+|Propiedad administrada|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|No|Contiene datos que describen si el componente de la solución almacenado en el registro de la entidad se puede personalizar cuando está incluido en una solución administrada.<br />Más información: [Propiedades administradas](introduction-solutions.md#managed-properties)|
 |Cantidad|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|No|Contiene un valor `BigInt`. Solo para uso interno.|
 |Cantidad|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|Sí<br />**Número decimal**|Contiene un valor `Decimal`. La propiedad `Precision` establece el nivel de precisión.|
 |Cantidad|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|Sí<br />**Número de punto flotante**|Contiene un valor `Double`. La propiedad `Precision` establece el nivel de precisión.|
@@ -141,8 +141,8 @@ Más información: [Propiedades administradas](introduction-solutions.md#managed
 Los atributos calculados y consolidados liberan al usuario de tener que realizar cálculos manualmente y le permiten centrarse en su trabajo. Los administradores del sistema pueden definir un campo para que contenga el valor de muchos cálculos comunes sin necesidad de trabajar con un desarrollador. Los programadores también pueden aprovechar las capacidades de la plataforma para realizar estos cálculos en vez de en su propio código.
 
 Más información: 
-- [Guía de personalización Common Data Service: definir campos consolidados que agreguen valores](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [Guía de personalización Common Data Service: atributos calculados y consolidados](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [Guía de personalización de Common Data Service: definir campos consolidados que agreguen valores](/dynamics365/customer-engagement/customize/define-rollup-fields)
+- [Guía de personalización de Common Data Service: atributos calculados y consolidados](/dynamics365/customer-engagement/customize/define-calculated-fields)
 - [Atributos calculados y consolidados](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
 ## <a name="attribute-format"></a>Formato de atributos
@@ -222,7 +222,7 @@ Con el servicio de organización puede usar los siguientes mensajes para recuper
 
 Más información: 
 - [Ejemplo: volcar metadatos de lista desplegable de atributo a un archivo](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Guía para desarrolladores de Common Data Service: personalizar conjuntos de opciones global](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Documentación para desarrolladores de Common Data Service: Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Usar la API web para recuperar opciones
 
@@ -243,9 +243,9 @@ Al crear un nuevo registro de entidades en el contexto del registro de entidades
 Para los programadores que crean clientes personalizados, se puede conseguir el mismo comportamiento si se utiliza el mensaje `InitializeFrom` (servicio de la organización [Clase InitializeFromRequest](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) o la API web [función InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom)) para recopilar los datos de la entidad con los valores predeterminados configurados establecidos.
 
 Más información 
-- [Guía de personalización de Common Data Service: asignar campos de entidad](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Guía para desarrolladores de Common Data Service: personalizar asignaciones de entidades y atributos](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Manual de personalización de Common Data Service: Asignación de campos de entidad](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Guía para desarrolladores de Common Data Service: Personalizar asignaciones de atributos y entidades](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades Common Data Service](entities.md)
+[Entidades de Common Data Service](entities.md)

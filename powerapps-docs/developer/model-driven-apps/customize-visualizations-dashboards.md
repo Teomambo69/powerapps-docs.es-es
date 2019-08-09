@@ -3,8 +3,7 @@ title: Personalización de las visualizaciones y paneles (aplicaciones basadas e
 description: 'Obtenga información sobre cómo configurar los paneles de forma tal que le permitan ver los datos de varias áreas de Dynamics 365 como ventas, marketing y servicio. Incluso puede ajustar los datos que se presentan en las visualizaciones y los paneles según los requisitos empresariales al aplicar los filtros relacionados.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

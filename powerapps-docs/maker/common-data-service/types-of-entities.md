@@ -56,10 +56,10 @@ En la tabla siguiente se muestran las entidades de actividad que están disponib
 |Nombre|Descripción|Mostrar en los menús de actividades|Referencia|
 |----------|-----------------|----------------|---------------|  
 |**Cita**|Compromiso que representa un intervalo de tiempo con las fechas de inicio y fin, y la duración.|Sí|[Cita](/powerapps/developer/common-data-service/reference/entities/appointment)|
-|**Correo electrónico**|Actividad entregada con protocolos de correo electrónico.|Sí|[Correo electrónico ](/powerapps/developer/common-data-service/reference/entities/email)|
+|**Correo electrónico**|Actividad entregada con protocolos de correo electrónico.|Sí|[Correo electrónico](/powerapps/developer/common-data-service/reference/entities/email)|
 |**Fax**|Actividad que mantiene un seguimiento del resultado de llamadas y el número de páginas para un fax y que, opcionalmente, almacena una copia electrónica del documento.|Sí|[Fax](/powerapps/developer/common-data-service/reference/entities/fax)|
 |**Carta**|Actividad que realiza un seguimiento de la entrega de una carta. Actividad que puede contener la copia electrónica de la carta.|Sí|[Carta](/powerapps/developer/common-data-service/reference/entities/letter)|
-|**Llamada de teléfono**|Actividad para mantener un seguimiento de una llamada de teléfono.|Sí|[PhoneCall ](/powerapps/developer/common-data-service/reference/entities/phonecall)|
+|**Llamada de teléfono**|Actividad para mantener un seguimiento de una llamada de teléfono.|Sí|[PhoneCall](/powerapps/developer/common-data-service/reference/entities/phonecall)|
 |**Cita periódica**|Cita principal de una serie de citas periódicas.|Sí|[Maestro recurrente de la cita](/powerapps/developer/common-data-service/reference/entities/recurringappointmentmaster)|
 |**Tarea**|Actividad genérica que representa el trabajo que se debe realizar.|Sí|[Tarea](/powerapps/developer/common-data-service/reference/entities/task)|
   

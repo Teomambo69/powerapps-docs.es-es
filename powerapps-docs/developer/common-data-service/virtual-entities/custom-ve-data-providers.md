@@ -1,5 +1,5 @@
 ---
-title: Proveedores de datos de entidades virtuales personalizados (Common Data Service) | MicrosoftDocs
+title: Proveedores de datos de entidad virtuales personalizados (Common Data Service) | Microsoft Docs
 description: 'Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.'
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="custom-virtual-entity-data-providers"></a>Proveedores de datos de entidad virtuales personalizados
 
-Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente. Cada proveedor de datos consta de un conjunto reutilizable de complementos de Common Data Service que implementan las operaciones CRUD admitidas. (La versión inicial está limitada a las operaciones de lectura **Retrieve** y **RetrieveMultiple**.) En esta sección se ofrece información fundamental sobre los proveedores de datos y enfoques para desarrollar proveedores personalizados, incluido el código de ejemplo.
+Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente. Cada proveedor de datos consta de un conjunto reutilizable de complementos Common Data Service que implementan las operaciones CRUD admitidas. (La versión inicial está limitada a las operaciones de lectura **Retrieve** y **RetrieveMultiple**.) En esta sección se ofrece información fundamental sobre los proveedores de datos y enfoques para desarrollar proveedores personalizados, incluido el código de ejemplo.
 
 > [!NOTE]
 > Como alternativa a la creación de un proveedor de origen de datos personalizado, debe considerar adaptar el origen de datos a un proveedor de datos existente. Por ejemplo, si crea una interfaz de OData v4 con el origen de datos externo entonces podrá acceder directamente a él con el proveedor de datos OData v4 estándar proporcionado. El mecanismo para agregar esta interfaz REST varía con la tecnología de servicio de datos subyacente, por ejemplo consulte [Servicios de datos de WCF 4.5](https://docs.microsoft.com/dotnet/framework/data/wcf/). OData es ampliamente compatible en el sector gracias a una gran variedad de herramientas dedicadas y tecnologías compatibles.
@@ -37,7 +37,7 @@ Los proveedores de datos personalizados requieren recursos de desarrollo importa
 - Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
 - Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
 
-El ensamblado de `Microsoft.Xrm.Sdk.Data.dll` está disponible como paquete de NuGet: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
+El ensamblado `Microsoft.Xrm.Sdk.Data.dll` está disponible como paquete de NuGet: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
 
 <!-- ## Data Provider Architecture -->
 <!-- TODO: it would be nice to have a more detailed architecture diagram of a data provider and add discussion. -->
@@ -88,10 +88,8 @@ Si por cualquier motivo, el código no logra el resultado previsto, deberá lanz
 
 |**Clase de excepción**|**Descripción**|
 |---------------|-----------|
-|<xref:Microsoft.Xrm.Sdk.Data.Exceptions.AttributeNotFoundException>|La consulta especifica un atributo que no se encontró en el registro de datos externos asociado. Normalmente, se produce como resultado de una asignación de tipo errónea o por un cambio de esquema del origen de datos externos.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.AuthenticationException>|Se ha producido un error durante la autenticación de seguridad en el servicio de origen de datos externos. Por ejemplo: estado HTTP 401 recibido del servicio de datos externos. Normalmente, se produce porque el usuario actual no tiene privilegios adecuados o la información de conexión del **EntityDataSource** asociado no es correcta.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.EndpointException>|La configuración del extremo en la entidad de origen de datos no es válida o el extremo no existe.|
-|<xref:Microsoft.Xrm.Sdk.Data.Exceptions.EntityNotFoundException>|La consulta está dirigida a una entidad que no existe. Normalmente, se produce como resultado de una asignación de tipo errónea o por un cambio de esquema del origen de datos externos.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.GenericDataAccessException>|Error de acceso de datos general utilizado cuando el error no encaja con una excepción más específica.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.InvalidMetadataException>| |
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.InvalidQueryException>|La consulta especificada no es válida. Por ejemplo, una combinación de cláusulas no válida u operador de comparación no compatible.|
@@ -106,7 +104,7 @@ Si por cualquier motivo, el código no logra el resultado previsto, deberá lanz
 
 ### <a name="plug-in-registration"></a>Registro de complementos
 
-A diferencia de un complemento normal, solo usará la herramienta de registro de complemento (PRT) para registrar el ensamblado y los complementos para cada evento. No registrará pasos específicos. El complemento se ejecutará en la fase 30, la fase de transacciones centrales principal de la operación que no está disponible para los pasos de complemento normales. En lugar de registrar pasos, configurará el proveedor de datos mediante las siguientes entidades. 
+A diferencia de un complemento normal, solo usará la Plugin Registration Tool (PRT) para registrar el ensamblado y los complementos para cada evento. No registrará pasos específicos. El complemento se ejecutará en la fase 30, la fase de transacciones centrales principal de la operación que no está disponible para los pasos de complemento normales. En lugar de registrar pasos, configurará el proveedor de datos mediante las siguientes entidades. 
 
 
 |**Entidad**|**Descripción**|

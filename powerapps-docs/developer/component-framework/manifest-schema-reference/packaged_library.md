@@ -12,7 +12,9 @@ ms.topic: article
 ms.assetid: 41c50db2-3096-4990-ac2b-e702c161bf4f
 ---
 
-# <a name="packagedlibrary-element"></a>elemento packaged_library
+# <a name="packaged_library-element"></a>elemento packaged_library
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 [!INCLUDE [packaged_library-description](includes/packaged_library-description.md)]
 

@@ -2,7 +2,7 @@
 title: Depurar actividades de flujo de trabajo (Common Data Service) | Microsoft Docs
 description: Describe cómo depurar actividades de flujo de trabajo mediante la herramienta de registro de complementos.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -33,7 +33,7 @@ Desde la PRT puede instalar la solución de generador de perfiles haciendo clic 
 
 Esta solución agrega la capacidad de capturar el contexto que se pasa a la actividad de flujo de trabajo y permite una reproducción que puede usar para depurar la lógica del código localmente con Visual Studio.
 
-Cuando el **generador de perfiles de complemento** está instalado para su instancia de Common Data Service, lo verá en PRT en la parte inferior de la lista **Complementos registrados y actividades personalizadas del flujo de trabajo**.
+Cuando el **generador de perfiles de complemento** está instalado para su instancia Common Data Service, lo verá en PRT en la parte inferior de la lista **Complementos registrados y actividades personalizadas del flujo de trabajo**.
 
 ![Generador de perfiles de complementos en la herramienta de registro de complementos](media/Plug-in-Profiler.png)
 
@@ -91,7 +91,7 @@ El flujo de trabajo copiado del perfil también se cambiará a un flujo de traba
 
 Guarde el flujo de trabajo copiado del perfil y actívelo.
 
-En una aplicación con conexión con la instancia de Common Data Service, o con los servicios web, actualice el valor **Nombre de cuenta** de una entidad de Cuenta. Esto capturará una instancia del contexto pasada a la actividad personalizada de flujo de trabajo y la persistirá como un registro del perfil en el sistema.
+En una aplicación con conexión con la instancia de Common Data Service, o con los servicios web, actualice el valor **Nombre de cuenta** de una entidad de cuenta. Esto capturará una instancia del contexto pasada a la actividad personalizada de flujo de trabajo y la persistirá como un registro del perfil en el sistema.
 
 > [!TIP]
 > Si el flujo de trabajo es asincrónico, asegúrese de que finalice antes de avanzar al paso siguiente. Vaya a Configuración > Trabajos del sistema y compruebe que el flujo de trabajo se realizó correctamente.
@@ -141,7 +141,7 @@ Esto eliminará la copia del flujo de trabajo que se creó.
 
     ![Adjuntar Visual Studio para procesar diálogo](media/visual-studio-attach-to-process-dialog.png)
 
-1. Haga clic en **Adjunatr** para adjuntar su depurador Visual Studio a la aplicación de PRT que ejecutará la reproducción de proceso.
+1. Haga clic en **Adjuntar** para adjuntar su depurador Visual Studio a la aplicación de PRT que ejecutará la reproducción de proceso.
 1. En el diálogo **Reproducir ejecución de complementos** de PRT, haga clic en el botón **Iniciar la ejecución**.
 
 Debe ahora poder repasar el código y depurar la actividad de flujo de trabajo mediante Visual Studio.

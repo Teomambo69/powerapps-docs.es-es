@@ -1,11 +1,27 @@
+---
+title: Tipos  | Microsoft Docs
+description: null
+keywords: null
+ms.author: nabuthuk
+manager: kvivek
+ms.date: 04/23/2019
+ms.service: powerapps
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: 87f5e921-4114-4710-a362-db741426a69b
+---
+
 # <a name="types-element"></a>elemento de tipos
 
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |--|--|
-|[propiedad](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|
+|[property](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|
 
 ## <a name="child-elements"></a>Elementos secundarios
 

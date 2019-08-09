@@ -1,5 +1,5 @@
 ---
-title: Usar webhooks para crear los controladores externos para eventos de servidor (Common Data Service) | Microsoft Docs
+title: Uso de WebHooks para crear controladores externos para eventos de servidor (Common Data Service) | Microsoft Docs
 description: Puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Utilice webhooks para crear controladores externos para eventos de servidor
 
-Con Common Data Service, puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
+Con Common Data Service puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
 
 Los webhooks permiten a desarrolladores e ISV integrar datos de Customer Engagement en su propio código personalizado hospedado en servicios externos. Con el modelo de webhooks, puede proteger el extremo usando un encabezado de autenticación o claves de parámetro de string de consulta. Esto es más sencillo que el modelo de autenticación SAS que se puede usar actualmente para la integración de Azure Service Bus.
 
@@ -35,7 +35,7 @@ Cuando decida entre el modelo de webhook y la integración de Azure Service Bus,
 Existen tres partes para utilizar webhooks:
 
 - Crear o configurar un servicio para consumir solicitudes de webhook.
-- Registrar el paso de webhook en Common Data Service, o
+- Registrar paso de webhook en el servicio de Common Data Service o
 - Llamar un webhook desde un complemento o actividad personalizada de flujo de trabajo. 
 
 ### <a name="start-by-registering-a-test-webhook"></a>Empezar registrando un webhook de prueba
@@ -87,6 +87,9 @@ En la siguiente tabla aparecen otros datos que es posible que encuentre transmit
 El cuerpo contendrá una cadena que representa el valor JSON de una instancia de la clase <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext>. Estos son los mismos datos que se transmiten a las integraciones de bus del servicio de Azure. 
 
 El servicio que cree debe analizar estos datos para extraer los elementos relevantes de información para que su servicio proporcione su función. Cómo decidir analizar estos datos depende de la tecnología que utilice y de sus preferencias.
+
+> [!IMPORTANT]
+> Debido a determinadas optimizaciones del bus de servicio, no se recomienda que los desarrolladores de .NET deserialicen el cuerpo de solicitud del mensaje con formato JSON a un objeto <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext>. En su lugar, use [JObject](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) para analizar el cuerpo del mensaje.
 
 El siguiente es un ejemplo de los datos JSON serializados transmitidos para un paso registrado con las propiedades siguientes:
 
@@ -360,7 +363,7 @@ Si su webhook se registra para ejecutarse de forma asincrónica, puede examinar 
 
 [Escribir un complemento](write-plug-in.md)<br />
 [Registro de un complemento](register-plug-in.md)<br />
-[Servicio asincrónico de Common Data Service](asynchronous-service.md)<br />
+[Servicio asincrónico en Common Data Service](asynchronous-service.md)<br />
 [Ejemplo: complemento personalizado con Azure](/org-service/samples/azure-aware-custom-plugin.md)<br />
 [Ejemplo: actividad personalizada de flujo de trabajo basada en Azure](org-service/samples/azure-aware-custom-workflow-activity.md)<br />
 [Funciones de Azure](https://azure.microsoft.com/services/functions/)<br />

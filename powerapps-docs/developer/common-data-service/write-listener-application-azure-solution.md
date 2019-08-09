@@ -1,10 +1,9 @@
 ---
 title: Escribir una aplicación de escucha para una solución de Microsoft Azure (Common Data Service) | Microsoft Docs
-description: El tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service de Dynamics 365 (online) que se publican para Azure Service Bus.
+description: El tema describe cómo escribir un aplicación de escucha de la solución de Azure que pueda leer y procesar los mensajes de Dynamics 365 (online) Common Data Service que se publican en el Azure Service Bus.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,9 +21,7 @@ search.app:
 
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Escriba una aplicación de escucha para una solución de Azure
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
-
-Este tema describe cómo escribir una aplicación de escucha para un solución de Azure que pueda leer y procesar mensajes de Common Data Service de Dynamics 365 (online) que se publican para Azure Service Bus. Como requisito previo, debería familiarizarse con la manera de escribir un escucha de Azure Service Bus antes de intentar comprender los detalles de un escucha de Dynamics 365. Para obtener más información, consulte la [Documentación del bus de servicio de Azure](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
+Este tema describe cómo escribir un aplicación de escucha de la solución de Azure que pueda leer y procesar los mensajes de Dynamics 365 (online) Common Data Service que se publican en el Azure Service Bus. Como requisito previo, debería familiarizarse con la manera de escribir un escucha de Azure Service Bus antes de intentar comprender los detalles de un escucha de Dynamics 365. Para obtener más información, consulte la [Documentación del bus de servicio de Azure](https://azure.microsoft.com/documentation/services/service-bus/).  
   
 <a name="bkmk_writequeued"></a>
 
@@ -35,14 +32,14 @@ Una *cola* de mensajes es un repositorio de mensajes recibidos de un extremo de 
 > [!IMPORTANT]
 >  Al escribir un escucha de cola, compruebe cada acción del encabezado del mensaje para determinar si el mensaje se originó desde Dynamics 365. Para más información sobre cómo hacer esto, consulte [Filtro de mensajes](write-listener-application-azure-solution.md#filter).  
   
-Puede hacer una lectura destructiva del mensaje usando [Recibir](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) en modo [ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode), donde el mensaje se lee y se quita de la cola, o una lectura no destructiva con el modo [PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode), donde el mensaje se lee, pero se mantiene en la cola. El código de ejemplo persistente de escucha de cola proporcionado en este SDK realiza una lectura destructiva. Para obtener más información acerca de la lectura de mensajes desde una cola, consulte [Cómo recibir mensajes de una cola](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue).  
+Puede hacer una lectura destructiva del mensaje usando [Recibir](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) en modo [ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode), donde el mensaje se lee y se quita de la cola, o una lectura no destructiva con el modo [PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode), donde el mensaje se lee, pero se mantiene en la cola. El código de ejemplo persistente de escucha de cola proporcionado en este SDK realiza una lectura destructiva. Para obtener más información acerca de la lectura de mensajes desde una cola, consulte [Cómo recibir mensajes de una cola](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue).  
   
 Un *tema* es similar a una cola, pero implementa un modelo de publicación o suscripción. Puede haber uno o varios escuchas suscritos al tema que reciben mensajes de su cola. Más información: [Colas, temas y suscripciones](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 > [!IMPORTANT]
->  Para usar estos contratos de cola o tema, debe escribir sus aplicaciones de escucha mediante [Azure SDK](http://azure.microsoft.com/downloads/archive-net-downloads/) versión 1.7 o superior.  
+>  Para usar estos contratos de cola o tema, debe escribir sus aplicaciones de escucha mediante [Azure SDK](https://azure.microsoft.com/downloads/archive-net-downloads/) versión 1.7 o superior.  
   
-El uso de colas y temas en el diseño de software multisistema puede dar lugar al desemparejamiento del sistema. Si la aplicación de escucha llega a estar no disponible, la entrega del mensaje de Dynamics 365 se realizará correctamente y la aplicación de escucha podrá seguir procesando el mensaje de la cola cuando vuelva a estar en línea. [!INCLUDEMás información: [Colas, temas y suscripciones](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+El uso de colas y temas en el diseño de software multisistema puede dar lugar al desemparejamiento del sistema. Si la aplicación de escucha llega a estar no disponible, la entrega del mensaje de Dynamics 365 se realizará correctamente y la aplicación de escucha podrá seguir procesando el mensaje de la cola cuando vuelva a estar en línea. Más información: [Colas, temas y suscripciones](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 
