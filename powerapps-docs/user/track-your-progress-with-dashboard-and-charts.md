@@ -28,7 +28,7 @@ ms.locfileid: "61552425"
 Los paneles toman una colección de datos de la aplicación y proporcionan información para mostrar indicadores clave de rendimiento (KPI) y otros datos importantes en gráficos y gráficos interactivos fáciles de leer. Los paneles están disponibles para todos los tipos de registros.
 
 > [!div class="mx-imgBorder"]
-> ![Panel] de (media/Dashboard.png "Panel") de 
+> ![Panel](media/Dashboard.png " de Panel") de 
 
 -  Para ver un diseño de panel diferente, seleccione la flecha hacia abajo situada junto al nombre del panel y, a continuación, seleccione el diseño que desee.
 -  Para elegir un panel predeterminado, abra el panel que desee y, a continuación, seleccione **establecer como predeterminado** en la parte superior de la pantalla.
