@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
-ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
+ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224650"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69529805"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -35,24 +35,24 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>MacOS |
+| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>macOS |
 | Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
-| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
-| Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
+| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>macOS |
+| Apple Safari (versión más reciente) |iOS 8 o posterior <br>macOS |
 
 ## <a name="supported-browsers-for-powerapps-studio"></a>Exploradores admitidos para PowerApps Studio
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
+| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>macOS |
 | Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
 
 ## <a name="request-limits"></a>Límites de solicitudes
 Estos límites se aplican a todas y cada una de las solicitudes de salida:
 
-| Nombre | Límite |
+| NOMBRE | Límite |
 | --- | --- |
 | Tiempo de espera |180 segundos |
 | Número de reintentos |4 |
@@ -70,7 +70,7 @@ Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de
 > [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
 
-| Región | IP de salida |
+| Área | IP de salida |
 | --- | --- |
 | Asia | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | Australia  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
@@ -92,18 +92,19 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Runtime de conectores/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener la información de usuario (por ejemplo, la foto del perfil) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener información de usuario (por ejemplo, la foto de perfil) |
 | gallery.azure.com |https |Aplicaciones de ejemplo y plantilla |
-| \*.azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
-| \*.powerapps.com |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| \*.azureedge.net |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | Create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
+| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. blob.core.windows.net |https | Almacenamiento de blobs |
+| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetría |
+| host | https | PowerApps Mobile
 
 > [!NOTE]
 > Si usa una VPN, se debe configurar para excluir localhost de la tunelización para PowerApps Mobile.
 
 ## <a name="size-limits"></a>Límites de tamaño
 
-Puede encontrar información sobre los límites de tamaño en texto, hipervínculos, imágenes y multimedia en [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).
+Puede encontrar información sobre los límites de tamaño en el texto, los hipervínculos, las imágenes y los elementos multimedia en los [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).
