@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 8/14/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 931efa2fcb2f30dcba7b1eef0118e734399e503e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
+ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61563303"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030558"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Experiencia de usuario mejorada con la interfaz unificada para aplicaciones controladas por modelos 
 
@@ -29,7 +29,7 @@ La interfaz unificada para aplicaciones controladas por modelos proporciona una 
 > [!div class="mx-imgBorder"]
 > La ![interfaz unificada se adapta a la pantalla](media/Reflow.png " La interfaz unificada se adapta a la pantalla")
 
-## <a name="navigation"></a>Explora
+## <a name="navigation"></a>Navegación
 
 Las opciones de menú permiten navegar rápidamente por las diferentes aplicaciones del sistema. Proporcionan acceso rápido a los registros vistos recientemente y a los favoritos anclados. 
 
@@ -53,5 +53,9 @@ La vista de escala de tiempo le ayuda a colaborar con su equipo mediante el segu
 ## <a name="business-process"></a>Proceso empresarial 
 El mecanismo de acoplamiento ha mejorado el flujo de procesos empresariales. Puede acoplar la fase de proceso empresarial en la pantalla para ayudarle a centrarse en la tarea a mano en el flujo del proceso empresarial. Esto es especialmente útil cuando la fase del proceso tiene pasos complejos para completar. Para obtener más información, vea [trabajar con procesos empresariales](work-with-business-processes.md).
 
-## <a name="accessibility"></a>Consejos
+## <a name="accessibility"></a>Accesibilidad
 La experiencia de accesibilidad mejorada le permite usar lectores de pantalla para traducir información en pantalla en sonido audible e imprimir en un lector de Braille para que más personas puedan usar la aplicación. Para obtener más información, vea [usar un lector de pantalla](screen-reader.md).
+
+##  <a name="unified-interface-community"></a>Comunidad de interfaz unificada
+
+Vaya al sitio de la [comunidad de interfaz unificada](https://community.dynamics.com/365/unified-interface/) para obtener ayuda con la planeación y ejecución de una transición fluida a la interfaz unificada y póngase en contacto con expertos y compañeros en blogs, seminarios web, vídeos, eventos, etc.
