@@ -677,6 +677,8 @@
                   href: ./canvas-apps/functions/function-form.md
                 - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Con
+                  href: ./canvas-apps/functions/function-with.md
                 - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Crear una aplicación en una solución
