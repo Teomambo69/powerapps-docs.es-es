@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
-ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
-ms.translationtype: HT
+ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961495"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530244"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -139,7 +139,7 @@ Las aplicaciones de lienzo de PowerApps se pueden compartir con los usuarios inv
 1. En Azure Active Directory (Azure AD), habilite la colaboración externa B2B para el inquilino. Más información: [Habilitar la colaboración externa B2B y administrar quién puede invitar a invitados](/azure/active-directory/b2b/delegate-invitations)
     - Habilitar la colaboración externa B2B está activada de forma predeterminada. Sin embargo, un administrador de inquilinos puede cambiar la configuración.  Para obtener más información acerca de Azure AD B2B, consulte [¿Qué es el acceso de usuarios invitados en Azure ad B2B?](/azure/active-directory/b2b/what-is-b2b)  
 2. Acceso a una cuenta que puede Agregar usuarios invitados a un inquilino de Azure AD. Los administradores y los usuarios con el rol de invitador invitado pueden agregar invitados a un inquilino.   
-3. Se debe asignar una licencia de PowerApps al usuario invitado en el inquilino al que está asociada la aplicación que se está compartiendo. Antes de la disponibilidad general del acceso de invitado de la aplicación Canvas, no es necesario asignar una licencia a los invitados con una licencia de PowerApps en su inquilino de inicio.
+3. Se debe asignar una licencia de PowerApps al usuario invitado en el inquilino al que está asociada la aplicación que se está compartiendo. Aunque aún no es posible, antes de la disponibilidad general del acceso de invitado de la aplicación de lienzo, no es necesario asignar una licencia a los invitados con una licencia de PowerApps en su inquilino de inicio en el inquilino en el que son invitados.
 
 ### <a name="steps-to-grant-guest-access"></a>Pasos para conceder acceso de invitado
 1. Seleccione **nuevo usuario invitado** para agregar usuarios invitados en Azure ad. Más información: [Inicio rápido: Agregue un nuevo usuario invitado en Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
