@@ -1009,7 +1009,7 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Creación de ayuda interactiva
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: Transición de aplicaciones de cliente web
+    - name: Transición a una interfaz unificada
       items:
         - name: Introducción rápida a transiciones
           href: ./model-driven-apps/transition-web-app.md
