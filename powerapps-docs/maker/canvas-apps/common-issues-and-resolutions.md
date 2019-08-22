@@ -1,42 +1,44 @@
 ---
 title: Problemas habituales de PowerApps y soluciones a los mismos | Microsoft Docs
 description: Lista de problemas y soluciones habituales de PowerApps.
-author: AFTOwen
+author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 11/09/2018
-ms.author: anneta
+ms.date: 08/21/2019
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551638"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896224"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 
 En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
 
-## <a name="added-after-february-2018"></a>Agregado después de febrero de 2018
+1. **Problema de inicio de sesión en determinados dispositivos móviles Android cuando se usa** el autenticador (21 de agosto de 2019)
 
-1. **Problema de la cámara en dispositivos móviles Android** (1 de enero de 2019)
+    En ciertos dispositivos y escenarios, puede experimentar errores de inicio de sesión al usar el autenticador. Esto se debe a que el OEM limita esta funcionalidad. Para obtener más información sobre el error y las posibles mitigaciones, vea [aquí](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
 
-    Si deja de funcionar en un dispositivo Android de control de la cámara, volver a publicar la aplicación y vuelva a abrirlo en el dispositivo. El control de cámara se actualizó en respuesta a un cambio en el sistema operativo Android, y la aplicación se beneficiará de la actualización cuando vuelve a publicar.
+1. **Problema de cámara en dispositivos móviles Android** (1 de enero de 2019)
 
-1. **Desplazamiento en las galerías de altura flexible** (27 de noviembre de 2018)
+    Si el control de cámara deja de funcionar en un dispositivo Android, vuelva a publicar la aplicación y vuelva a abrirla en el dispositivo. El control de cámara se actualizó en respuesta a un cambio en el sistema operativo Android y la aplicación se beneficiará de la actualización cuando vuelva a publicarla.
 
-    Si experimenta una limitación cuando se desplaza con el dedo, elevación y empiece a desplácese de nuevo.
+1. **Desplazamiento en galerías de alto flexible** (27 de noviembre de 2018)
 
-1. **Plano con el mouse o entrada táctil no está smooth en PowerApps para Windows** (Sep. 24, 2018)
+    Si tiene una limitación al desplazarse con el dedo, levante el dedo y empiece a desplazarse de nuevo.
 
-    El control de entrada manuscrita tiene solo parcial admite para dibujar el uso del mouse o entrada en la aplicación de Windows táctil. Trazos podrían ser intermitentes. Para dibujar smooth, usar un lápiz o ejecutar la aplicación en un explorador.
+1. **Dibujar con mouse o entrada táctil no es suave en PowerApps para Windows** Septiembre. 24, 2018)
+
+    El control Pen solo tiene compatibilidad parcial con el dibujo mediante el mouse o la entrada táctil en la aplicación de Windows. Los trazos pueden ser intermitentes. Para suavizar el dibujo, use un lápiz o ejecute la aplicación en un explorador.
 
 1. **Varios controles de medios en PowerApps Mobile** (2 de agosto de 2018)
 
@@ -51,7 +53,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. <a name="out-of-memory"></a>**Memoria insuficiente del explorador** (23 de julio de 2018)
 
-    Si se queda sin memoria al usar PowerApps, considere la posibilidad de descargar una versión de 64 bits de Internet Explorer, Microsoft Edge o Chrome.
+    Si se queda sin memoria mientras usa PowerApps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
 
 1. **Iniciar un sitio web desde una aplicación insertada** (10 de mayo de 2018)
 
@@ -72,8 +74,6 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 1. **Cambiar el diseño de los formularios de SharePoint** (7 de marzo de 2018)
 
     Al personalizar un formulario de lista de SharePoint en algunos idiomas, si se intenta cambiar el diseño de vertical (valor predeterminado) a horizontal, la aplicación puede mostrar varios errores (triángulos amarillos en controles). Para resolver estos errores y conservar el diseño horizontal, haga clic en **Deshacer**.
-
-## <a name="added-in-or-before-february-2018"></a>Agregado en febrero de 2018 o antes
 
 1. **Control Data Table**
 
@@ -105,7 +105,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Nombres de columna con espacios**
 
-    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, PowerApps lo reemplazará por **"\_x0020\_"**. Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, PowerApps lo reemplazará por **"\_x0020\_"** . Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 1. **Cambio de un flujo en una aplicación compartida**
 
@@ -185,4 +185,4 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **La galería de tarjetas está en desuso**.
 
-     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)**.
+     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)** .
