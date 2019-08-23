@@ -1,5 +1,5 @@
 ---
-title: Agregue un rol de conexión a para vincular registros entre sí | MicrosoftDocs
+title: Agregar un rol de conexión para vincular registros entre sí | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,14 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c606a7b809f1684cbe60b5e53e4b291f11b1d164
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: d824e76f6ffd5cc72f2f030f7009d3f4a140bf8a
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68786910"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896257"
 ---
-# <a name="add-a-connection-role-to-to-link-records-to-each-other"></a>Agregue un rol de conexión a para vincular registros entre sí |
+# <a name="add-a-connection-role-to-link-records-to-each-other"></a>Agregar un rol de conexión para vincular registros entre sí
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
