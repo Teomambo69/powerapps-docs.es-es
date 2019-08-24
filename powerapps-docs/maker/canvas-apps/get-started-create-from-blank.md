@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555498"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000096"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Creación de una aplicación de lienzo desde cero a partir de datos de Excel
 
@@ -31,7 +30,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
 1. Copie estos datos y péguelos en un archivo de Excel.
 
-    | StartDay | StartTime | Volunteer | Backup |
+    | StartDay | StartTime | Volunteer | Copia de seguridad |
     | --- | --- | --- | --- |
     | Sábado |10 a.m. a mediodía |Vasquez |Kumashiro |
     | Sábado |mediodía a 2 p.m. |Ice |Singhal |
@@ -44,7 +43,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
 
-3. Guarde el archivo con el nombre **eventsignup.xls**, ciérrelo y, a continuación, cárguelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
+3. Guarde el archivo con el nombre **eventsignup. xlsx**, ciérrelo y, a continuación, cárguelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
 
 > [!IMPORTANT]
 > Para conocer los conceptos generales, puede utilizar su propio archivo de Excel y seguir este tutorial. No obstante, los datos del archivo de Excel deben tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
@@ -112,17 +111,17 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     La fórmula coincide con la de este ejemplo:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -130,7 +129,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
 1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione **Editar**, junto a la etiqueta **Campos**.
 
-1. En el cuadro **Title2**, seleccione **Volunteer**.
+1. En el cuadro **Title2** , seleccione **voluntarios**, en el cuadro **Subtitle2** , seleccione **StartDay**y, en el cuadro **cuerpo1** , seleccione **startTime**.
 
 1. Cierre el panel **Datos** mediante el icono de cierre (X) que encontrará en la esquina superior derecha.
 
@@ -197,7 +196,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, aparece la pantalla **ChangeScreen** con los campos vacíos, de forma que el usuario puede crear un registro más fácilmente.
 
@@ -207,7 +206,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la flecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, **ChangeScreen** aparece con cada campo que muestra los datos para el registro seleccionado, por lo que el usuario puede editar o eliminar el registro más fácilmente.
 
@@ -219,7 +218,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se descartan y se abre la pantalla de vista.
 
@@ -229,7 +228,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se guardan y se abre la pantalla de vista.
 
@@ -247,7 +246,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para el icono de papelera en esta fórmula:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, el registro seleccionado se elimina del origen de datos y se abre la pantalla de vista.
 
