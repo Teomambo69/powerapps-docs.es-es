@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 471fa26b8eb36a26bd90eeab8df018ba6ca9349c
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: fce0148e77432aa136a6279eb7fb69c0ca3b0846
+ms.sourcegitcommit: de77b6d5f77e84961fff9a399622ba8eeb48d4c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70010064"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70037063"
 ---
 # <a name="setfocus-function-in-powerapps"></a>Función SetFocus en PowerApps
 Mueve el foco de entrada a un control concreto. 
 
 ## <a name="description"></a>DESCRIPCIÓN
-La función **SetFocus** proporciona a un control el foco de entrada.  El control recibe las pulsaciones de teclas del usuario, lo que les permite escribir en un control entrada de texto o usar la tecla *entrar* para seleccionar un botón.  El usuario también puede usar la tecla *Tab* , tocar, Mouse u otro gesto para desplazar el foco de entrada. 
+La función **SetFocus** proporciona a un control el foco de entrada.  El control recibe las pulsaciones de teclas del usuario, lo que les permite escribir en un control entrada de texto o usar la tecla *entrar* para seleccionar un botón.  El usuario también puede usar la tecla *Tab* , tocar, Mouse u otro gesto para desplazar el foco de entrada. El comportamiento de la tecla *Tab* se rige por la [propiedad **TabIndex** ](../controls/properties-accessibility.md).
 
 Utilice la función **SetFocus** para establecer el foco cuando (cada uno de ellos tiene un ejemplo a continuación):
 - control de entrada recién expuesto o habilitado, para guiar al usuario en lo que viene después y para una entrada de datos más rápida.
@@ -112,10 +112,10 @@ If( IsBlank( Name ),
         Notify( "City requires a value", Error ); SetFocus( City ),
     IsBlank( County ), 
         Notify( "County requires a value", Error ); SetFocus( County ),
-    IsBlank( AddressState ), 
-        Notify( "State requires a value", Error ); SetFocus( AddressState ),
-    IsBlank( Zip ), 
-        Notify( "Zip requires a value", Error ); SetFocus( Zip ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
     IsBlank( Phone ), 
         Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
     Notify( "Form is Complete", Success )
@@ -125,9 +125,9 @@ If( IsBlank( Name ),
 Para crear este ejemplo:
 1. Cree una nueva aplicación de teléfono en blanco.
 1. En el menú **Insertar** , seleccione **nueva pantalla**y, a continuación, seleccione desplazable.
-1. En la sección central de la pantalla, agregue controles de **entrada de texto** y asígnele el nombre **Name**, **Street1**, **calle2**, **City**, **County**, **AddressState** (ya que el nombre **State** ya se usa), **zip**, y **teléfono**. Agregue controles de **etiqueta** por encima de cada uno de ellos para identificar los campos.  Es posible que tenga que cambiar el tamaño de la sección si no es lo suficientemente larga como para ajustarse a todos los controles.
+1. En la sección central de la pantalla, agregue controles de **entrada de texto** yasígneles un nombre, **Street1**, **calle2**, **City**, **County**, **StateProvince**, PostalCode y **teléfono**. Agregue controles de **etiqueta** por encima de cada uno de ellos para identificar los campos.  Es posible que tenga que cambiar el tamaño de la sección si no es lo suficientemente larga como para ajustarse a todos los controles.
 1. Agregue un control [ **icono** ](../controls/control-shapes-icons.md) de marca de verificación en la parte superior de la pantalla, encima de la sección desplazable.  
-1. Establezca la propiedad alseleccionar del control de icono en la fórmula anterior.
+1. Establezca la propiedad alseleccionar del control de icono en la fórmula `If( IsBlank( ...` indicada anteriormente.
 
 ### <a name="focus-when-displaying-a-screen"></a>Foco al mostrar una pantalla
 
