@@ -8,63 +8,57 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.component: canvas
-ms.date: 07/24/2017
+ms.date: 08/27/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fec70eae81568cf2360c3413d878301b3c0dcf0b
+ms.sourcegitcommit: 06612108755d386b9df41bd6f45157e94e929511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563921"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064882"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Funciones Blank, Coalesce, IsBlank e IsEmpty en PowerApps
 Comprueba si un valor está en blanco o una [tabla](../working-with-tables.md) no contiene [registros](../working-with-tables.md#records), y proporciona una manera de crear valores *blank*.
 
 ## <a name="overview"></a>Información general
-*Blank* es un marcador de posición para "sin valor" o "valor desconocido". Un control **[Entrada de texto](../controls/control-text-input.md)** es *blank* si el usuario no ha escrito en él ningún carácter. El mismo control ya no es *blank* tan pronto como el usuario escribe un carácter en él.  Algunos orígenes de datos pueden almacenar y devolver valores NULL, que se representan en PowerApps como *blank*.
+*Blank* es un marcador de posición para "sin valor" o "valor desconocido".  Por ejemplo, la propiedad **seleccionada** de un control de **[cuadro combinado](../controls/control-combo-box.md)** está *en blanco* si el usuario no ha realizado una selección. Muchos orígenes de datos pueden almacenar y devolver valores NULL, que se representan en PowerApps como *en blanco*.
+
+Cualquier propiedad o valor calculado en PowerApps puede estar *en blanco*.  Por ejemplo, un valor booleano normalmente tiene uno de dos valores: **true** o **false**.  Pero además de estos dos, también puede estar *en blanco* , lo que indica que no se conoce el estado.  Esto es similar a Microsoft Excel, donde una celda de hoja de cálculo empieza en blanco sin contenido, pero puede contener los valores **true** o **false** (entre otros). En cualquier momento, se puede volver a borrar el contenido de la celda y devolverlo a un estado *en blanco* .
+
+Una *cadena vacía* hace referencia a una cadena que no contiene ningún carácter.  La [función **Len** ](function-len.md) devuelve cero para este tipo de cadena y se puede escribir en una fórmula como dos comillas dobles sin nada entre `""`ellas.  Algunos controles y orígenes de datos usan una cadena vacía para indicar una condición de "sin valor".  Para simplificar la creación de aplicaciones, las funciones esblanco y **Coalesce** comprueban si hay valores *en blanco* o cadenas vacías.    
+
+En el contexto de la función **IsEmpty** , *Empty* es específico de las tablas que no contienen registros. La estructura de tabla puede estar intacta, con nombres de [columna](../working-with-tables.md#columns), pero ningún dato en la tabla. Una tabla puede comenzar como vacía, obtener registros y ya no estar vacía y luego quitarse los registros y estar de nuevo vacía.
 
 > [!NOTE]
-> Actualmente, solo se admite el almacenamiento de valores *blank* en las colecciones locales. Sabemos que muchos orígenes de datos admiten valores *blank* (NULL) y estamos trabajando para superar esta limitación.
+> Estamos en un período de transición.  Hasta ahora, el *espacio en blanco* también se ha utilizado para notificar los errores, lo que impide que se diferencie un "valor" no válido de un error.  Por esta razón, en este momento, solo se admite el almacenamiento de valores *en blanco* para las colecciones locales.  Puede almacenar valores en *blanco* en otros orígenes de datos si activa la característica experimental "administración de errores de nivel de fórmulas" en el menú Archivo, configuración de la aplicación, configuración avanzada, características experimentales.  Estamos trabajando activamente para finalizar esta característica y completar la separación adecuada de los valores *en blanco* de los errores.
 
-Cualquier propiedad o valor calculado puede estar *blank*.  Por ejemplo, un valor booleano normalmente tiene uno de dos valores: **true** o **false**.  Pero además de estos dos, también puede estar *blank*.  Esto es similar a Microsoft Excel, donde una celda de la hoja de cálculo empieza como en blanco pero puede contener los valores **TRUE** o **FALSE**, entre otros. En cualquier momento, se puede quitar el contenido de la celda y volvería a un estado *blank*.
-
-El término *vacío* es específico de tablas que no contienen registros. La estructura de tabla puede estar intacta, con nombres de [columna](../working-with-tables.md#columns), pero ningún dato en la tabla. Una tabla puede comenzar como vacía, obtener registros y ya no estar vacía y luego quitarse los registros y estar de nuevo vacía.
-
-## <a name="description"></a>Descripción
+## <a name="description"></a>DESCRIPCIÓN
 La función **Blank** devuelve un valor *blank*. Use esta función para almacenar un valor NULL en un origen de datos que admita estos valores, de forma que se quiten en la práctica todos los valores del campo.
 
-La función **IsBlank** comprueba un valor *blank*. Los valores *en blanco* se encuentran en situaciones como las siguientes:
+La función esblanco comprueba un valor *en blanco* o una cadena vacía.  La prueba incluye cadenas vacías para facilitar la creación de aplicaciones, ya que algunos orígenes de datos y controles usan una cadena vacía cuando no hay ningún valor.  Para probar específicamente si hay un valor *en blanco* , utilice `if( Value = Blank(), ...` en lugar de esblanco.
 
-* El valor devuelto por la función **Blank**.
-* Una propiedad de control no tiene ninguna fórmula establecida para ella.
-* No se escribe ningún valor en un control de entrada de texto ni se realiza ninguna selección en un cuadro de lista. Puede usar **IsBlank** para proporcionar comentarios de que un campo es obligatorio.
-* Una cadena que no contiene ningún carácter tiene un valor de **[Len](function-len.md)** de 0.
-* Se producido un error en una función. Con frecuencia, uno de los argumentos para la función no era válido. Muchas funciones devuelven *blank* si el valor de un argumento es *blank*.
-* Los [orígenes de datos conectados](../working-with-data-sources.md), como SQL Server, pueden usar valores "null". Estos valores aparecen como *blank* en PowerApps.
-* La parte *else* de una función **[If](function-if.md)** no se especificó y todas las condiciones fueron **false**.
-* Usó la función **[Update](function-update-updateif.md)** pero no especificó un valor para todas las columnas. Como resultado, no se colocó ningún valor en las columnas que no especificó.
+La función **Coalesce** evalúa sus argumentos en orden y devuelve el primer valor que no está *en blanco* ni una cadena vacía.  Utilice esta función para reemplazar un valor *en blanco* o una cadena vacía con un valor diferente, pero sin modificar los valores de cadena que no estén*en blanco* y que no estén vacíos.  Si todos los argumentos están *en blanco* o cadenas vacías, la función devuelve un valor *en*blanco, lo que permite que la **combinación** sea una buena manera de convertir cadenas vacías en valores *en blanco* .  Todos los argumentos de **Coalesce** debe ser del mismo tipo; por ejemplo, no puede combinar números con cadenas de texto.  
 
-La función **Coalesce** evalúa sus argumentos en orden y devuelve el primer valor que no sea *blank*.  Utilice esta función para reemplazar un valor *blank* por un valor diferente, sin cambiar los valores que no son *blank*.  Si todos los argumentos son *blank*, la función devuelve *blank*.  Todos los argumentos de **Coalesce** debe ser del mismo tipo; por ejemplo, no puede combinar números con cadenas de texto.  **Coalesce( value1; value2 )** es el equivalente más conciso de **If( Not( IsBlank( value1 ) ); value1; value2 )** y no requiere que **value1** se evalúe dos veces.  
+`Coalesce( value1, value2 )`es el equivalente más conciso de `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` y no requiere que **value1** y **value2** se evalúen dos veces.  La [función **If** ](function-if.md) devuelve un valor *en blanco* si no hay ninguna fórmula "Else", como es el caso.
 
-La función **IsEmpty** comprueba si una tabla contiene registros. Es equivalente a usar la función **[CountRows](function-table-counts.md)** y la comprobación de cero. Puede usar **IsEmpty** para comprobar errores de origen de datos en combinación con la función **[Errors](function-errors.md)**.
+La función **IsEmpty** comprueba si una tabla contiene registros. Es equivalente a usar la función **[CountRows](function-table-counts.md)** y la comprobación de cero. Puede usar **IsEmpty** para comprobar errores de origen de datos en combinación con la función **[Errors](function-errors.md)** .
 
 El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o **false**.
 
 ## <a name="syntax"></a>Sintaxis
 **Blank**()
 
-**Coalesce**( *Valor1* [; *Valor2*; ... ] )
+**Coalesce**( *Valor1* [, *Valor2*, ... ] )
 
-* *Valores*: requerido. Valores que se van a comprobar.  Cada valor se evalúa en orden hasta que se encuentra un valor que no es *blank*.  Los valores situados después del primer valor no *blank* no se evalúan.  
+* *Valores*: requerido. Valores que se van a comprobar.  Cada valor se evalúa en orden hasta que se encuentra un valor que no está *en blanco* y no es una cadena vacía.  Los valores después de este punto no se evalúan.  
 
 **IsBlank**( *Value* )
 
-* *Value*: requerido. Valor que se va a probar.
+* *Value*: requerido. Valor que se va a comprobar para un valor *en blanco* o una cadena vacía.
 
 **IsEmpty**( *Table* )
 
@@ -73,12 +67,14 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 ## <a name="examples"></a>Ejemplos
 ### <a name="blank"></a>En blanco
 > [!NOTE]
-> Actualmente, el siguiente ejemplo solo funciona en colecciones locales.  Sabemos que muchos orígenes de datos admiten valores *blank* (NULL) y estamos trabajando para superar esta limitación.
+> Actualmente, el siguiente ejemplo solo funciona en colecciones locales.  Puede almacenar valores en *blanco* en otros orígenes de datos si activa la característica experimental "administración de errores de nivel de fórmulas" en el menú Archivo, configuración de la aplicación, configuración avanzada, características experimentales.  Estamos trabajando activamente para finalizar esta característica y completar la separación de los valores *en blanco* de los errores.
 
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **ClearCollect (ciudades; {nombre: "Seattle"; tiempo: "Lluvioso"})**
+    ```powerapps-dot
+    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
+    ```
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 4. En el menú **Archivo**, haga clic o pulse en **Colecciones**.
 
@@ -88,12 +84,16 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 5. Haga clic o pulse en la flecha Atrás para volver al área de trabajo predeterminada.
 6. Agregue un control **Label** y establezca su propiedad **Text** en esta fórmula:
 
-    **IsBlank( First( Cities ).Weather )**
+    ```powerapps-dot
+    IsBlank( First( Cities ).Weather )
+    ```
 
     La etiqueta muestra **false** porque el campo **Weather** contiene un valor ("Rainy").
 7. Agregue un segundo botón y establezca su propiedad **OnSelect** en esta fórmula:
 
-    **Revisión (ciudades; primero (ciudades); {meteorológico: Blank() } )**
+    ```powerapps-dot
+    Patch( Cities, First( Cities ), { Weather: Blank() } )
+    ```
 8. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     El campo **Weather** del primer registro de **Cities** se sustituye por un valor *blank*, de forma que se reemplaza el valor inicial "Rainy" que estaba ahí anteriormente.
@@ -106,19 +106,23 @@ El valor devuelto para **IsBlank** e **IsEmpty** es un valor booleano **true** o
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Coalesce( Blank(); 1 )** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. Como el primer argumento es *blank*, la evaluación continúa con el argumento siguiente hasta que se encuentra un valor no *blank*. |**1** |
-| **Coalesce( Blank(); Blank(); Blank(); Blank(); 2; 3 )** |**Coalesce** comienza al principio de la lista de argumentos y evalúa cada uno de ellos por orden hasta que encuentra un valor que no sea *blank*.  En este caso, los cuatro primeros argumentos devuelven *blank*, por lo que la evaluación continúa con el quinto argumento. El quinto argumento no es *blank*, por lo que la evaluación se detiene ahí. Se devuelve el valor del quinto argumento y no se evalúa el sexto argumento. |**2** |
+| **Coalesce (&nbsp;Blank (),&nbsp;1&nbsp;)** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. Dado que el primer argumento está *en blanco*, la evaluación continúa con el argumento siguiente hasta que se encuentre un valor que no esté*en blanco* y una cadena que no esté vacía. |**1** |
+| **Coalesce ("", 2)** |Comprueba el primer argumento, que es una cadena vacía. Dado que el primer argumento es una cadena vacía, la evaluación continúa con el argumento siguiente hasta que se encuentre un valor que no esté*en blanco* y una cadena que no esté vacía. |**2** |
+| **Coalesce (Blank (), "", Blank (), "", 3, 4)** |**Coalesce** comienza al principio de la lista de argumentos y evalúa cada argumento a su vez hasta que se encuentra un valor que no está*en blanco* y una cadena no vacía.  En este caso, los cuatro primeros argumentos devuelven un valor *en blanco* o una cadena vacía, por lo que la evaluación continúa hasta el quinto argumento. El quinto argumento es una cadena que no está*en blanco* y no está vacía, por lo que la evaluación se detiene aquí. Se devuelve el valor del quinto argumento y no se evalúa el sexto argumento. |**3** |
+| **Coalesce ("")** | Comprueba el primer argumento, que es una cadena vacía. Dado que el primer argumento es una cadena vacía y no hay más argumentos, la función devuelve *Blank*.   |*blank* |
 
 ### <a name="isblank"></a>IsBlank
 1. Cree una aplicación desde el principio, agregue un control de entrada de texto y llámelo **FirstName**.
 2. Agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
 
-    **If( IsBlank( FirstName.Text ); "First Name is a required field." )**
+    ```powerapps-dot
+    If( IsBlank( FirstName.Text ), "First Name is a required field." )
+    ```
 
-    De forma predeterminada, la propiedad **[Text](../controls/properties-core.md)** de un control de entrada de texto se establece en **"Entrada de texto"**. Como la propiedad contiene un valor, no está en blanco, y la etiqueta no muestra ningún mensaje.
+    De forma predeterminada, la propiedad **[Text](../controls/properties-core.md)** de un control de entrada de texto se establece en **"Entrada de texto"** . Como la propiedad contiene un valor, no está en blanco, y la etiqueta no muestra ningún mensaje.
 3. Quite todos los caracteres del control de entrada de texto, espacios incluidos.
 
-    Como la propiedad **[Text](../controls/properties-core.md)** ya no contiene ningún carácter, es *blank* y **IsBlank( FirstName.Text )** será **true**. Se muestra el mensaje de campo requerido.
+    Dado que la propiedad **[Text](../controls/properties-core.md)** ya no contiene ningún carácter, es una cadena vacía y **esblanco (FirstName. Text)** será **true**. Se muestra el mensaje de campo requerido.
 
 Para más información sobre cómo realizar la validación mediante otras herramientas, consulte la función **[Validate](function-validate.md)** y el [uso de orígenes de datos](../working-with-data-sources.md).  
 
@@ -126,18 +130,18 @@ Otros ejemplos:
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **IsBlank( Blank() )** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. |**true** |
+| **Esblanco&nbsp;(en blanco&nbsp;())** |Comprueba el valor devuelto por la función **Blank**, que siempre devuelve un valor *blank*. |**true** |
 | **IsBlank( "" )** |Una cadena que no contiene ningún carácter. |**true** |
 | **IsBlank( "Hello" )** |Una cadena que contiene uno o más caracteres. |**false** |
 | **IsBlank( *AnyCollection* )** |Como la [colección](../working-with-data-sources.md#collections) existe, no está en blanco, incluso si no contiene ningún registro. Para comprobar si existe una colección vacía, use **IsEmpty** en su lugar. |**false** |
-| **IsBlank( Mid( "Hello"; 17; 2 ) )** |El carácter inicial de **[Mid](function-left-mid-right.md)** está más allá del final de la cadena.  El resultado es una cadena vacía. |**true** |
-| **IsBlank( If( false; false ) )** |Una función **[If](function-if.md)** sin *ElseResult*.  Como la condición es siempre **false**, esta función **[If](function-if.md)** siempre devuelve *blank*. |**true** |
+| **IsBlank( Mid( "Hello", 17, 2 ) )** |El carácter inicial de **[Mid](function-left-mid-right.md)** está más allá del final de la cadena.  El resultado es una cadena vacía. |**true** |
+| **IsBlank( If( false, false ) )** |Una función **[If](function-if.md)** sin *ElseResult*.  Como la condición es siempre **false**, esta función **[If](function-if.md)** siempre devuelve *blank*. |**true** |
 
 ### <a name="isempty"></a>IsEmpty
 1. Cree una aplicación desde el principio y agregue un control **Botón**.
 2. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón en esta fórmula:
 
-    **Collect( IceCream; { Flavor: "Fresa"; cantidad: 300 }; { Flavor: "Chocolate"; cantidad: 100 } )**
+    **Collect (IceCream, {Flavor: "Fresa", cantidad: 300}, {Flavor: "Chocolate", cantidad: 100})**
 3. Obtenga una vista previa de la aplicación, haga clic o pulse en el botón que agregó y luego cierre la vista previa.  
 
     Se crea una colección denominada **IceCream** con estos datos:
@@ -160,7 +164,7 @@ También puede usar **IsEmpty** para comprobar si una tabla calculada está vac�
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **IsEmpty( [&nbsp;1;&nbsp;2;&nbsp;3 ] )** |La tabla de una columna contiene tres registros y, por lo tanto, no está vacía. |**false** |
+| **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |La tabla de una columna contiene tres registros y, por lo tanto, no está vacía. |**false** |
 | **IsEmpty( [&nbsp;] )** |La tabla de una columna no contiene registros y está vacía. |**true** |
-| **IsEmpty( Filter( [&nbsp;1;&nbsp;2;&nbsp;3&nbsp;]; Value > 5 ) )** |La tabla de una columna no contiene valores que sean mayores que 5.  El resultado del filtro no contiene ningún registro y está vacío. |**true** |
+| **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** |La tabla de una columna no contiene valores que sean mayores que 5.  El resultado del filtro no contiene ningún registro y está vacío. |**true** |
 
