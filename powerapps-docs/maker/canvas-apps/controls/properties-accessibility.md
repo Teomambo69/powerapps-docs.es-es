@@ -1,6 +1,6 @@
 ---
-title: Propiedades de accesibilidad para las aplicaciones de lienzo | Microsoft Docs
-description: Información de referencia sobre las propiedades como TabIndex y Tooltip
+title: Propiedades de accesibilidad de las aplicaciones de Canvas | Microsoft Docs
+description: Información de referencia sobre propiedades como TabIndex e ToolTip
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,33 +13,63 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5fa8b6fecdf690114cbf6a0945f2dfec66b067c3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: e1baf96ab96dc6fe783fccdf243c0ae4ba6d0c1d
+ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560424"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70161239"
 ---
-# <a name="accessibility-properties-for-canvas-apps"></a>Propiedades de accesibilidad para las aplicaciones de lienzo
+# <a name="accessibility-properties-for-canvas-apps"></a>Propiedades de accesibilidad de las aplicaciones de Canvas
 
 Configuración de propiedades que contribuyen a formas alternativas de interacción con los controles adecuadas para los usuarios con discapacidades.
 
-## <a name="properties"></a>Propiedades
+## <a name="properties"></a>Properties (Propiedades)
 
 **AccessibleLabel**: etiqueta para lectores de pantalla. Un valor vacío para los controles Imagen, Icono y Forma hará que el lector de pantalla no los vea y los trate como adornos.
 
-**Live** : cómo los lectores de pantalla deben anunciar los cambios al contenido. Disponible solo en el **[etiqueta](control-text-box.md)** control.
+En **directo** : cómo los lectores de pantalla deben anunciar cambios en el contenido. Solo está disponible en el control **[etiqueta](control-text-box.md)** .
 
-* Cuando se establece en **desactivar**, el lector de pantalla no anuncia los cambios.
-* Cuando se establece en **educados**, el lector de pantalla finalice antes de anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando en términos.
-* Cuando se establece en **Assertive**, interrumpe el lector de pantalla para anunciar los cambios que se produjeron mientras el lector de pantalla ha estado hablando.
+* Cuando se establece en **OFF**, el lector de pantalla no anuncia cambios.
+* Cuando se estableceen educado, el lector de pantalla termina de hablar antes de anunciar los cambios que se produjeron mientras estaba hablando el lector de pantalla.
+* Cuando se establece en **assertive**, el lector de pantalla se interrumpe para anunciar los cambios que se produjeron mientras estaba hablando el lector de pantalla.
 
-Obtenga información sobre cómo [anunciar cambios dinámicos con las regiones activas](../accessible-apps-live-regions.md).
+Obtenga información sobre cómo [anunciar cambios dinámicos con regiones activas](../accessible-apps-live-regions.md).
 
-**TabIndex**: orden de navegación del teclado en relación con otros controles.
+**TabIndex** : determina si el control participa en la navegación con el teclado.
 
-El valor predeterminado cero especifica el orden de tabulación predeterminado, en función de la coordenada XY del control.  Establecer un valor mayor que cero moverá el orden de tabulación del control por delante de todos los controles con los valores predeterminados.  Un control con un valor TabIndex de 2 estará precedido por uno con un valor TabIndex de 3 o superior cuando se aplique la tabulación.
+La navegación mediante el teclado es un aspecto importante de cualquier aplicación.  Para muchos, el teclado es más eficaz que usar la función táctil o un mouse y permite que los lectores de pantalla tengan discapacidades visuales.  El orden de navegación debe:
+- Reflejar lo que se verá visualmente.
+- Solo tiene una tabulación en los controles que son interactivos.
+- Siga un orden intuitivo y luego hacia abajo "Z" o hacia abajo y después por orden "inverso-N".
 
-Tenga en cuenta que los contenedores como los controles Form y Gallery siempre tabularán todos los elementos del contenedor antes de continuar con los controles fuera del contenedor.  El orden de tabulación del contenedor es el valor más bajo de TabIndex de un control secundario.
+Los requisitos anteriores se cumplirán con los valores de **TabIndex** predeterminados y se recomienda que no los cambie.  El valor predeterminado es lo que la mayoría de los usuarios esperan visualmente y funcionará bien con un lector de pantalla.  Sin embargo, puede haber casos en los que desee invalidar el valor predeterminado.  Use la propiedad **TabIndex** y el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para realizar ajustes en el orden de navegación.  
 
-Si se establece TabIndex en -1, se deshabilitará el acceso mediante tabulación al control; en el caso de los controles Imágenes, Iconos y Formas, se convertirán en elementos no interactivos.
+La propiedad **TabIndex** tiene dos valores recomendados:
+
+| Valor de TabIndex | Comportamiento | Valor predeterminado para |
+|----------------|----------|-------------|
+| 0 | El control participa en la navegación con el teclado. | [**Botón**](control-button.md), [**entrada de texto**](control-text-input.md), [**cuadro combinado**](control-combo-box.md)y otros controles normalmente interactivos. |
+| &minus;dimensional | El control no participa en la navegación con el teclado. | [**Etiqueta**](control-text-box.md), [**imagen**](control-image.md), [**icono**](control-shapes-icons.md)y otros controles que normalmente no son interactivos. |
+
+Generalmente, el orden de navegación va de izquierda a derecha y de arriba abajo, en un patrón "Z". El orden se basa en los valores de las propiedades **X** e y de los controles. Si los controles se mueven dinámicamente en la pantalla (por ejemplo, al tener una fórmula para **X** o **Y** basada en un temporizador u otro control), el orden de navegación también cambiará dinámicamente.
+
+Utilice el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para agrupar los controles que se deben navegar juntos o para crear columnas en un patrón "inverso-N".  En la parte superior del ejemplo siguiente, los campos de nombre están incluidos en un control de grupo mejorado, lo que hace que la navegación continúe antes de moverse.  En la parte inferior del ejemplo, no se usa ningún control de grupo y la navegación continúa hacia arriba y luego hacia abajo como normal, lo que no es intuitivo dado las agrupaciones de control. 
+
+![Animación que muestra un control de grupo mejorado que hace que la navegación continúe dentro de un grupo antes de pasar a otro](media/properties-accessibility/enhanced-group.gif)
+
+Del mismo modo, la tabulación de los contenedores, como los controles de [**formulario**](control-form-detail.md) y de [**Galería**](control-gallery.md) , navegará por todos los elementos del contenedor antes de continuar con el siguiente control fuera del contenedor.  
+
+Los controles que tienen un valor de propiedad **visible** de *false* o un valor de propiedad **DisplayMode** de Disabled no se incluyen en la navegación.  
+
+Al usar un explorador, el desplazamiento desde el último control de la pantalla se moverá a los controles integrados del explorador, como la dirección URL.  
+
+> [!WARNING]
+> Evite valores de **TabIndex** mayores que 0. En última instancia, los controles se representan en HTML en los que incluso el [W3C ha advertido](https://www.w3.org/TR/wai-aria-practices/#kbd_general_between) de que se recomienda encarecidamente que los autores no utilicen estos valores. Muchas herramientas HTML avisan de valores mayores que 0, al igual que el comprobador de [aplicaciones](../accessibility-checker.md) cuando informa de la comprobación del orden de los elementos de la pantalla.  Todo por una buena razón: el uso de **TabIndex** de esta manera puede ser muy difícil de obtener y puede hacer que las tecnologías de asistencia como los lectores de pantalla no se puedan usar.
+> 
+> Cuando existen controles con **TabIndex** mayor que 0, los usuarios navegarán a los controles con valores de **TabIndex** cada vez mayores (1, después 2, etc.). Cuando los usuarios hayan navegado por todos los controles con valores de **TabIndex** positivos, finalmente navegarán a los controles con **TabIndex** de 0, incluidos los controles integrados del explorador. Cuando hay varios controles con el mismo **TabIndex**, su posición **X** e y determina su orden relativo.
+
+
+
+
+
