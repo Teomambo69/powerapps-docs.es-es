@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bd4219a42b0674927370dfca1aa4ba681dd741bd
+ms.sourcegitcommit: e58a6d9c23445e6d00317ec990a8aa0c2650bf7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538639"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70201074"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -53,7 +52,7 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de PowerApps Studio que se inició comparten una conexión de datos dinámica. Mientras los dos estén abiertos, se pueden filtrar o cambiar los datos del informe para ver los datos actualizados reflejados al instante en la aplicación en PowerApps Studio.
 
@@ -65,7 +64,7 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
     ![Informe de trabajo](./media/powerapps-custom-visual/working-report.gif)
 
-    Si necesita realizar cambios en una aplicación, abra el informe en modo de edición, pulse o haga clic en **Más opciones** (**. . .**) en el objeto visual de PowerApps y seleccione **Editar**.
+    Si necesita realizar cambios en una aplicación, abra el informe en modo de edición, pulse o haga clic en **Más opciones** ( **. . .** ) en el objeto visual de PowerApps y seleccione **Editar**.
 
     ![Editar la aplicación](./media/powerapps-custom-visual/edit-app.png)
 
@@ -73,14 +72,15 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
 El objeto visual personalizado de PowerApps está disponible en versión preliminar y presenta las limitaciones siguientes:
 
-- No se pueden crear ni modificar aplicaciones cuando se usa el objeto visual personalizado de PowerApps en Power BI Desktop, Internet Explorer o Mozilla Firefox. Se recomienda publicar primero el informe en el servicio Power BI. Luego, use Microsoft Edge o Google Chrome para crear y actualizar aplicaciones.
+- La creación, modificación y visualización de aplicaciones cuando se usa el visual personalizado de PowerApps solo se admite en los exploradores Microsoft Edge y Google Chrome. Se recomienda publicar primero el informe en el servicio Power BI. Luego, use Microsoft Edge o Google Chrome para crear y actualizar aplicaciones.
 - Si se cambian los campos de datos asociados con el objeto visual, tendrá que modificar la aplicación desde dentro del servicio Power BI haciendo clic en el botón de puntos suspensivos (...) y seleccionando después **Editar**. En caso contrario, los cambios no se propagarán a PowerApps y la aplicación se comportará de forma inesperada.
-- El objeto visual personalizado de PowerApps no puede desencadenar una actualización del informe o el origen de datos de Power BI. Si se escriben datos desde la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente. Los cambios se reflejan en la siguiente actualización programada.
+- El visual personalizado de PowerApps no puede desencadenar una actualización de Power BI informes y Power BI orígenes de datos desde Power BI Desktop. Si escribe datos de la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente en Power BI Desktop. Los cambios se reflejan en la siguiente actualización programada.
 - El objeto visual personalizado de PowerApps no puede filtrar los datos o devolver ningún dato al informe.
 - Tendrá que compartir la aplicación de PowerApps de forma independiente al informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
-- Estas tecnologías no son compatibles con el objeto visual personalizado de PowerApps: Power BI Report Server, la aplicación móvil para Power BI e Internet Explorer.
+- Estas tecnologías no admiten el visual personalizado de PowerApps: Power BI Report Server, la aplicación móvil para Power BI e Internet Explorer.
+- Si usa la función PowerBIIntegration. Refresh (), debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) y la conexión de datos debe crearse mediante el método directquery. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 * Realice un sencillo [tutorial paso a paso](embed-powerapps-powerbi.md).
-* Visite nuestro [vídeo](https://aka.ms/powerappscustomvisualvideo).
+* Consulte nuestro [vídeo](https://aka.ms/powerappscustomvisualvideo).
