@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/15/2018
+ms.reviewer: tapanm
+ms.date: 08/30/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bd4219a42b0674927370dfca1aa4ba681dd741bd
-ms.sourcegitcommit: e58a6d9c23445e6d00317ec990a8aa0c2650bf7f
+ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70201074"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213928"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -70,15 +70,30 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
 ## <a name="limitations-of-the-powerapps-custom-visual"></a>Limitaciones del objeto visual personalizado de PowerApps
 
-El objeto visual personalizado de PowerApps está disponible en versión preliminar y presenta las limitaciones siguientes:
+Las siguientes limitaciones se aplican al código Visual personalizado de PowerApps:
 
-- La creación, modificación y visualización de aplicaciones cuando se usa el visual personalizado de PowerApps solo se admite en los exploradores Microsoft Edge y Google Chrome. Se recomienda publicar primero el informe en el servicio Power BI. Luego, use Microsoft Edge o Google Chrome para crear y actualizar aplicaciones.
 - Si se cambian los campos de datos asociados con el objeto visual, tendrá que modificar la aplicación desde dentro del servicio Power BI haciendo clic en el botón de puntos suspensivos (...) y seleccionando después **Editar**. En caso contrario, los cambios no se propagarán a PowerApps y la aplicación se comportará de forma inesperada.
 - El visual personalizado de PowerApps no puede desencadenar una actualización de Power BI informes y Power BI orígenes de datos desde Power BI Desktop. Si escribe datos de la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente en Power BI Desktop. Los cambios se reflejan en la siguiente actualización programada.
 - El objeto visual personalizado de PowerApps no puede filtrar los datos o devolver ningún dato al informe.
 - Tendrá que compartir la aplicación de PowerApps de forma independiente al informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
-- Estas tecnologías no admiten el visual personalizado de PowerApps: Power BI Report Server, la aplicación móvil para Power BI e Internet Explorer.
-- Si usa la función PowerBIIntegration. Refresh (), debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) y la conexión de datos debe crearse mediante el método directquery. 
+- Power BI Report Server y la aplicación móvil para Power BI no admiten el visual personalizado de PowerApps.
+- Si usa la función PowerBIIntegration. Refresh (), debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) y la conexión de datos debe crearse mediante el método directquery.
+
+> [!NOTE]
+> Se recomienda publicar primero el informe en el servicio Power BI y, a continuación, crear o modificar las aplicaciones.
+
+## <a name="browser-support"></a>Compatibilidad con exploradores
+
+En la tabla siguiente se muestra la compatibilidad del explorador para ver, crear y modificar acciones del código Visual personalizado de PowerApps. Los exploradores y las acciones admitidos se identifican con &check; una marca de verificación ().
+
+|Browser|Visores|Crear|Modificaciones
+|-|-|-|-
+|Microsoft Edge|&check;|&check;|&check;
+|Internet Explorer 11|&check;
+|Google Chrome|&check;|&check;|&check;
+|Safari|&check;
+|Mozilla Firefox
+|Todos los demás exploradores
 
 ## <a name="next-steps"></a>Pasos siguientes
 
