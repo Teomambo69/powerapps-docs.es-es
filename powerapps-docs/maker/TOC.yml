@@ -840,14 +840,20 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: 'Adición, desplazamiento o eliminación de campos'
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: 'Agregar, mover o eliminar componentes'
+                      href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: 'Adición, desplazamiento o eliminación de secciones'
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
                     - name: 'Adición, desplazamiento o eliminación de pestañas'
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
-                    - name: Propiedades del diseñador de formularios
-                      href: ./model-driven-apps/form-designer-properties.md
                     - name: Configuración de las propiedades de encabezado
                       href: ./model-driven-apps/form-designer-header-properties.md
+                    - name: Agregar y configurar el componente de subcuadrícula
+                      href: ./model-driven-apps/form-designer-add-configure-subgrid.md
+                    - name: Agregar y configurar el componente de vista rápida
+                      href: ./model-driven-apps/form-designer-add-configure-quickview.md
+                    - name: Configurar componente de búsqueda
+                      href: ./model-driven-apps/form-designer-add-configure-lookup.md
                     - name: Uso de la vista de árbol
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Tipo de formularios
@@ -1069,8 +1075,12 @@
           href: ./portals/admin/change-base-url.md
         - name: Activación del modo de mantenimiento
           href: ./portals/admin/enable-maintenance-mode.md
-        - name: Configuración de la integración con Power BI
-          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Integración con Power BI
+          items:
+            - name: Configuración de la integración con Power BI
+              href: ./portals/admin/set-up-power-bi-integration.md
+            - name: "Agregar un informe o panel de Power\_BI a una página web en el portal"
+              href: ./portals/admin/add-powerbi-report.md
         - name: Ejecución del comprobador del portal
           href: ./portals/admin/portal-checker.md
         - name: Renovación de la clave de autenticación del portal
@@ -1079,6 +1089,56 @@
           href: ./portals/admin/ip-address-restrict.md
         - name: Actualización al dominio de portales de PowerApps
           href: ./portals/admin/update-portal-domain.md
+        - name: Borrar la memoria caché del lado servidor
+          href: ./portals/admin/clear-server-side-cache.md
+        - name: Migrar la configuración del portal de Dynamics 365
+          href: ./portals/admin/migrate-portal-configuration.md
+    - name: Personalizaciones avanzadas del portal
+      items:
+        - name: Trabajar con plantillas de Liquid
+          items:
+            - name: Información general
+              href: ./portals/liquid/liquid-overview.md
+            - name: Almacenar contenido mediante plantillas web
+              href: ./portals/liquid/store-content-web-templates.md
+            - name: Descripción de los operadores de Liquid
+              href: ./portals/liquid/liquid-operators.md
+            - name: Tipos de Liquid disponibles
+              href: ./portals/liquid/liquid-types.md
+            - name: Operadores condicionales de Liquid disponibles
+              href: ./portals/liquid/liquid-conditional-operators.md
+            - name: Objetos de Liquid disponibles
+              href: ./portals/liquid/liquid-objects.md
+            - name: Etiquetas de Liquid disponibles
+              items:
+                - name: Etiquetas de Liquid disponibles
+                  href: ./portals/liquid/liquid-tags.md
+                - name: Etiquetas de flujo de control
+                  href: ./portals/liquid/control-flow-tags.md
+                - name: Etiquetas de iteración
+                  href: ./portals/liquid/iteration-tags.md
+                - name: Etiquetas variables
+                  href: ./portals/liquid/variable-tags.md
+                - name: Etiquetas de plantilla
+                  href: ./portals/liquid/template-tags.md
+                - name: Etiquetas de entidad de PowerApps Common Data Service
+                  href: ./portals/liquid/portals-entity-tags.md
+            - name: Filtros de Liquid disponibles
+              href: ./portals/liquid/liquid-filters.md
+            - name: Crear plantillas avanzadas
+              items:
+                - name: Crear una plantilla de página personalizada
+                  href: ./portals/liquid/create-custom-template.md
+                - name: Usar la navegación híbrida para representar la jerarquía de páginas
+                  href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
+                - name: Representar la lista de entidades de una página
+                  href: ./portals/liquid/render-entity-list-current-page.md
+                - name: Representar una fuente RSS mediante una plantilla de página personalizada
+                  href: ./portals/liquid/render-rss-custom-page-template.md
+                - name: Representar un encabezado de sitio y una barra de navegación principal
+                  href: ./portals/liquid/render-site-header-primary-navigation.md
+        - name: Flujo de concesión implícita de OAuth 2.0
+          href: ./portals/oauth-implicit-grant-flow.md
     - name: Problemas conocidos
       href: ./portals/known-issues.md
     - name: Preguntas más frecuentes sobre los portales de PowerApps
