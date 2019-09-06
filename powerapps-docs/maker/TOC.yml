@@ -911,6 +911,8 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: Cómo deshabilitar el guardado automático en un formulario
                       href: ./model-driven-apps/manage-auto-save.md
+                    - name: Cómo agregar una pestaña para los documentos de SharePoint
+                      href: ./model-driven-apps/add-documents-tab-entity-main-form.md
             - name: Inserción de una aplicación de lienzo en un formulario controlado por modelos
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
