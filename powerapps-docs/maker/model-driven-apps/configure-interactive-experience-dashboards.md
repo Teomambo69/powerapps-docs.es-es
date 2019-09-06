@@ -76,7 +76,7 @@ Los paneles de experiencia interactiva pueden convertirse en un área de trabajo
  > ![Diseños de paneles de secuencia única](media/interactive-dashboards-single-stream-layout.png "Diseños de paneles de secuencia única")  
   
 <a name="BKMK_Enable"></a>   
-## <a name="configure-fiter-fields-and-security-roles-for-the-interactive-dashboards"></a>Configurar campos de filtro y roles de seguridad para los paneles interactivos  
+## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>Configurar campos de filtro y roles de seguridad para los paneles interactivos  
  Cuando configura paneles interactivos, la primera tarea es habilitar campos de filtro y roles de seguridad, para que se puedan configurar paneles interactivos para ellos. Los paneles interactivos ahora están habilitados para todas las entidades y entidades personalizadas de forma predeterminada. 
   
 ### <a name="configure-filter-fields"></a>Configurar campos de filtro  

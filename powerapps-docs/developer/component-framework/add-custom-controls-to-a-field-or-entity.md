@@ -3,6 +3,7 @@ title: Agregar componentes personalizados a un campo o una entidad | Microsoft D
 description: Proceso para importar componentes personalizados
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -33,7 +34,7 @@ Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y e
 
    - **Web**. Para que el componente personalizado esté disponible desde cualquier explorador web, seleccione la opción Web situada junto al componente. Tenga en cuenta que, al establecer la opción Web, el componente aparece en exploradores web de PC, Mac y dispositivos móviles.
 
-   - **Teléfono**. Para que el componente personalizado esté disponible en teléfonos en los que se ejecute Dynamics 365 for phones, seleccione la opción Teléfono situada junto al componente.
+   - **Teléfono**. Para que el control personalizado esté disponible en teléfonos en los que se ejecute Dynamics 365 for phones, seleccione la opción Teléfono situada junto al componente.
 
    - **Tableta**. Para que el componente personalizado esté disponible en tabletas en las que se ejecute Dynamics 365 for tablets, seleccione la opción Tableta situada junto al componente.
 7. Seleccione el icono de lápiz junto a **Mín**, **Máx.**, y **Paso**, establezca la opción de la propiedad y, a continuación seleccione **Aceptar**.  

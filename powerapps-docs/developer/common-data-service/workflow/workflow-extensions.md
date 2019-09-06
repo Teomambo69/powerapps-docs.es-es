@@ -2,7 +2,7 @@
 title: Extensiones del flujo de trabajo (Common Data Service | Microsoft Docs
 description: Puede extender las opciones disponibles en el diseñador para flujos de trabajo. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase CodeActivity. Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
 ms.custom: ''
-ms.date: 06/20/2019
+ms.date: 07/16/2019
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Extensiones de flujo de trabajo
 
-Puede extender las opciones disponibles en el diseñador para flujos de trabajo utilizado en Common Data Service. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse ensamblados de flujo de trabajo o actividades de flujo de trabajo.
+Puede extender las opciones disponibles en el diseñador para flujos de trabajo utilizado en Common Data Service. Estas extensiones se agregan agregando un ensamblado que contiene una clase que extiende la clase [CodeActivity](/dotnet/api/system.activities.codeactivity). Estas extensiones suelen denominarse *ensamblados de flujo de trabajo* o *actividades de flujo de trabajo*.
 
 Puede usar estas extensiones personalizadas en el diseñador usado para flujos de trabajo, acciones personalizadas, y diálogos.
 
@@ -76,39 +76,19 @@ Más información:
 
 ## <a name="technology-used"></a>Tecnología utilizada
 
-Puesto que los procesos usan la base de Windows Workflow puede registrar un ensamblado construido mediante la [Biblioteca de actividades de .NET Framework](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) que define las actividades personalizadas que aparecerán en el editor de la aplicación web y serán invocadas cuando el proceso se ejecute.
+Puede registrar un ensamblado construido mediante la [Biblioteca de actividades de .NET Framework](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) que define las actividades personalizadas que aparecerán en el editor de la aplicación web y serán invocadas cuando el proceso se ejecute.
 
 Las actividades de flujo de trabajo personalizadas requieren la creación de un ensamblado .NET Framework que incluya una o más clases que se deriven de la [Clase CodeActivity](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) de resumen. Esta clase proporciona el método [Execute(CodeActivityContext)](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) llamado por la plataforma Common Data Service cuando se ejecuta la actividad. Cada clase en el ensamblado definirá una actividad específica.
 
-Las actividades de flujo de trabajo también pueden definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que Common Data Service usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
-
-## <a name="visual-studio-requirements"></a>Requisitos de Visual Studio
-
-Para crear actividades de flujo de trabajo personalizadas, debe instalar Visual Studio con la carga de trabajo de **Desarrollo de escritorio de .NET** y el componente individual **Windows Workflow Foundation**.
-
-Puede usar la edición gratuita Visual Studio 2017 Community o las ediciones Professional y Enterprise.
-
-Para comprobar la instalación o agregar este componente:
-
-1. Abrir Visual Studio 2017
-1. Seleccione **Herramientas** > **Obtener herramientas y características…** . Se abrirá el instalador de Visual Studio
-1. En la pestaña **Cargas de trabajo**, asegúrese de que la carga de trabajo **Desarrollo de escritorio .NET** está seleccionada.
-    ![Necesario para cargas de trabajo de Visual Studio](media/visual-studio-workloads-workflow-extensions.png)
-1. Seleccione **Componentes individuales** y baje hasta la sección **Actividades de desarrollo**.
-    ![Componentes individuales de Visual Studio requeridos](media/visual-studio-individual-components-workflow-extensions.png)
-1. Si **Windows Workflow Foundation** no está seleccionado, selecciónelo. El componente **Windows Communication Foundation** se incluirá también.
-1. Si ha agregado nuevas cargas de trabajo o componentes, haga clic en **Modificar** para permitir que el programa de instalación de Visual Studio lo instale. De lo contrario, cierre del instalador de Visual Studio.
-
-Más información: [Instalación de Visual Studio 2017](/visualstudio/install/install-visual-studio)
+Las actividades de flujo de trabajo deben definir parámetros de entrada y salida que están visibles en el diseñador de procesos y permiten que alguien pase datos a la actividad de flujo de trabajo y reciba salida procesada. Cuando escribe la clase agregará las propiedades para estos parámetros y las anotará con [atributos .NET](/dotnet/standard/attributes/index) para proporcionar los metadatos que Common Data Service usará para exponer su actividad de flujo de trabajo personalizada con cualquier parámetro en el diseñador.
 
 ## <a name="create-a-custom-workflow-activity-assembly"></a>Crear un ensamblado de actividad de flujo de trabajo personalizado
 
 Estos son pasos generales usados para crear una actividad de flujo de trabajo personalizada mediante Visual Studio. Para ver un ejemplo paso a paso completo consulte [Tutorial: Crear extensión de flujo de trabajo ](tutorial-create-workflow-extension.md).
 
-1. Crear un proyecto de biblioteca de actividades de flujo de trabajo mediante .NET Framework 4.6.2 como marco de trabajo de destino.
+1. Crear un proyecto de biblioteca de clases mediante .NET Framework 4.6.2 como marco de trabajo de destino.
     > [!IMPORTANT]
     > Si bien los ensamblados construidos con versiones posteriores deben funcionar normalmente, si usan características introducidas después de 4.6.2 se producirá un error.
-1. Eliminar el archivo Activity1.xaml generado con el proyecto
 1. Instalar el paquete [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet.
 
     Este paquete incluye el paquete [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/).
@@ -139,7 +119,7 @@ Estos son pasos generales usados para crear una actividad de flujo de trabajo pe
 
 1. Firmar el ensamblado
 1. Crear el ensamblado.
-1. Registre el ensamblado mediante la herramienta de registro de complementos y establezca las propiedades Name y WorkflowActivityGroupName para definir el texto que será visible en el diseñador de procesos de Dyn365CE.
+1. Registre el ensamblado mediante la herramienta de registro de complementos y establezca las propiedades `Name` y `WorkflowActivityGroupName` para definir el texto que será visible en el diseñador de procesos.
 
     Más información: [Registrar el ensamblado](#register-your-assembly)
 
@@ -313,10 +293,10 @@ Para los actividades de flujos de trabajo personalizadas debe especificar las pr
 
 |Campo|Descripción|
 |--|--|
-|Descripción|No es visible en la interfaz de usuario del diseñador de procesos, pero puede resultar útil al generar documentación de los datos extraídos de la entidad PluginType que almacena esta información.|
-|FriendlyName|Nombre descriptivo para el complemento.|
-|Nombre|El nombre del menú representado|
-|WorkflowActivityGroupName|El nombre del submenú agregado al menú principal del diseñador del proceso de Common Data Service.|
+|`Description`|No es visible en la interfaz de usuario del diseñador de procesos, pero puede resultar útil al generar documentación de los datos extraídos de la entidad PluginType que almacena esta información.|
+|`FriendlyName`|Nombre descriptivo para el complemento.|
+|`Name`|El nombre del menú representado|
+|`WorkflowActivityGroupName`|El nombre del submenú agregado al menú principal del diseñador del proceso de Common Data Service.|
 
 ![Establecer propiedades descriptivas](media/create-workflow-activity-set-properties.png)
 

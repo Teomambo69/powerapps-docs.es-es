@@ -1,5 +1,5 @@
 ---
-title: Componer solicitudes HTTP y ocuparse de los errores (Common Data Service)| Microsoft Docs
+title: Componer solicitudes HTTP y administrar errores (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre los métodos y encabezados de HTTP que forman parte de las solicitudes HTTP que interactúan con la API web y cómo identificar y controlar errores devueltos en la respuesta.
 ms.custom: ''
 ms.date: 11/05/2018
@@ -35,7 +35,7 @@ Para acceder a la API web, debe crear una dirección URL con los componentes de 
 |--|--|
 |Protocolo| `https://`|
 |Nombre de entorno|El nombre único que se aplica al entorno. Si el nombre de su empresa es *Contoso*, entonces puede ser `contoso`.|
-|Región|El entorno normalmente estará disponible en un centro de datos que tenga cercano geográficamente.<br />Norteamérica: `crm`<br />Sudamérica: `crm2`<br />Canadá: `crm3`<br />Europa, Oriente Medio y África (EMEA): `crm4`<br />Área Asia Pacífico (APAC): `crm5`<br />Oceanía: `crm6`<br />Japón: `crm7`<br />India: `crm8`<br />Norteamérica 2: `crm9`<br />Reino Unido: `crm11`<br />Más valores se agregarán a lo largo del tiempo a medida que se abran nuevas regiones del centro de datos.|
+|Región|El entorno normalmente estará disponible en un centro de datos que tenga cercano geográficamente.<br />Norteamérica: `crm`<br />Sudamérica: `crm2`<br />Canadá: `crm3`<br />Europa, Oriente Medio y África (EMEA): `crm4`<br />Área Asia Pacífico (APAC): `crm5`<br />Oceanía: `crm6`<br />Japón: `crm7`<br />India: `crm8`<br />Norteamérica 2: `crm9`<br />Reino Unido: `crm11`<br />Francia: `crm12`<br />Más valores se agregarán a lo largo del tiempo a medida que se abran nuevas regiones del centro de datos.|
 |URL base|`dynamics.com.`|
 |Ruta de la API web|La ruta a la API web es `/api/data/`.|
 |Versión|   La versión se expresa de esta manera: `v[Major_version].[Minor_version][PatchVersion]/`. La versión válida para esta publicación es `v9.0`.|

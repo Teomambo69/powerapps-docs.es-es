@@ -1,5 +1,5 @@
 ---
-title: Tipos de datos de campos en Common Data Service | MicrosoftDocs
+title: Tipos de datos de campo en Common Data Service | MicrosoftDocs
 description: Comprender los distintos tipos de datos de campos disponibles para su aplicación
 keywords: ''
 ms.date: 06/27/2018
@@ -58,8 +58,8 @@ Los nombres usados para los tipos dependen del diseñador usado. [Portal de Powe
 |**Número entero**|**Número entero**<br />Formato de *Ninguno*|`IntegerType`|
 
 Para obtener más descripciones para cada tipo que puede agregar o editar, consulte el tema sobre el diseñador correspondiente:
- - [Crear y editar campos para Common Data Service usando el portal de PowerApps: Tipos de datos de campos](create-edit-field-portal.md#field-data-types)
- - [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps: Tipos de datos de campos](create-edit-field-solution-explorer.md#field-data-types)
+ - [Crear y editar campos para Common Data Service mediante el portal de PowerApps: Tipos de datos de campo](create-edit-field-portal.md#field-data-types)
+ - [Crear y editar campos para Common Data Service mediante el explorador de soluciones de PowerApps: Tipos de datos de campo](create-edit-field-solution-explorer.md#field-data-types)
 
 Para obtener más información acerca de cómo se definen los tipos de datos de campos en la API, consulte [Metadatos de atributos](/powerapps/developer/common-data-service/entity-attribute-metadata)
 
@@ -145,7 +145,7 @@ Sin embargo, debe conocer que no todas las búsquedas se comportan de esta forma
 |-----------------|-----------------|  
 |**Básico**|Permite una única referencia a una entidad específica. Todas las búsquedas personalizadas son de este tipo.|  
 |**Cliente**|Permite una única referencia a una cuenta o un registro de contacto.|  
-|**Propietario**|Permite una única referencia a un equipo o un registro de usuario. Todas las entidades propiedad del equipo el usuario presentan una de estas opciones.|  
+|**Propietario**|Permite una única referencia a un equipo o un registro de usuario. Todas las entidades propiedad del equipo el usuario presentan una de estas opciones. Más información: [Agregar la entidad de equipo como opción de búsqueda en la aplicación](../model-driven-apps/team-entity-lookup.md)|  
 |**Lista de partes**|Permite asignar varias referencias a varias entidades. Estas búsquedas se encuentran en los campos **Para** y **CC** de la entidad Correo electrónico. También se usan en las entidades Teléfono y Cita.|  
 |**Referente a**|Permite asignar una sola referencia a varias entidades. Estas búsquedas se encuentran en el campo referente usado en las actividades.|  
 
@@ -177,4 +177,4 @@ Cuando se cargue una imagen, su tamaño se modificará hasta una tamaño máximo
 
 Más información para desarrolladores que trabajan con datos de imágenes:
 - [Metadatos de entidad > Imágenes de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Guía para desarrolladores de Dynamics 365 Customer Engagement: Atributos de imagen](/dynamics365/customer-engagement/developer/image-attributes)
+- [Guía para desarrolladores de Dynamics 365 Customer Engagement:Atributos de imagen](/dynamics365/customer-engagement/developer/image-attributes)

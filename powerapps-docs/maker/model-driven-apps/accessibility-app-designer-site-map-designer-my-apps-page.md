@@ -23,7 +23,7 @@ search.app:
 
 Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](http://www.microsoft.com/enable/default.aspx)  
  
-En este tema se describen las características de accessiblidad disponibles con aplicaciones basadas en modelos.  
+En este tema se describen las características de accesiblidad disponibles con aplicaciones basadas en modelos.  
   
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
 PowerApps ofrece métodos abreviados de teclado para resolver los problemas a los que se enfrentan las personas con destreza manual limitada o discapacidad motriz.  

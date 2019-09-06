@@ -46,6 +46,8 @@ Crear un complemento asincrónico registrado en el mensaje Crear de la entidad d
 - Descargue la herramienta de registro de complementos.
     - Información sobre la descarga de la herramientas de registro de complementos en: [Descargar herramientas de NuGet](download-tools-nuget.md). Este tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
 
+<a name="BKMK_create"></a>
+
 ## <a name="create-a-plug-in-project"></a>Crear un proyecto de complemento
 
 Debe usar Visual Studio para escribir un complemento. Use estos pasos para escribir un complemento básico. Como alternativa, puede encontrar los archivos de la solución del complemento aquí: [Ejemplo: Crear un complemento básico](org-service/samples/basic-followup-plugin.md).
@@ -213,6 +215,8 @@ En Visual Studio, presione **F6** para crear el ensamblado. Compruebe que se com
 
 > [!NOTE]
 > Cree el ensamblado usando la configuración de **Depuración** porque usará el generador de perfiles de complementos para depurarlo en un tutorial posterior.   Antes de incluir un complemento con la solución, debe generarlo mediante la configuración de versión.
+
+<a name="BKMK_register"></a>
 
 ## <a name="register-plug-in"></a>Registrar complemento
 

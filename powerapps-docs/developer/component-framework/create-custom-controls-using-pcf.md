@@ -3,6 +3,7 @@ title: Crear y generar un componente personalizado| Microsoft Docs
 description: Empiece a crear un componente mediante útiles de marco de componentes de PowerApps
 keywords: 'Marco de componentes de PowerApps, Componentes personalizados, Marco de componentes'
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/20/2019
 ms.service: powerapps
@@ -38,7 +39,7 @@ Para empezar, abra un nuevo Developer Command Prompt for VS 2017 después de ins
 
 ## <a name="build-your-component"></a>Crear su componente
 
-Para generar el componente puede abrir la carpeta en Visual Studio Code y usar el comando (Ctrl-Mayús-B), luego seleccione las opciones de compilación. Como alternativa, puede compilar el control rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017.
+Para generar el componente puede abrir la carpeta en Visual Studio Code y usar el comando (Ctrl-Mayús-B), luego seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017.
 
 > [!TIP]
 > Para depurar el componente durante o después de operaciones de compilación, consulte [Depurar un componente personalizado](debugging-custom-controls.md).

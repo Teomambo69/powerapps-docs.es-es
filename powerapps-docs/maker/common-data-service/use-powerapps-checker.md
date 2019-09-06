@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 06/25/2019
+ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -32,7 +32,7 @@ El comprobador de soluciones trabaja con soluciones no administradas que se pued
 > - El comprobador de soluciones no funciona con soluciones que contienen JavaScript que usa ECMAScript 6 (2015) o versiones posteriores. Cuando se detecta JavaScript que usa una de estas versiones, se informará de un problema de la sintaxis JS001 para el recurso web.
 
 ## <a name="enable-the-solution-checker"></a>Habilitar el comprobador de soluciones
-El comprobador de soluciones pasa a estar disponible en el área Soluciones de PowerApps después de instalar la solución del comprobador de PowerApps. Tenga en cuenta que no podrá encontrarla examinando o buscando en Microsoft AppSource. Para instalarlo, siga estos pasos:  
+El comprobador de soluciones está habilitado de forma predeterminada en cada entorno de Common Data Service. Un elemento de menú **Comprobador de soluciones** está disponible cuando selecciona una solución no administrada en el área **Soluciones** de PowerApps. Si la opción **Ejecutar** no está disponible en el menú **Comprobador de soluciones** , puede habilitarla instalando la solución del comprobador de PowerApps. Para instalarlo, siga estos pasos:   
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno Common Data Service Service donde desea habilitar el comprobador de soluciones. 
 2. En el panel de navegación izquierdo, seleccione **Soluciones**.
@@ -43,12 +43,9 @@ El comprobador de soluciones pasa a estar disponible en el área Soluciones de P
 
 4. Seleccione **Prueba gratuita** en la página de AppSource. 
 
-
-<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
-
-5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
-6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
-7. To check a solution, [Run the solution checker](#run-the-solution-checker).
+5. Si está de acuerdo, acepte las condiciones y seleccione el entorno para instalar la solución de comprobador de PowerApps. 
+6. Cuando se complete la instalación, actualice la lista **Solución** en el sitio de PowerApps para comprobar que el comprobador de soluciones está disponible.  
+7. Para comprobar una solución [Ejecute al comprobador de soluciones](#run-the-solution-checker).
 
 
 <!-- ### Components created with the PowerApps checker
@@ -106,10 +103,19 @@ Al instalar el comprobador de soluciones en el entorno, la columna **Comprobaci�
 
 
 ## <a name="review-the-solution-checker-report"></a>Revise el informe del comprobador de soluciones
-Cuando se completa una comprobación de soluciones, el informe de análisis pasa a estar disponible para descarga desde el explorador web. El informe está en formato [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] y contiene varias visualizaciones y columnas que ayudan a identificar de impacto, tipo, y la ubicación de cada problema detectado en la solución. Un vínculo a orientación detallada sobre cómo resolver el problema también se proporciona. 
+Cuando se completa una comprobación de la solución, puede ver el informe de análisis en el portal o puede descargar el informe desde el explorador web. En el portal, tiene opciones de filtrar, agrupar resultados por **Error**, **Ubicación** o **Gravedad** y ver información detallada de los problemas detectados en la solución. 
 
 1. En el panel izquierdo, seleccione **Soluciones**.
-2. Junto a la solución no administrada donde desea descargar el informe del comprobador de soluciones, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Descargar últimos resultados**.  
+2. Junto a la solución no administrada donde desea ver el informe del comprobador de soluciones, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Ver resultados**.  
+3. Seleccione un problema para ver los detalles y orientación sobre cómo resolverlo.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-checker-viewresults.png "Resultados de la vista del comprobador de soluciones")
+
+Los resultados de comprobación de la solución también están disponibles para descarga. El archivo zip del comprobador de soluciones se descarga en la carpeta especificada por el explorador web. El informe de descarga está en formato [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] y contiene varias visualizaciones y columnas que pueden ayudarle a identificar el impacto, tipo y la ubicación de cada problema detectado en la solución. Un vínculo a orientación detallada sobre cómo resolver el problema también se proporciona. 
+
+1. En el panel izquierdo, seleccione **Soluciones**.
+2. Junto a la solución no administrada donde desea descargar el informe del comprobador de soluciones, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Descargar resultados**.  
 3. El archivo zip del comprobador de soluciones se descarga en la carpeta especificada por el explorador web.
 
 Este es un resumen de cada columna del informe.
@@ -168,10 +174,6 @@ Este es un resumen de cada columna del informe.
 | Recursos web  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | Utilice el modo estricto si es posible.  | 
 | Recursos web  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Utilice operadores de igualdad estricta.  | 
 | Recursos web  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | No use la función 'eval' o sus equivalentes funcionales.  | 
-
-## <a name="limitations"></a>Limitaciones
-
-El comprobador de soluciones no se puede automatizar en este momento. Debe ejecutarlo desde https://web.powerapps.com. Más información: [Ejecutar comprobador de soluciones](#run-the-solution-checker)
 
 
 ### <a name="see-also"></a>Vea también

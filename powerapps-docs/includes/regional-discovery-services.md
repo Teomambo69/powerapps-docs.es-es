@@ -10,3 +10,4 @@
 |India (IND)|`https://disco.crm8.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Canadá|`https://disco.crm3.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Reino Unido (UK)|`https://disco.crm11.dynamics.com/XRMServices/2011/Discovery.svc`|
+|Francia|`https://disco.crm12.dynamics.com/XRMServices/2011/Discovery.svc`|

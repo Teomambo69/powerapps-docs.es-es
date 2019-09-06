@@ -3,6 +3,7 @@ title: Elemento DataSet | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -28,6 +29,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 |`description-key`|Se usa en la pantalla de personalización como cadenas localizadas que describen la descripción de la propiedad.|`string`|Opcional|
 |`display-name-key`|Se usa en las pantallas de personalización como cadenas localizadas que describen el nombre de la propiedad.|`string`|Sí|
 |`name`|Nombre de la cuadrícula|`string`|Sí|
+|`cds-data-set-options`|Muestra Commandbar, ViewSelector, QuickFindSearch si se establece como true |`boolean`|Sí|
 
 ## <a name="parent-elements"></a>Elementos primarios
 
@@ -38,7 +40,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 ## <a name="example"></a>Ejemplo
 
 ```xml
- <data-set name="dataSetGrid" display-name-key="DataSetGridProperty">
+ <data-set name="dataSetGrid" display-name-key="DataSetGridProperty" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFindSearch:true">
  </data-set>
 ```
 

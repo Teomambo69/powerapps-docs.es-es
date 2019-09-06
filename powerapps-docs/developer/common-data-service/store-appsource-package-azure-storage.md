@@ -1,5 +1,5 @@
 ---
-title: 'Paso 5: Almacenar el paquete de AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service) | Microsoft Docs'
+title: 'Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service) | Microsoft Docs'
 description: 'Para mantener la seguridad de los archivos, todos los desarrolladores de aplicaciones deben almacenar su archivo de paquete AppSource en una cuenta de almacenamiento del objeto binario de Microsoft Azure y usar una clave de firma de acceso compartido (SAS) para compartir el archivo de paquete. El archivo de paquete se recupera de la ubicación de Azure Storage para certificación y, después, para versiones de prueba de AppSource.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Paso 5: Almacenar el paquete de AppSource en Azure Storage y generar una dirección URL con clave SAS
+# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS
 
-Microsoft Azure Storage es un servicio de nube administrado por Microsoft que proporciona almacenamiento de gran disponibilidad, seguridad, duración, escalabilidad y es redundante. Más información: [Introducción a Microsoft Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)
+Microsoft Azure Storage es un servicio de nube administrado por Microsoft que proporciona almacenamiento de gran disponibilidad, seguridad, duración, escalabilidad y es redundante. Más información: [Introducción a Microsoft Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 Para mantener la seguridad de los archivos, todos los desarrolladores de aplicaciones deben almacenar su archivo de paquete AppSource en una cuenta de almacenamiento del objeto binario de Microsoft Azure y usar una clave de firma de acceso compartido (SAS) para compartir el archivo de paquete. El archivo de paquete se recupera de la ubicación de Azure Storage para certificación y, después, para versiones de prueba de AppSource.
 
@@ -52,13 +52,13 @@ Para cargar el paquete en Azure blob Storage:
 
 7. Inicie Azure Storage Explorer en su equipo y conéctese a su cuenta de Azure Storage iniciando sesión con la misma cuenta con la que ha creado su cuenta de Azure Storage.
 
-8. En Azure Storage Explorer, seleccione el contenedor recién creado y seleccione **cargar** > **cargar archivos** para cargar el paquete de origen de la aplicación que ha creado en [paso 4: crear un paquete de AppSource para su aplicación](create-package-app-appsource.md). 
+8. En Azure Storage Explorer, seleccione el contenedor recién creado y seleccione **Cargar** > **Cargar archivos** para cargar el paquete de origen de la aplicación que ha creado en [paso 4: crear un paquete de AppSource para su aplicación](create-package-app-appsource.md). 
 
    ![](media/appsource-storageaccount-pic5.png)
 
 9. Busque el archivo de paquete de AppSource en su equipo y selecciónelo para cargarlo.
 
-10. Haga clic con el botón derecho del mouse en el archivo de paquete AppSource cargado y seleccione **obtener firma de acceso compartido**.
+10. Haga clic con el botón derecho del mouse en el archivo de paquete AppSource cargado y seleccione **Obtener firma de acceso compartido**.
 
     ![](media/appsource-storageaccount-pic6.png)
 
@@ -72,4 +72,4 @@ Para cargar el paquete en Azure blob Storage:
 
 
 > [!div class="nextstepaction"]
-> [Pasos siguientes: enviar la aplicación en el portal de Socio en la nube](next-steps-submit-app-cloud-partner-portal.md)
+> [Pasos siguientes: enviar la aplicación al Centro de partners](next-steps-submit-app-cloud-partner-portal.md)

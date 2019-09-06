@@ -3,11 +3,11 @@ title: Crear atributos de numeración automática (Common Data Service) | Micros
 description: 'Obtenga información sobre cómo crear un atributo de numeración automática del mismo modo que se crea un atributo de cadena mediante la clase StringAttributeMetadata excepto que en este caso se usa la nueva propiedad AutoNumberFormat. Utilice la propiedad AutoNumberFormat para definir un modelo que incluya números secuenciales y cadenas aleatorias mediante la composición de marcadores de posición, que indica la longitud y el tipo de valores que se generan.'
 keywords: Atributos de numeración automática
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
+author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

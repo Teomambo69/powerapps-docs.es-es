@@ -3,6 +3,7 @@ title: Obtener útiles para PowerApps Component Framework | Microsoft Docs
 description: 'Consiga Microsoft PowerApps CLI para crear, depurar e implementar componentes personalizados con PowerApps Component Framework.'
 keywords: 'Marco de componentes de PowerApps, Componentes personalizados, Marco de componentes'
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/18/2019
 ms.service: powerapps

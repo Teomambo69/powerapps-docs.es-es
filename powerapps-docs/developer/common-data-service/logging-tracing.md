@@ -2,7 +2,7 @@
 title: Registro y seguimiento (Common Data Service) | Microsoft Docs
 description: Use el registro de seguimiento para almacenar la información de ejecución de los complementos para ayudar en la depuración de los complementos.
 ms.custom: ''
-ms.date: 05/05/2019
+ms.date: 07/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -79,6 +79,8 @@ A continuación, genere e implemente el complemento o actividad de flujo de trab
 ## <a name="additional-information-about-the-tracing-service"></a>Información adicional sobre el servicio de seguimiento.
 
 El <xref:Microsoft.Xrm.Sdk.ITracingService> trata por lotes la información que se le proporciona con el método **Seguimiento**. La información se escribe en un nuevo registro [PluginTraceLog](reference/entities/plugintracelog.md) después de que el código personalizado se ejecuta correctamente hasta completarse o genera una excepción.  
+
+Cada llamada de traza se registra como una nueva línea en el atributo [PluginTraceLog](reference/entities/plugintracelog.md) [MessageBlock](reference/entities/plugintracelog.md#BKMK_MessageBlock). Solo 10 kb de texto se pueden escribir. Se quitarán las líneas de traza para cumplir este límite de modo que solo las líneas más recientes se guardarán.
   
 Los registros [PluginTraceLog](reference/entities/plugintracelog.md) tienen una duración finita. Un trabajo en segundo plano de eliminación en masa se ejecuta una vez al día para eliminar los registros que tienen más de 24 horas desde su creación. 
 

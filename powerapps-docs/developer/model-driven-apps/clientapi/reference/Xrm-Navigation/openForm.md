@@ -138,7 +138,7 @@ El código de ejemplo siguiente abre un formulario de contacto para mostrar un r
 ```JavaScript
 var entityFormOptions = {};
 entityFormOptions["entityName"] = "contact";
-entityFormOptions["entityId"] = "8DA6E5B9-88DF-E311-B8E5-6C3BE5A8B200"
+entityFormOptions["entityId"] = "8DA6E5B9-88DF-E311-B8E5-6C3BE5A8B200";
 
 // Open the form.
 Xrm.Navigation.openForm(entityFormOptions).then(

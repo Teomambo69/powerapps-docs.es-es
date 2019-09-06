@@ -2,8 +2,8 @@
 title: Usar FetchXML para consultar datos (Common Data Service) | Microsoft Docs
 description: FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service. Se basa en un esquema que describe las funciones del idioma.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 07/23/2019
+ms.reviewer: susikka
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
@@ -91,7 +91,10 @@ Este ejemplo muestra una combinación interna entre EntityMap y AttributeMap don
    </entity>  
  </fetch>  
 ```  
-  
+
+> [!IMPORTANT]
+> Una consulta de FetchXML tiene un límite de un máximo de 10 entidades de vínculos permitidas.
+
 ## <a name="execute-the-fetchxml-query"></a>Ejecutar la consulta FetchXML
 
 Puede ejecutar una consulta FetchXML mediante la **API web** o el **servicio de la organización**.

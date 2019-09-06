@@ -7,6 +7,7 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="what-are-custom-components"></a>Qué son componentes personalizados
@@ -63,7 +64,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 |---|---|
 |contexto| Contiene toda la información sobre cómo se configura el componente y todos los parámetros que se pueden usar en el componente junto con las [API de marco](reference/index.md). Por ejemplo, `context.parameters.["property name from manifest"]` se puede usar para tener acceso a la propiedad de entrada.|
 |notifyOutputChanged |Función que alerta al marco de trabajo que el componente tiene las nuevas salidas listas para recuperarse de forma asincrónica.|
-|estado|Contiene datos del componente de la carga de página anterior en la sesión actual si el control explícitamente lo almacenó antes usando `setControlState API`.|
+|estado|Contiene datos del componente de la carga de página anterior en la sesión actual si el componente explícitamente lo almacenó antes usando `setControlState API`.|
 |contenedor|Un elemento de div HTML al que anexará los elementos HTML para la interfaz de usuario que define el componente. Para mostrar el valor en la interfaz de usuario, debe obtener los datos de `context.parameters.controlValue object`.|
 
 ### <a name="user-changes-data"></a>El usuario cambia los datos

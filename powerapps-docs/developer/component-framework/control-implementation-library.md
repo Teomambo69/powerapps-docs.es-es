@@ -3,6 +3,7 @@ title: Biblioteca de implementación del componente | Microsoft Docs
 description: Crear componentes personalizados con JavaScript o TypeScript
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

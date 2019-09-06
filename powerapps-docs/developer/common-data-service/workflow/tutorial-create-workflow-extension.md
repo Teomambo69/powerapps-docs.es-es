@@ -2,7 +2,7 @@
 title: 'Tutorial: Crear extensión de flujo de trabajo (Common Data Service) | Microsoft Docs'
 description: Este tutorial mostrará el proceso para ampliar el diseñador de flujos de trabajo para agregar actividades personalizadas y lógica mediante un ensamblado de flujo de trabajo.
 ms.custom: ''
-ms.date: 06/04/2019
+ms.date: 07/16/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -21,7 +21,7 @@ Este tutorial mostrará el proceso para ampliar el diseñador de flujos de traba
 
 Este tutorial usa un ejemplo muy sencillo para centrarse en los requisitos y el proceso para:
 
-- Crear un proyecto de biblioteca de actividades de Visual Studio
+- Crear un proyecto de biblioteca de clases de Visual Studio
 - Agregar una clase CodeActivity
 - Definir parámetros de entrada y salida
 - Adición de lógica de negocios
@@ -32,7 +32,6 @@ Este tutorial usa un ejemplo muy sencillo para centrarse en los requisitos y el 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Debe tener Windows Workflow Foundation incluido como componente individual con Visual Studio 2017.  Más información: [Requisitos de Visual Studio](workflow-extensions.md#visual-studio-requirements)
 -  Una instancia y privilegios de administrador de Common Data Service
 - Descripción de cómo configurar flujos de trabajo. Más información: [Flujos de trabajo de Common Data Service clásico](/flow/workflow-processes)
 - Una aplicación basada en modelos que le permite editar cuentas.
@@ -69,46 +68,56 @@ En el segundo, una acción **Actualizar registro** asignará la salida del paso 
 
 ![Actualizar el límite de crédito](media/tutorial-create-workflow-activity-step2.png)
 
-## <a name="create-a-visual-studio-activity-library-project"></a>Crear un proyecto de biblioteca de actividades de Visual Studio
+## <a name="create-a-visual-studio-class-library-project"></a>Crear un proyecto de biblioteca de clases de Visual Studio
 
 Este proyecto creará un ensamblado de flujo de trabajo simple que aumentará un valor decimal por 10.
 
 1. Iniciar Visual Studio.
 1. En el menú **Archivo**, haga clic en **Nuevo**, y haga clic en **Proyecto**.
-1. En el cuadro de diálogo **Nuevo proyecto**, amplíe **Visual C#** y seleccione **Flujo de trabajo** y, a continuación, seleccione **Biblioteca de actividades**.
-1. Especifique un nombre y una ubicación para la solución y, a continuación, haga clic en **Aceptar**.
+1. Busque *Biblioteca de clases* y seleccione **Biblioteca de clases (.NET Framework)**.
+
+    ![Buscar biblioteca de clases (.NET Framework)](media/create-new-class-library-project.png)
+
+1. Haga clic en **Siguiente**.
+1. Especificar un nombre y ubicación para la solución
+
+    ![Configurar el nuevo diálogo de proyecto en Visual Studio 2019](media/configure-your-new-project.png)
 
     > [!NOTE]
-    > Elija el nombre de la solución que tenga sentido para el proyecto. En este ejemplo usaremos `SampleWorkflowActivity`.
+    > Elija el nombre del proyecto que tenga sentido para el proyecto. En este ejemplo usaremos `SampleWorkflowActivity`.
 
-    ![crear proyecto de actividad de flujo de trabajo](media/tutorial-create-workflow-activity-create-workflow-activity-project.png)
-
-1. Vaya al menú **Proyecto** y seleccione **Propiedades**. En la pestaña **Aplicación**, especifique **.NET Framework 4.6.2** como marco de trabajo de destino.
+1. Haga clic en **Crear**.
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **Propiedades**. En la pestaña **Aplicación**, compruebe que **.NET Framework 4.6.2** se define como marco de trabajo de destino.
 
     ![establecer propiedades del proyecto](media/tutorial-create-workflow-activity-workflow-project.png)
 
-1. Elimine el archivo `Activity1.xaml` del proyecto.
-1. En el Explorador de soluciones, haga clic con el botón secundario en el proyecto y seleccione **Administrar paquetes de NuGet...** .
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **Administrar paquetes de NuGet**. .
 
     ![administrar paquetes nuget](media/tutorial-create-workflow-activity-manage-nuget-packages.png)
 
 1. Busque el paquete [Microsoft.CrmSdk.Workflow NuGet](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) e instálelo.
 
+    ![Instalar el paquete de NuGet de flujo de trabajo Microsoft.CrmSdk.Workflow](media/select-install-microsoft.crmsdk.workflow-nuget-package.png)
+
     > [!NOTE]
     > Asegúrese de que el paquete que instale es propiedad de [crmsdk](https://www.nuget.org/profiles/crmsdk). Este paquete incluirá el `Microsoft.Xrm.Workflow.dll` e incluirá una dependencia en el paquete [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) para que también se incluya el ensamblado `Microsoft.Xrm.Sdk.dll` necesario. 
 
-1. Debe hacer clic en **Acepto** en el diálogo Aceptación de licencia.
+1. Debe hacer clic en **Acepto** en el diálogo **Aceptación de licencia**.
 
     ![Acepto el contrato de licencia](media/tutorial-create-workflow-activity-license-acceptance.png)
 
-## <a name="add-a-codeactivity-class"></a>Agregar una clase CodeActivity
+## <a name="rename-the-class-file"></a>Cambiar el nombre del archivo de clases
 
-1. Agregue un archivo de clase (.cs) al proyecto. En el **Explorador de soluciones**, haga clic con el botón secundario en el proyecto, seleccione **Agregar** y, a continuación, haga clic en **Clase**. En el cuadro de diálogo **Agregar nuevo artículo**, escriba un nombre para la clase y haga clic en **Agregar**.
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en el archivo Class1.cs predeterminado y seleccione **Cambiar nombre**.
+
+    ![Cambie el nombre del archivo Class1.cs](media/rename-class1-file.png)
 
     > [!NOTE]
     > Elija un nombre de clase que tenga sentido para la actividad. En este ejemplo, llamaremos a la clase `IncrementByTen`.
 
-    ![Agregar una clase](media/tutorial-create-workflow-activity-add-class.png)
+1. Seleccione **Sí** en el cuadro de diálogo que le pregunta si desea cambiar el nombre de la clase también.
+
+    ![Seleccione Sí para cambiar el nombre de la clase también](media/rename-file-dialog.png)
 
 1. Abra el archivo IncrementByTen.cs y agregue lo siguiente usando directivas:
 
@@ -181,11 +190,15 @@ Agregue la lógica en el método Execute para aplicar la lógica para aumentar e
 
 ## <a name="sign-and-build-the-assembly"></a>Firmar y crear el ensamblado
 
-1. Firme el ensamblado. En las propiedades del proyecto, en la pestaña **Firma**, seleccione **Firmar el ensamblado** y especifique un nombre de archivo clave. Los ensamblados de actividad personalizada de flujo de trabajo (y los complementos) se deben firmar. No es necesario establecer una contraseña a los efectos de este tutorial. Para este ejemplo hemos creado un nuevo archivo de clave de alta seguridad denominado `SampleWorkflowActivity.snk`
+1. Los ensamblados de actividad personalizada de flujo de trabajo (y los complementos) se deben firmar. En las propiedades del proyecto, en la pestaña **Firma** seleccione **Firmar el ensamblado**. En **Elija un archivo de clave de alta seguridad**:, seleccione la opción **&lt;Nuevo...&gt;**.
+    No es necesario establecer una contraseña a los efectos de este tutorial. Para este ejemplo hemos creado un nuevo archivo de clave de alta seguridad denominado `SampleWorkflowActivity.snk`
 
     ![firme el ensamblado](media/tutorial-create-workflow-activity-sign-assembly.png)
 
 1. Cree la solución en modo de depuración y compruebe que el ensamblado `SampleWorkflowActivity.dll` está en la carpeta `/bin/Debug`.
+
+> [!NOTE]
+> Mientras desarrolla un ensamblado es válido usar la configuración de compilación de **Depuración**. Al implementar el ensamblado en un servidor de producción o en una solución, debe usar la configuración de compilación de **Versión**.
 
 ## <a name="register-your-assembly"></a>Registrar el ensamblado
 
@@ -231,17 +244,17 @@ Los ensamblados personalizados de actividades de flujo de trabajo se registran m
 
     ![Guarde las propiedades de actividad del flujo de trabajo](media/tutorial-create-workflow-activity-set-workflow-activity-properties.png)
 
-    > [!NOTE]
-    > Estos valores no serán visibles en la solución no administrada al probar la actividad de flujo de trabajo. No obstante, cuando se exporta una solución administrada que incluye esta actividad de flujo de trabajo estos valores serán visibles en el diseñador de procesos.
-
 ## <a name="test-your-assembly"></a>Probar el ensamblado
 
 Puede probar la nueva actividad de flujo de trabajo creando un proceso que la use. Use estos pasos para crear el proceso de flujo de trabajo descrito en la sección [Objetivo](#goal) anterior:
 
-1. Abra [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
-1. Cambie el modo de diseño de **Lienzo** a **Basado en modelos**.
+1. Abra [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. Seleccione **Solución**.
-1. Abra la **Solución predeterminada de Common Data Service**.
+1. Abra la solución **Editor predeterminados de CDS**.
+1. En el menú, amplíe los **...** y elija **Cambiar a clásica**.
+    
+    ![Cambiar a la interfaz de usuario clásica](media/switch-to-classic-solution-ui.png)
+
 1. Seleccione **Procesos** en la lista **Componentes**
 1. Seleccione **Nuevo** y en el diálogo **Crear proceso** escriba lo siguiente:
 
@@ -268,14 +281,11 @@ Puede probar la nueva actividad de flujo de trabajo creando un proceso que la us
     ![configuración de un flujo de trabajo de prueba](media/tutorial-create-workflow-activity-configuration-test-workflow.png)
 
     > [!NOTE]
-    > Al configurar Ámbito como Organización se crea un flujo de trabajo a petición que puede aplicar cualquier persona de la organización.
+    > Al configurar **Ámbito** como **Organización** se crea un flujo de trabajo que puede aplicar cualquier persona de la organización.
 
 1. Agregue el siguiente **Paso**:
 
     ![Agregue el paso SampleWorkflowActivity.IncrementByTen](media/tutorial-create-workflow-activity-use-sample-step.png)
-
-    > [!NOTE]
-    > Como se ha mencionado antes, los valores personalizados que establece en [Registrar el ensamblado](#register-your-assembly) no se aplicarán en el diseñador hasta después de que la actividad de flujo de trabajo se importe como parte de una solución administrada.
 
 1. Establezca el paso **Descripción** como **Obtener Límite de crédito de la cuenta incrementado** y haga clic en **Establecer propiedades**.
 1. Establezca el valor de la propiedad **Entrada decimal** como el Límite de crédito de la cuenta con un valor predeterminado de 0.
@@ -316,15 +326,13 @@ Puede probar la nueva actividad de flujo de trabajo creando un proceso que la us
 
 Para distribuir una actividad de flujo de trabajo personalizada en una solución, debe agregar el ensamblado registrado que lo contiene a una solución no administrada.
 
-1. Abra la solución no administrada a la que desea agregar el ensamblado mediante el explorador de soluciones.
-1. Seleccione **Ensamblados de complementos** en la lista de componentes.
-1. En la barra de comandos, haga clic en **Agregar existentes**.
+1. Abra la solución no administrada a la que desea agregar el ensamblado utilizando [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. Seleccione **Agregar existentes** > **Otro** > **Ensamblado de complementos**
 
-    ![seleccionar agregar existente](media/tutorial-create-workflow-activity-add-existing-solution-component.png)
+    ![Agregar ensamblado de complementos existente](media/add-existing-plugin-assembly.png)
 
-1. En el diálogo **Seleccionar componentes de la solución** , seleccione la SampleWorkflowActivity que ha creado y haga clic en **Aceptar**.
-
-    ![Agregar SampleWorkflowActivity](media/tutorial-create-workflow-activity-add-solution-component.png)
+1. Busque el ensamblado de complemento por nombre, en este caso 'SampleWorkflowActivity'.
+1. Seleccione el ensamblado de complemento y seleccione **Agregar**.
 
 ### <a name="see-also"></a>Vea también
 

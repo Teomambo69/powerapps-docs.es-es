@@ -7,7 +7,9 @@ ms.date: 04/23/2019
 ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
+author: Nkrb
 ---
+
 # <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]

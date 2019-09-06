@@ -1,7 +1,7 @@
 ---
-title: Crear y editar campos para Common Data Service mediante el portal de PowerApps | MicrosoftDocs
+title: Crear y editar campos para Common Data Service utilizando el portal PowerApps | MicrosoftDocs
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/13/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,19 +13,20 @@ applies_to:
   - PowerApps
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Crear y editar campos para Common Data Service mediante el portal de PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Crear y editar campos para Common Data Service utilizando el portal PowerApps
 
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service.
+El portal de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
-- [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)
+- [Crear y editar campos para Common Data Service](create-edit-fields.md)
+- [Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Campos de vista
 
@@ -88,7 +89,7 @@ Estos campos almacenan datos como número pero incluyen distintas opciones de pr
 |Tipo de datos|Descripción|
 |--|--|
 |**Número entero**|Valor de número presentado en un cuadro de texto.|
-|**Duración**|Valor de número presentado como lista desplegable que contiene intervalos de tiempo. El usuario puede seleccionar un valor de la lista o escribir un valor entero que represente el número de minutos.|
+|**Duración**|Valor de número presentado como lista desplegable que contiene intervalos de tiempo. El usuario puede seleccionar un valor de la lista o escribir un valor entero que represente el número de minutos. La duración se debe especificar en el formato: "x minutos", "x horas" o "x días". Las horas y los días también se pueden introducir con decimales, por ejemplo, "x,x horas" o "x,x días". Los valores especificados deben poder expresarse en minutos, los valores por debajo del minuto se redondean al minuto más cercano.|
 |**Zona horaria**|Valor de número presentado como lista desplegable que contiene una lista de zonas horarias.|
 |**Idioma**|Un valor numérico presentado como lista desplegable con los idiomas que se hayan habilitado para el entorno. Si no se ha activado ningún otro idioma, el idioma base será la única opción. El valor guardado es el valor del Identificador de configuración regional (LCID) del idioma.|
 
@@ -225,8 +226,8 @@ Cualquiera de los campos que proporcionan la entrada de texto directa tienen un 
 
 
 ### <a name="see-also"></a>Vea también  
-[Creación y edición de campos para Common Data Service](create-edit-fields.md)<br />
-[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service](create-edit-fields.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps](create-edit-field-solution-explorer.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Definir campos consolidados que agregan valores](define-rollup-fields.md)<br />

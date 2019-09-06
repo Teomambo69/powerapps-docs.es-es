@@ -1,5 +1,5 @@
 ---
-title: Use los útiles XRM para ejecutar acciones en Common Data Service| MicrosoftDocs
+title: Usar herramientas XRM para ejecutar acciones en Common Data Service| MicrosoftDocs
 description: 'El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Dynamics 365'
 ms.custom: ''
 ms.date: 03/20/2019
@@ -14,6 +14,7 @@ ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
 ms.author: nabuthuk
 manager: kvivek
+author: Nkrb
 search.audienceType:
   - developer
 search.app:

@@ -1,10 +1,10 @@
 ---
 title: Especificar una vista predeterminada de aplicación controlada por modelos en PowerApps | MicrosoftDocs
-description: Aprenda cómo especificar una vista predeterminada
+description: Aprender a especificar una vista predeterminada
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

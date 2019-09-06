@@ -4,6 +4,7 @@ description: null
 keywords: null
 ms.author: nabuthuk
 manager: kvivek
+author: nkrb
 ms.date: 04/23/2019
 ms.service: powerapps
 ms.suite: ''
@@ -20,17 +21,23 @@ ms.assetid: ad8659f7-f566-43db-bed1-c8484c114a59
 
 ## <a name="properties"></a>Propiedades
 
-## <a name="entitytype"></a>entityType
+## <a name="etn"></a>etn
 
-El nombre lógico de la entidad. Solo lectura
+Nombre del tipo de entidad. Solo lectura
 
 **Tipo**: `string`
 
-## <a name="id"></a>id.
+## <a name="id"></a>id
 
 El identificador del registro. De solo lectura.
 
-**Tipo**: `string`
+**Tipo**: `object`
+
+El objeto `id` contiene la siguiente propiedad:
+
+|Nombre|Escriba|Descripción|
+|--|--|--|
+|`guid`|`string`|00000000-0000-0000-0000-000000000000|
 
 ## <a name="name"></a>nombre
 

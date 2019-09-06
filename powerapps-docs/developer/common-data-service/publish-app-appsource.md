@@ -1,5 +1,5 @@
 ---
-title: Publicar su aplicación en AppSource (Common Data Service) | Microsoft Docs
+title: Publicar la aplicación en AppSource (Common Data Service) | Microsoft Docs
 description: 'Obtenga información sobre cómo publicar PowerApps en Microsoft AppSource para que los suscriptores puedan encontrarla, probarla y comprarla.'
 ms.custom: ''
 ms.date: 03/20/2019
@@ -33,11 +33,11 @@ Utilice los pasos siguientes para prepararse para enviar su aplicación para que
 > 
 > [Paso 5: Almacenar el paquete en Azure Storage](store-appsource-package-azure-storage.md)
 
-## <a name="submit-your-app-on-cloud-partner-portal"></a>Enviar la aplicación en el portal de Socio en la nube
+## <a name="submit-your-app-on-partner-center"></a>Enviar la aplicación en Centro de partners
 
-Una vez que la aplicación esté lista para el envío, utilice el [Portal de Socio en la nube](https://cloudpartner.azure.com) para enviar su aplicación para que aparezca en Microsoft AppSource. El acceso al portal de Socio en la nube y a la documentación relacionada solo está disponible para los miembros de Microsoft Partner Network.
+Una vez que la aplicación esté lista para el envío, utilice el [Centro de partners](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) en la nube para enviar su aplicación para que aparezca en Microsoft AppSource. El acceso al Centro de partners y a la documentación relacionada solo está disponible para los miembros de Microsoft Partner Network.
 
-Más información: [Pasos siguientes: enviar la aplicación en el portal de Socio en la nube](next-steps-submit-app-cloud-partner-portal.md)
+Más información: [Pasos siguientes: enviar la aplicación en el Centro de partners](next-steps-submit-app-cloud-partner-portal.md)
   
 ## <a name="checklists"></a>Listas de comprobación
 

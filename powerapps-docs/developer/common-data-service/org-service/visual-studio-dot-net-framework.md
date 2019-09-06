@@ -32,9 +32,7 @@ Los complementos y ensamblados de flujo de trabajo personalizadas deben usar .NE
 > [!TIP]
 > Al instalar .NET Framework 4.6.2 en el equipo de desarrollo, asegúrese de instalar el paquete de desarrollador y no sólo el tiempo de ejecución. Esto habilitará el marco 4.6.2 para elegirlo en el cuadro de diálogo **Nuevo proyecto** de Visual Studio y en el menú desplegable del marco de destino de las propiedades del proyecto.  
 
-Puede usar una edición Visual Studio Community para desarrollo. 
-
-[comment]: <> (Sin embargo, el uso de extensiones no se admite en la edición Express por lo que no podrá instalar extensiones útiles en esa versión de Visual Studio)
+Puede usar una edición Visual Studio Community para desarrollo. Sin embargo, el uso de extensiones no se admite en la edición Express por lo que no podrá instalar extensiones útiles en esa versión de Visual Studio.
 
 Más información: [Compatibilidad de versiones de .NET Framework](/dynamics365/customer-engagement/developer/supported-extensions#SupportNET)
 

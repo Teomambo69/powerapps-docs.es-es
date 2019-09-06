@@ -31,43 +31,49 @@ Normalmente el registro de aplicaciones en Azure Active Directory se hace median
 El registro de la aplicación también lo puede hacer un desarrollador de aplicaciones o un usuario individual que esté creando una aplicación cliente para conectarse a Customer Engagement y leer y escribir datos en Common Data Service. Utilice los valores de **identificador de aplicación** y **URI de redirección de la aplicación** registrada en el código de autenticación de su aplicación cliente para conectarse al entorno de Common Data Service desde la aplicación cliente y llevar a cabo las operaciones necesarias. Tenga en cuenta que si la aplicación está registrada en el mismo inquilino que el entorno de Common Data Service, no se le presentará un formulario de consentimiento cuando se conecte desde la aplicación cliente al entorno de Common Data Service.
 
 ## <a name="prerequisites"></a>Requisitos previos  
+
 -   El usuario que se registra la aplicación debe tener una cuenta de usuario con el rol de seguridad de administrador del sistema y el rol de administrador global para la suscripción Office 365.  
   
 -   Una suscripción de Azure para el registro de aplicaciones. Una cuenta de prueba también funcionará.  
   
 ## <a name="create-an-application-registration"></a>Crear un registro de la aplicación 
   
-1.  [Iniciar sesión](http://manage.windowsazure.com) en el portal de administración de Azure con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación.<br><br> También puede obtener acceso al portal de administración Azure a través del Office 365 [centro de administración](https://admin.microsoft.com/adminportal) expandiendo el elemento **Centros de administración** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
+1. Iniciar sesión en el [portal de Azure](https://go.microsoft.com/fwlink/?linkid=2083908) con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del Office 365 [centro de administración](https://admin.microsoft.com/adminportal) expandiendo el elemento **Centros de administración** en el panel de navegación de la izquierda y seleccionando **Azure Active Directory**.  
   
-    > [!NOTE]
-    > Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.<br><br> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](https://azure.microsoft.com/pricing/details/active-directory/)  
+   > [!NOTE]
+   > Si no tiene un inquilino de Azure (cuenta) o tiene uno pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) para asociar las dos cuentas.<br><br> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
   
-1. En el portal de administración de Azure, siga los pasos tal como se explica en la sección [Agregar una aplicación](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application) de la Guía de desarrolladores de Azure Active Directory para crear una aplicación. 
+2. En el portal de Azure, seleccione **Azure Active Directory** en el panel izquierdo y seleccione **Registros de la aplicación** y haga clic en **Nuevo registro**.
+    
+    ![Registro de aplicación de Azure](media/azure-app-registrations-page.png "Registro de aplicación de Azure")  
+
+3. En la página **Registrar una aplicación**, especifique la información de registro de la aplicación:
+   - En la sección **Nombre**, escriba un nombre descriptivo de la aplicación que se mostrará a los usuarios.
+   - Seleccione la opción **Cuentas en cualquier directorio de organización** en la sección **Tipos de cuenta admitidos**.
+   - Establezca el **URI de redireccionamiento**.
+   - Haga clic en **Registrar** para crear la aplicación.
+
+      ![Página de registro de nueva aplicación](media/new-app-registration-page.png "Página de registro de nueva aplicación")
+
+5. En la página de **Información general** de la aplicación, mantenga el puntero sobre el valor **Identificador de aplicación (cliente)** y seleccione el icono **Copiar en portapapeles** para copiar el valor ya que deberá especificarlo en el código de autenticación de la aplicación o el archivo app.config si procede.
+
+    ![Copie el identificador de aplicación](media/app-registration-overview-page.png "Copie el identificador de aplicación")
   
-1. Al crear una aplicación de Azure Active Directory, se genera un único **identificador de aplicación** (anteriormente denominado **identificador de cliente**) para la aplicación, y la aplicación recién registrada aparece en la página de aplicaciones registradas. Haga clic en la aplicación para abrir la página de información de la aplicación.
-
-1. En la página de información de la aplicación, mantenga el mouse sobre el valor de **identificador de aplicación** (anteriormente denominado **Id. de cliente**) y seleccione el icono **Hacer clic para copiar** para copiar el valor ya que deberá especificarlo en el código de autenticación de la aplicación o el archivo app.config si procede.
-
-    ![Copie el identificador de aplicación](media/Azure-copy-app-id.png "Copie el identificador de aplicación")
-  
-1. Seleccione **configuración** en la página de información de la aplicación y utilice la opción **URI de redirección** de la página **Configuración** para copiar el valor de la URI de redirección de la aplicación. También puede cambiar y agregar URI adicionales si es necesario. Para una aplicación del tipo **aplicaciones Web o API** se muestra la opción **direcciones URL de respuesta** en lugar de la opción **URI de redirección**.
-
-## <a name="apply-permissions"></a>Aplicar permisos
-
-1. En la página **configuración**, seleccione **permisos requeridos** > **agregar** para agregar permisos para la aplicación registrada.
-
-    ![Agregar permiso de aplicaciones](media/Azure-add-app-permission.png "agregar permiso de aplicaciones")
-  
-1. En la página **agregar acceso de API**:
-    - Seleccione **Seleccionar una API** > **Common Data Service** y, a continuación, haga clic en **Seleccionar**.
-
-      ![Agregar permiso de aplicaciones](media/Azure-add-api-access.png "agregar permiso de aplicaciones")  
+5. Seleccione la pestaña **Manifiesto**, en el editor de manifiesto, establezca la propiedad *allowPublicClient* en **true** y haga clic en **Guardar**.
    
-    - Seleccione **Seleccionar permisos** > **Common Data Service** y, a continuación, haga clic en **Seleccionar**.
-  
-      ![Agregar permiso delegado](media/azure-add-permission.PNG "agregar permiso delegado")  
+    ![Manifiesto de registro de la aplicación](media/app-registration-manifest-page.png "Manifiesto de registro de la aplicación")
 
-    - Seleccione **listo** para agregar el permiso delegado a la aplicación registrada.
+6. Seleccione la pestaña **Permisos de API**, haga clic en **Agregar un permiso**. 
+
+    ![Agregar permiso de aplicaciones](media/azure-api-permissions-page.png "agregar permiso de aplicaciones")
+
+7. Seleccione **Dynamics CRM** en la pestaña **API de Microsoft**.
+    
+    ![Seleccionar API](media/app-registration-select-api-page.png "Seleccionar API")    
+
+8. Haga clic en **Permisos delegados** y active las opciones y haga clic en **Agregar permisos**. 
+    
+    ![Permisos de delegado](media/app-registration-delegate-permissions-page.png "Permisos de delegado")
 
 Esto completa el registro de la aplicación en Azure Active Directory.
 

@@ -3,9 +3,9 @@ title: 'Desarrolladores: Introducción a Common Data Service | Microsoft Docs'
 description: Descubra cómo los desarrolladores pueden agregar valor mediante Common Data Service en PowerApps.
 suite: powerapps
 author: JimDaly
-manager: annbe
+manager: ryjones
 ms.service: powerapps
-ms.date: 03/27/2019
+ms.date: 08/05/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
@@ -31,7 +31,7 @@ Las extensiones más comunes creadas mediante código incluyen la automatizació
 
 ## <a name="integrate-with-external-data"></a>Integrar con datos externos
 
-Las capacidades de administración de datos en Common Data Service no sólo le permiten trabajar con datos en Common Data Service, sinto también interactuar con eficacia con datos externos críticos para su negocio. Más información: 
+Las capacidades de administración de datos en Common Data Service no sólo le permiten trabajar con datos en Common Data Service, sino también interactuar con eficacia con datos externos críticos para su negocio. Más información: 
 
 - [Importar datos](/powerapps/developer/common-data-service/import-data)
 - [Sincronizar datos](/powerapps/developer/common-data-service/data-synchronization)
@@ -45,7 +45,7 @@ Las capacidades de administración de datos en Common Data Service no sólo le p
 Las entidades almacenan datos empresariales con los que trabajará. Es esencial entender lo que son y cómo trabajar con ellas.
 Más información:
 
-- [Entidades Common Data Service](entities.md)
+- [Entidades de Common Data Service](entities.md)
 - [Acerca de la referencia de entidades](reference/about-entity-reference.md)
 
 ## <a name="work-with-metadata"></a>Trabajar con metadatos
@@ -57,7 +57,7 @@ Desarrollar una buena comprensión de los metadatos en el sistema le pueden ayud
 Si va a distribuir extensiones creadas o cualquier personalización de la que dependan, deberá comprender las soluciones. Las soluciones creadas por un usuario son relativamente sencillas de usar y no requieren los conocimientos de un desarrollador. Pero para que un equipo de desarrolladores de sea productivo con soluciones y use los principios de administración del ciclo de vida eficaces de la aplicación requiere un enfoque más avanzado. Más información:
 
  - [Introducción a soluciones](introduction-solutions.md)
- - [Herramienta SolutionPackager toolSolutionPackager](compress-extract-solution-file-solutionpackager.md)
+ - [Herramienta SolutionPackager](compress-extract-solution-file-solutionpackager.md)
  - [Herramienta Package Deployer](./package-deployer/create-packages-package-deployer.md)
  - [Publicar la aplicación en AppSource](publish-app-appsource.md)
 

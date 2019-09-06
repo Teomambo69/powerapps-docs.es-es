@@ -1,8 +1,8 @@
 ---
-title: Ejecución de operaciones por lotes utilizando la API web (Common Data Service)| Microsoft Docs
+title: Ejecutar operaciones por lotes mediante la API web (Common Data Service)| Microsoft Docs
 description: Las operaciones por lotes le permiten agrupar varias operaciones en una sola solicitud HTTP. Lea cómo ejecutar las operaciones por lotes con la API web
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/13/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -103,7 +103,7 @@ Finalmente, se incluye una solicitud GET fuera del conjunto de cambios para devo
  **Solicitud**
 
 ```http 
-POST[Organization URI]/api/data/v9.0/$batch HTTP/1.1  
+POST[Organization URI]/api/data/v9.1/$batch HTTP/1.1  
 Content-Type: multipart/mixed;boundary=batch_AAA123  
 Accept: application/json  
 OData-MaxVersion: 4.0  
@@ -117,26 +117,26 @@ Content-Type: application/http
 Content-Transfer-Encoding:binary  
 Content-ID: 1  
   
-POST[Organization URI]/api/data/v9.0/tasks HTTP/1.1  
+POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1  
 Content-Type: application/json;type=entry  
   
-{"subject":"Task 1 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-000000000001)"}  
+{"subject":"Task 1 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}  
 --changeset_BBB456  
 Content-Type: application/http  
 Content-Transfer-Encoding:binary  
 Content-ID: 2  
   
-POST[Organization URI]/api/data/v9.0/tasks HTTP/1.1  
+POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1  
 Content-Type: application/json;type=entry  
   
-{"subject":"Task 2 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-000000000001)"}  
+{"subject":"Task 2 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}  
 --changeset_BBB456--  
   
 --batch_AAA123  
 Content-Type: application/http  
 Content-Transfer-Encoding:binary  
   
-GET[Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-000000000001)/Account_Tasks?$select=subject HTTP/1.1  
+GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)/Account_Tasks?$select=subject HTTP/1.1  
 Accept: application/json  
   
 --batch_AAA123--  
@@ -155,8 +155,8 @@ Content-ID: 1
   
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-Location:[Organization URI]/api/data/v9.0/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
-OData-EntityId:[Organization URI]/api/data/v9.0/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
+Location:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
+OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
   
 --changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc  
 Content-Type: application/http  
@@ -165,8 +165,8 @@ Content-ID: 2
   
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-Location:[Organization URI]/api/data/v9.0/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
-OData-EntityId:[Organization URI]/api/data/v9.0/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
+Location:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
+OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
   
 --changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc--  
 --batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f  
@@ -178,7 +178,7 @@ Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0  
   
 {  
-  "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#tasks(subject)","value":[  
+  "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#tasks(subject)","value":[  
     {  
       "@odata.etag":"W/\"474122\"","subject":"Task Created with Test Account","activityid":"919c24f3-fafc-e411-80dd-00155d2a68cb"  
     },{  
@@ -203,13 +203,428 @@ Incluya el encabezado preferencia `odata.include-annotations` con las solicitude
 Content-Type: application/http  
 Content-Transfer-Encoding:binary  
   
-GET[Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-000000000001)?$select=name,telephone1,emailaddress1,shippingmethodcode,customersizecode,accountratingcode,followemail,donotemail,donotphone,statuscode HTTP/1.1  
+GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)?$select=name,telephone1,emailaddress1,shippingmethodcode,customersizecode,accountratingcode,followemail,donotemail,donotphone,statuscode HTTP/1.1  
 Accept: application/json  
 Prefer: odata.include-annotations="*"
   
 --batch_AAA123-- 
 ```
 Para obtener más información sobre los encabezados de preferencia, consulte [Preferencia de encabezado](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234).
+
+## <a name="reference-uris-in-an-operation"></a>Hacer referencia a URI en una operación
+
+Puede usar `$parameter`, como `$1``$2`, etc. para hacer referencia a URI usados en un conjunto de cambios anterior en una solicitud por lotes. Esta sección muestra diferentes ejemplos sobre cómo `$parameter` se puede usar en el cuerpo de la solicitud de una operación por lotes para hacer referencia a URI.
+
+### <a name="reference-uris-in-request-body"></a>Hacer referencia a URI en el cuerpo de la solicitud
+
+El siguiente ejemplo muestra cómo dos referencias de URI se pueden usar en una sola operación.
+
+**Solicitud**
+
+```http
+POST [Organization URI]/api/data/v9.1/$batch HTTP/1.1
+Content-Type:  multipart/mixed;boundary=batch_AAA123
+Accept:  application/json
+OData-MaxVersion:  4.0
+OData-Version:  4.0
+
+--batch_AAA123
+Content-Type: multipart/mixed; boundary=changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+POST [Organization URI]/api/data/v9.1/leads HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname":"aaa",
+    "lastname":"bbb"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+POST [Organization URI]/api/data/v9.1/contacts HTTP/1.1
+Content-Type: application/json
+
+{"@odata.type":"Microsoft.Dynamics.CRM.contact","firstname":"Oncall Contact-1111"}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 3
+
+POST [Organization URI]/api/data/v9.1/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"IcM Account",
+    "originatingleadid@odata.bind":"$1",
+    "primarycontactid@odata.bind":"$2"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab--
+--batch_AAA123--
+```
+
+**Respuesta**
+
+```http
+200 OK
+
+--batchresponse_3cace264-86ea-40fe-83d3-954b336c0f4a
+Content-Type: multipart/mixed; boundary=changesetresponse_1a5db8a1-ec98-42c4-81f6-6bc6adcfa4bc
+
+--changesetresponse_1a5db8a1-ec98-42c4-81f6-6bc6adcfa4bc
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/leads(425195a4-7a75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/leads(425195a4-7a75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_1a5db8a1-ec98-42c4-81f6-6bc6adcfa4bc
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/contacts(495195a4-7a75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/contacts(495195a4-7a75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_1a5db8a1-ec98-42c4-81f6-6bc6adcfa4bc
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 3
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/accounts(4f5195a4-7a75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/accounts(4f5195a4-7a75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_1a5db8a1-ec98-42c4-81f6-6bc6adcfa4bc--
+--batchresponse_3cace264-86ea-40fe-83d3-954b336c0f4a--
+```
+
+### <a name="reference-uri-in-request-url"></a>Hacer referencia a URI en dirección URL de la solicitud
+
+El ejemplo ofrecido a continuación muestra cómo puede hacer referencia a un URI usando `$1` en la dirección URL de una solicitud posterior.
+
+**Solicitud**
+
+```http
+POST [Organization URI]/api/data/v9.1/$batch HTTP/1.1
+Content-Type:  multipart/mixed;boundary=batch_AAA123
+Accept:  application/json
+OData-MaxVersion:  4.0
+OData-Version:  4.0
+
+--batch_AAA123
+Content-Type: multipart/mixed; boundary=changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+POST [Organization URI]/api/data/v9.1/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "@odata.type":"Microsoft.Dynamics.CRM.contact",
+  "firstname":"Contact",
+  "lastname":"AAAAAA"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Transfer-Encoding: binary
+Content-Type: application/http
+Content-ID: 2
+
+PUT $1/lastname HTTP/1.1
+Content-Type: application/json
+
+{
+  "value":"BBBBB"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab--
+--batch_AAA123--
+```
+
+**Respuesta**
+
+```http
+200 OK
+
+--batchresponse_2cb48f48-39a8-41ea-aa52-132fa8ab3c2d
+Content-Type: multipart/mixed; boundary=changesetresponse_d7528170-3ef3-41bd-be8e-eac971a8d9d4
+
+--changesetresponse_d7528170-3ef3-41bd-be8e-eac971a8d9d4
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location:[Organization URI]/api/data/v9.1/contacts(f8ea5d2c-8c75-e911-a97a-000d3a34a1bd)
+OData-EntityId:[Organization URI]/api/data/v9.1/contacts(f8ea5d2c-8c75-e911-a97a-000d3a34a1bd)
+
+
+--changesetresponse_d7528170-3ef3-41bd-be8e-eac971a8d9d4
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+
+
+--changesetresponse_d7528170-3ef3-41bd-be8e-eac971a8d9d4--
+--batchresponse_2cb48f48-39a8-41ea-aa52-132fa8ab3c2d--
+```
+
+### <a name="reference-uris-in-url-and-request-body-using-odataid"></a>Hacer referencia a URI en la dirección URL y el cuerpo de la solicitud usando @odata.id
+
+El ejemplo ofrecido a continuación muestra cómo vincular un registro de entidad Contacto a un registro de entidad Cuenta. Al URI del registro de entidad Cuenta se hace referencia como `$1` y al URI del registro de entidad Contacto se hace referencia como `$2`.
+
+**Solicitud**
+
+```http
+POST [Organization URI]/api/data/v9.1/$batch HTTP/1.1
+Content-Type:multipart/mixed;boundary=batch_AAA123
+Accept:application/json
+OData-MaxVersion:4.0
+OData-Version:4.0
+
+--batch_AAA123
+Content-Type: multipart/mixed; boundary=changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+Content-ID:1
+
+POST [Organization URI]/api/data/v9.1/accounts HTTP/1.1
+Content-Type: application/json
+
+{"@odata.type":"Microsoft.Dynamics.CRM.account","name":"IcM Account"}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+Content-ID:2
+
+POST [Organization URI]/api/data/v9.1/contacts HTTP/1.1
+Content-Type:application/json
+
+{"@odata.type":"Microsoft.Dynamics.CRM.contact","firstname":"Oncall Contact"}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+Content-ID:3
+
+PUT $1/primarycontactid/$ref HTTP/1.1
+Content-Type:application/json
+
+{"@odata.id":"$2"}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab--
+--batch_AAA123--
+```
+
+**Respuesta**
+
+```http
+200 OK
+
+--batchresponse_0740a25c-d8e1-41a5-9202-1b50a297864c
+Content-Type: multipart/mixed; boundary=changesetresponse_19ca0da8-d8bb-4273-a3f7-fe0d0fadfe5f
+
+--changesetresponse_19ca0da8-d8bb-4273-a3f7-fe0d0fadfe5f
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location:[Organization URI]/api/data/v9.1/accounts(3dcf8c02-8c75-e911-a97a-000d3a34a1bd)
+OData-EntityId:[Organization URI]/api/data/v9.1/accounts(3dcf8c02-8c75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_19ca0da8-d8bb-4273-a3f7-fe0d0fadfe5f
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location:[Organization URI]/api/data/v9.1/contacts(43cf8c02-8c75-e911-a97a-000d3a34a1bd)
+OData-EntityId:[Organization URI]/api/data/v9.1/contacts(43cf8c02-8c75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_19ca0da8-d8bb-4273-a3f7-fe0d0fadfe5f
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 3
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+
+--changesetresponse_19ca0da8-d8bb-4273-a3f7-fe0d0fadfe5f--
+--batchresponse_0740a25c-d8e1-41a5-9202-1b50a297864c--
+```
+
+### <a name="reference-uris-in-url-and-navigation-properties"></a>Hacer referencia a URI en propiedades de dirección URL y navegación
+
+El ejemplo ofrecido a continuación muestra cómo usar el URI de la organización de un registro de contacto y vincularlo a un registro de cuenta utilizando la propiedad de navegación de un solo valor `primarycontactid`. Al URI del registro de entidad Cuenta se hace referencia como `$1` y al URI del registro de entidad Contacto se hace referencia como `$2` en la solicitud `PATCH`.
+
+**Solicitud**
+
+```http
+POST [Organization URI]/api/data/v9.1/$batch HTTP/1.1
+Content-Type:multipart/mixed;boundary=batch_AAA123
+Accept:application/json
+OData-MaxVersion:4.0
+OData-Version:4.0
+
+--batch_AAA123
+Content-Type: multipart/mixed; boundary=changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+POST [Organization URI]/api/data/v9.1/accounts HTTP/1.1
+Content-Type: application/json
+
+{"@odata.type":"Microsoft.Dynamics.CRM.account","name":"IcM Account"}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+POST [Organization URI]/api/data/v9.1/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "@odata.type":"Microsoft.Dynamics.CRM.contact",
+  "firstname":"Oncall Contact"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 3
+
+PATCH $1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "primarycontactid@odata.bind":"$2"
+}
+
+--changeset_dd81ccab-11ce-4d57-b91d-12c4e25c3cab--
+--batch_AAA123--
+```
+**Respuesta**
+
+```http
+200 OK
+
+--batchresponse_9595d3ae-48f6-414f-a3aa-a3a33559859e
+Content-Type: multipart/mixed; boundary=changesetresponse_0c1567a5-ad0d-48fa-b81d-e6db05cad01c
+
+--changesetresponse_0c1567a5-ad0d-48fa-b81d-e6db05cad01c
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/accounts(6cd81853-7b75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/accounts(6cd81853-7b75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_0c1567a5-ad0d-48fa-b81d-e6db05cad01c
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/contacts(6ed81853-7b75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/contacts(6ed81853-7b75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_0c1567a5-ad0d-48fa-b81d-e6db05cad01c
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 3
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location: [Organization URI]/api/data/v9.1/accounts(6cd81853-7b75-e911-a97a-000d3a34a1bd)
+OData-EntityId: [Organization URI]/api/data/v9.1/accounts(6cd81853-7b75-e911-a97a-000d3a34a1bd)
+
+--changesetresponse_0c1567a5-ad0d-48fa-b81d-e6db05cad01c--
+--batchresponse_9595d3ae-48f6-414f-a3aa-a3a33559859e--
+```
+
+> [!NOTE]
+> Al hacer referencia a un identificador de contenido antes de que se haya declarado en el cuerpo de la solicitud se devolverá la solicitud errónea **HTTP 400** del error.
+>
+> El ejemplo ofrecido debajo muestra un cuerpo de la solicitud que puede producir este error.
+> 
+> **Cuerpo de la solicitud**
+> 
+> ```http
+> --batch_AAA123
+> Content-Type: multipart/mixed; boundary=changeset_BBB456
+> 
+> --changeset_BBB456
+> Content-Type: application/http
+> Content-Transfer-Encoding:binary
+> Content-ID: 2
+> 
+> POST [Organization URI]/api/data/v9.1/phonecalls HTTP/1.1
+> Content-Type: application/json;type=entry
+> 
+> {
+>     "phonenumber":"911",
+>     "regardingobjectid_account_phonecall@odata.bind" : "$1"
+> }
+> 
+> --changeset_BBB456
+> Content-Type: application/http
+> Content-Transfer-Encoding:binary
+> Content-ID: 1
+> 
+> POST [Organization URI]/api/data/v9.1/accounts HTTP/1.1
+> Content-Type: application/json;type=entry
+> 
+> {
+>     "name":"QQQQ",
+>     "revenue": 1.50
+> }
+> 
+> --changeset_BBB456--
+> --batch_AAA123--
+> ```
+>
+> **Respuesta**
+> 
+> ```http
+> HTTP 400 Bad Request
+> Content-ID Reference: '$1' does not exist in the batch context.
+> ```
 
 ### <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
 title: Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/25/2019
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -45,14 +45,14 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
 - Cuando se ve un formulario controlado por modelos con una aplicación incrustada de lienzo, si recibe un mensaje de error como “parece que no tiene acceso a la aplicación. Solicite al propietario que la comparta con usted” asegúrese de que el autor ha compartido la aplicación incrustada de lienzo con usted. Más información: [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md).
 
 ## <a name="enable-an-embedded-canvas-app"></a>Habilitar una aplicación incrustada de lienzo
-1. Seleccione el control de subcuadrícula o el campo que está personalizado para mostrarse como una aplicación incrustada de lienzo.
-2. En el diálogo **Propiedades de campo** (o **Establecer propiedades** para la subcuadrícula), seleccione la pestaña **Controles**.
+1. Seleccione el campo que está personalizado para mostrarse como una aplicación incrustada de lienzo.
+2. En el diálogo **Propiedades de campo**, seleccione la pestaña **Controles**.
 3. En la lista de controles seleccione **Aplicación de lienzo** y seleccione la opción **Web** .
 4. Seleccione **Aceptar**.
 
 ## <a name="disable-an-embedded-canvas-app"></a>Deshabilitar una aplicación incrustada de lienzo
-1. Seleccione el control de subcuadrícula o el campo que está personalizado para mostrarse como una aplicación incrustada de lienzo.
-2. En el diálogo **Propiedades de campo** (o **Establecer propiedades** para la subcuadrícula), seleccione la pestaña **Controles**.
+1. Seleccione el campo que está personalizado para mostrarse como una aplicación incrustada de lienzo.
+2. En el diálogo **Propiedades de campo**, seleccione la pestaña **Controles**.
 3. En la lista de controles seleccione el control predeterminado y seleccione la opción **Web**.
 4. Seleccione **Aceptar**.
 

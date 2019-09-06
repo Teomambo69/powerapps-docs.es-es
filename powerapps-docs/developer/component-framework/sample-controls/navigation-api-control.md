@@ -7,6 +7,7 @@ ms.date: 04/23/2019
 ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="implementing-navigation-api-component"></a>Implementar componente API de navegación

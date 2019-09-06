@@ -3,6 +3,7 @@ title: API de estado de control | Microsoft Docs
 description: null
 keywords: PowerApps; Marco de componentes de PowerApps
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

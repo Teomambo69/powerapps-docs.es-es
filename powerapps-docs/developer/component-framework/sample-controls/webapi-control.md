@@ -7,6 +7,7 @@ ms.date: 04/23/2019
 ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
+author: nkrb
 ---
 # <a name="implementing-web-api-component"></a>Implementar componente de API web
 
@@ -28,6 +29,9 @@ El componente de API web está diseñado para realizar crear, recuperar, actuali
             <code path="index.ts" order="1" />
             <css path="css/TS_WebAPI.css" order="2" />
         </resources>
+        <feature-usage>
+<uses-feature name="WebAPI" required="true" />
+</feature-usage>
     </control>
 </manifest>
 ```

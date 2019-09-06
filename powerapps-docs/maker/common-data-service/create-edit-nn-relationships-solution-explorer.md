@@ -28,7 +28,7 @@ El explorador de soluciones proporciona una forma de crear y editar relaciones N
 
 El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información:
 - [Crear relaciones entre entidades de varios a varios (N:N)](create-edit-nn-relationships.md)
-- [Crear relaciones entre entidades de varios a varios en Common Data Service mediante el portal PowerApps](create-edit-nn-relationships-portal.md)
+- [Crear relaciones varios a varios entre entidades en Common Data Service con el portal PowerApps](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
@@ -107,5 +107,5 @@ Al eliminar la relación se eliminará la entidad de relación creada. Se perder
 ### <a name="see-also"></a>Vea también
 
 [Crear relaciones entre entidades de varios a varios (N:N)](create-edit-nn-relationships.md)<br />
-[Crear relaciones entre entidades de varios a varios en Common Data Service mediante el portal PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Crear relaciones varios a varios entre entidades en Common Data Service con el portal PowerApps](create-edit-nn-relationships-portal.md)<br />
 [Crear y editar relaciones de entidad de 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)

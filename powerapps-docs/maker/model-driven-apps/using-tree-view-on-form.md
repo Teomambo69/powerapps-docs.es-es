@@ -46,4 +46,5 @@ Puede expandir o contraer nodos en la vista de árbol para ver u ocultar los ele
 [Agregar, mover o eliminar secciones en un formulario usando el diseñador de formularios](add-move-or-delete-sections-on-form.md)  
 [Agregar, mover o eliminar pestañas en un formulario usando el diseñador de formularios](add-move-or-delete-tabs-on-form.md)  
 [Propiedades disponibles en el diseñador de formularios](form-designer-properties.md)  
+[Configurar propiedades de encabezado en el diseñador de formularios](form-designer-header-properties.md)   
 [Crear y editar campos](../common-data-service/create-edit-field-portal.md)

@@ -7,7 +7,7 @@ ms.topic: index-page
 ms.assetid: null
 author: nkrb
 ms.author: nabuthuk
-manager: Jdaly
+manager: kvivek
 ---
 # <a name="powerapps-component-framework-api-reference"></a>Referencia de la API de PowerApps component framework
 

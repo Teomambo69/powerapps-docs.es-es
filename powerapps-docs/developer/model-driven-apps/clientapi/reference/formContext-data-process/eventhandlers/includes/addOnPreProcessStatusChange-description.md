@@ -1,0 +1,1 @@
+Agrega una función como controlador de eventos del evento [OnPreProcessStatusChange](../../../events/onpreprocessstatuschange.md) de modo que sea llamado **antes** de que cambie el estado del flujo de proceso de negocio.

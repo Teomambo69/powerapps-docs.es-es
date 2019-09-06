@@ -54,7 +54,7 @@ Cuando selecciona **Nativo**, debe proporcionar el identificador uniforme de rec
 
 Si su aplicación va a ser un cliente que permite al usuario autenticado realizar operaciones, debe configurar la aplicación para que tenga Access Dynamics 365 como permiso delegado de los usuarios de la organización.
 
-Para ver los pasos específicos necesarios para hacerlo, consulte [Tutorial: Registrar una aplicación con Azure Active Directory > Aplicar permisos](walkthrough-register-app-azure-active-directory.md#apply-permissions).
+Para ver los pasos específicos necesarios para hacerlo, consulte [Tutorial: Registrar una aplicación con Azure Active Directory > Aplicar permisos](walkthrough-register-app-azure-active-directory.md).
 
 <!-- TODO Verify this -->
  Si su aplicación va a usar la autenticación entre servidores (S2S), este paso no es obligatorio. Esa configuración requiere un usuario del sistema específico y las operaciones se realizarán por la cuenta de ese usuario en lugar de cualquier usuario que tenga que ser autenticado.

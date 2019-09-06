@@ -44,4 +44,11 @@ La interfaz del diseñador de formularios tiene las siguientes áreas:
    ![Diseño del Diseñador de formularios](media/form-designer.png)
 
 ## <a name="see-also"></a>Vea también
-[Crear o editar formularios usando el diseñador de formularios](create-and-edit-forms.md)
+[Crear o editar formularios usando el diseñador de formularios](create-and-edit-forms.md)  
+[Agregar, mover o eliminar campos en un formulario usando el diseñador de formularios](add-move-or-delete-fields-on-form.md)  
+[Agregar, mover o eliminar secciones en un formulario usando el diseñador de formularios](add-move-or-delete-sections-on-form.md)  
+[Agregar, mover o eliminar pestañas en un formulario usando el diseñador de formularios](add-move-or-delete-tabs-on-form.md)  
+[Propiedades disponibles en el diseñador de formularios](form-designer-properties.md)  
+[Configurar propiedades de encabezado en el diseñador de formularios](form-designer-header-properties.md)    
+[Use la vista de árbol del diseñador de formularios](using-tree-view-on-form.md)  
+[Crear y editar campos](../common-data-service/create-edit-field-portal.md)

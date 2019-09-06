@@ -1,6 +1,6 @@
 ---
-title: 'Paso 4: Crear un paquete de AppSource para la aplicación (Common Data Service) | Microsoft Docs'
-description: Obtenga información sobre cómo crear un paquete de AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios.
+title: 'Paso 4: Crear un paquete AppSource para la aplicación (Common Data Service) | Microsoft Docs'
+description: Obtenga información sobre cómo crear un paquete AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -15,17 +15,17 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="step-4-create-an-appsource-package-for-your-app"></a>Paso 4: Crear un paquete de AppSource para la aplicación
+# <a name="step-4-create-an-appsource-package-for-your-app"></a>Paso 4: Crear un paquete AppSource para la aplicación
 
-Debe crear un paquete de AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios. Un paquete AppSource consta de los archivos siguientes:
+Debe crear un paquete AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios. Un paquete AppSource consta de los archivos siguientes:
 
 |Archivo|Descripción|
 |--|--|
 |Archivo de paquete|Un archivo de paquete utilizado por la herramienta Package Deployer para implementar las soluciones y los datos de la configuración de prueba en varios idiomas.|
-|[Tipos_contenido].xml|Archivo que proporciona información de tipo MIME sobre las extensiones de tipos de archivo en el paquete de AppSource. Normalmente son tipos de archivos .config, .dll, .exe, .xml y .zip, pero se puede agregar prácticamente cualquier tipo de archivo que sea compatible con Windows.|
+|[Content_Types].xml|Archivo que proporciona información de tipo MIME sobre las extensiones de tipos de archivo en el paquete AppSource. Normalmente son tipos de archivos .config, .dll, .exe, .xml y .zip, pero se puede agregar prácticamente cualquier tipo de archivo que sea compatible con Windows.|
 |Archivo de icono|Un archivo de imagen para el icono de paquete appsource; el tamaño debería ser de 32 x 32 píxeles. Los formatos de imagen válidos son PNG y JPG.|
 |Archivo HTML|Archivo que contiene los términos de licencia.|
-|input.xml|Archivos que describen el activos del paquete de AppSource.|
+|input.xml|Archivos que describen el activos del paquete AppSource.|
 
 
 ## <a name="create-a-package-file"></a>Crear un archivo de paquete
@@ -40,7 +40,7 @@ Un paquete le permite agrupar y distribuir varios archivos relacionados con la a
   
     - **\<PackageName>.dll**: el ensamblado contiene el código personalizado para el paquete. Por ejemplo: **SamplePackage.dll**.
 
-2. A continuación, cree un archivo **[Tipo_contenido].xml** que proporcione información de tipo MIME de las extensiones de tipos de archivo que se incluyen en su paquete. Esto es independiente del archivo que se volverá a incluir en el paquete de AppSource. Aquí tiene un contenido de ejemplo de un archivo Tipos_contenido].xml con tipos de archivo enumerados:
+2. A continuación, cree un archivo **[Content_Types].xml** que proporcione información de tipo MIME de las extensiones de tipos de archivo que se incluyen en su paquete. Esto es independiente del archivo que se volverá a incluir en el paquete AppSource. Aquí tiene un contenido de ejemplo de un archivo Tipos_contenido].xml con tipos de archivo enumerados:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -62,7 +62,7 @@ Un paquete le permite agrupar y distribuir varios archivos relacionados con la a
 3. Comprima (zip) los archivos siguientes en un archivo denominado *package.zip*:
    - Carpeta de paquete (PkgFolder)
    - Paquete de dll (SamplePackage.dll)
-   - [Tipos_contenido].xml
+   - [Content_Types].xml
 
      Para comprimir estos archivos, vaya a la carpeta donde estos archivos están presentes, selecciónelos todos, haga clic con el botón derecho del mouse y seleccione **Enviar a** > **carpeta comprimida (zip)**.
 
@@ -70,11 +70,11 @@ Un paquete le permite agrupar y distribuir varios archivos relacionados con la a
 
 4. Cambie el nombre del archivo .zip por **package.zip**.
 
-## <a name="create-contenttypesxml"></a>Cree [Tipos_contenido].xml
+## <a name="create-content_typesxml"></a>Crear [Content_Types].xml
 
-Puede volver a utilizar el archivo **[Tipos_contenido].xml** que ha creado en la sección anterior en el paso 2.
+Puede volver a utilizar el archivo **[Content_Types].xml** que ha creado en la sección anterior en el paso 2.
 
-## <a name="create-an-icon-for-your-appsource-package"></a>Cree un icono para el paquete de AppSource
+## <a name="create-an-icon-for-your-appsource-package"></a>Cree un icono para el paquete AppSource
 
 Cree un archivo de icono del tamaño de 32 x 32 para mostrar junto con el nombre de la solución preferida y la descripción en el portal del centro de administración de Dynamics 365. Los formatos de archivo válidos son PNG y JPG.
 
@@ -115,7 +115,6 @@ Aquí tiene una descripción de los elementos del archivo **input.xml**.
 |ProviderName|Nombre del proveedor de soluciones. Si lo crea un equipo interno de Microsoft, especifique **Microsoft**.|
 |PackageFile|Nombre de paquete (archivo .zip) para la herramienta Package Deployer. Este archivo zip debería contener el conjunto de paquete, la carpeta de paquete con los activos de la aplicación y el archivo Tipos_contenido.xml. Por ejemplo, el archivo package.zip creado en la sección [crear un archivo de paquete](#create-a-package-file).|
 |SolutionAnchorName|Nombre del archivo zip de la solución en el paquete que se usa para el nombre y la descripción de los activos de la solución.|
-|SolutionAnchorName|Nombre del archivo zip de la solución en el paquete que se usa para el nombre y la descripción de los activos de la solución.|
 |StartDate|Fecha en la que la aplicación comienza a estar disponible en AppSource. El formato es DD/MM/AAAA.|
 |Fecha de finalización|Fecha en la que la aplicación deja de estar disponible en AppSource. El formato es DD/MM/AAAA.|
 |SupportedCountries|Lista separada por comas de países o regiones donde la aplicación debería estar disponible. En el momento de escribir este artículo, la lista de países admitidos es la siguiente: AE,AL,AM,AO,AR,AT,AU,AZ,BA,BB,BD,BE,BG,BH,BM,BN,BO,BR,BY,CA,CH,CI,CL,CM,CO,CR,CV,CW,CY,CZ,DE,DK,DO,DZ,EC,EE,EG,ES,FI,FR,GB,GE,GH,GR,GT,HK,HN,HR,HU,ID,IE,IL,IN,IQ,IS,IT,JM,JO,JP,KE,KG,KN,KR,KW,KY,KZ,LB,LK,LT,LU,LV,LY,MA,MC,MD,ME,MK,MN,MO,MT,MU,MX,MY,NG,NI,NL,NO,NZ,OM,PA,PE,PH,PK,PL,PR,PS,PT,PY,QA,RO,RS,RU,RW,SA,SE,SG,SI,SK,SN,SV,TH,TM,TN,TR,TT,TW,UA,US,UY,UZ,VE,VI,VN,ZA,ZW|
@@ -126,7 +125,7 @@ Aquí tiene una descripción de los elementos del archivo **input.xml**.
 
 El último paso consiste en agregar todos los componentes que haya creado previamente en un archivo único comprimido (zip), que será el paquete de origen de la aplicación.
 
-1. Desplácese a la carpeta que contiene el archivo de paquete [Tipo_contenido]XML, el icono, el archivo de términos de la licencia (HTML), selecciónelos todos, haga clic con el botón derecho del mouse en y seleccione **Enviar a** > **Carpeta comprimida (zip)**.
+1. Desplácese a la carpeta que contiene el archivo de paquete [Content_Types].xml, el icono, el archivo de términos de la licencia (HTML), selecciónelos todos, haga clic con el botón derecho del mouse en y seleccione **Enviar a** > **Carpeta comprimida (zip)**.
 
     ![Paquete AppSource](media/appsource-package.png)
 
@@ -137,4 +136,4 @@ El último paso consiste en agregar todos los componentes que haya creado previa
  
 
 > [!div class="nextstepaction"]
-> [Paso 5: Almacenar el paquete de AppSource en Azure Storage](store-appsource-package-azure-storage.md) 
+> [Paso 5: Almacenar el paquete AppSource en Azure Storage](store-appsource-package-azure-storage.md) 

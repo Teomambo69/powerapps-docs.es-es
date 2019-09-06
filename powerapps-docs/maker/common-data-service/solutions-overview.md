@@ -33,14 +33,7 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 > [!NOTE]
 >  Si es un ISV que crea una aplicación que va a distribuir, deberá usar soluciones. Para obtener más información acerca del uso de soluciones, vea [Guía para desarrolladores: Introducción a soluciones](/powerapps/developer/common-data-service/introduction-solutions).  
   
- Si solo está interesado en crear aplicaciones de PowerApps para el uso de la organización o en personalizar aplicaciones Dynamics 365 for Customer Engagement, esto es lo que necesita saber sobre las soluciones:  
-  
--   Crear soluciones es opcional. Puede crear o personalizar aplicaciones en su entorno de PowerApps directamente sin tener que crear una solución.  
-  
--   Al personalizar directamente el entorno de PowerApps sin crear ninguna solución, trabaja con una solución especial denominada **Solución predeterminada de Common Data Service**. Esta solución contiene todas las personalizaciones que realiza en el entorno de PowerApps.  
-  
--   Hay otra solución especial llamada **Solución predeterminada**. Esta solución contiene todos los componentes en el sistema, es creados por usted o por otros. Puede exportar la **Solución predeterminada** para crear una copia de seguridad de las personalizaciones que ha definido en su organización. Esto es una buena práctica para realizar copia de seguridad de los cambios en un escenario de peor caso.  
-  
+
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>Componentes  
  Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. La siguiente es una lista de componentes que puede ver en una solución:  

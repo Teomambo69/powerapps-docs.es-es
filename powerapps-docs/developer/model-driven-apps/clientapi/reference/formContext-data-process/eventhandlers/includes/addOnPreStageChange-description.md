@@ -1,0 +1,1 @@
+Agrega una función como controlador de eventos del evento [AddOnPreStageChange](../addonprestagechange.md) de modo que sea llamado **antes** de que cambie la fase del flujo de proceso de negocio.
