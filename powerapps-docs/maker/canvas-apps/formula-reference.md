@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/14/2018
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
+ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736218"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008977"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -34,7 +34,7 @@ Otros elementos incluyen:
 * [Controles y sus propiedades](reference-properties.md)
 * [Tipos de datos](functions/data-types.md)
 
-## <a name="a"></a>A
+## <a name="a"></a>Una
 **[Abs](functions/function-numericals.md)** : valor absoluto de un número.  
 
 **[Acceleration](functions/signals.md)** : lee el sensor de aceleración del dispositivo.
@@ -47,11 +47,11 @@ Otros elementos incluyen:
 
 **[And](functions/function-logicals.md)** : lógica booleana Y.  Devuelve **true** si todos los argumentos son **true**.  También puede usar el [operador **&&** ](functions/operators.md).
 
-**[Aplicación](functions/object-app.md)**  : proporciona información acerca de la aplicación y el control sobre el comportamiento de la aplicación que se está ejecutando.
+**[Aplicación](functions/object-app.md)** : proporciona información sobre la aplicación que se está ejecutando actualmente y el control sobre el comportamiento de la aplicación.
 
 **[Asin](functions/function-trig.md)** : devuelve el arco seno de un número, en radianes.
 
-**[AsType](functions/function-astype-istype.md)**  : trata una referencia de registro como un tipo de entidad concreto.
+**[Astype](functions/function-astype-istype.md)** : trata una referencia de registro como un tipo de entidad específico.
 
 **[Atan](functions/function-trig.md)** : devuelve el arco tangente de un número, en radianes.
 
@@ -187,12 +187,12 @@ Otros elementos incluyen:
 
 **[IsToday](functions/function-now-today-istoday.md)** : comprueba si un valor de fecha y hora coincide con algún momento del día actual.
 
-**[IsType](functions/function-astype-istype.md)**  : comprueba si una referencia de registro se refiere a un tipo de entidad concreto.
+**[IsType](functions/function-astype-istype.md)** : comprueba si una referencia de registro hace referencia a un tipo de entidad específico.
 
 ## <a name="j"></a>J
-**[JSON](functions/function-json.md)**  -genera una cadena de texto JSON para una tabla, un registro o un valor.
+**[JSON](functions/function-json.md)** : genera una cadena de texto JSON para una tabla, un registro o un valor.
 
-## <a name="l"></a>Grande
+## <a name="l"></a>L
 **[Language](functions/function-language.md)** : devuelve la etiqueta de idioma del usuario actual.
 
 **[Last](functions/function-first-last.md)** : devuelve el último registro de una tabla.
@@ -215,10 +215,10 @@ Otros elementos incluyen:
 
 **[Lower](functions/function-lower-upper-proper.md)** : convierte todas las letras de una cadena de texto en minúsculas.
 
-## <a name="m"></a>Mediana
-**[Coincidencia](functions/function-ismatch.md)**  : extrae una subcadena según un patrón.  Se pueden usar expresiones regulares.
+## <a name="m"></a>M
+**[Match](functions/function-ismatch.md)** : extrae una subcadena basada en un patrón.  Se pueden usar expresiones regulares.
 
-**[MatchAll](functions/function-ismatch.md)**  : extrae varias subcadenas en función de un patrón.  Se pueden usar expresiones regulares.
+**[MatchAll](functions/function-ismatch.md)** : extrae varias subcadenas basadas en un patrón.  Se pueden usar expresiones regulares.
 
 **[Max](functions/function-aggregates.md)** : valor máximo de una expresión de tabla o un conjunto de argumentos.
 
@@ -268,7 +268,7 @@ Otros elementos incluyen:
 
 **[Refresh](functions/function-refresh.md)** : actualiza los registros de un origen de datos.
 
-**[Relacionar](functions/function-relate-unrelate.md)**  – se relaciona con los registros de dos entidades a través de una relación uno a varios o varios a varios.
+**[Relacionar](functions/function-relate-unrelate.md)** : relaciona los registros de dos entidades a través de una relación de uno a varios o de varios a varios.
 
 **[Remove](functions/function-remove-removeif.md)** : quita uno o más registros específicos de un origen de datos.
 
@@ -305,6 +305,8 @@ Otros elementos incluyen:
 
 **[Set](functions/function-set.md)** : establece el valor de una variable global.
 
+**[SetFocus](functions/function-setfocus.md)** : mueve el foco de entrada a un control concreto.
+
 **[ShowColumns](functions/function-table-shaping.md)** : devuelve una tabla exclusivamente con las columnas seleccionadas.
 
 **[Shuffle](functions/function-shuffle.md)** : reordena aleatoriamente los registros de una tabla.
@@ -336,7 +338,7 @@ Otros elementos incluyen:
 
 **[Tan](functions/function-trig.md)** : devuelve la tangente de un ángulo especificado en radianes.
 
-**[Texto](functions/function-text.md)**  : convierte cualquier valor y da formato a un valor de número o fecha y hora en una cadena de texto.
+**[Texto](functions/function-text.md)** : convierte cualquier valor y da formato a un número o un valor de fecha y hora a una cadena de texto.
 
 **[ThisItem](functions/operators.md#thisitem-operator)** : cuando se está en una galería o un formulario, devuelve los datos para el elemento actual del contenedor.
 
@@ -355,7 +357,7 @@ Otros elementos incluyen:
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** : quita una agrupación.
 
-**[Anular la relación](functions/function-relate-unrelate.md)**  – Unrelates registros de dos entidades de una relación uno a varios o varios a varios.
+No **[relacionar](functions/function-relate-unrelate.md)** : no relaciona los registros de dos entidades de una relación de uno a varios o de varios a varios.
 
 **[Update](functions/function-update-updateif.md)** : reemplaza un registro en un origen de datos.
 
@@ -378,6 +380,8 @@ Otros elementos incluyen:
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** : recupera la parte de día de la semana de un valor de fecha y hora.
+
+**[With](functions/function-with.md)** : calcula valores y realiza acciones para un único registro, incluidos los registros insertados de valores con nombre.
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** : recupera la parte de año de un valor de fecha y hora.  
