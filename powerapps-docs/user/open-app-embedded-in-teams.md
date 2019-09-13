@@ -1,13 +1,13 @@
 ---
 title: Adición de una aplicación a Microsoft Teams | Microsoft Docs
 description: Vea cómo agregar una aplicación a un canal de Microsoft Teams para que los usuarios con los que la comparta puedan abrirla en ese canal.
-author: mgblythe
+author: mduelae
 manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 11/16/2018
-ms.author: matp
+ms.author: mduelae
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34fc4f9603ebfcb9944b871f211a6b1541235ed5
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
+ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321664"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848236"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
