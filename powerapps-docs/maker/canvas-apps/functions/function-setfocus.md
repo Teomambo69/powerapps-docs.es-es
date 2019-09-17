@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/17/2019
 ms.locfileid: "71038151"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="setfocus-function-in-powerapps"></a>Función SetFocus en PowerApps
 Mueve el foco de entrada a un control concreto. 
@@ -82,12 +83,12 @@ Para crear este ejemplo:
 1. Establezca la propiedad **texto** de este control en la fórmula `"Use Shipping address as Billing address"`.
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **BillingName**.
 1. Establezca la propiedad **predeterminada** de este control en la fórmula `ShippingName`.
-1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
+1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **BillingAddress**.
 1. Establezca la propiedad **predeterminada** de este control en la fórmula `ShippingAddress`.
-1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
+1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
 1. Establezca la propiedad **default** de la casilla de verificación en la `true`fórmula.  De forma predeterminada, la dirección de facturación usará el mismo valor que la dirección de envío.
-1. Establezca la propiedad **alcomprobar** de la casilla en la fórmula `Reset( BillingName ); Reset( BillingAddress )`.  Si el usuario decide sincronizar las direcciones de envío y facturación, se borrará cualquier entrada del usuario en los campos de dirección de facturación, lo que permitirá que las propiedades **predeterminadas** de cada una de ellas extraigan los valores de los campos de dirección de envío correspondientes.
+1. Establezca la propiedad **alcomprobar** de la casilla en la fórmula `Reset( BillingName );; Reset( BillingAddress )`.  Si el usuario decide sincronizar las direcciones de envío y facturación, se borrará cualquier entrada del usuario en los campos de dirección de facturación, lo que permitirá que las propiedades **predeterminadas** de cada una de ellas extraigan los valores de los campos de dirección de envío correspondientes.
 1. Establezca la propiedad **AlDesactivar** de la casilla de verificación en la `SetFocus( BillingName )`fórmula.  Si el usuario elige tener una dirección de facturación diferente, se moverá el foco al primer control en la dirección de facturación.  Los controles ya se habrán habilitado debido a sus propiedades **DisplayMode** .
 
 ### <a name="focus-on-validation-issues"></a>Céntrese en los problemas de validación
@@ -101,24 +102,24 @@ Al validar un formulario, puede resultar útil no solo mostrar un mensaje si hay
 
 En esta animación, el botón de validación se presiona repetidamente hasta que todos los campos se han rellenado correctamente.  Tenga en cuenta que el puntero del mouse no se desplaza hacia abajo desde la parte superior de la pantalla.   En su lugar, la función **SetFocus** ha desplazado el foco de entrada al control que requiere atención con esta fórmula:
 
-```powerapps-dot
-If( IsBlank( Name ), 
-        Notify( "Name requires a value", Error ); SetFocus( Name ),
-    IsBlank( Street1 ), 
-        Notify( "Street Address 1 requires a value", Error ); SetFocus( Street1 ),
-    IsBlank( Street2 ), 
-        Notify( "Street Address 2 requires a value", Error ); SetFocus( Street2 ),
-    IsBlank( City ), 
-        Notify( "City requires a value", Error ); SetFocus( City ),
-    IsBlank( County ), 
-        Notify( "County requires a value", Error ); SetFocus( County ),
-    IsBlank( StateProvince ), 
-        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
-    IsBlank( PostalCode ), 
-        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
-    IsBlank( Phone ), 
-        Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
-    Notify( "Form is Complete", Success )
+```powerapps-comma
+If( IsBlank( Name ); 
+        Notify( "Name requires a value"; Error );; SetFocus( Name );
+    IsBlank( Street1 ); 
+        Notify( "Street Address 1 requires a value"; Error );; SetFocus( Street1 );
+    IsBlank( Street2 ); 
+        Notify( "Street Address 2 requires a value"; Error );; SetFocus( Street2 );
+    IsBlank( City ); 
+        Notify( "City requires a value"; Error );; SetFocus( City );
+    IsBlank( County ); 
+        Notify( "County requires a value"; Error );; SetFocus( County );
+    IsBlank( StateProvince ); 
+        Notify( "State or Province requires a value"; Error );; SetFocus( StateProvince );
+    IsBlank( PostalCode ); 
+        Notify( "Postal Code requires a value"; Error );; SetFocus( PostalCode );
+    IsBlank( Phone ); 
+        Notify( "Contact Phone requires a value"; Error );; SetFocus( Phone );
+    Notify( "Form is Complete"; Success )
 )
 ```
 
@@ -142,7 +143,7 @@ En esta animación, la pantalla de entrada de datos de la izquierda no usa **Set
 
 A la derecha, tenemos exactamente la misma aplicación con la propiedad **visible** de la pantalla de entrada de datos establecida en esta fórmula:
 
-```powerapps-dot
+```powerapps-comma
 SetFocus( Name )
 ```
 
