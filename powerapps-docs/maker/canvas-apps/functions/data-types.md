@@ -13,206 +13,207 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85567e120754d4f82e13bd7d7dac9fa0f7c80cbd
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 10c5ff9eaa709ab950fa3c3f0efce4f859a71dbc
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456763"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71037985"
 ---
 # <a name="data-types-in-canvas-apps"></a>Tipos de datos en aplicaciones de lienzo
 
-Flujos de información a través de una aplicación en los valores pequeños y discretos, de forma muy similar a las celdas de una hoja de cálculo. Por ejemplo, los datos de un **cumpleaños** campo y un **aniversario** campo podría ambos fluir a través de como un **fecha** valor que incluya la año, mes y día. La aplicación sabe cómo dar formato a estos valores, restringir la entrada a lo que sea adecuado para cada uno y compartir los valores con una base de datos. Cumpleaños diferencian aniversarios a personas, pero el sistema controla exactamente del mismo modo. En este caso, **fecha** es un ejemplo de un [tipo de datos](https://en.wikipedia.org/wiki/Data_type).
+La información fluye a través de una aplicación en pequeños valores discretos, muy parecidos a las celdas de una hoja de cálculo. Por ejemplo, los datos de un campo de **cumpleaños** y un campo de **aniversario** fluyen como un valor de **fecha** que incluye el año, el mes y el día. La aplicación sabe cómo dar formato a estos valores, restringir la entrada a lo apropiado para cada uno y compartir los valores con una base de datos. Los cumpleaños difieren de los aniversarios a los usuarios, pero el sistema los controla exactamente de la misma manera. En este caso, **Date** es un ejemplo de un [tipo de datos](https://en.wikipedia.org/wiki/Data_type).
 
-En este artículo proporciona detalles para los tipos de datos que la compatibilidad de aplicaciones de lienzo. Cuando una aplicación se conecta a un origen de datos externo, cada tipo de ese origen de datos se asigna a un tipo de datos para las aplicaciones de lienzo.
+En este artículo se proporcionan detalles sobre los tipos de datos que admiten las aplicaciones de canvas. Cuando una aplicación se conecta a un origen de datos externo, cada tipo de datos de ese origen se asigna a un tipo de datos para las aplicaciones de canvas.
 
-| Tipo de datos | Descripción | Ejemplos |
+| Tipo de datos | DESCRIPCIÓN | Ejemplos |
 |-----------|-------------|---------|
-| **Boolean** | Un *true* o *false* valor.  Se pueden usar directamente en **si**, **filtro** y otras funciones sin una comparación.  | *true* |
-| **Color** | Una especificación de color, incluido un canal alfa. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255; 128; 0; 0,5 )** |
-| **Moneda** | Un valor de moneda que se almacena en un número de punto flotante. Los valores de moneda son los mismos que los valores number con opciones de formato de moneda.  | **123**<br>**4.56** |
-| **Fecha** | Una fecha sin un tiempo, en la zona horaria del usuario de la aplicación. | **Fecha (2019, 5, 16)** |
-| **DateTime** | Una fecha con un tiempo, en la zona horaria del usuario de la aplicación. | **Fechahoranumero ("16 de mayo de 2019 1:23:09 PM")** |
-| **GUID** | Un [identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )** |
-| **Hyperlink** | Una cadena de texto que contiene un hipervínculo. | **"http://powerapps.microsoft.com"** |
-| **Imagen** | Un [identificador Universal de recursos (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) cadena de texto a una imagen en .jpeg, .png, .svg, .gif u otro formato de imagen de web comunes. | **MyImage** agregado como un recurso de aplicación<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
-| **Multimedia** | Una cadena de texto URI para una grabación de audio o vídeo. | **Mi vídeo** agregado como un recurso de aplicación<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
-| **Número** | Número de punto flotante. | **123**<br>**-4.567**<br>**8.903e121** |
-| **Conjunto de opciones** | Una opción de un conjunto de opciones, respaldado por un número. Este tipo de datos combina una etiqueta de texto localizable con un valor numérico. La etiqueta aparece en la aplicación y se almacena el valor numérico y se usa para las comparaciones. | **ThisItem.OrderStatus** |
-| **Record** | Registro de los valores de datos. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **{La empresa: "Northwind Traders";<br>personal: 35; <br>NonProfit: false }** |
-| **Referencia de registro** | Una referencia a un registro en una entidad. Estas referencias se suelen usar con las búsquedas polimórficas. Más información: [Trabajar con referencias](../working-with-references.md).| **First(Accounts).Owner** |
-| **Table** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesta contiene instancias de otros tipos de datos que aparecen en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney";<br>LastName: "Higa"}; <br>{FirstName: "Nancy,"<br>LastName: "Anderson" } )**
-| **Texto** | Una cadena de texto Unicode. | **"Hello, World"** |
-| **Tiempo** | Una vez sin una fecha, en la zona horaria del usuario de la aplicación. | **Tiempo (11, 23, 45)** |
-| **Opción dos** | Una opción de un conjunto de dos opciones, respaldado por un valor booleano. Este tipo de datos combina una etiqueta de texto localizable con un valor booleano. La etiqueta aparece en la aplicación y se almacena el valor booleano y se usa para las comparaciones. | **ThisItem.Taxable** |
+| **Booleano** | Valor *true* o *false* .  Se puede usar directamente en **si**, **filtrar** y otras funciones sin una comparación.  | *true* |
+| **Color** | Especificación de color, incluido un canal alfa. | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA (255, 128, 0, 0,5)** |
+| **Moneda** | Valor de moneda que se almacena en un número de punto flotante. Los valores de moneda son los mismos que los valores numéricos con opciones de formato de moneda.  | **123**<br>**4,56** |
+| **Date** | Una fecha sin una hora, en la zona horaria del usuario de la aplicación. | **Fecha (2019, 5, 16)** |
+| **DateTime** | Una fecha con una hora, en la zona horaria del usuario de la aplicación. | **Fechahoranumero ("May 16, 2019 1:23:09 PM")** |
+| **VOLUMEN** | [Identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID ()**<br>**GUID ("123e4567-e89b-12d3-A456-426655440000")** |
+| **Hipervínculo** | Cadena de texto que contiene un hipervínculo. | **"http://powerapps.microsoft.com "** |
+| **Imagen** | Una cadena de texto de [identificador de recursos universal (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) a una imagen de. JPEG,. png,. SVG,. gif u otro formato de imagen web común. | Mi **imagen** se ha agregado como un recurso de la aplicación<br>**"https://northwindtraders.com/logo.jpg "**<br>**"appres://blobmanager/7b12ffa2..."** |
+| **Multimedia** | Una cadena de texto de URI en una grabación de vídeo o audio. | El **vídeo** se ha agregado como un recurso de la aplicación<br>**"https://northwindtraders.com/intro.mp4 "**<br>**"appres://blobmanager/3ba411c..."** |
+| **Números** | Número de punto flotante. | **123**<br>**-4,567**<br>**8.903e121** |
+| **Conjunto de opciones** | Una opción de un conjunto de opciones, respaldado por un número. Este tipo de datos combina una etiqueta de texto traducible con un valor numérico. La etiqueta aparece en la aplicación y el valor numérico se almacena y se usa para las comparaciones. | **ThisItem. OrderStatus** |
+| **Record** | Un registro de valores de datos. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Recíproca "Northwind Traders"<br>, personal: 35, <br>sin ánimo de lucro: false}** |
+| **Referencia de registro** | Referencia a un registro de una entidad. Estas referencias se suelen usar con búsquedas polimórficas. Más información: [Trabajar con referencias](../working-with-references.md).| **Primero (cuentas). Propietario** |
+| **Cuadro** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney",<br>Apellido: "Higa"}, <br>{FirstName: "Nancy",<br>Apellido: "Anderson"})**
+| **Texto** | Cadena de texto Unicode. | **"Hello, World"** |
+| **Tiempo** | Una hora sin fecha, en la zona horaria del usuario de la aplicación. | **Hora (11, 23, 45)** |
+| **Dos opciones** | Una opción de un conjunto de dos opciones, respaldada por un valor booleano. Este tipo de datos combina una etiqueta de texto traducible con un valor booleano. La etiqueta aparece en la aplicación y el valor booleano se almacena y se usa para las comparaciones. | **ThisItem. gravable** |
 
-Muchos de estos tipos de datos son similares y tienen la misma representación subyacente, como un **hipervínculo** campo que se tratan como **texto**.  Los tipos de datos adicionales proporcionan predeterminada mejor experiencias en formularios y otros controles.
+Muchos de estos tipos de datos son similares y tienen la misma representación subyacente, como un campo de **hipervínculo** que se trata como **texto**.  Los tipos de datos adicionales proporcionan mejores experiencias predeterminadas en formularios y otros controles.
 
 ## <a name="blank"></a>Blank
 
-Todos los tipos de datos pueden tener un valor de *en blanco* (es decir, ningún valor). El término "null" se usa a menudo en las bases de datos de este concepto.  
+Todos los tipos de datos pueden tener un valor *en blanco* (es decir, ningún valor). El término "null" se usa a menudo en las bases de datos para este concepto.  
 
-Use la **en blanco** funcionando con el **establecer** o **Patch** función para establecer una variable o campo para *en blanco*. Por ejemplo, **conjunto (x; Blank())** quita cualquier valor en la variable global **x**.  
+Utilice la función **Blank** con la función **set** o **patch** para establecer una variable o un campo en *blanco*. Por ejemplo, **set (x, Blank ())** quita cualquier valor de la variable global **x**.  
 
-Probar un *en blanco* valor mediante el uso de la [ **IsBlank** ](function-isblank-isempty.md) función. Reemplace posible *en blanco* valores con los que no sean de*en blanco* valores usando el [ **Coalesce** ](function-isblank-isempty.md) función.
+Compruebe si hay un valor *en blanco* mediante [**la función esblanco.** ](function-isblank-isempty.md) Reemplace los valores *en blanco* posibles por valores que no estén*en blanco* mediante la función [**Coalesce**](function-isblank-isempty.md) .
 
-Dado que todos los tipos de datos admiten *en blanco*, el **booleano** y **opción dos** eficazmente, tipos de datos tienen tres valores posibles.
+Dado que todos los tipos de datos admiten valores *en blanco*, los tipos de datos **booleanos** y **dos opciones** tienen eficazmente tres valores posibles.
 
-## <a name="text-hyperlink-image-and-media"></a>Texto, hipervínculo, imágenes y multimedia
+## <a name="text-hyperlink-image-and-media"></a>Texto, hipervínculo, imagen y multimedia
 
-Cuatro de estos tipos de datos se basa en un [Unicode](https://en.wikipedia.org/wiki/Unicode) cadena de texto.
+Los cuatro tipos de datos se basan en una cadena de texto [Unicode](https://en.wikipedia.org/wiki/Unicode) .
 
-### <a name="image-and-media-resources"></a>Recursos de imágenes y multimedia
+### <a name="image-and-media-resources"></a>Recursos multimedia y de imagen
 
-A través de la **archivo** menú, puede agregar archivos de imagen, audio y vídeo como recursos de la aplicación. El nombre del archivo importado se convierte en el nombre del recurso en la aplicación. En este gráfico, el logotipo de Northwind Traders, que se denomina **nwindlogo**, se ha agregado a una aplicación:
+Mediante el menú **archivo** , puede Agregar archivos de imagen, vídeo y audio como recursos de la aplicación. El nombre del archivo importado se convierte en el nombre del recurso en la aplicación. En este gráfico, el logotipo de Northwind Traders, denominado **nwindlogo**, se ha agregado a una aplicación:
 
 ![](media/data-types/nwind-resource.png)
 
-Para utilizar este recurso en una aplicación, especifíquela en el **imagen** propiedad de un [ **imagen** ](../controls/control-image.md) control:
+Para usar este recurso en una aplicación, especifíquelo en la propiedad **imagen** de un control [**imagen**](../controls/control-image.md) :
 
 ![](media/data-types/nwind-image.png)
 
-### <a name="uris-for-images-and-other-media"></a>URI para las imágenes y otros medios
+### <a name="uris-for-images-and-other-media"></a>URI para imágenes y otros medios
 
-Puede profundizar un poco más en el último ejemplo estableciendo el **texto** propiedad de un [ **etiqueta** ](../controls/control-text-box.md) control **nwindlogo**. La etiqueta muestra una cadena de texto:
+Puede profundizar un poco más en ese último ejemplo si establece la propiedad **texto** de un control [**etiqueta**](../controls/control-text-box.md) en **nwindlogo**. La etiqueta muestra una cadena de texto:
 
 ![](media/data-types/nwind-text.png)
 
-Las aplicaciones de lienzo hacen referencia a cada imagen u otro archivo de medios, ya sea en la nube o como un recurso de aplicación, agregando una cadena de texto identificador URI.
+Las aplicaciones de lienzo hacen referencia a cada imagen u otro archivo multimedia, ya sea en la nube o se agregan como un recurso de la aplicación, mediante una cadena de texto de URI.
 
-Por ejemplo, el **imagen** propiedad de un control image acepta no sólo los recursos de la aplicación, sino también vínculos a imágenes en la web, como "https://northwindtraders.com/logo.jpg". La propiedad también admite imágenes en línea que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
+Por ejemplo, la propiedad **imagen** de un control imagen acepta no solo los recursos de la aplicación, sino también los vínculos a las imágenes en https://northwindtraders.com/logo.jpg la web, como "". La propiedad también acepta imágenes insertadas que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
 
-```powerapps-comma
+```powerapps-dot
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
-Ese URI muestra una versión escalada de diamantes púrpuras dos:
+Ese URI muestra una versión escalada de dos diamantes púrpura:
 
 ![](media/data-types/double-diamonds.png)
 
-Puede mostrar la imagen más reciente que se capturan en un [ **cámara** ](../controls/control-camera.md) controlar si establece la **imagen** propiedad de un control de imagen para el **Photo** propiedad del control de cámara. La aplicación guarda la imagen en la memoria y el **Photo** propiedad del control de cámara devuelve una referencia de URI a la imagen. Por ejemplo, puede tardar una imagen y la cámara **Photo** propiedad podría devolver **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
+Puede mostrar la imagen más reciente capturada en un control de [**cámara**](../controls/control-camera.md) si establece la propiedad **imagen** de un control imagen en la propiedad **foto** del control cámara. La aplicación contiene la imagen en memoria y la propiedad **Photo** del control de cámara devuelve una referencia de URI a la imagen. Por ejemplo, puede tomar una foto y la propiedad **Photo** de la cámara podría devolver **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
 
-Use un URI para hacer referencia a una imagen u otro archivo de medios que se almacenan en una base de datos. De este modo, la aplicación no recupera los datos reales hasta que sea realmente necesario. Por ejemplo, podrían devolver los datos adjuntos en una entidad de Common Data Service **"appres://datasources/Contacts/table/..."** Como se muestra en el ejemplo de la cámara, puede mostrar esta imagen estableciendo el **imagen** propiedad de un control de imagen para esta referencia, que recupera los datos binarios.
+El URI se usa para hacer referencia a una imagen u otro archivo multimedia almacenado en una base de datos. De este modo, la aplicación no recupera los datos reales hasta que realmente se necesita. Por ejemplo, un dato adjunto en una entidad Common Data Service podría devolver **"appres://datasources/Contacts/Table/..."** Como en el ejemplo de cámara, puede mostrar esta imagen estableciendo la propiedad **imagen** de un control imagen en esta referencia, que recupera los datos binarios.
 
-Al guardar un tipo de datos de medios, como una imagen, en una base de datos, la aplicación envía la imagen real o los datos de medios, no la referencia URI.
+Al guardar un tipo de datos multimedia, como una imagen, en una base de datos, la aplicación envía la imagen o los datos multimedia reales, no la referencia de URI.
 
 ### <a name="size-limits"></a>Límites de tamaño
 
-Como las cadenas de texto y los URI, estos tipos de datos no tienen ningún límite preestablecido en su longitud.
+Como cadenas de texto y URI, estos tipos de datos no tienen ningún límite preestablecido para su longitud.
 
-Los datos binarios que también hacen referencia a estos tipos de datos no tienen ningún límite preestablecido en tamaño. Por ejemplo, una imagen capturada a través del control de cámara que ahora se hace referencia como **"appres: / /..."** puede ser como grande y de alta resolución que logre reunir la cámara del dispositivo. La resolución, velocidad de fotogramas y otros atributos de archivos multimedia no están limitados por el tipo de datos, pero los controles específicos para reproducir y medios de captura pueden tener sus propias limitaciones.
+Los datos binarios a los que hacen referencia estos tipos de datos tampoco tienen un límite preestablecido en el tamaño. Por ejemplo, una imagen capturada a través del control de la cámara a la que se hace referencia ahora como **"appres://..."** puede ser tan grande y alta como para la cámara del dispositivo. La resolución, la velocidad de fotogramas y otros atributos de archivos multimedia no están limitados por el tipo de datos, pero los controles específicos para reproducir y capturar medios pueden tener sus propias limitaciones.
 
-Sin embargo, todos los tamaños de datos están sujetos a la cantidad de memoria disponible en la aplicación. Los exploradores que se ejecutan en un equipo de escritorio normalmente admiten más de 100 megabytes de datos. Sin embargo, la cantidad de memoria disponible en un dispositivo como un teléfono podría ser mucho menor, normalmente en el intervalo 30-70 megabytes. Para determinar si la aplicación se ejecutará dentro de estos límites, probar escenarios comunes en todos los dispositivos en los que se debe ejecutar.
+Sin embargo, todos los tamaños de datos están sujetos a la cantidad de memoria disponible en la aplicación. Los exploradores que se ejecutan en un equipo de escritorio suelen admitir más de 100 megabytes de datos. Sin embargo, la cantidad de memoria disponible en un dispositivo, como un teléfono, puede ser mucho menor, normalmente en el intervalo de 30-70 megabytes. Para determinar si la aplicación se ejecutará dentro de estos límites, pruebe los escenarios comunes en todos los dispositivos en los que se debe ejecutar.
 
-Como práctica recomendada, almacenar datos en memoria solo mientras según sea necesario. Cargar imágenes en una base de datos tan pronto como pueda; Descargar imágenes solo cuando el usuario de la aplicación las solicita.
+Como procedimiento recomendado, conserve los datos en la memoria solo cuando sea necesario. Cargar imágenes en una base de datos tan pronto como pueda; Descargue imágenes solo cuando el usuario de la aplicación las solicite.
 
 ## <a name="number-and-currency"></a>Número y moneda
 
-**Número** y **moneda** tipos de datos se usa el [estándar de punto flotante de precisión doble IEEE 754](https://en.wikipedia.org/wiki/IEEE_754). Este estándar proporciona un intervalo muy grande de números en el que se va a trabajar desde –1.79769 x 10<sup>308</sup> y 1.79769 x 10<sup>308</sup>. El valor más pequeño que se puede representar es 5 x 10<sup>–324</sup>.
+Los tipos de datos **Number** y **Currency** usan el [estándar de punto flotante de doble precisión IEEE 754](https://en.wikipedia.org/wiki/IEEE_754). Este estándar proporciona un gran número de números en los que trabajar, desde – 1,79769 x 10<sup>308</sup> hasta 1,79769 x 10<sup>308</sup>. El valor más pequeño que se puede representar es 5 x 10<sup>– 324</sup>.
 
-Las aplicaciones de lienzo exactamente pueden representar números enteros (o enteros) entre –9,007,199,254,740,991 (– (2<sup>53</sup> – 1)) y 9,007,199,254,740,991 (2<sup>53</sup> – 1), ambos inclusive. Este intervalo es mayor que los tipos de datos entero de 32 bits (o 4 bytes) que normalmente utilizan las bases de datos. Sin embargo, las aplicaciones de lienzo no pueden representar tipos de datos enteros de 64 bits (o de 8 bytes). Es posible que desee almacenar el número en un campo de texto o usar una columna calculada para hacer una copia del número en un campo de texto, por lo que se asigna a un **texto** tipo de datos en la aplicación de lienzo. De esta manera, puede contener, mostrar y escribir estos valores, así como compararlos para determinar si son iguales; Sin embargo, no puede realizar cálculos numéricos en ellos en este formulario.
+Las aplicaciones de lienzo pueden representar exactamente números enteros (o enteros) entre – 9.007.199.254.740.991 (– (2<sup>53</sup> – 1)) y 9.007.199.254.740.991 (2<sup>53</sup> – 1), ambos incluidos. Este intervalo es mayor que los tipos de datos enteros de 32 bits (o 4 bytes) que usan habitualmente las bases de datos. Sin embargo, las aplicaciones de canvas no pueden representar tipos de datos enteros de 64 bits (o 8 bytes). Es posible que quiera almacenar el número en un campo de texto o usar una columna calculada para crear una copia del número en un campo de texto, de modo que se asigne a un tipo de datos de **texto** en la aplicación Canvas. De esta manera, puede mantener, mostrar y escribir estos valores, así como compararlos para determinar si son iguales; sin embargo, en este formulario no se pueden realizar cálculos numéricos.
 
-Aritmética de punto flotante es aproximado, por lo que a veces puede provocar resultados inesperados con muchos ejemplos documentados. Es de esperar la fórmula **55 / 100 * 100** para devolver exactamente 55 y **(55 / 100 * 100): 55** para devolver exactamente en cero. Sin embargo, la fórmula de este última devuelve 7.1054 x 10<sup>– 15</sup>, que es muy pequeño, pero no en cero. Esa pequeña diferencia normalmente no causa un problema y la aplicación redondea inmediatamente cuando se muestre el resultado. Sin embargo, pequeñas diferencias pueden compuesta en los cálculos posteriores y parece que asigne a la respuesta incorrecta.
+La aritmética de punto flotante es aproximada, por lo que a veces puede proporcionar resultados inesperados con muchos ejemplos documentados. Podría esperar que la fórmula **55/100 * 100** devuelva exactamente 55 y **(55/100 * 100)-55** para que se devuelva exactamente cero. Sin embargo, la última fórmula devuelve 7,1054 x 10<sup>– 15</sup>, que es muy pequeño pero no cero. Esta pequeña diferencia no provoca normalmente un problema y la aplicación la redondea al mostrar el resultado. Sin embargo, las pequeñas diferencias pueden componerse en cálculos posteriores y parecen dar la respuesta equivocada.
 
-A menudo, los sistemas de base de datos almacenan monedas y realizan cálculos utilizando math decimal, que ofrece un intervalo menor pero mayor control sobre la precisión. De forma predeterminada, el lienzo monedas de asignación de aplicaciones dentro y fuera de los valores de punto flotante; por lo tanto, los resultados pueden diferir de los cálculos que se realizan en un tipo de datos decimal nativo. Si este tipo de discrepancia causará problemas, es posible que desea trabajar con estos valores como **texto**, al igual que lo haría con enteros grandes se ha descrito anteriormente en esta sección.
+Los sistemas de base de datos suelen almacenar monedas y realizar cálculos mediante el uso de matemáticas decimales, que ofrece un intervalo menor pero mayor control sobre la precisión. De forma predeterminada, las aplicaciones de canvas asignan divisas dentro y fuera de los valores de punto flotante; por consiguiente, el resultado podría diferir de los cálculos que se realizan en un tipo de datos decimal nativo. Si este tipo de discrepancia causa problemas, puede que desee trabajar con estos valores como **texto**, del mismo modo que con los enteros grandes descritos anteriormente en esta sección.
 
 ## <a name="date-time-and-datetime"></a>Fecha, hora y fecha y hora
 
 ### <a name="time-zones"></a>Zonas horarias
 
-Fecha/hora disminución de los valores de estas categorías:
+Los valores de fecha y hora se encuentran en estas categorías:
 
-- **Usuario local**: Estos valores se almacenan en [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), pero la zona horaria del usuario de la aplicación afecta a cómo muestra estos valores de la aplicación y el modo en que especifica el usuario de la aplicación. Por ejemplo, el mismo momento muestra distinto para un usuario de Canadá de lo que un usuario en Japón.
-- **Zona horaria independiente**: La aplicación muestra estos valores del mismo modo y el usuario de la aplicación especifica la misma manera, independientemente de la zona horaria. El mismo momento aparece la misma manera a un usuario en Canadá, tal como hace con un usuario en Japón. Los autores de la aplicación que no esperan que sus aplicaciones se ejecuten en diferentes zonas horarias usan estos valores porque son más sencillas en general.
+- **Usuario local**: Estos valores se almacenan en [UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), pero la zona horaria del usuario de la aplicación afecta al modo en que la aplicación muestra estos valores y cómo los especifica el usuario de la aplicación. Por ejemplo, el mismo momento aparece de manera diferente para un usuario en Canadá que para un usuario de Japón.
+- **Independiente de la zona horaria**: La aplicación muestra estos valores de la misma manera y el usuario de la aplicación los especifica de la misma manera, independientemente de la zona horaria. El mismo momento aparece de la misma manera para un usuario en Canadá que para un usuario de Japón. Los autores de aplicaciones que no esperan que sus aplicaciones se ejecuten en distintas zonas horarias usan estos valores, ya que son más sencillos.
 
-Esta tabla muestra algunos ejemplos:
+En esta tabla se muestran algunos ejemplos:
 
-| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor de muestra y escrito 7 horas al oeste UTC | Muestra y especifica 4 horas al este de UTC |
+| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor que se muestra y se especifican 7 horas oeste de UTC | Valor que se muestra y se escribe 4 horas este de UTC |
 |--------------------------|------------------------------|------------------------------|
-| **Usuario local** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El sábado,&nbsp;puede&nbsp;18,&nbsp;2019<br>9:00 P. M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>8:00 A. M. |
-| **Zona horaria independiente** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | 
+| **Usuario local** | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | Sábado,&nbsp;18&nbsp;de mayo&nbsp;de 2019<br>9:00 PM | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>8:00 AM |
+| **Independiente de la zona horaria** | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | 
 
-Para **usuario local** la fecha y hora, las aplicaciones de lienzo usan la zona horaria del explorador o dispositivo, pero las aplicaciones controladas por modelos usan el usuario en común configurar el servicio de datos. Suelen coincidir con esta configuración, pero los resultados variarán si estos valores son diferentes.
+En el caso de la fecha y hora **locales del usuario** , las aplicaciones de lienzo usan la zona horaria del explorador o el dispositivo, pero las aplicaciones controladas por modelos usan la configuración del usuario en Common Data Service. Estos valores suelen coincidir, pero los resultados variarán si esta configuración es diferente.
+
+Utilice las funciones [**DateAdd**](function-dateadd-datediff.md) y [**TimeZoneInformation**](function-dateadd-datediff.md) para volver a convertir la hora local a UTC y viceversa.  Vea los ejemplos al final de la documentación de estas funciones.
 
 ### <a name="numeric-equivalents"></a>Equivalentes numéricos
 
-Las aplicaciones de lienzo mantenga y calcular todos los valores de fecha/hora, si **usuario local** o **independientes de zona horaria** en UTC. La aplicación traduce los valores basándose en la zona de horaria del usuario de la aplicación cuando mostrarles y cuando el usuario especifica.
+Las aplicaciones de lienzo contienen y calculan todos los valores de fecha y hora, ya sean **locales** o de **zona horaria independientes** de la hora UTC. La aplicación traduce los valores en función de la zona horaria del usuario de la aplicación cuando los muestra y cuando el usuario de la aplicación los especifica.
 
-Cuando una aplicación de lienzo lee un **independientes de zona horaria** valor desde un origen de datos o escribe un valor de este tipo a un origen de datos, la aplicación ajusta automáticamente el valor para compensar la zona horaria del usuario de la aplicación. La aplicación, a continuación, trata el valor como un valor de hora UTC, coherente con todos los demás valores de fecha y hora en la aplicación. Debido a esta compensación, original **independientes de zona horaria** valor aparece cuando la aplicación ajusta el valor de hora UTC para la zona horaria del usuario de la aplicación.
+Cuando una aplicación de lienzo Lee un valor independiente de la **zona horaria** de un origen de datos o escribe este valor en un origen de datos, la aplicación ajusta automáticamente el valor para compensar la zona horaria del usuario de la aplicación. A continuación, la aplicación trata el valor como un valor UTC, coherente con todos los demás valores de fecha y hora de la aplicación. Debido a esta compensación, el valor **independiente de la zona horaria** original aparece cuando la aplicación ajusta el valor UTC de la zona horaria del usuario de la aplicación.
 
-Puede observar este comportamiento mediante el uso de más detenidamente el [ **valor** ](function-value.md) función para acceder al valor numérico subyacente de un valor de fecha y hora. Esta función devuelve el valor de fecha y hora como el número de milisegundos desde el 1 de enero de 1970 UTC 00:00:00.000.
+Puede observar este comportamiento más detenidamente mediante el uso de la función [**Value**](function-value.md) para tener acceso al valor numérico subyacente de un valor de fecha y hora. Esta función devuelve el valor de fecha y hora como el número de milisegundos transcurridos desde el 1 de enero de 1970 00:00:00.000 UTC.
 
-Dado que cada valor de fecha y hora se guarda en formato UTC, la fórmula **valor (fecha (1970, 1, 1))** no devuelven cero en muchas partes del mundo, porque el **fecha** función devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolvería 28,800,000 en una zona horaria que se desplaza a la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
+Dado que cada valor de fecha y hora se mantiene en UTC, el valor de la fórmula **(fecha (1970, 1, 1))** no devolverá cero en la mayoría de las partes del mundo porque la función **Date** devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolverá 28,8 millones en una zona horaria en la que se desplace la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
 
-Volviendo a nuestro ejemplo anterior:
+Volviendo al ejemplo anterior:
 
-| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor de muestra y escrito 7 horas al oeste UTC | **Valor** función devuelve |
+| Tipo de fecha y hora | Valor almacenado en la base de datos | Valor que se muestra y se especifican 7 horas oeste de UTC | La función **Value** devuelve |
 |--------------------------|------------------------------|------------------------------|
-| **Usuario local** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El sábado,&nbsp;puede&nbsp;18,&nbsp;2019<br>9:00 P. M. | 1,558,238,400,000<br> (El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. UTC) |
-| **Zona horaria independiente** | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. | El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>4:00 A.M. |1,558,263,600,000<br> (El domingo,&nbsp;puede&nbsp;19,&nbsp;2019<br>11:00 A.M. UTC) |
+| **Usuario local** | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | Sábado,&nbsp;18&nbsp;de mayo&nbsp;de 2019<br>9:00 PM | 1\.558.238.400.000<br> (Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM UTC) |
+| **Independiente de la zona horaria** | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM | Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>4:00 AM |1\.558.263.600.000<br> (Domingo,&nbsp;19&nbsp;de mayo&nbsp;de 2019<br>11:00 AM UTC) |
 
-### <a name="converting-unix-times"></a>Conversión de horas de Unix
+### <a name="converting-unix-times"></a>Convertir horas UNIX
 
-UNIX reflejan el número de segundos desde el 1 de enero de 1970 00:00:00 UTC. Dado que las aplicaciones de lienzo utiliza milisegundos en lugar de segundos, puede convertir entre los dos multiplicando o dividiendo por 1.000.
+Los tiempos UNIX reflejan el número de segundos transcurridos desde el 1 de enero de 1970 00:00:00 UTC. Dado que las aplicaciones de canvas usan milisegundos en lugar de segundos, puede convertir entre los dos multiplicando o dividiendo por 1.000.
 
-Por ejemplo, tiempo de Unix muestra 9 de septiembre de 2001, de 01:46:40 UTC como 1.000.000.000. Para mostrar que el valor en una aplicación de lienzo de fecha y hora, multiplicar ese número por 1000 para poder convertirlo en milisegundos y, a continuación, utilizarlo en un [ **texto** ](function-text.md) función. La fórmula **texto (1000000000 * 1000, DateTimeFormat.UTC)** devuelve la cadena **2001-09-09T01:46:40.000Z**.
+Por ejemplo, la hora de UNIX muestra el 9 de septiembre de 2001, a las 01:46:40 UTC como 1 mil millones. Para mostrar ese valor de fecha y hora en una aplicación de lienzo, multiplique ese número por 1.000 para convertirlo en milisegundos y usarlo en una función de [**texto**](function-text.md) . El texto de la fórmula **(1 mil millones * 1000, DateTimeFormat. UTC)** devuelve la cadena **2001-09-09T01:46:40.000 z**.
 
-Sin embargo, esa función devuelve **el sábado, 8 de septiembre de 2001 18:46:40** si usas el **DateTimeFormat.LongDateTime24** formato en una zona horaria que es menos 7 horas de desplazamiento a la hora UTC (7 horas al oeste UTC). Este resultado muestra el **DateTime** valor correctamente según la zona horaria local.
+Sin embargo, esa función devuelve el **sábado, 8 de septiembre de 2001 18:46:40** si usa el formato **DateTimeFormat. LongDateTime24** en una zona horaria con una diferencia de 7 horas con respecto a la hora UTC (7 horas oeste de UTC). Este resultado muestra el valor **DateTime** correctamente basado en la zona horaria local.
 
-Para convertir en una hora Unix, divida el resultado de **valor** por 1.000:
-<br>**RoundDown( Value( UnixTime ) / 1000; 0 )**
+Para convertir a una hora de UNIX, divida el resultado de **Value** por 1.000:
+<br>**Redondear (valor (UnixTime)/1000, 0)**
 
-Si necesita la hora de Unix en un **fecha** valor para cálculos o mostrar dentro de PowerApps, use la siguiente fórmula:
-<br>**DateAdd( Date( 1970;1;1 ); UnixTime; Seconds )**
+Si necesita la hora de UNIX en un valor de **fecha** para obtener más cálculos o Mostrar en PowerApps, use esta fórmula:
+<br>**DateAdd (fecha (1970, 1, 1), UnixTime, segundos)**
 
 ### <a name="sql-server"></a>SQL Server
 
-SQL Server tiene [ **Datetime**, **Datetime2**y otros tipos de datos de fecha y hora](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) que no incluya un desplazamiento de zona horaria y no indican qué zona horaria que se encuentren en. Las aplicaciones de lienzo suponen estos valores se almacenan en formato UTC y tratan como **usuario local**. Si los valores están diseñados para ser independiente de la zona horaria, corregir las traducciones de hora UTC utilizando la [ **TimeZoneOffset** ](function-dateadd-datediff.md#converting-to-utc) función.
+SQL Server tiene [ **DateTime**, **Datetime2**y otros tipos de datos de fecha y hora](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) que no incluyen un desplazamiento de zona horaria y no indican la zona horaria en la que se encuentran. Las aplicaciones de canvas suponen que estos valores se almacenan en UTC y los tratan como **usuario local**. Si los valores están diseñados para ser independientes de la zona horaria, corrija las traducciones UTC mediante la función [**TimeZoneOffset**](function-dateadd-datediff.md#converting-to-utc) .
 
-Las aplicaciones de lienzo usan la información de zona horaria incluida en **Datetimeoffset** campos al convertir un valor a la representación interna de UTC de la aplicación. Las aplicaciones siempre usan UTC como la zona horaria (cero ajuste de zona horaria) cuando escriben datos.
+Las aplicaciones de lienzo usan la información de zona horaria incluida en campos **DateTimeOffset** al convertir un valor en la representación UTC interna de la aplicación. Las aplicaciones siempre usan la hora UTC como zona horaria (cero desplazamiento de zona horaria) cuando escriben datos.
 
-Las aplicaciones de lienzo, leer y escribir valores de la [ **tiempo** ](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) tipo de datos en SQL Server como cadenas de texto en el [formato de duración ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Por ejemplo, debe analizar este formato de cadena y usar el [ **tiempo** ](function-date-time.md) función para convertir la cadena de texto **"PT2H1M39S"** a un **tiempo** valor:
+Las aplicaciones de lienzo leen y escriben los valores del tipo de datos [**Time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) en SQL Server como cadenas de texto en el [formato de duración ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Por ejemplo, debe analizar este formato de cadena y usar la función [**Time**](function-date-time.md) para convertir la cadena de texto **"PT2H1M39S"** en un valor de **hora** :
 
-```powerapps-comma
+```powerapps-dot
 First(
     ForAll(
-        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-        Time( Value( hours ); Value( minutes ); Value( seconds ) )
+        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+        Time( Value( hours ), Value( minutes ), Value( seconds ) )
     )
 ).Value
 ```
 
-### <a name="mixing-date-and-time-information"></a>Combinar información de fecha y hora
+### <a name="mixing-date-and-time-information"></a>Mezclar información de fecha y hora
 
-**Fecha**, **tiempo**, y **DateTime** tienen nombres diferentes, pero contienen la misma información acerca de las fechas y horas. 
+**Date**, **Time**y **DateTime** tienen nombres diferentes, pero todos contienen la misma información sobre las fechas y horas. 
 
-Un **fecha** valor puede incluir información de tiempo con él, que normalmente es medianoche. Un **tiempo** valor puede llevar la información de fecha, que normalmente es el 1 de enero de 1970. Common Data Service también almacena información de tiempo con un **sólo fecha** campo, pero muestra sólo la información de fecha de forma predeterminada. De forma similar, las aplicaciones de lienzo a veces se distinguen entre estos tipos de datos para determinar los formatos predeterminados y los controles.
+Un valor de **fecha** puede incluir información de hora con él, que normalmente es la medianoche. Un valor de **hora** puede contener información de fecha, que suele ser el 1 de enero de 1970. Common Data Service también almacena información de hora con un campo de **fecha solo** , pero muestra solo la información de fecha de forma predeterminada. Del mismo modo, las aplicaciones de canvas distinguen a veces estos tipos de datos para determinar los formatos y controles predeterminados.
 
-Sumar y restar directamente los valores de fecha y hora no se recomiendan porque podrían provocar que las conversiones de zona horaria y otras resultados confusos. Usar el **valor** función para convertir los valores de fecha y hora en milisegundos en primer lugar y tener en cuenta la zona de horaria del usuario de la aplicación, o usar el [ **DateAdd** ](function-dateadd-datediff.md) y [ **DateDiff** ](function-dateadd-datediff.md) funciones para agregar o restar uno de estos valores.
+No se recomienda agregar y restar los valores de fecha y hora directamente porque la zona horaria y otras conversiones podrían producir resultados confusos. Use la función **Value** para convertir los valores de fecha y hora en milisegundos en primer lugar y tener en cuenta la zona horaria del usuario de la aplicación, o use las funciones [**DateAdd**](function-dateadd-datediff.md) y [**DateDiff**](function-dateadd-datediff.md) para sumar o restar de uno de estos valores.
 
-## <a name="option-sets-and-two-options"></a>Conjuntos de opciones y las dos opciones
+## <a name="option-sets-and-two-options"></a>Conjuntos de opciones y dos opciones
 
-Conjuntos de opciones y los tipos de datos de la opción de dos proporcionan una dos o más opciones para seleccionar un usuario de la aplicación. Por ejemplo, un **estado del pedido** conjunto de opciones puede ofrecer las opciones **New**, **Shipped**, **facturado**, y **cerrado** . El tipo de datos de la opción de dos ofrece solo dos opciones.
+Los conjuntos de opciones y los tipos de datos de dos opciones proporcionan dos o más opciones para que un usuario de la aplicación seleccione. Por ejemplo, un conjunto de opciones de **Estado de pedido** podría ofrecer las opciones **nuevas**, **enviadas**, **facturadas**y **cerradas**. El tipo de datos de dos opciones solo ofrece dos opciones.
 
-Ambos de estos tipos de datos muestran sus etiquetas en un contexto de la cadena de texto. Por ejemplo, un control de etiqueta muestra una de las opciones de estado del pedido si el control **texto** propiedad está establecida en una fórmula que hace referencia a ese conjunto de opciones. Las etiquetas de la opción se pueden localizar para usuarios de la aplicación en diferentes ubicaciones.
+Ambos tipos de datos muestran sus etiquetas en un contexto de cadena de texto. Por ejemplo, un control etiqueta muestra una de las opciones de estado de orden si la propiedad **texto** del control se establece en una fórmula que hace referencia a ese conjunto de opciones. Las etiquetas de opción se pueden localizar para los usuarios de aplicaciones en ubicaciones diferentes.
 
-Cuando un usuario de la aplicación selecciona una opción y guarda ese cambio, la aplicación transmite los datos a la base de datos que almacena los datos en una representación que es independiente del idioma. Una opción en un conjunto de opciones se transmite y almacena como un número y una opción en un tipo de datos de la opción de dos se transmite y almacena como un valor booleano.
+Cuando un usuario de la aplicación selecciona una opción y guarda ese cambio, la aplicación transmite los datos a la base de datos, que almacena esos datos en una representación independiente del lenguaje. Una opción en un conjunto de opciones se transmite y almacena como un número, y una opción en un tipo de datos de dos opciones se transmite y se almacena como un valor booleano.
 
-Las etiquetas son solo con fines de visualización. No se puede realizar las comparaciones directas con las etiquetas debido a que son específicos de un idioma. En su lugar, cada conjunto de opciones tiene una enumeración que funciona con el número de subyacente o un valor booleano. Por ejemplo, no puede usar esta fórmula:
+Las etiquetas solo son para fines de presentación. No se pueden realizar comparaciones directas con las etiquetas porque son específicas de un idioma. En su lugar, cada conjunto de opciones tiene una enumeración que funciona con el número o valor booleano subyacente. Por ejemplo, no puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = "Active"; ...`
+`If( ThisItem.OrderStatus = "Active", ...`
 
 Pero puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
-Para conjuntos de opciones globales (las entidades que comparten), el nombre de la enumeración de conjunto de opciones coincide con el nombre del conjunto de opciones globales. Para conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones que tienen el mismo nombre. Por ejemplo, el **cuentas** entidad podría tener un **OrderStatus** opción establecida, y su nombre podría ser **OrderStatus (cuentas)** . Ese nombre contiene uno o más espacios y paréntesis, por lo que debe delimitar con comillas simples si se hace referencia en una fórmula.
+En el caso de los conjuntos de opciones globales (que comparten las entidades), el nombre de la enumeración de conjuntos de opciones coincide con el nombre del conjunto de opciones global. En el caso de los conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones con el mismo nombre. Por ejemplo, la entidad **accounts** puede tener una opción **OrderStatus** establecida y su nombre podría ser **OrderStatus (accounts)** . Ese nombre contiene uno o varios espacios y paréntesis, por lo que debe encerrarlo con comillas simples si hace referencia a él en una fórmula.
 
-Además, los valores de las dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de opción de dos denominado **TaxStatus** podría tener las etiquetas **sujetos** y **no sujeto**, que corresponden a *true* y *false* respectivamente. Para mostrar, puede usar esta fórmula:
+Además, los valores de dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de dos opciones denominado **TaxStatus** podría tener las etiquetas **gravable** y **No gravable**, que corresponden a *true* y *false* respectivamente. Para mostrarlo, puede usar esta fórmula:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
 
 También puede usar esta fórmula equivalente:
 
-`If( ThisItem.Taxable; ...`
+`If( ThisItem.Taxable, ...`
