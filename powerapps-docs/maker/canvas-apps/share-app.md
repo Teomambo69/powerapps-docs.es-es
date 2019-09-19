@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 4a86f508950ad890ecaa4d3d5678e3e6f6e415dc
+ms.sourcegitcommit: 544af91dd596f2f6b6c4b9e1d08c16f43e2a7711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530244"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119041"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -59,9 +59,9 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
     > [!NOTE]
     > No se puede compartir una aplicación con un grupo de distribución de la organización o con un usuario o grupo ajeno a la organización.
 
-1. Si quiere permitir que los usuarios con quienes está compartiendo la aplicación la editen y lo compartan (además de ejecutarlo), active la casilla copropietario.
+1. Si quiere permitir que los usuarios con quienes está compartiendo la aplicación la editen y lo compartan (además de ejecutarlo), active la casilla **copropietario** .
 
-    No se puede conceder el permiso de copropietario a un grupo de seguridad si se ha [creado la aplicación desde una solución](add-app-solution.md).
+    No se puede conceder el permiso de **copropietario** a un grupo de seguridad si se ha [creado la aplicación desde una solución](add-app-solution.md).
 
     > [!NOTE]
     > Independientemente de los permisos, no hay dos personas que puedan editar una aplicación al mismo tiempo. Si una persona abre la aplicación para su edición, otras personas pueden ejecutarla, pero no modificarla.
@@ -90,14 +90,14 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 Para cambiar los permisos de un usuario o un grupo de seguridad, seleccione su nombre y, a continuación, realice cualquiera de estos pasos:
 
-- Para permitir que los copropietarios ejecuten la aplicación pero ya no la editen ni compartirla, desactive la casilla **copropietario** .
+- Para permitir que los **copropietarios** ejecuten la aplicación pero ya no la editen ni compartirla, desactive la casilla copropietario.
 - Para dejar de compartir la aplicación con ese usuario o grupo, seleccione el icono Quitar (x).
 
 ## <a name="security-group-considerations"></a>Consideraciones de grupo de seguridad
 
 - Si comparte una aplicación con un grupo de seguridad, los miembros de ese grupo y cualquiera que se una a él tendrán los permisos que especifique para dicho grupo. Cualquier persona que abandone el grupo perderá esos permisos a menos que pertenezca a un grupo diferente que tenga acceso o le otorgue permisos como usuario individual.
 
-- Todos los miembros de un grupo de seguridad tienen los mismos permisos para una aplicación que el grupo general. Sin embargo, puede especificar mayores permisos para uno o varios miembros de ese grupo para permitirles mayor acceso. Por ejemplo, puede conceder a un grupo de seguridad un permiso para ejecutar una aplicación, pero también puede proporcionar al usuario B, que pertenece a ese grupo, **el permiso de copropietario** . Todos los miembros del grupo de seguridad pueden ejecutar la aplicación, pero solo el usuario B puede modificarla. Si concede al grupo de seguridad un permiso de copropietario y el permiso de usuario B para ejecutar la aplicación, ese usuario todavía puede editar la aplicación.
+- Todos los miembros de un grupo de seguridad tienen los mismos permisos para una aplicación que el grupo general. Sin embargo, puede especificar mayores permisos para uno o varios miembros de ese grupo para permitirles mayor acceso. Por ejemplo, puede conceder a un grupo de seguridad un permiso para ejecutar una aplicación, pero también puede proporcionar al usuario B, que pertenece a ese grupo, **el permiso de copropietario** . Todos los miembros del grupo de seguridad pueden ejecutar la aplicación, pero solo el usuario B puede modificarla. Si concede al grupo de seguridad un permiso de **copropietario** y el permiso de usuario B para ejecutar la aplicación, ese usuario todavía puede editar la aplicación.
 
 ## <a name="manage-entity-permissions"></a>Administrar permisos de entidad
 
@@ -133,19 +133,21 @@ Cuando comparte una aplicación basada en una versión anterior de Common Data S
 Las aplicaciones de lienzo de PowerApps se pueden compartir con los usuarios invitados de un inquilino de Azure Active Directory. Esto permite invitar a socios comerciales externos, contratistas y terceros a ejecutar las aplicaciones de lienzo de la empresa. 
 
 > [!NOTE]
-> Los invitados solo pueden tener asignado el rol de **usuario** y no el rol de copropietario para las aplicaciones que se comparten con ellos.
+> Los invitados solo pueden tener asignado el rol de **usuario** y no el rol de **copropietario** para las aplicaciones que se comparten con ellos.
 
 ### <a name="prerequisites"></a>Requisitos previos
-1. En Azure Active Directory (Azure AD), habilite la colaboración externa B2B para el inquilino. Más información: [Habilitar la colaboración externa B2B y administrar quién puede invitar a invitados](/azure/active-directory/b2b/delegate-invitations)
+- En Azure Active Directory (Azure AD), habilite la colaboración externa B2B para el inquilino. Más información: [Habilitar la colaboración externa B2B y administrar quién puede invitar a invitados](/azure/active-directory/b2b/delegate-invitations)
     - Habilitar la colaboración externa B2B está activada de forma predeterminada. Sin embargo, un administrador de inquilinos puede cambiar la configuración.  Para obtener más información acerca de Azure AD B2B, consulte [¿Qué es el acceso de usuarios invitados en Azure ad B2B?](/azure/active-directory/b2b/what-is-b2b)  
-2. Acceso a una cuenta que puede Agregar usuarios invitados a un inquilino de Azure AD. Los administradores y los usuarios con el rol de invitador invitado pueden agregar invitados a un inquilino.   
-3. Se debe asignar una licencia de PowerApps al usuario invitado en el inquilino al que está asociada la aplicación que se está compartiendo. Aunque aún no es posible, antes de la disponibilidad general del acceso de invitado de la aplicación de lienzo, no es necesario asignar una licencia a los invitados con una licencia de PowerApps en su inquilino de inicio en el inquilino en el que son invitados.
+- Acceso a una cuenta que puede Agregar usuarios invitados a un inquilino de Azure AD. Los administradores y los usuarios con el rol de invitador invitado pueden agregar invitados a un inquilino.   
+- El usuario invitado debe tener una licencia de PowerApps asignada a través de uno de los inquilinos siguientes:
+    - El inquilino que hospeda la aplicación que se comparte.
+    - El inquilino principal del usuario Guest.
 
 ### <a name="steps-to-grant-guest-access"></a>Pasos para conceder acceso de invitado
 1. Seleccione **nuevo usuario invitado** para agregar usuarios invitados en Azure ad. Más información: [Inicio rápido: Agregue un nuevo usuario invitado en Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
     > ![Agregar invitado en Azure ad](media/share-app/guest_access_doc_1.png "Agregar invitado en Azure ad")
-2. Asignar una licencia al usuario Guest. 
+2. Si el usuario invitado todavía no tiene una licencia en su inquilino principal, asigne una licencia al usuario invitado.
    - Para asignar usuarios invitados desde admin.microsoft.com, consulte [asignación de licencias a un usuario](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
    - Para asignar usuarios invitados desde portal.azure.com, consulte [asignación o eliminación de licencias](/azure/active-directory/fundamentals/license-users-groups).
  
@@ -199,7 +201,6 @@ Al igual que con los no invitados, los orígenes de datos subyacentes a los que 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>¿Qué licencia debe asignarse a mi invitado para poder ejecutar una aplicación compartida con ellas?
 La misma licencia necesaria para que los usuarios no invitados ejecuten una aplicación. Por ejemplo, si la aplicación no usa los conectables Premium, una licencia de PowerApps P1 es suficiente para asignarla al invitado.  
 
-Antes de la disponibilidad general del acceso de invitado de la aplicación de lienzo, no es necesario asignar una licencia a los invitados con una licencia de PowerApps en su inquilino de inicio.
 
 |                                 | Formulario personalizado de SharePoint | Aplicación de lienzo independiente con conectores no Premium | Aplicación de lienzo independiente con conectores Premium | Aplicación controlada por modelos |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
@@ -210,8 +211,6 @@ Antes de la disponibilidad general del acceso de invitado de la aplicación de l
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>En PowerApps Mobile, ¿cómo ven los invitados las aplicaciones de su inquilino principal?
 Cualquier usuario que tenga acceso a una aplicación de lienzo, en su dispositivo móvil, que se publique en un inquilino de Azure AD que no sea su inquilino principal debe cerrar la sesión de PowerApps y volver a iniciar sesión en PowerApps Mobile.  
-
-Antes de la disponibilidad general del acceso de invitado de la aplicación Canvas, un selector de la organización permite al usuario cambiar el Azure AD inquilino en el que ha iniciado sesión sin tener que cerrar la sesión explícitamente de la aplicación.  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>¿Un invitado debe aceptar la invitación Azure AD invitado antes de compartir una aplicación con el invitado?
 No. Si un invitado inicia una aplicación compartida con ellos antes de aceptar una invitación de invitado, se solicitará al invitado que acepte la invitación como parte de la experiencia de inicio de sesión mientras se inicia la aplicación.  
@@ -282,7 +281,7 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Inoreader                                         | Sin                                                                     |
 | Intercom                                          | Sin                                                                     |
 | JotForm                                           | Sin                                                                     |
-| kintone                                           | Sin                                                                     |
+| Kintone                                           | Sin                                                                     |
 | LinkedIn                                          | Sin                                                                     |
 | Centro de contenido de marketing                             | Sin                                                                     |
 | Mediano                                            | Sin                                                                     |
