@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9f7f0184f70643417154f229c1e957ea6218b34
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557381"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150263"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)
@@ -44,17 +44,24 @@ La conexión de Usuarios de Office 365 se ha creado y agregado a la aplicación.
 1. En el menú **Insertar**, seleccione **Etiqueta**.
 2. En la barra de funciones, establezca su propiedad **[Text](../controls/properties-core.md)** en cualquiera de las siguientes fórmulas:
 
-    `Office365Users.MyProfile().Department`  
-    `Office365Users.MyProfile().DisplayName`  
-    `Office365Users.MyProfile().GivenName`  
-    `Office365Users.MyProfile().Id`  
-    `Office365Users.MyProfile().JobTitle`  
-    `Office365Users.MyProfile().Mail`  
-    `Office365Users.MyProfile().MailNickname`  
-    `Office365Users.MyProfile().Surname`  
-    `Office365Users.MyProfile().TelephoneNumber`  
-    `Office365Users.MyProfile().UserPrincipalName`  
-    `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().City`  
+   `Office365Users.MyProfile().CompanyName`  
+   `Office365Users.MyProfile().Country`  
+   `Office365Users.MyProfile().Department`  
+   `Office365Users.MyProfile().DisplayName`  
+   `Office365Users.MyProfile().GivenName`  
+   `Office365Users.MyProfile().Id`  
+   `Office365Users.MyProfile().JobTitle`  
+   `Office365Users.MyProfile().Mail`  
+   `Office365Users.MyProfile().MailNickname`  
+   `Office365Users.MyProfile().mobilePhone`  
+   `Office365Users.MyProfile().OfficeLocation`  
+   `Office365Users.MyProfile().PostalCode`  
+   `Office365Users.MyProfile().Surname`  
+   `Office365Users.MyProfile().TelephoneNumber`  
+   `Office365Users.MyProfile().UserPrincipalName`  
+   `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().BusinessPhones`
 
 La etiqueta muestra la información que ha especificado sobre el usuario actual.
 
@@ -67,30 +74,45 @@ La etiqueta muestra la información que ha especificado sobre el usuario actual.
 
    * Para mostrar información sobre otro usuario:  
 
-       `Office365Users.UserProfile(InfoAbout.Text).Department`  
-       `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
-       `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
-       `Office365Users.UserProfile(InfoAbout.Text).Id`  
-       `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
-       `Office365Users.UserProfile(InfoAbout.Text).Mail`  
-       `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
-       `Office365Users.UserProfile(InfoAbout.Text).Surname`  
-       `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).City`  
+     `Office365Users.UserProfile(InfoAbout.Text).CompanyName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Country`  
+     `Office365Users.UserProfile(InfoAbout.Text).Department`  
+     `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
+     `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Id`  
+     `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
+     `Office365Users.UserProfile(InfoAbout.Text).Mail`  
+     `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
+     `Office365Users.UserProfile(InfoAbout.Text).mobilePhone`  
+     `Office365Users.UserProfile(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.UserProfile(InfoAbout.Text).PostalCode`  
+     `Office365Users.UserProfile(InfoAbout.Text).Surname`  
+     `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).BusinessPhones`
+
    * Para mostrar información sobre el administrador de otro usuario:  
 
-       `Office365Users.Manager(InfoAbout.Text).Department`  
-       `Office365Users.Manager(InfoAbout.Text).DisplayName`  
-       `Office365Users.Manager(InfoAbout.Text).GivenName`  
-       `Office365Users.Manager(InfoAbout.Text).Id`  
-       `Office365Users.Manager(InfoAbout.Text).JobTitle`  
-       `Office365Users.Manager(InfoAbout.Text).Mail`  
-       `Office365Users.Manager(InfoAbout.Text).MailNickname`  
-       `Office365Users.Manager(InfoAbout.Text).Surname`  
-       `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).City`  
+     `Office365Users.Manager(InfoAbout.Text).CompanyName`  
+     `Office365Users.Manager(InfoAbout.Text).Country`  
+     `Office365Users.Manager(InfoAbout.Text).Department`  
+     `Office365Users.Manager(InfoAbout.Text).DisplayName`  
+     `Office365Users.Manager(InfoAbout.Text).GivenName`  
+     `Office365Users.Manager(InfoAbout.Text).Id`  
+     `Office365Users.Manager(InfoAbout.Text).JobTitle`  
+     `Office365Users.Manager(InfoAbout.Text).Mail`  
+     `Office365Users.Manager(InfoAbout.Text).MailNickname`  
+     `Office365Users.Manager(InfoAbout.Text).mobilePhone`  
+     `Office365Users.Manager(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.Manager(InfoAbout.Text).PostalCode`  
+     `Office365Users.Manager(InfoAbout.Text).Surname`  
+     `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).BusinessPhones`
 
 La etiqueta muestra la información que ha escrito sobre el usuario especificado o sobre el administrador de ese usuario.
 
@@ -135,11 +157,11 @@ Esta conexión incluye las siguientes funciones:
 
 | Nombre de la función | Descripción |
 | --- | --- |
-| [MyProfile](connection-office365-users.md#myprofile) |Recupera el perfil del usuario actual. |
-| [UserProfile](connection-office365-users.md#userprofile) |Recupera un perfil de usuario específico. |
-| [Manager](connection-office365-users.md#manager) |Recupera el perfil de usuario del administrador del usuario especificado. |
 | [DirectReports](connection-office365-users.md#directreports) |Devuelve los subordinados directos del usuario especificado. |
+| [Manager](connection-office365-users.md#manager) |Recupera el perfil de usuario para el administrador del usuario especificado. |
+| [MyProfile](connection-office365-users.md#myprofile) |Recupera el perfil del usuario actual. |
 | [SearchUser](connection-office365-users.md#searchuser) |Recupera los resultados de búsqueda de los perfiles de usuario. |
+| [UserProfile](connection-office365-users.md#userprofile) |Recupera un perfil de usuario específico. |
 
 ### <a name="myprofile"></a>MyProfile
 Obtener mi perfil: Recupera el perfil del usuario actual.
@@ -151,35 +173,45 @@ Ninguna
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Departamento |string |Departamento del usuario. |
+| ciudad | string |Ciudad del usuario. |
+| Compañía | string |Empresa del usuario. |
+| Pais | string |País del usuario. |
+| Departamento |string |Departamento de usuarios. |
 | DisplayName |string |Nombre para mostrar del usuario. |
 | GivenName |string |Nombre dado del usuario. |
-| Identificador |string |Id. de usuario |
+| Identificador |string |Identificador de usuario. |
 | JobTitle |string |Puesto del usuario. |
 | Correo |string |Id. de correo electrónico del usuario. |
 | MailNickname |string |Alias del usuario. |
+| mobilePhone | string |Teléfono móvil del usuario. |
+| OfficeLocation | string |Ubicación de la oficina del usuario.|
+| CódPostal | string |Código postal del usuario.|
 | Apellido |string |Apellido del usuario. |
 | TelephoneNumber |string |Número de teléfono del usuario. |
 | UserPrincipalName |string |Nombre principal de usuario. |
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
+| BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="userprofile"></a>UserProfile
-Obtener perfil de usuario: Recupera un perfil de usuario específico.
+Obtener Perfil de usuario: Recupera un perfil de usuario específico.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
-| Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
+| Identificador |string |yes |Nombre principal de usuario o identificador de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Departamento |string |Departamento del usuario. |
+| ciudad | string |Ciudad del usuario. |
+| Compañía | string |Empresa del usuario. |
+| Pais | string |País del usuario. |
+| Departamento |string |Departamento de usuarios. |
 | DisplayName |string |Nombre para mostrar del usuario. |
 | GivenName |string |Nombre dado del usuario. |
-| Identificador |string |Id. de usuario |
+| Identificador |string |Identificador de usuario. |
 | JobTitle |string |Puesto del usuario. |
 | Correo |string |Id. de correo electrónico del usuario. |
 | MailNickname |string |Alias del usuario. |
@@ -187,56 +219,71 @@ Obtener perfil de usuario: Recupera un perfil de usuario específico.
 | TelephoneNumber |string |Número de teléfono del usuario. |
 | UserPrincipalName |string |Nombre principal de usuario. |
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
+| BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="manager"></a>Manager
-Obtener administrador: Recupera el perfil de usuario del administrador del usuario especificado.
+Obtener administrador: Recupera el perfil de usuario para el administrador del usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
-| Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
+| Identificador |string |yes |Nombre principal de usuario o identificador de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Departamento |string |Departamento del usuario. |
+| ciudad | string |Ciudad del usuario. |
+| Compañía | string |Empresa del usuario. |
+| Pais | string |País del usuario. |
+| Departamento |string |Departamento de usuarios. |
 | DisplayName |string |Nombre para mostrar del usuario. |
 | GivenName |string |Nombre dado del usuario. |
-| Identificador |string |Id. de usuario |
+| Identificador |string |Identificador de usuario. |
 | JobTitle |string |Puesto del usuario. |
 | Correo |string |Id. de correo electrónico del usuario. |
 | MailNickname |string |Alias del usuario. |
+| mobilePhone | string |Teléfono móvil del usuario. |
+| OfficeLocation | string |Ubicación de la oficina del usuario.|
+| CódPostal | string |Código postal del usuario.|
 | Apellido |string |Apellido del usuario. |
 | TelephoneNumber |string |Número de teléfono del usuario. |
 | UserPrincipalName |string |Nombre principal de usuario. |
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
+| BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="directreports"></a>DirectReports
-Obtener subordinados directos: Obtener subordinados directos
+Obtener informes directos: Obtener informes directos.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
-| Identificador |string |yes |Nombre principal de usuario o id. de correo electrónico. |
+| Identificador |string |yes |Nombre principal de usuario o identificador de correo electrónico. |
 
 #### <a name="output-properties"></a>Propiedades de salida
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Departamento |string |Departamento del usuario. |
+| ciudad | string |Ciudad del usuario. |
+| Compañía | string |Empresa del usuario. |
+| Pais | string |País del usuario. |
+| Departamento |string |Departamento de usuarios. |
 | DisplayName |string |Nombre para mostrar del usuario. |
 | GivenName |string |Nombre dado del usuario. |
-| Identificador |string |Id. de usuario |
+| Identificador |string |Identificador de usuario. |
 | JobTitle |string |Puesto del usuario. |
 | Correo |string |Id. de correo electrónico del usuario. |
 | MailNickname |string |Alias del usuario. |
+| mobilePhone | string |Teléfono móvil del usuario. |
+| OfficeLocation | string |Ubicación de la oficina del usuario.|
+| CódPostal | string |Código postal del usuario.|
 | Apellido |string |Apellido del usuario. |
 | TelephoneNumber |string |Número de teléfono del usuario. |
 | UserPrincipalName |string |Nombre principal de usuario. |
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
+| BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="searchuser"></a>SearchUser
 Buscar usuarios: Recupera los resultados de búsqueda de los perfiles de usuario.
@@ -245,23 +292,30 @@ Buscar usuarios: Recupera los resultados de búsqueda de los perfiles de usuario
 
 | Nombre | Tipo de datos | Requerido | Descripción |
 | --- | --- | --- | --- |
-| searchTerm |string |no |Cadena de búsqueda. Se aplica a: nombre para mostrar, nombre dado, apellido, correo electrónico, alias de correo electrónico y nombre principal de usuario |
+| searchTerm |string |no |Cadena de búsqueda. Se aplica a: nombre para mostrar, nombre dado, apellidos, correo, sobrenombre de correo y nombre principal del usuario. |
 
 #### <a name="output-properties"></a>Propiedades de salida
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Departamento |string |Departamento del usuario. |
+| ciudad | string |Ciudad del usuario. |
+| Compañía | string |Empresa del usuario. |
+| Pais | string |País del usuario. |
+| Departamento |string |Departamento de usuarios. |
 | DisplayName |string |Nombre para mostrar del usuario. |
 | GivenName |string |Nombre dado del usuario. |
-| Identificador |string |Id. de usuario |
+| Identificador |string |Identificador de usuario. |
 | JobTitle |string |Puesto del usuario. |
 | Correo |string |Id. de correo electrónico del usuario. |
 | MailNickname |string |Alias del usuario. |
+| mobilePhone | string |Teléfono móvil del usuario. |
+| OfficeLocation | string |Ubicación de la oficina del usuario.|
+| CódPostal | string |Código postal del usuario.|
 | Apellido |string |Apellido del usuario. |
 | TelephoneNumber |string |Número de teléfono del usuario. |
 | UserPrincipalName |string |Nombre principal de usuario. |
 | AccountEnabled |boolean |Marca de cuenta habilitada. |
+| BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ## <a name="helpful-links"></a>Vínculos útiles
 * Consulte todas las [conexiones disponibles](../connections-list.md).

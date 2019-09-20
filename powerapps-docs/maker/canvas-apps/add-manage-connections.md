@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d230d38c8393540bc78fd003ecb167f1f3978b97
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564356"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150235"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Administración de conexiones de aplicaciones de lienzo en PowerApps
 En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), cree una conexión con uno o varios orígenes de datos, elimine una conexión o actualice las credenciales.
@@ -43,9 +43,9 @@ La mayoría de las aplicaciones de PowerApps utilizan información externa (lo q
 
 El tipo más común de origen de datos son las tablas, que pueden usarse tanto para recuperar como para guardar información. Puede utilizar las conexiones con los orígenes de datos para leer y escribir información en libros de Microsoft Excel, listas de SharePoint, tablas SQL y muchos otros formatos, que pueden guardarse en servicios en la nube, como OneDrive para la Empresa, DropBox, SQL Server, etc.
 
-También existen otros tipos de orígenes de datos que no son tablas, como correos electrónicos, calendarios, Twitter y (próximamente) notificaciones.
+Hay otros tipos de orígenes de datos que no son tablas, como correo electrónico, calendarios, Twitter y notificaciones.
 
-Con los controles **[Galería](controls/control-gallery.md)**, **[Formulario de presentación](controls/control-form-detail.md)** y **[Formulario de edición](controls/control-form-detail.md)**, resulta muy fácil crear una aplicación que lea y escriba datos en un origen de datos. Para empezar, lea el artículo [Understand data forms](working-with-forms.md) (Introducción a los formularios de datos).
+Con los controles **[Galería](controls/control-gallery.md)** , **[Formulario de presentación](controls/control-form-detail.md)** y **[Formulario de edición](controls/control-form-detail.md)** , resulta muy fácil crear una aplicación que lea y escriba datos en un origen de datos. Para empezar, lea el artículo [Understand data forms](working-with-forms.md) (Introducción a los formularios de datos).
 
 Además de crear y administrar conexiones en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), también puede crearlas realizando estas tareas:
 
@@ -86,4 +86,5 @@ En la lista de conexiones, pulse o haga clic en la conexión que desea actualiza
 
 * Para actualizar las credenciales de una conexión, pulse o haga clic en el icono con forma de llave y especifique las credenciales de dicha conexión.
 * Para eliminar la conexión, pulse o haga clic en el icono de papelera.
+* Pulse o haga clic en el icono de información para ver los detalles de la conexión.
 
