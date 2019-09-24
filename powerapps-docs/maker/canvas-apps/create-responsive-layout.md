@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2019
 ms.locfileid: "71159855"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Crear diseños con capacidad de respuesta en aplicaciones de lienzo
 
@@ -44,9 +45,9 @@ Para que la aplicación responda, debe realizar pasos adicionales, pero este cam
 
 Para que los diseños de la aplicación respondan a los cambios en las dimensiones de la pantalla, escribirá fórmulas que usen las propiedades **ancho** y **alto** de la pantalla. Para mostrar estas propiedades, abra una aplicación en PowerApps Studio y, a continuación, seleccione una pantalla. Las fórmulas predeterminadas para estas propiedades aparecen en la pestaña **avanzadas** del panel derecho.
 
-**Ancho** = `Max(App.Width, App.DesignWidth)`
+**Ancho** = `Max(App.Width; App.DesignWidth)`
 
-**Alto** = `Max(App.Height, App.DesignHeight)`
+**Alto** = `Max(App.Height; App.DesignHeight)`
 
 Estas fórmulas hacen referencia a las propiedades **width**, **height**, **DesignWidth**y **DesignHeight** de la aplicación. Las propiedades de **ancho** y **alto** de la aplicación se corresponden con las dimensiones de la ventana del dispositivo o del explorador en el que se ejecuta la aplicación. Si el usuario cambia el tamaño de la ventana del explorador (o gira el dispositivo si ha desactivado la **orientación del bloqueo**), los valores de estas propiedades cambian dinámicamente. Las fórmulas de las propiedades **width** y **height** de la pantalla se vuelven a evaluar cuando cambian estos valores.
 
@@ -185,16 +186,16 @@ Hasta ahora, ha aprendido a usar fórmulas para cambiar el tamaño de cada contr
 
 Las fórmulas predeterminadas para las propiedades de **ancho** y **alto** de una pantalla, como en este tema descrito anteriormente, no proporcionarán necesariamente una buena experiencia si un usuario gira un dispositivo. Por ejemplo, una aplicación diseñada para un teléfono en orientación vertical tiene un **DesignWidth** de 640 y un **DesignHeight** de 1136. La misma aplicación en un teléfono con orientación horizontal tendrá estos valores de propiedad:
 
-- La propiedad **ancho** de la pantalla se establece `Max(App.Width, App.DesignWidth)`en. El **ancho** de la aplicación (1136) es mayor que su **DesignWidth** (640), por lo que la fórmula se evalúa como 1136.
-- La propiedad **alto** de la pantalla se establece `Max(App.Height, App.DesignHeight)`en. El **alto** de la aplicación (640) es menor que el de **DesignHeight** (1136), por lo que la fórmula se evalúa como 1136.
+- La propiedad **ancho** de la pantalla se establece `Max(App.Width; App.DesignWidth)`en. El **ancho** de la aplicación (1136) es mayor que su **DesignWidth** (640), por lo que la fórmula se evalúa como 1136.
+- La propiedad **alto** de la pantalla se establece `Max(App.Height; App.DesignHeight)`en. El **alto** de la aplicación (640) es menor que el de **DesignHeight** (1136), por lo que la fórmula se evalúa como 1136.
 
 Con un **alto** de pantalla de 1136 y un alto de dispositivo (en esta orientación) de 640, el usuario debe desplazar la pantalla verticalmente para mostrar todo su contenido, lo que podría no ser la experiencia que desea.
 
 Para adaptar las propiedades de **ancho** y **alto** de la pantalla a la orientación del dispositivo, puede usar estas fórmulas:
 
-**Ancho** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**Ancho** = `Max(App.Width; If(App.Width < App.Height; App.DesignWidth; App.DesignHeight))`
 
-**Alto** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
+**Alto** = `Max(App.Height; If(App.Width < App.Height; App.DesignHeight; App.DesignWidth))`
 
 Estas fórmulas intercambian los valores de **DesignWidth** y **DesignHeight** de la aplicación, en función de si el ancho del dispositivo es menor que el alto (orientación vertical) o superior al alto (orientación horizontal).
 
@@ -209,10 +210,10 @@ Puede usar la propiedad **orientación** de la pantalla para determinar si la pa
 |--|----------|---|
 | **Esquina superior** | **X1** | `0` |
 | **Esquina superior** | **SÍ** | `0` |
-| **Esquina superior** | **Ancho** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
-| **Esquina superior** | **Alto**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
-| **Inferiores** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
-| **Inferiores** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
+| **Esquina superior** | **Ancho** | `If(Parent.Orientation = Layout.Vertical; Parent.Width; Parent.Width / 2)` |
+| **Esquina superior** | **Alto**   | `If(Parent.Orientation = Layout.Vertical; Parent.Height / 2; Parent.Height)` |
+| **Inferiores** | X | `If(Parent.Orientation = Layout.Vertical; 0; Upper.X + Upper.Width)`  |
+| **Inferiores** | Y | `If(Parent.Orientation = Layout.Vertical; Upper.Y + Upper.Height; 0)` |
 | **Inferiores** | **Ancho** | `Parent.Width - Lower.X` |
 | **Inferiores** | **Alto** | `Parent.Height - Lower.Y` |
 
@@ -239,12 +240,12 @@ Esta fórmula se evalúa como **true** cuando el tamaño es medio o mayor y **fa
 
 Si desea que un control ocupe una fracción diferente del ancho de la pantalla en función del tamaño de la pantalla, establezca la propiedad **ancho** del control en esta fórmula:
 
-```powerapps-dot
+```powerapps-comma
 Parent.Width *  
-    Switch(Parent.Size,  
-        ScreenSize.Small, 0.5,  
-        ScreenSize.Medium, 0.3,  
-        0.25)
+    Switch(Parent.Size;  
+        ScreenSize.Small; 0,5;  
+        ScreenSize.Medium; 0,3;  
+        0,25)
 ```
 Esta fórmula establece el ancho del control en la mitad del ancho de la pantalla en una pantalla pequeña, tres décimas de ancho de pantalla en una pantalla mediana y un cuarto del ancho de la pantalla en todas las demás pantallas.
 
@@ -252,7 +253,7 @@ Esta fórmula establece el ancho del control en la mitad del ancho de la pantall
 
 La propiedad de **tamaño** de la pantalla se calcula comparando la propiedad **ancho** de la pantalla con los valores de la propiedad **SizeBreakpoints** de la aplicación. Esta propiedad es una tabla de números de una sola columna que indica los puntos de interrupción de ancho que separan los tamaños de pantalla con nombre:
 
-En una aplicación creada para tabletas o Web, el valor predeterminado de la propiedad **SizeBreakpoints** de la aplicación es **[600, 900, 1200]** . En una aplicación creada para teléfonos, el valor es **[1200, 1800, 2400]** . (Los valores de las aplicaciones de teléfono se duplican porque estas aplicaciones usan coordenadas que son, de hecho, el doble de las coordenadas usadas en otras aplicaciones).
+En una aplicación creada para tabletas o Web, el valor predeterminado de la propiedad **SizeBreakpoints** de la aplicación es **[600; 900; 1200]** . En una aplicación creada para teléfonos, el valor es **[1200; 1800; 2400]** . (Los valores de las aplicaciones de teléfono se duplican porque estas aplicaciones usan coordenadas que son, de hecho, el doble de las coordenadas usadas en otras aplicaciones).
 
 ![valores predeterminados de la propiedad app. SizeBreakpoints](media/create-responsive-layout/default-breakpoints.png)
 
