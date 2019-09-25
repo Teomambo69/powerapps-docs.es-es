@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ff359b80dd7129ec91f987a367c1635143d8e5e
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213852"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256109"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que cree suelen ser más útiles cuando están disponibles en el momento en que los usuarios realizan su trabajo. Al incrustar aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios web y otros servicios, como Power BI o SharePoint.
@@ -46,7 +46,7 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 >
 > Formato anterior:
 > 
-> https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/ AppID
+> https\://Web.powerapps.com/WebPlayer/iframeapp? Source = iframe & AppID =/Providers/Microsoft.PowerApps/apps/[AppID]
 
 Lo único que tiene que hacer es sustituir el identificador de la aplicación por [AppID] en el identificador URI (incluido "[' & ']"). Le mostraremos cómo obtener ese valor en breve, pero primero aquí están todos los parámetros disponibles en el identificador URI:
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70842241"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Inserción de una aplicación de PowerApps en Teams 
@@ -92,24 +92,24 @@ Puede omitir estos pasos si App Studio ya está instalado.
    > [!div class="mx-imgBorder"] 
    > ![Información de rellenado](./media/embed-teams-app/fill-in-info-about-app.png "Información de rellenado")
 
-   |Fields  |DESCRIPCIÓN  |
+   |Campos  |Descripción  |
    |---------|---------|
    |**Nombres de aplicación** |    |
-   |Nombre corto     | Necesario. Nombre para mostrar corto de la aplicación. límite de 30 caracteres.        |
+   |Nombre corto     | Obligatorio. Nombre para mostrar corto de la aplicación. límite de 30 caracteres.        |
    |Nombre largo     | El nombre completo de la aplicación, que se usa si el nombre completo de la aplicación supera los 30 caracteres.       | 
    |**Identificado**     |         |
-   |IDENTIFICADOR de la aplicación     | Necesario. Identificador único generado por Microsoft para esta aplicación.        |
-   |Nombre del paquete     | Necesario. Un identificador único para esta aplicación. Se recomienda usar la notación de dominio inverso; por ejemplo, com. example. <AppName>.       |
-   |`Version`     | Necesario. La versión de la aplicación específica. Si actualiza algo en el manifiesto, la versión también debe incrementarse.     |
+   |IDENTIFICADOR de la aplicación     | Obligatorio. Identificador único generado por Microsoft para esta aplicación.        |
+   |Nombre del paquete     | Obligatorio. Un identificador único para esta aplicación. Se recomienda usar la notación de dominio inverso; por ejemplo, com. example. <AppName>.       |
+   |Versión     | Obligatorio. La versión de la aplicación específica. Si actualiza algo en el manifiesto, la versión también debe incrementarse.     |
    |**Revise**    |     |
-   | Descripción breve    | Necesario. Una breve descripción de la experiencia de la aplicación, que se usa cuando el espacio es limitado. límite de 80 caracteres.   |
-   | Descripción larga    | Necesario. La descripción completa de la aplicación.     |
+   | Descripción breve    | Obligatorio. Una breve descripción de la experiencia de la aplicación, que se usa cuando el espacio es limitado. límite de 80 caracteres.   |
+   | Descripción larga    | Obligatorio. La descripción completa de la aplicación.     |
    | **Información para desarrolladores**    |     |
-   | NOMBRE    | Necesario. El nombre para mostrar de la compañía o el desarrollador.     |
-   | Website    | Necesario. La dirección URL de https://al sitio web de la aplicación a través de powerapps.com. Cuando alguien instala la aplicación, aparecerá la página "acerca de la aplicación". Debe vincularse a la versión Web de la aplicación en powerapps.com.   |
+   | Nombre    | Obligatorio. El nombre para mostrar de la compañía o el desarrollador.     |
+   | Bsitio    | Obligatorio. La dirección URL de https://al sitio web de la aplicación a través de powerapps.com. Cuando alguien instala la aplicación, aparecerá la página "acerca de la aplicación". Debe vincularse a la versión Web de la aplicación en powerapps.com.   |
    | **Direcciones URL de la aplicación**    | Estos vínculos se mostrarán en la página **About (acerca** de) junto con la dirección URL del sitio Web.     |
-   | Declaración de privacidad    | Necesario. La dirección URL de https://a la Directiva de privacidad del desarrollador. [Ejemplo](https://go.microsoft.com/fwlink/p/?LinkID=698505).   |
-   | Términos de uso    | Necesario. La dirección URL de https://a los términos de uso del desarrollador.  [Ejemplo](https://go.microsoft.com/fwlink/p/?LinkID=698507).  |
+   | Declaración de privacidad    | Obligatorio. La dirección URL de https://a la Directiva de privacidad del desarrollador. [Ejemplo](https://go.microsoft.com/fwlink/p/?LinkID=698505).   |
+   | Términos de uso    | Obligatorio. La dirección URL de https://a los términos de uso del desarrollador.  [Ejemplo](https://go.microsoft.com/fwlink/p/?LinkID=698507).  |
    | **Marca**    |     |
    | Color completo    | Ruta de acceso relativa de un archivo a un icono de 192x192 PNG de color completo.    |
    | Contorno transparente    |Ruta de acceso relativa de un archivo a un icono de esquema PNG de 32 transparente.     |

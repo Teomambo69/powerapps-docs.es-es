@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/30/2019
+ms.date: 09/23/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213928"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256128"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -53,7 +52,7 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de PowerApps Studio que se inició comparten una conexión de datos dinámica. Mientras los dos estén abiertos, se pueden filtrar o cambiar los datos del informe para ver los datos actualizados reflejados al instante en la aplicación en PowerApps Studio.
 
@@ -79,6 +78,7 @@ Las siguientes limitaciones se aplican al código Visual personalizado de PowerA
 - Tendrá que compartir la aplicación de PowerApps de forma independiente al informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
 - Power BI Report Server y la aplicación móvil para Power BI no admiten el visual personalizado de PowerApps.
 - Si usa la función PowerBIIntegration. Refresh (), debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) y la conexión de datos debe crearse mediante el método directquery.
+- PowerApps en Power BI Desktop proporciona datos para PowerApps Studio al crear aplicaciones pero no durante la edición. Use Power BI web para obtener una vista previa de los datos mientras edita las aplicaciones.
 
 > [!NOTE]
 > Se recomienda publicar primero el informe en el servicio Power BI y, a continuación, crear o modificar las aplicaciones.
@@ -87,7 +87,7 @@ Las siguientes limitaciones se aplican al código Visual personalizado de PowerA
 
 En la tabla siguiente se muestra la compatibilidad del explorador para ver, crear y modificar acciones del código Visual personalizado de PowerApps. Los exploradores y las acciones admitidos se identifican con &check; una marca de verificación ().
 
-|Browser|Visores|Crear|Modificaciones
+|Explorador|Visores|A|Modificaciones
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
@@ -95,6 +95,18 @@ En la tabla siguiente se muestra la compatibilidad del explorador para ver, crea
 |Safari|&check;
 |Mozilla Firefox
 |Todos los demás exploradores
+
+## <a name="accessibility-support"></a>Compatibilidad con accesibilidad
+
+Para navegar por el visual de PowerApps con el teclado, siga estos pasos:
+
+1. Centrar la selección en el informe de Power BI para el visual de PowerApps deseado.
+2. Use la tecla **Tab** del teclado hasta que se resalte el visual.
+3. Use la tecla **Ctrl + flecha derecha** en el teclado para escribir el control visual.
+3. Use la tecla **Tab** del teclado hasta que se seleccione el componente deseado del elemento visual.
+
+Para obtener más información, consulte: [Power BI documentación de accesibilidad]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 
