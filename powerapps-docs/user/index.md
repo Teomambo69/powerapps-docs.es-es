@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b6088a9b75a7ac4b41263a73d8ead58520f4dd
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896154"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705305"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>¿Cómo se buscan y ejecutan las aplicaciones?
 
@@ -31,7 +31,7 @@ No es necesario que realice las tareas manualmente. Con PowerApps, puede crear y
 
 Como las aplicaciones de lienzo pueden usarse prácticamente para cualquier fin, no hay mucha documentación de ayuda sobre cómo usar una aplicación una vez creada. Si necesita ayuda con el uso de una aplicación de lienzo, póngase en contacto con el creador de la aplicación o con el administrador de PowerApps.
 
-Las [aplicaciones controladas por modelos](/powerapps/maker/model-driven-apps/model-driven-app-overview) usan la [Interfaz unificada](unified-interface.md) que proporciona un diseño dinámico y accesible. Puede ejecutar la aplicación en un explorador web o en dispositivos móviles conocidos. La aplicación tiene varios componentes, entre los cuales se incluyen los paneles, los formularios, las vistas, los gráficos y los procesos empresariales, que contribuyen a facilitar el uso de la aplicación. Las aplicaciones controladas por modelos se compilan y se modelan en el marco Microsoft Dynamics 365 Customer Engagement, por lo que la experiencia del usuario es similar a la de las [aplicaciones](/dynamics365/customer-engagement/basics/business-apps-dynamics-365) de Dynamics 365 Customer Engagement.
+Las [aplicaciones controladas por modelos](/powerapps/maker/model-driven-apps/model-driven-app-overview) usan la [Interfaz unificada](unified-interface.md) que proporciona un diseño dinámico y accesible. Puede ejecutar la aplicación en un explorador web o en dispositivos móviles conocidos. La aplicación tiene varios componentes, entre los cuales se incluyen los paneles, los formularios, las vistas, los gráficos y los procesos empresariales, que contribuyen a facilitar el uso de la aplicación.
 
 En esta sección se proporciona información acerca de cómo buscar y ejecutar aplicaciones de lienzo y controladas por modelos desde diversos lugares. También se proporciona información sobre cómo navegar y trabajar en una aplicación basada en modelos: [Uso de aplicaciones controladas por modelos](use-model-driven-apps.md).
 
