@@ -1,7 +1,7 @@
 ---
 title: Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource | Microsoft Docs
 description: Utilice AppSource para compartir aplicaciones de lienzo con los clientes y genere clientes potenciales para su empresa.
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550487"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705330"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource
 
@@ -43,7 +42,7 @@ Crear una aplicación para una solución de versión de prueba es igual que crea
 PowerApps admite de forma nativa la creación de aplicaciones con datos insertados, por lo que basta con disponer de datos de ejemplo para la aplicación. Estos datos se deben capturar en un archivo de Excel como una o varias tablas. A continuación, en PowerApps se extraen los datos de las tablas de Excel en la aplicación y se trabaja con ellos, en lugar de hacerlo a través de una conexión externa. El siguiente proceso en tres pasos muestra cómo extraer datos y usarlos en la aplicación.
 
 ### <a name="step-1-import-data-into-the-app"></a>Paso 1: Importar datos en la aplicación
-Supongamos que tiene un archivo de Excel con dos tablas: **SiteInspector** y **SitePhotos**.
+Suponga que tiene un archivo de Excel con dos tablas: **SiteInspector** y **SitePhotos**.
 
 ![Tablas de Excel que se importarán](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -55,14 +54,14 @@ Ahora dispone de las tablas como orígenes de datos en la aplicación.
 
 ![Tablas de Excel como orígenes de datos importados](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Paso 2: Administración de escenarios de solo lectura y lectura y escritura
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Paso 2: Controlar escenarios de solo lectura y de lectura y escritura
 Los datos que importó son de tipo *estático*, por lo tanto, de solo lectura. Si la aplicación es de solo lectura (es decir, solo muestra los datos al usuario), se hace referencia a las tablas directamente en la aplicación. Por ejemplo, si desea tener acceso al campo **Title** de la tabla **SiteInspector**, utilice **SiteInspector.Title** en la fórmula.
 
 Si la aplicación es de lectura y escritura, extraiga primero los datos de cada tabla en una *colección*, que es una estructura de datos tabulares en PowerApps. A continuación, trabaje con la colección en lugar de con la tabla. Para extraer datos de las tablas **SiteInspector** y **SitePhotos** en las colecciones **SiteInspectorCollect** y **SitePhotosCollect**:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 La fórmula borra ambas colecciones y, a continuación, recopila los datos de cada tabla en la colección adecuada:
@@ -78,12 +77,12 @@ Ha visto cómo leer datos directamente y desde una colección; ahora, vamos a mo
 
 **Para agregar una fila a una colección**, use [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Para actualizar una fila de una colección**, use [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Para eliminar una fila de una colección**, use [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]

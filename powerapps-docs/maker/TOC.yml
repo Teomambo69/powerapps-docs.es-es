@@ -992,6 +992,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: Adición de informes a una aplicación
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: Consideraciones sobre los informes
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: Espacio aislado de RDL
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: "Uso de Power\_BI"
+              href: ./model-driven-apps/use-power-bi.md
+            - name: "Personalización de paquetes de contenido de Power\_BI"
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: Validar y publicar una aplicación
       href: ./model-driven-apps/validate-app.md
     - name: Compartir una aplicación

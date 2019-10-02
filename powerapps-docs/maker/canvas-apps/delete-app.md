@@ -1,7 +1,7 @@
 ---
 title: Eliminación de una aplicación de lienzo | Microsoft Docs
 description: Cómo eliminar una aplicación de lienzo existente en PowerApps
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb10fd0a59395223530e5934d827581640928f57
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: c683ed3f67e05d08038815b518de8e6ccf85bc71
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736265"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705358"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Eliminación de una aplicación de lienzo de PowerApps
 En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuenta de PowerApps y de las cuentas de cualquiera con quien se haya compartido la aplicación.
 
 ## <a name="delete-an-app-from-your-account"></a>Eliminar una aplicación de la cuenta
-1. Abra [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, seleccione **aplicaciones** en la izquierda **vista de árbol** panel.
+1. Abra [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, seleccione **aplicaciones** en el panel de **vista de árbol** de la izquierda.
    
     ![](./media/delete-app/file-apps.png)
 2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo las aplicaciones de las que sea propietario o aquellas aplicaciones a las que contribuya.
@@ -36,7 +36,7 @@ En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuen
 3. Cerca del borde derecho, seleccione el icono de información de la aplicación que desea eliminar.
    
     ![](./media/delete-app/app-options.png)
-4. Cerca de la esquina superior derecha, seleccione el icono de Papelera para eliminar la aplicación.
+4. Cerca de la esquina superior derecha, seleccione el icono de la papelera para eliminar la aplicación.
    
     ![](./media/delete-app/delete-icon.png)
    
