@@ -1,0 +1,1 @@
+Obtiene el valor del nombre de la columna especificado.
