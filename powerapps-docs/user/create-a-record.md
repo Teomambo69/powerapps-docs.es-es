@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a45b19ef45c729d02d1fff418ca4a9103fe5725a
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208206"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924432"
 ---
 # <a name="create-a-new-record"></a>Creación de un registro
 
@@ -60,4 +60,5 @@ El comando **Crear un registro** o **Creación rápida** facilita y agiliza el p
     > [!div class="mx-imgBorder"] 
     > ![Botón Crear nuevo](media/newrecord3.png "Botón Crear nuevo")
 
-    
+    > [!NOTE]
+    > Si tiene cambios sin guardar e intenta ir a otro registro o formulario, aparecerá un cuadro de diálogo **cambios no guardados** . Si selecciona **Guardar y continuar**, se intentará guardar la información y abrir la página a la que desea ir. Si decide guardar y continuar y hay un error en un campo, el cuadro de diálogo se cerrará y permanecerá en la página para corregir el error antes de salir.

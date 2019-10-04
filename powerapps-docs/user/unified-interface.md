@@ -15,24 +15,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: be255d4208b2926867ef0e4dec291d3435f64443
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208167"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705308"
 ---
-#  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Experiencia de usuario mejorada con la interfaz unificada para aplicaciones controladas por modelos 
+# <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Experiencia de usuario mejorada con la interfaz unificada para aplicaciones controladas por modelos 
 
 La interfaz unificada para aplicaciones controladas por modelos proporciona una experiencia de usuario coherente y accesible en todos los dispositivos, ya sea en un equipo de escritorio, portátil, tableta o teléfono. Las aplicaciones se escalan mediante el reflujo de los componentes en la pantalla. El diseño con capacidad de respuesta se adapta a su entorno en función del tamaño de la pantalla, por lo que se puede mostrar más información en el espacio disponible.
 
 > [!div class="mx-imgBorder"]
 > La ![interfaz unificada se adapta a la pantalla] La (media/Reflow.png "interfaz unificada se adapta a la pantalla")
 
-
-
 > [!NOTE]
-> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, vea [el anuncio de la escala de tiempo para pasar a la interfaz unificada](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, vea [Blog: Presentación de la escala de tiempo para pasar a la interfaz unificada @ no__t-0. Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
 
 ## <a name="navigation"></a>Explora
 
@@ -61,6 +59,11 @@ El mecanismo de acoplamiento ha mejorado el flujo de procesos empresariales. Pue
 ## <a name="accessibility"></a>Consejos
 La experiencia de accesibilidad mejorada le permite usar lectores de pantalla para traducir información en pantalla en sonido audible e imprimir en un lector de Braille para que más personas puedan usar la aplicación. Para obtener más información, vea [usar un lector de pantalla](screen-reader.md).
 
-##  <a name="unified-interface-community"></a>Comunidad de interfaz unificada
+## <a name="create-a-unified-interface-app"></a>Creación de una aplicación de interfaz unificada
+Si tiene requisitos para crear su propia experiencia en una interfaz unificada, puede crear una aplicación controlada por modelos mediante el diseñador de aplicaciones. Vea [información general sobre la creación de aplicaciones controladas por modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview).
+
+![Creación de una nueva aplicación de interfaz unificada](media/uci-model-driven-app.png "creación de una nueva aplicación de interfaz unificada")
+
+## <a name="unified-interface-community"></a>Comunidad de interfaz unificada
 
 Vaya al sitio de la [comunidad de interfaz unificada](https://community.dynamics.com/365/unified-interface/) para obtener ayuda con la planeación y ejecución de una transición fluida a la interfaz unificada y póngase en contacto con expertos y compañeros en blogs, seminarios web, vídeos, eventos, etc.

@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/03/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61530943"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924524"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Navegación básica en una aplicación controlada por modelos 
 
@@ -77,7 +77,7 @@ El panel de referencias es una excelente manera de trabajar sin salir de la pant
 
 Hay tres tipos de notificaciones que se muestran en un formulario: indicaciones, advertencias y errores. Las notificaciones siempre están disponibles en la parte superior del formulario, justo encima del encabezado.
 
-Las notificaciones que se describen a continuación están disponibles en la versión 9.1.9.3010.
+Al seleccionar la notificación de error, se le llevará al campo del formulario en el que se produjo el error.
 
 ![Ejemplo de notificaciones](media/notifications.png "Ejemplo de notificaciones")
 
@@ -88,6 +88,10 @@ Si solo hay una notificación, verá una única línea.
 Si hay más de una notificación, verá el número de notificaciones. Seleccione el botón de contenido adicional para ver cada mensaje.
 
 ![Ejemplo de varias notificaciones](media/multiple_notification.png "Ejemplo de varias notificaciones")
+
+## <a name="grids"></a>Cuadrículas
+
+Las cuadrículas de la interfaz unificada se han mejorado para aumentar la cantidad de datos que pueden verse en la pantalla. Las cuadrículas también tienen opciones de filtrado mejoradas que incluyen recordar el último filtro y ordenar el orden. Para obtener una lista detallada de las mejoras, consulte esta entrada de blog, [funcionalidad mejorada en redes de interfaz unificada](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids).
 
 
 

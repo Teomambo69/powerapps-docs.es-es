@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/02/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783626"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924566"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un seguimiento de todas las comunicaciones con un cliente o un contacto. Por ejemplo, puede tomar notas, agregar publicaciones, agregar una tarea, enviar un correo electrónico, agregar detalles de llamada telefónica o fijar citas. El sistema automáticamente agrega una marca de tiempo a cada actividad y muestra quién la creó. Usted y otras personas de su equipo pueden desplazarse por las actividades para ver el historial mientras trabajan con un cliente. 
 
@@ -101,13 +100,13 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 
 
     > [!NOTE]
-    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **Personalización configuración** > de la pestaña**correo electrónico** y seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](set-personal-options.md).
+    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** >  pestaña**correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
 
    > [!div class="mx-imgBorder"]
-   > ![Establecer opciones personales](media/emailsettings1.png "Establecer opciones personales")
+   > ![Establecer]opciones personales(media/emailsettings1.png "set personal Options")
    
     > [!div class="mx-imgBorder"]
-    > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
+    > ![Establecer opciones personales establecer correo electrónico]opciones(media/emailsettings2.png "personales para correo electrónico")
 
   
 ## <a name="add-an-appointment"></a>Adición de una cita  

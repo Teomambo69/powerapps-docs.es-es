@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 86a92e1e1723eba0f4d8f1b747a30df93314ca65
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: 34b2d24771feb246d234c0ce3bd1fc655e571296
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213811"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705276"
 ---
 # <a name="what-is-powerapps"></a>¿Qué es PowerApps?
 
@@ -49,7 +49,7 @@ Los administradores de PowerApps pueden usar:
 
 - El **Centro de administración de PowerApps** ([admin.powerapps.com](https://admin.powerapps.com)) para crear y administrar entornos, usuarios, roles y directivas de prevención de pérdida de datos. 
 
-- El **Centro de administración de Power Platform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) para administrar entornos, obtener recomendaciones de autoayuda en tiempo real y soporte técnico para aplicaciones de Dynamics 365 Customer Engagement, PowerApps y Microsoft Flow, y ver análisis de Common Data Service. 
+- **Centro de administración de plataforma de energía** ([admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) para administrar entornos, obtener recomendaciones y soporte técnico de autoayuda en tiempo real para PowerApps y Microsoft Flow, y ver análisis de Common Data Service. 
 
 Más información: [Administración de PowerApps](/power-platform/admin/admin-guide)
 
