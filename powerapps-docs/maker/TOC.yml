@@ -1102,7 +1102,7 @@
           href: ./portals/admin/update-portal-domain.md
         - name: Borrar la memoria caché del lado servidor
           href: ./portals/admin/clear-server-side-cache.md
-        - name: Migrar la configuración del portal de Dynamics 365
+        - name: "Migración de la configuración de los portales de Dynamics\_365"
           href: ./portals/admin/migrate-portal-configuration.md
     - name: Personalizaciones avanzadas del portal
       items:
