@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/07/2018
+ms.reviewer: tapanm
+ms.date: 10/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69529805"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969249"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -35,24 +35,24 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>macOS |
+| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>MacOS |
 | Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
-| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>macOS |
-| Apple Safari (versión más reciente) |iOS 8 o posterior <br>macOS |
+| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
+| Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
 
 ## <a name="supported-browsers-for-powerapps-studio"></a>Exploradores admitidos para PowerApps Studio
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>macOS |
+| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
 | Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
 
 ## <a name="request-limits"></a>Límites de solicitudes
 Estos límites se aplican a todas y cada una de las solicitudes de salida:
 
-| NOMBRE | Límite |
+| Nombre | Límite |
 | --- | --- |
 | Tiempo de espera |180 segundos |
 | Número de reintentos |4 |
@@ -70,7 +70,7 @@ Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de
 > [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
 
-| Área | IP de salida |
+| Región | IP de salida |
 | --- | --- |
 | Asia | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | Australia  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
@@ -94,11 +94,11 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener información de usuario (por ejemplo, la foto de perfil) |
 | gallery.azure.com |https |Aplicaciones de ejemplo y plantilla |
-| \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
-| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| \*. blob.core.windows.net |https | Almacenamiento de blobs |
-| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| @no__t 0.azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
+| @no__t 0.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| @no__t 0.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| @no__t 0.blob.core.windows.net |https | Blob Storage |
+| @no__t 0.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetría |
 | host | https | PowerApps Mobile
 
@@ -108,3 +108,28 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 ## <a name="size-limits"></a>Límites de tamaño
 
 Puede encontrar información sobre los límites de tamaño en el texto, los hipervínculos, las imágenes y los elementos multimedia en los [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).
+
+## <a name="powerapps-per-app-plan"></a>Plan de PowerApps por aplicación
+
+PowerApps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de PowerApps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
+
+Después de que un administrador asigna el plan de PowerApps por aplicación a un entorno, se asigna a los usuarios de forma predeterminada cuando se comparte la aplicación con ellos.
+
+Siga estos pasos para desactivar la asignación de planes por aplicación para los usuarios cuando se comparte una aplicación con ellos:
+
+- Elija la **aplicación**.
+- Seleccione **configuración**.
+- Cambie la opción de alternancia asignación **automática por aplicación** en la **asignación**de pasadas.
+
+El comando de alternancia **asignación automática por aplicación** se muestra en la configuración de todas las aplicaciones.
+
+> [!NOTE]
+> La deshabilitación del plan por aplicación está actualmente disponible solo para las aplicaciones de canvas.  Las aplicaciones controladas por modelos y los portales tendrán esta capacidad en el futuro.
+
+### <a name="app-settings"></a>Configuración de la aplicación
+
+Configuración de la ![aplicación Canvas]configuración de la(./media/limits-and-config/app_settings.png "aplicación Canvas")
+
+### <a name="pass-assignment"></a>Asignación de paso
+
+![Configuración de la aplicación de lienzo pasar asignación](./media/limits-and-config/app_settings_pass_assignment.png "configuración de aplicación Canvas asignación de pasadas")
