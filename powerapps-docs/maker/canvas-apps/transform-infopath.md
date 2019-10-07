@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/05/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
-ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
+ms.openlocfilehash: a5b9ddb2006a53796f782db3c620fa592f2a5aed
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428740"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994869"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>Transformar el formulario de InfoPath en PowerApps
 
@@ -94,7 +93,7 @@ En el panel derecho, desplácese a la propiedad **DisplayMode** para que pueda e
 
 En este ejemplo use una fórmula **If**:
 
-```If(ThisItem.Color = "Blue"; DisplayMode.View; DisplayMode.Edit)```
+```If(ThisItem.Color = "Blue", DisplayMode.View, DisplayMode.Edit)```
 
 Esta fórmula indica que, si el campo **Color** del elemento actual es **Blue**, el campo **Animal** es de solo lectura. Si no, el campo se puede modificar.
 
@@ -102,21 +101,21 @@ Para ocultar la tarjeta en lugar de hacer que sea de solo lectura, inserte una f
 
 También puede jugar con, por ejemplo, mostrar un botón de aprobación solo si la dirección de correo electrónico del usuario coincide con la dirección de correo electrónico del aprobador. Diversas Use **User (). Correo electrónico** para tener acceso a la dirección de correo electrónico del usuario actual). Así, podría almacenar la dirección de correo electrónico del aprobador en **YourDataCard** y luego establecer la propiedad **Visible** del botón en esta fórmula:
 
-```If( YourDataCard.Text = User().Email; true; false )```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **Formato condicional**  
 De forma similar a como anteriormente ocultó el campo, también puede proporcionar comentarios visuales a los usuarios. Puede que quiera resaltar texto en rojo si el valor especificado queda fuera del intervalo aceptable o cambiar el texto y el color del botón de carga después de que el usuario cargue un archivo. Puede hacer ambas cosas con una función, como **If**, en propiedades como **Color** o **Visible**.
 
 Por ejemplo, podría usar la función **If** emparejada con la función [IsMatch](functions/function-ismatch.md) para que el texto del campo de correo electrónico cambie a color rojo si el usuario no especifica una dirección de correo con el formato correcto en el cuadro de entrada. Se haría al establecer el valor **Color** de **TextInput1** (donde el usuario escribe una dirección de correo electrónico) en esta fórmula:
 
-```If( IsMatch(TextInput1.Text; Email); Black; Red )```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** admite una gran cantidad de patrones predefinidos, como Correo electrónico, o puede crear los suyos propios. Para obtener más información sobre el formato condicional, vea este [vídeo de la comunidad](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962).
 
 **Implementación de seguridad basada en roles**  
 La primera función a tener en cuenta es [DataSourceInfo](functions/function-datasourceinfo.md). La información que se obtiene desde el origen de datos varía, pero a menudo se puede usar esta fórmula para confirmar si el usuario tiene acceso para editar los datos (sustituya *YourDataSource* por el nombre del origen de datos):
 
-```DataSourceInfo( YourDataSource; DataSourceInfo.EditPermission )```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 Así, puede mostrar un formulario o un botón únicamente si el usuario tiene acceso para editar. Vea la documentación de [DataSourceInfo](functions/function-datasourceinfo.md) para obtener la lista completa de la información que puede consultar en la función.
 
@@ -139,7 +138,7 @@ Si aun así necesita una variable (hay muchos casos en que será así), esto le 
 
 - Las variables globales son las que se suelen considerar primero. Use la función [Set](functions/function-set.md) para especificar un valor para una variable global y haga que esté disponible en toda la aplicación:
 
-    ```Set( YourVariable; YourValue )```
+    ```Set( YourVariable, YourValue )```
 
     Luego puede hacer referencia a *YourVariable* por nombre en toda la aplicación.
 
@@ -158,13 +157,13 @@ Las listas desplegables en cascada son muy útiles porque permiten, por ejemplo,
 
 En este ejemplo, podría agregar una lista desplegable denominada **ddSelectType** y establecer su propiedad **Items** en esta fórmula:
 
-```Distinct( Impacts; Title )```
+```Distinct( Impacts, Title )```
 
 La lista desplegable solo mostraría el costo, el impacto del programa y la programación. Luego podría agregar una segunda lista desplegable y establecer su propiedad **Items** en esta fórmula:
 
-```Filter( Impacts; ddSelectType.Selected.Value in SCategory )```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-De esta manera tendríamos listas desplegables en cascada. Para obtener más información, consulte esta entrada del equipo [SharePoint de PowerApps: Las listas desplegables en cascada en 4 pasos sencillos.](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) o este [vídeo de la comunidad](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). No se preocupe: sin SharePoint es igual de fácil.
+De esta manera tendríamos listas desplegables en cascada. Para obtener más información, consulte esta entrada del equipo de PowerApps @no__t 0SharePoint: Las listas desplegables en cascada en 4 pasos sencillos. ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) o este [vídeo de la comunidad](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). No se preocupe: sin SharePoint es igual de fácil.
 
 **No cree una superaplicación**  
 Con PowerApps, puede llamar a una aplicación desde otra. Así que, en lugar de tener un enorme formulario de InfoPath tan difícil de mantener, se puede crear un grupo de aplicaciones que se llaman entre sí e incluso se pasan datos, lo que facilita mucho las labores de desarrollo.

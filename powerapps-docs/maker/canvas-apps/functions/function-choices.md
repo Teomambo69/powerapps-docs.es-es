@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/15/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 8ac88e1b9e81b9c42c8c9ac187d569573fc10ac3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473965"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992968"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -85,7 +85,7 @@ En este momento, solo puede usar las columnas de búsqueda con SharePoint y Comm
 
 1. En la tarjeta de **Primary Contact**, seleccione el control **Cuadro combinado**.
 
-    La  propiedad items de ese control se establece en una fórmula que identifica la columna por su nombre para mostrar, como en el primer ejemplo, o su nombre lógico, como en el segundo ejemplo:
+    La propiedad **Items** de ese control se establece en una fórmula que identifica la columna por su nombre para mostrar, como en el primer ejemplo, o su nombre lógico, como en el segundo ejemplo:
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**

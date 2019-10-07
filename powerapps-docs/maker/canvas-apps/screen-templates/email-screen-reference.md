@@ -1,208 +1,207 @@
 ---
-title: Referencia de la plantilla de filtro de correo electrónico para las aplicaciones de lienzo | Microsoft Docs
-description: Conocer los detalles del funcionamiento de la plantilla de filtro de correo electrónico para las aplicaciones de lienzo en PowerApps
+title: Referencia de la plantilla de pantalla de correo electrónico para las aplicaciones de Canvas | Microsoft Docs
+description: Información detallada sobre cómo funciona la plantilla de pantalla de correo electrónico para las aplicaciones de canvas en PowerApps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/31/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f77fe1194ace2f8cb5abeb3f9657cc76aab263a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538823"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995700"
 ---
-# <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Información de referencia sobre la plantilla de filtro de correo electrónico para las aplicaciones de lienzo
+# <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Información de referencia sobre la plantilla de pantalla de correo electrónico para las aplicaciones de Canvas
 
-Para las aplicaciones de lienzo en PowerApps, comprender cómo contribuye cada control significativo en la plantilla de filtro de correo electrónico a la funcionalidad de la pantalla general predeterminada. Este análisis detallado de presentan las fórmulas de comportamiento y los valores de otras propiedades que determinan cómo responden los controles a la entrada del usuario. Para un análisis de alto nivel de funcionalidad de forma predeterminada de la pantalla, consulte el [información general de la pantalla de correo electrónico](email-screen-overview.md).
+En el caso de las aplicaciones de canvas en PowerApps, comprenda cómo contribuye cada control significativo de la plantilla de pantalla de correo electrónico a la funcionalidad predeterminada general de la pantalla. Esta profundización presenta las fórmulas de comportamiento y los valores de otras propiedades que determinan cómo responden los controles a los datos proporcionados por el usuario. Para obtener una descripción de alto nivel de la funcionalidad predeterminada de esta pantalla, consulte la [información general de la pantalla de correo electrónico](email-screen-overview.md).
 
-En este tema se destacan algunos controles importantes y explica las expresiones o las fórmulas que varias propiedades (como **elementos** y **OnSelect**) de estos controles están establecidos:
+En este tema se resaltan algunos controles significativos y se explican las expresiones o fórmulas en las que se establecen varias propiedades (como **Items** y **alseleccionar**) de estos controles:
 
 * [Cuadro de búsqueda de texto](#text-search-box)
 * [Agregar icono](#add-icon)
-* [Las personas examinar la Galería](#people-browse-gallery)
-* [Galería de personas por correo electrónico](#email-people-gallery) (+ controles secundarios)
-* [Icono de correo electrónico](#mail-icon)
+* [Galería de exploración de personas](#people-browse-gallery)
+* [Galería de personas de correo electrónico](#email-people-gallery) (+ controles secundarios)
+* [Icono correo](#mail-icon)
 
 ## <a name="prerequisite"></a>Requisito previo
 
-Estar familiarizado con cómo agregar y configurar las pantallas y otros controles como [crear una aplicación en PowerApps](../data-platform-create-app-scratch.md).
+Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en PowerApps](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Cuadro de búsqueda de texto
 
    ![Control TextSearchBox](media/email-screen/email-search-box.png)
 
-Otros controles en la pantalla tienen una dependencia en el **cuadro de búsqueda de texto** control:
+Algunos otros controles de la pantalla tienen una dependencia en el control **cuadro de búsqueda de texto** :
 
-* Si un usuario empieza a escribir cualquier texto, **PeopleBrowseGallery** aparece.
-* Si el usuario escribe a una dirección de correo electrónico válida, **AddIcon** aparece.
-* Cuando un usuario selecciona una persona en **PeopleBrowseGallery**, se restablece el contenido de búsqueda.
+* Si un usuario comienza a escribir texto, aparece **PeopleBrowseGallery** .
+* Si un usuario escribe una dirección de correo electrónico válida, aparece **AddIcon** .
+* Cuando un usuario selecciona una persona dentro de **PeopleBrowseGallery**, se restablece el contenido de la búsqueda.
 
 ## <a name="add-icon"></a>Icono Agregar
 
-   ![AddIcon control](media/email-screen/email-add-icon.png)
+   ![Control AddIcon](media/email-screen/email-add-icon.png)
 
-El **icono Agregar** control permite a los usuarios de aplicación para las personas que no existen dentro de su organización a la lista de destinatarios del correo electrónico que se componen de agregar.
+El control **Agregar icono** permite a los usuarios de la aplicación agregar personas que no existen dentro de su organización a la lista de destinatarios del correo electrónico que se está creando.
 
-* Propiedad: **Visible**<br>
-    Valor: Lógica para mostrar el control solo cuando un usuario escribe una dirección de correo electrónico válida en el cuadro de búsqueda:
+* Propiedad **Estarán**<br>
+    Valor Lógica para mostrar el control solo cuando un usuario escribe una dirección de correo electrónico válida en el cuadro de búsqueda:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
-  Línea por línea, el bloque de código anterior indica que el **icono Agregar** control será visible solo si:
+  Línea por línea, el bloque de código anterior indica que el control de **icono Agregar** solo será visible si:
 
     * **TextSearchBox** contiene texto.
-    * El texto en **TextSearchBox** es una dirección de correo electrónico válida.
-    * El texto en **TextSearchBox** ya no existe en el **MyPeople** colección.
+    * El texto de **TextSearchBox** es una dirección de correo electrónico válida.
+    * El texto de **TextSearchBox** ya no existe en la colección **People** .
 
-* Propiedad: **OnSelect**<br>
-    Valor: Seleccionar esta opción agrega la dirección de correo electrónico válida para el **MyPeople** colección. Esta colección se usa por la pantalla como la lista de destinatarios:
+* Propiedad **Alseleccionar**<br>
+    Valor Al seleccionar esta opción, se agrega la dirección de correo electrónico válida a la colección **People** . La pantalla usa esta colección como la lista de destinatarios:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Reset( TextSearchBox )
     ```
   
-  Este bloque de código agrega una fila a la **MyPeople** colección y rellena tres campos con el texto en **TextSearchBox**. Estos tres campos son **DisplayName**, **UserPrincipalName**, y **correo**. A continuación, restablece el contenido de **TextSearchBox**.
+  Este bloque de código agrega una fila a la colección **People** y rellena tres campos con el texto en **TextSearchBox**. Estos tres campos son **displayName**, **UserPrincipalName**y **mail**. A continuación, restablece el contenido de **TextSearchBox**.
 
-## <a name="people-browse-gallery"></a>Las personas examinar la Galería
+## <a name="people-browse-gallery"></a>Galería de exploración de personas
 
    ![Control PeopleBrowseGallery](media/email-screen/email-browse-gall.png)
 
-* Propiedad: **elementos**<br>
-    Valor: Los resultados de búsqueda de 15 primeros del texto de búsqueda que escribió en el **TextSearchBox** control:
+* Propiedad **Elementos**<br>
+    Valor Los 15 resultados principales de búsqueda del texto de búsqueda escrito en el control **TextSearchBox** :
     
-    ```powerapps-comma
-    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
+    ```powerapps-dot
+    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
     )
     ```
 
-  Los elementos de esta galería se rellenan con los resultados de búsqueda desde el [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) operación. La operación toma el texto `Trim(TextSearchBox)` como su búsqueda de términos y devuelve los resultados de la parte superior a 15 según esa búsqueda.
+  Los elementos de esta galería se rellenan con los resultados de búsqueda de la operación [Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) . La operación toma el texto de `Trim(TextSearchBox)` como término de búsqueda y devuelve los 15 resultados principales en función de la búsqueda.
   
-  **TextSearchBox** se encapsula en un `Trim()` funciona porque una búsqueda de usuario en espacios de no es válida. El `Office365Users.SearchUser` operación se encapsula en un `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` función, lo que significa que la operación se realiza únicamente si el cuadro de búsqueda contiene texto escrito por el usuario. Esto mejora el rendimiento. 
+  **TextSearchBox** está encapsulado en una función `Trim()` porque un usuario que busca espacios no es válido. La operación `Office365Users.SearchUser` se encapsula en una función `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`, lo que significa que la operación se realiza solo si el cuadro de búsqueda contiene texto escrito por el usuario. Esto mejora el rendimiento. 
 
-### <a name="people-browse-gallery-title-control"></a>La gente navega por control de título de la Galería
+### <a name="people-browse-gallery-title-control"></a>Control de título de la galería de exploración de personas
 
-   ![Control PeopleBrowseGallery título](media/email-screen/email-browse-gall-title.png)
+   ![Control de título de PeopleBrowseGallery](media/email-screen/email-browse-gall-title.png)
 
-* Propiedad: **Texto**<br>
+* Propiedad **Texto**<br>
     Valor: `ThisItem.DisplayName`
 
   Muestra el nombre para mostrar de la persona de su perfil de Office 365.
 
-* Propiedad: **OnSelect**<br>
-    Valor: Para agregar el usuario a una colección de nivel de aplicación de código y, a continuación, seleccione el usuario:
+* Propiedad **Alseleccionar**<br>
+    Valor Código para agregar el usuario a una colección de nivel de aplicación y, a continuación, seleccione el usuario:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
-Al seleccionar este control hace tres cosas simultáneamente:
+La selección de este control realiza tres acciones simultáneamente:
 
-   * Establece el **_selectedUser** variable del elemento seleccionado.
+   * Establece la variable **_selectedUser** en el elemento seleccionado.
    * Restablece el término de búsqueda en **TextSearchBox**.
-   * Agrega el elemento seleccionado a la **MyPeople** colección, una colección de todos los usuarios seleccionados que la pantalla de correo electrónico se usa como un conjunto de destinatarios.
+   * Agrega el elemento seleccionado a la colección **People** , una colección de todos los usuarios seleccionados que utiliza la pantalla correo electrónico como un conjunto de destinatarios.
 
-## <a name="email-people-gallery"></a>Galería de personas por correo electrónico
+## <a name="email-people-gallery"></a>Galería de personas de correo electrónico
 
    ![Control EmailPeopleGallery](media/email-screen/email-people-gall.png)
 
-* Propiedad: **elementos**<br>
+* Propiedad **Elementos**<br>
     Valor: `MyPeople`
 
-  Esta es la colección de personas inicializado o agregado a seleccionando el **PeopleBrowseGallery título** control.
+  Esta es la colección de personas inicializadas o agregadas a seleccionando el control de **título PeopleBrowseGallery** .
 
-* Propiedad: **Height**<br>
-    Valor: Lógica para establecer el alto, en función del número de elementos de la Galería:
+* Propiedad **Alto**<br>
+    Valor Lógica para establecer el alto, en función del número de elementos que se encuentran actualmente en la Galería:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
         304
     )
     ```
 
-  El alto de esta galería se ajusta al número de elementos de la galería, con una altura máxima de 304.
+  El alto de esta galería se ajusta al número de elementos de la galería, con un alto máximo de 304.
   
-  Tarda `TemplateHeight + TemplatePadding * 2` como el alto de una sola fila de total **EmailPeopleGallery**, a continuación, se multiplica por el número de filas. Puesto que `WrapCount = 2`, es el número de filas true `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
+  Toma `TemplateHeight + TemplatePadding * 2` como el alto total de una sola fila de **EmailPeopleGallery**y, a continuación, lo multiplica por el número de filas. Como `WrapCount = 2`, el número de filas verdaderas es `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
 
-* Propiedad: **ShowScrollbar**<br>
+* Propiedad **ShowScrollbar**<br>
     Valor: `EmailPeopleGallery.Height >= 304`
   
-  Cuando llegue a la altura de la Galería 304, está visible la barra de desplazamiento.
+  Cuando el alto de la Galería alcanza el 304, la barra de desplazamiento está visible.
 
-### <a name="email-people-gallery-title-control"></a>Control de título de la Galería de personas por correo electrónico
+### <a name="email-people-gallery-title-control"></a>Control de título de la galería de personas de correo electrónico
 
-   ![Control EmailPeopleGallery título](media/email-screen/email-people-gall-text.png)
+   ![Control de título de EmailPeopleGallery](media/email-screen/email-people-gall-text.png)
 
-* Propiedad: **OnSelect**<br>
-    Valor: `Set(_selectedUser; ThisItem)`
+* Propiedad **Alseleccionar**<br>
+    Valor: `Set(_selectedUser, ThisItem)`
 
-  Establece el **_selectedUser** variable para el elemento seleccionado en **EmailPeopleGallery**.
+  Establece la variable **_selectedUser** en el elemento seleccionado en **EmailPeopleGallery**.
 
-### <a name="email-people-gallery-iconremove-control"></a>Correo electrónico personas Galería iconRemove control
+### <a name="email-people-gallery-iconremove-control"></a>Control iconRemove de la galería de personas de correo electrónico
 
-   ![Control MonthDayGallery título](media/email-screen/email-people-gall-delete.png)
+   ![Control de título de MonthDayGallery](media/email-screen/email-people-gall-delete.png)
 
-* Propiedad: **OnSelect**<br>
-    Valor: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+* Propiedad **Alseleccionar**<br>
+    Valor: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
-  Busca el registro en el **MyPeople** colección, donde **UserPrincipalName** coincide con el **UserPrincipalName** el elemento seleccionado, y quita ese registro desde el colección.
+  Busca el registro en la colección **People** , donde **UserPrincipalName** coincide con el **userPrincipalName** del elemento seleccionado y quita ese registro de la colección.
 
-## <a name="mail-icon"></a>Icono de correo electrónico
+## <a name="mail-icon"></a>Icono correo
 
-* Propiedad: **OnSelect**<br>
-    Valor: Lógica para enviar el mensaje de correo electrónico del usuario:
+* Propiedad **Alseleccionar**<br>
+    Valor Lógica para enviar el mensaje de correo electrónico del usuario:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
-    'Office365'.SendEmail( _emailRecipientString; 
-        TextEmailSubject.Text;  
-        TextEmailMessage.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
+    'Office365'.SendEmail( _emailRecipientString, 
+        TextEmailSubject.Text,  
+        TextEmailMessage.Text, 
         { Importance:"Normal" }
-    );;
-    Reset( TextEmailSubject );;
-    Reset( TextEmailMessage );;
+    );
+    Reset( TextEmailSubject );
+    Reset( TextEmailMessage );
     Clear( MyPeople )
     ```
 
-  Enviar un mensaje de correo electrónico requiere una cadena separada por comas de direcciones de correo electrónico. En el código anterior:
-  1. Toma la primera línea de código la **correo** arrastrándolo desde todas las filas de la **MyPeople** colección, los concatena en una sola cadena de direcciones de correo electrónico separadas por punto y coma y establece el **_ emailRecipientString** variable a ese valor de cadena.
+  El envío de un mensaje de correo electrónico requiere una cadena separada por punto y coma de direcciones de correo electrónico. En el código anterior:
+  1. La primera línea de código toma el campo **mail** de todas las filas de la colección **People** , los concatena en una sola cadena de direcciones de correo electrónico separadas por punto y coma, y establece la variable **_emailRecipientString** en esa cadena. valor.
 
-  1. A continuación, usa el [Office365.SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail) operación para enviar el correo electrónico a los destinatarios.
-    La operación tiene tres parámetros obligatorios, **a**, **asunto**, y **cuerpo**y un parámetro opcional--**importancia**. En el código anterior, son **_emailRecipientString**, **TextEmailSubject**. Texto, **TextEmailMessage**. Texto, y **Normal**, respectivamente.
-  1. Por último, restablece el **TextEmailSubject** y **TextEmailMessage** controla y borra el **MyPeople** colección.
+  1. A continuación, usa la operación [Office365. sendEmail](https://docs.microsoft.com/connectors/office365/#sendemail) para enviar el correo electrónico a los destinatarios.
+    La operación tiene tres parámetros necesarios, **para**, **asunto**y **cuerpo**, y un parámetro opcional--**importancia**. En el código anterior, se trata de **_emailRecipientString**, **TextEmailSubject**. Texto, **TextEmailMessage**. Texto y **normal**, respectivamente.
+  1. Por último, restablece los controles **TextEmailSubject** y **TextEmailMessage** y borra la colección **People** .
 
-* Propiedad: **DisplayMode**<br>
-    Valor: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` Para que un envío de correo electrónico, debe tener la línea de asunto de correo electrónico, texto y el destinatario (**MyPeople**) colección no debe estar vacía.
+* Propiedad **DisplayMode**<br>
+    Valor `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` para enviar un correo electrónico, la línea de asunto del correo electrónico debe tener texto y la colección de destinatarios (mis**personas**) no debe estar vacía.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Más información sobre esta pantalla](./email-screen-overview.md)
+* [Más información acerca de esta pantalla](./email-screen-overview.md)
 * [Más información sobre el conector de Office 365 Outlook en PowerApps](../connections/connection-office365-outlook.md)
 * [Más información sobre el conector de usuarios de Office 365 en PowerApps](../connections/connection-office365-users.md)

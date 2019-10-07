@@ -1,126 +1,125 @@
 ---
-title: Objeto de aplicación | Microsoft Docs
-description: Información de referencia, incluida la sintaxis y ejemplos para el objeto de aplicación en PowerApps
+title: Objeto App | Microsoft Docs
+description: Información de referencia para el objeto App en PowerApps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 232accd1050fb84816e86ea95069b8c8778f6586
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451619"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983587"
 ---
-# <a name="app-object-in-powerapps"></a>Objeto de aplicación en PowerApps
+# <a name="app-object-in-powerapps"></a>Objeto App en PowerApps
 
-Proporciona información acerca de la aplicación y el control sobre el comportamiento de la aplicación que se está ejecutando.
+Proporciona información sobre la aplicación que se está ejecutando actualmente y el control sobre el comportamiento de la aplicación.
 
 ## <a name="description"></a>Descripción
 
-Al igual que un control, el **aplicación** objeto proporciona propiedades que identifican qué pantalla se muestra y que solicitan al usuario guardar los cambios para que no estén perdidos. Cada aplicación tiene un **aplicación** objeto.
+Al igual que un control, el objeto de **aplicación** proporciona propiedades que identifican la pantalla que se muestra y que solicitan al usuario que guarde los cambios para que no se pierdan. Cada aplicación tiene un objeto de **aplicación** .
 
-Puede escribir fórmulas para algunas propiedades de la **aplicación** objeto. En la parte superior de la **vista de árbol** panel, seleccione el **aplicación** como se haría cualquier otro control o una pantalla de objeto. Ver y editar una de las propiedades del objeto, selecciónelo en la lista desplegable situada a la izquierda de la barra de fórmulas.
+Puede escribir fórmulas para algunas propiedades del objeto de **aplicación** . En la parte superior del panel de **vista de árbol** , seleccione el objeto de la **aplicación** como lo haría con cualquier otro control o pantalla. Para ver y editar una de las propiedades del objeto, selecciónela en la lista desplegable situada a la izquierda de la barra de fórmulas.
 
 > [!div class="mx-imgBorder"]
-> ![El objeto de aplicación en el panel de vista de árbol](media/object-app/appobject.png)
+> objeto de aplicación ![The en el panel de vista de árbol @ no__t-1
 
 ## <a name="activescreen-property"></a>Propiedad ActiveScreen
 
-El **ActiveScreen** propiedad identifica la pantalla que muestra.
+La propiedad **ActiveScreen** identifica la pantalla que se muestra.
 
-Esta propiedad devuelve un objeto de la pantalla, que puede usar para hacer referencia a propiedades de la pantalla o comparar a otra pantalla para determinar qué pantalla se muestra. También puede usar la expresión **App.ActiveScreen.Name** para recuperar el nombre de la pantalla que muestra.
+Esta propiedad devuelve un objeto de pantalla, que puede usar para hacer referencia a las propiedades de la pantalla o comparar con otra pantalla para determinar la pantalla que se muestra. También puede usar la expresión **app.ActiveScreen.Name** para recuperar el nombre de la pantalla que se muestra.
 
-Use la **[Atrás](function-navigate.md)** o **[Navigate](function-navigate.md)** función para cambiar la pantalla que muestra.
+Utilice la función **[back](function-navigate.md)** o **[Navigate](function-navigate.md)** para cambiar la pantalla que se muestra.
 
-## <a name="onstart-property"></a>Propiedad OnStart
+## <a name="onstart-property"></a>OnStart (propiedad)
 
-El **OnStart** propiedad que se ejecuta cuando el usuario inicia la aplicación. A menudo, los creadores de aplicaciones usar esta propiedad para realizar estas tareas:
+La propiedad **OnStart** se ejecuta cuando el usuario inicia la aplicación. A menudo, los responsables de aplicaciones usan esta propiedad para realizar estas tareas:
 
-- Recuperar y almacenar en caché datos en colecciones mediante el uso de la **[recopilar](function-clear-collect-clearcollect.md)** función.
-- Configurar las variables globales mediante el **[establecer](function-set.md)** función.
-- Navegue a una pantalla inicial mediante el uso de la **[Navigate](function-navigate.md)** función.
+- Recupere y almacene en caché los datos en colecciones mediante la función **[Collect](function-clear-collect-clearcollect.md)** .
+- Configure variables globales mediante la función **[set](function-set.md)** .
+- Navegue a una pantalla inicial mediante la función **[Navigate](function-navigate.md)** .
 
-Esta fórmula se evalúa antes de que aparezca la primera pantalla. No hay pantalla se carga, por lo que no puede establecer las variables de contexto con el **[UpdateContext](function-updatecontext.md)** función. Sin embargo, puede pasar variables de contexto con el **Navigate** función.
+Esta fórmula se evalúa antes de que aparezca la primera pantalla. No se carga ninguna pantalla, por lo que no se pueden establecer variables de contexto con la función **[UpdateContext](function-updatecontext.md)** . Sin embargo, puede pasar las variables de contexto con la función **Navigate** .
 
-Después de cambiar el **OnStart** propiedad, probarla mediante el mouse sobre el **aplicación** objeto en el **vista de árbol** panel, seleccione los puntos suspensivos (...) que aparece y, a continuación, seleccionar **Ejecutar OnStart**. A diferencia de cuando se cargue la aplicación por primera vez, se establecerán ya las variables y las colecciones existentes. Colecciones vacías para empezar, use el **[ClearCollect](function-clear-collect-clearcollect.md)** función en lugar de la **recopilar** función.
+Después de cambiar la propiedad **OnStart** , pruébelo manteniendo el mouse sobre el objeto **App** en el panel **vista de árbol** , seleccionando los puntos suspensivos (...) que aparece y seleccionando **Ejecutar OnStart**. A diferencia de la primera vez que se carga la aplicación, ya se establecerán las colecciones y variables existentes. Para empezar con colecciones vacías, utilice la función **[ClearCollect](function-clear-collect-clearcollect.md)** en lugar de la función **Collect** .
 
 > [!div class="mx-imgBorder"]
-> ![Menú contextual de elemento de la aplicación para ejecutar OnStart](media/object-app/appobject-runonstart.png)
+> ![App: menú contextual para ejecutar OnStart @ no__t-1
 
 ## <a name="confirmexit-properties"></a>Propiedades de ConfirmExit
 
-Nadie quiere perder los cambios no guardados. Use la **ConfirmExit** y **ConfirmExitMessage** propiedades para advertir al usuario antes de que cierre la aplicación.
+Nadie desea perder los cambios no guardados. Use las propiedades **ConfirmExit** y **ConfirmExitMessage** para avisar al usuario antes de cerrar la aplicación.
 
 > [!NOTE]
-> **ConfirmExit** no funciona en las aplicaciones que se incrustan en, por ejemplo, Power BI y SharePoint.
+> **ConfirmExit** no funciona en aplicaciones que están incrustadas en, por ejemplo, Power BI y SharePoint.
 
 > [!NOTE]
-> En este momento, estas propiedades pueden hacer referencia a controles en solo la primera pantalla si el **demorada carga** característica de vista previa está habilitada (que es para las nuevas aplicaciones de forma predeterminada). Si se realizan las referencias, PowerApps Studio no muestra un error, pero la aplicación publicada resultante no se abre en PowerApps Mobile o en un explorador. Estamos trabajando activamente para superar esta limitación. Mientras tanto, puede desactivar **demorada carga** en **archivo** > **configuración de la aplicación** > **Configuraciónavanzada**(bajo **características en versión preliminar**).
+> En la actualidad, estas propiedades solo pueden hacer referencia a los controles de la primera pantalla si está habilitada la característica de vista previa de **carga retrasada** (que es de forma predeterminada para las nuevas aplicaciones). Si se realizan referencias, PowerApps Studio no muestra un error, pero la aplicación publicada resultante no se abre en PowerApps Mobile o en un explorador. Estamos trabajando activamente para levantar esta limitación. Mientras tanto, puede desactivar la **carga retrasada** en la configuración de la**aplicación**de @no__t de **archivos**-2  > **Configuración avanzada** (en **características de vista previa**).
 
 ### <a name="confirmexit"></a>ConfirmExit
 
-**ConfirmExit** es una propiedad booleana que, cuando *true*, se abre un cuadro de diálogo de confirmación antes de cerrar la aplicación. De forma predeterminada, esta propiedad es *false*, y no aparece ningún cuadro de diálogo.
+**ConfirmExit** es una propiedad booleana que, cuando es *true*, abre un cuadro de diálogo de confirmación antes de que se cierre la aplicación. De forma predeterminada, esta propiedad es *false*y no aparece ningún cuadro de diálogo.
 
-Utilice esta propiedad para mostrar un cuadro de diálogo de confirmación si el usuario ha realizado cambios pero no guardado. Usar una fórmula que puede comprobar las variables y propiedades del control (por ejemplo, el **no guardados** propiedad de la [ **Editar formulario** ](../controls/control-form-detail.md) control).
+Utilice esta propiedad para mostrar un cuadro de diálogo de confirmación si el usuario ha realizado cambios pero no los ha guardado. Use una fórmula que pueda comprobar variables y propiedades de control (por ejemplo, la propiedad no **guardada** del control [**Editar formulario**](../controls/control-form-detail.md) ).
 
-Aparece el cuadro de diálogo de confirmación en cualquier situación donde podrían perderse los datos, como en estos ejemplos:
+El cuadro de diálogo de confirmación aparece en cualquier situación en la que se puedan perder los datos, como en estos ejemplos:
 
-- Ejecuta el [ **Exit** ](function-exit.md) función.
+- Ejecutar la función [**Exit**](function-exit.md) .
 - Si la aplicación se ejecuta en un explorador:
-  - Cierre el explorador o en la pestaña del explorador en el que se ejecuta la aplicación.
-  - Seleccione el botón Atrás del explorador.
-- Si se ejecuta la aplicación en PowerApps Mobile (iOS o Android):
-  - Ejecuta el [ **iniciar** ](function-param.md) función.<br>El **iniciar** función no desencadena el cuadro de diálogo en un explorador, porque se abre otra ficha para que no se pierden datos.
-  - Gesto de deslizar rápidamente para cambiar a otra aplicación en PowerApps Mobile.
-  - Seleccione el botón Atrás en un dispositivo Android.
+  - Cierre del explorador o de la pestaña del explorador en el que se ejecuta la aplicación.
+  - Seleccionar el botón atrás del explorador.
+- Si la aplicación se ejecuta en PowerApps Mobile (iOS o Android):
+  - Ejecutar la función [**Launch**](function-param.md) .<br>La función **Launch** no desencadena el cuadro de diálogo en un explorador porque se abre otra pestaña para que no se pierdan los datos.
+  - Deslizar rápidamente para cambiar a otra aplicación en PowerApps Mobile.
+  - Seleccionar el botón atrás en un dispositivo Android.
 
-La apariencia exacta del cuadro de diálogo de confirmación puede variar entre los dispositivos y las versiones de PowerApps.
+La apariencia exacta del cuadro de diálogo de confirmación puede variar en los dispositivos y las versiones de PowerApps.
 
-No aparece el cuadro de diálogo de confirmación en PowerApps Studio.
+El cuadro de diálogo de confirmación no aparece en PowerApps Studio.
 
 ### <a name="confirmexitmessage"></a>ConfirmExitMessage
 
-De forma predeterminada, el cuadro de diálogo de confirmación muestra un mensaje genérico, como **"No es posible que haya guardado los cambios."** en el idioma del usuario.
+De forma predeterminada, el cuadro de diálogo de confirmación muestra un mensaje genérico, como **"es posible que tenga cambios sin guardar".** en el idioma del usuario.
 
-Use **ConfirmExitMessage** para proporcionar un mensaje personalizado en el cuadro de diálogo de confirmación. Si esta propiedad es *en blanco*, se usa el valor predeterminado. Mensajes personalizados se truncan según sea necesario para que quepa en el cuadro de diálogo de confirmación, por lo que mantendrá el mensaje a unas pocas líneas como máximo.
+Use **ConfirmExitMessage** para proporcionar un mensaje personalizado en el cuadro de diálogo de confirmación. Si esta propiedad está *en blanco*, se usa el valor predeterminado. Los mensajes personalizados se truncan según sea necesario para que quepan en el cuadro de diálogo de confirmación, por lo que debe mantener el mensaje a unas cuantas líneas como máximo.
 
-En un explorador, es posible que aparezca el cuadro de diálogo de confirmación con un mensaje genérico desde el explorador.
+En un explorador, el cuadro de diálogo de confirmación podría aparecer con un mensaje genérico del explorador.
 
 ### <a name="example"></a>Ejemplo
 
-1. Crear una aplicación que contiene dos controles de formulario, **AccountForm** y **ContactForm**.
+1. Cree una aplicación que contenga dos controles de formulario, **AccountForm** y **ContactForm**.
 
-1. Establecer el **aplicación** del objeto **ConfirmExit** propiedad en esta expresión:
+1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
-    Este cuadro de diálogo aparece si el usuario cambia los datos en cualquiera de las formas y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
+    Este cuadro de diálogo aparece si el usuario cambia los datos de cualquier forma y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
 
     > [!div class="mx-imgBorder"]
-    > ![Cuadro de diálogo de confirmación genérico](media/object-app/confirm-native.png)
+    > ![Generic cuadro de diálogo de confirmación @ no__t-1
 
-1. Establecer el **aplicación** del objeto **ConfirmExitMessage** propiedad en esta fórmula:
+1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
 
-    Este cuadro de diálogo aparece si el usuario cambia los datos en el formulario de cuenta y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
+    Este cuadro de diálogo aparece si el usuario cambia los datos en el formulario de la cuenta y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
 
     > [!div class="mx-imgBorder"]
-    > ![Cuadro de diálogo de confirmación de forma específica](media/object-app/confirm-native-custom.png)
+    > @no__t 0Form-cuadro de diálogo de confirmación específico @ no__t-1

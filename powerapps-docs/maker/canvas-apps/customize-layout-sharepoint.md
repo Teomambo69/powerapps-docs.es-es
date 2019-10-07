@@ -1,27 +1,26 @@
 ---
 title: 'Tutorial: personalización de una galería en una aplicación generada | Microsoft Docs'
 description: En este tutorial, se personalizan los datos que aparecen en la galería y otros elementos de una aplicación que se generó automáticamente en PowerApps.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: tutorial
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561432"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986050"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalizar una galería en PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Guía Personalización de una galería en PowerApps
 
 En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
@@ -48,13 +47,13 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Generar una aplicación](data-platform-create-app.md) desde el **cuentas** entidad de Common Data Service.
+[Genere una aplicación](data-platform-create-app.md) a partir de la entidad **accounts** de Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
-1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos (**...** ) y, a continuación, seleccione **Editar**.
+1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos ( **...** ) y, a continuación, seleccione **Editar**.
 
     ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
 
@@ -68,15 +67,15 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
     ![Seleccionar la galería](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. En el **propiedades** ficha del panel derecho, abra la lista de opciones de **diseño**y, a continuación, seleccione la opción que muestra solo un título.
+1. En la pestaña **propiedades** del panel derecho, abra la lista de opciones en **diseño**y, a continuación, seleccione la opción que muestra solo un título.
 
     ![Seleccionar el diseño de solo título](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Junto a **campos**, seleccione **editar**y, a continuación, seleccione la flecha hacia abajo del cuadro de título.
+1. Junto a **campos**, seleccione **Editar**y, a continuación, seleccione la flecha hacia abajo del cuadro título.
 
     El nombre de este control finalizará en un valor numérico, como **Título1**, pero el número puede diferir en función de otras acciones que haya realizado.
 
-1. En la lista de opciones, seleccione **nombreCuenta**y, a continuación, cierre el **datos** panel.
+1. En la lista de opciones, seleccione **nombre de cuenta**y, a continuación, cierre el panel **datos** .
 
     La galería muestra el nombre de cada cuenta.
 
@@ -96,7 +95,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 1. Copie esta fórmula y, a continuación, péguela en la barra de fórmulas.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Con esta fórmula, se asegura de que:
 
@@ -143,7 +142,7 @@ Si es posible que los usuarios no tengan pantallas táctiles ni ruedas del mouse
 
     ![Seleccionar la galería](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. La galería **Mostrar barra de desplazamiento** propiedad **true**.
+1. Establezca la propiedad **Mostrar ScrollBar** de la galería en **true**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

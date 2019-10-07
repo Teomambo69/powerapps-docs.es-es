@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ea7c9fc331d96b50d8623f4ca632859e09be7ab
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ba568cb34c12f8b63e8c59f5cb73aa1ed6cb9f02
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213668"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993945"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Conexión a Office 365 Outlook desde PowerApps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -59,10 +58,10 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
 4. Esta función tiene varios parámetros opcionales disponibles. Establezca la propiedad **Elementos** de la galería en una de las fórmulas siguientes:
    
     `Office365.GetEmails({fetchOnlyUnread:false})`  
-    `Office365.GetEmails({fetchOnlyUnread:false; top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2; searchQuery:"powerapps"})`  
-    `Office365.GetEmails({folderPath:"Deleted Items"; fetchOnlyUnread:false; top:2; skip:3})`
+    `Office365.GetEmails({fetchOnlyUnread:false, top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2, searchQuery:"powerapps"})`  
+    `Office365.GetEmails({folderPath:"Deleted Items", fetchOnlyUnread:false, top:2, skip:3})`
 
 ## <a name="send-a-message"></a>Envío de un mensaje
 1. En el menú **Insert** (Insertar), seleccione **Text** (Texto) y luego seleccione **Text input** (Entrada de texto).
@@ -76,7 +75,7 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
    * **entradaCuerpo**
 4. En la pestaña **Insertar**, seleccione **Controles** y, a continuación, seleccione **Botón**. Establezca su propiedad **[AlSeleccionar](../controls/properties-core.md)** en la fórmula siguiente:  
    
-    `Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text)`
+    `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. Mueva el botón para que aparezca en todos los demás controles y establezca su propiedad **[Texto](../controls/properties-core.md)** en **"Enviar correo electrónico"** .
 6. Presione F5 o seleccione el botón Vista previa (![botón Vista previa](./media/connection-office365-outlook/preview.png)). Escriba una dirección de correo electrónico válida en **entradaPara** y escriba el nombre que desee en los otros dos controles **Entrada de texto**.
 7. Seleccione **Enviar correo electrónico** para enviar el mensaje. Presione Esc para volver al área de trabajo predeterminada.
@@ -86,7 +85,7 @@ Por ejemplo, puede crear una aplicación en la que el usuario haga fotos con la 
 
 Para agregar datos adjuntos a un mensaje, siga los pasos descritos en la sección anterior, pero agregue un parámetro para especificar que hay datos adjuntos (al establecer la propiedad **AlSeleccionar** del botón). Este parámetro se estructura como una tabla en la que se especifican hasta tres propiedades para los datos adjuntos:
 
-* NOMBRE
+* Nombre
 * ContentBytes
 * @odata.type
 
@@ -95,11 +94,11 @@ Para agregar datos adjuntos a un mensaje, siga los pasos descritos en la secció
 
 En este ejemplo, se enviará una foto como **file1.jpg**:
 
-`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""})})`
+`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""})})`
 
 En este ejemplo, se enviará un archivo de audio junto con la foto:
 
-`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""}; {Name:"AudioFile"; ContentBytes:microphone1.audio })})`
+`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""}, {Name:"AudioFile", ContentBytes:microphone1.audio })})`
 
 ## <a name="delete-a-message"></a>Eliminación de un mensaje
 1. En el menú **Insertar**, seleccione **Galería** y seleccione un control de la **galería con texto**.

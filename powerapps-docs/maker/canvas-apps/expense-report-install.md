@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/08/2018
 ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
-ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.openlocfilehash: bca1fb3760727278e42676c9f0a5ec501f9002e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535299"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985788"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -29,12 +29,12 @@ Tiempo estimado para completar estos pasos: **10-15 minutos**
 > [!TIP]
 > Vea [este vídeo](https://youtu.be/kJXZPILfbwU) para una demostración sobre cómo usar la aplicación de ejemplo de informe de gastos. 
 
-Realizar un seguimiento de los informes de gastos de envío para la aprobación. Partidas como gastos individuales se acumulan y enviarlo para su aprobación cuando esté listo. Esta aplicación requiere un mínimo de configuración para personalizarla.
+Realice un seguimiento de los informes de gastos desde el envío hasta la aprobación. Los elementos de línea de recuento como gastos individuales se acumulan y envían para su aprobación cuando están listos. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial del informe de gastos de PowerApps](./media/expense-report-install/expense-report-powerapp.png)
 
 > [!TIP]
-> Vea [este](https://youtu.be/h6E9cdrOvMU) vídeo para aprender a usar el ejemplo de informe de gastos.
+> Vea [este](https://youtu.be/kJXZPILfbwU) vídeo para aprender a usar el ejemplo de informe de gastos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -89,7 +89,7 @@ En esta lista se almacenan los informes de gastos.
 5. En el cuadro de texto **Nombre de columna**, escriba **Estado**.
 6. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Elección**.
 7. En el cuadro de texto **Escriba cada opción en una línea distinta**, especifique los valores siguientes, cada uno en una línea diferente: 
-    - Abrir
+    - Ábra
     - Pendiente
     - Approved
 8. En el cuadro de texto **Valor predeterminado**, escriba **Abierto**.
@@ -163,7 +163,7 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
 1. Haga clic en **Crear columna**.
 2. En el cuadro de texto **Nombre de columna**, escriba **Costo**.
-3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Número (1, 10, 100)**.
+3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Número (1, 10, 100)** .
 4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **Sí**.
 5. Haga clic en **Aceptar**.
 
@@ -188,7 +188,7 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
 1. Haga clic en **Crear columna**.
 2. En el cuadro de texto **Nombre de columna**, escriba **ReportID**.
-3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Búsqueda (información ya disponible en este sitio)**.
+3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Búsqueda (información ya disponible en este sitio)** .
 4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **Sí**.
 5. En la lista desplegable **Obtener información de**, seleccione la lista **Gastos** que ha creado.
 6. En la lista desplegable **En esta columna**, seleccione **Id**.
@@ -241,7 +241,7 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
 1. En un explorador web, vaya a https://web.powerapps.com.
 1. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
-1. En la barra de navegación izquierda, seleccione **Aplicaciones** e **Importar paquete (versión preliminar)**.
+1. En la barra de navegación izquierda, seleccione **Aplicaciones** e **Importar paquete (versión preliminar)** .
 
     ![Pantalla Importar paquete](./media/expense-report-install/import-package.png)
 

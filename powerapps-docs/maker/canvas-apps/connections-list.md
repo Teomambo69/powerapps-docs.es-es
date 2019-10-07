@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/28/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68474008"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987383"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo personalizar la fórmula con tablas, 
   > [!NOTE]
   > Para conectarse a datos en un libro de Excel, este ha de estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [Conexiones de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
-## <a name="actions"></a>Acciones
+## <a name="actions"></a>Operaciones
 
 Si el conector facilita acciones, tiene que seleccionar el origen de datos del mismo modo que antes. En lugar de seleccionar una tabla como siguiente paso, conecte manualmente un control a una acción editando la propiedad **Items** del control que va a mostrar los datos. La fórmula en la que se establece la propiedad **Items** especifica la acción que recupera los datos. Por ejemplo, la aplicación no recuperará los datos si se conecta a Yammer y luego establece la propiedad **Items** en el nombre del origen de datos. Para rellenar un control con datos, especifique una acción como **GetMessagesInGroup(5033622).messages**.
 

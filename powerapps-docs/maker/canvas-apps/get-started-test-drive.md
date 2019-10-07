@@ -1,24 +1,24 @@
 ---
 title: Crear una aplicación a partir de una plantilla | Microsoft Docs
 description: Instrucciones paso a paso para crear una aplicación de lienzo automáticamente a partir de una plantilla de PowerApps.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b0199e39c4e0220358e107905bdf62308147e67d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553708"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983297"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Crear una aplicación a partir de una plantilla en PowerApps
 

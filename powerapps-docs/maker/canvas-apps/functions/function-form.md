@@ -6,23 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550994"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992690"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
-Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)**.
+Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)** .
 
 ## <a name="overview"></a>Información general
 Estas funciones cambian el estado del control **Editar formulario**.  El control de formulario puede estar en uno de estos modos:
@@ -41,13 +40,13 @@ Estas funciones no devuelven ningún valor.
 ### <a name="submitform"></a>SubmitForm
 Use la función **SubmitForm** de la propiedad **[OnSelect](../controls/properties-core.md)** de un control Botón para guardar los cambios de un control Formulario en el origen de datos.
 
-Antes de enviar cualquier cambio, esta función comprueba problemas de validación con cualquier campo que se haya marcado como requerido o que tenga una o más restricciones en su valor. Este comportamiento es idéntico al de la función **[Validate](function-validate.md)**.
+Antes de enviar cualquier cambio, esta función comprueba problemas de validación con cualquier campo que se haya marcado como requerido o que tenga una o más restricciones en su valor. Este comportamiento es idéntico al de la función **[Validate](function-validate.md)** .
 
 **SubmitForm** también comprueba la propiedad **[Valid](../controls/control-form-detail.md)** del control Formulario, que es una agregación de todas las propiedades **[Valid](../controls/control-card.md)** de los controles **[Card](../controls/control-card.md)** que contiene el control Formulario. Si se produce un problema, no se envían los datos y las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)** del control Formulario se establecen en consecuencia.
 
 Si se supera la validación, **SubmitForm** envía el cambio al origen de datos.
 
-* Si se realiza correctamente, se ejecutará el comportamiento **[OnSuccess](../controls/control-form-detail.md)** del formulario y se borrarán las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)**.  Si el formulario se encontraba en modo **FormMode.New**, se devolverá al modo **FormMode.Edit**.
+* Si se realiza correctamente, se ejecutará el comportamiento **[OnSuccess](../controls/control-form-detail.md)** del formulario y se borrarán las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)** .  Si el formulario se encontraba en modo **FormMode.New**, se devolverá al modo **FormMode.Edit**.
 * Si no se realiza correctamente, se ejecutará el comportamiento **[OnFailure](../controls/control-form-detail.md)** del formulario y se establecerán las propiedades **[Error](../controls/control-form-detail.md)** y **[ErrorKind](../controls/control-form-detail.md)** en consecuencia.  El modo del formulario no se modifica.  
 
 ### <a name="editform"></a>EditForm
@@ -60,10 +59,10 @@ La función **NewForm** cambia el modo del control Formulario a **FormMode.New**
 La función **ResetForm** restablece el contenido de un formulario a sus valores iniciales, el contenido que había antes de que el usuario realizara cambios. Si el formulario está en modo **FormMode.New**, se restablecerá al modo **FormMode.Edit**. El comportamiento **[OnReset](../controls/control-form-detail.md)** del control Formulario también se ejecutará.  También puede restablecer controles individuales con la función **[Reset](function-reset.md)** pero únicamente desde dentro del formulario.
 
 ### <a name="viewform"></a>ViewForm
-La función **ViewForm** cambia el modo del control Formulario a **FormMode.View**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  El **SubmitForm** y **ResetForm** funciones no tienen ningún efecto en este modo.
+La función **ViewForm** cambia el modo del control Formulario a **FormMode.View**. En este modo, el contenido de la propiedad **[Elemento](../controls/control-form-detail.md)** del control Formulario se utiliza para rellenar el formulario.  Las funciones **SubmitForm** y **ResetForm** no tienen ningún efecto cuando se está en este modo.
 
 ### <a name="displaymode-property"></a>Propiedad DisplayMode
-El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina también el valor de la propiedad **DisplayMode** que pueden usar las tarjetas de datos y controles del control de formulario.  A menudo, datos de la tarjeta **DisplayMode** propiedad se establecerá en **Parent.DisplayMode** (que hacen referencia a la forma) igual que el control **DisplayMode** (referencia de propiedad la tarjeta de datos): 
+El modo actual se puede leer mediante la propiedad **Modo**.  El modo determina también el valor de la propiedad **DisplayMode** que pueden usar las tarjetas de datos y controles del control de formulario.  A menudo, la propiedad **DisplayMode** de la tarjeta de datos se establecerá en **Parent. DisplayMode** (que hace referencia al formulario) como lo hará la propiedad **DisplayMode** del control (que hace referencia a la tarjeta de datos): 
 
 | Modo | DisplayMode | Descripción |
 | --- | --- | --- |
@@ -111,12 +110,12 @@ Consulte [Formularios de datos](../working-with-forms.md) para obtener ejemplos 
    * Si se produce un error en el envío, **ErrorText** mostrará un mensaje de error descriptivo y la pantalla actual permanecerá visible para que el usuario pueda corregir el problema e intentarlo de nuevo.
 4. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para que muestre **Cancelar** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **ResetForm( EditForm );; Back()**
+    **ResetForm( EditForm ); Back()**
    
     Si el usuario selecciona el botón **Cancelar**, los valores del control Formulario se restablecen a su estado original, el estado que tenían antes de que el usuario empezara a editarlo, vuelve a aparecer la pantalla anterior y se devuelve el control Formulario al modo **Edit** si estaba en modo **New**.
 5. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para mostrar **Nuevo** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **NewForm( EditForm );; Navigate( EditScreen; None )**
+    **NewForm( EditForm ); Navigate( EditScreen, None )**
    
     Cuando el usuario selecciona el botón **New**, se activa el control Formulario en modo **New**, los valores predeterminados del origen de datos del control Formulario rellenan el control y aparece la pantalla que contiene el control Formulario. Cuando se ejecuta la función **SubmitForm**, se crea un registro en lugar de actualizarlo.
 

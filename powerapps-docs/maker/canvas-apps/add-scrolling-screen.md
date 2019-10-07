@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7094c42c8b070095d08d33a276785cce36933407
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553202"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987468"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Agregar una pantalla de desplazamiento a una aplicación de lienzo en PowerApps
 

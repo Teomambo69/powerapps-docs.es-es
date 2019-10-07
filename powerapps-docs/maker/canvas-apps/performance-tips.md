@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/17/2019
 ms.author: yingchin
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c0926c2c38adac6b3377de9a87eef4dd7d7a7cf7
-ms.sourcegitcommit: 9c4d95eeace85a3e91a00ef14fefe7cce0af69ec
+ms.openlocfilehash: 9943678815b53df048ad197e3cdcbd56f4070fa3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349805"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995789"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
 Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
@@ -32,7 +32,7 @@ Cuando un usuario abre una aplicación, esta pasa a través de estas fases de ej
 ## <a name="limit-data-connections"></a>Límite de conexiones de datos 
 **No se conecte a más de 30 orígenes de datos desde la misma aplicación**. Las aplicaciones piden a los usuarios nuevos que inicien sesión en cada conector, por tanto, cada conector adicional aumenta la cantidad de tiempo que la aplicación necesita para iniciarse. Cuando se ejecuta una aplicación, cada conector requiere recursos de CPU, memoria y ancho de banda de red cuando la aplicación solicita datos a ese origen. 
 
-Para medir rápidamente el rendimiento de la aplicación, active Herramientas de desarrollo en [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) mientras se ejecuta la aplicación. La aplicación es más probable que tarden más de 15 segundos para devolver los datos si solicita con frecuencia datos de más de 30 orígenes de datos, como Common Data Service, Azure SQL, SharePoint y Excel en OneDrive.  
+Para medir rápidamente el rendimiento de la aplicación, active Herramientas de desarrollo en [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) mientras se ejecuta la aplicación. Es más probable que la aplicación tarde más de 15 segundos en devolver datos si suele solicitar datos de más de 30 orígenes de datos, como Common Data Service, Azure SQL, SharePoint y Excel en OneDrive.  
 
 ## <a name="limit-the-number-of-controls"></a>Límite del número de controles 
 **No agregue más de 500 controles a la misma aplicación**. PowerApps genera DOM HTML para presentar cada control. Cuantos más controles agregue, más tiempo de generación necesita PowerApps. 
@@ -46,10 +46,12 @@ Como se muestra en [este tema de referencia](functions/function-concurrent.md), 
 
 Sin la función **Concurrent**, esta fórmula carga cada una por una cada una de estas cuatro tablas:
 
-    ClearCollect( Product, '[SalesLT].[Product]' );
-    ClearCollect( Customer, '[SalesLT].[Customer]' );
-    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
-    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+```
+ClearCollect( Product, '[SalesLT].[Product]' );
+ClearCollect( Customer, '[SalesLT].[Customer]' );
+ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
+ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+```
 
 Puede confirmar este comportamiento en las Herramientas de desarrollo del explorador:
 
@@ -57,12 +59,14 @@ Puede confirmar este comportamiento en las Herramientas de desarrollo del explor
     
 Puede incluir la misma fórmula en la función **Concurrent** para disminuir el tiempo total que necesita la operación:
 
-    Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' ),
-        ClearCollect( Customer, '[SalesLT].[Customer]' ),
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
-        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
-        
+```
+Concurrent( 
+    ClearCollect( Product, '[SalesLT].[Product]' ),
+    ClearCollect( Customer, '[SalesLT].[Customer]' ),
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
+```
+
 Con este cambio, la aplicación captura las tablas en paralelo: 
 
 ![ClearCollect paralelo](./media/performance-tips/perfconcurrent2.png)  
@@ -70,20 +74,22 @@ Con este cambio, la aplicación captura las tablas en paralelo:
 ## <a name="cache-lookup-data"></a>Almacenamiento en caché de datos de búsqueda
 Use la función **Set** para almacenar en caché local datos provenientes de tablas de búsqueda con el fin de evitar tener que recuperar repetidamente los datos desde el origen. Esta técnica permite optimizar el rendimiento si es probable que los datos no cambien durante una sesión. Como en este ejemplo, los datos se recuperan desde el origen una sola vez y, después, se hace referencia a ellos de manera local hasta que el usuario cierra la aplicación. 
 
-    Set(CustomerOrder, Lookup(Order, id = “123-45-6789”));
-    Set(CustomerName, CustomerOrder.Name);
-    Set(CustomerAddress, CustomerOrder.Address);
-    Set(CustomerEmail, CustomerOrder.Email);
-    Set(CustomerPhone, CustomerOrder.Phone);
+```
+Set(CustomerOrder, Lookup(Order, id = “123-45-6789”));
+Set(CustomerName, CustomerOrder.Name);
+Set(CustomerAddress, CustomerOrder.Address);
+Set(CustomerEmail, CustomerOrder.Email);
+Set(CustomerPhone, CustomerOrder.Phone);
+```
 
 La información de contacto con cambia con frecuencia, así como tampoco lo hacen los valores predeterminados ni la información del usuario. Por tanto, puede usar habitualmente esta técnica también con las funciones **Defaults** y **User**. 
 
 ## <a name="avoid-controls-dependency-between-screens"></a>Evitar la dependencia de controles entre pantallas
-Para mejorar el rendimiento, las pantallas de una aplicación se cargan en memoria solo según sean necesarios. Esta optimización puede verse limitada si, por ejemplo, 1 de la pantalla se carga y una de sus fórmulas utiliza una propiedad de un control de pantalla de 2. Ahora, pantalla 2 debe cargarse para satisfacer la dependencia antes de que se puede mostrar la pantalla 1. Imagine pantalla 2 tiene una dependencia en la pantalla 3, que no tiene otra dependencia de pantalla de 4 y así sucesivamente. Esta cadena de dependencia puede hacer que se puede cargar varias pantallas.
+Para mejorar el rendimiento, las pantallas de una aplicación se cargan en la memoria solo cuando se necesitan. Esta optimización se puede dificultar si, por ejemplo, se carga la pantalla 1 y una de sus fórmulas usa una propiedad de un control de la pantalla 2. Ahora la pantalla 2 debe cargarse para cumplir la dependencia antes de que se pueda mostrar la pantalla 1. Imagine que la pantalla 2 tiene una dependencia en la pantalla 3, que tiene otra dependencia en la pantalla 4, etc. Esta cadena de dependencia puede hacer que se carguen muchas pantallas.
 
-Por esta razón, evite las fórmulas dependencias entre pantallas. En algunos casos puede usar una variable global o una colección para compartir información entre pantallas.
+Por este motivo, evite las dependencias de fórmulas entre pantallas. En algunos casos, puede usar una variable global o una colección para compartir información entre pantallas.
 
-Hay una excepción. En el ejemplo anterior, imagine que es la única manera de mostrar la pantalla 1 navegando desde la pantalla de 2. A continuación, pantalla 2 habría ya se ha cargado en memoria cuando estaba pantalla 1 que se cargue. No es necesario ningún trabajo adicional para satisfacer la dependencia para la pantalla 2 y, por tanto, no hay ningún impacto en el rendimiento.
+Existe una excepción. En el ejemplo anterior, Imagine que la única manera de mostrar la pantalla 1 es desplazarse por la pantalla 2. A continuación, la pantalla 2 ya se habría cargado en la memoria cuando se cargara la pantalla 1. No es necesario realizar ningún trabajo adicional para cumplir la dependencia de la pantalla 2 y, por tanto, no hay ningún impacto en el rendimiento.
 
 ## <a name="use-delegation"></a>Uso de la delegación
 Siempre que sea posible, use las funciones que delegan el procesamiento de datos al origen de datos en lugar de recuperar los datos en el dispositivo local para el procesamiento. Si una aplicación debe procesar localmente los datos, la operación requiere mucha más potencia de procesamiento, memoria y ancho de banda de red, especialmente si el conjunto de datos es grande.
@@ -103,14 +109,14 @@ Use los orígenes de datos y las fórmulas que se pueden delegar para que las ap
 ## <a name="republish-apps-regularly"></a>Volver a publicar aplicaciones de manera habitual
 Consulte la entrada de blog [Republish your apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/) (Volver a publicar las aplicaciones) para obtener mejoras en el rendimiento y características adicionales desde la plataforma de PowerApps.
 
-## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Evitar repetir la misma fórmula en varios lugares
-Si varias propiedades ejecutan la misma fórmula (especialmente si es compleja), considere la posibilidad de una vez establecidos y, a continuación, hacer referencia a la salida de la primera propiedad en las posteriores. Por ejemplo, no establezca la **DisplayMode** propiedad de los controles A, B, C, D y E en la misma fórmula compleja. En su lugar, establezca la **DisplayMode** propiedad en la fórmula compleja, establezca la B **DisplayMode** el resultado de la propiedad **DisplayMode** propiedad, y así sucesivamente para C, D y E.
+## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Evite repetir la misma fórmula en varios lugares
+Si varias propiedades ejecutan la misma fórmula (especialmente si es compleja), considere la posibilidad de establecerla una vez y hacer referencia a la salida de la primera propiedad en las subsiguientes. Por ejemplo, no establezca la propiedad **DisplayMode** de los controles a, B, C, D y e a la misma fórmula compleja. En su lugar, establezca la propiedad **DisplayMode** de la fórmula compleja, establezca la propiedad **DisplayMode** de B en el resultado de la propiedad **DisplayMode** de la, y así sucesivamente para C, D y e.
 
 ## <a name="enable-delayoutput-on-all-text-input-controls"></a>Habilitar DelayOutput en todos los controles de entrada de texto
-Si tiene varias fórmulas o las reglas que hacen referencia al valor de un **entrada de texto** , establezca el **DelayedOutput** propiedad de ese control en true. El **texto** se actualizará la propiedad de ese control solo después de que han dejado de pulsaciones de teclas escritas en una sucesión rápida. Las reglas o fórmulas no se ejecutan tantas veces y mejorará el rendimiento de la aplicación.
+Si tiene varias fórmulas o reglas que hacen referencia al valor de un control **entrada de texto** , establezca la propiedad **DelayedOutput** de ese control en true. La propiedad **Text** de ese control solo se actualizará después de que se hayan dejado de presionar las teclas especificadas en sucesión rápida. Las fórmulas o reglas no se ejecutarán tantas veces y el rendimiento de la aplicación mejorará.
 
-## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>Evite el uso de Form.Updates en reglas y fórmulas
-Si hace referencia a un valor de entrada del usuario en una regla o una fórmula mediante el uso de un **Form.Updates** variable, se recorre en iteración todas las tarjetas del formulario datos y crea un registro cada vez. Para que la aplicación más eficaz, hacen referencia al valor directamente desde la tarjeta de datos o el valor del control.
+## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>Evitar el uso de Form. updates en reglas y fórmulas
+Si hace referencia a un valor de entrada de usuario en una regla o una fórmula mediante el uso de una variable **Form. updates** , recorre en iteración todas las tarjetas de datos del formulario y crea un registro cada vez. Para que la aplicación sea más eficaz, haga referencia al valor directamente desde la tarjeta de datos o el valor del control.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Revise el [estándares de codificación](https://aka.ms/powerappscanvasguidelines) para maximizar el rendimiento de la aplicación y mantener aplicaciones más fáciles de mantener.
+Revise los [estándares de codificación](https://aka.ms/powerappscanvasguidelines) para maximizar el rendimiento de la aplicación y mantener las aplicaciones más fáciles de mantener.

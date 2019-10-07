@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2c90566f235093f25e3a8c35bc1700f2a61b348
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 8108dbc1c78ba57e989f7bebeb8bd0f42f696360
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71037960"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985140"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de PowerApps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.
@@ -38,13 +37,13 @@ Puede usar **DateAdd** con **TimeZoneOffset** para realizar la conversión entre
 Vea también [tipos de datos Date, Time y DateTime,](/data-types#date-time-and-datetime) y [trabajar con fechas y horas](../show-text-dates-times.md) para obtener más información.
 
 ## <a name="syntax"></a>Sintaxis
-**DateAdd**( *DateTime*; *Addition* [; *Units* ] )
+**DateAdd**( *DateTime*, *Addition* [, *Units* ] )
 
 * *DateTime*: requerido. Valor de fecha y hora con el que operar.
 * *Suma*: requerido. Número, en *unidades*, para agregar a *DateTime*.
 * *Unidades*: opcional. Tipo de *unidades* que se van a agregar: **Milisegundos**, **segundos**, **minutos**, **horas**, **días**, **meses**, **trimestres**o **años**.  Si no se especifica, se usará **Días**.
 
-**DateDiff**( *StartDateTime*; *EndDateTime* [; *Units* ] )
+**DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime*: requerido. Valor de fecha y hora de inicio.
 * *EndDateTime*: requerido. Valor de fecha y hora de finalización.
@@ -61,25 +60,25 @@ En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de juli
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Text( DateAdd( Now(); 3 );<br>"dd-mm-yyyy hh:mm" )** |Agrega tres días (unidades predeterminadas) a la fecha y hora actuales. |"18-07-2013 13:02" |
-| **Text( DateAdd( Now(); 4; Hours );<br>"dd-mm-yyyy hh:mm" )** |Agrega cuatro horas a la fecha y hora actuales. |"15-07-2013 17:02" |
-| **Text( DateAdd( Today(); 1; Months );<br>"dd-mm-yyyy hh:mm" )** |Agrega un mes a la fecha actual, sin tiempo dado que **Today** no devuelve un componente de tiempo. |"15-08-2013 00:00" |
-| **Text( DateAdd( Now(); &#8209;;30; Minutes );<br>"dd-mm-yyyy hh:mm" )** |Resta 30 minutos de la fecha y hora actuales. |"15-07-2013 12:32" |
+| **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |Agrega tres días (unidades predeterminadas) a la fecha y hora actuales. |"18-07-2013 13:02" |
+| **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )** |Agrega cuatro horas a la fecha y hora actuales. |"15-07-2013 17:02" |
+| **Text( DateAdd( Today(), 1, Months ),<br>"dd-mm-yyyy hh:mm" )** |Agrega un mes a la fecha actual, sin tiempo dado que **Today** no devuelve un componente de tiempo. |"15-08-2013 00:00" |
+| **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** |Resta 30 minutos de la fecha y hora actuales. |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>DateDiff simple
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **DateDiff( Now(); DateValue("1/1/2014") )** |Devuelve la diferencia entre las dos unidades en las unidades predeterminadas de **Días**. |170 |
-| **DateDiff( Now(); DateValue("1/1/2014"); Months )** |Devuelve la diferencia entre los dos valores en **Meses**. |6 |
-| **DateDiff( Now(); Today(); Minutes )** |Devuelve la diferencia entre la fecha y hora actuales y la fecha actual solamente (ninguna hora) en minutos.  Puesto que **Now** es posterior a **Today**, el resultado es negativo. |-782 |
+| **DateDiff( Now(), DateValue("1/1/2014") )** |Devuelve la diferencia entre las dos unidades en las unidades predeterminadas de **Días**. |170 |
+| **DateDiff( Now(), DateValue("1/1/2014"), Months )** |Devuelve la diferencia entre los dos valores en **Meses**. |6 |
+| **DateDiff( Now(), Today(), Minutes )** |Devuelve la diferencia entre la fecha y hora actuales y la fecha actual solamente (ninguna hora) en minutos.  Puesto que **Now** es posterior a **Today**, el resultado es negativo. |-782 |
 
 ### <a name="converting-to-utc"></a>Conversión a UTC
 Para convertir a UTC (Hora universal coordinada), agregue **TimeZoneOffset** durante el tiempo especificado.  
 
 Imagine, por ejemplo, que los valores de fecha y hora actuales son **15 de julio de 2013, 1:02 p.m.** en la Hora de verano del Pacífico (PDT, UTC-7).  Para determinar la hora actual en hora UTC, use:
 
-* **DateAdd( Now(); TimeZoneOffset(); Minutes )**
+* **DateAdd( Now(), TimeZoneOffset(), Minutes )**
 
 **TimeZoneOffset** toma como valor predeterminado la hora actual, por lo que no es necesario pasarle un argumento.
 
@@ -90,7 +89,7 @@ Para convertir desde UTC, reste **TimeZoneOffset** (agregando el signo negativo)
 
 Imagine, por ejemplo, que los valores de fecha y hora UTC **15 de julio de 2013, 8:02 p.m.** se almacenan en una variable llamada **StartTime**. Para ajustar la hora de la zona horaria del usuario, use:
 
-* **DateAdd (StartTime, &minus;TimeZoneOffset (startTime), minutos)**
+* **DateAdd (StartTime, &minus;TimeZoneOffset (StartTime), minutos)**
 
 Tenga en cuenta el signo negativo delante de **TimeZoneOffset** para restar el desplazamiento en lugar de sumarlo.
 

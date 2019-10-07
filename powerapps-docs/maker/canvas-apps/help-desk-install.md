@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/08/2018
 ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d1b7eaecc7bd519e9423e6e64387cb6cad76c7f
-ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535258"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990212"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
@@ -31,7 +31,7 @@ Tiempo estimado para completar estos pasos: **10-15 minutos**
 
 ## <a name="overview-of-the-sample"></a>Información general sobre el ejemplo
 
-Help Desk proporciona una experiencia fácil de usar para conectarse a los usuarios finales con profesionales de soporte técnico. Encuentre respuestas a las preguntas más importantes, seguir el progreso de las incidencias abiertas y revise los detalles de las solicitudes anteriores rápidamente. Esta aplicación requiere un mínimo de configuración para personalizarla.
+El Departamento de soporte técnico proporciona una experiencia fácil de utilizar para conectar a los usuarios finales con profesionales de soporte técnico. Encuentre rápidamente respuestas a sus preguntas más importantes, realice un seguimiento del progreso de los vales abiertos y revise los detalles de las solicitudes anteriores. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial de la aplicación Help Desk de PowerApps](./media/help-desk-install/Login-screen.png)
 
@@ -89,7 +89,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 1. Haga clic en **Crear columna**.
 2. En el cuadro de texto **Nombre de columna**, escriba **PercentComplete**.
-3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Número (1, 10, 100)**.
+3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Número (1, 10, 100)** .
 4. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 5. Haga clic en **Aceptar**.
 
@@ -138,7 +138,7 @@ Esta lista almacena los vales del servicio Help Desk.
 2. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 3. Haga clic en **Aceptar**.
 
-## <a name="download-the-app"></a>Descargar la aplicación
+## <a name="download-the-app"></a>Descarga de la aplicación
 
 1.  [Descargue](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
 
@@ -177,7 +177,7 @@ Esta lista almacena los vales del servicio Help Desk.
 1. En un explorador web, vaya a https://web.powerapps.com.
 2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3. En el menú de la izquierda, seleccione **Aplicaciones**. 
-4. Haga clic en **Importar paquete (versión preliminar)**.
+4. Haga clic en **Importar paquete (versión preliminar)** .
     
    ![Pantalla Importar paquete](./media/help-desk-install/import-package.png)
 
@@ -209,7 +209,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
     ![Pantalla Importar configuración](./media/help-desk-install/import-done.png)
 
-## <a name="configure-the-app-to-use-the-sharepoint-list"></a>Configurar la aplicación para usar la lista de SharePoint
+## <a name="configure-the-app-to-use-the-sharepoint-list"></a>Configuración de la aplicación para usar la lista de SharePoint
 
 1. En Pasos siguientes, haga clic en **Abrir aplicación**.
 2. Haga clic en **Permitir** cuando se le solicite permiso.
@@ -217,7 +217,7 @@ Esta lista almacena los vales del servicio Help Desk.
 ### <a name="delete-connections"></a>Eliminar conexiones
 
 1. En la pestaña **Vista**, seleccione **Orígenes de datos**.
-1. En el **datos** panel, seleccione los puntos suspensivos (...) junto a **HelpDesk**y, a continuación, seleccione **quitar**.
+1. En el panel **datos** , seleccione los puntos suspensivos (...) junto a **Departamento de soporte técnico**y, a continuación, seleccione **quitar**.
 
 ### <a name="helpdesk-list"></a>Lista de Help Desk
 
@@ -228,8 +228,8 @@ Esta lista almacena los vales del servicio Help Desk.
     > [!TIP] 
     > Si el sitio no aparece en la lista, escriba o pegue la dirección URL al sitio de SharePoint en el cuadro de texto y seleccione **Ir**.
 
-1. En el **búsqueda** cuadro en la parte superior de la lista, escriba o pegue **HelpDesk**.
-1. Active la casilla de verificación junto a **HelpDesk**y, a continuación, seleccione **Connect**.
+1. En el cuadro de **búsqueda** de la parte superior de la lista, escriba o pegue el **Departamento de soporte técnico**.
+1. Active la casilla junto a **Departamento de soporte técnico**y, a continuación, seleccione **conectar**.
 
 ### <a name="update-admin-list"></a>Actualizar la lista de administradores
 
@@ -251,7 +251,7 @@ Esta lista almacena los vales del servicio Help Desk.
 1.  En el menú de la izquierda, seleccione **Flujos**.
 2.  Si es necesario, inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  Seleccione **Mis flujos** en el menú superior.
-4.  Junto a la **HelpDeskFlow** flujo, haga clic en el icono de lápiz. 
+4.  Junto al flujo **HelpDeskFlow** , haga clic en el icono de lápiz. 
  
     ![Pantalla Editar flujo](./media/help-desk-install/edit-flow.png)
 
@@ -275,7 +275,7 @@ Esta lista almacena los vales del servicio Help Desk.
 ## <a name="play-the-app"></a>Reproducir la aplicación
 
 1. En el explorador web, haga clic en **Aplicaciones**.
-2. Haga clic en el botón de puntos suspensivos (...) situado junto a la aplicación Help Desk.
+2. Haga clic en los puntos suspensivos (...) junto a la aplicación del Departamento de soporte técnico.
 3. Haga clic en **Abrir**. 
 
 > [!TIP]

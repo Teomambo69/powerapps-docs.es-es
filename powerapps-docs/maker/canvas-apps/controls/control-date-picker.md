@@ -6,25 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea41924c213adc6a2e0e72b906076a2d8e6783ff
-ms.sourcegitcommit: 488609d517816f296f8090a1cb643297fe3e8e85
+ms.openlocfilehash: eae69ba2337c6b220b4c83a4900846bad6589615
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237962"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986765"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
 
-## <a name="description"></a>DESCRIPCIÓN
+## <a name="description"></a>Descripción
 Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de texto](control-text-input.md)** , ayuda a garantizar que el usuario especifica una fecha en el formato correcto.
 
 ## <a name="key-properties"></a>Propiedades principales
@@ -112,7 +111,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.

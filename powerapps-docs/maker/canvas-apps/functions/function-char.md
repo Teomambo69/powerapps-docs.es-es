@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 099afb1e89d1551c6c6b969c3ae3688a3cdec777
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559704"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992949"
 ---
 # <a name="char-function-in-powerapps"></a>Función Char en PowerApps
 
@@ -27,7 +26,7 @@ Traduce un código de carácter en una cadena.
 
 ## <a name="description"></a>Descripción
 
-El **Char** función convierte un número en una cadena con el carácter ASCII correspondiente.
+La función **Char** convierte un número en una cadena con el carácter ASCII correspondiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,51 +38,51 @@ El **Char** función convierte un número en una cadena con el carácter ASCII c
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Char( 65 )** |Devuelve el carácter que corresponde al código ASCII 65. |"A" |
-| **Char( 105 )** |Devuelve el carácter que corresponde al código ASCII 105. |"i" |
+| **Char( 65 )** |Devuelve el carácter que corresponde al código ASCII 65. |UN |
+| **Char( 105 )** |Devuelve el carácter que corresponde al código ASCII 105. |Configur |
 | **Char( 35 )** |Devuelve el carácter que corresponde al código ASCII 35. |"#" |
 
 ### <a name="display-a-character-map"></a>Mostrar un mapa de caracteres
 
-1. En una pantalla vacía en una aplicación de tableta, agregue un [ **galería** ](../controls/control-gallery.md) controlar con un **en blanco Horizontal** diseño y, a continuación, establezca estas propiedades:
+1. En una pantalla vacía de una aplicación de Tablet PC, agregue un control [**Galería**](../controls/control-gallery.md) con un diseño **horizontal en blanco** y, a continuación, establezca estas propiedades:
 
-    - **elementos**: `[0;1;2;3;4;5;6;7]`
-    - **ancho**: 800
-    - **alto**: 500
-    - **TemplateSize**: 100
-    - **TemplatePadding**: 0
+    - **Elementos**: `[0,1,2,3,4,5,6,7]`
+    - **Ancho**: 800
+    - **Alto**: 500
+    - **Plantillas**: 100
+    - **Espaciadointernodeplantilla**: 0
 
-1. Dentro de esa galería, agregue un **galería** controlar con un **en blanco Vertical** diseño y, a continuación, establezca estas propiedades:
+1. Dentro de esa Galería, agregue un control **Galería** con un diseño **vertical en blanco** y, a continuación, establezca estas propiedades:
 
-    - **elementos**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
-    - **ancho**: 100
-    - **alto**: 500
-    - **TemplateSize**: 30
-    - **TemplatePadding**: 0
+    - **Elementos**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **Ancho**: 100
+    - **Alto**: 500
+    - **Plantillas**: 30
+    - **Espaciadointernodeplantilla**: 0
 
-    El valor de la **elementos** propiedad multiplica 16 por el número de columna proporcionada por la columna valor de la **elementos** propiedad desde la Galería de la primera (0-7 en `ThisItem.Value`). La fórmula, a continuación, agrega el resultado a uno de los números de fila desde la Galería de segundo (0-15 en el registro de ámbito que la [ **ForAll** ](function-forall.md) función proporciona).
+    El valor de la propiedad **Items** multiplica 16 por el número de columna proporcionado por la columna valor de la propiedad **Items** de la primera galería (0-7 en `ThisItem.Value`). A continuación, la fórmula agrega el resultado a uno de los números de fila de la segunda galería (0-15 en el ámbito de registro que proporciona la función [**forall**](function-forall.md) ).
 
-1. Dentro de la segunda Galería (vertical), agregue un **etiqueta** controlar y establecer estas propiedades:
+1. Dentro de la segunda galería (vertical), agregue un control **etiqueta** y establezca estas propiedades:
 
     - **Texto**: `ThisItem.Value`
-    - **ancho**: 50
+    - **Ancho**: 50
 
-1. Dentro de la Galería (vertical) segundo, agregue otro **etiqueta** controlar y establecer estas propiedades:
+1. Dentro de la segunda galería (vertical), agregue otro control **etiqueta** y establezca estas propiedades:
 
     - **Texto**: `Char( ThisItem.Value )`
-    - **ancho**: 50
+    - **Ancho**: 50
     - **X**: 50
 
-Ha creado un gráfico de los primeros 128 caracteres ASCII. Caracteres que aparecen cuando no se puede imprimir un cuadrado pequeño.
+Ha creado un gráfico con los primeros 128 caracteres ASCII. Los caracteres que aparecen como un cuadrado pequeño no se pueden imprimir.
 
-![En primer lugar 128 caracteres ASCII](media/function-char/chart-lower.png)
+![Primeros 128 caracteres ASCII](media/function-char/chart-lower.png)
 
-Para mostrar los caracteres ASCII extendidos, establezca el **elementos** propiedad de la Galería de segundo en esta fórmula, que agrega 128 a cada valor de carácter:
+Para mostrar los caracteres ASCII extendidos, establezca la propiedad **Items** de la segunda galería en esta fórmula, que agrega 128 a cada valor de carácter:
 
-`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![Caracteres ASCII extendidos](media/function-char/chart-higher.png)
 
-Para mostrar los caracteres en una fuente diferente, establezca la **fuente** propiedad de la segunda etiqueta a un valor como **bailar secuencia de comandos**.
+Para mostrar los caracteres en una fuente diferente, establezca la propiedad **Font** de la segunda etiqueta en un valor como **"script baile"** .
 
-![¿Bailar Script](media/function-char/chart-higher-dancing-script.png)
+![Script de baile](media/function-char/chart-higher-dancing-script.png)

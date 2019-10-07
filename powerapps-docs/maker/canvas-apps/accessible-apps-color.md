@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/23/2018
 ms.author: tahoon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549982"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987779"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Colores accesibles en aplicaciones de lienzo de PowerApps
 Los colores utilizados en una aplicación de lienzo deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
@@ -36,7 +36,7 @@ En términos prácticos, todos los controles interactivos deben tener el contras
 ## <a name="minimum-contrast-for-non-text"></a>Contraste mínimo para no texto
 
 > [!NOTE]
-> En el estándar [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), los requisitos de contraste solo se aplican al texto. Para una mayor accesibilidad, tenga en cuenta las próximas [orientaciones de contraste de WCAG 2.1](https://www.w3.org/TR/WCAG21/#non-text-contrast) para los componentes de interfaz de usuario esenciales, como los botones de los iconos. Se recomienda una proporción mínima de 3:1 para estos componentes. Las instrucciones descritas en esta sección son **opcional** para el cumplimiento de WCAG 2.0.
+> En el estándar [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), los requisitos de contraste solo se aplican al texto. Para una mayor accesibilidad, tenga en cuenta las próximas [orientaciones de contraste de WCAG 2.1](https://www.w3.org/TR/WCAG21/#non-text-contrast) para los componentes de interfaz de usuario esenciales, como los botones de los iconos. Se recomienda una proporción mínima de 3:1 para estos componentes. Las instrucciones descritas en esta sección son **opcionales** para el cumplimiento de WCAG 2,0.
 
 ### <a name="user-interface-components"></a>Componentes de la interfaz de usuario
 Todos los controles interactivos deben tener el contraste de color adecuado entre:
@@ -55,7 +55,7 @@ Si no hay ningún borde, debería haber un contraste de color adecuado entre:
 * **[HoverFill](controls/properties-color-border.md)** y el color situado fuera del control
 
 ### <a name="graphical-objects"></a>Objetos gráficos
-Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles donde se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)** ,  **[imagen](controls/control-image.md)** ,  **[micrófono](controls/control-microphone.md)** , y **[devídeo](controls/control-audio-video.md)** .
+Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles donde se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)** , **[imagen](controls/control-image.md)** , **[micrófono](controls/control-microphone.md)** y **[vídeo](controls/control-audio-video.md)** .
 
 En el caso del contenido de vídeo, considere la comprobación de los problemas de contraste. De forma alternativa o adicional, proporcione [subtítulos](controls/control-audio-video.md) que describan el vídeo.
 

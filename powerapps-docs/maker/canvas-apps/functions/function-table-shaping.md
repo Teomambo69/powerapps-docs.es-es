@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543840"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992206"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Funciones AddColumns, DropColumns, RenameColumns y ShowColumns en PowerApps
 Forma una [tabla](../working-with-tables.md) agregando, quitando, cambiando el nombre y seleccionando sus [columnas](../working-with-tables.md#columns).
@@ -34,7 +33,7 @@ Estas funciones dan forma a una tabla mediante el ajuste de sus columnas:
 Una tabla es un valor en PowerApps, como una cadena o un número.  Puede especificar una tabla como un argumento en una fórmula, y las funciones pueden devolver una tabla como resultado.
 
 > [!NOTE]
-> Las funciones que se describe en este tema no modifican la tabla original. En su lugar, se toma esa tabla como argumento y devuelven una tabla nueva con una transformación aplicada. Consulte cómo [trabajar con tablas](../working-with-tables.md) para más detalles.  
+> Las funciones que se describen en este tema no modifican la tabla original. En su lugar, toman esa tabla como argumento y devuelven una nueva tabla con una transformación aplicada. Consulte cómo [trabajar con tablas](../working-with-tables.md) para más detalles.  
 
 No se pueden modificar las columnas de un [origen de datos](../working-with-data-sources.md) mediante el uso de estas funciones. Tiene que modificar los datos en su origen. Puede agregar columnas a una [colección](../working-with-data-sources.md#collections) con la función **[Collect](function-clear-collect-clearcollect.md)** . Consulte cómo [trabajar con fuentes de datos](../working-with-data-sources.md) para más detalles.  
 
@@ -50,40 +49,40 @@ Use la función **RenameColumns** para cambiar el nombre de una o varias columna
 
 La función **ShowColumns** incluye columnas de una tabla y quita todas las demás columnas. Puede usar **ShowColumns** para crear una tabla de una sola columna a partir de una tabla de varias columnas.  **ShowColumns** incluye columnas y **DropColumns** las excluye.  
 
-Para todas estas funciones, el resultado es una nueva tabla con la transformación aplicada. La tabla original no se modifica. No se puede modificar una tabla existente con una fórmula. Common Data Service, SharePoint, SQL Server y otros orígenes de datos proporcionan herramientas para modificar las columnas de tablas, que a menudo se conocen como el esquema, entidades y listas. Las funciones en este tema solo transforman una tabla de entrada, sin modificar el original, en una tabla de salida para su uso posterior.
+Para todas estas funciones, el resultado es una nueva tabla con la transformación aplicada. La tabla original no se modifica. No se puede modificar una tabla existente con una fórmula. SharePoint, Common Data Service, SQL Server y otros orígenes de datos proporcionan herramientas para modificar las columnas de listas, entidades y tablas, a las que se suele hacer referencia como esquema. Las funciones de este tema solo transforman una tabla de entrada, sin modificar la original, en una tabla de salida para su uso posterior.
 
-Los argumentos de estas funciones admiten la delegación. Por ejemplo, un **filtro** función que se usa como argumento para la incorporación de cambios en las búsquedas de registros relacionados a través de todos los anuncios, incluso si la **' [dbo]. [ AllListings]'** origen de datos contiene un millón de filas:
+Los argumentos de estas funciones admiten la delegación. Por ejemplo, una función de **filtro** que se usa como argumento para extraer los registros relacionados realiza búsquedas en todas las listas, incluso si el **' [dbo]. [ AllListings] '** el origen de datos contiene un millón de filas:
 
-```powerapps-comma
-AddColumns( RealEstateAgents; 
-    "Listings";  
-    Filter(  '[dbo].[AllListings]'; ListingAgentName = AgentName ) 
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
 )
 ```
 
-Sin embargo, el resultado de estas funciones está sujeto a la [límite de registros que no sean de delegación](../delegation-overview.md#non-delegable-limits).  En este ejemplo, se devuelven solo 500 registros incluso si la **RealEstateAgents** origen de datos tiene registros 501 o más.
+Sin embargo, el resultado de estas funciones está sujeto al [límite de registros que no son de delegación](../delegation-overview.md#non-delegable-limits).  En este ejemplo, solo se devuelven los registros 500, incluso si el origen de datos **RealEstateAgents** tiene 501 o más registros.
 
-Si usas **AddColumns** de esta manera, **filtro** debe realizar llamadas independientes al origen de datos para cada uno de los primeros registros de **RealEstateAgents**, lo que hace que una gran cantidad de chatter de red. Si **[dbo]. [ AllListings]** es lo suficientemente pequeño y no cambia con frecuencia, podría llamar a la **recopilar** funcionando en [ **OnStart** ](signals.md#app) para almacenar en caché el origen de datos en la aplicación Cuando se inicia. Como alternativa, puede reestructurar la aplicación para que extraiga en los registros relacionados solo cuando el usuario pide para ellos.  
+Si utiliza **AddColumns** de esta manera, el **filtro** debe realizar llamadas independientes en el origen de datos para cada uno de esos primeros registros en **RealEstateAgents**, lo que provoca una gran cantidad de chatter de red. Si **[dbo]. [ AllListings]** es lo suficientemente pequeño y no cambia con frecuencia, puede llamar a la función **Collect** en [**OnStart**](signals.md#app) para almacenar en caché el origen de datos en la aplicación cuando se inicia. Como alternativa, puede reestructurar la aplicación para que extraiga los registros relacionados solo cuando el usuario los solicite.  
 
 ## <a name="syntax"></a>Sintaxis
-**AddColumns**( *Table*; *ColumnName1*; *Formula1* [; *ColumnName2*; *Formula2*; ... ] )
+**AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
 
 * *Table*: requerido.  La tabla sobre la cual se opera.
 * *ColumnName(s)* : requerido. Nombres de las columnas para agregar.  Tiene que especificar una cadena (por ejemplo, **"Name"** entre comillas dobles incluidas) para este argumento.
 * *Formula(s)* : requerido.  La fórmula o fórmulas para evaluar para cada registro. Se agregará el resultado como el valor de la nueva columna correspondiente. Puede hacer referencia a otras columnas de la tabla en esta fórmula.
 
-**DropColumns**( *Table*; *ColumnName1* [; *ColumnName2*; ... ] )
+**DropColumns**( *Table*, *ColumnName1* [, *ColumnName2*, ... ] )
 
 * *Table*: requerido.  La tabla sobre la cual se opera.
 * *ColumnName(s)* : requerido. Nombres de las columnas para excluir. Tiene que especificar una cadena (por ejemplo, **"Name"** entre comillas dobles incluidas) para este argumento.
 
-**RenameColumns**( *Table*; *OldColumnName1*; *NewColumnName1* [; *OldColumnName2*; *NewColumnName2*; ... ] )
+**Cambiarnombrecolumnas**( *TABLE*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*,...])
 
 * *Table*: requerido.  La tabla sobre la cual se opera.
 * *OldColumnName*: requerido. Nombre de una columna de la tabla original cuyo nombre se va a cambiar. Este elemento aparece en primer lugar en el par de argumentos (o en primer lugar en cada par de argumentos si la fórmula incluye más de un par). Este nombre tiene que ser una cadena (por ejemplo, **"Name"** con comillas dobles incluidas).
 * *NewColumnName*: requerido. Nombre de reemplazo. Este elemento aparece por último lugar en el par de argumentos (o por último lugar en cada par de argumentos si la fórmula incluye más de un par). Tiene que especificar una cadena (por ejemplo, **"Customer Name"** con comillas dobles incluidas) para este argumento.
 
-**ShowColumns**( *Table*; *ColumnName1* [; *ColumnName2*; ... ] )
+**ShowColumns**( *Table*, *ColumnName1* [, *ColumnName2*, ... ] )
 
 * *Table*: requerido.  La tabla sobre la cual se opera.
 * *ColumnName(s)* : requerido. Nombres de las columnas para incluir. Tiene que especificar una cadena (por ejemplo, **"Name"** entre comillas dobles incluidas) para este argumento.
@@ -99,44 +98,44 @@ Ninguno de estos ejemplos modificar el origen de datos **IceCreamSales**. Cada f
 | --- | --- | --- |
 | **AddColumns (IceCreamSales, "Revenue", UnitPrice * QuantitySold)** |Agrega una columna **Revenue** al resultado.  Para cada registro, se evalúa **UnitPrice * QuantitySold**, y el resultado se coloca en la nueva columna. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns (IceCreamSales, "UnitPrice")** |Excluye la columna **UnitPrice** del resultado. Use esta función para excluir columnas y usar **ShowColumns** para incluirlas. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales; "Flavor" )** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price")** |Cambia el nombre de la **UnitPrice** columna del resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price"; "QuantitySold"; "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales; "Revenue";<br>UnitPrice * QuantitySold );<br>"UnitPrice"; "Price" );<br>"Quantity" )** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **ShowColumns( IceCreamSales, "Flavor" )** |Incluye solamente la columna **Flavor** en el resultado. Use esta función para incluir columnas y **DropColumns** para excluirlas. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Cambia el nombre de la columna **UnitPrice** en el resultado. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Cambia el nombre de las columnas **UnitPrice** y **QuantitySold** en el resultado. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Realiza las siguientes transformaciones de tabla en orden, comenzando desde el interior de la fórmula: <ol><li>Agrega una columna **Revenue** basada en el cálculo por registro de **UnitPrice * Quantity**.<li>Cambia el nombre de **UnitPrice** a **Price**.<li>Excluye la columna **Quantity**.</ol>  Tenga en cuenta que el orden es importante. Por ejemplo, no se puede calcular con **UnitPrice** después de que se le haya cambiado el nombre. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Paso a paso
 
-Vamos a probar algunos de los ejemplos de anteriormente en este tema.  
+Vamos a probar algunos de los ejemplos anteriores de este tema.  
 
-1. Crear una colección mediante la adición de un **[botón](../controls/control-button.md)** control y estableciendo su **OnSelect** propiedad en esta fórmula:
+1. Cree una colección agregando un control de **[botón](../controls/control-button.md)** y estableciendo su propiedad **alseleccionar** en esta fórmula:
 
-    ```powerapps-comma
-    ClearCollect( IceCreamSales; 
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
         Table(
-            { Flavor: "Strawberry"; UnitPrice: 1,99; QuantitySold: 20 }; 
-            { Flavor: "Chocolate"; UnitPrice: 2,99; QuantitySold: 45 };
-            { Flavor: "Vanilla"; UnitPrice: 1,50; QuantitySold: 35 }
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
         )
     )
     ```
 
-1. Ejecute la fórmula, seleccione el botón mientras mantiene presionada la tecla Alt.
+1. Ejecute la fórmula seleccionando el botón mientras mantiene presionada la tecla Alt.
 
-1. Agregue un segundo **botón** , establezca su **OnSelect** fórmula, para la propiedad y, a continuación, ejecútelo:
+1. Agregue un segundo control **botón** , establezca su propiedad **alseleccionar** en esta fórmula y, a continuación, ejecútelo:
 
-    ```powerapps-comma
-    ClearCollect( FirstExample; 
-        AddColumns( IceCreamSales; "Revenue"; UnitPrice * QuantitySold )
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
     ) 
     ```
-1. En el **archivo** menú, seleccione **colecciones**y, a continuación, seleccione **IceCreamSales** para mostrar esa colección.
+1. En el menú **archivo** , seleccione **colecciones**y, a continuación, seleccione **IceCreamSales** para mostrar esa recopilación.
  
-    Como se muestra en este gráfico, la segunda fórmula no ha modificado esta colección. El **AddColumns** función usa **IceCreamSales** como un argumento de solo lectura; la función no modifica la tabla al que hace referencia ese argumento.
+    Como se muestra en este gráfico, la segunda fórmula no modificó esta colección. La función **AddColumns** usó **IceCreamSales** como argumento de solo lectura; la función no modificó la tabla a la que hace referencia ese argumento.
     
-    ![Visor de la colección que muestra los tres registros de la colección de ventas de helado que no incluya una columna de ingresos](media/function-table-shaping/ice-cream-sales-collection.png)
+    ![Visor de recopilación que muestra tres registros de la colección de ventas de helado que no incluye una columna de ingresos](media/function-table-shaping/ice-cream-sales-collection.png)
 
 1. Seleccione **FirstExample**.
 
-    Como se muestra en este gráfico, la segunda fórmula devuelve una nueva tabla con la columna agregada. El **ClearCollect** función captura la nueva tabla en la **FirstExample** colección, agregar algo a la tabla original, tal como transmita a través de la función sin modificar el origen:
+    Como se muestra en este gráfico, la segunda fórmula devolvió una nueva tabla con la columna agregada. La función **ClearCollect** capturó la nueva tabla en la colección **FirstExample** , agregando algo a la tabla original a medida que fluye a través de la función sin modificar el origen:
 
-    ![Visor de la colección que muestra los tres registros de la colección del primer ejemplo que incluye una nueva columna de ingresos](media/function-table-shaping/first-example-collection.png)
+    ![Visor de recopilación que muestra tres registros de la primera colección de ejemplo que incluye una nueva columna Revenue](media/function-table-shaping/first-example-collection.png)

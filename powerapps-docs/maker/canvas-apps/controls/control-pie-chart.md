@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c2a48941629e98f58ea6d6ac7894e6a244b5e69
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7a7c69be8fea874a6d911fa26909a7b3ece0bce5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548096"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986402"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Control de gráficos circulares en PowerApps
 Control que muestra valores relativos comparados entre ellos.
@@ -30,30 +29,30 @@ Agregue un control de **gráfico circular** si desea que aparezcan datos relativ
 Este control es un control agrupado que contiene tres controles: un control **[Etiqueta](control-text-box.md)** para el título, el gráfico y un control **Leyenda**.
 
 ## <a name="chart-key-properties"></a>Propiedades principales del gráfico
-**[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
+**[Elementos](properties-core.md)** : origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
 **ShowLabels**: indica si un gráfico circular muestra el valor asociado con cada una de sus partes.
 
 ## <a name="additional-chart-properties"></a>Propiedades adicionales del gráfico
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[Color](properties-color-border.md)**: el color del texto en un control.
+**[Color](properties-color-border.md)** : el color del texto en un control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
 **Seccionar**: distancia entre las partes de un gráfico circular.
 
-**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
 **ItemBorderColor**: color del borde que rodea cada parte de un gráfico circular.
 
@@ -63,28 +62,28 @@ Este control es un control agrupado que contiene tres controles: un control **[E
 
 **LabelPosition**: ubicación de las etiquetas en un gráfico circular con respecto a sus partes.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
-**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
+**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue2015; {Product:"Europa"; Revenue:27000}; {Product:"Ganymede"; Revenue:26300}; {Product:"Callisto"; Revenue:29200})**
+   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    

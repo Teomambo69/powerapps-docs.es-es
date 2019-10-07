@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 869c0fcff6e519281e527c832305d74f2e7fd78f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551247"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985217"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>Funciones de Date y Time en PowerApps
 Convierte los componentes de fecha y hora en un valor de fecha y hora.
@@ -33,18 +32,18 @@ La función **Date** convierte los valores individuales de año, mes y día en u
 
 La función **Time** convierte los valores individuales de hora, minuto y segundo en un valor de fecha y hora.  El resultado no tiene ninguna fecha asociada a él.
 
-Consulte las funciones **[DateValue](function-datevalue-timevalue.md)**, **[TimeValue](function-datevalue-timevalue.md)** y **[DateTimeValue](function-datevalue-timevalue.md)** para obtener información acerca de cómo convertir una cadena en un valor.  
+Consulte las funciones **[DateValue](function-datevalue-timevalue.md)** , **[TimeValue](function-datevalue-timevalue.md)** y **[DateTimeValue](function-datevalue-timevalue.md)** para obtener información acerca de cómo convertir una cadena en un valor.  
 
 Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.md) para más información.
 
 ## <a name="syntax"></a>Sintaxis
-**Date**( *Year*; *Month*; *Day* )
+**Date**( *Year*, *Month*, *Day* )
 
 * *Year*: requerido.  Los números mayores a 1899 se interpretan como un absoluto (1980 se interpreta como 1980). Los números comprendidos entre 0 y 1899 se interpretan en relación con 1900. (Por ejemplo, 80 se interpreta como 1980).
 * *Month*: requerido.  Un número comprendido entre 1 y 12.
 * *Day*: requerido. Un número comprendido entre 1 y 31.
 
-**Time**( *Hour*; *Minute*; *Second* )
+**Time**( *Hour*, *Minute*, *Second* )
 
 * *Hour*: requerido.  Un número comprendido entre 0 (12:00 a. m.) y 23 (11:00 p. m).
 * *Minute*: requerido. Un número comprendido entre 0 y 59.
@@ -54,10 +53,10 @@ Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.m
 ### <a name="date"></a>Fecha
 Si un usuario escribe **1979** en un control de entrada de texto denominado **HireYear**, **3** en otro control denominado **HireMonth** y **17** en un tercer control denominado **HireDay**, esta función debería devolver **3/17/1979**:
 
-**Date(Value(HireYear.Text); Value(HireMonth.Text); Value(HireDay.Text))**
+**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Time
 Si un usuario escribe **14** en un control de entrada de texto denominado **BirthHour**, **50** en otro control denominado **BirthMinute** y **24** en un tercer control denominado **BirthSecond**, esta función debería devolver **02:50:24 p**.
 
-**Text(Time(Value(BirthHour.Text); Value(BirthMinute.Text); Value(BirthSecond.Text)); "hh:mm:ss a/p")**
+**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

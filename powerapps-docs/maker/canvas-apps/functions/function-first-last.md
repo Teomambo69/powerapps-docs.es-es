@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551109"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992725"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Funciones First, FirstN, Last y LastN en PowerApps
 Devuelve el primer o último conjunto de [registros](../working-with-tables.md#records) de una tabla.
@@ -42,7 +41,7 @@ La función **LastN** devuelve el último conjunto de registros de una tabla; el
 
 * *Table*: requerido. La tabla sobre la cual se opera.
 
-**FirstN**( *Table* [; *NumberOfRecords* ] )<br>**LastN**( *Table* [; *NumberOfRecords* ] )
+**FirstN**( *Table* [, *NumberOfRecords* ] )<br>**LastN**( *Table* [, *NumberOfRecords* ] )
 
 * *Table*: requerido. La tabla sobre la cual se opera.
 * *NumberOfRecords*: opcional.  Número de registros que se va a devolver. Si no especifica este argumento, la función devolverá un registro.
@@ -52,5 +51,5 @@ Esta fórmula devuelve el primer registro de una tabla denominada **Empleados**:
 **First(Employees)**
 
 Esta fórmula devuelve los últimos 15 registros de una tabla denominada **Empleados**:<br>
-**LastN(Employees; 15)**
+**LastN(Employees, 15)**
 

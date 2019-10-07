@@ -1,25 +1,24 @@
 ---
 title: Mostrar texto, fechas y horas en una aplicación de lienzo | Microsoft Docs
 description: En PowerApps, muestre texto, fechas y horas en una aplicación de lienzo.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 2e0f365a5b41655188a3adfe02b721e6a5ef9bcd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318344"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988714"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>Mostrar texto, fechas y horas en PowerApps
 En PowerApps, agregue fechas y horas a una aplicación de lienzo y asígneles formato para mostrar el nivel de detalle adecuado o para reflejar la configuración regional. Calcule el tiempo entre dos fechas o calcule una fecha que esté cierto tiempo antes o después de una fecha que especifique. Convierta fechas en y desde valores independientes para días, meses y años, y convierta horas en y desde valores independientes para horas, minutos y segundos.
@@ -33,7 +32,7 @@ Por ejemplo, agregue datos de usuarios sobre operaciones con acciones o reunione
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="show-text-in-a-label-control"></a>Mostrar texto en un control Etiqueta
-Muestre texto en un control **[Etiqueta](controls/control-text-box.md)** estableciendo el valor de su propiedad **[Texto](controls/properties-core.md)**. Establezca esta propiedad escribiendo directamente en el control o escribiendo una expresión en la barra de fórmulas.
+Muestre texto en un control **[Etiqueta](controls/control-text-box.md)** estableciendo el valor de su propiedad **[Texto](controls/properties-core.md)** . Establezca esta propiedad escribiendo directamente en el control o escribiendo una expresión en la barra de fórmulas.
 
 * Si escribe directamente en el control, este muestra exactamente lo que escribe.
 * Si escribe una expresión en la barra de fórmulas, el control muestra el resultado de la expresión.
@@ -47,7 +46,7 @@ A continuación, se ofrecen algunos ejemplos.
    
     Si su equipo tiene establecida la configuración regional "fr-fr", la fecha y hora actuales aparecen en este formato:  <br>*dd/mm/aaaa hh:mm AM/PM*
 2. Establezca la propiedad **[Text](controls/properties-core.md)** de **ShowText** en esta fórmula:
-   <br>**DateDiff(Today(); DateValue("01/01/2020"))**
+   <br>**DateDiff(Today(), DateValue("01/01/2020"))**
    
     ![Número de días entre hoy y el 1 de enero de 2020](./media/show-text-dates-times/date-diff-text.png)
    
@@ -61,7 +60,7 @@ A continuación, se ofrecen algunos ejemplos.
 4. En **BirthDate**, escriba el mes y el día de su nacimiento (por ejemplo, **05/18**).
 
 5. Establezca la propiedad **[Text](controls/properties-core.md)** de **ShowText** en esta fórmula:
-   <br>**DateDiff(Today(); DateValue(BirthDate.Text))**
+   <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
    
     ![Número de días entre hoy y su cumpleaños](./media/show-text-dates-times/birth-diff.png)
    
@@ -89,7 +88,7 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    
     **ShowDate** muestra la misma información que ha escrito, pero se ha convertido de texto a un valor y se le ha aplicado un formato distinto. Por ejemplo, el año aparece como cuatro dígitos en lugar de simplemente dos.
 3. Cambie la propiedad **[Text](controls/properties-core.md)** de **ShowDate** a esta fórmula:
-   <br>**DateTimeValue(ArrivalDateTime.Text; "fr")**
+   <br>**DateTimeValue(ArrivalDateTime.Text, "fr")**
    
     ![Mostrar un valor de fecha y hora en formato francés](./media/show-text-dates-times/date-value-fr.png)
    
@@ -102,7 +101,7 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    > 
    > 
 4. Para utilizar uno de los varios formatos integrados, cambie la propiedad **[Text](controls/properties-core.md)** de **ShowDate** a esta fórmula:
-   <br>**Text(DateTimeValue(ArrivalDateTime.Text); DateTimeFormat.LongDateTime)**
+   <br>**Text(DateTimeValue(ArrivalDateTime.Text), DateTimeFormat.LongDateTime)**
    
     ![Mostrar un valor de fecha y hora en formato francés](./media/show-text-dates-times/long-date-time.png)
    
@@ -113,7 +112,7 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    > 
    > 
 5. Para usar un formato personalizado, cambie la propiedad **[Text](controls/properties-core.md)** de **ShowDate** a esta fórmula:
-   <br>**Text(DateTimeValue(ArrivalDateTime.Text); "mm/dd/yyyy hh:mm:ss.fff AM/PM")**
+   <br>**Text(DateTimeValue(ArrivalDateTime.Text), "mm/dd/yyyy hh:mm:ss.fff AM/PM")**
    
     ![Mostrar un valor de fecha y hora en formato francés](./media/show-text-dates-times/format-milliseconds.png)
    
@@ -133,15 +132,15 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
    
     **FormatDate** muestra la fecha que ha escrito, pero el año aparece con cuatro dígitos.
 3. Establezca la propiedad **[Text](controls/properties-core.md)** de **FormatDate** en esta fórmula:
-   <br>**DateValue(ArrivalDate.Text; "fr")**
+   <br>**DateValue(ArrivalDate.Text, "fr")**
    
     **FormatDate** muestra el día antes del mes, tal y como esperaría un usuario francés.
 4. Para usar uno de los varios formatos integrados, establezca la propiedad **[Text](controls/properties-core.md)** de **FormatDate** en esta fórmula:
-   <br>**Text(DateValue(ArrivalDate.Text); DateTimeFormat.LongDate)**
+   <br>**Text(DateValue(ArrivalDate.Text), DateTimeFormat.LongDate)**
    
     **FormatDate** muestra el día de la semana, el mes, el día y el año.
 5. Para usar un formato personalizado, establezca la propiedad **[Text](controls/properties-core.md)** de **FormatDate** en esta fórmula:
-   <br>**Text(DateValue(ArrivalDate.Text); "yy/mm/dd")**
+   <br>**Text(DateValue(ArrivalDate.Text), "yy/mm/dd")**
    
     **FormatDate** muestra la fecha en el formato especificado.
 
@@ -152,11 +151,11 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
 2. Agregue un control **[Etiqueta](controls/control-text-box.md)** denominado **ShowTime**.
 
 3. Para usar uno de los varios formatos integrados, establezca la propiedad **[Text](controls/properties-core.md)** de **ShowTime** en esta fórmula:
-   <br>**Text(DateTimeValue(ArrivalTime.Text); DateTimeFormat.LongTime)**
+   <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
    
     **ShowTime** muestra la hora que ha especificado, incluidos los segundos.
 4. Para usar un formato personalizado, establezca la propiedad **[Text](controls/properties-core.md)** de **ShowTime** en esta fórmula:
-   <br>**Text(DateTimeValue(ArrivalTime.Text); "hh:mm:ss.fff AM/PM")**
+   <br>**Text(DateTimeValue(ArrivalTime.Text), "hh:mm:ss.fff AM/PM")**
    
     **ShowTime** muestra la hora que ha especificado, incluidos los segundos y los milisegundos.
    
@@ -172,12 +171,12 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
 2. Escriba **4/1/2015** en **Start** y **1/1/2016** en **End**.
 
 3. Agregue un control **[Cuadro de texto](controls/control-text-box.md)** denominado **DateDiff** y establezca su propiedad **[Text](controls/properties-core.md)** en esta fórmula:
-   <br>**DateDiff(DateValue(Start.Text); DateValue(End.Text))**
+   <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
     ![Comparar dos fechas](./media/show-text-dates-times/date-diff.png)
    
     **DateDiff** muestra **275**, que es el número de días entre el 1 de abril de 2015 y el 1 de enero de 2016.
-4. Establezca la propiedad **[Text](controls/properties-core.md)** de **DateDiff** en esta fórmula:  <br>**DateDiff(DateValue(Start.Text); DateValue(End.Text); Months)**
+4. Establezca la propiedad **[Text](controls/properties-core.md)** de **DateDiff** en esta fórmula:  <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text), Months)**
    
     **DateDiff** muestra **9**, que es el número de meses entre el 1 de abril de 2015 y el 1 de enero de 2016. Reemplace **Months** con **Quarters** o **Years** para mostrar el tiempo en trimestres o años.
 
@@ -186,19 +185,19 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
 1. Agregue un control **[Text input](controls/control-text-input.md)** denominado **Start** y escriba **5/10/1985** en él.
 
 2. Agregue un control **[Etiqueta](controls/control-text-box.md)** denominado **DateAdd** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
-   <br>**DateAdd(DateValue(Start.Text); 3)**
+   <br>**DateAdd(DateValue(Start.Text), 3)**
    
     ![Agregar tres días](./media/show-text-dates-times/date-add.png)
    
     **DateAdd** muestra **5/13/1985**, que es tres días después de la fecha establecida en **Start**.
 3. Establezca la propiedad **[Text](controls/properties-core.md)** de **DateAdd** en esta fórmula:
-   <br>**DateAdd(DateValue(Start.Text); -3)**
+   <br>**DateAdd(DateValue(Start.Text), -3)**
    
     ![Restar tres días](./media/show-text-dates-times/date-subtract.png)
    
     **DateAdd** muestra **5/7/1985**, que es tres días antes de la fecha establecida en **Start**.
 4. Cambie la propiedad **[Text](controls/properties-core.md)** de **DateAdd** a esta fórmula:
-   <br>**DateAdd(DateValue(Start.Text); 3; Months)**
+   <br>**DateAdd(DateValue(Start.Text), 3, Months)**
    
     ![Agregar tres meses](./media/show-text-dates-times/date-add-months.png)
    
@@ -209,20 +208,20 @@ Convierta fechas y horas de cadenas de texto a valores, a los que puede dar form
 1. Agregue tres controles **[Drop down](controls/control-drop-down.md)** denominados **Year**, **Month** y **Day**.
 
 2. Establezca la propiedad **[Items](controls/properties-core.md)** de **Year** en esta fórmula:
-   <br>**Table({Year:"2014"}; {Year:"2015"}; {Year:"2016"})**
+   <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
 
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de **Month** en esta fórmula:
-   <br>**Table({Month:"1"}; {Month:"2"}; {Month:"3"}; {Month:"4"}; {Month:"5"}; {Month:"6"}; {Month:"7"}; {Month:"8"}; {Month:"9"}; {Month:"10"}; {Month:"11"}; {Month:"12"})**
+   <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
 
 4. Establezca la propiedad **[Items](controls/properties-core.md)** de **Day** en esta fórmula:
-   <br>**Table({Day:"1"}; {Day:"2"}; {Day:"3"}; {Day:"4"}; {Day:"5"}; {Day:"6"}; {Day:"7"}; {Day:"8"}; {Day:"9"}; {Day:"10"}; {Day:"11"}; {Day:"12"}; {Day:"13"}; {Day:"14"}; {Day:"15"}; {Day:"16"}; {Day:"17"}; {Day:"18"}; {Day:"19"}; {Day:"20"}; {Day:"21"}; {Day:"22"}; {Day:"23"}; {Day:"24"}; {Day:"25"}; {Day:"26"}; {Day:"27"}; {Day:"28"}; {Day:"29"}; {Day:"30"}; {Day:"31"})**
+   <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
 
 5. Agregue un control **[Label](controls/control-text-box.md)** y establezca su propiedad **[Text](controls/properties-core.md)** en esta fórmula:
-   <br>**Text(Date(Value(Year.Selected.Value); Value(Month.Selected.Value); Value(Day.Selected.Value)); DateTimeFormat.LongDate)**
+   <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
-    La fecha **miércoles, 1 de enero de 2014** aparece de forma predeterminada. Seleccione valores diferentes en los controles **[Lista desplegable](controls/control-drop-down.md)** para cambiar la fecha en el control **[Etiqueta](controls/control-text-box.md)**.
+    La fecha **miércoles, 1 de enero de 2014** aparece de forma predeterminada. Seleccione valores diferentes en los controles **[Lista desplegable](controls/control-drop-down.md)** para cambiar la fecha en el control **[Etiqueta](controls/control-text-box.md)** .
 
-Es posible que deba convertir datos que no esperaba. Si agrega controles **[Text input](controls/control-text-input.md)** en lugar de controles **[Drop down](controls/control-drop-down.md)**, puede que un usuario escriba una fecha incorrecta, como 45 de mayo. La función **[Date](functions/function-date-time.md)** se encarga de los datos inusuales de las siguientes formas:
+Es posible que deba convertir datos que no esperaba. Si agrega controles **[Text input](controls/control-text-input.md)** en lugar de controles **[Drop down](controls/control-drop-down.md)** , puede que un usuario escriba una fecha incorrecta, como 45 de mayo. La función **[Date](functions/function-date-time.md)** se encarga de los datos inusuales de las siguientes formas:
 
 * Si un valor de año está comprendido entre 0 y 1899 (ambos incluidos), la función agrega ese valor a 1900 para calcular el año.
 * Si un valor de año está comprendido entre 1900 y 9999 (ambos incluidos), la función usa ese valor como el año.
@@ -237,17 +236,17 @@ Es posible que deba convertir datos que no esperaba. Si agrega controles **[Text
 1. Agregue dos listas **Drop-down** denominadas **Hour** y **Minute**.
 
 2. Establezca la propiedad **[Items](controls/properties-core.md)** de **Hour** en esta fórmula:
-   <br>**Table({Hour:"9"}; {Hour:"10"}; {Hour:"11"}; {Hour:"12"}; {Hour:"13"}; {Hour:"14"}; {Hour:"15"}; {Hour:"16"}; {Hour:"17"})**
+   <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
 
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de **Minute** en esta fórmula:
-   <br>**Table({Minute:"0"}; {Minute:"15"}; {Minute:"30"}; {Minute:"45"})**
+   <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
 
 4. Agregue un control **[Etiqueta](controls/control-text-box.md)** y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:  
-   <br>**Text(Time(Value(Hour.Selected.Value); Value(Minute.Selected.Value); 0); DateTimeFormat.ShortTime)**
+   <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
 
 5. Seleccione **15** en **Hour** y **45** en **Minute**.
    
     El control **[Etiqueta](controls/control-text-box.md)** muestra **3:45 PM**.
    
-    Puede agregar entradas a **Hour** y **Minute** para que los usuarios puedan seleccionar entre un intervalo más amplio de horas y un número más preciso de minutos. También puede agregar un tercer control **[Drop down](controls/control-drop-down.md)** para que los usuarios puedan especificar segundos. Si agrega una tercera lista, establezca la propiedad **[Texto](controls/properties-core.md)** del control **[Etiqueta](controls/control-text-box.md)** en la siguiente expresión:<br>**Text(Time(Value(Hour.Selected.Value); Value(Minute.Selected.Value); Value(Second.Selected.Value)); DateTimeFormat.LongTime)**
+    Puede agregar entradas a **Hour** y **Minute** para que los usuarios puedan seleccionar entre un intervalo más amplio de horas y un número más preciso de minutos. También puede agregar un tercer control **[Drop down](controls/control-drop-down.md)** para que los usuarios puedan especificar segundos. Si agrega una tercera lista, establezca la propiedad **[Texto](controls/properties-core.md)** del control **[Etiqueta](controls/control-text-box.md)** en la siguiente expresión:<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
 

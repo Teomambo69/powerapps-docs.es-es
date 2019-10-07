@@ -1,188 +1,188 @@
 ---
 title: Introducción a la conexión de SharePoint | Microsoft Docs
-description: Consulte las funciones disponibles, respuestas y ejemplos para SharePoint.
+description: Vea las funciones, respuestas y ejemplos disponibles para SharePoint.
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549361"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993976"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
-Conectarse a un sitio de SharePoint para generar automáticamente una aplicación desde una lista personalizada, o cree una conexión antes de agregar datos a una aplicación existente o crear una aplicación desde cero.
+Conéctese a un sitio de SharePoint para generar una aplicación automáticamente a partir de una lista personalizada o cree una conexión antes de agregar datos a una aplicación existente o de crear una aplicación desde cero.
 
-Función de donde residen sus datos, puede tardar uno o ambos de estos enfoques:
+Dependiendo de dónde residan los datos, puede realizar uno de estos métodos o ambos:
 
-- Mostrar datos de una lista personalizada en un sitio de SharePoint Online o un sitio local.
-- Mostrar imágenes y reproducir archivos de audio o vídeos en una biblioteca (SharePoint Online solo).
+- Mostrar datos de una lista personalizada en un sitio de SharePoint Online o en un sitio local.
+- Mostrar imágenes y reproducir archivos de vídeo o audio en una biblioteca (solo SharePoint Online).
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 
-Si desea administrar los datos en una lista personalizada, puede PowerApps [generar automáticamente una aplicación de tres pantallas de](../app-from-sharepoint.md). Los usuarios pueden examinar la lista en la primera pantalla, mostrar detalles de un elemento en la segunda pantalla y crear o actualizar los elementos de la tercera pantalla.
+Si desea administrar los datos en una lista personalizada, PowerApps puede [generar una aplicación de tres pantallas automáticamente](../app-from-sharepoint.md). Los usuarios pueden examinar la lista en la primera pantalla, mostrar los detalles de un elemento en la segunda pantalla y crear o actualizar elementos en la tercera pantalla.
 
 > [!NOTE]
-> Si la lista de SharePoint contiene un **elección**, **búsqueda**, o **persona o grupo** columna, vea [mostrar datos en una galería](connection-sharepoint-online.md#show-list-columns-in-a-gallery) más adelante en este tema.
+> Si la lista de SharePoint contiene una columna de **elección**, **búsqueda**, o **persona o grupo** , vea [Mostrar datos en una galería](connection-sharepoint-online.md#show-list-columns-in-a-gallery) más adelante en este tema.
 
 ## <a name="create-a-connection"></a>Crear una conexión
 
-1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos** > **conexiones** en el panel de navegación izquierdo de la barra y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
+1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Data** > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
 
     > [!div class="mx-imgBorder"]
-    > ![Seleccione datos > conexiones en la barra de navegación izquierdo y, a continuación, seleccione nueva conexión cerca de la esquina superior izquierda.](./media/connection-sharepoint-online/new-connection.png)
+    > ![Select datos > conexiones en la barra de navegación izquierda y, a continuación, seleccione nueva conexión cerca de la esquina superior izquierda. ](./media/connection-sharepoint-online/new-connection.png)
 
-1. En el cuadro de búsqueda cerca de la esquina superior derecha, escriba o pegue **SharePoint**y, a continuación, seleccione **SharePoint**.
+1. En el cuadro de búsqueda situado cerca de la esquina superior derecha, escriba o pegue **SharePoint**y, a continuación, seleccione **SharePoint**.
 
     > [!div class="mx-imgBorder"]
-    > ![En el cuadro de búsqueda cerca de la esquina superior derecha, escriba o pegue SharePoint y, a continuación, seleccione SharePoint.](./media/connection-sharepoint-online/select-sharepoint.png)
+    > @no__t 0In el cuadro de búsqueda situado cerca de la esquina superior derecha, escriba o pegue SharePoint y, a continuación, seleccione SharePoint. ](./media/connection-sharepoint-online/select-sharepoint.png)
 
-1. Realice uno de estos conjuntos de pasos:
+1. Realice cualquiera de estos conjuntos de pasos:
 
-    - Para conectarse a SharePoint Online, seleccione **conectar directamente (servicios en la nube)**, seleccione **crear**y, a continuación, proporcione las credenciales (si se le solicita).
-
-        > [!div class="mx-imgBorder"]
-        > ![Para conectarse a SharePoint Online, seleccione Conectar directamente (servicios en la nube)](./media/connection-sharepoint-online/select-online.png)
-
-        Se crea la conexión, y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
-
-    - Para conectarse a un sitio local, seleccione **conectarse mediante puerta de enlace de datos local**.
+    - Para conectarse a SharePoint Online, seleccione **conectar directamente (Cloud Services)** , seleccione **crear**y, a continuación, proporcione las credenciales (si se le solicita).
 
         > [!div class="mx-imgBorder"]
-        > ![Para conectarse al sitio local, seleccione ** Conectar mediante puerta de enlace de datos local)](./media/connection-sharepoint-online/select-onprem.png)
+        > ![To Conéctese a SharePoint Online, seleccione conectar directamente (Cloud Services) ](./media/connection-sharepoint-online/select-online.png)
+
+        Se crea la conexión y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
+
+    - Para conectarse a un sitio local, seleccione **conectar con la puerta de enlace de datos local**.
+
+        > [!div class="mx-imgBorder"]
+        > @no__t 0To conectar con el sitio local, seleccione * * conectar con la puerta de enlace de datos local ](./media/connection-sharepoint-online/select-onprem.png)
 
         Especifique **Windows** como tipo de autenticación y, después, especifique sus credenciales. (Si las credenciales incluyen un nombre de dominio, especifíquelo como *dominio\alias*).
 
         > [!div class="mx-imgBorder"]
-        > ![Especificar credenciales](./media/connection-sharepoint-online/specify-creds.png)
+        > credenciales de @no__t 0Specify @ no__t-1
 
-        En **elegir una puerta de enlace**, seleccione la puerta de enlace que desea usar y, a continuación, seleccione **crear**.
+        En **elegir una puerta de enlace**, seleccione la puerta de enlace que desea usar y, después, seleccione **crear**.
 
         > [!NOTE]
-        > Si no tiene una puerta de enlace de datos local instalada, [instálela](../gateway-reference.md)y, a continuación, seleccione el icono para actualizar la lista de puertas de enlace.
+        > Si no tiene una puerta de enlace de datos local instalada, [Instale una](../gateway-reference.md)y, después, seleccione el icono para actualizar la lista de puertas de enlace.
 
         > [!div class="mx-imgBorder"]
-        > ![Elegir puerta de enlace](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![Choose puerta de enlace @ no__t-1
 
-        Se crea la conexión, y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
+        Se crea la conexión y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
 
 ## <a name="add-data-to-an-existing-app"></a>Agregar datos a una aplicación existente
 
-1. En PowerApps Studio, abra la aplicación que desea actualizar, seleccione la **vista** pestaña y, a continuación, seleccione **orígenes de datos**.
+1. En PowerApps Studio, abra la aplicación que quiere actualizar, seleccione la pestaña **vista** y, a continuación, seleccione **orígenes de datos**.
 
     > [!div class="mx-imgBorder"]
-    > ![En la pestaña de vista y, a continuación, seleccione los orígenes de datos](./media/connection-sharepoint-online/view-data-sources.png)
+    > @no__t la pestaña vista y, a continuación, seleccione orígenes de datos @ no__t-1.
 
-1. En el **datos** panel, seleccione **agregar origen de datos** > **SharePoint**.
+1. En el panel **datos** , seleccione **Agregar origen de datos** > **SharePoint**.
 
-1. En **conectar a un sitio de SharePoint**, seleccione una entrada en el **sitios recientes** lista (o escriba o pegue la dirección URL del sitio que desea usar) y, a continuación, seleccione **Connect**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Seleccione el sitio](./media/connection-sharepoint-online/select-sp-site.png)
-
-1. En **elegir una lista**, active la casilla de verificación **documentos** o una o varias listas que desea usar y, a continuación, seleccione **Connect**:
+1. En **conectar a un sitio de SharePoint**, seleccione una entrada en la lista **sitios recientes** (o escriba o pegue la dirección URL del sitio que desea usar) y, a continuación, seleccione **conectar**.
 
     > [!div class="mx-imgBorder"]
-    > ![En elegir una lista, seleccione la casilla de verificación para los documentos o una o varias listas que desea usar y, a continuación, seleccione Conectar](./media/connection-sharepoint-online/select-sp-tables.png)
+    > ![Select sitio @ no__t-1
 
-    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hacia abajo y, a continuación, escriba el nombre de la lista en el cuadro que contiene **escriba el nombre de tabla personalizada**.
+1. En **elegir una lista**, active la casilla de los **documentos** o una o más listas que desee usar y, a continuación, seleccione **conectar**:
 
     > [!div class="mx-imgBorder"]
-    > ![Escriba el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizada.](./media/connection-sharepoint-online/custom-list.png)
+    > ![Under elija una lista, active la casilla para los documentos o una o más listas que desee usar y, después, seleccione conectar @ no__t-1.
 
-    El origen de datos o los orígenes se agregan a la aplicación.
+    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hasta la parte inferior y, a continuación, escriba el nombre de la lista en el cuadro que contiene el nombre de la **tabla personalizada**.
 
-## <a name="build-your-own-app-from-scratch"></a>Crear su propia aplicación desde cero
+    > [!div class="mx-imgBorder"]
+    > @no__t 0Type el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizado. ](./media/connection-sharepoint-online/custom-list.png)
 
-Aplicar los conceptos de [crear una aplicación desde cero](../get-started-create-from-blank.md) para SharePoint en lugar de Excel.
+    El origen o los orígenes de datos se agregan a la aplicación.
 
-## <a name="show-list-columns-in-a-gallery"></a>Mostrar columnas de la lista en una galería
+## <a name="build-your-own-app-from-scratch"></a>Cree su propia aplicación desde cero
 
-Si su lista personalizada contiene cualquiera de estos tipos de columnas, mostrar esos datos en un **galería** control mediante el uso de la barra de fórmulas para establecer el **texto** propiedad de uno o varios **etiqueta** controles de dicha galería:
+Aplique los conceptos de [creación de una aplicación desde cero](../get-started-create-from-blank.md) a SharePoint en lugar de Excel.
 
-- Para un **elección** o **búsqueda** columna, especificar **ThisItem.** _ColumnName_**. Valor** para mostrar los datos de esa columna.
+## <a name="show-list-columns-in-a-gallery"></a>Mostrar columnas de lista en una galería
+
+Si la lista personalizada contiene cualquiera de estos tipos de columnas, muestre los datos en un control **Galería** mediante la barra de fórmulas para establecer la propiedad **texto** de uno o varios controles **etiqueta** de la Galería:
+
+- Para una columna de **elección** o de **búsqueda** , especifique **ThisItem.** _ColumnName_ **. Valor** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Location.Value** si tiene una columna **Opción** denominada **Ubicación** y especifique **ThisItem.PostalCode.Value** si tiene una columna **Búsqueda** denominada **CódigoPostal**.
 
-- Para un **persona o grupo** columna, especificar **ThisItem.** _ColumnName_**. DisplayName** para mostrar el nombre del usuario o el grupo.
+- Para una columna de **persona o grupo** , especifique **ThisItem.** _ColumnName_ **. DisplayName** para mostrar el nombre para mostrar del usuario o el grupo.
 
     Por ejemplo, especifique **ThisItem.Manager.DisplayName** para mostrar los nombres de una columna **Persona o grupo** denominada **Administrador**.
 
-    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.** _ColumnName_**.** (incluido el punto final).
+    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.** _ColumnName_ **.** (incluido el punto final).
 
     > [!NOTE]
-    > Para un **CreatedBy** columna, especificar **Thisitem.autor.DisplayName** para mostrar los nombres de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
+    > En el caso de una columna **CreatedBy** , especifique **ThisItem. Author. DisplayName** para mostrar los nombres para mostrar de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
 
-- Para un **Managed Metadata** columna, especificar **ThisItem.** _ColumnName_**. Etiqueta** para mostrar los datos de esa columna.
+- Para una columna de **metadatos administrados** , especifique **ThisItem.** _ColumnName_ **. Etiqueta** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Languages.Label** si tiene una columna **Metadatos administrados** denominada **Idiomas**.
 
-## <a name="show-data-from-a-library"></a>Mostrar datos desde una biblioteca
+## <a name="show-data-from-a-library"></a>Mostrar datos de una biblioteca
 
-Si tiene varias imágenes en una biblioteca de SharePoint, puede agregar un **desplegable** para que los usuarios pueden especificar qué imagen para mostrar el control a la aplicación. También puede aplicar los mismos principios a otros controles, tales como **galería** controles y otros tipos de datos, como vídeos.
+Si tiene varias imágenes en una biblioteca de SharePoint, puede Agregar un control de **lista desplegable** a la aplicación para que los usuarios puedan especificar la imagen que se va a mostrar. También puede aplicar los mismos principios a otros controles, como los controles de la **Galería** y otros tipos de datos, como los vídeos.
 
-1. Si no lo ha hecho ya, [crear una conexión](#create-a-connection)y, a continuación, [agregar datos a una aplicación existente](#add-data-to-an-existing-app).
+1. Si aún no lo ha hecho, [cree una conexión](#create-a-connection)y, a continuación, [agregue los datos a una aplicación existente](#add-data-to-an-existing-app).
 
-1. Agregar un **desplegable** controlar y asígnele el nombre **ImageList**.
+1. Agregue un control **lista** desplegable y asígnele el nombre **ImageList**.
 
-1. Establecer el **elementos** propiedad de **ImageList** a **documentos**.
+1. Establezca la propiedad **Items** de **ImageList** en **Documents**.
 
-1. En el **propiedades** ficha del panel derecho, abrirlo el **valor** lista y, a continuación, seleccione **nombre**.
+1. En la pestaña **propiedades** del panel derecho, abra la lista de **valores** y, a continuación, seleccione **nombre**.
 
     Los nombres de archivo de las imágenes de la biblioteca aparecen en **ImageList**.
 
     > [!div class="mx-imgBorder"]
-    > ![Lista de imágenes](./media/connection-sharepoint-online/dropdown-items.png)
+    > ![List de imágenes @ no__t-1
 
-1. Agregar un **imagen** y establezca su **imagen** propiedad en esta expresión:
+1. Agregue un control **imagen** y establezca su propiedad **imagen** en esta expresión:
 
     `ImageList.Selected.'Link to item'`
 
-1. Presione F5 y, a continuación, seleccione un valor distinto en **ImageList**.
+1. Presione F5 y, a continuación, seleccione un valor diferente en **ImageList**.
 
     Aparece la imagen que ha especificado.
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen de ejemplo](./media/connection-sharepoint-online/golden-honey.png)
+    > ![Sample Image @ no__t-1
 
-También puede [descargar una aplicación de ejemplo](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) que muestra un enfoque más complejo para mostrar datos desde una biblioteca de SharePoint.
+Puede [descargar una aplicación de ejemplo](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) que muestra un enfoque más complejo para mostrar los datos de una biblioteca de SharePoint.
 
-1. Después de descargar la aplicación, abra [PowerApps Studio](https://us.create.powerapps.com/studio/#), seleccione **abrir** en el panel de navegación izquierdo de la barra y, a continuación, seleccione **examinar**.
-1. En el **abrir** cuadro de diálogo, busque y abra el archivo que descargó y, a continuación, agregar una biblioteca de SharePoint como un origen de datos siguiendo los primeros dos procedimientos de este tema.
+1. Después de descargar la aplicación, Abra [PowerApps Studio](https://us.create.powerapps.com/studio/#), seleccione **abrir** en la barra de navegación izquierda y, a continuación, seleccione **examinar**.
+1. En el cuadro de diálogo **abrir** , busque y abra el archivo que ha descargado y, a continuación, agregue una biblioteca de SharePoint como origen de datos siguiendo los dos primeros procedimientos de este tema.
 
 > [!NOTE]
-> De forma predeterminada, esta aplicación muestra [advertencias de delegación](../delegation-overview.md), pero puede omitir si la biblioteca contiene menos de 500 elementos.
+> De forma predeterminada, esta aplicación muestra las [advertencias de delegación](../delegation-overview.md), pero puede omitirlas si la biblioteca contiene menos de 500 elementos.
 
-En esta aplicación de una sola pantalla, la lista en la esquina inferior izquierda muestra todos los archivos de la biblioteca.
+En esta aplicación de una pantalla, la lista de la esquina inferior izquierda muestra todos los archivos de la biblioteca.
 
-- Puede buscar un archivo, escriba o pegue uno o más caracteres en el cuadro de búsqueda en la parte superior.
-- Si la biblioteca contiene carpetas, puede filtrar la lista de archivos seleccionando un icono de filtro en la lista de carpetas solo en la barra de título.
+- Puede buscar un archivo escribiendo o pegando uno o más caracteres en el cuadro de búsqueda cerca de la parte superior.
+- Si la biblioteca contiene carpetas, puede filtrar la lista de archivos; para ello, seleccione un icono de filtro en la lista de carpetas situada justo debajo de la barra de título.
 
-Cuando encuentre el archivo que desea, seleccione para mostrarla en el **vídeo**, **imagen**, o **Audio** control a lo largo del lado derecho.
+Cuando encuentre el archivo que desea, selecciónelo para mostrarlo en el control de **vídeo**, **imagen**o **audio** a lo largo del lado derecho.
 
 > [!div class="mx-imgBorder"]
-> ![Imagen de ejemplo](./media/connection-sharepoint-online/library-app.png)
+> ![Sample Image @ no__t-1
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-### <a name="lists"></a>Listas
+### <a name="lists"></a>Coge
 
-PowerApps puede leer los nombres de columna que contienen espacios, pero los espacios se sustituyen con el código de escape hexadecimal **"\_x0020\_"**. Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+PowerApps puede leer los nombres de columna que contienen espacios, pero los espacios se sustituyen por el código de escape hexadecimal **"@no__t 1x0020 @ no__t-2"** . Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
-No todos los tipos de columnas se admiten y no todos los tipos de columnas admiten todos los tipos de tarjetas.
+No se admiten todos los tipos de columnas y no todos los tipos de columnas admiten todos los tipos de tarjetas.
 
 | Tipo de columna | Soporte técnico | Tarjetas predeterminadas |
 | --- | --- | --- |
@@ -204,12 +204,12 @@ No todos los tipos de columnas se admiten y no todos los tipos de columnas admit
 | Metadatos administrados |Sí (solo lectura) | |
 | Clasificación |No | |
 
-### <a name="libraries"></a>Bibliotecas
+### <a name="libraries"></a>Libre
 
-- No se puede cargar archivos desde PowerApps a una biblioteca.
-- No se puede mostrar archivos PDF desde una biblioteca en un control de Visor de PDF.
-- PowerApps Mobile no es compatible con la **descargar** función.
-- Si los usuarios ejecutarán la aplicación en PowerApps Mobile o la aplicación de Windows 10, use el **iniciar** función para mostrar el contenido de la biblioteca en una galería.
+- No se pueden cargar archivos desde PowerApps a una biblioteca.
+- No se pueden mostrar archivos PDF de una biblioteca en un control de PDF Viewer.
+- PowerApps Mobile no es compatible con la función de **descarga** .
+- Si los usuarios van a ejecutar la aplicación en PowerApps Mobile o en la aplicación de Windows 10, use la función **Launch** para mostrar el contenido de la biblioteca en una galería.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

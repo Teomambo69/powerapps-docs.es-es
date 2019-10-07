@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1c8ba704a01c989da990fd1b2b17f7b5def5541
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bb98295a5ecac6bf12af965e4ae6c668b1900af5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564725"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986839"
 ---
 # <a name="column-control-in-powerapps"></a>Control Columna en PowerApps
 Proporciona la representación de un solo campo en un control [**Tabla de datos**](control-data-table.md).

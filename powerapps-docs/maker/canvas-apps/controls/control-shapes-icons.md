@@ -6,25 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54ab2ba2186f68fcb68b9aa59729933af5d04652
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473906"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986331"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
 
-## <a name="description"></a>DESCRIPCIÓN
+## <a name="description"></a>Descripción
 Estos controles incluyen flechas, formas geométricas, iconos de acción y símbolos para los que puede configurar propiedades como el relleno, el tamaño y la ubicación. También puede configurar su propiedad **[alseleccionar](properties-core.md)** para que la aplicación responda si el usuario selecciona el control.
 
 ## <a name="key-properties-icons-and-shapes"></a>Propiedades de clave (iconos y formas)
@@ -69,7 +68,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Navegar**( *NombrePantalla*; *TransiciónDePantalla* )](../functions/function-navigate.md)
+[**Navegar**( *NombrePantalla*, *TransiciónDePantalla* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -81,7 +80,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Presione F5 y, a continuación, seleccione el control **forma** .
 
@@ -89,7 +88,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 

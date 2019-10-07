@@ -6,26 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563257"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992687"
 ---
 # <a name="guid-function-in-powerapps"></a>Función GUID en PowerApps
 Convierta una cadena de GUID ([identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier)) en un valor GUID o cree un valor GUID.
 
 ## <a name="description"></a>Descripción
-Use la función **GUID** para convertir una cadena que contiene la representación hexadecimal de un GUID a un valor GUID que se puede pasar a una base de datos. Los valores de GUID se usan como claves por sistemas de bases de datos, como Common Data Service y SQL Server.
+Use la función **GUID** para convertir una cadena que contiene la representación hexadecimal de un GUID a un valor GUID que se puede pasar a una base de datos. Los sistemas de base de datos, como Common Data Service y SQL Server, usan los valores GUID como claves.
 
 La cadena que se pase puede contener letras mayúsculas o minúsculas, pero debe tener 32 dígitos hexadecimales en cualquiera de estos formatos:
 
@@ -36,7 +35,7 @@ Si no se especifica un argumento, esta función crea un GUID.
 
 Para convertir un valor GUID en una cadena, simplemente úselo en un contexto de cadena. El valor GUID se convertirá en una cadena de representación hexadecimal con letras minúsculas y guiones. 
 
-Cuando se genera un nuevo GUID, esta función utiliza números pseudoaleatorios para crear una versión 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID. Al convertir una cadena en un GUID, esta función admite cualquier versión GUID mediante la aceptación de cualquier cadena de 32 dígitos hexadecimales.
+Al generar un nuevo GUID, esta función usa números pseudoaleatorios para crear una versión 4 del GUID de [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) . Al convertir una cadena en un GUID, esta función admite cualquier versión de GUID aceptando cualquier cadena de 32 dígitos hexadecimales.
 
 ## <a name="volatile-functions"></a>Funciones volátiles
 **GUID** es una función volátil cuando se usa sin argumento. Cada vez que se evalúa, la función devuelve un valor diferente.  
@@ -70,7 +69,7 @@ También puede especificar la cadena de GUID sin guiones. Esta fórmula devuelve
 
 Se utiliza en contexto para establecer el campo **Estado** de un nuevo registro de la base de datos en un valor establecido:
 
-* **Revisión (productos; de forma predeterminada (productos); {estado: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Patch (productos, valores predeterminados (productos), {estado: GUID ("F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4")})**
 
 Probablemente no quiera mostrar los GUID a los usuarios, pero los GUID pueden ayudarle a depurar la aplicación. Para mostrar el valor del campo **Estado** en el registro que creó en el ejemplo anterior, establezca la propiedad **Text** de un control **Label** en esta fórmula:
 
@@ -82,11 +81,11 @@ El control **Label** mostrará **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 1. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** de un control de **[botón](../controls/control-button.md)** en esta fórmula:
 
-    **ClearCollect( NewGUIDs; ForAll( [ 1; 2; 3; 4; 5 ]; GUID() ) )**
+    **ClearCollect( NewGUIDs, ForAll( [ 1, 2, 3, 4, 5 ], GUID() ) )**
 
     Con esta fórmula se crea una tabla de una sola columna que se usa para iterar cinco veces, lo que produce cinco GUID.
 
-1. Agregue un control **[Data Table](../controls/control-data-table.md)**, establezca su propiedad **Items** en **NewGUIDs** y muestre el campo **Valor**.
+1. Agregue un control **[Data Table](../controls/control-data-table.md)** , establezca su propiedad **Items** en **NewGUIDs** y muestre el campo **Valor**.
 
 1. Haga clic en el botón o púlselo para seleccionarlo, manteniendo la tecla Alt presionada.
 
@@ -100,4 +99,4 @@ El control **Label** mostrará **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 Para generar un GUID único en lugar de una tabla, utilice esta fórmula:
 
-**Set( NewGUID; GUID() )**
+**Set( NewGUID, GUID() )**

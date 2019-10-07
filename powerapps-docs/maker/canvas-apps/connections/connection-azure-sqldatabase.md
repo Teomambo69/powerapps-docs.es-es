@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f001e3da66605db1eb96d74078a3f8b1fdf518f2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ca79c60e90c330f21af6ed8a12b98c3667535bb8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61529249"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987419"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45ffd324ff5409a49f1ec8c4c8ea3529c1cf5c5f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 307950cf7e0aa67d7bf31daf29b3f8a3bb11d465
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563192"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984580"
 ---
 # <a name="language-function-in-powerapps"></a>Función Language en PowerApps
 Devuelve la etiqueta de idioma del usuario actual.
@@ -40,7 +39,7 @@ Las *etiquetas de idioma* pueden presentar uno de estos tres formatos:
 
 PowerApps usa el formato de [etiqueta de idioma IETF BCP-47](https://tools.ietf.org/html/bcp47).  
 
-Para ver la lista de etiquetas de idioma compatibles, escriba **Value( "1"; )** en la barra de fórmulas o en la vista avanzada, y desplácese por la lista de configuraciones regionales sugeridas para el segundo argumento.  
+Para ver la lista de etiquetas de idioma compatibles, escriba **Value( "1", )** en la barra de fórmulas o en la vista avanzada, y desplácese por la lista de configuraciones regionales sugeridas para el segundo argumento.  
 
 Las funciones **[Text](function-text.md)** y **[Value](function-value.md)** también usan etiquetas de idioma.  Use estas funciones para traducir desde y hacia cadenas de texto teniendo en cuenta el contexto global.  Cuando pasar una etiqueta de idioma a estas funciones y la región no suponga una diferencia, puede usar solo la porción de idioma de la etiqueta.
 
@@ -77,9 +76,9 @@ Un enfoque sencillo para la localización consiste en crear una hoja de cálculo
 5. Pulse o haga clic en **Agregar datos estáticos a la aplicación**, pulse o haga clic en el archivo de Excel que ha guardado y, luego, en **Abrir**.
 6. Seleccione la tabla que ha creado y, después, pulse o haga clic en **Conectar**.
 
-En la aplicación, en los casos en los que antes habría usado el texto **"Hello"**, use la siguiente fórmula en su lugar:
+En la aplicación, en los casos en los que antes habría usado el texto **"Hello"** , use la siguiente fórmula en su lugar:
 
-* **LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Esta fórmula buscará el valor adecuado de **LocalizedText** para el idioma del usuario y, si no lo encuentra, recurrirá a la versión predeterminada *blank*. 
 
@@ -91,9 +90,9 @@ Puede traducir texto a petición con un servicio de traducción, como el servici
 1. En PowerApps, en el panel derecho, pulse o haga clic en la pestaña **Orígenes de datos** y, después, pulse o haga clic en **Agregar origen de datos**.
 2. Pulse o haga clic en **Microsoft Translator**.
 
-En la aplicación, en los casos en los que antes habría usado el texto **"Hello"**, use la siguiente fórmula en su lugar:
+En la aplicación, en los casos en los que antes habría usado el texto **"Hello"** , use la siguiente fórmula en su lugar:
 
-* **MicrosoftTranslator.Translate( "Hello"; Language() )**
+* **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 El servicio Microsoft Translator usa las mismas etiquetas de idioma que devuelve la función **Language**.
 

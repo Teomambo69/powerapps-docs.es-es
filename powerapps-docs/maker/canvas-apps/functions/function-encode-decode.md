@@ -6,27 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551063"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985011"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Funciones EncodeUrl y PlainText en PowerApps
 Codifica y descodifica las cadenas.
 
 ## <a name="description"></a>Descripción
-El **EncodeUrl** función codifica una cadena de dirección URL, reemplazando algunos caracteres no alfanuméricos por % y un número hexadecimal.  
+La función **EncodeUrl** codifica una cadena de dirección URL, reemplazando algunos caracteres no alfanuméricos por% y un número hexadecimal.  
 
-El **PlainText** función quita las etiquetas HTML y XML, convierte determinadas etiquetas como las siguientes en un símbolo adecuado:
+La función **Plaintext** quita las etiquetas HTML y XML, convirtiendo algunas etiquetas como estas en un símbolo adecuado:
 
 * **&amp;nbsp;**
 * **&amp;quot;**
@@ -45,8 +45,12 @@ El valor devuelto de estas funciones es la cadena codificada o descodificada. Es
 ## <a name="examples"></a>Ejemplos
 Si muestra una fuente RSS en una galería de texto y, después, establece la propiedad **[Text](../controls/properties-core.md)** de una etiqueta de esa galería en **ThisItem.description**, la etiqueta podría mostrar el código HTML o XML sin formato, como en este ejemplo:
 
+```html
     <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+```
 
-Si establece la propiedad **[Text](../controls/properties-core.md)** de la etiqueta en **PlainText(ThisItem.description)**, el texto aparece como en este ejemplo:
+Si establece la propiedad **[Text](../controls/properties-core.md)** de la etiqueta en **PlainText(ThisItem.description)** , el texto aparece como en este ejemplo:
 
+```
     We have done an unusually "deep" globalization and localization.
+```

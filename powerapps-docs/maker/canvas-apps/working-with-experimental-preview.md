@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/20/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50785382404496c7409eab1b545fdc0b2d930d44
-ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
+ms.openlocfilehash: d6e5572a70ce747fb77b69fe52147d8f068934fb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65048438"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988075"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>Descripción de las características experimentales y de versión preliminar de PowerApps
 
@@ -33,8 +33,8 @@ Para ayudar a equilibrar las mejoras y el impacto en las aplicaciones existentes
 Las características pasan por tres fases en el proceso para convertirse en partes oficiales del producto:
 
 1. **Experimental**:  Esta característica es un trabajo en curso. No empiece a depender de ella aún, podría sufrir cambios significativos.
-1. **Vista previa**:  Esta característica está casi listo y es estable. Ahora se comienzan a migrar aplicaciones existentes a ella.
-1. **Enviado**:  Se hace esta característica. Todas las aplicaciones tienen esta característica habilitada y no se puede desactivar esta función.
+1. **Vista previa**:  Esta característica está casi terminada y es estable. Ahora se comienzan a migrar aplicaciones existentes a ella.
+1. **Enviado**:  Esta característica se realiza. Todas las aplicaciones tienen esta característica habilitada y no se puede desactivar esta función.
 
 En cada fase, el número de personas que usan la característica aumenta, lo que nos ayuda a validar si la característica es lo que necesita y que no estamos incluyendo efectos secundarios no deseados.
 
@@ -52,7 +52,7 @@ Esta tabla puede ayudarle a decidir cuándo debe empezar a usarlas:
 
 Hacia el final de la versión preliminar, se puede habilitar la característica para todas las aplicaciones al mismo tiempo y se marca para su **validación final**.  Este cambio le ofrece a la mayoría de los usuarios una última oportunidad para probar la característica mientras siguen pudiendo desactivarla. Los comentarios oportunos son fundamentales durante este período, ya que, en la fase siguiente, se distribuye por completo la característica y no se puede desactivar.
 
-En la transición final **Shipped**, podemos quitar el conmutador de versión preliminar en aplicaciones para que la característica ya está activada, activación eficazmente la característica de forma permanente. Este cambio se aplicará a la mayoría de las aplicaciones porque la característica se habrán en forma predeterminada antes de ese momento. Para las aplicaciones donde la característica está desactivada, el modificador de vista previa seguirán disponible activar, con la característica de prueba y desactivar en la misma sesión de PowerApps Studio. Sin embargo, si guarda la aplicación cuando el modificador está activado, no estará disponible cuando se vuelve a cargar la aplicación, por lo que no se puede desactivar la característica nuevo. En ese momento, puede [restaurar la aplicación a una versión anterior](restore-an-app.md) para devolver la aplicación a un estado antes de que se ha activado la característica.
+En la transición final a **enviado**, podemos quitar el modificador de vista previa en las aplicaciones para las que la característica ya está activada, con lo que la característica se activa de manera permanente. Este cambio se aplicará a la mayoría de las aplicaciones porque la característica estará activada de forma predeterminada antes de ese punto. En el caso de las aplicaciones en las que la característica está desactivada, el conmutador de vista previa seguirá estando disponible para que pueda activarla, probarla con la característica y desactivarla dentro de la misma sesión de PowerApps Studio. Sin embargo, si guarda la aplicación cuando el conmutador está activado, no estará disponible cuando se vuelva a cargar la aplicación, por lo que no podrá volver a activar la característica. En ese momento, puede [restaurar la aplicación a una versión anterior](restore-an-app.md) para devolver la aplicación a un estado anterior a la habilitación de la característica.
 
 ## <a name="documentation"></a>Documentación
 

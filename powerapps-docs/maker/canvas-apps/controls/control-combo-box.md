@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: dbbff1f85ccc104a1a0f88c6b9670c45c0528592
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670870"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993479"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Control de cuadro combinado en PowerApps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -34,9 +34,9 @@ Cuando se buscan elementos que se van a seleccionar, en todos los elementos pued
 Para usar **cuadro combinado** como selector de personas, elija la plantilla **Persona** desde la configuración de diseño del panel Data (Datos) y configure las propiedades de datos relacionadas que se mostrará para la persona que aparece a continuación.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Items](properties-core.md)**: el origen de datos del que se puede elegir.
+**[Items](properties-core.md)** : el origen de datos del que se puede elegir.
 
-**DefaultSelectedItems** : los elementos seleccionados inicialmente antes de que el usuario interactúa con el control.
+**DefaultSelectedItems** : los elementos seleccionados iniciales antes de que el usuario interactúe con el control.
 
 **SelectedItems**: lista de los elementos seleccionados resultante de la interacción con el usuario.
 
@@ -47,23 +47,23 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 **SearchFields**: campos de datos del origen de datos en los que se busca cuando el usuario escribe texto.  Para buscar en varios campos, establezca ComboBox1.SearchFields = ["MyFirstColumn", "MySecondColumn"]
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
 **DisplayFields**: lista de campos que se muestran en cada elemento que devuelve la búsqueda.  Lo más fácil es configurarlo mediante el panel Datos de la pestaña de la opción Propiedades.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
 **InputTextPlaceholder**: texto informativo que se muestra a los usuarios finales cuando no hay elementos seleccionados.
 
@@ -71,32 +71,32 @@ Para usar **cuadro combinado** como selector de personas, elija la plantilla **P
 
 **OnNavigate**: cómo responde la aplicación cuando el usuario hace clic en un elemento.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
-1. En el **insertar** pestaña, abra el **controles** menú y, a continuación, seleccione **cuadro combinado**.  
+1. En la pestaña **Insertar** , abra el menú **controles** y, a continuación, seleccione **cuadro combinado**.  
 
-1. En el **propiedades** ficha del panel derecho, abrirlo el **seleccionar un origen de datos** lista (junto a **elementos**) y, a continuación, agregar o seleccione un origen de datos.
+1. En la pestaña **propiedades** del panel derecho, abra la lista **seleccionar un origen de datos** (junto a **elementos**) y, a continuación, agregue o seleccione un origen de datos.
 
-1. En la misma ficha, seleccione **editar** (junto a **campos**).
+1. En la misma pestaña, seleccione **Editar** (junto a **campos**).
 
-1. En el **datos** panel, abra el **texto primario** lista y, a continuación, seleccione la columna que desea mostrar en el **cuadro combinado** control.
+1. En el panel **datos** , abra la lista **texto principal** y, a continuación, seleccione la columna que desea mostrar en el control de **cuadro combinado** .
 
-1. Mientras mantiene presionada la tecla Alt, seleccione la flecha abajo para abrir el **cuadro combinado** control.
+1. Mientras mantiene presionada la tecla Alt, seleccione la flecha hacia abajo para abrir el control de **cuadro combinado** .
 
     El control muestra los datos de la columna especificada en el origen de datos que especificó.
     
-1. (opcional) Para mostrar el primer registro de forma predeterminada, establezca el **DefaultSelectedItems** propiedad en esta expresión, reemplazando *DataSource* con el nombre del origen de datos:
+1. opta Para mostrar el primer registro de forma predeterminada, establezca la propiedad **DefaultSelectedItems** en esta expresión, reemplazando *DataSource* por el nombre del origen de datos:
 
     `First(DataSource)`
 

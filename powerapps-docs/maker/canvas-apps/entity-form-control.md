@@ -6,25 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/11/2017
 ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a1bffa509f382c2f706c2163d89c5788f8607ec7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548027"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993046"
 ---
 # <a name="use-the-entity-form-control"></a>Usar el control Formulario de la entidad
 Cree aplicaciones más rápidamente mediante el control **Formulario de entidad** para agregar formularios enriquecidos para una entidad de Common Data Service.
 
-Para obtener una introducción a la **formulario de la entidad** de control, consulte este blog: [Nuevo control de formulario de entidad (característica experimental) para Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
+Para obtener una introducción al control formulario de la **entidad** , consulte esta entrada de blog: [Nuevo control de formulario de entidad (característica experimental) para Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
 
 > [!IMPORTANT]
 > Tenga en cuenta la naturaleza experimental del control **Formulario de la entidad**, tal como se describe en la entrada de blog, y tenga cuidado al usarlo en aplicaciones de producción, al menos por ahora.
@@ -46,15 +45,15 @@ Estas son las propiedades fundamentales de un control **Formulario de la entidad
 **Item**: especifica el registro en el origen de datos que el control **Formulario de la entidad** debería mostrar. Esta propiedad se usa solo cuando **Patrón** está establecida en **FormPattern.Details**.
 
 **Seleccionado**: obtiene el registro que está seleccionado actualmente.  
-Ejemplo: Si el **formulario de la entidad** control muestra una lista de registros de pedido de ventas, el **seleccionados** propiedad le proporcionará el registro que está seleccionado actualmente. También puede acceder a un campo dentro de un registro. (Por ejemplo, especifique el valor del campo **Account** del registro seleccionado como **Selected.Account**).
+Ejemplo: Si el control formulario de la **entidad** muestra una lista de registros de pedido de ventas, la propiedad **seleccionada** le proporcionará el registro que está seleccionado actualmente. También puede acceder a un campo dentro de un registro. (Por ejemplo, especifique el valor del campo **Account** del registro seleccionado como **Selected.Account**).
 
 **CamposSeleccionables**: especifica qué campos deben aparecer como vínculos. Establezca el valor de esta propiedad con esta sintaxis:  
-**{NombreDeCampo1: true; NombreDeCampo2: true}**  
-Ejemplo: Si desea que el **SalesOrderId** y **cuenta** los campos que aparecerán como vínculos en un formulario, establezca la **Camposseleccionables** propiedad de ese formulario en este valor:  
-**{SalesOrderId : true; Account : true}**
+**{NombreDeCampo1: true, NombreDeCampo2: true}**  
+Ejemplo: Si desea que los campos **SalesOrderId** y **cuenta** aparezcan como vínculos en un formulario, establezca la propiedad **camposseleccionables** de ese formulario en este valor:  
+**{SalesOrderId : true, Account : true}**
 
 **CampoSeleccionado**: determina en qué campo se hizo clic o se pulsó. Esto solo se aplica a los campos especificados como **CamposSeleccionables**.  
-Ejemplo: Si establece la **Camposseleccionables** propiedad **{SalesOrderId: true; la cuenta: true}** y el usuario pulsa o hace clic en el **cuenta** campo,  **SelectedField.Account** se establece en true.
+Ejemplo: Si establece la propiedad **camposseleccionables** en **{SalesOrderId: true, Account: true}** y el usuario hace clic o pulsa en el campo de **cuenta** , **SelectedField. account** se establece en true.
 
 **OnFieldSelect**: cómo responde una aplicación cuando el usuario hace clic o pulsa en un campo. Esto solo se aplica a los campos especificados como **CamposSeleccionables**.
 
@@ -97,7 +96,7 @@ Los cinco procedimientos siguientes proporcionan un ejemplo único, de principio
 2. Cambie el nombre de la primera pantalla a **SalesOrderListScreen**.
    
     ![](media/entity-form-control/entityform-tutorial-01-02.png)
-3. En la pestaña **Insertar**, haga clic o pulse en **Formularios** y en **Formulario de la entidad (versión preliminar)**.  
+3. En la pestaña **Insertar**, haga clic o pulse en **Formularios** y en **Formulario de la entidad (versión preliminar)** .  
    
     Se agrega un control **Formulario de la entidad** a la pantalla.  
    
@@ -191,7 +190,7 @@ La propiedad **CamposSeleccionables** de **SalesOrderListForm** especifica **Sal
 
 Esto se configura automáticamente cuando se utiliza el panel de personalización de formularios para hacer que el campo **SalesOrderId** vaya a **SalesOrderDetailsScreen**. Por lo tanto, los valores del campo **SalesOrderId** aparecen como vínculos.
 
-El **OnFieldSelect** propiedad de la **SalesOrderListForm** está establecido en un [ **si** ](functions/function-if.md) función, que determina si el usuario hace clic o pulsa el **Id. de pedido de ventas** campo: **SalesOrderListForm.SelectedField.SalesOrderId = true**.  
+La propiedad **OnFieldSelect** de **SalesOrderListForm** se establece en una función [**If**](functions/function-if.md) , que determina si el usuario hace clic o pulsa en el campo **sales Order ID** : **SalesOrderListForm. SelectedField. SalesOrderId = true**.  
 
 Si la función se evalúa como true, **SalesOrderDetailsScreen** se abre con la variable de contexto denominada **NavigationContext** que se ha usado antes.  
 

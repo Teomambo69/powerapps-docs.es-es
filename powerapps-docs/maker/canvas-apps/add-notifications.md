@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/08/2017
 ms.author: kaagar
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a32dd9f483682ba462aae1d3bd9d257d3204b8f5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670444"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987375"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -81,15 +80,15 @@ Puede enviar una notificación push de una aplicación a otra o a la misma aplic
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>Carga de una página y contexto concretos cuando un usuario pulsa la notificación
 ### <a name="pass-parameters"></a>Paso de parámetros
-Su notificación push puede pasar parámetros concretos a la aplicación. Por ejemplo, para leer el valor de **CaseID**, use *Param("CaseID")*. Para identificar rápidamente dicho parámetro, agregue un control **Etiqueta** a la aplicación. Establezca la propiedad **Texto** de dicho control en **Param("CaseID")**. Si el usuario abre la aplicación desde la lista **Todas las aplicaciones**, el valor estará vacío. Si el usuario abre la aplicación desde otra ubicación del dispositivo, el valor se rellena con el valor de **CaseID**.
+Su notificación push puede pasar parámetros concretos a la aplicación. Por ejemplo, para leer el valor de **CaseID**, use *Param("CaseID")* . Para identificar rápidamente dicho parámetro, agregue un control **Etiqueta** a la aplicación. Establezca la propiedad **Texto** de dicho control en **Param("CaseID")** . Si el usuario abre la aplicación desde la lista **Todas las aplicaciones**, el valor estará vacío. Si el usuario abre la aplicación desde otra ubicación del dispositivo, el valor se rellena con el valor de **CaseID**.
 
 ### <a name="set-the-start-page"></a>Establecimiento de la página de inicio
 Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del caso** en cuanto se abra la aplicación:
 
 1. Agregue un control **Timer** (Temporizador) y establezca su propiedad **OnTimerEnd** en esta fórmula:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (opcional) Oculte el control **Timer** (Temporizador) estableciendo la propiedad **Visible** en **false**.
-3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()**.
+3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()** .
 
 > [!TIP]
 > Se recomienda crear una primera página única en la aplicación para la notificación:
@@ -115,10 +114,10 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 ### <a name="sample-formulas"></a>Fórmulas de ejemplo
 Enviar una notificación básica.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,12 +125,12 @@ PowerAppsNotification.SendPushNotification(
 
 Enviar una notificación que abra una aplicación y distribuya parámetros concretos.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )

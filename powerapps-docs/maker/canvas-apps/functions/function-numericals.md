@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544151"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984420"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.
@@ -31,7 +30,7 @@ La función **Exp** muestra *e* elevado a la potencia de su argumento.  El núme
 
 La función **Ln** muestra el argumento natural (*e* base) de su argumento.
 
-La función **Power** muestra un número elevado a una potencia.  Es equivalente a usar el operador [**^**](operators.md).
+La función **Power** muestra un número elevado a una potencia.  Es equivalente a usar el operador [ **^** ](operators.md).
 
 La función **Sqrt** muestra el número que, cuando se multiplica por sí mismo, es igual a su argumento.
 
@@ -44,7 +43,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 
 * *Number*: requerido. El número sobre el cual operar.
 
-**Power**( *Base*; *Exponente* )
+**Power**( *Base*, *Exponente* )
 
 * *Base*: requerido. Número base que se va a elevar.
 * *Exponent*: requerido. El exponente al que se eleva el número base.
@@ -61,7 +60,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 | **Abs( -55 )** |Muestra el número sin el signo negativo. |55 |
 | **Exp( 2 )** |Muestra *e* elevado a la potencia de 2, o *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Muestra el algoritmo natural (*e* base) del número 100. |4,605170... |
-| **Power( 5; 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
+| **Power( 5, 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Muestra el número que, cuando se multiplica por sí mismo, da como resultado 9. |3 |
 
 ### <a name="single-column-table"></a>Tabla de una sola columna

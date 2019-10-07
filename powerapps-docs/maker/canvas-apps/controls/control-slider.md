@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 198275ef72129b17cbf73a5f4eb47fd342de3b24
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4c0d108f6aac4df7d0e10a316ba51f6f35ee3338
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548763"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993289"
 ---
 # <a name="slider-control-in-powerapps"></a>Control deslizante en PowerApps
 Un control con el que el usuario puede especificar un valor arrastrando un controlador.
@@ -28,30 +27,30 @@ Un control con el que el usuario puede especificar un valor arrastrando un contr
 El usuario puede indicar un valor comprendido entre un valor mínimo y un máximo que puede especificar arrastrando el controlador de un control deslizante de derecha a izquierda o de arriba a abajo, dependiendo de la dirección que desee.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
+**[Predeterminado](properties-core.md)** : el valor inicial de un control antes de que lo cambie el usuario.
 
 **Max**: el valor máximo para el que el usuario puede establecer un control deslizante o una clasificación.
 
 **Max**: el valor mínimo para el que el usuario puede establecer un control deslizante.
 
-**[Valor](properties-core.md)**: el valor de un control de entrada.
+**[Valor](properties-core.md)** : el valor de un control de entrada.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
 **RellenoDeControladorActivo**: el color del controlador de un control deslizante cuando el usuario cambia el valor.
 
@@ -61,17 +60,17 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 
 **HandleSize**: el diámetro del controlador.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
 **Layout**: indica si el usuario se desplaza por la galería o ajusta un control deslizante de arriba a abajo (**Vertical**) o de izquierda a derecha (**Horizontal**).
 
-**[AlCambiar](properties-core.md)**: indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
+**[AlCambiar](properties-core.md)** : indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
 **RellenoDeRaíl**: color de fondo del rectángulo en un control Alternar cuando su valor es **false** o color de la línea a la derecha del identificador en un control deslizante.
 
@@ -79,32 +78,32 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 
 **ReadOnly**: indica si un usuario puede cambiar el valor de un control deslizante o el control de clasificación.
 
-**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
+**[Reset](properties-core.md)** : indica si un control vuelve a su valor predeterminado.
 
 **MostrarValor**: indica si el valor de un control deslizante o una clasificación aparece cuando el usuario cambia ese valor o mantiene el puntero sobre el control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
 **RellenoDeValor**: color de fondo del rectángulo en un control Alternar cuando su valor es **true** o color de la línea a la izquierda del identificador en un control deslizante.
 
 **RellenoValorAlMantenerPuntero**: al mantener el puntero del mouse sobre un control Alternar o Control deslizante, color de fondo del rectángulo del primero cuando su valor es **true** o color de la línea a la izquierda del identificador del segundo.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Sum**( *Value1*; *Value2* )](../functions/function-aggregates.md)
+[**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un botón y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
+   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -113,8 +112,8 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 3. Agregue un control deslizante, muévalo debajo del botón y llámelo **MinPopulation**.
 4. Establezca la propiedad **Max** del control deslizante en **5000000** y la propiedad **Min** en **1000000**.
 5. Agregue una galería de texto en orientación vertical, muévala debajo del control deslizante y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:<br>
-   **Filter(CityPopulations; Population > MinPopulation)**
-6. En el primer elemento de la galería, establezca la propiedad **[Texto](properties-core.md)** de la etiqueta superior en **ThisItem.City** y establezca la propiedad **[Texto](properties-core.md)** de la etiqueta inferior en esta fórmula:<br> **Text(ThisItem.Population; "##,###")**
+   **Filter(CityPopulations, Population > MinPopulation)**
+6. En el primer elemento de la galería, establezca la propiedad **[Texto](properties-core.md)** de la etiqueta superior en **ThisItem.City** y establezca la propiedad **[Texto](properties-core.md)** de la etiqueta inferior en esta fórmula:<br> **Text(ThisItem.Population, "##,###")**
 7. Presione F5 y, a continuación, ajuste **MinPopulation** para que se muestren solo aquellas ciudades que tengan una población mayor que el valor especificado.
 8. Presione Esc para volver al área de trabajo predeterminada.
 

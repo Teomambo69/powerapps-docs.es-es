@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: jasongre
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319375"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993814"
 ---
 # <a name="data-table-control-in-powerapps"></a>Control Tabla de datos en PowerApps
 Muestra un conjunto de datos en formato tabular.
@@ -84,8 +83,8 @@ PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En est
 * [**Y**](properties-size-location.md): la distancia entre el borde superior del control **Tabla de datos** y el borde superior de su contenedor principal (o el borde superior de la pantalla si no hay contenedor principal).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-* [**Filtro (Origen de datos, Fórmula)**](../functions/function-filter-lookup.md)(*Origen de datos*, *Fórmula*)
-* [**Búsqueda (Origen de datos; SearchString [BuscarCadena]; Columna)**](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
+* [**Filtro (Origen de datos, Fórmula)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *Fórmula*)
+* [**Búsqueda (Origen de datos, SearchString [BuscarCadena], Columna)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="basic-usage"></a>Uso básico
@@ -122,7 +121,7 @@ PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En est
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Cambio de estilo del encabezado para el control Tabla de datos
 1. Con el control **Tabla de datos** seleccionado, pulse o haga clic en la pestaña **Avanzado** en el panel derecho.
-2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62;96;170;1)**.
+2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62,96,170,1)** .
 3. Pulse o haga clic en el campo para la propiedad **HeadingColor** (ColorDeEncabezado) y cambie el valor a **White** (Blanco).
 4. Pulse o haga clic en el campo para la propiedad **HeadingSize** (TamañoDeEncabezado) y cambie el valor a **14**.
    

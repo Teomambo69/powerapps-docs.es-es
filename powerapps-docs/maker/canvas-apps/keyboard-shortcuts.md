@@ -1,124 +1,124 @@
 ---
-title: Métodos abreviados de teclado para las aplicaciones de lienzo | Microsoft Docs
-description: Métodos abreviados de teclado para las aplicaciones de lienzo
-author: AFTOwen
+title: Métodos abreviados de teclado para aplicaciones de Canvas | Microsoft Docs
+description: Métodos abreviados de teclado para aplicaciones de Canvas
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c528ff033515a1e124330c0880c78e14f1014cec
-ms.sourcegitcommit: 963d32bf17f1b596fbd3053567fd2d3a3a34b199
+ms.openlocfilehash: 103eb63e8b56de0ddc6a359fcc8924f5276eee52
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66251487"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989865"
 ---
-# <a name="keyboard-shortcuts-for-canvas-apps"></a>Métodos abreviados de teclado para las aplicaciones de lienzo
+# <a name="keyboard-shortcuts-for-canvas-apps"></a>Métodos abreviados de teclado para aplicaciones de Canvas
 
 > [!NOTE]
-> Métodos abreviados pueden variar en función de distribución del teclado.
+> Los métodos abreviados pueden variar en función de la distribución del teclado.
 
-## <a name="file"></a>Archivo
+## <a name="file"></a>Filesystem
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| CTRL+o (o Alt + F) | Abra un archivo. |
-| CTRL + MAYÚS + S (o Alt + P) | Guarde la aplicación con un nombre diferente. |
-| Ctrl+S | Guarde la aplicación con el mismo nombre o por primera vez. |
-| F12 | Descargue el archivo de aplicación (msapp). |
-| Alt+F | Abra el **archivo** menú. |
+| Ctrl + O (o Alt + F) | Abra un archivo. |
+| Ctrl + Mayús + S (o Alt + P) | Guarde la aplicación con un nombre diferente. |
+| Ctrl + S | Guarde la aplicación con el mismo nombre o por primera vez. |
+| F12 | Descargue el archivo de aplicación (. msapp). |
+| Alt + F | Abra el menú **archivo** . |
 
-## <a name="ribbon"></a>cinta de opciones
+## <a name="ribbon"></a>Cable
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| ENTRAR | Ejecute el comando seleccionado. |
-| Tabulador | Moverse entre los comandos en la pestaña seleccionada y, a continuación, en la ficha siguiente. |
-| Ctrl+F6 | Navegue hasta el siguiente punto de referencia. |
-| CTRL + MAYÚS + F6 | Navegue hasta el punto de referencia anterior. |
-| ALT + I | Seleccione el **insertar** ficha. |
+| ENTRAR | Ejecutar el comando seleccionado. |
+| Tabulador | Desplazarse entre los comandos de la pestaña seleccionada y, a continuación, a la pestaña siguiente. |
+| Ctrl + F6 | Navegue hasta el punto de referencia siguiente. |
+| Ctrl + Mayús + F6 | Navegue hasta el punto de referencia anterior. |
+| Alt + I | Seleccione la pestaña **Insertar** . |
 
-## <a name="editing"></a>Edición
+## <a name="editing"></a>Modifica
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| Ctrl+A | Seleccionar todo. |
-| Ctrl+X | Cortar. |
-| Ctrl+C | Copiar. |
-| Ctrl+V | Pegar. |
-| Ctrl+Z | Comando de deshacer. |
-| Ctrl+Y | Repetir el comando. |
-| Ctrl+M | Agregar una pantalla. |
-| CTRL += o CTRL+MAYÚS += | Acercar. |
-| CTRL +- o CTRL+MAYÚS +- | Alejar. |
-| Ctrl+0 | Ajustar canvas a la página. |
-| MAYÚS + ENTRAR | Un salto de línea en una fórmula. |
+| Ctrl + A | Seleccionar todo. |
+| Ctrl + X | Límite. |
+| Ctrl + C | Copiar. |
+| Ctrl + V | Copiar. |
+| Ctrl + Z | Comando Deshacer. |
+| Ctrl + Y | Comando Redo. |
+| Ctrl + M | Agregar una pantalla. |
+| Ctrl + = o Ctrl + Mayús + = | Acercar. |
+| Ctrl +-o Ctrl + Mayús +- | Alejar. |
+| Ctrl + 0 | Ajustar el lienzo a la página. |
+| Mayús + entrar | Dividir una línea en una fórmula. |
 
 ## <a name="preview"></a>Vista previa
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| F5 | Abra el modo de vista previa. |
-| Esc | Cierre el modo de vista previa, un cuadro de diálogo o un panel de control flotante.|
+| CTRL+F5 | Abra el modo de vista previa. |
+| Esc | Cerrar el modo de vista previa, un cuadro de diálogo o un panel flotante.|
 
 ## <a name="canvas"></a>Lienzo
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
 | Tabulador | Seleccione el control siguiente. |
-| CTRL+clic o MAYÚS+clic | Seleccionar varios objetos a la vez. |
+| Ctrl + clic o Mayús + clic | Seleccionar varios objetos a la vez. |
 | Flecha derecha | Desplazar el control seleccionado a la derecha. |
 | Flecha izquierda | Desplazar el control seleccionado a la izquierda. |
-| Flecha arriba | Empujar el control seleccionado hacia arriba. |
+| Flecha arriba | Desplazar hacia arriba el control seleccionado. |
 | Flecha abajo | Desplazar el control seleccionado hacia abajo. |
 
 ## <a name="tree-view"></a>Vista de árbol
 
 > [!NOTE]
-> Estos métodos abreviados requieren el **vista de árbol** panel que tiene el foco.
+> Estos métodos abreviados requieren que el panel de **vista de árbol** tenga el foco.
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| F2 | Cambiar el nombre de un control. |
-| Esc | Cancelar el cambio de nombre de un control. |
-| Ctrl+G | Grupo/desagrupar los controles. |
-| Ctrl+] | Traer adelante un control. |
-| Ctrl+[ | Envío de un control con versiones anteriores. |
-| CTRL + MAYÚS +] | Traer al frente. |
-| CTRL + MAYÚS +[ | Enviar al fondo. |
+| C2 | Cambiar el nombre de un control. |
+| Esc | Cancelar cambiar el nombre de un control. |
+| Ctrl + G | Agrupar/desagrupar controles. |
+| Ctrl +] | Traer un control hacia delante. |
+| Ctrl + [ | Enviar un control hacia atrás. |
+| Ctrl + Mayús +] | Traer al frente. |
+| Ctrl + Mayús + [ | Enviar al fondo. |
 
-## <a name="resize"></a>cambio de tamaño
+## <a name="resize"></a>Cambiar el tamaño
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| Mayús + flecha izquierda | Reducir el ancho. |
-| CTRL + MAYÚS + flecha izquierda | Reducir un poco el ancho. |
-| Mayús+flecha abajo | Reducir el alto. |
-| CTRL + MAYÚS + flecha abajo | Reducir el alto ligeramente. |
-| Mayús+flecha derecha | Aumente el ancho. |
-| CTRL + MAYÚS + flecha derecha | Aumentar ligeramente el ancho. |
-| Mayús + flecha arriba | Aumentar el alto. |
-| CTRL + MAYÚS + flecha arriba | Aumentar ligeramente el alto. |
+| Mayús + Flecha izquierda | Reducir ancho. |
+| Ctrl + Mayús + Flecha izquierda | Reducir ligeramente el ancho. |
+| Mayús + Flecha abajo | Reducir el alto. |
+| Ctrl + Mayús + Flecha abajo | Reduce ligeramente el alto. |
+| Mayús + Flecha derecha | Aumentar ancho. |
+| Ctrl + Mayús + Flecha derecha | Aumentar ligeramente el ancho. |
+| Mayús + Flecha arriba | Aumentar el alto. |
+| Ctrl + Mayús + Flecha arriba | Aumentar ligeramente el alto. |
 
 ## <a name="text-format"></a>Formato de texto
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| Ctrl+B  | Desplazarse por los niveles de negrita. |
-| Ctrl+I | Activar cursiva o desactivar. |
-| Ctrl+U | Agregar o quitar subrayado. |
+| CTRL + B  | Desplazarse por los niveles de negrita. |
+| Ctrl + I | Activar o desactivar cursiva. |
+| Ctrl + U | Agrega o quita el subrayado. |
 
-## <a name="other"></a>Otros
+## <a name="other"></a>Distinta
 
-| Acceso directo | Acción |
+| Contextual | Actuar |
 |--|--|
-| F1 | Abra la documentación. |
-| MAYÚS + F10 | Abra un menú contextual en, por ejemplo, **vista de árbol**. |
-| ALT o Ctrl + Mayús | Ocultar elementos de diseño para que puedan interactuar con los controles como si estuviera ejecutando la aplicación. |
+| TECLA | Abra la documentación de. |
+| Mayús + F10 | Abra un menú contextual en, por ejemplo, la **vista de árbol**. |
+| Alt o Ctrl + Mayús | Oculte los elementos de diseño para que pueda interactuar con los controles como si la aplicación estuviera en ejecución. |

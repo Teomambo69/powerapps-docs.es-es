@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/07/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316759"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993370"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
 
@@ -40,9 +40,9 @@ No se recomienda tener más de tres iconos de Power BI cargados al mismo tiempo 
 
 ## <a name="pass-a-parameter"></a>Pasar un parámetro
 
-Al pasar un único parámetro de la aplicación, puede filtrar los resultados que aparecen en un icono de Power BI. Sin embargo, se admiten solo los valores de cadena y el operador equals y el filtro podría no funcionar si el nombre de tabla o el nombre de columna contiene espacios en blanco.
+Al pasar un solo parámetro de la aplicación, puede filtrar los resultados que aparecen en un icono de Power BI. Sin embargo, solo se admiten valores de cadena y el operador Equals, y es posible que el filtro no funcione si el nombre de tabla o el nombre de columna contiene espacios.
 
-Para pasar un valor de filtro único, modifique el valor de la **TileURL** propiedad, que sigue a esta sintaxis:
+Para pasar un valor de filtro único, modifique el valor de la propiedad **TileURL** , que sigue esta sintaxis:
 
 ```
 "https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
@@ -54,7 +54,7 @@ En ese valor, anexe esta sintaxis:
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-El parámetro filtrará un valor en el conjunto de datos del informe donde se origina el icono.
+El parámetro filtrará un valor en el conjunto de DataSet del informe en el que se origina el icono.
 
 ## <a name="key-properties"></a>Propiedades principales
 

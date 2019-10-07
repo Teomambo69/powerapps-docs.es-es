@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519777"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992152"
 ---
 # <a name="notify-function-in-powerapps"></a>Función Notify en PowerApps
 Muestra un mensaje de pancarta al usuario.
@@ -46,10 +45,10 @@ PowerApps también puede enviar notificaciones de inserción mediante un mecanis
 
 **Notify** siempre devuelve *true*.
 
-Nota: Esta función se denominaba anteriormente **ShowError** cuando solo pueden mostrar mensajes de error.
+Tenga en cuenta Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message*; [ *NotificationType* ] )
+**Notify**( *Message*, [ *NotificationType* ] )
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
 * *NotificationType*: opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
@@ -72,7 +71,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo pueden
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    **Notify( "Hello, World", NotificationType.Error )**
 
 5. Haga clic o presione el botón.
 
@@ -82,7 +81,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo pueden
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Warning )**
+    **Notify( "Hello, World", NotificationType.Warning )**
 
 5. Haga clic o presione el botón.
 
@@ -92,7 +91,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo pueden
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Success )**
+    **Notify( "Hello, World", NotificationType.Success )**
 
 5. Haga clic o presione el botón.
 

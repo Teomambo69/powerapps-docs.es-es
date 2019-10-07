@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/11/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74584e5855c6c72c619b4baefc2652f9ccc68997
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520682"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984075"
 ---
 # <a name="select-function-in-powerapps"></a>Función Select en PowerApps
 Simula una acción de selección en un control, lo que provoca la evaluación de la fórmula **OnSelect**.
@@ -27,7 +26,7 @@ Simula una acción de selección en un control, lo que provoca la evaluación de
 ## <a name="description"></a>Descripción
 La función **Select** simula una acción de selección en un control como si el usuario hubiera hecho clic en el control o lo hubiera pulsado. Como resultado, la fórmula **OnSelect** se evalúa en el control de destino.
 
-Use **Select** para propagar una acción seleccionada a un control primario. Este tipo de propagación es el comportamiento predeterminado en, por ejemplo, las galerías. De forma predeterminada, la propiedad **OnSelect** de cualquier control en un control **[Galería](../controls/control-gallery.md)** se establece en **Select (primario)**. De este modo, puede establecer el valor de la propiedad **OnSelect** del propio control de la galería y que la fórmula se evaluará independientemente de dónde un usuario podría haga clic o pulsar en la galería.
+Use **Select** para propagar una acción seleccionada a un control primario. Este tipo de propagación es el comportamiento predeterminado en, por ejemplo, las galerías. De forma predeterminada, la propiedad **OnSelect** de cualquier control en un control **[Galería](../controls/control-gallery.md)** se establece en **Select (primario)** . De este modo, puede establecer el valor de la propiedad **OnSelect** del propio control de la galería y que la fórmula se evaluará independientemente de dónde un usuario podría haga clic o pulsar en la galería.
 
 Si desea que uno o varios controles de la galería realizaran diferentes acciones de la propia galería, establezca la propiedad **OnSelect** para esos controles en un valor distinto del valor predeterminado. Puede dejar los valores predeterminados para las propiedades **OnSelect** de la mayoría de los controles de la galería si desea que realicen la misma acción que la propia galería.
 
@@ -84,7 +83,7 @@ Un control no puede usar **Select** directa o indirectamente a través de otros 
 
 5. Establezca la propiedad **OnSelect** del control de imagen en esta fórmula:
 
-    **Notify( "Imagen seleccionada"; operación correcta)**
+    **Notify( "Imagen seleccionada", operación correcta)**
 
 6. Mientras mantiene presionada la tecla Alt, haga clic en los distintos elementos de la galería o púlselos.
 

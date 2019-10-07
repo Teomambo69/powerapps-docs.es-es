@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8a904db98226152a5e485184e82461634902d6b9
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473940"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983896"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>Funciones Count, CountA, CountIf y CountRows en PowerApps
 Cuenta todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md) o todos los registros que cumplen una condición.
@@ -43,7 +42,7 @@ Cada una de estas funciones devuelve un número.
 
 * *SingleColumnTable*: requerido.  Columna de registros que se van a contar.  
 
-**CountIf**( *Table*; *LogicalFormula* )
+**CountIf**( *Table*, *LogicalFormula* )
 
 * *Table*: requerido.  Tabla de registros que se van a contar.
 * *LogicalFormula*: requerido.  Fórmula que se evalúa para cada registro de la tabla.  Se cuentan los registros que devuelven el valor **true** para esta fórmula.  La fórmula puede hacer referencia a columnas de la tabla.
@@ -56,7 +55,7 @@ Cada una de estas funciones devuelve un número.
 1. Importe o cree una [colección](../working-with-data-sources.md#collections) denominada **Inventory**, como se describe en el primer subprocedimiento de [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Mostrar imágenes y texto en una galería).
 2. Agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:
    
-    **CountIf(Inventory; UnitsInStock < 30)**
+    **CountIf(Inventory, UnitsInStock < 30)**
    
     La etiqueta muestra el valor **2** porque dos productos (Ganymede y Callisto) tienen menos de 30 unidades en existencias.
 3. Agregue otra etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta fórmula:

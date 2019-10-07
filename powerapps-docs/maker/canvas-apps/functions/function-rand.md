@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/09/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abb64d57e53f292dc42cb44ef2b1c9f35bbad944
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564057"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992537"
 ---
 # <a name="rand-function-in-powerapps"></a>Función Rand en PowerApps
 Devuelve un número pseudoaleatorio.
@@ -34,7 +33,7 @@ Cuando se usa en una fórmula de flujo de datos, una función volátil solo devu
 
 Por ejemplo, un control de etiqueta con **Label1.Text = Rand()** no cambiará mientras la aplicación esté activa.  Solo se generará un nuevo valor si se cierra y se vuelve a abrir la aplicación.
 
-Si la función forma parte de una fórmula en la que haya cambiado algún elemento más, se volverá a evaluar.  Por ejemplo, si modificamos el ejemplo para incluir un control deslizante con **Label1.Text = Slider1.Value + Rand()**, se generará un nuevo número aleatorio cada vez que cambie el valor del control deslizante. Asimismo, se volverá a evaluar la propiedad de texto de la etiqueta.  Encontrará el ejemplo a continuación.
+Si la función forma parte de una fórmula en la que haya cambiado algún elemento más, se volverá a evaluar.  Por ejemplo, si modificamos el ejemplo para incluir un control deslizante con **Label1.Text = Slider1.Value + Rand()** , se generará un nuevo número aleatorio cada vez que cambie el valor del control deslizante. Asimismo, se volverá a evaluar la propiedad de texto de la etiqueta.  Encontrará el ejemplo a continuación.
 
 Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-depth.md), **Rand** se evalúa cada vez que se evalúa la fórmula de comportamiento.  Encontrará un ejemplo a continuación.
 
@@ -63,11 +62,11 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 #### <a name="create-a-table-of-random-numbers"></a>Creación de una tabla de números aleatorios
 1. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
 
-    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
+    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 
     Con esta fórmula, se crea una tabla de una sola columna que se usa para iterar cinco veces, lo que produce cinco números aleatorios.
 
-1. Agregue una **[tabla de datos](../controls/control-data-table.md)**, establezca su propiedad **Items** en **RandomNumbers** y muestre el campo **Value**.
+1. Agregue una **[tabla de datos](../controls/control-data-table.md)** , establezca su propiedad **Items** en **RandomNumbers** y muestre el campo **Value**.
 
     ![Pantalla en la que se muestra una tabla de datos con cinco valores decimales diferentes: 0,857, 0,105, 0,979, 0,167 y 0,814.](media/function-rand/set-show-data.png)
 
@@ -81,4 +80,4 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 
     ![Misma pantalla en la que se muestra una tabla de datos con un nuevo conjunto de cinco valores decimales diferentes: 0,414, 0,128, 0,860, 0,303 y 0,568.](media/function-rand/rand-collection-2.png)
 
-Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber; Rand() )**.
+Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber, Rand() )** .

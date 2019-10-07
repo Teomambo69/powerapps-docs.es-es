@@ -1,137 +1,136 @@
 ---
-title: Plantilla de pantalla de calendario | Microsoft Docs
-description: Comprender el funcionamiento de la plantilla de pantalla de calendario para las aplicaciones de lienzo, modificar la pantalla y ampliarlo como parte de una aplicación
+title: Plantilla de pantalla calendario | Microsoft Docs
+description: Descripción de cómo funciona la plantilla de pantalla calendario para las aplicaciones de Canvas, cómo modificar la pantalla y cómo ampliarla como parte de una aplicación
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/28/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 745b4232a43a06c46866e83ca2452f8a55afeddf
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 470aa0671eddc5f4d3621c4dbdd8d81036c358e4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536228"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989406"
 ---
-# <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de calendario para las aplicaciones de lienzo
+# <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla calendario para aplicaciones de Canvas
 
-En una aplicación de lienzo, agregue una pantalla de calendario que se muestra a los usuarios en los próximos eventos de sus cuentas de Office 365 Outlook. Los usuarios pueden seleccionar una fecha en un calendario y desplazarse por una lista de eventos de ese día. Puede cambiar qué detalles aparecen en la lista, agregue una segunda pantalla que muestra más detalles sobre cada evento, mostrar una lista de los asistentes para cada evento y realizar otras personalizaciones.
+En una aplicación de lienzo, agregue una pantalla de calendario que muestre los eventos próximos a los usuarios de sus cuentas de Office 365 Outlook. Los usuarios pueden seleccionar una fecha de un calendario y desplazarse por una lista de eventos de ese día. Puede cambiar los detalles que aparecen en la lista, agregar una segunda pantalla que muestre más detalles sobre cada evento, mostrar una lista de asistentes para cada evento y hacer otras personalizaciones.
 
-También puede agregar otras pantallas basadas en plantillas que muestren diferentes datos de Office 365, como [correo electrónico](email-screen-overview.md), [personas](people-screen-overview.md) en una organización, y [disponibilidad](meeting-screen-overview.md) de usuarios de personas es posible que desee invitar a una reunión.
+También puede agregar otras pantallas basadas en plantillas que muestren datos diferentes de Office 365, como el [correo electrónico](email-screen-overview.md), las [personas](people-screen-overview.md) de una organización y la [disponibilidad](meeting-screen-overview.md) de personas que los usuarios quieran invitar a una reunión.
 
-Esta información general aprenderá:
+Esta información general le enseña:
 > [!div class="checklist"]
-> * Cómo usar la pantalla predeterminada de calendario.
+> * Cómo usar la pantalla calendario predeterminada.
 > * Cómo modificarlo.
-> * Cómo se integran en una aplicación.
+> * Cómo integrarlo en una aplicación.
 
-Para un análisis más profundo de la funcionalidad de la pantalla de forma predeterminada, consulte el [referencia de la pantalla de calendario](calendar-screen-reference.md).
+Para profundizar más en la funcionalidad predeterminada de esta pantalla, consulte la [referencia de la pantalla calendario](calendar-screen-reference.md).
 
 ## <a name="prerequisite"></a>Requisito previo
 
-Estar familiarizado con cómo agregar y configurar las pantallas y otros controles como [crear una aplicación en PowerApps](../data-platform-create-app-scratch.md).
+Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en PowerApps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Funcionalidad predeterminada
 
-Para agregar una pantalla de calendario de la plantilla:
+Para agregar una pantalla de calendario desde la plantilla:
 
-1. [Inicie sesión en](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) a PowerApps y, a continuación, crear una aplicación o abrir una aplicación existente en PowerApps Studio.
+1. [Inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
 
-    En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de tableta.
+    En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de Tablet PC.
 
-1. En el **inicio** pestaña de la cinta de opciones, seleccione **nueva pantalla** > **calendario**.
+1. En la pestaña **Inicio** de la cinta de opciones, seleccione **nueva pantalla** > **calendario**.
 
     De forma predeterminada, la pantalla tiene un aspecto similar al siguiente:
 
-    ![Pantalla de calendario](media/calendar-screen/calendar-initial.png)
+    ![Pantalla calendario](media/calendar-screen/calendar-initial.png)
 
-1. Para mostrar los datos, seleccione una opción en la lista desplegable en la parte superior de la pantalla.
+1. Para Mostrar datos, seleccione una opción en la lista desplegable situada cerca de la parte superior de la pantalla.
 
-    ![Pantalla de calendario una vez completada la carga](./media/calendar-screen/calendar-screen.png)
+    ![Pantalla del calendario una vez completada la carga](./media/calendar-screen/calendar-screen.png)
 
 Algunas notas útiles:
 
-* Fecha de hoy en día está activada de forma predeterminada, y puede volver fácilmente a él seleccionando el icono de calendario en la esquina superior derecha.
-* Si selecciona una fecha diferente, un círculo alrededor de él y un rectángulo de color claro (azul si se aplica el tema predeterminado) rodea la fecha de hoy.
-* Si al menos un evento está programado para una fecha concreta, aparece un pequeño círculo coloreado en esa fecha en el calendario.
-* Si selecciona una fecha para el que se programan uno o más eventos, los eventos aparecen en una lista en el calendario.
+* La fecha de hoy está seleccionada de forma predeterminada y puede volver a ella fácilmente seleccionando el icono de calendario en la esquina superior derecha.
+* Si selecciona una fecha diferente, un círculo lo rodea y un rectángulo de color claro (azul si se aplica el tema predeterminado) rodea a la fecha de hoy.
+* Si se programa al menos un evento para una fecha determinada, aparecerá un pequeño círculo coloreado debajo de esa fecha en el calendario.
+* Si selecciona una fecha para la que se programan uno o más eventos, los eventos aparecen en una lista bajo el calendario.
 
 ## <a name="modify-the-screen"></a>Modificar la pantalla
 
 Puede modificar la funcionalidad predeterminada de esta pantalla de varias maneras comunes:
 
 * [Especifique el calendario](calendar-screen-overview.md#specify-the-calendar).
-* [Mostrar detalles diferentes acerca de un evento](calendar-screen-overview.md#show-different-details-about-an-event).
-* [Ocultar eventos de no bloqueo](calendar-screen-overview.md#hide-nonblocking-events).
+* [Mostrar detalles diferentes sobre un evento](calendar-screen-overview.md#show-different-details-about-an-event).
+* [Ocultar eventos](calendar-screen-overview.md#hide-nonblocking-events)de no bloqueo.
 
-Si desea modificar la pantalla adicional, utilice el [referencia de la pantalla de calendario](./calendar-screen-reference.md) como guía.
+Si desea modificar la pantalla con más detalle, use la [referencia de la pantalla calendario](./calendar-screen-reference.md) como guía.
 
-### <a name="specify-the-calendar"></a>Especifique el calendario
+### <a name="specify-the-calendar"></a>Especificar el calendario
 
-Si ya sabe qué calendario deben ver los usuarios, puede simplificar la pantalla mediante la especificación de dicho calendario antes de publicar la aplicación. Este cambio elimina la necesidad de la lista desplegable de calendarios, para que pueda quitarla.
+Si ya sabe qué calendario deben ver los usuarios, puede simplificar la pantalla especificando ese calendario antes de publicar la aplicación. Este cambio elimina la necesidad de la lista desplegable de calendarios, por lo que puede quitarlo.
 
-1. Establecer el **[OnStart](../controls/control-screen.md)** propiedad de la pantalla predeterminada en la aplicación en esta fórmula:
+1. Establezca la propiedad **[OnStart](../controls/control-screen.md)** de la pantalla predeterminada de la aplicación en esta fórmula:
 
-    ```powerapps-comma
-    Set( _userDomain; Right( User().Email; Len( User().Email ) - Find( "@"; User().Email ) ) );;
-    Set( _dateSelected; Today() );;
-    Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days ) );;
-    Set( _firstDayInView; 
-        DateAdd( _firstDayOfMonth; -( Weekday( _firstDayOfMonth) - 2 + 1 ); Days )
-    );;
-    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
-    Set( _calendarVisible; false );;
-    Set( _myCalendar; 
-        LookUp( Office365.CalendarGetTables().value; DisplayName = "{YourCalendarNameHere}" )
-    );;
-    Set( _minDate; 
-        DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days )
-    );;
-    Set( _maxDate; 
+    ```powerapps-dot
+    Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
+    Set( _dateSelected, Today() );
+    Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days ) );
+    Set( _firstDayInView, 
+        DateAdd( _firstDayOfMonth, -( Weekday( _firstDayOfMonth) - 2 + 1 ), Days )
+    );
+    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
+    Set( _calendarVisible, false );
+    Set( _myCalendar, 
+        LookUp( Office365.CalendarGetTables().value, DisplayName = "{YourCalendarNameHere}" )
+    );
+    Set( _minDate, 
+        DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days )
+    );
+    Set( _maxDate, 
         DateAdd(
-            DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days );
-            40; 
+            DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days ),
+            40, 
             Days 
         )
-    );;
-    ClearCollect( MyCalendarEvents; 
-        Office365.GetEventsCalendarViewV2( _myCalendar.Name; 
-            Text( _minDate; UTC ); 
-            Text( _maxDate; UTC ) 
+    );
+    ClearCollect( MyCalendarEvents, 
+        Office365.GetEventsCalendarViewV2( _myCalendar.Name, 
+            Text( _minDate, UTC ), 
+            Text( _maxDate, UTC ) 
         ).value
-    );;
-    Set( _calendarVisible; true )
+    );
+    Set( _calendarVisible, true )
     ```
 
     > [!NOTE]
-    > Esta fórmula se modifica ligeramente el valor predeterminado de la **OnSelect** propiedad de la lista desplegable para seleccionar un calendario. Para obtener más información acerca de ese control, vea la sección en la [referencia de la pantalla de calendario](./calendar-screen-reference.md#calendar-drop-down).
+    > Esta fórmula se edita ligeramente desde el valor predeterminado de la propiedad **alseleccionar** de la lista desplegable para seleccionar un calendario. Para obtener más información sobre ese control, vea su sección en la referencia de la [pantalla calendario](./calendar-screen-reference.md#calendar-drop-down).
 
-1. Reemplace `{YourCalendarNameHere}`, incluidas las llaves, con el nombre del calendario que desea mostrar (por ejemplo, **calendario**).
+1. Reemplace `{YourCalendarNameHere}`, incluidas las llaves, por el nombre del calendario que desea mostrar (por ejemplo, **calendario**).
 
     > [!IMPORTANT]
-    > Los pasos siguientes se supone que ha agregado a la aplicación solo hay una pantalla de calendario. Si ha agregado más de uno, los nombres de control (como **iconCalendar1**) finalizará con un número diferente y necesita ajustar las fórmulas según sea necesario.
+    > En los pasos siguientes se supone que ha agregado solo una pantalla de calendario a la aplicación. Si ha agregado más de uno, los nombres de control (por ejemplo, **iconCalendar1**) terminarán con un número diferente y tendrá que ajustar las fórmulas según corresponda.
 
-1. Establecer el **Y** propiedad de la **iconCalendar1** control en esta expresión:
+1. Establezca la propiedad **Y** del control **iconCalendar1** en esta expresión:
 
     `RectQuickActionBar1.Height + 20`
 
-1. Establecer el **Y** propiedad de la **LblMonthSelected1** control en esta expresión:
+1. Establezca la propiedad **Y** del control **LblMonthSelected1** en esta expresión:
 
     `iconCalendar1.Y + iconCalendar1.Height + 20`
 
-1. Establecer el **texto** propiedad de la **LblNoEvents1** control a este valor:
+1. Establezca la propiedad **Text** del control **LblNoEvents1** en este valor:
 
     `"No events scheduled"`
 
-1. Establecer el **Visible** propiedad de **LblNoEvents1** en esta fórmula:
+1. Establezca la propiedad **visible** de **LblNoEvents1** en esta fórmula:
 
     `CountRows(CalendarEventsGallery1.AllItems) = 0 && _calendarVisible`
 
@@ -141,228 +140,228 @@ Si ya sabe qué calendario deben ver los usuarios, puede simplificar la pantalla
     - **LblEmptyState1**
     - **iconEmptyState1**
 
-1. Si la pantalla de calendario no es la pantalla predeterminada, agregue un botón que navega desde la pantalla predeterminada a la pantalla de calendario para que pueda probar la aplicación.
+1. Si la pantalla de calendario no es la predeterminada, agregue un botón que navegue desde la pantalla predeterminada hasta la pantalla de calendario para que pueda probar la aplicación.
 
-    Por ejemplo, agregar un botón en **Screen1** que navega a **Screen2** si agrega una pantalla de calendario a una aplicación que ha creado desde cero.
+    Por ejemplo, agregue un botón en **Screen1** que navegue a **Screen2** si agregó una pantalla de calendario a una aplicación que creó desde cero.
 
-1. Guarde la aplicación y, después, probarla en un explorador o en un dispositivo móvil.
+1. Guarde la aplicación y, a continuación, probarla en un explorador o en un dispositivo móvil.
 
-### <a name="show-different-details-about-an-event"></a>Mostrar detalles diferentes acerca de un evento
+### <a name="show-different-details-about-an-event"></a>Mostrar detalles diferentes sobre un evento
 
-De forma predeterminada, la galería en el calendario, denominado **CalendarEventsGallery**, se muestra la hora de inicio, la duración, el asunto y la ubicación de cada evento. Puede configurar la Galería para mostrar cualquier campo (por ejemplo, el organizador) que el [conector de Office 365](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive) admite.
+De forma predeterminada, la galería de en el calendario, denominada **CalendarEventsGallery**, muestra la hora de inicio, la duración, el asunto y la ubicación de cada evento. Puede configurar la galería para mostrar cualquier campo (como el organizador) que admita el [conector de Office 365](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive) .
 
-1. En **CalendarEventsGallery**, establezca el **texto** propiedad de una nueva o una etiqueta existente a `ThisItem` seguido por un punto.
+1. En **CalendarEventsGallery**, establezca la propiedad **Text** de una etiqueta nueva o existente en `ThisItem` seguida de un punto.
 
-    IntelliSense muestra los campos que se pueden seleccionar.
+    IntelliSense muestra los campos que puede seleccionar.
 
 1. Seleccione el campo que desee.
 
-    La etiqueta muestra el tipo de información que especificó.
+    La etiqueta muestra el tipo de información que ha especificado.
 
-### <a name="hide-nonblocking-events"></a>Ocultar eventos sin bloqueo
+### <a name="hide-nonblocking-events"></a>Ocultar eventos de no bloqueo
 
-En muchas de las oficinas, los miembros del equipo envían convocatorias de reunión para notificarse entre sí cuando estén fuera de la oficina. Para evitar el bloqueo de las programaciones de todo el mundo, la persona que envía la solicitud establece su disponibilidad **gratis**. Puede ocultar estos eventos en el calendario y la galería mediante la actualización de un par de propiedades.
+En muchas oficinas, los miembros del equipo envían convocatorias de reunión para que se notifiquen entre sí cuando se encuentren fuera de la oficina. Para evitar el bloqueo de las programaciones de todo el mundo, la persona que envía la solicitud establece su disponibilidad en **gratis**. Puede ocultar estos eventos desde el calendario y la Galería actualizando un par de propiedades.
 
-1. Establecer el **elementos** propiedad de **CalendarEventsGallery** en esta fórmula:
+1. Establezca la propiedad **Items** de **CalendarEventsGallery** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Filter(
-            MyCalendarEvents;
-            Text( Start; DateTimeFormat.ShortDate ) = 
-                Text( _dateSelected; DateTimeFormat.ShortDate );
+            MyCalendarEvents,
+            Text( Start, DateTimeFormat.ShortDate ) = 
+                Text( _dateSelected, DateTimeFormat.ShortDate ),
             ShowAs <> "Free"
-        );
+        ),
         "Start"
     )
     ```
 
-    En esta fórmula, el **filtro** oculta la función no solo esos eventos que están programados para una fecha que no sea el seleccionado, sino también los eventos para el que la disponibilidad se establece en **gratis**.
+    En esta fórmula, la función **Filter** oculta no solo los eventos que están programados para una fecha distinta de la seleccionada, sino también los eventos para los que la disponibilidad está establecida en **Free**.
 
-1. En el calendario, establezca el **Visible** propiedad de la **círculo** control en esta fórmula:
+1. En el calendario, establezca la propiedad **visible** del control de **círculo** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     CountRows(
         Filter(
-            MyCalendarEvents;
-            DateValue( Text(Start) ) = DateAdd( _firstDayInView; ThisItem.Value; Days );
+            MyCalendarEvents,
+            DateValue( Text(Start) ) = DateAdd( _firstDayInView, ThisItem.Value, Days ),
             ShowAs <> "Free"
         )
     ) > 0 && !Subcircle1.Visible && Title2.Visible
     ```
-    Esta fórmula contiene los mismos filtros como la fórmula anterior. Por lo tanto, el círculo de indicador de evento en una fecha solo aparece si tiene uno o más eventos que se encuentran en la fecha seleccionada y para que la disponibilidad no está establecen en **gratis**.
+    Esta fórmula contiene los mismos filtros que la fórmula anterior. Por lo tanto, el círculo del indicador de eventos aparece en una fecha solo si tiene uno o varios eventos que se encuentran en la fecha seleccionada y cuya disponibilidad no está establecida en **libre**.
 
-## <a name="integrate-the-screen-into-an-app"></a>Integrar la pantalla en una aplicación
+## <a name="integrate-the-screen-into-an-app"></a>Integración de la pantalla en una aplicación
 
-La pantalla de calendario es un conjunto eficaz de controles por derecho propio, pero normalmente realiza mejor como parte de una aplicación más grande y más versátil. Puede integrar esta pantalla en una aplicación de mayor tamaño en varios aspectos, incluida la adición de estas opciones:
+La pantalla calendario es un conjunto eficaz de controles que se encuentran en su propio derecho, pero normalmente se comporta mejor como parte de una aplicación más grande y versátil. Puede integrar esta pantalla en una aplicación más grande de varias maneras, como agregar estas opciones:
 
-* [Ver detalles del evento](calendar-screen-overview.md#view-event-details).
-* [Mostrar los asistentes del evento](calendar-screen-overview.md#show-event-attendees).
+* [Vea los detalles del evento](calendar-screen-overview.md#view-event-details).
+* [Mostrar asistentes de eventos](calendar-screen-overview.md#show-event-attendees).
 
 ### <a name="view-event-details"></a>Ver detalles del evento
 
-Si los usuarios seleccionar un evento en **CalendarEventsGallery**, puede abrir otra pantalla que muestra más información sobre ese evento.
+Si los usuarios seleccionan un evento en **CalendarEventsGallery**, puede abrir otra pantalla que muestra más información sobre ese evento.
 
 > [!NOTE]
-> Este procedimiento muestra detalles del evento en una galería con contenido dinámico, pero puede lograr resultados similares tomando otros enfoques. Por ejemplo, puede obtener más control de diseño con una serie de etiquetas en su lugar.
+> En este procedimiento se muestran los detalles de los eventos en una galería con contenido dinámico, pero puede obtener resultados similares si toma otros enfoques. Por ejemplo, puede obtener más control de diseño mediante una serie de etiquetas en su lugar.
 
-1. Agregar una pantalla en blanco, denominada **EventDetailsScreen**, que contiene una galería de altura flexible en blanco y un botón que vuelve a la pantalla del calendario.
+1. Agregue una pantalla en blanco, denominada **EventDetailsScreen**, que contenga una galería de alto flexible en blanco y un botón que vuelva a la pantalla de calendario.
 
-1. En la Galería de altura flexible, agregue un **etiqueta** control y un **texto HTML** y establezca el **AutoHeight** propiedad de ambas a **true** .
+1. En la galería de alto flexible, agregue un control **etiqueta** y un control **texto html** y establezca la propiedad **autoheight** de ambos en **true**.
 
     > [!NOTE]
-    > PowerApps recupera el cuerpo del mensaje de cada evento como texto HTML, por lo que necesita mostrar ese contenido en un **texto HTML** control.
+    > PowerApps recupera el cuerpo del mensaje de cada evento como texto HTML, por lo que debe mostrar el contenido en un control de **texto HTML** .
 
-1. Establecer el **Y** propiedad de la **texto HTML** control en esta expresión:
+1. Establezca la propiedad **Y** del control de **texto html** en esta expresión:
 
     `Label1.Y + Label1.Height + 20`
 
-1. Ajuste las propiedades adicionales según sea necesario para satisfacer sus necesidades de estilo.
+1. Ajuste las propiedades adicionales según sea necesario para ajustarse a sus necesidades de estilo.
 
-    Por ejemplo, desea agregar una línea de separador inferior el **texto HTML** control.
+    Por ejemplo, puede que desee agregar una línea de separación debajo del control de **texto HTML** .
 
-1. Establecer el **elementos** propiedad de la Galería de altura flexible en esta fórmula:
+1. Establezca la propiedad **Items** de la galería de alto flexible en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table(
-        { Title: "Subject"; Value: _selectedCalendarEvent.Subject };
+        { Title: "Subject", Value: _selectedCalendarEvent.Subject },
         { 
-            Title: "Time"; 
+            Title: "Time", 
             Value: _selectedCalendarEvent.Start & " - " & _selectedCalendarEvent.End 
-        };
-        { Title: "Body"; Value: _selectedCalendarEvent.Body }
+        },
+        { Title: "Body", Value: _selectedCalendarEvent.Body }
     )
     ```
 
-    Esta fórmula crea una galería de datos dinámicos que se establecen en los valores de campo de **_selectedCalendarEvent**, que se establece cada vez que el usuario selecciona un evento en el **CalendarEventsGallery** control. Puede extender esta galería para incluir más campos agregando más etiquetas a él, pero este conjunto proporciona un buen punto de partida.
+    Esta fórmula crea una galería de datos dinámicos que se establece en los valores de campo de **_selectedCalendarEvent**, que se establece cada vez que el usuario selecciona un evento en el control **CalendarEventsGallery** . Puede extender esta galería para incluir más campos agregando más etiquetas, pero este conjunto proporciona un buen punto de partida.
 
-1. Con los elementos de la galería en su lugar, establezca el **texto** propiedad de la **etiqueta** el control a `ThisItem.Title`y el **HtmlText** propiedad de la **texto HTML**  control `ThisItem.Value`.
+1. Con los elementos de la galería en su lugar, establezca la propiedad **Text** del control **etiqueta** en `ThisItem.Title` y la propiedad **HtmlText** del control de **texto HTML** en `ThisItem.Value`.
 
-1. En **CalendarEventsGallery**, establezca el **Alseleccionar** propiedad de la **título** control en esta fórmula:
+1. En **CalendarEventsGallery**, establezca la propiedad **alseleccionar** del control **título** en esta fórmula:
 
-    ```powerapps-comma
-    Set( _selectedCalendarEvent; ThisItem );;
-    Navigate( EventDetailsScreen; None )
+    ```powerapps-dot
+    Set( _selectedCalendarEvent, ThisItem );
+    Navigate( EventDetailsScreen, None )
     ```
 
     > [!Note]
-    > En lugar de usar el **_selectedCalendarEvent** variable, también puede usar **CalendarEventsGallery**. Seleccionado.
+    > En lugar de usar la variable **_selectedCalendarEvent** , en su lugar podría usar **CalendarEventsGallery**. Seleccionadas.
 
-### <a name="show-event-attendees"></a>Mostrar a los asistentes del evento
+### <a name="show-event-attendees"></a>Mostrar asistentes para eventos
 
-El `Office365.GetEventsCalendarViewV2` operación recupera una serie de campos para cada evento, incluido un conjunto separados por punto y coma de los asistentes obligatorios y opcionales. En este procedimiento, analizar cada conjunto de asistentes, determinar qué asistentes se encuentran en su organización y recuperar de cualquier quiénes son los perfiles de Office 365.
+La operación `Office365.GetEventsCalendarViewV2` Recupera varios campos para cada evento, incluido un conjunto de asistentes necesarios y opcionales, separados por punto y coma. En este procedimiento, analizará cada conjunto de asistentes, determinará qué asistentes se encuentran en su organización y recuperará los perfiles de Office 365 de cualquier usuario que sea.
 
-1. Si la aplicación no contiene el conector de usuarios de Office 365, [agregarlo](../add-data-connection.md).
+1. Si la aplicación no contiene el conector de usuarios de Office 365, [agréguelo](../add-data-connection.md).
 
-1. Para recuperar los perfiles de Office 365 de los asistentes, establezca el **OnSelect** propiedad de la **título** en controlar la **CalendarEventsGallery** en esta fórmula:
+1. Para recuperar los perfiles de Office 365 de los asistentes de reunión, establezca la propiedad **alseleccionar** del control de **título** en **CalendarEventsGallery** en esta fórmula:
 
-    ```powerapps-comma
-    Set( _selectedCalendarEvent; ThisItem );;
-    ClearCollect( AttendeeEmailsTemp;
+    ```powerapps-dot
+    Set( _selectedCalendarEvent, ThisItem );
+    ClearCollect( AttendeeEmailsTemp,
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" );
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ),
             !IsBlank( Result )
         )
-    );;
-    ClearCollect( AttendeeEmails;
-        AddColumns( AttendeeEmailsTemp; 
-            "InOrg";
-            Upper( _userDomain ) = Upper( Right( Result; Len( Result ) - Find( "@"; Result ) ) )
+    );
+    ClearCollect( AttendeeEmails,
+        AddColumns( AttendeeEmailsTemp, 
+            "InOrg",
+            Upper( _userDomain ) = Upper( Right( Result, Len( Result ) - Find( "@", Result ) ) )
         )
-    );;
-    ClearCollect( MyPeople;
-        ForAll( AttendeeEmails; If( InOrg; Office365Users.UserProfile( Result ) ) ) 
-    );;
-    Collect( MyPeople;
-        ForAll( AttendeeEmails;
-            If( !InOrg; 
-                { DisplayName: Result; Id: ""; JobTitle: ""; UserPrincipalName: Result }
+    );
+    ClearCollect( MyPeople,
+        ForAll( AttendeeEmails, If( InOrg, Office365Users.UserProfile( Result ) ) ) 
+    );
+    Collect( MyPeople,
+        ForAll( AttendeeEmails,
+            If( !InOrg, 
+                { DisplayName: Result, Id: "", JobTitle: "", UserPrincipalName: Result }
             )
         )
     )
     ```
 
-Esta lista describe lo que cada **ClearCollect** operación hace:
+En esta lista se describe lo que hace cada operación de **ClearCollect** :
 
-- ClearCollect(AttendeeEmailsTemp)
-    ```powerapps-comma
-    ClearCollect( AttendeeEmailsTemp;
+- ClearCollect (AttendeeEmailsTemp)
+    ```powerapps-dot
+    ClearCollect( AttendeeEmailsTemp,
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" ); 
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ), 
             !IsBlank( Result)
         )
-    );;
+    );
     ```
 
-    Esta fórmula concatena a los asistentes obligatorios y opcionales en una sola cadena y, a continuación, divide esa cadena en direcciones individuales en cada punto y coma. La fórmula, a continuación, filtra los valores en blanco de dicho conjunto y agrega los demás valores en una colección denominada **AttendeeEmailsTemp**.
+    Esta fórmula concatena los asistentes necesarios y opcionales en una sola cadena y, a continuación, divide esa cadena en direcciones individuales en cada punto y coma. A continuación, la fórmula filtra los valores en blanco de ese conjunto y agrega los demás valores en una colección denominada **AttendeeEmailsTemp**.
 
-- ClearCollect(AttendeeEmails)
-    ```powerapps-comma
-    ClearCollect( AttendeeEmails;
-        AddColumns( AttendeeEmailsTemp; 
-            "InOrg";
-            Upper( _userDomain ) = Upper( Right( Result; Len(Result) - Find("@"; Result) ) )
+- ClearCollect (AttendeeEmails)
+    ```powerapps-dot
+    ClearCollect( AttendeeEmails,
+        AddColumns( AttendeeEmailsTemp, 
+            "InOrg",
+            Upper( _userDomain ) = Upper( Right( Result, Len(Result) - Find("@", Result) ) )
         )
-    );;
+    );
     ```
-    Esta fórmula aproximadamente determina si un asistente está en su organización. La definición de **_userDomain** es simplemente la dirección URL del dominio en la dirección de correo electrónico de la persona que se está ejecutando la aplicación. Esta línea crea una columna adicional de verdadero/falso, denominada **InOrg**, en el **AttendeeEmailsTemp** colección. Esta columna contiene **true** si **userDomain** es equivalente a la dirección URL de dominio de la dirección de correo electrónico en esa fila determinada de **AttendeeEmailsTemp**.
+    Esta fórmula determina aproximadamente si un asistente está en su organización. La definición de **_userDomain** es simplemente la dirección URL de dominio en la dirección de correo electrónico de la persona que ejecuta la aplicación. Esta línea crea una columna true/false adicional, denominada **InOrg**, en la colección **AttendeeEmailsTemp** . Esta columna contiene **true** si **userDomain** es equivalente a la dirección URL de dominio de la dirección de correo electrónico en esa fila concreta de **AttendeeEmailsTemp**.
 
-    Este enfoque no siempre es precisa, pero puede ser muy cerca. Por ejemplo, algunos asistentes en la organización podrían tener una dirección de correo electrónico como Jane@OnContoso.com, mientras que **_userDomain** es Contoso.com. El usuario de la aplicación y Jane podrían trabajar en la misma compañía pero tienen pequeñas variaciones en sus direcciones de correo electrónico. Para estos casos, es posible que desea usar esta fórmula:
+    Este enfoque no siempre es preciso, pero se cierra bastante. Por ejemplo, algunos asistentes de la organización pueden tener una dirección de correo electrónico como Jane@OnContoso.com, mientras que **_userDomain** es contoso.com. El usuario de la aplicación y Julia podrían trabajar en la misma empresa, pero tienen ligeras variaciones en sus direcciones de correo electrónico. En casos como estos, puede que desee usar esta fórmula:
 
-    `Upper(_userDomain) in Upper(Right(Result; Len(Result) - Find("@"; Result)))`
+    `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    Sin embargo, esta fórmula coincide con direcciones de correo electrónico como Jane@NotTheContosoCompany.com con un **_userDomain** como Contoso.com y estas personas no funcionan en la misma compañía.
+    Sin embargo, esta fórmula coincide con las direcciones de correo electrónico como Jane@NotTheContosoCompany.com con un **_userDomain** como contoso.com y esas personas no trabajan en la misma empresa.
 
-- ClearCollect(MyPeople)
+- ClearCollect (mis personas)
 
-    ```powerapps-comma
-    ClearCollect( MyPeople;
-        ForAll( AttendeeEmails; 
-            If( InOrg; 
+    ```powerapps-dot
+    ClearCollect( MyPeople,
+        ForAll( AttendeeEmails, 
+            If( InOrg, 
                 Office365Users.UserProfile( Result )
             )
         )
-    );;
-    Collect( MyPeople;
-        ForAll( AttendeeEmails;
-            If( !InOrg; 
+    );
+    Collect( MyPeople,
+        ForAll( AttendeeEmails,
+            If( !InOrg, 
                 { 
-                    DisplayName: Result; 
-                    Id: ""; 
-                    JobTitle: ""; 
+                    DisplayName: Result, 
+                    Id: "", 
+                    JobTitle: "", 
                     UserPrincipalName: Result
                 }
             )
         )
-    );;
+    );
     ```
-    Para recuperar perfiles de Office 365, se debe utilizar el [Office365Users.UserProfile](https://docs.microsoft.com/connectors/office365users/#userprofile) o [Office365Users.UserProfileV2](https://docs.microsoft.com/connectors/office365users/#userprofile) operación. Estas operaciones recopilación todos los perfiles de Office 365 para los asistentes que se encuentran en la organización de. del usuario A continuación, las operaciones de agregar unos cuantos campos para los asistentes de fuera de la organización. Separan estos dos elementos en distintas operaciones porque el **ForAll** bucle no garantiza el orden. Por lo tanto, **ForAll** podría recopilar primero un asistente desde fuera de la organización. En este caso, el esquema para **MyPeople** contiene sólo **DisplayName**, **Id**, **JobTitle**, y **UserPrincipalName** . Sin embargo, las operaciones de perfil de usuario recuperan muchos datos más completos que eso. Para que forzar la **MyPeople** colección para agregar perfiles de Office 365 antes de los otros perfiles.
+    Para recuperar los perfiles de Office 365, debe usar la operación [Office365Users. userprofile](https://docs.microsoft.com/connectors/office365users/#userprofile) o [Office365Users. UserProfileV2](https://docs.microsoft.com/connectors/office365users/#userprofile) . Estas operaciones primero reúnen todos los perfiles de Office 365 para los asistentes que se encuentran en la organización del usuario. A continuación, las operaciones agregan algunos campos a los asistentes desde fuera de la organización. Estos dos elementos se separan en operaciones distintas porque el bucle **forall** no garantiza el orden. Por lo tanto, **forall** podría recopilar primero un asistente de fuera de la organización. En este caso, el esquema de mis **personas** solo contiene **displayName**, **ID**, **JobTitle**y **UserPrincipalName**. Sin embargo, las operaciones de UserProfile recuperan datos mucho más completos que. Por lo tanto, se obliga a la colección **People** a agregar perfiles de Office 365 antes que a los demás perfiles.
 
     > [!NOTE]
-    > Puede lograr el mismo resultado con un único **ClearCollect** función:
+    > Puede lograr el mismo resultado con una sola función **ClearCollect** :
 
-    ```powerapps-comma
-    ClearCollect( MyPeople; 
+    ```powerapps-dot
+    ClearCollect( MyPeople, 
         ForAll(
             AddColumns(
                 Filter(
                     Split(
-                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; 
+                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, 
                         ";"
-                    ); 
+                    ), 
                     !IsBlank( Result )
-                ); 
-                "InOrg"; _userDomain = Right( Result; Len( Result ) - Find( "@"; Result ) )
-            ); 
-            If( InOrg; 
-                Office365Users.UserProfile( Result ); 
+                ), 
+                "InOrg", _userDomain = Right( Result, Len( Result ) - Find( "@", Result ) )
+            ), 
+            If( InOrg, 
+                Office365Users.UserProfile( Result ), 
                 { 
-                    DisplayName: Result; 
-                    Id: ""; 
-                    JobTitle: ""; 
-                    UserPrincipalName: Result; 
-                    Department: ""; 
-                    OfficeLocation: ""; 
+                    DisplayName: Result, 
+                    Id: "", 
+                    JobTitle: "", 
+                    UserPrincipalName: Result, 
+                    Department: "", 
+                    OfficeLocation: "", 
                     TelephoneNumber: ""
                 }
             )
@@ -372,12 +371,12 @@ Esta lista describe lo que cada **ClearCollect** operación hace:
 
 Para finalizar este ejercicio:
 
-1. Agregar una pantalla que contenga una galería para que la **elementos** propiedad está establecida en **MyPeople**.
+1. Agregue una pantalla que contenga una galería para la que la propiedad **Items** esté establecida en **People**.
 
-1. En el **OnSelect** propiedad de la **título** controlar en el **CalendarEventsGallery**, agregar un **Navigate** función a la pantalla que se creó en el paso anterior.
+1. En la propiedad **alseleccionar** del control **title** en **CalendarEventsGallery**, agregue una función **Navigate** a la pantalla que creó en el paso anterior.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Consulte la documentación de referencia para esta pantalla](calendar-screen-reference.md).
-* [Más información sobre el conector de Office 365 Outlook](../connections/connection-office365-outlook.md).
-* [Más información sobre el conector de usuarios de Office 365](../connections/connection-office365-users.md).
+* [Vea la documentación de referencia de esta pantalla](calendar-screen-reference.md).
+* [Obtenga más información sobre el conector de Office 365 Outlook](../connections/connection-office365-outlook.md).
+* [Obtenga más información sobre el conector de usuarios de Office 365](../connections/connection-office365-users.md).

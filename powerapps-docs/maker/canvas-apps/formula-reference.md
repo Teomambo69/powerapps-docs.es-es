@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008977"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992928"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -34,7 +34,7 @@ Otros elementos incluyen:
 * [Controles y sus propiedades](reference-properties.md)
 * [Tipos de datos](functions/data-types.md)
 
-## <a name="a"></a>Una
+## <a name="a"></a>A
 **[Abs](functions/function-numericals.md)** : valor absoluto de un número.  
 
 **[Acceleration](functions/signals.md)** : lee el sensor de aceleración del dispositivo.
@@ -192,7 +192,7 @@ Otros elementos incluyen:
 ## <a name="j"></a>J
 **[JSON](functions/function-json.md)** : genera una cadena de texto JSON para una tabla, un registro o un valor.
 
-## <a name="l"></a>L
+## <a name="l"></a>Grande
 **[Language](functions/function-language.md)** : devuelve la etiqueta de idioma del usuario actual.
 
 **[Last](functions/function-first-last.md)** : devuelve el último registro de una tabla.
@@ -215,7 +215,7 @@ Otros elementos incluyen:
 
 **[Lower](functions/function-lower-upper-proper.md)** : convierte todas las letras de una cadena de texto en minúsculas.
 
-## <a name="m"></a>M
+## <a name="m"></a>Mediana
 **[Match](functions/function-ismatch.md)** : extrae una subcadena basada en un patrón.  Se pueden usar expresiones regulares.
 
 **[MatchAll](functions/function-ismatch.md)** : extrae varias subcadenas basadas en un patrón.  Se pueden usar expresiones regulares.

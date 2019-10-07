@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eae185fc52f368fa09ddbfe221553ddf6cc3a16d
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550362"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985206"
 ---
 # <a name="forall-function-in-powerapps"></a>Función ForAll en PowerApps
 Calcula valores y realiza acciones para todos los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
@@ -52,7 +51,7 @@ Otra consideración a tener en cuenta es que **ForAll** no es delegable mientras
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**ForAll**( *Table*; *Formula* )
+**ForAll**( *Table*, *Formula* )
 
 * *Table*: requerido. Tabla sobre la que se va a actuar.
 * *Formula*: requerido.  La fórmula que se evalúa para todos los registros de la *tabla*.
@@ -65,12 +64,12 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-`ClearCollect( Squares; [ "1"; "4"; "9" ] )`
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ForAll(&nbsp;Squares; Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Para todos los registros de la tabla de entrada calcula la raíz cuadrada de la columna **Value**.  La función **Sqrt** también puede utilizarse con una tabla de una sola columna, lo que permite realizar este ejemplo sin usar la función **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
-| **ForAll(&nbsp;Squares; Power(&nbsp;Value;&nbsp;3&nbsp;)&nbsp;)** |Para todos los registros de la tabla de entrada eleva la columna **Valor** a la tercera potencia.  La función **Power** no admite tablas de una sola columna. Por tanto, se debe usar **ForAll** en este caso. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
+| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Para todos los registros de la tabla de entrada calcula la raíz cuadrada de la columna **Value**.  La función **Sqrt** también puede utilizarse con una tabla de una sola columna, lo que permite realizar este ejemplo sin usar la función **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
+| **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |Para todos los registros de la tabla de entrada eleva la columna **Valor** a la tercera potencia.  La función **Power** no admite tablas de una sola columna. Por tanto, se debe usar **ForAll** en este caso. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
 
 ### <a name="using-a-connection"></a>Uso de una conexión
 Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.md) **Expresiones**:
@@ -79,14 +78,14 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-`ClearCollect( Expressions; [ "Hello"; "Good morning"; "Thank you"; "Goodbye" ] )`
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 Este ejemplo usa también una conexión con [Microsoft Translator](../connections/connection-microsoft-translator.md).  Para agregar esta conexión a la aplicación, consulte el tema acerca de cómo [administrar conexiones](../add-manage-connections.md).
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ForAll( Expresiones; MicrosoftTranslator.Translate( Value; "es" ) )** |Para todos los registros de la tabla Expresiones, traduce el contenido de la columna **Value** en español (abreviado "es"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
-| **ForAll( Expresiones; MicrosoftTranslator.Translate( Value; "fr" ) )** |Para todos los registros de la tabla Expresiones, traduce el contenido de la columna **Value** en francés (abreviado "fr"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
+| **ForAll( Expresiones, MicrosoftTranslator.Translate( Value, "es" ) )** |Para todos los registros de la tabla Expresiones, traduce el contenido de la columna **Value** en español (abreviado "es"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
+| **ForAll( Expresiones, MicrosoftTranslator.Translate( Value, "fr" ) )** |Para todos los registros de la tabla Expresiones, traduce el contenido de la columna **Value** en francés (abreviado "fr"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>Copia de una tabla
 A veces, es necesario filtrar, dar forma, ordenar y manipular los datos.  PowerApps proporciona una serie de funciones para hacerlo como, por ejemplo, **Filter**, **AddColumns** y **Sort**.  PowerApps trata cada tabla como un valor, lo que permite que fluya a través de las fórmulas y se consuma fácilmente.      
@@ -105,13 +104,13 @@ Los ejemplos siguientes usan el [origen de datos](../working-with-data-sources.m
 
 Para crear este origen de datos como una colección, establezca la propiedad **OnSelect** de un control **Botón** en esta fórmula, abra el modo de vista previa y, a continuación, haga clic o pulse en el botón:
 
-```powerapps-comma
-ClearCollect( Products; 
+```powerapps-dot
+ClearCollect( Products, 
     Table( 
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 }; 
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 } 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
     )
 )
 ```
@@ -125,14 +124,14 @@ Se puede realizar esta tarea de dos maneras diferentes, que generan el mismo res
 #### <a name="table-shaping-on-demand"></a>Forma de tabla a petición
 No haga esa copia  Podemos utilizar la fórmula siguiente en cualquier lugar que sea necesario:
 
-```powerapps-comma
-// Table shaping on demand; no need for a copy of the result
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
 ShowColumns( 
     AddColumns( 
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-    ); 
-    "Product"; 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
     "Quantity To Order"
 )
 ```
@@ -146,11 +145,11 @@ Y dado que no realizamos una copia, no hay ninguna copia adicional de la informa
 #### <a name="forall-on-demand"></a>Función ForAll a petición
 Otro enfoque consiste en utilizar la función **ForAll** para reemplazar las funciones de forma de tabla:
 
-```powerapps-comma
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
         { 
-            Product: Product; 
+            Product: Product, 
             'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
         } 
     ) 
@@ -166,25 +165,25 @@ En algunos casos, puede que sea necesario realizar una copia de los datos.  Pued
 
 Se utilizará la misma forma de tabla que en los dos ejemplos anteriores, pero se capturará el resultado en una colección:
 
-```powerapps-comma
-ClearCollect( NewOrder; 
+```powerapps-dot
+ClearCollect( NewOrder, 
     ShowColumns( 
         AddColumns( 
-            Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-            "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-        ); 
-        "Product"; 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
         "Quantity To Order"
     )
 )
 ```
 
-```powerapps-comma
-ClearCollect( NewOrder; 
-    ForAll( Products; 
-        If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         } 
@@ -197,13 +196,13 @@ Las funciones **ClearCollect** y **Collect** no se pueden delegar.  Como consecu
 #### <a name="collect-within-forall"></a>Recopilación dentro de ForAll
 Por último, se puede realizar la función **Collect** directamente dentro de **ForAll**:
 
-```powerapps-comma
-Clear( ProductsToOrder );; 
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
-        Collect( NewOrder;  
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         )

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549936"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994276"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Creación de aplicaciones de lienzo accesibles en PowerApps
 Una aplicación de lienzo accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
@@ -38,16 +38,16 @@ Un diseño con sentido común y poco complicado ayuda a que las aplicaciones sea
 Cuando pruebe la accesibilidad de la aplicación, asegúrese de que esta se puede utilizar solo con el teclado, con los modos de accesibilidad de iOS y Android, y que se puede navegar por ella correctamente con el lector de pantalla habilitado.
 
 Para la navegación con el teclado (con o sin el lector de pantalla), asegúrese de que se sigue un orden lógico cuando se utiliza la tecla TAB para navegar por los campos de entrada mediante el establecimiento de la propiedad **[TabIndex](controls/properties-accessibility.md)** de cada control:
-- Etiqueta, imagen, icono, los controles de forma: si representan elementos interactivos (por ejemplo, botones) establezca TabIndex en 0. Si son elementos decorativos o texto, establezca TabIndex en -1.
+- Controles de etiqueta, imagen, icono y forma: si representan elementos interactivos (es decir, botones) establezca TabIndex en 0; Si son elementos decorativos o texto, establezca TabIndex en-1.
 - Evite establecer el índice de tabulación en un valor mayor que cero.
 
 ## <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 Las siguientes combinaciones de software son las recomendaciones admitidas para consumir PowerApps con un lector de pantalla:
 
-- **Windows**: Microsoft Edge / Narrator
-- **macOS**: Safari / VoiceOver
-- **Android**: Aplicación PowerApps / Talkback
-- **iOS**: Aplicación PowerApps / VoiceOver
+- **Windows**: Microsoft Edge/narrador
+- **MacOS**: Safari/VoiceOver
+- **Android**: Aplicación PowerApps/talkback
+- **iOS**: Aplicación PowerApps/VoiceOver
 
 Para garantizar una experiencia satisfactoria con el lector de pantalla, se recomienda:
 
@@ -58,7 +58,7 @@ Para garantizar una experiencia satisfactoria con el lector de pantalla, se reco
 
 
 ## <a name="multimedia"></a>Contenido multimedia
-Asegúrese de todos los vídeos tienen subtítulos y una transcripción de todas las grabaciones de audio está disponible para el usuario.  **Vídeo** control admite subtítulos en formato WebVTT a través de la **ClosedCaptionsUrl** propiedad.
+Asegúrese de todos los vídeos tienen subtítulos y una transcripción de todas las grabaciones de audio está disponible para el usuario.  El control de **vídeo** admite subtítulos en formato WebVTT a través de la propiedad **ClosedCaptionsUrl** .
 
 Tenga en cuenta que con el lector de pantalla habilitado, **Timer** no anuncia el texto del botón, sino cuánto tiempo ha transcurrido.  Los anuncios no se pueden desactivar, aunque el temporizador esté oculto con baja opacidad.
 

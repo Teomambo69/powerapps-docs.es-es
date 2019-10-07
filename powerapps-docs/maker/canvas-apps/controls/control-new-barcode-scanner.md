@@ -1,6 +1,6 @@
 ---
-title: 'Control escáner de código de barras: referencia | Microsoft Docs'
-description: Obtener información, incluidas las propiedades y ejemplos sobre el control escáner de código de barras
+title: 'Barcode-control de escáner: referencia | Microsoft Docs'
+description: Información sobre el control de escáner de código de barras, con propiedades y ejemplos
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,27 +8,27 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517335"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986443"
 ---
-# <a name="barcode-scanner-control-for-canvas-apps"></a>Control escáner de código de barras para las aplicaciones de lienzo
+# <a name="barcode-scanner-control-for-canvas-apps"></a>Control del lector de código de barras para aplicaciones de lienzo
 
-Examina los códigos de barras, los códigos QR y códigos de la matriz de datos en un dispositivo Android o iOS. No se admite en un explorador web.
+Explora códigos de barras, códigos QR y códigos de matriz de datos en un dispositivo Android o iOS. No se admite en un explorador Web.
 
 ## <a name="description"></a>Descripción
 
-El control abre un analizador en un dispositivo Android o iOS nativo. El analizador detecta automáticamente un código de barras, un código QR o un código de la matriz de datos cuando en la vista. El control no admite análisis en un explorador web.
+El control abre un escáner nativo en un dispositivo iOS o Android. El escáner detecta automáticamente un código de barras, un código QR o un código de matriz de datos cuando está en la vista. El control no admite el examen en un explorador Web.
 
-El control admite estos tipos de códigos de barras, los códigos de la matriz de datos y los códigos QR:
+El control admite códigos QR, códigos de matriz de datos y estos tipos de códigos de barras:
 
 - UPC A
 - UPC E
@@ -41,11 +41,11 @@ El control admite estos tipos de códigos de barras, los códigos de la matriz d
 
 ## <a name="key-properties"></a>Propiedades principales
 
-**Valor** : salida de la propiedad que contiene el valor de texto del código que ha examinado más recientemente.
+**Valor** : propiedad de salida que contiene el valor de texto del código que se analizó más recientemente.
 
-**Texto** : texto que aparece en el botón que activa el analizador.
+**Texto: texto** que aparece en el botón que activa el analizador.
 
-**OnScan** : cómo responde una aplicación cuando un código de barras se analiza correctamente.
+**Alscan** : cómo responde una aplicación cuando se examina correctamente un código de barras.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
@@ -57,28 +57,28 @@ El control admite estos tipos de códigos de barras, los códigos de la matriz d
 
 **[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**FlashlightEnabled** : indica si el linterna se habilita automáticamente cuando se abre el analizador.
+**FlashlightEnabled** : indica si la linterna se habilita automáticamente cuando se abre el escáner.
 
-**[Alto](properties-size-location.md)**  : el alto del botón que activa el analizador.
+**[Alto](properties-size-location.md)** : el alto del botón que activa el escáner.
 
-**PreferFrontCamera** : indica si la cámara frontal, cuando esté disponible, se usa para el análisis.
+**PreferFrontCamera** : indica si la cámara frontal, si está disponible, se utiliza para el examen.
 
 **[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**Tipo** -el tipo de código que se ha detectado en el examen que recientemente se realizó correctamente.
+**Tipo** : el tipo de código que se ha detectado en el examen que se ha realizado correctamente.
 
 **[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Ancho](properties-size-location.md)**  : el ancho del botón que activa el analizador.
+**[Ancho](properties-size-location.md)** : el ancho del botón que activa el escáner.
 
 **[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
-Las mismas directrices para la **[botón](control-button.md)** controlan se aplican a la **escáner** controlar porque es un botón que inicia el análisis.
+Las mismas instrucciones para el control de **[botón](control-button.md)** se aplican al control de **escáner de código de barras** porque es un botón que inicia el examen.
 
 ### <a name="visual-alternatives"></a>Alternativas visuales
-* El escáner es un botón que no se muestra el resultado del examen. Considere la posibilidad de que se muestra el resultado del examen con un **[etiqueta](control-text-box.md)** control. Establezca la etiqueta **[texto](properties-core.md)** propiedad en el escáner **valor** propiedad. Establezca la etiqueta **[Live](properties-accessibility.md)** propiedad **educados** para que los usuarios de lector de pantalla se le notifican los cambios. Este cambio hace que el valor escaneado que sea accesible a todos, con independencia de la capacidad de visual.
+* El escáner de códigos de barras es un botón que no muestra el resultado del análisis. Considere la posibilidad de mostrar el resultado del examen con un control **[etiqueta](control-text-box.md)** . Establezca la propiedad **[Text](properties-core.md)** de la etiqueta en la propiedad **Value** del escáner de códigos de barras. Establezca la propiedad **[Live](properties-accessibility.md)** de la etiqueta en **Educate** para que se notifiquen los cambios a los usuarios de lector de pantalla. Este cambio hace que el valor explorado sea accesible para todos los usuarios, independientemente de la capacidad visual.
 
-* Los usuarios con discapacidades visuales y motor preferible no para apuntar a la cámara en un código de barras. Considere la posibilidad de agregar otro formulario de entrada, como un **[entrada de texto](control-text-input.md)** control para los usuarios escriban códigos de barras.
+* Los usuarios que tienen discapacidades visuales y del motor prefieren no señalar la cámara en un código de barras. Considere la posibilidad de agregar otra forma de entrada, como un control **[entrada de texto](control-text-input.md)** , para que los usuarios escriban códigos de barras.

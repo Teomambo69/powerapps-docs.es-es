@@ -1,26 +1,26 @@
 ---
 title: Uso de una aplicación de ejemplo | Microsoft Docs
 description: Instrucciones paso a paso para crear una aplicación de lienzo en función de un ejemplo en PowerApps
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
-ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
+ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65546874"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989701"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Crear una aplicación de lienzo de un ejemplo en PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
 
 En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para almacenar estos datos, necesitará una cuenta de almacenamiento en la nube, como Dropbox, Google Drive o OneDrive.
@@ -64,7 +64,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 1. Cerca del borde izquierdo, haga clic o pulse en **Guardar**. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha creado su propia aplicación en función de un ejemplo en el que se usan datos ficticios almacenados en la cuenta en la nube. Para obtener información sobre cómo crear una aplicación, puede generar automáticamente una aplicación basada en datos de otros orígenes, como Common Data Service, SharePoint o Excel.
+En este tutorial, ha creado su propia aplicación en función de un ejemplo en el que se usan datos ficticios almacenados en la cuenta en la nube. Para obtener más información sobre cómo crear una aplicación, también puede generar automáticamente una aplicación basada en datos de otros orígenes como Common Data Service, SharePoint o Excel.
 
 > [!div class="nextstepaction"]
 > [Generar una aplicación](data-platform-create-app.md)

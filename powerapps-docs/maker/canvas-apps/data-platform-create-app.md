@@ -1,34 +1,34 @@
 ---
-title: Generar una aplicación de lienzo a partir de Common Data Service | Microsoft Docs
-description: En PowerApps, generar automáticamente una aplicación de lienzo para administrar los datos en Common Data Service
-author: AFTOwen
+title: Generar una aplicación de lienzo desde Common Data Service | Microsoft Docs
+description: En PowerApps, genere automáticamente una aplicación de lienzo para administrar datos en Common Data Service
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f9dedc515ee130a950c1dc12793751d43aa3804f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549706"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993083"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo a partir de Common Data Service en PowerApps
+# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo desde Common Data Service en PowerApps
 
-En PowerApps, generar automáticamente una aplicación de lienzo en función de una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
+En PowerApps, genere automáticamente una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
 
 Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para seguir este tutorial rápido, debe estar asignado a la [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) rol de seguridad y se debe [cambie a un entorno](working-with-environments.md) en que se ha creado una base de datos en Common Data Service, contiene datos, y permite realizar actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment) que cumpla este requisito.
+Para seguir esta guía de inicio rápido, debe tener asignado el rol de seguridad [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) y debe [cambiar a un entorno](working-with-environments.md) en el que se haya creado una base de datos de Common Data Service, contenga datos y permita actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment) que cumpla este requisito.
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 
@@ -64,7 +64,7 @@ Probablemente le interesará realizar más cambios antes de usar esta aplicació
 1. Cerca del borde izquierdo, seleccione **Guardar** y, a continuación, en la esquina inferior izquierda, seleccione **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tutorial, ha creado una aplicación para administrar datos de ejemplo sobre las cuentas en Common Data Service. En el paso siguiente, personalizará la galería y otros elementos de la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades.
+En esta guía de inicio rápido, ha creado una aplicación para administrar datos de ejemplo sobre cuentas en Common Data Service. En el paso siguiente, personalizará la galería y otros elementos de la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades.
 
 > [!div class="nextstepaction"]
 > [Personalización de una galería](customize-layout-sharepoint.md)

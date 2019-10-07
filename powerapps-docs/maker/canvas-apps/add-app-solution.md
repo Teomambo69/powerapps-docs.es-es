@@ -1,24 +1,24 @@
 ---
 title: Crear una aplicación de lienzo en una solución | Microsoft Docs
 description: En PowerApps, cree una aplicación de lienzo en una solución para que pueda implementar la aplicación en otro entorno.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3703fc5e36b38c7894300bc2074453716ddd9946
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705086"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987702"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Crear una aplicación de lienzo desde una solución
 

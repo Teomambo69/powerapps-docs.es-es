@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/16/2018
 ms.author: audrie
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321633"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994781"
 ---
 # <a name="powerapps-webinar-listing"></a>Lista de seminarios web de PowerApps #
 Estos seminarios web pueden ayudarle a aprovechar las características y funciones de Microsoft PowerApps. Los seminarios web están disponibles a petición tras su difusión en directo. Tenga en cuenta que, en algunos casos, deberá volver a escribir los detalles de registro y, después, recibirá un vínculo a la grabación por correo electrónico. 
@@ -70,7 +70,7 @@ Estos seminarios web pueden ayudarle a aprovechar las características y funcion
 **Administración de PowerApps | Preguntas más frecuentes**
 <br>por Manas Maheshwari [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**Dentro de la aplicación Universal Audit: Vea qué PowerApps y Flow son capaces de por Paul Culmsee**
+@no__t 0Inside la aplicación universal Audit: Vea qué es capaz de PowerApps y Flow de Paul Culmsee @ no__t-0
 <br>por Paul Culmsee [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Serie de seminarios web de nivel avanzado ##
@@ -102,13 +102,13 @@ Estos seminarios web pueden ayudarle a aprovechar las características y funcion
 **Connecting to on-premises data from PowerApps** (Conexión a datos locales desde PowerApps)
 <br>por Archana Nair y Dimah Zaidalkilani [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-**Trabajar con conectores: Uso del conector de Planner**
+**Working con conectores: Uso del conector de Planner @ no__t-0
 <br> por Audrie Gordon [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **The Power of Office Graph with PowerApps** (La potencia del uso de Office Graph con PowerApps)
 <br>por Audrie Gordon [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**Trabajar con conectores: Project Online (PWA)**
+**Working con conectores: Project online (PWA)**
 <br>por Audrie Gordon [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Serie de SharePoint ##
@@ -150,5 +150,5 @@ Estos seminarios web pueden ayudarle a aprovechar las características y funcion
 **Building Dialogs or Pop-up Messages in PowerApps** (Crear cuadros de diálogos o mensajes emergentes en PowerApps)
 <br>por Veronica Ward[Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**Realizar una búsqueda tardía de la cortina con uno de los desarrolladores de PowerApps: un vistazo a las plantillas: Marie Hoeger**
+**Look detrás de la cortina con uno de los desarrolladores de PowerApps: una mirada más detallada a las plantillas: Marie Hoeger @ no__t-0
 <br>por Audrie Gordon [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

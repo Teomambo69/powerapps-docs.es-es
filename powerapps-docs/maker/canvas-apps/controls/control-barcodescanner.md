@@ -1,6 +1,6 @@
 ---
-title: 'Web control escáner de código de barras: referencia | Microsoft Docs'
-description: Obtener información, incluidas las propiedades y ejemplos sobre el control escáner de código de barras
+title: 'Código de barras web-control de escáner: referencia | Microsoft Docs'
+description: Información sobre el control de escáner de código de barras, con propiedades y ejemplos
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,26 +8,25 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544600"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986997"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Control de Web escáner de código de barras (experimental) en PowerApps
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Código de barras Web: control de escáner (experimental) en PowerApps
 
-El análisis de código de barras control heredado, que está obsoleta, pero podría ser útil para la exploración de códigos en un explorador web.
+El control de exploración de código de barras heredado, que está obsoleto, pero podría ser útil para examinar códigos en un explorador Web.
 
 ## <a name="description"></a>Descripción
 
-El control muestra la que fuente de la cámara en la aplicación para que los usuarios pueden escanear códigos de barras en todos los dispositivos. El control es obsoleto debido a un rendimiento deficiente y el mobile **[escáner](control-new-barcode-scanner.md)** control reemplaza este control.
+El control muestra la fuente de la cámara en la aplicación para que los usuarios puedan examinar códigos de barras en todos los dispositivos. El control está obsoleto debido a un rendimiento deficiente y el control de **[escáner de código de barras](control-new-barcode-scanner.md)** móvil reemplaza a este control.
 
 ## <a name="key-properties"></a>Propiedades principales
 
@@ -67,7 +66,7 @@ El control muestra la que fuente de la cámara en la aplicación para que los us
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -77,11 +76,11 @@ El control muestra la que fuente de la cámara en la aplicación para que los us
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
-1. Agregar un **etiqueta** controlar y establezca su salida en el escáner **texto** propiedad.
+1. Agregue un control **etiqueta** y establezca su salida en la propiedad **texto** del escáner del código de barras.
 
-1. Escanear un código de barras del tipo establecido en **BarcodeType** propiedad.
+1. Digitalice un código de barras del tipo establecido en la propiedad **BarcodeType** .
 
-    La etiqueta muestra el valor escaneado.
+    La etiqueta muestra el código de barras escaneado.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
@@ -94,4 +93,4 @@ El control muestra la que fuente de la cámara en la aplicación para que los us
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
 
     > [!NOTE]
-  > Los lectores de pantalla le avisará cuando se ha encontrado un nuevo código de barras. No se anunció el valor. El código de barras esté a la vista, siempre y cuando los lectores de pantalla recordar al usuario cada cinco segundos que se sigue identificando el mismo código de barras.
+  > Los lectores de pantalla anunciarán cuando se encuentre un nuevo código de barras. No se anunciará el valor. Siempre que el código de barras esté a la vista, los lectores de pantalla recordarán al usuario cada cinco segundos que todavía se está identificando el mismo código de barras.

@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526272"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986362"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>Control del editor de texto enriquecido en PowerApps
-Permite que los usuarios finales dar formato al texto dentro de una área de edición de WYSIWYG.  El formato de salida es HTML.
+# <a name="rich-text-editor-control-in-powerapps"></a>Control de editor de texto enriquecido en PowerApps
+Permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG.  El formato de salida es HTML.
 
 ## <a name="description"></a>Descripción
 El control **Editor de texto enriquecido** proporciona al usuario de la aplicación un área de edición WYSIWYG para dar formato al texto.  El formato de entrada y salida del control es HTML.
@@ -41,27 +41,27 @@ Entre las características admitidas actualmente se incluyen las siguientes:
 Para usar el control dentro de un formulario, seleccione la tarjeta "Editar texto multilínea" y personalícela insertando el control Editor de texto enriquecido.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Default](properties-core.md)**: propiedad de entrada para el valor de texto inicial que se muestra en el editor.
+**[Default](properties-core.md)** : propiedad de entrada para el valor de texto inicial que se muestra en el editor.
 
 **HtmlText**: propiedad de salida para el texto enriquecido resultante en formato HTML.
 
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
 **[Visible](properties-core.md)** : indica si un control está visible u oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
@@ -72,4 +72,4 @@ Para usar el control dentro de un formulario, seleccione la tarjeta "Editar text
 * La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
 
 > [!TIP]
-> Use **ALT+0** mientras se centra el editor para obtener información sobre otros métodos abreviados de teclado.
+> Use **Alt + 0** mientras el editor está centrado para obtener información sobre otros métodos abreviados de teclado.

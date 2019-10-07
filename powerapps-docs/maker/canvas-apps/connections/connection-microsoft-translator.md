@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545709"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994035"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Conexión a Microsoft Translator desde PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -58,7 +57,7 @@ En este tema se muestra cómo utilizar la conexión de Microsoft Translator, có
     `MicrosoftTranslator.Languages()`
 4. Agregue una etiqueta, muévalo debajo de **TargetLang** y establezca su propiedad **[Texto](../controls/properties-core.md)** en la fórmula siguiente:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Escriba algún texto en **Origen** y seleccione un idioma en **TargetLang**. La etiqueta muestra el texto que escribió en el idioma elegido:  
 
     ![Traducir texto de inglés a español](./media/connection-microsoft-translator/translate-text.png)
@@ -72,7 +71,7 @@ Si no lo ha hecho ya, siga los pasos descritos en la sección anterior para trad
 2. Cambie el nombre de la segunda etiqueta (no del cuadro **Origen**) a **Destino**.
 3. Agregue un control **Audio** (menú **Insertar** > **Multimedia**) y establezca la propiedad **Multimedia** en la fórmula siguiente:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Presione F5 o seleccione el botón Vista previa (![](./media/connection-microsoft-translator/preview.png)). Escriba algún texto en **Origen**, seleccione un idioma en **TargetLang** y seleccione el botón Reproducir en el control de audio.
 
     La aplicación reproduce una versión de audio del texto que ha escrito en el idioma elegido.
@@ -113,7 +112,7 @@ Ninguna
 | Nombre |string |No | |
 
 ### <a name="translate"></a>Traducir
-Translate text: Traduce el texto a un idioma especificado mediante Microsoft Translator.
+Traducir texto: Traduce el texto a un idioma especificado mediante Microsoft Translator.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 

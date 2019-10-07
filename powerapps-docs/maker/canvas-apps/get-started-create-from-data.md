@@ -1,24 +1,24 @@
 ---
 title: Generar una aplicación desde Excel | Microsoft Docs
 description: Use PowerApps para generar automáticamente una aplicación de lienzo mediante un archivo de Excel almacenado en una cuenta de almacenamiento en la nube.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/14/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 576e61e6e4ea1aad317fdec8f49f76bfcd1e0b6a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555134"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990262"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
 
@@ -67,23 +67,23 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
 1. Para filtrar la lista, escriba o pegue uno o varios caracteres en el cuadro de búsqueda.
 
-    Por ejemplo, escriba o pegue **miel** para mostrar el registro solo para la que cadena aparece en el nombre, categoría o información general sobre el producto.
+    Por ejemplo, escriba o pegue **miel** para mostrar el único registro para el que aparece esa cadena en el nombre, la categoría o la información general del producto.
 
     ![Ejemplo de filtro](./media/get-started-create-from-data/filter-example.png)
 
 1. Agregar un registro:
 
-    1. Seleccione el icono del signo más.
+    1. Seleccione el icono de signo más.
 
         ![Icono con el signo más](./media/get-started-create-from-data/plus-icon.png)
 
-    1. Agregar los datos que desee y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
+    1. Agregue los datos que desee y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
 
-        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
+        ![Icono guardar](./media/get-started-create-from-data/save-icon.png)
 
 1. Editar un registro:
 
-    1. Seleccione la flecha para el registro que desea editar.
+    1. Seleccione la flecha del registro que desea editar.
 
         ![Flecha siguiente](./media/get-started-create-from-data/next-arrow.png)
 
@@ -91,25 +91,25 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
         ![Icono de lápiz](./media/get-started-create-from-data/pencil-icon.png)
 
-    1. Actualizar uno o varios campos y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
+    1. Actualice uno o varios campos y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
 
-        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
+        ![Icono guardar](./media/get-started-create-from-data/save-icon.png)
 
         Como alternativa, seleccione el icono Cancelar para descartar los cambios.
 
 1. Eliminar un registro:
 
-    1. Seleccione la flecha siguiente del registro que desea eliminar.
+    1. Seleccione la flecha siguiente para el registro que desea eliminar.
 
         ![Flecha siguiente](./media/get-started-create-from-data/next-arrow.png)
 
-    1. Seleccione el icono de Papelera.
+    1. Seleccione el icono de la papelera.
 
         ![Icono de la papelera](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Personalice la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades. Por ejemplo, puede ordenar y filtrar la lista por nombre de producto solo, no categoría o información general.
+Personalice la pantalla de exploración predeterminada para que se ajuste mejor a sus necesidades. Por ejemplo, puede ordenar y filtrar la lista por nombre de producto, no por categoría o por introducción.
 
 > [!div class="nextstepaction"]
 > [Personalizar una pantalla de exploración predeterminada](customize-layout-sharepoint.md).

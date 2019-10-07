@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a76b039ace1b323f7e1160e919722cc83bc6d091
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61558586"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994805"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
 
@@ -52,8 +51,8 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     Esta barra tiene dos partes:
 
-   * *Lista de propiedades*:  Cada pantalla y el control tienen un [conjunto de propiedades](reference-properties.md).  Use esta lista para seleccionar una propiedad específica.  
-   * *Fórmula*:  La fórmula que se calculará para esta propiedad, compuesto por [valores, operadores y funciones](formula-reference.md).
+   * *Lista de propiedades*:  Cada control y pantalla tiene un [conjunto de propiedades](reference-properties.md).  Use esta lista para seleccionar una propiedad específica.  
+   * *Fórmula*:  Fórmula que se va a calcular para esta propiedad, formada por [valores, operadores y funciones](formula-reference.md).
 
      En la barra de fórmulas, puede ver y editar las propiedades del control seleccionado o de la pantalla si no hay controles seleccionados.  Se ve el nombre del control seleccionado en la pestaña **Contenido**:
 
@@ -64,44 +63,44 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     ![Control TextBox agregado](./media/working-with-formulas/add-a-label.png)
 
-    Cuando se agrega una etiqueta, la lista de propiedades muestra automáticamente la propiedad **[Texto](controls/properties-core.md)**, que determina lo que se muestra en el control. De forma predeterminada, el valor de esta propiedad es **"Texto"**.  
+    Cuando se agrega una etiqueta, la lista de propiedades muestra automáticamente la propiedad **[Texto](controls/properties-core.md)** , que determina lo que se muestra en el control. De forma predeterminada, el valor de esta propiedad es **"Texto"** .  
 4. Establezca el valor de la propiedad **[Text](controls/properties-core.md)** en **"Hello World"** escribiendo esa cadena, encerrada entre comillas dobles, en la barra de fórmulas:
 
     ![Usar la etiqueta "Hello World"](./media/working-with-formulas/label-hello-world.png)
 
     La etiqueta refleja este nuevo valor a medida que lo escribe.  Es posible que aparezcan en pantalla iconos de signos de exclamación amarillos mientras escriba. Estos iconos indican errores, pero desaparecerán cuando termine de escribir un valor válido. Por ejemplo, una cadena no encerrada entre comillas dobles no es válida.
 
-    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30;12)**. En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30;12)**. La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
+    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30,12)** . En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30,12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
 
     > [!NOTE]
    > En PowerApps, no anteponga un signo igual o más a la fórmula como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
-5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1;2;3)**.
+5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1,2,3)** .
 
     ![Si escribe la función parcial Sum(1,2,3 sin paréntesis de cierre, aparecen errores](./media/working-with-formulas/label-sum-partial.png)
 
-    Mientras escribe, la barra de fórmulas lo ayuda mostrando la descripción y los argumentos esperados para esta función.  Al igual que con la comilla doble final en **"Hello World"**, la pantalla muestra los signos de exclamación amarillos para indicar un error hasta que escriba el paréntesis final de esta fórmula:
+    Mientras escribe, la barra de fórmulas lo ayuda mostrando la descripción y los argumentos esperados para esta función.  Al igual que con la comilla doble final en **"Hello World"** , la pantalla muestra los signos de exclamación amarillos para indicar un error hasta que escriba el paréntesis final de esta fórmula:
 
     ![Usar la fórmula Sum(1,2,3) completa](./media/working-with-formulas/label-sum.png)
 
 ## <a name="change-a-value-based-on-input"></a>Cambiar un valor en función de la entrada
 
-En Excel, el usuario escribe **= A1 + A2** en una celda para mostrar la suma de todos los valores de las celdas **A1** y **A2** contienen. Si uno o ambos de esos valores cambian, la celda que contiene la fórmula muestra automáticamente el resultado actualizado.
+En Excel, escriba **= a1 + a2** en una celda para mostrar la suma de los valores que contienen las celdas **a1** y **a2** . Si uno o ambos de esos valores cambian, la celda que contiene la fórmula muestra automáticamente el resultado actualizado.
 
-![Animación de volver a calcular la suma de dos números de Excel](./media/working-with-formulas/excel-recalc.gif)
+![Animación de Excel que vuelve a calcular la suma de dos números](./media/working-with-formulas/excel-recalc.gif)
 
-En PowerApps, puede lograr un resultado similar al agregar controles a una pantalla y establecer sus propiedades. En este ejemplo se muestra un control label denominado **Label1** y dos **[entrada de texto](controls/control-text-input.md)** controles, denominados **TextInput1** y  **TextInput2**.
+En PowerApps, puede lograr un resultado similar agregando controles a una pantalla y estableciendo sus propiedades. En este ejemplo se muestra un control de etiqueta denominado **Label1** y dos controles de **[entrada de texto](controls/control-text-input.md)** , denominados **TextInput1** y **TextInput2**.
 
-![Ilustración de volver a calcular la suma de dos números de PowerApps](./media/working-with-formulas/recalc1.png)
+![Ilustrar el recálculo de la suma de dos números en PowerApps](./media/working-with-formulas/recalc1.png)
 
 Con independencia de los números que escriba en los controles de entrada de texto, la etiqueta siempre muestra la suma de esos números porque su propiedad **[Texto](controls/properties-core.md)** está establecida en esta fórmula:
 
 `TextInput1 + TextInput2`
 
-![Animación de volver a calcular la suma de dos números de PowerApps](./media/working-with-formulas/recalc2.gif)
+![Animación de PowerApps que vuelve a calcular la suma de dos números](./media/working-with-formulas/recalc2.gif)
 
-En Excel, puede usar el formato condicional fórmulas para mostrar, por ejemplo, los valores negativos en rojo. En PowerApps, puede usar fórmulas para determinar no solo el valor principal de un control, sino propiedades como el formato. En el ejemplo siguiente, una fórmula para el **[Color](controls/properties-color-border.md)** propiedad de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
+En Excel, puede usar fórmulas de formato condicional para mostrar, por ejemplo, valores negativos en rojo. En PowerApps, puede usar fórmulas para determinar no solo el valor principal de un control, sino propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[color](controls/properties-color-border.md)** de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -115,14 +114,14 @@ Puede configurar la aplicación con fórmulas para que los usuarios puedan cambi
 2. Organice los controles deslizantes de forma que no se superpongan, agregue tres etiquetas y configúrelas para que muestren **Rojo**, **Verde** y **Azul**:
 
     ![Organizar los controles deslizantes y agregar etiquetas para cada componente de color](./media/working-with-formulas/three-sliders.png)
-3. Establezca la propiedad **Max** de cada control deslizante en 255, que es el valor máximo de un componente de color para la función **[RGBA](functions/function-colors.md)**.
+3. Establezca la propiedad **Max** de cada control deslizante en 255, que es el valor máximo de un componente de color para la función **[RGBA](functions/function-colors.md)** .
 
     Puede especificar la propiedad **Max** si la selecciona en la pestaña **Contenido** o en la lista de propiedades:
 
     ![Cambiar el valor máximo de cada control deslizante](./media/working-with-formulas/three-sliders-max.png)
-4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
-    Como ya se ha descrito, para acceder a las propiedades de un control, use el operador "**.**" .  **Slider1.Value** se refiere a la propiedad **[Value](controls/properties-core.md)** del control deslizante, que refleja el lugar donde el usuario ha colocado el control deslizante entre los valores **Min** y **Max**. A medida que escribe esta fórmula, cada control que la contenga se marca con un color entre la pantalla y la barra de fórmulas:
+    Como ya se ha descrito, para acceder a las propiedades de un control, use el operador " **.** " .  **Slider1.Value** se refiere a la propiedad **[Value](controls/properties-core.md)** del control deslizante, que refleja el lugar donde el usuario ha colocado el control deslizante entre los valores **Min** y **Max**. A medida que escribe esta fórmula, cada control que la contenga se marca con un color entre la pantalla y la barra de fórmulas:
 
     ![Cambiar la fórmula para el color de relleno de fondo de la pantalla, pero aún sin concluir](./media/working-with-formulas/three-sliders-partial-rgba.png)
 
@@ -137,9 +136,9 @@ Puede configurar la aplicación con fórmulas para que los usuarios puedan cambi
 
 ## <a name="manage-app-behavior"></a>Administrar el comportamiento de la aplicación
 
-Puede usar fórmulas no solo para realizar cálculos y cambiar la apariencia, sino también para llevar a cabo acciones. Por ejemplo, puede establecer la propiedad **[OnSelect](controls/properties-core.md)** de un botón en una fórmula que incluya la función **[Navigate](functions/function-navigate.md)**. Cuando un usuario selecciona ese botón, aparece la pantalla que especifique en la fórmula.
+Puede usar fórmulas no solo para realizar cálculos y cambiar la apariencia, sino también para llevar a cabo acciones. Por ejemplo, puede establecer la propiedad **[OnSelect](controls/properties-core.md)** de un botón en una fórmula que incluya la función **[Navigate](functions/function-navigate.md)** . Cuando un usuario selecciona ese botón, aparece la pantalla que especifique en la fórmula.
 
-Puede usar algunas funciones, como **[Navigate](functions/function-navigate.md)** y **[Collect](functions/function-clear-collect-clearcollect.md)**, solo en fórmulas de comportamiento.  En la referencia sobre fórmulas, se indica si una función se puede usar solo en este contexto.  
+Puede usar algunas funciones, como **[Navigate](functions/function-navigate.md)** y **[Collect](functions/function-clear-collect-clearcollect.md)** , solo en fórmulas de comportamiento.  En la referencia sobre fórmulas, se indica si una función se puede usar solo en este contexto.  
 
 Puede usar más de una acción en una fórmula de comportamiento si separa las funciones con un punto y coma (;). Por ejemplo, podría actualizar una variable de contexto, insertar datos en un origen de datos y finalmente ir a otra pantalla.
 

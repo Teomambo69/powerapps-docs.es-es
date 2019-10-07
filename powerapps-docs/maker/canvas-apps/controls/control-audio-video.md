@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ac87e794341fe79a6e4f949893b64462c384f83
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: aab2b0bb7b236fe8cc6d7f18beb7a5c8ea8246ae
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544646"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993845"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
@@ -36,33 +36,33 @@ Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTu
 **MostrarControles**: indica si se muestra un reproductor de audio o vídeo, por ejemplo, un botón de reproducción y un control deslizante de volumen, y un control de entrada manuscrita muestra, por ejemplo, iconos para dibujar, borrar y borrar todo.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe ser el título de la secuencia de vídeo o audio.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe ser el título de la secuencia de vídeo o audio.
 
 **PausarAutomáticamente**: indica si un clip de audio o vídeo se detiene automáticamente si el usuario se desplaza a otra pantalla.
 
 **IniciarAutomáticamente**: indica si un control de audio o vídeo empieza a reproducir automáticamente un clip cuando el usuario navega a la pantalla que contiene ese control.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
 **ClosedCaptionsUrl**: solo control de vídeo.  Dirección URL del archivo de los subtítulos en formato de WebVTT.  Ambas direcciones URL, la del vídeo y la de los subtítulos, deben ser HTTPS. El servidor que hospede los archivos de vídeo y los subtítulos debe tener CORS habilitado.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+**[Fill](properties-color-border.md)** : el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[Imagen](properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
+**[Imagen](properties-visual.md)** : el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
 
-**[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+**[PosiciónDeLaImagen](properties-visual.md)** : posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
 
 **AlFinalizar**: indica cómo una aplicación responde cuando finaliza la reproducción de una secuencia de audio o de vídeo.
 
@@ -72,7 +72,7 @@ Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTu
 
 **Paused**: *true* si un control de reproducción multimedia está actualmente en pausa, de lo contrario *false*.
 
-**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
+**[Reset](properties-core.md)** : indica si un control vuelve a su valor predeterminado.
 
 **Inicio**: indica si se reproduce un clip de audio o vídeo.
 
@@ -80,17 +80,17 @@ Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTu
 
 **Time**: posición actual del control multimedia.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
 [**First**( *TableName* )](../functions/function-first-last.md)
@@ -129,7 +129,7 @@ Un control **Vídeo** reproduce una secuencia de vídeo de un archivo o de YouTu
 * Considere la posibilidad de proporcionar una transcripción de audio o vídeo con uno de estos métodos:
   1. Ponga el texto en un elemento **[Label](control-text-box.md)** y colóquelo junto al reproductor multimedia. Opcionalmente, puede crear un elemento **[Button](control-button.md)** para alternar la presentación del texto.
   2. Coloque el texto en otra pantalla. Cree un elemento **[Button](control-button.md)** que vaya a la pantalla y colóquelo junto al reproductor multimedia.
-  3. Si la descripción es breve, puede colocarse en **[AccessibleLabel](properties-accessibility.md)**.
+  3. Si la descripción es breve, puede colocarse en **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="color-contrast"></a>Contraste de color
 Debe haber un contraste de color adecuado entre:

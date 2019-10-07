@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9fdd7f25a729fa71111e1fd5d82e04b7cea874f3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548809"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986411"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -26,18 +26,18 @@ Un control experimental que muestra el contenido de un archivo PDF.
 ## <a name="description"></a>Descripción
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
 
-## <a name="limitations"></a>Limitaciones
-1. La arquitectura de seguridad de PowerApps requiere que el Visor de PDF admitir sólo vínculos HTTPS, no HTTP.  
+## <a name="limitations"></a>Límite
+1. La arquitectura de seguridad de PowerApps requiere que el visor de PDF admita solo vínculos HTTPS, no HTTP.  
 
-2. El **documento** propiedad debe vincular directamente al archivo PDF. No se admiten las redirecciones del servidor o vistas HTML del documento.
+2. La propiedad **Document** debe vincularse directamente al archivo PDF. No se admiten las redirecciones del servidor ni las vistas HTML del documento.
 
-3. El servidor que hospeda el documento no debe requerir la autenticación.
+3. El servidor que hospeda el documento no debe requerir autenticación.
 
-4. Es posible que no pueda ver un documento PDF de la aplicación si el documento reside en un servidor que tenga restricciones de recursos entre orígenes (CORS) configuración de uso compartido. Para resolver este problema, el servidor que hospeda los documentos PDF debe permitir solicitudes entre orígenes desde powerapps.com.
+4. Es posible que no pueda ver un documento PDF en la aplicación si el documento reside en un servidor que tiene una configuración de uso compartido de recursos entre orígenes (CORS) restrictiva. Para resolver este problema, el servidor que hospeda documentos PDF debe permitir solicitudes entre orígenes de powerapps.com.
 
-Usuarios de la aplicación pueden solucionar estas limitaciones al abrir los documentos PDF en un explorador externo, como se le pregunte si el control no puede abrir un documento. Esta opción también está disponible en el menú de control para todos los documentos externos.
+Los usuarios de la aplicación pueden solucionar estas limitaciones abriendo documentos PDF en un explorador externo, como se le pregunta si el control no puede abrir un documento. Esta opción también está disponible en el menú de control para todos los documentos externos.
 
-Los creadores de aplicaciones pueden solucionar estas limitaciones mediante la inclusión de documentos PDF como recursos multimedia en la aplicación. De este modo, el control de Visor de PDF siempre puede mostrar el documento.
+Los responsables de aplicaciones pueden solucionar estas limitaciones incluyendo documentos PDF como recursos multimedia en la aplicación. De este modo, el control de PDF Viewer siempre puede mostrar el documento.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Documento**: la dirección URL entre comillas dobles, de un archivo PDF.
@@ -45,21 +45,21 @@ Los creadores de aplicaciones pueden solucionar estas limitaciones mediante la i
 ## <a name="additional-properties"></a>Propiedades adicionales
 **ActualZoom**: el zoom real del control, que puede diferir del zoom solicitado con la propiedad **Ampliar**.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
 **CurrentFindText**: el término de búsqueda que está en uso en ese momento.
 
 **CurrentPage**: el número de la página en un archivo PDF que se está mostrando en ese momento.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+**[Fill](properties-color-border.md)** : el color de fondo de un control.
 
 **FindNext**: busca la siguiente instancia de **FindText** en el documento.
 
@@ -67,39 +67,39 @@ Los creadores de aplicaciones pueden solucionar estas limitaciones mediante la i
 
 **FindText**: el término de búsqueda para buscar en el documento.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
 **OnStateChange**: cómo una aplicación responde cuando cambia el estado del control.
 
-**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
 
 **Página**: el número de la página que desea mostrar.
 
 **PageCount**: el número de páginas en un documento.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
 **MostrarControles**: indica si se muestra un reproductor de audio o vídeo, por ejemplo, un botón de reproducción y un control deslizante de volumen, y un control de entrada manuscrita muestra, por ejemplo, iconos para dibujar, borrar y borrar todo.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **Zoom**: el porcentaje en que se amplía una imagen de una cámara o la vista de un archivo en un visor de PDF.
 
@@ -109,9 +109,9 @@ Agregue un control **Visor de archivos PDF** y establezca su propiedad **Documen
 
   **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
-    The control shows the PDF file.
+El control mostrará el archivo PDF.
 
-    Don't know how to [add and configure a control](../add-configure-controls.md)?
+¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 

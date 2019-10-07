@@ -1,24 +1,24 @@
 ---
 title: Almacenamiento y publicación de una aplicación de lienzo | Microsoft Docs
 description: Instrucciones paso a paso para guardar y publicar aplicaciones de lienzo para creadores de aplicaciones
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 19d793b879d42e9446cc8ad366bc08879162185d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536733"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995767"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -60,6 +60,6 @@ La versión **Activa** está publicada para todos los usuarios con quien se comp
 Para publicar la versión más reciente, pulse o haga clic en **Publicar esta versión** y pulse o haga clic en **Publicar esta versión** en el cuadro de diálogo **Publicar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
-* Busque y ejecute la aplicación un [explorador](../../user/run-app-browser.md) o en un [teléfono](../../user/run-app-client.md).
+* Busque y ejecute la aplicación en un [Explorador](../../user/run-app-browser.md) o en un [teléfono](../../user/run-app-client.md).
 * [Cambie el nombre de una aplicación](set-name-tile.md) desde powerapps.com.
 * [Restaure una aplicación](restore-an-app.md) si tiene varias versiones de una aplicación.

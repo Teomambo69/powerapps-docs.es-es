@@ -1,152 +1,151 @@
 ---
-title: Funciones AsType y IsType en las aplicaciones de lienzo | Microsoft Docs
-description: Información de referencia, incluida la sintaxis y un ejemplo, para las funciones AsType y IsType en las aplicaciones de lienzo
+title: Funciones astype y IsType en aplicaciones de Canvas | Microsoft Docs
+description: Información de referencia, incluida la sintaxis y un ejemplo, para las funciones astype y IsType en las aplicaciones de Canvas
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/17/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 999653159f838e840f7f569aa9953633a6a70065
-ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
+ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65986332"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993010"
 ---
-# <a name="astype-and-istype-functions-in-canvas-apps"></a>Funciones AsType y IsType en las aplicaciones de lienzo
+# <a name="astype-and-istype-functions-in-canvas-apps"></a>Funciones astype y IsType en aplicaciones de Canvas
 
-Comprueba una referencia del registro para un tipo de entidad concreto (**IsType**) y trata la referencia como un tipo específico (**AsType**).
+Comprueba una referencia de registro para un tipo de entidad específico (**IsType**) y trata la referencia como un tipo específico (**astype**).
 
 ## <a name="description"></a>Descripción
 
-Lectura [comprender las referencias de registros y búsquedas polimórficas](../working-with-references.md) para una introducción más amplia y más detalles.
+Lea [comprender las referencias de registros y las búsquedas polimórficas](../working-with-references.md) para obtener una introducción más amplia y más detalles.
 
-Normalmente, un campo de búsqueda hace referencia a los registros de una entidad determinada. Dado que el tipo de entidad es bien establecido, puede acceder a los campos de la búsqueda mediante el uso de una notación de puntos simple. Por ejemplo, **primero (cuentas). " Contacto principal '.' El nombre completo '** recorre desde el **cuentas** entidad a la **contacto principal** registros en el **contactos** entidad y extrae el **nombre completo**  campo.
+Normalmente, un campo de búsqueda hace referencia a los registros de una entidad determinada. Dado que el tipo de entidad está bien establecido, puede tener acceso a los campos de la búsqueda mediante una notación de puntos simple. Por ejemplo, **primero (cuentas). Contacto principal '. ' Nombre completo '** se dirige de la entidad **accounts** al registro de **contacto principal** de la entidad **Contacts** y extrae el campo de **nombre completo** .
 
-Common Data Service también admite los campos de búsqueda polimórfica, lo que pueden hacer referencia a los registros de un conjunto de entidades, como en estos ejemplos.
+Common Data Service también admite campos de búsqueda polimórficos, que pueden hacer referencia a los registros de un conjunto de entidades, como en estos ejemplos.
 
 | Campo de búsqueda | Puede hacer referencia a |
 |--------------|--------------|
-| **Owner** | **Los usuarios** o **equipos** |
+| **Propietario** | **Usuarios** o **equipos** |
 | **Customer** | **Cuentas** o **contactos** |
-| **Regarding** | **Cuentas**, **contactos**, **artículos de conocimientos**, etcetera. |
+| **Sobre** | **Cuentas**, **contactos**, **artículos de conocimientos**, etc. |
 
 <!--note from editor: Change "Knowledge Articles" to "Knowledge Base articles" if that is what is being referenced.   -->
 
-En las fórmulas de la aplicación de lienzo, puede utilizar las referencias del registro para trabajar con búsquedas polimórficas. Dado que una referencia de registro puede hacer referencia a entidades diferentes, no sabe qué campos estarán disponibles al escribir una fórmula. El *. Campo* notación no está disponible. Las fórmulas se deben adaptar a los registros que se encuentra de la aplicación cuando se ejecuta.
+En las fórmulas de canvas-App, puede usar referencias de registros para trabajar con búsquedas polimórficas. Dado que una referencia de registro puede hacer referencia a distintas entidades, no sabe qué campos estarán disponibles cuando escriba una fórmula. El *.* La notación de campo no está disponible. Dichas fórmulas se deben adaptar a los registros que encuentra la aplicación cuando se ejecuta.
 
-El **IsType** función comprueba si una referencia de registro hace referencia a un tipo de entidad concreto. La función devuelve un valor booleano TRUE o FALSE.
+La función **IsType** comprueba si una referencia de registro hace referencia a un tipo de entidad concreto. La función devuelve un valor booleano TRUE o FALSE.
 
-El **AsType** función trata una referencia de registro como un tipo de entidad concreto, a veces se denomina *conversión*. Puede usar el resultado como si fuese un registro de la entidad y, de nuevo, use el *. Campo* notación para tener acceso a todos los campos de ese registro. Se produce un error si la referencia no es del tipo específico.
+La función **astype** trata una referencia de registro como un tipo de entidad concreto, que a veces se conoce como *conversión*. Puede usar el resultado como si fuera un registro de la entidad y, de nuevo, usar *.* Notación de campo para tener acceso a todos los campos de ese registro. Se produce un error si la referencia no es del tipo específico.
 
-Use estas funciones juntas para probar primero el tipo de entidad de un registro y, a continuación, tratarlo como un registro de ese tipo para que los campos están disponibles:
+Use estas funciones juntas para probar primero el tipo de entidad de un registro y, a continuación, tratarlo como un registro de ese tipo para que los campos estén disponibles:
 
-```powerapps-comma
-If( IsType( First( Accounts ).Owner; Users );
-    AsType( First( Accounts ).Owner; Users ).'Full Name';
-    AsType( First( Accounts ).Owner; Teams ).'Team Name'
+```powerapps-dot
+If( IsType( First( Accounts ).Owner, Users ),
+    AsType( First( Accounts ).Owner, Users ).'Full Name',
+    AsType( First( Accounts ).Owner, Teams ).'Team Name'
 )
 ```
 
-Necesita estas funciones solo si está accediendo a los campos de una referencia de registro. Por ejemplo, puede utilizar referencias de registros en el [ **filtro** ](function-filter-lookup.md) funcionando sin necesidad de **IsType** o **AsType**:
+Solo necesita estas funciones si tiene acceso a los campos de una referencia de registro. Por ejemplo, puede usar referencias de registros en la función de [**filtro**](function-filter-lookup.md) sin **IsType** o **astype**:
 
-```powerapps-comma
-Filter( Accounts; Owner = First( Users ) )
+```powerapps-dot
+Filter( Accounts, Owner = First( Users ) )
 ```
 
-De forma similar, puede utilizar referencias de registros con el [ **Patch** ](function-patch.md) función:
+Del mismo modo, puede usar referencias de registros con la función [**patch**](function-patch.md) :
 
-```powerapps-comma
-Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
-Si se utilizan en un contexto de registro, por ejemplo, dentro de un [ **galería** ](../controls/control-gallery.md) o [ **Editar formulario** ](../controls/control-form-detail.md) control, es posible que deba usar el [global operador de desambiguación](operators.md#disambiguation-operator) para hacer referencia al tipo de entidad. Por ejemplo, esta fórmula sería eficaz para una galería que muestra una lista de contactos donde **nombre de la compañía** es un **cliente** búsqueda:
+Si se usa en un contexto de registro, como en un control de [**Galería**](../controls/control-gallery.md) o de [**edición de formulario**](../controls/control-form-detail.md) , puede que tenga que usar el [operador de desambiguación global](operators.md#disambiguation-operator) para hacer referencia al tipo de entidad. Por ejemplo, esta fórmula sería efectiva en una galería que muestre una lista de contactos en la que **el nombre** de la compañía es una búsqueda de **clientes** :
 
-```powerapps-comma
-If( IsType( ThisItem.'Company Name'; [@Accounts] );
-    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsType( ThisItem.'Company Name', [@Accounts] ),
+    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
-Para ambas funciones, especifique el tipo a través del nombre del origen de datos que está conectado a la entidad. Para que la fórmula para que funcione, debe agregar también un origen de datos a la aplicación para cualquier tipo que se desea probar o convertir. Por ejemplo, debe agregar el **usuarios** entidad como un origen de datos si desea usar **IsType** y **AsType** con un **propietario** búsqueda y registros de esa entidad. Puede agregar solo los orígenes de datos que utiliza realmente en la aplicación; no es necesario agregar todas las entidades que podría hacer referencia a una búsqueda.
+En ambas funciones, se especifica el tipo mediante el nombre del origen de datos que está conectado a la entidad. Para que la fórmula funcione, también debe agregar un origen de datos a la aplicación para cualquier tipo que desee probar o convertir. Por ejemplo, debe agregar la entidad **users** como origen de datos si desea usar **IsType** y **astype** con una búsqueda de **propietario** y registros de esa entidad. Solo puede Agregar los orígenes de datos que usa realmente en la aplicación; no es necesario agregar todas las entidades a las que podría hacer referencia una búsqueda.
 
-Si la referencia del registro es *en blanco*, **IsType** devuelve FALSE, y **AsType** devuelve *en blanco*. Todos los campos de un *en blanco* registro será *en blanco*.
+Si la referencia del registro está *en blanco*, **IsType** devuelve false y **astype** devuelve *Blank*. Todos los campos de un registro *en blanco* estarán *en blanco*.
 
 ## <a name="syntax"></a>Sintaxis
 
-**AsType**( *RecordReference*; *EntityType* )
+**Astype**( *RecordReference*, *EntityType* )
 
-- *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de varias entidades.
-- *EntityType* : requerido. La entidad concreta para que se va a probar.
+- *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
+- *EntityType* : requerido. Entidad específica que se va a probar.
 
-**IsType**( *RecordReference*; *EntityType* )
+**IsType**( *RecordReference*, *EntityType* )
 
-- *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de varias entidades.
-- *EntityType* : requerido. La entidad concreta a la que se debe convertir el registro.
+- *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
+- *EntityType* : requerido. La entidad específica a la que se debe convertir el registro.
 
 ## <a name="example"></a>Ejemplo
 
-[Comprender las referencias de registros y búsquedas polimórficas](../working-with-references.md) contiene ejemplos extensos.
+[Comprender las referencias de registros y las búsquedas polimórficas](../working-with-references.md) contiene extensos ejemplos.
 
-1. Creación de una aplicación de lienzo en blanco para tabletas.
+1. Cree una aplicación de lienzo en blanco para tabletas.
 
-1. En el **vista** ficha, seleccione **orígenes de datos**y, a continuación, agregue el **contactos** y **cuentas** entidades como orígenes de datos.
+1. En la pestaña **Ver** , seleccione **orígenes de datos**y, a continuación, agregue las entidades **contactos** y **cuentas** como orígenes de datos.
     > [!div class="mx-imgBorder"]
-    > ![Aplicación en blanco con dos orígenes de datos: cuentas y contactos](media/function-astype-istype/contacts-add-datasources.png)
+    > @no__t aplicación 0Blank con dos orígenes de datos: accounts y Contacts @ no__t-1
 
-1. Insertar un **galería** controlar con un **en blanco vertical** orientación.
-
-    > [!div class="mx-imgBorder"]
-    > ![Inserte un control de galería con un diseño vertical en blanco](media/function-astype-istype/contacts-customer-gallery.png)
-
-1. En el **propiedades** pestaña situada cerca del lado derecho de la pantalla, establezca la galería **elementos** propiedad **contactos**.
+1. Inserte un control **Galería** con una orientación **vertical en blanco** .
 
     > [!div class="mx-imgBorder"]
-    > ![Conjunto de elementos a los contactos en el panel Propiedades](media/function-astype-istype/contacts-customer-datasource.png)
+    > ![Insert un control de galería con un diseño vertical en blanco @ no__t-1
 
-1. Establece el diseño de la galería en **título y subtítulo**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Abra el selector de diseño desde el panel de propiedades](media/function-astype-istype/contacts-customer-layout.png)
+1. En la pestaña **propiedades** situada cerca del lado derecho de la pantalla, establezca la propiedad **elementos** de la galería en **contactos**.
 
     > [!div class="mx-imgBorder"]
-    > ![Diseño de conjunto para el título y subtítulo](media/function-astype-istype/contacts-customer-flyout.png)
+    > @no__t 0Set elementos a contactos en el panel Propiedades @ no__t-1
 
-1. En el **datos** panel, abra el **Title1** lista y, a continuación, seleccione **nombre completo**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Valor de título del conjunto](media/function-astype-istype/contacts-customer-title.png)
-
-1. Seleccione el **subtítulo1** control de etiqueta.
+1. Establezca el diseño de la galería en **título y subtítulo**.
 
     > [!div class="mx-imgBorder"]
-    > ![Valor del conjunto de subtítulo](media/function-astype-istype/contacts-customer-subtitle.png)
+    > @no__t: 0Open el selector de diseño del panel de propiedades @ no__t-1
 
-1. Establecer el **texto** propiedad de **subtítulo1** en esta fórmula:
+    > [!div class="mx-imgBorder"]
+    > @no__t: diseño de 0Set al título y subtítulo @ no__t-1
 
-    ```powerapps-comma
-    If( IsBlank( ThisItem.'Company Name' ); "--";
-        IsType( ThisItem.'Company Name'; [@Accounts] );
-            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+1. En el panel **datos** , abra la lista **Title1** y, a continuación, seleccione **nombre completo**.
+
+    > [!div class="mx-imgBorder"]
+    > @no__t: valor de título 0Set @ no__t-1
+
+1. Seleccione el control etiqueta **Subtitle1** .
+
+    > [!div class="mx-imgBorder"]
+    > @no__t: valor de subtítulo de 0Set @ no__t-1
+
+1. Establezca la propiedad **Text** de **Subtitle1** en esta fórmula:
+
+    ```powerapps-dot
+    If( IsBlank( ThisItem.'Company Name' ), "--",
+        IsType( ThisItem.'Company Name', [@Accounts] ),
+            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Pantalla ahora está completa mostrando cuentas y contactos mezclado en la Galería](media/function-astype-istype/contacts-customer-complete.png)
+    > ![Screen se ha completado y ahora se muestran las cuentas y los contactos combinados en la Galería @ no__t-1
 
-    El subtítulo en la galería muestra estos valores:
-    - "--" si el **nombre de la compañía** es *en blanco*.
-    - "Cuenta:" y, a continuación, el **nombre de la cuenta** arrastrándolo desde la **cuentas** entidad si la **nombre de la compañía** campo hace referencia a una cuenta.
-    - "Póngase en contacto con:" y, a continuación, el **nombre completo** arrastrándolo desde la **contactos** entidad si la **nombre de la compañía** campo hace referencia a un contacto.
+    El subtítulo de la galería muestra estos valores:
+    - "--" si el valor de **"Company name"** está *en blanco*.
+    - "Cuenta:" y, a continuación, el campo **nombre de cuenta** de la entidad **cuentas** si el campo Nombre de la **compañía** hace referencia a una cuenta.
+    - "Contacto:" y, a continuación, el campo **nombre completo** de la entidad **contactos** si el campo Nombre de la **compañía** hace referencia a un contacto.
 
-    Los resultados pueden diferir de los de este tema, porque utiliza datos de ejemplo que se ha modificado para mostrar otros tipos de resultados.
+    Los resultados pueden diferir de los de este tema, ya que usa datos de ejemplo que se modificaron para mostrar tipos adicionales de resultados.

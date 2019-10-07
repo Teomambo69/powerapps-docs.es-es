@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
-ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66225175"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988875"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
 
@@ -66,9 +66,9 @@ Además de contener controles, las tarjetas constituyen en sí mismas controles 
 
 ![](./media/working-with-cards/advanced-locked.png)
 
-Inmediatamente vemos una de las propiedades más importantes de la tarjeta: **[DataField](controls/control-card.md)**. Esta propiedad indica qué campo del origen de datos puede ver y editar el usuario en esta tarjeta.  
+Inmediatamente vemos una de las propiedades más importantes de la tarjeta: **[DataField](controls/control-card.md)** . Esta propiedad indica qué campo del origen de datos puede ver y editar el usuario en esta tarjeta.  
 
-En la pestaña **Avanzado**, el banner que aparece en la parte superior indica que las propiedades de esta tarjeta están bloqueadas. También aparece un icono de bloqueo junto a las propiedades **[DataField](controls/control-card.md)**, **[DisplayName](controls/control-card.md)** y **[Required](controls/control-card.md)**. El panel derecho fue el que creó estas fórmulas y el bloqueo impide que se realicen cambios accidentales en estas propiedades.
+En la pestaña **Avanzado**, el banner que aparece en la parte superior indica que las propiedades de esta tarjeta están bloqueadas. También aparece un icono de bloqueo junto a las propiedades **[DataField](controls/control-card.md)** , **[DisplayName](controls/control-card.md)** y **[Required](controls/control-card.md)** . El panel derecho fue el que creó estas fórmulas y el bloqueo impide que se realicen cambios accidentales en estas propiedades.
 
 ![](./media/working-with-cards/lock-icons.png)
 
@@ -111,7 +111,7 @@ Después de desbloquear una tarjeta, puede cambiar la forma en que interactúa c
 Más adelante se muestran algunas directrices sobre cómo deben funcionar los controles con su tarjeta y cómo deben funcionar las tarjetas con el formulario. Se trata únicamente de directrices. Como ocurre con todos los controles de PowerApps, puede crear fórmulas que hagan referencia a cualquier otro control de PowerApps, y lo mismo ocurre para las tarjetas y los controles dentro de estas. Sea creativo: puede crear una aplicación de muchas maneras.  
 
 ### <a name="datafield-property"></a>Propiedad DataField
-La propiedad más importante de la tarjeta es **[DataField](controls/control-card.md)**.  Esta propiedad controla la validación, qué campo se actualiza y otros aspectos de la tarjeta.
+La propiedad más importante de la tarjeta es **[DataField](controls/control-card.md)** .  Esta propiedad controla la validación, qué campo se actualiza y otros aspectos de la tarjeta.
 
 ### <a name="information-flowing-in"></a>Información que entra
 Como contenedor, el formulario pone **ThisItem** a disposición de todas las tarjetas que incluye. Este registro contiene todos los campos del registro actual de interés.  
@@ -120,14 +120,14 @@ La propiedad **[Default](controls/properties-core.md)** de todas las tarjetas de
 
 Todos los controles de la tarjeta deben hacer referencia a **Parent.Default** para tener acceso al valor del campo. Esta estrategia proporciona un nivel de encapsulación para la tarjeta, de forma que la propiedad **[Default](controls/properties-core.md)** de esta pueda cambiar sin que lo hagan sus fórmulas internas.
 
-De forma predeterminada, las propiedades **DefaultValue** y **[Required](controls/control-card.md)** se toman de los metadatos del origen de datos basándose en la propiedad **[DataField](controls/control-card.md)**. Puede reemplazar estas fórmulas con su propia lógica, integrando los metadatos del origen de datos mediante el uso de la función **[DataSourceInfo](functions/function-datasourceinfo.md)**.
+De forma predeterminada, las propiedades **DefaultValue** y **[Required](controls/control-card.md)** se toman de los metadatos del origen de datos basándose en la propiedad **[DataField](controls/control-card.md)** . Puede reemplazar estas fórmulas con su propia lógica, integrando los metadatos del origen de datos mediante el uso de la función **[DataSourceInfo](functions/function-datasourceinfo.md)** .
 
 ### <a name="information-flowing-out"></a>Información que sale
 Después de que el usuario modifique un registro usando los controles de las tarjetas, la función **[SubmitForm](functions/function-form.md)** guarda esos cambios en el origen de datos. Cuando se ejecuta esa función, el control de formulario lee los valores de la propiedad **[DataField](controls/control-card.md)** de cada tarjeta para saber qué campo debe cambiar.  
 
 El control de formulario también lee el valor de la propiedad **[Update](controls/control-card.md)** de cada tarjeta. Este valor se almacenará en el origen de datos para este campo. Este es el lugar para aplicar otra transformación, quizás para revertir la transformación que se ha aplicado en la fórmula **[Default](controls/properties-core.md)** de la tarjeta.
 
-La propiedad **Valid** se toma de los metadatos del origen de datos, basándose en la propiedad **[DataField](controls/control-card.md)**. También depende de la propiedad **[Required](controls/control-card.md)** y de si la propiedad **[Update](controls/control-card.md)** contiene un valor. Si el valor de la propiedad **[Update](controls/control-card.md)** no es válido, la propiedad **Error** proporciona un mensaje de error descriptivo.
+La propiedad **Valid** se toma de los metadatos del origen de datos, basándose en la propiedad **[DataField](controls/control-card.md)** . También depende de la propiedad **[Required](controls/control-card.md)** y de si la propiedad **[Update](controls/control-card.md)** contiene un valor. Si el valor de la propiedad **[Update](controls/control-card.md)** no es válido, la propiedad **Error** proporciona un mensaje de error descriptivo.
 
 Si la propiedad **[DataField](controls/control-card.md)** de una tarjeta está *en blanco*, la tarjeta sencillamente es un contenedor de controles. Sus propiedades **Valid** y **[Update](controls/control-card.md)** no participan cuando se envía el formulario.
 
@@ -136,7 +136,7 @@ Echemos un vistazo a los controles que componen una tarjeta de entrada de datos 
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-En este gráfico, los controles dentro de la tarjeta de datos han sido etiquetados:
+En este gráfico, los controles de la tarjeta de datos tienen la etiqueta:
 
 ![](./media/working-with-cards/dissect-card2.png)
 
@@ -159,12 +159,12 @@ Para rellenar estos controles con datos, se pueden tomar sus propiedades de las 
 | **TextErrorMessage.Text** |**Parent.Error** |Si se produce un problema de validación, la propiedad **Error** de la tarjeta proporciona el correspondiente mensaje de error. |
 
 > [!NOTE]
-> El **Parent.Error** propiedad es una propiedad de solo salida que no se puede establecer mediante una fórmula. Por lo tanto, esta propiedad no aparecerá en la lista de propiedades cerca de la esquina superior izquierda o en el **propiedades** o **avanzadas** pestañas cerca del borde derecho. La barra de fórmulas sugiere esta propiedad si está escribiendo una fórmula que podría hacer referencia a la propiedad.
+> La propiedad **Parent. error** es una propiedad de solo salida que no se puede establecer mediante una fórmula. Por lo tanto, esta propiedad no aparecerá en la lista de propiedades cerca de la esquina superior izquierda o en las pestañas **propiedades** o **avanzadas** cerca del borde derecho. La barra de fórmulas sugiere esta propiedad si está escribiendo una fórmula que podría hacer referencia a la propiedad.
 
 Para extraer información de estos controles y volver a insertarla en el origen de datos, tenemos las siguientes fórmulas clave:
 
 | Nombre del control | Fórmula | Descripción |
 | --- | --- | --- |
 | **DataCard.DataField** |**"ApproverEmail"** |El nombre del campo que el usuario puede mostrar y editar en esta tarjeta. |
-| **DataCard.Update** |**InputText.Text** |El valor que se valida y se vuelve a insertar en el origen de datos cuando se ejecuta **[SubmitForm](functions/function-form.md)**. |
+| **DataCard.Update** |**InputText.Text** |El valor que se valida y se vuelve a insertar en el origen de datos cuando se ejecuta **[SubmitForm](functions/function-form.md)** . |
 

@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9c290d28db7ae35d33f4ceb2cd56c3a3ad79b01c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d9595a466477f9fc8ac535b08f43fe352ea0fd8b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559389"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993512"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.
@@ -28,30 +27,30 @@ Controles que muestran datos como gráficos con ejes x e y.
 **Gráfico de columnas** y **Gráfico de líneas** son controles agrupados. Cada grupo contiene tres controles: un control **[Etiqueta](control-text-box.md)** para el título, el gráfico y un control **Leyenda**.
 
 ## <a name="chart-key-properties"></a>Propiedades principales del gráfico
-**[Elementos](properties-core.md)**: origen de datos que aparece en un control, como una galería, una lista o un gráfico.
+**[Elementos](properties-core.md)** : origen de datos que aparece en un control, como una galería, una lista o un gráfico.
 
 **NúmeroDeSeries**: indica el número de columnas de datos reflejadas en un gráfico de columnas o de líneas.
 
 ## <a name="additional-chart-properties"></a>Propiedades adicionales del gráfico
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[Color](properties-color-border.md)**: el color del texto en un control.
+**[Color](properties-color-border.md)** : el color del texto en un control.
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
 **GridStyle**: indica si un gráfico de columnas o de líneas muestra su eje x, su eje y, ambos o ninguno.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
 **ItemColorSet**: color de cada punto de datos de un gráfico.
 
@@ -69,17 +68,17 @@ Controles que muestran datos como gráficos con ejes x e y.
 
 * La propiedad **AnchoDeBarraMínimo** está disponible para el control **Gráfico de columnas** pero no para el control **Gráfico de líneas**.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
 **SeriesAxisMax**: el valor máximo del eje y para un gráfico de columnas o de líneas.
 
@@ -89,19 +88,19 @@ Controles que muestran datos como gráficos con ejes x e y.
 
 * La propiedad **SeriesAxisMin** está disponible para el control **Gráfico de columnas** pero no para el control **Gráfico de líneas**.
 
-**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
+**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **XLabelAngle**: el ángulo de las etiquetas debajo del eje x de un gráfico de columnas o de líneas.
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 **EjeYMáximo**: el valor máximo del eje y de un gráfico de columnas o de líneas.
 
@@ -114,11 +113,11 @@ Controles que muestran datos como gráficos con ejes x e y.
 **YLabelAngle**: el ángulo de las etiquetas junto al eje y de un gráfico de líneas o de columnas.
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    
