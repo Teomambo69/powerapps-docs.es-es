@@ -47,6 +47,10 @@
               items:
                 - name: Preguntas más frecuentes acerca de actividades
                   href: ../user/faq-for-timeline-and-activity.md
+            - name: Uso del campo de búsqueda en un registro
+              href: ../user/lookup-field.md
+            - name: Vista de una tarjeta de perfil
+              href: ../user/profile-cards.md
             - name: Asignar o compartir registros
               href: ../user/assign-or-share-records.md
             - name: Compartir registros con Access Team
@@ -59,6 +63,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
         - name: Buscar registros
           items:
+            - name: Comparación de las opciones de búsqueda
+              href: ../user/search-and-find.md
             - name: Buscar registros
               href: ../user/search-records.md
             - name: Usar la búsqueda avanzada
