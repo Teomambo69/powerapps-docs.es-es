@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992290"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funciones SaveData y LoadData en PowerApps
 Guarda y vuelve a cargar una [colección](../working-with-data-sources.md#collections).
@@ -39,7 +40,7 @@ Estas funciones están limitadas por la cantidad de memoria de la aplicación di
 El almacenamiento está cifrado y se encuentra en una ubicación privada en el dispositivo local, aislado de otros usuarios y otras aplicaciones.
 
 ## <a name="syntax"></a>Sintaxis
-**SaveData**( *Colección*, *Nombre* )<br>**LoadData**( *Collection*, *Name* [, *IgnoreNonexistentFile* ])
+**SaveData**( *Colección*; *Nombre* )<br>**LoadData**( *Collection*; *Name* [; *IgnoreNonexistentFile* ])
 
 * *Colección*: requerido.  Colección para almacenar o cargar.
 * *Nombre*: requerido.  Nombre del almacenamiento. Tiene que usar el mismo nombre para guardar y cargar el mismo conjunto de datos. El espacio de nombres no se comparte con otros usuarios o aplicaciones.
@@ -49,6 +50,6 @@ El almacenamiento está cifrado y se encuentra en una ubicación privada en el d
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **If (Connection. Connected, ClearCollect (LocalTweets, Twitter. SearchTweet ("PowerApps", {maxResults: 100})), LoadData (LocalTweets, "tweets", true))** |Si el dispositivo está conectado, cargue la colección LocalTweets del servicio Twitter; si no lo está, cargue la colección de la caché de archivos local. |El contenido se presenta tanto si el dispositivo está conectado como desconectado. |
-| **SaveData(LocalTweets, "Tweets")** |Guarde la colección LocalTweets como una caché de archivos local en el dispositivo. |Los datos se guardan localmente para que **LoadData** puede cargarlos en una colección. |
+| **If (Connection. Connected; ClearCollect (LocalTweets; Twitter. SearchTweet ("PowerApps"; {maxResults: 100})); LoadData (LocalTweets; "tweets"; true))** |Si el dispositivo está conectado, cargue la colección LocalTweets del servicio Twitter; si no lo está, cargue la colección de la caché de archivos local. |El contenido se presenta tanto si el dispositivo está conectado como desconectado. |
+| **SaveData(LocalTweets; "Tweets")** |Guarde la colección LocalTweets como una caché de archivos local en el dispositivo. |Los datos se guardan localmente para que **LoadData** puede cargarlos en una colección. |
 

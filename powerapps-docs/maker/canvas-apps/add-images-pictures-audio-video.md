@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71994372"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 
@@ -158,7 +159,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 8. En la pestaña **Insertar**, agregue el control **Botón** y establezca la propiedad **AlSeleccionar** en esta fórmula:
 
-    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
+    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
 
 9. Agregue un control de la **Galería de imágenes** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Drawings`. La propiedad **Image** (Imagen) del control de la galería se establece automáticamente en `ThisItem.Image`.
 

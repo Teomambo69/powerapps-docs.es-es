@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71985217"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>Funciones de Date y Time en PowerApps
 Convierte los componentes de fecha y hora en un valor de fecha y hora.
@@ -37,13 +38,13 @@ Consulte las funciones **[DateValue](function-datevalue-timevalue.md)** , **[Tim
 Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.md) para más información.
 
 ## <a name="syntax"></a>Sintaxis
-**Date**( *Year*, *Month*, *Day* )
+**Date**( *Year*; *Month*; *Day* )
 
 * *Year*: requerido.  Los números mayores a 1899 se interpretan como un absoluto (1980 se interpreta como 1980). Los números comprendidos entre 0 y 1899 se interpretan en relación con 1900. (Por ejemplo, 80 se interpreta como 1980).
 * *Month*: requerido.  Un número comprendido entre 1 y 12.
 * *Day*: requerido. Un número comprendido entre 1 y 31.
 
-**Time**( *Hour*, *Minute*, *Second* )
+**Time**( *Hour*; *Minute*; *Second* )
 
 * *Hour*: requerido.  Un número comprendido entre 0 (12:00 a. m.) y 23 (11:00 p. m).
 * *Minute*: requerido. Un número comprendido entre 0 y 59.
@@ -53,10 +54,10 @@ Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.m
 ### <a name="date"></a>Fecha
 Si un usuario escribe **1979** en un control de entrada de texto denominado **HireYear**, **3** en otro control denominado **HireMonth** y **17** en un tercer control denominado **HireDay**, esta función debería devolver **3/17/1979**:
 
-**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
+**Date(Value(HireYear.Text); Value(HireMonth.Text); Value(HireDay.Text))**
 
 ### <a name="time"></a>Time
 Si un usuario escribe **14** en un control de entrada de texto denominado **BirthHour**, **50** en otro control denominado **BirthMinute** y **24** en un tercer control denominado **BirthSecond**, esta función debería devolver **02:50:24 p**.
 
-**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
+**Text(Time(Value(BirthHour.Text); Value(BirthMinute.Text); Value(BirthSecond.Text)); "hh:mm:ss a/p")**
 

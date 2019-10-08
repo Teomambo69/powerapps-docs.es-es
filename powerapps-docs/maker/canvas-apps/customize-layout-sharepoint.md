@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986050"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Guía Personalización de una galería en PowerApps
 
@@ -95,7 +96,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 1. Copie esta fórmula y, a continuación, péguela en la barra de fórmulas.
 
-    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
+    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
 
     Con esta fórmula, se asegura de que:
 

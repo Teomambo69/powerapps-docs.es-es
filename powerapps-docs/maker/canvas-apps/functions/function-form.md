@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992690"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funciones EditForm, NewForm, SubmitForm, ResetForm y ViewForm de PowerApps
 Vea, edite o cree un elemento, guarde el contenido y restablezca los controles de un control **[Editar formulario](../controls/control-form-detail.md)** .
@@ -110,12 +111,12 @@ Consulte [Formularios de datos](../working-with-forms.md) para obtener ejemplos 
    * Si se produce un error en el envío, **ErrorText** mostrará un mensaje de error descriptivo y la pantalla actual permanecerá visible para que el usuario pueda corregir el problema e intentarlo de nuevo.
 4. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para que muestre **Cancelar** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **ResetForm( EditForm ); Back()**
+    **ResetForm( EditForm );; Back()**
    
     Si el usuario selecciona el botón **Cancelar**, los valores del control Formulario se restablecen a su estado original, el estado que tenían antes de que el usuario empezara a editarlo, vuelve a aparecer la pantalla anterior y se devuelve el control Formulario al modo **Edit** si estaba en modo **New**.
 5. Agregue un control Botón, establezca su propiedad **[Text](../controls/properties-core.md)** para mostrar **Nuevo** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
    
-    **NewForm( EditForm ); Navigate( EditScreen, None )**
+    **NewForm( EditForm );; Navigate( EditScreen; None )**
    
     Cuando el usuario selecciona el botón **New**, se activa el control Formulario en modo **New**, los valores predeterminados del origen de datos del control Formulario rellenan el control y aparece la pantalla que contiene el control Formulario. Cuando se ejecuta la función **SubmitForm**, se crea un registro en lugar de actualizarlo.
 

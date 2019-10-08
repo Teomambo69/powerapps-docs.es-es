@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992505"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="mod-function-in-powerapps"></a>Función Mod en PowerApps
 Devuelve el resto de una división.
@@ -29,7 +30,7 @@ La función **Mod** devuelve el resto después de que un número se divide por u
 El resultado tiene el mismo signo que el divisor.
 
 ## <a name="syntax"></a>Sintaxis
-**Mod**( *Number*, *Divisor* )
+**Mod**( *Number*; *Divisor* )
 
 * *Number*: requerido. Número que se divide.
 * *Divisor*: requerido.  Número por el que se divide.

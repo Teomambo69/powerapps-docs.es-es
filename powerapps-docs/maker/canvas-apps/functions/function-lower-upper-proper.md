@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984553"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>Funciones Lower, Upper y Proper en PowerApps
 Convierte las letras de una cadena de texto en todo minúsculas, todo mayúsculas o en mayúsculas o minúsculas, según corresponda.
@@ -62,9 +63,9 @@ Cada fórmula devuelve una tabla de una columna que contiene las cadenas convert
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte la primera letra de una palabra en minúsculas a mayúsculas y convierte cualquier otra letra que esté en mayúsculas a minúsculas. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte la primera letra de una palabra en minúsculas a mayúsculas y convierte cualquier otra letra que esté en mayúsculas a minúsculas. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **Origen**.

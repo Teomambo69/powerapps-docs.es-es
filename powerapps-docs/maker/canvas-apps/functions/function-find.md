@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984952"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="find-function-in-powerapps"></a>Función Find en PowerApps
 Busca una cadena de texto, si existe, dentro de otra cadena.
@@ -29,7 +30,7 @@ La función **Find** busca una cadena dentro de otra cadena y distingue mayúscu
 La función **Find** devuelve la posición inicial de la cadena que se ha encontrado.  El primer carácter de la cadena ocupa la posición 1. La función **Find** devuelve *blank* si la cadena en la que está buscando no contiene la cadena que está buscando.
 
 ## <a name="syntax"></a>Sintaxis
-**Find**( *FindString*, *WithinString* [, *StartingPosition* ] )
+**Find**( *FindString*; *WithinString* [; *StartingPosition* ] )
 
 * *FindString*: requerido.  La cadena que se va a buscar.
 * *WithinString*: requerido.  La cadena dentro de la que se va a buscar.

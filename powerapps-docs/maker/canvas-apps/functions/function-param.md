@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992499"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="download-launch-and-param-functions-in-canvas-apps"></a>Funciones de descarga, Inicio y parámetro en aplicaciones de Canvas
 Descarga o inicia una página web o una aplicación con parámetros.  
@@ -37,7 +38,7 @@ La función **Param** recupera un parámetro pasado a la aplicación cuando se i
 
 * *Address*: requerido.  La dirección de un recurso web para descargar.
 
-**Launch**( *Address* [, *ParameterName1*, *ParameterValue1*, ... ] )
+**Launch**( *Address* [; *ParameterName1*; *ParameterValue1*; ... ] )
 
 * *Address*: requerido.  La dirección de una página web o el identificador de una aplicación que se va a iniciar.
 * *ParameterName(s)* : valor opcional.  Nombre del parámetro.

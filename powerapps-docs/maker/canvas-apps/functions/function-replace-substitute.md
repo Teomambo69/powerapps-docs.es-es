@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992387"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="replace-and-substitute-functions-in-powerapps"></a>Funciones Replace y Substitute en PowerApps
 Reemplace una parte de una cadena de texto por otra cadena.
@@ -31,28 +32,28 @@ La función **Substitute** identifica el texto que se debe reemplazar buscando u
 Si pasa una única cadena, el valor devuelto es la cadena modificada. Si pasa una [tabla](../working-with-tables.md) de una sola columna que contiene cadenas, el valor devuelto es la tabla de una sola columna con cadenas modificadas. Si tiene una tabla con varias columnas, puede convertirla en una tabla de una sola columna, como se describe en cómo [trabajar con tablas](../working-with-tables.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Replace**( *String*, *StartingPosition*, *NumberOfCharacters*, *NewString* )
+**Replace**( *String*; *StartingPosition*; *NumberOfCharacters*; *NewString* )
 
 * *String*: requerido. La cadena en la que se va a actuar.
 * *StartingPosition*: requerido. La posición del carácter en la que se va a iniciar el reemplazo. El primer carácter de *String* está en la posición 1.
 * *NumberOfCharacters*: requerido. El número de caracteres que se van a reemplazar en *String*.
 * *NewString*: requerido. La cadena de reemplazo. El número de caracteres de este argumento puede diferir del argumento *NumberOfCharacters*.
 
-**Substitute**( *String*, *OldString*, *NewString* [, *InstanceNumber* ] )
+**Substitute**( *String*; *OldString*; *NewString* [; *InstanceNumber* ] )
 
 * *String*: requerido. La cadena en la que se va a actuar.
 * *OldString*: requerido. La cadena que se va a reemplazar.
 * *NewString*: requerido. La cadena de reemplazo. *OldString* y *NewString* pueden tener longitudes distintas.
 * *InstanceNumber*: opcional. Use este argumento para especificar la instancia de *OldString* que se va a reemplazar si *String* contiene más de una instancia. Si no especifica este argumento, se reemplazarán todas las instancias.
 
-**Replace**( *SingleColumnTable*, *StartingPosition*, *NumberOfCharacters*, *NewString* )
+**Replace**( *SingleColumnTable*; *StartingPosition*; *NumberOfCharacters*; *NewString* )
 
 * *SingleColumnTable*: requerido. Una tabla de números de una sola columna sobre la que se va a actuar.
 * *StartingPosition*: requerido. La posición del carácter en la que se va a iniciar el reemplazo.  El primer carácter de cada cadena de la tabla se encuentra en la posición 1.
 * *NumberOfCharacters*: requerido. El número de caracteres que se van a reemplazar en cada cadena.
 * *NewString*: requerido.  La cadena de reemplazo. El número de caracteres de este argumento puede diferir del argumento *NumberOfCharacters*.
 
-**Substitute**( *SingleColumnTable*, *OldString*, *NewString* [, *InstanceNumber* ] )
+**Substitute**( *SingleColumnTable*; *OldString*; *NewString* [; *InstanceNumber* ] )
 
 * *SingleColumnTable*: requerido. Una tabla de números de una sola columna sobre la que se va a actuar.
 * *OldString*: requerido.  La cadena que se va a reemplazar.
@@ -70,9 +71,9 @@ Si pasa una única cadena, el valor devuelto es la cadena modificada. Si pasa un
 | **Substitute ("Quarter @ no__t-11, &nbsp;2018", "1", "2", 1)** | Sustituye solo la primera instancia de "1" por "2" porque el cuarto argumento (*InstanceNumber*) se proporciona con un 1. |  "Trimestre 2, 2018" |
 | **Substitute ("Quarter @ no__t-11, &nbsp;2011", "1", "2", 3)** | Sustituye solo la tercera instancia de "1" por "2" porque el cuarto argumento (*InstanceNumber*) se proporciona con un 3. | "Trimestre 1, 2012" |
 | **Substitute ("Quarter @ no__t-11, &nbsp;2011", "1", "2")** | Sustituye todas las instancias de "1" por "2" porque no se proporciona el cuarto argumento (*InstanceNumber*). | "Trimestre 2, 2022" |
-| **Replace (<br> [&nbsp; "Quarter @ no__t-31, &nbsp;2018", <br> "Quarter @ no__t-62, &nbsp;2011", <br> "Quarter @ no__t-94, 02019"], 19, 1, "3")** | Reemplaza el noveno carácter de cada registro de la tabla de una sola columna por "3". | [&nbsp; "Quarter @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Quarter @ no__t-03, &nbsp;2019" &nbsp;] |
-| **Substitute (<br> [&nbsp; "Trim @ no__t-31, &nbsp;2018", <br> "Quarter @ no__t-61, &nbsp;2011", <br> "Q1, &nbsp;2019" 0], 1 "1", "3", 1)** | Dado que el cuarto argumento (*InstanceNumber*) se proporciona con un valor de 1, sustituye solo la primera instancia de "1" en cada registro de la tabla de una sola columna con "3". | [&nbsp; "Trim @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Q3, &nbsp;2019" &nbsp;] |
-| **Substitute (<br> [&nbsp; "Trim @ no__t-31, &nbsp;2018", <br> "Quarter @ no__t-61, &nbsp;2011", <br> "Q1, &nbsp;2019" 0], 1 "1", "3")** | Dado que no se proporciona el cuarto argumento (*InstanceNumber*), sustituye todas las instancias de "1" en cada registro de la tabla de una sola columna con "3". | [&nbsp; "Trim @ no__t-13, &nbsp;2038",<br>"Quarter @ no__t-03, &nbsp;2033",<br>"Q3, &nbsp;2039" &nbsp;] |  
+| **Replace (<br> [&nbsp; "Quarter @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-62, &nbsp;2011"; <br> "Quarter @ no__t-94, 02019"]; 19; 1; "3")** | Reemplaza el noveno carácter de cada registro de la tabla de una sola columna por "3". | [&nbsp; "Quarter @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Quarter @ no__t-03, &nbsp;2019" &nbsp;] |
+| **Substitute (<br> [&nbsp; "Trim @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-61, &nbsp;2011"; <br> "Q1, &nbsp;2019" 0]; 1 "1"; "3"; 1)** | Dado que el cuarto argumento (*InstanceNumber*) se proporciona con un valor de 1, sustituye solo la primera instancia de "1" en cada registro de la tabla de una sola columna con "3". | [&nbsp; "Trim @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Q3, &nbsp;2019" &nbsp;] |
+| **Substitute (<br> [&nbsp; "Trim @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-61, &nbsp;2011"; <br> "Q1, &nbsp;2019" 0]; 1 "1"; "3")** | Dado que no se proporciona el cuarto argumento (*InstanceNumber*), sustituye todas las instancias de "1" en cada registro de la tabla de una sola columna con "3". | [&nbsp; "Trim @ no__t-13, &nbsp;2038",<br>"Quarter @ no__t-03, &nbsp;2033",<br>"Q3, &nbsp;2039" &nbsp;] |  
  
 
 

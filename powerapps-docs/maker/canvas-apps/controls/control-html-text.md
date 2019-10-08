@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986625"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
@@ -75,7 +76,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Buscar**( *FindString*, *WithinString* )](../functions/function-find.md)
+[**Buscar**( *FindString*; *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Etiqueta](control-text-box.md)** , llámelo **Source** y establezca su propiedad **[Texto](properties-core.md)** en esta cadena:

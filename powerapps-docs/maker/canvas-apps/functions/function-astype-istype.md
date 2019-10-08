@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71993010"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Funciones astype y IsType en aplicaciones de Canvas
 
@@ -48,31 +49,31 @@ La función **astype** trata una referencia de registro como un tipo de entidad 
 
 Use estas funciones juntas para probar primero el tipo de entidad de un registro y, a continuación, tratarlo como un registro de ese tipo para que los campos estén disponibles:
 
-```powerapps-dot
-If( IsType( First( Accounts ).Owner, Users ),
-    AsType( First( Accounts ).Owner, Users ).'Full Name',
-    AsType( First( Accounts ).Owner, Teams ).'Team Name'
+```powerapps-comma
+If( IsType( First( Accounts ).Owner; Users );
+    AsType( First( Accounts ).Owner; Users ).'Full Name';
+    AsType( First( Accounts ).Owner; Teams ).'Team Name'
 )
 ```
 
 Solo necesita estas funciones si tiene acceso a los campos de una referencia de registro. Por ejemplo, puede usar referencias de registros en la función de [**filtro**](function-filter-lookup.md) sin **IsType** o **astype**:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Users ) )
+```powerapps-comma
+Filter( Accounts; Owner = First( Users ) )
 ```
 
 Del mismo modo, puede usar referencias de registros con la función [**patch**](function-patch.md) :
 
-```powerapps-dot
-Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
+```powerapps-comma
+Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
 ```  
 
 Si se usa en un contexto de registro, como en un control de [**Galería**](../controls/control-gallery.md) o de [**edición de formulario**](../controls/control-form-detail.md) , puede que tenga que usar el [operador de desambiguación global](operators.md#disambiguation-operator) para hacer referencia al tipo de entidad. Por ejemplo, esta fórmula sería efectiva en una galería que muestre una lista de contactos en la que **el nombre** de la compañía es una búsqueda de **clientes** :
 
-```powerapps-dot
-If( IsType( ThisItem.'Company Name', [@Accounts] ),
-    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+```powerapps-comma
+If( IsType( ThisItem.'Company Name'; [@Accounts] );
+    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
 )
 ```
 
@@ -82,12 +83,12 @@ Si la referencia del registro está *en blanco*, **IsType** devuelve false y **a
 
 ## <a name="syntax"></a>Sintaxis
 
-**Astype**( *RecordReference*, *EntityType* )
+**Astype**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
 - *EntityType* : requerido. Entidad específica que se va a probar.
 
-**IsType**( *RecordReference*, *EntityType* )
+**IsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
 - *EntityType* : requerido. La entidad específica a la que se debe convertir el registro.
@@ -132,11 +133,11 @@ Si la referencia del registro está *en blanco*, **IsType** devuelve false y **a
 
 1. Establezca la propiedad **Text** de **Subtitle1** en esta fórmula:
 
-    ```powerapps-dot
-    If( IsBlank( ThisItem.'Company Name' ), "--",
-        IsType( ThisItem.'Company Name', [@Accounts] ),
-            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+    ```powerapps-comma
+    If( IsBlank( ThisItem.'Company Name' ); "--";
+        IsType( ThisItem.'Company Name'; [@Accounts] );
+            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
     )
     ```
 

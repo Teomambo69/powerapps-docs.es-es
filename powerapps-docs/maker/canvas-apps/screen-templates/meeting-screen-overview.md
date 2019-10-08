@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71995661"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de reunión para las aplicaciones de Canvas
 
@@ -58,10 +59,10 @@ Algunas notas útiles:
 * Para crear una reunión, debe agregar al menos una persona como asistente, proporcionar un asunto y seleccionar una hora de reunión en la pestaña **programación** .
 * Después de enviar la solicitud de reunión, se borra toda la información de la reunión.
 * La instrucción **alseleccionar** del icono de envío (esquina superior derecha) contiene esta fórmula:
-    ```powerapps-dot
-    Set( _myCalendarName, 
-        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
-    );
+    ```powerapps-comma
+    Set( _myCalendarName; 
+        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
+    );;
     ```
 * "Calendar" es el nombre para mostrar predeterminado de la mayoría de los calendarios del usuario de Office, pero su organización puede ser diferente. Si es así, puede cambiar "Calendar" por el término adecuado para su organización.
 * Recibirá un error si intenta programar una reunión que se produzca en el pasado o agregar más de 20 personas a una reunión.

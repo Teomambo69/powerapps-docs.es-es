@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71993289"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="slider-control-in-powerapps"></a>Control deslizante en PowerApps
 Un control con el que el usuario puede especificar un valor arrastrando un controlador.
@@ -99,11 +100,11 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
+[**Sum**( *Value1*; *Value2* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un botón y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   <br>**ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -112,8 +113,8 @@ El usuario puede indicar un valor comprendido entre un valor mínimo y un máxim
 3. Agregue un control deslizante, muévalo debajo del botón y llámelo **MinPopulation**.
 4. Establezca la propiedad **Max** del control deslizante en **5000000** y la propiedad **Min** en **1000000**.
 5. Agregue una galería de texto en orientación vertical, muévala debajo del control deslizante y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:<br>
-   **Filter(CityPopulations, Population > MinPopulation)**
-6. En el primer elemento de la galería, establezca la propiedad **[Texto](properties-core.md)** de la etiqueta superior en **ThisItem.City** y establezca la propiedad **[Texto](properties-core.md)** de la etiqueta inferior en esta fórmula:<br> **Text(ThisItem.Population, "##,###")**
+   **Filter(CityPopulations; Population > MinPopulation)**
+6. En el primer elemento de la galería, establezca la propiedad **[Texto](properties-core.md)** de la etiqueta superior en **ThisItem.City** y establezca la propiedad **[Texto](properties-core.md)** de la etiqueta inferior en esta fórmula:<br> **Text(ThisItem.Population; "##,###")**
 7. Presione F5 y, a continuación, ajuste **MinPopulation** para que se muestren solo aquellas ciudades que tengan una población mayor que el valor especificado.
 8. Presione Esc para volver al área de trabajo predeterminada.
 

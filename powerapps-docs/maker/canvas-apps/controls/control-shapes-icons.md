@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986331"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
@@ -68,7 +69,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Navegar**( *NombrePantalla*, *TransiciónDePantalla* )](../functions/function-navigate.md)
+[**Navegar**( *NombrePantalla*; *TransiciónDePantalla* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -80,7 +81,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-  `Navigate(Target, ScreenTransition.Fade)`
+  `Navigate(Target; ScreenTransition.Fade)`
   
 1. Presione F5 y, a continuación, seleccione el control **forma** .
 
@@ -88,7 +89,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
-  `Navigate(Source, ScreenTransition.Fade)`
+  `Navigate(Source; ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
