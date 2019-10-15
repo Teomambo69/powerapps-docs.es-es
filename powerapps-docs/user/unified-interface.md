@@ -30,7 +30,7 @@ La interfaz unificada para aplicaciones controladas por modelos proporciona una 
 > La ![interfaz unificada se adapta a la pantalla] La (media/Reflow.png "interfaz unificada se adapta a la pantalla")
 
 > [!NOTE]
-> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, vea [Blog: Presentación de la escala de tiempo para pasar a la interfaz unificada @ no__t-0. Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, vea [Blog: Presentación de la escala de tiempo para pasar a la interfaz unificada](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
 
 ## <a name="navigation"></a>Explora
 
