@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969249"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393146"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -30,6 +30,9 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | iOS 9.3 o posterior |iOS 10 o posterior con al menos 2 GB de RAM |
 | Android 5 o posterior |Android 7 o posterior con al menos 4 GB de RAM |
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
+
+> [!NOTE]
+> Actualmente no se admiten nuevas características en la plataforma de Windows para la aplicación de PowerApps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones de PowerApps para Windows se anunciarán en el futuro.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Exploradores admitidos para ejecutar aplicaciones de lienzo
 
@@ -65,7 +68,7 @@ Las solicitudes de PowerApps usan direcciones IP que dependen de la región del 
 
 Las llamadas realizadas desde una API conectada a través de una aplicación (por ejemplo, la API de SQL o la API de SharePoint) proceden de la dirección IP que se especificará más adelante en este mismo tema.
 
-Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de permitidos las direcciones IP de una instancia de Azure SQL Database.
+Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista blanca las direcciones IP de una instancia de Azure SQL Database.
 
 > [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
@@ -94,11 +97,11 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener información de usuario (por ejemplo, la foto de perfil) |
 | gallery.azure.com |https |Aplicaciones de ejemplo y plantilla |
-| @no__t 0.azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
-| @no__t 0.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| @no__t 0.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
-| @no__t 0.blob.core.windows.net |https | Blob Storage |
-| @no__t 0.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
+| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
+| \*. blob.core.windows.net |https | Blob Storage |
+| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetría |
 | host | https | PowerApps Mobile
 
@@ -128,8 +131,8 @@ El comando de alternancia **asignación automática por aplicación** se muestra
 
 ### <a name="app-settings"></a>Configuración de la aplicación
 
-Configuración de la ![aplicación Canvas]configuración de la(./media/limits-and-config/app_settings.png "aplicación Canvas")
+![Configuración de la aplicación Canvas](./media/limits-and-config/app_settings.png "Configuración de la aplicación Canvas")
 
 ### <a name="pass-assignment"></a>Asignación de paso
 
-![Configuración de la aplicación de lienzo pasar asignación](./media/limits-and-config/app_settings_pass_assignment.png "configuración de aplicación Canvas asignación de pasadas")
+![Asignación de paso de configuración de aplicación de Canvas](./media/limits-and-config/app_settings_pass_assignment.png "Asignación de paso de configuración de aplicación de Canvas")
