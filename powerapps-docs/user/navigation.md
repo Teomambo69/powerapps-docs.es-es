@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71924524"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969157"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Navegación básica en una aplicación controlada por modelos 
 
@@ -75,7 +75,7 @@ El panel de referencias es una excelente manera de trabajar sin salir de la pant
 
 ## <a name="notifications"></a>Notificaciones 
 
-Hay tres tipos de notificaciones que se muestran en un formulario: indicaciones, advertencias y errores. Las notificaciones siempre están disponibles en la parte superior del formulario, justo encima del encabezado.
+Hay tres tipos de notificaciones que se muestran en un formulario: informativo, ADVERTENCIA y error. Las notificaciones siempre están disponibles en la parte superior del formulario, justo encima del encabezado.
 
 Al seleccionar la notificación de error, se le llevará al campo del formulario en el que se produjo el error.
 
@@ -91,7 +91,36 @@ Si hay más de una notificación, verá el número de notificaciones. Seleccione
 
 ## <a name="grids"></a>Cuadrículas
 
-Las cuadrículas de la interfaz unificada se han mejorado para aumentar la cantidad de datos que pueden verse en la pantalla. Las cuadrículas también tienen opciones de filtrado mejoradas que incluyen recordar el último filtro y ordenar el orden. Para obtener una lista detallada de las mejoras, consulte esta entrada de blog, [funcionalidad mejorada en redes de interfaz unificada](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids).
+Las cuadrículas de la interfaz unificada se han mejorado para aumentar la cantidad de datos que pueden verse en la pantalla. Las cuadrículas también tienen opciones de filtrado mejoradas que incluyen recordar el último filtro y ordenar el orden. 
 
+Cuando el área de cuadrículas recupere datos, verá un indicador de carga que le permite saber que el sistema está trabajando en la recuperación de datos.
+
+La Página principal de la cuadrícula recuerda el filtro, la ordenación y el estado de la página al navegar hacia delante y hacia atrás. Esto incluye la búsqueda rápida, el filtrado de columnas, el número de página, etc. La navegación fuera de la página se abre con el estado inicial.
+
+
+   > [!div class="mx-imgBorder"]
+   > ![Cuadrículas recordar]estado,(media/grid-remember-state-on-back-navigate.gif "recordar cuadrículas") de estado
+
+
+La barra de saltos usa el primer campo ordenado. Si no se ha realizado ningún cambio de ordenación, la barra de saltos utiliza el campo principal. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Cuadrículas recordar]estado,(media/jumpbar-filter-on-sorted-column.gif "recordar cuadrículas") de estado
+   
+
+Puede filtrar el campo **tipo de actividad** y seleccionar varios tipos de filtrado. Además, se pueden filtrar los campos de entidad relacionados como el propietario, el estado y el motivo.
+
+   > [!div class="mx-imgBorder"]
+   > ![](media/grid-activity-type-column-filter.gif "Filtrado") de cuadrículas de filtrado de cuadrículas
+   
+Al seleccionar el icono de jerarquía, se desplazará al formulario de jerarquía.
+
+   > [!div class="mx-imgBorder"]
+   > Icono de jerarquía ![icono]de(media/grid-row-hierarchy-icon.png "jerarquía")
+   
+También puede abrir el campo principal y los campos de búsqueda en una nueva pestaña o ventana.
+
+   > [!div class="mx-imgBorder"]
+   > ![Abrir en una nueva ventana](media/newtab.png "[abrir en una nueva ventana")
 
 

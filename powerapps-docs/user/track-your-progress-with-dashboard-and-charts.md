@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/4/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -16,25 +16,25 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: e201e098ec8dc86a641a33ef851ed8627975a538
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: e9d046c49a2a91aaf5c65094d446ae09f41572f9
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61552425"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969084"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>Realizar un seguimiento del progreso con gráficos y paneles
 
 Los paneles toman una colección de datos de la aplicación y proporcionan información para mostrar indicadores clave de rendimiento (KPI) y otros datos importantes en gráficos y gráficos interactivos fáciles de leer. Los paneles están disponibles para todos los tipos de registros.
 
 > [!div class="mx-imgBorder"]
-> ![Panel](media/Dashboard.png " de Panel") de 
+> ![](media/Dashboard.png "Panel") del panel 
 
 -  Para ver un diseño de panel diferente, seleccione la flecha hacia abajo situada junto al nombre del panel y, a continuación, seleccione el diseño que desee.
 -  Para elegir un panel predeterminado, abra el panel que desee y, a continuación, seleccione **establecer como predeterminado** en la parte superior de la pantalla.
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar o cambiar el panel](media/add_dashboard.png "Agregar o cambiar el panel") 
+   > ![Agregar o cambiar]el panel(media/add_dashboard.png "Agregar o cambiar") el panel 
 
 ## <a name="create-a-new-dashboard"></a>Crear un nuevo panel
 
@@ -46,13 +46,13 @@ Los paneles toman una colección de datos de la aplicación y proporcionan infor
 2. Elija un diseño de panel y seleccione **crear**.  
 
    > [!div class="mx-imgBorder"]
-   > ![Crear un panel](media/create_dashboard.png "Crear un panel")
+   > ![Creación de un panel](media/create_dashboard.png "creación de un panel")
  
 3. Escriba un nombre para el panel. 
 4. Agregue lo que desee a cada área del panel. Por ejemplo, vamos a agregar un gráfico. 
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar un gráfico](media/add_chart.png "Agregar un gráfico")
+   > ![Agregar un]gráfico(media/add_chart.png "Agregar un gráfico")
  
  5. Seleccione el **tipo de registro** para el gráfico.
  6. Seleccione una **vista** en la que se mostrarán los datos del gráfico.
@@ -67,11 +67,11 @@ Los gráficos proporcionan una vista rápida de cómo se realiza el seguimiento 
 
 -   Mantenga el mouse sobre el gráfico para ver una información sobre herramientas que proporciona información rápida sobre esa área del gráfico.
 -   Haga clic en el área de un gráfico para ver una vista de cuadrícula con más detalles sobre los datos del gráfico.
--   Para expandir un gráfico, haga clic enel botón **Expandir gráfico** expandir![vista](media/expandviewbutton.png " del gráfico") expandir vista del gráfico.
+-   Para expandir un gráfico, haga clic en el botón **expandir gráfico expandir**![vista]del gráfico expandir vista(media/expandviewbutton.png "del gráfico.")
 -   Para ver los registros del gráfico o actualizar el gráfico, seleccione ![más comandos](media/MoreButton.png "más") comandos y, a continuación, elija una acción: **Actualizar** o **Ver registros**.
      
      > [!div class="mx-imgBorder"]
-     > ![Vista de gráficos en PowerApps](media/ViewOfCharts.png "Vista de gráficos en PowerApps")  
+     > ![Vista de gráficos en]la(media/ViewOfCharts.png "vista de powerapps de gráficos en powerapps")  
        
 
 **Cambiar la vista del gráfico**
@@ -81,10 +81,10 @@ Al cambiar la vista de gráfico, se muestra un desglose diferente de los datos, 
 Por ejemplo, seleccione "todas las oportunidades" y, a continuación, seleccione una vista diferente, y se actualizarán tanto el gráfico como la cuadrícula.
 
 > [!div class="mx-imgBorder"]
-> ![Cambiar una vista de gráfico en PowerApps](media/ChangeChartView.png "Cambiar una vista de gráfico en PowerApps")
+> ![Cambiar una vista de gráfico en powerapps](media/ChangeChartView.png "cambiar una vista de gráfico en powerapps")
 
-
-
+## <a name="known-issues"></a>Problemas conocidos  
+En el diseñador de gráficos, no se admite la adición de un order by en determinados campos calculados y se producirá un error.  Los campos calculados que lo hacen es usar otros campos calculados, un campo de entidad relacionado o un campo local en la entidad.
 
 
 

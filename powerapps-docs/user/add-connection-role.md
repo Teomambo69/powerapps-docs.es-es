@@ -15,16 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d824e76f6ffd5cc72f2f030f7009d3f4a140bf8a
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 4552c874ca6be72d37465abd2492a64979aba865
+ms.sourcegitcommit: 5ec4cab1dd934446ec57c320a375e577560ac88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896257"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239570"
 ---
 # <a name="add-a-connection-role-to-link-records-to-each-other"></a>Agregar un rol de conexión para vincular registros entre sí
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Las conexiones le permiten asociar fácilmente usuarios, contactos, ofertas, pedidos de ventas y muchos otros registros de entidad entre sí. A los registros de la asociación se les pueden asignar roles concretos que ayuden a definir el propósito de la relación.
 
@@ -32,7 +30,7 @@ Es una forma rápida de crear varias conexiones y roles para un registro determi
 
 Los roles de conexión se asocian directamente a una conexión. Para usar un rol de conexión, primero debe agregar una conexión al registro.
 
-Para poder agregar roles de conexión, debe habilitarlo el administrador. Para obtener más información, vea [configurar roles de conexión](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/configure-connection-roles).
+Para poder agregar roles de conexión, debe habilitarlo el administrador. Para obtener más información, vea [configurar roles de conexión](https://docs.microsoft.com/powerapps/maker/common-data-service/configure-connection-roles).
 
 1. Para agregar o administrar conexiones, seleccione el registro que desea administrar como una oportunidad.  
 2. Seleccione la pestaña **relacionado** y, a continuación, seleccione **conexión**. Se abrirá la cuadrícula de conexión con la lista de conexiones del registro.
@@ -50,7 +48,7 @@ Para poder agregar roles de conexión, debe habilitarlo el administrador. Para o
 5. En el campo **como este rol** , seleccione el icono de búsqueda y, a continuación, elija **nuevo rol de conexión**. O bien, use la búsqueda para buscar un rol existente que desee asociar a la conexión y, a continuación, seleccione **Guardar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Elegir nuevo rol de conexión](media/connection3.png "Elegir nuevo rol de conexión")  
+    > ![Elegir nuevo rol de conexión],(media/connection3.png "elegir nuevo rol de conexión")  
 
     > [!NOTE]
     > Si ha especificado la información antes de crear un nuevo rol de conexión, se mostrará un cuadro de diálogo de advertencia en el que se le preguntará si desea cancelar y seguir trabajando en la conexión o continuar y salir del registro actual en el que está trabajando.
@@ -69,19 +67,19 @@ Para administrar un rol de conexión, seleccione el rol de conexión de una enti
 
 
    > [!div class="mx-imgBorder"]
-   > ![Editar rol de conexión](media/connection7.png "Rol Editconnection") 
+   > ![Editar]rol de conexión rol de(media/connection7.png "Editconnection") 
   
 También puede administrar los tipos de rol de conexión que desea asociar al rol de conexión.
 
 1. Abra el rol de conexión y, a continuación, seleccione **administrar tipo de registro** en el comando. 
 
     > [!div class="mx-imgBorder"]
-    > ![Editar rol de conexión](media/connection5.png "Rol Editconnection") 
+    > ![Editar]rol de conexión rol de(media/connection5.png "Editconnection") 
   
 
 2. Se abrirá una lista de tipos de roles de conexión que puede Agregar o quitar para este rol de conexión.
 
     > [!div class="mx-imgBorder"]
-    > ![Administrar tipo de registro](media/connection6.png "Administrar tipo de registro") 
+    > ![Administrar tipo]de registro administrar tipo de(media/connection6.png "registro") 
 
 

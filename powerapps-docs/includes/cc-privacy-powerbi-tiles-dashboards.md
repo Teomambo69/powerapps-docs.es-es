@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 41ec7aed42a950e5adf0b87783fc568dbe9d02af
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 162e914a6753e9fd95a8ec57857c280469308a68
+ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61588440"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72517345"
 ---
-Al habilitar la inserción de iconos y paneles de Power BI, cuando un usuario inserta un icono o un panel de Power BI, el token de autorización de [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] de ese usuario para [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] se usa para autenticarse con el servicio Power BI con una concesión implícita, lo que proporciona una experiencia de "inicio de sesión único" integral para el usuario final.  
+Al habilitar la inserción de Power BI iconos y paneles, cuando un usuario inserta un icono de Power BI o un panel, se usa ese [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] token de autorización para Common Data Service para autenticarse con el servicio Power BI con una concesión implícita, lo que proporciona un " Experiencia de inicio de sesión único "para el usuario final.  
   
  Un administrador puede deshabilitar la inserción de iconos y paneles de Power BI en cualquier momento para detener el uso del token de autorización de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] para la autenticación con el servicio Power BI. Los iconos o paneles existentes dejarán de representarse para el usuario final.  
   

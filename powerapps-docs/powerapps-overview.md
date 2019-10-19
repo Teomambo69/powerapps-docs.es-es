@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 34b2d24771feb246d234c0ce3bd1fc655e571296
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 23eb64171c1f339b423bdf56b53b186d2c9e14b5
+ms.sourcegitcommit: 073d8534d7ff0093370ee17a1b9b63c10c7f050c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705276"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72041306"
 ---
 # <a name="what-is-powerapps"></a>¿Qué es PowerApps?
 
@@ -31,17 +31,17 @@ Para obtener más información, consulte el [canal de PowerApps](https://www.you
 
 ## <a name="powerapps-for-app-makerscreators"></a>PowerApps para creadores de aplicaciones
 
-Con PowerApps, puede crear tres tipos de aplicaciones: **lienzo**, **controlado por modelos**y **portal**. Más información: [Información general sobre la creación de aplicaciones en PowerApps](maker/index.md).
+Con PowerApps, puede crear tres tipos de aplicaciones: **lienzo**, **controlado por modelos**y **portal**. Más información: [información general sobre la creación de aplicaciones en PowerApps](maker/index.md).
 
 Para crear una aplicación, primero se empieza con [web.powerapps.com](https://web.powerapps.com).
 
-- **PowerApps Studio** es el diseñador de aplicaciones que se usa para compilar aplicaciones de lienzo. El diseñador de aplicaciones hace que la creación de aplicaciones se parezca más a la creación de un conjunto de diapositivas en Microsoft PowerPoint. Más información: [Generación de una aplicación a partir de datos](/powerapps/maker/canvas-apps/data-platform-create-app)  
+- **PowerApps Studio** es el diseñador de aplicaciones que se usa para compilar aplicaciones de lienzo. El diseñador de aplicaciones hace que la creación de aplicaciones se parezca más a la creación de un conjunto de diapositivas en Microsoft PowerPoint. Más información: [generación de una aplicación a partir de datos](/powerapps/maker/canvas-apps/data-platform-create-app)  
 
-- El **diseñador de aplicaciones** para las aplicaciones basadas en modelos permite definir el mapa del sitio y agregar componentes para crear una aplicación basada en modelos. Más información: [Diseño de aplicaciones controladas por modelos con el diseñador de aplicaciones](maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)
+- El **diseñador de aplicaciones** para las aplicaciones basadas en modelos permite definir el mapa del sitio y agregar componentes para crear una aplicación basada en modelos. Más información: [diseño de aplicaciones controladas por modelos mediante el diseñador de aplicaciones](maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)
 
 ## <a name="powerapps-for-app-users"></a>PowerApps para usuarios de la aplicación
 
-Puede ejecutar aplicaciones que haya creado, o que otra persona haya creado y compartido con usted, en un explorador o en dispositivos móviles (un teléfono o una tableta). Más información: [Búsqueda y ejecución de aplicaciones](user/index.md)
+Puede ejecutar aplicaciones que haya creado, o que otra persona haya creado y compartido con usted, en un explorador o en dispositivos móviles (un teléfono o una tableta). Más información: [Buscar y ejecutar aplicaciones](user/index.md)
 
 ## <a name="powerapps-for-admins"></a>PowerApps para administradores
 
@@ -59,7 +59,7 @@ Los desarrolladores son creadores de aplicaciones que pueden escribir código pa
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps y Dynamics 365
 
-En las aplicaciones de Dynamics 365 (como Dynamics 365 for Sales, Dynamics 365 for Service y Dynamics 365 for Marketing) también se usa la plataforma de datos subyacente (Common Data Service) que PowerApps utiliza para almacenar y proteger los datos. Esto permite crear aplicaciones mediante PowerApps y Common Data Service directamente a partir de los datos elementales de su empresa que ya se usan en Dynamics 365 sin necesidad de efectuar la integración. Más información: [Dynamics 365 y Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
+Las aplicaciones de Dynamics 365, como Dynamics 365 sales, Dynamics 365 Customer Service, Dynamics 365 marketing usan también la plataforma de datos subyacente (Common Data Service) que usa PowerApps para almacenar y proteger los datos. Esto permite crear aplicaciones mediante PowerApps y Common Data Service directamente a partir de los datos elementales de su empresa que ya se usan en Dynamics 365 sin necesidad de efectuar la integración. Más información: [Dynamics 365 y Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>Probar PowerApps de forma gratuita
 
