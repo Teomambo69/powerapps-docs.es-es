@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.sourcegitcommit: a560630f5ee83629a7236ae774fc0c8195b95efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "70842241"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Inserción de una aplicación de PowerApps en Teams 
 
-Puede compartir un PowerApps que haya creado al incrustarlo directamente en Microsoft Teams. Cuando haya finalizado, los **+** usuarios pueden seleccionar agregar su aplicación a cualquiera de **sus** canales o conversaciones del equipo en el que se encuentre. La aplicación aparece como un icono en **pestañas para el equipo**. 
+Puede compartir un PowerApps que haya creado al incrustarlo directamente en Microsoft Teams. Cuando haya finalizado, los usuarios pueden seleccionar **+** para agregar su aplicación a cualquiera de **sus** canales o conversaciones del equipo en el que se encuentre. La aplicación aparece como un icono en **pestañas para el equipo**. 
 
 Un administrador puede cargar la aplicación para que se muestre a **todos los** equipos del inquilino en la **sección todas las pestañas**. Consulte [compartir una aplicación en Microsoft Teams](https://docs.microsoft.com/en-us/power-platform/admin/embed-app-teams).
 
@@ -38,27 +38,27 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 
 Busque y tome nota del GUID de PowerApp para usarlo en un paso posterior.
 
-1. Inicie sesión en y seleccione aplicaciones en el menú. [https://web.powerapps.com](https://web.powerapps.com)
+1. Inicie sesión en [https://web.powerapps.com](https://web.powerapps.com)y, a continuación, seleccione **aplicaciones** en el menú.
 
    > [!div class="mx-imgBorder"] 
-   > ![Mostrar lista de aplicaciones](./media/embed-teams-app/file-apps2.png "Mostrar lista de aplicaciones")
+   > ![Mostrar lista de aplicaciones](./media/embed-teams-app/file-apps2.png "Mostrar la lista de aplicaciones")
 
 2. Seleccione **más comandos** (...) para la aplicación que desea compartir en Teams y, a continuación, seleccione **detalles**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Detalles] de la aplicación (./media/embed-teams-app/app-details.png "Detalles") de la aplicación
+   > ![Detalles de la aplicación](./media/embed-teams-app/app-details.png "Detalles de la aplicación")
 
 
 3. Registre el **identificador** de la aplicación para su uso posterior.
 
    > [!div class="mx-imgBorder"] 
-   > ![Detalles] de la aplicación (./media/embed-teams-app/app-details2.png "Detalles") de la aplicación
+   > ![Detalles de la aplicación](./media/embed-teams-app/app-details2.png "Detalles de la aplicación")
 
 ## <a name="install-app-studio"></a>Instalación de App Studio
 
 Puede omitir estos pasos si App Studio ya está instalado. 
 
-1. En equipos, seleccione **aplicaciones** en la parte inferior izquierda del menú![equipos (icono aplicaciones icono](./media/embed-teams-app/apps-icon.png "aplicaciones")).
+1. En Teams, seleccione **aplicaciones** en la parte inferior izquierda del menú Teams (![icono de aplicaciones](./media/embed-teams-app/apps-icon.png "Icono de aplicaciones")).
 
 2. Busque "App Studio" en el cuadro de búsqueda y, a continuación, selecciónelo.
 
@@ -85,7 +85,7 @@ Puede omitir estos pasos si App Studio ya está instalado.
 2. Seleccione la pestaña **Editor de manifiesto** y, después, seleccione **crear una nueva aplicación** en la Página principal.
 
    > [!div class="mx-imgBorder"] 
-   > ![Crear nueva aplicación](./media/embed-teams-app/create-new-app.png "Crear nueva aplicación")
+   > ![Crear nueva aplicación](./media/embed-teams-app/create-new-app.png "Crear la aplicación")
 
 3. Rellene la información sobre la aplicación en la página de detalles de la **aplicación** .  En el caso del identificador GUID de la aplicación, debe usar el GUID del identificador de la aplicación de PowerApp que grabó anteriormente.  Esto evitará la duplicación de aplicaciones de equipos para una PowerApp determinada.
  
@@ -129,7 +129,7 @@ Para obtener más información, vea [Editor de manifiestos](https://docs.microso
    > [!div class="mx-imgBorder"] 
    > ![Agregar pestaña de equipo](./media/embed-teams-app/team-tab-add.png "Agregar pestaña de equipo")
 
-7. Agregue la dirección URL de configuración de la aplicación en el campo de entrada "URL de configuración" con el siguiente formato:`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
+7. Agregue la dirección URL de configuración de la aplicación en el campo de entrada "URL de configuración" con el siguiente formato: `https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
    Reemplace `<PowerApp ID>` por el GUID de ID. de aplicación que registró anteriormente.
 
@@ -173,4 +173,4 @@ La aplicación aparece ahora como una pestaña.
 
 ### <a name="see-also"></a>Vea también
 [Bienvenido a Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)<br />
-[Para administradores: Insertar una aplicación en Microsoft Teams](https://docs.microsoft.com/power-platform/admin/share-app-teams)
+[Para administradores: insertar una aplicación en Microsoft Teams](https://docs.microsoft.com/power-platform/admin/share-app-teams)
