@@ -61,6 +61,8 @@
               href: ../user/deactivate-activate-account-contact.md
             - name: Realizar un seguimiento del progreso con gráficos y paneles
               href: ../user/track-your-progress-with-dashboard-and-charts.md
+            - name: Agregar paneles de Power BI
+              href: ../user/add-powerbi-dashboards.md
         - name: Buscar registros
           items:
             - name: Comparación de las opciones de búsqueda
