@@ -1094,6 +1094,10 @@
           href: ./portals/admin/change-base-url.md
         - name: Activación del modo de mantenimiento
           href: ./portals/admin/enable-maintenance-mode.md
+        - name: Adición de un nombre de dominio personalizado
+          href: ./portals/admin/add-custom-domain.md
+        - name: Importación de la traducción de los metadatos
+          href: ./portals/admin/import-metadata-translation.md
         - name: Integración con Power BI
           items:
             - name: Configuración de la integración con Power BI
@@ -1120,6 +1124,24 @@
           href: ./portals/configure/configure-portal.md
         - name: Configuración del sitio
           href: ./portals/configure/configure-site-settings.md
+        - name: Autenticación del portal
+          items:
+            - name: Configuración de la autenticación del portal
+              href: ./portals/configure/configure-portal-authentication.md
+            - name: Establecimiento de la identidad de autenticación
+              href: ./portals/configure/set-authentication-identity.md
+            - name: "Configuración del proveedor de Azure\_AD\_B2C para portales"
+              href: ./portals/configure/azure-ad-b2c.md
+            - name: Configuración de los valores del proveedor de OAuth2
+              href: ./portals/configure/configure-oauth2-settings.md
+            - name: Configuración de los valores del proveedor de OpenID
+              href: ./portals/configure/configure-openid-settings.md
+            - name: Configuración de los valores del proveedor de WS-Federation
+              href: ./portals/configure/configure-ws-federation-settings.md
+            - name: "Configuración de los valores del proveedor de SAML\_2.0"
+              href: ./portals/configure/configure-saml2-settings.md
+            - name: "Migración de los proveedores de identidades a Azure\_AD\_B2C"
+              href: ./portals/configure/migrate-identity-providers.md
     - name: Personalización avanzada del portal
       items:
         - name: Trabajar con plantillas de Liquid
