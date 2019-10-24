@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71993010"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Funciones astype y IsType en aplicaciones de Canvas
 
@@ -49,31 +48,31 @@ La función **astype** trata una referencia de registro como un tipo de entidad 
 
 Use estas funciones juntas para probar primero el tipo de entidad de un registro y, a continuación, tratarlo como un registro de ese tipo para que los campos estén disponibles:
 
-```powerapps-comma
-If( IsType( First( Accounts ).Owner; Users );
-    AsType( First( Accounts ).Owner; Users ).'Full Name';
-    AsType( First( Accounts ).Owner; Teams ).'Team Name'
+```powerapps-dot
+If( IsType( First( Accounts ).Owner, Users ),
+    AsType( First( Accounts ).Owner, Users ).'Full Name',
+    AsType( First( Accounts ).Owner, Teams ).'Team Name'
 )
 ```
 
 Solo necesita estas funciones si tiene acceso a los campos de una referencia de registro. Por ejemplo, puede usar referencias de registros en la función de [**filtro**](function-filter-lookup.md) sin **IsType** o **astype**:
 
-```powerapps-comma
-Filter( Accounts; Owner = First( Users ) )
+```powerapps-dot
+Filter( Accounts, Owner = First( Users ) )
 ```
 
 Del mismo modo, puede usar referencias de registros con la función [**patch**](function-patch.md) :
 
-```powerapps-comma
-Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
 Si se usa en un contexto de registro, como en un control de [**Galería**](../controls/control-gallery.md) o de [**edición de formulario**](../controls/control-form-detail.md) , puede que tenga que usar el [operador de desambiguación global](operators.md#disambiguation-operator) para hacer referencia al tipo de entidad. Por ejemplo, esta fórmula sería efectiva en una galería que muestre una lista de contactos en la que **el nombre** de la compañía es una búsqueda de **clientes** :
 
-```powerapps-comma
-If( IsType( ThisItem.'Company Name'; [@Accounts] );
-    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsType( ThisItem.'Company Name', [@Accounts] ),
+    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
@@ -83,12 +82,12 @@ Si la referencia del registro está *en blanco*, **IsType** devuelve false y **a
 
 ## <a name="syntax"></a>Sintaxis
 
-**Astype**( *RecordReference*; *EntityType* )
+**Astype**( *RecordReference*, *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
 - *EntityType* : requerido. Entidad específica que se va a probar.
 
-**IsType**( *RecordReference*; *EntityType* )
+**IsType**( *RecordReference*, *EntityType* )
 
 - *RecordReference* : requerido. Una referencia de registro, a menudo un campo de búsqueda que puede hacer referencia a un registro en cualquiera de las varias entidades.
 - *EntityType* : requerido. La entidad específica a la que se debe convertir el registro.
@@ -101,48 +100,48 @@ Si la referencia del registro está *en blanco*, **IsType** devuelve false y **a
 
 1. En la pestaña **Ver** , seleccione **orígenes de datos**y, a continuación, agregue las entidades **contactos** y **cuentas** como orígenes de datos.
     > [!div class="mx-imgBorder"]
-    > @no__t aplicación 0Blank con dos orígenes de datos: accounts y Contacts @ no__t-1
+    > ![Blank aplicación con dos orígenes de datos: cuentas y contactos ](media/function-astype-istype/contacts-add-datasources.png)
 
 1. Inserte un control **Galería** con una orientación **vertical en blanco** .
 
     > [!div class="mx-imgBorder"]
-    > ![Insert un control de galería con un diseño vertical en blanco @ no__t-1
+    > ![Insert un control galería con un diseño vertical en blanco ](media/function-astype-istype/contacts-customer-gallery.png)
 
 1. En la pestaña **propiedades** situada cerca del lado derecho de la pantalla, establezca la propiedad **elementos** de la galería en **contactos**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set elementos a contactos en el panel Propiedades @ no__t-1
+    > ![Set elementos a contactos en el panel Propiedades ](media/function-astype-istype/contacts-customer-datasource.png)
 
 1. Establezca el diseño de la galería en **título y subtítulo**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: 0Open el selector de diseño del panel de propiedades @ no__t-1
+    > ![Open el selector de diseño en el panel Propiedades ](media/function-astype-istype/contacts-customer-layout.png)
 
     > [!div class="mx-imgBorder"]
-    > @no__t: diseño de 0Set al título y subtítulo @ no__t-1
+    > ![Set diseño al título y al subtítulo ](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. En el panel **datos** , abra la lista **Title1** y, a continuación, seleccione **nombre completo**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: valor de título 0Set @ no__t-1
+    > ![Set valor de título ](media/function-astype-istype/contacts-customer-title.png)
 
 1. Seleccione el control etiqueta **Subtitle1** .
 
     > [!div class="mx-imgBorder"]
-    > @no__t: valor de subtítulo de 0Set @ no__t-1
+    > ![Set valor de subtítulo ](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. Establezca la propiedad **Text** de **Subtitle1** en esta fórmula:
 
-    ```powerapps-comma
-    If( IsBlank( ThisItem.'Company Name' ); "--";
-        IsType( ThisItem.'Company Name'; [@Accounts] );
-            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+    ```powerapps-dot
+    If( IsBlank( ThisItem.'Company Name' ), "--",
+        IsType( ThisItem.'Company Name', [@Accounts] ),
+            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Screen se ha completado y ahora se muestran las cuentas y los contactos combinados en la Galería @ no__t-1
+    > ![Screen ya está completo y muestra las cuentas y los contactos que se combinan en la Galería ](media/function-astype-istype/contacts-customer-complete.png)
 
     El subtítulo de la galería muestra estos valores:
     - "--" si el valor de **"Company name"** está *en blanco*.

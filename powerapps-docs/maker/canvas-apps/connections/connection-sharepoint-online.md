@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71993976"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
@@ -40,7 +40,7 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
 
 ## <a name="create-a-connection"></a>Crear una conexión
 
-1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Data** > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
+1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos**  > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
 
     > [!div class="mx-imgBorder"]
     > ![Select datos > conexiones en la barra de navegación izquierda y, a continuación, seleccione nueva conexión cerca de la esquina superior izquierda. ](./media/connection-sharepoint-online/new-connection.png)
@@ -48,26 +48,26 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
 1. En el cuadro de búsqueda situado cerca de la esquina superior derecha, escriba o pegue **SharePoint**y, a continuación, seleccione **SharePoint**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0In el cuadro de búsqueda situado cerca de la esquina superior derecha, escriba o pegue SharePoint y, a continuación, seleccione SharePoint. ](./media/connection-sharepoint-online/select-sharepoint.png)
+    > ![In el cuadro de búsqueda situado cerca de la esquina superior derecha, escriba o pegue SharePoint y, a continuación, seleccione SharePoint. ](./media/connection-sharepoint-online/select-sharepoint.png)
 
 1. Realice cualquiera de estos conjuntos de pasos:
 
     - Para conectarse a SharePoint Online, seleccione **conectar directamente (Cloud Services)** , seleccione **crear**y, a continuación, proporcione las credenciales (si se le solicita).
 
         > [!div class="mx-imgBorder"]
-        > ![To Conéctese a SharePoint Online, seleccione conectar directamente (Cloud Services) ](./media/connection-sharepoint-online/select-online.png)
+        > ![To conectarse a SharePoint Online, seleccione conectar directamente (Cloud Services) ](./media/connection-sharepoint-online/select-online.png)
 
         Se crea la conexión y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
 
     - Para conectarse a un sitio local, seleccione **conectar con la puerta de enlace de datos local**.
 
         > [!div class="mx-imgBorder"]
-        > @no__t 0To conectar con el sitio local, seleccione * * conectar con la puerta de enlace de datos local ](./media/connection-sharepoint-online/select-onprem.png)
+        > ![To conectarse a un sitio local, seleccione * * conectar con puerta de enlace de datos local ](./media/connection-sharepoint-online/select-onprem.png)
 
         Especifique **Windows** como tipo de autenticación y, después, especifique sus credenciales. (Si las credenciales incluyen un nombre de dominio, especifíquelo como *dominio\alias*).
 
         > [!div class="mx-imgBorder"]
-        > credenciales de @no__t 0Specify @ no__t-1
+        > ![Specify credenciales ](./media/connection-sharepoint-online/specify-creds.png)
 
         En **elegir una puerta de enlace**, seleccione la puerta de enlace que desea usar y, después, seleccione **crear**.
 
@@ -75,7 +75,7 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
         > Si no tiene una puerta de enlace de datos local instalada, [Instale una](../gateway-reference.md)y, después, seleccione el icono para actualizar la lista de puertas de enlace.
 
         > [!div class="mx-imgBorder"]
-        > ![Choose puerta de enlace @ no__t-1
+        > ](./media/connection-sharepoint-online/choose-gateway.png) de ![Choose Gateway
 
         Se crea la conexión y puede agregar datos a una aplicación existente o crear una aplicación desde cero.
 
@@ -84,24 +84,24 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
 1. En PowerApps Studio, abra la aplicación que quiere actualizar, seleccione la pestaña **vista** y, a continuación, seleccione **orígenes de datos**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t la pestaña vista y, a continuación, seleccione orígenes de datos @ no__t-1.
+    > ![On la pestaña vista y, a continuación, seleccione orígenes de datos ](./media/connection-sharepoint-online/view-data-sources.png)
 
-1. En el panel **datos** , seleccione **Agregar origen de datos** > **SharePoint**.
+1. En el panel **datos** , seleccione **Agregar origen de datos**  > **SharePoint**.
 
 1. En **conectar a un sitio de SharePoint**, seleccione una entrada en la lista **sitios recientes** (o escriba o pegue la dirección URL del sitio que desea usar) y, a continuación, seleccione **conectar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Select sitio @ no__t-1
+    > ](./media/connection-sharepoint-online/select-sp-site.png) de ![Select sitio
 
 1. En **elegir una lista**, active la casilla de los **documentos** o una o más listas que desee usar y, a continuación, seleccione **conectar**:
 
     > [!div class="mx-imgBorder"]
-    > ![Under elija una lista, active la casilla para los documentos o una o más listas que desee usar y, después, seleccione conectar @ no__t-1.
+    > ![Under elija una lista, active la casilla de los documentos o una o más listas que desee usar y, a continuación, seleccione conectar ](./media/connection-sharepoint-online/select-sp-tables.png)
 
     No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hasta la parte inferior y, a continuación, escriba el nombre de la lista en el cuadro que contiene el nombre de la **tabla personalizada**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Type el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizado. ](./media/connection-sharepoint-online/custom-list.png)
+    > ![Type el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizado. ](./media/connection-sharepoint-online/custom-list.png)
 
     El origen o los orígenes de datos se agregan a la aplicación.
 
@@ -145,7 +145,7 @@ Si tiene varias imágenes en una biblioteca de SharePoint, puede Agregar un cont
     Los nombres de archivo de las imágenes de la biblioteca aparecen en **ImageList**.
 
     > [!div class="mx-imgBorder"]
-    > ![List de imágenes @ no__t-1
+    > ![List de imágenes ](./media/connection-sharepoint-online/dropdown-items.png)
 
 1. Agregue un control **imagen** y establezca su propiedad **imagen** en esta expresión:
 
@@ -156,7 +156,7 @@ Si tiene varias imágenes en una biblioteca de SharePoint, puede Agregar un cont
     Aparece la imagen que ha especificado.
 
     > [!div class="mx-imgBorder"]
-    > ![Sample Image @ no__t-1
+    > ![Sample imagen ](./media/connection-sharepoint-online/golden-honey.png)
 
 Puede [descargar una aplicación de ejemplo](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) que muestra un enfoque más complejo para mostrar los datos de una biblioteca de SharePoint.
 
@@ -174,13 +174,13 @@ En esta aplicación de una pantalla, la lista de la esquina inferior izquierda m
 Cuando encuentre el archivo que desea, selecciónelo para mostrarlo en el control de **vídeo**, **imagen**o **audio** a lo largo del lado derecho.
 
 > [!div class="mx-imgBorder"]
-> ![Sample Image @ no__t-1
+> ![Sample imagen ](./media/connection-sharepoint-online/library-app.png)
 
 ## <a name="known-issues"></a>Problemas conocidos
 
 ### <a name="lists"></a>Coge
 
-PowerApps puede leer los nombres de columna que contienen espacios, pero los espacios se sustituyen por el código de escape hexadecimal **"@no__t 1x0020 @ no__t-2"** . Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+PowerApps puede leer nombres de columna que contienen espacios, pero los espacios se sustituyen por el código de escape hexadecimal **"\_x0020 \_"** . Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 No se admiten todos los tipos de columnas y no todos los tipos de columnas admiten todos los tipos de tarjetas.
 

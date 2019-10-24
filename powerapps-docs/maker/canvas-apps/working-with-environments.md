@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705259"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
@@ -31,12 +31,12 @@ Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre
 Al registrarse e iniciar sesión por primera vez en PowerApps, se abre en un entorno predeterminado, que puede identificar en la esquina superior derecha de la página.
 
 > [!div class="mx-imgBorder"]
-> ![Default entorno @ no__t-1
+> ![Default entorno ](./media/working-with-environments/env-dropdown.png)
 
 Todos los usuarios de su organización pueden tener acceso al entorno predeterminado. Puede crear aplicaciones en este entorno y compartirlas con otros usuarios. También puede tener acceso a otros entornos, tanto si [crealos](../../administrator/environments-administration.md) como si los otros. Para cambiar de entorno, abra la lista de entornos en la esquina superior derecha y, a continuación, seleccione otro entorno. En este ejemplo se muestra cómo cambiar de **Microsoft** a **MyOwnEnv**.
 
 > [!div class="mx-imgBorder"]
-> ![Switch entorno @ no__t-1
+> ![Switch entorno ](./media/working-with-environments/switch-environment.png)
 
 Después de cambiar los entornos, el nuevo entorno muestra todas las aplicaciones a las que tiene acceso en ese entorno.
 
