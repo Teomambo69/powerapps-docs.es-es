@@ -12,10 +12,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705045"
 ---
 # <a name="behavior-formulas-for-components"></a>Fórmulas de comportamiento para componentes
@@ -30,21 +30,21 @@ Especifique una o varias [fórmulas de comportamiento](working-with-formulas-in-
 Con un componente maestro seleccionado, seleccione **onreset** en la lista desplegable de propiedades (en el lado izquierdo de la barra de fórmulas) y, a continuación, escriba una o varias fórmulas.
 
 > [!div class="mx-imgBorder"]
-> @no__t 0OnReset ejemplo @ no__t-1
+> ![OnReset ejemplo ](./media/component-behavior/example-onreset.png)
 
 Para probar **RESET**, configure un control para restablecer el componente. Por ejemplo, establezca la propiedad **alseleccionar** de un botón en esta fórmula: **RESET**(*ComponentName*).
 
 ### <a name="example---reset-timer"></a>Ejemplo: restablecer temporizador
 
 > [!div class="mx-imgBorder"]
-> @no__t 0OnReset ejemplo @ no__t-1
+> ![OnReset ejemplo ](./media/component-behavior/Resettimer.gif)
 
-En este componente selector de hora, se usan dos variables para mostrar la hora _selectedHour y _selectedMinute. Cuando el selector se restablece, estas variables se deben restablecer a un valor predeterminado, por ejemplo, 12: 305.  La propiedad onreset del componente tiene la siguiente fórmula: **Set (_selectedHour, 12); Set (_selectedMinute)**
+En este componente selector de hora, se usan dos variables para mostrar la hora _selectedHour y _selectedMinute. Cuando el selector se restablece, estas variables se deben restablecer a un valor predeterminado, por ejemplo, 12:12.  La propiedad onreset del componente tiene la siguiente fórmula: **set (_selectedHour); Set (_selectedMinute)**
 
 Para desencadenar el restablecimiento, vaya a una pantalla e inserte una instancia del componente. Agregue un botón y configure alseleccionar del botón para llamar a **RESET (TimerComponent_instance)** para desencadenar onreset.
 
 > [!div class="mx-imgBorder"]
-> @no__t: botón 0Reset @ no__t-1
+> botón ![Reset ](./media/component-behavior/reset-button.png)
 
 ## <a name="update-onreset-using-custom-property"></a>Actualizar onreset mediante la propiedad personalizada
 
@@ -55,7 +55,7 @@ Además de restablecer una instancia de componente desde fuera del componente, h
 ### <a name="example"></a>Ejemplo
 
 > [!div class="mx-imgBorder"]
-> @no__t 0OnReset ejemplo @ no__t-1
+> ![OnReset ejemplo ](./media/component-behavior/updateordernumber2.gif)
 
 Este es un ejemplo de revisión de los números de pedido y la actualización de los números. El componente numérico hacia arriba y hacia abajo se usa para aumentar o disminuir el número de pedidos. Al seleccionar la galería de la izquierda, se restablece el número predeterminado de componentes numéricos hacia arriba y hacia abajo para mostrar el número de orden de la herramienta seleccionada. "**Elevar el restablecimiento cuando cambia el valor**" hace posible restablecer el valor predeterminado cuando cambia la entrada. 
 
