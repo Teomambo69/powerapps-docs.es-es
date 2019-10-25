@@ -357,6 +357,8 @@
               href: ./canvas-apps/sharepoint-lookup-fields.md
             - name: Agregar un flujo
               href: ./canvas-apps/using-logic-flows.md
+            - name: Creación de una regla en aplicaciones de lienzo
+              href: ./canvas-apps/working-with-rules.md
             - name: Referencia sobre fórmulas
               items:
                 - name: Información general
@@ -1348,6 +1350,8 @@
           href: ./common-data-service/navigate-specific-solution.md
         - name: Crear una solución
           href: ./common-data-service/create-solution.md
+        - name: Uso de variables de entorno
+          href: ./common-data-service/EnvironmentVariables.md
         - name: Visualización de las capas de la solución
           href: ./common-data-service/solution-layers.md
         - name: Visualización del historial de la solución
