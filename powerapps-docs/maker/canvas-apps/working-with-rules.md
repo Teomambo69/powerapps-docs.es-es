@@ -7,23 +7,24 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/10/2017
+ms.date: 10/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52a28f73a0a9dae0e410714102f1bc78fe706fab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
+ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994731"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72822097"
 ---
-# <a name="create-a-rule-in-powerapps"></a>Creación de una regla en PowerApps
-Las reglas se crean para modificar automáticamente una aplicación en función de los criterios que se especifiquen. Por ejemplo, mostrar los elementos de cada lista en rojo, amarillo o verde según su estado, o bien mostrar un botón de aprobación sólo a determinados usuarios (por ejemplo, los administradores).
+# <a name="create-a-rule-in-canvas-apps"></a>Creación de una regla en las aplicaciones de Canvas
+Las reglas se crean para modificar automáticamente una aplicación en función de los criterios que se especifiquen. Por ejemplo, mostrar los elementos de cada lista en rojo, amarillo o verde según su estado, o bien mostrar un botón de aprobación sólo a determinados usuarios (por ejemplo, los administradores). Las reglas se pueden agregar a varios controles. En este tema, agregará una regla para cambiar el color del texto de un control **Etiqueta** si el valor de un control **Control deslizante** es mayor que 70.
 
-Las reglas se pueden agregar a varios controles. En este tema, agregará una regla para cambiar el color del texto de un control **Etiqueta** si el valor de un control **Control deslizante** es mayor que 70.
+> [!IMPORTANT]
+> A partir del 14 de octubre de 2019, la característica reglas de las aplicaciones de canvas está en desuso. Más información: [blog: las reglas de lienzo](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/)están en desuso.
 
 ## <a name="add-a-rule"></a>Adición de una regla
 1. Seleccione un control (o agregue un control y déjelo seleccionado).

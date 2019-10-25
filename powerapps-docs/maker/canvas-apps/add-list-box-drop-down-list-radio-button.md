@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71987494"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Adición de un cuadro de lista, una lista desplegable o botones de selección a una aplicación de lienzo
 
@@ -37,7 +36,7 @@ Este tema se centra en los cuadros de listas y botones de selección, pero los m
 
 1. Agregue un control **Cuadro de lista**, denomínelo **MyListBox** y establezca su propiedad **Elementos** en esta expresión:
 
-    ```["circle";"triangle";"rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     El diseñador tendrá un aspecto similar al siguiente:
 
@@ -55,9 +54,9 @@ Este tema se centra en los cuadros de listas y botones de selección, pero los m
 
    | Forma | Establecer función de Visible en |
    | --- | --- |
-   | círculo |```If("circle" in MyListBox.SelectedItems.Value; true)``` |
-   | triángulo |```If("triangle" in MyListBox.SelectedItems.Value; true)``` |
-   | rectángulo |```If("rectangle" in MyListBox.SelectedItems.Value; true)``` |
+   | círculo |```If("circle" in MyListBox.SelectedItems.Value, true)``` |
+   | triángulo |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
+   | rectángulo |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
 7. Mientras mantiene presionada la tecla Alt, seleccione una o varias formas en **MyListBox**.
 
@@ -73,7 +72,7 @@ En estos pasos, ha utilizado una expresión para crear una lista de elementos. E
     ![][10]  
 
 3. Cambie el nombre del control **Botón de selección** por **Choices** y establezca la siguiente fórmula para la propiedad **[Elementos](controls/properties-core.md)** :  
-   ```["red";"green";"blue"]```  <br/>
+   ```["red","green","blue"]```  <br/>
 
     ![][12]  
 
@@ -82,7 +81,7 @@ En estos pasos, ha utilizado una expresión para crear una lista de elementos. E
 4. En la pestaña **Insertar**, seleccione **Iconos** y, a continuación, seleccione el círculo.
 
 5. Defina la siguiente función para la propiedad **[Fill](controls/properties-color-border.md)** del círculo:  
-   ```If(Choices.Selected.Value = "red"; Red; Choices.Selected.Value = "green"; Green; Choices.Selected.Value = "blue"; Blue)```  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     En esta fórmula, el círculo cambia de color dependiendo de qué botón de selección elija.
 
