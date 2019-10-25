@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71987702"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Crear una aplicación de lienzo desde una solución
@@ -42,24 +42,24 @@ Puede omitir este procedimiento si ya tiene una solución en la que desea crear 
 1. En la barra de navegación izquierda, seleccione **soluciones**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opción soluciones de la opción soluciones de la barra de navegación izquierda](./media/add-app-solution/left-nav.png "en la barra de navegación izquierda")
+    > ![Opción soluciones en la barra de navegación izquierda](./media/add-app-solution/left-nav.png "Opción soluciones en la barra de navegación izquierda")
 
 1. En el encabezado situado debajo de la barra de título, seleccione **nueva solución**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opción New-Solution en la opción banner](./media/add-app-solution/banner-new-solution.png "New-Solution en el banner")
+    > ![Opción New-Solution en el banner](./media/add-app-solution/banner-new-solution.png "Opción New-Solution en el banner")
 
 1. En la ventana que aparece, especifique un nombre para mostrar, un publicador y una versión de la solución.
 
     > [!div class="mx-imgBorder"]
-    > ![Opciones de nueva solución](./media/add-app-solution/configure-new-solution.png "para una nueva solución")
+    > ![Opciones para una nueva solución](./media/add-app-solution/configure-new-solution.png "Opciones para una nueva solución")
 
     Un nombre (sin espacios) se generará automáticamente en función del nombre para mostrar que especifique, pero puede personalizar el nombre generado si lo desea. Puede especificar el publicador predeterminado para su entorno y **1,0** para la versión si no tiene necesidades específicas en esas áreas.
 
 1. Cerca de la esquina superior izquierda, seleccione **Guardar y cerrar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Guardar una nueva solución](./media/add-app-solution/save-new-solution.png "guardar una nueva solución")
+    > ![Guardar una nueva solución](./media/add-app-solution/save-new-solution.png "Guardar una nueva solución")
 
 ## <a name="create-a-canvas-app-in-a-solution"></a>Crear una aplicación de lienzo en una solución
 
@@ -72,14 +72,14 @@ Puede crear una aplicación de lienzo en blanco en una solución. No se puede ge
 1. En la barra de navegación izquierda, seleccione **soluciones**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opción soluciones de la opción soluciones de la barra de navegación izquierda](./media/add-app-solution/left-nav.png "en la barra de navegación izquierda")
+    > ![Opción soluciones en la barra de navegación izquierda](./media/add-app-solution/left-nav.png "Opción soluciones en la barra de navegación izquierda")
 
 1. En la lista de soluciones, seleccione la solución en la que desea crear una aplicación de lienzo.
 
-1. En el encabezado situado debajo de la barra de título, seleccione **nuevo** > **aplicación** > **Canvas App**y, después, seleccione el factor de forma (teléfono o tableta) de la aplicación que desea crear.
+1. En el encabezado situado debajo de la barra de título, seleccione **nuevo** > aplicación > **Canvas**y, después, seleccione el factor de forma (teléfono o tableta) de **la aplicación que** desea crear.
 
     > [!div class="mx-imgBorder"]
-    > ![Opciones para crear una aplicación en una solución](./media/add-app-solution/new-option.png "opciones para crear una aplicación en una solución")
+    > ![Opciones para crear una aplicación en una solución](./media/add-app-solution/new-option.png "Opciones para crear una aplicación en una solución")
 
     PowerApps Studio se abre con un lienzo en blanco en otra pestaña del explorador.
 
@@ -88,7 +88,7 @@ Puede crear una aplicación de lienzo en blanco en una solución. No se puede ge
 1. En la pestaña explorador donde seleccionó la solución, seleccione **listo** para actualizar la lista de componentes de la solución.
 
     > [!div class="mx-imgBorder"]
-    > ![](./media/add-app-solution/done-button.png "Botón") listo completado
+    > ![Botón listo](./media/add-app-solution/done-button.png "Botón Listo")
 
     La nueva aplicación aparece en la lista de componentes de la solución. Si guarda cualquier cambio en la aplicación, se reflejará en la versión que se encuentra en la solución.
 
@@ -103,21 +103,21 @@ Si desea vincular una aplicación a una solución, ambos deben estar en el mismo
 1. En la barra de navegación izquierda, seleccione **soluciones**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opción soluciones de la opción soluciones de la barra de navegación izquierda](./media/add-app-solution/left-nav.png "en la barra de navegación izquierda")
+    > ![Opción soluciones en la barra de navegación izquierda](./media/add-app-solution/left-nav.png "Opción soluciones en la barra de navegación izquierda")
 
 1. En la lista de soluciones, seleccione la solución a la que desea vincular una aplicación.
 
-1. En el encabezado situado debajo de la barra de título, seleccione **Add existing** > **App** > **Canvas App**.
+1. En el encabezado situado debajo de la barra de título, seleccione Agregar > **aplicación** **existente** > **aplicación Canvas**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opciones de banner para vincular](./media/add-app-solution/add-existing.png "las opciones del banner de una aplicación existente para vincular una aplicación existente")
+    > ![Opciones de banner para vincular una aplicación existente](./media/add-app-solution/add-existing.png "Opciones de banner para vincular una aplicación existente")
 
     Aparece una lista de las aplicaciones de lienzo que se crearon en una solución en este entorno.
 
 1. En la lista de aplicaciones, seleccione la aplicación que quiere vincular a la solución y, a continuación, seleccione **Agregar**.
 
     > [!div class="mx-imgBorder"]
-    > Botón agregar ![botón](./media/add-app-solution/add-button.png "Agregar")
+    > ![Botón Agregar](./media/add-app-solution/add-button.png "Botón Agregar")
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 

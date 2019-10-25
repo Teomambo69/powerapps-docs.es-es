@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995801"
 ---
 # <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Información general de la aplicación Canvas para Northwind Traders
@@ -33,24 +33,24 @@ En este tema, descubra:
 En una sola pantalla, el usuario de la aplicación puede mostrar, actualizar, crear y eliminar pedidos.
 
 > [!div class="mx-imgBorder"]
-> @no__t: aplicación de lienzo 0Complete @ no__t-1
+> ![aplicación de lienzo completa](media/northwind-orders-canvas-part1/orders-finished.png)
 
 ## <a name="explore-the-user-interface"></a>Exploración de la interfaz de usuario
 
 ### <a name="order-gallery"></a>Galería de pedidos
 
-En el borde izquierdo de la aplicación, una galería muestra una lista de pedidos, incluido el número de pedido, el estado, el nombre del cliente y el costo total del pedido. El usuario puede desplazarse por la lista para buscar un pedido y, a continuación, Mostrar más información sobre él seleccionando la flecha del pedido. Más información: [Cree la galería de pedidos](northwind-orders-canvas-part1.md).
+En el borde izquierdo de la aplicación, una galería muestra una lista de pedidos, incluido el número de pedido, el estado, el nombre del cliente y el costo total del pedido. El usuario puede desplazarse por la lista para buscar un pedido y, a continuación, Mostrar más información sobre él seleccionando la flecha del pedido. Más información: [creación de la galería de pedidos](northwind-orders-canvas-part1.md).
 
 ### <a name="summary-form"></a>Formulario de Resumen
 
-En la esquina superior derecha, un formulario resume el orden en que el usuario seleccionó en la galería de pedidos. El resumen incluye gran parte de la misma información que la galería, pero en el resumen también se muestran las fechas en las que se creó y se pagó el pedido, así como el nombre y la imagen del empleado que administró el pedido. El usuario puede cambiar los datos en el formulario, guardar los cambios, cancelarlos o eliminar el orden seleccionando un icono cerca del borde derecho de la barra de título. Más información: [Cree el formulario de Resumen](northwind-orders-canvas-part2.md).
+En la esquina superior derecha, un formulario resume el orden en que el usuario seleccionó en la galería de pedidos. El resumen incluye gran parte de la misma información que la galería, pero en el resumen también se muestran las fechas en las que se creó y se pagó el pedido, así como el nombre y la imagen del empleado que administró el pedido. El usuario puede cambiar los datos en el formulario, guardar los cambios, cancelarlos o eliminar el orden seleccionando un icono cerca del borde derecho de la barra de título. Más información: [crear el formulario de Resumen](northwind-orders-canvas-part2.md).
 
 ### <a name="detail-gallery"></a>Galería de detalles
 
-En la esquina inferior derecha, otra galería muestra información sobre qué productos contiene el pedido seleccionado y en qué cantidades. Cada elemento de esta galería se conoce como detalle del pedido. El usuario de la aplicación puede Agregar y eliminar cualquier elemento de la galería mediante el uso de controles en y debajo de él. Más información: [Cree la galería de detalles](northwind-orders-canvas-part3.md).
+En la esquina inferior derecha, otra galería muestra información sobre qué productos contiene el pedido seleccionado y en qué cantidades. Cada elemento de esta galería se conoce como detalle del pedido. El usuario de la aplicación puede Agregar y eliminar cualquier elemento de la galería mediante el uso de controles en y debajo de él. Más información: [crear la galería de detalles](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> ![Definition de las áreas de pantalla @ no__t-1
+> ![definición de áreas de pantalla](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="explore-the-data-sources"></a>Explorar los orígenes de datos
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995606"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
@@ -52,7 +52,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Especifique el nombre o el alias de los usuarios o grupos de seguridad de Azure Active Directory con los que desea compartir la aplicación.
 
     - Para que toda la organización pueda ejecutar la aplicación (pero no modificarla ni compartirla), escriba **todos** en el panel de uso compartido.
-    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt; @ no__t-2 >**) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
+    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com** ) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
 
     ![Especificar usuarios y copropietarios](./media/share-app/share-everyone.png)
 
@@ -71,7 +71,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
     Por ejemplo, la aplicación podría conectarse a una entidad en una base de datos de Common Data Service. Cuando comparta una aplicación de este tipo, el panel de uso compartido le pedirá que administre la seguridad de esa entidad.
 
     > [!div class="mx-imgBorder"]
-    > ![Assign un rol de seguridad @ no__t-1
+    > ![asignar un rol de seguridad](media/share-app/cds-assign-security-role.png)
 
     Para obtener más información sobre la administración de la seguridad de una entidad, vea [administrar permisos de entidad](share-app.md#manage-entity-permissions) más adelante en este tema.
 
@@ -118,7 +118,7 @@ Para asignar un rol, debe tener permisos de **Administrador del sistema** para u
 
 1. Seleccione el rol o los roles de Common Data Service que desea asignar al usuario o al grupo de seguridad en Azure AD con el que desea compartir la aplicación.
      > [!div class="mx-imgBorder"] 
-     > (media/share-app/cds-assign-security-role-list.png "Lista de roles de seguridad") lista de roles de ![seguridad]
+     > ![Lista de roles de seguridad](media/share-app/cds-assign-security-role-list.png "Lista de roles de seguridad")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (versión anterior)
 
@@ -144,9 +144,9 @@ Las aplicaciones de lienzo de PowerApps se pueden compartir con los usuarios inv
     - El inquilino principal del usuario Guest.
 
 ### <a name="steps-to-grant-guest-access"></a>Pasos para conceder acceso de invitado
-1. Seleccione **nuevo usuario invitado** para agregar usuarios invitados en Azure ad. Más información: [Inicio rápido: Agregue un nuevo usuario invitado en Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+1. Seleccione **nuevo usuario invitado** para agregar usuarios invitados en Azure ad. Más información: [Inicio rápido: agregar un nuevo usuario invitado en Azure ad](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
-    > ![Agregar invitado en Azure ad](media/share-app/guest_access_doc_1.png "agregar invitado en Azure ad")
+    > ![Agregar invitado en Azure AD](media/share-app/guest_access_doc_1.png "Agregar invitado en Azure AD")
 2. Si el usuario invitado todavía no tiene una licencia en su inquilino principal, asigne una licencia al usuario invitado.
    - Para asignar usuarios invitados desde admin.microsoft.com, consulte [asignación de licencias a un usuario](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
    - Para asignar usuarios invitados desde portal.azure.com, consulte [asignación o eliminación de licencias](/azure/active-directory/fundamentals/license-users-groups).
@@ -157,21 +157,21 @@ Las aplicaciones de lienzo de PowerApps se pueden compartir con los usuarios inv
 3. Compartir la aplicación Canvas. 
     1. Iniciar sesión en https://make.powerapps.com  
     2. Vaya a **aplicaciones**, seleccione una aplicación de lienzo y, en la barra de comandos, seleccione **compartir**. 
-    3. Escriba una dirección de correo electrónico para un usuario invitado de un inquilino de Azure AD. Más información: [¿Qué es el acceso de usuarios invitados en Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+    3. Escriba una dirección de correo electrónico para un usuario invitado de un inquilino de Azure AD. Más información: [¿Qué es el acceso de usuarios invitados en Azure ad B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![Compartir con]invitado(media/share-app/guest_access_doc_2.png "compartido con invitado")
+          > ![Compartir con invitado](media/share-app/guest_access_doc_2.png "Compartir con invitado")
  
 Después de compartir una aplicación para el acceso de invitado, los invitados pueden detectar y acceder a las aplicaciones compartidas con ellas desde el correo electrónico que se les envía como parte del uso compartido.
 
 > [!div class="mx-imgBorder"]  
-> Los invitados reciben el correo electrónico del ![recurso compartido de aplicaciones](media/share-app/guest_access_doc_4.png "recibir correo electrónico del recurso compartido de aplicaciones")
+> ![Los invitados reciben el correo electrónico del recurso compartido de aplicaciones](media/share-app/guest_access_doc_4.png "Los invitados reciben el correo electrónico del recurso compartido de aplicaciones")
 
 ### <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>¿Cuál es la diferencia entre el acceso de invitado de la aplicación de lienzo y los portales de PowerApps? 
-Las aplicaciones de lienzo permiten compilar una aplicación, adaptada a la digitalización de procesos empresariales, sin necesidad de escribir código C#en un lenguaje de programación tradicional como. El acceso de invitado para las aplicaciones de canvas permite a los equipos de personas compuestas por diferentes organizaciones que participan en un proceso empresarial común tener acceso a los mismos recursos de la aplicación que se pueden integrar con una amplia variedad de orígenes de Microsoft y de terceros. Más información: [Información general de los conectores de canvas-app para PowerApps](/powerapps/maker/canvas-apps/connections-list).
+Las aplicaciones de lienzo permiten compilar una aplicación, adaptada a la digitalización de procesos empresariales, sin necesidad de escribir código C#en un lenguaje de programación tradicional como. El acceso de invitado para las aplicaciones de canvas permite a los equipos de personas compuestas por diferentes organizaciones que participan en un proceso empresarial común tener acceso a los mismos recursos de la aplicación que se pueden integrar con una amplia variedad de orígenes de Microsoft y de terceros. Más información: [información general de los conectores de canvas-app para PowerApps](/powerapps/maker/canvas-apps/connections-list).
 
-Los [portales de PowerApps](/powerapps/maker/portals/overview) provide la capacidad de compilar sitios web de bajo código y con capacidad de respuesta que permiten a los usuarios externos interactuar con los datos almacenados en Common Data Service. Permite a las organizaciones crear sitios web que se pueden compartir con usuarios externos a su organización, ya sea de forma anónima o a través del proveedor de inicio de sesión de su elección, como LinkedIn, una cuenta de Microsoft u otros proveedores de inicio de sesión comerciales. 
+Los [portales de PowerApps](/powerapps/maker/portals/overview) proporcionan la capacidad de compilar sitios web con capacidad de respuesta de bajo código que permiten a los usuarios externos interactuar con los datos almacenados en Common Data Service. Permite a las organizaciones crear sitios web que se pueden compartir con usuarios externos a su organización, ya sea de forma anónima o a través del proveedor de inicio de sesión de su elección, como LinkedIn, una cuenta de Microsoft u otros proveedores de inicio de sesión comerciales. 
 
 En la tabla siguiente se describen algunas diferencias de funcionalidad principales entre portales y aplicaciones de lienzo de PowerApps.  
 
@@ -193,7 +193,7 @@ Sí. Sin embargo, el acceso a las aplicaciones independientes del lienzo requier
 Al incrustar una aplicación de lienzo en SharePoint a través de la etiqueta HTML de iFrame, haga referencia a la aplicación con la dirección URL completa de Web. Para buscar la dirección URL, vaya a http://make.powerapps.com, seleccione una aplicación, seleccione la pestaña **detalles** y la dirección URL se muestra en **vínculo Web**.
 
 > [!div class="mx-imgBorder"]  
-> Detalles de la ![aplicación Canvas]detalles de la(media/share-app/guest_access_doc_6.PNG "aplicación Canvas")
+> ![Detalles de la aplicación Canvas](media/share-app/guest_access_doc_6.PNG "Detalles de la aplicación Canvas")
 
 #### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>¿Cómo pueden iniciar los invitados la aplicación compartida con ellos, pero no se pueden crear las conexiones?
 Al igual que con los no invitados, los orígenes de datos subyacentes a los que tiene acceso la aplicación también deben ser accesibles para el invitado.

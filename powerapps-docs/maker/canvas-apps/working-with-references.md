@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: deea21dd97ee71a74973393b7d6714a8c55ba969
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71989464"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>Descripción de las referencias de registros y las búsquedas polimórficas en las aplicaciones de Canvas
 
@@ -52,20 +51,20 @@ Cada entidad de Common Data Service incluye un campo de **propietario** . Este c
 Para mostrar ese campo en la entidad **cuenta** :
 
 1. Abra [este sitio de PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
-1. En la barra de navegación izquierda, seleccione **Data** > **entidades**.
+1. En la barra de navegación izquierda, seleccione **datos** > **entidades**.
 1. En la lista de entidades, seleccione **cuenta**.
 1. En la esquina superior derecha, abra la lista de filtros (que está establecida en **predeterminada** de forma predeterminada) y, a continuación, seleccione **todo**.
 1. Desplácese hacia abajo hasta que aparezca el campo **propietario** .
 
  > [!div class="mx-imgBorder"]
- > @no__t campo 0Owner en la entidad Account @ no__t-1
+ > ![campo propietario en la entidad cuenta](media/working-with-references/owner-field.png)
 
 Este campo de búsqueda puede hacer referencia a un registro de la entidad **equipos** o de la entidad **usuarios** . No todos los registros de estas entidades tienen permiso para ser **propietarios**; Compruebe los roles admitidos si surge un problema.
 
 En este gráfico se muestra una sencilla Galería de **cuentas**, donde la entidad **cuentas** se ha agregado a la aplicación como un origen de datos:
 
 > [!div class="mx-imgBorder"]
-> ![Accounts se muestra en un control de Galería @ no__t-1
+> ![cuentas que se muestran en un control Galería](media/working-with-references/accounts-gallery.png)
 
 > [!IMPORTANT]
 > En este tema, los gráficos muestran algunos nombres y otros valores que no forman parte de los datos de ejemplo que se suministran con Common Data Service. Los pasos demuestran con precisión cómo configurar controles para un resultado determinado, pero su experiencia variará en función de los datos de su organización.
@@ -75,18 +74,18 @@ Para mostrar el propietario de cada cuenta en la galería, es posible que se sie
 Necesita una fórmula que se pueda adaptar a esta varianza. También debe agregar los orígenes de datos para los tipos de entidad que el **propietario** podría ser (en este caso, **usuarios** y **equipos**). Agregue estos tres orígenes de datos a la aplicación:
 
 > [!div class="mx-imgBorder"]
-> @no__t: entidades 0Accounts, Teams y users en el panel de datos @ no__t-1
+> ![las entidades cuentas, equipos y usuarios en el panel datos](media/working-with-references/accounts-datasources.png)
 
 Con estos orígenes de datos en su lugar, use esta fórmula para mostrar el nombre de un usuario o un equipo:
 
-```powerapps-comma
-If( IsType( ThisItem.Owner; [@Teams] );
-    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
-    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
+```powerapps-dot
+If( IsType( ThisItem.Owner, [@Teams] ),
+    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
+    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
 ```
 
 > [!div class="mx-imgBorder"]
-> ![Accounts se muestra en un control galería con el campo propietario mostrado @ no__t-1
+> ![cuentas que se muestran en un control galería con el campo propietario mostrado](media/working-with-references/accounts-displayowner.png)
 
 En esta fórmula, la función **IsType** prueba el campo **propietario** con la entidad **Teams** . Si es de ese tipo de entidad, la función **astype** lo convierte en un registro de **equipo** . En este momento, puede tener acceso a todos los campos de la entidad **Teams** , incluido el **nombre del equipo**, mediante el *.* Notación de campo. Si **IsType** determina que el **propietario** no es un registro de la entidad **Teams** , ese campo debe ser un registro de la entidad **users** porque el campo **Owner** es obligatorio (no puede estar *en blanco*).
 
@@ -97,14 +96,14 @@ Para usar cualquier campo de una referencia de registro, primero debe usar la fu
 La función **astype** devuelve un error si el campo **Owner** no coincide con el tipo de entidad que se solicita, por lo que puede usar la función de tipo **de mensaje** para simplificar esta fórmula. En primer lugar, active la característica experimental **Administración de errores de nivel de fórmula**:
 
 > [!div class="mx-imgBorder"]
-> @no__t modificador 0Experimental para activar la administración de errores de nivel de fórmulas @ no__t-1
+> ![modificador experimental para activar la administración de errores de nivel de fórmula](media/working-with-references/accounts-iferror.png)
 
 A continuación, reemplace la fórmula anterior por esta:
 
-```powerapps-comma
+```powerapps-dot
 IfError(
-    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
-    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
+    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
+    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
 ```
 
 ## <a name="filter-based-on-an-owner"></a>Filtrar según un propietario
@@ -117,16 +116,16 @@ Agregue un control de **cuadro combinado** sobre la galería y establezca estas 
 - **SelectMultiple**: `false`
 
 > [!div class="mx-imgBorder"]
-> @no__t el control de cuadro combinado de la galería con la propiedad items establecida en users @ no__t-1
+> ![agregado el control de cuadro combinado anterior en la galería con la propiedad items establecida en users](media/working-with-references/filter-insert-combobox.png)
 
 Para filtrar la galería por un usuario específico seleccionado en este cuadro combinado, establezca la propiedad **elementos** de la galería en esta fórmula:
 
-```powerapps-comma
-Filter( Accounts; Owner = ComboBox1.Selected )
+```powerapps-dot
+Filter( Accounts, Owner = ComboBox1.Selected )
 ```
 
 > [!div class="mx-imgBorder"]
-> @no__t la galería de 0Filtered en función del valor establecido en el control de cuadro combinado @ no__t-1
+> ![Galería filtrada según el valor establecido en el control de cuadro combinado](media/working-with-references/filter-accounts.png)
 
 > [!IMPORTANT]
 > Las instrucciones de este tema son precisas si sigue los pasos exactamente. Sin embargo, se produce un error en cualquier fórmula que haga referencia a un control por su nombre si el control tiene un nombre diferente. Si elimina y agrega un control del mismo tipo, cambia el número al final del nombre del control. Para cualquier fórmula que muestre un error, confirme que contiene los nombres correctos de todos los controles.
@@ -137,7 +136,7 @@ Puede obtener un poco más elegante si admite el filtrado por parte de un usuari
 
 1. Para colocar espacio cerca de la parte superior de la pantalla, cambie el tamaño de la galería y mueva el cuadro combinado, inserte un [control **radio** ](controls/control-radio.md) sobre la galería y, a continuación, establezca estas propiedades para el nuevo control:
 
-    - **Elementos**: `[ "All"; "Users"; "Teams" ]`
+    - **Elementos**: `[ "All", "Users", "Teams" ]`
     - **Diseño**: `Layout.Horizontal`
 
 1. En el caso del control de **cuadro combinado** , establezca esta propiedad (si el cuadro combinado desaparece, seleccione **usuarios** en el control de radio):
@@ -153,8 +152,8 @@ Puede obtener un poco más elegante si admite el filtrado por parte de un usuari
 
 1. Por último, establezca la propiedad **elementos** del control **Galería** en esta fórmula:
 
-    ```powerapps-comma
-    Filter( Accounts;
+    ```powerapps-dot
+    Filter( Accounts,
         Radio1.Selected.Value = "All"
         Or (Radio1.Selected.Value = "Users" And Owner = ComboBox1.Selected)
         Or (Radio1.Selected.Value = "Teams" And Owner = ComboBox1_1.Selected)
@@ -162,26 +161,26 @@ Puede obtener un poco más elegante si admite el filtrado por parte de un usuari
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t la galería de 0Filtered que muestra todos los registros o un usuario específico o un equipo @ no__t-1
+    > ![Galería filtrada que muestra todos los registros o un usuario o equipo específico](media/working-with-references/filter-combobox.png)
 
 Con estos cambios, puede mostrar todos los registros o filtrarlos en función de un usuario o un equipo:
 
 > [!div class="mx-imgBorder"]
-> ![Animation muestra distintos resultados filtrados basados en el control de radio y los cuadros combinados @ no__t-1
+> ![animación que muestra distintos resultados filtrados basados en el control de radio y los cuadros combinados](media/working-with-references/filter-allthree.gif)
 
 La fórmula es totalmente delegables. La parte que compara los valores del botón de radio es una constante en todos los registros y se evalúa antes de que se envíe el resto del filtro a Common Data Service.
 
 Si desea filtrar según el tipo del propietario, puede usar la función **IsType** , pero todavía no se delegables.
 
 > [!div class="mx-imgBorder"]
-> ![Filter por tipo de propietario mediante IsType @ no__t-1
+> ![filtrar por tipo de propietario mediante IsType](media/working-with-references/filter-bytype.png)
 
 ## <a name="update-the-owner-by-using-patch"></a>Actualizar el propietario mediante el uso de patch
 
 Puede actualizar el campo **propietario** de la misma manera que cualquier otra búsqueda. Para establecer el propietario de la cuenta seleccionada actualmente en el primer equipo:
 
-```powerapps-comma
-Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, Gallery1.Selected, { Owner: First( Teams ) } )
 ```
 
 Este enfoque no difiere de una búsqueda normal porque la aplicación conoce el tipo de **primero (equipos)** . Si desea el primer usuario en su lugar, reemplace esa parte con el **primero (usuarios)** . La función **patch** sabe que el campo **Owner** se puede establecer en cualquiera de estos dos tipos de entidad.
@@ -193,39 +192,39 @@ Para agregar esta funcionalidad a la aplicación:
 1. En el menú de puntos suspensivos, seleccione **copiar estos elementos**.
 
     > [!div class="mx-imgBorder"]
-    > ![Copy de varios controles mediante la vista de árbol @ no__t-1
+    > ![copia de varios controles mediante la vista de árbol](media/working-with-references/patch-copy.png)
 
 1. En el mismo menú, seleccione **pegar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Paste de varios controles mediante la vista de árbol @ no__t-1
+    > ![pegar varios controles mediante la vista de árbol](media/working-with-references/patch-paste.png)
 
 1. Mueva los controles copiados a la derecha de la galería.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Moved los controles a la derecha de la Galería @ no__t-1
+    > ![mueve los controles copiados a la derecha de la Galería](media/working-with-references/patch-position.png)
 
 1. Seleccione el control de **radio** copiado y, a continuación, cambie estas propiedades:
 
-    - Elementos: `[ "Users"; "Teams" ]`
-    - Valor predeterminado: `If( IsType( Gallery1.Selected.Owner; Users ); "Users"; "Teams" )`
+    - Elementos: `[ "Users", "Teams" ]`
+    - Valor predeterminado: `If( IsType( Gallery1.Selected.Owner, Users ), "Users", "Teams" )`
 
     > [!div class="mx-imgBorder"]
-    > ![Removed la opción All del control radio @ no__t-1 
+    > ![quitó la opción All del control radio](media/working-with-references/patch-noall.png) 
 
 1. En el control **radio** , seleccione **usuarios** para que el control de **cuadro combinado** que muestra los usuarios esté visible.
 
 1. Seleccione el control de **cuadro combinado** visible y, a continuación, establezca la propiedad **DefaultSelectedItems** en esta fórmula:
 
-    ```powerapps-comma
-    If( IsType( Gallery1.Selected.Owner; Users );
-        AsType( Gallery1.Selected.Owner; Users );
+    ```powerapps-dot
+    If( IsType( Gallery1.Selected.Owner, Users ),
+        AsType( Gallery1.Selected.Owner, Users ),
         Blank()
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t el conjunto de propiedades 0Default para el cuadro combinado de usuarios @ no__t-1
+    > ![conjunto de propiedades predeterminado para el cuadro combinado usuarios](media/working-with-references/patch-default-users.png)
 
 1. En el control **radio** , seleccione **equipos** para que el control de **cuadro combinado** que muestra los equipos sea visible.
 
@@ -233,34 +232,34 @@ Para agregar esta funcionalidad a la aplicación:
 
 1. Seleccione el control de **cuadro combinado** visible para equipos y, a continuación, establezca su propiedad **DefaultSelectedItems** en esta fórmula:
 
-    ```powerapps-comma
-    If( IsType( Gallery1.Selected.Owner; Teams );
-        AsType( Gallery1.Selected.Owner; Teams );
+    ```powerapps-dot
+    If( IsType( Gallery1.Selected.Owner, Teams ),
+        AsType( Gallery1.Selected.Owner, Teams ),
         Blank()
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t el conjunto de propiedades 0Default para el cuadro combinado de equipos @ no__t-1
+    > ![conjunto de propiedades predeterminado para el cuadro combinado Teams](media/working-with-references/patch-default-teams.png)
 
 1. Inserte un control de **botón** , muévalo debajo del control de **cuadro combinado** y, a continuación, establezca la propiedad **Text** del botón en `"Patch Owner"`.
 
 1. Establezca la propiedad **alseleccionar** del botón en esta fórmula:
 
-    ```powerapps-comma
-    Patch( Accounts; Gallery1.Selected;
-        { Owner: If( Radio1_1.Selected.Value = "Users";
-                ComboBox1_2.Selected;
+    ```powerapps-dot
+    Patch( Accounts, Gallery1.Selected,
+        { Owner: If( Radio1_1.Selected.Value = "Users",
+                ComboBox1_2.Selected,
                 ComboBox1_3.Selected ) } )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Formula establecido en el control de botón @ no__t-1
+    > ![fórmula establecida en el control de botón](media/working-with-references/patch-button.png)
 
 Los controles de **radio** y de **cuadro combinado** copiados muestran el propietario de la cuenta seleccionada actualmente en la galería. Con los mismos controles, puede establecer el propietario de la cuenta en cualquier equipo o usuario seleccionando el botón:
 
 > [!div class="mx-imgBorder"]
-> ![Animation que muestra la revisión del propietario con un usuario o un equipo @ no__t-1
+> ![animación que muestra la revisión del propietario con un usuario o un equipo](media/working-with-references/patch-allthree.gif)
 
 ## <a name="show-the-owner-by-using-a-form"></a>Mostrar el propietario mediante un formulario
 
@@ -271,42 +270,42 @@ Puede mostrar un campo **propietario** dentro de un formulario agregando una tar
 1. En la pestaña **propiedades** situada cerca del lado derecho de la pantalla, abra la lista **origen de datos** y, a continuación, seleccione **cuentas**.
 
     > [!div class="mx-imgBorder"]
-    > control ![Form que muestra campos adicionales con valores en blanco @ no__t-1  
+    > ![control de formulario que muestra campos adicionales con valores en blanco](media/working-with-references/form-insert.png)  
 
 1. Establezca la propiedad **Item** del formulario en `Gallery1.Selected`.
 
     > [!div class="mx-imgBorder"]
-    > control ![Form que muestra campos adicionales que se rellenan a partir del elemento seleccionado en la Galería @ no__t-1
+    > ![control de formulario que muestra campos adicionales que se rellenan a partir del elemento seleccionado en la Galería](media/working-with-references/form-item.png)
 
 1. En la pestaña **propiedades** situada cerca del lado derecho de la pantalla, seleccione **Editar campos**.
 
 1. En el panel **campos** , seleccione los puntos suspensivos y, a continuación, seleccione **Agregar una tarjeta personalizada**.
 
     > [!div class="mx-imgBorder"]
-    > ![Command para agregar una tarjeta personalizada @ no__t-1
+    > ![comando para agregar una tarjeta personalizada](media/working-with-references/form-customcard.png)
 
     La nueva tarjeta aparece en la parte inferior del control de formulario.
 
 1. Cambie el tamaño de la tarjeta según sea necesario para mostrar todo el texto.
 
     > [!div class="mx-imgBorder"]
-    > @no__t tarjeta personalizada 0Inserted, en blanco @ no__t-1
+    > ![tarjeta personalizada insertada, en blanco](media/working-with-references/form-inserted-customcard.png)
 
 1. Inserte un control **etiqueta** en la tarjeta personalizada y, a continuación, establezca la propiedad **texto** de la etiqueta en la fórmula que usó en la Galería:
 
-    ```powerapps-comma
-    If( IsType( ThisItem.Owner; Teams );
-        "Team: " & AsType( ThisItem.Owner; Teams ).'Team Name';
-        "User: " & AsType( ThisItem.Owner; Users ).'Full Name' )
+    ```powerapps-dot
+    If( IsType( ThisItem.Owner, Teams ),
+        "Team: " & AsType( ThisItem.Owner, Teams ).'Team Name',
+        "User: " & AsType( ThisItem.Owner, Users ).'Full Name' )
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t tarjeta 0Custom mostrando el campo propietario en un control etiqueta @ no__t-1
+    > ![tarjeta personalizada que muestra el campo propietario en un control etiqueta](media/working-with-references/form-displayowner.png)
 
 Para cada selección de la galería, aparecen en el formulario más campos de la cuenta, incluido el propietario del registro. Si cambia el propietario con el botón **patch** , el control de formulario también muestra ese cambio.
 
 > [!div class="mx-imgBorder"]
-> ![Animation que muestra el control de formulario que responde a los cambios en la Galería @ no__t-1
+> ![animación que muestra el control de formulario que responde a los cambios en la Galería](media/working-with-references/form-allthree.gif)
 
 ## <a name="show-the-fields-of-a-customer"></a>Mostrar los campos de un cliente
 
@@ -315,7 +314,7 @@ En Common Data Service, el campo de búsqueda de **clientes** es otra búsqueda 
 **Owner** está limitado a uno por entidad, pero las entidades pueden incluir cero, uno o más campos de búsqueda de **clientes** . La entidad sistema de **contactos** incluye el campo Nombre de la **compañía** , que es un campo de búsqueda de **clientes** .
 
 > [!div class="mx-imgBorder"]
-> @no__t entidad 0Contact que muestra el campo Nombre de la compañía como un tipo de datos de cliente que no es necesario @ no__t-1
+> ![entidad contacto que muestra el campo Nombre de la compañía como un tipo de datos de cliente que no es necesario](media/working-with-references/customer-companyname.png)
 
 Puede agregar más campos de búsqueda de **clientes** a una entidad seleccionando el tipo de datos **Customer** para un campo nuevo.
 
@@ -324,7 +323,7 @@ Puede agregar más campos de búsqueda de **clientes** a una entidad seleccionan
 Los campos de búsqueda de **clientes** pueden hacer referencia a un registro de la entidad **accounts** o de la entidad **Contacts** . Usará las funciones **IsType** y **astype** con estas entidades, por lo que ahora es un buen momento para agregarlas como orígenes de datos (puede dejar los **equipos** y **los usuarios** en su lugar).
 
 > [!div class="mx-imgBorder"]
-> ![Accounts, equipos, usuarios y contactos entidades en el panel de datos @ no__t-1
+> ![las entidades cuentas, equipos, usuarios y contactos en el panel datos](media/working-with-references/customer-datasources.png)
 
 El tratamiento de los campos **cliente** y **propietario** es tan similar que puede copiar literalmente la aplicación (**archivo** > **Guardar como**y, a continuación, especificar un nombre diferente) y realizar estos reemplazos sencillos:
 
@@ -336,14 +335,14 @@ El tratamiento de los campos **cliente** y **propietario** es tan similar que pu
 | Propiedad **Items** de la galería | **Contabilidad** | **Sus** |
 | Propiedad **Items** del formulario | **Contabilidad** | **Sus** |
 | Primer argumento de **patch**<br>en la propiedad **alseleccionar** del botón | **Contabilidad** | **Sus** |
-| Propiedad filtrar **elementos** de radio | **[&nbsp; "All"; &nbsp; "Users"; &nbsp; "Teams" &nbsp;]** | **[&nbsp; "todas"; &nbsp; "cuentas"; &nbsp; "contactos" &nbsp;]** |
-| Propiedad **elementos** de radio de revisión | **["Usuarios"; "equipos"]** | **["Accounts"; "Contacts"]** |
+| Propiedad filtrar **elementos** de radio | **[&nbsp;"todos",&nbsp;"usuarios",&nbsp;"equipos"&nbsp;]** | **[&nbsp;"todas",&nbsp;"cuentas",&nbsp;"contactos"&nbsp;]** |
+| Propiedad **elementos** de radio de revisión | **["Usuarios", "equipos"]** | **["Accounts", "Contacts"]** |
 | Propiedad **visible** del cuadro combinado | **"Usuarios"** y **"equipos"** | **"Cuentas"** y **"contactos"** |
 
 Por ejemplo, la nueva galería debe tener esta propiedad **Items** :
 
-```powerapps-comma
-Filter( Contacts;
+```powerapps-dot
+Filter( Contacts,
     Radio1.Selected.Value = "All"
     Or (Radio1.Selected.Value = "Accounts" And 'Company Name' = ComboBox1.Selected)
     Or (Radio1.Selected.Value = "Contacts" And 'Company Name' = ComboBox1_1.Selected)
@@ -351,31 +350,31 @@ Filter( Contacts;
 ```
 
 > [!div class="mx-imgBorder"]
-> @no__t aplicación 0Customer derivada de la aplicación propietaria con cambios sencillos aplicados @ no__t-1
+> ![aplicación de cliente derivada de la aplicación propietaria con cambios sencillos aplicados](media/working-with-references/customer-simple-update.png)
 
 Dos diferencias importantes entre **Customer** y **Owner** requieren una actualización de las fórmulas dentro de la galería y el formulario:
 
-1. Las relaciones uno a varios entre **cuentas** y **contactos** tienen prioridad cuando se hace referencia a estos tipos de entidad por nombre. En lugar de **cuentas**, use **\[ @ no__t-3Accounts]** ; en lugar de **contactos**, use **\[ @ no__t-7Contacts]** . Mediante el [operador de desambiguación global](functions/operators.md#disambiguation-operator), asegúrese de que hace referencia al tipo de entidad en **IsType** y **astype**. Este problema solo existe en el contexto de registro de la galería y los controles de formulario.
+1. Las relaciones uno a varios entre **cuentas** y **contactos** tienen prioridad cuando se hace referencia a estos tipos de entidad por nombre. En lugar de **cuentas**, use **\[cuentas de\@]** ; en lugar de **contactos**, use **\[\@contactos]** . Mediante el [operador de desambiguación global](functions/operators.md#disambiguation-operator), asegúrese de que hace referencia al tipo de entidad en **IsType** y **astype**. Este problema solo existe en el contexto de registro de la galería y los controles de formulario.
 
 1. El campo **propietario** debe tener un valor, pero los campos de **cliente** pueden estar *en blanco*. Para mostrar el resultado correcto sin un nombre de tipo, pruebe este caso con la [función **esblanco** ](functions/function-isblank-isempty.md)y muestre una cadena de texto vacía en su lugar.
 
 Ambos de estos cambios están en la misma fórmula, que aparece en la tarjeta personalizada en el formulario, así como en la propiedad **texto** del control etiqueta de la Galería:
 
-```powerapps-comma
-If( IsBlank( ThisItem.'Company Name' ); "";
-    IsType( ThisItem.'Company Name'; [@Accounts] );
-        "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsBlank( ThisItem.'Company Name' ), "",
+    IsType( ThisItem.'Company Name', [@Accounts] ),
+        "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
 > [!div class="mx-imgBorder"]
-> ![Update la propiedad de texto del control etiqueta de subtítulo en la Galería @ no__t-1
+> ![propiedad actualizar a texto del control etiqueta de subtítulos en la Galería](media/working-with-references/customer-update.png)
 
 Con estos cambios, puede ver y cambiar el campo **nombre** de la compañía en la entidad **contactos** .
 
 > [!div class="mx-imgBorder"]
-> ![Animation que muestra cómo la selección de un contacto cambia el resto de los controles y el formulario @ no__t-1
+> ![animación que muestra cómo la selección de un contacto cambia el resto de controles y el formulario](media/working-with-references/customer-allthree.gif)
 
 ## <a name="understand-regarding-lookup-fields"></a>Comprender con respecto a los campos de búsqueda
 
@@ -393,27 +392,27 @@ Puede empezar simplemente con la entidad **faxes** . Esta entidad tiene una poli
 De nuevo, tendrá que agregar un origen de datos: esta vez para **faxes**. En la pestaña **Ver** , seleccione **orígenes de datos**:
 
 > [!div class="mx-imgBorder"]
-> @no__t panel de 0Data que muestra las entidades cuentas, equipos, usuarios, contactos y faxes @ no__t-1
+> ![panel datos que muestra las entidades cuentas, equipos, usuarios, contactos y faxes](media/working-with-references/faxes-datasources.png)
 
 Una diferencia importante con **respecto** a es que no se limita a **las cuentas** y los **contactos**. De hecho, la lista de entidades es extensible con entidades personalizadas. La mayoría de la aplicación puede acomodar este punto sin modificaciones, pero debe actualizar la fórmula de la etiqueta en la galería y el formulario:
 
-```powerapps-comma
-If( IsBlank( ThisItem.Regarding ); "";
-    IsType( ThisItem.Regarding; [@Accounts] );
-        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
-    IsType( ThisItem.Regarding; [@Contacts] );
-        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
+```powerapps-dot
+If( IsBlank( ThisItem.Regarding ), "",
+    IsType( ThisItem.Regarding, [@Accounts] ),
+        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
+    IsType( ThisItem.Regarding, [@Contacts] ),
+        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
     ""
 )
 ```
 
 > [!div class="mx-imgBorder"]
-> propiedad de texto ![Updated para el control de subtítulo para las búsquedas con respecto a las búsquedas @ no__t-1
+> ![propiedad de texto actualizada para el control de subtítulo para las búsquedas relativas](media/working-with-references/regarding-label.png)
 
 Después de realizar estos cambios, trabajará con la búsqueda **relacionada** tal como hizo con el **propietario** y las búsquedas del **cliente** .
 
 > [!div class="mx-imgBorder"]
-> ![Animation que muestra cómo la selección de un elemento de la Galería cambia el resto de los controles y el formulario @ no__t-1
+> ![animación que muestra cómo la selección de un elemento de la Galería cambia el resto de controles y el formulario](media/working-with-references/regarding-allthree.gif)
 
 ## <a name="understand-regarding-relationships"></a>Descripción de las relaciones
 
@@ -430,12 +429,12 @@ Otras entidades pueden estar relacionadas con una entidad de actividad si están
 Todas las entidades de actividad y las entidades de tarea-tarea tienen una relación implícita. Si cambia el filtro a **todo** en la parte superior de la pantalla, selecciona la entidad **faxes** y, a continuación, selecciona la pestaña **relaciones** , se mostrarán todas las entidades que pueden ser un destino de una búsqueda **relacionada** .
 
 > [!div class="mx-imgBorder"]
-> ![Relationships de la entidad faxes que se muestra en relación con las relaciones de varios a uno @ no__t-1
+> ![relaciones de la entidad faxes que se muestran en relación con las relaciones de varios a uno](media/working-with-references/activity-manytoone.png)
 
 Si muestra las relaciones de la entidad **cuentas** , aparecen todas las entidades que pueden ser un origen de un campo de búsqueda **referente** a.
 
 > [!div class="mx-imgBorder"]
-> ![Relationships de la entidad de cuenta que se muestra en relación con las relaciones de uno a varios @ no__t-1
+> ![las relaciones de la entidad de cuenta con respecto a las relaciones de uno a varios](media/working-with-references/activity-onetomany.png)
 
 ¿Qué significa todo?
 
@@ -447,38 +446,38 @@ Para explorar este concepto en la aplicación:
 1. Agregue otra pantalla.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: 0Insert una pantalla en blanco @ no__t-1
+    > ![insertar una pantalla en blanco](media/working-with-references/activitypointer-newscreen.png)
 
 1. Inserte un control de galería, cambie su tamaño y, a continuación, muévalo a la parte izquierda de la pantalla.
 
 1. En la pestaña **propiedades** situada cerca del lado derecho de la pantalla, establezca los **elementos** de la galería en **cuentas**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set elementos a cuentas en el panel de propiedades @ no__t-1
+    > ![establecer elementos en cuentas en el panel de propiedades](media/working-with-references/activitypointer-accounts.png)
 
 1. Establezca el diseño de la galería en **título**y, a continuación, establezca el campo título en **nombre de cuenta**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set diseño al título del control Galería en el panel Propiedades @ no__t-1
+    > ![establecer diseño en título para el control Galería en el panel Propiedades](media/working-with-references/activitypointer-account-name.png)
 
 1. Agregue una segunda galería, cambie su tamaño y, a continuación, muévala al lado derecho de la pantalla.
 
-1. Establezca la propiedad **Items** de la nueva galería en `Gallery2.Selected.Faxes`.
+1. Establezca la propiedad **elementos** de la nueva galería en `Gallery2.Selected.Faxes`.
 
     Este paso devuelve la lista filtrada de faxes para una cuenta determinada.
 
     > [!div class="mx-imgBorder"]
-    > ![Set la propiedad items de la galería que muestra los faxes @ no__t-1
+    > ![establecer la propiedad elementos de la galería que muestra los faxes](media/working-with-references/activitypointer-faxes.png)
 
 1. Establezca el diseño de la galería en **título y subtítulo**y, a continuación, establezca el campo título para mostrar el campo **asunto** (que puede estar **en minúsculas**).
 
     > [!div class="mx-imgBorder"]
-    > ![Set título al campo asunto @ no__t-1
+    > ![establecer título en el campo asunto](media/working-with-references/activitypointer-subject.png)
 
 A medida que selecciona un elemento en la lista de cuentas, la lista de faxes solo muestra faxes para esa cuenta.
 
 > [!div class="mx-imgBorder"]
-> ![Animation muestra la selección en la galería de cuentas que conduce a la lista de faxes @ no__t-1
+> ![animación que muestra la selección en la galería de cuentas que conduce a la lista de faxes](media/working-with-references/activitypointer-allthree.gif)
 
 ## <a name="activity-entity"></a>Entidad de actividad
 
@@ -487,55 +486,55 @@ Como se describe en la sección anterior, puede mostrar todos los faxes de una c
 En el segundo escenario, se usa la entidad de **actividad** . Puede mostrar esta entidad activando **todo** en la esquina superior derecha para quitar el filtro de la lista de entidades.
 
 > [!div class="mx-imgBorder"]
-> ![List de entidades que muestran la entidad de actividad @ no__t-1
+> ![lista de entidades que muestran la entidad de actividad](media/working-with-references/activitypointer-entity.png)
 
 La entidad de **actividad** es especial. Siempre que se agrega un registro a la entidad **faxes** , el sistema también crea un registro en la entidad **actividad** con los campos que son comunes a todas las entidades de actividad. De esos campos, el **asunto** es uno de los más interesantes.
 
 Puede mostrar todas las actividades cambiando solo una línea en el ejemplo anterior. Reemplace `Gallery2.Selected.Faxes` por `Gallery2.Selected.Activities`.
 
 > [!div class="mx-imgBorder"]
-> @no__t: 0Change de la propiedad elementos de la segunda galería, cambiando de faxes a actividades @ no__t-1
+> ![cambio de la propiedad elementos de la segunda galería, cambiando de faxes a actividades](media/working-with-references/activitypointer-gallery.png)
 
 Los registros provienen de la entidad de **actividad** , pero puede usar la función **IsType** para identificar el tipo de actividad que son. De nuevo, antes de utilizar **IsType** con un tipo de entidad, debe agregar el origen de datos.
 
 > [!div class="mx-imgBorder"]
-> @no__t panel de 0Data que muestra todas las entidades necesarias para la función IsType @ no__t-1
+> ![panel de datos que muestra todas las entidades necesarias para la función IsType](media/working-with-references/activity-datasources.png)
 
 Con esta fórmula, puede mostrar el tipo de registro en un control etiqueta dentro de la Galería:
 
-```powerapps-comma
-If( IsType( ThisItem; [@Faxes] ); "Fax";
-    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
-    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
-    IsType( ThisItem; [@Chats] ); "Chat";
+```powerapps-dot
+If( IsType( ThisItem, [@Faxes] ), "Fax",
+    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
+    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
+    IsType( ThisItem, [@Chats] ), "Chat",
     "Unknown"
 )
 ```
 
 > [!div class="mx-imgBorder"]
-> @no__t propiedad de texto 0Set a la fórmula para mostrar información de faxes, llamadas telefónicas y otras actividades @ no__t-1
+> ![establecer la propiedad texto en fórmula para mostrar información de faxes, llamadas telefónicas y otras actividades](media/working-with-references/activitypointer-type.png)
 
 También puede usar **astype** para tener acceso a los campos del tipo específico. Por ejemplo, esta fórmula determina el tipo de cada actividad y, en el caso de las llamadas telefónicas, muestra el número de teléfono y la dirección de llamada de la entidad **números de teléfono** :
 
-```powerapps-comma
-If( IsType( ThisItem; [@Faxes] ); "Fax";
-    IsType( ThisItem; [@'Phone Calls'] );
+```powerapps-dot
+If( IsType( ThisItem, [@Faxes] ), "Fax",
+    IsType( ThisItem, [@'Phone Calls'] ),
        "Phone Call: " &
-       AsType( ThisItem; [@'Phone Calls'] ).'Phone Number' &
-       " (" & AsType( ThisItem; [@'Phone Calls'] ).Direction & ")";
-    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
-    IsType( ThisItem; [@Chats] ); "Chat";
+       AsType( ThisItem, [@'Phone Calls'] ).'Phone Number' &
+       " (" & AsType( ThisItem, [@'Phone Calls'] ).Direction & ")",
+    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
+    IsType( ThisItem, [@Chats] ), "Chat",
     "Unknown"
 )
 ```
 
 > [!div class="mx-imgBorder"]
-> @no__t propiedad de texto 0Expanded con más información para una llamada de teléfono @ no__t-1
+> ![propiedad de texto expandido con más información para una llamada telefónica](media/working-with-references/activitypointer-phonecall.png)
 
 Como resultado, la aplicación muestra una lista completa de las actividades. El campo **asunto** aparece para todos los tipos de actividades, tanto si la fórmula los tiene en cuenta como si no. En el caso de los tipos de actividades que conoce, puede mostrar sus nombres de tipo e información específica del tipo de cada actividad.
 
 > [!div class="mx-imgBorder"]
-> @no__t pantalla 0Completed que muestra información para diferentes tipos de actividades @ no__t-1
+> ![pantalla completada que muestra información para diferentes tipos de actividades](media/working-with-references/activitypointer-complete.png)
 
 ## <a name="notes-entity"></a>Entidad de notas
 
@@ -544,12 +543,12 @@ Hasta ahora, todos los ejemplos **relacionados** se basaban en actividades, pero
 Al crear una entidad, puede habilitar los datos adjuntos.
 
 > [!div class="mx-imgBorder"]
-> @no__t datos adjuntos y notas al crear una entidad @ no__t-1
+> ![habilitar datos adjuntos y notas al crear una entidad](media/working-with-references/notes-entity.png)
 
 Si activa la casilla para habilitar los datos adjuntos, creará una relación **relacionada** con la entidad **notas** , como se muestra en este gráfico para la entidad **cuentas** :
 
 > [!div class="mx-imgBorder"]
-> entidad ![Account que muestra la relación con las notas a través de una relación de uno a varios @ no__t-1
+> ![entidad de cuenta que muestra la relación con las notas a través de una relación de uno a varios](media/working-with-references/notes-relationships.png)
 
 Aparte de esta diferencia, se usa la búsqueda **relacionada** de la misma manera en que se usan las actividades. Las entidades que están habilitadas para los datos adjuntos tienen una relación de uno a varios con las **notas**, como en este ejemplo:
 
@@ -560,7 +559,7 @@ Aparte de esta diferencia, se usa la búsqueda **relacionada** de la misma maner
 >
 > Sin embargo, la relación inverso de **notas** de uno a varios está disponible, por lo que puede filtrar una lista de notas para un registro habilitado para los datos adjuntos. También puede usar la función [**Relate**](functions/function-relate-unrelate.md) para agregar una nota a la tabla de **notas** de un registro, pero primero se debe crear la nota, como en este ejemplo:
 >
->`Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note" } ) )`
+>`Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note" } ) )`
 
 ## <a name="activity-parties"></a>Entidades de actividad
 

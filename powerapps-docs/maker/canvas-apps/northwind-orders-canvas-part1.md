@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71991369"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Creación de una galería de pedidos en una aplicación de lienzo
 
@@ -30,7 +29,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 1. [Cree una galería de detalles](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> ![Definition de las áreas de pantalla @ no__t-1
+> ![definición de áreas de pantalla](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,17 +41,17 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 1. [Inicie sesión en PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, después, cree una aplicación de tableta en blanco.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: aplicación 0Canvas del mosaico en blanco @ no__t-1
+    > ![aplicación de lienzo del mosaico en blanco](media/northwind-orders-canvas-part1/start-01.png)
 
 1. Asigne a la aplicación el nombre que desee y, a continuación, seleccione **crear**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: aplicación 0Canvas del cuadro de diálogo en blanco @ no__t-1
+    > ![aplicación de lienzo del cuadro de diálogo en blanco](media/northwind-orders-canvas-part1/start-02.png)
 
     PowerApps Studio se abre para que pueda agregar orígenes de datos y controles a la aplicación:
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio @ no__t-1
+    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
 1. Habilite una [característica experimental](working-with-experimental.md) para mostrar el resultado de una fórmula directamente en la barra de fórmulas.
 
@@ -60,7 +59,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     1. Desplácese hasta la parte inferior de la lista de características y, a continuación, Active **Habilitar vista de resultados de la barra de fórmulas**:
 
         > [!div class="mx-imgBorder"]
-        > ![List de las características experimentales @ no__t-1
+        > ![lista de características experimentales](media/northwind-orders-canvas-part1/start-04.png)
 
 1. En la esquina superior izquierda, seleccione la flecha atrás para volver al lienzo en blanco.
 
@@ -69,29 +68,29 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 1. En la pestaña **Ver** , seleccione **orígenes de datos**y, a continuación, seleccione **Agregar origen de datos** en el panel **datos** :
 
     > [!div class="mx-imgBorder"]
-    > @no__t: vista 0Select, orígenes de datos, agregar origen de datos @ no__t-1
+    > ![seleccionar vista, orígenes de datos, agregar origen de datos](media/northwind-orders-canvas-part1/datasource-01.png)
 
 1. Seleccione **Common Data Service**.
 
     Si **Common Data Service** no aparece en la lista de conexiones, seleccione **nueva conexión**y, a continuación, agréguela.
 
     > [!div class="mx-imgBorder"]
-    > ![List de las conexiones @ no__t-1
+    > ![lista de conexiones](media/northwind-orders-canvas-part1/datasource-02.png)
 
 1. En **elegir una entidad**, escriba **pedidos**, active la casilla **pedidos** y, a continuación, seleccione **conectar**:
 
     > [!div class="mx-imgBorder"]
-    > ![List de las entidades @ no__t-1
+    > ![lista de entidades](media/northwind-orders-canvas-part1/datasource-03.png)
 
     Ha agregado el origen de datos de **pedidos** a la aplicación:
 
     > [!div class="mx-imgBorder"]
-    > @no__t: panel 0Data @ no__t-1
+    > ![panel datos](media/northwind-orders-canvas-part1/datasource-04.png)
 
     La entidad **Orders** contiene muchos campos de varios tipos:
 
     > [!div class="mx-imgBorder"]
-    > ![List de los campos de la entidad Orders @ no__t-1
+    > ![lista de campos de la entidad Orders](media/northwind-orders-canvas-part1/datasource-05.png)
 
     Cada campo tiene un **nombre para mostrar** y un **nombre**, que a veces se denomina nombre lógico. Ambos nombres hacen referencia a lo mismo. En general, usará el nombre para mostrar al compilar una aplicación, pero algunos casos requieren el **nombre**más críptico, como se indica en un procedimiento.
 
@@ -102,28 +101,28 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 1. En la pestaña **Insertar** , seleccione **Galería** > **vertical en blanco** para agregar un control [**Galería**](controls/control-gallery.md) , que mostrará los pedidos.
 
     > [!div class="mx-imgBorder"]
-    > ![Insert, Galería, vertical en blanco @ no__t-1
+    > ![insertar, Galería,](media/northwind-orders-canvas-part1/orders-01.png) vertical en blanco
 
 1. En la barra de fórmulas, establezca la propiedad **elementos** de la galería en esta fórmula:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     La función [**Sort**](functions/function-sort.md) ordena la lista para que aparezca en primer lugar el orden más reciente (que tiene el número de pedido más alto).
 
     > [!div class="mx-imgBorder"]
-    > @no__t propiedad items de la Galería @ no__t-1
+    > ![propiedad Set items de la Galería](media/northwind-orders-canvas-part1/orders-02.png)
 
 1. En la pestaña **propiedades** situada cerca del borde derecho, abra la lista **diseño** :
 
     > [!div class="mx-imgBorder"]
-    > ![List de las opciones de diseño @ no__t-1
+    > ![lista de opciones de diseño](media/northwind-orders-canvas-part1/orders-03.png)
 
 1. En la lista de opciones, seleccione **título y subtítulo**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select un diseño @ no__t-1
+    > ![seleccionar un diseño](media/northwind-orders-canvas-part1/orders-04.png)
 
     Se agregan dos controles [**etiqueta**](controls/control-text-box.md) en la plantilla de la galería. De forma predeterminada, estos controles muestran dos columnas de la entidad **Orders** , que cambiará a continuación. La plantilla de la galería se replica verticalmente para cada registro de la entidad.
 
@@ -133,28 +132,28 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
     > [!div class="mx-imgBorder"]
-    > propiedad de texto de la etiqueta del título de @no__t 0Set @ no__t-1
+    > ![establecer la propiedad Text de la etiqueta del título](media/northwind-orders-canvas-part1/orders-06.png)
 
     El número de pedido aparece en la parte superior de cada elemento de la galería. En la plantilla de la galería, **ThisItem** concede acceso a todos los campos de la entidad **Order** .
 
 1. En el panel **datos** , seleccione **Subtitle1** (o seleccione la etiqueta inferior en la plantilla de la galería):
 
     > [!div class="mx-imgBorder"]
-    > @no__t: etiqueta de subtítulo de 0Select @ no__t-1
+    > ![seleccionar etiqueta de subtítulo](media/northwind-orders-canvas-part1/orders-07.png)
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
     > [!div class="mx-imgBorder"]
-    > propiedad de texto de la etiqueta de subtítulo de @no__t 0Set @ no__t-1
+    > ![establecer la propiedad Text de la etiqueta del subtítulo](media/northwind-orders-canvas-part1/orders-08.png)
 
     Después de escribir esta fórmula, puede aparecer un error de ondulación de color rojo durante un momento. El error debe desactivarse si selecciona cualquier cosa fuera de la barra de fórmulas y, a continuación, devuelve el cursor a la barra de fórmulas. Si el error persiste o no ve un valor, seleccione la pestaña **vista** , seleccione orígenes de **datos**y, a continuación, actualice la entidad **pedidos** seleccionando los puntos suspensivos (...) a la derecha del nombre del origen de datos.
 
@@ -163,7 +162,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     Puede mostrar todas las relaciones de la entidad **Orders** a otras entidades, incluida la entidad **Customer** :
 
     > [!div class="mx-imgBorder"]
-    > ![List de las relaciones @ no__t-1
+    > ![lista de relaciones](media/northwind-orders-canvas-part1/orders-09.png)
 
 1. Cierre el panel **datos** seleccionando el icono cerrar (x) en la esquina superior derecha.
 
@@ -174,36 +173,36 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 1. En la plantilla de la galería, reduzca el ancho de la primera etiqueta, **Title1**:
 
     > [!div class="mx-imgBorder"]
-    > ![Title1 en la plantilla de la Galería @ no__t-1
+    > ![Title1 en la plantilla de la Galería](media/northwind-orders-canvas-part1/status-01.png)
 
 1. Repita el paso anterior con la segunda etiqueta, **Subtitle1**:
 
     > [!div class="mx-imgBorder"]
-    > ![Subtitle1 en la plantilla de la Galería @ no__t-1
+    > ![Subtitle1 en la plantilla de la Galería](media/northwind-orders-canvas-part1/status-02.png)
 
 1. Con la plantilla de la galería (o un control de la plantilla) seleccionada, seleccione **etiqueta** en la pestaña **Insertar** :
 
     > [!div class="mx-imgBorder"]
-    > ![Add etiqueta @ no__t-1
+    > ![agregar una etiqueta](media/northwind-orders-canvas-part1/status-03.png)
 
 1. Mueva la etiqueta nueva a la derecha de la etiqueta **Title1** :
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Move y cambiar el tamaño de una etiqueta @ no__t-1
+    > ![moverse y cambiar el tamaño de una etiqueta](media/northwind-orders-canvas-part1/status-04.png)
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set la propiedad de texto @ no__t-1
+    > ![establecer la propiedad Text](media/northwind-orders-canvas-part1/status-05.png)
 
     En la entidad **pedidos** , el campo **Estado de pedido** contiene un valor del conjunto de opciones de estado de **pedidos** . Un conjunto de opciones es similar a una enumeración en otras herramientas de programación. Cada conjunto de opciones se define en la base de datos, por lo que los usuarios solo pueden especificar las opciones que se encuentran en el conjunto. El conjunto de opciones de **Estado de pedidos** también es global, no local, por lo que puede usarlo en otras entidades:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Orders-Option status Set @ no__t-1
+    > ![conjunto de opciones de estado de pedidos](media/northwind-orders-canvas-part1/status-06.png)
 
     Cada opción de un conjunto tiene un nombre que aparece si se muestra en una etiqueta. Estos nombres se pueden localizar y la aplicación reconoce la misma opción si un usuario en inglés selecciona **Apple**, un usuario en francés selecciona **pomme**o un usuario en Español selecciona **manzana**. Por esta razón, no se puede crear una fórmula que se base en una cadena codificada de forma rígida para una opción, como se muestra en este tema más adelante.
 
@@ -212,21 +211,21 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 1. En la pestaña **Inicio** , aumente el tamaño de fuente de la etiqueta estado a 20 puntos y alinee a la derecha el texto:
 
     > [!div class="mx-imgBorder"]
-    > @no__t: tamaño y alineación de la fuente de 0Change @ no__t-1
+    > ![cambiar el tamaño y la alineación de la fuente](media/northwind-orders-canvas-part1/status-07.png)
 
 1. En la barra de fórmulas, establezca la propiedad **color** de la etiqueta estado en esta fórmula:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set la propiedad color de la etiqueta de estado @ no__t-1
+    > ![establecer la propiedad color de la etiqueta de estado](media/northwind-orders-canvas-part1/status-08.png)
 
     PowerApps evita que cree una fórmula que se base en una cadena codificada de forma rígida para cada opción de un conjunto, ya que dichas fórmulas podrían producir resultados inadecuados si los nombres de las opciones están localizados. En su lugar, la función **Switch** determina el color en función de la cadena que aparece en la etiqueta en función de la configuración del usuario.
 
@@ -237,44 +236,44 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 1. Seleccione el primer elemento de la galería, que es la plantilla de la Galería:
 
     > [!div class="mx-imgBorder"]
-    > ![Select la plantilla de la Galería @ no__t-1
+    > ![seleccione la plantilla de la Galería](media/northwind-orders-canvas-part1/aggregate-01.png)
 
 1. En la pestaña **Insertar** , seleccione **etiqueta** para agregar otra etiqueta:
 
     > [!div class="mx-imgBorder"]
-    > ![Add etiqueta @ no__t-1
+    > ![agregar una etiqueta](media/northwind-orders-canvas-part1/aggregate-02.png)
 
 1. Mueva la nueva etiqueta para que aparezca debajo de la etiqueta de estado:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize y mueva la nueva etiqueta @ no__t-1
+    > ![cambiar el tamaño de la nueva etiqueta y moverla](media/northwind-orders-canvas-part1/aggregate-03.png)
 
 1. En la barra de fórmulas, establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Formula para calcular el costo total de un pedido @ no__t-1
+    > ![fórmula para calcular el costo total de un pedido](media/northwind-orders-canvas-part1/aggregate-04.png)
 
     En esta fórmula, la función [**SUM**](functions/function-aggregates.md) suma los registros de la entidad Order **Details** que están asociados a cada registro de la entidad **Order** a través de una relación de uno a varios. Estos elementos de línea forman cada pedido y se utiliza la misma relación uno a varios para mostrar y editar los elementos de línea en el área inferior derecha de la pantalla.
 
     Esta fórmula muestra un subrayado azul y una [Advertencia de delegación](delegation-overview.md) porque Common Data Service no admite la delegación de funciones de agregado complejas (por ejemplo, la suma de una multiplicación). Puede omitir esta información porque ningún orden en este ejemplo contendrá más de 500 elementos de línea. Si es necesario para una aplicación diferente, puede aumentar ese límite en la configuración de la **aplicación**.
 
-    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma de EE. UU. English ( **[$-en-US]** ) y un símbolo de dólar ( **$** ). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
+    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma para Inglés de EE. UU. ( **[$-en-US]** ) y un símbolo de dólar ( **$** ). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
 
 1. En la pestaña **Inicio** , cambie el tamaño de fuente de la etiqueta más reciente a 20 puntos y alinee a la derecha su texto:
 
     > [!div class="mx-imgBorder"]
-    > ![Change el tamaño de fuente y la alineación de una etiqueta @ no__t-1
+    > ![cambiar el tamaño de fuente y la alineación de una etiqueta](media/northwind-orders-canvas-part1/aggregate-05.png)
 
 1. Mueva la galería al borde izquierdo de la pantalla y disminuya el ancho de la galería para cerrar algo de espacio.
 
 1. Aumente el alto de la galería para que sea casi tan alto como la pantalla, pero deje un poco de espacio en la parte superior de una barra de título, que agregará al principio del siguiente tema:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Move y cambiar el tamaño de la Galería @ no__t-1
+    > ![moverse y cambiar el tamaño de la Galería](media/northwind-orders-canvas-part1/aggregate-06.png)
 
 ## <a name="summary"></a>Resumen
 
@@ -282,9 +281,9 @@ Para recapitular, comenzó a compilar una aplicación de lienzo de pantalla úni
 
 - Una expresión para mostrar el número de pedido: `"Orders " & ThisItem.OrderNumber`
 - Campo de una relación de varios a uno: `ThisItem.Customer.Company`
-- Una etiqueta que muestra el nombre de una opción de un conjunto: `ThisItem.'Order Status'`
-- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Una función de agregado complejo sobre una relación de uno a varios: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Etiqueta que muestra el nombre de una opción de un conjunto: `ThisItem.'Order Status'`
+- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Función de agregado compleja sobre una relación de uno a varios: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Siguiente tema
 
