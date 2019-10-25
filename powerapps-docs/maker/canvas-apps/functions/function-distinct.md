@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/23/2019
 ms.locfileid: "71985245"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="distinct-function-in-powerapps"></a>Función Distinct de PowerApps
 Resume los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md), quitando los duplicados.
@@ -31,7 +32,7 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Distinct**( *Table*, *Formula* )
+**Distinct**( *Table*; *Formula* )
 
 * *Table*: requerido.  Tabla en la cual se realizará la evaluación.
 * *Formula*: requerido.  La fórmula que se evalúa en cada registro.
@@ -40,15 +41,15 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula.
 
-    ```powerapps-dot
-    ClearCollect( CityPopulations,
-        { City: "London",    Country: "United Kingdom", Population: 8615000 },
-        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
-        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
-        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
-        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
-        { City: "Munich",    Country: "Germany",        Population: 1494000 }
-    );
+    ```powerapps-comma
+    ClearCollect( CityPopulations;
+        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
+        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
+        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
+        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
+        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
+        { City: "Munich";    Country: "Germany";        Population: 1494000 }
+    );;
     ```
 
 1. Seleccione el botón mientras mantiene presionada la tecla Alt.
@@ -60,8 +61,8 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control [**tabla de datos**](../controls/control-data-table.md) y establezca su propiedad **elementos** en esta fórmula:
 
-    ```powerapps-dot
-    Distinct( CityPopulations, Country )
+    ```powerapps-comma
+    Distinct( CityPopulations; Country )
     ```
 
     Para ver el resultado de esta fórmula en la barra de fórmulas, seleccione toda la fórmula:
@@ -76,8 +77,8 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control [**etiqueta**](../controls/control-text-box.md) y establezca su propiedad **texto** en la fórmula:
 
-    ```powerapps-dot
-    First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
+    ```powerapps-comma
+    First( Sort( Distinct( CityPopulations; Country ); Result ) ).Result
     ```
 
     Esta fórmula ordena los resultados de **DISTINCT** con la función de [**ordenación**](function-sort.md) , toma el primer registro de la tabla resultante con la [**primera**](function-first-last.md) función y extrae el campo de **resultados** para obtener solo el nombre del país.

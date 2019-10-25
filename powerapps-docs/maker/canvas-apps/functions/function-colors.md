@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/23/2019
 ms.locfileid: "71994865"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps
 
@@ -62,12 +63,12 @@ Si especifica un valor de enumeración de **color** o crea una fórmula de **Col
 
 - *CSSColor*: requerido.  La definición de un color de hoja de estilo CSS. Puede especificar un nombre, como **OliveDrab**, o un valor hexadecimal, como **#6b8e23** o **#7fffd420**. Los valores hexadecimales pueden adoptar la forma de #*RRGGBB* o #*RRGGBBAA*.
 
-**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
+**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
 
 - *Red*, *Green*, *Blue*: requerido.  Valores de componente de color, que van desde 0 (sin saturación) hasta 255 (saturación completa).
 - *Alpha*: requerido.  Componente alfa, que va de 0 (totalmente transparente) a 1 (totalmente opaco). También puede usar un porcentaje, de 0 % a 100 %.
 
-**ColorFade**( *Color*, *FadeAmount* )
+**ColorFade**( *Color*; *FadeAmount* )
 
 - *Color*: requerido.  Un valor de color como **Color.Red** o el resultado de **ColorValue** o **RGBA**.
 - *FadeAmount*: requerido.  Número entre -1 y 1. -1 oscurece completamente un color a negro, 0 no afecta al color y 1 ilumina completamente un color a blanco. También puede usar un porcentaje entre-100% y 100%.
