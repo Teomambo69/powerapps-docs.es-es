@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/09/2018
+ms.date: 10/24/2018
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: af06a3707073498df65f782fc634c1e93b1760c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 101c77b7bdd84e2d2ed31febc441e54944eb9fa3
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994079"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902450"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Generación de una aplicación de lienzo en PowerApps a partir de una lista de SharePoint
 
@@ -94,6 +94,9 @@ Si crea una aplicación de una lista personalizada desde la barra de comandos de
     - Para quitar la vista de SharePoint, seleccione **Quitar esta vista**.
 
         Para quitar la aplicación de PowerApps, [elimine la aplicación](delete-app.md).
+
+> [!NOTE]
+> Las aplicaciones creadas desde la lista de SharePoint no se muestran actualmente en PowerApps Mobile.
 
 ## <a name="next-steps"></a>Pasos siguientes
 En este tema ha creado una aplicación para administrar datos en una lista de SharePoint. El siguiente paso es generar una aplicación a partir de una lista más compleja y, después, personalizar la aplicación (empezando por la pantalla de exploración) para que se ajuste mejor a las necesidades.
