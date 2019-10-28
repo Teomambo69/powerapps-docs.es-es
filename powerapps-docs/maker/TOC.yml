@@ -32,7 +32,9 @@
           items:
             - name: Ver su perfil
               href: ../user/view-your-user-profile.md
-            - name: Establecer las opciones personales
+            - name: Búsqueda del administrador o encargado de soporte técnico
+              href: ../user/find-admin.md
+            - name: Establecimiento de la opción personal
               href: ../user/set-personal-options.md
             - name: Usar el lector de pantalla
               href: ../user/screen-reader.md
@@ -85,6 +87,8 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Exportar a una tabla dinámica de Excel
               href: ../user/export-excel-pivottable.md
+            - name: Combinación de registros duplicados
+              href: ../user/merge-duplicate-records.md
         - name: Informes
           items:
             - name: Trabajo con los informes
