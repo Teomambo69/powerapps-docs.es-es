@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 418871c0-59dc-4a7c-a8f9-9364a19f7662
-ms.openlocfilehash: 7429a5bac040e3c20412ac0916743a57d9d5710f
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 0ed2d2b13fa084fe1521e90304b7e3ead4ccac27
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72344379"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025464"
 ---
 # <a name="entityformoptions"></a>EntityFormOptions
 
@@ -89,6 +89,26 @@ El valor de windowPosition es un número con los siguientes valores posibles
 |1|Centro|
 |2|Margen|
 
+
+## <a name="example"></a>Ejemplo
+
+```TypeScript
+private onRowClick(event: Event): void {
+    let rowRecordId = (event.currentTarget as HTMLTableRowElement).getAttribute(
+      RowRecordId
+    );
+    if (rowRecordId) {
+      let entityreference = this.contextObj.parameters.simpleTableGrid.records[
+        rowRecordId
+      ].getNamedreference();
+      let entityFormOptions = {
+        entityName: entityreference.entityType!,
+        entityId: entityreference.id
+      };
+      this.contextObj.navigation.openForm(entityFormOptions);
+    }
+  }
+```
 
 ### <a name="related-topics"></a>Temas relacionados
 

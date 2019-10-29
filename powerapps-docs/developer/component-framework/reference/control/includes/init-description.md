@@ -10,11 +10,11 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73788966-b83c-4797-8062-8b12bf8409eb
-ms.openlocfilehash: 1f369f560aa475182150e3e0f4a8ed1160fc6491
-ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.openlocfilehash: d04617180d06eaae0a32905be7a1213c6984a2cc
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "72338353"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73035058"
 ---
-Se usa para inicializar la instancia de componente. Los componentes pueden iniciar llamadas remotas al servidor y otras acciones de inicialización. Aquí no se pueden inicializar los valores del conjunto de valores, use el método [updateView](../updateview.md) para lograrlo.
+Se usa para inicializar la instancia de componente. Los componentes pueden iniciar llamadas remotas al servidor y otras acciones de inicialización. Los valores del conjunto de datos no se pueden inicializar aquí, use el método [updateView](../updateview.md) para lograrlo.

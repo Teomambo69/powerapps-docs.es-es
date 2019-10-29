@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71985745"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -83,7 +82,7 @@ Después de ese cambio, puede omitir la columna **title** o [quitarla](https://s
     El formulario aparece solo con los campos que ha agregado.
 
     > [!div class="mx-imgBorder"]
-    > ![Form sin los campos título y datos adjuntos ](./media/dependent-drop-down-lists/default-form.png)
+    > ![formulario sin los campos título y datos adjuntos](./media/dependent-drop-down-lists/default-form.png)
 
 ## <a name="replace-the-controls"></a>Reemplazar los controles
 
@@ -94,7 +93,7 @@ Después de ese cambio, puede omitir la columna **title** o [quitarla](https://s
 1. Abra la lista **tipo de control** y, a continuación, seleccione **valores permitidos**.
 
     > [!div class="mx-imgBorder"]
-    > ![Allowed valores ](./media/dependent-drop-down-lists/change-control.png)
+    > ![valores permitidos](./media/dependent-drop-down-lists/change-control.png)
 
     El mecanismo de entrada cambia a un control de **lista** desplegable.
 
@@ -109,12 +108,12 @@ Después de ese cambio, puede omitir la columna **title** o [quitarla](https://s
 1. Active la casilla correspondiente a esa lista y, a continuación, seleccione **conectar**.
 
     > [!div class="mx-imgBorder"]
-    > panel de ![Data ](./media/dependent-drop-down-lists/select-list.png)
+    > ![panel datos](./media/dependent-drop-down-lists/select-list.png)
 
     La lista de conexiones muestra la lista de **incidentes** , en la que se basa el formulario, y la lista de **ubicaciones** , que identificará las ubicaciones y los departamentos en el formulario.
 
     > [!div class="mx-imgBorder"]
-    > ![SharePoint orígenes de datos ](./media/dependent-drop-down-lists/data-sources.png)
+    > ![orígenes de datos de SharePoint](./media/dependent-drop-down-lists/data-sources.png)
 
 ## <a name="unlock-the-cards"></a>Desbloquear las tarjetas
 
@@ -131,7 +130,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 1. Cerca de la parte superior del panel derecho, cambie el nombre del control seleccionado escribiendo o pegando **ddLocation**.
 
     > [!div class="mx-imgBorder"]
-    > ![Rename un control ](./media/dependent-drop-down-lists/rename-control.png)
+    > ![cambiar el nombre de un control](./media/dependent-drop-down-lists/rename-control.png)
 
 1. Repita los dos pasos anteriores de la tarjeta **Department** para cambiar el nombre del control de **lista desplegable** a **ddDepartment**.
 
@@ -139,7 +138,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
 1. Establezca la propiedad **Items** de **ddlocation** en esta fórmula:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. opta Mientras mantiene presionada la tecla Alt, Abra **ddLocation**y confirme que la lista muestra las tres ubicaciones.
 
@@ -155,11 +154,11 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 1. En **campo coincidente**, seleccione **ubicaciones** en la lista superior, seleccione **Ubicación** en la lista inferior y, a continuación, seleccione **aplicar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Depends en el vínculo ](./media/dependent-drop-down-lists/depends-on.png)
+    > ![depende del vínculo](./media/dependent-drop-down-lists/depends-on.png)
 
     La propiedad **Items** de **ddDepartment** se establece en esta fórmula:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Esta fórmula filtra los elementos de **ddDepartment** en función de lo que seleccione el usuario en **ddLocation**. Esta configuración garantiza que la lista "secundaria" de departamentos refleje los datos para su ubicación "primaria", como la lista de **ubicaciones** de SharePoint especifica.
 
@@ -168,7 +167,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
     Este paso establece el texto para mostrar en las opciones de la columna **Departamento** de la lista **ubicaciones** de SharePoint.
 
     > [!div class="mx-imgBorder"]
-    > ![Department valor ](./media/dependent-drop-down-lists/dept-value.png)
+    > ![valor de Departamento](./media/dependent-drop-down-lists/dept-value.png)
 
 ## <a name="test-the-form"></a>Prueba del formulario
 
@@ -177,7 +176,7 @@ Mientras mantiene presionada la tecla Alt, abra la lista de ubicaciones, selecci
 Las listas de ubicaciones y departamentos reflejan la información de la lista **ubicaciones** de SharePoint.
 
 > [!div class="mx-imgBorder"]
-> ![Open la lista de ubicaciones, cambie la selección de Renfrew a Pembroke y, a continuación, abra la lista de departamentos ](./media/dependent-drop-down-lists/dropdowns.gif)
+> ![abrir la lista de ubicaciones, cambie la selección de Renfrew a Pembroke y, a continuación, abra la lista de departamentos](./media/dependent-drop-down-lists/dropdowns.gif)
 
 ## <a name="save-and-open-the-form-optional"></a>Guardar y abrir el formulario (opcional)
 
@@ -195,12 +194,12 @@ Confirme si está mostrando el campo correcto para el control de cualquiera de e
 - Seleccione una lista desplegable y, a continuación, seleccione la propiedad **valor** en la pestaña **propiedades** del panel derecho.
 
     > [!div class="mx-imgBorder"]
-    > ![Change lista desplegable ](./media/dependent-drop-down-lists/drop-down-display-field.png)
+    > ![desplegable de cambio](./media/dependent-drop-down-lists/drop-down-display-field.png)
 
 - Seleccione un cuadro combinado y, a continuación, asegúrese de que el texto principal es el campo que desea mostrar.
 
     > [!div class="mx-imgBorder"]
-    > ![Change cuadro combinado ](./media/dependent-drop-down-lists/combo-box-display-field.png)
+    > ![cambiar el cuadro combinado](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **La lista desplegable mi secundaria contiene elementos duplicados.**
 Este síntoma es probable que se deba al uso de una columna de **búsqueda** en SharePoint o a una función de **elección** en PowerApps. Para quitar la duplicación, ajuste una función **DISTINCT** alrededor de los datos que devuelven correctamente. Más información: [función DISTINCT](functions/function-distinct.md).

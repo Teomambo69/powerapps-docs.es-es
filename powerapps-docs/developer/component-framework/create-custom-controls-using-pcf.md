@@ -11,32 +11,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 286458da2ed7b7b94f92b86355bf8785161ef778
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347024"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025773"
 ---
 # <a name="create-and-build-a-code-component"></a>Crear y compilar un componente de código
 
-En este tema se explica cómo crear e implementar componentes de código mediante la CLI de PowerApps. Asegúrese de que ha instalado [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
+En este tema se muestra cómo crear e implementar componentes de código mediante la CLI de PowerApps. Asegúrese de que ha instalado [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="create-a-new-component"></a>Crear un nuevo componente
 
 Para empezar, Abra **símbolo del sistema para desarrolladores para VS 2017 después de** instalar la CLI de PowerApps.
 
-1. En el Símbolo del sistema para desarrolladores de VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_PCF_Component* con el comando `mkdir <Specify the folder name>`.
+1. En el Símbolo del sistema para desarrolladores de VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_code_Component* con el comando `mkdir <Specify the folder name>`.
 2. Vaya a la carpeta recién creada con la `cd <specify your new folder path>` de comandos.
-3. Ejecute el siguiente comando para crear un nuevo proyecto de componente pasando algunos parámetros básicos:
+3. Cree un nuevo proyecto de componente pasando algunos parámetros básicos mediante el comando:
 
-    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
+    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
  
    > [!NOTE]
-   > Actualmente, la CLI de PowerApps admite dos tipos de componentes: **Field** y **DataSet**.  En el caso de las aplicaciones de Canvas, solo se admite el tipo de **campo** para esta vista previa experimental.
+   > Actualmente, la CLI de PowerApps admite dos tipos de componentes: **Field** y **DataSet** para aplicaciones controladas por modelos.  En el caso de las aplicaciones de Canvas, solo se admite el tipo de **campo** para esta vista previa experimental.
 
 4. Para recuperar todas las dependencias necesarias del proyecto, ejecute el comando `npm install`.
-5. Abra la carpeta del proyecto `C:\Users\<your name>\Documents\<My_PCF_Component>` en el entorno de desarrollador que prefiera y empiece a trabajar con el desarrollo de componentes de código. La forma más rápida de empezar es mediante la ejecución de `code .` desde el símbolo del sistema una vez que se encuentra en el directorio `C:\Users\<your name>\Documents\<My_PCF_Component>`. Este comando abre el proyecto de componente en Visual Studio Code.
+5. Abra la carpeta del proyecto `C:\Users\<your name>\Documents\<My_code_Component>` en el entorno de desarrollador que prefiera y empiece a trabajar con el desarrollo de componentes de código. La forma más rápida de empezar es mediante la ejecución de `code .` desde el símbolo del sistema una vez que se encuentra en el directorio `C:\Users\<your name>\Documents\<My_code_Component>`. Este comando abre el proyecto de componente en Visual Studio Code.
+6. Implemente los artefactos necesarios para el componente como el manifiesto, la lógica del componente y el estilo y, a continuación, compile el proyecto de componente. Más información: [implementación](implementing-controls-using-typescript.md) de un componente de ejemplo
 
 ## <a name="build-your-component"></a>Compilar el componente
 

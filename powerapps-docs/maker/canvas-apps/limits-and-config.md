@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1daf6ea280710043572a0685da6daeda78f9f620
-ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
+ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72902431"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025103"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -117,7 +117,7 @@ Puede encontrar información sobre los límites de tamaño en el texto, los hipe
 
 PowerApps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de PowerApps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
 
-Después de que un administrador asigna el plan de PowerApps por aplicación a un entorno, se asigna a los usuarios de forma predeterminada cuando se comparte la aplicación con ellos.
+Después de que un administrador asigna el plan de PowerApps por aplicación a un entorno, se asigna a los usuarios de forma predeterminada cuando se comparte la aplicación con ellos. Puede ver cómo un administrador asigna [aquí](https://docs.microsoft.com/power-platform/admin/capacity-add-on)los planes de cada aplicación.
 
 Siga estos pasos para desactivar la asignación de planes por aplicación para los usuarios cuando se comparte una aplicación con ellos:
 

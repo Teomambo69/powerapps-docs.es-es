@@ -8,16 +8,24 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cd57cce824c4071de12e7dc96407018dde57c2d7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346840"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025756"
 ---
 # <a name="implement-components-using-typescript"></a>Implementar componentes con TypeScript
 
-Este tutorial le guiará por el proceso de creación de un nuevo componente de código en TypeScript. El componente de ejemplo es un componente de entrada lineal que permite a los usuarios escribir valores numéricos con un control deslizante visual en lugar de escribir los valores en el campo. 
+Este tema le guía por el proceso de creación de un nuevo componente de código en TypeScript mediante la CLI de PowerApps. En este tutorial, se creará un componente de código lineal de ejemplo que permite a los usuarios cambiar los valores numéricos con un control deslizante visual en lugar de escribir los valores en el campo. 
+
+Los artefactos necesarios para compilar componentes de código son:
+
+1. [Crear un nuevo proyecto de componente](#creating-a-new-component-project)
+2. [Implementación del manifiesto](#implementing-manifest)
+3. [Implementación de la lógica de componentes con TypeScript](#implementing-component-logic)
+4. [Agregar estilo a los componentes de código](#adding-style-to-the-code-component)
+5. [Empaquetar componentes de código](#packaging-your-code-components)
 
 ## <a name="creating-a-new-component-project"></a>Crear un nuevo proyecto de componente
 
@@ -29,26 +37,28 @@ Para crear un nuevo proyecto:
     mkdir LinearComponent
     ```
 
-1. Vaya al nuevo directorio mediante el `cd LinearComponent` de comandos. 
+1. Vaya a la carpeta de componentes con la `cd LinearComponent`de comandos. 
    
-1. Ejecute el siguiente comando para crear un nuevo proyecto de componente que pase los parámetros básicos.
+1. Cree un nuevo proyecto de componente pasando los parámetros básicos con el comando.
 
    ```CLI
     pac pcf init --namespace SampleNamespace --name TSLinearInputComponent --template field
     ``` 
 
 1. Instale las herramientas de compilación del proyecto mediante el `npm install` de comandos. 
-2. Abra la carpeta del proyecto `C:\Users\<your name>\Documents\<My_PCF_Component>` en el entorno de desarrollador que prefiera y empiece a trabajar con el desarrollo de componentes de código. La forma más rápida de empezar es mediante la ejecución de `code .` desde el símbolo del sistema una vez que se encuentra en el directorio `C:\Users\<your name>\Documents\<My_PCF_Component>`. Este comando abre el proyecto de componente en Visual Studio Code.
+1. Abra la carpeta del proyecto `C:\Users\<your name>\Documents\<My_code_Component>` en el entorno de desarrollador que prefiera y empiece a trabajar con el desarrollo de componentes de código. La forma más rápida de empezar es mediante la ejecución de `code .` desde el símbolo del sistema una vez que se encuentra en el directorio `C:\Users\<your name>\Documents\<My_code_Component>`. Este comando abre el proyecto de componente en Visual Studio Code.
 
 ## <a name="implementing-manifest"></a>Implementación del manifiesto
 
-El manifiesto es un archivo XML que contiene los metadatos del componente de código. También define el comportamiento del componente de código. En este tutorial, este archivo de manifiesto se crea en la subcarpeta `<Your component Name>`. Al abrir el archivo de `ControlManifest.Input.xml` en Visual Studio Code, observará que el archivo de manifiesto está predefinido con algunas propiedades. Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
+El manifiesto es un archivo XML que contiene los metadatos del componente de código. También define el comportamiento del componente de código. En este tutorial, este archivo de manifiesto se crea en la subcarpeta `<Your component Name>`. Al abrir el archivo de `ControlManifest.Input.xml` en Visual Studio Code, observará que el archivo de manifiesto está predefinido con algunas propiedades. Más información: [manifiesto](manifest-schema-reference/manifest.md).
+
+Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
 
 1. El nodo de [control](manifest-schema-reference/control.md) define el espacio de nombres, la versión y el nombre para mostrar del componente de código. Ahora, defina cada propiedad del nodo de [control](manifest-schema-reference/control.md) como se muestra aquí:
 
    - **espacio de nombres**: espacio de nombres del componente de código. 
    - **Constructor**: constructor del componente de código.
-   - **Versión**: versión del componente. Siempre que actualice el componente, deberá actualizar la versión para ver los cambios en el tiempo de ejecución.
+   - **Versión**: versión del componente. Siempre que actualice el componente, deberá actualizar la versión para ver los cambios más recientes en el tiempo de ejecución.
    - **Display-Name-Key**: nombre del componente de código que se muestra en la interfaz de usuario.
    - **Descripción-nombre-clave**: Descripción del componente de código que se muestra en la interfaz de usuario.
    - **tipo de control**: tipo de componente de código. Solo se admite el tipo *estándar* de componentes de código.
@@ -59,7 +69,7 @@ El manifiesto es un archivo XML que contiene los metadatos del componente de có
       <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
      ```
 
-2. El nodo de [propiedades](manifest-schema-reference/property.md) define las propiedades del componente de código como la definición del tipo de datos del campo. El nodo de propiedad se especifica como el elemento secundario bajo el elemento de control. Defina el nodo de [propiedad](manifest-schema-reference/property.md) como se muestra aquí:
+2. El nodo de [propiedades](manifest-schema-reference/property.md) define las propiedades del componente de código como la definición del tipo de datos del campo. El nodo de propiedad se especifica como el elemento secundario bajo el elemento `control`. Defina el nodo de [propiedad](manifest-schema-reference/property.md) como se muestra aquí:
 
    - **Name**: nombre de la propiedad.
    - **Display-Name-Key**: nombre para mostrar de la propiedad que se muestra en la interfaz de usuario.
@@ -71,7 +81,7 @@ El manifiesto es un archivo XML que contiene los metadatos del componente de có
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
-3. El nodo [recursos](manifest-schema-reference/resources.md) define la visualización del componente de código. Contiene todos los recursos que componen el componente de código. El [código](manifest-schema-reference/code.md) se especifica como un elemento secundario en el elemento Resources. Defina los [recursos](manifest-schema-reference/resources.md) como se muestra aquí:
+3. El nodo [recursos](manifest-schema-reference/resources.md) define la visualización del componente de código. Contiene todos los recursos que compilan la visualización y el estilo del componente de código. El [código](manifest-schema-reference/code.md) se especifica como un elemento secundario en el elemento Resources. Defina los [recursos](manifest-schema-reference/resources.md) como se muestra aquí:
 
    - **código**: hace referencia a la ruta de acceso donde se encuentran todos los archivos de recursos.
  
@@ -110,7 +120,7 @@ El manifiesto es un archivo XML que contiene los metadatos del componente de có
 
 ## <a name="implementing-component-logic"></a>Implementar la lógica de componentes
 
-El siguiente paso después de implementar el archivo de manifiesto es implementar la lógica del componente mediante TypeScript. La lógica del componente debe implementarse dentro del archivo de `index.ts`. Al abrir el archivo de `index.ts` en el Visual Studio Code, observa que las cuatro clases esenciales están predefinidas. Ahora, vamos a implementar la lógica para el componente de código. 
+El siguiente paso después de implementar el archivo de manifiesto es implementar la lógica del componente mediante TypeScript. La lógica del componente debe implementarse dentro del archivo de `index.ts`. Al abrir el archivo de `index.ts` en el Visual Studio Code, observará que las cuatro clases esenciales están predefinidas. Ahora, vamos a implementar la lógica para el componente de código. 
 
 1. Abra el archivo `index.ts` en el editor de código de su elección.
 2. Actualice la clase `TSLinearInputComponent` con el código siguiente:
@@ -329,7 +339,7 @@ npm start
 
 ## <a name="packaging-your-code-components"></a>Empaquetar los componentes de código
 
-Siga estos pasos para crear e importar un archivo de [solución](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) :
+Siga estos pasos para crear e importar un archivo de [solución](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) :
 
 1. Cree una nueva carpeta **soluciones** dentro de la carpeta **LinearComponent** y navegue hasta la carpeta. 
 2. Cree un nuevo proyecto de solución en la carpeta **LinearComponent** con el siguiente comando:
@@ -366,7 +376,7 @@ Siga estos pasos para crear e importar un archivo de [solución](https://docs.mi
     > - En **herramientas de código**, compruebe los **destinos de NuGet & las tareas de compilación**.
 
 6. El archivo zip de la solución generada se encuentra en la carpeta `Solution\bin\debug`.
-7. [Importe manualmente la solución en Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) mediante el portal web una vez que el archivo zip esté listo o consulte las secciones sobre [autenticación en su organización](import-custom-controls.md#authenticating-to-your-organization) e [implementación](import-custom-controls.md#deploying-code-components) para importar mediante los comandos de la CLI de PowerApps.
+7. [Importe manualmente la solución en Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mediante el portal web una vez que el archivo zip esté listo o consulte las secciones sobre [autenticación en su organización](import-custom-controls.md#authenticating-to-your-organization) e [implementación](import-custom-controls.md#deploying-code-components) para importar mediante los comandos de la CLI de PowerApps.
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Agregar componentes de código en aplicaciones controladas por modelos
 

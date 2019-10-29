@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4af851160ea8a2add22add9f79dcc181a734e715
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71994865"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps
 
@@ -32,7 +31,7 @@ Mediante el uso de la enumeración de **color** , puede tener acceso fácilmente
 La función **ColorValue** devuelve un color basado en una cadena de color de una CSS. La cadena puede adoptar cualquiera de estas formas:
 
 - **El nombre de color de CSS:** **"RoxyBrown"** y **"OliveDrab"** son ejemplos. Estos nombres no incluyen espacios. La lista de colores admitidos aparece más adelante en este tema.
-- **valor hexadecimal de 6 dígitos:** Como ejemplo **"#ffd700"** es igual que **"Gold"** . La cadena tiene el formato "#*RRGGBB*", donde *RR* es la parte roja en dos dígitos hexadecimales, *GG* es el verde y *BB* es el azul.
+- **valor hexadecimal de 6 dígitos:** Como ejemplo **"#ffd700"** es igual que **"Gold"**. La cadena tiene el formato "#*RRGGBB*", donde *RR* es la parte roja en dos dígitos hexadecimales, *GG* es el verde y *BB* es el azul.
 - **valor hexadecimal de 8 dígitos:** Por ejemplo, **"#ff7f5080"** es igual que **"Coral"** con un canal alfa 50%. La cadena tiene el formato "#*RRGGBBAA*", donde *RR*, *GG*y *BB* son idénticos al formato de 6 dígitos. El canal alfa se representa mediante *AA*: **00** representa completamente transparente y **FF** representa totalmente opaco.
 
 La función **RGBA** devuelve un color basado en los componentes rojo, verde y azul. La función también incluye un canal alfa para mezclar colores de controles que están superpuestos entre sí. Un canal alfa varía desde 0 o 0% (que es completamente transparente e invisible) hasta 1 o 100% (que es completamente opaco y se bloquea completamente cualquier capa detrás de un control).
@@ -44,12 +43,12 @@ La función **ColorFade** devuelve una versión más clara o más oscura de un c
 En una aplicación de lienzo, puede capas de controles de un lado a otro y especificar la transparencia de un control para todos los controles que están detrás. Como resultado, los colores se fusionarán a través de las capas. Por ejemplo, en este diagrama se muestra cómo se mezclan los tres colores primarios con una configuración alfa de 50%:
 
 > [!div class="mx-imgBorder"]
-> ![Three colores primarios con una configuración alfa de 50% ](media/function-colors/alpha-primary.png)
+> ![tres colores primarios con una configuración alfa de 50%](media/function-colors/alpha-primary.png)
 
 También puede mezclar imágenes en formatos de archivo que admiten canales alfa. Por ejemplo, no puede mezclar archivos. JPEG, pero puede mezclar archivos. png. En el gráfico siguiente se muestran los mismos colores rojo, verde y azul del ejemplo anterior, pero el color rojo aparece como una línea ondulada (en lugar de un círculo) en un archivo. png con un canal alfa 50%:
 
 > [!div class="mx-imgBorder"]
-> ![Red zigzag con un valor alfa del 50% delante de los círculos azul y verde ](media/function-colors/alpha-image.png)
+> ![subrayado ondulado de color rojo con un valor alfa del 50% delante de los círculos azul y verde](media/function-colors/alpha-image.png)
 
 Si especifica un valor de enumeración de **color** o crea una fórmula de **ColorValue** con un nombre de color o un valor hexadecimal de 6 dígitos, el valor de alfa es 100%, que es completamente opaco.
 
@@ -63,12 +62,12 @@ Si especifica un valor de enumeración de **color** o crea una fórmula de **Col
 
 - *CSSColor*: requerido.  La definición de un color de hoja de estilo CSS. Puede especificar un nombre, como **OliveDrab**, o un valor hexadecimal, como **#6b8e23** o **#7fffd420**. Los valores hexadecimales pueden adoptar la forma de #*RRGGBB* o #*RRGGBBAA*.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue*: requerido.  Valores de componente de color, que van desde 0 (sin saturación) hasta 255 (saturación completa).
 - *Alpha*: requerido.  Componente alfa, que va de 0 (totalmente transparente) a 1 (totalmente opaco). También puede usar un porcentaje, de 0 % a 100 %.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color*: requerido.  Un valor de color como **Color.Red** o el resultado de **ColorValue** o **RGBA**.
 - *FadeAmount*: requerido.  Número entre -1 y 1. -1 oscurece completamente un color a negro, 0 no afecta al color y 1 ilumina completamente un color a blanco. También puede usar un porcentaje entre-100% y 100%.

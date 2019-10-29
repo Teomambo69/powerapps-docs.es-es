@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71983587"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-powerapps"></a>Objeto App en PowerApps
 
@@ -32,7 +31,7 @@ Al igual que un control, el objeto de **aplicación** proporciona propiedades qu
 Puede escribir fórmulas para algunas propiedades del objeto de **aplicación** . En la parte superior del panel de **vista de árbol** , seleccione el objeto de la **aplicación** como lo haría con cualquier otro control o pantalla. Para ver y editar una de las propiedades del objeto, selecciónela en la lista desplegable situada a la izquierda de la barra de fórmulas.
 
 > [!div class="mx-imgBorder"]
-> ![The objeto de aplicación en el panel de vista de árbol ](media/object-app/appobject.png)
+> ![el objeto de aplicación en el panel de vista de árbol](media/object-app/appobject.png)
 
 ## <a name="activescreen-property"></a>Propiedad ActiveScreen
 
@@ -55,7 +54,7 @@ Esta fórmula se evalúa antes de que aparezca la primera pantalla. No se carga 
 Después de cambiar la propiedad **OnStart** , pruébelo manteniendo el mouse sobre el objeto **App** en el panel **vista de árbol** , seleccionando los puntos suspensivos (...) que aparece y seleccionando **Ejecutar OnStart**. A diferencia de la primera vez que se carga la aplicación, ya se establecerán las colecciones y variables existentes. Para empezar con colecciones vacías, utilice la función **[ClearCollect](function-clear-collect-clearcollect.md)** en lugar de la función **Collect** .
 
 > [!div class="mx-imgBorder"]
-> menú contextual de ![App elementos para ejecutar OnStart ](media/object-app/appobject-runonstart.png)
+> ![menú contextual del elemento de aplicación para ejecutar OnStart](media/object-app/appobject-runonstart.png)
 
 ## <a name="confirmexit-properties"></a>Propiedades de ConfirmExit
 
@@ -102,20 +101,20 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
     Este cuadro de diálogo aparece si el usuario cambia los datos de cualquier forma y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
 
     > [!div class="mx-imgBorder"]
-    > ![Generic cuadro de diálogo de confirmación ](media/object-app/confirm-native.png)
+    > ![cuadro de diálogo de confirmación genérica](media/object-app/confirm-native.png)
 
 1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
@@ -123,4 +122,4 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
     Este cuadro de diálogo aparece si el usuario cambia los datos en el formulario de la cuenta y, a continuación, intenta cerrar la aplicación sin guardar los cambios.
 
     > [!div class="mx-imgBorder"]
-    > cuadro de diálogo de confirmación específico de ![Form ](media/object-app/confirm-native-custom.png)
+    > ![cuadro de diálogo de confirmación específico del formulario](media/object-app/confirm-native-custom.png)

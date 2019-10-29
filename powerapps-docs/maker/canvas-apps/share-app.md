@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71995606"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025911"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -201,13 +201,13 @@ Al igual que con los no invitados, los orígenes de datos subyacentes a los que 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>¿Qué licencia debe asignarse a mi invitado para poder ejecutar una aplicación compartida con ellas?
 La misma licencia necesaria para que los usuarios no invitados ejecuten una aplicación. Por ejemplo, si la aplicación no usa los conectables Premium, una licencia de PowerApps P1 es suficiente para asignarla al invitado.  
 
-
 |                                 | Formulario personalizado de SharePoint | Aplicación de lienzo independiente con conectores no Premium | Aplicación de lienzo independiente con conectores Premium | Aplicación controlada por modelos |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | Usuario de SharePoint (sin licencia de PA) | x                          |                                                    |                                                |                  |
 | PowerApps incluido en la oficina    | x                          |                                                    |                                                |                  |
-| Plan 1 de PowerApps                | x                          | x                                                  |                                                |                  |
-| Plan2 de PowerApps                 | x                          | x                                                  | x                                              | x                |
+| Plan de PowerApps por aplicación          | x                          | x                                                  | x                                              | x                |
+| De PowerApps por plan de usuario         | x                          | x                                                  | x                                              | x                |
+
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>En PowerApps Mobile, ¿cómo ven los invitados las aplicaciones de su inquilino principal?
 Cualquier usuario que tenga acceso a una aplicación de lienzo, en su dispositivo móvil, que se publique en un inquilino de Azure AD que no sea su inquilino principal debe cerrar la sesión de PowerApps y volver a iniciar sesión en PowerApps Mobile.  

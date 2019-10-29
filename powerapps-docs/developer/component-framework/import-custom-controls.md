@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 3042202fd1790d117c2a503bd6e69eaaea15c08a
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346817"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025680"
 ---
 # <a name="package-a-code-component"></a>Empaquetar un componente de código
 
@@ -22,7 +22,7 @@ En este tema se describe cómo importar componentes de código en Common Data Se
 
 Para crear e importar un archivo de solución:
 
-1. Cree una nueva carpeta y asígnele el nombre **Solution** (o cualquier nombre de su elección) mediante el `mkdir Solutions` de comandos. Navegue al directorio mediante el `cd Solutions` de comandos.
+1. Cree una nueva carpeta dentro de la carpeta del componente de ejemplo y asígnele el nombre **solución** (o cualquier nombre de su elección) mediante el `mkdir Solutions`de comandos. Navegue al directorio mediante el `cd Solutions` de comandos.
 
 2. Cree un nuevo proyecto de soluciones mediante el `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` de comandos. El proyecto de solución se utiliza para agrupar el componente de código en un archivo zip de la solución que se usa para la importación en Common Data Service.
 
@@ -45,7 +45,7 @@ Para crear e importar un archivo de solución:
     > - Si se produce un error que indica un *nombre de proyecto ambiguo* al ejecutar el comando `msbuild` en la solución, asegúrese de que el nombre de la solución y el nombre del proyecto no son los mismos.
 
 4. Los archivos de solución generados se encuentran dentro de la carpeta `\bin\debug\` una vez que la compilación se ha realizado correctamente.
-5. [Importe manualmente la solución en Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) mediante el portal web o consulte las secciones sobre [autenticación en su organización](#authenticating-to-your-organization) e [implementación](#deploying-code-components) para importarlas mediante los comandos de la CLI de PowerApps.
+5. [Importe manualmente la solución en Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mediante el portal web o consulte las secciones sobre [autenticación en su organización](#authenticating-to-your-organization) e [implementación](#deploying-code-components) para importarlas mediante los comandos de la CLI de PowerApps.
 
 ## <a name="authenticating-to-your-organization"></a>Autenticación en su organización
 

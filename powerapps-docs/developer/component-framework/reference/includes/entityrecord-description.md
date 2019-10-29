@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 41687f01-4989-4027-95ec-5a2ad8c67c02
-ms.openlocfilehash: 5559343aebef47fbdf6e12a3dead265d75585d90
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: 9b773269025850b92f91efbf560b7fa2c3bac3bc
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "72339871"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73034598"
 ---
-Interfaz base del resultado del registro del conjunto de datos. Admite la recuperación de valores por nombre de columna.
+Interfaz base para el resultado del registro del conjunto de datos. Admite la recuperación de valores por nombre de columna.
