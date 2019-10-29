@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: b8f41b5f-7de2-4855-87a1-d052ee9aa7ae
-ms.openlocfilehash: 69fa81670dfdb4cb440ea03976e9b167b1720181
-ms.sourcegitcommit: 2754a58c7affa63cfd4db800780554eae45eace2
+ms.openlocfilehash: cae40bb59b4c78327ce9adb48744f0c8268c30c5
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "72339733"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73034805"
 ---
-Devuelve el filtro de nivel superior asociado al conjunto de datos.
+Establece el filtro de nivel superior asociado al conjunto de datos.

@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 0c3db8b8-6f7e-412e-910c-3654fde08aba
-ms.openlocfilehash: 7575badc3827b8ec403ab2fa74bccd4837ccd4fb
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: ddafe4ea271810f27fc4350a93cc6e3e9f00d2b7
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72344264"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73034851"
 ---
 Obtiene el objeto que encapsula un EntityReference como un objeto sin formato.

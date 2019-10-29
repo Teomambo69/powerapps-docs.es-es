@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71990852"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Instalar la base de datos y las aplicaciones de Northwind Traders
@@ -45,12 +45,12 @@ Este archivo de [solución](../../developer/common-data-service/introduction-sol
 1. En el panel de navegación izquierdo, seleccione **soluciones**y, a continuación, seleccione **importar** en la barra de herramientas situada en la parte superior de la pantalla:
 
     > [!div class="mx-imgBorder"]
-    > ![Solutions ver e importar ](media/northwind-install/solution-import.png) de punto de entrada de la solución
+    > vista de soluciones de ![e importación: punto de entrada de la solución](media/northwind-install/solution-import.png)
 
 1. En la página **seleccionar paquete de solución** , seleccione **examinar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Select página paquete de solución antes de que se seleccione el paquete ](media/northwind-install/select-solution2.png)
+    > ![página seleccionar paquete de solución antes de que se seleccione el paquete](media/northwind-install/select-solution2.png)
 
 1. Busque el archivo que ha descargado y, a continuación, seleccione **abrir**.
 
@@ -59,27 +59,27 @@ Este archivo de [solución](../../developer/common-data-service/introduction-sol
 1. Si tiene el archivo correcto (el número de versión puede variar), seleccione **siguiente**:
 
     > [!div class="mx-imgBorder"]
-    > ![Select página paquete de solución una vez seleccionado el paquete ](media/northwind-install/confirm-solution2.png)
+    > ![página seleccionar paquete de solución una vez seleccionado el paquete](media/northwind-install/confirm-solution2.png)
 
 1. En la página información de la **solución** , seleccione **siguiente** si el nombre de la solución y el publicador son correctos.
 
     > [!div class="mx-imgBorder"]
-    > ![Solution página de información ](media/northwind-install/confirm-publisher.png)
+    > ![página de información de la solución](media/northwind-install/confirm-publisher.png)
 
 1. En la página **Opciones de importación** , seleccione **importar** para confirmar el control de mensajes del SDK, que requiere el ejemplo:
 
     > [!div class="mx-imgBorder"]
-    > ![Import página Opciones ](media/northwind-install/confirm-sdk.png)
+    > ![página Opciones de importación](media/northwind-install/confirm-sdk.png)
 
     Aparece otra página en la que se muestra el progreso de la instalación de la solución en los próximos minutos:
 
     > [!div class="mx-imgBorder"]
-    > barra de ![progress ](media/northwind-install/solution-progress.png)
+    > ![barra de progreso](media/northwind-install/solution-progress.png)
 
     Una vez finalizada la instalación, la página original muestra el resultado:
 
     > [!div class="mx-imgBorder"]
-    > ![Importing página de la solución ](media/northwind-install/solution-success.png)
+    > ![página de importación de la solución](media/northwind-install/solution-success.png)
 
 1. Haga clic en **Cerrar**.
 
@@ -90,17 +90,17 @@ Este archivo de [solución](../../developer/common-data-service/introduction-sol
     Espere unos minutos si las aplicaciones Northwind no aparecen inmediatamente después de instalar la solución:
 
     > [!div class="mx-imgBorder"]
-    > ![Northwind base de datos en la lista de aplicaciones ](media/northwind-install/sample-data-app.png)
+    > ![base de datos Northwind en la lista de aplicaciones](media/northwind-install/sample-data-app.png)
 
 1. Cuando la aplicación Pida permiso para interactuar con Common Data Service, seleccione **permitir**:
 
     > [!div class="mx-imgBorder"]
-    > cuadro de diálogo ![Consent para Common Data Service ](media/northwind-install/sample-data-permission.png)
+    > ![el cuadro de diálogo de consentimiento para Common Data Service](media/northwind-install/sample-data-permission.png)
 
 1. Una vez que la aplicación se carga y muestra que las entidades de ejemplo no contienen registros, seleccione **cargar datos** para rellenar las entidades:
 
     > [!div class="mx-imgBorder"]
-    > botón ![Load datos de la Data Manager de ejemplo ](media/northwind-install/sample-data-load.png)
+    > ![botón cargar datos en el Data Manager de ejemplo](media/northwind-install/sample-data-load.png)
 
     A medida que la aplicación carga los datos, los puntos de marzo de la parte superior de la aplicación y el número de registros aumenta.
 
@@ -109,12 +109,12 @@ Este archivo de [solución](../../developer/common-data-service/introduction-sol
     Puede cancelar el proceso en cualquier momento seleccionando **Cancelar**y puede quitar los datos en cualquier momento seleccionando **Quitar datos**:
 
     > [!div class="mx-imgBorder"]
-    > ![Sample Data Manager a medida que se cargan los datos ](media/northwind-install/sample-data-progress.png)
+    > ![Data Manager de ejemplo a medida que se cargan los datos](media/northwind-install/sample-data-progress.png)
 
     Cuando los datos terminan de cargarse **, se muestra la**última fila (**relaciones de varios a varios**) y se vuelven a habilitar los botones **cargar datos** y **Quitar datos** :
 
     > [!div class="mx-imgBorder"]
-    > ![Sample Data Manager una vez cargados los datos ](media/northwind-install/sample-data-complete.png)
+    > ![Data Manager de ejemplo una vez cargados los datos](media/northwind-install/sample-data-complete.png)
 
 ## <a name="sample-apps"></a>Aplicaciones de ejemplo
 
@@ -130,24 +130,24 @@ Abra estas aplicaciones de la misma manera que abrió la aplicación en el proce
 Esta aplicación de una sola pantalla ofrece una vista de maestro-detalle simple de la entidad **Orders** , donde puede ver y editar un resumen del pedido y cada artículo de línea de un pedido. Una lista de pedidos aparece cerca del borde izquierdo y puede seleccionar una flecha en esa lista para mostrar un resumen y los detalles de dicho pedido. Más información: [información general de la aplicación Canvas para Northwind Traders](northwind-orders-canvas-overview.md).
 
 > [!div class="mx-imgBorder"]
-> ![List de pedidos y detalles en la aplicación de lienzo Northwind ](media/northwind-install/orders-canvas.png)
+> ![lista de pedidos y detalles en la aplicación de lienzo Northwind](media/northwind-install/orders-canvas.png)
 
 ### <a name="model-driven"></a>Controlado por modelos
 
 Esta aplicación opera en los mismos datos (en la entidad **Orders** ) que la aplicación Canvas. En la lista de pedidos, para mostrar más información sobre un pedido, seleccione su número:
 
 > [!div class="mx-imgBorder"]
-> ![list de pedidos en la aplicación controlada por modelos de Northwind ](media/northwind-install/orders-model.png)
+> ![lista de pedidos en la aplicación controlada por modelos de Northwind](media/northwind-install/orders-model.png)
 
 Un resumen del pedido aparece en un formulario independiente:
 
 > [!div class="mx-imgBorder"]
-> ![order detalles de la aplicación controlada por modelos ](media/northwind-install/orders-model-2.png)
+> ![detalles del pedido en la aplicación controlada por modelos](media/northwind-install/orders-model-2.png)
 
 Si se desplaza hacia abajo en el formulario, muestra los mismos elementos de línea que la aplicación Canvas:
 
 > [!div class="mx-imgBorder"]
-> ![more detalles del pedido en la aplicación controlada por modelos ](media/northwind-install/orders-model-3.png)
+> ![más detalles de pedido en la aplicación controlada por modelos](media/northwind-install/orders-model-3.png)
 
 ## <a name="do-it-yourself"></a>Hágalo usted mismo
 
