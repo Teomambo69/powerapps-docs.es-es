@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71985745"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -139,7 +138,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
 1. Establezca la propiedad **Items** de **ddlocation** en esta fórmula:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. opta Mientras mantiene presionada la tecla Alt, Abra **ddLocation**y confirme que la lista muestra las tres ubicaciones.
 
@@ -159,7 +158,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
     La propiedad **Items** de **ddDepartment** se establece en esta fórmula:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Esta fórmula filtra los elementos de **ddDepartment** en función de lo que seleccione el usuario en **ddLocation**. Esta configuración garantiza que la lista "secundaria" de departamentos refleje los datos para su ubicación "primaria", como la lista de **ubicaciones** de SharePoint especifica.
 

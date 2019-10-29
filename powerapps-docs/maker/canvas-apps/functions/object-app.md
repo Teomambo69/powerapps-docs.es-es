@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71983587"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-powerapps"></a>Objeto App en PowerApps
 
@@ -102,7 +101,7 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
