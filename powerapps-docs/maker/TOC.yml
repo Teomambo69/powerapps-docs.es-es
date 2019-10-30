@@ -135,7 +135,7 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: Crear su primera aplicación
       items:
-        - name: 1 - Generar una aplicación a partir de datos
+        - name: 1 - Crear una aplicación a partir de datos
           items:
             - name: Desde Common Data Service
               href: ./canvas-apps/data-platform-create-app.md
@@ -143,6 +143,8 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: Desde Excel
               href: ./canvas-apps/get-started-create-from-data.md
+            - name: "Desde Azure\_SQL\_Database"
+              href: ./canvas-apps/app-from-azure-sql-database.md
         - name: 2 - Crear personalizaciones básicas
           items:
             - name: 1 - Galerías
@@ -1422,6 +1424,8 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Obtener un id. de aplicación o de sesión
       href: ./canvas-apps/get-sessionid.md
+    - name: Solución de problemas de inicio de PowerApps
+      href: troubleshooting-startup-issues.md
     - name: Solucionar problemas de Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: Soporte técnico
