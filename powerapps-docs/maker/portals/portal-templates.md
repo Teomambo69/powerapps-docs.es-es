@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 8914bdf9415299651285b452cb1587dad03ce55d
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: e9f4c65d5b2929a1f2cc51d0d3a9d29152307752
+ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977666"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068745"
 ---
 # <a name="portal-templates"></a>Plantillas de portal
 
@@ -39,7 +39,7 @@ Si selecciona un entorno que contenga aplicaciones controladas por modelos en Dy
 - **Portal de Partners**: un portal de Partners permite a todas las organizaciones con revendedores, distribuidores, proveedores o asociados tener acceso en tiempo real a cada fase de actividades compartidas.
 
     > [!NOTE]
-    > Los paquetes de servicio de campo y de servicio de proyecto deben instalarse en la organización de Dynamics 365 para habilitar las opciones respectivas. Para obtener más información, vea [Integrate Project Service Automation](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-project-service-automation) e [Integrate Field service](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-field-service).
+    > Los paquetes de servicio de campo y de servicio de proyecto deben instalarse en la organización de Dynamics 365 para habilitar las opciones respectivas. Para obtener más información, vea [Integrate Project Service Automation](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) e [Integrate Field service](https://docs.microsoft.com/dynamics365/portals/integrate-field-service).
 
 - **Portal de autoservicio**para empleados: un portal de autoservicio para empleados crea un personal eficaz y bien informado mediante la optimización de tareas comunes y la habilitación de todos los empleados con un origen de conocimiento definitivo.
 - **Portal**de la comunidad: un portal de la comunidad aprovecha las interacciones punto a punto entre los clientes y expertos para aumentar de forma orgánica el catálogo de conocimiento disponible de los artículos de Knowledge base, foros y blogs, así como para proporcionar comentarios a través de Comentarios y clasificaciones
