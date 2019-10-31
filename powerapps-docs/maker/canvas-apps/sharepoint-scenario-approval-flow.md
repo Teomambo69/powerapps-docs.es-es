@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/09/18
+ms.date: 01/09/2018
 ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41807bedf85c151c8e115456b9fb3e23756629d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9dc1fa02737b49261dc76a06e208cea578e80dea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538250"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182596"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "61538250"
 
 En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos. Microsoft Flow está integrado con SharePoint, por lo que resulta fácil crear un flujo de directamente desde una lista. El flujo que vamos a crear se desencadena cuando se agrega un elemento a la lista **Project Requests**. El flujo envía un correo electrónico al aprobador del proyecto, quien aprueba o rechaza la solicitud directamente en el correo electrónico. Después, el flujo envía un correo electrónico de aprobación o rechazo al solicitante del proyecto y actualiza nuestras listas de SharePoint en consecuencia.
 
-## <a name="step-1-configure-the-flow-template"></a>Paso 1: Configurar la plantilla de flujo
+## <a name="step-1-configure-the-flow-template"></a>Paso 1: Configuración de la plantilla de flujo
 1. En la lista **Project Requests**, pulse o haga clic en **Flujo** y, luego, en **Crear un flujo**.
    
     ![Creación de un flujo](./media/sharepoint-scenario-approval-flow/03-01-01-create-flow.png)
@@ -44,11 +44,11 @@ En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de p
    
     ![Contacto de correo electrónico de aprobación](./media/sharepoint-scenario-approval-flow/03-01-05-approval-email.png)
    
-    El siguiente cuadro del flujo responde a la Decisión del aprobador del proyecto y enruta el flujo a uno de los dos *ramas*: **En caso afirmativo** o **si no hay ningún**.
+    El siguiente cuadro del flujo responde a la decisión del correo electrónico del aprobador del proyecto y enruta el flujo a una de las dos *ramas*: **En caso positivo** o **En caso negativo**.
    
     ![Condición de aprobación](./media/sharepoint-scenario-approval-flow/03-01-06-condition.png)
 
-## <a name="step-2-create-actions-for-approve--yes"></a>Paso 2: Crear acciones para Approve = yes
+## <a name="step-2-create-actions-for-approve--yes"></a>Paso 2: Crear acciones en caso de Approve = yes
 De forma predeterminada, esta rama envía un correo electrónico de aprobación al solicitante. También se actualizará la lista **Project Requests** lista y se agregará un elemento a la lista **Project Details** porque el proyecto se ha aprobado.
 
 1. En la rama **En caso positivo**, pulse o haga clic en **Inform item creator of approval** (Informar al creador del elemento de la aprobación) y, después, en **Edit** (Editar) para ver las opciones predeterminadas del mensaje de correo electrónico enviado al solicitante.
@@ -96,7 +96,7 @@ De forma predeterminada, esta rama envía un correo electrónico de aprobación 
     
     ![Crear elemento completo](./media/sharepoint-scenario-approval-flow/03-01-11-yes-create-complete.png)
 
-## <a name="step-3-review-action-for-approve--no"></a>Paso 3: Revisar las acciones para Approve = no
+## <a name="step-3-review-action-for-approve--no"></a>Paso 3: Revisar las acciones en caso de Approve = no
 De forma predeterminada, esta rama envía un correo electrónico de rechazo al solicitante. También se actualizará la lista **Project Requests**. El proyecto no va a avanzar, así que no se agrega ningún elemento a la lista **Project Details**.
 
 1. En la rama **En caso negativo**, pulse o haga clic en **Inform item creator of rejection** (Informar al creador del elemento del rechazo) y, después, en **Edit** (Editar) para ver las opciones predeterminadas del mensaje de correo electrónico enviado al solicitante.

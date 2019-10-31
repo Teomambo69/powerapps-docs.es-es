@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
+ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025103"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142616"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
@@ -27,8 +27,8 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
-| iOS 9.3 o posterior |iOS 10 o posterior con al menos 2 GB de RAM |
-| Android 5 o posterior |Android 7 o posterior con al menos 4 GB de RAM |
+| iOS 12 o posterior |iOS 12 o posterior|
+| Android 7 o posterior |Android 7 o posterior |
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
 > [!NOTE]
