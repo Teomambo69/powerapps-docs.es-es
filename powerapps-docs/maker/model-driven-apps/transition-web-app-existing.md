@@ -2,7 +2,7 @@
 title: Inicio rápido para usar un entorno existente para validar la antigua aplicación de cliente web heredada con la interfaz unificada | MicrosoftDocs
 description: Aprenda a planear y ejecutar la transición del cliente web heredado a la interfaz unificada
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 09/11/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,26 +23,24 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-
-<!--editor comment: I notice two mentions of Dynamics 365 Home page and both are followed by the URL but the text isn't linked. Just want to point that out in case it wasn't intentional. -->
-
-
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Inicio rápido para usar un entorno existente para validar la antigua aplicación de cliente web heredada con la interfaz unificada
+Este tema de inicio rápido muestra cómo usar un entorno existente para crear una aplicación de interfaz unificada basada en la configuración actual o la configuración predeterminada. Esto le permite explorar y comprobar la interfaz unificada mientras ejecuta aplicaciones de cliente web heredadas existentes paralelamente. Un usuario a continuación puede cambiar entre entornos para obtener una vista lado a lado. 
 
-Este tema de inicio rápido muestra cómo usar un entorno existente para crear una aplicación de interfaz unificada basada en la configuración actual o la configuración predeterminada. Esto le permite explorar y comprobar la interfaz unificada mientras ejecuta aplicaciones de cliente web heredadas existentes paralelamente. Un usuario a continuación puede cambiar entre entornos para obtener una vista lado a lado. Para obtener instrucciones similares que le muestran cómo crear un nuevo entorno de espacio aislado para aislar la prueba y ver sólo la experiencia de la interfaz unificada, consulte [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 for Customer Engagement a la interfaz unificada](transition-web-app.md).
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JzyI]
+
+Para obtener instrucciones similares que le muestran cómo crear un nuevo entorno de espacio aislado para aislar la prueba y ver sólo la experiencia de la interfaz unificada, consulte [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 a la interfaz unificada](transition-web-app.md).
 
 > [!IMPORTANT]
->  Para entornos con aplicaciones de Dynamics 365 for Field Service o Dynamics 365 for Project Service Automation, consulte [aplicaciones de Dynamics 365 for Customer Engagement](transition-web-app.md#dynamics-365-for-customer-engagement-apps).
+>  Para entornos con aplicaciones de Dynamics 365 Field Service o Dynamics 365 Project Service Automation, consulte [aplicaciones de Dynamics 365](transition-web-app.md#dynamics-365-apps).
 
 ## <a name="prerequisites"></a>Requisitos previos 
-- Una aplicación de cliente web de Dynamics 365 for Sales o Service heredada. 
+- Una aplicación de cliente web de Dynamics 365 Sales o Service heredada. 
 - Aunque no es necesario, se recomienda el uso de un entorno de no producción para probar la aplicación. Más información: [Administrar instancias de espacio aislado](/dynamics365/customer-engagement/admin/manage-sandbox-instances) 
 
 ## <a name="overview"></a>Información general 
 Este tema es para clientes existentes que usan aplicaciones de cliente web heredadas que necesitan planear y ejecutar la transición a la interfaz unificada. Para configurar un entorno paralelo, cree una nueva aplicación basada en la solución predeterminada tal como se encuentra hoy. Esto se puede hacer en el entorno actual de espacio aislado de desarrollo sin que se vea afectado el trabajo existente.
 
-Después de completar los pasos de este artículo, los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 for Customer Engagement o en la página principal de Dynamics 365 (http://home.dynamics.com).
+Después de completar los pasos de este artículo, los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (http://home.dynamics.com).
 
 ![Lista de aplicaciones](media/app-list.png)
 
@@ -58,10 +56,10 @@ El proceso para validar la aplicación de cliente web heredada en un entorno exi
 2.  Crear una nueva aplicación basada en modelo 
 3.  Configurar las propiedades de la aplicación  
 
-Si ha cambiado recientemente el modo **Usar solo la interfaz unificada** a **Activado** en el entorno de desarrollo, siguiendo las instrucciones del tema [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 for Customer Engagement a la interfaz unificada](transition-web-app.md), deberá volver a **Desactivarlo** para poder ejecutar las antiguas del cliente web heredadas existentes.
+Si ha cambiado recientemente el modo **Usar solo la interfaz unificada** a **Activado** en el entorno de desarrollo, siguiendo las instrucciones del tema [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 a la interfaz unificada](transition-web-app.md), deberá volver a **Desactivarlo** para poder ejecutar las antiguas del cliente web heredadas existentes.
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>Crear una solución nueva que se base en la solución predeterminada
-1. Iniciar sesión en el [portal del creador de PowerApps](https://make.powerapps.com).   
+1. Iniciar sesión en el [portal de creador de PowerApps](https://make.powerapps.com).   
 2. Seleccione la lista de entornos, seleccione el entorno que desee.  
 3. En el panel de navegación izquierdo, seleccione **Soluciones**. 
 4. En la barra de menú, seleccione **Nueva solución**. 
@@ -89,7 +87,7 @@ En este paso creará una nueva aplicación que aproveche las personalizaciones e
 5. El Diseñador de aplicaciones se abre, mostrando todos los componentes de la aplicación que estaban en la solución predeterminada. Seleccione **Publish**.  
 6. Después de que el proceso de publicación se complete, seleccione **Reproducir**.  
 
-Una nueva ventana se abre en el explorador con la nueva aplicación basada en modelo que contiene todas las entidades, mapa de sitio y personalizaciones de mapa del sitio que estaban en su aplicación predeterminada de Dynamics 365 for Customer Engagement.  
+Una nueva ventana se abre en el explorador con la nueva aplicación basada en modelo que contiene todas las entidades, mapa de sitio y personalizaciones de mapa del sitio que estaban en su aplicación predeterminada de Dynamics 365.  
 
 > [!div class="mx-imgBorder"] 
 > ![Nueva aplicación de interfaz unificada](media/new-unified-interface-app.png "Nueva aplicación de interfaz unificada")
@@ -132,7 +130,7 @@ Las tareas necesarias para configurar las propiedades de la aplicación basada e
 
 6. Seleccione **Guardar**. 
 
-Ahora los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 for Customer Engagement o en la página principal de Dynamics 365 (http://home.dynamics.com). 
+Ahora los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (http://home.dynamics.com). 
   
    ![Lista de aplicaciones](media/app-list.png "Lista de aplicaciones")
 
@@ -151,7 +149,7 @@ Ahora está listo para iniciar la aplicación. Puede comparar la nueva aplicaci�
 Con su aplicación mostrando la interfaz unificada, puede empezar a validar la aplicación, procesos y personalizaciones para identificar qué apariencia tendrá la transición. Se recomienda probar todos los casos de uso, pero puede empezar con los más críticos o agruparlos en patrones lógicos de diseño. Puesto que la interfaz unificada se basa en diseño dinámico, se recomienda realizar siempre pruebas con distintos dispositivos que tienen diferentes resoluciones de pantalla. Al probar la aplicación podrá comprobar que las personalizaciones son compatibles con la interfaz unificada y si existen características que necesiten un rediseño o les falta funcionalidad.  
 
 > [!IMPORTANT]
-> La versión actual de Common Data Service y aplicaciones de Dynamics 365 for Customer Engagement incluye aún varias características obsoletas. Debe comprobar si la aplicación tiene características obsoletas y reemplazarlas según sea necesario con nuevas capacidades. Más información: [Próximos cambios importantes (funciones obsoletas) en Dynamics 365 Customer Engagement](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
+> La versión actual de Common Data Service y aplicaciones basadas en modelo en Dynamics 365 incluye aún varias características obsoletas. Debe comprobar si la aplicación tiene características obsoletas y reemplazarlas según sea necesario con nuevas capacidades. Más información: [Próximos cambios importantes (funciones obsoletas)](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
 > La herramienta Comprobador de PowerApps ayuda a comprobar la calidad de los componentes de la solución.  Más información: [Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps](../common-data-service/use-powerapps-checker.md)
@@ -171,5 +169,5 @@ Más información: [Diseñar aplicaciones basadas en modelo mediante el diseñad
 [Actualizar aplicaciones a la interfaz unificada](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos](configure-interactive-experience-dashboards.md) <br />
 [Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos](use-custom-controls-data-visualizations.md) <br />
-[Descripción general de PowerApps Component Framework](/powerapps/developer/component-framework/overview) <br />
+[Información general sobre PowerApps component framework](/powerapps/developer/component-framework/overview) <br />
 [Interfaz unificada para todos](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

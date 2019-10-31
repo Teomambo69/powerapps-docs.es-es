@@ -31,9 +31,6 @@ Las clases en el ensamblado que puede registrar un paso debe implementar la inte
 
 Los complementos se pueden configurar para ejecutarse de forma sincrónica o asincrónica. Un complemento sincrónico hará la operación espere hasta que se complete el código del complemento. Este tiene un impacto en el rendimiento percibido del sistema. Las operaciones en un complemento asincrónico se ubican en una cola y se ejecutan tras completar la operación, para que la operación puede completarse con una interrupción mínima.
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](./includes/cc-d365ce-note-section.md)] [Escriba complementos para ampliar procesos de negocio (Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
-
 ## <a name="when-to-use-plug-ins"></a>Cuándo usar complementos
 
 La gente a menudo compara flujos de trabajo y complementos como las opciones para aplicar lógica empresarial personalizada. Hay una superposición importante en las capacidades de flujos de trabajo y de complementos. Los complementos pueden hacer todos los flujos de trabajo pueden hacer lo contrario pero no es cierto. Sin embargo, esto no significa que debe usar solo complementos para cualquier cosa que no se puede hacer con un flujo de trabajo. Hay otras formas de cumplir los requisitos sin usar los complementos. 

@@ -45,7 +45,7 @@ Para obtener más información sobre cómo definir reglas de negocio que se apli
 
 ## <a name="flows"></a>Flujos  
   
-Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objetivo diferente:  
+Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objetivo:  
 
 -   Flujos automatizados. Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. Más información: [Crear un flujo](/flow/get-started-logic-flow)
     
@@ -55,7 +55,7 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
   
 -   Flujos de proceso de negocio.  Asegúrese de que los usuarios especifiquen datos de manera coherente y siguen los mismos pasos cada vez que trabajan con una aplicación mediante la creación de un flujo de proceso de negocio. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview)
 
--   Flujos de trabajo y acciones. Los personalizadores de Dynamics 365 Customer Engagement puede estar familiarizados con los procesos clásicos de Common Data Service, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
+-   Flujos de trabajo y acciones. Los personalizadores de Dynamics 365 puede estar familiarizados con los procesos clásicos de Common Data Service, que son flujos de trabajo y acciones. Más información: [Usar procesos de flujo de trabajo](/flow/workflow-processes) e [Información general sobre acciones](/flow/actions)
   
 ## <a name="next-step"></a>Paso siguiente
 
@@ -63,4 +63,4 @@ Microsoft Flow incluye varios tipos de procesos, cada uno diseñado con un objet
 
 ### <a name="see-also"></a>Vea también
 
-[Aplicar lógica de negocios con Common Data Service](../common-data-service/cds-processes.md)
+[Aplicar la lógica de negocios con Common Data Service](../common-data-service/cds-processes.md)

@@ -2,9 +2,9 @@
 title: 'Importar, actualizar y exportar soluciones | MicrosoftDocs'
 description: 'Obtener información sobre cómo importar, actualizar y exportar una solución en PowerApps'
 ms.custom: ''
-ms.date: 11/06/2018
+ms.date: 09/30/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="import-update-and-export-solutions"></a>Importar, actualizar y exportar soluciones 
 
- Puede importar soluciones manualmente usando los pasos siguientes. Importe únicamente las soluciones que se obtengan de una fuente de confianza. Es posible que las personalizaciones incluyan un código que puede enviar datos a orígenes externos. Únicamente puede importar la solución denominada **solución predeterminada** al entorno desde el que la exportó, pero no a otra diferente.  
+ Puede importar soluciones manualmente usando los pasos siguientes. Importe únicamente las soluciones que se obtengan de una fuente de confianza. Es posible que las personalizaciones incluyan un código que puede enviar datos a orígenes externos.   
   
 1.  Seleccione **Soluciones** en la barra de navegación izquierda.  
   
@@ -87,9 +87,12 @@ search.app:
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportar soluciones  
- Se recomienda exportar las personalizaciones no administradas periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas. Puede exportar soluciones desde PowerApps o puede exportar mediante la experiencia clásica. 
+ Se recomienda crear una solución no administrada para usar para exportar las personalizaciones. A continuación exporte las personalizaciones periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas. Puede exportar soluciones desde PowerApps o puede exportar mediante la experiencia clásica. 
  
-### <a name="export-from-powerapps"></a>Exportar desde PowerApps
+> [!IMPORTANT]
+> Exportar la solución predeterminada no se admite. 
+
+### <a name="export-from-powerapps"></a>Exportar de PowerApps
   
 1.  Seleccione **Soluciones** en la barra de navegación izquierda.   
   
@@ -116,7 +119,7 @@ search.app:
   
 6.  En el paso **Tipo de paquete**, es necesario elegir si se debe exportar la solución como una solución **No administrada** o **Administrada**.  
   
-7.  El siguiente paso le permite elegir una solución de destino para una versión determinada de Dynamics 365 for Customer Engagement. Esta opción suelen usarla los ISV que desean exportar una solución que sea compatible con una versión anterior. A menos que pretenda importar esta solución en un entorno que no esté actualizado a la misma versión que la versión del entorno que usted está usando, acepte la opción predeterminada.   
+7.  El siguiente paso le permite elegir una solución de destino para una versión determinada. Esta opción suelen usarla los ISV que desean exportar una solución que sea compatible con una versión anterior. A menos que pretenda importar esta solución en un entorno que no esté actualizado a la misma versión que la versión del entorno que usted está usando, acepte la opción predeterminada.   
   
 8.  Seleccone **Exportar** para descargar el archivo de la solución.  
   
@@ -137,7 +140,7 @@ search.app:
 |Prefijo de pedido|Prefijo que se debe usar en todos los pedidos en la aplicación.|  
 |Longitud de cadena única|Número de caracteres anexados a los números de factura, oferta y pedido.|  
 |Calendario|Tipo de calendario|Tipo de calendario para el sistema. Establecido en Gregoriano EE.UU. de manera predeterminada|  
-|Código de formato de fecha|Especifica cómo se muestra la fecha en Dynamics 365 for Customer Engagement|  
+|Código de formato de fecha|Especifica cómo se muestra la fecha en Common Data Service|  
 |Separador de fecha|Carácter usado para separar el día, el mes y el año en las fechas en la aplicación.|  
 |Duración máxima de la cita|Número máximo de días que puede durar una cita.|  
 |Mostrar número de semana|Especifica si se muestra el número de semana en el calendario en la aplicación.|  
@@ -164,7 +167,7 @@ search.app:
 |Permitir cancelación automática de suscripciones|Indica si se permite la cancelación automática de suscripciones.|  
 |Permitir confirmación de cancelación automática de suscripciones|Indica si se permite el envío por correo electrónico de la confirmación de cancelación de una suscripción.|  
 |Permitir ejecución de mensajes de correo electrónico de marketing|Indica si se permite la ejecución de mensajes de correo electrónico de marketing.|  
-| Sincronización con Outlook|Permitir sincronización de libreta de direcciones|Indica si está permitida la sincronización de libreta de direcciones en segundo plano en Microsoft Office Outlook.|  
+| Sincronización con Outlook|Permitir sincronización de libreta de direcciones|Indica si se permite la sincronización de la libreta de direcciones en segundo plano en Microsoft Office Outlook.|  
 |Permitir sincronización programada sin conexión|Indica si se permite la sincronización sin conexión en segundo plano en Outlook.|  
 |Permitir sincronización programada|Indica si se permiten sincronizaciones programadas de Outlook.|  
 |Frecuencia de sondeo de envío de correos electrónicos|Frecuencia normal de sondeo usada para el envío de correo electrónico en Outlook.|  

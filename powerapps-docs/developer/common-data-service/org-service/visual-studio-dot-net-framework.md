@@ -27,7 +27,7 @@ Los complementos y ensamblados de flujo de trabajo personalizadas deben usar .NE
 > Debe crear cualquier aplicación de cliente personalizada usando Microsoft .NET Framework 4.6.2 o posterior.
 > Solo podrán conectar con Common Data Service las aplicaciones que utilizan Seguridad de capa de transporte (TLS) 1.2 o superior. TLS 1.2 no es el protocolo predeterminado usado por .NET Framework 4.5.2, pero está en .NET Framework 4.6.2. 
 > 
-> Más información: [Entrada de blog: Próximas actualizaciones de seguridad de conexión de Dynamics 365 Customer Engagement](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
+> Más información: <https://<blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/>
 > 
 > [!TIP]
 > Al instalar .NET Framework 4.6.2 en el equipo de desarrollo, asegúrese de instalar el paquete de desarrollador y no sólo el tiempo de ejecución. Esto habilitará el marco 4.6.2 para elegirlo en el cuadro de diálogo **Nuevo proyecto** de Visual Studio y en el menú desplegable del marco de destino de las propiedades del proyecto.  

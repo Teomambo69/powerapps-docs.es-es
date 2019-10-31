@@ -64,9 +64,7 @@ El problema subyacente sobre la compatibilidad de tipos seguros se ha corregido,
 
 ## <a name="additional-information"></a>Información adicional
 
-Estamos en proceso de publicar cambios que permitirán el uso de la reflexión en actividades de flujo de trabajo personalizadas. Sin embargo, en el entorno de espacio aislado donde este código ejecutará llamadas mediante [Método Type.GetType](/dotnet/api/system.type.gettype) debe usar el nombre completo del ensamblado. Además de ser innecesario, este código no usa el nombre completo y esta es la razón por la que genera un error.
-
-La reflexión no está permitida actualmente. Este código hace referencia a un ensamblado interno que se incluyó en una lista blanca de modo que el código interno pudiera tener reflexión sobre él. Esta es la razón por la que no genera actualmente un error. Pero cuando las restricciones generales se supriman en el futuro, hará que actividad de flujo de trabajo se interrumpa.
+La reflexión no está permitida actualmente. Este código hace referencia a un ensamblado interno que se incluyó en una lista blanca de modo que el código interno pudiera reflejarse sobre él. Esta es la razón por la que no genera actualmente un error. Pero cuando las restricciones generales se supriman en el futuro, hará que actividad de flujo de trabajo se interrumpa.
 
 Para proporcionar más capacidades en actividades de flujo de trabajo personalizadas sin interrumpir la lógica de negocio de los usuarios, es necesario que todo el mundo revise su código base y quite referencias como ésta.
 

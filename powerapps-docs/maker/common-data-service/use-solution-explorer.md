@@ -75,7 +75,7 @@ search.app:
 > [!div class="mx-imgBorder"]  
 > ![Agregar componente existente a una solución](media/solution-add-existing-component.PNG "Agregar componente existente a una solución")  
   
- Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Necesitará establecer el componente de la solución llamada **Solución predeterminada** e intentar modificarlo ahí o agregarlo a otra solución no administrada que ha creado. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
+ Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Deberá agregarlo a otra solución no administrada que ha creado para personalizar el componente. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
 
 > [!div class="mx-imgBorder"]  
 > ![Solución administrada](media/managed-solution.PNG "Solución administrada")  
@@ -87,22 +87,23 @@ search.app:
 
 ## <a name="classic-solution-explorer"></a>Explorador de soluciones clásico
 
-En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Soluciones** en el panel de navegación de la izquierda y, a continuación seleccionando **Cambiar a clásica** en la barra de comandos. El explorador de soluciones clásico es el que anteriormente estaba disponible en el área **Configuración > Personalizaciones avanzadas** en PowerApps. Si usted es usuario de Dynamics 365 for Customer Engagement, utilice el explorador de soluciones clásico para trabajar con soluciones.  
+En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Soluciones** en el panel de navegación de la izquierda y, a continuación seleccionando **Cambiar a clásica** en la barra de comandos. El explorador de soluciones clásico es el que anteriormente estaba disponible en el área **Configuración > Personalizaciones avanzadas** en PowerApps. 
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
 - Los conectores personalizados no están disponibles en una solución.
-- Las aplicaciones de lienzo deben abrirse una vez finalizada la importación de la solución para actualizar las conexiones.
+- Las aplicaciones de lienzo deben reproducirse una vez finalizada la importación de la solución para autorizar las conexiones.
 - Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino, pero no volver a publicarse.
-- Las dependencias no están disponibles para las aplicaciones de lienzo.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
 -   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service (Common Data Service).
 -   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelve nada. 
--   Las aplicaciones y flujos de lienzo creados en una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
+-   Las aplicaciones de lienzo creadas desde una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
 -   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
+- Los flujos creados a partir de soluciones no se mostrarán en la lista "Flujos de equipo”
 - Los flujos desencadenados por botón no están disponibles en soluciones.
 - Los flujos desencadenados por aplicaciones del lienzo no están disponibles en soluciones.
-- Los flujos desencadenados desde aplicaciones de Microsoft 365 como SharePoint y Excel no están disponibles en soluciones.
+- Los flujos desencadenados desde aplicaciones de Microsoft 365 como Excel no están disponibles en soluciones.
+- Los flujos que conectan con SharePoint no están disponibles en soluciones.
 - Los flujos en soluciones no admiten la autenticación delegada. Por ejemplo, el acceso a un flujo no se concede automáticamente en función del acceso a la lista de SharePoint de la que se creó el flujo.
 
  Para obtener más información acerca de los componentes individuales de una solución, vea los temas siguientes:  

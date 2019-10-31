@@ -29,7 +29,7 @@ En este tema, creará y editará un formulario de creación rápida.
 
  Con los formularios de creación rápida, la aplicación puede tener una experiencia simplificada de entrada de datos totalmente compatibles con la lógica definida por scripts de formulario y reglas de negocio. En una aplicación controlada por modelos de PowerApps, los formularios de creación rápida aparecen al seleccionar el botón **Crear** en la barra de navegación o al elegir **+ Nuevo** al crear un registro nuevo desde una búsqueda o subcuadrícula.
   
- Las aplicaciones móviles de Dynamics 365 Customer Engagement utilizan formularios de creación rápida para crear registros nuevos. Si una entidad ya tiene un formulario de creación rápida configurado, las aplicaciones móviles usan ese formulario. Si una entidad no tiene configurado un formulario de creación rápida, PowerApps genera un formulario de creación rápida para crear registros en las aplicaciones móviles basadas en la definición del formulario principal.  
+ Las aplicaciones móviles de Dynamics 365 usan formularios de creación rápida para crear registros nuevos. Si una entidad ya tiene un formulario de creación rápida configurado, las aplicaciones móviles usan ese formulario. Si una entidad no tiene configurado un formulario de creación rápida, PowerApps genera un formulario creación rápida para crear registros en las aplicaciones móviles basadas en la definición del formulario principal.  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>Entidades con formularios de creación rápida  
@@ -54,7 +54,7 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
   
 ### <a name="how-to-create-a-quick-create-form"></a>Cómo crear un formulario de creación rápida  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 
 > [!IMPORTANT]
@@ -92,7 +92,7 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 ### <a name="to-edit-a-quick-create-form"></a>Para editar un formulario de creación rápida  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    

@@ -1,5 +1,5 @@
 ---
-title: Tipo de formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Tipo de formularios de aplicaciones basadas en modelos en PowerApps | MicrosoftDocs
 description: Comprender los diferentes tipos de formularios
 ms.custom: ''
 ms.date: 06/27/2018
@@ -30,9 +30,9 @@ search.app:
   
 |Tipo de formulario|Descripción|Más información|  
 |---------------|-----------------|-----------------|  
-|**Principal**|Se usa en aplicaciones de PowerApps, en la aplicación web de Dynamics 365 Customer Engagement, en Dynamics 365 for tablets y en Dynamics 365 for Outlook.<br /><br /> Estos formularios ofrecen la interfaz de usuario principal para interactuar con los datos de la entidad.|[Consideraciones de diseño para los formularios principales](design-considerations-main-forms.md)|    
-|**Creación rápida**|Se usa en aplicaciones de PowerApps, en la aplicación web de Dynamics 365 Customer Engagement, en Dynamics 365 for tablets y en Dynamics 365 for Outlook.<br /><br /> Para las entidades actualizadas, estos formularios proporcionan un formulario básico optimizado para crear nuevos registros.|[Crear y editar formularios de creación rápida](create-edit-quick-view-forms.md) |  
-|**Vista rápida**|Se usa en aplicaciones de PowerApps, en la aplicación web de Dynamics 365 Customer Engagement, en Dynamics 365 for tablets y en Dynamics 365 for Outlook.<br /><br /> Para las entidades actualizadas, estos formularios aparecen dentro del formulario principal para mostrar los datos adicionales de un registro al que hace referencia un campo de búsqueda en el formulario.|[Crear y editar formularios de vista rápida](create-edit-quick-view-forms.md)|  
+|**Principal**|Usado en aplicaciones basadas en modelos, Dynamics 365 para tabletas y Dynamics 365 for Outlook.<br /><br /> Estos formularios ofrecen la interfaz de usuario principal para interactuar con los datos de la entidad.|[Consideraciones de diseño para los formularios principales](design-considerations-main-forms.md)|    
+|**Creación rápida**|Usado en aplicaciones basadas en modelos, Dynamics 365 para tabletas y Dynamics 365 for Outlook.<br /><br /> Para las entidades actualizadas, estos formularios proporcionan un formulario básico optimizado para crear nuevos registros.|[Crear y editar formularios de creación rápida](create-edit-quick-view-forms.md) |  
+|**Vista rápida**|Usado en aplicaciones basadas en modelos, Dynamics 365 para tabletas y Dynamics 365 for Outlook.<br /><br /> Para las entidades actualizadas, estos formularios aparecen dentro del formulario principal para mostrar los datos adicionales de un registro al que hace referencia un campo de búsqueda en el formulario.|[Crear y editar formularios de vista rápida](create-edit-quick-view-forms.md)|  
 |**Tarjeta** | Usado en vistas para las aplicaciones PowerApps. Los formularios de tarjeta están diseñados para mostrar información en un formato compacto adecuado para dispositivos móviles. | [Crear un formulario de tarjeta](create-card-forms.md) |
 
 Aunque cada tipo de formulario tiene necesidades específicas, cuando trabaje con formularios use el editor de formularios. Más información: [Información general de la interfaz de usuario del editor de formularios](form-editor-user-interface-legacy.md)

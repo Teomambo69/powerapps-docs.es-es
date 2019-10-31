@@ -1,6 +1,6 @@
 ---
-title: " Componente de asignación | Microsoft Docs"
-description: Implementación de un componente de mapa mediante angular JS
+title: ' Componente de mapa| Microsoft Docs'
+description: Implementar el componente de mapa mediante Angular JS
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,23 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72341343"
 ---
+
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
-Este componente de ejemplo cambia la experiencia del usuario de la interacción con los campos de dirección en el formulario. Junto con los valores de texto de la dirección, este componente proporciona la capacidad de identificar visualmente una dirección determinada en un mapa sin desplazarse a otra pestaña o pantalla. 
+Este componente de ejemplo cambia la experiencia de usuario de interactuar con campos de dirección del formulario. Además de los valores de texto de la dirección, este componente proporciona la capacidad de identificar visualmente una dirección específica en un mapa sin navegar a otra pestaña o pantalla. 
 
 > [!div class="mx-imgBorder"]
-> ![](../media/map-control.png "Componente de mapa") de componentes de asignación
+> ![Componente de mapa](../media/map-control.png "Componente de mapa")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -51,7 +46,7 @@ export class TSMapControl
   private _iFrameElement: HTMLIFrameElement;
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // API Key used to activate and embed the maps automatically
   // NOTE: You can follow the documentation at https://developers.google.com/maps/documentation/embed/get-api-key to generate your own API Key
@@ -147,15 +142,15 @@ export class TSMapControl
 }
 ```
 
-En el archivo de manifiesto, se ha definido la propiedad del tipo `Single line of Text`. Lo usamos para enlazarlo al campo de dirección del formulario.  
+En el archivo de manifiesto, definimos la propiedad de tipo `Single line of Text`. La usamos para enlazarlo al campo de dirección del formulario.  
 
 > [!NOTE]
-> Puede usar cualquiera de las API de mapa que están disponibles en el mercado. En este ejemplo, vamos a mostrar cómo hacerlo con la API de mapa de Google. Debe crear una clave de API para que el componente tenga acceso a la API de Google Map. Siga las instrucciones (https://developers.google.com/maps/documentation/embed/get-api-key para generar una).
+> Puede usar cualquiera de las API de mapa que están disponibles en el mercado.En este ejemplo, vamos a mostrar cómo hacerlo con la API de Google Maps. Necesita crear una clave de API para que el componente tenga acceso a la API de Google Maps.Siga las instrucciones(https://developers.google.com/maps/documentation/embed/get-api-key para generar una).
 
-Cree un nombre de variable `MAPS_API_KEY` al que se pueda tener acceso en el contexto del componente.
-Google Map API solo permite representar las asignaciones dentro de un `IFRAME`. Por lo tanto, debe crear un elemento `IFRAME` que va a representar el mapa mediante la dirección URL que se genera. De forma predeterminada, se configura el mapa para que se oculte y se muestre solo cuando el valor de la dirección existe en el formulario.
+Cree una `MAPS_API_KEY` de nombre de variable a la que se puede tener acceso en el contexto del componente.
+La API de Google Maps permite generar solo los mapas en un `IFRAME`. Por lo tanto, debe crear un elemento `IFRAME` que vaya a generar el mapa mediante la dirección URL que generamos. De forma predeterminada, estamos configurando el mapa para que esté oculto y solo se muestre cuando el valor de dirección exista en el formulario.
 
-`buildMapUrl` y `renderMap` (puede incluso combinarlos en uno) toma la cadena de dirección y la inserta en la dirección URL de asignación mediante la codificación de la cadena de dirección y, a continuación, establece el elemento src del elemento IFRAME en la dirección URL, respectivamente. Además, llame al método **notifyOutputChanged** para asegurarse de que se notifica al componente que la representación ha cambiado. 
+`buildMapUrl` y `renderMap` (puede incluso combinarlos en uno) toma la cadena de la dirección y la inserta en la dirección URL del mapa codificando la cadena de dirección y después establece el elemento src del elemento IFRAME en la dirección URL respectivamente. Además, llame al método **notifyOutputChanged** para asegurarse de que notificamos al componente de que la representación ha cambiado. 
  
 ```TypeScript
  public renderMap(mapUrl: string) {
@@ -169,10 +164,10 @@ Google Map API solo permite representar las asignaciones dentro de un `IFRAME`. 
   }
 ```
 
-Asegúrese de llamar a la función `renderMap` dentro de la función [updateView](../reference/control/updateview.md) para asegurarse de que el control se actualiza cada vez que se actualiza la vista. 
+Asegúrese de llamar a la función `renderMap` dentro de la función [updateView](../reference/control/updateview.md) para garantizar que el control se actualiza cada vez que se actualiza la vista. 
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

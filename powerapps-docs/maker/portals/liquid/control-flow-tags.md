@@ -1,26 +1,21 @@
 ---
-title: Usar etiquetas de flujo de control para un portal | MicrosoftDocs
-description: Obtenga información sobre las etiquetas de flujo de control disponibles en el portal.
+title: Usar etiquetas del flujo de control para un portal | MicrosoftDocs
+description: Obtener información sobre las etiquetas del flujo de control disponibles en el portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975113"
+ms.reviewer: null
 ---
-# <a name="control-flow-tags"></a>Etiquetas de flujo de control
 
-Las etiquetas de flujo de control determinan qué bloque de código se debe ejecutar y qué contenido se debe representar en función de las condiciones especificadas. Las condiciones se crean mediante los [operadores Liquid](liquid-operators.md)disponibles o simplemente se basan en [la veracidad o el falsehood de un valor determinado](liquid-conditional-operators.md).  
+# <a name="control-flow-tags"></a>Etiquetas del flujo de control
 
-## <a name="if"></a>Cuando
+Las etiquetas del flujo de control determinan qué bloque de código se debe ejecutar y qué contenido se debe representar según las condiciones dadas. Las condiciones se crean mediante los [operadores de Liquid](liquid-operators.md) disponibles, o simplemente se basan en si [un valor determinado es verdadero o falso](liquid-conditional-operators.md).  
+
+## <a name="if"></a>if
 
 Ejecuta un bloque de código si se cumple una condición determinada.
 
@@ -32,9 +27,9 @@ Hello, Dave.
 {% endif %}
 ```
 
-## <a name="unless"></a>vaya
+## <a name="unless"></a>unless
 
-Como si, salvo que ejecuta un bloque de código si**no** se cumple una condición determinada.
+Al igual que if, ejecuta un bloque de código si **no** se cumple una condición determinada.
 
 ```
 {% unless page.title == 'Home' %}
@@ -44,9 +39,9 @@ This is not the Home page.
 {% endunless %}
 ```
 
-## <a name="elsifelse"></a>ELSIF/else
+## <a name="elsifelse"></a>elsif/else
 
-Agrega más condiciones a un bloque if o a menos que.
+Agrega más condiciones a un bloque if o unless.
 
 ```
 {% if user.fullname == 'Dave Bowman' %}
@@ -64,9 +59,9 @@ Hello, stranger.
 {% endif %}
 ```
 
-## <a name="casewhen"></a>caso/cuando
+## <a name="casewhen"></a>case/when
 
-Una instrucción switch para comparar una variable con distintos valores y ejecutar un bloque de código diferente para cada valor.
+Una instrucción de cambio para comparar una variable con diferentes valores, y ejecutar otro bloque de código para cada valor.
 
 ```
 {% case user.fullname %}
@@ -89,6 +84,6 @@ Hello, stranger.
 ### <a name="see-also"></a>Vea también
 
 [Etiquetas de iteración](iteration-tags.md)<br>
-[Etiquetas de variables](variable-tags.md)<br>
+[Etiquetas variables](variable-tags.md)<br>
 [Etiquetas de plantilla](template-tags.md)<br>
-[Etiquetas de entidad de Common Data Service de PowerApps](portals-entity-tags.md)
+[Etiquetas de entidad de PowerApps common data service](portals-entity-tags.md)

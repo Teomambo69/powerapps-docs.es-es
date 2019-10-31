@@ -1,5 +1,5 @@
 ---
-title: Consultar y visualizar datos jerárquicos con PowerApps | MicrosoftDocs
+title: Consulte y visualice datos jerárquicos con PowerApps | MicrosoftDocs
 description: Aprenda cómo consultar y visualizar datos jerárquicos relacionados
 ms.custom: ''
 ms.date: 06/20/2018
@@ -86,7 +86,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
   
 > [!TIP]
 >  Si una entidad pueden habilitarse para una jerarquía:  
->  En el explorador de soluciones, expanda la entidad que desee. Verá el componente de la entidad denominado **Configuración de jerarquía**. Las entidades que no se pueden habilitar para una jerarquía no tienen este componente, con la excepción de la entidad Zona de ventas de Dynamics 365 Customer Engagement. Aunque **Configuración de la jerarquía** se muestra para la entidad Zona de ventas, la entidad no se puede habilitar para una jerarquía.  
+>  En el explorador de soluciones, expanda la entidad que desee. Verá el componente de la entidad denominado **Configuración de jerarquía**. Las entidades que no se pueden habilitar para una jerarquía no tienen este componente, con la excepción de la entidad Zona de ventas de Dynamics 365. Aunque **Configuración de la jerarquía** se muestra para la entidad Zona de ventas, la entidad no se puede habilitar para una jerarquía.  
   
  Cosas más importantes para recordar al crear visualizaciones:  
   

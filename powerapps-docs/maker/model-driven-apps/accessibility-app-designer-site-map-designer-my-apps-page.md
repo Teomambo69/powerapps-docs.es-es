@@ -19,7 +19,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones de PowerApps
+# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en PowerApps, diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones
 
 Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](http://www.microsoft.com/enable/default.aspx)  
  
@@ -106,4 +106,4 @@ PowerApps ofrece métodos abreviados de teclado para resolver los problemas a lo
 
 ## <a name="see-also"></a>Vea también
 
-[Usar métodos abreviados de teclado en aplicaciones Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Uso de métodos abreviados de teclado en PowerApps](/powerapps/user/keyboard-shortcuts)

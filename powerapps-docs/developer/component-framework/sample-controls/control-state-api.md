@@ -1,7 +1,7 @@
 ---
 title: API de estado de control | Microsoft Docs
-description: ''
-keywords: PowerApps Marco de componentes de PowerApps
+description: null
+keywords: PowerApps; PowerApps component framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,25 +11,20 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 57982a4e9a4ee50954eb7b5f12e75a8ca43544ef
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340538"
 ---
-# <a name="implementing-control-state-api-component"></a>Implementación del componente de API de estado de control
 
-El marco de componentes de PowerApps permite conservar el estado del componente en varias representaciones del componente dentro de la misma sesión. Proporciona la capacidad de crear componentes que pueden mantener el estado de usuario a lo largo de la sesión del usuario a medida que el usuario navega hacia y desde el componente.
+# <a name="implementing-control-state-api-component"></a>Implementar el componente API de estado de control
 
-Por ejemplo, si el componente de código es una lista larga en la que el usuario puede desplazarse, puede aprovechar la funcionalidad de **_SetControlState_** para recordar el punto de la lista que el usuario está viendo cuando se desplazó fuera del formulario. Después, puede agregar lógica en la inicialización de componentes para comprobar el estado almacenado y representar la lista del componente en el punto en el que el usuario se leía anteriormente.
+PowerApps component framework le permite mantener el estado del componente a través de varias representaciones del componente en la misma sesión. Proporciona la posibilidad de crear componentes que puedan mantener el estado de usuario a lo largo de la sesión del usuario mientras el usuario navega a y desde el componente.
+
+Por ejemplo, si el componente de código es una lista larga por la que el usuario puede desplazarse, puede aprovechar la funcionalidad **_SetControlState_** para recordar el punto de la lista que el usuario está mirando cuando sale del formulario. A continuación puede agregar lógica en la inicialización del componente para comprobar el estado almacenado y generar la lista del componente en el punto donde el usuario estaba leyendo anteriormente.
 
 > [!div class="mx-imgBorder"] 
-> (../media/control-state-api.png "API de estado de control") de estado de ![control API]
+> ![API de estado de control](../media/control-state-api.png "API de estado de control")
 
 ## <a name="available-for"></a>Disponible para
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental)
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -58,7 +53,7 @@ export class TSControlStateAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Div element to show the current selected color
@@ -71,7 +66,7 @@ export class TSControlStateAPI
   private _persistedSelectedLabel: string;
   // Data type used to store the various information as part of the state object.
   private _stateDictionary: ComponentFramework.Dictionary = {};
-  // references to HTML Button Elements rendered on the control
+  // References to HTML Button Elements rendered on the control
   private _buttonRed: HTMLButtonElement;
   private _buttonBlue: HTMLButtonElement;
   private _buttonGreen: HTMLButtonElement;
@@ -213,7 +208,6 @@ export class TSControlStateAPI
    * @param selectedColorElement The HTML Div Element that the results should be injected into
    */
   private onButtonClick(event: Event, selectedColorElement: HTMLDivElement) {
-    const eventTarget: Element = event.srcElement as Element;
     if (event.srcElement) {
       // Get the label and the selected color attributes from the div element that was clicked
       let label: string = event.srcElement.attributes.getNamedItem("value")!
@@ -299,5 +293,5 @@ export class TSControlStateAPI
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

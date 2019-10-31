@@ -45,7 +45,7 @@ Más información: [Comprender las vistas](create-edit-views.md)
 
 ## <a name="create-a-public-view-in-powerapps"></a>Crear una vista pública en PowerApps
 Como creador de aplicaciones, puede crear y editar vistas públicas usando PowerApps.
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -176,9 +176,9 @@ Cuando edite una vista pública o de sistema, debe guardar y publicar los cambio
 
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
-El **Replicador de diseños de vista** y el **Diseñador de vistas** son herramientas desarrolladas por la comunidad de XrmToolbox para Dynamics 365 Customer Engagement.
+**Ver diseño del Duplicador** y **Ver diseñador** son herramientas que la comunidad XrmToolbox desarrolló para PowerApps.
 
-Más información: [Herramientas del desarrollador](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
+Más información: [Herramientas del desarrollador](/powerapps/developer/common-data-service/developer-tools).
 
 > [!NOTE]
 > Estas herramientas se proporcionan por XrmToolBox y no se admiten por Microsoft. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com/). 

@@ -6,10 +6,6 @@ ms.date: 05/19/2019
 ms.service: powerapps
 ms.custom: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
-  - Dynamics 365 for Customer Engagement Version 9.x
-  - powerapps
 ms.assetid: null
 author: Mattp123
 ms.author: matp
@@ -39,7 +35,7 @@ Puede ver los detalles de las operaciones de una solución desde el área **Solu
      > ![](media/solution-history-sitemap.png "Área Historial de la solución")
 
      > [!NOTE]
-     > Para ir al área **Configuración** desde una aplicación basada en modelo de PowerApps, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) en la barra de herramientas de la aplicación y, a continuación seleccione **Opciones avanzadas**. 
+     > Para ir al área **Configuración** desde una aplicación basada en modelo de la interfaz unificada de PowerApps, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) en la barra de herramientas de la aplicación y, a continuación seleccione **Opciones avanzadas**. 
 
 2. De forma predeterminada, se muestra la vista **Historial de la solución personalizado**. Las vistas siguientes están disponibles en el área **Historial de soluciones**. 
 - **Historial de todas las soluciones**. Muestra el historial de las soluciones personalizadas e internas del sistema. 

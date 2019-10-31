@@ -1,6 +1,6 @@
 ---
-title: Comportamiento y formato del atributo Fecha y hora (Common Data Service) | MicrosoftDocs
-description: La clase DateTimeAttributeMetadata se usa para definir y administrar los atributos de tipo DateTime en Dynamics 365 Customer Engagement.
+title: Comportamiento y formato del atributo de fecha y hora (Common Data Service) | MicrosoftDocs
+description: La clase DateTimeAttributeMetadatao se usa para definir y administrar atributos de tipo DateTime en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="behavior-and-format-of-the-date-and-time-attribute"></a>Comportamiento y formato del atributo de fecha y hora
 
-Si tiene usuarios y oficinas en todo el mundo, es importante representar correctamente valores de fecha y hora en varias zonas horarias. Los `DateTimeAttributeMetadata` (clase <xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> o <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>) se usan para definir y administrar atributos de tipo `DateTime` en Common Data Service. Use la propiedad `DateTimeBehavior` (para el servicio de la organización, consulte <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>) para definir si almacenar valores de fecha y hora con o sin información de zona horaria, y use la propiedad `DateTimeAttributeMetadata.Format` para especificar el formato de visualización de estos atributos.  
+Si tiene usuarios y oficinas en todo el mundo, es importante representar correctamente valores de fecha y hora en varias zonas horarias. `DateTimeAttributeMetadata` (clase <xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> o <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>) se usa para definir y administrar atributos del tipo `DateTime` en Common Data Service. Use la propiedad `DateTimeBehavior` (para el servicio de la organización, consulte <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>) para definir si almacenar valores de fecha y hora con o sin información de zona horaria, y use la propiedad `DateTimeAttributeMetadata.Format` para especificar el formato de visualización de estos atributos.  
 
   
  También puede usar el área personalización en Common Data Service para definir el comportamiento y el formato de los atributos de fecha y hora. Más información: [Comportamiento y formato del campo de fecha y hora](/dynamics365/customer-engagement/customize/behavior-format-date-time-field).  
   
 > [!NOTE]
->  Todos los atributos de fecha y hora en Common Data Service admiten valores que se pueden remontar hasta el 1/1/1753 a las 12:00.  
+>  Todos los atributos de fecha y hora en Common Data Service admiten valores de hasta 1/1/1753 12:00.  
   
 <a name="SpecifyBehavior"></a>   
 
@@ -112,7 +112,7 @@ Console.WriteLine("Created attribute '{0}' with UserLocal behavior\nfor the Acco
   
 -   Para nuevos atributos de fecha y hora personalizados, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True`. Esto implica que puede cambiar el comportamiento de un atributo personalizado de fecha y hora de `UserLocal` a `DateOnly` o `TimeZoneIndependent`; no se permite ninguna otra transición de comportamiento.  
   
-     Para los atributos de fecha y hora que forman parte de una organización de Common Data Service, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True` a menos que el atributo o la entidad principal no se puede personalizar.  
+     Para los atributos de fecha y hora personalizados que forman parte de una organización de Common Data Service, la propiedad administrada `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` se establece en `True` a menos que el atributo o la entidad principal no se pueda personalizar.  
   
     > [!NOTE]
     >  Cuando se actualiza la propiedad `DateTimeAttributeMetadata.DateTimeBehavior` de un atributo de `UserLocal` a `DateOnly`, asegúrese de cambiar también la propiedad `DateTimeAttributeMetadata.Format` de `DateAndTime` a `DateOnly`. De lo contrario, aparecerá una excepción.  
@@ -190,7 +190,7 @@ Console.WriteLine("Published customizations to the Account entity.\n");
   
  El mensaje le permite especificar una regla de conversión (Si trabaja con el servicio de organización, consulte <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.ConversionRule>) para seleccionar la zona horaria para usar en la conversión de los valores de UTC a DateOnly. Puede especificar una de las siguientes reglas de conversión:  
   
--   `SpecificTimeZone`: Convierte el valor UTC a un valor DateOnly de acuerdo con el código de zona horaria de Common Data Service especificado. En este caso, también debe especificar un valor para el parámetro <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode>.  
+-   `SpecificTimeZone`: Convierte el valor UTC a un valor DateOnly de acuerdo con el código de zona horaria Common Data Service especificado. En este caso, también debe especificar un valor para el parámetro <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode>.  
   
 -   `CreatedByTimeZone`: Convierte un valor UTC en un valor DateOnly que el usuario que creó el registro vería en la interfaz de usuario.  
   

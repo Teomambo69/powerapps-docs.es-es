@@ -31,7 +31,7 @@ El portal permite configurar las opciones más comunes, pero algunas opciones so
 
 ## <a name="view-entity-relationships"></a>Ver relaciones entre entidades
 
-1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Basadas en modelos** o **Lienzo**.
+1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
 2. Seleccione **Datos** > **Entidades** y seleccione la entidad que tiene las relaciones que desea ver.
 3. Con la pestaña **Relaciones** seleccionada, seleccione las vistas siguientes: 
 
@@ -55,7 +55,7 @@ Mientras [ve relaciones entre entidades](#view-entity-relationships), en la barr
 
 <!-- This may change going forward, but this is the way it is now. #2534972 -->
 > [!Important]
-> El portal usa terminología diferente que el explorador de soluciones. Se invierten los términos. La **Entidad relacionada** del explorador de soluciones es la **Entidad principal** en el portal. Igualmente, la **Entidad principal** del explorador de soluciones es la **Entidad relacionada** en el portal.
+> El portal usa terminología diferente que el explorador de soluciones. La **Entidad principal** del explorador de soluciones es la **Entidad actual** en el portal.
 
 Dependiendo de su elección verá:
 
@@ -65,10 +65,10 @@ Dependiendo de su elección verá:
 |**Varios a uno**|![Panel de relaciones de varios a uno](media/many-to-one-relationship-panel.png)|
 |**Uno a varios**|![Panel de relaciones de uno a varios](media/one-to-many-relationship-panel.png)|
 
-Elija la **Entidad relacionada** o la **Entidad principal** para la relación que desea crear entre las dos entidades. 
+Elija la **Entidad relacionada** para la relación que desea crear entre las dos entidades. 
 
 > [!NOTE]
-> En cualquier opción, un campo de búsqueda se creará en la entidad *principal*.
+> En cualquier opción, un campo de búsqueda se creará en la entidad *actual*.
 
 Una vez que seleccione la entidad puede editar los detalles de la relación. En este ejemplo, varios registros de entidad de contacto se pueden asociar a una sola cuenta.
 

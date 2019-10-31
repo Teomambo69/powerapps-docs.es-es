@@ -1,6 +1,6 @@
 ---
-title: " Componente de entrada lineal | Microsoft Docs"
-description: Implementar el componente de entrada lineal
+title: ' Componente de entrada lineal| Microsoft Docs'
+description: Implementar componente de entrada lineal
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347139"
 ---
-# <a name="implementing-linear-input-component"></a>Implementar el componente de entrada lineal
 
-Este componente de ejemplo cambia la experiencia del usuario de interactuar con tipos numéricos en el formulario. En lugar de escribir los números, el componente de entrada lineal proporciona un control deslizante lineal con el que se puede establecer el valor del atributo en el formulario.  
+# <a name="implementing-linear-input-component"></a>Implementar componente de entrada lineal
 
-Para implementar este componente, primero debe definir el archivo de [manifiesto](../manifest-schema-reference/manifest.md) e implementar la lógica personalizada en TypeScript.
+Este componente de ejemplo cambia la experiencia de usuario de interactuar con tipos numéricos del formulario. En vez de escribir los números, el componente de entrada lineal proporciona un control deslizante lineal con el que el valor del atributo se puede establecer en el formulario.  
+
+Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
 
 > [!div class="mx-imgBorder"]
-> ![](../media/linear-input-control.png "Componente") de entrada lineal de componente de entrada lineal
+> ![Componente de entrada lineal](../media/linear-input-control.png "Componente de entrada lineal")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -63,10 +58,10 @@ export class TSLinearInputControl
   private labelElement: HTMLLabelElement;
   // input element that is used to create the range slider
   private inputElement: HTMLInputElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
@@ -237,13 +232,13 @@ export class TSLinearInputControl
 }
 ```
 
-En este ejemplo, se define un [grupo de tipos](../manifest-schema-reference/type-group.md) y se le asigna un nombre como `numbers` que incluye los tipos de valor decimal, entero, flotante y de moneda en ese grupo del manifiesto. Este grupo se usa para enlazar la propiedad del componente.
+En este ejemplo, un [type -group](../manifest-schema-reference/type-group.md) se define y se llama como `numbers` que incluye tipos de valores decimales, enteros, flotantes y divisa en ese grupo del manifiesto. Este grupo se usa para enlazar la propiedad del componente.
 
-Se crea un elemento de entrada de tipo `range` con `min` y `max` valor establecido en 1 y 1000. Se crea un elemento de etiqueta que muestra el valor que es relativo a la posición del control deslizante. Adjunte una función `refreshData` al `eventlistener` en la entrada del componente.
+Se crea un elemento de la entrada de tipo `range` con valores `min` y `max` establecidos en 1 y a 1000, respectivamente. Se crea un elemento de etiqueta que muestra el valor que es relativo a la posición del control deslizante. Adjunte una función `refreshData` al `eventlistener` en la entrada del componente.
 
-Cree una variable local para guardar el [contexto](../reference/context.md) y el `notifyOutputChanged`. Asigne el contexto y notifyOutputChanged de los parámetros que se pasan como parte de la función init.
+Cree una variable local para guardar el [contexto](../reference/context.md) y `notifyOutputChanged`. Asigne el contexto y notifyOutputChanged desde los parámetros que se pasan como parte de la función init.
 
-Implemente la lógica de la función `refreshData`. Como se puede ver en el ejemplo, se toma el valor de la `inputElement` y se establece el valor del componente, `innerHTML` propiedad de la `labelElement` y, a continuación, se llama a la `notifyOutputChanged` para que los cambios se muestren en cascada por encima de la capa del marco.
+Implemente la lógica para la función `refreshData`. Como puede ver en el ejemplo, tomamos el valor del `inputElement` y establecemos el valor del componente, propiedad `innerHTML` del `labelElement` y luego llamamos a `notifyOutputChanged` para disponer en cascada los cambios sobre la capa del marco.
 
 ```TypeScript
 public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>) 
@@ -254,7 +249,7 @@ public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>)
 } 
 ```
 
-En el método `updateView`, obtenemos el valor del atributo de los parámetros context. y, a continuación, lo configuramos en la variable Value, que almacena el valor del componente y también los elementos de entrada en el componente. 
+En el método `updateView`, obtenemos el valor del atributo desde los parámetros de contexto y lo establecemos con la variable de valor que almacena el valor del componente y también los elementos de entrada en el componente. 
 
 ```TypeScript
 
@@ -270,5 +265,5 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

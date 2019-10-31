@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
+ms.date: 9/05/2019
 ms.author: jowells
 search.audienceType:
   - developer
@@ -40,7 +40,11 @@ Los miembros de clases que implementan <xref href="Microsoft.Xrm.Sdk.IPlugin?tex
 
 ## <a name="guidance"></a>Instrucciones
 
-Cuando implemente <xref:Microsoft.Xrm.Sdk.IPlugin>, no utilice los campos y las propiedades del miembro y escriba el método <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> como una operación sin estado.  Se debe acceder a toda la información por estado de invocación a través del contexto de ejecución únicamente.  No intente almacenar los datos de estado de ejecución en campos o propiedades de miembros para su uso durante la invocación del complemento siguiente, a menos que esos datos se hayan obtenido del parámetro de configuración proporcionado al constructor sobrecargado.
+Cuando implemente <xref:Microsoft.Xrm.Sdk.IPlugin>, no utilice los campos y las propiedades del miembro y escriba el método <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> como una operación sin estado.  Se debe acceder a toda la información por estado de invocación a través del contexto de ejecución únicamente.  
+
+No intente almacenar los datos de estado de ejecución en campos o propiedades de miembros para su uso durante la invocación del complemento siguiente, a menos que esos datos se hayan obtenido del parámetro de configuración proporcionado al constructor sobrecargado.
+
+No use código que se registre en eventos AppDomain. La lógica de complementos no debe basarse en ningún evento o propiedad de AppDomain, ya que la implementación interna de la infraestructura dek complemento puede cambiar el comportamiento de la ejecución en cualquier momento. Esto puede causar errores incluso si el código funcionó en algún momento.
 
 Los miembros de sólo lectura, estáticos y constantes son intrínsecamente seguros para los subprocesos y también pueden utilizarse de forma fiable dentro de una clase de complementos. A continuación se ofrecen algunos ejemplos sobre cómo mantener complementos seguros para los subprocesos:
 

@@ -1,6 +1,6 @@
 ---
 title: Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript | Microsoft Docs
-description: Aprenda cómo los desarrolladores pueden usar JavaScript en scripts del lado cliente para aplicar lógica de negocios personalizada en aplicaciones basadas en modelos y aplicaciones Dynamics 365 for Customer Engagement
+description: Aprenda cómo los desarrolladores pueden usar JavaScript en scripts del lado del cliente para aplicar lógica de negocios personalizada en aplicaciones basadas en modelo
 services: ''
 suite: powerapps
 author: KumarVivek
@@ -20,7 +20,7 @@ search.app:
 El scripting del cliente mediante JavaScript es una de las distintas formas de aplicar la lógica personalizada de procesos de negocios para mostrar los datos en un formulario en una aplicación basada en modelos.
 
 > [!IMPORTANT]
-> Todos los conceptos y API de script del cliente que se explican en esta documentación también se aplican a aplicaciones Dynamics 365 for Customer Engagement porque las aplicaciones Customer Engagement son en realidad aplicaciones basadas en modelos basadas en la plataforma Common Data Service.
+> Todos los conceptos y API de script del cliente explicados en esta documentación también se aplican a los usuarios de Dynamics 365 Customer Engagement (on-premises).
 
 Los scripts de cliente no deben ser su primera opción sin embargo para aplicar lógica de proceso de negocio personalizada en formularios de aplicación basados en modelos. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form). Encontrará al diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
 
@@ -55,5 +55,5 @@ Las aplicaciones basadas en modelos proporcionan un amplio conjunto de **API de 
 
 [Recursos web para aplicaciones basadas en modelos](web-resources.md)<br/>
 [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)<br/>
-[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)
+
 

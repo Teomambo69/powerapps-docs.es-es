@@ -19,8 +19,7 @@ search.app:
 # <a name="use-the-web-api-with-metadata"></a>Usar la API web con metadatos
 
 Puede realizar cualquier operación de metadatos con la API web que puede realizar mediante el servicio de la organización. Esta sección proporciona instrucciones sobre cómo usar la API web con los tipos de entidad incluidos en <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex>.  
-> [!NOTE]
-> La información en esta sección también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local).
+
 
  Hay cuatro rutas del conjunto de entidades expuestas para realizar operaciones con las entidades de metadatos como se describe en la siguiente tabla.  
   
@@ -58,5 +57,4 @@ Puede comprobar si las entidades son elegibles para participar en una relación 
 ### <a name="see-also"></a>Vea también
 
 [Examinar los metadatos del entorno](../browse-your-metadata.md)<br />
-[Usar la API Web de Common Data Service](overview.md)
-[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)
+[Usar la API web de Common Data Service](overview.md)

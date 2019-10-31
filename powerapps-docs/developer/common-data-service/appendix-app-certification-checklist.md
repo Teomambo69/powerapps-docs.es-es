@@ -27,7 +27,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <th>Lista de comprobación de certificación</th>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Aplicaciones basadas en modelos</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> que se conectan a Common Data Service<br/><br/><strong>NOTA</strong>: Las aplicaciones de Dynamics 365 for Customer Engagement son aplicaciones basadas en modelos</td>
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Aplicaciones basadas en modelos</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> que se conectan a Common Data Service<br/></td>
 <td>Comprobación de estado</td>
 <td><ul>
 <li>Buscar el tipo de registro de la aplicación: gratuita, prueba o contacto. Si se ha registrado en Contacto , el editor debe habilitar la prueba.</li>

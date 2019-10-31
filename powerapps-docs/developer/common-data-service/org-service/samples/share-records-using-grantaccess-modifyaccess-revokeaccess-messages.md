@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Compartir registros utilizando GrantAccess, ModifyAccess y RevokeAccess (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: compartir registros utilizando GrantAccess, ModifyAccess y RevokeAccess (Common Data Service) | Microsoft Docs'
 description: 'Este ejemplo muestra cómo compartir un registro usando un mensaje de concesión, modificación y revocación de acceso.'
 ms.custom: ''
 ms.date: 10/31/2018

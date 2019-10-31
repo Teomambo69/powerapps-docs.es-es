@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 07/17/2018
+ms.date: 09/26/2019
 ms.author: lanced
 search.audienceType:
   - maker
@@ -16,18 +16,22 @@ search.app:
 ---
 
 # <a name="complex-entities-and-licensing"></a>Entidades y licencias complejas
+
+> [!IMPORTANT]
+> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de PowerApps](https://go.microsoft.com/fwlink/?linkid=2085130).
+
 Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow:
 
-* Complementos de código. Más información: [Desarrollo de complementos](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
-* Flujos de trabajo en tiempo real. Más información: [Procesos de flujo de trabajo](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
+* Complementos de código. Más información: [Desarrollo de complementos](/powerapps/developer/common-data-service/plug-ins)
+* Flujos de trabajo en tiempo real. Más información: [Procesos de flujo de trabajo](/flow/workflow-processes)
 
     > [!IMPORTANT]
     >  Solo los flujos de trabajo que se convierten a un flujo de trabajo en tiempo real se consideran en tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano pueden usarse con el plan adecuado de PowerApps y no requieren licencias adicionales.
 
 Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno.
 
-## <a name="complex-entities-installed-with-dynamics-365"></a>Entidades complejas instaladas con Dynamics 365
-En la tabla siguiente se muestran las entidades que contienen lógica compleja de servidor lista para usar como parte de la instalación de una aplicación de Dynamics 365. Esta lista está diseñada como referencia. Según las aplicaciones y versiones de Dynamics 365 en las que estén instaladas en su entorno, la lista de entidades complejas puede variar.
+## <a name="complex-entities-installed-with-dynamics-365-apps"></a>Entidades complejas instaladas con aplicaciones de Dynamics 365
+En la tabla siguiente se muestran las entidades que contienen lógica del lado del sevidor personalizada predefinida como parte de la instalación de aplicaciones basadas en modelo en Dynamics 365, como Dynamics 365 Sales y Dynamics 365 Customer Service. Esta lista está diseñada como referencia. Según las aplicaciones y versiones de Dynamics 365 en las que estén instaladas en su entorno, la lista de entidades complejas puede variar.
 
 > [!NOTE]
 >  Si está usando Common Data Service y no ha instalado una aplicación o una solución de terceros de Dynamics 365, el entorno no tendrá entidades que contengan lógica compleja de servidor.

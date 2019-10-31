@@ -1,6 +1,6 @@
 ---
-title: Usar el servicio de la organización Common Data Service (Common Data Service) | Microsoft Docs
-description: Lea cómo puede usar el servicio de organización de Common Data Service para trabajar con datos y metadatos.
+title: Usar el servicio de organización de Common Data Service (Common Data Service) | Microsoft Docs
+description: Lea cómo puede usar el servicio de organización de Common Data Service para aplicaciones para trabajar con datos y metadatos.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -16,16 +16,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="use-the-common-data-service-organization-service"></a>Usar el servicio de organización de Common Data Service
+# <a name="use-the-common-data-service-organization-service"></a>Usar el servicio de la organización de Common Data Service
 
 El servicio de organización es uno de dos servicios web que puede usar para trabajar con datos y metadatos en Common Data Service. El otro es la [API web](../webapi/overview.md).
 
 El servicio de organización está optimizado para su uso con .NET Framework y los ensamblados de SDK del paquete de NuGet [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) proporcionan las clases para la interfaz de <xref:Microsoft.Xrm.Sdk.IOrganizationService> necesarias para trabajar con datos y metadatos mediante este servicio. 
 
 Algunas funciones de extensión, como los complementos y las extensiones de flujo de trabajo, dependen de .NET Framework y de las clases definidas en estos ensamblados, por lo que el servicio de organización es la única opción al usar estos métodos para ampliar Common Data Service.
-
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Utilizar el servicio de organización del servicio Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
 
 ## <a name="organization-service-assemblies"></a>Ensamblados del servicio de organización
 

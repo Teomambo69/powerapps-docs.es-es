@@ -3,7 +3,7 @@ title: Abrir el editor de formularios de una aplicación controlada por modelos 
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -30,7 +30,7 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
 
 ## <a name="access-the-form-editor-from-the-powerapps-site"></a>Acceder al editor de formularios desde el sitio de PowerApps
 
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/). 
+1. Inicie sesión en [PowerApps](https://web.powerapps.com/). 
 
 2. Seleccione **Datos** > **Entidades** y, a continuación, seleccione la entidad que desee, como la entidad Cuenta. 
 
@@ -55,9 +55,9 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
   
 4.  Seleccione **Editor de formularios**.  
 
-## <a name="access-the-form-editor-from-within-dynamics-365-customer-engagement"></a>Acceder al editor de formularios desde Dynamics 365 Customer Engagement
+## <a name="access-the-form-editor-from-within-app"></a>Acceder al editor de formularios desde la aplicación
   
- Puede acceder al editor de formularios en Dynamics 365 Customer Engagement a través de la barra de comandos o la cinta, en función de la entidad. Ambos métodos abrirán el formulario en el contexto de la solución predeterminada. 
+ Puede acceder al editor de formularios a través de la barra de comandos o la cinta, en función de la entidad. Ambos métodos abrirán el formulario en el contexto de la solución predeterminada. 
 
 ## <a name="access-the-form-editor-for-an-unmanaged-solution"></a>Acceso al editor de formularios de una solución no administrada  
   

@@ -1,15 +1,15 @@
 ---
 title: 'Tutorial: Registrar y configurar la aplicación SimpleSPA con adal.js (Common Data Service) | Microsoft Docs'
-description: En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Dynamics 365 Customer Engagement usando adal.js y Uso compartido de recursos de origen cruzado(CORS).
+description: En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado(CORS).
 keywords: ''
-ms.date: 02/12/2019
+ms.date: 08/26/2019
 ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
 ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
-ms.author: jdaly
+ms.author: nabuthuk
 manager: ryjones
 ms.reviewer: null
 search.audienceType:
@@ -21,13 +21,13 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 
-En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado(CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Dynamics 365 (online)Dynamics 365 (online)](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
+En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado(CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Common Data Service](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
 - PowerApps Common Data Service  
   
-- Debe tener una cuenta de usuario del sistema de Dynamics 365 (online) con el rol administrador para Office 365.  
+- Debe tener una cuenta de usuario del sistema de Common Data Service con el rol administrador para Office 365.  
   
 - Una suscripción de Azure para registrar su aplicación. Una cuenta de prueba también funcionará.  
   
@@ -50,22 +50,22 @@ Haga clic en el botón **Obtener cuentas** para recuperar 10 registros de cuenta
 ![La página SimpleSPA](media/simple-spa.png "La página SimpleSPA")  
 
 > [!NOTE]
->  La carga inicial de datos de Common Data Service puede ser lenta mientras se realizan las operaciones para permitir la autenticación, pero las operaciones posteriores son mucho más rápidas.  
+> La carga inicial de datos de Common Data Service puede ser lenta mientras se realizan las operaciones para permitir la autenticación, pero las operaciones posteriores son mucho más rápidas.  
 
 Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la sesión.  
 
 > [!NOTE]
->  Esta aplicación SPA no está diseñada para representar un modelo para desarrollar aplicaciones SPA robustas. Está simplificada para centrarse en el proceso de registrar y configurar la aplicación.  
+> Esta aplicación SPA no está diseñada para representar un modelo para desarrollar aplicaciones SPA robustas. Está simplificada para centrarse en el proceso de registrar y configurar la aplicación.  
 
 <a name="bkmk_createwebapp"></a>
 
 ## <a name="create-a-web-application-project"></a>Crear un proyecto de aplicación web  
   
-1.  Usando Visual Studio 2017, cree un nuevo proyecto **Aplicación web ASP.NET** y use la plantilla **Vacío**. Puede dar el nombre que desee al proyecto.  
+1. Usando Visual Studio 2017, cree un nuevo proyecto **Aplicación web ASP.NET** y use la plantilla **Vacío**. Puede dar el nombre que desee al proyecto.  
   
     Deberá poder usar versiones anteriores de Visual Studio también, pero estos pasos describirán el uso de Visual Studio 2017.  
   
-2.  Agregue una nueva página HTML llamada `SimpleSPA.html` al proyecto y pegue el siguiente código:  
+2. Agregue una nueva página HTML llamada `SimpleSPA.html` al proyecto y pegue el siguiente código:  
   
     ```html  
     <!DOCTYPE html>  
@@ -270,11 +270,11 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
     ```  
   
-3.  Haga clic con el botón secundario en el archivo SimpleSPA.html y seleccione **Establecer como página de inicio** para establecer esta página como la página de inicio para el proyecto.  
+3. Haga clic con el botón secundario en el archivo SimpleSPA.html y seleccione **Establecer como página de inicio** para establecer esta página como la página de inicio para el proyecto.  
   
-4.  En las propiedades del proyecto, seleccione **Web** y en **Servidores** anote la **Dirección URL del proyecto**. Debe ser algo como `http://localhost:62111/`. Observe el número de puerto generado. Necesitará esto en el siguiente paso.  
+4. En las propiedades del proyecto, seleccione **Web** y en **Servidores** anote la **Dirección URL del proyecto**. Debe ser algo como `http://localhost:62111/`. Observe el número de puerto generado. Necesitará esto en el siguiente paso.  
   
-5.  En la página SimpleSPA.html, busque las siguientes variables de configuración y establézcalas en consecuencia. Podrá establecer el `clientId` después de completar la parte siguiente de tutorial.  
+5. En la página SimpleSPA.html, busque las siguientes variables de configuración y establézcalas en consecuencia. Podrá establecer el `clientId` después de completar la parte siguiente de tutorial.  
   
     ```javascript  
     //Set these variables to match your environment  
@@ -287,81 +287,77 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
 ## <a name="register-the-application"></a>Registrar la aplicación  
   
-1.  [Iniciar sesión](https://portal.azure.com) en el portal de administración de Azure con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Microsoft 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
+1. Iniciar sesión en el [portal de Azure](https://go.microsoft.com/fwlink/?linkid=2083908) con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Microsoft 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
   
-     Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.  
+    > [!NOTE]
+    > Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program) para asociar las dos cuentas.<br/><br/> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
   
-     Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](https://azure.microsoft.com/pricing/details/active-directory/)  
+2. Haga clic en **Azure Active Directory** en la columna de la izquierda de la página. Es posible que deba desplazarse por la columna izquierda para ver el icono y la etiqueta de **Azure Active Directory**.  
   
-2.  Haga clic en **Azure Active Directory** en la columna de la izquierda de la página. Es posible que deba desplazarse por la columna izquierda para ver el icono y la etiqueta de **Azure Active Directory**.  
+3. Ahora seleccione **Aplicaciones empresariales** en el panel que se abre.
+
+   ![Seleccione Aplicaciones empresariales](media/register-spa-app-registration.PNG)
+
+4. Seleccione **Nueva aplicación**(cerca de la parte superior de la página) y en **Agregar su propia aplicación** seleccione **Aplicación que está desarrollando**.  
+
+   ![Seleccione Aplicación que está desarrollando](media/register-spa-app-you-developing.PNG)
   
-3.  Ahora seleccione **Aplicaciones empresariales** en el panel que se abre.
+5. Ahora haga clic en **Ir a los registros de aplicación para registrar mi nueva aplicación**.
 
-![Seleccione Aplicaciones empresariales](media/register-spa-app-registration.PNG)
+   ![Seleccione Ir a los registros de aplicación](media/register-spa-take-me-app-reg.PNG)
 
-4.  Seleccione **Nueva aplicación**(cerca de la parte superior de la página) y en **Agregar su propia aplicación** seleccione **Aplicación que está desarrollando**.  
+6. Ahora haga clic en **Registrar aplicación nueva**(cerca de la parte superior de la página).  
 
-![Seleccione Aplicación que está desarrollando](media/register-spa-app-you-developing.PNG)
+   ![Seleccione Nuevo registro de aplicación](media/register-spa-new-reg.PNG)
   
-5.  Ahora haga clic en **Ir a los registros de aplicación para registrar mi nueva aplicación**.
-
-![Seleccione Ir a los registros de aplicación](media/register-spa-take-me-app-reg.PNG)
-
-6.  Ahora haga clic en **Registrar aplicación nueva**(cerca de la parte superior de la página).  
-
-![Seleccione Nuevo registro de aplicación](media/register-spa-new-reg.PNG)
+7. Escriba la siguiente información:  
   
-7.  Escriba la siguiente información:  
-  
-  - **Nombre**<br />El nombre de la aplicación.
+   - **Nombre**<br />El nombre de la aplicación.
 
-  - **Tipo de aplicación web**<br />Seleccione **Web app/API**.
+   - **Tipos de cuenta admitidos**<br />Seleccione **Cuentas en cualquier directorio de organización**.
 
-  - **Dirección URL de inicio de sesión**<br />Se trata de la dirección URL a la que el usuario debe ser redirigido después de que inicie sesión. A efectos de depuración en Visual Studio debe ser `http://localhost:####/SimpleSPA.html` donde #### representa el número de puerto que obtuvo en el paso 4 del procedimiento [Crear un proyecto de aplicación web](#bkmk_createwebapp).  
+   - **URL de redireccionamiento**<br />Se trata de la dirección URL a la que el usuario debe ser redirigido después de que inicie sesión. Seleccionar **Web** en la lista desplegable. A efectos de depuración en Visual Studio debe ser `http://localhost:####/SimpleSPA.html` donde #### representa el número de puerto que obtuvo en el paso 4 del procedimiento [Crear un proyecto de aplicación web](#bkmk_createwebapp). Haga clic en **Registrar** al final de la página.
 
-![Especifique los detalles](media/register-spa-enter-details.PNG)
-    
-8. Haga clic en **Crear** al final de la página.
+   ![Especifique los detalles](media/new-app-registration-page.png)
 
-9.  En la ficha de la aplicación recién registrada, copie el **Identificador de la aplicación**.  
-  
-    Establezca la variable `clientId` en la página SimpleSPA.html con este valor. Consulte al paso 5 del procedimiento **Crear un proyecto de aplicación web**.  
+8. En la pestaña de la aplicación recién registrada, copie el **Identificador de la aplicación (cliente)**. Establezca la variable `clientId` en la página SimpleSPA.html con este valor. Consulte al paso 5 del procedimiento **Crear un proyecto de aplicación web**.  
 
-10. Ahora haga clic en **Valores** y después seleccione **Permisos requeridos**.
+9. Ahora haga clic en **Permisos de API** y después seleccione **Agregar un permiso**.
 
-![Seleccione Permisos requeridos](media/register-spa-settings-permissions.PNG)
+   ![Seleccione Permisos requeridos](media/azure-api-permissions-page.png)
 
-11. Haga clic en **Agregar**, y seleccione **Seleccionar un API**. Ahora seleccione **Dynamics CRM Online** y haga clic en **Seleccionar** al final de la página.
+10. Seleccione **Dynamics CRM** en la pestaña **API de Microsoft**.
 
-![Seleccione Dynamics CRM Online en Seleccionar una API](media/register-spa-permission-dyncrm.PNG)
+    ![Seleccione Dynamics CRM Online en Seleccionar una API](media/app-registration-select-api-page.png)
 
-12. Ahora en la pestaña **Permisos seleccionados** , seleccione todos los **Permisos delegados** y haga clic en **Seleccionar** al final de la página.
+11. Haga clic en **Permisos delegados**, seleccione todos los permisos y haga clic en **Agregar permisos** al final de la página.
 
-![Seleccione todos los permisos delegados](media/register-spa-del-permissions.PNG)
+    ![Seleccione todos los permisos delegados](media/app-registration-delegate-permissions-page.png)
 
-13. A continuación, seleccione **Hecho**. Aparecerá una fila para **Dynamics CRM Online**.
+12. A continuación, seleccione **Hecho**. Aparecerá una fila para **Dynamics CRM** agregado.
 
-![Se agrega la nueva fila para Dynamics CRM Online](media/register-spa-row-dyncrm.PNG)
+13. Ahora cierra la pestaña **Permisos de API**. En la pestaña registrada de la aplicación, seleccione **Manifiesto**.
 
-14. Ahora cierra la pestaña **Valores** . En la ficha registrada de la aplicación, seleccione **Manifiesto**.
+14. Busque la línea: `"oauth2AllowImplicitFlow": false,` y cambie `false` a `true` y haga clic en **Guardar** para guardar el archivo.
 
-15. Haga clic en **Editar** y busque la línea: `"oauth2AllowImplicitFlow": false,` y cambie `false` a `true` y haga clic en **Guardar** para guardar el archivo.
+    ![Establezca oauth2AllowImplicitFlow en True en el archivo de manifiesto](media/register-spa-edit-manifest.PNG)
 
-![Establezca oauth2AllowImplicitFlow en True en el archivo de manifiesto](media/register-spa-edit-manifest.PNG)
+15. Para la ejecución correcta de la aplicación, también necesitará concederle consentimiento de administrador. Para ello, inicie sesión como Administrador de inquilinos en el portal de Azure de administración y seleccione **Azure Active Directory**. Haga clic en **Aplicaciones empresariales** y en la lista de aplicaciones que aparece seleccione la aplicación que acaba de crear.
 
-16. Para la ejecución correcta de la aplicación, también necesitará concederle consentimiento de administrador. Para ello, inicie sesión como Administrador de inquilinos en el portal de Azure de administración y seleccione **Azure Active Directory**. Haga clic en **Aplicaciones empresariales** y en la lista de aplicaciones que aparece seleccione la aplicación que acaba de crear.
+    ![Conceda su consentimiento de administrador a su aplicación](media/simple-spa-admin-consent.PNG)
 
-![Conceda su consentimiento de administrador a su aplicación](media/simple-spa-admin-consent.PNG)
+16. Ahora seleccione **Permisos de API** como se muestra arriba, y haga clic **Conceder consentimiento de administrador para**`<your AAD Org name>`.
 
-17. Ahora seleccione **Permisos** como se muestra arriba, y haga clic **Conceder consentimiento de administrador para**`<your AAD Org name>`.
+    ![Haga clic en el botón Conceder consentimiento de administrador](media/simple-spa-admin-consent-button.PNG)
 
-![Haga clic en el botón Conceder consentimiento de administrador](media/simple-spa-admin-consent-button.PNG)
+17. Una vez que se hace clic en este botón, se abrirá una ventana de inicio de sesión y le preguntará si desea conceder los permisos solicitados a la aplicación. Haga clic en **Aceptar** para continuar.
 
-18. Una vez que se hace clic en este botón, se abrirá una ventana de inicio de sesión y le preguntará si desea conceder los permisos solicitados a la aplicación. Haga clic en **Aceptar** para continuar.
+    ![Haga clic en Aceptar para conceder los permisos solicitados](media/simple-spa-admin-consent-click-accept.PNG)
 
-![Haga clic en Aceptar para conceder los permisos solicitados](media/simple-spa-admin-consent-click-accept.PNG)
+18. A continuación, deberá pasar a la depuración de la aplicación.
 
-19. A continuación, deberá pasar a la depuración de la aplicación.
+> [!NOTE]
+> Debe habilitar la opción **Testigos de Id** en la pestaña **Autenticación** de la aplicación que ha registrado.
 
 ## <a name="debugging-the-application"></a>Depurar la aplicación  
   

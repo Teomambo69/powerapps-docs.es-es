@@ -1,5 +1,5 @@
 ---
-title: Cómo crear y editar campos para Common Data Service | MicrosoftDocs
+title: Cómo crear y editar campos para Common Data Service| MicrosoftDocs
 ms.custom: ''
 ms.date: 02/08/2019
 ms.reviewer: ''
@@ -15,6 +15,7 @@ ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -31,23 +32,23 @@ Hay dos diseñadores que puede usar para crear o editar campos:
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)|
-|Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes.<br />Más información: [Crear y editar campos para Common Data Service mediante el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) |
+|[Portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)|
+|Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes.<br />Más información: [Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > También puede crear campos en su entorno mediante lo siguiente:
 > - En aplicaciones basadas en modelos, seleccione **Nuevo campo** del editor de formularios.
 > - Importe una solución que contenga la definición de los campos.
-> - Use Power Query para crear nuevas entidades y rellenarlas con datos.<br />Más información: [Agregar datos a una entidad en Common Data Service mediante Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+> - Use Power Query para crear nuevas entidades y rellenarlas con datos.<br />Más información: [Agregar datos a una entidad en Common Data Service mediante Power Query.](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 > - Un programador puede usar [servicios de metadatos](/powerapps/developer/common-data-service/use-web-services#metadata-services) para escribir un programa para crear y actualizar campos.
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
-Debe usar el portal PowerApps para crear y editar campos para Common Data Service a menos que necesite satisfacer cualquiera de los siguientes requisitos:
+Debería usar el portal de PowerApps para Crear y editar campos para Common Data Service, a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
 - Crear un campo de búsqueda de clientes. 
    - Más información: [Diferentes tipos de búsquedas](types-of-fields.md#different-types-of-lookups)
-- Cree un campo en una solución distinta de la solución predeterminada de Common Data Service. 
+- Crear un campo en una solución distinta de la solución predeterminada de Common Data Service. 
    - Para obtener más información: [Información general de las soluciones](solutions-overview.md)
 - Definir transiciones de razón para el estado. 
    - Más información: [Definir las transiciones de razón para el caso o las entidades personalizadas](define-status-reason-transitions.md)
@@ -66,18 +67,18 @@ Debe usar el portal PowerApps para crear y editar campos para Common Data Servic
    - Más información: [Establecer propiedades administradas para campos](set-managed-properties-for-field.md)
 
 > [!NOTE]
-> Puede crear un campo de búsqueda en el portal PowerApps o en el explorador de soluciones creando una relación de uno a varios en la entidad. Pero sólo el explorador de soluciones ofrece la opción de crear esta relación cuando se crea un campo.
+> Puede crear un campo de búsqueda en el portal de PowerApps o en el explorador de soluciones creando una relación de uno a varios en la entidad. Pero sólo el explorador de soluciones ofrece la opción de crear esta relación cuando se crea un campo.
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**[Administrador de atributos](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** es una herramienta desarrollada por Comunidad XrmToolbox para Common Data Service. Consulte el tema [Herramientas para desarrolladores](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) para obtener información sobre herramientas desarrolladas por la comunidad.
+**[Administrador de atributos](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** es una herramienta que la comunidad XrmToolbox ha desarrollada para Common Data Service. Consulte el tema [Herramientas para desarrolladores](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) para obtener información sobre herramientas desarrolladas por la comunidad.
 
 > [!NOTE]
 > Las herramientas de la comunidad no son un producto de Microsoft y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Vea también  
-[Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)<br />
-[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service utilizando el portal PowerApps](create-edit-field-portal.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Documentación para desarrolladores: Trabajar con metadatos de atributo](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

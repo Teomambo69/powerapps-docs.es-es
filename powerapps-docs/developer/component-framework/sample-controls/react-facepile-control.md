@@ -1,6 +1,6 @@
 ---
-title: Reaccionar componente Facepile | Microsoft Docs
-description: Implementar un componente Facepile con reAct
+title: Componente React Facepile| Microsoft Docs
+description: Implementar un componente Facepile utilizando React
 ms.custom: ''
 author: ghurlman
 manager: kvivek
@@ -9,27 +9,22 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340124"
 ---
-# <a name="implementing-the-facepile-component"></a>Implementación del componente FacePile
 
-En este ejemplo se muestra cómo utilizar reAct para crear componentes mediante el marco de componentes de PowerApps.  El componente de ejemplo facepile se implementa basándose en React y en los componentes de reAct de la interfaz de usuario de Office. Es posible que el código no revele las prácticas recomendadas para las bibliotecas de terceros mencionadas.
+# <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
+
+En este ejemplo se muestra cómo usar React para crear componentes utilizando PowerApps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
 
 > [!div class="mx-imgBorder"]
-> ![ReAct Facepile](../media/react-facepile.png "reAct Facepile")
+> ![React Facepile](../media/react-facepile.png "React Facepile")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 
 > [!IMPORTANT]
-> Aunque las aplicaciones de host de PowerApps funcionan sobre reAct, la versión de reAct que agrupe no se comunicará con la versión del host, ni depende de esa versión. Una nueva copia de reAct (o de cualquier biblioteca de terceros que agrupe con su componente) se cargará en la página host para cada instancia de ese control, por lo que debe tener en cuentan el tamaño de las páginas a medida que agrega componentes. En una versión futura, tendremos una solución a este problema.
+> Aunque las aplicaciones host de PowerApps trabajen sobre React, la versión de React que usted empaqueta no se comunicará con la versión host, y tampoco depende de esa versión. Una nueva copia de React (o cualquier biblioteca de terceros que empaquete con el componente) se cargará en la página host para cada instancia de ese control, por tanto, tenga cuidado con el tamaño que crea de las páginas cuando agrega componentes. Tendremos una solución a este problema en una futura versión.
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -47,16 +42,16 @@ Aplicaciones controladas por modelos y aplicaciones de lienzo (versión prelimin
 </manifest>
 ```
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
-En este ejemplo se proporcionan ejemplos sobre cómo agregar dependencias para bibliotecas de terceros y el tejido de la interfaz de usuario de Office, que muestran cómo utilizar los componentes de Office UI fabric para reAct para la interfaz de usuario y realizar un enlace de datos bidireccional entre el marco de componentes de PowerApps. y el modelo de estado reAct.
+Este ejemplo proporciona ejemplos de cómo agregar dependencias para las bibliotecas de terceros y Office UI Fabric, indicando cómo usar los componentes Office UI Fabric para React para la interfaz de usuario y realizar de enlace de datos bidireccional entre PowerApps Component Framework y el modelo de estado de React.
 
-El ejemplo de componente consta de tres componentes de Office UI Fabric: un facepile, un control deslizante, una casilla y una lista desplegable. Cuando se mueve el control deslizante, el número de caras del facepile cambia. La casilla indica si las caras se desvanecen y salen, o simplemente aparecen o desaparecen, y las opciones de la lista desplegable controlan el tamaño de las caras. Si no hay ningún valor establecido, el número de caras tiene como valor predeterminado 3.
+El ejemplo del componente consta de tres componentes de Office UI Fabric: un facepile, un control deslizante, una casilla, y una lista desplegable. Cuando mueva el control deslizante, el número de caras de la facepile cambiará. La casilla controla si las caras aparecen y desaparecen paulatinamene o si simplemente aparecen o desaparecen, y las opciones en la lista desplegable controlan el tamaño de las caras. Si no se establece ningún valor, el número de caras predeterminado será 3.
 
-- Cuando se carga el componente, el control deslizante se establece en el valor del atributo enlazado. La propiedad `context.parameters.[property_name].attributes` contiene los metadatos asociados.
-- Un controlador de eventos se pasa en las propiedades del componente reAct; Esto permitirá al componente reAct notificar al control de marco del componente PowerApps del host que un valor ha cambiado. Después, el controlador de eventos determina si es necesario realizar una llamada al método **notifyOutputEvents** .
-- Deslizar el control deslizante hará que reAct actualice el valor enlazado y llame al controlador de eventos que se ha pasado. Dentro de ese controlador, si se realiza una llamada al método **notifyOutputEvents** , se llamará de forma asincrónica al método [getOutputs](../reference/control/getoutputs.md) del control y fluirá al marco de componentes de PowerApps. 
-- El host del marco de trabajo actualiza el valor del atributo enlazado y el valor actualizado fluye al componente, desencadenando el método [updateView](../reference/control/updateview.md) del control. A continuación, el control representará el componente reAct con el nuevo valor.
+- Cuando el componente se carga, el control deslizante se establece con el valor de atributo enlazado. La propiedad `context.parameters.[property_name].attributes` contiene los metadatos asociados.
+- Se pasan a un controlador de eventos en los apoyos del componente de React; esto permite que el componente de Reac notifique al control de PowerApps Component Framework host que un valor ha cambiado. El controlador de eventos a continuación determina si una llamada al método **notifyOutputEvents** es necesaria.
+- Al deslizar el control deslizante React actualizará el valor enlazado y llamará al controlador de eventos pasado. Dentro del controlador, si se hace una llamada al método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) del control será llamado de forma asincrónica y fluirá a PowerApps Component Framework. 
+- El host de marco actualiza el valor de atributo enlzado, y el valor actualizado fluye al componente, desencadenando el método [updateView](../reference/control/updateview.md) del control. A continuación el control representa el componente React con el nuevo valor.
 
 
 ## <a name="code"></a>Código
@@ -69,11 +64,11 @@ import { FacepileBasicExample, IFacepileBasicExampleProps } from "./Facepile";
 
 export class ReactStandardControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // reference to the notifyOutputChanged method
+  // Reference to the notifyOutputChanged method
   private notifyOutputChanged: () => void;
-  // reference to the container div
+  // Reference to the container div
   private theContainer: HTMLDivElement;
-  // reference to the React props, prepopulated with a bound event handler
+  // Reference to the React props, prepopulated with a bound event handler
   private props: IFacepileBasicExampleProps = {
     numberFacesChanged: this.numberFacesChanged.bind(this)
   };
@@ -154,7 +149,7 @@ export class ReactStandardControl
 
 ```
 
-### <a name="facepiletsx"></a>Facepile. TSX
+### <a name="facepiletsx"></a>Facepile.tsx
 
 ```TSX
 import * as React from "react";
@@ -282,7 +277,7 @@ export class FacepileBasicExample extends React.Component<IFacepileBasicExampleP
 }
 ```
 
-### <a name="facepileexampledatats"></a>FacepileExampleData. ts
+### <a name="facepileexampledatats"></a>FacepileExampleData.ts
 
 ```TypeScript
 import * as React from 'react';
@@ -363,7 +358,7 @@ export const facepilePersonas: IFacepilePersona[] = [
   // Trimmed for display; full file in the downloadable sample code
 ```
 
-### <a name="testimagests"></a>TestImages. ts
+### <a name="testimagests"></a>TestImages.ts
 
 ```TypeScript
 const baseProductionCdnUrl = 'https://static2.sharepointonline.com/files/fabric/office-ui-fabric-react-assets/';
@@ -385,7 +380,7 @@ export const TestImages = {
 
 ## <a name="resources"></a>Recursos
 
-### <a name="cssreactstandardcontrolcss"></a>CSS/ReactStandardControl. CSS
+### <a name="cssreactstandardcontrolcss"></a>css/ReactStandardControl.css
 
 ```css
 .msFacepileExample {
@@ -420,6 +415,6 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)<br />
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br />
-[Información general sobre el marco de componentes de PowerApps](../overview.md)
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)<br />
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br />
+[Información general sobre PowerApps component framework](../overview.md)

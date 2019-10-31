@@ -3,7 +3,7 @@ title: Cambiar la combinación de colores o agregar un logotipo para que coincid
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -71,7 +71,7 @@ Puede crear una vista y una sensación personalizadas (un tema) para su aplicaci
 ## <a name="copy-and-alter-the-existing-theme"></a>Copie y edite el tema existente  
  La forma más sencilla y rápida de crear un tema nuevo es clonar uno existente y modificarlo. Después, debe guardarlo, mostrar una vista previa y publicarlo. 
  
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Controlado por modelo** (parte inferior izquierda). 
 
@@ -119,7 +119,7 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
 ### <a name="theme-contrast"></a>Contraste de temas  
  Se recomienda el siguiente método para proporcionar colores de contraste:  
   
--   Elija cuidadosamente los colores de contraste. El tema predeterminado predefinido de Common Data Service para aplicaciones tiene los coeficientes de contraste correctos para asegurar una facilidad de uso óptima. Use coeficientes similares para los nuevos temas.  
+-   Elija cuidadosamente los colores de contraste. El tema predeterminado predefinido de Common Data Service tiene los coeficientes de contraste correctos para asegurar una facilidad de uso óptima. Use coeficientes similares para los nuevos temas.  
   
 -   Para el modo de contraste alto, use la configuración predeterminada de colores.  
   
@@ -146,5 +146,5 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
   
 ## <a name="see-also"></a>Vea también  
          
- [Vídeo: Temas en Dynamics 365 Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Vídeo: Temas](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

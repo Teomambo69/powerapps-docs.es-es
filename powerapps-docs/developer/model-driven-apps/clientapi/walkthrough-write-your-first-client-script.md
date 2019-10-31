@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Escribir el primer script de cliente en aplicaciones basadas en modelos| MicrosoftDocs'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to: Dynamics 365 (online)
 ms.assetid: 73dfc13c-a18c-42fc-b511-a37896c2f893
@@ -16,13 +16,12 @@ search.app:
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Tutorial: Escribir el primer script de cliente
 
-
-
 Listo para escribir su primer script de cliente para ver las cosas en acción. Empecemos; lo haremos sencillo.
 
 ## <a name="objective"></a>Objetivo
 
 Después de finalizar este tutorial, sabrá cómo utilizar el código JavaScript en aplicaciones basadas en modelos, lo que implica los pasos siguientes a un nivel alto:
+
 - Escriba el código JavaScript para solucionar un problema del negocio
 - Cargue el código JavaScript como un recursos web en aplicaciones basadas en modelos
 - Asocie las funciones de JavaScript en el recursos web a los distintos eventos del lado del cliente en aplicaciones basadas en modelos.
@@ -33,13 +32,14 @@ Llamaremos su atención sobre hechos importantes durante el tutorial y proporcio
 
 El primer paso es identificar el problema del negocio que intenta abordar usando el scripting del cliente. Una vez que lo haya identificado, debe escribir el código JavaScript que contiene la lógica de negocios personalizada que trata su problema del negocio. 
 
-las aplicaciones basadas en modelos no proporcionan un editor de JavaScript. Por lo tanto, puede usar una herramienta de creación externa que proporciona características específicamente para la edición de archivos JavaScript, como [Notepad++](https://notepad-plus-plus.org/), [código de Visual Studio](https://code.visualstudio.com/docs/languages/javascript) o [Microsoft Visual Studio](https://docs.microsoft.com/en-us/scripting/javascript/).
+las aplicaciones basadas en modelos no proporcionan un editor de JavaScript. Por lo tanto, puede usar una herramienta de creación externa que proporciona características específicamente para la edición de archivos JavaScript, como [Notepad++](https://notepad-plus-plus.org/), [código de Visual Studio](https://code.visualstudio.com/docs/languages/javascript) o [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
 
 Puede revisar el código de ejemplo completo que se utiliza en el tutorial más adelante en este tema.
 
 Veamos el código detalladamente:
  
 ### <a name="detailed-code-explanation"></a>Explicación detallada del código
+
 - **Defina el espacio de nombres**: el código comienza definiendo un espacio de nombres de su script personalizado. Como práctica recomendada, siempre debe crear bibliotecas JavaScript con espacio de nombres para evitar que sus funciones sean reemplazadas por funciones en otra biblioteca.
 
     ```JavaScript

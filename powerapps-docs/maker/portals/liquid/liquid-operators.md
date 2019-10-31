@@ -1,40 +1,35 @@
 ---
-title: Usar operadores Liquid para un portal | MicrosoftDocs
-description: Obtenga información sobre los operadores Liquid disponibles en un portal.
+title: Usar operadores de Liquid para un portal | MicrosoftDocs
+description: Obtenga información acerca de los operadores de Liquid disponibles en un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 4a27a5364a4ae12fecc3a72dbb52115e415dcdb8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976539"
+ms.reviewer: null
 ---
+
 # <a name="understand-liquid-operators"></a>Descripción de los operadores de Liquid
 
-Liquid tiene acceso a todos los operadores lógicos y de comparación comunes. Se pueden usar en etiquetas como **If** y **a menos que**.
+Liquid tiene acceso a todos los operadores lógicos y de comparación comunes. Estos pueden usarse en etiquetas como **si** y **a menos que**.
 
 ## <a name="basic-operators"></a>Operadores básicos
 
-| ==    | es igual a                          |
+| ==    | Es igual a                          |
 |-------|---------------------------------|
 | !=    | No es igual a                  |
-| &gt;  | Más de                    |
-| &lt;  | Menos de                       |
+| &gt;  | Mayor que                    |
+| &lt;  | Menor que                       |
 | &gt;= | Mayor o igual que        |
 | &lt;= | Menor o igual que           |
-| O bien    | Condición A **o** condición B  |
-| etc   | Condición A **y** condición B |
+| o    | Condición A **o** condición B  |
+| y   | Condición A **y** condición B |
 
-## <a name="contains"></a>Tuviera
+## <a name="contains"></a>contiene
 
-contiene pruebas para la presencia de una subcadena en una cadena.
+contains comprueba la presencia de una subcadena dentro de una cadena.
 
 ```
 {% if page.title contains 'Product' %}
@@ -44,11 +39,11 @@ The title of this page contains the word Product.
 {% endif %}
 ```
 
-Contains también puede probar la presencia de una cadena en una matriz de cadenas.
+contains también puede comprobar la presencia de una cadena dentro de una matriz de cadenas.
 
-## <a name="startswith"></a>StartsWith
+## <a name="startswith"></a>startswith
 
-StartsWith comprueba si una cadena comienza con una subcadena determinada.
+contains comprueba si una cadena empieza con una subcadena determinada.
 
 ```
 {% if page.title startswith 'Profile' %}
@@ -58,9 +53,9 @@ This is a profile page.
 {% endif %}
 ```
 
-## <a name="endswith"></a>EndsWith
+## <a name="endswith"></a>endswith
 
-EndsWith comprueba si una cadena termina con una subcadena determinada.
+endswith comprueba si una cadena termina con una subcadena determinada.
 
 ```
 {% if page.title endswith 'Forum' %}
@@ -72,9 +67,9 @@ This is a forum page.
 
 ### <a name="see-also"></a>Vea también
 
-[Almacenar contenido de origen mediante plantillas web](store-content-web-templates.md)  
-[Tipos de líquido](liquid-types.md)  
-[Instrucción](liquid-conditional-operators.md)  
-[Objetos Liquid](liquid-objects.md)  
-[Etiquetas líquidas](liquid-tags.md)  
-[Filtros líquidos](liquid-filters.md) 
+[Almacenar contenido de origen con plantillas web](store-content-web-templates.md)  
+[Tipos Liquid](liquid-types.md)  
+[Condicional](liquid-conditional-operators.md)  
+[Objetos de Liquid](liquid-objects.md)  
+[Etiquetas de Liquid](liquid-tags.md)  
+[Filtros de Liquid](liquid-filters.md) 

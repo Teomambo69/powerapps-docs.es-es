@@ -3,7 +3,7 @@ title: Crear y diseñar formularios de aplicaciones controladas por modelos | Mi
 ms.custom: ''
 ms.date: 12/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -15,6 +15,7 @@ ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
+author: Mattp123
 tags:
   - Links to topic not migrated
 search.audienceType:
@@ -47,7 +48,7 @@ Todavía existen varias entidades, referidas aquí como entidades clásicas, que
 |Dirección|Artículo|Comentario de artículo|Operación de eliminación en masa|Conexión|  
 |Descuento|Lista de descuentos|Ubicación de documentos|Datos adjuntos de correo electrónico|Seguimiento|  
 |Objetivo|Métrica del objetivo|Importar archivo de origen|Producto de la factura|Producto del pedido|  
-|Lista de precios|Elemento de cola|Producto de oferta|Campo Informe|Consulta de informe|  
+|Lista de precios|Elemento de cola|Producto de oferta|Campo informe|Consulta de consolidación|  
 |Vista guardada|Servicio|Actividad de servicio|Sitio de SharePoint|Ubicación|  
 |Zona de ventas|Unidad|Unidad de venta|||  
   

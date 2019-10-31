@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="email-activity-entities"></a>Entidades de actividad de correo electrónico
 
-La actividad de correo electrónico permite realizar el seguimiento y administrar comunicaciones de correo electrónico con los clientes. Common Data Service incluye el software de E-mail Router que administra enrutamiento de correo electrónico que sale y entra en Common Data Service. La actividad de correo electrónico se entrega con protocolos de correo electrónico. E-mail Router admite los siguientes protocolos de correo electrónico: servicios web de Exchange, POP3 y SMTP. Además del software E-mail Router, la actividad de correo electrónico también se puede ofrecer mediante Dynamics 365 for Outlook.  
+La actividad de correo electrónico permite realizar el seguimiento y administrar comunicaciones de correo electrónico con los clientes. Common Data Service incluye el software E-mail Router que administra el enrutamiento de correo electrónico hacia o desde Common Data Service. La actividad de correo electrónico se entrega con protocolos de correo electrónico. E-mail Router admite los siguientes protocolos de correo electrónico: servicios web de Exchange, POP3 y SMTP. Además del software E-mail Router, la actividad de correo electrónico también se puede ofrecer mediante Dynamics 365 for Outlook.  
   
 <a name="Actions"></a>   
 
 ## <a name="actions-on-an-email-activity"></a>Acciones en una actividad de correo electrónico  
- Con los servicios web de Dynamics 365 Customer Engagement, puede realizar las siguientes acciones en la actividad del correo electrónico:  
+ Mediante web servicios de Common Data Service, puede realizar las siguientes acciones sobre una actividad de correo electrónico:  
   
 - Crear, recuperar, actualizar y eliminar la actividad de correo electrónico.  
   
@@ -32,7 +32,7 @@ La actividad de correo electrónico permite realizar el seguimiento y administra
   
 - Enviar mensajes de correo electrónico en masa.  
   
-- Configure los mensajes de correo electrónico entrantes para que se entreguen desde Microsoft Exchange Server a cualquier usuario o cola, o mensajes salientes para que se envíen desde cualquier usuario o cola a Microsoft Exchange Server. Para obtener información sobre cómo configurar los mensajes de correo electrónico entrantes para las colas, consulte [Configurar el correo electrónico para los mensajes entrantes](/dynamics365/customer-engagement/developer/configure-email-incoming-messages).  
+- Configurar mensajes de correo electrónico entrantes para que se entreguen desde Microsoft Exchange Server a cualquier usuario o cola, o mensajes salientes para que se envíen desde cualquier usuario o cola a Microsoft Exchange Server. Para obtener información sobre cómo configurar los mensajes de correo electrónico entrantes para las colas, consulte [Configurar el correo electrónico para los mensajes entrantes](/dynamics365/customer-engagement/developer/configure-email-incoming-messages).  
   
    Si los atributos de organización `Organization.RequireApprovalForuserEmail` y `Organization.RequireApprovalForQueueEmail` (correos electrónicos de proceso solo para usuarios o colas aprobados) se establecen en **true** (1), se produce lo siguiente: los mensajes de correo electrónico se entregan o se envían solamente desde un usuario o una cola si la dirección de correo electrónico principal del usuario o cola está aprobada. Los atributos `SystemUser.EmailRouterAccessApproval` y `Queue.EmailRouterAccessApproval` indican el estado de la dirección de correo electrónico principal del usuario y la cola respetivamente, y el valor debe establecerse como 1. De lo contrario, los mensajes entrantes y salientes se bloquearán. Puede actualizar el registro de usuarios o de colas para cambiar el valor del atributo, si no está ya en estado aprobado, siempre que su cuenta de usuario disponga del privilegio **prvApproveRejectEmailAddress** asignado.
   

@@ -24,9 +24,6 @@ search.app:
 
 Para usar la API web necesita encontrar información sobre qué hay disponible para usar. El servicio se describe a través los documentos de servicio y de metadatos a los que puede obtener acceso. Este tema introducirá conceptos importantes y describirá cómo puede encontrar la información que necesita usando la documentación generada desde los documentos de servicio y de metadatos y la documentación de los tipos, funciones y acciones de entidad del sistema. 
 
-> [!NOTE]
-> La información en este tema también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local).
-  
 <a name="bkmk_terminology"></a>
   
 ## <a name="terminology"></a>Terminología 
@@ -378,4 +375,4 @@ Los *tipos de enumeración* o *EnumTypes* son tipos primitivos con nombre cuyos 
 [Usar la API web de Common Data Service](overview.md)<br />
 [Autenticarse en Common Data Service con la API web](authenticate-web-api.md)<br />
 [Realizar operaciones mediante la API web](perform-operations-web-api.md)<br/>
-[Guía para desarrolladores de aplicaciones Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide)
+

@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -49,11 +50,11 @@ Puesto que los roles de conexión son *compatibles con las soluciones*, signific
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-La mayoría de los roles de conexión que puede ver en el área **Configuración** se definen en la **Solución predeterminada** *interna* (que no debe confundirse con **Solución predeterminada de Common Data Services**). La **Solución predeterminada** interna contiene todas las personalizaciones del sistema. Para ver la **Solución predeterminada** elija el vista **Todas las soluciones: internas**.
+La mayoría de los roles de conexión que puede ver en el área **Configuración** se definen en la **Solución predeterminada** *interna* (que no debe confundirse con **Solución predeterminada de Common Data Service**). La **Solución predeterminada** interna contiene todas las personalizaciones del sistema. Para ver la **Solución predeterminada** elija el vista **Todas las soluciones: internas**.
 
 ## <a name="add-connection-roles-to-a-solution"></a>Agregar roles de conexión a una solución
 
-Generalmente no es recomendable editar los componentes de la **Solución predeterminada** interna. En la **Solución predeterminada de Common Data Services** o cualquier solución que haya creado para trabajar, puede usar el comando **Agregar existente** para llevar los roles de conexión predeterminados a la solución.
+Generalmente no es recomendable editar los componentes de la **Solución predeterminada** interna. En la **Solución predeterminada de Common Data Service** o cualquier solución que haya creado para trabajar, puede usar el comando **Agregar existente** para llevar los roles de conexión predeterminados a la solución.
 
 ![Agregar rol de conexión existente](media/add-existing-connection-role.png)
 
@@ -125,7 +126,7 @@ Si configura más de un rol de conexión coincidente, esos roles de conexión re
 ### <a name="see-also"></a>Vea también
 <!-- This is in the basics guide. It needs to be migrated -->
 [Crear conexiones para definir y ver relaciones entre registros](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)<br />
+[Crear y editar conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)<br />
 [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)
 
 

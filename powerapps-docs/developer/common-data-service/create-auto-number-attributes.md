@@ -118,6 +118,8 @@ HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c-e511-80d2-00155d2a68d2)/Attributes(f01bef16-287c-e511-80d2-00155d2a68d2)
 ```
+> [!NOTE]
+>Los valores de numeración automaica son preseleccionados por la base de datos al iniciar el registro. Si se inicia un registro pero se cancela, el número que se asignó no se usa. Si, durante este tiempo, otro registro se completa con el número secuencial siguiente, los huecos estarán presentes en la numeración automática de registros.
 
 ## <a name="autonumberformat-options"></a>Opciones de AutoNumberFormat
 

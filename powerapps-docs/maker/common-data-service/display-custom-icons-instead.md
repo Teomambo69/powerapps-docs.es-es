@@ -1,5 +1,5 @@
 ---
-title: Mostrar iconos personalizados junto con los valores en las vistas de lista con PowerApps | MicrosoftDocs
+title: Mostrar iconos personalizados junto con los valores en vistas de lista con PowerApps | MicrosoftDocs
 description: Obtenga información sobre cómo mostrar gráficos de icono en una vista
 ms.custom: ''
 ms.date: 02/14/2019
@@ -94,7 +94,7 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>Función JavaScript de ejemplo  
- La función JavaScript para mostrar iconos personalizados e informaciones sobre herramientas espera los dos argumentos siguientes: el objeto de fila completo especificado en layoutxml y el Id. de configuración regional del usuario que llama (LCID). El parámetro LCID permite especificar el texto de información sobre herramientas en varios idiomas. Para obtener más información sobre los idiomas admitidos por el entorno, consulte [Habilitar idiomas](/dynamics365/customer-engagement/admin/enable-languages) e [Instalar o actualizar paquetes de idioma para Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Para ver una lista de valores de Id. de configuración regional (LCID) que puede usar en el código, consulte [Id. de configuración regional asignados por Microsoft](https://go.microsoft.com/fwlink/?linkid=829588).
+ La función JavaScript para mostrar iconos personalizados e informaciones sobre herramientas espera los dos argumentos siguientes: el objeto de fila completo especificado en layoutxml y el Id. de configuración regional del usuario que llama (LCID). El parámetro LCID permite especificar el texto de información sobre herramientas en varios idiomas. Para obtener más información sobre los idiomas admitidos por el entorno, consulte [Habilitar idiomas](/dynamics365/customer-engagement/admin/enable-languages) e [Instalar o actualizar paquetes de idioma](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Para ver una lista de valores de Id. de configuración regional (LCID) que puede usar en el código, consulte [Id. de configuración regional asignados por Microsoft](https://go.microsoft.com/fwlink/?linkid=829588).
 
   
  Suponiendo que agregará iconos personalizados para un tipo de conjunto de opciones de atributo, que tiene un conjunto limitado de opciones predefinidas, asegúrese de que usa el valor entero de las opciones en lugar de etiqueta para evitar problemas de localización.  
@@ -102,7 +102,7 @@ search.app:
  El siguiente código de ejemplo muestra iconos e informaciones sobre herramientas basándose en uno de tres valores (1: Muy interesado, 2: Algo interesado, 3: No interesado) en el atributo opportunityratingcode (Nivel de interés). El código de ejemplo también muestra cómo mostrar texto de información sobre herramientas localizado. Para que este ejemplo funcione, debe crear tres recursos web de imagen con imágenes 16x16 con los nombres siguientes: new_Hot, new_Warm y new_Cold.  
 
 > [!IMPORTANT]
-> Este ejemplo requiere la entidad oportunidad, que está disponible con aplicaciones Microsoft Dynamics 365 for Customer Engagement.
+> Este ejemplo requiere la entidad oportunidad, que está disponible con la aplicación Dynamics 365 Sales.
   
 ```javascript
 function displayIconTooltip(rowData, userLCID) {      

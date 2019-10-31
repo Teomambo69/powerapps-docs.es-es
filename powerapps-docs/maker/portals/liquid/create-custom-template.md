@@ -1,36 +1,31 @@
 ---
-title: Crear una plantilla de página personalizada mediante Liquid y una plantilla de página de plantilla Web para un portal | MicrosoftDocs
-description: Instrucciones para crear una plantilla de página personalizada mediante operadores Liquid.
+title: Crear una plantilla de página personalizada con Liquid y una plantilla de página web para un portal | MicrosoftDocs
+description: Instrucciones para crear una plantilla de página personalizada con operadores de Liquid.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 7717bd75fe7149ea3b0af957055975ad10e752ae
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975067"
+ms.reviewer: null
 ---
+
 # <a name="create-a-custom-page-template"></a>Crear una plantilla de página personalizada
 
-En este ejemplo, vamos a crear una plantilla de página personalizada mediante Liquid y una plantilla de página que se basa en una plantilla Web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [almacenar el contenido de origen mediante plantillas web](store-content-web-templates.md). Nuestro objetivo es crear una plantilla de dos columnas simple que use un [conjunto de vínculos Web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-web-links) como navegación en el lado izquierdo, con el contenido de la página a la derecha. 
+En este ejemplo, crearemos una plantilla de páginas personalizada, usando Liquid y una plantilla de página que se basa en una plantilla web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)][Almacenar contenido de origen con plantillas web](store-content-web-templates.md). Nuestra objetivo es crear una plantilla simple de dos columnas que use un [conjunto de vínculos web](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-web-links) como navegación del lado izquierdo, con el contenido de páginas a la derecha. 
 
-## <a name="step-1-create-a-web-template-and-write-the-liquid-template-code"></a>Paso 1: crear una plantilla Web y escribir el código de plantilla Liquid
+## <a name="step-1-create-a-web-template-and-write-the-liquid-template-code"></a>Paso 1. Crear una plantilla web y escribir el código de plantilla de Liquid
 
-En primer lugar, crearemos la plantilla Web y escribiremos el código de plantilla Liquid. Es probable que vuelvan a usar algunos elementos comunes de esta plantilla en plantillas futuras. Por lo tanto, vamos a crear una plantilla base común que se extenderá con nuestra plantilla específica. Nuestra plantilla base proporcionará vínculos de ruta de navegación y nuestro título o encabezado de página, así como definir el diseño de una columna:
+Primero, crearemos nuestra plantilla web y escribiremos el código de plantilla de Liquid. Es probable que reutilicemos algunos elementos comunes de esta plantilla en plantillas futuras. De esta manera, crearemos una plantilla base común que ampliaremos con nuestra plantilla específica. Nuestra plantilla base proporcionará vínculos de ruta de navegación y nuestro título/encabezado de página, así como el diseño de una columna:
 
 > [!div class=mx-imgBorder]
-Plantilla ![Web de diseño de columna](../media/web-template-two-column-layout.png "plantilla Web de un diseño de columna")
+![Diseño de una columna de plantilla web](../media/web-template-two-column-layout.png "Diseño de una columna de plantilla web")
 
 > [!TIP]
-> Más información sobre la herencia de plantillas con las etiquetas Block y extends: [etiquetas de plantilla](template-tags.md#extends)
+> Lea sobre herencia de plantilla con las etiquetas block y extends: [Etiquetas de plantilla](template-tags.md#extends)
 
-### <a name="two-column-layout-web-template"></a>Diseño de dos columnas (plantilla Web)
+### <a name="two-column-layout-web-template"></a>Diseño de dos columnas (plantilla web)
 
 ```xml
 <div class=container>
@@ -58,17 +53,17 @@ Plantilla ![Web de diseño de columna](../media/web-template-two-column-layout.p
 </div>
 ```
 
-## <a name="step-2-create-a-new-web-template-that-extends-our-base-layout-template"></a>Paso 2: crear una nueva plantilla Web que extienda nuestra plantilla de diseño base
+## <a name="step-2-create-a-new-web-template-that-extends-our-base-layout-template"></a>Paso 2: Crear una nueva plantilla web que amplíe nuestra plantilla de diseño base
 
-Use el conjunto de vínculos Web de navegación asociado a la página actual de los vínculos de navegación para crear una nueva plantilla Web que extienda nuestra plantilla de diseño base.
+Utilice el conjunto de vínculos web de navegación asociado con la página actual para nuestros vínculos de navegación para crear una nueva plantilla web que amplía nuestra plantilla de diseño base.
 
 > [!div class=mx-imgBorder]
-![Vínculos Web]de la plantilla Web de diseño de navegación a la(../media/web-template-weblinks-left-navigation-layout.png "plantilla Web vínculos Web diseño") de navegación izquierda  
+![Diseño de navegación izquierda de vínculos web de plantilla web](../media/web-template-weblinks-left-navigation-layout.png "Diseño de navegación izquierda de vínculos web de plantilla web")  
 
 > [!TIP]
-> Familiarícese en cómo cargar conjuntos de vínculos Web mediante el objeto [weblinks](liquid-objects.md#weblinks) .
+> Familiarícese sobre cómo cargar conjuntos de vínculos web mediante el objeto [weblinks](liquid-objects.md#weblinks).
 
-### <a name="weblinks-left-navigation-web-template"></a>Navegación izquierda de weblinks (plantilla Web)
+### <a name="weblinks-left-navigation-web-template"></a>Navegación izquierda por weblinks (plantilla web)
 
 ```xml
 {% extends 'Two Column Layout' %}
@@ -96,24 +91,24 @@ Use el conjunto de vínculos Web de navegación asociado a la página actual de 
 {% endblock %}
 ```
 
-## <a name="step-3-create-a-new-page-template-based-on-the-web-template"></a>Paso 3: crear una nueva plantilla de página basada en la plantilla Web
+## <a name="step-3-create-a-new-page-template-based-on-the-web-template"></a>Paso 3: Crear una nueva plantilla de página web basada en la plantilla web
 
-En este paso, vamos a crear una nueva plantilla de página que se basa en la plantilla Web que creamos en el paso anterior.
-
-> [!div class=mx-imgBorder]
-![Plantilla de página weblinks izquierda diseño de navegación]de la(../media/page-template-weblinks-left-navigation-layout.png "plantilla página de diseño weblinks izquierda diseño de navegación")  
-
-## <a name="step-4-create-a-web-page-to-display-content"></a>Paso 4: crear una página web para mostrar contenido
-
-Ahora, lo único que queda por hacer es crear una página web que use nuestra plantilla de página y tener un conjunto de vínculos Web asociado, y tenemos el resultado.
+En este paso, crearemos una nueva plantilla de página que se base en la plantilla web que creamos en el paso anterior.
 
 > [!div class=mx-imgBorder]
-![Página Web con la Página Web de navegación izquierda](../media/web-page-left-navigation.png "con navegación izquierda")  
+![Diseño de navegación izquierda de vínculos web de plantilla de página](../media/page-template-weblinks-left-navigation-layout.png "Diseño de navegación izquierda de vínculos web de plantilla de página")  
+
+## <a name="step-4-create-a-web-page-to-display-content"></a>Paso 4: Crear una página web para mostrar contenido
+
+Ahora, todo lo que tiene que hacer es crear una página web que use nuestra plantilla de páginas y tenga un conjunto de vínculos web asociado, y obtenemos el resultado.
+
+> [!div class=mx-imgBorder]
+![Página web con navegación izquierda](../media/web-page-left-navigation.png "Página web con navegación izquierda")  
 
 ### <a name="see-also"></a>Vea también
 
 [Crear una plantilla de página personalizada para representar una fuente RSS](render-rss-custom-page-template.md)  
 [Representar la lista de entidades asociada a la página actual](render-entity-list-current-page.md)  
-[Representar un encabezado de sitio web y una barra de navegación principal](render-site-header-primary-navigation.md)  
-[Representar hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
+[Represente un encabezado y una barra de navegación principal de página web](render-site-header-primary-navigation.md)  
+[Represente hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
 

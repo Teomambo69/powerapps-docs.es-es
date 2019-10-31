@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>Aproximación a la experiencia de usuario y transición a la interfaz unificada
 
-Estas notas del producto orientadas al negocio describen el planeamiento, la gobernanza y los principios de administración que se deben considerar al abordar un cambio en la experiencia de usuario en una aplicación basada en modelo en la plataforma PowerApps. Estas notas del producto se centran específicamente en aplicaciones Dynamics 365 for Customer Engagement como Dynamics 365 for Sales y Dynamics 365 for Service, y en la adopción de la interfaz unificada, pero muchos temas también se pueden aplicar a cualquier actualización de la experiencia del usuario.
+Estas notas del producto orientadas al negocio describen el planeamiento, la gobernanza y los principios de administración que se deben considerar al abordar un cambio en la experiencia de usuario en una aplicación basada en modelo en la plataforma PowerApps. Estas notas del producto se centran específicamente en aplicaciones Dynamics 365 Sales y Dynamics 365 Customer Service, y en la adopción de la interfaz unificada, pero muchos temas también se pueden aplicar a cualquier actualización de la experiencia del usuario.
 
 En resumen, este manual le ayudará a:
 - Posicionar la interfaz unificada.

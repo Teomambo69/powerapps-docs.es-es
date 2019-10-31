@@ -1,14 +1,12 @@
 ---
-title: Realizar operaciones utilizando la API web (Common Data Service)| Microsoft Docs
-description: 'La API web Common Data Service proporciona un servicio web moderno de RESTful que puede usar para interactuar con Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos. Lea sobre las operaciones que se pueden realizar mediante la API web'
+title: Realizar operaciones mediante la API web (Common Data Service)| Microsoft Docs
+description: 'La API web de Common Data Service proporciona un servicio web moderno de REST que puede usar para interactuar con datos en Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos. Lea sobre las operaciones que se pueden realizar mediante la API web'
 ms.custom: ''
 ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Common Data Service (online)
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
@@ -22,10 +20,10 @@ search.app:
 ---
 # <a name="perform-operations-using-the-web-api"></a>Realizar operaciones mediante la API web
 
-La API web proporciona un servicio web moderno de RESTful que puede usar para interactuar con Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos.
+La API web proporciona un servicio web moderno de REST que puede usar para interactuar con datos en Common Data Service usando una gran variedad de plataformas, lenguajes de programación y dispositivos.
 
 > [!NOTE]
-> La información en esta sección también es aplicable a los usuarios de las aplicaciones de Dynamics 365 for Customer Engagement (en línea y local). 
+> La información de esta sección también es aplicable a los usuarios de Dynamics 365 Customer Engagement (on-premises). 
 
 
 ## <a name="in-this-section"></a>En esta sección
@@ -46,6 +44,6 @@ La API web proporciona un servicio web moderno de RESTful que puede usar para in
 
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](overview.md)<br />
-[Autentique Common Data Service con la API web](authenticate-web-api.md)<br />
+[Usar la API web de Common Data Service](overview.md)<br />
+[Autenticarse en Common Data Service con la API web](authenticate-web-api.md)<br />
 [Tipos, funciones y acciones de la API web](web-api-types-operations.md)

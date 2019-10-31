@@ -1,7 +1,7 @@
 ---
 title: Propiedades disponibles en el diseñador de formularios | MicrosoftDocs
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 08/26/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,13 +25,12 @@ search.app:
 
 # <a name="properties-available-in-the-form-designer"></a>Propiedades disponibles en el diseñador de formularios
 
-Ubicado en el panel derecho del diseñador de formularios basados en modelos, el panel de propiedades le permite rápidamente ver y actualizar las propiedades de cualquier elemento seleccionado de vista previa o de los paneles de navegación. 
+Ubicado en el panel derecho del diseñador de formularios basados en modelos, el panel de propiedades le permite rápidamente ver y actualizar las propiedades de cualquier elemento seleccionado de vista previa o la vista de árbol. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/form-designer-property-pane.png "Panel de propiedades del diseñador de formularios")
 
 ## <a name="form-properties"></a>Propiedades del formulario
-
 
 |Nombre  |Descripción  |
 |---------|---------|
@@ -52,8 +51,8 @@ Ubicado en el panel derecho del diseñador de formularios basados en modelos, el
 | **Opciones de visualización**      | **Ocultar en teléfono**     |  Para una versión condensada de este formulario en pantallas de teléfono, las pestañas se pueden ocultar.     |
 | **Formato**   | **Diseño**     |  Las pestañas pueden tener hasta tres columnas. Use las opciones para establecer el número de pestañas y qué porcentaje del ancho total deben ocupar.      |
 
-## <a name="section-properties"></a>Propiedades de las secciones
 
+## <a name="section-properties"></a>Propiedades de las secciones
 
 |Área   |Nombre  |Descripción  |
 |---------|---------|---------|
@@ -67,7 +66,6 @@ Ubicado en el panel derecho del diseñador de formularios basados en modelos, el
 
 ## <a name="field-properties"></a>Propiedades de campo
 
-
 |Área  |Nombre  |Descripción  |
 |---------|---------|---------|
 |**Opciones de visualización**     | **Etiqueta de campo**    | De forma predeterminada, la etiqueta se corresponderá con el nombre para mostrar del campo. Puede reemplazar ese nombre para el formulario proporcionando otra etiqueta aquí.       |
@@ -77,15 +75,17 @@ Ubicado en el panel derecho del diseñador de formularios basados en modelos, el
 |**Opciones de visualización**     |  **Bloquear campo**   |  Bloquee este campo para evitar que se elimine.     |
 |**Opciones de visualización**     |  **Ocultar campo**     | Cuando se selecciona, el campo está oculto de forma predeterminada y se puede mostrar con código.      |
 |**Opciones de visualización**     |  **Ocultar en teléfono**    | Para una versión condensada de este formulario en pantallas de teléfono, los campos se pueden ocultar.         |
-|**Opciones de visualización**     | **Ancho de campo**      |  Cuando la sección que contiene los campos tiene más de una columna puede establecer el campo para ocupar hasta el número de columnas que tiene la sección.       |
-
+|**Formato**     | **Ancho de campo**      |  Cuando la sección que contiene los campos tiene más de una columna puede establecer el campo para ocupar hasta el número de columnas que tiene la sección.       |
 
 ## <a name="see-also"></a>Vea también
 [Información general del diseñador de formularios controlado por modelos](form-designer-overview.md)  
-[Crear o editar formularios usando el diseñador de formularios](create-and-edit-forms.md)  
-[Agregar, mover o eliminar campos en un formulario usando el diseñador de formularios](add-move-or-delete-fields-on-form.md)  
-[Agregar, mover o eliminar secciones en un formulario usando el diseñador de formularios](add-move-or-delete-sections-on-form.md)  
-[Agregar, mover o eliminar pestañas en un formulario usando el diseñador de formularios](add-move-or-delete-tabs-on-form.md)  
+[Crear, editar o configurar formularios usando el diseñador de formularios](create-and-edit-forms.md)  
+[Agregar, configurar, mover o eliminar campos de un formulario](add-move-or-delete-fields-on-form.md)  
+[Agregar, configurar, mover o eliminar componentes de un formulario](add-move-configure-or-delete-components-on-form.md)  
+[Agregar, configurar, mover o eliminar secciones de un formulario](add-move-or-delete-sections-on-form.md)  
+[Agregar, configurar, mover o eliminar pestañas de un formulario](add-move-or-delete-tabs-on-form.md)  
 [Configurar propiedades de encabezado en el diseñador de formularios](form-designer-header-properties.md)  
+[Agregar y configurar un componente de subcuadrícula en un formulario](form-designer-add-configure-subgrid.md)  
+[Agregar y configurar un componente de vista rápida en un formulario](form-designer-add-configure-quickview.md)  
 [Use la vista de árbol del diseñador de formularios](using-tree-view-on-form.md)  
-[Crear y editar campos](../common-data-service/create-edit-field-portal.md)
+[Crear y editar campos](../common-data-service/create-edit-field-portal.md)  

@@ -1,6 +1,6 @@
 ---
 title: Administrar excepciones en el código (Common Data Service) | Microsoft Docs
-description: Este artículo analiza las excepciones que se devuelven desde una llamada al método de servicio web de Dynamics 365 Customer Engagement. El ejemplo de este artículo resalta los errores y las excepciones comunes que el diseño de su aplicación debe controlar.
+description: Este artículo analiza las excepciones que se devuelven desde una llamada al método de servicio web de Common Data Service. El ejemplo de este artículo resalta los errores y las excepciones comunes que el diseño de su aplicación debe controlar.
 ms.custom: ''
 ms.date: 06/17/2019
 ms.reviewer: ''

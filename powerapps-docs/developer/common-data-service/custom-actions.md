@@ -1,12 +1,12 @@
 ---
-title: Crear acciones propias (Common Data Service) | Microsoft Docs
-description: Las acciones son mensajes personalizados que le ayudan a ampliar la funcionalidad de Dynamics 365 Customer Engagement. Más información sobre cómo crear sus propias acciones
+title: Crear sus propios acciones (Common Data Service) | Microsoft Docs
+description: Las acciones son mensajes personalizados que ayudan a extender la funcionalidad de Common Data Service. Más información sobre cómo crear sus propias acciones
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 09/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -17,11 +17,10 @@ search.app:
 ---
 # <a name="create-your-own-actions"></a>Crear acciones propias
 
-Para ampliar la funcionalidad de Common Data Service creando mensajes personalizados denominados *acciones*. Estas acciones tendrán clases de solicitud/de respuesta asociadas y se generará una acción API web. Por lo general, las acciones se utilizan para agregar una nueva funcionalidad específica del dominio al servicio web de la organización o para combinar varias solicitudes de mensaje de servicio web de la organización en una sola solicitud. Por ejemplo, en un centro de atención telefónica de soporte técnico, es posible que desee combinar los mensajes Crear, Asignar y Setstate en un único mensaje nuevo Escalar.  
+Para ampliar la funcionalidad de Common Data Service, puede crear mensajes personalizados denominados *acciones*. Estas acciones tendrán clases de solicitud/de respuesta asociadas y se generará una acción API web. Por lo general, las acciones se utilizan para agregar una nueva funcionalidad específica del dominio al servicio web de la organización o para combinar varias solicitudes de mensaje de servicio web de la organización en una sola solicitud. Por ejemplo, en un centro de atención telefónica de soporte técnico, es posible que desee combinar los mensajes Crear, Asignar y Actualizar en un único mensaje nuevo Escalar.  
   
- La lógica de negocios de una acción se implementa mediante un flujo de trabajo. Cuando crea una acción, el flujo de trabajo asociado en tiempo real se registra automáticamente para ejecutarse en la fase 30 (operación principal) de la canalización de ejecuciones. Para obtener más información sobre flujos de trabajo en tiempo real, consulte [Tipos de flujo de trabajo](/dynamics365/customer-engagement/developer/process-categories).  
+La lógica de negocios de una acción se implementa mediante un flujo de trabajo. Cuando crea una acción, el flujo de trabajo asociado en tiempo real se registra automáticamente para ejecutarse en la fase de operación principal de la canalización de ejecuciones. 
   
- Si bien las acciones se admiten en Common Data Service, la creación de una acción en código (mediante XAML) se admite únicamente para las implementaciones locales y con conexión a Internet (IFD). Los clientes de Online deben crear acciones interactivamente en la aplicación web.  
   
 <a name="about_actions"></a>   
 
@@ -31,7 +30,7 @@ Para ampliar la funcionalidad de Common Data Service creando mensajes personaliz
   
 - Se puede asociar con una sola entidad o ser global (no asociada con ninguna entidad determinada).  
   
-- Se ejecuta en la fase 30 de la operación principal de la canalización de ejecuciones de eventos.  
+- Se ejecuta en la fase de la operación principal de la canalización de ejecuciones de eventos.  
   
 - Admite la invocación de complementos registrados en las fases de operación previa y posterior de la canalización de ejecuciones de eventos.  
   
@@ -39,7 +38,7 @@ Para ampliar la funcionalidad de Common Data Service creando mensajes personaliz
   
 - Está disponible a través de la API web o los extremos `organization.svc` y `organization.svc/web`.  
   
-- Se puede ejecutar mediante un recurso web de JavaScript. Más información: [Ejecutar una acción con un recurso web de JavaScript](/dynamics365/customer-engagement/developer/create-own-actions#BKMK_JavaScript)  
+- Se puede ejecutar mediante un recurso web de JavaScript. 
   
 - Siempre se ejecuta en el contexto de seguridad del usuario que llama.  
   
@@ -65,13 +64,12 @@ Para ampliar la funcionalidad de Common Data Service creando mensajes personaliz
   
  Se requiere un privilegio de seguridad denominado Activar procesos en tiempo real (`prvActivateSynchronousWorkflow`) para activar el flujo de trabajo en tiempo real de una acción para que pueda ejecutarse. Esto es además de los privilegios necesarios para crear un flujo de trabajo.  
 
-<!-- Removed much content about creating a custom action using code-->
   
 <a name="bkmk_package"></a>   
 
 ## <a name="package-an-action-for-distribution"></a>Empaquetar una acción para la distribución
 
- Para distribuir la acción de modo que se pueda importar a una organización de Common Data Service, agregue la acción a una solución de Common Data Service. Esto se realiza fácilmente usando la aplicación web y desplazándose a **Configuración** > **Personalizaciones** > **Soluciones**. También puede escribir código para crear la solución. Para obtener más información sobre cómo usar soluciones, consulte [Empaquetar y distribuir las extensiones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).  
+ Para distribuir la acción de modo que se pueda importar a una organización de Common Data Service, agregue la acción a una solución de Common Data Service. Esto se realiza fácilmente usando la aplicación web y desplazándose a **Configuración** > **Personalizaciones** > **Soluciones**. También puede escribir código para crear la solución. Para obtener más información acerca de soluciones, vea [Introducción a soluciones](introduction-solutions.md).  
   
 <a name="bkmk_gentypes"></a>
 
@@ -80,20 +78,18 @@ Para ampliar la funcionalidad de Common Data Service creando mensajes personaliz
  Con la herramienta CrmSvcUtil puede generar clases de solicitud y respuesta para la acción para incluirlas en el código de aplicación. Sin embargo, antes de generar estas clases, asegúrese de activar la acción.  
   
 Para descargar el CrmSvcUtil.exe, consulte [Descargar herramientas de NuGet](download-tools-NuGet.md).
-  
- El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos para una instalación local de Common Data Service. Se suministran los valores de los parámetros para la instalación.  
-  
-```ms-dos  
-CrmSvcUtil.exe /url:http://<serverName>/<organizationName>/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /domain:<domainName> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
-```  
-  
+ 
  El siguiente ejemplo muestra el formato para ejecutar la herramienta desde la línea de comandos con Common Data Service. Se suministran los valores de los parámetros adecuados para su cuenta y servidor.  
   
 ```ms-dos  
-CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
+CrmSvcUtil.exe /interactivelogin ^
+/out:<outputFilename>.cs ^
+/namespace:<outputNamespace> ^
+/serviceContextName:<serviceContextName> ^
+/generateActions
 ```  
   
- Tenga en cuenta el uso del parámetro `/generateActions`. Más información: [Crear clases de entidad con enlace en tiempo de compilación con la herramienta de generación de código (CrmSvcUtil.exe)](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool).  
+ Tenga en cuenta el uso del parámetro `/generateActions`. Más información: [Generar clases de enlace en tiempo de compilación para el servicio de la organización](org-service/generate-early-bound-classes.md).  
   
  Puede usar tipos de enlace en tiempo de compilación y en tiempo de ejecución con las clases generadas de solicitud y respuesta para la acción.  
   
@@ -101,7 +97,7 @@ CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServic
 
 ## <a name="execute-an-action-using-the-web-api"></a>Ejecutar una acción con la API web
 
-Una nueva acción se crea en la API web cuando se crea. Si la acción se crea en el contexto de una entidad, está enlazada a esa entidad. Si no, es una acción sin enlazar. Más infomación: [Usar acciones web API](/dynamics365/customer-engagement/developer/webapi/use-web-api-actions).  
+Una nueva acción se crea en la API web cuando se crea. Si la acción se crea en el contexto de una entidad, está enlazada a esa entidad. Si no, es una acción sin enlazar. Más infomación: [Usar acciones web API](webapi/use-web-api-actions.md).  
   
 <a name="bkmk_execute"></a>
 
@@ -121,9 +117,8 @@ Para ejecutar una acción con el servicio web de la organización por medio de c
 
 ### <a name="execute-an-action-using-a-javascript-web-resource"></a>Ejecutar una acción con un recurso web de JavaScript
 
-Una acción puede ejecutarse con la API web igual que cualquier acción del sistema. Más infomación: [Usar acciones web API](/dynamics365/customer-enagagement/developer/webapi/use-web-api-actions).  
+Una acción puede ejecutarse con la API web igual que cualquier acción del sistema. Más infomación: [Usar acciones web API](webapi/use-web-api-actions.md).  
 
-La biblioteca de ejemplo [Sdk.Soap.js](http://code.msdn.microsoft.com/SdkSoapjs-9b51b99a) muestra cómo se pueden usar los mensajes con los recursos web de JavaScript y el servicio de organización (organization.svc/web). Use el ejemplo complementario [Generador de mensaje de acción de Sdk.Soap.js](http://code.msdn.microsoft.com/SdkSoapjs-Action-Message-971be943) para generar bibliotecas de JavaScript que se pueden usar con Sdk.Soap.js de la misma forma en que puede usar las bibliotecas para los mensajes del sistema proporcionados en dicho ejemplo. Los archivos generados con el Generador de mensaje de acción de `Sdk.Soap.js` son bibliotecas de JavaScript independientes para cada acción. Cada biblioteca contiene una clase de solicitud y respuesta que se corresponde con las clases generadas por la herramienta CrmSvcUtil.  
   
 <a name="bkmk_execute-process"></a>
 
@@ -146,8 +141,7 @@ Si uno de los pasos del flujo de trabajo en tiempo real de la acción es una act
 >  Una de las prácticas recomendadas consiste en ejecutar las operaciones de ejecución prolongada fuera de Common Data Service con procesos asincrónicos .NET o en segundo plano.  
   
 ### <a name="see-also"></a>Vea también  
- [Crear flujos de trabajo en tiempo real](/dynamics365/customer-engagement/developer/create-real-time-workflows)   
- [Usar diálogos para procesos guiados](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes)   
- [Canalización de ejecución del evento](event-framework.md#event-execution-pipeline)   
- [Escribir flujos de trabajo para automatizar los procesos de negocio](/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement)   
- [Personalizar el sistema](https://technet.microsoft.com/library/dn531158.aspx)
+ [Usar acciones](/flow/actions)<br />
+ [Canalización de ejecución del evento](event-framework.md#event-execution-pipeline)<br />
+ [Flujos de trabajo de Common Data Service clásicos](/flow/workflow-processes)<br />
+

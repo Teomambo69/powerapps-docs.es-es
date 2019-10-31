@@ -27,7 +27,7 @@ El diseño de una aplicación controlada por modelos es un enfoque centrado en l
 El diseño de las aplicaciones controladas por modelos proporciona las siguientes ventajas:
 - Entornos de diseño enriquecidos no de código orientados a los componentes 
 - Crear aplicaciones complejas que responden adecuadamente con una IU similar en una variedad de dispositivos de escritorio a móvil
-- Capacidad de diseño similar a la que está disponible en la plataforma de Dynamics 365 Customer Engagement 
+- Amplia capacidad de diseño 
 - Su aplicación se puede distribuir como una solución
  
 ## <a name="the-approach-to-model-driven-app-making"></a>Enfoque de la creación de aplicaciones controladas por modelos

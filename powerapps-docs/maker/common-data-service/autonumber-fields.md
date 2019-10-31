@@ -33,6 +33,9 @@ Para crear un campo de numeración automática, siga los mismos pasos para [crea
 
 También puede activar funcionalidad de numeración automática en un campo de texto existente abriendo el campo y seleccionando **Numeración automática** del cuadro de lista desplegable **Tipo de datos**. De forma similar, la funcionalidad de numeración automática también puede ser deshabilitada en cualquier momento abriendo el campo y seleccionando otra opción en el cuadro de lista desplegable **Tipo de datos**.
 
+> [!NOTE]
+>Los valores de numeración automaica son preseleccionados por la base de datos al iniciar el registro. Si se inicia un registro pero se cancela, el número que se asignó no se usa. Si, durante este tiempo, otro registro se completa con el número secuencial siguiente, los huecos estarán presentes en la numeración automática de registros.
+
 ## <a name="autonumber-types"></a>Tipos de numeración automática
 
 Para facilitar la creación de los campos de numeración automática, hay algunos tipos predeterminados predefinidos de numeración automática para capturar los escenarios más comunes. 
@@ -61,7 +64,7 @@ El valor de inicialización de un campo de numeración automática es el número
 
 ## <a name="create-an-autonumber-field"></a>Crear un campo de numeración automática
   
-1.  Iniciar sesión en el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en el [PowerAppsportal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
   
 2.  En el panel izquierdo, expanda **Datos**, y seleccione **Entidades**.
   

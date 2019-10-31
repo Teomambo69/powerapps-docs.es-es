@@ -1,6 +1,6 @@
 ---
-title: " Voltear componente | Microsoft Docs"
-description: Implementar un componente Flip mediante angular JS
+title: ' Componente Flip| Microsoft Docs'
+description: Implementar el componente Flip mediante Angular JS
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,23 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340676"
 ---
-# <a name="implementing-flip-component"></a>Implementación del componente Flip
 
-En este ejemplo se muestra cómo usar bibliotecas de terceros para crear componentes en el marco de componentes de PowerApps.  El componente de ejemplo Flip se implementa en función de angular. js, angular-UI, angular-Animate, angular-saneado y bootstrap. Es posible que el código no revele las prácticas recomendadas para las bibliotecas de terceros mencionadas.
+# <a name="implementing-flip-component"></a>Implementar componente Flip
+
+En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear componentes en PowerApps component framework.  El componente de ejemplo Flip se implementa basándose en angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
 
 > [!div class="mx-imgBorder"]
-> (../media/angular-flip.png "Volteo angular") de ![angular]
+> ![Flip angular](../media/angular-flip.png "Flip angular")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -41,16 +36,16 @@ Aplicaciones controladas por modelos y aplicaciones de lienzo (versión prelimin
 </manifest>
 ```
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
-En este ejemplo se proporcionan ejemplos sobre cómo agregar dependencias para bibliotecas de terceros, que muestran cómo realizar el enlace de datos entre el marco de componentes de PowerApps, el modelo de componentes y el modelo de datos interno de terceros en la dirección bidireccional.
+Este ejemplo proporciona ejemplos de cómo agregar dependencias para bibliotecas de terceros, mostrando cómo realizar de enlace de datos entre PowerApps component framework, el modelo de componentes y el modelo de datos internos a terceros de forma bidireccional.
 
-El ejemplo de volteo de componente consta de una etiqueta y un botón. Al hacer clic en el botón, el texto de la etiqueta se alterna.
+El ejemplo de componente Flip consta de una etiqueta y un botón. Al hacer clic en el botón, cambia el texto de la etiqueta.
 
-- Cuando se carga el componente, la etiqueta muestra el texto basándose en el valor del atributo de enlace. El `context.parameters.[property_name].attributes` contiene los metadatos asociados.
-- En el caso de los campos TwoOptions, `context.parameters.[property_name].Options` incluirá la opción valor true y false. 
-- Al hacer clic en el botón voltear, la etiqueta actualizará el valor mediante el método **notifyOutputEvents** , se llamará al método [getOutputs](../reference/control/getoutputs.md) de forma asincrónica y pasará al marco de componentes de PowerApps. 
-- ClientAPI actualiza el valor del atributo de enlace y el valor actualizado fluye a la etiqueta del componente. También puede usar `ClientAPI` para actualizar un valor de atributo para desencadenar el método [updateView](../reference/control/updateview.md) del control. A continuación, el componente actualiza el modelo de terceros y la etiqueta se actualiza.
+- Cuando el componente se carga, la etiqueta muestra el texto basado en el valor del atributo de vinculación. Los `context.parameters.[property_name].attributes` contienen los metadatos asociados.
+- Para los campos TwoOptions, `context.parameters.[property_name].Options` incluirá la opción de valores Verdadero y Falso. 
+- Al hacer clic en el botón Flip, la etiqueta actualizará el valor mediante el método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) se llamará de forma asincrónica y pasará a PowerApps component framework,. 
+- ClientAPI actualzia el valor del atributo de vínculo y el valor actualizado pasa a la etiqueta de componente. También puede usar `ClientAPI` para actualizar un valor de atributo para desencadenar el método [updateView](../reference/control/updateview.md) del control. El componente entronces actualiza el modelo de terceros y la etiqueta se actualiza.
 
 
 ## <a name="code"></a>Código
@@ -360,6 +355,6 @@ fieldset[disabled].btn-primary:hover {
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)<br />
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br />
-[Información general sobre el marco de componentes de PowerApps](../overview.md)
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)<br />
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br />
+[Información general sobre PowerApps component framework](../overview.md)

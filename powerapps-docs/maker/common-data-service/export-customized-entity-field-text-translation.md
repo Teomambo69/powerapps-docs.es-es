@@ -1,10 +1,10 @@
 ---
-title: Exportar entidades personalizadas y texto de campo para su traducción con PowerApps | MicrosoftDocs
+title: Exportación de texto personalizado de entidades y campos para su traducción con PowerApps | MicrosoftDocs
 description: Obtenga información sobre cómo exportar entidades de exportación y texto de campo para su traducción
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -36,7 +36,7 @@ Después de crear texto de entidades y campos personalizado, quizás desee tradu
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada por la comunidad de XrmToolbox para Dynamics 365 Customer Engagement. Use Easy Translator para exportar e importar traducciones con información contextual. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada para PowerApps por la comunidad de XrmToolbox. Use Easy Translator para exportar e importar traducciones con información contextual. 
 
 > [!NOTE]
 > Las herramientas de la comunidad no se admiten en Microsoft. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).

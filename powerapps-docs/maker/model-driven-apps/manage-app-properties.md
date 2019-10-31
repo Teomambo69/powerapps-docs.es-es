@@ -1,9 +1,9 @@
 ---
-title: Administrar las propiedades de aplicaciones controladas por modelos en el diseñador de aplicaciones de PowerApps | MicrosoftDocs
+title: Administrar propiedades de aplicaciones basadas en modelos en el diseñador de aplicaciones de PowerApps | MicrosoftDocs
 description: Obtenga información sobre cómo administrar las propiedades de la aplicación
 keywords: ''
 ms.date: 02/05/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -42,8 +42,7 @@ Las propiedades de la aplicación definen detalles importantes acerca la aplicac
     |**Nombre**|Escriba un nombre único y significativo para la aplicación.|  
     |**Descripción**|Escriba una breve descripción de qué es la aplicación.|  
     |**Icono**|De forma predeterminada, la casilla **Usar aplicación predeterminada** está activada. Para seleccionar otro recurso web como icono para la aplicación, desactive la casilla y seleccione un icono de la lista desplegable. Este icono se muestra en la ventana de vista previa de la aplicación.|
-    |**Nombre único**| No puede cambiar el nombre único. Con el nombre único, puede consultar tablas para obtener datos de la base de datos.| 
-    |**Client<sup>1</sup>**|Define el tipo de cliente para el que se usará la aplicación.<br/>-  **Web:** este es el cliente de explorador web clásico de Dynamics 365 Customer Engagement.<br/>-  **Interfaz unificada:** este es el nuevo cliente del explorador web que tiene una interfaz similar para PC y dispositivos móviles.|
+    |**Nombre único**| No puede cambiar el nombre único. Con el nombre único, puede consultar tablas para obtener datos de la base de datos.|
     |**App URL Suffix<sup>1</sup>**| La dirección URL que elija mientras crea la aplicación se muestra aquí de forma predeterminada. Puede cambiar la dirección URL de la aplicación en el cuadro de diálogo **Administrar aplicación**. Tenga en cuenta que en este momento no se puede exportar o importar el sufijo de la dirección URL de la aplicación mediante una solución.|
     |**Elija una página de bienvenida para la aplicación**|Esta opción permite elegir entre los recursos web disponibles en su entorno. Las páginas de bienvenida que cree pueden contener información útil para los usuarios, como vínculos a los vídeos, instrucciones de actualización o información de introducción. Para obtener más información acerca de cómo crear un recurso web, por ejemplo, un archivo HTML que pueda usar como página de bienvenida, consulte [Crear y editar recursos web para extender la aplicación web](create-edit-web-resources.md).|
     |**Habilitar Mobile Offline**|Esta opción permite que la aplicación esté disponible sin conexión en móviles a los perfiles que se seleccionan con la lista desplegable **Perfiles de Mobile Offline**.|

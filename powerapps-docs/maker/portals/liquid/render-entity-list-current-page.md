@@ -5,20 +5,15 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974883"
+ms.reviewer: null
 ---
+
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Representar la lista de entidades asociada a la página actual
 
-Representa la lista de entidades asociada a la página actual como una tabla que se va a paginar. Usa [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [PowerApps Common Data Service etiquetas de entidad](portals-entity-tags.md), [páginas](liquid-objects.md#page)y parámetros de [solicitud](liquid-objects.md#request) , e incluye la selección de búsqueda y de varias vistas.  
+Represente la lista de entidades asociada a la página actual como una tabla paginada y ordenable. Usa los parámetros [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [PowerApps Common Data Service entity tags](portals-entity-tags.md), [page](liquid-objects.md#page) y [request](liquid-objects.md#request) e incluye búsqueda y selección de varias vistas.  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}
@@ -242,7 +237,7 @@ Representa la lista de entidades asociada a la página actual como una tabla que
 
 ### <a name="see-also"></a>Vea también
 
-[Creación de una plantilla de página personalizada mediante Liquid y una plantilla de página de plantilla Web](create-custom-template.md)  
+[Crear una plantilla de página personalizada con Liquid y una plantilla de página de plantilla web](create-custom-template.md)  
 [Crear una plantilla de página personalizada para representar una fuente RSS](render-rss-custom-page-template.md)  
-[Representar un encabezado de sitio web y una barra de navegación principal](render-site-header-primary-navigation.md)  
-[Representar hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)
+[Represente un encabezado y una barra de navegación principal de página web](render-site-header-primary-navigation.md)  
+[Represente hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)

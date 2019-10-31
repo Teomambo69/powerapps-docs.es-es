@@ -45,7 +45,7 @@ Para obtener acceso a la vista previa pública de ISV Studio, vaya al explorador
 
 ## <a name="pre-requisites"></a>Requisitos previos
 
-1. El ISV debe estar asociado con una organización asociada registrada en Microsoft [ISV] que tenga una o varias aplicaciones admitidas publicadas en [AppSource](https://appsource.microsoft.com/). Las aplicaciones compatibles incluyen aplicaciones Dynamics 365 for Customer Engagement y PowerApps.
+1. El ISV debe estar asociado con una organización asociada registrada en Microsoft [ISV] que tenga una o varias aplicaciones admitidas publicadas en [AppSource](https://appsource.microsoft.com/). Las aplicaciones compatibles incluyen PowerApps y aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service.
 
 2. El ISV debe tener una cuenta [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) y la cuenta se debe estar configurada como colaborador o propietario de la aplicación en el Cloud Partner Portal (CPP) para ese ISV determinado.
 

@@ -1,5 +1,5 @@
 ---
-title: " Incrementar componente | Microsoft Docs"
+title: ' Componente de incremento| Microsoft Docs'
 description: Implementar un componente de incremento
 ms.custom: ''
 manager: kvivek
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 0b26e8a7b12aef9801413b5290e361a99413918f
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340193"
 ---
+
 # <a name="implementing-increment-component"></a>Implementar componente de incremento
 
-Este componente de ejemplo muestra cómo enlazar datos con el marco de componentes de PowerApps y el control de errores. Este componente se representa como un cuadro de texto con un botón `Increment` en tiempo de ejecución. En el cuadro de texto se muestra el valor actual y se hace clic en el botón `Increment`. Siempre que se hace clic en el botón, el valor del cuadro de texto aumenta en 1. El valor de incremento se puede cambiar a cualquier número que desee.
+Este componente de ejemplo muestra cómo enlazar datos con PowerApps component framework y el control de errores. Este componente se representa como cuadro de texto con un botón `Increment` en el tiempo de ejecución. El cuadro de texto muestra el valor actual y es posible hacer clic en el botón `Increment`. Cada vez que haga clic en el botón, el valor del cuadro de texto aumenta en 1. El valor del incremento se puede cambiar a cualquier número que desee.
 
-Para implementar este componente, lo primero que necesita para definir el archivo de [manifiesto](../manifest-schema-reference/manifest.md) y, después, implementar la lógica personalizada en TypeScript.
+Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
 
 > [!div class="mx-imgBorder"]
-> Incrementar componente de(../media/increment-control.png "incremento") de ![componente]
+> ![Componente de incremento](../media/increment-control.png "Componente de incremento")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -64,7 +59,7 @@ export class TSIncrementControl
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -247,15 +242,15 @@ export class TSIncrementControl
 </root>
 ```
 
-Al hacer clic en el botón, el valor del cuadro de texto aumenta en 1. El valor actualizado pasará a la plataforma de componentes de PowerApps a través de `notifyOutputChanged` método.
+Cuando hace clic en el botón, el valor del cuadro de texto aumenta en 1. El valor actualizado fluirá a PowerApps component framework a través del método `notifyOutputChanged`.
 
 > [!NOTE]
-> Puede cambiar el valor de incremento al configurar el componente en el campo del formulario.
+> Puede cambiar el valor del incremento cuando configura el componente al campo del formulario.
 
-Edite el valor en el cuadro de texto y, si es un entero válido, actualiza el valor a la plataforma de componentes de PowerApps. Puede hacer clic en el botón `Increment` y actualizarlo continuamente. Si es un entero no válido, aparece un mensaje de error.
+Edite el valor en el cuadro de texto y, si es un entero válido, después actualiza el valor a PowerApps component framework. Puede hacer clic continuamente en el botón `Increment` y actualizarlo. Si es un entero no válido, aparece un mensaje de error.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

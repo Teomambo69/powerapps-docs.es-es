@@ -148,6 +148,6 @@ Puede crear expresiones de filtro más complejas consultando ejemplos de [Constr
 
 [Insertar un panel de Power BI en un panel personal basado en modelos de PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[Integrar Power BI Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[Usar Power BI con aplicaciones de Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [Importar, actualizar y exportar soluciones](../common-data-service/import-update-export-solutions.md)

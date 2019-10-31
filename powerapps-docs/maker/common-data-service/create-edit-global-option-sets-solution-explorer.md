@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -23,8 +24,8 @@ search.app:
 
 El explorador de soluciones proporciona una forma de crear y editar conjuntos de opciones globales para Common Data Service.
 
-El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
+- [Crear y editar conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)
 - [Crear un conjunto de opciones](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
@@ -81,7 +82,7 @@ Para eliminar un conjunto de opciones global, mientras ve la lista seleccione el
   
 ### <a name="see-also"></a>Vea también
  
-[Creación y edición de conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)<br />
+[Crear y editar conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)<br />
 [Crear un conjunto de opciones](custom-picklists.md)<br />
 [Crear y editar campos](create-edit-fields.md)<br />
 [Documentación para desarrolladores: Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

@@ -1,5 +1,5 @@
 ---
-title: Información general para desarrolladores de PowerApps de las aplicaciones basadas en modelos | Microsoft Docs
+title: Información general para desarrolladores de aplicaciones basadas en modelos en PowerApps | Microsoft Docs
 description: Descubra cómo los desarrolladores pueden agregar valor a las aplicaciones basadas en modelos; tutorial; introducción para desarrolladores de aplicaciones basadas en modelos en PowerApps
 services: ''
 author: JimDaly
@@ -22,11 +22,9 @@ search.app:
 
 # <a name="model-driven-apps-developer-guide"></a>Manual para desarrolladores de aplicaciones basadas en modelos
 
-PowerApps proporciona a usuarios, empresas, partners, fabricantes independientes de software (ISV) e integradores de sistemas (SI) una plataforma eficaz para crear aplicaciones de línea de negocio. La nueva adición a PowerApps en esta versión son las aplicaciones basadas en modelos creadas con el nuevo Common Data Service. Ahora Common Data Service contiene la funcionalidad básica de las aplicaciones. Con las aplicaciones basadas en modelos puede crear aplicaciones que usan las mismas capacidades de extensibilidad que esas aplicaciones.
+PowerApps proporciona a usuarios, empresas, partners, fabricantes independientes de software (ISV) e integradores de sistemas (SI) una plataforma eficaz para crear aplicaciones de línea de negocio. La nueva adición a PowerApps en esta versión son las aplicaciones basadas en modelos creadas con el nuevo Common Data Service. Common Data Service ahora contiene la funcionalidad básica de las aplicaciones. Con las aplicaciones basadas en modelos puede crear aplicaciones que usan las mismas capacidades de extensibilidad que esas aplicaciones.
 
-Las aplicaciones basadas en modelos son básicamente un enfoque centrado en los componentes sin código o con poco código para el desarrollo de aplicaciones. Los programadores aportan valor ampliando la aplicación. Antes de empezar a escribir código, empiece por [aprender a crear aplicaciones basadas en modelos](/powerapps/maker/model-driven-apps/model-driven-app-components) y qué opciones se pueden aplicar sin código. 
-
-Si ya tiene experiencia con aplicaciones de Dynamics 365 Customer Engagement, descubrirá que puede aplicar su experiencia en la creación de aplicaciones basadas en modelos. Están disponibles algunos diseñadores nuevos, pero los conceptos son los mismos.
+Las aplicaciones basadas en modelos son básicamente un enfoque centrado en los componentes sin código o con poco código para el desarrollo de aplicaciones. Los programadores aportan valor ampliando la aplicación. Antes de empezar a escribir código, empiece por [aprender a crear aplicaciones basadas en modelos](/powerapps/maker/model-driven-apps/model-driven-app-components) y qué opciones se pueden aplicar sin código.
 
 > [!NOTE]
 > Las aplicaciones basadas en modelos se conectan a Common Data Service. Para obtener información sobre cómo pueden aportar valor los desarrolladores en el nivel de servicio, vea [Información general para desarrolladores de aplicaciones sobre Common Data Service](../common-data-service/overview.md).

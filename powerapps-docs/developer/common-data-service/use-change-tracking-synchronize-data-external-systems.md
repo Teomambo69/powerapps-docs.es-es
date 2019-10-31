@@ -1,6 +1,6 @@
 ---
 title: Uso del seguimiento de cambios para sincronizar los datos con sistemas externos (Common Data Service) | Microsoft Docs
-description: La característica de seguimiento de Dynamics 365 Customer Engagement proporciona una forma de mantener los datos sincronizados de forma eficiente detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez.
+description: La característica de seguimiento proporciona una forma de mantener los datos sincronizados de forma eficiente detectando qué datos se han modificado desde que los datos se extrajeron inicialmente o se sincronizaron por última vez.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/12/2018
+ms.date: 8/21/2019
 ms.author: jowells
 search.audienceType:
   - developer
@@ -31,7 +31,7 @@ search.app:
 
 ## <a name="symptoms"></a>Síntomas
 
-Si un complemento hace solicitudes web externas e intenta usar `KeepAlive` en una conexión cerrada, el complemento no podrá en definitiva ejecutar la solicitud web. Sin embargo, si se registra el complemento:
+Si un complemento hace solicitudes web externas e intenta usar `KeepAlive` en una conexión cerrada, el complemento no podrá en definitiva ejecutar la solicitud web. Si se registra el complemento:
 
 - Los usuarios pueden experimentar de forma sincrónica:
 

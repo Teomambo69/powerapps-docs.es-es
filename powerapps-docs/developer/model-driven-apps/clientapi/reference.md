@@ -23,9 +23,9 @@ search.app:
 Esta sección contiene documentación de referencia para modelos de objetos de API de cliente que se pueden usar con las bibliotecas JavaScript.
 
 > [!IMPORTANT]
-> - Todos las API de script del cliente disponibles en esta documentación también se aplican a aplicaciones Dynamics 365 for Customer Engagement porque las aplicaciones Customer Engagement son en realidad aplicaciones basadas en modelos basadas en la plataforma Common Data Service.
 > - El modelo de objetos de API de cliente también contiene el espacio de nombres **Xrm.Internal** y no se pueden usar los objetos/métodos en este espacio de nombres. Estos objetos, así como partes del Document Object Model (DOM) HTML, está sujetos a modificaciones sin previo aviso. Recomendamos no usar estas funciones o cualquier script que dependa del DOM.
 > - También, al depurar puede encontrar métodos y objetos en el modelo de API de cliente sin documentar. Solo se admiten objetos y métodos documentados.
+> - Los API de script del cliente disponible en esta documentación también se aplica a Dynamics 365 Customer Engagement (on-premises).
 
 Los temas de esta sección se organizan del siguiente modo:
 - Comienza con la referencia de todos los eventos, colecciones y el objeto de contexto de ejecución.

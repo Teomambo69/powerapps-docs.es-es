@@ -1,8 +1,8 @@
 ---
-title: Usar funciones de API web (Common Data Service) | Microsoft Docs
+title: Usar funciones de la API web (Common Data Service)| Microsoft Docs
 description: Las funciones son operaciones reutilizables que se utilizan con una solicitud GET para recuperar datos de Common Data Service
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 09/05/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -197,7 +197,33 @@ Debe usar el nombre completo de la función e incluir los nombres de los paráme
 ```http
 GET [Organization URI]/api/data/v9.0/accounts?$select=name,accountnumber&$filter=Microsoft.Dynamics.CRM.LastXHours(PropertyName=@p1,PropertyValue=@p2)&@p1='modifiedon'&@p2=12  
 ```  
-  
+
+#### <a name="limitations-of-query-functions"></a>Limitaciones de las funciones de consulta
+
+Una de las limitaciones de funciones de consulta es que no puede usar el operador `not` para negar funciones de consulta.
+
+Por ejemplo, la consulta siguiente utilizando <xref href="Microsoft.Dynamics.CRM.EqualUserId?text=EqualUserId Function" /> producirá el error: `Not operator along with the Custom Named Condition operators is not allowed`.
+
+```http
+GET [Organization URI]/api/data/v9.1/systemusers?$select=fullname,systemuserid&$filter=not Microsoft.Dynamics.CRM.EqualUserId(PropertyName=@p1)&@p1='systemuserid'
+```
+Varias funciones de consulta tienen una función de consulta negada complementaria. Por ejemplo, puede usar la <xref href="Microsoft.Dynamics.CRM.NotEqualUserId?text=NotEqualUserId Function" />. La consulta siguiente devolverá los resultados esperados:
+
+```http
+GET [Organization URI]/api/data/v9.1/systemusers?$select=fullname,systemuserid&$filter=Microsoft.Dynamics.CRM.NotEqualUserId(PropertyName=@p1)&@p1='systemuserid'
+```
+
+Otras funciones de consulta se pueden negar de distintas formas. Por ejemplo, en lugar de intentar negar la <xref href="Microsoft.Dynamics.CRM.Last7Days?text=Last7Days Function" /> de este modo (el que producirá el mismo error que se indicó anteriormente):
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=not Microsoft.Dynamics.CRM.Last7Days(PropertyName=@p1)&@p1='createdon'
+```
+Utilice la <xref href="Microsoft.Dynamics.CRM.OlderThanXDays?text=OlderThanXDays Function" /> de este modo:
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Microsoft.Dynamics.CRM.OlderThanXDays(PropertyName=@p1,PropertyValue=@p2)&@p1='createdon'&@p2=7
+```
+
 ### <a name="see-also"></a>Vea también
 
 [Ejemplo de funciones y acciones de la API web (C#)](samples/functions-actions-csharp.md)<br />

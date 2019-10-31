@@ -26,7 +26,7 @@ search.app:
    
 # <a name="use-excel-and-word-templates"></a>Usar plantillas de Excel y Word
 
-Puede usar plantillas de diversas formas para acelerar su trabajo y mejorar la coherencia. Con las plantillas de Excel, es fácil crear y compartir sus análisis personalizados con otros usuarios en su organización. Puede usar plantillas de Word para crear documentos estandarizados automáticamente rellenos con datos de aplicaciones de Customer Engagement.
+Puede usar plantillas de diversas formas para acelerar su trabajo y mejorar la coherencia. Con las plantillas de Excel, es fácil crear y compartir sus análisis personalizados con otros usuarios en su organización. Puede usar plantillas de Word para crear documentos estandarizados automáticamente rellenos con datos de aplicaciones de Common Data Service.
 
 ## <a name="enable-and-work-with-excel-and-word-templates"></a>Habilitar y trabajar con plantillas de Excel y Word
 
@@ -51,7 +51,7 @@ Puede usar plantillas de diversas formas para acelerar su trabajo y mejorar la c
    > [!div class="mx-imgBorder"] 
    > ![](media/document-templates.png "Plantillas de documento") 
 
-Para obtener información sobre el uso de plantillas, vea la siguiente documentación de Customer Engagement:
+Para obtener información sobre el uso de plantillas, vea la siguiente documentación:
 
 - Plantillas de Word: [Usar plantillas de Word para crear documentos estandarizados](https://docs.microsoft.com/dynamics365/customer-engagement/admin/using-word-templates-dynamics-365)
 - Plantillas de Excel: [Analizar y compartir los datos con plantillas de Excel](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates)

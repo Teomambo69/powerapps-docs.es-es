@@ -1,6 +1,6 @@
 ---
-title: " Componente de API Web | Microsoft Docs"
-description: Implementación de un componente de API Web
+title: ' Componente de API web| Microsoft Docs'
+description: Implementar componente de API web
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,23 +8,17 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 4e893466a5a7404926942b4e297cdc4ecb1affef
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340170"
 ---
-# <a name="implementing-web-api-component"></a>Implementación de un componente de API Web
+# <a name="implementing-web-api-component"></a>Implementar componente de API web
 
-El componente de la API Web está diseñado para realizar acciones de creación, recuperación, actualización y eliminación. El componente representa cuatro botones, en los que se puede hacer clic para invocar diferentes acciones de la API Web. El resultado de la llamada a la API Web se inserta en un elemento HTML div en la parte inferior del componente de código.  
+El componente de API web está diseñado para realizar crear, recuperar, actualizar y eliminar acciones. El componente genera cuatro botones, en los que se puede hacer clic para invocar distintas acciones de la API web. El resultado de la llamada de la API web se inserta en un elemento div HTML en la parte inferior del componente de código.  
 
 > [!div class="mx-imgBorder"]
-> (../media/web-api-control.png "Componente de") API Web del ![componente de API Web]
+> ![Componente de la API web](../media/web-api-control.png "Componente de la API web")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos
+Aplicaciones basadas en modelos
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -50,10 +44,10 @@ Aplicaciones controladas por modelos
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSWebAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Name of entity to use for example Web API calls performed by this control
   private static _entityName: string = "account";
@@ -70,14 +64,14 @@ export class TSWebAPI
   private static _currencyAttributeNameFriendlyName: string = "annual revenue";
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // references to button elements rendered by example custom control
+  // References to button elements rendered by example custom control
   private _createEntity1Button: HTMLButtonElement;
   private _createEntity2Button: HTMLButtonElement;
   private _createEntity3Button: HTMLButtonElement;
   private _deleteRecordButton: HTMLButtonElement;
   private _fetchXmlRefreshButton: HTMLButtonElement;
   private _oDataRefreshButton: HTMLButtonElement;
-  // references to div elements rendered by the example custom control
+  // References to div elements rendered by the example custom control
   private _odataStatusContainerDiv: HTMLDivElement;
   private _resultContainerDiv: HTMLDivElement;
   /**
@@ -290,7 +284,7 @@ export class TSWebAPI
     var thisRef = this;
     // Invoke the Web API to creat the new record
     this._context.webAPI.createRecord(TSWebAPI._entityName, data).then(
-      function(response: ComponentFramework.Entityreference) {
+      function(response: ComponentFramework.EntityReference) {
         // Callback method for successful creation of new record
         // Get the ID of the new record created
         let id: string = response.id;
@@ -330,14 +324,14 @@ export class TSWebAPI
     lookUpPromise.then(
       // Callback method - invoked after user has selected an item from the lookup dialog
       // Data parameter is the item selected in the lookup dialog
-      (data: ComponentFramework.Entityreference[]) => {
+      (data: ComponentFramework.EntityReference[]) => {
         if (data && data[0]) {
           // Get the ID and entityType of the record selected by the lookup
           let id: string = data[0].id;
           let entityType: string = data[0].entityType!;
           // Invoke the deleteRecord method of the WebAPI to delete the selected record
           this._context.webAPI.deleteRecord(entityType, id).then(
-            function(response: ComponentFramework.Entityreference) {
+            function(response: ComponentFramework.EntityReference) {
               // Record was deleted successfully
               let responseId: string = response.id;
               let responseEntityType: string = response.entityType!;
@@ -614,9 +608,9 @@ export class TSWebAPI
 }
 ```
 
-De forma predeterminada, en el ejemplo, el componente está configurado para realizar las acciones de creación, recuperación, actualización en la entidad `Account` y establecer los campos nombre y ingresos en los ejemplos de la API Web.
+De forma predeterminada, en el ejemplo, el componente está configurado para realizar acciones de creación, recuperación, actualización en la entidad `Account` y establecer los campos de nombre e ingresos en los ejemplos de la API web.
 
-Para cambiar la configuración predeterminada a cualquier entidad o campo, actualice los siguientes valores de configuración como se muestra  
+Para cambiar la configuración predeterminada a cualquier entidad o campo, actualice los valores de configuración a continuación como se muestra  
 
  ```TypeScript
   private static _entityName:string = "account";  
@@ -625,20 +619,20 @@ Para cambiar la configuración predeterminada a cualquier entidad o campo, actua
   private static _currencyAttributeName: string = "revenue";  
  ```
 
-El método `createRecord` representa tres botones, lo que permite crear un registro de cuenta con el campo ingresos establecido en valores diferentes (100, 200, 300).
+El método `createRecord` genera tres botones, lo que le permite crear un registro de cuenta con el campo de ingresos establecido en diferentes valores (100, 200, 300).
 
-Al hacer clic en uno de los botones crear, el controlador de eventos `onClick` del botón comprueba el valor del botón en el que se hizo clic y usa la acción de la API Web para crear un registro de cuenta con el campo ingresos establecido en el valor del botón. El campo Nombre del registro de cuenta se establecerá en `Web API code component (Sample)` con una `int` aleatoria anexada al final de la cadena. El método de devolución de llamada de la llamada API Web inserta el resultado de la llamada a la API Web (éxito o error) en el elemento div de resultados del control personalizado.  
+Cuando hace clic en uno de los botones Crear, el controlador de eventos `onClick` del botón comprueba el valor del botón en el que se ha hecho clic y usa la acción web API para crear un registro de cuenta con el campo de ingresos establecido en el valor del botón. El campo de nombre del registro de cuenta se establecerá como `Web API code component (Sample)` con un `int` aleatorio anexado al final de la cadena. El método de devolución de llamada de la llamada de la API web inserta el resultado de la llamada de la API web (correcta o error) en el div de resultado del control personalizado.  
  
-El método `deleteRecord` representa un botón que abre un cuadro de diálogo de búsqueda cuando se hace clic en él. El cuadro de diálogo de búsqueda le permite seleccionar el registro de cuenta que desea eliminar. Una vez que se selecciona un registro de cuenta en el cuadro de diálogo de búsqueda, se pasa al `deleteRecord` para eliminar el registro de la base de datos. El método de devolución de llamada de la llamada API Web inserta el resultado de la llamada a la API Web (éxito o error) en el elemento div de resultados del control personalizado.  
+El método `deleteRecord` genera un botón que abre un cuadro de diálogo de búsqueda cuando se hace clic en él. El diálogo de búsqueda permite seleccionar el registro de cuenta que desea eliminar. Una vez que se selecciona un registro de cuenta del diálogo de búsqueda, se pasa al `deleteRecord` para eliminar el registro de la base de datos. El método de devolución de llamada de la llamada de la API web inserta el resultado de la llamada de la API web (correcta o error) en el div de resultado del control personalizado.  
 
-El método FetchXML `retrieveMultiple` representa un botón en el componente de código. `onClick` de este botón, se genera FetchXML y se pasa a la función `retrieveMultiple` para calcular el valor medio del campo ingresos para todos los registros de cuentas. El método de devolución de llamada de la llamada API Web inserta el resultado de la llamada a la API Web (éxito o error) en el elemento div de resultados del control personalizado.  
+El método `retrieveMultiple` de FetchXML genera un botón en el componente de código. `onClick` en este botón, FetchXML se genera y se pasa a la función `retrieveMultiple` para calcular el valor medio del campo de ingresos para todos los registros de cuenta. El método de devolución de llamada de la llamada de la API web inserta el resultado de la llamada de la API web (correcta o error) en el div de resultado del control personalizado.  
 
-El método `retrieveMultiple` de OData representa un botón en el componente de código. `onClick` de este botón, se genera la cadena de OData y se pasa a la función `retrieveMultiple` para recuperar todos los registros de cuenta con un campo de nombre similar a "API Web de componentes de código (ejemplo)", que es true para todos los registros de cuenta creados por este ejemplo de componente de código.  
+El método `retrieveMultiple` de OData genera un botón en el componente de código. `onClick` en este botón, la cadena de OData se genera y se pasa a la función `retrieveMultiple` para recuperar todos los registros de cuenta con un campo de nombre que es como ‘API web del componente de código (ejemplo)’, que es True para todos los registros de cuenta creados por este ejemplo de componente de código.  
 
-Cuando se recuperan los registros correctamente, el componente de código tiene lógica para contar cuántos registros de cuentas tienen el campo ingresos establecido en 100, 200 o 300 y muestran este recuento en un div de contenedor de estado de oData en el componente de código.  El método de devolución de llamada de la llamada API Web inserta el resultado de la llamada a la API Web (éxito o error) en el elemento div de resultados del control personalizado.  
+Tras la recuperación correcta de los registros, el componente de código tiene lógica para contar cuántos registros de cuenta tiene el campo de ingresos establecido en 100, 200 o 300, y mostrar este recuento en un div de contenedor de estado de odata en el componente de código.  El método de devolución de llamada de la llamada de la API web inserta el resultado de la llamada de la API web (correcta o error) en el div de resultado del control personalizado.  
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

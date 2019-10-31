@@ -1,26 +1,23 @@
 ---
 title: Detalles del portal aprovisionado | MicrosoftDocs
-description: Sepa qué detalles se capturan cuando se aprovisiona el portal y lo que puede usar.
+description: Conozca qué detalles se capturan cuando se aprovisiona el portal y lo que puede usar.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 782c0ffb9cf5f932102984f4c3b1efca47c5a7c7
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975803"
+ms.reviewer: null
 ---
+
 # <a name="portal-details"></a>Detalles del portal
 
-Después de crear un portal, se iniciará el aprovisionamiento y se le notificará sobre el estado mediante notificaciones. Una vez aprovisionado el portal, se le redirigirá a PowerApps Portals Studio. Puede usar PowerApps portales Studio para crear y personalizar el sitio Web.
+[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Si necesita ver más detalles sobre el portal aprovisionado, como el tipo de portal, el identificador de la aplicación, el propietario del portal, etc., puede abrir el [centro de administración](admin-overview.md) de portales de PowerApps y navegar hasta la pestaña **detalles del portal** . El usuario que ha creado el portal es el propietario del portal.
+Después de crear un portal, comenzará a aprovisionarse y se le notificará el estado con notificaciones. Una vez aprovisionado el portal, se le redirigirá al diseñador del portal. Puede usar el diseñador de portales para crear y personalizar la página web.
+
+Si necesita ver más detalles sobre el portal aprovisionado como por ejemplo, tipo del portal, identificador de la aplicación, etc., puede abrir [Centro de administración de los portales de PowerApps](admin-overview.md) y navegar a la pestaña **Detalles de portal**.
 
 > [!div class=mx-imgBorder]
-> ![](../media/portal-details-admin.png "Detalles del") portal detalles del portal
+> ![Detalles del portal](../media/portal-details-admin.png "Detalles del portal")

@@ -1,6 +1,6 @@
 ---
-title: 'Iniciar un proyecto de la API web de Dynamics 365 for Customer Engagement en Visual Studio (C#) (Common Data Service)| MicrosoftDocs'
-description: Crear un nuevo proyecto en Visual Studio para compilar una aplicación de consola que utilice la API web de Common Data Service
+title: 'Iniciar un proyecto de la API web de Common Data Service en Visual Studio (C#) (Common Data Service)| MicrosoftDocs'
+description: Crear un nuevo proyecto en Visual Studio para crear una aplicación de consola que use la API web de Common Data Service
 ms.custom: null
 ms.date: 04/22/2019
 ms.reviewer: null
@@ -8,8 +8,6 @@ ms.service: powerapps
 ms.suite: null
 ms.tgt_pltfrm: null
 ms.topic: get-started-article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: F96B384D-EF70-490D-BE3D-2E3883278B99
 caps.latest.revision: 14
 author: JimDaly
@@ -20,9 +18,9 @@ search.audienceType:
 search.app:
   - D365CE
 ---
-# <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Iniciar un proyecto de API web de Common Data Service en Visual Studio (C#)
+# <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Iniciar un proyecto de la API web de Common Data Service en Visual Studio (C#)
 
-En este tema se muestra cómo crear un proyecto nuevo en Visual Studio 2017 que compile una aplicación de consola para usar la API web de Common Data Service. Ilustra las referencias comunes y los recursos de proyecto que la mayoría de aplicaciones, incluidos los ejemplos de SDK C#, usan para implementar soluciones basadas en la API web.  
+En este tema se muestra cómo crear un proyecto nuevo en Visual Studio 2017 que crea una aplicación de consola que usa la API web de Common Data Service. Ilustra las referencias comunes y los recursos de proyecto que la mayoría de aplicaciones, incluidos los ejemplos de SDK C#, usan para implementar soluciones basadas en la API web.  
   
 <a name="bkmk_prerequisites"></a>   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -30,12 +28,12 @@ En este tema se muestra cómo crear un proyecto nuevo en Visual Studio 2017 que 
   
 - Visual Studio 2017 instalado en el equipo de desarrollo. Cualquier edición, incluido [Visual Studio Express](https://www.visualstudio.com/products/visual-studio-express-vs.aspx), debería bastar para trabajar con la API web de Common Data Service.
   
-- Un cliente NuGet debe instalarse: la utilidad de línea de comandos o la extensión de Visual Studio. Para obtener más información, consulte [Instalar NuGet](https://docs.nuget.org/consume/installing-nuget).  
+- Un cliente de NuGet debe instalarse: la utilidad de línea de comandos o la extensión de Visual Studio. Para obtener más información, vea el tema [Instalar NuGet](https://docs.nuget.org/consume/installing-nuget).  
   
 <a name="bkmk_createProject"></a>   
 
 ## <a name="create-a-project"></a>Crear un proyecto  
-En el siguiente procedimiento se muestra cómo crear un proyecto de aplicación de consola en el lenguaje C# o VB que utiliza Microsoft .NET Framework.
+En el siguiente procedimiento se muestra cómo crear un proyecto de aplicación de consola en C# que usa Microsoft .NET Framework.
   
 <a name="bkmk_newProject"></a> 
 
@@ -51,7 +49,7 @@ En el siguiente procedimiento se muestra cómo crear un proyecto de aplicación 
   
    ![Un nuevo diálogo de proyecto de aplicación de consola en Common Data Service](media/new-project.PNG "Un nuevo diálogo de proyecto de aplicación de consola en Common Data Service")  
   
-5. En los cuadros de texto que están cerca de la parte inferior del formulario, escriba el nombre y la ubicación del proyecto y, a continuación, seleccione Aceptar. (Para este tema, se usó el nombre de la solución “StartWebAPI-CS”). Se generarán los archivos de solución iniciales y la solución se cargará en Visual Studio.  
+5. En los cuadros de texto que están cerca de la parte inferior del formulario, escriba el nombre y la ubicación del proyecto y, a continuación, seleccione Aceptar. (Para este tema, se usó el nombre de la solución “StartWebAPI-CS”.) Se generarán los archivos de solución iniciales y la solución se cargará en Visual Studio.  
   
 6. En el menú **Proyecto**, abra el formulario de propiedades del proyecto y compruebe que el marco de destino está establecido en **.NET Framework 4.6.2**.  
   
@@ -75,7 +73,7 @@ install-package System.Net.Http
   
 1.  En **Explorador de soluciones**, abra **Program.cs** para editar.  
   
-2.  En la parte superior del archivo, agregue las siguientes instrucciones `using`, que hacen referencia a espacios de nombre de referencia de uso general en soluciones basadas en la API web de Dynamics 365 for Customer Engagement.  
+2.  En la parte superior del archivo, agregue las siguientes instrucciones `using`, que hacen referencia a espacios de nombre de referencia de uso general en soluciones basadas en la API web de Common Data Service.  
   
     ```csharp
     using Newtonsoft.Json;  
@@ -136,5 +134,5 @@ Esta sección explica cómo agregar un conjunto básico de valores y de instrucc
 ### <a name="see-also"></a>Vea también
 
  [Introducción a la API web de (C#)](get-started-dynamics-365-web-api-csharp.md)   
- [Utilizar la biblioteca de código auxiliar (C#) de la API web de Dynamics 365 for Customer Engagement](use-microsoft-dynamics-365-web-api-helper-library-csharp.md)   
+ [Use la biblioteca de código auxiliar de la API web (C#)](use-microsoft-dynamics-365-web-api-helper-library-csharp.md)   
  [Realizar operaciones mediante la API web](perform-operations-web-api.md)

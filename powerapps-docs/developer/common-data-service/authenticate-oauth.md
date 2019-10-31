@@ -95,14 +95,11 @@ Estas bibliotecas están disponibles para varias plataformas como se muestra en 
 
 ## <a name="adal-net-client-library-versions"></a>Versiones de biblioteca de cliente de ADAL .NET
 
-Hay dos bibliotecas que admiten los clientes de .NET. La biblioteca de ADAL .NET v3 es la más reciente pero no reemplaza la biblioteca de ADAL .NET v2.
+Common Data Service admite autenticación de aplicaciones con el extremo de la API web mediante el protocolo de OAuth 2.0. Azure Active Directory Authentication Library (ADAL) es la interfaz de API recomendada al protocolo para sus aplicaciones .NET personalizadas. ADAL v2.x es compatible desde hace tiempo con nuestras API de SDK y de hecho muchos ejemplos de código de SDK usan esa versión de la biblioteca. Cuando ADAL v3 se publicó, se introdujo un cambio importante porque las credenciales de usuario podrían no pasar ya en llamadas ADAL API para mejorar la seguridad de la aplicación.
 
-> [!IMPORTANT]
-> Si usa aplicaciones marco Xrm.Tooling for .NET, debe usar la biblioteca de ADAL .NET v2.
+Para sus aplicaciones .NET personalizadas, use ADAL v2 o mayor para autenticación de la aplicación con el extremo de la API web. Cuando usa API de XrmTooling encontrados en el paquete [Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/) NuGet, la versión correcta de la biblioteca de ADAL se importará automáticamente en el proyecto de Visual Studio. Tenga en cuenta que la transición de ADAL v2 a ADAL v3 en las API XrmTooling se produjo en el paquete [v9.1.0.13](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/9.1.0.13) NuGet. Consulte las notas de la versión del paquete para información detallada.  
 
-Una de las diferencias significativas las versiones de cliente de .NET es que la biblioteca v2 ofrece soporte para pasar credenciales de usuario. La biblioteca v3 requiere que la información de credenciales de usuario se capture interactivamente usando un elemento emergente del explorador.
-
-Si no usa Xrm.Tooling puede usar las bibliotecas cliente ADAL .NET v2 o v3 con la API web. Para ver un ejemplo de cómo usar la biblioteca cliente v3 consulte: [Ejemplo de ADAL v3 WhoAmI](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/ADALV3WhoAmI/ADALV3WhoAmI).
+Para ver un ejemplo de código usando la biblioteca ADAL v3 consulte: [Ejemplo de WhoAmI de ADAL v3](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/ADALV3WhoAmI/ADALV3WhoAmI).
 
 ## <a name="use-the-accesstoken-with-your-requests"></a>Use el AccessToken con sus solicitudes
 
@@ -110,7 +107,7 @@ El objetivo de usar las bibliotecas de ADAL es obtener un símbolo que pueda inc
 
 ### <a name="simple-example"></a>Ejemplo sencillo:
 
-A continuación se presenta la cantidad mínima de código necesaria para ejecutar una sola solicitud de web Api, pero no es el método recomendado:
+A continuación se presenta la cantidad mínima de código necesaria para ejecutar una sola solicitud de web Api, pero no es el método recomendado. Esto es un ejemplo de ADAL v2 debido al uso de las credenciales de cliente:
 
 ```csharp
 class SampleProgram
@@ -269,6 +266,23 @@ class SampleProgram
 
 Aunque este ejemplo use <xref:System.Net.Http.HttpClient>.<xref:System.Net.Http.HttpClient.GetAsync*> en lugar del <xref:System.Net.Http.HttpClient.SendAsync*> reemplazado, solicitará todos los métodos de <xref:System.Net.Http.HttpClient> que envían una solicitud.
 
+### <a name="discover-the-authority-at-run-time"></a>Detectar la autoridad en tiempo de ejecución
+
+La URL de la autoridad de autenticación y la URL del recurso pueden determinarse de forma dinámica en tiempo de ejecución mediante el siguiente código de ADAL. Este es el método recomendado para usar en comparación con la URL ("https://login.microsoftonline.com/common") de autoridad conocida que se mostraba anteriormente en un fragmento de código.  
+  
+```csharp    
+AuthenticationParameters ap = AuthenticationParameters.CreateFromResourceUrlAsync(  
+                        new Uri("https://mydomain.crm.dynamics.com/api/data/")).Result;  
+  
+String authorityUrl = ap.Authority;  
+String resourceUrl  = ap.Resource;  
+```  
+  
+Para la API web, otra forma de obtener la URL de autoridad es enviar cualquier solicitud de mensaje al servicio web sin especifiar ningún token de acceso. Esto se conoce como *desafío del portador*. La respuesta se puede analizar para obtener la URL de autoridad.  
+  
+```csharp  
+httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "");  
+```  
 
 ## <a name="connect-as-an-app"></a>Conectar como aplicación
 

@@ -1,5 +1,5 @@
 ---
-title: " Componente de tabla | Microsoft Docs"
+title: ' Componente de tabla| Microsoft Docs'
 description: Implementar un componente de tabla
 ms.custom: ''
 manager: kvivek
@@ -8,23 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340101"
 ---
-# <a name="implementing-table-component"></a>Implementar el componente de tabla
 
-Este componente de ejemplo representa una tabla con dos columnas. La columna de la izquierda muestra el nombre del método o la propiedad de la API, y la columna de la derecha muestra el valor devuelto por la API. Puede abrir este componente en el tipo de dispositivos diferente o modificar la configuración de idioma o de usuario para ver los valores que se ajustan correctamente en la tabla.
+# <a name="implementing-table-component"></a>Implementar componente de tabla
+
+Este componente de ejemplo genera una tabla con dos columnas. La columna de la izquierda muestra el nombre del método o la propiedad API, y la columna derecha muestra el valor devuelto por la API. Puede abrir este componente en el tipo diferente de dispositivos o modificar el idioma o la configuración de usuario para ver cómo los valores se ajustan correctamente en la tabla.
 
 > [!div class="mx-imgBorder"]
-> ![](../media/table-control.png "Componente de tabla") de componentes de tabla
+> ![Componente de tabla](../media/table-control.png "Componente de tabla")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos
+Aplicaciones basadas en modelos
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -48,19 +43,19 @@ export class TSTableControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag to track if control is in full screen mode or not
   private _isFullScreen: boolean;
-  // reference to HTMLTableElement rendered by control
+  // Reference to HTMLTableElement rendered by control
   private _tableElement: HTMLTableElement;
-  // reference to 'Set Full Screen' HTMLButtonElement
+  // Reference to 'Set Full Screen' HTMLButtonElement
   private _setFullScreenButton: HTMLButtonElement;
-  // reference to 'Lookup Objects' HTMLButtonElement
+  // Reference to 'Lookup Objects' HTMLButtonElement
   private _lookupObjectsButton: HTMLButtonElement;
-  // reference to 'Lookup Result Div' HTMLDivElement
+  // Reference to 'Lookup Result Div' HTMLDivElement
   // Used to display information about the item selected by the lookup
   private _lookupObjectsResultDiv: HTMLDivElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
@@ -431,18 +426,18 @@ export class TSTableControl
 }
 ```
 
-En este ejemplo se proporcionan ejemplos sobre cómo usar los métodos de la `IClient, IUserSettings, IUtility, IFormatting interfaces`.
+Este ejemplo proporciona ejemplos de cómo usar métodos de las `IClient, IUserSettings, IUtility, IFormatting interfaces`.
 
-Este componente también presenta dos funciones de utilidad, `setFullScreen` y `lookupObjects`. Estas funciones se invocan haciendo clic en el botón representado como parte del componente de código. El botón `setFullScreen` alterna el componente dentro y fuera del modo de pantalla completa. El botón `lookupObjects` abre un cuadro de diálogo de búsqueda y, a continuación, inserta el registro seleccionado como texto en div.
+Este componente también muestra dos funciones de utilidad, `setFullScreen` y `lookupObjects`. Estas funciones son invocadas haciendo clic en el botón generado como parte del componente de código. El botón `setFullScreen` activa y desactiva el modo de pantalla completa del componente. El botón `lookupObjects` abre un diálogo de búsqueda y, a continuación inserta el registro seleccionado como texto en div.
 
-En este ejemplo, se presenta un botón HTML y se adjunta un controlador de eventos `onClick` de JavaScript `onLookupObjectsButtonClick` al botón. Al hacer clic en este botón, se invoca `context.utils.lookupObjects()` método y se pasa como parámetro una matriz de nombres de entidad. 
+En este ejemplo, generamos un botón HTML y adjuntamos un controlador de eventos `onClick` de JavaScript `onLookupObjectsButtonClick` al botón. Al hacer clic en este botón, invocamos el método `context.utils.lookupObjects()` y pasamos como parámetro una matriz de nombres de entidad. 
 
-Este método devuelve un objeto Promise de JavaScript, que representa la finalización o el error de la llamada al cuadro de diálogo de búsqueda. Si el compromiso se resuelve correctamente, el objeto de búsqueda que el usuario seleccionó se pasa como parámetro al método de devolución de llamada y se puede hacer referencia a él como data.id, data.name, Data. entityType.
+Este método devuelve un objeto de Promesa de JavaScript, representando la realización o el error de la llamada al diálogo de búsqueda. Si la promesa se resuelve correctamente, el objeto de búsqueda que el usuario seleccionó se pasa como parámetro al método de devolución de llamada y se pueden hacer referencia a él como data.id, data.name, data.entityType.
 
-El método de devolución de llamada inserta esta información como HTML en un div representado en el componente de código para mostrar los resultados seleccionados al usuario. Si se rechaza el compromiso, se invoca el método de devolución de llamada de error en el que el componente puede controlar el escenario de error en consecuencia.
+El método de devolución de llamada inserta esta información como HTML en un div generado en el componente de código para mostrar los resultados seleccionados al usuario. Si se rechaza la promesa, se invoca el método de devolución de llamada de error donde el componente puede administrar el escenario de error en consecuencia.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

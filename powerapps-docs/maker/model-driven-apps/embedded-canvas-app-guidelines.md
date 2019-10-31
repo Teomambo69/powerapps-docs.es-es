@@ -1,7 +1,7 @@
 ---
 title: Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas | MicrosoftDocs
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -43,6 +43,13 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
     - En una futura actualización se proporcionará soporte para incrustar una aplicación de lienzo existente en un formulario basado en modelos mediante el identificador de la aplicación.
 - Cuando vea un formulario controlado por modelos con una aplicación incrustada de lienzo, si recibe un mensaje de error del estilo “no hemos encontrado la aplicación” asegúrese de que la aplicación incrustada de lienzo esté en la misma solución que el formulario controlado por modelos.
 - Cuando se ve un formulario controlado por modelos con una aplicación incrustada de lienzo, si recibe un mensaje de error como “parece que no tiene acceso a la aplicación. Solicite al propietario que la comparta con usted” asegúrese de que el autor ha compartido la aplicación incrustada de lienzo con usted. Más información: [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md).
+- Ya no es posible agregar una aplicación de lienzo en el control de subcuadrícula.
+    - En el lanzamiento de vista previa, los creadores pudieron agregar una aplicación de lienzo en un control de subcuadrícula. Con la incrustación de aplicaciones de lienzo en formularios basados en modelo ahora disponible de manera generalizada, la adición de una aplicación de lienzo incrustada en un formulario basado en modelo se simplifica al campo. 
+    - Esto hace que sea más fácil para los creadores ya que no tienen que decidir de antemano si pasan el registro (formulario principal) como el contexto de datos o una lista de registros relacionados con el registro actual (formulario principal). 
+    - Los creadores siempre empiezan con un campo y pueden tener acceso tanto al registro actual (formulario principal) como a una lista de registros relacionados con el registro actual (formulario principal).
+    - Para obtener acceso a la lista de registros relacionados en la aplicación de lienzo, los creadores pueden usar el conector de Common Data Service y la función [Filtro](../canvas-apps/functions/function-filter-lookup.md) con la funcionalidad [Mejorar la experiencia de orígenes de datos y vistas de Common Data Service](https://powerapps.microsoft.com/blog/improved-data-source-selection-and-common-data-service-views/) habilitada en la aplicación de lienzo.  
+    Por ejemplo, para tener acceso a la vista *Contactos activos* de la entidad *Contactos*, los creadores pueden usar: *Filter(Contacts, 'Contacts (Views)'.'Active Contacts')*.
+    - Las aplicaciones de lienzo existentes que usen el control de subcuadrícula continuarán funcionando. Sin embargo, se recomienda migrar estas aplicaciones para usar un campo en su lugar. Más información: [Migrar aplicaciones de lienzo insertadas en formularios basados en modelos que usan una lista de registros relacionados con el registro actual (formulario principal)](embedded-canvas-app-migrate-from-preview.md#migrating-embedded-canvas-apps-on-model-driven-forms-that-use-a-list-of-records-related-to-the-current-main-form-record).
 
 ## <a name="enable-an-embedded-canvas-app"></a>Habilitar una aplicación incrustada de lienzo
 1. Seleccione el campo que está personalizado para mostrarse como una aplicación incrustada de lienzo.
@@ -58,6 +65,12 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
 
 ## <a name="known-issues-and-limitations-with-embedded-canvas-apps"></a>Problemas y limitaciones conocidos con aplicaciones incrustadas de lienzo
 - El control personalizado de aplicación de lienzo solo es compatible para usarlo con el tipo de cliente **Web** . Actualmente, no se admiten los tipos de cliente **Teléfono** y **Tableta** .
+- El control ModelDrivenFormIntegration no proporciona un valor para campos de una entidad relacionada. 
+  - Por ejemplo, cuando el control ModelDrivenFormIntegration está conectado a la entidad Cuentas, el uso de *ModelDrivenFormIntegration.Item.’Primary Contact’.’Full Name’* no devolverá un valor. 
+  - Para obtener acceso a campos de una entidad relacionada, los creadores puede usar cualquiera de las expresiones enumeradas aquí:
+    - *LookUp(Accounts, Account = GUID(First(ModelDrivenFormIntegration.Data).ItemId)).'Primary Contact'.'Full Name'*  
+      - *ItemId* está vacío en el momento de creación pero tendrá un valor en tiempo de ejecución.
+    - *LookUp(Accounts, Account = ModelDrivenFormIntegration.Item.Account).'Primary Contact'.'Full Name'* (Esta expresión es más fácil de leer, pero la anterior tendrá un comportamiento ligeramente mejor.)
 - No puede usar el privilegio **Aplicación de lienzo** en un rol de seguridad para conceder acceso a usuarios de la aplicación a una aplicación incrustada o independiente de lienzo. Para obtener más información sobre compartir una aplicación incrustada de lienzo, consulte: [Compartir una aplicación incrustada de lienzo](share-embedded-canvas-app.md).
 - Si responde escribiendo los mismos datos que se muestran en el formulario controlado por modelos de host, el formulario seguirá mostrando datos antiguos hasta que se actualice. Una forma simple de hacer esto es usar el método [RefreshForm](embedded-canvas-app-actions.md#refreshformshowprompt).
 

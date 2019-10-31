@@ -21,78 +21,68 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="web-api--data-operations-samples-client-side-javascript"></a>Ejemplo de operaciones de datos de la API web (JavaScript del lado del cliente)
+# <a name="web-api-data-operations-samples-client-side-javascript"></a>Ejemplo de operaciones de datos de la API web (JavaScript del lado del cliente)
 
 
-
-<!-- TODO: > [!NOTE]
-> ![This page is under construction. Check back soon!](../../media/under_construction.png "Coming soon") [!INCLUDE[cc-under-construction](../../includes/cc-under-construction.md)]
-
-With the availability of the new [Xrm.WebApi](../clientapi/reference/xrm-webapi.md) client API methods, we are working on updating the client-side JavaScript samples to use the new client API methods. Check back soon. -->
-
-Si está usando una versión anterior de Common Data Service Customer Engagement, consulte [Ejemplos de API Web (JavaScript del lado cliente)](https://msdn.microsoft.com/library/mt770370.aspx)
-
-<!--This topic provides common understanding about Web API samples using client-side JavaScript. While each sample focuses on a different aspect of Common Data Service Web API, they all follow similar process and structure described in this topic.  
+En este tema se proporciona un entendimiento común sobre los ejemplos de la API web mediante JavaScript del lado del cliente. Si bien cada ejemplo se centra en un aspecto distinto de la API web de Common Data Service, todos ellos siguen un proceso y una estructura similares descritos en este tema.  
 
 <a name="bkmk_listOfSamples"></a>   
-## Web API Samples using client-side JavaScript  
- The following samples use the patterns described here:  
+## <a name="web-api-samples-using-client-side-javascript"></a>Ejemplos de la API web mediante JavaScript del lado del cliente  
+ Los siguientes ejemplos utilizan los patrones descritos aquí:  
   
-|Sample|Sample Group|Description|  
+|Muestra|Grupo de ejemplo|Descripción|  
 |------------|------------------|-----------------|  
-|[Web API Basic Operations Sample (Client-side JavaScript)](samples/basic-operations-client-side-javascript.md)|[Web API Basic Operations Sample](web-api-basic-operations-sample.md)|Demonstrates how to create, retrieve, update, delete, associate and disassociate Common Data Service entity records.|  
-|[Web API Query Data Sample (Client-side JavaScript)](samples/query-data-client-side-javascript.md)|[Web API Query Data Sample](web-api-query-data-sample.md)|Demonstrates how to use OData v4 query syntax and functions as well as Common Data Service query functions. Includes demonstration of working with pre-defined queries and using FetchXML to perform  queries.|  
-|[Web API Conditional Operations Sample (Client-side JavaScript)](samples/conditional-operations-client-side-javascript.md)|[Web API Conditional Operations Sample](web-api-conditional-operations-sample.md)|Demonstrates how to perform conditional operations. The behavior of these operations depends on criteria you specify.|  
-|[Web API Functions and Actions Sample (Client-side JavaScript)](samples/functions-actions-client-side-javascript.md)|[Web API Functions and Actions Sample](web-api-functions-actions-sample.md)|Demonstrates how to use bound and unbound functions and actions, including custom actions.|  
+|[Ejemplo de operaciones básicas de la API web (JavaScript del lado del cliente)](samples/basic-operations-client-side-javascript.md)|[Ejemplo de operaciones básicas de la API web](web-api-basic-operations-sample.md)|Demuestra cómo crear, recuperar, actualizar, eliminar, asocie y anular la asociación de registros de entidad de Common Data Service.|  
+|[Ejemplo de datos de consulta de la API web (JavaScript del lado del cliente)](samples/query-data-client-side-javascript.md)|[Ejemplo de datos de consulta de la API web](web-api-query-data-sample.md)|Demuestra cómo usar sintaxis y funciones de consulta de OData v4 así como funciones de consulta de Common Data Service. Incluye demostración de trabajo con consultas predefinidas y uso de FetchXML para realizar consultas.|  
+|[Ejemplo de operaciones condicionales de la API web (JavaScript del lado del cliente)](samples/conditional-operations-client-side-javascript.md)|[Ejemplo de operaciones condicionales de la API web](web-api-conditional-operations-sample.md)|Demuestra cómo realizar operaciones condicionales. El comportamiento de estas operaciones depende de los criterios que especifique.|  
+|[Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente)](samples/functions-actions-client-side-javascript.md)|[Ejemplo de funciones y acciones de la API web](web-api-functions-actions-sample.md)|Demuestra cómo usar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas.|  
   
 <a name="bkmk_howToDownload"></a>   
-## How to download the source code for the sample.  
- The source code for each sample is available on [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?f%5b0%5d.type=user&f%5b0%5d.value=microsoft%20dynamics%20crm%20sdk%20documentation%20team). The link to download each sample is included in the individual page for that sample.  
+## <a name="how-to-download-the-source-code-for-the-sample"></a>Cómo descargar el código de origen del ejemplo.  
+ El código de origen para cada ejemplo está disponible en [Galería de código de MSDN](https://code.msdn.microsoft.com/site/search?f%5b0%5d.type=user&f%5b0%5d.value=microsoft%20dynamics%20crm%20sdk%20documentation%20team). El vínculo para descargar cada ejemplo se incluye en la página individual de ese ejemplo.  
   
- After you download the sample, extract the compressed file. Find the [!INCLUDE[pn_visual_studio_2015](../../includes/pn-visual-studio-2015.md)] solution for each sample within the C# folder because the project is an empty [!INCLUDE[pn_ASP.NET_short](../../includes/pn-asp-net-short.md)] web application project. A Common Data Service solution is also provided in the download that you can import and run.  
+ Después de descargar el ejemplo, extraiga el archivo comprimido. Busque la solución Microsoft Visual Studio 2015 para cada ejemplo dentro de la carpeta C# porque el proyecto es un proyecto de aplicación web ASP.NET vacío. Una solución Common Data Service también se proporciona en la descarga que puede importar y ejecutar.  
   
 > [!NOTE]
->  Neither Visual Studio or [!INCLUDE[pn_ASP.NET_short](../../includes/pn-asp-net-short.md)] is required to develop  client-side JavaScript for Common Data Service, however the MSDN Code Gallery site requires files be included in a Visual Studio as a container.  However, Visual Studio does provide a good experience for writing JavaScript.  
+>  No se requiere Visual Studio ni ASP.NET para desarrollar JavaScript del lado del cliente para Common Data Service, aunque el sitio de la Galería de códigos de MSDN requiere que se incluyan archivos en Visual Studio como contenedor.  Sin embargo, Visual Studio proporciona una buena experiencia para escribir JavaScript.  
   
 <a name="bkmk_HowToImport"></a>   
-## How to import the Common Data Service solution that contains the sample.  
- Within each project you will find a Common Data Service managed solution file. The name of this file will depend on the sample's project name, but the file name will end with `_managed.zip`.  
+## <a name="how-to-import-the-common-data-service-solution-that-contains-the-sample"></a>Cómo importar la solución de Common Data Service que contiene el ejemplo.  
+ Dentro de cada proyecto encontrará un archivo de solución administrada de Common Data Service. El nombre de este archivo dependerá del nombre del proyecto de ejemplo, pero el nombre de archivo terminará con `_managed.zip`.  
   
- To import the Common Data Service solution to your Common Data Service server, do the following:  
+ Para importar la solución de Common Data Service en el servidor de Common Data Service, siga estos pasos:  
   
-1.  Extract the contents of the downloaded zip file and locate the Common Data Service solution file, which will also be a zip file. For example, if you downloaded the `Basic Operations` sample, look for the Common Data Service solution zip file with the name `WebAPIBasicOperations\WebAPIBasicOperations_1_0_0_0_managed.zip`.  
+1.  Extraiga el contenido del archivo zip descargado y busque el archivo de la solución de Common Data Service, que también será un archivo zip. Por ejemplo, si ha descargado el ejemplo `Basic Operations`, busque el archivo zip de la solución de Common Data Service con el nombre `WebAPIBasicOperations\WebAPIBasicOperations_1_0_0_0_managed.zip`.  
   
-2.  In the Common Data Service UI, go to **Settings > Solutions**. This page lists all solutions on your Common Data Service server. After you finished importing this solution, the solution name for that sample will appear in this list (e.g.: **Web API Basics Operations**).  
+2.  En la UI de Common Data Service, vaya a **Configuración > Soluciones**. Esta página enumera todas las soluciones del servidor de Common Data Service. Después de acabar de importar esta solución, el nombre de la solución para ese ejemplo aparecerá en esta lista (por ejemplo, **Web API Basics Operations**).  
   
-3.  Click **Import** and follow the instructions on the import dialog to complete this action.  
+3.  Haga clic en **Importar** y siga las instrucciones del diálogo de importación para terminar esta acción.  
   
 <a name="bkmk_howToRunSample"></a>   
-## How to run the sample to see the script in action  
- The sample program runs as a web resource within Common Data Service. The imported solution provides a configuration page that gives you an option to keep or delete sample data and a button to start the sample program.  For the `Basic Operations` sample, this interface looks like the following.  
+## <a name="how-to-run-the-sample-to-see-the-script-in-action"></a>Cómo ejecutar el ejemplo para ver el script en acción  
+ El programa de ejemplo se ejecuta como recurso web en Common Data Service. La solución importada proporciona una página de configuración que le da una opción de mantener o de eliminar datos de ejemplo y un botón para iniciar el programa de ejemplo.
   
- ![Common Data Service Web API Sample Configuration page](../media/crm-web-api-js-sample-configuration.png "Common Data Service Web API Sample Configuration page")  
+ Para ejecutar el ejemplo, lleva a cabo lo siguiente:  
   
- To run the sample, do the following:  
+1.  En la página **Todas las soluciones** en Common Data Service, haga clic en el nombre de la solución (por ejemplo, vínculo **Web API Basics Operations**). Se abrirán las propiedades de la solución en una nueva ventana.  
   
-1.  From the **All Solutions** page in Common Data Service, click the solution name (e.g.: **Web API Basics Operations** link). This will open the solution's properties in a new window.  
+2.  En el menú de navegación izquierdo, haga clic en **Configuración**.  
   
-2.  From the left navigation menu, click **Configuration**.  
-  
-3.  Click **Start Sample** button to execute the sample code.  
+3.  Haga clic en el botón **Iniciar ejemplo** para ejecutar el código de ejemplo.  
   
 <a name="bkmk_commonElements"></a>   
-## Common elements found in each sample  
- The following list highlights some common elements found in each of these samples.  
+## <a name="common-elements-found-in-each-sample"></a>Elementos comunes que se encuentran en cada ejemplo  
+ En la siguiente lista se resaltan algunos elementos comunes que se encuentran en cada uno de estos ejemplos.  
   
--   The `Sdk.startSample` function is called when a user clicks the **Start Sample** button from the  HTML page. The `Sdk.startSample` function initializes global variables and kicks off the first operation in the chain.  
+-   Se llama a la función `Sdk.startSample` cuando un usuario hace clic en el botón **Iniciar ejemplo** desde la página HTML. La función `Sdk.startSample` inicializa variables globales y pone en marcha la primera operación de la cadena.  
   
--   Program output and error messages are sent to the browser’s debugger console. To see these output, open the console window first before running the sample.  Press F12 to access the developer tools, including the console window, in the [!INCLUDE[pn_Windows_Internet_Explorer](../../includes/pn-windows-internet-explorer.md)] and [!INCLUDE[pn_microsoft_edge](../../includes/pn-microsoft-edge.md)] browsers.  
+-   La salida del programa y mensajes de error se envían a la consola de depurador del explorador. Para ver esta salida, abra la ventana de la consola primero antes de ejecutar el ejemplo.  Pulse F12 para tener acceso a las herramientas de desarrollo, incluida la ventana de la consola, en exploradores Internet Explorer y Microsoft Edge.  
   
--   These samples use the browser native [ES6-Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx) implementation for modern browsers that support it. For [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)], this sample uses the [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) because [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)] is the only browser supported by Common Data Service which does not have native support for this feature.  
+-   Estos ejemplos usan la implementación nativa [ES6-Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx) del explorador para exploradores modernos que la admiten. Para Internet Explorer, este ejemplo usar [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) porque Internet Explorer es el único explorador admitido por Common Data Service que no tiene compatibilidad nativa para esta característica.  
   
-     Promises are not required. Similar interactions can be performed using callback functions. For more information, see [Create a re-usable function using promises](get-started-web-api-client-side-javascript.md#bkmk_createPromiseFunction).  
+     No se requieren promesas. Pueden realizarse interacciones similares con funciones de devolución de llamada.  
   
--   The `Sdk.request` function handles the request based on the information passed in as parameters. Depending on the need of each sample, the parameters passed in may be different. See the source code of that sample for more details.  
+-   La función `Sdk.request` controla la solicitud en función de la información pasada en como parámetros. En función de la necesidad de cada ejemplo, los parámetros pasados pueden ser diferentes. Consulte el código de origen del ejemplo para obtener más detalles.  
   
     ```javascript  
     /**  
@@ -153,7 +143,7 @@ Si está usando una versión anterior de Common Data Service Customer Engagement
     };  
     ```  
   
-     The `Sdk.request` function returns a promise. When the request wrapped by the promise is completed, the promise is either resolved or rejected. If it is resolved, the function in the following `then` method will be called. If it is rejected, the function in the following `catch` method will be called. If the function within the `then` method itself returns a promise, the chain of operations within consecutive `then` methods can continue. Returning a promise allows us to chain these sample operations together in a way that is preferred by many developers to traditional callback functions. For more information about promise, see [JavaScript Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx).-->  
+     La función `Sdk.request` devuelve una promesa. Cuando la solicitud envuelta por la promesa está completa, se resuelve o se rechaza la promesa. Si se resuelve, se llamará a la función en el método `then` siguiente. Si se rechaza, se llamará a la función en el método `catch` siguiente. Si la función en el método `then` propiamente dicho devuelve una promesa, la cadena de operaciones en los métodos `then` consecutivos puede continuar. Devolver una promesa nos permite encadenar estas operaciones de ejemplo juntas de forma que sea preferida por muchos programadores a las funciones de devolución de llamada tradicionales. Para obtener más información sobre promesa, consulte [Promesa de JavaScript](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx).  
   
 ### <a name="see-also"></a>Vea también
 

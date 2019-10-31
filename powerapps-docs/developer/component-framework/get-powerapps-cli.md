@@ -1,7 +1,7 @@
 ---
-title: Obtener herramientas para el marco de componentes de PowerApps | Microsoft Docs
-description: Obtenga el Microsoft PowerApps CLI para crear, depurar e implementar componentes de código mediante el marco de componentes de PowerApps.
-keywords: Marco de componentes de PowerApps, componentes de código, marco de componentes
+title: Obtener útiles para PowerApps Component Framework | Microsoft Docs
+description: 'Consiga Microsoft PowerApps CLI para crear, depurar e implementar componentes de código con PowerApps Component Framework.'
+keywords: 'PowerApps component framework, componentes de código, Component Framework'
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,65 +11,59 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: 496b7d443775da075dd8da52ac4b0a754121bf28
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "72340032"
 ---
-# <a name="get-tooling-for-powerapps-component-framework"></a>Obtener herramientas para el marco de componentes de PowerApps
 
-Use la **CLI de Microsoft PowerApps** (interfaz de línea de comandos) para crear, depurar e implementar componentes de código mediante el marco de componentes de PowerApps. La CLI de PowerApps permite a los desarrolladores crear componentes de código rápidamente. En el futuro, se ampliará para incluir la compatibilidad con las experiencias de desarrollo y administración del ciclo de vida de las aplicaciones (ALM) adicionales. 
+# <a name="get-tooling-for-powerapps-component-framework"></a>Obtener útiles para de PowerApps Component Framework
 
-## <a name="what-is-microsoft-powerapps-cli"></a>Qué es Microsoft PowerApps CLI 
+Use **Microsoft PowerApps CLI** (interfaz de la línea de comandos) para crear, depurar e implementar componentes de código utilizando PowerApps Component Framework. PowerApps CLI permite a los desarrolladores crear rápidamente componentes de código y en el futuro se expandirá para incluir compatibilidad para experiencias adicionales de desarrollo y administración del ciclo de vida de la aplicación (ALM). 
 
-Microsoft PowerApps CLI es una sencilla interfaz de línea de comandos para desarrolladores que permite a los desarrolladores y a los fabricantes de aplicaciones crear componentes de código. Las herramientas de la CLI de PowerApps son el primer paso para una historia de ALM completa en la que los desarrolladores de la empresa y los ISV pueden crear, compilar, depurar y publicar sus extensiones y personalizaciones de forma rápida y eficaz.  
+## <a name="what-is-microsoft-powerapps-cli"></a>¿Qué es Microsoft PowerApps CLI? 
 
-## <a name="install-microsoft-powerapps-cli"></a>Instalación de la CLI de Microsoft PowerApps
+Microsoft PowerApps CLI es una interfaz de línea de comandos para desarrolladores básica y completa que ayuda a los desarrolladores y creadores de aplicaciones a crear componentes de código. Los útiles de PowerApps CLI son el primer paso hacia un sistema de ALM completo donde los desarrolladores de la empresa y los ISV pueden crear, compilar, depurar y publicar las extensiones y personalizaciones de forma rápida y eficiente.  
 
-Para obtener Microsoft PowerApps CLI, haga lo siguiente:
+## <a name="install-microsoft-powerapps-cli"></a>Instalar Microsoft PowerApps CLI
 
-1. Instale [NPM](https://www.npmjs.com/get-npm) (viene con node. js) o [node. js](https://nodejs.org/en/) (viene con NPM). Se recomienda LTS (compatibilidad a largo plazo) versión 10.15.3 LTS porque parece ser el más estable.
+Para obtener Microsoft PowerApps CLI, realice lo siguiente:
 
-1. Instale [.NET Framework 4.6.2 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net462). 
+1. Instale [Npm](https://www.npmjs.com/get-npm)(se incluye con Node.js) o instale [Node.js](https://nodejs.org/en/) (se incluye con npm). Se recomienda la versión LTS (soporte de largo plazo) 10.15.3 LTS, pues parece ser la más estable.
 
-1. Si aún no tiene Visual Studio 2017 o una versión posterior, siga una de estas opciones:
-   - Opción 1: instalar [Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2017) o posterior.
-   - Opción 2: instalar el [SDK de .net Core 2,2](https://dotnet.microsoft.com/download/dotnet-core/2.2) y, a continuación, instalar [Visual Studio Code](https://code.visualstudio.com/Download).
+1. Instale [Paquete de desarrollador .NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/net462). 
 
-1. Instale [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
-1. Para aprovechar todas las funcionalidades más recientes, actualice las herramientas de la CLI de PowerApps a la versión más reciente con este comando:
+1. Si aún no tiene Visual Studio 2017 o posterior, siga una de las opciones a continuación:
+   - Opción 1: Instale [Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2017) o posterior.
+   - Opción 2: Instale [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) e instale [Visual Studio Code](https://code.visualstudio.com/Download).
+
+1. Instalar [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI).
+1. Para aprovechar todas las últimas capacidades, actualice los útiles PowerApps CLI a la última versión usando el comando.
 
     ```CLI
     pac install latest
     ```
 
 > [!NOTE]
-> - Para implementar el componente de código mediante la CLI de PowerApps, debe tener un entorno de Common Data Service con privilegios de administrador del sistema o de personalización del sistema.
-> - Actualmente, la CLI de PowerApps solo es compatible con Windows 10.
+> - Para implementar el componente de código utilizando PowerApps CLI, deberá tener un entorno de Common Data Service con privilegios de administrador del sistema o personalizador del sistema.
+> - Actualmente, PowerApps CLI se admite actualmente solo en Windows 10.
 
-## <a name="microsoft-powerapps-cli-telemetry"></a>Telemetría de la CLI Microsoft PowerApps
+## <a name="microsoft-powerapps-cli-telemetry"></a>Telemetría de Microsoft PowerApps CLI
 
-El equipo de características está agregando la telemetría para comprender qué características o funcionalidades suelen usar los desarrolladores en la herramienta de la CLI de PowerApps. Los datos agregados nos permiten proporcionar la mejor experiencia a los clientes centrándose en lo que es esencial.
+La característica de equipo está agregando la telemetría para comprender qué características o capacidades usan con más frecuencia los desarrolladores en la herramienta PowerApps CLI. Los datos agregados nos permiten proporcionar la mejor experiencia a los clientes centrándonos en lo verdaderamente esencial.
 
 > [!NOTE]
-> Para deshabilitar la colección de telemetría, ejecute el comando `pac telemetry disable`. Para volver a convertir la telemetría, use el `pac telemetry enable` de comandos.
+> Para deshabilitar la colección de telemetría, ejecute el comando `pac telemetry disable`. Para volver a activar la telemetría, use el comando `pac telemetry enable`.
 
+## <a name="uninstall-microsoft-powerapps-cli"></a>Desinstalar Microsoft PowerApps CLI
 
-## <a name="uninstall-microsoft-powerapps-cli"></a>Desinstalación de la CLI de Microsoft PowerApps
+Para desinstalar los útiles PowerApps CLI, ejecute MSI desde [aquí](https://aka.ms/PowerAppsCLI). 
 
-Para desinstalar las herramientas de la CLI de PowerApps, ejecute el archivo MSI desde [aquí](https://aka.ms/PowerAppsCLI). 
+Si usted es participante de Versión preliminar privada y tiene una versión anterior de CLI, siga estos pasos:
 
-Si es un participante de vista previa privada y tiene una versión anterior de la CLI, siga estos pasos:
-
-1. Para averiguar dónde está instalada la CLI de PowerApps, abra un símbolo del sistema y escriba `where pac`.
-1. Elimine la carpeta PowerAppsCLI.
+1. Para averiguar dónde está instalado PowerApps CLI, abra un símbolo del sistema y escriba `where pac`.
+1. Elimine la carpeta de PowerAppsCLI.
 1. Abra la herramienta de variables de entorno ejecutando el comando `rundll32 sysdm.cpl,EditEnvironmentVariables` en el símbolo del sistema.
-1. Haga doble clic en `Path` bajo la sección `User variable for...`.
-1. Seleccione la fila que contiene la ruta de acceso PowerAppsCLI y seleccione el botón **eliminar** en el lado derecho.
-1. Seleccione **Aceptar** dos veces.
+1. Haga doble clic en `Path` en la sección `User variable for...`
+1. Seleccione la fila que contiene la ruta de PowerAppsCLI y haga clic en el botón Eliminar en el lado derecho.
+1. Haga clic en **Aceptar** dos veces.
 
 ### <a name="see-also"></a>Vea también
 
-[Implementar componentes con TypeScript](implementing-controls-using-typescript.md)<br/>
+[Implementación de componentes en TypeScript](implementing-controls-using-typescript.md)<br/>

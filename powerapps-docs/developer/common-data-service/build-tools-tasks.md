@@ -1,6 +1,6 @@
 ---
-title: Tareas de herramientas de compilación| Microsoft Docs
-description: 'Las herramientas de compilación de PowerApps son una colección de tareas de compilación de Azure DevOps específicas de PowerApps que eliminan la necesidad de descargar manualmente las herramientas y los scripts para administrar el ciclo de vida de la aplicación de PowerApps. En este tema se describen las tareas que están disponibles. '
+title: Tareas de Build tools| Microsoft Docs
+description: 'PowerApps build tools son una colección de tareas de compilación de Azure DevOps específicas de PowerApps que eliminan la necesidad de descargar manualmente herramientas y scripts para administrar el ciclo de vida de la aplicación de PowerApps. En este tema se describen las tareas que están disponibles. '
 ms.custom: ''
 ms.date: 07/21/2019
 ms.reviewer: Dean-Haas
@@ -16,11 +16,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="build-tools-tasks"></a>Tareas de herramientas de compilación
+# <a name="build-tools-tasks"></a>Tareas de build tools
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Hay disponibles varios tipos de tareas de compilación que forman parte de las herramientas de compilación de PowerApps para ayudar a automatizar el ciclo de vida de las aplicaciones mediante Azure DevOps.
+Hay disponibles varios tipos de tareas de compilación que forman parte de PowerApps build tools para ayudar a automatizar el ciclo de vida de las aplicaciones mediante Azure DevOps.
   
 ## <a name="helper-task"></a>Tarea de ayuda
 
@@ -32,7 +32,7 @@ La tarea del comprobador de PowerApps ejecuta una comprobación de análisis est
 
 | **Parámetros** | **Descripción** |
 | --- | --- |
-| Servicio del comprobador de PowerApps  |   Seleccione el punto de conexión de servicio para el comprobador de PowerApps. El punto de conexión de servicio se define en **Conexiones del servicio** en **Configuración de proyecto**.  **NOTA:** El tipo de conexión de servicio que se debe usar para esta tarea específica solo es “Comprobador de PowerApps”, que es una conexión de entidades de servicio. Encontrará más información sobre cómo configurar entidades de servicio para poder usar la tarea [aquí](https://aka.ms/buildtoolsconnection).  |
+| Servicio del comprobador de PowerApps  |   Seleccione el extremo de servicio para el comprobador de PowerApps. El punto de conexión de servicio se define en **Conexiones del servicio** en **Configuración de proyecto**.  **NOTA:** El tipo de conexión de servicio que se debe usar para esta tarea específica solo es 'Comprobador de PowerApps', que es una conexión de entidades de servicio. Encontrará más información sobre cómo configurar entidades de servicio para poder usar la tarea [aquí](https://aka.ms/buildtoolsconnection).  |
 | Ubicación del archivo a analizar  | Especifique si desea hacer referencia a un archivo local o hacer referencia a un archivo desde una dirección URL de Sas. 
 | Archivos locales para analizar/Uri de Sas para archivo a analizar |  Especifique la ruta de acceso y el nombre de los archivos zip para analizar.   Pueden emplearse comodines. Por ejemplo, **\*.zip para todos los archivos zip en todas las subcarpetas. Puede elegir especificar los archivos directamente o hacer referencia a un archivo desde un uri de Sas.   |
 |  Conjunto de reglas |   Especifique qué conjunto de reglas desea aplicar. Están disponibles los dos conjuntos de reglas siguientes:  **Comprobador de soluciones:** Es el mismo conjunto de reglas que se ejecuta desde el [Portal de creadores](https://make.powerapps.com/).    **AppSource:** Es el conjunto de reglas extendido que se usa para certificar una aplicación para poder publicarla en [AppSource](https://appsource.microsoft.com/en-US/).   |
@@ -54,7 +54,8 @@ A continuación se indica cómo generar la aplicación Azure Active Directory (A
 3.  Esto le pide que confíe en los módulos de PSGallery. Seleccione **A (Sí a todo)**.
 1. Copie y pegue lo siguiente en el mensaje de PowerShell:
 
-``` function New-PowerAppsCheckerAzureADApplication
+```powershell 
+function New-PowerAppsCheckerAzureADApplication
 {
     [CmdletBinding()]
     param(
@@ -251,5 +252,5 @@ La tarea Copiar entorno copia un entorno a un entorno de destino. Dos tipos de c
 
 | **Parámetros** | **Descripción** |
 |---------|-----------|
-| Dirección URL del entorno de origen de PowerApps  | El punto de conexión de servicio del entorno del que desea copiar.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |
-| Dirección URL del entorno de destino de PowerApps  | El punto de conexión de servicio del entorno al que desea copiar.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |
+| Dirección URL de entorno de origen de PowerApps  | El punto de conexión de servicio del entorno del que desea copiar.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |
+| Dirección URL de entorno de destino de PowerApps  | El punto de conexión de servicio del entorno al que desea copiar.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |

@@ -1,27 +1,22 @@
 ---
-title: Representar un encabezado de sitio web y una barra de navegación principal en un portal | MicrosoftDocs
-description: Instrucciones y código de ejemplo para representar un encabezado de sitio web y una barra de navegación principal en un portal.
+title: Representar un encabezado de página web y una barra de navegación principal en un portal | MicrosoftDocs
+description: Instrucciones y código de ejemplo para representar la cabecera de una página web y la barra de navegación principal en un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 3cfd5ced4da80cae70b4f51d81e30b0d909a81c3
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974446"
+ms.reviewer: null
 ---
-# <a name="render-a-website-header-and-primary-navigation-bar"></a>Representar un encabezado de sitio web y una barra de navegación principal
 
-Representar un encabezado de sitio web y una barra de navegación principal mediante la configuración de portales, fragmentos de código, weblinks y sitemarkers. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [almacenar el contenido de origen mediante plantillas web](store-content-web-templates.md)  
+# <a name="render-a-website-header-and-primary-navigation-bar"></a>Represente un encabezado y una barra de navegación principal de página web
+
+Represente un encabezado y una barra de navegación principal de página web utilizando valores del portal, fragmentos, weblinks y marcadores de sitio. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)][Almacenar contenido de origen con plantillas web](store-content-web-templates.md).  
 
 > [!Note]
-> El ejemplo de este tema solo funcionará correctamente si el almacenamiento en caché del encabezado de solicitudes cruzadas está deshabilitado para la aplicación. Está habilitada de forma predeterminada en la versión 7.0.0019 y versiones posteriores. Puede deshabilitarse mediante la creación de una configuración de sitio denominada encabezado/OutputCache/habilitada y el establecimiento de su valor en false.
+> El ejemplo en este tema funcionará correctamente únicamente si el la memoria caché de encabezado de solicitud cruzada está deshabilitada en la aplicación. Está habilitada de forma predeterminada en la versión 7.0.0019 y posteriores. Se pueden deshabilitar creando una configuración del sitio llamada Header/OutputCache/Enabled, y establecer su valor en false.
 
 
 ```xml
@@ -195,8 +190,8 @@ Representar un encabezado de sitio web y una barra de navegación principal medi
 
 ### <a name="see-also"></a>Vea también
 
-[Creación de una plantilla de página personalizada mediante Liquid y una plantilla de página de plantilla Web](create-custom-template.md)  
+[Crear una plantilla de página personalizada con Liquid y una plantilla de página de plantilla web](create-custom-template.md)  
 [Crear una plantilla de página personalizada para representar una fuente RSS](render-rss-custom-page-template.md)  
 [Representar la lista de entidades asociada a la página actual](render-entity-list-current-page.md)  
-[Representar hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
+[Represente hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
 

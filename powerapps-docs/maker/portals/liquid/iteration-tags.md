@@ -1,32 +1,27 @@
 ---
 title: Usar etiquetas de iteración para un portal | MicrosoftDocs
-description: Más información sobre las etiquetas de iteración disponibles en el portal
+description: Obtenga información sobre las etiquetas de iteración disponibles en el portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976516"
+ms.reviewer: null
 ---
+
 # <a name="iteration-tags"></a>Etiquetas de iteración
 
-Las etiquetas de iteración se usan para ejecutar o representar un bloque de código de forma repetida.
+Las etiquetas de iteración se usan para ejecutar/representar un bloque de código repetidamente.
 
 ## <a name="for"></a>para
 
-Ejecuta un bloque de código de forma repetida. Normalmente se usa para iterar por los elementos de una matriz o un diccionario.
+Ejecuta un bloque de código repetidamente. Suele utilizarse para iterar los elementos en una matriz o un diccionario.
 
-En el bloque de etiquetas for, el [objeto forloop](liquid-objects.md#forloop) está disponible.  
+En el bloque de etiquetas, el [objeto forloop](liquid-objects.md#forloop) está disponible.  
 
-**Codifica**
+**Código**
 
 ```
 {% for child_page in page.children %}
@@ -36,7 +31,7 @@ En el bloque de etiquetas for, el [objeto forloop](liquid-objects.md#forloop) es
 {% endfor %}
 ```
 
-**Genere**
+**Salida**
 
 ```
 <a href=/parent/child1/>Child 1</a>
@@ -48,13 +43,13 @@ En el bloque de etiquetas for, el [objeto forloop](liquid-objects.md#forloop) es
 
 ### <a name="parameters"></a>Parámetros
 
-Estos parámetros de para se pueden usar solos o en combinación.
+Estos parámetros de for pueden utilizarse solos o en combinación.
 
-**ilimitado**
+**limit**
 
 Sale del bucle después de un número determinado de elementos.
 
-**Codifica**
+**Código**
 
 ```
 {% for child_page in page.children limit:2 %}
@@ -64,7 +59,7 @@ Sale del bucle después de un número determinado de elementos.
 {% endfor %}
 ```
 
-**Genere**
+**Salida**
 
 ```
 <a href=/parent/child1/>Child 1</a>
@@ -72,11 +67,11 @@ Sale del bucle después de un número determinado de elementos.
 <a href=/parent/child2/>Child 2</a>
 ```
 
-**posición**
+**offset**
 
-Inicia el bucle en el índice especificado.
+Inicia el bucle en un índice determinado.
 
-**Codifica**
+**Código**
 
 ```
 {% for child_page in page.children offset:1 %}
@@ -86,7 +81,7 @@ Inicia el bucle en el índice especificado.
 {% endfor %}
 ```
 
-**Genere**
+**Salida**
 
 ```
 <a href=/parent/child2/>Child 2</a>
@@ -94,11 +89,11 @@ Inicia el bucle en el índice especificado.
 <a href=/parent/child3/>Child 3</a>
 ```
 
-**variedad**
+**range**
 
-Define un intervalo de números que se van a recorrer.
+Define un intervalo de números para recorrer en bucle.
 
-**Codifica**
+**Código**
 
 ```
 {% assign n = 4 %}
@@ -116,7 +111,7 @@ Define un intervalo de números que se van a recorrer.
 {% endfor }}
 ```
 
-**Genere**
+**Salida**
 
 ```
 2 3 4
@@ -124,11 +119,11 @@ Define un intervalo de números que se van a recorrer.
 10 11 12 14
 ```
 
-**invertido**
+**reversed**
 
-Recorre en iteración el bucle en orden inverso, empezando por el último elemento.
+Itera a través del bucle en orden inverso, empezando por el último elemento.
 
-**Codifica**
+**Código**
 
 ```
 {% for child_page in page.children reversed %}
@@ -138,7 +133,7 @@ Recorre en iteración el bucle en orden inverso, empezando por el último elemen
 {% endfor %}
 ```
 
-**Genere**
+**Salida**
 
 ```
 <a href=/parent/child3/>Child 3</a>
@@ -148,11 +143,11 @@ Recorre en iteración el bucle en orden inverso, empezando por el último elemen
 <a href=/parent/child1/>Child 1</a>
 ```
 
-## <a name="cycle"></a>interrumpa
+## <a name="cycle"></a>cycle
 
-Recorre en bucle un grupo de cadenas y las envía en el orden en que se pasaron como parámetros. Cada ciclo de tiempo se llama, la siguiente cadena que se pasó como parámetro es output.
+Recorre en bucle un grupo de cadenas y los extrae en el orden en que se pasaron como parámetros. Cada vez que se llamada a un ciclo, se extrae la siguiente cadena que se pasó como parámetro.
 
-**Codifica**
+**Código**
 
 ```
 {% for item in items %}
@@ -162,7 +157,7 @@ Recorre en bucle un grupo de cadenas y las envía en el orden en que se pasaron 
 {% end %}
 ```
 
-**Genere**
+**Salida**
 
 ```
 <div class=red> Item one </div>
@@ -176,13 +171,13 @@ Recorre en bucle un grupo de cadenas y las envía en el orden en que se pasaron 
 <div class=green> Item five</div>
 ```
 
-## <a name="tablerow"></a>TableRow
+## <a name="tablerow"></a>tablerow
 
-Genera una tabla HTML. Se debe incluir en una &lt;de apertura de tabla&gt; y cierre de &lt;/Table&gt; etiquetas HTML.
+Genera una tabla HTML. Debe ir entre etiquetas HTML &lt;table&gt; de apertura y &lt;/table&gt; de cierre.
 
-Dentro del bloque de etiquetas TableRow, [tablerowloop](liquid-objects.md#tablerowloop) está disponible.  
+En el bloque de etiquetas tablerow, el [tablerowloop](liquid-objects.md#tablerowloop) está disponible.  
 
-**Codifica**
+**Código**
 
 ```
 <table>
@@ -196,7 +191,7 @@ Dentro del bloque de etiquetas TableRow, [tablerowloop](liquid-objects.md#tabler
 </table>
 ```
 
-**Genere**
+**Salida**
 
 ```
 <table>
@@ -234,9 +229,9 @@ Child Page 4
 
 ### <a name="parameters"></a>Parámetros
 
-Estos parámetros de tablerowcan se usan solos o en combinación.
+Estos parámetros de tablerow pueden utilizarse solos o en combinación.
 
-**Genere**
+**Salida**
 
 ```
 <table>
@@ -276,7 +271,7 @@ Child Page 4
 </table>
 ```
 
-**Codifica**
+**Código**
 
 ```
 <table>
@@ -290,15 +285,15 @@ Child Page 4
 </table>
 ```
 
-Determina el número de filas que debe tener la tabla generada.
+Dicta el número de filas que debe tener la tabla generada.
 
-**columnas**
+**cols**
 
-**ilimitado**
+**limit**
 
 Sale del bucle después de un número determinado de elementos.
 
-**Codifica**
+**Código**
 
 ```
 <table>
@@ -312,7 +307,7 @@ Sale del bucle después de un número determinado de elementos.
 </table>
 ```
 
-**Genere**
+**Salida**
 
 ```
 <table>
@@ -338,9 +333,9 @@ Child Page 2
 offset
 ```
 
-Inicia el bucle en el índice especificado.
+Inicia el bucle en un índice determinado.
 
-**Codifica**
+**Código**
 
 ```
 <table>
@@ -354,7 +349,7 @@ Inicia el bucle en el índice especificado.
 </table>
 ```
 
-**Genere**
+**Salida**
 
 ```
 <table>
@@ -378,11 +373,11 @@ Child Page 4
 </table>
 ```
 
-**variedad**
+**range**
 
-Define un intervalo de números que se van a recorrer.
+Define un intervalo de números para recorrer en bucle.
 
-**Codifica**
+**Código**
 
 ```
 <table>
@@ -398,7 +393,7 @@ Define un intervalo de números que se van a recorrer.
 
 ### <a name="see-also"></a>Vea también
 
-[Etiquetas de flujo de Control](control-flow-tags.md)
-[etiquetas de variable](variable-tags.md)
-[etiquetas de plantilla](template-tags.md)
-etiquetas de [entidad de Common Data Service de PowerApps](portals-entity-tags.md)
+[Etiquetas de flujo de control](control-flow-tags.md)
+[Etiquetas de variable](variable-tags.md)
+[Etiquetas de plantilla](template-tags.md)
+[Etiquetas de entidad de PowerApps Common Data Service](portals-entity-tags.md)

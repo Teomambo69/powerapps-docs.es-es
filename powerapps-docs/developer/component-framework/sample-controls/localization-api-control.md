@@ -1,6 +1,6 @@
 ---
-title: " Componente de la API de localización | Microsoft Docs"
-description: Implementación del componente de API de localización
+title: ' Componente API de localización| Microsoft Docs'
+description: Implementar componente api de localización
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cb24aa5ee30ecd2d855ff1de30840ac7eb568fcc
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340147"
 ---
-# <a name="implementing-localization-api-component"></a>Implementación del componente de API de localización
 
-Este ejemplo muestra cómo se realiza la localización de los controles personalizados. En este ejemplo, usamos el [componente de incremento](increment-control.md) para localizar el texto que se muestra en el botón de incremento en función del idioma seleccionado del usuario. 
+# <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
-El marco de componentes de PowerApps usa el concepto de implementación de recursos Web de cadena (resx) que se usa para administrar las cadenas localizadas que se muestran en cualquier interfaz de usuario. Más información: [Resources de cadena (resx)](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
+Este ejemplo muestra cómo se realiza la localización para controles personalizados. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
+
+PowerApps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
-> Componente de la(../media/localization-api-control.png "API de localización") de componentes de la ![API de localización]
+> ![Componente de API de localización](../media/localization-api-control.png "Componente de API de localización")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto 
 
@@ -66,7 +61,7 @@ export class TSLocalizationAPI
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -435,26 +430,26 @@ export class TSLocalizationAPI
 </root>
 ```
 
-Para localizar un proyecto existente, lo único que debe hacer es crear archivos de recursos adicionales (resx), uno para un idioma concreto, tal como se mencionó en los recursos Web de cadena e incluirlos como parte del archivo de manifiesto del control en el nodo [recursos](../reference/resources.md) .  
+Para localizar un proyecto existente, todo lo que debe hacer es crear archivos de recursos(resx) adicionales, uno para cada idioma específico que se menciona en los recursos web de cadena e incluirlos como parte del archivo de manifiesto del control en el nodo [recursos](../reference/resources.md).  
 
-El marco de componentes de PowerApps identifica el idioma del usuario y devuelve las cadenas de ese archivo de recursos específico del lenguaje cuando se intenta obtener acceso a la cadena mediante `context.resources.getString` método.
+PowerApps component framework identifica el idioma del usuario y devuelve las cadenas del archivo de recursos específico del idioma cuando usted intenta acceder a la cadena utilizando el método `context.resources.getString`.
 
-En este ejemplo, dos lenguajes `Spanish` y `Finnish` con los códigos de idioma 3082 y 1035, respectivamente definidos. Hemos realizado una copia del ejemplo `Increment component` y lo hemos cambiado a `Localization API`. Se cambia el nombre de todos los archivos correspondientes, incluidos los archivos de las subcarpetas.
+En este ejemplo, dos idiomas `Spanish` y `Finnish` con los códigos de idioma 3082 y 1035 definidos respectivamente. Hemos hecho una copia del ejemplo `Increment component` y le hemos cambiado el nombre a `Localization API`. Todos los archivos correspondientes incluidos los archivos de las subcarpetas cambian de nombre en consecuencia.
 
-En la carpeta Strings en `TS_LocalizationAPI`, se agregan dos archivos resx adicionales con los sufijos correspondientes a español y Finés como 3082 y 1035. Los nombres de archivo nuevos que se crean deben terminar como `{filename}.3082.resx` y `{filename}.1035.resx` porque el marco de trabajo se basa en esta Convención de nomenclatura para identificar qué archivo de recursos se debe seleccionar para leer las cadenas del usuario.
+En la carpeta de cadenas en `TS_LocalizationAPI`, se agregan dos archivos resx adicionales con los sufijos correspondiente a español y finés como 3082 y 1035. Los nuevos archivos creados deben tener los nombres de archivo que terminan en `{filename}.3082.resx` y `{filename}.1035.resx` porque el marco usa esta convención de nomenclatura para identificar qué archivo de recursos se debe seleccionar para leer las cadenas para el usuario.
 
-Asegúrese de que las claves utilizadas para las cadenas en todos estos archivos de recursos comparten el mismo nombre en todos los idiomas. Ahora, cuando el componente se representa en la interfaz de usuario, vemos en el código que se recupera el valor que se va a mostrar en el botón mediante `context.resources.getString("PCF_LocalizationSample_ButtonLabel")`.
+Asegúrese de que las teclas usadas para las cadenas en todos estos archivos de recursos comparten el mismo nombre en todos los idiomas. Ahora, cuando el componente se genere en la interfaz de usuario, podemos ver en el código que recuperamos el valor que se mostrará en el botón mediante `context.resources.getString("PCF_LocalizationSample_ButtonLabel")`.
 
-Cuando se ejecuta esta línea de código, el marco de componentes de PowerApps identifica automáticamente el idioma del usuario y toma el valor de la etiqueta del botón mediante la clave proporcionada en el archivo de idioma correspondiente que hemos definido. A continuación se muestra el texto que se muestra para cada uno de los 3 idiomas admitidos para este componente de ejemplo.
+Cuando esta línea de origen se ejecute, PowerApps component framework identifica automáticamente el idioma del usuario y recoge el valor de la etiqueta del botón con la tecla proporcionada en el archivo de idioma correspondiente que definimos. A continuación se proporciona el texto que ve para cada uno de los 3 idiomas que admitimos para este componente de ejemplo.
   
-|Códigodeidioma |Valor mostrado |
+|LanguageCode |Valor mostrado |
 |---|---|
-|3082 |Incrementalmente |
-|1033 |Importación |
+|3082 |Incremento |
+|3082 |Increment |
 |1035 |lisäys | 
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

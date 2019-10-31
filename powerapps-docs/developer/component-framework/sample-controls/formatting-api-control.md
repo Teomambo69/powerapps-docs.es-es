@@ -1,7 +1,7 @@
 ---
-title: Dando formato al componente de API | Microsoft Docs
-description: ''
-keywords: ''
+title: Formato del componente API | Microsoft Docs
+description: null
+keywords: null
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,23 +11,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: f81c0bdf98e6db4ec3326a151e53961e4936f244
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340446"
 ---
-# <a name="implementing-formatting-api-component"></a>Implementación del componente de API de formato
 
-Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de formato del marco de trabajo de componentes de PowerApps. En este ejemplo, creará una serie de elementos de entrada que llama a los métodos respectivos de la API de formato que coincide con el valor mostrado.
+# <a name="implementing-formatting-api-component"></a>Implementar el formato del componente API
+
+Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de formato de PowerApps component framework.En este ejemplo, usted crea una serie de elementos de entrada que llaman a los métodos respectivos de la API de formato que coincide con el valor mostrado.
 
 > [!div class="mx-imgBorder"]
-> ![Aplicar formato]al componente de API de(../media/formatting-api.png "formato") de componentes de API
+> ![Formato del componente API](../media/formatting-api.png "Formato del componente API")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos y aplicaciones de lienzo (versión preliminar experimental) 
+Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -52,14 +47,14 @@ export class FormattingAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // reference to the div element that holds together all the HTML elements that we are creating as part of this control
+  // Reference to the div element that holds together all the HTML elements that we are creating as part of this control
   private divElement: HTMLDivElement;
-  // reference to HTMLTableElement rendered by control
+  // Reference to HTMLTableElement rendered by control
   private _tableElement: HTMLTableElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
@@ -288,7 +283,7 @@ export class FormattingAPI
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
 
 

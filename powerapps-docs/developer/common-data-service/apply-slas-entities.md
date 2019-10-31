@@ -65,12 +65,11 @@ Los contratos de nivel de servicio (SLA) de Common Data Service ayudan a definir
 
 ## <a name="limitations-to-applying-slas-in-dynamics-365-online"></a>Limitaciones a la aplicación de SLA en Dynamics 365 (online)  
 
- En Common Data Service, las siguientes limitaciones son aplicables para SLA por cada instancia (organización) de Common Data Service:  
+ En Common Data Service, las limitaciones siguientes son aplicables para SLAs por cada instancia de Common Data Service (organización):  
   
 -   Puede tener un máximo de 7 entidades que pueden tener SLAs activos. Se mostrará un error al activar un SLA si se supera el límite.  
   
 -   Puede tener un máximo de 5 KPI de SLA por cada entidad para SLAs activos. Se mostrará un error al activar un SLA si se supera el límite. Este límite no es aplicable a la entidad `Incident`.  
   
 ### <a name="see-also"></a>Vea también  
- [Entidades de servicio de Customer Engagement](/dynamics365/customer-engagement/developer/service-entities)   
  [Contratos de nivel de servicio mejorados (SLA)](/dynamics365/customer-engagement/admin/enhanced-service-level-agreements)

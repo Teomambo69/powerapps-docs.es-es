@@ -8,10 +8,6 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: Mattp123
 ms.assetid: 15d123e0-b604-45dd-ab34-0b37787a04bb
 caps.latest.revision: 33
@@ -30,7 +26,7 @@ search.app:
   
 - **Desactivar un formulario principal**  
   
-     Puede establecer un estado activo o inactivo para los formularios principales. Esta característica se incluyó inicialmente para administrar los nuevos formularios incluidos cuando las organizaciones de Dynamics 365 Customer Engagement realizaban una actualización, pero se puede usar para impedir que los usuarios puedan usar formularios principales.   
+     Puede establecer un estado activo o inactivo para los formularios principales. Esta característica se incluyó inicialmente para administrar los nuevos formularios incluidos cuando los entornos de Common Data Service realizaban una actualización, pero se puede usar para impedir que los usuarios puedan usar formularios principales.   
   
 - **Asignar roles de seguridad al formulario principal**  
   
@@ -74,7 +70,7 @@ search.app:
 El contexto del formulario de cliente API (formContext) proporciona una referencia al formulario o a un elemento en el formulario, como por ejemplo, un control de vista rápida o una fila de una cuadrícula editable, en el que se ejecuta el código actual. Más información: [Contexto de formulario de la API del cliente](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
 > [!IMPORTANT]
-> Con aplicaciones Dynamics 365 for Customer Engagement versión 9.0, el objeto Xrm.Page está [obsoleto](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), y ahora debe utilizar el método [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) de la pasada en objeto de contexto de ejecución para devolver referencia al formulario adecuado o a un elemento en el formulario.
+> El objeto Xrm.Page está [obsoleto](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), y ahora debe utilizar el método [getFormContext](/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) de la pasada en objeto de contexto de ejecución para devolver referencia al formulario adecuado o a un elemento en el formulario.
 <!-- 
  Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   

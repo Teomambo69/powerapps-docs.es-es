@@ -4,7 +4,7 @@ description: Aprenda a diseñar formularios principales
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ search.app:
 
 Los formularios principales son la interfaz de usuario principal donde los usuarios ven y interactúan con los datos. Los formularios principales proporcionan el rango de opciones más amplio y están disponibles para aplicaciones controladas por modelos, a excepción de Dynamics 365 for phones.  
   
- Uno de los objetivos principales del diseño de formularios principales es que se diseñan una vez y se implementan en cualquier ubicación. El mismo formulario principal que diseña para una aplicación controlada por modelos o la aplicación de web de Dynamics 365 Customer Engagement también se usa en Dynamics 365 for Outlook y Dynamics 365 for tablets. La ventaja de este método es que no es necesario integrar cambios en formularios diferentes. No obstante, existen varios factores importantes a considerar en el diseño de estos formularios.  
+ Uno de los objetivos principales del diseño de formularios principales es que se diseñan una vez y se implementan en cualquier ubicación. El mismo formulario principal que diseña para una aplicación basada en modelos también se usa en Dynamics 365 for Outlook y Dynamics 365 para tabletas. La ventaja de este método es que no es necesario integrar cambios en formularios diferentes. No obstante, existen varios factores importantes a considerar en el diseño de estos formularios.  
   
 <a name="BKMK_CustomFormsForGroups"></a>   
 
@@ -52,7 +52,7 @@ Los formularios principales son la interfaz de usuario principal donde los usuar
   
 -   Si tiene scripts incompatibles que interactúan con los elementos DOM encontrados en la aplicación web, dichos scripts no funcionarán en los formularios de Dynamics 365 for tablets porque los mismos elementos DOM no están disponibles.  
   
-- Los formularios de panel de lectura de Dynamics 365 for Outlook no permiten scripts. La visibilidad de elementos de formulario depende de la configuración predeterminada y no se puede cambiar en tiempo de ejecución mediante scripts.  
+- Los formularios del panel de lectura de Dynamics 365 for Outlook no permiten el uso de scripts. La visibilidad de elementos de formulario depende de la configuración predeterminada y no se puede cambiar en tiempo de ejecución mediante scripts.  
   
 <a name="BKMK_FormPerformance"></a>   
 ## <a name="form-performance"></a>Rendimiento de los formularios  

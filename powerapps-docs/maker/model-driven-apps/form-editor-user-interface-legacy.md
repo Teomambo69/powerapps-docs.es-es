@@ -1,7 +1,6 @@
 ---
 title: Información general de la interfaz de usuario del editor de formularios de aplicaciones controladas por modelos para PowerApps | MicrosoftDocs
 description: Conozca la interfaz de usuario del editor de formularios para editar formularios en PowerApps
-keywords: Formularios; formulario Principal; aplicaciones de Interfaz unificada; Dynamics 365 para Customer Engagement
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -137,8 +136,8 @@ La pestaña Insertar muestra los comandos en la tabla siguiente:
 ||**IFRAME**|Puede agregar un IFRAME a un formulario para integrar contenido de otro sitio web en un formulario.| 
 ||**Escala de tiempo**|Inserte un control de escala de tiempo en el formulario. Este control muestra la escala de tiempo de actividades relacionadas con la entidad en un formulario.|  
 ||**Vínculo de navegación**|Con esta opción, puede insertar un vínculo en una navegación del formulario.|  
-||**Temporizador**|Inserte un control de temporizador en un formulario de entidad para realizar un seguimiento del tiempo con un SLA. Más información: [Agregar un control de temporizador](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
-||**Busque en Knowledge Base**|Inserte un control de búsqueda que los usuarios pueden usar para buscar en los artículos de conocimientos. Más información: [Control de búsqueda de Knowledge Base](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms)|  
+||**Temporizador**|Inserte un control de temporizador en un formulario de entidad para realizar un seguimiento del tiempo con un SLA. Más información: [Agregar un control de temporizador](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
+||**Busque en Knowledge Base**|Inserte un control de búsqueda que los usuarios pueden usar para buscar en los artículos de conocimientos. Más información: [Control de búsqueda de Knowledge Base](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms)|  
 ||**Asistente de relaciones**|Con esta opción, puede insertan un control del asistente de relaciones en el formulario.|
 
 >[!Note] 

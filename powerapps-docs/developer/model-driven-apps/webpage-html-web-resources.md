@@ -78,7 +78,7 @@ Debido a la característica HTML en recursos web que permite las modificaciones 
 
 ## <a name="reference-other-web-resources-from-an-html-web-resource"></a>Hacer referencia a otros recursos web desde un recurso web HTML
 
- Puede crear un conjunto de archivos relacionados fuera de aplicaciones basadas en modelos que use los tipos de archivo de recursos web. Si siempre usa rutas de acceso relativas e importa cada recurso web con una convención de nomenclatura coherente que refleje la estructura de carpetas del sitio web, verá que el recurso web HTML mantiene los vínculos con CSS, XML, JScript, imágenes y archivos Silverlight relacionados que se han importado como recursos web.  
+ Puede crear un conjunto de archivos relacionados fuera de aplicaciones basadas en modelos que use los tipos de archivo de recursos web. Si siempre usa rutas de acceso relativas e importa cada recurso web con una convención de nomenclatura coherente que refleje la estructura de carpetas del sitio web, verá que el recurso web HTML mantiene los vínculos con CSS, XML, JScript, imágenes y archivos de Silverlight relacionados que se han importado como recursos web.  
 
  Por ejemplo, si crea un proyecto de aplicación web que usa la siguiente estructura de [carpeta]/archivo:  
 
@@ -136,7 +136,7 @@ Debido a la característica HTML en recursos web que permite las modificaciones 
 |seguridad||Solo para uso interno.|
 |tabSet||Solo para uso interno.|
 
- Para pasar más de un valor en el parámetro de datos, debe codificar los parámetros en el valor del parámetro de datos y después incluir lógica para descodificar varios parámetros mediante el script en el recurso web HTML. El tema [Ejemplo: Pasar varios valores a un recurso web a través de los datos parámetro](sample-pass-multiple-values-web-resource-through-data-parameter.md) muestra una solución para dirigirse pasando varios valores de parámetros.  
+ Si varios valores se pasan en el parámetro de datos, se codificarán automáticamente. La lógica se debe incluir también para descodificar los varios parámetros con el script en el recurso de web HTML. El tema [Ejemplo: Pasar varios valores a un recurso web a través de los datos parámetro](sample-pass-multiple-values-web-resource-through-data-parameter.md) muestra una solución para dirigirse pasando varios valores de parámetros.  
 
 ### <a name="see-also"></a>Vea también
  [Recursos web](web-resources.md)   

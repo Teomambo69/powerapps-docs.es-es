@@ -2,7 +2,7 @@
 title: Registro y seguimiento (Common Data Service) | Microsoft Docs
 description: Use el registro de seguimiento para almacenar la información de ejecución de los complementos para ayudar en la depuración de los complementos.
 ms.custom: ''
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -91,7 +91,7 @@ Los registros [PluginTraceLog](reference/entities/plugintracelog.md) tienen una 
 
  ### <a name="plug-in-trace-viewer"></a>Visor de seguimiento de complementos
 
-**Visor de seguimiento de complementos** es una herramienta desarrollada por la comunidad XrmToolbox. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
+**Visor de seguimiento de complementos** es una herramienta desarrollada por la comunidad XrmToolbox. Consulte el tema [Herramientas de la Comunidad para Common Data Service](community-tools.md) para herramientas desarrolladas por la comunidad.
 
 > [!NOTE]
 > Las herramientas de la comunidad no son un producto de Microsoft y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).  

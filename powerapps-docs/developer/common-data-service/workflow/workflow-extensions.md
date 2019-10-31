@@ -25,8 +25,7 @@ Puede usar estas extensiones personalizadas en el diseñador usado para flujos d
 > Siempre que sea posible, primero debe considerar aplicar una de las opciones declarativas para definir la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service para aplicaciones](../../../maker/common-data-service/cds-processes.md)
 > 
 > Use las extensiones de flujo de trabajo cuando un proceso declarativo no cumpla su requisito.
-> 
-> Este contenido es para los ensamblados de flujo de trabajo de Common Data Service y se aplica a aplicaciones Dynamics 365 for Customer Engagement (en línea) también. Las opciones para implementaciones locales de aplicaciones Dynamics 365 for Customer Engagement se describen aquí: [Opciones locales](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options).
+
 
 ## <a name="when-to-create-a-workflow-extension"></a>Cuándo crear una extensión de flujo de trabajo
 
@@ -56,7 +55,7 @@ Puede usar la actividad **Realizar acción** para ejecutar cualquier acción per
 |AddToQueue|AddUserToRecordTeam|RemoveUserFromRecordTeam|
 |SetProcess|SetWordTemplate||
 
-Si tiene soluciones de Dynamics 365 Customer Engagement Sales o Service, puede encontrar otras acciones del comando en función de la solución:
+Si tiene soluciones de Dynamics 365 Sales o Service, puede encontrar otras acciones del comando en función de la solución:
 
 ||||
 |--|--|--|

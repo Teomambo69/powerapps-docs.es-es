@@ -2,7 +2,7 @@
 title: Solución de problemas complementos (Common Data Service for Apps) | Microsoft Docs
 description: Contiene información sobre los errores que se puedan producir debido a complementos y cómo corregirlos.
 ms.custom: ''
-ms.date: 04/26/2019
+ms.date: 09/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,12 +19,20 @@ search.app:
 
 Este tema contiene información sobre los errores que se puedan producir debido a complementos y cómo corregirlos.
 
-## <a name="error-there-is-no-active-transaction"></a>Error: No hay transacción activa. 
+## <a name="transaction-errors"></a>Errores de transacción
+
+Hay dos tipos comunes de errores relacionados con las transacciones: 
+
+Código de error: `-2146893812`<br />
+Mensaje de error: `ISV code reduced the open transaction count. Custom plug-ins should not catch exceptions from OrganizationService calls and continue processing.`
 
 Código de error: `-2147220911`<br />
 Mensaje de error: `There is no active transaction. This error is usually caused by custom plug-ins that ignore errors from service calls and continue processing.`
 
-Este puede ser un error difícil de solucionar porque la causa puede estar en el código de otra persona. Para comprender el mensaje, debe apreciar que en el momento en que se produce un error relacionado con una operación de datos en un complemento sincrónico, se terminará la transacción de toda la operación.
+> [!NOTE]
+> El error principal se agregó más recientemente. Debe aparecer inmediatamente y en el contexto del complemento que contiene el problema. El error inferior todavía puede aparecer en diferentes circunstancias, implicando normalmente actividades personalizadas del flujo de trabajo. Puede deberse a problemas en otro complemento.
+
+Para comprender el mensaje, debe apreciar que en el momento en que se produce un error relacionado con una operación de datos en un complemento sincrónico, se terminará la transacción de toda la operación.
 
 Más información: [Diseño de personalización escalable en Common Data Service](scalable-customization-design/overview.md)
 

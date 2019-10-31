@@ -1,5 +1,5 @@
 ---
-title: Crear y editar campos para Common Data Service mediante el explorador de soluciones de PowerApps | MicrosoftDocs
+title: Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -12,20 +12,21 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps
 
-El explorador de soluciones proporciona una forma de crear y editar campos para Common Data Service.
+El explorador de soluciones proporciona una forma de crear y editar relaciones campos para Common Data Service.
 
-El [portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
-- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
-- [Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)
+El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
+- [Crear y editar campos para Common Data Service](create-edit-fields.md)
+- [Crear y editar campos para Common Data Service utilizando el portal PowerApps](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -260,8 +261,8 @@ Cualquiera de los campos que proporcionan la entrada de texto directa tienen un 
 
 
 ### <a name="see-also"></a>Vea también  
-[Creación y edición de campos para Common Data Service](create-edit-fields.md)<br />
-[Crear y editar campos para Common Data Service mediante el portal de PowerApps](create-edit-field-portal.md)<br />
+[Crear y editar campos para Common Data Service](create-edit-fields.md)<br />
+[Crear y editar campos para Common Data Service utilizando el portal PowerApps](create-edit-field-portal.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Definir campos consolidados que agregan valores](define-rollup-fields.md)<br />

@@ -1,6 +1,6 @@
 ---
-title: Crear aplicaciones cliente de Windows mediante las herramientas de XRM (Common Data Service)| Microsoft Docs
-description: Los útiles de XRM son un conjunto de API que proporciona soporte para crear aplicaciones cliente de Windows para Common Data Service.
+title: Crear aplicaciones cliente de Windows mediante las herramientas XRM (Common Data Service)| Microsoft Docs
+description: Los útiles de XRM son un conjunto de API que proporciona soporte para crear aplicaciones cliente de Windows para Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -23,23 +23,20 @@ search.app:
 ---
 # <a name="build-windows-client-applications-using-the-xrm-tools"></a>Crear aplicaciones cliente de Windows mediante las herramientas XRM
 
-Los útiles de XRM son un conjunto de API creadas sobre las API del ensamblado Common Data Service (servicio de organización y servicio de detección) que proporcionan soporte para crear las aplicaciones cliente de Windows para Common Data Service. Ofrece las siguientes funciones:  
+Los útiles de XRM son un conjunto de API creadas sobre las API del ensamblado Common Data Service (servicio de organización y servicio de detección) que proporcionan soporte para crear las aplicaciones cliente Windows para Common Data Service. Ofrece las siguientes funciones:  
   
-- Admiten todos los modos de autenticación que inicien sesión en una instancia de Common Data Service.  
-- Ofrece soporte de PowerShell para la autenticación y la conexión a una instancia de Common Data Service.  
+- Admiten todos los modos de autenticación que inicien sesión en la instancia de Common Data Service.  
+- Ofrece soporte de PowerShell para la autenticación y la conexión a la instancia de Common Data Service.  
 - Proporciona seguridad de subprocesos para las acciones realizadas en Common Data Service en un entorno multiprocesos. Más información [Subprocesamiento múltiple en componentes](https://msdn.microsoft.com/library/vstudio/3es4b6yy.aspx), [Componentes con seguridad para subprocesos](https://msdn.microsoft.com/library/vstudio/a8544e2s.aspx)  
-- Proporciona un control de inicio de sesión común de Windows Presentation Foundation para Common Data Service para tener una experiencia de inicio de sesión coherente en aplicaciones de Common Data Service desde las aplicaciones cliente de Windows.  
+- Proporciona un control de inicio de sesión común de Windows Presentation Foundation para aplicaciones de Common Data Service para tener una experiencia de inicio de sesión coherente en aplicaciones de Common Data Service desde las aplicaciones cliente de Windows.  
 - Es compatible con almacenamiento seguro de credenciales de inicio de sesión y reutiliza las credenciales almacenadas para iniciar sesión automáticamente en Common Data Service después del inicio de sesión inicial.  
 - Proporciona informes de errores de diagnóstico integrado de seguimiento y rendimiento de las acciones realizadas en Common Data Service, que puede configurar según los requisitos de la organización.  
-
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Cree aplicaciones cliente de Windows mediante las herramientas de XRM (Customer Engagement)](/dynamics365/customer-engagement/developer/build-windows-client-applications-xrm-tools)
 
 ## <a name="components-of-xrm-tooling"></a>Componentes de útiles de XRM  
 
 Los útiles de XRM tienen los siguientes tres componentes:  
   
-- **Interfaz para desarrolladores**: esto proporciona los métodos de nivel bajo de interacción y de contenedor para las API de ensamblado del SDK de Common Data Service. Es un API instrumentado que proporciona un entorno seguro para subprocesos para realizar llamadas a Common Data Service con capacidades de diagnóstico integrado para ayudar a determinar el rendimiento de llamadas individuales. También proporciona un conjunto estándar de agentes de escucha para soporte de depuración. El espacio de nombres para este componente es <xref:Microsoft.Xrm.Tooling.Connector>.  
+- **Interfaz para desarrolladores**: esto proporciona los métodos de nivel bajo de interacción y de contenedor para las API de ensamblado del Common Data Service SDK. Es un API instrumentado que proporciona un entorno seguro para subprocesos para realizar llamadas a Common Data Service con capacidades de diagnóstico integrado para ayudar a determinar el rendimiento de llamadas individuales. También proporciona un conjunto estándar de agentes de escucha para soporte de depuración. El espacio de nombres para este componente es <xref:Microsoft.Xrm.Tooling.Connector>.  
   
 - **Control de inicio de sesión común**: es un control de usuario de WPF que proporciona una interfaz de usuario común para la experiencia de inicio de sesión en Common Data Service. El control de inicio de sesión ofrece compatibilidad con todos los modos de autenticación compatibles con Common Data Service. El control de inicio de sesión común tiene cifrado integrado para almacenar con seguridad las credenciales/perfil y, a continuación, reutilizarlas en tiempo de ejecución para iniciar sesión automáticamente en Common Data Service. El espacio de nombres para este componente es <xref:Microsoft.Xrm.Tooling.CrmConnectControl>.  
   

@@ -1,37 +1,34 @@
 ---
-title: Borrar la memoria caché del lado servidor para un portal | MicrosoftDocs
-description: Instrucciones para obligar al portal a actualizar su caché inmediatamente.
+title: Borrar la memoria caché del servidor para un portal | MicrosoftDocs
+description: Instrucciones para forzar el portal para que actualice la memoria caché inmediatamente.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 8351ca8d3befec80a9e97da03ca62980383b01b1
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976010"
+ms.reviewer: null
 ---
-# <a name="clear-the-server-side-cache-for-a-portal"></a>Borrar la memoria caché del lado servidor para un portal
 
-Como administrador del portal, puede borrar la memoria caché del lado servidor para todo el portal de forma que los datos actualizados de Common Data Service se reflejen inmediatamente en el portal. Las actualizaciones de Common Data Service se comunican al portal en modo asincrónico, por lo que es posible que se produzca un retraso entre el momento en que se actualizan los datos en Common Data Service y el momento en que los datos actualizados aparecen en el portal. Para eliminar este retraso&mdash;por ejemplo, cuando interfiere con la configuración del portal&mdash;puede forzar que el portal actualice su caché inmediatamente.
+# <a name="clear-the-server-side-cache-for-a-portal"></a>Borrar la memoria caché del servidor para un portal
+
+[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Como administrador de portal, puede borrar la memoria caché de servidor de todo el portal para reflejar los datos actualizados de Common Data Service inmediatamente en el portal. Las actualizaciones de Common Data Service se comunican al portal en modo asincrónico, por lo que puede haber conflictos entre la hora en que se actualizan los datos en Common Data Service y la hora en que los datos actualizados aparecen en el portal. Para eliminar este retardo&mdash;por ejemplo cuando interfiere con la configuración del portal&mdash;puede forzar una actualización inmediata de la memoria caché.
 
 > [!NOTE]
-> El acuerdo de nivel de servicio para la actualización de caché (transferencia de datos entre Common Data Service y portal) es de 15 minutos.
+> La actualización del SLA de la memoria caché (transferencia de datos entre Common Data Service y el portal) dura 15 minutos.
 
-Para borrar la memoria caché del lado servidor
+Para borrar la memoria caché del servidor
 
 1.  Inicie sesión en el portal como administrador.
 
-2.  Vaya a la dirección URL de la siguiente manera: `<portal_path>/_services/about`
+2.  Navegue a la dirección URL de la siguiente manera: `<portal_path>/_services/about`
 
 3.  Seleccione **Borrar caché**. 
 
-Se elimina la memoria caché del lado servidor y se recargan los datos de Common Data Service. Tenga en cuenta que si borra la memoria caché del servidor del portal, se producirá un rendimiento deficiente del portal mientras se recargan los datos desde Common Data Service.
+Se elimina la memoria caché del servidor, y los datos se vuelven a cargar de Common Data Service. Tenga en cuenta que al borrar la memoria caché del servidor de portal se producirá una caída temporal del rendimiento del portal mientras los datos se vuelven a cargar desde Common Data Service.
 
 > [!div class=mx-imgBorder]
-> ![Borrar la memoria caché del portal](../media/clear-portal-cache.png "borrar la memoria caché del portal")
+> ![Borrar la memoria caché del portal](../media/clear-portal-cache.png "Borrar la memoria caché del portal")

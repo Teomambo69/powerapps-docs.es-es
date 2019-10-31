@@ -3,7 +3,7 @@ title: Crear un mapa del sitio para una aplicación controlada por modelos en Po
 description: Aprenda a crear un mapa de sitio para aplicaciones
 keywords: ''
 ms.date: 05/29/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -123,7 +123,7 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
     - **Más descripción**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
   
-    - **Dirección URL**: escriba la dirección URL para presentar la carpeta de Dynamics 365 for Outlook que representa el área.  
+    - **Dirección URL**: Escriba la dirección URL para representar para la carpeta Dynamics 365 for Outlook que representa el área.  
   
 <a name="bkmk_AddGroup"></a>   
 ## <a name="add-a-group-to-the-site-map"></a>Agregar un grupo al mapa del sitio  
@@ -151,7 +151,7 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
     - **Más Decripciones**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción para el grupo y, a continuación, seleccione **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
   
-    - **Dirección URL**: escriba la dirección URL para presentar la carpeta de Dynamics 365 for Outlook que representa el grupo.  
+    - **Dirección URL**: Escriba la dirección URL para la carpeta Dynamics 365 for Outlook que representa el grupo.  
   
     - **Establezca como perfil**: Seleccione esta casilla para indicar si este grupo representa un perfil de usuario seleccionable para el área de trabajo. El grupo establecido como perfil seleccionable por el usuario para a estar disponible como opciones en sus opciones personales. Esto solo se aplica a grupos dentro del área de **Area de trabajo**.  
   
@@ -194,13 +194,13 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
     - **Más descripciones**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción del subárea y, a continuación, seleccione el botón **Agregar**. Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
   
-    - **SKUs**: seleccione las versiones de Dynamics 365 Customer Engagement que muestran esta subárea.  
+    - **SKU:** Seleccione las versiones de Dynamics 365 que muestra este subárea.  
   
     - **Cliente**: Seleccione el tipo de cliente que muestra este subárea.  
   
-    - **Acceso directo a Outlook**: seleccione el icono para mostrar Dynamics 365 for Outlook.  
+    - **Acceso directo a Outlook**: Seleccione el icono para mostrar en Dynamics 365 for Outlook.  
   
-    - **Disponibilidad sin conexión**: seleccione esta casilla para hacer que esta subárea esté disponible para los usuarios cuando estén sin conexión en Dynamics 365 for Outlook.  
+    - **Disponibilidad sin conexión**: Seleccione esta casilla para hacer que este subárea esté disponible para los usuarios cuando estén sin conexión en Dynamics 365 for Outlook.  
   
 ## <a name="organize-areas-groups-and-subareas"></a>Organizar áreas, grupos, y subáreas  
  Puede organizar sus áreas, grupos y subáreas, arrastrándolos a nuevas posiciones. Un cuadro contenedor aparece donde puede colocar las ventanas. Estas son algunas cosas que puede hacer:  
@@ -228,9 +228,9 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
  
 |Mapas de sitios|Clientes compatibles|  
 |---------------|-----------------------|  
-|Nuevas aplicaciones| Interfaz unificada y aplicación web de Dynamics 365 Customer Engagement |  
-|Mapa del sitio para la aplicación personalizada de Dynamics 365 | Aplicación web de Dynamics 365 Customer Engagement y Dynamics 365 for Outlook |  
-|Aplicaciones de negocio predeterminadas (Sales, Sales Hub, Customer Service, Customer Service Hub, Field Service, Project Service Automation)| Aplicación web de Dynamics 365 Customer Engagement e Interfaz unificada|  
+|Nuevas aplicaciones| Interfaz unificada |  
+|Mapa del sitio para la aplicación personalizada de Dynamics 365 | Aplicación web heredada y Dynamics 365 for Outlook |  
+|Aplicaciones basada en modelos (Sales, Centro de ventas, Customer Service, Centro de servicio al cliente, Field Service, Project Service Automation)| Aplicaciones web heredadas e interfaz unificada|  
  
   
 ### <a name="next-steps"></a>Pasos siguientes  

@@ -1,28 +1,23 @@
 ---
-title: Usar la navegación híbrida para representar la jerarquía de páginas de un portal | MicrosoftDocs
-description: Instrucciones para usar la navegación híbrida para representar la jerarquía de páginas de un portal.
+title: Usar navegación híbrida para representar la jerarquía de páginas para un portal | MicrosoftDocs
+description: Instrucciones para usar navegación híbrida para representar la jerarquía de páginas para un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975044"
+ms.reviewer: null
 ---
-# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Representar hasta tres niveles de jerarquía de páginas mediante la navegación híbrida
 
-Este ejemplo representa un tipo de navegación híbrida, en función del mapa del sitio del portal, que representa hasta tres niveles de jerarquía de páginas. Las reglas de este componente son:
+# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Represente hasta tres niveles de jerarquía de páginas mediante la navegación híbrida
 
-* Las páginas antecesoras de la página actual se muestran de nuevo en la Página principal (o en la profundidad máxima especificada por el parámetro opcional profundidad\_desplazamiento). 
-* Si la página actual tiene elementos secundarios, se muestran esas páginas secundarias.
-* Si la página actual no tiene elementos secundarios, se muestran los elementos del mismo nivel de la página actual.
+Este ejemplo representa un tipo de navegación híbrida, en función del mapa del sitio del portal, que representa hasta tres niveles de jerarquía de páginas. Las reglas para este componente son:
+
+* Las páginas antecesoras de la página actual se muestra hasta la página principal (o la profundidad máxima especificada por el parámetro depth\_offset opcional). 
+* Si la página actual tiene secundarias, estas páginas secundarias se mostrarán.
+* Si la página actual no tiene secundarias, se verán las páginas del mismo nivel que la página actual.
 
 ```xml
 {% assign depth_offset = depth_offset | default: 0 %}
@@ -253,7 +248,7 @@ Este ejemplo representa un tipo de navegación híbrida, en función del mapa de
 ```
 ### <a name="see-also"></a>Vea también
 
-[Creación de una plantilla de página personalizada mediante Liquid y una plantilla de página de plantilla Web](create-custom-template.md)  
+[Crear una plantilla de página personalizada con Liquid y una plantilla de página de plantilla web](create-custom-template.md)  
 [Crear una plantilla de página personalizada para representar una fuente RSS](render-rss-custom-page-template.md)  
 [Representar la lista de entidades asociada a la página actual](render-entity-list-current-page.md)  
-[Representar un encabezado de sitio web y una barra de navegación principal](render-site-header-primary-navigation.md)  
+[Represente un encabezado y una barra de navegación principal de página web](render-site-header-primary-navigation.md)  

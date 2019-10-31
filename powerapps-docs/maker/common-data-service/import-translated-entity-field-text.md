@@ -1,5 +1,5 @@
 ---
-title: Importar entidades y texto de campo traducidos con PowerApps | MicrosoftDocs
+title: Importar texto de campo y entidad traducido con PowerApps | MicrosoftDocs
 description: Obtenga información sobre como importar entidades traducidas y texto de campo
 ms.custom: ''
 ms.date: 06/19/2018
@@ -30,7 +30,7 @@ Si ha personalizado texto de entidad o campo, como etiquetas de campos o valores
  Después de la traducción, debe importar las cadenas de texto traducidas en el entorno para que los usuarios puedan aprovechar los cambios.  
   
 > [!IMPORTANT]
-> - El archivo que importe debe ser un archivo comprimido que contenga los archivos CrmTranslations.xml y [Content_Types].xml en la raíz.  
+> - El archivo que importe debe ser un archivo comprimido que contiene los archivos CrmTranslations.xml y [Content_Types].xml en la raíz.  
 > - No puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación. Tenga en cuenta también que después de importar texto traducido, debe volver a publicar las personalizaciones.  
   
 1. Abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer).  
@@ -45,7 +45,7 @@ Si ha personalizado texto de entidad o campo, como etiquetas de campos o valores
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada por la comunidad de XrmToolbox para Dynamics 365 Customer Engagement. Use Easy Translator para exportar e importar traducciones con información contextual. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada para PowerApps por la comunidad de XrmToolbox. Use Easy Translator para exportar e importar traducciones con información contextual. 
 
 > [!NOTE]
 > Las herramientas de la comunidad no se admiten en Microsoft. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).

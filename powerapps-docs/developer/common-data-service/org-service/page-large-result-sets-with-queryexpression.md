@@ -1,6 +1,6 @@
 ---
-title: Paginar grandes conjuntos de resultados con QueryExpression (Common Data Service) | Microsoft Docs
-description: 'En Dynamics 365 (en línea) Customer Engagement, puede usar la característica de cookie de paginación para que la paginación en una aplicación sea más rápida en los conjuntos de datos de gran tamaño. La característica está disponible con las consultas FetchXML y QueryExpression'
+title: Conjuntos de resultados grandes de página con QueryExpression (Common Data Service) | Microsoft Docs
+description: Use la característica de la cookie de paginación para crear la paginación en una aplicación más rápida para conjuntos de datos de gran tamaño. La característica está disponible con las consultas FetchXML y QueryExpression
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>Conjuntos de resultados grandes de página con QueryExpression
 
-En Common Data Service puede usar la característica de la cookie de paginación para crear la paginación en una aplicación más rápida para conjuntos de datos de gran tamaño. La característica está disponible con las consultas FetchXML y <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>. Cuando se usa la característica de la cookie de paginación para consultar un conjunto de registros, el resultado contiene un valor para la cookie de la paginación. Para mejorar el rendimiento del sistema, puede pasar ese valor al recuperar el siguiente conjunto de registros.  
+En Common Data Service, puede usar la característica de la cookie de paginación para crear la paginación en una aplicación más rápida para conjuntos de datos de gran tamaño. La característica está disponible con las consultas FetchXML y <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>. Cuando se usa la característica de la cookie de paginación para consultar un conjunto de registros, el resultado contiene un valor para la cookie de la paginación. Para mejorar el rendimiento del sistema, puede pasar ese valor al recuperar el siguiente conjunto de registros.  
   
  <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> y FetchXML usan formatos diferentes para las cookies de paginación. Si convierte de un formato de consulta a otro sí mediante el mensaje <xref:Microsoft.Crm.Sdk.Messages.QueryExpressionToFetchXmlRequest> o el mensaje <xref:Microsoft.Crm.Sdk.Messages.FetchXmlToQueryExpressionRequest>, se omite el valor de la cookie de paginación. Además, si solicita páginas no consecutivas, se omite el valor de la cookie de paginación.  
   

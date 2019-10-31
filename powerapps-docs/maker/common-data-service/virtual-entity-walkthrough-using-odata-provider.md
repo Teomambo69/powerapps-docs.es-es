@@ -1,5 +1,5 @@
 ---
-title: Recorrido por la entidad virtual usando el proveedor de datos de OData v4 en Common Data Service | MicrosoftDocs
+title: Tutorial de entidad virtual mediante el proveedor de datos en Common Data Service | MicrosoftDocs
 description: Aprenda a usar el proveedor de datos de OData v4 con una entidad virtual
 ms.custom: ''
 ms.date: 06/04/2018
@@ -26,7 +26,7 @@ search.app:
 
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>Tutorial de entidad virtual mediante el proveedor de datos de OData v4
 
-Imagine que quiere acceder a la información del vale desde un origen de datos externos en la aplicación controlada por modelos o en el área Servicio de Dynamics 365 for Customer Engagement. En este sencillo tutorial, modelará una entidad virtual con los campos asignados al esquema externo que recupera datos del vale en tiempo de ejecución de un servicio web de OData.
+Imagine que quiere acceder a la información del vale desde un origen de datos externos en la aplicación basada en modelos. En este sencillo tutorial, modelará una entidad virtual con los campos asignados al esquema externo que recupera datos del vale en tiempo de ejecución de un servicio web de OData.
 
 ## <a name="data-source-details"></a>Detalles del origen de datos:
 
@@ -152,7 +152,7 @@ En el panel de navegación izquierdo de la página **Entidad: vale**, seleccione
     ![Publicar todas las personalizaciones](media/publishall.png)
 1. Una vez publicadas todas las personalizaciones, cierre la ventana del explorador de soluciones.
 
-## <a name="view-the-virtual-entity-in-action-with-dynamics-365-customer-engagement"></a>Vea la entidad virtual en acción con Dynamics 365 Customer Engagement
+## <a name="view-the-virtual-entity-in-action-with-dynamics-365"></a>Vea la entidad virtual en acción con Dynamics 365
 
 1. Vaya a **Servicio** > **Extensiones** > **Vales**.
     

@@ -4,7 +4,7 @@ description: Una lista de controles disponibles para su uso con Dynamics 365 par
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -149,7 +149,7 @@ search.app:
  Use el control de vista previa de sitio web para asignar un campo de dirección URL y mostrar una vista previa del sitio web.  
   
 > [!IMPORTANT]
->  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados de sistemas externos a una aplicación de PowerApps o a Dynamics 365 Customer Engagement están sujetos a nuestra declaración de privacidad en [Privacidad y cookies de Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados de sistemas externos en la aplicación de PowerApps o aplicaciones de Dynamics 365 como Dynamics 365 Sales o Dynamics 365 Customer Service están sujetas a nuestra declaración de privacidad en [Privacidad y cookies de Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Avisos de privacidad](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

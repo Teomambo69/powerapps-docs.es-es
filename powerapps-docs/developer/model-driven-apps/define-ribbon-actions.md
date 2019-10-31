@@ -34,14 +34,15 @@ Defina las acciones que se deben realizar mediante una barra de comandos o contr
   
      Existen varias opciones disponibles para pasar parámetros a una dirección URL con la cinta de opciones. Más información: [Pasar parámetros a una dirección URL con la cinta de opciones](pass-parameters-url-by-using-ribbon.md)  
   
-### <a name="passing-parameters-to-ribbon-actions"></a>Paso de parámetros a las acciones de la cinta de opciones  
+## <a name="passing-parameters-to-ribbon-actions"></a>Paso de parámetros a las acciones de la cinta de opciones  
+
  Use los siguientes elementos para definir los datos que pasará a la acción personalizada:  
   
  `<BoolParameter>`  
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro a las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo>
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro a las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo -->
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]
@@ -56,7 +57,9 @@ Defina las acciones que se deben realizar mediante una barra de comandos o contr
   
  Los parámetros pasados a `<JavaScriptFunction>` no requieren un nombre pero se deben incluir en el pedido esperado por la función y deben ser del tipo de datos correctos.  
   
-### <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también  
+
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir reglas de visualización de la cinta de opciones](define-ribbon-display-rules.md)   
- [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  
+<!-- TODO need to update the relevant link from the powerapps repo-->

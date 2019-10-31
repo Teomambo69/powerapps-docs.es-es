@@ -33,7 +33,7 @@ Siempre que sea posible, el comprobador de soluciones intenta devolver un mensaj
 
 ![Barra de mensajes de error](media/solution-checker-missing-roles-error.png)
 
-Los errores que se producen durante el procesamiento en segundo plano de análisis fallarán con el estado **“No se pudo completar”** y devuelven un mensaje de error en el portal de PowerApps además de enviar una notificación por correo electrónico al solicitante. 
+Los errores que se producen durante el procesamiento en segundo plano de análisis fallarán con el estado **No se pudo completar** y devuelven un mensaje de error en el portal de PowerApps además de enviar una notificación por correo electrónico al solicitante. 
 
 ![Estado de error](media/solution-checker-exception-status.png)
 
@@ -45,7 +45,7 @@ La selección de notificación del portal vinculará a esta página de problemas
 
 El Comprobador de soluciones es una característica habilitada por la aplicación Comprobador de PowerApps.  Si ha instalado una versión de la aplicación Comprobador de PowerApps anterior a **1.0.0.47**, las ejecuciones del Comprobador de soluciones pueden no completarse correctamente. Debe actualizar la versión del Comprobador de PowerApps desde [!INCLUDE [pn-dyn-365-admin-center](../../includes/pn-dyn-365-admin-center.md)]. 
 
-Sin embargo, si tiene una versión del Comprobador de PowerApps anterior a **1.0.0.45** instalada, se recomienda eliminar la solución y volver a instalarla. Debido a los cambios recientes de esquema, la actualización del Comprobador de PowerApps de versiones anteriores a **1.0.0.45** puede provocar errores.
+Sin embargo, si tiene una versión del Comprobador de PowerApps anterior a **1.0.0.45** instalado, se recomienda eliminar la solución y volver a instalarla. Debido a los cambios recientes de esquema, la actualización del Comprobador de PowerApps de versiones anteriores a **1.0.0.45** puede provocar errores.
 
 Si desea conservar los resultados anteriores del Comprobador de la solución, exporte los resultados de una ejecución anterior o exporte todos los datos del Comprobador de soluciones con [Exportar datos a Excel](../../user/export-data-excel.md) para exportar los datos de las siguientes entidades:
 
@@ -80,7 +80,7 @@ Para usar el Comprobador de soluciones en esta organización, el modo de adminis
 
 Para deshabilitar el modo de administración en una instancia de organización:
 
-1. Abra al selector de instancias de aplicaciones de Dynamics 365 for Customer Engagement: https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx.
+1. Abra el selector de instancias de Dynamics 365: https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx.
 2. Seleccione la instancia de la organización que tiene problemas de ejecución del Comprobador de soluciones.
 3. Seleccione **ADMINISTRACIÓN**.<br/>
 ![Instancia Admin](media/solution-checker-instance-admin.png)
@@ -120,7 +120,7 @@ Para resolver este problema, debe actualizar el usuario de la aplicación **'Com
 Para actualizar el modo de acceso del usuario del Comprobador de PowerApps:
 
 1. Abra la organización de Common Data Service y vaya a **Configuración** > **Seguridad** > **Usuarios**.
-2. Seleccione el usuario del **“Comprobador de PowerApps”** de la lista de usuarios y haga doble clic para abrir el formulario de usuario.
+2. Seleccione el usuario del **'Comprobador de PowerApps'** de la lista de usuarios y haga doble clic para abrir el formulario de usuario.
 3. Vaya a la sección **'Administración'** > **'Información de licencia de acceso de cliente (CAL)'** del formulario.
 4. Seleccione **'No interactivo'** en el control desplegable **Modo de acceso**.<br/>
 ![Modo de acceso](media/solution-checker-access-mode.png)
@@ -143,7 +143,7 @@ Para comprobar y/o modificar el estado habilitado de la identidad de la aplicaci
 3. Seleccione **Toda la aplicación** y busque **'PowerApps-Advisor'**.<br/>
 ![Busque la aplicación de PowerApps-Advisor](media/solution-checker-search-advisor-app.png)
 
-4. Seleccione **“PowerApps-Advisor”** para ver los detalles de la aplicación.
+4. Seleccione **'PowerApps-PowerApps'** para ver los detalles de la aplicación.
 5. Seleccione **Propiedades**.
 6. Compruebe el estado de **Habilitado para que los usuarios inicien sesión**. Si **'No'**, la aplicación se ha deshabilitado.<br/>
 ![Aplicación de empresa deshabilitada](media/solution-checker-disabled-app.png)

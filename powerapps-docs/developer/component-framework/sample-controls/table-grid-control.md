@@ -1,5 +1,5 @@
 ---
-title: " Componente de cuadrícula de tabla | Microsoft Docs"
+title: ' Componente de cuadrícula de tabla | Microsoft Docs'
 description: Implementar el componente de cuadrícula de tabla
 ms.custom: ''
 manager: kvivek
@@ -8,24 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 2a24ae9cb7e37acfa2be4ef975e3c52eebce3e37
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340216"
 ---
+
 # <a name="implementing-table-grid-component"></a>Implementar el componente de cuadrícula de tabla
 
-En este ejemplo se muestra cómo crear un componente de conjunto de datos simple, el enlace de metadatos de la columna de la vista, el enlace de registros, más registros de la paginación y la navegación de registros al formulario.
-Las columnas de encabezado de componente y los valores de registro interno se enlazan a las vistas existentes.
+Este ejemplo muestra cómo crear un componente de conjunto de datos simple, un enlace de metadatos de columna de la vista, un enlace de registro, más registros de paginación y navegación de registros al formulario.
+Las columnas de encabezado de componentes y los valores de registros internos están enlazados a las vistas existentes.
 
 > [!div class="mx-imgBorder"]
-> (../media/table-grid-control.png "Componente de cuadrícula de tabla") de componente de cuadrícula de ![tabla]
+> ![Componente de cuadrícula de tabla](../media/table-grid-control.png "Componente de cuadrícula de tabla")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos  
+Aplicaciones basadas en modelos  
 
 ## <a name="manifest"></a>Manifiesto 
 
@@ -284,12 +279,12 @@ export class TSTableGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityreference = this.contextObj.parameters.simpleTableGrid.records[
+      let entityReference = this.contextObj.parameters.simpleTableGrid.records[
         rowRecordId
-      ].getNamedreference();
+      ].getNamedReference();
       let entityFormOptions = {
-        entityName: entityreference.entityType!,
-        entityId: entityreference.id
+        entityName: entityReference.entityType!,
+        entityId: entityReference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -481,29 +476,29 @@ export class TSTableGrid
 </root>
 ```
 
-El encabezado de columna se enlaza a la vista:
+Enlace de encabezado de columna a la vista:
 
-La información de columna de vista está en `context.parameters.[dataset_property_name].columns`. Es un tipo de matriz.
+La información de columna de vista se encuentra en `context.parameters.[dataset_property_name].columns`. Es un tipo de matriz.
 
-Enlace de registros:
+Enlace de registro:
 
-- Los identificadores de registro ordenados están en `context.parameters.[dataset_property_name].sortedRecordIds`
-- La información de todos los registros está en `context.parameters.[dataset_property_name].records` 
+- Los Id. de registro ordenados están en `context.parameters.[dataset_property_name].sortedRecordIds`
+- Toda la información de registros está en `context.parameters.[dataset_property_name].records` 
 - Para cada objeto de registro, `context.parameters.[dataset_property_name].records[record_Id]` 
-- Se puede recuperar el valor con formato en `getFormattedValue` 
+- El valor con formato se puede recuperar en `getFormattedValue` 
 
-Cargar más páginas de datos, si es necesario:
+Cargue más páginas de datos si es necesario:
 
-`context.parameters.[dataset_property_name].paging` proporcionará funcionalidad de paginación como `hasNextPage` y datos de `loadNextPage`. El botón `Load More` se muestra si tiene datos de la página siguiente.
+`context.parameters.[dataset_property_name].paging` proporcionará funcionalidad de paginación como datos `hasNextPage` y `loadNextPage`. El botón `Load More` aparece el botón si tiene datos de la página siguiente.
 
-En este ejemplo también se muestra cómo el componente escucha el ajuste de tamaño del contenedor. 
+Este ejemplo también muestra cómo el componente escucha el cambio de tamaño del contenedor. 
 
-Se debe llamar al método `trackContainerResize` dentro del método [init](../reference/control/init.md) para que se proporcionen los `mode.allocatedWidth` y `mode.allocatedHeight` cada vez que se llame a [updateView](../reference/control/updateview.md) . Si no se llama inicialmente a este método, no tienen `allocatedWidth` y `allocatedHeight` proporcionados.
+Se debe llamar al método `trackContainerResize` dentro del método [init](../reference/control/init.md) para que el `mode.allocatedWidth` y `mode.allocatedHeight` se proporcionen cada vez que se llama a [updateView](../reference/control/updateview.md). Si no se llama inicialmente a este método, no se proporcionarán `allocatedWidth` y `allocatedHeight`.
 
-Si el allocatedHeight es – 1, significa que no hay ningún límite en el alto. El componente debe ajustar su alto según el ancho proporcionado.
+Si el allocatedHeight es –1, significa que no existe ningún límite en el alto. El componente debe ajustar su altura basándose en el ancho proporcionado.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

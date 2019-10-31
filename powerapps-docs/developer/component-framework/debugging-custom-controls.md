@@ -1,6 +1,6 @@
 ---
-title: Componentes de código de depuración | MicrosoftDocs
-description: Cómo depurar un componente de código mediante Fiddler y la depuración nativa
+title: Depurar componentes de código | MicrosoftDocs
+description: Cómo depurar un componente de código mediante la depuración de Fiddler y nativa
 manager: kvivek
 ms.date: 10/01/2019
 ms.service: powerapps
@@ -8,90 +8,84 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 088792a32f401ddaf7d3a3cd4fd4d5aa9fa472ff
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346932"
 ---
-# <a name="debug-code-components"></a>Componentes de código de depuración
+# <a name="debug-code-components"></a>Depurar componentes de código
 
-Una vez que haya terminado de implementar la lógica del componente de código, puede empezar a probar y depurar el componente de código mediante el comando `npm start`. Esto genera el componente de código y lo abre en el instrumento de prueba local.
+Una vez que termine de implementar la lógica del componente de código, empiece a probar y depurar el componente de código mediante el comando `npm start`. De este modo se compila el componente de código y se abre en el agente de prueba local.
 
 > [!div class="mx-imgBorder"]
-> Agente de prueba del ![agente]de(media/test-harness-1.png "pruebas 1 1")
+> ![agente de prueba 1](media/test-harness-1.png "agente de prueba 1")
 
-Como se muestra en la imagen anterior, la ventana del explorador se abre con cuatro secciones. El componente de código se representa en el panel izquierdo, mientras que el panel derecho tiene las secciones **entradas de contexto**, **entradas de datos**y **salidas** .
+Como se muestra en la imagen de arriba, la ventana del explorador se abre con 4 secciones. El componente de código se genera en el panel izquierdo mientras que el panel derecho se compone de las secciones **Entradas de contexto**, **Entradas de datos** y **Salidas**.
 
-- Las **entradas de contexto** proporcionan una manera de especificar el factor de forma y probar el componente de código con cada factor de forma (Web, tableta, teléfono). Esto resulta útil cuando el componente de código depende de una funcionalidad de factor de forma determinada.
-- **Entradas de datos** es una interfaz de usuario interactiva que muestra todas las propiedades y sus [tipos](manifest-schema-reference/types.md) o [grupos](manifest-schema-reference/type-group.md) de tipos definidos en el archivo de [manifiesto](manifest-schema-reference/manifest.md) . Permite clave en los datos ficticios para cada propiedad. 
-- Las **salidas** representan el resultado cada vez que se llama al método [getOutputs](reference/control/getoutputs.md) de un componente.  
+- **Entradas de contexto** proporciona una forma de especificar el factor de forma y de probar el componente de código con cada factor de forma (web, tableta, teléfono). Esto es útil cuando el componente de código depende de una capacidad específica de factor de forma. En la nueva versión, puede tener la capacidad de especificar la altura y el ancho.
+- **Entradas de datos** es una interfaz de usuario interactiva que muestra todas las propiedades y sus [tipos](manifest-schema-reference/types.md) o [grupos](manifest-schema-reference/type-group.md) de tipos definidos en el archivo de [manifiesto](manifest-schema-reference/manifest.md). Permitir escribir datos ficticios para cada propiedad. 
+- **Salidas** genera la salida cada vez que se llama al método [getOutputs](reference/control/getoutputs.md) de un componente.  
 
      > [!div class="mx-imgBorder"]
-     > ![](media/test-harness-2.png "Agente de") prueba 2 del instrumento de prueba 2
+     > ![agente de prueba 2](media/test-harness-2.png "agente de prueba 2")
 
 > [!NOTE]
-> Si desea modificar el archivo de `ControlManifest.Input.xml` o crear propiedades adicionales, deberá reiniciar el proceso de depuración antes de que aparezcan en la sección entradas.
+> Si desea modificar el archivo `ControlManifest.Input.xml` o crear propiedades adicionales, deberá reiniciar el proceso de depuración antes de que aparezcan en la sección de entradas.
 
 ## <a name="test-code-components-with-mock-data"></a>Probar componentes de código con datos ficticios
 
-- En el caso de los componentes de tipo de *campo* , puede especificar el valor y el tipo de cada propiedad definida en el **archivo ControlManifest. Input. XML** como se muestra aquí:
+- En el caso de componentes de tipo *campo*, puede introducir el valor y el tipo de entrada para cada propiedad definida en su **ControlManifest.Input.xml** como se muestra a continuación
 
    > [!div class="mx-imgBorder"]
-   > Agente de ![prueba 2,5](media/test-harness-2.5.png "instrumento de prueba 2,5")
+   > ![agente de prueba 2.5](media/test-harness-2.5.png "agente de prueba 2.5")
 
-- En el caso de los componentes de tipo *DataSet* , puede cargar un archivo CSV con datos de prueba. Puede crear o exportar manualmente en formato. csv directamente desde su entorno. Una vez que haya disponible un archivo CSV válido, se puede cargar como se muestra aquí:
+- Para componentes de tipo *conjuntos de datos*, puede cargar un archivo CSV con datos de prueba. Se puede crear o exportar manualmente en formato .csv directamente desde su entorno. Una vez que un archivo CSV válido está disponible, se puede cargar como se indica a continuación:
 
    > [!div class="mx-imgBorder"]
-   > agente de prueba ![3](media/test-harness-3.png "instrumento de prueba 3")
+   > ![agente de prueba 3](media/test-harness-3.png "agente de prueba 3")
 
-- Después de cargar un archivo CSV, enlace cada propiedad definida en **ControlManifest. Input. XML** a una columna del archivo CSV. Para ello, se selecciona la columna de cada propiedad, como se muestra aquí:
+- Después de cargar un archivo CSV, vincule cada propiedad definida en el **ControlManifest.Input.xml** a una columna del archivo CSV. Esto hace seleccionando la columna para cada propiedad como se indica a continuación:
 
     > [!div class="mx-imgBorder"]
-    > Agente de prueba ![4](media/test-harness-4.png "mazo de pruebas") 4
+    > ![agente de prueba 4](media/test-harness-4.png "agente de prueba 4")
 
-- Si no tiene ninguna propiedad definida en el archivo **ControlManifest. Input. XML** , todas las columnas se cargan automáticamente en el instrumento de prueba.
+- Si no tiene ninguna propiedad definida en el archivo **ControlManifest.Input.xml**, todas las columnas se cargan automáticamente en el agente de prueba.
 
    > [!div class="mx-imgBorder"]
-   > Agente de prueba ![5](media/test-harness-5.png "instrumento de prueba 5")
+   > ![agente de prueba 5](media/test-harness-5.png "agente de prueba 5")
 
 
-## <a name="watch-mode-in-test-harness"></a>Modo de inspección en instrumento de prueba
+## <a name="watch-mode-in-test-harness"></a>Modo watch en agente de prueba
 
-El instrumento de prueba es compatible con el modo de `watch`, que puede aprovecharse de los proyectos de marco de componentes de PowerApps. Para habilitar el modo de `watch`, inicie el instrumento de prueba mediante el `npm start watch` de comandos. En el modo `watch`, los cambios realizados en cualquiera de los siguientes recursos del componente se reflejan automáticamente en el instrumento de prueba sin tener que reiniciarlo:
+El agente de prueba admite el modo `watch` del que se puede aprovechar para proyectos de PowerApps component framework. Para habilitar el modo `watch`, inicie el agente de prueba usando el comando `npm start watch`. En modo `watch`, los cambios realizados en cualquiera de los activos de componentes siguientes se reflejan en el agente de prueba sin tener que reiniciarlo:
 
-1.  `index.ts` archivo.
-2.  `ControlManifest.Input.xml` archivo.
+1.  `index.ts`.
+2.  `ControlManifest.Input.xml`.
 3.  Bibliotecas importadas en `index.ts`.
-4.  Todos los recursos enumerados en el archivo de manifiesto.
+4.  Todos los recursos incluidos en el archivo de manifiesto.
 
 ## <a name="debug-code-components-using-native-browsers"></a>Depurar componentes de código mediante exploradores nativos
 
-Puede usar las funciones de depuración del explorador para observar el comportamiento del componente. Cada explorador proporciona una herramienta de depuración que le ayudará a depurar el código de forma nativa en el explorador. Normalmente, puede activar la depuración en el explorador presionando la tecla **F12** para mostrar la herramienta de desarrollo nativo que se usa para la depuración.
+Puede usar las funcionalidades de depuración del explorador para observar el comportamiento del componente. Cada explorador proporciona una herramienta de depuración para ayudarle a depurar el código nativo en el explorador. Normalmente, puede activar la depuración en el explorador presionando la tecla **F12** para mostrar la herramienta de desarrollo nativa usada para depuración.
 
-Por ejemplo, en **Microsoft Edge**:
+Por ejemplo, en **Microsoft Edge**,
 
 - Presione **F12** para abrir el inspector.
-- Seleccione el componente.
-- En la barra superior, vaya a **depurador** y busque el nombre del componente descrito en el archivo de manifiesto en la barra de búsqueda. Por ejemplo, escriba el nombre del componente como `Hello World component`.
+- Haga clic en el componente
+- En la barra superior, vaya a **Depurador** y luego empiece a buscar el nombre del componente descrito en el archivo de manifiesto en la barra de búsqueda. Por ejemplo, escriba el nombre del componente como `Hello World component`.
 
      > [!div class="mx-imgBorder"]
-     > ![Depurar]componente de(media/debug-control.png "depuración")
+     > ![componente-depuración](media/debug-control.png "Componente de depuración")
 
 > [!NOTE]
-> Siempre es recomendable establecer puntos de interrupción en los métodos de ciclo de vida del componente como [init](reference/control/init.md) y [updateView](reference/control/updateview.md).
+> Siempre es conveniente establecer puntos de interrupción en los métodos de ciclo de vida del componente como [init](reference/control/init.md) y [updateView](reference/control/updateview.md).
 
-También puede interactuar con el componente localmente en tiempo real y observar los elementos del DOM estableciendo un punto de interrupción en la pestaña *orígenes* , como se muestra aquí:
+También puede interactuar con el componente localmente en tiempo real y observar elementos en DOM estableciendo un punto de interrupción en la pestaña Buzón del origen de la siguiente manera:
 
 > [!div class="mx-imgBorder"]
-> Componente de depuración ![componente](media/debug-control-1.png "1")
+> ![componente-depuración](media/debug-control-1.png "Componente de depuración 1")
 
-## <a name="fiddler-autoresponder"></a>Respondedor de Fiddler
+## <a name="fiddler-autoresponder"></a>Fiddler AutoResponder
 
-Use el autorespondedor de Fiddler para depurar rápidamente los componentes de código. Instale [Fiddler](https://www.telerik.com/download/fiddler) y siga los pasos para configurar el [respondedor](https://docs.microsoft.com/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder).
+Use Fiddler AutoResponder para depurar rápidamente sus componentes de código. Instale [Fiddler](https://www.telerik.com/download/fiddler) y siga los pasos para configurar [AutoResponder](https://docs.microsoft.com/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder)
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia de la API del marco de componentes de PowerApps](reference/index.md)<br/>
-[Información general sobre el marco de componentes de PowerApps](overview.md)
+[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
+[Información general sobre PowerApps component framework](overview.md)

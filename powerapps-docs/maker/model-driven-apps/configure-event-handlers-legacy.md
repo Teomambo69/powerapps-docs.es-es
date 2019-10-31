@@ -1,12 +1,7 @@
 ---
-title: Configurar controladores de eventos para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
-description: Conocer cómo configurar controladores de eventos en Dynamics 365 for Customer Engagement
-Keywords: Formulario principal; Configure los controladores de eventos; Dynamics 365
+title: Configurar controladores de eventos para formularios principales de aplicaciones basadas en modelos en PowerApps | MicrosoftDocs
+description: Aprender a configurar controladores de eventos
 author: Mattp123
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018

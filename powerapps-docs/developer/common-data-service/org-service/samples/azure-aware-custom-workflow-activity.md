@@ -1,6 +1,6 @@
 ---
-title: Actividad de flujo de trabajo personalizada compatible con Azure (Common Data Service) | Microsoft Docs
-description: Este ejemplo obtiene el contexto de datos de la operación de Dynamics 365 Customer Engagement actual y lo publica en Azure Service Bus.
+title: Actividad de flujo de trabajo personalizada con Azure (Common Data Service) | Microsoft Docs
+description: Este ejemplo obtiene el contexto de datos de la operación de Common Data Service actual y lo publica en el Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -23,7 +23,7 @@ Este ejemplo obtiene el contexto de datos de la operación actual y lo publica e
 
 ## <a name="requirements"></a>Requisitos
 
-Debe configurar Common Data Service para conectarse con Azure antes de registrar y ejecutar este ejemplo de actividad de flujo de trabajo personalizado. Más información: [Configurar la integración de Microsoft Azure con Common Data Service](../../configure-azure-integration.md).
+Debe configurar Common Data Service para conectarse con Azure antes de registrar y ejecutar este ejemplo de actividad de flujo de trabajo personalizado. Más información: [Configurar Integración de Microsoft Azure con Common Data Service](../../configure-azure-integration.md).
 
 Tenga en cuenta el argumento de `Input id` requerido en el código. Cuando agregue esta actividad a un flujo de trabajo, debe proporcionar el GUID de un extremo de servicio de Azure.
 

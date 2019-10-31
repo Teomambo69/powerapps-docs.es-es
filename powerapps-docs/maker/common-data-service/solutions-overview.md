@@ -1,8 +1,8 @@
 ---
-title: Trabajar con soluciones en PowerApps | MicrosoftDocs
+title: Trabajar con soluciones en PowerApps | Microsoft Docs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 09/30/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -26,7 +26,7 @@ search.app:
    
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
-  En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como a otros componentes como entidades, conjuntos de opciones, etc. Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor independiente de software (ISV).
+  En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como otros componentes como mapas del sitio, entidades, procesos, recursos web, los conjuntos de opciones, etc.  Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor de software independiente (ISV).
   
 Más información: [Notas del producto: Administración del ciclo de vida de las soluciones](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
@@ -81,10 +81,12 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 -   Ensamblado de complementos  
   
 -   Proceso  
-  
+
+-   Informe de  
+
 -   Paso de procesamiento del mensaje de SDK  
   
--   Rol de seguridad   
+-   Rol de seguridad  
   
 -   Extremo de servicio  
   
@@ -102,9 +104,9 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
 ### <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas  
- Hay soluciones **administradas** y **no administradas**. Una solución **administrada** no se puede modificar y puede desinstalarse una vez importada. Todos los componentes de la solución se quitan al desinstalar la solución.  
+ Hay soluciones **administradas** y **no administradas**. Una solución **administrada** no se puede modificar y puede desinstalarse una vez importada. Todos los componentes de la solución se eliminan al desinstalar la solución.  
   
- Cuando importa una solución **no administrada**, debe agregar todos los componentes de la solución a su entorno. No puede quitar componentes desinstalando la solución.  
+ Cuando importa una solución **no administrada**, debe agregar todos los componentes de la solución a su entorno. No puede eliminar componentes desinstalando la solución.  
   
  Cuando importa una solución **no administrada** que contiene componentes que ya personalizó, las personalizaciones se sobrescribirán por las personalizaciones de la solución no administrada importada. No se puede deshacer esto.  
   
@@ -112,8 +114,6 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 >  Instale una solución no administrada si solo desea agregar todos los componentes del entorno y sobrescribir las personalizaciones existentes.  
   
  Incluso si no va a distribuir las aplicaciones o personalizaciones, es posible que desee crear y usar una solución no administrada para tener una vista diferente que solo incluya las partes de la aplicación que ha personalizado. Siempre que personalice algún elemento, agréguelo a la solución no administrada que ha creado.  
-  
- Solo puede exportar la **Solución predeterminada** como una solución no administrada.  
   
  Para crear una solución **administrada**, puede elegir la opción **Como administrado** cuando se exporta la solución. Si crea una solución administrada, no puede importarla nuevamente al mismo entorno usado para crearla. Solo puede importarla en otro entorno.  
   

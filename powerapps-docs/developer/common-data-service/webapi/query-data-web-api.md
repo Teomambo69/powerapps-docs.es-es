@@ -2,7 +2,7 @@
 title: Consultar datos con la API web (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre las distintas formas de consultar los datos de Common Data Service con la API web de Common Data Service y las distintas opciones de consulta del sistema que se pueden aplicar en estas consultas.
 ms.custom: ''
-ms.date: 07/23/2019
+ms.date: 09/10/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -34,7 +34,8 @@ Si desea recuperar los datos para un conjunto de entidades, use una solicitud `G
  **Solicitud**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$top=3 HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$top=3 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -161,7 +162,9 @@ Preference-Applied: odata.maxpagesize=3
  Cada una de las opciones de consulta del sistema que anexa a la URL para el conjunto de entidades se agrega utilizando la sintaxis de cadenas de consulta. La primera se agrega después de [?] y las opciones de consulta posteriores se separan mediante [&]. Todas las opciones de consulta distinguen mayúsculas de minúsculas tal como se muestra en el siguiente ejemplo.  
   
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue&$top=3&$filter=revenue gt 100000  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
+&$top=3
+&$filter=revenue gt 100000  
 ```  
   
 <a name="bkmk_requestProperties"></a>
@@ -234,7 +237,8 @@ La API web admite estas funciones de consulta de cadena de OData estándar:
 Common Data Service ofrece varias funciones especiales que aceptan parámetros, devuelven valores booleanos y se pueden usar como criterios de filtro en una consulta. Para obtener una lista de estas funciones, vea <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Lo siguiente es un ejemplo de la búsqueda <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> para cuentas con varios empleados entre 5 y 2000.  
   
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,numberofemployees
+&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
 ```  
   
 Más información: [Crear una consulta con funciones](use-web-api-functions.md#bkmk_composeQueryWithFunctions). 
@@ -256,7 +260,8 @@ El operador `any` devuelve `true` si la expresión booleana aplicada es `true` p
 El ejemplo dado a continuación muestra cómo puede recuperar todos los registros de entidad de cuenta que tienen al menos un correo electrónico con “sometext” en el asunto.
 
 ```http
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Emails/any(o:contains(o/subject,'sometext')) HTTP/1.1
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=Account_Emails/any(o:contains(o/subject,'sometext')) HTTP/1.1
 Prefer: odata.include-annotations="*"
 Accept: application/json  
 OData-MaxVersion: 4.0  
@@ -273,7 +278,8 @@ El operador `all` devuelve `true` si la expresión booleana aplicada es `true` p
 El ejemplo dado a continuación muestra cómo puede recuperar todos los registros de entidad de cuenta que tienen todas las tareas asociadas cerradas.
 
 ```http
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Tasks/all(o:o/statecode eq 1) HTTP/1.1
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=Account_Tasks/all(o:o/statecode eq 1) HTTP/1.1
 Prefer: odata.include-annotations="*"
 Accept: application/json  
 OData-MaxVersion: 4.0  
@@ -283,7 +289,9 @@ OData-Version: 4.0
 El ejemplo dado a continuación muestra cómo puede recuperar todos los registros de entidad de cuenta que tienen al menos un correo electrónico con “sometext” en el asunto y cuyo código de estado es activo.
 
 ```http
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Emails/any(o:contains(o/subject,'sometext') and o/statecode eq 0) HTTP/1.1
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=Account_Emails/any(o:contains(o/subject,'sometext') and 
+o/statecode eq 0) HTTP/1.1
 Prefer: odata.include-annotations="*"
 Accept: application/json
 OData-MaxVersion: 4.0
@@ -293,7 +301,10 @@ OData-Version: 4.0
 El ejemplo dado a continuación muestra cómo puede crear también una consulta anidada utilizando operadores `any` y `all`.
 
 ```http
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=(contact_customer_accounts/any(c:c/jobtitle eq 'jobtitle' and c/opportunity_customer_contacts/any(o:o/description ne 'N/A'))) and endswith(name,'{0}') HTTP/1.1
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=(contact_customer_accounts/any(c:c/jobtitle eq 'jobtitle' and 
+c/opportunity_customer_contacts/any(o:o/description ne 'N/A'))) and 
+endswith(name,'{0}') HTTP/1.1
 Prefer: odata.include-annotations="*"
 Accept: application/json
 OData-MaxVersion: 4.0
@@ -304,25 +315,23 @@ OData-Version: 4.0
 
 El ejemplo dado a continuación muestra cómo usar [/cualquier operador](#bkmk_anyoperator) para recuperar todos los registros de cuenta que tienen:
 
-- cualquiera de los presupuestos de registros de oportunidad vinculados mayor o igual que 500, y
+- cualquiera de los presupuestos de registros de oportunidad vinculados mayor o igual que 300, y
 - los registros de oportunidad no tienen una descripción, o
-- la descripción de los registros de oportunidad contiene el término “*good*”.
+- la descripción de los registros de oportunidad contiene el término “*bad*”.
 
 **Solicitud**
 
 ```http
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=not opportunity_customer_accounts/any(o:o/description eq null and o/budgetamount le 300 or contains(o/description, 'bad')) and opportunity_customer_accounts/any() and endswith(name,'{0}') HTTP/1.1
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=not opportunity_customer_accounts/any(o:o/description eq null and 
+o/budgetamount le 300 or 
+contains(o/description, 'bad')) and 
+opportunity_customer_accounts/any() and 
+endswith(name,'{0}') HTTP/1.1
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0 
 ```
-
-> [!NOTE]
-> No puede usar el operador `NOT` con una función personalizada como [Microsoft.Dynamics.CRM.EqualUserId](/dynamics365/customer-engagement/web-api/equaluserid). Por ejemplo, la consulta siguiente no es una consulta válida.
->
-> ```http
-> GET [Organization URI]/api/data/v9.1/accounts?$filter=NOT Microsoft.Dynamics.CRM.EqualUserId(Name='Contoso')
-> ```
 
 <a name="BKMK_FilterNavProperties"></a>
 
@@ -339,7 +348,8 @@ Por ejemplo:
 **Solicitud** 
  
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=primarycontactid/contactid%20eq%20a0dbf27c-8efb-e511-80d2-00155db07c77 HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=primarycontactid/contactid eq a0dbf27c-8efb-e511-80d2-00155db07c77 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -374,7 +384,8 @@ OData-Version: 4.0
 **Solicitud**  
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=parentaccountid/accountid%20eq%203adbf27c-8efb-e511-80d2-00155db07c77  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=parentaccountid/accountid eq 3adbf27c-8efb-e511-80d2-00155db07c77  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -416,7 +427,9 @@ Las dos opciones para filtrar resultados según los valores de las propiedades d
 Los operadores lambda permiten aplicar un filtro a valores de las propiedades de la colección para una entidad de vínculo. El siguiente ejemplo recupera los registros del tipo de entidad `systemuser` que están vinculados con tipos de entidad `team` y `teammembership`, lo que significa que recuperan registros `systemuser` que también son administradores de un equipo cuyo nombre es "CITTEST".
 
 ```http
-GET [Organization URI]/api/data/v9.1/systemusers?$teammembership_association/any(t:t/name eq 'CITTEST')&$select=fullname,businessunitid,title,address1_telephone1,positioned,systemuserid&$oderby= fullname
+GET [Organization URI]/api/data/v9.1/systemusers?$filter=(teammembership_association/any(t:t/name eq 'CITTEST'))
+&$select=fullname,businessunitid,title,address1_telephone1,systemuserid
+&$orderby=fullname
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -442,7 +455,9 @@ Siga los pasos en el siguiente ejemplo para comprender cómo podemos filtrar res
  Especifique el orden en que los elementos se devuelven mediante la opción de consulta del sistema `$orderby`. Use el sufijo `asc` o `desc` para especificar orden ascendente o descendente respectivamente. El valor predeterminado es ascendente si no se aplica el sufijo. El ejemplo siguiente muestra la recuperación de propiedades de nombre e ingresos de cuentas ordenadas por ingreso ascendente y por nombre descendente.  
   
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
+&$orderby=revenue asc,name desc
+&$filter=revenue ne null  
 ```  
 <a name="bkmk_AggregateGroup"></a>
 
@@ -452,17 +467,18 @@ Utilizando `$apply` puede agregar y agrupar los datos dinámicamente.  Casos de 
 
 |Caso de uso|Ejemplo|
 |--------------|-------------| 
-|Lista de estados únicos en la consulta|`$apply=groupby((statuscode))`|
-|Suma agregada del valor estimado|`$apply=aggregate(estimatedvalue with sum as total)`|
-|Tamaño medio del negocio basado en valor y estado estimados|`$apply=groupby((statuscode),aggregate(estimatedvalue with average as averagevalue)`|
-|Suma de valor estimado basado en estado|`$apply=groupby((statuscode),aggregate(estimatedvalue with sum as total))`|
-|Ingresos totales de la oportunidad por nombre de cuenta|`$apply=groupby((parentaccountid/name),aggregate(estimatedvalue with sum as total))`|
-|Fecha y hora de registro creado por última vez|`$apply=aggregate(createdon with max as lastCreate)`|
-|Fecha y hora de registro creado por primera vez|`$apply=aggregate(createdon with min as firstCreate)`|
+|Lista de estados únicos en la consulta|`accounts?$apply=groupby((statuscode))`|
+|Suma agregada del valor estimado|`opportunities?$apply=aggregate(estimatedvalue with sum as total)`|
+|Tamaño medio del negocio basado en valor y estado estimados|`opportunities?$apply=groupby((statuscode),aggregate(estimatedvalue with average as averagevalue)`|
+|Suma de valor estimado basado en estado|`opportunities?$apply=groupby((statuscode),aggregate(estimatedvalue with sum as total))`|
+|Ingresos totales de la oportunidad por nombre de cuenta|`opportunities?$apply=groupby((parentaccountid/name),aggregate(estimatedvalue with sum as total))`|
+|Nombres de contacto primario para cuentas de “WA”|`accounts?$apply=filter(address1_stateorprovince eq 'WA')/groupby((primarycontactid/fullname))`|
+|Fecha y hora de registro creado por última vez|`accounts?$apply=aggregate(createdon with max as lastCreate)`|
+|Fecha y hora de registro creado por primera vez|`accounts?$apply=aggregate(createdon with min as firstCreate)`|
 
 Las funciones agregadas están limitados a una colección de 50.000 registros.  La información adicional acerca de usar la funcionalidad agregada con Common Data Service se puede encontrar aquí: [Uso de FetchXML para generar una consulta](../use-fetchxml-construct-query.md).
 
-Los detalles adicionales en la agregación de datos de OData se pueden encontrar aquí: [Extensión de OData para la versión 4.0 de agregación de datos](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).  Tenga en cuenta que las aplicaciones Dynamics 365 for Customer Engagement solo admite un subconjunto de estos métodos agregados.
+Los detalles adicionales en la agregación de datos de OData se pueden encontrar aquí: [Extensión de OData para la versión 4.0 de agregación de datos](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).  Tenga en cuenta que Common Data Service sólo admite un subconjunto de estos métodos agregados.
 
 
 <a name="bkmk_useParameterAliases"></a>
@@ -474,13 +490,17 @@ Los detalles adicionales en la agregación de datos de OData se pueden encontrar
  Sin alias de parámetros:
 
 ```http  
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
+&$orderby=revenue asc,name desc
+&$filter=revenue ne null  
 ```  
   
  Con alias de parámetros:
 
 ```http  
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=@p1 asc,@p2 desc&$filter=@p1 ne @p3&@p1=revenue&@p2=name  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
+&$orderby=@p1 asc,@p2 desc
+&$filter=@p1 ne @p3&@p1=revenue&@p2=name  
 ```  
   
  También puede usar alias de parámetro al usar funciones. Más información: [Usar funciones web API](use-web-api-functions.md).  
@@ -504,7 +524,9 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=@p1
  **Solicitud**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=contains(name,'sample')&$count=true HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$filter=contains(name,'sample')
+&$count=true HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -579,7 +601,8 @@ OData-Version: 4.0
  **Solicitud**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name,donotpostalmail,accountratingcode,numberofemployees,revenue&$top=1 HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,donotpostalmail,accountratingcode,numberofemployees,revenue
+&$top=1 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -638,7 +661,8 @@ Use la opción de consulta del sistema `$expand` en las propiedades de navegaci�
  **Solicitud**  
 
 ```http 
-GET [Organization URI]/api/data/v9.1/incidents(39dd0b31-ed8b-e511-80d2-00155d2a68d4)?$select=title,_customerid_value&$expand=customerid_contact($select=fullname) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/incidents(39dd0b31-ed8b-e511-80d2-00155d2a68d4)?$select=title,_customerid_value
+&$expand=customerid_contact($select=fullname) HTTP/1.1  
 Accept: application/json  
 Content-Type: application/json; charset=utf-8  
 OData-MaxVersion: 4.0  
@@ -685,7 +709,9 @@ El siguiente ejemplo recupera las tareas asignados a los 5 mejores registros de 
 **Solicitud**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=5
+&$select=name
+&$expand=Account_Tasks($select=subject,scheduledstart) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -708,7 +734,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(36dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(36dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"513477\"",
@@ -717,7 +743,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(38dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(38dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"514074\"",
@@ -726,7 +752,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3adbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3adbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"513481\"",
@@ -735,7 +761,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3cdbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3cdbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"514057\"",
@@ -744,7 +770,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3edbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3edbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select=subject,scheduledstart"
           }
        ]
     }
@@ -762,7 +788,9 @@ En este ejemplo, recuperamos el contacto y tareas asignadas a las 3 cuentas supe
 **Solicitud**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=3
+&$select=name
+&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  

@@ -1,7 +1,7 @@
 ---
-title: Crear y compilar un componente de código | Microsoft Docs
-description: Empezar a crear un componente con las herramientas del marco de componentes de PowerApps
-keywords: Marco de componentes de PowerApps, componentes de código, marco de componentes
+title: Crear y generar un componente de código| Microsoft Docs
+description: Empiece a crear un componente mediante útiles de PowerApps component framework
+keywords: 'PowerApps component framework, componentes de código, Component Framework'
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,67 +11,61 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025773"
 ---
-# <a name="create-and-build-a-code-component"></a>Crear y compilar un componente de código
 
-En este tema se muestra cómo crear e implementar componentes de código mediante la CLI de PowerApps. Asegúrese de que ha instalado [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
+# <a name="create-and-build-a-code-component"></a>Crear y generar un componente de código
 
-## <a name="create-a-new-component"></a>Crear un nuevo componente
+En este tema se demuestra cómo crear e implementar componentes de código mediante PowerApps CLI. Asegúrese de que tiene instalado [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI).
 
-Para empezar, Abra **símbolo del sistema para desarrolladores para VS 2017 después de** instalar la CLI de PowerApps.
+## <a name="create-a-new-component"></a>Crear un componente
 
-1. En el Símbolo del sistema para desarrolladores de VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_code_Component* con el comando `mkdir <Specify the folder name>`.
-2. Vaya a la carpeta recién creada con la `cd <specify your new folder path>` de comandos.
-3. Cree un nuevo proyecto de componente pasando algunos parámetros básicos mediante el comando:
+Para empezar, abra un nuevo **Developer Command Prompt for VS 2017** después de instalar PowerApps CLI.
 
-    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
+1. En el Developer Command Prompt for VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_PCF_Component* utilizando el comando `mkdir <Specify the folder name>`.
+2. Vaya a la carpeta recién creada usando el comando `cd <specify your new folder path>`.
+3. Ejecute el comando siguiente para crear un nuevo proyecto de componente pasando algunos parámetros básicos:
+
+    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
  
    > [!NOTE]
-   > Actualmente, la CLI de PowerApps admite dos tipos de componentes: **Field** y **DataSet** para aplicaciones controladas por modelos.  En el caso de las aplicaciones de Canvas, solo se admite el tipo de **campo** para esta vista previa experimental.
+   > Actualmente PowerApps CLI admite dos tipos de componentes: **campo** y **conjunto de datos**.  Para aplicaciones de lienzo, solo se admite el tipo **campo** para esta vista previa piloto.
 
-4. Para recuperar todas las dependencias necesarias del proyecto, ejecute el comando `npm install`.
-5. Abra la carpeta del proyecto `C:\Users\<your name>\Documents\<My_code_Component>` en el entorno de desarrollador que prefiera y empiece a trabajar con el desarrollo de componentes de código. La forma más rápida de empezar es mediante la ejecución de `code .` desde el símbolo del sistema una vez que se encuentra en el directorio `C:\Users\<your name>\Documents\<My_code_Component>`. Este comando abre el proyecto de componente en Visual Studio Code.
-6. Implemente los artefactos necesarios para el componente como el manifiesto, la lógica del componente y el estilo y, a continuación, compile el proyecto de componente. Más información: [implementación](implementing-controls-using-typescript.md) de un componente de ejemplo
+4. Para recuperar todas las dependencias necesarias de proyecto, ejecute el comando `npm install`.
+5. Abra la carpeta de proyecto `C:\Users\<your name>\Documents\<My_PCF_Component>` en cualquier entorno de desarrollo de su elección y empiece con el desarrollo del componente de código. La forma más rápida de empezar es ejecutando `code .` desde el símbolo del sistema una vez que está en el directorio `C:\Users\<your name>\Documents\<My_PCF_Component>`. Este comando abre el proyecto de componente en Código de Visual Studio.
 
-## <a name="build-your-component"></a>Compilar el componente
+## <a name="build-your-component"></a>Crear su componente
 
-Para compilar el proyecto de componente, abra la carpeta de proyecto que contiene `package.json` en Visual Studio Code y use el comando (Ctrl-Shift-B) y, a continuación, seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente con el comando `npm run build` en la ventana Símbolo del sistema para desarrolladores para VS 2017.
+Para generar el proyecto de componentes abra la carpeta de proyecto que contiene `package.json` en Código de Visual Studio y use el comando (Ctrl-Mayús-B), y luego seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017
 
 > [!TIP]
-> Para depurar el componente durante o después de la operación de compilación, vea [depurar un componente de código](debugging-custom-controls.md).
+> Para depurar el componente durante o después de operaciones de compilación, consulte [Depurar un componente de código](debugging-custom-controls.md).
 
-Una vez que haya terminado de implementar la lógica del componente en TypeScript, debe agrupar todos los elementos de componente de código en un archivo de solución para poder importar la solución en Common Data Service. Más información: [empaquetar un componente de código](import-custom-controls.md)
+Una vez que haya finalizado de implementar la lógica de componente en TypeScript, necesita agrupar todos los elementos de componente de código en un archivo de solución para que pueda importar la solución en Common Data Service. Más información: [Empaquetar un componente de código](import-custom-controls.md)
 
-## <a name="known-configuration-issues-and-workarounds"></a>Problemas y soluciones de configuración conocidos
+## <a name="known-configuration-issues-and-workarounds"></a>Problemas conocidos de configuración y soluciones alternativas
 
-**Error de MSBuild MSB4036:**
+**Msbuild error MSB4036:**
 
-1. El nombre de la tarea en el archivo de proyecto es el mismo que el nombre de la clase de tarea.
-2. La clase de tarea es pública e implementa la interfaz Microsoft. Build. Framework. ITask.
-3. La tarea se ha declarado correctamente con *\<UsingTask >* en el archivo de proyecto o en los archivos *. Tasks ubicados en el directorio path.
+1. El nombre de la tarea en el archivo del proyecto es igual que el nombre de la clase de tarea.
+2. La clase de tarea es pública e implementa la interfaz de Microsoft.Build.Framework.ITask.
+3. La tarea se declara correctamente con *\<UsingTask>* en el archivo de proyecto o en los archivos *.tasks situados en el directorio de la ruta.
 
-**Traducción**
+**Resolución**
 
 1. Abra Instalador de Visual Studio. 
-1. Para Visual Studio 2017, seleccione **modificar**. 
-1. Seleccione **componentes individuales**.
-1. En herramientas de código, compruebe los **destinos de NuGet & las tareas de compilación**.
+1. Para VS 2017, seleccione **Modificar**. 
+1. Haga clic en Componentes individuales.
+1. En Herramientas de código, active **Destinos de NuGet y tareas de compilación**.
 
-**Prefijo del publicador**
+**Prefijo de publicador**
 
-Si un componente se crea con una versión de herramientas de la CLI de PowerApps inferior a 0.4.3, se producirá un error al intentar volver a importar el archivo de solución en Common Data Service. El error se produce porque el nombre del componente recién importado se anexa ahora con el prefijo del publicador para garantizar su exclusividad y evitar colisiones.
+Si se crea un componente con una versión de útiles de PowerApps CLI menor que 0.4.3, se producirá un error al intentar reimportar el archivo de solución en Common Data Service. Se produce el error porque el nombre del componente recién importado se anexa ahora con el prefijo del editor para garantizar su singularidad y evitar colisiones.
 
 **Solución alternativa**:
 
-- Elimine la solución que contiene el componente correspondiente de Common Data Service. Si el componente ya está configurado en un formulario o una cuadrícula, debe quitarlo primero porque la solución de componentes tenía una dependencia en la configuración.  
-- Importe la nueva solución con actualizaciones al componente creado con la versión más reciente de la CLI.
-- Los componentes recién importados se pueden configurar ahora en formularios o cuadrículas.  
+- Elimine la solución que contiene el componente relevante de Common Data Service. Si el componente ya está configurado en un formulario o una cuadrícula, debe quitarlo primero de ahí ya que la solución de componente tenía dependencia de la configuración.  
+- Importe la nueva solución con actualizaciones en el componente compilado por la última versión de CLI.
+- Los componentes recién importados ahora pueden configurarse en formularios o cuadrículas.  
 
 
 <!--2. When the components are created with the publisher prefix in mixed or upper case using the new CLI tooling version, it throws an error while importing the solution. This happens because the updated tooling version (0.4.3 and newer) now enforces the platform standard for lower case publisher prefix.
@@ -83,9 +77,9 @@ Si un componente se crea con una versión de herramientas de la CLI de PowerApps
 
 ### <a name="see-also"></a>Vea también
 
-[Componentes de código de depuración](debugging-custom-controls.md)<br/>
-[Empaquetar un componente de código](import-custom-controls.md)<br/>
+[Depurar componentes de código](debugging-custom-controls.md)<br/>
+[Empaquete un componente de código](import-custom-controls.md)<br/>
 [Agregar componentes de código a un campo o una entidad](add-custom-controls-to-a-field-or-entity.md)<br/>
 [Actualizar componentes de código existentes](updating-existing-controls.md)<br/>
-[Referencia de la API del marco de componentes de PowerApps](reference/index.md)<br/>
-[Información general sobre el marco de componentes de PowerApps](overview.md)
+[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
+[Información general sobre PowerApps component framework](overview.md)

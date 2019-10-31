@@ -2,7 +2,7 @@
 title: Realizar operaciones condicionales mediante la API web (Common Data Service)| Microsoft Docs
 description: Aprenda a crear condiciones que decidan si y cómo realizar ciertas operaciones mediante la API web
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 08/31/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -85,7 +85,7 @@ Una operación upsert funciona normalmente creando una entidad si no existe; de 
  
 ### <a name="prevent-create-in-upsert"></a>Evitar crear en upsert
 
-Si actualiza datos y hay alguna posibilidad de que se eliminó la entidad forma intencionada, no resulta conveniente volver a crear la entidad. Para evitar este problema, agregue un encabezado `If-Match` a la solicitud con un valor de "`*`".  
+Si actualiza datos y hay alguna posibilidad de que se eliminó la entidad forma intencionada, no resulta conveniente volver a crear la entidad. Para evitar este problema, agregue un encabezado `If-Match` a la solicitud con un valor de "*".  
   
  **Solicitud**  
 ```http  
@@ -93,7 +93,7 @@ PATCH [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-00000000
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
-If-Match: "*"  
+If-Match: *  
   
 {  
     "name": "Updated Sample Account ",  
@@ -130,7 +130,7 @@ Content-Type: application/json; odata.metadata=minimal
   
 ### <a name="prevent-update-in-upsert"></a>Evitar actualizar en upsert
 
-Si está insertando datos, hay posibilidad de que un registro con el mismo valor `id` ya exista en el sistema y es posible que no desee actualizarlo. Para evitarlo, agregue un encabezado `If-None-Match` a la solicitud con un valor de "`*`".  
+Si está insertando datos, hay posibilidad de que un registro con el mismo valor `id` ya exista en el sistema y es posible que no desee actualizarlo. Para evitar este problema, agregue un encabezado `If-None-Match` a la solicitud con un valor de "*".  
   
  **Solicitud**  
 ```http  
@@ -138,7 +138,7 @@ PATCH [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-00000000
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
-If-None-Match: "*"  
+If-None-Match: *  
   
 {  
     "name": "Updated Sample Account ",  

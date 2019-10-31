@@ -25,9 +25,7 @@ search.app:
 
 Los útiles de XRM le proporcionan los siguientes cmdlets de **Windows PowerShell** que puede utilizar para conectarse a Common Data Service y recuperar las organizaciones a las que el usuario actual tiene acceso: `Get-CrmConnection` y `Get-CrmOrganizations`.  
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Usar cmdlets de PowerShell para útiles de XRM para conectarse a Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-powershell-cmdlets-xrm-tooling-connect)
-  
+ 
 <a name="Prereq"></a>   
 
 ## <a name="prerequisites"></a>Requisitos previos  

@@ -1,7 +1,7 @@
 ---
 title: Proveedores de datos de entidad virtuales personalizados (Common Data Service) | Microsoft Docs
 description: 'Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.'
-ms.date: 10/31/2018
+ms.date: 09/05/2019
 ms.service: powerapps
 ms.topic: article
 applies_to:
@@ -30,18 +30,11 @@ Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET 
 Los proveedores de datos personalizados requieren recursos de desarrollo importantes para crear y mantener. Debe tener conocimiento fundamental de las áreas siguientes:
 
 - El esquema de origen de datos externos y las técnicas de acceso a datos asociadas.  Este conocimiento de dominio es específico del tipo de origen de datos externos.
-
-
-<!-- TODO:
-- Common Data Service metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
-- Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
-- Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
+- Esquema de metadatos de Common Data Service: Más información: [Trabajar con metadatos mediante código](../metadata-services.md).
+- Marco de trabajo de eventos de Common Data Service: Más información: [Marco de eventos](../event-framework.md). 
+- Arquitectura y desarrollo de complementos de Common Data Service: Más información: [Usar complementos para ampliar procesos de negocio](../plug-ins.md).
 
 El ensamblado `Microsoft.Xrm.Sdk.Data.dll` está disponible como paquete de NuGet: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
-
-<!-- ## Data Provider Architecture -->
-<!-- TODO: it would be nice to have a more detailed architecture diagram of a data provider and add discussion. -->
-
 
 ## <a name="categories-of-providers"></a>Categorías de proveedores
 
@@ -96,11 +89,6 @@ Si por cualquier motivo, el código no logra el resultado previsto, deberá lanz
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.ObjectNotFoundException>|El registro especificado en el origen de datos externos no existe.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.TimeoutException>|No se ha completado la operación externa en el tiempo permitido. Por ejemplo, el resultado de un estado HTTP 408 del servicio de datos externos.|
 
-<!-- 
-  TODO:
-  To assist you in plug-in development, the Data SDK contains the _Plugin Profiler and Debugger_; for more information see [TBD]TODO: Obtain information on this tool, create subtopic. 
--->
-
 
 ### <a name="plug-in-registration"></a>Registro de complementos
 
@@ -113,6 +101,11 @@ A diferencia de un complemento normal, solo usará la Plugin Registration Tool (
 |[EntityDataSource](../reference/entities/entitydatasource.md)|Proporciona el contexto de la entidad y cualquier información de conexión necesaria para el origen de datos externos, incluidos los secretos necesarios para autenticar.|
 
 Una vez configurados los metadatos de la entidad virtual, los complementos se registran con el PRT y los datos de configuración correctos se establecen en las entidades **EntityDataProvider** y **EntityDataSource**, y la entidad virtual empieza a responder a las solicitudes.
+
+### <a name="debugging-plug-ins"></a>Depuración de complementos
+
+Un proveedor de entidad virtual personalizada es un tipo de complemento. Use la información de estos temas para depurar los complementos para proveedores de entidades virtuales personalizadas: [Depurar complementos](../debug-plug-in.md) y [Tutorial: Depurar un complemento](../tutorial-debug-plug-in.md).
+
 
 ### <a name="see-also"></a>Vea también
 

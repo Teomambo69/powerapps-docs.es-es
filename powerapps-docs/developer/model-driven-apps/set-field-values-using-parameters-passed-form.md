@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Establecer valores de campo usando parámetros pasados a un formulario
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/set-field-values-using-parameters-passed-form -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/set-field-values-using-parameters-passed-form -->
 
 Puede establecer los valores predeterminados para los nuevos registros creados por los usuarios especificando los valores de los atributos en la URL que se usa para abrir el formulario. De forma predeterminada, estos valores se establecen en el formulario, pero los usuarios pueden modificarlos antes de guardar el registro.  
   
@@ -44,6 +44,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 - Para los campos de fecha y hora, use el valor de texto de la fecha.  
   
 <a name="BKMK_ExampleSetValueStringFields"></a>   
+
 ## <a name="example-set-the-value-for-string-fields"></a>Ejemplo: Establecimiento del valor para los campos de cadena  
  El siguiente ejemplo establece el valor del campo **Name** de un nuevo registro de cuenta en “New Account”.  
   
@@ -54,6 +55,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 ```  
   
 <a name="BKMK_SetLookupFieldValues"></a>   
+
 ## <a name="set-values-for-lookup-fields"></a>Establecer valores para campos de búsqueda  
  La siguiente tabla describe cinco tipos de campos de búsqueda. Para obtener ejemplos campos de búsqueda, vea [Ejemplo: Establecimiento del valor para los campos de búsqueda](set-field-values-using-parameters-passed-form.md#BKMK_setValueLookupfields) y [Ejemplo: Utilizar Xrm.Navigation.openForm para abrir una nueva ventana](set-field-values-using-parameters-passed-form.md#BKMK_ExampleXrmNavigationOpentForm).  
   
@@ -76,6 +78,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 -   No se pueden establecer los valores para búsquedas de partylist o regarding.  
   
 <a name="BKMK_setValueLookupfields"></a>   
+
 ## <a name="example-set-the-value-for-lookup-fields"></a>Ejemplo: Establecimiento del valor para los campos de búsqueda  
  Para establecer valores para los campos de búsqueda, use el valor de los datos, el valor del nombre y, solo para las búsquedas de cliente o propietario, especifique el valor de tipo para el campo respectivo. El siguiente ejemplo establece el campo de propietario en un usuario denominado “Mark Folkerts”.  
   
@@ -95,6 +98,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 >  Para una búsqueda sencilla como esta, no tiene que establecer un valor de tipo.  
   
 <a name="BKMK_SetValueDateFields"></a>   
+
 ## <a name="example-set-the-value-for-date-fields"></a>Ejemplo: Establecimiento del valor para los campos de fecha  
  El siguiente ejemplo establece el campo **Fecha estimada de cierre** para una nueva oportunidad como 31 de enero de 2011. El valor sin codificar para el parámetro `extraqs` es “estimatedclosedate=01/31/11”.  
   
@@ -103,6 +107,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 ```  
   
 <a name="BKMK_SampleSEtValueOptionSetFields"></a>   
+
 ## <a name="example-set-the-value-for-option-set-fields"></a>Ejemplo: Establecimiento del valor para los campos de conjunto de opciones  
  Para establecer el valor de un campo de **Conjunto de opciones**, establezca el valor entero para la opción. El siguiente ejemplo establece el valor del campo **Role** en “Decision Maker” en un nuevo registro de contacto.  
   
@@ -112,7 +117,8 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
 /main.aspx?etn=contact&extraqs=accountrolecode%3D1&pagetype=entityrecord  
 ``` 
 
-<a name="BKMK_SampleSEtValueMultiSelectOptionSetFields"></a>   
+<a name="BKMK_SampleSEtValueMultiSelectOptionSetFields"></a> 
+  
 ## <a name="example-set-the-value-for-multi-select-option-set-fields"></a>Ejemplo: Establecer el valor para campos de conjuntos de opciones multiselección
 
 Para establecer el valor del campo **conjunto de opciones multiselección**, indique valores enteros para las opciones de la URL que se utiliza para abrir el formulario. Por ejemplo, establezca las opciones para el campo **Aficiones**, el valor sin codificar para el parámetro extraqs será "hobbies=[1,3,4]".   
@@ -122,10 +128,11 @@ Para establecer el valor del campo **conjunto de opciones multiselección**, ind
 ``` 
   
 <a name="BKMK_ExampleXrmNavigationOpentForm"></a>   
+
 ## <a name="example-use-xrmnavigationopenform-to-open-a-new-window"></a>Ejemplo: Utilizar Xrm.Navigation.openForm para abrir una nueva ventana  
  El siguiente ejemplo establece los valores predeterminados de distintos campos y muestra cómo usar la función `Xrm.Navigation`.[openForm](clientapi/reference/Xrm-Navigation/openForm.md). Es equivalente al ejemplo anterior que utilizaba el método `window.open`.  
   
-```javascript  
+```Javascript  
 function OpenNewContact() {  
  var parameters = {};  
  //Set the Parent Customer field value to “Contoso”.  
@@ -155,10 +162,11 @@ function OpenNewContact() {
 ```  
   
 <a name="BKMK_ExampleWindowOpen"></a>   
+
 ## <a name="example-use-windowopen-to-open-a-new-window"></a>Ejemplo: Uso de window.open para abrir una ventana nueva  
  El siguiente ejemplo establece los valores predeterminados de varios campos distintos y muestra cómo usar [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx) para codificar el valor del parámetro `extraqs`. Si usa el método [window.open](https://msdn.microsoft.com/library/ms536651\(VS.85\).aspx), puede controlar las características de la ventana que se abre.  
   
-```jscript  
+```Javascript  
 function OpenNewContact() {  
     //Set the Parent Customer field value to “Contoso”.  
     var extraqs = "parentcustomerid={F01F3F6D-896E-DF11-B414-00155DB1891A}";  
@@ -179,6 +187,7 @@ function OpenNewContact() {
 ```  
   
 ### <a name="see-also"></a>Vea también  
+
  [Abrir formularios y vistas con una dirección URL](open-forms-views-dialogs-reports-url.md)   
  [openForm](clientapi/reference/Xrm-Navigation/openForm.md)  
  [Configurar un formulario para aceptar parámetros querystring personalizados](configure-form-accept-custom-querystring-parameters.md)

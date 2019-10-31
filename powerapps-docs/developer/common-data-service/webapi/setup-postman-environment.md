@@ -1,5 +1,5 @@
 ---
-title: Configurar un entorno Postman (Common Data Service for Apps)| MicrosoftDocs
+title: Configurar un entorno Postman (Common Data Service para aplicaciones)| MicrosoftDocs
 description: Aprenda a instalar y configurar un entorno Postman que se conecte con entornos de Common Data Service.
 ms.custom: null
 ms.date: 04/09/2019
@@ -8,8 +8,6 @@ ms.service: powerapps
 ms.suite: null
 ms.tgt_pltfrm: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: 955BA444-A53D-4843-9429-833B1636E2B4
 caps.latest.revision: 7
 author: susikka
@@ -23,27 +21,24 @@ search.app:
 
 # <a name="set-up-a-postman-environment"></a>Configure un entorno Postman
 
-Puede usar Postman para conectarse a su instancia de Common Data Service y para componer solicitudes de la API Web, enviarlas y ver respuestas. Administrar la autenticación un desafío para mucha gente. Este tema describe cómo configurar un entorno Postman para trabajar en entornos de Common Data Service.
+Puede usar Postman para conectarse a su instancia de Common Data Service y componer solicitudes wen API, enviarlas y ver respuestas. Administrar la autenticación un desafío para mucha gente. Este tema describe cómo configurar un entorno Postman para trabajar en entornos de Common Data Service.
 
 Puede usar un entorno Postman para guardar un conjunto de variables que usará para conectarse. Estos valores se pueden agregar en Postman mediante esta sintaxis: `{{name}}`. Para obtener más información sobre variables Postman, consulte [Documentación de Postman > Variables](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables).
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Configurar un entorno Postman (Customer Engagement)](/dynamics365/customer-engagement/developer/webapi/setup-postman-environment)
-
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Obtenga un entorno de Common Data Service de PowerApps al que se pueda conectar. 
+* Obtenga un entorno de PowerApps Common Data Service al que puede conectarse. 
 * Descargue e instale el  [Aplicación de envío para ordenador](https://www.getpostman.com/apps).
 
 <a name="bkmk_connectcds"></a> 
 
-## <a name="connect-with-your-common-data-service-environment"></a>Conectar con el entorno de Common Data Service
+## <a name="connect-with-your-common-data-service-environment"></a>Conectar con su entorno de Common Data Service
 
 Este entorno utiliza un ID de cliente para una aplicación que está registrada para todos los entornos de Common Data Service. 
  
-Puede usar `clientid` y `callback`, los valores propuestos en estas instrucciones.  Sin embargo, al generar su propia aplicación, debe registrar su propia aplicación Azure Active Directory (Azure AD).
+Puede usar `clientid` y `callback`, los valores propuestos en estas instrucciones.  Sin embargo, al generar su propia aplicación, debe registrar su propia aplicación de Azure Active Directory (Azure AD).
  
-Para registrar su propia aplicación de Azure AD, consulte los pasos descritos en [Tutorial: Registrar una aplicación de Common Data Service con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
+Para registrar su propia aplicación de Azure AD, vea los pasos descritos en [Tutorial: Registrar una aplicación de Common Data Service con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
 Use estos pasos para crear un entorno de envío que puede usar para conectarse con su instancia de Common Data Service:
 

@@ -2,7 +2,7 @@
 title: Requisitos de licencia para entidades | Microsoft Docs
 description: Una explicación de los requisitos de licencia para las entidades de Common Data Service.
 author: lancedMicrosoft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
@@ -16,13 +16,17 @@ search.app:
 ---
 
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
+
+> [!IMPORTANT]
+> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de PowerApps](https://go.microsoft.com/fwlink/?linkid=2085130).
+
 Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service (incluidas las entidades personalizadas y las entidades que forman parte del modelo común de datos) para crear aplicaciones y flujos para los usuarios que tienen una licencia de Plan 1 de PowerApps o de Plan 1 de Microsoft Flow. En algunos casos, las entidades contienen lógica de negocios compleja o están ligadas a aplicaciones de Dynamics 365 para las que es necesario que los usuarios tengan una licencia específica. 
 
 
 |Entidad    |Descripción    |Requisito    |
 |---------|---------|---------|
 |Entidades con lógica de negocios compleja   | Estas son entidades que usan una lógica de negocios compleja de servidor. Por ejemplo, cualquier entidad que use un flujo de trabajo en tiempo real o un complemento de código.       |  [Plan de 2 PowerApps](https://powerapps.microsoft.com/pricing/) o [Plan 2 de Flow](https://flow.microsoft.com/pricing/)        |
-|Entidades restringidas  |  Estas son entidades que no son estándar en Common Data Service pero que se incluyen en una aplicación de Dynamics 365 Customer Engagement o en una solución de terceros. Por ejemplo, las entidades de artículo de conocimientos, de objetivo y de derecho.     |  [Un plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)      | 
+|Entidades restringidas  |  Son entidades que no son estándar con Common Data Service pero se incluyen en la aplicación basadas en modelo disponible en Dynamics 365 (como Dynamics 365 Sales o Dynamics 365 Customer Service) o una solución de terceros. Por ejemplo, las entidades de artículo de conocimientos, de objetivo y de derecho.     |  [Un plan de Dynamics 365](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -31,13 +35,13 @@ Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles e
 ## <a name="entities-with-complex-business-logic"></a>Entidades con lógica de negocios compleja
 Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow:
 
-* Complementos de código (para obtener más información, consulte [Desarrollo de complementos](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development))
-* Flujos de trabajo en tiempo real (para obtener más información, consulte [Procesos de flujo de trabajo](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes))
+* Complementos de código (para obtener más información, consulte [Desarrollo de complementos](/powerapps/developer/common-data-service/plug-ins))
+* Flujos de trabajo en tiempo real (para obtener más información, consulte [Procesos de flujo de trabajo](/flow/workflow-processes))
 
     > [!NOTE]
     >  Solo los flujos de trabajo que se convierten a un flujo de trabajo en tiempo real se consideran en tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano pueden usarse con el plan adecuado de PowerApps y no requieren licencias adicionales.
 
-Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno. Para la lista de entidades que puedan contener lógica de servidor después de instalar una aplicación de Dynamics 365, consulte [Entidades complejas que requieren licencias de Plan 2 de PowerApps](data-platform-complex-entities.md)  
+Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno. Para la lista de entidades que pueden contener lógica del lado del servidor después de instalar una aplicación basada en modelo en Dynamics 365 (como Dynamics 365 Sales o Dynamics 365 Customer Service), consulte [Entidades complejas que requieren licencias de PowerApps Plan 2](data-platform-complex-entities.md)  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>Elementos que afectan a los requisitos de licencia al agregar lógica de negocios compleja
 Los creadores de aplicaciones pueden agregar complementos de código y flujos de trabajo en tiempo real a las entidades de Common Data Service, pero el hacerlo podría cambiar los requisitos de licencia para los usuarios de aplicaciones ya implementadas. Los creadores de aplicaciones deben ser prudentes al agregar lógica de negocios compleja a una entidad y primero deben comprobar qué aplicaciones usan la entidad y si los usuarios de esas aplicaciones tienen las licencias adecuadas.
@@ -66,13 +70,13 @@ Barb e Isaac necesitan las licencias siguientes:
 Los usuarios de la aplicación necesitan las licencias siguientes:
 * Los usuarios de la aplicación 1 sólo necesitan una licencia de Plan 1 o de Plan 2 de PowerApps, ya que la aplicación no tiene ninguna entidad con lógica de negocios compleja o entidades restringidas.
 
-* Los usuarios de la aplicación 2 necesitan una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 o Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
+* Los usuarios de la aplicación 2 necesitan una licencia de Dynamics 365 Customer Service, Enterprise Edition (o un plan de Dynamics 365 o Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
 
 * Los usuarios de la aplicación 3 necesitan una licencia de Plan 2 de PowerApps, ya que es una aplicación controlada por modelos.
 
-* Los usuarios de la aplicación 4 necesitan una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 o Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
+* Los usuarios de la aplicación 4 necesitan una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
 
-    El plan de Dynamics 365 for Customer Service incluye una licencia de Plan 2 de PowerApps, lo que permite a los usuarios ejecutar aplicaciones controladas por modelos.
+    El plan de Dynamics 365 for Customer Service incluye una licencia de PowerApps Plan 2, que permite a los usuarios ejecutar aplicaciones basadas en modelo.
 
 Ahora, veamos lo que sucede cuando Isaac agrega un flujo de trabajo en tiempo real a la entidad personalizada que Barb e Isaac usan en sus aplicaciones.
 
@@ -84,13 +88,13 @@ Barb e Isaac necesitan las licencias siguientes:
 Los usuarios de la aplicación necesitan las licencias siguientes:
 * Los usuarios de la aplicación 1 ahora necesitan una licencia de Plan 2 de PowerApps, ya que la aplicación contiene una entidad con un flujo de trabajo en tiempo real.
 
-* Los usuarios de la aplicación 2 siguen necesitando una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 o Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida. 
+* Los usuarios de la aplicación 2 siguen necesitando una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida. 
 
-* Los usuarios de la aplicación 3 siguen necesitando una licencia de Plan 2 de PowerApps, ya que es una aplicación controlada por modelos.
+* Los usuarios de la aplicación 3 siguen necesitando una licencia de Plan 2 de PowerApps, ya que es una aplicación basada en modelos.
 
-* Los usuarios de la aplicación 4 siguen necesitando una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 o Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
+* Los usuarios de la aplicación 4 siguen necesitando una licencia de Dynamics 365 for Customer Service, Enterprise Edition (o un plan de Dynamics 365 Customer Engagement) porque la aplicación incluye una entidad restringida.
 
-    El plan de Dynamics 365 for Customer Service incluye una licencia de Plan 2 de PowerApps, lo que permite a los usuarios ejecutar aplicaciones controladas por modelos.
+    El plan de Dynamics 365 for Customer Service incluye una licencia de PowerApps Plan 2, que permite a los usuarios ejecutar aplicaciones basadas en modelo.
 
 La única aplicación a la que afecta este cambio es la aplicación 1, que antes requería una licencia de Plan 1 de PowerApps, pero ahora requiere una licencia de Plan 2 de PowerApps, porque contiene una entidad con lógica de negocios compleja. 
 

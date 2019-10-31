@@ -1,5 +1,5 @@
 ---
-title: Información general sobre creación y edición de conjuntos de opciones globales (listas desplegables) para Common Data Service | MicrosoftDocs
+title: Creación y edición de conjuntos de opciones globales (listas desplegables) para Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -14,7 +14,8 @@ applies_to:
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -36,7 +37,7 @@ Hay dos diseñadores que puede usar para crear o editar conjuntos de opciones gl
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear un conjunto de opciones](custom-picklists.md) |
+|[Portal PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear un conjunto de opciones](custom-picklists.md) |
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]

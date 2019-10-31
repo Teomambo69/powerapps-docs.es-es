@@ -1,7 +1,7 @@
 ---
 title: Comprender el modelo de objeto de API de cleinte en aplicaciones basadas en modelos| MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
   - Dynamics 365 (online)
@@ -37,7 +37,7 @@ En la raíz del modelo de objetos de la API del cliente están los siguientes co
 |--|--|
 |**executionContext**|Representa el contexto de ejecución para un evento en los formularios y cuadrículas de aplicaciones basadas en modelos.<br/>Más información: [Contexto de ejecución de la API del cliente](clientapi-execution-context.md)|
 |**formContext** |Proporciona una referencia a un formulario o un elemento en el formulario con respecto al que se ejecuta el código actual. Para obtener el objeto **formContext**, utilice el método **executionContext**.[getFormContext](reference/executioncontext/getFormContext.md).<br/>Más información: [Contexto de ejecución de la API del cliente](clientapi-form-context.md)|
-|**gridContext** |Proporciona una referencia a un formulario o un elemento en el formulario con respecto al que se ejecuta el código actual.<br/>Más información: [Contexto de cuadrícula de la API del cliente](clientapi-form-context.md)|
+|**gridContext** |Proporciona una referencia a un formulario o un elemento en el formulario con respecto al que se ejecuta el código actual.<br/>Más información: [Contexto de cuadrícula de la API del cliente](clientapi-grid-context.md)|
 |**Xrm**| Proporciona un objeto global para realizar las operaciones que no afectan directamente a los datos y la interfaz de usuario en formularios, cuadrículas, subcuadrículas, controles o atributos. Por ejemplo, vaya a formularios, cree y administre registros mediante la API web.<br/>Más información: [Objeto Xrm de API de cliente](clientapi-xrm.md)|
 
 ### <a name="related-topics"></a>Temas relacionados

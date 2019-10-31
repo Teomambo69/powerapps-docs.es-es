@@ -1,6 +1,6 @@
 ---
-title: " Componente de carga de imagen | Microsoft Docs"
-description: Implementación del componente de carga de imagen con typescript
+title: ' Componente de carga de imagen| Microsoft Docs'
+description: Implementar componente de carga de imagen utilizando typescript
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 755fff0934d74178cdb0546a222d9ca7a3c5d124
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340722"
 ---
+
 # <a name="implementing-an-image-upload-component"></a>Implementar un componente de carga de imagen
 
-Este componente de ejemplo se representa como un botón de `Upload` para cargar la imagen y una imagen predeterminada cuando el componente se carga por primera vez. Al hacer clic en el `Upload`, se abre un explorador de archivos para seleccionar una imagen.
+Este componente de ejemplo se representa como un botón `Upload` para cargar la imagen y una imagen predeterminada cuando se carga el componente por primera vez. Cuando hace clic en `Upload`, aparece un explorador de archivos para seleccionar una imagen.
  
-La imagen seleccionada se representa dentro del componente. Mientras tanto, se muestra el botón `Remove` si es necesario restablecer. Al hacer clic en el botón `Remove`, se muestra la imagen predeterminada.  
+La imagen seleccionada se genera en el componente. Mientras tanto, se muestra el botón `Remove` si es necesario reinicializar. Al hacer clic en el botón `Remove`, se muestra la imagen predeterminada.  
 
 > [!div class="mx-imgBorder"]
-> (../media/image-upload-control.png "Componente de carga de imagen") de componente de carga de ![imagen]
+> ![Componente de carga de imagen](../media/image-upload-control.png "Componente de carga de imagen")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos 
+Aplicaciones basadas en modelos 
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -370,9 +365,9 @@ export class TSImageUploadControl
 </root>
 ```
 
-En este ejemplo se muestra cómo crear un selector de imágenes y se muestran la API de dispositivos y la API de recursos para cargar la imagen definida en el manifiesto. El contenido de la imagen se almacena en codificación Base64 y se puede guardar y volver a visitar.  
+Este ejemplo muestra cómo crear un selector de imagen y muestra la API de dispositivo y la API de recursos para cargar la imagen definida en manifiesto.El contenido de la imagen se almacena en codificación base64 y se puede guardar y recuperar.  
 
-El método `resources.getResource` toma la entrada como el nombre WebResource definido en el manifiesto del componente y carga ese WebResource. El componente representa un botón de `Upload` y la imagen predeterminada para la representación inicial. Las imágenes se definen en el nodo de [recursos](../reference/resources.md) del manifiesto.  
+El método `resources.getResource` toma la entrada como el nombre de recurso web definido en el manifiesto del componente y carga ese recurso web. El componente genera un botón `Upload` y la imagen predeterminada para la representación inicial. Las imágenes se definen en el nodo [recurso](../reference/resources.md) del manifiesto.  
 
 ```xml
     <resources>
@@ -383,15 +378,15 @@ El método `resources.getResource` toma la entrada como el nombre WebResource de
     </resources> 
  ```
  
-El `successCallback` se desencadenará y el contenido del recurso inyecta en el `successCallback`. A continuación, se usa el elemento de imagen ' src ' para el contenido y las cargas de imágenes predeterminadas.
+La `successCallback` se desencadenará y el contenido del recurso se inserta en la `successCallback`. A continuación use el 'src' del elemento de imagen para apuntar al contenido y se carga la imagen predeterminada.
  
-El método `device.pickFile` abre un cuadro de diálogo para seleccionar archivos del equipo (cliente web) o dispositivo móvil (clientes móviles). Para el escritorio, se abre el explorador de archivos, para el cliente móvil, se abre la biblioteca de la foto. Al hacer clic en el botón  `upload`, la API de dispositivo  `pickFile` se desencadena y el usuario selecciona el archivo. Una vez que el archivo se haya seleccionado correctamente, el nombre de archivo del archivo se insertará en el `successCallback`. 
+El método `device.pickFile` abre un cuadro de diálogo para seleccionar archivos de su equipo (cliente web) o dispositivo móvil (clientes móviles). Para el escritorio, abre el explorador de archivos, para el cliente móvil, abre la biblioteca de la foto. Al hacer clic en el botón  `upload`, se desencadena el  `pickFile` de la API de dispositivo y el usuario selecciona el archivo. Una vez seleccionado el archivo correctamente, el nombre del archivo, el contenido del archivo se insertará en la `successCallback`. 
 
 > [!NOTE]
-> Si se usa la misma forma o entidad en el cliente web heredado, el campo mostrará el componente de texto no integrado en el cliente web heredado, donde podría haber problemas con la experiencia de usuario.  Para que esté oculto en el cliente web heredado, se puede desactivar la casilla **visibilidad** y activar la casilla **ocultar control predeterminado** junto. 
+> Si el mismo formulario o entidad se usa en el antiguo cliente web, el campo mostrará el componente de texto predefinido en el antiguo cliente web, donde puede haber problemas de UX.  Para hacer que esté oculto en el antiguo cliente web, podríamos desactivar la casilla **Visibilidad** y activar la casilla **Ocultar control predeterminado** a la vez. 
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

@@ -2,7 +2,7 @@
 title: Cuaderno de estrategias de la interfaz unificada | MicrosoftDocs
 description: Aprenda a planear y ejecutar la transición del cliente web heredado a la interfaz unificada
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/29/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -40,4 +40,6 @@ En resumen, los documentos del cuaderno de estrategias de la interfaz unificada 
 |[Información general del cuaderno de estrategias de la interfaz unificada](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
 |[Capítulo 1: Iniciar](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
 |[Capítulo 2: Explorar](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
+| [Capítulo 3: Transición](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
+| [Capítulo 4: Optimizar](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 

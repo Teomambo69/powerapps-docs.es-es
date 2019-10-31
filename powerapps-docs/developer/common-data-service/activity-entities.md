@@ -1,6 +1,6 @@
 ---
 title: Entidades de actividad (Common Data Service) | Microsoft Docs
-description: 'En Dynamics 365 (en línea), las actividades son las tareas que usted o sus equipos realizan cuando se ponen en contacto con los clientes, por ejemplo, enviar cartas o hacer llamadas de teléfono.'
+description: 'En Dynamics 365 (online), las actividades son las tareas que usted o sus equipos realizan cuando se ponen en contacto con los clientes, por ejemplo, enviar cartas o hacer llamadas de teléfono.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -49,8 +49,7 @@ En Common Data Service, las actividades son las tareas que usted o sus equipos r
  [Código de ejemplo para entidades de actividad](/dynamics365/customer-engagement/developer/sample-code-activity-entities)  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Modele sus datos profesionales con Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/model-business-data)  
-  
+   
  [Entidades de sincronización del lado del servidor](server-side-synchronization-entities.md)  
   
  [Personalizar metadatos de entidad](customize-entity-metadata.md)

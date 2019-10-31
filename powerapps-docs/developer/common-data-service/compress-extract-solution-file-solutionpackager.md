@@ -1,6 +1,6 @@
 ---
 title: Herramienta SolutionPackager (Common Data Service) | Microsoft Docs
-description: SolutionPackager es una herramienta que puede descomponer de forma reversible un archivo comprimido de solución Dynamics 365 Customer Engagement en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente.
+description: SolutionPackager es una herramienta que puede descomponer de forma reversible un archivo de solución comprimido de Common Data Service en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="solutionpackager-tool"></a>Herramienta SolutionPackager 
 
-SolutionPackager es un herramienta que puede descomponer de forma reversible un archivo comprimido de solución de Common Data Service en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente. Las secciones siguientes muestran cómo ejecutar la herramienta y cómo usar la herramienta con soluciones administradas y no administradas.  
+SolutionPackager es una herramienta que puede descomponer de forma reversible un archivo de solución comprimido de Common Data Service en varios archivos XML y otros archivos de forma que el sistema de control de código fuente pueda administrarlos fácilmente. Las secciones siguientes muestran cómo ejecutar la herramienta y cómo usar la herramienta con soluciones administradas y no administradas.  
   
 <a name="bkm_where"></a>   
 

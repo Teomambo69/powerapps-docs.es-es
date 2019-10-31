@@ -1,6 +1,6 @@
 ---
 title: Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
-description: Los útiles de XRM le permiten conectarse a su entorno de Common Data Service mediante las cadenas de conexión
+description: Los útiles de XRM le permiten conectarse al entorno de Common Data Service mediante cadenas de conexión.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -23,10 +23,8 @@ search.app:
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service
 
-Con Common Data Service, los útiles de XRM le permiten conectarse a su entorno de Common Data Service mediante las cadenas de conexión. Esto es similar al concepto de cadenas de conexión que se utilizan con **SQL Server**. Las cadenas de conexión tienen compatibilidad nativa en archivos de configuración, incluida la capacidad de cifrar las secciones de configuración para máxima seguridad. Esto permite configurar las conexiones de Common Data Service en tiempo de implementación, y no codificar de forma rígida en su aplicación para conectarse al entorno de Common Data Service.  
+Con Common Data Service, los útiles de XRM le permiten conectarse al entorno de Common Data Service mediante cadenas de conexión. Esto es similar al concepto de cadenas de conexión que se utilizan con **SQL Server**. Las cadenas de conexión tienen compatibilidad nativa en archivos de configuración, incluida la capacidad de cifrar las secciones de configuración para máxima seguridad. Esto permite configurar las conexiones de Common Data Service en tiempo de implementación, y no codificar de forma rígida en su aplicación para conectarse al entorno de Common Data Service.  
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Usar cadenas de conexión para conectarse a Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect)
 
 <a name="Create"></a> 
 
@@ -55,7 +53,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 > [!NOTE]
 > Tendrá que usar la directiva `using` en siguiente el código para hacer referencia al espacio de nombres de `System.Configuration` para obtener acceso a la cadena de conexión en el código: `using System.Configuration;`  
   
- Después de crear un objeto <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>, puede usar el objeto para realizar acciones en Common Data Service. Más información: [Use los útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)  
+ Después de crear un objeto <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>, puede usar el objeto para realizar acciones en Common Data Service. Más información: [Usar útiles de XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)  
   
 <a name="Parameters"></a>
 
@@ -65,12 +63,12 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
   
 |Nombre del parámetro|Descripción|  
 |--------------------|-----------------|  
-|`ServiceUri`, `Service Uri`, `Url` o `Server`|Especifica la dirección URL del entorno de Common Data Service La URL puede utilizar el protocolo http o https, y el puerto es opcional. El puerto predeterminado es 80 para el protocolo http y 443 para el protocolo https. La dirección URL del servidor suele encontrarse en el formato `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Se requiere el nombre de la organización.|  
+|`ServiceUri`, `Service Uri`, `Url` o `Server`|Especifica la dirección URL del entorno de Common Data Service. La URL puede utilizar el protocolo http o https, y el puerto es opcional. El puerto predeterminado es 80 para el protocolo http y 443 para el protocolo https. La dirección URL del servidor suele encontrarse en el formato `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Se requiere el nombre de la organización.|  
 |`Domain`|Especifica el dominio que comprobará las credenciales de usuario.|  
 |`UserName`, `User Name`, `UserId` o `User Id`|Especifica el nombre de identificación del usuario asociado con las credenciales.|  
 |`Password`|Especifica la contraseña del nombre de usuario asociado con las credenciales.|  
 |`HomeRealmUri` o `Home Realm Uri`|Especifica el Uri de dominio de inicio|  
-|`AuthenticationType` o `AuthType`|Especifica el tipo de autenticación para conectarse al entorno de Common Data Service. Los valores válidos son: `AD`, `IFD` (AD FS habilitado), `OAuth` o `Office365`.<br /><br /> -   `AD` y `IFD` se permiten para entornos locales de Common Data Service únicamente.<br />-   `OAuth` se permite para entornos de Common Data Service y locales.<br />-   `Office365` se permite solo para entornos de Common Data Service y locales.|  
+|`AuthenticationType` o `AuthType`|Especifica el tipo de autenticación para conectarse al entorno de Common Data Service. Los valores válidos son: `AD`, `IFD` (AD FS habilitado), `OAuth` o `Office365`.<br /><br /> -   `AD` y `IFD` se permiten para entornos locales de Common Data Service únicamente.<br />-   `OAuth` se permite para Common Data Service y entornos locales.<br />-   `Office365` se permite para entornos de Common Data Service únicamente.|  
 |`RequireNewInstance`|Indica si se debe volver a usar una conexión existente si se vuelve a hacer la llamada mientras la conexión sigue activa. El valor predeterminado es `false` que indica que la conexión existente se reutilizará. Si se establece en `true`, se obliga al sistema a crear una conexión única.|  
 |`ClientId`, `AppId` o `ApplicationId`|Especifica el `ClientID` asignado cuando se registró su aplicación en Azure Active Directory o Servicios de federación de Active Directory (AD FS).<br /><br /> Este parámetro es aplicable solo cuando especifica el tipo de autenticación como `OAuth`.|  
 |`RedirectUri` o `ReplyUrl`|Especifica el URI de redirección de la aplicación que registró en Azure Active Directory o Servicios de federación de Active Directory (AD FS).<br /><br /> Este parámetro es aplicable solo cuando especifica el tipo de autenticación como `OAuth`.|  
@@ -84,7 +82,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 
 ## <a name="connection-string-examples"></a>Ejemplos de cadena de conexión
  
-Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con implementaciones y escenarios de autenticación. Los ejemplos de la cadena de conexión para instancias locales y de implementación IFD están ahora disponibles en la documentación de Customer Engagement en: [Usar cadenas de conexión en útiles de XRM para conectarse a Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
+Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con implementaciones y escenarios de autenticación. Los ejemplos de la cadena de conexión para instancias locales y de implementación IFD están ahora disponibles en la documentación de Dynamics 365 Customer Engagement (on-premises) en: [Usar cadenas de conexión en útiles de XRM para conectarse a Customer Engagement](/dynamics365/customer-engagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
 ### <a name="named-account-using-office-365"></a>Cuenta con nombre utilizando Office 365  
   
@@ -136,5 +134,5 @@ Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar c
 
 [Crear aplicaciones cliente de Windows mediante las herramientas XRM](build-windows-client-applications-xrm-tools.md)<br />
 [Usar constructores CrmServiceClient para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Use los útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)<br />
+[Usar herramientas XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)<br />
 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>

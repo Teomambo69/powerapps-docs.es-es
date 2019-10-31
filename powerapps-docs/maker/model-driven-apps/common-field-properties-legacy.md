@@ -1,6 +1,6 @@
 ---
-title: Propiedades de campos comunes de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
-description: Comprender las propiedades comunes de los campos para el formulario Principal en Dynamics 365 for Customer Engagement
+title: Propiedades de campos comunes de aplicaciones basadas en modelos en PowerApps | MicrosoftDocs
+description: Comprender las propiedades de campo común para formularios principales
 Keywords: Formulario principal; Propiedades de campos comunes; Dynamics 365
 author: Mattp123
 ms.author: matp

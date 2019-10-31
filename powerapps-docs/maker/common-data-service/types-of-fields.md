@@ -2,7 +2,7 @@
 title: Tipos de datos de campo en Common Data Service | MicrosoftDocs
 description: Comprender los distintos tipos de datos de campos disponibles para su aplicación
 keywords: ''
-ms.date: 06/27/2018
+ms.date: 09/30/2019
 ms.service: powerapps
 ms.custom: null
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="types-of-fields"></a>Tipos de campos
 
-Los nombres usados para los tipos dependen del diseñador usado. [Portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) usa una convención que incluye la forma en que están formateados los datos. El tipo de explorador de soluciones usa un nombre alineado con el tipo de datos de la base de datos con un modificador de formato. La tabla siguiente incluye el tipo de API `AttributeTypeDisplayName` correspondiente.
+Los nombres usados para los tipos dependen del diseñador usado. El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) usa una convención que incluye la forma en que están formateados los datos. El tipo de explorador de soluciones usa un nombre alineado con el tipo de datos de la base de datos con un modificador de formato. La tabla siguiente incluye el tipo de API `AttributeTypeDisplayName` correspondiente.
 
 |Tipo de datos del portal |Tipo de explorador de soluciones| Tipo de API|
 |--|--|--|
@@ -155,11 +155,14 @@ Sin embargo, debe conocer que no todas las búsquedas se comportan de esta forma
 
 Use los campos de imagen para presentar una sola imagen por cada registro de la aplicación. Cada entidad puede tener un campo de imagen. Puede agregar un campo de imagen a entidades personalizadas pero no a entidades estándar. Algunas entidades estándar tienen campos de imágenes definidos.
   
-Aunque una entidad tenga un campo de imagen, la visualización de dicha imagen en una aplicación controlada por modelos requiere un paso adicional. En la definición de la entidad, los valores del campo **Imagen principal** son **[Ninguna]** o **Imagen de la entidad**. Seleccione **Imagen de la entidad** para visualizar la imagen en la aplicación.  
+Aunque una entidad tenga un campo de imagen, la visualización de dicha imagen en una aplicación controlada por modelos requiere que habilite dos ajustes. 
+- El valor de propiedad **Imagen principal** de la definición de entidad estándar se debe establecer como **Imagen predeterminada**. Las entidades personalizadas requieren un campo de imagen personalizado. A continuación, puede seleccionar ese campo de imagen para el valor **Imagen principal** en la definición de entidad personalizada.  
+- El formulario de entidad donde se debe mostrar la imagen debe tener la propiedad **Mostrar la imagen en el formulario** habilitada.  
   
 Cuando se habilita la visualización de la imagen para una entidad, cualquier registro que no tenga una imagen mostrará una imagen de marcador de posición. Por ejemplo:
 
-![Imagen de marcador de posición](../common-data-service/media/lead-entity-form.PNG)
+> [!div class="mx-imgBorder"] 
+> ![Imagen de entidad predeterminada](../common-data-service/media/account-record-default-image.png "Imagen de entidad de cuenta predeterminada")
   
 Los usuarios pueden elegir la imagen predeterminada para cargar una imagen desde su equipo. Las imágenes deben ser de tamaño inferior a 5120 KB y deben tener uno de los siguientes formatos:  
   
@@ -175,6 +178,40 @@ Cuando la imagen se cargue, se convertirá al formato .jpg y todas las imágenes
   
 Cuando se cargue una imagen, su tamaño se modificará hasta una tamaño máximo de 144 píxeles por 144 píxeles. Los usuarios deben cambiar el tamaño de las imágenes o recortarlas antes de cargarlas, de modo que se muestren correctamente con este tamaño. Todas las imágenes se recortan para ser cuadradas. Si ambos lados de una imagen son más pequeños que 144 píxeles, la imagen se recortará para que sea cuadrada con las dimensiones del más pequeño.  
 
+### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>Agregar compatibilidad de imagen para un formulario en una entidad personalizada usando el explorador de soluciones
+1. Abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer). 
+2. En el panel de navegación izquierda, expanda **Entidades**, expanda la entidad personalizada que desee y luego seleccione **Campos**. 
+3. En la barra de herramientas, seleccione **Nuevo**. 
+4. En la sección **Tipo** en la lista desplegable **Tipo de datos** seleccione **Imagen**. 
+5. Escriba un **Nombre para mostrar**, como *Imagen de entidad personalizada*. 
+6. Complete los campos restantes como corresponda. Tenga en cuenta que los campos **Nombre**, **Requisitos de campo** y **Búsqueda** no podrán cambiarse. Seleccione **Guardar y cerrar**. 
+7. En la definición de entidad junto a la propiedad **Imagen principal** asegúrese de que el valor se ha configurado como la imagen personalizada que creó en el paso anterior. Si no es así, selecciónela.  
+    ![Propiedad de imagen principal seleccionada](media/primary-image-property.png)
+
+8.  Abra el formulario donde desea compatibilidad de imagen, como el formulario principal de entidad. 
+9.  En la cinta de opciones del editor de formularios, seleccione **Propiedades del formulario**. 
+10. En la página **Propiedades de formulario**, seleccione la pestaña **Mostrar**, seleccione **Mostrar imagen en el formulario** y, a continuación seleccione **Aceptar**. 
+
+    > [!div class="mx-imgBorder"] 
+    > ![Mostrar imagen en configuración de formulario](media/show-image-on-form.png "Mostrar imagen en configuración de formulario")
+
+11. En la cinta de opciones del editor de formularios, seleccione **Guardar** y, después, seleccione **Publicar**. Cierre el editor de formularios. 
+
+Los usuarios de la aplicación ahora pueden seleccionar la imagen para mostrar en el formulario. Cuando un usuario abre el formulario para un registro, puede elegir la imagen que desea mostrar en el formulario. 
+
+> [!IMPORTANT]
+> Si el registro es un nuevo registro que no se ha guardado, el error Argumento no válido se devuelve al intentar cambiar la imagen. 
+
+#### <a name="change-the-image-for-a-record"></a>Cambiar la imagen para un registro
+1. Abra la aplicación que incluye el formulario de entidad y luego seleccione la imagen en el formulario. 
+   > [!div class="mx-imgBorder"] 
+   > ![Imagen de entidad predeterminada](../common-data-service/media/default-entity-image-on-form.png "Imagen de entidad predeterminada")
+
+2. Seleccione **Cargar imagen**, examine y seleccione la imagen que desea mostrar en el formulario de entidad y, a continuación seleccione **Cambiar**. La imagen aparecerá en el registro. 
+   > [!div class="mx-imgBorder"] 
+   > ![Imagen cambiada guardada a un registro](../common-data-service/media/custom-entity-icon-record.png "Imagen cambiada guardada a un registro")
+
+
 Más información para desarrolladores que trabajan con datos de imágenes:
 - [Metadatos de entidad > Imágenes de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Guía para desarrolladores de Dynamics 365 Customer Engagement:Atributos de imagen](/dynamics365/customer-engagement/developer/image-attributes)
+- [Atributos de imagen](/powerapps/developer/common-data-service/image-attributes)

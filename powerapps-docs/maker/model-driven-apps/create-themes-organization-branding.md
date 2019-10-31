@@ -68,7 +68,7 @@ Puede crear una vista y una sensación personalizadas (un tema) para su aplicaci
 ## <a name="copy-and-alter-the-existing-theme"></a>Copie y edite el tema existente  
  La forma más sencilla y rápida de crear un tema nuevo es clonar uno existente y modificarlo. Después, debe guardarlo, mostrar una vista previa y publicarlo. 
  
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Controlado por modelo** (parte inferior izquierda). 
 
@@ -143,5 +143,5 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
   
 ## <a name="see-also"></a>Vea también  
          
- [Vídeo: Temas en Dynamics 365 Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Vídeo: Temas](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

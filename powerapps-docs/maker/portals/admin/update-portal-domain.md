@@ -1,38 +1,33 @@
 ---
-title: Actualización desde el dominio de Dynamics 365 al dominio de portales de PowerApps | MicrosoftDocs
+title: Actualizar desde el dominio de Dynamics 365 al dominio de portales de PowerApps | MicrosoftDocs
 description: Instrucciones para actualizar desde el dominio de Dynamics 365 al dominio de portales de PowerApps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: f8856b5d21b803e647e5439aeb47b4840256e9f0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975642"
+ms.reviewer: null
 ---
-# <a name="update-to-powerapps-portals-domain"></a>Actualización al dominio de portales de PowerApps
 
-Con el lanzamiento de portales de PowerApps, ahora puede actualizar el `microsoftcrmportals.com` de dominio de Dynamics 365 en el `powerappsportals.com`de dominio de portales de PowerApps.
+# <a name="update-to-powerapps-portals-domain"></a>Actualizar al dominio de portales de PowerApps
 
-1. Abra el [centro de administración de portales de PowerApps](admin-overview.md).
+Con la versión preliminar de portales de PowerApps, ahora puede actualizar el dominio de Dynamics 365 `microsoftcrmportals.com` al dominio de los portales de PowerApps `powerappsportals.com`.
 
-2. Vaya a **acciones del Portal** > **actualizar al dominio de portales de PowerApps**.
+1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
 
-    > [!div class=mx-imgBorder]
-    > ![Actualización]del dominio del portal(../media/update-portal-domain-button.png "de powerapps actualizar al dominio del portal de powerapps")
-
-3. En **dirección URL del portal**, escriba la dirección del sitio web y haga clic en **Aceptar**.
+2. Vaya a **Acciones del portal** > **Actualizar al dominio de portales de PowerApps**.
 
     > [!div class=mx-imgBorder]
-    > ![Actualización]del dominio del portal(../media/update-portal-domain.png "de powerapps actualizar al dominio del portal de powerapps")
+    > ![Actualizar al dominio del portal de PowerApps](../media/update-portal-domain-button.png "Actualizar al dominio del portal de PowerApps")
 
-Si ya está usando el dominio de portales de PowerApps y desea revertir al dominio anterior, puede usar la acción de **dominio actualizar a PowerApps portal** para revertir al dominio anterior. En este caso, el mensaje se muestra de la siguiente manera:
+3. En **Dirección URL del portal**, escriba la dirección del sitio web y seleccione **Aceptar**.
+
+    > [!div class=mx-imgBorder]
+    > ![Actualizar al dominio del portal de PowerApps](../media/update-portal-domain.png "Actualizar al dominio del portal de PowerApps")
+
+Si ya usa el dominio de los portales de PowerApps y desea revertir al antiguo dominio, puede usar la acción **Actualizar al dominio del portal de PowerApps** para revertir al antiguo dominio. En este caso, el mensaje se muestra de la siguiente manera:
 
 > [!div class=mx-imgBorder]
-> ![Revertir al dominio anterior](../media/revert-portal-domain.png "revertir al dominio anterior")
+> ![Revertir al antiguo dominio](../media/revert-portal-domain.png "Revertir al antiguo dominio")

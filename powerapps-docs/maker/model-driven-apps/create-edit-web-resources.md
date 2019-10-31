@@ -28,7 +28,7 @@ search.app:
 Los programadores usan recursos web normalmente para extender la aplicación utilizando archivos que se usan en el desarrollo web. Los usuarios de la aplicación es posible que necesiten administrar los recursos web proporcionados por un programador o un diseñador.  
 
 > [!TIP]
-> Para obtener información detallada de los recursos web, consulte [Documentación para desarrolladores: Recursos Web para Customer Engagement](/dynamics365/customer-engagement/developer/web-resources).<br /> Para obtener información sobre las dependencias de recursos web agregadas a PowerApps, consulte [Documentación para desarrolladores: Dependencias de recursos web](/dynamics365/customer-engagement/developer/web-resources)
+> Para obtener información detallada de los recursos web, consulte [Documentación para desarrolladores: Recursos Web para aplicaciones basadas en modelo](/powerapps/developer/model-driven-apps/web-resources).<br /> Para obtener información sobre las dependencias de recursos web agregadas a PowerApps, consulte [Documentación para desarrolladores: Dependencias de recursos web](/dynamics365/customer-engagement/developer/web-resources).
    
 <a name="BKMK_WhatAreWebResources"></a>
 
@@ -74,7 +74,7 @@ Complete el formulario para crear o editar el recurso web:
 |**Tipo**|*Requerido*. Este es el tipo de recurso web. No se puede cambiar una vez guardado el recurso web.|  
 |**Editor de texto**|Cuando el tipo de recurso web representa un tipo de archivo de texto, seleccione este botón para abrir una página para modificar el contenido mediante el editor de texto.<br />Más información: [Usar el editor de texto adecuadamente](#use-the-text-editor-appropriately)| 
 |**Idioma**|Permite la selección de un idioma diferente. Esta opción sólo etiqueta el registro que almacena los datos del recurso web. No modifica el comportamiento del recurso web.|  
-|**Cargar archivo**|Seleccione el botón **Examinar...** para elegir el archivo que se debe cargar como recurso web.<br />&bull; Puede cargar un archivo al crear un nuevo recurso web o para sobrescribir un recurso web existente.<br />&bull; La extensión del nombre de archivo debe coincidir con extensiones permitidas.<br />&bull;De forma predeterminada el archivo de tamaño máximo que se puede cargar como recurso web es 5 MB. Este valor se puede editar en Dynamics 365 Customer Engagement mediante **Configuración del sistema** > **pestaña Correo electrónico** > **Establecer límite de tamaño para archivos adjuntos**. Más información: [Cuadro de diálogo Configuración del sistema: pestaña Correo electrónico](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
+|**Cargar archivo**|Seleccione el botón **Examinar...** para elegir el archivo que se debe cargar como recurso web.<br />&bull; Puede cargar un archivo al crear un nuevo recurso web o para sobrescribir un recurso web existente.<br />&bull; La extensión del nombre de archivo debe coincidir con extensiones permitidas.<br />&bull;De forma predeterminada el archivo de tamaño máximo que se puede cargar como recurso web es 5 MB. Este valor se puede editar mediante **Configuración del sistema** > **pestaña Correo electrónico** > **Establecer límite de tamaño para archivos adjuntos**. Más información: [Cuadro de diálogo Configuración del sistema: pestaña Correo electrónico](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
 |**Dirección URL**|Una vez guardado el recurso web, se mostrará aquí la dirección URL del recurso web. Seleccione este vínculo para ver el recurso web en el explorador.|  
   
 Después de haber agregado los cambios, elija **Guardar** y luego en **Publicar**.  
@@ -136,4 +136,4 @@ Cuando haya completado las personalizaciones, publíquelas:
 [Propiedades de recurso web](web-resource-properties-legacy.md) <br /> 
 [Crear y diseñar formularios](create-design-forms.md) <br />
 [Conocer los componentes de las aplicaciones basadas en modelos](model-driven-app-components.md) <br /> 
-[Documentación para desarrolladores: Recursos web para Customer Engagement](/dynamics365/customer-engagement/developer/web-resources)
+[Documentación de desarrollador: Recursos web en aplicaciones basadas en modelo](/powerapps/developer/model-driven-apps/web-resources)

@@ -1,7 +1,7 @@
 ---
-title: Componente de cuadrícula de conjunto de elementos | Microsoft Docs
-description: ''
-keywords: ''
+title: Componente de cuadrícula de conjunto de datos | Microsoft Docs
+description: null
+keywords: null
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,23 +11,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: ca13ef7758bb21853f9c1411c641bd1ae88115b6
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340515"
 ---
-# <a name="implementing-data-set-component"></a>Implementar componente de conjunto de datos
 
-Este componente de ejemplo muestra cómo cambiar la experiencia del usuario de interactuar con el conjunto de DataSet. Por ejemplo, solo verá la cuadrícula de la Página principal en la Página principal de una entidad como una tabla. Puede compilar el componente de código que puede mostrar los datos según su elección. Este ejemplo muestra los registros como mosaicos en lugar de la cuadrícula tabular normal.
+# <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
+
+Este componente de ejemplo muestra cómo cambiar la experiencia de usuario de interactuar con el conjunto de datos. Por ejemplo, usted solo ve la cuadrícula de la página principal en una página principal de entidad como tabla. Puede crear su componente de código que puede mostrar los datos según sus preferencias. Este ejemplo muestra los registros como ventanas en lugar de la cuadrícula tabular regular.
 
 > [!div class="mx-imgBorder"]
-> ![](../media/data-set-grid.png "Componente de cuadrícula conjunto de datos") del componente de cuadrícula de conjunto de datos
+> ![Componente de cuadrícula de conjunto de datos](../media/data-set-grid.png "Componente de cuadrícula de conjunto de datos")
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones controladas por modelos
+Aplicaciones basadas en modelos
 
 ## <a name="manifest"></a>Manifiesto 
 
@@ -241,12 +236,12 @@ export class TSDataSetGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityreference = this.contextObj.parameters.dataSetGrid.records[
+      let entityReference = this.contextObj.parameters.dataSetGrid.records[
         rowRecordId
-      ].getNamedreference();
+      ].getNamedReference();
       let entityFormOptions = {
-        entityName: entityreference.name,
-        entityId: entityreference.id
+        entityName: entityReference.name,
+        entityId: entityReference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -424,24 +419,24 @@ export class TSDataSetGrid
 </root>
 ```
 
-En este ejemplo, tenemos el parámetro de entrada definido en el archivo de manifiesto de componente con la etiqueta de conjunto de datos. Esta es la propiedad de entrada que se enlaza al componente.  
+En este ejemplo, tenemos el parámetro de entrada definido en el archivo de manifiesto de componentes con la etiqueta del conjunto de datos. Ésta es la propiedad de entrada que se enlaza al componente.  
  
-Este componente tiene dos contenedores importantes que se agregan al div principal, que se agrega al div que se pasa al componente.  El primer contenedor contiene los mosaicos que muestran los datos del registro de la vista y el segundo es para el `Load More button` que muestra Cuándo hay registros que necesitan más área que quepa en una página. 
+Este componente tiene dos contenedores importantes que se agregan en el div principal que se agrega en el div que se pasa al componente. El primer contenedor contiene las ventanas que muestran los datos de registro de la vista y el segundo contenedor es para el `Load More button` que se muestra cuando hay registros que necesitan más área de la que cabe en una página. 
  
-Ambos contenedores se generan y se actualizan cada vez que se llama al método [updateView](../reference/control/updateview.md) . En el primer contenedor, se generan los mosaicos según la información de las columnas y el número de registros. Esto garantiza que se muestra un icono para cada registro junto con su información.  
+Ambos contenedores se generan y se actualizan cada vez que se llama al método [updateView](../reference/control/updateview.md). Para el primer contenedor, generamos las ventanas basándose en la información de las columnas y el número de registros. Esto nos asegurará que mostramos una ventana para cada registro junto con la información que contiene.  
  
-Si existe una página para los registros, se muestra el botón cargar más, es decir, el segundo contenedor es visible y está oculto si no hay más páginas en el conjunto de resultados.  
+Si existe una página siguiente para los registros, se mostrará el botón cargar más, es decir, el segundo contenedor es visible y está oculto si no hay más páginas en el conjunto de resultados.  
  
-En el botón haga clic en cargar más, cargaremos la siguiente página de registros y la anexaremos al conjunto de resultados existente y la lógica para ocultar o mostrar el botón se mantiene igual que antes, tal como se muestra en el código. Esto se lleva a cabo por el método ***onLoadMoreButtonClick*** que está enlazado al botón.
+Al hacer clic en el botón cargar más, cargamos la siguiente página de registros y la anexamos al conjunto de resultados existente y la lógica para ocultar o mostrar el botón permanece igual que antes como se muestra en el código.Esto corre a cargo del método ***onLoadMoreButtonClick*** que está enlazado al botón.
  
-La función ***toggleLoadMoreButtonWhenNeeded*** toma la entrada como conjunto de datos y comprueba si el conjunto de datos tiene la siguiente página y si el botón está oculto o visible y, respectivamente, oculta o muestra el botón.  
+La función ***toggleLoadMoreButtonWhenNeeded*** toma la entrada como el conjunto de datos y comprueba, si el conjunto de datos tiene página siguiente, y si el botón está oculto o visible y respectivamente oculta o muestra el botón.  
  
-La función ***onRowClick*** asocia el contexto del registro mediante su valor GUID e invoca el método [openForm](../reference/navigation/openform.md) del `NavigationAPI` para abrir ese registro respectivo. Este método se enlaza a cada mosaico que se genera como parte del método ***createGridBody*** .
+La función ***onRowClick*** adjunta el contexto del registro mediante su valor GUID e invoca al método [openForm](../reference/navigation/openform.md) de la `NavigationAPI` para abrir el registro respectivo. Este método se enlaza a cada ventana que se genera como parte del método ***createGridBody***.
  
-El método ***getSortedColumnsOnView*** devuelve la lista de columnas basándose en el orden definido en la vista.
+El método ***getSortedColumnsOnView*** devuelve la lista de columnas en función del orden definido en la vista.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API del marco de componentes de PowerApps](../reference/index.md)<br/>
-[Referencia del esquema del manifiesto del marco de componentes de PowerApps](../manifest-schema-reference/index.md)
+[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)

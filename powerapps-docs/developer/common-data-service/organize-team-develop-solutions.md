@@ -1,5 +1,5 @@
 ---
-title: Organizar su equipo para desarrollar soluciones (Common Data Service) | Microsoft Docs
+title: Organizar a su equipo para desarrollar soluciones (Common Data Service) | Microsoft Docs
 description: En este documento se enumeran algunas estrategias que se pueden usar cuando varios desarrolladores trabajan en la misma solución
 ms.custom: ''
 ms.date: 10/31/2018
@@ -49,4 +49,4 @@ Cuando varios desarrolladores tienen que trabajar en la misma solución, puede q
 ### <a name="see-also"></a>Vea también  
  [Planificación del desarrollo de soluciones](/dynamics365/customer-engagement/developer/plan-solution-development)   
  [Modularizar sus soluciones](organize-solutions.md)   
- [Notas del producto: Implementar soluciones de Dynamics 365 Customer Engagement y de CRM Online desde desarrollo a través de entornos de prueba y producción](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=27824)
+ 

@@ -3,7 +3,7 @@ title: Crear o editar paneles de aplicaciones controladas por modelos | Microsof
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -15,6 +15,7 @@ ms.assetid: 641885d2-4a08-41b8-b914-d9a244e4d5b1
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -28,7 +29,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Crea un panel  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -50,7 +51,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Editar un panel existente  
   
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    
