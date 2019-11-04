@@ -741,7 +741,7 @@
           href: ./canvas-apps/share-app-resources.md
         - name: Insertar una aplicación en Power BI
           href: ./canvas-apps/embed-powerapps-powerbi.md
-        - name: Inserción de una aplicación Teams
+        - name: Insertar una aplicación en Teams
           href: ./canvas-apps/embed-teams-app.md
     - name: Administrar una aplicación
       items:
