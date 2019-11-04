@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71705308"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Experiencia de usuario mejorada con la interfaz unificada para aplicaciones controladas por modelos 
@@ -27,17 +27,17 @@ ms.locfileid: "71705308"
 La interfaz unificada para aplicaciones controladas por modelos proporciona una experiencia de usuario coherente y accesible en todos los dispositivos, ya sea en un equipo de escritorio, portátil, tableta o teléfono. Las aplicaciones se escalan mediante el reflujo de los componentes en la pantalla. El diseño con capacidad de respuesta se adapta a su entorno en función del tamaño de la pantalla, por lo que se puede mostrar más información en el espacio disponible.
 
 > [!div class="mx-imgBorder"]
-> La ![interfaz unificada se adapta a la pantalla] La (media/Reflow.png "interfaz unificada se adapta a la pantalla")
+> ![La interfaz unificada se adapta a la pantalla](media/Reflow.png "La interfaz unificada se adapta a la pantalla")
 
 > [!NOTE]
-> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, vea [Blog: Presentación de la escala de tiempo para pasar a la interfaz unificada](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+> El cliente web heredado quedará en desuso y los clientes deben pasar a la interfaz unificada antes del 1 de octubre de 2020. Para obtener más información, consulte [blog: presentación de la escala de tiempo para pasar a la interfaz unificada](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Para obtener más información sobre cómo realizar la transición, consulte [Inicio rápido de la transición](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
 
 ## <a name="navigation"></a>Explora
 
 Las opciones de menú permiten navegar rápidamente por las diferentes aplicaciones del sistema. Proporcionan acceso rápido a los registros vistos recientemente y a los favoritos anclados. 
 
 > [!div class="mx-imgBorder"]
-> ![Navegación en una aplicación controlada por modelos](media/nav.png "Navegación en una aplicación controlada por modelos")
+> ![NAV de aplicación controlada por modelos](media/nav.png "NAV de aplicación controlada por modelos")
 
 1. El mapa del sitio se expande y se mantiene de forma predeterminada.
 2. El área en la que se encuentra actualmente se resalta para indicar dónde se encuentra en la aplicación.
@@ -62,7 +62,7 @@ La experiencia de accesibilidad mejorada le permite usar lectores de pantalla pa
 ## <a name="create-a-unified-interface-app"></a>Creación de una aplicación de interfaz unificada
 Si tiene requisitos para crear su propia experiencia en una interfaz unificada, puede crear una aplicación controlada por modelos mediante el diseñador de aplicaciones. Vea [información general sobre la creación de aplicaciones controladas por modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-![Creación de una nueva aplicación de interfaz unificada](media/uci-model-driven-app.png "creación de una nueva aplicación de interfaz unificada")
+![Creación de una nueva aplicación de interfaz unificada](media/uci-model-driven-app.png "Creación de una nueva aplicación de interfaz unificada")
 
 ## <a name="unified-interface-community"></a>Comunidad de interfaz unificada
 

@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 23eb64171c1f339b423bdf56b53b186d2c9e14b5
-ms.sourcegitcommit: 073d8534d7ff0093370ee17a1b9b63c10c7f050c
+ms.openlocfilehash: 625629826d2fb0d39c0569b2a757fbfc46118acc
+ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72041306"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068771"
 ---
 # <a name="what-is-powerapps"></a>¿Qué es PowerApps?
 
@@ -33,7 +33,7 @@ Para obtener más información, consulte el [canal de PowerApps](https://www.you
 
 Con PowerApps, puede crear tres tipos de aplicaciones: **lienzo**, **controlado por modelos**y **portal**. Más información: [información general sobre la creación de aplicaciones en PowerApps](maker/index.md).
 
-Para crear una aplicación, primero se empieza con [web.powerapps.com](https://web.powerapps.com).
+Para crear una aplicación, empiece por [make.powerapps.com](https://make.powerapps.com).
 
 - **PowerApps Studio** es el diseñador de aplicaciones que se usa para compilar aplicaciones de lienzo. El diseñador de aplicaciones hace que la creación de aplicaciones se parezca más a la creación de un conjunto de diapositivas en Microsoft PowerPoint. Más información: [generación de una aplicación a partir de datos](/powerapps/maker/canvas-apps/data-platform-create-app)  
 

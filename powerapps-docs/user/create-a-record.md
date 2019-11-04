@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71924432"
 ---
 # <a name="create-a-new-record"></a>Creación de un registro
@@ -31,7 +31,7 @@ El comando **Crear un registro** o **Creación rápida** facilita y agiliza el p
 > [!NOTE]
 > La opción **creación rápida** solo está disponible para los registros habilitados por el administrador.
     
-1. En la barra de navegación, seleccione el **signo más**![Botón Crear registro](media/create-record-button.png "Botón Crear registro") y elija el elemento que quiera.  
+1. En la barra de navegación, seleccione el ![botón de crear registro](media/create-record-button.png "Botón crear registro")de signo **más** y, a continuación, seleccione el elemento que desee.  
 
     > [!div class="mx-imgBorder"] 
     > ![Botón crear registro](media/newrecord1.png "Botón crear registro")
@@ -39,12 +39,12 @@ El comando **Crear un registro** o **Creación rápida** facilita y agiliza el p
 2.  Rellene los campos y seleccione **Guardar y cerrar**. O bien, para guardar y crear otro registro, seleccione la flecha hacia abajo y, a continuación, seleccione **guardar & crear nuevo**.
 
      > [!div class="mx-imgBorder"] 
-     > ![Guardado de un registro](media/quick_create.png "Guardado de un registro")
+     > ![Guardar un registro](media/quick_create.png "Guardar un registro")
   
 > [!NOTE]
-> El asterisco ![Botón Campo obligatorio](media/required-field-button.png "Botón Campo obligatorio") junto a un campo de esta pantalla indica que es obligatorio. Si selecciona **Guardar y cerrar** antes de especificar los campos obligatorios, se mostrará un mensaje de error, mientras que si ha agregado la información y selecciona **Cancelar**, se mostrará una advertencia.
+> Un ![botón de campo](media/required-field-button.png "Botón de campo obligatorio") de asterisco obligatorio situado junto al campo en la pantalla significa que el campo es obligatorio. Si selecciona **Guardar y cerrar** antes de especificar los campos obligatorios, se mostrará un mensaje de error, mientras que si ha agregado la información y selecciona **Cancelar**, se mostrará una advertencia.
 >   
-> El signo más ![Botón Campo recomendado](media/recommended-field-button.png "Botón Campo recomendado") junto a un campo de esta pantalla indica que su organización le recomienda que rellene el campo en cuestión.  
+> Un botón de ![campo recomendado](media/recommended-field-button.png "Botón de campo recomendado") de signo más situado junto al campo en la pantalla significa que su organización recomienda que rellene el campo.  
 
 
 ## <a name="create-a-new-record-using-the-new-button"></a>Crear un nuevo registro con el botón nuevo 

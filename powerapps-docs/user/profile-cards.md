@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c46e7ce889e2f1c5352ed2e705b0bb8968f2a89
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71950919"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Ver la tarjeta de Perfil de un contacto o usuario
@@ -41,7 +41,7 @@ Puede ver los detalles del contacto insertado, que incluye la imagen del contact
 4. Para ver más detalles, seleccione **Mostrar más** para expandir el perfil del contacto.
  
     > [!div class="mx-imgBorder"] 
-    > ![Expandir detalle de tarjeta de Perfil de contacto](media/profile1.png "detalles") de la tarjeta de Perfil de contacto
+    > ![Expandir detalles de la tarjeta de Perfil de contacto](media/profile1.png "Expandir detalles de la tarjeta de Perfil de contacto")
    
  ## <a name="view-a-users-profile"></a>Ver el perfil de un usuario
  
@@ -51,7 +51,7 @@ Puede ver los detalles del contacto insertado, que incluye la imagen del contact
 4.  Para ver más detalles, como los mensajes de correo electrónico y los archivos compartidos con el usuario, seleccione **Mostrar más** para expandir el perfil del contacto.
  
     > [!div class="mx-imgBorder"] 
-    > Detalles de la ![tarjeta de Perfil de usuario]expandir detalles de la tarjeta de Perfil de(media/profile2.png "usuario")
+    > ![Detalles de la tarjeta de Perfil de usuario](media/profile2.png "Detalles de la tarjeta de Perfil de usuario")
 
 
  ## <a name="faqs"></a>+

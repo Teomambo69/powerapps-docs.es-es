@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71924566"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
@@ -34,16 +34,16 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de la escala de tiempo de actividades en PowerApps](media/TimelineViewOfActivity.png "Timeline view of activities in PowerApps")  
+  > ![Vista de escala de tiempo de las actividades en PowerApps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en PowerApps")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Adición de una actividad desde la barra de navegación
  
 La forma más rápida de agregar una actividad es usar el acceso directo en la barra de navegación y, a continuación, vincularla a un registro. Por ejemplo, puede crear una actividad de llamada telefónica y, luego, vincularla a un contacto en el sistema mediante el campo **Referente a**.
 
-1. En la barra de navegación, seleccione el **signo más** ![botón Crear registro](media/create-record-button.png "Create record button") y, a continuación, seleccione **Actividades**. 
+1. En la barra de navegación, seleccione el ![botón de crear registro](media/create-record-button.png "Botón crear registro")de signo **más** y, a continuación, seleccione **actividades**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Acceso directo para agregar una actividad en PowerApps](media/QuickCreate.png "Shortcut to add an activity in PowerApps")  
+   > ![Acceso directo para agregar una actividad en PowerApps](media/QuickCreate.png "Acceso directo para agregar una actividad en PowerApps")  
  
 2. Elija el tipo de actividad que desea agregar.
 
@@ -60,7 +60,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 
 
    > [!div class="mx-imgBorder"]
-   > ![Adición de una actividad de teléfono en PowerApps](media/addphonecall.png "Add a phone activity in PowerApps")
+   > ![Agregar una actividad de teléfono en PowerApps](media/addphonecall.png "Agregar una actividad de teléfono en PowerApps")
   
 3. Rellene el **Asunto** de la llamada.
 
@@ -100,13 +100,13 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 
 
     > [!NOTE]
-    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** >  pestaña**correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
+    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
 
    > [!div class="mx-imgBorder"]
-   > ![Establecer]opciones personales(media/emailsettings1.png "set personal Options")
+   > ![Establecer opciones personales](media/emailsettings1.png "Establecer las opciones personales")
    
     > [!div class="mx-imgBorder"]
-    > ![Establecer opciones personales establecer correo electrónico]opciones(media/emailsettings2.png "personales para correo electrónico")
+    > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
 
   
 ## <a name="add-an-appointment"></a>Adición de una cita  
@@ -136,13 +136,13 @@ También puede agregar notas fácilmente en el área de actividades.
 > También puede agregar una nota con el **signo más** en la sección superior del muro de la **escala de tiempo**.
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar una nota](media/addnote.png "Add a note")
+   > ![Agregar una nota](media/addnote.png "Agregar una nota")
 
 Una vez que se haya agregado la nota, puede eliminarla o editarla.
 
 
 > [!div class="mx-imgBorder"]
-> ![Actualizar una nota](media/addnote2.png "Update a note")
+> ![Actualizar una nota](media/addnote2.png "Actualizar una nota")
 
 ## <a name="add-a-post"></a>Adición de una publicación 
 
@@ -155,7 +155,7 @@ Una vez que se haya agregado la nota, puede eliminarla o editarla.
 4. Cuando haya terminado de rellenar el formulario, seleccione **Agregar** para guardar la publicación.
 
 > [!div class="mx-imgBorder"]
-> ![Actualizar una publicación](media/post.png "Add a post")
+> ![Actualizar una publicación](media/post.png "Adición de una publicación")
   
   Una vez que guarde la publicación, aparecerá en la parte superior del muro de la escala de tiempo.
   
@@ -163,10 +163,10 @@ Una vez que se haya agregado la nota, puede eliminarla o editarla.
 
 Puede actualizar el muro de la escala de tiempo para ver la información más actualizada.
 
-En el muro de la **escala de tiempo**, seleccione ![botón Más ](media/MoreButton.png "More button") y, a continuación, seleccione **Actualización de escala de tiempo**.
+En el muro de la **escala de tiempo** , seleccione el ![botón más](media/MoreButton.png "Botón más") y, a continuación, seleccione **Actualizar escala de tiempo**.
 
 > [!div class="mx-imgBorder"]
-> ![Actualización de la escala de tiempo](media/refresh.png "Refresh the Timeline")
+> ![Actualización de la escala de tiempo](media/refresh.png "Actualización de la escala de tiempo")
 
 
 ## <a name="use-the-filter-pane"></a>Uso del panel de filtros
@@ -176,7 +176,7 @@ Filtre rápidamente las actividades, notas o publicaciones del muro de la escala
 - En el plano de la **escala de tiempo** , seleccione Abrir el icono de embudo del **Panel de filtros** .
 
 > [!div class="mx-imgBorder"]
-> ![Panel de filtro de la escala de tiempo ](media/filterpane.png "Filter pane in the Timeline")
+> ![Panel de filtro de la escala de tiempo](media/filterpane.png "Panel de filtro de la escala de tiempo")
 
 
 ## <a name="manage-activities"></a>Administración de actividades
@@ -184,7 +184,7 @@ Administre actividades directamente desde el muro de la escala de tiempo, inclui
 
 
 > [!div class="mx-imgBorder"]
-> ![Administrar activities.png](media/ManageActivities.png "ManageActivities.png")
+> ![Administrar Activities. png](media/ManageActivities.png "ManageActivities. png")
 
 
 
