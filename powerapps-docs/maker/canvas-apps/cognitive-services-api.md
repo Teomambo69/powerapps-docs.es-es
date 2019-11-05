@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73540856"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Uso de Cognitive Services en PowerApps
 En este artículo se muestra cómo compilar una aplicación de lienzo básica que usa el [Text Analytics API de Cognitive Services de Azure](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar el texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
@@ -127,34 +128,34 @@ Ya tiene una aplicación bonita, pero aún no hace nada. Eso se solucionará en 
 
 Con esa información, vamos a agregar la fórmula de la propiedad **AlSeleccionar** del botón. Aquí es donde se produce la magia.
 
-```powerapps-dot
-If( chkLanguage.Value = true,
-    ClearCollect( languageCollect, 
+```powerapps-comma
+If( chkLanguage.Value = true;
+    ClearCollect( languageCollect; 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1, 
+                numberOfLanguagesToDetect: 1; 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);
+);;
 
-If( chkPhrases.Value = true,
-    ClearCollect( phrasesCollect, 
+If( chkPhrases.Value = true;
+    ClearCollect( phrasesCollect; 
         TextAnalytics.KeyPhrases(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);
+);;
 
-If( chkSentiment.Value = true,
-    ClearCollect( sentimentCollect, 
+If( chkSentiment.Value = true;
+    ClearCollect( sentimentCollect; 
         TextAnalytics.DetectSentiment(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -189,7 +190,7 @@ Para mostrar los resultados de las llamadas a la API, haga referencia a la colec
    
     La función **First()** devuelve el primer registro (y único en este caso) de **languageCollect** y la aplicación muestra el valor de **name** (el único campo) asociado con ese registro.
 
-2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
+2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
    
     Esta fórmula utiliza también la función **First()** , obtiene el valor de **Value** (0-1) del primer y único registro y, a continuación, le da formato como un porcentaje.
 

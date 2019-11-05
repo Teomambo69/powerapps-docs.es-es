@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73541722"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 
@@ -58,7 +59,7 @@ En este tutorial se hará lo siguiente:
    
    ![Cambiar nombre](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Agregue un control **Botón** (menú **Insertar**) y establezca su propiedad **OnSelect** en la fórmula siguiente:  
-   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
+   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
 5. Agregue un control **Galería de imágenes** (menú **Insertar** > **Galería**) y establezca su propiedad **Items** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
    
    La pantalla debe ser similar a la siguiente:  
