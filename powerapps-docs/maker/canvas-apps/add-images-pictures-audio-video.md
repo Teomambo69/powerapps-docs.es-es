@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b544b03fbe181265599bab520eddc2a2a646c477
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994372"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541187"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 
@@ -27,7 +26,7 @@ En este tema, aprenderá a insertar archivos multimedia en la aplicación de lie
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Agregar contenido multimedia desde un archivo o la nube
 
@@ -79,12 +78,12 @@ Puede elegir el tipo de contenido multimedia que desea agregar; por ejemplo, im�
 ## <a name="add-images-from-the-cloud-to-your-app"></a>Agregar imágenes a la aplicación desde la nube
 En este ejemplo, tiene imágenes guardadas en una cuenta de almacenamiento en la nube de OneDrive para la Empresa. Además, utiliza una tabla de Excel donde se almacenan las rutas de acceso de las imágenes y estas imágenes se muestran en la aplicación mediante un control de la galería.
 
-En este ejemplo, vamos a utilizar [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
+En este ejemplo, vamos a utilizar [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
 
 > [!NOTE]
 > Las rutas de acceso a estas imágenes que se utilizan en el archivo de Excel deben escribirse usando barras diagonales. Cuando PowerApps guarda las rutas de las imágenes en una tabla de Excel, las rutas contienen barras diagonales inversas. Si utiliza rutas de imágenes que proceden, por ejemplo, de una tabla, debe cambiar las rutas de la tabla de Excel para que contengan barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
 
-1. Descargue [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en la nube.
+1. Descargue [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
 
 2. Cambie el nombre de la carpeta **Assets** por **Assets_images**.
 
@@ -98,15 +97,15 @@ En este ejemplo, vamos a utilizar [CreateFirstApp.zip](http://pwrappssamples.blo
 
 6. Agregue un control **Solo imagen** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Jackets`:  
 
-    ![Propiedad Items](./media/add-images-pictures-audio-video/items-jackets.png)
+    ![Propiedad Elementos](./media/add-images-pictures-audio-video/items-jackets.png)
 
     La galería se actualiza automáticamente con las imágenes:  
 
-    ![Imágenes de Jackets](./media/add-images-pictures-audio-video/images.png)
+    ![Imágenes de chaquetas](./media/add-images-pictures-audio-video/images.png)
 
     Cuando defina la propiedad **Elementos**, automáticamente se agregará la columna **PowerAppsId** (IdDePowerApps) a la tabla de Excel.
 
-    En la tabla de Excel, la ruta de acceso de una imagen también puede ser una dirección URL. Una muestra de ello sería el archivo de ejemplo [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Puede descargar este archivo en la cuenta de almacenamiento en la nube, agregar la tabla `FlooringEstimates` como origen de datos de la aplicación y establecer el control de la galería en `FlooringEstimates`. La galería se actualiza automáticamente con las imágenes.
+    En la tabla de Excel, la ruta de acceso de una imagen también puede ser una dirección URL. Una muestra de ello sería el archivo de ejemplo [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Puede descargar este archivo en la cuenta de almacenamiento en la nube, agregar la tabla `FlooringEstimates` como origen de datos de la aplicación y establecer el control de la galería en `FlooringEstimates`. La galería se actualiza automáticamente con las imágenes.
 
 ## <a name="upload-pen-drawings-to-the-cloud"></a>Cargar dibujos en la nube
 En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive para la Empresa, y descubrirá cómo se guardan allí los dibujos.
@@ -127,7 +126,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
    4. Asigne a la tabla el nombre **Drawings**:
 
-       ![Cambie el nombre de la tabla a Drawings](./media/add-images-pictures-audio-video/name-media-table.png)
+       ![Cambio del nombre de la tabla a Drawings](./media/add-images-pictures-audio-video/name-media-table.png)
 
 3. Guarde el archivo de Excel en OneDrive para la Empresa como **SavePen.xlsx**.
 
@@ -159,9 +158,9 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 8. En la pestaña **Insertar**, agregue el control **Botón** y establezca la propiedad **AlSeleccionar** en esta fórmula:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
-9. Agregue un control de la **Galería de imágenes** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Drawings`. La propiedad **Image** (Imagen) del control de la galería se establece automáticamente en `ThisItem.Image`.
+9. Agregue un control de la **Galería de imágenes** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
 
     Organice los controles tal y como se muestra a continuación:  
 
@@ -171,11 +170,11 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 11. Dibuje algo en MyPen y seleccione el botón.
 
-    En la primera imagen del control de la galería aparecerá lo que ha dibujado.
+    En la primera imagen del control de galería aparecerá lo que ha dibujado.
 
 12. Agregue algo más al dibujo y seleccione el botón.
 
-    En la segunda imagen del control de la galería aparecerá lo que ha dibujado.
+    En la segunda imagen del control de galería aparecerá lo que ha dibujado.
 
 13. Cierre la ventana de vista previa con la tecla Esc.
 

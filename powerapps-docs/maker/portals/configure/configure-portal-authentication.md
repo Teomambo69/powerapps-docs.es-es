@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 12e85a0233ca596fa5daf09a05b111564c2a7a24
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: b285ce6e3a93efb72ed867149ce0740f7ee96579
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72977965"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542763"
 ---
-# <a name="configure-portal-authentication"></a>Configurar la autenticación del portal
+# <a name="configure-portal-authentication"></a>Configuración de la autenticación del portal
 
 En una aplicación de portal, un usuario del portal autenticado está asociado a un contacto o usuario del sistema. La configuración predeterminada de portales se basa en el contacto. Para iniciar sesión, un contacto debe tener configurada la información de autenticación Web adecuada. Los usuarios del portal deben estar asignados a un rol Web para obtener permisos más allá de los usuarios no autenticados. Para configurar permisos para un rol Web, configure el acceso a la página web y las reglas de control de acceso a sitios Web.
 
-La última experiencia de autenticación del portal permite a los usuarios del portal iniciar sesión con su elección de una cuenta local basada en el proveedor de pertenencia de contactos o una cuenta externa basada en [ASP.net Identity](http://www.asp.net/identity).   
+La última experiencia de autenticación del portal permite a los usuarios del portal iniciar sesión con su elección de una cuenta local basada en el proveedor de pertenencia de contactos o una cuenta externa basada en [ASP.net Identity](https://www.asp.net/identity).   
 
 - **Autenticación local**: la autenticación local es la que usa los registros de contacto de un entorno de Common Data Service para la autenticación. Para compilar experiencias de autenticación personalizadas, los desarrolladores pueden usar la API de identidad de ASP.Net para crear páginas y herramientas de inicio de sesión personalizadas.
 - **Autenticación externa**: la API de ASP.net Identity proporciona la autenticación externa. En este caso, las credenciales de la cuenta y la administración de contraseñas se controlan mediante un proveedor de identidades de terceros. Esto incluye proveedores basados en OpenID, como Yahoo! y los proveedores basados en Google y OAuth 2,0, como Twitter, Facebook y [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Los usuarios se suscriben al portal seleccionando una identidad externa para registrarse en el portal. Una vez registrada, una identidad externa tiene acceso a las mismas características que una cuenta local. 

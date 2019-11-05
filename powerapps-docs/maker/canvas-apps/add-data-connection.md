@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ce09240aa30c1f98926fb109a57f63c230e8d4b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987651"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540962"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Agregar una conexión de datos a una aplicación de lienzo en PowerApps
 
@@ -33,7 +33,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 
@@ -41,13 +41,13 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
 1. Especifique un nombre para la aplicación y, a continuación, seleccione **crear**.
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
+1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
 
 ## <a name="add-data-source"></a>Agregar origen de datos
 
 1. En el panel central, seleccione **conectarse a los datos** para abrir el panel **datos** .
 
-    Si se tratara de una aplicación existente y la pantalla ya contenía un control, seleccione **Ver** **orígenes de datos** de  >  para abrir el mismo panel.
+    Si se tratara de una aplicación existente y la pantalla ya contenía un control, seleccione **ver** > **orígenes de datos** para abrir el mismo panel.
 
 1. Seleccione **Agregar origen de datos**.
 

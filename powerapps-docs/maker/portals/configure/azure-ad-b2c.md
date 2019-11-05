@@ -9,14 +9,14 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: aead447bbab7f6e5758cdea0a9c6be5c0e8f41e2
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978402"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542844"
 ---
-# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Configuración del proveedor de Azure AD B2C para portales
+# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Configuración del proveedor de Azure AD B2C para portales
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) alimenta los servicios de Office 365 y Dynamics 365 para la autenticación interna o de empleado. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C es una extensión de ese modelo de autenticación que permite inicios de sesión de clientes externos a través de credenciales locales y Federación con varios proveedores de identidades sociales comunes.
 
@@ -497,7 +497,7 @@ Cuando se aprovisiona un nuevo cliente que no existe en Common Data Service, se 
 
 **Formato**: atributo1 = claim1, attribute2 = claim2, attribute3 = claim3
 
-Por ejemplo: firstname =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+Por ejemplo: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
 > Asegúrese de asignar la dirección de correo electrónico al correo electrónico principal (emailaddress1) del contacto. Si ha agregado correo electrónico secundario (emailaddress2) o correo electrónico alternativo (emailaddress3) al registro de contacto y lo ha asignado al correo electrónico, la información de identidad no se agregará al contacto y se creará una nueva con la dirección de correo electrónico utilizada para el registro establecido en el correo electrónico principal (emailaddress1).
@@ -512,7 +512,7 @@ Los datos de Common Data Service y del proveedor de identidades no se vinculan d
 
 **Formato**: atributo1 = claim1, attribute2 = claim2, attribute3 = claim3
 
-Por ejemplo: firstname =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+Por ejemplo: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
 El nombre de la notificación es el campo de tipo de notificación que se muestra junto al atributo en las notificaciones de aplicación de directivas de inicio de sesión.
 

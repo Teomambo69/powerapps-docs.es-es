@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2fd03b1a54b54c1abe1d6c30270861b6fc9b8054
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6f977154a350c6ca4b0b630cb4a4050e6d015c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989349"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541491"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de correo electrónico para las aplicaciones de Canvas
 
@@ -43,7 +42,7 @@ Está familiarizado con cómo agregar y configurar pantallas y otros controles a
 
 Para agregar una pantalla de correo electrónico desde la plantilla:
 
-1. [Inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
 
     En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de Tablet PC.
 
@@ -83,14 +82,14 @@ Esto permite a los usuarios enviar una sola imagen con el correo electrónico co
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
 1. Con el control **AddMediaWithImage** insertado, establezca su alto en un valor inferior a 210.
-1. En la vista de árbol de control, seleccione **AddMediaWithImage** >  **...**  > **reordene** > **enviar al fondo**.
+1. En la vista de árbol de control, seleccione **AddMediaWithImage** >  **..** . > **reordene** > **Enviar a atrás**.
    Esto evita que el control esté delante del control **PeopleBrowseGallery** .
 1. Cambie la propiedad **alto** de **EmailPeopleGallery** a esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,31 +102,31 @@ Esto permite a los usuarios enviar una sola imagen con el correo electrónico co
     
 1. Cambie la propiedad **alseleccionar** del control **iconMail** a esta fórmula:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4795e7ec7a3d7906efd68e82ac51e929a3800328
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: b4b0be6e3a5e08fc2c6b4679cf84669280c9271c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976677"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542581"
 ---
 # <a name="edit-css"></a>Edición de CSS
 
@@ -24,10 +24,10 @@ Para abrir un CSS en el editor de código:
 
 1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en PowerApps Portals Studio.  
 
-2.  Seleccione **el icono de tema del** tema ![icono](media/theme-icon.png "de tema") en el toolbelt en el lado izquierdo de la pantalla. Se muestran los temas disponibles.  
+2.  Seleccione el ![icono de tema](media/theme-icon.png "Icono de tema") del **tema** en el toolbelt en el lado izquierdo de la pantalla. Se muestran los temas disponibles.  
 
     > [!div class=mx-imgBorder]
-    > ![](media/theme-pane.png "Panel") de temas del panel de temas  
+    > ![Panel de temas](media/theme-pane.png "Panel de temas")  
 
 3.  Seleccione el CSS necesario para abrirlo en el editor de código.
 
@@ -37,12 +37,12 @@ Para cargar un nuevo archivo CSS:
 
 1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en PowerApps Portals Studio.  
 
-2.  Seleccione **el icono de tema del** tema ![icono](media/theme-icon.png "de tema") en el toolbelt en el lado izquierdo de la pantalla. Se muestran los temas disponibles.  
+2.  Seleccione el ![icono de tema](media/theme-icon.png "Icono de tema") del **tema** en el toolbelt en el lado izquierdo de la pantalla. Se muestran los temas disponibles.  
 
 3. Seleccione **cargar CSS personalizado**.
 
     > [!div class=mx-imgBorder]
-    > ![](media/upload-css.png "Panel") de temas del panel de temas  
+    > ![Panel de temas](media/upload-css.png "Panel de temas")  
 
 4. Busque y seleccione el archivo CSS que se va a cargar.
 

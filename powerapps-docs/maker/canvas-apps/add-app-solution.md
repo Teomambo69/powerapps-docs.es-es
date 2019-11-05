@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71987702"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540995"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Crear una aplicación de lienzo desde una solución
 
@@ -34,7 +34,7 @@ Para seguir los pasos de este tema, debe cambiar a un entorno que contenga una b
 
 Puede omitir este procedimiento si ya tiene una solución en la que desea crear una aplicación o a la que desea vincular una aplicación.
 
-1. [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, si es necesario, cambie al entorno adecuado:
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, si es necesario, cambie al entorno adecuado:
 
     - Si desea crear una aplicación desde una solución, cambie a cualquier entorno que contenga una base de datos de Common Data Service.
     - Si desea vincular una aplicación existente a una solución, cambie al entorno que contiene esa aplicación.
@@ -65,7 +65,7 @@ Puede omitir este procedimiento si ya tiene una solución en la que desea crear 
 
 Puede crear una aplicación de lienzo en blanco en una solución. No se puede generar automáticamente una aplicación de tres pantallas ni personalizar una plantilla o aplicación de ejemplo desde una solución.
 
-1. [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
 
 1. Si es necesario, cambie al entorno que contiene la solución en la que desea crear una aplicación de lienzo.
 
@@ -96,7 +96,7 @@ Puede crear una aplicación de lienzo en blanco en una solución. No se puede ge
 
 Si desea vincular una aplicación a una solución, ambos deben estar en el mismo entorno y la aplicación debe haberse creado desde una solución.
 
-1. [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
 
 1. Si es necesario, cambie al entorno que contiene la solución a la que desea vincular una aplicación.
 

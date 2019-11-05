@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b7b718564ec62d9a7fa2ca78d52727831635c1c
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224953"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541406"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda en PowerApps
 
@@ -96,7 +96,7 @@ Esto se hace en primer lugar, para que cuando agregue datos a la lista **Assets*
 ## <a name="create-an-app-from-the-assets-list"></a>Crear una aplicación de la lista Assets
 Puede usar esta aplicación para agregar datos a la lista **Assets**.
 
-1. [Inicie sesión en PowerApps Studio](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) mediante la dirección de correo electrónico de la organización.
+1. [Inicie sesión en PowerApps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) mediante la dirección de correo electrónico de la organización.
 
 2. En el menú **Archivo** (en el borde izquierdo), pulse o haga clic en **Nuevo** y, luego, pulse o haga clic en **SharePoint**.
 

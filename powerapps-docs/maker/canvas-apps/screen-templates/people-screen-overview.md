@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da7f7c037010df0da30e0363f988ac616f9fb6cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e4c688232e275cee1e285b22dd4885ea2126e7ad
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995674"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541377"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla People para aplicaciones de Canvas
 
@@ -43,7 +42,7 @@ Está familiarizado con cómo agregar y configurar pantallas y otros controles a
 
 Para agregar una pantalla de contactos de la plantilla:
 
-1. [Inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
 
     En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de Tablet PC.
 
@@ -79,7 +78,7 @@ Esta pantalla usa la operación [Office365Users. SearchUser](https://docs.micros
 
 1. Seleccione el campo que desee.
 
-    La propiedad **Text** debe actualizarse a `ThisItem.{FieldSelection}`.
+    La propiedad de **texto** debe actualizarse a `ThisItem.{FieldSelection}`.
 
 ## <a name="integrate-the-screen-into-an-app"></a>Integración de la pantalla en una aplicación
 
@@ -89,25 +88,25 @@ La pantalla People es un conjunto eficaz de controles en su propio derecho, pero
 
 La pantalla People almacena en caché las selecciones de los usuarios **en la colección People.** En caso de que su escenario empresarial llame a una búsqueda de personas, deberá saber cómo usar esta colección. Aquí, le guiará por el modo de conectar esta pantalla a una pantalla de correo electrónico rudimentaria y enviar correos electrónicos a los usuarios de la colección de mis **personas** . También obtendrá información sobre cómo funciona la [pantalla de correo electrónico](./email-screen-overview.md) .
 
-1. Agregue el origen de datos Office 365 Outlook a la aplicación. para ello, seleccione la pestaña **Ver** , seleccione **orígenes de datos** > **Agregar origen de datos**y busque el conector Office 365 Outlook. Es posible que tenga que seleccionar **nueva conexión** para encontrarla.
+1. Agregue el origen de datos Office 365 Outlook a la aplicación. para ello, seleccione la pestaña **vista** , seleccione **orígenes de datos** > **Agregar origen de datos**y busque el conector Office 365 Outlook. Es posible que tenga que seleccionar **nueva conexión** para encontrarla.
 1. Después de insertar la pantalla People, inserte una nueva pantalla en blanco. Dentro de esa pantalla, agregue un icono de flecha atrás, dos cuadros de entrada de texto y un icono de envío.
 1. Cambie el nombre de la pantalla a **EmailScreen**, el icono de flecha atrás a **icono**de retroceso, un cuadro de entrada de texto a **SubjectLine**, el otro a **MessageBody**y el icono de envío a **SendIcon**.
 1. Establezca la propiedad **alseleccionar** del **icono** de en `Back()`.
 1. Establezca la propiedad **alseleccionar** de **SendIcon** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Office365.SendEmail( 
-        Concat( MyPeople; UserPrincipalName & ";" ); 
-        SubjectLine.Text; 
+        Concat( MyPeople, UserPrincipalName & ";" ), 
+        SubjectLine.Text, 
         MessageBody.Text 
     )
     ```
     
-    Aquí está usando el conector de Outlook para enviar un correo electrónico. Se pasa `Concat(MyPeople; UserPrincipalName & ";")` como la lista de destinatarios. Esta fórmula concatena todas las direcciones de correo electrónico de la colección **People** en una sola cadena con puntos y comas separando. No es diferente de escribir una cadena de direcciones de correo electrónico separadas por punto y coma en la línea "para" de su cliente de correo electrónico favorito.
-    * Está pasando `SubjectLine.Text` como asunto del mensaje y `MessageBody.Text` como cuerpo del mensaje.
+    Aquí está usando el conector de Outlook para enviar un correo electrónico. Se pasa `Concat(MyPeople, UserPrincipalName & ";")` como la lista de destinatarios. Esta fórmula concatena todas las direcciones de correo electrónico de la colección **People** en una sola cadena con puntos y comas separando. No es diferente de escribir una cadena de direcciones de correo electrónico separadas por punto y coma en la línea "para" de su cliente de correo electrónico favorito.
+    * Está pasando `SubjectLine.Text` como asunto del mensaje y `MessageBody.Text` como el cuerpo del mensaje.
 1. En la pantalla People, en la esquina superior derecha, inserte el icono **mail** .
    Cambie el color del icono a lo que le convenga.
-1. Establezca la propiedad **alseleccionar** de **SendIcon** en `Navigate( EmailScreen; None )`.
+1. Establezca la propiedad **alseleccionar** de **SendIcon** en `Navigate( EmailScreen, None )`.
 
     Ahora tiene una aplicación de dos pantallas en la que puede seleccionar usuarios, crear un mensaje de correo electrónico para ellos y, a continuación, enviarlo. No dude en probarlo, pero tenga cuidado, ya que la aplicación envía mensajes de correo electrónico a todos los usuarios que agregue a la colección de mis **personas** .
 

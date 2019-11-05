@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c2ee82be5526cce41451c8a703971c0f97d32ea0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977321"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542952"
 ---
 # <a name="about-portal-lifecycle"></a>Acerca del ciclo de vida del portal
 
@@ -30,7 +30,7 @@ El primer portal se puede crear de forma gratuita en un entorno de un inquilino.
 
 Un portal siempre se crea como un portal de prueba. Puede convertirlo en producción desde el centro de administración de portales de PowerApps si tiene las licencias necesarias. Para obtener información sobre cómo convertir un portal de prueba en producción, consulte [conversión de un portal de prueba en producción](#convert-a-trial-portal-to-production).
 
-Para convertir un portal de prueba en producción, el entorno debe tener complementos necesarios para usuarios externos o una licencia para usuarios internos. Para obtener más información sobre las licencias, consulte [powerapps y preguntas más frecuentes sobre licencias de Microsoft Flow](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq) y licencias de [portales de powerapps](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Para convertir un portal de prueba en producción, el entorno debe tener complementos necesarios para usuarios externos o una licencia para usuarios internos. Para obtener más información sobre las licencias, consulte [powerapps y preguntas más frecuentes sobre licencias de Microsoft Flow](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) y licencias de [portales de powerapps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
 
 ### <a name="suspended-portal"></a>Portal suspendido
 
@@ -54,12 +54,12 @@ Puede convertir un portal de prueba en producción desde las notificaciones que 
 Cuando abra el [centro de administración](admin-overview.md) de portales de PowerApps y navegue hasta la pestaña detalles del [portal](portal-details.md) , verá la notificación sobre la expiración de la prueba que se muestra debajo del campo **tipo** .
 
 > [!div class=mx-imgBorder]
-> ![Notificación de prueba en la pestaña detalles del portal](../media/admin-center-convert-notif.png "notificación de evaluación de la pestaña detalles del portal")
+> ![Notificación de prueba en la pestaña detalles del portal](../media/admin-center-convert-notif.png "Notificación de prueba en la pestaña detalles del portal")
 
 En otras páginas del centro de administración, la notificación se muestra en la parte superior de la página.
 
 > [!div class=mx-imgBorder]
-> Notificación ![de prueba en otras pestañas](../media/admin-center-convert-notif-all.png "notificación de evaluación en otras pestañas")
+> ![Notificación de prueba en otras pestañas](../media/admin-center-convert-notif-all.png "Notificación de prueba en otras pestañas")
 
 Para convertir el portal de prueba en producción:
 
@@ -68,4 +68,4 @@ Para convertir el portal de prueba en producción:
 2.  Seleccione **confirmar**.
 
     > [!div class=mx-imgBorder]
-    > (../media/trial-to-prod-confirm.png "Confirmación") ![de prueba en producción]de prueba a producción
+    > ![Confirmación de prueba en producción](../media/trial-to-prod-confirm.png "Confirmación de prueba en producción")

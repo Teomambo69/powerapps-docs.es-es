@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c78057118a1546c781ea813552650045ab357321
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025911"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541356"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -37,7 +37,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 ## <a name="share-an-app"></a>Compartir una aplicación
 
-1. [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y después seleccione **Aplicaciones** cerca del borde izquierdo.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y después seleccione **Aplicaciones** cerca del borde izquierdo.
 
     ![Mostrar la lista de aplicaciones](./media/share-app/file-apps.png)
 
@@ -79,7 +79,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 1. En la parte inferior del panel compartir, seleccione **compartir**.
 
-    Todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla en PowerApps Mobile en un dispositivo móvil o en AppSource en [Dynamics 365](https://home.dynamics.com) en un explorador. Los copropietarios pueden editar y compartir la aplicación en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    Todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla en PowerApps Mobile en un dispositivo móvil o en AppSource en [Dynamics 365](https://home.dynamics.com) en un explorador. Los copropietarios pueden editar y compartir la aplicación en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     Si ha enviado una invitación por correo electrónico, todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla seleccionando un vínculo en la invitación.
 
@@ -125,11 +125,7 @@ Para asignar un rol, debe tener permisos de **Administrador del sistema** para u
 Cuando comparte una aplicación basada en una versión anterior de Common Data Service, debe compartir el permiso de tiempo de ejecución con el servicio por separado. Si no tiene permiso para hacerlo, consulte al administrador del entorno.
 
 ## <a name="share-with-guests"></a>Compartir con invitados
-
-> [!IMPORTANT]
-> - Las características de versión preliminar no están diseñadas para su uso en producción y pueden tener funcionalidad restringida. Estas características están disponibles antes de una versión oficial para que los clientes puedan obtener un acceso anticipado y proporcionar comentarios. 
-> - Las características de vista previa tienen compatibilidad limitada por Soporte técnico de Microsoft y pueden estar disponibles solo en las áreas geográficas seleccionadas. 
-
+ 
 Las aplicaciones de lienzo de PowerApps se pueden compartir con los usuarios invitados de un inquilino de Azure Active Directory. Esto permite invitar a socios comerciales externos, contratistas y terceros a ejecutar las aplicaciones de lienzo de la empresa. 
 
 > [!NOTE]
@@ -190,7 +186,7 @@ Sí. Sin embargo, el acceso a las aplicaciones independientes del lienzo requier
 > [!div class="mx-imgBorder"]  
 > ![Insertar aplicación de lienzo en SharePoint para invitados](media/share-app/guest_access_doc_5.PNG "Insertar aplicación de lienzo en SharePoint para invitados")
 
-Al incrustar una aplicación de lienzo en SharePoint a través de la etiqueta HTML de iFrame, haga referencia a la aplicación con la dirección URL completa de Web. Para buscar la dirección URL, vaya a http://make.powerapps.com, seleccione una aplicación, seleccione la pestaña **detalles** y la dirección URL se muestra en **vínculo Web**.
+Al incrustar una aplicación de lienzo en SharePoint a través de la etiqueta HTML de iFrame, haga referencia a la aplicación con la dirección URL completa de Web. Para buscar la dirección URL, vaya a https://make.powerapps.com, seleccione una aplicación, seleccione la pestaña **detalles** y la dirección URL se muestra en **vínculo Web**.
 
 > [!div class="mx-imgBorder"]  
 > ![Detalles de la aplicación Canvas](media/share-app/guest_access_doc_6.PNG "Detalles de la aplicación Canvas")
@@ -199,7 +195,7 @@ Al incrustar una aplicación de lienzo en SharePoint a través de la etiqueta HT
 Al igual que con los no invitados, los orígenes de datos subyacentes a los que tiene acceso la aplicación también deben ser accesibles para el invitado.
 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>¿Qué licencia debe asignarse a mi invitado para poder ejecutar una aplicación compartida con ellas?
-La misma licencia necesaria para que los usuarios no invitados ejecuten una aplicación. Por ejemplo, si la aplicación no usa los conectables Premium, una licencia de PowerApps P1 es suficiente para asignarla al invitado.  
+La misma licencia necesaria para que los usuarios no invitados ejecuten una aplicación. Por ejemplo, si la aplicación usa los conectables Premium, se debe asignar al invitado un PowerApps por cada plan de aplicación o uno por cada plan de usuario.  
 
 |                                 | Formulario personalizado de SharePoint | Aplicación de lienzo independiente con conectores no Premium | Aplicación de lienzo independiente con conectores Premium | Aplicación controlada por modelos |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|

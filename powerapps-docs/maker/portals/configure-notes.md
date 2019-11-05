@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ece59cff6ae75206a473ddc27f2e657201e0f436
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977183"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542848"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Configurar notas para formularios de entidad y formularios Web Forms en portales
 
 Al igual que con las subcuadrículas, agregar notas a los formularios administrados en el portal es fácil&mdash;simplemente agregue el control notas a los formularios de la aplicación Model-Drive a través del [Diseñador de formularios](../model-driven-apps/create-design-forms.md) y ya ha terminado. Puede configurar el comportamiento del control de notas mediante el uso de metadatos.
 
 > [!Note]                                                           
-> Los [permisos de entidad](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions) explícitos son necesarios para que las notas aparezcan en el portal. Para leer y editar, se deben conceder los privilegios de lectura y escritura. Para crear, deben existir dos permisos: se debe conceder un permiso con los privilegios Create y Append para la entidad Note (Annotation), el segundo permiso debe asignarse al tipo de entidad al que se va a adjuntar la nota con el privilegio anexar a concedido. La casilla **Habilitar permisos de entidad** debe estar activada en el paso de formulario de la entidad o formulario web correspondiente para que los permisos de entidad surtan efecto.
+> Los [permisos de entidad](configure/assign-entity-permissions.md) explícitos son necesarios para que las notas aparezcan en el portal. Para leer y editar, se deben conceder los privilegios de lectura y escritura. Para crear, deben existir dos permisos: se debe conceder un permiso con los privilegios Create y Append para la entidad Note (Annotation), el segundo permiso debe asignarse al tipo de entidad al que se va a adjuntar la nota con el privilegio anexar a concedido. La casilla **Habilitar permisos de entidad** debe estar activada en el paso de formulario de la entidad o formulario web correspondiente para que los permisos de entidad surtan efecto.
 
 ## <a name="notes-configuration-for-entity-forms"></a>Configuración de notas para formularios de entidad
 
@@ -62,7 +62,7 @@ Al igual que con las subcuadrículas, agregar notas a los formularios administra
 | Mensaje de error         | Invalida el mensaje que se muestra cuando se produce un error al intentar cargar la lista de notas.                                                                     |
 | Mensaje de acceso denegado | Invalida el mensaje que se muestra cuando el usuario no tiene permisos suficientes para ver la lista de notas.                                                    |
 | Mensaje vacío         | Reemplaza el mensaje mostrado cuando la entidad actual no tiene ninguna nota que se pueda ver.                                                              |
-| Lista de pedidos           | Permite establecer el orden en el que se mostrarán las notas. La configuración de lista de pedidos permite establecer lo siguiente: <ul><li>Attribute: el nombre lógico de la columna por la que desea ordenar.</li><li>Alias: el alias del atributo en la consulta.</li><li>Dirección: ascendente (de menor a mayor, o primero a último) o descendente (de mayor a menor, o último a primero).</li></ul> ![Establecer los atributos de List Orders](media/set-attributes-list-orders.png "set Attributes for List Orders") para agregar una regla de ordenación, seleccione "Column" (4) y rellene los detalles. Los pedidos de lista se procesarán en orden desde la parte superior de la lista con la prioridad más alta.|
+| Lista de pedidos           | Permite establecer el orden en el que se mostrarán las notas. La configuración de lista de pedidos permite establecer lo siguiente: <ul><li>Attribute: el nombre lógico de la columna por la que desea ordenar.</li><li>Alias: el alias del atributo en la consulta.</li><li>Dirección: ascendente (de menor a mayor, o primero a último) o descendente (de mayor a menor, o último a primero).</li></ul> ![Establecer atributos para la lista de pedidos](media/set-attributes-list-orders.png "Satributos et para lista de pedidos ") Para agregar una regla de ordenación, seleccione "columna" (4) y rellene los detalles. Los pedidos de lista se procesarán en orden desde la parte superior de la lista con la prioridad más alta.|
 ||
 
 
@@ -153,7 +153,7 @@ Debe crear y asignar el permiso de entidad correspondiente a los registros como 
 
 Si ha creado un formulario personalizado y le ha agregado la sección Notas, asegúrese de seleccionar **notas** como la pestaña predeterminada que desea que esté visible.
 
-![Notas en un formulario personalizado](media/notes-activities-tab.png "notas en un formulario personalizado")
+![Notas en un formulario personalizado](media/notes-activities-tab.png "Notas en un formulario personalizado")
 
 ## <a name="notes-configuration-for-web-forms"></a>Configuración de notas para formularios Web Forms
 

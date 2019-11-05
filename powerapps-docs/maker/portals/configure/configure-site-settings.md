@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 339a8b221474bd9d98ed8e425f730bab1dbb1e0a
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978333"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542728"
 ---
 # <a name="configure-site-settings-for-portals"></a>Configuración del sitio para portales
 
@@ -64,10 +64,10 @@ Puede administrar los siguientes tipos de configuración del sitio:
 |Búsqueda/habilitado|REALES|Valor booleano que indica si la búsqueda está habilitada o no.|
 |búsqueda/filtros|Contenido: adx_webpage; Eventos: adx_event, adx_eventschedule;<br>Blogs: adx_blog, adx_blogpost, adx_blogpostcomment;<br>Foros: adx_communityforum, adx_communityforumthread, adx_communityforumpost;<br>Ideas: adx_ideaforum, adx_idea, adx_ideacomment;<br>Problemas: adx_issueforum, adx_issue, adx_issuecomment; Departamento de soporte técnico: incidente|Colección de opciones de filtro de nombre lógico de búsqueda. La definición de un valor aquí agregará opciones de filtro desplegable a la búsqueda en todo el sitio. Este valor debe tener el formato de pares nombre-valor, con el nombre y el valor separados por dos puntos, y los pares separados por un punto y coma.<br>Por ejemplo: "forums: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Blogs: adx_blog, adx_blogpost, adx_blogpostcomment ".|
 |Buscar/IndexQueryName|Búsqueda en el portal|El nombre de la vista del sistema utilizada por la consulta de búsqueda en el portal. Valor predeterminado: búsqueda en el portal|
-|búsqueda/consulta|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0.1-_logicalname: adx_communityforumthread ~ 0.9|Invalide la consulta para la búsqueda de sitios para aplicar pesos y filtros adicionales. @Query es el texto de la consulta escrito por un usuario. Referencia de sintaxis de consulta de Lucene: [http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
+|búsqueda/consulta|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0.1-_logicalname: adx_communityforumthread ~ 0.9|Invalide la consulta para la búsqueda de sitios para aplicar pesos y filtros adicionales. @Query es el texto de la consulta escrito por un usuario. Referencia de sintaxis de consulta de Lucene: [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
 |Búsqueda/analizador lingüístico|Inglés|El lenguaje utilizado por el algoritmo de lematización de la búsqueda del portal. Valor predeterminado: Inglés|
 |CustomerSupport/DisplayAllUserActivitiesOnTimeline|ES| |
-|Autenticación/[Protocolo]/[proveedor]/AllowContactMappingWithEmail| |Permitir Asociación automática a un registro de contacto basado en el correo electrónico. Para obtener más información, haga clic [aquí](https://docs.microsoft.com/en-us/dynamics365/portals/azure-ad-b2c#allow-auto-association-to-a-contact-record-based-on-email).|
+|Autenticación/[Protocolo]/[proveedor]/AllowContactMappingWithEmail| |Permitir Asociación automática a un registro de contacto basado en el correo electrónico. Para obtener más información, haga clic [aquí](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email).|
 |||
 
 Para ver la configuración del sitio relacionada con varias características del portal, consulte:
@@ -79,10 +79,9 @@ Para ver la configuración del sitio relacionada con varias características del
 - [WS-Federation](configure-ws-federation-settings.md)
 - [SAML 2,0](configure-saml2-settings.md)
 - [Migrar proveedores de identidades a Azure AD B2C](migrate-identity-providers.md)
-- [Buscar en el contenido de los archivos adjuntos](https://docs.microsoft.com/dynamics365/customer-engagement/portals/search-file-attachment)
-- [Comportamiento y formato del campo de fecha y hora](https://docs.microsoft.com/dynamics365/customer-engagement/portals/behavior-format-date-time-field)
-- [Agregar ubicación geográfica](https://docs.microsoft.com/dynamics365/customer-engagement/portals/add-geolocation)
-- [Integrar servicio de campo](https://docs.microsoft.com/dynamics365/customer-engagement/portals/integrate-field-service)
+- [Buscar en el contenido de los archivos adjuntos](search-file-attachment.md)
+- [Comportamiento y formato del campo de fecha y hora](behavior-format-date-time-field.md)
+- [Agregar ubicación geográfica](add-geolocation.md)
 - [Implementación de normativas generales de protección de datos](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
 - [Habilitar almacenamiento en caché de resultados de encabezado y pie de página](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
 

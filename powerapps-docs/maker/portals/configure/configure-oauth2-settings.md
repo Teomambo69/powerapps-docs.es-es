@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 25a26e6298fa3257f3db6d04ffd2937e8e71d3a1
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978540"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542819"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>Configurar los valores del proveedor de OAuth2 para portales
 
@@ -31,7 +31,7 @@ Los proveedores admitidos son:
 
 ## <a name="create-oauth-applications"></a>Creación de aplicaciones de OAuth
 
-En general, si un proveedor de OAuth usa la configuración de la aplicación que requiere un valor de URI de redireccionamiento, especifique <http://portal.contoso.com/or> http://portal.contoso.com/signin-\ [proveedor\] en función de cómo el proveedor realice la validación del URI de redirección (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto con el nombre de dominio). Sustituya el nombre del proveedor en lugar de \[proveedor\] en el URI de redirección.
+En general, si un proveedor de OAuth usa la configuración de la aplicación que requiere un valor de URI de redireccionamiento, especifique <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [proveedor\] en función de cómo el proveedor realice la validación del URI de redirección (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto con el nombre de dominio). Sustituya el nombre del proveedor en lugar de \[proveedor\] en el URI de redirección.
 
 ### <a name="google"></a>Google
 
@@ -46,8 +46,8 @@ En general, si un proveedor de OAuth usa la configuración de la aplicación que
     - Seleccione**Guardar**.
 5. Vaya a**api & auth** &gt;**credenciales** y cree un nuevo ID. de cliente.
    - Tipo de aplicación:**aplicación web**
-   - Orígenes de [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] autorizados: http://portal.contoso.com
-   - URI de redirección autorizados: http://portal.contoso.com/signin-google 
+   - Orígenes de [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] autorizados: https://portal.contoso.com
+   - URI de redirección autorizados: https://portal.contoso.com/signin-google 
    - Seleccione **crear ID**. de cliente.
 
 ### <a name="facebook-app-settings"></a>Configuración de la aplicación Facebook
@@ -64,7 +64,7 @@ En general, si un proveedor de OAuth usa la configuración de la aplicación que
     - Dominios de aplicación (opcional): portal.contoso.com 
     - Correo electrónico de contacto: *&lt;dirección de correo electrónico de su elección&gt;* 
     - Seleccione **Agregar plataforma**y, a continuación, seleccione **sitio web**. 
-    - Dirección URL del sitio: http://portal.contoso.com/ o http://portal.contoso.com/signin-facebook
+    - Dirección URL del sitio: https://portal.contoso.com/ o https://portal.contoso.com/signin-facebook
 
 6. Seleccione **Guardar cambios**.
 7. Vaya a **estado & revisar** &gt; pestaña **Estado** .
@@ -75,7 +75,7 @@ En general, si un proveedor de OAuth usa la configuración de la aplicación que
 1. Abrir el [Centro para desarrolladores de cuentas[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]](https://account.live.com/developers/applications/index)  
 2. Seleccione **crear aplicación** y especifique un **nombre de aplicación**.
 3. Seleccione **acepto para aceptar los** términos y condiciones.
-4. Vaya a **configuración** &gt;**configuración de API**y, a continuación, establezca la dirección URL de redireccionamiento como http://portal.contoso.com/signin-microsoft 
+4. Vaya a **configuración** &gt;**configuración de API**y, a continuación, establezca la dirección URL de redireccionamiento como https://portal.contoso.com/signin-microsoft 
 
 ### <a name="twitter-apps-settings"></a>Configuración de aplicaciones de Twitter
 
@@ -83,8 +83,8 @@ En general, si un proveedor de OAuth usa la configuración de la aplicación que
 2. Seleccione **crear nueva aplicación**.
 
     - Especifique un **nombre** y una **Descripción** para la aplicación.
-    - Establezca la dirección URL del sitio web como http://portal.contoso.com.
-    - Establezca la dirección URL de devolución de llamada como http://portal.contoso.com o http://portal.contoso.com/signin-twitter.
+    - Establezca la dirección URL del sitio web como https://portal.contoso.com.
+    - Establezca la dirección URL de devolución de llamada como https://portal.contoso.com o https://portal.contoso.com/signin-twitter.
 
 3. Seleccione **crear la aplicación de Twitter**.
 
@@ -94,9 +94,9 @@ En general, si un proveedor de OAuth usa la configuración de la aplicación que
 2. Seleccione **Agregar nueva aplicación**.
 
     - Especifique un **nombre de aplicación**, una **Descripción**, etc.
-    - Establezca la dirección URL del sitio web como http://portal.contoso.com.
+    - Establezca la dirección URL del sitio web como https://portal.contoso.com.
     - Establecer contrato de usuario de OAuth/ámbito predeterminado: r\_basicprofie y r\_EmailAddress
-    - Establezca la dirección URL de redireccionamiento de OAuth 2,0: http://portal.contoso.com/signin-linkedin.
+    - Establezca la dirección URL de redireccionamiento de OAuth 2,0: https://portal.contoso.com/signin-linkedin.
 
 3. Seleccione **Agregar aplicación**.
 

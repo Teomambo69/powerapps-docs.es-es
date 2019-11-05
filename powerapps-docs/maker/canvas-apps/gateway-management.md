@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90a0bd777e808bb3aaab10b249d4fd765fbad654
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72560921"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541290"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 
@@ -46,7 +46,7 @@ Para instalar una puerta de enlace, siga los pasos descritos en [instalación de
 
 ## <a name="view-and-manage-gateway-permissions"></a>Ver y administrar los permisos de la puerta de enlace
 
-1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+1. En la barra de navegación izquierda de [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
 
 2. Agregue un usuario a una puerta de enlace haciendo clic o pulsando en **Usuarios**, especificando un usuario o grupo y, finalmente, especificando un nivel de permiso:
 
@@ -58,7 +58,7 @@ Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, selecci
 
 ## <a name="view-and-manage-gateway-connections"></a>Ver y administrar las conexiones de puerta de enlace
 
-1. En la barra de navegación izquierda de [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
+1. En la barra de navegación izquierda de [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Puertas de enlace** y, luego, pulse o haga clic en una puerta de enlace.
 
 2. Pulse o haga clic en **Conexiones** y luego pulse o haga clic en una conexión para ver sus detalles, editar la configuración o eliminarla.
 

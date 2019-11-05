@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c9201f02074920b65fdf904c5dbe81826114f4c6
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975481"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542560"
 ---
 # <a name="enable-azure-storage"></a>Habilitar Azure Storage
 
 La integración de Azure Storage para los portales permite aprovechar las ventajas de la mayor capacidad de almacenamiento de archivos de Azure, con la misma interfaz y proporcionar la misma experiencia de usuario que para los archivos adjuntos predeterminados. Esta característica es compatible con los archivos Web, los formularios de entidad y los formularios Web Forms.
 
-Debe crear una cuenta de almacenamiento con **Resource Manager** como modelo de implementación. [!include[More information](../../includes/proc-more-information.md)] [crear una cuenta de almacenamiento de Azure](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account).
+Debe crear una cuenta de almacenamiento con **Resource Manager** como modelo de implementación. [!include[More information](../../includes/proc-more-information.md)] [crear una cuenta de almacenamiento de Azure](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account).
 
 Una vez que se ejecuta la cuenta de almacenamiento, los portales requieren ciertas configuraciones globales que indican a la aplicación cómo localizar la cuenta de almacenamiento. En la aplicación de administración del portal, vaya a **configuración** > **nuevo**y agregue una nueva configuración denominada **FileStorage/CloudStorageAccount**.
 
@@ -35,13 +35,13 @@ Para buscar el valor de FileStorage/CloudStorageAccount, debe obtener una cadena
 
 3. Seleccione **claves de acceso**.
 
-    ![Busque el valor de cadena de conexión desde el Azure portal](media/key-azure-storage.png "Busque el valor de la cadena de conexión desde el Azure portal")
+    ![Busque el valor de cadena de conexión desde el Azure Portal](media/key-azure-storage.png "Busque el valor de la cadena de conexión desde el Azure Portal")
 
 4. En el panel resultante, busque el campo con la etiqueta **cadena de conexión**. Seleccione el icono de **copia** situado junto al campo para el que necesita copiar el valor y, a continuación, péguelo en el nuevo valor:
 
-    Valor de cadena de ![conexión principal valor]de cadena de(media/primary-connection-string-azure-storage.png "conexión principal")
+    ![Valor de cadena de conexión principal](media/primary-connection-string-azure-storage.png "Valor de cadena de conexión principal")
 
-    ![Configuración del portal para](media/portal-site-setting-cloud-storage-account.png "la configuración del portal") de cuentas de almacenamiento en la nube
+    ![Configuración del portal para la cuenta de almacenamiento en la nube](media/portal-site-setting-cloud-storage-account.png "Configuración del portal para la cuenta de almacenamiento en la nube")
 
 ## <a name="specify-the-storage-container"></a>Especificar el contenedor de almacenamiento
 
@@ -49,7 +49,7 @@ Si aún no tiene un contenedor de blobs de Azure en la cuenta de almacenamiento,
 
 En la [aplicación de administración del portal](configure/configure-portal.md), vaya a **configuración** > **nuevo**y agregue una nueva configuración denominada **FileStorage/CloudStorageContainerName**, con el nombre del contenedor como valor.
 
-![Configuración del portal para el almacén del contenedor de almacenamiento]en nube(media/portal-site-setting-cloud-storage-container.png "para el contenedor de almacenamiento en nube")
+![Configuración del portal para el contenedor de almacenamiento en la nube](media/portal-site-setting-cloud-storage-container.png "Configuración del portal para el contenedor de almacenamiento en nube")
 
 ## <a name="add-cors-rule"></a>Agregar regla de CORS
 

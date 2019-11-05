@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19d793b879d42e9446cc8ad366bc08879162185d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 61e14f5116be7dbcd44fec38b96e9546baa7cddf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995767"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541540"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -51,7 +51,7 @@ PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. 
    > Siempre que publique una aplicación de lienzo, esta se actualizará para ejecutarse en la versión más reciente de PowerApps, lo que significa que obtendrá las ventajas de todas las características más recientes y las actualizaciones de rendimiento que se han agregado desde que publicó por última vez. Si no ha publicado una actualización desde hace varios meses, probablemente verá una mejora de rendimiento inmediata al volver a publicar ahora.
 
 ## <a name="identify-the-live-version"></a>Identificar la versión activa
-En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.
+En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.
 
 La versión **Activa** está publicada para todos los usuarios con quien se comparte la aplicación. La versión más reciente de cualquier aplicación está disponible solo para quienes tienen permisos de edición para ella.
 

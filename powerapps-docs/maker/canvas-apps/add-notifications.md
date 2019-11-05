@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4a72fc689fa9b4d7d84f554745e5a04ee2812b70
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987375"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541148"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -61,7 +60,7 @@ En una aplicación en la que tenga permiso de **colaborador**, agregue una conex
 ## <a name="send-a-notification-from-an-app"></a>Envío de una notificación desde una aplicación
 Puede enviar una notificación push de una aplicación a otra o a la misma aplicación.
 
-1. En [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), vaya a la aplicación a la que desea enviar notificaciones push.
+1. En [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), vaya a la aplicación a la que desea enviar notificaciones push.
 2. En la pestaña **Detalles**, copie el contenido de **Id. de la aplicación** de dicha aplicación.
 
     ![Obtener el identificador de la aplicación](./media/add-notifications/grab-id.png)
@@ -87,7 +86,7 @@ Su notificación push puede pasar parámetros concretos a la aplicación. Por ej
 Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del caso** en cuanto se abra la aplicación:
 
 1. Agregue un control **Timer** (Temporizador) y establezca su propiedad **OnTimerEnd** en esta fórmula:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (opcional) Oculte el control **Timer** (Temporizador) estableciendo la propiedad **Visible** en **false**.
 3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()** .
 
@@ -115,10 +114,10 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 ### <a name="sample-formulas"></a>Fórmulas de ejemplo
 Enviar una notificación básica.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,12 +125,12 @@ PowerAppsNotification.SendPushNotification(
 
 Enviar una notificación que abra una aplicación y distribuya parámetros concretos.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )

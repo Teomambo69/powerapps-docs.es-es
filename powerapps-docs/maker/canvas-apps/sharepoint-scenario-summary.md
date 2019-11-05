@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed4b729926cc8a818f8c2d47b98656c91b934788
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61531742"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542478"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "61531742"
 
 Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones de lienzo y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones de lienzo, flujos e informes en SharePoint según sus propias necesidades. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Paso 1: Agregar un proyecto a la lista Project Requests
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Paso 1: Incorporación de un proyecto a la lista Project Requests
 1. En la lista **Project Requests**, pulse o haga clic en **Todos los elementos** y en **Project Requests app**.
    
     ![Vista de Project Requests app](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -73,7 +73,7 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
    
     ![Lista de SharePoint con entrada actualizada](./media/sharepoint-scenario-summary/09-02-03-yes.png)
 
-## <a name="step-3-assign-a-manager-to-the-project"></a>Paso 3: Asigne a un administrador al proyecto
+## <a name="step-3-assign-a-manager-to-the-project"></a>Paso 3: Asignación de un administrador al proyecto
 1. En primer lugar, se va a echar un vistazo a la lista **Project Details** en SharePoint. El nuevo proyecto tiene el valor **Sin asignar** en la columna **PMAssigned**.
    
     ![Elemento de lista de SharePoint sin asignar](./media/sharepoint-scenario-summary/09-03-01-unassigned.png)
@@ -93,7 +93,7 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
    
     ![Elemento de lista de SharePoint asignado](./media/sharepoint-scenario-summary/09-03-05-assigned.png)
 
-## <a name="step-4-add-time-estimates-for-the-project"></a>Paso 4: Agregue las estimaciones de tiempo para el proyecto
+## <a name="step-4-add-time-estimates-for-the-project"></a>Paso 4: Incorporación de las estimaciones de tiempo para el proyecto
 1. Pulse o haga clic en ![Icono Atrás](./media/sharepoint-scenario-summary/icon-back.png) para volver a la primera pantalla y en **Update Details**.
    
     ![Actualizar detalles del proyecto](./media/sharepoint-scenario-summary/09-04-00-intro-screen.png)
@@ -119,7 +119,7 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
    
    ![Detalles actualizados en la lista de SharePoint](./media/sharepoint-scenario-summary/09-04-04-updated-list.png)
 
-## <a name="step-5-review-report-data-for-existing-projects"></a>Paso 5: Revisar los datos de informe para los proyectos existentes
+## <a name="step-5-review-report-data-for-existing-projects"></a>Paso 5: Revisión de datos de informe para proyectos existentes
 1. En SharePoint Online, pulse o haga clic en **Contenidos del sitio** y en **Páginas del sitio**.
 2. Abra la página **Project Analysis** que se creó antes.
    
@@ -138,7 +138,7 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
    
     Como se señaló cuando se creó esta visualización, los proyectos que se asignaron a Irvin Sayers tardan más en iniciarse y dos de ellos están tardando mucho más que el resto.
 
-## <a name="step-6-respond-to-pending-project-delays"></a>Paso 6: Responder a retrasos en proyectos pendientes
+## <a name="step-6-respond-to-pending-project-delays"></a>Paso 6: Respuesta a retrasos en proyectos pendientes
 1. En el servicio Power BI, pulse o haga clic en el conjunto de datos **project-analysis** y después en **ACTUALIZAR AHORA**. La actualización desencadena la alerta que se configuró para proyectos pendientes.
    
     ![Actualizar conjunto de datos ahora](./media/sharepoint-scenario-summary/09-06-01-refresh.png)
@@ -160,11 +160,11 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
 
 Con esto, ha llegado a la conclusión de este tutorial de principio a fin y de esta serie de tutoriales. Puede continuar su viaje en los siguientes sitios:
 
-* [PowerApps](http://www.powerapps.com/)
-* [Microsoft Flow](http://flow.microsoft.com)
-* [Power BI](http://www.powerbi.com)
+* [PowerApps](https://www.powerapps.com/)
+* [Microsoft Flow](https://flow.microsoft.com)
+* [Power BI](https://www.powerbi.com)
 * [Comunidad de usuarios avanzados](https://powerusers.microsoft.com/)
-* [SharePoint](http://sharepoint.microsoft.com)
+* [SharePoint](https://sharepoint.microsoft.com)
 * [Comunidad tecnológica de Microsoft](https://techcommunity.microsoft.com/)
 
 Proporcione su opinión sobre esta serie, sugerencias para adiciones o ideas para contenidos adicionales que le ayuden a trabajar con las tecnologías tratadas.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca79c60e90c330f21af6ed8a12b98c3667535bb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987419"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541135"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Recopile la siguiente información para una base de datos que contenga al menos una tabla con una clave principal:
   
   * el nombre de la base de datos
@@ -68,7 +68,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 8. Personalice la aplicación mediante el uso de técnicas que son similares a las que se describe en [Create an app from Excel](../get-started-create-from-data.md) (Creación de una aplicación de Excel), a partir de cambiar el diseño de la aplicación.
 
 ## <a name="build-an-app-from-scratch"></a>Crear una aplicación desde cero
-1. Inicie sesión en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con la misma cuenta que usó para suscribirse a PowerApps.
+1. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con la misma cuenta que usó para suscribirse a PowerApps.
 2. En la barra de navegación izquierda, pulse o haga clic en **Conexiones**:  
    
     ![Administrar conexiones](./media/connection-azure-sqldatabase/manage-connections.png)

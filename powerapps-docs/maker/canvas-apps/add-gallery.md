@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987564"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540929"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
 
@@ -35,13 +34,13 @@ Muestre una lista de elementos de cualquier origen de datos agregando un control
     2. Cargue el archivo de Excel en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive para la Empresa.
 
 - Abra una aplicación en blanco:
-    1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
 
     1. Especifique el nombre de la aplicación, seleccione **Teléfono** y, luego, **Crear**.
 
-    1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
+    1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
 
     1. [Agregue una conexión](add-data-connection.md) a la tabla **FlooringEstimates** del archivo de Excel.
 
@@ -59,7 +58,7 @@ Muestre una lista de elementos de cualquier origen de datos agregando un control
 
 ## <a name="add-a-gallery-in-a-screen"></a>Agregar una galería en una pantalla
 
-1. En la pestaña **Inicio** , seleccione **nueva pantalla** > **pantalla de lista**.
+1. En la pestaña **Inicio** , seleccione **nueva pantalla** > **pantalla lista**.
 
     Aparece una pantalla que contiene un control **Galería** y otros controles, como una barra de búsqueda.
 
@@ -99,20 +98,20 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 
 1. Establezca la propiedad **[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 ## <a name="highlight-the-selected-item"></a>Resalte del elemento seleccionado
 Establezca la propiedad **rellenodeplantilla** del control de **Galería** en una fórmula similar a la de este ejemplo, pero puede especificar distintos colores si lo desea:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Cambio de la elección predeterminada
 En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, puede especificar el quinto elemento en el origen de datos **FlooringEstimates** :
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 En este ejemplo, especifique el primer elemento de la categoría **Hardwood** del origen de datos **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Aprenda a trabajar con [formularios](working-with-forms.md) y [fórmulas](working-with-formulas.md).

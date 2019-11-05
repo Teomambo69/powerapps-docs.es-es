@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a104638ad365ae58a1c3b8c5fbd0c7fef5b2b792
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8b352cb4a30c090d01b2ec1b34fa8ba119265204
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990165"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541260"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
 Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
@@ -33,7 +33,7 @@ Para empezar, genere automáticamente una aplicación a partir de uno de estos o
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-[Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y seleccione **Iniciar a partir de datos** o una aplicación de ejemplo, como **Service Desk** o **Budget Tracker**.
+[Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y seleccione **Iniciar a partir de datos** o una aplicación de ejemplo, como **Service Desk** o **Budget Tracker**.
 
 ![Blog de PowerApps](./media/getting-started/create-page-samples.png)
 
@@ -58,5 +58,5 @@ Ejecute sus propias aplicaciones (así como las que compartan con usted) en Wind
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Registro para obtener una licencia gratuita.](../signup-for-powerapps.md)
-- [Inicio de sesión en PowerApps.](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Inicio de sesión en PowerApps.](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Abrir una aplicación de ejemplo.](open-and-run-a-sample-app.md)

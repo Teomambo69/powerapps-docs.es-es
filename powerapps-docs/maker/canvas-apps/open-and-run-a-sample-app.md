@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989701"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541562"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
@@ -28,7 +28,7 @@ En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para
 Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Abrir una aplicación de ejemplo
-1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En la lista de aplicaciones de ejemplo, mantenga el puntero sobre una aplicación de ejemplo (como **Programa de estimación de costos**) con el mouse.
 

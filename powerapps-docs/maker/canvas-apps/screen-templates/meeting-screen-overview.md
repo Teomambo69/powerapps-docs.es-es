@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c53857acfdcb44faa26b2ec3e04b904e25c09aee
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2b300b0d90803ae08aaf262dde5642f4d448c05f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995661"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541432"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de reunión para las aplicaciones de Canvas
 
@@ -39,7 +38,7 @@ Está familiarizado con cómo agregar y configurar pantallas y otros controles a
 
 Para agregar una pantalla de reunión desde la plantilla:
 
-1. [Inicie sesión](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
 
     En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de Tablet PC.
 
@@ -59,10 +58,10 @@ Algunas notas útiles:
 * Para crear una reunión, debe agregar al menos una persona como asistente, proporcionar un asunto y seleccionar una hora de reunión en la pestaña **programación** .
 * Después de enviar la solicitud de reunión, se borra toda la información de la reunión.
 * La instrucción **alseleccionar** del icono de envío (esquina superior derecha) contiene esta fórmula:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" es el nombre para mostrar predeterminado de la mayoría de los calendarios del usuario de Office, pero su organización puede ser diferente. Si es así, puede cambiar "Calendar" por el término adecuado para su organización.
 * Recibirá un error si intenta programar una reunión que se produzca en el pasado o agregar más de 20 personas a una reunión.

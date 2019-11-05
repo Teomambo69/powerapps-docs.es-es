@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c9195bb9256c3d977300e61efe3f2cc88cfbf67
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063398"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541243"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
@@ -40,7 +40,7 @@ El Departamento de soporte técnico proporciona una experiencia fácil de utiliz
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+- [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
 - Debe tener una licencia de SharePoint Online válida y permiso para crear listas.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Crear la lista de SharePoint de Help Desk
@@ -140,11 +140,11 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="download-the-app"></a>Descarga de la aplicación
 
-1.  [Descargue](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
+1.  [Descargue](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 
-1.  En un explorador web, vaya a [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  En un explorador Web, vaya a [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  En el menú de la izquierda, seleccione **Datos** y luego **Conexiones**.
     
@@ -174,7 +174,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="import-the-app"></a>Importación de la aplicación
 
-1. En un explorador web, vaya a https://web.powerapps.com.
+1. En un explorador web, vaya a https://make.powerapps.com.
 2. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3. En el menú de la izquierda, seleccione **Aplicaciones**. 
 4. Haga clic en **Importar paquete (versión preliminar)** .
