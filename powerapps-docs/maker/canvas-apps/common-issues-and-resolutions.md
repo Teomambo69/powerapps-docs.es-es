@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 2c093adb4b63b5374de118d8d7dbb3421e352f46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896224"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541070"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 
 En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
 
-1. **Problema de inicio de sesión en determinados dispositivos móviles Android cuando se usa** el autenticador (21 de agosto de 2019)
+1. **Problema de inicio de sesión en determinados dispositivos móviles Android cuando se usa el autenticador** (21 de agosto de 2019)
 
     En ciertos dispositivos y escenarios, puede experimentar errores de inicio de sesión al usar el autenticador. Esto se debe a que el OEM limita esta funcionalidad. Para obtener más información sobre el error y las posibles mitigaciones, vea [aquí](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
 
@@ -36,7 +36,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
     Si tiene una limitación al desplazarse con el dedo, levante el dedo y empiece a desplazarse de nuevo.
 
-1. **Dibujar con mouse o entrada táctil no es suave en PowerApps para Windows** Septiembre. 24, 2018)
+1. **Dibujar con mouse o entrada táctil no es suave en PowerApps para Windows** (Sep. 24, 2018)
 
     El control Pen solo tiene compatibilidad parcial con el dibujo mediante el mouse o la entrada táctil en la aplicación de Windows. Los trazos pueden ser intermitentes. Para suavizar el dibujo, use un lápiz o ejecute la aplicación en un explorador.
 
@@ -57,7 +57,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Iniciar un sitio web desde una aplicación insertada** (10 de mayo de 2018)
 
-    Los exploradores Internet Explorer y Microsoft Edge pueden bloquear una dirección URL o sitio web que esté en modo protegido o en una zona de seguridad más baja que el sitio web en el que se carga la aplicación. Para resolver este problema, [cambie la configuración de seguridad y privacidad](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings) de su explorador.
+    Los exploradores Internet Explorer y Microsoft Edge pueden bloquear una dirección URL o sitio web que esté en modo protegido o en una zona de seguridad más baja que el sitio web en el que se carga la aplicación. Para resolver este problema, [cambie la configuración de seguridad y privacidad](https://support.microsoft.com/help/17479/windows-internet-explorer-11-change-security-privacy-settings) de su explorador.
 
 1. **Controles de cuadro combinado en galerías** (3 de mayo de 2018)
 
@@ -65,7 +65,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Usar una imagen personalizada como icono de aplicación** (11 de abril de 2018)
 
-    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
+    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
 
 1. **Copiar y pegar pantallas entre aplicaciones** (4 de abril de 2018)
 
@@ -101,7 +101,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Ejecución de una aplicación en Windows 8.1**
 
-    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en PowerApps Studio en ese sistema operativo. Aunque todavía puede ejecutar aplicaciones que se abren en [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con PowerApps Mobile.
+    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en PowerApps Studio en ese sistema operativo. Aunque todavía puede ejecutar aplicaciones que se abren en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con PowerApps Mobile.
 
 1. **Nombres de columna con espacios**
 
@@ -157,7 +157,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
      Para más información, consulte [SharePoint Online](connections/connection-sharepoint-online.md#known-issues).
 
-1. **No se admite la co-autoría. Solo un autor a la vez, por favor**.
+1. **No se admite la co-autoría. Un autor a la vez, por favor**.
 
      Puede dañar una aplicación o sobrescribir los cambios de otros usuarios si más de una persona está modificando a la vez la misma aplicación. Cierre la aplicación antes de que otra persona la edite.
 
