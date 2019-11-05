@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f201d1fbad574174e4427698ae28439f26419514
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318379"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541722"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 
@@ -36,7 +35,7 @@ En este tutorial se hará lo siguiente:
 
 ## <a name="create-the-excel-file-as-a-table"></a>Creación del archivo de Excel como tabla
 
-1. En un archivo de Excel en blanco, asígnele a una columna el nombre **Image [imagen]**.
+1. En un archivo de Excel en blanco, asígnele a una columna el nombre **Image [imagen]** .
 2. Siga estos pasos para crear una tabla:    
    
    1. Seleccione cualquier fragmento de datos en cualquier fila y columna. Por ejemplo, seleccione **Imagen**.
@@ -59,7 +58,7 @@ En este tutorial se hará lo siguiente:
    
    ![Cambiar nombre](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Agregue un control **Botón** (menú **Insertar**) y establezca su propiedad **OnSelect** en la fórmula siguiente:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Agregue un control **Galería de imágenes** (menú **Insertar** > **Galería**) y establezca su propiedad **Items** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
    
    La pantalla debe ser similar a la siguiente:  
@@ -75,12 +74,12 @@ En este tutorial se hará lo siguiente:
 ## <a name="add-the-image-in-an-excel-file-to-your-app"></a>Incorporación de una imagen de un archivo de Excel en la aplicación
 En otro ejemplo, puede guardar imágenes en una cuenta de almacenamiento en nube y, luego, usar una tabla de Excel para mostrar las imágenes en la aplicación.
 
-En este ejemplo, se usa [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
+En este ejemplo, se usa [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
 
 > [!NOTE]
 > Cuando se muestran imágenes de un archivo de Excel, en la ruta de acceso a estas imágenes se deben usar barras diagonales. Cuando PowerApps guarda imágenes en una tabla de Excel (como con los pasos anteriores), la ruta de acceso usa barras diagonales inversas. De ese modo, también puede usar **SavePen_images** del ejemplo anterior. Si lo hace, cambie las rutas de acceso en la tabla de Excel para usar barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
 
-1. Descargue [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
+1. Descargue [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
 2. En una hoja de cálculo de Excel, cree una tabla similar a la siguiente:
    
     ![Tabla Jackets](./media/tutorial-working-with-images-in-excel/jackets.png)
@@ -88,7 +87,7 @@ En este ejemplo, se usa [CreateFirstApp.zip](http://pwrappssamples.blob.core.win
 4. En la aplicación, agregue la tabla **Jackets** como origen de datos.  
 5. Agregue un control **Solo imagen** (menú **Insertar** > **Galería**) y establezca la propiedad **Items** en `Jackets`:  
    
-    ![Propiedad Items](./media/tutorial-working-with-images-in-excel/items-jackets.png)
+    ![Propiedad Elementos](./media/tutorial-working-with-images-in-excel/items-jackets.png)
    
     La galería se actualiza automáticamente con las imágenes:  
    
@@ -96,7 +95,7 @@ En este ejemplo, se usa [CreateFirstApp.zip](http://pwrappssamples.blob.core.win
 
 Cuando defina la propiedad Items, la tabla de Excel se actualizará automáticamente con una columna nueva llamada **PowerAppsId**.
 
-En la tabla de Excel, la ruta de acceso de una imagen también puede ser una dirección URL. Descargue el archivo de ejemplo [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) en la cuenta de almacenamiento en nube, agregue la tabla `FlooringEstimates` como origen de datos de la aplicación y, luego, establezca el control de galería en `FlooringEstimates`. La galería se actualiza automáticamente con las imágenes.
+En la tabla de Excel, la ruta de acceso de una imagen también puede ser una dirección URL. Descargue el archivo de ejemplo [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) en la cuenta de almacenamiento en nube, agregue la tabla `FlooringEstimates` como origen de datos de la aplicación y, luego, establezca el control de galería en `FlooringEstimates`. La galería se actualiza automáticamente con las imágenes.
 
 ## <a name="learn-more"></a>Más información
 [Incorporación de imagen, vídeo o sonido](add-images-pictures-audio-video.md)  

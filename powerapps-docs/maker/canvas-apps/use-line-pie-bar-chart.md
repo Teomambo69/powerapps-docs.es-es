@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995007"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541692"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
 
@@ -36,10 +35,10 @@ Puede crear y usar estos gráficos en PowerApps. Empecemos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Cree una aplicación a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
-* Descargue [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip), que contiene datos de ejemplo como un archivo XML. Siga los pasos descritos en este tema para importarlo directamente desde su aplicación. Como alternativa, descomprima el archivo .zip, abra el archivo XML en Excel y guárdelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
+* Descargue [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip), que contiene datos de ejemplo como un archivo XML. Siga los pasos descritos en este tema para importarlo directamente desde su aplicación. Como alternativa, descomprima el archivo .zip, abra el archivo XML en Excel y guárdelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Importar los datos de ejemplo
 En estos pasos importaremos los datos de ejemplo en una colección, denominada **ProductRevenue**.
@@ -50,7 +49,7 @@ En estos pasos importaremos los datos de ejemplo en una colección, denominada *
 
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** del control en la función siguiente:  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Presione F5 para abrir el modo de vista previa y seleccione el botón **Importar datos**.
 

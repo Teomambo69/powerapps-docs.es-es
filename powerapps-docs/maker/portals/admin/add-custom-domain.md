@@ -6,17 +6,17 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/21/2019
+ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2e8cd720f4ad5d1ff285a6414e99f4322b60b7b0
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978517"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543114"
 ---
-# <a name="add-a-custom-domain-name"></a>Agregar un nombre de dominio personalizado
+# <a name="add-a-custom-domain-name"></a>Adición de un nombre de dominio personalizado
 
 Un dominio personalizado puede ayudar a los clientes a encontrar más fácilmente los recursos de soporte técnico y mejorar su marca. Solo se puede Agregar un nombre de dominio personalizado a un portal. Después de aprovisionar el portal y adquirir el nombre de dominio, necesitará un certificado SSL para configurar un nombre de host personalizado. Puede usar el certificado SSL adquirido para el dominio con el fin de vincular el portal a un dominio personalizado mediante un asistente.
 
@@ -51,6 +51,6 @@ Un dominio personalizado puede ayudar a los clientes a encontrar más fácilment
 7. Seleccione **Finalizar** para cerrar el asistente.
 
     > [!Note]
-    > Si desea cambiar el nombre de dominio personalizado existente, debe cargar un nuevo certificado SSL y seguir los pasos del asistente, tal como se mencionó [aquí](#link-your-portal-to-a-custom-domain).
+    > Si desea cambiar el nombre de dominio personalizado existente, debe cargar un nuevo certificado SSL y seguir los pasos que se mencionan en esta sección.
     
 

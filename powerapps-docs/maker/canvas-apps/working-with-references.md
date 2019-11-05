@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: deea21dd97ee71a74973393b7d6714a8c55ba969
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0b1c81dd808b224ca30d9de3d4bab252a2676cf4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71989464"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542315"
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>Descripción de las referencias de registros y las búsquedas polimórficas en las aplicaciones de Canvas
 
@@ -50,7 +50,7 @@ Cada entidad de Common Data Service incluye un campo de **propietario** . Este c
 
 Para mostrar ese campo en la entidad **cuenta** :
 
-1. Abra [este sitio de PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Abra [este sitio de PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. En la barra de navegación izquierda, seleccione **datos** > **entidades**.
 1. En la lista de entidades, seleccione **cuenta**.
 1. En la esquina superior derecha, abra la lista de filtros (que está establecida en **predeterminada** de forma predeterminada) y, a continuación, seleccione **todo**.
@@ -354,7 +354,7 @@ Filter( Contacts,
 
 Dos diferencias importantes entre **Customer** y **Owner** requieren una actualización de las fórmulas dentro de la galería y el formulario:
 
-1. Las relaciones uno a varios entre **cuentas** y **contactos** tienen prioridad cuando se hace referencia a estos tipos de entidad por nombre. En lugar de **cuentas**, use **\[cuentas de\@]** ; en lugar de **contactos**, use **\[\@contactos]** . Mediante el [operador de desambiguación global](functions/operators.md#disambiguation-operator), asegúrese de que hace referencia al tipo de entidad en **IsType** y **astype**. Este problema solo existe en el contexto de registro de la galería y los controles de formulario.
+1. Las relaciones uno a varios entre **cuentas** y **contactos** tienen prioridad cuando se hace referencia a estos tipos de entidad por nombre. En lugar de **cuentas**, use **\[cuentas de \@]** ; en lugar de **contactos**, use **\[\@contactos]** . Mediante el [operador de desambiguación global](functions/operators.md#disambiguation-operator), asegúrese de que hace referencia al tipo de entidad en **IsType** y **astype**. Este problema solo existe en el contexto de registro de la galería y los controles de formulario.
 
 1. El campo **propietario** debe tener un valor, pero los campos de **cliente** pueden estar *en blanco*. Para mostrar el resultado correcto sin un nombre de tipo, pruebe este caso con la [función **esblanco** ](functions/function-isblank-isempty.md)y muestre una cadena de texto vacía en su lugar.
 

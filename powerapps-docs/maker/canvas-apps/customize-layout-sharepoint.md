@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986050"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539178"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Guía Personalización de una galería en PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
 
 En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
@@ -44,7 +43,7 @@ También agregará una barra de desplazamiento para que los usuarios que no tien
 
 Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Pero se aplican los mismos conceptos a cualquier aplicación que se genere en PowerApps, sea desde una lista de SharePoint, una tabla de Excel o cualquier otro origen de datos.
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
+Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -52,13 +51,13 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
+1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
 
 1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos ( **...** ) y, a continuación, seleccione **Editar**.
 
     ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
+1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
 
 ## <a name="change-the-layout"></a>Cambiar el diseño
 
@@ -90,13 +89,13 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.p
 
 1. Cerca de la esquina superior izquierda, confirme que la lista de propiedades muestra **Elementos**.
 
-    ![Propiedad Items](./media/customize-layout-sharepoint/items-property.png)
+    ![Propiedad Elementos](./media/customize-layout-sharepoint/items-property.png)
 
     El valor de esta propiedad aparece en la barra de fórmulas. Establezca esta propiedad para especificar no solo el origen de datos de la galería, sino también las columnas mediante las cuales los usuarios pueden ordenar y buscar los datos.
 
 1. Copie esta fórmula y, a continuación, péguela en la barra de fórmulas.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Con esta fórmula, se asegura de que:
 

@@ -1,40 +1,45 @@
 ---
-title: Usar filtros de Liquid para un portal | MicrosoftDocs
-description: Obtenga información acerca de los filtros de Liquid disponibles en un portal.
+title: Usar filtros Liquid para un portal | MicrosoftDocs
+description: Obtenga información sobre los filtros Liquid disponibles en un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543231"
 ---
-
 # <a name="available-liquid-filters"></a>Filtros de Liquid disponibles
 
-Los filtros de Liquid se usan para modificar el resultado de cadenas, números, variables y objetos. Están separados del valor al que se aplican mediante una |.
+Los filtros Liquid se utilizan para modificar la salida de cadenas, números, variables y objetos. Se separan del valor al que se aplica un |.
 
 `{{ 'hal 9000' | upcase }} <!-- Output: HAL 9000 -->`
 
-Algunos filtros aceptan parámetros. Los filtros también se pueden combinar, y se aplican en orden de izquierda a derecha.
+Algunos filtros aceptan parámetros. Los filtros también se pueden combinar y se aplican en orden de izquierda a derecha.
 
 ```
 {{ 2 | times: 2 | minus: 1 }} <!-- Output: 3 -->
 
 {{ "Hello, " | append: user.firstname }} <!-- Output: Hello, Dave -->
 ```
-La sección a continuación describe los diferentes filtros. 
+En la sección siguiente se describen varios filtros. 
 
 ## <a name="array-filters"></a>Filtros de matriz
 
-Los filtros de matriz se usan para trabajar con [matrices](liquid-types.md#array).  
+Los filtros de matriz se utilizan para trabajar con [matrices](liquid-types.md#array).  
 
-### <a name="batch"></a>batch
+### <a name="batch"></a>procesamiento
 
-Divide una matriz en matrices múltiples de un determinado tamaño.
+Divide una matriz en varias matrices de un tamaño determinado.
 
-**Código**
+**Codifica**
 
 ```
 {% assign batches = entityview.records | batch: 2 %}
@@ -54,7 +59,7 @@ Divide una matriz en matrices múltiples de un determinado tamaño.
 {% endfor %}
 ```
 
-**Salida**
+**Genere**
 
 ```
 <ul>
@@ -76,11 +81,11 @@ Divide una matriz en matrices múltiples de un determinado tamaño.
 
 ### <a name="concat"></a>concat
 
-Concatena dos matrices en un matriz nueva y única.
+Concatena dos matrices en una sola nueva.
 
-Dado un solo elemento como parámetro, concat devuelve una nueva matriz que consiste en la matriz original, con el elemento dado como último elemento.
+Dado un solo elemento como parámetro, concat devuelve una nueva matriz que consta de la matriz original, con el elemento dado como el último elemento.
 
-**Código**
+**Codifica**
 
 ```
 Group #1: {{ group1 | join: ', ' }}
@@ -92,7 +97,7 @@ Group #1 + Group #2: {{ group1 | concat: group2 | join: ', ' }}
 Group #1 + Leslie: {{ group1 | concat: 'Leslie' | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Group #1: John, Pete, Hannah
@@ -104,11 +109,11 @@ Group #1 + Group #2: John, Pete, Hannah, Joan, Bill
 Group #1 + Leslie: John, Pete, Hannah, Leslie
 ```
 
-### <a name="except"></a>except
+### <a name="except"></a>CEPT
 
-Seleccione todos los objetos de una matriz en la que un atributo determinado no tiene un valor determinado. (Es lo contrario de**where**).
+Seleccione todos los objetos de una matriz en los que un atributo determinado no tenga un valor determinado. (Este es el inverso de**donde**).
 
-**Código**
+**Codifica**
 
 ```
 {% assign redmond = entityview.records | except: 'address1_city', 'Redmond' %}
@@ -120,19 +125,19 @@ Seleccione todos los objetos de una matriz en la que un atributo determinado no 
 {% endfor %}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Jack Robinson
 ```
 
-### <a name="first"></a>primero
+### <a name="first"></a>Lugar
 
 Devuelve el primer elemento de una matriz.
 
-first también se puede usar con la notación de punto especial, en casos en los que sea necesario usarla dentro de una etiqueta.
+en primer lugar, también se puede usar con una notación de puntos especial, en los casos en los que es necesario utilizar dentro de una etiqueta.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -146,7 +151,7 @@ The first word is This.
 {% endif %}
 ```
 
-**Salida**
+**Genere**
 
 ```
 This
@@ -156,9 +161,9 @@ The first word is This.
 
 ### <a name="group_by"></a>group_by
 
-Agrupa los elementos en una matriz por un atributo determinado.
+Agrupar los elementos de una matriz por un atributo determinado.
 
-**Código**
+**Codifica**
 
 ```
 {% assign groups = entityview.records | group_by: 'address1_city' %}
@@ -176,7 +181,7 @@ Agrupa los elementos en una matriz por un atributo determinado.
 {% endfor %}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Redmond:
@@ -192,11 +197,11 @@ New York:
 Jack Robinson
 ```
 
-### <a name="join"></a>join
+### <a name="join"></a>Vuelve
 
-Combina los elementos de una matriz con el carácter pasado como parámetro. El resultado es una sola cadena.
+Combina los elementos de una matriz con el carácter que se pasa como parámetro. El resultado es una sola cadena.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -204,19 +209,19 @@ Combina los elementos de una matriz con el carácter pasado como parámetro. El 
 {{ words | join: ,  }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 This, is, a, run, of, text
 ```
 
-### <a name="last"></a>Último
+### <a name="last"></a>guardado
 
 Devuelve el último elemento de una matriz.
 
-last también se puede usar con la notación de punto especial, en casos en los que sea necesario usarla dentro de una etiqueta.
+Last también se puede usar con una notación de puntos especial, en los casos en los que es necesario utilizar dentro de una etiqueta.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -230,7 +235,7 @@ The last word is text.
 {% endif -%}
 ```
 
-**Salida**
+**Genere**
 
 ```
 text
@@ -238,13 +243,13 @@ text
 The last word is text.
 ```
 
-### <a name="order_by"></a>order\_by
+### <a name="order_by"></a>ordenar\_por
 
-Devuelve los elementos de una matriz ordenada por atributo dado de los elementos de la matriz.
+Devuelve los elementos de una matriz ordenada por un atributo determinado de los elementos de la matriz.
 
-De manera opcional, puede proporcionar desc como segundo parámetro para ordenar los elementos en orden descendente, en lugar de ascendente.
+Opcionalmente, puede proporcionar DESC como segundo parámetro para ordenar los elementos en orden descendente, en lugar de ascendente.
 
-**Código**
+**Codifica**
 
 ```
 {{ entityview.records | order_by: 'fullname' | join: ', ' }}
@@ -252,7 +257,7 @@ De manera opcional, puede proporcionar desc como segundo parámetro para ordenar
 {{ entityview.records | order_by: 'fullname', 'desc' | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Dave Thomas, Jack Robinson, Jake Johnson, John Smith
@@ -260,11 +265,11 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="random"></a>random
+### <a name="random"></a>aleatorio
 
-Devuelve un solo elemento seleccionado aleatoriamente de la matriz.
+Devuelve un único elemento seleccionado aleatoriamente de la matriz.
 
-**Código**
+**Codifica**
 
 ```
 {{ group1 | join: ', ' }}
@@ -272,7 +277,7 @@ Devuelve un solo elemento seleccionado aleatoriamente de la matriz.
 {{ group1 | random }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 John, Pete, Hannah
@@ -280,27 +285,27 @@ John, Pete, Hannah
 Pete
 ```
 
-### <a name="select"></a>select
+### <a name="select"></a>No
 
-Selecciona el valor de un atributo determinado para cada elemento de una matriz, y devuelve estos valores como matriz.
+Selecciona el valor de un atributo determinado para cada elemento de una matriz y devuelve estos valores como una matriz.
 
-**Código**
+**Codifica**
 
 ```
 {{ entityview.records | select: 'address1_city' | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Redmond, New York
 ```
 
-### <a name="shuffle"></a>shuffle
+### <a name="shuffle"></a>aleatoria
 
-Aplicado a una matriz, devuelve una nueva matriz con los mismos elementos, en orden aleatorizado.
+Aplicado a una matriz, devuelve una nueva matriz con los mismos elementos, en orden aleatorio.
 
-**Código**
+**Codifica**
 
 ```
 {{ group1 | join: ', ' }}
@@ -308,7 +313,7 @@ Aplicado a una matriz, devuelve una nueva matriz con los mismos elementos, en or
 {{ group1 | shuffle | join: ', ' }}
 ```
 
-**Output**
+**Genere**
 
 ```
 John, Pete, Hannah
@@ -316,13 +321,13 @@ John, Pete, Hannah
 Hannah, John, Pete
 ```
 
-### <a name="size"></a>size
+### <a name="size"></a>Ajusta
 
 Devuelve el número de elementos de una matriz.
 
-size también se puede usar con la notación de punto especial, en casos en los que sea necesario usarla dentro de una etiqueta.
+el tamaño también se puede usar con una notación de puntos especial, en los casos en los que es necesario utilizar dentro de una etiqueta.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -336,7 +341,7 @@ The text contains 6 words.
 {% endif -%}
 ```
 
-**Salida**
+**Genere**
 
 ```
 6
@@ -346,9 +351,9 @@ The text contains 6 words.
 
 ### <a name="skip"></a>skip
 
-Omite un número determinado de elementos de una matriz, y devuelve el resto.
+Omite un número determinado de elementos de una matriz y devuelve el resto.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -356,37 +361,37 @@ Omite un número determinado de elementos de una matriz, y devuelve el resto.
 {{ words | skip: 3 | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 run, of, text
 ```
 
-### <a name="take"></a>take
+### <a name="take"></a>echar
 
-Toma un número determinado de elementos de la matriz, devolviendo los elementos tomados.
+Toma un número determinado de elementos de la matriz y devuelve los elementos tomados.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a run of text | split:   %}
 
 {{ words | take: 3 | join: ', ' }}
 ```
-**Salida**
+**Genere**
 
 ```
 
 This, is, a
 ```
 
-### <a name="then_by"></a>then\_by
+### <a name="then_by"></a>después\_por
 
-Agrega orden posterior adicional a una matriz ya ordenada mediante**order\_by**.
+Agrega una ordenación posterior adicional a una matriz ya ordenada por**orden\_por**.
 
-De manera opcional, puede proporcionar desc como segundo parámetro para ordenar los elementos en orden descendente, en lugar de ascendente.
+Opcionalmente, puede proporcionar DESC como segundo parámetro para ordenar los elementos en orden descendente, en lugar de ascendente.
 
-**Código**
+**Codifica**
 
 ```
 {{ entityview.records | order_by: 'address1_city' | then_by: 'fullname' | join: ', ' }}
@@ -394,7 +399,7 @@ De manera opcional, puede proporcionar desc como segundo parámetro para ordenar
 {{ entityview.records | order_by: 'address1_city' | then_by: 'fullname', 'desc' | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Dave Thomas, Jack Robinson, Jake Johnson, John Smith
@@ -402,11 +407,11 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="where"></a>donde
+### <a name="where"></a>Mientras
 
-Seleccione todos los objetos de una matriz en la que un atributo determinado tiene un valor determinado.
+Seleccione todos los objetos de una matriz donde un atributo determinado tiene un valor determinado.
 
-**Código**
+**Codifica**
 
 ```
 {% assign redmond = entityview.records | where: 'address1_city', 'Redmond' %}
@@ -418,7 +423,7 @@ Seleccione todos los objetos de una matriz en la que un atributo determinado tie
 {% endfor %}
 ```
 
-**Salida**
+**Genere**
 
 ```
 John Smith
@@ -429,19 +434,19 @@ Jake Johnson
 ```
 
 
-## <a name="date-filters"></a>Filtros por fecha
+## <a name="date-filters"></a>Filtros de fecha
 
-Los filtros por fecha se pueden usar para la aritmética de fecha o para convertir valores de fecha y hora en distintos formatos.
+Los filtros de fecha se pueden usar para operaciones aritméticas de fecha o para convertir valores de fecha y hora en varios formatos.
 
-### <a name="date"></a>fecha
+### <a name="date"></a>Posteriormente
 
-Aplica formato a un valor de fecha y hora con una cadena de formato .NET.
+Da formato a un valor DateTime mediante una cadena de formato .NET.
 
-[Cadenas de formato estándar de fecha y hora](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)  
+[Cadenas con formato de fecha y hora estándar](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)  
 
-[Cadenas de formato personalizado de fecha y hora](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)  
+[Cadenas con formato de fecha y hora personalizado](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)  
 
-**Código**
+**Codifica**
 
 ```
 {{ now | date: 'g' }}
@@ -449,7 +454,7 @@ Aplica formato a un valor de fecha y hora con una cadena de formato .NET.
 {{ now | date: 'MMMM dd, yyyy' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20 AM
@@ -457,11 +462,11 @@ Aplica formato a un valor de fecha y hora con una cadena de formato .NET.
 May 07, 2018
 ```
 
-### <a name="date_add_days"></a>date\_add\_days
+### <a name="date_add_days"></a>fecha\_agregar\_días
 
-Agrega un número especificado de días enteros y fraccionarios al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Agrega el número especificado de días enteros y fraccionarios al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -471,7 +476,7 @@ Agrega un número especificado de días enteros y fraccionarios al valor de fech
 {{ now | date_add_days: -2.5 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -481,11 +486,11 @@ Agrega un número especificado de días enteros y fraccionarios al valor de fech
 5/4/2018 7:20:46 PM
 ```
 
-### <a name="date_add_hours"></a>date\_add\_hours
+### <a name="date_add_hours"></a>fecha\_agregar\_horas
 
-Agrega un número especificado de horas enteras y fraccionarias al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Agrega el número especificado de horas enteras y fraccionarias al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -495,7 +500,7 @@ Agrega un número especificado de horas enteras y fraccionarias al valor de fech
 {{ now | date_add_hours: -2.5 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -505,11 +510,11 @@ Agrega un número especificado de horas enteras y fraccionarias al valor de fech
 5/7/2018 4:50:46 AM
 ```
 
-### <a name="date_add_minutes"></a>date\_add\_minutes
+### <a name="date_add_minutes"></a>fecha\_agregar\_minutos
 
-Agrega un número especificado de minutos enteros y fraccionarios al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Agrega el número especificado de minutos enteros y fraccionarios al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -520,7 +525,7 @@ Agrega un número especificado de minutos enteros y fraccionarios al valor de fe
 ```
 
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -530,11 +535,11 @@ Agrega un número especificado de minutos enteros y fraccionarios al valor de fe
 5/7/2018 7:18:16 AM
 ```
 
-### <a name="date_add_months"></a>date\_add\_months
+### <a name="date_add_months"></a>fecha\_agregar\_meses
 
-Agrega un número especificado de meses enteros al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Agrega el número especificado de meses completos al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -544,7 +549,7 @@ Agrega un número especificado de meses enteros al valor de fecha y hora. El par
 {{ now | date_add_months: -2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -554,11 +559,11 @@ Agrega un número especificado de meses enteros al valor de fecha y hora. El par
 3/7/2018 7:20:46 AM
 ```
 
-### <a name="date_add_seconds"></a>date\_add\_seconds
+### <a name="date_add_seconds"></a>fecha\_agregar\_segundos
 
-Agrega un número especificado de segundos enteros y fraccionarios al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Agrega el número especificado de segundos enteros y fraccionarios al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -568,7 +573,7 @@ Agrega un número especificado de segundos enteros y fraccionarios al valor de f
 {{ now | date_add_seconds: -1.25 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -578,11 +583,11 @@ Agrega un número especificado de segundos enteros y fraccionarios al valor de f
 5/7/2018 7:20:45 AM
 ```
 
-### <a name="date_add_years"></a>date\_add\_years
+### <a name="date_add_years"></a>fecha\_agregar\_años
 
-Agrega un número especificado de años enteros al valor de fecha y hora. El parámetro pueden ser positivo o negativo.
+Suma el número especificado de años completos al valor de fecha y hora. El parámetro puede ser positivo o negativo.
 
-**Código**
+**Codifica**
 
 ```
 {{ now }}
@@ -592,7 +597,7 @@ Agrega un número especificado de años enteros al valor de fecha y hora. El par
 {{ now | date_add_years: -2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5/7/2018 7:20:46 AM
@@ -602,66 +607,66 @@ Agrega un número especificado de años enteros al valor de fecha y hora. El par
 5/7/2016 7:20:46 AM
 ```
 
-### <a name="date_to_iso8601"></a>date\_to\_iso8601
+### <a name="date_to_iso8601"></a>\_de fecha para\_iso8601
 
-Aplica formato a un valor de fecha y hora de acuerdo con la norma [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601). Útil para crear fuentes [*Atom*](http://tools.ietf.org/html/rfc4287) o el elemento HTML5 &lt;&gt;.  
+Da formato a un valor de fecha y hora según el estándar [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) . Resulta útil cuando se crean [*fuentes Atom*](https://tools.ietf.org/html/rfc4287)o el elemento&gt; de tiempo &lt;HTML5.  
 
-**Código**
+**Codifica**
 
 ```
 {{ now | date_to_iso8601 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 2018-05-07T07:20:46Z
 ```
 
-### <a name="date_to_rfc822"></a>date\_to\_rfc822
+### <a name="date_to_rfc822"></a>\_de fecha para\_rfc822
 
-Aplica formato a un valor de fecha y hora de acuerdo con la norma [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). Útil para crear fuentes [*RSS*](http://cyber.law.harvard.edu/rss/rss.html).  
+Da formato a un valor de fecha y hora según el estándar [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) . Resulta útil al crear [*fuentes RSS*](https://cyber.law.harvard.edu/rss/rss.html).  
 
-**Código**
+**Codifica**
 
 ```
 {{ now | date_to_rfc822 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Mon, 07 May 2018 07:20:46 Z
 ```
 
 
-## <a name="entity-list-filters"></a>Filtros de lista de entidades
+## <a name="entity-list-filters"></a>Filtros de la lista de entidades
 
-Los filtros de lista de entidades se usan para trabajar con determinados valores de atributo [entitylist](liquid-objects.md#entitylist) y para ayudar a crear vistas de lista de entidades.  
+Los filtros de la lista de entidades se usan para trabajar con determinados valores de atributos de [entitylist](liquid-objects.md#entitylist) y para ayudar a crear vistas de la lista de entidades.  
 
-### <a name="current_sort"></a>current\_sort
+### <a name="current_sort"></a>orden de\_actual
 
 Dada una expresión de ordenación, devuelve la dirección de ordenación actual para un atributo determinado.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'name ASC, createdon DESC' | current_sort: 'createdon' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 DESC
 ```
 
-### <a name="metafilters"></a>metafilters
+### <a name="metafilters"></a>metafiltros
 
-Analiza un valor JSON de [entitylist](liquid-objects.md#entitylist) filtro\_definición en objetos de grupo de opciones de filtro.  
+Analiza un filtro [entitylist](liquid-objects.md#entitylist)\_valor JSON de definición en objetos de grupo de opciones de filtro.  
 
-metafilters se puede ofrecer opcionalmente con una consulta de filtro de atributos actual y una [entitylist](liquid-objects.md#entitylist) actual, lo que permite que los objetos de filtro devueltos se marquen como seleccionados o no seleccionados.
+los metafiltros se pueden proporcionar opcionalmente con una consulta de filtro de atributo actual y un [entitylist](liquid-objects.md#entitylist)actual, lo que permite marcar los objetos de filtro devueltos como seleccionados o sin seleccionar.
 
-**Código**
+**Codifica**
 
 ```
 {% assign filters = entitylist | metafilters: params.mf, entityview %}
@@ -716,11 +721,11 @@ metafilters se puede ofrecer opcionalmente con una consulta de filtro de atribut
 {% endif %}
 ```
 
-### <a name="reverse_sort"></a>reverse\_sort
+### <a name="reverse_sort"></a>orden de\_inverso
 
 Dada una dirección de ordenación, devuelve la dirección de ordenación opuesta.
 
-**Código**
+**Codifica**
 
 ```
 <!-- Sort direction is not case-sensitive -->
@@ -730,7 +735,7 @@ Dada una dirección de ordenación, devuelve la dirección de ordenación opuest
 {{ 'desc' | reverse_sort }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 DESC
@@ -739,29 +744,29 @@ ASC
 ```
 
 
-## <a name="math-filters"></a>Filtros de matemáticas
+## <a name="math-filters"></a>Filtros matemáticos
 
-Los filtros de matemáticas permiten realizar operaciones matemáticas en [números](liquid-types.md#number).  
+Los filtros matemáticos le permiten realizar operaciones matemáticas en [números](liquid-types.md#number).  
 
-Como con todos los filtros, los filtros de matemáticas también se pueden encadenar y se aplican en orden de izquierda a derecha.
+Al igual que con todos los filtros, los filtros matemáticos se pueden encadenar y se aplican en orden de izquierda a derecha.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10 | times: 2 | minus: 5 | divided_by: 3 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5
 ```
 
-### <a name="ceil"></a>ceil
+### <a name="ceil"></a>Ceil (
 
-Redondea al alza un valor hasta el entero más cercano.
+Redondea un valor al entero más próximo.
 
-**Código**
+**Codifica**
 
 ```
 {{ 4.6 | ceil }}
@@ -769,7 +774,7 @@ Redondea al alza un valor hasta el entero más cercano.
 {{ 4.3 | ceil }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5
@@ -777,11 +782,11 @@ Redondea al alza un valor hasta el entero más cercano.
 5
 ```
 
-### <a name="divided_by"></a>divided\_by
+### <a name="divided_by"></a>\_dividido por
 
 Divide un número por otro número.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10 | divided_by: 2 }}
@@ -791,7 +796,7 @@ Divide un número por otro número.
 {{ 10.0 | divided_by: 3 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5
@@ -801,11 +806,11 @@ Divide un número por otro número.
 3.333333
 ```
 
-### <a name="floor"></a>floor
+### <a name="floor"></a>palabra
 
-Redondea a la baja un valor hasta el entero más cercano.
+Redondea un valor al entero más próximo.
 
-**Código**
+**Codifica**
 
 ```
 {{ 4.6 | floor }}
@@ -813,7 +818,7 @@ Redondea a la baja un valor hasta el entero más cercano.
 {{ 4.3 | floor }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 4
@@ -821,11 +826,11 @@ Redondea a la baja un valor hasta el entero más cercano.
 4
 ```
 
-### <a name="minus"></a>minus
+### <a name="minus"></a>DISMINUI
 
 Resta un número de otro número.
 
-**Código**
+**Codifica**
 
 ```
 <!-- entityview.page = 11 -->
@@ -837,7 +842,7 @@ Resta un número de otro número.
 {{ 10.1 | minus: 1 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 10
@@ -847,27 +852,27 @@ Resta un número de otro número.
 9.1
 ```
 
-### <a name="modulo"></a>modulo
+### <a name="modulo"></a>velocidad
 
 Divide un número por otro número y devuelve el resto.
 
-**Código**
+**Codifica**
 
 ```
 {{ 12 | modulo: 5 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 2
 ```
 
-### <a name="plus"></a>plus
+### <a name="plus"></a>signo más
 
-Suma un número a otro número.
+Agrega un número a otro número.
 
-**Código**
+**Codifica**
 
 ```
 <!-- entityview.page = 11 -->
@@ -879,7 +884,7 @@ Suma un número a otro número.
 {{ 10.1 | plus: 1 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 12
@@ -889,11 +894,11 @@ Suma un número a otro número.
 11.1
 ```
 
-### <a name="round"></a>round
+### <a name="round"></a>retorno
 
-Redondea un valor al entero más próximo o el número especificado de decimales.
+Redondea un valor al entero más próximo o al número especificado de decimales.
 
-**Código**
+**Codifica**
 
 ```
 {{ 4.6 | round }}
@@ -903,7 +908,7 @@ Redondea un valor al entero más próximo o el número especificado de decimales
 {{ 4.5612 | round: 2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 5
@@ -913,11 +918,11 @@ Redondea un valor al entero más próximo o el número especificado de decimales
 4.56
 ```
 
-### <a name="times"></a>times
+### <a name="times"></a>Times
 
 Multiplica un número por otro número.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10 | times: 2 }}
@@ -927,7 +932,7 @@ Multiplica un número por otro número.
 {{ 10.1 | times: 2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 20
@@ -942,33 +947,33 @@ Multiplica un número por otro número.
 
 Los filtros de cadena manipulan [cadenas](liquid-types.md#string).  
 
-### <a name="append"></a>append
+### <a name="append"></a>anexar
 
 Anexa una cadena al final de otra cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'filename' | append: '.js' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 filename.js
 ```
 
-### <a name="capitalize"></a>**capitalize**
+### <a name="capitalize"></a>**capitaliza**
 
-pone en mayúscula la primera palabra en una cadena.
+pone en mayúscula la primera palabra de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'capitalize me' | capitalize }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Capitalize Me
@@ -976,41 +981,41 @@ Capitalize Me
 
 ### <a name="downcase"></a>**downcase**
 
-Convierte una cadena en minúscula.
+Convierte una cadena en minúsculas.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'MIxed Case TExt' | downcase }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 mixed case text
 ```
 
-### <a name="escape"></a>**escape**
+### <a name="escape"></a>**salida**
 
-Inserta caracteres de escape HTML en una cadena.
+HTML: escapa una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ '<p>test</p>' | escape }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 &lt;p&gt;test&lt;/p&gt;
 ```
 
-### <a name="newline_to_br"></a>**newline\_to\_br**
+### <a name="newline_to_br"></a>**nueva línea\_a\_br**
 
-Inserta una etiqueta HTML de salto de línea &lt;br /&gt; en cada salto de línea de una cadena.
+Inserta una etiqueta HTML &lt;br/&gt; salto de línea en cada salto de línea de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {% capture text %}
@@ -1026,7 +1031,7 @@ C
 {{ text | newline_to_br }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 A<br />
@@ -1036,91 +1041,91 @@ B<br />
 C<br />
 ```
 
-### <a name="prepend"></a>**prepend**
+### <a name="prepend"></a>**pospone**
 
 Antepone una cadena al principio de otra cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'Jane Johnson' | prepend: 'Dr. ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Dr. Jane Johnson
 ```
 
-### <a name="remove"></a>**remove**
+### <a name="remove"></a>**retirar**
 
-Elimina todas las instancias de una subcadena de una cadena.
+Quita todas las apariciones de una subcadena de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove: 'Dave' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Hello, . How are you, ?
 ```
 
-### <a name="remove_first"></a>**remove\_first**
+### <a name="remove_first"></a>**quitar\_primero**
 
-Elimina la primera instancia de una subcadena de una cadena.
+Quita la primera aparición de una subcadena de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove_first: 'Dave' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Hello, . How are you, Dave?
 ```
 
-### <a name="replace"></a>**replace**
+### <a name="replace"></a>**Reemplace**
 
-Reemplaza todas las instancias de una cadena con una subcadena.
+Reemplaza todas las apariciones de una cadena por una subcadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace: 'Dave', 'John' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Hello, John. How are you, John?
 ```
 
-### <a name="replace_first"></a>**replace\_first**
+### <a name="replace_first"></a>**reemplazar\_primero**
 
-Reemplaza la primera instancia de una cadena con una subcadena.
+Reemplaza la primera aparición de una cadena por una subcadena.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace_first: 'Dave', 'John' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 Hello, John. How are you, Dave?
 ```
 
-### <a name="split"></a>**split**
+### <a name="split"></a>**Divida**
 
-El filtro split adopta una subcadena como parámetro. La subcadena se usa como delimitador para dividir una cadena en una matriz.
+El filtro dividido toma una subcadena como parámetro. La subcadena se utiliza como delimitador para dividir una cadena en una matriz.
 
-**Código**
+**Codifica**
 
 ```
 {% assign words = This is a demo of the split filter | split: ' ' %}
@@ -1136,7 +1141,7 @@ Last word: {{ words.last }}
 All words: {{ words | join: ', ' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 First word: This
@@ -1150,27 +1155,27 @@ Last word: filter
 All words: This, is, a, demo, of, the, split, filter
 ```
 
-### <a name="strip_html"></a>**strip\_html**
+### <a name="strip_html"></a>**quitar HTML\_**
 
 Quita todas las etiquetas HTML de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 <p>Hello</p>
 ```
 
-**Salida**
+**Genere**
 
 ```
 Hello
 ```
 
-### <a name="strip_newlines"></a>**strip\_newlines**
+### <a name="strip_newlines"></a>**franjas\_nuevas**
 
-Quita las saltos de línea de una cadena.
+Quita los saltos de línea de una cadena.
 
-**Código**
+**Codifica**
 
 ```
 {% capture text %}
@@ -1186,105 +1191,105 @@ C
 {{ text | strip_newlines }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 ABC
 ```
 
-### <a name="text_to_html"></a>**text\_to\_html**
+### <a name="text_to_html"></a>**\_de texto a\_HTML**
 
-Da formato a una cadena de texto sin formato como HTML simple. Todo el texto se codificará como HTML, bloques de texto separados por una línea en blanco se incluirán entre etiquetas de párrafo &lt;p&gt;, los saltos de línea individuales se sustituirán con &lt;br&gt;, y las direcciones URL se convertirán en hipervínculos.
+Da formato a una cadena de texto sin formato como HTML simple. Todo el texto estará codificado en HTML, los bloques de texto separados por una línea en blanco se ajustarán en el párrafo &lt;p&gt; etiquetas, los saltos de línea únicos se reemplazarán por &lt;br&gt;y las direcciones URL se convertirán en hipervínculos.
 
-**Código**
+**Codifica**
 
 ```
 {{ note.notetext | text_to_html }}
 ```
 
-**Salida**
+**Genere**
 
 ```
-<p>This is the first paragraph of notetext. It contains a URL: <a href="http://example.com/" rel="nofollow">http://example.com</a></p>
+<p>This is the first paragraph of notetext. It contains a URL: <a href="https://example.com/" rel="nofollow">https://example.com</a></p>
 
 <p>This is a second paragraph.</p>
 ```
 
-### <a name="truncate"></a>**truncate**
+### <a name="truncate"></a>**truncar**
 
-Trunca una cadena hasta un número de caracteres determinado. Un punto suspensivo (...) se anexa a la cadena y se incluye en el número de caracteres.
+Trunca una cadena hasta un número determinado de caracteres. Se anexan puntos suspensivos (...) a la cadena y se incluyen en el recuento de caracteres.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'This is a long run of text.' | truncate: 10 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 This is...
 ```
 
-### <a name="truncate_words"></a>**truncate\_words**
+### <a name="truncate_words"></a>**truncar palabras\_**
 
-Trunca una cadena hasta un número de palabras determinado. Se anexan puntos suspensivos (...) a la cadena truncada.
+Trunca una cadena hasta un número determinado de palabras. Se anexan puntos suspensivos (...) a la cadena truncada.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'This is a long run of text.' | truncate_words: 3 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 This is a...
 ```
 
-### <a name="upcase"></a>**upcase**
+### <a name="upcase"></a>**escenario de uso**
 
-Convierte una cadena en mayúscula.
+Convierte una cadena en mayúsculas.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'MIxed Case TExt' | upcase }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 MIXED CASE TEXT
 ```
 
-### <a name="url_escape"></a>**url\_escape**
+### <a name="url_escape"></a>**URL\_escape**
 
-Se insertan caracteres de escape URI en una cadena para su inclusión en una dirección URL.
+URI: escapa de una cadena para su inclusión en una dirección URL.
 
-**Código**
+**Codifica**
 
 ```
 {{ 'This & that//' | url_escape }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 This+%26+that%2F%2F
 ```
 
-### <a name="xml_escape"></a>**xml\_escape**
+### <a name="xml_escape"></a>**escape de\_XML**
 
-Se insertan caracteres de escape XML en una cadena para su inclusión en salida XML.
+XML: escapa de una cadena para su inclusión en la salida XML.
 
-**Código**
+**Codifica**
 
 ```
 {{ '<p>test</p>' | xml_escape }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 &lt;p&gt;test&lt;/p&gt;
@@ -1293,15 +1298,15 @@ Se insertan caracteres de escape XML en una cadena para su inclusión en salida 
 
 ## <a name="type-filters"></a>Filtros de tipo
 
-Los filtros de tipo permiten la conversión de valores de un tipo a otro.
+Los filtros de tipo permiten convertir valores de un tipo en otros tipos.
 
-### <a name="boolean"></a>**boolean**
+### <a name="boolean"></a>**booleano**
 
-Intenta convertir un valor de cadena en booleano. Si el valor ya es booleano, se devolverá sin cambios. Si el valor no se puede convertir en booleano, se devolverá null.
+Intenta convertir un valor de cadena en un valor booleano. Si el valor ya es un valor booleano, se devolverá sin cambios. Si el valor no se puede convertir en un valor booleano, se devolverá null.
 
-Este filtro también acepta on, habilitado, o sí como true, y off, deshabilitado y no como false.
+Este filtro también aceptará on, Enabled o Yes como true y OFF, Disabled y no como false.
 
-**Código**
+**Codifica**
 
 ```
 {{ true | boolean }}
@@ -1313,7 +1318,7 @@ Este filtro también acepta on, habilitado, o sí como true, y off, deshabilitad
 {{ settings['something/enabled'] | boolean | default: false }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 true
@@ -1327,9 +1332,9 @@ false
 
 ### <a name="decimal"></a>**decimal**
 
-Intenta convertir un valor de cadena en número decimal. Si el valor ya es un número decimal, se devolverá sin cambios. Si el valor no se puede convertir en un número decimal, se devolverá null.
+Intenta convertir un valor de cadena en un número decimal. Si el valor ya es un número decimal, se devolverá sin cambios. Si el valor no se puede convertir en un número decimal, se devolverá null.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10.1 | decimal }}
@@ -1339,7 +1344,7 @@ Intenta convertir un valor de cadena en número decimal. Si el valor ya es un n�
 {{ 'text' | decimal | default: 3.14 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 10.1
@@ -1349,11 +1354,11 @@ Intenta convertir un valor de cadena en número decimal. Si el valor ya es un n�
 3.14
 ```
 
-### <a name="integer"></a>**integer**
+### <a name="integer"></a>**entero**
 
 Intenta convertir un valor de cadena en un entero. Si el valor ya es un entero, se devolverá sin cambios. Si el valor no se puede convertir en un entero, se devolverá null.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10 | integer }}
@@ -1365,7 +1370,7 @@ Intenta convertir un valor de cadena en un entero. Si el valor ya es un entero, 
 {{ 'text' | integer | default: 2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 10
@@ -1376,83 +1381,83 @@ Intenta convertir un valor de cadena en un entero. Si el valor ya es un entero, 
 2
 ```
 
-### <a name="string"></a>**string**
+### <a name="string"></a>**String@**
 
 Intenta convertir un valor en su representación de cadena. Si el valor ya es una cadena, se devolverá sin cambios. Si el valor es null, se devolverá null.
 
 
 
-## <a name="url-filters"></a>Filtros de dirección URL
+## <a name="url-filters"></a>Filtros de URL
 
-Los filtros de dirección URL permiten crear o extraer partes de direcciones URL.
+Los filtros de dirección URL permiten crear o extraer partes de las direcciones URL.
 
-### <a name="add_query"></a>**add\_query**
+### <a name="add_query"></a>**Agregar\_consulta**
 
-Anexar un parámetro de cadena de consulta a una dirección URL. Si el parámetro ya existe en la dirección URL, el valor del parámetro se actualizará.
+Anexa un parámetro de cadena de consulta a una dirección URL. Si el parámetro ya existe en la dirección URL, se actualizará el valor del parámetro.
 
-Si este filtro se aplica a una dirección URL absoluta completa, una dirección URL absoluta actualizada será el resultado. Si se aplica a una ruta, una ruta actualizada será el resultado.
+Si este filtro se aplica a una dirección URL absoluta completa, el resultado será una dirección URL absoluta actualizada. Si se aplica a una ruta de acceso, el resultado será una ruta de acceso actualizada.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?page=1' | add_query: 'foo', 'bar' }}
+{{ 'https://example.com/path?page=1' | add_query: 'foo', 'bar' }}
 
 {{ '/path?page=1' | add_query: 'page', 2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
-http://example.com/path?page=1&foo=bar
+https://example.com/path?page=1&foo=bar
 
 /path?page=2
 ```
 
-### <a name="base"></a>**base**
+### <a name="base"></a>**básica**
 
-Obtiene la dirección URL de una dirección URL determinada.
+Obtiene la dirección URL base de una dirección URL determinada.
 
-**Código**
-
-```
-{{ 'http://example.com/path?foo=bar&page=2' | base }}
-```
-
-**Salida**
+**Codifica**
 
 ```
-http://example.com
+{{ 'https://example.com/path?foo=bar&page=2' | base }}
 ```
 
-### <a name="host"></a>**host**
-
-Obtiene la parte de host de una dirección URL.
-
-**Código**
+**Genere**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | host }}
+https://example.com
 ```
 
-**Salida**
+### <a name="host"></a>**organizar**
+
+Obtiene la parte del host de una dirección URL.
+
+**Codifica**
+
+```
+{{ 'https://example.com/path?foo=bar&page=2' | host }}
+```
+
+**Genere**
 
 ```
 example.com
 ```
 
-### <a name="path"></a>**path**
+### <a name="path"></a>**camino**
 
-Obtiene la parte de ruta de una dirección URL.
+Obtiene la parte de la ruta de acceso de una dirección URL.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path }}
+{{ 'https://example.com/path?foo=bar&page=2' | path }}
 
 {{ '/path?foo=bar&page=2' | path }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 /path
@@ -1460,19 +1465,19 @@ Obtiene la parte de ruta de una dirección URL.
 /path
 ```
 
-### <a name="path_and_query"></a>**path\_and\_query**
+### <a name="path_and_query"></a>**\_de ruta de acceso y\_consulta**
 
-Obtiene la parte de ruta y consulta de una dirección URL.
+Obtiene la ruta de acceso y la parte de la consulta de una dirección URL.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path_and_query }}
+{{ 'https://example.com/path?foo=bar&page=2' | path_and_query }}
 
 {{ '/path?foo=bar&page=2' | path_and_query }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 /path?foo=bar&page=2
@@ -1480,21 +1485,21 @@ Obtiene la parte de ruta y consulta de una dirección URL.
 /path?foo=bar&page=2
 ```
 
-### <a name="port"></a>**port**
+### <a name="port"></a>**casilla**
 
-Obtiene el número de puerto una dirección URL.
+Obtiene el número de puerto de una dirección URL.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | port }}
+{{ 'https://example.com/path?foo=bar&page=2' | port }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | port }}
 
 {{ 'https://example.com:9000/path?foo=bar&page=2' | port }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 80
@@ -1504,41 +1509,41 @@ Obtiene el número de puerto una dirección URL.
 9000
 ```
 
-### <a name="remove_query"></a>**remove\_query**
+### <a name="remove_query"></a>**quitar\_consulta**
 
-Quita un parámetro de cadena de consulta de una dirección URL. Si el parámetro no existe en la dirección URL, la dirección URL se devuelve sin cambios.
+Quita un parámetro de cadena de consulta de una dirección URL. Si el parámetro no existe en la dirección URL, la dirección URL se devolverá sin cambios.
 
-Si este filtro se aplica a una dirección URL absoluta completa, una dirección URL absoluta actualizada será el resultado. Si se aplica a una ruta, una ruta actualizada será el resultado.
+Si este filtro se aplica a una dirección URL absoluta completa, el resultado será una dirección URL absoluta actualizada. Si se aplica a una ruta de acceso, el resultado será una ruta de acceso actualizada.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?page=1' | remove_query: 'page' }}
+{{ 'https://example.com/path?page=1' | remove_query: 'page' }}
 
 {{ '/path?page=1' | remove_query: 'page' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
-http://example.com/path
+https://example.com/path
 
 /path
 ```
 
-### <a name="scheme"></a>**scheme**
+### <a name="scheme"></a>**regímenes**
 
-Obtiene la parte de esquema de una dirección URL.
+Obtiene la parte del esquema de una dirección URL.
 
-**Código**
+**Codifica**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | scheme }}
+{{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 http
@@ -1549,19 +1554,19 @@ https
 
 ## <a name="additional-filters"></a>Filtros adicionales
 
-Estos filtros proporcionan funcionalidad general útil.
+Estos filtros proporcionan una funcionalidad general útil.
 
-### <a name="default"></a>**default**
+### <a name="default"></a>**predeterminada**
 
-Devuelve un valor predeterminado para cualquier variable sin valor asignado (es decir, null).
+Devuelve un valor predeterminado para cualquier variable sin ningún valor asignado (es decir, null).
 
-**Código**
+**Codifica**
 
 ```
 {{ snippets[Header] | default: 'My Website' }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 <!-- If a snippet with the name Header returns null -->
@@ -1569,13 +1574,13 @@ Devuelve un valor predeterminado para cualquier variable sin valor asignado (es 
 My Website
 ```
 
-### <a name="file_size"></a>**file\_size**
+### <a name="file_size"></a>**tamaño de\_de archivo**
 
-Aplicado un valor de número que representa varios bytes, devuelve un tamaño de archivo con formato con una unidad de escala adecuada.
+Aplicado a un valor numérico que representa un número de bytes, devuelve un tamaño de archivo con formato con una unidad de escala adecuada.
 
-Opcionalmente, puede pasarse un parámetro de precisión para controlar el número de decimales en el resultado. La precisión predeterminada es 1.
+Opcionalmente, se puede pasar un parámetro de precisión para controlar el número de posiciones decimales en el resultado. La precisión predeterminada es 1.
 
-**Código**
+**Codifica**
 
 ```
 {{ 10000000 | file_size }}
@@ -1585,7 +1590,7 @@ Opcionalmente, puede pasarse un parámetro de precisión para controlar el núme
 {{ entity.notes.first.filesize | file_size: 2 }}
 ```
 
-**Salida**
+**Genere**
 
 ```
 9.5 MB
@@ -1595,11 +1600,11 @@ Opcionalmente, puede pasarse un parámetro de precisión para controlar el núme
 207.14 KB
 ```
 
-### <a name="has_role"></a>**has\_role**
+### <a name="has_role"></a>**tiene rol de\_**
 
-Si se aplica a un [usuario](liquid-objects.md#user), devuelve true si el usuario pertenece al rol determinado. Devuelve false si no.  
+Aplicado a un [usuario](liquid-objects.md#user), devuelve true si el usuario pertenece al rol especificado. Devuelve false si no lo está.  
 
-**Código**
+**Codifica**
 
 ```
 {% assign is_admin = user | has_role: 'Administrators' %}
@@ -1611,14 +1616,14 @@ User is an administrator.
 {% endif %}
 ```
 
-### <a name="liquid"></a>**liquid**
+### <a name="liquid"></a>**circula**
 
-Representa una cadena como código de Liquid. Este código tendrá acceso al contexto de ejecución de Liquid actual (variables, etc.).
+Representa una cadena como código de líquido. Este código tendrá acceso al contexto de ejecución de Liquid actual (variables, etc.).
 
 > [!Note] 
-> Este filtro se debe usar con precaución y debe aplicarse normalmente sólo a los valores que están bajo el control exclusivo de los autores del contenido del portal, u otros usuarios en los que se puede confiar para escribir código de Liquid.
+> Este filtro debe usarse con precaución y, por lo general, solo debe aplicarse a los valores que están bajo el control exclusivo de los autores de contenido del portal, u otros usuarios que pueden ser de confianza para escribir código líquido.
 
-**Código**
+**Codifica**
 
 ```
 {{ page.adx_copy | liquid }}
@@ -1626,9 +1631,9 @@ Representa una cadena como código de Liquid. Este código tendrá acceso al con
 
 ### <a name="see-also"></a>Vea también
 
-[Almacenar contenido de origen con plantillas web](store-content-web-templates.md)  
-[Comprender operadores de Liquid](liquid-operators.md) 
-[Tipos de Liquid](liquid-types.md)  
-[Objetos de Liquid](liquid-objects.md)  
-[Etiquetas de Liquid](liquid-tags.md)  
-[Filtros de Liquid](liquid-filters.md)  
+[Almacenar contenido de origen mediante plantillas web](store-content-web-templates.md)  
+[Descripción de los operadores liquid](liquid-operators.md) 
+[tipos de líquido](liquid-types.md)  
+[Objetos Liquid](liquid-objects.md)  
+[Etiquetas líquidas](liquid-tags.md)  
+[Filtros líquidos](liquid-filters.md)  

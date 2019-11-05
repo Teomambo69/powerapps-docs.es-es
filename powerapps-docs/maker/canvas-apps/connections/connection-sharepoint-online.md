@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71993976"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540346"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
@@ -40,7 +40,7 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
 
 ## <a name="create-a-connection"></a>Crear una conexión
 
-1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos**  > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
+1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos**  > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
 
     > [!div class="mx-imgBorder"]
     > ![seleccione datos > conexiones en la barra de navegación izquierda y, a continuación, seleccione nueva conexión cerca de la esquina superior izquierda.](./media/connection-sharepoint-online/new-connection.png)

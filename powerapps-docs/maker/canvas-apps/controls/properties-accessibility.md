@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c11e05c93d5a505408948178bf3efbd31f2dbf7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2e11de4af02347154c65500659df94a6b2183540
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539430"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>Propiedades de accesibilidad de las aplicaciones de Canvas
 
@@ -43,7 +43,7 @@ La navegación mediante el teclado es un aspecto importante de cualquier aplicac
 - Solo tiene una tabulación en los controles que son interactivos.
 - Siga un orden intuitivo y luego hacia abajo "Z" o hacia abajo y después por orden "inverso-N".
 
-Los requisitos anteriores se cumplirán con los valores de **TabIndex** predeterminados y se recomienda que no los cambie.  El valor predeterminado es lo que la mayoría de los usuarios esperan visualmente y funcionará bien con un lector de pantalla.  Sin embargo, puede haber casos en los que desee invalidar el valor predeterminado.  Use la propiedad **TabIndex** y el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para realizar ajustes en el orden de navegación.  
+Los requisitos anteriores se cumplirán con los valores de **TabIndex** predeterminados y se recomienda que no los cambie.  El valor predeterminado es lo que la mayoría de los usuarios esperan visualmente y funcionará bien con un lector de pantalla.  Sin embargo, puede haber casos en los que desee invalidar el valor predeterminado.  Use la propiedad **TabIndex** y el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para realizar ajustes en el orden de navegación.  
 
 La propiedad **TabIndex** tiene dos valores recomendados:
 
@@ -54,7 +54,7 @@ La propiedad **TabIndex** tiene dos valores recomendados:
 
 Generalmente, el orden de navegación va de izquierda a derecha y de arriba abajo, en un patrón "Z". El orden se basa en los valores de **las propiedades X e y de** los controles. Si los controles se mueven dinámicamente en la pantalla (por ejemplo, al tener una fórmula para **X** o **Y** basada en un temporizador u otro control), el orden de navegación también cambiará dinámicamente.
 
-Utilice el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para agrupar los controles que se deben navegar juntos o para crear columnas en un patrón "inverso-N".  En la parte superior del ejemplo siguiente, los campos de nombre están incluidos en un control de grupo mejorado, lo que hace que la navegación continúe antes de moverse.  En la parte inferior del ejemplo, no se usa ningún control de grupo y la navegación continúa hacia arriba y luego hacia abajo como normal, lo que no es intuitivo dado las agrupaciones de control. 
+Utilice el [control de **Grupo mejorado** ](https://powerapps.microsoft.com/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) para agrupar los controles que se deben navegar juntos o para crear columnas en un patrón "inverso-N".  En la parte superior del ejemplo siguiente, los campos de nombre están incluidos en un control de grupo mejorado, lo que hace que la navegación continúe antes de moverse.  En la parte inferior del ejemplo, no se usa ningún control de grupo y la navegación continúa hacia arriba y luego hacia abajo como normal, lo que no es intuitivo dado las agrupaciones de control. 
 
 ![Animación que muestra un control de grupo mejorado que hace que la navegación continúe dentro de un grupo antes de pasar a otro](media/properties-accessibility/enhanced-group.gif)
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 592399e6b5a95d27e5c0afe48541d04d444528bb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3147308c52439f250f8f65a81d91d99f30ae1481
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985559"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540300"
 ---
 # <a name="data-types-in-canvas-apps"></a>Tipos de datos en aplicaciones de lienzo
 
@@ -35,14 +34,14 @@ En este artículo se proporcionan detalles sobre los tipos de datos que admiten 
 | **Posteriormente** | Una fecha sin una hora, en la zona horaria del usuario de la aplicación. | **Fecha (2019, 5, 16)** |
 | **DateTime** | Una fecha con una hora, en la zona horaria del usuario de la aplicación. | **Fechahoranumero ("May 16, 2019 1:23:09 PM")** |
 | **VOLUMEN** | [Identificador único global](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID ()**<br>**GUID ("123e4567-e89b-12d3-A456-426655440000")** |
-| **Hipervínculo** | Cadena de texto que contiene un hipervínculo. | **"http://powerapps.microsoft.com"** |
+| **Hipervínculo** | Cadena de texto que contiene un hipervínculo. | **"https://powerapps.microsoft.com"** |
 | **Imagen** | Una cadena de texto de [identificador de recursos universal (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) a una imagen de. JPEG,. png,. SVG,. gif u otro formato de imagen web común. | Mi **imagen** se ha agregado como un recurso de la aplicación<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **Multimedia** | Una cadena de texto de URI en una grabación de vídeo o audio. | El **vídeo** se ha agregado como un recurso de la aplicación<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **Números** | Número de punto flotante. | **123**<br>**-4,567**<br>**8.903e121** |
 | **Conjunto de opciones** | Una opción de un conjunto de opciones, respaldado por un número. Este tipo de datos combina una etiqueta de texto traducible con un valor numérico. La etiqueta aparece en la aplicación y el valor numérico se almacena y se usa para las comparaciones. | **ThisItem. OrderStatus** |
-| **Record** | Un registro de valores de datos. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **{Company: "Northwind Traders"; @no__t 0Staff: 35; <br>NonProfit: false}** |
-| **Referencia de registro** | Referencia a un registro de una entidad. Estas referencias se suelen usar con búsquedas polimórficas. Más información: [Trabajar con referencias](../working-with-references.md).| **Primero (cuentas). Propietario** |
-| **Cuadro** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [Trabajar con tablas](../working-with-tables.md). | **Table ({FirstName: "Sidney"; <br>LastName: "Higa"}; <br> {nombre: "Nancy"; @no__t 0LastName: "Anderson"})**
+| **Record** | Un registro de valores de datos. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **{Company: "Northwind Traders",<br>personal: 35, <br>sin ánimo de lucro: false}** |
+| **Referencia de registro** | Referencia a un registro de una entidad. Estas referencias se suelen usar con búsquedas polimórficas. Más información: [trabajar con referencias](../working-with-references.md).| **Primero (cuentas). Propietario** |
+| **Cuadro** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy",<br>LastName: "Anderson"})**
 | **Texto** | Cadena de texto Unicode. | **"Hello, World"** |
 | **Tiempo** | Una hora sin fecha, en la zona horaria del usuario de la aplicación. | **Hora (11, 23, 45)** |
 | **Dos opciones** | Una opción de un conjunto de dos opciones, respaldada por un valor booleano. Este tipo de datos combina una etiqueta de texto traducible con un valor booleano. La etiqueta aparece en la aplicación y el valor booleano se almacena y se usa para las comparaciones. | **ThisItem. gravable** |
@@ -81,9 +80,9 @@ Puede profundizar un poco más en ese último ejemplo si establece la propiedad 
 
 Las aplicaciones de lienzo hacen referencia a cada imagen u otro archivo multimedia, ya sea en la nube o se agregan como un recurso de la aplicación, mediante una cadena de texto de URI.
 
-Por ejemplo, la propiedad **imagen** de un control imagen acepta no solo los recursos de la aplicación, sino también los vínculos a las imágenes en "https://northwindtraders.com/logo.jpg" la web, como . La propiedad también acepta imágenes insertadas que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
+Por ejemplo, la propiedad **imagen** de un control imagen acepta no solo los recursos de la aplicación, sino también los vínculos a las imágenes en la web, como "https://northwindtraders.com/logo.jpg". La propiedad también acepta imágenes insertadas que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
 
-```powerapps-comma
+```powerapps-dot
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -93,7 +92,7 @@ Ese URI muestra una versión escalada de dos diamantes púrpura:
 
 Puede mostrar la imagen más reciente capturada en un control de [**cámara**](../controls/control-camera.md) si establece la propiedad **imagen** de un control imagen en la propiedad **foto** del control cámara. La aplicación contiene la imagen en memoria y la propiedad **Photo** del control de cámara devuelve una referencia de URI a la imagen. Por ejemplo, puede tomar una foto y la propiedad **Photo** de la cámara podría devolver **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
 
-El URI se usa para hacer referencia a una imagen u otro archivo multimedia almacenado en una base de datos. De este modo, la aplicación no recupera los datos reales hasta que realmente se necesita. Por ejemplo, un dato adjunto en una entidad Common Data Service podría devolver **"appres://datasources/Contacts/Table/..."** Como en el ejemplo de cámara, puede mostrar esta imagen estableciendo la propiedad **imagen** de un control imagen en esta referencia, que recupera los datos binarios.
+El URI se usa para hacer referencia a una imagen u otro archivo multimedia almacenado en una base de datos. De este modo, la aplicación no recupera los datos reales hasta que realmente se necesita. Por ejemplo, un dato adjunto en una entidad Common Data Service podría devolver **"appres://datasources/Contacts/Table/..."** como en el ejemplo de cámara, puede mostrar esta imagen estableciendo la propiedad **imagen** de un control imagen en esta referencia, que Recupera los datos binarios.
 
 Al guardar un tipo de datos multimedia, como una imagen, en una base de datos, la aplicación envía la imagen o los datos multimedia reales, no la referencia de URI.
 
@@ -123,15 +122,15 @@ Los sistemas de base de datos suelen almacenar monedas y realizar cálculos medi
 
 Los valores de fecha y hora se encuentran en estas categorías:
 
-- **Usuario local**: Estos valores se almacenan en [UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), pero la zona horaria del usuario de la aplicación afecta al modo en que la aplicación muestra estos valores y cómo los especifica el usuario de la aplicación. Por ejemplo, el mismo momento aparece de manera diferente para un usuario en Canadá que para un usuario de Japón.
-- **Independiente de la zona horaria**: La aplicación muestra estos valores de la misma manera y el usuario de la aplicación los especifica de la misma manera, independientemente de la zona horaria. El mismo momento aparece de la misma manera para un usuario en Canadá que para un usuario de Japón. Los autores de aplicaciones que no esperan que sus aplicaciones se ejecuten en distintas zonas horarias usan estos valores, ya que son más sencillos.
+- **Local del usuario**: estos valores se almacenan en [UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), pero la zona horaria del usuario de la aplicación afecta a cómo la aplicación muestra estos valores y cómo los especifica el usuario de la aplicación. Por ejemplo, el mismo momento aparece de manera diferente para un usuario en Canadá que para un usuario de Japón.
+- **Independiente de la zona horaria**: la aplicación muestra estos valores de la misma manera y el usuario de la aplicación los especifica de la misma manera, independientemente de la zona horaria. El mismo momento aparece de la misma manera para un usuario en Canadá que para un usuario de Japón. Los autores de aplicaciones que no esperan que sus aplicaciones se ejecuten en distintas zonas horarias usan estos valores, ya que son más sencillos.
 
 En esta tabla se muestran algunos ejemplos:
 
 | Tipo de fecha y hora | Valor almacenado en la base de datos | Valor que se muestra y se especifican 7 horas oeste de UTC | Valor que se muestra y se escribe 4 horas este de UTC |
 |--------------------------|------------------------------|------------------------------|
-| **Usuario local** | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | Sábado, &nbsp;May @ no__t-118, &nbsp;2019<br>9:00 PM | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>8:00 AM |
-| **Independiente de la zona horaria** | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | 
+| **Usuario local** | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | Sábado,&nbsp;puede&nbsp;18&nbsp;2019<br>9:00 PM | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>8:00 AM |
+| **Independiente de la zona horaria** | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | 
 
 En el caso de la fecha y hora **locales del usuario** , las aplicaciones de lienzo usan la zona horaria del explorador o el dispositivo, pero las aplicaciones controladas por modelos usan la configuración del usuario en Common Data Service. Estos valores suelen coincidir, pero los resultados variarán si esta configuración es diferente.
 
@@ -145,20 +144,20 @@ Cuando una aplicación de lienzo Lee un valor independiente de la **zona horaria
 
 Puede observar este comportamiento más detenidamente mediante el uso de la función [**Value**](function-value.md) para tener acceso al valor numérico subyacente de un valor de fecha y hora. Esta función devuelve el valor de fecha y hora como el número de milisegundos transcurridos desde el 1 de enero de 1970 00:00:00.000 UTC.
 
-Dado que cada valor de fecha y hora se mantiene en UTC, el valor de la fórmula **(fecha (1970; 1; 1))** no devolverá cero en la mayoría de las partes del mundo porque la función **Date** devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolverá 28,8 millones en una zona horaria en la que se desplace la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
+Dado que cada valor de fecha y hora se mantiene en UTC, el valor de la fórmula **(fecha (1970, 1, 1))** no devolverá cero en la mayoría de las partes del mundo porque la función **Date** devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolverá 28,8 millones en una zona horaria en la que se desplace la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
 
 Volviendo al ejemplo anterior:
 
 | Tipo de fecha y hora | Valor almacenado en la base de datos | Valor que se muestra y se especifican 7 horas oeste de UTC | La función **Value** devuelve |
 |--------------------------|------------------------------|------------------------------|
-| **Usuario local** | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | Sábado, &nbsp;May @ no__t-118, &nbsp;2019<br>9:00 PM | 1\.558.238.400.000<br> (Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM UTC) |
-| **Independiente de la zona horaria** | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM | Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>4:00 AM |1\.558.263.600.000<br> (Domingo, &nbsp;May @ no__t-119, &nbsp;2019<br>11:00 AM UTC) |
+| **Usuario local** | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | Sábado,&nbsp;puede&nbsp;18&nbsp;2019<br>9:00 PM | 1\.558.238.400.000<br> (Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM UTC) |
+| **Independiente de la zona horaria** | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM | Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>4:00 AM |1\.558.263.600.000<br> (Domingo,&nbsp;puede&nbsp;19&nbsp;2019<br>11:00 AM UTC) |
 
 ### <a name="converting-unix-times"></a>Convertir horas UNIX
 
 Los tiempos UNIX reflejan el número de segundos transcurridos desde el 1 de enero de 1970 00:00:00 UTC. Dado que las aplicaciones de canvas usan milisegundos en lugar de segundos, puede convertir entre los dos multiplicando o dividiendo por 1.000.
 
-Por ejemplo, la hora de UNIX muestra el 9 de septiembre de 2001, a las 01:46:40 UTC como 1 mil millones. Para mostrar ese valor de fecha y hora en una aplicación de lienzo, multiplique ese número por 1.000 para convertirlo en milisegundos y usarlo en una función de [**texto**](function-text.md) . El texto de la fórmula **(1 mil millones * 1000; DateTimeFormat. UTC)** devuelve la cadena **2001-09-09T01:46:40.000 z**.
+Por ejemplo, la hora de UNIX muestra el 9 de septiembre de 2001, a las 01:46:40 UTC como 1 mil millones. Para mostrar ese valor de fecha y hora en una aplicación de lienzo, multiplique ese número por 1.000 para convertirlo en milisegundos y usarlo en una función de [**texto**](function-text.md) . El texto de la fórmula **(1 mil millones * 1000, DateTimeFormat. UTC)** devuelve la cadena **2001-09-09T01:46:40.000 z**.
 
 Sin embargo, esa función devuelve el **sábado, 8 de septiembre de 2001 18:46:40** si usa el formato **DateTimeFormat. LongDateTime24** en una zona horaria con una diferencia de 7 horas con respecto a la hora UTC (7 horas oeste de UTC). Este resultado muestra el valor **DateTime** correctamente basado en la zona horaria local.
 
@@ -176,11 +175,11 @@ Las aplicaciones de lienzo usan la información de zona horaria incluida en camp
 
 Las aplicaciones de lienzo leen y escriben los valores del tipo de datos [**Time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) en SQL Server como cadenas de texto en el [formato de duración ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Por ejemplo, debe analizar este formato de cadena y usar la función [**Time**](function-date-time.md) para convertir la cadena de texto **"PT2H1M39S"** en un valor de **hora** :
 
-```powerapps-comma
+```powerapps-dot
 First(
     ForAll(
-        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-        Time( Value( hours ); Value( minutes ); Value( seconds ) )
+        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+        Time( Value( hours ), Value( minutes ), Value( seconds ) )
     )
 ).Value
 ```
@@ -203,18 +202,18 @@ Cuando un usuario de la aplicación selecciona una opción y guarda ese cambio, 
 
 Las etiquetas solo son para fines de presentación. No se pueden realizar comparaciones directas con las etiquetas porque son específicas de un idioma. En su lugar, cada conjunto de opciones tiene una enumeración que funciona con el número o valor booleano subyacente. Por ejemplo, no puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = "Active"; ...`
+`If( ThisItem.OrderStatus = "Active", ...`
 
 Pero puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
 En el caso de los conjuntos de opciones globales (que comparten las entidades), el nombre de la enumeración de conjuntos de opciones coincide con el nombre del conjunto de opciones global. En el caso de los conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones con el mismo nombre. Por ejemplo, la entidad **accounts** puede tener una opción **OrderStatus** establecida y su nombre podría ser **OrderStatus (accounts)** . Ese nombre contiene uno o varios espacios y paréntesis, por lo que debe encerrarlo con comillas simples si hace referencia a él en una fórmula.
 
 Además, los valores de dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de dos opciones denominado **TaxStatus** podría tener las etiquetas **gravable** y **No gravable**, que corresponden a *true* y *false* respectivamente. Para mostrarlo, puede usar esta fórmula:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
 
 También puede usar esta fórmula equivalente:
 
-`If( ThisItem.Taxable; ...`
+`If( ThisItem.Taxable, ...`

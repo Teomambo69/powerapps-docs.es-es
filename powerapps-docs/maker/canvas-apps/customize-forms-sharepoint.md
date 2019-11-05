@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 67e7e0074259731bb1d3c50474e8020e3f4fcf1b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ccaa918bc0bd1e4ca666e62094fa137e31d3243f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993174"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540255"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Personalizar un formulario de aplicación de lienzo en PowerApps
 
@@ -34,27 +34,27 @@ Si no está familiarizado con Canvas-PPS, consulte [¿Qué son las aplicaciones 
 
 ## <a name="show-and-hide-cards"></a>Mostrar y ocultar las tarjetas
 
-1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, abra la aplicación que ha generado y personalizado.
+1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, abra la aplicación que ha generado y personalizado.
 
 1. En la barra de navegación izquierda, escriba o pegue **D** en la barra de búsqueda para filtrar la lista de elementos y, a continuación, seleccione **DetailForm1**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t pantalla de detalles de 0Select @ no__t-1
+    > ![seleccionar pantalla de detalles](./media/customize-forms-sharepoint/select-detailform.png)
 
 1. En la pestaña **Propiedades** del panel del lateral derecho, seleccione **Editar campos** para abrir el panel **Campos**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t el panel de campos de 0Open @ no__t-1
+    > ![panel abrir campos](./media/customize-forms-sharepoint/edit-fields.png)
 
 1. Oculte un campo, como la **Descripción**, manteniendo el puntero sobre él, seleccionando los puntos suspensivos (...) que aparece y, a continuación, seleccionando **quitar**.
 
     > [!div class="mx-imgBorder"]
-    > ![List de campos @ no__t-1
+    > ![lista de campos](./media/customize-forms-sharepoint/hide-fields.png)
 
 1. Para mostrar un campo, seleccione **Agregar campo**, escriba o pegue las primeras letras del nombre del campo en el cuadro de búsqueda, active la casilla del campo y, a continuación, seleccione **Agregar**.
 
     > [!div class="mx-imgBorder"]
-    > ![List de campos @ no__t-1
+    > ![lista de campos](./media/customize-forms-sharepoint/show-field.png)
 
 ## <a name="reorder-the-cards"></a>Reordenar las tarjetas
 
@@ -63,7 +63,7 @@ Si no está familiarizado con Canvas-PPS, consulte [¿Qué son las aplicaciones 
     Las tarjetas de **DetailForm1** reflejan el cambio.
 
     > [!div class="mx-imgBorder"]
-    > @no__t-tarjetas 0Reordered @ no__t-1
+    > ![las tarjetas reordenadas](./media/customize-forms-sharepoint/reordered-card.png)
 
 1. opta Reordene las otras tarjetas a esta secuencia:
 
@@ -72,7 +72,7 @@ Si no está familiarizado con Canvas-PPS, consulte [¿Qué son las aplicaciones 
     - Ingresos anuales
     - Teléfono principal
     - Dirección 1: Calle 1
-    - Dirección 1: Calle 2
+    - Dirección 1: calle 2
     - Dirección 1: Ciudad
     - Dirección 1: Código postal
 
@@ -87,37 +87,37 @@ Si no está familiarizado con Canvas-PPS, consulte [¿Qué son las aplicaciones 
 1. Para abrir el modo de vista previa, presione F5 (o seleccione el icono de **vista previa** situado cerca de la esquina superior derecha).
 
     > [!div class="mx-imgBorder"]
-    > @no__t: icono de 0Preview @ no__t-1
+    > ![icono de vista previa](./media/customize-forms-sharepoint/open-preview.png)
 
 1. En la esquina superior derecha, seleccione el icono de signo más para agregar un registro en **EditScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Add registro @ no__t-1
+    > ![agregar registro](./media/customize-forms-sharepoint/add-record.png)
 
 1. Agregue los datos que desee y, a continuación, seleccione el icono de marca de verificación en la esquina superior derecha para guardar los cambios y volver a **BrowseScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Save registro @ no__t-1
+    > ![guardar](./media/customize-forms-sharepoint/save-record.png) de registro
 
 1. Seleccione la flecha del elemento que acaba de crear para mostrar los detalles de ese elemento en **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t: flecha 0Right @ no__t-1
+    > ![flecha derecha](./media/customize-forms-sharepoint/right-arrow.png)
 
 1. En la esquina superior derecha, seleccione el icono de edición para actualizar el registro en **EditScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Edit registro @ no__t-1
+    > ![editar](./media/customize-forms-sharepoint/edit-record.png) de registro
 
 1. Cambie la información de uno o varios campos y, a continuación, active la marca de verificación situada en la esquina superior derecha para guardar los cambios y volver a **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Save cambia @ no__t-1
+    > ![guardar los cambios](./media/customize-forms-sharepoint/save-record.png)
 
 1. Cerca de la esquina superior derecha, seleccione el icono de la papelera para eliminar el registro que acaba de actualizar y volver a **BrowseScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Delete registro @ no__t-1
+    > ![eliminar registro](./media/customize-forms-sharepoint/delete-record.png)
 
 1. Cierre el modo de vista previa presionando ESC (o seleccionando el icono cerrar situado cerca de la esquina superior izquierda).
 

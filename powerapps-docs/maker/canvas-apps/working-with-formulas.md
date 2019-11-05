@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994805"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541605"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
 
@@ -36,7 +35,7 @@ En este tema se proporciona únicamente información general sobre cómo trabaja
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="show-a-simple-value"></a>Mostrar un valor simple
@@ -52,8 +51,8 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     Esta barra tiene dos partes:
 
-   * *Lista de propiedades*:  Cada control y pantalla tiene un [conjunto de propiedades](reference-properties.md).  Use esta lista para seleccionar una propiedad específica.  
-   * *Fórmula*:  Fórmula que se va a calcular para esta propiedad, formada por [valores, operadores y funciones](formula-reference.md).
+   * *Lista de propiedades*: cada pantalla y control tienen un [conjunto de propiedades](reference-properties.md).  Use esta lista para seleccionar una propiedad específica.  
+   * *Fórmula*: la fórmula que se calculará para esta propiedad, compuesta por [valores, operadores y funciones](formula-reference.md).
 
      En la barra de fórmulas, puede ver y editar las propiedades del control seleccionado o de la pantalla si no hay controles seleccionados.  Se ve el nombre del control seleccionado en la pestaña **Contenido**:
 
@@ -71,11 +70,11 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     La etiqueta refleja este nuevo valor a medida que lo escribe.  Es posible que aparezcan en pantalla iconos de signos de exclamación amarillos mientras escriba. Estos iconos indican errores, pero desaparecerán cuando termine de escribir un valor válido. Por ejemplo, una cadena no encerrada entre comillas dobles no es válida.
 
-    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30;12)** . En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30;12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
+    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30,12)** . En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30,12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
 
     > [!NOTE]
    > En PowerApps, no anteponga un signo igual o más a la fórmula como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
-5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1;2;3)** .
+5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1,2,3)** .
 
     ![Si escribe la función parcial Sum(1,2,3 sin paréntesis de cierre, aparecen errores](./media/working-with-formulas/label-sum-partial.png)
 
@@ -101,7 +100,7 @@ Con independencia de los números que escriba en los controles de entrada de tex
 
 En Excel, puede usar fórmulas de formato condicional para mostrar, por ejemplo, valores negativos en rojo. En PowerApps, puede usar fórmulas para determinar no solo el valor principal de un control, sino propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[color](controls/properties-color-border.md)** de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Puede configurar la aplicación con fórmulas para que los usuarios puedan cambi
     Puede especificar la propiedad **Max** si la selecciona en la pestaña **Contenido** o en la lista de propiedades:
 
     ![Cambiar el valor máximo de cada control deslizante](./media/working-with-formulas/three-sliders-max.png)
-4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Como ya se ha descrito, para acceder a las propiedades de un control, use el operador " **.** " .  **Slider1.Value** se refiere a la propiedad **[Value](controls/properties-core.md)** del control deslizante, que refleja el lugar donde el usuario ha colocado el control deslizante entre los valores **Min** y **Max**. A medida que escribe esta fórmula, cada control que la contenga se marca con un color entre la pantalla y la barra de fórmulas:
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b89f23ac1dec941fcc2f5d7bd03f927c08691f77
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 41536592493a2f17b187829fb778d2a6ca94134a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994058"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540760"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
 PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -37,7 +37,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
   4. Guarde los cambios.
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>Conexión al almacenamiento en la nube
-1. En [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda **Administrar** y seleccione **Conexiones**:  
+1. En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda **Administrar** y seleccione **Conexiones**:  
    
     ![Seleccionar Conexiones](./media/cloud-storage-blob-connections/connections.png)
 2. Seleccione **Nueva conexión** y seleccione la conexión de almacenamiento en la nube. Por ejemplo, seleccione **OneDrive**.
@@ -59,7 +59,7 @@ PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera 
 1. En la pestaña **Insertar**, seleccione **Galería** y seleccione un control de la galería **Con texto**.
 2. Establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en la tabla de Excel. Por ejemplo, si la tabla de Excel se denomina **Tabla1**, vuelva a establecerla en Tabla1:  
    
-    ![Propiedad Items](./media/cloud-storage-blob-connections/itemsproperty.png)  
+    ![Propiedad Elementos](./media/cloud-storage-blob-connections/itemsproperty.png)  
    
     La galería se actualiza automáticamente con la información de la tabla de Excel.
 3. En la galería, seleccione el segundo o tercer control **Etiqueta**. De manera predeterminada, se ve que la propiedad **Texto** de la segunda y tercera etiqueta se establece automáticamente en `ThisItem.something`. Estas etiquetas se pueden establecer en cualquier columna de la tabla.

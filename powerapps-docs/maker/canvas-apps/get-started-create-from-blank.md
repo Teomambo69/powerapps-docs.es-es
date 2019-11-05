@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81426f24eea958b40f6d03da787a729603ec6f7f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983654"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537022"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Creación de una aplicación de lienzo desde cero a partir de datos de Excel
 
@@ -51,7 +50,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 
-1. Inicie sesión en [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
 
@@ -112,17 +111,17 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     La fórmula coincide con la de este ejemplo:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, aparece la pantalla **ChangeScreen** con los campos vacíos, de forma que el usuario puede crear un registro más fácilmente.
 
@@ -207,7 +206,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la flecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, **ChangeScreen** aparece con cada campo que muestra los datos para el registro seleccionado, por lo que el usuario puede editar o eliminar el registro más fácilmente.
 
@@ -219,7 +218,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se descartan y se abre la pantalla de vista.
 
@@ -229,7 +228,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se guardan y se abre la pantalla de vista.
 
@@ -247,7 +246,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para el icono de papelera en esta fórmula:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, el registro seleccionado se elimina del origen de datos y se abre la pantalla de vista.
 

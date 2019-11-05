@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ed1053c758f97234ad94a09832683ff00ef17744
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977574"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543123"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Adición del recurso web de Azure Storage a una forma
 
@@ -27,7 +27,7 @@ Para habilitar la carga de datos adjuntos de un determinado formulario en Azure 
 
 Cuando se carga un archivo (por ejemplo, Attachments. zip) en Azure Storage mediante el portal, se representa con una nota en una entidad y un marcador de posición para los datos adjuntos.
 
-![Datos adjuntos en un](media/notes-attachment-lead-form.png "marcador de posición de formulario para los datos adjuntos en un formulario")
+![Datos adjuntos en un formulario](media/notes-attachment-lead-form.png "Marcador de posición para los datos adjuntos en un formulario")
 
 Tenga en cuenta que el archivo de datos adjuntos ahora se denomina Attachment. zip. txt. De forma predeterminada, Common Data Service no tiene ninguna concepción de un archivo de Azure, por lo que este archivo placeholder. txt se almacena en Common Data Service en su lugar. El contexto de Azure Storage para el archivo de marcador de posición muestra detalles sobre el archivo.
 ```
@@ -61,7 +61,7 @@ Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recur
 
 El nuevo control se representará ahora en la página, lo que le permitirá administrar los datos adjuntos en Azure Storage.
 
-![Datos adjuntos de archivos de Azure en un formulario](media/azure-file-attachment-lead-form.png "de archivo adjunto de Azure en un formulario")
+![Datos adjuntos de archivos de Azure en un formulario](media/azure-file-attachment-lead-form.png "Datos adjuntos de archivos de Azure en un formulario")
 
 El icono de clip de papel se ha reemplazado por un icono de nube para indicar que este archivo se almacena en Azure Storage. Puede continuar con el almacenamiento de datos adjuntos en Common Data Service; esos archivos se denotarán con el icono de clip de papel.
 
@@ -80,11 +80,11 @@ Si el archivo adjunto es una imagen, el control mostrará la imagen como una min
 > [!Note]
 > La característica de miniaturas se limita a las imágenes con un tamaño inferior a 1 MB.
 
-(media/notes-thumbnail.png "Miniaturas") de notas ![en miniatura]notas
+![Miniaturas de notas](media/notes-thumbnail.png "Miniaturas de notas")
 
 ## <a name="cors-protocol-support"></a>Compatibilidad con el protocolo CORS
 
-El protocolo de [uso compartido de recursos entre orígenes (CORS)](http://www.w3.org/TR/cors/) se compone de un conjunto de encabezados que indica si una respuesta se puede compartir con otro dominio.
+El protocolo de [uso compartido de recursos entre orígenes (CORS)](https://www.w3.org/TR/cors/) se compone de un conjunto de encabezados que indica si una respuesta se puede compartir con otro dominio.
 La siguiente configuración del sitio se usa para configurar CORS:
 
 |                 Nombre                  |                                                                            Descripción                                                                            |

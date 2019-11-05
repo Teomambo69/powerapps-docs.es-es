@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 401d32f3d3cacee4b9b1a23a5fceb7d159623086
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 476964166a57bea23469baf0c1e7497be10ab73f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994909"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541664"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Comprender los formularios de aplicaciones de lienzo en Microsoft PowerApps
 
@@ -39,7 +38,7 @@ Tal como se describe en este tema, combine estos controles con fórmulas para cr
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="explore-a-generated-app"></a>Exploración de una aplicación generada
@@ -53,8 +52,8 @@ Esta pantalla incluye las siguientes fórmulas clave:
 | Control | Comportamiento admitido | Fórmula |
 | --- | --- | --- |
 | **BrowseGallery1** |Muestra los registros del origen de datos **Assets**. |La propiedad **[Items](controls/properties-core.md)** de la galería está establecida en una fórmula basada en el origen de datos **Assets**. |
-| **ImageNewItem1** |Muestra la pantalla **Editar y crear** con cada campo establecido en un valor predeterminado para que el usuario pueda crear fácilmente un registro. |La propiedad **[OnSelect](controls/properties-core.md)** de la imagen está establecida en esta fórmula:<br> **NewForm( EditForm1 );;<br>Navigate( EditScreen1; None )** |
-| **NextArrow1** (en la galería) |Muestra la pantalla **Detalles** para ver varios o todos los campos del registro actualmente seleccionado. |La propiedad **[OnSelect](controls/properties-core.md)** de la flecha está establecida en esta fórmula:<br>**Navigate( DetailScreen1; None )** |
+| **ImageNewItem1** |Muestra la pantalla **Editar y crear** con cada campo establecido en un valor predeterminado para que el usuario pueda crear fácilmente un registro. |La propiedad **[OnSelect](controls/properties-core.md)** de la imagen está establecida en esta fórmula:<br> **NewForm( EditForm1 );<br>Navigate( EditScreen1, None )** |
+| **NextArrow1** (en la galería) |Muestra la pantalla **Detalles** para ver varios o todos los campos del registro actualmente seleccionado. |La propiedad **[OnSelect](controls/properties-core.md)** de la flecha está establecida en esta fórmula:<br>**Navigate( DetailScreen1, None )** |
 
 El control principal de esta pantalla, **BrowseGallery1**, abarca la mayor parte de la pantalla. El usuario puede desplazarse en la galería para encontrar un registro específico a fin de mostrar más campos o hacer una actualización.
 
@@ -64,7 +63,7 @@ Establezca la propiedad **[Items](controls/properties-core.md)** de una galería
 > En una aplicación generada, la propiedad **[Elementos](controls/properties-core.md)** se establece, de manera predeterminada, en una fórmula mucho más complicada para que el usuario pueda ordenar y buscar registros. Más adelante en este tema obtendrá información sobre cómo crear esta fórmula; por ahora basta con la versión más sencilla.
 
 En lugar de buscar un registro para mostrarlo o editarlo, el usuario puede crear un registro si selecciona el símbolo "+" que se encuentra arriba de la galería. Para crear este efecto, agregue un control **[Image](controls/control-image.md)** , colóquele un símbolo "+" y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
-<br>**NewForm( EditForm1 );; Navigate( EditScreen1; None )**
+<br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
 
 Esta fórmula abre la pantalla **Editar y crear**, que incluye un control **[Editar formulario](controls/control-form-detail.md)** llamado **EditForm1**. La fórmula también convierte ese formulario al modo **New**, en el cual el formulario muestra los valores predeterminados del origen de datos para que el usuario pueda crear fácilmente un registro desde cero.
 
@@ -75,7 +74,7 @@ Para examinar cualquier control que aparezca en **BrowseGallery1**, selecciónel
 En este ejemplo, la propiedad **[Text](controls/properties-core.md)** del control está establecida en **ThisItem.AssignedTo**, que es un campo que se encuentra en el origen de datos **Assets**. La propiedad **[Texto](controls/properties-core.md)** de los otros tres controles **[Etiqueta](controls/control-text-box.md)** en la galería está establecida en fórmulas similares y cada control muestra un campo distinto en el origen de datos.  
 
 Seleccione el control **[Forma](controls/control-shapes-icons.md)** (la flecha) y confirme que la propiedad **[OnSelect](controls/properties-core.md)** está establecida en esta fórmula:
-<br>**Navigate( DetailScreen1; None )**
+<br>**Navigate( DetailScreen1, None )**
 
 Si el usuario encuentra un registro en **BrowseGallery1**, puede seleccionar la flecha correspondiente a ese registro para mostrar más información sobre él en **DetailScreen1**. Cuando selecciona una flecha, el usuario cambia el valor de la propiedad **Selected** de **BrowseGallery1**. En esta aplicación, esa propiedad determina el registro que aparece no solo en la pantalla **DetailScreen1**, sino que también en **Edit and Create**, si el usuario decide actualizar el registro.
 
@@ -90,8 +89,8 @@ Esta pantalla incluye las siguientes fórmulas clave:
 | **DetailForm1** |Determina el registro que se mostrará. En una aplicación generada, muestra el registro que el usuario seleccionó en la galería. |Establezca la propiedad **[Item](controls/control-form-detail.md)** de este control en este valor:<br>**BrowseGallery1.Selected** |
 | Controles **[Tarjeta](controls/control-card.md)** |En un control **[Mostrar formulario](controls/control-form-detail.md)** , muestra un solo campo de un registro. |Establezca la propiedad **[DataField](controls/control-card.md)** en el nombre de un campo entre comillas dobles (por ejemplo, **"Nombre"** ). |
 | **ImageBackArrow1** |Cuando el usuario selecciona este control, se abre **BrowseScreen1**. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**Back()** |
-| **ImageDelete1** |Cuando el usuario selecciona este control, se elimina un registro. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**Remove( Assets; BrowseGallery1.Selected )** |
-| **ImageEdit1** |Cuando el usuario selecciona este control, la pantalla **Editar y crear** se abre en el registro actual. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**Navigate( EditScreen1; None )** |
+| **ImageDelete1** |Cuando el usuario selecciona este control, se elimina un registro. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**Remove( Assets, BrowseGallery1.Selected )** |
+| **ImageEdit1** |Cuando el usuario selecciona este control, la pantalla **Editar y crear** se abre en el registro actual. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**Navigate( EditScreen1, None )** |
 
 En la parte superior de la pantalla, aparecen tres imágenes fuera de **DetailForm1** que actúan como botones y se organizan entre las tres pantallas de la aplicación.
 
@@ -119,7 +118,7 @@ Esta pantalla incluye las siguientes fórmulas clave:
 | **EditForm1** |Muestra un registro en el origen de datos **Assets**. |Establezca la propiedad **[DataSource](controls/control-form-detail.md)** en **Assets**. |
 | **EditForm1** |Determina el registro que se mostrará. En una aplicación generada, muestra el registro que el usuario seleccionó en **BrowseScreen1**. |Establezca la propiedad **[Item](controls/control-form-detail.md)** en este valor:<br>**BrowseGallery1.Selected** |
 | Controles **[Tarjeta](controls/control-card.md)** |En un control **[Editar formulario](controls/control-form-detail.md)** , proporciona controles para que el usuario pueda editar uno o varios campos de un registro. |Establezca la propiedad **[DataField](controls/control-card.md)** en el nombre de un campo entre comillas dobles (por ejemplo, **"Nombre"** ). |
-| **ImageCancel1** |Cuando el usuario selecciona este control, se descartan los cambios en curso y se abre la pantalla **Detalles**. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**ResetForm( EditForm1 );; Back()** |
+| **ImageCancel1** |Cuando el usuario selecciona este control, se descartan los cambios en curso y se abre la pantalla **Detalles**. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**ResetForm( EditForm1 ); Back()** |
 | **ImageAccept1** |Cuando el usuario selecciona este control, los cambios se envían al origen de datos. |Establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>**SubmitForm( EditForm1 )** |
 | **EditForm1** |Si se aceptan los cambios, se vuelve a la pantalla anterior. |Establezca la propiedad **[OnSuccess](controls/control-form-detail.md)** en esta fórmula:<br>**Back()** |
 | **EditForm1** |Si no se aceptan los cambios, el usuario continúa en la pantalla actual para poder corregir cualquier problema e intente volver a enviar. |Deje en blanco la propiedad **[OnFailure](controls/control-form-detail.md)** . |
@@ -138,7 +137,7 @@ Al igual que con un control **[Mostrar formulario](controls/control-form-detail.
 
 ![Tarjeta de edición y controles de tarjeta seleccionados en la experiencia de creación](./media/working-with-forms/afd-edit-card-controls.png)
 
-En la imagen anterior, la tarjeta seleccionada muestra el campo **AssetID** y contiene un control **[Entrada de texto](controls/control-text-input.md)** para que el usuario pueda editar el valor de ese campo. (En cambio, la pantalla de detalle muestra el mismo campo en un control **[Etiqueta](controls/control-text-box.md)** , que es de solo lectura). El control **[Entrada de texto](controls/control-text-input.md)** tiene una propiedad **[Default](controls/properties-core.md)** , establecida en **Parent.Default**. Si el usuario estuviera creando un registro en lugar de editándolo, ese control mostraría un valor inicial que el usuario podría cambiar para el registro nuevo.
+En la imagen anterior, la tarjeta seleccionada muestra el campo **AssetID** y contiene un control **[Entrada de texto](controls/control-text-input.md)** para que el usuario pueda editar el valor de ese campo. (En cambio, la pantalla de detalle muestra el mismo campo en un control de **[etiqueta](controls/control-text-box.md)** , que es de solo lectura). El control **[entrada de texto](controls/control-text-input.md)** tiene una propiedad **[predeterminada](controls/properties-core.md)** , que se establece en **Parent. default**. Si el usuario estuviera creando un registro en lugar de editándolo, ese control mostraría un valor inicial que el usuario podría cambiar para el registro nuevo.
 
 En el panel de la derecha, puede mostrar u ocultar cada una de las tarjetas, reorganizarlas o configurarlas para mostrar campos en los distintos tipos de controles.
 
@@ -224,7 +223,7 @@ Volvamos al control **[Galería](controls/control-gallery.md)** y agreguemos nav
 1. Vaya a la primera pantalla, que hospeda el control **[Galería](controls/control-gallery.md)** , y seleccione la flecha del primer elemento de la galería.
 
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** de la forma en esta fórmula:
-   <br>**Navigate( Screen2; None )**
+   <br>**Navigate( Screen2, None )**
    
     ![Mostrar formulario para el origen de datos Helado con botón para volver](./media/working-with-forms/gallery-icecream-nav-new.png)
 
@@ -260,7 +259,7 @@ El control **[Editar formulario](controls/control-form-detail.md)** va más all�
 
 Para agregar navegación desde esta pantalla y hacia ella:
 
-1. Agregue otro control **[Botón](controls/control-button.md)** , establezca la propiedad **[Text](controls/properties-core.md)** para mostrar **Cancelar** y establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula: <br>**ResetForm( Form1 );; Back()**
+1. Agregue otro control **[Botón](controls/control-button.md)** , establezca la propiedad **[Text](controls/properties-core.md)** para mostrar **Cancelar** y establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula: <br>**ResetForm( Form1 ); Back()**
    
     Esta fórmula descarta las ediciones no guardadas y abre la pantalla anterior.
    
@@ -270,7 +269,7 @@ Para agregar navegación desde esta pantalla y hacia ella:
     Si las actualizaciones se guardan correctamente, la pantalla anterior (en este caso, la pantalla de detalles) se abre automáticamente.
    
     ![Editar formulario con la regla "OnSuccess" agregada](./media/working-with-forms/edit-icecream-onsuccess.png)
-3. En la pantalla **Mostrar**, agregue un botón, establezca su propiedad **[Text](controls/properties-core.md)** para mostrar **Editar** y establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br> **Navigate( Screen3; None )**
+3. En la pantalla **Mostrar**, agregue un botón, establezca su propiedad **[Text](controls/properties-core.md)** para mostrar **Editar** y establezca la propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br> **Navigate( Screen3, None )**
    
     ![Mostrar formulario con el botón "Editar" agregado](./media/working-with-forms/viewform-icecream-edit.png)
 
@@ -289,7 +288,7 @@ En la primera pantalla, agregará un botón **Nuevo**:
 
 1. En la pantalla con la galería, agregue un control **[Botón](controls/control-button.md)** .
 2. Establezca la propiedad **[Text](controls/properties-core.md)** en **New** y su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:<br>
-   **NewForm( Form1 );; Navigate( Screen3; None )**
+   **NewForm( Form1 ); Navigate( Screen3, None )**
    
     Esta fórmula cambia el control **[Editar formulario](controls/control-form-detail.md)** en **Screen3** al modo **New** y se abre esa pantalla para que el usuario pueda rellenarla.
 
@@ -300,7 +299,7 @@ Cuando se abre la pantalla Editar y crear, el formulario está vacío y listo pa
 ## <a name="delete-a-record"></a>Eliminación de un registro
 1. En la pantalla **Mostrar**, agregue un botón y establezca su propiedad **[Text](controls/properties-core.md)** para que muestre **Eliminar**.
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** del botón en esta fórmula:
-   <br>**Remove( 'Ice Cream'; Gallery1.Selected );; Back()**
+   <br>**Remove( 'Ice Cream', Gallery1.Selected ); Back()**
    
     ![Mostrar formulario con el botón "Editar" agregado](./media/working-with-forms/viewform-icecream-remove.png)
 
@@ -335,20 +334,20 @@ En la aplicación que PowerApps generó a partir de los datos, no analizamos dos
 
 ![Controles de ordenación y búsqueda en la pantalla de exploración](./media/working-with-forms/afd-browse-search-sort.png)
 
-Cuando el usuario selecciona el botón de ordenación, se invierte el criterio de ordenación de la galería. Para crear este comportamiento, usamos una *variable de contexto* para hacer seguimiento de la dirección en que se ordena la galería. Cuando el usuario selecciona el botón, se actualiza la variable y se invierte la dirección. La propiedad **[alseleccionar](controls/properties-core.md)** del botón de ordenación se establece en esta fórmula: **UpdateContext ({SortDescending1:! SortDescending1})**
+Cuando el usuario selecciona el botón de ordenación, se invierte el criterio de ordenación de la galería. Para crear este comportamiento, usamos una *variable de contexto* para hacer seguimiento de la dirección en que se ordena la galería. Cuando el usuario selecciona el botón, se actualiza la variable y se invierte la dirección. La propiedad **[OnSelect](controls/properties-core.md)** del botón de ordenación se establece en esta fórmula: **UpdateContext( {SortDescending1: !SortDescending1} )**
 
 La función **[UpdateContext](functions/function-updatecontext.md)** crea la variable de contexto **SortDescending1** si todavía no existe. La función leerá el valor de la variable y lo establecerá en la lógica opuesta con el operador **!** . Si el valor es *true*, se convierte en *false*. Si el valor es *false*, se convierte en *true*.
 
 La fórmula de la propiedad **[Items](controls/properties-core.md)** del control **[Galería](controls/control-gallery.md)** usa esta variable de contexto junto con el texto del control **TextSearchBox1**:
 
-```powerapps-comma
+```powerapps-dot
 Sort( 
-    If( IsBlank(TextSearchBox1.Text);
-        Assets;
-        Filter( Assets; TextSearchBox1.Text in Text(ApproverEmail) ) 
-    );
-    ApproverEmail;
-    If(SortDescending1; Descending; Ascending) 
+    If( IsBlank(TextSearchBox1.Text),
+        Assets,
+        Filter( Assets, TextSearchBox1.Text in Text(ApproverEmail) ) 
+    ),
+    ApproverEmail,
+    If(SortDescending1, Descending, Ascending) 
 )
 ```
 

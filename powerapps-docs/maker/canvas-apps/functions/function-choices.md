@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ac88e1b9e81b9c42c8c9ac187d569573fc10ac3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992968"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540188"
 ---
 # <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -53,7 +53,7 @@ En este momento, solo puede usar las columnas de búsqueda con SharePoint y Comm
 
     Se crean muchas entidades, como **Accounts**.
 
-    **Nota**: Los nombres de entidad son singulares en web.powerapps.com y plural en PowerApps Studio.
+    **Nota**: los nombres de entidad son singulares en make.powerapps.com y plural en PowerApps Studio.
 
     ![Una lista parcial de los campos de la entidad cuenta en Common Data Service para aplicaciones, resaltando que "contacto principal" es un campo de búsqueda](media/function-choices/entity-account.png)
 

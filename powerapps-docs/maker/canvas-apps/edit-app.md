@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecbe46f28d7be215a5ec9d8efecebde5dc4656d4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 71cb3318ceb83b5c18ebce621a07be08fc60e9c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993016"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73536986"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>Edición de una aplicación de lienzo en PowerApps
 Edite cualquier aplicación que haya compilado, de la que sea propietario o en la que tenga permisos **Puede editar**. Puede modificar una aplicación en PowerApps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
 
 ## <a name="verify-your-permissions"></a>Comprobación de los permisos
-1. Inicie sesión en [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
    
     ![Opción Aplicaciones en el menú Archivo](./media/edit-app/file-apps.png)
 

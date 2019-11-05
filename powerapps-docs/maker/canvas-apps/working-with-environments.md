@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 9cff6054c9c238aeceaff63b5f178f5db3b16727
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705259"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542323"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Trabajo con entornos y Microsoft PowerApps
 Con PowerApps, puede trabajar en entornos diferentes y cambiar fácilmente entre ellos. Para obtener información general de los entornos, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos), que explica en detalle por qué utilizar entornos y cómo puede crearlos y administrarlos. El ámbito de este artículo trata los siguientes temas sobre el entorno:
@@ -45,13 +45,13 @@ Puede crear aplicaciones en un entorno que cree o para el que se le haya concedi
 
 Para crear una aplicación en el entorno adecuado:
 
-1. [Inicie sesión en PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. Como se describe en la sección anterior, seleccione el entorno en el que desea crear la aplicación.
 
 1. Seleccione **aplicaciones** cerca del borde izquierdo y, después, seleccione **crear una aplicación**.
 
 ## <a name="view-apps-in-the-right-environment"></a>Visualización de aplicaciones en el entorno adecuado
-Si está trabajando en [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o PowerApps Studio, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno correcto.
+Si está trabajando en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o PowerApps Studio, la lista de aplicaciones, conexiones, etc., que vea siempre se filtra según el entorno seleccionado en la lista desplegable. Si no ve las aplicaciones que está buscando, confirme siempre si se ha seleccionado el entorno correcto.
 
 Para más información acerca de los entornos, consulte [esta información general](../../administrator/environments-overview.md).

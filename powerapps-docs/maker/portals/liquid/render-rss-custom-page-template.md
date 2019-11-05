@@ -1,32 +1,37 @@
 ---
-title: Representar una fuente RSS a través de la plantilla de página personalizada para un portal | MicrosoftDocs
-description: Instrucciones para crear una plantilla de página personalizada y usarla para representar una fuente de RSS.
+title: Representar una fuente RSS mediante una plantilla de página personalizada para un portal | MicrosoftDocs
+description: Instrucciones para crear una plantilla de página personalizada y usarla para representar una fuente RSS.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543321"
 ---
-
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Crear una plantilla de página personalizada para representar una fuente RSS
-En este ejemplo, crearemos una plantilla de página personalizada para representar una [fuente RSS](http://en.wikipedia.org/wiki/RSS) de artículos de noticias, utilizando Liquid y una plantilla de página web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)][Almacenar contenido de origen con plantillas web](store-content-web-templates.md).  
+En este ejemplo, vamos a crear una plantilla de página personalizada para representar una [fuente RSS](https://en.wikipedia.org/wiki/RSS) de artículos de noticias, mediante Liquid y una plantilla de página de plantilla Web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [almacenar el contenido de origen mediante plantillas web](store-content-web-templates.md)  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>Paso 1: Crear nueva vista de PowerApps
+## <a name="step-1-create-a-new-powerapps-view"></a>Paso 1: creación de una nueva vista de PowerApps
 
-Primero, crearemos una nueva vista de PowerApps que utilizaremos para cargar los datos para nuestra fuente. En este ejemplo, la convertiremos en una vista de páginas web, y usaremos esta entidad para almacenar nuestros artículos. Podemos usar esta vista para configurar la ordenación y el filtrado de resultados, e incluir como columnas los atributos de entidad que deseamos disponibles en nuestra plantilla de Liquid.
+En primer lugar, crearemos una nueva vista de PowerApps que usaremos para cargar los datos de la fuente. En este ejemplo, crearemos una vista en páginas web y usaremos esta entidad para almacenar nuestros artículos. Podemos usar esta vista para configurar la ordenación y el filtrado de los resultados, e incluir como columnas los atributos de entidad que queremos que estén disponibles en nuestra plantilla Liquid.
 
 ![Editar una plantilla de página](../media/edit-page-template.png "Editar una plantilla de página")  
 
-## <a name="step-2-create-a-web-template-for-rss-feed"></a>Paso 2: Crear una plantilla web para la fuente RSS
+## <a name="step-2-create-a-web-template-for-rss-feed"></a>Paso 2: crear una plantilla Web para la fuente RSS
 
-En este paso, crearemos una plantilla web para nuestra fuente RSS. Esta plantilla será aplicada a una página web particular en nuestro sitio web, por lo que usaremos el título y el resumen de esa página como título y descripción de la fuente. A continuación usaremos la etiqueta entityview para cargar nuestra vista Artículos de noticias recién creada. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Etiquetas de entidad de PowerApps common data service](portals-entity-tags.md). Tenga en cuenta que también establecemos el campo **Tipo MIME** de la plantilla web como application/rss+xml. Esto indica qué tipo de contenido de respuesta podría ser cuando se representa nuestra plantilla.  
+En este paso, vamos a crear una plantilla Web para nuestra fuente RSS. Esta plantilla se aplicará a una página web determinada en nuestro sitio web, por lo que usaremos el título y el Resumen de esa página como título y descripción de la fuente. Usaremos la etiqueta entityview para cargar la vista de artículos de noticias recién creada. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [etiquetas de entidad de Common Data Service de PowerApps](portals-entity-tags.md). Tenga en cuenta que también se establece el campo de **tipo MIME** de la plantilla Web en aplicación/RSS + XML. Esto indica cuál podría ser el tipo de contenido de respuesta cuando se representa la plantilla.  
 
-![Configurar una plantilla web para una fuente RSS](../media/web-template-rss-feed.png "Configurar una plantilla web para una fuente RSS")  
+![Configurar una plantilla Web para una fuente RSS](../media/web-template-rss-feed.png "Configurar una plantilla Web para una fuente RSS")  
 
-### <a name="rss-feed-web-template"></a>Fuente RSS (plantilla web)
+### <a name="rss-feed-web-template"></a>Fuente RSS (plantilla Web)
 
 ```xml
 <?xml version=1.0 encoding=UTF-8 ?>
@@ -50,24 +55,24 @@ En este paso, crearemos una plantilla web para nuestra fuente RSS. Esta plantill
 </rss>
 ```
 
-## <a name="step-3-create-a-page-template-to-assign-rss-feed-template"></a>Paso 3: Crear una plantilla de página para asignar la plantilla de fuente RSS
+## <a name="step-3-create-a-page-template-to-assign-rss-feed-template"></a>Paso 3: crear una plantilla de página para asignar la plantilla de fuente RSS
 
-Ahora, crearemos una nueva plantilla de página, lo que nos permitirá asignar nuestra plantilla de fuente RSS a cualquier página web en nuestro sitio web. Tenga en cuenta que anulamos la selección de **Usar encabezado y el pie de página del sitio web**, ya que deseamos establecer la representación de la respuesta de la página completa a nuestra fuente.
+Ahora, vamos a crear una nueva plantilla de página, lo que nos permite asignar nuestra plantilla de fuente RSS a cualquier página web de nuestro sitio Web. Tenga en cuenta que se anula la selección de **usar encabezado y pie**de página del sitio web, ya que se desea tomar una representación de la respuesta de página completa de nuestra fuente.
 
 ![Configurar una plantilla de página para una fuente RSS](../media/page-template-rss-feed.png "Configurar una plantilla de página para una fuente RSS")  
 
-## <a name="step-4-create-a-web-page-to-host-rss-feed"></a>Paso 4: Crear una página web para hospedar fuente RSS
+## <a name="step-4-create-a-web-page-to-host-rss-feed"></a>Paso 4: crear una página web para hospedar la fuente RSS
 
-Ahora lo único que queda es crear una nueva página web a través de la plantilla de fuente RSS para hospedar nuestra fuente. Cuando solicitamos esta nueva página web, recibiremos nuestro XML de fuente RSS:
+Ahora todo lo que queda es crear una nueva página web con la plantilla de fuente RSS para hospedar la fuente. Cuando solicitemos esta nueva página web, recibiremos nuestro XML de fuente RSS:
 
-![Ejemplo de fuente RSS](../media/rss-feed-example.png "Ejemplo de fuente RSS")  
+![Ejemplo de una fuente RSS](../media/rss-feed-example.png "Ejemplo de una fuente RSS")  
 
-En este ejemplo, hemos visto cómo podemos agrupar características de administración de contenido de Liquid, plantillas web, vistas de PowerApps, y los portales para crear una fuente RSS personalizada. La combinación de estas características agrega eficaces capacidades de personalización a cualquier aplicación de portal.
+En este ejemplo, hemos visto cómo se pueden combinar características de liquidez, plantillas web, vistas de PowerApps y portales de administración de contenido para crear una fuente RSS personalizada. La combinación de estas características agrega funciones de personalización eficaces a cualquier aplicación del portal.
 
 ### <a name="see-also"></a>Vea también
 
-[Crear una plantilla de página personalizada con Liquid y una plantilla de página de plantilla web](create-custom-template.md)  
+[Creación de una plantilla de página personalizada mediante Liquid y una plantilla de página de plantilla Web](create-custom-template.md)  
 [Representar la lista de entidades asociada a la página actual](render-entity-list-current-page.md)  
-[Represente un encabezado y una barra de navegación principal de página web](render-site-header-primary-navigation.md)  
-[Represente hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
+[Representar un encabezado de sitio web y una barra de navegación principal](render-site-header-primary-navigation.md)  
+[Representar hasta tres niveles de jerarquía de páginas mediante la navegación híbrida](hybrid-navigation-render-page-hierachy.md)  
 

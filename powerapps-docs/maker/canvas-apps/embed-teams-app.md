@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42075fbaee40ec98bec0d47e6bfd3c00dc6f9ef6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182491"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73538996"
 ---
 # <a name="embed-an-app-in-teams"></a>Inserción de una aplicación en Teams
 
@@ -36,7 +36,7 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 
 ## <a name="download-the-app"></a>Descarga de la aplicación
 
-1. Inicie sesión en [Web.powerapps.com](https://web.powerapps.com)y, a continuación, seleccione **aplicaciones** en el menú.
+1. Inicie sesión en [make.powerapps.com](https://make.powerapps.com)y, a continuación, seleccione **aplicaciones** en el menú.
 
     ![Mostrar lista de aplicaciones](./media/embed-teams-app/file-apps2.png "Mostrar la lista de aplicaciones")
 

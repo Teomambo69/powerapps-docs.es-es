@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5efcc877de7a16524c57121a91488189d4058437
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987156"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540435"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Conectar al Power BI desde PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -28,7 +28,7 @@ Power BI es un conjunto de herramientas de análisis de negocios destinado a ana
 En este tema se muestra cómo utilizar la conexión de Power BI en una aplicación y se enumeran las funciones disponibles.
 
 ## <a name="prerequisites"></a>Requisitos previos
-* [Registrarse](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+* [Registrarse](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 * Agregar la [conexión](https://powerapps.microsoft.com/tutorials/add-manage-connections/) de Power BI
 * Crear una aplicación a partir de una [plantilla](https://powerapps.microsoft.com/tutorials/get-started-test-drive/), de [datos](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/) o desde [el principio](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)
 
@@ -44,7 +44,7 @@ La galería se actualizará con la lista de alertas. Para cada alerta, recibirá
 ### <a name="view-the-status-of-an-alert"></a>Visualización del estado de una alerta
 Para ver el estado de la alerta, llame a la función CheckAlertStatus con el id. de alerta obtenido en el paso anterior.
 
-El id. de la alerta se puede pasar como una cadena literal (por ejemplo, "1234") o como una referencia a una sección de la galería rellenada mediante la llamada a GetAlerts() (por ejemplo, Gallery1.Selected.alertId).
+El identificador de la alerta se puede pasar como una cadena literal (por ejemplo, "1234") o como una referencia a una sección de la galería que se rellena mediante la llamada GetAlerts () (por ejemplo, Gallery1. Selected. alertId)
 
 Para continuar, agregue una etiqueta y establezca su propiedad [Texto](../controls/properties-core.md) en una de estas fórmulas:
 

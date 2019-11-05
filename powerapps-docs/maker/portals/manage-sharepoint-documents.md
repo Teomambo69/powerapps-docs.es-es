@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ab51a2b1a309921e32949a806adb4a7bf3273ccf
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974699"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543325"
 ---
 # <a name="manage-sharepoint-documents"></a>Administración de documentos de SharePoint
 
@@ -38,7 +38,7 @@ Para trabajar con las capacidades de administración de documentos de [!INCLUDE[
 
 ## <a name="step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365"></a>Paso 1: habilitar la funcionalidad de administración de documentos en aplicaciones controladas por modelos en Dynamics 365
 
-Debe habilitar la funcionalidad de administración de documentos en las aplicaciones controladas por modelos en Dynamics 365 mediante la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basado en servidor. La integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basado en servidor permite que las aplicaciones controladas por modelos en Dynamics 365 y [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] realicen una conexión de servidor a servidor. El portal utiliza el registro de sitio de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] predeterminado. Para obtener información sobre cómo habilitar la funcionalidad de administración de documentos en las aplicaciones controladas por modelos en Dynamics 365, consulte [configuración de aplicaciones controladas por modelos en dynamics 365 para usar SharePoint Online](https://docs.microsoft.com/en-us/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
+Debe habilitar la funcionalidad de administración de documentos en las aplicaciones controladas por modelos en Dynamics 365 mediante la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basado en servidor. La integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basado en servidor permite que las aplicaciones controladas por modelos en Dynamics 365 y [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] realicen una conexión de servidor a servidor. El portal utiliza el registro de sitio de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] predeterminado. Para obtener información sobre cómo habilitar la funcionalidad de administración de documentos en las aplicaciones controladas por modelos en Dynamics 365, consulte [configuración de aplicaciones controladas por modelos en dynamics 365 para usar SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
 
 ## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>Paso 2: configurar la integración de SharePoint desde el centro de administración de portales de PowerApps
 
@@ -61,12 +61,12 @@ Cuando se habilita la integración de [!INCLUDE[pn-sharepoint-short](../../inclu
 - **Deshabilitar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]** : permite deshabilitar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] con el portal. Mientras se deshabilita la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)], el portal se reinicia y no estará disponible durante unos minutos. Aparece un mensaje cuando se deshabilita la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)].
 
     > [!div class=mx-imgBorder]
-    > ![Deshabilitar la integración de SharePoint](media/disable-sharepoint-integration.png "deshabilitar la integración de SharePoint")
+    > ![Deshabilitar la integración de SharePoint](media/disable-sharepoint-integration.png "Deshabilitar la integración de SharePoint")
 
 La habilitación o deshabilitación de la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] actualizará la aplicación [!INCLUDE[pn-azure-active-directory](../../includes/pn-azure-active-directory.md)] ([!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD) del portal y agregará o quitará los permisos [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] necesarios, respectivamente. También se le redirigirá para proporcionar su consentimiento para que los cambios se realicen en la aplicación [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD. 
 
 > [!div class=mx-imgBorder]
-> ![Deshabilitar la integración de SharePoint](media/sharepoint-integration-consent.png "deshabilitar la integración de SharePoint")
+> ![Deshabilitar la integración de SharePoint](media/sharepoint-integration-consent.png "Deshabilitar la integración de SharePoint")
 
 Si no proporciona su consentimiento:
 
@@ -76,7 +76,7 @@ Si no proporciona su consentimiento:
 
 
 ## <a name="step-3-enable-document-management-for-entities"></a>Paso 3: habilitar la administración de documentos para entidades
-Debe habilitar la administración de documentos para que las entidades almacenen documentos relacionados con registros de entidad en [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. Para obtener información sobre cómo habilitar la administración de documentos para entidades, vea [Habilitar la administración de documentos de SharePoint para entidades específicas](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
+Debe habilitar la administración de documentos para que las entidades almacenen documentos relacionados con registros de entidad en [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. Para obtener información sobre cómo habilitar la administración de documentos para entidades, vea [Habilitar la administración de documentos de SharePoint para entidades específicas](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>Paso 4: configurar el formulario adecuado para mostrar documentos
 
@@ -150,12 +150,12 @@ En el ejemplo siguiente se muestra la configuración mediante la entidad case qu
         c. Abra el **Web: editar caso** en el editor de formularios.
 
          > [!div class=mx-imgBorder]
-         > ![Web: formulario de edición de casos](media/web-edit-case-form.png "Web: formulario de edición web")
+         > ![Formulario web-editar caso](media/web-edit-case-form.png "Formulario web-editar caso")
     
         d. Seleccione el campo **creado en** del formulario y, en la pestaña **Insertar** , seleccione **subcuadrícula**.
 
          > [!div class=mx-imgBorder]
-         > ![Agregar una subcuadrícula al formulario de casos de edición web](media/add-sub-grid.png "Agregar una subcuadrícula al formulario de edición web")
+         > ![Agregar una subcuadrícula al formulario web-Edit Case](media/add-sub-grid.png "Agregar una subcuadrícula al formulario web-Edit Case")
     
         e. En el cuadro de diálogo **establecer propiedades** , establezca las siguientes propiedades y seleccione **Aceptar**:
 
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra la configuración mediante la entidad case qu
          - **Vista predeterminada**: ubicaciones de documentos activos
 
          > [!div class=mx-imgBorder]
-         > Propiedades de ![subcuadrícula]propiedades de(media/sub-grid-properties.png "subcuadrícula")
+         > ![Propiedades de subcuadrícula](media/sub-grid-properties.png "Propiedades de subcuadrícula")
 
         formato. En el editor de formularios, seleccione **Guardar** y, a continuación, seleccione **publicar**.
 
@@ -189,7 +189,7 @@ En el ejemplo siguiente se muestra la configuración mediante la entidad case qu
          - **Permiso de entidad**: habilitado
     
          > [!div class=mx-imgBorder]
-         > ![Servicio de atención al cliente: Editar formulario de caso](media/customer-service-edit-case-form.png "de cliente: Editar formulario de caso")
+         > ![Servicio al cliente: Editar formulario de casos](media/customer-service-edit-case-form.png "Servicio al cliente: Editar formulario de casos")
     
         d. Si ha realizado algún cambio en el formulario, seleccione **Guardar**.
 
@@ -218,17 +218,17 @@ En el ejemplo siguiente se muestra la configuración mediante la entidad case qu
     - **Privilegios**: leer, crear, anexar, escribir, eliminar
 
       > [!div class=mx-imgBorder]
-      > Permiso de entidad del ![servicio de atención al cliente](media/customer-service-entity-permission.png "permiso de entidad de servicio")
+      > ![Permiso de entidad de servicio de atención al cliente](media/customer-service-entity-permission.png "Permiso de entidad de servicio de atención al cliente")
   
    4. Inicie sesión en el portal para asegurarse de que la administración de documentos está habilitada para la entidad Case.
 
       a. Vaya a la página de **soporte técnico** .
 
       > [!div class=mx-imgBorder]
-      > ![](media/portal-support-page.png "Página") de soporte técnico del portal página de soporte
+      > ![Página de soporte técnico del portal](media/portal-support-page.png "Página de soporte técnico del portal")
 
       b. Haga clic en un registro de caso existente en la lista. Vaya a la sección **documentos de casos** en la página y vea la lista de documentos agregada.
 
       > [!div class=mx-imgBorder]
-      > ![](media/case-document.png "Documento de caso") de documento de caso
+      > ![Documento de caso](media/case-document.png "Documento de caso")
 

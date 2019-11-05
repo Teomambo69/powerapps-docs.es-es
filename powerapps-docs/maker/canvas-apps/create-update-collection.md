@@ -13,21 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993212"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540335"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Crear y actualizar una colección en una aplicación de lienzo
 
-Use una colección para almacenar los datos que los usuarios pueden administrar en la aplicación. Una colección es un grupo de elementos que son similares, como los productos de una lista de productos. Para obtener más información sobre los distintos tipos de variables, como las colecciones: [Descripción de las variables de la aplicación Canvas](working-with-variables.md).
+Use una colección para almacenar los datos que los usuarios pueden administrar en la aplicación. Una colección es un grupo de elementos que son similares, como los productos de una lista de productos. Para obtener más información sobre los distintos tipos de variables, como [las colecciones: Descripción de las variables de la aplicación Canvas](working-with-variables.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+- [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
 - Cree una aplicación o abra una existente en PowerApps.
 - Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
@@ -47,19 +46,19 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. Cambie el nombre **de los** **colores**del control desplegable y asegúrese de que la propiedad **elementos** está seleccionada en la lista de propiedades.
 
-    ![Propiedad Items](./media/create-update-collection/items-property.png)
+    ![Propiedad Elementos](./media/create-update-collection/items-property.png)
 
 1. En la barra de fórmulas, reemplace **DropDownSample** por esta expresión:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
 1. Agregue un control **botón** , establezca su propiedad **texto** en **"agregar"** y establezca su propiedad **alseleccionar** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
@@ -107,7 +106,7 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. Establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
 1. Fuera de la galería, agregue un botón, establezca su propiedad **Text** en **"Clear"** y establezca su propiedad **alseleccionar** en esta fórmula:
 
@@ -121,7 +120,7 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta función, sustituyendo *ListName* por el nombre de la lista de SharePoint:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Esta función crea una colección que se denomina **MySPCollection** y que contiene los mismos datos que la lista de SharePoint.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063379"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540218"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -204,13 +204,13 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
 1. En un explorador web, desplácese hasta el siguiente vínculo:
 
-    [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
+    [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
 2. Descargue el paquete de ejemplo Informe de gastos de PowerApps y guárdelo en su equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 
-1.  En un explorador web, vaya a [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  En un explorador Web, vaya a [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 3.  En el menú de la izquierda, seleccione **Conexiones**.
 
@@ -239,7 +239,7 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
 ## <a name="import-the-app"></a>Importación de la aplicación
 
-1. En un explorador web, vaya a https://web.powerapps.com.
+1. En un explorador web, vaya a https://make.powerapps.com.
 1. Inicie sesión con las mismas credenciales que utilizó para suscribirse.
 1. En la barra de navegación izquierda, seleccione **Aplicaciones** e **Importar paquete (versión preliminar)** .
 

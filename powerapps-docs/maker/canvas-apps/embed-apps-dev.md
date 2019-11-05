@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256109"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539023"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que cree suelen ser más útiles cuando están disponibles en el momento en que los usuarios realizan su trabajo. Al incrustar aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios web y otros servicios, como Power BI o SharePoint.
@@ -32,7 +32,7 @@ Tenga en mente las siguientes restricciones:
 - Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
 - Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
 
-También puede integrar las aplicaciones de canvas en SharePoint Online sin usar un iframe. Más información: [Use el elemento Web de PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+También puede integrar las aplicaciones de canvas en SharePoint Online sin usar un iframe. Más información: [use el elemento Web de PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Establecer los parámetros URI de la aplicación
 Si tiene una aplicación que desea insertar, el primer paso es establecer los parámetros para el identificador uniforme de recursos (URI), para que el iframe sepa dónde se encuentra la aplicación. El identificador URI tiene la forma siguiente:
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> A partir del 2019 de agosto, el formato del URI https://web.powerapps.com/webplayer ha https://apps.powerapps.com/play cambiado de a. Actualice cualquier iframe incrustado para que use el nuevo formato de URI. Las referencias al formato anterior se redirigirán al nuevo URI para garantizar la compatibilidad.
+> A partir del 2019 de agosto, el formato del URI ha cambiado de https://make.powerapps.com/webplayer a https://apps.powerapps.com/play. Actualice cualquier iframe incrustado para que use el nuevo formato de URI. Las referencias al formato anterior se redirigirán al nuevo URI para garantizar la compatibilidad.
 >
 > Formato anterior:
 > 
-> https\://Web.powerapps.com/WebPlayer/iframeapp? Source = iframe & AppID =/Providers/Microsoft.PowerApps/apps/[AppID]
+> https\://make.powerapps.com/WebPlayer/iframeapp? Source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
 
 Lo único que tiene que hacer es sustituir el identificador de la aplicación por [AppID] en el identificador URI (incluido "[' & ']"). Le mostraremos cómo obtener ese valor en breve, pero primero aquí están todos los parámetros disponibles en el identificador URI:
 
