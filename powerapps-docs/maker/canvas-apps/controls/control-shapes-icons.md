@@ -1,25 +1,24 @@
 ---
 title: 'Controles Forma e Icono: referencia | Microsoft Docs'
 description: Información sobre los controles Forma e Icon, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986331"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649736"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
@@ -69,7 +68,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Navegar**( *NombrePantalla*; *TransiciónDePantalla* )](../functions/function-navigate.md)
+[**Navegar**( *NombrePantalla*, *TransiciónDePantalla* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -81,7 +80,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Presione F5 y, a continuación, seleccione el control **forma** .
 
@@ -89,7 +88,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 

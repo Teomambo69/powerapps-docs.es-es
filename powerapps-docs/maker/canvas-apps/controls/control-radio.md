@@ -1,25 +1,24 @@
 ---
 title: 'Control Radio: referencia | Microsoft Docs'
 description: Información sobre el control Radio, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/06/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986380"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649766"
 ---
 # <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
 
@@ -71,7 +70,7 @@ El control puede tener un diseño horizontal o vertical.
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -131,19 +130,19 @@ El control puede tener un diseño horizontal o vertical.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
 1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
 2. Agregue un control **[Etiqueta](control-text-box.md)** , desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
 
-    **If("Premium" in Pricing.Selected.Value; "$200 per day"; "$150 per day")**
+    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 

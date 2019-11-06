@@ -1,25 +1,24 @@
 ---
 title: 'Control Texto HTML: referencia | Microsoft Docs'
 description: Información sobre el control Texto HTML, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5706b2c1b21c0135cc60678b6cf3f882df6fa56c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d514342bc51cdd6aa737da1b893530d702127bd1
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986625"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650491"
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
@@ -76,7 +75,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Buscar**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Buscar**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Etiqueta](control-text-box.md)** , llámelo **Source** y establezca su propiedad **[Texto](properties-core.md)** en esta cadena:

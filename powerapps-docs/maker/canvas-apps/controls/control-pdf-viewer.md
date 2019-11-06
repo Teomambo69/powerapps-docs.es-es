@@ -1,24 +1,24 @@
 ---
 title: 'Control Visor de archivos PDF: referencia | Microsoft Docs'
 description: Información sobre el control Visor de archivos PDF, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9fdd7f25a729fa71111e1fd5d82e04b7cea874f3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986411"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650389"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.

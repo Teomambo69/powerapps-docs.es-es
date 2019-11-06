@@ -1,25 +1,24 @@
 ---
 title: 'Control Imagen: referencia | Microsoft Docs'
 description: Información sobre el control Imagen, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc25c16e9d79a80a5a21f793e66ce1cbc38960cb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993466"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650452"
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -112,7 +111,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Quitar**( *DataSource*; EsteElemento)](../functions/function-remove-removeif.md)
+[**Quitar**( *DataSource*, EsteElemento)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local

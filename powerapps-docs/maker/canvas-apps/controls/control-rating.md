@@ -1,25 +1,24 @@
 ---
 title: 'Control Clasificación: referencia | Microsoft Docs'
 description: Información sobre el control Clasificación, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 774b5294f9d03564caa658a04aff0f682a7bb43f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993352"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649913"
 ---
 # <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.
@@ -76,7 +75,7 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Average**( *Value1*; *Value2;* ... )](../functions/function-aggregates.md)
+[**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Clasificación** y llámelo **Cuantitativo**.
@@ -84,7 +83,7 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Entrada de texto](control-text-input.md)** , denomínelo **Cualitativo**, y muévalo debajo del control **Clasificación**.
 3. Establezca la propiedad **[Default](properties-core.md)** del control **[Entrada de texto](control-text-input.md)** en **""** y establezca su **TextoDeSugerencia** en esta fórmula:
-   <br>**If(Quantitative.Value > 3; "¿qué le gustó especialmente?"; "¿cómo podemos mejorar?")**
+   <br>**If(Quantitative.Value > 3, "¿qué le gustó especialmente?", "¿cómo podemos mejorar?")**
    
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 4. Presione F5 y, a continuación, pulse o haga clic en cuatro o cinco estrellas en el control **Clasificación**.

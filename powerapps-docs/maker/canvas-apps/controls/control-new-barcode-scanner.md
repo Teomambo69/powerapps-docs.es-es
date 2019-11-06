@@ -1,24 +1,24 @@
 ---
 title: 'Barcode-control de escáner: referencia | Microsoft Docs'
 description: Información sobre el control de escáner de código de barras, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986443"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650412"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Control del lector de código de barras para aplicaciones de lienzo
 

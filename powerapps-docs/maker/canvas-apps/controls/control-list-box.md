@@ -1,25 +1,24 @@
 ---
 title: 'Control Cuadro de lista: referencia | Microsoft Docs'
 description: Información sobre el control Cuadro de lista, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4b12bb62011e24e2dfdb12d9d355432aa2bcadb6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d211af5c34874a0ea0afe80af91c2f65495a7a60
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986577"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650500"
 ---
 # <a name="list-box-control-in-powerapps"></a>Control Cuadro de lista en PowerApps
 Una lista en la que el usuario puede seleccionar uno o varios elementos.
@@ -63,7 +62,7 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -126,11 +125,11 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Cuadro de lista**, denomínelo **CategoryList** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -138,16 +137,16 @@ Al agregar una galería, una lista o un gráfico, la lista de propiedades muestr
 2. Agregar tres controles **[Lista desplegable](control-drop-down.md)** , muévalas a **CategoryList**y asígneles un nombre **ListaMoqueta**, **ListaParquet**, y **ListaMosaico**.
 3. Establecer la propiedad **[Elementos](properties-core.md)** de cada control **[Lista desplegable](control-drop-down.md)** en uno de estos valores:
    
-   * ListaMoqueta: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * ListaParquet: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * ListaMosaico: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * ListaMoqueta: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * ListaParquet: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * ListaMosaico: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Nombres de suelos en las listas desplegables](./media/control-list-box/flooring-names.png)
 4. Establezca la propiedad **[Elementos](properties-core.md)** de cada control **[Lista desplegable](control-drop-down.md)** en uno de estos valores:
    
-   * Listamoqueta **If ("moqueta" en CategoryList. SelectedItems. Value, true)**
-   * Listaparquet **Si ("parquet" en CategoryList. SelectedItems. Value, true)**
-   * Componente **Si ("Tile" en CategoryList. SelectedItems. Value, true)**
+   * ListaMoqueta: **If("Moqueta" en CategoryList.SelectedItems.Value, true)**
+   * ListaParquet: **If("Parquet" en CategoryList.SelectedItems.Value, true)**
+   * ListaMosaico: **If("Mosaico" en CategoryList.SelectedItems.Value, true)**
      
      ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 5. Presione F5 y, a continuación, elija uno o más elementos de **CategoryList**.

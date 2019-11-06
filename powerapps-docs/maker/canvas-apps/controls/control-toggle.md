@@ -1,25 +1,24 @@
 ---
 title: 'Control Alternar: referencia | Microsoft Docs'
 description: Información sobre el control Alternar, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ec115eecc676a7ec5bea3b04b135eeb63268449
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993256"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649812"
 ---
 # <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
 Control que el usuario puede activar o desactivar al mover su identificador.
@@ -106,14 +105,14 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control Alternar y asígnele el nombre **MemberDiscount**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**If(MemberDiscount.Value = true; "Price: $75"; "Price: $100")**
+   <br>**If(MemberDiscount.Value = true, "Price: $75", "Price: $100")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5 y cambie el valor de **MemberDiscount**.
