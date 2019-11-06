@@ -1,25 +1,24 @@
 ---
 title: 'Controles Gráfico de columnas y Gráfico de líneas: referencia | Microsoft Docs'
 description: Información sobre los controles Gráfico de columnas y Gráfico de líneas, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d9595a466477f9fc8ac535b08f43fe352ea0fd8b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 355793d572f6c4b6578d6cabff221c79e0724a93
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993512"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650674"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
 Controles que muestran datos como gráficos con ejes x e y.
@@ -114,11 +113,11 @@ Controles que muestran datos como gráficos con ejes x e y.
 **YLabelAngle**: el ángulo de las etiquetas junto al eje y de un gráfico de líneas o de columnas.
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    

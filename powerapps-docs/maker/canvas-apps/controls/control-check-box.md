@@ -1,25 +1,24 @@
 ---
 title: 'Control Casilla: referencia | Microsoft Docs'
 description: Información sobre el control Casilla, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d943eacabaab8d9542352ee0b1c092244c171d86
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986806"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650677"
 ---
 # <a name="check-box-control-in-powerapps"></a>Control Casilla en PowerApps
 Un control que el usuario puede seleccionar o borrar para establecer su valor en **true** o **false**.
@@ -67,7 +66,7 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -122,14 +121,14 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Cuadro de texto**, denomínelo **chkReserve** y establezca su propiedad **[Texto](properties-core.md)** para mostrar **Reserve now**.
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Selector de fecha](control-date-picker.md)** y establezca su propiedad **[Visible](properties-core.md)** en esta fórmula:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, pulse o haga clic en **chkReserve** para establecer su propiedad **[Valor](properties-core.md)** en **true** y luego pulse o haga clic de nuevo en **chkReserve** para establecer su propiedad **[Valor](properties-core.md)** en **false**.

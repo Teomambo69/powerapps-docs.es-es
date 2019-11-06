@@ -1,25 +1,24 @@
 ---
 title: 'Control Cámara: referencia | Microsoft Docs'
 description: Información sobre el control Cámara, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986869"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650721"
 ---
 # <a name="camera-control-in-powerapps"></a>Control Cámara en PowerApps
 Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.
@@ -74,12 +73,12 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 ### <a name="add-photos-to-an-image-gallery-control"></a>Agregar fotos a un control Galería de imágenes
 1. Agregue un control **Cámara**, denomínelo **MyCamera** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -92,7 +91,7 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
     La foto que realizó aparece en el control **Galería de imágenes**.
 6. Realice tantas fotografías como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
-7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix; ThisItem)** , presione F5 y luego pulse o haga clic en una foto para quitarla.
+7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix, ThisItem)** , presione F5 y luego pulse o haga clic en una foto para quitarla.
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las fotos localmente o la función **[Revisión](../functions/function-patch.md)** para actualizar el origen de datos.
 

@@ -1,25 +1,24 @@
 ---
 title: 'Control Botón: referencia | Microsoft Docs'
 description: Información sobre el control Botón, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a49e79da6821e814a918722e70daa1b005f28777
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 750b02bdd3363f03ad0f32ae1fcbc59d7c5c3f3e
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993817"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650737"
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -61,7 +60,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -118,7 +117,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-**[Navegar( *NombrePantalla*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navegar( *NombrePantalla*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-a-basic-formula-to-a-button"></a>Agregar una fórmula básica a un botón
@@ -145,7 +144,7 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
 1. Establezca la propiedad **[TextoDeSugerencia](control-text-input.md)** de **Origen** en "Enter a number" (Escriba un número).
 2. Establezca la propiedad **[AlSeleccionar](properties-core.md)** de **Agregar** en esta fórmula:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Utilice el punto y coma " **;** " para separar varias fórmulas.

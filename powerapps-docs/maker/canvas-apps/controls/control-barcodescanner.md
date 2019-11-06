@@ -1,25 +1,24 @@
 ---
 title: 'Código de barras web-control de escáner: referencia | Microsoft Docs'
 description: Información sobre el control de escáner de código de barras, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e80f34917bba942f85e141c382cf3b1caa5e6d44
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986997"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650750"
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Código de barras Web: control de escáner (experimental) en PowerApps
 
@@ -67,7 +66,7 @@ El control muestra la fuente de la cámara en la aplicación para que los usuari
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 
