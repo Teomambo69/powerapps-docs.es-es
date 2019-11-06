@@ -1,25 +1,24 @@
 ---
 title: 'Control Lista desplegable: referencia | Microsoft Docs'
 description: Información sobre el control Lista desplegable, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a838100398196c63ef948f8f2e94d098c03a373
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 53e78383733af1b5fdb71f5649d342f07605340e
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993426"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650570"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
@@ -69,7 +68,7 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -131,7 +130,7 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Items](properties-core.md)** en esta expresión:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -144,13 +143,13 @@ Los principios de este procedimiento se aplican a cualquier [origen de datos que
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Esta fórmula muestra todas las ciudades de la entidad **Cuentas**. Si hay más de un registro con la misma ciudad, la función **[Distinct](../functions/function-distinct.md)** oculta la duplicación en el control de lista desplegable.
 
 1. (opcional) Cambie el nombre del control **Lista desplegable** a **Ciudades**, agregue un control vertical **Galería** y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Esta función **[Filtro](../functions/function-filter-lookup.md)** muestra únicamente aquellos registros de la entidad **Cuentas** en los que la ciudad coincida con el valor seleccionado en el control **Ciudades**.
 

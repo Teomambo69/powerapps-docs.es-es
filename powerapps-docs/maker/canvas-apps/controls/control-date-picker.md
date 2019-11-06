@@ -1,25 +1,24 @@
 ---
 title: 'Control Selector de fecha: referencia | Microsoft Docs'
 description: Información sobre el control Selector de fecha, con propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eae69ba2337c6b220b4c83a4900846bad6589615
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986765"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650607"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
@@ -68,7 +67,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -112,7 +111,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.

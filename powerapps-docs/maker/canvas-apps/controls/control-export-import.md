@@ -1,25 +1,24 @@
 ---
 title: 'Control Exportar y control Importar: referencia | Microsoft Docs'
 description: Información sobre el control Exportar y el control Importar, que incluye propiedades y ejemplos
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 271d37c5cbd68b41a2818441161572bd9386e107
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986735"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650549"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Control Exportar y control Importar en PowerApps
 Controles para exportar datos a un archivo local y luego importarlos en otra aplicación de PowerApps.
@@ -67,7 +66,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 
 **[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **normal**o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
@@ -117,7 +116,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
+   <br>**ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -127,7 +126,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 4. Presione F5, haga clic o pulse el control **Exportar** y luego especifique el nombre del archivo en el que desea exportar los datos.
 5. Haga clic o pulse **Guardar** y luego presione Esc para volver al área de trabajo predeterminada.
 6. En una aplicación nueva o existente, agregue un control **Importar**, asígnele el nombre **MyData** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(ImportedProducts; MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. Presione F5, haga clic o pulse **MyData**, haga clic o pulse el archivo exportado y luego haga clic o pulse **Abrir**.
 8. Presione Esc, haga clic o pulse **Colecciones** en el menú **Archivo** y confirme que la aplicación actual tiene los datos que ha exportado.
 
