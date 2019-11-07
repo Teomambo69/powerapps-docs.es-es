@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 6f49057e55ea52dac98c92109752a05276eec831
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71995864"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741700"
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Crear un formulario de resumen en una aplicación de lienzo
 
@@ -95,28 +94,32 @@ En esta sección, agregará controles para mostrar un resumen de cualquier orden
     > [!div class="mx-imgBorder"]
     > ![moverse y cambiar el tamaño del control Editar formulario](media/northwind-orders-canvas-part2/form-03.png)
 
-1. En la barra de fórmulas, establezca la propiedad **DataSource** del formulario en este valor:
+1. En el panel **propiedades** , seleccione la lista desplegable **origen de datos** .
 
-    ```powerapps-comma
-    Orders
-    ```
+    > [!div class="mx-imgBorder"]
+    > ![establecer la propiedad DataSource del control Edit Form](media/northwind-orders-canvas-part2/form-04a.png)
+
+1. Seleccione el origen de datos de **pedidos** .
 
     > [!div class="mx-imgBorder"]
     > ![establecer la propiedad DataSource del control Edit Form](media/northwind-orders-canvas-part2/form-04.png)
 
-    Puede establecer la misma propiedad en la pestaña **propiedades** cerca del borde derecho, pero ese enfoque agrega campos que no necesita al formulario. Si usa la barra de fórmulas, el formulario permanece vacío.
-
 ## <a name="add-and-arrange-fields"></a>Agregar y organizar campos
 
-1. En la pestaña **propiedades** situada cerca del borde derecho, seleccione **Editar campos** para abrir el panel **campos** :
+1. En la pestaña **propiedades** situada cerca del borde derecho, seleccione **Editar campos** para abrir el panel **campos** .
 
     > [!div class="mx-imgBorder"]
     > ![abrir el panel campos](media/northwind-orders-canvas-part2/form-05.png)
 
-1. En el panel **campos** , seleccione **Agregar campo**y, a continuación, active las casillas de los campos **Customer** y **Employee** .
+1. Si el panel **campos** no está vacío, quite los campos que ya se han insertado.  
 
     > [!div class="mx-imgBorder"]
-    > ![agregar los campos Customer y Employee al control Edit Form](media/northwind-orders-canvas-part2/form-06.png)
+    > ![abrir el panel campos](media/northwind-orders-canvas-part2/form-06a.png)
+
+1. Una vez que la lista de campos está vacía, seleccione **Agregar campo**y, a continuación, active las casillas correspondientes a los campos **Customer** y **Employee** .
+
+    > [!div class="mx-imgBorder"]
+    > ![agregar los campos Customer y Employee al control Edit Form](media/northwind-orders-canvas-part2/form-06b.png)
 
 1. Desplácese hacia abajo hasta que aparezcan estos campos y, a continuación, active las casillas siguientes:
 
@@ -127,11 +130,14 @@ En esta sección, agregará controles para mostrar un resumen de cualquier orden
     - **Fecha de pago**
 
     > [!div class="mx-imgBorder"]
-    > ![agregar cinco campos más al control Editar formulario](media/northwind-orders-canvas-part2/form-07.png)
+    > ![agregar cinco campos más al control Editar formulario](media/northwind-orders-canvas-part2/form-06c.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![agregar cinco campos más al control Editar formulario](media/northwind-orders-canvas-part2/form-06d.png)
 
 1. En la parte inferior del panel **campos** , seleccione **Agregar**y, a continuación, cierre el panel **campos** .
 
-    El formulario muestra siete campos:
+    El formulario muestra siete campos, que pueden estar en un orden diferente:
 
     > [!div class="mx-imgBorder"]
     > ![control Editar formulario muestra siete campos](media/northwind-orders-canvas-part2/form-08.png)
@@ -216,7 +222,7 @@ En este ejemplo, no se necesitan las partes de tiempo de los campos de fecha por
 
 1. Establezca la propiedad **Item** del formulario de resumen en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected
     ```
 
@@ -295,7 +301,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **imagen** de la imagen en esta fórmula, reemplazando el número al final de DataCardValue si es necesario:
 
-    ```powerapps-comma
+    ```powerapps-dot
     DataCardValue7.Selected.Picture
     ```
 
@@ -328,7 +334,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. En el panel de **vista de árbol** , confirme que el nombre del formulario es **Form1**y, a continuación, establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SubmitForm( Form1 )
     ```
 
@@ -339,8 +345,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono en esta fórmula:
 
-    ```powerapps-comma
-    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -350,7 +356,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono en este valor:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -381,7 +387,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono cancelar en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ResetForm( Form1 )
     ```
 
@@ -392,8 +398,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono de cancelación en esta fórmula:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -403,7 +409,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono de cancelación en este valor:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -434,7 +440,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono Agregar en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     NewForm( Form1 )
     ```
 
@@ -445,8 +451,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono Agregar en esta fórmula:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -459,7 +465,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono Agregar en este valor:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -493,8 +499,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono de la papelera en esta fórmula:
 
-    ```powerapps-comma
-    Remove( Orders; Gallery1.Selected )
+    ```powerapps-dot
+    Remove( Orders, Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -504,8 +510,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono de la papelera en esta fórmula:
 
-    ```powerapps-comma
-    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -515,7 +521,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono de la papelera en este valor:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -538,7 +544,7 @@ En Resumen, ha agregado un formulario en el que el usuario puede mostrar y edita
 - Un icono para guardar los cambios en un pedido: `SubmitForm( Form1 )`
 - Un icono para cancelar los cambios en un pedido: `ResetForm( Form1 )`
 - Un icono para crear un pedido: `NewForm( Form1 )`
-- Un icono para eliminar un pedido: `Remove( Orders; Gallery1.Selected )`
+- Un icono para eliminar un pedido: `Remove( Orders, Gallery1.Selected )`
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c78057118a1546c781ea813552650045ab357321
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fa86d8027775bc74178699a18371fc9e2cef2917
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541356"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741310"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
 
@@ -52,7 +52,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Especifique el nombre o el alias de los usuarios o grupos de seguridad de Azure Active Directory con los que desea compartir la aplicación.
 
     - Para que toda la organización pueda ejecutar la aplicación (pero no modificarla ni compartirla), escriba **todos** en el panel de uso compartido.
-    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com** ) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
+    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com**) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
 
     ![Especificar usuarios y copropietarios](./media/share-app/share-everyone.png)
 
@@ -200,7 +200,7 @@ La misma licencia necesaria para que los usuarios no invitados ejecuten una apli
 |                                 | Formulario personalizado de SharePoint | Aplicación de lienzo independiente con conectores no Premium | Aplicación de lienzo independiente con conectores Premium | Aplicación controlada por modelos |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | Usuario de SharePoint (sin licencia de PA) | x                          |                                                    |                                                |                  |
-| PowerApps incluido en la oficina    | x                          |                                                    |                                                |                  |
+| PowerApps incluido en la oficina    | x                          | x                                                  |                                                |                  |
 | Plan de PowerApps por aplicación          | x                          | x                                                  | x                                              | x                |
 | De PowerApps por plan de usuario         | x                          | x                                                  | x                                              | x                |
 

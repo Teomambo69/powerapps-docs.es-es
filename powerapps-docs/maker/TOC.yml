@@ -1006,6 +1006,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: Utilizar temas para aplicar la marca de organización
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: Creación de recursos de ayuda guiados para su aplicación
+          href: ./common-data-service/create-custom-help-pages.md
         - name: Adición de informes a una aplicación
           href: ./model-driven-apps/add-reporting-to-app.md
           items:
@@ -1042,6 +1044,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: Distribuir una aplicación con soluciones
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: Habilitación de recursos de ayuda personalizables
+          href: ./model-driven-apps/use-customizable-help.md
         - name: Creación de ayuda interactiva
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: Transición a una interfaz unificada
@@ -1056,6 +1060,8 @@
           href: ./model-driven-apps/approaching-unified-interface.md
         - name: 'Lista de comprobación: Transición a la interfaz unificada'
           href: ./model-driven-apps/checklist-transition-unified-interface.md
+        - name: 'Preguntas más frecuentes: Transición a la interfaz unificada'
+          href: ./model-driven-apps/faqs-transition-unified-interface.md
     - name: Accesibilidad en el diseñador de aplicaciones de PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Personalizar Dynamics 365 App for Outlook

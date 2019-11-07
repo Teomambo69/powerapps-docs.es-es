@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03411202ecc9c4c04713f7eb9cf6286809109684
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541527"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741513"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Creación de una galería de pedidos en una aplicación de lienzo
 
@@ -53,39 +53,22 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     > [!div class="mx-imgBorder"]
     > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
-1. Habilite una [característica experimental](working-with-experimental.md) para mostrar el resultado de una fórmula directamente en la barra de fórmulas.
-
-    1. En el menú **archivo** , seleccione **configuración**de la aplicación y, a continuación, seleccione **Configuración avanzada**.
-    1. Desplácese hasta la parte inferior de la lista de características y, a continuación, Active **Habilitar vista de resultados de la barra de fórmulas**:
-
-        > [!div class="mx-imgBorder"]
-        > ![lista de características experimentales](media/northwind-orders-canvas-part1/start-04.png)
-
-1. En la esquina superior izquierda, seleccione la flecha atrás para volver al lienzo en blanco.
-
 ## <a name="add-the-data"></a>Agregar los datos
 
-1. En la pestaña **Ver** , seleccione **orígenes de datos**y, a continuación, seleccione **Agregar origen de datos** en el panel **datos** :
+1. En la pestaña **Ver** , seleccione **orígenes de datos**:
 
     > [!div class="mx-imgBorder"]
     > ![seleccionar vista, orígenes de datos, agregar origen de datos](media/northwind-orders-canvas-part1/datasource-01.png)
 
-1. Seleccione **Common Data Service**.
-
-    Si **Common Data Service** no aparece en la lista de conexiones, seleccione **nueva conexión**y, a continuación, agréguela.
+1. Escriba **Orders** en el cuadro de búsqueda:
 
     > [!div class="mx-imgBorder"]
     > ![lista de conexiones](media/northwind-orders-canvas-part1/datasource-02.png)
 
-1. En **elegir una entidad**, escriba **pedidos**, active la casilla **pedidos** y, a continuación, seleccione **conectar**:
+1. Seleccione el origen de datos de **pedidos** que se va a usar en la aplicación:
 
     > [!div class="mx-imgBorder"]
     > ![lista de entidades](media/northwind-orders-canvas-part1/datasource-03.png)
-
-    Ha agregado el origen de datos de **pedidos** a la aplicación:
-
-    > [!div class="mx-imgBorder"]
-    > ![panel datos](media/northwind-orders-canvas-part1/datasource-04.png)
 
     La entidad **Orders** contiene muchos campos de varios tipos:
 
@@ -94,7 +77,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
     Cada campo tiene un **nombre para mostrar** y un **nombre**, que a veces se denomina nombre lógico. Ambos nombres hacen referencia a lo mismo. En general, usará el nombre para mostrar al compilar una aplicación, pero algunos casos requieren el **nombre**más críptico, como se indica en un procedimiento.
 
-1. En PowerApps Studio, cierre el panel **datos** seleccionando el icono cerrar (x) en la esquina superior derecha.
+1. Como vamos a trabajar con pantallas y controles a continuación, en PowerApps Studio vuelva a la **vista de árbol** en el lado izquierdo presionando el icono de tres cuadrados apilados. Puede volver a los **orígenes de datos** en cualquier momento presionando el icono del cilindro.
 
 ## <a name="create-the-order-gallery"></a>Crear la galería de pedidos
 
@@ -103,7 +86,13 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     > [!div class="mx-imgBorder"]
     > ![insertar, Galería,](media/northwind-orders-canvas-part1/orders-01.png) vertical en blanco
 
-1. En la barra de fórmulas, establezca la propiedad **elementos** de la galería en esta fórmula:
+    El control se colocará en el lienzo y aparecerá un cuadro de diálogo emergente que le preguntará a qué origen de datos se va a conectar.  
+
+
+    > [!div class="mx-imgBorder"]
+    > ![propiedad Set items de la Galería](media/northwind-orders-canvas-part1/orders-02.png)
+
+1. Podríamos conectarlo directamente a los **pedidos** , pero en su lugar nos gustaría controlar el criterio de ordenación de la galería.  Omita el cuadro de diálogo volar hacia fuera y, en la barra de fórmulas, establezca la propiedad **elementos** de la galería en esta fórmula:
 
     ```powerapps-dot
     Sort( Orders, 'Order Number', Descending )
@@ -112,7 +101,12 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     La función [**Sort**](functions/function-sort.md) ordena la lista para que aparezca en primer lugar el orden más reciente (que tiene el número de pedido más alto).
 
     > [!div class="mx-imgBorder"]
-    > ![propiedad Set items de la Galería](media/northwind-orders-canvas-part1/orders-02.png)
+    > ![propiedad Set items de la Galería](media/northwind-orders-canvas-part1/orders-02b.png)
+
+1. Transcurridos unos instantes, la vista de resultados aparecerá debajo de la barra de fórmulas.  Desplácese hacia abajo en la flecha de la izquierda para ver el resultado de la fórmula.  Desplácese hacia la derecha para ver la columna **número de pedido** y asegúrese de que esté ordenada de la forma deseada (de mayor a menor).  
+
+    > [!div class="mx-imgBorder"]
+    > ![propiedad Set items de la Galería](media/northwind-orders-canvas-part1/orders-02c.png)
 
 1. En la pestaña **propiedades** situada cerca del borde derecho, abra la lista **diseño** :
 
@@ -126,7 +120,10 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
     Se agregan dos controles [**etiqueta**](controls/control-text-box.md) en la plantilla de la galería. De forma predeterminada, estos controles muestran dos columnas de la entidad **Orders** , que cambiará a continuación. La plantilla de la galería se replica verticalmente para cada registro de la entidad.
 
-1. Si ha cerrado el panel **datos** , seleccione **Editar** (junto a **campos**) en la pestaña **propiedades** situada junto al borde derecho.
+1. Seleccione **Editar** (junto a **campos**) en la pestaña **propiedades** situada junto al borde derecho.
+
+    > [!div class="mx-imgBorder"]
+    > ![seleccionar un diseño](media/northwind-orders-canvas-part1/orders-04b.png)
 
 1. En el panel **datos** , seleccione **Title1** (o seleccione la etiqueta superior en la plantilla de la galería).
 
@@ -261,7 +258,7 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
     Esta fórmula muestra un subrayado azul y una [Advertencia de delegación](delegation-overview.md) porque Common Data Service no admite la delegación de funciones de agregado complejas (por ejemplo, la suma de una multiplicación). Puede omitir esta información porque ningún orden en este ejemplo contendrá más de 500 elementos de línea. Si es necesario para una aplicación diferente, puede aumentar ese límite en la configuración de la **aplicación**.
 
-    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma para Inglés de EE. UU. ( **[$-en-US]** ) y un símbolo de dólar ( **$** ). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
+    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma para Inglés de EE. UU. (**[$-en-US]**) y un símbolo de dólar (**$**). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
 
 1. En la pestaña **Inicio** , cambie el tamaño de fuente de la etiqueta más reciente a 20 puntos y alinee a la derecha su texto:
 
