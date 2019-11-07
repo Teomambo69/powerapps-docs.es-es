@@ -2,48 +2,49 @@
   href: /
   topicHref: /
   items:
-    - name: PowerApps
-      tocHref: /powerapps/
-      topicHref: /powerapps/
+    - name: Power Platform
+      href: /power-platform/
+      topichref: /power-platform/
       items:
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/common-data-service/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/model-driven-apps/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/maker/canvas-apps/
-          topicHref: /powerapps/maker/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/maker/index
+        - name: PowerApps
+          tocHref: /powerapps/
+          topicHref: /powerapps/
           items:
-            - name: Common Data Service
+            - name: Crear aplicaciones
+              tocHref: /powerapps/maker/common-data-service/
+              topicHref: /powerapps/maker/index
+            - name: Crear aplicaciones
+              tocHref: /powerapps/maker/model-driven-apps/
+              topicHref: /powerapps/maker/index
+            - name: Crear aplicaciones
+              tocHref: /powerapps/maker/canvas-apps/
+              topicHref: /powerapps/maker/index
+            - name: Crear aplicaciones
               tocHref: /powerapps/developer/common-data-service/
-              topicHref: /powerapps/maker/common-data-service/index
+              topicHref: /powerapps/maker/index
               items:
-                - name: Desarrollador
+                - name: Common Data Service
                   tocHref: /powerapps/developer/common-data-service/
-                  topicHref: /powerapps/developer/common-data-service/index
+                  topicHref: /powerapps/maker/common-data-service/index
                   items:
-                    - name: Servicio de organización
-                      tocHref: /powerapps/developer/common-data-service/org-service/
-                      topicHref: /powerapps/developer/common-data-service/org-service/index
-                    - name: API web
-                      tocHref: /powerapps/developer/common-data-service/webapi/
-                      topicHref: /powerapps/developer/common-data-service/webapi/index
-        - name: Crear aplicaciones
-          tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/maker/index
-          items:
-            - name: Aplicaciones controladas por modelos
+                    - name: Desarrollador
+                      tocHref: /powerapps/developer/common-data-service/
+                      topicHref: /powerapps/developer/common-data-service/index
+                      items:
+                        - name: Servicio de organización
+                          tocHref: /powerapps/developer/common-data-service/org-service/
+                          topicHref: /powerapps/developer/common-data-service/org-service/index
+                        - name: API web
+                          tocHref: /powerapps/developer/common-data-service/webapi/
+                          topicHref: /powerapps/developer/common-data-service/webapi/index
+            - name: Crear aplicaciones
               tocHref: /powerapps/developer/model-driven-apps/
-              topicHref: /powerapps/maker/model-driven-apps/index
+              topicHref: /powerapps/maker/index
               items:
-                - name: Desarrollador
+                - name: Aplicaciones controladas por modelos
                   tocHref: /powerapps/developer/model-driven-apps/
-                  topicHref: /powerapps/developer/model-driven-apps/index
-        - name: Aprendizaje guiado
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/index
+                  topicHref: /powerapps/maker/model-driven-apps/index
+                  items:
+                    - name: Desarrollador
+                      tocHref: /powerapps/developer/model-driven-apps/
+                      topicHref: /powerapps/developer/model-driven-apps/index
