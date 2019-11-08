@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 11/06/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e2f267e0dd0b61324da381a3f7f7e13677b997ee
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c37e6e9e2b540dcad2c166a4ebf9d71d3b503978
+ms.sourcegitcommit: 10b2798d8f4acd01da15412a2e9fc872d1212d7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73026001"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73728415"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Uso del campo de búsqueda en un registro
 
@@ -61,6 +61,9 @@ Para examinar una búsqueda, seleccione el icono de búsqueda (lupa). En el men�
  
 ## <a name="most-recently-used-record-type-images"></a>Imágenes de tipo de registro usados más recientemente
 La lista de registros usados más recientemente muestra una imagen para ayudar a distinguir entre los tipos de registro.
+
+>[!NOTE] 
+>Los registros recientes no se filtran por término de búsqueda o vista seleccionada.
 
   > [!div class="mx-imgBorder"]
   > ![Los campos de búsqueda muestran una imagen](media/Lookup_03-MRU_Entity_Images_56[1].png "Los campos de búsqueda muestran una imagen")  

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 10/31/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a14662d25a7c2dda79f2399b863b959f9f70cc5
-ms.sourcegitcommit: 79ac9decef3d5aab40fbf3bc95f8f4ba03f9b3df
+ms.openlocfilehash: c0811645429c9f1e7570ceeaf316a5217e440ae4
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "72959333"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609886"
 ---
 # <a name="merge-duplicate-records"></a>Combinación de registros duplicados 
 
-Los registros duplicados pueden trasentrarse en los datos cuando usted u otros usuarios escriben datos manualmente o importan datos de forma masiva. Common Data Service le ayuda a solucionar posibles duplicados al proporcionar la detección de duplicados para cuentas y contactos. El administrador también puede configurar reglas de detección de duplicados para otras situaciones.  
+Los registros duplicados pueden trasentrarse en los datos cuando usted u otros usuarios escriben datos manualmente o importan datos de forma masiva. Common Data Service le ayuda a solucionar posibles duplicados proporcionando la detección de duplicados para registros activos como cuentas y contactos. Al combinar un registro, también se combinarán los registros relacionados o secundarios. El administrador también puede configurar reglas de detección de duplicados para otras situaciones.  
   
 Por ejemplo, supongamos que escribe un registro de contacto, Jim Glynn, junto con un número de teléfono móvil.  La regla de detección de duplicados detecta que ya tiene un registro similar y muestra este cuadro de diálogo.  
   

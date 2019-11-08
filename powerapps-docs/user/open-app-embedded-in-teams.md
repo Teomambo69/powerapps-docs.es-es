@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
-ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
+ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848236"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543493"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
@@ -29,7 +29,7 @@ Microsoft Teams es una plataforma de colaboración basada en chat creada sobre t
 
 ![Aplicación insertada en Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
+Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -37,7 +37,7 @@ Para seguir este procedimiento, necesita una [suscripción a Office 365](https:/
 
 ## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
 
-Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Inicie sesión en PowerApps en [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="add-an-app"></a>Incorporación de una aplicación
 
@@ -84,9 +84,9 @@ En la aplicación de escritorio de Microsoft Teams:
 
 * Las aplicaciones tienen que cargar contenido, como imágenes y archivos .pdf a través de una conexión segura (https).
 * No todos los sensores, como **Aceleración**, **Brújula**, y **Ubicación**, son compatibles.
-* Solo se admiten estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
+* Se admiten únicamente estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
 
-## <a name="clean-up-resources"></a>Limpieza de recursos
+## <a name="clean-up-resources"></a>Limpiar los recursos
 
 Para quitar la aplicación del canal, haga clic en la pestaña **Presentación de productos** > **Quitar**.
 

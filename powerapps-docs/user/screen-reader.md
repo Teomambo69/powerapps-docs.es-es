@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 555a587a3c0eeb599439f713c9a99a7ace6b205a
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: c8ef71753fd743788b52b4f3578f829f153c0898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61545129"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543444"
 ---
 # <a name="use-a-screen-reader"></a>Usar el lector de pantalla 
 
@@ -29,7 +29,7 @@ ms.locfileid: "61545129"
 Los lectores de pantalla hacen que las aplicaciones controladas por modelos estén accesibles para personas con poca o ninguna visión o que necesiten soporte adicional para un escenario temporal, como la fatiga ocular. Se admiten lectores de pantalla de uso frecuente como narrador, JAWS y NVDA. 
 
 - [Más información sobre cómo trabajar con el narrador de Microsoft](https://support.microsoft.com/help/22798)
-- [Más información sobre cómo trabajar con JAWS](http://www.freedomscientific.com/Products/Blindness/JawsDocumentation)
+- [Más información sobre cómo trabajar con JAWS](https://www.freedomscientific.com/Products/Blindness/JawsDocumentation)
 
 
 - [Más información sobre cómo trabajar con NVDA](https://www.nvaccess.org/get-help/)
@@ -43,7 +43,7 @@ Los lectores de pantalla hacen que las aplicaciones controladas por modelos est�
 2.  Presione la tecla **Tab** hasta que escuche el nombre de la aplicación que desea abrir (por ejemplo, "ventas"). Presione **entrar** para abrir la aplicación.
 
 ### <a name="use-scan-mode-in-narrator"></a>Usar el modo de exploración en narrador
-Puede usar el modo de exploración para navegar rápidamente por las aplicaciones con las teclas de dirección y los métodos abreviados de teclado comunes. Saltar rápidamente a los encabezados, los vínculos, los puntos de referencia, los campos de formulario, los controles y las tablas en este modo. Active y desactive el modo de exploración presionando **Bloq Mayús + barra espaciadora**. Más información: [Usar el modo de exploración](https://support.microsoft.com/en-us/help/22809/windows-10-narrator-using-scan-mode)
+Puede usar el modo de exploración para navegar rápidamente por las aplicaciones con las teclas de dirección y los métodos abreviados de teclado comunes. Saltar rápidamente a los encabezados, los vínculos, los puntos de referencia, los campos de formulario, los controles y las tablas en este modo. Active y desactive el modo de exploración presionando **Bloq Mayús + barra espaciadora**. Más información: [uso del modo de recorrido](https://support.microsoft.com/help/22809/windows-10-narrator-using-scan-mode)
 
 ### <a name="find-your-way-around-the-app"></a>Buscar el modo de la aplicación
 
@@ -74,7 +74,7 @@ Puede navegar por los gráficos del panel mediante la tecla TAB y Bloq Mayús + 
 
 
 > [!NOTE]
-> Debe tener instalada la actualización más reciente de [Windows 10](http://www.microsoft.com/enable/products/windows10/default.aspx) para tener todas las características de accesibilidad disponibles para los gráficos.
+> Debe tener instalada la actualización más reciente de [Windows 10](https://www.microsoft.com/enable/products/windows10/default.aspx) para tener todas las características de accesibilidad disponibles para los gráficos.
 
 #### <a name="interactive-dashboard-streams"></a>Flujos de paneles interactivos
 Puede usar las teclas **Tab** o **MAYÚS + TAB** para desplazarse entre las secuencias del panel interactivo, como las que se encuentran en el panel cuentas, o simplemente cambiar el modo de navegación hasta que escuche "encabezados" y, a continuación, use la tecla **Tab** para desplazarse rápidamente entre secuencias del panel.

@@ -14,17 +14,17 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 1f1f0901f5ba641dfc4e183164d55225d3aeb05c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61526503"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537087"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Visualización de informes de análisis de una aplicación
 ¿Ha compilado una aplicación y la ha compartido en su organización?  ¿Tiene curiosidad por saber cuántos de sus compañeros de trabajo la usan a diario?
 
-Se presenta el primero informe de análisis de PowerApps que ahora está disponible en [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc); el **informe de uso de la aplicación**.
+Presentación del primer informe de análisis de PowerApps que ahora está disponible en [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc); **Informe de uso**de la aplicación.
 
 El informe de uso de la aplicación le brinda la posibilidad de realizar un seguimiento del número de usuarios que han utilizado la aplicación los últimos 30 días, desglosados por día, plataforma de dispositivo y ubicación.
 
@@ -36,7 +36,7 @@ Todos los informes están disponibles para cualquier usuario con permiso de edic
 ## <a name="where-do-i-find-my-apps-reports"></a>¿Dónde encuentro los informes de mi aplicación?
 Para ver los informes de su aplicación, siga estos pasos:
 
-1. Vaya a [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Vaya a [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Seleccione **Aplicaciones** en la barra de navegación izquierda
    
     ![Barra de navegación izquierda](./media/app-analytics/left-nav.png)

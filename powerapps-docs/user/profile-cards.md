@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 276c7d3cbf95947306fab768da8af3c4c66b33e0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71950919"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543372"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Ver la tarjeta de Perfil de un contacto o usuario
 
-Use la tarjeta de perfil para obtener información rápida sobre un contacto o un usuario. Al seleccionar un campo de contacto o de usuario en las aplicaciones controladas por modelos en Dynamics 365, como Dynamics 365 sales y Dynamics 365 Customer Service, puede encontrar información relacionada con ellos en su tarjeta de perfil. Para obtener más información acerca de las tarjetas de perfil, consulte [tarjetas de perfil en Office 365](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Use la tarjeta de perfil para obtener información rápida sobre un contacto o un usuario. Al seleccionar un campo de contacto o de usuario en las aplicaciones controladas por modelos en Dynamics 365, como Dynamics 365 sales y Dynamics 365 Customer Service, puede encontrar información relacionada con ellos en su tarjeta de perfil. Para obtener más información acerca de las tarjetas de perfil, consulte [tarjetas de perfil en Office 365](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 > [!NOTE]
->  - La tarjeta de perfil está disponible para la entidad **contacto** y **usuario** . Para obtener más información, consulte [Habilitar la tarjeta de perfil (para administradores)](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-profile-card).
+>  - La tarjeta de perfil está disponible para la entidad **contacto** y **usuario** . Para obtener más información, consulte [Habilitar la tarjeta de perfil (para administradores)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-profile-card).
 >  - La tarjeta de Perfil de Common Data Service no se muestra si la autenticación multifactor está activada para el servicio de Office Delve en Azure Active Directory.
 
 ## <a name="view-a-contacts-profile"></a>Ver el perfil de un contacto
@@ -62,7 +62,7 @@ Las tarjetas de perfil pueden verse en registros de contactos y usuarios. Solo s
 ### <a name="where-is-information-shown-in-the-profile-card-coming-from"></a>¿De dónde procede la información que se muestra en la tarjeta de perfil?
 La información que se muestra en la tarjeta de Perfil de contacto se captura de Common Data Service (y no de Microsoft Exchange). Esto significa que los detalles de contacto provienen de Dynamics 365.
 
-La información que se muestra en la tarjeta de Perfil de usuario se captura de Office 365 (Azure Active Directory). Para obtener más información, vea [tarjetas de perfil en Office 365 (sección de administración)](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+La información que se muestra en la tarjeta de Perfil de usuario se captura de Office 365 (Azure Active Directory). Para obtener más información, vea [tarjetas de perfil en Office 365 (sección de administración)](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 ### <a name="how-can-i-customize-the-fields-shown-on-the-profile-card"></a>¿Cómo puedo personalizar los campos que se muestran en la tarjeta de perfil?
 Actualmente, la lista de campos que se muestra en la tarjeta de perfil no está abierta para la personalización.

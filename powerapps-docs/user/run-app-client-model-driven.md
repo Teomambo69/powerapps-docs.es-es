@@ -16,25 +16,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e48b568bae581f080949d5b9ca913f7c01223ee4
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 61731c59549c40e689f056372fe58f4b60968e1c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61546463"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543465"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>Ejecutar una aplicación controlada por modelos en un dispositivo móvil
 
 Después de crear la aplicación y de compartirla con usted, puede ejecutarla en una serie de dispositivos móviles conocidos, como Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil. 
 
-Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
+Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
 
 ## <a name="run-the-model-driven-app"></a>Ejecución de la aplicación controlada por modelos
 
 Las aplicaciones controladas por modelos no se ejecutan en la aplicación móvil de PowerApps, sino que se ejecutan en un dispositivo móvil con la aplicación móvil de Dynamics 365 o en el explorador web del teléfono. 
 
 ### <a name="use-the-mobile-app"></a>Uso de la aplicación móvil
-Instale la aplicación Dynamics 365 para teléfonos o Dynamics 365 para tabletas en la tienda de aplicaciones de su dispositivo. Más información: [Instalación de Dynamics 365 para teléfonos y tabletas](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets)
+Instale la aplicación Dynamics 365 para teléfonos o Dynamics 365 para tabletas en la tienda de aplicaciones de su dispositivo. Más información: [Instalar Dynamics 365 para teléfonos y tabletas](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets)
 
  ![Aplicación móvil para teléfonos](media/run-app-client-model-driven/mobile-app-for-phone.png)
 

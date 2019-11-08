@@ -15,17 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f951167f56ffd3d211182a89a21d54916ee6b6e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61531950"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543435"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
 
-Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://web.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue PowerApps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en dispositivos iPhone, iPad o Android que ejecuten un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
+Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue PowerApps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en dispositivos iPhone, iPad o Android que ejecuten un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
 
 ## <a name="open-powerapps-and-sign-in"></a>Abrir PowerApps e iniciar sesión
 Abra PowerApps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
@@ -41,13 +41,13 @@ Para que sea más fácil encontrar la aplicación, abra el menú **PowerApps** y
 
 Los siguientes filtros están disponibles:
 
-* **Todas las aplicaciones**: Muestra todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las aplicaciones que otros compartieron con usted.
+* **Todas las aplicaciones**: todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las que otros compartieron con usted.
 
-* **Mis aplicaciones**: Muestra las aplicaciones que ha ejecutado al menos una vez.
+* **Mis aplicaciones**: las aplicaciones que ha ejecutado al menos una vez.
 
-* **Aplicaciones de ejemplo**: Muestra aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudarle a explorar las posibilidades de diseño.
+* **Aplicaciones de ejemplo**: aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudar a explorar las posibilidades de diseño.
 
-* **Favoritos**: Muestra las aplicaciones que ha marcado pulsando el botón de puntos suspensivos (...) en el icono de la aplicación y, a continuación, puntee en **favorito**. Para quitar una aplicación de esta lista, pulse los puntos suspensivos (...) en el icono de la aplicación y, después, pulse **Quitar de Favoritos**.
+* **Favoritos**: muestra las aplicaciones que se han marcado haciendo clic en los puntos suspensivos (...) en el icono de la aplicación y, después, en **Favoritos**. Para quitar una aplicación de esta lista, pulse los puntos suspensivos (...) en el icono de la aplicación y, después, pulse **Quitar de Favoritos**.
 
     ![Marcar como favorito](./media/run-app-client/favorite.png)
 
@@ -57,7 +57,7 @@ Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fec
 
 Si conoce el nombre de la aplicación que quiere ejecutar, pulse el icono de búsqueda en la parte superior de Powerapps y, después, escriba parte del nombre en el cuadro de búsqueda.
 
-![Buscar](./media/run-app-client/search.png)
+![Search](./media/run-app-client/search.png)
 
 Si filtró las aplicaciones, se buscará en la lista filtrada.
 

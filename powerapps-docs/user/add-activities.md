@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924566"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609900"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
@@ -100,7 +100,7 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 
 
     > [!NOTE]
-    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
+    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
 
    > [!div class="mx-imgBorder"]
    > ![Establecer opciones personales](media/emailsettings1.png "Establecer las opciones personales")
@@ -112,6 +112,9 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 ## <a name="add-an-appointment"></a>Adición de una cita  
 
 Para agregar una actividad de cita a un registro, primero debe guardar el registro al que está agregando la actividad.  
+
+> [!NOTE]
+> No se admiten citas recurrentes en la aplicación Dynamics 365 para Outlook, Dynamics 365 para teléfonos y, al ejecutar el cliente web de aplicaciones controladas por modelos en el explorador Web del teléfono móvil.
   
 1. Abra el registro al que desea agregar la actividad. Por ejemplo, un registro de contacto.
   

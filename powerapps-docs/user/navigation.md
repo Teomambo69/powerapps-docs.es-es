@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: f0b095b3cb69eb7b6fd373b28eb2255291c7893a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969157"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543524"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Navegación básica en una aplicación controlada por modelos 
 
 Use la barra de navegación para acceder a su área de trabajo, crear un registro, buscar elementos o realizar otras tareas en una aplicación controlada por modelos.
 
 > [!div class="mx-imgBorder"]
-> ![Navegación en una aplicación controlada por modelos](media/nav.png "Navegación en una aplicación controlada por modelos")
+> ![NAV de aplicación controlada por modelos](media/nav.png "NAV de aplicación controlada por modelos")
 
 1. El mapa del sitio se expande y se conserva de forma predeterminada.
 2. La subárea en la que se encuentra se resalta para indicarle su ubicación dentro de la aplicación.
@@ -55,23 +55,23 @@ Es probable que suela trabajar con los mismos registros. Por ejemplo, puede que 
 2. Seleccione el icono para desanclar junto a un elemento para quitarlo de la lista.  
 
    > [!div class="mx-imgBorder"]
-   > ![Desanclaje de registros](media/unpinnedrecords.png "Desanclaje de registros")
+   > ![Desanclar registros](media/unpinnedrecords.png "Desanclar registros")
 
 ## <a name="record-set-navigation"></a>Navegación por el conjunto de registros 
 Navegue por varios registros con vistas y consultas predefinidas. La navegación centrada en los registros mejora la productividad, ya que los usuarios pueden ir directamente de un registro de la lista a otro y volver atrás fácilmente sin perder la lista de trabajo.
 
 > [!div class="mx-imgBorder"]
-> ![Navegación por el conjunto de registros](media/recordset.png "Navegación por el conjunto de registros")
+> ![Navegación por conjunto de registros](media/recordset.png "Navegación por el conjunto de registros")
 
 ## <a name="reference-panel"></a>Panel de referencias
 El panel de referencias es una excelente manera de trabajar sin salir de la pantalla en la que esté. Puede buscar otros elementos relacionados, como casos u oportunidades para una cuenta, dentro del contexto del registro que está viendo sin tener que navegar a otra pantalla.
 
 > [!div class="mx-imgBorder"]
-> ![Panel de referencias](media/reference-panel.png "Panel de referencias")
+> ![Panel de referencia](media/reference-panel.png "Panel de referencias")
 
  Para obtener más información sobre el panel de referencias, vea este vídeo:
 
-<div class="embeddedvideo"><iframe src="https://www.microsoft.com/en-us/videoplayer/embed/d8224c3f-6e20-4b8e-9d0d-b0f5602c7708" frameborder="0" allowfullscreen=""></iframe></div>
+<div class="embeddedvideo"><iframe src="https://www.microsoft.com/videoplayer/embed/d8224c3f-6e20-4b8e-9d0d-b0f5602c7708" frameborder="0" allowfullscreen=""></iframe></div>
 
 ## <a name="notifications"></a>Notificaciones 
 
@@ -99,28 +99,28 @@ La Página principal de la cuadrícula recuerda el filtro, la ordenación y el e
 
 
    > [!div class="mx-imgBorder"]
-   > ![Cuadrículas recordar]estado,(media/grid-remember-state-on-back-navigate.gif "recordar cuadrículas") de estado
+   > ![Cuadrículas recordar estado](media/grid-remember-state-on-back-navigate.gif "Cuadrículas recordar estado")
 
 
 La barra de saltos usa el primer campo ordenado. Si no se ha realizado ningún cambio de ordenación, la barra de saltos utiliza el campo principal. 
 
    > [!div class="mx-imgBorder"]
-   > ![Cuadrículas recordar]estado,(media/jumpbar-filter-on-sorted-column.gif "recordar cuadrículas") de estado
+   > ![Cuadrículas recordar estado](media/jumpbar-filter-on-sorted-column.gif "Cuadrículas recordar estado")
    
 
 Puede filtrar el campo **tipo de actividad** y seleccionar varios tipos de filtrado. Además, se pueden filtrar los campos de entidad relacionados como el propietario, el estado y el motivo.
 
    > [!div class="mx-imgBorder"]
-   > ![](media/grid-activity-type-column-filter.gif "Filtrado") de cuadrículas de filtrado de cuadrículas
+   > ![Filtrado de cuadrículas](media/grid-activity-type-column-filter.gif "Filtrado de cuadrículas")
    
 Al seleccionar el icono de jerarquía, se desplazará al formulario de jerarquía.
 
    > [!div class="mx-imgBorder"]
-   > Icono de jerarquía ![icono]de(media/grid-row-hierarchy-icon.png "jerarquía")
+   > ![Icono de jerarquía](media/grid-row-hierarchy-icon.png "Icono de jerarquía")
    
 También puede abrir el campo principal y los campos de búsqueda en una nueva pestaña o ventana.
 
    > [!div class="mx-imgBorder"]
-   > ![Abrir en una nueva ventana](media/newtab.png "[abrir en una nueva ventana")
+   > ![Abrir en una nueva ventana](media/newtab.png "[Abrir en una nueva ventana")
 
 

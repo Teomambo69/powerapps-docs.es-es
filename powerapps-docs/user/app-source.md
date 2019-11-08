@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1e0227284549ae293083ba5ae012d28c6178454
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 6e23833c57b5d37c7ce7908a048dbf49fa447e06
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705389"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541770"
 ---
 # <a name="discover-apps-via-appsource"></a>Detectar aplicaciones a través de AppSource
 Las aplicaciones que se crean y publican con PowerApps se detectan y utilizan en Dynamics 365 en la Web. Muestra todas las aplicaciones: las que haya decidido usar específicamente (es decir, al iniciarlas desde un correo electrónico compartido o abrirlas desde AppSource) o las que un administrador haya aprovisionado para su uso. Esto incluye todas las aplicaciones de PowerApps, así como las de Dynamics 365 de Microsoft. Puede buscar aplicaciones, filtrar por entorno y anclar las aplicaciones que use con más frecuencia a la parte superior de la página.
@@ -29,7 +29,7 @@ Las aplicaciones que se crean y publican con PowerApps se detectan y utilizan en
   ![Aplicaciones en Dynamics 365](./media/app-source/apps-dynamics365.png)
 
 ## <a name="find-apps-via-the-appsource-organization-gallery"></a>Buscar aplicaciones a través de la galería de AppSource de la organización
-Ahora, Microsoft AppSource está insertada en la página principal de [Dynamics 365](http://home.dynamics.com) y en el panel de navegación común. Incluye una galería privada de las aplicaciones que tiene disponibles dentro de su empresa. Seleccione **Obtener más aplicaciones** en la página principal o el panel de tareas, y vaya a la pestaña **Mi organización** para ver las aplicaciones que tiene disponibles.
+Ahora, Microsoft AppSource está insertada en la página principal de [Dynamics 365](https://home.dynamics.com) y en el panel de navegación común. Incluye una galería privada de las aplicaciones que tiene disponibles dentro de su empresa. Seleccione **Obtener más aplicaciones** en la página principal o el panel de tareas, y vaya a la pestaña **Mi organización** para ver las aplicaciones que tiene disponibles.
 
 ![Aplicaciones en Dynamics 365](./media/app-source/getmoreapps.png)
 
