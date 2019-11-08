@@ -1,6 +1,7 @@
-- name: 'Introducción: ¿Qué es PowerApps?'
-  href: ../powerapps-overview.md
+- name: Introducción
   items:
+    - name: ¿Qué es PowerApps?
+      href: ../powerapps-overview.md
     - name: Registrarse para obtener una versión de evaluación de 30 días
       href: signup-for-powerapps.md
     - name: Suscribirse al plan de la comunidad
@@ -23,13 +24,15 @@
     - name: Desde AppSource
       href: ../user/app-source.md
     - name: Usar aplicaciones controladas por modelos
-      href: ../user/use-model-driven-apps.md
       items:
+        - name: Información general
+          href: ../user/use-model-driven-apps.md
         - name: Interfaz unificada
           href: ../user/unified-interface.md
         - name: Navegación y conceptos básicos
-          href: ../user/navigation.md
           items:
+            - name: Información general
+              href: ../user/navigation.md
             - name: Ver su perfil
               href: ../user/view-your-user-profile.md
             - name: Búsqueda del administrador o encargado de soporte técnico
@@ -814,8 +817,9 @@
         - name: Incrustación de aplicaciones de lienzo en otras aplicaciones
           href: ./canvas-apps/embedding-sdk.md
 - name: Aplicaciones controladas por modelos
-  href: ./model-driven-apps/model-driven-app-overview.md
   items:
+    - name: ¿Qué son las aplicaciones basadas en modelos?
+      href: ./model-driven-apps/model-driven-app-overview.md
     - name: Explorar las aplicaciones de ejemplo
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: Crear su primera aplicación
@@ -1289,11 +1293,13 @@
     - name: Preguntas más frecuentes sobre los portales de PowerApps
       href: ./portals/faq.md
 - name: Common Data Service
-  href: ./common-data-service/data-platform-intro.md
   items:
+    - name: ¿Qué es Common Data Service?
+      href: ./common-data-service/data-platform-intro.md
     - name: Trabajar con entidades
-      href: ./common-data-service/entity-overview.md
       items:
+        - name: Información general sobre las entidades
+          href: ./common-data-service/entity-overview.md
         - name: Crear una entidad
           href: ./common-data-service/data-platform-create-entity.md
         - name: Crear una entidad personalizada que tiene componentes
