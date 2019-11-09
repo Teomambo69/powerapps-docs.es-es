@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9dc1fa02737b49261dc76a06e208cea578e80dea
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a94b32b21bdb2338adefdfc4c3cddc7648001087
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182596"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900316"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos. Microsoft Flow está integrado con SharePoint, por lo que resulta fácil crear un flujo de directamente desde una lista. El flujo que vamos a crear se desencadena cuando se agrega un elemento a la lista **Project Requests**. El flujo envía un correo electrónico al aprobador del proyecto, quien aprueba o rechaza la solicitud directamente en el correo electrónico. Después, el flujo envía un correo electrónico de aprobación o rechazo al solicitante del proyecto y actualiza nuestras listas de SharePoint en consecuencia.
+En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos. Power Automatic se integra con SharePoint, por lo que es fácil crear un flujo directamente desde una lista. El flujo que vamos a crear se desencadena cuando se agrega un elemento a la lista **Project Requests**. El flujo envía un correo electrónico al aprobador del proyecto, quien aprueba o rechaza la solicitud directamente en el correo electrónico. Después, el flujo envía un correo electrónico de aprobación o rechazo al solicitante del proyecto y actualiza nuestras listas de SharePoint en consecuencia.
 
 ## <a name="step-1-configure-the-flow-template"></a>Paso 1: Configuración de la plantilla de flujo
 1. En la lista **Project Requests**, pulse o haga clic en **Flujo** y, luego, en **Crear un flujo**.

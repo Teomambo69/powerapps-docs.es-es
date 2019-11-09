@@ -13,24 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321209"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899533"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Ahora que las listas de SharePoint están en su sitio, podemos generar y personalizar la primera aplicación. PowerApps está integrado con SharePoint, por lo que es fácil generar una *aplicación de tres pantallas* básica directamente desde una lista. Esta aplicación permite ver información tanto resumida como detallada de cada elemento de la lista, actualizar los elementos existentes en la lista y crear nuevos elementos en la lista. Si crea una aplicación directamente a partir de una lista, esta aparece como un *vista* en dicha lista. Posteriormente, dicha aplicación se puede ejecutar tanto en un explorador como en un teléfono móvil.
 
 > [!TIP]
 > El [paquete de descarga](https://aka.ms/o4ia0f) para este escenario incluye una versión terminada de esta aplicación: project-requests-app.msapp.
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Paso 1: Generar una aplicación a partir de una lista de SharePoint
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Paso 1: Generación de una aplicación a partir de una lista de SharePoint
 
 1. En la lista **Project Requests** que ha creado, pulse o haga clic en **PowerApps** y, después en, **Crear una aplicación**.
    
@@ -40,7 +39,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Especifique un nombre para la aplicación](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>Paso 2: Revisar la aplicación en PowerApps Studio
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>Paso 2: Examen de la aplicación en PowerApps Studio
 
 1. En PowerApps Studio, la barra de navegación izquierda muestra de forma predeterminada una vista jerárquica de las pantallas y los controles de la aplicación.
    
@@ -60,7 +59,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
       
       ![PowerApps Studio con la vista de miniaturas](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>Paso 3: Personalizar la pantalla de exploración de la aplicación
+## <a name="step-3-customize-the-apps-browse-screen"></a>Paso 3: Personalización de la pantalla de exploración de la aplicación
 
 1. Haga clic o pulse en la pantalla de exploración.
    
@@ -86,7 +85,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Propiedad Elementos](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Cambie la fórmula a **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))**.
+6. Cambie la fórmula a **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Barra de fórmulas](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
@@ -94,7 +93,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 
 6. Pulse o haga clic en **Archivo** y, luego, en **Guardar**. Haga clic o pulse en ![el icono Back to app](./media/sharepoint-scenario-generate-app/icon-back-to-app.png) (Volver a la aplicación) para volver a la aplicación.
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Paso 4: Revise la pantalla de detalles de la aplicación y la pantalla de edición
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Paso 4: Revisión de la pantalla de detalles y la pantalla de edición de la aplicación
 1. Haga clic o pulse en la pantalla de detalles.
    
     Esta pantalla tiene un diseño diferente que contiene un *formulario de presentación* que muestra los detalles de un elemento seleccionado en la galería. Tiene controles para editar y eliminar elementos, y para volver a la pantalla de exploración.
@@ -107,7 +106,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 
     ![Formulario de edición](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>Paso 5: Ejecute la aplicación en la lista
+## <a name="step-5-run-the-app-from-the-list"></a>Paso 5: Ejecución de la aplicación desde la lista
 
 1. En la lista **Project Requests**, pulse o haga clic en **Todos los elementos** y en **Project Requests app**.
    
@@ -147,7 +146,7 @@ Pero, ¿qué hace esta fórmula? Determina el origen de datos que aparece en la 
 * La [función **SortByColumns**](functions/function-sort.md) ordena una tabla según una o varias columnas.
 * La [función **Filter**](functions/function-filter-lookup.md) busca los registros en una tabla que satisface una fórmula que se especifica.
 * La [función **StartsWith**](functions/function-startswith.md) comprueba si una cadena de texto comienza por otra.
-* La [función **If**](functions/function-if.md) devuelve un valor si una condición es true y otro valor si es false.
+* La [función**If**](functions/function-if.md) devuelve un valor si una condición es true y otro valor si es false.
 
 Cuando se juntan las funciones en la fórmula, ocurre lo siguiente:
 

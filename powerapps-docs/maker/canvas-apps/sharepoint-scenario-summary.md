@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed4b729926cc8a818f8c2d47b98656c91b934788
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542478"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899312"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones de lienzo y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones de lienzo, flujos e informes en SharePoint según sus propias necesidades. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
 
@@ -155,13 +155,13 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
     ![Correo electrónico de alerta de Power BI](./media/sharepoint-scenario-summary/09-06-04-email-powerbi.png)
 5. Compruebe la bandeja de entrada de la persona que agregó en el flujo de alertas de datos (Allan DeYoung, en este caso).
    
-    ![Correo electrónico de alerta de Microsoft Flow](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
+    ![Correo electrónico de alerta de Power Automatic](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
 6. Ahora que tiene información sobre los proyectos pendientes, puede regresar y aprobar los que tenga esperando.
 
 Con esto, ha llegado a la conclusión de este tutorial de principio a fin y de esta serie de tutoriales. Puede continuar su viaje en los siguientes sitios:
 
 * [PowerApps](https://www.powerapps.com/)
-* [Microsoft Flow](https://flow.microsoft.com)
+* [Automatización de la energía](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Comunidad de usuarios avanzados](https://powerusers.microsoft.com/)
 * [SharePoint](https://sharepoint.microsoft.com)

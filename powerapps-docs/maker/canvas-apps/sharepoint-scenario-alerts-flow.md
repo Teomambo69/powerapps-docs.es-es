@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900400"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Configurar alertas de datos para el panel de Power BI
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, se va a agregar una alerta en Power BI que avise de si se está tardando demasiado en aprobar proyectos pendientes, y un flujo que responda cuando se produzca esa alerta. Para más información sobre las alertas, consulte [Alertas de datos en el servicio Power BI](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
-## <a name="step-1-create-an-alert"></a>Paso 1: Crear una alerta
+## <a name="step-1-create-an-alert"></a>Paso 1: Creación de una alerta
 1. En el servicio Power BI, abra el panel que creó en la última tarea.
-2. En la tarjeta con un solo número, pulse o haga clic en el botón de puntos suspensivos (**…**).
+2. En la tarjeta con un solo número, pulse o haga clic en el botón de puntos suspensivos ( **…** ).
    
     ![Tarjeta con máximo de días pendientes de aprobación](./media/sharepoint-scenario-alerts-flow/07-01-01-tile-ellipsis.png)
 3. Haga clic o pulse ![en Icono de campana](./media/sharepoint-scenario-alerts-flow/icon-bell.png).
@@ -43,12 +43,12 @@ En esta tarea, se va a agregar una alerta en Power BI que avise de si se está t
 
 La alerta no se activará ahora mismo, aunque 56 esté por encima del umbral de 25. Se activará cuando se actualicen los datos, lo que se verá en el [recorrido de principio a fin del escenario](sharepoint-scenario-summary.md).
 
-Cuando se activa la alerta, Power BI envía un mensaje de correo electrónico a su creador; en el paso siguiente, se verá cómo enviar correo adicional mediante Microsoft Flow.
+Cuando se activan las alertas, Power BI envía un correo electrónico al creador de la alerta y veremos cómo enviar correo adicional con Power Automate en el paso siguiente.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Paso 2: Crear un flujo que responda a la alerta
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Paso 2: Creación de un flujo que responda a la alerta
 1. Inicie sesión en flow.microsoft.com y pulse o haga clic en **Servicios** y en **Power BI**.
    
-    ![Power BI en Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
+    ![Power BI en Power Automatic](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
 2. Pulse o haga clic en **Enviar un correo electrónico al público cuando se desencadene una alerta de datos de Power BI**.
    
     ![Enviar un correo electrónico cuando se desencadene una alerta de datos de Power BI](./media/sharepoint-scenario-alerts-flow/07-01-06-alert-flow.png)

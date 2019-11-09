@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bb39701a61bcfb75c6fd66e90fc7a5002efcc410
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541647"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898324"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Iniciar un flujo en una aplicación de lienzo
 
-Microsoft Flow se puede usar para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
+Puede usar Power Automate para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
 
 > [!NOTE]
 > Cuando un usuario ejecuta un flujo desde una aplicación, el usuario debe tener permiso para realizar las tareas que se especifican en el flujo. De lo contrario, se producirá un error en el flujo.

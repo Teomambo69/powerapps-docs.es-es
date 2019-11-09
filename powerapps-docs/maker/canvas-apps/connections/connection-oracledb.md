@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8db848e0d6874fd44fedbe9b84539e548867e76
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: df9ad0aead9681d3458d70f44f929c15c073f35a
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541034"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897803"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Conectarse a una instancia de Oracle Database desde PowerApps
 Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instancia de Oracle Database después de crear una conexión y compilar una aplicación en PowerApps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.
@@ -32,7 +32,7 @@ Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instan
 ### <a name="install-an-on-premises-data-gateway"></a>Instalar una puerta de enlace de datos local
 Para instalar una puerta de enlace, siga los pasos de [este tutorial](../gateway-management.md).
 
-Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (los datos que no se encuentran en la nube) y los servicios de Power BI, Microsoft Flow, Logic Apps y PowerApps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
+Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y los servicios Power BI, Power Automatic, Logic Apps y PowerApps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Instalar el cliente de Oracle
 En el mismo equipo que la puerta de enlace de datos local, instale [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). De lo contrario, aparecerá un error si intenta crear o usar la conexión, como se describe en la lista de problemas conocidos.

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 206a28c15b4bb23d46acb0a707bda5072a43cced
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540161"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899822"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Conectores personalizados para aplicaciones de lienzo
 
-Puede compilar aplicaciones de lienzo y flujos de trabajo, sin tener que escribir nada de código, con [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) y [PowerApps](https://powerapps.microsoft.com). Con el objetivo de ayudarle a integrar sus procesos empresariales y de datos, dichos servicios ofrecen [más de 180 conectores](https://docs.microsoft.com/connectors/) para productos y servicios de Microsoft, así como para otros servicios, como GitHub, Salesforce y Twitter.
+Sin necesidad de escribir ningún código, puede crear flujos de trabajo y aplicaciones de lienzo con [Azure Logic apps](https://azure.microsoft.com/services/logic-apps), [Power Automatic](https://flow.microsoft.com)y [PowerApps](https://powerapps.microsoft.com). Con el objetivo de ayudarle a integrar sus procesos empresariales y de datos, dichos servicios ofrecen [más de 180 conectores](https://docs.microsoft.com/connectors/) para productos y servicios de Microsoft, así como para otros servicios, como GitHub, Salesforce y Twitter.
 
 Aunque, a veces, es posible que quiera llamar a API, servicios y sistemas que no están disponibles como conectores compilados previamente. Para admitir escenarios más específicos, puede compilar *conectores personalizados* con acciones y desencadenadores propios. En el sitio de la documentación sobre los conectores encontrará un conjunto muy completo de tutoriales básicos y avanzados sobre los conectores personalizados. Recomendamos empezar por la [información general sobre los conectores personalizados](https://docs.microsoft.com/connectors/custom-connectors/), pero, si quiere, puede ir directamente a los siguientes temas para obtener más información sobre un aspecto en concreto:
 

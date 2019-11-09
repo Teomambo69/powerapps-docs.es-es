@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a72fc689fa9b4d7d84f554745e5a04ee2812b70
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541148"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897917"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
 Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
@@ -41,7 +41,7 @@ En una aplicación en la que tenga permiso de **colaborador**, agregue una conex
 > [!NOTE]
 > Si desencadena una notificación push desde un flujo, actualmente no se puede enviar a más de un usuario o grupo de seguridad a la vez.
 
-1. En [Microsoft Flow](https://flow.microsoft.com), cree un desencadenador que especifique cuándo se envía la notificación push.
+1. En [Power Automate](https://flow.microsoft.com), cree un desencadenador que especifique Cuándo se envía la notificación de la extracción.
 
     Por ejemplo, puede enviar una notificación cuando se agregue un registro a la entidad **Case** de Common Data Service.
 
@@ -140,7 +140,7 @@ PowerAppsNotification.SendPushNotification(
 * Actualmente, las notificaciones no se muestran en PowerApps Mobile para Windows Phone.
 * Actualmente, no proporcionamos notificaciones push a los usuarios que ejecutan aplicaciones solo en un explorador web.
 * Las notificaciones muestran el icono de PowerApps genérico, en lugar de un icono específico de la aplicación.
-* Cuando se utiliza Microsoft Flow, no se pueden enviar notificaciones push a varios destinatarios a la vez.
+* Al usar Power Automatic, puede enviar una notificación de envío a un solo destinatario cada vez.
 
 Para obtener información de referencia, consulte el artículo [PowerApps Notification (versión preliminar)](https://docs.microsoft.com/connectors/powerappsnotification/).
 

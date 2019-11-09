@@ -1,5 +1,5 @@
 ---
-title: Configuración de listas para la integración de SharePoint Online con PowerApps, Microsoft Flow y Power BI | Microsoft Docs
+title: Configuración de listas para la integración de SharePoint Online con PowerApps, Power Automate y Power BI | Microsoft Docs
 description: En esta tarea, se configuraran las listas de SharePoint para usarlas como origen de datos para aplicaciones, flujos, informes y paneles.
 author: NickWaggoner
 manager: kvivek
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319162"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899164"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con PowerApps, Microsoft Flow y Power BI
+# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con PowerApps, Power Automate y Power BI
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-SharePoint tiene una gran cantidad de características de colaboración y uso compartido, pero nos centraremos en una característica para este escenario: [Las listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
+SharePoint tiene una gran cantidad de características para la colaboración y el uso compartido, pero nos centraremos en una característica de este escenario: las [listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
 
 ## <a name="step-1-understand-the-lists"></a>Paso 1: Información de las listas
 La primera lista es **Project Requests**, en la que un solicitante del proyecto agrega una solicitud. A continuación, el aprobador de proyecto examina la solicitud y la aprueba o rechaza.
@@ -51,7 +51,7 @@ La segunda lista es **Project Details**, que realiza un seguimiento de los detal
 | ApprovedDate |Date | |
 | Estado |Una línea de texto |Valores: no iniciado, en curso, completado |
 | ProjectedStartDate |Date |El momento en que el jefe de proyecto estima que se va a iniciar el proyecto |
-| ProjectedEndDate |Fecha |El momento en que el jefe de proyecto estima que se va a finalizar el proyecto |
+| ProjectedEndDate |Date |El momento en que el jefe de proyecto estima que se va a finalizar el proyecto |
 | ProjectedDays |Número |Días hábiles; normalmente se calcularían, pero no en este escenario |
 | ActualDays |Número |Para los proyectos completados |
 | PMAssigned |Una línea de texto |Jefe de proyecto |
@@ -105,9 +105,9 @@ Para continuar con el escenario, debe crear las dos listas de SharePoint y relle
 4. Copie los datos y péguelos en la cuadrícula de SharePoint y haga clic en o pulse en **Done**  (Listo).
    
     ![Lista completada con datos](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. Repita el proceso de creación y copia de la lista "Project Details", para lo que usará el libro project-details.xlsx. Consulte la tabla Project Details en [paso 1: Información de las listas](#step-1-understand-the-lists) para los tipos de datos y los nombres de columna.
+5. Repita el proceso de creación y copia de la lista "Project Details", para lo que usará el libro project-details.xlsx. Consulte la tabla Project Details en [Paso 1: Información de las listas](#step-1-understand-the-lists), ya que contiene los tipos de datos y los nombres de las columnas.
 
-## <a name="step-3-update-connections-to-samples---optional"></a>Paso 3: Actualizar las conexiones a ejemplos (opcional)
+## <a name="step-3-update-connections-to-samples---optional"></a>Paso 3: Actualización de conexiones a ejemplos (opcional)
 Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete de descarga](https://aka.ms/o4ia0f) se han incluido dos aplicaciones de ejemplo y un informe. Este escenario se puede completar sin usar estos ejemplos, pero si desea usarlos, es preciso que actualice las conexiones a las listas de SharePoint. Actualícelas para que usen *sus* listas como origen de datos, en lugar de las nuestras.
 
 ### <a name="update-connections-for-the-sample-apps"></a>Actualizar las conexiones de las aplicaciones de ejemplo
@@ -121,7 +121,7 @@ Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete
 4. En la cinta de opciones, en la pestaña **Vista**, pulse o haga clic en **Orígenes de datos**.
 
     ![Orígenes de datos de PowerApps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
-5. En el panel **Datos**, haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Quitar**.
+5. En el panel **Datos**, haga clic o pulse el botón de puntos suspensivos ( **...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Quitar**.
    
     ![Quitar origen de datos de Project Details](./media/sharepoint-scenario-setup/01-03-02-remove.png)
 6. Pulse o haga clic en **Agregar origen de datos**.
@@ -153,7 +153,7 @@ Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete
    
     ![Orígenes de datos](./media/sharepoint-scenario-setup/01-03-03e-data-sources.png)
 
-10. Haga clic o pulse el botón de puntos suspensivos (**...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Actualizar**.
+10. Haga clic o pulse el botón de puntos suspensivos ( **...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Actualizar**.
     
     ![Actualizar origen de datos de Project Details](./media/sharepoint-scenario-setup/01-03-02-remove.png)
 

@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 92ae77237064d28e3070f7e7bc9cb94c4493a3c6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 1ab23d8b71d36346d2013ac3b988eb2d058e2324
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321240"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898392"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Inserción del informe de proyecto de Power BI en SharePoint Online
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales acerca del uso de PowerApps, Microsoft Flow y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Ahora vamos a insertar el informe de Power BI en el mismo sitio de SharePoint Online que hospeda nuestras dos listas. Power BI admite varios métodos de inserción, como la integración directa en las páginas de SharePoint para vistas móviles y web.
 
 Con este tipo de inserción, Power BI inserta el informe como un elemento web, proporciona un acceso adecuado a los usuarios y le permite desplazarse desde el informe insertado al informe de powerbi.com. En primer lugar, se va a generar un vínculo de inserción en Power BI. Posteriormente, se utilizará ese vínculo en una página que vamos a crear. Para obtener más información sobre cómo insertar, consulte [Insertar el elemento web de informes en SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo).
 
-## <a name="step-1-generate-an-embed-link"></a>Paso 1: Generar un vínculo de inserción
+## <a name="step-1-generate-an-embed-link"></a>Paso 1: Generación de un vínculo de inserción
 1. Inicie sesión en Power BI y, en el panel de navegación izquierdo, haga clic o pulse en el nombre del informe.
    
     ![Ir al informe](./media/sharepoint-scenario-embed-report/08-01-01-reports.png)
@@ -39,7 +39,7 @@ Con este tipo de inserción, Power BI inserta el informe como un elemento web, p
    
     ![Vínculo de inserción para SharePoint](./media/sharepoint-scenario-embed-report/08-01-03-embed-url.png)
 
-## <a name="step-2-embed-the-report"></a>Paso 2: Incrustar el informe
+## <a name="step-2-embed-the-report"></a>Paso 2: Inserción del informe
 1. Inicie sesión en SharePoint y, a continuación, haga clic o pulse en **Contenidos del sitio**.
    
     ![Contenidos del sitio de SharePoint](./media/sharepoint-scenario-embed-report/08-01-04-site-contents.png)
@@ -60,7 +60,7 @@ Con este tipo de inserción, Power BI inserta el informe como un elemento web, p
    
     ![Inserción de informe completada](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
-## <a name="step-3-grant-access-to-the-report"></a>Paso 3: Conceder acceso al informe.
+## <a name="step-3-grant-access-to-the-report"></a>Paso 3: Concesión de acceso al informe.
 Si usas grupos de Office 365, tal y como se recomienda, asegúrese de que los usuarios que necesitan acceder son miembros del área de trabajo del grupo en el servicio Power BI. Esto garantiza que los usuarios puedan ver el contenido de ese grupo. Para obtener más información, consulte [Colaboración en un área de trabajo de aplicación de Power BI](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
 Así concluye nuestro trabajo en Power BI para este escenario. Empezó extrayendo datos de nuestras listas de SharePoint en Power BI y ahora se ha cerrado el círculo con la inserción de un informe de Power BI de nuevo en SharePoint.
