@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650428"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
 Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.
@@ -95,12 +96,12 @@ El audio se almacena en formato 3gp en Android, en formato AAC en iOS y en forma
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Agregue sonidos a un control Galería personalizada
 1. Agregue un **Micrófono**, asígnele el nombre **MyMic**y establezca su propiedad **AlDetener** en esta fórmula:<br>
-   **Collect(MySounds, MyMic.Audio)**
+   **Collect(MySounds; MyMic.Audio)**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/09/2019
 ms.locfileid: "73900332"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]
@@ -185,7 +186,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
 1. Aún en la tabla de fechas, haga clic o pulse en **Nueva columna**.
    
     ![Nueva columna](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)** .
+2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]); 1;0;7;0;1)** .
    
     Esta fórmula determina si una fecha de la columna **Date** es un día laborable. Si la fecha es un día laborable, la columna **IsWeekDay** obtiene el valor 1; de lo contrario, obtiene el valor 0.
 3. Presione Entrar para agregar la columna **IsWeekDay** a la tabla **Dates**.

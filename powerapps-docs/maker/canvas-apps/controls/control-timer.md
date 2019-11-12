@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73649645"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -125,7 +126,7 @@ Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparec
 2. Establezca la propiedad **Duration** en **10000** y sus propiedades **Repetir** e **IniciarAutomáticamente** en **true**.
 3. (opcional) Configure la propiedad **[Altura](properties-size-location.md)** en **160**, su propiedad **[Altura](properties-size-location.md)** en **600** y su propiedad **[Size](properties-text.md)** en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000, 0)**
+   <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000; 0)**
 
     ¿Desea más información sobre la función **[RedondearMas](../functions/function-round.md)** u [otras funciones](../formula-reference.md)?
 
@@ -138,7 +139,7 @@ Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparec
 2. Establezca la propiedad **Duration** del temporizador en **5000**, su propiedad **Repeat** en **true** y su propiedad **[Text](properties-core.md)** en **Toggle animation**.
 3. (opcional) Configure la propiedad **[Altura](properties-size-location.md)** en **160**, su propiedad **[Altura](properties-size-location.md)** en **600** y su propiedad **[Size](properties-text.md)** en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** para que muestre el mensaje **Welcome!** y establezca su propiedad **[Color](properties-color-border.md)** con esta fórmula:
-   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
 
     ¿Desea más información sobre la función **[ColorFade](../functions/function-colors.md)** u [otras funciones](../formula-reference.md)?
 

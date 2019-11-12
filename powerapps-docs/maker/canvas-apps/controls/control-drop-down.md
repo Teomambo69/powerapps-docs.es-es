@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650570"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="drop-down-control-in-powerapps"></a>Control Lista desplegable en PowerApps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
@@ -130,7 +131,7 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Items](properties-core.md)** en esta expresión:
 
-    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
+    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -143,13 +144,13 @@ Los principios de este procedimiento se aplican a cualquier [origen de datos que
 
 1. Agregue un control **Lista desplegable** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    `Distinct(Accounts, address1_city)`
+    `Distinct(Accounts; address1_city)`
 
     Esta fórmula muestra todas las ciudades de la entidad **Cuentas**. Si hay más de un registro con la misma ciudad, la función **[Distinct](../functions/function-distinct.md)** oculta la duplicación en el control de lista desplegable.
 
 1. (opcional) Cambie el nombre del control **Lista desplegable** a **Ciudades**, agregue un control vertical **Galería** y establezca la propiedad **[Elementos](properties-core.md)** de la galería en esta fórmula:
 
-    `Filter(Accounts, address1_city = Cities.Selected.Value)`
+    `Filter(Accounts; address1_city = Cities.Selected.Value)`
 
     Esta función **[Filtro](../functions/function-filter-lookup.md)** muestra únicamente aquellos registros de la entidad **Cuentas** en los que la ciudad coincida con el valor seleccionado en el control **Ciudades**.
 

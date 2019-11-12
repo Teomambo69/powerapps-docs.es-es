@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650721"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="camera-control-in-powerapps"></a>Control Cámara en PowerApps
 Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.
@@ -73,12 +74,12 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 ### <a name="add-photos-to-an-image-gallery-control"></a>Agregar fotos a un control Galería de imágenes
 1. Agregue un control **Cámara**, denomínelo **MyCamera** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
-   **Collect(MyPix, MyCamera.Photo)**
+   **Collect(MyPix; MyCamera.Photo)**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -91,7 +92,7 @@ Si agrega este control, el usuario puede actualizar un origen de datos con una o
 
     La foto que realizó aparece en el control **Galería de imágenes**.
 6. Realice tantas fotografías como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
-7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix, ThisItem)** , presione F5 y luego pulse o haga clic en una foto para quitarla.
+7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix; ThisItem)** , presione F5 y luego pulse o haga clic en una foto para quitarla.
 
 Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las fotos localmente o la función **[Revisión](../functions/function-patch.md)** para actualizar el origen de datos.
 

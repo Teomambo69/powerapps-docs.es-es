@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/09/2019
 ms.locfileid: "73899533"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
@@ -85,7 +86,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Propiedad Elementos](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Cambie la fórmula a **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
+6. Cambie la fórmula a **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
    
     ![Barra de fórmulas](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    

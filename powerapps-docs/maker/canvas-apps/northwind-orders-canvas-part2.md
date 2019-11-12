@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/07/2019
 ms.locfileid: "73741700"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Crear un formulario de resumen en una aplicación de lienzo
 
@@ -222,7 +223,7 @@ En este ejemplo, no se necesitan las partes de tiempo de los campos de fecha por
 
 1. Establezca la propiedad **Item** del formulario de resumen en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected
     ```
 
@@ -301,7 +302,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **imagen** de la imagen en esta fórmula, reemplazando el número al final de DataCardValue si es necesario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     DataCardValue7.Selected.Picture
     ```
 
@@ -334,7 +335,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. En el panel de **vista de árbol** , confirme que el nombre del formulario es **Form1**y, a continuación, establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SubmitForm( Form1 )
     ```
 
@@ -345,8 +346,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -356,7 +357,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono en este valor:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -387,7 +388,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono cancelar en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ResetForm( Form1 )
     ```
 
@@ -398,8 +399,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono de cancelación en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -409,7 +410,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono de cancelación en este valor:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -440,7 +441,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono Agregar en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     NewForm( Form1 )
     ```
 
@@ -451,8 +452,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono Agregar en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -465,7 +466,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono Agregar en este valor:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -499,8 +500,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **alseleccionar** del icono de la papelera en esta fórmula:
 
-    ```powerapps-dot
-    Remove( Orders, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Orders; Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -510,8 +511,8 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisplayMode** del icono de la papelera en esta fórmula:
 
-    ```powerapps-dot
-    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -521,7 +522,7 @@ La entidad **Orders** tiene una relación de varios a uno con la entidad **Emplo
 
 1. Establezca la propiedad **DisabledColor** del icono de la papelera en este valor:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -544,7 +545,7 @@ En Resumen, ha agregado un formulario en el que el usuario puede mostrar y edita
 - Un icono para guardar los cambios en un pedido: `SubmitForm( Form1 )`
 - Un icono para cancelar los cambios en un pedido: `ResetForm( Form1 )`
 - Un icono para crear un pedido: `NewForm( Form1 )`
-- Un icono para eliminar un pedido: `Remove( Orders, Gallery1.Selected )`
+- Un icono para eliminar un pedido: `Remove( Orders; Gallery1.Selected )`
 
 ## <a name="next-step"></a>Paso siguiente
 
