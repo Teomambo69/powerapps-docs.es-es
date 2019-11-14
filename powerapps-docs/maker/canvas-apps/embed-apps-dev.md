@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539023"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072532"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que cree suelen ser más útiles cuando están disponibles en el momento en que los usuarios realizan su trabajo. Al incrustar aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios web y otros servicios, como Power BI o SharePoint.
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> A partir del 2019 de agosto, el formato del URI ha cambiado de https://make.powerapps.com/webplayer a https://apps.powerapps.com/play. Actualice cualquier iframe incrustado para que use el nuevo formato de URI. Las referencias al formato anterior se redirigirán al nuevo URI para garantizar la compatibilidad.
+> A partir del 2019 de agosto, el formato del URI ha cambiado de https://web.powerapps.com/webplayer a https://apps.powerapps.com/play. Actualice cualquier iframe incrustado para que use el nuevo formato de URI. Las referencias al formato anterior se redirigirán al nuevo URI para garantizar la compatibilidad.
 >
 > Formato anterior:
 > 
-> https\://make.powerapps.com/WebPlayer/iframeapp? Source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
+> https\://Web.powerapps.com/WebPlayer/iframeapp? Source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
 
 Lo único que tiene que hacer es sustituir el identificador de la aplicación por [AppID] en el identificador URI (incluido "[' & ']"). Le mostraremos cómo obtener ese valor en breve, pero primero aquí están todos los parámetros disponibles en el identificador URI:
 
@@ -54,7 +54,7 @@ Lo único que tiene que hacer es sustituir el identificador de la aplicación po
 * **tenantid** : es un parámetro opcional para admitir el acceso de invitado y determina en qué inquilino se debe abrir la aplicación. 
 * **screenColor**: se usa para proporcionar a los usuarios una mejor experiencia de carga. Este parámetro tiene el formato [RGBA (rojo, verde, azul, alfa)](../canvas-apps/functions/function-colors.md) y controla el color de la pantalla mientras se carga la aplicación. Es mejor establecerlo en el mismo color que el icono de la aplicación.
 * **source**: no afecta a la aplicación, pero se recomienda agregar un nombre descriptivo para hacer referencia al origen de la aplicación insertada.
-* Por último, puede agregar los parámetros personalizados que desee con la [función Param()](../canvas-apps/functions/function-param.md) y esos valores pueden ser utilizados por la aplicación. Se agregan al final del identificador URI, como `[AppID]&amp;param1=value1`. Estos parámetros son de solo lectura durante el inicio de la aplicación. Si tiene que cambiarlos, debe volver a iniciar la aplicación. Tenga en cuenta que solo el primer elemento después de [AppID] debe tener un "?"; después, use el "&" como se muestra aquí. 
+* Por último, puede agregar los parámetros personalizados que desee con la [función Param()](../canvas-apps/functions/function-param.md) y esos valores pueden ser utilizados por la aplicación. Se agregan al final del identificador URI, como `[AppID]?source=iframe&param1=value1&param2=value2`. Estos parámetros son de solo lectura durante el inicio de la aplicación. Si tiene que cambiarlos, debe volver a iniciar la aplicación. Tenga en cuenta que solo el primer elemento después de [AppID] debe tener un "?"; después, use el "&" como se muestra aquí. 
 
 ### <a name="get-the-app-id"></a>Obtener el identificador de aplicación
 El identificador de la aplicación está disponible en powerapps.com. Para la aplicación que desea insertar:
