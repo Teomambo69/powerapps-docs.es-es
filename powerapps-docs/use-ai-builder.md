@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/15/2019
 ms.author: v-dehaas
 ms.reviewer: kvivek
-ms.openlocfilehash: 3213692d769f0f0c1ad5095df59cd3dbc8ba5476
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cd2f293e7f336440076d48e38798ec5cbbc8d2d4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541808"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897713"
 ---
 # <a name="use-ai-builder-in-powerapps"></a>Uso del generador de IA en PowerApps
 
-El generador de AI es una nueva funcionalidad de la plataforma de energía para los equipos que tienen experiencia empresarial para automatizar los procesos fácilmente y predecir los resultados para mejorar el rendimiento empresarial. El generador de AI es una solución llave en mano que aporta la eficacia de Microsoft AI a través de una experiencia de apuntar y hacer clic y se integra directamente en PowerApps y Microsoft Flow. Más información: [¿Qué es el generador de AI?](/ai-builder/)
+El generador de AI es una nueva funcionalidad de la plataforma de energía para los equipos que tienen experiencia empresarial para automatizar los procesos fácilmente y predecir los resultados para mejorar el rendimiento empresarial. El generador de AI es una solución llave en mano que aporta la eficacia de Microsoft AI a través de una experiencia de apuntar y hacer clic y se integra directamente en PowerApps y en el proceso de automatización. Más información: [¿Qué es el generador de AI?](/ai-builder/)
 
 Puede crear modelos de AI mediante la opción nuevo **generador de AI** en el panel de navegación izquierdo de [make.powerapps.com](https://make.powerapps.com). Más información: [tipos de modelos de AI](/ai-builder/model-types)
 

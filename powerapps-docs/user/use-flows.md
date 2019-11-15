@@ -1,5 +1,5 @@
 ---
-title: Uso de Microsoft Flow para automatizar los procesos en aplicaciones controladas por modelos | Microsoft Docs
+title: Usar Power Automatic para automatizar procesos en aplicaciones controladas por modelos | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,39 +15,39 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 784a12d7ab9c525ee8bb9f68ed8fc2188433d103
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67457209"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900375"
 ---
-# <a name="use-microsoft-flow-to-automate-processes"></a>Uso de Microsoft Flow para automatizar procesos
+# <a name="use-power-automate-to-automate-processes"></a>Usar Power Automatic para automatizar procesos
 
-Microsoft Flow le permite crear procesos automatizados entre sus aplicaciones y servicios favoritos. Desde dentro de la aplicación, puede ejecutar un flujo en uno o más registros. 
+Power Automatic permite crear procesos automatizados entre sus aplicaciones y servicios favoritos. Desde dentro de la aplicación, puede ejecutar un flujo en uno o más registros. 
 
-Además, puede abrir Microsoft Flow en su aplicación para ver, editar o crear nuevos flujos.  Más información: [Introducción a Microsoft Flow](https://docs.microsoft.com/flow/getting-started)
+Además, puede abrir Power Automate desde su aplicación para ver, editar o crear nuevos flujos.  Más información: Introducción [a Power Automatic](https://docs.microsoft.com/flow/getting-started)
 
 ## <a name="manage-your-flows"></a>Administración de los flujos 
-Conexión con Microsoft Flow desde la aplicación para administrar los flujos.
+Conecte con Power Automatic de la aplicación para administrar los flujos.
   
 > [!NOTE]
-> Para administrar y ejecutar Microsoft Flow desde su aplicación, Microsoft Flow debe estar habilitado en la configuración del sistema para su organización. Más información:  [Flujos de su organización](https://docs.microsoft.com/flow/organization-q-and-a) 
+> Para administrar y ejecutar Power Automatic desde la aplicación, debe habilitar la opción de automatización de energía en la configuración del sistema de la organización. Más información: [flujos de la organización](https://docs.microsoft.com/flow/organization-q-and-a) 
   
 1. En la barra de comandos, seleccione **Flow**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Menú de Microsoft Flow](media/flow.png "Microsoft Flow menu") 
+   > ![Menú Power Automatic](media/flow.png "Menú Power Automatic") 
   
 2. Aparecen las opciones siguientes:  
   
-   -   Seleccione **Creación de un flujo** para abrir una nueva pestaña del explorador que le dirigirá al sitio de Microsoft Flow. En la página de Microsoft Flow, seleccione **Continuar** para usar una plantilla existente o **X** para cerrar, elegir o crear una diferente.  
+   -   Seleccione **crear un flujo** para abrir una nueva pestaña del explorador y dirigirle al sitio de Power Automate. En la página Power Automate, seleccione **continuar** para usar una plantilla existente o **X** para cerrar, elegir o crear otra diferente.  
   
-   -   Seleccione **Vea sus flujos** para abrir una nueva pestaña del explorador que le dirigirá al sitio de Microsoft Flow, donde se muestran los flujos del entorno de Flow.  
+   -   Seleccione **ver los flujos** para abrir una nueva pestaña del explorador y dirigirle al sitio de Power Automate en el que se muestran los flujos del entorno de flujo.  
   
-   -   Seleccione **Iniciar sesión en Flow** para conectar con Microsoft Flow y mostrar los flujos que tiene a su disposición para ejecutar. Esto solo aparece si en ese momento no ha iniciado sesión en Microsoft Flow.   
+   -   Seleccione **Inicio de sesión en Flow** para conectarse con Power Automatic y mostrar los flujos disponibles para su ejecución. Esto solo aparece si no ha iniciado sesión actualmente en Power Automatic.   
 
-    Para obtener información sobre cómo crear un flujo, vea [Introducción a Microsoft Flow](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow).  
+    Para obtener información sobre la creación de un flujo, consulte Introducción [a Power Automatic](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow) .  
     
  
     
