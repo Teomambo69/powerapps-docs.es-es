@@ -53,7 +53,7 @@ Estos seminarios web pueden ayudarle a aprovechar las características y funcion
 
 ## <a name="intermediate-webinar-series"></a>Serie de seminarios web de nivel intermedio ##
 **Application Lifecycle with the new Save and publish options in PowerApps** (Ciclo de vida de la aplicación con las nuevas opciones para guardar y publicar en PowerApps)
-<br>por Karthik Bharathy [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
+<br>por Karthik Bharathy [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
 **PowerApps Focus on Using the Lookup Function** (PowerApps, uso de la función de búsqueda)
 <br>por Audrie Gordon [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Focus-on-Using-the-Lookup-Function/m-p/116866)
@@ -113,7 +113,7 @@ Estos seminarios web pueden ayudarle a aprovechar las características y funcion
 
 ## <a name="sharepoint-series"></a>Serie de SharePoint ##
 **Rapidly build applications with PowerApps Studio** (Creación rápida de aplicaciones con PowerApps Studio)
-<br>por Karthik Bharathy [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
+<br>por Karthik Bharathy [Ver ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
 **Rebuilding an InfoPath Designer form in PowerApps** (Generación de un formulario de InfoPath Designer en PowerApps)
 <br>por Daniel Christian [Véalo ahora](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
