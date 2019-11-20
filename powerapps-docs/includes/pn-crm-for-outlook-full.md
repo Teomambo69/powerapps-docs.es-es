@@ -1,1 +1,1 @@
-Dynamics 365 para Outlook
+Dynamics 365 for Outlook

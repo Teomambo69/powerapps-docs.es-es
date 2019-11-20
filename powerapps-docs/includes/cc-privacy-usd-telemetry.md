@@ -6,9 +6,9 @@ La característica Ayude a mejorar [!INCLUDE[pn_unified_service_desk](pn-unified
  A continuación se muestra una lista de los componentes y servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] relacionados con la funcionalidad de Ayude a mejorar Unified Service Desk.  
   
 > [!NOTE]
->  Para obtener más información acerca de otras ofertas de servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], consulta el [Centro de confianza de Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
+>  Para obtener más información acerca de otras ofertas de servicios de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], consulte el [Centro de confianza de Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
   
- [Cloud Services](https://azure.microsoft.com/services/cloud-services/) REST API de Datos de OrgInsights (rol web)  
+ [Cloud Services](https://azure.microsoft.com/services/cloud-services/) API de REST de datos de OrgInsights (rol web)  
   
  Este rol web acepta solicitudes de los gráficos que muestran datos en Información de la organización. La API lee datos agregados de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Tables y los devuelve.  
   

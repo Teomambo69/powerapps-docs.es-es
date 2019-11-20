@@ -1,1 +1,1 @@
-Detecta la versión de Microsoft Dynamics 365 para Microsoft Office Outlook.
+Detecta la versión más reciente de Microsoft Dynamics 365 for Microsoft Office Outlook.

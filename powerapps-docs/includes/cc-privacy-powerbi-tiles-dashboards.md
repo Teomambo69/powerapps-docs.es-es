@@ -1,19 +1,11 @@
----
-ms.openlocfilehash: 162e914a6753e9fd95a8ec57857c280469308a68
-ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72517345"
----
-Al habilitar la inserción de Power BI iconos y paneles, cuando un usuario inserta un icono de Power BI o un panel, se usa ese [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] token de autorización para Common Data Service para autenticarse con el servicio Power BI con una concesión implícita, lo que proporciona un " Experiencia de inicio de sesión único "para el usuario final.  
+Al habilitar la inserción de mosaicos y paneles de Power BI, cuando un usuario inserta un mosaico o un panel de Power BI, ese símbolo de autorización de [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] del cliente para Common Data Service se usa con el fin de autenticarse en el servicio de Power BI con una concesión implícita, que proporciona una experiencia de "inicio de sesión único" perfecta para el usuario final.  
   
- Un administrador puede deshabilitar la inserción de iconos y paneles de Power BI en cualquier momento para detener el uso del token de autorización de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] para la autenticación con el servicio Power BI. Los iconos o paneles existentes dejarán de representarse para el usuario final.  
+ Los administradores pueden deshabilitar la inserción de mosaicos y paneles de Power BIen cualquier momento para dejar de usar el símbolo de autorización de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] con el fin de autenticarse en el servicio de Power BI. Los mosaicos o los paneles existentes detendrán la representación para el usuario final.  
   
- En la siguiente sección se detalla el componente o servicio de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] que interviene en la inserción de iconos de Power BI.  
+ En la siguiente sección se describe el componente o servicio de [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] involucrado en la inserción de mosaicos de Power BI.  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
  [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)  
   
- Este servicio proporciona el token de autenticación intercambiado con el servicio Power BI para la autenticación de la API y la interfaz de usuario.
+ Este servicio proporciona el símbolo de autenticación intercambiado con el servicio de Power BI para la autenticación de la API y la interfaz de usuario.

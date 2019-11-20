@@ -1,1 +1,1 @@
-Bus de servicio de Azure
+Azure Service Bus
