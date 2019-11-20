@@ -21,7 +21,7 @@ PowerApps proporciona a usuarios, empresas, fabricantes independientes de softwa
 
 Hay muchos aspectos referentes a cómo los desarrolladores pueden contribuir a crear aplicaciones que usan Common Data Service. Aunque sea posible crear una aplicación con un código mediante Common Data Service como el origen de datos, la mayoría de los proyectos utilizarán [aplicaciones basadas en modelos](/powerapps/maker/model-driven-apps/model-driven-app-overview) o [aplicaciones de lienzo](/powerapps/maker/canvas-apps/getting-started) para generar la experiencia que usan las personas. 
 
-## <a name="working-with-model-driven-apps"></a>Trabajar con aplicaciones basadas en modelos
+## <a name="working-with-model-driven-apps"></a>Trabajar con aplicaciones basadas en modelos.
 
 Las aplicaciones basadas en modelo se crean con Common Data Service y solo pueden conectarse a un entorno de Common Data Service. Todos los datos que definen una aplicación basada en modelos se almacenan en Common Data Service.
 
