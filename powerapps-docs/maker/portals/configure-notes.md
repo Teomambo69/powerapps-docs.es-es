@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542848"
@@ -62,7 +62,7 @@ Al igual que con las subcuadrículas, agregar notas a los formularios administra
 | Mensaje de error         | Invalida el mensaje que se muestra cuando se produce un error al intentar cargar la lista de notas.                                                                     |
 | Mensaje de acceso denegado | Invalida el mensaje que se muestra cuando el usuario no tiene permisos suficientes para ver la lista de notas.                                                    |
 | Mensaje vacío         | Reemplaza el mensaje mostrado cuando la entidad actual no tiene ninguna nota que se pueda ver.                                                              |
-| Lista de pedidos           | Permite establecer el orden en el que se mostrarán las notas. La configuración de lista de pedidos permite establecer lo siguiente: <ul><li>Attribute: el nombre lógico de la columna por la que desea ordenar.</li><li>Alias: el alias del atributo en la consulta.</li><li>Dirección: ascendente (de menor a mayor, o primero a último) o descendente (de mayor a menor, o último a primero).</li></ul> ![Establecer atributos para la lista de pedidos](media/set-attributes-list-orders.png "Satributos et para lista de pedidos ") Para agregar una regla de ordenación, seleccione "columna" (4) y rellene los detalles. Los pedidos de lista se procesarán en orden desde la parte superior de la lista con la prioridad más alta.|
+| Lista de pedidos           | Permite establecer el orden en el que se mostrarán las notas. La configuración de lista de pedidos permite establecer lo siguiente: <ul><li>Attribute: el nombre lógico de la columna por la que desea ordenar.</li><li>Alias: el alias del atributo en la consulta.</li><li>Direcciona Ascendente (de menor a mayor, o primero a último) o descendente (de mayor a menor, o último a primero).</li></ul> ![Establecer atributos para la lista de pedidos](media/set-attributes-list-orders.png "Satributos et para lista de pedidos ") Para agregar una regla de ordenación, seleccione "columna" (4) y rellene los detalles. Los pedidos de lista se procesarán en orden desde la parte superior de la lista con la prioridad más alta.|
 ||
 
 
@@ -140,7 +140,7 @@ Al igual que con las subcuadrículas, agregar notas a los formularios administra
 | Botón Cerrar (clase CSS)   | Especifique una clase o clases CSS que se aplicarán al botón Cerrar (Cancelar) del cuadro de diálogo.                                                      |
 |||
 
-### <a name="assign-entity-permissions"></a>Asignar permisos de entidad
+### <a name="assign-entity-permissions"></a>Administración de permisos de entidad
 
 Debe crear y asignar el permiso de entidad correspondiente a los registros como se indica a continuación; de lo contrario, se ocultarán los botones **Agregar**, **Editar**y **eliminar** de la Nota:
 
