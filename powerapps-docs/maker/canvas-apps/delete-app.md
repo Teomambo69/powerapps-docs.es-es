@@ -7,47 +7,47 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2016
+ms.date: 11/18/2019
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1f8e2edd92d36ce4c3a2b08b5ae9d2481c339ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4a60443011b700c1202c904a84ad631e25572daf
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540246"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177695"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Eliminación de una aplicación de lienzo de PowerApps
 En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuenta de PowerApps y de las cuentas de cualquiera con quien se haya compartido la aplicación.
 
 ## <a name="delete-an-app-from-your-account"></a>Eliminar una aplicación de la cuenta
-1. Abra [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, seleccione **aplicaciones** en el panel de **vista de árbol** de la izquierda.
+1. Open [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Apps** in the left **Tree view** pane.
    
-    ![](./media/delete-app/file-apps.png)
-2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo las aplicaciones de las que sea propietario o aquellas aplicaciones a las que contribuya.
+    ![Apps](./media/delete-app/file-apps.png)
+2. (optional) Near the upper-right corner, filter the list of apps to show only those apps that you own or only those apps to which you contribute.
    
-    ![](./media/delete-app/filter-list.png)
+    ![Filtro de aplicaciones](./media/delete-app/filter-list.png)
    
     > [!NOTE]
    > Si la aplicación que desea eliminar no aparece, asegúrese de que está en el entorno adecuado.
-3. Cerca del borde derecho, seleccione el icono de información de la aplicación que desea eliminar.
+3. Select **More Commands** (...) for the app that you want to delete.
    
-    ![](./media/delete-app/app-options.png)
-4. Cerca de la esquina superior derecha, seleccione el icono de la papelera para eliminar la aplicación.
+    ![More Commands](./media/delete-app/app-options.png)
+4. Select the trash-can icon to delete the app.
    
-    ![](./media/delete-app/delete-icon.png)
+    ![Delete](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > Para poder eliminar una aplicación debe tener el permiso de **colaborador** en ella.
-5. En el cuadro de diálogo que aparece, seleccione **eliminar de la nube**.  
+5. In the dialog box that appears, select **Delete from cloud**.  
    
     > [!IMPORTANT]
    > Esta acción eliminará permanentemente la aplicación no solo de su cuenta, sino también de las cuentas de todos los usuarios con las que se haya compartido.
    
-    ![](./media/delete-app/delete-button.png)
+    ![Delete from cloud](./media/delete-app/delete-button.png)
 
 ## <a name="more-resources"></a>Más recursos
 [Share an app](share-app.md) (Compartir una aplicación)  
