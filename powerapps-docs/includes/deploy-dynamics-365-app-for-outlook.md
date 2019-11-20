@@ -1,27 +1,33 @@
 ---
 title: Implementar Dynamics 365 App for Outlook | MicrosoftDocs
 ms.custom: ''
-ms.date: '2017-04-20'
+ms.date: 2017-04-20
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 09736e14-e744-48ca-a755-1b05bb55340e
 caps.latest.revision: 39
 author: jimholtz
 ms.author: jimholtz
 manager: brycho
+ms.openlocfilehash: 2df69eb2823726116ca08e893acf384afffdd957
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754143"
 ---
 # <a name="deploy-dynamics-365-app-for-outlook"></a>Implementar Dynamics 365 App for Outlook
-Los usuarios pueden usar [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] para aprovechar la potencia de [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] mientras usan [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] en el escritorio, la web o tableta. Por ejemplo, vea información sobre los destinatarios de correo electrónico o cita, o vincule un correo electrónico o cita de [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] a un registro de [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] como una oportunidad, una cuenta o un caso. Para obtener más información acerca de qué ofrece [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)], consulte el [Manual del usuario de Dynamics 365 App for Outlook](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+Los usuarios pueden usar [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] para aprovechar la potencia de [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] mientras usan [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] en el escritorio, la web o tableta. Por ejemplo, vea información sobre los destinatarios de correo electrónico o cita, o vincule un correo electrónico o cita de [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] a un registro de [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] como una oportunidad, una cuenta o un caso. Para obtener más información acerca de qué ofrece [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)], consulte el [Manual del usuario de Dynamics 365 App for Outlook](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
 > [!IMPORTANT]
->  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] no es igual que [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)], [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] emparejado con [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] es la forma preferida para integrar [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] con [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]. **Tenga en cuenta que el seguimiento de actividades no se admite si un usuario usa [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] y [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] juntos.** Para obtener información acera del complemento [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], consulta el [Manual del usuario de Dynamics 365 for Outlook](http://go.microsoft.com/fwlink/p/?LinkID=524751).  
+>  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] no es igual que [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)], [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] emparejado con [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] es la forma preferida para integrar [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] con [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]. **Tenga en cuenta que el seguimiento de actividades no se admite si un usuario usa [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] y [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] juntos.** Para obtener información acera del complemento [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], consulta el [Manual del usuario de Dynamics 365 for Outlook](https://go.microsoft.com/fwlink/p/?LinkID=524751).  
 >   
->  [Los usuarios delegados](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540) no pueden usar [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] para realizar el seguimiento de los correos electrónicos. Se recomienda usar [seguimiento de nivel de carpeta o seguimiento automático](https://www.microsoft.com/en-us/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx) para los usuarios delegados.  
+>  [Los usuarios delegados](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540) no pueden usar [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] para realizar el seguimiento de los correos electrónicos. Se recomienda usar [seguimiento de nivel de carpeta o seguimiento automático](https://www.microsoft.com/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx) para los usuarios delegados.  
   
 <a name="BKMK_Compare"></a>   
 ## <a name="comparing-dynamics-365-app-for-outlook-with-dynamics-365-for-outlook"></a>Comparación de Dynamics 365 App for Outlook con Dynamics 365 for Outlook  
@@ -157,7 +163,7 @@ Los usuarios pueden usar [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn
 ### <a name="supported-clients-per-feature"></a>Clientes compatibles por característica  
  Las características admitidas de [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] dependen del cliente que se está ejecutando. En la siguiente tabla se resumen las características que admite cada cliente o configuración de [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] y [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
   
- ![Clientes admitidos para cada característica de Dynamics 365 App for Outlook](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "Clientes admitidos para cada característica de Dynamics 365 App for Outlook")  
+ ![Clientes compatibles con cada característica de Dynamics 365 App for Outlook](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "Clientes compatibles con cada característica de Dynamics 365 App for Outlook")  
   
  (1)  [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] admite [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)], [!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)], [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)], [!INCLUDE[tn_Safari](../includes/tn-safari.md)] 9, [!INCLUDE[tn_Safari](../includes/tn-safari.md)] 10, [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)] y [!INCLUDE[tn_chrome](../includes/tn-chrome.md)].  
   
@@ -226,12 +232,12 @@ Los usuarios pueden usar [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn
   
 #### <a name="to-have-users-install-the-app-themselves"></a>Para hacer que los usuarios instalen la aplicación por sí mismos  
   
-1.  Usuarios hagan clic en el botón **Configuración** ![botón Configuración](media/mp-ua-r16-settings.png "botón Configuración") y hagan clic en **Aplicaciones para Dynamics 365**.  
+1.  Los usuarios hacen clic en el botón **Configuración** ![botón Configuración](media/mp-ua-r16-settings.png "Botón Configuración") y, a continuación, hacen clic en **Aplicaciones para Dynamics 365**.  
   
 2.  En la pantalla **Aplicaciones para Dynamics 365**, en **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]**, los usuarios hacen clic en **Agregar aplicación a [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]**.  
   
 > [!NOTE]
->  Los usuarios también pueden deshabilitar o quitar el complemento por sí mismos, si es necesario. Para obtener más información, consulte el [Manual del usuario de Dynamics 365 App for Outlook"](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+>  Los usuarios también pueden deshabilitar o quitar el complemento por sí mismos, si es necesario. Para obtener más información, consulte el [Manual del usuario de Dynamics 365 App for Outlook"](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
 <a name="BKMK_DeployOnprem"></a>   
 ## <a name="to-deploy-to-dynamics-365-on-premises-users"></a>Para implementar en usuarios de Dynamics 365 local  
@@ -247,13 +253,13 @@ Los usuarios pueden usar [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn
   
 <a name="BKMK_Explore"></a>   
 ## <a name="explore-the-users-guide-and-train-your-users"></a>Explorar el Manual de usuario y entrenar a los usuarios  
- Para aprender a usar [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], [consulta el Manual del usuario de Dynamics 365 App for Outlook](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+ Para aprender a usar [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], [consulta el Manual del usuario de Dynamics 365 App for Outlook](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
- ![Página del Manual del usuario de Dynamics 365 App for Outlook](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Página del Manual del usuario de Dynamics 365 App for Outlook")  
+ ![Página de Manual del usuario de Dynamics 365 App for Outlook](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Página de Manual del usuario de Dynamics 365 App for Outlook")  
   
 ## <a name="see-also"></a>Vea también  
- [Manual del usuario de Dynamics 365 App for Outlook](http://go.microsoft.com/fwlink/p/?LinkID=613099)   
- [Obtenga más detalles sobre clientes admitidos en este blog: Matriz de compatibilidad de la Dynamics 365 App for Outlook](https://blogs.msdn.microsoft.com/crm/2016/12/13/dynamics-365-app-for-outlook-support-matrix/)   
+ [Manual del usuario de Dynamics 365 App for Outlook](https://go.microsoft.com/fwlink/p/?LinkID=613099)   
+ [Obtenga más detalles sobre clientes admitidos en este blog: Matriz de compatibilidad de Dynamics 365 App for Outlook](https://blogs.msdn.microsoft.com/crm/2016/12/13/dynamics-365-app-for-outlook-support-matrix/)   
  [Configuración de la sincronización del lado del servidor de correo electrónico, citas, contactos y tareas](../Topic/Set%20up%20server-side%20synchronization%20of%20email,%20appointments,%20contacts,%20and%20tasks.md)   
  [Adición de usuarios, licencias y roles de seguridad](https://msdn.microsoft.com/23612155-f92d-4871-a109-186419d5c19d)   
  [Adición de características de interoperación a Microsoft Dynamics 365 (online)](../DocSets/CRMIGv9_Admin/Toc/Add%20interoperation%20features%20to%20Microsoft%20Dynamics%20365%20\(online\).md)

@@ -10,7 +10,7 @@ Al habilitar Análisis de relaciones, una característica de Inteligencia integr
   
  **[!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)]**  
   
- [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], un servicio que se ejecuta en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], almacena datos de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], incluida la información de identificación personal de los clientes, para calcular los resultados de la característica Análisis de relaciones. La vista previa de [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] está sujeta a estos [términos de uso complementarios para características de vista previa](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
+ [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], un servicio que se ejecuta en [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], almacena datos de [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], incluida la información de identificación personal de los clientes, para calcular los resultados de la característica Análisis de relaciones. La vista previa de [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] está sujeta a estos [términos de uso complementarios para características de vista previa](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
  [Más información sobre la vista previa de Customer Insights](https://azure.microsoft.com/services/customer-insights/).  
   
