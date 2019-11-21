@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/28/2017
+ms.date: 11/19/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 907ac3cf53709edd5a8b523479ec99816c6eec9c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897831"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261927"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
 Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
@@ -66,11 +66,15 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](../common-data-service/data-platform-intro.md) |&nbsp; |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |
-| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |
-| ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) |&nbsp; |![OneDrive para la Empresa](./media/connections-list/onedrive.png) |[**OneDrive para la Empresa**](connections/cloud-storage-blob-connections.md) |
-| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; |![OneDrive](./media/connections-list/onedrive.png) |[**OneDrive**](connections/cloud-storage-blob-connections.md) |
-| ![Usuarios de Office 365](./media/connections-list/office365.png) |[**Usuarios de Office 365**](connections/connection-office365-users.md) |&nbsp; |![Dropbox](./media/connections-list/dropbox.png) |[**Dropbox**](connections/cloud-storage-blob-connections.md) |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Almacenamiento en nube](./media/connections-list/onedrive.png) | ** de [**almacenamiento en la nube**](connections/cloud-storage-blob-connections.md) |
+| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
+|![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Traductor de Microsoft](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
+|![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Usuarios de Office 365](./media/connections-list/office365.png) |[**Usuarios de Office 365**](connections/connection-office365-users.md) |
+| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
+|![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
+
+\* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
 PowerApps ofrece conectores *estándar* para muchos orígenes de datos de uso común, como los indicados anteriormente. Si PowerApps tiene un conector estándar para el tipo de origen de datos que quiere utilizar, ha de usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).

@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/23/2019
+ms.date: 11/20/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54d8ac3d347c0f60f82fdd73949eb2fd8545519c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 422cbc151b6ee5c4adfd295800bf9747519132cf
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541476"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74262114"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Objeto visual personalizado de PowerApps para Power BI
 
@@ -53,7 +52,7 @@ Veamos los pasos necesarios para usar el objeto visual personalizado de PowerApp
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de PowerApps Studio que se inició comparten una conexión de datos dinámica. Mientras los dos estén abiertos, se pueden filtrar o cambiar los datos del informe para ver los datos actualizados reflejados al instante en la aplicación en PowerApps Studio.
 
@@ -93,9 +92,11 @@ En la tabla siguiente se muestra la compatibilidad del explorador para ver, crea
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
-|Safari|&check;
+|\* Safari|&check;
 |Mozilla Firefox
 |Todos los demás exploradores
+
+\* en Safari, debe habilitar el seguimiento entre sitios (**preferencias** > **privacidad**y desactivar **evitar el seguimiento entre sitios**) para ver el objetos visuales personalizados de PowerApps.
 
 ## <a name="accessibility-support"></a>Compatibilidad con accesibilidad
 
