@@ -1,5 +1,5 @@
 ---
-title: Buscar registros en aplicaciones controladas por modelos | MicrosoftDocs
+title: Search for records in model-driven apps| MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,188 +15,191 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 26903543232025f43f935a403800ed27170e3123
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 18440a61eb4224c751824eaa62386615a8ad6165
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71940922"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74262122"
 ---
-# <a name="search-for-records-in-an-app"></a>Búsqueda de registros en una aplicación
+# <a name="search-for-records-in-an-app"></a>Search for records in an app
 
-Puede buscar registros en varias entidades mediante la búsqueda por relevancia o la búsqueda por categorías en Common Data Service. 
+You can search for records across multiple entities by using Relevance search or Categorized search in Common Data Service. 
 
-- La búsqueda de relevancia ofrece resultados rápidos y completos en varias entidades, en una sola lista, ordenadas por relevancia. Utiliza un servicio de búsqueda dedicado externo a Common Data Service (con tecnología [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) para mejorar el rendimiento de la búsqueda. 
-- La búsqueda por categorías devuelve los resultados de la búsqueda agrupados por tipos de entidad, como cuentas, contactos o clientes potenciales.
+- Relevance search delivers fast and comprehensive results across multiple entities, in a single list, sorted by relevance. It uses a dedicated search service external to Common Data Service (powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) to boost search performance. 
+- Categorized search returns search results grouped by entity types, such as accounts, contacts or leads.
 
-Normalmente, la búsqueda por categorías es la opción de búsqueda predeterminada. Sin embargo, si la organización habilita la búsqueda de relevancia, se convierte en la experiencia de búsqueda predeterminada.  
+Normally, Categorized search is the default search option. However, if Relevance search is enabled by your organization, it becomes the default search experience.  
+  
+## <a name="quick-find-entity-specific-quick-find-or-multi-entity-categorized-search"></a>Quick Find (entity-specific Quick Find or multi-entity Categorized Search) 
 
-Para buscar registros de un solo tipo, puede usar la vista búsqueda rápida de la cuadrícula de la entidad.
-  
-## <a name="normal-quick-find-categorized-search"></a>Búsqueda rápida normal (búsqueda por categorías) 
+To find records of one type only, you can use the Quick Find View in the entity's grid.
 
-Con el uso de categorías, puede buscar registros que comienzan por una palabra específica o usar un carácter comodín.
+With Categorized Search (also called multi-entity quick find), you can search records that begin with a specific word or use a wildcard.
   
-- **Comienza por**: los resultados incluyen registros que comienzan con una palabra específica. Por ejemplo, si desea buscar "Alpine Ski House", escriba **Alp** en el cuadro de búsqueda; Si escribe **Ski**, el registro no se mostrará.  
+- **Begins with**: Results include records that begin with a specific word. For example, if you want to search for “Alpine Ski House,” type **alp** in the search box; if you type **ski**, the record won’t show up.  
   
-- **Carácter comodín**: por ejemplo, * ski o * Ski\*. 
-  
-## <a name="relevance-search"></a>Búsqueda de relevancia
-  
-  La búsqueda de relevancia está disponible además de otras búsquedas Common Data Service en las que ya está familiarizado. Puede seguir usando la búsqueda rápida de una sola entidad en la cuadrícula de entidades o la búsqueda rápida de varias entidades (denominada búsqueda por categorías, si tiene habilitada la búsqueda de relevancia). Para obtener resultados más detallados y más rápidos, se recomienda usar la búsqueda de relevancia.  
+- **Wildcard**: For example, *ski or *ski\*. 
 
- La búsqueda de relevancia ofrece las siguientes mejoras y ventajas:  
+  > [!NOTE]
+  >  Using a wildcard at the beginning of your Quick Find (single or multi-entity) search query may result in slower performance.
   
-- Mejora el rendimiento con indexación externa y [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] tecnología de búsqueda.  
+## <a name="relevance-search"></a>Relevance search
   
-- Busca coincidencias con cualquier palabra del término de búsqueda en cualquier campo de la entidad. Las coincidencias pueden incluir palabras con inflexión como **Stream**, **streaming**o **streaming**.  
-  
-- Devuelve los resultados de todas las entidades que se pueden buscar en una única lista ordenada por relevancia, en función de factores como el número de palabras coincidentes o su proximidad entre sí en el texto.  
-  
-- Resalta las coincidencias en la lista de resultados.  
+  Relevance Search is available in addition to other Common Data Service searches you are already familiar with. You can continue using single-entity Quick Find on the entity grid or Multi-Entity Quick Find (called Categorized Search, if you have Relevance Search enabled). For more comprehensive and faster results, we recommend using Relevance Search.  
 
-- Encontrará los resultados de la búsqueda de texto en un documento que está almacenado en Common Data Service, incluido texto en notas, datos adjuntos de correo electrónico o citas. Los siguientes formatos de archivo son compatibles con la búsqueda: PDF, Microsoft Office documentos, HTML, XML, ZIP, EML, texto sin formato y JSON.  
+ Relevance Search brings the following enhancements and benefits:  
   
-- Puede buscar los registros que se comparten con usted y los registros que posee.  
+- Improves performance with external indexing and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] search technology.  
+  
+- Finds matches to any word in the search term in any field in the entity. Matches can include inflectional words like **stream**, **streaming**, or **streamed**.  
+  
+- Returns results from all searchable entities in a single list sorted by relevance, based on factors like number of words matched or their proximity to each other in the text.  
+  
+- Highlights matches in the result list.  
+
+- You'll find search results for text in a document that is stored in Common Data Service, including text in notes, email attachments, or appointments. The following file formats are supported for search: PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON.  
+  
+- You can search for records that are shared with you and records that you own.  
   
   > [!NOTE]
-  >  No se admiten los modelos de seguridad jerárquica.  Incluso si ve una fila en Common Data Service porque tiene acceso a ella a través de la seguridad jerárquica, no verá el resultado en la búsqueda de relevancia.  
+  >  Hierarchical security models aren't supported.  Even if you see a row in Common Data Service because you have access to it through hierarchical security, you won't see the result in Relevance Search.  
   
-- También puede buscar conjuntos de opciones y búsquedas. Por ejemplo, supongamos que desea buscar una cuenta de tienda que tenga **farmacéuticos** en el nombre. Al buscar una venta al por **menor**, verá el resultado porque hay una coincidencia con el campo del sector, que es un conjunto de opciones de búsqueda.  
+- You can also search for option sets  and lookups. For example, let's say you want to find a retail store account that has **Pharmaceuticals** in the name. When you search for **Pharmaceutical Retail**, you'll find the result because there's a match to the Industry field, which is a searchable option set.  
   
-  Dado que los resultados pueden incluir una combinación de entidades, puede restringir los resultados de la búsqueda a una entidad específica seleccionando una entidad en la lista desplegable **filtrar con** . Al filtrar por un tipo de registro específico, puede incluir actividades y notas relacionadas con el registro seleccionado en los resultados de la búsqueda. Para ello, active la casilla **buscar actividades y notas para los registros seleccionados** a la derecha de la lista desplegable **filtrar con** . La casilla se activa después de seleccionar un registro en la lista desplegable **filtrar con** . se desactiva si no seleccionó una entidad en la lista **filtrar con** . Las actividades y las notas se devuelven como resultados de nivel superior.
+  Because your results might include a mix of entities, you can narrow your search results to a specific entity by selecting an entity in the **Filter with** drop-down list. When you filter on a specific record type, you can include activities and notes related to the selected record in your search results. To do that, select the **Search activities and notes for selected records** check box to the right of the **Filter with** drop-down list. The check box is selected after you select a record in the **Filter with** drop-down list; it is cleared if you didn't select an entity in the **Filter with** list. The activities and notes are returned as top-level results.
   
   > [!NOTE]
-  > - La búsqueda de relevancia está deshabilitada de forma predeterminada. El administrador debe habilitarla para la organización. Después de habilitar la búsqueda de relevancia, es posible que tenga que esperar hasta una hora o más, en función del tamaño de la organización, antes de empezar a ver los resultados de la búsqueda de relevancia para las aplicaciones. Los cambios más pequeños en los datos indizados pueden tardar hasta 15 minutos en aparecer en el sistema.
-  > - La habilitación de la búsqueda de relevancia permite a todos los usuarios de la organización utilizarla.  
-  > - La búsqueda de relevancia está basada en texto y solo puede buscar en campos de tipo una línea de texto, varias líneas de texto, conjuntos de opciones o búsquedas. No admite la búsqueda en campos de tipos de datos numéricos o de fecha. 
+  > - Relevance Search is disabled by default. Your administrator needs to enable it for the organization. After Relevance Search is enabled, you might have to wait up to an hour or more, depending on the size of your organization, before you start seeing Relevance Search results for your apps. Smaller changes in indexed data can take up to 15 minutes to show up in your system.
+  > - Enabling Relevance Search allows all users in the organization to use it.  
+  > - Relevance search is text-based, and can search only on fields of type Single Line of Text, Multiple Lines of Text, Option Sets, or Lookups. It doesn't support searching in fields of Numeric or Date data type. 
   
- Aunque la búsqueda de relevancia encuentra coincidencias con cualquier palabra del término de búsqueda en cualquier campo de una entidad, en la búsqueda rápida&mdash;incluso con la búsqueda de texto completo habilitada&mdash;todas las palabras del término de búsqueda se deben encontrar en un campo.  
+ Although Relevance Search finds matches to any word in the search term in any field in an entity, in Quick Find&mdash;even with full-text search enabled&mdash;all words from the search term must be found in one field.  
   
- En la búsqueda de relevancia, cuanto mejor sea la coincidencia, más alta aparecerá en los resultados. Una coincidencia tiene una mayor relevancia si se encuentran más palabras del término de búsqueda en estrecha proximidad entre sí. Cuanto menor sea la cantidad de texto donde se encuentren las palabras de búsqueda, mayor será la relevancia. Por ejemplo, si encuentra las palabras de búsqueda en el nombre y la dirección de la empresa, podría ser una mejor coincidencia que las mismas palabras que se encuentran en un artículo grande, separadas entre sí. Dado que los resultados se devuelven en una sola lista, puede ver una combinación de registros mostrados uno después de otro, como cuentas, oportunidades, clientes potenciales, etc. Se resaltan las palabras coincidentes de la lista.  
+ In Relevance Search, the better the match, the higher it appears in the results. A match has a higher relevancy if more words from the search term are found in close proximity to each other. The smaller the amount of text where the search words are found, the higher the relevancy. For example, if you find the search words in a company name and address, it might be a better match than the same words found in a large article, far apart from each other. Because the results are returned in a single list, you can see a mix of records displayed one after another, such as accounts, opportunities, leads, and so on. The matched words in the list are highlighted.  
   
- Use la sintaxis en el término de búsqueda para obtener los resultados que desee. Por ejemplo, escriba **Car Silver 2-Door** para incluir coincidencias de cualquier palabra en el término de búsqueda en los resultados de la búsqueda. Escriba **Car + Silver +2-Door** para buscar solo coincidencias que incluyan las tres palabras. Escriba **Car&#124;Silver&#124;2-Door** para obtener resultados que contengan **coches** o **Silver** o **de 2 puertas**, o las tres palabras. Más información sobre la sintaxis que puede usar en las consultas de búsqueda: [Sintaxis de consulta simple en Azure Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
+ Use syntax in your search term to get the results you want. For example, type **car silver 2-door** to include matches for any word in the search term in the search results. Type **car+silver+2-door** to find only matches that include all three words. Type **car&#124;silver&#124;2-door** to  get results that contain **car** or **silver** or **2-door**, or all three words. More information about syntax you can use in your search queries: [Simple query syntax in Azure Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
 
 
 > [!NOTE]
-> Verá los resaltados de aciertos cuando el término de búsqueda coincide con un término de la aplicación. Los resaltados de aciertos aparecen como texto en negrita y en cursiva en los resultados de la búsqueda. A menudo se devuelven como parte del valor completo en un campo, ya que solo se resaltan los términos coincidentes. 
+> You'll see hit highlights when your search term matches a term in your app. The hit highlights appear as bold and italicized text in your search results. These are often returned as a portion of the full value in a field because only the matched terms are highlighted. 
   
   
 <a name=" #BKMK_DefaultOption "></a>
-## <a name="switch-between-relevance-and-categorized-search"></a>Cambiar entre la búsqueda por relevancia y por categorías
+## <a name="switch-between-relevance-and-categorized-search"></a>Switch between Relevance and Categorized search
 
-Si su organización ha activado ambas opciones de búsqueda (relevancia y búsqueda por categorías), puede cambiar entre las dos.
+If your organization has turned on both search options (Relevance and Categorized search), then you can switch between the two.
 
-1. Para cambiar entre los tipos de búsqueda, en la barra de navegación, seleccione el botón **Buscar** .
+1. To switch between search types, on the navigation bar, select the **Search** button.
 
-2. A la izquierda, seleccione el menú desplegable para cambiar entre la búsqueda por **relevancia** o la **búsqueda por categorías**.
+2. On the left, select the drop-down menu to switch between **Relevance Search** or **Categorized Search**.
 
    > [!div class="mx-imgBorder"]
-   > ![Cambiar entre la búsqueda por relevancia y por categorías](media/switch-search.png "Cambiar entre la búsqueda por relevancia y por categorías") 
+   > ![Switch between Relevance and Categorized search](media/switch-search.png "Switch between Relevance and Categorized search") 
     
-### <a name="set-a-default-experience"></a>Establecer una experiencia predeterminada
+### <a name="set-a-default-experience"></a>Set a default experience
 
-Si su organización ha activado ambas opciones de búsqueda, puede seleccionar una experiencia de búsqueda predeterminada en su configuración personal.
+If your organization has turned on both search options then you can select a default search experience in your personal settings.
 
-1. En la esquina superior derecha de la página, seleccione **configuración** y, a continuación, seleccione **configuración de personalización**.  
+1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar experiencia de búsqueda predeterminada](media/relevance-search-personal-settings.png "Seleccionar experiencia de búsqueda predeterminada")  
+   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
 
-2. En la pestaña **General** , en la sección **seleccionar la experiencia de búsqueda predeterminada** , para la **experiencia de búsqueda predeterminada**, seleccione su experiencia predeterminada. 
+2. On the **General** tab, in the **Select the default search experience** section, for the **Default Search Experience**, select your default experience. 
 
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar experiencia de búsqueda predeterminada](media/default.png "Seleccionar experiencia de búsqueda predeterminada")  
+   > ![Select default search experience](media/default.png "Select default search experience")  
  
 
 
-## <a name="start-a-search"></a>Iniciar una búsqueda 
+## <a name="start-a-search"></a>Start a search 
  
-1.  En la barra de navegación superior, seleccione el botón **Buscar** .  
+1.  From the top nav bar, select the **Search** button.  
   
-2.  Escriba las palabras de búsqueda en el cuadro de búsqueda y, a continuación, seleccione el botón **Buscar** .   
+2.  Type your search words in the search box and then select **Search** button.   
 
     > [!div class="mx-imgBorder"]
-    > ![Opción de búsqueda](media/search-option.png "Opción de búsqueda")  
+    > ![Search option](media/search-option.png "Search option")  
   
-## <a name="filter-categorized-search-results"></a>Filtrar los resultados de la búsqueda por categorías 
+## <a name="filter-categorized-search-results"></a>Filter Categorized Search results 
   
--   Para filtrar los resultados por un tipo de registro, en la pantalla de búsqueda, elija un tipo de registro en el cuadro desplegable **filtrar con:** .  
+-   To filter results by one record type, on the search screen, choose a record type from the **Filter with:** drop-down box.  
   
--   Para buscar en todos los tipos de registro, elija **ninguno** en el cuadro desplegable **filtrar con:** .  
+-   To search against all record types, choose **None** in the **Filter with:** drop-down box.  
 
     > [!div class="mx-imgBorder"]
-    > ![Búsqueda de filtro](media/filter-search.png "Búsqueda de filtro")  
+    > ![Filter Search](media/filter-search.png "Filter Search")  
 
-## <a name="filter-records-with-facets-works-with-relevance-search"></a>Filtrar registros con aspectos (funciona con la búsqueda de relevancia)  
- Con Common Data Service, ahora puede refinar los resultados de la búsqueda mediante el uso de aspectos y filtros. Las caras están disponibles en el panel izquierdo. Inmediatamente después de realizar una búsqueda, están disponibles las siguientes caras globales para cuatro campos comunes:  
+## <a name="filter-records-with-facets-works-with-relevance-search"></a>Filter records with facets (works with Relevance Search)  
+ With Common Data Service, you can now refine your search results by using facets and filters. Facets are available in the left pane. Immediately after you perform a search, the following global facets are available for four common fields:  
   
--   Tipo de registro  
+-   Record Type  
   
 -   Owner  
   
--   Creado el  
+-   Created On  
   
--   Modificado el  
+-   Modified On  
   
-### <a name="record-type-facets"></a>Aspectos del tipo de registro  
- Para restringir los resultados de la búsqueda a una entidad específica, seleccione la entidad en la sección **tipo de registro** .  
+### <a name="record-type-facets"></a>Record Type facets  
+ To narrow your search results to a specific entity, select the entity under the **Record Type** section.  
  
   > [!div class="mx-imgBorder"]
-  > ![Faceta de tipo de registro para restringir los resultados de la búsqueda](media/relevance-search-record-type-facet.png "Faceta de tipo de registro que se usa para restringir los resultados de búsqueda")  
+  > ![Record Type facet to narrow the search results](media/relevance-search-record-type-facet.png "Record Type facet used to narrow search results")  
   
- Al filtrar por un tipo de registro específico, puede incluir actividades y notas relacionadas con el registro seleccionado en los resultados de la búsqueda. Para ello, active la casilla **notas relacionadas & actividades** . Las actividades y las notas aparecerán en los resultados de nivel superior.  
+ When you filter on a specific record type, you can include activities and notes that are related to the selected record in your search results. To do that, select the **Related Notes & Activities** check box. The activities and notes will appear in top-level results.  
   
  
   > [!div class="mx-imgBorder"]
-  > ![Incluir notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda](media/relevance-search-record-type-facet-related-notes-activities.png "Incluir notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda")  
+  > ![Include notes and activities related to a record type in the search results](media/relevance-search-record-type-facet-related-notes-activities.png "Include notes and activities related to a record type in the search results")  
   
- Los resultados de la búsqueda que se encuentran en datos adjuntos de correo electrónico o entidades de cita se muestran en los resultados de búsqueda bajo su registro primario, ya sea correo electrónico o cita.  
+ Search results that are found in email attachments or appointment entities  are shown in the search results under their parent record, either Email or Appointment.  
   
- Al refinar por tipo de registro, el ámbito de la faceta cambia a la entidad seleccionada y se muestran hasta cuatro facetas que son específicas de la entidad. Por ejemplo, si selecciona la entidad cuenta, verá la faceta **contacto principal** además de las facetas globales.  
+ When you refine by record type, the facet scope switches to the selected entity, and up to four facets that are specific to the entity are shown. For example, if you select the Account entity, you'll see the **Primary Contact** facet in addition to the global facets.  
   
- En el cuadro de diálogo **establecer opciones personales** , también puede elegir otras caras de las que el administrador del sistema o el cliente han puesto a su disposición. La configuración de usuario invalida la configuración predeterminada. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [configurar las caras y los filtros de la búsqueda](#BKMK_ConfigureFacets)  
+ In the **Set Personal Options** dialog box, you can also choose other facets from the ones that your system administrator or customer has made available to you. The user setting overrides the default setting. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure facets and filters for the search](#BKMK_ConfigureFacets)  
   
-### <a name="text-based-facets"></a>Aspectos basados en texto  
- Todas las búsquedas, los conjuntos de opciones y los tipos de registro son aspectos basados en texto. Por ejemplo, el propietario de la faceta basada en texto se compone de una lista de valores de campo y sus recuentos correspondientes.  
+### <a name="text-based-facets"></a>Text-based facets  
+ All lookups, option sets, and record types are text-based facets. For example, the text-based facet Owner consists of a list of field values and their corresponding counts.  
  
   > [!div class="mx-imgBorder"]
-  > ![Faceta basada en texto en la búsqueda de relevancia](media/relevance-search-text-based-facets.png "Faceta basada en texto en la búsqueda de relevancia")  
+  > ![Text-based facet in Relevance Search](media/relevance-search-text-based-facets.png "Text-based facet in Relevance Search")  
   
- Los filtros de estas caras se ordenan en orden descendente por recuento. De forma predeterminada, se muestran los cuatro valores principales de faceta. Cuando haya más de cuatro valores de faceta, verá un vínculo **Mostrar más** que puede seleccionar para expandir la lista y ver hasta 15 valores de faceta superior. Seleccione cada valor para filtrar los resultados de la búsqueda y mostrar solo los registros en los que el campo tenga el valor seleccionado. Por ejemplo, si selecciona **Kim Alberti**, los resultados de la búsqueda mostrarán todos los registros en los que el propietario es Kim Alberti. Al seleccionar un valor de faceta búsqueda o conjunto de opciones, los resultados de la búsqueda se filtran para incluir solo los registros con el valor especificado.  
+ Filters in these facets are sorted in descending order by count. The top four facet values are displayed by default. When there are more than four facet values, you'll see a **SHOW MORE** link that you can select to expand the list and see up to 15 top facet values. Select each value to filter the search results to show only records where the field has the value you've selected. For example, if you select **Kim Abercrombie**, the search results will show all records where the owner is Kim Abercrombie. When you select a Lookup or Option Set facet value, search results are filtered to only include records with the value that you specified.  
   
-### <a name="date-and-time-facets"></a>Aspectos de fecha y hora  
- Al igual que otras caras, puede usar las caras de fecha y hora para filtrar y ver los resultados de la búsqueda para un momento concreto. Para seleccionar un intervalo de valores, arrastre el control deslizante o seleccione una de las columnas verticales.  
+### <a name="date-and-time-facets"></a>Date and time facets  
+ Like other facets, you can use date and time facets to filter and see search results for a specific time. To select a range of values, drag the slider or select one of the vertical columns.  
  
   > [!div class="mx-imgBorder"]
-  > ![Aspectos de fecha y hora para la búsqueda de relevancia](media/relevance-search-date-time-facets.png "Aspectos de fecha y hora para la búsqueda de relevancia")  
+  > ![Date and time facets for Relevance Search](media/relevance-search-date-time-facets.png "Date and time facets for Relevance Search")  
   
 <a name="BKMK_ConfigureFacets"></a>   
-### <a name="configure-facets-and-filters-for-the-search"></a>Configurar las caras y los filtros de la búsqueda  
- Las caras y los filtros permiten profundizar y explorar los resultados de la búsqueda actual sin tener que refinar el término de búsqueda repetidamente. Configure las caras y los filtros que desee en el cuadro de diálogo **establecer opciones personales** .  
+### <a name="configure-facets-and-filters-for-the-search"></a>Configure facets and filters for the search  
+ Facets and filters let you drill into and explore the results of your current search without having to repeatedly refine your search term. Configure the facets and filters you want in the **Set Personal Options** dialog box.  
   
 > [!NOTE]
->  El personalizador del sistema puede establecer la experiencia predeterminada para todas las entidades, pero puede configurar sus propias caras y filtros.  
+>  The system customizer can set the default experience for all entities, but you can configure your own facets and filters.  
   
-#### <a name="to-configure-facets-for-yourself"></a>Para configurar las caras para sí mismo  
+#### <a name="to-configure-facets-for-yourself"></a>To configure facets for yourself  
   
-1. En la esquina superior derecha de la página, seleccione **configuración** y, a continuación, seleccione **configuración de personalización**.  
+1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar experiencia de búsqueda predeterminada](media/relevance-search-personal-settings.png "Seleccionar experiencia de búsqueda predeterminada")  
+   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
   
-2. En la pestaña **General** , en la sección **seleccionar la experiencia de búsqueda predeterminada** , en el campo **aspectos y filtros** , seleccione **configurar**.  
+2. On the **General** tab, in the **Select the default search experience** section, for the **Facets and Filters** field, select **Configure**.  
   
-3. En el cuadro de diálogo **configurar aspectos y filtros** , especifique las caras que le gustaría ver para una entidad. El administrador del sistema o el personalizador pueden establecer una experiencia predeterminada para todas las entidades, pero aquí puede establecer las suyas propias.  
+3. In the **Configure Facets and Filters** dialog box, specify the facets you'd like to see for an entity. Your system administrator or customizer can set a default experience for all entities, but you can set your own here.  
   
-   - En la lista desplegable **seleccionar entidad** , seleccione una entidad para la que desee configurar las caras. Esta lista desplegable contiene solo las entidades que están habilitadas para la búsqueda de relevancia.  
+   - In the **Select Entity** drop-down list, select an entity you want to configure facets for. This drop-down list contains only the entities that are enabled for Relevance Search.  
   
-   - En la entidad seleccionada, seleccione hasta cuatro campos de faceta. De forma predeterminada, los cuatro primeros campos con facetas de la vista **búsqueda rápida** de la entidad seleccionada se seleccionan en la lista. En cualquier momento, solo puede tener cuatro campos seleccionados como aspectos.  
+   - For the selected entity, select up to four facet fields. By default, the first four facetable fields in the **Quick Find** view for the selected entity are selected in the list. At any time, you can only have four fields selected as facets.  
   
-     Puede actualizar varias entidades al mismo tiempo. Al seleccionar **Aceptar**, se guardan los cambios de todas las entidades que ha configurado. Para revertir al comportamiento predeterminado de una entidad que configuró anteriormente, seleccione **predeterminado**.  
+     You can update multiple entities at one time. When you select **OK**, the changes for all entities that you've configured are saved. To revert to the default behavior for an entity that you previously configured, select **Default**.  
   
    > [!NOTE]
-   > - Si un Personalizador del sistema elimina un campo o hace que ya no se puede buscar y ha guardado una faceta para ese campo, ya no aparecerá como una faceta.  
-   >   -   Solo verá los campos que existen en la solución predeterminada y que están configurados como que el personalizador del sistema puede buscar.  
+   > - If a system customizer deletes a field or makes it no longer searchable, and you've saved a facet for that field, it will no longer show up as a facet.  
+   >   -   You'll only see the fields that exist in the default solution and that are configured as searchable by your system customizer.  
   
  
