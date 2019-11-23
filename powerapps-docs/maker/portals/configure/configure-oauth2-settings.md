@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542819"
@@ -31,7 +31,7 @@ Los proveedores admitidos son:
 
 ## <a name="create-oauth-applications"></a>Creación de aplicaciones de OAuth
 
-En general, si un proveedor de OAuth usa la configuración de la aplicación que requiere un valor de URI de redireccionamiento, especifique <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [proveedor\] en función de cómo el proveedor realice la validación del URI de redirección (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto con el nombre de dominio). Sustituya el nombre del proveedor en lugar de \[proveedor\] en el URI de redirección.
+En general, si un proveedor de OAuth usa la configuración de la aplicación que requiere un valor de URI de redireccionamiento, especifique <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[proveedor\] en función de cómo el proveedor realice la validación del URI de redirección (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto con el nombre de dominio). Sustituya el nombre del proveedor en lugar de \[proveedor\] en el URI de redirección.
 
 ### <a name="google"></a>Google
 

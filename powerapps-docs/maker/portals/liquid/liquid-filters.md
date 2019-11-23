@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73543231"
@@ -131,7 +131,7 @@ Seleccione todos los objetos de una matriz en los que un atributo determinado no
 Jack Robinson
 ```
 
-### <a name="first"></a>Lugar
+### <a name="first"></a>lugar
 
 Devuelve el primer elemento de una matriz.
 
@@ -197,7 +197,7 @@ New York:
 Jack Robinson
 ```
 
-### <a name="join"></a>Vuelve
+### <a name="join"></a>vuelve
 
 Combina los elementos de una matriz con el carácter que se pasa como parámetro. El resultado es una sola cadena.
 
@@ -321,7 +321,7 @@ John, Pete, Hannah
 Hannah, John, Pete
 ```
 
-### <a name="size"></a>Ajusta
+### <a name="size"></a>ajusta
 
 Devuelve el número de elementos de una matriz.
 
@@ -407,7 +407,7 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="where"></a>Mientras
+### <a name="where"></a>mientras
 
 Seleccione todos los objetos de una matriz donde un atributo determinado tiene un valor determinado.
 

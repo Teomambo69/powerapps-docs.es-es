@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992566"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Funciones And, Or y Not en PowerApps
 
@@ -45,8 +44,8 @@ Estas funciones trabajan con valores lógicos. No se pueden pasar un número o u
 
 ## <a name="syntax"></a>Sintaxis
 
-**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : requerido.  Fórmulas lógicas para evaluar y con las que operar.
@@ -63,8 +62,8 @@ En los ejemplos de esta sección se usan estas variables globales:
 
 Para crear estas variables globales en una aplicación, inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula:
 
-```powerapps-comma
-Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
 Seleccione el botón (haciendo clic en él mientras mantiene presionada la tecla Alt) y, a continuación, establezca la propiedad **texto** de un control [**etiqueta**](../controls/control-text-box.md) en una fórmula de la primera columna de la tabla siguiente.
@@ -80,6 +79,6 @@ Seleccione el botón (haciendo clic en él mientras mantiene presionada la tecla
 | **No (a)** | Comprueba el valor de **un**. El argumento es *false*, por lo que la función devuelve el resultado opuesto. | *true* |
 | **No es un** | Igual que el ejemplo anterior, utilizando Visual Basic notación. | *true* |
 | **! un** | Igual que en el ejemplo anterior, con la notación JavaScript. | *true* |
-| **Len (&nbsp;s @ no__t-2) &nbsp; @ no__t-4 @ no__t-520 y @ no__t-6Not @ no__t-7IsBlank (&nbsp;S @ no__t-9)** | Comprueba si la longitud de **s** es menor que 20 y si no es un valor **en blanco** . La longitud es menor que 20 y el valor no está en blanco. Por lo tanto, el resultado es *true*. | *true* |
-| **Or (&nbsp;Len (&nbsp;s @ no__t-3) &nbsp; @ no__t-5 @ no__t-610, x @ no__t-7 @ no__t-8 @ no__t-9100, y @ no__t-10 @ no__t-11 @ no__t-12100 @ no__t-13)** | Comprueba si la longitud de **s** es menor que 10, si **x** es menor que 100 y si **y** es menor que 100. El primer y el tercer argumento son false, pero el segundo es true. Por lo tanto, la función devuelve *true*. | *true* |
-| **No esblanco (&nbsp;s @ no__t-2)** | Comprueba si **s** está *en blanco*, lo que devuelve *false*. **No** devuelve el opuesto de este resultado, que es *true*. | *true* |
+| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 y&nbsp;no&nbsp;esblanco (&nbsp;s&nbsp;)** | Comprueba si la longitud de **s** es menor que 20 y si no es un valor **en blanco** . La longitud es menor que 20 y el valor no está en blanco. Por lo tanto, el resultado es *true*. | *true* |
+| **Or (&nbsp;Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;10, x&nbsp;<&nbsp;100, y&nbsp;<&nbsp;100&nbsp;)** | Comprueba si la longitud de **s** es menor que 10, si **x** es menor que 100 y si **y** es menor que 100. El primer y el tercer argumento son false, pero el segundo es true. Por lo tanto, la función devuelve *true*. | *true* |
+| **No esblanco (&nbsp;s&nbsp;)** | Comprueba si **s** está *en blanco*, lo que devuelve *false*. **No** devuelve el opuesto de este resultado, que es *true*. | *true* |

@@ -44,14 +44,14 @@ En este procedimiento, reemplazará un control **[de entrada de texto](controls/
 1. En la lista de campos, seleccione la flecha hacia abajo para **número de empleados**y, a continuación, abra la lista en **tipo de control**.
 
     > [!div class="mx-imgBorder"]
-    > ![Drop: lista de opciones de una tarjeta numérica @ no__t-1
+    > ![lista desplegable de opciones para una tarjeta de número](./media/customize-card/card-selector.png)
 
 1. Seleccione **Editar control deslizante**.
 
     La pantalla refleja el cambio.
 
     > [!div class="mx-imgBorder"]
-    > ![EditForm1 con el control deslizante @ no__t-1
+    > ![EditForm1 con el control deslizante](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>Desbloquear y personalizar una tarjeta
 
@@ -60,22 +60,22 @@ En este procedimiento, desbloqueará una tarjeta y actualizará la propiedad **M
 1. En **EditForm1**, seleccione el control **deslizante** en la tarjeta **número de empleados** .
 
     > [!div class="mx-imgBorder"]
-    > ![Select el control deslizante @ no__t-1
+    > ![seleccionar el control deslizante](./media/customize-card/select-slider.png)
 
 1. En la pestaña **Opciones avanzadas** del panel derecho, seleccione el icono de candado para desbloquear la tarjeta.
 
     > [!div class="mx-imgBorder"]
-    > @no__t-tarjeta 0Unlock @ no__t-1
+    > ![desbloquear la tarjeta](./media/customize-card/lock-icon.png)
 
 1. Establezca la propiedad **Max** del control **deslizante** en 10.000.
 
     > [!div class="mx-imgBorder"]
-    > @no__t propiedad 0Max en la pestaña Advanced @ no__t-1
+    > ![propiedad Max en la pestaña avanzadas](./media/customize-card/max-property.png)
 
     El control **deslizante** muestra un valor más preciso.
 
     > [!div class="mx-imgBorder"]
-    > intervalo de @no__t 0Slider: 0-10000 @ no__t-0
+    > ![intervalo del control deslizante: 0-10000](./media/customize-card/final-slider.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

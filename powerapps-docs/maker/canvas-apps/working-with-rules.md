@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/24/2019
 ms.locfileid: "72822097"
 ---
-# <a name="create-a-rule-in-canvas-apps"></a>Creación de una regla en las aplicaciones de Canvas
+# <a name="create-a-rule-in-canvas-apps"></a>Creación de una regla en aplicaciones de lienzo
 Las reglas se crean para modificar automáticamente una aplicación en función de los criterios que se especifiquen. Por ejemplo, mostrar los elementos de cada lista en rojo, amarillo o verde según su estado, o bien mostrar un botón de aprobación sólo a determinados usuarios (por ejemplo, los administradores). Las reglas se pueden agregar a varios controles. En este tema, agregará una regla para cambiar el color del texto de un control **Etiqueta** si el valor de un control **Control deslizante** es mayor que 70.
 
 > [!IMPORTANT]

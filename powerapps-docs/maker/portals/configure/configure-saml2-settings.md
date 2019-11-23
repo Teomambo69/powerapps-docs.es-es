@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542738"
@@ -64,7 +64,7 @@ Mediante la herramienta de administración de [!include[](../../../includes/pn-a
    > - Índice: n/a (0)                                              
    > - URL: **https://portal.contoso.com/signin-saml2**
 
-8. Configurar identidades: especifique https://portal.contoso.com/ , seleccione **Agregar**y, a continuación, seleccione **siguiente**.
+8. Configurar identidades: especifique https://portal.contoso.com/, seleccione **Agregar**y, a continuación, seleccione **siguiente**.
    Si es aplicable, puede agregar más identidades para cada portal de usuarios de confianza adicional. Los usuarios podrán autenticarse en cualquiera de las identidades disponibles o en todas ellas.
 9. Elegir reglas de autorización de emisión: seleccione **permitir que todos los usuarios accedan a este usuario de confianza**y, después, seleccione **siguiente**.
 10. Listo para agregar confianza: seleccione **siguiente**.
@@ -241,7 +241,7 @@ Esto corresponde al valor de configuración del sitio de **MetadataAddress** .
 
 ## <a name="shibboleth-identity-provider-3"></a>Proveedor de identidades de Shibboleth 3
 
-Use las siguientes directrices para configurar correctamente el [proveedor de identidades de Shibboleth](https://wiki.shibboleth.net/confluence/display/IDP30/Home) como un servicio IDP. A continuación se da por supuesto que el IdP se hospeda en el https://idp.contoso.com de dominio.  
+Use las siguientes directrices para configurar correctamente el [proveedor de identidades de Shibboleth](https://wiki.shibboleth.net/confluence/display/IDP30/Home) como un servicio IDP. A continuación se da por supuesto que el IdP se hospeda en el https://idp.contoso.comde dominio.  
 
 La dirección URL de metadatos de Federación es https://idp.contoso.com/idp/shibboleth
 
