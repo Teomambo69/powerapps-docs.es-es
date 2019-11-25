@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 07/11/2019
 ms.author: prkoduku
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 11e38cf505a2fa6bb597c24fbf03bdbe1ddc9de1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749426"
 ---
-
 # <a name="the-tenant-page"></a>La página de inquilino
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

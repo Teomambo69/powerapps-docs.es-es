@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
 author: Mattp123
 tags:
-  - Links to topic not migrated
+- Links to topic not migrated
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704587"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Crear y diseñar formularios de aplicaciones controladas por modelos 
 
@@ -61,7 +67,7 @@ Un formulario puede no estar disponible porque no se ha agregado a la aplicació
 3. En la pestaña **Componentes** compruebe los formularios principales que están incluidos en la aplicación. Compruebe que el formulario que desea mostrar esté comprobado. De lo contrario, selecciónelo, guárdelo y, a continuación publique la aplicación.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/forms-included-in-app.png "Formularios incluidos con la aplicación")
+   > ![](media/forms-included-in-app.png "Forms included with app")
    
 ### <a name="why-isnt-my-form-displayed-as-the-default-form-in-the-app"></a>¿Por qué mi formulario no se muestra como formulario predeterminado en la aplicación?
 Un formulario se puede establecer como el formulario predeterminado a través de la configuración de orden de los formularios o cuando un usuario establece el formulario predeterminado como valor de personalización.
@@ -69,12 +75,12 @@ Un formulario se puede establecer como el formulario predeterminado a través de
 2. En la barra de herramientas seleccione **Propiedades del formulario** > **Conjunto de formularios principal**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-toolbar.png "Comando de la barra de herramientas Orden de los formularios")
+   > ![](media/form-order-toolbar.png "Form Order toolbar command")
    
 3. Se muestra el orden de los formularios. Seleccione el formulario y utilice las flechas arriba y abajo para mover el formulario dentro del orden de los formularios. El formulario en la parte superior de la lista es el formulario predeterminado. 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-dialog.png "Diálogo Orden de formularios")
+   > ![](media/form-order-dialog.png "Form order dialog")
    
 4. Seleccione **Aceptar** para guardar los cambios del orden de formularios.
 5. En la barra de herramientas del diseñador de formularios, seleccione **Publicar** para hacer que el orden de los formularios esté disponible en aplicaciones.
@@ -83,7 +89,7 @@ Un formulario se puede establecer como el formulario predeterminado a través de
 Tenga en cuenta que, cuando un usuario de la aplicación cambia la selección de formularios en el desplegable del selector de formularios, dicho formulario se vuelve el formulario predeterminado para el usuario. Esta personalización invalida el formulario predeterminado especificado para la entidad en la aplicación.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/change-form-user-setting.png "Valor de usuario para cambiar el formulario predeterminado")
+   > ![](media/change-form-user-setting.png "User setting to change default form")
    
 ### <a name="related-topics"></a>Temas relacionados  
     

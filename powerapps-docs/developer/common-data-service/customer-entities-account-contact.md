@@ -1,6 +1,6 @@
 ---
-title: 'Entidades de cliente (cuenta, contacto) (Common Data Service) | Microsoft Docs'
-description: 'Las entidades Account y Contact en Dynamics 365 son esenciales para identificar y administrar clientes, vender productos y servicios, y proporcionar un mejor servicio a los clientes. Se usa una entidad de dirección de cliente para almacenar la dirección y la información de envío para un cliente.'
+title: Entidades de cliente (cuenta, contacto) (Common Data Service) | Microsoft Docs
+description: Las entidades Account y Contact en Dynamics 365 son esenciales para identificar y administrar clientes, vender productos y servicios, y proporcionar un mejor servicio a los clientes. Se usa una entidad de dirección de cliente para almacenar la dirección y la información de envío para un cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749572"
 ---
 # <a name="customer-entities-account-contact"></a>Entidades de cliente (cuenta, contacto)
 
@@ -30,7 +36,7 @@ Las entidades *cuenta* y *contacto* en Common Data Service son esenciales para i
   
 ## <a name="account-entity"></a>Entidad de cuenta
  
-La entidad de cuenta es una de las entidades de las aplicaciones Common Data Service a la que más se asocian otras entidades. En Common Data Service, una cuenta representa una compañía con la que la unidad de negocio tiene una relación. La información incluida en una cuenta es toda la información de contacto, información de la compañía, categoría, tipo de relación e información de dirección pertinentes. Otra información pertinente incluye los siguientes elementos:  
+La entidad de cuenta es una de las entidades de Common Data Service a la que más se asocian otras entidades. En Common Data Service, una cuenta representa una compañía con la que la unidad de negocio tiene una relación. La información incluida en una cuenta es toda la información de contacto, información de la compañía, categoría, tipo de relación e información de dirección pertinentes. Otra información pertinente incluye los siguientes elementos:  
   
 - Una cuenta puede ser un elemento primario de prácticamente cualquier otra entidad. Esto incluye otra cuenta.  
   

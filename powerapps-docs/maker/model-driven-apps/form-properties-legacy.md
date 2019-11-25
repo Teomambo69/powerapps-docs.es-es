@@ -4,9 +4,9 @@ description: Comprender las propiedades de formularios principales
 Keywords: Propiedades de formulario principal; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
@@ -14,12 +14,17 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 4ed30bb7-dca1-4de8-80f3-842152ea921a
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a71fe6cf7771a0e15be85e0696e27226e84467e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700319"
 ---
-
 # <a name="model-driven-app-form-properties"></a>Propiedades de formularios de aplicaciones controladas por modelos 
 
 Puede acceder a **Propiedades de formularios** en el explorador de soluciones. En **Componentes**, expanda **Entidades**, expanda la entidad que desea y luego seleccione **Formularios**. En la lista de formularios, abra el formulario de tipo **Principal**. A continuación, en la pestaña **Inicio**, seleccione **Propiedades del formulario**.

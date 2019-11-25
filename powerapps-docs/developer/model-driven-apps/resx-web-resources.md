@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 755ea7efd4c19bfed56595b9b10765b5455f6339
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749604"
 ---
 # <a name="resx-web-resources"></a>Recursos web RESX
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources -->
 
 Utilice estos recursos web para administrar cadenas traducidas en cualquier interfaz de usuario que se defina o con mensajes de error visibles. 
 
-# <a name="using-resx-web-resources"></a>Uso de recursos web RESX
+## <a name="using-resx-web-resources"></a>Uso de recursos web RESX
 
 Los recursos web RESX contienen las claves y los valores de cadena traducidos para un único lenguaje definido con el formato XML RESX. RESX es un formato común para definir recursos traducidos para aplicaciones de Windows, de manera que haya herramientas comunes disponibles para trabajar con este tipo de archivos y los proveedores de localización estén correctamente familiarizados para trabajar con ellos. Cuando se publica el archivo como un recursos web en CRM, este se convierte a formato JSON que se descargará en la aplicación cuando sea necesario.
 
@@ -44,7 +50,7 @@ El valor de cadena correspondiente vendrá determinado por la preferencia de idi
 [Recursos web de imagen (JPG, PNG, GIF, ICO)](image-web-resources.md)<br />
 [Recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)<br />
 [Recursos web (XML) de datos](data-xml-web-resources.md)<br />
-[Recursos web CSS](css-web-resources.md)<br />
+[Recursos web de CSS](css-web-resources.md)<br />
 [Mensajes y métodos de la entidad WebResource](/dynamics365/customer-engagement/developer/webresource-entity-messages-methods)<br />
 [Ejemplo: pasar varios valores a un recurso web mediante el parámetro de datos](sample-pass-multiple-values-web-resource-through-data-parameter.md)<br />
 [Ejemplo: importar archivos como recursos web](sample-import-files-web-resources.md)<br />

@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 07/11/2019
 ms.author: prkoduku
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9624293706f8b1307f19fc168f37c6464c724c65
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749428"
 ---
-
 # <a name="the-app-page"></a>La página de la aplicación
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

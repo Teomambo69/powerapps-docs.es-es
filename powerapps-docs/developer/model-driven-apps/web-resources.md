@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749606"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>Recursos web en aplicaciones basadas en modelos
 
@@ -28,17 +34,17 @@ Los recursos web son *archivos virtuales* que se almacenan en la base de datos d
   
  La sintaxis URL para los recursos web permite referencias de la ruta de acceso relativa. Con las herramientas de desarrollo, se puede crear un grupo de archivos interdependientes en un servidor de desarrollo mediante tipos de archivos compatibles con los recursos web. A continuación, si se usa la convención de nomenclatura coherente y referencias de la ruta de acceso relativa, el sitio web funcionará después de cargar todos los archivos en Common Data Service.
   
- Puesto que los recursos web se almacenan en Common Data Service y son componentes de la solución, se pueden exportar e instalar fácilmente en otras organizaciones de Common Data Service. Los recursos web también están disponibles para los usuarios de Common Data Service para Microsoft Office Outlook con acceso sin conexión cuando están desconectados porque se sincronizan con los datos de usuario.  
+ Puesto que los recursos web se almacenan en Common Data Service y son componentes de la solución, se pueden exportar e instalar fácilmente en otras organizaciones de Common Data Service. Los recursos web están también disponibles para los usuarios de Common Data Service para Microsoft Office Outlook con acceso sin conexión porque se sincronizan con los datos de usuario.  
   
  Puede usar el editor de formularios para agregar y configurar recursos web habilitados por formulario en los formularios de entidad.  
   
- Puesto que los recursos web se almacenan como registros en la base de datos, se pueden administrar mediante programación usando técnicas estándar para crear, recuperar y actualizar registros. Los recursos web basados en texto (JScript, CSS, XML, XSL, RESX, and HTML) se pueden editar y guardar en la aplicación.  
+ Puesto que los recursos web se almacenan como registros en la base de datos, se pueden administrar mediante programación usando técnicas estándar para crear, recuperar y actualizar registros. Los recursos web basados en texto (JScript, CSS, XML, XSL, RESX y HTML) se pueden editar y guardar en la aplicación.  
   
 <a name="BKMK_LimitationsOfWebResources"></a>   
 ### <a name="limitations-of-web-resources"></a>Limitaciones de los recursos web  
  No hay ningún tipo de recurso web que admita las capacidades de una página ASP.NET(.aspx) para ejecutar código en el servidor. Los recursos web se limitan a archivos estáticos o a archivos que se procesan en el explorador. Un recurso web puede contener un código que se procesa en el explorador para ejecutar las llamadas al servicio web para interactuar con los datos de Common Data Service.
   
- Los recursos web solo están disponibles mediante el contexto de seguridad de la aplicación web de Common Data Service. Solo los usuarios con licencia de Common Data Service con los privilegios necesarios pueden acceder a ellos.  
+ Los recursos web solo están disponibles mediante el contexto de seguridad de la aplicación web de Common Data Service. Solo los usuarios con licencia de Common Data Service con los privilegios necesarios tienen acceso a ellos.  
   
 #### <a name="size-limitations"></a>Limitaciones de tamaño  
 El tamaño máximo de los archivos que se pueden cargar se determina mediante la propiedad Organization.MaxUploadFileSize. Esta propiedad se define en la pestaña Correo electrónico de Configuración del sistema en la aplicación Dynamics 365. Esta configuración limita el tamaño de los archivos que pueden adjuntarse a los mensajes de correo electrónico, notas y recursos web. La configuración predeterminada es 5 MB.
@@ -47,7 +53,7 @@ El tamaño máximo de los archivos que se pueden cargar se determina mediante la
 ## <a name="web-resource-types"></a>Tipos de recursos web  
  Puede usar diez formatos de archivo para crear recursos web. En la siguiente tabla se enumera cada formato de archivo, las extensiones de archivo permitidas y el valor de tipo que se usa con cada uno.  
   
-|Archivo|Extensiones de archivo|Tipo|  
+|Archivo|Extensiones de archivo|Escriba|  
 |----------|---------------------|----------|  
 |Página web (HTML)|.htm, .html|1|  
 |Hoja de estilos (CSS)|.css|2|  
@@ -121,7 +127,7 @@ $webresource:<name of Web Resource>
   
  El valor versión se actualiza cuando se publican personalizaciones y asegura que el explorador usa la versión más reciente almacenada en la memoria caché del recurso web. Por este motivo, use una ruta de acceso relativa a un recurso web, la función Xrm.Navigation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md) o el [$webresource Directive](web-resources.md#BKMK_WebResourceDirective) (cuando sea posible) porque el valor versión se incluirá automáticamente. Para recursos web grandes las consecuencias en el rendimiento serán significativas si no usa la versión almacenada en la memoria caché del archivo.  
   
- El siguiente ejemplo muestra una dirección URL para Common Data Service, donde el nombre `MyOrganization` es el nombre del entorno de Common Data Service y `new_/test/test.htm` es el nombre del recurso web:  
+ El siguiente ejemplo muestra una dirección URL para Common Data Service, donde `MyOrganization` es el nombre de la organización del entorno de Common Data Service y `new_/test/test.htm` es el nombre del recurso web:  
   
 ```  
 https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm  
@@ -135,10 +141,10 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**WebResources Manager** es una herramienta desarrollada por Comunidad XrmToolbox para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
+**WebResources Manager** es una herramienta que la comunidad XrmToolbox ha desarrollada para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de Common Data Service y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Las herramientas de la Comunidad no son un producto de Common Data Service y no se amplía el soporte para las herramientas de comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 
   
 ### <a name="see-also"></a>Vea también  
 

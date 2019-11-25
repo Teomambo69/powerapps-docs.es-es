@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749395"
 ---
 # <a name="optimize-assembly-development"></a>Optimizar el desarrollo de ensamblados
 
@@ -37,7 +43,7 @@ Cuando se desarrollan los ensamblados personalizados, se deben tener en cuenta a
     - Mayor complejidad del mantenimiento
     - Incremento potencial de la duración de la ejecución de los complementos
 
-2. El límite de tamaño de un ensamblado de espacio aislado es 16 MB en Common Data Service.
+2. La restricción del tamaño de ensamblado de espacio aislado es 16 MB en Common Data Service.
 
 <a name='guidance'></a>
 
@@ -57,7 +63,7 @@ Las actividades de complementos y de flujo de trabajo personalizado desarrollada
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>Mover actividades de complementos/actividades personalizadas a múltiples ensamblados
 
-PowerApps y Microsoft Dynamics 365 (online) tiene una limitación de tamaño de ensamblado de 16 MB, que no se puede cambiar. Si el tamaño del ensamblado se acerca a 16 MB, considere transferir las actividades de complementos y de flujo de trabajo personalizado a varios ensamblados.
+PowerApps y Dynamics 365 (online) tienen una limitación de tamaño de ensamblado de 16 MB, que no se puede cambiar. Si el tamaño del ensamblado se acerca a 16 MB, considere transferir las actividades de complementos y de flujo de trabajo personalizado a varios ensamblados.
 
 <a name='problem'></a>
 

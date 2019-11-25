@@ -1,5 +1,5 @@
 ---
-title: Seguimiento de dependencias para componentes de la solución (Common Data Service) | Microsoft Docs
+title: Seguimiento de las dependencias de los componentes de la solución (Common Data Service) | Microsoft Docs
 description: Las dependencias de los componentes de la solución ayudan a garantizar una experiencia confiable cuando trabaja con soluciones. Pueden verse en la aplicación haciendo clic en Mostrar dependencias
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749386"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Seguimiento de las dependencias de los componentes de la solución
 
@@ -152,7 +158,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
   
 <a name="BKMK_Role"></a>   
 ### <a name="security-role-role"></a>Rol de seguridad (rol)  
- Agrupación de privilegios de seguridad. Se asignan a los usuarios roles que autorizan su acceso al sistema de Common Data Service. Los formularios de entidad se pueden asociar con roles de seguridad específicos para controlar quién puede ver el formulario. Esto crea una dependencia publicada entre el rol de seguridad y el formulario.  
+ Agrupación de privilegios de seguridad. Se asignan a los usuarios roles que autorizan su acceso al sistema Common Data Service. Los formularios de entidad se pueden asociar con roles de seguridad específicos para controlar quién puede ver el formulario. Esto crea una dependencia publicada entre el rol de seguridad y el formulario.  
   
 > [!NOTE]
 >  Solo los roles de seguridad de la unidad de negocio de la organización se pueden agregar a una solución. Solo un usuario con acceso de lectura a estos roles de seguridad puede agregarlos a una solución.  
@@ -170,7 +176,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
  Datos equivalentes a los archivos que se usan en el desarrollo web. Los recursos web proporcionan los componentes de cliente que se usan para proporcionar elementos de la interfaz de usuario personalizados. Los recursos web pueden haber publicado dependencias con formularios de entidad, cintas y el mapa del sitio. Cuando la directiva de `$webresource:` se usa para establecer asociaciones en una cinta o el mapa del sitio, se crea una dependencia publicada. Para obtener más información, consulte [Directiva $webresource](/dynamics365/customer-engagement/developer/web-resources#BKMK_WebResourceDirective).  
   
 > [!NOTE]
->  Los recursos web pueden depender de otros recursos web basándose en los vínculos relativos. Por ejemplo, un recurso web HTML puede usar un CSS o un recurso web de script. Un recurso web de Silverlight mostrado fuera de un gráfico o formulario de entidad debe tener un recurso web HTML para alojarlo. Estas dependencias no se siguen como dependencias de solución.  
+>  Los recursos web pueden depender de otros recursos web basándose en los vínculos relativos. Por ejemplo, un recurso web HTML puede usar un recurso web de CSS o de script. Un recurso web de Silverlight mostrado fuera de un gráfico o formulario de entidad debe tener un recurso web HTML para alojarlo. Estas dependencias no se siguen como dependencias de solución.  
   
 ### <a name="see-also"></a>Vea también  
  [Empaquetar y distribuir extensiones con soluciones de Dynamics 365](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   

@@ -1,24 +1,27 @@
 ---
 title: Personalización de las visualizaciones y paneles (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Obtenga información sobre cómo configurar los paneles de forma tal que le permitan ver los datos de varias áreas de Dynamics 365 como ventas, marketing y servicio. Incluso puede ajustar los datos que se presentan en las visualizaciones y los paneles según los requisitos empresariales al aplicar los filtros relacionados.'
+description: Obtenga información sobre cómo configurar los paneles de forma tal que le permitan ver los datos de varias áreas de Dynamics 365 como ventas, marketing y servicio. Incluso puede ajustar los datos que se presentan en las visualizaciones y los paneles según los requisitos empresariales al aplicar los filtros relacionados.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 90c1581b-06cc-505e-caba-2e87720f7f28
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 70b2e2242dfb3c1d2a169ba101120a9ee5116023
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749619"
 ---
-
 # <a name="customize-visualizations-and-dashboards"></a>Personalizar visualizaciones y paneles
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->

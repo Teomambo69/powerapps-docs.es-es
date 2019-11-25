@@ -5,16 +5,22 @@ ms.date: 06/27/2019
 ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
-ms.assetid: null
+- Dynamics 365 (online)
+ms.assetid: ''
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b4e2d49c8017011a9a7a8682843612533698990b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749449"
 ---
 # <a name="client-api-reference-for-model-driven-apps"></a>Referencia API de cliente para aplicaciones basadas en modelos
 

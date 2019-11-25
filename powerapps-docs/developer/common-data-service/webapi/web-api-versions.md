@@ -1,6 +1,6 @@
 ---
 title: Versiones de la API web de Common Data Service (Common Data Service)| Microsoft Docs
-description: 'Lea cómo funciona el control de versiones de API web de Common Data Service. Las versiones API web de Common Data Service admiten diferencias específicas de versión en el mismo entorno que es diferente del comportamiento en las versiones de v8.x, en las que se añadió nuevas capacidades'
+description: Lea cómo funciona el control de versiones de API web de Common Data Service. Las versiones API web de Common Data Service admiten diferencias específicas de versión en el mismo entorno que es diferente del comportamiento en las versiones de v8.x, en las que se añadió nuevas capacidades
 ms.custom: ''
 ms.date: 07/25/2019
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d9bb79a5-2bfa-4ffe-8cb4-60f192359489
 caps.latest.revision: 34
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6c62874a32880edc18f13ea4ab2f5539fccb4e9d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749491"
 ---
 # <a name="common-data-service-web-api-versions"></a>Common Data ServiceVersiones de la API web
 

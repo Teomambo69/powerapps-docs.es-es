@@ -1,5 +1,5 @@
 ---
-title: Utilizar útiles de XRM para actualizar datos (Common Data Service)| Microsoft Docs
+title: Use los útiles de XRM para actualizar datos (Common Data Service)| Microsoft Docs
 description: Utilizar la clase CrmServiceClient para actualizar datos en Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 8ec3d4ca-d836-4e7e-b2bf-9d9f806bd145
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b8e591e818aa51158262d575d3e18c22cf322bc5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749471"
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>Usar útiles de XRM para actualizar los datos
 
-Existen dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para actualizar datos en Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
+Hay dos métodos disponibles en la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para actualizar datos en Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> y <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
   
 Una acción de actualización que usa la API de los útiles de XRM requiere una carga de datos. La carga útil de datos requiere la forma de un objeto Dictionary\<string, CrmDataTypeWrapper>. <xref:Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper> se usa para informes a la interfaz del tipo de control debe ser aplicado al punto de datos al que está haciendo referencia.  
   
@@ -111,6 +117,6 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Uso de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)<br />
+[Usar útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Usar la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)<br />
 

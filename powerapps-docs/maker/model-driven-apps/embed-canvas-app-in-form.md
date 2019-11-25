@@ -8,22 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704851"
 ---
-
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>Insertar una aplicación de lienzo en un formulario controlado por modelos
 
 Las aplicaciones de lienzo permiten a proveedores fácilmente diseñar y crear diseños personalizados con diseñador de aplicaciones de lienzo WYSIWYG de poco código. Las aplicaciones de lienzo también permiten a los proveedores conectar y mostrar datos de más de 200 orígenes de datos en sus formularios.
@@ -31,7 +36,7 @@ Las aplicaciones de lienzo permiten a proveedores fácilmente diseñar y crear d
 Con aplicaciones incrustadas de lienzo, los proveedores pueden aportar la fuerza de aplicaciones de lienzo a sus formularios controlados por modelos. Con aplicaciones incrustadas de lienzo, puede crear fácilmente áreas visuales completas en un formulario y mostrar datos pantalla de diversos orígenes directamente al lado de datos de Common Data Service.
 
    > [!div class="mx-imgBorder"] 
-   > ![Aplicación de lienzo insertada en un formulario de aplicación basada en modelos](media/embed-canvas-app-in-form.png "Aplicación de lienzo insertada en un formulario de aplicación basada en modelos")
+   > ![Aplicación de lienzo incrustada en un formulario de aplicaciones controlado por modelos](media/embed-canvas-app-in-form.png "Aplicación de lienzo incrustada en un formulario de aplicaciones controlado por modelos")
 
 Las aplicaciones de lienzo se insertan en formularios controlados por modelos igual que se agregan otros controles personalizados. Una aplicación incrustada de lienzo incluye capacidades completas de integración de datos que aportan datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo. Más información: [Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md).
 

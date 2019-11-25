@@ -1,19 +1,25 @@
 ---
-title: Creación de extensiones para la herramienta de generación de código (Common Data Service) | Microsoft Docs
-description: 'El paquete de descarga del SDK incluye una extensión a la herramienta de generación de código CrmSvcUtil que puede usar para generar enumeraciones para todos los valores del conjunto de opciones incluidos los conjuntos de opciones globales, la lista desplegable, el estado y los valores de estado.'
+title: Crear extensiones para la herramienta de generación de código (Common Data Service) | Microsoft Docs
+description: El paquete de descarga del SDK incluye una extensión a la herramienta de generación de código CrmSvcUtil que puede usar para generar enumeraciones para todos los valores del conjunto de opciones incluidos los conjuntos de opciones globales, la lista desplegable, el estado y los valores de estado.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fdeea48a4bcdb996580d542a01a61fef22625b98
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749548"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>Crear extensiones para la herramienta de generación de código
 

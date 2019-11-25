@@ -13,13 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 18/15/2019
+ms.date: 08/15/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1cfd0c9c0ac9b2a5ce5f71f1035a7d6c2f84be2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749393"
 ---
 # <a name="remove-unsupported-code-that-uses-reflection-in-custom-workflow-activities"></a>Quitar código no admitido que usa reflexión en actividades de flujo de trabajo personalizadas
 

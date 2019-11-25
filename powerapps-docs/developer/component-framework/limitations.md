@@ -8,9 +8,14 @@ ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+ms.openlocfilehash: aabcf4518e71648797c795a006c2d842f3e5ff01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749630"
 ---
-
-# <a name="limitations-of-powerapps-component-framework"></a>Limitaciones de PowerApps component framework
+# <a name="limitations"></a>Limitaciones 
 
 Con el lanzamiento de PowerApps component framework, ahora puede crear sus propios componentes de código para mejorar la experiencia de usuario en aplicaciones basadas en modelo. Aunque puede crear sus propios componentes, hay algunas limitaciones que restringen a los programadores a implementar algunas características en los componentes de código. A continuación se indican algunas de las limitaciones:
 

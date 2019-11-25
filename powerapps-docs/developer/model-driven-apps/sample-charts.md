@@ -8,12 +8,18 @@ ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: null
+manager: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749598"
 ---
 # <a name="sample-charts"></a>Gráficos de muestra
 
@@ -29,7 +35,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ## <a name="column-chart"></a>Gráfico de columnas  
  A continuación se muestra un gráfico de columnas que muestra la cuenta por sector. Modificamos la descripción de la presentación del gráfico predeterminado de cuenta por sector existente disponible en aplicaciones basadas en modelos para que la entidad `Account` lo cambie por un gráfico de columnas.  
   
- ![Gráfico de columnas de ejemplo: Cuentas por sector](media/charts-accounts-by-industry.gif "Gráfico de columnas de ejemplo: Cuentas por sector")  
+ ![Gráfico de columnas de muestra: cuentas por sector](media/charts-accounts-by-industry.gif "Gráfico de columnas de muestra: cuentas por sector")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -88,7 +94,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ## <a name="bar-chart"></a>Gráfico de barras  
  A continuación se muestra un gráfico de barras que muestra los 10 clientes principales. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Opportunity`.  
   
- ![Gráfico de barras de ejemplo: 10 clientes principales](media/charts-top-10-customers.gif "Gráfico de barras de ejemplo: 10 clientes principales")  
+ ![Gráfico de barras de muestra: 10 clientes principales](media/charts-top-10-customers.gif "Gráfico de barras de muestra: 10 clientes principales")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -208,7 +214,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ## <a name="line-chart"></a>Gráfico de líneas  
  A continuación se muestra un gráfico de líneas que muestra el número de clientes potenciales generados en los cinco últimos meses. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Lead`. 
   
-![Gráfico de líneas de ejemplo: Tasa de generación de clientes potenciales](media/lead-generation-rate-chart.png "Gráfico de líneas de ejemplo: Tasa de generación de clientes potenciales") --> 
+![Gráfico de líneas de muestra: tasa de generación de clientes potenciales](media/lead-generation-rate-chart.png "Gráfico de líneas de muestra: tasa de generación de clientes potenciales") --> 
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -265,7 +271,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ## <a name="pie-chart"></a>Gráfico circular  
  A continuación se muestra un gráfico circular que muestra la cantidad total de clientes potenciales y su importancia. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Lead`.  
   
- ![Gráfico circular de ejemplo: Clientes potenciales por nivel de interés](media/leads-by-source-chart.png "Gráfico circular de ejemplo: Clientes potenciales por nivel de interés")  
+ ![Gráfico circular de muestra: clientes potenciales por nivel de interés](media/leads-by-source-chart.png "Gráfico circular de muestra: clientes potenciales por nivel de interés")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -319,7 +325,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ## <a name="funnel-chart"></a>Gráfico de embudo  
  A continuación se muestra un gráfico de embudo que muestra la suma de los ingresos estimados en cada etapa de la canalización de ventas. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Opportunity`.  
   
- ![Gráfico de embudo de ejemplo: Canalización de ventas](media/charts-sales-pipeline-chart.png "Gráfico de embudo de ejemplo: Canalización de ventas")  
+ ![Gráfico de embudo de muestra: canalización de ventas](media/charts-sales-pipeline-chart.png "Gráfico de embudo de muestra: canalización de ventas")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -379,7 +385,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
  Un gráfico de varias series tiene varios elementos `<Series>` en la descripción de presentación; el número de elementos `<Series>` es el mismo que el número de elementos `<measurecollection>` en la cadena XML de descripción de los datos.  
   
- ![Gráfico de varias series de ejemplo](media/estimated-actual-revenue-chart.gif "Gráfico de varias series de ejemplo")  
+ ![Gráfico de varias series de muestra](media/estimated-actual-revenue-chart.gif "Gráfico de varias series de muestra")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -456,7 +462,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
  Un gráfico de comparación tiene dos cláusulas `groupby` en la cadena XML de descripción de los datos.  
   
- ![Gráfico de comparación de ejemplo](media/charts-activities-by-type-and-priority-comparison-chart.gif "Gráfico de comparación de ejemplo")  
+ ![Gráfico de comparación de muestra](media/charts-activities-by-type-and-priority-comparison-chart.gif "Gráfico de comparación de muestra")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  
@@ -523,7 +529,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
  Un gráfico de comparación tiene dos cláusulas `groupby` en la cadena XML de descripción de los datos.  
   
- ![Gráfico 100% apilado de ejemplo](media/charts-numberofcases-anydate-bypriority-100stackedchart.gif "Gráfico 100% apilado de ejemplo")  
+ ![Gráfico apilado Sample100%](media/charts-numberofcases-anydate-bypriority-100stackedchart.gif "Gráfico apilado Sample100%")  
   
 ### <a name="data-description"></a>Descripción de los datos  
  A continuación se muestra el contenido de la cadena XML de descripción de los datos para este gráfico.  

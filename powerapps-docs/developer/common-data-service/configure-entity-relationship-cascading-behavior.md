@@ -1,6 +1,6 @@
 ---
-title: Configurar el comportamiento en cascada de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
-description: Configure comportamientos en cascada para una relación entre entidades de uno a varios en Common Data Service para preservar la integridad de los datos y automatizar los procesos de negocio.
+title: Configuración del comportamiento en cascada de las relaciones entre entidades (Common Data Service) | Microsoft Docs
+description: Configure los comportamientos en cascada para una relación entre entidades de uno a varios en Common Data Service para preservar la integridad de los datos y automatizar los procesos de negocio.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749580"
 ---
-
 # <a name="configure-entity-relationship-cascading-behavior"></a>Configuración del comportamiento en cascada de las relaciones entre entidades  
 
  Puede configurar los comportamientos en cascada para una relación entre entidades de uno a varios para preservar la integridad de los datos y automatizar los procesos de negocio. La API web y el servicio de la organización son compatibles con la configuración del comportamiento en cascada.

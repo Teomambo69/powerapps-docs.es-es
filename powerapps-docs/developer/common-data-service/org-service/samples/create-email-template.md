@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Crear un correo electrónico utilizando una plantilla (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Crear un mensaje de correo electrónico usando una plantilla (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear una instancia de un registro de correo electrónico.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 17074439d81c60b4d51a6f5e91dc5465f8ee5327
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749529"
 ---
 # <a name="sample-create-an-email-using-a-template"></a>Ejemplo: crear un mensaje de correo electrónico usando una plantilla
 

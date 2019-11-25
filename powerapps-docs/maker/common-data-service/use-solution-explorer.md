@@ -2,26 +2,26 @@
 title: Usar soluciones en PowerApps | MicrosoftDocs
 description: Aprenda cómo usar soluciones para crear o personalizar aplicaciones
 ms.custom: ''
-ms.date: 06/17/2019
-ms.reviewer: ''
+ms.date: 10/28/2019
+ms.reviewer: tapanm
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: caburk
 ms.assetid: 72bacfbb-96a3-4daa-88ff-11bdaaac9a3d
 caps.latest.revision: 57
 ms.author: caburk
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 57df12285848d67a8cd85016aec0bbb033fef89a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703179"
 ---
 # <a name="use-solutions-in-powerapps"></a>Usar soluciones en PowerApps
 
@@ -43,7 +43,7 @@ search.app:
  También puede buscar un componente específico por su nombre. 
  
 > [!div class="mx-imgBorder"]  
-> ![Buscar componente](media/solution-search-box.png "Buscar componente")  
+> ![Busque componente](media/solution-search-box.png "Busque componente")  
  
  O bien filtre todos los elementos de la lista por tipo de componente.
   
@@ -60,20 +60,20 @@ search.app:
  Cuando no seleccione ningún componente, la barra de comandos mostrará las acciones aplicadas a la propia solución. 
  
 > [!div class="mx-imgBorder"]  
-> ![Comandos específicos de la solución](media/solution-commands.PNG "Comandos específicos de la solución")  
+> ![Comandos específicos de solución](media/solution-commands.PNG "Comandos específicos de solución")  
  
  ## <a name="create-components-in-a-solution"></a>Crear componentes en una solución
  Con soluciones que son no administradas o la predeterminada, puede usar el comando **Nuevo** para crear diferentes tipos de componentes. Esto le llevará a crear un experiencia diferente según el tipo de componente que elija. Cuando termine de crear el componente, se agregará a la solución. 
  
 > [!div class="mx-imgBorder"]  
-> ![Crear nuevo componente en una solución](media/solution-new-component.PNG "Crear nuevo componente en una solución")  
+> ![Crea un nuevo componente en una solución](media/solution-new-component.PNG "Crea un nuevo componente en una solución")  
  
  ## <a name="add-an-existing-component-to-a-solution"></a>Agregar un componente existente a una solución
  
  Con soluciones que no sean administradas o la predeterminada, puede usar el comando **Agregar existente** para traer componentes que todavía no se encuentran en la solución.  
  
 > [!div class="mx-imgBorder"]  
-> ![Agregar componente existente a una solución](media/solution-add-existing-component.PNG "Agregar componente existente a una solución")  
+> ![Agregar un componente existente a una solución](media/solution-add-existing-component.PNG "Agregar un componente existente a una solución")  
   
  Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Deberá agregarlo a otra solución no administrada que ha creado para personalizar el componente. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
 
@@ -91,20 +91,25 @@ En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Sol
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-- Los conectores personalizados no están disponibles en una solución.
-- Las aplicaciones de lienzo deben reproducirse una vez finalizada la importación de la solución para autorizar las conexiones.
-- Si una aplicación de lienzo se empaqueta en una solución administrada, puede editarse en el entorno de destino, pero no volver a publicarse.
-- Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. 
--   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service (Common Data Service).
--   Las API de Common Data Service para llamar a las aplicaciones de lienzo están bloqueados y no devuelve nada. 
--   Las aplicaciones de lienzo creadas desde una solución no se puede compartir como copropietario con Grupo de seguridad AAD.
--   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico.
-- Los flujos creados a partir de soluciones no se mostrarán en la lista "Flujos de equipo”
-- Los flujos desencadenados por botón no están disponibles en soluciones.
+Las siguientes limitaciones se aplican al uso de aplicaciones de lienzo, flujos y conectores personalizados en soluciones. 
+
 - Los flujos desencadenados por aplicaciones del lienzo no están disponibles en soluciones.
+- Si una aplicación de lienzo se empaqueta en una solución administrada, no puede editarse y volver a publicarse en el entorno de destino. Use soluciones no administradas si las aplicaciones requieren edición en el entorno de destino. 
+- Las conexiones requieren autenticación y consentimiento, que requiere una sesión de usuario interactiva y por tanto no se pueden transportar mediante soluciones. Después de importar la solución, juegue la aplicación para autenticar conexiones. También puede crear las conexiones en el entorno de destino antes de importar la solución. 
+-   Las aplicaciones de lienzo compartidas como copropietario con grupo de seguridad Azure Active Directory (AAD) no se pueden agregar a soluciones. Deje de comaprtir la aplicación antes de agregarla a una solución.
+-   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico. Use la experiencia moderna.
+-   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service ().
+- Las operaciones de base de datos como copia de seguridad, restauración, y copia no son compatibles con las aplicaciones de lienzo y flujos. Estas operaciones pueden dañar a aplicaciones de lienzo y flujos.
+- Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. En su lugar, todas las versiones de la aplicación se eliminan.
+- Cuando se importa una solución que contiene un flujo no se crearán o asociarán conexiones necesarias. El flujo se debe editar para corregir las conexiones.
+  - Si usa soluciones administradas, se crea una personalización activa en la capa no administrada. Por tanto las actualizaciones posteriores de la solución al flujo no se reflejarán. 
+- Los flujos creados a partir de soluciones no se mostrarán en la lista "Flujos de equipo”. Se debe acceder a ellos a través de una solución. 
+- Los flujos desencadenados por botón no están disponibles en soluciones.
 - Los flujos desencadenados desde aplicaciones de Microsoft 365 como Excel no están disponibles en soluciones.
 - Los flujos que conectan con SharePoint no están disponibles en soluciones.
 - Los flujos en soluciones no admiten la autenticación delegada. Por ejemplo, el acceso a un flujo no se concede automáticamente en función del acceso a la lista de SharePoint de la que se creó el flujo.
+- Los conectores externos creados fuera de soluciones no se pueden agregar a soluciones en este momento.
+
 
  Para obtener más información acerca de los componentes individuales de una solución, vea los temas siguientes:  
   

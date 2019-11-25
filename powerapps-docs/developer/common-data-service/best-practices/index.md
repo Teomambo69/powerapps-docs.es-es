@@ -1,6 +1,6 @@
 ---
 title: 'Programadores: Prácticas recomendadas e instrucciones para Common Data Service | Microsoft Docs'
-description: Prácticas recomendadas e instrucciones para desarrolladores de Common Data Service en PowerApps.
+description: 'Programadores: Prácticas recomendadas e instrucciones para desarrolladores de Common Data Service en PowerApps.'
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,26 +16,31 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 95c31b72e07747f77877dd9ff664827c6d63a16b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749388"
 ---
-
 # <a name="best-practices-and-guidance-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones para Common Data Service
 
-El Common Data Service es un marco extensible que permitirá a los programadores generar experiencias muy personalizadas y adaptadas. Al realizar las operaciones de personalizar, ampliar o integrar con Common Data Service, un programador debe tener en cuenta las prácticas recomendadas y las instrucciones establecidas. 
+Common Data Service es un marco extensible que permitirá a los programadores generar experiencias muy personalizadas y adaptadas. Al realizar las operaciones de personalizar, ampliar o integrar con Common Data Service, un programador debe tener en cuenta las prácticas recomendadas y las instrucciones establecidas. 
 
 En esta sección se informará sobre los problemas que hemos identificado, su impacto, y entenderá la información para resolverlos. Explicaremos las cuestiones de fondo sobre por qué las cosas deben realizarse de tal forma que se eviten posibles problemas en el futuro. Esto puede ser una ventaja para la utilidad, la compatibilidad y el rendimiento del entorno. La documentación de las instrucciones admite la información existente en de las guías de programación y administración.
 
-# <a name="targeted-customization-types"></a>Tipos específicos de personalización
+## <a name="targeted-customization-types"></a>Tipos específicos de personalización
 La documentación aborda los siguientes tipos de personalización:
 
 - Actividades personalizadas de flujo de trabajo y complementos
 - Trabajar con datos de Common Data Service
 - Integraciones que amplían Common Data Service
 
-# <a name="sections"></a>Secciones
+## <a name="sections"></a>Secciones
 Cada artículo de las instrucciones incluye la mayor parte o todas las secciones siguientes:
 
 - Título: descripción de las instrucciones.
@@ -47,7 +52,7 @@ Cada artículo de las instrucciones incluye la mayor parte o todas las secciones
 - Información adicional: información de respaldo para tener una visión más amplia.
 - Vea también: referencias para obtener más información sobre algo que aparece en el artículo.
 
-# <a name="categories"></a>Categorías
+## <a name="categories"></a>Categorías
 Cada artículo de las instrucciones se clasifica en una o más de las categorías siguientes:
 
 - Uso: uso incorrecto de una API, patrón o configuración particulares.

@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 7b5bbc05ca7adf7fad9725215f8a7d6c06c035bb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709559"
 ---
-
 # <a name="reset-a-portal"></a>Restablecer un portal
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Una vez aprovisionado un portal, es posible que tenga que eliminar recursos del portal en determinadas circunstancias, como si tiene que trasladar su organización a otro inquilino o centro de datos, o si desea quitar el portal de su organización.
 
@@ -36,14 +39,13 @@ Para restaurar un portal configurado:
 
 > [!NOTE]
 > - Si no dispone de los permisos adecuados en una aplicación asociada de Azure Active Directory, se mostrará un error. Debe ponerse en contacto con el administrador global para obtener los permisos adecuados.
-> - Cuando el portal se restablezca correctamente, el nombre del portal y su estado en la pestaña **Aplicaciones** del Centro de administración de los portales de PowerApps no cambia. Por ejemplo, si su nombre de portal y estado eran Portal 1 y Configurado respectivamente, después de restablecer el portal, estos valores no cambian. Si desea cambiar el nombre de portal, puede cambiarlo en la pestaña **Detalles del portal** en el Centro de administración del portal. Sin embargo, el valor del estado no se puede revertir a No configurado.
-> 
-> Es importante tener en cuenta que el estado del portal de la pestaña **Aplicaciones** no representa el estado de aprovisionamiento y no afecta al funcionamiento del portal. Simplemente muestra si alguna vez ha obtenido acceso al Centro de administración del portal para ese portal correspondiente o no.
+> - Si ha aprovisionado un portal con el complemento de portal más antiguo y el portal se restablece correctamente, el nombre del portal y su estado en la pestaña **Aplicaciones** en Centro de administración de Dynamics 365 no cambiarán. Por ejemplo, si su nombre de portal y estado eran Portal 1 y Configurado respectivamente, después de restablecer el portal, estos valores no cambian. Si desea cambiar el nombre de portal, puede cambiarlo en la pestaña **Detalles del portal** en el Centro de administración de portales de PowerApps. Sin embargo, el valor del estado no se puede revertir a No configurado.
+> - Es importante tener en cuenta que el estado del portal de la pestaña **Aplicaciones** no representa el estado de aprovisionamiento y no afecta al funcionamiento del portal. Simplemente muestra si alguna vez ha obtenido acceso al Centro de administración de portales de PowerApps para ese portal correspondiente o no.
 
 Si su portal no se aprovisiona correcta, aparece un estado de error y se muestra la siguiente pantalla. En este caso, también puede restablecer el portal seleccionando **Restablecer portal** en la pantalla de error.
 
 > [!div class=mx-imgBorder]
-> ![Error al aprovisionar un portal](../media/provision-portal-error.png "Error al aprovisionar un portal")
+> ![Error mientras aprovisiona un portal](../media/provision-portal-error.png "Error mientras aprovisiona un portal")
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
@@ -51,17 +53,17 @@ Esta sección proporciona información sobre los problemas de solución de probl
 
 ### <a name="reset-request-could-not-be-submitted"></a>Restablecer una solicitud que no se pudo enviar
 
-Si no se pudo enviar una solicitud de restablecimiento del portal, se mostrará un error como el que aparece en la siguiente imagen. En este caso, debe cerrar y volver a abrir el Centro de administración del portal e intentar restablecer el portal de nuevo. Si el problema persiste, póngase en contacto con el soporte técnico de Microsoft.
+Si no se pudo enviar una solicitud de restablecimiento del portal, se mostrará un error como el que aparece en la siguiente imagen. En este caso, debe cerrar y volver a abrir el Centro de administración de portales de PowerApps e intentar restablecer el portal de nuevo. Si el problema persiste, póngase en contacto con el soporte técnico de Microsoft.
 
 > [!div class=mx-imgBorder]
-> ![Error al restablecer un portal](../media/reset-portal-request-error.png "Error al restablecer un portal")
+> ![Error mientras restablece un portal](../media/reset-portal-request-error.png "Error mientras restablece un portal")
 
 ### <a name="reset-portal-job-fails"></a>Error al restablecer un trabajo en el portal
 
 Si se produce un error al restablecer un trabajo en el portal, se mostrará un mensaje de error junto con la acción **Restablecer portal**.
 
 > [!div class=mx-imgBorder]
-> ![Error al restablecer un portal](../media/reset-portal-error.png "Error al restablecer un portal")
+> ![Error mientras restablece un portal](../media/reset-portal-error.png "Error mientras restablece un portal")
 
 Normalmente, estos son errores transitorios y debe seleccionar **Restablecer portal** para reiniciar el trabajo. Si el problema persiste, póngase en contacto con el soporte técnico de Microsoft.
 

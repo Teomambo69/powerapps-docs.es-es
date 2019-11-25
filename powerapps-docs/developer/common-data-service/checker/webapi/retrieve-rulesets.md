@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 23c9391c-1697-47a3-a8f2-eedd5c862874
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e575ca1eaf1c468d8f090bba7e4b84ea767b773c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749582"
 ---
-
 # <a name="retrieve-the-list-of-rulesets"></a>Recuperar la lista de conjuntos de reglas
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]

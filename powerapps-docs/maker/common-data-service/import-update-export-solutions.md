@@ -1,6 +1,6 @@
 ---
-title: 'Importar, actualizar y exportar soluciones | MicrosoftDocs'
-description: 'Obtener información sobre cómo importar, actualizar y exportar una solución en PowerApps'
+title: Importar, actualizar y exportar soluciones | MicrosoftDocs
+description: Obtener información sobre cómo importar, actualizar y exportar una solución en PowerApps
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 56363ea3-ea76-4311-9b7a-b71675e446fb
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701595"
 ---
 # <a name="import-update-and-export-solutions"></a>Importar, actualizar y exportar soluciones 
 
@@ -32,7 +38,7 @@ search.app:
 2.  En el menún de la lista de soluciones, seleccione **Importar**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Importar una solución](media/solution-import.png "Importar una solución") 
+    > ![Importar solución](media/solution-import.png "Importar solución") 
   
 3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, seleccione **Elegir archivo** y busque el archivo comprimido (.zip o .cab) que contiene la solución que desea importar. 
   
@@ -101,7 +107,7 @@ search.app:
 3.  Seleccione el tipo de paquete **Como no administrado** o **Como administrado**. Esto iniciará la exportación, que puede tardar varios minutos en completarse. Una vez finalizada, el archivo .zip de exportación está disponible en la carpeta de descarga especificada por el explorador web.
 
     > [!div class="mx-imgBorder"]  
-    > ![Exportar una solución](media/solution-export.png "Exportar una solución") 
+    > ![Exportar solución](media/solution-export.png "Exportar solución") 
 
 ### <a name="export-from-the-classic-experience"></a>Exportación desde la experiencia clásica
 

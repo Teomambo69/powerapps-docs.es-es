@@ -1,19 +1,25 @@
 ---
 title: 'Prácticas recomendadas: ejemplo de script en aplicaciones basadas en modelos | MicrosoftDocs'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 16271bd8-cfa8-4a7f-802a-60fbff7c3722
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0ef08d16ad91292c5757bb1d95c5ccadd15b5128
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749451"
 ---
 # <a name="best-practices-client-scripting-in-model-driven-apps"></a>Prácticas recomendadas: ejemplo de script en aplicaciones basadas en modelos
 

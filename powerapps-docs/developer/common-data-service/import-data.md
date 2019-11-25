@@ -1,6 +1,6 @@
 ---
-title: Importación de datos (Common Data Service) | Microsoft Docs
-description: 'Si desea importar datos a Common Data Service, puede usar la función de *importación de datos*. Importación de datos le permite cargar datos de los distintos sistemas de administración de relaciones con el cliente y orígenes de datos en Common Data Service.'
+title: Importar datos (Common Data Service) | Microsoft Docs
+description: Si desea importar datos a Common Data Service, puede usar la función de *importación de datos*. Importación de datos le permite cargar datos de los distintos sistemas de administración de relaciones con el cliente y orígenes de datos en Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 562072c6d63b0abfeaa6c9f44f9cccfc5fdc960c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749431"
 ---
 # <a name="import-data"></a>Importar datos
 
@@ -50,7 +56,7 @@ Or should the core general content simply include both?
 -->
 Si desea importar datos a Common Data Service, puede usar la función de *importación de datos*. Importación de datos le permite cargar datos de los distintos sistemas de administración de relaciones con el cliente y orígenes de datos en Common Data Service. Puede importar datos a los atributos estándar y personalizados de la mayoría de las entidades de negocio y personalizadas. También puede incluir datos relacionados, como notas y datos adjuntos.  
   
-El Common Data Service incluye una herramienta de aplicación web denominada Asistente para la importación de datos. Use esta herramienta para importar registros de datos de uno o varios valores separados por comas (.csv), de una hoja de cálculo XML 2003 (.xml) o de archivos de texto.  
+Common Data Service incluye una herramienta de la aplicación web denominada Asistente para la importación de datos. Use esta herramienta para importar registros de datos de uno o varios valores separados por comas (.csv), de una hoja de cálculo XML 2003 (.xml) o de archivos de texto.  
   
  Para obtener más información sobre el Asistente para la importación de datos, consulte la Ayuda de Common Data Service.  
   
@@ -89,7 +95,7 @@ El Common Data Service incluye una herramienta de aplicación web denominada Asi
   
 - Transformar los datos analizados.  
   
-- Cargar los datos transformados al servidor de Common Data Service de destino.  
+- Cargar los datos transformados al servidor Common Data Service de destino.  
   
   Puede importar datos de un archivo de origen o de varios archivos de origen. Un archivo de origen puede contener datos de un tipo de entidad o de varios tipos de entidad.  
   

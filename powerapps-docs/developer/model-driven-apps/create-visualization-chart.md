@@ -4,21 +4,24 @@ description: Este tema muestra cómo crear una visualización del gráfico y una
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 9dbed5ee-21a4-ab86-fc4c-08c3838e42f2
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d5a7245b0e620885ab60ca57d674245641745fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749621"
 ---
-
 # <a name="create-a-visualization-chart"></a>Crear una visualización (gráfico)
 
 Para crear una visualización mediante programación, debe crear un registro para la [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md) o la [Entidad UserQueryVisualization](../common-data-service/reference/entities/userqueryvisualization.md) para crear un gráfico propiedad de la organización o propiedad del usuario respectivamente. Este tema muestra cómo crear una visualización del gráfico y una visualización del recurso web.  

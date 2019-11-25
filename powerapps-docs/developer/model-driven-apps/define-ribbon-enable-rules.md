@@ -4,8 +4,6 @@ description: Obtenga información sobre cómo definir las reglas específicas a 
 keywords: ''
 ms.date: 02/08/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
 author: JesseParsons
@@ -13,12 +11,17 @@ ms.author: jeparson
 manager: annbe
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8c22ec2532371093afbe224a5ea12c44652a30cc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749616"
 ---
-
 # <a name="define-ribbon-enable-rules"></a>Definir las reglas de habilitación de la cinta de opciones
 
 Al configurar los elementos de la cinta de opciones se pueden definir las reglas para supervisar cuando se habilitan los elementos de la cinta de opciones. El elemento `<EnableRule>` se usa de la siguiente manera:  

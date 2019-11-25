@@ -1,5 +1,5 @@
 ---
-title: ' Componente IFRAME| Microsoft Docs'
+title: " Componente IFRAME| Microsoft Docs"
 description: Implementar componente IFRAME
 ms.custom: ''
 manager: kvivek
@@ -8,13 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: d10b03c478f238df02ee7e1309c0e39e758ce4c9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749464"
 ---
 # <a name="implementing-a-iframe-component"></a>Implementar un componente IFRAME
 
 Este ejemplo describe cómo vincular un componente de código a distintos campos en el formulario y usar el valor de estos campos como propiedades de entrada al componente.  
 
 > [!div class="mx-imgBorder"]
-> ![Componente de IFRAME](../media/iframe-control.png "Componente de IFRAME")
+> ![Componente IFRAME](../media/iframe-control.png "Componente IFRAME")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -43,9 +49,9 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSIFrameControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Reference to Bing Map IFrame HTMLElement
+  // reference to Bing Map IFrame HTMLElement
   private _bingMapIFrame: HTMLElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Flag if control view has been rendered

@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708591"
 ---
-
 # <a name="control-flow-tags"></a>Etiquetas del flujo de control
 
 Las etiquetas del flujo de control determinan qué bloque de código se debe ejecutar y qué contenido se debe representar según las condiciones dadas. Las condiciones se crean mediante los [operadores de Liquid](liquid-operators.md) disponibles, o simplemente se basan en si [un valor determinado es verdadero o falso](liquid-conditional-operators.md).  

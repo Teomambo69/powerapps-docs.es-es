@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 96cae5273855fd6458a501aa0757da12ba8e1701
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701683"
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>Información general del diseñador de formularios controlado por modelos
 El nuevo diseñador de formularios controlados por modelos proporciona una moderna experiencia de creación de WYSIWYG al trabajar con formularios controlados por modelos. Incluye varias mejoras que no están disponibles en el diseñador de formularios basado en modelos clásico. 
@@ -40,7 +46,7 @@ La interfaz del diseñador de formularios tiene las siguientes áreas:
 - Ajuste al ancho - Acción rápida para ajustar la vista previa del formulario al ancho disponible.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerOverview.png "Diseño del Diseñador de formularios")
+> ![](media/FormDesignerOverview.png "Form designer layout")
 
 ## <a name="see-also"></a>Vea también
 [Crear, editar o configurar formularios usando el diseñador de formularios](create-and-edit-forms.md)  

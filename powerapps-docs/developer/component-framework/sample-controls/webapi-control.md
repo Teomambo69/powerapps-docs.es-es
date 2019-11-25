@@ -1,5 +1,5 @@
 ---
-title: ' Componente de API web| Microsoft Docs'
+title: " Componente de API web| Microsoft Docs"
 description: Implementar componente de API web
 ms.custom: ''
 manager: kvivek
@@ -8,13 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
+ms.openlocfilehash: 4e893466a5a7404926942b4e297cdc4ecb1affef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749459"
 ---
 # <a name="implementing-web-api-component"></a>Implementar componente de API web
 
 El componente de API web está diseñado para realizar crear, recuperar, actualizar y eliminar acciones. El componente genera cuatro botones, en los que se puede hacer clic para invocar distintas acciones de la API web. El resultado de la llamada de la API web se inserta en un elemento div HTML en la parte inferior del componente de código.  
 
 > [!div class="mx-imgBorder"]
-> ![Componente de la API web](../media/web-api-control.png "Componente de la API web")
+> ![Componente de API web](../media/web-api-control.png "Componente de API web")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -44,10 +50,10 @@ Aplicaciones basadas en modelos
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSWebAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Name of entity to use for example Web API calls performed by this control
   private static _entityName: string = "account";
@@ -64,14 +70,14 @@ export class TSWebAPI
   private static _currencyAttributeNameFriendlyName: string = "annual revenue";
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // References to button elements rendered by example custom control
+  // references to button elements rendered by example custom control
   private _createEntity1Button: HTMLButtonElement;
   private _createEntity2Button: HTMLButtonElement;
   private _createEntity3Button: HTMLButtonElement;
   private _deleteRecordButton: HTMLButtonElement;
   private _fetchXmlRefreshButton: HTMLButtonElement;
   private _oDataRefreshButton: HTMLButtonElement;
-  // References to div elements rendered by the example custom control
+  // references to div elements rendered by the example custom control
   private _odataStatusContainerDiv: HTMLDivElement;
   private _resultContainerDiv: HTMLDivElement;
   /**
@@ -284,7 +290,7 @@ export class TSWebAPI
     var thisRef = this;
     // Invoke the Web API to creat the new record
     this._context.webAPI.createRecord(TSWebAPI._entityName, data).then(
-      function(response: ComponentFramework.EntityReference) {
+      function(response: ComponentFramework.Entityreference) {
         // Callback method for successful creation of new record
         // Get the ID of the new record created
         let id: string = response.id;
@@ -324,14 +330,14 @@ export class TSWebAPI
     lookUpPromise.then(
       // Callback method - invoked after user has selected an item from the lookup dialog
       // Data parameter is the item selected in the lookup dialog
-      (data: ComponentFramework.EntityReference[]) => {
+      (data: ComponentFramework.Entityreference[]) => {
         if (data && data[0]) {
           // Get the ID and entityType of the record selected by the lookup
           let id: string = data[0].id;
           let entityType: string = data[0].entityType!;
           // Invoke the deleteRecord method of the WebAPI to delete the selected record
           this._context.webAPI.deleteRecord(entityType, id).then(
-            function(response: ComponentFramework.EntityReference) {
+            function(response: ComponentFramework.Entityreference) {
               // Record was deleted successfully
               let responseId: string = response.id;
               let responseEntityType: string = response.entityType!;

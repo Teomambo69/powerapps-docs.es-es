@@ -9,18 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707315"
 ---
-
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Crear y editar entidades con el explorador de soluciones
 
 Puede crear fácilmente una entidad mediante el portal de PowerApps para la mayoría de las situaciones comunes, pero no todas las capacidades se implementan ahí. Cuando necesite cumplir los requisitos descritos en [Creación y edición de entidades en Common Data Service](create-edit-entities.md), puede cumplirlas creando o editar entidades mediante el Explorador de soluciones.
@@ -106,7 +111,7 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 También puede realizar los siguientes cambios:
-- [Creación y edición de campos para Common Data Service](create-edit-fields.md)
+- [Crear y editar campos para Common Data Service](create-edit-fields.md)
 - [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)
 - [Creación y diseño de formularios](../model-driven-apps/create-design-forms.md)
 - [Crear un flujo de proceso de negocio para estandarizar los procesos](/flow/create-business-process-flow)
@@ -174,7 +179,7 @@ Las siguientes opciones se establecen de forma predeterminada y no se pueden cam
  - **Notas (incluye archivos adjuntos)**
  - **Conexiones**
  - **Colas**
- - **Capacidad de trabajar sin conexión Dynamics 365 para Outlook**
+ - **Funcionalidad sin conexión para Dynamics 365 for Outlook**
 
 Las siguientes opciones no se pueden establecer:
 
@@ -197,6 +202,6 @@ Algunas opciones se usan únicamente al crear una entidad virtual.
 Más información: [Crear y editar entidades virtuales que contienen datos desde un origen de datos externo](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>Vea también
-[Creación y edición entidades en Common Data Service](create-edit-entities.md)<br />
+[Crear y editar entidades en Common Data Service](create-edit-entities.md)<br />
 [Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Crear una solución](create-solution.md)

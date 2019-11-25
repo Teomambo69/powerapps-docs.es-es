@@ -1,7 +1,6 @@
-# This TOC is a work in progress. The specific location of items is not locked down
 - name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
-- name: Información general para desarrolladores
+- name: Información general del desarrollador
   href: overview.md
 - name: Introducción
   href: get-started-cds-developers.md
@@ -13,62 +12,62 @@
   items:
     - name: Usar la API web
       href: webapi/index.md
-    - name: Usar el servicio de organización
+    - name: Utilizar el Servicio de organización
       href: org-service/index.md
-    - name: Agregar y quitar datos de ejemplo
-      href: sample-data.md
-    - name: Usar FetchXML para consultar datos
+    - name: Crear acciones propias
+      href: custom-actions.md
+    - name: Uso de FetchXML para consultar datos
       href: use-fetchxml-construct-query.md
       items:
-        - name: Usar la agregación de FetchXML
+        - name: Usar el agregado FetchXML
           href: use-fetchxml-aggregation.md
-        - name: Fecha fiscal y operadores de consultas anteriores a datetime de FetchXML
+        - name: Fecha fiscal y operadores de consultas de fecha y hora más antiguo de en FetchXML
           href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
-        - name: Usar una combinación externa izquierda en FetchXML para consultar registros "not in"
+        - name: Use una combinación externa izquierda en FetchXML para consultar los registros "no en"
           href: use-fetchxml-left-outer-join-query-records-not-in.md
-        - name: Paginación de grandes conjuntos de resultados con FetchXML
+        - name: Páginar grandes conjuntos de resultados con FetchXML
           href: org-service/page-large-result-sets-with-fetchxml.md
     - name: Consultas guardadas
       href: saved-queries.md
     - name: Consultar datos jerárquicos
       href: query-hierarchical-data.md
-    - name: Auditar cambios de datos
+    - name: Auditar cambios de los datos
       href: auditing-overview.md
       items:
-        - name: Configurar entidades y atributos para auditorías
+        - name: Configurar entidades y atributos para auditoría
           href: configure-entities-attributes-auditing.md
         - name: Recuperar y eliminar el historial de cambios de datos auditados
           href: retrieve-and-delete-the-history-of-audited-data-changes.md
-        - name: Auditar el acceso de usuario
+        - name: Auditoría de acceso de usuario
           href: audit-user-access.md
-        - name: Crear atributos de numeración automática
-          href: create-auto-number-attributes.md
     - name: Detectar datos duplicados
       href: detect-duplicate-data-with-code.md
       items:
-        - name: Habilitar y deshabilitar detección de duplicados
+        - name: Habilitar y deshabilitar la detección de duplicados
           href: enable-disable-duplicate-detection.md
         - name: Ejecutar detección de duplicados
           href: run-duplicate-detection.md
         - name: Mensajes de detección de duplicados
           href: duplicate-detection-messages.md
-        - name: Entidades de reglas de duplicados
+        - name: Entidades de regla de duplicados
           href: duplicaterule-entities.md
-    - name: Eliminar datos de forma masiva
+    - name: Eliminar datos en masa
       href: delete-data-bulk.md
-    - name: Usar simultaneidad optimista para reducir la posible pérdida de datos
+    - name: Usar simultaneidad optimista para reducir la pérdida potencial de datos
       href: optimistic-concurrency.md
     - name: Suplantar a otro usuario
       href: impersonate-another-user.md
     - name: Prácticas recomendadas
       href: best-practices/work-with-data/index.md
-- name: Aplicar lógica de negocios con código
+    - name: Agregar y quitar datos de ejemplo
+      href: sample-data.md
+- name: Aplicar la lógica de negocios usando código
   href: apply-business-logic-with-code.md
   items:
     - name: Marco de trabajo de eventos
       href: event-framework.md
       items:
-        - name: Describir el contexto de ejecución
+        - name: Entender el contexto de ejecución
           href: understand-the-data-context.md
         - name: Comportamiento de operaciones de actualización especializadas
           href: special-update-operation-behavior.md
@@ -79,7 +78,7 @@
       items:
         - name: Escribir un complemento
           href: write-plug-in.md
-        - name: Controlar las excepciones
+        - name: Administrar excepciones
           href: handle-exceptions.md
         - name: Suplantar a un usuario
           href: impersonate-a-user.md
@@ -87,13 +86,13 @@
           href: register-plug-in.md
         - name: Depurar un complemento
           href: debug-plug-in.md
-        - name: Seguimiento y registro
+        - name: Registro y seguimiento
           href: logging-tracing.md
         - name: Analizar el rendimiento
           href: analyze-performance.md
-        - name: Solución de problemas de los complementos
+        - name: Solución de problemas de complementos
           href: troubleshoot-plug-in.md
-        - name: Acceder a recursos web externos
+        - name: Acceso a recursos web externos
           href: access-web-services.md
         - name: Tutoriales
           items:
@@ -103,7 +102,7 @@
               href: tutorial-debug-plug-in.md
             - name: Actualizar un complemento
               href: tutorial-update-plug-in.md
-        - name: Código de ejemplo
+        - name: 'Código de ejemplo '
           items:
             - name: Crear un complemento básico
               href: org-service/samples/basic-followup-plugin.md
@@ -115,20 +114,20 @@
       href: scalable-customization-design/overview.md
     - name: Prácticas recomendadas
       href: best-practices/business-logic/index.md
-- name: Integrar datos mediante código
+- name: Integrar datos usando código
   items:
     - name: Importar datos
       href: import-data.md
       items:
-        - name: Preparar archivos de origen para la importación
+        - name: Preparar archivos de origen para importar
           href: prepare-source-files-import.md
-        - name: Crear asignaciones de datos para la importación
+        - name: Crear asignaciones de datos para importar
           href: create-data-maps-for-import.md
         - name: Agregar asignaciones de transformación para la importación
           href: add-transformation-mappings-import.md
         - name: Configurar la importación de datos
           href: configure-data-import.md
-        - name: Ejecutar la importación de datos
+        - name: Ejecutar importación de datos
           href: run-data-import.md
         - name: Entidades de importación de datos
           href: data-import-entities.md
@@ -139,11 +138,11 @@
       items:
         - name: Usar una clave alternativa para crear un registro
           href: use-alternate-key-create-record.md
-        - name: Usar el seguimiento de cambios para sincronizar datos con sistemas externos
+        - name: Uso del seguimiento de cambios para sincronizar los datos con sistemas externos
           href: use-change-tracking-synchronize-data-external-systems.md
-        - name: Usar Upsert para insertar o actualizar un registro
+        - name: Use Upsert para insertar o actualizar un registro
           href: use-upsert-insert-update-record.md
-    - name: Sincronización del lado servidor
+    - name: Sincronización del lado del servidor
       href: server-side-synchronization-entities.md
       items:
         - name: Configurar reglas de seguimiento de nivel de carpeta de Exchange
@@ -155,42 +154,42 @@
       items:
         - name: Trabajar con datos en la solución de Azure
           href: work-data-azure-solution.md
-        - name: Trabajar con datos de evento en la solución Centro de eventos de Azure
+        - name: Trabajar con datos de eventos en la solución del Centro de eventos de Azure
           href: work-event-data-azure-event-hub-solution.md
-        - name: Configurar la integración de Azure con Common Data Service para aplicaciones
+        - name: Configurar la integración de Azure con Common Data Service
           href: configure-azure-integration.md
-        - name: Escribir un complemento personalizado compatible con Azure
+        - name: Escribir un complemento con Azure personalizado
           href: write-custom-azure-aware-plugin.md
-        - name: Escribir una aplicación de agente de escucha para una solución de Azure
+        - name: Escriba una aplicación de escucha para una solución de Azure
           href: write-listener-application-azure-solution.md
-        - name: 'Tutorial: Configurar Azure (SAS) para la integración con involucración del cliente'
+        - name: 'Tutorial: Configurar Azure (SAS) para integración con Common Data Service'
           href: walkthrough-configure-azure-sas-integration.md
-        - name: 'Tutorial: Registrar un complemento compatible con Azure mediante la herramienta de registro de complementos'
+        - name: 'Tutorial: Registrar un complemento basado en Azure con la herramienta de registro de complementos'
           href: walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md
-        - name: 'Tutorial: Actualizar un punto de conexión de servicio importado de una solución'
+        - name: 'Tutorial: Actualizar un extremo de servicio importado de una solución'
           href: walkthrough-update-service-endpoint-imported-solution.md
-    - name: Usar webhooks
+    - name: Utilizar WebHooks
       href: use-webhooks.md
       items:
-        - name: Usar webhooks para crear controladores externos para eventos de servidor
+        - name: Utilice webhooks para crear controladores externos para eventos de servidor
           href: use-webhooks.md
         - name: Registrar un webhook
           href: register-web-hook.md
-        - name: Probar el registro de webhook
+        - name: Probar registro de webhook
           href: test-webhook-registration.md
-- name: Trabajo con entidades de Common Data Service
+- name: Trabajar con entidades de Common Data Service
   href: entities.md
   items:
     - name: Entidades de cliente
       href: customer-entities-account-contact.md
-    - name: Entidades Activity
+    - name: Entidades de actividad
       href: activity-entities.md
       items:
-        - name: Entidades personalizadas
+        - name: Actividades personalizadas
           href: custom-activities.md
         - name: Entidades de actividad de correo electrónico
           href: email-activity-entities.md
-        - name: 'Entidades de actividades de tarea, fax, llamada de teléfono y correspondencia'
+        - name: 'Entidades de actividad de tarea, fax, llamada telefónica y carta'
           href: task-fax-phone-call-letter-activity-entities.md
         - name: Entidad ActivityParty
           href: activityparty-entity.md
@@ -200,13 +199,13 @@
           items:
             - name: Modelo de expansión parcial de citas periódicas
               href: recurring-appointment-partial-expansion-model.md
-            - name: 'Crear una serie, una instancia o una excepción de citas periódicas'
+            - name: 'Crear una instancia, excepción o serie de cita periódica.'
               href: create-recurring-appointment-series-instance-exception.md
             - name: Actualizar una cita periódica
               href: update-recurring-appointment.md
-            - name: Enlazar atributos personalizados de las entidades Appointment y RecurringAppointmentMaster
+            - name: Vincular los atributos personalizados de las entidades de cita y cita periódica maestra
               href: link-custom-attributes-recurring-master-appointment-entities.md
-    - name: Entidad Annotation (nota)
+    - name: Entidad de anotación (nota)
       href: annotation-note-entity.md
     - name: Entidades de calendario
       href: calendar-entities.md
@@ -215,23 +214,23 @@
           href: types-calendars.md
     - name: Entidades de cola
       href: queue-entities.md
-    - name: Entidad Subject
+    - name: Entidad de tema
       href: subject-entity.md
-    - name: Aplicar contratos de nivel de servicio (SLA)
+    - name: Aplicar Contratos de nivel de servicio (SLA)
       href: apply-slas-entities.md
-    - name: Entidad TransactionCurrency (moneda)
+    - name: Entidad de divisa de la transacción (divisa)
       href: transaction-currency-currency-entity.md
-    - name: Entidad Category
+    - name: Entidad de categoría
       href: use-category-entity.md
-    - name: Entidad Feedback
+    - name: Entidad de comentarios
       href: use-feedback-entity-manage-feedback-ratings-records.md
     - name: Entidades de seguridad
       href: security-model.md
       items:
-        - name: Entidades de usuario y equipo
+        - name: Entidades de usuarios y equipos
           href: user-team-entities.md
           items:
-            - name: Especificar configuración de zona horaria de un usuario
+            - name: Especificación de la configuración de zona horaria para un usuario
               href: specify-time-zone-settings-user.md
             - name: Entidades de zona horaria
               href: time-zone-entities.md
@@ -239,47 +238,51 @@
               href: businessunit-entity.md
             - name: Entidades de seguridad de campo
               href: field-security-entities.md
-            - name: Usar equipos de acceso y equipos de propietarios para colaborar y compartir información
+            - name: Usar equipos de acceso y de propietario para colaborar y compartir información
               href: use-access-teams-owner-teams-collaborate-share-information.md
     - name: Entidades de plantilla
       href: upload-manage-document-templates.md
 - name: Trabajar con metadatos mediante código
   href: metadata-services.md
   items:
-    - name: Examinar metadatos del entorno
+    - name: Examinar los metadatos del entorno
       href: browse-your-metadata.md
-    - name: Metadatos de entidad
+    - name: Metadatos de la entidad
       href: entity-metadata.md
       items:
-        - name: Personalizar metadatos de entidades
+        - name: Personalizar metadatos de entidad
           href: customize-entity-metadata.md
-        - name: Definir claves alternativas de una entidad
+        - name: Defina claves alternativas para una entidad
           href: define-alternate-keys-entity.md
-    - name: Metadatos de atributo
+    - name: Metadatos del atributo
       href: entity-attribute-metadata.md
       items:
-        - name: Mensajes de metadatos de atributos de entidades
+        - name: Mensajes de metadatos de atributos de entidad
           href: entity-attribute-metadata-messages.md
         - name: Comportamiento y formato del atributo de fecha y hora
           href: behavior-format-date-time-attribute.md
-        - name: Atributos consolidados y calculados
+        - name: Atributos calculados y consolidados
           href: calculated-rollup-attributes.md
+        - name: Crear atributos de numeración automática
+          href: create-auto-number-attributes.md
         - name: Atributos de lista desplegable de selección múltiple
           href: multi-select-picklist.md
+        - name: Atributos de archivo
+          href: file-attributes.md
         - name: Atributos de imagen
           href: image-attributes.md
         - name: Definir transiciones de modelo de estado personalizadas
           href: define-custom-state-model-transitions.md
-    - name: Metadatos de relaciones de entidad
+    - name: Metadatos de relación entre entidades
       href: entity-relationship-metadata.md
       items:
-        - name: Idoneidad de relaciones de entidades
+        - name: Idoneidad de la relación entre entidades
           href: entity-relationship-eligibility.md
-        - name: Mensajes de metadatos de relaciones de entidades
+        - name: Mensajes de metadatos de relación entre entidades
           href: entity-relationship-metadata-messages.md
-        - name: Comportamiento en cascada de relaciones de entidades
+        - name: Comportamiento en cascada de las relaciones entre entidades
           href: configure-entity-relationship-cascading-behavior.md
-    - name: Personalizar asignaciones de atributos y entidades
+    - name: Personalizar asignaciones de entidad y atributo
       href: customize-entity-attribute-mappings.md
     - name: Usar conexiones para vincular registros entre sí
       href: connection-entities.md
@@ -290,22 +293,22 @@
       href: customize-labels-support-multiple-languages.md
     - name: Prácticas recomendadas
       href: best-practices/work-with-metadata/index.md
-- name: Empaquetar y distribuir extensiones mediante soluciones
+- name: Empaquetar y distribuir las extensiones con soluciones
   items:
-    - name: Introducción a las soluciones
+    - name: Introducción a soluciones
       href: introduction-solutions.md
       items:
-        - name: Seguimiento de dependencias para los componentes de la solución
+        - name: Seguimiento de las dependencias de los componentes de la solución
           href: dependency-tracking-solution-components.md
         - name: Mantener soluciones administradas
           href: maintain-managed-solutions.md
-        - name: Organizar soluciones
+        - name: Organizar sus soluciones
           href: organize-solutions.md
-        - name: Organizar el equipo para desarrollar soluciones
+        - name: Organizar a su equipo para desarrollar soluciones
           href: organize-team-develop-solutions.md
         - name: Usar propiedades administradas
           href: use-managed-properties.md
-        - name: Comprender cómo se combinan las soluciones administradas
+        - name: Comprender cómo se combinan soluciones administradas
           href: understand-managed-solutions-merged.md
         - name: Crear soluciones que admitan varios idiomas
           href: create-solutions-support-multiple-languages.md
@@ -319,67 +322,67 @@
               href: work-solutions.md
             - name: 'Crear, instalar y actualizar una solución administrada'
               href: create-install-update-managed-solution.md
-            - name: Crear revisiones para simplificar actualizaciones de soluciones
+            - name: Crear revisiones para simplificar las actualizaciones de la solución
               href: create-patches-simplify-solution-updates.md
-            - name: Cuándo se debe editar el archivo de personalizaciones
+            - name: Cuándo modificar el archivo de personalizaciones
               href: when-edit-customization-file.md
-    - name: Build Tools para Azure DevOps
+    - name: Herramientas de compilación para Azure DevOps
       items:
         - name: Información general
           href: build-tools-overview.md
         - name: Tareas
           href: build-tools-tasks.md
-        - name: Preguntas más frecuentes y tutorial
+        - name: Tutorial y preguntas más frecuentes
           href: build-tools-tutorial-faq.md
-    - name: Herramienta SolutionPackager
+    - name: 'Herramienta SolutionPackager '
       href: compress-extract-solution-file-solutionpackager.md
       items:
         - name: Control de código fuente con archivos de solución
           href: use-source-control-solution-files.md
     - name: Herramienta Package Deployer
       href: package-deployer/create-packages-package-deployer.md
-    - name: Comprobar la calidad de soluciones y paquetes
+    - name: Comprobar calidad de soluciones y de paquetes
       items:
-        - name: Usar la API web del Comprobador de PowerApps
+        - name: Usar la API web del comprobador de PowerApps
           href: checker/webapi/overview.md
         - name: Invocar el análisis
           href: checker/webapi/analyze.md
-        - name: Comprobar el estado de análisis
+        - name: Comprobar estado de análisis
           href: checker/webapi/check-status.md
         - name: Recuperar la lista de reglas
           href: checker/webapi/retrieve-rules.md
         - name: Recuperar la lista de conjuntos de reglas
           href: checker/webapi/retrieve-rulesets.md
-        - name: Cargar un archivo para el análisis
+        - name: Cargar un archivo para analizar
           href: checker/webapi/upload-file.md
     - name: Publicar la aplicación en AppSource
       href: publish-app-appsource.md
       items:
         - name: 'Paso 1: Rellenar el formulario de envío de la aplicación en AppSource'
           href: fill-app-submission-form-appsource.md
-        - name: 'Paso 2: Registrarse para una cuenta de Microsoft Partner Network'
+        - name: 'Paso 2: Registrar una cuenta en Microsoft Partner Network'
           href: register-microsoft-partner-network.md
         - name: 'Paso 3: Crear una solución administrada para la aplicación'
           href: create-solution-app-appsource.md
-        - name: 'Paso 4: Crear un paquete de AppSource para la aplicación'
+        - name: 'Paso 4: Crear un paquete AppSource para la aplicación'
           href: create-package-app-appsource.md
-        - name: 'Paso 5: Almacenar el paquete de AppSource en Azure Storage y generar una URL con la clave SAS'
+        - name: 'Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS'
           href: store-appsource-package-azure-storage.md
-        - name: 'Pasos siguientes: Enviar la aplicación en Cloud Partner Portal'
+        - name: 'Pasos siguientes: enviar la aplicación al Centro de partners'
           href: next-steps-submit-app-cloud-partner-portal.md
-        - name: 'Apéndice: Lista de comprobación de procedimientos recomendados para el diseño de aplicaciones'
+        - name: 'Apéndice: Lista de comprobación de procedimientos recomendados de diseño de la aplicación'
           href: appendix-app-design-best-practices-checklist.md
-        - name: 'Apéndice: Lista de comprobación para la certificación de aplicaciones'
+        - name: 'Apéndice: Lista de comprobación de certificación de aplicaciones'
           href: appendix-app-certification-checklist.md
-    - name: Administración y supervisión de aplicaciones ISV
+    - name: Administración y supervisión de aplicaciones de ISV
       items:
         - name: Introducción a ISV Studio
           href: isv-app-management.md
         - name: Página principal
           href: isv-app-management-homepage.md
-        - name: Página de la aplicación
+        - name: Página de aplicación
           href: isv-app-management-apppage.md
-        - name: Página del inquilino
+        - name: Página de inquilino
           href: isv-app-management-tenantpage.md
 - name: Crear aplicaciones cliente
   href: connect-cds.md
@@ -387,7 +390,7 @@
     - name: Autenticar
       href: authentication.md
       items:
-        - name: Aplicaciones de .NET Framework
+        - name: Aplicaciones .NET Framework
           href: authenticate-dot-net-framework.md
         - name: Usar OAuth
           href: authenticate-oauth.md
@@ -396,48 +399,50 @@
     - name: Crear aplicaciones web mediante autenticación de servidor a servidor (S2S)
       href: build-web-applications-server-server-s2s-authentication.md
       items:
-        - name: Usar la autenticación de servidor a servidor de varios inquilinos
+        - name: Usar autenticación multiempresa entre servidores
           href: use-multi-tenant-server-server-authentication.md
-        - name: Usar la autenticación de servidor a servidor de un solo inquilino
+        - name: Usar autenticación entre servidores de una sola empresa
           href: use-single-tenant-server-server-authentication.md
-    - name: Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de página única
+    - name: Usar OAuth con uso compartido de recursos de origen cruzado para conectar una aplicación de una sola página
       href: oauth-cross-origin-resource-sharing-connect-single-page-application.md
-    - name: 'Tutorial: Registrar y configurar una aplicación de SPA con adal.js'
+    - name: 'Tutorial: Registrar y configurar una aplicación SPA con adal.js'
       href: walkthrough-registering-configuring-simplespa-application-adal-js.md
-    - name: Compilar aplicaciones cliente de Windows mediante herramientas de XRM
+    - name: Crear aplicaciones cliente de Windows mediante herramientas XRM
       href: xrm-tooling/
-    - name: Descubrir organizaciones de usuarios
+    - name: Detectar organizaciones de usuario
       href: discovery-service.md
-- name: Procedimientos recomendados
+- name: Prácticas recomendadas
   href: best-practices/index.md
-- name: Ejemplos
+- name: API de administración en línea
+  href: online-management-api/overview.md
+- name: Muestras
   items:
-    - name: API web
+    - name: Web API
       href: webapi/samples/toc.yml
     - name: Servicio de organización
       href: org-service/samples/toc.yml
 - name: Recursos
   items:
     - name: Página de recursos para desarrolladores
-      href: developer-resources-page.md
-    - name: Herramientas de desarrollo
+      href: view-download-developer-resources.md
+    - name: Herramientas del desarrollador
       href: developer-tools.md
       items:
         - name: Descargar herramientas de NuGet
           href: download-tools-nuget.md
-    - name: Herramientas de la comunidad
+    - name: Herramientas de la Comunidad
       href: community-tools.md
-    - name: Herramientas de pruebas
+    - name: Herramientas de prueba
       href: testing-tools-server.md
 - name: Referencia
   items:
-    - name: Referencia de entidades
+    - name: Referencia de entidad
       href: reference/entities/toc.yml
-    - name: Referencia de API web
+    - name: Referencia de la API web
       href: /dynamics365/customer-engagement/web-api/about
     - name: Servicio de organización
       href: /dotnet/api/?view=dynamics-general-ce-9
-    - name: Herramientas XRM
+    - name: Útiles de XRM
       href: /dotnet/api/?view=dynamics-xrmtooling-ce-9
     - name: Entidad virtual
       href: /dotnet/api/?view=dynamics-virtualentity-ce-9
@@ -447,7 +452,7 @@
       href: /dotnet/api/?view=dynamics-deployer-ce-9
     - name: Esquema de archivo de soluciones de personalización
       href: customization-solutions-file-schema.md
-    - name: Referencia de archivo del componente de solución (SolutionPackager)
+    - name: Referencia de archivo de componente de la solución (SolutionPackager)
       href: solution-component-file-reference-solutionpackager.md
     - name: Esquema FetchXML
       href: fetchxml-schema.md

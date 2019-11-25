@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6dc0aeb076aa97950b2049cc8054a809bf268e0d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749446"
 ---
-
 <!-- This topic was not migrated it was written for PowerApps 
 Was Mike Carter
 Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
@@ -82,6 +87,7 @@ En la siguiente tabla:
 |Recogida|`CalendarRulesType`|No|Contiene una colección de registros de entidad `CalendarRules`.<br />No hay atributos reales que usen est tipo. Cuando se genera un proxy, la herramienta de generación de código creará los dos atributos simulados que no están presentes en los metadatos. Estos atributos representan una vista de registros de reglas de calendario asociados en una relación de uno a varios al registro de entidades.|
 |Recogida|`PartyListType`|No|Contiene una colección de registros de entidad `ActivityParty`.<br />Más información: [Entidad ActivityParty](reference/entities/activityparty.md).|
 |Fecha y hora|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Sí<br />**Fecha y hora**|Contiene un valor de fecha y hora.<br />Todos los atributos de fecha y hora admiten valores de hasta 1/1/1753 12:00.|
+|Archivo|`FileType`<br />[FileAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.fileattributemetadata)|Sí<br />**Archivo**|Contiene datos para admitir la recuperación de datos binarios para un registro de entidades.<br />Más información [Atributos de archivo](file-attributes.md)|
 |Imagen|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Sí<br />**Imagen**|Contiene datos para admitir la recuperación de datos de imagen para un registro de entidades.<br />Más información: [Imágenes de entidad](entity-metadata.md#entity-images)|
 |Propiedad administrada|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|No|Contiene datos que describen si el componente de la solución almacenado en el registro de la entidad se puede personalizar cuando está incluido en una solución administrada.<br />Más información: [Propiedades administradas](introduction-solutions.md#managed-properties)|
 |Cantidad|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|No|Contiene un valor `BigInt`. Solo para uso interno.|

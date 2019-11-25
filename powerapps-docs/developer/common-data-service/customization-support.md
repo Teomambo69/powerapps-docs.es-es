@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e9810433-224b-4bde-851a-e581cf5fb8a4
 caps.latest.revision: 21
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e2dd81bca0ab5805d88f5db0aff9a1f83c8d87ac
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749571"
 ---
-
 # <a name="common-data-service-supported-and-unsupported-app-building-practices"></a>Prácticas de creación de aplicaciones compatibles e incompatibles con Common Data Service
 
 <!--

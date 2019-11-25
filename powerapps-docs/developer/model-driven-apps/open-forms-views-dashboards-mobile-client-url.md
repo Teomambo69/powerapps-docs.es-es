@@ -1,6 +1,6 @@
 ---
-title: 'Abrir formularios, vistas y paneles en el cliente móvil de Dynamics 365 con una dirección URL (aplicaciones basadas en modelos) | Microsoft Docs'
-description: 'Use el nuevo controlador de aplicaciones para que los clientes móviles de Dynamics 365 se vinculen directamente a los formularios, las vistas y los paneles de Dynamics 365 desde aplicaciones externas de modo que al hacer clic en el vínculo de una aplicación externa, el elemento de destino se abra en Dynamics 365 para smartphones o en Dynamics 365 para tabletas.'
+title: Abrir formularios, vistas y paneles en el cliente móvil de Dynamics 365 con una dirección URL (aplicaciones basadas en modelos) | Microsoft Docs
+description: Use el nuevo controlador de aplicaciones para que los clientes móviles de Dynamics 365 se vinculen directamente a los formularios, las vistas y los paneles de Dynamics 365 desde aplicaciones externas de modo que al hacer clic en el vínculo de una aplicación externa, el elemento de destino se abra en Dynamics 365 para smartphones o en Dynamics 365 para tabletas.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0c4e3c0fe4188b3b9f2d95cb479a23f6e54c193b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749421"
 ---
 # <a name="open-forms-views-and-dashboards-in-mobile-client-with-a-url"></a>Abrir formularios, vistas y paneles en el cliente móvil con una dirección URL
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
 
 At this point I understand this mobile client is still branded as 'Dynamics 365'
  -->

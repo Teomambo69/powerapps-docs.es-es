@@ -1,5 +1,5 @@
 ---
-title: ' Componente Flip| Microsoft Docs'
+title: " Componente Flip| Microsoft Docs"
 description: Implementar el componente Flip mediante Angular JS
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749466"
 ---
-
 # <a name="implementing-flip-component"></a>Implementar componente Flip
 
 En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear componentes en PowerApps component framework.  El componente de ejemplo Flip se implementa basándose en angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
@@ -36,7 +41,7 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 </manifest>
 ```
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>información general
 
 Este ejemplo proporciona ejemplos de cómo agregar dependencias para bibliotecas de terceros, mostrando cómo realizar de enlace de datos entre PowerApps component framework, el modelo de componentes y el modelo de datos internos a terceros de forma bidireccional.
 

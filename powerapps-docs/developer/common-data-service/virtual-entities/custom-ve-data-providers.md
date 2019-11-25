@@ -1,22 +1,27 @@
 ---
 title: Proveedores de datos de entidad virtuales personalizados (Common Data Service) | Microsoft Docs
-description: 'Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.'
+description: Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente.
 ms.date: 09/05/2019
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d22
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 50223ab21a885a43c6dcb91285545e67b43c144c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749518"
 ---
-
 # <a name="custom-virtual-entity-data-providers"></a>Proveedores de datos de entidad virtuales personalizados
 
 Al utilizar el SDK de datos de Common Data Service, los desarrolladores de .NET tienen la opción de crear proveedores de datos de entidad virtuales personalizados con el fin de integrar los tipos de orígenes de datos externos que no admite un proveedor de datos existente. Cada proveedor de datos consta de un conjunto reutilizable de complementos Common Data Service que implementan las operaciones CRUD admitidas. (La versión inicial está limitada a las operaciones de lectura **Retrieve** y **RetrieveMultiple**.) En esta sección se ofrece información fundamental sobre los proveedores de datos y enfoques para desarrollar proveedores personalizados, incluido el código de ejemplo.

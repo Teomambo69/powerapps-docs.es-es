@@ -1,6 +1,6 @@
 ---
 title: Entidades y metadatos en Common Data Service | MicrosoftDocs
-description: Obtener más información sobre entidades y metadatos en Common Data Service
+description: Obtener información sobre metadatos y entidades en Common Data Service
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 88b18946-474c-4c94-8e4c-27532f930757
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3aeb07c29178570ca17426cca46dd7cbc73a2aca
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707007"
 ---
-
 # <a name="entities-and-metadata-in-common-data-service"></a>Entidades y metadatos en Common Data Service
 
 Common Data Service está diseñado de modo que pueda crear de forma rápida y sencilla un modelo de datos para su aplicación. Normalmente, no será necesario que se preocupe con algunos de los detalles sobre los metadatos que este tema introducirá. Pero si desea desarrollar conocimientos más profundos sobre cómo funcionan las aplicaciones que usan Common Data Service o si usted está evaluando lo que es posible, la comprensión de los metadatos que usa Common Data Service puede proporcionarle información detallada.

@@ -1,22 +1,28 @@
 ---
 title: Conocer los componentes de las aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
-description: 'Comprender los distintos componentes de una aplicación controlada por modelos, como datos, IU, lógica y visualización.'
-Keywords: 'campos, atributos, aplicación basada en modelos'
+description: Comprender los distintos componentes de una aplicación controlada por modelos, como datos, IU, lógica y visualización.
+Keywords: campos, atributos, aplicación basada en modelos
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 10/17/2019
 ms.service: powerapps
 ms.topic: article
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711803"
 ---
 # <a name="understand-model-driven-app-components"></a>Conocer los componentes de las aplicaciones basadas en modelos
 Una aplicación controlada por modelos bien diseñada se compone de varios componentes que selecciona usando el diseñador para crear la apariencia y funcionalidades de la aplicación terminada. Los componentes y propiedades de componentes que los diseñadores usan para crear una aplicación son los metadatos. 
@@ -24,14 +30,14 @@ Una aplicación controlada por modelos bien diseñada se compone de varios compo
 Para conocer cómo cada uno de estos componentes se relaciona con el diseño de la aplicación, se separan aquí en las categorías de *datos*, *IU*, *lógica* y *visualización*. 
 
 ## <a name="data"></a>Datos
-Estos componentes determinan en qué datos se basará la aplicación.
+Estos componentes determinan en qué datos se basará la aplicación y qué diseñador se utiliza para crear o editar el componente.
 
 
 |Componente  |Descripción  |Diseñador  |
 |---------|---------|---------|
 |Entidad     |Un artículo con propiedades de las que se realiza un seguimiento, como un contacto o una cuenta. Hay disponibles muchas entidades estándar. Puede personalizar una entidad estándar que no sea del sistema (entidad de producción) o crear una entidad personalizada desde cero.     | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
-|Campo     | Propiedad que está asociada a una entidad. Un campo está definido por un tipo de datos, que determina el tipo de datos que se pueden introducir o seleccionar. Por ejemplo: texto, número, fecha y hora, divisa o búsqueda (crea una relación con otra entidad). Los campos suelen usarse con formularios, vistas y búsquedas.        | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]   |
 |Relación     | Las relaciones de entidades definen cómo se pueden relacionar las entidades entre ellas. Existen los tipos de relaciones: 1: N (uno a varios), N: 1 (varios a uno) y N:N (varios a varios). Por ejemplo, al agregar un campo de búsqueda a una entidad se crea una nueva relación de 1:N entre las dos entidades y le permite colocar ese campo de búsqueda en un formulario.   | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]        |
+|Campo     | Propiedad que está asociada a una entidad. Un campo está definido por un tipo de datos, que determina el tipo de datos que se pueden introducir o seleccionar. Por ejemplo: texto, número, fecha y hora, divisa o búsqueda (crea una relación con otra entidad). Los campos suelen usarse con formularios, vistas y búsquedas.        | Diseñador de entidades de [!INCLUDE [powerapps](../../includes/powerapps.md)]   |
 |Campo Conjunto de opciones     | Este es un tipo especial de campo, que proporciona al usuario un conjunto de opciones predeterminadas. Cada opción tiene un valor y una etiqueta del número. Cuando se agrega a un formulario, este campo muestra un control para que el usuario pueda seleccionar una opción.  Hay dos tipos de conjuntos de opciones; conjuntos de opciones, donde el usuario solo puede seleccionar una opción y conjuntos de opciones de selección múltiple, que permiten más de una selección.  | Diseñador de conjunto de opciones de [!INCLUDE [powerapps](../../includes/powerapps.md)]     |
 
 Más información: [Definir datos para su aplicación controlada por modelos](define-data-model-driven-app.md) 
@@ -62,7 +68,11 @@ Determina los procesos de negocio, reglas y automatización que la aplicación t
 
 ![Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio](media/model-driven-app-overview/designer-mash.png)
 
-Más información: [Aplicar lógica de negocios a su aplicación controlada por modelos](guide-staff-through-common-tasks-processes.md)
+Más información: [Aplicar lógica de negocios a su aplicación controlada por modelos](guide-staff-through-common-tasks-processes.md) 
+
+### <a name="additional-options-for-adding-custom-business-logic"></a>Opciones adicionales para agregar lógica de negocios personalizada
+[Use complementos para ampliar los procesos de negocio](../../developer/common-data-service/plug-ins.md) <br />
+[Extensiones de flujo de trabajo](../../developer/common-data-service/workflow/workflow-extensions.md)
 
 ## <a name="visualizations"></a>Visualizaciones
 Determina qué tipo de visualizaciones y de creación de informes tendrá disponible la aplicación.
@@ -72,7 +82,7 @@ Determina qué tipo de visualizaciones y de creación de informes tendrá dispon
 |---------|---------|---------|
 |Gráfico     | Una única visualización gráfica que puede mostrarse en una vista, en un formulario o bien agregar a un panel.        | Diseñador de gráficos        |
 |Panel     | Funciona como una preferencia para una o varias visualizaciones gráficas que proporcionan una visión general de los datos profesionales en los que se puede actuar.        | Diseñador de paneles        |
-|Power BI incrustado     | Agregue ventanas y paneles de Power BI incrustado a la aplicación. Power BI es un servicio basado en la nube que ofrece información detallada de inteligencia empresarial.        |  Combinación de diseñador de gráficos, diseñador de paneles y Power BI       |
+|Power BI insertado     | Agregue ventanas y paneles de Power BI incrustado a la aplicación. Power BI es un servicio basado en la nube que ofrece información detallada de inteligencia empresarial.        |  Combinación de diseñador de gráficos, diseñador de paneles y Power BI       |
 
 ![Panel de ejemplo](media/model-driven-app-overview/dashboard-designer.png)
 

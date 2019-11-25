@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710439"
 ---
-
 # <a name="using-the-tree-view-in-the-form-designer"></a>Use la vista de árbol del diseñador de formularios
 El panel **Vista de árbol** muestra una jerarquía visual de componentes del formulario. Los iconos en la ayuda de la vista de árbol ayudan a identificar rápidamente el tipo de campo o de componente. 
 
@@ -31,7 +36,7 @@ También puede usar la vista de árbol para seleccionar los campos y los compone
 Puede expandir o contraer nodos en la vista de árbol para ver u ocultar los elementos de un nodo. Cuando selecciona un elemento de la vista de árbol, pasa destacarse en la vista previa del formulario, y el panel de propiedades muestra las propiedades del elemento. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerTreeView.png "Vista de árbol")
+> ![](media/FormDesignerTreeView.png "Tree view")
 
 ### <a name="open-the-tree-view"></a>Abra la vista de árbol 
 1. Abra el diseñador de formularios para crear o editar un formulario. 

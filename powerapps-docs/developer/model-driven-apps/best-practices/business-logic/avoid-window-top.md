@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: daa8e5a4a8aaff4b2aecb0942783a84eed328dfb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749455"
 ---
 # <a name="avoid-using-windowtop"></a>Evite usar window.top
 
@@ -32,7 +38,7 @@ search.app:
 ## <a name="symptoms"></a>Síntomas
 
 - El siguiente error de script se mostrará a los usuarios o se incluirá en los registros de errores: `Error: Blocked a frame with origin "https://<yourinstance>.dynamics.com" from accessing a cross-origin frame.`
-- Las personalizaciones puede que no se comporten correctamente en Dynamics 365 App for Outlook, Dynamics 365 for phones y tablets o en una aplicación externa que hospede Common Data Service en un IFrame.
+- Es posible que las personalizaciones no se comporten correctamente en el contexto de Dynamics 365 App for Outlook, Dynamics 365 para teléfonos y tabletas, o una aplicación externa que hospeda Common Data Service en un Iframe.
 
   > [!NOTE]
   > Es posible que haya diversas situaciones donde la administración del error lo enmascara y sigue el procesamiento de script, por lo que produce un comportamiento inesperado.
@@ -41,7 +47,7 @@ search.app:
 
 ## <a name="guidance"></a>Instrucciones
 
-Evite usar `window.top` en los scripts que se ejecuten en Dynamics 365 App for Outlook, Dynamics 365 for phones y tablets o en una aplicación externa que hospede Common Data Service en un IFrame. Aunque estos escenarios no se den actualmente en su organización, debe evitar usar `window.top` o protegerse frente a este problema.
+Evite el uso de `window.top` en scripts que se ejecuten en el contexto de Dynamics 365 App for Outlook, Dynamics 365 para teléfonos y tabletas o en una aplicación externa que hospede Common Data Service en un Iframe. Aunque estos escenarios no se den actualmente en su organización, debe evitar usar `window.top` o protegerse frente a este problema.
 
  > [!IMPORTANT]
  > El uso de `window.parent` o variaciones de la jerarquía principal (por ejemplo,`window.parent.parent`) puede producir los mismos síntomas.

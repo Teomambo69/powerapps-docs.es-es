@@ -10,10 +10,16 @@ author: omarcdoc
 ms.author: omarc
 manager: AnnBe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24c5599a6fe416447d444e46e373d1f443de963f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749408"
 ---
 # <a name="appendix-app-design-best-practices-checklist"></a>Apéndice: Lista de comprobación de procedimientos recomendados de diseño de la aplicación
 

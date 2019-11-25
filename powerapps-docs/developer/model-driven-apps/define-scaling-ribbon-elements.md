@@ -5,20 +5,25 @@ keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: c2cc39d2-e540-0800-f04f-3fa66df21191
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b631b6f440e6ee7629242d4c1c806196fd2800bb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749615"
 ---
-
 # <a name="define-scaling-for-ribbon-elements"></a>Definir escalabilidad para elementos de la cinta de opciones
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->

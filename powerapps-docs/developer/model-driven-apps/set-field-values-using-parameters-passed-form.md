@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749523"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Establecer valores de campo usando parámetros pasados a un formulario
 
@@ -121,7 +127,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
   
 ## <a name="example-set-the-value-for-multi-select-option-set-fields"></a>Ejemplo: Establecer el valor para campos de conjuntos de opciones multiselección
 
-Para establecer el valor del campo **conjunto de opciones multiselección**, indique valores enteros para las opciones de la URL que se utiliza para abrir el formulario. Por ejemplo, establezca las opciones para el campo **Aficiones**, el valor sin codificar para el parámetro extraqs será "hobbies=[1,3,4]".   
+Para establecer el valor del campo **conjunto de opciones multiselección**, indique valores enteros para las opciones de la URL que se utiliza para abrir el formulario. Por ejemplo, establezca las opciones para el campo **Aficiones**, el valor sin codificar para el parámetro extraqs será "hobbies= [1,3,4]".   
 
 ```  
 /main.aspx?etn=contact&extraqs=hobbies%3D%5B1%2C3%2C4%5D&pagetype=entityrecord   

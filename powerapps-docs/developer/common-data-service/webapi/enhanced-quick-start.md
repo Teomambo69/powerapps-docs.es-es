@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa12284b6ca3eeca25ba01d52e4132319586eea4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749508"
 ---
 # <a name="enhanced-quick-start"></a>Inicio rápido mejorado
 
@@ -35,7 +41,7 @@ Para habilitar son necesarios tres pasos:
 
 1. [Agregar la referencia a System.Configuration para el proyecto de Visual Studio](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
 1. [Editar el archivo de configuración de aplicación](#edit-the-application-configuration-file)
-1. [Agregar la instrucción using a Program.cs](#add-using-statement-to-programcs)
+1. [Agregar la directiva using a Program.cs](#add-using-directive-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Agregar la referencia a System.Configuration para el proyecto de Visual Studio
@@ -76,9 +82,9 @@ Esto crea una cadena de conexión a la que se puede hacer referencia por el nomb
 
 Edite los valores `Url`, `Username` y `Password` de la cadena de conexión en `connectionString` para que coincidan con lo que necesita para conectarse al entorno de Common Data Service.
 
-### <a name="add-using-statement-to-programcs"></a>Agregar la instrucción using a Program.cs
+### <a name="add-using-directive-to-programcs"></a>Agregar la directiva using a Program.cs
 
-En la parte superior del archivo Program.cs, agregue esta instrucción using:
+En la parte superior del archivo Program.cs, agregue esta directiva using:
 
 ```csharp
 using System.Configuration;
@@ -96,7 +102,7 @@ Estas aplicaciones auxiliares también se usan en [SampleHelper.cs](https://gith
     > [!NOTE]
     > El nombre de la clase determinará cómo se hará referencia a esas propiedades y métodos auxiliares en `Program.cs`. Las instrucciones restantes esperarán el nombre sea `SampleHelpers`, por lo que debe recordar el nombre si utilizó otro diferente.
 
-1. Agregue las siguientes instrucciones `using`:
+1. Agregue lo siguiente mediante directivas `using`:
 
     ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -274,10 +280,10 @@ Es menos código y ha agregado la gestión de errores y los medios para actualiz
 
 Pulse F5 para ejecutar el programa. Al igual que en el ejemplo [Inicio rápido](quick-start-console-app-csharp.md), el resultado debería tener este aspecto:
 
-    ```
-    Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
-    Press any key to exit.
-    ```
+```
+Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
+Press any key to exit.
+```
 
 ## <a name="create-re-usable-methods"></a>Crear métodos que pueden reutilizarse
 
@@ -343,7 +349,7 @@ En el proyecto de Visual Studio lleve a cabo los pasos siguientes:
 
     De esta forma, la clase `Program` en el archivo `ProgramMethods.cs` solo será una extensión de la clase original `Program` en el archivo `Program.cs`. 
 
-1. Agregue las instrucciones using siguientes a la parte superior del archivo `ProgramMethods.cs`.
+1. Agregue las directivas using siguientes a la parte superior del archivo `ProgramMethods.cs`.
 
     ```csharp
     using Newtonsoft.Json.Linq;

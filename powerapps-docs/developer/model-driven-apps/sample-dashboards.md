@@ -10,10 +10,16 @@ author: Kumarvivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac9ec8cf1572c657422ae77330024346be79ad5d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749599"
 ---
 # <a name="sample-dashboards"></a>Paneles de ejemplo
 
@@ -25,7 +31,7 @@ Este tema contiene paneles de muestra junto con las cadenas respectivas de FormX
 ## <a name="dashboard-with-charts-and-grids"></a>Panel con gráficos y cuadrículas  
  A continuación se facilita un panel de muestra que tiene cuatro componentes: tres gráficos y una cuadrícula. Este es uno de los paneles propiedad de la organización predeterminados, disponible en aplicaciones basadas en modelos.  
   
- ![Panel de ejemplo](media/dashboard-sample.png "Panel de ejemplo: Información general de Microsoft Dynamics 365")  
+ ![Panel de ejemplo](media/dashboard-sample.png "Panel de muestra: Información general de Microsoft Dynamics 365")  
   
 ### <a name="formxml"></a>FormXML  
  El siguiente ejemplo muestra el FormXML para este panel.  

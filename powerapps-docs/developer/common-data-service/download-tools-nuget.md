@@ -1,6 +1,6 @@
 ---
-title: Herramientas de descarga desde NuGet (Common Data Service) | Microsoft Docs
-description: 'Descargue el registro de complementos, la implementación de paquetes y otras herramientas principales de Nuget.'
+title: Descargar herramientas de NuGet (Common Data Service) | Microsoft Docs
+description: Descargue el registro de complementos, la implementación de paquetes y otras herramientas principales de Nuget.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -9,23 +9,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: feb3e634-7c60-46fd-8b92-3f5682b1570b
 author: shmcarth
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c7c548751f54a813116cd18112bbfaa5e7e3f3a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749374"
 ---
-
 # <a name="download-tools-from-nuget"></a>Descargar herramientas de NuGet 
 
-Puede descargar herramientas de NuGet que se utilizan para programar mediante el script de powershell que se encuentra a continuación. Estas herramientas son:
+Puede utilizar el script de PowerShell siguiente para descargar de NuGet herramientas que se utilizan para programar. Estas herramientas son:
 
-|Herramienta|Paquetes NuGet|
+|Herramienta|Paquete de NuGet|
 |-|-|
 |Herramienta de generación de código `CrmSvcUtil.exe`|[Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools)|
 |Herramienta Configuration Migration `DataMigrationUtility.exe`|[Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf)|
@@ -104,5 +109,5 @@ Para obtener la versión más reciente de estas herramientas, repita estos pasos
 [Crear clases de entidad en tiempo de compilación](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)<br />
 [Crear extensiones para la herramienta de generación de código](org-service/extend-code-generation-tool.md)<br />
 [Examinar los metadatos de la organización](browse-your-metadata.md)<br />
-[Implemente los paquetes mediante Dynamics 365 Package Deployer y Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
-[Registro de un complemento](register-plug-in.md)<br />
+[Implementar paquetes mediante Dynamics 365 Package Deployer y Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
+[Registrar un complemento](register-plug-in.md)<br />

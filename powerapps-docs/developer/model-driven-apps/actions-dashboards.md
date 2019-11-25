@@ -1,24 +1,27 @@
 ---
 title: Acciones en paneles (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Obtenga información sobre cómo realizar acciones como crear, recuperar, actualizar o eliminar en paneles que pertenecen a una organización y a un usuario.'
+description: Obtenga información sobre cómo realizar acciones como crear, recuperar, actualizar o eliminar en paneles que pertenecen a una organización y a un usuario.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 339eb79d-5dec-885b-496f-bfa26e9cae08
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 712e3e89477071f8f0ca2de5af84c5219de74c4f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749457"
 ---
-
 # <a name="actions-on-dashboards"></a>Acciones en los paneles
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->

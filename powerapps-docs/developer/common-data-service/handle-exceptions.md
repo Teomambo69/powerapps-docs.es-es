@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 95850e967347040618f7b445df7bd802bb5e33bb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749435"
 ---
 # <a name="handle-exceptions-in-plug-ins"></a>Administrar las excepciones en complementos
 

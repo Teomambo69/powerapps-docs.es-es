@@ -1,5 +1,5 @@
 ---
-title: Utilizar soluciones y revisiones divididas en segmentos para simplificar las actualizaciones de la solución con PowerApps | MicrosoftDocs
+title: Use soluciones y revisiones divididas en segmentos para simplificar las actualizaciones de la solución con PowerApps | MicrosoftDocs
 description: Aprenda a usar la segmentación de la solución para actualizar sus soluciones
 ms.custom: ''
 ms.date: 06/18/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5c05f683-e1bd-4885-be23-b6973128773f
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703135"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>Usar soluciones y revisiones segmentadas para exportar activos seleccionados de la entidad
 
@@ -78,28 +84,28 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  A continuación, seleccione los componentes de la solución.  
   
- ![Seleccionar los componentes de la solución](media/solution-segmentation-select-components-admin.png "Seleccionar los componentes de la solución")  
+ ![Seleccionar componentes de la solución.](media/solution-segmentation-select-components-admin.png "Seleccionar componentes de la solución.")  
   
  Siga el asistente. En el paso 1, empiece en orden alfabético, seleccione los activos para la primera entidad, entidad `Account`, como se indica aquí.  
   
- ![Iniciar el Asistente](media/solution-segmentation-wizard-starts-admin.png "Iniciar el Asistente")  
+ ![Inicie el asistente.](media/solution-segmentation-wizard-starts-admin.png "Inicie el asistente.")  
   
  Abra la pestaña **Campos** y seleccione el campo **Número de cuenta**.  
   
- ![Seleccionar los activos de la entidad Cuenta](media/solution-segmentation-select-account-assets-admin.png "Seleccionar los activos de la entidad Cuenta")  
+ ![Seleccione los activos de la entidad Cuenta.](media/solution-segmentation-select-account-assets-admin.png "Seleccione los activos de la entidad Cuenta.")  
   
  En el paso 2, para la entidad **Caso**, agregue todos los activos.  
   
- ![Seleccionar los activos de la entidad Caso](media/solution-segmentation-select-case-assets-admin.png "Seleccionar los activos de la entidad Caso")  
+ ![Seleccione los activos de la entidad Caso.](media/solution-segmentation-select-case-assets-admin.png "Seleccione los activos de la entidad Caso.")  
   
  En el paso 3, agregue el campo **Aniversario** para la entidad **Contacto**.  
   
- ![Seleccionar los activos de la entidad Contacto](media/solution-segmentation-select-contact-assets-admin.png "Seleccionar los activos de la entidad Contacto")  
+ ![Seleccione los activos de la entidad Contacto.](media/solution-segmentation-select-contact-assets-admin.png "Seleccione los activos de la entidad Contacto.")  
   
  Como resultado, la solución segmentada que se crea contiene tres entidades, `Account`, `Case`, y `Contact`. Cada entidad solo contiene los activos que fueron elegidos.  
   
  > [!div class="mx-imgBorder"] 
- > ![Solución con entidades](media/solution-segmentation-solution-entities-admin.png "Solución con entidades")  
+ > ![Solución con entidades.](media/solution-segmentation-solution-entities-admin.png "Solución con entidades.")  
   
 ## <a name="create-a-solution-patch"></a>Crear una revisión de la solución  
  Una revisión contiene cambios en la solución primaria, como agregar o editar componentes y activos. No es necesario incluir los componentes primarios a menos que prevea modificarlos.  
@@ -117,20 +123,20 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
  Las ilustraciones siguientes proporcionan un ejemplo de crear una revisión para una solución existente. Empiece seleccionando **Clonar una revisión** (en la vista comprimida, el icono **Clonar una revisión** se muestra como dos cuadrados pequeños, como se indica a continuación).  
   
  > [!div class="mx-imgBorder"] 
- > ![Icono Clonar una revisión](media/solution-segmentation-click-patch-icon-admin.png "Icono Clonar una revisión")  
+ > ![Clonar un icono de revisión.](media/solution-segmentation-click-patch-icon-admin.png "Clonar un icono de revisión.")  
   
  En el cuadro de diálogo **Clonar para revisar** se ve que el número de versión de la revisión se basa en el número de versión de la solución primaria, pero el número de compilación se incrementa en uno. Cada revisión posterior tiene un número de compilación o de revisión más alto que la revisión precedente.  
   
- ![Usar el cuadro de diálogo Clonar para revisar](media/solution-segmentation-clone-patch-dialog-admin.png "Usar el cuadro de diálogo Clonar para revisar")  
+ ![Usar diálogo Clonar para revisar.](media/solution-segmentation-clone-patch-dialog-admin.png "Usar diálogo Clonar para revisar.")  
   
  La captura de pantalla siguiente muestra la solución base **SegmentedSolutionExample**, versión **1.0.1.0** y revisión **SegmentedSolutionExample_Patch**, versión **1.0.2.0**.  
   
  > [!div class="mx-imgBorder"] 
- > ![Cuadrícula con soluciones y revisiones](media/solution-segmentation-solution-patch-grid-admin.png "Cuadrícula con soluciones y revisiones")  
+ > ![Una cuadrícula con soluciones y revisiones.](media/solution-segmentation-solution-patch-grid-admin.png "Una cuadrícula con soluciones y revisiones.")  
   
  En la revisión agregamos una nueva entidad personalizada llamada `Book`, e incluimos todos los activos de la entidad `Book` en la revisión.  
   
- ![Agregar una entidad personalizada en la revisión](media/solution-segmentation-add-book-patch-admin.png "Agregar una entidad personalizada en la revisión")  
+ ![Agregar entidad personalizada en la revisión.](media/solution-segmentation-add-book-patch-admin.png "Agregar entidad personalizada en la revisión.")  
   
 ## <a name="clone-a-solution"></a>Clonar una solución  
  Cuando se clona una solución no administrada, todas las revisiones relacionadas con esta solución se resumen en la versión recién creada de la solución original.  
@@ -143,12 +149,12 @@ Para conseguir un control más estrecho sobre lo que distribuye en soluciones y 
   
  Continuando con el ejemplo, verá el cuadro de diálogo **Clonar para solucionar** que indica el nuevo número de versión de la solución.  
   
- ![Usar el cuadro de diálogo Clonar para solucionar](media/solution-segmentation-clone-solution-dialog-admin.png "Usar el cuadro de diálogo Clonar para solucionar")  
+ ![Usar diálogo Clonar para solucionar.](media/solution-segmentation-clone-solution-dialog-admin.png "Usar diálogo Clonar para solucionar.")  
   
  Después de clonar, la nueva versión de la solución contiene tres entidades originales (`Account`, `Case`, y `Contact`), y la entidad personalizada llamada `Book` que se agregó en su revisión. Cada entidad solo contiene los activos que se agregaron en el ejemplo.  
   
  > [!div class="mx-imgBorder"] 
- > ![Solución clonada con revisión resumida](media/solution-segmentation-solution-rolled-up-patch-admin.png "Solución clonada con revisión resumida")  
+ > ![Solución clonada con revisión resumida.](media/solution-segmentation-solution-rolled-up-patch-admin.png "Solución clonada con revisión resumida.")  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  [Información general de las soluciones](solutions-overview.md) [Crear revisiones para simplificar las actualizaciones de la solución]

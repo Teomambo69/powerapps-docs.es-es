@@ -1,5 +1,5 @@
 ---
-title: 'Agregar, configurar, mover o eliminar secciones en un formulario usando el diseñador de formularios | MicrosoftDocs'
+title: Agregar, configurar, mover o eliminar secciones en un formulario usando el diseñador de formularios | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38607e27fea1c926b6cbc81471113e2b49258921
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701507"
 ---
-
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>Agregar, configurar, mover o eliminar secciones de un formulario 
 Agregar, configurar, mover o eliminar secciones en un formulario usando el diseñador de formularios. 
 
@@ -30,7 +35,7 @@ Agregar, configurar, mover o eliminar secciones en un formulario usando el dise�
 Para agregar secciones a un formulario, use el panel **Componentes**. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsLayout.png "Componentes de diseño")
+> ![](media/FormDesignerComponentsLayout.png "Layout components")
 
   > [!NOTE]
   >   Las secciones solo se pueden agregar a formularios principales y formularios de la vista rápida. Más información: [Tipos de formularios](types-forms.md)

@@ -1,6 +1,6 @@
 ---
 title: Entidad ActivityPointer (actividad) (Common Data Service) | Microsoft Docs
-description: 'La entidad de puntero de actividad (actividad) representa cualquier actividad o tarea que se realiza, o que será realizada por un usuario. Una actividad es cualquier acción para la que se puede crear una entrada en un calendario.'
+description: La entidad de puntero de actividad (actividad) representa cualquier actividad o tarea que se realiza, o que será realizada por un usuario. Una actividad es cualquier acción para la que se puede crear una entrada en un calendario.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f979296356ba5cce562272ae1291a4aa39189a33
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749414"
 ---
 # <a name="activitypointer-activity-entity"></a>Entidad ActivityPointer (actividad)
 
-La entidad de puntero de actividad (actividad) representa cualquier actividad o tarea que se realiza, o que será realizada por un usuario. Una actividad es cualquier acción para la que se puede crear una entrada en un calendario.  
+La entidad de puntero de actividad (actividad) representa cualquier actividad o tarea que se realiza, o que será realizada por un usuario. Una actividad es cualquier acción de la que se puede crear una entrada en un calendario.  
   
- Cada vez que cree un registro de actividad en Common Data Service, se crea un registro correspondiente de puntero de actividad. Esto indica que el registro de la actividad y el registro correspondiente del puntero de actividad tienen el mismo valor del atributo de `ActivityId`. Por ejemplo, si crea un registro de `Email` , los valores de atributo de `Email.ActivityId` y el correspondiente `ActivityPointer.ActivityId` serán iguales.  
+ Cada vez que cree un registro de actividad en Common Data Service, se crea un registro correspondiente al puntero de actividad. Esto indica que el registro de la actividad y el registro correspondiente del puntero de actividad tienen el mismo valor del atributo de `ActivityId`. Por ejemplo, si crea un registro de `Email` , los valores de atributo de `Email.ActivityId` y el correspondiente `ActivityPointer.ActivityId` serán iguales.  
   
  El atributo de `ActivityPointer.ActivityTypeCode` define el tipo de actividad. Los valores posibles para este atributo se definen en el conjunto de opciones globales de `activitypointer_activitytypecode`.  
   

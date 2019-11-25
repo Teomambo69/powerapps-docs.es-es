@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6109721781e4a73858527daa7aeabe09c3435dd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710791"
 ---
-   
 # <a name="use-excel-and-word-templates"></a>Usar plantillas de Excel y Word
 
 Puede usar plantillas de diversas formas para acelerar su trabajo y mejorar la coherencia. Con las plantillas de Excel, es fácil crear y compartir sus análisis personalizados con otros usuarios en su organización. Puede usar plantillas de Word para crear documentos estandarizados automáticamente rellenos con datos de aplicaciones de Common Data Service.
@@ -37,19 +42,19 @@ Puede usar plantillas de diversas formas para acelerar su trabajo y mejorar la c
 3. Si ve aplicaciones publicadas, seleccione una aplicación para abrirla. En caso contrario, continúe en el paso 5.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/published-apps.png "Aplicaciones publicadas") 
+   > ![](media/published-apps.png "Published apps") 
 
 4. En la esquina superior derecha, seleccione el icono de rueda dentada y, después, seleccione **Configuración avanzada**. Si no ve **Configuración avanzada**, siga con el siguiente paso.
 
 5. Selecciione **Configuración** > **Plantillas**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/settings-templates.png "Configuración Plantillas") 
+   > ![](media/settings-templates.png "Settings Templates") 
 
 6. En la página **Plantillas**, seleccione **Plantilla del documento** para trabajar con plantillas de Excel o Word.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/document-templates.png "Plantillas de documento") 
+   > ![](media/document-templates.png "Document Templates") 
 
 Para obtener información sobre el uso de plantillas, vea la siguiente documentación:
 

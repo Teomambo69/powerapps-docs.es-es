@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 66e9c6883d00f755c6d06096fa676a3600e0e2f7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749597"
 ---
 # <a name="sample-export-ribbon-definitions"></a>Ejemplo: exportar definiciones de cinta
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-export-ribbon-definitions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-export-ribbon-definitions -->
 
 
 Este código de ejemplo es para aplicaciones basadas en modelos. [Descargue el ejemplo de exportar definiciones de cinta de opciones](https://code.msdn.microsoft.com/Export-ribbon-definitions-df97a4cb).
@@ -226,7 +232,7 @@ namespace Microsoft.Crm.Sdk.Samples
   }
 
   /// <summary>
-  /// A helper method that decompresses the the Ribbon data returned
+  /// A helper method that decompresses the Ribbon data returned
   /// </summary>
   /// <param name="data">The compressed ribbon data</param>
   /// <returns></returns>

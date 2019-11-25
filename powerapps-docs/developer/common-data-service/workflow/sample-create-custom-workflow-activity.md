@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Crear una actividad de flujo de trabajo (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Crear una actividad de flujo de trabajo personalizada (Common Data Service) | Microsoft Docs'
 description: El ejemplo muestra cómo escribir una actividad de flujo de trabajo personalizada que puede crear una cuenta y una tarea para la cuenta. Este ejemplo usa un enlace anticipado.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6d498e86-8702-43ed-bf76-96d1b4246dfd
 caps.latest.revision: 26
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f903726480068d0d5796ee51a9f442093d472290
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749486"
 ---
 # <a name="sample-create-a-custom-workflow-activity"></a>Ejemplo: crear una actividad de flujo de trabajo personalizada
 

@@ -1,7 +1,7 @@
 ---
 title: Crear y generar un componente de código| Microsoft Docs
 description: Empiece a crear un componente mediante útiles de PowerApps component framework
-keywords: 'PowerApps component framework, componentes de código, Component Framework'
+keywords: PowerApps component framework, componentes de código, Component Framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,36 +11,42 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
+ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749469"
 ---
-
 # <a name="create-and-build-a-code-component"></a>Crear y generar un componente de código
 
 En este tema se demuestra cómo crear e implementar componentes de código mediante PowerApps CLI. Asegúrese de que tiene instalado [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="create-a-new-component"></a>Crear un componente
 
-Para empezar, abra un nuevo **Developer Command Prompt for VS 2017** después de instalar PowerApps CLI.
+Para comenzar, abra **Developer Command Prompt for VS 2017** después de instalar PowerApps CLI.
 
-1. En el Developer Command Prompt for VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_PCF_Component* utilizando el comando `mkdir <Specify the folder name>`.
+1. En el Developer Command Prompt for VS 2017, cree una nueva carpeta en el equipo local, por ejemplo, *C:\Users\your name\Documents\My_code_Component* utilizando el comando `mkdir <Specify the folder name>`.
 2. Vaya a la carpeta recién creada usando el comando `cd <specify your new folder path>`.
-3. Ejecute el comando siguiente para crear un nuevo proyecto de componente pasando algunos parámetros básicos:
+3. Cree un nuevo proyecto de componente pasando algunos parámetros básicos utilizando el comando:
 
-    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
+    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
  
    > [!NOTE]
-   > Actualmente PowerApps CLI admite dos tipos de componentes: **campo** y **conjunto de datos**.  Para aplicaciones de lienzo, solo se admite el tipo **campo** para esta vista previa piloto.
+   > Actualmente, PowerApps CLI admite dos tipos de componentes: **campo** y **conjunto de datos** para las aplicaciones basadas en modelo.  Para aplicaciones de lienzo, solo se admite el tipo **campo** para esta vista previa piloto.
 
 4. Para recuperar todas las dependencias necesarias de proyecto, ejecute el comando `npm install`.
-5. Abra la carpeta de proyecto `C:\Users\<your name>\Documents\<My_PCF_Component>` en cualquier entorno de desarrollo de su elección y empiece con el desarrollo del componente de código. La forma más rápida de empezar es ejecutando `code .` desde el símbolo del sistema una vez que está en el directorio `C:\Users\<your name>\Documents\<My_PCF_Component>`. Este comando abre el proyecto de componente en Código de Visual Studio.
+5. Abra la carpeta de proyecto `C:\Users\<your name>\Documents\<My_code_Component>` en cualquier entorno de desarrollo de su elección y empiece con el desarrollo del componente de código. La forma más rápida de empezar es ejecutando `code .` desde el símbolo del sistema una vez que está en el directorio `C:\Users\<your name>\Documents\<My_code_Component>`. Este comando abre el proyecto de componente en Código de Visual Studio.
+6. Implemente los artefactos necesarios para el componente como manifiesto, lógica de componente y estilo y después compile el proyecto de componente. Más información: [Implementar componente de ejemplo](implementing-controls-using-typescript.md)
 
 ## <a name="build-your-component"></a>Crear su componente
 
-Para generar el proyecto de componentes abra la carpeta de proyecto que contiene `package.json` en Código de Visual Studio y use el comando (Ctrl-Mayús-B), y luego seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017
+Para generar el proyecto de componentes abra la carpeta de proyecto que contiene `package.json` en Código de Visual Studio y use el comando (Ctrl-Mayús-B), y luego seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017.
 
 > [!TIP]
 > Para depurar el componente durante o después de operaciones de compilación, consulte [Depurar un componente de código](debugging-custom-controls.md).
 
-Una vez que haya finalizado de implementar la lógica de componente en TypeScript, necesita agrupar todos los elementos de componente de código en un archivo de solución para que pueda importar la solución en Common Data Service. Más información: [Empaquetar un componente de código](import-custom-controls.md)
+Cuando finalice la implementación de lógica de componente en TypeScript, deberá agrupar todos los elementos de componente de código en un archivo de solución para que pueda importar la solución en Common Data Service. Más información: [Empaquetar un componente de código](import-custom-controls.md)
 
 ## <a name="known-configuration-issues-and-workarounds"></a>Problemas conocidos de configuración y soluciones alternativas
 
@@ -53,18 +59,18 @@ Una vez que haya finalizado de implementar la lógica de componente en TypeScrip
 **Resolución**
 
 1. Abra Instalador de Visual Studio. 
-1. Para VS 2017, seleccione **Modificar**. 
-1. Haga clic en Componentes individuales.
+1. Para Visual Studio 2017, seleccione **Modificar**. 
+1. Seleccione **Componentes individuales**.
 1. En Herramientas de código, active **Destinos de NuGet y tareas de compilación**.
 
 **Prefijo de publicador**
 
-Si se crea un componente con una versión de útiles de PowerApps CLI menor que 0.4.3, se producirá un error al intentar reimportar el archivo de solución en Common Data Service. Se produce el error porque el nombre del componente recién importado se anexa ahora con el prefijo del editor para garantizar su singularidad y evitar colisiones.
+Si se crea un componente usando útiles PowerApps CLI de una versión menor que 0.4.3, se producirá un error al intentar reimportar el archivo de solución en Common Data Service. Se produce el error porque el nombre del componente recién importado se anexa ahora con el prefijo del editor para garantizar su singularidad y evitar colisiones.
 
 **Solución alternativa**:
 
-- Elimine la solución que contiene el componente relevante de Common Data Service. Si el componente ya está configurado en un formulario o una cuadrícula, debe quitarlo primero de ahí ya que la solución de componente tenía dependencia de la configuración.  
-- Importe la nueva solución con actualizaciones en el componente compilado por la última versión de CLI.
+- Elimine la solución que contiene el componente relevante de Common Data Service. Si ta está configurado el componente en un formulario o una cuadrícula, deberá quitarse de ahí porque la solución de componente tenía una dependencia en la configuración.  
+- Importe la nueva solución con actualizaciones del componente compilado por la última versión de CLI.
 - Los componentes recién importados ahora pueden configurarse en formularios o cuadrículas.  
 
 

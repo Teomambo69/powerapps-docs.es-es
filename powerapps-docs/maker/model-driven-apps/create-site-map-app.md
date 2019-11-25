@@ -4,28 +4,33 @@ description: Aprenda a crear un mapa de sitio para aplicaciones
 keywords: ''
 ms.date: 05/29/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2461bd71-6cb4-46b7-8d1f-6a0aa3dca809
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 18
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 852cacde56cc76dfd166471b9985f28b5b995c13
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700671"
 ---
-
 # <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Tutorial: Crear un mapa del sitio para una aplicación controlada por modelos usando el diseñador de mapas del sitio
 
 En este tutorial realizará varias tareas del mapa del sitio, como crear un nuevo mapa del sitio y agregar un área, un grupo y una subárea.
@@ -46,14 +51,14 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
 ## <a name="create-a-site-map-for-an-app"></a>Cree un mapa del sitio para una aplicación  
   
-1. En el lienzo del diseñador de aplicaciones, en el área **Mapa del sitio**, seleccione el botón **Abrir el diseñador del mapa del sitio** ![botón Abrir el diseñador del mapa del sitio](media/dynamics365-open-designer.PNG "botón Abrir el diseñador del mapa del sitio").  
+1. En el lienzo del diseñador de aplicaciones, en el área **Mapa del sitio**, seleccione el botón **Abrir el diseñador del mapa del sitio** ![botón Abrir el diseñador del mapa del sitio](media/dynamics365-open-designer.PNG "Botón Abrir diseñador del mapa del sitio").  
   
      El diseñador del mapa del sitio abre un lienzo relleno previamente con un área, un grupo y un subárea. Seleccione la ventana de área, grupo, o subárea para modificar sus propiedades.  
   
     > [!NOTE]
-    >  Al seleccionar **Abrir el diseñador del mapa del sitio** ![Botón Abrir el diseñador del mapa del sitio](media/dynamics365-open-designer.PNG "Botón Abrir el diseñador del mapa del sitio") desde el lienzo del diseñador de aplicaciones, se crea automáticamente un nuevo mapa del sitio (si no hay un mapa del sitio existente) y da al mapa del sitio el mismo nombre que el nombre de la aplicación y el mismo nombre único que el nombre único de la aplicación. 
+    >  Al seleccionar **Abrir el diseñador del mapa del sitio** ![Botón Abrir el diseñador del mapa del sitio](media/dynamics365-open-designer.PNG "Botón Abrir diseñador del mapa del sitio") desde el lienzo del diseñador de aplicaciones, se crea automáticamente un nuevo mapa del sitio (si no hay un mapa del sitio existente) y da al mapa del sitio el mismo nombre que el nombre de la aplicación y el mismo nombre único que el nombre único de la aplicación. 
 
-   ![Seleccione mapa del sitio](media/app-designer-sitemap-location.png "seleccionar un mapa del sitio") 
+   ![Seleccionar mapa del sitio](media/app-designer-sitemap-location.png "Seleccionar un mapa del sitio") 
   
 2.  [Agregar un área al mapa del sitio](create-site-map-app.md#bkmk_AddArea).  
   
@@ -97,7 +102,7 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
 <a name="bkmk_AddArea"></a>   
 ## <a name="add-an-area-to-the-site-map"></a>Agregar un área al mapa del sitio  
   
-1.  Seleccione **Agregar** ![Botón Agregar del diseñador](media/dynamics365-designer-addbutton.PNG "Botón Agregar del diseñador") en el lienzo del diseñador del mapa del sitio y, a continuación, seleccione **Área**.  
+1.  Seleccione **Agregar** ![Botón Agregar del diseñador](media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") en el lienzo del diseñador del mapa del sitio y, a continuación, seleccione **Área**.  
   
      o  
   
@@ -119,9 +124,9 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
      En **Avanzado**, haga lo siguiente:  
   
-    - **Más ventanas**: Si su organización usa varios idiomas, seleccione un idioma (configuración regional) para el título, escriba el título y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar títulos para tantos idiomas como use la organización. Sin embargo, puede tener solo un título por idioma.  
+    - **Más ventanas**: Si su organización usa varios idiomas, seleccione un idioma (configuración regional) para el título, escriba el título y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar del diseñador del mapa del sitio"). Puede crear, editar o eliminar títulos para tantos idiomas como use la organización. Sin embargo, puede tener solo un título por idioma.  
   
-    - **Más descripción**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
+    - **Más descripción**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar del diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
   
     - **Dirección URL**: Escriba la dirección URL para representar para la carpeta Dynamics 365 for Outlook que representa el área.  
   
@@ -129,7 +134,7 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
 ## <a name="add-a-group-to-the-site-map"></a>Agregar un grupo al mapa del sitio  
   
 1.  En el lienzo del diseñador del mapa del sitio, seleccione el área a la que desea agregar el grupo.  
-2.  Seleccione **Agregar** ![Botón Agregar en el diseñador](media/dynamics365-designer-addbutton.PNG "Botón Agregar en el diseñador") y, a continuación, seleccione **Grupo**.  
+2.  Seleccione **Agregar** ![Botón Agregar en el diseñador](media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") y, a continuación, seleccione **Grupo**.  
   
      o  
   
@@ -147,9 +152,9 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
   
      En **Avanzado**, haga lo siguiente:  
   
-    - **Más ventanas**: si su organización usa varios idiomas, seleccione un idioma (configuración regional) para el título, escriba el título del grupo y, a continuación, seleccione **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar títulos para tantos idiomas como use la organización. Sin embargo, puede tener solo un título por idioma.  
+    - **Más ventanas**: Si su organización usa varios idiomas, seleccione un idioma (configuración regional) para el título, escriba el título para el grupo y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar del diseñador del mapa del sitio"). Puede crear, editar o eliminar títulos para tantos idiomas como use la organización. Sin embargo, puede tener solo un título por idioma.  
   
-    - **Más Decripciones**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción para el grupo y, a continuación, seleccione **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar en el diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
+    - **Más descripciones**: Si su organización usa varios idiomas, seleccione un idioma para la descripción, escriba la descripción para el grupo y, a continuación, seleccione el botón **Agregar** ![Botón Agregar en el diseñador del mapa del sitio](media/add-icon-sitemap-designer.png "Botón Agregar del diseñador del mapa del sitio"). Puede crear, editar o eliminar descripciones para tantos idiomas como use la organización. Sin embargo, puede tener solo una descripción por idioma.  
   
     - **Dirección URL**: Escriba la dirección URL para la carpeta Dynamics 365 for Outlook que representa el grupo.  
   
@@ -158,7 +163,7 @@ Puede ver o establecer estos privilegios en la pestaña **Personalización** de 
 <a name="bkmk_AddSubarea"></a>   
 ## <a name="add-a-subarea-to-a-group-in-the-site-map"></a>Agregar una subárea a un grupo en el mapa del sitio  
   
-1.  Seleccione **Agregar** ![Botón Agregar del diseñador](media/dynamics365-designer-addbutton.PNG "Botón Agregar del diseñador") en el lienzo del diseñador del mapa del sitio y, a continuación, seleccione **Subárea**.  
+1.  Seleccione **Agregar** ![Botón Agregar del diseñador](media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") en el lienzo del diseñador del mapa del sitio y, a continuación, seleccione **Subárea**.  
   
      o  
   

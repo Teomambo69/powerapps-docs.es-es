@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 9cb7eb41-1a73-44a8-ae58-14120e84243f
 caps.latest.revision: 19
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f706266b2a8e1fe6a28c35e6b30f2d55df8d9e3a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749487"
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada
 
-Este código de ejemplo es para Common Data Service. Descargue el ejemplo completo aquí [Ejemplos de actividades de flujo de trabajo personalizadas](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
+Este código de muestra es para Common Data Service. Descargue el ejemplo completo aquí [Ejemplos de actividades de flujo de trabajo personalizadas](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

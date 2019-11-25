@@ -1,5 +1,5 @@
 ---
-title: Crear y actualizar relaciones de entidades utilizando la API web (Common Data Service) | Microsoft Docs
+title: Crear y actualizar relaciones entre entidades utilizando la API web (Common Data Service) | Microsoft Docs
 description: Aprenda a crear y actualizar entidades. Common Data Service usa una arquitectura controlada por metadatos que proporciona flexibilidad para crear entidades personalizadas y atributos adicionales de las entidades del sistema.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 923538e2-15fe-4718-8eae-d939c5d200cd
 caps.latest.revision: 15
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90479dca5ecd6fcb230847533ed98533fda2e876
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749510"
 ---
 # <a name="create-and-update-entity-relationships-using-the-web-api"></a>Crear y actualizar relaciones de entidad mediante la API web
 

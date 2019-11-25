@@ -1,26 +1,26 @@
-- name: Marco de componentes de PowerApps
+- name: PowerApps component framework
   items:
     - name: Información general
       href: overview.md
     - name: Qué son los componentes de código
       href: custom-controls-overview.md
-    - name: Disponibilidad de las aplicaciones de Canvas
+    - name: Disponibilidad para las aplicaciones de lienzo
       href: component-framework-for-canvas-apps.md
-    - name: Obtención de la CLI de PowerApps
+    - name: Obtener PowerApps CLI
       href: get-powerapps-cli.md
-    - name: Guía
+    - name: Tutorial
       items:
-        - name: Implementar el componente de ejemplo
+        - name: Implementar componente de ejemplo
           href: implementing-controls-using-typescript.md
-    - name: Procedimientos
+    - name: Procedimiento
       items:
-        - name: Crear y compilar un componente de código
+        - name: Crear y generar un componente de código
           href: create-custom-controls-using-pcf.md
-        - name: Empaquetar un componente de código
+        - name: Empaquete un componente de código
           href: import-custom-controls.md
         - name: Depurar un componente de código
           href: debugging-custom-controls.md
-        - name: Agregar componentes a aplicaciones controladas por modelos
+        - name: Agregar componentes a aplicaciones basadas en modelos
           href: add-custom-controls-to-a-field-or-entity.md
         - name: Agregar componentes a aplicaciones de lienzo
           href: 'component-framework-for-canvas-apps.md#add-components-to-a-canvas-app'
@@ -28,33 +28,33 @@
           href: updating-existing-controls.md
         - name: Publicar componentes de código en AppSource
           href: publish-components-app-source.md
-    - name: Límite
+    - name: Limitaciones
       href: limitations.md
-    - name: Componentes de ejemplo
+    - name: Componente de ejemplo
       items:
         - name: Componente de incremento
           href: sample-controls/increment-control.md
         - name: Componente de entrada lineal
           href: sample-controls/linear-input-control.md
-        - name: Componente de API de localización
+        - name: Componente API de localización
           href: sample-controls/localization-api-control.md
-        - name: Componente Angular de volteo
+        - name: Componente Flip angular
           href: sample-controls/angular-flip-control.md
-        - name: Componente de API de estado del control
+        - name: Componente API de estado de control
           href: sample-controls/control-state-api.md
         - name: Componente de cuadrícula de conjunto de datos
           href: sample-controls/data-set-grid-control.md
-        - name: Componente de API de formato
+        - name: Formato del componente API
           href: sample-controls/formatting-api-control.md
         - name: Componente IFRAME
           href: sample-controls/iframe-control.md
-        - name: Componente de carga de imágenes
+        - name: Componente de carga de imagen
           href: sample-controls/image-upload-control.md
-        - name: Componente de mapa
+        - name: Componente de asignación
           href: sample-controls/map-control.md
         - name: Componente de API de navegación
           href: sample-controls/navigation-api-control.md
-        - name: Componente de React Facepile
+        - name: Componente React Facepile
           href: sample-controls/react-facepile-control.md
         - name: Componente de tabla
           href: sample-controls/table-control.md
@@ -64,10 +64,10 @@
           href: sample-controls/webapi-control.md
     - name: Referencia
       items:
-        - name: Marco de componentes de PowerApps
+        - name: PowerApps component framework
           href: reference/index.md
           items:
-            - name: Client
+            - name: Cliente
               href: reference/client.md
               items:
                 - name: getClient
@@ -80,7 +80,7 @@
               href: reference/column.md
             - name: ConditionExpression
               href: reference/conditionexpression.md
-            - name: Context
+            - name: Contexto
               href: reference/context.md
             - name: DataSet
               href: reference/dataset.md
@@ -97,11 +97,11 @@
                   href: reference/dataset/getviewid.md
                 - name: openDatasetItem
                   href: reference/dataset/opendatasetitem.md
-                - name: refresh
+                - name: actualizar
                   href: reference/dataset/refresh.md
                 - name: setSelectedRecordIds
                   href: reference/dataset/setselectedrecordids.md
-            - name: Dispositivos
+            - name: Dispositivo
               href: reference/device.md
               items:
                 - name: captureAudio
@@ -118,7 +118,7 @@
                   href: reference/device/pickfile.md
             - name: DateFormattingInfo
               href: reference/dateformattinginfo.md
-            - name: ID
+            - name: Entidad
               href: reference/entity.md
             - name: EntityFormOptions
               href: reference/entityformoptions.md
@@ -133,9 +133,9 @@
                   href: reference/entityrecord/getrecordid.md
                 - name: getValue
                   href: reference/entityrecord/getvalue.md
-            - name: EntityReference
+            - name: Entityreference
               href: reference/entityreference.md
-            - name: Factory
+            - name: Fábrica
               href: reference/factory.md
               items:
                 - name: getPopupService
@@ -149,13 +149,13 @@
               items:
                 - name: clearFilter
                   href: reference/filtering/clearfilter.md
-                - name: 0x%08x
+                - name: getFilter
                   href: reference/filtering/getfilter.md
                 - name: setFilter
                   href: reference/filtering/setfilter.md
             - name: FilterExpression
               href: reference/filterexpression.md
-            - name: Formatting
+            - name: Formato
               href: reference/formatting.md
               items:
                 - name: formatCurrency
@@ -180,7 +180,7 @@
                   href: reference/formatting/formattime.md
                 - name: getWeekOfYear
                   href: reference/formatting/getweekofyear.md
-            - name: Linking
+            - name: Vinculación
               href: reference/linking.md
               items:
                 - name: addLinkedEntity
@@ -198,7 +198,7 @@
                   href: reference/mode/setfullscreen.md
                 - name: trackContainerResize
                   href: reference/mode/trackcontainerresize.md
-            - name: Explora
+            - name: Navegación
               href: reference/navigation.md
               items:
                 - name: openAlertDialog
@@ -207,28 +207,28 @@
                   href: reference/navigation/openconfirmdialog.md
                 - name: openErrorDialog
                   href: reference/navigation/openerrordialog.md
-                - name: openFile
+                - name: Abrir archivo
                   href: reference/navigation/openfile.md
                 - name: openForm
                   href: reference/navigation/openform.md
-                - name: openUrl
+                - name: Abrir Url
                   href: reference/navigation/openurl.md
                 - name: openWebResource
                   href: reference/navigation/openwebresource.md
             - name: NumberFormattingInfo
               href: reference/numberformattinginfo.md
-            - name: Paging
+            - name: Paginación
               href: reference/paging.md
               items:
                 - name: loadNextPage
                   href: reference/paging/loadnextpage.md
                 - name: loadPreviousPage
                   href: reference/paging/loadpreviouspage.md
-                - name: reset
+                - name: restablecer
                   href: reference/paging/reset.md
                 - name: setPageSize
                   href: reference/paging/setpagesize.md
-            - name: Popup
+            - name: Ventana emergente
               href: reference/popup.md
             - name: PopupService
               href: reference/popupservice.md
@@ -275,7 +275,7 @@
                   href: reference/control/updateview.md
             - name: UserSettings
               href: reference/usersettings.md
-            - name: Utility
+            - name: Utilidad
               href: reference/utility.md
               items:
                 - name: getEntityMetadata
@@ -297,10 +297,10 @@
                   href: reference/webapi/retrieverecord.md
                 - name: updateRecord
                   href: reference/webapi/updaterecord.md
-        - name: Referencia de esquema del manifiesto
+        - name: Referencia de esquema de manifiesto
           href: manifest-schema-reference/index.md
           items:
-            - name: code
+            - name: código
               href: manifest-schema-reference/code.md
             - name: control
               href: manifest-schema-reference/control.md
@@ -308,27 +308,27 @@
               href: manifest-schema-reference/css.md
             - name: data-set
               href: manifest-schema-reference/data-set.md
-            - name: HTML
+            - name: html
               href: manifest-schema-reference/html.md
             - name: img
               href: manifest-schema-reference/img.md
-            - name: manifest
+            - name: manifiesto
               href: manifest-schema-reference/manifest.md
-            - name: property
+            - name: propiedad
               href: manifest-schema-reference/property.md
             - name: property-set
               href: manifest-schema-reference/property-set.md
-            - name: resources
+            - name: recursos
               href: manifest-schema-reference/resources.md
             - name: resx
               href: manifest-schema-reference/resx.md
-            - name: type
+            - name: tipo
               href: manifest-schema-reference/type.md
             - name: type-group
               href: manifest-schema-reference/type-group.md
-            - name: uso de características
+            - name: feature-usage
               href: manifest-schema-reference/feature-usage.md
-            - name: Use-Feature
+            - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
     - name: Recursos de la comunidad
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'

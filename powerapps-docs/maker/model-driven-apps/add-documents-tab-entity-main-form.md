@@ -1,22 +1,28 @@
 ---
 title: Agregar la pestaña Documentos al formulario principal de una entidad | MicrosoftDocs
 description: Aprender a agregar la pestaña Documentos al formulario principal de una entidad
-s.custom: null
+s.custom: ''
 ms.date: 09/05/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702827"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Agregar la pestaña documentos de SharePoint al formulario principal de una entidad
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +51,7 @@ Agregar una pestaña en un formulario de entidad principal para documentos de Sh
 11. Desplácese hasta el elemento *field name*” del id de control, como **control id="address1_city"** y reemplace el elemento completo con el [Ejemplo de XML](#xml-sample-for-adding-the-documents-tab-to-a-form) en este tema. 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/form-xml.png "Punto de inserción de ejemplo de XML")
+    > ![](media/form-xml.png "XML sample insertion point")
 
 12. Cree estas modificaciones en el ejemplo XML. 
     

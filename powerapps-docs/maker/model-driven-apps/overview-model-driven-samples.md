@@ -1,6 +1,6 @@
 ---
 title: Aplicaciones controladas por modelos de ejemplo
-description: 'Comprenda cómo obtener, personalizar y quitar aplicaciones controladas por modelos de ejemplo.'
+description: Comprenda cómo obtener, personalizar y quitar aplicaciones controladas por modelos de ejemplo.
 documentationcenter: na
 author: mr-dang-msft
 manager: kvivek
@@ -11,12 +11,17 @@ ms.component: model
 ms.date: 03/08/2018
 ms.author: brdang
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711583"
 ---
-
 # <a name="model-driven-sample-apps"></a>Aplicaciones controladas por modelos de ejemplo
 
 En [powerapps.com](https://powerapps.com), use una aplicación de ejemplo para explorar posibilidades de diseño y para descubrir conceptos que puede aplicar cuando se desarrolla sus propias aplicaciones. Cada aplicación de ejemplo usa datos ficticios para mostrar un escenario del mundo real. 

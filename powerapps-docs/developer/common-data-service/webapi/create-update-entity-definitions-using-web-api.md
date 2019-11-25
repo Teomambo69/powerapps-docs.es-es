@@ -1,5 +1,5 @@
 ---
-title: Crear y actualizar definiciones de entidades utilizando la API web (Common Data Service) | Microsoft Docs
+title: Crear y actualizar definiciones de entidad utilizando la API web (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo crear y actualizar definiciones de entidad mediante la API web.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1f430d2d-e829-4ffa-922e-dfcfb7c9e86e
 caps.latest.revision: 24
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4718f47247907c7c3af6f826829a985b56a5ff08
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749511"
 ---
 # <a name="create-and-update-entity-definitions-using-the-web-api"></a>Crear y actualizar definiciones de entidad mediante la API web
 
@@ -497,7 +503,7 @@ El siguiente ejemplo usará estas propiedades para crear un atributo de cadena.
 |MaxLength|100|  
 |FormatName|Texto|  
   
-El siguiente ejemplo crea un atributo de cadena mediante las propiedades y lo agrega a la entidad con el valor MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2.
+El siguiente ejemplo crea un atributo de cadena mediante las propiedades y lo agrega a la entidad con el valor de MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2.
 
 El URI para el atributo se devuelve en la respuesta.  
   
@@ -573,7 +579,7 @@ El siguiente ejemplo usará estas propiedades para crear un atributo monetario.
 
 
   
-El siguiente ejemplo crea un atributo monetario mediante las propiedades y lo agrega a la entidad con el valor MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2. El URI para el atributo se devuelve en la respuesta.  
+El siguiente ejemplo crea un atributo de dinero mediante las propiedades y lo agrega a la entidad con el valor de MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2. El URI para el atributo se devuelve en la respuesta.  
   
  **Solicitud**  
 ```http   
@@ -640,7 +646,7 @@ El siguiente ejemplo usará estas propiedades para crear un atributo de fecha y 
 |RequiredLevel|Ninguna|  
 |Formato|DateOnly **Nota:** para las opciones válidas para esta propiedad, consulte <xref href="Microsoft.Dynamics.CRM.DateTimeFormat?text=DateTimeFormat EnumType" />.|  
   
-El siguiente ejemplo crea un atributo de fecha y hora mediante las propiedades y lo agrega a la entidad con el valor MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2. El URI para el atributo se devuelve en la respuesta.  
+El siguiente ejemplo crea un atributo de datetime mediante las propiedades y lo agrega a la entidad con el valor de MetadataId de 402fa40f-287c-e511-80d2-00155d2a68d2. El URI para el atributo se devuelve en la respuesta.  
   
  **Solicitud**
 

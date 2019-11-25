@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 04a51ec1ed0299707e646e3425059ea18adf8727
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749375"
 ---
 # <a name="discovery-services"></a>Servicios de detección
 
@@ -27,5 +33,5 @@ Al servicio de detección se puede acceder desde la API web o el servicio de org
 
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](webapi/overview.md)<br />
+[Usar la API web de Common Data Service](webapi/overview.md)<br />
 [Usar el servicio de organización de Common Data Service](org-service/overview.md)

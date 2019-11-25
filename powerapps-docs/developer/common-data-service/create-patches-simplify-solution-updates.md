@@ -1,6 +1,6 @@
 ---
-title: Creación de revisiones para simplificar las actualizaciones de solución (Common Data Service) | Microsoft Docs
-description: 'Si se agrega una entidad a una solución y se exporta esa solución, las revisiones le ayudan a administrar las entidades y todos los activos relacionados con dichas entidades.'
+title: Crear revisiones para simplificar las actualizaciones de la solución (Common Data Service) | Microsoft Docs
+description: Si se agrega una entidad a una solución y se exporta esa solución, las revisiones le ayudan a administrar las entidades y todos los activos relacionados con dichas entidades.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24e1410afbf7323daad3e274f1aedfc4fe39ff6c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749575"
 ---
 # <a name="create-patches-to-simplify-solution-updates"></a>Crear revisiones para simplificar las actualizaciones de la solución
 
 Si se agrega una entidad a una solución y se exporta esa solución, la entidad y todos sus activos relacionados se exportan en esa solución. Estos activos incluyen atributos, formularios, vistas, relaciones, visualizaciones y cualquier otro activo que se empaquete con la entidad. Exportar todos los objetos significa que puede editar involuntariamente objetos en la implementación de destino, o transferir dependencias involuntarias.  
   
- Para evitarlo, puede crear y publicar revisiones de la solución que contengan subcomponentes de entidades, en lugar de publicar la entidad completa y todos sus activos.  La solución original y una o varias revisiones relacionadas se pueden consolidar (combinar) en un momento posterior en una versión actualizada de la solución, que a continuación puede reemplazar la solución original en la organización Common Data Service.  
+ Para evitarlo, puede crear y publicar revisiones de la solución que contengan subcomponentes de entidades, en lugar de publicar la entidad completa y todos sus activos.  La solución original y una o varias revisiones relacionadas se pueden consolidar (combinar) en un momento posterior en una versión actualizada de la solución, que a continuación puede reemplazar la solución original en la organización de Common Data Service de destino.  
   
 ## <a name="patches"></a>Revisiones  
  Puede aplicar revisiones a soluciones administradas o no administradas e incluir solo cambios en las entidades y los activos relacionados. Las revisiones no contienen componentes del sistema no personalizados ni relaciones de las que dependa porque estos componentes ya existen en la organización en la que se ha realizado la implementación. En algún momento del ciclo de desarrollo, puede consolidar todas las revisiones en una nueva versión de la solución para reemplazar la solución original desde la que se crearon las revisiones.  

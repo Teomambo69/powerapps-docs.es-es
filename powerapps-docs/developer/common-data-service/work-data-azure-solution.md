@@ -4,21 +4,24 @@ description: El pluggin ServeceBusPlugin contiene la lógica de negocios para re
 keywords: ''
 ms.date: 06/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 1ef66369-71c9-3b89-ac1a-09d523ca737b
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 949717fbf33ee27e77ce81672fd66c2920a15bf2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749490"
 ---
-
 # <a name="work-with-common-data-service-data-in-your-azure-solution"></a>Trabajar con datos de Common Data Service en la solución de Azure
 
 Se proporciona un complemento interno llamado `ServiceBusPlugin` con Common Data Service (CDS). El complemento contiene la lógica de negocios para registrar el contexto de ejecución de mensaje de CDS al Azure Service Bus. Para utilizar este pluggin necesita registrar un punto final de la solución Azure Servic Bus y un paso para el pluggin. El paso define qué combinación de mensaje y entidad procesada por la operación de CDS básica debe activar el complemento para ejecutarse. El `ServiceBusPlugin` solo puede registrarse para ejecutarse asincrónicamente. Para obtener más información sobre cómo usar la herramienta, consulte [Tutorial: registro de un pluggin en Azure-aware con la herramienta de registro de pluggins](walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md).  

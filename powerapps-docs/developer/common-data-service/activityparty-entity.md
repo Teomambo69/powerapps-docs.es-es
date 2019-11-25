@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa10c95e2b5345f70399d1b19c5e0df0bf1f8527
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749416"
 ---
 # <a name="activityparty-entity"></a>Entidad ActivityParty
 
@@ -23,7 +29,7 @@ Un grupo de actividad representa a una persona o grupo asociado a una actividad.
 
 ## <a name="activity-party-types"></a>Tipos de grupo de actividad  
 
- Hay 11 tipos de parte de actividad en Common Data Service. El tipo de grupo de actividad se guarda como valor entero en el atributo `ActivityParty.ParticipationTypeMask`. La siguiente tabla muestra los diferentes tipos de grupo de actividad, el valor entero correspondiente para el atributo `ActivityParty.ParticipationTypeMask` y la descripción.  
+ Hay 11 tipos de grupo de actividad en Common Data Service. El tipo de grupo de actividad se guarda como valor entero en el atributo `ActivityParty.ParticipationTypeMask`. La siguiente tabla muestra los diferentes tipos de grupo de actividad, el valor entero correspondiente para el atributo `ActivityParty.ParticipationTypeMask` y la descripción.  
   
 |Tipo de grupo de actividad|Value|Descripción|  
 |-------------------------|-----------|-----------------|  

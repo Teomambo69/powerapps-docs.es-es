@@ -2,21 +2,26 @@
 title: Objeto Xrm de API de cliente para aplicaciones basadas en modelos | MicrosoftDocs
 description: El tema se proporciona la referencia de API de clientes para aplicaciones basadas en modelos.
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 15272ad9-25d7-499e-9361-a65f789daf20
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 057c63b0f3c22d653bc0988aeaa908dd455908fc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749626"
 ---
-
 # <a name="client-api-xrm-object"></a>Objeto Xrm de API de cliente
 
 

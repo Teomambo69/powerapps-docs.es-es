@@ -16,11 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
---- 
+- PowerApps
+- D365CE
+ms.openlocfilehash: 43e3cde28fb5f2d32f4372cf19c71f8639abee1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749381"
+---
 # <a name="do-not-retrieve-entity-all-columns-via-query-apis"></a>No recuperar la entidad todas las columnas mediante las API de consulta
 
 **Categoría**: rendimiento
@@ -48,7 +54,7 @@ Cuando usa el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Micros
 
 Estos son algunos ejemplos:
 
-- Sobrecarga del constructor [ColumnSet (columnas de la cadena [] del parámetro)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) para <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>.
+- [Sobrecarga del constructor ColumnSet (columnas de la cadena[] del parámetro)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) para <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>.
 
     ```csharp
         var query = new QueryExpression("account")
@@ -59,7 +65,7 @@ Estos son algunos ejemplos:
         var results = service.RetrieveMultiple(query);
     ```
 
-- Sobrecarga del constructor [ColumnSet (columnas de la cadena [] del parámetro)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) para <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest>.
+- [Sobrecarga del constructor ColumnSet (columnas de la cadena[] del parámetro)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) para <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest>.
 
     ```csharp
         var entity = service.Retrieve("account", Guid.NewGuid(), new ColumnSet("name", "address1_city"));

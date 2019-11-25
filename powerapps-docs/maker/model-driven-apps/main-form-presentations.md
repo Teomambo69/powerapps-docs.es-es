@@ -4,28 +4,34 @@ description: Obtenga información sobre como aparecen los formularios principale
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: da3ac59a-5413-46cb-b355-1987e42e3853
 caps.latest.revision: 35
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702563"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Cómo se presentan los formularios principales de aplicaciones controladas por modelos en los distintos dispositivos
 
-El formulario principal se usa en todos los clientes de aplicación basada en modelos Este formulario proporciona una experiencia de usuario coherente si alguien usa un explorador web, Dynamics 365 for phones, Dynamics 365 for tablets o Dynamics 365 for Outlook.  
+El formulario principal se usa en todos los clientes de aplicación basada en modelos Este formulario proporciona una experiencia de usuario coherente si alguien usa un explorador web, Dynamics 365 para teléfonos, Dynamics 365 para tabletas o Dynamics 365 for Outlook.  
   
 <a name="BKMK_MainFormPresentations"></a>   
 ## <a name="main-forms"></a>Formularios principales  
@@ -33,7 +39,7 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
   
 |Presentación|Descripción|  
 |------------------|-----------------|  
-|**Actualizado**|Para las [Entidades actualizadas y entidades clásicas](create-design-forms.md#updated-versus-classic-entities) y cualquier entidad personalizada de Dynamics 365 (online) y Dynamics 365 On-premises, el formulario actualizado proporciona una nueva experiencia de usuario. Estos formularios tienen el novísimo diseño de la barra de comandos y permiten usar características adicionales como el autoguardado y los flujos de procesos de negocio.|  
+|**Actualizado**|Para las [Entidades actualizadas y entidades clásicas](create-design-forms.md#updated-versus-classic-entities) y cualquier entidad personalizada de Dynamics 365 (online) y Dynamics 365 (on-premises), el formulario actualizado proporciona una nueva experiencia de usuario. Estos formularios tienen el novísimo diseño de la barra de comandos y permiten usar características adicionales como el autoguardado y los flujos de procesos de negocio.|  
 |**Dynamics 365 for tablets**| Dynamics 365 for tablets muestra el contenido del formulario principal de una forma optimizada para tabletas.|  
 |**Dynamics 365 for phones**| Dynamics 365 for phones muestra el contenido del formulario principal de una forma optimizada para teléfonos.|  
 |**Clásico**|Estos formularios son para las entidades que no se han actualizado. Usan la cinta de opciones en lugar de la barra de comandos y el panel de navegación del lado izquierdo del formulario.<br /><br /> Estos formularios tienen un diseño de dos columnas.|  
@@ -51,7 +57,7 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
 |Componente|Resumen|  
 |---------------|-------------|  
 |**Barra de navegación**|Use los datos del mapa del sitio para proporcionar la capacidad de pasar a diferentes áreas de la aplicación.<br /><br /> El panel de navegación usado en los formularios clásicos no se incluye en el formulario actualizado. En el contexto de un registro, la barra de navegación proporciona acceso a las vistas de registros relacionados. En lugar de navegar hasta los registros relacionados con el panel de navegación o mediante la barra de navegación, si agrega subcuadrículas configuradas para mostrar registros de entidad relacionados útiles mejorará la experiencia para la mayoría de los usuarios.|  
-|**Barra de comandos**|Use los datos definidos para que las cintas de opciones ofrezcan comandos relevantes para el registro.<br /><br /> Se muestran los cinco primeros comandos seguidos de puntos suspensivos (![Botón Más comandos](media/not-available.gif "Botón Más comandos")), lo que proporciona un menú de control flotante para elegir comandos adicionales.|  
+|**Barra de comandos**|Use los datos definidos para que las cintas de opciones ofrezcan comandos relevantes para el registro.<br /><br /> Se muestran los cinco primeros comandos seguidos de puntos suspensivos (![Botón Más comandos](media/not-available.gif "MBotón Más comandos")), lo que proporciona un menú de control flotante para elegir comandos adicionales.|  
 |**Imagen**|Cuando una entidad tiene un campo de imagen y la opción **Imagen principal** de la entidad está definida en **Imagen predeterminada**, se puede mostrar una imagen en el encabezado cuando el formulario se configura para mostrar la imagen.|  
 |**Encabezado**|Los campos colocados en el encabezado siguen siendo visibles cuando los usuarios bajan por el cuerpo del formulario.<br /><br /> Hasta cuatro campos se pueden poner en el encabezado. No se permiten varias líneas de texto, recursos web o iFrames en el encabezado. El encabezado y el pie de página comparten algunas propiedades con las secciones.|  
 |**Control de proceso**|Cuando una entidad tiene flujos de proceso de negocio activos, el control de proceso aparece debajo del encabezado. Más información: [Flujos de proceso de negocio](/flow/business-process-flows-overview)|  
@@ -85,11 +91,11 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
   
  **Aplicación para tabletas**  
   
- ![Redistribución de formularios de Dynamics 365 a la aplicación de la tableta](media/reflow-tablet-app.png "Redistribución de formularios de Dynamics 365 a la aplicación de la tableta")  
+ ![Redistribución de formularios de Dynamics 365 a aplicación para tabletas](media/reflow-tablet-app.png "Redistribución de formularios de Dynamics 365 a aplicación para tabletas")  
   
  **Aplicación para teléfonos**  
   
- ![Redistribución de formularios de Dynamics 365 a la aplicación del teléfono](media/custon-reflow-phone-app.png "Redistribución de formularios de Dynamics 365 a la aplicación del teléfono")  
+ ![Redistribución de formularios de Dynamics 365 a aplicación para teléfonos](media/custon-reflow-phone-app.png "Redistribución de formularios de Dynamics 365 a aplicación para teléfonos")  
   
  Los elementos de formulario se transforman en un diseño panorámico amplio en Dynamics 365 for tablets, donde los usuarios pueden pasar el dedo por la pantalla para cambiar los elementos visibles en una ventana gráfica. En Dynamics 365 for phones, los usuarios deslizan la pantalla para ver otra columna, o panel de elementos, y el control de proceso aparece sobre cada columna.  
   
@@ -179,7 +185,7 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
 ## <a name="classic-forms"></a>Formularios clásicos  
  En el siguiente diagrama se muestran los componentes principales del formulario usados en la presentación clásica.  
   
- ![Principales elementos del formulario](media/elements.png "Principales elementos del formulario")  
+ ![Principales elementos de formulario](media/elements.png "Principales elementos de formulario")  
   
  Los formularios de entidades actualizadas han heredado muchos componentes de los formularios clásicos, aunque hay diferencias significativas.  
   
@@ -188,6 +194,6 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
  El Asistente de formulario se expone para determinadas entidades, como `Article`.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Crear y diseñar formularios](create-design-forms.md)   
+ [Creación y diseño de formularios](create-design-forms.md)   
 
  

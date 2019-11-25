@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707975"
 ---
-
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Representar la lista de entidades asociada a la página actual
 
 Represente la lista de entidades asociada a la página actual como una tabla paginada y ordenable. Usa los parámetros [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [PowerApps Common Data Service entity tags](portals-entity-tags.md), [page](liquid-objects.md#page) y [request](liquid-objects.md#request) e incluye búsqueda y selección de varias vistas.  

@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749595"
 ---
 # <a name="script-jscript-web-resources"></a>Recursos web de script (JScript)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
 
 Los recursos web de Script(JScript) se usan para crear una biblioteca de funciones de JScript a las que se puede acceder desde cualquier parte.  
   

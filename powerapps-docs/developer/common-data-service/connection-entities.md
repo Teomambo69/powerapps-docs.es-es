@@ -1,6 +1,6 @@
 ---
 title: Usar conexiones para vincular registros entre sí (Common Data Service) | Microsoft Docs
-description: 'Las entidades de conexión le permiten habilitar, crear y consultar conexiones.'
+description: Las entidades de conexión le permiten habilitar, crear y consultar conexiones.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7ad1b1874f71c958204119a35440922361746252
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749578"
 ---
 # <a name="use-connections-to-link-records-to-each-other"></a>Usar conexiones para vincular registros entre sí
 
-Las *conexiones* proporcionan una forma flexible de conectar y describir las relaciones entre dos registros de entidad cualesquiera de Common Data Service. Ayudan a promover el trabajo en equipo, la colaboración y la administración eficaz de los procesos de negocio y de ventas. Las conexiones le permiten establecer fácilmente asociaciones entre usuarios, contactos, ofertas, pedidos de ventas y muchos otros registros de entidad. A los registros de la asociación se les pueden asignar roles determinados que ayudan a definir el objetivo de la relación.  
+Las *conexiones* proporcionan una forma flexible de conectar y describir las relaciones entre los dos registros de entidad de Common Data Service. Ayudan a promover el trabajo en equipo, la colaboración y la administración eficaz de los procesos de negocio y de ventas. Las conexiones le permiten establecer fácilmente asociaciones entre usuarios, contactos, ofertas, pedidos de ventas y muchos otros registros de entidad. A los registros de la asociación se les pueden asignar roles determinados que ayudan a definir el objetivo de la relación.  
   
  Las conexiones proporcionan las capacidades siguientes:  
   

@@ -1,6 +1,6 @@
 ---
-title: Ejemplos de operaciones de datos de API web (Common Data Service) | Microsoft Docs
-description: 'El SDK Common Data Service proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Encuentre aquí las implementaciones en C# y JavaScript del ejemplo de operaciones básicas, datos de consulta, operaciones condicionales y funciones y acciones'
+title: Ejemplos de operaciones de datos de la API web (Common Data Service) | Microsoft Docs
+description: El SDK de Common Data Service proporciona una matriz de los ejemplos que demuestran cómo usar la API web en varias formas diferentes. Encuentre aquí las implementaciones en C# y JavaScript del ejemplo de operaciones básicas, datos de consulta, operaciones condicionales y funciones y acciones
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: cdcb02f5-3baa-4fb7-8fb3-6fe53c2d4271
 caps.latest.revision: 11
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a8f977c9969283702834c45e9c9aeee9a6459fd4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749493"
 ---
 # <a name="web-api-data-operations-samples"></a>Ejemplos de operaciones de datos de API web
 
@@ -65,7 +71,7 @@ La siguiente tabla muestra los temas que hacen referencia a los problemas comune
   
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](overview.md)<br />
+[Usar la API web de Common Data Service](overview.md)<br />
 [Ejemplo de operaciones básicas de la API web](web-api-basic-operations-sample.md)<br />
 [Ejemplo de datos de consulta de la API web](web-api-query-data-sample.md)<br />
 [Ejemplo de operaciones condicionales de la API web](web-api-conditional-operations-sample.md)<br />

@@ -8,13 +8,19 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 30d9025b5fe4e1fc6135b83b59ce424f033abde3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749556"
 ---
 # <a name="online-management-api-for-common-data-service"></a>API de administración en línea para Common Data Service
 
-La API de Online Management es una REST API que le permite crear y administrar las entornos de Common Data Service en el inquilino de Office 365. 
+La API de Online Management es una API REST que le permite crear y administrar las entornos de Common Data Service en el inquilino de Office 365. 
 
 Los editores de la aplicación y Los ISV pueden usar la API de Online Management:
 -  Automatizar la creación de entornos personalizados de Common Data Service de demostración
@@ -27,6 +33,6 @@ Mediante la API de Online Management puede realizar diversas tareas en su entorn
   
 ### <a name="related-sections"></a>Secciones relacionadas  
 
-[Referencia de la REST API de Online Management](/rest/api/admin.services.crm.dynamics.com)
+[Referencia de la API REST de Online Management](/rest/api/admin.services.crm.dynamics.com)
 
 [Guía para desarrolladores de Common Data Service](/powerapps/developer/common-data-service/overview)

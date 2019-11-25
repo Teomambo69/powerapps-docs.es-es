@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 53971f95f73824773477cf00660a7593e7d501b1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749522"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Introducción a la personalización de aplicaciones basada en modelos mediante código
 
@@ -28,13 +34,13 @@ Las personalizaciones realizadas con otros métodos que no sean los que aquí se
 Se admiten los temas cubiertos en los artículos técnicos publicados en sitios de Microsoft como este, pero podrían no ser actualizables.
 
 
-## <a name="customizations-using-powerapps-portal"></a>Personalizaciones con el portal PowerApps
+## <a name="customizations-using-powerapps-portal"></a>Personalizaciones utilizando el portal de PowerApps
 
 Hay una variedad de herramientas que se incluyen con aplicaciones basadas en modelos para aplicaciones que puede utilizar para personalizarlas. Las personalizaciones realizadas con las herramientas de aplicaciones basadas en modelos son completamente compatibles y se pueden actualizar por completo.
 
 Se pueden usar los siguientes métodos de personalización para generar personalizaciones completamente compatibles:
 
-- Personalización en el portal PowerApps o la solución del explorador. Para obtener más información, vea [Información general para generar aplicaciones basadas en modelos](../../maker/model-driven-apps/model-driven-app-overview.md)
+- Personalización en el portal de PowerApps o la solución del explorador. Para obtener más información, vea [Información general para generar aplicaciones basadas en modelos](../../maker/model-driven-apps/model-driven-app-overview.md)
 
 - Configuración en la aplicación web. Para obtener más información, vea [Administrar aplicaciones basadas en modelos](/dynamics365/customer-engagement/admin/admin-guide).
 

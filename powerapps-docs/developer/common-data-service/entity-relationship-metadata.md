@@ -1,6 +1,6 @@
 ---
 title: Metadatos de relación entre entidades | Microsoft Docs
-description: Conozca el uso de metadatos de relaciones entre entidades que se usan en Common Data Service.
+description: Obtener más información sobre los metadatos de relación de entidad usados en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6d0f5aee398d83227f365ac5bb73ccea8068ed4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749440"
 ---
-
 # <a name="entity-relationship-metadata"></a>Metadatos de relaciones entre entidades
 
 Al mirar el explorador de soluciones o a las tres colecciones de relaciones en `EntityMetadata`, es posible que piense que existen tres tipos de relaciones entre entidades. Realmente solo hay dos, como se muestra en la siguiente tabla.
@@ -54,4 +59,4 @@ Más información: [Guía para desarrolladores para Common Data Service: consult
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades Common Data Service](entities.md)
+[Entidades de Common Data Service](entities.md)

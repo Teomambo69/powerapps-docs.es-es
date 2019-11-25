@@ -1,24 +1,27 @@
 ---
 title: Analizar datos con paneles (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Las entidades de paneles de Dynamics 365 Common Data Service le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.'
+description: Las entidades de paneles de Dynamics 365 Common Data Service le permiten presentar simultáneamente datos de distintos gráficos, cuadrículas, IFRAMES o recursos web. Los paneles le permiten comparar y analizar distintos componentes de información del cliente y le ofrecen instantáneas de datos.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 4b54597b-5603-2e6e-4630-bc120f711707
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ddaad62f16fdf178249155967c532d7e63af28d6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749456"
 ---
-
 # <a name="analyze-data-with-dashboards"></a>Analizar datos con paneles
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->

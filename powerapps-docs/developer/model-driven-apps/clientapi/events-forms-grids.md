@@ -1,7 +1,7 @@
 ---
 title: Eventos en formularios y cuadrículas en aplicaciones basadas en modelos | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 9fb38429-55ef-45ce-a3a3-e649e1be89d0
@@ -9,10 +9,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ab767999bd518bdae7852f7692d62272b809bcd8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749627"
 ---
 # <a name="events-in-forms-and-grids-in-model-driven-apps"></a>Eventos en formularios y cuadrículas en aplicaciones basadas en modelos
 

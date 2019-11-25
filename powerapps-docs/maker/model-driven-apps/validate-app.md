@@ -3,29 +3,34 @@ title: Validación y publicación de una aplicación basada en modelos mediante 
 description: Aprenda cómo validar y publicar una aplicación basada en modelos
 keywords: ''
 ms.date: 06/08/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5a9ec120-9ddc-4d92-b48c-0fee8c57d3c3
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 10
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710307"
 ---
-
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Validar y publicar una aplicación controlada por modelos usando el diseñador de aplicaciones
 
 Validar una aplicación para comprobar dependencias de activos que se requieren para que funcione la aplicación, pero que aún no se han agregado a la aplicación. Después de una validación correcta, publique la aplicación. 
@@ -38,7 +43,7 @@ Cuando se valida la aplicación, el lienzo del diseñador de la aplicación le m
   
      Una barra de notificación aparece y muestra si la aplicación tiene algún error o advertencias. La barra de notificación muestra advertencias en casos donde, por ejemplo, una entidad no tiene ningún formulario ni vista, o la aplicación no tiene ningún componente. Un error podría producirse si un mapa del sitio no está configurado para la aplicación. Puede publicar una aplicación sin abordar las advertencias, pero debe solucionar los errores para poder publicarla.  
   
-     ![Barra de notificaciones con advertencias en la aplicación](media/app-designer-warning-notification.png "Barra de notificaciones con advertencias en la aplicación")  
+     ![Barra de notificación que muestra advertencias en la aplicación](media/app-designer-warning-notification.png "Barra de notificación que muestra advertencias en la aplicación")  
   
      El diseñador de la aplicación también muestra un símbolo de advertencia con el número de dependencias en cada ventana de anomalía o activo donde falta un activo necesario.  
   
@@ -55,9 +60,9 @@ Cuando se valida la aplicación, el lienzo del diseñador de la aplicación le m
     > [!NOTE]
     >  Si hay un activo necesario común entre los distintos componentes de la aplicación, por ejemplo, se requiere un formulario para un panel y una entidad, y agrega ese activo solo una vez desde el árbol de dependencia del panel, el recuento de dependencias disminuirá solo en la ventana del panel, pero no en la ventana de la entidad. Sin embargo, la dependencia se resolverá para ambas.  
     >   
-    >  Seleccione el botón **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de aplicaciones") o seleccione de nuevo **Validar** para obtener el último conjunto de dependencias. Verá solo estos botones después de guardar la aplicación.  
+    >  Seleccione el botón **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de la aplicación")o seleccione de nuevo **Validar** para obtener el último conjunto de dependencias. Verá solo estos botones después de guardar la aplicación.  
   
-     Seleccione **Ocultar dependencias** si no desea agregar componentes necesarios recomendados. Las advertencias sin resolver aparecerán otra vez cuando abre la aplicación, en el diseñador de la aplicación y selecciona **Validar** u **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de aplicaciones").  
+     Seleccione **Ocultar dependencias** si no desea agregar componentes necesarios recomendados. Las advertencias sin resolver aparecerán otra vez cuando abre la aplicación, en el diseñador de la aplicación y selecciona **Validar** u **Obtener las últimas dependencias** ![Botón Obtener las últimas dependencias en el diseñador de aplicaciones](media/app-designer-get-latest-dependencies.png "Botón Obtener las últimas dependencias en el diseñador de la aplicación").  
   
     > [!NOTE]
     >  Si ahora oculta dependencias y desea exportar esta aplicación más adelante, volverán a aparecer todas estas dependencias.  

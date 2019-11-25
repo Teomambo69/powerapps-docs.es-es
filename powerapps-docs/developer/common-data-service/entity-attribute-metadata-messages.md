@@ -1,6 +1,6 @@
 ---
-title: Mensajes de metadatos de atributos de entidad (Common Data Service) | MicrosoftDocs
-description: 'Acerca de los mensajes usados para editar los metadatos de atributos de entidad, también conocidos como propiedades o campos.'
+title: Mensajes de metadatos de atributos de entidad (Common Data Service) | Microsoft Docs
+description: Acerca de los mensajes usados para editar los metadatos de atributos de entidad, también conocidos como propiedades o campos.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d99931592887405c6c3f3d2b057719c85f1b8d2e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749445"
 ---
 # <a name="entity-attribute-metadata-messages"></a>Mensajes de metadatos de atributos de entidad
 

@@ -10,12 +10,18 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5bb07c52d7a7fa159880a2cdf04b1f8109aec42d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749568"
 ---
-# <a name="integration-with-office-365"></a>Integración de  con Office 365
+# <a name="integration-with-office-365"></a>La integración con Office 365
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/online-integration-office-365 
 Do we even need this topic?

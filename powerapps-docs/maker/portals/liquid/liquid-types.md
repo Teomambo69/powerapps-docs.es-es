@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708107"
 ---
-
 # <a name="available-liquid-types"></a>Tipos de Liquid disponibles
 
 Los objetos de Liquid pueden devolver uno de estos siete tipos básicos: **Cadena**, **Número**, **Booleano**, **Matriz**, **Diccionario**, **Fecha y hora** y **Nulo**. Las variables de Liquid pueden inicializarse mediante las etiquetas **assign** o **capture**.

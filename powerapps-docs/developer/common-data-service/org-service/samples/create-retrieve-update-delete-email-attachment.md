@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: CRUD en datos adjuntos de correo electrónico <Topic Title> (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: CRUD datos adjuntos de correo electrónico <Topic Title> (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo realizar operaciones CRUD en datos adjuntos de correo electrónico
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7b6531dee95230f028c13728dd27761b8783738c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749527"
 ---
 # <a name="sample-create-retrieve-update-and-delete-an-email-attachment"></a>Ejemplo: crear, recuperar, actualizar y eliminar datos adjuntos de correo electrónico
 

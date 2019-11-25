@@ -1,5 +1,5 @@
 ---
-title: Idoneidad de las relaciones entre entidades (Common Data Service) | MicrosoftDocs
+title: Idoneidad de la relación entre entidades (Common Data Service) | Microsoft Docs
 description: En el artículo se enumeran los mensajes que puede usar para determinar si las entidades pueden participar en relaciones entre entidades.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3d5899cebc5e52ed48e99f2ae36fcaabbd5dddc3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749442"
 ---
 # <a name="entity-relationship-eligibility"></a>Idoneidad de la relación entre entidades
 

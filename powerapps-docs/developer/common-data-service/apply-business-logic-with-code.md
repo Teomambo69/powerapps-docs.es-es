@@ -1,5 +1,5 @@
 ---
-title: Aplicar lógica de negocios mediante código (Common Data Service) | MicrosoftDocs
+title: Aplicar lógica de negocios con código (Common Data Service)| Microsoft Docs
 description: Aprenda cómo los desarrolladores pueden usar código para aplicar lógica de negocio en Common Data Service.
 services: ''
 suite: powerapps
@@ -14,15 +14,20 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac1f673b927280cd2cdedb967a1f504f4ce68688
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749407"
 ---
-
 # <a name="apply-business-logic-using-code"></a>Aplicar la lógica de negocios usando código
 
-Siempre que sea posible, primero debe considerar aplicar una de las diversas opciones de proceso declarativas para definir o aplicar la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service](../../maker/common-data-service/cds-processes.md)
+Siempre que sea posible, primero debe considerar aplicar una de las diversas opciones de proceso declarativas para definir o aplicar la lógica de negocios. Más información: [Aplicar lógica de negocios en Common Data Service para aplicaciones](../../maker/common-data-service/cds-processes.md)
 
 Cuando un proceso declarativo no cumple un requisito, como un desarrollador tiene varias opciones. Este tema introducirá opciones comunes de escribir código.
 
@@ -40,4 +45,4 @@ Más información: [Extensiones de flujo de trabajo](workflow/workflow-extension
 
 ### <a name="see-also"></a>Vea también
 
-[Información general de Common Data Service](overview.md)
+[Información general para desarrolladores de Common Data Service](overview.md)

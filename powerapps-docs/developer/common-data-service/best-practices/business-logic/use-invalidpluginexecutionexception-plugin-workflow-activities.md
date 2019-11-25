@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c4ccc11cf09c00a2430e736d6e8ab6f532dee8e6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749390"
 ---
 # <a name="use-invalidpluginexecutionexception-in-plug-ins-and-workflow-activities"></a>Utilizar InvalidPluginExecutionException en actividades de complementos y de flujo de trabajo
 

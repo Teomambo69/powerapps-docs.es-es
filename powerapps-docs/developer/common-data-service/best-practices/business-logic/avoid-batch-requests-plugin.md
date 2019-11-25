@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e0732dfee3d4824f33042936af7e8f6157bcec83
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749400"
 ---
 # <a name="avoid-usage-of-batch-request-types-in-plug-ins-and-workflow-activities"></a>Evite usar de tipos de solicitud por lotes en complementos y actividades de flujo de trabajo
 

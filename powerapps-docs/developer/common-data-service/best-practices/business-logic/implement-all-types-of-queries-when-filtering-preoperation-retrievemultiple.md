@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 09/23/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dbe53cb136b4f73429b6c1e5cb57377a0445e6b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749399"
 ---
 # <a name="implement-all-types-of-queries-when-filtering-results-using-preoperation-retrievemultiple"></a>Implemente todos los tipos de consultas al filtrar resultados mediante PreOperation RetrieveMultiple
 

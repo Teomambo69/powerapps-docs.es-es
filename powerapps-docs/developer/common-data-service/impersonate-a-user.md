@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27022b8ffb76128e70ef2985059f6dc7dea504ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749434"
 ---
 # <a name="impersonate-a-user"></a>Suplantar a un usuario
 

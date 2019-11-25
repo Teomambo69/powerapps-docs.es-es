@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705511"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Mostrar iconos personalizados junto con los valores en vistas de lista
 
@@ -30,7 +36,7 @@ search.app:
  Los administradores y personalizadores de entornos de PowerApps pueden agregar gráficos a una vista y establecer la lógica usada para seleccionar un gráfico según el valor de la columna con JavaScript. La funcionalidad le permite personalizar las vistas de lista que muestran iconos junto al texto o los valores numéricos. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png "La vista Todas las oportunidades con la columna Valoración que muestra los iconos y el valor de texto")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  Los iconos de cuadrícula se muestran únicamente en la interfaz web. No se muestran en [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] o la aplicación móvil.  

@@ -1,6 +1,6 @@
 ---
-title: Auditar acceso de usuario (Common Data Service) | Microsoft Docs
-description: 'Compatibilidad con la capacidad de auditar el acceso de usuario, incluida la identificación de usuario, la hora de acceso y el tipo de cliente.'
+title: Auditoría de acceso de usuario (Common Data Service) | Microsoft Docs
+description: Compatibilidad con la capacidad de auditar el acceso de usuario, incluida la identificación de usuario, la hora de acceso y el tipo de cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0cf65855d669934db614b83c525055a337d90de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749405"
 ---
 # <a name="audit-user-access"></a>Auditoría de acceso de usuario
 
-Common Data Service admite la capacidad de realizar la auditoría del acceso de usuario. La información que se registra incluye cuándo empezó el usuario a acceder a Common Data Service y si el acceso se originó en la aplicación web Common Data Service, en Dynamics 365 for Outlook o en llamadas de SDK a los servicios web.  
+Common Data Service es compatible con la capacidad de auditar el acceso de usuarios. La información que se registra incluye cuándo empezó el usuario a acceder a Common Data Service y si el acceso se originó en la aplicación web Common Data Service, en Dynamics 365 for Outlook o en llamadas de SDK a los servicios web.  
   
 ## <a name="enable-user-access-auditing"></a>Habilitar la auditoría de acceso de usuario  
  La auditoría de acceso del usuario se habilita en toda la organización. Para habilitar o deshabilitar la auditoría de acceso de usuario, debe recuperar el registro de la organización de destino y actualizar el valor del atributo `Organization.IsUserAccessAuditEnabled` para la organización. También se debe habilitar la auditoría global de la organización, definiendo el atributo `Organization.IsAuditEnabled` en `true` en el registro de la organización. Para realizar la auditoría del origen de acceso del usuario, por ejemplo: aplicación web, Dynamics 365 for Outlook o SDK, debe habilitar la auditoría en las entidades a las que se está accediendo.  
@@ -37,7 +43,7 @@ Common Data Service admite la capacidad de realizar la auditoría del acceso de 
   
 -   `AuditAction.UserAccessAuditStopped`  
   
- `UserAccessviaWeb` indica el acceso desde la aplicación web Common Data Service o Microsoft Dynamics 365 for Outlook. `UserAccessviaWebServices` indica una solicitud de servicio web desde el SDK. La enumeración de `AuditAction` está disponible para el código al incluir `OptionSets.cs` o `OptionSets.vb` en el proyecto de la aplicación.  
+ `UserAccessviaWeb` indica el acceso desde la aplicación web de Common Data Service o Dynamics 365 for Outlook. `UserAccessviaWebServices` indica una solicitud de servicio web desde el SDK. La enumeración de `AuditAction` está disponible para el código al incluir `OptionSets.cs` o `OptionSets.vb` en el proyecto de la aplicación.  
   
 ### <a name="see-also"></a>Vea también  
  [Auditar cambios de datos de entidad en Dynamics 365](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   

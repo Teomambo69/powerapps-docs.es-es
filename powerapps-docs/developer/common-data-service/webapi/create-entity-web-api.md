@@ -1,6 +1,6 @@
 ---
-title: Crear una entidad utilizando la API web (Common Data Service) | Microsoft Docs
-description: Lea cómo crear una solicitud POST para enviar datos para crear una entidad en Common Data Service mediante la API web
+title: Crear un registro de entidad con la API web (Common Data Service) | Microsoft Docs
+description: Lea cómo crear una solicitud POST para enviar datos para crear un registro de entidad en Common Data Service mediante la API web
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 64561c0b655e02a7537af4268b2a92b7a1677f9a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749512"
 ---
+# <a name="create-an-entity-record-using-the-web-api"></a>Crear un registro de entidad usando la API web
 
-# <a name="create-an-entity-using-the-web-api"></a>Cree una entidad usando API web
-
-Use una solicitud POST para enviar datos para crear una entidad. Puede crear varias entidades relacionadas en una sola operación mediante "inserción en profundidad". También necesita saber cómo establecer los valores para asociar una nueva entidad a entidades existentes mediante la anotación @odata.bind.  
+Use una solicitud POST para enviar datos para crear una entidad. Puede crear varios registros de entidad relacionados en una sola operación mediante "inserción en profundidad". También necesita saber cómo establecer los valores para asociar un nuevo registro de entidad a entidades existentes mediante la anotación @odata.bind.  
 
 > [!NOTE]
 > Para obtener información sobre cómo crear y actualizar los metadatos de la entidad mediante la API web, consulte [Crear y actualizar definiciones de entidad mediante la API web](create-update-entity-definitions-using-web-api.md).
@@ -33,7 +38,7 @@ Use una solicitud POST para enviar datos para crear una entidad. Puede crear var
 
 ## <a name="basic-create"></a>Crear básico
 
- En este ejemplo crea una nueva entidad de cuenta. El encabezado `OData-EntityId` de respuesta contiene el Uri de la entidad creada.
+ En este ejemplo crea un nuevo registro de entidad de cuenta. El encabezado `OData-EntityId` de respuesta contiene el Uri de la entidad creada.
 
  **Solicitud**
 
@@ -65,11 +70,11 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(7eb682f1-ca75-e511-80d
 
 ```
 
-Para crear una nueva entidad debe identificar los nombres y los tipos de propiedad válidos. Para todas las entidades y atributos del sistema, puede buscar esta información en el tema de la entidad en [Acerca de la referencia de entidades](../reference/about-entity-reference.md). Para entidades o atributos personalizados, consulte la definición de esa entidad en [Documento de $metadatos CSDL](web-api-types-operations.md#csdl-metadata-document). Más información:[Tipos de entidad](web-api-types-operations.md#entity-types)
+Para crear un nuevo registro de entidad debe identificar los nombres y los tipos de propiedad válidos. Para todas las entidades y atributos del sistema, puede buscar esta información en el tema de la entidad en [Acerca de la referencia de entidades](../reference/about-entity-reference.md). Para entidades o atributos personalizados, consulte la definición de esa entidad en [Documento de $metadatos CSDL](web-api-types-operations.md#csdl-metadata-document). Más información:[Tipos de entidad](web-api-types-operations.md#entity-types)
 
 <a name="bkmk_CreateRelated"></a>
 
-## <a name="create-related-entities-in-one-operation"></a>Crear entidades relacionadas en una operación
+## <a name="create-related-entity-records-in-one-operation"></a>Crear registros de entidad relacionados en una operación
 
  Puede crear entidades relacionadas entre sí definiéndolas como valores de propiedades de navegación. Esto se conoce como *inserción en profundidad*.
 
@@ -125,7 +130,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(3c6e4b5f-86f6-e411-80d
 
 <a name="bkmk_associateOnCreate"></a>
 
-## <a name="associate-entities-on-create"></a>Asociar entidades en la creación
+## <a name="associate-entity-records-on-create"></a>Asociar registros de entidad en la creación
 
  Para asociar nuevas entidades a las entidades existentes cuando se crean debe establecer el valor de las propiedades de navegación de un solo valor mediante la anotación `@odata.bind`.
 
@@ -172,7 +177,7 @@ Consulte [Detectar duplicados mediante la API web](manage-duplicate-detection-cr
 
 <a name="bkmk_initializefrom"></a>
 
-## <a name="create-a-new-entity-from-another-entity"></a>Cree una nueva entidad a partir de otra entidad
+## <a name="create-a-new-entity-record-from-another-entity"></a>Cree un nuevo registro de entidad a partir de otra entidad
 
 Utilice `InitializeFrom function` para crear un registro nuevo en el contexto de un registro existente donde existe una asignación entre las entidades a las que pertenecen los registros. 
 
@@ -207,7 +212,7 @@ La respuesta recibida de la solicitud InitializeFrom consta de valores de atribu
 
 > [!NOTE]
 > Para determinar si se pueden asignar dos entidades, utilice esta consulta:  
-Conseguir [URI organización]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
+GET [URI organización]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
 
 También se pueden establecer o modificar otros valores de atributo para el nuevo registro agregándolos al cuerpo de la solicitud JSON, tal como se muestra en el ejemplo siguiente.
 

@@ -1,25 +1,31 @@
 ---
 title: Espacio seguro para RDL  | MicrosoftDocs
-ms.custom: null
+ms.custom: ''
 ms.date: 09/30/2017
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 for Customer Engagement (online)
+- Dynamics 365 for Customer Engagement (online)
 ms.assetid: 8ec72014-9f0c-4964-ac67-24419b054e91
 caps.latest.revision: 13
 author: Mattp123
 ms.author: matp
 manager: amyla
 tags:
-  - MigrationHO
+- MigrationHO
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: f936dc4c6b78096b74b650bf8426ba1d78c41d19
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711407"
 ---
 # <a name="rdl-sandboxing"></a>Espacio seguro para RDL 
 

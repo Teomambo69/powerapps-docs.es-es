@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0724ccf7c44240fd3d3fd80fb69b6d91a80d1ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705775"
 ---
-
 # <a name="configure-header-properties-in-the-form-designer"></a>Configurar propiedades de encabezado en el diseñador de formularios
 
 Los creadores pueden controlar la densidad de encabezados de formularios basados en modelo para que se ajusten a las necesidades de cualquiera que utilice el formulario.
@@ -69,13 +74,13 @@ El comportamiento del control de flotante de encabezado cambia en función de la
 Con un encabezado de formulario de alta densidad el control flotante de encabezado muestra todos los campos de encabezado incluidos los cuatro campos que se muestran directamente en el encabezado. El marco de trabajo muestra de forma predeterminada el control flotante de encabezado cuando se usa el encabezado de alta densidad. Los creadores pueden controlar la visibilidad del control flotante de encabezado con un encabezado de alta densidad.
 
 > [!div class="mx-imgBorder"] 
-> ![Control flotante de encabezado con encabezado de alta densidad](media/form-header-flyout-high-density.png "Control flotante de encabezado con encabezado de alta densidad")
+> ![Control flotante de encabezado de alta densidad](media/form-header-flyout-high-density.png "Control flotante de encabezado de alta densidad")
 
 ### <a name="low-density-header-flyout"></a>Control flotante de encabezado de baja densidad
 Con un encabezado de formulario de baja densidad el control flotante de encabezado muestra sólo campos de desbordamiento, como campos que el formulario no puede mostrar directamente en el encabezado con el ancho del formulario. El control flotante de encabezado también se muestra o se oculta automáticamente en función del número de campos en el encabezado y el ancho del formulario. Los creadores no pueden controlar la visibilidad del control flotante de encabezado cuando se usa un encabezado de baja densidad.
 
 > [!div class="mx-imgBorder"] 
-> ![Control flotante de encabezado con encabezado de baja densidad](media/form-header-flyout-low-density.png "Control flotante de encabezado con encabezado de baja densidad")
+> ![Control flotante de encabezado de baja densidad](media/form-header-flyout-low-density.png "Control flotante de encabezado de baja densidad")
 
 ### <a name="show-or-hide-the-header-flyout"></a>Mostrar u ocultar el control flotante del encabezado
 Para mostrar u ocultar el control flotante de encabezado para un formulario basado en modelo, siga estos pasos:
@@ -106,7 +111,7 @@ Este mensaje se muestra en el diseñador de formularios cuando un creador abre u
 
 El mensaje ayuda a incrementar el conocimiento sobre el encabezado de alta densidad y sus beneficios.
 
-### <a name="field-moved-to-header-flyout-the-header-supports-displaying-up-to-four-read-only-field-values-the-field-field-display-name-will-now-only-be-available-from-the-flyout"></a>Campo movido a control flotante de encabezado: El encabezado admite mostrar hasta cuatro valores de campo de sólo lectura. El campo *[nombre para mostrar del campo]* ahora solo estará disponible desde el control flotante.
+### <a name="field-moved-to-header-flyout-the-header-supports-displaying-up-to-four-read-only-field-values-the-field-field-display-name-will-now-only-be-available-from-the-flyout"></a>Campo movido a control flotante de encabezado: El encabezado admite mostrar hasta cuatro valores de campo de sólo lectura. El campo *nombre para mostrar del campo* ahora solo estará disponible desde el control flotante.
 Este mensaje se muestra en el diseñador de formularios cuando un formulario usa el encabezado de alta densidad con el control flotante de encabezado visible.  
   
 El encabezado de alta densidad muestra valores de solo lectura de los primeros cuatro campos del encabezado. Cuando los creadores agregan un campo en el encabezado en las cuatro posiciones superiores, hace que un campo existente que se mostraba directamente en el encabezado pase a estar extendido y sea visible solo en el control flotante de encabezado.      

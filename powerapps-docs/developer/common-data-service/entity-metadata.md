@@ -1,6 +1,6 @@
 ---
 title: Metadatos de entidad | Microsoft Docs
-description: Conozca el uso de metadatos de entidad en Common Data Service.
+description: Información sobre el uso de los metadatos de entidades en Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7c6845a68f5f076b668f3604fe899991827077f2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749443"
 ---
 <!-- 
 Was Mike Carter
@@ -90,7 +96,7 @@ Cada entidad que admite imágenes de entidad tendrá tres atributos de respaldo.
 |`EntityImageId`|`UniqueIdentifierType`|El identificador único de la imagen.|
 
 Más información: 
-- [Atributos de imagen de la guía para desarrolladores de Common Data Service](/dynamics365/customer-engagement/developer/image-attributes)
+- [ Atributos de imagen de la guía para desarrolladores de Common Data Service](/dynamics365/customer-engagement/developer/image-attributes)
 - [Ejemplo de la guía para desarrolladores de Common Data Service: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 
 > [!NOTE]
@@ -156,7 +162,7 @@ Por ejemplo, `PostComment`, `PostLike` y `PostRole` son cada uno elementos secun
 Cada definición de clave alternativa describe uno o varios atributos en la combinación que identificará de forma exclusiva una instancia de entidad. Las claves alternativas se aplican normalmente solo para la integración con sistemas externos. Puede definir las claves alternativas para identificar de forma única un registro. Esto es valioso si está integrando datos con un sistema que no admita las claves de identificador único de GUID. Puede definir un solo valor de campo o combinación de valores de campo para identificar una entidad de forma única. Agregar una clave alternativa aplicará una restricción de unicidad en estos atributos. No podrá crear o actualizar otro registro de entidad para tener los mismos valores.
 
 Más información: 
- - [Guía de personalización de Common Data Service: definir claves alternativas para hacer referencia a registros de Common Data Service](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
+ - [Guía de personalización de Common Data Service: Definir claves alternativas para hacer referencia a registros de Common Data Service](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
  - [Guía para desarrolladores sobre cómo definir claves alternativas para una entidad: sincronizar los datos de Common Data Service con sistemas externos](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
 
 ## <a name="entity-states"></a>Estados de entidad
@@ -191,4 +197,4 @@ Para las entidades personalizadas, puede definir criterios adicionales para tran
 
 ### <a name="see-also"></a>Vea también
 
-[Entidades Common Data Service](entities.md)
+[Entidades de Common Data Service](entities.md)

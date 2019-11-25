@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 29aa934896638b65b20d8054379f0654ef5ee839
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749531"
 ---
 # <a name="when-to-edit-the-customizations-file"></a>Cuándo modificar el archivo de personalizaciones
 
@@ -48,7 +54,7 @@ El archivo customizations.xml que se exporta como parte de una solución no admi
  Las definiciones de vistas para entidades se incluyen en el archivo customizations.xml y se pueden editar manualmente. El editor de vistas de la aplicación es la herramienta más utilizada para este fin. La edición del archivo customizations.xml es un método alternativo. Para obtener más información: consulte [Personalizar vistas de entidad](customize-entity-views.md).  
   
  **Editar el archivo ISV.config**  
-  Para Common Data Service, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
+  En Common Data Service, la cinta de opciones ofrece la forma de ampliar la aplicación. La única función restante en ISV.Config es personalizar la apariencia del calendario de servicios. Para obtener más información, consulte [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
   
 ## <a name="unsupported-tasks"></a>Tareas no compatibles  
  La definición de otros componentes de la solución editando el archivo customizations.xml exportado no se admite. Esto incluye lo siguiente:  

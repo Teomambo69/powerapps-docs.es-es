@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3937b56ea5ed9aa03085f48de8f4846328d6e836
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700583"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Crear reglas de negocio y recomendaciones para aplicar lógica en un formulario de aplicaciones controladas por modelos
 
@@ -53,13 +59,13 @@ En este tema se muestra cómo crear reglas de negocio y recomendaciones para apl
   
 2.  Abra la entidad para la que desea crear reglas de negocio (por ejemplo, abra la entidad **Cuenta**), y haga doble clic en **Reglas de negocio**.  
   
- ![Crear reglas de negocio en la solución predeterminada](media/create-business-rule-the-default-solution.png "Crear reglas de negocio en la solución predeterminada")  
+ ![Creación de reglas de negocio en la solución predeterminada](media/create-business-rule-the-default-solution.png "Creación de reglas de negocio en la solución predeterminada")  
   
 3.  Seleccione **Nuevo**.  
   
      La ventana del diseñador de reglas de negocio se abre con una sola condición ya creada para usted. Cada regla empieza con una condición. La regla de negocio toma una o varias acciones basadas en esa condición.  
   
- ![Venta del diseñador de reglas de negocio](media/business-rules-design-window.png "Venta del diseñador de reglas de negocio")  
+ ![Ventana de diseño Reglas de negocio](media/business-rules-design-window.png "Ventana de diseño Reglas de negocio")  
   
    > [!TIP]
 > Si desea modificar una regla de negocio existente, debe desactivarla para poder editarla.
@@ -79,13 +85,13 @@ En este tema se muestra cómo crear reglas de negocio y recomendaciones para apl
   
     1.  Arrastre el componente **Condición** de la pestaña **Componentes** hasta un signo más en el diseñador.  
   
-        ![Agregar una condición a una regla de negocio](media/add-condition-business-rule.png "Agregar una condición a una regla de negocio")  
+        ![Agregar una condición en una regla de negocio](media/add-condition-business-rule.png "Agregar una condición en una regla de negocio")  
   
     2.  Para establecer propiedades para la condición, haga clic en el componente **Condición** en la ventana del diseñador y, a continuación establezca las propiedades en la pestaña **Propiedades** a la derecha de la pantalla. A medida establezca propiedades, se crea una expresión en la parte inferior de la pestaña **Propiedades**.  
   
     3.  Para agregar una cláusula adicional (AND u OR) a la condición, haga clic en **Nuevo** en la pestaña **Propiedades** para crear una nueva regla y, a continuación establezca las propiedades para dicha regla. En el campo **Lógica de la regla** puede especificar si agrega la nueva regla como AND u OR.  
   
-        ![Agregar una regla nueva a una condición](media/add-new-rule-condition.png "Agregar una regla nueva a una condición")  
+        ![Agregar una nueva regla a una condición](media/add-new-rule-condition.png "Agregar una nueva regla a una condición")  
   
     4.  Cuando termine de establecer propiedades para la condición, haga clic en **Aplicar**.  
   
@@ -143,12 +149,12 @@ Una regla de negocio puede no ejecutarse debido a que el campo al que se hace re
 4.  En el diseñador de reglas de negocio seleccione cada condición y acción para comprobar todos los campos a los que se hace referencia en cada condición y acción. 
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "El campo al que se hace referencia en las reglas de negocio existe en la entidad”")
+     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
  5. Compruebe que cada campo al que se hace referencia en la regla de negocio también está incluido en el formulario. De lo contrario, agregue el campo que falta al formulario.
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "Campo de nombre de cuenta en el formulario”")
+     > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>Preguntas más frecuentes
 *¿Pueden las reglas de negocio desbloquear campos de un formulario de solo lectura?*

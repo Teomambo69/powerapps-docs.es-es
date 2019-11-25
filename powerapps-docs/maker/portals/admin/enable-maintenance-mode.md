@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709955"
 ---
-
 # <a name="maintenance-mode-for-a-portal"></a>Modo de mantenimiento para un portal
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Puede haber momentos en que la página web esté en mantenimiento programado o no está funcionando debido a interrupción temporal. Cuando un cliente tiene acceso a la página web durante mantenimiento, puede experimentar un comportamiento impredecible y falta de disponibilidad intermitente. 
 

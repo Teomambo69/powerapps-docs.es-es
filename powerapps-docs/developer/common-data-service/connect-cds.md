@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 82616711b47a2f14d32e7ee327b21e27df919a9b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749579"
 ---
 # <a name="create-client-applications"></a>Crear aplicaciones cliente
 
@@ -22,7 +28,7 @@ Más información: [Visión general de creación de aplicaciones en PowerApps](.
 
 Si las opciones de PowerApps no cumplen los requisitos, puede crear una aplicación cliente con código.
 
-## <a name="connecting-to-common-data-service"></a>Conectarse a Common Data Service
+## <a name="connecting-to-common-data-service"></a>Conectando a Common Data Service
 
 Para conectarse a un entorno de Common Data Service necesita la dirección URL de la información de entorno y de credenciales de una cuenta de usuario con acceso al entorno. La estrategia que usará depende de si tiene esta información o necesita obtenerla del usuario de la aplicación. 
 

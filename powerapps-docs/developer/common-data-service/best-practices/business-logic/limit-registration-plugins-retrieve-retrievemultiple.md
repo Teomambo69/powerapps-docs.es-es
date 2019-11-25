@@ -1,6 +1,6 @@
 ---
 title: Limitar el registro de complementos para los mensajes Retrieve y de RetrieveMultiple | MicrosoftDocs
-description: 'Si se agrega lógica de complementos síncrona a los eventos de mensaje Retrieve y de RetrieveMultiple, se puede producir lentitud.'
+description: Si se agrega lógica de complementos síncrona a los eventos de mensaje Retrieve y de RetrieveMultiple, se puede producir lentitud.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d17772aab805ae6d7969db19b888b3565926ca6c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749396"
 ---
 # <a name="limit-the-registration-of-plug-ins-for-retrieve-and-retrievemultiple-messages"></a>Limitar el registro de complementos para los mensajes Retrieve y de RetrieveMultiple
 
@@ -49,11 +55,11 @@ Si es una solución adecuada, siga estas sugerencias para minimizar el impacto e
 
 - Evite incluir las tareas prolongadas, especialmente las que pueden no ser deterministas, como la invocación de las llamadas de servicio externas o las consultas complejas a Dynamics 365.
 
-- Limite o evite realizar consultas de datos adicionales desde Common Data Service
+- Limite o evite consultar datos adicionales de Common Data Service
 
 ### <a name="virtual-entities"></a>Entidades virtuales
 
-Por lo general Retrieve y RetrieveMultiple se invocan en el complementos para recuperar datos de orígenes externos. Los datos de orígenes externos se generan en PowerApps o se usan trabajar con los datos existentes o gestionarlos. La versión 9.0 de Dynamics 365 (online) presenta una función denominada [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) que permiten la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades en PowerApps, sin replicación de datos y a menudo sin código personalizado. Consulte la documentación de [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) para obtener más información acerca de las funcionalidades, las limitaciones y la configuración.
+Por lo general Retrieve y RetrieveMultiple se invocan en el complementos para recuperar datos de orígenes externos. Los datos de orígenes externos se generan en PowerApps o se usan trabajar con los datos existentes o gestionarlos. Dynamics 365 (online) versión 9.0 presenta una función denominada [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) que permiten la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades en PowerApps, sin replicación de datos y a menudo sin código personalizado. Consulte la documentación de [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) para obtener más información acerca de las funcionalidades, las limitaciones y la configuración.
 
 ### <a name="retrieve-caution"></a>Precaución de Retrieve
 

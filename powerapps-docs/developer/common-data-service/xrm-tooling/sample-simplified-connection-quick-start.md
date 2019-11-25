@@ -1,24 +1,30 @@
 ---
 title: 'Ejemplo: Inicio rápido de conexión simplificada (Manual para desarrolladores de Common Data Service) | MicrosoftDocs'
 description: 'Este ejemplo muestra cómo conectarse a los servicios web de Common Data Service usando el CrmServiceClient y realizar operaciones básicas de creación, actualización, recuperación y eliminación en una entidad. '
-ms.custom: null
+ms.custom: ''
 ms.date: 03/27/2019
 author: Nkrb
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Common Data Service (online)
+- Common Data Service (online)
 ms.assetid: a4fb3634-948e-4bac-a32f-f626c78d83a0
 caps.latest.revision: 29
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
-  - PowerApps
+- D365CE
+- PowerApps
+ms.openlocfilehash: aec27b41272c83a3baa1e35c39b757d1225ac20c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749476"
 ---
 # <a name="sample-simplified-connection-quick-start-using-common-data-service"></a>Ejemplo: tutorial de conexión simplificada con Common Data Service
 

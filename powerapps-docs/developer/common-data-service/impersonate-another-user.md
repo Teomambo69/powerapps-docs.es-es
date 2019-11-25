@@ -1,6 +1,6 @@
 ---
 title: Suplantar a otro usuario (Common Data Service) | Microsoft Docs
-description: Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado.
+description: Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseado con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0701f48caa7b45d49cd85c6d8c97ff6568e4813e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749432"
 ---
 # <a name="impersonate-another-user"></a>Suplantar a otro usuario
 
-Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. 
+Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseado con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. 
 
 Esto es necesario porque varios clientes y servicios de los servicios web de Common Data Service pueden llamar en nombre de un usuario de Common Data Service.
 

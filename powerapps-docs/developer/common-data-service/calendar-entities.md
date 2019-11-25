@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 629421059fc822d9e4adc24d81f3750cec76c5fc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749585"
 ---
 # <a name="calendar-entities"></a>Entidades de calendario
 
@@ -21,7 +27,7 @@ La entidad de calendario almacena datos para los calendarios de servicio de aten
   
  Un calendario describe la disponibilidad de un servicio o un recurso. Los calendarios están relacionados con los registros `calendarrule`, que incluyen detalles acerca de la duración, la hora de inicio y de finalización, y los patrones periódicos de los eventos incluidos en el calendario.  
   
- Existen dos tipos de reglas de calendarios en Common Data Service:  
+ Existen dos tipos de reglas de calendario en Common Data Service:  
   
 - **Raíz**: una regla de calendario que contiene un calendario interno o que tiene reglas (hoja) anidadas. Puede especificar un calendario interno para una regla de calendario raíz mediante el atributo `CalendarRule.InnerCalendarId`. El valor de atributo de `CalendarRule.InnerCalendarId` de una regla raíz es el mismo que el valor de atributo de `CalendarRule.CalendarId` de sus reglas hoja.  
   

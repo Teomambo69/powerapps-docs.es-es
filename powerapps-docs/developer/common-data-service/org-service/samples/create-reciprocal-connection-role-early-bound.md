@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Crear un rol de conexión recíproca (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Crear un rol de conexión recíproca(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un rol de conexión recíproca.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e61ee0a712ec8844776bc14231ef18ec82092e07
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749528"
 ---
 # <a name="sample-create-a-reciprocal-connection-role"></a>Ejemplo: creación de un rol de conexión recíproca
 

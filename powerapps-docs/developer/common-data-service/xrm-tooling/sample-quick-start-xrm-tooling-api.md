@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 060d45bb-b7fd-48bd-ab8f-629c1b8bc1dc
 caps.latest.revision: 20
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9f7279a2491d576f505252bcd8ebdbb7df0e8ae7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749477"
 ---
 # <a name="sample-quick-start-for-xrm-tooling-api"></a>Ejemplo: inicio rápido para la API de útiles de XMR
 

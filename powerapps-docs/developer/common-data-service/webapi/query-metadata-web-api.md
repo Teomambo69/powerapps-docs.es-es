@@ -1,5 +1,5 @@
 ---
-title: Consultar datos utilizando la API web (Common Data Service) | Microsoft Docs
+title: Consultar metadatos con la API web (Common Data Service) | Microsoft Docs
 description: La posibilidad de consultar metadatos del sistema está disponible mediante la API web así como usando el servicio de organización mediante RetrieveMetadataChangesRequest
 ms.custom: ''
 ms.date: 11/04/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3ad4a332-a304-421f-a9fa-82ea3e0503fe
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2a1d133de698402bf880ed37f88b4bd12fd5203
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749519"
 ---
 # <a name="query-metadata-using-the-web-api"></a>Consulta de metadatos utilizando la API web
 

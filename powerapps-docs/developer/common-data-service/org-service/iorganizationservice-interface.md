@@ -1,19 +1,25 @@
 ---
-title: Interfaz IOrganizationService (Common Data Service) | Microsoft Docs
+title: Interfaz de IOrganizationService (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre los métodos comunes expuestos para realizar operaciones de datos con Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bccb65e72c967ab973de106f1010ad95164db3ee
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749547"
 ---
 # <a name="iorganizationservice-interface"></a>Interfaz IOrganizationService
 

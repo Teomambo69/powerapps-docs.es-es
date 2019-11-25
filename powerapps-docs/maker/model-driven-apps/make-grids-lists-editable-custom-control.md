@@ -4,28 +4,34 @@ description: Obtenga información sobre cómo usar el control personalizado de c
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: cefbc0c2-769b-4230-ab5a-b28a84630a42
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700627"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable
 
-En versiones anteriores de Dynamics CRM, los usuarios no podían introducir datos directamente en las cuadrículas (a veces denominadas "listas") o subcuadrículas de los formularios. Tenían que seleccionar en el registro en la cuadrícula para abrir un formulario, modificar los datos, y luego guardarlos, lo que requería varios pasos. Con las cuadrículas editables, los usuarios pueden editar en línea con gran detalle directamente desde cuadrículas y subcuadrículas tanto si usan una aplicación web, tableta o teléfono.  
+En versiones anteriores de Dynamics CRM, los usuarios no podían introducir datos directamente en cuadrículas (a veces denominadas las listas) o subcuadrículas de formularios. Tenían que seleccionar en el registro en la cuadrícula para abrir un formulario, modificar los datos, y luego guardarlos, lo que requería varios pasos. Con las cuadrículas editables, los usuarios pueden editar en línea con gran detalle directamente desde cuadrículas y subcuadrículas tanto si usan una aplicación web, tableta o teléfono.  
   
  ![Ejemplos de cuadrícula editable](media/editable-grid-examples.png "Ejemplos de cuadrícula editable")  
   
@@ -116,7 +122,7 @@ En versiones anteriores de Dynamics CRM, los usuarios no podían introducir dato
 
 > [!NOTE] 
 > - Para guardar un cambio de cuadrícula editable en una subcuadrícula, el usuario debe guardarlo explícitamente antes de salir del formulario.
-> - Si usa formularios heredados (versiones anteriores a Dynamics CRM 2016) y habilita una cuadrícula editable en una subcuadrícula, la subcuadrícula editable no se representará. Los administradores del sistema pueden desactivar los formularios antiguos en la configuración del sistema, si es necesario.
+> - Si usa formularios antiguos (versiones anteriores a Dynamics CRM 2016) y habilita una cuadrícula editable en una subcuadrícula, la subcuadrícula editable no se representará. Los administradores del sistema pueden desactivar los formularios antiguos en la configuración del sistema, si es necesario.
   
 1.  Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
   

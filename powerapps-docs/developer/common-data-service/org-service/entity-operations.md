@@ -1,19 +1,25 @@
 ---
-title: Operaciones de entidad que usan el servicio de la organización (Common Data Service) | Microsoft Docs
+title: Operaciones de la entidad con el servicio de organización (Common Data Service)| Microsoft Docs
 description: Obtenga más información sobre la clase entidad que se usa para las operaciones de datos mediante el servicio de la organización de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bbd71c47e31f619885a91f2042d4d7de6f7b7143
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749550"
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Operaciones de la entidad con el servicio de la organización
 
@@ -199,7 +205,7 @@ Account account2 = retrievedEntity.ToEntity<Account>();
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Estos temas aportarán más información sobre cómo trabajar con las entidades Common Data Service.
+Estos temas aportarán más información sobre cómo trabajar con las entidades de Common Data Service.
 
 [Tutorial: ejemplo de servicio de organización (C#)](quick-start-org-service-console-app.md)
 [Consultar datos](entity-operations-query-data.md)<br />

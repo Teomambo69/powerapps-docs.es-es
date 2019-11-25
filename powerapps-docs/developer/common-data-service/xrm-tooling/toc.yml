@@ -1,30 +1,30 @@
-- name: Compilación de aplicaciones cliente de Windows mediante las herramientas XRM
+- name: Crear aplicaciones cliente de Windows mediante las herramientas XRM
   href: build-windows-client-applications-xrm-tools.md
   items:
-    - name: Uso de los constructores CrmServiceClient para conectarse
+    - name: Usar constructores CrmServiceClient para conectarse
       href: use-crmserviceclient-constructors-connect.md
-    - name: Uso de las cadenas de conexión de las herramientas XRM para conectarse
+    - name: Usar cadenas de conexión en útiles de XRM para conectarse
       href: use-connection-strings-xrm-tooling-connect.md
-    - name: Uso de los cmdlets de PowerShell de las herramientas XRM para conectarse
+    - name: Usar cmdlets de PowerShell para que las herramientas de XRM se conecten
       href: use-powershell-cmdlets-xrm-tooling-connect.md
-    - name: Uso de las herramientas XRM para ejecutar acciones
+    - name: Usar herramientas XRM para ejecutar acciones
       href: use-xrm-tooling-execute-actions.md
       items:
-        - name: Uso de las herramientas XRM para crear datos
+        - name: Usar útiles de XRM para crear los datos
           href: use-xrm-tooling-create-data.md
-        - name: Uso de las herramientas XRM para recuperar datos
+        - name: Utilizar los útiles de XRM para recuperar datos
           href: use-xrm-tooling-retrieve-data.md
-        - name: Uso de las herramientas XRM para actualizar datos
+        - name: Usar útiles de XRM para actualizar los datos
           href: use-xrm-tooling-update-data.md
-        - name: Uso de las herramientas XRM para eliminar datos
+        - name: Usar útiles de XRM para eliminar datos
           href: use-xrm-tooling-delete-data.md
-        - name: Uso de mensajes con el método ExecuteCrmOrganizationRequest
+        - name: Utilizar mensajes con el método ExecuteCrmOrganizationRequest
           href: use-messages-executecrmorganizationrequest-method.md
-    - name: Uso del control de inicio de sesión común de las herramientas XRM en las aplicaciones cliente
+    - name: Usar el control de inicio de sesión común de los útiles de XRM en las aplicaciones cliente
       href: use-xrm-tooling-common-login-control-client-applications.md
-    - name: Configuración del seguimiento en las herramientas XRM
+    - name: Configurar el seguimiento de útiles de XRM
       href: configure-tracing-xrm-tooling.md
-    - name: Inicio rápido de conexión simplificada
+    - name: Tutorial de conexión simplificada
       href: sample-simplified-connection-quick-start.md
-    - name: 'Ejemplo: Inicio rápido para la API de las herramientas XRM'
+    - name: 'Ejemplo: inicio rápido para la API de útiles de XMR'
       href: sample-quick-start-xrm-tooling-api.md

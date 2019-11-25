@@ -1,6 +1,6 @@
 ---
 title: Entidad BusinessUnit (Common Data Service) | Microsoft Docs
-description: 'Una organización en Common Data Service, como una sociedad de cartera o una compañía, se compone de unidades de negocio.'
+description: Una organización en Common Data Service, como una sociedad de cartera o una compañía, se compone de unidades de negocio.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 82ee0de5cf08c36d19afd5e9e7527390107367fc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749586"
 ---
 # <a name="businessunit-entity"></a>Entidad BusinessUnit
 

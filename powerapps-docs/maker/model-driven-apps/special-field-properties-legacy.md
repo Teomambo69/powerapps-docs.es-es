@@ -4,9 +4,9 @@ description: Comprender las propiedades de campo especial para formularios princ
 Keywords: Formularios principales; Propiedades de campos especiales; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 6ad7e43c-b6a1-48c4-9dfb-ed830142a841
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ad0fbb1208e612ba43d0a8c074ac62fab0000c2f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711055"
 ---
 # <a name="overview-of-model-driven-app-special-field-properties"></a>Información general sobre propiedades de campos especiales de aplicaciones controladas por modelos
 

@@ -4,28 +4,33 @@ description: Aprenda a configurar el control de cuadrícula para la aplicación
 keywords: ''
 ms.date: 06/03/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 0
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710923"
 ---
-
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada
 
 El marco de interfaz unificada usa principios de diseño dinámicos para ofrecer una experiencia de visualización e interacción óptima para cualquier tamaño de pantalla u orientación. Con las aplicaciones basadas en modelos que usan el marco de interfaz unificada, el control de cuadrícula (vista) es dinámico. Como el tamaño del contenedor disminuye , por ejemplo, en los teléfonos y los puntos de visión más pequeños, la cuadrícula se transforma en una lista. 
@@ -43,17 +48,17 @@ Cuando se agrega el control de cuadrícula de solo lectura a la lista de control
 1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).
 2. En el panel de navegación **Entidades**, seleccione la entidad correspondiente (como **Cuenta** o **Contacto**) y, después, en la ficha **Controles**, seleccione **Agregar control**.
 
-    ![Abrir Agregar control](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "abrir Agregar Control")
+    ![Abrir Agregar control](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "Abrir Agregar control")
 
 3. Seleccione **Cuadrícula de solo lectura** de la lista de controles y elija **Agregar**.
 
     El control se agrega a la lista de controles disponibles.
    
-    ![Seleccione un control](media/UnifiedInterface_ReadOnlyGrid_SelectControl.png "seleccione un control")
+    ![Seleccionar un control](media/UnifiedInterface_ReadOnlyGrid_SelectControl.png "Seleccionar un control")
     
 4. Seleccione los dispositivos (**Web**, **teléfono**, o **Tableta**) para el que desea realizar la cuadrícula de solo lectura.
 
-    ![Seleccione el tipo de dispositivo](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Eeleccione dispositivos")
+    ![Seleccionar el tipo de dispositivo](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Seleccionar dispositivos")
 
 5. Configure la propiedad **Formulario de tarjeta**.
 
@@ -94,4 +99,4 @@ Cuando se agrega el control de cuadrícula de solo lectura a la lista de control
 Puede mostrar un iconos personalizado en lugar de un valor en una lista y establecer la lógica utilizada para seleccionarlos basada en los valores de la columna mediante JavaScript. Para obtener más información acerca de las imágenes condicionales, vea [Mostrar iconos personalizados en lugar de valores en vistas de lista](../common-data-service/display-custom-icons-instead.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Creación o edición de vistas](create-edit-views.md)
+[Crear o editar vistas](create-edit-views.md)

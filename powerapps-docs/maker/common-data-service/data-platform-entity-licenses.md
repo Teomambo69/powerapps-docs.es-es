@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 05/01/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 36baefe164716bf90635f8a0bc51e2c7d330bcd2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706479"
 ---
-
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
 
 > [!IMPORTANT]

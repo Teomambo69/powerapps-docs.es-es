@@ -1,5 +1,5 @@
 ---
-title: 'Agregar, configurar, mover o eliminar componentes de un formulario | MicrosoftDocs'
+title: Agregar, configurar, mover o eliminar componentes de un formulario | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a40b0b9e5fc64856be931a2407a451c8d27ef8ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702387"
 ---
-
 # <a name="add-configure-move-or-delete-components-on-a-form"></a>Agregar, configurar, mover o eliminar componentes de un formulario  
 Gracias al diseñador de formularios, los fabrticantes pueden agregar y configurar fácilmente componentes populares, como [subcuadrícula](form-designer-add-configure-subgrid.md), [vista rápida](form-designer-add-configure-quickview.md), control de mando esférico, control deslizante lineal, etc.
 
@@ -30,7 +35,7 @@ Gracias al diseñador de formularios, los fabrticantes pueden agregar y configur
 Para agregar componentes a un formulario, use el panel **Componentes**. El panel **Componentes** además le permite buscar buscar rápidamente componentes.  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsPane.PNG "Panel Componentes")
+> ![](media/FormDesignerComponentsPane.PNG "Components pane")
 
 ### <a name="add-components-to-a-form-using-drag-and-drop"></a>Agregar componentes a un formulario mediante arrastrar y colocar
 > [!NOTE]

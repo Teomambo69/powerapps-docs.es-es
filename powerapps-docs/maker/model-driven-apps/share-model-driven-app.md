@@ -13,12 +13,17 @@ ms.component: model
 ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711099"
 ---
-
 # <a name="share-a-model-driven-app-with-powerapps"></a>Compartir una aplicación controlada por modelos con PowerApps
 
 Las aplicaciones de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan la seguridad basada en roles para compartir. El concepto básico en la seguridad basada en roles es que el rol de seguridad contiene privilegios que definen un conjunto de acciones que se pueden realizar en la aplicación. Todos los usuarios de la aplicación deben estar asignados a uno o más roles predefinidos o personalizados. O bien, también se pueden asignar roles a equipos. Cuando se asigna un usuario o un equipo a uno de estos roles, se concede a la persona o miembros del equipo el conjunto de privilegios asociados a este rol. 
@@ -32,7 +37,7 @@ En este tema realizará las tareas para compartir una aplicación controlada por
 Para compartir una aplicación debe tener el rol de administrador del entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)] o el rol de administrador del sistema. 
 
 ## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
-Iniciar sesión en [PowerApps](https://powerapps.microsoft.com/). Si aún no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el vínculo **Introducción gratuita**.
+Inicie sesión en [PowerApps](https://powerapps.microsoft.com/). Si aún no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el vínculo **Introducción gratuita**.
 
 ## <a name="share-an-app"></a>Compartir una aplicación 
 En este tema se realizará un seguimiento de la compañía, Contoso, que es una empresa de cuidado de mascotas orientada a perros y gatos. Una aplicación que contiene una entidad personalizada para realizar un seguimiento de la empresa de cuidado de mascotas ya se ha creado y publicado. Ahora la aplicación se debe compartir para que el personal de la empresa pueda usarla. Para compartir la aplicación, un administrador o el creador de la aplicación asigna uno o varios roles de seguridad a los usuarios y a la aplicación. 

@@ -1,5 +1,5 @@
 ---
-title: 'Crear, instalar y actualizar una solución administrada (Common Data Service) | Microsoft Docs'
+title: Crear, instalar y actualizar una solución administrada (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749576"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>Crear, instalar y actualizar una solución administrada
 

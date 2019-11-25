@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e3ef73edca48bf9a72f8078a6985ee299baee702
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749483"
 ---
 # <a name="tutorial-create-workflow-extension"></a>Tutorial: Crear extensión de flujo de trabajo
 
@@ -248,7 +254,7 @@ Los ensamblados personalizados de actividades de flujo de trabajo se registran m
 
 Puede probar la nueva actividad de flujo de trabajo creando un proceso que la use. Use estos pasos para crear el proceso de flujo de trabajo descrito en la sección [Objetivo](#goal) anterior:
 
-1. Abra [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. Abrir[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. Seleccione **Solución**.
 1. Abra la solución **Editor predeterminados de CDS**.
 1. En el menú, amplíe los **...** y elija **Cambiar a clásica**.

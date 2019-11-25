@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7434dd58137919d81486539d1ab843ad0c4aaf1f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749372"
 ---
 # <a name="duplicate-rule-entities"></a>Entidades de reglas de duplicados
 
@@ -50,7 +56,7 @@ Los siguientes atributos programables en estas entidades controlan el comportami
 
 ### <a name="inactive-states"></a>Estados inactivos
 
-La mayoría de entidades del sistema y todas las entidades personalizadas tienen dos opciones del atributo `StateCode`:
+La mayoría de las entidades del sistema y todas las entidades personalizadas tienen dos opciones del atributo `StateCode`:
 
 - `Value`: 0 `InvariantName`: `Active`
 - `Value`: 1 `InvariantName`: `Inactive`
@@ -111,7 +117,7 @@ También puede usar los siguientes mensajes especiales:
 |-|-|
 |[BaseAttributeName](/reference/entities/duplicaterulecondition.md#BKMK_BaseAttributeName)|Campo que se está comparando.|
 |[DuplicateRuleConditionId](/reference/entities/duplicaterulecondition.md#BKMK_DuplicateRuleConditionId)|Identificador único de la condición.|
-|[IgnoreBlankValues](/reference/entities/duplicaterulecondition.md#BKMK_IgnoreBlankValues)|Determina si los valores en blanco se deben considerar como valores no duplicados. <br /> **Nota**: <br />El valor predeterminado de este atributo es `false`. Debe establecerlo en `true` si no desea que la regla de detección de duplicados considere los valores `null` como iguales. <br /> **Importante**: <br /> Para una regla de detección de duplicados con una condición, si establece el valor del atributo en `false`, el sistema lo trata como un valor `true` . |
+|[IgnoreBlankValues](/reference/entities/duplicaterulecondition.md#BKMK_IgnoreBlankValues)|Determina si los valores en blanco se deben considerar como valores no duplicados. <br /> **Nota**: <br />El valor predeterminado de este atributo es `false`. Debe establecerlo en `true` si no desea que la regla de detección de duplicados considere los valores `null` como iguales. <br /> **Importante**: <br /> Para una regla de detección de duplicados con una condición, si establece el valor del atributo en `false`, el sistema lo trata como un valor `true`. |
 |[MatchingAttributeName](/reference/entities/duplicaterulecondition.md#BKMK_MatchingAttributeName)|Campo que se está comparando con el campo base.|
 |[OperatorCode](/reference/entities/duplicaterulecondition.md#BKMK_OperatorCode)|Operador para esta condición de regla.<br /> **Importante**: <br />Si establece el atributo `OperatorCode` en `ExactMatch`, no establezca ningún valor para el atributo `OperatorParam`|
 |[OperatorParam](/reference/entities/duplicaterulecondition.md#BKMK_OperatorParam)|Valor del parámetro de N si el operador es Mismos caracteres iniciales o Mismos caracteres finales.<br /> **Importante**: <br />No puede establecer `OperatorParam` en cero durante las operaciones de creación o actualización.|

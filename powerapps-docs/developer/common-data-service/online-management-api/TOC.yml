@@ -1,0 +1,15 @@
+- name: Información general para desarrolladores de Common Data Service
+  href: ../overview.md
+- name: API de administración en línea
+  href: overview.md
+- name: Introducción a la API de Online Management
+  href: get-started-online-management-api.md
+- name: Autenticación para usar la API de Online Management
+  href: authentication.md
+  items:
+    - name: 'Ejemplo: Código auxiliar de autenticación para la API de Online Management'
+      href: sample-authentication-helper.md
+- name: Operaciones compatibles con la API Online Management
+  href: operations-supported.md
+- name: 'Ejemplo de inicio rápido: recuperar entornos en el inquilino'
+  href: sample-quick-start.md

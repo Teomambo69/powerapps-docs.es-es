@@ -1,5 +1,5 @@
 ---
-title: Detectar datos duplicados con la API web (Common Data Service) | Microsoft Docs
+title: Detección de datos duplicados con la API web (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,13 +10,18 @@ ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d2efa9e7a134a83ef081a677cdb168ba3f8b8883
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749509"
 ---
-
-## <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
+# <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 
 <!-- 
 Related topics

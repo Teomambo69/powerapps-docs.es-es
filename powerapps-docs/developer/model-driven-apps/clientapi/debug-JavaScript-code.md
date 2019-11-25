@@ -1,25 +1,31 @@
 ---
 title: Depuración del código JavaScript para aplicaciones basadas en modelos | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3edad039-4397-4984-a29b-9307a7a2aaee
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2b95ef2604b226629f87e37f5a54e79447d1a494
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749450"
 ---
 # <a name="debug-your-javascript-code-for-model-driven-apps"></a>Depuración del código JavaScript para aplicaciones basadas en modelos
 
 
 
-Cada explorador proporciona algún tipo de extensión de depuración. Microsoft Edge e Internet Explorer proporcionan herramientas del desarrollador F12 que puede usar para depurar scripts en aplicaciones basadas en modelos. Las herramientas del desarrollador F12 se pueden abrir al presionar la tecla F12 al visualizar una página con Microsoft Edge o Internet Explorer. Para obtener más información, consulte [Guía de las herramientas del desarrollador F12](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide).
+Cada explorador proporciona algún tipo de extensión de depuración. Microsoft Edge e Internet Explorer proporcionan herramientas del desarrollador F12 que puede usar para depurar scripts en aplicaciones basadas en modelos. Las herramientas del desarrollador F12 se pueden abrir presionando F12 al ver una página con Microsoft Edge o Internet Explorer. Para obtener más información, consulte [Guía de las herramientas del desarrollador F12](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide).
 
 En Google Chrome, presione F12 para abrir las herramientas del desarrollador. Firebug es una popular extensión de explorador para desarrollo web con Mozilla Firefox. En Apple Safari, primero debe seleccionar el menú **Mostrar desarrollo** en la barra del menú de **Preferencias avanzadas**. A continuación puede elegir **Mostrar inspector web** en el menú **Desarrollo**.
 

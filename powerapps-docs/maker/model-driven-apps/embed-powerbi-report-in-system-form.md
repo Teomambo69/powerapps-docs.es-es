@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 1
 author: prsi-msft
 ms.author: prsi
 manager: kvivek
 tags:
-  - Links to topic not migrated
+- Links to topic not migrated
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3d1ea2b05abb592ec6d2925e813cd213b5b7492a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706171"
 ---
-
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Insertar un informe de Power BI en un formulario basado en modelos
 Puede usar informes de Power BI en aplicaciones basadas en modelos PowerApps para incluir informes y análisis enriquecido en los formularios del sistema y permitir a los usuarios conseguir más. Esto desbloquea la capacidad de agregar datos en entre los sistemas, y adaptarlos al contexto de un solo registro.
  
@@ -103,6 +108,7 @@ En esta tabla se describen las propiedades adicionales utilizadas en el ejemplo 
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                         **PowerBIFilter**                          |        La expresión de filtro que contextualiza el informe de Power BI pasando los atributos de formulario como parámetros. Para hacer que sea más legible, el filtro se construye como se muestra aquí.    |
 
+```json
     {
             "Filter": "[{
                     \"$schema\":\"basic\",
@@ -119,6 +125,7 @@ En esta tabla se describen las propiedades adicionales utilizadas en el ejemplo 
                     "$b":"lastname"
             }
     }
+```
 
 La parte de destino de la expresión anterior identifica la tabla y la columna a la que aplicar filtros. El operador identifica la lógica y los valores identifican los últimos datos pasados desde la aplicación basada en modelos de PowerApps. Para parametrizar de una forma genérica, los valores son construidos mediante alias. En la expresión anterior, se pasa el valor de **firstname** y **lastname** de una cuenta, y se busca cualquiera de ellos en la columna **Nombre de cuenta** en el informe de Power BI. Tenga en cuenta que **firstname** y **lastname** son los nombres únicos de los atributos de la entidad de cuenta, cuyo valor será pasado aquí. 
 

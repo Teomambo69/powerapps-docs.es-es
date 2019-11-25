@@ -9,12 +9,17 @@ ms.date: 08/05/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cfb5472981aab82f9f4909d71b45135e02ca9c33
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749436"
 ---
-
 # <a name="developers-get-started-with-common-data-service"></a>Desarrolladores: Introducción a Common Data Service
 
 Dónde comenzar depende de los problemas que intenta solucionar. Este manual incluye información sobre una gran variedad de funcionalidades y no es probable que las use todas. Las siguientes secciones incluyen varios ámbitos fundamentales para comenzar.

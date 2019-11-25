@@ -8,17 +8,22 @@ manager: kvivek
 ms.date: 06/19/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb7fba70e7c13177150140e1c617d7c317b1444e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701199"
 ---
-
 # <a name="customize-dynamics-365-app-for-outlook"></a>Personalización de Dynamics 365 App for Outlook
 
 Personalice Dynamics 365 App for Outlook para adaptarla a las necesidades de su organización. 

@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706699"
 ---
-
 # <a name="troubleshoot-power-query"></a>Solución de problemas de Power Query
 Cuando usa Power Query for Excel para crear una entidad personalizada que contiene datos de orígenes externos, podría aparecer este error:
 

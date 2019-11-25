@@ -1,5 +1,5 @@
 ---
-title: Establecer propiedades administradas en metadatos de Common Data Service | MicrosoftDocs
+title: Establecimiento de propiedades administradas en metadatos de Common Data Service | MicrosoftDocs
 description: Aprenda cómo establecer propiedades administradas para elementos de metadatos en una solución
 ms.custom: ''
 ms.date: 05/30/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: edaa7d4a-a95f-4d66-a9d9-2ad6051332f7
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702343"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service 
 
@@ -94,6 +100,6 @@ Con las relaciones, la única propiedad administrada es **Se puede personalizar*
 
 [Propiedades administradas](solutions-overview.md#managed-properties)<br />
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
-[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
 [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)

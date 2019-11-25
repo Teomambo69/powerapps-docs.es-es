@@ -10,9 +10,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 90fe7a49334fc902ef9508f6e3859879526ff7cf
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749555"
 ---
 # <a name="sample-authentication-helper-for-the-online-management-api"></a>Ejemplo: Código auxiliar de autenticación para la API de Online Management 
 

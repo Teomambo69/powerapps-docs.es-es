@@ -4,21 +4,24 @@ description: Obtenga información sobre cómo definir acciones personalizadas pa
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 72544b02-4eed-4d70-666e-a0d880f526af
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: abe7420026edb23ff23c652f3531a63a87b5fd86
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749618"
 ---
-
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Definir acciones personalizadas para modificar la cinta de opciones
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->

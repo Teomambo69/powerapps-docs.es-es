@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6e2abe2d-2205-4d15-9e0f-5975ccc0484e
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 97b244b59bccbde9c8e20a86723133af07d4eb2b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749584"
 ---
-
 # <a name="check-for-analysis-status"></a>Comprobar estado de análisis
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]

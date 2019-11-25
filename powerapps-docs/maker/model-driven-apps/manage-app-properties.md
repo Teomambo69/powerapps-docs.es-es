@@ -4,28 +4,33 @@ description: Obtenga información sobre cómo administrar las propiedades de la 
 keywords: ''
 ms.date: 02/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: e773e60f-0211-4c4b-a1af-663be4997629
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 14
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a4f28dd878ca2e862a99982564066eefacfb7892
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701903"
 ---
-
 # <a name="manage-model-driven-app-properties-in-the-app-designer"></a>Administrar las propiedades de aplicaciones controladas por modelos en el diseñador de aplicaciones
 
 Las propiedades de la aplicación definen detalles importantes acerca la aplicación, como su título o dirección URL. Defina propiedades de la aplicación al crear una aplicación. Si desea cambiar esas propiedades más adelante, puede hacerlo en el diseñador de la aplicación.  
@@ -33,7 +38,7 @@ Las propiedades de la aplicación definen detalles importantes acerca la aplicac
 1.  En el diseñador de aplicaciones, en el lado derecho, seleccione la pestaña **Propiedades**.  
 
     > [!div class="mx-imgBorder"] 
-    > ![Panel Propiedades del diseñador de aplicaciones](media/app-designer-properties-tab.png "Panel Propiedades del diseñador de aplicaciones")  
+    > ![Panel Propiedades del diseñador de la aplicación](media/app-designer-properties-tab.png "Panel Propiedades del diseñador de la aplicación")  
   
 2.  Cambie la información si lo desea:  
 

@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: dbc4f436-0b23-42f9-8079-b0de482aaebe
 caps.latest.revision: 11
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705599"
 ---
-
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>Definir las transiciones de razón para el estado de la entidad Caso o de entidades personalizadas
 
 Puede especificar las transiciones de razón para el estado de la entidad Incidente (**Caso**) o de entidad personalizada.
@@ -81,7 +86,7 @@ La captura de pantalla a continuación proporciona un ejemplo que cumple los sig
   
 ### <a name="see-also"></a>Vea también  
 
-[Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Metadatos de entidad > Estados de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Definir transiciones de modelo de estado personalizadas](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

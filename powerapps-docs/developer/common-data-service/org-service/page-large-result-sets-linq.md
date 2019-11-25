@@ -1,19 +1,25 @@
 ---
-title: Paginar grandes conjuntos de resultados con LINQ (Common Data Service) | Documentos de Microsoft
+title: Paginar grandes conjuntos de resultados con LINQ (Common Data Service) | Microsoft Docs
 description: Lea cómo puede paginar los resultados de una consulta de gran tamaño de Language-Integrated Query (LINQ) de .NET usando los operadores Take y Skip
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 386708448701c05a0896fcf05333c9054c350743
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749541"
 ---
 # <a name="page-large-result-sets-with-linq"></a>Páginar grandes conjuntos de resultados con LINQ
 

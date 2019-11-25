@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 73d691c7-344e-4c96-8979-c661c290bf81
 caps.latest.revision: 47
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbb327956558e57713040ec8ab1a26d3af78c6c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711847"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Comportamiento y formato del campo de fecha y hora
 
-En Common Data Service, el tipo de datos de fecha y hora se utiliza en muchos campos de entidad estándar. Dependiendo del tipo de fecha que represente el campo, puede elegir distintos comportamientos del campo: **Local de usuario**, **Solo fecha** o **Independiente de zona horaria**.  
+En Common Data Service, el tipo de datos Fecha y hora se usa en muchos campos de entidad estándar. Dependiendo del tipo de fecha que represente el campo, puede elegir distintos comportamientos del campo: **Local de usuario**, **Solo fecha** o **Independiente de zona horaria**.  
   
 <a name="Behavior"></a>   
 

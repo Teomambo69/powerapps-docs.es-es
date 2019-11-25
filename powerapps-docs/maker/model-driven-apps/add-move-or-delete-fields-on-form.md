@@ -1,5 +1,5 @@
 ---
-title: 'Agregar, configurar, mover o eliminar campos de un formulario | MicrosoftDocs'
+title: Agregar, configurar, mover o eliminar campos de un formulario | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701551"
 ---
-
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Agregar, configurar, mover o eliminar campos de un formulario  
 Agregar, configurar, mover o eliminar campos usando el diseñador de formularios.
 
@@ -30,7 +35,7 @@ Agregar, configurar, mover o eliminar campos usando el diseñador de formularios
 Para agregar campos a un formulario, use el panel **Campos**. El panel **Campos** le permite buscar y filtrar y le ayuda a encontrar rápidamente campos. También incluye la opción de mostrar sólo los campos no usados. 
 
 > [!div class="mx-imgBorder"] 
->    ![](media/FormDesignerFieldsPane.png "Panel Campos")
+>    ![](media/FormDesignerFieldsPane.png "Fields pane")
 
 ### <a name="add-fields-to-a-form-using-drag-and-drop"></a>Agregar campos a un formulario mediante arrastrar y colocar
 > [!NOTE]

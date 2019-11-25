@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 516dde533ee012a0e4cb64e988a574de6ea8948c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749454"
 ---
-
 # <a name="best-practices-and-guidance-of-client-side-scripting-for-model-driven-apps"></a>Prácticas recomendadas e instrucciones de creación de scripts para aplicaciones basadas en modelos
 
 La lista siguiente incluye las prácticas recomendadas e instrucciones de creación de scripts para las aplicaciones basadas en modelos.
@@ -34,6 +39,6 @@ La lista siguiente incluye las prácticas recomendadas e instrucciones de creaci
 |[Interactuar con recursos HTTP y HTTPS de forma asincrónica](interact-http-https-resources-asynchronously.md)     |Debe interactuar con los recursos HTTP y HTTPS de forma asincrónica al escribir las extensiones de cliente de JavaScript para aplicaciones basadas en modelos.         |
 |[Quitar personalizaciones desactivadas o deshabilitadas](remove-deactivated-disabled-configurations.md)     |Las personalizaciones desactivadas o deshabilitadas se deben quitar de una solución para mejorar la administración de las soluciones y para reducir el riesgo de usar o de administrar un componente obsoleto.         |
 
-# <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Vea también
 [Aplicar la lógica empresarial mediante scripting del cliente](../../client-scripting.md) <br />
  

@@ -6,96 +6,98 @@
   items:
     - name: '(C#)'
       items:
-        - name: "Introducción al uso de Web\_API (C#)"
+        - name: 'Introducción al uso de la API web (C#)'
           href: get-started-dynamics-365-web-api-csharp.md
-        - name: 'Inicio rápido: ejemplo de API web (C#)'
+        - name: 'Tutorial: Ejemplo de API Web (C#)'
           href: quick-start-console-app-csharp.md
         - name: 'Inicio rápido mejorado (C#)'
           href: enhanced-quick-start.md
-        - name: "Inicio del proyecto Web\_API en Visual\_Studio"
+        - name: Iniciar proyecto de API web en Visual Studio
           href: start-web-api-project-visual-studio-csharp.md
 - name: Autenticar
   href: authenticate-web-api.md
 - name: Tipos y operaciones
   href: web-api-types-operations.md
-- name: Realización de operaciones
+- name: Realizar operaciones
   items:
-    - name: Introducción a la realización de operaciones
+    - name: Introducción a realizar operaciones
       href: perform-operations-web-api.md
-    - name: Redacción de solicitudes HTTP y gestión de errores
+    - name: Componer solicitudes HTTP y administrar errores
       href: compose-http-requests-handle-errors.md
-    - name: Consulta de los datos
-      href: query-data-web-api.md
-    - name: Recuperación de entidades relacionadas con consultas
-      href: retrieve-related-entities-query.md
-    - name: Recuperación y ejecución de consultas predefinidas
+    - name: Datos de consulta con la API web
+      items:
+        - name: Consultar datos
+          href: query-data-web-api.md
+        - name: Recuperar entidades relacionadas con consulta
+          href: retrieve-related-entities-query.md
+    - name: Recuperar y ejecutar consultas predefinidas
       href: retrieve-and-execute-predefined-queries.md
     - name: Crear una entidad
       href: create-entity-web-api.md
-    - name: Recuperación de una entidad
+    - name: Recuperar una entidad
       href: retrieve-entity-using-web-api.md
-    - name: Actualización y eliminación de entidades
+    - name: Actualizar y eliminar entidades
       href: update-delete-entities-using-web-api.md
-    - name: Asociación y desasociación de entidades
+    - name: Asociar y desasociar entidades
       href: associate-disassociate-entities-using-web-api.md
-    - name: Uso de las funciones
+    - name: Usar funciones
       href: use-web-api-functions.md
-    - name: Uso de las acciones
+    - name: Usar acciones
       href: use-web-api-actions.md
-    - name: Ejecución de operaciones por lotes
+    - name: Ejecutar operaciones por lotes
       href: execute-batch-operations-using-web-api.md
     - name: Suplantar a otro usuario
       href: impersonate-another-user-web-api.md
-    - name: Realización de operaciones condicionales
+    - name: Realizar operaciones condicionales
       href: perform-conditional-operations-using-web-api.md
     - name: Detectar datos duplicados
       href: manage-duplicate-detection-create-update.md
-- name: Trabajo con metadatos
+- name: Trabajar con metadatos
   items:
     - name: Introducción al uso de metadatos
       href: use-web-api-metadata.md
-    - name: Consulta de los metadatos
+    - name: Consulta de metadatos
       href: query-metadata-web-api.md
-    - name: Recuperación de metadatos por nombre o MetadataId
+    - name: Recuperar metadatos por nombre o identificador de metadatos
       href: retrieve-metadata-name-metadataid.md
-    - name: Creación y actualización de definiciones de entidades
+    - name: Crear y actualizar definiciones de entidad
       href: create-update-entity-definitions-using-web-api.md
-    - name: Creación y actualización de relaciones de entidades
+    - name: Crear y actualizar relaciones de entidades
       href: create-update-entity-relationships-using-web-api.md
-    - name: Trabajo con conjuntos de opciones
+    - name: Trabajar con conjuntos de opciones
       href: create-update-optionsets.md
-- name: "Uso de Postman con Web\_API"
+- name: Usar envío con API web
   items:
     - name: Introducción a Postman
       href: use-postman-web-api.md
-    - name: Configuración de un entorno de Postman
+    - name: Configure un entorno de cartero
       href: setup-postman-environment.md
-    - name: Uso de Postman para realizar operaciones
+    - name: Use enviar para realizar operaciones
       href: use-postman-perform-operations.md
-- name: "Lenguaje JavaScript del lado cliente que usa Web\_API en aplicaciones controladas por modelos"
+- name: JavaScript del lado del cliente mediante API Web en aplicaciones basadas en modelo
   href: get-started-web-api-client-side-javascript.md
-- name: Detección de la URL de la organización
+- name: Detectar la URL de su organización
   items:
     - name: Introducción
       href: discover-url-organization-web-api.md
     - name: 'Ejemplo de servicio de detección global (C#)'
       href: samples/global-discovery-service-csharp.md
-- name: Importar datos
-  href: ../import-data.md
-- name: Muestreo de los datos
+- name: Versiones y limitaciones de la API web
+  href: web-api-versions.md
+- name: Datos de ejemplo
   href: ../sample-data.md
-- name: Ejemplos
+- name: Muestras
   items:
     - name: Plantillas de ejemplo de operaciones de datos
       href: web-api-samples.md
       items:
         - name: Operaciones básicas
           href: web-api-basic-operations-sample.md
-        - name: Consulta de los datos
+        - name: Consultar datos
           href: web-api-query-data-sample.md
         - name: Operaciones condicionales
           href: web-api-conditional-operations-sample.md
         - name: Funciones y acciones
           href: web-api-functions-actions-sample.md
-        - name: Ejemplos
+        - name: Muestras
           href: samples/toc.yml

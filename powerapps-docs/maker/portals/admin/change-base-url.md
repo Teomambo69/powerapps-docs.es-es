@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709999"
 ---
-
 # <a name="change-the-base-url-of-a-portal"></a>Cambiar la dirección URL base de un portal
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Puede cambiar la dirección URL base de un portal después de que se aprovisione. Por ejemplo, si elige `contosocommunity.microsoftcrmportals.com` como la dirección URL base el aprovisionar el portal, podrá cambiarlo posteriormente a `contosocommunityportal.microsoftcrmportals.com` para satisfacer sus requisitos.
 
@@ -25,7 +28,7 @@ Puede cambiar la dirección URL base de un portal después de que se aprovisione
 2.  Vaya a **Acciones del portal** > **Cambiar dirección URL base**. 
 
     > [!div class=mx-imgBorder]
-    > ![Cambiar la dirección URL base de un portal](../media/change-base-url-action.png "Cambiar la dirección URL base de un portal")
+    > ![Cambiar dirección URL base de un portal](../media/change-base-url-action.png "Cambiar dirección URL base de un portal")
 
 3.  En la ventana Cambiar dirección URL base, escriba la nueva dirección URL base para el portal.
 

@@ -1,5 +1,5 @@
 ---
-title: ' Componente de tabla| Microsoft Docs'
+title: " Componente de tabla| Microsoft Docs"
 description: Implementar un componente de tabla
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749460"
 ---
-
 # <a name="implementing-table-component"></a>Implementar componente de tabla
 
 Este componente de ejemplo genera una tabla con dos columnas. La columna de la izquierda muestra el nombre del método o la propiedad API, y la columna derecha muestra el valor devuelto por la API. Puede abrir este componente en el tipo diferente de dispositivos o modificar el idioma o la configuración de usuario para ver cómo los valores se ajustan correctamente en la tabla.
@@ -43,19 +48,19 @@ export class TSTableControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag to track if control is in full screen mode or not
   private _isFullScreen: boolean;
-  // Reference to HTMLTableElement rendered by control
+  // reference to HTMLTableElement rendered by control
   private _tableElement: HTMLTableElement;
-  // Reference to 'Set Full Screen' HTMLButtonElement
+  // reference to 'Set Full Screen' HTMLButtonElement
   private _setFullScreenButton: HTMLButtonElement;
-  // Reference to 'Lookup Objects' HTMLButtonElement
+  // reference to 'Lookup Objects' HTMLButtonElement
   private _lookupObjectsButton: HTMLButtonElement;
-  // Reference to 'Lookup Result Div' HTMLDivElement
+  // reference to 'Lookup Result Div' HTMLDivElement
   // Used to display information about the item selected by the lookup
   private _lookupObjectsResultDiv: HTMLDivElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;

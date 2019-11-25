@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 07/11/2019
 ms.author: prkoduku
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 49628d24d6d87f4cc541ba11e498b255c9b71a2f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749424"
 ---
-
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Introducción a ISV Studio para Power Platform
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -49,7 +54,7 @@ Para obtener acceso a la vista previa pública de ISV Studio, vaya al explorador
 
 2. El ISV debe tener una cuenta [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) y la cuenta se debe estar configurada como colaborador o propietario de la aplicación en el Cloud Partner Portal (CPP) para ese ISV determinado.
 
-Si desea que usuarios adicionales obtengan acceso a ISV Studio, se pueden agregar como colaboradores de la aplicación en CPP.  Las instrucciones se encuentran en [Administrar usuarios en el Cloud Partner Portal](https://docs.microsoft.com/en-us/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users).
+Si desea que usuarios adicionales obtengan acceso a ISV Studio, se pueden agregar como colaboradores de la aplicación en CPP.  Las instrucciones se encuentran en [Administrar usuarios en el Cloud Partner Portal](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users).
 
 Siga leyendo los temas de la página “Aplicación” e “Inquilino” que aparecen a continuación para obtener información sobre las capacidades de ISV Studio.
 

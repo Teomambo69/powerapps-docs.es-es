@@ -10,12 +10,17 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 77594b699f335d3d167f49b92df437a5c2a1425c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749378"
 ---
-
 # <a name="developer-tools-and-resources"></a>Herramientas y recursos de desarrollo
 
 Los programadores utilizarán las herramientas y los recursos siguientes al trabajar con soluciones que usan Common Data Service.

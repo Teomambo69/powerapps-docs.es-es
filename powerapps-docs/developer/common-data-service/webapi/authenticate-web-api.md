@@ -1,5 +1,5 @@
 ---
-title: Autenticación en Common Data Service con la API web (Common Data Service) | Microsoft Docs
+title: Autenticarse en Common Data Service con la API web (Common Data Service)| Microsoft Docs
 description: Obtenga más información acerca de las formas diferentes de administrar la autenticación al usar la API web.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 767f39d4-6a8e-48f0-bf7d-69ea1191acef
 caps.latest.revision: 8
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cdd453145c5b30642669e3a7a2b6a052753117a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749513"
 ---
-# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Autentique Common Data Service con la API web
+# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Autenticarse en Common Data Service con la API web
 
 
 Debe usar OAuth como se describe en [Usar OAuth con Common Data Service](../authenticate-oauth.md).
@@ -36,7 +42,7 @@ Si está creando una aplicación de una sola página (SPA) mediante JavaScript p
   
 ### <a name="see-also"></a>Vea también
  
-[Utilizar API Web de Common Data Service](overview.md)<br />
+[Usar la API web de Common Data Service](overview.md)<br />
 [Tipos y operaciones de API web](web-api-types-operations.md)<br />
 [Realizar operaciones mediante la API web](perform-operations-web-api.md)<br />
 [Usar OAuth con Common Data Service](../authenticate-oauth.md)<br />

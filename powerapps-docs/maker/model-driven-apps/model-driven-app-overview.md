@@ -13,10 +13,16 @@ ms.component: model
 ms.date: 08/09/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38ea420dc973e5e6c0a4df2ff361344c4704137a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711759"
 ---
 # <a name="what-are-model-driven-apps-in-powerapps"></a>¿Qué son las aplicaciones controladas por modelos en PowerApps?
 

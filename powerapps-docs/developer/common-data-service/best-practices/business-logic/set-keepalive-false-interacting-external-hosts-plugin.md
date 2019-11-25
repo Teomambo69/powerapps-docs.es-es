@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 8/21/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 59d3b13f641d0171ba4b968c630a51120e6b9ae6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749589"
 ---
 # <a name="set-keepalive-to-false-when-interacting-with-external-hosts-in-a-plug-in"></a>Establecer KeepAlive en false para interactuar con hosts externos en un complemento
 

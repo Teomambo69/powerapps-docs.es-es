@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749612"
 ---
 # <a name="image-web-resources"></a>Recursos web de imágenes
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/image-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
 
 Use los recursos web de imagen para hacer que las imágenes estén disponibles para su uso en Aplicaciones basadas en modelos.  
 
@@ -39,9 +45,9 @@ Hay cinco tipos de recursos web de imágenes:
 - Iconos de entidad personalizada  
 - Iconos para controles de cinta personalizada y subáreas del `SiteMap`.  
 - Gráficos decorativos para formularios de entidad y recursos web de páginas web.  
-- Imágenes de fondo usadas por los recursos web CSS.  
+- Imágenes de fondo usadas por recursos web CSS.  
 
-Use los recursos web de formato de vector (SVG) para cualquier icono que se muestre en la aplicación. Las imágenes vectoriales se definen como Scalable Vector Graphics (SVG), un formato de imagen vectorial basado en XML. La ventaja de las imágenes vectoriales sobre otros recursos web de imagen es que son escalables. Puede definir una imagen vectorial y reutilizarla en lugar de proporcionar varios tamaños de imágenes. Usará estos con una nueva sesión<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> propiedad para definir el icono de una entidad personalizada en lugar de las `IconLargeName`, `IconMediumName`, or `IconSmallName` propiedades.
+Use los recursos web de formato de vector (SVG) para cualquier icono que se muestre en la aplicación. Las imágenes vectoriales se definen como Scalable Vector Graphics (SVG), un formato de imagen vectorial basado en XML. La ventaja de las imágenes vectoriales sobre otros recursos web de imagen es que son escalables. Puede definir una imagen vectorial y reutilizarla en lugar de proporcionar varios tamaños de imágenes. Usará estos con una nueva sesión<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> propiedad para definir el icono de una entidad personalizada en lugar de las propiedades `IconLargeName`, `IconMediumName` o `IconSmallName`.
   
 <a name="BKMK_Limitations"></a>   
 ## <a name="limitations-of-image-web-resources"></a>Limitaciones de los recursos web de imagen  
@@ -65,13 +71,13 @@ Use los recursos web de formato de vector (SVG) para cualquier icono que se mues
   
 2.  Seleccione donde desea agregar la imagen en el formulario.  
   
-3.  En la ficha **Insertar**, haga clic en **Recurso web**.  
+3.  En la pestaña **Insertar**, haga clic en **Recurso web**.  
   
-4.  En la ficha **General**, seleccione la imagen del recurso web que desea agregar.  
+4.  En la pestaña **General**, seleccione la imagen del recurso web que desea agregar.  
   
 5.  Escriba un nombre para el recurso web. También puede especificar una etiqueta y un texto alternativo.  
   
-6.  En la ficha **Formato**, puede definir:  
+6.  En la pestaña **Formato**, puede definir:  
   
     -   El número de columnas que las imágenes deben usar.  
   
@@ -109,6 +115,6 @@ Use los recursos web de formato de vector (SVG) para cualquier icono que se mues
  [Uso de recursos web de página web (HTML)](webpage-html-web-resources.md)   
  [Uso de recursos web de hojas de estilo (CSS)](css-web-resources.md)   
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
- [Usar recursos web de datos (XML)](data-xml-web-resources.md)   
+ [Uso de recursos web de datos (XML)](data-xml-web-resources.md)   
  [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
  [Usar recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)

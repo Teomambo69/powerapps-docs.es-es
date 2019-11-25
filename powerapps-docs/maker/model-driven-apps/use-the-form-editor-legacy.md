@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 4c379202-9f0e-4003-a49c-efff53e7f79f
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0d2a8be9daa7a98ab0ddd838b5a1c7388f2eb21f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710351"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>Cambiar la navegación en un formulario de aplicación controlada por modelos
 
@@ -29,7 +35,7 @@ search.app:
   
  Las relaciones de entidad configuradas para mostrarse se pueden reemplazar en el editor de formularios. También puede incluir vínculos de navegación para mostrar recursos web u otros sitios web mediante la navegación del formulario.  
   
- Para obtener instrucciones paso a paso, consulte [Crear y editar relaciones de entidad para Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
+ Para ver instrucciones paso a paso, consulte [Crear y editar relaciones de entidades para Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
   
  Para habilitar la edición de la navegación debe seleccionar primero **Navegación** en el grupo **Seleccionar** de la pestaña **Inicio** del diseñador de formularios.  
  

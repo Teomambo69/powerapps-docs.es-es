@@ -1,5 +1,5 @@
 ---
-title: Crear y editar entidades virtuales con Common Data Service | MicrosoftDocs
+title: Crear y editar de entidades virtuales con Common Data Service | MicrosoftDocs
 description: Aprenda a crear entidades virtuales
 ms.custom: ''
 ms.date: 06/27/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 44834893-0bf6-4a64-8f06-7583fe08330d
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706919"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Crear y editar entidades virtuales que contienen datos desde un origen de datos externo
 
@@ -35,13 +41,13 @@ Common Data Service incluye un proveedor de datos de OData que se puede usar par
   
 Como alternativa, los programadores pueden crear sus propios proveedores de datos. Los proveedores de datos están instalados en un entorno como solución. Más información: [Documentación para desarrolladores: Introducción a las entidades virtuales](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
- ![Diagrama de la entidad virtual](media/virtual-entity-diagram.png "Diagrama de la entidad virtual")  
+ ![Diagrama de entidad virtual](media/virtual-entity-diagram.png "Diagrama de entidad virtual")  
   
 <a name="benefits"></a> 
   
 ## <a name="virtual-entity-benefits"></a>Ventajas de la entidad virtual  
   
-- Los desarrolladores pueden implementar complementos para leer los datos externos usando los servicios web de Common Data Service y la herramienta de registro de complementos.  
+- Los desarrolladores pueden implementar complementos para leer los datos externos con los servicios web de Common Data Service y la herramienta de registro de complementos.  
 - Los personalizadores del sistema usan el explorador de soluciones de PowerApps para configurar el registro del origen de datos y crear las entidades virtuales que se usan para tener acceso a datos externos sin necesidad de escribir código.  
 - Los usuarios finales trabajan con los registros creados por la entidad virtual para ver los datos en campos, cuadrículas, resultados de la búsqueda e informes y paneles basados en Fetch XML.  
   
