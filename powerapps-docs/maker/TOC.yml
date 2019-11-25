@@ -68,6 +68,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Agregar paneles de Power BI
               href: ../user/add-powerbi-dashboards.md
+            - name: Colaboración con SharePoint
+              href: ../user/collaborate-using-sharepoint.md
         - name: Buscar registros
           items:
             - name: Comparación de las opciones de búsqueda
@@ -260,6 +262,8 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Información de las tarjetas
                   href: ./canvas-apps/working-with-cards.md
+                - name: Muestra de una imagen de tamaño completo
+                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Agregar una lista
               items:
                 - name: 'Adición de un cuadro de lista, una lista desplegable o botones de selección'
