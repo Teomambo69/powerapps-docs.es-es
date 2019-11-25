@@ -1,6 +1,6 @@
 ---
-title: Asociar y eliminar la asociación de entidades utilizando la API web (Common Data Service)| Microsoft Docs
-description: 'Aprenda a agregar referencia a una propiedad de navegación valorada como colección, eliminar una referencia y cambiar una referencia existente mediante la API web'
+title: Asociar y anular la asociación de entidades mediante la API web (Common Data Service)| Microsoft Docs
+description: Aprenda a agregar referencia a una propiedad de navegación valorada como colección, eliminar una referencia y cambiar una referencia existente mediante la API web
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1b1aee98b1fb6048c875ef41672d105cb096ed1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749651"
 ---
 # <a name="associate-and-disassociate-entities-using-the-web-api"></a>Asociar y anular la asociación de entidades mediante la API web
 

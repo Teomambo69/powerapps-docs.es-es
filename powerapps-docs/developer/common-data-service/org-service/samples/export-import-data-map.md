@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Exportación e importación de datos mediante la asignación de datos complejos (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Exportar e importar una asignación de datos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un mapa de datos y exportarlo
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce8aa1363ea0e9abdc48043ce7730880ff720c52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749895"
 ---
 # <a name="sample-export-and-import-a-data-map"></a>Ejemplo: exportar e importar una asignación de datos
 

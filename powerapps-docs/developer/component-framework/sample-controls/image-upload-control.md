@@ -1,5 +1,5 @@
 ---
-title: ' Componente de carga de imagen| Microsoft Docs'
+title: " Componente de carga de imagen| Microsoft Docs"
 description: Implementar componente de carga de imagen utilizando typescript
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
+ms.openlocfilehash: 1ca8e97d32f6003b26c511e3ad2aee96bff42322
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754101"
 ---
-
 # <a name="implementing-an-image-upload-component"></a>Implementar un componente de carga de imagen
 
 Este componente de ejemplo se representa como un botón `Upload` para cargar la imagen y una imagen predeterminada cuando se carga el componente por primera vez. Cuando hace clic en `Upload`, aparece un explorador de archivos para seleccionar una imagen.
@@ -292,8 +297,8 @@ export class TSImageUploadControl
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">

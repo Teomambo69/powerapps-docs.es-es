@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc6414a1d846b5bd601ce2c6f37164014f089631
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749828"
 ---
 # <a name="organize-your-solutions"></a>Organizar sus soluciones
 
@@ -69,7 +75,7 @@ Antes de crear soluciones, dedique un tiempo de planificar con antelación. Por 
 ### <a name="solution-libraries"></a>Bibliotecas de la solución  
  Para un ISV con varias soluciones o una implementación empresarial de gran tamaño, es posible que muchos componentes de la solución deban compartirse. Las mejores formas para que las soluciones compartan componentes es a través de las bibliotecas de la solución. Cree una biblioteca de la solución mediante la creación de una solución no administrada en una organización independiente y a continuación, empaquete esos componentes en una solución administrada. Instale la solución administrada en otra organización y deje que los desarrolladores relacionen estos componentes compartidos.  
   
- Common Data Service Solutions Framework le permite construir capas de soluciones que dependen una de otra. Normalmente, puede crear una biblioteca de soluciones que represente una solución "básica". Otras soluciones pueden generarse sobre esta solución base. Esto permite una separación más ordenada de los componentes. Los equipos de desarrollo que trabajan en las bibliotecas de la solución y los que trabajen en soluciones dependientes pueden desarrollar a diferentes ritmos. Las soluciones dependientes deben ser crearse después de que se instalen las bibliotecas de la solución.  
+ Common Data Service Solutions Framework le permite crear niveles de soluciones que dependen uno del otro. Normalmente, puede crear una biblioteca de soluciones que represente una solución "básica". Otras soluciones pueden generarse sobre esta solución base. Esto permite una separación más ordenada de los componentes. Los equipos de desarrollo que trabajan en las bibliotecas de la solución y los que trabajen en soluciones dependientes pueden desarrollar a diferentes ritmos. Las soluciones dependientes deben ser crearse después de que se instalen las bibliotecas de la solución.  
   
  Esto requiere la creación de una solución de requisito previo que los clientes se deben instalar antes de instalar una solución dependiente. Los desarrolladores que trabajen en las bibliotecas de la solución pueden seguir trabajando en ellas y actualizarlas siempre que no interrumpan ninguna de las soluciones dependientes que los necesiten.  
   

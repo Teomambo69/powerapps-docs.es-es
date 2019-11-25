@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Recuperar registros de uso compartido de campos (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Recuperar los registros de uso compartido de campo (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar los registros de uso compartido de campo para una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: df8898fef09c80f2cc09d583bca8e9b6a1a84381
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749875"
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>Ejemplo: recuperar los registros de uso compartido de campo
 

@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759048"
 ---
-   
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
   En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como otros componentes como mapas del sitio, entidades, procesos, recursos web, los conjuntos de opciones, etc.  Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor de software independiente (ISV).
   
-Más información: [Notas del producto: Administración del ciclo de vida de las soluciones](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+Más información: [Notas del producto: Administración del ciclo de vida de las soluciones](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Si es un ISV que crea una aplicación que va a distribuir, deberá usar soluciones. Para obtener más información acerca del uso de soluciones, vea [Guía para desarrolladores: Introducción a soluciones](/powerapps/developer/common-data-service/introduction-solutions).  
@@ -38,6 +43,8 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 ### <a name="components"></a>Componentes  
  Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. La siguiente es una lista de componentes que puede ver en una solución:  
   
+-   Modelo de IA
+
 -   Cinta de la aplicación  
   
 -   Plantilla de artículo  
@@ -51,6 +58,8 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 -   Rol de conexión  
   
 -   Plantilla de contrato  
+
+-   Conector personalizado
  
 -   Control personalizado
   
@@ -61,6 +70,8 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 -   Entidad  
   
 -   Relación de entidad  
+
+-   Variable de entorno
   
 -   Campo  
   
@@ -150,5 +161,5 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
   
 ## <a name="next-steps"></a>Pasos siguientes  
 [Importar, actualizar y exportar soluciones](import-update-export-solutions.md) <br/>
-[Navegue a una solución específica](navigate-specific-solution.md)
+[Navegar a una solución específica](navigate-specific-solution.md)
  

@@ -1,6 +1,6 @@
 ---
 title: Agregar ubicación geográfica a un formulario administrado en un portal | MicrosoftDocs
-description: Instrucciones para agregar geolocation a un formulario administrado.
+description: Instrucciones para agregar ubicación geográfica a un formulario administrado.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,57 +11,57 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: a3c583658a5593d8e6c5f6c139a5c967e9581626
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553564"
+ms.locfileid: "2761090"
 ---
 # <a name="add-geolocation"></a>Agregar ubicación geográfica
 
-*Geolocation* es la identificación de la ubicación geográfica real de un objeto. La geolocalización está estrechamente relacionada con el uso de sistemas de colocación, pero supone un mayor énfasis en la determinación de una ubicación significativa (por ejemplo, una dirección postal) en lugar de un conjunto de coordenadas geográficas. La ubicación de la palabra también puede significar las coordenadas de latitud y longitud de una ubicación determinada.
+La *ubicación geográfica* es el identificador de la ubicación geográfica del mundo real de un objeto. La ubicación geográfica está estrechamente relacionada con el uso de los sistemas de posicionamiento, pero pone un mayor énfasis en determinar una ubicación completa (por ejemplo, la dirección de la calle) en lugar de simplemente un conjunto de coordenadas geográficas. La palabra ubicación geográfica también puede significar las coordenadas de latitud y longitud de una ubicación específica.
 
-Un formulario administrado puede configurarse para mostrar un control de mapa para mostrar una ubicación existente como un PIN en un mapa o para proporcionar a los usuarios la posibilidad de especificar una ubicación.
+Un formulario administrado se puede configurar para mostrar un control de mapa para que se muestre una ubicación existente como una chincheta en un mapa o proporcionar la capacidad de que el usuario especifique una ubicación.
 
 ![Datos de ubicación en un formulario.](../media/location-data-form.png "Datos de ubicación en un formulario")
 
-Si el campo de la línea de formulario o dirección es editable y este campo está en blanco, cuando la página se cargue, se solicitará al usuario que le pregunte si desea compartir su ubicación. Si optan por compartir su ubicación, el mapa se actualizará con la ubicación detectada actualmente. El usuario puede perfeccionar la ubicación del PIN arrastrándolo. Si el usuario decide no compartir su ubicación, puede especificar manualmente la ubicación en los campos proporcionados y se consultará el servicio de asignación para encontrar la ubicación, actualizar la latitud y la longitud, y cambiar la posición del PIN en el mapa en consecuencia.
+Si el formulario o el campo de línea de dirección son editables y este campo está en blanco, cuando se cargue la página se preguntará al usuario si deseará compartir la ubicación. Si elije compartir la ubicación, el mapa se actualizará con su ubicación detectada actualmente. El usuario puede refinar la ubicación de la chincheta arrastrándola. Si el usuario elige no compartir la ubicación puede especificar manualmente la ubicación en los campos proporcionados y se pedirá al servicio de asignación que busque la ubicación y actualice la latitud y la longitud, así como que recoloque la chincheta en el mapa.
 
 ## <a name="add-geolocation"></a>Agregar ubicación geográfica
-Para agregar la funcionalidad de ubicación geográfica a un formulario administrado, se deben completar las siguientes tareas.
+Para agregar la funcionalidad de ubicación geográfica a un formulario administrado, las siguientes tareas se deben completar.
 
 ### <a name="form-customization"></a>Personalización de formularios
-Edite el formulario de la entidad mediante el diseñador de formularios y realice las modificaciones siguientes:
+Edite el formulario de entidad con el diseñador de formularios y realice las modificaciones siguientes:
 
-1. Cree una nueva sección y proporcione una etiqueta adecuada, por ejemplo, **map**. Esta sección contendrá la asignación.
-2. Establezca el nombre de la sección en la **sección\_asignación** o un nombre que termine en la _sección mapa de\__ , por ejemplo, **contoso\_sección\_asignación**. Este nombre es importante porque el motor de formulario busca una sección con este nombre para determinar cuándo se debe representar un mapa. 
-3. Agregue un campo nuevo o existente que almacenará la dirección con formato y agréguelo a la sección de **mapa** creada en el paso anterior.
-4. Cree una nueva sección y proporcione una etiqueta adecuada, por ejemplo **Ubicación**. Esta sección contiene los campos de dirección de la ubicación seleccionada.
-5. Agregue los campos de dirección necesarios a la sección **Ubicación** creada en el paso anterior: 
+1. Cree una sección nueva y proporcione una etiqueta adecuada, por ejemplo, **Mapa**. Esta sección contendrá el mapa.
+2. Establezca el nombre de la sección en **sección\_mapa** o un nombre que termine con _sección\_mapa_, por ejemplo, el **contoso\_sección\_mapa**. Este nombre es importante ya que el motor de formularios busca una sección con este nombre para determinar cuándo generar un mapa. 
+3. Agregue un campo nuevo o existente que guardará la dirección con formato y la agregará a la sección **Mapa** creada en el paso anterior.
+4. Cree una sección nueva y proporcione una etiqueta adecuada, por ejemplo, **Ubicación**. Esta sección contendrá los campos de dirección para la ubicación seleccionada.
+5. Agregue los campos de dirección necesarios en la sección **Ubicación** creada en el paso anterior: 
     - Línea de dirección
     - Ciudad
-    - Ciudad
+    - Condado
     - Estado o provincia
     - País o región
     - Código postal
-    - Latitude
+    - Latitud
     - Longitud
 
-El formulario resultante debe ser similar al siguiente. Puede elegir nombres para mostrar diferentes para estos campos. También puede diseñar estas secciones de la forma que prefiera.
+El formulario resultante debe parecerse al siguiente. Puede elegir diferentes nombres para mostrar de estos campos. También puede elegir diseñar estas secciones si lo prefiere.
 
 ![Formulario de ubicación geográfica personalizado.](../media/custom-geolocation-form.png "Formulario de ubicación geográfica personalizado")
 
-### <a name="site-settings"></a>Configuración del sitio
-La funcionalidad de asignación geográfica con asignaciones en formularios administrados requiere la configuración para completar las solicitudes con el punto de conexión de REST del servicio de asignación. La siguiente configuración del sitio se usa para configurar el servicio de ubicación.
+### <a name="site-settings"></a>Configuraciones de sitios
+La ubicación geográfica con la funcionalidad de mapa en los formularios administrados requiere configuración para completar solicitudes con el punto de conexión de REST de servicio de asignación. La siguiente configuración de ubicaciones se usa para configurar el servicio de ubicación.
 
-|Nombre|Value|
+|Nombre|Valor|
 |---|---|
-|Bingmaps/credenciales|Clave única para autenticar las solicitudes a la API de mapas de Bing. Visite [www.bingmapsportal.com](https://www.bingmapsportal.com) para crear una cuenta de Bing Maps y obtener una clave. Obligatorio.|
-|Bingmaps/restURL|Dirección URL de la API de REST de Bing Maps. Opcional. Si no se especifica un valor, se utiliza el https://dev.virtualearth.net/REST/v1/Locations predeterminado.|
+|Mapas de Bing/credenciales|Clave exclusiva para autentificar solicitudes a API de Mapas de Bing. Visite [www.bingmapsportal.com](https://www.bingmapsportal.com) para crear una cuenta de mapas de Bing y para obtener una clave. Requerido.|
+|Mapas de Bing/URL rest|Dirección URL de API de REST de Mapas de Bing. Opcional. Si no se especifica un valor, se utiliza el https://dev.virtualearth.net/REST/v1/Locations predeterminado.|
 | |
 
-### <a name="field-configurations"></a>Configuraciones de campo
-El control de mapa requiere una configuración adicional para indicarle qué son los identificadores de los distintos campos de ubicación, por lo que puede asignarles valores o recuperar valores de ellos. La configuración depende del tipo de formulario administrado.
+### <a name="field-configurations"></a>Configuraciones de campos
+El control de mapa requiere configuración adicional para indicarle cuáles son los ID de los diferentes campos de ubicación para poder asignarles valores o recuperar valores. La configuración depende del tipo de formulario administrado.
 
-- Para los formularios de entidad, consulte [configuración de geolocalización para formularios de entidad](entity-forms.md#geolocation-configuration-for-entity-forms).
+- Para los formularios de entidad, consulte [Configuración de ubicación geográfica para formularios de entidad](entity-forms.md#geolocation-configuration-for-entity-forms).
 
-- Para formularios Web Forms, vea [configuración de geolocalización para formularios Web Forms](web-form-properties.md#geolocation-configuration-for-web-form).
+- Para formularios web, consulte [Configuración de ubicación geográfica para formularios web](web-form-properties.md#geolocation-configuration-for-web-form).

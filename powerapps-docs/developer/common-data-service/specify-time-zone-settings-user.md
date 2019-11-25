@@ -1,5 +1,5 @@
 ---
-title: Especificar la configuración de zona horaria para un usuario (Common Data Service) | Microsoft Docs
+title: Especificación de la configuración de zona horaria para un usuario (Common Data Service) | Microsoft Docs
 description: Más información sobre el uso de la entidad UserSettings para especificar la configuraciń de zona horario para un usuario en Dynamics 365. Los siguientes atributos se exponen para la entidad UserSettings relacionada con la zona horaria. Todos los atributos de huso horario en la entidad UserSettings son de tipo entero.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2883724215396161a53d46de6cbb72e5a0f0b92b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749791"
 ---
 # <a name="specify-time-zone-settings-for-a-user"></a>Especificación de la configuración de zona horaria para un usuario
 
-Use la entidad `UserSettings` para especificar la configuración de zona horaria para un usuario en Common Data Service Los siguientes atributos se exponen para la entidad `UserSettings` relacionada con la zona horaria. Todos los atributos de zona horaria de la entidad `UserSettings` son del tipo de datos `Integer`.  
+Use la entidad `UserSettings` para especificar la configuración de zona horaria de un usuario en Common Data Service. Los siguientes atributos se exponen para la entidad `UserSettings` relacionada con la zona horaria. Todos los atributos de zona horaria de la entidad `UserSettings` son del tipo de datos `Integer`.  
 
 
 |       Nombre de atributo        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

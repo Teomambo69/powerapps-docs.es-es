@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Crear un rol de conexión (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Creación de un rol de conexión (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo crear un rol de conexión.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5ec26b4883220c8527f68c0300f88272a9cd2804
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749740"
 ---
 # <a name="sample-create-a-connection"></a>Ejemplo: crear una conexión
 

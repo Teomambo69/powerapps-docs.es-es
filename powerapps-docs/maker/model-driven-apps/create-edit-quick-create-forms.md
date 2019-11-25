@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 68ca9059-cc5a-45e7-88bd-cc57186bbb48
 caps.latest.revision: 18
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759180"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Crear o editar formularios de creación rápida de aplicaciones controladas por modelos para lograr una experiencia optimizada de entrada de datos
 
@@ -50,11 +56,12 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
   
 > [!NOTE]
 >  - La entidad debe tener la opción **Permitir creación rápida** habilitada para que el formulario de creación rápida se muestre. 
+>  - También deberá agregar la entidad y el formulario de creación rápida a la aplicación.
 >  - Algunos campos, como el campo CREATEDON, no están disponibles para agregar a un formulario de creación rápida.  
   
 ### <a name="how-to-create-a-quick-create-form"></a>Cómo crear un formulario de creación rápida  
   
-1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 
 > [!IMPORTANT]
@@ -92,10 +99,10 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 ### <a name="to-edit-a-quick-create-form"></a>Para editar un formulario de creación rápida  
   
-1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
-> “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    
+> Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    
   
 2. Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.    
 
@@ -113,7 +120,7 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
 Introducida en la actualización 9.1.0.2007, la propiedad **Permitir creación rápida** se puede habilitar o deshabilitar para todas las actividades estándar, salvo citas periódicas. Esta propiedad le permite cambiar el formulario que se muestra de forma predeterminada para la mayoría de las actividades. De forma predeterminada, se habilita la propiedad **Permitir creación rápida** y el formulario de creación de creación rápida es el formulario que se muestra en las áreas de aplicación y las entidades de actividad que lo admiten. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/allow-quick-create.png "Propiedad Permitir creación rápida en entidad de cita")
+> ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>Comportamiento de visualización del formulario de cliente de la interfaz unificada

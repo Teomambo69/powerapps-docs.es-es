@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60d552a0f5a03513e758775571868eeeba3665cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754569"
 ---
 # <a name="ribbon-types-schema"></a>Esquema de tipos de cintas de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbon-types-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbon-types-schema -->
 
 La siguiente es la definición de esquema para la porción de tipos de cintas de opciones en un archivo de personalización de importación/exportación. El esquema de tipos de cintas de opciones se incluye desde el [esquema central de cinta de opciones](ribbon-core-schema.md). Puede encontrar el esquema en la carpeta `Schemas\9.0.0.2090\RibbonTypes.xsd` al descargar el archivo zip de esquemas.
 
-Descargue los [esquemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
+Descargue los [esquemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
 
 Para obtener más información, consulte [Empaquetar y distribuir extensiones con soluciones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
@@ -30,7 +36,7 @@ Para obtener más información, consulte [Empaquetar y distribuir extensiones co
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CrmRibbonTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:schema id="CrmRibbonTypes" xmlns:xs="https://www.w3.org/2001/XMLSchema" >
 
     <!-- Command Definition Types -->
     <xs:complexType name="ActionsType">

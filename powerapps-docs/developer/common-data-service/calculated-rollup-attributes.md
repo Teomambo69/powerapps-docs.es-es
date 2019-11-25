@@ -1,6 +1,6 @@
 ---
 title: Atributos calculados y consolidados (Common Data Service) | Microsoft Docs
-description: 'Obtenga información sobre elementos y características comunes, atributos calculados, atributos consolidados, recuperar un valor de campo consolidado calculado inmediatamente y enumeración de SourceTypeMasks.'
+description: Obtenga información sobre elementos y características comunes, atributos calculados, atributos consolidados, recuperar un valor de campo consolidado calculado inmediatamente y enumeración de SourceTypeMasks.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 826e535e823ffa433816c7d97a2e4aded7c51309
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753044"
 ---
 # <a name="calculated-and-rollup-attributes"></a>Atributos calculados y consolidados
 
 Los atributos *calculados* y *consolidados* liberan al usuario de tener que realizar cálculos manualmente y le permiten centrarse en su trabajo. Los administradores del sistema pueden ahora definir con facilidad un campo para que contenga el valor de muchos cálculos comunes sin necesidad de trabajar con un desarrollador. Los programadores también pueden aprovechar las capacidades de la plataforma para realizar estos cálculos en vez de en su propio código.  
   
- [Vídeo: Campos consolidados y calculados en Microsoft Dynamics CRM 2015](http://youtu.be/RoahCH1p3T8)  
+ [Vídeo: Campos consolidados y calculados en Microsoft Dynamics CRM 2015](https://youtu.be/RoahCH1p3T8)  
   
 <a name="BKMK_CommonElements"></a>   
 ## <a name="common-elements-and-characteristics"></a>Elementos y características comunes  
@@ -178,7 +184,7 @@ Los atributos *calculados* y *consolidados* liberan al usuario de tener que real
 ```  
   
 ### <a name="see-also"></a>Vea también  
- [Vídeo: Campos consolidados y calculados en Microsoft Dynamics CRM 2015](http://youtu.be/RoahCH1p3T8)   
+ [Vídeo: Campos consolidados y calculados en Microsoft Dynamics CRM 2015](https://youtu.be/RoahCH1p3T8)   
  [Introducción a los atributos de entidad](/dynamics365/customer-engagement/developer/introduction-to-entity-attributes)   
  [Definir campos calculados](https://technet.microsoft.com/library/dn832103.aspx)   
  [Definir campos consolidados](https://technet.microsoft.com/library/dn832103.aspx)

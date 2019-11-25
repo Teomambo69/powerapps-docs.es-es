@@ -6,16 +6,21 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d32c212a3b6c8f95f3de078d6849356ef3853c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749684"
 ---
-
 # <a name="use-the-common-data-service-organization-service"></a>Usar el servicio de la organización de Common Data Service
 
 El servicio de organización es uno de dos servicios web que puede usar para trabajar con datos y metadatos en Common Data Service. El otro es la [API web](../webapi/overview.md).

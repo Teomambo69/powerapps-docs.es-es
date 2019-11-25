@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 641885d2-4a08-41b8-b914-d9a244e4d5b1
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1e6fa3440f0deef99f94ce94352177a105abf7b7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759268"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Crear o editar paneles de aplicaciones controladas por modelos
 
@@ -29,7 +35,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Crea un panel  
   
-1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -51,7 +57,7 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Editar un panel existente  
   
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    
@@ -66,15 +72,15 @@ Existen dos tipos de paneles: paneles de usuario y paneles del sistema. Un usuar
   
 4.  Cuando haya completado sus cambios asegúrese de guardarlos y después publíquelos.  
   
- Tareas adicionales de paneles del sistema que puede realizar son:  
+Tareas adicionales de paneles del sistema que puede realizar son:  
   
-    -   Quitar una lista o un gráfico de un panel  
-  
-    -   Agregar una lista o un gráfico a un panel  
-  
-    -   Establecer el panel predeterminado  
-  
-    -   Usar roles de seguridad para crear un panel visible solo para determinados roles    
-  
+-   Quitar una lista o un gráfico de un panel  
+
+-   Agregar una lista o un gráfico a un panel  
+
+-   Establecer el panel predeterminado  
+
+-   Usar roles de seguridad para crear un panel visible solo para determinados roles    
+
 ## <a name="next-steps"></a>Pasos siguientes  
 [Establecimiento de propiedades para un gráfico o una lista incluidos en un panel](set-properties-chart-list-included-dashboard.md)

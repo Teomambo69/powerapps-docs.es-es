@@ -1,5 +1,5 @@
 ---
-title: ' Marco de trabajo de eventos (Common Data Service) | Microsoft Docs'
+title: " Marco de trabajo de eventos (Common Data Service) | Microsoft Docs"
 description: Describe el marco de trabajo de eventos y los desarrolladores de información deben saber cuándo utilizarlo.
 ms.custom: ''
 ms.date: 06/18/2019
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752984"
 ---
 # <a name="event-framework"></a>Marco de trabajo de eventos
 
@@ -62,10 +68,10 @@ $filter=iscustomprocessingstepallowed eq true and isvisible eq true)
 ```
 
 > [!TIP]
-> Puede exportar estos datos a una hoja de cálculo de Excel usando esta consulta y las instrucciones proporcionadas en esta entrada de blog: [Encontrar mensajes y entidades elegibles para complementos mediante Common Data Service](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+> Puede exportar estos datos a una hoja de cálculo de Excel usando esta consulta y las instrucciones proporcionadas en esta entrada de blog: [Encontrar mensajes y entidades elegibles para complementos mediante Common Data Service](https://powerapps.microsoft.com/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
 
 
-También puede usar el FetchXML siguiente para recuperar esta información. El [Creador de FetchXML](http://fxb.xrmtoolbox.com) es una herramienta útil para ejecutar este tipo de consulta.
+También puede usar el FetchXML siguiente para recuperar esta información. El [Creador de FetchXML](https://fxb.xrmtoolbox.com) es una herramienta útil para ejecutar este tipo de consulta.
 
 ```xml
 <fetch>

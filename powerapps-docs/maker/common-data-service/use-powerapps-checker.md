@@ -9,12 +9,17 @@ ms.topic: article
 ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758901"
 ---
-
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps
 
 Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
@@ -34,12 +39,12 @@ El comprobador de soluciones trabaja con soluciones no administradas que se pued
 ## <a name="enable-the-solution-checker"></a>Habilitar el comprobador de soluciones
 El comprobador de soluciones está habilitado de forma predeterminada en cada entorno de Common Data Service. Un elemento de menú **Comprobador de soluciones** está disponible cuando selecciona una solución no administrada en el área **Soluciones de PowerApps**. Si la opción **Ejecutar** no está disponible en el menú **Comprobador de soluciones**, puede habilitarla instalando la solución del comprobador de PowerApps. Para instalarlo, siga estos pasos:   
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno de Common Data Service donde desea habilitar el comprobador de soluciones. 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno de Common Data Service donde desea habilitar el comprobador de soluciones. 
 2. En el panel de navegación izquierdo, seleccione **Soluciones**.
 3. En la barra de herramientas, seleccione **Comprobador de soluciones** y después seleccione **Instalar** – esto abre la página de Microsoft AppSource. Debe permitir ventanas emergentes si el explorador bloquea la apertura de la página. 
 
    > [!div class="mx-imgBorder"]
-   > ![Instalar el comprobador de soluciones](media/solution-checker-install.png "Instalar el comprobador de soluciones")
+   > ![Instalar comprobador de soluciones](media/solution-checker-install.png "Instalar comprobador de soluciones")
 
 4. Seleccione **Prueba gratuita** en la página de AppSource. 
 
@@ -61,12 +66,12 @@ When you install the PowerApps checker these solution specific components are cr
 ## <a name="run-the-solution-checker"></a>Ejecutar el comprobador de soluciones
 Después de instalar el comprobador de PowerApps en el entorno, un elemento de menú **Comprobador de soluciones** está disponible cuando seleccione una solución no administrada en el área **Soluciones** de PowerApps. 
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. En el panel izquierdo, seleccione **Soluciones**. 
 3. Junto a la solución no administrada que desea analizar, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Ejecutar**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Comando ejecutar comprobador de soluciones](media/solution-checker-run.png "Comando ejecutar comprobador de soluciones")
+   > ![Ejecutar comando de comprobador de soluciones](media/solution-checker-run.png "Ejecutar comando de comprobador de soluciones")
 
 4.  El panel de estado situado en la parte superior derecha de la página **Soluciones** muestra **Comprobador de soluciones ejecutándose**. 
 
@@ -110,7 +115,7 @@ Cuando se completa una comprobación de la solución, puede ver el informe de an
 3. Seleccione un problema para ver los detalles y orientación sobre cómo resolverlo.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/solution-checker-viewresults.png "Resultados de la vista del comprobador de soluciones")
+    > ![](media/solution-checker-viewresults.png "Solution checker view results")
 
 Los resultados de comprobación de la solución también están disponibles para descarga. El archivo zip del comprobador de soluciones se descarga en la carpeta especificada por el explorador web. El informe de descarga está en formato [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] y contiene varias visualizaciones y columnas que pueden ayudarle a identificar el impacto, tipo y la ubicación de cada problema detectado en la solución. Un vínculo a orientación detallada sobre cómo resolver el problema también se proporciona. 
 
@@ -140,40 +145,40 @@ Este es un resumen de cada columna del informe.
 
 |Componente de la solución  |Nombre de regla  |Descripción de la regla  |
 |---------|---------|---------|
-|Complemento o actividad de flujo de trabajo   | [il-specify-column](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | Evite seleccionar todas las columnas mediante API de consulta de Common Data Service.     |
-|Complemento o actividad de flujo de trabajo   | [meta-remove-dup-reg](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | Evite duplicar registros del complemento Common Data Service.     |
-|Complemento o actividad de flujo de trabajo   | [il-turn-off-keepalive](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | Establecer KeepAlive en false para interactuar con hosts externos en un complemento Common Data Service.     |
-|Complemento o actividad de flujo de trabajo   | [il-avoid-unpub-metadata](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | Evite recuperar metadatos de Common Data Service sin publicar.     |
-|Complemento o actividad de flujo de trabajo   | [il-avoid-batch-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Evite usar tipos de solicitud por lotes en complementos y actividades de flujo de trabajo de Common Data Service.    |
-|Complemento o actividad de flujo de trabajo   | [meta-avoid-reg-no-attribute](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | Incluir atributos de filtrado con el registro de complementos de Common Data Service    |
-|Complemento o actividad de flujo de trabajo   | [meta-avoid-reg-retrieve](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | Adopta precauciones con complementos de Common Data Service registrados para mensajes Retrieve y RetrieveMultiple.    |
-|Complemento o actividad de flujo de trabajo   | [meta-remove-inactive](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | Quitar configuraciones inactivas de Common Data Service.    |
-|Complemento o actividad de flujo de trabajo   | [il-meta-avoid-crm2011-depr-message](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | No use mensajes obsoletos de Microsoft Dynamics CRM 2011.     |
-|Complemento o actividad de flujo de trabajo   | [meta-avoid-crm4-event](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | No use la fase de registro de complementos Microsoft Dynamics CRM 4.0.    |
-|Complemento o actividad de flujo de trabajo   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | No use solicitudes de operaciones de actualización especializadas en Common Data Service.    | 
-| Complemento o actividad de flujo de trabajo |  [il-use-autonumber-feature](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |Use la característica de numeración automática en lugar de una solución personalizada de numeración automática. | 
-| Complemento o actividad de flujo de trabajo  | [il-avoid-parallel-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | El uso de patrones paralelos se debe evitar en complementos.  |
-| Complemento o actividad de flujo de trabajo  | [il-avoid-lock-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | Evite el bloqueo de miembros estáticos en complementos.  |
-| Complemento o actividad de flujo de trabajo  | [meta-avoid-retrievemultiple-annotation](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | Evite registrar un complemento en RetrieveMultiple de anotación.  |
-|Recursos web  | [web-use-async](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  Interactúe con recursos HTTP y HTTPS forma asincrónica.   |
-|Recursos web  | [meta-remove-invalid-form-handler](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | Corrija o quite registros de eventos de formulario de Common Data Service no válidos.   |
-|Recursos web  | [meta-remove-orphaned-form-element](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | Corrija o quite registros de eventos de formulario de Common Data Service huérfanos.   |
-|Recursos web  | [web-avoid-modals](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | Evite el uso de diálogos modales.   |
-|Recursos web  | [web-avoid-crm2011-service-odata](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | No se dirija al extremo de Microsoft Dynamics CRM 2011 OData 2.0.     |
-|Recursos web  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | No se dirija a los servicios de Microsoft Dynamics CRM 2011 SOAP.   |
-|Recursos web  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | No use complementos del explorador o API heredados de Internet Explorer.   |
-|Recursos web  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | No use el modelo de objetos de Microsoft Dynamics CRM 2011 en desuso.  |
-|Recursos web  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | No use URL de extremo absolutos de Common Data Service.    |
-|Recursos web  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Use contextos del cliente.   |
-|Recursos web  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Usar parámetros API de diálogo.   |
-|Recursos web  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Use configuración de organización.   |
-|Recursos web  | [web-use-grid-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | Use las API de cuadrícula.    |
-|Recursos web  | [web-avoid-isActivityType](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | Reemplace el método Xrm.Utility.isActivityType por el nuevo Xrm.Utility.getEntityMetadata y no lo utilice en reglas de cinta de opciones.    |
-|Recursos web  | [meta-avoid-silverlight](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | El uso del recurso web de Silverlight ha quedado obsoleto.   |
-| Recursos web  | [web-remove-debug-script](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | Evite incluir el script de depuración en entornos que no sean de desarrollo.  | 
-| Recursos web  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | Utilice el modo estricto si es posible.  | 
-| Recursos web  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Utilice operadores de igualdad estricta.  | 
-| Recursos web  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | No use la función 'eval' o sus equivalentes funcionales.  | 
+|Complemento o actividad de flujo de trabajo   | [il-specify-column](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | Evite seleccionar todas las columnas mediante API de consulta de Common Data Service.     |
+|Complemento o actividad de flujo de trabajo   | [meta-remove-dup-reg](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | Evite duplicar registros del complemento Common Data Service.     |
+|Complemento o actividad de flujo de trabajo   | [il-turn-off-keepalive](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | Establecer KeepAlive en false para interactuar con hosts externos en un complemento Common Data Service.     |
+|Complemento o actividad de flujo de trabajo   | [il-avoid-unpub-metadata](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | Evite recuperar metadatos de Common Data Service sin publicar.     |
+|Complemento o actividad de flujo de trabajo   | [il-avoid-batch-plugin](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Evite usar tipos de solicitud por lotes en complementos y actividades de flujo de trabajo de Common Data Service.    |
+|Complemento o actividad de flujo de trabajo   | [meta-avoid-reg-no-attribute](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | Incluir atributos de filtrado con el registro de complementos de Common Data Service    |
+|Complemento o actividad de flujo de trabajo   | [meta-avoid-reg-retrieve](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | Adopta precauciones con complementos de Common Data Service registrados para mensajes Retrieve y RetrieveMultiple.    |
+|Complemento o actividad de flujo de trabajo   | [meta-remove-inactive](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | Quitar configuraciones inactivas de Common Data Service.    |
+|Complemento o actividad de flujo de trabajo   | [il-meta-avoid-crm2011-depr-message](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | No use mensajes obsoletos de Microsoft Dynamics CRM 2011.     |
+|Complemento o actividad de flujo de trabajo   | [meta-avoid-crm4-event](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | No use la fase de registro de complementos Microsoft Dynamics CRM 4.0.    |
+|Complemento o actividad de flujo de trabajo   | [il-avoid-specialized-update-ops](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | No use solicitudes de operaciones de actualización especializadas en Common Data Service.    | 
+| Complemento o actividad de flujo de trabajo |  [il-use-autonumber-feature](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |Use la característica de numeración automática en lugar de una solución personalizada de numeración automática. | 
+| Complemento o actividad de flujo de trabajo  | [il-avoid-parallel-plugin](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | El uso de patrones paralelos se debe evitar en complementos.  |
+| Complemento o actividad de flujo de trabajo  | [il-avoid-lock-plugin](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | Evite el bloqueo de miembros estáticos en complementos.  |
+| Complemento o actividad de flujo de trabajo  | [meta-avoid-retrievemultiple-annotation](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | Evite registrar un complemento en RetrieveMultiple de anotación.  |
+|Recursos web  | [web-use-async](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  Interactúe con recursos HTTP y HTTPS forma asincrónica.   |
+|Recursos web  | [meta-remove-invalid-form-handler](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | Corrija o quite registros de eventos de formulario de Common Data Service no válidos.   |
+|Recursos web  | [meta-remove-orphaned-form-element](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | Corrija o quite registros de eventos de formulario de Common Data Service huérfanos.   |
+|Recursos web  | [web-avoid-modals](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | Evite el uso de diálogos modales.   |
+|Recursos web  | [web-avoid-crm2011-service-odata](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | No se dirija al extremo de Microsoft Dynamics CRM 2011 OData 2.0.     |
+|Recursos web  | [web-avoid-crm2011-service-soap](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | No se dirija a los servicios de Microsoft Dynamics CRM 2011 SOAP.   |
+|Recursos web  | [web-avoid-browser-specific-api](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | No use complementos del explorador o API heredados de Internet Explorer.   |
+|Recursos web  | [web-avoid-2011-api](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | No use el modelo de objetos de Microsoft Dynamics CRM 2011 en desuso.  |
+|Recursos web  | [web-use-relative-uri](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | No use URL de extremo absolutos de Common Data Service.    |
+|Recursos web  | [web-use-client-context](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Use contextos del cliente.   |
+|Recursos web  | [web-use-dialog-api-param](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Usar parámetros API de diálogo.   |
+|Recursos web  | [web-use-org-setting](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Use configuración de organización.   |
+|Recursos web  | [web-use-grid-api](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | Use las API de cuadrícula.    |
+|Recursos web  | [web-avoid-isActivityType](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | Reemplace el método Xrm.Utility.isActivityType por el nuevo Xrm.Utility.getEntityMetadata y no lo utilice en reglas de cinta de opciones.    |
+|Recursos web  | [meta-avoid-silverlight](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | El uso del recurso web de Silverlight ha quedado obsoleto.   |
+| Recursos web  | [web-remove-debug-script](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | Evite incluir el script de depuración en entornos que no sean de desarrollo.  | 
+| Recursos web  | [web-use-strict-mode](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | Utilice el modo estricto si es posible.  | 
+| Recursos web  | [web-use-strict-equality-operators](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Utilice operadores de igualdad estricta.  | 
+| Recursos web  | [web-avoid-eval](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | No use la función 'eval' o sus equivalentes funcionales.  | 
 
 
 ### <a name="see-also"></a>Vea también

@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 346bbf75e614fc7b7b3d3f2958825de538a757e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753052"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>Crear aplicaciones web mediante autenticación de servidor a servidor (S2S)
 
@@ -23,7 +29,7 @@ La autenticación S2S significa que no necesita usar una licencia de usuario de 
 
  Todas las operaciones realizadas por la aplicación o servicio mediante S2S se realizarán como el usuario de la aplicación que usted proporciona en lugar de como el usuario que accede a la aplicación. Si desea que la aplicación realice operaciones de datos en nombre de un usuario específico, como la persona que está interactuando con la aplicación, puede aplicar suplantación cuando el rol de seguridad personalizado aplicado a la entidad de servicio de la aplicación tenga los privilegios necesarios. Más información: [Suplantar a otro usuario](impersonate-another-user.md)  
 
- Una aplicación web o un servicio que use autenticación S2S es responsable de controlar el acceso a los datos a los que tiene acceso. Esto se realiza normalmente mediante un proveedor OpenID Connect. Más información: <http://openid.net/connect/>.  
+ Una aplicación web o un servicio que use autenticación S2S es responsable de controlar el acceso a los datos a los que tiene acceso. Esto se realiza normalmente mediante un proveedor OpenID Connect. Más información: <https://openid.net/connect/>.  
 
 ## <a name="server-to-server-authentication-scenarios"></a>Escenarios de autenticación de servidor a servidor  
  Hay dos escenarios en los que puede aplicar autenticación S2S.  

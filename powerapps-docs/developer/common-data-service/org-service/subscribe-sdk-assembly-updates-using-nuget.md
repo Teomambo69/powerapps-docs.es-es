@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752952"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Suscribirse a las actualizaciones de ensamblados de SDK mediante NuGet
 
-Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado [nuget.org](http://www.nuget.org). El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK. Visual Studio ha admitido esta capacidad desde la versión 2010 y hay incluso un cliente independiente NuGet para los desarrolladores que no desarrollan en Visual Studio. Otra ventaja de usar paquetes NuGet en los proyectos es que las referencias y las dependencias de ensamblados se gestionan automáticamente.  
+Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado [nuget.org](https://www.nuget.org). El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK. Visual Studio ha admitido esta capacidad desde la versión 2010 y hay incluso un cliente independiente NuGet para los desarrolladores que no desarrollan en Visual Studio. Otra ventaja de usar paquetes NuGet en los proyectos es que las referencias y las dependencias de ensamblados se gestionan automáticamente.  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
@@ -43,7 +49,7 @@ El SDK de NuGet se encuentra en el perfil [crmsdk](https://www.nuget.org/profile
 |[Microsoft.CrmSdk.XrmTooling.WpfControls](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.WpfControls/)|Contiene los ensamblados de Microsoft.Xrm.Tooling.CrmConnectControl.dll, Microsoft.Xrm.Tooling.Ui.Styles.dll y Microsoft.Xrm.Tooling.WebResourceUtility.dll|
 
 ## <a name="how-to-install-a-package-in-your-project"></a>Cómo instalar un paquete en el proyecto  
- Para obtener información sobre cómo instalar paquetes de NuGet en el proyecto, consulte [Administrar paquetes de NuGet mediante el cuadro de diálogo](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog).  
+ Para obtener información sobre cómo instalar paquetes de NuGet en el proyecto, consulte [Administrar paquetes de NuGet mediante el cuadro de diálogo](https://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog).  
 
 ## <a name="download-tools-from-nuget"></a>Descargar herramientas de NuGet
 
@@ -51,4 +57,4 @@ Puede descargar herramientas usadas en desarrollo desde NuGet mediante el script
   
 ### <a name="see-also"></a>Vea también  
  [NuGetDocumentación](/nuget/)   
- [InstalaciónNuGet](http://docs.nuget.org/docs/start-here/installing-nuget)
+ [InstalaciónNuGet](https://docs.nuget.org/docs/start-here/installing-nuget)

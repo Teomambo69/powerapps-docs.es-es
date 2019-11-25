@@ -4,20 +4,26 @@ description: Comprender las pPropiedades de los controles de vista rápida para 
 Keywords: Propiedades de control de la vista rápida; Dynamics 365; Formularios principales
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/06/2018
+ms.date: 10/28/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 68f68d5b-6c71-4b95-bb46-d48c59d9008e
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755111"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>Propiedades de los controles de vista rápida de aplicaciones controladas por modelos
 
@@ -27,7 +33,7 @@ Un control de vista rápida en un formulario de aplicación basada en modelos mu
 > ![Formulario de vista rápida de contacto en el formulario de cuenta](media/quick-view-form-contact.png "Formulario de vista rápida de contacto en el formulario de cuenta")  
 
 Puede acceder a las **Propiedades de controles de vista rápida** desde el sitio de PowerApps. 
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 

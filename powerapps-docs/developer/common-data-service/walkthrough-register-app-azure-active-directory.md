@@ -1,11 +1,9 @@
 ---
 title: 'Tutorial: Registrar una aplicación con Azure Active Directory (Common Data Service) | Microsoft Docs'
-description: 'Este tutorial describe cómo registrar una aplicación con Azure Active Directory de modo que puede conectarse en el entorno de Common Data Service, autenticarse mediante OAuth y obtener acceso a los servicios web.'
+description: Este tutorial describe cómo registrar una aplicación con Azure Active Directory de modo que puede conectarse en el entorno de Common Data Service, autenticarse mediante OAuth y obtener acceso a los servicios web.
 keywords: ''
 ms.date: 04/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
@@ -13,12 +11,17 @@ ms.author: jdaly
 manager: ryjones
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 79773316bd5ff4e6d2652e7dfae53add0a782dc3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749769"
 ---
-
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Tutorial: Registrar una aplicación con Azure Active Directory
 
 Este tutorial describe cómo registrar una aplicación con Azure Active Directory, lo que permite a un usuario con cuenta de usuario de PowerApps conectarse a su entorno de Common Data Service desde aplicaciones de cliente externo mediante la autenticación de OAuth.
@@ -41,7 +44,7 @@ El registro de la aplicación también lo puede hacer un desarrollador de aplica
 1. Iniciar sesión en el [portal de Azure](https://go.microsoft.com/fwlink/?linkid=2083908) con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del Office 365 [centro de administración](https://admin.microsoft.com/adminportal) expandiendo el elemento **Centros de administración** en el panel de navegación de la izquierda y seleccionando **Azure Active Directory**.  
   
    > [!NOTE]
-   > Si no tiene un inquilino de Azure (cuenta) o tiene uno pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) para asociar las dos cuentas.<br><br> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
+   > Si no tiene un inquilino de Azure (cuenta) o tiene uno pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) para asociar las dos cuentas.<br><br> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2. En el portal de Azure, seleccione **Azure Active Directory** en el panel izquierdo y seleccione **Registros de la aplicación** y haga clic en **Nuevo registro**.
     
@@ -57,7 +60,7 @@ El registro de la aplicación también lo puede hacer un desarrollador de aplica
 
 5. En la página de **Información general** de la aplicación, mantenga el puntero sobre el valor **Identificador de aplicación (cliente)** y seleccione el icono **Copiar en portapapeles** para copiar el valor ya que deberá especificarlo en el código de autenticación de la aplicación o el archivo app.config si procede.
 
-    ![Copie el identificador de aplicación](media/app-registration-overview-page.png "Copie el identificador de aplicación")
+    ![Copiar identificador de aplicación](media/app-registration-overview-page.png "Copiar identificador de aplicación")
   
 5. Seleccione la pestaña **Manifiesto**, en el editor de manifiesto, establezca la propiedad *allowPublicClient* en **true** y haga clic en **Guardar**.
    
@@ -65,7 +68,7 @@ El registro de la aplicación también lo puede hacer un desarrollador de aplica
 
 6. Seleccione la pestaña **Permisos de API**, haga clic en **Agregar un permiso**. 
 
-    ![Agregar permiso de aplicaciones](media/azure-api-permissions-page.png "agregar permiso de aplicaciones")
+    ![Agregar permiso de aplicación](media/azure-api-permissions-page.png "Agregar permiso de aplicación")
 
 7. Seleccione **Dynamics CRM** en la pestaña **API de Microsoft**.
     
@@ -73,13 +76,13 @@ El registro de la aplicación también lo puede hacer un desarrollador de aplica
 
 8. Haga clic en **Permisos delegados** y active las opciones y haga clic en **Agregar permisos**. 
     
-    ![Permisos de delegado](media/app-registration-delegate-permissions-page.png "Permisos de delegado")
+    ![Delegar permisos](media/app-registration-delegate-permissions-page.png "Delegar permiso")
 
 Esto completa el registro de la aplicación en Azure Active Directory.
 
 ## <a name="additional-configuration-options"></a>Opciones de configuración adicionales
 
-Si su aplicación será una aplicación de una sola página (SPA) que depende de CORS debe configurar el registro de la aplicación para admitir el flujo implícito. Más información: [Tutorial: Registrar y configurar una aplicación SPA con adal.js](walkthrough-registering-configuring-simplespa-application-adal-js.md)
+Si su aplicación será una aplicación de una sola página (SPA) que depende de CROS debe configurar el registro de la aplicación para admitir el flujo implícito. Más información: [Tutorial: Registrar y configurar una aplicación SPA con adal.js](walkthrough-registering-configuring-simplespa-application-adal-js.md)
 
 Si su aplicación es compatible con conexiones entre servidores, consulte [Usar autenticación multiinquilino entre servidores](use-multi-tenant-server-server-authentication.md)
   

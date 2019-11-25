@@ -1,6 +1,6 @@
 ---
 title: Suplantar a otro usuario utilizando la API web (Common Data Service)| Microsoft Docs
-description: La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Lea cómo puede suplantar a otro usuario en Common Data Service utilizando la API web
+description: La suplantación se utiliza para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseado con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Lea cómo puede suplantar a otro usuario en Common Data Service mediante la API web
 ms.custom: ''
 ms.date: 03/18/2019
 ms.service: powerapps
@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7958fa933701eb6ffc037dd8d5a04e641c6669ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749768"
 ---
-
 <!-- TOD0: The higher level topic [Impersonate another user](../impersonate-another-user.md) should include all generic concepts.
 This topic should only cover the Web API specific details -->
 
@@ -34,7 +39,7 @@ Hay ocasiones en las que el código deberá realizar operaciones en nombre de ot
 
 ## <a name="requirements-for-impersonation"></a>Requisitos de la suplantación
 
-La suplantación se usa para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseados con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Esto es necesario porque varios clientes y servicios en nombre de un usuario de Common Data Service pueden llamar a los servicios web de Common Data Service, por ejemplo, en un flujo de trabajo o una solución de ISV personalizada. La suplantación implica dos cuentas distintas de usuario: una cuenta de usuario (A) que se usa al ejecutar código para realizar algunas tareas en nombre de otro usuario (B).  
+La suplantación se utiliza para ejecutar la lógica de negocios (código) en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseado con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado. Esto es necesario porque varios clientes y servicios en nombre de un usuario de Common Data Service pueden llamar a los servicios web de Common Data Service, por ejemplo, en un flujo de trabajo o una solución de ISV personalizada. La suplantación implica dos cuentas distintas de usuario: una cuenta de usuario (A) que se usa al ejecutar código para realizar algunas tareas en nombre de otro usuario (B).  
   
 La cuenta de usuario (A) debe tener el privilegio `prvActOnBehalfOfAnotherUser`, que se incluye en el rol de seguridad Delegado. El conjunto real de privilegios que se utiliza para modificar los datos es la intersección de los privilegios que el usuario con rol de delegado posee con la del usuario que se suplanta. Es decir, al usuario (A) se le permite hacer algo solo si el usuario (A) y el usuario (B) tienen el privilegio necesario para realizar la acción.  
   

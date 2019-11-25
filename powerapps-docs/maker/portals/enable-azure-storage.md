@@ -1,6 +1,6 @@
 ---
-title: Habilitar Azure Storage para portales | MicrosoftDocs
-description: Instrucciones para habilitar Azure Storage para los portales con el fin de aprovechar las ventajas de la mayor capacidad de almacenamiento de archivos de Azure.
+title: Habilitar Azure Storage para los portales | MicrosoftDocs
+description: Instrucciones para habilitar Azure Storage para portales para que aproveche la mayor capacidad de almacenamiento de archivos de Azure.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,72 +11,72 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542560"
+ms.locfileid: "2759928"
 ---
 # <a name="enable-azure-storage"></a>Habilitar Azure Storage
 
-La integración de Azure Storage para los portales permite aprovechar las ventajas de la mayor capacidad de almacenamiento de archivos de Azure, con la misma interfaz y proporcionar la misma experiencia de usuario que para los archivos adjuntos predeterminados. Esta característica es compatible con los archivos Web, los formularios de entidad y los formularios Web Forms.
+La integración de Azure Storage para los portales le permite aprovechar la mayor capacidad de almacenamiento de archivo de Azure, utilizando la misma interfaz y proporcionando la misma experiencia de usuario que para los datos adjuntos del archivo predeterminado. Esta característica se admite para los archivos web, los formularios de entidades, y los formularios web.
 
-Debe crear una cuenta de almacenamiento con **Resource Manager** como modelo de implementación. [!include[More information](../../includes/proc-more-information.md)] [crear una cuenta de almacenamiento de Azure](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account).
+Debe crear una cuenta de almacenamiento con **Administrador de recursos** como el modelo de implementación. [!include[More information](../../includes/proc-more-information.md)] [Crear una cuenta de almacenamiento de Azure](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account).
 
-Una vez que se ejecuta la cuenta de almacenamiento, los portales requieren ciertas configuraciones globales que indican a la aplicación cómo localizar la cuenta de almacenamiento. En la aplicación de administración del portal, vaya a **configuración** > **nuevo**y agregue una nueva configuración denominada **FileStorage/CloudStorageAccount**.
+Una vez que la cuenta de almacenamiento esté activa, los portales requieren una determinada configuración global que indique a aplicación cómo buscar su cuenta de almacenamiento. En la aplicación Administración del portal, vaya a **Configuración** > **Nuevo**, y agregue un valor nuevo con el nombre **FileStorage/CloudStorageAccount**.
 
 > [!NOTE]
-> El tamaño máximo de carga de archivos es 125 MB.
+> El límite máximo de carga de archivos es 125MB.
 
 Para buscar el valor de FileStorage/CloudStorageAccount, debe obtener una cadena de conexión de su [!include[Azure portal](../../includes/pn-azure-portal.md)].
 
 1. Inicie sesión en su [!include[Azure portal](../../includes/pn-azure-portal.md)].
 
-2. Vaya a la cuenta de almacenamiento.
+2. Desplácese a su cuenta de almacenamiento.
 
-3. Seleccione **claves de acceso**.
+3. Seleccione **Teclas de acceso**.
 
-    ![Busque el valor de cadena de conexión desde el Azure Portal](media/key-azure-storage.png "Busque el valor de la cadena de conexión desde el Azure Portal")
+    ![Busque el valor de la cadena de conexión del portal de Azure](media/key-azure-storage.png "Busque el valor de la cadena de conexión del portal de Azure")
 
-4. En el panel resultante, busque el campo con la etiqueta **cadena de conexión**. Seleccione el icono de **copia** situado junto al campo para el que necesita copiar el valor y, a continuación, péguelo en el nuevo valor:
+4. En el panel resultante, localice el campo etiquetado con **Cadena de conexión**. Seleccione el icono **Copiar** junto al campo del que necesita copiar el valor y, a continuación, pegue el valor en la nueva configuración:
 
     ![Valor de cadena de conexión principal](media/primary-connection-string-azure-storage.png "Valor de cadena de conexión principal")
 
-    ![Configuración del portal para la cuenta de almacenamiento en la nube](media/portal-site-setting-cloud-storage-account.png "Configuración del portal para la cuenta de almacenamiento en la nube")
+    ![Configuración de portal para la cuenta de almacenamiento en nube](media/portal-site-setting-cloud-storage-account.png "Configuración del portal para la cuenta de almacenamiento en nube")
 
-## <a name="specify-the-storage-container"></a>Especificar el contenedor de almacenamiento
+## <a name="specify-the-storage-container"></a>Especifique el contenedor de almacenamiento
 
-Si aún no tiene un contenedor de blobs de Azure en la cuenta de almacenamiento, debe agregar uno mediante el [!include[Azure portal](../../includes/pn-azure-portal.md)].
+Si no tiene todavía un contenedor Blob de Azure en su cuenta de almacenamiento, debe agregar uno con su [!include[Azure portal](../../includes/pn-azure-portal.md)].
 
-En la [aplicación de administración del portal](configure/configure-portal.md), vaya a **configuración** > **nuevo**y agregue una nueva configuración denominada **FileStorage/CloudStorageContainerName**, con el nombre del contenedor como valor.
+En la [aplicación Administración del portal](configure/configure-portal.md), vaya a **Configuración** > **Nuevo** y agregue un nuevo valor denominado **FileStorage/CloudStorageContainerName**, con el nombre del contenedor como el valor.
 
-![Configuración del portal para el contenedor de almacenamiento en la nube](media/portal-site-setting-cloud-storage-container.png "Configuración del portal para el contenedor de almacenamiento en nube")
+![Configuración de portal para el contenedor de almacenamiento en nube](media/portal-site-setting-cloud-storage-container.png "Configuración del portal para el contenedor de almacenamiento en nube")
 
 ## <a name="add-cors-rule"></a>Agregar regla de CORS
 
-Debe agregar una regla de uso compartido de recursos entre orígenes (CORS) en su cuenta de Azure Storage como se indica a continuación; de lo contrario, verá el icono de datos adjuntos normales en lugar del icono de la nube:
+También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube:
 
-- **Orígenes permitidos**: especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
-- **Verbos permitidos**: get, Put, Delete, Head, post
-- **Encabezados permitidos**: especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-MS-meta-data\*, x-MS-meta-Target\*. 
-- **Encabezados expuestos**: especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que el explorador expone al emisor de la solicitud. Por ejemplo, x-MS-meta-\*.
-- **Antigüedad máxima (segundos)** : especifique el tiempo máximo que un explorador debe almacenar en caché la solicitud de opciones preparatorias. Por ejemplo, 200.
+- **Orígenes permitidos**: Especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
+- **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
+- **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. 
+- **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.
+- **Edad máxima (segundos)**: Especifique la cantidad máxima de tiempo que un explorador debe almacenar en caché la solicitud OPCIONES de preparación. Por ejemplo, 200.
  
-[!include[More information:](../../includes/proc-more-information.md)] [compatibilidad con CORS para los servicios de Azure Storage](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
+[!include[More information:](../../includes/proc-more-information.md)] [Soporte CORS para Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
 
-## <a name="add-site-settings"></a>Agregar configuración del sitio
+## <a name="add-site-settings"></a>Agregar configuraciones de sitios
 
-Agregue la siguiente configuración del sitio de **portales** > **configuración del sitio**. [!include[More information:](../../includes/proc-more-information.md)] [administrar la configuración del sitio de portal](configure/configure-site-settings.md#manage-portal-site-settings).
+Agregue la siguiente configuración de sitio de **portales** > **configuración del sitio**. [!include[More information:](../../includes/proc-more-information.md)] [Administrar la configuración del sitio de portal](configure/configure-site-settings.md#manage-portal-site-settings)
 
 |Nombre|Value|
 |-----|-----|
-|WebFiles/CloudStorageAccount|Proporcione la misma cadena de conexión que se proporciona para el valor de FileStorage/CloudStorageAccount.|
+|WebFiles/CloudStorageAccount|Proporcione la misma cadena de conexión que se ha proporcionado para la configuración de FileStorage/CloudStorageAccount.|
 |WebFiles/StorageLocation|AzureBlobStorage|
 |||
 
-Ahora puede crear un archivo secundario en el portal y mencionar el nombre completo (junto con el contenedor) en la dirección URL de la dirección del BLOB de Azure. Con esta configuración, el portal está listo para empezar a cargar y descargar archivos desde y hacia Azure Storage. Sin embargo, no puede sacar el máximo partido de esta característica hasta que [agregue un recurso Web para habilitar la carga de datos adjuntos en Azure Storage](add-web-resource.md)y configurar [formularios de entidad](configure-notes.md#notes-configuration-for-entity-forms) o [formularios Web Forms](configure-notes.md#notes-configuration-for-web-forms) para que lo usen.
+Ahora puede crear un archivo secundario en el portal y mencionar el nombre completo (junto con contenedor) en la dirección URL de Azure Blob. Con esta configuración, el portal está listo para comenzar mediante la descarga y la carga de los archivos desde Azure Storage. Sin embargo, no puede aprovechar por completo esta característica hasta que usted [agregue un recurso web que permita cargar los datos adjuntos en Azure Storage](add-web-resource.md), y configurar [formularios de entidad](configure-notes.md#notes-configuration-for-entity-forms) o [formularios web](configure-notes.md#notes-configuration-for-web-forms).
 
 ### <a name="see-also"></a>Vea también
 
-[Agregar recurso Web](add-web-resource.md)
+[Agregar recurso web](add-web-resource.md)
 
-[Configurar notas](configure-notes.md)
+[Configuración de notas](configure-notes.md)

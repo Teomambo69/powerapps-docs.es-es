@@ -1,19 +1,25 @@
 ---
-title: Recuperar metadatos y detectar cambios en metadatos (Common Data Service) | Microsoft Docs
+title: Recuperar y detectar cambios en los metadatos (Common Data Service) | Microsoft Docs
 description: Las clases del espacio de nombres Query y las clases RetrieveMetadataChangesRequest y RetrieveMetadataChangesResponse permiten crear consultas eficaces de metadatos y capturar los cambios que se producen según suceden en el tiempo.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce5d1442fce4720d2d0d489f8dbadd7c5f7db43b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752960"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>Recuperar y detectar cambios en metadatos
 
@@ -292,7 +298,7 @@ AttributeProperties.PropertyNames.Add("AttributeType");
   
 ### <a name="retrieve-labels"></a>Recuperar etiquetas
   
- Finalmente, la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> acepta un <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> que le permite especificar un valor entero o varios valores enteros `LCID` para determinar qué etiquetas localizadas devolver. Los valores de identificadores de configuración regional válidos pueden encontrarse en el [gráfico de identificadores de configuración regional (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128). Si una organización tiene muchos paquetes de idioma instalados, se devolverán las etiquetas para todos los idiomas a menos que se especifique <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery>.  
+ Finalmente, la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> acepta un <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> que le permite especificar un valor entero o varios valores enteros `LCID` para determinar qué etiquetas localizadas devolver. Los valores de identificadores de configuración regional válidos pueden encontrarse en el [gráfico de identificadores de configuración regional (LCID)](https://go.microsoft.com/fwlink/?LinkId=122128). Si una organización tiene muchos paquetes de idioma instalados, se devolverán las etiquetas para todos los idiomas a menos que se especifique <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery>.  
   
  En el siguiente ejemplo se define <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> que limita las etiquetas a las que representan el idioma preferido de los usuarios únicamente.  
   

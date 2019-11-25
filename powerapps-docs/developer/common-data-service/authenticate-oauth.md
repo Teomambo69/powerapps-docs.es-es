@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a0777bcb4f67a01a894600176bd68ec3793034c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753068"
 ---
 # <a name="use-oauth-with-common-data-service"></a>Usar OAuth con Common Data Service
 
@@ -46,7 +52,7 @@ Cuando registra una aplicación con Azure AD una de las decisiones que debe toma
 |
 |Modo nativo de |Tipo de [aplicación cliente](/azure/active-directory/develop/developer-glossary#client-application) que está instalada nativamente en un dispositivo. |
 
-Cuando selecciona **Aplicación web/API** debe proporcionar una **Dirección URL de inicio de sesión** que es la dirección URL a la que Azure AD enviará la respuesta de autenticación, incluido un símbolo (token) si la autenticación se realiza correctamente. Mientras desarrolla una aplicación, esta opción se establece normalmente en `http://localhost/appname:[port]` por lo que puede desarrollar y depuración su aplicación localmente. Al publicar la aplicación, necesita cambiar este valor en la dirección URL publicada de la aplicación.
+Cuando selecciona **Aplicación web/API** debe proporcionar una **Dirección URL de inicio de sesión** que es la dirección URL a la que Azure AD enviará la respuesta de autenticación, incluido un símbolo (token) si la autenticación se realiza correctamente. Mientras desarrolla una aplicación, esta opción se establece normalmente en `https://localhost/appname:[port]` por lo que puede desarrollar y depuración su aplicación localmente. Al publicar la aplicación, necesita cambiar este valor en la dirección URL publicada de la aplicación.
 
 Cuando selecciona **Nativo**, debe proporcionar el identificador uniforme de recursos URI de una redirección. Es un identificador único al que Azure AD redirigirá el agente de usuario en una solicitud de OAuth 2.0. Esto suele ser un valor con un formato similar al siguiente: `//app:<guid>`. 
 

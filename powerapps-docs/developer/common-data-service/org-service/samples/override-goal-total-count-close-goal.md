@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Reemplazar el recuento total de objetivo y cerrar el objetivo (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Reemplazar el recuento total de objetivos y cerrar el objetivo (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo reemplazar el recuento total de objetivos y cerrar el objetivo.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 62d02e77e0008778e0526f7620bc5bda168c6f26
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749888"
 ---
 # <a name="sample-override-goal-total-count-and-close-the-goal"></a>Ejemplo: reemplazar el recuento total de objetivos y cerrar el objetivo
 

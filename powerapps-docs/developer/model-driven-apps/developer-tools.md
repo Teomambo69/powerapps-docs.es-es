@@ -1,6 +1,6 @@
 ---
 title: Herramientas de desarrollador (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Proporciona información sobre herramientas desarrolladas por la comunidad que puede usar con aplicaciones basadas en modelos, en PowerApps.'
+description: Proporciona información sobre herramientas desarrolladas por la comunidad que puede usar con aplicaciones basadas en modelos en PowerApps.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1288b04acee069345f15efbc3925229315fd83f7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749905"
 ---
 # <a name="developer-tools"></a>Herramientas del desarrollador
 
-La comunidad de Common Data Service crea herramientas. Muchas de las más populares se distribuyen a través de [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
+La comunidad Common Data Service crea herramientas. Muchas de las más populares se distribuyen a través de [XrmToolBox](https://www.xrmtoolbox.com/). XrmToolBox es una aplicación de Windows que conecta Common Data Service y proporciona herramientas para facilitar las tareas de personalización, configuración y operación. Se envía con más de 30 complementos para crear tareas de administración, de personalización o de configuración más fácilmente y en menos tiempo.
 
 A continuación se presenta una lista seleccionada de herramientas de la comunidad distribuidas mediante XrmToolBox que puede usar cuando trabaja con aplicaciones basadas en modelos.
 

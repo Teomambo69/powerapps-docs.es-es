@@ -1,6 +1,6 @@
 ---
 title: Esquema de descripción de datos de visualización (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'A continuación, se ofrece el esquema para la cadena XML de descripción de datos para gráficos de visualización. Esto se puede usar para validar el contenido de la cadena XML de descripción de datos al crear un gráfico.'
+description: A continuación, se ofrece el esquema para la cadena XML de descripción de datos para gráficos de visualización. Esto se puede usar para validar el contenido de la cadena XML de descripción de datos al crear un gráfico.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48bc0b00dbb5a2a75cb8bf5f87ca912db83e48f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753396"
 ---
 # <a name="visualization-data-description-schema"></a>Esquema de descripción de los datos de visualización
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/visualization-data-description-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/visualization-data-description-schema -->
 
 A continuación, se ofrece el esquema para la cadena XML de descripción de datos para gráficos de visualización. Esto se puede usar para validar el contenido de la cadena XML de descripción de datos al crear un gráfico. Para obtener más información, consulte [Descripción de los gráficos: representación de datos y gráficos subyacentes](understand-charts-underlying-data-chart-representation.md). [!INCLUDE[schema_download](../../includes/schema-download.md)] y ver el archivo `VisualizationDataDescription.xsd` en la carpeta.  
   
@@ -27,7 +33,7 @@ A continuación, se ofrece el esquema para la cadena XML de descripción de dato
 <?xml version='1.0' encoding='utf-8'?>  
 <xs:schema attributeFormDefault='unqualified'  
            elementFormDefault='qualified'  
-           xmlns:xs='http://www.w3.org/2001/XMLSchema'>  
+           xmlns:xs='https://www.w3.org/2001/XMLSchema'>  
  <xs:element name='datadefinition'>  
   <xs:complexType>  
    <xs:sequence>  

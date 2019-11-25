@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 08/14/2019
 ms.author: pehecke
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8478d5f4a71eee57651ef21b8e324e4299f972fe
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749732"
 ---
 # <a name="do-not-use-parallel-execution-within-plug-ins-and-workflow-activities"></a>No utilizar ejecución en paralelo en complementos y actividades de flujo de trabajo
 

@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb265233e0d72e7350603b496f91e6d62e32002d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758520"
 ---
-
 # <a name="edit-a-canvas-app-embedded-on-a-model-driven-form"></a>Editar una aplicación de lienzo incrustada en un formulario basado en modelos.
 En este tema se explica cómo editar una aplicación de lienzo incrustada en un formulario basado en modelos.
 
@@ -34,7 +39,7 @@ Una opción alternativa es editar la aplicación de lienzo incrustada mediante e
 
 Imagine que desee editar una aplicación de lienzo incrustada en un formulario llamado Formulario principal de cuenta para la entidad Cuentas. Para ello, siga estos pasos: 
 
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  [Edición del formulario](create-and-edit-forms.md) llamado Formulario principal de cuenta para la entidad Cuentas. 
 3.  En la barra de comandos, seleccione **Cambiar a clásico** para abrir el formulario en el diseñador de formularios clásico.
 4.  En el diseñador de formularios clásico, seleccione el campo que está personalizado para mostrar la aplicación de lienzo incrustada.
@@ -43,7 +48,7 @@ Imagine que desee editar una aplicación de lienzo incrustada en un formulario l
 7.  En el cuadro de diálogo **Propiedades de campo**, en la lista de controles seleccione **Aplicación de lienzo**.
 8.  En la sección bajo la lista de controles, seleccione **Personalizar** para editar la aplicación de lienzo. Esto abre la aplicación de lienzo para editar, en PowerApps Studio, en una nueva pestaña.
        > [!NOTE]
-       > Si está bloqueada la apertura de PowerApps Studio debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de web.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
+       > Si abrir PowerApps Studio está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de make.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
 9. Cuando finalice de hacer cambios, seleccione la pestaña **Archivo** y, a continuación seleccione **Guardar**.
 10. Para que los cambios pasen a estar disponibles a los usuarios finales, seleccione **Publicar** y luego seleccione **Publicar esta versión**.
 

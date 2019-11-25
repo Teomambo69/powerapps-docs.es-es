@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0d6064cd-4d38-4fc2-a564-735cb453a4b2
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756056"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos
 
@@ -42,7 +48,7 @@ Puede establecer un tipo de control personalizado para que aparezca en el client
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Usar un control personalizado para agregar visualizaciones a un campo  
  Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un control personalizado deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un control personalizado o configurar un control personalizado para un campo personalizado.  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
      
 
@@ -68,12 +74,12 @@ Puede establecer un tipo de control personalizado para que aparezca en el client
     - **Tableta**. Para que el control personalizado esté disponible en tabletas en las que se ejecute Dynamics 365 for tablets, seleccione la opción **Tableta** situada junto al control.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Elegir las aplicaciones de cliente para ver el control personalizado](media/choose-client.png "Elegir las aplicaciones de cliente para ver el control personalizado")  
+   > ![Elija las aplicaciones del cliente para ver el control personalizado](media/choose-client.png "Elija las aplicaciones del cliente para ver el control personalizado")  
   
 7.  Seleccione en el icono de lápiz ![Icono de editar propiedades del control personalizado](media/ccf-pencil-icon.png "Icono de editar propiedades del control personalizado") situado junto a **Mín.**, **Máx.** y **Paso**, defina la opción de la propiedad tal y como se describe más abajo y, a continuación, seleccione **Aceptar**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Agregar propiedades de controles personalizados](media/ccf-add-properties.png "Agregar propiedades de controles personalizados")
+   > ![Agregar propiedades del control personalizado](media/ccf-add-properties.png "Agregar propiedades del control personalizado")
   
    - **Mín.** Establezca el valor mínimo aceptado. Puede enlazar el valor estático que especifique o enlazar el valor a un campo existente. En este ejemplo, **Enlazar a un valor estático** es **Divisa** y el valor mínimo que se puede introducir es *cero*.  
   

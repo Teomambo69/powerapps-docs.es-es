@@ -6,16 +6,21 @@ ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 11c94bdecd7a2032ea17066280f2abddd61528ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749667"
 ---
-
 # <a name="use-an-alternate-key-to-create-a-record"></a>Usar una clave alternativa para crear un registro
 
 Ahora puede utilizar claves alternativas para crear instancias de clases <xref:Microsoft.Xrm.Sdk.Entity> y <xref:Microsoft.Xrm.Sdk.EntityReference>. Este tema analiza los patrones de uso y las excepciones posibles que se pueden lanzar cuando se usan claves alternativas. Para comprender cómo definir las claves alternativas para una entidad, consulte [Definir claves alternativas para una entidad](define-alternate-keys-entity.md).  

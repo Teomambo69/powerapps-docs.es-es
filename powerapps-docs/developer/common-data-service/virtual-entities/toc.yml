@@ -1,9 +1,9 @@
 - name: Introducción a las entidades virtuales
   href: get-started-ve.md
   items:
-    - name: Consideraciones sobre las API
+    - name: Consideraciones sobre la API
       href: api-considerations-ve.md
-    - name: Proveedores de datos personalizados
+    - name: Personalice los proveedores de datos
       href: custom-ve-data-providers.md
-    - name: 'Ejemplo: Complemento del proveedor de datos de entidades virtuales genérico'
+    - name: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico'
       href: sample-generic-ve-plugin.md

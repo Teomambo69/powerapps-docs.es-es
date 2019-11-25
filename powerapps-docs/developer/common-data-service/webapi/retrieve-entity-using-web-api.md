@@ -1,5 +1,5 @@
 ---
-title: Recuperar una entidad utilizando la API web (Common Data Service)| Microsoft Docs
+title: Recuperar un registro de entidad con la API web (Common Data Service)| Microsoft Docs
 description: Lea cómo formar una solicitud GET mediante la API web de Common Data Service para recuperar datos de una entidad especificada como el recurso con un identificador único
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 767c0ed29643c51057d9f3d794136dc56915e161
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753680"
 ---
+# <a name="retrieve-an-entity-record-using-the-web-api"></a>Recuperar un registro de entidad usando la API web
 
-# <a name="retrieve-an-entity-using-the-web-api"></a>Recuperar una entidad usando API web
-
-Use una solicitud `GET` para recuperar los datos para una entidad especificada como recurso con un identificador único. Para recuperar una entidad también puede solicitar propiedades específicas y expandir las propiedades de navegación para devolver propiedades de entidades relacionadas.  
+Use una solicitud `GET` para recuperar los datos para una entidad especificada como recurso con un identificador único. Para recuperar un registro de entidad también puede solicitar propiedades específicas y expandir las propiedades de navegación para devolver propiedades de entidades relacionadas.  
 
 > [!NOTE]
 >  Para obtener información sobre cómo recuperar metadatos de entidades, consulte [Consultar metadatos con la API web](query-metadata-web-api.md).
@@ -39,7 +44,7 @@ Este ejemplo devuelve datos de una instancia de entidad de cuenta con el valor d
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)
 ```
 
-Para recuperar más de una entidad a la vez, consulte [Ejemplo de consulta básica](query-data-web-api.md#bkmk_basicQuery) en el tema [Consultar datos con la API web](query-data-web-api.md).
+Para recuperar más de un registro de entidad a la vez, consulte [Ejemplo de consulta básica](query-data-web-api.md#bkmk_basicQuery) en el tema [Consultar datos con la API web](query-data-web-api.md).
 
 > [!CAUTION]
 >  El ejemplo anterior devolverá todas las propiedades del registro de cuenta, algo que va en contra de las recomendaciones de rendimiento para recuperar datos. Este ejemplo sirve para ilustrar cómo puede realizar una recuperación básica de una instancia de entidad en Common Data Service. Puesto que todas las propiedades se devolvieron, no hemos incluido la información de respuesta para la solicitud en este ejemplo.
@@ -52,7 +57,7 @@ Para recuperar más de una entidad a la vez, consulte [Ejemplo de consulta bási
 
 Use la opción de consulta del sistema `$select` para limitar las propiedades devueltas incluyendo una lista separada por comas de nombres de propiedad. Esta es una práctica recomendada importante de rendimiento. Si las propiedades no se especifican utilizando `$select`, todas las propiedades se devolverán.  
 
-El ejemplo siguiente recupera las propiedades `name` y `revenue` para la entidad de cuenta con valor de clave principal igual a 00000000-0000-0000-0000-000000000001
+El ejemplo siguiente recupera propiedades `name` y `revenue` para la entidad de cuenta con el valor de clave principal igual a 00000000-0000-0000-0000-000000000001
 
 **Solicitud**
 ```http
@@ -94,6 +99,11 @@ Si una entidad tiene una clave alternativa definida, también puede usar la clav
 
 ```http
 GET [Organization URI]/api/data/v9.0/contacts(firstname='Joe',emailaddress1='abc@example.com')
+```
+Si la definición de clave alternativa contiene un campo de tipo búsqueda (por ejemplo, la propiedad primarycontactid para la entidad Cuenta), puede recuperar la cuenta mediante la [propiedad de consulta](/powerapps/developer/common-data-service/webapi/web-api-types-operations#lookup-properties) como se muestra aquí.
+
+```http
+GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0000-0000-0000-000000000001) 
 ```
 
 En cualquier momento que necesite identificar de forma exclusiva una entidad para recuperar, actualizar o eliminar, puede usar las claves alternativas configuradas para la entidad. De forma predeterminada, no hay claves alternativas configuradas para entidades. Las claves alternativas sólo estarán disponibles si la organización las agrega.
@@ -382,7 +392,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 ```
 
 > [!NOTE]
-> Este es un subconjunto de las opciones de consulta del sistema descritas en la sección 11.2.4.2 .1 de opciones de ampliación de [OData versión 4.0 parte 1, Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Las opciones `$skip`, `$count`, `$search`, `$expand` y `$levels` no se admiten para la API web.
+> Este es un subconjunto de las opciones de consulta del sistema descritas en la sección 11.2.4.2 .1 de opciones de ampliación de [OData versión 4.0 parte 1, Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Las opciones `$skip`, `$count`, `$search`, `$expand` y `$levels` no se admiten para la API web.
 
 <a name="bkmk_DetectIfChanged"></a>
 

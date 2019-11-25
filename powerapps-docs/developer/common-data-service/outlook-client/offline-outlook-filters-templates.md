@@ -1,6 +1,6 @@
 ---
-title: Filtros y plantillas de Outlook y sin conexión (Common Data Service) | Microsoft Docs
-description: Los datos que deben sincronizarse entre el servidor de Common Data Service y Dynamics 365 for Outlook se determinan con los filtros de datos para Office Outlook
+title: Plantillas y filtros de Outlook y sin conexión (Common Data Service)| Microsoft Docs
+description: Los datos que deben sincronizarse entre Common Data Service y Dynamics 365 for Outlook se determinan con los filtros de datos para Office Outlook
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,15 +10,21 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b68f2013e49ce85d78efe588a9308efa55b361c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749824"
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>Plantillas y filtros de Outlook y sin conexión
 
-Los filtros de datos para Office Outlook determinan qué datos deben sincronizarse entre Common Data Service y Dynamics 365 for Outlook. Common Data Service admite la capacidad de cambiar el filtro predeterminado mediante el SDK y de insertar estos cambios en cualquier usuario o en todos.  
-Puede escribir código que permite a los administradores crear y publicar plantillas de filtro. Esto permite que un administrador de Common Data Service cree los filtros comunes o deseables que pueden publicarse para que los usuarios sincronicen con el almacén de Outlook Store y con la base de datos sin conexión. Esto también proporciona una manera de personalizar la plantilla de filtro predeterminada que se aplicará a los usuarios que se agregan al sistema una vez que las plantillas se publiquen originalmente. El administrador también tiene la posibilidad de actualizar o eliminar los filtros del usuario después de que se publican.  
+Los filtros de datos para Office Outlook determinan qué datos se deben sincronizar entre el servidor de aplicaciones Common Data Service y Dynamics 365 for Outlook. Common Data Service es compatible con la capacidad de cambiar el filtro predeterminado mediante el SDK y de insertar estos cambios en cualquier usuario o en todos.  
+Puede escribir código que permite a los administradores crear y publicar plantillas de filtro. Esto permite que un administrador de Common Data Service cree los filtros comunes o deseables que pueden publicarse para que los usuarios sincronicen con la base de datos de Outlook Store y sin conexión. Esto también proporciona una manera de personalizar la plantilla de filtro predeterminada que se aplicará a los usuarios que se agregan al sistema una vez que las plantillas se publiquen originalmente. El administrador también tiene la posibilidad de actualizar o eliminar los filtros del usuario después de que se publican.  
 Para admitir estas personalizaciones, hay cuatro nuevos tipos de consulta para la consulta guardada (vista). Cuando cree un registro de consulta guardada (vista), especifique uno de estos tipos en el atributo de `SavedQuery.QueryType`, mediante la enumeración de <xref:Microsoft.Crm.Sdk.SavedQueryQueryType> . Solo son accesibles con los métodos descritos aquí; no existe una interfaz de usuario disponible para cambiarlos. Puede especificar distintos filtros para evitar sincronizar todo con Outlook para su teléfono móvil. Las plantillas de filtro son compatibles con la solución de modo que pueden exportarse junto con una solución.  
   
  La siguiente tabla muestra los nuevos tipos de la consulta usados para los filtros y las plantillas de filtro.  
@@ -26,7 +32,7 @@ Para admitir estas personalizaciones, hay cuatro nuevos tipos de consulta para l
 |Tipo de consulta|Descripción|  
 |----------------|-----------------|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters>|Define el subgrupo de una entidad que se sincronizará con Dynamics 365 for Outlook. El subgrupo de datos definido por estos filtros se sincronizará en las carpetas de Outlook como Contactos, Calendario, etc.|  
-|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>|Define el subconjunto de una entidad que se sincronizará con Dynamics 365 for Microsoft Office Outlook con acceso sin conexión. El subgrupo de datos definidos por estos filtros se sincronizará con la base de datos sin conexión.|  
+|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>|Define el subgrupo de una entidad que se sincronizará con Dynamics 365 for Microsoft Office Outlook con acceso sin conexión. El subgrupo de datos definidos por estos filtros se sincronizará con la base de datos sin conexión.|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookTemplate>|Define una plantilla de filtro que se aplica a los nuevos usuarios para la sincronización con Dynamics 365 for Outlook.|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineTemplate>|Define una plantilla de filtro que se aplica a los nuevos usuarios para la sincronización con Dynamics 365 for Microsoft Office Outlook con acceso sin conexión.|  
   
@@ -54,7 +60,7 @@ Puede restablecer los filtros de un usuario al valor predeterminado mediante <xr
   
 ### <a name="see-also"></a>Vea también
 
-[Ampliar Dynamics 365 para Outlook](extend-dynamics-365-outlook.md)<br />
+[Ampliar Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 [Referencia de la entidad SavedQuery](../reference/entities/savedquery.md)<br />
 [Ejemplo: Recuperar filtros de Outlook](sample-create-retrieve-outlook-filters.md)<br /> 
 <xref:Microsoft.Crm.Sdk.Messages.InstantiateFiltersRequest><br />

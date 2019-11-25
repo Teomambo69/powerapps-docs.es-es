@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90867101361c8f2ca5bf9ed29e8712890ba162c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749867"
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>Ejemplo: datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino
 
@@ -26,17 +32,17 @@ Este ejemplo requiere tres usuarios adicionales que no están presentes en el si
 **Nombre**: Nancy<br/>
 **Apellidos**: Anderson<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: nanderson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: nanderson@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: David<br/>
 **Apellido**: Bristol<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: dbristol@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: dbristol@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: Kevin<br/>
 **Apellidos**: Cook<br/>
 **Rol de seguridad**: SalesManager<br/>
-**UserName**: kcook@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: kcook@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

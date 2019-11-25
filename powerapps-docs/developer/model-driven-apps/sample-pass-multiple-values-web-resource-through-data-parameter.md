@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a4b4a6bf2da6cc6588a0fcf8b7523bae1c7da5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753588"
 ---
 # <a name="sample-pass-multiple-values-to-a--web-resource-through-the-data-parameter"></a>Ejemplo: pasar varios valores a un recurso web mediante el parámetro de datos
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-pass-multiple-values-web-resource-through-data-parameter -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-pass-multiple-values-web-resource-through-data-parameter -->
 
 Una página de recurso web (HTML) puede aceptar únicamente un solo parámetro personalizado denominado `data`. Para pasar más de un valor en el parámetro de datos, necesita codificar los parámetros y descodificar los parámetros de la página.  
   
@@ -177,7 +183,7 @@ Una página de recurso web (HTML) puede aceptar únicamente un solo parámetro p
      Abrir la página al pasar los parámetros codificados como el valor del parámetro de datos:  
   
     ```  
-    http://<server name>/WebResources/new_/ShowDataParams.htm?Data=first%3DFirst%20Value%26second%3DSecond%20Value%26third%3DThird%20Value  
+    https://<server name>/WebResources/new_/ShowDataParams.htm?data=first%3DFirst%20Value%26second%3DSecond%20Value%26third%3DThird%20Value  
     ```  
   
     > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Definir transiciones de modelos de estados personalizados (Common Data Service) | Microsoft Docs
+title: Definir transiciones de modelo de estado personalizadas (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre la definición de las transiciones de modelos de estado personalizados para la entidad Incidente (caso) o entidades personalizadas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a7172755f75a2d39ff1ad2b0bf7dcbfb88bdf72d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752992"
 ---
 # <a name="define-custom-state-model-transitions"></a>Definir transiciones de modelo de estado personalizadas
 
@@ -51,12 +57,12 @@ Para ver los metadatos de las entidades de su organización, instale la solució
 <a name="BKMK_DetectValidStatusTransitions"></a>   
 
 ## <a name="detect-valid-status-transitions"></a>Detectar transiciones de estado válidas  
- Puede modificar el atributo `statuscode` para definir qué otras opciones de estado representan transiciones válidas a partir del estado actual. Para obtener instrucciones, consulte el tema del Manual de personalización: [Definir las transiciones de razón para el estado](http://go.microsoft.com/fwlink/p/?LinkId=393657)  
+ Puede modificar el atributo `statuscode` para definir qué otras opciones de estado representan transiciones válidas a partir del estado actual. Para obtener instrucciones, consulte el tema del Manual de personalización: [Definir las transiciones de razón para el estado](https://go.microsoft.com/fwlink/p/?LinkId=393657)  
   
- Cuando se apliquen transaciones de estado personalizadas a una entidad, la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.EnforceStateTransitions> la propiedad será `true`. Además, cada<xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata> uno en el<xref:Microsoft.Xrm.Sdk.Metadata.StatusAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata.Options> la colección tendrá una nueva<xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata.TransitionData> propiedad. Esta propiedad contendrá un valor de cadena que representa un documento XML. Este documento contiene la definición de las transiciones permitidas. Por ejemplo, la opción predeterminada del atributo `Incident` (**Caso**) `StatusCode` puede presentar el valor `TransitionData` siguiente.  
+ Cuando se apliquen transacciones de estado personalizadas a una entidad, la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.EnforceStateTransitions> la propiedad será `true`. Además, cada<xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata> uno en el<xref:Microsoft.Xrm.Sdk.Metadata.StatusAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata.Options> la colección tendrá una nueva<xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata.TransitionData> propiedad. Esta propiedad contendrá un valor de cadena que representa un documento XML. Este documento contiene la definición de las transiciones permitidas. Por ejemplo, la opción predeterminada del atributo `Incident` (**Caso**) `StatusCode` puede presentar el valor `TransitionData` siguiente.  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6" />  
 <allowedtransition sourcestatusid="1" tostatusid="1000" />   
 <allowedtransition sourcestatusid="1" tostatusid="2000" />  
@@ -68,7 +74,7 @@ Para ver los metadatos de las entidades de su organización, instale la solució
 >  Cuando se recuperan estos datos en código no administrado del servicio web, por ejemplo, cuando se utiliza JavaScript, se omitirá y aparecerá como el siguiente ejemplo.  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6">  
 <allowedtransition sourcestatusid="1" tostatusid="1000">  
 <allowedtransition sourcestatusid="1" tostatusid="2000">  
@@ -82,4 +88,4 @@ Para ver los metadatos de las entidades de su organización, instale la solució
  [Ejemplo: recuperar transiciones de estado válidas](org-service/samples/retrieve-valid-status-transitions.md)   
  [Estado y razón para el estado de los registros](/dynamics365/customer-engagement/developer/introduction-entities#bkmk_RecordStateandStatus)   
  [Recuperar y detectar cambios en metadatos](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)   
- [Definir transiciones de razón para el estado](http://go.microsoft.com/fwlink/p/?LinkId=393657)
+ [Definir transiciones de razón para el estado](https://go.microsoft.com/fwlink/p/?LinkId=393657)

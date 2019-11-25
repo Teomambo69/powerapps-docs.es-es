@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752258"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Uso de una puerta de enlace de datos local en flujos de datos de Power Platform
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -46,7 +52,7 @@ Con una puerta de enlace, puede conectarse a los datos locales a través de esta
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Una cuenta de PowerApps. ¿No tiene una? [Suscribirse durante 30 días gratis](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps).
+-   Una cuenta de PowerApps. ¿No tiene una? [Suscribirse durante 30 días gratis](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Se requieren permisos administrativos sobre una puerta de enlace. Estos permisos se proporcionan de forma predeterminada para las puertas de enlace que instale. Los administradores pueden conceder permisos a otros usuarios para puertas de enlace. 
 
@@ -55,11 +61,11 @@ Con una puerta de enlace, puede conectarse a los datos locales a través de esta
 -   Las puertas de enlace y las conexiones locales se pueden crear y usar solo en el entorno predeterminado del usuario. Más información: [Trabajar con entornos y Microsoft PowerApps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Instalar una puerta de enlace
-1.  En el panel de navegación de la izquierda de [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Puertas de enlace**.
+1.  En el panel de navegación de la izquierda de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Puertas de enlace**.
 
     ![Puertas de enlace en barra de navegación izquierda](media/nav-pane-gateways.png)
 
-2.  Seleccione una puerta de enlace de la lista. Si no tiene permisos administrativos para una puerta de enlace, seleccione [Instale ahora una puerta de enlace](http://go.microsoft.com/fwlink/?LinkID=820931) y, a continuación siga las indicaciones del asistente.
+2.  Seleccione una puerta de enlace de la lista. Si no tiene permisos administrativos para una puerta de enlace, seleccione [Instale ahora una puerta de enlace](https://go.microsoft.com/fwlink/?LinkID=820931) y, a continuación siga las indicaciones del asistente.
 
      ![Instalación de puertas de enlace](media/install-gateway-now.png)
 
@@ -81,7 +87,7 @@ Puede cambiar la puerta de enlace de empresa usada para un flujo de datos determ
 
 
 ## <a name="view-and-manage-gateway-permissions"></a>Ver y administrar permisos de puerta de enlace
-1.  En el panel de navegación de la izquierda de [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Puertas de enlace** y seleccione la puerta de enlace que desee.
+1.  En el panel de navegación de la izquierda de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Puertas de enlace** y seleccione la puerta de enlace que desee.
 
 2.  Para agregar un usuario a una puerta de enlace, seleccione **Usuarios**, especifique un usuario o un grupo, y después especifique un nivel de permisos:
 

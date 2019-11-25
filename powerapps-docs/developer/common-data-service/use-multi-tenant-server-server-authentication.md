@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753768"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Usar autenticación multiempresa entre servidores
 
@@ -84,7 +90,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
  Cuando se configura un proyecto con estas opciones se configurará para usar el software intermedio y el andamio de OWIN para una aplicación básica que admita este escenario. Con unas modificaciones básicas puede ser adaptado para funcionar con Common Data Service. 
   
- En el proceso de crear y registrar la aplicación para desarrollo probablemente usará `http://localhost` como valores de **Dirección URL de inicio de sesión** y **Dirección URL de respuesta** para que pueda probar y depurar su aplicación localmente antes de publicarla. Necesitará cambiar estos valores antes de publicar la aplicación.  
+ En el proceso de crear y registrar la aplicación para desarrollo probablemente usará `https://localhost` como valores de **Dirección URL de inicio de sesión** y **Dirección URL de respuesta** para que pueda probar y depurar su aplicación localmente antes de publicarla. Necesitará cambiar estos valores antes de publicar la aplicación.  
   
  Cuando registre la aplicación debe generar una clave, también denominada `ClientSecret`. Estas claves se pueden configurar para una duración de 1 ó 2 años. Como host de la aplicación debe tratar este valor como una contraseña y es su responsabilidad administrar la renovación de las claves antes de que expiren. La conviene utilizar Key Vault. Más información: [https://azure.microsoft.com/services/key-vault/](https://azure.microsoft.com/services/key-vault/)  
   

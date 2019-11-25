@@ -4,22 +4,25 @@ description: Obtenga información sobre cómo definir acciones que se deben real
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
-  - powerapps
-ms.custom:
-  - ''
+- powerapps
 ms.topic: article
 ms.assetid: fbb7ff68-e4be-d8c2-069f-6a4a69665b56
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef25670c338838d70257a394b5701f3132cb2ac7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749909"
 ---
-
 # <a name="define-ribbon-actions"></a>Definir acciones de la cinta de opciones
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->

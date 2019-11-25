@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757552"
 ---
-
 # <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 Los datos de una entidad suelen estar relacionados con los datos de otra entidad. Por ejemplo, podría tener una entidad **Profesores** y una entidad **Clase**, y la entidad **Clase** podría tener una relación de búsqueda con la entidad **Profesores** para indicar qué profesor da la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Se le suele denominar campo de búsqueda.
 
@@ -31,7 +36,7 @@ Además, puede establecer comportamientos en cascada avanzados en relaciones de 
 
 Para agregar una relación de búsqueda a una entidad, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desee crear una relación.
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
@@ -40,22 +45,22 @@ Para agregar una relación de búsqueda a una entidad, cree una relación en la 
 4. Haga clic en **Agregar relación**, se abrirá un nuevo panel para que elija la entidad con la que desea crear una relación. Seleccione la entidad en la lista desplegable **Entidad relacionada**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Relación de varios a uno](./media/data-platform-cds-newrelationship/manytoone-1.png "Relación de varios a uno")
+    > ![Relación varios a uno](./media/data-platform-cds-newrelationship/manytoone-1.png "Relación varios a uno")
 
 5. Después de seleccionar una entidad, los campos de búsqueda se mostrarán en la entidad principal y adoptarán de forma predeterminada el nombre de la entidad (en este ejemplo, Clase), aunque puede cambiarlo si es necesario.
 
-    ![Relación de varios a uno](./media/data-platform-cds-newrelationship/manytoone-2.png "Relación de varios a uno")
+    ![Relación varios a uno](./media/data-platform-cds-newrelationship/manytoone-2.png "Relación varios a uno")
 
 6. Haga clic en **Hecho** para agregar la relación a la entidad y, a continuación, haga clic en **Guardar entidad**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Relación de varios a uno](./media/data-platform-cds-newrelationship/manytoone-3.png "Relación de varios a uno")
+    > ![Relación varios a uno](./media/data-platform-cds-newrelationship/manytoone-3.png "Relación varios a uno")
 
 ## <a name="add-a-one-to-many-relationship"></a>Agregar una relación de uno a varios
 
 Para agregar una relación de uno a varios, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desee crear una relación.
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
@@ -63,7 +68,7 @@ Para agregar una relación de uno a varios, cree una relación en la pestaña **
 
 4. Haga clic en la flecha abajo, a la derecha de **Agregar relación**; se le ofrecerá la opción de ambos tipos de relaciones. Haga clic en **Uno a varios**, se abrirá un nuevo panel para que elija la entidad con la que desea crear una relación. Seleccione la entidad en la lista desplegable **Entidad relacionada**.
     > [!div class="mx-imgBorder"] 
-    > ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-1.png "Relación de uno a varios")
+    > ![Relación uno a varios](./media/data-platform-cds-newrelationship/onetomany-1.png "Relación uno a varios")
 
 5. Después de seleccionar una entidad, los campos de búsqueda se mostrarán en la entidad principal y adoptarán de forma predeterminada el nombre de las entidades (en este ejemplo, Clase), aunque puede cambiarlo si es necesario.
 
@@ -71,17 +76,17 @@ Para agregar una relación de uno a varios, cree una relación en la pestaña **
     > En el caso de relaciones de uno a varios, el campo de búsqueda se creará en la entidad relacionada, no en la entidad seleccionada actualmente. Si necesita que la búsqueda esté en la entidad actual, cree una relación de varios a uno.
 
     > [!div class="mx-imgBorder"] 
-    > ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-2.png "Relación de uno a varios")
+    > ![Relación uno a varios](./media/data-platform-cds-newrelationship/onetomany-2.png "Relación uno a varios")
 
 6. Haga clic en **Hecho** para agregar la relación a la entidad y, a continuación, haga clic en **Guardar entidad**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Relación de uno a varios](./media/data-platform-cds-newrelationship/onetomany-3.png "Relación de uno a varios")
+    > ![Relación uno a varios](./media/data-platform-cds-newrelationship/onetomany-3.png "Relación uno a varios")
 
 ## <a name="add-a-many-to-many-relationship"></a>Agregar una relación de varios a varios
 Para agregar una relación de varios a varios, cree una relación en la pestaña **Relaciones** y especifique la entidad con la que desee crear una relación.
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
@@ -134,6 +139,6 @@ Si [crea una aplicación automáticamente](../canvas-apps/data-platform-create-a
 Use la función **Relacionar** para vincular dos registros a través de una relación de uno a varios o de varios a varios en Common Data Service. Más información: [Funciones Relacionar y Cancelar la relación en PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
-* [Generar una aplicación usando una base de datos de Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Generar una aplicación mediante una base de datos de Common Data Service](../canvas-apps/data-platform-create-app.md)
 * [Crear una aplicación desde cero usando una base de datos de Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

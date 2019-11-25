@@ -1,5 +1,5 @@
 ---
-title: Utilizar mensajes con el método ExecuteCrmOrganizationRequest (Common Data Service)| Microsoft Docs
+title: Usar mensajes con el método ExecuteCrmOrganizationRequest (Common Data Service)| Microsoft Docs
 description: Obtenga más información sobre cómo usar mensajes con el método ExecuteCrmOrganizationRequest. Los ejemplos muestran cómo ejecutar los mensajes CreateRequest y RetrieveMultipleRequest mediante el método CrmServiceClient.String).
 ms.custom: ''
 ms.date: 03/27/2019
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1ba60f67-522d-4540-a6f9-0787d7074a79
 caps.latest.revision: 17
 author: MattB-msft
 ms.author: kvivek
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 02930412dfb6eb3825a9606befea3c24624914e2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749643"
 ---
 # <a name="use-messages-with-the-executecrmorganizationrequest-method"></a>Utilizar mensajes con el método ExecuteCrmOrganizationRequest
   
@@ -97,5 +103,5 @@ else
   
 ### <a name="see-also"></a>Vea también  
 
-[Uso de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)
+[Usar útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Usar la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: Importar o exportar datos desde Common Data Service
+title: Importar o exportar datos de Common Data Service
 description: Importación y exportación masivas de datos desde archivos de Excel o CSV a las entidades de Common Data Service usando las funcionalidades Obtener datos de Excel y Exportar datos
 author: sabinn-msft
 ms.service: powerapps
@@ -8,12 +8,18 @@ ms.component: cds
 ms.date: 05/14/2018
 ms.author: sabinn
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8aad3e440e93becd4741223f1450dd8e3b34921a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755595"
 ---
-# <a name="import-or-export-data-from-common-data-service"></a>Importar o exportar datos desde Common Data Service
+# <a name="import-or-export-data-from-common-data-service"></a>Importar o exportar datos de Common Data Service
 
 Para importar y exportar datos de forma masiva desde archivos de Microsoft Excel o CSV, use las funciones Obtener datos de archivo de Excel y Exportar datos para entornos actualizados de Common Data Service.
 
@@ -34,7 +40,7 @@ Cada entidad tiene campos necesarios que deben existir en el archivo de entrada.
     - Copie los datos de su archivo de Excel o CSV en la plantilla que acaba de crear.
 
 1. Importe el archivo.  
-    a. En [powerapps.com](https://web.powerapps.com/), expanda la sección **Datos**. Seleccione **Entidades** en el panel de navegación izquierdo.  
+    a. En [powerapps.com](https://make.powerapps.com/), expanda la sección **Datos**. Seleccione **Entidades** en el panel de navegación izquierdo.  
     b. Seleccione la entidad a la que desea importar los datos.  
     c. Seleccione los puntos suspensivos o el menú de la parte superior. Seleccione **Obtener datos**. Seleccione **Obtener datos de Excel**.  
 
@@ -66,7 +72,7 @@ Cada entidad tiene campos necesarios que deben existir en el archivo de entrada.
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>Opción 2: Importar incorporando su propio archivo de origen
 
-Si es un usuario avanzado y conoce los campos necesarios para una determinada entidad par Common Data Service, defina su propio archivo de origen de Excel o CSV. Siga los pasos de **Importar el archivo**.
+Si es un usuario avanzado y conoce los campos necesarios para una determinada entidad para Common Data Service, defina su propio archivo de origen de Excel o CSV. Siga los pasos de **Importar el archivo**.
 
 ## <a name="navigate-mapping-errors"></a>Desplazarse por los errores de la asignación
 
@@ -92,7 +98,7 @@ Si obtiene errores de asignación después de cargar el archivo, seleccione **Es
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Asegurar la univocidad al importar datos en una entidad de Excel o de CSV
 
-Las entidades de Common Data Service usan una clave principal para identificar de forma exclusiva los registros dentro de una tabla de entidades de Common Data Service. La clave principal de una entidad de Common Data Service es un identificador único global (GUID). Forma la base predeterminada para la identificación de registro. Las operaciones de datos, como la importación de datos en entidades de Common Data Service, exponen las claves principales predeterminadas.
+Las entidades de Common Data Service usan una clave principal para identificar los registros de forma única en una tabla de entidades de Common Data Service. La clave principal de una entidad de Common Data Service es un identificador único global (GUID). Forma la base predeterminada para la identificación de registro. Las operaciones de datos, como la importación de datos en entidades de Common Data Service, exponen las claves principales predeterminadas.
 
 Ejemplo:  
 La clave principal de una entidad **Cuenta** es **accountid**.
@@ -100,10 +106,10 @@ La clave principal de una entidad **Cuenta** es **accountid**.
    > [!div class="mx-imgBorder"] 
    > ![Archivo de exportación de muestra de una entidad **Cuenta** que muestra **accountid** como clave principal](./media/data-platform-import-export/export-pk.png)
 
-A veces, una clave principal puede que no funcione cuando se integran datos desde un origen externo. Use Common Data Service para definir claves alternativas que identifiquen de forma exclusiva un registro en lugar de la clave principal.
+A veces, una clave principal puede que no funcione cuando se integran datos desde un origen externo. Use Common Data Service para definir claves alternativa que identifican de manera única un registro en lugar de la clave principal.
 
 Ejemplo:  
-Para una entidad **Cuenta**, puede establecer **transactioncurrencyid** como clave alternativa usando una identificación basada en claves naturales. Por ejemplo, use **Dólar americano** en lugar del valor de GUID **88c6c893-5b45-e811-a953-000d3a33bcb9** mostrado anteriormente. También puede elegir **símbolo de moneda** o **nombre de la moneda** como claves.
+Para una entidad **Cuenta**, puede establecer **transactioncurrencyid** como clave alternativa usando una identificación basada en claves naturales. Por ejemplo, use **Dólar de EE. UU.** en lugar del valor de GUID **88c6c893-5b45-e811-a953-000d3a33bcb9** que se muestra anteriormente. También puede elegir **símbolo de moneda** o **nombre de la moneda** como claves.
 
    > [!div class="mx-imgBorder"] 
    > ![Ejemplo de crear una clave alternativa en la entidad **Moneda**](./media/data-platform-import-export/create-ak.png)
@@ -117,7 +123,7 @@ Los usuarios pueden seguir usando claves principales como identificadores despu�
 
 Puede realizar una exportación de datos única desde una entidad estándar o entidad personalizada. También puede exportar datos desde más de una entidad a la vez. Si exporta datos de más de una entidad, cada entidad se exporta en su propio archivo CSV de Microsoft.
 
-1. En [powerapps.com](https://web.powerapps.com/), expanda la sección **Datos**. Seleccione **Entidades** en el panel de navegación izquierdo.
+1. En [powerapps.com](https://make.powerapps.com/), expanda la sección **Datos**. Seleccione **Entidades** en el panel de navegación izquierdo.
 1. Seleccione la entidad de la que desea importar los datos.
 1. Seleccione los puntos suspensivos o el menú de la parte superior. Seleccione **Exportar**. Seleccione **Datos**.
 

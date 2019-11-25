@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4b4c0145cae08ecc144c48eb4dfe1d0e32ea22d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753536"
 ---
 # <a name="stylesheet-xsl-web-resources"></a>Recursos web de hoja de estilo (XSL)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
 
 
 Use recursos web de hoja de estilo (XSL) para transformar los datos XML.  
@@ -29,7 +35,7 @@ Use recursos web de hoja de estilo (XSL) para transformar los datos XML.
   
  **Recurso web HTML:** sample_/ImportWebResources/Content/ShowData.htm  
  ```html  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
 <html>  
 <head>  
  <title></title>  
@@ -46,7 +52,7 @@ Use recursos web de hoja de estilo (XSL) para transformar los datos XML.
  ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xsl:stylesheet version="1.0"  
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+                xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 exclude-result-prefixes="msxsl"  
 >  
@@ -142,7 +148,7 @@ SDK.ImportWebResources = {
 }  
 ```  
   
- **Recurso web CSS:** sample_/ImportWebResources/CSS/Styles.css  
+ **Recurso web CSS**: sample_/ImportWebResources/CSS/Styles.css  
  ```css
 body  
 {  

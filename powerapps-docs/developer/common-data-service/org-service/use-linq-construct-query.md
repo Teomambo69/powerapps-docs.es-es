@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 03728912350057f8db3cd1ed4c59a97f66362507
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752948"
 ---
 # <a name="use-linq-to-construct-a-query"></a>Usar LINQ para crear una consulta
 
@@ -153,4 +159,4 @@ select new Contact
  [Ejemplo: ejemplos de consulta LINQ](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
  [Crear consultas con LINQ (consulta integrada del lenguaje .NET)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
  [Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
- [Blog: Controlador LINQPad 4 para API REST/Web de Dynamics CRM está disponible en CodePlex](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)
+ [Blog: Controlador LINQPad 4 para API REST/Web de Dynamics CRM está disponible en CodePlex](https://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

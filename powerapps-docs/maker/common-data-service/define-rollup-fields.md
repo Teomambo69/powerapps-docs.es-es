@@ -1,29 +1,34 @@
 ---
-title: Defina los campos consolidados con PowerApps | MicrosoftDocs
+title: Definir campos consolidados con PowerApps | MicrosoftDocs
 description: Aprenda a definir campos consolidados
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758652"
 ---
-
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definir campos consolidados que agregan valores
 
 Los campos consolidados ayudan a los usuarios a obtener ideas sobre los datos supervisando indicadores clave de negocio. Un campo consolidado contiene un valor agregado calculado a través de los registros relacionados con un registro específico. Esto incluye entidades normales y entidades de actividad, como correos electrónicos y citas.
@@ -75,7 +80,7 @@ Las consolidaciones son calculadas por los trabajos del sistema programados que 
 
 Para ver los trabajos consolidados:
 
-1. Mientras visualiza la **Solución predeterminada de Common Data Services**, edite la dirección URL, quitando todo lo que hay después de `dynamics.com` y actualizado la página.
+1. Mientras visualiza la **Solución predeterminada de Common Data Service**, edite la dirección URL, quitando todo lo que hay después de `dynamics.com` y actualizado la página.
 2. En el área **Configuración** seleccione **Sistema** > **Trabajos del sistema**.<br />![Navegar a trabajos del sistema](media/navigate-system-jobs.png)
 1. En el selector de vistas, elija **Trabajos del sistema periódicos**.
 2. Para buscar rápidamente un trabajo relevante, puede filtrar por el tipo de trabajo del sistema: **Cálculo masivo de campos consolidados** o **Calcular campo consolidado**.
@@ -212,5 +217,5 @@ Algunos formularios de entidades, como Cuenta o Contacto, contienen las cuadríc
 [Definir campos calculados](define-calculated-fields.md)<br />
 [Comportamiento y formato del campo de fecha y hora](behavior-format-date-time-field.md)<br />
 [Definir y consultar datos relacionados jerárquicamente](define-query-hierarchical-data.md)<br />
-[Vídeo: Campos consolidados y calculados](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[Vídeo: Uso de Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[Vídeo: Campos consolidados y calculados](https://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
+[Vídeo: Usar Power BI](https://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)

@@ -9,12 +9,17 @@ ms.topic: tutorial
 ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754847"
 ---
-
 # <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Crear una entidad personalizada que tenga componentes en PowerApps
 
 Con in PowerApps puede personalizar su aplicación para que se ajuste más al sector, la nomenclatura y los procesos de negocio únicos de la organización. El desarrollo de aplicaciones de PowerApps incluye agregar entidades predefinidas estándar o crear entidades personalizadas. Una entidad define la información a la que desea realizar seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. 
@@ -31,7 +36,7 @@ El tema seguirá a la compañía, Contoso, que es un negocio de cuidado de anima
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si aún no tiene una cuenta de PowerApps, seleccione el vínculo **Introducción gratuita** de [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si aún no tiene una cuenta de PowerApps, seleccione el vínculo **Introducción gratuita** de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Crear una entidad personalizada
 

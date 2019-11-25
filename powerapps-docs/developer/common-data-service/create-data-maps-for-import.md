@@ -1,5 +1,5 @@
 ---
-title: Crear asignaciones de datos para importar (Common Data Service) | Microsoft Docs
+title: Creación de asignaciones de datos para importar (Common Data Service) | Microsoft Docs
 description: Las asignaciones de datos son necesarias para importar datos y contienen asignaciones entre los datos incluidos en el archivo de origen y los correspondientes atributos de entidad.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,18 +10,24 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1137ee735e36a6ab36a4f3e9eed9a9abb48c6464
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753016"
 ---
 # <a name="create-data-maps-for-import"></a>Crear asignaciones de datos para importar
 
-Para importar datos en Common Data Service, debe proporcionar las asignaciones de datos adecuadas.  
+Para importar datos a Common Data Service, debe proporcionar las asignaciones de datos adecuadas.  
   
- Puede descargar ejemplos de asignaciones de datos en [Descargas de Microsoft: DataImportMaps.zip](http://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip).
+ Puede descargar ejemplos de asignaciones de datos en [Descargas de Microsoft: DataImportMaps.zip](https://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip).
   
- Se utilizan asignaciones de datos para asignar los datos contenidos en el archivo de origen a los atributos de entidad de Common Data Service. Debe asignar cada columna del archivo de origen a un atributo apropiado. Los datos de las columnas o los archivos sin asignar no se importan durante la importación de datos.  
+ Se utilizan asignaciones de datos para asignar los datos contenidos en el archivo de origen a los atributos de entidad Common Data Service. Debe asignar cada columna del archivo de origen a un atributo apropiado. Los datos de las columnas o los archivos sin asignar no se importan durante la importación de datos.  
   
  La asignación de datos se representa con la entidad de asignación de importación (asignación de datos). Puede crear una nueva asignación mediante el mensaje de <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> o actualizar una asignación existente mediante el método <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>. . La asignación tiene un nombre único que se incluye en el atributo de `ImportMap.Name`. Puede especificar el nombre del origen de importación para el que la asignación de datos se crea mediante el atributo de `ImportMap.Source`.  
   
@@ -41,9 +47,9 @@ Para importar datos en Common Data Service, debe proporcionar las asignaciones d
   
  **Asignación de búsquedas**  
   
- Asigna un valor de consulta de un archivo de origen a un atributo de Common Data Service del tipo <xref:Microsoft.Xrm.Sdk.EntityReference>. Para asignaciones de búsqueda, use la entidad de asignación de búsqueda (`LookupMapping`).  
+ Asigna un valor de búsqueda de un archivo de origen a un atributo de Common Data Service del tipo <xref:Microsoft.Xrm.Sdk.EntityReference>. Para asignaciones de búsqueda, use la entidad de asignación de búsqueda (`LookupMapping`).  
   
- Si el valor especificado en el archivo de origen hace referencia a una entidad, debe proporcionar una asignación de búsqueda para este valor. Use el atributo `LookupMapping.LookupSourceCode` para especificar si buscar la entidad a la que se hace referencia en el archivo de origen o en Common Data Service. Si usa enlaces en tiempo de compilación, puede usar la enumeración de `LookupSourceType` para establecer los valores de búsqueda. Para buscar en el archivo de origen, use el valor de `LookupSourceType.Source`. Para buscar en Common Data Service, use el valor `LookupSourceType.System`. Para obtener una lista de valores de LookupSourceCode, consulte los valores de lista desplegable para esta entidad. Para ver los metadatos de las entidades de su organización, instale la solución Explorador de metadatos que se describe en [Exploración de los metadatos de su organización](/dynamics365/customer-engagement/developer/browse-your-metadata). También puede examinar la documentación de referencia para las entidades en la [Referencia de entidad](reference/about-entity-reference.md).  Puede proporcionar varias asignaciones de búsqueda. El trabajo de transformación asíncrona procesa todas las asignaciones disponibles. Encuentra los registros de referencia y actualiza la tabla de análisis con los identificadores únicos de registro. Para obtener más información, vea [Ejecutar importación de datos](run-data-import.md).  
+ Si el valor especificado en el archivo de origen hace referencia a una entidad, debe proporcionar una asignación de búsqueda para este valor. Use el atributo de `LookupMapping.LookupSourceCode` para especificar si buscar la entidad a la que se hace referencia en el archivo de origen o en Common Data Service. Si usa enlaces en tiempo de compilación, puede usar la enumeración de `LookupSourceType` para establecer los valores de búsqueda. Para buscar en el archivo de origen, use el valor de `LookupSourceType.Source`. Para buscar en Common Data Service, use el valor de `LookupSourceType.System`. Para obtener una lista de valores de LookupSourceCode, consulte los valores de lista desplegable para esta entidad. Para ver los metadatos de las entidades de su organización, instale la solución Explorador de metadatos que se describe en [Exploración de los metadatos de su organización](/dynamics365/customer-engagement/developer/browse-your-metadata). También puede examinar la documentación de referencia para las entidades en la [Referencia de entidad](reference/about-entity-reference.md).  Puede proporcionar varias asignaciones de búsqueda. El trabajo de transformación asíncrona procesa todas las asignaciones disponibles. Encuentra los registros de referencia y actualiza la tabla de análisis con los identificadores únicos de registro. Para obtener más información, vea [Ejecutar importación de datos](run-data-import.md).  
   
 <a name="BKMK_Owner"></a>   
 ## <a name="owner-mapping"></a>Asignación de propietario  
@@ -53,7 +59,7 @@ Para importar datos en Common Data Service, debe proporcionar las asignaciones d
 ## <a name="notes-and-attachments"></a>Notas y datos adjuntos.  
  La asignación de notas y datos adjuntos se controla de forma diferente de otras entidades. Las notas y datos adjuntos se usan para anexar información adicional a un registro en Common Data Service. Las notas se almacenan como texto y los datos adjuntos se almacenan como archivos en la base de datos de Common Data Service.  
   
- Para crear una nota en Common Data Service, establezca el atributo `Annotation.IsDocument` de la entidad de anotación (nota) en `false`. Para crear datos adjuntos, establezca `IsDocument` en `true`.  
+ Para crear una nota en Common Data Service, establezca el atributo de `Annotation.IsDocument` de la entidad de anotación (nota) en `false`. Para crear datos adjuntos, establezca `IsDocument` en `true`.  
   
  Use la siguiente configuración para asignar notas y datos adjuntos:  
   
@@ -70,11 +76,11 @@ Para importar datos en Common Data Service, debe proporcionar las asignaciones d
   Si no ofrece la asignación de una entidad de anotación (nota), el trabajo de importación genera una asignación predeterminada para la nota.  
   
 > [!NOTE]
-> El tamaño máximo de los archivos que se pueden cargar se determina mediante la propiedad **Organization.MaxUploadFileSize**. Esta propiedad se define en la pestaña **Correo electrónico** de **Configuración del sistema** en la aplicación de Common Data Service. Esta configuración limita el tamaño de los archivos que pueden adjuntarse a los mensajes de correo electrónico, notas y recursos web. La configuración predeterminada es 5 MB.  No obstante, el tamaño de los datos adjuntos no puede exceder el tamaño máximo solicitado (el valor predeterminado es 16 MB). Para que el cambio se aplique, restablezca Internet Information Services. Para ello, haga clic en **Inicio**, **Ejecutar**, escriba `iisreset` y, a continuación, haga clic en **Aceptar**.  
+> El tamaño máximo de los archivos que se pueden cargar se determina mediante la propiedad **Organization.MaxUploadFileSize**. Esta propiedad se define en la pestaña **Correo electrónico** de **Configuración del sistema** en la aplicación Common Data Service. Esta configuración limita el tamaño de los archivos que pueden adjuntarse a los mensajes de correo electrónico, notas y recursos web. La configuración predeterminada es 5 MB.  No obstante, el tamaño de los datos adjuntos no puede exceder el tamaño máximo solicitado (el valor predeterminado es 16 MB). Para que el cambio se aplique, restablezca Internet Information Services. Para ello, haga clic en **Inicio**, **Ejecutar**, escriba `iisreset` y, a continuación, haga clic en **Aceptar**.  
   
 <a name="BKMK_ImportExport"></a>   
 ## <a name="import-and-export-data-maps"></a>Asignaciones de datos de importación y exportación  
- Puede exportar una asignación de datos existente a un archivo XML e importar asignaciones de datos XML a Common Data Service. Para exportar una asignación de datos de Common Data Service, use el mensaje <xref:Microsoft.Crm.Sdk.Messages.ExportMappingsImportMapRequest>. Para importar asignaciones de datos XML y crear una asignación de datos en Common Data Service, use el mensaje de <xref:Microsoft.Crm.Sdk.Messages.ImportMappingsImportMapRequest>.  
+ Puede exportar una asignación de datos existente a un archivo XML e importar asignaciones de datos XML a Common Data Service. Para exportar una asignación de datos de Common Data Service, use el mensaje de <xref:Microsoft.Crm.Sdk.Messages.ExportMappingsImportMapRequest>. Para importar asignaciones de datos XML y crear una asignación de datos en Common Data Service, use el mensaje de <xref:Microsoft.Crm.Sdk.Messages.ImportMappingsImportMapRequest>.  
   
 ### <a name="see-also"></a>Vea también
 

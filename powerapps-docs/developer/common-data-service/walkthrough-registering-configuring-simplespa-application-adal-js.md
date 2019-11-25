@@ -4,21 +4,24 @@ description: En este tutorial se describe el proceso para registrar y configurar
 keywords: ''
 ms.date: 08/26/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
 ms.author: nabuthuk
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d71e39bc36d948894947bf7a665f6c0b3ead2ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753760"
 ---
-
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 
 En este tutorial se describe el proceso para registrar y configurar la Aplicación de una sola página (SPA) más sencilla para tener acceso a los datos en Common Data Service usando adal.js y Uso compartido de recursos de origen cruzado(CORS). Más información: [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página a Common Data Service](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
@@ -81,7 +84,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
       var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your Common Data Service organization  
       var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
       var clientId = "[client id]"; //The ClientId you got when you registered the application  
-      var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
+      var pageUrl = "https://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
       var user, authContext, message, errorMessage, loginButton, logoutButton, getAccountsButton, accountsTable, accountsTableBody;  
   
@@ -272,7 +275,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
 3. Haga clic con el botón secundario en el archivo SimpleSPA.html y seleccione **Establecer como página de inicio** para establecer esta página como la página de inicio para el proyecto.  
   
-4. En las propiedades del proyecto, seleccione **Web** y en **Servidores** anote la **Dirección URL del proyecto**. Debe ser algo como `http://localhost:62111/`. Observe el número de puerto generado. Necesitará esto en el siguiente paso.  
+4. En las propiedades del proyecto, seleccione **Web** y en **Servidores** anote la **Dirección URL del proyecto**. Debe ser algo como `https://localhost:62111/`. Observe el número de puerto generado. Necesitará esto en el siguiente paso.  
   
 5. En la página SimpleSPA.html, busque las siguientes variables de configuración y establézcalas en consecuencia. Podrá establecer el `clientId` después de completar la parte siguiente de tutorial.  
   
@@ -281,7 +284,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
     var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps Common Data Service  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
-    var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
+    var pageUrl = "https://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
     ```  
   
@@ -290,7 +293,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
 1. Iniciar sesión en el [portal de Azure](https://go.microsoft.com/fwlink/?linkid=2083908) con una cuenta con permiso de administrador. Debe usar una cuenta en la misma suscripción de Office 365 (empresa) con la que pretenda registrar la aplicación. También puede obtener acceso al portal de Azure a través del centro de administración de Microsoft 365 expandiendo el elemento **ADMIN** en el panel de navegación de la izquierda y seleccionando **Azure AD**.  
   
     > [!NOTE]
-    > Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program) para asociar las dos cuentas.<br/><br/> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](http://azure.microsoft.com/pricing/details/active-directory/)  
+    > Si no tiene una empresa de Azure (cuenta) o tiene una pero su suscripción a Office 365 con Common Data Service no está disponible en su suscripción de Azure, siga las instrucciones en el tema [Configurar acceso a Azure Active Directory para el sitio de desarrollador](https://docs.microsoft.com/office/developer-program/office-365-developer-program) para asociar las dos cuentas.<br/><br/> Si no tiene una cuenta, puede registrarse para obtener una cuenta utilizando una tarjeta de crédito. No obstante, la cuenta es gratuita para el registro de aplicaciones y no se cargará en su tarjeta de crédito si sigue los procedimientos indicados en este tema para registrar una o varias aplicaciones. Más información: [Detalles de precios de Active Directory](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2. Haga clic en **Azure Active Directory** en la columna de la izquierda de la página. Es posible que deba desplazarse por la columna izquierda para ver el icono y la etiqueta de **Azure Active Directory**.  
   
@@ -316,7 +319,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
 
    - **Tipos de cuenta admitidos**<br />Seleccione **Cuentas en cualquier directorio de organización**.
 
-   - **URL de redireccionamiento**<br />Se trata de la dirección URL a la que el usuario debe ser redirigido después de que inicie sesión. Seleccionar **Web** en la lista desplegable. A efectos de depuración en Visual Studio debe ser `http://localhost:####/SimpleSPA.html` donde #### representa el número de puerto que obtuvo en el paso 4 del procedimiento [Crear un proyecto de aplicación web](#bkmk_createwebapp). Haga clic en **Registrar** al final de la página.
+   - **URL de redireccionamiento**<br />Se trata de la dirección URL a la que el usuario debe ser redirigido después de que inicie sesión. Seleccionar **Web** en la lista desplegable. A efectos de depuración en Visual Studio debe ser `https://localhost:####/SimpleSPA.html` donde #### representa el número de puerto que obtuvo en el paso 4 del procedimiento [Crear un proyecto de aplicación web](#bkmk_createwebapp). Haga clic en **Registrar** al final de la página.
 
    ![Especifique los detalles](media/new-app-registration-page.png)
 

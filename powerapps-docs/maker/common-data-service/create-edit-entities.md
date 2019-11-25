@@ -1,5 +1,5 @@
 ---
-title: Creación y edición entidades en Common Data Service | MicrosoftDocs
+title: Creación y edición de entidades en Common Data Service | MicrosoftDocs
 description: Aprenda a crear y editar entidades
 ms.custom: ''
 ms.date: 04/16/2019
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758080"
 ---
-# <a name="create-and-edit-entities-in-common-data-service"></a>Creación y edición entidades en Common Data Service
+# <a name="create-and-edit-entities-in-common-data-service"></a>Crear y editar entidades en Common Data Service
 
 Antes de crear una entidad personalizada, evalúe si el uso de una entidad existente cumplirá sus requisitos. Más información: [¿Crear nuevos metadatos o usar los metadatos existentes?](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -30,13 +36,13 @@ Hay dos diseñadores que puede usar para crear una entidad:
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: <br />[Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />[Crear y editar entidades con el portal PowerApps](create-edit-entities-portal.md)|
+|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: <br />[Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />[Crear y editar entidades con el portal de PowerApps](create-edit-entities-portal.md)|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
 > También puede crear entidades en su entorno mediante lo siguiente:
 > - Importe una solución que contenga la definición de la entidad.
-> - Use Power Query para crear nuevas entidades y rellenarlas con datos. Más información: [Agregar datos a una entidad en Common Data Service mediante Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+> - Use Power Query para crear nuevas entidades y rellenarlas con datos. Más información: [Agregar datos a una entidad en Common Data Service mediante Power Query.](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 > - Un programador puede usar [Servicios de metadatos](/powerapps/developer/common-data-service/use-web-services#metadata-services) para escribir un programa.
 
 
@@ -79,8 +85,8 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
   |**Habilitar para móvil**|Hace que esta entidad esté disponible para las aplicaciones de Dynamics 365 for phones y tablets. También tiene la opción de convertir esta entidad en **Solo lectura en móvil**.<br /><br /> Si los formularios de una entidad requieren una extensión que no es compatible con las aplicaciones Dynamics 365 for phones y tablets, use esta configuración para asegurarse de que los usuarios de aplicaciones móviles no puedan editar los datos de estas entidades.|
   |**Habilitar para Phone Express**|Hace que esta entidad esté disponible para la aplicación Dynamics 365 for phones.|
   |**Combinar correspondencia**|Los usuarios pueden usar esta entidad con la combinación de correspondencia.|
-  |**Capacidad de trabajar sin conexión para Dynamics 365 for Outlook**|Si los datos de esta entidad estarán disponibles mientras la aplicación Dynamics 365 for Outlook no está conectada a la red.|
-  |**Panel de lectura en Dynamics 365 para Outlook**|Si la entidad será visible en el panel de lectura de la aplicación Dynamics 365 for Outlook.|
+  |**Funcionalidad sin conexión para Dynamics 365 for Outlook**|Especifica si los datos de esta entidad estarán disponibles mientras la aplicación Dynamics 365 for Outlook no esté conectada a la red.|
+  |**Panel de lectura en Dynamics 365 for Outlook**|Especifica si la entidad estará visible en el panel de lectura de la aplicación Dynamics 365 for Outlook.|
   |**Usar la Ayuda personalizada**|Si se habilita esta opción, establece una dirección URL de Ayuda para controlar qué página verán los usuarios cuando hagan clic en el botón Ayuda de la aplicación. Use esta opción para dar instrucciones específicas para los procesos de su empresa para la entidad.|
 
 

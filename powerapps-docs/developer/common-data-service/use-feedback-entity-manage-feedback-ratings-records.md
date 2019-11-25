@@ -1,5 +1,5 @@
 ---
-title: Usar la entidad de comentarios para administrar comentarios y calificaciones para registros (Common Data Service) | Microsoft Docs
+title: Usar la entidad Comentarios para administrar comentarios y clasificaciones para registros (Common Data Service) | Microsoft Docs
 description: Información sobre la entidad de comentarios para obtener comentarios y calificaciones para los registros.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f52a5b5200a498f2374be8547fa4d563c4486e2a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753764"
 ---
 # <a name="use-the-feedback-entity-to-manage-feedback-and-ratings-for-records"></a>Usar la entidad Comentarios para administrar comentarios y clasificaciones para registros
 
@@ -30,7 +36,7 @@ Mejore los productos y servicios habilitando a los usuarios para proporcionar co
   Una vez que haya habilitado una entidad para comentarios y clasificaciones, no puede deshabilitarla. Después de habilitar una entidad para comentarios, se crea una relación de referente a entre la entidad y la entidad `Feedback`.  
   
 > [!NOTE]
->  También puede usar las herramientas de personalización en Common Data Service para habilitar comentarios y clasificaciones para entidades del sistema y personalizadas. Más información: [Habilitar una entidad para comentarios](http://go.microsoft.com/fwlink/p/?LinkId=785436)  
+>  También puede usar las herramientas de personalización en Common Data Service para habilitar comentarios y clasificaciones para entidades del sistema y personalizadas. Más información: [Habilitar una entidad para comentarios](https://go.microsoft.com/fwlink/p/?LinkId=785436)  
   
  La entidad de `Feedback` almacena la siguiente información:  
   

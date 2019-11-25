@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: bffbd8d01f4f6e25b7d78addd0b8284d627bcdc8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749705"
 ---
 # <a name="operations-supported-by-online-management-api"></a>Operaciones compatibles con la API Online Management 
 

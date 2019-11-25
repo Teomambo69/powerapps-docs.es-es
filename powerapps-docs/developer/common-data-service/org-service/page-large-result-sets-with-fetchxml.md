@@ -1,19 +1,25 @@
 ---
-title: Paginar grandes conjuntos de resultados con FetchXML (Common Data Service) | Documentos de Microsoft
+title: Páginar grandes conjuntos de resultados con FetchXML (Common Data Service) | Microsoft Docs
 description: Lea cómo puede paginar los resultados de una consulta FetchXML mediante la cookie de paginación.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 00170d4639ccb618f63767d6cd5f5b6f73037323
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749683"
 ---
 # <a name="page-large-result-sets-with-fetchxml"></a>Páginar grandes conjuntos de resultados con FetchXML
 

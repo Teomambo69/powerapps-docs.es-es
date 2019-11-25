@@ -4,21 +4,24 @@ description: 'Obtenga información sobre cómo definir las reglas específicas a
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 70e5687f-4d0e-3d43-03f3-10e5aa5b0713
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 560946f5b3ea614e5ac3635c9ada81ddae67f3c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749907"
 ---
-
 # <a name="define-ribbon-display-rules"></a>Defina las reglas de la visualización de la cinta de opciones
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
@@ -42,9 +45,9 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
  Los valores `Type` corresponden a lo siguiente:  
 
 
-|   Valor   |                                                                               Presentación                                                                               |
+|   Value   |                                                                               Presentación                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       La barra de comandos se muestra mediante Dynamics 365 for tablets.                                       |
+| `Modern`  |                                       La barra de comandos se muestra mediante Microsoft Dynamics 365 for tablets.                                       |
 | `Refresh` |                                                      La barra de comandos se muestra mediante la interfaz de usuario actualizada.                                                      |
 | `Legacy`  | La cinta de opciones se muestra en los formularios de entidades que no se actualizaron o en una vista de lista en Dynamics 365 for Outlook. |
 

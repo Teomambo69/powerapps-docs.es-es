@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8478a07a-c697-4784-874b-36958eb4f95d
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759532"
 ---
-
 # <a name="open-the-model-driven-app-form-editor"></a>Abrir el editor de formularios de una aplicación controlada por modelos 
 El editor de formularios es donde debe diseñar los formularios colocando componentes como secciones, pestañas, campos y controles sobre el lienzo del editor de formularios. En este tema aprenderá varias formas de acceder al editor de formularios.
  
@@ -30,7 +35,7 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
 
 ## <a name="access-the-form-editor-from-the-powerapps-site"></a>Acceder al editor de formularios desde el sitio de PowerApps
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/). 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/). 
 
 2. Seleccione **Datos** > **Entidades** y, a continuación, seleccione la entidad que desee, como la entidad Cuenta. 
 
@@ -51,7 +56,7 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
   
 2.  Si hay varios formularios principales para la entidad, compruebe que el formulario es el que desea editar. Si no lo es, use el selector de formularios para elegir el formulario que desea editar.  
   
-3.  Seleccione el botón **Más comandos** ![Botón Más comandos en Actividad de cita](media/more-commands.gif "Botón Más comandos en Actividad de cita").  
+3.  Seleccione el botón **Más comandos** ![botón Más comandos en actividad de cita](media/more-commands.gif "Botón Más comandos en actividad de cita")  
   
 4.  Seleccione **Editor de formularios**.  
 
@@ -81,4 +86,4 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Crear y diseñar formularios](create-design-forms.md)
+[Creación y diseño de formularios](create-design-forms.md)

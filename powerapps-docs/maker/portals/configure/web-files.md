@@ -1,6 +1,6 @@
 ---
-title: Crear y administrar archivos Web en portales de PowerApps | MicrosoftDocs
-description: Aprenda a crear y administrar archivos Web en un portal.
+title: Creación y administración de archivos web en portales de PowerApps | MicrosoftDocs
+description: Aprenda a crear y administrar archivos web en un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,53 +11,53 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: dc67db92ac502611b0c10b5d387b100e8aa43da7
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73551264"
+ms.locfileid: "2761118"
 ---
-# <a name="create-and-manage-web-files"></a>Crear y administrar archivos Web
+# <a name="create-and-manage-web-files"></a>Crear y administrar archivos web
 
-Un archivo Web representa un archivo descargable en un sitio web de portales, que se usa para almacenar imágenes, documentos y cualquier otro tipo de archivo.
+Un archivo web representa un archivo descargable en un sitio web del portal que se usa para almacenar imágenes, documentos y cualquier otro tipo de archivo.
 
-Para almacenar el contenido real de un archivo determinado, los portales utilizan la característica de datos adjuntos de las notas asociadas a un registro de archivo Web. El archivo adjunto de la nota más reciente asociada al archivo Web se usa como el contenido del archivo. Por lo tanto, el tamaño del contenido del archivo Web que pueden admitir los portales viene determinado por el tamaño de los datos adjuntos de la nota que admite la instalación de Dynamics 365.
+Para almacenar el contenido real de un archivo determinado, los portales usan la característica de datos adjuntos de las notas asociadas a un registro de archivo web. El archivo adjunto de la más nueva nota asociada al archivo web se usa como el contenido del archivo. Por lo tanto, el tamaño del contenido del archivo web que pueden admitir los portales está determinado por el tamaño de los datos adjuntos de nota que admita la instalación de Dynamics 365.
 
-## <a name="manage-web-files"></a>Administrar archivos Web
+## <a name="manage-web-files"></a>Administrar archivos web
 
-Los archivos Web se pueden crear, editar y eliminar en los portales de PowerApps.
+Se pueden crear, editar y eliminar archivos web desde portales de PowerApps.
 
-1. Abra la [aplicación administración del portal](configure-portal.md).
+1. Abra la aplicación [Administración del portal](configure-portal.md).
 
-2. Vaya a **portales** > **archivos Web**.
+2. Vaya a **Portales** > **Archivos web**.
 
-3. Para crear un nuevo archivo Web, seleccione **nuevo**.
+3. Para crear un nuevo archivo web, seleccione **Nuevo**.
 
-4. Para editar un archivo Web existente, seleccione el nombre del archivo Web.
+4. Para editar un archivo web existente, seleccione el nombre del archivo web.
 
-5. Escriba los valores adecuados en los campos.
+5. Especifique los valores adecuados en los campos.
 
 6. Seleccione **Guardar y cerrar**.
 
-### <a name="web-file-attributes"></a>Atributos de archivo Web
+### <a name="web-file-attributes"></a>Atributos del archivo web
 
-En la tabla siguiente se explican muchos de los atributos de archivo Web estándar que utilizan los portales. Es importante tener en cuenta que la manera en la que se representan muchos de los atributos de contenido y de presentación está controlada por la plantilla de página usada y por el desarrollador del portal.
+La tabla siguiente explica muchos de los atributos del archivo web estándar que usan los portales. Es importante observar que la forma en que se representan muchos de los atributos orientados a contenido/visualización está administrada por la plantilla de página web utilizada y, por tanto, por el desarrollador del portal.
 
 | Nombre                | Descripción               |
 |---------------------|-----------------------|
-|Nombre |Nombre descriptivo de la entidad. Este valor se usará como el título del archivo en la mayoría de las plantillas (por ejemplo, para los títulos de los vínculos). Este campo es obligatorio.   |
-|Bsitio   |Sitio web al que pertenece la entidad. Este campo es obligatorio.   |
-|Página primaria   |La página web primaria de la entidad, en la jerarquía de contenido del sitio Web. <br>Aunque no es necesario que un archivo tenga una página primaria, en algunos escenarios, por ejemplo, un archivo puede tener una entrada de blog principal: la configuración recomendada en la mayoría de los casos es proporcionar una página primaria.  |
-|Dirección URL parcial   |El segmento de ruta de acceso de dirección URL que se usa para crear la dirección URL del portal de esta página. <br>La página raíz única (Inicio) del sitio web: la página única que no tiene ninguna página primaria asociada: debe tener un valor de dirección URL parcial de/.<br>Los valores de dirección URL parciales se usan como segmentos de ruta de dirección URL. Como tal, no deben contener caracteres de ruta de acceso de dirección URL no válidos, como?, #,!,%. Puesto que las direcciones URL de Adxstudio portales se generan combinando los valores de dirección URL parcial con barras diagonales (/), no suelen contener barras diagonales. La práctica recomendada sería restringir los valores de dirección URL parciales a letras, números, guiones o caracteres de subrayado. Por ejemplo: Press-Release. pdf, Site_Header. png.  |
-|Estado de publicación   |Estado actual del flujo de trabajo de publicación del archivo, que puede determinar si el archivo está visible o no en el sitio. El uso más común de esta característica es proporcionar un control publicado o borrador sobre el contenido.<br>Se puede conceder a los usuarios con permisos de administración de contenido la posibilidad de usar el modo de vista previa, lo que permite a estos usuarios ver (vista previa) el contenido no publicado.   |
-| Fecha de presentación        | Este atributo es un valor de fecha y hora que se puede usar en una plantilla, solo para fines de presentación. No tiene ninguna implicación funcional, pero puede ser útil para cosas como, por ejemplo, especificar manualmente una fecha Publicada en un documento de versión de prensa.    |
-| Fecha de lanzamiento        | Controla una fecha y hora después de la cual el archivo será visible en el portal. Si la fecha y hora actuales es anterior a esta fecha, este archivo no será visible. (La excepción a esto es que se puede conceder a los usuarios con permisos de administración de contenido la posibilidad de usar el modo de vista previa, lo que permite a estos usuarios ver (vista previa) el contenido sin liberar). Esto resulta útil para controlar el lanzamiento de contenido dependiente del tiempo, como noticias o comunicados de prensa. |
-| Fecha de expiración     | Controla una fecha y hora antes de la cual el archivo será visible en el portal. Si la fecha y hora actuales son posteriores a esta fecha, este archivo no será visible. (La excepción a esto es que se puede conceder a los usuarios con permisos de administración de contenido la posibilidad de usar el modo de vista previa, lo que permite a estos usuarios ver (vista previa) el contenido caducado).                |
-| Resumen             | Una breve descripción del archivo, este valor se usará generalmente para agregar una descripción del archivo a los elementos de navegación del portal que representan un vínculo al archivo.      |
-| Oculto desde el mapa del sitio | Controla si el archivo está visible o no contiene parte del mapa del sitio del portal. Si este valor está activado, el archivo seguirá estando disponible en el sitio en su dirección URL y se puede vincular a, pero los elementos de navegación estándar (menús, etc.) no incluirán la página.      |
-| Mostrar orden       | Un valor entero que indica el orden en el que se colocará el archivo, en relación con otras entidades con la misma página primaria. Esto controla el orden de los archivos y otras entidades del mapa del sitio cuando, por ejemplo, una lista de vínculos a las entidades secundarias de una página determinada se representa en el portal.      |
-| Dirección de BLOB en la nube  | Un valor de texto con el formato `<container>/<filename>`, que indica que el contenido de este archivo se almacena en Azure Blob Storage.        |
-| Content-Disposition | Las opciones son insertadas o adjuntas. Si se especifica Inline, el explorador debe intentar representarlo en la ventana del explorador y, si no es posible, pedirá al usuario que descargue o abra el archivo. Si se especifica Attachment, se le pedirá inmediatamente al usuario que descargue o abra el archivo, y que no intente cargarlo en el explorador, ya sea posible o no.                                                                                        |
-| Habilitar seguimiento     | Si está habilitada, se registrarán todas las solicitudes de este archivo Web. Si el usuario está autenticado, se creará una entrada de registro de archivo Web con la fecha & hora, la dirección IP y el registro de contacto.      |
+|Nombre |Nombre descriptivo de la entidad. Esta valor se usará como título del archivo en la mayoría de las plantillas (por ejemplo, en títulos de vínculos). Este campo es obligatorio.   |
+|Sitio web   |Sitio web al que pertenece la entidad. Este campo es obligatorio.   |
+|Página primaria   |La página web principal de la entidad, en la jerarquía de contenido del sitio web. <br>Mientras que un archivo no es necesario para disponer de una página principal (en algunos escenarios, por ejemplo, un archivo puede tener una publicación de blog principal), proporcionar una página principal es la configuración recomendada en la mayoría de los casos.  |
+|Dirección URL parcial   |El segmento de dirección URL utilizado para crear la dirección URL de portal de esta página. <br>La página raíz única (principal) del sitio web, la página única que no tiene ninguna página primaria asociada, debe tener un valor de URL parcial de /.<br>Se usan valores de dirección URL parciales como segmentos de la dirección URL. Por tanto, no deben contener caracteres no válidos para dirección URL, como ?, #, !, %. Dado que las direcciones URL de Adxstudio Portals se generan combinando valores de dirección URL parciales con barras diagonales (/), tampoco deben contener normalmente las barras diagonales. La práctica recomendada sería restringir valores parciales de la dirección URL a letras, números y guiones o caracteres de subrayado. Por ejemplo: press-release.pdf, Site_Header.png.  |
+|Estado de publicación   |El estado actual de flujo de trabajo de publicación del archivo, que puede dictar si el archivo es visible en la ubicación. El uso más común de esta característica es proporcionar control de publicado/borrador sobre contenido.<br>A los usuarios con los permisos de administración de contenido se les puede conceder la capacidad de usar el modo de vista previa, que permite que a estos usuarios ver (obtener una vista previa) contenido sin publicar.   |
+| Mostrar fecha        | Este atributo es un valor de fecha y hora que puede usar una plantilla, básicamente con fines de mostrar. No tiene ningún implicación funcional, pero puede resultar útil para elementos como, por ejemplo, especificar manualmente una fecha de publicación en un documento de comunicado de prensa.    |
+| Fecha de publicación        | Controla una fecha y una hora después de las cuales el archivo será visible en el portal. Si la fecha y hora actuales son anteriores a esta fecha, este archivo no estará visible. (La excepción a esto es que los a los usuarios con los permisos de administración de contenido se les puede conceder la capacidad de usar el modo de vista previa, que permite que a estos usuarios ver (obtener una vista previa) contenido no publicado). Esto resulta útil para controlar la emisión de contenido urgente, como noticias o comunicados de prensa. |
+| Fecha de expiración     | Controla una fecha y una hora antes de las cuales el archivo será visible en el portal. Si la fecha y hora actuales son posteriores a esta fecha, este archivo no estará visible. (La excepción a esto es que los a los usuarios con los permisos de administración de contenido se les puede conceder la capacidad de usar el modo de vista previa, que permite que a estos usuarios ver (obtener una vista previa) contenido expirado.)                |
+| Resumen             | Una breve descripción para el archivo, este valor se usará normalmente para agregar una descripción del archivo a elementos de navegación del portal que representen un vínculo al archivo.      |
+| Oculto para el mapa del sitio | Controla si el archivo que está visible tiene parte del mapa del sitio del portal. Si este valor está activado, el archivo seguirá estando disponible en el sitio en su dirección URL, y se puede vincular con él, pero los elementos de navegación estándar (menús, etc.) no incluirán la página.      |
+| Orden de visualización       | Un valor de entero que indica el orden en que el archivo se colocará en relación con otras entidades con la misma página principal. De esta forma controla el orden de archivos y otras entidades del mapa del sitio cuando, por ejemplo, una lista de vínculos a las entidades secundarias de una página dada se representa en el portal.      |
+| Dirección de blob en la nube  | Un valor de texto con el formato `<container>/<filename>`, indicando que el contenido de este archivo se almacena en Almacenamiento de blobs de Azure.        |
+| Disposición de contenido | Las opciones son en línea o datos adjuntos. Si especifica en línea, el explorador deberá intentar representarlo en la ventana del explorador y si no puede, pedirá al usuario que descargue o abra el archivo. Si se especifican datos adjuntos, inmediatamente pedirá al usuario que descargue o abra el archivo, y no intentará cargarlo en el explorador, tanto si puede como si no.                                                                                        |
+| Habilitar seguimiento     | Si está activada, cada solicitud para este archivo web se registrará. Un registro de archivo web se creará con la fecha y hora, dirección IP, y el registro de contacto si se autentica el usuario.      |
 |||
 
 

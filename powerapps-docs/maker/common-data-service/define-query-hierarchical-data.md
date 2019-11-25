@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c829665baf2688c755bdfba7debb19d7b69a1c46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758696"
 ---
 # <a name="define-and-query-hierarchically-related-data"></a>Definir y consultar datos relacionados jerárquicamente
 
@@ -35,7 +41,7 @@ Algunas entidades estándar ya tienen definidas jerarquías. Otras entidades, in
 
 ## <a name="define-hierarchical-data"></a>Definir datos jerárquicos
 
-Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) *que hacen referencia a sí mismas* de registros relacionados. 
+Con Common Data Service, las estructuras jerárquicas de datos son compatibles con relaciones de uno a varios (1:N) que hacen *referencia a sí mismas* de registros relacionados. 
 
 > [!NOTE]
 > *Que hacen referencia a sí mismas* significa que la entidad está relacionada consigo misma. Por ejemplo, la entidad Cuenta tiene un campo de búsqueda para asociarlo al registro de otra entidad Cuenta.
@@ -92,5 +98,5 @@ Los siguientes ejemplos muestran escenarios para consultar jerarquías:
 [Crear y editar relaciones de entidad de 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)<br />
 [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
 [Visualizar datos jerárquicos con aplicaciones controladas por modelos](visualize-hierarchical-data.md)<br />
-[Vídeo: Modelos de seguridad jerárquica](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[Vídeo: Visualización de la jerarquía](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[Vídeo: Modelos de seguridad jerárquica](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
+[Vídeo: Visualización de la jerarquía](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

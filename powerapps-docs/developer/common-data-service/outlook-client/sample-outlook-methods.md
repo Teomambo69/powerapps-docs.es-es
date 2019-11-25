@@ -10,10 +10,16 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 49ea89b034c617c03e23b11a115eada4735b83ab
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749821"
 ---
 # <a name="sample-use-dynamics-365-for-outlook-methods"></a>Ejemplo: Usar métodos de Dynamics 365 for Outlook
 

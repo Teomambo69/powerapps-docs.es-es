@@ -1,60 +1,60 @@
-- name: Aplicaciones controladas por modelos
+- name: Aplicaciones basadas en modelos
   href: ../../maker/model-driven-apps/model-driven-app-overview.md
-- name: Información general para desarrolladores
+- name: Información general del desarrollador
   href: overview.md
 - name: Introducción
   href: supported-customizations.md
-- name: Diseñar la interfaz de aplicación mediante código
+- name: Diseñar la interfaz de la aplicación con código
   items:
-    - name: Personalizar formularios de entidades
+    - name: Personalizar los formularios de entidad
       href: customize-entity-forms.md
       items:
-        - name: Usar controles de recursos web e IFRAME en un formulario
+        - name: Usar IFRAME y controles de recursos web en un formulario
           href: use-iframe-and-web-resource-controls-on-a-form.md
-    - name: Personalizar vistas de entidades
+    - name: Personalizar vistas de entidad
       href: customize-entity-views.md
-    - name: 'Abrir informes, cuadros de diálogo, vistas y formularios con una URL'
+    - name: 'Abrir formularios, vistas, diálogos e informes con una dirección URL'
       href: open-forms-views-dialogs-reports-url.md
       items:
-        - name: Establecer valores de campo usando los parámetros pasados a un formulario
+        - name: Establecer valores de campo usando parámetros pasados a un formulario
           href: set-field-values-using-parameters-passed-form.md
-        - name: Configurar un formulario para aceptar parámetros QueryString personalizados
+        - name: Configurar un formulario para aceptar parámetros querystring personalizados
           href: configure-form-accept-custom-querystring-parameters.md
-    - name: 'Abrir formularios, vistas y paneles en el cliente móvil de Dynamics 365 con una URL'
+    - name: 'Abrir formularios, vistas y paneles en el cliente móvil de Dynamics 365 con una dirección URL'
       href: open-forms-views-dashboards-mobile-client-url.md
     - name: Usar cuadrículas editables
       href: use-editable-grids.md
-    - name: Consultar y editar un tema de la organización
+    - name: Consultar y editar un tema de organización
       href: query-and-edit-an-organization-theme.md
-    - name: Compilación de componentes personalizados con el marco de componentes de PowerApps
+    - name: Compilar componentes personalizados mediante PowerApps Component Framework
       href: /powerapps/developer/component-framework/overview
-- name: Aplicar visualizaciones de datos mediante código
+- name: Aplicar las visualizaciones de datos con código
   href: customize-visualizations-dashboards.md
   items:
     - name: Analizar datos con paneles
       href: analyze-data-with-dashboards.md
       items:
-        - name: 'Comprender los paneles: FormXML y componentes del panel'
+        - name: 'Comprender los paneles: FormXML y componentes de panel'
           href: understand-dashboards-dashboard-components-formxml.md
         - name: Acciones en los paneles
           href: actions-dashboards.md
         - name: Crear un panel
           href: create-dashboard.md
-    - name: Ver datos con visualizaciones (gráficos)
+    - name: Ver los datos con visualizaciones (gráficos)
       href: view-data-with-visualizations-charts.md
       items:
-        - name: 'Descripción de gráficos: representación de gráficos y datos subyacentes'
+        - name: 'Descripción de gráficos: representación gráfico y datos subyacentes'
           href: understand-charts-underlying-data-chart-representation.md
-        - name: Acciones con visualizaciones (gráficos)
+        - name: Acciones en visualizaciones (gráficos)
           href: actions-visualizations-charts.md
         - name: Crear una visualización (gráfico)
           href: create-visualization-chart.md
-- name: Aplicar lógica empresarial mediante scripting de cliente
+- name: Aplicar la lógica empresarial mediante scripting del cliente
   href: client-scripting.md
   items:
-    - name: Eventos en formularios y cuadrículas
+    - name: Eventos de formularios y cuadrículas
       href: clientapi/events-forms-grids.md
-    - name: Comprender el modelo de objetos de la API de cliente
+    - name: Comprender el modelo de objetos de la API del cliente
       href: clientapi/understand-clientapi-object-model.md
       items:
         - name: Contexto de ejecución
@@ -67,9 +67,9 @@
           href: clientapi/clientapi-xrm.md
     - name: 'Tutorial: Escribir el primer script de cliente'
       href: clientapi/walkthrough-write-your-first-client-script.md
-    - name: Depurar código de JavaScript para aplicaciones basadas en modelos
+    - name: Depuración del código JavaScript para aplicaciones basadas en modelos
       href: clientapi/debug-JavaScript-code.md
-    - name: Referencia de la API de cliente
+    - name: Referencia de API de cliente
       href: clientapi/reference.md
       items:
         - name: Eventos de cliente
@@ -79,15 +79,15 @@
               href: clientapi/reference/events/attribute-onchange.md
             - name: Evento de formulario OnLoad
               href: clientapi/reference/events/form-onload.md
-            - name: Evento OnSave de formulario
+            - name: Evento de formulario OnSave
               href: clientapi/reference/events/form-onsave.md
-            - name: Evento OnLoad de datos de formulario
+            - name: Evento de datos de formulario OnLoad
               href: clientapi/reference/events/form-data-onload.md
             - name: Evento de cuadrícula OnChange
               href: clientapi/reference/events/grid-onchange.md
             - name: Evento de cuadrícula OnRecordSelect
               href: clientapi/reference/events/grid-onrecordselect.md
-            - name: Evento OnSave de cuadrícula
+            - name: Evento de cuadrícula OnSave
               href: clientapi/reference/events/grid-onsave.md
             - name: Evento OnProcessStatusChange
               href: clientapi/reference/events/onprocessstatuschange.md
@@ -101,11 +101,11 @@
               href: clientapi/reference/events/onstagechange.md
             - name: Evento OnStageSelected
               href: clientapi/reference/events/onstageselected.md
-            - name: Evento PostSearch
+            - name: Evento postSearch
               href: clientapi/reference/events/postsearch.md
             - name: Evento PreSearch
               href: clientapi/reference/events/presearch.md
-            - name: Evento Subgrid OnLoad
+            - name: Evento OnLoad de subcuadrícula
               href: clientapi/reference/events/subgrid-onload.md
             - name: Evento TabStateChange
               href: clientapi/reference/events/tabstatechange.md
@@ -151,7 +151,7 @@
               href: clientapi/reference/composite-attributes.md
             - name: addOnChange
               href: clientapi/reference/attributes/addOnChange.md
-            - name: Colección de controles
+            - name: colección de controles
               href: clientapi/reference/attributes/controls-collection.md
             - name: fireOnChange
               href: clientapi/reference/attributes/fireOnChange.md
@@ -270,7 +270,7 @@
               href: clientapi/reference/controls/getVisible.md
             - name: openSearchResult
               href: clientapi/reference/controls/openSearchResult.md
-            - name: refresh
+            - name: actualizar
               href: clientapi/reference/controls/refresh.md
             - name: removeOnPostSearch
               href: clientapi/reference/controls/removeOnPostSearch.md
@@ -313,11 +313,11 @@
               href: clientapi/reference/formContext-data/getIsDirty.md
             - name: isValid
               href: clientapi/reference/formContext-data/isValid.md
-            - name: refresh
+            - name: actualizar
               href: clientapi/reference/formContext-data/refresh.md
             - name: removeOnLoad
               href: clientapi/reference/formContext-data/removeOnLoad.md
-            - name: save
+            - name: guardar
               href: clientapi/reference/formContext-data/save.md
         - name: formContext.data.entity
           href: clientapi/reference/formContext-data-entity.md
@@ -340,7 +340,7 @@
               href: clientapi/reference/formContext-data-entity/isvalid.md
             - name: removeOnSave
               href: clientapi/reference/formContext-data-entity/removeOnSave.md
-            - name: save
+            - name: guardar
               href: clientapi/reference/formContext-data-entity/save.md
         - name: formContext.data.process
           href: clientapi/reference/formContext-data-process.md
@@ -359,7 +359,7 @@
                   href: clientapi/reference/formContext-data-process/eventhandlers/removeOnStageChange.md
                 - name: removeOnStageSelected
                   href: clientapi/reference/formContext-data-process/eventhandlers/removeOnStageSelected.md
-            - name: Métodos de procesos activos
+            - name: Métodos de proceso activo
               items:
                 - name: getActiveProcess
                   href: clientapi/reference/formContext-data-process/activeprocess/getActiveProcess.md
@@ -383,7 +383,7 @@
                   href: clientapi/reference/formContext-data-process/getProcessInstances.md
                 - name: setActiveProcessInstance
                   href: clientapi/reference/formContext-data-process/setActiveProcessInstance.md
-            - name: Métodos de instancia
+            - name: Método de instancia
               items:
                 - name: getInstanceId
                   href: clientapi/reference/formcontext-data-process/instance/getInstanceId.md
@@ -444,7 +444,7 @@
               href: clientapi/reference/formcontext-ui/addOnLoad.md
             - name: clearFormNotification
               href: clientapi/reference/formcontext-ui/clearFormNotification.md
-            - name: Cerrar
+            - name: cerrar
               href: clientapi/reference/formcontext-ui/close.md
             - name: getFormType
               href: clientapi/reference/formcontext-ui/getFormType.md
@@ -516,7 +516,7 @@
               href: clientapi/reference/formcontext-ui-quickForms/getVisible.md
             - name: isLoaded
               href: clientapi/reference/formcontext-ui-quickForms/isLoaded.md
-            - name: refresh
+            - name: actualizar
               href: clientapi/reference/formcontext-ui-quickForms/refresh.md
             - name: setDisabled
               href: clientapi/reference/formcontext-ui-quickForms/setDisabled.md
@@ -592,13 +592,13 @@
                   href: clientapi/reference/grids/gridcontrol/getViewSelector.md
                 - name: openRelatedGrid
                   href: clientapi/reference/grids/gridcontrol/openRelatedGrid.md
-                - name: refresh
+                - name: actualizar
                   href: clientapi/reference/grids/gridcontrol/refresh.md
                 - name: refreshRibbon
                   href: clientapi/reference/grids/gridcontrol/refreshRibbon.md
                 - name: removeOnLoad
                   href: clientapi/reference/grids/gridcontrol/removeOnLoad.md
-            - name: Grid
+            - name: Cuadrícula
               href: clientapi/reference/grids/grid.md
               items:
                 - name: getRows
@@ -682,11 +682,11 @@
               href: clientapi/reference/xrm-navigation/openFile.md
             - name: openForm
               href: clientapi/reference/xrm-navigation/openForm.md
-            - name: openUrl
+            - name: Abrir Url
               href: clientapi/reference/xrm-navigation/openUrl.md
             - name: openWebResource
               href: clientapi/reference/xrm-navigation/openWebResource.md
-        - name: Xrm.Panel
+        - name: Panel Xrm
           href: clientapi/reference/xrm-panel.md
           items:
             - name: loadPanel
@@ -703,7 +703,7 @@
             - name: getGlobalContext
               href: clientapi/reference/xrm-utility/getGlobalContext.md
               items:
-                - name: client
+                - name: cliente
                   href: clientapi/reference/xrm-utility/getGlobalContext/client.md
                 - name: organizationSettings
                   href: clientapi/reference/xrm-utility/getGlobalContext/organizationSettings.md
@@ -760,16 +760,16 @@
               href: clientapi/reference/xrm-webapi/online/execute.md
             - name: executeMultiple
               href: clientapi/reference/xrm-webapi/online/executeMultiple.md
-    - name: Procedimientos recomendados
+    - name: Prácticas recomendadas
       href: best-practices/business-logic/index.md
-- name: Personalizar comandos y cinta de opciones
+- name: Personalizar comandos y la cinta de opciones
   href: customize-commands-ribbon.md
   items:
-    - name: Cintas disponibles
+    - name: Cintas de opciones disponibles
       href: ribbons-available.md
-    - name: Presentación de barra de comandos o cinta de opciones
+    - name: Presentación de la barra de comandos o la cinta de opciones
       href: command-bar-ribbon-presentation.md
-    - name: 'Exportar, preparar para editar e importar la cinta de opciones'
+    - name: 'Exportar, preparar para modificar e importar la cinta de opciones'
       href: export-prepare-edit-import-ribbon.md
     - name: Exportar definiciones de cinta de opciones
       href: export-ribbon-definitions.md
@@ -777,26 +777,26 @@
       href: use-localized-labels-ribbons.md
     - name: Definir comandos de la cinta de opciones
       href: define-ribbon-commands.md
-    - name: Definir reglas de habilitación de la cinta de opciones
+    - name: Definir las reglas de habilitación de la cinta de opciones
       href: define-ribbon-enable-rules.md
-    - name: Definir reglas de visualización de la cinta de opciones
+    - name: Defina las reglas de la visualización de la cinta de opciones
       href: define-ribbon-display-rules.md
     - name: Definir acciones de la cinta de opciones
       href: define-ribbon-actions.md
-    - name: Pasar datos de una página como un parámetro a las acciones de la cinta de opciones
+    - name: Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones
       href: pass-data-page-parameter-ribbon-actions.md
     - name: Definir acciones personalizadas para modificar la cinta de opciones
       href: define-custom-actions-modify-ribbon.md
-    - name: Definir el ajuste de escala para los elementos de la cinta de opciones
+    - name: Definir escalabilidad para elementos de la cinta de opciones
       href: define-scaling-ribbon-elements.md
-    - name: Definir reglas de visualización de la pestaña de cinta de opciones
+    - name: Definir las reglas de visualización de la pestaña de la cinta de opciones
       href: define-ribbon-tab-display-rules.md
-    - name: Pasar parámetros a una URL mediante la cinta de opciones
+    - name: Pasar parámetros a una dirección URL con la cinta de opciones
       href: pass-parameters-url-by-using-ribbon.md
 - name: Recursos web en aplicaciones basadas en modelos
   href: web-resources.md
   items:
-    - name: Uso de recursos web
+    - name: Usar recursos web
       href: use-web-resources.md
     - name: Recursos web de página web (HTML)
       href: webpage-html-web-resources.md
@@ -810,62 +810,62 @@
           href: streamline-javascript-development-fiddler-autoresponder.md
     - name: Recursos web de CSS
       href: css-web-resources.md
-    - name: Recursos web de imagen
+    - name: Recursos web de imágenes
       href: image-web-resources.md
-    - name: Recursos web de datos (XML)
+    - name: Recursos web (XML) de datos
       href: data-xml-web-resources.md
-    - name: Recursos web de RESX
+    - name: Recursos web RESX
       href: resx-web-resources.md
-    - name: Recursos web de hoja de estilos (XSL)
+    - name: Recursos web de hoja de estilo (XSL)
       href: stylesheet-xsl-web-resources.md
     - name: Dependencias de recursos web
       href: web-resource-dependencies.md
-- name: 'Crear, administrar y publicar aplicaciones mediante código'
+- name: 'Crear, administrar, y publicar aplicaciones con código'
   href: create-manage-model-driven-apps-using-code.md
 - name: Editar el archivo de personalizaciones
   href: when-edit-customization-file.md
   items:
-    - name: Editar el archivo XML de personalizaciones con validación del esquema
+    - name: Editar el archivo XML de personalizaciones con la validación de esquema
       href: edit-customizations-xml-file-schema-validation.md
-    - name: Publicar personalizaciones
+    - name: Publicación de personalizaciones
       href: publish-customizations.md
-- name: Procedimientos recomendados
+- name: Prácticas recomendadas
   href: best-practices/index.md
-- name: Ejemplos
+- name: Muestras
   items:
     - name: Exportar definiciones de cinta de opciones
       href: sample-export-ribbon-definitions.md
-    - name: Pasar varios valores a un recurso web a través del parámetro de datos
+    - name: Pasar varios valores a un recurso web mediante el parámetro de datos
       href: sample-pass-multiple-values-web-resource-through-data-parameter.md
     - name: Importar archivos como recursos web
       href: sample-import-files-web-resources.md
-    - name: Gráficos de ejemplo
+    - name: Gráficos de muestra
       href: sample-charts.md
     - name: Paneles de ejemplo
       href: sample-dashboards.md
 - name: Recursos
   items:
-    - name: Herramientas para desarrolladores
+    - name: Herramientas del desarrollador
       href: developer-tools.md
-    - name: Herramientas de pruebas
+    - name: Herramientas de prueba
       href: testing-tools-client.md
 - name: Referencia
   items:
-    - name: Scripting de cliente
+    - name: Scripting del cliente
       href: clientapi/reference.md
     - name: Referencia de XML de personalización
       href: customization-xml-reference.md
-    - name: Esquemas de la cinta de opciones
+    - name: Esquema de cinta
       items:
-        - name: Esquema de núcleo de la cinta de opciones
+        - name: Esquema central de cinta de opciones
           href: ribbon-core-schema.md
-        - name: Esquema de tipos de la cinta de opciones
+        - name: Esquema de tipos de cinta
           href: ribbon-types-schema.md
-        - name: Esquema WSS de la cinta de opciones
+        - name: Esquema WSS de cinta
           href: ribbon-wss-schema.md
     - name: Esquema XML de formulario
       href: form-xml-schema.md
     - name: Publicar esquema de solicitud
       href: publish-request-schema.md
-    - name: Esquema de descripción de datos de visualización
+    - name: Esquema de descripción de los datos de visualización
       href: visualization-data-description-schema.md

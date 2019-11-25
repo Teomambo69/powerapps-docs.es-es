@@ -1,6 +1,6 @@
 ---
-title: Agregar un recurso Web de Azure Storage a un formulario | MicrosoftDocs
-description: Pasos para agregar el recurso Web de Azure Storage a un formulario para habilitar la carga de datos adjuntos en Azure Storage.
+title: Agregar el recurso de web Azure Storage a un formulario | MicrosoftDocs
+description: Pasos para agregar un recurso web de Azure Storage a un formulario para permitir la carga de adjuntos a Azure Storage.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,25 +11,25 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543123"
+ms.locfileid: "2756892"
 ---
-# <a name="add-the-azure-storage-web-resource-to-a-form"></a>Adición del recurso web de Azure Storage a una forma
+# <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 
-Los datos adjuntos cargados en Azure Storage en lugar de directamente en Common Data Service se pueden administrar mediante el uso de notas en Common Data Service.
+Los datos adjuntos cargados en Azure Storage, en lugar de directamente en Common Data Service, se pueden administrar con notas en Common Data Service.
 
-Para habilitar la carga de datos adjuntos de un determinado formulario en Azure Storage, debe agregar un recurso Web a ese formulario y debe [configurar Azure Storage para su organización](enable-azure-storage.md).
+Para que los datos adjuntos de un formulario determinado se puedan cargar en Azure Storage, debe agregar un recurso web al formulario y debe [configurar Azure Storage para la organización](enable-azure-storage.md).
 
 > [!Note]
-> En este ejemplo, el formulario se agrega al formulario de cliente potencial de la entidad del cliente potencial. Se recomienda tener cuidado al editar formularios existentes.
+> En este ejemplo, el formulario se agrega al formulario de cliente potencial para la entidad Cliente potencial. Se recomienda tener precaución al editar los formularios existentes.
 
-Cuando se carga un archivo (por ejemplo, Attachments. zip) en Azure Storage mediante el portal, se representa con una nota en una entidad y un marcador de posición para los datos adjuntos.
+Cuando un archivo (por ejemplo, attachments.zip) se carga en Azure Storage mediante el portal, es representado por una nota en una entidad y un marcador para el dato adjunto.
 
-![Datos adjuntos en un formulario](media/notes-attachment-lead-form.png "Marcador de posición para los datos adjuntos en un formulario")
+![Datos adjuntos en un formulario](media/notes-attachment-lead-form.png "Marcador de posición para datos adjuntos en un formulario")
 
-Tenga en cuenta que el archivo de datos adjuntos ahora se denomina Attachment. zip. txt. De forma predeterminada, Common Data Service no tiene ninguna concepción de un archivo de Azure, por lo que este archivo placeholder. txt se almacena en Common Data Service en su lugar. El contexto de Azure Storage para el archivo de marcador de posición muestra detalles sobre el archivo.
+Tenga en cuenta que el archivo de datos adjuntos ahora está denominado attachment.zip.txt. De forma predeterminada, Common Data Service no tiene ningún concepto de archivo Azure, por lo que este archivo placeholder.txt se almacena en Common Data Service en su lugar. El contexto de Azure Storage del archivo con marcadores muestra detalles sobre el archivo.
 ```
 {
  Name: attachment.zip,
@@ -39,61 +39,61 @@ Tenga en cuenta que el archivo de datos adjuntos ahora se denomina Attachment. z
 }
 ```
 
-Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recurso Web ADX. Annotations. html al formulario. Como requisito previo, asegúrese de que los usuarios tienen acceso de lectura a adx_setting. De lo contrario, el recurso Web no se representará correctamente.
+Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recurso web adx.annotations.html al formulario. Como requisito previo, asegúrese de que sus usuarios obtienen acceso de lectura a adx_setting. De lo contrario, el recurso web no generará representaciones correctamente.
 
-1. En el editor de formularios para el formulario pertinente, seleccione **recurso Web** en la pestaña **Insertar** .
+1. En el editor de formularios del formulario relevante, seleccione **Recurso web** en la pestaña **Insertar** .
 
-2. En el cuadro **recurso Web** , seleccione **adx_annotations/ADX. Annotations. html**.
+2. En la casilla **Recurso web** , seleccione **adx_annotations/adx.annotations.html**.
 
-3. Escriba un nombre y una etiqueta para el recurso.
+3. Escriba una etiqueta de nombre para el recurso.
 
-4. En el cuadro **parámetro personalizado (datos)** , escriba **azureEnabled = true**. <br>También puede usar el recurso Web sin habilitar el soporte técnico de Azure de esta manera, en cuyo caso funcionará casi totalmente igual que el control predeterminado.</br>
+4. En la casilla **Parámetro personalizado (datos)** introduzca **azureEnabled=true**. <br>También puede usar el recurso web sin habilitar el soporte de Azure de esta forma, en este caso funciona casi completamente del mismo modo que el control predeterminado.</br>
 
-5. En la pestaña **formato** , elija las reglas de formato que prefiera. Se recomienda desactivar la casilla **Mostrar borde** .
+5. En la pestaña **Formato** , elija las reglas de formato que prefiere. Se recomienda desactivar la casilla de verificación **Mostrar el borde** .
 
 6. Seleccione **Aceptar** para guardar el recurso.
 
-7. Opcionalmente, puede que desee quitar el control de notas existente o moverlo a una pestaña o sección marcada para que no sea visible de forma predeterminada.
+7. Como alternativa, es posible que desee quitar el control existente de notas, o moverlo a una ficha o a una sección que esté marcada para que no se vea de forma predeterminada.
 
 8. Guarde el formulario y, a continuación, publique los cambios.
 
-   ![Agregar recurso Web](media/add-web-resource.png "Agregar un recurso Web")
+   ![Agregar recurso web](media/add-web-resource.png "Agregar un recurso web")
 
-El nuevo control se representará ahora en la página, lo que le permitirá administrar los datos adjuntos en Azure Storage.
+El nuevo control ahora se generará en la página, dándole la capacidad de administrar sus datos adjuntos en Azure Storage.
 
-![Datos adjuntos de archivos de Azure en un formulario](media/azure-file-attachment-lead-form.png "Datos adjuntos de archivos de Azure en un formulario")
+![Archivo adjunto Azure en un formulario](media/azure-file-attachment-lead-form.png "Archivo adjunto Azure en un formulario")
 
-El icono de clip de papel se ha reemplazado por un icono de nube para indicar que este archivo se almacena en Azure Storage. Puede continuar con el almacenamiento de datos adjuntos en Common Data Service; esos archivos se denotarán con el icono de clip de papel.
+El icono de clip de papel se ha reemplazado por un icono de nube para indicar que este archivo se ha almacenado en Azure Storage. Puede continuar almacenando los datos adjuntos de Common Data Service; estos archivos se indicarán con el icono de clip de papel.
 
 > [!Note]
-> Debe agregar una regla de uso compartido de recursos entre orígenes (CORS) en su cuenta de Azure Storage como se indica a continuación; de lo contrario, verá el icono de datos adjuntos normales en lugar del icono de la nube.
-> - **Orígenes permitidos**: especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
-> - **Verbos permitidos**: get, Put, Delete, Head, post
-> - **Encabezados permitidos**: especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-MS-meta-data\*, x-MS-meta-Target\*. En este escenario, debe especificar *; de lo contrario, el recurso Web no se representará correctamente.
-> - **Encabezados expuestos**: especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que el explorador expone al emisor de la solicitud. Por ejemplo, x-MS-meta-\*.
-> - **Antigüedad máxima (segundos)** : especifique el tiempo máximo que un explorador debe almacenar en caché la solicitud de opciones preparatorias. Por ejemplo, 200.
+> También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube.
+> - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
+> - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
+> - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. En este escenario, debe especificar *, si no el recurso web no generará representaciones correctamente.
+> - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.
+> - **Edad máxima (segundos)**: Especifique la cantidad máxima de tiempo que un explorador debe almacenar en caché la solicitud OPCIONES de preparación. Por ejemplo, 200.
 > 
-> [!include[More information](../../includes/proc-more-information.md)] [compatibilidad con CORS para los servicios de Azure Storage](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
+> [!include[More information](../../includes/proc-more-information.md)] [Soporte CORS para Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
 
-Si el archivo adjunto es una imagen, el control mostrará la imagen como una miniatura, tanto si está almacenada en Common Data Service como en Azure Storage.
+Si el archivo adjunto es una imagen, el control mostrará la imagen como miniatura si está almacena en Common Data Service o Azure Storage.
 
 > [!Note]
-> La característica de miniaturas se limita a las imágenes con un tamaño inferior a 1 MB.
+> La característica de la miniatura está limitada a las imágenes de menos de 1 MB de tamaño.
 
-![Miniaturas de notas](media/notes-thumbnail.png "Miniaturas de notas")
+![Miniatura de notas](media/notes-thumbnail.png "Miniatura de notas")
 
-## <a name="cors-protocol-support"></a>Compatibilidad con el protocolo CORS
+## <a name="cors-protocol-support"></a>Admisión de protocolo CORS
 
-El protocolo de [uso compartido de recursos entre orígenes (CORS)](https://www.w3.org/TR/cors/) se compone de un conjunto de encabezados que indica si una respuesta se puede compartir con otro dominio.
-La siguiente configuración del sitio se usa para configurar CORS:
+El protocolo [Uso compartido de recursos de origen cruzado (CORS)](https://www.w3.org/TR/cors/) se compone de un conjunto de encabezados que indican si una respuesta se puede compartir con otro dominio.
+La siguiente configuración se usa para configurar CORS.
 
 |                 Nombre                  |                                                                            Descripción                                                                            |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP/Access-Control-Allow-Credentials | El único valor válido para este encabezado es true (distingue mayúsculas de minúsculas). Si no necesita credenciales, omita completamente este encabezado (en lugar de establecer su valor en false). |
-|   HTTP/Access-Control-Allow-headers   |                                                   Una lista delimitada por comas de los encabezados de solicitud HTTP admitidos.                                                   |
-|   HTTP/Access-Control-Allow-Methods   |                                      Una lista delimitada por comas de los métodos de solicitud HTTP permitidos, como GET, POST, OPTIONs.                                       |
-|   HTTP/Access-Control-Allow-Origin    |                   Para permitir que cualquier recurso tenga acceso a los recursos, puede especificar \*. De lo contrario, especifique el URI que puede tener acceso a los recursos.                   |
-|  Encabezados HTTP/Access-Control-exexpote   |                Una lista delimitada por comas de nombres de encabezado HTTP distintos de los encabezados de respuesta simples que el recurso podría usar y que se pueden exponer.                 |
-|      HTTP/Access-Control-Max-Age      |                                                       Número máximo de segundos que los resultados se pueden almacenar en caché.                                                        |
+| HTTP/Access-Control-Allow-Credentials | El único valor válido para este encabezado es verdadero (con distinción entre mayúsculas de minúsculas). Si no necesita las credenciales, omita este encabezado completamente (en lugar de establecer el valor en falso). |
+|   HTTP/Access-Control-Allow-Headers   |                                                   Una lista delimitada por comas de los encabezados de solicitud HTTP admitidos.                                                   |
+|   HTTP/Access-Control-Allow-Methods   |                                      Una lista delimitada por comas de los métodos de solicitud HTTP admitidos como OBTENER, CORREO, OPCIONES.                                       |
+|   HTTP/Access-Control-Allow-Origin    |                   Para permitir que un recurso acceda a las recursos, puede especificar \*. De lo contrario, especifique el URI que puede tener acceso a los recursos.                   |
+|  HTTP/Access-Control-Expose-Headers   |                Una lista delimitada por comas de nombres de encabezado HTTP distintos a los encabezados de respuesta sencillos que el recurso puede usar y a los que puede ser expuesto.                 |
+|      HTTP/Access-Control-Max-Age      |                                                       El número máximo de segundos que se pueden almacenar los resultados en la caché.                                                        |
 |                                       |                                                                                                                                                                   |
 

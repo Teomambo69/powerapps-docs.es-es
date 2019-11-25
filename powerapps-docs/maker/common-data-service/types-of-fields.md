@@ -4,28 +4,34 @@ description: Comprender los distintos tipos de datos de campos disponibles para 
 keywords: ''
 ms.date: 09/30/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
+ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2767259"
 ---
 # <a name="types-of-fields"></a>Tipos de campos
 
-Los nombres usados para los tipos dependen del diseñador usado. El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) usa una convención que incluye la forma en que están formateados los datos. El tipo de explorador de soluciones usa un nombre alineado con el tipo de datos de la base de datos con un modificador de formato. La tabla siguiente incluye el tipo de API `AttributeTypeDisplayName` correspondiente.
+Los nombres usados para los tipos dependen del diseñador usado. El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) usa una convención que incluye la forma en que están formateados los datos. El tipo de explorador de soluciones usa un nombre alineado con el tipo de datos de la base de datos con un modificador de formato. La tabla siguiente incluye el tipo de API `AttributeTypeDisplayName` correspondiente.
 
 |Tipo de datos del portal |Tipo de explorador de soluciones| Tipo de API|
 |--|--|--|
@@ -37,6 +43,7 @@ Los nombres usados para los tipos dependen del diseñador usado. El [portal de P
 |**Número decimal**|**Número decimal**|`DecimalType`|
 |**Duración**|**Número entero**<br />Formato de*Duración*|`IntegerType`|
 |**Correo electrónico**|**Línea de texto única**<br />Formato de *Correo electrónico*|`StringType`|
+|**Archivo** | **Archivo**   | `FileType`  |
 |**Número de punto flotante**|**Número de punto flotante**|`DoubleType`|
 |**Imagen**|**Imagen**|`ImageType`|
 |**Idioma**|**Número entero**<br />Formato de *Idioma*|`IntegerType`|
@@ -152,7 +159,6 @@ Sin embargo, debe conocer que no todas las búsquedas se comportan de esta forma
 <a name="BKMK_ImageFields"></a>
 
 ## <a name="image-fields"></a>Campos de imagen  
-
 Use los campos de imagen para presentar una sola imagen por cada registro de la aplicación. Cada entidad puede tener un campo de imagen. Puede agregar un campo de imagen a entidades personalizadas pero no a entidades estándar. Algunas entidades estándar tienen campos de imágenes definidos.
   
 Aunque una entidad tenga un campo de imagen, la visualización de dicha imagen en una aplicación controlada por modelos requiere que habilite dos ajustes. 
@@ -164,7 +170,7 @@ Cuando se habilita la visualización de la imagen para una entidad, cualquier re
 > [!div class="mx-imgBorder"] 
 > ![Imagen de entidad predeterminada](../common-data-service/media/account-record-default-image.png "Imagen de entidad de cuenta predeterminada")
   
-Los usuarios pueden elegir la imagen predeterminada para cargar una imagen desde su equipo. Las imágenes deben ser de tamaño inferior a 5120 KB y deben tener uno de los siguientes formatos:  
+Los usuarios pueden elegir la imagen predeterminada para cargar una imagen desde su equipo. Las imágenes deben ser de tamaño inferior a 10 MB y deben tener uno de los siguientes formatos:  
   
 - jpg
 - jpeg
@@ -176,7 +182,24 @@ Los usuarios pueden elegir la imagen predeterminada para cargar una imagen desde
   
 Cuando la imagen se cargue, se convertirá al formato .jpg y todas las imágenes descargadas también usarán este formato. Si se carga un archivo .gif animado, solo se guardará el primer fotograma.  
   
-Cuando se cargue una imagen, su tamaño se modificará hasta una tamaño máximo de 144 píxeles por 144 píxeles. Los usuarios deben cambiar el tamaño de las imágenes o recortarlas antes de cargarlas, de modo que se muestren correctamente con este tamaño. Todas las imágenes se recortan para ser cuadradas. Si ambos lados de una imagen son más pequeños que 144 píxeles, la imagen se recortará para que sea cuadrada con las dimensiones del más pequeño.  
+Cuando se cargue una imagen, su tamaño se modificará como imagen en "miniaturaa" hasta una tamaño máximo de 144 píxeles por 144 píxeles. Los usuarios deben cambiar el tamaño de las imágenes o recortarlas antes de cargarlas, de modo que se muestren correctamente con este tamaño. Todas las imágenes se recortan para ser cuadradas. Si ambos lados de una imagen son más pequeños que 144 píxeles, la imagen se recortará para que sea cuadrada con las dimensiones del más pequeño.  
+
+<!-- 
+By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
+
+
+### Add an image field to an entity using the PowerApps site
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
+3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
+   - **Display name**. Enter a friendly name for the field. 
+   - **Data type**. Select **Image**. 
+   - **Primary image**. When selected, the primary image field becomes the image field for the entity. You can only have one primary image for each entity. 
+   - **Maximum image size**. The maximum file size that an app user can upload to the record. 10,240 KB is the default maximum size and 10 MB is the maximum size limit. 
+   - **Can store full images**. When selected, in addition to the rescaled thumbnail image described earlier, the full image is stored when uploaded by the user for each record. Full size images are limited to 30 MB.  -->
 
 ### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>Agregar compatibilidad de imagen para un formulario en una entidad personalizada usando el explorador de soluciones
 1. Abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer). 
@@ -186,7 +209,8 @@ Cuando se cargue una imagen, su tamaño se modificará hasta una tamaño máximo
 5. Escriba un **Nombre para mostrar**, como *Imagen de entidad personalizada*. 
 6. Complete los campos restantes como corresponda. Tenga en cuenta que los campos **Nombre**, **Requisitos de campo** y **Búsqueda** no podrán cambiarse. Seleccione **Guardar y cerrar**. 
 7. En la definición de entidad junto a la propiedad **Imagen principal** asegúrese de que el valor se ha configurado como la imagen personalizada que creó en el paso anterior. Si no es así, selecciónela.  
-    ![Propiedad de imagen principal seleccionada](media/primary-image-property.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Propiedad de imagen principal seleccionada](media/primary-image-property.png "Propiedad de imagen principal seleccionada")
 
 8.  Abra el formulario donde desea compatibilidad de imagen, como el formulario principal de entidad. 
 9.  En la cinta de opciones del editor de formularios, seleccione **Propiedades del formulario**. 
@@ -202,7 +226,9 @@ Los usuarios de la aplicación ahora pueden seleccionar la imagen para mostrar e
 > [!IMPORTANT]
 > Si el registro es un nuevo registro que no se ha guardado, el error Argumento no válido se devuelve al intentar cambiar la imagen. 
 
-#### <a name="change-the-image-for-a-record"></a>Cambiar la imagen para un registro
+### <a name="change-the-image-for-a-record"></a>Cambiar la imagen para un registro
+Una vez que un formulario de entidad tiene un campo de imagen, los usuarios de la aplicación pueden cambiar la imagen para un registro determinado. 
+
 1. Abra la aplicación que incluye el formulario de entidad y luego seleccione la imagen en el formulario. 
    > [!div class="mx-imgBorder"] 
    > ![Imagen de entidad predeterminada](../common-data-service/media/default-entity-image-on-form.png "Imagen de entidad predeterminada")
@@ -215,3 +241,15 @@ Los usuarios de la aplicación ahora pueden seleccionar la imagen para mostrar e
 Más información para desarrolladores que trabajan con datos de imágenes:
 - [Metadatos de entidad > Imágenes de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-images)
 - [Atributos de imagen](/powerapps/developer/common-data-service/image-attributes)
+
+
+## <a name="file-fields"></a>Campos del archivo
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Actualmente, el tipo de datos de archivo sólo está disponible para aplicaciones de lienzo y flujos. 
+
+El campo **Archivo** sirve para almacenar datos binarios. El uso principal previsto de este campo es almacenar una sola imagen, nota, o datos adjuntos. Sin embargo, el almacenamiento de otras formas de datos binarios es también posible. Uno o varios campos de este tipo de datos se pueden agregar a una entidad personalizable estándar existente o una entidad personalizada.
+
+El **Tamaño máximo de archivo** predeterminado es 32 MB y el tamaño mayor que puede establecer es 128 MB. El límite de tamaño de archivo puede establecerse de forma individual para cada campo del tipo de archivo agregado a una entidad. 
+
+Más información para desarrolladores que trabajan con datos de archivo: [Atributos de archivo](/powerapps/developer/common-data-service/file-attributes)

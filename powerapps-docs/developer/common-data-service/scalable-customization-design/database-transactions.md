@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: transacciones de bases de datos (Common Data Service) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: Transacciones de base de datos (Common Data Service) | Microsoft Docs'
 description: El segundo de una serie de temas. Este tema se centra en el impacto de las transacciones de bases de datos en el diseño de la personalización escalable
 ms.custom: ''
 ms.date: 1/15/2019
@@ -10,12 +10,17 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7e6f6fddb04c652b64054653fbaa9f8e0a63ad95
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749798"
 ---
-
 # <a name="scalable-customization-design-database-transactions"></a>Diseño de la personalización escalable: transacciones de bases de datos
 
 > [!NOTE]
@@ -23,8 +28,8 @@ search.app:
 
 Uno de los conceptos fundamentales que encierran muchos de los retos que surgen aquí es el de las transacciones de bases de datos. En Common Data Service, la base de datos está en el centro de casi todas las solicitudes al sistema y es el sitio donde la coherencia de los datos se aplica principalmente.
 
-- Ninguna de las operaciones de Common Data Service para aplicaciones, bien interna o como parte de las personalizaciones de código, funciona totalmente de forma aislada.
-- Todas las operaciones de datos de Common Data Service para aplicaciones interactúan con los mismos recursos de base de datos, bien en el nivel de los datos o de la infraestructura como el procesador, la memoria o el uso de E/S.
+- Ninguna de las operaciones de datos de Common Data Service, bien interna o como parte de las personalizaciones de código, funciona totalmente de forma aislada.
+- Todas las operaciones de datos de Common Data Service interactúan con los mismos recursos de base de datos, bien en el nivel de los datos o de la infraestructura como el procesador, la memoria o el uso de E/S.
 - Para protegerse frente a los cambios conflictivos, cada solicitud bloquea recursos para poder verse o modificarse.
 - Esos bloqueos se efectúan dentro de las transacciones y no se liberan hasta que la transacción se confirma o anula.
 
@@ -83,7 +88,7 @@ Es importante tener esto en cuenta ya que la depuración un problema normalmente
 
 Mientras que en la mayoría de los casos la forma en que se usan las transacciones puede dejarse a la plataforma que lo administre, hay situaciones donde la lógica necesaria es lo suficientemente compleja que resulta necesario entender y gestionar las transacciones para lograr los resultados deseados. Common Data Service ofrece una variedad de enfoques de personalización diferentes que tienen un impacto distinto en la forma en que se usan las transacciones.
 
-Cuando entienda cómo cada tipo de personalización participa en las transacciones de la plataforma, podrá modelar situaciones complejas de forma eficaz en Common Data Service para aplicaciones y predecir su comportamiento.
+Cuando entienda cómo cada tipo de personalización participa en las transacciones de la plataforma, podrá modelar situaciones complejas de forma eficaz en Common Data Service y predecir su comportamiento.
 
 Como se mencionó anteriormente, una transacción solo se retiene durante la duración de una solicitud a la plataforma, no es algo se mantenga después de completar el paso de la plataforma. De esta manera se evita que un cliente externo retenga las transacciones durante largos periodos de tiempo y se bloquen otras actividades de la plataforma.
 

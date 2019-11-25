@@ -1,19 +1,25 @@
 ---
-title: Actualización y eliminación de entidades con el servicio de la organización (Common Data Service) | Microsoft Docs
+title: Actualizar y eliminar entidades con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: Más información sobre cómo actualizar y eliminar entidades con el servicio de la organización.
 ms.custom: ''
 ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 974835002e6c65ce553d93393132dfa225baba7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749692"
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>Actualización y eliminación de entidades con el servicio de la organización
 

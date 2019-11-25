@@ -9,12 +9,17 @@ ms.date: 03/27/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41eb896c56809d1ceb289e86ee427f7a1b9f18db
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749818"
 ---
-
 # <a name="common-data-service-developer-guide"></a>Manual para desarrolladores de Common Data Service
 
 PowerApps proporciona a usuarios, empresas, fabricantes independientes de software (ISV) e integradores de sistemas (SI) una plataforma eficaz para crear aplicaciones de línea de negocio. **Common Data Service** es la plataforma subyacente de datos para PowerApps que contiene la funcionalidad básica como lógica del lado del servidor (complementos y flujos de trabajo), flujos de proceso de negocio, un modelo de seguridad bien avanzado, y una plataforma extensible para que los desarrolladores generen aplicaciones. 

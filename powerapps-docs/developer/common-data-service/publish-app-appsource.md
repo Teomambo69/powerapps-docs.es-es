@@ -1,6 +1,6 @@
 ---
 title: Publicar la aplicación en AppSource (Common Data Service) | Microsoft Docs
-description: 'Obtenga información sobre cómo publicar PowerApps en Microsoft AppSource para que los suscriptores puedan encontrarla, probarla y comprarla.'
+description: Obtenga información sobre cómo publicar PowerApps en Microsoft AppSource para que los suscriptores puedan encontrarla, probarla y comprarla.
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: AnnBe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d5d14f30fc5877a8021f61e8ba9b4d5176c7af9c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749813"
 ---
 # <a name="publish-your-app-on-appsource"></a>Publicar la aplicación en AppSource
 

@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Recuperar permisos de campos (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Recuperar permisos de campo (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo recuperar campos protegidos para un usuario
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1f4f8257a5567e1a4dcb982b960d5d3f8d1c8602
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749873"
 ---
 # <a name="sample-retrieve-field-permissions"></a>Ejemplo: recuperar permisos de campo
 
@@ -26,7 +32,7 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 **Nombre**: Samantha <br/>
 **Apellidos**: Smith<br/>
 **Rol de seguridad**: director de marketing<br/>
-**UserName**: ssmith@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: ssmith@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -43,7 +49,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 ### <a name="setup"></a>Configuración
 
 1. Comprobaciones para la versión actual de la organización.
-1. Obtiene la información del usuario que ha creado manualmente en **Office 365**.
+1. Obtiene información de usuarios que ha creado manualmente en **Office 365**.
 1. El método `QueryExpression` recupera el rol de seguridad necesario para asignar al usuario.
 1. El método `Team` crea instancias de un registro de entidad de equipo y establece sus valores de la propiedad.
 

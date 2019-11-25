@@ -1,6 +1,6 @@
 ---
 title: Entidades de importación de datos (Common Data Service) | Microsoft Docs
-description: 'Elabora una lista de las entidades de importación de datos utilizadas para crear asignaciones de datos, configurar y ejecutar importaciones de datos, y registrar la información de errores.'
+description: Elabora una lista de las entidades de importación de datos utilizadas para crear asignaciones de datos, configurar y ejecutar importaciones de datos, y registrar la información de errores.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 83d77703b9ec5190f2852283b0f661a6af818324
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749712"
 ---
 # <a name="data-import-entities"></a>Entidades de importación de datos
 

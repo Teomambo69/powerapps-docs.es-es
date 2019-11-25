@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754565"
 ---
 # <a name="ribbons-available"></a>Cintas de opciones disponibles
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
 
 En este tema se describe cómo se definen y modifican las cintas de opciones en aplicaciones basadas en modelos.
 
@@ -29,7 +35,7 @@ En este tema se describe cómo se definen y modifican las cintas de opciones en 
 
  Debido a este requisito de hacer referencia a las definiciones de los elementos existentes de las cintas de opciones, es muy importante comprender las definiciones actuales de las cintas de opciones de la organización. Hay dos mensajes que puede usar para exportar los archivos XML que representan el estado actual de las cintas de opciones. Esas definiciones incluyen las personalizaciones que ya se han aplicado en el sistema de modo que pueda personalizar las cintas de opciones personalizadas que se aplicaron previamente. Para obtener más información, consulte [Exportar definiciones de cinta de opciones](export-ribbon-definitions.md).  
 
- Para ayudarle a empezar puede descargar las definiciones de cintas de opciones predeterminadas para MDA desde [Descargas de Microsoft: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip). El archivo ExportedRibbonXml.zip incluye los archivos de salida que tendría en una organización con una cinta de opciones que no se ha personalizado. No es necesario ejecutar la aplicación de ejemplo para exportar estos datos. Si tiene una cinta personalizada, debe ejecutar la aplicación de ejemplo para actualizar los archivos de esta carpeta con las personalizaciones que haya aplicado previamente a la organización.  
+ Para ayudarle a empezar puede descargar las definiciones de cintas de opciones predeterminadas para MDA desde [Descargas de Microsoft: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip). El archivo ExportedRibbonXml.zip incluye los archivos de salida que tendría en una organización con una cinta de opciones que no se ha personalizado. No es necesario ejecutar la aplicación de ejemplo para exportar estos datos. Si tiene una cinta personalizada, debe ejecutar la aplicación de ejemplo para actualizar los archivos de esta carpeta con las personalizaciones que haya aplicado previamente a la organización.  
 
  En los archivos XML de cinta de opciones exportados, el archivo applicationRibbon.xml incluye todas las cintas de opciones que no se han definido para una entidad específica. Son las que corresponden al componente de la solución **Cintas de opciones de la aplicación**. Para cada entidad, encontrará un archivo *nombre de la entidad*ribbon.xml. Este corresponde al `RibbonDiffXml` que se incluye en cada entidad. Si desea modificar la cinta de opciones para una entidad específica, debe buscar el archivo XML de cinta de opciones de esa entidad.  
 
@@ -88,7 +94,7 @@ En este tema se describe cómo se definen y modifican las cintas de opciones en 
 
  Cuando se muestre una lista de registros de una entidad en una subcuadrícula en el formulario de otra entidad o en un gráfico, solo habrá tres controles disponibles directamente encima o dentro de la subcuadrícula. Los comportamientos de estos controles se pueden modificar cambiando los comandos que tienen asociados.  
 
-- **Agregar** El comportamiento predeterminado del comando con el icono ![botón Agregar](media/customization-subgrid-add.PNG "botón Agregar") depende de si los registros de la subcuadrícula están relacionados con el registro actual.  
+- **Agregar** El comportamiento predeterminado del comando con el icono ![botón Agregar](media/customization-subgrid-add.PNG "Botón Agregar") depende de si los registros de la subcuadrícula están relacionados con el registro actual.  
 
      Si los registros están relacionados con el registro actual, el comportamiento predeterminado es buscar registros existentes. Si no se encuentra un registro existente, o si el usuario simplemente desea para crear un nuevo registro, puede hacer clic en **Agregar nuevo**.  
 
@@ -99,13 +105,13 @@ En este tema se describe cómo se definen y modifican las cintas de opciones en 
      > [!NOTE]
      >  El modo sin conexión en Microsoft Dynamics 365 no admite relación de varios a varios en entidades personalizadas. Por este motivo, el botón **Agregar nuevo** en una subcuadrícula en Dynamics 365 en modo sin conexión no se mostrará.
 
-- **Mostrar lista** El comando con el icono ![botón Abrir vista](media/customization-open-view.PNG "botón Abrir vista") abrirá la lista completa donde se pueden usar todos los comandos disponibles.  
+- **Mostrar lista** El comando con el icono ![botón Abrir vista](media/customization-open-view.PNG "Botón Abrir vista") abrirá la lista completa donde se pueden usar todos los comandos disponibles.  
 
      Si la subcuadrícula está asociada con el registro actual, el comportamiento predeterminado de este comando es abrir la vista asociada.  
 
      Si la subcuadrícula no está asociada con el registro actual, el comportamiento predeterminado de este comando es abrir la vista en la vista de la lista principal.  
 
-- **Eliminar** El ![icono Eliminar sublista](media/customization-subgrid-delete.PNG "icono Eliminar sublista") aparece en la parte derecha de la fila cuando se mantiene el mouse sobre los registros de la lista.  
+- **Eliminar** El ![icono Eliminar sublista](media/customization-subgrid-delete.PNG "Icono Eliminar sublista") aparece en la parte derecha de la fila cuando se mantiene el mouse sobre los registros de la lista.  
 
      Para los registros con un una relación de 1:N o sin relación, el comportamiento predeterminado es eliminar el registro. La eliminación puede estar bloqueada si está prohibida debido a la configuración de la relación. Las actividades abiertas y las facturas son ejemplos comunes de registros que no pueden eliminarse debido a la configuración de la relación.  
 

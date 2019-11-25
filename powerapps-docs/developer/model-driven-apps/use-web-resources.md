@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8786c43f78438e993853b683e31a602bf86c3584
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749938"
 ---
-
 # <a name="use-web-resources"></a>Usar recursos web
 
 Hay una carpeta virtual denominada `webresources` en cada instancia de Common Data Service donde puede solicitar HTML, JS, CSS, imagen, y otros archivos por nombre y acceder a ellos en el explorador. Puede cargar estos archivos mediante la aplicación o mediante programación agregarlos como registros [Entidad WebResource](../common-data-service/reference/entities/webresource.md). El [Administrador de XrmToolBox WebResources](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/) es una herramienta de la comunidad que puede facilitar el trabajo con estos registros.

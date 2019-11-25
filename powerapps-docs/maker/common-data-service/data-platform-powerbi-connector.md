@@ -9,26 +9,32 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758964"
 ---
-# <a name="create-a-power-bi-report"></a>Cree un informe de Power BI
-Common Data Service le permite conectarse directamente a sus datos usando Power BI Desktop para crear informes y publicarlos en Power BI. Desde Power BI, los informes se pueden usar en paneles, se pueden compartir con otros usuarios y se puede acceder a ellos desde varias plataformas en las aplicaciones móviles de Power BI.
+# <a name="create-a-power-bi-report"></a>Crear informes Power BI
+Common Data Service le permite conectarse directamente a sus datos mediante Power BI Desktop para crear informes y para publicarlos en Power BI. Desde Power BI, los informes se pueden usar en paneles, se pueden compartir con otros usuarios y se puede acceder a ellos desde varias plataformas en las aplicaciones móviles de Power BI.
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para usar Power BI con Common Data Service, necesita lo siguiente:
+Pra usar Power BI con Common Data Service se requiere lo siguiente:
 
-* Descargar e instalar Power BI Desktop, que es una aplicación gratuita que se ejecuta en su ordenador local. Puede descargar Power BI Desktop [aquí](https://powerbi.microsoft.com/desktop/).
+* Descargar e instalar Power BI Desktop, que es una aplicación gratuita que se ejecuta en su equipo local. Puede descargar Power BI desktop [aquí](https://powerbi.microsoft.com/desktop/).
 * Un entorno de Common Data Service con permisos de creador para acceder al portal y permisos de lectura para acceder a los datos de las entidades.
 
-## <a name="finding-your-common-data-service-environment-url"></a>Buscar la dirección URL de su entorno de Common Data Service
+## <a name="finding-your-common-data-service-environment-url"></a>Buscar la dirección URL del entorno de Common Data Service
 
-1. Abra [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno al que se va a conectar, haga clic en **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**
+1. Abra [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno al que se va a conectar, haga clic en **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**
 
     ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Entorno de Common Data Service")
 
@@ -41,13 +47,13 @@ Para usar Power BI con Common Data Service, necesita lo siguiente:
     > [!div class="mx-imgBorder"] 
     > ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Entorno de Common Data Service")
 
-## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Conectarse a Common Data Service desde Power BI Desktop
+## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Conectando con Common Data Service desde Power BI Desktop
 
 1. Inicie **Power BI Desktop**. Si es la primera vez, se le presentará una pantalla de bienvenida o se le redirigirá directamente a un lienzo en blanco. En cualquier caso, haga clic en **Obtener datos** y seleccione **Más** para abrir la lista completa de orígenes de datos disponibles para Power BI Desktop.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop")
 
-2. Haga clic en **Servicios en línea** y en **Common Data Service (Beta)** de la lista de conectores. Haga clic en **Conectar**.
+2. Haga clic en **Servicios en línea** y en **Common Data Service** (Beta) de la lista de conectores. Haga clic en **Conectar**.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
@@ -94,12 +100,12 @@ Como ejemplo, si tuviera un conjunto de opciones en la entidad llamado ApprovalS
 
 ## <a name="navigating-relationships"></a>Navegar por las relaciones
 
-Para las relaciones de Common Data Service es necesario que cree una relación en PowerBI Desktop entre las dos entidades usando un campo GUID, que es un identificador único generado por el sistema que garantiza que las relaciones se crean para los registros creados en los que puede haber ambigüedad o duplicación con otros campos. Puede leer más acerca de la administración de relaciones en Power BI Desktop [aquí](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
+Para las relaciones de Common Data Service es necesario que cree una relación en PowerBI Desktop entre las dos entidades usando un campo GUID, que es un identificador único generado por el sistema que garantiza que las relaciones se crean para los registros creados en los que puede haber ambigüedad o duplicación con otros campos. Puede leer más acerca de la administración de relaciones en Power BI desktop [aquí](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
 
 Mientras algunas relaciones pueden crearse automáticamente, puede revisar y asegurarse de que se han establecido las relaciones correctas al crear el informe:
 
 * El campo de búsqueda en la entidad incluirá el GUID del registro en la entidad relacionada.
-* La entidad relacionada tendrá un campo con el formato “[EntityNameid]id”, que contiene el GUID, como Accountid o MyCustomEntityid
+* La entidad relacionada tendrá un campo con el formato “[EntityName]id”, que contiene el GUID, como Accountid o MyCustomEntityid
 * Con la función de administración de relaciones de PowerBI Desktop, crearía una nueva relación entre el campo de búsqueda y el campo de id. en la entidad relacionada.
 
 

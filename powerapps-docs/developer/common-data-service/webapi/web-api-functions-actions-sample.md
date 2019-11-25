@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de funciones y acciones de API web (Common Data Service) | Microsoft Docs
-description: 'Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service. Estos están implementados mediante JavaScript del lado cliente y C#'
+title: Ejemplo de funciones y acciones de la API web (Common Data Service)| Microsoft Docs
+description: Este grupo de ejemplos muestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service. Estos están implementados mediante JavaScript del lado cliente y C#
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 953c3137-6171-4e6e-b249-6a96221c6e96
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f119709c48f4d98050ecd5384681dcf0b954a664
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753648"
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Ejemplo de funciones y acciones de la API web
 
-Este grupo de ejemplos demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas las acciones personalizadas, mediante la API web de Common Data Service. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
+Este grupo de ejemplos muestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service. Este ejemplo se implementa como proyecto independiente para los siguientes idiomas:  
   
 -   [Ejemplo de funciones y acciones de la API web (C#)](samples/functions-actions-csharp.md)  
   
@@ -132,7 +138,7 @@ Obtener la solicitud y respuesta para la <xref href="Microsoft.Dynamics.CRM.WhoA
  **Solicitud**  
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/WhoAmI HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/WhoAmI HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8   
@@ -147,7 +153,7 @@ OData-Version: 4.0
 Content-Length: 273  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.WhoAmIResponse",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.WhoAmIResponse",  
    "BusinessUnitId":"0d6cc84a-d3f6-e511-80d0-00155da84802",  
    "UserId":"b08dc84a-d3f6-e511-80d0-00155da84802",  
    "OrganizationId":"0f47eae2-a906-4ae4-9215-f09875979f6a"  
@@ -163,7 +169,7 @@ Use una función sin enlazar para recuperar el código de la zona horaria. Esta 
  **Solicitud**  
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/GetTimeZoneCodeByLocalizedName(LocalizedStandardName=@p1,LocaleId=@p2)?@p1='Pacific%20Standard%20Time'&@p2=1033 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/GetTimeZoneCodeByLocalizedName(LocalizedStandardName=@p1,LocaleId=@p2)?@p1='Pacific%20Standard%20Time'&@p2=1033 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8 
@@ -178,7 +184,7 @@ OData-Version: 4.0
 Content-Length: 154  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedNameResponse",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedNameResponse",  
    "TimeZoneCode":4  
 }  
 ```  
@@ -199,7 +205,7 @@ Use una función enlazada para recuperar el tiempo total que tardaron en complet
  **Solicitud**  
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/incidents(3d920da5-fb4a-e611-80d5-00155da84802)/Microsoft.Dynamics.CRM.CalculateTotalTimeIncident() HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/incidents(3d920da5-fb4a-e611-80d5-00155da84802)/Microsoft.Dynamics.CRM.CalculateTotalTimeIncident() HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -215,7 +221,7 @@ OData-Version: 4.0
 Content-Length: 148  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.CalculateTotalTimeIncidentResponse",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.CalculateTotalTimeIncidentResponse",  
    "TotalTime":90  
 }  
 ```  
@@ -242,7 +248,7 @@ Use una acción sin enlazar que tome un conjunto de parámetros. Esta operación
  **Solicitud**  
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/WinOpportunity HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/WinOpportunity HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -251,7 +257,7 @@ Content-Type: application/json; charset=utf-8
    "Status":3,  
    "OpportunityClose":{  
       "subject":"Won Opportunity",  
-      "opportunityid@odata.bind":"http://[Organization URI]/api/data/v9.0/opportunities(47920da5-fb4a-e611-80d5-00155da84802)"  
+      "opportunityid@odata.bind":"https://[Organization URI]/api/data/v9.0/opportunities(47920da5-fb4a-e611-80d5-00155da84802)"  
    }  
 }  
 ```  
@@ -279,7 +285,7 @@ Use una acción enlazada que tome parámetros. Esta operación agrega una carta 
  **Solicitud**  
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/queues(1f7bcc50-d3f6-e511-80d0-00155da84802)/Microsoft.Dynamics.CRM.AddToQueue HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/queues(1f7bcc50-d3f6-e511-80d0-00155da84802)/Microsoft.Dynamics.CRM.AddToQueue HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -302,7 +308,7 @@ OData-Version: 4.0
 Content-Length: 170  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.AddToQueueResponse",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.AddToQueueResponse",  
    "QueueItemId":"67bdfabd-fc4a-e611-80d5-00155da84802"  
 }  
 ```  
@@ -342,7 +348,7 @@ La solicitud y respuesta de la acción.
  **Solicitud**  
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/contacts(4d920da5-fb4a-e611-80d5-00155da84802)/Microsoft.Dynamics.CRM.sample_AddNoteToContact HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/contacts(4d920da5-fb4a-e611-80d5-00155da84802)/Microsoft.Dynamics.CRM.sample_AddNoteToContact HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -363,7 +369,7 @@ OData-Version: 4.0
 Content-Length: 149  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#annotations/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#annotations/$entity",  
    "annotationid":"ba146d0b-fd4a-e611-80d5-00155da84802"  
 }  
 ```  
@@ -373,7 +379,7 @@ Content-Length: 149
  **Solicitud**  
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/annotations(ba146d0b-fd4a-e611-80d5-00155da84802)?$select=subject,notetext&$expand=objectid_contact($select=fullname) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/annotations(ba146d0b-fd4a-e611-80d5-00155da84802)?$select=subject,notetext&$expand=objectid_contact($select=fullname) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -388,7 +394,7 @@ OData-Version: 4.0
 Content-Length: 450  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#annotations(subject,notetext,objectid_contact,objectid_contact(fullname))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#annotations(subject,notetext,objectid_contact,objectid_contact(fullname))/$entity",  
    "@odata.etag":"W/\"622978\"",  
    "subject":"The Title of the Note",  
    "notetext":"The text content of the note.",  
@@ -417,7 +423,7 @@ Esta operación llama a la acción personalizada `sample_CreateCustomer` para cr
  **Solicitud**  
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/sample_CreateCustomer HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/sample_CreateCustomer HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -446,7 +452,7 @@ Este ejemplo muestra que las acciones personalizadas pueden devolver mensajes de
  **Solicitud**  
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/sample_CreateCustomer HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/sample_CreateCustomer HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -486,7 +492,7 @@ Expected custom error: ContactFirstName and ContactLastName are required when Cu
   
 ### <a name="see-also"></a>Vea también  
 
-[Utilizar API Web de Common Data Service](overview.md)<br />
+[Usar la API web de Common Data Service](overview.md)<br />
 [Usar funciones de la API web](use-web-api-functions.md)<br />
 [Usar acciones de la API web](use-web-api-actions.md)<br />
 [Ejemplo de funciones y acciones de la API web (C#)](samples/functions-actions-csharp.md)<br />

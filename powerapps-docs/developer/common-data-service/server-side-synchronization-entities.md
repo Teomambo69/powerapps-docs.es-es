@@ -1,6 +1,6 @@
 ---
 title: Entidades de sincronización del lado del servidor (Common Data Service) | Microsoft Docs
-description: 'La sincronización del lado del servidor proporciona una interfaz entre Common Data Service y uno o más servidores Exchange o servidores POP3 para correo electrónico entrante, y uno o más servidores SMTP o Exchange para el correo electrónico saliente.'
+description: En , la sincronización del lado del servidor proporciona una interfaz entre Common Data Service y uno o más servidores de Exchange o POP3 para el correo electrónico entrante, y uno o más servidores SMTP o Exchange para el correo electrónico saliente.
 ms.custom: ''
 ms.date: 02/21/2019
 ms.reviewer: kvivek
@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: mayadu
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4117b79af2015c7f6f48eabfd88ae3bb62ab8089
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749793"
 ---
 # <a name="server-side-synchronization-entities"></a>Entidades de sincronización del lado del servidor
 
-En PowerApps, la sincronización del lado del servidor proporciona una interfaz entre Common Data Service y uno o más servidores Exchange o servidores POP3 para correo electrónico entrante, y uno o más servidores SMTP o Exchange para el correo electrónico saliente. Recupera y evalúa los correos electrónicos para ver su importancia para Common Data Service y crea en consecuencia las actividades de correo electrónico correspondientes en Common Data Service. También recoge los mensajes de correo electrónico de Common Data Service y los envía a través del servidor de correo electrónico configurado para los usuarios y las colas de . También permite la sincronización de citas, contactos y tareas con Exchange Server 2010 y Exchange Server 2013.  
+En PowerApps, la sincronización del lado del servidor proporciona una interfaz entre Common Data Service y uno o más servidores Exchange o POP3 para el correo electrónico entrante, y uno o más servidores SMTP o Exchange para el correo electrónico saliente. Recupera los mensajes de correo electrónico y evalúa su relevancia para Common Data Service y, según corresponda, crea las actividades de correo electrónico correspondientes en Common Data Service. También recoge los mensajes de correo electrónico de Common Data Service y los envía a través del servidor de correo electrónico configurado para los usuarios y las colas de . También permite la sincronización de citas, contactos y tareas con Exchange Server 2010 y Exchange Server 2013.  
   
- Gracias a la configuración de correo electrónico centralizada, el modelo de entidad de Common Data Service permite tener una configuración común de la interfaz de usuario (UI) (como nombre de usuario, contraseña, dirección de correo electrónico y métodos de sincronización) para los usuarios, las colas y los buzones de enrutamiento. Cada usuario o las colas pueden tener buzones, que se pueden supervisar mediante la sincronización del lado del servidor o Microsoft Dynamics 365 for Outlook. La entidad [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile) representa el perfil de servidor de correo electrónico de una organización. La entidad [Buzón](/powerapps/developer/common-data-service/reference/entities/mailbox) representa el método de entrega de citas, contactos y tareas del buzón. Actualmente, la entidad de usuario está limitada a tener un solo registro de buzón por usuario y la entidad de colas a tener un solo registro de buzón por cola, como se muestra en la ilustración siguiente.  
+ Gracias a la configuración de correo electrónico centralizada, el modelo de entidad de Common Data Service permite tener una configuración común de la interfaz de usuario (UI) (como nombre de usuario, contraseña, dirección de correo electrónico y métodos de sincronización) para los usuarios, las colas y los buzones de enrutamiento. Cada usuario o cola puede tener buzones, los que se pueden supervisar mediante la sincronización del lado del servidor o Microsoft Dynamics 365 for Outlook. La entidad [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile) representa el perfil de servidor de correo electrónico de una organización. La entidad [Buzón](/powerapps/developer/common-data-service/reference/entities/mailbox) representa el método de entrega de citas, contactos y tareas del buzón. Actualmente, la entidad de usuario está limitada a tener un solo registro de buzón por usuario y la entidad de colas a tener un solo registro de buzón por cola, como se muestra en la ilustración siguiente.  
   
  ![Modelo de entidad de conector de correo electrónico](media/email-connector-entity-model.png "Modelo de entidad de conector de correo electrónico")  
   

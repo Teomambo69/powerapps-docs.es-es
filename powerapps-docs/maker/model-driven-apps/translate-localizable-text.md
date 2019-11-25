@@ -4,24 +4,30 @@ description: Aprenda a obtener el texto traducido localizable para admitir vario
 ms.custom: ''
 ms.date: 06/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3d77d149-819b-45e6-8e70-1fbe54d5c153
 caps.latest.revision: 19
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754891"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>Traducir texto localizable para aplicaciones controladas por modelos
 
@@ -41,7 +47,7 @@ Si todavía no ha habilitado los idiomas para el entorno, siga los pasos descrit
 > Habilitar cada idioma puede llevar varios minutos. Durante este tiempo, puede que otros usuarios del entorno no puedan usar la aplicación. Debe habilitar los idiomas en el momento en que menos molestias ocasione a los usuarios.
 
 > [!TIP]
-> Mientras habilita los idiomas, anote los valores de LCID usados para cada idioma. Este valor representará el idioma en los datos exportados del texto localizable. Los códigos de idioma son identificadores de configuración regional de cuatro o cinco dígitos. Los valores de identificadores de configuración regional válidos pueden encontrarse en el [gráfico de identificadores de configuración regional (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128).
+> Mientras habilita los idiomas, anote los valores de LCID usados para cada idioma. Este valor representará el idioma en los datos exportados del texto localizable. Los códigos de idioma son identificadores de configuración regional de cuatro o cinco dígitos. Los valores de identificadores de configuración regional válidos pueden encontrarse en el [gráfico de identificadores de configuración regional (LCID)](https://go.microsoft.com/fwlink/?LinkId=122128).
 
 ## <a name="export-the-localizable-text"></a>Exportar el texto localizable
 
@@ -68,7 +74,7 @@ Si sabe traducir el texto o si sólo desea ver el formato, puede extraer el arch
  - `[Content_Types].xml`
  - `CrmTranslations.xml`
 
-Puede abrir el archivo CrmTranslations.xml con Microsoft Office Excel.
+Puede abrir el archivo CrmTranslations.xml con. Microsoft Office Excel.
 
 > [!TIP]
 > A menos que normalmente abra archivos XML con Excel, puede que sea más fácil abrir Excel y, después, abrir el archivo pegando la ruta de acceso al archivo CrmTranslations.xml extraído.

@@ -1,5 +1,5 @@
 ---
-title: Usar acciones de API web (Common Data Service) | Microsoft Docs
+title: Usar acciones de la API web (Common Data Service)| Microsoft Docs
 descriptions: Actions are reusable operations that can be performed using the Web API. These are used with a POST request to modify data on Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 53eafd67-385a-485b-9022-5127df08ea2f
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a45ec3bf62719dd5b161deb9d117aa476f249c57
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749750"
 ---
 # <a name="use-web-api-actions"></a>Usar acciones de la API web
 

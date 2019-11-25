@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Usar consultas consolidadas para realizar el seguimiento de objetivos (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Consultas de informe de usuario para seguir objetivos (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo usar consultas de informe para hacer un seguimiento de los objetivos
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d7b1f6f3f7d9af82e1b047da2ae760246c8ebdc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749850"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>Ejemplo: usar consultas de informe para realizar un seguimiento de los objetivos
 
@@ -26,17 +32,17 @@ Este ejemplo requiere tres usuarios adicionales que no están presentes en el si
 **Nombre**: Nancy<br/>
 **Apellidos**: Anderson<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: nanderson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: nanderson@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: David<br/>
 **Apellido**: Bristol<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: dbristol@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: dbristol@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: Kevin<br/>
 **Apellidos**: Cook<br/>
 **Rol de seguridad**: SalesManager<br/>
-**UserName**: kcook@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: kcook@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -53,7 +59,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 ### <a name="setup"></a>Configuración
 
 1. Comprobaciones para la versión actual de la organización.
-2. Recupera el jefe de ventas y a 2 representantes de ventas creados manualmente en **Office 365**.
+2. Recupera el jefe de ventas y a 2 representantes de ventas, creados manualmente en **Office 365**.
 3. Crea registros para admitir registros de `SalesOrder`.
 4. Crea una nueva unidad de venta para el ejemplo.
 5. Recupera el Id. de unidad predeterminado que se crea automáticamente al crear una nueva unidad de venta.

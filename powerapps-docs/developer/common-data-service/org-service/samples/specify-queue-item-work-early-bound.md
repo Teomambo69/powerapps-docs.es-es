@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Especificar un elemento de cola para trabajar en él (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Especificar un elemento de cola en el que trabajar(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo especificar un usuario que trabajará en un elemento de cola.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9f2c10cbe8dbbff691179977913b42c01588235b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749861"
 ---
 # <a name="sample-specify-a-queue-item-to-work-on"></a>Ejemplo: Especificar un elemento de cola para trabajar
 

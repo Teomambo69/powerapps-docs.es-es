@@ -2,21 +2,21 @@
   items:
     - name: Convertir un fax en una tarea
       href: convert-fax-task.md
-    - name: Crear un correo electrónico mediante una plantilla
+    - name: Crear un mensaje de correo electrónico usando una plantilla
       href: create-email-template.md
     - name: 'Crear, recuperar, actualizar y eliminar datos adjuntos de correo electrónico'
       href: create-retrieve-update-delete-email-attachment.md
     - name: Promover un mensaje de correo electrónico
       href: promote-email-message.md
-    - name: Recuperar los datos adjuntos de correo electrónico para una plantilla de correo electrónico
+    - name: Recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico
       href: retrieve-email-attachments-email-template.md
-    - name: Enviar un correo electrónico mediante una plantilla
+    - name: Enviar un mensaje de correo electrónico usando una plantilla
       href: send-email-template.md
-    - name: Enviar un correo electrónico
+    - name: Enviar un mensaje de correo electrónico
       href: send-email.md
-    - name: Enviar correo electrónico masivo y supervisar los resultados
+    - name: Enviar los resultados de supervisión y correo electrónico en masa
       href: send-bulk-email-monitor-results.md
-    - name: Trabajar con registros de grupo de entidad
+    - name: Trabajar con registros de grupo de actividad
       href: work-activity-party-records.md
 - name: Citas
   items:
@@ -34,39 +34,39 @@
       href: query-working-hours-user.md
     - name: Consultar las horas laborables de varios usuarios
       href: query-working-hours-multiple-users.md
-    - name: Volver a programar y cancelar una cita periódica
+    - name: Reprogramar y cancelar una cita periódica
       href: reschedule-cancel-recurring-appointment.md
     - name: Validar una cita
       href: validate-appointment.md
 - name: Auditoría
   items:
-    - name: Auditar los cambios de datos de entidad
+    - name: Cambios de los datos de la entidad de auditoría
       href: audit-entity-data-changes.md
-    - name: Auditar el acceso de usuario
+    - name: Auditoría de acceso de usuario
       href: audit-user-access.md
 - name: Integración de Azure
   items:
-    - name: Complemento personalizado compatible con Azure
+    - name: Complemento personalizado con Azure
       href: azure-aware-custom-plugin.md
-    - name: Actividad de flujo de trabajo personalizado compatible con Azure
+    - name: Actividad personalizada de flujo de trabajo basada en Azure
       href: azure-aware-custom-workflow-activity.md
-    - name: Agente de escucha unidireccional
+    - name: Módulo de escucha unidireccional
       href: one-way-listener.md
-    - name: Agente de escucha de cola persistente
+    - name: Escucha de cola persistente
       href: persistent-queue-listener.md
-    - name: Agente de escucha REST
+    - name: Escucha de REST
       href: rest-listener.md
-    - name: Agente de escucha bidireccional
+    - name: Módulo de escucha bidireccional
       href: two-way-listener.md
-- name: Eliminación masiva
+- name: Eliminación en masa
   items:
-    - name: Eliminar de forma masiva los registros exportados
+    - name: Eliminación en masa de los registros exportados
       href: bulk-delete-exported-records.md
-    - name: Eliminar de forma masiva los registros que coinciden con criterios comunes
+    - name: Eliminar registros en masa que coincidan con los criterios comunes
       href: bulk-delete-records-match-common-criteria.md
-- name: Seguimiento de los cambios
+- name: Seguimiento de cambios
   items:
-    - name: Sincronizar los datos con sistemas externos mediante el seguimiento de cambios
+    - name: Sincronizar datos con sistemas externos utilizando seguimiento de cambios
       href: synchronize-data-external-systems-using-change-tracking.md
 - name: Conexiones
   items:
@@ -74,25 +74,25 @@
       href: create-connection-early-bound.md
     - name: Crear un rol de conexión
       href: create-connection-role-early-bound.md
-    - name: Crear un rol de conexión recíproca
+    - name: Creación de un rol de conexión recíproca
       href: create-reciprocal-connection-role-early-bound.md
-    - name: Consultar las conexiones por un registro
+    - name: Consultar conexiones para un registro
       href: query-connections-record-early-bound.md
-    - name: Consultar los roles de conexión por el código de tipo de entidad
+    - name: Consulta de roles de conexión por código de tipo de entidad
       href: query-connection-roles-entity-type-code-early-bound.md
-    - name: Consultar las conexiones por los roles recíprocos
+    - name: Consultar conexiones por roles recíprocos
       href: query-connections-reciprocal-roles-early-bound.md
 - name: Divisa
   items:
-    - name: Recuperar la tasa de cambio de moneda
+    - name: Recuperar el tipo de cambio de divisas
       href: retrieve-currency-exchange-rate.md
 - name: Personalización y metadatos
   items:
     - name: Crear una actividad personalizada
       href: create-custom-activity.md
-    - name: Volcar los metadatos de la entidad en un archivo
+    - name: Volcar metadatos de entidad en un archivo
       href: dump-entity-metadata-file.md
-    - name: Recuperar las transiciones de estado válidas
+    - name: Recuperar transiciones de estado válidas
       href: retrieve-valid-status-transitions.md
 - name: Detección de duplicados
   items:
@@ -100,19 +100,19 @@
       href: detect-multiple-duplicate-records.md
     - name: Habilitar la detección de duplicados y recuperar los duplicados
       href: enable-duplicate-detection-and-retrieve-duplicates.md
-    - name: Usar la detección de duplicados al crear y actualizar registros
+    - name: Uso de detección de duplicados para crear y actualizar registros
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: Registros de entidad
   items:
-    - name: Operaciones de entidad enlazadas en tiempo de compilación
+    - name: Operaciones de entidad en tiempo de compilación
       href: early-bound-entity-operations.md
-    - name: Operaciones de entidad enlazadas en tiempo de ejecución
+    - name: Operaciones de entidad en tiempo de ejecución
       href: late-bound-entity-operations.md
-    - name: Usar la simultaneidad optimista con operaciones de actualización y eliminación
+    - name: Uso de simultaneidad optimista con operaciones de actualización y eliminación
       href: use-optimistic-concurrency-update-delete-operations.md
-    - name: Compartir un registro mediante un equipo de acceso
+    - name: Compartir un registro utilizando un equipo de acceso
       href: share-record-using-access-team.md
-    - name: 'Compartir registros mediante mensajes GrantAccess, ModifyAccess y RevokeAccess'
+    - name: 'Compartir registros utilizando los mensajes GrantAccess, ModifyAccess y RevokeAccess'
       href: share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md
     - name: 'Cargar, recuperar y descargar datos adjuntos'
       href: upload-retrieve-download-attachment.md
@@ -120,34 +120,36 @@
       href: insert-update-record-upsert.md
 - name: Seguridad de nivel de campo
   items:
-    - name: Recuperar los permisos de campo
+    - name: Recuperar permisos de campo
       href: retrieve-field-permissions.md
-    - name: Recuperar los registros de uso compartido de campos
+    - name: Recuperar los registros de uso compartido de campo
       href: retrieve-field-sharing-records.md
     - name: Habilitar la seguridad de campo para una entidad
       href: enable-field-security-entity.md
 - name: Administración de objetivos
   items:
-    - name: Consolidar los datos de objetivos durante un período personalizado con respecto a los ingresos de destino
+    - name: Datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino
       href: rollup-goal-data-custom-period-target-revenue.md
-    - name: Consolidar los datos de objetivos durante un período fiscal con respecto al recuento de destinos extendidos
+    - name: Datos de objetivos consolidados para un período fiscal en comparación con el recuento de destino extendido
       href: rollup-goal-data-fiscal-period-stretch-target-count.md
-    - name: Usar las consultas de consolidación para realizar un seguimiento de los objetivos
+    - name: Usar consultas de informe para realizar un seguimiento de los objetivos
       href: use-rollup-queries-track-goals.md
-    - name: Invalidar el recuento total de objetivos y cerrar el objetivo
+    - name: Reemplazar el recuento total de objetivos y cerrar el objetivo
       href: override-goal-total-count-close-goal.md
 - name: Importar datos
   items:
-    - name: Exportar e importar un mapa de datos
+    - name: Exportar e importar una asignación de datos
       href: export-import-data-map.md
-    - name: Importar datos mediante un mapa de datos complejo
+    - name: Importar datos mediante la asignación de datos complejos
       href: import-data-complex-data-map.md
 - name: Complementos
   items:
-    - name: Acceso web desde un complemento
-      href: web-access-plugin.md
     - name: Crear un complemento básico
       href: basic-followup-plugin.md
+    - name: Modificar consulta en fase PreOperation
+      href: modify-query-preoperation-stage.md
+    - name: Acceso web desde un complemento
+      href: web-access-plugin.md
 - name: Colas
   items:
     - name: Agregar un registro a una cola
@@ -156,13 +158,13 @@
       href: add-security-principal-user-team-queue-early-bound.md
     - name: Limpiar el historial de una cola
       href: clean-up-history-queue-early-bound.md
-    - name: Liberar un elemento de cola a la cola
+    - name: Liberar un elemento en la cola
       href: release-queue-item-queue-early-bound.md
     - name: Especificar un elemento de cola en el que trabajar
       href: specify-queue-item-work-early-bound.md
 - name: SharePoint
   items:
-    - name: Recuperar la dirección URL absoluta y la dirección URL de colección de sitios de un registro de ubicación
+    - name: Recuperar una dirección URL absoluta y una dirección URL de colección de sitios de un registro de ubicación
       href: retrieve-absolute-url-and-site-collection-url-of-a-location-record.md
 - name: Operaciones especiales
   items:
@@ -172,29 +174,29 @@
   items:
     - name: Trabajar con soluciones
       href: work-solutions.md
-    - name: Detectar las dependencias de la solución
+    - name: Detectar dependencias de soluciones
       href: detect-solution-dependencies.md
 - name: Zonas horarias
   items:
-    - name: Recuperar la información de zona horaria
+    - name: Recuperar información de zona horaria
       href: retrieve-time-zone-information.md
-- name: Consulta de los datos
+- name: Consultar datos
   items:
     - name: Usar QueryExpression con una cookie de paginación
       href: use-queryexpression-with-a-paging-cookie.md
-    - name: Recuperar varios con la clase QueryExpression
+    - name: Recuperación múltiple con la clase QueryExpression
       href: retrieve-multiple-queryexpression-class.md
     - name: Recuperar varios con la clase QueryByAttribute
       href: retrieve-multiple-querybyattribute-class.md
-    - name: Convertir las consultas entre Fetch y QueryExpression
+    - name: Convertir consultas entre Fetch y QueryExpression
       href: convert-queries-fetch-queryexpression.md
-    - name: Recuperar los registros de una tabla de intersección
+    - name: Recuperar registros de una tabla de intersección
       href: retrieve-records-intersect-table.md
     - name: Validar y ejecutar una consulta guardada
       href: validate-execute-saved-query.md
-    - name: Usar la agregación en FetchXML
+    - name: Usar agregación en FetchXML
       href: use-aggregation-fetchxml.md
     - name: Usar FetchXML con una cookie de paginación
       href: use-fetchxml-paging-cookie.md
-- name: Acceder al servicio de detección
+- name: Acceso al servicio de detección
   href: access-discovery-service.md

@@ -1,24 +1,27 @@
 ---
 title: Acciones en visualizaciones (gráficos) (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Mediante los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de visualización.'
+description: Mediante los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de visualización.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: c7eb3bdf-9d6f-9bcc-8114-4c3dc5be2976
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5681b80b28a1691aa94be960a464c6c63ce04db4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749924"
 ---
-
 # <a name="actions-on-visualizations-charts"></a>Acciones en visualizaciones (gráficos)
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->

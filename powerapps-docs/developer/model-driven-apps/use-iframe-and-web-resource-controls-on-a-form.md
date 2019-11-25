@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a42b5b1456700e93ba5cde5a8aaf2dddd63325d4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753532"
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>Usar IFRAME y controles de recursos web en un formulario
 
@@ -23,7 +29,7 @@ search.app:
 IFRAME y los controles de recursos web insertan contenido desde otra ubicación en las páginas mediante un elemento de IFRAME HTML.  
 
 > [!NOTE]
->  Los diseños que elige para el formulario también se usan para el panel de lectura de Dynamics 365 for Outlook y los formularios usados por Dynamics 365 for tablets. Los recursos web e IFRAME no se muestran utilizando el panel de lectura de Dynamics 365 for Outlook, sin embargo, se admiten en Dynamics 365 for tablets. Si su IFRAME depende del acceso al objeto de `Xrm` de la página o a cualquier controlador de eventos de formulario, deberá configurar IFRAME para que no sea visible de forma predeterminada.  
+>  Los diseños que elige para el formulario también se usan para el panel de lectura de Dynamics 365 for Outlook y los formularios usados por tabletas de Dynamics 365. Los recursos web e IFRAMES no se muestran usando del panel de lectura de Dynamics 365 for Outlook, sin embargo, se admiten en Dynamics 365 para tabletas. Si su IFRAME depende del acceso al objeto de `Xrm` de la página o a cualquier controlador de eventos de formulario, deberá configurar IFRAME para que no sea visible de forma predeterminada.  
 
  Puede usar un IFRAME para mostrar los contenidos de otro sitio web en un formulario, por ejemplo, en una página ASP.NET. No se puede mostrar un formulario de entidad en un iFrame incrustado en otro formulario de entidad.  
 
@@ -43,15 +49,15 @@ IFRAME y los controles de recursos web insertan contenido desde otra ubicación 
 
 |        Atributo        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `security="restricted"` |                                                                                                                                                                                                                                                                                                    Este atributo solo es compatible con las versiones de Internet Explorer no anteriores a la versión 6. El atributo de seguridad aplica el ajuste de seguridad del usuario Sitios restringidos al archivo de origen del IFRAME. (La configuración de la zona se encuentra en la pestaña **Seguridad** del cuadro de diálogo **Opciones de Internet** .) De forma predeterminada, el scripting no está habilitado en la zona Sitios restringidos. Mediante el cambio de la configuración de seguridad de la zona, se pueden producir varios resultados negativos, incluido el permitir la ejecución de scripts. Para obtener más información, consulte [atributo de seguridad](https://msdn.microsoft.com/library/ie/ms534622.aspx).                                                                                                                                                                                                                                                                                                     |
-|      `sandbox=""`       | Para exploradores que admiten este atributo, el contenido del IFRAME está esencialmente limitado a solo mostrar información. Se pueden aplicar las siguientes restricciones:<br /><br /> -   Los complementos del explorador están deshabilitados.<br />-   Los formularios y scripts están deshabilitados.<br />-   Los vínculos a otros contextos de navegación están deshabilitados.<br />-   El contenido se trata como procedente de un dominio diferente aunque el dominio sea el mismo.<br /><br /> Este atributo se define mediante W3C y es compatible con los siguientes exploradores:<br /><br /> - Internet Explorer 10, Internet Explorer 11, y Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> Para obtener más información sobre el atributo de espacio aislado, consulte:<br /><br /> -   [Cómo proteger su sitio con espacios aislados HTML5](https://msdn.microsoft.com/hh563496)<br />-   [Atributo de espacios aislados WC3](http://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [Espacio aislado](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
+| `security="restricted"` |                                                                                                                                                                                                                                                                                                    Este atributo solo es compatible con las versiones DE Internet Explorer no anteriores a la versión 6. El atributo de seguridad aplica el ajuste de seguridad del usuario Sitios restringidos al archivo de origen del IFRAME. (La configuración de la zona se encuentra en la pestaña **Seguridad** del cuadro de diálogo **Opciones de Internet** .) De forma predeterminada, el scripting no está habilitado en la zona Sitios restringidos. Mediante el cambio de la configuración de seguridad de la zona, se pueden producir varios resultados negativos, incluido el permitir la ejecución de scripts. Para obtener más información, consulte [atributo de seguridad](https://msdn.microsoft.com/library/ie/ms534622.aspx).                                                                                                                                                                                                                                                                                                     |
+|      `sandbox=""`       | Para exploradores que admiten este atributo, el contenido del IFRAME está esencialmente limitado a solo mostrar información. Se pueden aplicar las siguientes restricciones:<br /><br /> -   Los complementos del explorador están deshabilitados.<br />-   Los formularios y scripts están deshabilitados.<br />-   Los vínculos a otros contextos de navegación están deshabilitados.<br />-   El contenido se trata como procedente de un dominio diferente aunque el dominio sea el mismo.<br /><br /> Este atributo se define mediante W3C y es compatible con los siguientes exploradores:<br /><br /> - Internet Explorer 10, Internet Explorer 11 y Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> Para obtener más información sobre el atributo de espacio aislado, consulte:<br /><br /> -   [Cómo proteger su sitio con espacios aislados HTML5](https://msdn.microsoft.com/hh563496)<br />-   [Atributo de espacios aislados WC3](https://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [Espacio aislado](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
 
 <a name="BKMK_EnableIFrameCommunicationAcrossDomains"></a>   
 
 ### <a name="enabling-iframe-communication-across-domains"></a>Activación de la comunicación de IFrame entre dominios  
- Hay momentos en los que conviene habilitar la comunicación para un IFRAME que contiene contenido de un dominio diferente. `Window.postMessage` es un método del explorador que proporciona esta capacidad para las versiones de Internet Explorer no anteriores a Internet Explorer 8. Google Chrome, Mozilla Firefox, y Apple Safari también lo admiten. Para obtener más información acerca del uso de `postMessage`, vea las entradas de blog siguientes.  
+ Hay momentos en los que conviene habilitar la comunicación para un IFRAME que contiene contenido de un dominio diferente. `Window.postMessage` es un método del explorador que proporciona esta capacidad para las versiones Internet Explorer no anteriores a Internet Explorer 8. Google Chrome, Mozilla Firefox, y Apple Safari también lo admiten. Para obtener más información acerca del uso de `postMessage`, vea las entradas de blog siguientes.  
 
--   [Llamadas entre dominios al formulario principal](http://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
+-   [Llamadas entre dominios al formulario principal](https://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
 
 -   [Mensajería y RPC entre documentos](https://msdn.microsoft.com/magazine/ff800814.aspx)  
 
@@ -80,18 +86,18 @@ IFRAME y los controles de recursos web insertan contenido desde otra ubicación 
  El siguiente ejemplo muestra la dirección URL sin parámetros.  
 
 ```  
-http://myserver/mypage.aspx  
+https://myserver/mypage.aspx  
 ```  
 
  El siguiente ejemplo muestra la dirección URL con parámetros.  
 
 ```  
-http://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
+https://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
 ```  
 
 ### <a name="read-passed-parameters"></a>Leer parámetros pasados  
 
- Los parámetros pasados se leen normalmente en la página .aspx de destino mediante la propiedad **HttpRequest.QueryString**. En una página HTML, se puede acceder a los parámetros utilizando la propiedad **window.location.search** en JavaScript. Para obtener más información, consulte [HttpRequest.QueryString Property](http://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx) y [la propiedad de búsqueda](http://msdn2.microsoft.com/library/ms534620.aspx).  
+ Los parámetros pasados se leen normalmente en la página .aspx de destino mediante la propiedad **HttpRequest.QueryString**. En una página HTML, se puede acceder a los parámetros utilizando la propiedad **window.location.search** en JavaScript. Para obtener más información, consulte [HttpRequest.QueryString Property](https://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx) y [la propiedad de búsqueda](https://msdn2.microsoft.com/library/ms534620.aspx).  
 
 <a name="BKMK_PassFormData"></a>  
 
@@ -123,10 +129,10 @@ var newTarget = "";
 //Set the target based on the value of the option set  
 switch (value) {  
     case 100000001:  
-        newTarget = "http://myServer/test/pageOne.aspx";  
+        newTarget = "https://myServer/test/pageOne.aspx";  
         break;  
     default:  
-        newTarget = "http://myServer/test/pageTwo.aspx";  
+        newTarget = "https://myServer/test/pageTwo.aspx";  
         break;  
 }  
 //Get the default URL for the IFRAME, which includes the   

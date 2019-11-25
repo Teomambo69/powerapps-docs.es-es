@@ -9,30 +9,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 helpviewer_keywords:
-  - schemas
+- schemas
 ms.assetid: 71e3e594-0240-4af1-99b4-135042b7a000
 caps.latest.revision: 19
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb442292ace97b5b0a1eebb351b146d096ce828b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753008"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
 
 # <a name="customization-solutions-file-schema"></a>Esquema de archivo de soluciones de personalización
 
 
-A continuación se presenta la definición de esquema de un archivo de personalización de importación/exportación de Common Data Service. 
+La siguiente es la definición de esquema para un archivo de personalización de importación/exportación desde Common Data Service. 
 
 Puede encontrar el esquema en la carpeta `Schemas\9.0.0.2090\CustomizationsSolution.xsd` al descargar el archivo zip de esquemas.
 
-Descargue los [esquemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
+Descargue los [esquemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
 
 Para obtener más información, consulte [Información general de las soluciones](../../maker/common-data-service/solutions-overview.md)
   
@@ -40,7 +46,7 @@ Para obtener más información, consulte [Información general de las soluciones
   
 ```xml  
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xs:include schemaLocation="isv.config.xsd" />
     <xs:include schemaLocation="SiteMapType.xsd" />
     <xs:include schemaLocation="FormXml.xsd" />

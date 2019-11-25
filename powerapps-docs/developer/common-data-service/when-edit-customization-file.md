@@ -4,21 +4,24 @@ description: El archivo customizations.xml que se exporta como parte de una solu
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: cac303a6-70f9-3962-879a-fbf7fdc2364f
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dee119bec4c4a57995f0f2c4299c199c9a45caf1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749744"
 ---
-
 # <a name="when-to-edit-the-customizations-file"></a>Cuándo modificar el archivo de personalizaciones
 
 El archivo customizations.xml que se exporta como parte de una solución no administrada se puede editar para realizar tareas específicas de personalización. Después de modificar el archivo puede comprimir el archivo editado así como los demás archivos exportados en la solución no administrada. Aplique los cambios importando esa solución modificada no administrada.  

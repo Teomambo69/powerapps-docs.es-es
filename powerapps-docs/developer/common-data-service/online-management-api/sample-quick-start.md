@@ -1,6 +1,6 @@
 ---
 title: 'Ejemplo de inicio rápido: Recuperar entornos de Common Data Service mediante la API de administración en línea| MicrosoftDocs'
-description: 'En el ejemplo de C# se muestra cómo autenticarse en la API de Online Management y recuperar todos los entornos de Common Data Service del inquilino de Office 365.'
+description: En el ejemplo de C# se muestra cómo autenticarse en la API de Online Management y recuperar todos los entornos de Common Data Service del inquilino de Office 365.
 ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749704"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>Ejemplo de inicio rápido: Recuperar entornos de Common Data Service mediante la API de administración en línea 
 

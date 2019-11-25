@@ -1,5 +1,5 @@
 ---
-title: Utilizar útiles de XRM para crear datos (Common Data Service)| Microsoft Docs
+title: Usar herramientas XRM para crear datos (Common Data Service)| Microsoft Docs
 description: Utilizar la clase CrmServiceClient para crear datos en Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f6a03552-1f07-4d4b-b7ae-fa246a0d7c29
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0ff7b7c8b1e6833a705d3a6f49e48b8518342763
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749640"
 ---
 # <a name="use-xrm-tooling-to-create-data"></a>Usar útiles de XRM para crear los datos
 
@@ -98,4 +104,4 @@ else
 ### <a name="see-also"></a>Vea también  
 
 [Ejemplo: inicio rápido para la API de útiles de XMR](sample-quick-start-xrm-tooling-api.md)<br />
-[Use la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)
+[Usar la API de útiles XRM para ejecutar acciones en Common Data Service](use-xrm-tooling-execute-actions.md)

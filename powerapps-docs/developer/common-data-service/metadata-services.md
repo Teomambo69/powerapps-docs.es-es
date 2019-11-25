@@ -1,6 +1,6 @@
 ---
-title: Trabajar con metadatos mediante código (Common Data Service) | Microsoft Docs
-description: 'La [API web](webapi/overview.md) y el [Servicio de organización](org-service/overview.md) incluyen funciones para realizar operaciones CRUD en el esquema de la entidad'
+title: Trabajar con metadatos con código (Common Data Service) | Microsoft Docs
+description: La [API web](webapi/overview.md) y el [Servicio de organización](org-service/overview.md) incluyen funciones para realizar operaciones CRUD en el esquema de la entidad
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: kvivek
@@ -10,12 +10,17 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 853fc53221f82a25aeab271c5fca53b19d17eabe
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749709"
 ---
-
 # <a name="work-with-metadata-using-code"></a>Trabajar con metadatos mediante código
 
 La [API web](webapi/overview.md) y el [Servicio de organización](org-service/overview.md) incluyen funciones para realizar operaciones CRUD en el esquema de la entidad. Aunque puede realizar estas operaciones con código, normalmente usará diseñadores para agregar, actualizar o eliminar elementos de esquema personalizados. Los usuarios deben tener privilegios de administrador para aplicar los cambios de esquema, pero todos los usuarios podrán leer metadatos.
@@ -35,5 +40,5 @@ Desarrollar una buena comprensión de los metadatos en el sistema le pueden ayud
 ## <a name="programmatically-work-with-metadata"></a>Trabajar con metadatos mediante programación
 
 Para obtener más información sobre cómo trabajar mediante programación con metadatos utilizando:
-- **API web**: [Use la API web con metadatos de Common Data Service](webapi/use-web-api-metadata.md)
+- **API web**: [Usar la API web con metadatos Common Data Service](webapi/use-web-api-metadata.md)
 - **Servicio de organización**: [Usar el servicio de organización con metadados de Common Data Service](org-service/work-with-metadata.md)

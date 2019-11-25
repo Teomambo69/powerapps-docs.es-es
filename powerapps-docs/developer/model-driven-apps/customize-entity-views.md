@@ -4,21 +4,24 @@ description: Obtenga información sobre cómo personalizar las vistas de entidad
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: da2a9b57-fcd2-38c5-c670-63acf1767efa
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 26070652e0cafe91731384a75ae66334288eef9e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749908"
 ---
-
 # <a name="customize-entity-views"></a>Personalizar vistas de entidad
 
 Las vistas de entidad son consultas guardadas especiales que recuperan datos mediante un filtro específico. También contienen información sobre cómo se deben mostrar los datos de la vista en la aplicación. Las vistas de entidad son registros `SavedQuery` que se pueden crear mediante programación. También puede definirlas como XML, e importarlas con una solución no administrada.  
@@ -263,7 +266,7 @@ System.String layoutXml =
   
  Suponiendo que muy probablemente agregará iconos personalizados para un tipo de conjunto de opciones de atributo, ya que tiene un conjunto limitado de opciones predefinidas, asegúrese de que usa el valor entero de las opciones en lugar de etiqueta para evitar romper el código debido a cambios en la cadena de etiqueta localizada. Además, en la función JavaScript, especifique únicamente el nombre de un recurso web de imagen que desee usar como icono para un valor del atributo. La imagen debe ser de tamaño 16x16 píxeles; las imágenes más grandes automáticamente se reducirán proporcionalmente al tamaño 16x16 píxeles.  
   
- El siguiente código de ejemplo muestra iconos e informaciones sobre herramientas distintos basándose en uno de los valores (1: Muy interesado, 2: Algo interesado, 3: No interesado) del atributo `opportunityratingcode (Rating)`. El código de ejemplo también muestra cómo mostrar texto de información sobre herramientas localizado. Para que este ejemplo funcione, debe crear tres recursos web de imagen cada uno con imágenes de 16 x 16 (![botón de clasificación Muy interesado](media/dynamics365hotgridicon.png "botón de clasificación Muy interesado"), ![símbolo de clasificación Algo interesado](media/dynamics365warmgridicon.png "símbolo de clasificación Algo interesado") y ![botón de clasificación No interesado](media/dynamics365coldgridicon.png "botón de clasificación No interesado")) en su instancia con los siguientes nombres respectivamente: `new_Hot`, `new_Warm` y `new_Cold`.  
+ El siguiente código de ejemplo muestra iconos e informaciones sobre herramientas distintos basándose en uno de los valores (1: Muy interesado, 2: Algo interesado, 3: No interesado) del atributo `opportunityratingcode (Rating)`. El código de ejemplo también muestra cómo mostrar texto de información sobre herramientas localizado. Para que este ejemplo funcione, debe crear tres recursos web de imagen cada uno con imágenes de 16 x 16 (![botón de clasificación Muy interesado](media/dynamics365hotgridicon.png "Botón de calificación Muy interesado"), ![símbolo de clasificación Algo interesado](media/dynamics365warmgridicon.png "Símbolo de calificación Algo interesado")y ![botón de clasificación No interesado](media/dynamics365coldgridicon.png "Botón de calificación No interesado")) en su instancia con los siguientes nombres respectivamente: `new_Hot`, `new_Warm` y `new_Cold`.  
   
 ```javascript 
 function displayIconTooltip(rowData, userLCID) {      

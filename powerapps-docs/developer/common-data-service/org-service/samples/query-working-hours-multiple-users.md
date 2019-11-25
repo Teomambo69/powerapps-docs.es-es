@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: consulte las horas laborables de varios usuarios (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Consultar las horas laborables de varios usuarios (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo consultar las horas laborables de varias horas
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c9c6b691312f9ed46a236e65d6b18b0bfc4f6894
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749882"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Ejemplo: consultar las horas laborables de varios usuarios
 

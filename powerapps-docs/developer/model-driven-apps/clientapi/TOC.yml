@@ -1,7 +1,7 @@
-- name: Aplicar lógica empresarial mediante scripting de cliente
+- name: Aplicar la lógica empresarial mediante scripting del cliente
   href: ../client-scripting.md
   items:
-    - name: Referencia de la API de cliente
+    - name: Referencia de API de cliente
       href: reference.md
       items:
         - name: Eventos de cliente
@@ -11,18 +11,22 @@
               href: ./reference/events/attribute-onchange.md
             - name: Evento de formulario OnLoad
               href: ./reference/events/form-onload.md
-            - name: Evento OnSave de formulario
+            - name: Evento de formulario OnSave
               href: ./reference/events/form-onsave.md
-            - name: Evento OnLoad de datos de formulario
+            - name: Evento de datos de formulario OnLoad
               href: ./reference/events/form-data-onload.md
             - name: Evento de cuadrícula OnChange
               href: ./reference/events/grid-onchange.md
             - name: Evento de cuadrícula OnRecordSelect
               href: ./reference/events/grid-onrecordselect.md
-            - name: Evento OnSave de cuadrícula
+            - name: Evento de cuadrícula OnSave
               href: ./reference/events/grid-onsave.md
             - name: Evento OnProcessStatusChange
               href: ./reference/events/onprocessstatuschange.md
+            - name: Evento OnPreProcessStatusChange
+              href: ./reference/events/onpreprocessstatuschange.md
+            - name: OnPreStageChange
+              href: ./reference/events/onprestagechange.md
             - name: Evento OnReadyStateComplete
               href: ./reference/events/onreadystatecomplete.md
             - name: Evento OnResultOpened
@@ -33,11 +37,11 @@
               href: ./reference/events/onstagechange.md
             - name: Evento OnStageSelected
               href: ./reference/events/onstageselected.md
-            - name: Evento PostSearch
+            - name: Evento postSearch
               href: ./reference/events/postsearch.md
             - name: Evento PreSearch
               href: ./reference/events/presearch.md
-            - name: Evento Subgrid OnLoad
+            - name: Evento OnLoad de subcuadrícula
               href: ./reference/events/subgrid-onload.md
             - name: Evento TabStateChange
               href: ./reference/events/tabstatechange.md
@@ -83,7 +87,7 @@
               href: reference/composite-attributes.md
             - name: addOnChange
               href: reference/attributes/addOnChange.md
-            - name: Colección de controles
+            - name: colección de controles
               href: reference/attributes/controls-collection.md
             - name: fireOnChange
               href: reference/attributes/fireOnChange.md
@@ -129,6 +133,8 @@
               href: reference/attributes/isValid.md
             - name: removeOnChange
               href: reference/attributes/removeOnChange.md
+            - name: setIsValid
+              href: reference/attributes/setIsValid.md
             - name: setPrecision
               href: reference/attributes/setPrecision.md
             - name: setRequiredLevel
@@ -182,6 +188,8 @@
               href: reference/controls/getName.md
             - name: getObject
               href: reference/controls/getObject.md
+            - name: getOptions
+              href: reference/controls/getOptions.md
             - name: getParent
               href: reference/controls/getParent.md
             - name: getSearchQuery
@@ -202,7 +210,7 @@
               href: reference/controls/getVisible.md
             - name: openSearchResult
               href: reference/controls/openSearchResult.md
-            - name: refresh
+            - name: actualizar
               href: reference/controls/refresh.md
             - name: removeOnPostSearch
               href: reference/controls/removeOnPostSearch.md
@@ -245,11 +253,11 @@
               href: reference/formContext-data/getIsDirty.md
             - name: isValid
               href: reference/formContext-data/isValid.md
-            - name: refresh
+            - name: actualizar
               href: reference/formContext-data/refresh.md
             - name: removeOnLoad
               href: reference/formContext-data/removeOnLoad.md
-            - name: save
+            - name: guardar
               href: reference/formContext-data/save.md
         - name: formContext.data.entity
           href: reference/formContext-data-entity.md
@@ -272,26 +280,34 @@
               href: reference/formContext-data-entity/isvalid.md
             - name: removeOnSave
               href: reference/formContext-data-entity/removeOnSave.md
-            - name: save
+            - name: guardar
               href: reference/formContext-data-entity/save.md
         - name: formContext.data.process
           href: reference/formContext-data-process.md
           items:
             - name: Métodos de controlador de eventos
               items:
+                - name: addOnPreProcessStatusChange
+                  href: reference/formContext-data-process/eventhandlers/addOnPreProcessStatusChange.md
+                - name: addOnPreStageChange
+                  href: reference/formContext-data-process/eventhandlers/addonprestagechange.md
                 - name: addOnProcessStatusChange
                   href: reference/formContext-data-process/eventhandlers/addOnProcessStatusChange.md
                 - name: addOnStageChange
                   href: reference/formContext-data-process/eventhandlers/addOnStageChange.md
                 - name: addOnStageSelected
                   href: reference/formContext-data-process/eventhandlers/addOnStageSelected.md
+                - name: removeOnPreProcessStatusChange
+                  href: reference/formContext-data-process/eventhandlers/removeOnPreProcessStatusChange.md
+                - name: removeOnPreStageChange
+                  href: reference/formContext-data-process/eventhandlers/removeOnPreStageChange.md
                 - name: removeOnProcessStatusChange
                   href: reference/formContext-data-process/eventhandlers/removeOnProcessStatusChange.md
                 - name: removeOnStageChange
                   href: reference/formContext-data-process/eventhandlers/removeOnStageChange.md
                 - name: removeOnStageSelected
                   href: reference/formContext-data-process/eventhandlers/removeOnStageSelected.md
-            - name: Métodos de procesos activos
+            - name: Métodos de proceso activo
               items:
                 - name: getActiveProcess
                   href: reference/formContext-data-process/activeprocess/getActiveProcess.md
@@ -315,7 +331,7 @@
                   href: reference/formContext-data-process/getProcessInstances.md
                 - name: setActiveProcessInstance
                   href: reference/formContext-data-process/setActiveProcessInstance.md
-            - name: Métodos de instancia
+            - name: Método de instancia
               items:
                 - name: getInstanceId
                   href: reference/formcontext-data-process/instance/getInstanceId.md
@@ -376,7 +392,7 @@
               href: reference/formcontext-ui/addOnLoad.md
             - name: clearFormNotification
               href: reference/formcontext-ui/clearFormNotification.md
-            - name: Cerrar
+            - name: cerrar
               href: reference/formcontext-ui/close.md
             - name: getFormType
               href: reference/formcontext-ui/getFormType.md
@@ -448,7 +464,7 @@
               href: reference/formcontext-ui-quickForms/getVisible.md
             - name: isLoaded
               href: reference/formcontext-ui-quickForms/isLoaded.md
-            - name: refresh
+            - name: actualizar
               href: reference/formcontext-ui-quickForms/refresh.md
             - name: setDisabled
               href: reference/formcontext-ui-quickForms/setDisabled.md
@@ -461,8 +477,6 @@
         - name: formContext.ui.tabs
           href: reference/formcontext-ui-tabs.md
           items:
-            - name: addtabStateChange
-              href: reference/formcontext-ui-tabs/addtabStateChange.md
             - name: addtabStateChange
               href: reference/formcontext-ui-tabs/addtabStateChange.md
             - name: getDisplayState
@@ -524,13 +538,13 @@
                   href: reference/grids/gridcontrol/getViewSelector.md
                 - name: openRelatedGrid
                   href: reference/grids/gridcontrol/openRelatedGrid.md
-                - name: refresh
+                - name: actualizar
                   href: reference/grids/gridcontrol/refresh.md
                 - name: refreshRibbon
                   href: reference/grids/gridcontrol/refreshRibbon.md
                 - name: removeOnLoad
                   href: reference/grids/gridcontrol/removeOnLoad.md
-            - name: Grid
+            - name: Cuadrícula
               href: reference/grids/grid.md
               items:
                 - name: getRows
@@ -604,21 +618,23 @@
         - name: Xrm.Navigation
           href: reference/xrm-navigation.md
           items:
+            - name: navigateTo
+              href: reference/xrm-navigation/navigateTo.md
             - name: openAlertDialog
               href: reference/xrm-navigation/openAlertDialog.md
             - name: openConfirmDialog
               href: reference/xrm-navigation/openConfirmDialog.md
             - name: openErrorDialog
               href: reference/xrm-navigation/openErrorDialog.md
-            - name: openFile
+            - name: Abrir archivo
               href: reference/xrm-navigation/openFile.md
             - name: openForm
               href: reference/xrm-navigation/openForm.md
-            - name: openUrl
+            - name: Abrir Url
               href: reference/xrm-navigation/openUrl.md
             - name: openWebResource
               href: reference/xrm-navigation/openWebResource.md
-        - name: Xrm.Panel
+        - name: Panel Xrm
           href: reference/xrm-panel.md
           items:
             - name: loadPanel
@@ -635,7 +651,7 @@
             - name: getGlobalContext
               href: reference/xrm-utility/getGlobalContext.md
               items:
-                - name: client
+                - name: cliente
                   href: reference/xrm-utility/getGlobalContext/client.md
                 - name: organizationSettings
                   href: reference/xrm-utility/getGlobalContext/organizationSettings.md

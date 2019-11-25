@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Compartir un registro mediante un equipo de acceso (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Compartir un registro utilizando un equipo de acceso(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo permitir el acceso a un registro utilizando un equipo de acceso.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 186de98e91ac125ff29b7d007de129ec4979c898
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749860"
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>Ejemplo: Compartir un registro utilizando un equipo de acceso
 
@@ -26,12 +32,12 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 **Nombre**: Nancy<br/>
 **Apellidos**: Anderson<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: nanderson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: nanderson@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: David<br/>
 **Apellido**: Bristol<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: dbristol@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: dbristol@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

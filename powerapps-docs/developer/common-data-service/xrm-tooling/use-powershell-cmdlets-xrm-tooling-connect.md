@@ -1,6 +1,6 @@
 ---
 title: Usar cmdlets de PowerShell para útiles de XRM para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
-description: 'Descubra cómo utilizar cmdlets de Powershell para que los útiles de XRM, como Get-CrmConnection y Get-CrmOrganizations, se conecten a Common Data Service y recuperen organizaciones a las que el usuario actual tiene acceso'
+description: Descubra cómo utilizar cmdlets de Powershell para que los útiles de XRM, como Get-CrmConnection y Get-CrmOrganizations, se conecten a Common Data Service y recuperen organizaciones a las que el usuario actual tiene acceso
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 81816457-c963-46ca-b350-615fa75f56a7
 caps.latest.revision: 27
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bdf7fd2f1fe10d23b0d99d03e9c5652a98dc3dfa
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753628"
 ---
 # <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Usar cmdlets de PowerShell para que las herramientas de XRM se conecten a Common Data Service
 
@@ -147,4 +153,4 @@ Use el cmdlet `Get-CrmConnection` para conectarse a una instancia de Common Data
   
 [Usar la API de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
 [Crear aplicaciones cliente de Windows mediante las herramientas XRM](build-windows-client-applications-xrm-tools.md)<br />
-[Blog: Módulo de PowerShell para realizar operaciones de datos y manipular la configuración de usuarios y del sistema en Common Data Service](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+[Blog: Módulo de PowerShell para realizar operaciones de datos y manipular la configuración de usuarios y del sistema en Common Data Service](https://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

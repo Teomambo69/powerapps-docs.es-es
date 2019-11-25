@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5d768189b4d21456d4d6cd24918b12606aa24ebc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749708"
 ---
 # <a name="next-steps-submit-your-app-on-partner-center"></a>Pasos siguientes: enviar la aplicación al Centro de partners
 

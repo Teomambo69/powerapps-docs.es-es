@@ -1,5 +1,5 @@
 ---
-title: Creación de soluciones compatibles con varios idiomas (Common Data Service) | Microsoft Docs
+title: Crear soluciones que admitan varios idiomas (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2eef717e694013295adba3946b2f3f7bc3e888c7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753012"
 ---
 # <a name="create-solutions-that-support-multiple-languages"></a>Crear soluciones que admitan varios idiomas
 
@@ -100,21 +106,21 @@ Common Data Service admite varios idiomas. Si desea que su solución se instale 
   
  Una vez localizado el texto de las hojas de cálculo, agregue los archivos CrmTranslations.xml y [Content_Types].xml a un único archivo .zip comprimido. Ahora podrá importar este archivo.  
   
- Si prefiere trabajar con los archivos exportados mediante programación como un documento XML, consulte [Esquemas de referencia XML de Office 2003](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9) para obtener más información acerca de los esquemas que utilizan estos archivos.  
+ Si prefiere trabajar con los archivos exportados mediante programación como un documento XML, consulte [Esquemas de referencia XML de Office 2003](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9) para obtener más información acerca de los esquemas que utilizan estos archivos.  
   
 #### <a name="importing-translated-text"></a>Importación de texto traducido  
   
 > [!IMPORTANT]
 >  Solo se puede importar texto traducido nuevamente a la misma organización desde la que se exportó.  
   
- Después de exportar el texto personalizado de las entidades o atributos y traducirlo, puede importar las cadenas de texto traducidas en la aplicación web con el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>. El archivo que importe debe ser un archivo comprimido que contenga los archivos CrmTranslations.xml y [Content_Types].xml en la raíz. Para obtener más información, consulte [Importar entidad traducida y texto de campo](/dynamics365/customer-engagement/customize/import-translated-entity-field-text).  
+ Después de exportar el texto personalizado de las entidades o atributos y traducirlo, puede importar las cadenas de texto traducidas en la aplicación web con el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>. El archivo que importe debe ser un archivo comprimido que contiene los archivos CrmTranslations.xml y [Content_Types].xml en la raíz. Para obtener más información, consulte [Importar entidad traducida y texto de campo](/dynamics365/customer-engagement/customize/import-translated-entity-field-text).  
   
  Una vez importadas las traducciones, el texto personalizado aparece para los usuarios que trabajan en los idiomas a los que tradujo el texto.  
   
 > [!NOTE]
 > Common Data Service no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
   
- Puesto que sólo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
+ Puesto que solo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
   
 <a name="BKMK_LocalizationInBaseLanguageStrings"></a>   
 

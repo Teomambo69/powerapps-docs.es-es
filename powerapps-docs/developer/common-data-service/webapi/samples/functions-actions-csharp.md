@@ -1,6 +1,6 @@
 ---
-title: 'Ejemplo de funciones y acciones de la API web (C#) (Common Data Service)| Microsoft Docs'
-description: 'Este ejemplo muestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y C#'
+title: Ejemplo de funciones y acciones de la API web (C#) (Common Data Service)| Microsoft Docs
+description: Este ejemplo muestra cómo llamar a funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y C#
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: b14a8bff-bf05-412c-89f6-ba7b503dcb51
 caps.latest.revision: 13
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41ffe4147016acf81b79795da6409237d4656d24
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749757"
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Ejemplo de funciones y acciones de la API web (C#)
 

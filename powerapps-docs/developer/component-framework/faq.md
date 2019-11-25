@@ -8,8 +8,13 @@ ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: dd5b6701c28e91ba2f0a2b99041446d0e2c45204
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749634"
 ---
-
 # <a name="faq"></a>Preguntas más frecuentes
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

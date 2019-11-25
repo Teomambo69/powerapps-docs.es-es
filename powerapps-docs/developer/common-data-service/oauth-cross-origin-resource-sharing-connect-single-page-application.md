@@ -1,5 +1,5 @@
 ---
-title: Usar OAuth con Uso compartido de recursos de origen cruzado para conectar una aplicación de una sola página (Common Data Service) | Microsoft Docs
+title: Usar OAuth con Uso compartido de recursos de origen cruzado para conectar con una aplicación de una sola página (Common Data Service)| Microsoft Docs
 description: Aprenda a usar OAuth con Uso compartido de recursos de origen cruzado para conectar una aplicación de una sola página
 ms.custom: ''
 ms.date: 10/31/2018
@@ -9,23 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: oauth-cross-origin-resource-sharing-connect-single-page-application
 caps.latest.revision: 11
 author: paulliew
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c875326bd6c93c9b9d1ab946cc22e251820773c6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752932"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/oauth-cross-origin-resource-sharing-connect-single-page-application 
 
 -->
 # <a name="use-oauth-with-cross-origin-resource-sharing-to-connect-a-single-page-application"></a>Usar OAuth con uso compartido de recursos de origen cruzado para conectar una aplicación de una sola página
 
-Puede crear aplicaciones de una sola página (SPA) que usen JavaScript para trabajar con datos de Common Data Service. Para proporcionar esto, Uso compartido de recursos de origen cruzado (CORS) se habilita de forma que las SPA puedan superar las restricciones de explorador que evitan normalmente las solicitudes que cruzan límites de dominio.  
+Puede crear Aplicaciones de una sola página (SPA) que usen JavaScript para trabajar con datos de Common Data Service. Para proporcionar esto, Uso compartido de recursos de origen cruzado (CORS) se habilita de forma que las SPA puedan superar las restricciones de explorador que evitan normalmente las solicitudes que cruzan límites de dominio.  
   
 > [!NOTE]
 >  La compatibilidad de CORS se proporciona sólo al usar la API web. No puede usar el servicio de la organización o el servicio de datos de la organización obsoleto.  
@@ -40,7 +46,7 @@ Las SPA dependen de un uso amplio de JavaScript del lado del cliente para crear 
 
 ## <a name="use-cors-with-common-data-service"></a>Usar CORS con Common Data Service 
  
-La [especificación de uso compartido de recursos entre orígenes](http://www.w3.org/TR/cors/) proporciona una descripción detallada de cómo implementar y usar CORS. Explica todo sobre los diferentes encabezados y las solicitudes de preparación que necesita aplicar para que CORS funcione. La buena noticia es que no necesita convertirse en un experto en CORS para usarla con Common Data Service. La parte del lado del servidor se ha realizado para usted y lo único que necesita es saber cómo consumirlo.  No necesita comprender el funcionamiento interno de CORS para usarla con Common Data Service. En su lugar puede usar la [Biblioteca de autenticación de Azure Active Directory para JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js) (adal.js), que se ocupará de gran parte de la complejidad de CORS por usted. Dado que Common Data Service se autentica con Azure Active Directory, ADAL.js es la forma compatible para autenticar usuarios de SPA.  
+La [especificación de uso compartido de recursos entre orígenes](https://www.w3.org/TR/cors/) proporciona una descripción detallada de cómo implementar y usar CORS. Explica todo sobre los diferentes encabezados y las solicitudes de preparación que necesita aplicar para que CORS funcione. La buena noticia es que no necesita convertirse en un experto en CORS para usarla con Common Data Service. La parte del lado del servidor se ha realizado para usted y lo único que necesita es saber cómo consumirlo.  No necesita comprender el funcionamiento interno de CORS para usarla con Common Data Service. En su lugar puede usar la [Biblioteca de autenticación de Azure Active Directory para JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js) (adal.js), que se ocupará de gran parte de la complejidad de CORS por usted. Dado que los usuarios de Common Data Service se autentican con Azure Active Directory, ADAL.js es la forma compatible para autenticar usuarios de SPA.  
   
 <a name="bkmk_how_adaljs_works"></a>
 
@@ -65,7 +71,7 @@ Cuando llama a la API web de Common Data Service, debe incluir el valor del toke
 3.  Establezca variables de configuración en su SPA con información de ese registro.  
      Deberá incluir lo siguiente:  
   
-    -   La dirección URL de la organización de Common Data Service  
+    -   La dirección URL de su organización de Common Data Service  
     -   El nombre del inquilino de Active Directory que usa la organización para autenticarse  
     -   El identificador del cliente que obtiene al registrar la aplicación  
     -   La dirección URL donde se implementará o depurará la SPA durante el desarrollo  

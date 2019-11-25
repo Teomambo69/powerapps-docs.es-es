@@ -1,5 +1,5 @@
 ---
-title: Usar equipos de acceso y equipos del propietario para colaborar y compartir información (Common Data Service) | Microsoft Docs
+title: Usar equipos de acceso y de propietario para colaborar y compartir información (Common Data Service) | Microsoft Docs
 description: Aprenda a utilizar equipos de acceso y equipos de propietarios para colaborar y compartir información.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1454c5db803851d5d691db05e57af0beeb90a2b3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753780"
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>Usar equipos de acceso y de propietario para colaborar y compartir información
 
-Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir objetos de negocio y colaborar con los usuarios en distintas unidades de negocio en Common Data Service. Pese a que un equipo pertenece a una unidad de negocio, puede incluir usuarios de otras unidades de negocio. Un usuario se pueden asociar con más de un equipo.  
+Con equipos *de propietario* o equipos *de acceso*, es muy fácil compartir objetos de negocio y colaborar con los usuarios en distintas unidades de negocio en Common Data Service. Pese a que un equipo pertenece a una unidad de negocio, puede incluir usuarios de otras unidades de negocio. Un usuario se pueden asociar con más de un equipo.  
   
  Un equipo de propietarios tiene registros y roles de seguridad asignados. Los privilegios del equipo se definen mediante roles de seguridad. Además de los privilegios proporcionados por el equipo, los miembros del equipo tienen los privilegios definidos por sus roles de seguridad individuales y por los roles de los otros equipos de los que son integrantes. Un equipo tiene derechos de acceso completo a los registros propiedad del equipo.  
   
@@ -36,7 +42,7 @@ Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir obje
   
 - Las directivas empresariales requieren la propiedad de registros por parte de entidades distintas a usuarios.  
   
-- El número de equipos no se conoce en el momento del diseño del sistema de Common Data Service.  
+- El número de equipos se conoce en el momento del diseño del sistema Common Data Service.  
   
 - La creación diaria de informes sobre el progreso de los equipos propietarios es obligatoria.  
   
@@ -44,7 +50,7 @@ Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir obje
   
 - Los equipos se forman y se disuelven dinámicamente. Normalmente, esto ocurre si no se proporcionan criterios claros para definir los equipos, como la zona de ventas, el producto o el volumen.  
   
-- El número de equipos no se conoce en el momento del diseño del sistema de Common Data Service.  
+- El número de equipos no se conoce en el momento del diseño del sistema Common Data Service.  
   
 - Los miembros del equipo requieren derechos de acceso diferentes para los registros. Puede compartir un registro con varios equipos de acceso, donde cada equipo proporciona distintos derechos de acceso al registro. Por ejemplo, se asigna a un equipo el derecho de acceso de lectura sobre la cuenta y, a otro equipo, los derechos de acceso de lectura, escritura y uso compartido para la misma cuenta.  
   
@@ -114,8 +120,8 @@ Con equipos de *propietario* o equipos de *acceso*, es muy fácil compartir obje
 ### <a name="see-also"></a>Vea también  
  [Ejemplo: Compartir un registro utilizando un equipo de acceso](org-service/samples/share-record-using-access-team.md)   
  [Administrar equipos](https://technet.microsoft.com/library/dn531089.aspx)   
- [Notas del producto: Equipos de acceso con Microsoft Dynamics CRM 2013](http://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
- [Notas del producto: Modelado de seguridad escalable con Microsoft Dynamics CRM](http://go.microsoft.com/fwlink/p/?LinkID=328757)   
+ [Notas del producto: Equipos de acceso con Microsoft Dynamics CRM 2013](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
+ [Notas del producto: Modelado de seguridad escalable con Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [Entidades de usuarios y equipos](user-team-entities.md)   
  [Entidad de equipo](reference/entities/team.md)   
  [Entidad de TeamTemplate](reference/entities/teamtemplate.md)   

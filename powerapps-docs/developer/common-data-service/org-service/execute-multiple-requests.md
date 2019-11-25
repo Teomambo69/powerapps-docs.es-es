@@ -1,19 +1,25 @@
 ---
-title: Ejecución de varias solicitudes con el servicio de la organización (Common Data Service) | Microsoft Docs
+title: Ejecutar varias solicitudes con el servicio de la organización (Common Data Service) | Microsoft Docs
 description: El mensaje ExecuteMultipleRequest admite un rendimiento mayor de los mensajes en masa que pasan escenarios en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 86f19593028f2b618923e4e0b120b10d75ab5f63
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749693"
 ---
 # <a name="execute-multiple-requests-using-the-organization-service"></a>Ejecución de varias solicitudes con el servicio de la organización
 
@@ -111,7 +117,7 @@ Existen varias restricciones relacionadas con el uso de <xref:Microsoft.Xrm.Sdk.
   
 -   **No se permite la recursión**: <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> no puede invocar a <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>. Un parámetro <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> que se encuentre en la colección de solicitudes generará un error para ese elemento de la solicitud.  
   
--   **Tamaño de lote máximo**: hay un límite en cuanto a la cantidad de solicitudes que se pueden agregar a una colección de solicitudes. Si se supera ese límite, se genera un error incluso antes de que se ejecute la primera solicitud. Un límite de 1000 solicitudes es típico aunque este cantidad máxima puede establecerse para la implementación de aplicaciones Common Data Service.
+-   **Tamaño de lote máximo**: hay un límite en cuanto a la cantidad de solicitudes que se pueden agregar a una colección de solicitudes. Si se supera ese límite, se genera un error incluso antes de que se ejecute la primera solicitud. Un límite de 1000 solicitudes es típico aunque este cantidad máxima puede establecerse para la implementación de Common Data Service.
   
 -   **Limitación de llamadas simultáneas**: para Common Data Service hay un límite de 2 ejecuciones simultáneas de <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> por organización. Si se supera ese límite, se genera un error de *Servidor ocupado* incluso antes de que se ejecute la primera solicitud. 
 
@@ -127,7 +133,7 @@ Afortunadamente, hay otro método que puede usar. Cuando el número de solicitud
 ```csharp
 catch (FaultException<OrganizationServiceFault> fault)
 {
-    // Check if the maximum batch size has been exceeded. The maximum batch size is only included in the fault if it
+    // Check if the maximum batch size has been exceeded. The maximum batch size is only included in the fault if
     // the input request collection count exceeds the maximum batch size.
     if (fault.Detail.ErrorDetails.Contains("MaxBatchSize"))
     {

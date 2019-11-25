@@ -1,5 +1,5 @@
 ---
-title: Personalizar etiquetas compatibles con varios idiomas (Common Data Service) | Microsoft Docs
+title: Personalizar etiquetas para admitir varios idiomas (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo personalizar etiquetas para que admitan varios idiomas.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759dcce9d209a904a1c8f0705414eccb88216e26
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753000"
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>Personalizar etiquetas para admitir varios idiomas
 
-Al crear personalizaciones en Common Data Service puede admitir varios idiomas utilizando etiquetas.  
+Cuando se crean personalizaciones en Common Data Service, se puede admitir varios idiomas con etiquetas.  
 
 <a name="BKMK_UsingLabels"></a>   
 
@@ -75,17 +81,17 @@ Al crear personalizaciones en Common Data Service puede admitir varios idiomas u
 
  El texto exportado se guarda como archivo comprimido que contiene un CrmTranslations.xml y que puede abrir con Office Excel. Puede enviar este archivo a un lingüista experto, a una agencia de traducción o a una empresa de localización.  
 
- Para obtener más información, consulte [Esquemas de referencia XML de Office 2003](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9).  
+ Para obtener más información, consulte [Esquemas de referencia XML de Office 2003](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9).  
 
 ### <a name="import-translated-text"></a>Importar el texto traducido  
- Después de exportar el texto personalizado de las entidades o atributos y de traducirlo, puede importar las cadenas de texto traducidas en la aplicación web con el mensaje `ImportTranslation` (clase <xref href="Microsoft.Dynamics.CRM.ImportTranslation?text=ImportTranslation Action" /> o <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>). El archivo que importe debe ser un archivo comprimido que contiene los archivos CrmTranslations.xml y [Content_Types].xml tal como se han exportado.  
+ Después de exportar el texto personalizado de las entidades o atributos y de traducirlo, puede importar las cadenas de texto traducidas en la aplicación web con el mensaje `ImportTranslation` (clase <xref href="Microsoft.Dynamics.CRM.ImportTranslation?text=ImportTranslation Action" /> o <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>). El archivo que se importa debe ser un archivo comprimido que contengan los archivos CrmTranslations.xml y [Content_Types].xml tal como se han exportado.  
 
  Una vez importadas las traducciones, el texto personalizado aparece para los usuarios que trabajan en los idiomas a los que tradujo el texto.  
 
 > [!NOTE]
 > Common Data Service no puede importar texto traducido que tenga más de 500 caracteres. Si alguno de los elementos del archivo de traducción tiene más de 500 caracteres, se producirá un error en el proceso de importación. Si esto sucede, revise la línea que provocó el error, reduzca el número de caracteres e intente de nuevo la importación.  
 
- Puesto que sólo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
+ Puesto que solo se permite personalizar texto en el idioma base, puede trabajar en Common Data Service con el idioma base establecido como preferencia de idioma. Para comprobar que aparece el texto traducido, debe cambiar su preferencia de idioma para la interfaz de usuario de Common Data Service. Para realizar tareas de personalización adicionales, debe volver a cambiar al idioma base.  
 
 <a name="BKMK_ManagingLanguages"></a>   
 

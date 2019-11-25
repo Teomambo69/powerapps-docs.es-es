@@ -1,34 +1,42 @@
-- name: Procedimientos recomendados e instrucciones para Common Data Service
+- name: Prácticas recomendadas e instrucciones para Common Data Service
   href: index.md
   items:
-    - name: Aplicar lógica de negocios con código
+    - name: Aplicar la lógica de negocios usando código
       href: business-logic/index.md
       items:
-        - name: Evitar el uso de tipos de solicitud por lotes en complementos y actividades de flujo de trabajo
+        - name: Evite usar de tipos de solicitud por lotes en complementos y actividades de flujo de trabajo
           href: business-logic/avoid-batch-requests-plugin.md
-        - name: Desarrollar implementaciones IPlugin como sin estado
+        - name: Desarrollar implementaciones de IPlugin como sin estado
           href: business-logic/develop-iplugin-implementations-stateless.md
-        - name: No duplicar el registro de pasos en complementos
+        - name: No duplicar el registro de paso de complemento
           href: business-logic/do-not-duplicate-plugin-step-registration.md
-        - name: Incluir atributos de filtro con el registro de complementos
+        - name: No utilizar ejecución en paralelo en complementos y actividades de flujo de trabajo
+          href: business-logic/do-not-use-parallel-execution-in-plug-ins.md
+        - name: Implemente todos los tipos de consultas al filtrar resultados mediante PreOperation RetrieveMultiple
+          href: business-logic/implement-all-types-of-queries-when-filtering-preoperation-retrievemultiple.md
+        - name: Incluir atributos de filtrado con el registro de complementos
           href: business-logic/include-filtering-attributes-plugin-registration.md
-        - name: Limitar el registro de complementos para mensajes Retrieve y RetrieveMultiple
+        - name: Limitar el registro de complementos para los mensajes Retrieve y de RetrieveMultiple
           href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
         - name: Optimizar el desarrollo de ensamblados personalizados
           href: business-logic/optimize-assembly-development.md
-        - name: Establecer KeepAlive en False al interactuar con hosts externos en un complemento
+        - name: Quitar código no admitido que usa reflexión en actividades de flujo de trabajo personalizadas
+          href: business-logic/remove-unsupported-code-using-reflection-workflow-activities.md
+        - name: Establecer KeepAlive en false para interactuar con hosts externos en un complemento
           href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
-        - name: Usar InvalidPluginExecutionException en actividades de complementos y flujos de trabajo
+        - name: Establecer tiempo de espera al realizar llamadas externas en un complemento
+          href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
+        - name: Utilizar InvalidPluginExecutionException en actividades de complementos y de flujo de trabajo
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
     - name: Trabajar con datos mediante código
       href: work-with-data/index.md
       items:
-        - name: Límites de API
+        - name: Límites de la API
           href: ../api-limits.md
     - name: Trabajar con metadatos mediante código
       href: work-with-metadata/index.md
       items:
         - name: Recuperar metadatos publicados
           href: work-with-metadata/retrieve-published-metadata.md
-        - name: Recuperar columnas específicas de una entidad a través de las API de consulta
+        - name: Recuperar columnas específicas para una entidad mediante API de consulta
           href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md

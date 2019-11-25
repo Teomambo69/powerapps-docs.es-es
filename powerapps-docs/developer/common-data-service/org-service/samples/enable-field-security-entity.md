@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: habilitar la seguridad de campo para una entidad (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: habilitar la seguridad de campo para una entidad(Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo habilitar la seguridad de campo para una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6121c32e74c0c302fe9370a67f960eee2d498033
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749898"
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>Ejemplo: habilitar la seguridad de campo para una entidad
 
@@ -32,7 +38,7 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
-## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
+## <a name="how-this-sample-works"></a>Cómo funciona este ejemplo
 
 Para simular el escenario descrito anteriormente, el ejemplo hará lo siguiente:
 

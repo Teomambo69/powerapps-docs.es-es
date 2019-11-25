@@ -1,6 +1,6 @@
 ---
-title: Preparar archivos de origen para la importación (Common Data Service) | Microsoft Docs
-description: 'La importación de datos es compatible con archivos de origen con formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto.'
+title: Preparar los archivos de origen para importación (Common Data Service) | Microsoft Docs
+description: La importación de datos es compatible con archivos de origen con formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,20 +10,26 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 19ddeb03ffc6132e67da8140c63f392769db4fe2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752668"
 ---
 # <a name="prepare-source-files-for-import"></a>Preparar archivos de origen para importar
 
-Antes de que pueda importar datos a Common Data Service debe crear los archivos de origen de datos.  
+Para poder importar datos en Common Data Service, debe crear los archivos de datos de origen.  
   
 Los archivos de origen de datos que se usan en una importación deben tener el formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto. El uso de archivos de origen permite la transferencia de datos desde sistemas de bases de datos que utilizan diferentes formatos a Common Data Service.  
   
 Un archivo de origen puede contener datos para un tipo de entidad o varios tipos de entidades, como cuentas y contactos. Para los archivos de origen que contienen datos de varias entidades, debe proporcionar una asignación que incluya la etiqueta `<EntitiesPerFile>`. Establezca el valor de esta etiqueta en múltiple para indicar que hay más de un tipo de entidad en el archivo de origen. Agregue el atributo `Dedupe = “Eliminate”` a la etiqueta `<EntityMap>`. Esto garantiza que, si el archivo contiene filas duplicadas para el tipo de entidad, se usa una sola fila para minimizar los errores relacionados con las búsquedas.  
   
-Puede descargar un ejemplo de un mapa de datos con varios tipos de entidades en [Descargas de Microsoft: DataImportMaps.zip](http://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip). Mire el archivo `MapForSalesForceContactAccount.xml`.  
+Puede descargar un ejemplo de un mapa de datos con varios tipos de entidades en [Descargas de Microsoft: DataImportMaps.zip](https://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip). Mire el archivo `MapForSalesForceContactAccount.xml`.  
   
  Los valores de los campos del archivo de origen pueden separarse mediante comas, tabulaciones u otros caracteres que se definen mediante el atributo `ImportFile.FieldDelimiterCode`.  
   

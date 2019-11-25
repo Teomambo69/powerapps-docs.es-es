@@ -1,6 +1,6 @@
 ---
 title: Ver datos con visualizaciones (gráficos) (aplicaciones basadas en modelos) | Microsoft Docs
-description: 'Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel.'
+description: Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se asocia a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4ede56a8ab217b81580c036e45309db214b273b4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754553"
 ---
 # <a name="view-data-with-visualizations-charts"></a>Ver los datos con visualizaciones (gráficos)
 
-Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se adjunta a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel. Más información: [Analizar datos con paneles](analyze-data-with-dashboards.md)  
+Las visualizaciones le permiten ver gráficamente los datos profesionales. Una visualización se asocia a una entidad en Common Data Service. Puede adjuntar varias visualizaciones a una entidad, no obstante, solo se puede mostrar una visualización al mismo tiempo junto con una cuadrícula. Puede ver varias visualizaciones al mismo tiempo utilizando un panel. Más información: [Analizar datos con paneles](analyze-data-with-dashboards.md)  
   
  Puede usar un gráfico o a un recurso web como visualización en Common Data Service. Para los gráficos, puede usar el diseñador de gráficos en aplicaciones basadas en modelos. Sin embargo, para usar un recurso web en una visualización, debe usar el SDK o importar una visualización XML personalizada en aplicaciones basadas en modelos.
   
@@ -33,7 +39,7 @@ Las visualizaciones le permiten ver gráficamente los datos profesionales. Una v
   
 <a name="Charts"></a>   
 ## <a name="chart-visualizations"></a>Visualizaciones de gráfico  
- Los gráficos permiten ver los resúmenes de datos de la cuadrícula. Los gráficos se crean mediante las Controles de gráfico de Microsoft para Microsoft .NET Framework 3.5. Para obtener más información sobre Controles de gráfico de Microsoft, vea [Descargar: Controles de gráfico para .NET Framework](http://go.microsoft.com/fwlink/p/?LinkId=128852).  
+ Los gráficos permiten ver los resúmenes de datos de la cuadrícula. Los gráficos se crean mediante las Controles de gráfico de Microsoft para Microsoft .NET Framework 3.5. Para obtener más información sobre Controles de gráfico de Microsoft, vea [Descargar: Controles de gráfico para .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=128852).  
   
  Estos gráficos se integran con las cuadrículas de la aplicación web. Cuando aplica un filtro (consulta) a los datos de una cuadrícula, el filtro se aplica al gráfico también y el gráfico se actualiza de modo correspondiente. De forma similar, cuando realiza operaciones de exploración en profundidad en un gráfico, los datos de cuadrícula se actualizan automáticamente.  
   
@@ -47,7 +53,7 @@ Las visualizaciones le permiten ver gráficamente los datos profesionales. Una v
 ### <a name="chart-types-in-microsoft-chart-controls"></a>Tipos de gráficos en Microsoft Chart Controls  
  Los controles de gráfico de Microsoft se usan para crear gráficos en aplicaciones basadas en modelos. Controles de gráfico de Microsoft permite crear diferentes tipos de gráfico como columnas, barras, áreas, apilados, líneas, burbujas y circulares.  
   
- Se admiten los siguientes tipos de gráficos predefinidos en Common Data Service: *Columna*, *Área*, *Barra*, *Línea*, *Circular*, y *Embudo*. Sin embargo, puede ampliar la funcionalidad mediante la creación de otros tipos de gráficos de Controles de gráfico de Microsoft compatibles como de varias series, apilados y 100% apilada (comparación) especificando el contenido adecuado en la descripción de datos y en las cadenas XML de descripción de presentación para un gráfico. Más información: [Especificar datos del gráfico](understand-charts-underlying-data-chart-representation.md)  
+ Se admiten los siguientes tipos de gráficos predefinidos en Common Data Service: *Columna*, *Área*, *Barra*, *Línea*, *Circular* y *Embudo*. Sin embargo, puede ampliar la funcionalidad mediante la creación de otros tipos de gráficos de Controles de gráfico de Microsoft compatibles como de varias series, apilados y 100% apilada (comparación) especificando el contenido adecuado en la descripción de datos y en las cadenas XML de descripción de presentación para un gráfico. Más información: [Especificar datos del gráfico](understand-charts-underlying-data-chart-representation.md)  
   
 <a name="WebResources"></a>   
 ## <a name="web-resource-visualizations"></a>Visualizaciones de recurso web  
@@ -122,8 +128,8 @@ UoMSchedule
  [Crear un gráfico](create-visualization-chart.md)   
  [Gráficos de muestra](sample-charts.md)   
  [Entidad SavedQueryVisualization](../common-data-service/reference/entities/savedqueryvisualization.md)   
- [Entidad UserQueryVisualization](../common-data-service/reference/entities/userqueryvisualization.md) [Descarga: Controles de gráfico para el paquete de idioma de .NET Framework](http://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
- [Descarga: Complemento Controles de gráfico para Visual Studio](http://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
- [Descarga: Documentación de Controles de gráfico para .NET Framework](http://go.microsoft.com/fwlink/p/?LinkId=128301)   
- [Ejemplos de entorno de Controles de gráfico de Microsoft](http://code.msdn.microsoft.com/mschart)   
- [Foro de Controles de gráfico](http://go.microsoft.com/fwlink/p/?LinkId=128713)
+ [Entidad UserQueryVisualization](../common-data-service/reference/entities/userqueryvisualization.md) [Descarga: Controles de gráfico para el paquete de idioma de .NET Framework](https://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
+ [Descarga: Complemento Controles de gráfico para Visual Studio](https://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
+ [Descarga: Documentación de Controles de gráfico para .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=128301)   
+ [Ejemplos de entorno de Controles de gráfico de Microsoft](https://code.msdn.microsoft.com/mschart)   
+ [Foro de Controles de gráfico](https://go.microsoft.com/fwlink/p/?LinkId=128713)

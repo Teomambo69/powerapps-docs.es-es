@@ -4,21 +4,24 @@ description: Trabajar con datos de eventos en la solución del Centro de eventos
 keywords: ''
 ms.date: 05/08/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a3732c49-7f47-d87c-5062-585ef28ab511
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 ms.reviewer: pehecke
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e004b1b5699e0f4fa21241af23eb14987ba781ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749742"
 ---
-
 # <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Trabajar con datos de eventos de Common Data Service en la solución del Centro de eventos de Azure
 
 Azure Event Hub es un servicio de publicación-suscripción muy escalable que puede ingerir millones de eventos por segundo y enviarlos a varias aplicaciones. La interfaz Common Data Service-Azure permite publicar datos de eventos en el Azure Service Bus y ponerlos a disposición de los suscriptores de la solución del centro de eventos. La siguiente información describe las tareas generales que se deben realizar para enviar datos de eventos de Azure a una solución del centro de eventos.  

@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: af10739068e295d99b22115af59b5f01eacf4796
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749666"
 ---
 # <a name="upload-and-manage-document-templates"></a>Cargar y administrar plantillas de documentos
 
@@ -24,7 +30,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/upload-mana
 Add the short description from  https://docs.microsoft.com/dynamics365/customer-engagement/developer/template-entities which was not migrated.
 -->
 
-En Common Data Service, las entidades *plantilla* ayudan a crear un diseño y contenido coherentes en los mensajes de correo electrónico, artículos, documentos de combinación de correspondencia, y documentos de Microsoft Office (Excel y Word).
+En Common Data Service, las entidades de la *plantilla* le permiten crear diseños y contenidos coherentes en los mensajes de correo electrónico, artículos, contratos, documentos de combinación de correspondencia y documentos de Microsoft Office (Excel y Word).
 
 Estos son los tipos de entidades de plantilla:
 

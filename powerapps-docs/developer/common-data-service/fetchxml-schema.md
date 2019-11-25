@@ -1,6 +1,6 @@
 ---
-title: Uso del esquema FetchXML (Common Data Service) | Microsoft Docs
-description: El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service
+title: Esquema FetchXML (Common Data Service) | Microsoft Docs
+description: El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,24 +10,30 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb2720eac36aab2b84eaa2b973c4aab7551be123
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752976"
 ---
 # <a name="fetchxml-schema"></a>Esquema FetchXML
 
 El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service. A continuación se presenta el esquema del lenguaje de consultas FetchXML. Para obtener más información, vea [Usar FetchXML para crear una consulta ](use-fetchxml-construct-query.md).
 
 Puede encontrar este esquema en la carpeta `Schemas\9.0.0.2090\Fetch.xsd` al descargar el archivo zip de esquemas.
-Descargue los [esquemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
+Descargue los [esquemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
   
 ## <a name="fetchxml-schema"></a>Esquema FetchXML  
   
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:mstns="http://tempuri.org/fetch/unique">
+<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns:mstns="https://tempuri.org/fetch/unique">
   <xs:annotation>
     <xs:documentation>Schema name: fetch-schema</xs:documentation>
   </xs:annotation>

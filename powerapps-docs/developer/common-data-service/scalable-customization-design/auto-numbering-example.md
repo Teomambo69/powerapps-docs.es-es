@@ -10,17 +10,23 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d414b589fada6251172113a2016c3c286edc28aa
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749801"
 ---
 # <a name="scalable-customization-design-auto-numbering-example"></a>Diseño de la personalización escalable: ejemplo de numeración automática
 
 > [!NOTE]
 > Este ejemplo describe una serie de temas sobre diseño de la personalización escalable. Para comenzar, consulte [Diseño de la personalización escalable en Common Data Service](overview.md).
 
-Un escenario que muestra el error de comunicación habitual de cómo se administran las transacciones en Common Data Service para aplicaciones es la implementación de un esquema de numeración automática.
+Un escenario que muestra el error de comunicación habitual de cómo se administran las transacciones en Common Data Service es la implementación de un esquema de numeración automática.
 
 En este escenario el requisito se normalmente:
 

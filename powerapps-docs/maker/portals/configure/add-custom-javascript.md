@@ -1,6 +1,6 @@
 ---
-title: Usar JavaScript personalizado para un portal | MicrosoftDocs
-description: Instrucciones para agregar JavaScript personalizado a un formulario en un portal
+title: Use JavaScript personalziado para un portal | MicrosoftDocs
+description: Instrucciones de agregar código JavaScript personalizado a un formulario en un portal
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,20 +11,20 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 42e31fc2ecb18d4f26327f8ccbeabe034d7a1700
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553656"
+ms.locfileid: "2761097"
 ---
 # <a name="add-custom-javascript"></a>Agregar JavaScript personalizado
 
-El registro de paso de formulario web contiene un campo denominado **JavaScript personalizado** que se puede usar para almacenar código JavaScript que le permita extender o modificar la función o presentación visual del formulario.
+El registro Paso del formulario web contiene un campo denominado **JavaScript personalizado** que pueda usarse para almacenar código JavaScript para permitirle ampliar o modificar la función o presentación visual del formulario.
 
-El bloque personalizado de JavaScript se agregará a la parte inferior de la página justo antes del elemento de etiqueta de cierre del formulario.
+El bloque personalizado de JavaScript se agregará a la parte inferior de la página justo delante el elemento de etiqueta de formulario de cierre.
 
 ## <a name="form-fields"></a>Campos de formulario
 
-El ID. de entrada HTML de un campo de entidad se establece en el nombre lógico del atributo. Esto facilita la selección de un campo, la configuración de valores u otra manipulación del lado cliente con [jQuery](https://jquery.com/).  
+El identificador de entrada HTML de un campo de entidad se define con el nombre lógico del atributo. Esto facilita la selección de un campo, el establecimiento de valores u otras manipulaciones del lado del cliente con [jQuery](https://jquery.com/).  
 
 ```JavaScript
 $(document).ready(function() {
@@ -32,8 +32,8 @@ $(document).ready(function() {
 });
 ```
 
-## <a name="additional-client-side-field-validation"></a>Validación adicional de campos del lado cliente
-En ocasiones, es posible que tenga que personalizar la validación de los campos del formulario. En el ejemplo siguiente se muestra cómo agregar un validador personalizado. Este ejemplo obliga al usuario a especificar un correo electrónico solo si el otro campo del método de contacto preferido está establecido en email.
+## <a name="additional-client-side-field-validation"></a>Validación de campos del lado cliente adicional
+A veces puede necesitar personalizar la validación de campos en el formulario. El siguiente ejemplo muestra cómo agregar un validador personalizado. Este ejemplo fuerza al usuario a especificar un correo electrónico solo si el otro campo para el método preferido de contacto está establecido como Correo electrónico.
 
 > [!NOTE]
 > La validación de campos del lado cliente no se admite en una subcuadrícula.
@@ -75,7 +75,7 @@ if (window.jQuery) {
 
 ## <a name="general-validation"></a>Validación general
 
-Al hacer clic en el **siguiente**/botón **Enviar** , se ejecuta una función denominada **webFormClientValidate** . Puede extender este método para agregar lógica de validación personalizada.
+Al hacer clic en el botón **Siguiente**/**Enviar**, se ejecuta una función llamada **webFormClientValidate**. Puede ampliar este método para agregar lógica de validación personalizada.
 
 ```JavaScript
 if (window.jQuery) {
@@ -97,9 +97,9 @@ if (window.jQuery) {
 ```
 ### <a name="see-also"></a>Vea también
 
-[Configuración de un portal](configure-portal.md)  
+[Configurar un portal](configure-portal.md)  
 [Definir formularios de entidad](entity-forms.md)  
-[Pasos de Web Form para portales](web-form-steps.md)  
-[Tipo de paso cargar formulario/pestaña carga](load-form-step.md)  
-[Tipo de paso de redirección](add-redirect-step.md)  
+[Pasos de formulario web para portales](web-form-steps.md)  
+[Tipo de paso Cargar formulario/Cargar pestaña](load-form-step.md)  
+[Tipo del paso de redireccionamiento](add-redirect-step.md)  
 [Tipo de paso condicional](add-conditional-step.md)

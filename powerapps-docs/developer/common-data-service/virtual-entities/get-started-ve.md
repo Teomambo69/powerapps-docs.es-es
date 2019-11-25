@@ -1,22 +1,27 @@
 ---
 title: Introducción a las entidades virtuales (Common Data Service) | Microsoft Docs
-description: 'Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service, sin replicación de datos y a menudo sin código personalizado.'
+description: Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service, sin replicación de datos y a menudo sin código personalizado.
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d64aa3a4802917f0ed03dec5c22cafaffcd5ce5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753704"
 ---
-
 # <a name="get-started-with-virtual-entities"></a>Introducción a las entidades virtuales
 
 Las entidades virtuales habilitan la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades de Common Data Service, sin replicación de datos y a menudo sin código personalizado. La implementación inicial de esta característica permite solamente la compatibilidad de solo lectura de tales entidades y tiene una serie de limitaciones que se describen en la sección [Limitaciones de las entidades virtuales](#limitations-of-virtual-entities) a continuación. Además de estas limitaciones, las entidades virtuales se comportan de la misma forma que otras entidades personalizadas. 
@@ -34,7 +39,7 @@ Una entidad virtual es una definición de una entidad en los metadatos de la pla
 A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
 
 Los siguientes proveedores de datos se incluyen con Common Data Service:
-- Un proveedor [OData v4](http://www.odata.org/documentation/) se incluye con el servicio y se instala de forma predeterminada.
+- Un proveedor [OData v4](https://www.odata.org/documentation/) se incluye con el servicio y se instala de forma predeterminada.
 - Hay un proveedor de [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (anteriormente *Microsoft Document DB*) disponible en [AppSource](https://appsource.microsoft.com).
 
 Los proveedores adicionales estarán disponibles a través de Microsoft, sus partners o terceros. Si no se encuentra un proveedor de datos para el origen de datos externos, puede desarrollar un *proveedor de datos de entidad virtual personalizado*; para obtener más información, consulte [proveedores de datos de entidad virtual](custom-ve-data-providers.md).

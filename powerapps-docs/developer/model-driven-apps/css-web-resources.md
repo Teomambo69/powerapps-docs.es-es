@@ -4,21 +4,24 @@ description: 'Use los recursos web de las hojas de estilo en cascada (CSS) para 
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a4e98fa7-930d-e320-5384-9f773775639b
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 857f0854da50cf151294962dacd5dbeac711d0d5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749912"
 ---
-
 # <a name="css-web-resources"></a>Recursos web de CSS
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/css-web-resources -->

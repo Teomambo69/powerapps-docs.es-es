@@ -1,6 +1,6 @@
 ---
-title: Usar útiles de XRM para acciones en Common Data Service (Common Data Service) | Microsoft Docs
-description: 'El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Common Data Service'
+title: Usar herramientas XRM para ejecutar acciones en Common Data Service (Common Data Service) | Microsoft Docs
+description: El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 845a198f-a2b1-4c38-83e8-0968e684b627
 caps.latest.revision: 13
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a367519ea57752b31c14ce05e055b88af153b922
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749639"
 ---
-# <a name="use-xrm-tooling-to-execute-actions-in-common-data-service"></a>Use los útiles XRM para ejecutar acciones en Common Data Service
+# <a name="use-xrm-tooling-to-execute-actions-in-common-data-service"></a>Usar herramientas XRM para ejecutar acciones en Common Data Service
 
 Una vez que esté conectado a Common Data Service, puede usar el objeto de clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> para realizar acciones en los datos de Common Data Service, como crear, actualizar, recuperar o eliminar datos. En esta sección encontrará algunos ejemplos de cómo se pueden realizar acciones en Common Data Service con útiles de XRM.  
   
@@ -35,5 +41,5 @@ Una vez que esté conectado a Common Data Service, puede usar el objeto de clase
   
 ### <a name="see-also"></a>Vea también
 
-[Uso de la API de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Usar la API de útiles XRM para conectarse a Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
 [Crear aplicaciones cliente de Windows mediante las herramientas XRM](build-windows-client-applications-xrm-tools.md)

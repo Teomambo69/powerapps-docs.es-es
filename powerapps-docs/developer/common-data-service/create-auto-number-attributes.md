@@ -1,6 +1,6 @@
 ---
 title: Crear atributos de numeración automática (Common Data Service) | Microsoft Docs
-description: 'Obtenga información sobre cómo crear un atributo de numeración automática del mismo modo que se crea un atributo de cadena mediante la clase StringAttributeMetadata excepto que en este caso se usa la nueva propiedad AutoNumberFormat. Utilice la propiedad AutoNumberFormat para definir un modelo que incluya números secuenciales y cadenas aleatorias mediante la composición de marcadores de posición, que indica la longitud y el tipo de valores que se generan.'
+description: Obtenga información sobre cómo crear un atributo de numeración automática del mismo modo que se crea un atributo de cadena mediante la clase StringAttributeMetadata excepto que en este caso se usa la nueva propiedad AutoNumberFormat. Utilice la propiedad AutoNumberFormat para definir un modelo que incluya números secuenciales y cadenas aleatorias mediante la composición de marcadores de posición, que indica la longitud y el tipo de valores que se generan.
 keywords: Atributos de numeración automática
 ms.custom: ''
 ms.date: 07/24/2019
@@ -11,10 +11,16 @@ author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 676c70f9287202f537827a5950ab84049ab81a34
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753020"
 ---
 # <a name="create-auto-number-attributes"></a>Crear atributos de numeración automática
 
@@ -266,7 +272,7 @@ OData-Version: 4.0
 ### <a name="auto-number-manager"></a>Auto Number Manager
 
 **[Auto Number Manager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** para XrmToolBox es una herramienta impulsada por la comunidad para Common Data Service que proporciona una interfaz de usuario para configurar, actualizar y quitar el formato de numeración automática en atributos nuevos y existentes.
-Consulte el tema [Herramientas del desarrollador](developer-tools.md) para ver las herramientas desarrolladas por la comunidad y [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) para obtener más información sobre Auto Number Manager.
+Consulte el tema [Herramientas del desarrollador](developer-tools.md) para ver las herramientas desarrolladas por la comunidad y [anm.xrmtoolbox.com](https://anm.xrmtoolbox.com) para obtener más información sobre Auto Number Manager.
 
 > [!NOTE]
 > Las herramientas de la Comunidad no son un producto de Common Data Service y no se amplía el soporte para las herramientas de comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com). 

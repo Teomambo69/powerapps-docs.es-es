@@ -1,6 +1,6 @@
 ---
 title: Considere deshabilitar NavBar mediante programación abriendo formularios de entidad o vistas | MicrosoftDocs
-description: 'Al abrir formularios o vistas de entidad con una dirección URL, podría producirse un rendimiento más lento de los clientes en redes de alta latencia cuando se habilita la barra de navegación (NavBar).'
+description: Al abrir formularios o vistas de entidad con una dirección URL, podría producirse un rendimiento más lento de los clientes en redes de alta latencia cuando se habilita la barra de navegación (NavBar).
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 3/04/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 359c505c3df1f2b88268dba2e7da005465f29d84
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749922"
 ---
 # <a name="consider-disabling-navbar-when-programmatically-opening-entity-forms-or-views"></a>Considere deshabilitar NavBar mediante programación abriendo formularios de entidad o vistas
 

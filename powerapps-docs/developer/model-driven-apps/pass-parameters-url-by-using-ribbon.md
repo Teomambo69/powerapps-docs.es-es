@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a8c24b6d48b5d9330cdc3761cad458e399aec898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754581"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>Pasar parámetros a una dirección URL con la cinta de opciones
 
@@ -48,13 +54,13 @@ Las acciones de la cinta de opciones se definen en el elemento de `<Actions>` de
  El siguiente ejemplo muestra la dirección URL sin parámetros:  
   
 ```  
-http://myserver/mypage.aspx  
+https://myserver/mypage.aspx  
 ```  
   
  El siguiente ejemplo muestra los parámetros incluidos cuando se muestra el control de la cinta de opciones para la entidad de cuenta, para una organización denominada "AdventureWorksCycle", cuando el idioma del usuario y el idioma base de la organización es el inglés, y el GUID para el registro de cuenta es DBD5DBFB-0666-DC11-A5D9-0003FF9CE217:  
   
 ```  
-http://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1033&type=1&typename=account&id=%7BDBD5DBFB-0666-DC11-A5D9-0003FF9CE217%7D  
+https://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1033&type=1&typename=account&id=%7BDBD5DBFB-0666-DC11-A5D9-0003FF9CE217%7D  
 ```  
   
 ## <a name="use-a-querystring-parameter-in-the-url"></a>Use un parámetro Querystring en la dirección URL  

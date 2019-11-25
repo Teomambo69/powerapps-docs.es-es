@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Enviar un correo electrónico en masa y supervisar los resultados (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Enviar los resultados de supervisión y correo electrónico en masa(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo enviar mensajes de correo electrónico en masa y supervisar los resultados
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38fc84985d86d44524b557a90a84f5a071600aaa
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749866"
 ---
 # <a name="sample-send-bulk-email-and-monitor-results"></a>Ejemplo: enviar los resultados de supervisión y correo electrónico en masa
 

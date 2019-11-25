@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759400"
 ---
-
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>Agregar una aplicación de lienzo incrustada en un formulario basado en modelos
 En este tema se explica cómo insertar una nueva aplicación de lienzo en un formulario basado en modelos.
 
 Imagine que desee crear una nueva aplicación de lienzo e incrustarla en un formulario principal para la entidad de cuentas. Para ello, siga estos pasos: 
 
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  [Creación o edición del formulario principal](create-and-edit-forms.md) de una entidad, entidad Cuentas en nuestro ejemplo. 
 3.  En la barra de comandos, seleccione **Cambiar a clásico** para abrir el formulario en el diseñador de formularios clásico.
 4.  En el diseñador de formularios clásicos, seleccione la sección del formulario donde desea que aparezca la aplicación incrustada de lienzo.
@@ -47,7 +52,7 @@ Imagine que desee crear una nueva aplicación de lienzo e incrustarla en un form
          - Tenga en cuenta que, los cambios efectuados en el valor **Identificador de la aplicación** rompen el vínculo entre el formulario controlado por modelos y la aplicación incrustada de lienzo.
 12. Seleccione **Personalizar** para crear o editar la aplicación de lienzo. Esto abre PowerApps Studio en una nueva pestaña.
        > [!NOTE]
-       > Si está bloqueada la apertura de PowerApps Studio debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de web.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
+       > Si abrir PowerApps Studio está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de make.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
 13. En PowerApps Studio, observe que hay un control **ModelDrivenFormIntegration** especial en el panel izquierdo. Este control es responsable de llevar datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo.
 14. Observe que un [control de formulario de la aplicación de lienzo](../canvas-apps/controls/control-form-detail.md) se agregó automáticamente a la aplicación de lienzo incrustada y muestra los datos que se le pasan desde el formulario basado en modelos de host mediante el control de ModelDrivenFormIntegration. 
 15. Seleccione la pestaña **Vista** y, a continuación seleccione **Orígenes de datos**. Observe que un origen de datos para la entidad principal del formulario basado en modelos host, Cuentas en este caso, se agregó automáticamente a la aplicación de lienzo incrustada.

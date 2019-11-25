@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente) (Common Data Service)| Microsoft Docs
-description: 'Este ejemplo demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y JavaScript del lado del cliente.'
+description: Este ejemplo demuestra cómo realizar funciones y acciones enlazadas y sin enlazar, incluidas acciones personalizadas, mediante la API web de Common Data Service y JavaScript del lado del cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 337f5d15-66be-46db-a96a-309951a37a2a
 caps.latest.revision: 20
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b084896ee7b44df1d96c33dcd426231816c2c1e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753668"
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente)
 
@@ -46,7 +52,7 @@ Este ejemplo demuestra cómo realizar funciones y acciones enlazadas y sin enlaz
  
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [ Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824048) y descargue el archivo de ejemplo Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque el archivo de la solución administrada WebAPIFunctionsandActions_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [ Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente)](https://go.microsoft.com/fwlink/p/?LinkId=824048) y descargue el archivo de ejemplo Ejemplo de funciones y acciones de Microsoft CRM API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque el archivo de la solución administrada WebAPIFunctionsandActions_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_codeSample"></a>
 

@@ -6,18 +6,24 @@ ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a387c23af14a8772eb42900c63aed45dd8c13cb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753080"
 ---
 # <a name="asynchronous-service"></a>Servicio asincrónico
 
-El servicio asincrónico ejecuta operaciones a largo plazo independientemente del funcionamiento del núcleo de Common Data Service principal. Esto permite un rendimiento general del sistema y una escalabilidad mejorados. El servicio asincrónico representa una cola primero en entrar, primero en salir (FIFO) administrada, para la ejecución de complementos registrados asincrónicos, de flujos de trabajo y operaciones como correo masivo, importación masiva y propagación de actividad de la campaña. Estas operaciones se registran con el servicio asincrónico y se ejecutan periódicamente cuando el servicio procesa la cola.
+El servicio asincrónico ejecuta operaciones a largo plazo independientemente del funcionamiento del núcleo Common Data Service principal. Esto permite un rendimiento general del sistema y una escalabilidad mejorados. El servicio asincrónico representa una cola primero en entrar, primero en salir (FIFO) administrada, para la ejecución de complementos registrados asincrónicos, de flujos de trabajo y operaciones como correo masivo, importación masiva y propagación de actividad de la campaña. Estas operaciones se registran con el servicio asincrónico y se ejecutan periódicamente cuando el servicio procesa la cola.
 
 
 Después de que se produzca un evento y se hayan procesado todas las extensiones síncronas, la plataforma serializa el contexto de todas las extensiones asincrónicas y lo guarda en la base de datos como **trabajo del sistema** en [Entidad de AsyncOperation](reference/entities/asyncoperation.md). El trabajo del sistema define y sigue la ejecución de operaciones asincrónicas. A medida que se puede disponer de los recursos, los trabajos del sistema se procesan y las operaciones que definen se ejecutan. Cualquier operación de datos definida en la extensión se procesará de nuevo por la canalización de ejecución de eventos, pero este vez como operación sincrónica.
@@ -221,7 +227,7 @@ Puesto que no creará entidades `AsyncOperation` directamente con código, solo 
 
 El atributo `RecurrencePattern` almacena información sobre con qué frecuencia se espera que se produzcan los trabajos del sistema. Este valor se puede establecer con la plataforma cuando se crea una nueva entidad de asyncoperation. Puede configurar esta opción para cambiar el patrón.
 
-Los valores de este atributo usan partes de [Estándar de Internet RFC2445 (Internet Calendaring and Scheduling Core Object Specification)](http://www.rfc-editor.org/info/rfc2445).
+Los valores de este atributo usan partes de [Estándar de Internet RFC2445 (Internet Calendaring and Scheduling Core Object Specification)](https://www.rfc-editor.org/info/rfc2445).
 
 La tabla siguiente proporciona algunos ejemplos:
 

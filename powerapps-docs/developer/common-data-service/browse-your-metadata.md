@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 50a7c59ac5655fdcf6928f626c5714a75fe3f57e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753056"
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>Examinar los metadatos del entorno
 
@@ -22,7 +28,7 @@ Use el Explorador de metadatos de la entidad para ver las entidades y sus propie
 
 |                                                                                               Versión                                                                                                |                                                                                     Download                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Common Data Service | [Descargas de Microsoft: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
+| Common Data Service | [Descargas de Microsoft: MetadataBrowser_3_0_0_5_managed.zip](https://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
 
 Después de descargar la solución, debe instalarla. Para obtener información sobre cómo instalar una solución administrada, consulte [Importar, actualizar, y exportar soluciones](/dynamics365/customer-engagement/developer/customize/import-update-export-solutions).  
 

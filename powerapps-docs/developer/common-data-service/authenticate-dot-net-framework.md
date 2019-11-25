@@ -1,6 +1,6 @@
 ---
 title: Autenticación con las aplicaciones de .NET Framework (Common Data Service) | Microsoft Docs
-description: Cómo las aplicaciones de .NET Framework se pueden autenticar en Common Data Service
+description: Cómo las aplicaciones .NET Framework puede autenticarse con Common Data Service
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -10,12 +10,17 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1cfe6bf09d274f7b465ffbcc97f220e3374af72f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749737"
 ---
-
 # <a name="authentication-with-net-framework-applications"></a>Autenticación con las aplicaciones de .NET Framework
 
 Si usa .NET Framework puede usar clases en el espacio de nombre [Xrm.Tooling](/dotnet/api/?view=dynamics-xrmtooling-ce-9) para autenticarse y para conectarse al servicio de la organización y a la Api web.
@@ -48,7 +53,7 @@ Más información: [Crear aplicaciones cliente de Windows mediante las herramien
 Use la versión 4.6.2 de .NET Framework o superior al crear aplicaciones cliente. Solo las aplicaciones que usan la seguridad de nivel de transporte (TLS) 1.2 o una mejor seguridad pueden conectarse. TLS 1.2 no es el protocolo predeterminado usado por .NET Framework 4.5.2, pero está en .NET Framework 4.6.2.
 
 > [!NOTE]
-> **Problema conocido con Visual Studio 2015**
+> **Problema conocido de Visual Studio 2015**
 > 
 > Cuando se ejecuta el proyecto/solución en VS 2015 en modo de depuración, es posible que no pueda conectarse. Esto ocurre independientemente de si está usando un marco de destino de 4.6.2 o más alto. Esto puede producirse porque el proceso de hospedaje de Visual Studio se compila con .NET 4.5, lo que significa de forma predeterminada que no es compatible con TLS 1.2. Puede deshabilitar el proceso de hospedaje de Visual Studio como solución. 
 >

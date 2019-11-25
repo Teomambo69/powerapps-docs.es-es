@@ -9,8 +9,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
+ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749929"
 ---
-
 # <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
 
 En este ejemplo se muestra cómo usar React para crear componentes utilizando PowerApps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
@@ -42,7 +47,7 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 </manifest>
 ```
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>información general
 
 Este ejemplo proporciona ejemplos de cómo agregar dependencias para las bibliotecas de terceros y Office UI Fabric, indicando cómo usar los componentes Office UI Fabric para React para la interfaz de usuario y realizar de enlace de datos bidireccional entre PowerApps Component Framework y el modelo de estado de React.
 
@@ -64,11 +69,11 @@ import { FacepileBasicExample, IFacepileBasicExampleProps } from "./Facepile";
 
 export class ReactStandardControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Reference to the notifyOutputChanged method
+  // reference to the notifyOutputChanged method
   private notifyOutputChanged: () => void;
-  // Reference to the container div
+  // reference to the container div
   private theContainer: HTMLDivElement;
-  // Reference to the React props, prepopulated with a bound event handler
+  // reference to the React props, prepopulated with a bound event handler
   private props: IFacepileBasicExampleProps = {
     numberFacesChanged: this.numberFacesChanged.bind(this)
   };

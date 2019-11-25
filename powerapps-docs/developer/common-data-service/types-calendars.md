@@ -1,5 +1,5 @@
 ---
-title: Tipos de calendario (Common Data Service) | Microsoft Docs
+title: Tipos de calendarios (Common Data Service) | Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e5f0465a51114a7fc3fd2eecd33a243a5af74cae
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749781"
 ---
 # <a name="types-of-calendars"></a>Tipos de calendarios
 

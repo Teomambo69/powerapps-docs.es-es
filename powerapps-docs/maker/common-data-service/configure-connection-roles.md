@@ -1,24 +1,30 @@
 ---
 title: Configurar roles de conexión | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758256"
 ---
 # <a name="configure-connection-roles"></a>Configurar roles de conexión
 
@@ -28,16 +34,30 @@ Cuando las personas establezcan una conexión entre dos registros, también pued
 
 Cualquiera con acceso de escritura a la entidad **Rol de conexión** puede establecer qué conexión está disponible para que las personas la usen.
 
+> [!IMPORTANT]
+> Para que una entidad esté disponible como tipo de registro para un nuevo o existente rol de conexión, la propiedad **Habilitar conexiones** debe estar habilitado para la entidad. 
+
+## <a name="enable-connection-roles-for-an-entity"></a>Habilitar roles de conexión para una entidad
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+2. Expanda **Datos**y, a continuación seleccione **Entidades**. 
+3. Seleccione la entidad que desee habilitar para roles de conexión y, en la barra de comandos seleccione **Configuración**. 
+4. En el panel **Configuración** expanda el área **Colaboración** y, a continuación seleccione **Habilitar conexiones**.
+    > [!div class="mx-imgBorder"] 
+    > ![Habilitar configuración de conexiones](media/enable-connections.png "Habilitar configuración de conexiones")
+
+6. Seleccione **Listo**. 
+
 ## <a name="view-connection-roles"></a>Ver roles de conexión
 
 Hay varios roles estándar de conexión ya configurados en Common Data Service. Para verlos debe desplazarse al área de Configuración. 
 
 ### <a name="navigate-to-the-settings-area"></a>Navegue al área de Configuración.
 
-1. Mientras ve una aplicación basada en modelo, edite la dirección URL para quitar todo después de `dynamics.com` y actualizar la página.
-1. Navegue a **Configuración** > **Negocio** > **Administración de empresas** y después seleccione **Roles de conexión**.
+1. En una aplicación basada en modelo seleccione **Configuración** > **Configuración avanzada**. 
+2. Navegue a **Configuración** > **Negocio** > **Administración de empresas** y después seleccione **Roles de conexión**.
 
-![Roles de conexión en la configuración de Administración de empresas](media/navigate-settings-connection-roles.png)
+   > [!div class="mx-imgBorder"] 
+    > ![Roles de conexión en la configuración de Administración de empresas](media/navigate-settings-connection-roles.png "Roles de conexión en la configuración de Administración de empresas")
 
 En esta vista puede ver todos los roles de conexión que estén disponibles para este entorno y puede editarlos aquí.
 

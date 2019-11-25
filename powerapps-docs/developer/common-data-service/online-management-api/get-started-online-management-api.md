@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 22ea4e2dc02ee272af3cb8fa916d8d20219b6b6a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752956"
 ---
 # <a name="get-started-with-online-management-api"></a>Introducción a la API de Online Management 
 
@@ -24,11 +30,11 @@ Para usar la API de Online Management, debe tener uno de los siguientes roles de
 - Administrador global
 - Administrador de servicios
 
-Para obtener más información sobre estos roles, consulte [Acerca de los roles de administración de Office 365](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Para obtener más información sobre estos roles, consulte [Acerca de los roles de administración de Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 ## <a name="service-url"></a>URL del servicio
 
-La dirección URL del servicio define la dirección del extremo para acceder a la REST API. Para realizar cualquier operación mediante la API de Online Management, deberá especificar la dirección URL de la solicitud en el siguiente formato:
+La dirección URL del servicio define la dirección del extremo de la API de REST de acceso. Para realizar cualquier operación mediante la API de Online Management, deberá especificar la dirección URL de la solicitud en el siguiente formato:
 
 `{ServiceUrl}/api/v1.2/{resource}`
 
@@ -61,8 +67,8 @@ La API de Online Management tiene los siguientes encabezados estándar de solici
 
 | Encabezado | Tipo | Descripción  |
 |--------|------|--------------|
-|**Accept-Language**|String|Especifica el idioma preferido para la respuesta. Para obtener más información sobre el encabezado: [aceptación de idioma (documentos web de MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)|
-|**Autorización**|String|Especifica las credenciales de inicio de sesión para autenticar a un usuario con el servicio de la API de administración en línea. Para obtener más información sobre el encabezado: [Autorización (documentos web de MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)|
+|**Accept-Language**|String|Especifica el idioma preferido para la respuesta. Para obtener más información sobre el encabezado: [aceptación de idioma (documentos web de MDN)](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language)|
+|**Autorización**|String|Especifica las credenciales de inicio de sesión para autenticar a un usuario con el servicio de la API de administración en línea. Para obtener más información sobre el encabezado: [Autorización (documentos web de MDN)](https://developer.mozilla.org/docs/Web/HTTP/Headers/Authorization)|
 
 Vea [Autenticar para usar la API de administración en línea](authentication.md) para saber sobre la configuración de estos encabezados en la solicitud.
 

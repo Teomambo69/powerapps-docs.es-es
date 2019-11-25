@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c466cb19fcc1b350fda1b85a05c24c2231d14815
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749803"
 ---
 # <a name="saved-queries"></a>Consultas guardadas
 
-Las consultas guardadas son las entidades de negocio que definen los parámetros y los criterios de una búsqueda del entorno de Common Data Service. Las consultas guardadas admiten búsquedas de entidades cruzadas. Hay dos entidades disponibles para consultas en relación con el entorno de Common Data Service.  
+Las consultas guardadas son entidades de negocio que definen los parámetros y los criterios de una búsqueda de entorno de Common Data Service. Las consultas guardadas admiten búsquedas de entidades cruzadas. Hay dos entidades disponibles para consultas en el entorno de Common Data Service.  
   
 - Una *consulta de usuario*, llamada una vista guardada en la aplicación, es propiedad de un usuario individual, se puede asignar y compartir con otros usuarios, y pueden verla otros usuarios en función de sus privilegios de acceso. Esto es adecuado para consultas usadas frecuentemente que abarcan tipos de entidad y consultas que realizan agregación. Más información: [Editar UserQuery](reference/entities/userquery.md) 
 

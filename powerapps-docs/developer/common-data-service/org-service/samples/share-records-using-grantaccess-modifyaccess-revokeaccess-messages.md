@@ -1,19 +1,25 @@
 ---
 title: 'Ejemplo: compartir registros utilizando GrantAccess, ModifyAccess y RevokeAccess (Common Data Service) | Microsoft Docs'
-description: 'Este ejemplo muestra cómo compartir un registro usando un mensaje de concesión, modificación y revocación de acceso.'
+description: Este ejemplo muestra cómo compartir un registro usando un mensaje de concesión, modificación y revocación de acceso.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e01ee56f6d0ef86d6a17fc0b3b4001227a3cc13
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749862"
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>Ejemplo: compartir registros utilizando los mensajes GrantAccess, ModifyAccess y RevokeAccess
 
@@ -37,12 +43,12 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 **Nombre**: Dan<br/>
 **Apellidos**: Wilson<br/>
 **Rol de seguridad**: Delegado<br/>
-**UserName**: dwilson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: dwilson@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: Christen<br/>
 **Apellidos**: Anderson<br/>
 **Rol de seguridad**: Delegado<br/>
-**UserName**: canderson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: canderson@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

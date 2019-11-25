@@ -1,5 +1,5 @@
 ---
-title: 'Diseño de la personalización escalable: Patrones de diseño de transacciones de bases de datos (Common Data Service) | Microsoft Docs'
+title: 'Diseño de la personalización escalable: Patrones de diseño de transacciones (Common Data Service) | Microsoft Docs'
 description: 'El cuarto de una serie de temas. '
 ms.custom: ''
 ms.date: 11/18/2018
@@ -10,10 +10,16 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bbf96b3d9dbe1daa1b0d4538a0dc58dda8dfb9cd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749796"
 ---
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Diseño de la personalización escalable: Patrones de diseño de transacciones
 
@@ -28,7 +34,7 @@ El bloqueo es un componente muy importante de SQL Server y de Common Data Servic
 
 ## <a name="transaction-usage-nolock-hint"></a>Use de transacciones: Sugerencia Nolock
 
-Una funcionalidad de plataforma de Common Data Service que utilizan mucho las vistas es la capacidad de especificar que una consulta pueda realizarse con una sugerencia Nolock, que indica a la base de datos de que no se necesita un bloqueo para esta consulta. 
+Una funcionalidad de la plataforma Common Data Service que utilizan mucho las vistas es la capacidad de especificar que una consulta pueda realizarse con una sugerencia Nolock, que indica a la base de datos de que no se necesita un bloqueo para esta consulta. 
 
 Las vistas usan este método porque no hay un vínculo directo entre la acción de iniciar la vista y las acciones posteriores. Otras actividades puede producirlas bien ese usuario u otros y no es práctico ni ventajoso bloquear la tabla completa de datos que muestra la vista mientras hasta que el usuario prosiga. 
 
@@ -231,7 +237,7 @@ Cuando determinados errores aparecen, usar los archivos de seguimiento del servi
 
 ## <a name="summary"></a>Resumen
 
-El contenido en [Diseño de la personalización escalable en Common Data Service para aplicaciones](overview.md) y los temas posteriores [Transacciones de base de datos](database-transactions.md), [Problemas de simultaneidad](concurrency-issues.md) y este mismo ha descrito los conceptos siguientes con los ejemplos y estrategias que le ayudarán a entender cómo diseñar e implementar de las personalizaciones escalables para Common Data Service.
+El contenido en [Diseño de la personalización escalable en Common Data Service](overview.md) para aplicaciones y los temas posteriores [Transacciones de base de datos](database-transactions.md), [Problemas de simultaneidad](concurrency-issues.md) y este mismo ha descrito los conceptos siguientes con los ejemplos y estrategias que le ayudarán a entender cómo diseñar e implementar de las personalizaciones escalables para Common Data Service.
 
 Algunos conceptos clave para recordar incluyen lo siguiente: 
 

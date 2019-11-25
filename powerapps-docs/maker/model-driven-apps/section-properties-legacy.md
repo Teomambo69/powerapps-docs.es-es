@@ -1,12 +1,12 @@
 ---
-title: Propiedades de sección para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de las secciones para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
 description: Comprender las propiedades de sección para un formulario principal
 Keywords: Formulario principal; propiedades de sección; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755023"
 ---
 # <a name="model-driven-app-form-section-properties"></a>Propiedades de sección para formularios principales de aplicaciones controladas por modelos
 
@@ -28,7 +34,7 @@ search.app:
  Los encabezados y pies de página son similares a las secciones pero no se pueden quitar. Si no contienen nada no se mostrarán. 
 
 Puede acceder a las **Propiedades de sección** desde el sitio de PowerApps. 
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 

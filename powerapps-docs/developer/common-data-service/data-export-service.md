@@ -1,6 +1,6 @@
 ---
 title: Servicio de exportación de datos (Common Data Service) | Microsoft Docs
-description: 'Capacidades, requisitos previos, API y programación del servicio de exportación de datos.'
+description: Capacidades, requisitos previos, API y programación del servicio de exportación de datos.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: sabinn-msft
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752996"
 ---
 # <a name="data-export-service"></a>Servicio de exportación de datos
 
@@ -57,12 +63,12 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-Para soluciones y servicios en línea, Azure proporciona un servicio de [Key Vault](https://azure.microsoft.com/services/key-vault/) para salvaguardar claves criptográficas, contraseñas y otros secretos.  Para usar Almacén de claves de Azure, este servicio propiedad del cliente se debe configurar para conceder permiso a "Servicio de exportación de datos de Dynamics 365”, que se usará para almacenar con seguridad la cadena de conexión de SQL Azure. Para realizar esta configuración con un script de PowerShell, consulte [Cómo configurar Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Como alternativa, este servicio se puede administrar con su REST API; consulte [Administración de Key Vault](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
+Para soluciones y servicios en línea, Azure proporciona un servicio de [Key Vault](https://azure.microsoft.com/services/key-vault/) para salvaguardar claves criptográficas, contraseñas y otros secretos.  Para usar Almacén de claves de Azure, este servicio propiedad del cliente se debe configurar para conceder permiso a "Servicio de exportación de datos de Dynamics 365”, que se usará para almacenar con seguridad la cadena de conexión de SQL Azure. Para realizar esta configuración con un script de PowerShell, consulte [Cómo configurar Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Como alternativa, este servicio se puede administrar con su API de REST; consulte [Administración de Key Vault](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
   
 También se aconseja que agregue el dominio https://discovery.crmreplication.azure.net/ a la lista de sitios de confianza en el explorador y habilite ventanas emergentes para este sitio.  
   
 ## <a name="programming-for-the-data-export-service"></a>Programación para el servicio Exportación de datos  
- El servicio Exportación de datos expone una API basada en REST que se divide en dos grupos: un conjunto de operaciones de `Metadata` para explorar la estructura organizativa de Common Data Service, relaciones e información de conexión; y un conjunto de operaciones de `Profiles` para configurar y administrar cada replicación de datos.  Esta API se define y se documenta completamente en las direcciones URL [Swagger](http://swagger.io/) siguientes:  
+ El servicio Exportación de datos expone una API basada en REST que se divide en dos grupos: un conjunto de operaciones de `Metadata` para explorar la estructura organizativa de Common Data Service, relaciones e información de conexión; y un conjunto de operaciones de `Profiles` para configurar y administrar cada replicación de datos.  Esta API se define y se documenta completamente en las direcciones URL [Swagger](https://swagger.io/) siguientes:  
   
 |Extremo de Swagger|Descripción|  
 |----------------------|-----------------|  

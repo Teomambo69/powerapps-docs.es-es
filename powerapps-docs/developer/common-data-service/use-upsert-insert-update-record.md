@@ -1,19 +1,25 @@
 ---
-title: Usar Upsert para insertar o actualizar un registro (Common Data Service) | Microsoft Docs
+title: Uso de Upsert para insertar o actualizar un registro (Common Data Service) | Microsoft Docs
 description: El mensaje UpsertRequest (actualizar o insertar) le ayuda a simplificar varios escenarios de integración de datos en los que no sabe si ya existe un registro en Dynamics 365. En tales casos no sabrá si debe llamar a una operación UpdateRequest o CreateRequest. Esto da lugar a que consulte el registro primero para determinar si existe antes de realizar la operación adecuada. El mensaje UpsertRequest le ayuda a solucionar este problema
 ms.custom: ''
 ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67b8793ae57633d6e5ffa15b1aa68f4104829c67
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753715"
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Use Upsert para insertar o actualizar un registro
 
@@ -66,8 +72,8 @@ Puede reducir la complejidad que caracteriza a los escenarios de integración de
    ![flujo del proceso de upsert](media/upsert-flowchart-dynamics-crm-2015.png "flujo del proceso de upsert")  
   
 <a name="BKMK_SampleCode"></a>   
-## <a name="sample-code"></a>Código de ejemplo  
- La operación de [Insertar o actualizar un registro mediante Upsert](http://go.microsoft.com/fwlink/p/?LinkId=532924) El archivo [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) de ejemplo contiene el siguiente método `ProcessUpsert` para aplicar el mensaje de `UpsertRequest` sobre el contenido de un archivo XML para crear nuevos registros o actualizar los existentes.  
+## <a name="sample-code"></a>Código de ejemplo   
+ La operación de [Insertar o actualizar un registro mediante Upsert](https://go.microsoft.com/fwlink/p/?LinkId=532924) El archivo [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) de ejemplo contiene el siguiente método `ProcessUpsert` para aplicar el mensaje de `UpsertRequest` sobre el contenido de un archivo XML para crear nuevos registros o actualizar los existentes.  
   
 ```csharp
 public void ProcessUpsert(String Filename)

@@ -1,6 +1,6 @@
 ---
-title: Recuperar entidades relacionadas con una consulta (Common Data Service)| Microsoft Docs
-description: Lea cómo recuperar entidades relacionadas para una entidad ampliando las propiedades de navegación.
+title: Recuperar registros de entidades relacionadas con una consulta (Common Data Service)| Microsoft Docs
+description: Lea cómo recuperar registros de entidades relacionadas para una entidad ampliando las propiedades de navegación.
 ms.custom: ''
 ms.date: 07/15/2019
 ms.service: powerapps
@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3D8FB9AF-3663-437A-988E-CBAE9579F167
 caps.latest.revision: 78
 author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749764"
 ---
-# <a name="retrieve-related-entities-with-a-query"></a>Recuperar entidades relacionadas con una consulta
+# <a name="retrieve-related-entity-records-with-a-query"></a>Recuperar registros de entidades relacionadas con una consulta
 
 Use la opción de consulta del sistema `$expand` en las propiedades de navegación para controlar qué datos de entidades relacionadas se devuelven. Hay dos tipos de propiedades de navegación:  
   
@@ -35,7 +41,7 @@ Si incluye solo el nombre de la propiedad de navegación, recibirá todas las pr
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 
-## <a name="retrieve-related-entities-by-expanding-single-valued-navigation-properties"></a>Recuperar entidades relacionadas ampliando las propiedades de navegación con un valor
+## <a name="retrieve-related-entity-records-by-expanding-single-valued-navigation-properties"></a>Recuperar registros de entidades relacionadas ampliando las propiedades de navegación con un valor
 
 El ejemplo siguiente muestra cómo recuperar el contacto para todos los registros de la cuenta. Para los registros de contacto relacionados, solo recuperamos contactid y fullname.  
   

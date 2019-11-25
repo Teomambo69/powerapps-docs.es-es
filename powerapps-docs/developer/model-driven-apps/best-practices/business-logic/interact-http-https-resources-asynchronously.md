@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 02/20/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 37f5a91cc70614006a3525a033dac6df2d7e9d98
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753972"
 ---
 # <a name="interact-with-http-and-https-resources-asynchronously"></a>Interactuar con recursos HTTP y HTTPS de forma asincrónica
 
@@ -83,7 +89,7 @@ Hay varias formas de interactuar con el servidor o solicitar recursos. Los enfoq
   requestXhr.open('GET', '/test/test.txt', false);
   ```
 
-- Uso de la función [`ajax`](http://api.jquery.com/jquery.ajax/) de [`jQuery`](https://www.jquery.com) con `false` para el valor del parámetro `async`
+- Uso de la función [`ajax`](https://api.jquery.com/jquery.ajax/) de [`jQuery`](https://www.jquery.com) con `false` para el valor del parámetro `async`
 
   ```javascript
   // Explicitly setting the async parameter to false or supplying a variable with a value of false will force this as a synchronous call.

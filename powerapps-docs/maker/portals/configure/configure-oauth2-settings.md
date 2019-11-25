@@ -1,6 +1,6 @@
 ---
-title: Configurar los valores del proveedor de OAuth2 para un portal | MicrosoftDocs
-description: Instrucciones para agregar y configurar los valores del proveedor de OAuth2 para un portal.
+title: Configurar ajustes del proveedor de OAuth2 para un portal en | MicrosoftDocs
+description: Instrucciones para agregar y configurar las opciones del proveedor de OAuth2 para un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -14,131 +14,131 @@ ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542819"
+ms.locfileid: "2755463"
 ---
-# <a name="configure-oauth2-provider-settings-for-portals"></a>Configurar los valores del proveedor de OAuth2 para portales
+# <a name="configure-oauth2-provider-settings-for-portals"></a>Configurar el proveedor OAuth2 para portales
 
-Los proveedores de identidades externas basados en OAuth 2,0 implican el registro de una "aplicación" con un servicio de terceros para obtener un par "ID. de cliente" y "secreto de cliente". A menudo, esta aplicación requiere la especificación de una dirección URL de redireccionamiento que permite al proveedor de identidades devolver a los usuarios al portal (usuario de confianza). El ID. de cliente y el secreto de cliente se configuran como configuración del sitio del portal para establecer una conexión segura entre el usuario de confianza y el proveedor de identidades. La configuración se basa en las propiedades de las clases [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]AccountAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.aspx), [TwitterAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.twitter.twitterauthenticationoptions.aspx), [FacebookAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.facebook.facebookauthenticationoptions.aspx)y [GoogleOAuth2AuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.google.googleoauth2authenticationoptions.aspx) .  
+Los proveedores de identidad externos basados en OAuth 2.0 registran una "aplicación" con un servicio de terceros para obtener un par "Id. de cliente" y "secreto de cliente". A menudo, esta aplicación requiere especificar una dirección URL de redirección que permite que el proveedor de identidad envíe los usuarios de vuelta al portal (usuario de confianza). El Id. del cliente y el secreto de cliente están configurados como valores del sitio del portal para establecer una conexión de seguridad del usuario de confianza al proveedor de identidad. Los valores se basan en las propiedades de las clases [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]AccountAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.aspx), [TwitterAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.twitter.twitterauthenticationoptions.aspx), [FacebookAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.facebook.facebookauthenticationoptions.aspx) y [GoogleOAuth2AuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.google.googleoauth2authenticationoptions.aspx).  
 
 Los proveedores admitidos son:
 
-- [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] cuenta
+- Cuenta de [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]
 - Twitter
 - Facebook
 - Google
 - LinkedIn
 - Yahoo
 
-## <a name="create-oauth-applications"></a>Creación de aplicaciones de OAuth
+## <a name="create-oauth-applications"></a>Crear aplicaciones OAuth
 
-En general, si un proveedor de OAuth usa la configuración de la aplicación que requiere un valor de URI de redireccionamiento, especifique <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[proveedor\] en función de cómo el proveedor realice la validación del URI de redirección (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto con el nombre de dominio). Sustituya el nombre del proveedor en lugar de \[proveedor\] en el URI de redirección.
+Normalmente si un proveedor de OAuth usa una configuración de aplicación que requiere un valor de URI de redirección, especifique <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[proveedor]\] en función de cómo el proveedor realiza validación de URI de re direccionamiento (algunos proveedores requieren que se especifique la ruta de acceso completa de la dirección URL junto al nombre de dominio). Sustituya el nombre del proveedor en lugar de \[provider\] en la URI de redirección.
 
 ### <a name="google"></a>Google
 
-[Instrucciones de credenciales de la API de Google OAuth2](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
+[Instrucciones de credenciales de la API Google OAuth2](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
 
-1. Abra la [consola de desarrolladores de Google](https://console.developers.google.com/)  
-2. Crear un proyecto de API o abrir un proyecto existente
-3. Vaya a**api & auth** &gt;**API**y, en **API de redes sociales**, seleccione**Google + API**y, a continuación, seleccione**Habilitar API** .
-4. Vaya a la **pantalla de consentimiento**de**api & auth** &gt;.
-    - Especifique una**dirección de correo electrónico**.
-    - Especifique un**nombre de producto**personalizado.
-    - Seleccione**Guardar**.
-5. Vaya a**api & auth** &gt;**credenciales** y cree un nuevo ID. de cliente.
-   - Tipo de aplicación:**aplicación web**
+1. Abra [Google Developers Console](https://console.developers.google.com/)  
+2. Cree un proyecto de API o abra un proyecto existente
+3. Vaya a **API y autenticación** &gt;**API** y en **API de medios sociales**, seleccione **Google+ API** y luego seleccione **Habilitar API**
+4. Vaya a **API y autenticación** &gt;**Pantalla de consentimiento**.
+    - Especifique una **Dirección de correo electrónico**.
+    - Especifique un **Nombre de producto** personalizado.
+    - Seleccione **Guardar**.
+5. Vaya a **API y autenticación** &gt;**Credenciales** y cree un nuevo identificador de cliente.
+   - Tipo de aplicación: **Aplicación web**
    - Orígenes de [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] autorizados: https://portal.contoso.com
    - URI de redirección autorizados: https://portal.contoso.com/signin-google 
-   - Seleccione **crear ID**. de cliente.
+   - Seleccione **Crear Id. de cliente**.
 
 ### <a name="facebook-app-settings"></a>Configuración de la aplicación Facebook
 
-1. Abrir el panel de la [aplicación de desarrolladores de Facebook](https://developers.facebook.com/apps)  
-2. Seleccione **Agregar una nueva aplicación**.
-3. Seleccione **sitio web**.
-4. Seleccione **omitir y crear ID. de aplicación**.
-    - Especifique un **nombre para mostrar**.
-    - Elija una **categoría**.
-    - Seleccione **crear ID**. de aplicación.
+1. Abra [Facebook Developers App Dashboard](https://developers.facebook.com/apps)  
+2. Seleccione **Agregar nueva aplicación**.
+3. Seleccione **Sitio web**.
+4. Seleccione **Omitir y crear Id. de aplicación**.
+    - Especifique un **Nombre para mostrar**.
+    - Elija una **Categoría**.
+    - Seleccione **Crear id. de aplicación**.
 
-5. En el panel de la nueva aplicación, vaya a **configuración** &gt;**Basic** (pestaña) y agregue los detalles siguientes:
+5. Mientras está en el panel para la nueva aplicación, vaya a**Configuración** &gt;**Básica** (pestaña) y agregue los siguientes detalles:
     - Dominios de aplicación (opcional): portal.contoso.com 
-    - Correo electrónico de contacto: *&lt;dirección de correo electrónico de su elección&gt;* 
-    - Seleccione **Agregar plataforma**y, a continuación, seleccione **sitio web**. 
-    - Dirección URL del sitio: https://portal.contoso.com/ o https://portal.contoso.com/signin-facebook
+    - Correo electrónico de contacto: *&lt;dirección de correo electrónico que prefiera&gt;* 
+    - Seleccione **Agregar plataforma** y seleccione un **Sitio web**. 
+    - Dirección URL: https://portal.contoso.com/ o https://portal.contoso.com/signin-facebook
 
 6. Seleccione **Guardar cambios**.
-7. Vaya a **estado & revisar** &gt; pestaña **Estado** .
-8. Seleccione **sí** cuando se le pregunte si desea que la aplicación y todas sus características estén disponibles para el público general. Debe haber rellenado los datos válidos en el paso 5 anterior para habilitar esta configuración.
+7. Vaya a **Estado y revisión** &gt; **Estado** (pestaña).
+8. Seleccione **Sí** cuando se le solicita para configurar la aplicación y todas las características a disposición del público general. Debe haber completado los datos válidos en el paso 5 anterior para habilitar este valor.
 
-### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] configuración de la aplicación
+### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>Configuración de aplicación de [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]
 
-1. Abrir el [Centro para desarrolladores de cuentas[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]](https://account.live.com/developers/applications/index)  
-2. Seleccione **crear aplicación** y especifique un **nombre de aplicación**.
-3. Seleccione **acepto para aceptar los** términos y condiciones.
-4. Vaya a **configuración** &gt;**configuración de API**y, a continuación, establezca la dirección URL de redireccionamiento como https://portal.contoso.com/signin-microsoft 
+1. Abra Centro para desarrolladores de cuentas de [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] ](https://account.live.com/developers/applications/index)  
+2. Seleccione **Crear aplicación** y especifique un **Nombre de aplicación**.
+3. Seleccione **Acepto** para aceptar los términos y condiciones.
+4. Vaya a **Configuración** &gt;**Configuración de API** y, a continuación, establezca la dirección URL de redireccionamiento como https://portal.contoso.com/signin-microsoft. 
 
-### <a name="twitter-apps-settings"></a>Configuración de aplicaciones de Twitter
+### <a name="twitter-apps-settings"></a>Configuración de aplicaciones en Twitter
 
 1. Abra [Administración de aplicaciones de Twitter](https://apps.twitter.com/). 
-2. Seleccione **crear nueva aplicación**.
+2. Seleccione **Crear nueva aplicación**.
 
-    - Especifique un **nombre** y una **Descripción** para la aplicación.
+    - Especifique el **Nombre** y **Descripción** de la aplicación.
     - Establezca la dirección URL del sitio web como https://portal.contoso.com.
     - Establezca la dirección URL de devolución de llamada como https://portal.contoso.com o https://portal.contoso.com/signin-twitter.
 
-3. Seleccione **crear la aplicación de Twitter**.
+3. Seleccione **Cree su aplicación de Twitter**.
 
-### <a name="linkedin-app-settings"></a>Configuración de la aplicación LinkedIn
+### <a name="linkedin-app-settings"></a>Configuración de aplicaciones en LinkedIn
 
-1. Abra [LinkedIn Developer Network](https://www.linkedin.com/secure/developer).  
+1. Abra [Red para desarrolladores de LinkedIn](https://www.linkedin.com/secure/developer).  
 2. Seleccione **Agregar nueva aplicación**.
 
-    - Especifique un **nombre de aplicación**, una **Descripción**, etc.
+    - Especifique **Nombre de aplicación**, **Descripción**, etc.
     - Establezca la dirección URL del sitio web como https://portal.contoso.com.
-    - Establecer contrato de usuario de OAuth/ámbito predeterminado: r\_basicprofie y r\_EmailAddress
-    - Establezca la dirección URL de redireccionamiento de OAuth 2,0: https://portal.contoso.com/signin-linkedin.
+    - Establezca Ámbito de contrato de usuario/predeterminado de OAuth: r\_basicprofie y r\_emailaddress
+    - Establezca la dirección URL de redireccionamiento de OAuth 2.0: https://portal.contoso.com/signin-linkedin.
 
 3. Seleccione **Agregar aplicación**.
 
-### <a name="yahoo-ydn-app-settings"></a>Yahoo! Configuración de la aplicación YDN
+### <a name="yahoo-ydn-app-settings"></a>Yahoo! Configuración de aplicaciones en YDN
 
-1. Abra [Yahoo! Developer Network](https://developer.yahoo.com/apps).
-2. Seleccione **crear una aplicación**.
+1. Abra [Red para desarrolladores de Yahoo!](https://developer.yahoo.com/apps).
+2. Seleccione **Crear una aplicación**.
     
-    - Especifique un **nombre de aplicación**.
-    - Tipo de aplicación: **aplicación web**.
+    - Especifique un **Nombre de aplicación**.
+    - Tipo de aplicación: **Aplicación web**.
     - Dominio de devolución de llamada: portal.contoso.com
 
-3. Seleccione **crear aplicación**.
+3. Seleccione **Crear aplicación**.
 
-## <a name="create-site-settings-by-using-oauth2"></a>Crear la configuración del sitio mediante OAuth2
+## <a name="create-site-settings-by-using-oauth2"></a>Crear valores del sitio mediante OAuth2
 
-El panel de la aplicación para cada proveedor mostrará el identificador de cliente (identificador de aplicación, clave de consumidor) y el secreto de cliente (secreto de aplicación, secreto de consumidor) de cada aplicación. Use estos dos valores para establecer la configuración del sitio del portal.
+El panel de la aplicación para cada proveedor mostrará el Id. de cliente (Id. de la aplicación, clave de consumidor) y el secreto de cliente (secreto de la aplicación, secreto de consumidor) para cada aplicación. Use estos dos valores para establecer la configuración del sitio del portal.
 
 >[!Note]
-> Una configuración de OAuth2 estándar solo requiere la siguiente configuración (con Facebook como ejemplo):
+> Una configuración de OAuth2 estándar requiere solo los siguientes valores (con Facebook como ejemplo):
 > - `Authentication/OpenAuth/Facebook/ClientId`
 > - `Authentication/OpenAuth/Facebook/ClientSecret`
 
-Sustituya la etiqueta `[provider]` en el nombre de la configuración del sitio por un nombre de proveedor de identidades específico: Facebook, Google, Yahoo,[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn o Twitter.
+Sustituya la etiqueta `[provider]` en el nombre del valor de sitio con un nombre de proveedor de identidad específico: Facebook, Google, Yahoo, [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn o Twitter.
 
-|**Nombre de la configuración del sitio**                                           |**Description**                                                                                                                                                                                                                                                                                                                                      |
+|**Nombre de configuración del sitio**                                           |**Descripción**                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Autenticación/registro/ExternalLoginEnabled                | Habilita o deshabilita el registro y el inicio de sesión de la cuenta externa. Valor predeterminado: true                                                                                                                                                                                                                                                                         |
-| Proveedor de autenticación/OpenAuth/\[\]/ClientId                   | Obligatorio. Valor de ID. de cliente de la aplicación de proveedor. También se le puede denominar identificador de aplicación o clave de consumidor.  Los nombres de configuración siguientes se permiten por compatibilidad con versiones anteriores: Authentication/OpenAuth/Twitter/ConsumerKey <ul><li>Autenticación/OpenAuth/Facebook/AppId</li><li>Authentication/OpenAuth/LinkedIn/ConsumerKey</li> |
-| Proveedor de autenticación/OpenAuth/\[\]/ClientSecret               | Obligatorio. Valor de secreto de cliente de la aplicación de proveedor. También se le puede denominar secreto de aplicación o secreto de consumidor.  Los nombres de configuración siguientes se permiten por compatibilidad con versiones anteriores: Authentication/OpenAuth/Twitter/ConsumerSecret <ul><li>Autenticación/OpenAuth/Facebook/AppSecret</li><li>Authentication/OpenAuth/LinkedIn/ConsumerSecret</li> |
-| Proveedor de autenticación/OpenAuth/\[\]/AuthenticationType         | Tipo de middleware de autenticación OWIN. Ejemplo: Yahoo. [authenticationoptions. AuthenticationType](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx).                                                                                                                                |  
-| Proveedor de autenticación/OpenAuth/\[\]/Scope                      | Lista separada por comas de los permisos que se van a solicitar. [microsoftaccountauthenticationoptions. Scope](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.scope.aspx).                                                                                                                |  
-| Proveedor de autenticación/OpenAuth/\[\]/Caption                    | Texto que el usuario puede mostrar en una interfaz de usuario de inicio de sesión. [microsoftaccountauthenticationoptions. Caption](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.caption.aspx).                                                                                              |  
-| Proveedor de autenticación/OpenAuth/\[\]/BackchannelTimeout         | Valor de tiempo de espera en milisegundos para las comunicaciones de canal posterior. [microsoftaccountauthenticationoptions. backchanneltimeout](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.backchanneltimeout.aspx).                                                                         |  
-| Proveedor de autenticación/OpenAuth/\[\]/CallbackPath               | La ruta de acceso de la solicitud dentro de la ruta de acceso base de la aplicación donde se devolverá el agente de usuario. [microsoftaccountauthenticationoptions. callbackpath](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.callbackpath.aspx).                                                         |  
-| Proveedor de autenticación/OpenAuth/\[\]/SignInAsAuthenticationType | El nombre de otro middleware de autenticación que será responsable de la emisión real de un**userClaimsIdentity**. [microsoftaccountauthenticationoptions. signinasauthenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.signinasauthenticationtype.aspx). |  
-| Proveedor de autenticación/OpenAuth/\[\]/AuthenticationMode         | El modo de middleware de autenticación OWIN. [Security. authenticationoptions. AuthenticationMode](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationmode.aspx).                                                                                                                                       |  
+| Authentication/Registration/ExternalLoginEnabled                | Habilita o deshabilita el inicio de sesión y el registro de la cuenta externa. Valor predeterminado: true                                                                                                                                                                                                                                                                         |
+| Authentication/OpenAuth/\[provider\]/ClientId                   | Requerido. El valor de Id. de cliente de la aplicación del proveedor. También puede denominarse Id. de la aplicación o Clave de consumidor.  Los nombres de configuración siguientes se permiten por compatibilidad:  Authentication/OpenAuth/Twitter/ConsumerKey <ul><li>Authentication/OpenAuth/Facebook/AppId</li><li>Authentication/OpenAuth/LinkedIn/ConsumerKey</li> |
+| Authentication/OpenAuth/\[provider\]/ClientSecret               | Requerido. El valor de secreto de cliente de la aplicación del proveedor. También puede denominarse Secreto de la aplicación o Secreto de consumidor.  Los nombres de configuración siguientes se permiten por compatibilidad:  Authentication/OpenAuth/Twitter/ConsumerSecret <ul><li>Authentication/OpenAuth/Facebook/AppSecret</li><li>Authentication/OpenAuth/LinkedIn/ConsumerSecret</li> |
+| Authentication/OpenAuth/\[provider\]/AuthenticationType         | El tipo de middleware de autenticación OWIN. Ejemplo: yahoo. [authenticationoptions.authenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx).                                                                                                                                |  
+| Authentication/OpenAuth/\[provider\]/Scope                      | Una lista separada por comas de permisos para solicitar. [microsoftaccountauthenticationoptions.scope](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.scope.aspx).                                                                                                                |  
+| Authentication/OpenAuth/\[provider\]/Caption                    | El texto que el usuario puede mostrar en una interfaz de usuario de inicio de sesión. [microsoftaccountauthenticationoptions.caption](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.caption.aspx).                                                                                              |  
+| Authentication/OpenAuth/\[provider\]/BackchannelTimeout         | Valor de tiempo de espera en milisegundos para comunicaciones de canal posterior. [microsoftaccountauthenticationoptions.backchanneltimeout](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.backchanneltimeout.aspx).                                                                         |  
+| Authentication/OpenAuth/\[provider\]/CallbackPath               | Se devolverá la ruta de solicitud en la ruta de acceso base de la aplicación donde el agente de usuario. [microsoftaccountauthenticationoptions.callbackpath](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.callbackpath.aspx).                                                         |  
+| Authentication/OpenAuth/\[provider\]/SignInAsAuthenticationType | El nombre de otro software intermedio de autenticación que será responsable de emitir realmente un**userClaimsIdentity**. [microsoftaccountauthenticationoptions.signinasauthenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.signinasauthenticationtype.aspx). |  
+| Authentication/OpenAuth/\[provider\]/AuthenticationMode         | El modo de middleware de autenticación OWIN. [security.authenticationoptions.authenticationmode](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationmode.aspx).                                                                                                                                       |  
 
 ### <a name="see-also"></a>Vea también
 
 [Configurar la autenticación del portal](configure-portal-authentication.md)  
-[Establecimiento de la identidad de autenticación para un portal](set-authentication-identity.md)  
-[Abra la configuración del proveedor de Connect Connect para portales](configure-openid-settings.md)   
-[Configuración del proveedor de WS-Federation para portales](configure-ws-federation-settings.md)  
-[Configuración del proveedor de SAML 2,0 para portales](configure-saml2-settings.md)
+[Establecer identidad de autenticación para un portal](set-authentication-identity.md)  
+[Configuración de proveedor Open ID Connect para portales](configure-openid-settings.md)   
+[Configuración de proveedor de WS-Federation para portales](configure-ws-federation-settings.md)  
+[Configuración del proveedor SAML 2.0 para portales](configure-saml2-settings.md)

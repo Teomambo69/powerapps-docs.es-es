@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61f1103153a2ad70de050ce2980fb2ed6bc9c3a8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753772"
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Uso del seguimiento de cambios para sincronizar los datos con sistemas externos
 
@@ -35,7 +41,7 @@ La característica de seguimiento de Common Data Service proporciona una forma d
 ## <a name="retrieve-changes-for-an-entity-using-the-web-api"></a>Recuperar cambios de una entidad usando API web  
 Los cambios realizados en las entidades pueden seguirse mediante solicitudes de la API Web, agregando `odata.track-changes` como encabezado preferente. El encabezado preferente `odata.track-changes` se usa para solicitar que se devuelva un *vínculo diferencial* que pueda usarse después para recuperar los cambios de la entidad.
 
-Los vínculos diferenciales son vínculos opacos generados por servicios que el cliente utiliza para recuperar los cambios posteriores a un resultado. Se basan en una consulta de definición que describe el conjunto de resultados cuyos cambios se están siguiendo, por ejemplo, la solicitud que genera los resultados que contienen el vínculo diferencial. El vínculo diferencial codifica el conjunto de entidades cuyos se están siguiendo, junto con un punto de partida desde el que desea realizar un seguimiento de los cambios. Más información acerca de los vínculos diferenciales [Oasis OData versión 4.0 - Vínculos diferenciales](http://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)
+Los vínculos diferenciales son vínculos opacos generados por servicios que el cliente utiliza para recuperar los cambios posteriores a un resultado. Se basan en una consulta de definición que describe el conjunto de resultados cuyos cambios se están siguiendo, por ejemplo, la solicitud que genera los resultados que contienen el vínculo diferencial. El vínculo diferencial codifica el conjunto de entidades cuyos se están siguiendo, junto con un punto de partida desde el que desea realizar un seguimiento de los cambios. Más información acerca de los vínculos diferenciales [Oasis OData versión 4.0 - Vínculos diferenciales](https://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)
 
 <a name="BKMK_webapiexample"></a>   
 ## <a name="retrieve-changes-in-entities-using-web-api-example"></a>Ejemplo de recuperación de cambios en entidades usando la API Web
@@ -128,7 +134,7 @@ Las opciones de consulta del sistema `$filter`, `$orderby` y `$top` no se admite
   
 <a name="BKMK_SampleCode"></a>   
 ## <a name="sample-code"></a>Código de ejemplo   
- El fragmento de código siguiente muestra cómo el mensaje de `RetrieveEntityChangesRequest` se usa para recuperar los cambios de una entidad. Para ver el ejemplo completo, vea [Sincronizar datos con sistemas externos utilizando seguimiento de cambios](http://go.microsoft.com/fwlink/p/?LinkId=533957).  
+ El fragmento de código siguiente muestra cómo el mensaje de `RetrieveEntityChangesRequest` se usa para recuperar los cambios de una entidad. Para ver el ejemplo completo, vea [Sincronizar datos con sistemas externos utilizando seguimiento de cambios](https://go.microsoft.com/fwlink/p/?LinkId=533957).  
   
 ```csharp
 string token;

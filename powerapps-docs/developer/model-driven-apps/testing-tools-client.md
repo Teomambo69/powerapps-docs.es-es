@@ -1,5 +1,5 @@
 ---
-title: Herramientas de prueba para desarrollo del lado del cliente (Common Data Service) | Microsoft Docs
+title: Herramientas de pruebas para desarrollo del lado del cliente (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre los marcos de prueba para desarrollo del lado del cliente.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: aengusheaney
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7ce54c1f02fa702a41b045b8f83e511c5017e45c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753584"
 ---
 # <a name="testing-tools-for-client-side-development"></a>Herramientas de pruebas para desarrollo del lado del cliente
 
@@ -33,5 +39,5 @@ Cuando una solución se desarrolla con pruebas de unidad, los desarrolladores ob
 
 [Herramientas de pruebas para el desarrollo de servidor](../common-data-service/testing-tools-server.md)<br />
 [Vídeo:  Crear y ejecutar prueba de la interfaz de usuario](https://youtu.be/ryWgK34Akt0)<br />
-[Publicación de blog: Easy Repro: ¿qué es?](http://www.itaintboring.com/dynamics-crm/easy-repro-what-is-it/)<br />
+[Publicación de blog: Easy Repro: ¿qué es?](https://www.itaintboring.com/dynamics-crm/easy-repro-what-is-it/)<br />
 [Vídeo: Introducción a DevOps](https://youtu.be/AorM792M8nY)

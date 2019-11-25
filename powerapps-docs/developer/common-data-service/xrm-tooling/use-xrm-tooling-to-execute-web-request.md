@@ -1,6 +1,6 @@
 ---
 title: Usar herramientas XRM para ejecutar acciones en Common Data Service| MicrosoftDocs
-description: 'El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Dynamics 365'
+description: El objeto de clase CrmServiceClient se puede usar para realizar, crear, recuperar, actualizar y eliminar operaciones de datos de Dynamics 365
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -9,16 +9,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
 ms.author: nabuthuk
 manager: kvivek
 author: Nkrb
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: ff161483f631fbd1673f36465041c5e0dbc0ac8c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749638"
 ---
 # <a name="use-xrm-tooling-to-execute-a-web-request-against-web-api"></a>Utilizar útiles de XRM para ejecutar una solicitud web con la API web
 

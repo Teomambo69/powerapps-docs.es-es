@@ -1,5 +1,5 @@
 ---
-title: Entidades de usuarios y equipos (Common Data Service) | Microsoft Docs
+title: Entidades de usuario y equipo (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre la administración de usuarios y equipos mediante la cual puede crear y mantener cuentas y perfiles de usuario.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6915cd693589ed0e5d9b41ca96ffb96450d1132c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753742"
 ---
 # <a name="user-and-team-entities"></a>Entidades de usuarios y equipos
 
@@ -40,8 +46,8 @@ La administración de usuarios y equipos es el área de Common Data Service dond
 |     AccessMode      | Especifica el tipo de acceso que este usuario tiene a Common Data Service. Esto se conoce a veces como el tipo de usuario.<br /><br /> -   Administrativo: el usuario tiene acceso al área Configuración pero no tiene acceso a las áreas Ventas, Marketing y Servicio.<br />-   No interactivo: el usuario tiene acceso al sistema pero solo a través del servicio web.<br />-   Lectura: el usuario tiene acceso de solo lectura.<br />-   Lectura y escritura: el usuario tiene acceso de lectura y escritura.<br />-   Usuario de soporte: el usuario lo creó el equipo de soporte de Common Data Service. |
 |       CalType       |                                                               Especifica el tipo de licencia del usuario.<br /><br /> -   Administrativo: el usuario posee derechos de usuario administrativo.<br />-   Dispositivo lleno: el usuario que usa el dispositivo donde se ejecuta Common Data Service tiene acceso tanto de lectura como de escritura.<br />-   Dispositivo limitado: el usuario que usa el dispositivo donde se ejecuta Common Data Service solo tiene acceso de lectura.<br />-   Completo: el usuario tiene acceso de lectura y escritura.<br />-   Limitado: el usuario solo tiene acceso de lectura.                                                                |
 |     IsDisabled      |                                                                                                                                                                                                                                             Especifica si se deshabilita el usuario. Solo se pueden habilitar los usuarios con licencia o los que tengan un modo de acceso de soporte o no interactivo. Los usuarios de soporte no se pueden deshabilitar.                                                                                                                                                                                                                                              |
-|     IsLicensed      |                                                                                                                                                                             Especifica si el usuario tiene licencia. Esto se aplica a los clientes que tienen acceso a Common Data Service a través del entorno de Microsoft Online Services. Este atributo es de solo lectura, y lo actualiza el sistema.                                                                                                                                                                              |
-| IsSyncWithDirectory |                                                                                                                                 Especifica si el usuario está sincronizado con el directorio de Office 365. Esto se aplica a los clientes que tienen acceso a Common Data Service a través del entorno de Microsoft Online Services. Este atributo solo se puede establecer en la creación y es de lo contrario de solo lectura.                                                                                                                                 |
+|     IsLicensed      |                                                                                                                                                                             Especifica si el usuario tiene licencia. Esto se aplica a los clientes que tienen acceso a Common Data Service para aplicaciones a través del entorno de Microsoft Online Services. Este atributo es de solo lectura, y lo actualiza el sistema.                                                                                                                                                                              |
+| IsSyncWithDirectory |                                                                                                                                 Especifica si el usuario está sincronizado con el directorio Office 365. Esto se aplica a los clientes que tienen acceso a Common Data Service para aplicaciones a través del entorno de Microsoft Online Services. Este atributo solo se puede establecer en la creación y es de lo contrario de solo lectura.                                                                                                                                 |
 |       QueueId       |                                                                                                                                                                                                                                                                                                               Especifica la cola predeterminada para el usuario.                                                                                                                                                                                                                                                                                                               |
 
  Las comprobaciones de acceso son aditivas. Puede acceder a las entidades en función de los roles asignados al usuario más los roles asignados al equipo al que pertenece un usuario. Esto permite que un usuario tenga privilegios fuera de su unidad de negocio.  
@@ -54,10 +60,10 @@ La administración de usuarios y equipos es el área de Common Data Service dond
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**Utilidad de configuración de usuario** es una herramienta desarrollada por Comunidad XrmToolbox para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
+**Configuración de utilidad de usuario** es una herramienta desarrollada por Comunidad XrmToolbox para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la comunidad no son un producto de Common Data Service y no se incluyen en el soporte técnico.
+> Las herramientas de la Comunidad no son un producto de Common Data Service y no se amplía el soporte para las herramientas de comunidad.
 > Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Vea también  
@@ -71,5 +77,5 @@ La administración de usuarios y equipos es el área de Common Data Service dond
  [Ejemplo: deshabilitar a un usuario](/dynamics365/customer-engagement/developer/sample-disable-user)   
  [Ejemplo: Compartir registros utilizando los mensajes GrantAccess, ModifyAccess y RevokeAccess](org-service/samples/share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md)   
  [Ejemplo: Compartir un registro utilizando un equipo de acceso](org-service/samples/share-record-using-access-team.md)   
- [Blog: Service Accounts – Non-Interactive Users](http://go.microsoft.com/fwlink/p/?LinkId=234350)   
+ [Blog: Service Accounts – Non-Interactive Users](https://go.microsoft.com/fwlink/p/?LinkId=234350)   
  [Entidades de privilegio y rol](/dynamics365/customer-engagement/developer/privilege-role-entities)

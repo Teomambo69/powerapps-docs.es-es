@@ -1,6 +1,6 @@
 ---
-title: 'Abrir formularios, vistas, diálogos e informes con una dirección URL (aplicaciones basadas en modelos) | Microsoft Docs'
-description: 'Obtenga más información acerca de los elementos direccionables de dirección URL, que le permiten incluir vínculos a formularios, vistas, cuadro de diálogo e informes en otras aplicaciones.'
+title: Abrir formularios, vistas, diálogos e informes con una dirección URL (aplicaciones basadas en modelos) | Microsoft Docs
+description: Obtenga más información acerca de los elementos direccionables de dirección URL, que le permiten incluir vínculos a formularios, vistas, cuadro de diálogo e informes en otras aplicaciones.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a8656eb85ff7812aff2c395b4a63e239dfdb375
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753608"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>Abrir formularios, vistas, diálogos e informes con una dirección URL
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
 
 Los elementos direccionables de URL le permiten incluir vínculos a formularios, vistas, diálogos e informes en otras aplicaciones. De esta manera, puede ampliar fácilmente otras aplicaciones, informes o sitios web para que los usuarios puedan ver información y realizar acciones sin cambiar de aplicación.  
 
@@ -34,22 +40,22 @@ Los elementos direccionables de URL le permiten incluir vínculos a formularios,
 
 <!-- To open a new account entity record form for on-premises [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]:  
  ```  
-http://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
+https://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
  ```  -->
 
  Para abrir un formulario de registro de la entidad de cuenta donde el identificador es {91330924-802A-4B0D-A900-34FD9D790829}:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
+https://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
  ```  
 
  Para abrir la vista **Oportunidades cerradas** para:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
+https://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
  ```  
 
  Para abrir la vista **Contactos activos** sin la barra de navegación o la barra de comandos  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
+https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
  ```  
 
 > [!NOTE]
@@ -65,7 +71,7 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 > [!TIP]
 >  Para obtener el valor del identificador de cualquier registro, use el botón **Enviar un vínculo** de la barra de comandos. A continuación tiene un ejemplo de lo que se abrirá en la aplicación de correo electrónico:  
 >   
->  `<http://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`.  
+>  `<https://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`.  
 >   
 >  El parámetro de identificador pasado a la dirección URL es el valor de identificador codificado del registro. En este ejemplo, el valor de identificador es `{899D4FCF-F4D3-E011-9D26-00155DBA3819}`. La versión codificada del GUID sustituirá las llaves de apertura y cierre “{” y “}” por “%7B” y “%7D”, respectivamente,  
 
@@ -77,7 +83,7 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 |   **etn**    |                                                                                                                                                                                                                                    El nombre lógico de la entidad. **Importante:** no use el parámetro **etc** (código de tipo de entidad) que contiene un código entero para la entidad. El código entero varía para las entidades personalizadas de distintas organizaciones.                                                                                                                                                                                                                                     |
 | **extraqs**  |     Opcional para formularios. Este parámetro contiene parámetros codificados en este parámetro.<br /><br /> Use este parámetro para transferir valores a un formulario. Para obtener más información, consulte [Establecer los valores de campo mediante parámetros que se pasan a un formulario](set-field-values-using-parameters-passed-form.md).<br /><br /> Cuando una entidad tiene más de un formulario definido, puede usar este parámetro para especificar qué formulario se debe abrir pasando el parámetro codificado `formid` con el valor igual al valor del identificador del formulario. Por ejemplo, para abrir un formulario con el identificado ‘6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf’, incluya este valor en el parámetro `extraqs`: `formid%3D6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf%0D%0A`.     |
 | **pagetype** |                                                                                                                                                                                                                                                        El tipo de página. Hay dos valores posibles:<br /><br /> - **entityrecord**<br />     Muestra un formulario de registro de la entidad.<br />- **entitylist**<br />     Muestra una vista de entidad.                                                                                                                                                                                                                                                         |
-|    **id**    |                                                                                                                                                                      Opcional para formularios. Utilícelo cuando abra un registro de entidad específico. Pase el identificador GUID codificado de la entidad. La versión codificada del GUID sustituirá las llaves de apertura y cierre “{” y “}” por “%7B” y “%7D”, respectivamente, por ejemplo `{91330924-802A-4B0D-A900-34FD9D790829}` is `%7B91330924-802A-4B0D-A900-34FD9D790829%7D`.                                                                                                                                                                      |
+|    **id**    |                                                                                                                                                                      Opcional para formularios. Utilícelo cuando abra un registro de entidad específico. Pase el identificador GUID codificado de la entidad. La versión codificada del GUID sustituirá las llaves de apertura y cierre “{“ y “}” por “%7B” y “%7D”, respectivamente, por ejemplo `{91330924-802A-4B0D-A900-34FD9D790829}` es `%7B91330924-802A-4B0D-A900-34FD9D790829%7D`.                                                                                                                                                                      |
 |  **viewid**  |                                                                                                                                                                                                        Necesario para vistas. Este es el identificador del registro de entidad `savedquery` o `userquery` que define la vista. La forma más fácil de obtener la dirección URL de una vista es copiarla. Para obtener más información, consulte [Copiar la dirección URL de una vista](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL).                                                                                                                                                                                                         |
 | **viewtype** |                                                                                                                                                                                                        Define el tipo de vista. Los valores posibles son los siguientes:<br /><br /> - **1039**<br />     Úselo para una vista de sistema. El parámetro `viewid` representa el identificador de un registro `savedquery`.<br />- **4230**<br />     Úselo para una vista personal. El parámetro `viewid` representa el identificador de un registro `userquery`.                                                                                                                                                                                                         |
 |   `navbar`   | Controla si la barra de navegación se muestra y si la navegación por la aplicación está disponible mediante las áreas y subáreas definidas en el mapa del sitio.<br /><br /> -   `on`<br />     Se muestra la barra de navegación. Este es el comportamiento predeterminado si el parámetro `navbar` no se usa.<br />-   `off`<br />     No se muestra la barra de navegación. Los usuarios pueden navegar usando otros elementos de la interfaz de usuario o los botones adelante y atrás.<br />-   `entity`<br />     En un formulario de entidad, solo las opciones de navegación de entidades relacionadas están disponibles. Después de navegar a una entidad relacionada, se muestra un botón atrás en la barra de navegación para permitir volver al registro original. |
@@ -134,7 +140,7 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
 -   El identificador único del registro en el que desea que se ejecute el diálogo.  
 
 > [!TIP]
->  Para obtener el identificador único del diálogo, vaya a **Configuración**, en la solución predeterminada seleccione **Procesos**. Seleccione un proceso y en las opciones **Acciones** de la barra de comandos, haga clic en **Copiar un enlace**. Esto copiará un vínculo para modificar el diálogo en el portapapeles, por ejemplo, *[[URL de la organización]]*`/sfa/workflow/edit.aspx?id=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d`.  
+>  Para obtener el identificador único del diálogo, vaya a **Configuración**, en la solución predeterminada seleccione **Procesos**. Seleccione un proceso y en las opciones **Acciones** de la barra de comandos, haga clic en **Copiar un enlace**. Esto copiará un vínculo para modificar el diálogo en el portapapeles, por ejemplo, *[URL de la organización]*`/sfa/workflow/edit.aspx?id=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d`.  
 
  El siguiente ejemplo muestra los parámetros de la dirección URL y la cadena de consulta para abrir un diálogo:  
 
@@ -142,7 +148,7 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
 [organization url]/cs/dialog/rundialog.aspx?DialogId=[dialog unique identifier]&EntityName=[entity logical name]&ObjectId=[unique identifier for the record]  
 ```  
 
- Por ejemplo, para abrir el diálogo con identificador ={6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976} con el identificador de registro de cuenta = {40C9ADFD-90A8-DF11-840E-00155DBA380F}, utilice la dirección URL del siguiente ejemplo.  
+ Por ejemplo, abra el diálogo con Id. ={6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976} con el Id. de registro de cuenta = {40C9ADFD-90A8-DF11-840E-00155DBA380F}, use la dirección URL del siguiente ejemplo.  
 
 ```
 [organization url]/cs/dialog/rundialog.aspx?DialogId=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d&EntityName=account&ObjectId=%7b40C9ADFD-90A8-DF11-840E-00155DBA380F%7d  

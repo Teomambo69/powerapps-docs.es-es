@@ -1,7 +1,7 @@
 ---
 title: Componente de cuadrícula de conjunto de datos | Microsoft Docs
-description: null
-keywords: null
+description: ''
+keywords: ''
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,8 +11,13 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
+ms.openlocfilehash: 958afe9136117112153d7f285b03ffc1e5cf7aed
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754105"
 ---
-
 # <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
 
 Este componente de ejemplo muestra cómo cambiar la experiencia de usuario de interactuar con el conjunto de datos. Por ejemplo, usted solo ve la cuadrícula de la página principal en una página principal de entidad como tabla. Puede crear su componente de código que puede mostrar los datos según sus preferencias. Este ejemplo muestra los registros como ventanas en lugar de la cuadrícula tabular regular.
@@ -236,12 +241,12 @@ export class TSDataSetGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityReference = this.contextObj.parameters.dataSetGrid.records[
+      let entityreference = this.contextObj.parameters.dataSetGrid.records[
         rowRecordId
-      ].getNamedReference();
+      ].getNamedreference();
       let entityFormOptions = {
-        entityName: entityReference.name,
-        entityId: entityReference.id
+        entityName: entityreference.name,
+        entityId: entityreference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -350,8 +355,8 @@ export class TSDataSetGrid
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">

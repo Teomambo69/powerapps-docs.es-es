@@ -1,5 +1,5 @@
 ---
-title: Deshabilitar el guardado automático en una aplicación controlada por modelos con PowerApps | MicrosoftDocs
+title: Deshabilitar guardado automático en una aplicación controlada por modelos con PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: 2e7f75dd-7a3f-4716-b995-b626929c0501
 caps.latest.revision: 14
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759488"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Deshabilitar el guardado automático en una aplicación controlada por modelos
 
@@ -30,7 +36,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
 ## <a name="how-auto-save-works"></a>Autoguardado de trabajos  
  De forma predeterminada, todos los formularios de las [entidades actualizadas y clásicas](create-design-forms.md#updated-versus-classic-entities) tendrán el autoguardado habilitado. Una vez creado un registro (guardado en un principio), los cambios realizados en un formulario se guardarán automáticamente treinta segundos después del cambio. Si no se realiza ningún cambio en el formulario, el guardado automático no se producirá mientras el formulario esté abierto. Después de realizar un cambio, el período de 30 segundos antes del autoguardado vuelve a empezar. El campo que alguien está editando actualmente no se incluye en un autoguardado. Si otra persona ha actualizado el mismo registro mientras lo editaba, esos cambios se recuperarán y mostrarán en el formulario al realizar el autoguardado.  
   
- Con el autoguardado habilitado, el botón de guardar solo aparece al guardar inicialmente el registro. Una vez creado el registro, el botón de guardar en la barra de comandos no aparece, pero puede verse un botón ![Botón Guardado automático](media/auto-save-icon.png "Botón Guardado automático") en la esquina inferior derecha, que aparecerá si existen cambios sin guardar. Este control también se muestra si el autoguardado está deshabilitado.  
+ Con el autoguardado habilitado, el botón de guardar solo aparece al guardar inicialmente el registro. Una vez creado el registro, el botón de guardar en la barra de comandos no aparece, pero puede verse un ![botón Botón Guardado automático](media/auto-save-icon.png "Botón de autoguardado") en la esquina inferior derecha, que aparecerá si existen cambios sin guardar. Este control también se muestra si el autoguardado está deshabilitado.  
   
  Puede seleccionar este botón para guardar el registro y actualizar datos en el formulario de forma inmediata. Cuando el autoguardado está habilitado, el registro se guardará cada vez que navegue fuera de un registro o cierre la ventana independiente que muestra un registro. No es necesario para el botón **Guardar y cerrar** que aparece en los formularios de entidades que no se actualizan.  
   
@@ -55,9 +61,9 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
  Si desea deshabilitar el autoguardado para formularios específicos de entidad, puede agregar código al evento `OnSave` de una entidad.  
   
 > [!NOTE]
->  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el botón ![Botón Guardado automático](media/auto-save-icon.png "Botón guardado automático") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
+>  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el ![botón Botón Guardado automático](media/auto-save-icon.png "ABotón de autoguardado") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
   
@@ -118,7 +124,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
   
          El diálogo **Propiedades del controlador** debe verse así. El prefijo de personalización "new_" puede variar según el prefijo de personalización definido para el editor predeterminado para la organización.  
   
- ![Controlador del evento OnSave para evitar el guardado automático en Dynamics 365](media/prevent-auto-save-script.png "Controlador del evento OnSave para evitar el guardado automático en Dynamics 365")  
+         ![Controlador de eventos OnSave para impedir el autoguardado en Dynamics 365](media/prevent-auto-save-script.png "Controlador de eventos OnSave para impedir el autoguardado en Dynamics 365")  
   
     7.  Seleccione **Aceptar** para cerrar el cuadro de diálogo **Propiedades del controlador**.  
   
@@ -130,9 +136,9 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
   
 8. En el explorador de soluciones, seleccione **Publicar todas las personalizaciones**.  
   
- Después de aplicar este script al evento `OnSave`, cuando los usuarios editen un registro mediante este formulario, el mensaje **cambios no guardados** aparecerá en la esquina inferior derecha de formulario como si el autoguardado no estuviese deshabilitado. Pero este mensaje no desaparecerá hasta que los usuarios seleccionen el botón ![Botón Guardado automático](media/auto-save-icon.png "Botón guardado automático") situado al lado.  
+ Después de aplicar este script al evento `OnSave`, cuando los usuarios editen un registro mediante este formulario, el mensaje **cambios no guardados** aparecerá en la esquina inferior derecha de formulario como si el autoguardado no estuviese deshabilitado. Pero este mensaje no desaparecerá hasta que los usuarios seleccionen el ![botón Botón Guardado automático](media/auto-save-icon.png "Botón de autoguardado") situado al lado.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Crear y diseñar formularios](create-design-forms.md)      
+ [Creación y diseño de formularios](create-design-forms.md)      
 
  

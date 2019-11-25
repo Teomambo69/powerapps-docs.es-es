@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Descubra las dependencias de solución (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Detectar dependencias de solución (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo detectar las dependencias de las soluciones.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4f718c8414e76119c53bbb55648ee8b0a1941e1c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749902"
 ---
 # <a name="sample-detect-solution-dependencies"></a>Ejemplo: detectar las dependencias de solución
 

@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c48a508a9e42e60dc3b9e9e0e374c7d72f1b11c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749942"
 ---
 # <a name="web-resource-dependencies"></a>Dependencias de recursos web
 
@@ -41,14 +47,14 @@ Sin embargo, las dependencias de recursos web no se limitan a recursos web RESX 
 
 <a name="attribute-dependencies"></a>
 
-# <a name="attribute-dependencies"></a>Dependencias de atributos
+## <a name="attribute-dependencies"></a>Dependencias de atributos
 <!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
  A partir de aplicaciones basadas en modelos, si los recursos web JavaScript dependen de un valor de atributo de la entidad que no desea mostrar en el formulario, puede establecer el atributo como una dependencia para los recursos web de JavaScript. Esto significa que el atributo estará disponible en el conjunto de atributos de API del cliente para que pueda obtener o establecer el valor en el código. Cuando se agrega una dependencia de este modo, el conjunto de controles de atributo estará vacía porque no habrá ningún control en el formulario.
 
 Antes de esta característica se debe agregar manualmente el atributo al formulario y, después, configurar el control para ocultar. Ahora puede establecer esta dependencia más directamente y eliminar la posibilidad de que alguien quite el campo oculto del formulario. 
 
 
-## <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Vea también
 [Recursos web](web-resources.md)<br />
 [Crear recursos web accesibles](create-accessible-web-resources.md)<br />
 [Recursos web de página web (HTML)](webpage-html-web-resources.md)<br />
@@ -56,7 +62,7 @@ Antes de esta característica se debe agregar manualmente el atributo al formula
 [Recursos web de imagen (JPG, PNG, GIF, ICO)](image-web-resources.md)<br />
 [Recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)<br />
 [Recursos web (XML) de datos](data-xml-web-resources.md)<br />
-[Recursos web CSS](css-web-resources.md)<br />
+[Recursos web de CSS](css-web-resources.md)<br />
 [Recursos web RESX](resx-web-resources.md)<br />
 [Referencia de la entidad WebResource](../common-data-service/reference/entities/webresource.md)<br />
 [Ejemplo: pasar varios valores a un recurso web mediante el parámetro de datos](sample-pass-multiple-values-web-resource-through-data-parameter.md)<br />

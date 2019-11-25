@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753024"
 ---
 # <a name="step-4-create-an-appsource-package-for-your-app"></a>Paso 4: Crear un paquete AppSource para la aplicación
 
@@ -40,11 +46,11 @@ Un paquete le permite agrupar y distribuir varios archivos relacionados con la a
   
     - **\<PackageName>.dll**: el ensamblado contiene el código personalizado para el paquete. Por ejemplo: **SamplePackage.dll**.
 
-2. A continuación, cree un archivo **[Content_Types].xml** que proporcione información de tipo MIME de las extensiones de tipos de archivo que se incluyen en su paquete. Esto es independiente del archivo que se volverá a incluir en el paquete AppSource. Aquí tiene un contenido de ejemplo de un archivo Tipos_contenido].xml con tipos de archivo enumerados:
+2. A continuación, cree un archivo **[Content_Types].xml** que proporcione información de tipo MIME de las extensiones de tipos de archivo que se incluyen en su paquete. Esto es independiente del archivo que se volverá a incluir en el paquete AppSource. Aquí tiene un contenido de ejemplo de un archivo Content_Types].xml con tipos de archivo enumerados:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
-    <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+    <Types xmlns="https://schemas.openxmlformats.org/package/2006/content-types">
       <Default Extension="xml" ContentType="application/octet-stream" />
       <Default Extension="xaml" ContentType="application/octet-stream" />
       <Default Extension="dll" ContentType="application/octet-stream" />
@@ -95,7 +101,7 @@ Cree un archivo *input.xml* que proporciona información sobre el paquete y el c
   <StartDate>12/01/2017</StartDate>
   <EndDate>01/01/2021</EndDate>
   <SupportedCountries>US,CA</SupportedCountries>
-  <LearnMoreLink>http://www.microsoft.com</LearnMoreLink>
+  <LearnMoreLink>https://www.microsoft.com</LearnMoreLink>
   <Locales>
     <PackageLocale Code="1033" IsDefault="true">
       <Logo>logo32x32.png</Logo>

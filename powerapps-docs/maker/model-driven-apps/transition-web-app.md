@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 14c4c18c-927c-4ea2-ba66-0531285a99a7
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759752"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Tutorial para la transición de su aplicación de cliente web heredada a la interfaz unificada
 
 El marco de la interfaz unificada también usa principios de diseño web dinámicos para ofrecer una experiencia de visualización e interacción óptima para cualquier tamaño de pantalla, dispositivo u orientación. Este tema de inicio rápido explica cómo realizar la transición de su aplicación de cliente web heredada a la interfaz unificada con un nuevo entorno de no producción. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JwWU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JwWU]
 
 Para usar un entorno de no producción existente para realizar la transición de su aplicación de cliente web, consulte [Inicio rápido para utilizar un entorno existente para validar la aplicación de cliente web heredada con la interfaz unificada](transition-web-app-existing.md). 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -37,7 +43,7 @@ Para usar un entorno de no producción existente para realizar la transición de
 ## <a name="prepare-the-environment"></a>Preparar el entorno
 Primero, seleccione un entorno de no producción y habilite el modo **Usar solo la interfaz unificada**, que usará la interfaz unificada para todas las aplicaciones basadas en modelo del entorno. Esto también incluye cualquier módulo de aplicación de Dynamics 365 configurado originalmente para el cliente web heredado.
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Entorno** y luego seleccione un entorno de espacio aislado. 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Entorno** y luego seleccione un entorno de espacio aislado. 
 
 2. Seleccione **Configuración** > **Comportamiento** y después active **Usar solo la interfaz unificada**.
 
@@ -56,7 +62,7 @@ También puede establecer esto en el área de configuración. Vaya a **Configura
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>Ejecute y valide la aplicación en la interfaz unificada
 Ejecute sus aplicaciones que eran originalmente aplicaciones del cliente web. Tenga en cuenta que, una vez que se active **Usar solo la interfaz unificada**, todas las aplicaciones disponibles en el entorno usan la interfaz unificada incluso si la aplicación estaba configurada originalmente para el cliente web.
 
-Para ejecutar la aplicación, inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Aplicaciones** y luego seleccione la aplicación que desea ejecutar. Como alternativa, puede ir directamente a la página **Mis aplicaciones**, como *https://contoso.crm.dynamics.com/apps/*.
+Para ejecutar la aplicación, inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Aplicaciones** y luego seleccione la aplicación que desea ejecutar. Como alternativa, puede ir directamente a la página **Mis aplicaciones**, como *https://contoso.crm.dynamics.com/apps/*.
 
 ### <a name="validate-your-app-processes-and-customizations"></a>Valide la aplicación, procesos, y personalizaciones 
 Se recomienda probar todos los casos de uso. Puede empezar con los casos de uso más críticos o agruparlos en patrones lógicos de diseño. Puesto que la interfaz unificada se basa en diseño dinámico, se recomienda realizar pruebas con distintos dispositivos que tienen diferentes resoluciones de pantalla. Al probar la aplicación podrá comprobar que las personalizaciones son compatibles con la interfaz unificada y si existen características que necesiten un rediseño o les falta funcionalidad. Cree un plan para revisar estos elementos y envíe sus preguntas y sus comentarios al foro de la comunidad. 

@@ -4,21 +4,24 @@ description: El tema presenta instrucciones generales y vínculos a varios recur
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 307269ac-674c-5b8a-fee7-767f060af15f
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5bdae4cf6754fb99f0045b17aaf1a81ab3e7e726
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753612"
 ---
-
 # <a name="create-accessible-web-resources"></a>Crear recursos web accesibles
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-accessible-web-resources -->
@@ -63,7 +66,7 @@ Al incluir recursos web que proporcionen elementos de la interfaz de usuario en 
  [Visual Studio Accessibility Checker](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
  Si usa Visual Studio para editar archivos de recursos web en HTML, descubrirá que existen herramientas integradas para comprobar si hay problemas relacionados con la accesibilidad. En el menú **Herramientas**, seleccione **Comprobar accesibilidad** para ver un informe que proporciona instrucciones sobre problemas relacionados con la accesibilidad.  
   
- [UI Accessibility Checker](http://acccheck.codeplex.com/)  
+ [UI Accessibility Checker](https://acccheck.codeplex.com/)  
  UI Accessibility Checker (o AccChecker) permite a los evaluadores detectar fácilmente problemas de accesibilidad con Microsoft Active Accessibility (MSAA) y otras implementaciones de interfaz de usuario (UI) para Windows. AccChecker nació cuando se constató que las herramientas existentes de la API de automatización de Windows, como Inspect, proporcionaban información detallada sobre la implementación, pero no información acerca de si la implementación es correcta o no.  
   
  [Inspect (Inspect.exe)](https://docs.microsoft.com/windows/desktop/WinAuto/inspect-objects)  
@@ -76,7 +79,7 @@ Al incluir recursos web que proporcionen elementos de la interfaz de usuario en 
 ## <a name="additional-resources"></a>Recursos adicionales  
  Los recursos siguientes proporcionan un punto de partida para definir los requisitos para crear recursos web accesibles:  
   
--   [CRM, accesibilidad y 508](http://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
+-   [CRM, accesibilidad y 508](https://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
   
 -   [Introducción a la accesibilidad web](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
@@ -84,11 +87,11 @@ Al incluir recursos web que proporcionen elementos de la interfaz de usuario en 
   
 -   [Accesibilidad de Silverlight para desarrolladores](https://docs.microsoft.com/previous-versions/windows/)  
   
--   [Información general sobre accesibilidad](https://developer.microsoft.com/en-us/windows/accessible-apps)  
+-   [Información general sobre accesibilidad](https://developer.microsoft.com/windows/accessible-apps)  
   
--   [Accesibilidad - W3C](http://www.w3.org/standards/webdesign/accessibility)  
+-   [Accesibilidad - W3C](https://www.w3.org/standards/webdesign/accessibility)  
   
--   [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/)  
+-   [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)  
   
 ### <a name="see-also"></a>Vea también  
  [Recursos web de página web (HTML)](webpage-html-web-resources.md)   

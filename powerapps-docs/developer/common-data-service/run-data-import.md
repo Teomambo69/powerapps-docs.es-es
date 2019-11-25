@@ -1,6 +1,6 @@
 ---
 title: Ejecutar importación de datos (Common Data Service) | Microsoft Docs
-description: 'La importación de datos se ejecuta directamente en Dynamics 365 Server y requiere tres trabajos asincrónicos para hacer el análisis, la transformación guiada por mapa y la carga.'
+description: La importación de datos se ejecuta directamente en Dynamics 365 Server y requiere tres trabajos asincrónicos para hacer el análisis, la transformación guiada por mapa y la carga.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,20 +10,26 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42f69903abb225f2746e0ff79eb2d13232e8cc12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753784"
 ---
 # <a name="run-data-import"></a>Ejecutar importación de datos
 
-La importación de los datos se ejecuta directamente en el servidor de Common Data Service. Para ejecutar la importación de datos, configure trabajos asincrónicos para ejecutarse en segundo plano que realicen lo siguiente, en este orden:  
+La importación de datos se ejecuta directamente en el servidor de Common Data Service. Para ejecutar la importación de datos, configure trabajos asincrónicos para ejecutarse en segundo plano que realicen lo siguiente, en este orden:  
   
 - Analizar datos de origen incluidos en el archivo de importación.  
   
 - Transformar datos analizados mediante la asignación de datos.  
   
-- Cargue los datos transformados en Common Data Service.  
+- Cargar datos transformados en Common Data Service.  
   
   Todos los usuarios de Common Data Service que dispongan de los permisos adecuados podrán ejecutar la importación de datos.  
   
@@ -53,7 +59,7 @@ La importación de los datos se ejecuta directamente en el servidor de Common Da
 ## <a name="upload-transformed-data-to-the-target-server"></a>Cargar datos transformados al servidor de destino  
  Tras completar correctamente la transformación, los datos están listos para cargarse en el servidor de Common Data Service.  
   
- Utilice el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> para enviar un trabajo asincrónico para cargar los datos transformados en Common Data Service. El identificador único de la importación asociada (importación de datos) debe especificarse en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> de la solicitud. Un identificador único del trabajo asincrónico que se ejecuta en segundo plano y carga los datos en Common Data Service se devuelve en la propiedad <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> de respuesta del mensaje. Todos los archivos de importación asociados con la importación especificada (importación de datos) se importan.  
+ Utilice el mensaje <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> para enviar un trabajo asincrónico para cargar los datos transformados en Common Data Service. El identificador único de la importación asociada (importación de datos) debe especificarse en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> de la solicitud. Un identificador único del trabajo asincrónico que se ejecuta en segundo plano y carga los datos en Common Data Service se devuelve en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> de respuesta del mensaje. Todos los archivos de importación asociados con la importación especificada (importación de datos) se importan.  
   
  Cada trabajo de importación tiene un número de secuencia único que almacena en el atributo de `ImportSequenceNumber` de registros que crea. El atributo de `Organization.CurrentImportSequenceNumber` contiene un número de secuencia único del pasado trabajo de importación que se ejecutó en el sistema. Puede usar estos números de secuencia únicos para efectuar un seguimiento de los registros que pertenecen a un trabajo de importación.  
   
@@ -84,4 +90,4 @@ La importación de los datos se ejecuta directamente en el servidor de Common Da
 [Entidades de importación de datos](data-import-entities.md)<br />
 [Ejemplo: exportar e importar una asignación de datos](org-service/samples/export-import-data-map.md)<br />
 [Ejemplo: importar datos mediante la asignación de datos complejos](org-service/samples/import-data-complex-data-map.md)<br />
-[Entrada de blog: Cómo importar los datos adjuntos mediante programación](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 
+[Entrada de blog: Cómo importar los datos adjuntos mediante programación](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 

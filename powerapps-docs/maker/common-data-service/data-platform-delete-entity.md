@@ -1,24 +1,29 @@
 ---
 title: Eliminar una entidad personalizada | Microsoft Docs
 description: Instrucciones paso a paso para ver cómo eliminar una entidad personalizada y borrar todos los datos de PowerApps
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8b4b9fb7942a7977bf6795ca21985b93c5469d26
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754935"
 ---
-
 # <a name="delete-a-custom-entity"></a>Eliminación de entidades personalizadas
 Puede eliminar entidades personalizadas, pero no puede eliminar entidades estándar.
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 

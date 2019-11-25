@@ -10,12 +10,17 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d1455909aa8fef11a2bba4658edba81e40632ceb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753048"
 ---
-
 # <a name="build-tools-tasks"></a>Tareas de build tools
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -35,21 +40,21 @@ La tarea del comprobador de PowerApps ejecuta una comprobación de análisis est
 | Servicio del comprobador de PowerApps  |   Seleccione el extremo de servicio para el comprobador de PowerApps. El punto de conexión de servicio se define en **Conexiones del servicio** en **Configuración de proyecto**.  **NOTA:** El tipo de conexión de servicio que se debe usar para esta tarea específica solo es 'Comprobador de PowerApps', que es una conexión de entidades de servicio. Encontrará más información sobre cómo configurar entidades de servicio para poder usar la tarea [aquí](https://aka.ms/buildtoolsconnection).  |
 | Ubicación del archivo a analizar  | Especifique si desea hacer referencia a un archivo local o hacer referencia a un archivo desde una dirección URL de Sas. 
 | Archivos locales para analizar/Uri de Sas para archivo a analizar |  Especifique la ruta de acceso y el nombre de los archivos zip para analizar.   Pueden emplearse comodines. Por ejemplo, **\*.zip para todos los archivos zip en todas las subcarpetas. Puede elegir especificar los archivos directamente o hacer referencia a un archivo desde un uri de Sas.   |
-|  Conjunto de reglas |   Especifique qué conjunto de reglas desea aplicar. Están disponibles los dos conjuntos de reglas siguientes:  **Comprobador de soluciones:** Es el mismo conjunto de reglas que se ejecuta desde el [Portal de creadores](https://make.powerapps.com/).    **AppSource:** Es el conjunto de reglas extendido que se usa para certificar una aplicación para poder publicarla en [AppSource](https://appsource.microsoft.com/en-US/).   |
+|  Conjunto de reglas |   Especifique qué conjunto de reglas desea aplicar. Están disponibles los dos conjuntos de reglas siguientes:  **Comprobador de soluciones:** Es el mismo conjunto de reglas que se ejecuta desde el [Portal de creadores](https://make.powerapps.com/).    **AppSource:** Es el conjunto de reglas extendido que se usa para certificar una aplicación para poder publicarla en [AppSource](https://appsource.microsoft.com/).   |
 
 ### <a name="configure-service-connection-for-powerapps-checker"></a>Configurar la conexión de servicio para el comprobador de PowerApps
 
-Para poder configurar la tarea del Comprobador de PowerApps, primero debe definir las entidades de servicio usadas para conectarse al servicio del comprobador de PowerApps. Encontrará más información sobre el servicio y la autenticación subyacentes del comprobador de PowerApps [aquí](https://docs.microsoft.com/en-us/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module), sin embargo, los pasos indicados a continuación cubren todo lo que necesita para comenzar.
+Para poder configurar la tarea del Comprobador de PowerApps, primero debe definir las entidades de servicio usadas para conectarse al servicio del comprobador de PowerApps. Encontrará más información sobre el servicio y la autenticación subyacentes del comprobador de PowerApps [aquí](https://docs.microsoft.com/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module), sin embargo, los pasos indicados a continuación cubren todo lo que necesita para comenzar.
 
-A continuación se indica cómo generar la aplicación Azure Active Directory (AAD) necesaria utilizando el [Módulo AzureAD PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0), agregar un secreto de cliente y después usarlo para configurar la cadena de conexión del comprobador de PowerApps.
+A continuación se indica cómo generar la aplicación Azure Active Directory (AAD) necesaria utilizando el [Módulo AzureAD PowerShell](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0), agregar un secreto de cliente y después usarlo para configurar la cadena de conexión del comprobador de PowerApps.
 
 > [!NOTE]
 > Se requieren privilegios para crear entidades de servicio en un inquilino de AAD con licencia para PowerApps (P1/P2) o D365 CE para completar estos pasos. 
 
 1. Abra un comando de PowerShell con derechos de administración.
-![Ventana de comandos de Powershell](media/pscommand.png "Ventana de comandos de Powershell")
+![Ventana de comandos de Powershell](media/pscommand.png "PVentana de comandos de Powershell")
 2. Ejecute el siguiente comando en PowerShell: *Install-Module -Name AzureAD*.
-![Comando Install-Module](media/pscommand-install.png "Pantalla del comando Install-Module")
+![Comando Install-Module](media/pscommand-install.png "IPantalla del comando Install-Module")
  
 3.  Esto le pide que confíe en los módulos de PSGallery. Seleccione **A (Sí a todo)**.
 1. Copie y pegue lo siguiente en el mensaje de PowerShell:
@@ -114,17 +119,17 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "PowerA
  ```
 
 5.  Cuando se le solicite, seleccione **A (Ejecutar siempre)**.
-![Pantalla de comandos de PowerShell](media/pscommand-always-run.png "Captura de pantalla de comandos de PowerShell")
+![Pantalla de comandos de Powershell](media/pscommand-always-run.png "PCaptura de pantalla de comandos de Powershell")
 6. Un diálogo de inicio de sesión aparece. Inicie sesión como usuario. Tenga en cuenta que puede tenga que iniciar sesión dos veces en algunos casos.
 7. Una vez completado el script, muestran el identificador y el inquilino de la aplicación en la ventana de comandos.
 8. Continuación, inicie sesión en [Azure AD](https://portal.azure.com) para obtener el secretos de cliente.
 9. En Microsoft Azure, seleccione **Azure Active Directory –> Registros de aplicaciones -> Cliente del comprobador de PowerApps**.
-![Seleccionar cliente del comprobador en Azure](media/azure-select-checker.png "Captura de pantalla de Azure")”
+![Seleccionar cliente del comprobador en Azure](media/azure-select-checker.png "ACaptura de pantalla de Azure")
 10. En el panel izquierdo de navegación, en **Administrar**, seleccione **Certificados y secretos**.
 11. En la pantalla **Certificados y secretos**, en **Secretos de cliente**, seleccione **Nuevo secreto de cliente**. 
 12. Escriba una descripción para el secreto de cliente, seleccione el valor de caducidad y después haga clic en **Agregar**.
 13. Copie el valor del secreto de cliente que aparece en la siguiente pantalla. 
-![Copiar secreto de cliente](media/client-secret-copy.png "Captura de pantalla de secreto de cliente")
+![Copiar secreto de cliente](media/client-secret-copy.png "ClCaptura de pantalla de secreto del cliente")
     > [!NOTE]
     > Esta es la única vez en la que se muestra el secreto de cliente
 14. Abra la conexión de servicio del comprobador de PowerApps y pegue el secreto de cliente en el campo **Clave de entidad de servicio** y, a continuación haga clic en **Aceptar**.
@@ -145,7 +150,7 @@ La tarea Importar solución importa una solución en un entorno de destino.
 | Archivo de entrada de la solución  | La ruta de acceso y el nombre del archivo solution.zip para importar en el entorno de destino. Por ejemplo: *$(Build.ArtifactStagingDirectory)\$(SolutionName).zip*.
  |
 > [!NOTE] 
-> Las variables le ofrecen un modo adecuado para obtener bits clave de datos en diferentes partes de la canalización. Una lista completa de variables predefinidas está disponible [aquí](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
+> Las variables le ofrecen un modo adecuado para obtener bits clave de datos en diferentes partes de la canalización. Una lista completa de variables predefinidas está disponible [aquí](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
 
 ### <a name="powerapps-export-solution"></a>Exportar solución de PowerApps
 
@@ -196,7 +201,8 @@ La tarea Establecer versión de la solución actualiza la versión de una soluci
 | **Parámetros** | **Descripción** |
 |---------------------------|----|
 | Dirección URL de entorno de PowerApps  | El punto de conexión de servicio del entorno en el que desea implementar el paquete.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |
-| Archivo de paquete  | La ruta de acceso y el nombre de archivo del paquete que desea implementar |
+| Nombre de la solución  | El nombre de la solución para la que desea establecer el número de versión |
+| Número de versión de la solución | Número de versión para establecer, con el formato `major.minor.build.revision` por ejemplo. **1.0.0.1** |
 
 ### <a name="powerapps-deploy-package"></a>Implementar paquete de PowerApps
 
@@ -205,7 +211,6 @@ La tarea Implementar paquete implementa un paquete en un entorno. La implementac
 | **Parámetros** | **Descripción** |
 |---------------------------|----|
 | Dirección URL de entorno de PowerApps  | El punto de conexión de servicio del entorno de destino que alberga la solución que desea actualizar.  Se define en **Conexiones del servicio** en **Configuración del proyecto**. |
-| Nombre de la solución  | El nombre de la solución para la que desea establecer el número de versión |
 
 ## <a name="environment-management-tasks"></a>Tareas de administración de entornos
 

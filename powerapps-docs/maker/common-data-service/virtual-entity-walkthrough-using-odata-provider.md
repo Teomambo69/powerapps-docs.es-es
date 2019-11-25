@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
-ms.assetid: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
+ms.assetid: ''
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b7aa64e5ecdc620b5f376601ffb826c3708f98d3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752126"
 ---
-
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>Tutorial de entidad virtual mediante el proveedor de datos de OData v4
 
 Imagine que quiere acceder a la información del vale desde un origen de datos externos en la aplicación basada en modelos. En este sencillo tutorial, modelará una entidad virtual con los campos asignados al esquema externo que recupera datos del vale en tiempo de ejecución de un servicio web de OData.
@@ -32,7 +37,7 @@ Imagine que quiere acceder a la información del vale desde un origen de datos e
 
 Puesto que el origen de datos que se utiliza para este tutorial tiene un servicio web de OData v4, podemos usar el proveedor de datos OData v4 que se incluye con su entorno.
 
-Dirección URL del servicio web: `http://contosowebservice.azurewebsites.net/odata/` 
+Dirección URL del servicio web: `https://contosowebservice.azurewebsites.net/odata/` 
 
 > [!IMPORTANT]
 > La url del servicio web utilizado para este tutorial no es un servicio web operativo.
@@ -69,7 +74,7 @@ Crear el origen de datos para el proveedor de datos de OData v4 que utiliza el s
     |Campo|Value|
     |--|--|
     |**Nombre**|Origen de datos de ejemplo de Contoso|
-    |**Dirección URL**|`http://contosowebservice.azurewebsites.net/odata` |
+    |**Dirección URL**|`https://contosowebservice.azurewebsites.net/odata` |
     |**Tiempo de espera**|30|
     |**Devolver recuento alineado**|Verdadero|
 

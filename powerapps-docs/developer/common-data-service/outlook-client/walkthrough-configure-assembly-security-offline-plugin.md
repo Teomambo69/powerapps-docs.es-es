@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Configurar seguridad de ensamblados para complemento sin conexión (Common Data Service) | Microsoft Docs'
+title: 'Tutorial: configuración de la seguridad de ensamblado para un complemento sin conexión (Common Data Service) | Microsoft Docs'
 description: El tema proporciona un tutorial sobre la configuración de la seguridad de ensamblado para un complemento sin conexión.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d2e7f675e9781e9792f9e9447103541a2d189816
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749819"
 ---
 # <a name="walkthrough-configure-assembly-security-for-an-offline-plug-in"></a>Tutorial: configurar la seguridad de ensamblado para un complemento sin conexión
 

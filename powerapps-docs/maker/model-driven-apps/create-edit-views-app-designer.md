@@ -4,28 +4,33 @@ description: Aprender ahora a crear o editar vistas mediante el diseñador de ap
 keywords: ''
 ms.date: 11/27/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 666ab3f3-abda-468c-b248-3a0b410286b0
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 1
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753910"
 ---
-
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos
 
 En este tema realizará varias tareas necesarias para trabajar con las vistas, como crear una vista pública, agregar una vista existente a una aplicación y cambiar las columnas, los filtros y el criterio de ordenación para una vista.
@@ -45,7 +50,7 @@ Más información: [Comprender las vistas](create-edit-views.md)
 
 ## <a name="create-a-public-view-in-powerapps"></a>Crear una vista pública en PowerApps
 Como creador de aplicaciones, puede crear y editar vistas públicas usando PowerApps.
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -85,7 +90,7 @@ En los pasos siguientes se explica cómo abrir y agregar una vista en el diseña
 
     En este ejemplo, hemos seleccionado **Vistas** en la entidad **Cuenta**.
 
-    ![Vista del diseñador de aplicaciones](media/ViewAppDesigner_AccountAppDesignerView.png "Vista del diseño de aplicaciones de la entidad Cuenta")
+    ![Vista del diseñador de aplicaciones](media/ViewAppDesigner_AccountAppDesignerView.png "Vista de diseñador de aplicaciones de la entidad Cuenta")
 
 3. Para agregar una vista, selecciónela usando tipos de vista como Pública, Búsqueda avanzada, Asociada y Búsqueda. La vista se agregar automáticamente a la lista **Vistas**.
 
@@ -101,7 +106,7 @@ Las vistas muestran registros en una tabla que contiene filas y columnas. Cada f
 1. En el diseñador de la aplicación, seleccione la vista de la entidad que desea y en el panel derecho junto a la vista que desee seleccione editar (botón de lápiz).  
 2. En la ficha **Componentes**, seleccione la lista **Atributos de columna** de la **Entidad principal** o la **Entidad relacionada**.
 
-    ![Agregar una columna](media/ViewAppDesigner_AddColumn.png "Agregar una columna a la vista") 
+    ![Agregar una columna](media/ViewAppDesigner_AddColumn.png "Agregar una columna a una vista") 
 
 3. En la lista, seleccione el atributo que desee y arrástrelo hacia el encabezado de la columna. También puede agregar el atributo haciendo doble clic en él.
 4. Repita el paso 3 hasta que haya agregado todos los atributos que desee mostrar en la vista.
@@ -119,7 +124,7 @@ Puede establecer criterios de filtrado para que solo se muestre un subconjunto d
 3. Seleccione un atributo de la lista desplegable de la primera columna. 
 4. Seleccione un operador de la lista desplegable de la segunda columna.
 
-    ![Establecer criterios de filtro operador](media/ViewAppDesigner_FilterCriteriaOption.png "Establecer criterios de filtro operador")
+    ![Establecer operador de criterios de filtro](media/ViewAppDesigner_FilterCriteriaOption.png "Establecer operador de criterios de filtro")
 
 5. Escriba un valor por el que filtrar la tercera columna.
 
@@ -137,9 +142,9 @@ Más información: [Crear y editar relaciones entre entidades](../common-data-se
 Puede agregar varios filtros para la vista si desea filtrar los registros usando más de un campo. 
 
 1. Seleccione los filtros que desea agrupar.
-    ![Establecer el filtro del grupo](media/ViewAppDesigner_GroupFilter.png "Establecer el filtro del grupo")
+    ![Establecer filtro de grupo](media/ViewAppDesigner_GroupFilter.png "Seestablecer filtro de grupo")
 2. Seleccione Agrupar con Y o Agrupar con O para agrupar los filtros.
-    ![Selección de filtro de grupo](media/ViewAppDesigner_GroupFilterSelection.png "Selección de filtro de grupo") Al seleccionar **Agrupar por Y**, solo los registros que satisfagan ambos criterios se muestran en la vista. Si selecciona **Agrupar por O**, se muestran los registros que cumplan cualquiera de los criterios de filtro. Por ejemplo, para mostrar solo los registros que tienen prioridad Alta o Normal y el estado de Activo, seleccione **Agrupar por Y**.
+    ![Selección de filtro de grupo](media/ViewAppDesigner_GroupFilterSelection.png "Seseleccionar filtro de grupo") Al seleccionar **Agrupar por Y**, solo los registros que satisfagan ambos criterios se muestran en la vista. Si selecciona **Agrupar por O**, se muestran los registros que cumplan cualquiera de los criterios de filtro. Por ejemplo, para mostrar solo los registros que tienen prioridad Alta o Normal y el estado de Activo, seleccione **Agrupar por Y**.
 
 Para quitar el filtro de un grupo, seleccione el grupo y seleccione **Desagrupar**. 
 
@@ -167,8 +172,8 @@ Especifique un recursos web de tipo script, para asociar a una columna en la vis
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>Editar una vista pública o del sistema en diseñador de la aplicación
 Puede cambiar la forma en que se muestra una vista pública o de sistema agregando, configurando o quitando columnas.
 1. En la lista **Vistas** de una entidad, seleccione la flecha abajo **Mostrar la lista de referencias** ![Desplegable](media/DownArrow.png "Flecha desplegable").
-    ![Editar vista](media/ViewAppDesigner_EditView.png "Editar una vista pública o de sistema")
-2. Junto a la vista que desea editar, seleccione **Abrir el diseñador de vistas** ![Abrir el diseñador de vistas](media/dynamics365-open-designer.png "Abrir el diseñador de vistas"). 
+    ![Editar vista](media/ViewAppDesigner_EditView.png "EdEditar una vista pública o de sistema")
+2. Junto a la vista que desea editar, seleccione **Abrir el diseñador de vistas** ![Abrir el diseñador de vistas](media/dynamics365-open-designer.png "Abrir diseñador de vistas"). 
 
     La vista se abre en el diseñador de vistas. 
 

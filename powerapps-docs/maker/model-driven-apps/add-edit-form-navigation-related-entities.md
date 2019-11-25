@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2751929"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>Agregar navegación de formulario de aplicación controlada por modelos para entidades relacionadas
 
 En este tema, usará el panel de navegación de formulario que se usa para agregar vínculos a las entidades relacionadas. Cuando el usuario de una aplicación hace clic en uno de estos vínculos en un registro, se muestra la vista asociada para la entidad.   
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
   
     > [!IMPORTANT]
@@ -83,4 +89,4 @@ En este tema, usará el panel de navegación de formulario que se usa para agreg
 > La instalación de una solución o la publicación de personalizaciones puede interferir en el funcionamiento normal del sistema. Le recomendamos que programe la importación de una solución cuando perjudique lo menos posible a los usuarios.
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Creación y edición de relaciones de entidad para Common Data Service](../common-data-service/create-edit-entity-relationships.md)
+ [Crear y editar relaciones entre entidades para Common Data Service](../common-data-service/create-edit-entity-relationships.md)

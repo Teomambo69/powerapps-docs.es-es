@@ -1,60 +1,60 @@
 - name: Trabajar con datos mediante código
   href: ../work-with-data-cds.md
-- name: Usar el servicio de organización
+- name: Utilizar el Servicio de organización
   href: overview.md
 - name: Introducción
   items:
-    - name: 'Inicio rápido: Creación de una aplicación de consola'
+    - name: 'Inicio rápido: Crear una aplicación de consola'
       href: quick-start-org-service-console-app.md
-    - name: Programación enlazada en tiempo de ejecución y en tiempo de compilación
+    - name: Programación en tiempo de ejecución y de compilación
       href: early-bound-programming.md
-    - name: Interfaz de IOrganizationService
+    - name: Interfaz IOrganizationService
       href: iorganizationservice-interface.md
     - name: OrganizationServiceContext
       href: organizationservicecontext.md
-    - name: Creación de una aplicación cliente
+    - name: Crear una aplicación cliente
       href: create-client-app.md
       items:
-        - name: Suscripción a las actualizaciones del ensamblado de SDK con NuGet
+        - name: Suscribirse a las actualizaciones de ensamblados de SDK mediante NuGet
           href: subscribe-sdk-assembly-updates-using-nuget.md
         - name: Visual Studio y .NET Framework
           href: visual-studio-dot-net-framework.md
         - name: Servicio de detección
           href: discovery-service.md
-        - name: Uso de las herramientas XRM
+        - name: Usar útiles de XRM
           href: ../xrm-tooling/build-windows-client-applications-xrm-tools.md
-- name: Operaciones de entidad
+- name: Operaciones de la entidad
   href: entity-operations.md
   items:
-    - name: Consulta de los datos
+    - name: Consultar datos
       href: entity-operations-query-data.md
       items:
-        - name: Creación de consultas con QueryExpression
+        - name: Crear consultas con QueryExpression
           href: build-queries-with-queryexpression.md
           items:
-            - name: Uso de la clase QueryExpression
+            - name: Usar la clase QueryExpression
               href: use-queryexpression-class.md
-            - name: Uso de la clase ConditionExpression
+            - name: Usar la clase ConditionExpression
               href: use-conditionexpression-class.md
-            - name: Uso de la clase FilterExpression
+            - name: Usar la clase FilterExpression
               href: use-filterexpression-class.md
-            - name: Uso de la clase ColumnSet
+            - name: Use la clase ColumnSet
               href: use-the-columnset-class.md
-            - name: Paginación de grandes conjuntos de resultados con QueryExpression
+            - name: Conjuntos de resultados grandes de página con QueryExpression
               href: page-large-result-sets-with-queryexpression.md
-            - name: Uso de una combinación externa izquierda en QueryExpression para consultar registros "not in"
+            - name: Usar una combinación externa izquierda en QueryExpression para consultar los registros "no en"
               href: use-left-outer-join-queryexpression-query-records-not-in.md
-            - name: Uso de la clase QueryByAttribute
+            - name: Usar la clase QueryByAttribute
               href: use-querybyattribute-class.md
-    - name: Creación de entidades
+    - name: Crear entidades
       href: entity-operations-create.md
-    - name: Recuperación de una entidad
+    - name: Recuperar una entidad
       href: entity-operations-retrieve.md
-    - name: Actualización y eliminación de entidades
+    - name: Actualizar y eliminar entidades
       href: entity-operations-update-delete.md
-    - name: Asociación y desasociación de entidades
+    - name: Asociar y desasociar entidades
       href: entity-operations-associate-disassociate.md
-- name: Uso de mensajes
+- name: Usar mensajes
   href: use-messages.md
 - name: Operaciones especiales
   items:
@@ -62,57 +62,57 @@
       href: use-executeAsync.md
     - name: Uso de ExecuteTransaction
       href: use-executetransaction.md
-    - name: Ejecución de varias solicitudes
+    - name: Ejecutar varias solicitudes
       href: execute-multiple-requests.md
-- name: Uso de OrganizationServiceContext
+- name: Usar OrganizationServiceContext
   items:
-    - name: Creación de consultas con LINQ (Language Integrated Query .NET)
+    - name: Crear consultas con LINQ (consulta integrada del lenguaje .NET)
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: Uso de LINQ para construir una consulta
+    - name: Usar LINQ para crear una consulta
       href: use-linq-construct-query.md
-    - name: Uso de la clase de entidad enlazada en tiempo de ejecución con una consulta LINQ
+    - name: Usar clase de entidad de enlace en tiempo de ejecución con una consulta LINQ
       href: use-late-bound-entity-class-linq-query.md
-    - name: Ordenación de resultados mediante atributos de entidad con LINQ
+    - name: Ordenar resultados mediante atributos de entidad con LINQ
       href: order-results-entity-attributes-linq.md
-    - name: Paginación de grandes conjuntos de resultados con LINQ
+    - name: Páginar grandes conjuntos de resultados con LINQ
       href: page-large-result-sets-linq.md
-    - name: Ejemplos de consultas LINQ
+    - name: Ejemplos de la consulta LINQ
       href: linq-query-examples.md
 - name: Detectar datos duplicados
   href: detect-duplicate-data.md
-- name: Generación de clases para la programación enlazada en tiempo de compilación
+- name: Generación de clases para programación de enlace en tiempo de compilación
   href: generate-early-bound-classes.md
   items:
-    - name: Creación de extensiones para la herramienta de generación de código
+    - name: Crear extensiones para la herramienta de generación de código
       href: extend-code-generation-tool.md
-- name: Trabajo con metadatos
+- name: Trabajar con metadatos
   href: work-with-metadata.md
   items:
-    - name: Creación de una entidad personalizada
+    - name: Crear entidad personalizada
       href: create-custom-entity.md
-    - name: Trabajo con metadatos de atributo
+    - name: Trabajar con metadatos de atributos
       href: metadata-attributemetadata.md
-    - name: 'Inserción, actualización, eliminación y ordenación de opciones de conjuntos de opciones globales'
+    - name: 'Insertar, actualizar, elimina, y ordenar las opciones globales del conjunto de opciones'
       href: metadata-global-option-set-options.md
-    - name: Personalización de conjuntos de opciones
+    - name: Conjunto de opciones personalizadas
       href: metadata-option-sets.md
-    - name: Creación y recuperación de relaciones de entidades
+    - name: Crear y recuperar relaciones entre entidades
       href: metadata-relationshipmetadata.md
-    - name: Recuperación y detección de cambios en metadatos
+    - name: Recuperar y detectar cambios en metadatos
       href: metadata-retrieve-detect-changes.md
-    - name: 'Recuperación, actualización y eliminación de entidades'
+    - name: 'Recuperar, actualizar y eliminar entidades'
       href: metadata-retrieve-update-delete-entities.md
-    - name: Creación de una entidad para enviar actividades de correo electrónico
+    - name: Creación una entidad para enviar actividades de correo electrónico
       href: create-update-entity-emailed.md
 - name: Importar datos
   href: ../import-data.md
-- name: Muestreo de los datos
+- name: Datos de ejemplo
   href: ../sample-data.md
-- name: Procedimientos de codificación
+- name: Prácticas de código
   items:
-    - name: Manipulación de excepciones en su código
+    - name: Administrar las excepciones en su código
       href: handle-exceptions-code.md
-    - name: Códigos de error del servicio web
+    - name: Códigos de error de servicio web
       href: web-service-error-codes.md
-- name: Ejemplos
+- name: Muestras
   href: samples/toc.yml

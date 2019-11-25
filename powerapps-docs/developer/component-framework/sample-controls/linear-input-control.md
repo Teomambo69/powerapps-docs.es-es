@@ -1,5 +1,5 @@
 ---
-title: ' Componente de entrada lineal| Microsoft Docs'
+title: " Componente de entrada lineal| Microsoft Docs"
 description: Implementar componente de entrada lineal
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749933"
 ---
-
 # <a name="implementing-linear-input-component"></a>Implementar componente de entrada lineal
 
 Este componente de ejemplo cambia la experiencia de usuario de interactuar con tipos numéricos del formulario. En vez de escribir los números, el componente de entrada lineal proporciona un control deslizante lineal con el que el valor del atributo se puede establecer en el formulario.  
@@ -58,10 +63,10 @@ export class TSLinearInputControl
   private labelElement: HTMLLabelElement;
   // input element that is used to create the range slider
   private inputElement: HTMLInputElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;

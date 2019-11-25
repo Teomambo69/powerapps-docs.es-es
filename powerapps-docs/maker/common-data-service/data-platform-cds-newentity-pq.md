@@ -10,12 +10,17 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757596"
 ---
-
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service con Power Query
 En este procedimiento, creará una entidad en [Common Data Service](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
 
@@ -37,7 +42,7 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
 
 ## <a name="specify-the-source-data"></a>Especificar los datos de origen
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
 
     ![Página principal de PowerApps](./media/data-platform-cds-newentity-pq/sign-in.png)
 
@@ -48,7 +53,7 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
     ![Elija el conector de OAuth](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
 1. En **Configuración de conexión**, escriba o pegue esta dirección URL y, a continuación, seleccione **Siguiente**:<br>
-`http://services.odata.org/V4/Northwind/Northwind.svc/`
+`https://services.odata.org/V4/Northwind/Northwind.svc/`
 
 1. En la lista de tablas, seleccione la casilla **Clientes** y haga clic o pulse en **Siguiente**.
 

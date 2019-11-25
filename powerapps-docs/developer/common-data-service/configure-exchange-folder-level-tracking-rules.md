@@ -1,5 +1,5 @@
 ---
-title: Configurar las reglas de seguimiento de carpeta de Exchange (Common Data Service) | Microsoft Docs
+title: Configurar reglas de seguimiento de nivel de carpeta de Exchange (Common Data Service) | Microsoft Docs
 description: Aprenda a configurar reglas de seguimiento de nivel de carpeta de Exchange.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 09b7d273968f2d37b45ca5210924546a8bee6cd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749724"
 ---
 # <a name="configure-exchange-folder-level-tracking-rules"></a>Configurar reglas de seguimiento de nivel de carpeta de Exchange
 
-Configure las reglas de seguimiento de nivel de carpeta para asignar una carpeta de buzón de Microsoft Exchange a un registro de Common Data Service para que se realice automáticamente el seguimiento de todos los mensajes de correo electrónico de la carpeta de Microsoft Exchange en comparación con el registro asignado en Common Data Service. El seguimiento de nivel de carpeta de correos electrónicos funcionará sólo si:  
+Configure reglas de seguimiento de nivel de carpeta para asignar una carpeta de la bandeja de entrada de Microsoft Exchange a un registro de Common Data Service de modo que se realice un seguimiento automático de todos los correos electrónicos de la carpeta de Microsoft Exchange para el registro asignado en Common Data Service. El seguimiento de nivel de carpeta de correos electrónicos funcionará sólo si:  
 
 - La característica de seguimiento de nivel de carpeta está habilitada para la instancia de Common Data Service. Puede habilitar el seguimiento de nivel de carpeta utilizando el cliente web o Dynamics 365 for Outlook. Más información: [Configurar el seguimiento de nivel de carpeta](/dynamics365/customer-engagement/admin/configure-outlook-exchange-folder-level-tracking)  
 
@@ -58,7 +64,7 @@ Console.WriteLine("Created folder-level tracking rule for '{0}'.\n", _mailboxNam
 
  Puede crear un máximo de 25 reglas de seguimiento de nivel de carpeta por buzón. El Id. de la carpeta de Microsoft Exchange no se puede validar en el momento de crear la asignación con el SDK. Sin embargo, en cuanto cree una regla de asignación, y si el Id. de carpeta no es válido, aparecerá en la interfaz de usuario en Common Data Service para indicar que la asignación no es válida.  
 
- Cualquier cambio manual realizado en el objeto referente a en los registros de actividad con seguimiento, creado en Common Data Service como resultado de la regla de seguimiento de nivel de carpeta, será reemplazado la próxima vez que se produzca la sincronización del lado del servidor. Por ejemplo, si ha configurado una asignación entre la carpeta `Adventure Works` y la cuenta de `Adventure Works`, se realizará el seguimiento de todos los correos electrónicos de la carpeta de Microsoft Exchange `Adventure Works` como si fueran actividades en Common Data Service con el referente establecido en el registro de cuenta de `Adventure Works`. Si cambia el referente de algunas actividades a cualquier otro registro, se reemplazará automáticamente la próxima vez que se produzca la sincronización del lado del servidor.  
+ Cualquier cambio manual realizado en el objeto referente a en los registros de actividad con seguimiento, creado en Common Data Service como resultado de la regla de seguimiento de nivel de carpeta, será reemplazado la próxima vez que se produzca la sincronización del lado del servidor. Por ejemplo, si ha configurado una asignación entre la carpeta de `Adventure Works` y la cuenta de `Adventure Works`, se realizará el seguimiento de todos los correos electrónicos de la carpeta de `Adventure Works` Microsoft Exchange como si fueran actividades en Common Data Service con el referente establecido en el registro de cuenta de `Adventure Works`. Si cambia el referente de algunas actividades a cualquier otro registro, se reemplazará automáticamente la próxima vez que se produzca la sincronización del lado del servidor.  
 
 <a name="Retrieve"></a>   
 

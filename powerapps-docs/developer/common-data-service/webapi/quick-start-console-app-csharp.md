@@ -1,19 +1,25 @@
 ---
-title: 'Tutorial: Ejemplo de web API (C#) (Common Data Service) | Microsoft Docs'
-description: 'Este ejemplo muestra cómo autenticarse con un servidor Common Data Service y luego llamar a una operación básica de API Web, la función WhoAmI.'
+title: 'Inicio rápido: Ejemplo de API web (C#) (Common Data Service)| Microsoft Docs'
+description: Este ejemplo muestra cómo autenticarse con un servidor Common Data Service y luego llamar a una operación básica de API Web, la función WhoAmI.
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 995fbc4e4d21549d59c5d1c135fd7448c8abedc0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753688"
 ---
 # <a name="quick-start-web-api-sample-c"></a>Tutorial: Ejemplo de API Web (C#)
 
@@ -26,18 +32,18 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- - Visual Studio (2017 recomendado)
+ - Visual Studio (2017 recomendada)
  - Conexión a Internet
- - Una cuenta de usuario válida para la estancia de Common Data Service
+ - Cuenta de usuario válida para una instancia de Common Data Service
     - Su nombre de usuario
     - Su contraseña
- - Dirección URL al entorno de aplicaciones Common Data Service con el que quiere conectarse
+ - Dirección URL al entorno de Common Data Service con el que quiere conectarse
  - Comprensión básica de lenguaje Visual C#
 
 > [!NOTE]
-> Para la autenticación, debe tener una aplicación registrada en Azure Active Directory. Este ejemplo de tutorial proporciona un valor `clientid` de registro de la aplicación que puede usar con el fin de ejecutar el código de instalación publicado por Microsoft. Para sus propias aplicaciones debe registrar sus aplicaciones. Más información: [Tutorial: Registrar una aplicación con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md)
+> Para la autenticación, debe tener una aplicación registrada en Azure Active Directory. Este ejemplo de tutorial proporciona un valor `clientid` de registro de la aplicación que puede usar con el fin de ejecutar el código de instalación publicado por Microsoft. Para sus propias aplicaciones debe registrar sus aplicaciones. Más información: [Tutorial: Registrar una aplicación con Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
-## <a name="create-visual-studio-project"></a>Crear proyecto en Visual Studio
+## <a name="create-visual-studio-project"></a>Crear proyecto de Visual Studio
 
 1. Crear un nuevo proyecto de aplicación de consola (.NET Framework) mediante **.NET Framework 4.6.2**
 
@@ -47,7 +53,7 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
     > Este captura de pantalla muestra el nombre `WebAPIQuickStart`, pero puede elegir el nombre del proyecto y la solución que desee.
 
     > [!IMPORTANT]
-    > **Problema conocido con Visual Studio 2015**
+    > **Problema conocido de Visual Studio 2015**
     > 
     > Cuando se ejecuta el proyecto/solución en VS 2015 en modo de depuración, es posible que no pueda conectarse. Esto ocurre independientemente de si está usando un marco de destino de 4.6.2 o más alto. Esto puede producirse porque el proceso de hospedaje de Visual Studio se compila con .NET 4.5, lo que significa de forma predeterminada que no es compatible con TLS 1.2. Puede deshabilitar el proceso de hospedaje de Visual Studio como solución. 
     >
@@ -59,7 +65,7 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
 
     ![Agregar paquete de NuGet](../media/quick-start-web-api-console-app-csharp-2.png)
 
-1. Busque el  el paquete de NuGet `Microsoft.IdentityModel.Clients.ActiveDirectory`.
+1. Busque el paquete de `Microsoft.IdentityModel.Clients.ActiveDirectory` NuGet.
 1. Seleccione **Versión** 2.29.0 e instálelo.
 
     ![Instale el paquete NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](../media/quick-start-web-api-console-app-csharp-3.png)
@@ -72,7 +78,7 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
     > [!NOTE]
     > Debe seleccionar **Acepto** en el diálogo **Aceptación de licencia**.
 
-1. Busque el paquete de NuGet `Newtonsoft.Json` e instale la versión más reciente.
+1. Busque el paquete `Newtonsoft.Json` NuGet e instale la versión más reciente.
 
     ![Instale el paquete NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](../media/quick-start-web-api-console-app-csharp-4.png)
 
@@ -152,12 +158,12 @@ Se autenticará y usará un <xref:System.Net.Http.HttpClient> para enviar una so
     ```
     Para obtener el valor `url`:
 
-    1. En el sitio [https://web.powerapps.com](https://web.powerapps.com) con el entorno adecuado seleccionado, seleccione **Configuración** ![botón Configuración](media/settings-icon.png) y elija **Personalización avanzada**. A continuación, seleccione **Recursos de desarrollador**.
+    1. En el sitio [https://make.powerapps.com](https://make.powerapps.com) con el entorno adecuado seleccionado, seleccione **Configuración** ![botón Configuración](media/settings-icon.png) y elija **Personalización avanzada**. A continuación, seleccione **Recursos de desarrollador**.
     1. En la página **Recursos de desarrollador**, busque el valor **Instancia de API web** y cópielo. 
 
         Debería tener aspecto similar a `https://yourorgname.api.crm.dynamics.com/api/data/v9.1/`. Pero para este ejemplo, debe cortar de la parte final (`/api/data/v9.1/`) para que solo sea `https://yourorgname.api.crm.dynamics.com`.
 
-    Para las variables `userName` y `password`, use las mismas credenciales que usa para registrarse en el sitio [https://web.powerapps.com](https://web.powerapps.com).
+    Para las variables `userName` y `password`, use las mismas credenciales que usa para registrarse en el sitio [https://make.powerapps.com](https://make.powerapps.com).
 
 ## <a name="run-the-program"></a>Ejecute el programa.
 

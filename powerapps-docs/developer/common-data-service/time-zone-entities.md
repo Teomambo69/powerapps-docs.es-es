@@ -1,6 +1,6 @@
 ---
-title: Entidades de zona horaria (Common Data Service) | Microsoft Docs
-description: 'Las entidades de zona horaria contienen información sobre zonas horarias, como la zona horaria soportada, el código de zona horaria, la zona horaria localizada, y almacena información sobre cómo se calculan los tiempos.'
+title: Entidades de la zona horaria (Common Data Service) | Microsoft Docs
+description: Las entidades de zona horaria contienen información sobre zonas horarias, como la zona horaria soportada, el código de zona horaria, la zona horaria localizada, y almacena información sobre cómo se calculan los tiempos.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: edff87a40b10e99024df4e85d4d46a073a79f6d8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749672"
 ---
 # <a name="time-zone-entities"></a>Entidades de zona horaria
 

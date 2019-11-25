@@ -1,6 +1,6 @@
 ---
 title: API de estado de control | Microsoft Docs
-description: null
+description: ''
 keywords: PowerApps; PowerApps component framework
 ms.author: nabuthuk
 author: Nkrb
@@ -11,8 +11,13 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
+ms.openlocfilehash: 57982a4e9a4ee50954eb7b5f12e75a8ca43544ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749934"
 ---
-
 # <a name="implementing-control-state-api-component"></a>Implementar el componente API de estado de control
 
 PowerApps component framework le permite mantener el estado del componente a través de varias representaciones del componente en la misma sesión. Proporciona la posibilidad de crear componentes que puedan mantener el estado de usuario a lo largo de la sesión del usuario mientras el usuario navega a y desde el componente.
@@ -53,7 +58,7 @@ export class TSControlStateAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Div element to show the current selected color
@@ -66,7 +71,7 @@ export class TSControlStateAPI
   private _persistedSelectedLabel: string;
   // Data type used to store the various information as part of the state object.
   private _stateDictionary: ComponentFramework.Dictionary = {};
-  // References to HTML Button Elements rendered on the control
+  // references to HTML Button Elements rendered on the control
   private _buttonRed: HTMLButtonElement;
   private _buttonBlue: HTMLButtonElement;
   private _buttonGreen: HTMLButtonElement;
@@ -208,6 +213,7 @@ export class TSControlStateAPI
    * @param selectedColorElement The HTML Div Element that the results should be injected into
    */
   private onButtonClick(event: Event, selectedColorElement: HTMLDivElement) {
+    const eventTarget: Element = event.srcElement as Element;
     if (event.srcElement) {
       // Get the label and the selected color attributes from the div element that was clicked
       let label: string = event.srcElement.attributes.getNamedItem("value")!

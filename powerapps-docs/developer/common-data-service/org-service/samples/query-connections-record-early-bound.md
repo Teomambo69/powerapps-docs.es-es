@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: consultar conexiones por un registro (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Consultar conexiones para un registro (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo consultar conexiones para un registro concreto.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d0b91e7020db63d71a0cfa8e2bd5d009dbac2f85
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749883"
 ---
 # <a name="sample-query-connections-by-a-record"></a>Ejemplo: consultar conexiones para un registro 
 

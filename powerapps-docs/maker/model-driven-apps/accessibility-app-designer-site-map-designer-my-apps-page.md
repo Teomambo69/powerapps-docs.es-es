@@ -1,6 +1,6 @@
 ---
-title: 'Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en PowerApps | Microsoft Docs'
-description: 'Descripción de la accesibilidad en aplicaciones basadas en modelo con el diseñador de aplicaciones, el diseñador del mapa del sitio y página Mis aplicaciones en PowerApps'
+title: Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en PowerApps | Microsoft Docs
+description: Descripción de la accesibilidad en aplicaciones basadas en modelo con el diseñador de aplicaciones, el diseñador del mapa del sitio y página Mis aplicaciones en PowerApps
 keywords: Diseñador de aplicaciones; diseñador del mapa del sitio; mis aplicaciones; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -8,20 +8,25 @@ manager: kvivek
 ms.date: 05/20/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752082"
 ---
-
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en PowerApps, diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones
 
-Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](http://www.microsoft.com/enable/default.aspx)  
+Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](https://www.microsoft.com/enable/default.aspx)  
  
 En este tema se describen las características de accesiblidad disponibles con aplicaciones basadas en modelos.  
   
@@ -96,11 +101,11 @@ PowerApps ofrece métodos abreviados de teclado para resolver los problemas a lo
  Para obtener información acerca de accesibilidad de su explorador, visite los siguientes sitios web:  
   
   
--   [Características de accesibilidad de Windows](http://www.microsoft.com/enable/products/ie9/default.aspx)  
+-   [Características de accesibilidad de Windows](https://www.microsoft.com/enable/products/ie9/default.aspx)  
   
--   [Características de accesibilidad de Firefox](http://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
+-   [Características de accesibilidad de Firefox](https://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
   
--   [Características de accesibilidad de Safari](http://www.apple.com/accessibility/)  
+-   [Características de accesibilidad de Safari](https://www.apple.com/accessibility/)  
   
 -   [Documentación técnica sobre la accesibilidad en Google Chrome](https://sites.google.com/a/chromium.org/dev/developers/design-documents/accessibility)
 

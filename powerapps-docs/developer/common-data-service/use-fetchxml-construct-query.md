@@ -6,16 +6,21 @@ ms.date: 07/23/2019
 ms.reviewer: susikka
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1337df809d0f696d81882089877c4ab9304ef3d8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749662"
 ---
-
 # <a name="use-fetchxml-to-construct-a-query"></a>Usar FetchXML para crear una consulta
 
 FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service. Se basa en un esquema que describe las funciones del idioma. El idioma FetchXML admite funciones de consulta similares a las expresiones de consulta. Además, se usa como formulario serializado de consulta, usado para guardar una consulta como una vista guardada propiedad del usuario en la [entidad UserQuery](reference/entities/savedquery.md) y como una vista guardada propiedad de la organización en la [Entidad SavedQuery](reference/entities/userquery.md).  

@@ -10,12 +10,17 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749809"
 ---
-
 # <a name="register-a-plug-in"></a>Registrar un complemento
 
 
@@ -44,9 +49,9 @@ El contenido de este tema describe los pasos anteriores **en negrita** y ofrece 
 
 ## <a name="plugin-registration-tool-prt"></a>Plugin Registration Tool (PRT)
 
-Usará la Plugin Registration Tool (PRT) para registrar los pasos y ensamblados de complementos.
+Usará la Plugin Registration Tool (PRT) (PRT) para registrar los pasos y ensamblados de complementos.
 
-PRT es una de las herramientas disponibles para descargar de NuGet. Siga las instrucciones de [Descargar herramientas de NuGet](download-tools-nuget.md). El tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
+PRT es una de las herramientas disponibles para descargar de NuGet. Siga las instrucciones de [Descargar herramientas de NuGet](download-tools-nuget.md). Este tema incluye instrucciones para usar un script de PowerShell para descargar las últimas herramientas de NuGet.
 
 Después de descargar la PRT, siga los pasos de [Conectar con la Plugin Registration Tool](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) del [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md) para conectarse al entorno de Common Data Service.
 

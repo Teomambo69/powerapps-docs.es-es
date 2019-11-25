@@ -10,10 +10,16 @@ author: hazhouMSFT
 ms.author: hazhou
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 329e9f1845bfdfc9f2afa87528fbfd10bc4aa886
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753604"
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones
 
@@ -64,7 +70,7 @@ function mySampleFunction(primaryControl) {
 
     // Set the WebSiteURL field if account name contains "Contoso"
     if (accountName.toLowerCase().search("contoso") != -1) {
-        formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+        formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
     }
     else {
         Xrm.Navigation.openAlertDialog({ text: "Account name does not contain 'Contoso'." });

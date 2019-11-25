@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 429f199a9178c2d304331814ae1a9fa6e1ffaa96
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749650"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Detecte la dirección URL de su organización con la API web.
 
@@ -78,7 +84,7 @@ Se usa un conjunto de entidad denominado `Instances` para recopilar información
 Las instancias de la API web de Common Data Service del servicio de detección requieren autenticación con tokens de acceso de OAuth.
 
 Cuando se configura el servicio de detección para la autenticación de OAuth, una solicitud enviada a la API web de servicio sin un token de acceso desencadena un desafío del portador con la autoridad del extremo "común" y el id. de recurso del servicio.
-### <a name="cors-support"></a>Compatibilidad con CORS
+### <a name="cors-support"></a>Soporte técnico de CORS
 
 La API web del servicio de detección admite la norma CORS para acceso de origen cruzado como hace la Web API.  Para obtener más información sobre el soporte técnico de CORS, consulte [Usar OAuth con uso compartido de recursos entre orígenes para conectar una aplicación de una sola página](../oauth-cross-origin-resource-sharing-connect-single-page-application.md).  
   

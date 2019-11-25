@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Recuperar dirección URL absoluta y la dirección URL de la colección de sitios(Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Recuperar una dirección URL absoluta y una dirección URL de colección de sitios (Common Data Service) | Microsoft Docs'
 description: En este ejemplo se muestra cómo recuperar la dirección URL absoluta y la dirección URL de la colección de sitios de una ubicación de SharePoint.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa73f1dc5cb711291e5e6f441a69386913419800
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749877"
 ---
 # <a name="sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record"></a>Ejemplo: recuperar una dirección URL absoluta y una dirección URL de colección de sitios de un registro de ubicación
 

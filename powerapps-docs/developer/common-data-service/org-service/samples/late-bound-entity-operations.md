@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Crear, recuperar, actualizar y eliminar (enlace en tiempo de ejecución) (Common Data Service) | Microsoft Docs'
-description: 'Este ejemplo muestra las operaciones de crear, recuperar, actualizar y eliminar en una cuenta mediante la clase Entity de enlace en tiempo de ejecución.'
+title: 'Ejemplo: crear, recuperar, actualizar y eliminar (enlace en tiempo de ejecución) (Common Data Service) | Microsoft Docs'
+description: Este ejemplo muestra las operaciones de crear, recuperar, actualizar y eliminar en una cuenta mediante la clase Entity de enlace en tiempo de ejecución.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749893"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Ejemplo: operaciones de entidad en tiempo de ejecución
 

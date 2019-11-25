@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Agregar un registro a la cola (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: agregar un registro a una cola (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo agregar registros a una cola.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e342e7192f85112d682727e145aaf12f73a65ff8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749681"
 ---
 # <a name="sample-add-a-record-to-a-queue"></a>Ejemplo: agregar un registro a una cola
 

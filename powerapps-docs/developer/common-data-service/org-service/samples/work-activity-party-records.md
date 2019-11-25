@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Trabajar con registros de grupos de actividad (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Trabajar con registros de grupos de actividades (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo trabajar con registros del grupo de actividad.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce1824020e8ca09380d34d871b4222f132837e87
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749846"
 ---
 # <a name="sample-work-with-activity-party-records"></a>Ejemplo: trabajar con registros de grupo de actividad
 

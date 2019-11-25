@@ -1,6 +1,6 @@
 ---
-title: 'Ejemplo de datos de consulta de la API web (C#) (Common Data Service)| Microsoft Docs'
-description: 'Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante la API web de Common Data Service y C#.'
+title: Ejemplo de datos de consulta de la API web (C#) (Common Data Service)| Microsoft Docs
+description: Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante la API web de Common Data Service y C#.
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 91183105-bc99-4e34-a1b3-1085e1a51f82
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1169849532de15de98c05be6ee1050232da8c4f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749755"
 ---
 # <a name="web-api-query-data-sample-c"></a>Ejemplo de datos de consulta API (C#)
 

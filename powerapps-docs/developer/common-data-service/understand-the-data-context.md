@@ -10,12 +10,17 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a9efd1886e455241983bd43fa072ae71f40ea444
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749783"
 ---
-
 # <a name="understand-the-execution-context"></a>Entender el contexto de ejecución
 
 La **Canalización de ejecución de eventos** pasa a los complementos registrados una cantidad grande de datos sobre la operación que se procesa en estos momentos y el entorno de ejecución del complemento.

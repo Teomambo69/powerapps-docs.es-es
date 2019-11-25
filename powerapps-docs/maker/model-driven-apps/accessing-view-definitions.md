@@ -1,6 +1,6 @@
 ---
 title: Acceso a una definición de vista de aplicación controlada por modelos | MicrosoftDocs
-description: 'En este tema, aprenderá a acceder a vistas de entidad'
+description: En este tema, aprenderá a acceder a vistas de entidad
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: 034c8bef-0d1c-4ef9-8da7-f81343c4553a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752038"
 ---
 # <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Acceso a una definición de vista de aplicación controlada por modelos en PowerApps
 
@@ -33,7 +39,7 @@ search.app:
 > [!IMPORTANT]
 > La versión más reciente del diseñador de vistas está funcionando actualmente en vista previa. Algunas características como el filtrado avanzado, controles personalizados, así como propiedades de columnas aún no se admiten. Para realizar estas tareas [Abra una vista para editar en el explorador de soluciones](#open-a-view-for-editing-in-solution-explorer).
 
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]

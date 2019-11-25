@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6da18a7795f2e39e5f51f62403327bcfef09287c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754573"
 ---
 # <a name="publish-request-schema"></a>Esquema de solicitud de publicación
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/publish-request-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/publish-request-schema -->
 
 La siguiente es la definición de esquema para el mensaje <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>. Consulte [Publicar personalizaciones](publish-customizations.md) para obtener más información. [!INCLUDE[schema_download](../../includes/schema-download.md)].  
   
@@ -27,7 +33,7 @@ La siguiente es la definición de esquema para el mensaje <xref:Microsoft.Crm.Sd
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified"  
            elementFormDefault="qualified"  
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+           xmlns:xs="https://www.w3.org/2001/XMLSchema">  
  <xs:element name="importexportxml">  
   <xs:complexType>  
    <xs:sequence>  

@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753692"
 ---
 # <a name="query-data-using-the-web-api"></a>Consultar datos utilizando la API web
 
@@ -215,7 +221,7 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 |`( )`|Agrupaciones por prioridad|`(contains(name,'sample') or contains(name,'test')) and revenue gt 5000`|  
   
 > [!NOTE]
->  Este es un subconjunto de las [operaciones de filtro integradas 11.2.5.1.1](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Los operadores aritméticos y el operador de comparación no se admiten en la API web.  
+>  Este es un subconjunto de las [operaciones de filtro integradas 11.2.5.1.1](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Los operadores aritméticos y el operador de comparación no se admiten en la API web.  
   
 <a name="bkmk_buildInQueryFunctions"></a>
 
@@ -230,7 +236,7 @@ La API web admite estas funciones de consulta de cadena de OData estándar:
 |`startswith`|`$filter=startswith(name,'a')`|  
   
 > [!NOTE]
->  Este es un subconjunto de las [funciones de consulta integradas 11.2.5.1.2](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` y otras funciones de cadena no se admiten en la API web.  
+>  Este es un subconjunto de las [funciones de consulta integradas 11.2.5.1.2](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` y otras funciones de cadena no se admiten en la API web.  
   
 ### <a name="common-data-service-web-api-query-functions"></a>Funciones de consulta de la API web de Common Data Service
  
@@ -478,7 +484,7 @@ Utilizando `$apply` puede agregar y agrupar los datos dinámicamente.  Casos de 
 
 Las funciones agregadas están limitados a una colección de 50.000 registros.  La información adicional acerca de usar la funcionalidad agregada con Common Data Service se puede encontrar aquí: [Uso de FetchXML para generar una consulta](../use-fetchxml-construct-query.md).
 
-Los detalles adicionales en la agregación de datos de OData se pueden encontrar aquí: [Extensión de OData para la versión 4.0 de agregación de datos](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).  Tenga en cuenta que Common Data Service sólo admite un subconjunto de estos métodos agregados.
+Los detalles adicionales en la agregación de datos de OData se pueden encontrar aquí: [Extensión de OData para la versión 4.0 de agregación de datos](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).  Tenga en cuenta que Common Data Service sólo admite un subconjunto de estos métodos agregados.
 
 
 <a name="bkmk_useParameterAliases"></a>

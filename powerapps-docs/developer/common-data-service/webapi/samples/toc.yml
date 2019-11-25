@@ -1,22 +1,22 @@
 - name: 'Ejemplos de operaciones de datos (C#)'
   items:
-    - name: 'Introducción a los ejemplos de C#'
+    - name: 'Introducción con ejemplos en C#'
       href: ../web-api-samples-csharp.md
     - name: Operaciones básicas
       href: basic-operations-csharp.md
-    - name: Consulta de los datos
+    - name: Consultar datos
       href: query-data-csharp.md
     - name: Operaciones condicionales
       href: conditional-operations-csharp.md
     - name: Funciones y acciones
       href: functions-actions-csharp.md
-- name: Ejemplos de operaciones de datos de JavaScript del lado cliente
+- name: Ejemplos de operaciones de datos de JavaScript del lado del cliente
   items:
-    - name: Introducción a los ejemplos de JavaScript del lado cliente
+    - name: Introducción con ejemplos de JavaScript del lado cliente
       href: ../web-api-samples-client-side-javascript.md
     - name: Operaciones básicas
       href: basic-operations-client-side-javascript.md
-    - name: Consulta de los datos
+    - name: Consultar datos
       href: query-data-client-side-javascript.md
     - name: Operaciones condicionales
       href: conditional-operations-client-side-javascript.md

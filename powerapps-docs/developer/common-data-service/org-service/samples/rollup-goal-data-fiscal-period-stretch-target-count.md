@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 747691cdff9504a5c2ddc00da66f405a896a3518
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749865"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Ejemplo: Datos de objetivos consolidados para un período fiscal en comparación con el recuento de destino extendido
 
@@ -26,17 +32,17 @@ Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los
 **Nombre**: Nancy<br/>
 **Apellidos**: Anderson<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: nanderson@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: nanderson@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: David<br/>
 **Apellido**: Bristol<br/>
 **Rol de seguridad**: Comercial<br/>
-**UserName**: dbristol@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: dbristol@yourorg.onmicrosoft.com<br/>
 
 **Nombre**: Kevin<br/>
 **Apellidos**: Cook<br/>
 **Rol de seguridad**: SalesManager<br/>
-**UserName**: kcook@yourorg.onmicrosoft.com<br/>
+**Nombre de usuario**: kcook@yourorg.onmicrosoft.com<br/>
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -53,7 +59,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 ### <a name="setup"></a>Configuración
 
 1. Comprobaciones para la versión de la organización.
-2. Recupera el jefe de ventas y a 2 representantes de ventas creados manualmente en **Office 365**.
+2. Recupera el jefe de ventas y a 2 representantes de ventas, creados manualmente en **Office 365**.
 3. Crea un registro `PhoneCall` y un registro de cuenta de apoyo para el ejemplo.
 4. Crea ActivityPartys para el campo **De** de llamadas de teléfono.
 5. Crea una llamada de teléfono abierta.

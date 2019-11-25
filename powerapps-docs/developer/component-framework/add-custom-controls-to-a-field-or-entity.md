@@ -1,7 +1,7 @@
 ---
 title: Agregar componentes de código a un campo o una entidad | Microsoft Docs
 description: Proceso para importar componentes de código
-keywords: null
+keywords: ''
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -10,8 +10,13 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
+ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749637"
 ---
-
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Agregar componentes de código a un campo o entidad en aplicaciones basadas en modelo
 
 Los componentes de código permiten transformar en visualizaciones campos que normalmente contienen texto. De forma similar, puede usar los componentes de código para transformar conjuntos de datos, como una vista, de forma que se muestren con una presentación más visual, en lugar de como una lista de registros. Los componentes de código pueden aparecer como visualizaciones en formularios, paneles, vistas y cuadrículas de la página principal. 
@@ -46,12 +51,12 @@ Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y e
    - **Tableta**. Para que el componente de código esté disponible en tabletas en las que se ejecute Dynamics 365 para tabletas, seleccione la opción Tableta situada junto al componente.
 
    > [!div class="mx-imgBorder"] 
-   > ![Elegir las aplicaciones de cliente para ver el control personalizado](../../maker/model-driven-apps/media/choose-client.png "Elegir las aplicaciones de cliente para ver el control personalizado") 
+   > ![Elija las aplicaciones del cliente para ver el control personalizado](../../maker/model-driven-apps/media/choose-client.png "Elija las aplicaciones del cliente para ver el control personalizado") 
 
 7. Seleccione el icono de lápiz junto a **Mín**, **Máx.**, y **Paso**, establezca la opción de la propiedad y, a continuación seleccione **Aceptar**.  
    
    > [!div class="mx-imgBorder"] 
-   > ![Agregar propiedades de controles personalizados](../../maker/model-driven-apps/media/ccf-add-properties.png "Agregar propiedades de controles personalizados")
+   > ![Agregar propiedades del control personalizado](../../maker/model-driven-apps/media/ccf-add-properties.png "Agregar propiedades del control personalizado")
 
    - **Mín.** Establezca el valor mínimo aceptado. Puede enlazar el valor estático que especifique o enlazar el valor a un campo existente. En este ejemplo, **Enlazar a un valor estático** es **Divisa** y el valor mínimo que se puede introducir es *cero*.  
   

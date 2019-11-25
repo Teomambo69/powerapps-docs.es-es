@@ -1,6 +1,6 @@
 ---
-title: 'Exportación, preparación para editar e importación de la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs'
-description: 'Obtenga información sobre cómo exportar la cinta de opciones al incluirla en una solución y, a continuación, exportando la solución. Puede exportar todas las personalizaciones, pero esto puede representar una gran cantidad de datos. Se recomienda usar una solución no administrada existente o crear una solución nueva.'
+title: Exportación, preparación para editar e importación de la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
+description: Obtenga información sobre cómo exportar la cinta de opciones al incluirla en una solución y, a continuación, exportando la solución. Puede exportar todas las personalizaciones, pero esto puede representar una gran cantidad de datos. Se recomienda usar una solución no administrada existente o crear una solución nueva.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749904"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportar, preparar para modificar e importar la cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
 
 Para editar la cinta de opciones, debe realizar los siguientes pasos:  
   
@@ -128,7 +134,7 @@ Para editar la cinta de opciones, debe realizar los siguientes pasos:
   
 1.  Si recibe una notificación que se produjeron errores que causaron un problema en la importación, haga clic en **Exportar registro**.  
   
-2.  Guarde el archivo de registro de exportación. Seleccione el archivo y haga clic con el botón secundario. Haga clic en **Abrir con** y luego seleccione **Microsoft Office Excel**.  
+2.  Guarde el archivo de registro de exportación. Seleccione el archivo y haga clic con el botón secundario. Haga clic en **Abrir con** y, a continuación, seleccione **Microsoft Office Excel**.  
   
 3.  Seleccione la hoja de cálculo **Componentes** y observe los mensajes en la columna **ErrorText**.  
   

@@ -1,5 +1,5 @@
 ---
-title: Trabajar con datos usando código en Common Data Service (PowerApps) | Microsoft Docs
+title: Trabajar con datos con código en Common Data Service (PowerApps) | Microsoft Docs
 description: 'Common Data Service proporciona dos servicios web que puede usar para interactuar con datos: API web y servicio de la organización.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d905bdcdd8cccccf841c16579243d4788faa6ab3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749741"
 ---
-# <a name="work-with-data-using-code-in-common-data-service"></a>Trabajar con datos usando código en Common Data Service
+# <a name="work-with-data-using-code-in-common-data-service"></a>Trabajar con datos mediante código en Common Data Service
 
-Common Data Service tiene [entidades](entities.md) que se usan para modelar y administrar datos profesionales. Puede usar entidades estándar o crear sus propias entidades personalizadas para almacenar datos. 
+Common Data Service tiene [entidades](entities.md) que se utilizan para modelar y administrar datos profesionales. Puede usar entidades estándar o crear sus propias entidades personalizadas para almacenar datos. 
 
 ## <a name="use-web-services-to-work-with-data"></a>Usar servicios web para trabajar con datos
 
@@ -29,13 +35,13 @@ Common Data Service proporciona dos servicios web que puede usar para interactua
 
 La API web es un extremo RESTful de OData v4. Use esto para cualquier lenguaje de programación que admita solicitudes HTTP y la autenticación mediante OAuth 2.0.
 
-Más información: [Usar la API web de Common Data Service](webapi/overview.md) 
+Más información: [Usar acciones web API de Common Data Service](webapi/overview.md). 
 
 ### <a name="organization-service"></a>Servicio de la organización
 
 Use los ensamblados de SDK de .NET Framework para proyectos que impliquen la escritura de complementos o extensiones de flujo de trabajo. 
 
-Más información: [Usar el servicio de la organización de Common Data Service](org-service/overview.md)
+Más información: [Usar el servicio de organización de Common Data Service](org-service/overview.md)
 
 > [!NOTE]
 > Utilice ensamblados de Xrm.Tooling si está creando aplicaciones cliente para Windows. Más información: [Crear aplicaciones cliente de Windows mediante las herramientas XRM](xrm-tooling/build-windows-client-applications-xrm-tools.md)

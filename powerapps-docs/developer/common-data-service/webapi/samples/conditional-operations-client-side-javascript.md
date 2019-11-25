@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de operaciones condicionales de API web (JavaScript de lado de cliente) (Common Data Service) | Microsoft Docs
-description: Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service y JavaScript de lado de cliente.
+title: Ejemplo de operaciones condicionales de la API web (JavaScript del lado del cliente) (Common Data Service)| Microsoft Docs
+description: Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service y JavaScript del lado del cliente.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,22 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-author: brandonsimons
+- Dynamics 365 (online)
+author: JimDaly
 ms.assetid: 7f097d9f-8fe7-428a-9ef7-ca79ec501d81
 caps.latest.revision: 23
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: db5c01620da508203f27d4c826b9748f94e0f950
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753672"
 ---
 # <a name="web-api-conditional-operations-sample-client-side-javascript"></a>Ejemplo de operaciones condicionales de la API web (JavaScript del lado del cliente)
 
-Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service utilizando JavaScript de lado de cliente.  
+Este ejemplo muestra cómo realizar operaciones condicionales mediante la API web de Common Data Service usando JavaScript del lado del cliente.  
   
 > [!NOTE]
 >  Este ejemplo implementa las operaciones detalladas en el [ejemplo de operaciones condicionales de la API web](../web-api-conditional-operations-sample.md) y utiliza las construcciones comunes del lado cliente de JavaScript que se describen en [ejemplos de API web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
@@ -34,7 +40,7 @@ Este ejemplo muestra cómo realizar operaciones condicionales mediante la API we
 
  Para ejecutar este ejemplo, se requiere lo siguiente:  
   
--   Obtenga acceso a Common Data Service online versión 8.0 o superior.  
+-   Obtenga acceso a Common Data Service en línea versión 8.0 o superior.  
   
 -   Una cuenta de usuario con privilegios para importar soluciones y realizar operaciones CRUD, normalmente un rol de seguridad de administrador o personalizador del sistema.  
   
@@ -42,7 +48,7 @@ Este ejemplo muestra cómo realizar operaciones condicionales mediante la API we
  
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [Microsoft CRM API web ejemplo de operaciones condicionales (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824046) y descargue el archivo de ejemplo Microsoft CRM ejemplo de operaciones condicionales de la API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque la solución administrada WebAPIConditionalOperations_1_0_0_0_managed.zip. Importe la solución administrada en la organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [Microsoft CRM API web ejemplo de operaciones condicionales (JavaScript del lado cliente)](https://go.microsoft.com/fwlink/p/?LinkId=824046) y descargue el archivo de ejemplo Microsoft CRM ejemplo de operaciones condicionales de la API web (JavaScript del lado cliente).zip. Extraiga el contenido y busque la solución administrada WebAPIConditionalOperations_1_0_0_0_managed.zip. Importe la solución administrada en su organización de Common Data Service y vea la página de configuración de la solución para ejecutar el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_sampleCode"></a>
 
@@ -441,7 +447,7 @@ Sdk.startSample = function () {
   
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](../overview.md)<br />
+[Usar la API web de Common Data Service](../overview.md)<br />
 [Realizar operaciones condicionales mediante la API web](../perform-conditional-operations-using-web-api.md)<br />
 [Ejemplos de la API web](../web-api-samples.md)<br />
 [Ejemplo de operaciones condicionales de la API web](../web-api-conditional-operations-sample.md)<br />

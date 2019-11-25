@@ -1,19 +1,25 @@
 ---
-title: Usar una combinación externa izquierda en FetchXML para consultar los registros que &bdquo;no están en&bdquo; (Common Data Service) | Microsoft Docs
+title: Usar una combinación externa izquierda en FetchXML para consultar registros &bdquo;no en&bdquo; (Common Data Service) | Microsoft Docs
 description: Aprenda a usar una combinación izquierda mediante la clase FetchXML para realizar una consulta que filtre en la tabla de combinación y cree una consulta para buscar registros "no incluidos en" un conjunto
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e50ff095affda6c976b838b1f368026640fcb2b2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749659"
 ---
 # <a name="use-a-left-outer-join-in-fetchxml-to-query-for-records-not-in"></a>Use una combinación externa izquierda en FetchXML para consultar los registros "no en"
 

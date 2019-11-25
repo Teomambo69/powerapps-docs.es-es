@@ -3,28 +3,33 @@ title: Tutorial para agregar o editar componentes de aplicación controlada por 
 description: Utilice el diseñador de aplicaciones de PowerApps para agregar o editar componentes.
 keywords: ''
 ms.date: 10/15/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 17
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752214"
 ---
-
 # <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>Tutorial: Agregar o editar componentes de aplicación controlada por modelos en el diseñador de aplicaciones de PowerApps
 
 En este tutorial aprenderá a agregar y quitar componentes de una aplicación controlada por modelos. 
@@ -48,15 +53,15 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
  También puede usar **Buscar en el lienzo** para buscar componentes en el lienzo. Si selecciona **Buscar en el lienzo**, se abre una nueva pestaña de búsqueda a la derecha de las pestañas en el panel derecho.   
  
  > [!div class="mx-imgBorder"]
- > ![Opción de búsqueda en el lienzo](media/app-designer-search-tab.png "búsqueda en el lienzo")
+ > ![Opción de búsqueda en el lienzo](media/app-designer-search-tab.png "Buscar en el lienzo")
 
 ## <a name="open-an-app"></a>Abra una aplicación
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/). 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/). 
 
 2. Seleccione una aplicación basada en modelos ya existente o seleccione **Empezar en blanco**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Agregar un artefacto (entidad, panel, o flujo de proceso de negocio)  
- Cuando se agrega un panel o un flujo de proceso de negocio a una aplicación, las entidades que usan se agregan automáticamente a la aplicación. Cuando agrega una entidad, las ventanas de los activos se agregan automáticamente. Hay dos formas de agregar artefactos al lienzo del diseñador: mediante el botón **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Botón Agregar en el diseñador") en la barra de comandos o con los mosaicos de la pestaña **Componentes**.  
+ Cuando se agrega un panel o un flujo de proceso de negocio a una aplicación, las entidades que usan se agregan automáticamente a la aplicación. Cuando agrega una entidad, las ventanas de los activos se agregan automáticamente. Hay dos formas de agregar artefactos al lienzo del diseñador: mediante el botón **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") en la barra de comandos o con las ventanas de la pestaña **Componentes**.  
   
  Estos son los pasos para agregar un panel a la aplicación. Use los mismos pasos para agregar un proceso de flujo de negocio o una entidad.  
   
@@ -67,7 +72,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
     > [!TIP]
     >  Como alternativa, puede realizar una de las acciones siguientes:  
     >   
-    > - Seleccione **Agregar** ![Botón Agregar del diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Botón Agregar del diseñador") y, a continuación, seleccione **Paneles**.  
+    > - Seleccione **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") y, a continuación, seleccione **Paneles**.  
     > - En la pestaña **Componentes**, en **Artefactos**, seleccione **Paneles**.  
   
 2.  En el cuadro **Buscar**, escriba algunas palabras clave para el nombre del panel que busca.  
@@ -82,7 +87,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
   
      Todas las entidades que utiliza el panel también se agregan al área **Vista de la entidad**. Por ejemplo, si agrega el panel Administrador de servicio de atención al cliente, las entidades Caso, Derechos y Cola se agregan al área Vista de entidad. Para cada entidad, también se agregan las ventanas de sus activos. Puede usar estas ventanas para agregar formularios, vistas y gráficos. Más información:[Agregar o editar componentes en el diseñador de aplicaciones de PowerApps](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
-    ![Agregar entidad al lienzo del diseñador de la aplicación](../model-driven-apps/media/add-entity-app-designer-canvas.png "Agregar una entidad al lienzo del diseñador de la aplicación")  
+    ![Agregar la entidad al lienzo del diseñador de aplicaciones](../model-driven-apps/media/add-entity-app-designer-canvas.png "Agregar una entidad al lienzo del diseñador de aplicaciones")  
   
 4.  Si el panel que desea no existe en la solución predeterminada, cree un panel seleccionando **Crear nuevo** en la pestaña **Componentes** en el lado derecho del lienzo.  
   
@@ -111,7 +116,7 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
     > [!NOTE]
     >  Como alternativa, puede realizar una de las acciones siguientes:  
     >   
-    > - Seleccione **Agregar**![Botón Agregar del diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Botón Agregar del diseñador") y, a continuación, seleccione **Formularios**.  
+    > - Seleccione **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") y, a continuación, seleccione **Formularios**.  
     > - En la pestaña **Componentes**, en **Activos de la entidad**, seleccione **Formularios**.  
   
     > [!TIP]
@@ -144,9 +149,9 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
     > [!NOTE]
     >  Cuando agrega una vista, puede hacer referencia solo a las vistas públicas que se muestran en el nodo **Vistas** en el explorador de soluciones.  
   
-4. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") para expandir la ventana y ver una lista de formularios que se han agregado.  
+4. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") flecha abajo para expandir la ventana y ver una lista de formularios que se han agregado.  
   
-     ![Ventana del formulario expandida en el diseñador de aplicaciones](../model-driven-apps/media/app-designer-expanded-form-tile.png "Ventana del formulario expandida en el diseñador de la aplicación")  
+     ![Ventana del formulario expandida en el diseñador de aplicaciones](../model-driven-apps/media/app-designer-expanded-form-tile.png "Ventana del formulario expandida en el diseñador de aplicaciones")  
   
 5.  Repita estos pasos para agregar vistas y los gráficos de la entidad a la aplicación.  
   
@@ -154,11 +159,11 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
   
 ## <a name="edit-or-remove-artifacts"></a>Editar o quitar artefactos  
   
-- Para editar un panel o flujo de proceso de negocio, seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "la flecha abajo") para expandir la ventana y, a continuación, elija el botón Diseñador del mapa de sitio ![botón Abrir diseñador del mapa de sitio](../model-driven-apps/media/dynamics365-open-designer.PNG "botón Abrir diseñador del mapa de sitio") correspondientes al panel o flujo del proceso de negocio que desea editar.  
+- Para editar un panel o flujo de proceso de negocio, seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") para expandir la ventana y, a continuación, elija el botón Diseñador del mapa de sitio ![botón Abrir diseñador del mapa de sitio](../model-driven-apps/media/dynamics365-open-designer.PNG "Botón Abrir diseñador del mapa del sitio") correspondientes al panel o flujo del proceso de negocio que desea editar.  
   
      El diseñador para el artefacto seleccionado se abre.  
   
-- Para quitar un panel o flujo de proceso de negocio, seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "la flecha abajo") para expandir la ventana y, después, seleccione el panel o el flujo de proceso de negocio que desea quitar. En la barra de comandos, seleccione **Quitar**.  
+- Para quitar un panel o flujo de proceso de negocio, seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") para expandir la ventana y, después, seleccione el panel o el flujo de proceso de negocio que desea quitar. En la barra de comandos, seleccione **Quitar**.  
 
     Otra forma de quitar un panel o flujo de proceso de negocio es desactivando la casilla correspondiente en la pestaña **componentes**.
   
@@ -173,7 +178,7 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
 
 ### <a name="edit-entity-assets"></a>Editar activos de la entidad
   
-1. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "la flecha abajo") para expandir la ventana de formularios, vistas, gráficos o paneles.  
+1. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") para expandir la ventana de formularios, vistas, gráficos o paneles.  
   
 2. Seleccione el formulario, vista, gráfico o panel que desea editar.  
   
@@ -181,11 +186,11 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
 
    o
 
-   Seleccione el botón diseñador del mapa de sitio ![botón Abrir diseñador del mapa de sitio](../model-driven-apps/media/dynamics365-open-designer.PNG "botón Abrir diseñador del mapa de sitio") correspondiente en el formulario, la vista, el gráfico o el panel.  
+   Seleccione el botón diseñador del mapa de sitio ![botón Abrir diseñador del mapa de sitio](../model-driven-apps/media/dynamics365-open-designer.PNG "Botón Abrir diseñador del mapa del sitio") correspondiente en el formulario, la vista, el gráfico o el panel.  
 
 ### <a name="remove-entity-assets"></a>Quitar activos de la entidad  
 
-1. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "la flecha abajo") para expandir la ventana de formularios, vistas, gráficos o paneles.  
+1. Seleccione la flecha abajo ![Icono desplegable](../model-driven-apps/media/drop-down-icon.png "flecha abajo") para expandir la ventana de formularios, vistas, gráficos o paneles.  
   
 2. Seleccione el formulario, vista, gráfico o panel que desea editar.
 
@@ -194,5 +199,5 @@ Además, si está usando al cliente interfaz unificada, también puede agregar a
 También puede seleccionar la ventana de los formularios, vistas, gráficos o paneles y, después, en la pestaña **componentes**, desactivar las casillas de los activos que quiere quitar del diseñador.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Cree un mapa del sitio para una aplicación](create-site-map-app.md) </br>  
- [Validación y publicación de una aplicación](validate-app.md)
+ [Crear un mapa del sitio para una aplicación](create-site-map-app.md) </br>  
+ [Validar y publicar una aplicación](validate-app.md)

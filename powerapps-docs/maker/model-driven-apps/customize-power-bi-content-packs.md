@@ -4,26 +4,31 @@ description: Obtenga más información sobre cómo modificar los paquetes de con
 keywords: PBI
 ms.date: 09/30/2017
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 for Customer Engagement (online)
+- Dynamics 365 for Customer Engagement (online)
 ms.assetid: 424d7f29-de44-4ce0-94f1-be8777ad6485
 author: Mattp123
 ms.author: matp
 manager: amyla
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 16
 topic-status: Drafting
-tags: null
+tags: ''
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 929230a38cf0c9ea1dc23b98550c45fa54f18545
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753863"
 ---
-
 # <a name="customize-dynamics-365-apps-power-bi-content-packs"></a>Personalizar los paquetes de contenido Power BI de aplicaciones Dynamics 365
 
 Power BI es una colección completa de servicios y herramientas que se usa para visualizar los datos profesionales.  Hay paquetes de contenido disponibles que permiten visualizar y analizar fácilmente los datos de aplicaciones Dynamics 365 Sales, Service, y Marketing con Power BI basándose en un modelo de datos estándar. Los paquetes de contenido se crean con un conjunto de entidades y campos que son útiles para la mayoría de los escenarios de ventas, de servicio, o de informes de marketing.  
@@ -37,17 +42,17 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
 ### <a name="meet-the-requirements"></a>Cumplir los requisitos  
   
-- [Registro del servicio de Power BI](http://powerbi.com/).  
+- [Registro del servicio de Power BI](https://powerbi.com/).  
   
 - [Power BI Desktop](https://powerbi.microsoft.com/desktop) aplicación para editar informes Power BI.  
   
 - Archivo PBIX para el paquete de contenido que desea personalizar.  
   
-  -   [Descargar el PBIX de Dynamics CRM Online Sales Manager](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
+  -   [Descargar el PBIX de Dynamics CRM Online Sales Manager](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
   
-  -   [Descargar el PBIX del jefe de servicio de Dynamics CRM Online](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
+  -   [Descargar el PBIX del jefe de servicio de Dynamics CRM Online](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
   
-  -   [Descargar el PBIX de Microsoft Dynamics 365 Process Analyzer](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
+  -   [Descargar el PBIX de Microsoft Dynamics 365 Process Analyzer](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
   
   Los paquetes de contenido de Dynamics 365 se admiten actualmente solo en el idioma inglés de Estados Unidos.  
   
@@ -74,7 +79,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
 5. Cuando aparezca el cuadro de diálogo Acceso a una fuente OData, seleccione **Cuenta profesional** y, a continuación, seleccione **Iniciar sesión**.  
   
-   ![Diálogo Acceso a una fuente OData](media/pbi-odata-signin.PNG "Diálogo Acceso a una fuente OData")  
+   ![Tener acceso a un diálogo Fuente de OData](media/pbi-odata-signin.PNG "Tener acceso a un diálogo Fuente de OData")  
   
 6. Cuando aparezca la página de inicio de sesión, escriba sus credenciales para autenticarse en su instancia.  
   
@@ -104,7 +109,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
 3. Haga clic con el botón secundario en el encabezado de columna, como *Fecha de cierre estimada*, señale a **Cambiar tipo** y seleccione otro tipo de fecha, como **Fecha**.  
   
-   ![Cambiar el tipo de datos en Power BI Desktop](media/pbi-changeformat.PNG "Cambiar el tipo de datos en Power BI Desktop")  
+   ![Cambiar tipo de datos en Power BI Desktop](media/pbi-changeformat.PNG "Cambiar tipo de datos en Power BI Desktop")  
   
 4. Seleccione **Cerrar y aplicar** para cerrar el editor de consultas.  
   
@@ -179,7 +184,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
     El captura de pantalla siguiente indica donde se encuentran las comillas izquierdas.  
   
-   ![Pegar la dirección URL del Fetch XML codificado en la fuente OData](media/pbi-acct-encoded-url.PNG "Pegar la dirección URL del Fetch XML codificado en la fuente OData")  
+   ![Pegar dirección URL codificada en fuente OData](media/pbi-acct-encoded-url.PNG "Pegar dirección URL codificada en fuente OData")  
   
 6. En el panel derecho, en **PASOS APLICADOS**, seleccione el botón de configuración ![Botón Configuración](media/mp-ua-r16-settings.png "Botón Configuración") junto a **Otras columnas quitadas**.  
   
@@ -224,7 +229,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
         Se muestra la consulta del conjunto de opciones.  
   
-   ![Crear una consulta de conjunto de opciones](media/pbi-makeoptionsetquery.png "Crear una consulta de conjunto de opciones")  
+   ![Crear una consulta del conjunto de opciones](media/pbi-makeoptionsetquery.png "Crear una consulta del conjunto de opciones")  
   
    4.  Copie la consulta completa en el Portapapeles. Puede pegarlo en un editor de texto, como Bloc de notas, para usar como referencia más tarde.  
   
@@ -289,7 +294,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
    5.  En el diálogo de la nueva columna Expandir, borre la columna que corresponda a los valores (porque solo las etiquetas deben aparecer en la columna). Seleccione **Listo**.  
   
-   ![Elegir la columna que representa la etiqueta](media/pbi-expand-column.png "Elegir la columna que representa la etiqueta")  
+   ![Elija la columna que representa la etiqueta](media/pbi-expand-column.png "Elija la columna que representa la etiqueta")  
   
    6.  Seleccione **Guardar** y después cuando se le solicite, seleccione **Aplicar**.  
   
@@ -301,7 +306,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
    3.  Agregue un elemento de línea de columna con el nombre cambiado, asegúrese de que no hay errores de sintaxis, y seleccione **Hecho**. En este ejemplo, el nombre de columna del conjunto de opciones personalizado que creó anteriormente es **NewColumn**, cuyo nombre se cambia a *Conjunto de opciones personalizado*.  
   
-   ![Cambiar el nombre de una columna para mostrarla en los informes](media/pbi-rename-column.png "Cambiar el nombre de una columna para mostrarla en los informes")  
+   ![Cambiar un nombre para mostrar en los informes](media/pbi-rename-column.png "Cambiar un nombre para mostrar en los informes")  
   
    4.  Seleccione **Guardar** y después cuando se le solicite, seleccione **Aplicar**.  
   
@@ -328,7 +333,7 @@ Para personalizar un paquete contenido, consulte esta información y realice cad
   
 6. Localice la parte **>100.000** del paso.  
   
-   ![Aumentar valor de recuento de filas](media/pbi-increaserowcount.png "Aumentar valor de recuento de filas")  
+   ![Incrementar valor de recuento de filas](media/pbi-increaserowcount.png "Incrementar valor de recuento de filas")  
   
 7. Aumente el valor a un número mayor, como *150.000*.  
   

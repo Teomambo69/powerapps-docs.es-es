@@ -1,5 +1,5 @@
 ---
-title: ' Componente API de localización| Microsoft Docs'
+title: " Componente API de localización| Microsoft Docs"
 description: Implementar componente api de localización
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 4917728c08323c0c0e96f452621cd14298116a12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754097"
 ---
-
 # <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
 Este ejemplo muestra cómo se realiza la localización para controles personalizados. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
@@ -17,7 +22,7 @@ Este ejemplo muestra cómo se realiza la localización para controles personaliz
 PowerApps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
-> ![Componente de API de localización](../media/localization-api-control.png "Componente de API de localización")
+> ![Componente API de localización](../media/localization-api-control.png "Componente API de localización")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -61,7 +66,7 @@ export class TSLocalizationAPI
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -181,8 +186,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -265,8 +270,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -349,8 +354,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">

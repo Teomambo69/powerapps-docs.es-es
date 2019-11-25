@@ -1,25 +1,30 @@
 ---
-title: Consideraciones sobre la API de entidades virtuales (Common Data Service) | Microsoft Docs
+title: Consideraciones sobre API para entidades virtuales (Common Data Service) | Microsoft Docs
 description: Describe consideraciones sobre API para entidades virtuales
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996dea
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbd3da97fcf4e2f8d21f5475221eb39455c09050
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749657"
 ---
-
 # <a name="api-considerations-of-virtual-entities"></a>Consideraciones sobre API para entidades virtuales
 
-Hay dos grandes categorías de cambios en el sistema de metadatos que están asociados con la introducción de entidades virtuales en Common Data Service:
+Hay dos grandes categorías de cambios en el sistema de metadatos que están asociadas con la introducción de entidades virtuales en Common Data Service:
 
 - Adición de un nuevo ensamblado, espacios de nombres, clases y otros tipos para admitir el desarrollo de proveedores de datos de entidad virtuales personalizados
 - Cambios a la plataforma principal, incluidas algunas propiedades adicionales para admitir la asignación de origen de datos externos y modificación de comportamientos de propiedades de entidad y atributo existentes que reflejan las limitaciones de la implementación inicial de esta característica

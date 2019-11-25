@@ -1,5 +1,5 @@
 ---
-title: ' Componente de incremento| Microsoft Docs'
+title: " Componente de incremento| Microsoft Docs"
 description: Implementar un componente de incremento
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 71c3418de53792b71987f1c0f4fd205a88760dab
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754093"
 ---
-
 # <a name="implementing-increment-component"></a>Implementar componente de incremento
 
 Este componente de ejemplo muestra cómo enlazar datos con PowerApps component framework y el control de errores. Este componente se representa como cuadro de texto con un botón `Increment` en el tiempo de ejecución. El cuadro de texto muestra el valor actual y es posible hacer clic en el botón `Increment`. Cada vez que haga clic en el botón, el valor del cuadro de texto aumenta en 1. El valor del incremento se puede cambiar a cualquier número que desee.
@@ -17,7 +22,7 @@ Este componente de ejemplo muestra cómo enlazar datos con PowerApps component f
 Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
 
 > [!div class="mx-imgBorder"]
-> ![Componente de incremento](../media/increment-control.png "Componente de incremento")
+> ![Componente de incremento|](../media/increment-control.png "Componente de incremento")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -59,7 +64,7 @@ export class TSIncrementControl
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -177,8 +182,8 @@ export class TSIncrementControl
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">

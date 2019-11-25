@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-ms.assetid: null
-caps.latest.revision: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+ms.assetid: ''
+caps.latest.revision: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd2d19b18b1de7bad4d6f661ec983af49fb8f4e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752170"
 ---
-
 # <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a>Configuración, requisitos y prácticas recomendadas del proveedor de datos de OData v4
 
 En este tema se describe cómo configurar el proveedor de datos de OData v4 así como los requisitos y las prácticas recomendadas para usar el proveedor de datos de OData v4 para establecer la conexión con un servicio web de OData v4. 
@@ -75,7 +80,7 @@ Este procedimiento muestra cómo usar el proveedor de datos de OData integrado c
 1. En la página de propiedades **Nuevo origen de datos**, rellene los siguientes campos y, a continuación, guarde el registro.  
   
     - **Nombre**. Escriba un nombre para describir el origen de datos.  
-    - **Uri**. Si usa el proveedor de datos de OData, especifique el URI del servicio web de OData. Por ejemplo, si está usando el proveedor de OData para conectarse a un servicio web hospedado en Azure, el URI puede parecerse a *`http://contosodataservice.azurewebsites.net/odata/`*.  
+    - **Uri**. Si usa el proveedor de datos de OData, especifique el URI del servicio web de OData. Por ejemplo, si está usando el proveedor de OData para conectarse a un servicio web hospedado en Azure, el URI puede parecerse a *`https://contosodataservice.azurewebsites.net/odata/`*.  
     - **Tiempo de espera en segundos**. Escriba la cantidad de segundos que se debe esperar a una respuesta del servicio web antes de agotar el tiempo de espera de una solicitud de datos. Por ejemplo, escriba 30 para esperar un máximo de treinta segundos antes de que se agote el tiempo de espera.  
     - **Modo de paginación**. Seleccione si usará la paginación del lado del cliente o del servidor para controlar cómo se paginan los resultados de la consulta. El valor predeterminado es la paginación del lado del cliente. Con la paginación del lado de servidor, el servidor controla la manera de paginar los resultados mediante el parámetro $skiptoken, que se agrega a la cadena de consulta. Más información: [Opción para omitir la consulta del sistema de token ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
         -  **Devolver recuento alineado** Devuelve el número total de registros en el conjunto de resultados. Esta configuración se usa para habilitar la funcionalidad de la siguiente página cuando se devuelven los datos a una cuadrícula. Use un valor "false" si el extremo de OData no admite el parámetro de OData $inlinecount. El valor predeterminado es false.

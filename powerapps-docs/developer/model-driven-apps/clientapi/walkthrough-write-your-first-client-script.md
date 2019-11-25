@@ -9,10 +9,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754589"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Tutorial: Escribir el primer script de cliente
 
@@ -83,7 +89,7 @@ Veamos el código detalladamente:
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }
@@ -219,7 +225,7 @@ var Sdk = window.Sdk || {};
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }

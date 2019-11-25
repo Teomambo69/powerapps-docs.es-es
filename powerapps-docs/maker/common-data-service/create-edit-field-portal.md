@@ -1,5 +1,5 @@
 ---
-title: Crear y editar campos para Common Data Service utilizando el portal PowerApps | MicrosoftDocs
+title: Crear y editar campos para Common Data Service utilizando el portal de PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -8,29 +8,35 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757992"
 ---
 # <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Crear y editar campos para Common Data Service utilizando el portal PowerApps
 
-El portal de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service.
+El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar campos de entidad con Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Crear y editar campos para Common Data Service](create-edit-fields.md)
-- [Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps](create-edit-field-solution-explorer.md)
+- [Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Campos de vista
 
-1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
+1. En el [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
 2. Seleccione **Datos**  > **Entidades** y seleccione la entidad que contiene los campos que desea ver.
 3. Con la pestaña **Campos** seleccionada, seleccione las vistas siguientes: 
 
@@ -227,7 +233,7 @@ Cualquiera de los campos que proporcionan la entrada de texto directa tienen un 
 
 ### <a name="see-also"></a>Vea también  
 [Crear y editar campos para Common Data Service](create-edit-fields.md)<br />
-[Crear y editar campos para Common Data Service con el explorador de soluciones PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
 [Tipos de campos y tipos de datos de campos](types-of-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Definir campos consolidados que agregan valores](define-rollup-fields.md)<br />

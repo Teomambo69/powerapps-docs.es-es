@@ -1,6 +1,6 @@
 ---
-title: 'Ejemplo: Crear y recuperar filtros de Outlook (Common Data Service) | Microsoft Docs'
-description: Este ejemplo muestra cómo recuperar filtros para Microsoft Dynamics 365 for Outlook
+title: 'Ejemplo: Crear y recuperar filtros de Outlook (Common Data Service)| Microsoft Docs'
+description: Este ejemplo muestra cómo recuperar filtros para Microsoft Dynamics 365 for Outlook.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a144c6166bf14737d0258a962306eb24f1aebc3b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749822"
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>Ejemplo: crear y recuperar filtros de Outlook
 
-Este código de ejemplo es para Common Data Service. Para descargar el ejemplo, consulte [ejemplo: crear y recuperar filtros de Outlook](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
+Este código de muestra es para Common Data Service. Para descargar el ejemplo, consulte [ejemplo: crear y recuperar filtros de Outlook](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -87,7 +93,7 @@ Console.WriteLine();
   
 ### <a name="see-also"></a>Vea también  
 
-[Ampliar Dynamics 365 para Outlook](extend-dynamics-365-outlook.md)<br />
+[Ampliar Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 [Ejemplo: Usar métodos de Outlook](sample-outlook-methods.md)<br />
 [Plantillas y filtros de Outlook y sin conexión](offline-outlook-filters-templates.md)<br />
 [Referencia de la entidad SavedQuery](../reference/entities/savedquery.md) 

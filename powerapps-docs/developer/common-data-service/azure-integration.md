@@ -6,14 +6,20 @@ ms.date: 06/01/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753060"
 ---
 # <a name="azure-integration"></a>Integración de Azure
 
@@ -64,7 +70,7 @@ De forma similar a los complementos, las actividades de flujo de trabajo persona
   
 ### <a name="asynchronous-service"></a>Servicio asincrónico
 
-Una vez notificado por el servicio de notificación de extremo de servicio, el servicio asincrónico controla la publicación del contexto de datos del mensaje de solicitud que está procesando actualmente la canalización de ejecución de eventos en el Azure Service Bus. Cada publicación la realiza un trabajo del sistema del servicio asincrónico. Un usuario puede ver el estado de cada trabajo del sistema con la vista **Trabajos del sistema** de la aplicación web PowerApps.  
+Una vez notificado por el servicio de notificación de extremo de servicio, el servicio asincrónico controla la publicación del contexto de datos del mensaje de solicitud que está procesando actualmente la canalización de ejecución de eventos en el Azure Service Bus. Cada publicación la realiza un trabajo del sistema del servicio asincrónico. Un usuario puede ver el estado de cada trabajo del sistema con la vista **Trabajos del sistema** de la aplicación web de PowerApps.  
   
 Para obtener más información sobre el servicio asincrónico consulte [Servicio asincrónico](asynchronous-service.md).  
   
@@ -131,7 +137,7 @@ Similar a una cola salvo que uno o varios agentes de escucha pueden suscribirse 
 Este tipo de contrato se aplica a las soluciones del centro de eventos de Azure.  
   
 > [!IMPORTANT]
->  Para usar estos contratos, debe especificar sus aplicaciones de escucha mediante el [SDK de Azure](http://www.windowsazure.com/develop/downloads/) versión 1.7 o posterior.  
+>  Para usar estos contratos, debe especificar sus aplicaciones de escucha mediante el [SDK de Azure](https://www.windowsazure.com/develop/downloads/) versión 1.7 o posterior.  
   
 Identificar el tipo de seguridad que usa un contrato forma parte de la configuración del contrato. Un contrato puede usar la seguridad de transporte, que usa Seguridad de la capa de transporte (TLS) o Capa de sockets seguros (SSL) (https).  
   

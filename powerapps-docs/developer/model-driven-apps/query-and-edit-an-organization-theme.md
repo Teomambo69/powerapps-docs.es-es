@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753600"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>Consultar y editar un tema de organización
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
 
 Puede definir y aplicar temas visuales a una organización. Esto proporciona una forma compatible de aplicar el logotipo y las opciones de color de una organización a la aplicación. Puede crear un tema personalizado para su aplicación realizando cambios en los colores predeterminados y los elementos visuales proporcionados en el sistema de aplicaciones orientadas a modelos. Por ejemplo, puede crear su marca de producto personal, agregar un logotipo de compañía y proporcionar colores específicos de la entidad. Los colores de tema se aplican globalmente en toda la aplicación, con la excepción de algunas áreas heredadas.  
   
@@ -26,7 +32,7 @@ Puede definir y aplicar temas visuales a una organización. Esto proporciona una
   
  La personalización del tema se admite en esta versión solo para la aplicación web. Los cambios realizados en el tema de una organización no están incluidos en soluciones exportadas desde la organización. Puede definir varios temas, pero solo puede establecer y publicar uno como tema predeterminado.  
   
- Vídeo: [Temas](http://go.microsoft.com/fwlink/p/?LinkId=529568)  
+ Vídeo: [Temas](https://go.microsoft.com/fwlink/p/?LinkId=529568)  
   
 <a name="BKMK_QueryTheme"></a>
 

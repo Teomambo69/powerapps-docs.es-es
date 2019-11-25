@@ -9,24 +9,30 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759796"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Inicio rápido para usar un entorno existente para validar la antigua aplicación de cliente web heredada con la interfaz unificada
 Este tema de inicio rápido muestra cómo usar un entorno existente para crear una aplicación de interfaz unificada basada en la configuración actual o la configuración predeterminada. Esto le permite explorar y comprobar la interfaz unificada mientras ejecuta aplicaciones de cliente web heredadas existentes paralelamente. Un usuario a continuación puede cambiar entre entornos para obtener una vista lado a lado. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JzyI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JzyI]
 
 Para obtener instrucciones similares que le muestran cómo crear un nuevo entorno de espacio aislado para aislar la prueba y ver sólo la experiencia de la interfaz unificada, consulte [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 a la interfaz unificada](transition-web-app.md).
 
@@ -40,7 +46,7 @@ Para obtener instrucciones similares que le muestran cómo crear un nuevo entorn
 ## <a name="overview"></a>Información general 
 Este tema es para clientes existentes que usan aplicaciones de cliente web heredadas que necesitan planear y ejecutar la transición a la interfaz unificada. Para configurar un entorno paralelo, cree una nueva aplicación basada en la solución predeterminada tal como se encuentra hoy. Esto se puede hacer en el entorno actual de espacio aislado de desarrollo sin que se vea afectado el trabajo existente.
 
-Después de completar los pasos de este artículo, los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (http://home.dynamics.com).
+Después de completar los pasos de este artículo, los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (https://home.dynamics.com).
 
 ![Lista de aplicaciones](media/app-list.png)
 
@@ -90,12 +96,12 @@ En este paso creará una nueva aplicación que aproveche las personalizaciones e
 Una nueva ventana se abre en el explorador con la nueva aplicación basada en modelo que contiene todas las entidades, mapa de sitio y personalizaciones de mapa del sitio que estaban en su aplicación predeterminada de Dynamics 365.  
 
 > [!div class="mx-imgBorder"] 
-> ![Nueva aplicación de interfaz unificada](media/new-unified-interface-app.png "Nueva aplicación de interfaz unificada")
+> ![Nueva aplicación de la interfaz unificada](media/new-unified-interface-app.png "Nueva aplicación de la interfaz unificada")
 
 Recuerde que cuando vuelva a la pestaña del explorador con el área **Soluciones** del portal del creador de PowerApps, la nueva aplicación basada en modelo y una extensión de cliente del mapa del sitio con nombre similar forman parte de la solución que ha creado.  
 
 > [!div class="mx-imgBorder"] 
-> ![Activos de la solución](media/solution-assets.png "Activos de la solución")
+> ![Activos de solución](media/solution-assets.png "Activos de solución")
 
 En este paso ha creado una nueva aplicación basada en modelo en una solución, que puede importar en sus entornos de prueba o de evaluación. Puede comenzar ahora a experimentar la nueva aplicación, pero antes de ello, en el siguiente paso configurará un par de ajustes para la nueva aplicación. Si hace esto podrá compartirla con otros usuarios.
 
@@ -124,13 +130,13 @@ Las tareas necesarias para configurar las propiedades de la aplicación basada e
 5. Opcionalmente, en el panel **Administrar roles** puede expandir el **Sufijo de la URL de aplicación** para personalizar la dirección URL descriptiva para la aplicación basada en modelo. Tenga en cuenta que puede especificar casi todo. Por ejemplo, escriba *nuevo* para que la vista previa muestre la dirección URL *https://YourEnvironment.crm.dynamics.com/apps/new*.   
 
    > [!div class="mx-imgBorder"] 
-   > ![Sufijo de dirección URL de la aplicación](media/app-url-suffix.png "Sufijo de dirección URL de la aplicación")
+   > ![Sufijo de la URL de aplicación](media/app-url-suffix.png "Sufijo de la URL de aplicación")
 
    Esta se convierte en la dirección URL descriptiva para usar y compartir para que los usuarios puedan iniciar directamente en la experiencia de la interfaz unificada. Los usuarios pueden marcar como favorito este vínculo para su comodidad. 
 
 6. Seleccione **Guardar**. 
 
-Ahora los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (http://home.dynamics.com). 
+Ahora los usuarios con el rol adecuado pueden ver la nueva aplicación en la lista de aplicaciones desplegable de Dynamics 365 o en la página principal de Dynamics 365 (https://home.dynamics.com). 
   
    ![Lista de aplicaciones](media/app-list.png "Lista de aplicaciones")
 

@@ -1,33 +1,39 @@
 ---
 title: Campos de numeración automática en Common Data Service | MicrosoftDocs
-description: 'Comprender cómo crear, administrar y usar campos de numeración automática'
+description: Comprender cómo crear, administrar y usar campos de numeración automática
 keywords: ''
 ms.date: 02/26/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: daemelia
-ms.assetid: null
+ms.assetid: ''
 ms.author: daemelia
 manager: kvivek
 ms.reviewer: Mattp123
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758409"
 ---
 # <a name="autonumber-fields"></a>Campos de numeración automática
 
 Los campos de numeración automática son campos que generan automáticamente cadenas alfanuméricas cuando se crean. Los fabricantes pueden personalizar el formato de estos campos según sus preferencias y, a continuación dejar que el sistema genere valores coincidentes que los completan automáticamente en tiempo de ejecución.
 
-Si bien los campos de numeración automática son formalmente solo campos de texto con funcionalidad adicional agregada sobre ellos, [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) simplifica este concepto exponiendo simplemente **Numeración automática** como tipo de datos distinto en la categoría **Texto**. Cabe dejar constancia de que el [explorador de soluciones clásico](use-solution-explorer.md#classic-solution-explorer) no admite la creación o administración de campos de numeración automática.
+Si bien los campos de numeración automática son formalmente solo campos de texto con funcionalidad adicional agregada sobre ellos, [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) simplifica este concepto exponiendo simplemente **Numeración automática** como tipo de datos distinto en la categoría **Texto**. Cabe dejar constancia de que el [explorador de soluciones clásico](use-solution-explorer.md#classic-solution-explorer) no admite la creación o administración de campos de numeración automática.
 
 Para crear un campo de numeración automática, siga los mismos pasos para [crear un campo](create-edit-field-portal.md#create-a-field) y simplemente seleccione **Numeración automática** en el cuadro de lista desplegable **Tipo de datos**. 
 
@@ -64,7 +70,7 @@ El valor de inicialización de un campo de numeración automática es el número
 
 ## <a name="create-an-autonumber-field"></a>Crear un campo de numeración automática
   
-1.  Inicie sesión en el [PowerAppsportal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en el [PowerAppsportal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
   
 2.  En el panel izquierdo, expanda **Datos**, y seleccione **Entidades**.
   
@@ -75,7 +81,7 @@ El valor de inicialización de un campo de numeración automática es el número
 5.  En el panel derecho, escriba un **Nombre para mostrar** y seleccione **Numeración automática** para **Tipo de datos**.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-autonumber-field.png "Crear un campo de numeración automática")
+    > ![](media/create-autonumber-field.png "Create an autonumber field")
   
 6. Establezca los campos opcionales según sea necesario. Más información: [Crear y editar campos](create-edit-field-portal.md#create-a-field)
 

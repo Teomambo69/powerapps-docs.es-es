@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42882b630cfe34cc17e310b32c9c072f0c2d5d8a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758476"
 ---
-
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>Directrices acerca de cómo trabajar con aplicaciones de lienzo incrustadas
 En este tema se proporcionan directrices acerca de cómo trabajar con aplicaciones del lienzo incrustadas así como sugerencias útiles para solucionar los problemas que puede encontrar.
 
@@ -34,7 +39,7 @@ En este tema se proporcionan directrices acerca de cómo trabajar con aplicacion
 -   Cuando agrega una aplicación de lienzo incrustada a un formulario basado en modelos, use siempre un campo obligatorio que tiene garantizado siempre un valor. Si el campo no tiene un valor su aplicación incrustada de lienzo no se actualizará como respuesta a cualquier cambio en los datos del formulario controlado por modelos de host.
 -   Publicar un formulario controlado por modelos tampoco publica la aplicación de lienzo incrustada.
      - Las aplicaciones incrustadas de lienzo tiene que publicarse independientemente del formulario controlado por modelos del host. Más información: [Publicación una aplicación](../canvas-apps/save-publish-app.md#publish-an-app).
--   Si abre PowerApps Studio para crear o editar una aplicación incrustada de lienzo mediante el botón **Personalizar** en las propiedades del control de aplicaciones de la lona está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de web.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
+-   Si abre PowerApps Studio para crear o editar una aplicación incrustada de lienzo mediante el botón **Personalizar** en las propiedades del control de aplicaciones de la lona está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de make.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
 -   Las aplicaciones incrustadas de lienzo no se muestran al crear un nuevo registro ya que necesitan que se les pase un contexto de registro.
 -   El objeto de ModelDrivenFormIntegration.Item es de solo lectura. 
      - Para devolver datos por escrito debe usar el conector Common Data Service. Más información: [Common Data Service](/connectors/commondataservice/)

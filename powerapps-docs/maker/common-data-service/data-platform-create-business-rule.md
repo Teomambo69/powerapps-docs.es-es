@@ -1,5 +1,5 @@
 ---
-title: Crear una regla de negocio en Common Data Service | Microsoft Docs
+title: Creación de reglas de negocio en Common Data Service | Microsoft Docs
 description: Instrucciones paso a paso para ver cómo crear una regla de negocio en Common Data Service.
 author: lancedMicrosoft
 manager: kfile
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754759"
 ---
-
 # <a name="create-a-business-rule-for-an-entity"></a>Crear una regla de negocio para una entidad
 
 Puede crear reglas de negocio y recomendaciones para aplicar lógica y validaciones sin escribir código ni crear complementos. Las reglas de negocio proporcionan una interfaz básica para implementar y mantener reglas de rápida evolución y de uso general.
@@ -44,9 +49,9 @@ Las aplicaciones controladas por modelos pueden usar todas las acciones disponib
 ## <a name="prerequisites"></a>Requisitos previos
 Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-environments.md) en el que pueda crear y editar entidades.
 
-## <a name="create-a-business-rule"></a>Crear una regla de negocio
+## <a name="create-a-business-rule"></a>Creación de una regla de negocio
   
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
 
 2. En la lista que aparece, haga clic o pulse en **Entidades**.
   
@@ -77,13 +82,13 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
   
     1. Arrastre el componente **Condición** de la pestaña **Componentes** hasta un signo más en el diseñador.  
   
-        ![Agregar una condición a una regla de negocio](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Agregar una condición a una regla de negocio")  
+        ![Agregar una condición en una regla de negocio](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Agregar una condición en una regla de negocio")  
   
     2. Para establecer propiedades para la condición, haga clic en el componente **Condición** en la ventana del diseñador y, a continuación establezca las propiedades en la pestaña **Propiedades** a la derecha de la pantalla. A medida establezca propiedades, Common Data Service crea una expresión en la parte inferior de la pestaña **Propiedades**.  
   
     3. Para agregar una cláusula adicional (AND u OR) a la condición, haga clic en **Nuevo** en la pestaña **Propiedades** para crear una nueva regla y, a continuación establezca las propiedades para dicha regla. En el campo **Lógica de la regla** puede especificar si agrega la nueva regla como AND u OR.  
   
-        ![Agregar una regla nueva a una condición](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Agregar una regla nueva a una condición")  
+        ![Agregar una nueva regla a una condición](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Agregar una nueva regla a una condición")  
   
     4. Cuando termine de establecer propiedades para la condición, haga clic en **Aplicar**.  
   
@@ -120,7 +125,7 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
     >   
     > - Para realizar una instantánea de todo en la ventana Reglas de negocio, haga clic en **Instantánea** en la barra de acciones. Esto es útil, por ejemplo, si desea compartir y obtener comentarios en la regla de negocio de un miembro del equipo.  
     > - Use el minimapa para navegar rápidamente a distintas partes del proceso. Esto es útil cuando tiene un proceso complicado que se desplaza fuera de la pantalla.  
-    > - A medida que agregue condiciones, acciones y recomendaciones de negocio a la regla de negocio, Common Data Service crea el código para la regla de negocio en la parte inferior de la ventana del diseñador. Este código es de solo lectura.  
+    > - A medida que agregue condiciones, acciones, y recomendaciones de negocio a la regla de negocio, Common Data Service crea el código para la regla de negocio en la parte inferior de la ventana del diseñador. Este código es de solo lectura.  
   
 ## <a name="localize-error-messages-used-in-business-rules"></a>Buscar los mensajes de error que se usan en reglas de negocio  
  Si tiene más de un idioma aprovisionado para su organización, deseará localizar los mensajes de error que haya configurado. Cada vez que se establece un mensaje, el sistema genera la etiqueta. Si exporta las traducciones de su organización, puede agregar versiones localizadas de sus mensajes y luego importar las etiquetas nuevamente en Common Data Service, de modo que los usuarios que utilicen otros idiomas distintos del idioma base puedan ver los mensajes traducidos.  

@@ -1,5 +1,5 @@
 ---
-title: 'Crear, exportar, o importar una solución no administrada (Common Data Service) | Microsoft Docs'
+title: Crear, exportar o importar una solución no administrada (Common Data Service) | Microsoft Docs
 description: Una solución no administrada es útil como método para agrupar un conjunto de personalizaciones no administradas en un conjunto que se puede transportar entre las organizaciones
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8a525320894a280bb8a092892180879f3bf626ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749721"
 ---
 # <a name="create-export-or-import-an-unmanaged-solution"></a>Crear, exportar o importar una solución no administrada
 
@@ -32,7 +38,7 @@ Además de ser un requisito previo para crear una solución administrada, una so
 |      Etiqueta de campo       |                                                                                                                                                              Descripción                                                                                                                                                               |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    **Nombre para mostrar**    |                                                                                                                                                       El nombre de la solución.                                                                                                                                                       |
-|        **Nombre**        |                                     Common Data Service genera un nombre único basado en el **Nombre**. Puede editar el nombre exclusivo. El nombre exclusivo solo puede contener caracteres alfanuméricos o el carácter de subrayado.                                     |
+|        **Nombre**        |                                     Common Data Service genera un nombre exclusivo basado en el **Nombre para mostrar**. Puede editar el nombre exclusivo. El nombre exclusivo solo puede contener caracteres alfanuméricos o el carácter de subrayado.                                     |
 |     **Editor**      |                                                                                                                                Use la búsqueda **Editor** para asociar la solución con un editor.                                                                                                                                |
 |      **Versión**       |                                                                                                                     Especifique una versión con el siguiente formato: principal.secundaria.compilación.revisión (por ejemplo, 1.0.0.0).                                                                                                                     |
 | **Página de configuración** | Si incluye un recurso web HTML en la solución, puede usar esta búsqueda para agregarlo como su página de configuración designada.<br /><br /> Más información: [Use la página de configuración de la solución](create-export-import-unmanaged-solution.md#BKMK_UseSolutionConfigurationPage) |
@@ -49,7 +55,7 @@ Además de ser un requisito previo para crear una solución administrada, una so
 |          Etiqueta          |                                                                                                                                                                                                       Descripción                                                                                                                                                                                                        |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    **Nombre para mostrar**     |                                                                                                                                                                       El nombre que se mostrará en el campo de búsqueda **Editor** de la solución.                                                                                                                                                                        |
-|        **Nombre**         |                               Common Data Service genera un nombre único basado en el **Nombre**. El nombre único solo puede contener caracteres alfanuméricos y el carácter de subrayado. **Nota:**  Puede utilizar el `Unique Name` para identificar de forma exclusiva un `Publisher`. Las soluciones administradas que comparten el mismo editor pueden actualizarse entre ellas.                               |
+|        **Nombre**         |                               Common Data Service genera un nombre exclusivo basado en el **Nombre para mostrar**. El nombre único solo puede contener caracteres alfanuméricos y el carácter de subrayado. **Nota:**  Puede utilizar el `Unique Name` para identificar de forma exclusiva un `Publisher`. Las soluciones administradas que comparten el mismo editor pueden actualizarse entre ellas.                               |
 |     **Descripción**     |                                                                                                                                                                           Use este campo para incluir todos los detalles relevantes sobre la solución.                                                                                                                                                                            |
 |       **Prefijo**        |                   El prefijo de personalización ayuda a identificar qué editor ha agregado un componente de la solución. Por ejemplo, el prefijo se agrega al nombre lógico de cualquier entidad o atributo creado en el contexto de una solución asociada con este editor. El prefijo debe tener entre dos y ocho caracteres, y solo puede contener caracteres alfanuméricos. No puede comenzar por 'mscrm'.                   |
 | **Prefijo de valor de opción** | Esta opción le ayuda a separar opciones que agrega a conjuntos de opciones para admitir la combinación de opciones. Un valor se genera automáticamente en función del texto **Prefijo** para hacerlo más exclusivo. El valor debe estar entre 10.000 y 99.999.<br /><br /> Más información: [Combinación de las opciones del conjunto de opciones](/dynamics365/customer-engagement/developer/understand-managed-solutions-merged#BKMK_MergingOptionSetOptions) |
@@ -59,7 +65,10 @@ Además de ser un requisito previo para crear una solución administrada, una so
 
 <a name="BKMK_UseSolutionConfigurationPage"></a>   
 ### <a name="use-the-solution-configuration-page"></a>Use la página de configuración de la solución  
- La página de configuración de la solución proporciona un lienzo que puede usar para mostrar información o para permitir a los clientes realizar acciones en el contexto de la solución. Establezca la página de configuración con el campo de búsqueda **Página de configuración** para seleccionar un recurso Web de la página web (HTML) incluido en la solución. Esto hará que un nuevo nodo **Configuración** aparezca en la ventana de la solución debajo del nodo **Información** y sobre el nodo **Componentes**. El nodo **Configuración** mostrará el recurso web que establezca.  
+ La página de configuración de la solución proporciona un lienzo que puede usar para mostrar información o para permitir a los clientes realizar acciones en el contexto de la solución. Establezca la página de configuración con el campo de búsqueda **Página de configuración** para seleccionar un recurso Web de la página web (HTML) incluido en la solución. Esto hará que un nuevo nodo **Configuración** aparezca en la ventana de la solución debajo del nodo **Información** y sobre el nodo **Componentes**. El nodo **Configuración** mostrará el recurso web que establezca.
+ 
+ > [!NOTE]
+>  Actualmente solo se puede acceder a la página de configuración de soluciones en modo clásico.
 
  Puede usar la página de configuración de la solución para mostrar los controles que configurarán la solución. Por ejemplo, puede ofrecer algunas entidades en la solución que controlen su comportamiento. Con la API web para acceder a los datos, puede ofrecer controles personalizados en la página de recursos web para actualizar datos en estas entidades.  
 
@@ -105,7 +114,7 @@ Además de ser un requisito previo para crear una solución administrada, una so
 
 <a name="BKMK_MaxSizeOfSolution"></a>   
 ### <a name="maximum-size-of-solution-to-import"></a>Tamaño máximo de la solución que se va a importar  
- Para Common Data Service el tamaño máximo de una solución es 29.296 MB.  
+ Para Common Data Service el tamaño máximo de una solución es 29,296 MB.  
 
  Para organizaciones locales, el tamaño máximo predeterminado para una solución es 6 MB, pero esto se puede aumentar según sea necesario.  
 

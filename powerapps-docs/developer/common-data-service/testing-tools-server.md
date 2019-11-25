@@ -1,19 +1,25 @@
 ---
-title: Herramientas de prueba para desarrollo del lado del servidor (Common Data Service) | Microsoft Docs
+title: Herramientas de pruebas para desarrollo del lado del servidor (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre los marcos de prueba para desarrollo del lado del servidor.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9f4aedc7bc54dcf8d18ab3f9fb0aa1ae21d02b89
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749786"
 ---
 # <a name="testing-tools-for-server-side-development"></a>Herramientas de pruebas para el desarrollo de servidor
 

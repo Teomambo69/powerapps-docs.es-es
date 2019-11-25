@@ -7,18 +7,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6df7cccb-071d-4853-8acb-01bceef973ca
 caps.latest.revision: 22
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 573f07f76c9e2d8eb77da5b72d93510a438c2b15
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753664"
 ---
 # <a name="web-api-query-data-sample-client-side-javascript"></a>Ejemplo de datos de consulta de la API web (JavaScript del lado del cliente)
 
@@ -41,7 +47,7 @@ Este ejemplo muestra cómo realizar solicitudes de consultas básicas mediante l
 
 ## <a name="run-this-sample"></a>Ejecute este ejemplo
 
-Para ejecutar este ejemplo, vaya a [Ejemplo de datos de consulta Microsoft CRM API web (JavaScript del lado cliente)](http://go.microsoft.com/fwlink/p/?LinkId=824050) y descargue el archivo de ejemplo: Ejemplo de datos de consulta Microsoft CRM de la API web (JavaScript del lado cliente).zip. Extraiga el contenido del archivo de ejemplo y busque el archivo de la solución administrada WebAPIQueryData_1_0_0_0_managed.zip. Importe la solución administrada en la organización Common Data Service y ejecute el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
+Para ejecutar este ejemplo, vaya a [Ejemplo de datos de consulta Microsoft CRM API web (JavaScript del lado cliente)](https://go.microsoft.com/fwlink/p/?LinkId=824050) y descargue el archivo de ejemplo: Ejemplo de datos de consulta Microsoft CRM de la API web (JavaScript del lado cliente).zip. Extraiga el contenido del archivo de ejemplo y busque el archivo de la solución administrada WebAPIQueryData_1_0_0_0_managed.zip. Importe la solución administrada en la organización Common Data Service y ejecute el ejemplo. Para obtener instrucciones sobre cómo importar la solución de ejemplo, consulte [ejemplos de API Web (JavaScript del lado cliente)](../web-api-samples-client-side-javascript.md).  
   
 <a name="bkmk_codeSample"></a>
 

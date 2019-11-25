@@ -1,5 +1,5 @@
 ---
-title: 'Crear, editar o configurar formularios usando el diseñador de formularios controlado por modelos | MicrosoftDocs'
+title: Crear, editar o configurar formularios usando el diseñador de formularios controlado por modelos | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752518"
 ---
-
 # <a name="create-edit-or-configure-forms-using-the-form-designer"></a>Crear, editar o configurar formularios usando el diseñador de formularios 
 Use el nuevo diseñador de formularios para crear, editar o configurar formularios para aplicaciones controladas por formularios. 
 
@@ -30,7 +35,7 @@ Use el nuevo diseñador de formularios para crear, editar o configurar formulari
 > El nuevo diseñador de formularios controlado por modelos actualmente no permite editar los formularios de tarjeta. Más información: [Tipos de formularios](types-forms.md)
 
 ## <a name="create-a-form"></a>Crear un formulario 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. En el panel de navegación izquierdo, expanda **Datos**, y seleccione **Entidades**. 
 3. Seleccione una endidad como la entidad de contable y luego seleccione la pestaña **Formularios**. 
 4. Seleccione **Agregar formulario** y, a continuación, seleccione una de las opciones siguientes
@@ -41,7 +46,7 @@ Use el nuevo diseñador de formularios para crear, editar o configurar formulari
 5. Cuando termine de realizar cambios en el formulario, seleccione **Guardar** para guardar el formulario, o seleccione **Publicar** si desea guardar y hacer que los cambios sean visibles para los usuarios de la aplicación.  
 
 ## <a name="edit-a-form"></a>Editar un formulario 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. En el panel de navegación izquierdo, expanda **Datos**, y seleccione **Entidades**. 
 3. Seleccione una endidad como la entidad de contable y luego seleccione la pestaña **Formularios**.
 4. Seleccione el nombre del formulario que desea editar.  

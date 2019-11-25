@@ -1,5 +1,5 @@
 ---
-title: Recuperar y eliminar el historial de los cambios de datos auditados (Common Data Service) | Microsoft Docs
+title: Recuperar y eliminar el historial de cambios de datos auditados (Common Data Service) | Microsoft Docs
 description: Recuperar mediante programación el historial de cambios de auditoría o eliminar registros de auditoría.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ca55c34eeab5d2ca0839669c48b6c0a1b5b1b3a7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749806"
 ---
 # <a name="retrieve-and-delete-the-history-of-audited-data-changes"></a>Recuperar y eliminar el historial de cambios de datos auditados
 
@@ -31,11 +37,11 @@ Consulte el vínculo de ejemplo al final de este tema para el código de ejemplo
 
 ## <a name="delete-the-change-history-for-a-date-range"></a>Eliminar el historial de cambios para un intervalo de fechas
 
- Puede eliminar registros de `audit` para un intervalo de fechas mediante el uso de la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>. Los registros de datos de auditoría se eliminan de forma secuencial, del más antiguo al más nuevo. La funcionalidad de esta solicitud es un poco diferente en función de la edición de Microsoft SQL Server que usa su servidor de Common Data Service. Common Data Service usa una Enterprise Edition de SQL Server.
+ Puede eliminar registros de `audit` para un intervalo de fechas mediante el uso de la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>. Los registros de datos de auditoría se eliminan de forma secuencial, del más antiguo al más nuevo. La funcionalidad de esta solicitud es un poco diferente en función de la edición de Microsoft SQL Server que usa su servidor de Common Data Service. Common Data Service usa una edición Enterprise edition de SQL Server.
 
- Si el servidor de Common Data Service usa la edición estándar de SQL Server que no admite la función de partición de la base de datos, la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> elimina todos los registros de auditoría creados hasta la fecha de finalización especificada en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate>.
+ Si el servidor de Common Data Service usa la edición estándar de SQL Server, que no admite la función de partición de la base de datos, la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> elimina todos los registros de auditoría creados hasta la fecha de finalización especificada en la propiedad <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate>.
 
- Si el servidor de Common Data Service usa una edición Enterprise de SQL Server que admite la partición, la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> eliminará todos los datos de auditoría en las particiones donde la fecha de finalización es anterior a la fecha especificada en la propiedad de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate>. Ninguna de las particiones vacías puede eliminarse. Sin embargo, ni la partición actual (activa) ni los registros de `audit` en esa partición activa pueden eliminarse mediante esta solicitud o cualquier otra solicitud.
+ Si el servidor de Common Data Service usa una edición Enterprise edition de SQL Server que admite la partición, la solicitud de <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> eliminará todos los datos de auditoría en las particiones donde la fecha de finalización es anterior a la fecha especificada en la propiedad <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate>. Ninguna de las particiones vacías puede eliminarse. Sin embargo, ni la partición actual (activa) ni los registros de `audit` en esa partición activa pueden eliminarse mediante esta solicitud o cualquier otra solicitud.
 
  La plataforma de Common Data Service automáticamente crea nuevas particiones trimestralmente cada año. Esta funcionalidad no es configurable y no se puede cambiar. Puede obtener una lista de particiones mediante el uso de la solicitud de <xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest> . Si la fecha de finalización de cualquier partición es posterior a la fecha actual, no podrá eliminar esa partición o los registros de `audit` que contenga.  
 

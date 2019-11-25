@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 563c773bd2bec365a3459097e4c4e8428d624c00
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755287"
 ---
 # <a name="query-and-visualize-hierarchically-related-data"></a>Consultar y visualizar datos relacionados jerárquicamente
 
@@ -56,7 +62,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
  Para consultar los datos como jerarquía, debe habilitar como jerárquica una de las relaciones que hacen referencia a sí mismas de uno a varios o de varios a uno de la entidad. Para activar la jerarquía:  
   
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
 2. Haga clic o pulse en una entidad existente o [Cree una nueva entidad](data-platform-create-entity.md)
 
@@ -80,7 +86,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
  Si selecciona el icono de jerarquía, puede ver la jerarquía, con la vista de árbol a la izquierda y la vista de mosaico a la derecha, como se indica a continuación:  
   
 > [!div class="mx-imgBorder"] 
-> ![Árbol de cuentas y vista de ventanas](media/hierachy-security-accounts-tile-view.png "Árbol de cuentas y vista de ventanas")  
+> ![Árbol de cuenta y vista de ventanas](media/hierachy-security-accounts-tile-view.png "Árbol de cuenta y vista de ventanas")  
   
  Algunas otras entidades del sistema predefinidas se pueden habilitar para una jerarquía. Estas entidades incluyen `Case`, `Contact`, `Opportunity`, `Order`, `Quote`, `Campaign`, y `Team`. Todas las entidades personalizadas pueden habilitarse para una jerarquía.  
   
@@ -100,7 +106,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
  Miremos un ejemplo de crear la visualización para una entidad personalizada. Hemos creado una entidad personalizada llamada new_Widget, hemos creado una relación que hace referencia a sí misma y marcado como jerárquica, como se indica aquí.  
  
 > [!div class="mx-imgBorder"] 
-> ![Definición de relación del widget](media/widget-relationship-definition.png "Definición de relación del widget")  
+> ![Definición de relación de widget](media/widget-relationship-definition.png "Definición de relación de widget")  
    
  A continuación, en la vista de cuadrícula **Configuración de la jerarquía** seleccionamos la relación jerárquica **Widget_new_Widget_new_Widget**. En el formulario, completamos los atributos requeridos. Si aún no ha marcado la relación como jerárquica, el vínculo del formulario le devolverá al editor de entidades clásico, donde también puede marcar la relación como jerárquica.  
   
@@ -109,7 +115,7 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
 > [!div class="mx-imgBorder"] 
 > ![Crear formulario rápido para widget](media/create-quickf-orm.png "Crear formulario rápido para widget")  
   
- Después de que completáramos la configuración, creamos dos registros: Widget estándar y Widget premium. Después de convertir el Widget premium en un elemento principal del Widget estándar mediante el campo de búsqueda, la vista de cuadrícula de new_Widget mostró los iconos de la jerarquía, como se indica a continuación:  
+ Después de completar la configuración, creamos dos registros: Widget estándar y Widget premium. Después de convertir el Widget premium en un elemento principal del Widget estándar mediante el campo de búsqueda, la vista de cuadrícula de new_Widget mostró los iconos de la jerarquía, como se indica a continuación:  
   
 > [!div class="mx-imgBorder"] 
 > ![Cuadrícula de la jerarquía del widget](media/widget-hierarchy-grid.png "Cuadrícula de la jerarquía del widget")  
@@ -120,8 +126,8 @@ Para algunas entidades, como cuenta y usuario, las visualizaciones se suministra
  Si elige el icono de jerarquía, se mostrará la jerarquía new_Widget, con la vista de árbol a la izquierda y la vista de mosaico a la derecha, mostrando dos registros. Cada ventana contiene cuatro campos que proporcionamos en el **Formulario de ventana de jerarquía del widget**.  
  
  > [!div class="mx-imgBorder"] 
- > ![Vistas de ventanas y árbol del widget](media/widget-tree-tiles.png "Vistas de ventanas y árbol del widget")  
+ > ![Vistas de mosaicos y árbol del widget](media/widget-tree-tiles.png "Vistas de mosaicos y árbol del widget")  
   
 ## <a name="see-also"></a>Vea también  
- [Vídeo: Modelos de seguridad jerárquica](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
- [Vídeo: Visualización de la jerarquía](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+ [Vídeo: Modelos de seguridad jerárquica](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
+ [Vídeo: Visualización de la jerarquía](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

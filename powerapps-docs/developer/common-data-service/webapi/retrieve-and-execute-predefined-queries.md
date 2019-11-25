@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e805a4919bcdfa8b61c097dc09455f7ca5783999
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753684"
 ---
-
 # <a name="retrieve-and-execute-predefined-queries"></a>Recuperar y ejecutar consultas predefinidas
 
 Common Data Service proporciona una forma de que los administradores creen vistas del sistema que están disponibles para todos los usuarios. Los usuarios individuales pueden guardar consultas de búsqueda avanzada para su reutilización en la aplicación. Ambas representan consultas predefinidas que puede recuperar y ejecutar utilizando la API web. También puede redactar una consulta utilizando FetchXml y usarla para recuperar datos.
@@ -86,7 +91,7 @@ El valor codificado de dirección URL de este FetchXML es como se indica a conti
 %3Cfetch%20mapping='logical'%3E%3Centity%20name='account'%3E%3Cattribute%20name='accountid'/%3E%3Cattribute%20name='name'/%3E%3C/entity%3E%3C/fetch%3E
 ```
 
-La mayoría de los lenguaje de programación incluyen una función para codificar como dirección URL una cadena. Por ejemplo, en JavaScript se usa la función [encodeURI](http://www.ecma-international.org/ecma-262/5.1/). Debe codificar como dirección URL cualquier solicitud que envíe a cualquier servicio web RESTful. Si pega una dirección URL en la barra de direcciones del explorador debe codificar como dirección URL la dirección automáticamente. El siguiente ejemplo muestra una solicitud GET mediante el FetchXML indicado anteriormente con la ruta del conjunto de entidades para cuentas.
+La mayoría de los lenguaje de programación incluyen una función para codificar como dirección URL una cadena. Por ejemplo, en JavaScript se usa la función [encodeURI](https://www.ecma-international.org/ecma-262/5.1/). Debe codificar como dirección URL cualquier solicitud que envíe a cualquier servicio web RESTful. Si pega una dirección URL en la barra de direcciones del explorador debe codificar como dirección URL la dirección automáticamente. El siguiente ejemplo muestra una solicitud GET mediante el FetchXML indicado anteriormente con la ruta del conjunto de entidades para cuentas.
 
 **Solicitud**
 

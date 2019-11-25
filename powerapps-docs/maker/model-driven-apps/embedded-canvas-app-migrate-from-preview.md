@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e53f4b1cfd01225285fb50626aa9ace3b804d9c2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756940"
 ---
-
 # <a name="migrate-embedded-canvas-apps-on-model-driven-forms-created-using-the-public-preview-release"></a>Migrar aplicaciones de lienzo insertadas en formularios basados en modelos creados mediante la versión de vista previa pública
 > [!IMPORTANT]
 > Con la versión más reciente, las aplicaciones de lienzo incrustadas en formularios basados en modelos están disponibles en general. Las aplicaciones de lienzo incrustadas en formularios basados en modelos mediante la versión de vista previa pública deben migrarse a nuevas aplicaciones incrustadas creadas mediante la última versión.
@@ -30,7 +35,7 @@ search.app:
 
 Para migrar aplicaciones de lienzo incrustadas en formularios basados en modelos mediante la versión de vista previa pública a la más reciente, los creadores primero deben crear una nueva aplicación de lienzo incrustada creada mediante la última versión. A continuación los creadores pueden copiar los controles desde la aplicación de lienzo incrustada existente a la nueva, agregar orígenes de datos requeridos y actualizar referencias rotas si las hay. A continuación se proporcionan los pasos detallados.
 
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Abra la aplicación de lienzo incrustada creada con la versión de vista previa pública para editar en PowerApps Studio. Para obtener pasos sobre cómo editar una aplicación de lienzo consulte: [Editar una aplicación de lienzo](../canvas-apps/edit-app.md).
 3. En una nueva pestaña del explorador, siga los pasos para [agregar una nueva aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md).
 4. Copie los controles de la aplicación de lienzo incrustada creada con la versión de vista previa pública a la nueva aplicación de lienzo incrustada, una sola pantalla cada vez mediante los pasos indicados a continuación.

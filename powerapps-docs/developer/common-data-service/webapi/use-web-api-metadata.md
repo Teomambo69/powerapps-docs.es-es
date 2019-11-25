@@ -7,14 +7,20 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5c51d0914b1f198e880dcbeb451a49592fd9240b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749749"
 ---
 # <a name="use-the-web-api-with-metadata"></a>Usar la API web con metadatos
 
@@ -25,10 +31,10 @@ Puede realizar cualquier operación de metadatos con la API web que puede realiz
   
 |Ruta del conjunto de entidades|Descripción|  
 |---------------------|-----------------|  
-|*[URI de organización]*/api/data/v9.0/EntityDefinitions|Contiene entidades <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" />.|  
-|*[URI de organizacón]*/api/data/v9.0/RelationshipDefinitions|Contiene <xref href="Microsoft.Dynamics.CRM.ManyToManyRelationshipMetadata?text=ManyToManyRelationshipMetadata EntityType" /> y <xref href="Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata?text=OneToManyRelationshipMetadata EntityType" /> ya que ambas se heredan de <xref href="Microsoft.Dynamics.CRM.RelationshipMetadataBase?text=RelationshipMetadataBase EntityType" />.|  
-|*[URI de organización]*/api/data/v9.0/GlobalOptionSetDefinitions|Contiene entidades <xref href="Microsoft.Dynamics.CRM.BooleanOptionSetMetadata?text=BooleanOptionSetMetadata EntityType" /> y <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" /> definidas globalmente ya que ambas se heredan de <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" />.|  
-|*[URI de organización]*/api/data/v9.0/ManagedPropertyDefinitions|Solo para uso interno|  
+|*[URI de la organización]*/api/data/v9.0/EntityDefinitions|Contiene entidades <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" />.|  
+|*[URI de la organización]*/api/data/v9.0/RelationshipDefinitions|Contiene <xref href="Microsoft.Dynamics.CRM.ManyToManyRelationshipMetadata?text=ManyToManyRelationshipMetadata EntityType" /> y <xref href="Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata?text=OneToManyRelationshipMetadata EntityType" /> ya que ambas se heredan de <xref href="Microsoft.Dynamics.CRM.RelationshipMetadataBase?text=RelationshipMetadataBase EntityType" />.|  
+|*[URI de la organización]*/api/data/v9.0/GlobalOptionSetDefinitions|Contiene entidades <xref href="Microsoft.Dynamics.CRM.BooleanOptionSetMetadata?text=BooleanOptionSetMetadata EntityType" /> y <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" /> definidas globalmente ya que ambas se heredan de <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" />.|  
+|*[URI de la organización]*/api/data/v9.0/ManagedPropertyDefinitions|Solo para uso interno|  
   
 Cada tipo de entidad de metadatos usa `MetadataId` como propiedad de identificador único, que se hereda del <xref href="Microsoft.Dynamics.CRM.MetadataBase?text=MetadataBase EntityType" />. Mientras todas las entidades de metadatos tienen una `MetadataId`, no se puede consultar todas ellas directamente. Por ejemplo, puede consultar y realizar operaciones en atributos solo en el contexto de la entidad `EntityMetadata` que los contiene.  
   

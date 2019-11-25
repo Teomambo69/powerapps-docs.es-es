@@ -1,6 +1,6 @@
 ---
 title: Ejecutar detección de duplicados (Common Data Service) | Microsoft Docs
-description: 'Ejecute la detección de duplicados para un registro específico, un tipo de entidad o en las operaciones de creación o actualización.'
+description: Ejecute la detección de duplicados para un registro específico, un tipo de entidad o en las operaciones de creación o actualización.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: df4f10fe4bff9ea32fa6d66f0f3a6ca8ac5350bf
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749804"
 ---
 # <a name="run-duplicate-detection"></a>Ejecutar detección de duplicados
 

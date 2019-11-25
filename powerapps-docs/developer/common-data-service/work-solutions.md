@@ -4,21 +4,24 @@ description: ''
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 33c9da5b-27dd-d82d-1eb1-7b3b69b6032b
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6a99ee0bbc5487575d56b571442db5e6a6d2f329
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749647"
 ---
-
 # <a name="work-with-solutions"></a>Trabajar con soluciones
 
 Este tema presenta tareas de programación específicas incluidas en [ejemplo: trabajar con soluciones](org-service/samples/work-solutions.md) y [ejemplo: detectar dependencias de la solución](org-service/samples/detect-solution-dependencies.md).  

@@ -1,6 +1,6 @@
 ---
 title: Usar etiquetas de plantilla para un portal | MicrosoftDocs
-description: Más información sobre las etiquetas de plantilla disponibles en el portal
+description: Obtenga información sobre las etiquetas de plantilla disponibles en el portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,64 +11,64 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543288"
+ms.locfileid: "2757068"
 ---
 # <a name="template-tags"></a>Etiquetas de plantilla
 
-Las etiquetas de plantilla controlan la salida de una plantilla de varias maneras y permiten la combinación de varias plantillas en una sola salida.
+Las etiquetas de plantilla controlan el resultado de una plantilla de varias formas, y permiten combinar varias plantillas en una sola.
 
-## <a name="include"></a>inclui
+## <a name="include"></a>include
 
-Incluye el contenido de una plantilla en otro, por nombre. En los portales de PowerApps, el origen de esta otra plantilla será normalmente una [plantilla Web](store-content-web-templates.md). Esto permite la reutilización de fragmentos de plantilla comunes en varios lugares.  
+Incluye el contenido de una plantilla en otra, por nombre. En los portales de PowerApps, el origen de esta otra plantilla será normalmente una [plantilla web](store-content-web-templates.md). Esto permite la reutilización de fragmentos comunes de plantilla en varios lugares.  
 
 Cuando una plantilla se incluye en otra, la plantilla incluida tendrá acceso a las variables definidas en la plantilla primaria.
 
 `{% include 'My Template' %}`
 
-También es posible pasar cualquier número de parámetros con nombre a la etiqueta include. Estos se definirán como variables en la plantilla incluida.
+También es posible pasar cualquier número de parámetros con nombre a la etiqueta include. Estos a continuación se definirán como variables de la plantilla incluida.
 
 `{% include 'My Template' a:x, b:y %}`
 
-## <a name="block"></a>Sin
+## <a name="block"></a>block
 
-Se usa junto con extiende para proporcionar la herencia de la plantilla. Consulte extends for Usage.
+Usado junto con extends para proporcionar herencia de plantilla. Vea extends para uso.
 
-## <a name="extends"></a>llegar
+## <a name="extends"></a>extends
 
-Se usa junto con la etiqueta de bloque, y proporciona herencia de plantillas. Esto permite que varias plantillas usen un diseño compartido, al tiempo que se invalidan áreas específicas del diseño primario.
+Usado junto con la etiqueta block para proporcionar herencia de plantilla. Esto permite que varias plantillas usen un diseño compartido, al tiempo que reemplazan áreas específicas del diseño primario.
 
-En los portales de PowerApps, el nombre de la plantilla principal que se proporciona a la etiqueta normalmente hará referencia al nombre de una [plantilla Web](store-content-web-templates.md).  
+En los portales de PowerApps, el nombre de la plantilla primaria suministrado a la etiqueta normalmente hará referencia al nombre de una [plantilla web](store-content-web-templates.md).  
 
-Cuando se utiliza extends, debe ser el primer contenido de la plantilla y solo puede ir seguido de una o varias etiquetas de bloque.
+Cuando se utiliza extends, debe ser el primer contenido de la plantilla, y solo puede ir seguido de una o más etiquetas block.
 
-Si no se invalida un bloque definido en la plantilla primaria, se representará su contenido en la plantilla primaria (si existe).
+Si un bloque definido en la plantilla principal no se reemplaza, su contenido en la plantilla primaria (si lo hay) se representarán.
 
 ## <a name="comment"></a>comentario
 
-Permite dejar código sin representar dentro de una plantilla Liquid. No se representará ningún contenido del bloque y no se ejecutará ningún código de líquido dentro de.
+Permite dejar código no representado dentro una plantilla de Liquid. No se representará ningún contenido dentro del bloque y no se ejecutará ningún código de Liquid dentro.
 
-**Codifica**
+**Código**
 
 `Hello{% comment %}, {{ user.fullname }}{% endcomment %}. My name is Charles.`
 
-**Genere**
+**Salida**
 
 `Hello. My name is Charles.`
 
-## <a name="raw"></a>Socket
+## <a name="raw"></a>raw
 
-Permite la salida de código líquido en una página sin que se analice y se ejecute.
+Permite el resultado de código de Liquid en una página sin analizarlo ni ejecutarlo.
 
-**Genere**
+**Salida**
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
 ### <a name="see-also"></a>Vea también
 
-[Etiquetas de flujo de control](control-flow-tags.md)<br>
+[Etiquetas del flujo de control](control-flow-tags.md)<br>
 [Etiquetas de iteración](iteration-tags.md)<br>
-[Etiquetas de variables](variable-tags.md)<br>
-[Etiquetas de entidad de Common Data Service de PowerApps](portals-entity-tags.md)
+[Etiquetas variables](variable-tags.md)<br>
+[Etiquetas de entidad de PowerApps common data service](portals-entity-tags.md)

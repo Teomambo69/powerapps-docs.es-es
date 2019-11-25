@@ -8,13 +8,18 @@ ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754979"
 ---
-
-# <a name="create-a-custom-entity"></a>Crear una entidad personalizada
+# <a name="create-a-custom-entity"></a>Creación de una entidad personalizada
 En PowerApps, una *entidad* define la información de la que desea realizar un seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. A continuación puede exponer los datos desarrollando una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar “listas para usar” que cubren los escenarios típicos de una organización (como citas de seguimiento), pero puede haber ocasiones en las que necesite crear entidades personalizadas para almacenar datos que sean específicos de la organización.
 
 En este tema, aprenderá a crear una entidad personalizada llamada Valoración de producto que puede usar para crear una aplicación que muestre calificaciones y comentarios de los productos que vende su compañía.
@@ -23,7 +28,7 @@ En este tema, aprenderá a crear una entidad personalizada llamada Valoración d
 Para seguir este procedimiento, debe tener un rol de seguridad de administrador del sistema o personalizador del sistema en Common Data Service.
 
 ## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
-Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Iniciar sesión en PowerApps en [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-an-entity"></a>Crear una entidad
 1. En el panel de navegación, haga clic o pulse en **Datos** para expandirlo y haga clic o pulse en **Entidades**.
@@ -56,11 +61,11 @@ Inicie sesión en PowerApps en [https://web.powerapps.com](https://web.powerapps
     
     d. Cuando acabe, haga clic en **Crear**.
      
-    ![Nueva entidad](./media/data-platform-cds-create-entity/newentitypanel.png "Nuevo panel de entidad")
+    ![Entidad nueva](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
 
 4. En la página de detalles de la entidad, observe que la entidad ahora se está aprovisionando en segundo plano. Una vez completado el aprovisionamiento, la entidad se guardará y estará disponible para su uso en aplicaciones. Los campos, relaciones, y las claves se pueden agregar a la entidad en cualquier momento (incluso mientras el aprovisionamiento aún está en curso), pero las vistas, formularios, gráficos, paneles, y las reglas de negocio se pueden agregar sólo a la entidad después de completar el aprovisionamiento.
 
-    ![Detalles de entidad](./media/data-platform-cds-create-entity/newentitydetails.png "Detalles de nueva entidad")
+    ![Detalles de entidad](./media/data-platform-cds-create-entity/newentitydetails.png "Nuevos detalles de la entidad")
 
 5. En la pestaña **Campos**, observe el **Campo principal** al que dio nombre en el paso anterior. Haga clic o pulse en el campo **Campo principal** para abrir el panel **Campo principal** si desea realizar personalizaciones adicionales al campo. Tenga en cuenta que **Nombre** ya no se puede cambiar más, ya que la entidad ya se ha guardado.
 

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: a8dc3019-c49e-48e4-a646-8a3a3fecd3a6
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf01185c83e3bfd4f325e4cdfd5b6625e58f7058
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753040"
 ---
-
 # <a name="retrieve-the-list-of-rules"></a>Recuperar la lista de reglas
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -98,7 +103,7 @@ Content-Type: application/json; charset=utf-8
 [
     {
         "description": "Ne pas implémenter d’activités de workflow Microsoft Dynamics CRM 4.0",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm4-wf&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm4-wf&client=PAChecker",
         "include": true,
         "code": "il-avoid-crm4-wf",
         "summary": "Ne pas implémenter d’activités de workflow Microsoft Dynamics CRM 4.0",
@@ -108,7 +113,7 @@ Content-Type: application/json; charset=utf-8
     },
     {
         "description": "Utiliser InvalidPluginExecutionException dans des plug-ins et activités de workflow",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-standard-exception&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-standard-exception&client=PAChecker",
         "include": true,
         "code": "il-use-standard-exception",
         "summary": "Utiliser InvalidPluginExecutionException dans des plug-ins et activités de workflow",
@@ -143,7 +148,7 @@ Content-Type: application/json; charset=utf-8
 [
     {
         "description": "Retrieve specific columns for an entity via query APIs",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker",
         "include": true,
         "code": "il-specify-column",
         "summary": "Retrieve specific columns for an entity via query APIs",
@@ -153,7 +158,7 @@ Content-Type: application/json; charset=utf-8
     },
     {
         "description": "Do not duplicate plug-in step registration",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker",
         "include": true,
         "code": "meta-remove-dup-reg",
         "summary": "Do not duplicate plug-in step registration",
@@ -188,7 +193,7 @@ Content-Type: application/json; charset=utf-8
 [
     {
         "description": "Do not implement Microsoft Dynamics CRM 4.0 workflow activities",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm4-wf&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm4-wf&client=PAChecker",
         "include": true,
         "code": "il-avoid-crm4-wf",
         "summary": "Do not implement Microsoft Dynamics CRM 4.0 workflow activities",
@@ -220,7 +225,7 @@ Content-Type: application/json; charset=utf-8
     },
     {
         "description": "Use InvalidPluginExecutionException in plug-ins and workflow activities",
-        "guidanceUrl": "http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-standard-exception&client=PAChecker",
+        "guidanceUrl": "https://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-standard-exception&client=PAChecker",
         "include": true,
         "code": "il-use-standard-exception",
         "summary": "Use InvalidPluginExecutionException in plug-ins and workflow activities",

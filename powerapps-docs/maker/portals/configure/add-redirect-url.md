@@ -1,6 +1,6 @@
 ---
-title: Redirigir a una nueva dirección URL en un portal | MicrosoftDocs
-description: Instrucciones para crear una dirección URL de redireccionamiento para redirigir a un usuario a otra página de un sitio.
+title: Redireccionar a una nueva dirección URL en un portal | MicrosoftDocs
+description: Instrucciones para crear una dirección URL de redireccionamiento para redirigir a un usuario a otra página en un sitio.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,48 +11,48 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 63cec47042cee4c29e225f33f1678261da3a01ca
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553426"
+ms.locfileid: "2761098"
 ---
-# <a name="add-a-redirect-url-to-a-new-url-on-a-portal"></a>Agregar una dirección URL de redireccionamiento a una nueva dirección URL en un portal
+# <a name="add-a-redirect-url-to-a-new-url-on-a-portal"></a>Agregar una URL de direccionamiento a una nueva dirección URL en un portal
 
-A menudo, los clientes quieren tener una dirección URL simple que redirija a una página más profunda en el sitio, o que desee permitir el uso de una dirección URL heredada con el sitio y redirigir automáticamente a una nueva dirección URL en el sitio. Las redirecciones de páginas permiten que un autor de contenido especifique una dirección URL que, cuando se solicite, se redirigirá de manera permanente o temporal a una página web o un archivo Web específicos. Estas direcciones URL de redireccionamiento se administran de forma independiente del contenido de la página para que no tengan que ajustarse directamente a la jerarquía Web.
+Los clientes con frecuencia desean tener una dirección URL simple que redirija a una página más profunda del sitio o desean permitir que una dirección URL heredada se use con el sitio y automáticamente redirija a una nueva dirección URL del sitio. Los redireccionamientos de página permiten a un autor de contenido especificar una dirección URL que cuando se solicita redirigirá de forma continua o temporal a una página web o un archivo web específicos. Estas direcciones URL de redireccionameinto se administran por separado del contenido de la página, por lo que no tienen que ajustarse directamente a la jerarquía web.
 
-## <a name="create-a-redirect"></a>Creación de una redirección
+## <a name="create-a-redirect"></a>Crear una redirección
 
-1. Abra la [aplicación administración del portal](configure-portal.md).
+1. Abra la aplicación [Administración del portal](configure-portal.md).
 
-2. Vaya al **portal** de > **sitios web** > **redirecciones**.
+2. Vaya a **Portales** > **Página web** > **Redireccionamientos**.
 
-3. Seleccione **nuevo**.
+3. seleccione **Nuevo**.
 
-4. Escriba la información de redirección tal y como se describe a continuación.
+4. Especifique la información de redireccionamiento como se describe a continuación.
 
 | Nombre        | Descripción                                                                                                                                  |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre        | Nombre descriptivo de la redirección. (Puede ser cualquier cosa. Facilita la identificación).                                                              |
-| Bsitio     | Sitio web al que está asociada la redirección. (El sitio desde el que se redirige al usuario).                                                         |
-| Dirección URL de entrada | Dirección URL parcial que se va a redirigir. (La página desde la que se redirige al usuario).                                                            |
-| Código de estado | Uno de los siguientes: **302 (redirección temporal)** : devuelve un estado de redirección temporal. Este es el valor predeterminado.                                               -   **301 (redirección permanente)** : devuelve un estado de redirección permanente, que indica que el recurso se ha despasado de forma permanente.                          |
-| Dirección         | Dirección URL externa de destino a la que se va a redirigir. (Úselo si el usuario se redirige a un vínculo externo al sitio Web especificado anteriormente).                            |
-| Página Web    | Página Web interna de destino a la que se va a redirigir. (Úselo si el usuario se redirige a una página interna del sitio Web especificado anteriormente). |
-| Marcador de sitio | Marcador de sitio interno de destino al que se va a redirigir.                                                                                           |
+| Nombre        | El nombre descriptivo del redireccionamiento. (Puede ser cualquier cosa. Hágalo fácil de identificar.)                                                              |
+| Sitio web     | Sitio web al que está asociado el redireccionamiento. (El sitio desde el que se redirecciona al usuario.)                                                         |
+| URL de entrada | La dirección URL parcial que debe ser redireccionada. (La página desde la que se redirecciona al usuario.)                                                            |
+| Código de estado | Una de las siguientes:  **302 (Redireccionamientos activos)**: devuelve un estado de redireccionamiento temporal. Esta es la configuración predeterminada.                                               -   **301 (redireccionamiento permanente)**: devuelve un estado de redireccionamiento permanente que indica que el recurso se ha movido permanentemente.                          |
+| URL         | Una dirección URL externa de destino a la que se realizará el redireccionamiento. (Use esta opción si al usuario se redirecciona a un vínculo exnterno al sitio web especificado arriba).                            |
+| Página web    | Una página web interna de destino a la que se realizará el redireccionamiento. (Use esta opción si al usuario se redirecciona a una página interna al sitio web especificado arriba.) |
+| Marcador de sitio | Un marcador de sitio interno de destino al que se realizará el redireccionamiento.                                                                                           |
 
-4. Después de escribir los campos obligatorios y especificar un valor para al menos uno de los campos dirección URL, página web o marcador de sitio, seleccione **Guardar**.
+4. Después de completar los campos obligatorios y especificar un valor para por lo menos uno de los campos Dirección URL, Página web o Marcador de sitio, seleccione **Guardar**.
 
-    ![Redirigir una encuesta de cliente](../media/redirect-customer-survey.png "Redirigir una encuesta de cliente")  
+    ![Redireccionar una encuesta a clientes](../media/redirect-customer-survey.png "Redireccionar una encuesta a clientes")  
 
-## <a name="use-the-redirect"></a>Usar el redireccionamiento
+## <a name="use-the-redirect"></a>Use el redireccionamiento
 
-Cuando se solicita la URL de entrada, el explorador se redirige a la dirección URL de la Página Web de destino para la entrada de redireccionamientos coincidentes.
+Cuando se solicite la dirección URL de entrada, el explorador se redirige a la dirección URL de la página web de destino para la entrada de redireccionamientos que coincidan.
 
-Por ejemplo, para un valor de dirección URL de entrada de CS-Survey con una página web de destino establecida en la página encuesta de soporte al cliente, la siguiente solicitud:
+Por ejemplo, para un valor de URL de entrada de cs-survey con una página web de destino establecida en la página Encuesta de soporte técnico a clientes, la siguiente solicitud:
 
 https://customerportal.contoso.com/cs-survey
 
-da como resultado el explorador que solicita la siguiente dirección URL:
+produce en el explorador la solicitud de la siguiente dirección URL:
 
 https://customerportal.contoso.com/surveys/customer-service-survey/
 

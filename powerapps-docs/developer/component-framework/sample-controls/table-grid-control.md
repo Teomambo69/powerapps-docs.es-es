@@ -1,5 +1,5 @@
 ---
-title: ' Componente de cuadrícula de tabla | Microsoft Docs'
+title: " Componente de cuadrícula de tabla | Microsoft Docs"
 description: Implementar el componente de cuadrícula de tabla
 ms.custom: ''
 manager: kvivek
@@ -8,15 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 6a8c8dd1ef90203901ec4a675620a91ae1431f13
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754068"
 ---
-
 # <a name="implementing-table-grid-component"></a>Implementar el componente de cuadrícula de tabla
 
 Este ejemplo muestra cómo crear un componente de conjunto de datos simple, un enlace de metadatos de columna de la vista, un enlace de registro, más registros de paginación y navegación de registros al formulario.
 Las columnas de encabezado de componentes y los valores de registros internos están enlazados a las vistas existentes.
 
 > [!div class="mx-imgBorder"]
-> ![Componente de cuadrícula de tabla](../media/table-grid-control.png "Componente de cuadrícula de tabla")
+> ![Componente de la cuadrícula de tabla](../media/table-grid-control.png "Componente de la cuadrícula de tabla")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -279,12 +284,12 @@ export class TSTableGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityReference = this.contextObj.parameters.simpleTableGrid.records[
+      let entityreference = this.contextObj.parameters.simpleTableGrid.records[
         rowRecordId
-      ].getNamedReference();
+      ].getNamedreference();
       let entityFormOptions = {
-        entityName: entityReference.entityType!,
-        entityId: entityReference.id
+        entityName: entityreference.entityType!,
+        entityId: entityreference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -407,8 +412,8 @@ export class TSTableGrid
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">

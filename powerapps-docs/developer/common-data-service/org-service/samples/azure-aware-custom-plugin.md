@@ -1,19 +1,25 @@
 ---
-title: Complemento personalizado con Azure (Common Data Service) | Microsoft Docs
+title: Complemento con Azure personalizado (Common Data Service) | Microsoft Docs
 description: Este complemento personalizado puede publicar el contexto de la ejecución de canalización en Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1148a8e6194a5aa78cda9f01c458c8c817dd261c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749678"
 ---
 # <a name="sample-azure-aware-custom-plug-in"></a>Ejemplo: complemento personalizado con Azure
 

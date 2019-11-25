@@ -1,6 +1,6 @@
 ---
-title: Configure el seguimiento para los útiles de XRM (Common Data Service)| Microsoft Docs
-description: 'Aprenda cómo puede configurar el seguimiento para componentes como llamadas a operaciones, advertencias, excepciones y otros eventos importantes en útiles de XRM.'
+title: Configure el seguimiento para útiles de XRM (Common Data Service)| Microsoft Docs
+description: Aprenda cómo puede configurar el seguimiento para componentes como llamadas a operaciones, advertencias, excepciones y otros eventos importantes en útiles de XRM.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d7586a5a-40da-427e-bbeb-4f8a371a8dcf
 caps.latest.revision: 8
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 559df63ce76aee3e09d000a44924754cd7e68c3b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749645"
 ---
 # <a name="configure-tracing-for-xrm-tooling"></a>Configurar el seguimiento de útiles de XRM
 

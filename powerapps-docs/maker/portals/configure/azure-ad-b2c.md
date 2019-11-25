@@ -1,6 +1,6 @@
 ---
-title: Configuración del proveedor de Azure AD B2C para portales | MicrosoftDocs
-description: Instrucciones para habilitar la configuración del proveedor de Azure AD B2C para los portales.
+title: Configuración del proveedor Azure AD B2C para portales | MicrosoftDocs
+description: Instrucciones de habilitar los ajustes del proveedor de Azure AD B2C para portales.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,129 +11,129 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542844"
+ms.locfileid: "2755507"
 ---
-# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Configuración del proveedor de Azure AD B2C para portales
+# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C configuración del proveedor para portales
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) alimenta los servicios de Office 365 y Dynamics 365 para la autenticación interna o de empleado. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C es una extensión de ese modelo de autenticación que permite inicios de sesión de clientes externos a través de credenciales locales y Federación con varios proveedores de identidades sociales comunes.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) activa Office 365 y los servicios de Dynamics 365 para la autenticación interna o de empleados. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C es una extensión al modelo de autenticación que habilita los inicios de sesión de clientes externos mediante las credenciales locales y de federación los distintos proveedores de identidad sociales comunes.
 
-Un propietario del portal puede configurar el portal para que acepte [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidades. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C admite Open ID Connect para la Federación.
+Un propietario de portal puede configurar el portal para aceptar [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidad. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C admite Open ID Connect para federación.
 
-En el proceso de configuración de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidades para el portal, se generan varios valores que usará más adelante mientras configura el portal. Puede anotar estos valores en la tabla siguiente. Mientras configura el portal, reemplace el nombre de la variable por los valores que se indican aquí.
+Durante la configuración de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidad del portal, varios valores se generan que usará más adelante cuando configure el portal. Puede anotar estos valores en la tabla siguiente. Mientras configura el portal, reemplace el nombre de variable por los valores que escriba aquí.
 
-| Nombre de variable     | Value | Descripción                                                           |
+| Nombre de variable     | Valor | Descripción                                                           |
 |-------------------|-------|-----------------------------------------------------------------------|
-| Nombre de la aplicación  |       | Nombre de la aplicación que representa el portal como usuario de confianza |
-| IDENTIFICADOR de la aplicación    |       | IDENTIFICADOR de la aplicación asociado a la aplicación creada en Azure Active Directory B2C.  |
-| Directiva: Inicio de sesión: URL |       | La dirección URL del emisor (ISS) definida en el extremo de metadatos.                |
-| Nombre de Federación   |       | Un nombre único para identificar el tipo de proveedor de Federación como ' B2C '. Se usará en los nombres de configuración del sitio para los valores de configuración de grupo para este proveedor específico.                                                                      |
+| Nombre de la aplicación  |       | Nombre de la aplicación que representa el portal como un usuario de confianza |
+| Id. de aplicación    |       | El identificador de la aplicación asociado a la aplicación creada en Azure Active Directory B2C.  |
+| Policy-Signin-URL |       | La dirección URL del emisor (iss) definida en el extremo de metadatos.                |
+| Nombre de la federación   |       | Un nombre único para identificar el tipo de proveedor de federación como “B2C”. Se usará en los nombres de configuración de sitio para agrupar las opciones de configuración de este proveedor específico.                                                                      |
 | | | |
 
-### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Uso de Azure AD B2C como proveedor de identidades para el portal
+### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Use Azure AD AD B2C como proveedor de identidad para el portal
 
-1. Inicie sesión en su [Azure portal](https://portal.azure.com/).
-2. [Cree un inquilino de Azure ad B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
-3. Seleccione **[!include[Azure](../../../includes/pn-azure-shortest.md)] ad B2C** en la barra de navegación de la izquierda.
-4. [Cree una aplicación de Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
+1. Inicie sesión en el [portal Azure](https://portal.azure.com/).
+2. [Crear un inquilino de Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
+3. Seleccione **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** en la barra de navegación más a la izquierda.
+4. [Cree la aplicación Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
-   > Debe elegir **sí** en el campo **permitir flujo implícito** y especificar la dirección URL del portal en el campo **URL de respuesta** . El valor del campo **dirección URL de respuesta** debe tener el formato [dominio del portal]/signin-[nombre-Federación]. Por ejemplo, `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
+   > Debe elegir **Sí** para el campo **Permitir el flujo implícito** y especificar la dirección URL de portal en el campo **Dirección URL de respuesta** . El valor en el campo **Dirección URL de respuesta** debe tener el formato [dominio de portal]/inicio de sesión-[Nombre de la federación]. Por ejemplo, `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
-5. Copie el nombre de la aplicación y escríbalo como el valor de nombre de la aplicación en la tabla anterior.
-6. Copie el identificador de la aplicación y escríbalo como el valor de Application-ID en la tabla anterior.
-7. [Cree una directiva de registro o de inicio de sesión](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
-8. Seleccione la Directiva y, a continuación, seleccione **Editar**.
-9. Seleccione **token, sesión & configuración de SSO**.
-10. En la lista de **notificaciones del emisor (ISS)** , seleccione la dirección URL que tiene **/TFP** en su ruta de acceso.
-11. Guarde la Directiva.
-12. Seleccione la dirección URL en el **punto de conexión de metadatos para este campo de directiva** .
-13. Copie el valor del campo issuer y escríbalo como el valor de Policy-Sign-URL en la tabla anterior. 
+5. Copie el nombre de la aplicación, e incorpórelo como el valor del nombre de la aplicación en la tabla precedente.
+6. Copie el ID de la aplicación, e incorpórelo como el valor del ID de la aplicación en la tabla precedente.
+7. [Crear una directiva de registro o inicio de sesión](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
+8. Seleccione la directiva y, a continuación seleccione **Editar**.
+9. Seleccione **Token, sesión y configuración de SSO**.
+10. Del lista **Notificación de emisor (iss)** , seleccione la dirección URL que tiene **/tfp** en la ruta.
+11. Guarde la directiva.
+12. Seleccione la dirección URL en el campo **Extremo de metadatos para esta directiva**.
+13. Copie el valor del campo de emisor e incorpórelo como el valor de la Policy-Signin-URL en la tabla precedente. 
 
-## <a name="portal-configuration"></a>Configuración del portal
+## <a name="portal-configuration"></a>Configuración de portal
 
-Después de crear y configurar el inquilino de B2C en [!include[Azure](../../../includes/pn-azure-shortest.md)], debe configurar el portal para que se federe con [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C mediante el protocolo Open ID Connect. Debe crear un nombre único para la Federación a [!include[Azure](../../../includes/pn-azure-shortest.md)]&mdash;de AD B2C, por ejemplo, B2C&mdash;y almacenarlo como el valor de la variable de *nombre de Federación* en la tabla anterior.
+Después de crear y configurar el suscriptor de B2C en [!include[Azure](../../../includes/pn-azure-shortest.md)], debe configurar el portal para federar con [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C mediante el protocolo Open ID Connect. Debe crear un nombre único para la federación a [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C&mdash;por ejemplo B2C&mdash;y almacenarlo como el valor de la variable *Nombre de federación* en la tabla anterior.
 
-### <a name="configure-your-portal"></a>Configuración del portal
-1. Abra la aplicación administración del portal.
-2. Vaya a **portales** > **sitios web**.
-3. Seleccione el registro del sitio web para el que se debe habilitar [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C.
-4. Vaya a **configuración del sitio**.
+### <a name="configure-your-portal"></a>Configure su portal
+1. Abra la aplicación Administración del portal.
+2. Vaya a **Portales** > **Páginas web**.
+3. Seleccione el registro de la página web para el que debe habilitarse [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C.
+4. Vaya a **Configuración del sitio**.
 5. Cree la siguiente configuración del sitio:
-   -   **Nombre**: autenticación/OpenIdConnect/[Federation-Name]/Authority
+   -   **Nombre**: Autenticación/OpenIdConnect/[Nombre de federación]/Autoridad
 
-       **Valor**: [Policy-Signing-URL]
-   -   **Nombre**: autenticación/OpenIdConnect/[Federation-Name]/ClientID
+       **Valor**: [Policy-Signin-URL]
+   -   **Nombre**: Autenticación/OpenIdConnect/[Nombre de federación]/ClientId
 
-       **Valor**: [Application-ID]
-   -   **Nombre**: autenticación/OpenIdConnect/[Federation-Name]/RedirectUri
+       **Valor**: [ID de aplicación]
+   -   **Nombre**: Autenticación/OpenIdConnect/[Nombre de federación]/RedirectUri
 
-       **Valor**: [dominio del portal]/signin-[nombre-Federación]
+       **Valor**: [dominio de portal]/inicio de sesión-[Nombre de federación]
 
        Por ejemplo, `https://mysite.com/signin-b2c` 
-6. Para admitir el cierre de sesión federado, cree la siguiente configuración del sitio:
-   - **Nombre**: autenticación/OpenIdConnect/[Federation-Name]/ExternalLogoutEnabled
+6. Para admitir un inicio de sesión federado, cree la siguiente configuración del sitio:
+   - **Nombre**: Authentication/OpenIdConnect/[Nombre de federación]/ExternalLogoutEnabled
 
-     **Valor**: true
-7. Para codificar el portal en un solo proveedor de identidades, cree la siguiente configuración del sitio:
-   - **Nombre**: autenticación/registro/LoginButtonAuthenticationType
+     **Valor**: verdadero
+7. Para codificar de forma rígida su portal para un solo proveedor de identidad, cree la siguiente configuración del sitio:
+   - **Nombre**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **Valor**: [Policy-Signing-URL]
+     **Valor**: [Policy-Signin-URL]
 
-8. Para admitir el restablecimiento de contraseña, cree la configuración de sitio necesaria que se describe [aquí](#password-reset).
-9. Para admitir la asignación de notificaciones, cree la configuración de sitio necesaria que se describe [aquí](#claims-mapping).
+8. Para admitir la restauración de la contraseña, cree la configuración necesaria descrita [aquí](#password-reset).
+9. Para admitir la asignación de notificaciones, cree la configuración necesaria descrita [aquí](#claims-mapping).
 
-Para obtener una lista completa de la configuración de sitio relacionada, consulte [aquí](#related-site-settings).
+Para obtener una lista completa de la configuración del sitio, consulte [aquí](#related-site-settings).
 
 ### <a name="password-reset"></a>Restablecimiento de contraseña
 
-Se requiere la siguiente configuración del sitio si desea admitir el restablecimiento de contraseña con [!include[Azure](../../../includes/pn-azure-shortest.md)] cuentas locales de AD B2C:
+Se requiere la siguiente configuración del sitio si desea admitir la restauración de la contraseña más con cuentas locales de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C.
 
 | Configuración del sitio                                                        | Descripción                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Authentication/OpenIdConnect/[Federation-Name/PasswordResetPolicyId | IDENTIFICADOR de la Directiva de restablecimiento de contraseña.                                                                                     |
-| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Una lista delimitada por comas de emisores que incluye [Policy-Sign-URL] y el emisor de la Directiva de restablecimiento de contraseña. |
-|Authentication/OpenIdConnect/[Federation-Name]/DefaultPolicyId | IDENTIFICADOR de la Directiva de inicio de sesión o de registro.|
+| Authentication/OpenIdConnect/[Nombre de federación]/PasswordResetPolicyId | Identificador de la directiva de restauración de contraseña.                                                                                     |
+| Authentication/OpenIdConnect/[Nombre de federación]/ValidIssuers         | Una lista delimitada por comas de emisores que incluye la [Policy-Signin-URL] y el emisor de la directiva de restauración de contraseña. |
+|Authentication/OpenIdConnect/[Nombre de federación]/DefaultPolicyId | Identificador de la directiva de inicio de sesión o suscripción.|
 |||
 
-### <a name="related-site-settings"></a>Configuración del sitio relacionado
+### <a name="related-site-settings"></a>Configuración del sitio relacionada
 
-Puede crear o configurar los siguientes valores del sitio en portales para admitir [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidades:
+Puede crear o configurar la siguiente configuración del sitio en portales para admitir [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C como proveedor de identidad:
 
 
 | Configuración del sitio                                                         | Descripción                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Autenticación/registro/ProfileRedirectEnabled                   | Especifica si el portal puede redirigir a los usuarios a la página de perfil después del inicio de sesión correcto. De forma predeterminada, se establece en true.                                                                                                                                            |
-| Autenticación/registro/EmailConfirmationEnabled                 | Especifica si es necesaria la validación del correo electrónico. De forma predeterminada, se establece en true.                                                                                     |
-| Autenticación/registro/LocalLoginEnabled                        | Especifica si es necesario el inicio de sesión local. De forma predeterminada, se establece en true.                                                                        |
-| Autenticación/registro/ExternalLoginEnabled                     | Habilita o deshabilita la autenticación externa.       |
-| Autenticación/registro/AzureADLoginEnabled                      | Habilita o deshabilita [!include[Azure](../../../includes/pn-azure-shortest.md)] AD como proveedor de identidades externo. De forma predeterminada, se establece en true.                                                                                                                                                                      |
-| Authentication/OpenIdConnect/[Federation-Name]/ExternalLogoutEnabled | Habilita o deshabilita el cierre de sesión federado. Cuando se establece en true, los usuarios se redirigen a la experiencia del usuario de cierre de sesión federado cuando cierren sesión en el portal. Cuando se establece en false, los usuarios solo se cerran desde el portal. De forma predeterminada, se establece en false.               |
-| Autenticación/LoginTrackingEnabled                                  | Habilita o deshabilita el seguimiento del último inicio de sesión del usuario. Cuando se establece en true, la fecha y la hora se muestran en el último campo de **Inicio de sesión correcto** en el registro de contacto. De forma predeterminada, se establece en false.                                                            |
-| Authentication/OpenIdConnect/[Federation-Name]/RegistrationEnabled   | Habilita o deshabilita el requisito de registro para el proveedor de identidades existente. Cuando se establece en true, el registro está habilitado para el proveedor existente solo si la configuración del sitio autenticación/registro/habilitado también está establecida en true. De forma predeterminada, se establece en true. |
-|Authentication/OpenIdConnect/[Federation-Name]/PostLogoutRedirectUri |Especifica la dirección URL en el portal a la que redirigirse después de que un usuario cierra la sesión. |
+| Authentication/Registration/ProfileRedirectEnabled                   | Especifica si el portal puede redirigir a usuarios a la página del perfil después de iniciar sesión correctamente. De forma predeterminada, se establece como verdadero.                                                                                                                                            |
+| Authentication/Registration/EmailConfirmationEnabled                 | Especifica si la validación de correo electrónico es necesaria. De forma predeterminada, se establece como verdadero.                                                                                     |
+| Authentication/Registration/LocalLoginEnabled                        | Especifica si se necesita un inicio de sesión local. De forma predeterminada, se establece como verdadero.                                                                        |
+| Authentication/Registration/ExternalLoginEnabled                     | Habilita o deshabilita la autenticación externa.       |
+| Authentication/Registration/AzureADLoginEnabled                      | Habilita o deshabilita [!include[Azure](../../../includes/pn-azure-shortest.md)] AD como proveedor de identidad externo. De forma predeterminada, se establece como verdadero.                                                                                                                                                                      |
+| Authentication/OpenIdConnect/[Nombre de federación]/ExternalLogoutEnabled | Habilita o deshabilita el inicio de sesión federado. Si se establece en verdadero, los usuarios se redirigen a la experiencia de usuario de inicio de sesión federado al cerrar sesión en el portal. Si se establece en falso, los usuarios cierran sesión solo del portal. De forma predeterminada, se establece como falso.               |
+| Authentication/LoginTrackingEnabled                                  | Habilita o deshabilita el seguimiento del último inicio de sesión del usuario. Si se establece en verdadero, se muestran la fecha y la hora en el campo **Último inicio de sesión correcto** en el registro de contacto. De manera predeterminada, el valor es falso.                                                            |
+| Authentication/OpenIdConnect/[Nombre de federación]/RegistrationEnabled   | Habilita o deshabilita el requisito de registro para el proveedor de identidad existente. Si se establece en verdadero, se habilita el registro del proveedor existente solo si Authentication/Registration/Enabled también se establece en verdadero. De forma predeterminada, se establece como verdadero. |
+|Authentication/OpenIdConnect/[Nombre de federación]/PostLogoutRedirectUri |Especifica la dirección URL en el portal a la que se va a redirigir a después de que los usuarios cierren sesión. |
 | | |
 
 ### <a name="related-content-snippet"></a>Fragmento de contenido relacionado
 
-Si el registro está deshabilitado para un usuario después de que el usuario haya canjeado una invitación, muestre un mensaje mediante el siguiente fragmento de código:
+Si el registro está deshabilitado para un usuario después de que el usuario haya redimido una invitación, aparece un mensaje con el siguiente fragmento de contenido:
 
-**Nombre**: cuenta/registro/RegistrationDisabledMessage
+**Nombre**: Account/Register/RegistrationDisabledMessage
 
-**Valor**: se ha deshabilitado el registro.
+**Valor**: El registro se ha deshabilitado.
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Personalización de la interfaz de usuario de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Personalizar la interfaz de usuario de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C admite la personalización de la interfaz de usuario. Puede personalizar la experiencia del usuario para escenarios de registro e inicio de sesión.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C admite la personalización de la interfaz de usuario. Puede personalizar la experiencia del usuario para el registro y el inicio de sesión.
 
-### <a name="step-1-create-a-web-template"></a>Paso 1: crear una plantilla Web
-Cree una plantilla Web con los siguientes valores:
+### <a name="step-1-create-a-web-template"></a>Paso 1: Crear una plantilla web
+Cree una plantilla web mediante los siguientes valores:
 
-**Nombre**: [!include[Azure](../../../includes/pn-azure-shortest.md)] página personalizada de ad B2C
+**Nombre**: página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
-**Origen**: Use el código HTML de ejemplo de la plantilla Web siguiente.
+**Origen**: Use el siguiente HTML de origen de plantilla web de ejemplo.
 
 ```html
 <!DOCTYPE html>
@@ -438,88 +438,88 @@ Cree una plantilla Web con los siguientes valores:
   </body>
 </html>
 ```
-### <a name="step-2-create-a-page-template"></a>Paso 2: creación de una plantilla de página
+### <a name="step-2-create-a-page-template"></a>Paso 2: Crear una plantilla de página
 
-Cree la siguiente plantilla de página:
-- **Nombre**: [!include[Azure](../../../includes/pn-azure-shortest.md)] página personalizada de ad B2C
-- **Tipo**: plantilla Web
-- **Plantilla Web**: [!include[Azure](../../../includes/pn-azure-shortest.md)] página personalizada de ad B2C
-- **Usar encabezado y pie de página del sitio web**: Desactive esta casilla
+Cree la plantilla de página siguiente:
+- **Nombre**: página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+- **Tipo**: plantilla web
+- **Plantilla web**: Página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+- **Encabezado y pie de página de la página web de uso**: Desactive esta casilla
 
-### <a name="step-3-create-a-webpage"></a>Paso 3: crear una página web
+### <a name="step-3-create-a-webpage"></a>Paso 3: Crear un página web
 
 Cree la siguiente página web:
 - **Nombre**: Inicio de sesión
-- **Elemento primario** Página: Inicio
-- **Dirección URL parcial**: Azure-ad-B2C-inicio de sesión
-- **Plantilla de página**: [!include[Azure](../../../includes/pn-azure-shortest.md)] página personalizada de ad B2C
-- **Estado de publicación**: publicado
+- Página **principal**: Inicio
+- **URL parcial**: azure-ad-b2c-sign-in
+- **Plantilla de página**: Página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+- **Estado de publicación**: Publicado
 
-### <a name="step-4-create-site-settings"></a>Paso 4: crear la configuración del sitio
+### <a name="step-4-create-site-settings"></a>Paso 4: Crear configuraciones de sitio
 
-La configuración del sitio es necesaria para configurar el uso compartido de recursos entre orígenes (CORS) para permitir que [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C solicite la página personalizada e inserte la interfaz de usuario de inicio de sesión o de registro. Cree la siguiente configuración del sitio.
+La configuración de sitio es necesaria para configurar el uso compartido de recursos (CORS) de origen cruzado para permitir que [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C solicite la página personalizada y que inserte la interfaz de usuario de registro o de inicio de sesión. Cree la siguiente configuración del sitio.
 
-| Nombre                              | Value                             |
+| Nombre                              | Valor                             |
 |-----------------------------------|-----------------------------------|
-| HTTP/Access-Control-Allow-Methods | GET, OPCIONES                      |
+| HTTP/Access-Control-Allow-Methods | OBTENER, OPCIONES                      |
 | HTTP/Access-Control-Allow-Origin  | `https://login.microsoftonline.com` |
 | | |
 
-Para obtener una lista completa de otras opciones de CORS, consulte [compatibilidad del protocolo CORS](../add-web-resource.md#cors-protocol-support).
+Para obtener una lista completa de otros valores de configuración CORS, consulte [Soporte de protocolo CORS](../add-web-resource.md#cors-protocol-support).
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Paso 5: configuración de [!include[Azure](../../../includes/pn-azure-shortest.md)]
+### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Paso 5: Configuración [!include[Azure](../../../includes/pn-azure-shortest.md)]
 
 1. Inicie sesión en su [!include[Azure portal](../../../includes/pn-azure-portal.md)].
-2. Vaya a la hoja de **Administración de inquilinos de ad B2C[!include[Azure](../../../includes/pn-azure-shortest.md)]** .
-3. Vaya a **configuración** > **directivas de registro o de inicio de sesión**. Se muestra una lista de directivas disponibles.
-4. Seleccione la Directiva que desea editar.
+2. Desplácese hasta la hoja **Administración de suscriptores de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** .
+3. Vaya a **Configuración** > **Directivas de registro e inicio de sesión**. Aparecerá la lista de directivas disponibles.
+4. Seleccione la directiva que desea editar.
 5. Seleccione **Editar**.
-6. Seleccione **Editar directiva** > **Personalización** de la interfaz de usuario de la página > la página de inicio de sesión **o Registro Unificado**
-7. Establezca **usar página personalizada** en **sí**.
-8. Establezca **URI de página personalizada** en la dirección URL de la Página Web de la página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] ad B2C creada en el paso 3 de este procedimiento. Por ejemplo, `https://mydomain.com/azure-ad-b2c-sign-in`.
+6. Seleccione **Editar directiva** > **Personalización de interfaz de página** > **Página de registro o inicio de sesión unificada**
+7. Establezca **Usar la página personalizada** **Sí**.
+8. Establezca **URL personalizada de página** en la URL de la página web de página personalizada de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C creada en el paso 3 del procedimiento. Por ejemplo, `https://mydomain.com/azure-ad-b2c-sign-in`.
 9. Seleccione **Aceptar**.
 
 ## <a name="claims-mapping"></a>Asignación de notificaciones
 
-Cuando los usuarios inician sesión, ya sea por primera vez o posteriormente, el proveedor de identidades federado proporciona notificaciones basadas en su base de datos con respecto al inicio de sesión de los usuarios. Estas notificaciones se pueden configurar en el proveedor de identidades.
+Cuando los usuarios inicien sesión, por primera vez o posteriormente, el proveedor de identidad federado proporciona notificaciones según su base de datos sobre el inicio de sesión de los usuarios. Estas notificaciones se pueden configurar en el proveedor de identidad.
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] de notificaciones de correo electrónico de AD B2C
+### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>Notificaciones de correo electrónico de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C envía la notificaciones de correo electrónico como una colección. El portal acepta el primer correo electrónico proporcionado en la colección como dirección de correo electrónico principal del contacto.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C envía la notificación de correo electrónico como una recopilación. El portal acepta el primer correo electrónico de la recopilación como la dirección de correo electrónico principal del contacto.
 
-### <a name="claims-to-support-sign-up-scenarios"></a>Notificaciones para admitir escenarios de registro
+### <a name="claims-to-support-sign-up-scenarios"></a>Reclamaciones para admitir escenarios de registro
 
-Cuando se aprovisiona un nuevo cliente que no existe en Common Data Service, se pueden usar las notificaciones entrantes para inicializar el nuevo registro de contacto que creará el portal. Las notificaciones comunes pueden incluir el nombre y el apellido, la dirección de correo electrónico y el número de teléfono, pero se pueden configurar. Se requiere la siguiente configuración del sitio:
+Si se aprovisiona un nuevo cliente que no existe en Common Data Service las notificaciones entrantes se pueden usar para propagar el nuevo registro de contacto que creará el portal. Las notificaciones comunes pueden incluir el nombre y el apellido, dirección de correo electrónico, y número de teléfono, pero son configurables. Se necesita la siguiente configuración de sitio:
 
-**Nombre**: autenticación/OpenIdConnect/[Federation-Name]/RegistrationClaimsMapping
+**Nombre**: Authentication/OpenIdConnect/[Nombre de federación]/RegistrationClaimsMapping
 
-**Descripción**: lista de pares de nombre lógico o de notificaciones que se usarán para asignar valores de notificaciones a los atributos del registro de contacto creado durante el registro.
+**Descripción**: Lista de pares de nombre lógico y de notificación que se van a usar para asignar valores de notificaciones a atributos en el registro de contacto creado durante el registro.
 
-**Formato**: atributo1 = claim1, attribute2 = claim2, attribute3 = claim3
+**Formato**: atributo1=notificación1, atributo2=notificación2, atributo3=notificación3
 
-Por ejemplo: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+Por ejemplo: firstname=<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
-> Asegúrese de asignar la dirección de correo electrónico al correo electrónico principal (emailaddress1) del contacto. Si ha agregado correo electrónico secundario (emailaddress2) o correo electrónico alternativo (emailaddress3) al registro de contacto y lo ha asignado al correo electrónico, la información de identidad no se agregará al contacto y se creará una nueva con la dirección de correo electrónico utilizada para el registro establecido en el correo electrónico principal (emailaddress1).
+> Asegúrese de que asigna la dirección de correo electrónico para el mensaje principal (emailaddress1) del contacto. Si ha agregado un correo electrónico secundario (emailaddress2) o alternativo (emailaddress3) al registro de contacto y lo ha asignado al correo electrónico, la información de identidad no se agregará al contacto y se creará una nueva con la dirección de correo electrónico que se usó para el registro establecido en el correo electrónico principal (emailaddress1).
 
-### <a name="claims-to-support-sign-in-scenarios"></a>Notificaciones para admitir escenarios de inicio de sesión
+### <a name="claims-to-support-sign-in-scenarios"></a>Reclamaciones para admitir escenarios de registro
 
-Los datos de Common Data Service y del proveedor de identidades no se vinculan directamente, por lo que los datos pueden no estar sincronizados. El portal debe tener una lista de notificaciones que desea aceptar desde cualquier evento de inicio de sesión para actualizar en Common Data Service. Estas notificaciones pueden ser un subconjunto de las notificaciones procedentes de un escenario de inicio de sesión, o es igual a ellas. Debe configurarse de forma independiente de la asignación de notificaciones de inicio de sesión, ya que es posible que no desee sobrescribir algunos atributos clave del portal. Se requiere la siguiente configuración del sitio:
+Los datos de Common Data Service y en el proveedor de identidad no se vinculan directamente, por lo que los datos pueden desincronizarse. El portal debe tener una lista de notificaciones que desee aceptar de cualquier evento de inicio de sesión para actualizar en Common Data Service. Estas notificaciones pueden ser un subconjunto o iguales a las notificaciones que proceden de un escenario de inicio de sesión. Esto se debe configurar por separado de la asignación de notificaciones de inicio de sesión, porque es posible que no desee sobrescribir algunos atributos de portal clave. Se necesita la siguiente configuración de sitio:
 
-**Nombre**: autenticación/OpenIdConnect/[Federation-Name]/LoginClaimsMapping
+**Nombre**: Authentication/OpenIdConnect/[Nombre de federación]/LoginClaimsMapping
 
-**Descripción**: lista de pares de nombre lógico o de notificaciones que se usarán para asignar valores de notificaciones a los atributos del registro de contacto creado después del inicio de sesión.
+**Descripción**: Lista de pares de nombre lógico y de notificación que se van a usar para asignar valores de notificaciones a atributos en el registro de contacto creado tras el inicio de sesión.
 
-**Formato**: atributo1 = claim1, attribute2 = claim2, attribute3 = claim3
+**Formato**: atributo1=notificación1, atributo2=notificación2, atributo3=notificación3
 
-Por ejemplo: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+Por ejemplo: firstname=<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
-El nombre de la notificación es el campo de tipo de notificación que se muestra junto al atributo en las notificaciones de aplicación de directivas de inicio de sesión.
+El nombre de notificación es el campo TIPO DE NOTIFICACIÓN indicado junto al atributo de las directivas de inicio de sesión Notificaciones de aplicación.
 
-### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>Permitir Asociación automática a un registro de contacto basado en el correo electrónico 
+### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>Permitir la asociación automática a un registro de contacto en función de correo electrónico 
 
-Los clientes que tengan registros de contacto con correos electrónicos asociados iniciarán un sitio web donde sus usuarios externos iniciarán sesión con [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C a través de un mecanismo de validación de correo electrónico. El nuevo inicio de sesión se debe asociar al registro de contacto existente en lugar de crear un registro duplicado. Esta funcionalidad solo asigna correctamente un contacto que no tiene una identidad activa y la dirección de correo electrónico debe ser única (no relacionada con varios registros de contactos). Se requiere la siguiente configuración del sitio:
+Los clientes que tienen registros de contactos con correos electrónicos asociados lanzan una página web donde los usuarios externos iniciarán sesión con [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C mediante un mecanismo de validación de correo electrónico. El nuevo inicio de sesión debe estar asociado al registro de contacto existente en lugar de crear un registro duplicado. Esta funcionalidad asigna solo correctamente un contacto que no tiene una identidad activa, y la dirección de correo electrónico debe ser única (no relacionada con varios registros de contacto). Se necesita la siguiente configuración de sitio:
 
-**Nombre**: autenticación/[Protocolo]/[proveedor]/AllowContactMappingWithEmail
+**Nombre**: Authentication/[Protocolo]/[Proveedor]/AllowContactMappingWithEmail
 
-**Descripción**: especifica si los contactos están asignados a un correo electrónico correspondiente. Cuando se establece en true, esta configuración asocia un registro de contacto único con una dirección de correo electrónico coincidente y, a continuación, asigna automáticamente el proveedor de identidad externo al contacto después de que el usuario haya iniciado sesión correctamente. De forma predeterminada, se establece en false.
+**Descripción**: Especifica si los contactos están asignados al correo electrónico correspondiente. Si se establece en verdadero, el valor se asocia a un registro de contacto único con una dirección de correo electrónico coincidente, y después asigna automáticamente el proveedor de identidad externo al contacto una vez que el usuario ha iniciado sesión correctamente. De forma predeterminada, se establece como falso.

@@ -1,5 +1,5 @@
 ---
-title: ' Componente de mapa| Microsoft Docs'
+title: " Componente de mapa| Microsoft Docs"
 description: Implementar el componente de mapa mediante Angular JS
 ms.custom: ''
 manager: kvivek
@@ -8,14 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749930"
 ---
-
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
 Este componente de ejemplo cambia la experiencia de usuario de interactuar con campos de dirección del formulario. Además de los valores de texto de la dirección, este componente proporciona la capacidad de identificar visualmente una dirección específica en un mapa sin navegar a otra pestaña o pantalla. 
 
 > [!div class="mx-imgBorder"]
-> ![Componente de mapa](../media/map-control.png "Componente de mapa")
+> ![Componente de asignación](../media/map-control.png "Componente de asignación")
 
 ## <a name="available-for"></a>Disponible para 
 
@@ -46,7 +51,7 @@ export class TSMapControl
   private _iFrameElement: HTMLIFrameElement;
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // API Key used to activate and embed the maps automatically
   // NOTE: You can follow the documentation at https://developers.google.com/maps/documentation/embed/get-api-key to generate your own API Key

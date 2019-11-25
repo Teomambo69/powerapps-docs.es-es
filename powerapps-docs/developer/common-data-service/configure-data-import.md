@@ -1,5 +1,5 @@
 ---
-title: Configurar la importación de datos (Common Data Service) | Microsoft Docs
+title: Configurar importación de datos (Common Data Service) | Microsoft Docs
 description: La información de configuración que se necesita para importar datos se incluye en la entidad de importación de datos y la entidad del archivo de origen.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de387cf362a8cef5971f7abf16afdd06a07cb32f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753032"
 ---
 # <a name="configure-data-import"></a>Configurar la importación de datos
 
@@ -54,7 +60,7 @@ La información de configuración que se necesita para importar datos se incluye
 ### <a name="see-also"></a>Vea también
 
 [Importar datos](import-data.md)<br />
-[Entrada de blog: Cómo importar los datos adjuntos mediante programación](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
+[Entrada de blog: Cómo importar los datos adjuntos mediante programación](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
 [Preparar archivos de origen para importar](prepare-source-files-import.md)<br />
 [Crear asignaciones de datos para importar](create-data-maps-for-import.md)<br />
 [Agregar asignaciones de transformación para la importación](add-transformation-mappings-import.md)<br />

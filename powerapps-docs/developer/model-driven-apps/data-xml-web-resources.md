@@ -4,21 +4,24 @@ description: Obtener información sobre el uso de recursos web de datos (XML) pa
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 2bf0d49f-8b6d-6d5b-0af5-edf6dd485fed
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 47e77e2cfea704fee2693787f818f90f435f8fd6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749910"
 ---
-
 # <a name="data-xml-web-resources"></a>Recursos web (XML) de datos
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/data-xml-web-resources -->

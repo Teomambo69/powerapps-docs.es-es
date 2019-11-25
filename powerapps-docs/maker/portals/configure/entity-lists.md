@@ -1,6 +1,6 @@
 ---
-title: Agregar una página web para presentar una lista de registros en un portal | MicrosoftDocs
-description: Instrucciones para agregar y configurar las listas de entidades para presentar una lista de registros en un portal.
+title: Agregar una página web para representar una lista de registros en un portal | MicrosoftDocs
+description: Instrucciones para agregar y configurar listas de entidades para representar una lista de registros en un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,60 +11,60 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 1ab175f69fdcf292185fd96cb176045dccc3a70b
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73552851"
+ms.locfileid: "2761109"
 ---
-# <a name="about-entity-lists"></a>Acerca de las listas de entidades
+# <a name="about-entity-lists"></a>Acerca de listas de entidades
 
-Una lista de entidades es una configuración controlada por datos que se usa para agregar una página web que representará una lista de registros sin necesidad de que un desarrollador muestre la cuadrícula en el portal. Mediante el uso de listas de entidades, puede exponer registros para su presentación en portales.
+Una lista de entidades es una configuración basada en datos que usa para agregar una página web que representará una lista de registros sin necesidad de que un programador muestre la cuadrícula en el portal. Al usar listas de entidades, puede exponer registros para mostrar en portales.
 
-La cuadrícula admite la ordenación y se paginará si el número de registros es mayor que el tamaño de página especificado. Si se ha especificado una **Página Web para la vista de detalles** , cada registro contendrá un vínculo a la página y el identificador del registro se anexará a la cadena de consulta junto con el nombre del parámetro de cadena de consulta de identificador. La lista de entidades también admite varias vistas. Si se especifica más de una vista, se representará una lista desplegable para permitir que el usuario cambie entre las distintas vistas.
+La cuadrícula admite la ordenación y se paginará si el número de registros es mayor que el tamaño de página especificado. Si la **página web para la vista de detalles** se ha especificado, cada registro contendrá un vínculo a la página y el identificador del registro se anexará a la cadena de consulta junto al nombre de parámetro de la cadena de consulta de Id. La lista de entidades también admite varias vistas. Si se ha especificado más de una vista, se representará una lista desplegable para permitir que el usuario cambie en las distintas vistas.
 
-Los datos también se pueden filtrar por el usuario actual del portal, la cuenta de cliente primaria del usuario del portal actual y el sitio web del portal actual. Si existe un valor para el atributo de **usuario del portal** de condiciones de filtro y el **atributo de cuenta**, el portal presentará una lista desplegable para permitir al usuario ver sus propios datos (mis) o los datos de su cuenta de cliente primaria.
+Los datos también se pueden filtrar por el usuario del portal actual, la cuenta del cliente principal del usuario del portal actual y el sitio web del portal actual. Si existe un valor para las condiciones de filtro **Atributo de usuario del portal** y **Atributo de cuenta**, el portal representará una lista desplegable para permitir que el usuario vea sus propios datos (Mis) o los datos de su cuenta de cliente principal.
 
 ## <a name="add-an-entity-list-to-your-portal"></a>Agregar una lista de entidades al portal
 
-La lista de entidades contiene relaciones con las páginas web y distintas propiedades para controlar la inicialización de la lista de registros dentro del portal. La relación con la página web permite la recuperación dinámica de la definición de lista para un nodo de página determinado dentro del sitio Web. Para ver las vistas de entidad existentes o crear nuevas vistas de entidad, vaya a **portales** > **listas de entidades**.
+La lista de entidades contiene relaciones con páginas web y distintas propiedades para controlar la inicialización de la lista de registros dentro del portal. La relación con la página web permite la recuperación dinámica de la definición de lista para un determinado nodo de página en el sitio web. Para ver las vistas de entidad existentes o para crear nuevas vistas de entidad, vaya a **Portales** > **Listas de entidades**.
 
 > [!Note]
-> - Una lista de entidades debe estar asociada a una página web en un sitio Web determinado para que la lista se pueda ver en el sitio.
-> - No se admite el conjunto de opciones de selección múltiple en las listas de entidades.
+> - Una lista de entidades debe estar asociada con una página web para un determinado sitio web para que la lista sea visible en el sitio.
+> - El conjunto de opciones de selección múltiple no es compatible en listas de entidades.
 
-Las páginas web asociadas a la lista de entidades se pueden ver seleccionando el vínculo **páginas web** que se muestra en los vínculos de navegación **relacionados** en el menú de la izquierda. Al crear la lista de entidades, el primer paso es elegir la entidad para la que desea representar una lista en el portal. A continuación, elegirá una o varias vistas de aplicaciones controladas por modelos para representarlas.
+Las páginas web asociadas a la lista de entidades se pueden ver al seleccionar el vínculo **Páginas web** mostrado en los vínculos de navegación **Relacionados** en el menú de la izquierda. Al crear la lista de entidades, el primer paso es elegir la entidad para la que desea representar una lista del portal. Después elegirá una o varias vistas de aplicación basada en modelo para representar.
 
-Al crear o editar una página web, puede especificar una lista de entidades en el campo de búsqueda proporcionado en el formulario de la Página Web. La plantilla de página normalmente será la plantilla de página, pero puede ser una de las otras plantillas diseñadas para el contenido, ya que las plantillas maestras contienen la lógica necesaria para determinar si se debe representar una lista de entidades.
+Al crear o editar una página web, puede especificar una lista de entidades en el campo de búsqueda proporcionado en el formulario de la página web. La plantilla de página será normalmente la plantilla de "página", pero puede suele ser una de las otras plantillas diseñadas para contenido, ya que las plantillas maestras contienen la lógica necesaria para determinar si se debe representar una lista de entidades.
 
 ## <a name="entity-list-attributes-and-relationships"></a>Atributos y relaciones de la lista de entidades
 
 |              Nombre              |                                                                                                                                                                                        Descripción                                                                                                                                                                                         |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |              Nombre              |                                                                                                                                                                Nombre descriptivo del registro. Este campo es obligatorio.                                                                                                                                                                 |
-|          Nombre de entidad           |                                                                                                                                               Nombre de la entidad desde la que se cargará la vista de consulta guardada. Este campo es obligatorio.                                                                                                                                               |
-|              Visores              |                                                                          Vistas de consulta guardadas de la entidad de destino que se van a representar. Este campo es obligatorio. Si se ha especificado más de una vista, la página web contendrá una lista desplegable para permitir que el usuario cambie entre las distintas vistas.                                                                           |
-|           Tamaño de página            |                                                                                                                                            Valor entero que especifica el número de registros por página. Este campo es obligatorio. Valor predeterminado: 10                                                                                                                                             |
-|   Página Web para la vista de detalles    |                                                                                                        Una página web opcional que se puede vincular a para cada registro. El nombre del parámetro de cadena de consulta de identificador y el ID. de registro se anexarán a la cadena de consulta de la dirección URL a esta página web.                                                                                                        |
-|      Etiqueta del botón detalles      |                     Texto que se muestra para el botón vista de detalles si se ha especificado la **Página Web para la vista de detalles** . Valor predeterminado: ver detalles <br>**Nota**: para cada paquete de idioma instalado y habilitado para el entorno de Common Data Service, un campo estará disponible para escribir el mensaje en el idioma asociado.                      |
-|      Página Web para crear       |                                                                                                                                                             Una página web opcional que será el destino del botón crear.                                                                                                                                                              |
-|      Crear etiqueta del botón       |                              Texto que se muestra para el botón crear si se ha especificado la **Página Web para crear** . Valor predeterminado: crear <br>**Nota**: para cada paquete de idioma instalado y habilitado para el entorno de Common Data Service, un campo estará disponible para escribir el mensaje en el idioma asociado.                              |
-| Nombre de parámetro de cadena de consulta de identificador |                                                                                                                                           Un nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la página web para la vista de detalles. Valor predeterminado: ID.                                                                                                                                           |
-|        Texto de lista vacío         |  En **desuso**.  Mensaje que se muestra cuando no hay registros.<br>**Nota**: para cada paquete de idioma instalado y habilitado para el entorno de Common Data Service, un campo estará disponible para escribir el mensaje en el idioma asociado.                                                           |
-|     Atributo de usuario del portal      |                                                                                      Atributo de búsqueda opcional en la entidad principal que representa el registro de usuario del portal, ya sea contacto o usuario del sistema, al que se puede aplicar el identificador del usuario actual para filtrar los datos representados en la lista.                                                                                      |
-|       Atributo de cuenta        |                                                                                       Atributo de búsqueda opcional en la entidad principal que representa un registro de cuenta en el que se puede aplicar el valor de la cuenta de cliente primaria del contacto del usuario actual para filtrar los datos representados en la lista.                                                                                       |
-|       Atributo de sitio web        |                                                                                                          Atributo de búsqueda opcional en la entidad principal que representa el sitio web al que se puede aplicar el identificador del sitio web actual para filtrar los datos representados en la lista.                                                                                                          |
-|         Búsqueda habilitada         | Un valor booleano opcional que indica si la búsqueda debe estar habilitada. Se representará un cuadro de texto para permitir que los usuarios realicen una búsqueda rápida de registros. Use el carácter comodín de asterisco (\*) para buscar texto parcial. La búsqueda anexa los filtros de condición o para cada columna de la vista a las condiciones de filtro predefinidas existentes de la vista para consultar y devolver los registros resultantes. |
-|    Buscar texto de marcador de posición     |                                                                                                                                                      Cadena opcional utilizada como etiqueta mostrada en el cuadro de texto de la carga inicial.                                                                                                                                                       |
-|      Buscar texto de información sobre herramientas       |                                                                                                                                             Cadena opcional utilizada como información sobre herramientas que se muestra cuando el usuario apunta al cuadro de texto de **búsqueda** .                                                                                                                                              |
+|          Nombre de entidad           |                                                                                                                                               El nombre de la entidad desde la que se cargará la vista de Búsqueda rápida. Este campo es obligatorio.                                                                                                                                               |
+|              Vista              |                                                                          Las vistas de Búsqueda rápida de la entidad de destino que se va a representar. Este campo es obligatorio. Si se ha especificado más de una vista, la página web contendrá una lista desplegable para permitir que el usuario cambie en las distintas vistas.                                                                           |
+|           Tamaño de página            |                                                                                                                                            Un valor entero que especifica el número de registros por página. Este campo es obligatorio. Valor predeterminado: 10                                                                                                                                             |
+|   Página web para vista de detalles    |                                                                                                        Una página web opcional que se puede vincular para cada registro. El nombre de parámetro de cadena de consulta de id. y el identificador de registro se anexarán a la cadena de consulta de la dirección URL de esta página web.                                                                                                        |
+|      Etiqueta del botón Detalles      |                     El texto que aparece para el botón de vista de detalles si se ha especificado la **página web para la vista de detalles**. Valor predeterminado: Ver detalles <br>**Nota**: Para cada paquete de idioma instalado y activado para la organización del entorno de Common Data Service, un campo estará disponible para especificar el mensaje en el idioma asociado.                      |
+|      Página web para crear       |                                                                                                                                                             Una página web opcional que será el destino del botón Crear.                                                                                                                                                              |
+|      Etiqueta del botón Crear       |                              El texto que aparece para el botón Crear si se ha especificado **Página web para crear**. Valor predeterminado: Crear <br>**Nota**: Para cada paquete de idioma instalado y activado para la organización del entorno de Common Data Service, un campo estará disponible para especificar el mensaje en el idioma asociado.                              |
+| Nombre de parámetro de cadena de consulta de id. |                                                                                                                                           Un nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la Página web para vista de detalles. Valor predeterminado: id                                                                                                                                           |
+|        Texto de lista vacía         |  **Obsoleto**.  El mensaje que se muestra cuando no hay registros.<br>**Nota**: Para cada paquete de idioma instalado y activado para la organización del entorno de Common Data Service, un campo estará disponible para especificar el mensaje en el idioma asociado.                                                           |
+|     Atributo de usuario del portal      |                                                                                      Un atributo de búsqueda opcional en la entidad principal que representa el registro de usuario del portal, contacto o usuario del sistema, al que se puede aplicar el identificador del usuario actual para filtrar los datos representados en la lista.                                                                                      |
+|       Atributo de cuenta        |                                                                                       Un atributo de búsqueda opcional en la entidad principal que representa el registro de cuenta al que se puede aplicar el valor de cuenta de Cliente primario del contacto del usuario actual para filtrar los datos representados en la lista.                                                                                       |
+|       Atributo de sitio web        |                                                                                                          Un atributo de búsqueda opcional en la entidad principal que representa el sitio web al que se puede aplicar el ID del sitio web actual para filtrar los datos representados en la lista.                                                                                                          |
+|         Búsqueda habilitada         | Un valor booleano opcional que indica si se debe habilitar la búsqueda. Un cuadro de texto se generará para permitir a los usuarios realizar una búsqueda rápida de registros. Para realizar búsquedas de texto parcial, use el carácter comodín asterisco (\*). La búsqueda anexa filtros de condición 'or' para cada columna en la vista a las condiciones de filtro predefinidas existentes de la vista para consultar y devolver los registros resultantes. |
+|    Texto de marcador de posición de búsqueda     |                                                                                                                                                      Una cadena opcional usada como la etiqueta que se muestra en el cuadro de texto en la carga inicial.                                                                                                                                                       |
+|      Texto de información sobre herramientas de búsqueda       |                                                                                                                                             Una cadena opcional usada como información sobre herramientas que se muestra cuando el usuario apunta al cuadro de texto **Buscar**.                                                                                                                                              |
 |                                |                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## <a name="add-custom-javascript"></a>Agregar JavaScript personalizado
 
-La pestaña Opciones del formulario contiene un área de texto en la que puede escribir [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)]personalizado; Si la página incluye la biblioteca de jQuery, puede usarla aquí también. El bloque de script se agregará en la parte inferior de la página web justo antes de la etiqueta del formulario de cierre de la página.
+La pestaña Opciones del formulario contiene un área de texto en la que puede introducir [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] personalizado. Si la página incluye biblioteca de jQuery, puede usarla aquí también. El bloque de script se agregará en la parte inferior de la página web justo delante de la etiqueta de formulario de cierre de la página.
 
 ![Ejemplo de JavaScript personalizado](../media/custom-javascript-example.png "Ejemplo de JavaScript personalizado")  
 
-La lista obtiene sus datos de forma asincrónica y, cuando se completa, desencadenará un evento `loaded` que el [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] personalizado pueda escuchar y hacer algo con los elementos de la cuadrícula. El código siguiente es un ejemplo trivial:
+La lista obtiene sus datos de forma asincrónica y, cuando está competa, desencadena un evento `loaded` que su [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] personalizado pueda escuchar y hacer algo con los elementos de la cuadrícula. El siguiente código es un ejemplo trivial:
 ```
 $(document).ready(function (){
 $(".entitylist.entity-grid").on("loaded", function () {
@@ -76,7 +76,7 @@ $(this).css("background-color", "yellow");
 }); 
 ```
 
-Busque un campo de atributo determinado y obtenga su valor para modificar posiblemente la representación del valor. El código siguiente obtiene cada celda de la tabla que contiene el valor del atributo `accountnumber`. Reemplace `accountnumber` por un atributo adecuado para su entidad y vista.
+Busque un campo de atributo particular y obtenga su valor para modificar posiblemente la representación del valor. El siguiente código obtiene cada celda de la tabla que contenga el valor del atributo `accountnumber`. Reemplace `accountnumber` con un atributo adecuado para la entidad y vista.
 ```
 $(document).ready(function (){
    $(".entitylist.entity-grid").on("loaded", function () {
@@ -87,424 +87,424 @@ $(document).ready(function (){
    });
 });
 ```
-## <a name="entity-list-configuration"></a>Configuración de la lista de entidades
+## <a name="entity-list-configuration"></a>Configuración de listas de entidades
 
-Puede habilitar y configurar fácilmente las acciones (crear, editar, eliminar, etc.) para los registros de una lista de entidades. También es posible invalidar etiquetas, tamaños y otros atributos predeterminados para que la lista de entidades se muestre exactamente como se desea.
+Puede fácilmente habilitar y configurar acciones (crear, editar, eliminar, etc.) para registros en una lista de entidades. También es posible reemplazar etiquetas predeterminadas, tamaños y otro atributos para que la lista de entidades se muestre exactamente de la manera que desea.
 
-Esta configuración se encuentra en la sección configuración del formulario lista de entidades. De forma predeterminada, solo se muestra la **configuración básica** . Seleccione **Configuración avanzada** para ver la configuración adicional.
+Estos valores se encuentran en la sección Configuración del formulario de lista de entidades. De forma predeterminada, sólo aparece **Configuración básica**. Seleccione **Configuración avanzada** para ver configuración adicional.
 
 ![Configurar una lista de entidades](../media/configure-entitylist.png "Configurar una lista de entidades")  
 
-**Sus**
+**Atributos**
 
 |Nombre                   |Descripción|
 |---------------------------|-----------|
 |**Configuración básica**         |   |
-| Ver acciones              |Use para agregar botones de acción para las acciones que se aplican al conjunto de entidades y que aparecerán encima de la cuadrícula. Las acciones disponibles son: <ul><li>A</li> <li>Download</li></ul> Al seleccionar una de estas opciones se muestra un área de configuración para esa acción.|
-| Acciones de elementos             |Use para agregar botones de acción para las acciones que se aplican a un registro individual y que aparecerán para cada fila de la cuadrícula, siempre que los permisos de entidad hayan concedido el privilegio adecuado. Las acciones que están disponibles con carácter general son:<ul><li>Detalles</li><li>Editar</li><li>Elimínelos</li><li>Flujo</li><li>Activación</li><li>Desactivar</li></ul> Al seleccionar una de estas opciones se muestra un área de configuración para esa acción. Consulte a continuación los detalles de cada acción. Además, algunas entidades tienen acciones especiales que están disponibles para cada entidad:<ul><li>Calcular el valor de la oportunidad (oportunidad)</li><li>Cancelar acción de caso (incidente)</li><li>Cerrar (resolver) acción de caso (incidente)</li><li>Convertir comillas en pedido (comillas)</li><li>Convertir el orden en factura (SalesOrder)</li><li>Generar oferta a partir de la oportunidad (oportunidad)</li><li>Acción de la oportunidad de pérdida (oportunidad)</li><li>Acción de la oportunidad de ganar (oportunidad)</li><li>Volver a abrir acción de caso (incidente)</li><li>Establecimiento de la oportunidad en espera (oportunidad)</li></ul>|
-| Reemplazar atributos de columna|Se usa para invalidar la configuración de presentación de columnas individuales en la cuadrícula.<ul><li>Attribute: nombre lógico de la columna que desea invalidar</li><li>Nombre para mostrar: nuevo título de columna para invalidar el valor predeterminado</li><li>Width: ancho (en porcentaje o píxeles) de la columna para reemplazar el valor predeterminado. Vea también estilo de ancho de columna de cuadrícula</li></ul> Para invalidar la configuración de una columna, seleccione **+ columna** y rellene los detalles.|
+| Acciones de vista              |Úselo para agregar botones de acción para las acciones que son aplicables al conjunto de entidades y aparecerán encima de la cuadrícula. Las acciones disponibles son: <ul><li>Crear</li> <li>Descargar</li></ul> Seleccione una de estas opciones para mostrar un área de configuración para dicha acción.|
+| Acciones de elementos             |Úselo para agregar los botones de acción para las acciones que son aplicables a un registro individual y aparecerán para cada fila de la cuadrícula siempre que el privilegio apropiado haya sido otorgado por permisos de entidad. Las acciones disponibles generalmente son:<ul><li>Detalles</li><li>Edición</li><li>Eliminar</li><li>Flujo de trabajo</li><li>Activar</li><li>Desactivar</li></ul> Seleccione una de estas opciones para mostrar un área de configuración para dicha acción. Consulte a continuación para obtener más información acerca de cada acción. Además, determinadas entidades tienen acciones específicas que están disponibles para estos por entidad:<ul><li>Calcular valor de oportunidad (oportunidad)</li><li>Cancelar acción del caso (incidente)</li><li>Cerrar (resolver) acción de caso (incidente)</li><li>Convierta oferta en pedido (oferta)</li><li>Convertir pedido en factura (salesorder)</li><li>Generar oferta a partir de oportunidad (oportunidad)</li><li>Perder acción de oportunidad (oportunidad)</li><li>Ganar acción de oportunidad (oportunidad)</li><li>Reabrir acción del caso (incidente)</li><li>Establecer oportunidad en espera (oportunidad)</li></ul>|
+| Reemplazar atributos de columna|Úselo para reemplazar la configuración de presentación de las columnas individuales de la cuadrícula.<ul><li>Atributo: Nombre lógico de la columna que desea reemplazar.</li><li>Nombre para mostrar: Nuevo título de columna para reemplazar el predeterminado</li><li>Ancho: Ancho (en porcentaje o píxeles) de la columna para reemplazar el valor predeterminado. Vea también Estilo de ancho de columnas de cuadrícula</li></ul> Para reemplazar los valores de una columna, seleccione **+ Columna** y rellene los detalles.|
 |**Configuración avanzada**      |  |
-| Cargando mensaje           |Invalida el mensaje HTML predeterminado que aparece mientras se carga la cuadrícula.|
-| Mensaje de error             |Invalida el mensaje HTML predeterminado que aparece cuando se produce un error al cargar la cuadrícula.|
-| Mensaje de acceso denegado     |Invalida el mensaje HTML predeterminado que aparece cuando un usuario no tiene suficientes permisos de entidad para ver la lista de entidades.|
-| Mensaje vacío             |Invalida el mensaje HTML que aparece cuando la cuadrícula no contiene datos.|
-| Cuadro de diálogo formulario de detalles       |Controla la configuración del cuadro de diálogo que aparece cuando un usuario activa la acción de detalles.|
-| Cuadro de diálogo Editar formulario          |Controla la configuración del cuadro de diálogo que aparece cuando un usuario activa la acción de edición.|
-| Cuadro de diálogo Crear formulario        |Controla la configuración del cuadro de diálogo que aparece cuando un usuario activa la acción de creación.|
-| Cuadro de diálogo eliminar             |Controla la configuración del cuadro de diálogo que aparece cuando un usuario activa la acción de eliminación.|
-| Cuadro de diálogo de error              |Controla la configuración del cuadro de diálogo que aparece cuando se produce un error durante cualquier acción.|
-| Clase CSS                 |Especifique una clase o clases CSS que se aplicarán al elemento HTML que contiene el área de cuadrícula completa, incluidos los botones de acción y cuadrícula.|
-| Grid CSS (clase)            |Especifique una clase o clases CSS que se aplicarán al elemento\> de la tabla de \<HTML de la lista de entidades.|
-| Estilo de ancho de columna de cuadrícula   |Configura si los valores de **ancho** de los atributos de columna de invalidación se especifican en **píxeles** o como **porcentaje**.|
+| Cargando mensaje           |Reemplaza el mensaje HTML predeterminado que aparece mientras se carga la cuadrícula.|
+| Mensaje de error             |Reemplaza el mensaje HTML predeterminado que aparece cuando se produce un error mientras la cuadrícula se carga.|
+| Mensaje de acceso denegado     |Reemplaza el mensaje HTML predeterminado que aparece cuando el usuario no tiene permisos de entidad suficientes para ver la lista de entidades.|
+| Mensaje vacío             |Reemplaza el mensaje HTML que aparece cuando la cuadrícula no contiene datos.|
+| Diálogo de formulario de detalles       |Controla los valores del cuadro de diálogo que aparece cuando un usuario activa la acción Detalles|
+| Diálogo de editar formulario          |Controla los valores del cuadro de diálogo que aparece cuando un usuario activa la acción Editar|
+| Diálogo de crear formulario        |Controla los valores del cuadro de diálogo que aparece cuando un usuario activa la acción Crear|
+| Diálogo de eliminar             |Controla los valores del cuadro de diálogo que aparece cuando un usuario activa la acción Eliminar|
+| Diálogo de error              |Controla los valores del cuadro de diálogo que aparece cuando se produce un error durante cualquier acción.|
+| Clase de CSS                 |Especifique una clase o clases CSS que se aplicarán al elemento HTML que contiene el área completa de cuadrícula, incluida la cuadrícula y los botones de acción.|
+| Clase CSS de cuadrícula            |Especifique una o varias clases CSS que se aplicarán al elemento \<table\> HTML de la lista de entidades.|
+| Estilo de ancho de columnas de cuadrícula   |Configura si los valores **Ancho** en Reemplazar atributos de columna están especificados en **Píxeles** o **Porcentaje**.|
 
-**Configuración de acción general**
+**Configuración general de acciones**
 
-En general, las acciones de entidad tienen opciones de configuración que se pueden configurar. En todos los casos, esto es para proporcionar más opciones en términos de personalización, y los campos no son necesarios. Basta con agregar la acción para que se realice la acción en el portal, siempre que los permisos de entidad hayan concedido el privilegio adecuado.
+En general, las acciones de la entidad tienen valores que se pueden configurar. En todos los casos, este para ofrecerle más opciones en relación con la personalización, y los campos no son necesarios. Al agregar la acción simplemente podrá realizarse la acción en el portal, siempre que los permisos de la entidad hayan concedido el privilegio adecuado.
 
-Por lo general, puede configurar el cuadro de diálogo correspondiente para cada acción, que solo aparecerá si selecciona **confirmación requerida**.
+Generalmente, puede configurar el cuadro de diálogo correspondiente para cada acción, que aparecerá solo si se selecciona **Confirmación necesaria**.
 
 
 | Nombre                   | Descripción                                                                                                                                                                                                                   |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Configuración básica**         |                                                                                                                                                                                                                               |
-| ¿Se requiere confirmación? | Determina si una confirmación solicitará al usuario que confirme cuando se selecciona la acción.                                                                                                                                 |
+| ¿Se requiere confirmación? | Determina si una confirmación pedirá al usuario que confirme cuando se selecciona la acción.                                                                                                                                 |
 | **Configuración avanzada**      |                                                                                                                                                                                                                               |
-| Confirmación           | Invalida el mensaje HTML de confirmación que se muestra cuando el usuario activa la acción.                                                                                                                                         |
-| Etiqueta del botón           | Invalida la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                    |
-| Información sobre herramientas del botón         | Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción que se muestra en la fila de la lista de entidades.                                                                                           |
-| Button (clase CSS)       | Agrega una clase CSS al botón.                                                                                                                                                      |
-| Redirigir a la página web    | Algunas acciones (no todas) permiten un redireccionamiento al completarse la acción. Muy recomendable para la acción de eliminación, opcional en la mayoría de los demás casos, puede elegir una página web a la que redirigirse cuando se complete la acción. |
-| URL de redireccionamiento           | Una alternativa a la opción **redirigir a la página web**&mdash;permite redirigir a una dirección URL específica.                                                                                                                                   |
+| Confirmación           | Reemplaza el mensaje HTML de confirmación que se muestra cuando el usuario activa la acción.                                                                                                                                         |
+| Etiqueta de botón           | Reemplaza la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                    |
+| Información sobre herramientas de botón         | Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción mostrada en la fila de la lista de entidades.                                                                                           |
+| Clase CSS del botón       | Agrega una clase CSS al botón.                                                                                                                                                      |
+| Redireccionar a página web    | Algunas acciones (no todas) permiten un redireccionamiento al finalizar la acción. Sumamente recomendado para la acción Eliminar, opcional en la mayoría de los otros casos, puede elegir una página web a la que redirigir cuando se completa la acción. |
+| URL de redireccionamiento           | Una alternativa a la opción **Redireccionar a página web**&mdash;permite redirigir a una dirección URL específica.                                                                                                                                   |
 
-**Configuración avanzada del cuadro de diálogo general**
+**Configuración avanzada del cuadro de diálogo General**
 
-|**Nombre**                 |**Description**                                                                                                                         |
+|**Nombre**                 |**Descripción**                                                                                                                         |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Título                    | Invalida el código HTML que aparece en la barra de título del cuadro de diálogo.|                                                                         
-| Texto del botón primario      | Invalida el código HTML que aparece en el botón principal (eliminar) del cuadro de diálogo.                                                         |
-| Cerrar texto del botón        | Invalida el código HTML que aparece en el botón Cerrar (Cancelar) del cuadro de diálogo.                                                           |
-| Descartar texto de Sr   | Invalida el texto del lector de pantalla asociado al botón descartar del cuadro de diálogo.                                                           |
-| Tamaño                     | Especifica el tamaño del cuadro de diálogo eliminar. Las opciones son predeterminadas, grandes y pequeñas. El tamaño predeterminado es default. |
-| Clase CSS                | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
-| Tile (clase CSS)           | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
-| Clase CSS de botón principal | Especifique una clase o clases CSS que se aplicarán al botón principal (eliminar) del cuadro de diálogo.                                          |
-| Botón Cerrar (clase CSS)   | Especifique una clase o clases CSS que se aplicarán al botón Cerrar (Cancelar) del cuadro de diálogo.                                            |
+| Cargo                    | Reemplaza el HTML que aparece en la barra de título del cuadro de diálogo.|                                                                         
+| Texto del botón primario      | Reemplaza el HTML que aparece en el botón Principal (Eliminar) del cuadro de diálogo.                                                         |
+| Texto del botón Cerrar        | Reemplaza el HTML que aparece en el botón Cerrar (Cancelar) del cuadro de diálogo.                                                           |
+| Texto del lector de pantalla del botón Descartar   | Reemplaza el texto del lector de pantalla asociado al botón Descartar del cuadro de diálogo.                                                           |
+| Tamaño                     | Especifica el tamaño de cuadro de diálogo Eliminar. Las opciones son: Predeterminado, Grande y Pequeño. El tamaño predeterminado es Predeterminado. |
+| Clase de CSS                | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
+| Clase CSS de título           | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
+| Clase CSS del botón primario | Especifique una clase o clases CSS que se aplicarán al botón Principal (Eliminar) del cuadro de diálogo.                                          |
+| Clase CSS del botón Cerrar   | Especifique una clase o clases CSS que se aplicarán al botón Cerrar (Cancelar) del cuadro de diálogo.                                            |
 
-**Crear configuración de acción**
+**Configuración de la Acción Crear**
 
-La habilitación de una **acción de creación** representa un botón encima de la lista de entidades que, cuando se selecciona, abre un cuadro de diálogo con un formulario de entidad que el usuario puede usar para crear un nuevo registro, siempre que los permisos de entidad hayan concedido el privilegio de creación.
+Habilitar una **Acción Crear** representa un botón sobre la lista de entidades, cuando se selecciona, abre un cuadro de diálogo con un formulario de entidad que permite al usuario crear un nuevo registro, siempre que los permisos de la entidad hayan concedido el privilegio "Crear".
 
 | Nombre               | Descripción                          |
 |--------------------|--------------------------------------|
 | **Configuración básica**     |                                                                                                                                                                       |
-| Formulario de la entidad     | Especifica el formulario de la entidad que se usará para crear el nuevo registro. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br>**Nota**: Si el tipo de entidad de la lista de entidades no tiene ningún formulario de entidad, la lista desplegable aparecerá vacía. Si no se proporciona ningún formulario de entidad para la acción de creación, se omitirá y el botón no se representará en la lista de entidades. |
+| Formulario de entidad     | Especifica el formulario de entidad que se usará para crear el nuevo registro. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br>**Nota**: Si el tipo de entidad de la lista de entidades no tiene formularios de entidad, la lista desplegable aparecerá vacía. Si no se proporciona un formulario de entidad para la acción Crear, se ignorará y el botón no se representará en la lista de entidades. |
 | **Configuración avanzada**          |                                                                                                                                                                       |
-| Etiqueta del botón                                                                                                                                                                                                                 | Invalida la etiqueta HTML que se muestra en el botón crear acción situado encima de la lista.                                                                                        |
-| Información sobre herramientas del botón                                                                                                                                                                                                               | Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón crear acción.                                                                         |
+| Etiqueta de botón                                                                                                                                                                                                                 | Reemplaza la etiqueta HTML mostrada en el botón de acción Crear encima de la lista.                                                                                        |
+| Información sobre herramientas de botón                                                                                                                                                                                                               | Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón de acción Crear.                                                                         |
 
-**Cuadro de diálogo Crear formulario de la configuración de avance**
+**Configuración avanzada del cuadro de diálogo Crear formulario**
 
-|**Nombre**               |**Description**                                                                                                                                 |
+|**Nombre**               |**Descripción**                                                                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cargando mensaje        | Invalida el mensaje que aparece mientras se está cargando el cuadro de diálogo.                                                                                  |
-| Título                  | Invalida el código HTML que aparece en la barra de título del cuadro de diálogo.                                                                                  |
-| Descartar texto de Sr | Invalida el texto del lector de pantalla asociado al botón descartar del cuadro de diálogo.                                                                   |
-| Tamaño                   | Especifica el tamaño del cuadro de diálogo Crear formulario. Las opciones son predeterminadas, grandes y pequeñas. El tamaño predeterminado es grande. |
-| Clase CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                                    |
-| Title CSS (clase)        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                        |
+| Cargando mensaje        | Reemplaza el mensaje que aparece mientras el cuadro de diálogo se carga.                                                                                  |
+| Cargo                  | Reemplaza el HTML que aparece en la barra de título del cuadro de diálogo.                                                                                  |
+| Texto del lector de pantalla del botón Descartar | Reemplaza el texto del lector de pantalla asociado al botón Descartar del cuadro de diálogo.                                                                   |
+| Tamaño                   | Especifica el tamaño del cuadro de diálogo Crear formulario. Las opciones son: Predeterminado, Grande y Pequeño. El tamaño predeterminado es Grande. |
+| Clase de CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                                    |
+| Clase CSS de título        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                        |
 
-**Descargar configuración de acción**
+**Configuración de la Acción Descargar**
 
-Al habilitar una **acción de descarga** se representa un botón encima de la lista de entidades que, cuando se selecciona, descarga los datos de la lista en un archivo [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)] (. xlsx).
+Habilitar una **Acción Descargar** representa un botón encima de la lista de entidades que, cuando se selecciona, descarga los datos de la lista en un archivo [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)] (.xlsx).
 
 | Nombre              | Descripción                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------|
 | **Configuración básica**    |                                                                                                    |
 | Ninguna              |                                                                                                    |
 | **Configuración avanzada** |                                                                                                    |
-| Etiqueta del botón      | Invalida la etiqueta HTML que se muestra en el botón Descargar acción situado encima de la lista de entidades.            |
-| Información sobre herramientas del botón    | Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón Descargar acción. |
+| Etiqueta de botón      | Reemplaza la etiqueta HTML mostrada en el botón de acción Descargar encima de la lista de entidades.            |
+| Información sobre herramientas de botón    | Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón de acción Descargar. |
 
-**Configuración de la acción de detalles**
+**Configuración de la Acción Detalles**
 
-Al habilitar una **acción de detalles** , un usuario puede ver un formulario de entidad de solo lectura de una fila seleccionada en la lista de entidades.
+Habilitar una **Acción Detalles** permite al usuario ver un formulario de entidad de solo lectura de una fila seleccionada en la lista de entidades.
 
 
 |                 Nombre                  |                                                                                                                                                                                                                      Descripción                                                                                                                                                                                                                      |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |          **Configuración básica**           |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|              Formulario de la entidad              | Especifica el formulario de la entidad que se usará para ver los detalles de la entidad seleccionada. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene ningún formulario de entidad, la lista desplegable aparecerá vacía. Si no se proporciona ningún formulario de entidad para la acción de detalles, se omitirá y el botón no se representará en la lista de entidades. |
+|              Formulario de entidad              | Especifica el formulario de entidad que se usará para ver los detalles de la entidad seleccionada. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene formularios de entidad, la lista desplegable aparecerá vacía. Si no se proporciona un formulario de entidad para la acción Detalles, se ignorará y el botón no se representará en la lista de entidades. |
 |         **Configuración avanzada**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Nombre de parámetro de cadena de consulta de ID. de registro |                                                                    Especifica el nombre del parámetro de cadena de consulta que se usará para seleccionar la entidad que se va a ver en el formulario de la entidad seleccionada. Debe coincidir con el valor del nombre de parámetro de la cadena de consulta de ID. de registro del formulario de la entidad. El valor predeterminado de este campo, tanto aquí como en configuración de formulario de la entidad, es **ID**.                                                                     |
-|             Etiqueta del botón              |                                                                                                                                                                                      Invalida la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                                                       |
-|            Información sobre herramientas del botón             |                                                                                                                                                             Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción que se muestra en la fila de la lista de entidades.                                                                                                                                                              |
+| Nombre del parámetro de cadena de consulta de id. de registro |                                                                    Especifica el nombre del parámetro de cadena de consulta que se usará para seleccionar la entidad para ver en el formulario de entidad seleccionado. Este debe coincidir con el valor de Nombre del parámetro de cadena de consulta de id. de registro de ese formulario de entidad. El valor predeterminado de este campo, aquí y en la configuración del formulario de entidad, es **id**.                                                                     |
+|             Etiqueta de botón              |                                                                                                                                                                                      Reemplaza la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                                                       |
+|            Información sobre herramientas de botón             |                                                                                                                                                             Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                              |
 
-**Detalles configuración avanzada del cuadro de diálogo**
+**Configuración avanzada del cuadro de diálogo Detalles**
 
-|**Nombre**               |**Description**                                                                                                                         |
+|**Nombre**               |**Descripción**                                                                                                                         |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Cargando mensaje        | Invalida el código HTML que aparece cuando se carga el cuadro de diálogo.                                                                             |
-| Título                  | Invalida el código HTML que aparece en la barra de título del cuadro de diálogo.                                                                         |
-| Descartar texto de Sr | Invalida el texto del lector de pantalla asociado al botón descartar del cuadro de diálogo.                                                           |
-| Tamaño                   | Especifica el tamaño del cuadro de diálogo Detalles. Las opciones son predeterminadas, grandes y pequeñas. El tamaño predeterminado es grande. |
-| Clase CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
-| Title CSS (clase)        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
+| Cargando mensaje        | Reemplaza el HTML que aparece cuando el cuadro de diálogo se carga.                                                                             |
+| Cargo                  | Reemplaza el HTML que aparece en la barra de título del cuadro de diálogo.                                                                         |
+| Texto del lector de pantalla del botón Descartar | Reemplaza el texto del lector de pantalla asociado al botón Descartar del cuadro de diálogo.                                                           |
+| Tamaño                   | Especifica el tamaño del cuadro de diálogo Detalles. Las opciones son: Predeterminado, Grande y Pequeño. El tamaño predeterminado es Grande. |
+| Clase de CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
+| Clase CSS de título        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
 
-**Editar configuración de acción**
+**Configuración de la Acción Editar**
 
-Habilitar una **acción de edición** permite a un usuario ver un formulario de entidad editable que está enlazado a datos con el registro de la fila seleccionada de la lista de entidades, siempre que los permisos de entidad hayan concedido el privilegio de escritura.
+Habilitar una **Acción Editar** permite al usuario ver un formulario de entidad editable que está enlazado a datos al registro de la fila seleccionada de la lista de entidades siempre que los permisos de entidad hayan concedido el privilegio de 'Escritura'.
 
 
 |                 Nombre                  |                                                                                                                                                                                                             Descripción                                                                                                                                                                                                             |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |          **Configuración básica**           |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|              Formulario de la entidad              | Especifica el formulario de la entidad que se usará para editar la entidad seleccionada. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene ningún formulario de entidad, la lista desplegable aparecerá vacía. Si no se proporciona ningún formulario de entidad para la acción de edición, se omitirá y el botón no se representará en la lista de entidades. |
+|              Formulario de entidad              | Especifica el formulario de entidad que se usará para editar la entidad seleccionada. La lista desplegable incluirá todos los formularios de entidad que estén configurados para el tipo de entidad de la lista de entidades. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene formularios de entidad, la lista desplegable aparecerá vacía. Si no se proporciona un formulario de entidad para la acción Editar, se ignorará y el botón no se representará en la lista de entidades. |
 |         **Configuración avanzada**         |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Nombre de parámetro de cadena de consulta de ID. de registro |                                                           Especifica el nombre del parámetro de cadena de consulta que se usará para seleccionar la entidad que se va a editar en el formulario de la entidad seleccionada. Debe coincidir con el valor del nombre de parámetro de la cadena de consulta de ID. de registro del formulario de la entidad. El valor predeterminado de este campo, tanto aquí como en configuración de formulario de la entidad, es **ID**.                                                            |
-|             Etiqueta del botón              |                                                                                                                                                                             Invalida la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                                              |
-|            Información sobre herramientas del botón             |                                                                                                                                                    Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción que se muestra en la fila de la lista de entidades.                                                                                                                                                     |
+| Nombre del parámetro de cadena de consulta de id. de registro |                                                           Especifica el nombre del parámetro de cadena de consulta que se usará para seleccionar la entidad para editar en el formulario de entidad seleccionado. Este debe coincidir con el valor de Nombre del parámetro de cadena de consulta de id. de registro de ese formulario de entidad. El valor predeterminado de este campo, aquí y en la configuración del formulario de entidad, es **id**.                                                            |
+|             Etiqueta de botón              |                                                                                                                                                                             Reemplaza la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                                              |
+|            Información sobre herramientas de botón             |                                                                                                                                                    Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción mostrada en la fila de la lista de entidades.                                                                                                                                                     |
 
-**Cuadro de diálogo Editar formulario Configuración avanzada**
+**Configuración avanzada del cuadro de diálogo Editar formulario**
 
-|**Nombre**               |**Description**                                                                                                                   |
+|**Nombre**               |**Descripción**                                                                                                                   |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cargando mensaje        | Invalida el código HTML que aparece cuando se carga el cuadro de diálogo.                                                                       |
-| Título                  | Invalida el código HTML que aparece en la barra de título del cuadro de diálogo.                                                                   |
-| Descartar texto de Sr | Invalida el texto del lector de pantalla asociado al botón descartar del cuadro de diálogo.                                                     |
-| Tamaño                   | Especifica el tamaño del cuadro de diálogo de edición. Las opciones son predeterminadas, grandes y pequeñas. El tamaño predeterminado es grande. |
-| Clase CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                      |
-| Title CSS (clase)        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                          |
+| Cargando mensaje        | Reemplaza el HTML que aparece cuando el cuadro de diálogo se carga.                                                                       |
+| Cargo                  | Reemplaza el HTML que aparece en la barra de título del cuadro de diálogo.                                                                   |
+| Texto del lector de pantalla del botón Descartar | Reemplaza el texto del lector de pantalla asociado al botón Descartar del cuadro de diálogo.                                                     |
+| Tamaño                   | Especifica el tamaño del cuadro de diálogo Editar. Las opciones son: Predeterminado, Grande y Pequeño. El tamaño predeterminado es Grande. |
+| Clase de CSS              | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                      |
+| Clase CSS de título        | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                          |
 
-**Eliminar configuración de acción**
+**Configuración de la Acción Eliminar**
 
-Al habilitar una **acción de eliminación** , el usuario puede eliminar de forma permanente el registro de la fila seleccionada de la lista de entidades, siempre que los permisos de entidad hayan concedido el privilegio de eliminación.
+Habilitar **Acción Eliminar** permite al usuario eliminar permanentemente el registro de la fila seleccionada de la lista de entidades, siempre que permisos de entidad haya concedido el privilegio 'Eliminar'.
 
 | Nombre              | Descripción                                                                                                                         |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | **Configuración básica**    |                                                                                                                                     |
-| Ninguna              |                                                                                                                                     |
+| ninguna              |                                                                                                                                     |
 | **Configuración avanzada** |                                                                                                                                     |
-| Confirmación      | Invalida el mensaje HTML de confirmación que se muestra cuando el usuario activa la acción de eliminación.                                        |
-| Etiqueta del botón      | Invalida la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                          |
-| Información sobre herramientas del botón    | Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción que se muestra en la fila de la lista de entidades. |
+| Confirmación      | Reemplaza el mensaje HTML de confirmación que se muestra cuando el usuario activa la acción Eliminar.                                        |
+| Etiqueta de botón      | Reemplaza la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades.                                                          |
+| Información sobre herramientas de botón    | Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción mostrada en la fila de la lista de entidades. |
 
-**Eliminar configuración del cuadro de diálogo (avanzado)**
+**Configuración avanzada del cuadro de diálogo Eliminar**
 
-|**Nombre**                 |**Description**                                                                                                                         |
+|**Nombre**                 |**Descripción**                                                                                                                         |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Título                    | Invalida el código HTML que aparece en la barra de título del cuadro de diálogo.                                                                         |
-| Texto del botón primario      | Invalida el código HTML que aparece en el botón principal (eliminar) del cuadro de diálogo.                                                         |
-| Cerrar texto del botón        | Invalida el código HTML que aparece en el botón Cerrar (Cancelar) del cuadro de diálogo.                                                           |
-| Descartar texto de Sr   | Invalida el texto del lector de pantalla asociado al botón descartar del cuadro de diálogo.                                                           |
-| Tamaño                     | Especifica el tamaño del cuadro de diálogo eliminar. Las opciones son predeterminadas, grandes y pequeñas. El tamaño predeterminado es default. |
-| Clase CSS                | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
-| Title CSS (clase)          | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
-| Clase CSS de botón principal | Especifique una clase o clases CSS que se aplicarán al botón principal (eliminar) del cuadro de diálogo.                                          |
-| Botón Cerrar (clase CSS)   | Especifique una clase o clases CSS que se aplicarán al botón Cerrar (Cancelar) del cuadro de diálogo.                                            |
+| Cargo                    | Reemplaza el HTML que aparece en la barra de título del cuadro de diálogo.                                                                         |
+| Texto del botón primario      | Reemplaza el HTML que aparece en el botón Principal (Eliminar) del cuadro de diálogo.                                                         |
+| Texto del botón Cerrar        | Reemplaza el HTML que aparece en el botón Cerrar (Cancelar) del cuadro de diálogo.                                                           |
+| Texto del lector de pantalla del botón Descartar   | Reemplaza el texto del lector de pantalla asociado al botón Descartar del cuadro de diálogo.                                                           |
+| Tamaño                     | Especifica el tamaño de cuadro de diálogo Eliminar. Las opciones son: Predeterminado, Grande y Pequeño. El tamaño predeterminado es Predeterminado. |
+| Clase de CSS                | Especifique una clase o clases CSS que se aplicarán al cuadro de diálogo resultante.                                                            |
+| Clase CSS de título          | Especifique una clase o clases CSS que se aplicarán a la barra de título del cuadro de diálogo resultante.                                                |
+| Clase CSS del botón primario | Especifique una clase o clases CSS que se aplicarán al botón Principal (Eliminar) del cuadro de diálogo.                                          |
+| Clase CSS del botón Cerrar   | Especifique una clase o clases CSS que se aplicarán al botón Cerrar (Cancelar) del cuadro de diálogo.                                            |
 
-**Configuración de la acción de flujo de trabajo**
+**Configuración de la Acción de flujo de trabajo**
 
-La habilitación de una **acción de flujo de trabajo** permite a un usuario ejecutar un flujo de trabajo a petición en el registro de la fila seleccionada de la lista de entidades. Puede agregar cualquier número de acciones de flujo de trabajo a la lista de entidades.
+Habilitar una **Acción de flujo de trabajo** permite al usuario ejecutar un flujo de trabajo a petición para el registro de la fila seleccionada de la lista de entidades. Puede agregar cualquier número de acciones de flujo de trabajo a la lista de entidades.
 
 
 |         Nombre          |                                                                                                                                                           Descripción                                                                                                                                                           |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **Configuración básica**   |                                                                                                                                                                                                                                                                                                                                 |
-|       Flujo        | Especifica el flujo de trabajo a petición que se ejecutará cuando el usuario Active esta acción. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene ningún flujo de trabajo, la lista desplegable aparecerá vacía. Si no se proporciona ningún flujo de trabajo para la acción de flujo de trabajo, se omitirá y el botón no se representará en la lista de entidades. |
-|     Etiqueta del botón      |                                                                                                                 Establece la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades. Esta configuración es obligatoria.                                                                                                                 |
+|       Flujo de trabajo        | Especifica el flujo de trabajo a petición que se ejecutará cuando el usuario active esta acción. <br> **Nota**: Si el tipo de entidad de la lista de entidades no tiene flujos de trabajo, la lista desplegable aparecerá vacía. Si no se proporciona un flujo de trabajo para la acción Flujo de trabajo, se ignorará y el botón no se representará en la lista de entidades. |
+|     Etiqueta de botón      |                                                                                                                 Establece la etiqueta HTML para esta acción mostrada en la fila de la lista de entidades. Este ajuste es obligatorio.                                                                                                                 |
 | **Configuración avanzada** |                                                                                                                                                                                                                                                                                                                                 |
-|    Información sobre herramientas del botón     |                                                                                                  Invalida el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción que se muestra en la fila de la lista de entidades.                                                                                                   |
+|    Información sobre herramientas de botón     |                                                                                                  Reemplaza el texto de información sobre herramientas que aparece cuando el usuario apunta al botón para esta acción mostrada en la fila de la lista de entidades.                                                                                                   |
 
-## <a name="securing-entity-lists"></a>Proteger listas de entidades
+## <a name="securing-entity-lists"></a>Protección de listas de entidades
 
-Para proteger una lista de entidades, debe configurar los permisos de entidad para la entidad para la que se muestran los registros y también establecer el valor booleano de **Habilitar permisos de entidad** en el registro de la lista de entidades en true.
+Para realizar una lista de entidades, debe configurar los permisos de entidad para la entidad para la que se muestran registros y también establecer el valor booleano **Habilitar permisos de entidad** en el registro de la lista de entidades en True.
 
-La acción de proteger una lista de entidades garantizará que, para cualquier usuario que tenga acceso a la página, solo se muestren los registros a los que se les ha concedido permiso. Esto se logra mediante un filtro adicional que se agrega a las vistas de aplicaciones controladas por modelos que se muestran a través de la lista. Este filtro solo filtrará los registros que son accesibles para el usuario, mediante el permiso de **lectura** .
+El acto de proteger una lista de entidades asegurará que para cualquier usuario que tenga acceso a la página solo se muestran los registros para los que se ha concedido permiso. Esto se consigue mediante un filtro adicional que se agrega a las vistas de la aplicación basada en modelo que emergen a través de la lista. Este filtro filtrará solo los registros que son accesibles al usuario, mediante el permiso **Leer**.
 
-Además, las acciones que se hayan definido para la lista respetarán los permisos correspondientes para esa acción por registro. Es decir, si tiene permiso de edición para un registro, la acción de edición se habilitará para ese registro. Lo mismo se aplica a Delete, Create, etc. Tenga en cuenta que si no hay ningún registro disponible, se mostrará un mensaje que lo indicará cuando se cargue la lista.
+Además, las acciones se definan para la lista respetarán los permisos correspondientes para dicha acción, registro a registro. Es decir, si tiene el permiso Editar para un registro, la acción Editar se habilitará para ese registro. Lo mismo se aplica a Eliminar, Crear, etc. Tenga en cuenta que si no hay ningún registro disponible, un mensaje que indica esto aparecerá cuando la lista se cargue.
 
-Sin embargo, un buen diseño del sitio web requiere que, si un usuario no está en un rol que tenga permisos para la entidad (es decir, nunca habrá una situación en la que debería ver cualquier registro), no debería tener acceso a la página. Idealmente, la página debe protegerse mediante los permisos de acceso de la Página Web.
+Sin embargo, un buen diseño de la página web requiere que, si el usuario no tiene un rol con permisos para la entidad (es decir, nunca habrá una situación en la que no vea ningún registro), no debe obtener acceso a la página en absoluto. Idealmente, la página debe protegerse con permisos de acceso de página web.
 
-## <a name="adding-a-view-details-page"></a>Agregar una página de detalles de la vista
+## <a name="adding-a-view-details-page"></a>Agregar una página de detalles de vista
 
-Al establecer la página web para la búsqueda de detalles de la vista en una página web, los detalles de un registro que aparece en la cuadrícula se pueden ver como de solo lectura o de edición, dependiendo de la configuración del formulario o la página asociados.
+Al establecer la búsqueda de Página web para vista de detalles en una página web, los detalles de un registro enumerado en la cuadrícula pueden verse como de solo lectura o editados, en función de la configuración del formulario o de la página asociada.
 
-Esta página puede ser una plantilla de página completamente personalizada, tal vez creada con Liquid. Probablemente, el escenario más común es que la página de detalles sea una página web que contenga un formulario de entidad o un formulario Web Forms.
+Esta página puede ser una plantilla de página completamente personalizada, quizás creada con Liquid. El escenario más común es probablemente tener la página de detalles como una página web que contiene un formulario de entidad o un formulario web.
 
-Lo importante que hay que tener en cuenta es que cada registro que aparece en la cuadrícula tendrá un hipervínculo a la página de detalles y el vínculo contendrá un parámetro de cadena de consulta con nombre con el identificador del registro. El nombre del parámetro de cadena de consulta depende del nombre del parámetro de cadena de consulta de identificador especificado en la lista de entidades. Lo último que hay que tener en cuenta es que la Página Web de detalles de destino también debe tener en cuenta el nombre de este parámetro de cadena de consulta para obtener el identificador del registro que necesita para consultar y cargar sus datos.
+Lo importante es conocer que cada registro enumerado en la cuadrícula tendrá un hipervínculo a la página de detalles, y el vínculo contendrá un parámetro Cadena de consulta con nombre con el identificador del registro. El nombre de parámetro Cadena de consulta depende del Nombre de parámetro de cadena de consulta de id. especificado en la lista de entidades. La tarea final a tener en cuenta es que la página web de detalles de destino también debe conocer el nombre de este parámetro de Cadena de consulta para obtener el identificador del registro que debe consultar y cargar sus datos.
 
-![Agregar página de detalles de la vista](../media/add-view-details-page.png "Agregar página de detalles de la vista")  
+![Agregar una página de detalles de vista](../media/add-view-details-page.png "Agregar una página de detalles de vista")  
 
-**Usar un formulario de entidad para mostrar detalles**
+**Uso de un formulario de entidad para mostrar detalles**
 
-Para crear un formulario de entidad, consulte las instrucciones que se encuentran en la página formulario de la [entidad](entity-forms.md) .
+Para crear un formulario de entidad consulte las instrucciones que se encuentran en la página [Formulario de entidad](entity-forms.md).
 
-A continuación se muestran los valores importantes que se deben tener en cuenta para asegurarse de que el registro de la lista de entidades se carga en el formulario de la entidad.
+A continuación se describen los valores importantes que debe conocer para asegurarse de que el registro de la lista de entidades se carga en el formulario de entidad.
 
-El nombre del parámetro de cadena de consulta de ID. de registro en el formulario de la entidad debe coincidir con el nombre del parámetro de cadena de consulta de ID.
+El Nombre del parámetro de cadena de consulta de id. de registro en el Formulario de entidad debe coincidir con Nombre de parámetro de cadena de consulta de id. en la lista de entidades.
 
-El modo puede ser Edit o ReadOnly, dependiendo de sus necesidades.
+El Modo puede ser Editar o Solo lectura según sus necesidades.
 
-**Usar un formulario web para mostrar detalles**
+**Uso de un formulario web para mostrar detalles**
 
-A continuación se muestran los valores importantes que se deben tener en cuenta para asegurarse de que el registro de la lista de entidades se carga en el formulario Web.
+A continuación se describen los valores importantes que debe conocer para asegurarse de que el registro de la lista de entidades se carga en el formulario web.
 
-El nombre del parámetro de la cadena de consulta de la clave principal en el paso de Web Forms debe coincidir con el nombre del parámetro de cadena de consulta de ID.
+El Nombre del parámetro de cadena de consulta de clave principal en Paso de formulario web debe coincidir con Nombre de parámetro de cadena de consulta de id. en la lista de entidades.
 
-El modo puede ser Edit o ReadOnly, dependiendo de sus necesidades.
+El Modo puede ser Editar o Solo lectura según sus necesidades.
 
-**Usar una página de detalles para la función Create**
+**Uso de una página de detalles para la función Crear**
 
-Puede usar una página personalizada, un formulario de entidad o un formulario Web Forms de la misma manera para la función Create. Se trata de una alternativa a la definición de una acción de creación en el formulario. No se puede definir una acción de creación *y* una página personalizada para crear: la definición de una acción personalizada tiene prioridad.
+Puede usar una página personalizada, un formulario de entidad o un formulario web en el mismo modo para la función Crear. Esto es una alternativa a definir una acción Crear en el formulario. No puede definir una acción Crear *y* una página personalizada para Crear: definir una acción personalizada tiene prioridad.
 
-Si asigna una página web a la búsqueda de creación en la lista de entidades y no especifica una acción de creación mediante la configuración, se representará un botón crear en la lista. Este botón vinculará al usuario a la página personalizada que ha designado para crear.
+Si asigna una página web a la búsqueda Crear en la lista de entidades, y no especifica una acción Crear mediante la Configuración, se representará un botón Crear en la lista; este botón vinculará al usuario a la página personalizada que se ha designado para Crear.
 
-## <a name="entity-list-filter-configuration"></a>Configuración del filtro de la lista de entidades
+## <a name="entity-list-filter-configuration"></a>Configuración de filtro de listas de entidades
 
-Agregar la capacidad de filtrar registros en una lista de entidades es fácil: simplemente habilite la opción de filtrado y, a continuación, elija uno o varios tipos de filtro para mostrar a los usuarios. Es posible filtrar por un atributo que coincida con el texto proporcionado por el usuario o seleccionar entre una serie de opciones. Incluso puede diseñar prácticamente cualquier tipo de filtro que pueda imaginar mediante la búsqueda avanzada.
+Agregar la capacidad de filtrar registros de una lista de entidad es fácil: habilite simplemente la opción de filtrado y luego seleccione uno o más tipos de filtro para mostrar a los usuarios. Es posible filtrar por un atributo que coincida con algo de texto proporcionado por el usuario, o seleccionar de una serie de opciones. Incluso puede diseñar prácticamente cualquier tipo de filtro que pueda imaginarse mediante Búsqueda avanzada.
 
-**Habilitación del filtro de la lista de entidades**
+**Habilitar el filtro de lista de entidades**
 
-En la sección filtro de metadatos, active la casilla habilitado. Esto agregará el área de filtro a la lista de entidades cuando se muestre. Hasta que haya definido al menos un tipo de filtro, el cuadro aparecerá vacío.
+En la sección Filtro de metadatos, seleccione la casilla Habilitado. Esto agregará el área Filtro a la lista de entidades cuando se muestran. Hasta que haya definido por lo menos un tipo de filtro, aparecerá el cuadro vacío.
 
-Puede definir cómo se representará el área de filtro en la lista de entidades mediante la configuración de orientación. El valor predeterminado, horizontal, representa el área de filtro por encima de la lista de entidades. Orientación vertical: representa el área de filtro como un cuadro a la izquierda de la lista de entidades.
+Puede definir cómo el área Filtro en la lista de entidades se representará con la opción Orientación. El valor predeterminado, Horizontal, representa el área Filtro por encima de la lista de entidades. Orientación vertical representa el área Filtro como un cuadro a la izquierda de la lista de entidades.
 
-![Configuración del filtro de metadatos](../media/metadata-filter-settings.png "Configuración del filtro de metadatos")  
+![Configuración de filtro de metadatos](../media/metadata-filter-settings.png "Configuración de filtro de metadatos")  
 
 **Tipos de filtro**
 
-|**Tipo de filtro**      |**Description**                                                                                                                                                                                                                               |
+|**Tipo de filtro**      |**Descripción**                                                                                                                                                                                                                               |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filtro de texto          | Filtre la lista de entidades mediante un cuadro de texto para buscar texto coincidente en un atributo seleccionado de la entidad determinada.                                                                                                                               |
-| Conjunto de filtros de atributos | Filtre la lista de entidades mediante una serie de casillas, cada una de las cuales intenta coincidir su condición con un atributo determinado de la entidad determinada.                                                                                           |
-| Conjunto de búsqueda           | Filtre la lista de entidades mediante una serie de casillas, cada una de las cuales representa una relación entre un registro de la entidad determinada y un registro para una entidad relacionada.                                                                         |
-| Conjunto de filtros de intervalo     | Similar al conjunto de filtros de atributos, con la excepción de que cada casilla puede representar dos condiciones en lugar de una (por ejemplo, mayor o igual que 0 y menor que 100).                                                                    |
-| Conjunto de listas desplegables dinámicas | Similar a elegir un valor de lista desplegable en un conjunto de filtros de atributos. No es necesario que especifique las opciones de lista desplegable por las que filtrar el conjunto de listas desplegables dinámicas. en su lugar, genera la lista completa de opciones cuando se carga la lista de entidades. |
-| Conjunto de búsqueda dinámica   | Similar al conjunto de búsqueda. El conjunto de búsqueda dinámica no requiere que especifique las opciones de búsqueda por las que filtrar; en su lugar, genera la lista completa de opciones cuando se carga la lista de entidades.                                           |
-| Filtro de FetchXML      | Filtre la lista de entidades mediante una condición de filtro FetchXML.                                                                                                                                                                                     |
+| Filtro de texto          | Filtre la lista de entidades mediante un cuadro de texto para buscar texto coincidente en un atributo seleccionado de la entidad dada.                                                                                                                               |
+| Conjunto de filtros de atributo | Filtre la lista de entidades mediante una serie de casillas, cada de las cuales intenta que su condición coincida con un atributo específico de la entidad dada.                                                                                           |
+| Conjunto de búsquedas           | Filtre la lista de entidades mediante una serie de casillas, cada una de las cuales que representa una relación entre un registro para la entidad dada y un registro para una entidad relacionada.                                                                         |
+| Conjunto de filtros de intervalo     | Es similar al conjunto de filtros de atributo, salvo que cada casilla puede representar dos condiciones en lugar de una (por ejemplo, mayor o igual que 0 AND menor que 100).                                                                    |
+| Conjunto de listas desplegables dinámicas | Es similar a elegir un valor de una lista desplegable en un conjunto de filtros de atributo. El Conjunto de listas desplegables dinámicas no requiere que especifique las opciones de lista desplegable por las que filtrar; en su lugar, genera la lista completa de opciones cuando la lista de entidades se carga. |
+| Conjunto de búsquedas dinámicas   | Es similar al conjunto de búsquedas. El Conjunto de búsquedas dinámicas no requiere que especifique las opciones de búsqueda por las que filtrar; en su lugar, genera la lista completa de opciones cuando la lista de entidades se carga.                                           |
+| Filtro FetchXML      | Filtre la lista de entidades mediante una condición de filtro FetchXML.                                                                                                                                                                                     |
 
 **Filtro de texto**
 
-El filtro de texto agrega un cuadro de texto al área de filtro de la lista de entidades que está asociada a un atributo del tipo de entidad de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades solo muestra los registros cuyo atributo seleccionado contiene el valor.
+El Filtro de texto agrega un cuadro de texto al área Filtro de listas de entidades que está ligado a un atributo de tipo entidad de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades muestra solo aquellos registros cuyo atributo seleccionado contenga el valor.
 
-Para agregar un filtro de texto, seleccione **+ filtro de texto**.
+Para agregar un filtro de texto, seleccione **+ Filtro de texto**.
 
 ![Agregar un filtro de texto](../media/add-text-filter.png "Agregar un filtro de texto")  
 
 El filtro de texto usa los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                                        |
+|**Nombre**     |**Descripción**                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Atribui    | Nombre del atributo en el tipo de entidad seleccionado de la lista de entidades que se va a filtrar. *Solo los atributos con la cadena de tipo son válidos para un filtro de texto.*                                                                                   |
-| Nombre para mostrar | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre del atributo seleccionado. |
+| Atributo    | El nombre del atributo en el tipo de entidad seleccionado de la lista de entidades por el que filtrar. *Solo los atributos con el tipo Cadena son válidos para un filtro de texto.*                                                                                   |
+| Nombre para mostrar | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre del atributo seleccionado. |
 
-**Conjunto de filtros de atributos**
+**Conjunto de filtros de atributo**
 
-El conjunto de filtros de atributos agrega una serie de opciones para filtrar la lista de entidades, vinculada a un solo atributo del tipo de entidad seleccionado de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades solo muestra los registros que coinciden exactamente con al menos una de las opciones seleccionadas.
+El Conjunto de filtros de atributo agrega una serie de opciones por las que filtrar la lista de entidades, ligadas a un solo atributo de tipo de la entidad seleccionada de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades muestra solo aquellos registros que coinciden exactamente con al menos una de las opciones seleccionadas.
 
-![Configuración de filtro de atributos](../media/set-attribute-filter.png "Configuración de filtro de atributos")
+![Cofiguración de filtros de atributo](../media/set-attribute-filter.png "Cofiguración de filtros de atributo")
 
-El conjunto de filtros de atributos usa los siguientes atributos:
+El Conjunto de filtros de atributo usa los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                                        |
+|**Nombre**     |**Descripción**                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Atribui    | Nombre del atributo en el tipo de entidad seleccionado de la lista de entidades que se va a filtrar. Solo los atributos con los siguientes tipos son válidos para un filtro de texto: String, BigInt, decimal, Double, integer, Money, lista desplegable, DateTime y Boolean.
-|Nombre para mostrar | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre del atributo seleccionado.
-| Opciones |      Colección de valores posibles por los que filtrar. Consulte a continuación para obtener más detalles.                                                                              |
+| Atributo    | El nombre del atributo en el tipo de entidad seleccionado de la lista de entidades por el que filtrar. Solo los atributos con los siguientes tipos son válidos para un filtro de texto: String, BigInt, Decimal, Double, Integer, Money, Picklist, DateTime y Boolean.
+|Nombre | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre del atributo seleccionado.
+| Opciones |      Una colección de valores posibles por la que filtrar. Consulte más adelante para obtener más información.                                                                              |
 
-**Opciones set de filtro de atributos**
+**Opciones Conjunto de filtros de atributo**
 
-Un conjunto de filtros de atributos normalmente puede tener cualquier número de opciones, con las excepciones de los atributos de lista desplegable y booleano. Un conjunto de filtros de atributo booleano solo puede tener una o dos opciones&mdash;una opción true y una opción false. Un conjunto de filtros de atributos de lista desplegable puede tener como máximo una opción para cada valor posible de la lista desplegable.
+Un Conjunto de filtros de atributo puede tener normalmente cualquier número de opciones, con las excepciones de lista desplegable y atributos booleanos. Un Conjunto de filtros de atributo booleano puede tener solo una o dos opciones&mdash;una opción True y una opción False. Un Conjunto de filtros de atributo de lista desplegable puede tener una opción para cada valor posible en la lista desplegable.
 
 Las opciones tienen los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                                                                                  |
+|**Nombre**     |**Descripción**                                                                                                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Operator     | El operador de comparación utilizado para filtrar los resultados, por ejemplo, es igual a, menor que, etc. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (decimal) tendrán operadores como menor que o mayor que, mientras que los atributos de cadena usarán operadores como Begins with o Contains. Los operadores de lista desplegable y booleano siempre son iguales.                                                                                                                                               |
-| Value        | Valor real que se usa para esta condición de filtro.                                                                                                                                                 |
-| Nombre para mostrar | Invalida el nombre para mostrar de esta opción en el cuadro de filtro. De forma predeterminada, se establecerá en el mismo valor que el atributo value.                                                             |
+| Operador     | El operador de comparación usado para filtrar resultados, por ejemplo, iguales, menos que, etc. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (Decimal) tendrán operadores como Menor que o Mayor que, donde los atributos de Cadena utilizarán Operadores como Empieza por o Contiene. Los operadores de lista desplegable y booleanos siempre son Es igual a.                                                                                                                                               |
+| Valor        | El valor real usado para esta condición de filtro.                                                                                                                                                 |
+| Nombre | Reemplaza el nombre para mostrar para esta opción en el cuadro Filtro. De forma predeterminada, esto se establecerá con el mismo valor que el atributo Valor.                                                             |
 
-**Conjunto de búsqueda**
+**Conjunto de búsquedas**
 
-El conjunto de búsqueda agrega una serie de opciones para filtrar la lista de entidades, vinculada a una entidad relacionada con el tipo de entidad seleccionado de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades solo muestra los registros que coinciden exactamente con al menos uno de los registros relacionados seleccionados.
+El Conjunto de búsquedas agrega una serie de opciones por las que filtrar la lista de entidades, ligadas a una entidad relacionada con el tipo de la entidad seleccionada de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades muestra solo aquellos registros que coinciden exactamente con al menos uno de los registros seleccionados.
 
-![Conjunto de búsqueda](../media/lookup-set.png "Conjunto de búsqueda")  
+![Conjunto de búsquedas](../media/lookup-set.png "Conjunto de búsquedas")  
 
-El conjunto de búsqueda utiliza los siguientes atributos:
+El Conjunto de búsquedas usa los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                                           |
+|**Nombre**     |**Descripción**                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Relación | Nombre de la entidad relacionada con el tipo de entidad seleccionado de la lista de entidades que se va a filtrar. Solo las entidades con una relación de uno a varios o de varios a varios con el tipo de entidad seleccionado de la lista de entidades aparecen como opciones para este tipo de filtro.          |
-| Nombre para mostrar | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre de la relación seleccionada. |
-| Opciones      | Colección de valores posibles por los que filtrar. Consulte a continuación para obtener más detalles.                                                                                 |
+| Relación | El nombre de la entidad relacionada con el tipo de entidad seleccionado de la lista de entidades por el que filtrar. Solo las entidades con relaciones de uno a varios o de varios a varios con el tipo de entidad seleccionado de la lista de entidades aparecen como opciones para este tipo de filtro.          |
+| Nombre | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre de la relación seleccionada. |
+| Opciones      | Una colección de valores posibles por la que filtrar. Consulte más adelante para obtener más información.                                                                                 |
 
-**Opciones del conjunto de búsquedas**
+**Opciones de conjunto de búsqueda**
 
-Un conjunto de búsqueda normalmente puede tener cualquier número de opciones, y el único límite es el número de registros relacionados del tipo relacionado seleccionado.
+Un conjunto de la búsqueda tiene normalmente varias opciones, con el único límite en el número de registros relacionados de tipo relacionado seleccionado.
 
 Las opciones tienen los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                      |
+|**Nombre**     |**Descripción**                                                                                                                      |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| Value        | Registro del tipo relacionado seleccionado por el que se va a filtrar.                                                                                |
-| Nombre para mostrar | Invalida el nombre para mostrar de esta opción en el cuadro de filtro. De forma predeterminada, se establecerá en el mismo valor que el atributo value. |
+| Valor        | El registro de tipo relacionado seleccionado por el que filtrar.                                                                                |
+| Nombre | Reemplaza el nombre para mostrar para esta opción en el cuadro Filtro. De forma predeterminada, esto se establecerá con el mismo valor que el atributo Valor. |
 
 **Conjunto de filtros de intervalo**
 
-El conjunto de filtros de intervalo agrega una serie de opciones, cada una con una o dos condiciones, al área de filtro. Cuando un usuario aplica el filtro, la lista de entidades solo muestra los registros que coinciden exactamente con todas las condiciones de al menos una de las opciones seleccionadas.
+El Conjunto de filtros de intervalo agrega una serie de opciones, cada una con una o dos condiciones, al área Filtro. Cuando un usuario aplica el filtro, la lista de entidades muestra solo aquellos registros que coinciden exactamente con todas las condiciones en al menos una de las opciones seleccionadas.
 
-![Configuración del filtro de intervalo](../media/set-range-filter.png "Configuración del filtro de intervalo")  
+![Configuración de filtros de intervalo](../media/set-range-filter.png "Configuración de filtros de intervalo")  
 
 El conjunto de filtros de intervalo usa los siguientes atributos:
 
-|**Nombre**     |**Description**                                                                                                                                        |
+|**Nombre**     |**Descripción**                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Atribui    | Nombre del atributo en el tipo de entidad seleccionado de la lista de entidades que se va a filtrar. Solo los atributos con los siguientes tipos son válidos para un filtro de texto: String, BigInt, decimal, Double, integer, Money, DateTime.                       |
-| Nombre para mostrar | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre del atributo seleccionado. |
-| Opciones      | Colección de valores posibles por los que filtrar. Consulte a continuación para obtener más detalles.                                                                              |
+| Atributo    | El nombre del atributo en el tipo de entidad seleccionado de la lista de entidades por el que filtrar. Solo los atributos con los siguientes tipos son válidos para un filtro de texto: String, BigInt, Decimal, Double, Integer, Money y DateTime.                       |
+| Nombre | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre del atributo seleccionado. |
+| Opciones      | Una colección de valores posibles por la que filtrar. Consulte más adelante para obtener más información.                                                                              |
 
-**Opciones de conjunto de filtros de intervalo**
+**Opciones del Conjunto de filtros de intervalo**
 
-Un conjunto de filtros de intervalo puede tener cualquier número de opciones. Cada opción generará una condición de filtro con una o dos subcondiciones, ambas deben cumplirse para que la condición sea verdadera.
+Un Conjunto de filtros de intervalo puede tener varias opciones. Cada opción generará una condición de filtro con una o dos subcondiciones, que deben cumplirse para que la condición sea True.
 
 Las opciones tienen los siguientes atributos:
 
-|**Nombre**              |**Description**                                                                                                                                                                                |
+|**Nombre**              |**Descripción**                                                                                                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Operador 1            | El primer operador de comparación utilizado para filtrar los resultados, por ejemplo, es igual a y menor que. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (decimal) tendrán operadores como menor que o mayor que, mientras que los atributos de cadena usarán operadores como Begins with o Contains. Los operadores de lista desplegable y booleano siempre son iguales.                                                                                                                                             |
-| Valor 1               | Primer valor que se usa para esta condición de filtro.                                                                                                                                                |
-| Operador 2 (opcional) | Segundo operador de comparación utilizado para filtrar los resultados, por ejemplo, es igual a y menor que. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (decimal) tendrán operadores como menor que o mayor que, mientras que los atributos de cadena usarán operadores como Begins with o Contains. Los operadores de lista desplegable y booleano siempre son iguales.                                                                                                                                             |
-| Valor 2 (opcional)    | Segundo valor utilizado para esta condición de filtro.                                                                                                                                               |
-| Nombre para mostrar          | Invalida el nombre para mostrar de esta opción en el cuadro de filtro. De forma predeterminada, se establecerá de manera dinámica, en función de los operadores y valores seleccionados.                                         |
+| Operador 1            | El primer operador de comparación usado para filtrar resultados, por ejemplo, Es igual a y Es menor que. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (Decimal) tendrán operadores como Menor que o Mayor que, donde los atributos de Cadena utilizarán Operadores como Empieza por o Contiene. Los operadores de lista desplegable y booleanos siempre son Es igual a.                                                                                                                                             |
+| Valor 1               | El primer valor usado para esta condición de filtro.                                                                                                                                                |
+| Operador 2 (opcional) | El segundo operador de comparación usado para filtrar resultados, por ejemplo, Es igual a y Es menor que. La lista de operadores de la opción dependerá del tipo de atributo seleccionado para el filtro. Por ejemplo, los tipos numéricos (Decimal) tendrán operadores como Menor que o Mayor que, donde los atributos de Cadena utilizarán Operadores como Empieza por o Contiene. Los operadores de lista desplegable y booleanos siempre son Es igual a.                                                                                                                                             |
+| Valor 2 (opcional)    | El segundo valor usado para esta condición de filtro.                                                                                                                                               |
+| Nombre          | Reemplaza el nombre para mostrar para esta opción en el cuadro Filtro. De forma predeterminada, se establecerá dinámicamente en función de los operadores y los valores seleccionados.                                         |
 
 **Conjunto de listas desplegables dinámicas**
 
-El conjunto de listas desplegables dinámicas agrega una serie de opciones para filtrar por que representan todos los valores de un campo de lista desplegable especificado. Esto no es lo mismo que seleccionar una lista desplegable en el conjunto de filtros de atributos. En el conjunto de filtros de atributo, debe especificar un conjunto de opciones que se pondrá a disposición del usuario para filtrar; en el conjunto de listas desplegables dinámicas, solo es necesario especificar el campo de lista desplegable y el conjunto completo de opciones se proporcionará automáticamente. Si necesita un mayor control, se recomienda usar el conjunto de filtros de atributos.
+El Conjunto de listas desplegables dinámicas agrega una serie de opciones por las que filtrar que representan todos los valores de un campo de lista desplegable específico. Esto es diferente de seleccionar una lista desplegable en el Conjunto de filtros de atributo. En el Conjunto de filtros de atributo debe especificar un conjunto de opciones que estarán disponibles para el usuario para filtrar; en el Conjunto de lisas desplegables dinámicas solo debe especificar el campo de lista desplegable y el conjunto completo de opciones se proporcionará automáticamente. Si necesita mayor control, se recomienda usar el Conjunto de filtros de atributo.
 
-![Configuración dinámica de la lista desplegable](../media/set-dynamic-picklist.png "Configuración dinámica de la lista desplegable")  
+![Configuración de listas desplegables dinámicas](../media/set-dynamic-picklist.png "Configuración de listas desplegables dinámicas")  
 
-El conjunto de listas desplegables dinámicas usa las siguientes opciones:
+El Conjunto de listas desplegables dinámicas usa las siguientes opciones:
 
-|**Nombre**     |**Description**                                                                                                                                        |
+|**Nombre**     |**Descripción**                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Atribui    | Nombre del atributo de lista desplegable en el tipo de entidad seleccionado de la lista de entidades que se va a filtrar.                                                             |
-| Nombre para mostrar | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre del atributo seleccionado. |
+| Atributo    | El nombre del atributo de lista desplegable en el tipo de entidad seleccionado de la lista de entidades por el que filtrar.                                                             |
+| Nombre | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre del atributo seleccionado. |
 
-**Conjunto de búsqueda dinámica**
+**Conjunto de búsquedas dinámicas**
 
-El conjunto de búsqueda dinámica agrega una serie dinámica de opciones para filtrar la lista de entidades por, vinculada a una entidad relacionada con el tipo de entidad seleccionado de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades solo muestra los registros que coinciden exactamente con al menos uno de los registros relacionados seleccionados.
+El Conjunto de búsquedas dinámicas agrega una serie de opciones por las que filtrar la lista de entidades, ligadas a una entidad relacionada con el tipo de la entidad seleccionada de la lista de entidades. Cuando un usuario aplica el filtro, la lista de entidades muestra solo aquellos registros que coinciden exactamente con al menos uno de los registros seleccionados.
 
-Esto es diferente de un conjunto de búsqueda. En el conjunto de búsqueda, debe especificar manualmente las entidades relacionadas por las que filtrar. En el conjunto de búsqueda dinámica, solo es necesario especificar la relación en la que se va a filtrar y se generará una lista de opciones en función de la vista especificada de las entidades relacionadas.
+Esto es diferente de un Conjunto de búsquedas. En el Conjunto de búsqueda, debe especificar manualmente las entidades relacionadas por las que filtrar. En el Conjunto de búsquedas dinámicas, debe especificar solo la relación por la que se va a filtrar, y una lista de opciones se generará en función de la vista especificada de entidades relacionadas.
 
-![Configuración de búsqueda dinámica](../media/set-dynamic-lookup.png "Configuración de búsqueda dinámica")  
+![Configuración de búsquedas dinámicas](../media/set-dynamic-lookup.png "Configuración de búsquedas dinámicas")  
 
-El conjunto de búsqueda dinámica utiliza las siguientes opciones:
+El Conjunto de búsquedas dinámicas usa las siguientes opciones:
 
-|**Nombre**                      |**Description**                                                                                                                                                                      |
+|**Nombre**                      |**Descripción**                                                                                                                                                                      |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Relación                  | Nombre de la entidad relacionada con el tipo de entidad seleccionado de la lista de entidades que se va a filtrar. Solo las entidades con una relación de uno a varios o de varios a varios con el tipo de entidad seleccionado de la lista de entidades aparecen como opciones para este tipo de filtro.                                     |
-| Visores                          | Vista (consulta guardada) que se va a usar como origen de la lista dinámica de entidades por las que filtrar.                                                                                              |
-| Columna de etiqueta                  | Campo de la vista que proporciona el valor de nombre de cada entidad.                                                                                                                    |
-| Filtrar la búsqueda en relación | Especifica una relación entre la entidad especificada por el campo de relación y el usuario con sesión iniciada. Si la entidad especificada por el campo de relación también tiene una relación con un contacto, puede restringir la lista de opciones de filtro a las relacionadas con el usuario que ha iniciado sesión.  |
-| Nombre para mostrar                  | Invalide la etiqueta del filtro cuando se muestre la lista de entidades. De forma predeterminada, se establecerá automáticamente en el nombre de la relación seleccionada.                            |
+| Relación                  | El nombre de la entidad relacionada con el tipo de entidad seleccionado de la lista de entidades por el que filtrar. Solo las entidades con relaciones de uno a varios o de varios a varios con el tipo de entidad seleccionado de la lista de entidades aparecen como opciones para este tipo de filtro.                                     |
+| Vista                          | La Vista (consulta guardada) para usar como origen para la lista dinámica de entidades por la que filtrar.                                                                                              |
+| Columna de etiqueta                  | El campo de la vista que proporciona el valor de Nombre de cada entidad.                                                                                                                    |
+| Filtrar búsqueda por relación | Especifica una relación entre la entidad especificada por el campo Relación y el usuario que inició sesión. Si la entidad especificada por campo Relación también tiene una relación con un contacto, puede reducir la lista de opciones de filtro a los usuarios relacionados con el usuario que inició sesión.  |
+| Nombre                  | Reemplace la etiqueta para el filtro cuando se muestre la lista de entidades. De forma predeterminada, esto se establecerá automáticamente con el nombre de la relación seleccionada.                            |
 
-**Filtro de FetchXML**
+**Filtro FetchXML**
 
-El filtro de intervalo puede crear un filtro de cuadro de texto simple, como el filtro de texto o un conjunto de opciones, como los demás tipos de filtro. Permite crear manualmente prácticamente cualquier tipo de filtro para la lista de entidades mediante FetchXML.
+El filtro de intervalo puede crear un filtro de cuadro de texto básico como el filtro de texto, o un conjunto de opciones como otros tipos de filtro. Permite crear manualmente prácticamente cualquier tipo de filtro para la entidad de entidades mediante FetchXML.
 
-![Configuración del filtro de FetchXML](../media/set-fetchxml-filter.png "Configuración del filtro de FetchXML")
+![Configuración de filtros FetchXML](../media/set-fetchxml-filter.png "Configuración de filtros FetchXML")
 
 El filtro FetchXML solo usa un atributo:
 
-|**Nombre** |**Description**                            |
+|**Nombre** |**Descripción**                            |
 |----------|--------------------------------------------|
-| FetchXML | Instrucción XML que representa el filtro. |
+| FetchXML | La instrucción XML que representa el filtro. |
 
-## <a name="entity-list-map-view"></a>Vista de mapa de lista de entidades
+## <a name="entity-list-map-view"></a>Vista de mapa de listas de entidades
 
-Con las listas de entidades, es posible habilitar y configurar una vista de mapa de los datos, con la tecnología de [!INCLUDE[pn-bing](../../../includes/pn-bing.md)] Maps con funcionalidad de búsqueda para buscar ubicaciones cerca de una dirección. Al rellenar los registros con los valores de las coordenadas de latitud y longitud, y especificar las opciones de configuración necesarias enumeradas en esta sección, los registros se pueden representar como marcadores en un mapa. Los registros que no tengan un valor de latitud o longitud se excluirán de la búsqueda. La carga inicial de la página mostrará todos los registros dentro del valor inicial del campo Distance Values (en millas o km, en función de las unidades de distancia especificadas) de las coordenadas de la latitud predeterminada del centro y la longitud predeterminada del centro. La vista especificada se omite cuando se usa la vista de mapa y se aplica una consulta de distancia al conjunto de valores para devolver los resultados asignables.
+Con las listas de entidades es posible habilitar y configurar una vista de mapa de los datos, con tecnología de mapas de [!INCLUDE[pn-bing](../../../includes/pn-bing.md)] con la funcionalidad de búsqueda para buscar ubicaciones cerca de una dirección. Al rellenar los registros con valores de coordenadas de latitud y longitud y especificar las opciones de configuración necesarias enumeradas en esta sección, los registros se pueden representar como marcadores en un mapa. Cualquier registro que no tenga un valor de latitud o longitud quedará excluido de la búsqueda. La carga inicial de la página mostrará todos los registros en el valor inicial del campo Valores de distancia (en millas o kilómetros, según las unidades de distancia especificadas) de las coordenadas de Latitud del centro predeterminada y Longitud del centro predeterminada. La vista especificada se omite cuando se usa la vista de mapa, y una consulta de distancia se aplica al conjunto de datos para devolver resultados de mapa.
 >[!Note] 
->Esta opción no se admite en el entorno de nube soberano. La sección de la vista del mapa no será visible en este entorno.
+>Esta opción no se admite en el entorno de la nube soberana alemana. La sección de la vista de mapa no estará visible en este entorno.
 
 
-## <a name="entity-list-calendar-view"></a>Vista de calendario de la lista de entidades
+## <a name="entity-list-calendar-view"></a>Vista de calendario de lista de entidades
 
-Use la vista de calendario de la lista de entidades para representar una lista de entidades como un calendario, con cada registro individual configurado para que actúe como un evento único.
+Use la Vista de calendario de lista de entidades para representar una lista de entidades como calendario, con cada registro individual configurado para actuar como un solo evento.
 
-Para mostrar los registros mediante un calendario, dichos registros deben incluirse en un campo de fecha como mínimo. Para que los eventos tengan horas de inicio y finalización exactas, los campos adecuados deben estar en su lugar, etc. Suponiendo que estos campos estén configurados, aparecerá una vista de calendario de la lista de entidades en el portal.
+Para mostrar los registros mediante un calendario, esos registros deben incluir como mínimo un campo de fecha. Para que los eventos tengan horas de inicio y finalización exactos, los campos correspondientes deben existir, etc. Si se supone que estos campos estén configurados, una vista de calendario de lista de entidades aparecerá en el portal.
 
-## <a name="enhanced-view-filter-for-entity-lists"></a>Filtro de vista mejorada para listas de entidades
+## <a name="enhanced-view-filter-for-entity-lists"></a>Filtro de vista mejorado para listas de entidades
 
-Si está habilitada, se puede publicar una entidad en una fuente de OData. El protocolo OData es un protocolo de nivel de aplicación para interactuar con los datos a través de los servicios web RESTful. Los datos de esta fuente se pueden ver en un explorador Web, usar una aplicación web del lado cliente o importarse en [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)].
+Si está habilitada, una entidad se puede publicar a una fuente de OData. El protocolo OData es un protocolo a nivel de aplicación para interactuar con datos a través de servicios web RESTful. Los datos de esta fuente se pueden ver en un explorador web, consumir por una aplicación web del lado del cliente, o importar a [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)].
 
-## <a name="entity-list-odata-feeds"></a>Fuentes OData de la lista de entidades
+## <a name="entity-list-odata-feeds"></a>Fuentes de OData de la lista de entidades
 
-Puede usar permisos de entidad si desea proteger registros, pero si desea simplemente proporcionar un filtro como parte del conjunto de opciones de filtro que es relevante para el usuario actual del portal, puede usar la característica de lista de entidades. Esta característica permite filtrar el usuario actual, la cuenta primaria del usuario o el sitio web con cualquier nivel. Simplemente cree el filtro de vista para que coincida con cualquier registro de contacto único y el código reemplace su valor por el valor real en tiempo de ejecución&mdash;no es necesario asignar valores a los campos de la sección condiciones de filtro.
+Puede usar permisos de la entidad si desea proteger los registros, pero si desea proporcionar simplemente un filtro como parte del conjunto de opciones de filtro que corresponde al usuario del portal actual, puede usar la función lista de entidades. Esta característica admite el filtro de usuario actual, de la cuenta primaria del usuario, o una página web en cualquier profundidad. Simplemente cree el filtro de la vista para que coincida con cualquier registro de contacto único, y el código reemplazará la configuración con el valor real en tiempo de ejecución, sin la necesidad de asignar valores a los campos de la sección Condiciones de filtro.
 
 > [!Note]
-> La fuente de OData que se publica es anónima y no tiene ninguna comprobación de autorización; por lo tanto, es importante no habilitar las fuentes de oData para los datos que no son adecuados para el acceso anónimo al portal.
+> La fuente OData que se publica es anónima y no tiene comprobaciones de autorización; por tanto, es importante no habilitar las fuentes OData para los datos que son inadecuados para el acceso anónimo al portal.
 
 ### <a name="see-also"></a>Vea también
 
-[Configuración de un portal](configure-portal.md)  
-[Redirigir a una nueva dirección URL en un portal](add-redirect-url.md)  
+[Configurar un portal](configure-portal.md)  
+[Redireccionar a una nueva dirección URL en un portal](add-redirect-url.md)  

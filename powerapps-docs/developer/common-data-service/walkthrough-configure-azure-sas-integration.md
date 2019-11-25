@@ -1,24 +1,27 @@
 ---
 title: 'Tutorial: Configurar Microsoft Azure (SAS) para integración (Common Data Service) | Microsoft Docs'
-description: 'El tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service para aplicaciones registrados en Azure Service Bus.'
+description: El tutorial le guiará por el proceso de configuración del emisor de Azure Service Bus, el ámbito y las reglas para permitir que una aplicación de escucha lea los mensajes de Common Data Service para aplicaciones registrados en Azure Service Bus.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: d7b24b11-57f0-ab05-4bec-0b64efee178d
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a6d6e12e07174d67afc3fa1461767eca284c0015
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749654"
 ---
-
 # <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>Tutorial: Configurar Azure (SAS) para integración con Common Data Service
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->

@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: 21a166a0-d25e-4260-a1e4-2ddc528787c2
 caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4aa2b77e9a9840532193fe50d92aabd796484c60
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758432"
 ---
 # <a name="create-a-theme"></a>Crear un tema
 
@@ -71,7 +77,7 @@ Puede crear una vista y una sensación personalizadas (un tema) para su aplicaci
 ## <a name="copy-and-alter-the-existing-theme"></a>Copie y edite el tema existente  
  La forma más sencilla y rápida de crear un tema nuevo es clonar uno existente y modificarlo. Después, debe guardarlo, mostrar una vista previa y publicarlo. 
  
-1.  Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Controlado por modelo** (parte inferior izquierda). 
 
@@ -91,12 +97,12 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
  La captura de pantalla siguiente muestra el nuevo color de navegación.  
  
  > [!div class="mx-imgBorder"] 
- > ![Colores del tema en verde claro](media/theme-gentle-green.png "Colores del tema en verde claro")  
+ > ![Colores de temas verdes suaves](media/theme-gentle-green.png "Colores de temas verdes suaves")  
   
  La captura de pantalla siguiente muestra la cuadrícula de entidad de cuenta con el nuevo color del resalte.  
  
  > [!div class="mx-imgBorder"] 
- > ![Cuadrícula de la cuenta con el tema en verde claro](media/themes-gentle-green-account-grid.png "Cuadrícula de la cuenta con el tema en verde claro")  
+ > ![Cuadrícula de cuenta de temas verdes suaves](media/themes-gentle-green-account-grid.png "Cuadrícula de cuenta de temas verdes suaves")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>Obtener una vista previa y publicar un tema  
@@ -110,7 +116,7 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
   
  La captura de pantalla siguiente muestra los botones de la barra de comandos para vista previa y publicación.  
   
- ![Usar los botones de vista previa para entras al modo de vista previa o salir de él](media/themes-preview-buttons.PNG "Usar los botones de vista previa para entras al modo de vista previa o salir de él")  
+ ![Usar botones de vista previa para entrar o salir del modo de vista previa](media/themes-preview-buttons.PNG "Usar botones de vista previa para entrar o salir del modo de vista previa")  
   
 <a name="BestPracticies"></a>   
 ## <a name="best-practices"></a>Prácticas recomendadas  
@@ -146,5 +152,5 @@ La captura de pantalla siguiente muestra una parte de la configuración predeter
   
 ## <a name="see-also"></a>Vea también  
          
- [Vídeo: Temas](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Vídeo: Temas](https://go.microsoft.com/fwlink/p/?LinkId=529568) [Consultar y editar un tema de organización](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

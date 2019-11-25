@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 089a95c90b5ca222e3ab0209da3e0ce20af4bcb5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753592"
 ---
 # <a name="ribbon-wss-schema"></a>Esquema WSS de cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbon-wss-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbon-wss-schema -->
 
 La siguiente es la definición de esquema para los tipos de cintas de opciones WWS en un archivo de personalización de importación/exportación. WWS para cinta de opciones se incluye desde el [esquema central de cinta de opciones](ribbon-core-schema.md). Puede encontrar el esquema en la carpeta `Schemas\9.0.0.2090\RibbonWSS.xsd` al descargar el archivo zip de esquemas.
 
-Descargue los [esquemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
+Descargue los [esquemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip).
 
 
 Para obtener más información, consulte [Empaquetar y distribuir extensiones con soluciones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
@@ -31,7 +37,7 @@ Para obtener más información, consulte [Empaquetar y distribuir extensiones co
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CrmRibbonWss" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema id="CrmRibbonWss" xmlns:xs="https://www.w3.org/2001/XMLSchema">
 
   <xs:simpleType name="AltType">
     <xs:restriction base="xs:string" />

@@ -1,6 +1,6 @@
 ---
-title: Personalizar los metadatos de entidades (Common Data Service) | MicrosoftDocs
-description: 'Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad.'
+title: Personalice los metadatos de entidad (Common Data Service) | Microsoft Docs
+description: Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7be52e8fb5eae18e709ab10765a0684b5a65ef81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753004"
 ---
 # <a name="customize-entity-metadata"></a>Personalizar metadatos de entidad
 
-Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad. Para ver los metadatos de la organización, use el explorador de metadatos. [Descargar el explorador de metadatos](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip).
+Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad. Para ver los metadatos de la organización, use el explorador de metadatos. [Descargar el explorador de metadatos](https://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip).
 
 Más información: [Examinar los metadatos para su organización](browse-your-metadata.md)  
   
@@ -91,7 +97,7 @@ Si trabaja con el servicio de la organización, utilice la clase <xref:Microsoft
 |                          **Habilitar el panel de lectura de Outlook**                           | **Nota**:<br /><br /> La propiedad `IsReadingPaneEnabled` es solo para uso interno.<br /><br /> Para habilitar o deshabilitar la capacidad de los usuarios de Office Outlook de ver los datos de esta entidad, use el panel de lectura de Outlook. Debe establecer esta propiedad en la aplicación. |
 |                                 **Habilitar la combinación de correspondencia**                                  |                                                                                                                 Use `IsMailMergeEnabled` para habilitar o deshabilitar la capacidad de generar documentos combinados de Office Word que usen datos de esta entidad.                                                                                                                  |
 |                             **Habilitar detección de duplicados**                             |                                                                                                       Use `IsDuplicateDetectionEnabled` para habilitar o deshabilitar la detección de duplicados de la entidad. Para obtener más información, consulte [Detección de datos duplicados en Dynamics 365](/dynamics365/customer-engagement/developer/detect-duplicate-data-for-developers).                                                                                                        |
-|                           **Habilitar la integración de SharePoint**                            |                                                          Use `IsDocumentManagementEnabled` para habilitar o deshabilitar la integración de SharePoint Server para la entidad. Para obtener más información, consulte [Habilitar la administración de documentos para entidades](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities).                                                          |
+|                           **Habilitar la integración de SharePoint**                            |                                                          Use `IsDocumentManagementEnabled` para habilitar o deshabilitar la integración del servidor de SharePoint para la entidad. Para obtener más información, consulte [Habilitar la administración de documentos para entidades](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities).                                                          |
 | **Habilitar Dynamics 365 for phones** |                                                                                                                      Use `IsVisibleInMobile` para habilitar o deshabilitar la capacidad de los usuarios de Dynamics 365 for phones de ver los datos de esta entidad.                                                                                                                       |
 |              **Dynamics 365 for tablets**               |                             Use `IsVisibleInMobileClient` para habilitar o deshabilitar la capacidad de los usuarios de Dynamics 365 for tablets de ver los datos de esta entidad.<br /><br /> Si la entidad está disponible para Dynamics 365 for tablets puede usar `IsReadOnlyInMobileClient` para especificar que los datos del registro sean solo de lectura.                              |
 |                                  **Habilitar auditoría**                                   |                                                                                                              Use `IsAuditEnabled` para habilitar o deshabilitar la auditoría para la entidad. Para obtener más información, vea [Configurar entidades y atributos para auditoría](configure-entities-attributes-auditing.md).                                                                                                              |

@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba077e5bf9c1f1f464e8cc71594d30684efc0824
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749838"
 ---
 # <a name="use-the-filterexpression-class"></a>Usar la clase FilterExpression
 
-En Common Data Service, puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> para crear una consulta que exprese varias condiciones. Por ejemplo, puede crear una expresión de consulta que sea equivalente a una instrucción SQL como `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'`.  
+En Common Data Service y , puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> para crear una consulta que exprese varias condiciones. Por ejemplo, puede crear una expresión de consulta que sea equivalente a una instrucción SQL como `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'`.  
   
  La tabla siguiente enumera las propiedades de la clase <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   

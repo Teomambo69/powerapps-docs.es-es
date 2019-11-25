@@ -1,6 +1,6 @@
 ---
-title: 'Ejemplo de operaciones básicas de API web (C#) (Common Data Service) | Microsoft Docs'
-description: 'Este ejemplo muestra cómo realizar operaciones básicas CRUD (Crear, Recuperar, Actualizar y Eliminar) y de asociación y disociación en instancias de entidades de Common Data Service usando la API web de Common Data Service.'
+title: Ejemplos de operaciones básicas de la API web (C#) (Common Data Service)| Microsoft Docs
+description: Este ejemplo muestra cómo realizar operaciones básicas CRUD (Crear, Recuperar, Actualizar y Eliminar) y de asociación y disociación en instancias de la entidad de Common Data Service mediante la API web de Common Data Service.
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -8,30 +8,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 45cdefe5-0776-496a-9b06-b5cad768e543
 caps.latest.revision: 20
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 766f9f16690ad111115db163b79641f8e4ec5683
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749760"
 ---
 # <a name="web-api-basic-operations-sample-c"></a>Ejemplo de operaciones básicas de la API web (C#)
 
-Este ejemplo muestra cómo realizar operaciones básicas CRUD (Crear, Recuperar, Actualizar y Eliminar) y de asociación y disociación en instancias de entidades de Common Data Service usando la API web de Common Data Service.  
+Este ejemplo muestra cómo realizar operaciones básicas CRUD (Crear, Recuperar, Actualizar y Eliminar) y de asociación y disociación en instancias de la entidad de Common Data Service mediante la API web de Common Data Service.  
   
 > [!NOTE]
-> Este ejemplo implementa las operaciones de Common Data Service y la salida de la consola detalladas en el [Ejemplo de operaciones básicas de API web](../web-api-basic-operations-sample.md) y utiliza las construcciones comunes de C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
+> Este ejemplo implementa las operaciones de Common Data Service y la salida de la consola detalladas en el [Ejemplo de operaciones básicas de la API web](../web-api-basic-operations-sample.md) y utiliza las construcciones comunes de C# que se describen en [Ejemplos de API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_prerequisites"></a>
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Los requisitos previos de todos los ejemplos en C# de la API web de Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de operaciones básicas de la API web (C#)](../web-api-samples-csharp.md).  
+Los requisitos previos de todos los ejemplos en C# de la API web Common Data Service se detallan en la sección [Requisitos previos](../web-api-samples-csharp.md#bkmk_prerequisites) del tema primario [Ejemplos de la API web (C#)](../web-api-samples-csharp.md).  
   
 <a name="bkmk_runSample"></a>
   
@@ -45,7 +51,7 @@ Vaya a [Web API Basic Operations Sample (C#)](https://github.com/Microsoft/Power
 |App.config|El archivo de configuración de la aplicación, que contiene información de conexión con el servidor de Common Data Service con marcadores. Este archivo se comparte con todos los ejemplos de API web en el repositorio. Si configura la información de la conexión para un ejemplo, puede ejecutar los otros ejemplos con la misma configuración.|  
 |SampleHelper.cs|Contiene el código auxiliar para ayudar a realizar tareas comunes, como la configuración de la aplicaciones, la autenticación y la administración de errores de respuestas `HTTP`.<br/>Este archivo se comparte con todos los ejemplos de API web en el repositorio. Contiene métodos auxiliares para administrar excepciones y el token OAuth. Consulte el ejemplo simple de la API web para obtener más información sobre los métodos de este archivo.|  
 |SampleMethod.cs|Contiene todos los métodos que admiten el código de origen en el ejemplo. Las funciones que se usan en SampleProgram.cs se pueden definir en este archivo. |
-|BasicOperations.sln <br />BasicOperations.csproj <br />Packages.config <br />AssemblyInfo.cs|El proyecto, la configuración del paquete NuGet, y los archivos de información de ensamblado de la solución Visual Studio 2017 estándar para este ejemplo.|  
+|BasicOperations.sln <br />BasicOperations.csproj <br />Packages.config <br />AssemblyInfo.cs|La solución de Visual Studio 2017 estándar, proyecto, configuración del paquete NuGet, y archivos de información de ensamblado para este ejemplo.|  
   
  A continuación, use el procedimiento siguiente para ejecutar este servicio.  
   
@@ -563,7 +569,7 @@ HttpResponseMessage disassocResponse2 = client.DeleteAsync(dis2Uri).Result;
   
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](../overview.md)<br />
+[Usar la API web de Common Data Service](../overview.md)<br />
 [Cree una entidad usando API web](../create-entity-web-api.md)<br />
 [Actualizar y eliminar entidades mediante la API web](../update-delete-entities-using-web-api.md)<br />
 [Recuperar una entidad usando API web](../retrieve-entity-using-web-api.md)<br />

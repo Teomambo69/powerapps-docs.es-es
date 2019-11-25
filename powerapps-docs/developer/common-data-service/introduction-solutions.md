@@ -16,22 +16,27 @@ ms.workload: na
 ms.date: 01/28/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a621bf0ff0093a5100a14ccad9f3e4c3ebb9e1e7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752944"
 ---
-
 # <a name="introduction-to-solutions"></a>Introducción a soluciones
 
-*Las soluciones* son la manera en que los personalizadores y desarrolladores crean, empaquetan y mantienen las unidades de software que extienden Common Data Service. Por ejemplo, las aplicaciones de Dynamics 365 for Sales, Marketing, Customer Service se componen de soluciones. Los personalizadores y los desarrolladores distribuyen soluciones de modo que las organizaciones puedan usar Common Data Service para instalar y desinstalar la funcionalidad de su negocio definida por la solución.
+Las *soluciones* son cómo los personalizadores y desarrolladores crean, empaquetan y mantienen las unidades de software que extienden Common Data Service. Por ejemplo, las aplicaciones de Dynamics 365 for Sales, Marketing, Customer Service se componen de soluciones. Los personalizadores y los desarrolladores distribuyen soluciones de modo que las organizaciones puedan usar Common Data Service para instalar y desinstalar la funcionalidad de su negocio definida por la solución.
 
 Cada personalización que crea para Common Data Service o para una solución instalada anteriormente forma parte de una solución. Se realiza un seguimiento de cada cambio que se aplica y cualquier dependencia puede ser calculada. Cuando exporta una solución administrada, contiene todos los cambios que se han aplicado para esa solución en un archivo que puede importar a continuación en otro entorno de Common Data Service.
 
 Si tiene previsto transportar personalizaciones o extensiones entre diferentes entornos de Common Data Service o distribuir soluciones mediante AppSource, debe comprender el marco de trabajo de la solución.
 
 > [!NOTE]
-> Para obtener información detallada sobre cómo usar eficazmente las soluciones para una administración correcta de del ciclo de vida (ALM) de la aplicación, consulte [Notas del producto: Administración del ciclo de vida de la solución](https://www.microsoft.com/en-us/download/details.aspx?id=57777)
+> Para obtener información detallada sobre cómo usar eficazmente las soluciones para una administración correcta de del ciclo de vida (ALM) de la aplicación, consulte [Notas del producto: Administración del ciclo de vida de la solución](https://www.microsoft.com/download/details.aspx?id=57777)
 
 ## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas
 
@@ -72,18 +77,18 @@ Más información: [Mantener soluciones administradas > Crear actualizaciones de
 
 Para crear un editor de soluciones y una solución necesita navegar al área de personalización de Common Data Service.
 
-Desde [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+Desde [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. Seleccione el icono *gofre* en la esquina superior izquierda
 2. En control flotante, seleccione **Todas las aplicaciones**.
-3. Busque **Common Data Service - aplicación personalizada**.
+3. Busque la **Common Data Service - aplicación personalizada**.
  Es posible que desee hacer clic en las elipses (...) y elegir **Anclar esta aplicación** para que sea más sencillo navegar la próxima vez.
 4. Haga clic en la aplicación **Common Data Service - aplicación personalizada** y selecciónela.
 5. Navegue a **Configuración** > **Personalización** > **Personalizaciones**.
 
-Desde [home.dynamics.com](http://home.dynamics.com/)
+Desde [home.dynamics.com](https://home.dynamics.com/)
 
-1. Busque la ventana **Common Data Service - personalizada** y haga clic en ella.
+1. Busque la ventana **Common Data Service - personalizada** y haga clic.
 2. Navegue a **Configuración** > **Personalización** > **Personalizaciones**.
 
 ### <a name="create-a-solution-publisher"></a>Crear un editor de soluciones
@@ -147,16 +152,16 @@ Use el *Package Deployer* para crear un instalador personalizado para un paquete
 - El código personalizado que puede ejecutarse antes, durante o después de la implementación del paquete.
 - Contenido HTML específico del paquete que mostrarse al principio y al final del proceso de implementación. Puede resultar útil para proporcionar una descripción de las soluciones y los archivos que se implementan en el paquete.
 
-Más información: [Cree paquetes para Package Deployer de Common Data Service](package-deployer/create-packages-package-deployer.md).
+Más información: [Crear paquetes para Common Data Service Package Deployer](package-deployer/create-packages-package-deployer.md).
 
 ## <a name="team-development-of-solutions"></a>Desarrollo del equipo de soluciones
 
 Un archivo de solución es un solo archivo binario que no permite el control de código fuente ni el desarrollo en equipo. No hay forma de que varios programadores trabajen en los componentes personalizados de la solución.
 
-La herramienta *SolutionPackager* resuelve el problema del control del código fuente y el desarrollo en equipo de los archivos de solución. La herramienta identifica los componentes individuales del archivo de solución comprimido y los extrae en archivos individuales. La herramienta puede también volver a crear un archivo de solución empaquetando los archivos que se habían extraídos anteriormente. Esto permite a varios usuarios trabajar de forma independiente en una sola solución y extraer los cambios en una ubicación común. Ya que cada componente del archivo de solución está separado en varios archivos, es posible combinar personalizaciones sin sobrescribir cambios anteriores. Un uso secundario de la herramienta SolutionPackager es que puede ser invocada desde un proceso automatizado de compilación para generar un archivo de solución comprimido a partir de los archivos componentes extraídos anteriormente sin necesidad de una instancia de Common Data Service activa.
+La herramienta *SolutionPackager* resuelve el problema del control del código fuente y el desarrollo en equipo de los archivos de solución. La herramienta identifica los componentes individuales del archivo de solución comprimido y los extrae en archivos individuales. La herramienta puede también volver a crear un archivo de solución empaquetando los archivos que se habían extraídos anteriormente. Esto permite a varios usuarios trabajar de forma independiente en una sola solución y extraer los cambios en una ubicación común. Ya que cada componente del archivo de solución está separado en varios archivos, es posible combinar personalizaciones sin sobrescribir cambios anteriores. Un uso secundario de la herramienta SolutionPackager es que puede ser invocada desde un proceso automatizado de compilación para generar un archivo de solución comprimido a partir de los archivos componentes extraídos anteriormente sin necesidad de una instancia de Common Data Service.
 
 Más información: [Herramientas de solución para el desarrollo en equipo](/dynamics365/customer-engagement/developer/solution-tools-team-development)
 
 ### <a name="see-also"></a>Vea también
 
-[Información general de Common Data Service](overview.md)
+[Información general para desarrolladores de Common Data Service](overview.md)

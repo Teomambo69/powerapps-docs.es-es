@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749716"
 ---
 # <a name="custom-activities"></a>Actividades personalizadas
 
-En Common Data Service, puede crear actividades personalizadas para satisfacer las necesidades de comunicación de una empresa como mensajería instantánea (IM) y servicio de mensajes cortos (SMS). Para crear una actividad personalizada en Common Data Service, cree una entidad personalizada, y especifíquela como una entidad de actividad con la propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> .  
+En Common Data Service, puede crear actividades personalizadas para satisfacer las necesidades de comunicación de una empresa como mensajería instantánea (IM) y servicio de mensajes cortos (SMS). Para crear una actividad personalizada en Common Data Service, crear una entidad personalizada, y especificarla como una entidad de actividad utilizando el <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity>. .  
   
  Sin embargo, al contrario que otras entidades personalizadas, no puede especificar un atributo primario para una actividad personalizada porque, de forma predeterminada, cada actividad personalizada debe tener un atributo primario llamado "Asunto".  
   

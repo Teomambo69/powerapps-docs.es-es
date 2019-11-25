@@ -1,5 +1,5 @@
 ---
-title: Creación y edición de entidades con el portal de PowerApps | MicrosoftDocs
+title: Crear y editar entidades con el portal de PowerApps | MicrosoftDocs
 description: Aprenda a crear y editar entidades con el portal de PowerApps
 ms.custom: ''
 ms.date: 05/30/2018
@@ -9,31 +9,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758124"
 ---
+# <a name="create-and-edit-entities-using-powerapps-portal"></a>Crear y editar entidades con el portal de PowerApps
 
-# <a name="create-and-edit-entities-using-powerapps-portal"></a>Crear y editar entidades con el portal PowerApps
-
-El [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar entidades para Common Data Service.
+El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de crear y de editar entidades para Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
-- [Creación y edición entidades en Common Data Service](create-edit-entities.md)
+- [Crear y editar entidades en Common Data Service](create-edit-entities.md)
 - [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>Ver entidades
 
-1. En el [portal de PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Basadas en modelos** o **Lienzo**.
+1. En el [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
 2. Seleccione **Datos** > **Entidades**
 
 ![Ver entidades](media/view-entities-portal.png)
@@ -144,7 +149,7 @@ Si la entidad tiene las dependencias que impiden que sea eliminado verá un mens
 
 ### <a name="see-also"></a>Vea también
 
-[Creación y edición entidades en Common Data Service](create-edit-entities.md)<br />
+[Crear y editar entidades en Common Data Service](create-edit-entities.md)<br />
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)
 
 

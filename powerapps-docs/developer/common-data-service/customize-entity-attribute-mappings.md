@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 78a1eb011591afc09ded37be89031947d0f2b9ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749715"
 ---
 # <a name="customize-entity-and-attribute-mappings"></a>Personalizar asignaciones de entidad y atributo
 
@@ -23,7 +29,7 @@ Puede asignar atributos entre entidades que tienen una relación de entidad. Est
 
 ## <a name="behavior-in-the-application"></a>Comportamiento en la aplicación
 
- La asignación en Common Data Service simplifica la entrada de datos cuando se crean nuevos registros que están asociados con otro registro. Cuando una entidad tiene una relación entre entidades con otra entidad, puede crear nuevos registros de entidades relacionadas con la ficha **Crear relacionados** en la cinta de opciones. Al crear un nuevo registro de esta forma, los datos asignados del registro de la entidad primaria se copian al formulario para el nuevo registro de la entidad relacionada. Al asignar atributos de entidad, se controlan los datos que se copian agregando nuevas asignaciones en la relación entre las dos entidades. Si crea un registro sin usar la vista asociada de la entidad primaria, los datos no se asignarán.  
+ La asignación en Common Data Service simplifica la entrada de datos cuando se crean nuevos registros que están asociados con otro registro. Cuando una entidad tiene una relación entre entidades con otra entidad, puede crear nuevos registros de entidades relacionadas con la pestaña **Crear relacionados** en la cinta de opciones. Al crear un nuevo registro de esta forma, los datos asignados del registro de la entidad primaria se copian al formulario para el nuevo registro de la entidad relacionada. Al asignar atributos de entidad, se controlan los datos que se copian agregando nuevas asignaciones en la relación entre las dos entidades. Si crea un registro sin usar la vista asociada de la entidad primaria, los datos no se asignarán.  
 
  Por ejemplo, es posible que desee configurar una asignación entre los campos de dirección en cuentas y los campos de dirección en contactos. Con esta asignación, cuando un usuario agrega un contacto asociado a una cuenta específica, los campos de dirección del contacto se rellenan automáticamente.  
 
@@ -44,7 +50,7 @@ La respuesta recibida de la solicitud InitializeFrom consta de valores de atribu
 > [!NOTE] 
 > Para determinar si se pueden asignar dos entidades, utilice la siguiente solicitud de la API web:<br/>`GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname`
 
-Para obtener más información, consulte [Crear una nueva entidad a partir de otra entidad](webapi/create-entity-web-api.md#create-a-new-entity-from-another-entity).
+Para obtener más información, consulte [Crear un nuevo registro de entidad a partir de otra entidad](webapi/create-entity-web-api.md#create-a-new-entity-record-from-another-entity).
 
 ### <a name="using-organization-service"></a>Uso del servicio de organización
 

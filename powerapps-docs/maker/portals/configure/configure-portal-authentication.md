@@ -1,6 +1,6 @@
 ---
-title: Configurar la autenticación del portal | MicrosoftDocs
-description: Obtenga información sobre cómo configurar la autenticación para un portal.
+title: Configurar autenticación de un portal | MicrosoftDocs
+description: Aprender a configurar la autenticación de un portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,35 +11,35 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: b285ce6e3a93efb72ed867149ce0740f7ee96579
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542763"
+ms.locfileid: "2755331"
 ---
-# <a name="configure-portal-authentication"></a>Configuración de la autenticación del portal
+# <a name="configure-portal-authentication"></a>Configurar la autenticación del portal
 
-En una aplicación de portal, un usuario del portal autenticado está asociado a un contacto o usuario del sistema. La configuración predeterminada de portales se basa en el contacto. Para iniciar sesión, un contacto debe tener configurada la información de autenticación Web adecuada. Los usuarios del portal deben estar asignados a un rol Web para obtener permisos más allá de los usuarios no autenticados. Para configurar permisos para un rol Web, configure el acceso a la página web y las reglas de control de acceso a sitios Web.
+En una aplicación de portal, un usuario del portal autenticado se asocia con un contacto o un usuario del sistema. La configuración de portales predeterminada se basa en contactos. Para iniciar sesión, un contacto debe tener la información de autenticación web adecuada configurada. Los usuarios del portal deben asignarse a roles web para obtener permisos por encima de los usuarios no autenticados. Para configurar permisos para un rol web, configure su acceso a páginas web y reglas de control de acceso a sitios web.
 
-La última experiencia de autenticación del portal permite a los usuarios del portal iniciar sesión con su elección de una cuenta local basada en el proveedor de pertenencia de contactos o una cuenta externa basada en [ASP.net Identity](https://www.asp.net/identity).   
+La experiencia más reciente de autenticación en el portal permite a los usuarios iniciar sesión con proveedor local de suscripciones de contacto que prefiera o con una cuenta externa basada en [Identidad de ASP.NET](https://www.asp.net/identity).   
 
-- **Autenticación local**: la autenticación local es la que usa los registros de contacto de un entorno de Common Data Service para la autenticación. Para compilar experiencias de autenticación personalizadas, los desarrolladores pueden usar la API de identidad de ASP.Net para crear páginas y herramientas de inicio de sesión personalizadas.
-- **Autenticación externa**: la API de ASP.net Identity proporciona la autenticación externa. En este caso, las credenciales de la cuenta y la administración de contraseñas se controlan mediante un proveedor de identidades de terceros. Esto incluye proveedores basados en OpenID, como Yahoo! y los proveedores basados en Google y OAuth 2,0, como Twitter, Facebook y [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Los usuarios se suscriben al portal seleccionando una identidad externa para registrarse en el portal. Una vez registrada, una identidad externa tiene acceso a las mismas características que una cuenta local. 
+- **Autenticación local**: La autenticación local es la autenticación basada en formularios común que usa registros de contacto de una organización de entorno Common Data Service para autenticación. Para crear experiencias de autenticación personalizadas, los desarrolladores pueden usar la API de identidad ASP.Net para crear páginas y herramientas de inicio de sesión personalizadas.
+- **Autenticación externa**: La autenticación externa se proporciona mediante la API de identidad de ASP.NET. En este caso, las credenciales de cuenta y la administración de contraseñas se controlan mediante un proveedor de identidad de terceros. Esto incluye proveedores basados en OpenID como Yahoo! y proveedores basados en Google y OAuth 2.0 como Twitter, Facebook y [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Los usuarios se suscriben al portal seleccionando una identidad externa para registrarse en el portal. Una vez registrada, una identidad externa tiene acceso a las mismas características que una cuenta local. 
 
-Tanto el registro de la cuenta local como la externa pueden usar códigos de invitación para suscribirse, así como el flujo de trabajo de confirmación por correo electrónico. Además, los administradores del portal pueden optar por habilitar o deshabilitar cualquier combinación de opciones de autenticación a través de la configuración del sitio del portal.
+El registro de cuentas locales y externas puede usar de códigos de invitación para iniciar sesión, así como del flujo de trabajo de confirmación de correo electrónico. Además, los administradores del portal pueden habilitar o deshabilitar cualquier combinación de opciones de autenticación mediante la configuración de sitios del portal.
 
 > [!NOTE]
-> Los usuarios del portal deben tener una dirección de correo electrónico única. Si dos o más registros de contacto (incluidos los registros de contactos desactivados) tienen la misma dirección de correo electrónico, los contactos no podrán autenticarse en el portal.
+> Los usuarios del portal deben tener una dirección de correo electrónico única. Si hay dos o más registros de contactos (incluidos registros de contactos desactivados) con la misma dirección de correo electrónico, los contactos no podrán autenticarse en el portal.
 
-## <a name="account-sign-up-registration"></a>Registro de cuenta (registro)
+## <a name="account-sign-up-registration"></a>Suscripción de cuenta (registro)
 
-Los administradores del portal tienen varias opciones para controlar el comportamiento de inicio de sesión de la cuenta. Open registration es la configuración de registro menos restrictiva, donde el portal permite registrar una cuenta de usuario con solo proporcionar una identidad de usuario. Las configuraciones alternativas pueden requerir que los usuarios proporcionen un código de invitación o una dirección de correo electrónico válida para registrarse en el portal. Independientemente de la configuración del registro, las cuentas locales y externas participan igualmente en el flujo de trabajo de registro. Es decir, los usuarios tienen la opción de elegir el tipo de cuenta que desea registrar.
+Los administradores del portal tienen varias opciones para controlar el comportamiento de suscripción a cuentas. El registro abierto es la configuración de suscripción menos restrictiva, donde el portal permite registrar una cuenta de usuario simplemente proporcionando una identidad del usuario. Las configuraciones alternativas pueden requerir que los usuarios proporcionen un código de invitación o una dirección de correo electrónico válida para registrarse con el portal. Independientemente de la configuración del registro, las cuentas locales y externas participan por igual en el flujo de trabajo del registro. Es decir, los usuarios tienen la opción de elegir el tipo de cuenta al que desean registrarse.
 
-## <a name="open-registration"></a>Abrir registro
+## <a name="open-registration"></a>Registro abierto
 
-Durante el registro, el usuario tiene la opción de crear una cuenta local (proporcionando un nombre de usuario y una contraseña) o seleccionar una identidad externa en una lista de proveedores de identidades. Si se selecciona una identidad externa, el usuario deberá iniciar sesión a través del proveedor de identidades elegido para demostrar que posee la cuenta externa. En cualquier caso, el usuario se registra y se autentica inmediatamente con el portal. Al suscribirse, se crea un nuevo registro de contacto en el entorno de Common Data Service.
+Durante la suscripción, el usuario tiene la opción de crear una cuenta local (mediante un nombre de usuario y una contraseña) o de seleccionar una identidad externa de una lista de proveedores de identidad. Si selecciona una identidad externa, el usuario debe iniciar sesión a través del proveedor de identidad elegido para probar que posee la cuenta externa. En cualquier caso, el usuario inmediatamente se registra y autentica en el portal. Un nuevo registro de contacto se crea en el entorno de Common Data Service tras la suscripción.
 
-Con el registro abierto habilitado, no es necesario que los usuarios proporcionen un código de invitación para completar el proceso de registro.
+Con el registro abierto habilitado, no es necesario que los usuarios proporcionen un código de invitación para completar el proceso de suscripción.
 
 ### <a name="see-also"></a>Vea también
 
-[Establecimiento de la identidad de autenticación para un portal](set-authentication-identity.md)  
+[Establecer identidad de autenticación para un portal](set-authentication-identity.md)  

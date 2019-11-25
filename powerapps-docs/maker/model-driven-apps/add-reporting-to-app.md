@@ -10,17 +10,23 @@ ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752408"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>Agregar características de informes a una aplicación basada en modelos
 
 Las aplicaciones PowerApps pueden incluir informes que proporcionen información de negocio útil al usuario. Estos informes se basan en SQL Server Reporting Services y proporcionan el mismo conjunto de características que están disponibles para los informes típicos de SQL Server Reporting Services.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/progress-against-goals-report.png "Informe estándar de progreso en relación con los objetivos")
+> ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
 Los informes del sistema están disponibles para todos los usuarios. Los usuarios que crean o poseen informes pueden compartirlos con equipos o colegas específicos, o pueden ponerlos a disposición de la organización para que todos los usuarios puedan ejecutarlos. Estos informes usan consultas FetchXML que pertenecen a Common Data Service y recuperan datos para crear el informe. Los informes que crea en una aplicación de PowerApps son informes basados en Fetch.
 
@@ -36,7 +42,7 @@ Los informes del sistema están disponibles para todos los usuarios. Los usuario
 ## <a name="add-reporting-to-a-unified-interface-app"></a>Agregar informes a una aplicación de la interfaz unificada
 Puede agregar funcionalidad de informes basados en Fetch a la aplicación de forma que los usuarios puedan ejecutar, compartir, crear y editar informes. Para ello, agregue la entidad de informe al mapa del sitio de su aplicación. 
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra una aplicación existente para editar. 
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra una aplicación existente para editar. 
 2. En el diseñador de aplicaciones, seleccione ![Icono de lápiz para editar el mapa del sitio](media/ccf-pencil-icon.png) junto a **Mapa del sitio**. 
 3. En el Diseñador del mapa del sitio, seleccione **Agregar** y después seleccione **Área**. 
 4. En el cuadro **Título**, escriba un nombre para el título del área, como *Informes*. 
@@ -57,7 +63,7 @@ Puede agregar funcionalidad de informes basados en Fetch a la aplicación de for
 Ahora la aplicación muestra un área **Informes** donde los usuarios pueden ver, ejecutar, asignar, compartir y editar los informes a los que tienen permiso así como crear informes mediante el Asistente para informes. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-feature-in-app.png "Ver informe")
+> ![](media/report-feature-in-app.png "Report view")
 
 ## <a name="options-for-creating-new-reports"></a>Opciones para crear informes
 Puede crear un informe nuevo de dos maneras diferentes:
@@ -73,7 +79,7 @@ Los informes son compatibles con las soluciones. Al agregar un informe como comp
 Para saber si un informe puede verse en la organización: En la lista de informes, abra una aplicación basada en modelos, seleccione un informe y luego seleccione **Editar**. En la pestaña **Administración**, vea si **Visible por** está configurado en **Organización**. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-scope.png "Visibilidad de informes a nivel de organización")
+> ![](media/report-scope.png "Organization level report visibility")
 
 Puede agregar, importar o exportar las instantáneas de informes como parte de una solución. En aplicaciones basadas en modelo, los informes, subinformes, categorías de informe, áreas de visualización de informes y tipos de registro relacionados con el informe se consideran como componentes de un conjunto de informes. Cuando se importa la actualización de una solución en modo sin sobrescritura, se omitirán las actualizaciones de la solución a un informe si se ha personalizado algún componente del informe.
 

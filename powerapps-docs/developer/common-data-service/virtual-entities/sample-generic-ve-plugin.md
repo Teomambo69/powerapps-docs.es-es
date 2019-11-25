@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico (Common Data Service | MicrosoftDocs)'
+title: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico (Common Data Service) | Microsoft Docs'
 description: El ejemplo muestra cómo implementar un complemento de entidad virtual personalizado genérico en Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -9,27 +9,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d24
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27b274a04a704c5db1cf2f94e9535bde1914862c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749655"
 ---
-
 # <a name="sample-generic-virtual-entity-data-provider-plug-in"></a>Ejemplo: Complemento de proveedor de datos de entidad virtual genérico
 
 ## <a name="demonstrates"></a>Demostraciones
 
-Este ejemplo muestra una implementación mínima para un complemento de proveedor de datos de entidad virtual genérico de Common Data Service, **DropboxRetrieveMultiplePlugin**, para el servicio de uso compartido de archivos [Dropbox](https://www.dropbox.com/). Utiliza el método "básico" de traducir la expresión <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> creando la clase visitante personalizada **DropBoxExpressionVisitor**. Devuelve una colección de archivos que cumplen con los criterios de búsqueda como <xref:Microsoft.Xrm.Sdk.EntityCollection>. 
+Este ejemplo muestra una implementación mínima para un complemento de proveedor de datos de entidad virtual genérico Common Data Service, **DropboxRetrieveMultiplePlugin**, para el servicio de uso compartido de archivos [Dropbox](https://www.dropbox.com/). Utiliza el método "básico" de traducir la expresión <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> creando la clase visitante personalizada **DropBoxExpressionVisitor**. Devuelve una colección de archivos que cumplen con los criterios de búsqueda como <xref:Microsoft.Xrm.Sdk.EntityCollection>. 
 
 ## <a name="getting-started"></a>Introducción
 
-Para crear este ejemplo, primero debe instalar los paquetes NuGet [Dropbox.Api](https://www.nuget.org/packages/Dropbox.Api/) y [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/) en la solución.  También necesitará una cuenta de Dropbox y pasará un token de acceso real al crear una instancia del **DropboxClient**.
+Para crear este ejemplo, primero debe instalar los paquetes de NuGet [Dropbox.Api](https://www.nuget.org/packages/Dropbox.Api/) y [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/) en la solución.  También necesitará una cuenta de Dropbox y pasará un token de acceso real al crear una instancia del **DropboxClient**.
 
 Agregue las siguientes instrucciones de uso a su código:
 

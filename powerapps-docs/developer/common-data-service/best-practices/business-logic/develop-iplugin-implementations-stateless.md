@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 9/05/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9a0a91420cf29a2f44e8d1f32520e7fb529e07eb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753064"
 ---
 # <a name="develop-iplugin-implementations-as-stateless"></a>Desarrollar implementaciones de IPlugin como sin estado
 
@@ -204,4 +210,4 @@ Otra razón por la que IPlugins no debería tener estado es que los múltiples s
 ### <a name="see-also"></a>Vea también
 
 [Escribir un complemento](../../write-plug-in.md)<br />
-[Blog del equipo de CRM: Seguridad de los subprocesos en los complementos](http://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />
+[Blog del equipo de CRM: Seguridad de los subprocesos en los complementos](https://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />

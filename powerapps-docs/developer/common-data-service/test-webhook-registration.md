@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 75bccd3cbc7425279338fa58bd77592fbc5c3d64
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749674"
 ---
 # <a name="test-webhook-registration-with-request-logging-site"></a>Probar el registro de webhook con un sitio de registro de solicitud 
 
@@ -27,7 +33,7 @@ Antes de pasar a crear o configurar un servicio para consumir webhooks, debe pro
     1. Defina un nombre y cualquier propiedad de autenticación que desee. Webhook Tester no evaluará estos valores de la forma que un sitio real procesaría los datos, pero puede ver cómo se transfirieron.
 1. Utilice la herramienta de registro de complementos para registrar un paso mediante el webhook que creó en el paso 4 tal como se describe en [Registrar un paso para un webhook](register-web-hook.md#register-a-step-for-a-webhook). 
     1. Asegúrese de usar un evento que puede realizar fácilmente editando los datos en la aplicación de Common Data Service, como la actualización de una entidad de contacto.
-1. Use la aplicación Common Data Service para realizar la operación para desencadenar el evento.
+1. Utilice la aplicación de Common Data Service para realizar la operación para desencadenar el evento.
 1. Una vez que desencadene el evento, vuelva a la página de Webhook Tester del paso 2. Debe ver que la página se ha actualizado para mostrar los datos pasados en la solicitud:
 
     ![Un ejemplo de la solicitud registrada en el sitio web de Webhook Tester](media/webhook-tester-example.png)

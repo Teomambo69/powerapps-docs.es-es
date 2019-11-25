@@ -1,5 +1,5 @@
 ---
-title: Usar la entidad Categoría (Common Data Service) | MicrosoftDocs
+title: Use la entidad de categoría (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre cómo categorizar los registros de entidad utilizando la entidad de categoría.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2f19ba3babc0d2a57395fc04296c6ccce5e07dc1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749778"
 ---
 # <a name="use-the-category-entity"></a>Usar la entidad Categoría
 
-Categorizar los registros de entidad en Common Data Service ayuda a etiquetar los registros para poder buscarlos fácilmente. Use la entidad `Category` para crear y administrar una estructura jerárquica de categorías en Common Data Service, y luego asociar los registros de entidad a una o varias categorías.  
+Categorizar los registros de entidad en Common Data Service ayuda a etiquetar los registros para poder buscarlos fácilmente. Use la entidad `Category` para crear y administrar una estructura jerárquica de categorías, en Common Data Service y luego asociar los registros de entidad a una o varias categorías.  
   
  Una categoría puede tener varias categorías secundarias, pero una categoría secundaria solo puede tener una categoría principal. Si elimina un registro principal de `Category` se eliminarán automáticamente todos sus registros secundarios y asociaciones de entidad. Define una categoría principal para una categoría mediante el atributo `Category.ParentCategoryId`.  
   

@@ -9,15 +9,21 @@ ms.date: 06/06/2018
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 43bfface-4dc2-411d-99a1-83e934646989
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755924"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>Utilizar el formulario principal de la aplicación controlada por modelos y sus componentes
 
@@ -37,7 +43,7 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Acceda al editor de formularios a través del diseñador de aplicaciones en PowerApps
 
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione la aplicación que desee y, en la barra de herramientas, seleccione **Editar**.  
 
@@ -58,7 +64,7 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Acceso al editor de formularios a través de la solución predeterminada
 
-1.  Iniciar sesión en [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
 

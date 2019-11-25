@@ -1,6 +1,6 @@
 ---
 title: Usar la API web del comprobador de PowerApps | Microsoft Docs
-description: 'La API web del comprobador de PowerApps proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas, y dispositivos.'
+description: La API web del comprobador de PowerApps proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas, y dispositivos.
 ms.custom: ''
 ms.date: 06/3/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 0d5f7579-304a-4d28-ba73-df30722205eb
 caps.latest.revision: 1
 author: mhuguet
@@ -16,16 +16,22 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 495a5e976ae3ef9579e96023e65be5bee85f5c01
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753036"
 ---
 # <a name="use-the-powerapps-checker-web-api"></a>Usar la API web del comprobador de PowerApps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-La API web del comprobador de PowerApps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal](https://make.powerapps.com) del fabricante de PowerApps y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
+La API web del comprobador de PowerApps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal del fabricante de PowerApps](https://make.powerapps.com) y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
 
  > [!IMPORTANT]
  >
@@ -106,7 +112,7 @@ Si no se proporciona, se usará de forma predeterminada la última versión de l
 
 ## <a name="rulesets-and-rules"></a>Conjuntos de reglas y reglas
 
-El comprobador de PowerApps requiere una lista de reglas cuando se ejecuta. Estas reglas se pueden proporcionar en forma de reglas individuales o agrupaciones de reglas, denominadas *conjuntos de reglas*. Un conjunto de reglas es una forma cómoda de especificar un grupo de reglas en lugar de especificar cada regla individualmente. Por ejemplo, la característica del comprobador de soluciones usa un conjunto de reglas llamado *Comprobador de soluciones*. Cuando se agregan o se quitan reglas, el servicio incluirá estos cambios automáticamente sin requerir ningún cambio por parte de la aplicación que consume. Si requiere que la lista de reglas no cambie automáticamente como se describe anteriormente, pueden especificar reglas de forma individual.
+l comprobador de PowerApps requiere una lista de reglas cuando se ejecuta. Estas reglas se pueden proporcionar en forma de reglas individuales o agrupaciones de reglas, denominadas *conjuntos de reglas*. Un conjunto de reglas es una forma cómoda de especificar un grupo de reglas en lugar de especificar cada regla individualmente. Por ejemplo, la característica del comprobador de soluciones usa un conjunto de reglas llamado *Comprobador de soluciones*. Cuando se agregan o se quitan reglas, el servicio incluirá estos cambios automáticamente sin requerir ningún cambio por parte de la aplicación que consume. Si requiere que la lista de reglas no cambie automáticamente como se describe anteriormente, pueden especificar reglas de forma individual.
 Los conjuntos de reglas pueden tener runa o varias reglas sin límite. Una regla puede no estar en ningún conjunto de reglas o en varios. Puede obtener una lista de todos los conjuntos de reglas llamando a la API de la siguiente manera: `[Geographical URL]/api/ruleset`. Esta extremo esté abierto y no requiere autenticación.
 
 ### <a name="solution-checker-ruleset"></a>Conjunto de reglas del comprobador de soluciones
@@ -121,7 +127,7 @@ Cuando se publican aplicaciones en AppSource, debe certificar su aplicación. [L
 
 ## <a name="find-your-tenant-id"></a>Buscar el identificador de inquilino
 
-El identificador del inquilino es necesario para interactuar con las API que requieren un símbolo. Consulte [este artículo](https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id) para los detalles sobre cómo obtener el identificador de inquilinos. También puede usar los comandos de PowerShell para recuperar el identificador de inquilinos. El siguiente ejemplo aprovecha los cmdlets en el [módulo de AzureAD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+El identificador del inquilino es necesario para interactuar con las API que requieren un símbolo. Consulte [este artículo](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) para los detalles sobre cómo obtener el identificador de inquilinos. También puede usar los comandos de PowerShell para recuperar el identificador de inquilinos. El siguiente ejemplo aprovecha los cmdlets en el [módulo de AzureAD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ```powershell
 # Login to AAD as your user
@@ -183,7 +189,7 @@ Para el conseguir el mejor cifrado de su clase, el servicio del comprobador sól
 
 ## <a name="report-format"></a>Formato de informe
 
-El resultado del análisis de soluciones es un archivo zip que contiene uno o varios informes en formato estandarizado JSON. El formato de informe se basa en resultados de análisis estáticos denominado Static Analysis Results Interchange Format (SARIF). Hay herramientas disponibles para ver e interactuar con documentos SARIF. Consulte este [sitio web](https://sarifweb.azurewebsites.net/) para detalles. El servicio se basa en la versión dos de la [norma OASIS](http://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
+El resultado del análisis de soluciones es un archivo zip que contiene uno o varios informes en formato estandarizado JSON. El formato de informe se basa en resultados de análisis estáticos denominado Static Analysis Results Interchange Format (SARIF). Hay herramientas disponibles para ver e interactuar con documentos SARIF. Consulte este [sitio web](https://sarifweb.azurewebsites.net/) para detalles. El servicio se basa en la versión dos de la [norma OASIS](https://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
 
 
 ### <a name="see-also"></a>Vea también

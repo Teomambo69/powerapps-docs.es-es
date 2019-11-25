@@ -1,5 +1,5 @@
 ---
-title: Referencia de archivos de componente de la solución (Common Data Service) | Microsoft Docs
+title: Referencia de archivo de componente de la solución (Common Data Service) | Microsoft Docs
 description: Este tema describe la estructura de carpetas y el esquema de nombres de archivos utilizados por la herramienta SolutionPackager. La herramienta se usa para descomponer (desempaquetar) archivos de la solución de Dynamics 365 en archivos XML que puedan administrarse mediante un sistema de control de código fuente.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 646cfaae94072aff8328070b4bae0e955f8bc01c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749794"
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>Referencia de archivo de componente de la solución (SolutionPackager)
 
@@ -335,7 +341,7 @@ Structurexml.xml
  \<Nombre del ensamblado 1>.dll  
 \<Nombre del ensamblado 1 >. dll.data.xml  
   
- \<Nombre del ensamblado n>-{guid n}\  
+ \<Nombre del ensambaldo n>-{guid n}\  
   
  \<Nombre del ensamblado n>.dll  
 \<Nombre del ensamblado n>.dll.data.xml  

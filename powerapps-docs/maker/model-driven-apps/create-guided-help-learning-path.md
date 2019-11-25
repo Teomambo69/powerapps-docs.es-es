@@ -1,8 +1,8 @@
 ---
 title: Crear su propia ayuda guiada (Ruta de aprendizaje) (aplicaciones basadas en modelo) | MicrosoftDocs
 description: ''
-keywords: null
-ms.date: 04/30/2019
+keywords: ''
+ms.date: 10/22/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 8ee3c432-5f76-4086-b9cc-6cd467ae056b
@@ -11,14 +11,24 @@ ms.author: matp
 manager: kvivek
 topic-status: Drafting
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
+ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2768307"
 ---
-
 # <a name="create-guided-help-learning-path-for-your-app"></a>Crear ayuda guiada (Ruta de aprendizaje) para la aplicación
 
-Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda personalizada dentro de la aplicación que está adaptada a su entorno y al uso y flujo de trabajo específicos de su organización. La Ruta de aprendizaje facilita el aprendizaje y adopción de aplicaciones y de procesos de organización, garantiza que los datos se introducen e interpretan de manera consistente, y reduce los errores y las llamadas de soporte generadas por los usuarios. [Vea un vídeo corto (1:50) sobre Ruta de aprendizaje](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
+Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda personalizada dentro de la aplicación que está adaptada a su entorno y al uso y flujo de trabajo específicos de su organización. 
+
+> [!IMPORTANT]
+> Ruta de aprendizaje sólo está disponible con aplicaciones del cliente web heredadas. Use páginas de ayuda personalizadas para aplicaciones de la interfaz unificada. Más información: [Crear ayuda guiada para la aplicación de la Interfaz unificada](../common-data-service/create-custom-help-pages.md)
+
+La Ruta de aprendizaje facilita el aprendizaje y adopción de aplicaciones y de procesos de organización, garantiza que los datos se introducen e interpretan de manera consistente, y reduce los errores y las llamadas de soporte generadas por los usuarios. [Vea un vídeo corto (1:50) sobre Ruta de aprendizaje](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
 
 <a name="CustomHelp"></a>   
 
@@ -54,7 +64,7 @@ Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda pers
 ## <a name="turn-on-learning-path-for-your-organization"></a>Activar la Ruta de aprendizaje para la organización  
  La Ruta de aprendizaje es una característica opcional que se puede activar o desactivar para su organización. Puede mostrar el contenido de Ruta de aprendizaje incluido con [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], crear su propio contenido de Ruta de aprendizaje para los usuarios, o ambos.  
 
-1. Inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] con una cuenta de administrador.  
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] con una cuenta de administrador.  
 
 2. Vaya a **Configuración** y, luego, **Administración** en **Sistema**. Más información: [Configuración](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -64,7 +74,7 @@ Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda pers
 
     Puede habilitar Ruta de aprendizaje o Ayuda personalizable pero no ambas al mismo tiempo. Confirme que **Usar la Ayuda personalizada para entidades personalizables** y **Anexar los parámetros a la URL** están establecidos en **No**.  
 
-     ![Diálogo Configuración del sistema con las opciones que permiten seleccionar y habilitar la herramienta Creación de Ruta de aprendizaje](media/lp-system-settings.png "Diálogo Configuración del sistema con las opciones que permiten seleccionar y habilitar la herramienta Creación de Ruta de aprendizaje")  
+     ![Diálogo Configuración del sistema con las opciones que permiten seleccionar y habilitar la herramienta Creación de Ruta de aprendizaje](media/lp-system-settings.png "Cuadro de diálogo Configuración del sistema con las opciones que permiten seleccionar y habilitar la herramienta Creación de Ruta de aprendizaje")  
 
 5. Seleccione **Aceptar**.  
 
@@ -205,7 +215,7 @@ Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda pers
 
 2.  Seleccione **Biblioteca de contenido de Ruta de aprendizaje**.  
 
-    ![Botones de Ruta de aprendizaje que se muestran en la interfaz de aplicaciones móviles](media/lp-mobile-lp-button.png "Botones de Ruta de aprendizaje que se muestran en la interfaz de aplicaciones móviles")  
+    ![Botones de Ruta de aprendizaje que se muestra en la interfaz de aplicaciones móviles](media/lp-mobile-lp-button.png "Botones de Ruta de aprendizaje que se muestra en la interfaz de aplicaciones móviles")  
 
 
 
@@ -216,7 +226,7 @@ Use la Ruta de aprendizaje para dar a los usuarios una experiencia de Ayuda pers
 
 |Columna|Descripción|  
 |------------|-----------------|  
-|**Nombre**|El nombre que usó al crear la tarea guiada o la barra lateral. Un símbolo rojo de candado junto al nombre indica que el contenido está protegido actualmente. Puede pasar el mouse sobre el icono para ver qué usuario ha protegido el contenido.<br /><br /> ![El icono de candado rojo indica que el contenido está desprotegido.](media/lp-cl-checked-out.png "El icono de candado rojo indica que el contenido está desprotegido.")<br /><br /> Un asterisco rojo situado junto al nombre indica contenido recién protegido.<br /><br /> ![Asterisco rojo que indica contenido recién protegido](media/lp-cl-new-check-in.png "Asterisco rojo que indica contenido recién protegido")|  
+|**Nombre**|El nombre que usó al crear la tarea guiada o la barra lateral. Un símbolo rojo de candado junto al nombre indica que el contenido está protegido actualmente. Puede pasar el mouse sobre el icono para ver qué usuario ha protegido el contenido.<br /><br /> ![El icono de candado rojo indica que el contenido está desprotegido.](media/lp-cl-checked-out.png "REl icono de candado rojo indica que el contenido está desprotegido.")<br /><br /> Un asterisco rojo situado junto al nombre indica contenido recién protegido.<br /><br /> ![Asterisco rojo que indica contenido recién protegido](media/lp-cl-new-check-in.png "RAsterisco rojo que indica contenido recién protegido")|  
 |**Título**|El título que proporcionó cuando agregó contenido a la tarea guiada o la barra lateral. Los títulos para las barras laterales y tareas guiadas se muestran en barras laterales cuando se agregan como vínculos, o cuando se devuelven como resultados de la búsqueda.|  
 |**Escriba**|Un símbolo que indica el tipo de contenido: barra lateral o tarea guiada|  
 |**Factor de formulario**|Símbolos que representan el factor de forma seleccionado para este contenido cuando se creó, **Escritorio** o **Tableta**.<br /><br /> La columna **Factor de forma** no se muestra cuando usa la biblioteca de contenido cuando está conectado al simulador de la interfaz de la aplicación móvil o el centro de servicio interactivo.|  
@@ -501,7 +511,7 @@ Para obtener más información acerca de cómo utilizar YouTube: [Centro de ayud
 
 <a name="Localize"></a>   
 ## <a name="localize-learning-path-controls"></a>Localizar controles de la ruta de aprendizaje  
- Puede buscar el contenido en los controles que crea en Ruta de aprendizaje para se muestren a los usuarios en el idioma que han seleccionado para [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]. Para buscar los controles, puede exportarlos simplemente, buscar las cadenas que se muestran a los usuarios, y luego importar el control que incluye contenido localizado. Puede importar el control en la misma organización o en otra organización según lo desee. Puede buscar el mismo control en varios idiomas y después importar sólo los idiomas específicos en las organizaciones específicas que admiten al usuario con ese idioma seleccionado. La compatibilidad de localización en Ruta de aprendizaje sigue el estándar Formato de archivo de intercambio de localización XML (XLIFF) 2.0 de OASIS. Hay herramientas y tutoriales libremente disponibles para trabajar con este formato común. Más información: [XLIFF Versión 2.0](http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
+ Puede buscar el contenido en los controles que crea en Ruta de aprendizaje para se muestren a los usuarios en el idioma que han seleccionado para [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]. Para buscar los controles, puede exportarlos simplemente, buscar las cadenas que se muestran a los usuarios, y luego importar el control que incluye contenido localizado. Puede importar el control en la misma organización o en otra organización según lo desee. Puede buscar el mismo control en varios idiomas y después importar sólo los idiomas específicos en las organizaciones específicas que admiten al usuario con ese idioma seleccionado. La compatibilidad de localización en Ruta de aprendizaje sigue el estándar Formato de archivo de intercambio de localización XML (XLIFF) 2.0 de OASIS. Hay herramientas y tutoriales libremente disponibles para trabajar con este formato común. Más información: [XLIFF Versión 2.0](https://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
 
  Para obtener más información sobre la configuración de idioma de [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], consulte [Configurar opciones personales](/dynamics365/customer-engagement/basics/set-personal-options).  
 

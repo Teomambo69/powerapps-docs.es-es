@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo de servicio de detección global de API web (C#) (Common Data Service) | Microsoft Docs'
+title: Ejemplo de servicio de detección global de la API web (C#) (Common Data Service) | Microsoft Docs
 description: Este ejemplo muestra cómo usar los servicios de detección global de la API web
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 39cfa895ac26dedde2dec4ab97d89937375af81e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749756"
 ---
 # <a name="web-api-global-discovery-service-sample-c"></a>Ejemplo de servicio de detección global de la API web (C#)
 
@@ -27,7 +33,7 @@ Este ejemplo está disponible en GitHub en [https://github.com/Microsoft/PowerAp
 
 Este ejemplo devuelve las instancias disponibles de Common Data Service para una credencial de usuario determinada.
 
-## <a name="how-this-sample-works"></a>Cómo funciona esta muestra
+## <a name="how-this-sample-works"></a>Cómo funciona este ejemplo
 
 Este ejemplo usará la información de sus credenciales en el archivo App.config, pero no usará la dirección URL configurada en la cadena de conexión.
 En su lugar, solo usará las credenciales de usuario y el identificador de cliente.

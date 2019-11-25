@@ -9,23 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32fb0c402fce458f728b44c63e337fe07b36fd76
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754671"
 ---
-
-
 <!--note from editor: I think "dataflows" should be lowercase based on this entry in the Microsoft style guide (scroll down to find dataflows): https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=42299 -->
 
 
@@ -59,7 +63,7 @@ La sección anterior proporcionó información general sobre la tecnología de f
 > Debe tener un plan PowerApps de pago para usar flujos de datos, pero no se le cobra por separado por usar flujos de datos. 
 
 ### <a name="load-data-to-common-data-service"></a>Cargar datos en Common Data Service
-Los flujos de datos se pueden usar para rellenar entidades en [Common Data Service](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro) que se usan en aplicaciones PowerApps. Con solo unos clics puede integrar datos de orígenes online y locales.
+Los flujos de datos se pueden usar para rellenar entidades en [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) que se usan en aplicaciones PowerApps. Con solo unos clics puede integrar datos de orígenes online y locales.
 
 <!--from editor: In the last sentence above, should it change to "...on-premises data sources." ? -->
 
@@ -70,7 +74,7 @@ Para las organizaciones que desean ampliar y crear basándose en Common Data Mod
 ### <a name="extend-your-capabilities-with-azure-data-and-ai-services"></a>Extender las funciones con servicios de Azure Data e IA
 Puede configurar flujos de datos de Power Platform para almacenar datos de flujos de datos en la cuenta de Azure Data Lake Storage Gen2 de la organización. Cuando un entorno está conectado al lago de datos de la organización, los científicos y los programadores de datos pueden aprovechar productos eficaces de Azure como Azure Machine Learning, Azure Databricks, Azure Data Factory, etc.
 
-Para obtener más información sobre integración de Azure Data Lake Storage Gen2 y flujos de datos, y cómo crear flujos de datos que residen en Azure Data Lake de la organización, consulte [Integración de flujos de datos y Azure Data Lake (vista previa)](/power-bi/service-dataflows-azure-data-lake-integration).
+Para obtener más información sobre integración de Azure Data Lake Storage Gen2 y flujos de datos, y cómo crear flujos de datos que residen en Azure Data Lake de la organización, consulte [Conectar Azure Data Lake Storage Gen2 para almacenamiento de flujo de datos](connect-azure-data-lake-storage-for-dataflow.md).
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-powerapps"></a>Resumen de preparación de los datos de autoservicio para macrodatos en PowerApps
 Hay varias situaciones y ejemplos donde los flujos de datos pueden permitirle para obtener mejor control —e información más rápida— de los datos profesionales. Otros usuarios de la organización pueden aprovechar los flujos de datos mediante Common Data Service, el conector de flujo de datos Power Platform de Power BI o acceso directo a la carpeta **Common Data Service** del flujo de datos en la cuenta de Azure Data Lake Storage Gen2 de la organización. Mediante un modelo de datos del estándar (esquema) definido por Common Data Model, las aplicaciones empresariales pueden depender del esquema de una entidad, y resumirse del modo en que los datos se crearon o cuál sea su origen. Cuando un flujo de datos completa una ejecución programada, los datos están listos para modelado y creación de aplicaciones, flujos o ideas de BI en un período muy corto, mientras que antes se tardaban meses, o más.

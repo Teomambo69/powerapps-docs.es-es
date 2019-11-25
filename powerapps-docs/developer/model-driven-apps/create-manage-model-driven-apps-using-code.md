@@ -1,24 +1,27 @@
 ---
-title: 'Crear, administrar, y publicar aplicaciones basadas en modelos con código | Microsoft Docs'
-description: 'Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en PowerApps.'
+title: Crear, administrar, y publicar aplicaciones basadas en modelos con código | Microsoft Docs
+description: Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en PowerApps.
 keywords: ''
 ms.date: 03/04/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 4261c476-2eff-10e3-a334-d02e0cbbb9d5
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d33c07aa54a0a971f3d246a6390f736daa11627
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749913"
 ---
-
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Crear, administrar, y publicar aplicaciones basadas en modelos con código
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->

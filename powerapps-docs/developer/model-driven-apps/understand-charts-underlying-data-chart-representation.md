@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a1e3e41e35d3d4a20e0234269ba66e2ec26942da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754557"
 ---
 # <a name="understand-charts-underlying-data-and-chart-representation"></a>Descripción de gráficos: representación gráfico y datos subyacentes
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
 
 Los gráficos presentan los datos visualmente asignando valores de texto en dos ejes: el horizontal (x) y el vertical (y). El eje x se denomina eje de *categoría* y el eje y se denomina eje de *serie*. El eje de categoría puede mostrar valores numéricos y no numéricos, mientras el eje de series solo muestra valores numéricos.  
   
@@ -89,7 +95,7 @@ Los gráficos presentan los datos visualmente asignando valores de texto en dos 
  Para obtener más cadenas XML de descripción de los datos de ejemplo, consulte [Gráficos de muestra](sample-charts.md).  
   
 ## <a name="use-the-presentation-description-xml-string-to-specify-data-representation"></a>Use la cadena XML de descripción de presentación para especificar la representación de datos  
- La cadena XML de la descripción de la presentación contiene información acerca de la apariencia del gráfico, como el título del gráfico, el color del gráfico, el tipo de gráfico (barra, columna, línea, etc.). No hay ninguna definición de esquema para esta cadena XML. Sin embargo, XML es una serialización de la clase [Gráfico](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx) en Controles de gráfico de Microsoft. Más información: [Controles de gráfico](http://go.microsoft.com/fwlink/p/?LinkId=128301)  
+ La cadena XML de la descripción de la presentación contiene información acerca de la apariencia del gráfico, como el título del gráfico, el color del gráfico, el tipo de gráfico (barra, columna, línea, etc.). No hay ninguna definición de esquema para esta cadena XML. Sin embargo, XML es una serialización de la clase [Gráfico](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx) en Controles de gráfico de Microsoft. Más información: [Controles de gráfico](https://go.microsoft.com/fwlink/p/?LinkId=128301)  
   
  Puede especificar la cadena XML de descripción de presentación mientras crea un gráfico mediante el atributo `SavedQueryVisualization.PresentationDescription` o el atributo `UserQueryVisualization.PresentationDescription` para el gráfico propiedad de la organización o propiedad del usuario respectivamente.  
   

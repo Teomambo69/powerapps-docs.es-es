@@ -1,23 +1,29 @@
 ---
 title: Problemas y soluciones comunes para el Comprobador de soluciones | Microsoft Docs
-description: ' Una lista de problemas y soluciones comunes en Comprobador de soluciones'
+description: " Una lista de problemas y soluciones comunes en Comprobador de soluciones"
 keywords: ''
 ms.date: 02/11/2019
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: caa4e3f2-9700-49b8-87ed-8a68e8878b02
 author: jowells1
 ms.author: jowells
 manager: austinj
-ms.reviewer: null
-robots: 'noindex,nofollow'
+ms.reviewer: ''
+robots: noindex,nofollow
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f9168f51f8bfffc2ef9519e183e951706b7a024
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758344"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Problemas y soluciones comunes para el Comprobador de soluciones
 
@@ -27,7 +33,7 @@ En este artículo se enumeran algunos problemas comunes que puede encontrar mien
 
 Poco después de enviar una solicitud al comprobador de soluciones para ejecutar un análisis o descargar resultados la operación no se completa y se muestra un mensaje de error como:
 
-> *“No pudimos ejecutar la comprobación en la solución **[Nombre de la solución]**. Ejecútela de nuevo."*
+> *“No pudimos ejecutar la comprobación en la solución **Nombre de la solución**. Ejecútela de nuevo."*
 
 Siempre que sea posible, el comprobador de soluciones intenta devolver un mensaje de error específico con un vínculo a los detalles sobre la causa potencial y pasos de resolución. Seleccione **'Más información'** para los detalles.
 
@@ -58,7 +64,7 @@ Si desea conservar los resultados anteriores del Comprobador de la solución, ex
 
 Para desinstalar la solución Comprobador de PowerApps:
 
-1. Como administrador del sistema o como personalizador del sistema, abra el portal de PowerApps en https://web.powerapps.com/environments.
+1. Como administrador del sistema o como personalizador del sistema, abra el portal de PowerApps en https://make.powerapps.com/environments.
 2. Seleccione **Solución**.
 3. Seleccione **Comprobador de PowerApps** y, a continuación, en la barra de herramientas de soluciones seleccione **Eliminar**.
 
@@ -66,13 +72,13 @@ Para desinstalar la solución Comprobador de PowerApps:
 
 Para instalar el Comprobador de PowerApps en el entorno Common Data Service:
 
-1. Como administrador del sistema o como personalizador del sistema, abra el portal de PowerApps en https://web.powerapps.com/environments.
+1. Como administrador del sistema o como personalizador del sistema, abra el portal de PowerApps en https://make.powerapps.com/environments.
 2. Seleccione **Solución**.
 3. En la barra de herramientas de soluciones, seleccione **Comprobador de soluciones** y, a continuación, seleccione **Instalar**.
 
 ## <a name="solution-checker-cant-access-organizations-in-administration-mode"></a>El Comprobador de soluciones no puede tener acceso a las organizaciones en modo de administración
 
-Las organizaciones que se han situado en [Modo de administración](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) limitan a propósito el acceso solo a los usuarios con roles de Administrador del sistema y Personalizador del sistema. Puesto que la identidad de aplicación Comprobador de PowerApps no tiene ningún de estos roles asignados de forma predeterminada, no tiene acceso a las organizaciones que trabajan en este modo.
+Las organizaciones que se han situado en [Modo de administración](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) limitan a propósito el acceso solo a los usuarios con roles de Administrador del sistema y Personalizador del sistema. Puesto que la identidad de aplicación Comprobador de PowerApps no tiene ningún de estos roles asignados de forma predeterminada, no tiene acceso a las organizaciones que trabajan en este modo.
 
 Para usar el Comprobador de soluciones en esta organización, el modo de administración debe deshabilitarse.
 

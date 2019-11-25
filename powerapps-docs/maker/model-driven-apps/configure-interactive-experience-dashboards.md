@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d1446a95-14bf-4b15-a905-72fce07f4c76
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752632"
 ---
-
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos
 
 Los paneles de experiencia interactiva pueden convertirse en un área de trabajo integral para los usuarios de las aplicaciones, como representantes de servicio, para ver la información sobre la carga de trabajo y actuar. Son totalmente configurables, están basados en roles de seguridad y proporcionan la información de carga de trabajo a través de secuencias múltiples en tiempo real. Los usuarios de panel interactivo no necesitan navegar por la aplicación en busca de un registro específico; pueden actuar sobre él directamente desde el panel. 
@@ -73,7 +78,7 @@ Los paneles de experiencia interactiva pueden convertirse en un área de trabajo
  Para los paneles de secuencia única, puede elegir entre cuatro diseños diferentes.  
  
  > [!div class="mx-imgBorder"] 
- > ![Diseños de paneles de secuencia única](media/interactive-dashboards-single-stream-layout.png "Diseños de paneles de secuencia única")  
+ > ![Diseños de paneles de secuencia única.](media/interactive-dashboards-single-stream-layout.png "Diseños de paneles de secuencia única.")  
   
 <a name="BKMK_Enable"></a>   
 ## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>Configurar campos de filtro y roles de seguridad para los paneles interactivos  
@@ -144,7 +149,7 @@ El siguiente ejemplo muestra el cuadro de diálogo de control flotante con la li
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Configure un panel interactivo de varias secuencias utilizando el diseño de 4 columnas  
  
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
@@ -198,7 +203,7 @@ La siguiente ilustración es un ejemplo de un panel de gráficos completamente y
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Editar o eliminar secuencias individuales de un panel existente  
   
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
 2. Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. Seleccione la ficha **Paneles**.  
   
@@ -221,7 +226,7 @@ La siguiente ilustración es un ejemplo de un panel de gráficos completamente y
 
 Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel específico de la entidad se preestablecen en la entidad para la que está creando el panel.  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 

@@ -1,5 +1,5 @@
 ---
-title: Depuración de complementos (Common Data Service) | Microsoft Docs
+title: Depurar complementos (Common Data Service) | Microsoft Docs
 description: Aprenda a depurar complementos mediante la herramienta de registro de complementos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a7cc74105b5724114ecaad9a9836b6ef118f805c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749713"
 ---
 # <a name="debug-plug-ins"></a>Depuración de complementos
 

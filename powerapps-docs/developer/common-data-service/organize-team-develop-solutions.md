@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a53a0d1568e271ec49b44d757666d0365c246ec6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752664"
 ---
 # <a name="organize-your-team-to-develop-solutions"></a>Organizar a su equipo para desarrollar soluciones
 
@@ -44,7 +50,7 @@ Cuando varios desarrolladores tienen que trabajar en la misma solución, puede q
   
 <a name="BKMK_DeployingSolutionsFromDevThroughToProduction"></a>   
 ## <a name="deploy-solutions-from-development-through-test-and-production-environments"></a>Implementar soluciones desde el desarrollo a través de los entornos de producción y prueba  
- En organizaciones de desarrollo, las soluciones se implementan en los diferentes entornos de prueba y de ensayo para análisis antes de que se implementan en un entorno de producción. En las notas del producto [Implementar soluciones de Microsoft Dynamics CRM 2011 y CRM Online desde desarrollo a través de entornos de prueba y producción](http://go.microsoft.com/fwlink/p/?LinkId=232288) se explora cómo implementar soluciones de Dynamics 365 en escenarios reales en entornos de prueba y producción de formas confiables y repetibles usando la automatización. El documento también resalta las restricciones específicas que existen cuando implementa y prueba las soluciones en Common Data Service.  
+ En organizaciones de desarrollo, las soluciones se implementan en los diferentes entornos de prueba y de ensayo para análisis antes de que se implementan en un entorno de producción. En las notas del producto [Implementar soluciones de Microsoft Dynamics CRM 2011 y CRM Online desde desarrollo a través de entornos de prueba y producción](https://go.microsoft.com/fwlink/p/?LinkId=232288) se explora cómo implementar soluciones de Dynamics 365 en escenarios reales en entornos de prueba y producción de formas confiables y repetibles usando la automatización. El documento también resalta las restricciones específicas que existen cuando implementa y prueba las soluciones en Common Data Service.  
   
 ### <a name="see-also"></a>Vea también  
  [Planificación del desarrollo de soluciones](/dynamics365/customer-engagement/developer/plan-solution-development)   

@@ -9,13 +9,19 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 7243f2fccc8356ecac5eedba2b740bc39df1913a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752940"
 ---
 # <a name="authenticate-to-use-the-online-management-api"></a>Autenticación para usar la API de Online Management
 
-La API de Online Management admite el protocolo OAuth 2.0 para la autenticación. Use [Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) para autenticarse obteniendo un token de acceso válido de OAuth 2.0 y páselo mediante el encabezado **Autorización** en las solicitudes a la API de Online Management.
+La API de Online Management admite el protocolo OAuth 2.0 para la autenticación. Use [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para autenticarse obteniendo un token de acceso válido de OAuth 2.0 y páselo mediante el encabezado **Autorización** en las solicitudes a la API de Online Management.
 
 La API de autenticación recomendada para usar con la API de Online Management es [Azure Active Directory Authentication Library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries), que está disponible para una gran variedad de plataformas y lenguajes de programación. 
 

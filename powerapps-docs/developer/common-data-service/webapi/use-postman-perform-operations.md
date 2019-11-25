@@ -1,12 +1,12 @@
 ---
 title: Usar Postman para realizar operaciones con la API web (Common Data Service para aplicaciones)| MicrosoftDocs
 description: Aprenda a crear y enviar a solicitudes web API mediante envío.
-ms.custom: null
+ms.custom: ''
 ms.date: 03/22/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: AB50128B-D8E3-47A3-A0F8-9594EF6B7022
 caps.latest.revision: 7
@@ -14,11 +14,16 @@ author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: c651dbc8ba553192f4ff3b09b84518684ac4b866
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749747"
 ---
-
 # <a name="use-postman-to-perform-operations-with-the-web-api"></a>Use Postman para realizar operaciones con la API web
 
 Use el envío para crear y enviar las solicitudes web API y ver respuestas. Este tema describe cómo usar Postman para crear las solicitudes web API que realizan operaciones de creación, recuperación, actualización y eliminación (CRUD) y usar funciones y acciones.
@@ -42,7 +47,7 @@ Use la solicitud `GET` para recuperar un conjunto de opciones globales. El sigui
 
 `GET` `{{webapiurl}}accounts?$select=name,accountnumber&$top=3`
 
-![Recuperar varios registros utilizando el envío](media/postman-retrieve-multiple.png "Recuperar varios registros utilizando el envío")
+![Recuperar varios registros mediante Postman](media/postman-retrieve-multiple.png "Recuperar varios registros mediante Postman")
 
 El cuerpo de la respuesta se parecerá a esto:
 
@@ -81,7 +86,7 @@ Use la solicitud `GET` para recuperar un conjunto de opciones globales. El sigui
 
 `GET` `{{webapiurl}}accounts(`*&lt;accountid&gt;*`)?$select=name,accountnumber&$expand=primarycontactid($select=fullname)`
 
-![Recupere el registro de envío](media/postman-retrieve-record.png "Recupere el registro de envío")
+![Recuperar un registro mediante Postman](media/postman-retrieve-record.png "Recuperar un registro mediante Postman")
 
 El cuerpo de la respuesta se parecerá a esto:
 
@@ -107,11 +112,11 @@ Use una solicitud `POST` para enviar datos para crear una entidad. Establezca la
 
 `POST` `{{webapiurl}}accounts`
 
-![Crear un nuevo registro usando la API web](media/postman-create-records.png "Crear un nuevo registro usando la API web")
+![Crear un nuevo registro mediante la API web](media/postman-create-records.png "Crear un nuevo registro mediante la API web")
 
 Establezca el cuerpo de la solicitud con información sobre la cuenta a crear.
 
-![Cuerpo de la respuesta para crea un registro usando la API Web](media/postman-create-record-body.png "Cuerpo de la respuesta para crea un registro usando la API Web")
+![Cuerpo de la solicitud para crear el registro usando la API web](media/postman-create-record-body.png "Cuerpo de la solicitud para crear el registro usando la API web")
 
 Cuando envía esta solicitud, el cuerpo estará vacío, pero el identificador de la cuenta creada estará en el valor encabezado `OData-EntityId`.
 
@@ -123,7 +128,7 @@ Use el método `PATCH` para actualizar un registro de entidad, como se muestra a
 
 `PATCH` `{{webapiurl}}accounts(`*&lt;accountid&gt;*`)`
 
-![Actualización de un registro usando la API Web](media/postman-update-record.png "Actualización de un registro usando la API web")
+![Actualizar un registro usando la API web](media/postman-update-record.png "Actualizar un registro usando la API web")
 
 Cuando envía esta solicitud, la respuesta estará vacía, pero el identificador de la cuenta actualizada estará en el valor encabezado `OData-EntityId`.
 
@@ -135,7 +140,7 @@ Use el método `DELETE` para eliminar un registro existente.
 
 `DELETE` `{{webapiurl}}accounts(`*&lt;accountid&gt;*`)`
 
-![Eliminar un registro usando la API Web](media/postman-delete-record.png "Eliminar un registro usando la API web")
+![Eliminar un registro usando la API web](media/postman-delete-record.png "Eliminar un registro usando la API web")
 
 Cuando envíe esta solicitud, el registro de cuenta con lo dado `accountid` obtiene eliminar.
 
@@ -149,7 +154,7 @@ Use una solicitud `GET` con las funciones enumeradas en [Referencia de función 
 |----|----|
 |`GET`|`{{webapiurl}}RetrieveDuplicates(BusinessEntity=@p1,MatchingEntityName=@p2,PagingInfo=@p3)?@p1={'@odata.type':'Microsoft.Dynamics.CRM.account','accountid':'`*&lt;accountid&gt;*`'}&@p2='account'&@p3={'PageNumber':1,'Count':50}`|
 
-![Cree una solicitud web API que use funciones](media/postman-use-function.png "Cree una solicitud web API que use funciones")
+![Crear una solicitud de la API web que utiliza funciones](media/postman-use-function.png "Crear una solicitud de la API web que utiliza funciones")
 
 Las funciones devuelven una colección o un tipo complejo. La respuesta anterior de <xref href="Microsoft.Dynamics.CRM.RetrieveDuplicates?text=RetrieveDuplicates function" /> debería verse así:
 
@@ -174,7 +179,7 @@ Este ejemplo muestra cómo usar <xref href="Microsoft.Dynamics.CRM.BulkDetectDup
 
 `POST` `{{webapiurl}}BulkDetectDuplicates`
 
-![Cree una solicitud web API que use acciones](media/postman-use-action.png "Cree una solicitud web API que use acciones")
+![Crear una solicitud de la API web que utiliza acciones](media/postman-use-action.png "Crear una solicitud de la API web que utiliza acciones")
 
 La solicitud en el ejemplo que acaba de ver envía un trabajo de detección duplicado asíncrono que se ejecuta en segundo plano. Los duplicados se detectan mediante las reglas de duplicados publicadas para el tipo de entidad. <xref href="Microsoft.Dynamics.CRM.BulkDetectDuplicatesResponse?text=BulkDetectDuplicatesResponse ComplexType" /> se vuelve como una respuesta desde <xref href="Microsoft.Dynamics.CRM.BulkDetectDuplicates?text=BulkDetectDuplicates action" />. La respuesta incluye la propiedad `JobId`, que contiene el GUID de trabajo duplicado asincrónico de detección de duplicados que detecta y registra registros duplicados.
 

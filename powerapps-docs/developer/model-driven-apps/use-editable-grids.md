@@ -1,6 +1,6 @@
 ---
 title: Usar cuadrículas editables en aplicaciones basadas en modelos | Microsoft Docs
-description: 'La cuadrícula editable es un control personalizado que proporciona funciones de edición en línea enriquecidas en clientes web y móviles (Dynamics 365 for phones y Dynamics 365 for tablets) incluida la capacidad de agrupar, ordenar y filtrar los datos dentro de la misma cuadrícula de manera que no tenga que cambiar los registros o las vistas.'
+description: La cuadrícula editable es un control personalizado que proporciona funciones de edición en línea enriquecidas en clientes web y móviles (Dynamics 365 for phones y Dynamics 365 for tablets) incluida la capacidad de agrupar, ordenar y filtrar los datos dentro de la misma cuadrícula de manera que no tenga que cambiar los registros o las vistas.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0798cdda5cac68396c1f0502d80096f69ee29838
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749941"
 ---
 # <a name="use-editable-grids"></a>Usar cuadrículas editables
 

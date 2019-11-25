@@ -4,43 +4,49 @@ description: Aprenda a crear y usar los formularios de tarjeta en PowerApps
 keywords: ''
 ms.date: 03/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d9adcde6d35b0f2d336bf86b8e4e26bcec1edec2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752449"
 ---
 # <a name="create-a-card-form"></a>Crear un formulario de tarjeta
 Los formularios de tarjeta se utilizan en vistas para aplicaciones de la interfaz unificada. Los formularios de tarjeta están diseñados para mostrar información en un formato compacto adecuado para dispositivos móviles. Por ejemplo, el formulario de tarjeta predeterminado para la vista Mis cuentas activas define la información mostrada para cada registro de cuenta. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/account-cardform-for-myactiveaccounts-view.png "Formulario de tarjeta de cuenta para la vista mis cuentas activas")
+> ![](media/account-cardform-for-myactiveaccounts-view.png "Account card form for my active accounts view")
 
 Aunque los formularios de tarjeta se pueden crear y editar igual que otros tipos de formularios, los formularios de tarjeta se agregan a aplicaciones de forma diferente. En lugar de agregar un formulario como componente de aplicación, los formularios de tarjeta personalizados se agregan a vistas mediante el control **Cuadrícula de solo lectura**. 
 
 ## <a name="create-a-card-form"></a>Crear un formulario de tarjeta
-1. Para crear un formulario de tarjeta, inicie sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Para crear un formulario de tarjeta, inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.
 3. En la barra de herramientas, seleccione **Agregar formulario** y luego seleccione **Formulario de tarjeta**. Como alternativa, puede abrir un **Tipo de formulario** existente que sea un formulario de **Tarjeta** para editarlo.
 4. Agregue los campos que desee. Se recomienda limitar el número de campos para que el formulario se muestre correctamente en pantallas pequeñas. 
 5. Seleccione **Guardar** y, a continuación, **Publicar**. 
 
 ## <a name="add-a-card-form-to-a-view"></a>Agregar un formulario de tarjeta a una vista 
-1. Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Expanda **Datos**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Vistas**.
 3. Seleccione la vista que desee y, en la barra de herramientas del diseñador de vistas, seleccione **Cambiar a clásica**.
 4. Seleccione **Controles personalizados** del panel **Tareas comunes**.

@@ -1,25 +1,31 @@
 ---
-title: Límites de API (Common Data Service) | Microsoft Docs
+title: Límites de la API (Common Data Service) | Microsoft Docs
 description: Comprenda los límites de las solicitudes de la API.
 ms.custom: ''
 ms.date: 03/21/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: bsimons
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6b332b1e71a8d440c02cc79f7566eec59533cce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753084"
 ---
 # <a name="api-limits"></a>Límites de la API
 
 Se limita el número de solicitudes de API realizadas por cada usuario, por instancia de organización, en una ventana deslizante de cinco minutos. Asimismo, limitamos el número de solicitudes simultáneas que pueden producirse en un momento dado.  Cuando se supere uno de estos límites, la plataforma generará una excepción.
 
-El límite le ayudará a asegurarse de que los usuarios que ejecuten aplicaciones no puedan interferir unos con otros basándose en limitaciones de recursos. Los límites no afectarán a los usuarios normales de la plataforma. Solo podrán verse afectadas las aplicaciones que realicen un gran número de solicitudes de API. El límite le ayudará a proporcionar cierto grado de protección contra aumentos aleatorios e inesperados en los volúmenes de solicitudes que ponen en peligro las características de disponibilidad y rendimiento de la plataforma de Common Data Service.
+El límite le ayudará a asegurarse de que los usuarios que ejecuten aplicaciones no puedan interferir unos con otros basándose en limitaciones de recursos. Los límites no afectarán a los usuarios normales de la plataforma. Solo podrán verse afectadas las aplicaciones que realicen un gran número de solicitudes de API. El límite le ayudará a proporcionar cierto grado de protección contra aumentos aleatorios e inesperados en los volúmenes de solicitudes que ponen en peligro las características de disponibilidad y rendimiento de la plataforma Common Data Service.
 
 Dado que los complementos y las actividades de flujo de trabajo personalizadas se ejecutan en el servidor independientemente de un usuario que ha iniciado sesión, las llamadas de la API realizadas desde el código del complemento no contará para este límite de solicitudes de API externas.
 
@@ -48,7 +54,7 @@ Cuando la aplicación supera el límite, la respuesta de error desde el servidor
 
 Para obtener información sobre recomendaciones, vea [Control de errores transitorios de mejores prácticas de Azure Architecture](/azure/architecture/best-practices/transient-faults)
 
-[El Polly Project](http://www.thepollyproject.org/) es una biblioteca que incluye capacidades para trabajar con errores transitorios mediante directivas de ejecución.
+[El Polly Project](https://www.thepollyproject.org/) es una biblioteca que incluye capacidades para trabajar con errores transitorios mediante directivas de ejecución.
 
 ### <a name="http-requests"></a>Solicitudes HTTP
 
@@ -133,7 +139,7 @@ public class Retry
 
 ### <a name="see-also"></a>Vea también
 
-[Utilizar API Web de Common Data Service](webapi/overview.md)<br />
-[Usar el servicio de organización de Common Data Service](org-service/overview.md)<br />
+[Usar la API web de Common Data Service](webapi/overview.md)<br />
+[Utilizar el Servicio de organización de Common Data Service](org-service/overview.md)<br />
 [Ejecute las operaciones por lotes mediante API web](webapi/execute-batch-operations-using-web-api.md)<br />
 [Usar ExecuteMultiple para mejorar el rendimiento de la carga masiva de datos](org-service/execute-multiple-requests.md)

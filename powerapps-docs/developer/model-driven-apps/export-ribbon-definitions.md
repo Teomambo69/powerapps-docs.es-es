@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c342d1b5c3b5864aaf556af800c0f439a3e272
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753620"
 ---
 # <a name="export-ribbon-definitions"></a>Exportar definiciones de cinta de opciones
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
 
 Para definir cambios de un modo eficaz en el RibbonXml predeterminado, debe poder hacer referencia a los datos de RibbonXml que definen esas cintas de opciones.  
   
@@ -27,7 +33,7 @@ Para definir cambios de un modo eficaz en el RibbonXml predeterminado, debe pode
   
 <a name="BKMK_AccessDefaultRibbonData"></a>   
 ## <a name="access-the-default-ribbon-data"></a>Tener acceso a los datos predeterminados de la cinta de opciones  
- Las definiciones de cintas de opciones predeterminadas para aplicaciones basadas en modelos pueden descargarse desde [Descargas de Microsoft: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip). 
+ Las definiciones de cintas de opciones predeterminadas para aplicaciones basadas en modelos pueden descargarse desde [Descargas de Microsoft: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip). 
   
  El archivo applicationRibbon.xml contiene la definición de las cintas de opciones de la aplicación principal.  
   
@@ -45,7 +51,7 @@ Para definir cambios de un modo eficaz en el RibbonXml predeterminado, debe pode
  Los datos de la cinta de opciones se exporta como un archivo comprimido. Para descomprimir el archivo en XML tiene que usar la clase [System.IO.Packaging.ZipPackage](https://msdn.microsoft.com/library/system.io.packaging.zippackage.aspx). El siguiente ejemplo es un método auxiliar usado en el ejemplo del SDK para descomprimir el archivo.  
  ``` C# 
 /// <summary>
-/// A helper method that decompresses the the Ribbon data returned
+/// A helper method that decompresses the Ribbon data returned
 /// </summary>
 /// <param name="data">The compressed ribbon data</param>
 /// <returns></returns>

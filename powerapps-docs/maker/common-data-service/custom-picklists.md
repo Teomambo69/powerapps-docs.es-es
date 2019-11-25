@@ -1,20 +1,25 @@
 ---
 title: Crear un conjunto de opciones| Microsoft Docs
 description: Instrucciones paso a paso para saber cómo crear un conjunto de opciones.
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757640"
 ---
-
 # <a name="create-an-option-set"></a>Crear un conjunto de opciones
 
 Los conjuntos de opciones le permiten incluir listas desplegables de valores fijos para un usuario dentro de la aplicación para garantizar la coherencia de datos. A veces se hace referencia a ellos como listas desplegables o campos de opciones en otras aplicaciones. Similar a las entidades, hay conjuntos de opciones estándar y la posibilidad de crear conjuntos de opciones personalizadas para usar dentro de la aplicación.
@@ -23,7 +28,7 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>Crear un conjunto de opciones mientras agrega un campo.
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
     ![Detalles de entidad](./media/data-platform-cds-create-entity/entitylist.png "Lista de entidades")
 
@@ -43,7 +48,7 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
     > [!NOTE]
     > Si un conjunto de opciones existente puede usarse para la entidad, puede seleccionarla de esta lista sin crear una nueva.
 
-    ![Lista de conjuntos de opciones](./media/data-platform-cds-newoptionset/fieldpanel-1.png "Lista de conjuntos de opciones")
+    ![Lista de conjunto de opciones](./media/data-platform-cds-newoptionset/fieldpanel-1.png "Lista de conjunto de opciones")
 
 7. Se abrirá un nuevo panel para crear el conjunto de opciones. El **Nombre para mostrar** y el **Nombre** se adoptarán por defecto del nombre del campo, pero se pueden cambiar si es necesario. Haga clic en **Agregar nuevo elemento** para empezar a crear la lista de opciones. Repita este paso hasta que se creen todos los elementos.
 
@@ -65,17 +70,17 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>Crear un conjunto de opciones desde la lista de conjuntos de opciones
 
-1. En [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Conjuntos de opciones** en el panel de navegación de la izquierda.
+1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Conjuntos de opciones** en el panel de navegación de la izquierda.
 
     > [!div class="mx-imgBorder"] 
-    > ![Conjuntos de opciones](./media/data-platform-cds-newoptionset/optionsetlist.png "Lista de conjuntos de opciones")
+    > ![Conjuntos de opciones](./media/data-platform-cds-newoptionset/optionsetlist.png "Lista de conjunto de opciones")
 
 2. Haga clic en **Nuevo conjunto de opciones**
 
 3. Se abrirá un nuevo panel para crear el conjunto de opciones, introduzca el **Nombre para mostrar** y el **Nombre**. Haga clic en **Agregar nuevo elemento** para empezar a crear la lista de opciones. Repita este paso hasta que se creen todos los elementos.
 
     > [!div class="mx-imgBorder"] 
-    > ![Creación de conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create.png "Creación de conjunto de opciones")
+    > ![Crear conjunto de opciones](./media/data-platform-cds-newoptionset/optionset-create.png "Crear conjunto de opciones")
 
 4. Una vez que haya introducido los elementos, haga clic en **Guardar** para crear el conjunto de opciones.
 

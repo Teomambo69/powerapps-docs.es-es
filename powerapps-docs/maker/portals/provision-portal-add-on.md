@@ -1,6 +1,6 @@
 ---
-title: Aprovisionamiento de un portal mediante el complemento de portal anterior | MicrosoftDocs
-description: Instrucciones para aprovisionar un portal mediante el complemento de portal anterior.
+title: Aprovisione un portal con el complemento de portal más antiguo | MicrosoftDocs
+description: Instrucciones para aprovisionar un portal con el complemento de portal más antiguo.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,145 +11,145 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 6572a92a46fa308eab6cb46b813a572605327197
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73550988"
+ms.locfileid: "2761096"
 ---
-# <a name="provision-a-portal-using-the-older-portal-add-on"></a>Aprovisionamiento de un portal mediante el complemento de portal anterior
+# <a name="provision-a-portal-using-the-older-portal-add-on"></a>Aprovisione un portal con el complemento de portal más antiguo
 
-Si ha adquirido un complemento de portal anterior y desea aprovisionar un portal mediante el complemento, debe ir a la página del centro de administración de **Dynamics 365** y aprovisionar el portal.
+Si ha adquirido un complemento de portal más antiguo, y desea para aprovisionar un portal con el complemento, debe ir a la página **Centro de administración de Dynamics 365** y aprovisione el portal.
 
 > [!NOTE]
-> Para aprovisionar un portal, debe tener asignado el rol de administrador del sistema o del Personalizador del sistema del Common Data Service entorno seleccionado para el portal. También debe tener los [permisos necesarios](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions) para crear y registrar una aplicación en Azure ad. Si no tiene los permisos necesarios, póngase en contacto con el administrador global para actualizar sus permisos o pida al administrador global que aprovisione el portal.
+> Para aprovisionar un portal, se le debe asignar al rol de administrador del sistema del entorno de Common Data Service seleccionada para el portal. También debe disponer de los [permisos necesarios](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions) para crear y registrar una aplicación en Azure AD. Si no tiene los permisos necesarios, póngase en contacto con el Administrador global para actualizar sus permisos o pida al Administrador global que aprovisione el portal.
 
 Para aprovisionar un portal:
 
-1.  Vaya a la página del **centro de administración de Dynamics 365** y, a continuación, seleccione la pestaña **aplicaciones** .
+1.  Vaya a la página **Centro de administración de Dynamics 365** y, a continuación, haga clic en la pestaña **Aplicaciones**.
 
-2.  Seleccione la fila de la aplicación titulada **complemento del portal**y, a continuación, seleccione **administrar.**
+2.  Seleccione la fila de la aplicación con el título **Complemento de portal** y, a continuación, haga clic en **Administrar**.
 
-3.  En la sección **Configuración general** , escriba un **nombre** para el portal. El **nombre** le ayudará a identificar el portal y se puede cambiar más adelante.
+3.  En la sección **Configuración general**, escriba un **Nombre** del portal. El **Nombre** ayudará a identificar el portal y se puede cambiar más adelante.
 
-4.  El campo **Type** representa el tipo de suscripción de portal (prueba o producción). Se trata de un campo del sistema, por lo que el usuario no puede cambiarlo. El valor cambia en función de si se trata de una suscripción de prueba o de pago.
+4.  El campo **Tipo** representa el tipo de suscripción de portal (prueba o producción). Es un campo del sistema, por lo que no puede modificarlo el usuario. El valor cambia según se trate de una suscripción de prueba o de pago.
 
-5. Opcionalmente, en la lista desplegable **Estado de desarrollo del portal** , seleccione uno de los siguientes Estados de desarrollo para el portal:
+5. Opcionalmente, en la lista **Estado de desarrollo del portal**, seleccione uno de los siguientes estados de desarrollo para el portal:
 
     - Prototipo
-    - DevelopMentor
-    - Muestre
-    - ACEPTACIÓN
-    - Vivo
+    - Desarrollo
+    - Probar
+    - UAT
+    - Live
 
     > [!NOTE]
-    > - En el caso de los portales aprovisionados existentes, esta lista desplegable está disponible en la pestaña **detalles del portal** y no hay ningún estado seleccionado de forma predeterminada.
+    > - Para los portales aprovisionados ya existentes, esta lista desplegable está disponible en la pestaña **Detalles de portal** y ningún estado está seleccionado de forma predeterminada.
     > - Esta lista desplegable solo está disponible para los portales de tipo producción.
-    > - Microsoft usa este campo para comprender el patrón de uso de este portal y no afecta a ninguna funcionalidad. Si usa nombres diferentes para el ciclo de vida de desarrollo, seleccione el que más se aproxime a su propósito. Se puede cambiar en un momento posterior una vez aprovisionado el portal.
+    > - Este campo se usa en Microsoft para comprender el patrón de este portal y no afecta a ninguna funcionalidad. Si usa nombres diferentes para el ciclo de vida de desarrollo, seleccione el que está más cerca del propósito. Esto se puede cambiar más tarde una vez el portal esté aprovisionado.
 
-5.  En el campo **dirección URL del portal** , escriba el nombre de subdominio que desee para el portal. Solo puede utilizar caracteres alfanuméricos o guiones (-); no se permiten otros caracteres.
-
-    > [!NOTE]
-    > - Para cambiar la dirección URL de un portal una vez aprovisionado, consulte [cambio de la dirección URL base de un portal](admin/change-base-url.md).
-    > - Para vincular el portal a un dominio personalizado, consulte [vinculación del portal a un dominio personalizado](admin/add-custom-domain.md).
-
-6.  En la lista desplegable de **instancias de Dynamics 365** , seleccione la instancia a la que desea vincular el portal. Esto requiere el rol de administrador del sistema o del Personalizador del sistema en la instancia que elija para seleccionarlo.
-
-7.  En la lista desplegable **Seleccionar idioma del portal** , seleccione el idioma predeterminado para el portal. Los idiomas disponibles dependerán de los idiomas que estén instalados en la instancia de. 
+5.  En el campo **Dirección URL de portal**, escriba el nombre del subdominio que desee para el portal. Puede usar únicamente caracteres alfanuméricos o guiones (-); otros caracteres no se permiten.
 
     > [!NOTE]
-    > Los datos de ejemplo solo se proporcionan en un idioma, por lo que al elegir un idioma predeterminado también se decide cómo se traducen los datos de ejemplo. No se admiten los formatos árabe y hebreo, y no aparecerán en la lista.
+    > - Para cambiar la dirección URL de un portal después de su aprovisionamiento, vea [Cambiar la dirección URL base de un portal](admin/change-base-url.md).
+    > - Para vincular su portal a un dominio personalizado, vea [Vincular el portal a un dominio personalizado](admin/add-custom-domain.md).
 
-8. En la lista desplegable **Seleccionar administrador del portal** , seleccione el usuario que va a configurar, personalizar y mantener el portal. Todos los usuarios que tengan el rol de administrador del sistema en la organización aparecerán como opciones. 
+6.  En la lista desplegable **Instancia Dynamics 365** seleccione la instancia con la que quiera vincular el portal. Esto requiere un rol de administrador del sistema o personalizador del sistema en la instancia que elija para seleccionarlo.
 
-9. En la sección **audiencia del portal** , elija el tipo de audiencia que visitará el nuevo portal. Esto determinará las opciones de portales que se proporcionarán. Puede elegir:
+7.  Elija el idioma predeterminado de su portal en la lista desplegable **Seleccionar idioma del portal**. Los idiomas disponibles dependerán de los que estén instalados en la instancia. 
 
-    -   Partner    
-        -   Portal de autoservicio del cliente
+    > [!NOTE]
+    > Los datos de ejemplo se proporcionan únicamente en un idioma, por lo que la selección de un idioma predeterminado también decidirá cómo se traducen los datos de ejemplo. El árabe y el hebreo no se admiten y no aparecerán en la lista.
+
+8. En la lista desplegable **Seleccionar administrador del portal**, seleccione el usuario que configurará, personalizará, y mantendrá el portal. Todos los usuarios que tienen el rol Administrador del sistema en la organización aparecerán como opciones. 
+
+9. En la sección **Público del portal**, seleccione el tipo de público que visitará el portal nuevo. Esto determina qué opciones de portales se le ofrecerán. Puede optar por:
+
+    -   Asociado    
+        -   Portal de autoservicio de clientes
         -   Portal personalizado
-        -   Portal de Partners
-        -   Servicio de proyecto de asociados (opcional, requiere soluciones instaladas)
-        -   Servicio de campo de asociado (opcional, requiere soluciones instaladas)
+        -   Portal de asociados
+        -   Project Service de asociados (opcional, requiere soluciones instaladas)
+        -   Field Service de asociado (opcional, requiere soluciones instaladas)
         -   Portal de la comunidad
 
-    -   Customer
-        -   Portal de autoservicio del cliente
+    -   Cliente
+        -   Portal de autoservicio de clientes
         -   Portal personalizado
         -   Portal de la comunidad
 
-    -   Employee
-        -   Portal de autoservicio para empleados
+    -   Empleado
+        -   Portal de autoservicio de empleados
 
-10. En la sección **seleccionar el portal que se va a implementar** , elija el tipo de portal que desea crear. Las opciones que ve se basan en la audiencia que ha seleccionado.
+10. En la sección **Seleccione el portal para implementar**, elija qué tipo de portal desea crear. Las opciones que ve se basan en el público que seleccionó.
 
     > [!div class="mx-imgBorder"]
-    > ![Configurar las opciones del portal](media/configure-settings-portal.png "Configurar las opciones del portal")  
+    > ![Configurar opciones para el portal](media/configure-settings-portal.png "Configurar opciones para el portal")  
 
-11. Seleccione **submit (enviar**) y acepte los términos de servicio.
+11. Seleccione **Enviar** y acepte las Condiciones de servicio.
     > [!div class="mx-imgBorder"]
-    > ![Condiciones del servicio](media/terms-of-service.png "Condiciones del servicio")  
+    > ![Condiciones de servicio](media/terms-of-service.png "Condiciones de servicio")  
 
-Después de aceptar los términos de servicio, el portal comenzará el aprovisionamiento. El aprovisionamiento normalmente tarda 30 minutos, pero puede tardar unas horas en función de la carga del sistema. El *nombre* del portal en la pestaña aplicación cambiará a *nombre*-configurando mientras se aprovisiona. Vuelva a la página de administración del portal para comprobar si el aprovisionamiento se ha realizado correctamente.
+Después de aceptar las condiciones de servicio, el portal iniciará el aprovisionamiento. El aprovisionando tarda normalmente 30 minutos, pero puede tardar unas horas en función de la carga del sistema. El *Nombre* del portal en la pestaña Aplicación cambiará a *Nombre*-Configuración mientras se está aprovisionando. Navegue de vuelta a la página de administración del portal para comprobar si el aprovisionamiento se ha realizado correctamente.
 
-Una vez aprovisionado el portal, se muestra la página **detalles del portal** con los detalles necesarios.
+Después de que se aprovisione el portal, se muestra la página **Detalles de portal** con los detalles necesarios.
 
 > [!div class="mx-imgBorder"]
 > ![Detalles del portal](media/portal-details-prov.png "Detalles del portal") 
 
 
 > [!Note]
-> Cuando un usuario del portal inicia sesión en el portal por primera vez mediante el uso de una credencial de Azure AD, se muestra una página de consentimiento a todos los usuarios, independientemente del tipo de usuario o de portal.
+> Cuando un usuario del portal inicia sesión en el portal por primera vez mediante las credenciales de Azure AD, una página de consentimiento se muestra a todos los usuarios con independencia del tipo de usuario o de portal.
 
-En la tabla siguiente se resumen las características asociadas a cada opción del portal:
+La tabla siguiente resume las características asociadas a cada opción de portal:
 
-| Ofrecen                                | Portal de autoservicio del cliente | Portal de Partners | Portal de autoservicio de empleado | Portal de la comunidad | Portal personalizado |
+| Característica                                | Portal de autoservicio de clientes | Portal de asociados | Portal de autoservicio de empleados | Portal de la comunidad | Portal personalizado |
 |----------------------------------------|------------------------------|----------------|------------------------------|------------------|---------------|
-| Preparado para todo el mundo                            | •                            | •              | •                            | •                | •             |
-| Compatibilidad con varios idiomas                 | •                            | •              | •                            | •                | •             |
+| Listo para el mundo                            | •                            | •              | •                            | •                | •             |
+| Compatibilidad multilingüe                 | •                            | •              | •                            | •                | •             |
 | Administración del portal                  | •                            | •              | •                            | •                | •             |
 | Personalización y extensibilidad        | •                            | •              | •                            | •                | •             |
 | Temas                                | •                            | •              | •                            | •                | •             |
 | Administración de contenido                     | •                            |                | •                            | •                |               |
 | Administración del conocimiento                   | •                            | •              | •                            | •                |               |
-| Compatibilidad y administración de casos                | •                            |                | •                            | •                |               |
+| Soporte técnico/administración de casos                | •                            |                | •                            | •                |               |
 | Foros                                 | •                            |                | •                            | •                |               |
 | Búsqueda por facetas                         | •                            |                | •                            |                  |               |
 | Administración de perfiles                     | •                            |                | •                            |                  |               |
-| Subproceso de suscripción a foros              | •                            |                | •                            |                  |               |
-| Opiniones                               | •                            |                | •                            | •                |               |
-| Autenticación de [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD                |                              |                | •                            |                  |               |
-| Pone                                  |                              |                |                              | •                |               |
+| Suscribirse a este hilo del foro              | •                            |                | •                            |                  |               |
+| Comentarios                               | •                            |                | •                            | •                |               |
+| Autenticación AD de [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)]                |                              |                | •                            |                  |               |
+| Ideas                                  |                              |                |                              | •                |               |
 | Blogs                                  |                              |                |                              | •                |               |
-| Integración de automatización del servicio de proyecto |                              | •              |                              |                  |               |
-| Integración del servicio de campo              |                              | •              |                              |                  |               |
+| Integración de Project Service Automation |                              | •              |                              |                  |               |
+| Integración de Field Service              |                              | •              |                              |                  |               |
 | Incorporación de asociados                     |                              | •              |                              |                  |               |
-| Base del portal                            |  •                           | •              |  •                           | •                | •             |
-| Flujos de trabajo del portal                       |  •                           | •              |  •                           | •                | •             |
-| Notificaciones Web                      |  •                           | •              |  •                           | •                | •             |
+| Base de portal de                             |  •                           | •              |  •                           | •                | •             |
+| Flujos de trabajo de portal                       |  •                           | •              |  •                           | •                | •             |
+| Notificaciones web                      |  •                           | •              |  •                           | •                | •             |
 | Identidad de [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)]                     |     •                         |  •              |     •                         |   •               | •             |
 | Flujos de trabajo de identidad                     | •                            |  •             |     •                         |   •               | •             |
-| Formularios Web Forms                              |  •                            | •               |    •                          | •                 | •             |
-| Los                               |   •                           |  •              |  •                            | •                 | •             |
+| Formularios web                              |  •                            | •               |    •                          | •                 | •             |
+| Comentarios                               |   •                           |  •              |  •                            | •                 | •             |
 ||
 
 ## <a name="troubleshoot-provisioning"></a>Solución de problemas de aprovisionamiento
 
-En ocasiones, el proceso de instalación de paquetes o el proceso de creación de direcciones URL pueden tener errores. En estos casos, se pueden reiniciar los procesos.
+A veces se crea un error en el proceso de instalación del paquete o de creación de la dirección URL. En estos casos, se pueden reiniciar los procesos.
 
-Si *Name*-configure los cambios en el aprovisionamiento de *nombre*, deberá reiniciar el proceso de aprovisionamiento.
+Si *Nombre*-Configuración cambia a *Nombre*-Error de aprovisionamiento, deberá reiniciar el proceso de aprovisionamiento.
 
-1. Vaya a la página **aplicaciones** y seleccione el portal.
-2. Seleccione el botón de lápiz azul con la etiqueta **administrar**.
-3. Elija una de las siguientes opciones:
+1. Vaya a la página **Aplicaciones** y seleccione el portal.
+2. Seleccione el botón de corregir etiquetado **Administrar**.
+3. Seleccione una de las siguientes opciones:
 
-   - **Reiniciar el aprovisionamiento**: reinicia el proceso de instalación con la configuración que se definió previamente.
+   - **Reiniciar aprovisionamiento**: Reinicia el proceso de instalación con la configuración que se definió anteriormente.
 
-   - **Cambiar valores y reiniciar el aprovisionamiento**: permite cambiar algunos de los valores antes de reiniciar el proceso de aprovisionamiento.
+   - **Cambiar configuración y reiniciar aprovisionamiento**: Le permite cambiar algunos de los valores antes de reiniciar el proceso de aprovisionamiento.
 
-Si se ha producido un error en la instalación del paquete, se abrirá la página Administrador del portal sin ningún problema, pero al ir a la dirección URL del portal real se mostrará un mensaje de configuración. Para confirmarlo:
+Si la instalación de paquetes ha fallado, la página de administrador del portal se abrirá sin ningún problema, pero al navegar a la dirección URL del portal real se mostrará un mensaje Obteniendo configuración. Para confirmar esto:
 
-1. Vaya a la página Administración de soluciones de la página del **centro de administración de Dynamics 365** y compruebe que el estado del paquete es **error de instalación**. 
+1. Vaya a la página Administración de soluciones de la página **Centro de administración de Dynamics 365** y compruebe que el estado del paquete es **Error al instalar**. 
 
-2. Si el estado del paquete es **error de instalación**, intente volver a intentar la instalación desde la página de la solución. Además, asegúrese de comprobar que un administrador del sistema está instalando la solución con el idioma predeterminado en Common Data Service establecido en el idioma en el que se debe instalar el portal.
+2. Si el estado del paquete es **Error al instalar**, vuelva a intentar la instalación desde la página de solución. Además, asegúrese de comprobar que un administrador del sistema está instalando la solución con el idioma predeterminado en Common Data Service establecido como el idioma en el que se debe instalar el portal.
 
 > [!NOTE]
-> Algunas soluciones tienen requisitos previos para su instalación, por lo que se producirá un error en la instalación si no se cumplen los requisitos previos. Por ejemplo, para instalar el servicio de campo de asociado para un portal de Partners, las soluciones del portal de Partners y del servicio de campo ya deben estar instaladas. Si intenta instalar el servicio de campo de asociado en primer lugar, se producirá un error en la instalación y se le mostrará un mensaje de error.
+> Algunas soluciones tienen requisitos previos para la instalación, por lo que una instalación generará error si los requisitos previos no se cumplen. Por ejemplo, para instalar Field Service de asociado para un portal de un asociado, las soluciones Portal de asociados y Field Service deben haber sido instaladas. Si intenta instalar Field Service de asociados primero, la instalación producirá un error y mostrará un mensaje de error.

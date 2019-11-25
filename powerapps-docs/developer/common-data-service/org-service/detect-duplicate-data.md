@@ -1,5 +1,5 @@
 ---
-title: Detectar datos duplicados con el servicio de organización (Common Data Service) | Microsoft Docs
+title: Detección de datos duplicados con el servicio de organización (Common Data Service) | Microsoft Docs
 description: El servicio de la organización le permite detectar registros duplicados en Common Data Service para mantener la integridad de los datos.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb2ecce70adaf47ea55117831d2ced866bce10f1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749699"
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>Detección de datos duplicados con el servicio de organización
 

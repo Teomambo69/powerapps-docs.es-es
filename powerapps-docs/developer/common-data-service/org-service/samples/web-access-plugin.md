@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c12d9eff40db2afb20eebf787b360ab4c49be18b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752931"
 ---
 # <a name="sample-web-access-from-a-plug-in"></a>Ejemplo: Acceso web desde un complemento
 
@@ -27,8 +33,8 @@ En este ejemplo se muestra cómo escribir un complemento que tiene acceso a recu
     - HttpClientPlugin usa [Clase HttpClient](/dotnet/api/system.net.http.httpclient)
 1. Abra la solución de ejemplo en Visual Studio, vaya a las propiedades del proyecto y comprueba que el ensamblado se firmará durante la compilación. Presione la F6 para compilar el ensamblado del ejemplo (WebAccessPlugin.dll).
 1. Ejecute la herramienta de registro de complementos y registre el ensamblado en el espacio aislado y la base de datos del servidor de Common Data Service. 
-1. Para cualquiera de los tipos de complementos, cuando registre un paso, especifique una cadena URI web (es decir, `http://www.microsoft.com` en el campo no seguro de configuración.
-    - Si no se proporciona un valor, se usará el predeterminado `http://www.bing.com`.
+1. Para cualquiera de los tipos de complementos, cuando registre un paso, especifique una cadena URI web (es decir, `https://www.microsoft.com` en el campo no seguro de configuración.
+    - Si no se proporciona un valor, se usará el predeterminado `https://www.bing.com`.
 1. Use una aplicación o escriba código para realizar la operación adecuada para invocar la solicitud de mensaje y de entidad donde registró al complemento.
 1. Cuando el complemento se ejecuta, si la duración de la llamada supera el límite de 15 segundos, lanzará un error. En caso contrario deberá tener éxito.
 1. Cuando haya terminado con la prueba, cancele el registro del ensamblado y el paso.
@@ -39,7 +45,7 @@ Cuando se ejecuta, el complemento descarga los datos de la página web de la dir
 
 - Si el complemento `WebClientPlugin` produce error, escribirá algo como lo siguiente en el registro de seguimiento del complemento:
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: The timeout elapsed while attempting to issue the request. ---> System.Net.WebException: The operation has timed out
       at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
       at System.Net.WebClient.DownloadData(Uri address)
@@ -50,7 +56,7 @@ Cuando se ejecuta, el complemento descarga los datos de la página web de la dir
 
 - Si el complemento `HttpClientPlugin` produce error, escribirá algo como lo siguiente en el registro de seguimiento del complemento:
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Inner Exceptions:
       Exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: An exception occurred while attempting to issue the request.

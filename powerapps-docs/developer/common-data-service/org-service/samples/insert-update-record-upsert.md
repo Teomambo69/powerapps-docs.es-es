@@ -1,19 +1,25 @@
 ---
-title: 'Ejemplo: Insertar o actualizar registro mediante Upsert (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Insertar o actualizar un registro utilizando Upsert (Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo insertar o actualizar registros mediante el mensaje de Upsert.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d12bd93c3aa25fb2f2b1b426e680ef69e9f0006e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749892"
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>Ejemplo: Insertar o actualizar un registro mediante Upsert
 

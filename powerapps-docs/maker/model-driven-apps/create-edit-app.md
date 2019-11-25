@@ -3,29 +3,34 @@ title: Crear o editar una aplicación basada en modelos utilizando el diseñador
 description: Aprender a crear o editar aplicaciones mediante el diseñador de aplicaciones
 keywords: ''
 ms.date: 02/05/2019
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2a44229e-44f0-4c4e-ba21-a476210d0a12
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 19
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759312"
 ---
-
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Crear o editar una aplicación controlada por modelos utilizando el diseñador de aplicaciones
 
 En este tema aprenderá los aspectos básicos de cómo crear y editar una aplicación controlada por modelos usando el diseñador de aplicaciones basado en mosaicos.
@@ -38,7 +43,7 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Crear una aplicación  
 
-1.  En la página **Inicio** de [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
+1.  En la página **Inicio** de [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -61,7 +66,7 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
       > [!NOTE]
       > Al seleccionar **Solución predeterminada** cuando se agrega un mapa del sitio, los componentes que están asociados con ese mapa del sitio se agregan automáticamente a la aplicación.  
 
-      ![Usar la solución existente para crear la página de aplicaciones](media/use-existing-solution-to-create-the-app.png "Usar una solución existente para crear la aplicación") 
+      ![Usar solución existente para crear la página de la aplicación](media/use-existing-solution-to-create-the-app.png "Use una solución existente para crear la aplicación.") 
 
     - **Elija una página de bienvenida**: Esta opción permite elegir entre los recursos web disponibles en su organización. Las páginas de bienvenida que cree pueden contener información útil para los usuarios, como vínculos a vídeos, instrucciones de actualización o información de introducción. La página de bienvenida aparece cuando se abre una aplicación. Los usuarios pueden seleccionar **No mostrar esta pantalla de bienvenida la próxima vez** en la página de inicio de sesión para deshabilitar la página para que no aparezca la próxima vez que se inicie la aplicación. Tenga en cuenta que la opción **No mostrar esta pantalla de bienvenida la próxima vez** es una configuración de usuario y no se puede controlar por los administradores o proveedores de la aplicación. Para obtener más información acerca de cómo crear un recurso web, por ejemplo, un archivo HTML que pueda usar como página de bienvenida, consulte: [Crear y editar recursos web para extender la aplicación web](create-edit-web-resources.md).  
       
@@ -77,7 +82,7 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Editar una aplicación  
   
-1.  Iniciar sesión en [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 

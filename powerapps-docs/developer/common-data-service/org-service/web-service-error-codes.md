@@ -6,16 +6,21 @@ ms.date: 05/09/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753072"
 ---
-
 # <a name="web-service-error-codes"></a>Códigos de error de servicio web
 
 Este tema enumera los códigos de error que puede encontrar al depurar el código.
@@ -258,19 +263,19 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />BDK_E_ZIP_INVALID_FOR_ENTERED_STATE<br />**Hex**:<br />8004B58E<br />**Número**:<br />-2147175026|{0} Error de código de facturación.|
 > |**Nombre**:<br />BidsAuthenticationError<br />**Hex**:<br />8005E003<br />**Número**:<br />-2147098621|Se ha producido un error durante la autenticación con el servidor {0}.|
 > |**Nombre**:<br />BidsAuthenticationFailed<br />**Hex**:<br />8005E006<br />**Número**:<br />-2147098618|Error de autenticación al intentar conectarse al servidor {0}. El nombre de usuario o la contraseña no son correctos.|
-> |**Nombre**:<br />BidsInvalidConnectionString<br />**Hex**:<br />8005E000<br />**Número**:<br />-2147098624|Cadena de conexión no válida Uso: ServerUrl[;OrganizationName][[;HomeRealmUrl]|
+> |**Nombre**:<br />BidsInvalidConnectionString<br />**Hex**:<br />8005E000<br />**Número**:<br />-2147098624|Cadena de conexión no válida Uso: ServerUrl[;OrganizationName][;HomeRealmUrl]|
 > |**Nombre**:<br />BidsInvalidUrl<br />**Hex**:<br />8005E001<br />**Número**:<br />-2147098623|Entrada de la dirección url {0} no es válida.|
 > |**Nombre**:<br />BidsNoOrganizationsFound<br />**Hex**:<br />8005E004<br />**Número**:<br />-2147098620|No se encontraron organizaciones para el usuario.|
 > |**Nombre**:<br />BidsOrganizationNotFound<br />**Hex**:<br />8005E005<br />**Número**:<br />-2147098619|No se encontró la organización {0} para el usuario.|
 > |**Nombre**:<br />BidsServerConnectionFailed<br />**Hex**:<br />8005E002<br />**Número**:<br />-2147098622|No se pudo establecer la conexión con servidor {0}.|
-> |**Nombre**:<br />BillingNoSettingError<br />**Hex**:<br />8004B531<br />**Número**:<br />-2147175119|No se encontró la opción de configuración de la aplicación de facturación [{0}].|
-> |**Nombre**:<br />BillingPartnerCertificate<br />**Hex**:<br />8004B530<br />**Número**:<br />-2147175120|No se puede determinar el certificado partner correcto para usar con facturación.  Emisor: {0}  Asunto: {1}  Coincidencias distintivas: [{2}]  Coincidencias de nombre: [{3}]  Todos los certificados válidos: [{4}].|
+> |**Nombre**:<br />BillingNoSettingError<br />**Hex**:<br />8004B531<br />**Número**:<br />-2147175119|No se encontró configuración de la aplicación de facturación [{0}].|
+> |**Nombre**:<br />BillingPartnerCertificate<br />**Hex**:<br />8004B530<br />**Número**:<br />-2147175120|No se puede determinar el certificado partner correcto para usar con facturación.  Emisor: {0} asunto: {1} distintivo coincide con: [{2}] el nombre coincide con: [{3}] todos los certificados válidos: [{4}].|
 > |**Nombre**:<br />BillingRetrieveKeyError<br />**Hex**:<br />8004B538<br />**Número**:<br />-2147175112|No se puede recuperar la clave de sesión de facturación: "{0}"|
 > |**Nombre**:<br />BillingTestConnectionError<br />**Hex**:<br />8004B532<br />**Número**:<br />-2147175118|Facturación no está disponible: llamada a IsServiceAvailable devuelve 'False'.|
 > |**Nombre**:<br />BillingTestConnectionException<br />**Hex**:<br />8004B533<br />**Número**:<br />-2147175117|Excepción de facturación TestConnection.|
-> |**Nombre**:<br />BillingUnknownErrorCode<br />**Hex**:<br />8004B536<br />**Número**:<br />-2147175114|El código de error de facturación [{0}] se produjo con la excepción {1}|
+> |**Nombre**:<br />BillingUnknownErrorCode<br />**Hex**:<br />8004B536<br />**Número**:<br />-2147175114|Código de error de facturación [{0}] se produjo con excepciones {1}|
 > |**Nombre**:<br />BillingUnknownException<br />**Hex**:<br />8004B537<br />**Número**:<br />-2147175113|Código de error de facturación se produjo con excepciones {0}|
-> |**Nombre**:<br />BillingUnmappedErrorCode<br />**Hex**:<br />8004B535<br />**Número**:<br />-2147175115|El código de error de facturación [{0}] se produjo con la excepción {1}|
+> |**Nombre**:<br />BillingUnmappedErrorCode<br />**Hex**:<br />8004B535<br />**Número**:<br />-2147175115|Código de error de facturación [{0}] se produjo con excepciones {1}|
 > |**Nombre**:<br />BillingUserPuidNullError<br />**Hex**:<br />8004B534<br />**Número**:<br />-2147175116|El Puid de usuario es necesario, pero es nulo.|
 > |**Nombre**:<br />BookFirstInstanceFailed<br />**Hex**:<br />8004E10E<br />**Número**:<br />-2147163890|Error al reservar la primera instancia.|
 > |**Nombre**:<br />BooleanOptionOutOfRange<br />**Hex**:<br />8004431C<br />**Número**:<br />-2147204324|Opciones de atributo booleano deben tener un valor de 0 o 1.|
@@ -289,7 +294,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />BundleCannotContainProductFamily<br />**Hex**:<br />8004F992<br />**Número**:<br />-2147157614|No puede agregar una familia de productos a una agrupación.|
 > |**Nombre**:<br />BundleCannotContainProductKit<br />**Hex**:<br />80061014<br />**Número**:<br />-2147086316|No se puede agregar un kit a una agrupación.|
 > |**Nombre**:<br />BundleMaxPropertyLimitExceeded<br />**Hex**:<br />8008100E<br />**Número**:<br />-2146955250|Este paquete no se puede publicar porque tiene demasiadas propiedades. Una agrupación en su organización no puede tener más de {0} propiedades.|
-> |**Nombre**:<br />BusinessManagementInvalidUserId<br />**Hex**:<br />80041d1f<br />**Número**:<br />-2147214049|Los identificadores de usuario [{0}] no son válidos.|
+> |**Nombre**:<br />BusinessManagementInvalidUserId<br />**Hex**:<br />80041d1f<br />**Número**:<br />-2147214049|El identificador de usuario [{0}] no es válido.|
 > |**Nombre**:<br />BusinessManagementLoopBeingCreated<br />**Hex**:<br />80041d21<br />**Número**:<br />-2147214047|La creación de esta asociación jerárquica crearía un bucle en la jerarquía de negocios.|
 > |**Nombre**:<br />BusinessManagementLoopExists<br />**Hex**:<br />80041d20<br />**Número**:<br />-2147214048|Existe un bucle en la jerarquía de la empresa.|
 > |**Nombre**:<br />BusinessManagementObjectAlreadyExists<br />**Hex**:<br />8004022a<br />**Número**:<br />-2147220950|Ya existe un objeto con el nombre especificado.|
@@ -790,7 +795,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CorruptedHiddensheetData<br />**Hex**:<br />800609B7<br />**Número**:<br />-2147087945|Los datos de una hoja oculta está dañados.|
 > |**Nombre**:<br />CouldNotDecryptOAuthToken<br />**Hex**:<br />8005F110<br />**Número**:<br />-2147094256|No se ha podido descifrar el token OAuth de Yammer. Pruebe a configurar Yammer otra vez.|
 > |**Nombre**:<br />CouldNotFindQueueItemInQueue<br />**Hex**:<br />80040524<br />**Número**:<br />-2147220188|No se encontró un elemento de cola asociado con el objetivo en el SourceQueueId especificado. El SourceQueueId o destino no es válido o no existe el elemento de cola.|
-> |**Nombre**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Número**:<br />-2147204295|No se puede obtener el bloqueo de recursos de la base de datos. Para obtener más información, consulte http://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity|
+> |**Nombre**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Número**:<br />-2147204295|No se puede obtener el bloqueo de recursos de la base de datos. Para obtener más información, consulte https://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity|
 > |**Nombre**:<br />CouldNotReadAccessToken<br />**Hex**:<br />8005F105<br />**Número**:<br />-2147094267|El sistema no puede leer el token de acceso a Yammer del usuario aunque pasó un código no vacío.|
 > |**Nombre**:<br />CouldNotSetLocationTypeToOneNote<br />**Hex**:<br />80060905<br />**Número**:<br />-2147088123|No se pudo establecer el tipo de ubicación de la ubicación de documento en OneNote.|
 > |**Nombre**:<br />CountSpecifiedWithoutOrder<br />**Hex**:<br />8004E01F<br />**Número**:<br />-2147164129|La descripción de datos para la visualización no es válida ya que no especifica un nodo de pedido para el atributo de recuento.|
@@ -1292,7 +1297,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />HierarchicalOperationFailed<br />**Hex**:<br />8008100F<br />**Número**:<br />-2146955249|Esta operación no se puede completar en esta jerarquía. Se ha producido un error al realizar esta operación para {0}. Puede realizar la operación de manera independiente de este producto para solucionar el error e intentarlo de nuevo para la jerarquía completa.|
 > |**Nombre**:<br />HierarchyCalculateLimitReached<br />**Hex**:<br />80060547<br />**Número**:<br />-2147089081|Los cálculos no se pueden llevar a cabo en línea porque se ha alcanzado el límite de profundidad de jerarquía de registro maestro de {0}.|
 > |**Nombre**:<br />HipInvalidCertificate<br />**Hex**:<br />8004Ed45<br />**Número**:<br />-2147160763|Certificado no válido para el uso de HIP.|
-> |**Nombre**:<br />HipNoSettingError<br />**Hex**:<br />8004Ed44<br />**Número**:<br />-2147160764|No se encontró la configuración de la aplicación [{0}].|
+> |**Nombre**:<br />HipNoSettingError<br />**Hex**:<br />8004Ed44<br />**Número**:<br />-2147160764|No se encontró configuración de la aplicación Hip [{0}].|
 > |**Nombre**:<br />HonorPauseWithoutSLAKPIError<br />**Hex**:<br />80045000<br />**Número**:<br />-2147201024|El SLA se puede definir para poder pausarse y reanudarse solo si el KPI de SLA del usuario está establecido en Sí.|
 > |**Nombre**:<br />HybridSSSExchangeOnlineS2SCertActsExpired<br />**Hex**:<br />80131500<br />**Número**:<br />-2146233088|El certificado que se usa para la autenticación de S2S de Dynamics 365 Onpremise con Exchange Online ha expirado|
 > |**Nombre**:<br />HybridSSSExchangeOnlineS2SCertExpired<br />**Hex**:<br />80131509<br />**Número**:<br />-2146233079|El certificado que se usa para la autenticación de S2S de Dynamics 365 Onpremise con Exchange Online ha expirado|
@@ -1577,7 +1582,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidEntitySetName<br />**Hex**:<br />8006089B<br />**Número**:<br />-2147088229|Ya existe una entidad con el nombre de entidad especificado {0}. Especifique un nombre único.|
 > |**Nombre**:<br />InvalidEntitySpecified<br />**Hex**:<br />800609B1<br />**Número**:<br />-2147087951|La entidad no está especificada en la plantilla.|
 > |**Nombre**:<br />InvalidExchangeRate<br />**Hex**:<br />80048cfd<br />**Número**:<br />-2147185411|El tipo de cambio no es válido.|
-> |**Nombre**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Número**:<br />-2147089546|No se pudo exportar el proceso de negocio "{0}" porque la solución no incluye la entidad de proceso de negocio correspondiente "{1}". Si se trata de un proceso de negocio recién creado en estado de borrador, actívelo una vez para generar la entidad de proceso de negocio y para incluirla en la solución. Para obtener más información, consulte http://support.microsoft.com/kb/4337537.|
+> |**Nombre**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Número**:<br />-2147089546|No se pudo exportar el proceso de negocio "{0}" porque la solución no incluye la entidad de proceso de negocio correspondiente "{1}". Si se trata de un proceso de negocio recién creado en estado de borrador, actívelo una vez para generar la entidad de proceso de negocio y para incluirla en la solución. Para obtener más información, consulte https://support.microsoft.com/kb/4337537.|
 > |**Nombre**:<br />InvalidExternalCollectionName<br />**Hex**:<br />80046BA7<br />**Número**:<br />-2147193945|El nombre de colección externa especificado no es válido.|
 > |**Nombre**:<br />InvalidExternalName<br />**Hex**:<br />80046BC0<br />**Número**:<br />-2147193920|El nombre externo especificado no es válido.|
 > |**Nombre**:<br />InvalidExternalPartyConfiguration<br />**Hex**:<br />8006110F<br />**Número**:<br />-2147086065|Existen varios elementos de proveedores externos para parámetros de solicitud.|
@@ -2662,7 +2667,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SharePointUnableToRemoveUserFromGroup<br />**Hex**:<br />8004F0F2<br />**Número**:<br />-2147159822|No se puede quitar el usuario {0} del grupo {1} en SharePoint.|
 > |**Nombre**:<br />SharePointUnableToRetrieveGroup<br />**Hex**:<br />8004F0F4<br />**Número**:<br />-2147159820|No se puede recuperar el grupo {0} de SharePoint.|
 > |**Nombre**:<br />SharePointUrlHostValidator<br />**Hex**:<br />8004F301<br />**Número**:<br />-2147159295|No se puede resolver la dirección URL en una dirección IP.|
-> |**Nombre**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Número**:<br />-2147159290|La URL no es válida. La dirección URL debe ser una colección de sitios válidos y no puede incluir un subsitio. La dirección URL debe tener una forma válida, como http://SharePointServer/sites/CrmSite.|
+> |**Nombre**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Número**:<br />-2147159290|La URL no es válida. La dirección URL debe ser una colección de sitios válidos y no puede incluir un subsitio. La dirección URL debe tener una forma válida, como https://SharePointServer/sites/CrmSite.|
 > |**Nombre**:<br />SharePointVersionUnsupported<br />**Hex**:<br />800608B6<br />**Número**:<br />-2147088202|Microsoft Dynamics 365 no puede conectarse a Sharepoint porque la versión Sharepoint no está admitida. Instale la versión correcta y, después, inténtelo de nuevo. |
 > |**Nombre**:<br />SimilarityRuleDisabled<br />**Hex**:<br />80071016<br />**Número**:<br />-2147020778|No hay ninguna regla de similitud activa para esta entidad.|
 > |**Nombre**:<br />SimilarityRuleFCBOff<br />**Hex**:<br />80071018<br />**Número**:<br />-2147020776|Las reglas de similitud no están habilitadas.|

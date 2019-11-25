@@ -10,12 +10,18 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4584904aa50bc4b4b9ec2fb75322a884c1aa8cfa
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749799"
 ---
-# <a name="scalable-customization-design-in-common-data-service"></a>Diseño de la personalización escalable en Common Data Service
+# <a name="scalable-customization-design-in-common-data-service"></a>Diseño de personalización escalable en Common Data Service
 
 > [!NOTE]
 > Este es el primero de una serie de temas sobre el diseño de la personalización escalable. Aunque este contenido está dividido en temas separados, muestra una vista global de los conceptos, los problemas y las estrategias que rodean el diseño de las personalizaciones escalables. Cada tema se basa en conceptos establecidos en temas anteriores.
@@ -51,7 +57,7 @@ Estos tipos de problemas presentan normalmente una combinación de síntomas com
 
 En realidad una combinación de estos síntomas puede notificarse, y a menudo se hace, a la vez cuando se presentan estas dificultades. No es siempre el caso que estos síntomas sean un indicador de problemas en el diseño. Otros problemas, como limitaciones de E/S de disco en la base de datos o un error del producto, pueden causar síntomas similares. Pero la causa más común de estos tipos de síntomas y por lo tanto es útil comprobarlo, se relaciona directamente con el diseño de la implementación personalizada y cómo afecta al sistema. 
 
-> *¿Por qué preocuparnos? ¿No se ocupa Common Data Service de esto?*
+> *¿Por qué preocuparnos?, Common Data Service para aplicaciones se encarga de ello ¿no?*
 
 Hace todo lo que puede… Pero usa el bloqueo y las transacciones para proteger el sistema contra conflictos cuando es necesario.
 

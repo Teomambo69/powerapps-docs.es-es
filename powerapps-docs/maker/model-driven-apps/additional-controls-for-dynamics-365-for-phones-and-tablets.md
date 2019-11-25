@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7920ef78-2540-48ad-ba25-9ce9cb995ed1
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752372"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>Controles adicionales para Dynamics 365 para teléfonos y tabletas 
 
@@ -149,7 +155,7 @@ search.app:
  Use el control de vista previa de sitio web para asignar un campo de dirección URL y mostrar una vista previa del sitio web.  
   
 > [!IMPORTANT]
->  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados de sistemas externos en la aplicación de PowerApps o aplicaciones de Dynamics 365 como Dynamics 365 Sales o Dynamics 365 Customer Service están sujetas a nuestra declaración de privacidad en [Privacidad y cookies de Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Al habilitar este control, usted consiente permitir que los usuarios compartan cierta información identificable de dispositivos con un sistema externo. Los datos importados de sistemas externos en la aplicación de PowerApps o aplicaciones de Dynamics 365 como Dynamics 365 Sales o Dynamics 365 Customer Service están sujetas a nuestra declaración de privacidad en [Privacidad y cookies de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Avisos de privacidad](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   
