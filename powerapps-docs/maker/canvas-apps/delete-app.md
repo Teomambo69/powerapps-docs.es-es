@@ -24,33 +24,33 @@ ms.locfileid: "74177695"
 En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuenta de PowerApps y de las cuentas de cualquiera con quien se haya compartido la aplicación.
 
 ## <a name="delete-an-app-from-your-account"></a>Eliminar una aplicación de la cuenta
-1. Open [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Apps** in the left **Tree view** pane.
+1. Abra [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, seleccione **aplicaciones** en el panel de **vista de árbol** de la izquierda.
    
-    ![Apps](./media/delete-app/file-apps.png)
-2. (optional) Near the upper-right corner, filter the list of apps to show only those apps that you own or only those apps to which you contribute.
+    ![Instala](./media/delete-app/file-apps.png)
+2. opta Cerca de la esquina superior derecha, filtre la lista de aplicaciones para mostrar solo las aplicaciones de las que es propietario o solo las que contribuye.
    
     ![Filtro de aplicaciones](./media/delete-app/filter-list.png)
    
     > [!NOTE]
    > Si la aplicación que desea eliminar no aparece, asegúrese de que está en el entorno adecuado.
-3. Select **More Commands** (...) for the app that you want to delete.
+3. Seleccione **más comandos** (...) para la aplicación que desea eliminar.
    
-    ![More Commands](./media/delete-app/app-options.png)
-4. Select the trash-can icon to delete the app.
+    ![Más comandos](./media/delete-app/app-options.png)
+4. Seleccione el icono de la papelera para eliminar la aplicación.
    
-    ![Delete](./media/delete-app/delete-icon.png)
+    ![Elimínelos](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > Para poder eliminar una aplicación debe tener el permiso de **colaborador** en ella.
-5. In the dialog box that appears, select **Delete from cloud**.  
+5. En el cuadro de diálogo que aparece, seleccione **eliminar de la nube**.  
    
     > [!IMPORTANT]
    > Esta acción eliminará permanentemente la aplicación no solo de su cuenta, sino también de las cuentas de todos los usuarios con las que se haya compartido.
    
-    ![Delete from cloud](./media/delete-app/delete-button.png)
+    ![Eliminar de la nube](./media/delete-app/delete-button.png)
 
 ## <a name="more-resources"></a>Más recursos
 [Share an app](share-app.md) (Compartir una aplicación)  
-[Cambiar el nombre y el icono de la aplicación](set-name-tile.md)  
+[Cambiar el nombre e icono de la aplicación](set-name-tile.md)  
 [Restore an app to a previous version](restore-an-app.md) (Restaurar una aplicación a una versión anterior)  
 

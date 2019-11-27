@@ -27,12 +27,12 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
-| iOS 12 or later |iOS 12 or later|
-| Android 7 or later |Android 7 or later |
+| iOS 12 o posterior |iOS 12 o posterior|
+| Android 7 o posterior |Android 7 o posterior |
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
 > [!NOTE]
-> We currently don't support new features on Windows platform for PowerApps app. Features such as the Improved Common Data Service option and guest access are not available on this platform. We recommend using a web player on Windows to leverage the full set of capabilities. Updates to the PowerApps app for Windows platform will be announced in future.
+> Actualmente no se admiten nuevas características en la plataforma de Windows para la aplicación de PowerApps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones de PowerApps para Windows se anunciarán en el futuro.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Exploradores admitidos para ejecutar aplicaciones de lienzo
 
@@ -68,7 +68,7 @@ Las solicitudes de PowerApps usan direcciones IP que dependen de la región del 
 
 Las llamadas realizadas desde una API conectada a través de una aplicación (por ejemplo, la API de SQL o la API de SharePoint) proceden de la dirección IP que se especificará más adelante en este mismo tema.
 
-Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista blanca las direcciones IP de una instancia de Azure SQL Database.
+Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de direcciones IP permitidas de una instancia de Azure SQL Database.
 
 > [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
@@ -77,13 +77,13 @@ Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista bl
 | --- | --- |
 | Asia | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | Australia  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
-| Brazil | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
+| Brasil | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
 | Canadá | 13.71.170.208 - 13.71.170.223, 13.71.170.224 - 13.71.170.239, 52.237.24.126, 40.69.106.240 - 40.69.106.255, 52.242.35.152|
 | Europa | 13.69.227.208 - 13.69.227.223, 52.178.150.68, 13.69.64.208 - 13.69.64.223, 52.174.88.118, 137.117.161.181|
 | India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | Japón | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | Sudamérica | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| United Kingdom | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
+| Reino Unido | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
 | Estados Unidos | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | Estados Unidos (acceso anticipado)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
@@ -95,47 +95,47 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Runtime de conectores/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - For getting user info (e.g., profile photo) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: para obtener información de usuario (por ejemplo, la foto de perfil) |
 | gallery.azure.com |https |Aplicaciones de ejemplo y plantilla |
-| \*.azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
-| \*.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
-| *.dynamics.com | https | Common Data Service |
+| \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
+| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
+| \*. blob.core.windows.net |https | Blob Storage |
+| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
+| *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| localhost | https | PowerApps Mobile
+| host | https | PowerApps Mobile
 
 > [!NOTE]
 > Si usa una VPN, se debe configurar para excluir localhost de la tunelización para PowerApps Mobile.
 
-## <a name="size-limits"></a>Size limits
+## <a name="size-limits"></a>Límites de tamaño
 
-You can find information about size limits on text, hyperlinks, images, and media in [Data types](functions/data-types.md#text-hyperlink-image-and-media).
+Puede encontrar información sobre los límites de tamaño en el texto, los hipervínculos, las imágenes y los elementos multimedia en los [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).
 
-## <a name="powerapps-per-app-plan"></a>PowerApps per app plan
+## <a name="powerapps-per-app-plan"></a>Plan de PowerApps por aplicación
 
-PowerApps per app plan allows individual users to run 2 applications on a single portal for a specific business scenario based on the full capabilities of PowerApps. This plan provides an easy way for users to get started with the platform before broader scale adoption.
+PowerApps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de PowerApps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
 
-After an admin allocates PowerApps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. You can see how an admin allocates per app plans [here](https://docs.microsoft.com/power-platform/admin/capacity-add-on).
+Después de que un administrador asigna el plan de PowerApps por aplicación a un entorno, se asigna a los usuarios sin licencia cuando una aplicación de ese entorno se comparte con ellos. Puede ver cómo un administrador asigna [aquí](https://docs.microsoft.com/power-platform/admin/capacity-add-on)los planes de cada aplicación.
 
-Follow these steps to turn off the assigning per app plans for users when an app is shared with them:
+Siga estos pasos para desactivar la asignación de planes por aplicación para los usuarios cuando se comparte una aplicación con ellos:
 
-- Choose the **App**.
-- Select **Settings**.
-- Change the **Auto assign per app passes** toggle under **Pass assignment**.
+- Elija la **aplicación**.
+- Seleccione **configuración**.
+- Cambie la opción de alternancia asignación **automática por aplicación** en la **asignación**de pasadas.
 
-The **Auto assign per app passes** toggle appears in all app setting.
+El comando de alternancia **asignación automática por aplicación** se muestra en la configuración de todas las aplicaciones.
 
 > [!NOTE]
-> Disabling the per app plan is currently available for only canvas apps.  Model-driven apps and Portals will have this ability in the future.
+> La deshabilitación del plan por aplicación está actualmente disponible solo para las aplicaciones de canvas.  Las aplicaciones controladas por modelos y los portales tendrán esta capacidad en el futuro.
 >
-> The ability to control per app plan assignment for an app is only available for apps that are in an environment that had Per app plans allocated in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).  
+> La capacidad de controlar la asignación por plan de aplicación para una aplicación solo está disponible para las aplicaciones que se encuentran en un entorno que tiene planes por aplicación asignados en el centro de administración de la [plataforma de energía](https://admin.powerplatform.microsoft.com).  
 
-### <a name="app-settings"></a>App Settings
+### <a name="app-settings"></a>Configuración de la aplicación
 
-![Canvas app settings](./media/limits-and-config/app_settings.png "Canvas app settings")
+![Configuración de la aplicación Canvas](./media/limits-and-config/app_settings.png "Configuración de la aplicación Canvas")
 
-### <a name="pass-assignment"></a>Pass assignment
+### <a name="pass-assignment"></a>Asignación de paso
 
-![Canvas app settings pass assignment](./media/limits-and-config/app_settings_pass_assignment.png "Canvas app settings pass assignment")
+![Asignación de paso de configuración de aplicación de Canvas](./media/limits-and-config/app_settings_pass_assignment.png "Asignación de paso de configuración de aplicación de Canvas")
