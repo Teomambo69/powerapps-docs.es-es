@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
+ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649795"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74550581"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Control de editor de texto enriquecido en PowerApps
 Permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG.  El formato de salida es HTML.
@@ -50,6 +50,8 @@ Para usar el control dentro de un formulario, seleccione la tarjeta "Editar text
 **[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
 
 **[DisplayMode](properties-core.md)** : indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+
+**EnableSpellCheck** : indica si está habilitado el corrector ortográfico del explorador. Tenga en cuenta que esta funcionalidad solo proporcionará la revisión ortográfica en el idioma predeterminado del explorador.  Power apps para Windows no admite esta propiedad.
 
 **[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
