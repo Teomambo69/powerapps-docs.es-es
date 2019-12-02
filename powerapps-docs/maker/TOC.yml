@@ -262,8 +262,6 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Información de las tarjetas
                   href: ./canvas-apps/working-with-cards.md
-                - name: Muestra de una imagen de tamaño completo
-                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Agregar una lista
               items:
                 - name: 'Adición de un cuadro de lista, una lista desplegable o botones de selección'
@@ -1534,6 +1532,8 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Seguridad de Common Data Service
       href: /power-platform/admin/wp-security
+    - name: Información general sobre los límites de API
+      href: ./common-data-service/api-limits-overview.md
     - name: Para desarrolladores
       href: ../developer/common-data-service/overview.md
 - name: Generador de IA
