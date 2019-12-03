@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74678244"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="notify-function-in-powerapps"></a>Función Notify en PowerApps
 Muestra un mensaje de pancarta al usuario.
@@ -48,7 +49,7 @@ Power apps también puede enviar notificaciones de envío mediante un mecanismo 
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message*, [ *NotificationType* ] )
+**Notify**( *Message*; [ *NotificationType* ] )
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
 * *NotificationType*: opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
@@ -71,7 +72,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    **Notify( "Hello, World", NotificationType.Error )**
+    **Notify( "Hello, World"; NotificationType.Error )**
 
 5. Haga clic o presione el botón.
 
@@ -81,7 +82,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World", NotificationType.Warning )**
+    **Notify( "Hello, World"; NotificationType.Warning )**
 
 5. Haga clic o presione el botón.
 
@@ -91,7 +92,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World", NotificationType.Success )**
+    **Notify( "Hello, World"; NotificationType.Success )**
 
 5. Haga clic o presione el botón.
 

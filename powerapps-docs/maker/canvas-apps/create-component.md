@@ -16,6 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74678704"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Crear un componente para las aplicaciones de Canvas
 
@@ -107,7 +108,7 @@ En este ejemplo, creará un componente de menú que se parece a este gráfico y 
 
 1. Establezca la propiedad **elementos** del componente en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Table({Item:"SampleText"})
     ```
 
@@ -117,7 +118,7 @@ En este ejemplo, creará un componente de menú que se parece a este gráfico y 
 
 1. Asegúrese de que la lista de propiedades muestra la propiedad **Items** (como hace de forma predeterminada) y, a continuación, establezca el valor de esa propiedad en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent.Items
     ```
 
@@ -143,8 +144,8 @@ A continuación, agregará el componente a una pantalla y especificará una tabl
 
 1. Establezca la propiedad **Items** de **MenuComponent_1** en esta fórmula:
 
-    ```powerapps-dot
-    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
+    ```powerapps-comma
+    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
     ```
 
     Esta instancia se parece a este gráfico, pero puede personalizar el texto y otras propiedades de cada instancia.
@@ -163,7 +164,7 @@ Hasta ahora, ha creado un componente y lo ha agregado a una aplicación. A conti
 
 1. En la pestaña **Opciones avanzadas** , establezca el valor de la propiedad **seleccionada** en esta expresión, ajustando el número en el nombre de la Galería si es necesario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.Item
     ```
 
@@ -171,7 +172,7 @@ Hasta ahora, ha creado un componente y lo ha agregado a una aplicación. A conti
 
 1. En la pantalla predeterminada de la aplicación, agregue una etiqueta y establezca su propiedad **texto** en esta expresión, ajustando el número en el nombre del componente si es necesario:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent_1.Selected
     ```
 

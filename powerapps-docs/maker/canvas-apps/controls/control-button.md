@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679808"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -117,7 +118,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-**[Navegar( *NombrePantalla*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navegar( *NombrePantalla*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-a-basic-formula-to-a-button"></a>Agregar una fórmula básica a un botón
@@ -144,7 +145,7 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
 1. Establezca la propiedad **[TextoDeSugerencia](control-text-input.md)** de **Origen** en "Enter a number" (Escriba un número).
 2. Establezca la propiedad **[AlSeleccionar](properties-core.md)** de **Agregar** en esta fórmula:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Utilice el punto y coma " **;** " para separar varias fórmulas.

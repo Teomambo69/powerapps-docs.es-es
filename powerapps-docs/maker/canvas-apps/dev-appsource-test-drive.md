@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679578"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource
 
@@ -59,9 +60,9 @@ Los datos que importó son de tipo *estático*, por lo tanto, de solo lectura. S
 
 Si la aplicación es de lectura y escritura, primero extraiga los datos de cada tabla en una *colección*, que es una estructura de datos tabulares en Power apps. A continuación, trabaje con la colección en lugar de con la tabla. Para extraer datos de las tablas **SiteInspector** y **SitePhotos** en las colecciones **SiteInspectorCollect** y **SitePhotosCollect**:
 
-```powerapps-dot
-ClearCollect( SiteInspectorCollect, SiteInspector ); 
-ClearCollect( SitePhotosCollect, SitePhotos )
+```powerapps-comma
+ClearCollect( SiteInspectorCollect; SiteInspector );; 
+ClearCollect( SitePhotosCollect; SitePhotos )
 ```
 
 La fórmula borra ambas colecciones y, a continuación, recopila los datos de cada tabla en la colección adecuada:
@@ -77,12 +78,12 @@ Ha visto cómo leer datos directamente y desde una colección; ahora, vamos a mo
 
 **Para agregar una fila a una colección**, use [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-dot
-Collect( SiteInspectorCollect,
+```powerapps-comma
+Collect( SiteInspectorCollect;
     {
-        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
-        Title: TitleText.Text,
-        SubTitle: SubTitleText.Text,
+        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
+        Title: TitleText.Text;
+        SubTitle: SubTitleText.Text;
         Description: DescriptionText.Text
     }
 )
@@ -90,12 +91,12 @@ Collect( SiteInspectorCollect,
 
 **Para actualizar una fila de una colección**, use [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-dot
-UpdateIf( SiteInspectorCollect,
-    ID = record.ID,
+```powerapps-comma
+UpdateIf( SiteInspectorCollect;
+    ID = record.ID;
     {
-        Title: TitleEditText.Text,
-        SubTitle: SubTitleEditText.Text,
+        Title: TitleEditText.Text;
+        SubTitle: SubTitleEditText.Text;
         Description: DescriptionEditText.Text
     }
 )
@@ -103,8 +104,8 @@ UpdateIf( SiteInspectorCollect,
 
 **Para eliminar una fila de una colección**, use [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-dot
-RemoveIf( SiteInspectorCollect, ID = record.ID )
+```powerapps-comma
+RemoveIf( SiteInspectorCollect; ID = record.ID )
 ```
 
 > [!NOTE]

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74675015"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla People para aplicaciones de Canvas
 
@@ -94,19 +95,19 @@ La pantalla People almacena en caché las selecciones de los usuarios **en la co
 1. Establezca la propiedad **alseleccionar** del **icono** de en `Back()`.
 1. Establezca la propiedad **alseleccionar** de **SendIcon** en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Office365.SendEmail( 
-        Concat( MyPeople, UserPrincipalName & ";" ), 
-        SubjectLine.Text, 
+        Concat( MyPeople; UserPrincipalName & ";" ); 
+        SubjectLine.Text; 
         MessageBody.Text 
     )
     ```
     
-    Aquí está usando el conector de Outlook para enviar un correo electrónico. Se pasa `Concat(MyPeople, UserPrincipalName & ";")` como la lista de destinatarios. Esta fórmula concatena todas las direcciones de correo electrónico de la colección **People** en una sola cadena con puntos y comas separando. No es diferente de escribir una cadena de direcciones de correo electrónico separadas por punto y coma en la línea "para" de su cliente de correo electrónico favorito.
+    Aquí está usando el conector de Outlook para enviar un correo electrónico. Se pasa `Concat(MyPeople; UserPrincipalName & ";")` como la lista de destinatarios. Esta fórmula concatena todas las direcciones de correo electrónico de la colección **People** en una sola cadena con puntos y comas separando. No es diferente de escribir una cadena de direcciones de correo electrónico separadas por punto y coma en la línea "para" de su cliente de correo electrónico favorito.
     * Está pasando `SubjectLine.Text` como asunto del mensaje y `MessageBody.Text` como el cuerpo del mensaje.
 1. En la pantalla People, en la esquina superior derecha, inserte el icono **mail** .
    Cambie el color del icono a lo que le convenga.
-1. Establezca la propiedad **alseleccionar** de **SendIcon** en `Navigate( EmailScreen, None )`.
+1. Establezca la propiedad **alseleccionar** de **SendIcon** en `Navigate( EmailScreen; None )`.
 
     Ahora tiene una aplicación de dos pantallas en la que puede seleccionar usuarios, crear un mensaje de correo electrónico para ellos y, a continuación, enviarlo. No dude en probarlo, pero tenga cuidado, ya que la aplicación envía mensajes de correo electrónico a todos los usuarios que agregue a la colección de mis **personas** .
 

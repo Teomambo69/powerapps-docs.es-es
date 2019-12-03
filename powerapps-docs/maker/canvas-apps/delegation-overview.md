@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679601"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 Power Apps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo **[: funciones de filtrado,](functions/function-filter-lookup.md)** **[ordenación](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** por nombrar solo algunas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -93,10 +94,10 @@ Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)**
 
 Como en este ejemplo, los responsables suelen usar **AddColumns** y **Buscar** para combinar información de una tabla en otra, lo que se conoce comúnmente como una combinación en el lenguaje de la base de datos:
 
-```powerapps-dot
-AddColumns( Products, 
-    "Supplier Name", 
-    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-comma
+AddColumns( Products; 
+    "Supplier Name"; 
+    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679256"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
 
@@ -98,20 +99,20 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 
 1. Establezca la propiedad **[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text),
-            FlooringEstimates,
+            (IsBlank(TextSearchBox1.Text);
+            FlooringEstimates;
             Filter(
-                FlooringEstimates,
+                FlooringEstimates;
                 TextSearchBox1.Text in Text(Name)
             )
-        ),
-        Name,
+        );
+        Name;
         If(
-            SortDescending1,
-            SortOrder.Descending,
+            SortDescending1;
+            SortOrder.Descending;
             SortOrder.Ascending
         )
     )
@@ -130,16 +131,16 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 ## <a name="highlight-the-selected-item"></a>Resalte del elemento seleccionado
 Establezca la propiedad **rellenodeplantilla** del control de **Galería** en una fórmula similar a la de este ejemplo, pero puede especificar distintos colores si lo desea:
 
-**If(ThisItem.IsSelected, LightCyan, White)**
+**If(ThisItem.IsSelected; LightCyan; White)**
 
 ## <a name="change-the-default-selection"></a>Cambio de la elección predeterminada
 En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, puede especificar el quinto elemento en el origen de datos **FlooringEstimates** :
 
-**Last(FirstN(FlooringEstimates, 5))**
+**Last(FirstN(FlooringEstimates; 5))**
 
 En este ejemplo, especifique el primer elemento de la categoría **Hardwood** del origen de datos **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates, Category = "Hardwood"))**
+**First(Filter(FlooringEstimates; Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Aprenda a trabajar con [formularios](working-with-forms.md) y [fórmulas](working-with-formulas.md).

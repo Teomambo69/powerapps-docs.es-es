@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74674997"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Creación de una aplicación de lienzo para administrar proyectos
 > [!NOTE]
@@ -140,7 +141,7 @@ En este paso, se proporcionará una manera de navegar a las otras pantallas de l
     ![Botón Agregar](./media/sharepoint-scenario-build-app/04-03-05-button-default.png)
 2. En la barra de fórmulas, establezca las siguientes propiedades para el botón:
    
-   * Propiedad **AlSeleccionar** = **Navigate(AssignManager, Fade)** . Cuando ejecute la aplicación y haga clic en este botón, irá a la segunda pantalla de la aplicación, con una transición de fundido entre las pantallas.
+   * Propiedad **AlSeleccionar** = **Navigate(AssignManager; Fade)** . Cuando ejecute la aplicación y haga clic en este botón, irá a la segunda pantalla de la aplicación, con una transición de fundido entre las pantallas.
 
    * Propiedad **Texto** = **"Assign Manager"**
 
@@ -149,7 +150,7 @@ En este paso, se proporcionará una manera de navegar a las otras pantallas de l
     ![Actualizar texto del botón](./media/sharepoint-scenario-build-app/04-03-06-button-updated.png)
 4. Inserte otro botón con las siguientes propiedades:
    
-   * Propiedad **AlSeleccionar** = **Navigate(ViewProjects, Fade)** .
+   * Propiedad **AlSeleccionar** = **Navigate(ViewProjects; Fade)** .
 
    * Propiedad **Texto** = **"Update Details"**
      
@@ -207,7 +208,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
 
    * Propiedad **Alto** = **40**
 
-   * Propiedad **AlSeleccionar** = **Navigate(SelectTask, Fade)**
+   * Propiedad **AlSeleccionar** = **Navigate(SelectTask; Fade)**
 
    * Propiedad **Ancho** = **40**
      
@@ -233,7 +234,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
 
    * Propiedad **EstiloDelBorde** = **Punteado**
 
-   * Propiedad **Elementos** = **Filter('Project Details', PMAssigned="Unassigned")** . Solo se incluyen en la galería los proyectos que no tienen ningún administrador asignado.
+   * Propiedad **Elementos** = **Filter('Project Details'; PMAssigned="Unassigned")** . Solo se incluyen en la galería los proyectos que no tienen ningún administrador asignado.
      
      ![Galería con texto de lista](./media/sharepoint-scenario-build-app/04-04-06-gallery-updated.png)
 
@@ -291,7 +292,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
    
    * Propiedad **Alto** = **60**
 
-   * Propiedad **AlSeleccionar** = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})** . Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
+   * Propiedad **AlSeleccionar** = **Patch('Project Details'; LookUp('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text})** . Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
 
    * Esta fórmula actualiza la lista **Project Details** y establece un valor para el campo PMAssigned.
 
@@ -326,7 +327,7 @@ En este paso, se cambiarán las propiedades para la galería en la pantalla **Vi
 
 5. Seleccione el botón Actualizar ![Icono Actualizar](./media/sharepoint-scenario-build-app/icon-refresh.png) y establezca su propiedad **AlSeleccionar** en **Refresh('Project Details')** .
 
-6. Seleccione el botón Nuevo elemento ![Icono Agregar nuevo](./media/sharepoint-scenario-build-app/icon-add-item.png) y establezca su propiedad **AlSeleccionar** en **NewForm(EditForm1); Navigate(UpdateDetails, ScreenTransition.None)** .
+6. Seleccione el botón Nuevo elemento ![Icono Agregar nuevo](./media/sharepoint-scenario-build-app/icon-add-item.png) y establezca su propiedad **AlSeleccionar** en **NewForm(EditForm1);; Navigate(UpdateDetails; ScreenTransition.None)** .
 
 ### <a name="add-a-back-arrow-to-return-to-the-selecttask-screen"></a>Agregar una flecha Atrás para volver a la pantalla SelectTask
 
@@ -338,15 +339,15 @@ En este paso, se cambiarán las propiedades para la galería en la pantalla **Vi
    
     ![Botón Atrás](./media/sharepoint-scenario-build-app/04-05-04-left-arrow-v.png)
    
-    La acompañan todas sus propiedades, incluida la propiedad **AlSeleccionar** de **Navigate(SelectTask, Fade)** .
+    La acompañan todas sus propiedades, incluida la propiedad **AlSeleccionar** de **Navigate(SelectTask; Fade)** .
 
 ### <a name="change-the-data-source-for-the-browsegallery1-gallery"></a>Cambiar el origen de datos de la galería BrowseGallery1 (GaleríaExamen1)
 
-1. Seleccione la galería **BrowseGallery1** y establezca la propiedad **Elementos** de la galería en **SortByColumns(Filter('Project Details', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
+1. Seleccione la galería **BrowseGallery1** y establezca la propiedad **Elementos** de la galería en **SortByColumns(Filter('Project Details'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
    
     Esto establece el origen de datos de la galería en la lista **Project Details** y usa el campo **Título** para búsquedas y clasificación.
 
-2. Seleccione ![Icono de flecha de detalles](./media/sharepoint-scenario-build-app/icon-details-arrow.png) en el primer elemento de la galería y establezca la propiedad **AlSeleccionar** en **Navigate(UpdateDetails, None)** .
+2. Seleccione ![Icono de flecha de detalles](./media/sharepoint-scenario-build-app/icon-details-arrow.png) en el primer elemento de la galería y establezca la propiedad **AlSeleccionar** en **Navigate(UpdateDetails; None)** .
    
     ![ Galería View Projects; primer elemento seleccionado](./media/sharepoint-scenario-build-app/04-05-05b-gallery-arrow-v.png)
 
@@ -396,7 +397,7 @@ En este paso, se conectará el formulario de edición en la pantalla **UpdateDet
    * **ActualDays**
      
      ![Editar campos de formulario](./media/sharepoint-scenario-build-app/04-06-03-edit-fields.png)
-6. Seleccione el botón Cancelar ![Icono Cancelar](./media/sharepoint-scenario-build-app/icon-cancel.png) y establezca su propiedad **AlSeleccionar** en **ResetForm(EditForm1); Back()** .
+6. Seleccione el botón Cancelar ![Icono Cancelar](./media/sharepoint-scenario-build-app/icon-cancel.png) y establezca su propiedad **AlSeleccionar** en **ResetForm(EditForm1);; Back()** .
 
 7. Seleccione el botón Guardar ![Icono Guardar con marca de verificación](./media/sharepoint-scenario-build-app/icon-check-mark.png) y consulte la fórmula de **AlSeleccionar**: **SubmitForm(EditForm1)** . Como se va a usar el control de formulario de edición, se puede utilizar **Submit()** en lugar de **Patch()** , como antes.
 
@@ -496,7 +497,7 @@ Ahora que la aplicación está en este sitio de SharePoint, se va a asumir el ro
 ## <a name="formula-deep-dive"></a>Análisis en profundidad de una fórmula
 Esta es la segunda sección opcional de las fórmulas de Power apps. En la primera profundización, analizamos una de las fórmulas que genera Power apps para la galería de exploración en una aplicación de tres pantallas. En este análisis en profundidad, se examinará una fórmula que se usa para la pantalla **AssignManager** de nuestra segunda aplicación. Esta es la fórmula:
 
-**Revisión (' Project details ', LookUp (' Project details ', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1. Text})**
+**Revisión (' Project details '; LookUp (' Project details '; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1. Text})**
 
 ¿Qué hace esta fórmula? Cuando selecciona un elemento en la galería y hace clic en el botón **Aceptar**, la fórmula actualiza la lista **Project Details**, lo que establece la columna **PMAssigned** en el valor que especifique en la entrada de texto. La fórmula usa funciones para realizar su trabajo:
 

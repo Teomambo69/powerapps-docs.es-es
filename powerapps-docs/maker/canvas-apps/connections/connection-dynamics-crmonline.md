@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74678842"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Conexión a Dynamics 365 desde PowerApps
 Power apps le permite generar, personalizar, compartir y ejecutar rápidamente aplicaciones móviles con poco o ningún código. Mediante el conector de Dynamics 365, puede crear útiles aplicaciones móviles para compartir con su organización en tan solo unos minutos.
@@ -81,7 +82,7 @@ En este procedimiento, va a configurar **ExaminarPantalla1** para mostrar los no
     ![Seleccionar diseño](./media/connection-dynamics-crmonline/select-layout.png)
 4. Copie esta fórmula y, después, con la galería aún seleccionada, pegue la fórmula en la barra de fórmulas (a la derecha del botón **fx**):
    
-    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
+    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
 5. En el panel derecho, establezca la lista desplegable superior en **firstname** y la lista desplegable central en **lastname**.
    
     ![Seleccionar Cuerpo1](./media/connection-dynamics-crmonline/firstname-lastname.png)
