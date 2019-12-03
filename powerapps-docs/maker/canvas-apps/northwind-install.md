@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe1192adca08d1fbde82b4b49ded5f5ca6a409e0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d100ac7902aa1d50abfc148ab4bbaed9e442a4ae
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675791"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709854"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Instalar la base de datos y las aplicaciones de Northwind Traders
 
@@ -40,7 +40,7 @@ Este archivo de [solución](../../developer/common-data-service/introduction-sol
 
 ## <a name="install-the-solution"></a>Instalar la solución
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, asegúrese de que está trabajando en un entorno que contiene una base de datos Common Data Service.
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y asegúrese de que está trabajando en un entorno que contiene una base de datos Common Data Service.
 
 1. En el panel de navegación izquierdo, seleccione **soluciones**y, a continuación, seleccione **importar** en la barra de herramientas situada en la parte superior de la pantalla:
 

@@ -9,21 +9,21 @@ ms.custom: canvas
 ms.date: 07/18/2018
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a0430ab6b3baebf1a4144c52c63526745cd13928
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0af87fb6e8263878bd25ee740f7e852f68bfed47
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987798"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680728"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Información general sobre la creación de aplicaciones en PowerApps
 
-PowerApps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene cuatro componentes principales:
+Power Apps es una plataforma de desarrollo de gran productividad para aplicaciones de negocio y tiene cuatro componentes principales:
 
 - [Las aplicaciones de lienzo](canvas-apps/getting-started.md) comienzan con la experiencia del usuario, diseñando una interfaz muy personalizada con la potencia de un lienzo en blanco y conectándola a uno de los 200 orígenes de datos para elegir. Se pueden compilar aplicaciones de lienzo para aplicaciones web, móviles y de tableta.
 - [Las aplicaciones controladas por modelos](model-driven-apps/model-driven-app-overview.md) empiezan con el modelo de datos y se compilan a partir de la forma de los datos y procesos de negocio fundamentales en Common Data Service para crear formularios, vistas y otros componentes. Las aplicaciones controladas por modelos generan automáticamente una interfaz de usuario excelente con capacidad de respuesta en todos los dispositivos.
 - [Los portales](portals/overview.md) comienzan a crear sitios web orientados hacia el exterior que permiten a los usuarios ajenos a la organización iniciar sesión con una amplia variedad de identidades, crear y ver datos en Common Data Service, o incluso examinar contenido de forma anónima.
-- [Common Data Service](common-data-service/data-platform-intro.md) es la plataforma de datos que viene con PowerApps y que permite almacenar y modelar los datos de negocio. Es la plataforma en la que se compilan las aplicaciones de Dynamics 365; si es un cliente de Dynamics, los datos ya están en Common Data Service.
+- [Common Data Service](common-data-service/data-platform-intro.md) es la plataforma de datos que viene con Power Apps y que permite almacenar y modelar los datos de negocio. Es la plataforma en la que se compilan las aplicaciones de Dynamics 365; si es un cliente de Dynamics, los datos ya están en Common Data Service.
 
 Intentar la creación de la primera aplicación es fácil. Tenemos un plan de evaluación de 30 días y un plan de la comunidad gratuito; obtenga más información sobre cuál es mejor para usted y empiece a trabajar.
 
@@ -36,7 +36,7 @@ Se puede empezar a compilar la aplicación desde las herramientas de Microsoft d
 - [Desde una lista de SharePoint](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
 - [Desde un panel de Power BI](canvas-apps/embed-powerapps-powerbi.md)
 
-Crear una aplicación de lienzo es fácil; con PowerApps, se puede buscar o crear la aplicación de varias maneras:
+Crear una aplicación de lienzo es fácil; con Power Apps, se puede buscar o crear la aplicación de varias maneras:
 
 - [Desde datos](canvas-apps/app-from-sharepoint.md)
 - [Desde un ejemplo](canvas-apps/open-and-run-a-sample-app.md)
@@ -46,7 +46,7 @@ Crear una aplicación de lienzo es fácil; con PowerApps, se puede buscar o crea
 
 ## <a name="model-driven-apps"></a>Aplicaciones controladas por modelos
 
-Cuando se crea una aplicación controlada por modelos, se puede usar toda la potencia de Common Data Service para configurar rápidamente los formularios, las reglas de negocio y los flujos de proceso. Una aplicación controlada por modelos se crea desde el sitio de PowerApps.
+Cuando se crea una aplicación controlada por modelos, se puede usar toda la potencia de Common Data Service para configurar rápidamente los formularios, las reglas de negocio y los flujos de proceso. Una aplicación controlada por modelos se crea desde el sitio de Power Apps.
 
 La introducción a las aplicaciones controladas por modelos es sencilla y se puede empezar con estos temas:
 

@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/20/2019
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ebce627faebf5df32ce27990086fe914d2a3823b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4db4e62bb3813b605b1ff4cdf5c2b83d969a1d3a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675481"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709756"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Objetos visuales personalizados de Power apps para Power BI
 
@@ -29,9 +28,7 @@ Power BI permite obtener información sobre los datos y mejorar la toma de decis
 
 Echemos un vistazo a los pasos necesarios para usar el visual personalizado de Power Apps en el informe de Power BI.
 
-1. Obtenga el objeto visual personalizado desde [AppSource](https://appsource.microsoft.com/product/power-bi-visuals/WA104381378?tab=Overview) o impórtelo directamente en el servicio de Power BI.
-
-    ![Objeto visual personalizado en Marketplace](./media/powerapps-custom-visual/powerapps-store.png) 
+1. El objetos visuales personalizados de Power apps está disponible de forma predeterminada en el servicio Power BI. Si usa Power BI Desktop y no lo ve, debe actualizar a la versión más reciente de Power BI Desktop.
 
 2. Agregue el objeto visual de Power apps a su informe y establezca los campos de datos asociados a él.
 
@@ -43,7 +40,7 @@ Echemos un vistazo a los pasos necesarios para usar el visual personalizado de P
 
     ![Aplicación nueva o existente](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
-    Si decide usar una aplicación existente, el visual le pedirá que abra la aplicación en Power apps. Después, el objeto visual configura los componentes necesarios de la aplicación para que Power BI pueda enviar datos a PowerApps.
+    Si decide usar una aplicación existente, el visual le pedirá que abra la aplicación en Power apps. A continuación, el objeto visual configura los componentes necesarios en la aplicación para que Power BI pueda enviar datos a Power apps.
 
     Si crea una nueva aplicación, Power apps crea una aplicación sencilla con los componentes necesarios ya configurados.
 
@@ -53,7 +50,7 @@ Echemos un vistazo a los pasos necesarios para usar el visual personalizado de P
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de Power apps Studio que se inició comparten una conexión de datos activa. Mientras ambos están abiertos, puede filtrar o cambiar los datos del informe para ver los datos actualizados reflejados inmediatamente en la aplicación en Power apps Studio.
 
@@ -76,7 +73,7 @@ Las siguientes limitaciones se aplican al objetos visuales personalizados de Pow
 - Si se cambian los campos de datos asociados con el objeto visual, tendrá que modificar la aplicación desde dentro del servicio Power BI haciendo clic en el botón de puntos suspensivos (...) y seleccionando después **Editar**. De lo contrario, los cambios no se propagarán a Power apps y la aplicación se comportará de maneras inesperadas.
 - El objetos visuales personalizados de Power apps no puede desencadenar una actualización de Power BI informes y Power BI orígenes de datos desde Power BI Desktop. Si escribe datos de la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente en Power BI Desktop. Los cambios se reflejan en la siguiente actualización programada.
 - El objetos visuales personalizados de Power apps no puede filtrar los datos o devolver los datos al informe.
-- Tendrá que compartir la aplicación Power apps por separado del informe. Obtenga información sobre cómo [compartir aplicaciones en PowerApps](share-app.md).
+- Tendrá que compartir la aplicación Power apps por separado del informe. Más información sobre el [uso compartido de aplicaciones en Power apps](share-app.md).
 - Power BI Report Server y la aplicación móvil para Power BI no admiten el objetos visuales personalizados de Power apps.
 - Si usa la función PowerBIIntegration. Refresh (), debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) y la conexión de datos debe crearse mediante el método directquery.
 - Power Apps en Power BI Desktop proporciona datos a Power apps Studio al crear aplicaciones pero no durante la edición. Use Power BI web para obtener una vista previa de los datos mientras edita las aplicaciones.

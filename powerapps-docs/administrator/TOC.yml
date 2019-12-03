@@ -3,9 +3,9 @@
   items:
     - name: Introducción
       items:
-        - name: ¿Qué función desempeñan los administradores de PowerApps?
+        - name: ¿Qué función desempeñan los administradores de Power Apps?
           href: overview-role-powerapps-admin.md
-        - name: Notas del producto de la implementación de PowerApps Enterprise
+        - name: Notas del producto de la implementación de Power Apps Enterprise
           href: admin-powerapps-enterprise-deployment.md
     - name: Licencias
       items:
@@ -23,7 +23,7 @@
           href: admin-manage-apps.md
         - name: Mover una aplicación entre inquilinos o entornos
           href: environment-and-tenant-migration.md
-        - name: Compatibilidad con PowerShell para PowerApps (versión preliminar)
+        - name: Compatibilidad con PowerShell para Power Apps (versión preliminar)
           href: powerapps-powershell.md
         - name: Registro de actividad para PowerApps
           href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
@@ -39,7 +39,7 @@
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Integraciones de datos para Common Data Service
               href: data-integration-gdpr-dsr-guide.md
-            - name: Datos de cliente de PowerApps
+            - name: Datos de cliente de Power Apps
               href: powerapps-gdpr-dsr-guide.md
               items:
                 - name: Exportación de datos

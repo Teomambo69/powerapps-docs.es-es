@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6ee64ddb2ae2f2a9c114a70970843627b92efb1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674675"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709704"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]
@@ -160,7 +160,7 @@ Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la
 
 Con esto, ha llegado a la conclusión de este tutorial de principio a fin y de esta serie de tutoriales. Puede continuar su viaje en los siguientes sitios:
 
-* [PowerApps](https://www.powerapps.com/)
+* [Power apps](https://www.powerapps.com/)
 * [Automatización de la energía](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Comunidad de usuarios avanzados](https://powerusers.microsoft.com/)

@@ -1,6 +1,6 @@
 - name: Introducción
   items:
-    - name: ¿Qué es PowerApps?
+    - name: ¿Qué es Power Apps?
       href: ../powerapps-overview.md
     - name: Registrarse para obtener una versión de evaluación de 30 días
       href: signup-for-powerapps.md
@@ -118,7 +118,7 @@
   items:
     - name: Información general
       href: index.md
-    - name: Inicio de sesión en PowerApps
+    - name: Iniciar sesión en Power Apps
       href: ./canvas-apps/intro-maker-portal.md
 - name: Aplicaciones de lienzo
   items:
@@ -824,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: Transformación de Formularios de InfoPath a PowerApps
+        - name: Transformación de Formularios de InfoPath a Power Apps
           href: ./canvas-apps/transform-infopath.md
     - name: Para desarrolladores
       items:
@@ -1096,7 +1096,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 'Preguntas más frecuentes: Transición a la interfaz unificada'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: Accesibilidad en el diseñador de aplicaciones de PowerApps
+    - name: Accesibilidad en el diseñador de aplicaciones de Power Apps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Personalizar Dynamics 365 App for Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,7 +1104,7 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: ¿Qué son los portales de PowerApps?
+    - name: ¿Qué son los portales de Power Apps?
       href: ./portals/overview.md
     - name: Diseño y compilación de un portal
       items:
@@ -1116,7 +1116,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: Aprovisionamiento de un portal mediante el complemento de portal anterior
           href: ./portals/provision-portal-add-on.md
-        - name: Anatomía del estudio de los portales de PowerApps
+        - name: Anatomía del estudio de los portales de Power Apps
           href: ./portals/portal-designer-anatomy.md
         - name: Exploradores web compatibles con el diseñador de portales
           href: ./portals/supported-browser.md
@@ -1162,7 +1162,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: Configuración de la restricción de direcciones IP
           href: ./portals/admin/ip-address-restrict.md
-        - name: Actualización al dominio de portales de PowerApps
+        - name: Actualización al dominio de portales de Power Apps
           href: ./portals/admin/update-portal-domain.md
         - name: Borrar la memoria caché del lado servidor
           href: ./portals/admin/clear-server-side-cache.md
@@ -1288,7 +1288,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: Etiquetas de plantilla
                   href: ./portals/liquid/template-tags.md
-                - name: Etiquetas de entidad de PowerApps Common Data Service
+                - name: Etiquetas de entidad de Common Data Service
                   href: ./portals/liquid/portals-entity-tags.md
             - name: Filtros de Liquid disponibles
               href: ./portals/liquid/liquid-filters.md
@@ -1336,7 +1336,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: Problemas conocidos
       href: ./portals/known-issues.md
-    - name: Preguntas más frecuentes sobre los portales de PowerApps
+    - name: Preguntas más frecuentes sobre los portales de Power Apps
       href: ./portals/faq.md
 - name: Common Data Service
   items:
@@ -1362,13 +1362,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: Proveedor de datos de entidad virtual OData v4
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: Definir claves alternativas mediante el portal de PowerApps
+        - name: Definición de claves alternativas mediante el portal de Power Apps
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: Definir claves alternativas mediante el Explorador de soluciones
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: 'Guías de procedimientos: Entidad'
           items:
-            - name: Cómo crear entidades mediante el portal de PowerApps
+            - name: Creación de entidades mediante el portal de Power Apps
               href: ./common-data-service/create-edit-entities-portal.md
             - name: Cómo crear entidades mediante el Explorador de soluciones
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1407,7 +1407,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: Crear relaciones de entidades de uno a varios mediante el Explorador de soluciones
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: Crear relaciones de entidades de uno a varios mediante el portal de PowerApps
+        - name: Creación de relaciones de entidades de uno a varios mediante el portal de Power Apps
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: Establecer propiedades administradas para relaciones de entidades
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1419,9 +1419,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: 'Guías de procedimientos: Relaciones'
           items:
-            - name: Cómo crear relaciones de varios a varios mediante el portal de PowerApps
+            - name: Creación de relaciones de varios a varios mediante el portal de Power Apps
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: Cómo crear relaciones de varios a varios mediante el Explorador de soluciones de PowerApps
+            - name: Creación de relaciones de varios a varios mediante el explorador de soluciones de Power Apps
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: Cómo establecer propiedades administradas para relaciones
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1450,11 +1450,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: Cómo administrar campos
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: Cómo crear campos mediante el portal de PowerApps
+            - name: Creación de campos mediante el portal de Power Apps
               href: ./common-data-service/create-edit-field-portal.md
-            - name: Cómo crear campos mediante el Explorador de soluciones de PowerApps
+            - name: Creación de campos mediante el explorador de soluciones de Power Apps
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: Cómo crear un conjunto de opciones mediante el portal de PowerApps
+            - name: Creación de un conjunto de opciones mediante el portal de Power Apps
               href: ./common-data-service/custom-picklists.md
             - name: Cómo crear un conjunto de opciones global mediante el Explorador de soluciones
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1538,7 +1538,7 @@
       href: ../developer/common-data-service/overview.md
 - name: Generador de IA
   items:
-    - name: Uso del generador de IA en PowerApps
+    - name: Uso de AI Builder en Power Apps
       href: ../use-ai-builder.md
 - name: Aprender de otros
   items:
@@ -1556,7 +1556,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Obtener un id. de aplicación o de sesión
       href: ./canvas-apps/get-sessionid.md
-    - name: Solución de problemas de inicio de PowerApps
+    - name: Solución de problemas de inicio de Power Apps
       href: troubleshooting-startup-issues.md
     - name: Solucionar problemas de Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
