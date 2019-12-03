@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2e61a312aa3824c24b7058da4b34aa9c5cf462c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321533"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679203"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Agregar imágenes en Excel desde PowerApps
 Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o eliminar imágenes de archivos o dibujos desde un control de **entrada manuscrita**. La aplicación necesita un archivo de Excel que debe crearse y cargarse en una cuenta de almacenamiento en la nube.
@@ -27,7 +27,7 @@ Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o e
 
 * Es necesario tener conocimientos acerca de cómo [agregar y configurar controles](add-configure-controls.md).
 * Es necesario tener conocimientos acerca de cómo [configurar los datos de Excel como tabla](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US).
-* [PowerApps debe tener conexión ](add-data-connection.md) con una cuenta de almacenamiento en la nube (como Dropbox, OneDrive o Google Drive) en la que se pueda guardar un archivo de Excel.
+* Una [conexión de Power apps](add-data-connection.md) a una cuenta de almacenamiento en la nube (por ejemplo, Dropbox, OneDrive o Google Drive) en la que puede almacenar un archivo de Excel.
 
 ## <a name="create-the-data-source-and-the-app"></a>Crear el origen de datos y la aplicación
 1. En Excel, escriba **Caption** e **Image [image]** en dos celdas contiguas (por ejemplo, A1 y B1) que estén justo encima de dos celdas vacías.
@@ -35,7 +35,7 @@ Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o e
    
     ![Crear una tabla](./media/add-images-to-excel/create-table.png)
 3. Guarde el archivo (por ejemplo, como **ImageDemo**) y cárguelo en la cuenta de almacenamiento en la nube.
-4. En PowerApps, en el menú **Archivo**, pulse o haga clic en **Nuevo** (si aún no ha abierto la aplicación, encontrará esta opción en el lado izquierdo) y, en el icono de la cuenta de almacenamiento en la nube, pulse o haga clic en **Diseño de teléfono**.
+4. En Power Apps, haga clic o pulse en **nuevo** en el menú **archivo** (en el borde izquierdo si aún no ha abierto una aplicación) y, a continuación, haga clic o pulse en **diseño de teléfono** en el icono de la cuenta de almacenamiento en la nube.
    
     ![Seleccione la cuenta de almacenamiento en la nube](./media/add-images-to-excel/select-account.png)
 5. En **Elegir un archivo de Excel**, pulse o haga clic en el archivo que creó.

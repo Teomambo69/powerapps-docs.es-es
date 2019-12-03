@@ -10,23 +10,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05ac3d3705fc56b5714d6cb704d2d3cc3dc87124
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161293"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680084"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Revisar una aplicación de lienzo para mejorar la accesibilidad en PowerApps
 
-Los usuarios con discapacidades visuales, auditivas o de otro tipo pueden usar la aplicación de lienzo con más facilidad y correctamente si tiene en cuenta la accesibilidad al diseñar el aspecto y el comportamiento de la aplicación. Si no tiene claro cómo hacer que su aplicación sea más accesible, puede ejecutar el Comprobador de accesibilidad en PowerApps Studio. Esta herramienta no solo busca posibles problemas de accesibilidad, sino que también explica por qué cada uno de ellos podría ser un posible problema para los usuarios que tienen discapacidades específicas y ofrece sugerencias sobre cómo resolver cada problema.
+Los usuarios con discapacidades visuales, auditivas o de otro tipo pueden usar la aplicación de lienzo con más facilidad y correctamente si tiene en cuenta la accesibilidad al diseñar el aspecto y el comportamiento de la aplicación. Si no está seguro de cómo hacer que la aplicación sea más accesible, puede ejecutar el comprobador de accesibilidad en Power apps Studio. Esta herramienta no solo busca posibles problemas de accesibilidad, sino que también explica por qué cada uno de ellos podría ser un posible problema para los usuarios que tienen discapacidades específicas y ofrece sugerencias sobre cómo resolver cada problema.
 El Comprobador de accesibilidad detecta problemas de lector de pantalla y teclado y puede encontrar información sobre cómo solucionar los problemas de contraste de color usando [Colores accesibles](accessible-apps-color.md).
 
 El Comprobador de accesibilidad le ayuda a identificar la configuración que puede querer cambiar, pero siempre debe tener en cuenta las sugerencias en el contexto de lo que debe hacer la aplicación. Muchas sugerencias pueden merecer la pena, pero puede omitir cualquiera que pueda ser más dañina que beneficiosa.
 
 ## <a name="find-accessibility-issues"></a>Buscar problemas de accesibilidad
 
-1. En la esquina superior derecha de PowerApps Studio, seleccione el icono para el Comprobador de aplicaciones.
+1. En la esquina superior derecha de Power apps Studio, seleccione el icono del comprobador de aplicaciones.
 
     ![Icono de Comprobador de aplicaciones](./media/accessibility-checker/app-checker-icon.png)
 
@@ -66,7 +66,7 @@ El Comprobador de accesibilidad clasifica cada problema como un error, una adver
 | **No se muestra el foco**                | Error    | Cuando la propiedad **FocusBorderThickness** de un control se establece en 0. Es recomendable para garantizar una proporción de contraste de color adecuada entre el borde del foco y el propio control para que sea claramente visible. | Cambie la propiedad **FocusedBorderThickness** a un valor mayor que 0.  | Si el foco no está visible, los usuarios que no usen un mouse no podrán verlo cuando interactúen con la aplicación.   |
 | **Faltan descripciones**                   | Advertencia  | Cuando la propiedad **ClosedCaptionsURL** de un control **Audio** o **Vídeo** está vacía. | Establezca la propiedad **ClosedCaptionsURL** para agregar la dirección URL para las descripciones. | Sin descripciones, es posible que las personas con discapacidades no puedan comprender la información de un segmento de vídeo o audio. |
 | **Faltan valores de configuración de control útiles**   | Advertencia  | Cuando cualquiera de varios valores (por ejemplo, mostrar las etiquetas y los marcadores para los gráficos, así como los controles predeterminados para los controles **Audio**, **Vídeo** y **Entrada manuscrita**) están desactivados. | Seleccione la advertencia y después establezca la propiedad en **true**. | Al cambiar la configuración de esta propiedad, ofrecerá más información al usuario sobre cómo funcionan los controles de su aplicación. |
-| **El archivo HTML no será accesible**           | Advertencia  | Cuando un control que no es un control de texto HTML contiene HTML. En ese caso, PowerApps no admite la accesibilidad de los elementos HTML personalizados. | Use otro método en lugar del archivo HTML o quite el archivo HTML de este elemento. | La aplicación no funcionará correctamente ni será accesible si coloca elementos HTML interactivos. |
+| **El archivo HTML no será accesible**           | Advertencia  | Cuando un control que no es un control de texto HTML contiene HTML. En ese caso, Power apps no admite la accesibilidad de los elementos HTML personalizados. | Use otro método en lugar del archivo HTML o quite el archivo HTML de este elemento. | La aplicación no funcionará correctamente ni será accesible si coloca elementos HTML interactivos. |
 | **Desactive el inicio automático**                 | Advertencia  | Cuando la propiedad **Autostart** de un control **Audio** o **Vídeo** está establecida en **true**. | Establezca la propiedad **Autostart** del control en **false**. | Los archivos de vídeo y audio que se reproducen automáticamente pueden distraer a los usuarios. Permítales elegir si quieren reproducir un clip. |
 | **Revise el nombre de la pantalla**                 | Sugerencia      | Cuando una pantalla tiene un nombre predeterminado, que leerán los lectores de pantalla cuando el usuario navega por la aplicación. | Asigne un nombre a la pantalla que describa lo que aparece en ella o su uso.| Las personas que son ciegas, que tienen deficiencia visual o discapacidad de lectura dependen de los nombres en pantalla para navegar mediante el lector de pantalla. |
 | **Agregue texto de indicación del estado**          | Sugerencia      |  Cuando un control tiene un estado, por ejemplo, un interruptor, pero las etiquetas de valor están desactivadas. | Establezca la propiedad **ShowValue** del control en **true** para mostrar su estado actual. | Los usuarios no obtendrán confirmación de sus acciones si el estado del control no se muestra. |

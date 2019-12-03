@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541135"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678819"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 * Recopile la siguiente información para una base de datos que contenga al menos una tabla con una clave principal:
   
   * el nombre de la base de datos
@@ -42,7 +42,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
   > Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](../working-with-environments.md) del usuario.
 
 ## <a name="generate-an-app-automatically"></a>Generar una aplicación automáticamente
-1. En PowerApps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo** (en el borde izquierdo).
+1. En Power apps Studio, haga clic o pulse en **nuevo** en el menú **archivo** (a lo largo del borde izquierdo).
    
     ![Opción Nuevo en el menú Archivo](./media/connection-azure-sqldatabase/file-new.png)
 2. En **Comenzar con los datos**, pulse o haga clic en la flecha derecha al final de la fila de conectores.
@@ -64,7 +64,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 6. Pulse o haga clic en **Conectar**.
 7. Pulse o haga clic en una opción en **Elegir un conjunto de datos**, pulse o haga clic en una opción en **Elegir una tabla** y, después, pulse o haga clic en **Conectar**.
    
-    PowerApps crea una aplicación que muestra los datos en tres pantallas. La heurística sugiere el tipo de datos que se van a mostrar, pero tendrá que personalizar la interfaz de usuario para adecuarla a sus necesidades.
+    Power apps crea una aplicación que muestra datos en tres pantallas. La heurística sugiere el tipo de datos que se van a mostrar, pero tendrá que personalizar la interfaz de usuario para adecuarla a sus necesidades.
 8. Personalice la aplicación mediante el uso de técnicas que son similares a las que se describe en [Create an app from Excel](../get-started-create-from-data.md) (Creación de una aplicación de Excel), a partir de cambiar el diseño de la aplicación.
 
 ## <a name="build-an-app-from-scratch"></a>Crear una aplicación desde cero
@@ -88,7 +88,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 6. Cree una aplicación mediante técnicas que son similares a las que describen en [Crear una aplicación desde cero](../get-started-create-from-blank.md).
 
 ## <a name="update-an-existing-app"></a>Actualizar una aplicación existente
-1. En PowerApps Studio, abra la aplicación que desea actualizar.
+1. En Power apps Studio, abra la aplicación que quiere actualizar.
 2. Pulse o haga clic en **Orígenes de datos** en la pestaña **Vista** de la cinta de opciones.
 3. En el panel de la derecha, pulse o haga clic en **Agregar origen de datos**.
    

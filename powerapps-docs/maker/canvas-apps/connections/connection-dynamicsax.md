@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: daf6c3f0c067822b590535b9807af3bc0d96ec16
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6027589bc1cb5ae5a7e23ce2969e303d62151b96
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993979"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679877"
 ---
-# <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Conexión de Microsoft PowerApps a Dynamics AX
+# <a name="connect-from-microsoft-power-apps-to-dynamics-ax"></a>Conexión desde Microsoft Power apps a Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
 
 Utilice esta conexión para crear fácilmente aplicaciones que leen, actualizan y eliminan datos desde estas versiones de Dynamics AX:

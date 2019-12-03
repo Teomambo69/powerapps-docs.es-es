@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46b5cb0761027c7e39ac95619974d2c0187225a2
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 349365c84e9d59ea2edf3c61077e468ba16ab27e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649645"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679647"
 ---
 # <a name="timer-control-in-powerapps"></a>Control Temporizador en PowerApps
 Control que determina la forma en que la aplicación responde una vez transcurrido un tiempo determinado.
@@ -28,7 +27,7 @@ Control que determina la forma en que la aplicación responde una vez transcurri
 Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparecer o cambian otras propiedades de un control una vez transcurrido un tiempo determinado.
 
 > [!NOTE]
-> En PowerApps Studio, los temporizadores solo se ejecutan en el modo de vista previa.
+> En Power apps Studio, los temporizadores solo se ejecutan en el modo de vista previa.
 
 
 ## <a name="key-properties"></a>Propiedades principales
@@ -126,7 +125,7 @@ Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparec
 2. Establezca la propiedad **Duration** en **10000** y sus propiedades **Repetir** e **IniciarAutomáticamente** en **true**.
 3. (opcional) Configure la propiedad **[Altura](properties-size-location.md)** en **160**, su propiedad **[Altura](properties-size-location.md)** en **600** y su propiedad **[Size](properties-text.md)** en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     ¿Desea más información sobre la función **[RedondearMas](../functions/function-round.md)** u [otras funciones](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ Los temporizadores, por ejemplo, determinan el tiempo que un control va a aparec
 2. Establezca la propiedad **Duration** del temporizador en **5000**, su propiedad **Repeat** en **true** y su propiedad **[Text](properties-core.md)** en **Toggle animation**.
 3. (opcional) Configure la propiedad **[Altura](properties-size-location.md)** en **160**, su propiedad **[Altura](properties-size-location.md)** en **600** y su propiedad **[Size](properties-text.md)** en **60** para facilitar la lectura del temporizador.
 4. Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** para que muestre el mensaje **Welcome!** y establezca su propiedad **[Color](properties-color-border.md)** con esta fórmula:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     ¿Desea más información sobre la función **[ColorFade](../functions/function-colors.md)** u [otras funciones](../formula-reference.md)?
 

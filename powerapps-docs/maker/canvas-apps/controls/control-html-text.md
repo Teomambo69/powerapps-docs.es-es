@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d514342bc51cdd6aa737da1b893530d702127bd1
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650491"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678612"
 ---
 # <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
@@ -76,7 +75,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Buscar**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Buscar**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Etiqueta](control-text-box.md)** , llámelo **Source** y establezca su propiedad **[Texto](properties-core.md)** en esta cadena:
@@ -103,4 +102,4 @@ Debe haber un contraste de color adecuado entre:
 * La propiedad **HtmlText** debe existir.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
-* La propiedad **HtmlText** no debe contener elementos interactivos, como `<button>`, `<a>` o `<input>`. El sistema de **[TabIndex](properties-accessibility.md)** en PowerApps no tiene en cuenta los elementos dentro de **HtmlText**.
+* La propiedad **HtmlText** no debe contener elementos interactivos, como `<button>`, `<a>` o `<input>`. El sistema **[TabIndex](properties-accessibility.md)** de Power apps no tiene en cuenta los elementos dentro de **HtmlText**.

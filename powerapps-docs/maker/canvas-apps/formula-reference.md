@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992928"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678474"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
@@ -207,7 +207,7 @@ Otros elementos incluyen:
 
 **[Ln](functions/function-numericals.md)** : devuelve el logaritmo natural.
 
-**[LoadData](functions/function-savedata-loaddata.md)** : carga una colección del almacenamiento privado de PowerApps.
+**[LoadData](functions/function-savedata-loaddata.md)** : carga una colección desde el almacenamiento privado de Power apps.
 
 **[Location](functions/signals.md)** : devuelve la ubicación como una coordinada de mapa mediante el sistema de posicionamiento global (GPS) y otra información.
 
@@ -294,8 +294,8 @@ Otros elementos incluyen:
 
 **[RoundUp](functions/function-round.md)** : redondea hacia arriba al siguiente número más pequeño.
 
-## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** : guarda una colección en el almacenamiento privado de PowerApps.
+## <a name="s"></a>Pequeña
+**[Savedata](functions/function-savedata-loaddata.md)** : guarda una colección en el almacenamiento privado de Power apps.
 
 **[Search](functions/function-filter-lookup.md)** : busca registros en una tabla que contengan una cadena en una de sus columnas.  
 

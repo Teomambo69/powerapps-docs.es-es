@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741513"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675815"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Creación de una galería de pedidos en una aplicación de lienzo
 
@@ -49,10 +48,10 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
     > [!div class="mx-imgBorder"]
     > ![aplicación de lienzo del cuadro de diálogo en blanco](media/northwind-orders-canvas-part1/start-02.png)
 
-    PowerApps Studio se abre para que pueda agregar orígenes de datos y controles a la aplicación:
+    Power apps Studio se abre para que pueda agregar orígenes de datos y controles a la aplicación:
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
+    > ](media/northwind-orders-canvas-part1/start-03.png) de ![Power apps Studio
 
 ## <a name="add-the-data"></a>Agregar los datos
 
@@ -78,7 +77,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
     Cada campo tiene un **nombre para mostrar** y un **nombre**, que a veces se denomina nombre lógico. Ambos nombres hacen referencia a lo mismo. En general, usará el nombre para mostrar al compilar una aplicación, pero algunos casos requieren el **nombre**más críptico, como se indica en un procedimiento.
 
-1. Como vamos a trabajar con pantallas y controles a continuación, en PowerApps Studio vuelva a la **vista de árbol** en el lado izquierdo presionando el icono de tres cuadrados apilados. Puede volver a los **orígenes de datos** en cualquier momento presionando el icono del cilindro.
+1. Como vamos a trabajar con pantallas y controles siguientes, en Power apps Studio vuelva a la vista de **árbol** en el lado izquierdo presionando el icono de tres cuadrados apilados. Puede volver a los **orígenes de datos** en cualquier momento presionando el icono del cilindro.
 
 ## <a name="create-the-order-gallery"></a>Crear la galería de pedidos
 
@@ -95,8 +94,8 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. Podríamos conectarlo directamente a los **pedidos** , pero en su lugar nos gustaría controlar el criterio de ordenación de la galería.  Omita el cuadro de diálogo volar hacia fuera y, en la barra de fórmulas, establezca la propiedad **elementos** de la galería en esta fórmula:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     La función [**Sort**](functions/function-sort.md) ordena la lista para que aparezca en primer lugar el orden más reciente (que tiene el número de pedido más alto).
@@ -130,7 +129,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -146,7 +145,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
@@ -190,7 +189,7 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
@@ -204,7 +203,7 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
     Cada opción de un conjunto tiene un nombre que aparece si se muestra en una etiqueta. Estos nombres se pueden localizar y la aplicación reconoce la misma opción si un usuario en inglés selecciona **Apple**, un usuario en francés selecciona **pomme**o un usuario en Español selecciona **manzana**. Por esta razón, no se puede crear una fórmula que se base en una cadena codificada de forma rígida para una opción, como se muestra en este tema más adelante.
 
-    En las fórmulas, debe poner el estado de la **orden** entre comillas simples porque contiene un espacio. Sin embargo, ese nombre funciona de la misma forma que cualquier otro nombre de PowerApps, como **cliente** o **empresa**.
+    En las fórmulas, debe poner el estado de la **orden** entre comillas simples porque contiene un espacio. Sin embargo, ese nombre funciona de la misma forma que cualquier otro nombre de Power Apps, como **cliente** o **empresa**.
 
 1. En la pestaña **Inicio** , aumente el tamaño de fuente de la etiqueta estado a 20 puntos y alinee a la derecha el texto:
 
@@ -213,19 +212,19 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. En la barra de fórmulas, establezca la propiedad **color** de la etiqueta estado en esta fórmula:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
     > [!div class="mx-imgBorder"]
     > ![establecer la propiedad color de la etiqueta de estado](media/northwind-orders-canvas-part1/status-08.png)
 
-    PowerApps evita que cree una fórmula que se base en una cadena codificada de forma rígida para cada opción de un conjunto, ya que dichas fórmulas podrían producir resultados inadecuados si los nombres de las opciones están localizados. En su lugar, la función **Switch** determina el color en función de la cadena que aparece en la etiqueta en función de la configuración del usuario.
+    Power apps evita que cree una fórmula que se base en una cadena codificada de forma rígida para cada opción de un conjunto, ya que dichas fórmulas podrían producir resultados inadecuados si los nombres de las opciones están localizados. En su lugar, la función **Switch** determina el color en función de la cadena que aparece en la etiqueta en función de la configuración del usuario.
 
     Con esta fórmula en su lugar, los distintos valores de estado aparecen en colores diferentes, como se muestra en el gráfico anterior.
 
@@ -248,8 +247,8 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. En la barra de fórmulas, establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -259,7 +258,7 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
     Esta fórmula muestra un subrayado azul y una [Advertencia de delegación](delegation-overview.md) porque Common Data Service no admite la delegación de funciones de agregado complejas (por ejemplo, la suma de una multiplicación). Puede omitir esta información porque ningún orden en este ejemplo contendrá más de 500 elementos de línea. Si es necesario para una aplicación diferente, puede aumentar ese límite en la configuración de la **aplicación**.
 
-    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma para Inglés de EE. UU. (**[$-en-US]**) y un símbolo de dólar (**$**). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
+    La función de [**texto**](functions/function-text.md) de esta fórmula agrega un símbolo de divisa y da formato al resultado con separadores de miles y decimales. Tal como se ha escrito, la fórmula incluye la etiqueta de idioma para Inglés de EE. UU. ( **[$-en-US]** ) y un símbolo de dólar ( **$** ). Si quita la etiqueta de idioma, se reemplazará por una en función de la configuración de idioma y la etiqueta mostrará los formatos adecuados para dicha etiqueta. Si deja el símbolo de dólar, la etiqueta mostrará el símbolo de moneda adecuado en función de la configuración del usuario. Sin embargo, puede forzar que aparezca un símbolo diferente si reemplaza el símbolo de dólar por el que prefiera.
 
 1. En la pestaña **Inicio** , cambie el tamaño de fuente de la etiqueta más reciente a 20 puntos y alinee a la derecha su texto:
 
@@ -280,8 +279,8 @@ Para recapitular, comenzó a compilar una aplicación de lienzo de pantalla úni
 - Una expresión para mostrar el número de pedido: `"Orders " & ThisItem.OrderNumber`
 - Campo de una relación de varios a uno: `ThisItem.Customer.Company`
 - Etiqueta que muestra el nombre de una opción de un conjunto: `ThisItem.'Order Status'`
-- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Función de agregado compleja sobre una relación de uno a varios: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Función de agregado compleja sobre una relación de uno a varios: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Siguiente tema
 

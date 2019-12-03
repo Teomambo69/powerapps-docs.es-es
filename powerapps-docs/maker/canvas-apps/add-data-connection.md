@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540962"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679279"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Agregar una conexión de datos a una aplicación de lienzo en PowerApps
 
-En PowerApps, agregue una conexión de datos a una aplicación de lienzo existente o a una que se cree desde cero. La aplicación puede conectarse a SharePoint, Common Data Service, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
+En Power Apps, agregue una conexión de datos a una aplicación de lienzo existente o a una aplicación que vaya a crear desde cero. La aplicación puede conectarse a SharePoint, Common Data Service, Salesforce, OneDrive o [muchos otros orígenes de datos](connections-list.md).
 
 Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar la información del origen de datos de la aplicación, como en estos ejemplos:
 
@@ -33,7 +33,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+[Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 
@@ -41,7 +41,7 @@ Tras este artículo, el [próximo paso](#next-steps) será mostrar y administrar
 
 1. Especifique un nombre para la aplicación y, a continuación, seleccione **crear**.
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
+1. Si aparece el cuadro de diálogo **Bienvenido a Power apps Studio** , seleccione **omitir**.
 
 ## <a name="add-data-source"></a>Agregar origen de datos
 

@@ -1,6 +1,6 @@
 ---
 title: Crear un gráfico en una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, muestre categorías de datos como gráficos de líneas, gráficos circulares o gráficos de barras en una aplicación de lienzo.
+description: En Power Apps, Mostrar categorías de datos como gráficos de líneas, gráficos circulares o gráficos de barras en una aplicación de lienzo
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541692"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674411"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
 
@@ -32,11 +31,11 @@ Por ejemplo, los datos deben tener un aspecto similar al siguiente:
 
 ![][9]
 
-Puede crear y usar estos gráficos en PowerApps. Empecemos.
+Puede crear y usar estos gráficos en Power apps. Empecemos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 * Cree una aplicación a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 * Descargue [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip), que contiene datos de ejemplo como un archivo XML. Siga los pasos descritos en este tema para importarlo directamente desde su aplicación. Como alternativa, descomprima el archivo .zip, abra el archivo XML en Excel y guárdelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
@@ -50,7 +49,7 @@ En estos pasos importaremos los datos de ejemplo en una colección, denominada *
 
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** del control en la función siguiente:  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Presione F5 para abrir el modo de vista previa y seleccione el botón **Importar datos**.
 

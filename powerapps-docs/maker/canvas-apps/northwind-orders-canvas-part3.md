@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 7e29674e689ff77599bb49c58e7b0edbc028b6be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741314"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675960"
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Creación de una galería de detalles en una aplicación de lienzo
 
@@ -48,7 +47,7 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 1. Quite el texto de la copia de cualquiera de estas maneras:
 
     - Haga doble clic en el texto para seleccionarlo y, a continuación, presione SUPR.
-    - Establezca la propiedad **Text** de la etiqueta en una cadena vacía (**""**).
+    - Establezca la propiedad **Text** de la etiqueta en una cadena vacía ( **""** ).
 
     > [!div class="mx-imgBorder"]
     > ![quitar el texto de la copia de la barra de título](media/northwind-orders-canvas-part3/details-02.png)
@@ -72,7 +71,7 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **elementos** de la galería de detalles en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
@@ -104,7 +103,7 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
@@ -142,7 +141,7 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **imagen** de la imagen en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
@@ -162,7 +161,7 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Quantity
     ```
 
@@ -180,11 +179,11 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    Si no incluye la etiqueta de idioma (**[$-en-US]**), se agregará automáticamente en función de su idioma y región. Si usa una etiqueta de idioma diferente, querrá quitar el **$** justo después del corchete de cierre (**]**) y, a continuación, agregar su propio símbolo de moneda en esa posición.
+    Si no incluye la etiqueta de idioma ( **[$-en-US]** ), se agregará automáticamente en función de su idioma y región. Si usa una etiqueta de idioma diferente, querrá quitar el **$** justo después del corchete de cierre ( **]** ) y, a continuación, agregar su propio símbolo de moneda en esa posición.
 
     > [!div class="mx-imgBorder"]
     > ![Mostrar precio por unidad](media/northwind-orders-canvas-part3/details-15.png)
@@ -198,11 +197,11 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    De nuevo, si no incluye la etiqueta de idioma (**[$-en-US]**), se agregará automáticamente en función de su idioma y región. Si la etiqueta es diferente, querrá usar su propio símbolo de moneda en lugar del **$** justo después del corchete de cierre (**]**).
+    De nuevo, si no incluye la etiqueta de idioma ( **[$-en-US]** ), se agregará automáticamente en función de su idioma y región. Si la etiqueta es diferente, querrá usar su propio símbolo de moneda en lugar del **$** justo después del corchete de cierre ( **]** ).
 
     > [!div class="mx-imgBorder"]
     > ![Mostrar](media/northwind-orders-canvas-part3/details-17.png) de precios extendidos
@@ -274,8 +273,8 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Sum( Gallery1.Selected.'Order Details'; Quantity )
+    ```powerapps-dot
+    Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
     Esta fórmula muestra una advertencia de delegación, pero puede ignorarla porque ningún pedido individual contendrá más de 500 productos.
@@ -289,8 +288,8 @@ Antes de empezar este tema, debe instalar la base de datos como se describió an
 
 1. Establezca la propiedad **Text** de la copia en esta fórmula:
 
-    ```powerapps-comma
-    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     Esta fórmula muestra una advertencia de delegación, pero puede ignorarla porque ningún pedido individual contendrá más de 500 productos.
@@ -323,7 +322,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 ## <a name="select-a-product"></a>Seleccionar un producto
 
-1. En la pestaña **Insertar** , seleccione **controles**  > **cuadro combinado**:
+1. En la pestaña **Insertar** , seleccione **controles** > **cuadro combinado**:
 
     > [!div class="mx-imgBorder"]
     > ![cuadro combinado insertar](media/northwind-orders-canvas-part3/add-details-08.png)
@@ -335,7 +334,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
     > [!div class="mx-imgBorder"]
     > ![establecer la propiedad elementos del cuadro combinado](media/northwind-orders-canvas-part3/add-details-09.png)
 
-1. En la pestaña **propiedades** del cuadro combinado, seleccione **Editar** (junto a **campos**) para abrir el panel **datos** .  Asegúrese de que el **texto principal** y **SearchField** están establecidos en **nwind_productname**.
+1. En la pestaña **propiedades** del cuadro combinado, seleccione **Editar** (junto a **campos**) para abrir el panel **datos** .  Asegúrese de que el texto y los **SearchField** **principales** están establecidos en **nwind_productname**.
 
     Especifique el nombre lógico porque en este caso el panel **datos** no admite nombres para mostrar:
 
@@ -359,7 +358,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 1. Mientras mantiene presionada la tecla Alt, seleccione la flecha hacia abajo del cuadro combinado.
 
     > [!TIP]
-    > Si mantiene presionada la tecla Alt, puede interactuar con los controles en PowerApps Studio sin abrir el modo de vista previa.
+    > Si mantiene presionada la tecla Alt, puede interactuar con los controles de Power apps Studio sin abrir el modo de vista previa.
 
 1. En la lista de productos que aparece, seleccione un producto:
 
@@ -368,7 +367,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 ## <a name="add-a-product-image"></a>Agregar una imagen de producto
 
-1. En la pestaña **Insertar** , seleccione **media**  > **imagen**:
+1. En la pestaña **Insertar** , seleccione **media** > **imagen**:
 
     > [!div class="mx-imgBorder"]
     > ![insertar](media/northwind-orders-canvas-part3/add-details-15.png) de control de imagen
@@ -382,7 +381,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 1. Establezca la propiedad **imagen** de la imagen en:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ComboBox1.Selected.Picture
     ```
 
@@ -393,7 +392,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 ## <a name="add-a-quantity-box"></a>Agregar un cuadro de cantidad
 
-1. En la pestaña **Insertar** , seleccione **texto**  > **entrada de texto**:
+1. En la pestaña **Insertar** , seleccione **texto** > **entrada de texto**:
 
     > [!div class="mx-imgBorder"]
     > ![agregar el cuadro de entrada de texto](media/northwind-orders-canvas-part3/add-details-18.png)
@@ -410,7 +409,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
     Mediante este cuadro de entrada de texto, el usuario especificará el campo **cantidad** del registro de **detalles del pedido** .
 
-1. Establezca la propiedad **default** de este control en **""**:
+1. Establezca la propiedad **default** de este control en **""** :
 
     > [!div class="mx-imgBorder"]
     > ![establecer la propiedad * * default * * del cuadro de entrada de texto](media/northwind-orders-canvas-part3/add-details-21.png)
@@ -431,8 +430,8 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 1. Cambie el tamaño y mueva la etiqueta a la derecha del control de entrada de texto y establezca la propiedad **texto** de la etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -452,8 +451,8 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-comma
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -470,7 +469,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 ## <a name="add-an-add-icon"></a>Agregar un icono Agregar
 
-1. En la pestaña **Insertar** , seleccione **iconos**  > **Agregar**:
+1. En la pestaña **Insertar** , seleccione **iconos** > **Agregar**:
 
     > [!div class="mx-imgBorder"]
     > ![insertar icono Agregar](media/northwind-orders-canvas-part3/add-details-29.png)
@@ -482,18 +481,18 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 1. Cambie el tamaño y mueva este icono al borde derecho del área de color azul claro y, a continuación, establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    ```powerapps-comma
-    Patch( 'Order Details';
-        Defaults('Order Details');
+    ```powerapps-dot
+    Patch( 'Order Details',
+        Defaults('Order Details'),
         {
-            Order: Gallery1.Selected;
-            Product: ComboBox1.Selected;
-            Quantity: Value(TextInput1.Text);
+            Order: Gallery1.Selected,
+            Product: ComboBox1.Selected,
+            Quantity: Value(TextInput1.Text),
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );;
-    Refresh( Orders );;
-    Reset( ComboBox1 );;
+    );
+    Refresh( Orders );
+    Reset( ComboBox1 );
     Reset( TextInput1 )
     ```
 
@@ -534,7 +533,7 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
     > [!div class="mx-imgBorder"]
     > ![seleccione la plantilla de la Galería](media/northwind-orders-canvas-part3/remove-details-01.png)
 
-1. En la pestaña **Insertar** , seleccione **iconos**  > **Trash**:
+1. En la pestaña **Insertar** , seleccione **iconos** > **Trash**:
 
     > [!div class="mx-imgBorder"]
     > ![icono insertar papelera](media/northwind-orders-canvas-part3/remove-details-02.png)
@@ -546,8 +545,8 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 1. Cambie el tamaño y mueva el icono de la papelera a la parte derecha de la plantilla de la galería de detalles y establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    ```powerapps-comma
-    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
+    ```powerapps-dot
+    Remove( 'Order Details', ThisItem ); Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -568,11 +567,11 @@ En cualquier galería puede mostrar datos, pero no puede actualizarlos ni agrega
 
 En Resumen, ha agregado otra galería para mostrar los detalles del pedido y controla la adición y eliminación de los detalles de un pedido en la aplicación. Ha usado estos elementos:
 
-- Un segundo control de galería, vinculado a la galería de pedidos, a través de una relación de uno a varios: **Gallery2. items**  =  `Gallery1.Selected.'Order Details'`
+- Un segundo control de galería, vinculado a la galería de pedidos, a través de una relación de uno a varios: **Gallery2. items** = `Gallery1.Selected.'Order Details'`
 - Una relación de varios a uno desde la entidad **Order Details** hasta la entidad **Order products** : `ThisItem.Product.'Product Name'` y `ThisItem.Product.Picture`
 - La función de **Opciones** para obtener una lista de productos: `Choices( 'Order Details'.Product' )`
 - La propiedad **seleccionada** de un cuadro combinado como el registro relacionado de varios a uno completo: `ComboBox1.Selected.Picture` y `ComboBox1.Selected.'List Price'`
-- La función **patch** para crear un registro **Order Details** : `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
-- La función **Remove** para eliminar un registro de **detalles de pedido** : `Remove( 'Order Details'; ThisItem )`
+- La función **patch** para crear un registro **Order Details** : `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- La función **Remove** para eliminar un registro de **detalles de pedido** : `Remove( 'Order Details', ThisItem )`
 
 Esta serie de temas ha sido un tutorial rápido sobre el uso de Common Data Service relaciones y conjuntos de opciones en una aplicación de lienzo con fines educativos. Antes de publicar cualquier aplicación en producción, debe considerar la validación de campos, el control de errores y muchos otros factores.

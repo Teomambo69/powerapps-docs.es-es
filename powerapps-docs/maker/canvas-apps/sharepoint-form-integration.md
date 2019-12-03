@@ -13,16 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1ee3d00bab865bf63dc06181a9430fd0a9a6674
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988381"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674852"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
-Ahora puede [personalizar cualquier formulario de lista de SharePoint](customize-list-form.md) de manera fácil en PowerApps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
+Ahora puede personalizar fácilmente [cualquier formulario de lista de SharePoint](customize-list-form.md) en Power apps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
 
 Si ha personalizado un formulario de una lista de SharePoint, es probable que haya observado que el formulario generado predeterminado funciona con todas las operaciones, como crear, mostrar o editar un elemento. Esta funcionamiento se logra con la ayuda de las fórmulas generadas y del control **SharePointIntegration**.
 
@@ -36,13 +35,13 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
     * **Origen de datos**: la lista para la que se ha personalizado el formulario.
 
-    * **Elemento**: el elemento seleccionado de la lista. Para su comodidad, este se establece en el elemento First() de la lista al trabajar en PowerApps Studio.
+    * **Elemento**: el elemento seleccionado de la lista. Esto se establece en el primer elemento () de la lista para mayor comodidad al trabajar en Power apps Studio.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*YourListName*');SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
     * **OnSuccess**: una vez que el elemento se crea o se guarda correctamente, el formulario se restablece y SharePoint oculta el formulario.
 
-        **ResetForm(SharePointForm1);; RequestHide()**
+        **ResetForm(SharePointForm1); RequestHide()**
 
 * **SharePointIntegration**: el control responsable de la comunicación de las acciones de los usuarios entre SharePoint y PowerApps.
 
@@ -70,7 +69,7 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
         **ResetForm(SharePointForm1)**
 
-Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta en SharePoint (lo que hacen es cambiar el modo del formulario de PowerApps cuando el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint).
+Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta en SharePoint; cambian el modo de formulario de Power apps a medida que el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Descripción del control SharePointIntegration
 El control **SharePointIntegration** comunica las acciones de los usuarios entre SharePoint y PowerApps.
@@ -78,7 +77,7 @@ El control **SharePointIntegration** comunica las acciones de los usuarios entre
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->Solo puede acceder a las propiedades del control **SharePointIntegration** cuando el formulario se ejecuta en SharePoint, es decir, no al personalizarlo en PowerApps Studio. Es posible que estas propiedades no estén disponibles en **OnStart** u **OnVisible**. 
+>Solo se puede tener acceso a las propiedades del control **SharePointIntegration** cuando el formulario se ejecuta en SharePoint, no cuando se personaliza el formulario en Power apps Studio. Es posible que estas propiedades no estén disponibles en **OnStart** u **OnVisible**. 
 
 El control **SharePointIntegration** tiene las siguientes propiedades:
 

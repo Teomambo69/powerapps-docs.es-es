@@ -13,24 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50b5af342769b2153edbf91a7b5b28e3600f81b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8477ecce3ebd1953807cd348ca4080118c03991d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988241"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673162"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Comprender las tablas y los registros de aplicaciones de lienzo en PowerApps
 
-En PowerApps, puede crear una aplicación de lienzo que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes diferentes que almacenan datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
+En Power Apps, puede crear una aplicación de lienzo que tenga acceso a información en Microsoft Excel, SharePoint, SQL Server y otros orígenes que almacenen datos en registros y tablas. Para trabajar de forma más eficaz con este tipo de datos, revise los conceptos que subyacen a estas estructuras.
 
 * Un registro contiene una o varias categorías de información sobre una persona, un lugar o una cosa. Por ejemplo, un registro puede contener el nombre, la dirección de correo electrónico y el número de teléfono de un solo cliente. Otras herramientas hacen referencia a un registro como una "fila" o un "elemento".
 * Una tabla contiene uno o varios registros que incluyen las mismas categorías de información. Por ejemplo, una tabla puede contener los nombres, las direcciones de correo electrónico y los números de teléfono de 50 clientes.
 
 En la aplicación, usará [fórmulas](working-with-formulas.md) para crear, actualizar y manipular registros y tablas. Probablemente podrá leer y escribir datos en un [origen de datos](working-with-data-sources.md) externo, que es una tabla extendida. Además, puede crear una o varias tablas internas, que se denominan [colecciones](working-with-data-sources.md#collections).
 
-Puede crear una variedad de fórmulas que usan el nombre de una tabla como argumento, al igual que las fórmulas de Excel consideran una o varias referencias de celda como argumentos. Algunas fórmulas de PowerApps devuelven una tabla que refleja el resto de los argumentos que se especifiquen. Por ejemplo, podría crear una fórmula:
+Puede crear una variedad de fórmulas que usan el nombre de una tabla como argumento, al igual que las fórmulas de Excel consideran una o varias referencias de celda como argumentos. Algunas fórmulas de Power apps devuelven una tabla que refleja los demás argumentos que especifique. Por ejemplo, podría crear una fórmula:
 
 * para actualizar un registro en una tabla mediante la especificación de esa tabla como uno de varios argumentos para la función **[Revisión](functions/function-patch.md)** ,
 * para agregar, quitar y cambiar el nombre de las columnas de una tabla mediante la especificación de esa tabla como un argumento para la función **[AgregarColumnas](functions/function-table-shaping.md)** , **[EliminarColumnas](functions/function-table-shaping.md)** o **[CambiarNombreColumnas](functions/function-table-shaping.md)** . Ninguna de esas funciones modifica la tabla original. En su lugar, la función devuelve otra tabla basada en el resto de los argumentos que se especifiquen.
@@ -41,7 +40,7 @@ Puede crear una variedad de fórmulas que usan el nombre de una tabla como argum
 ### <a name="records"></a>Registros
 Cada registro contiene al menos una categoría de información sobre una persona, un lugar o una cosa. El ejemplo anterior muestra un registro para cada producto (**Chocolate**, **Pan** y **Agua**) y una columna para cada categoría de información (**Precio**, **Cantidad disponible** y **Cantidad en pedido**).
 
-En una fórmula, puede hacer referencia a un registro por sí mismo, fuera del contexto de una tabla, mediante el uso de llaves. Por ejemplo, este registro **{nombre: "Fresas"; precio: 7;99}** no está asociado a una tabla. Tenga en cuenta que los nombres de los campos, como **Nombre** y **Precio** en ese ejemplo, no están dentro de comillas dobles.
+En una fórmula, puede hacer referencia a un registro por sí mismo, fuera del contexto de una tabla, mediante el uso de llaves. Por ejemplo, este registro **{ Nombre: "Fresas", Precio: 7,99 }** no está asociado a una tabla. Tenga en cuenta que los nombres de los campos, como **Nombre** y **Precio** en ese ejemplo, no están dentro de comillas dobles.
 
 ### <a name="fields"></a>Campos
 Un campo es un elemento individual de información de un registro. Puede visualizar este tipo de campo como un valor de una columna para un registro concreto.
@@ -65,30 +64,30 @@ Todos los valores de una columna son del mismo tipo de datos. En el ejemplo ante
 Es posible que en otras herramientas haya hecho referencia a las columnas con el término "campos".
 
 > [!NOTE]
-> En los orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, PowerApps los sustituirá por **"\_x0020\_"** . Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+> En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint o Excel aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
-### <a name="table"></a>Tabla
+### <a name="table"></a>Table
 Una tabla consta de uno o varios registros, cada uno con varios campos que tienen nombres coherentes entre los registros.
 
 Cualquier tabla almacenada en un origen de datos o en un colección tiene un nombre, que se usa para hacer referencia a la tabla y para pasarlo a funciones que consideran las tablas como argumentos.  Las tablas también pueden resultar de una función o de una fórmula.
 
 Como en el ejemplo siguiente, puede expresar una tabla en una fórmula mediante la utilización de la función **[Tabla](functions/function-table.md)** con un conjunto de registros, que se expresa entre llaves:
 
-`Table( { Value: "Strawberry" }; { Value: "Vanilla" } )`
+`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
 También puede definir una tabla de una sola columna entre corchetes.  Una manera equivalente de escribir lo anterior:
 
-`[ "Strawberry"; "Vanilla" ]`
+`[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>Fórmulas de tabla
-En Excel y PowerApps, las fórmulas se usan para manipular números y cadenas de texto de formas similares:
+En Excel y Power Apps, se usan fórmulas para manipular números y cadenas de texto de maneras similares:
 
 * En Excel, escriba un valor, como **42**, en la celda **A1** y después escriba una fórmula, como **A1+2**, en otra celda para mostrar el valor de **44**.
-* En PowerApps, establezca la propiedad **[Valor predeterminado](controls/properties-core.md)** de **Slider1** en **42**, y defina la propiedad **[Texto](controls/properties-core.md)** de una etiqueta en **Slider1.Value + 2** para mostrar el valor de **44**.
+* En Power Apps, establezca la propiedad **[default](controls/properties-core.md)** de **Slider1** en **42**y establezca la propiedad **[Text](controls/properties-core.md)** de una etiqueta en **Slider1. Value + 2** para mostrar el valor de **44**.
 
 En ambos casos, el valor calculado cambia automáticamente si modifica los valores de los argumentos (por ejemplo, el número de la celda **A1** o el valor de **Slider1**).
 
-Del mismo modo, puede usar fórmulas para acceder a datos de tablas y registros y manipularlos. Puede usar nombres de tablas como argumentos en algunas fórmulas, como **Min(Catálogo; Precio)** , para mostrar el valor mínimo en la columna **Precio** de la tabla **Catálogo**. Otras fórmulas proporcionan tablas completas como valores devueltos, como **CambiarNombreColumnas(Catálogo; "Precio"; "Coste")** , que devuelve todos los registros de la tabla **Catálogo**, pero cambia el nombre de la columna **Precio** a **Coste**.
+Del mismo modo, puede usar fórmulas para acceder a datos de tablas y registros y manipularlos. Puede usar nombres de tablas como argumentos en algunas fórmulas, como **Min(Catálogo, Precio)** , para mostrar el valor mínimo en la columna **Precio** de la tabla **Catálogo**. Otras fórmulas proporcionan tablas completas como valores devueltos, como **CambiarNombreColumnas(Catálogo, "Precio", "Coste")** , que devuelve todos los registros de la tabla **Catálogo**, pero cambia el nombre de la columna **Precio** a **Coste**.
 
 Al igual que con los números, las fórmulas relacionadas con tablas y registros se recalculan automáticamente a medida que el registro o la tabla subyacentes cambian. Si el coste de un producto de la tabla **Catálogo** está muy por debajo del mínimo anterior, el valor devuelto de la fórmula **[Min](functions/function-aggregates.md)** cambiará automáticamente para establecer la coincidencia.
 
@@ -105,7 +104,7 @@ Se van a analizar algunos ejemplos sencillos.
 
 2. En lugar de establecer la propiedad **[Elementos](controls/properties-core.md)** con el nombre de la tabla, defina una fórmula que incluya el nombre de la tabla como un argumento, como en este ejemplo:
 
-    `Sort(CustomGallerySample; SampleHeading; Descending)`
+    `Sort(CustomGallerySample, SampleHeading, Descending)`
 
     Esta fórmula incorpora la función **[Ordenar](functions/function-sort.md)** , que considera el nombre de una tabla como su primer argumento y el nombre de una columna de dicha tabla como su segundo argumento. La función también admite un tercer argumento opcional, que estipula que desea ordenar los datos en orden descendente.
 
@@ -113,7 +112,7 @@ Se van a analizar algunos ejemplos sencillos.
 
 3. Defina la propiedad **[Elementos](controls/properties-core.md)** con una fórmula que considere la fórmula del paso anterior como un argumento y devuelve una tabla, como en este ejemplo:
 
-    `FirstN(Sort(CustomGallerySample; SampleHeading; Descending); 2)`
+    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     En esta fórmula, use la función **[FirstN](functions/function-first-last.md)** para mostrar un número concreto de registros de una tabla. Se usa la función **[Ordenar](functions/function-sort.md)** como el primer argumento de **[FirstN](functions/function-first-last.md)** y un número (en este caso, **2**) como el segundo argumento, que especifica la cantidad de registros que se van a mostrar.
 
@@ -123,9 +122,9 @@ Se van a analizar algunos ejemplos sencillos.
 
 ## <a name="table-functions-and-control-properties"></a>Funciones de tabla y propiedades de control
 
-Considere la función **Lower** . Si la **Página principal** contiene la cadena de **texto "Hello, World"** , la fórmula **Lower (Welcome)** devuelve **"Hello, World"** .  En cualquier caso, esta función no cambia el valor de esa variable. **Lower** es una función pura en la que solo procesa la entrada y genera resultados. Eso es todo; no tiene efectos secundarios. Todas las funciones de Excel y la mayoría de las funciones de PowerApps son funciones puras, que permiten que el libro o la aplicación se vuelvan a calcular automáticamente.
+Considere la función **Lower** . Si la **Página principal** contiene la cadena de **texto "Hello, World"** , la fórmula **Lower (Welcome)** devuelve **"Hello, World"** .  En cualquier caso, esta función no cambia el valor de esa variable. **Lower** es una función pura en la que solo procesa la entrada y genera resultados. Eso es todo; no tiene efectos secundarios. Todas las funciones de Excel y la mayoría de las funciones de Power apps son funciones puras, que permiten que el libro o la aplicación se vuelvan a calcular automáticamente.
 
-PowerApps ofrece un conjunto de funciones que operan en tablas de la misma manera. Estas funciones toman las tablas como entrada y filtran, ordenan, transforman, reducen y resumen todas las tablas de datos. De hecho, las funciones **inferiores** y muchas otras que normalmente toman un único valor también pueden tomar una tabla de una sola columna como entrada.
+Power Apps ofrece un conjunto de funciones que operan en tablas de la misma manera. Estas funciones toman las tablas como entrada y filtran, ordenan, transforman, reducen y resumen todas las tablas de datos. De hecho, las funciones **inferiores** y muchas otras que normalmente toman un único valor también pueden tomar una tabla de una sola columna como entrada.
 
 * **[Ordenar](functions/function-sort.md)** , **[Filtrar](functions/function-filter-lookup.md)** : ordena y filtra registros.
 * **[FirstN](functions/function-first-last.md)** , **[LastN](functions/function-first-last.md)** : devuelve los primeros o últimos registros N de la tabla.
@@ -162,7 +161,7 @@ Otras funciones están diseñadas específicamente para modificar datos y tienen
 También puede generar una fórmula que calcula los datos de un registro individual, considera un registro individual como un argumento y proporciona un registro individual como un valor devuelto. Al volver al ejemplo anterior de la galería, se usa la propiedad **Galería1.Seleccionada** para mostrar información de cualquier registro que el usuario selecciona en la galería.
 
 1. Agregue un [**botón**](controls/control-button.md)y establezca su propiedad **[alseleccionar](controls/properties-core.md)** en esta fórmula:<br>
-    **Recopilar( RegistroSeleccionado; Galería1.Seleccionada )**
+    **Recopilar( RegistroSeleccionado, Galería1.Seleccionada )**
 
 2. Mientras mantiene presionada la tecla Alt, seleccione el botón.
 
@@ -227,22 +226,22 @@ Por ejemplo, considere una tabla de **Productos**:
 
 ![](media/working-with-tables/requested.png)
 
-Para crear esta tabla de ejemplo en la aplicación, inserte un botón, establezca su propiedad **alseleccionar** en esta fórmula y, a continuación, seleccione el botón (haga clic en él mientras mantiene presionada la tecla Alt en PowerApps Studio):
+Para crear esta tabla de ejemplo en la aplicación, inserte un botón, establezca su propiedad **alseleccionar** en esta fórmula y, a continuación, seleccione el botón (haga clic en él mientras mantiene presionada la tecla Alt en Power apps Studio):
 
-```powerapps-comma
-Set( Products;
+```powerapps-dot
+Set( Products,
     Table(
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 };
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 }
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 }
     )
 )
 ```
 
 Para determinar si alguno de estos productos tenía más solicitado que el que está disponible:
 
-`Filter( Products; 'Quantity Requested' > 'Quantity Available' )`
+`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 El primer argumento para **Filtrar** es la tabla de registros en los que operar, y el segundo argumento es una fórmula.  **Filtrar** crea un ámbito de registro para evaluar esta fórmula en la que están disponibles los campos de cada registro; en este caso, **Producto**, **Cantidad en pedido** y **Cantidad disponible**.  El resultado de la comparación determina si cada registro debe incluirse en el resultado de la función:
 
@@ -250,10 +249,10 @@ El primer argumento para **Filtrar** es la tabla de registros en los que operar,
 
 Según este ejemplo, podemos calcular qué cantidad de cada producto solicitar:
 
-```powerapps-comma
+```powerapps-dot
 AddColumns( 
-    Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-    "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
+    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
 )
 ```
 
@@ -263,13 +262,13 @@ A continuación, se va a agregar una columna calculada al resultado. **AgregarCo
 
 Por último, podemos reducir la tabla de resultados a solo las columnas que queremos:
 
-```powerapps-comma
+```powerapps-dot
 ShowColumns(
     AddColumns(
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' );
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
-    );
-    "Product";
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    ),
+    "Product",
     "Quantity To Order"
 )
 ```
@@ -280,7 +279,7 @@ Tenga en cuenta que en la fórmula anterior, se han usado comillas dobles (") en
 
 ## <a name="disambiguation"></a>Anulación de ambigüedades
 
-Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [ **@** de anulación de ambigüedades](functions/operators.md):
+Los nombres de campo agregados con el ámbito de registro invalidan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [ **@** de anulación de ambigüedades](functions/operators.md):
 
 * Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_ **[@** _FieldName_ **]**
 * Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@** _ObjectName_ **]** (sin designación de tabla).
@@ -291,25 +290,25 @@ Por ejemplo, imagine que tiene una colección **X**:
 
 ![](media/working-with-tables/X.png)
 
-Puede crear esta colección con **BorrarColección( X; \[1; 2\] )** .
+Puede crear esta colección con **BorrarColección( X, \[1, 2\] )** .
 
 Y otra colección **Y**:
 
 ![](media/working-with-tables/Y.png)
 
-Puede crear esta colección con **BorrarColección( Y; ["A"; "B"] )** .
+Puede crear esta colección con **BorrarColección( Y, ["A", "B"] )** .
 
-Además, defina una variable de contexto denominada **Value** con esta fórmula: **UpdateContext ({valor: "!"})**
+Además, defina una variable de contexto denominada **Valor** con esta fórmula: **ActualizarContexto( {Valor: "!"} )**
 
 Se va a agrupar todo. En este contexto, la fórmula siguiente:
 
-```powerapps-comma
+```powerapps-dot
 Ungroup(
-    ForAll( X;
-        ForAll( Y;
+    ForAll( X,
+        ForAll( Y,
             Y[@Value] & Text( X[@Value] ) & [@Value]
         )
-    );
+    ),
     "Value"
 )
 ```
@@ -320,22 +319,22 @@ genera esta tabla:
 
 ¿Qué sucede aquí?  La función **ParaTodo** más externa define un ámbito de registro para **X**, que permite acceder al campo **Valor** de cada registro a medida que se procesa.  Puede acceder a él con tan solo usar la palabra **Valor** o **X[@Value]** .
 
-La función **ParaTodo** más interna define otro ámbito de registro para **Y**.  Puesto que esta tabla también tiene un campo **Valor** definido, el uso de **Valor** aquí hace referencia al campo del registro de **Y** y ya no hace referencia al de **X**.  Aquí, para acceder al campo **Valor** de **X**, es necesario usar la versión más larga con el operador de anulación de ambigüedades.
+La función **forall** más interna define otro ámbito de registro para **Y**.  Como esta tabla también tiene un campo de **valor** definido, el uso de **Value** aquí hace referencia al campo del registro **de y y ya no es el**de **X**.  Aquí, para tener acceso al campo de **valor** de **X**, debemos usar la versión más larga con el operador de anulación de ambigüedades.
 
 Puesto que **Y** es el ámbito de registro más interno, el acceso a los campos de esta tabla no precisa de la anulación de desambigüedades, lo que permite usar esta fórmula con el mismo resultado:
 
-```powerapps-comma
+```powerapps-dot
 Ungroup(
-    ForAll( X;
-        ForAll( Y;
+    ForAll( X,
+        ForAll( Y,
             Value & Text( X[@Value] ) & [@Value]
         )
-    );
+    ),
     "Value"
 )
 ```
 
-Todos los ámbitos de registro **ParaTodo** invalidan el ámbito global. La variable de contexto de **valor** que definimos no está disponible por el nombre sin el operador de desambiguación. Para tener acceso a este valor, use **[@Value]** .
+Todos los ámbitos de registro **ParaTodo** invalidan el ámbito global. La variable de contexto de **valor** que definimos no está disponible por el nombre sin el operador de desambiguación. Para obtener acceso a este valor, use **[@Value]** .
 
 **Ungroup** reduce el resultado porque las funciones de **forall** anidadas dan como resultado una tabla de resultados anidada.
 
@@ -343,8 +342,8 @@ Todos los ámbitos de registro **ParaTodo** invalidan el ámbito global. La vari
 
 Para operar en una sola columna de una tabla, use la función **mostrarcolumnas** como en este ejemplo:
 
-```powerapps-comma
-ShowColumns( Products; "Product" )
+```powerapps-dot
+ShowColumns( Products, "Product" )
 ```
 
 Esta fórmula genera esta tabla de una sola columna:
@@ -353,7 +352,7 @@ Esta fórmula genera esta tabla de una sola columna:
 
 Para una alternativa más corta, especifique *TABLE. Column*, que extrae la tabla de una sola columna de la *columna* solo de la *tabla*. Por ejemplo, esta fórmula produce exactamente el mismo resultado que el uso de **mostrarcolumnas**.
 
-```powerapps-comma
+```powerapps-dot
 Products.Product
 ```
 
@@ -361,15 +360,15 @@ Products.Product
 
 Exprese registros con el uso de llaves que contienen valores de campo con nombre.  Por ejemplo, puede expresar el primer registro en la tabla al inicio de este tema mediante la utilización de la fórmula:
 
-`{ Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 }`
+`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
 
 También puede insertar fórmulas dentro de otras, como se muestra en este ejemplo:
 
-`{ Name: First(Products).Name; Price: First(Products).Price * 1,095 }`
+`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
 
 Puede anidar registros mediante llaves de anidación, como se muestra en este ejemplo:
 
-`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand; 'OnOrder': ThisItem.QuantOnOrder } }`
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
 
 Encierre cada nombre de columna que contiene un carácter especial, como un espacio o dos puntos, entre comillas simples.  Para usar una comilla simple dentro de un nombre de columna, duplíquela.
 
@@ -378,21 +377,21 @@ Tenga en cuenta que el valor de la columna **Precio** no incluye ningún símbol
 ## <a name="inline-tables"></a>Tablas insertadas
 Puede crear una tabla mediante la utilización de la función **[Tabla](functions/function-table.md)** y un conjunto de registros. Puede expresar la tabla al inicio de este tema mediante la utilización de la fórmula:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 };
-    { Name: "Bread"; Price: 4,95; 'Quantity on Hand': 34; 'Quantity on Order': 0 };
-    { Name: "Water"; Price: 4,95; 'Quantity on Hand': 10; 'Quantity on Order': 0 } 
+    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
 )
 ```
 
 También puede anidar tablas:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; 
-      'Quantity History': Table( { Quarter: "Q1"; OnHand: 10; OnOrder: 10 };
-                                 { Quarter: "Q2"; OnHand: 18; OnOrder: 0 } ) 
+    { Name: "Chocolate", 
+      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
     }
 )
 ```
@@ -400,7 +399,7 @@ Table(
 ## <a name="inline-value-tables"></a>Tablas de valores insertados
 Puede crear tablas de una sola columna mediante la definición de valores entre corchetes. La tabla resultante tiene una sola columna, denominada **Valor**.
 
-Por ejemplo, `[ 1; 2; 3; 4 ]` es equivalente a `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` y devuelve esta tabla:
+Por ejemplo, `[ 1, 2, 3, 4 ]` es equivalente a `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` y devuelve esta tabla:
 
 ![](media/working-with-tables/inline-table.png)
 

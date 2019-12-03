@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 41536592493a2f17b187829fb778d2a6ca94134a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2da924310d07869972e8d0a9a4b26649d6a56b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540760"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679969"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Conectar al almacenamiento en la nube desde PowerApps
-PowerApps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
+Power Apps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
 
 | **Azure Blob** | **Box** | **Dropbox** | **Google Drive** | **OneDrive** | **OneDrive<br>para la Empresa** |
 | --- | --- | --- | --- | --- | --- |

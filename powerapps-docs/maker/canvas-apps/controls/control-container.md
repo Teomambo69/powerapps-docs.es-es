@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8456e82cfd2680fcbb722c8b4b2b5b32ef73dbde
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540277"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678658"
 ---
-# <a name="container-control-in-powerapps-experimental"></a>Control contenedor en PowerApps (experimental)
+# <a name="container-control-in-power-apps-experimental"></a>Control de contenedor en Power apps (experimental)
 Proporciona la capacidad de crear una jerarquía.
 
 > [!IMPORTANT]

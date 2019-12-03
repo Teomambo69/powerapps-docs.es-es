@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 61e14f5116be7dbcd44fec38b96e9546baa7cddf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541540"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675339"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -26,7 +26,7 @@ Siempre que guarde cambios en una aplicación de lienzo, se publican automática
 Para información sobre cómo compartir una aplicación, consulte [Compartir una aplicación](share-app.md).
 
 ## <a name="save-changes-to-an-app"></a>Guardar cambios en una aplicación
-En PowerApps Studio, pulse o haga clic en **Guardar** en el menú **Archivo** (en el borde izquierdo) y siga cualquiera de estos pasos:
+En Power apps Studio, pulse o haga clic en **Guardar** en el menú **archivo** (en el borde izquierdo) y, a continuación, siga uno de estos pasos:
 
 * Si no ha guardado la aplicación nunca, proporciónele un nombre y pulse o haga clic en **Guardar**.
 
@@ -35,12 +35,12 @@ En PowerApps Studio, pulse o haga clic en **Guardar** en el menú **Archivo** (e
 
     ![Guardar aplicación actualizada](./media/save-publish-app/save-app.png)
 
-PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. Si ha guardado la aplicación una vez, PowerApps volverá a guardar una versión de ella periódicamente sin que el usuario tenga que hacer clic o pulsar la acción Guardar. Los autores pueden habilitar o deshabilitar la opción **Guardado automático** de la pestaña **Cuenta** del menú **Archivo**.
+Power apps también puede guardar la aplicación periódicamente cada 2 minutos. Si ha guardado la aplicación una vez, Power apps seguirá guardando una versión de la aplicación periódicamente sin necesidad de que el usuario pulse o haga clic en la acción guardar. Los autores pueden habilitar o deshabilitar la opción **Guardado automático** de la pestaña **Cuenta** del menú **Archivo**.
 
 ![Opción Guardado automático](./media/save-publish-app/autosave.png)
 
 ## <a name="publish-an-app"></a>Publicar una aplicación
-1. En PowerApps Studio, pulse o haga clic en **Guardar** en el menú **Archivo** (en el borde izquierdo) y, después, en **Publicar esta versión**.
+1. En Power apps Studio, pulse o haga clic en **Guardar** en el menú **archivo** (en el borde izquierdo) y, después, pulse o haga clic en **publicar esta versión**.
 
     ![Publicar la aplicación](./media/save-publish-app/publish-app.png)
 2. En el cuadro de diálogo **Publicar**, pulse o haga clic en **Publicar esta versión** para publicar la aplicación para todos los usuarios con los que se comparte la aplicación.
@@ -48,7 +48,7 @@ PowerApps también puede guardar la aplicación periódicamente cada 2 minutos. 
    ![Revisar la publicación](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-   > Siempre que publique una aplicación de lienzo, esta se actualizará para ejecutarse en la versión más reciente de PowerApps, lo que significa que obtendrá las ventajas de todas las características más recientes y las actualizaciones de rendimiento que se han agregado desde que publicó por última vez. Si no ha publicado una actualización desde hace varios meses, probablemente verá una mejora de rendimiento inmediata al volver a publicar ahora.
+   > Siempre que publique una aplicación de lienzo, la aplicación se actualizará para que se ejecute en la versión más reciente de Power Apps, lo que significa que obtendrá la ventaja de las últimas características y actualizaciones de rendimiento que hemos agregado desde la última vez que publicó. Si no ha publicado una actualización desde hace varios meses, probablemente verá una mejora de rendimiento inmediata al volver a publicar ahora.
 
 ## <a name="identify-the-live-version"></a>Identificar la versión activa
 En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), pulse o haga clic en **Aplicaciones** en el menú **Archivo** (en el borde izquierdo), después en el icono de detalles para una aplicación y, por último, en la pestaña **Versiones**.

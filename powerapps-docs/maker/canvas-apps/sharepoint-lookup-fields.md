@@ -1,6 +1,6 @@
 ---
 title: Crear una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, cree una relación entre listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo.
+description: En Power Apps, cree una relación entre las listas de SharePoint mediante un campo de búsqueda en una aplicación de lienzo.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541406"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674840"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda en PowerApps
 
@@ -96,7 +96,7 @@ Esto se hace en primer lugar, para que cuando agregue datos a la lista **Assets*
 ## <a name="create-an-app-from-the-assets-list"></a>Crear una aplicación de la lista Assets
 Puede usar esta aplicación para agregar datos a la lista **Assets**.
 
-1. [Inicie sesión en PowerApps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si no está familiarizado con PowerApps, [regístrese gratuitamente](https://powerapps.microsoft.com) mediante la dirección de correo electrónico de la organización.
+1. [Inicie sesión en Power apps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si no está familiarizado con Power Apps, [Regístrese gratuitamente](https://powerapps.microsoft.com) con su dirección de correo electrónico de la organización.
 
 2. En el menú **Archivo** (en el borde izquierdo), pulse o haga clic en **Nuevo** y, luego, pulse o haga clic en **SharePoint**.
 

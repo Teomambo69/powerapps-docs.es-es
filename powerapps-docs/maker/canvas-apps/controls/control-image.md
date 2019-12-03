@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650452"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679762"
 ---
 # <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -112,7 +111,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Quitar**( *DataSource*; EsteElemento)](../functions/function-remove-removeif.md)
+[**Quitar**( *DataSource*, EsteElemento)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local
@@ -126,7 +125,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>Mostrar un conjunto de imágenes desde un origen de datos
 1. Descargue este [archivo de Excel](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)y guárdelo en el dispositivo local.
-2. En PowerApps Studio, cree o abra una aplicación y, a continuación, haga clic o pulse **Agregar origen de datos** en el panel derecho.
+2. En Power apps Studio, cree o abra una aplicación y, a continuación, haga clic o pulse en **Agregar origen de datos** en el panel derecho.
 
     Si **Agregar origen de datos** no aparece en el panel de la derecha, pulse o haga clic en la barra de navegación izquierda de una pantalla.
 3. Pulse o haga clic en **Agregar datos estáticos a la aplicación**, pulse o haga clic en el archivo de Excel que descargó y, a continuación en **Abrir**.

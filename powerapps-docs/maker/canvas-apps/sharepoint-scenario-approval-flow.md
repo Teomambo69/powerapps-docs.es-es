@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a94b32b21bdb2338adefdfc4c3cddc7648001087
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 457793686079a032d16d3e99960d1573e5edfbba
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900316"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674907"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Creación de un flujo para administrar aprobaciones de proyectos
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, vamos a crear un flujo que acciona el proceso de aprobación de proyectos. Power Automatic se integra con SharePoint, por lo que es fácil crear un flujo directamente desde una lista. El flujo que vamos a crear se desencadena cuando se agrega un elemento a la lista **Project Requests**. El flujo envía un correo electrónico al aprobador del proyecto, quien aprueba o rechaza la solicitud directamente en el correo electrónico. Después, el flujo envía un correo electrónico de aprobación o rechazo al solicitante del proyecto y actualiza nuestras listas de SharePoint en consecuencia.
 

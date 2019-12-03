@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eee82691b288f21749fe58adbf02ab5ffc3bd8b4
-ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
+ms.openlocfilehash: a655790f245df4870fbbb40693aa91800bcf4b23
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159855"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679785"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Crear diseños con capacidad de respuesta en aplicaciones de lienzo
 
-Antes de compilar una aplicación de lienzo en PowerApps, especifique si desea adaptar la aplicación para un teléfono o una tableta. Esta opción determina el tamaño y la forma del lienzo en el que compilará la aplicación.
+Antes de compilar una aplicación de lienzo en Power Apps, especifique si desea adaptar la aplicación para un teléfono o una tableta. Esta opción determina el tamaño y la forma del lienzo en el que compilará la aplicación.
 
-Una vez realizada esta opción, puede elegir entre varias opciones si selecciona **archivo** > **aplicación configuración** > **tamaño y orientación**. Puede elegir la orientación vertical u horizontal y el tamaño de la pantalla (solo tableta). También puede bloquear o desbloquear la relación de aspecto y la rotación de dispositivos de soporte (o no).
+Después de elegir esta opción, puede elegir entre varias opciones si selecciona **archivo** > configuración de la **aplicación** > **tamaño de pantalla + orientación**. Puede elegir la orientación vertical u horizontal y el tamaño de la pantalla (solo tableta). También puede bloquear o desbloquear la relación de aspecto y la rotación de dispositivos de soporte (o no).
 
 Estas opciones se superponen entre sí cuando se diseñan diseños de pantalla. Si la aplicación se ejecuta en un dispositivo de un tamaño diferente o en la web, todo el diseño se escala para ajustarse a la pantalla donde se ejecuta la aplicación. Si una aplicación diseñada para un teléfono se ejecuta en una ventana grande del explorador, por ejemplo, la aplicación se escala para compensar y buscar el tamaño de su espacio. La aplicación no puede aprovechar los píxeles adicionales mostrando más controles o más contenido.
 
@@ -43,11 +42,11 @@ Para que la aplicación responda, debe realizar pasos adicionales, pero este cam
 
 ## <a name="understand-app-and-screen-dimensions"></a>Descripción de las dimensiones de la aplicación y la pantalla
 
-Para que los diseños de la aplicación respondan a los cambios en las dimensiones de la pantalla, escribirá fórmulas que usen las propiedades **ancho** y **alto** de la pantalla. Para mostrar estas propiedades, abra una aplicación en PowerApps Studio y, a continuación, seleccione una pantalla. Las fórmulas predeterminadas para estas propiedades aparecen en la pestaña **avanzadas** del panel derecho.
+Para que los diseños de la aplicación respondan a los cambios en las dimensiones de la pantalla, escribirá fórmulas que usen las propiedades **ancho** y **alto** de la pantalla. Para mostrar estas propiedades, abra una aplicación en Power apps Studio y, a continuación, seleccione una pantalla. Las fórmulas predeterminadas para estas propiedades aparecen en la pestaña **avanzadas** del panel derecho.
 
-**Ancho** = `Max(App.Width; App.DesignWidth)`
+**Ancho** = `Max(App.Width, App.DesignWidth)`
 
-**Alto** = `Max(App.Height; App.DesignHeight)`
+**Altura** = `Max(App.Height, App.DesignHeight)`
 
 Estas fórmulas hacen referencia a las propiedades **width**, **height**, **DesignWidth**y **DesignHeight** de la aplicación. Las propiedades de **ancho** y **alto** de la aplicación se corresponden con las dimensiones de la ventana del dispositivo o del explorador en el que se ejecuta la aplicación. Si el usuario cambia el tamaño de la ventana del explorador (o gira el dispositivo si ha desactivado la **orientación del bloqueo**), los valores de estas propiedades cambian dinámicamente. Las fórmulas de las propiedades **width** y **height** de la pantalla se vuelven a evaluar cuando cambian estos valores.
 
@@ -69,7 +68,7 @@ En el caso más simple, un control llena una pantalla completa. Para crear este 
 | Propiedad      | Value            |
 |--------|---------------|
 | **X1**      | `0`             |
-| **SÍ**      | `0`             |
+| **Sí**      | `0`             |
 | **Ancho**  | `Parent.Width`  |
 | **Alto** | `Parent.Height` |
 
@@ -84,11 +83,11 @@ Si desea que un segundo control rellene la mitad inferior de la misma pantalla, 
 | Control | Propiedad | Fórmula           |
 |-|----------|-------------------|
 | **Esquina superior** | **X1**        | `0`                 |
-| **Esquina superior** | **SÍ**        | `0`                 |
+| **Esquina superior** | **Sí**        | `0`                 |
 | **Esquina superior** | **Ancho**    | `Parent.Width`      |
 | **Esquina superior** | **Alto**   | `Parent.Height / 2` |
 | **Inferiores** | **X1**        | `0`                 |
-| **Inferiores** | **SÍ**        | `Parent.Height / 2` |
+| **Inferiores** | **Sí**        | `Parent.Height / 2` |
 | **Inferiores** | **Ancho**    | `Parent.Width`      |
 | **Inferiores** | **Alto**   | `Parent.Height / 2` |
 
@@ -102,11 +101,11 @@ Para crear ese efecto, debe **actualizar la propiedad** **alto** del control **s
 | Control | Propiedad | Fórmula           |
 |-|----------|-------------------|
 | **Esquina superior** | **X1**        | `0`                 |
-| **Esquina superior** | **SÍ**        | `0`                 |
+| **Esquina superior** | **Sí**        | `0`                 |
 | **Esquina superior** | **Ancho**    | `Parent.Width`      |
 | **Esquina superior** | **Alto**   | `Parent.Height / 2` |
 | **Inferiores** | **X1**        | `0`                       |
-| **Inferiores** | **SÍ**        | `Upper.Y + Upper.Height`  |
+| **Inferiores** | **Sí**        | `Upper.Y + Upper.Height`  |
 | **Inferiores** | **Ancho**    | `Parent.Width`            |
 | **Inferiores** | **Alto**   | `Parent.Height - Lower.Y` |
 
@@ -120,25 +119,25 @@ Puede usar estos patrones de fórmulas para expresar las relaciones de diseño c
 |--|--|--|--|
 | **C** rellena el ancho del elemento primario, con un margen de *N* | **X1**| `N` | ![Ejemplo de ancho de relleno de C de primario](media/create-responsive-layout/c1.png) |
 |  | **Ancho** | `Parent.Width - (N * 2)` |  |
-| **C** rellena el alto del elemento primario, con un margen de *N* | **SÍ** | `N` | ![Ejemplo de alto relleno de C de primario](media/create-responsive-layout/c2.png) |
+| **C** rellena el alto del elemento primario, con un margen de *N* | **Sí** | `N` | ![Ejemplo de alto relleno de C de primario](media/create-responsive-layout/c2.png) |
 |  | **Alto** | `Parent.Height - (N * 2)` |  |
 | **C** alineado con el borde derecho del elemento primario, con el margen de *N* | **X1** | `Parent.Width - (C.Width + N)` | ![Ejemplo de alineación de C con el borde del elemento primario](media/create-responsive-layout/c3.png) |
-| **C** alineado con el borde inferior del elemento primario, con el margen de *N* | **SÍ** | `Parent.Height - (C.Height + N)` | ![Ejemplo de alineación de C con el borde del elemento primario](media/create-responsive-layout/c4.png) |
+| **C** alineado con el borde inferior del elemento primario, con el margen de *N* | **Sí** | `Parent.Height - (C.Height + N)` | ![Ejemplo de alineación de C con el borde del elemento primario](media/create-responsive-layout/c4.png) |
 | **C** centrado horizontalmente en el elemento primario | **X1** | `(Parent.Width - C.Width) / 2` | ![Ejemplo de C centrado horizontalmente en el elemento primario](media/create-responsive-layout/c5.png) |
-| **C** centrado verticalmente en el elemento primario | **SÍ** | `(Parent.Height - C.Height) / 2` | ![Ejemplo de C centrado verticalmente en el elemento primario](media/create-responsive-layout/c6.png) |
+| **C** centrado verticalmente en el elemento primario | **Sí** | `(Parent.Height - C.Height) / 2` | ![Ejemplo de C centrado verticalmente en el elemento primario](media/create-responsive-layout/c6.png) |
 
 | Relación entre C y D | Propiedad | Fórmula | Ilustración |
 |--|--|--|--|
 | **C** alineada horizontalmente con **d** y el mismo ancho que **d** | **X1** | `D.X` | ![Ejemplo de patrón](media/create-responsive-layout/d1.png) |
 |  | **Ancho**    | `D.Width` |  |
-| **C** alineada verticalmente con **d** y el mismo alto que **d**  | **SÍ** | `D.Y` | ![Ejemplo de patrón](media/create-responsive-layout/d2.png) |
+| **C** alineada verticalmente con **d** y el mismo alto que **d**  | **Sí** | `D.Y` | ![Ejemplo de patrón](media/create-responsive-layout/d2.png) |
 |  | **Alto** | `D.Height` |  |
 | Borde derecho de **C** alineado con el borde derecho de **D** | **X1** | `D.X + D.Width - C.Width` | ![Ejemplo de patrón](media/create-responsive-layout/d3.png) |
-| Borde inferior de **C** alineado con el borde inferior de **D** | **SÍ** | `D.Y + D.Height - C.Height` | ![Ejemplo de patrón](media/create-responsive-layout/d4.png) |
+| Borde inferior de **C** alineado con el borde inferior de **D** | **Sí** | `D.Y + D.Height - C.Height` | ![Ejemplo de patrón](media/create-responsive-layout/d4.png) |
 | **C** centrado horizontalmente con respecto a **D** | **X1** | `D.X + (D.Width - C.Width) / 2`  | ![Ejemplo de patrón](media/create-responsive-layout/d5.png) |
-| **C** centrado verticalmente con relación a **D** | **SÍ** | `D.Y + (D.Height - C.Height) /2` | ![Ejemplo de patrón](media/create-responsive-layout/d6.png) |
+| **C** centrado verticalmente con relación a **D** | **Sí** | `D.Y + (D.Height - C.Height) /2` | ![Ejemplo de patrón](media/create-responsive-layout/d6.png) |
 | **C** situado a la derecha de **D** con un espacio de N | **X1** | `D.X + D.Width + N` | ![Ejemplo de patrón](media/create-responsive-layout/d7.png) |
-| **C** situado debajo de **D** con un espacio de *N*             | **SÍ** | `D.Y + D.Height + N` | ![Ejemplo de patrón](media/create-responsive-layout/d8.png) |
+| **C** situado debajo de **D** con un espacio de *N*             | **Sí** | `D.Y + D.Height + N` | ![Ejemplo de patrón](media/create-responsive-layout/d8.png) |
 | **C** rellena el espacio entre **D** y el borde derecho del elemento primario | **X1** | `D.X + D.Width` | ![Ejemplo de patrón](media/create-responsive-layout/d9.png) |
 |  | **Ancho** | `Parent.Width - C.X` |  |
 | **C** rellena el espacio entre **D** y el borde inferior del elemento primario | Y | `D.Y + D.Height` | ![Ejemplo de patrón](media/create-responsive-layout/d10.png) |
@@ -155,7 +154,7 @@ Si usa una galería en la aplicación, deberá diseñar los controles dentro de 
 
 ### <a name="container-control"></a>Control contenedor
 
-Puede usar una característica experimental, el control **contenedor** , como control primario. Para activar esta característica, seleccione Configuración de**aplicación** > de **archivo** > **Configuración avanzada**.
+Puede usar una característica experimental, el control **contenedor** , como control primario. Para activar esta característica, seleccione **archivo** > configuración de la **aplicación** > **Configuración avanzada**.
 
 Considere el ejemplo de un encabezado en la parte superior de una pantalla. Es habitual tener un encabezado con un título y varios iconos con los que los usuarios puedan interactuar. Puede crear este encabezado mediante el control **contenedor** , que contiene un control **etiqueta** y dos controles **Icon** :
 
@@ -163,20 +162,20 @@ Considere el ejemplo de un encabezado en la parte superior de una pantalla. Es h
 
 Establezca las propiedades de estos controles en estos valores:
 
-| Propiedad | Encabezado | MENU | cercanos | Título |
+| Propiedad | Encabezado | MENU | Cercanos | Título |
 |--|--|--|--|--|
 | **X1** | `0`  | `0` | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
-| **SÍ** | `0` | `0` | `0` | `0` |
+| **Sí** | `0` | `0` | `0` | `0` |
 | **Ancho**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
 | **Alto** | `64` | `Parent.Height` | `Parent.Height` | `Parent.Height` |
 
-Para el control de encabezado `Parent` , hace referencia a la pantalla. Para los demás, `Parent` hace referencia al control de **encabezado** .
+En el control de **encabezado** , `Parent` hace referencia a la pantalla. En el caso de los demás, `Parent` hace referencia al control de **encabezado** .
 
 Una vez escritas estas fórmulas, puede ajustar el tamaño o la posición del control de **encabezado** cambiando las fórmulas de sus propiedades. Los tamaños y las posiciones de los controles secundarios se ajustarán automáticamente en consecuencia.
 
 ### <a name="components"></a>Componentes
 
-Si usa otra característica experimental, denominada componentes, puede crear bloques de creación y volver a usarlos en toda la aplicación. Al igual que con el control **contenedor** , los controles que se colocan dentro de un componente deben basar `Parent.Width` sus fórmulas de posición y tamaño en y `Parent.Height`, que hacen referencia al tamaño del componente. Más información: [Cree un componente](create-component.md).
+Si usa otra característica experimental, denominada componentes, puede crear bloques de creación y volver a usarlos en toda la aplicación. Al igual que con el control **contenedor** , los controles que se colocan dentro de un componente deben basar sus fórmulas de posición y tamaño en `Parent.Width` y `Parent.Height`, que hacen referencia al tamaño del componente. Más información: [crear un componente](create-component.md).
 
 ## <a name="adapting-layout-for-device-size-and-orientation"></a>Adaptación del diseño para el tamaño y la orientación del dispositivo
 
@@ -186,16 +185,16 @@ Hasta ahora, ha aprendido a usar fórmulas para cambiar el tamaño de cada contr
 
 Las fórmulas predeterminadas para las propiedades de **ancho** y **alto** de una pantalla, como en este tema descrito anteriormente, no proporcionarán necesariamente una buena experiencia si un usuario gira un dispositivo. Por ejemplo, una aplicación diseñada para un teléfono en orientación vertical tiene un **DesignWidth** de 640 y un **DesignHeight** de 1136. La misma aplicación en un teléfono con orientación horizontal tendrá estos valores de propiedad:
 
-- La propiedad **ancho** de la pantalla se establece `Max(App.Width; App.DesignWidth)`en. El **ancho** de la aplicación (1136) es mayor que su **DesignWidth** (640), por lo que la fórmula se evalúa como 1136.
-- La propiedad **alto** de la pantalla se establece `Max(App.Height; App.DesignHeight)`en. El **alto** de la aplicación (640) es menor que el de **DesignHeight** (1136), por lo que la fórmula se evalúa como 1136.
+- La propiedad **ancho** de la pantalla se establece en `Max(App.Width, App.DesignWidth)`. El **ancho** de la aplicación (1136) es mayor que su **DesignWidth** (640), por lo que la fórmula se evalúa como 1136.
+- La propiedad **alto** de la pantalla se establece en `Max(App.Height, App.DesignHeight)`. El **alto** de la aplicación (640) es menor que el de **DesignHeight** (1136), por lo que la fórmula se evalúa como 1136.
 
 Con un **alto** de pantalla de 1136 y un alto de dispositivo (en esta orientación) de 640, el usuario debe desplazar la pantalla verticalmente para mostrar todo su contenido, lo que podría no ser la experiencia que desea.
 
 Para adaptar las propiedades de **ancho** y **alto** de la pantalla a la orientación del dispositivo, puede usar estas fórmulas:
 
-**Ancho** = `Max(App.Width; If(App.Width < App.Height; App.DesignWidth; App.DesignHeight))`
+**Ancho** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
-**Alto** = `Max(App.Height; If(App.Width < App.Height; App.DesignHeight; App.DesignWidth))`
+**Altura** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
 Estas fórmulas intercambian los valores de **DesignWidth** y **DesignHeight** de la aplicación, en función de si el ancho del dispositivo es menor que el alto (orientación vertical) o superior al alto (orientación horizontal).
 
@@ -209,11 +208,11 @@ Puede usar la propiedad **orientación** de la pantalla para determinar si la pa
 | Control | Propiedad | Fórmula |
 |--|----------|---|
 | **Esquina superior** | **X1** | `0` |
-| **Esquina superior** | **SÍ** | `0` |
-| **Esquina superior** | **Ancho** | `If(Parent.Orientation = Layout.Vertical; Parent.Width; Parent.Width / 2)` |
-| **Esquina superior** | **Alto**   | `If(Parent.Orientation = Layout.Vertical; Parent.Height / 2; Parent.Height)` |
-| **Inferiores** | X | `If(Parent.Orientation = Layout.Vertical; 0; Upper.X + Upper.Width)`  |
-| **Inferiores** | Y | `If(Parent.Orientation = Layout.Vertical; Upper.Y + Upper.Height; 0)` |
+| **Esquina superior** | **Sí** | `0` |
+| **Esquina superior** | **Ancho** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
+| **Esquina superior** | **Alto**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **Inferiores** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **Inferiores** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
 | **Inferiores** | **Ancho** | `Parent.Width - Lower.X` |
 | **Inferiores** | **Alto** | `Parent.Height - Lower.Y` |
 
@@ -225,7 +224,7 @@ Puede usar la propiedad **orientación** de la pantalla para determinar si la pa
 
 Puede ajustar el diseño en función del tamaño del dispositivo. La propiedad **tamaño** de la pantalla clasifica el tamaño actual del dispositivo. El tamaño es un entero positivo; el tipo ScreenSize proporciona constantes con nombre para facilitar la lectura. En esta tabla se enumeran las constantes:
 
-| constante              | Value | Tipo de dispositivo típico (con la configuración de la aplicación predeterminada) |
+| Constante              | Value | Tipo de dispositivo típico (con la configuración de la aplicación predeterminada) |
 |-----------------------|-------|--------------------------------------------------|
 | Filtrar. pequeño      | 1     | Número                                            |
 | ScreenSize. Medium     | 2     | Tableta, mantenida en vertical                          |
@@ -240,12 +239,12 @@ Esta fórmula se evalúa como **true** cuando el tamaño es medio o mayor y **fa
 
 Si desea que un control ocupe una fracción diferente del ancho de la pantalla en función del tamaño de la pantalla, establezca la propiedad **ancho** del control en esta fórmula:
 
-```powerapps-comma
+```powerapps-dot
 Parent.Width *  
-    Switch(Parent.Size;  
-        ScreenSize.Small; 0,5;  
-        ScreenSize.Medium; 0,3;  
-        0,25)
+    Switch(Parent.Size,  
+        ScreenSize.Small, 0.5,  
+        ScreenSize.Medium, 0.3,  
+        0.25)
 ```
 Esta fórmula establece el ancho del control en la mitad del ancho de la pantalla en una pantalla pequeña, tres décimas de ancho de pantalla en una pantalla mediana y un cuarto del ancho de la pantalla en todas las demás pantallas.
 
@@ -253,7 +252,7 @@ Esta fórmula establece el ancho del control en la mitad del ancho de la pantall
 
 La propiedad de **tamaño** de la pantalla se calcula comparando la propiedad **ancho** de la pantalla con los valores de la propiedad **SizeBreakpoints** de la aplicación. Esta propiedad es una tabla de números de una sola columna que indica los puntos de interrupción de ancho que separan los tamaños de pantalla con nombre:
 
-En una aplicación creada para tabletas o Web, el valor predeterminado de la propiedad **SizeBreakpoints** de la aplicación es **[600; 900; 1200]** . En una aplicación creada para teléfonos, el valor es **[1200; 1800; 2400]** . (Los valores de las aplicaciones de teléfono se duplican porque estas aplicaciones usan coordenadas que son, de hecho, el doble de las coordenadas usadas en otras aplicaciones).
+En una aplicación creada para tabletas o Web, el valor predeterminado de la propiedad **SizeBreakpoints** de la aplicación es **[600, 900, 1200]** . En una aplicación creada para teléfonos, el valor es **[1200, 1800, 2400]** . (Los valores de las aplicaciones de teléfono se duplican porque estas aplicaciones usan coordenadas que son, de hecho, el doble de las coordenadas usadas en otras aplicaciones).
 
 ![valores predeterminados de la propiedad app. SizeBreakpoints](media/create-responsive-layout/default-breakpoints.png)
 

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4bb09a9aefd3db1981727642d766f308ad9d0ede
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d90d26c3cbc00b621ee2857c5c0d8ce3169f8939
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900151"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674739"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Publicación del informe de proyecto de Power BI y creación de un panel
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, vamos a publicar nuestro conjunto de datos y el informe en el servicio Power BI. A continuación, se creará un panel basado en este informe. Muchas veces, un informe tiene un gran número de visualizaciones y solo se usa un subconjunto en un panel. En este caso, vamos a agregar cuatro visualizaciones al panel.
 

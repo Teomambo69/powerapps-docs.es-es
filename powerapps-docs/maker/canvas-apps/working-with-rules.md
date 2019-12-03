@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
-ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
+ms.openlocfilehash: 52deddf87a1c3ee4604591110cfb08eb2d2680b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72822097"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74672988"
 ---
 # <a name="create-a-rule-in-canvas-apps"></a>Creación de una regla en aplicaciones de lienzo
 Las reglas se crean para modificar automáticamente una aplicación en función de los criterios que se especifiquen. Por ejemplo, mostrar los elementos de cada lista en rojo, amarillo o verde según su estado, o bien mostrar un botón de aprobación sólo a determinados usuarios (por ejemplo, los administradores). Las reglas se pueden agregar a varios controles. En este tema, agregará una regla para cambiar el color del texto de un control **Etiqueta** si el valor de un control **Control deslizante** es mayor que 70.
@@ -51,13 +51,13 @@ Una condición es una expresión que se evalúa como true o false; por ejemplo, 
     Para este tema, cambie 0 por 70 para obtener esta expresión: <br>**Slider1.Value > 70**
 
 ## <a name="add-an-action"></a>Agregar una acción
-Las acciones definen lo que sucede cuando se aplica la regla. PowerApps puede crear acciones automáticamente en función de los cambios que se realicen en los controles.
+Las acciones definen lo que sucede cuando se aplica la regla. Power apps puede crear acciones automáticamente en función de los cambios que realice en los controles.
 
 1. Pulse o haga clic en **Definir acciones**.
 
     ![Definir acciones](./media/working-with-rules/rule-define-actions.png)
 
-1. En el cuadro de diálogo de confirmación, pulse o haga clic en **Adelante** para que PowerApps capture el siguiente cambio (o los siguientes) como una o varias acciones.
+1. En el cuadro de diálogo de confirmación, pulse o haga clic en **ir** a para que Power apps Capture el siguiente cambio o cambie como una o varias acciones.
 
 1. Configure uno o varios controles para que cumplan sus expectativas cuando la condición sea true.
 

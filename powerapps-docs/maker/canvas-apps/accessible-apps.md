@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994276"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680038"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Creación de aplicaciones de lienzo accesibles en PowerApps
 Una aplicación de lienzo accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
@@ -26,7 +26,7 @@ Una aplicación de lienzo accesible permitirá a los usuarios con discapacidades
 Use el **[Comprobador de accesibilidad](accessibility-checker.md)** para ayudarle a revisar los posibles problemas de accesibilidad de la aplicación. 
 
 ## <a name="layout-and-color"></a>Diseño y color
-Un diseño con sentido común y poco complicado ayuda a que las aplicaciones sean más accesibles para todos los usuarios.  Cuando realice una personalización intensa de las aplicaciones, tenga en cuenta las siguientes sugerencias.  Los temas de PowerApps son accesibles de forma predeterminada.
+Un diseño con sentido común y poco complicado ayuda a que las aplicaciones sean más accesibles para todos los usuarios.  Cuando realice una personalización intensa de las aplicaciones, tenga en cuenta las siguientes sugerencias.  Los temas de Power apps son accesibles de forma predeterminada.
 - Asegúrese de que todos los elementos son claramente visibles y el texto tiene un tamaño suficiente.  Todo el contenido se debe poder leer y comprender fácilmente a simple vista.
 - Evite el uso de la propiedad de visibilidad de los elementos para mostrar un elemento.  Si necesita mostrar algo de manera condicional, cree el contenido en una nueva pantalla, navegue a ella y vuelva.
 - Asegúrese de que los elementos de entrada están etiquetados en la pantalla. La propiedad **[AccessibilityLabel](controls/properties-accessibility.md)** define lo que el lector de pantalla anunciará.
@@ -42,12 +42,12 @@ Para la navegación con el teclado (con o sin el lector de pantalla), asegúrese
 - Evite establecer el índice de tabulación en un valor mayor que cero.
 
 ## <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-Las siguientes combinaciones de software son las recomendaciones admitidas para consumir PowerApps con un lector de pantalla:
+Las siguientes combinaciones de software son las recomendaciones admitidas para utilizar Power apps con un lector de pantalla:
 
 - **Windows**: Microsoft Edge/narrador
-- **MacOS**: Safari/VoiceOver
-- **Android**: Aplicación PowerApps/talkback
-- **iOS**: Aplicación PowerApps/VoiceOver
+- **macOS**: Safari / VoiceOver
+- **Android**: aplicación de Power apps/talkback
+- **iOS**: aplicación de Power apps/VoiceOver
 
 Para garantizar una experiencia satisfactoria con el lector de pantalla, se recomienda:
 

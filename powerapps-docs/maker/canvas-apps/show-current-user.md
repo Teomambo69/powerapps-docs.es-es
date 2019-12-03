@@ -1,6 +1,6 @@
 ---
 title: Mostrar detalles sobre el usuario actual en una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, muestre el nombre y la dirección de correo electrónico del usuario que inició sesión en una aplicación de lienzo.
+description: En Power Apps, mostrar el nombre y la dirección de correo electrónico del usuario que inició sesión en una aplicación de lienzo
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71988560"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674610"
 ---
-# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Mostrar información sobre un usuario de PowerApps en una aplicación de lienzo
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>Mostrar información sobre un usuario de Power Apps en una aplicación de lienzo
 
-En PowerApps, muestre el nombre completo, la dirección de correo electrónico y la imagen asociada al usuario que inició sesión en una aplicación de lienzo. Puede utilizar esta información, por ejemplo, para rellenar automáticamente un formulario.
+En Power Apps, muestre el nombre completo, la dirección de correo electrónico y la imagen asociada al usuario que ha iniciado sesión en una aplicación de lienzo. Puede utilizar esta información, por ejemplo, para rellenar automáticamente un formulario.
 
 Por ejemplo, puede utilizar esta característica para:
 

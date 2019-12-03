@@ -1,6 +1,6 @@
 ---
 title: Agregar una pantalla de desplazamiento a una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, cree una pantalla por la que puedan desplazarse los usuarios para ver más tipos de contenido de los que pueden mostrarse a la vez en una aplicación de lienzo.
+description: En Power Apps, cree una pantalla en la que los usuarios puedan desplazarse para mostrar más tipos de contenido de los que la pantalla puede mostrar a la vez en una aplicación de lienzo.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987468"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678934"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Agregar una pantalla de desplazamiento a una aplicación de lienzo en PowerApps
 

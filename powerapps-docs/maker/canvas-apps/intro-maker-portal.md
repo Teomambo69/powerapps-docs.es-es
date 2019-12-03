@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899225"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675761"
 ---
-# <a name="sign-in-to-powerapps-for-the-first-time"></a>Inicio de sesión en PowerApps por primera vez
+# <a name="sign-in-to-power-apps-for-the-first-time"></a>Iniciar sesión en Power apps por primera vez
 
 Cuando inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), el sitio ofrece diversas opciones para que cree sus propias aplicaciones, abra las aplicaciones que usted u otros usuarios hayan creado y realice tareas relacionadas. Estas tareas van desde las más sencillas, como la identificación de la licencia o licencias que le proporcionan acceso, hasta funcionalidades más avanzadas, como la creación de conexiones personalizadas para orígenes de datos específicos.
 
@@ -42,7 +42,7 @@ Para obtener mejores resultados, asegúrese de que la página principal se estab
 
 ## <a name="choose-an-environment"></a>Selección de un entorno
 
-Tanto si va a crear una aplicación, un flujo, una conexión de datos o una entidad en Common Data Service, gran parte de lo que se hace en PowerApps se encuentra en un entorno específico. Los entornos crean límites entre distintos tipos de trabajo; por ejemplo, una organización podría tener entornos independientes para distintos departamentos. Muchas organizaciones usan entornos para separar aplicaciones que aún están en desarrollo de las que están listas para su uso generalizado. Puede que tenga acceso a varios entornos o solo a uno y, si cuenta con los permisos adecuados, tal vez pueda crear sus propios entornos.
+Tanto si va a crear una aplicación, un flujo, una conexión de datos o una entidad en Common Data Service, gran parte de lo que se hace en Power apps se encuentra en un entorno específico. Los entornos crean límites entre distintos tipos de trabajo; por ejemplo, una organización podría tener entornos independientes para distintos departamentos. Muchas organizaciones usan entornos para separar aplicaciones que aún están en desarrollo de las que están listas para su uso generalizado. Puede que tenga acceso a varios entornos o solo a uno y, si cuenta con los permisos adecuados, tal vez pueda crear sus propios entornos.
 
 Para comprobar en qué entorno se encuentra, busque el selector de entornos junto al margen derecho del encabezado.
 
@@ -57,7 +57,7 @@ Para más información, consulte [Environments overview](../../administrator/env
 
 ## <a name="choose-an-app-type"></a>Elección de un tipo de aplicación
 
-En PowerApps, puede crear y ejecutar estos tipos de aplicaciones:
+En Power Apps, puede crear y ejecutar estos tipos de aplicaciones:
 
 - **Aplicaciones de lienzo**: admiten el diseño de interfaz de usuario personalizada y la conexión a datos desde diversos orígenes.
 - Las **aplicaciones controladas por modelos** tienen una interfaz de usuario estándar y se conectan a los datos solo en Common Data Service. Sin embargo, resulta más fácil crear otros elementos, tales como vistas, paneles y diferentes tipos de lógica de negocios.
@@ -93,7 +93,7 @@ Hay dos formas de encontrar más información sobre las aplicaciones de lienzo o
 
     ![Lista de aplicaciones controladas por modelos con un menú de puntos suspensivos abierto](media/intro-maker-portal/help-icon.png)
 
-Ambas opciones muestran vínculos a este conjunto de documentación, la comunidad de PowerApps (donde puede compartir información con usuarios de otras organizaciones) y el blog de PowerApps (donde se anuncian las características más recientes).
+Ambas opciones muestran vínculos a este conjunto de documentación, la comunidad de Power apps (donde puede compartir información con usuarios de otras organizaciones) y el blog de Power apps (donde se anuncian las características más recientes).
 
 ## <a name="other-common-tasks"></a>Otras tareas frecuentes
 
@@ -105,7 +105,7 @@ Al seleccionar las opciones en el encabezado y la barra de navegación izquierda
 
     Para más información, vea [Find and run apps](../../user/index.md) (Búsqueda y ejecución de aplicaciones).
 
-- Seleccione el icono de engranaje para realizar tareas tales como conectarse a orígenes de datos, identificar la licencia o licencias de PowerApps y abrir la página donde puede realizar tareas administrativas.
+- Seleccione el icono de engranaje para realizar tareas como conectarse a orígenes de datos, identificar la licencia o licencias de Power apps y abrir la página en la que puede realizar tareas administrativas.
 
     Para más información, vea estos temas:
 

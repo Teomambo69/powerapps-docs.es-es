@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81426f24eea958b40f6d03da787a729603ec6f7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 79d59c484f82f4d356f3b2ac40f02bdddd125901
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537022"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676599"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Creación de una aplicación de lienzo desde cero a partir de datos de Excel
 
@@ -40,7 +39,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
     | Domingo | mediodía a 2 p.m. |Singh |Morgan |
     | Domingo | 2 p.m. - 4 p.m. |Batye |Nguyen |
 
-2. Dé a los datos un formato de tabla, llamada **Programa**, para que PowerApps pueda analizar la información.
+2. Dé formato a los datos como una tabla, denominada **Schedule**, para que Power apps pueda analizar la información.
 
     Para obtener más información, vea [Dar formato a una tabla en Excel](how-to-excel-tips.md).
 
@@ -65,9 +64,9 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
     > [!div class="mx-imgBorder"]
     >![Especificación del nombre y el formato de la aplicación](./media/get-started-create-from-blank/excel-demo.png)
 
-    PowerApps Studio crea una aplicación en blanco para teléfonos.
+    Power apps Studio crea una aplicación en blanco para teléfonos.
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Omitir**.
+1. Si aparece el cuadro de diálogo **Bienvenido a Power apps Studio** , seleccione **omitir**.
 
 ## <a name="connect-to-data"></a>Conectarse a datos
 
@@ -112,17 +111,17 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
     La fórmula coincide con la de este ejemplo:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, aparece la pantalla **ChangeScreen** con los campos vacíos, de forma que el usuario puede crear un registro más fácilmente.
 
@@ -207,7 +206,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la flecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, **ChangeScreen** aparece con cada campo que muestra los datos para el registro seleccionado, por lo que el usuario puede editar o eliminar el registro más fácilmente.
 
@@ -219,7 +218,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para ese icono en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se descartan y se abre la pantalla de vista.
 
@@ -229,7 +228,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** de la marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, los cambios realizados en esta pantalla por el usuario se guardan y se abre la pantalla de vista.
 
@@ -247,7 +246,7 @@ Para obtener más información sobre estas y otras funciones, vea la [referencia
 
 1. Establezca la propiedad **OnSelect** para el icono de papelera en esta fórmula:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Cuando el usuario selecciona este icono, el registro seleccionado se elimina del origen de datos y se abre la pantalla de vista.
 

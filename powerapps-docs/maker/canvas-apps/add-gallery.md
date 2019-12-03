@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540929"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679256"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
 
@@ -41,7 +40,7 @@ Muestre una lista de elementos de cualquier origen de datos agregando un control
 
     1. Especifique el nombre de la aplicación, seleccione **Teléfono** y, luego, **Crear**.
 
-    1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
+    1. Si aparece el cuadro de diálogo **Bienvenido a Power apps Studio** , seleccione **omitir**.
 
     1. [Agregue una conexión](add-data-connection.md) a la tabla **FlooringEstimates** del archivo de Excel.
 
@@ -99,20 +98,20 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 
 1. Establezca la propiedad **[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -128,19 +127,19 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 
     Los registros alternan entre orden alfabético ascendente y descendente según el nombre del producto.
 
-## <a name="highlight-the-selected-item"></a>Resalte el elemento seleccionado
+## <a name="highlight-the-selected-item"></a>Resalte del elemento seleccionado
 Establezca la propiedad **rellenodeplantilla** del control de **Galería** en una fórmula similar a la de este ejemplo, pero puede especificar distintos colores si lo desea:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Cambio de la elección predeterminada
 En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, puede especificar el quinto elemento en el origen de datos **FlooringEstimates** :
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 En este ejemplo, especifique el primer elemento de la categoría **Hardwood** del origen de datos **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Aprenda a trabajar con [formularios](working-with-forms.md) y [fórmulas](working-with-formulas.md).

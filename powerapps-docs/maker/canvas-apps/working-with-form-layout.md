@@ -1,6 +1,6 @@
 ---
 title: Comprender el diseño de formularios de datos para aplicaciones de lienzo | Microsoft Docs
-description: En PowerApps, cree atractivos diseños de formularios en aplicaciones de lienzo mediante filas y columnas.
+description: En Power Apps, cree diseños de formulario de aspecto excelente en aplicaciones de Canvas con filas y columnas.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ef11e767fcf92259839c4bebe282757b0004f21
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989138"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674538"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Comprender el diseño de formularios de datos para aplicaciones de lienzo en PowerApps
 
-Cree fácilmente un formulario atractivo y eficaz al compilar una aplicación de lienzo en PowerApps. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
+Cree fácilmente un formulario atractivo y eficaz al compilar una aplicación de lienzo en Power apps. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
 
 ![Pedido de ventas de ejemplo](./media/working-with-form-layout/sales-order.png)
 
@@ -30,9 +30,9 @@ En este tutorial, se le guiará por los pasos necesarios para crear un formulari
 
 ## <a name="before-you-start"></a>Antes de comenzar
 
-Si es la primera vez que usa PowerApps (o solo ha generado aplicaciones automáticamente), lo más recomendable es [compilar una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
+Si no está familiarizado con las aplicaciones de Power apps (o si solo las ha generado automáticamente), deberá [compilar una aplicación desde cero antes de](get-started-create-from-blank.md) profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
 
-Este tema se escribe como si tuviera un origen de datos denominado **sales Order** y que contenga los campos del gráfico anterior. Si tiene una licencia del plan 2 de PowerApps o una [licencia de prueba](../signup-for-powerapps.md) y un administrador del sistema o permisos del Personalizador del sistema, puede [crear una entidad](../common-data-service/data-platform-create-entity.md) en Common Data Service y agregar campos similares. 
+Este tema se escribe como si tuviera un origen de datos denominado **sales Order** y que contenga los campos del gráfico anterior. Si tiene una licencia del plan 2 de Power Apps o una [licencia de prueba](../signup-for-powerapps.md) y de administrador del sistema o del Personalizador del sistema, puede [crear una entidad](../common-data-service/data-platform-create-entity.md) en Common Data Service y agregar campos similares. 
 
 ## <a name="add-a-gallery"></a>Agregar una galería
 
@@ -199,13 +199,13 @@ En resumen, ¿cuáles son las diferencias cuando la opción **Ajustar en columna
 | Se cambia el diseño de las tarjetas automáticamente entre filas (se explica más adelante) |Sí |No |
 
 ## <a name="set-width-and-height"></a>Establecer ancho y alto
-Como con todo en PowerApps, el diseño del formulario se rige por las propiedades de los controles de tarjeta. Como ya se ha descrito, para cambiar los valores de estas propiedades tiene que arrastrar controles a ubicaciones diferentes o arrastrar los controladores de agarre para cambiar el tamaño de los controles. Pero encontrará situaciones en las que deseará conocer y manipular estas propiedades con mayor precisión, especialmente al usar fórmulas para que los formularios sean dinámicos.
+Como con todo en Power Apps, el diseño del formulario se rige por las propiedades de los controles de la tarjeta. Como ya se ha descrito, para cambiar los valores de estas propiedades tiene que arrastrar controles a ubicaciones diferentes o arrastrar los controladores de agarre para cambiar el tamaño de los controles. Pero encontrará situaciones en las que deseará conocer y manipular estas propiedades con mayor precisión, especialmente al usar fórmulas para que los formularios sean dinámicos.
 
-### <a name="basic-layout-x-y-and-width"></a>Diseño básico: X, y y ancho
+### <a name="basic-layout-x-y-and-width"></a>Diseño básico: X, Y y Ancho
 Las propiedades **X** e **Y** controlan la posición de las tarjetas. Cuando se trabaja con controles en el lienzo en blanco, estas propiedades proporcionan una posición absoluta. En un formulario, estas propiedades tienen un significado diferente:
 
-* **X**: Orden en una fila.
-* **Y**: Número de fila.
+* **X**: orden dentro de una fila.
+* **Y**: número de fila.
 
 De forma similar a los controles en el lienzo, la propiedad **Ancho** especifica la anchura mínima de la tarjeta (más información sobre el aspecto mínimo en un momento).
 
@@ -224,7 +224,7 @@ Las tres tarjetas de la fila superior ya no caben horizontalmente y que se ha cr
 
 Este comportamiento se puede usar para crear un diseño totalmente dinámico en el que las tarjetas se colocan en función de un orden Z, rellenando el mayor espacio posible antes de pasar a la siguiente fila. Para lograr este efecto, asigne a todas las tarjetas el mismo valor de **Y** y use **X** para el orden de las tarjetas.
 
-### <a name="filling-spaces-widthfit"></a>Rellenar espacios: Widthfit ajustedeancho)
+### <a name="filling-spaces-widthfit"></a>Rellenar espacios: WidthFit (AjusteDeAncho)
 El desbordamiento del último ejemplo creaba un espacio después de **Estado de pedido**, que era la segunda tarjeta de la primera fila. Se podrían ajustar manualmente los valores de la propiedad **Ancho** de las dos tarjetas restantes para llenar este espacio, pero este método es tedioso.
 
 Como alternativa, use la propiedad **WidthFit** (AjusteDeAncho). Si esta propiedad establecida en **True** en una o varias tarjetas de una fila, el espacio restante de la fila se dividirá uniformemente entre ellas. A este comportamiento es a lo que se debe que antes se indicara que la propiedad **Ancho** de una tarjeta es un *mínimo* y que lo que se ve en realidad puede ser más ancho. Esta propiedad nunca hará que una tarjeta encoja, solo que se expanda.

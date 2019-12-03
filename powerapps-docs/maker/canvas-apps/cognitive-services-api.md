@@ -1,5 +1,5 @@
 ---
-title: Uso de Cognitive Services en PowerApps | Microsoft Docs
+title: Uso de Cognitive Services en Power apps | Microsoft Docs
 description: Cree una aplicación de lienzo básica que use el Text Analytics API de Cognitive Services de Azure para analizar el texto.
 author: lancedMicrosoft
 manager: kvivek
@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a998ca743fe693645adaabbd32d4d3110c12068a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540856"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680015"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Uso de Cognitive Services en PowerApps
 En este artículo se muestra cómo compilar una aplicación de lienzo básica que usa el [Text Analytics API de Cognitive Services de Azure](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar el texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
 
 > [!NOTE]
-> Si no está familiarizado con la compilación de aplicaciones en PowerApps, es aconsejable que lea [Creación de una aplicación desde cero](get-started-create-from-blank.md) antes de profundizar en este artículo.
+> Si no está familiarizado con la creación de aplicaciones en Power Apps, le recomendamos que lea [creación de una aplicación desde cero antes de](get-started-create-from-blank.md) profundizar en este artículo.
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Introducción a Azure Cognitive Services
 Azure Cognitive Services son un conjunto de API, SDK y servicios disponibles para que sus aplicaciones sean más inteligentes, atractivas y reconocibles. Estos servicios permiten agregar fácilmente a sus aplicaciones características inteligentes tales como detección de emociones y vídeo; reconocimiento facial, visual y de voz; y comprensión de narración y lenguaje.
@@ -67,7 +66,7 @@ La API está disponible como versión preliminar gratuita y está asociada con u
     ![Claves de API](./media/cognitive-services-api/azure-keys.png)
 
 ## <a name="build-the-app"></a>Creación de la aplicación
-Ahora que Text Analytics API está en funcionamiento, puede conectarse a ella desde PowerApps y compilar una aplicación que llame a la API. Es una aplicación de una sola pantalla que proporciona una funcionalidad similar a la demostración de la página Text Analytics API. Vamos a empezar a trabajar.
+Ahora que tiene el Text Analytics API en funcionamiento, puede conectarse a él desde Power apps y compilar una aplicación que llame a la API. Es una aplicación de una sola pantalla que proporciona una funcionalidad similar a la demostración de la página Text Analytics API. Vamos a empezar a trabajar.
 
 ### <a name="create-the-app-and-add-a-connection"></a>Creación de la aplicación y adición de una conexión
 En primer lugar, cree una aplicación de teléfono vacía y agregue una conexión con el conector de **Text Analytics**. Si necesita más información sobre estas tareas, consulte [Crear una aplicación desde cero](get-started-create-from-blank.md) y [Administración de las conexiones en PowerApps](add-manage-connections.md).
@@ -76,7 +75,7 @@ En primer lugar, cree una aplicación de teléfono vacía y agregue una conexió
 
     ![Iniciar desde cero](./media/cognitive-services-api/start-from-blank.png)
 
-2. En el panel central de PowerApps Studio, elija **conectar a datos**.
+2. En el panel central de Power apps Studio, elija **conectar a datos**.
 
 3. En el panel **Datos**, haga clic o pulse en **Nueva conexión** > **Text Analytics**.
 
@@ -128,34 +127,34 @@ Ya tiene una aplicación bonita, pero aún no hace nada. Eso se solucionará en 
 
 Con esa información, vamos a agregar la fórmula de la propiedad **AlSeleccionar** del botón. Aquí es donde se produce la magia.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -190,7 +189,7 @@ Para mostrar los resultados de las llamadas a la API, haga referencia a la colec
    
     La función **First()** devuelve el primer registro (y único en este caso) de **languageCollect** y la aplicación muestra el valor de **name** (el único campo) asociado con ese registro.
 
-2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
     Esta fórmula utiliza también la función **First()** , obtiene el valor de **Value** (0-1) del primer y único registro y, a continuación, le da formato como un porcentaje.
 

@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541562"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675499"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
 
 En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para almacenar estos datos, necesitará una cuenta de almacenamiento en la nube, como Dropbox, Google Drive o OneDrive.
 
-Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
+Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Abrir una aplicación de ejemplo
 1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
@@ -36,7 +36,7 @@ Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../si
 
 1. Pulse o haga clic en el icono del teléfono para crear una versión de la aplicación para dispositivos móviles (o deje seleccionado el icono de la tableta) y, después, pulse o haga clic en **Crear esta aplicación**.
 
-1. En PowerApps Studio, pulse o haga clic en **Make my own app** (Crear mi propia aplicación) en el banner situado cerca de la parte superior central de la pantalla.
+1. En Power apps Studio, pulse o haga clic en **crear mi propia aplicación** en el banner situado cerca del centro superior de la pantalla.
 
     ![](./media/open-and-run-a-sample-app/banner.png)
 

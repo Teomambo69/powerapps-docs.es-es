@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b2eca27d418a762820bf0955edafff435a176efb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995206"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674927"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Compartir datos de Excel utilizados por la aplicación
 Puede compartir datos de Excel con los usuarios de la aplicación en una [cuenta en la nube](connections/cloud-storage-blob-connections.md), como OneDrive.
@@ -30,7 +30,7 @@ Debe compartir los datos para que los usuarios puedan ejecutar e incluso modific
 En este tema se muestra cómo compartir datos en una hoja de cálculo de Excel con Dropbox, OneDrive y Google Drive. Para crear una aplicación que muestre los datos desde un archivo de Excel, consulte [Crear una aplicación desde un conjunto de datos](get-started-create-from-data.md).
 
 ## <a name="share-data-in-dropbox"></a>Compartir datos en Dropbox
-1. Inicie sesión en Dropbox con la misma cuenta que usó para crear una conexión desde PowerApps en Dropbox.
+1. Inicie sesión en Dropbox con la misma cuenta que usó para crear una conexión de Power apps a Dropbox.
 2. Seleccione la carpeta que contiene el archivo de Excel y, a continuación, seleccione **Compartir**:  
    
     ![Comando Compartir](./media/share-app-data/dropbox-share.png)
@@ -43,7 +43,7 @@ En este tema se muestra cómo compartir datos en una hoja de cálculo de Excel c
 Para obtener más información, consulte [Uso compartido de carpetas en Dropbox](https://www.dropbox.com/en/help/19).
 
 ## <a name="share-data-in-onedrive"></a>Compartir datos en OneDrive
-1. Inicie sesión en OneDrive con la misma cuenta que usó para crear una conexión desde PowerApps en OneDrive.
+1. Inicie sesión en OneDrive con la misma cuenta que usó cuando creó una conexión de Power apps a OneDrive.
 2. Seleccione la carpeta que contiene el archivo y, a continuación, seleccione **Compartir**:  
    
     ![Comando Compartir](./media/share-app-data/onedrive-share.png)
@@ -60,7 +60,7 @@ Para obtener más información, consulte [Uso compartido de carpetas en Dropbox]
 Para obtener más información, consulte [Compartir archivos y carpetas de OneDrive](https://support.office.com/article/Share-OneDrive-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
 ## <a name="share-data-in-google-drive"></a>Compartir datos en Google Drive
-1. Inicie sesión en Google Drive con la misma cuenta con la que creó una conexión desde PowerApps en Google Drive.
+1. Inicie sesión en Google Drive con la misma cuenta con la que creó una conexión de Power apps a Google Drive.
 2. Haga clic con el botón derecho en la carpeta que contiene el archivo de Excel y, a continuación, seleccione **Compartir**.  
    
     ![Comando Compartir](./media/share-app-data/googledrive-share.png)

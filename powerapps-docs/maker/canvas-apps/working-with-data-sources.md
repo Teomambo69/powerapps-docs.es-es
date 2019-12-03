@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988121"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674287"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Comprender los orígenes de datos para aplicaciones de lienzo en PowerApps
 
-En PowerApps, la mayoría de las aplicaciones de lienzo utilizan información externa almacenada en servicios en la nube denominados **Orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
+En Power Apps, la mayoría de las aplicaciones de canvas usan información externa almacenada en Cloud Services denominada **orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
 
 En este artículo se describen los diferentes tipos de orígenes de datos y cómo trabajar con orígenes de datos de tabla.
 
@@ -42,25 +42,25 @@ Los orígenes de datos distintos de las tablas incluyen el correo electrónico, 
 
 Con los controles **[Galería](controls/control-gallery.md)** , **[Formulario de presentación](controls/control-form-detail.md)** y **[Formulario de edición](controls/control-form-detail.md)** , resulta muy fácil crear una aplicación que lea y escriba datos en un origen de datos.  Para empezar, lea el artículo [Understand data forms](working-with-forms.md) (Introducción a los formularios de datos).  
 
-Cuando se solicita a PowerApps que cree una aplicación a partir de los datos, se utilizan estos controles. En segundo plano, la aplicación utiliza una tabla interna para almacenar y manipular los datos procedentes del origen de datos.
+Cuando se pide a Power apps que cree una aplicación a partir de datos, se usan estos controles. En segundo plano, la aplicación utiliza una tabla interna para almacenar y manipular los datos procedentes del origen de datos.
 
 Un tipo especial de origen de datos es la [colección](working-with-data-sources.md#collections), que está en la propia aplicación y no tiene el respaldo de una conexión a un servicio en la nube, por lo que la información no se puede compartir entre los distintos dispositivos de un mismo usuario ni entre usuarios. Las colecciones se pueden cargar y guardar localmente.
 
 ### <a name="kinds-of-tables"></a>Tipos de tablas
 
-Las tablas internas de una aplicación de PowerApps son valores fijos, como un número o una cadena son un valor. Las tablas internas no se almacenan en ningún lugar, solo existen en la memoria de la aplicación. La estructura y los datos de una tabla no se pueden modificar directamente. En su lugar, lo que puede hacer es crear una nueva tabla a través de una fórmula: dicha fórmula se usa para hacer una copia modificada de la tabla original.
+Las tablas que son internas de una aplicación de Power apps son valores fijos, como un número o una cadena, es un valor. Las tablas internas no se almacenan en ningún lugar, solo existen en la memoria de la aplicación. La estructura y los datos de una tabla no se pueden modificar directamente. En su lugar, lo que puede hacer es crear una nueva tabla a través de una fórmula: dicha fórmula se usa para hacer una copia modificada de la tabla original.
 
-Las tablas externas se almacenan en un origen de datos para su posterior recuperación y uso compartido.  PowerApps proporciona "conexiones" para leer y escribir los datos almacenados.  En una conexión se puede acceder a varias tablas de información.  Seleccione las tablas que desea utilizar en la aplicación y cada uno de ellas pasará a ser un *origen de datos* independiente.  
+Las tablas externas se almacenan en un origen de datos para su posterior recuperación y uso compartido.  Power apps proporciona "conexiones" para leer y escribir datos almacenados.  En una conexión se puede acceder a varias tablas de información.  Seleccione las tablas que desea utilizar en la aplicación y cada uno de ellas pasará a ser un *origen de datos* independiente.  
 
 Para más información, consulte [Trabajar con tablas](working-with-tables.md), donde se proporcionan más detalles acerca de las tablas internas, pero también se explican las tablas externas que residen en un servicio en la nube.
 
 ## <a name="working-with-tables"></a>Trabajo con tablas
-Los orígenes de datos en tabla se pueden usar del mismo modo que se usa una tabla interna de PowerApps.  Al igual que una tabla interna, cada origen de datos tiene [registros](working-with-tables.md#records), [columnas](working-with-tables.md#columns)y propiedades que se pueden usar en las fórmulas. Asimismo:
+Puede usar orígenes de datos de tabla de la misma manera que usa una tabla de aplicaciones de energía internas.  Al igual que una tabla interna, cada origen de datos tiene [registros](working-with-tables.md#records), [columnas](working-with-tables.md#columns)y propiedades que se pueden usar en las fórmulas. Asimismo:
 
 * El origen de datos tiene la mismos nombres de columna y tipos de datos que la tabla subyacente de la conexión.
   
     > [!NOTE]
-  > En los orígenes de datos de SharePoint y Excel que contengan nombres de columna con espacios, PowerApps los sustituirá por **"\_x0020\_"** . Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+  > En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint o Excel aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 * El origen de datos se carga desde el servicio automáticamente cuando se carga la aplicación.  Con la función **[Actualizar](functions/function-refresh.md)** se puede forzar la actualización de los datos.
 * Cuando los usuarios ejecutan una aplicación, pueden crear, modificar y eliminar registros, y aplicar esos cambios posteriormente a la tabla subyacente del servicio.
   * Los registros se pueden crear con las funciones **[Patch](functions/function-patch.md)** y **[Recopilar](functions/function-clear-collect-clearcollect.md)** .  
@@ -70,7 +70,7 @@ Los orígenes de datos en tabla se pueden usar del mismo modo que se usa una tab
 * Las funciones **[DataSourceInfo](functions/function-datasourceinfo.md)** , **[Defaults](functions/function-defaults.md)** y **[Validate](functions/function-validate.md)** proporcionan información acerca del origen de datos que se puede usar para optimizar la experiencia del usuario.
 
 ### <a name="creating-data-sources"></a>Creación de orígenes de datos
-PowerApps no se puede usar para crear un origen de datos conectado ni para modificar su estructura; el origen de datos ya debe existir en algún servicio. Por ejemplo, para crear una tabla en un libro de Excel almacenado en OneDrive, primero es preciso usar Excel Online en OneDrive para crear un libro. Después, se crea una conexión a él desde la aplicación.  
+Power apps no se puede usar para crear un origen de datos conectado o modificar su estructura; el origen de datos ya debe existir en un servicio en alguna parte. Por ejemplo, para crear una tabla en un libro de Excel almacenado en OneDrive, primero es preciso usar Excel Online en OneDrive para crear un libro. Después, se crea una conexión a él desde la aplicación.  
 
 Sin embargo, los orígenes de datos de la colección se *pueden* crear y modificar dentro de una aplicación, pero son temporales.
 
@@ -80,7 +80,7 @@ Sin embargo, los orígenes de datos de la colección se *pueden* crear y modific
 * La información se almacena y comparte a través de un servicio de almacenamiento (en este caso, una lista de SharePoint de un sitio de Office 365).
 * Una conexión hace que esta información esté disponible para la aplicación.  La conexión se encarga de autenticación del usuario que va a acceder a la información.
 * Cuando se inicia la aplicación, o cuando se pulsa la función **[A](functions/function-refresh.md)** , la información se extrae de la conexión y llega a un origen de datos de la aplicación para su uso local.
-* Las fórmulas se usan para leer la información y exponerla en controles que el usuario pueda ver. Puede mostrar los registros de un origen de datos mediante una galería en una pantalla y conectar la propiedad **[Items](controls/properties-core.md)** al origen de datos: **Gallery. Items = DataSource**.  Para conectar los controles dentro de la galería a la galería, use la propiedad **[Default](controls/properties-core.md)** de los controles.  
+* Las fórmulas se usan para leer la información y exponerla en controles que el usuario pueda ver. Para mostrar los registros de un origen de datos, use una galería en una pantalla y conecte la propiedad **[Elementos](controls/properties-core.md)** al origen de datos: **Gallery.Items = DataSource**.  Para conectar los controles dentro de la galería a la galería, use la propiedad **[Default](controls/properties-core.md)** de los controles.  
 * El origen de datos también es una tabla.  Por consiguiente, puede usar **[Filter](functions/function-filter-lookup.md)** , **[Sort](functions/function-sort.md)** , **[AddColumns](functions/function-table-shaping.md)** y otras funciones para refinar y aumentar el origen de datos antes de usar su totalidad.  También puede usar **[Buscar](functions/function-filter-lookup.md)** , **[First](functions/function-first-last.md)** , **[Last](functions/function-first-last.md)** y otras funciones para trabajar con los registros individuales.
 
 ### <a name="modify-a-record"></a>Modificación de un registro
@@ -104,7 +104,7 @@ Antes de realizar cualquier cambio en un registro, la aplicación debe hacer tod
 * *Comentarios inmediatos para el usuario*.  El mejor momento para corregir un problema es cuando ocurre, cuando está fresco en la mente del usuario.  Cada vez que se toca o se pulsa una tecla, puede texto en rojo que identifica un problema.
 * *Menor tráfico de red y menor latencia de los usuarios*.  La detección de un mayor número de problemas en la aplicación implica que habrá menos conversaciones a través de la red para detectar y solucionar problemas.  Cada conversación lleva su tiempo y el que usuario debe esperar.
 
-PowerApps ofrece dos herramientas para la validación:
+Power Apps ofrece dos herramientas para la validación:
 
 * El origen de datos puede proporcionar información sobre lo que es valido, y lo que no lo es.  Por ejemplo, los números pueden tener valores mínimo y máximo, y puede que se requieran una o varias entradas.  Para acceder a esta información, puede usar la función **[DataSourceInfo](functions/function-datasourceinfo.md)** .  
 * La función **[Validate](functions/function-validate.md)** función usa esta misma información para comprobar el valor de una sola columna o de todo un registro.

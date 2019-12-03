@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6c41407397cc0f9a7ca12ec2c9cc3bbb7fa8c95f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993814"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679831"
 ---
 # <a name="data-table-control-in-powerapps"></a>Control Tabla de datos en PowerApps
 Muestra un conjunto de datos en formato tabular.
@@ -28,7 +27,7 @@ Muestra un conjunto de datos en formato tabular.
 El control **Tabla de datos** muestra un conjunto de datos en un formato que incluye encabezados de columna para cada campo que el control muestra. Como responsable de una aplicación, tiene control total sobre los campos que aparecen y en qué orden. Al igual que en el control **Galería**, el control **Tabla de datos** mantiene una propiedad **Seleccionado** que apunta a la única fila seleccionada. Por lo tanto, puede vincular el control **Tabla de datos** a otros controles.
 
 ## <a name="capabilities"></a>Funcionalidades
-PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En esta sección se proporciona información sobre las funcionalidades compatibles e incompatibles.
+Power apps presentó el control **tabla de datos** el 5 de mayo de 2017. En esta sección se proporciona información sobre las funcionalidades compatibles e incompatibles.
 
 ### <a name="now-available"></a>Ahora disponible
 * Los datos de un control **Tabla de datos** es de solo lectura.
@@ -85,7 +84,7 @@ PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En est
 
 ## <a name="related-functions"></a>Funciones relacionadas
 * [**Filtro (Origen de datos, Fórmula)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *Fórmula*)
-* [**Búsqueda (Origen de datos; SearchString [BuscarCadena]; Columna)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
+* [**Búsqueda (Origen de datos, SearchString [BuscarCadena], Columna)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="basic-usage"></a>Uso básico
@@ -122,7 +121,7 @@ PowerApps implementó el control **Tabla de datos** el 5 de mayo de 2017. En est
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Cambio de estilo del encabezado para el control Tabla de datos
 1. Con el control **Tabla de datos** seleccionado, pulse o haga clic en la pestaña **Avanzado** en el panel derecho.
-2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62;96;170;1)** .
+2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62,96,170,1)** .
 3. Pulse o haga clic en el campo para la propiedad **HeadingColor** (ColorDeEncabezado) y cambie el valor a **White** (Blanco).
 4. Pulse o haga clic en el campo para la propiedad **HeadingSize** (TamañoDeEncabezado) y cambie el valor a **14**.
    

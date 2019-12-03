@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539178"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679670"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
 
-En este tutorial, podrá personalizar una lista de registros, denominada galería, y realizar otros cambios en una aplicación que se generó automáticamente en Microsoft PowerApps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
+En este tutorial, personalizará una lista de registros, denominada Galería, y realizará otros cambios en una aplicación que se generó automáticamente en Microsoft Power apps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
 Por ejemplo, la galería para este tutorial coincide con este gráfico de forma predeterminada. La dirección de correo electrónico destaca más que otros tipos de datos, y los usuarios pueden ordenar y filtrar la galería en base a texto en dicha dirección:
 
@@ -42,9 +41,9 @@ También agregará una barra de desplazamiento para que los usuarios que no tien
 > * Cambio del título de pantalla
 > * Mostrar una barra de desplazamiento
 
-Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Pero se aplican los mismos conceptos a cualquier aplicación que se genere en PowerApps, sea desde una lista de SharePoint, una tabla de Excel o cualquier otro origen de datos.
+Este tutorial comienza con una aplicación que se generó a partir de un origen de datos específico. Sin embargo, los mismos conceptos se aplican a cualquier aplicación que se genere en Power Apps, ya sea a partir de una lista de SharePoint, una tabla de Excel u otro origen de datos.
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
+Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -58,7 +57,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.
 
     ![Abrir la aplicación para editarla](./media/customize-layout-sharepoint/open-app.png)
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
+1. Si aparece el cuadro de diálogo **Bienvenido a Power apps Studio** , seleccione **omitir**.
 
 ## <a name="change-the-layout"></a>Cambiar el diseño
 
@@ -96,7 +95,7 @@ Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.
 
 1. Copie esta fórmula y, a continuación, péguela en la barra de fórmulas.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Con esta fórmula, se asegura de que:
 

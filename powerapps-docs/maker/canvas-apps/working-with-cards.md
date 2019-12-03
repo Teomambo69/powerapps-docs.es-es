@@ -1,6 +1,6 @@
 ---
 title: Descripción de las tarjetas de datos | Microsoft Docs
-description: En PowerApps, utilice tarjetas de formulario para recopilar y mostrar información de un origen de datos.
+description: En Power Apps, use las tarjetas de formulario para recopilar y Mostrar información de un origen de datos.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988875"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674508"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
 
@@ -32,7 +32,7 @@ Para empezar a trabajar con las tarjetas, consulte cómo [agregar un formulario]
 
 ## <a name="predefined-cards"></a>Tarjetas predefinidas
 
-PowerApps ofrece un conjunto predefinido de tarjetas para cadenas, números y otros tipos de datos. En el panel derecho, puede ver las variaciones disponibles y cambiar la tarjeta usada para un campo:
+Power Apps ofrece un conjunto predefinido de tarjetas para cadenas, números y otros tipos de datos. En el panel derecho, puede ver las variaciones disponibles y cambiar la tarjeta usada para un campo:
 
 ![](./media/working-with-cards/selected-card.png)
 
@@ -108,7 +108,7 @@ Podemos hacer lo mismo en la segunda pantalla de esta aplicación, en la que usa
 ## <a name="interact-with-a-form"></a>Interactuar con un formulario
 Después de desbloquear una tarjeta, puede cambiar la forma en que interactúa con el formulario que la contiene.
 
-Más adelante se muestran algunas directrices sobre cómo deben funcionar los controles con su tarjeta y cómo deben funcionar las tarjetas con el formulario. Se trata únicamente de directrices. Como ocurre con todos los controles de PowerApps, puede crear fórmulas que hagan referencia a cualquier otro control de PowerApps, y lo mismo ocurre para las tarjetas y los controles dentro de estas. Sea creativo: puede crear una aplicación de muchas maneras.  
+Más adelante se muestran algunas directrices sobre cómo deben funcionar los controles con su tarjeta y cómo deben funcionar las tarjetas con el formulario. Se trata únicamente de directrices. Como sucede con cualquier control en Power Apps, puede crear fórmulas que hagan referencia a cualquier otro control de Power apps y eso no es menos cierto para tarjetas y controles dentro de las tarjetas. Sea creativo: puede crear una aplicación de muchas maneras.  
 
 ### <a name="datafield-property"></a>Propiedad DataField
 La propiedad más importante de la tarjeta es **[DataField](controls/control-card.md)** .  Esta propiedad controla la validación, qué campo se actualiza y otros aspectos de la tarjeta.

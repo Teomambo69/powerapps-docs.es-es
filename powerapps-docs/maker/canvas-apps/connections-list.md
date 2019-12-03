@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
-ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
+ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261927"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678865"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
-Los datos están el núcleo de la mayoría de las aplicaciones, entre las que se incluyen las que se compilan en PowerApps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. PowerApps tiene conectores para muchos de los servicios y orígenes de datos locales más usados, como SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
+Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
 
 Un conector puede proporcionar **tablas** de datos o **acciones**. Algunos conectores solo ofrecen tablas, algunos solo ofrecen acciones y otros ofrecen ambas. Además, el conector puede ser un conector estándar o personalizado.
 
 ## <a name="tables"></a>Tablas
 
-Si el conector ofrece tablas, agregue el origen de datos y luego seleccione la tabla en el origen de datos que quiere administrar. PowerApps recupera los datos de la tabla en la aplicación y actualiza automáticamente los datos en el origen de datos. Por ejemplo, puede agregar un origen de datos que contenga una tabla denominada **Lecciones** y luego establecer la propiedad **Items** de un control, como una galería o un formulario, en este valor en la barra de fórmulas:
+Si el conector ofrece tablas, agregue el origen de datos y luego seleccione la tabla en el origen de datos que quiere administrar. Power apps recupera datos de la tabla en la aplicación y actualiza los datos en el origen de datos. Por ejemplo, puede agregar un origen de datos que contenga una tabla denominada **Lecciones** y luego establecer la propiedad **Items** de un control, como una galería o un formulario, en este valor en la barra de fórmulas:
 
  ![Propiedad Items en orígenes de datos sin formato](./media/connections-list/ItemPropertyPlain.png)
 
@@ -58,7 +58,7 @@ Para obtener más información sobre cómo personalizar la fórmula para las act
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps no funciona con el esquema dinámico**. La frase esquema dinámico hace referencia a la posibilidad de que la misma acción pueda devolver una tabla diferente con columnas diferentes. Entre otras, las condiciones que pueden hacer que las columnas de las tablas difieran son los parámetros de entrada de la acción, el usuario o el rol que ejecuta la acción y el grupo en el que está trabajando el usuario. Por ejemplo, SQL Server procedimientos almacenados pueden devolver diferentes columnas si se ejecutan con diferentes entradas. En el caso de las acciones con esquema dinámico, la documentación del conector muestra **que las salidas de esta operación son dinámicas.** como valor devuelto. Por el contrario, Power automatizate funciona con el esquema dinámico y podría proporcionar una solución alternativa para su escenario.
+>  **Power apps no funciona con el esquema dinámico**. La frase esquema dinámico hace referencia a la posibilidad de que la misma acción pueda devolver una tabla diferente con columnas diferentes. Entre otras, las condiciones que pueden hacer que las columnas de las tablas difieran son los parámetros de entrada de la acción, el usuario o el rol que ejecuta la acción y el grupo en el que está trabajando el usuario. Por ejemplo, SQL Server procedimientos almacenados pueden devolver diferentes columnas si se ejecutan con diferentes entradas. En el caso de las acciones con esquema dinámico, la documentación del conector muestra **que las salidas de esta operación son dinámicas.** como valor devuelto. Por el contrario, Power automatizate funciona con el esquema dinámico y podría proporcionar una solución alternativa para su escenario.
 
 ## <a name="popular-connectors"></a>Conectores populares
 
@@ -77,9 +77,9 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 \* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
-PowerApps ofrece conectores *estándar* para muchos orígenes de datos de uso común, como los indicados anteriormente. Si PowerApps tiene un conector estándar para el tipo de origen de datos que quiere utilizar, ha de usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
+Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso común, como los mencionados anteriormente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Todos los conectores estándar
-Vea la [referencia de conectores de Microsoft](https://docs.microsoft.com/connectors/) para obtener una lista de todos los conectores estándar. Los conectores Premium requieren el plan 1 o el plan 2 de PowerApps. Para más información, consulte los [planes de PowerApps](https://powerapps.microsoft.com/pricing/).
+Vea la [referencia de conectores de Microsoft](https://docs.microsoft.com/connectors/) para obtener una lista de todos los conectores estándar. Los conectores premium requieren Power apps plan 1 o plan 2. Para obtener más información, consulte [planes de Power apps](https://powerapps.microsoft.com/pricing/).
 
-Puede formular preguntas sobre un conector específico en los [foros de PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1), así como sugerir que se agreguen conectores o se realicen otras mejoras en [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) (Ideas para PowerApps).
+Puede formular preguntas sobre un conector específico en los [foros de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)y puede sugerir conectores para agregar o realizar otras mejoras en las [ideas de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).

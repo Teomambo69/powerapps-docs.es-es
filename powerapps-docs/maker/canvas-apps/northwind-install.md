@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fe1192adca08d1fbde82b4b49ded5f5ca6a409e0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541337"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675791"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Instalar la base de datos y las aplicaciones de Northwind Traders
 
@@ -28,7 +28,7 @@ Northwind Traders es una organización ficticia que administra pedidos, producto
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Una licencia de PowerApps que admita Common Data Service. Puede [usar una licencia de evaluación gratuita](../signup-for-powerapps.md) durante 30 días.
+- Una licencia de Power apps que admita Common Data Service. Puede [usar una licencia de evaluación gratuita](../signup-for-powerapps.md) durante 30 días.
 - Un entorno con una base de datos de Common Data Service. Puede [crear este tipo de entorno](https://docs.microsoft.com/power-platform/admin/create-environment) si tiene los permisos adecuados.
 
 ## <a name="download-the-solution"></a>Descarga de la solución

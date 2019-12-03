@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985512"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680314"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Función Concurrent de PowerApps
 Evalúa varias fórmulas simultáneamente entre sí.
@@ -29,9 +28,9 @@ La función **Concurrent** evalúa varias fórmulas al mismo tiempo. Normalmente
 
 En la propiedad [**OnStart**](../controls/control-screen.md) de la aplicación, use **Concurrent** para mejorar el rendimiento cuando la aplicación carga los datos. Si las llamadas de datos no se inician hasta que terminan las llamadas anteriores, la aplicación debe esperar la suma de todos los tiempos de solicitud. Si las llamadas de datos se inician al mismo tiempo, la aplicación solo debe esperar el tiempo de solicitud más largo. Los exploradores web suelen mejorar el rendimiento al realizar las operaciones de datos de forma simultánea.
 
-No se puede predecir el orden en que las fórmulas de la función **Concurrent** inician y terminan la evaluación. Las fórmulas de la función **Concurrent** no deben contener dependencias en otras fórmulas de la misma función **Concurrent** y, si se intenta, PowerApps muestra un error. Desde dentro, es posible tomar dependencias en fórmulas de fuera de la función **Concurrent** con seguridad, puesto que se completan antes de que se inicie la función **Concurrent**. Las fórmulas posteriores a la función **simultánea** pueden tomar dependencias de las fórmulas en: todas se completarán antes de que finalice la función **simultánea** y se desplacen a la siguiente fórmula de una cadena (si usa el operador **;** ). Esté atento a las dependencias de orden sutiles si está llamando a funciones o métodos de servicio con efectos secundarios.
+No se puede predecir el orden en que las fórmulas de la función **Concurrent** inician y terminan la evaluación. Las fórmulas dentro de la función **simultánea** no deben contener dependencias en otras fórmulas dentro de la misma función **simultánea** y Power apps muestra un error si lo intenta. Desde dentro, es posible tomar dependencias en fórmulas de fuera de la función **Concurrent** con seguridad, puesto que se completan antes de que se inicie la función **Concurrent**. Las fórmulas posteriores a la función **simultánea** pueden tomar dependencias de las fórmulas en: todas se completarán antes de que finalice la función **simultánea** y se desplacen a la siguiente fórmula de una cadena (si usa el operador **;** ). Esté atento a las dependencias de orden sutiles si está llamando a funciones o métodos de servicio con efectos secundarios.
 
-Puede encadenar fórmulas junto con el operador **;** dentro de un argumento a **simultáneo**. Por ejemplo, **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** evalúa **Set( a; 1 );; Set( b; a+1 )** simultáneamente con **Set( x; 2 );; Set( y; x+2 )** . En este caso, las dependencias dentro de las fórmulas están bien: **a** se establece antes de **b** y **x** se establece antes de **y**.
+Puede encadenar fórmulas junto con el operador **;** dentro de un argumento a **simultáneo**. Por ejemplo, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** evalúa **Set( a, 1 ); Set( b, a+1 )** simultáneamente con **Set( x, 2 ); Set( y, x+2 )** . En este caso, las dependencias dentro de las fórmulas están bien: **a** se establece antes de **b** y **x** se establece antes de **y**.
 
 Según el dispositivo o explorador en el que se ejecute la aplicación, es posible que solo un puñado de fórmulas se evalúen realmente de forma simultánea. **Concurrent** usa las capacidades disponibles y no finaliza hasta que se han evaluado todas las fórmulas.
 
@@ -40,7 +39,7 @@ Si habilita **Administración de errores a nivel de fórmula** (en Configuració
 Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Concurrent**( *Formula1*; *Formula2* [; ...] )
+**Concurrent**( *Formula1*, *Formula2* [, ...] )
 
 * *Formula(s)* : requerido. Fórmulas que se van a evaluar de forma simultánea. Se deben proporcionar al menos dos fórmulas.
 
@@ -50,17 +49,17 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 1. Cree una aplicación y agregue cuatro orígenes de datos de Common Data Service, SQL Server o SharePoint. 
 
-    En este ejemplo se usan cuatro tablas de la [base de datos de ejemplo Adventure Works en SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Después de crear la base de datos, conéctese a ella desde PowerApps con el nombre de servidor completo (por ejemplo, srvname.database.windows.net):
+    En este ejemplo se usan cuatro tablas de la [base de datos de ejemplo Adventure Works en SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Después de crear la base de datos, conéctese a ella desde Power apps con el nombre completo del servidor (por ejemplo, srvname.database.windows.net):
 
     ![Conexión a la base de datos Adventure Works en Azure](media/function-concurrent/connect-database.png)
 
 2. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-comma
-    ClearCollect( Product; '[SalesLT].[Product]' );;
-    ClearCollect( Customer; '[SalesLT].[Customer]' );;
-    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
-    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. En [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/), active las herramientas de desarrollador para supervisar el tráfico de red mientras se ejecuta la aplicación.
@@ -75,16 +74,16 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 5. Guarde, cierre y vuelva a abrir la aplicación.
 
-    PowerApps almacena los datos en caché, por lo que al volver a seleccionar el botón no se realizan necesariamente cuatro nuevas solicitudes. Cada vez que quiera probar el rendimiento, cierre y vuelva a abrir la aplicación. Si ha activado el límite de red, puede desactivarlo hasta que esté listo para otra prueba.
+    Power apps almacena en caché los datos, por lo que si selecciona el botón de nuevo no se producirán necesariamente cuatro solicitudes nuevas. Cada vez que quiera probar el rendimiento, cierre y vuelva a abrir la aplicación. Si ha activado el límite de red, puede desactivarlo hasta que esté listo para otra prueba.
 
 1. Agregue un segundo control **[Botón](../controls/control-button.md)** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent( 
-        ClearCollect( Product; '[SalesLT].[Product]' ); 
-        ClearCollect( Customer; '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
-        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -112,19 +111,19 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 3. Agregue un control **Botón** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-comma
-    Set( StartTime; Value( Now() ) );;
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
     Concurrent(
-        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
-            Set( FRTransTime; Value( Now() ) );
-        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
-            Set( DETransTime; Value( Now() ) )
-    );;
-    Collect( Results;
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
         { 
-            Input: TextInput1.Text;
-            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
-            German: DETrans; GermanTime: DETransTime - StartTime; 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
             FrenchFaster: FRTransTime < DETransTime
         }
     )
@@ -150,4 +149,4 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
     En algunos casos, la traducción al francés es más rápida que la traducción al alemán y viceversa. Ambas se inician al mismo tiempo, pero una se devuelve antes que la otra por diversos motivos, incluidos el procesamiento de servidor y la latencia de red.
 
-    Se produce una [condición de carrera](https://en.wikipedia.org/wiki/Race_condition) si la aplicación dependía de que una traducción terminara primero. Afortunadamente, PowerApps marca la mayoría de las dependencias de tiempo que puede detectar.
+    Se produce una [condición de carrera](https://en.wikipedia.org/wiki/Race_condition) si la aplicación dependía de que una traducción terminara primero. Afortunadamente, Power apps marca la mayoría de las dependencias de tiempo que puede detectar.

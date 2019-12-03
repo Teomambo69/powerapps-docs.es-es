@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df9ad0aead9681d3458d70f44f929c15c073f35a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897803"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678750"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Conectarse a una instancia de Oracle Database desde PowerApps
-Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instancia de Oracle Database después de crear una conexión y compilar una aplicación en PowerApps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.
+Enumerar las tablas y crear, leer, actualizar y eliminar filas de tabla en una base de datos de Oracle después de crear una conexión y compilar una aplicación en Power apps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.
 
 ## <a name="prerequisites"></a>Requisitos previos
 * Oracle 9 y versiones posteriores
@@ -32,13 +32,13 @@ Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instan
 ### <a name="install-an-on-premises-data-gateway"></a>Instalar una puerta de enlace de datos local
 Para instalar una puerta de enlace, siga los pasos de [este tutorial](../gateway-management.md).
 
-Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y los servicios Power BI, Power Automatic, Logic Apps y PowerApps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
+Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y los servicios de Power BI, automatización, Logic Apps y Power apps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Instalar el cliente de Oracle
 En el mismo equipo que la puerta de enlace de datos local, instale [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). De lo contrario, aparecerá un error si intenta crear o usar la conexión, como se describe en la lista de problemas conocidos.
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Crear una aplicación desde una tabla de una instancia de Oracle Database
-1. En PowerApps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo** (cerca del borde izquierdo).
+1. En Power apps Studio, haga clic o pulse en **nuevo** en el menú **archivo** (cerca del borde izquierdo).
    
    ![Nueva opción](./media/connection-oracledb/new-app.png)
 2. En **Comenzar con los datos**, haga clic o pulse la flecha.
@@ -74,7 +74,7 @@ En el mismo equipo que la puerta de enlace de datos local, instale [64-bit ODAC 
     
     ![Nuevo](./media/connection-oracledb/connect-button.png)
 
-PowerApps crea una aplicación que tiene tres pantallas y muestra los datos de la tabla que ha seleccionado:
+Power apps crea una aplicación que tiene tres pantallas y muestra los datos de la tabla seleccionada:
 
 * **BrowseScreen1**, que enumera todas las entradas de la tabla.
 * **DetailScreen1**, que proporciona más información acerca de una sola entrada.

@@ -1,5 +1,5 @@
 ---
-title: Problemas habituales de PowerApps y soluciones a los mismos | Microsoft Docs
+title: Problemas comunes y soluciones para Power apps | Microsoft Docs
 description: Lista de problemas y soluciones habituales de PowerApps.
 author: KumarVivek
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c093adb4b63b5374de118d8d7dbb3421e352f46
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541070"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678796"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
 
-En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar PowerApps. Si procede, se proporcionan soluciones alternativas.
+En este artículo se enumeran algunos problemas comunes que pueden surgir al usar Power apps. Si procede, se proporcionan soluciones alternativas.
 
 1. **Problema de inicio de sesión en determinados dispositivos móviles Android cuando se usa el autenticador** (21 de agosto de 2019)
 
@@ -36,24 +36,24 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
     Si tiene una limitación al desplazarse con el dedo, levante el dedo y empiece a desplazarse de nuevo.
 
-1. **Dibujar con mouse o entrada táctil no es suave en PowerApps para Windows** (Sep. 24, 2018)
+1. **Dibujar con mouse o entrada táctil no es suave en Power apps para Windows** (Sep. 24, 2018)
 
     El control Pen solo tiene compatibilidad parcial con el dibujo mediante el mouse o la entrada táctil en la aplicación de Windows. Los trazos pueden ser intermitentes. Para suavizar el dibujo, use un lápiz o ejecute la aplicación en un explorador.
 
-1. **Varios controles de medios en PowerApps Mobile** (2 de agosto de 2018)
+1. **Varios controles multimedia en Power apps Mobile** (2 de agosto de 2018)
 
-    PowerApps Mobile se ejecuta en diversos tipos de dispositivos y, algunos de ellos, tienen limitaciones específicas de esa plataforma:
+    Power apps Mobile se ejecuta en varios tipos de dispositivos y algunos tienen limitaciones específicas de esa plataforma:
 
     - Puede reproducir vídeos en varios controles de **vídeo** al mismo tiempo en todas las plataformas, excepto en dispositivos iPhone.
     - Puede grabar audio con varios controles de **micrófono** al mismo tiempo en todas las plataformas, excepto en el reproductor de web.
 
 1. **Volver a publicar aplicaciones** (2 de agosto de 2018)
 
-    Si no ha actualizado la aplicación en varios meses, vuelva a publicarla para sincronizarla con la versión más reciente de PowerApps, que incluye mejoras de rendimiento y otras correcciones.
+    Si no ha actualizado la aplicación en varios meses, vuelva a publicarla para sincronizarla con la versión más reciente de Power Apps, lo que incluye mejoras de rendimiento y otras correcciones.
 
 1. <a name="out-of-memory"></a>**Memoria insuficiente del explorador** (23 de julio de 2018)
 
-    Si se queda sin memoria mientras usa PowerApps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
+    Si se queda sin memoria mientras usa Power Apps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
 
 1. **Iniciar un sitio web desde una aplicación insertada** (10 de mayo de 2018)
 
@@ -65,7 +65,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Usar una imagen personalizada como icono de aplicación** (11 de abril de 2018)
 
-    En la versión 3.18043 de PowerApps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, utilice para ello [PowerApps Studio para web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Como alternativa, puede usar uno de los iconos que se incluyen con PowerApps Studio para Windows y personalizar el color de fondo.
+    En Power apps Studio para Windows, versión 3,18043, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, use [Power apps Studio para web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para cargar una imagen personalizada. Como alternativa, puede usar uno de los iconos que se incluyen con Power apps Studio para Windows y personalizar el color de fondo.
 
 1. **Copiar y pegar pantallas entre aplicaciones** (4 de abril de 2018)
 
@@ -79,33 +79,33 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
     Si copia y pega un control **Data Table** en el que la propiedad **Elementos** se ha establecido en una fórmula que contenga una función **Filter**, la fórmula de la propiedad  **Elementos** del nuevo control **Data Table** termina una con nombres de campo que contienen el sufijo **_1**. Esto hace que los nombres de campo no sean válidos y que no se muestren datos en la tabla de datos. Para solucionar este problema, antes de copiar el control, confirme que la función **Filter** no hace referencia a ningún campo del origen de datos que se llame igual que alguna columna del control **Data Table**. En caso de que haga referencia, cambie el nombre de la columna en el control **Data Table**. O bien, quite el sufijo **_1** sufijo de los nombres de campo no válidos para que coincidan con los nombres de la entidad.
 
-1. **Controles de la cámara en PowerApps Studio para Windows**
+1. **Controles de cámara en Power apps Studio para Windows**
 
-    PowerApps Studio para Windows puede bloquearse si agrega un control de cámara o abre una aplicación que utilice un control de cámara. Para evitar este problema, use [PowerApps Studio para web](create-app-browser.md) cuando agregue o use un control de cámara.
+    Power apps Studio para Windows puede bloquearse si agrega un control de cámara o abre una aplicación que usa un control de cámara. Para evitar este problema, use [Power apps Studio para web](create-app-browser.md) al agregar o usar un control de cámara.
 
 1. **Versión 2.0.700 en dispositivos Android**
 
-    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale PowerApps, reinicie el dispositivo y vuelva a instalar PowerApps.
+    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale Power Apps, reinicie el dispositivo y, a continuación, vuelva a instalar PowerApps.
 
 1. **Galería "vacía" al abrir una aplicación**
 
     Si genera una aplicación automáticamente a partir de datos, guarda la aplicación y, a continuación, vuelve a abrirla, la galería podría no mostrar datos inmediatamente. Para resolver este problema, escriba al menos un carácter en el cuadro de búsqueda y, a continuación, elimine el texto que ha escrito. La galería mostrará los datos según lo previsto.
 
-1. **Actualización de PowerApps en Windows 8.1**
+1. **Actualización de Power Apps en Windows 8.1**
 
-    Si instala PowerApps en un equipo que ejecuta Windows 8 o Windows 8.1, mantenga la aplicación de la Tienda Windows abierta y activa, use el acceso a Configuración para comprobar si hay actualizaciones y, a continuación, instálelas.
+    Si instala Power Apps en un equipo que ejecuta Windows 8 o Windows 8.1, mantenga la aplicación de la tienda Windows abierta y activa, use el acceso a configuración para comprobar si hay actualizaciones y, a continuación, instálelos.
 
 1. **Conectores personalizados y Common Data Service**
 
-    Si una aplicación creada con PowerApps compilación 2.0.540 o anterior está basada en una base de datos de Common Data Service y al menos un conector personalizado en un entorno diferente, tendrá que implementar el conector en el mismo entorno que la base de datos y actualizar la aplicación para que use el nuevo conector. De lo contrario, un cuadro de diálogo notificará a los usuarios de que no se encontró la API. Para más información, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos).
+    Si una aplicación creada con Power apps Build 2.0.540 o una versión anterior se basa en una base de datos en el Common Data Service y al menos un conector personalizado en un entorno diferente, tendrá que implementar el conector en el mismo entorno que la base de datos y actualizar la aplicación para que use TH e nuevo conector. De lo contrario, un cuadro de diálogo notificará a los usuarios de que no se encontró la API. Para más información, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos).
 
 1. **Ejecución de una aplicación en Windows 8.1**
 
-    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en PowerApps Studio en ese sistema operativo. Aunque todavía puede ejecutar aplicaciones que se abren en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con PowerApps Mobile.
+    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no puede ejecutar aplicaciones que abra en Power apps Studio en ese sistema operativo. Sin embargo, todavía puede ejecutar aplicaciones que abra en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con Power apps Mobile.
 
 1. **Nombres de columna con espacios**
 
-    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, PowerApps lo reemplazará por **"\_x0020\_"** . Por ejemplo, **"Nombre de columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contiene un espacio, Power apps lo reemplazará por **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint o Excel aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 1. **Cambio de un flujo en una aplicación compartida**
 
@@ -131,7 +131,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Creación y modificación de aplicaciones en un explorador**
 
-    En la versión web de PowerApps Studio puede hacer muchas de las cosas que puede hacer en PowerApps Studio para Windows, pero no todas. Para más información, consulte [Create an app in a browser](create-app-browser.md) (Crear una aplicación en un explorador).
+    Puede realizar muchas de las mismas cosas, pero no todas, en Power apps Studio para web como en Power apps Studio para Windows. Para más información, consulte [Create an app in a browser](create-app-browser.md) (Crear una aplicación en un explorador).
 
 1. **Cambio de un campo de título en una entidad**
 
@@ -139,15 +139,15 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Aplicaciones que se conectan a SharePoint local**
 
-    Si comparte una aplicación que se basa en conexiones que no se comparten automáticamente (por ejemplo, un sitio de SharePoint local), los usuarios que abran la aplicación en un explorador verán un cuadro de diálogo sin texto al hacer clic o pulsar en **Iniciar sesión**. Para cerrar el cuadro de diálogo, haga clic o pulse en el icono Cerrar (X) en la esquina superior derecha. El cuadro de diálogo no aparece si se abre la aplicación en PowerApps Studio o PowerApps Mobile. Para más información acerca de las conexiones compartidas, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
+    Si comparte una aplicación que se basa en conexiones que no se comparten automáticamente (por ejemplo, un sitio de SharePoint local), los usuarios que abran la aplicación en un explorador verán un cuadro de diálogo sin texto al hacer clic o pulsar en **Iniciar sesión**. Para cerrar el cuadro de diálogo, haga clic o pulse en el icono Cerrar (X) en la esquina superior derecha. El cuadro de diálogo no aparece si abre la aplicación en Power apps Studio o en Power apps Mobile. Para más información acerca de las conexiones compartidas, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
 
-1. **Cuando PowerApps genera una aplicación a partir de datos, el campo utilizado para ordenar y buscar no está configurado automáticamente**.
+1. **Cuando Power apps genera una aplicación a partir de datos, el campo usado para ordenar y buscar no se configura automáticamente**.
 
    Para configurar este campo, modifique la fórmula **[Elementos](controls/properties-core.md)** de la galería, tal como se describe en las secciones para filtrar y ordenar en [Add a gallery](add-gallery.md) (Agregar una galería).
 
 1. **Para las aplicaciones que se crean a partir de datos, solo se puede acceder a los 500 primeros registros de un origen de datos**.
 
-     En general, PowerApps funciona con orígenes de datos de cualquier tamaño mediante la delegación de operaciones al origen de datos. Para las operaciones que no se pueden delegar, PowerApps mostrará una advertencia en el momento de la creación y operará solo en los 500 primeros registros del origen de datos.  Consulte el artículo [Filter function](functions/function-filter-lookup.md) (Función de filtro) para más información acerca de la delegación.
+     En general, Power apps funciona con cualquier origen de datos de tamaño mediante la delegación de las operaciones en el origen de datos. En el caso de las operaciones que no se pueden delegar, Power apps emitirá una advertencia en el momento de la creación y operará solo en los primeros 500 registros del origen de datos.  Consulte el artículo [Filter function](functions/function-filter-lookup.md) (Función de filtro) para más información acerca de la delegación.
 
 1. **Se debe dar un formato de tabla a los datos de Excel**.
 

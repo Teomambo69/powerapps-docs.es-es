@@ -1,6 +1,6 @@
 ---
 title: Introducción a las fórmulas en una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, use fórmulas para personalizar una aplicación de lienzo.
+description: En Power Apps, use fórmulas para personalizar una aplicación de lienzo.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541605"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673209"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
 
 Configure la aplicación de lienzo con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
 
 * En Excel, se crean fórmulas que, por ejemplo, rellenan celdas y crean tablas y gráficos.
-* En PowerApps, va a crear fórmulas parecidas al configurar controles en lugar de celdas. Además, va a crear fórmulas que se aplican específicamente a aplicaciones en lugar de a hojas de cálculo.
+* En Power Apps, se generan fórmulas similares a medida que se configuran los controles en lugar de las celdas. Además, va a crear fórmulas que se aplican específicamente a aplicaciones en lugar de a hojas de cálculo.
 
 Por ejemplo, puede crear una fórmula para determinar cómo responde la aplicación cuando los usuarios seleccionan un botón, ajustan un control deslizante o proporcionan otra entrada. Estas fórmulas podrían mostrar una pantalla diferente, actualizar un origen de datos externo a la aplicación o crear una tabla que contiene un subconjunto de los datos de una tabla existente.
 
@@ -36,12 +35,12 @@ En este tema se proporciona únicamente información general sobre cómo trabaja
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 * Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
 
 ## <a name="show-a-simple-value"></a>Mostrar un valor simple
 
-En Excel, puede indicar un dato específico, como el número **42** o la frase **Hello World**, escribiéndolo en una celda. Esa celda siempre mostrará el dato exactamente como lo escribió. En PowerApps, de forma similar, puede especificar un dato que no cambia si establece la propiedad **[Text](controls/properties-core.md)** de una etiqueta en la secuencia exacta de caracteres que desee, entre comillas dobles.
+En Excel, puede indicar un dato específico, como el número **42** o la frase **Hello World**, escribiéndolo en una celda. Esa celda siempre mostrará el dato exactamente como lo escribió. En Power Apps, puede especificar de forma similar un fragmento de datos que no cambie si establece la propiedad **[Text](controls/properties-core.md)** de una etiqueta en la secuencia exacta de caracteres que desee, entre comillas dobles.
 
 1. Seleccione **Nuevo** en el menú **Archivo** (cerca del borde izquierdo de la pantalla).
 2. En **Create an app** (Crear aplicación), seleccione **Diseño de teléfono** en el icono **Aplicación vacía**.
@@ -71,11 +70,11 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     La etiqueta refleja este nuevo valor a medida que lo escribe.  Es posible que aparezcan en pantalla iconos de signos de exclamación amarillos mientras escriba. Estos iconos indican errores, pero desaparecerán cuando termine de escribir un valor válido. Por ejemplo, una cadena no encerrada entre comillas dobles no es válida.
 
-    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30;12)** . En PowerApps, puede lograr el mismo efecto si establece la propiedad **Texto** de un control, como una etiqueta, en **42** o **Sum(30;12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
+    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30,12)** . En Power Apps, puede lograr el mismo efecto si establece la propiedad **texto** de un control, como una etiqueta, en **42** o **SUM (30, 12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
 
     > [!NOTE]
-   > En PowerApps, no anteponga un signo igual o más a la fórmula como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
-5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1;2;3)** .
+   > En Power Apps, no precede una fórmula con un signo igual o un signo más como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
+5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1,2,3)** .
 
     ![Si escribe la función parcial Sum(1,2,3 sin paréntesis de cierre, aparecen errores](./media/working-with-formulas/label-sum-partial.png)
 
@@ -89,19 +88,19 @@ En Excel, escriba **= a1 + a2** en una celda para mostrar la suma de los valores
 
 ![Animación de Excel que vuelve a calcular la suma de dos números](./media/working-with-formulas/excel-recalc.gif)
 
-En PowerApps, puede lograr un resultado similar agregando controles a una pantalla y estableciendo sus propiedades. En este ejemplo se muestra un control de etiqueta denominado **Label1** y dos controles de **[entrada de texto](controls/control-text-input.md)** , denominados **TextInput1** y **TextInput2**.
+En Power Apps, puede obtener un resultado similar agregando controles a una pantalla y estableciendo sus propiedades. En este ejemplo se muestra un control de etiqueta denominado **Label1** y dos controles de **[entrada de texto](controls/control-text-input.md)** , denominados **TextInput1** y **TextInput2**.
 
-![Ilustrar el recálculo de la suma de dos números en PowerApps](./media/working-with-formulas/recalc1.png)
+![Ilustración de Power apps que vuelve a calcular la suma de dos números](./media/working-with-formulas/recalc1.png)
 
 Con independencia de los números que escriba en los controles de entrada de texto, la etiqueta siempre muestra la suma de esos números porque su propiedad **[Texto](controls/properties-core.md)** está establecida en esta fórmula:
 
 `TextInput1 + TextInput2`
 
-![Animación de PowerApps que vuelve a calcular la suma de dos números](./media/working-with-formulas/recalc2.gif)
+![Animación de Power apps que vuelve a calcular la suma de dos números](./media/working-with-formulas/recalc2.gif)
 
-En Excel, puede usar fórmulas de formato condicional para mostrar, por ejemplo, valores negativos en rojo. En PowerApps, puede usar fórmulas para determinar no solo el valor principal de un control, sino propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[color](controls/properties-color-border.md)** de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
+En Excel, puede usar fórmulas de formato condicional para mostrar, por ejemplo, valores negativos en rojo. En Power Apps, puede usar fórmulas para determinar no solo el valor principal de un control, sino también propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[color](controls/properties-color-border.md)** de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Puede configurar la aplicación con fórmulas para que los usuarios puedan cambi
     Puede especificar la propiedad **Max** si la selecciona en la pestaña **Contenido** o en la lista de propiedades:
 
     ![Cambiar el valor máximo de cada control deslizante](./media/working-with-formulas/three-sliders-max.png)
-4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Como ya se ha descrito, para acceder a las propiedades de un control, use el operador " **.** " .  **Slider1.Value** se refiere a la propiedad **[Value](controls/properties-core.md)** del control deslizante, que refleja el lugar donde el usuario ha colocado el control deslizante entre los valores **Min** y **Max**. A medida que escribe esta fórmula, cada control que la contenga se marca con un color entre la pantalla y la barra de fórmulas:
 

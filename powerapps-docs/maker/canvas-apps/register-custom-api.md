@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 2997c2854979d019a71de8d00ddab37263b789d6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899822"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675424"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Conectores personalizados para aplicaciones de lienzo
 
@@ -32,7 +32,7 @@ Aunque, a veces, es posible que quiera llamar a API, servicios y sistemas que no
 
 * [Creación de un conector personalizado desde cero](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
-* [Uso de un conector personalizado a partir de una aplicación de PowerApps](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps)
+* [Uso de un conector personalizado desde una aplicación de Power apps](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps)
 
 * [Uso compartido de los conectores personalizados en la organización](https://docs.microsoft.com/connectors/custom-connectors/share)
 

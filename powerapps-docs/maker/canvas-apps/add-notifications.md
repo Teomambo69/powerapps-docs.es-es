@@ -13,16 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897917"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678911"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Envío de una notificación push en PowerApps
-Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En PowerApps, se pueden enviar notificaciones mediante el conector PowerApps Notification. Puede enviarse notificaciones push nativas a cualquier aplicación que se cree en PowerApps. Está previsto agregar más tipos de notificación en el futuro.
+Las notificaciones push se utilizan en aplicaciones para dispositivos móviles en escenarios tanto empresariales como de consumo para interactuar con los usuarios de las aplicaciones y les ayuda a dar prioridad a las tareas clave. En Power Apps, puede enviar notificaciones mediante el conector de notificaciones de Power apps. Puede enviar notificaciones de envío nativas a cualquier aplicación que cree en Power apps. Está previsto agregar más tipos de notificación en el futuro.
 
 ![Ejemplo de cómo es una notificación push](./media/add-notifications/pic1-notification-screenshot.png)
 
@@ -33,10 +32,10 @@ Las notificaciones push se agregan a aplicaciones en los siguientes casos:
 * Desea ponerse en contacto a los usuarios en un intervalo específico o necesita que los usuarios interactúen con la aplicación en un contexto concreto.
 
 > [!NOTE]
-> Para recibir notificaciones push, cada usuario debe haber abierto una vez la aplicación en PowerApps Mobile, o haber recibido de AppSource en [Dynamics 365](https://home.dynamics.com/).
+> Para recibir notificaciones de envío, cada usuario debe haber abierto la aplicación en Power apps Mobile una vez o haber obtenido la aplicación de AppSource en [Dynamics 365](https://home.dynamics.com/).
 
 ## <a name="before-you-start"></a>Antes de comenzar
-En una aplicación en la que tenga permiso de **colaborador**, agregue una conexión de PowerApps Notification. Si no tiene una aplicación, puede [crearla rápidamente a partir de una plantilla](get-started-test-drive.md), y tendrá el permiso necesario de forma predeterminada. Este tutorial y éste usan una aplicación basada en la plantilla de administración de casos.
+En una aplicación para la que tenga el permiso de **colaborador** , agregue una conexión de notificación de Power apps. Si no tiene una aplicación, puede [crearla rápidamente a partir de una plantilla](get-started-test-drive.md), y tendrá el permiso necesario de forma predeterminada. Este tutorial y éste usan una aplicación basada en la plantilla de administración de casos.
 
 ## <a name="send-a-notification-from-a-flow"></a>Envío de una notificación desde un flujo
 > [!NOTE]
@@ -47,11 +46,11 @@ En una aplicación en la que tenga permiso de **colaborador**, agregue una conex
     Por ejemplo, puede enviar una notificación cuando se agregue un registro a la entidad **Case** de Common Data Service.
 
     ![Captura de pantalla de la creación de un flujo con un desencadenador de Common Data Service](./media/add-notifications/pic4-step1-flowupdated.png)
-2. Cree una acción para el flujo mediante el conector **PowerApps Notification** y escriba la **identificador** de la aplicación a la que desea enviar notificaciones.
+2. Cree una acción para el flujo mediante el conector de **notificaciones de Power apps** y escriba el **identificador** de la aplicación a la que desea enviar notificaciones.
 
     También puede cambiar el nombre de la conexión para que refleje su escenario.
 
-    ![Captura de pantalla de creación de una conexión con la instancia de PowerApps que recibirá las notificaciones push](./media/add-notifications/pic5-step2-create-connection.jpg)
+    ![Captura de pantalla de la creación de una conexión con las aplicaciones de Power apps que recibirán estas notificaciones de envío](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. (opcional) Pase parámetros a la aplicación cuando se abra (después de que el usuario pulse la notificación push).
 
     En este ejemplo, se distribuyen los campos **Case ID** e **Initial Owner** del contacto seleccionado.
@@ -65,7 +64,7 @@ Puede enviar una notificación push de una aplicación a otra o a la misma aplic
 2. En la pestaña **Detalles**, copie el contenido de **Id. de la aplicación** de dicha aplicación.
 
     ![Obtener el identificador de la aplicación](./media/add-notifications/grab-id.png)
-3. Vaya a la pestaña **Conexiones**, cree una conexión con el conector PowerApps Notification y péguela en el identificador de la aplicación del paso anterior.
+3. En la pestaña **conexiones** , cree una conexión al conector de notificaciones de Power apps y pegue el identificador de la aplicación del paso anterior.
 
     ![Crear conexión](./media/add-notifications/create-connection.png)
 4. Agregue la conexión a la aplicación de desencadenador.
@@ -77,7 +76,7 @@ Puede enviar una notificación push de una aplicación a otra o a la misma aplic
 
     En nuestro ejemplo, esta notificación se desencadena mediante el uso de la propiedad **OnSuccess** en un formulario.
 
-    ![Fórmula de PowerApps](./media/add-notifications/powerapps-function.png)
+    ![Fórmula de Power apps](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>Carga de una página y contexto concretos cuando un usuario pulsa la notificación
 ### <a name="pass-parameters"></a>Paso de parámetros
@@ -87,7 +86,7 @@ Su notificación push puede pasar parámetros concretos a la aplicación. Por ej
 Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del caso** en cuanto se abra la aplicación:
 
 1. Agregue un control **Timer** (Temporizador) y establezca su propiedad **OnTimerEnd** en esta fórmula:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (opcional) Oculte el control **Timer** (Temporizador) estableciendo la propiedad **Visible** en **false**.
 3. Establezca la propiedad **AlEstarVisible** de la pantalla en **Timer.Start()** .
 
@@ -115,10 +114,10 @@ Puede establecer que la aplicación abra, por ejemplo, la página **Detalles del
 ### <a name="sample-formulas"></a>Fórmulas de ejemplo
 Enviar una notificación básica.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,22 +125,22 @@ PowerAppsNotification.SendPushNotification(
 
 Enviar una notificación que abra una aplicación y distribuya parámetros concretos.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )
 ```
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
-* Actualmente, las notificaciones no se muestran en PowerApps Mobile para Windows Phone.
+* Actualmente, las notificaciones no se muestran en Power apps Mobile para Windows Phone.
 * Actualmente, no proporcionamos notificaciones push a los usuarios que ejecutan aplicaciones solo en un explorador web.
-* Las notificaciones muestran el icono de PowerApps genérico, en lugar de un icono específico de la aplicación.
+* Las notificaciones muestran el icono de las aplicaciones de energía genéricas en lugar de un icono de aplicación específico.
 * Al usar Power Automatic, puede enviar una notificación de envío a un solo destinatario cada vez.
 
-Para obtener información de referencia, consulte el artículo [PowerApps Notification (versión preliminar)](https://docs.microsoft.com/connectors/powerappsnotification/).
+Para obtener información de referencia, consulte [referencia de notificaciones de Power apps](https://docs.microsoft.com/connectors/powerappsnotification/).
 

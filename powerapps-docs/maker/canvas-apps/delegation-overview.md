@@ -13,27 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b03f60173ea09160677bd02adf8a91aae02c272d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985662"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679601"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
-PowerApps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo: **[Filtre](functions/function-filter-lookup.md)** , **[ordene](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** funciones para nombrar solo algunas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
+Power Apps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo **[: funciones de filtrado,](functions/function-filter-lookup.md)** **[ordenación](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** por nombrar solo algunas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
 
 La clave para compilar aplicaciones eficientes es minimizar la cantidad de datos que debe contener el dispositivo. Quizás necesite solo unos pocos registros de un mar de millones o que un único valor agregado pueda representar miles de registros. O quizás solo se pueda recuperar el primer conjunto de registros, y el resto se trae cuando el usuario indica que desea más. De esta forma se puede reducir drásticamente la potencia de procesamiento, la memoria y el ancho de banda de red que necesita la aplicación, lo que conlleva menores tiempos de respuesta para los usuarios, incluso en teléfonos conectados a través de una red móvil. 
 
-La *delegación* es el lugar en el que la expresividad de las fórmulas de PowerApps cubre la necesidad de minimizar la cantidad de datos que se mueven a través de la red. En resumen, PowerApps delega el procesamiento de los datos al origen de los mismos, en lugar de moverlos a la aplicación para que los procese localmente.
+La *delegación* es donde la expresividad de las fórmulas de Power apps satisface la necesidad de minimizar los datos que se mueven a través de la red. En Resumen, Power apps delegará el procesamiento de datos en el origen de datos, en lugar de mover los datos a la aplicación para su procesamiento local.
 
-Esto se complica, y el motivo por el que existe este artículo, porque no todo lo que se puede expresar en una fórmula de PowerApps puede delegarse a todos los orígenes de datos. El lenguaje de PowerApps imita el lenguaje de fórmulas de Excel, que se está diseñado con acceso completo e instantáneo a un libro completo en la memoria, con una amplia variedad de funciones numéricas y de manipulación de texto. Como consecuencia, el lenguaje de PowerApps es mucho complejo de lo que la mayoría de orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
+En los casos en los que esto resulta complicado y el motivo de este artículo, se debe a que no todo lo que se puede expresar en una fórmula de Power apps se puede delegar en todos los orígenes de datos. El lenguaje Power apps imita el lenguaje de fórmulas de Excel, diseñado con acceso completo e inmediato a un libro completo en memoria, con una amplia variedad de funciones de manipulación numérica y de texto. Como resultado, el lenguaje de Power apps es mucho más rico de lo que la mayoría de los orígenes de datos pueden admitir, incluidos motores de base de datos eficaces como SQL Server.
 
 **El trabajo con grandes conjuntos de datos requiere que se usen orígenes de datos y fórmulas que se puedan delegar.** Es la única manera de que la aplicación funcione correctamente y de tener la certeza de que los usuarios pueden acceder a toda la información que necesitan. Preste atención a las advertencias de delegación que identifiquen lugares donde esta no es posible. Si trabaja con conjuntos de datos pequeños (menos de 500 registros), puede usar cualquier origen de datos y cualquier fórmula, ya que la aplicación puede procesar datos en local si la fórmula no se puede delegar. 
 
 > [!NOTE]
-> Anteriormente las advertencias de delegación se marcaban en PowerApps como sugerencias de "punto azul", pero desde entonces las sugerencias de delegación se han reclasificado como advertencias. Si los datos del origen de datos superan los 500 registros y no se puede delegar una función, quizás PowerApps no pueda recuperar todos los datos y la aplicación pueda tener resultados incorrectos. Las advertencias de delegación permiten administrar la aplicación para que tenga resultados correctos.
+> Las advertencias de delegación se marcaron previamente en Power apps como sugerencias de "punto azul", pero las sugerencias de delegación se han vuelto a clasificar como advertencias. Si los datos del origen de datos superan los 500 registros y una función no se puede delegar, es posible que las aplicaciones de energía no puedan recuperar todos los datos y que la aplicación tenga resultados incorrectos. Las advertencias de delegación permiten administrar la aplicación para que tenga resultados correctos.
 
 ## <a name="delegable-data-sources"></a>Orígenes de datos delegables
 Solo se admite la delegación para determinados orígenes de datos tabulares. Si un origen de datos admite la delegación, en la [documentación del conector](https://docs.microsoft.com/connectors/) se describe dicha compatibilidad. Por ejemplo, estos orígenes de datos tabulares son los más populares y admiten la delegación:
@@ -42,7 +41,7 @@ Solo se admite la delegación para determinados orígenes de datos tabulares. Si
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-Los libros de Excel importados (mediante **Agregar datos estáticos a su** origen de datos de la aplicación), las colecciones y las tablas almacenadas en variables de contexto no requieren delegación. Todos estos datos ya están en la memoria y se puede aplicar el lenguaje de PowerApps completo.
+Los libros de Excel importados (mediante **Agregar datos estáticos a su** origen de datos de la aplicación), las colecciones y las tablas almacenadas en variables de contexto no requieren delegación. Todos estos datos ya están en memoria y se puede aplicar el idioma completo de Power apps.
 
 ## <a name="delegable-functions"></a>Funciones que se pueden delegar
 El siguiente paso es usar solo aquellas fórmulas que se puedan delegar. Aquí se incluyen los elementos de las fórmulas que se pueden delegar. Sin embargo, todos los orígenes de datos son diferentes, y no todos ellos admiten todos estos elementos. Compruebe si hay advertencias de delegación en la fórmula en cuestión.
@@ -71,9 +70,9 @@ La lista anterior no incluye estos elementos importantes:
 * **[*](functions/operators.md)** , **[/](functions/operators.md)** , **[Mod](functions/function-mod.md)**
 * **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)** )
 * **[ExactIn (ExactoEn)](functions/operators.md)**
-* Funciones de manipulación de cadenas: **[Lower](functions/function-lower-upper-proper.md)** , **[Upper](functions/function-lower-upper-proper.md)** , **[left](functions/function-left-mid-right.md)** , **[Mid](functions/function-left-mid-right.md)** , **[Len](functions/function-left-mid-right.md)** ,...
-* Simultáneamente **[Ubicación](functions/signals.md)** , **[aceleración](functions/signals.md)** , **[brújula](functions/signals.md)** ,...
-* Volátiles **[Rand](functions/function-rand.md)** ,...
+* Funciones de manipulación de cadenas: **[Minusc](functions/function-lower-upper-proper.md)** , **[Mayusc](functions/function-lower-upper-proper.md)** , **[Izquierda](functions/function-left-mid-right.md)** , **[Extrae](functions/function-left-mid-right.md)** , **[Largo](functions/function-left-mid-right.md)** , ...
+* Señales: **[Ubicación](functions/signals.md)** , **[Aceleración](functions/signals.md)** , **[Brújula](functions/signals.md)** , ...
+* Volatiles: **[Rand](functions/function-rand.md)** ,...
 * [Colecciones](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Funciones de ordenación
@@ -94,10 +93,10 @@ Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)**
 
 Como en este ejemplo, los responsables suelen usar **AddColumns** y **Buscar** para combinar información de una tabla en otra, lo que se conoce comúnmente como una combinación en el lenguaje de la base de datos:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 
@@ -116,9 +115,9 @@ Las demás funciones no admiten la delegación, incluidas estas importantes func
 * **[GroupBy](functions/function-groupby.md)** , **[Desagrupar](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>Límites no delegables
-Las fórmulas que no se pueden delegar se procesan localmente. Esto permite usar todo el espectro del lenguaje de fórmulas de PowerApps. Pero esto tiene un precio: primero deben pasarse todos los datos al dispositivo, lo que podría implicar la recuperación de una gran cantidad de datos a través de la red. Esta operación puede tardar un tiempo, lo que daría la impresión de que la aplicación se ejecuta con lentitud, o incluso que está bloqueada.
+Las fórmulas que no se pueden delegar se procesan localmente. Esto permite usar toda la amplitud del lenguaje de fórmulas de Power apps. Pero esto tiene un precio: primero deben pasarse todos los datos al dispositivo, lo que podría implicar la recuperación de una gran cantidad de datos a través de la red. Esta operación puede tardar un tiempo, lo que daría la impresión de que la aplicación se ejecuta con lentitud, o incluso que está bloqueada.
 
-Para evitarlo, PowerApps impone un límite en la cantidad de datos que se pueden procesar localmente: 500 registros de forma predeterminada.  Elegimos este número para que tuviera acceso completo a los conjuntos de datos pequeños y pudiera pueda refinar su uso de conjuntos de datos grandes viendo los resultados parciales.
+Para evitar esto, Power apps impone un límite en la cantidad de datos que se pueden procesar localmente: 500 registros de forma predeterminada.  Elegimos este número para que tuviera acceso completo a los conjuntos de datos pequeños y pudiera pueda refinar su uso de conjuntos de datos grandes viendo los resultados parciales.
 
 Obviamente, si se usa este recurso, es preciso tener cuidado, ya que puede confundir a los usuarios. Por ejemplo, imagine una función **Filter** con una fórmula de selección que no se puede delegar en lugar de un origen de datos que contiene un millón de registros. Dado que el filtrado se realiza localmente, solo se examinan los primeros 500 registros. Si el registro deseado es el 501, o el 500 001, **Filter** no lo tiene en cuenta o no lo devuelve.
 
@@ -135,7 +134,7 @@ En algunos casos, sabrá que 2000 (o 1000 o 1500) satisfará las necesidades del
 Para asegurarse de que la aplicación se pueda escalar a grandes conjuntos de datos, reduzca este valor a 1. Todo lo que no se puede delegar devuelve un único registro, que debería ser fácil de detectar al probar la aplicación. De esta manera se pueden evitar sorpresas al intentar llevar una aplicación de prueba de concepto a producción.
 
 ## <a name="delegation-warnings"></a>Advertencias de delegación
-Para que sea más fácil saber qué se delega y qué no, PowerApps proporciona una advertencia (triángulo amarillo) cuando se crea una fórmula que contiene algo que no se puede delegar.
+Para que sea más fácil saber qué es y qué no se está delegando, Power apps proporciona una advertencia (triángulo amarillo) cuando se crea una fórmula que contiene algo que no se puede delegar.
 
 Las advertencias de delegación solo aparecen en las fórmulas que operan en orígenes de datos delegables. Si no ve una advertencia y cree que la fórmula no se delega correctamente, compruebe el tipo de origen de datos en la lista anterior de [orígenes de datos que se pueden delegar](delegation-overview.md#delegable-data-sources) de este tema.
 

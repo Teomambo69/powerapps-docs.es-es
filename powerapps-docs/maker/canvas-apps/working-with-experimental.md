@@ -14,16 +14,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a09d3a36f5db048aa077e8801a77915ccfb2bcf2
-ms.sourcegitcommit: 249d710ec06c078eb71faa6d5eb48494c8435abd
+ms.openlocfilehash: e1cab122851ae2ba0a4d5414d2f4c5ca088d4478
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73962558"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674225"
 ---
 # <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>Descripción de las características experimentales, de vista previa y en desuso en PowerApps
 
-Con cada versión, se realizan cambios y agregan características para transformar PowerApps en la mejor herramienta para satisfacer sus necesidades. Hacemos que avance el producto.  
+Con cada versión, realizamos cambios y agregamos características para que las aplicaciones de energía sean la mejor herramienta para ajustarse a sus necesidades. Hacemos que avance el producto.  
 
 Nos tomamos muy en serio la compatibilidad con versiones anteriores. Sin embargo, con cualquier cambio o mejora, es posible que causemos un efecto secundario no deseado y la aplicación podría no funcionar exactamente igual a como lo hacía antes.
 
@@ -39,7 +39,7 @@ Las características pasan por tres fases en el proceso para convertirse en part
 
 En cada fase, el número de personas que usan la característica aumenta, lo que nos ayuda a validar que la característica es lo que necesita y que no se presentan efectos secundarios imprevistos.
 
-**Sus comentarios son esenciales para este proceso.**  Envíenos sus comentarios en el [foro de la comunidad de PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
+**Sus comentarios son esenciales para este proceso.**  Envíe sus comentarios en el foro de la [comunidad de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
 
 ¿Cuánto tiempo pasa una característica en cada fase? Esto varía para cada característica. Nos centramos en muchos factores, como el número de aplicaciones que usan la característica, el número de problemas notificados y la urgencia con la que se necesita. Las características pueden permanecer en una fase desde unas semanas a muchos meses.  También se pueden omitir algunas fases si no creemos que le resulte útil.
 
@@ -56,9 +56,9 @@ Esta tabla puede ayudarle a decidir cuándo debe empezar a usarlas:
 ## <a name="documentation"></a>Documentación
 
 ¿Dónde se puede encontrar información sobre estas características?  Las características en versión preliminar se tratan como características terminadas y se puede obtener más información acerca de ellas como lo haría con cualquier otra característica del producto: 
-- [Documentación de PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started). Le proporcionaremos los conceptos básicos sobre la nueva característica: sus ventajas, cómo empezar a usarla e información de referencia.
-- [Foro de la comunidad de PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).  Otros explorarán la nueva característica con usted. Aprenda de sus experiencias y comparta las suyas.
-- [Blog de PowerApps](https://powerapps.microsoft.com/blog/).  A menudo, pero no siempre, una entrada de blog acompaña a una nueva característica.
+- [Documentación de Power apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started). Le proporcionaremos los conceptos básicos sobre la nueva característica: sus ventajas, cómo empezar a usarla e información de referencia.
+- [Foro de la comunidad de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).  Otros explorarán la nueva característica con usted. Aprenda de sus experiencias y comparta las suyas.
+- [Blog de Power apps](https://powerapps.microsoft.com/blog/).  A menudo, pero no siempre, una entrada de blog acompaña a una nueva característica.
 
 Las características experimentales son diferentes.  Son proyectos en desarrollo y no considera que estén terminadas. La breve descripción disponible en el panel **Configuración de la aplicación** (ver abajo) podría ser la única información acerca de ellas. Las características experimentales no aparecen normalmente en la documentación. El foro de la comunidad probablemente es la mejor fuente de información.  En algunos casos, una entrada de blog temprana describe la característica.  Si no encuentra suficiente información, pregunte en los foros o espere a que la característica pase a la fase de versión preliminar.
 

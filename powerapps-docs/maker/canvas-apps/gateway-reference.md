@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60f8fb3c0c6d28bb30140017c2af07040d5ade7f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 879fc0df86f05191941c6ff6b3b6403fe34fecea
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898194"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676551"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>¿Qué es una puerta de enlace de datos local?
 
-La puerta de enlace de datos local actúa como un puente para proporcionar una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y varios servicios en la nube de Microsoft. Estos servicios en la nube incluyen Power BI, PowerApps, Power Automatic, Azure Analysis Services y Azure Logic Apps. Mediante el uso de una puerta de enlace, las organizaciones pueden mantener bases de datos y otros orígenes de datos en sus redes locales, pero usar los datos locales de forma segura en los servicios en la nube.
+La puerta de enlace de datos local actúa como un puente para proporcionar una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y varios servicios en la nube de Microsoft. Estos servicios en la nube incluyen Power BI, Power Apps, Power Automatic, Azure Analysis Services y Azure Logic Apps. Mediante el uso de una puerta de enlace, las organizaciones pueden mantener bases de datos y otros orígenes de datos en sus redes locales, pero usar los datos locales de forma segura en los servicios en la nube.
 
 ## <a name="how-the-gateway-works"></a>Cómo funciona la puerta de enlace
 

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1ab23d8b71d36346d2013ac3b988eb2d058e2324
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 8363f6ca03f80fe9f082e05c5d28dc8ba5f7e7f0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898392"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674771"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Inserción del informe de proyecto de Power BI en SharePoint Online
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Ahora vamos a insertar el informe de Power BI en el mismo sitio de SharePoint Online que hospeda nuestras dos listas. Power BI admite varios métodos de inserción, como la integración directa en las páginas de SharePoint para vistas móviles y web.
 

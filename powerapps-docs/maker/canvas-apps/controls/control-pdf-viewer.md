@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650389"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679739"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Control Visor de archivos PDF (experimental) en PowerApps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -27,7 +27,7 @@ Un control experimental que muestra el contenido de un archivo PDF.
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
 
 ## <a name="limitations"></a>Límite
-1. La arquitectura de seguridad de PowerApps requiere que el visor de PDF admita solo vínculos HTTPS, no HTTP.  
+1. La arquitectura de seguridad de Power apps requiere que el visor de PDF admita solo vínculos HTTPS, no HTTP.  
 
 2. La propiedad **Document** debe vincularse directamente al archivo PDF. No se admiten las redirecciones del servidor ni las vistas HTML del documento.
 

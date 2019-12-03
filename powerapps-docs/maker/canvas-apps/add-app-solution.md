@@ -1,6 +1,6 @@
 ---
 title: Crear una aplicación de lienzo en una solución | Microsoft Docs
-description: En PowerApps, cree una aplicación de lienzo en una solución para que pueda implementar la aplicación en otro entorno.
+description: En Power Apps, cree una aplicación de lienzo en una solución para que pueda implementar la aplicación en otro entorno.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540995"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679348"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Crear una aplicación de lienzo desde una solución
 
@@ -34,7 +34,7 @@ Para seguir los pasos de este tema, debe cambiar a un entorno que contenga una b
 
 Puede omitir este procedimiento si ya tiene una solución en la que desea crear una aplicación o a la que desea vincular una aplicación.
 
-1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, si es necesario, cambie al entorno adecuado:
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps y, en caso necesario, cambie al entorno adecuado:
 
     - Si desea crear una aplicación desde una solución, cambie a cualquier entorno que contenga una base de datos de Common Data Service.
     - Si desea vincular una aplicación existente a una solución, cambie al entorno que contiene esa aplicación.
@@ -81,7 +81,7 @@ Puede crear una aplicación de lienzo en blanco en una solución. No se puede ge
     > [!div class="mx-imgBorder"]
     > ![Opciones para crear una aplicación en una solución](./media/add-app-solution/new-option.png "Opciones para crear una aplicación en una solución")
 
-    PowerApps Studio se abre con un lienzo en blanco en otra pestaña del explorador.
+    Power apps Studio se abre con un lienzo en blanco en otra pestaña del explorador.
 
 1. Cree la aplicación (o realice al menos un cambio) y, a continuación, guarde los cambios.
 

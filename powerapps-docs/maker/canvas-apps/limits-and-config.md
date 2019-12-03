@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c8591790fe14d184f5d5e4ef5fc79ff0bfe0e2a
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177890"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675635"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>Plataformas compatibles para ejecutar aplicaciones de lienzo con la aplicación PowerApps
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Plataformas admitidas para ejecutar aplicaciones de lienzo con la aplicación Power apps
 
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
@@ -32,7 +32,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
 > [!NOTE]
-> Actualmente no se admiten nuevas características en la plataforma de Windows para la aplicación de PowerApps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones de PowerApps para Windows se anunciarán en el futuro.
+> Actualmente no se admiten las nuevas características de la aplicación plataforma Windows para Power apps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones de Power apps para Windows se anunciarán en el futuro.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Exploradores admitidos para ejecutar aplicaciones de lienzo
 
@@ -44,7 +44,7 @@ Este tema contiene los requisitos de plataforma de dispositivo y explorador web,
 | Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
 | Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
 
-## <a name="supported-browsers-for-powerapps-studio"></a>Exploradores admitidos para PowerApps Studio
+## <a name="supported-browsers-for-power-apps-studio"></a>Exploradores admitidos para Power apps Studio
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
@@ -64,14 +64,14 @@ Estos límites se aplican a todas y cada una de las solicitudes de salida:
 > El valor de reintento puede variar. Para ciertas condiciones de error, no es necesario volver a intentarlo.
 
 ## <a name="ip-addresses"></a>Direcciones IP
-Las solicitudes de PowerApps usan direcciones IP que dependen de la región del [entorno](../../administrator/environments-overview.md) en que se encuentra la aplicación. No publicamos los nombres de dominio completos disponibles para los escenarios de PowerApps.
+Las solicitudes de Power apps usan direcciones IP que dependen de la región del [entorno](../../administrator/environments-overview.md) en el que se encuentra la aplicación. No publicamos los nombres de dominio completos disponibles para los escenarios de Power apps.
 
 Las llamadas realizadas desde una API conectada a través de una aplicación (por ejemplo, la API de SQL o la API de SharePoint) proceden de la dirección IP que se especificará más adelante en este mismo tema.
 
-Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de direcciones IP permitidas de una instancia de Azure SQL Database.
+Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista blanca las direcciones IP de una instancia de Azure SQL Database.
 
 > [!IMPORTANT]
->   Si tiene configuraciones existentes, actualícelas tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de PowerApps.
+>   Si tiene configuraciones existentes, actualícelo tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de Power apps.
 
 | Región | IP de salida |
 | --- | --- |
@@ -88,7 +88,7 @@ Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de
 | Estados Unidos (acceso anticipado)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
 ## <a name="required-services"></a>Servicios requeridos
-Esta lista identifica todos los servicios con los que PowerApps Studio se comunica y sus usos. La red **no** debe bloquear estos servicios.
+Esta lista identifica todos los servicios a los que se comunica Power apps Studio y sus usos. La red **no** debe bloquear estos servicios.
 
 | Dominios | Protocolos | Usa |
 | --- | --- | --- |
@@ -104,20 +104,20 @@ Esta lista identifica todos los servicios con los que PowerApps Studio se comuni
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| host | https | PowerApps Mobile
+| host | https | Power apps Mobile
 
 > [!NOTE]
-> Si usa una VPN, se debe configurar para excluir localhost de la tunelización para PowerApps Mobile.
+> Si usa una VPN, debe configurarse para excluir localhost de la tunelización de Power apps Mobile.
 
 ## <a name="size-limits"></a>Límites de tamaño
 
 Puede encontrar información sobre los límites de tamaño en el texto, los hipervínculos, las imágenes y los elementos multimedia en los [tipos de datos](functions/data-types.md#text-hyperlink-image-and-media).
 
-## <a name="powerapps-per-app-plan"></a>Plan de PowerApps por aplicación
+## <a name="power-apps-per-app-plan"></a>Power apps por plan de aplicación
 
-PowerApps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de PowerApps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
+Power apps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de Power apps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
 
-Después de que un administrador asigna el plan de PowerApps por aplicación a un entorno, se asigna a los usuarios sin licencia cuando una aplicación de ese entorno se comparte con ellos. Puede ver cómo un administrador asigna [aquí](https://docs.microsoft.com/power-platform/admin/capacity-add-on)los planes de cada aplicación.
+Después de que un administrador asigna Power apps por plan de aplicación a un entorno, se asigna a los usuarios sin licencia cuando una aplicación de ese entorno se comparte con ellos. Puede ver cómo un administrador asigna [aquí](https://docs.microsoft.com/power-platform/admin/capacity-add-on)los planes de cada aplicación.
 
 Siga estos pasos para desactivar la asignación de planes por aplicación para los usuarios cuando se comparte una aplicación con ellos:
 

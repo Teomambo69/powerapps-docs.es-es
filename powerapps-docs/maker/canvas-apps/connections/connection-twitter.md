@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541028"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679854"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -33,7 +32,7 @@ En este tema se muestra cómo utilizar la conexión de Twitter, cómo usar la co
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Conexión a Twitter
-1. Abra PowerApps, seleccione **Nuevo** y cree una **aplicación vacía**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  
+1. Abra Power Apps, seleccione **nuevo**y, después, cree una **aplicación en blanco**. Elija el diseño de teléfono o tableta. El diseño de tableta le ofrece más área de trabajo:  
 
    ![Abra una aplicación en blanco](./media/connection-twitter/blank-app.png)
 2. En el panel derecho, pulse o haga clic en la pestaña **Datos** y, después, en **Agregar origen de datos**.
@@ -66,7 +65,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        El control de galería muestra automáticamente los tweets del identificador de Twitter que ha escrito.
 
@@ -95,7 +94,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        El control de galería muestra automáticamente quién está siguiendo el identificador de Twitter que ha escrito.
 
@@ -124,7 +123,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        El control de galería muestra automáticamente los otros identificadores que está siguiendo.
 
@@ -161,8 +160,8 @@ O bien, puede utilizar un control de texto de entrada para escribir un identific
     > [!TIP]
    > Muestre los cinco primeros resultados mediante maxResults:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})`.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
 
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 3. Seleccione **TweetText** en la primera lista, **TweetedBy** en la segunda lista y **CreatedAt** en la tercera lista.

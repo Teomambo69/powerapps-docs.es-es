@@ -1,6 +1,6 @@
 ---
 title: Generar una aplicación desde Excel | Microsoft Docs
-description: Use PowerApps para generar automáticamente una aplicación de lienzo mediante un archivo de Excel almacenado en una cuenta de almacenamiento en la nube.
+description: Usar Power apps para generar automáticamente una aplicación de lienzo con un archivo de Excel almacenado en una cuenta de almacenamiento en la nube
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb1757da9a5b0a99dad22a43ac844b192651f6df
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541308"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676305"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
 
-En este tema, generará automáticamente su primera aplicación de lienzo en PowerApps con los datos de una tabla de Excel. Podrá seleccionar un archivo de Excel, generar una aplicación y, después, ejecutar la aplicación que genere. En todas las aplicaciones generadas se incluyen pantallas para examinar los registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
+En este tema, generará automáticamente la primera aplicación de lienzo en Power apps con datos de una tabla de Excel. Podrá seleccionar un archivo de Excel, generar una aplicación y, después, ejecutar la aplicación que genere. En todas las aplicaciones generadas se incluyen pantallas para examinar los registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
 
 El archivo de Excel debe estar en una cuenta de almacenamiento en la nube, como OneDrive, Google Drive o Dropbox. En este tema se usa OneDrive para la Empresa.
 
-Si no tiene una licencia para PowerApps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
+Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

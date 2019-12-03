@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0970cbd51f351352c218dab3f220c6d5baa35435
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d9f6e973aa632fe0821db3bcc493174e250afa72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897756"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679923"
 ---
 # <a name="connect-to-common-data-service"></a>Conectarse a Common Data Service
 
-Puede almacenar de forma segura los datos empresariales en Common Data Service y compilar aplicaciones enriquecidas en PowerApps para que los usuarios puedan administrar los datos. También puede integrar los datos en soluciones que incluyen Power Automatic, Power BI y datos de Dynamics 365.
+Puede almacenar de forma segura los datos empresariales en Common Data Service y compilar aplicaciones enriquecidas en Power apps para que los usuarios puedan administrar los datos. También puede integrar los datos en soluciones que incluyen Power Automatic, Power BI y datos de Dynamics 365.
 
 De forma predeterminada, el conector de Common Data Service se conecta a los datos del entorno actual de la aplicación. Si la aplicación se mueve a otro entorno, el conector se conecta a los datos en el nuevo entorno. Este comportamiento funciona bien para una aplicación que usa un solo entorno o una aplicación que sigue un proceso ALM para pasar del desarrollo a la prueba a producción.
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541722"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674621"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 
@@ -50,7 +49,7 @@ En este tutorial se hará lo siguiente:
 3. Asigne el nombre **SavePen.xlsx** al archivo de Excel y guárdelo en la cuenta de almacenamiento en nube (OneDrive para la Empresa, Dropbox, etc.).
 
 ## <a name="create-an-app-with-the-pen-control"></a>Creación de una aplicación con el control de entrada manuscrita
-1. En PowerApps, cree una [aplicación en blanco](get-started-create-from-blank.md).
+1. En Power Apps, cree una [aplicación vacía](get-started-create-from-blank.md).
 2. En la aplicación, agregue la cuenta de almacenamiento en nube como un [origen de datos](add-data-connection.md). Una vez que la agregue como origen de datos, agregue **SavePen.xlsx** como conexión y, luego, seleccione la tabla **Drawings**:  
    ![Conectar](./media/tutorial-working-with-images-in-excel/savepen.png)  
    
@@ -59,7 +58,7 @@ En este tutorial se hará lo siguiente:
    
    ![Cambiar nombre](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Agregue un control **Botón** (menú **Insertar**) y establezca su propiedad **OnSelect** en la fórmula siguiente:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Agregue un control **Galería de imágenes** (menú **Insertar** > **Galería**) y establezca su propiedad **Items** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
    
    La pantalla debe ser similar a la siguiente:  
@@ -78,7 +77,7 @@ En otro ejemplo, puede guardar imágenes en una cuenta de almacenamiento en nube
 En este ejemplo, se usa [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
 
 > [!NOTE]
-> Cuando se muestran imágenes de un archivo de Excel, en la ruta de acceso a estas imágenes se deben usar barras diagonales. Cuando PowerApps guarda imágenes en una tabla de Excel (como con los pasos anteriores), la ruta de acceso usa barras diagonales inversas. De ese modo, también puede usar **SavePen_images** del ejemplo anterior. Si lo hace, cambie las rutas de acceso en la tabla de Excel para usar barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
+> Cuando se muestran imágenes de un archivo de Excel, en la ruta de acceso a estas imágenes se deben usar barras diagonales. Cuando Power apps guarda imágenes en una tabla de Excel (como en los pasos anteriores), la ruta de acceso usa barras diagonales inversas. De ese modo, también puede usar **SavePen_images** del ejemplo anterior. Si lo hace, cambie las rutas de acceso en la tabla de Excel para usar barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
 
 1. Descargue [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
 2. En una hoja de cálculo de Excel, cree una tabla similar a la siguiente:

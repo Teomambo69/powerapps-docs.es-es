@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 750b02bdd3363f03ad0f32ae1fcbc59d7c5c3f3e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650737"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679808"
 ---
 # <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
@@ -118,7 +117,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-**[Navegar( *NombrePantalla*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navegar( *NombrePantalla*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-a-basic-formula-to-a-button"></a>Agregar una fórmula básica a un botón
@@ -145,7 +144,7 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
 1. Establezca la propiedad **[TextoDeSugerencia](control-text-input.md)** de **Origen** en "Enter a number" (Escriba un número).
 2. Establezca la propiedad **[AlSeleccionar](properties-core.md)** de **Agregar** en esta fórmula:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Utilice el punto y coma " **;** " para separar varias fórmulas.
@@ -162,7 +161,7 @@ Agregue un segundo botón para borrar el total entre un cálculo y otro.
 
 ### <a name="change-a-buttons-appearance"></a>Cambio de la apariencia de un botón
 #### <a name="change-a-buttons-shape"></a>Cambio de la forma de un botón
-De forma predeterminada, PowerApps crea un control **Botón** rectangular con esquinas redondeadas. Puede realizar modificaciones básicas en la forma de un control **Botón** estableciendo sus propiedades **[Altura](properties-size-location.md)** , **[Ancho](properties-size-location.md)** , y **[Radius](properties-size-location.md)** (Radio).
+De forma predeterminada, Power apps crea un control de **botón** rectangular con esquinas redondeadas. Puede realizar modificaciones básicas en la forma de un control **Botón** estableciendo sus propiedades **[Altura](properties-size-location.md)** , **[Ancho](properties-size-location.md)** , y **[Radius](properties-size-location.md)** (Radio).
 
 > [!NOTE]
 > [Icons and Shapes](control-shapes-icons.md) (Iconos y formas) proporcionan una gran variedad de diseños y pueden realizar algunas de las mismas funciones básicas que realizan los controles **Botón**. Pero, **[Icons and shapes](control-shapes-icons.md)** (Iconos y formas) no tiene una propiedad **[Texto](properties-core.md)** .

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540911"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679992"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Administración de conexiones de aplicaciones de lienzo en PowerApps
 En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), cree una conexión con uno o varios orígenes de datos, elimine una conexión o actualice las credenciales.
@@ -39,7 +39,7 @@ Lo siguiente que haremos en este artículo es mostrar y administrar la informaci
 2. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que utilizó para suscribirse.
 
 ## <a name="background-on-data-connections"></a>Información general sobre las conexiones de datos
-La mayoría de las aplicaciones de PowerApps utilizan información externa (lo que se denomina **orígenes de datos**) que está guardada en servicios en la nube. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones pueden acceder a estos orígenes de datos a través de las **conexiones**.
+La mayoría de las aplicaciones de Power apps usan información externa denominada **orígenes de datos** que se almacenan en Cloud Services. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones pueden acceder a estos orígenes de datos a través de las **conexiones**.
 
 El tipo más común de origen de datos son las tablas, que pueden usarse tanto para recuperar como para guardar información. Puede utilizar las conexiones con los orígenes de datos para leer y escribir información en libros de Microsoft Excel, listas de SharePoint, tablas SQL y muchos otros formatos, que pueden guardarse en servicios en la nube, como OneDrive para la Empresa, DropBox, SQL Server, etc.
 
@@ -54,7 +54,7 @@ Además de crear y administrar conexiones en [powerapps.com](https://make.powera
 * Abrir una aplicación que otro usuario ha creado y [compartido con usted](share-app.md).
 
 > [!NOTE]
-> Si desea usar PowerApps Studio en su lugar, abra el menú **Archivo** y haga clic o pulse **Conexiones**, y se abre [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), donde puede crear y administrar las conexiones de allí.
+> Si desea usar Power apps Studio en su lugar, abra el menú **archivo** y, a continuación, haga clic o pulse en **conexiones**, [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) se abrirá para que pueda crear y administrar las conexiones allí.
 
 ## <a name="create-a-new-connection"></a>Creación de una nueva conexión
 1. Si aún no lo ha hecho, inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).

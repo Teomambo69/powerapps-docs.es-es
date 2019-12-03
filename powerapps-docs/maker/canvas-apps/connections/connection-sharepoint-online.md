@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540346"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678773"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
@@ -33,14 +33,14 @@ Dependiendo de dónde residan los datos, puede realizar uno de estos métodos o 
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 
-Si desea administrar los datos en una lista personalizada, PowerApps puede [generar una aplicación de tres pantallas automáticamente](../app-from-sharepoint.md). Los usuarios pueden examinar la lista en la primera pantalla, mostrar los detalles de un elemento en la segunda pantalla y crear o actualizar elementos en la tercera pantalla.
+Si desea administrar los datos en una lista personalizada, Power apps puede [generar una aplicación de tres pantallas automáticamente](../app-from-sharepoint.md). Los usuarios pueden examinar la lista en la primera pantalla, mostrar los detalles de un elemento en la segunda pantalla y crear o actualizar elementos en la tercera pantalla.
 
 > [!NOTE]
 > Si la lista de SharePoint contiene una columna de **elección**, **búsqueda**, o **persona o grupo** , vea [Mostrar datos en una galería](connection-sharepoint-online.md#show-list-columns-in-a-gallery) más adelante en este tema.
 
 ## <a name="create-a-connection"></a>Crear una conexión
 
-1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos**  > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
+1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **datos** > **conexiones** en la barra de navegación izquierda y, a continuación, seleccione **nueva conexión** cerca de la esquina superior izquierda.
 
     > [!div class="mx-imgBorder"]
     > ![seleccione datos > conexiones en la barra de navegación izquierda y, a continuación, seleccione nueva conexión cerca de la esquina superior izquierda.](./media/connection-sharepoint-online/new-connection.png)
@@ -81,12 +81,12 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
 
 ## <a name="add-data-to-an-existing-app"></a>Agregar datos a una aplicación existente
 
-1. En PowerApps Studio, abra la aplicación que quiere actualizar, seleccione la pestaña **vista** y, a continuación, seleccione **orígenes de datos**.
+1. En Power apps Studio, abra la aplicación que quiere actualizar, seleccione la pestaña **vista** y, a continuación, seleccione **orígenes de datos**.
 
     > [!div class="mx-imgBorder"]
     > ![en la pestaña vista y, a continuación, seleccione orígenes de datos](./media/connection-sharepoint-online/view-data-sources.png)
 
-1. En el panel **datos** , seleccione **Agregar origen de datos**  > **SharePoint**.
+1. En el panel **datos** , seleccione **Agregar origen de datos** > **SharePoint**.
 
 1. En **conectar a un sitio de SharePoint**, seleccione una entrada en la lista **sitios recientes** (o escriba o pegue la dirección URL del sitio que desea usar) y, a continuación, seleccione **conectar**.
 
@@ -98,7 +98,7 @@ Si desea administrar los datos en una lista personalizada, PowerApps puede [gene
     > [!div class="mx-imgBorder"]
     > ![en elegir una lista, active la casilla de los documentos o una o más listas que desee usar y, después, seleccione conectar](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    No todos los tipos de listas aparecen de forma predeterminada. PowerApps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hasta la parte inferior y, a continuación, escriba el nombre de la lista en el cuadro que contiene el nombre de la **tabla personalizada**.
+    No todos los tipos de listas aparecen de forma predeterminada. Power apps admite listas personalizadas, no listas basadas en plantillas. Si el nombre de la lista que desea usar no aparece, desplácese hasta la parte inferior y, a continuación, escriba el nombre de la lista en el cuadro que contiene el nombre de la **tabla personalizada**.
 
     > [!div class="mx-imgBorder"]
     > ![escriba el nombre de la lista en el cuadro que contiene escriba un nombre de lista personalizado.](./media/connection-sharepoint-online/custom-list.png)
@@ -160,7 +160,7 @@ Si tiene varias imágenes en una biblioteca de SharePoint, puede Agregar un cont
 
 Puede [descargar una aplicación de ejemplo](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) que muestra un enfoque más complejo para mostrar los datos de una biblioteca de SharePoint.
 
-1. Después de descargar la aplicación, Abra [PowerApps Studio](https://us.create.powerapps.com/studio/#), seleccione **abrir** en la barra de navegación izquierda y, a continuación, seleccione **examinar**.
+1. Después de descargar la aplicación, Abra [Power apps Studio](https://us.create.powerapps.com/studio/#), seleccione **abrir** en la barra de navegación izquierda y, a continuación, seleccione **examinar**.
 1. En el cuadro de diálogo **abrir** , busque y abra el archivo que ha descargado y, a continuación, agregue una biblioteca de SharePoint como origen de datos siguiendo los dos primeros procedimientos de este tema.
 
 > [!NOTE]
@@ -180,7 +180,7 @@ Cuando encuentre el archivo que desea, selecciónelo para mostrarlo en el contro
 
 ### <a name="lists"></a>Coge
 
-PowerApps puede leer nombres de columna que contienen espacios, pero los espacios se sustituyen por el código de escape hexadecimal **"\_x0020\_"** . Por ejemplo, el **"Nombre de columna"** en SharePoint aparecerá como **"Nombre_x0020_de_columna"** en PowerApps cuando se muestre en el diseño de datos o se use en una fórmula.
+Power apps puede leer nombres de columna que contienen espacios, pero los espacios se reemplazan por el código de escape hexadecimal **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 No se admiten todos los tipos de columnas y no todos los tipos de columnas admiten todos los tipos de tarjetas.
 
@@ -206,10 +206,10 @@ No se admiten todos los tipos de columnas y no todos los tipos de columnas admit
 
 ### <a name="libraries"></a>Libre
 
-- No se pueden cargar archivos desde PowerApps a una biblioteca.
+- No se pueden cargar archivos de Power Apps en una biblioteca.
 - No se pueden mostrar archivos PDF de una biblioteca en un control de PDF Viewer.
-- PowerApps Mobile no es compatible con la función de **descarga** .
-- Si los usuarios van a ejecutar la aplicación en PowerApps Mobile o en la aplicación de Windows 10, use la función **Launch** para mostrar el contenido de la biblioteca en una galería.
+- Power apps Mobile no es compatible con la función de **descarga** .
+- Si los usuarios van a ejecutar la aplicación en Power apps Mobile o en la aplicación de Windows 10, use la función **Launch** para mostrar el contenido de la biblioteca en una galería.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

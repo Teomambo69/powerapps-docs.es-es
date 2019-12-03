@@ -1,6 +1,6 @@
 ---
 title: Insertar una aplicación en Teams | Microsoft Docs
-description: Puede insertar una aplicación creada en PowerApps en Microsoft Teams para compartirla.
+description: Puede insertar una aplicación creada en Power Apps en Microsoft Teams para compartirla.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73538996"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678497"
 ---
-# <a name="embed-an-app-in-teams"></a>Inserción de una aplicación en Teams
+# <a name="embed-an-app-in-teams"></a>Insertar una aplicación en Teams
 
-Puede compartir un PowerApps que haya creado al incrustarlo directamente en Microsoft Teams. Cuando haya finalizado, los usuarios pueden seleccionar **+** para agregar su aplicación a cualquiera de **sus** canales o conversaciones del equipo en el que se encuentre. La aplicación aparece como un icono en **pestañas para el equipo**.
+Puede compartir una aplicación de Power apps que haya creado al insertarla directamente en Microsoft Teams. Cuando haya finalizado, los usuarios pueden seleccionar **+** para agregar su aplicación a cualquiera de **sus** canales o conversaciones del equipo en el que se encuentre. La aplicación aparece como un icono en **pestañas para el equipo**.
 
 Un administrador puede cargar la aplicación para que se muestre a **todos los** equipos del inquilino en la **sección todas las pestañas**. Consulte [compartir una aplicación en Microsoft Teams](https://docs.microsoft.com/power-platform/admin/embed-app-teams).
 
@@ -31,7 +31,7 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Necesita una licencia válida de [PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
+- Necesita una licencia de [Power apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)válida.
 - Para insertar una aplicación en Teams, necesita una aplicación existente [creada con PowerApps](data-platform-create-app.md).
 
 ## <a name="download-the-app"></a>Descarga de la aplicación
@@ -44,7 +44,7 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 
     ![Detalles de la aplicación](./media/embed-teams-app/add-to-teams.png "Agregar a equipos")
 
-3. En el panel agregar a equipos, seleccione **Descargar**. Después, PowerApps generará el archivo de manifiesto de los equipos con la descripción y el logotipo de la aplicación que ya ha establecido en la aplicación.
+3. En el panel agregar a equipos, seleccione **Descargar**. Power apps generará el archivo de manifiesto de los equipos con la descripción y el logotipo de la aplicación que ya ha establecido en la aplicación.
 
     ![Detalles de la aplicación](./media/embed-teams-app/download-app.png "Descargar aplicación")
 

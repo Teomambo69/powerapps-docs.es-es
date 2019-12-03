@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541290"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676536"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
 
-Instale una puerta de enlace de datos local para transferir datos de manera rápida y segura entre una aplicación de lienzo integrada en PowerApps y un origen de datos que no esté en la nube, como una base de datos local de SQL Server o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
+Instale una puerta de enlace de datos local para transferir datos de forma rápida y segura entre una aplicación de lienzo integrada en Power apps y un origen de datos que no esté en la nube, como una base de datos de SQL Server local o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
 
 Con una puerta de enlace, puede conectarse a datos locales a través de estas conexiones:
 

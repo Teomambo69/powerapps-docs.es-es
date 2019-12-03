@@ -1,6 +1,6 @@
 ---
 title: Instalar y configurar el ejemplo de servicio de asistencia en aplicaciones de lienzo | Microsoft Docs
-description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de servicio de asistencia en aplicaciones de lienzo.
+description: Instrucciones paso a paso para, en Power Apps, instalar y configurar el ejemplo de servicio de asistencia para aplicaciones de canvas.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541243"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676145"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
 
-Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de servicio de asistencia en aplicaciones de lienzo.
+Instrucciones paso a paso para, en Power Apps, instalar y configurar el ejemplo de servicio de asistencia para aplicaciones de canvas.
 
 Tiempo estimado para completar estos pasos: **10-15 minutos**
 
@@ -140,7 +140,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ## <a name="download-the-app"></a>Descarga de la aplicación
 
-1.  [Descargue](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete PowerApps y guárdelo en su equipo.
+1.  [Descargue](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete de Power apps y guárdelo en el equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 
@@ -242,7 +242,7 @@ Esta lista almacena los vales del servicio Help Desk.
     
    > [!TIP]
    > Si tiene más de un administrador, use una coma para delimitar la lista de administradores. Ejemplo: "admin1@microsoft.com","admin2@microsoft.com".
-   > Para asegurarse de que las direcciones de AdminList coinciden con el formato que PowerApps espera, seleccione Ver > Variables > Global > MyProfile y consulte la columna "Mail" para ver el formato de correo electrónico esperado.
+   > Para asegurarse de que las direcciones de AdminList coinciden con el formato que espera Power Apps, seleccione View > variables > global > mi perfil y examine la columna "mail" para ver el formato de correo electrónico esperado.
 
 1. Seleccione **Archivo** > **Guardar** > **Publicar** > **Publicar esta versión**.
 

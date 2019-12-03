@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990203"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676520"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Obtención de un identificador de sesión o un identificador de aplicación de lienzo
-Si encuentra un problema con una aplicación de lienzo que se creó en PowerApps, puede ayudar a Microsoft a solucionar el problema de manera mucho más efectiva si les proporciona un identificador de sesión, un identificador de aplicación o ambos para ese problema.
+Si se produce un problema con una aplicación de lienzo creada en Power Apps, puede ayudar a Microsoft a solucionar el problema de forma más eficaz si se les proporciona un identificador de sesión, un identificador de aplicación o ambos para ese problema.
 
 ## <a name="get-the-session-id"></a>Obtención del identificador de sesión
 
@@ -32,7 +32,7 @@ Si encuentra un problema con una aplicación de lienzo que se creó en PowerApps
 
 1. En **Diagnósticos**, seleccione **Detalles de la sesión**.
 
-    ![Obtención de un identificador de sesión de PowerApps Studio](media/get-sessionid/studio.png)
+    ![Obtención de un identificador de sesión de Power apps Studio](media/get-sessionid/studio.png)
 
 ### <a name="when-running-an-app-in-a-browser"></a>Al ejecutar una aplicación en un explorador
 1. En la esquina superior derecha, seleccione el icono de engranaje.

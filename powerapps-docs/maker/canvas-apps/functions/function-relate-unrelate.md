@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 94400c88740ea93b3966db8a62a461b5616eaeef
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537104"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678359"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Funciones de relación y desrelación en PowerApps
 
@@ -40,23 +39,23 @@ Estas funciones nunca crean o eliminan un registro. Solo relacionan o desrelacio
 Estas funciones solo se pueden usar en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 > [!NOTE]
-> Estas funciones forman parte de una característica de vista previa y su comportamiento solo está disponible cuando está habilitada la característica **datos relacionales, conjuntos de opciones y otras características nuevas de CDs** . Se trata de una configuración de nivel de aplicación que está habilitada de forma predeterminada para las nuevas aplicaciones. Para encontrar este modificador de características, abra el menú **archivo** , seleccione Configuración de la **aplicación**y, a continuación, seleccione **Configuración avanzada**. Sus comentarios nos sirven mucho: denos su opinión en los [foros de la comunidad de PowerApps](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
+> Estas funciones forman parte de una característica de vista previa y su comportamiento solo está disponible cuando está habilitada la característica **datos relacionales, conjuntos de opciones y otras características nuevas de CDs** . Se trata de una configuración de nivel de aplicación que está habilitada de forma predeterminada para las nuevas aplicaciones. Para encontrar este modificador de características, abra el menú **archivo** , seleccione Configuración de la **aplicación**y, a continuación, seleccione **Configuración avanzada**. Sus comentarios son muy valiosos: díganos lo que piensa en los foros de la [comunidad de Power apps](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
 
 ## <a name="syntax"></a>Sintaxis
 
-**Relacionar**( *Entity1RelatedTable*; *Entity2Record* )
+**Relacionar**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* : requerido. Para un registro de *Entity1*, la tabla de registros *Entity2* relacionados con una relación de uno a varios o de varios a varios.
 * *Entity2Record* : requerido. Registro *Entity2* que se va a agregar a la relación.
 
-No **relacionar**( *Entity1RelatedTable*; *Entity2Record* )
+No **relacionar**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* : requerido. Para un registro de *Entity1*, la tabla de registros *Entity2* relacionados con una relación de uno a varios o de varios a varios.
 * *Entity2Record* : requerido. Registro *Entity2* que se va a quitar de la relación.
 
 ## <a name="examples"></a>Ejemplos
 
-Considere una entidad **Products** con las siguientes relaciones, tal como se ha visualizado en el [visor de entidades del portal de PowerApps](../../common-data-service/create-edit-entities-portal.md):
+Considere una entidad **Products** con las siguientes relaciones, tal como se ha visualizado en el [visor de entidades del portal de Power apps](../../common-data-service/create-edit-entities-portal.md):
 
 | Nombre para mostrar de relación | Entidad relacionada | Tipo de relación |
 | --- | --- |
@@ -65,29 +64,29 @@ Considere una entidad **Products** con las siguientes relaciones, tal como se ha
 
 **Los productos** y las **reservas** se relacionan a través de una relación de uno a varios.  Para relacionar el primer registro de la entidad **reservas** con el primer registro de la entidad **productos** :
 
-`Relate( First( Products ).Reservations; First( Reservations ) )`
+`Relate( First( Products ).Reservations, First( Reservations ) )`
 
 Para quitar la relación entre estos registros:
 
-`Unrelate( First( Products ).Reservations; First( Reservations ) )`
+`Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
 En ningún momento se crea o quita un registro, solo se modificó la relación entre los registros.
 
 **Los productos y los** **contactos** se relacionan a través de una relación de varios a varios.  Para relacionar el primer registro de la entidad **Contacts** con el primer registro de la entidad **Products** :
 
-`Relate( First( Products ).Contacts; First( Contacts ) )`
+`Relate( First( Products ).Contacts, First( Contacts ) )`
 
 Como las relaciones varios a varios son simétricas, podríamos hacer esto también en la dirección opuesta:
 
-`Relate( First( Contacts ).Products; First( Products ) )`
+`Relate( First( Contacts ).Products, First( Products ) )`
 
 Para quitar la relación entre estos registros:
 
-`Unrelate( First( Products ).Contacts; First( Contacts ) )`
+`Unrelate( First( Products ).Contacts, First( Contacts ) )`
 
 de
 
-`Unrelate( First( Contacts ).Products; First( Products ) )`
+`Unrelate( First( Contacts ).Products, First( Products ) )`
 
 En el siguiente tutorial se realizan exactamente estas operaciones en estas entidades mediante una aplicación con controles de **Galería** y de **cuadro combinado** para seleccionar los registros implicados.
 
@@ -153,8 +152,8 @@ En primer lugar, creará una aplicación sencilla para ver y reasignar las reser
 
 1. En **Gallery2**, establezca la propiedad **alseleccionar** de **NextArrow2**en esta fórmula:
 
-    ```powerapps-comma
-    Relate( ComboBox1.Selected.Reservations; ThisItem )
+    ```powerapps-dot
+    Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
     Cuando el usuario selecciona este icono, la reserva actual cambia al producto que el usuario seleccionó en **ComboBox1**.
@@ -177,11 +176,11 @@ Llegados a este punto, puede trasladar la relación de un registro a otro, pero 
 
 1. En **Gallery2**, establezca la fórmula **alseleccionar** para **NextArrow2** en esta fórmula:
 
-    ```powerapps-comma
-    If( IsBlank( ComboBox1.Selected );
-        Unrelate( Gallery1.Selected.Reservations; ThisItem );
-        Relate( ComboBox1.Selected.Reservations; ThisItem )
-    );;
+    ```powerapps-dot
+    If( IsBlank( ComboBox1.Selected ),
+        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+        Relate( ComboBox1.Selected.Reservations, ThisItem )
+    );
     Refresh( Reservations )
     ```
     ![Configurar icono derecho](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -194,8 +193,8 @@ Llegados a este punto, puede trasladar la relación de un registro a otro, pero 
 
 1. Asegúrese de que el duplicado de **Gallery2** se denomine **Gallery2_1**y, a continuación, establezca la propiedad **elementos** en esta fórmula:
 
-    ```powerapps-comma
-    Filter( Reservations; IsBlank( 'Product Reservation' ) )
+    ```powerapps-dot
+    Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
     Aparece una advertencia de delegación, pero no importa la pequeña cantidad de datos en este ejemplo.
@@ -266,8 +265,8 @@ Creará otra aplicación similar a la que creó anteriormente en este tema, pero
 
 1. Establezca la propiedad **alseleccionar** del icono **Cancelar** en esta fórmula: 
 
-    ```powerapps-comma
-    Unrelate( Gallery1.Selected.Contacts; ThisItem )
+    ```powerapps-dot
+    Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
     ![Configurar el icono de cancelación](media/function-relate-unrelate/contacts-unrelate.png)
@@ -286,8 +285,8 @@ Creará otra aplicación similar a la que creó anteriormente en este tema, pero
 
 1. Inserte un icono **Agregar** y establezca su propiedad **alseleccionar** en esta fórmula: 
 
-    ```powerapps-comma
-    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
+    ```powerapps-dot
+    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
     ![Configurar agregar icono](media/function-relate-unrelate/contacts-relate.png)
@@ -325,9 +324,9 @@ Las relaciones de varios a varios son simétricas. Puede extender el ejemplo par
     - Label1_1. Text = `"Selected Contact Products"`
     - Gallery2_1. Items = `Gallery1_1.Selected.Products`
     - Title2_1. Text = `ThisItem.Name`
-    - Icon1_1. Select = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
+    - Icon1_1. Select = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
     - ComboBox1_1. Items = `Products`
-    - Icon2_1. Select = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
+    - Icon2_1. Select = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
     El resultado tendrá un aspecto muy similar al de la pantalla anterior, pero se incluye en la relación del lado de los **contactos** .
 

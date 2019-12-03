@@ -1,6 +1,6 @@
 ---
 title: Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo | Microsoft Docs
-description: Instrucciones paso a paso para instalar y configurar en PowerApps el ejemplo de informe de gastos en aplicaciones de lienzo.
+description: Instrucciones paso a paso para, en Power Apps, instalar y configurar el ejemplo de informe de gastos para aplicaciones de canvas.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540218"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679532"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
 
@@ -206,7 +206,7 @@ En esta lista se almacenan los elementos de línea asociados a cada informe de g
 
     [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
-2. Descargue el paquete de ejemplo Informe de gastos de PowerApps y guárdelo en su equipo.
+2. Descargue el paquete de ejemplo de Power apps de informe de gastos y guárdelo en el equipo.
 
 ## <a name="create-connections"></a>Crear conexiones
 

@@ -1,6 +1,6 @@
 ---
 title: ¿Qué son las aplicaciones de lienzo? | Microsoft Docs
-description: Diseñe y cree aplicaciones de lienzo en PowerApps para que los usuarios puedan administrar datos de línea de negocio en un explorador o en sus dispositivos móviles.
+description: Diseñar y compilar aplicaciones de lienzo en Power apps para que los usuarios puedan administrar datos de línea de negocio en un explorador o en sus dispositivos móviles
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b352cb4a30c090d01b2ec1b34fa8ba119265204
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541260"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676650"
 ---
-# <a name="what-are-canvas-apps-in-powerapps"></a>¿Qué son las aplicaciones de lienzo en PowerApps?
-Diseñe y compile una aplicación empresarial desde un lienzo en Microsoft PowerApps sin escribir código en un lenguaje de programación tradicional como C#. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
+# <a name="what-are-canvas-apps-in-power-apps"></a>¿Qué son las aplicaciones de lienzo en Power apps?
+Diseñar y compilar una aplicación empresarial desde un lienzo en Microsoft Power apps sin escribir código en un lenguaje de programación C#tradicional como. Diseñe la aplicación arrastrando y colocando elementos en un lienzo, como si diseñara una diapositiva de PowerPoint. Cree expresiones de estilo de Excel para especificar la lógica y trabajar con datos. Cree aplicaciones que integren datos empresariales de una [gran variedad de orígenes de Microsoft y terceros](connections-list.md). Comparta la aplicación para que los usuarios puedan ejecutarla en un explorador o en un dispositivo móvil, e insértela para que la puedan ejecutar en SharePoint, Power BI o Teams.
 
 Si no necesita un diseño personalizado y los datos están en Common Data Service, puede generar automáticamente una aplicación controlada por modelos a partir de los datos y procesos empresariales. Este tipo de aplicación puede modelar formularios, vistas y otros componentes, y la interfaz de usuario predeterminada se ajusta de manera automática a teléfonos, equipos portátiles y otros dispositivos. Para obtener más información sobre este tipo de aplicación, vea [Información general sobre la compilación de una aplicación controlada por modelos](../model-driven-apps/model-driven-app-overview.md).
 
@@ -33,9 +33,9 @@ Para empezar, genere automáticamente una aplicación a partir de uno de estos o
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-[Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y seleccione **Iniciar a partir de datos** o una aplicación de ejemplo, como **Service Desk** o **Budget Tracker**.
+[Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps y, después, seleccione **iniciar desde datos** o una aplicación de ejemplo, como **servicio de asistencia** o seguimiento de **presupuesto**.
 
-![Blog de PowerApps](./media/getting-started/create-page-samples.png)
+![Sitio de Power apps](./media/getting-started/create-page-samples.png)
 
 Después de generar una aplicación de forma automática, personalice su apariencia y comportamiento predeterminados en función de los flujos de trabajo de los usuarios. Por ejemplo, cambie los tipos de datos que aparecen, cómo se ordenan o incluso si los usuarios especifican un número escribiéndolo o ajustando un control deslizante. Agregue y personalice [pantallas](add-screen-context-variables.md), [galerías](customize-layout-sharepoint.md), [formularios](customize-forms-sharepoint.md) y otros controles.
 
@@ -52,9 +52,9 @@ Ejecute sus propias aplicaciones (así como las que compartan con usted) en Wind
 * Revise los [estándares de codificación](https://aka.ms/powerappscanvasguidelines) para maximizar el rendimiento de la aplicación y mantener las aplicaciones más fáciles de mantener.
 
 ## <a name="share-your-experience"></a>Compartir la experiencia
-* Leer y publicar en la [comunidad de PowerApps](https://aka.ms/powerapps-community), donde todos los usuarios de PowerApps pueden publicar una pregunta y otros usuarios responderla. Antes de publicar una pregunta, busque en la comunidad para ver si ya se ha respondido.
-* Envíe una idea sobre cómo podemos mejorar PowerApps en [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) (Ideas para PowerApps).
-* Cree una [incidencia de soporte técnico](https://powerapps.microsoft.com/support/pro/) para obtener asistencia técnica. Si es un administrador de PowerApps de la organización, también puede abrir una incidencia de soporte técnico en el [Centro de administración de PowerApps](https://admin.microsoft.com/Support/Support.aspx).
+* Lea y publique en la [comunidad de Power apps](https://aka.ms/powerapps-community), donde cualquier persona que use Power apps puede publicar una pregunta y otros usuarios pueden responder. Antes de publicar una pregunta, busque en la comunidad para ver si ya se ha respondido.
+* Envíe una idea sobre cómo podemos mejorar las aplicaciones avanzadas en [ideas de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
+* Cree una [incidencia de soporte técnico](https://powerapps.microsoft.com/support/pro/) para obtener asistencia técnica. Si es administrador de Power apps para su organización, también puede abrir una incidencia de soporte técnico en el [centro de administración de Power apps](https://admin.microsoft.com/Support/Support.aspx).
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Registro para obtener una licencia gratuita.](../signup-for-powerapps.md)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
-ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
+ms.openlocfilehash: 3d67ef4b05b61f59fec49b0bbc0961970d8070bf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072532"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678520"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integración de aplicaciones de lienzo en sitios web y otros servicios
 Las aplicaciones que cree suelen ser más útiles cuando están disponibles en el momento en que los usuarios realizan su trabajo. Al incrustar aplicaciones de lienzo en un iframe, puede integrar esas aplicaciones en sitios web y otros servicios, como Power BI o SharePoint.
@@ -29,10 +29,10 @@ En este tema se muestra cómo establecer los parámetros para la inserción de a
 
 Tenga en mente las siguientes restricciones:
 
-- Los únicos usuarios de PowerApps que pueden acceder a la aplicación insertada son los que se encuentran en el mismo inquilino.
-- Para acceder a PowerApps mediante Internet Explorer 11, es preciso desactivar la vista de compatibilidad.
+- Solo los usuarios de Power Apps en el mismo inquilino pueden acceder a la aplicación insertada.
+- Para acceder a Power apps con Internet Explorer 11, debe desactivar la vista de compatibilidad.
 
-También puede integrar las aplicaciones de canvas en SharePoint Online sin usar un iframe. Más información: [use el elemento Web de PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+También puede integrar las aplicaciones de canvas en SharePoint Online sin usar un iframe. Más información: [use el elemento Web Power apps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Establecer los parámetros URI de la aplicación
 Si tiene una aplicación que desea insertar, el primer paso es establecer los parámetros para el identificador uniforme de recursos (URI), para que el iframe sepa dónde se encuentra la aplicación. El identificador URI tiene la forma siguiente:

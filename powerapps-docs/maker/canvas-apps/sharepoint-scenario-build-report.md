@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9693e45da894348acd27b96f73d1358819812ae4
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: dbe706b19ccc974eda95f47145ced2e9ff14a4c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900332"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674869"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Creación de un informe de Power BI para analizar proyectos
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea, vamos a crear un informe de Power BI basado en las dos listas de SharePoint. Trasladaremos los datos de las listas a Power BI Desktop y los limpiaremos un poco, realizaremos algunas operaciones básicas de modelado de datos y crearemos un conjunto de objetos visuales que nos proporcionarán cierta información acerca de los datos.
 
@@ -186,7 +185,7 @@ Cuando Power BI Desktop introdujo las listas, creó una relación entre ellas ba
 1. Aún en la tabla de fechas, haga clic o pulse en **Nueva columna**.
    
     ![Nueva columna](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]); 1;0;7;0;1)** .
+2. Escriba esta fórmula en la barra de fórmulas: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)** .
    
     Esta fórmula determina si una fecha de la columna **Date** es un día laborable. Si la fecha es un día laborable, la columna **IsWeekDay** obtiene el valor 1; de lo contrario, obtiene el valor 0.
 3. Presione Entrar para agregar la columna **IsWeekDay** a la tabla **Dates**.

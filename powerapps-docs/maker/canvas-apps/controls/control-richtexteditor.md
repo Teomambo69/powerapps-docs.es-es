@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: cd6d16a86dbe9c3a7a6ea60be11b9054c54790f2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74550581"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679716"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Control de editor de texto enriquecido en PowerApps
 Permite a los usuarios finales dar formato al texto dentro de un área de edición WYSIWYG.  El formato de salida es HTML.
@@ -28,7 +28,7 @@ El control **Editor de texto enriquecido** proporciona al usuario de la aplicaci
 
 El control permite pegar texto enriquecido copiado (es decir, desde el explorador web o Word) en el control.  
 
-El uso previsto del control consiste en dar formato al texto y no garantiza que se conserve la integridad de la entrada HTML.  El editor eliminará todas las etiquetas de script, estilo, objeto y otras que puedan ser comprometedoras.  Esto significa que si el texto enriquecido se creó fuera de PowerApps, es posible que no tenga el mismo aspecto que en el producto en el que se creó.
+El uso previsto del control consiste en dar formato al texto y no garantiza que se conserve la integridad de la entrada HTML.  El editor eliminará todas las etiquetas de script, estilo, objeto y otras que puedan ser comprometedoras.  Esto significa que si se crea texto enriquecido fuera de las aplicaciones avanzadas, puede que no tenga el mismo aspecto que en el producto en el que se creó.
 
 Entre las características admitidas actualmente se incluyen las siguientes:
 - Negrita, cursiva, subrayado

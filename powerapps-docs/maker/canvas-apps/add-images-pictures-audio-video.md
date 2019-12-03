@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541187"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679233"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
 
@@ -27,7 +26,7 @@ En este tema, aprenderá a insertar archivos multimedia en la aplicación de lie
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-[Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+[Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Agregar contenido multimedia desde un archivo o la nube
 
@@ -68,7 +67,7 @@ Puede elegir el tipo de contenido multimedia que desea agregar; por ejemplo, im�
 
 2. Una vez publicado el vídeo, copie su dirección URL.
 
-3. Desde PowerApps, agregue el control **Vídeo** desde **Insertar > Multimedia**.
+3. En Power Apps, agregue el control de **vídeo** de **Insertar > Multimedia**.
 
 4. Establezca la propiedad **Multimedia** en la dirección URL que copió.
 
@@ -82,7 +81,7 @@ En este ejemplo, tiene imágenes guardadas en una cuenta de almacenamiento en la
 En este ejemplo, vamos a utilizar [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), que contiene algunos archivos .jpeg.
 
 > [!NOTE]
-> Las rutas de acceso a estas imágenes que se utilizan en el archivo de Excel deben escribirse usando barras diagonales. Cuando PowerApps guarda las rutas de las imágenes en una tabla de Excel, las rutas contienen barras diagonales inversas. Si utiliza rutas de imágenes que proceden, por ejemplo, de una tabla, debe cambiar las rutas de la tabla de Excel para que contengan barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
+> Las rutas de acceso a estas imágenes que se utilizan en el archivo de Excel deben escribirse usando barras diagonales. Cuando Power apps guarda las rutas de imagen en una tabla de Excel, la ruta de acceso usa barras diagonales inversas. Si utiliza rutas de imágenes que proceden, por ejemplo, de una tabla, debe cambiar las rutas de la tabla de Excel para que contengan barras diagonales en lugar de barras diagonales inversas. De lo contrario, no se mostrarán las imágenes.  
 
 1. Descargue [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) y extraiga la carpeta **Assets** en la cuenta de almacenamiento en nube.
 
@@ -131,7 +130,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 3. Guarde el archivo de Excel en OneDrive para la Empresa como **SavePen.xlsx**.
 
-4. En PowerApps, cree una [aplicación en blanco](get-started-create-from-blank.md).
+4. En Power Apps, cree una [aplicación vacía](get-started-create-from-blank.md).
 
 5. En la aplicación, agregue la cuenta de OneDrive para la Empresa como [origen de datos](add-data-connection.md):
 
@@ -159,7 +158,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 8. En la pestaña **Insertar**, agregue el control **Botón** y establezca la propiedad **AlSeleccionar** en esta fórmula:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Agregue un control de la **Galería de imágenes** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
 

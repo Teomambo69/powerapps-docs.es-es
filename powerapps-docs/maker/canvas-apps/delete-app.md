@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a60443011b700c1202c904a84ad631e25572daf
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: ddfa8def32e56ac49c2a3dc98757bb6d0bbe825a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177695"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678543"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Eliminación de una aplicación de lienzo de PowerApps
-En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuenta de PowerApps y de las cuentas de cualquiera con quien se haya compartido la aplicación.
+En este artículo se muestra cómo eliminar una aplicación de lienzo de la cuenta de Power apps y de las cuentas de cualquier persona con la que se haya compartido la aplicación.
 
 ## <a name="delete-an-app-from-your-account"></a>Eliminar una aplicación de la cuenta
 1. Abra [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, seleccione **aplicaciones** en el panel de **vista de árbol** de la izquierda.
@@ -51,6 +51,6 @@ En este artículo se muestra cómo eliminar una aplicación de lienzo de su cuen
 
 ## <a name="more-resources"></a>Más recursos
 [Share an app](share-app.md) (Compartir una aplicación)  
-[Cambiar el nombre e icono de la aplicación](set-name-tile.md)  
+[Cambiar el nombre y el icono de la aplicación](set-name-tile.md)  
 [Restore an app to a previous version](restore-an-app.md) (Restaurar una aplicación a una versión anterior)  
 

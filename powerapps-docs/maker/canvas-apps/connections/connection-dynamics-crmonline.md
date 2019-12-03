@@ -13,16 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48605d97a8b311f806ff3556474d9bc5f32260e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd23092f7fbe178dfe127f671e7364f5d97aaf38
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541094"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678842"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Conexión a Dynamics 365 desde PowerApps
-PowerApps le permite generar, personalizar, compartir y ejecutar rápidamente aplicaciones móviles con poco o ningún código. Mediante el conector de Dynamics 365, puede crear útiles aplicaciones móviles para compartir con su organización en tan solo unos minutos.
+Power apps le permite generar, personalizar, compartir y ejecutar rápidamente aplicaciones móviles con poco o ningún código. Mediante el conector de Dynamics 365, puede crear útiles aplicaciones móviles para compartir con su organización en tan solo unos minutos.
 
 Si sigue los pasos descritos en este tema, creará una aplicación en la que los usuarios podrán examinar, agregar, eliminar y realizar actualizaciones en los contactos de Dynamics 365. Los usuarios pueden ejecutar la aplicación [en un explorador](../../../user/run-app-browser.md) o [en un dispositivo móvil](../../../user/run-app-client.md), como un teléfono.
 
@@ -53,14 +52,14 @@ Para seguir este tutorial, necesita una cuenta de Microsoft Office 365 que inclu
     ![Nueva aplicación](./media/connection-dynamics-crmonline/new-app.png)
 2. En **Comenzar con los datos**, haga clic en **Diseño de teléfono** en el icono **Dynamics 365**.
    
-    ![Conector Dynamics 365 en PowerApps](./media/connection-dynamics-crmonline/phonelayout.png)
+    ![Power apps seleccione conector Dynamics 365](./media/connection-dynamics-crmonline/phonelayout.png)
 3. En **Conexiones**, seleccione la conexión que desee y, después, elija un conjunto de datos, que se corresponde a la instancia de Dynamics 365 que va a administrar en la aplicación.
 4. En **Elegir una tabla**, haga clic en **Contactos** y, después, haga clic en **Conectar**.
 5. En la barra de navegación izquierda, haga clic o pulse en uno de los iconos de la esquina superior derecha para cambiar a la vista en miniatura.
    
     ![Alternancia de las vistas](./media/connection-dynamics-crmonline/toggle-view.png)
 
-PowerApps genera una aplicación de tres pantallas basada en los registros de contactos.
+Power apps genera una aplicación de tres pantallas basada en registros de contacto.
 
 * **ExaminarPantalla1**. Esta pantalla aparece de forma predeterminada cuando los usuarios abren la aplicación. En la barra de navegación izquierda, se muestra una vista en miniatura de esta pantalla sobre las otras dos pantallas.
 * **PantallaDetalles1**. Esta pantalla aparece cuando los usuarios hacen clic en un elemento de **ExaminarPantalla1**.  En la barra de navegación izquierda, se muestra una vista en miniatura de **PantallaDetalles1** sobre las otras dos pantallas.
@@ -82,7 +81,7 @@ En este procedimiento, va a configurar **ExaminarPantalla1** para mostrar los no
     ![Seleccionar diseño](./media/connection-dynamics-crmonline/select-layout.png)
 4. Copie esta fórmula y, después, con la galería aún seleccionada, pegue la fórmula en la barra de fórmulas (a la derecha del botón **fx**):
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. En el panel derecho, establezca la lista desplegable superior en **firstname** y la lista desplegable central en **lastname**.
    
     ![Seleccionar Cuerpo1](./media/connection-dynamics-crmonline/firstname-lastname.png)

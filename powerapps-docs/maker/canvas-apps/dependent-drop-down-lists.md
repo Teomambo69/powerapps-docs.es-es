@@ -1,6 +1,6 @@
 ---
 title: Crear una lista desplegable dependiente en una aplicación de lienzo | Microsoft Docs
-description: En PowerApps, cree una lista desplegable que filtre otra lista desplegable en una aplicación de lienzo.
+description: En Power Apps, cree una lista desplegable que filtre otra lista desplegable en una aplicación de lienzo.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985745"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679624"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -67,12 +66,12 @@ Después de ese cambio, puede omitir la columna **title** o [quitarla](https://s
 
 ## <a name="open-the-form"></a>Abrir el formulario
 
-1. Abra la lista **incidentes** y, a continuación, seleccione **PowerApps**  > **personalizar formularios**.
+1. Abra la lista **incidentes** y, a continuación, seleccione **PowerApps** > **personalizar formularios**.
 
     > [!div class="mx-imgBorder"]
-    > ![Abra la lista incidentes y, a continuación, seleccione PowerApps > personalizar formularios.](./media/dependent-drop-down-lists/open-form.png "Abra la lista incidentes y, a continuación, seleccione PowerApps > personalizar formularios.")
+    > ![Abra la lista incidentes y, a continuación, seleccione Power apps > personalizar formularios.](./media/dependent-drop-down-lists/open-form.png "Abra la lista incidentes y, a continuación, seleccione Power apps > personalizar formularios.")
 
-    Se abre una pestaña del explorador con el formulario predeterminado en PowerApps Studio.
+    Se abre una pestaña del explorador con el formulario predeterminado en Power apps Studio.
 
 1. opta En el panel **campos** , mantenga el mouse sobre el campo **título** , seleccione los puntos suspensivos (...) que aparecen y, a continuación, seleccione **quitar**.
 
@@ -102,7 +101,7 @@ Después de ese cambio, puede omitir la columna **title** o [quitarla](https://s
 
 ## <a name="add-the-locations-list"></a>Agregar la lista de ubicaciones
 
-1. Seleccione **ver**  > **orígenes de datos**  > **Agregar origen de datos**.
+1. Seleccione **ver** > **orígenes de datos** > **Agregar origen de datos**.
 
 1. Seleccione o cree una conexión de SharePoint y, a continuación, especifique el sitio que contiene la lista de **ubicaciones** .
 
@@ -139,7 +138,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
 1. Establezca la propiedad **Items** de **ddlocation** en esta fórmula:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. opta Mientras mantiene presionada la tecla Alt, Abra **ddLocation**y confirme que la lista muestra las tres ubicaciones.
 
@@ -159,7 +158,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
     La propiedad **Items** de **ddDepartment** se establece en esta fórmula:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Esta fórmula filtra los elementos de **ddDepartment** en función de lo que seleccione el usuario en **ddLocation**. Esta configuración garantiza que la lista "secundaria" de departamentos refleje los datos para su ubicación "primaria", como la lista de **ubicaciones** de SharePoint especifica.
 
@@ -181,7 +180,7 @@ Las listas de ubicaciones y departamentos reflejan la información de la lista *
 
 ## <a name="save-and-open-the-form-optional"></a>Guardar y abrir el formulario (opcional)
 
-1. Abra el menú **archivo** y, a continuación, seleccione **Guardar**  > **publicar en SharePoint**  > **publicar en SharePoint**.
+1. Abra el menú **archivo** y, a continuación, seleccione **Guardar** > **publicar en SharePoint** > **publicar en SharePoint**.
 
 1. En la esquina superior izquierda, seleccione la flecha Atrás y luego **Volver a SharePoint**.
 
@@ -203,10 +202,10 @@ Confirme si está mostrando el campo correcto para el control de cualquiera de e
     > ![cambiar el cuadro combinado](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **La lista desplegable mi secundaria contiene elementos duplicados.**
-Este síntoma es probable que se deba al uso de una columna de **búsqueda** en SharePoint o a una función de **elección** en PowerApps. Para quitar la duplicación, ajuste una función **DISTINCT** alrededor de los datos que devuelven correctamente. Más información: [función DISTINCT](functions/function-distinct.md).
+Este síntoma es probable que se deba al uso de una columna de **búsqueda** en SharePoint o a una función de **elección** en Power apps. Para quitar la duplicación, ajuste una función **DISTINCT** alrededor de los datos que devuelven correctamente. Más información: [función DISTINCT](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
 Esta configuración está disponible en los controles desplegables, así **como en los** controles de **cuadro combinado** y **cuadro de lista** que permiten una selección a la vez. No se puede usar el **depende de** la configuración de ninguno de esos controles si permiten selecciones múltiples. No se recomienda este enfoque para trabajar con conjuntos de opciones en Common Data Service.
 
-**Depende de** la configuración no es compatible con colecciones o datos estáticos. Para configurar listas desplegables dependientes con estos orígenes, edite la expresión directamente en la barra de fórmulas. Además, PowerApps no admite el uso de dos campos de elección en SharePoint sin ninguna tabla de datos coincidente, y no se puede definir un **campo coincidente** dentro de esta interfaz de usuario.
+**Depende de** la configuración no es compatible con colecciones o datos estáticos. Para configurar listas desplegables dependientes con estos orígenes, edite la expresión directamente en la barra de fórmulas. Además, Power apps no admite el uso de dos campos de elección en SharePoint sin ninguna tabla de datos coincidente, y no se puede definir un **campo coincidente** dentro de esta interfaz de usuario.

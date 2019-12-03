@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542452"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674639"
 ---
-# <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Mostrar, ordenar y filtrar los datos en una galería de PowerApps
+# <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Mostrar, ordenar y filtrar datos en una galería de Power apps
 Cree una galería para mostrar imágenes y texto sobre diversos productos, y ordene y filtre esa información.
 
-En PowerApps, puede usar una galería para mostrar varios elementos relacionados, como si se tratara de un catálogo. Las galerías son ideales para mostrar información sobre productos, como nombres y precios. En este tema, crearemos una galería y ordenaremos y filtraremos la información mediante el uso de funciones similares a las de Excel. Además, cuando se seleccione un elemento, se colocará un borde a su alrededor.
+En Power Apps, puede usar una galería para mostrar varios elementos relacionados, tal como se ve en un catálogo. Las galerías son ideales para mostrar información sobre productos, como nombres y precios. En este tema, crearemos una galería y ordenaremos y filtraremos la información mediante el uso de funciones similares a las de Excel. Además, cuando se seleccione un elemento, se colocará un borde a su alrededor.
 
 > [!NOTE]
 > En este tema se usa una aplicación de tableta. Puede usar una aplicación de teléfono, pero deberá cambiar el tamaño de algunos de los controles.
@@ -32,10 +31,10 @@ En PowerApps, puede usar una galería para mostrar varios elementos relacionados
 > 
 
 ### <a name="prerequisites"></a>Requisitos previos
-* [Regístrese](../signup-for-powerapps.md) en PowerApps y, luego, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para registrase.
+* [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 * Cree una aplicación de tableta a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
 * Tiene que saber [configurar un control](add-configure-controls.md).
-* En estos pasos se usa [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) como datos de entrada de ejemplo, que incluye imágenes .jpg. El archivo zip incluye un archivo XML que se puede convertir a Excel. De lo contrario, PowerApps lee automáticamente los archivos dentro los archivos .zip y lo importa correctamente. Puede descargar y usar estos datos de ejemplo o importar los suyos propios.
+* En estos pasos se usa [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) como datos de entrada de ejemplo, que incluye imágenes .jpg. El archivo zip incluye un archivo XML que se puede convertir a Excel. De lo contrario, Power apps leerá automáticamente los archivos de los archivos. zip y los importará correctamente. Puede descargar y usar estos datos de ejemplo o importar los suyos propios.
 
 ## <a name="show-data-in-a-gallery"></a>Mostrar datos en una galería
 1. Cree una colección denominada **Inventory** con los datos de ejemplo. Siga estos pasos:  
@@ -121,7 +120,7 @@ Mediante estos pasos, vamos a ordenar los elementos de la galería en orden asce
 1. Seleccione un elemento cualquiera de la galería *excepto* el primero.
 2. La propiedad **[Items](controls/properties-core.md)** está establecida actualmente en Inventory (el nombre de la colección). Cámbiela a lo siguiente:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     Cuando lo haga, los elementos de la galería se ordenarán por nombre de producto en orden ascendente: ![][11]  
    
@@ -134,11 +133,11 @@ Mediante estos pasos, vamos a ordenar los elementos de la galería en orden asce
 2. Configure el control deslizante de modo que los usuarios no puedan establecerlo en un valor fuera del intervalo de unidades disponibles:  
    
    1. En la pestaña **Contenido**, seleccione **Mín.** y escriba la expresión siguiente:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. En la pestaña **Contenido**, seleccione **Máx.** y escriba la expresión siguiente:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Seleccione un elemento cualquiera de la galería *excepto* el primero. Establezca la propiedad **[Items](controls/properties-core.md)** de la galería en la expresión siguiente:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. En **Vista previa**, ajuste el control deslizante en un valor comprendido entre la cantidad mínima y máxima en la galería. A medida que ajuste el control deslizante, la galería mostrará solo los productos con una cantidad inferior al valor que elija:  
    ![][13]  
 
@@ -147,7 +146,7 @@ Ahora vamos a agregar un filtro:
 1. Vuelva al diseñador.
 2. En la pestaña **Insertar**, seleccione **Texto**, elija **Texto de entrada** y cambie el nombre del control nuevo a **NameFilter**. Mueva el control de texto debajo del control deslizante.
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de la galería en la expresión siguiente:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. En **Vista previa**, establezca el control deslizante en *30* y escriba la letra *g* en el control de entrada de texto. En la galería se muestra el único producto con menos de 30 unidades disponibles *y* con un nombre que empieza por la letra "g":  
    ![][14]  
 

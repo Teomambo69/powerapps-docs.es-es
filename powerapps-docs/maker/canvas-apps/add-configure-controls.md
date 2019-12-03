@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537118"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680061"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Agregar y configurar un control de aplicación de lienzo en PowerApps
 
@@ -26,9 +26,9 @@ Agregue diversos elementos de interfaz de usuario a su aplicación de lienzo y c
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-1. Si aún no tiene una licencia de PowerApps, [Regístrese](../signup-for-powerapps.md)y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Si aún no tiene una licencia de Power Apps, [Regístrese](../signup-for-powerapps.md)y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. En **crear su propia aplicación**, mantenga el mouse sobre la **aplicación Canvas en blanco**y, a continuación, seleccione **crear esta aplicación**.
-1. Si se le pide que realice el paseo introductorio, seleccione **siguiente** para familiarizarse con las áreas clave de la interfaz de PowerApps (o seleccione **omitir**).
+1. Si se le pide que realice el paseo introductorio, seleccione **siguiente** para familiarizarse con las áreas clave de la interfaz de Power apps (o seleccione **omitir**).
 
     Siempre puede realizar el paseo más adelante seleccionando el icono de signo de interrogación situado cerca de la esquina superior derecha de la pantalla y, a continuación, seleccionando **realizar el paseo introductorio**.
 

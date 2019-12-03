@@ -1,6 +1,6 @@
 ---
 title: Formato de tablas en Excel | Microsoft Docs
-description: Para utilizar datos de Excel en PowerApps, debe dar formato de tabla a los datos. Agregar palabra clave "imagen" en los nombres de columna
+description: Para usar los datos de Excel en Power Apps, debe dar formato a los datos como una tabla. Agregar palabra clave "imagen" en los nombres de columna
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990031"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675696"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Dar formato a una tabla en Excel y sugerencias de nomenclatura
-En PowerApps, solo puede crear una aplicación de lienzo basada en datos de Excel si tienen formato de tabla. En este artículo se muestra cómo dar formato a una tabla en Excel y se ofrecen algunas sugerencias de asignación de nombres de columnas de Excel.
+En Power Apps, puede crear una aplicación de lienzo basada en datos de Excel solo si tiene el formato de tabla. En este artículo se muestra cómo dar formato a una tabla en Excel y se ofrecen algunas sugerencias de asignación de nombres de columnas de Excel.
 
 ## <a name="how-to-format-a-table-in-excel"></a>Cómo dar formato a una tabla de Excel
 Para convertir los datos en una tabla, seleccione **Dar formato como tabla** en la pestaña **Inicio** de Excel.

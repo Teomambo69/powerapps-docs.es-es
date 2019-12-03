@@ -13,25 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa927559c13726bd2d780c7ce3841c5a53317c8f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 6b135f29ac020f933e4bc2c8276c3fa74d6fd762
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899211"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674997"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Creación de una aplicación de lienzo para administrar proyectos
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 En esta tarea se va a compilar una aplicación de lienzo desde el principio. Esta aplicación permite a un usuario asignar un administrador a proyectos y actualizar los detalles de proyectos. Va a ver algunos de los mismos controles y fórmulas que en la primera aplicación, pero creará más partes de la aplicación en esta ocasión. El proceso es más complejo, pero aprenderá más, por lo que el equilibrio debería ser razonable.
 
 > [!TIP]
 > El [paquete de descarga](https://aka.ms/o4ia0f) de este escenario incluye una versión terminada de esta aplicación: project-details-app.msapp.
 
-## <a name="quick-review-of-powerapps-studio"></a>Repaso rápido de PowerApps Studio
-PowerApps Studio tiene tres paneles y una cinta de opciones que hacen que crear aplicaciones sea similar a crear un conjunto de diapositivas en PowerPoint:
+## <a name="quick-review-of-power-apps-studio"></a>Revisión rápida de Power apps Studio
+Power apps Studio tiene tres paneles y una cinta de opciones que hacen que la creación de aplicaciones se comporte como la creación de un conjunto de diapositivas en PowerPoint:
 
 1. Barra de navegación izquierda, que muestra una vista jerárquica de todas las pantallas y los controles de la aplicación, así como miniaturas de las pantallas.
 2. Panel central, que contiene la pantalla de la aplicación con la que está trabajando.
@@ -40,13 +39,13 @@ PowerApps Studio tiene tres paneles y una cinta de opciones que hacen que crear 
 5. Barra de fórmulas, donde se agregan las fórmulas (como en Excel) que definen el comportamiento de la aplicación.
 6. Cinta de opciones, donde puede agregar controles y personalizar los elementos de diseño.
 
-![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
+![Power apps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
 ## <a name="step-1-create-screens"></a>Paso 1: Creación de pantallas
 Una vez terminado el repaso, empiece a crear una aplicación.
 
 ### <a name="create-and-save-the-app"></a>Crear y guardar la aplicación
-1. En PowerApps Studio, pulse o haga clic en **Nuevo**, en **Aplicación vacía** y en **Diseño de teléfono**.
+1. En Power apps Studio, pulse o haga clic en **nuevo**y, en **aplicación vacía**, pulse o haga clic en **diseño de teléfono**.
    
     ![Aplicación vacía, diseño de teléfono](./media/sharepoint-scenario-build-app/04-01-01-blank-phone-app.png)
 2. Pulse o haga clic en **archivo**, que se abre en una pestaña de configuración de la **aplicación** . Escriba el nombre "aplicación de administración de proyectos".
@@ -115,7 +114,7 @@ En este paso, se conectará a la lista **Project details** SharePoint. Solo se u
     ![Pestaña Orígenes de datos](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
 ## <a name="step-3-build-the-selecttask-screen"></a>Paso 3: Preparación de la pantalla SelectTask
-En este paso, se proporciona una forma de navegar hasta las restantes pantallas de la aplicación mediante el uso de algunos de los controles, las fórmulas y las opciones de formato que proporciona PowerApps.
+En este paso, se proporcionará una manera de navegar a las otras pantallas de la aplicación: trabajar con algunos de los controles, las fórmulas y las opciones de formato que proporciona Power apps.
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>Actualizar el título e insertar el texto de introducción
 1. En la barra de navegación izquierda, seleccione la pantalla **SelectTask**.
@@ -141,7 +140,7 @@ En este paso, se proporciona una forma de navegar hasta las restantes pantallas 
     ![Botón Agregar](./media/sharepoint-scenario-build-app/04-03-05-button-default.png)
 2. En la barra de fórmulas, establezca las siguientes propiedades para el botón:
    
-   * Propiedad **AlSeleccionar** = **Navigate(AssignManager; Fade)** . Cuando ejecute la aplicación y haga clic en este botón, irá a la segunda pantalla de la aplicación, con una transición de fundido entre las pantallas.
+   * Propiedad **AlSeleccionar** = **Navigate(AssignManager, Fade)** . Cuando ejecute la aplicación y haga clic en este botón, irá a la segunda pantalla de la aplicación, con una transición de fundido entre las pantallas.
 
    * Propiedad **Texto** = **"Assign Manager"**
 
@@ -150,7 +149,7 @@ En este paso, se proporciona una forma de navegar hasta las restantes pantallas 
     ![Actualizar texto del botón](./media/sharepoint-scenario-build-app/04-03-06-button-updated.png)
 4. Inserte otro botón con las siguientes propiedades:
    
-   * Propiedad **AlSeleccionar** = **Navigate(ViewProjects; Fade)** .
+   * Propiedad **AlSeleccionar** = **Navigate(ViewProjects, Fade)** .
 
    * Propiedad **Texto** = **"Update Details"**
      
@@ -162,7 +161,7 @@ En este paso, se proporciona una forma de navegar hasta las restantes pantallas 
 ### <a name="run-the-app"></a>Ejecutar la aplicación
 La aplicación aún no hace mucho, pero se puede ejecutar si así lo desea:
 
-1. Pulse o haga clic en la pantalla **SelectTask** (la aplicación siempre se inicia desde la pantalla seleccionada en el modo de vista previa de PowerApps Studio).
+1. Pulse o haga clic en la pantalla **SelectTask** (la aplicación siempre se inicia desde la pantalla seleccionada en el modo de vista previa en Power apps Studio).
 
 2. Haga clic o pulse ![Icono Ejecutar aplicación](./media/sharepoint-scenario-build-app/icon-run-arrow.png) en la esquina superior derecha para ejecutar la aplicación.
 
@@ -208,7 +207,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
 
    * Propiedad **Alto** = **40**
 
-   * Propiedad **AlSeleccionar** = **Navigate(SelectTask; Fade)**
+   * Propiedad **AlSeleccionar** = **Navigate(SelectTask, Fade)**
 
    * Propiedad **Ancho** = **40**
      
@@ -234,7 +233,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
 
    * Propiedad **EstiloDelBorde** = **Punteado**
 
-   * Propiedad **Elementos** = **Filter('Project Details'; PMAssigned="Unassigned")** . Solo se incluyen en la galería los proyectos que no tienen ningún administrador asignado.
+   * Propiedad **Elementos** = **Filter('Project Details', PMAssigned="Unassigned")** . Solo se incluyen en la galería los proyectos que no tienen ningún administrador asignado.
      
      ![Galería con texto de lista](./media/sharepoint-scenario-build-app/04-04-06-gallery-updated.png)
 
@@ -292,7 +291,7 @@ En este paso, se va a usar una galería para mostrar todos los proyectos que se 
    
    * Propiedad **Alto** = **60**
 
-   * Propiedad **AlSeleccionar** = **Patch('Project Details'; LookUp('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text})** . Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
+   * Propiedad **AlSeleccionar** = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})** . Para más información, consulte [Análisis en profundidad de una fórmula](#formula-deep-dive).
 
    * Esta fórmula actualiza la lista **Project Details** y establece un valor para el campo PMAssigned.
 
@@ -327,7 +326,7 @@ En este paso, se cambiarán las propiedades para la galería en la pantalla **Vi
 
 5. Seleccione el botón Actualizar ![Icono Actualizar](./media/sharepoint-scenario-build-app/icon-refresh.png) y establezca su propiedad **AlSeleccionar** en **Refresh('Project Details')** .
 
-6. Seleccione el botón Nuevo elemento ![Icono Agregar nuevo](./media/sharepoint-scenario-build-app/icon-add-item.png) y establezca su propiedad **AlSeleccionar** en **NewForm(EditForm1);; Navigate(UpdateDetails; ScreenTransition.None)** .
+6. Seleccione el botón Nuevo elemento ![Icono Agregar nuevo](./media/sharepoint-scenario-build-app/icon-add-item.png) y establezca su propiedad **AlSeleccionar** en **NewForm(EditForm1); Navigate(UpdateDetails, ScreenTransition.None)** .
 
 ### <a name="add-a-back-arrow-to-return-to-the-selecttask-screen"></a>Agregar una flecha Atrás para volver a la pantalla SelectTask
 
@@ -339,15 +338,15 @@ En este paso, se cambiarán las propiedades para la galería en la pantalla **Vi
    
     ![Botón Atrás](./media/sharepoint-scenario-build-app/04-05-04-left-arrow-v.png)
    
-    La acompañan todas sus propiedades, incluida la propiedad **AlSeleccionar** de **Navigate(SelectTask; Fade)** .
+    La acompañan todas sus propiedades, incluida la propiedad **AlSeleccionar** de **Navigate(SelectTask, Fade)** .
 
 ### <a name="change-the-data-source-for-the-browsegallery1-gallery"></a>Cambiar el origen de datos de la galería BrowseGallery1 (GaleríaExamen1)
 
-1. Seleccione la galería **BrowseGallery1** y establezca la propiedad **Elementos** de la galería en **SortByColumns(Filter('Project Details'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+1. Seleccione la galería **BrowseGallery1** y establezca la propiedad **Elementos** de la galería en **SortByColumns(Filter('Project Details', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     Esto establece el origen de datos de la galería en la lista **Project Details** y usa el campo **Título** para búsquedas y clasificación.
 
-2. Seleccione ![Icono de flecha de detalles](./media/sharepoint-scenario-build-app/icon-details-arrow.png) en el primer elemento de la galería y establezca la propiedad **AlSeleccionar** en **Navigate(UpdateDetails; None)** .
+2. Seleccione ![Icono de flecha de detalles](./media/sharepoint-scenario-build-app/icon-details-arrow.png) en el primer elemento de la galería y establezca la propiedad **AlSeleccionar** en **Navigate(UpdateDetails, None)** .
    
     ![ Galería View Projects; primer elemento seleccionado](./media/sharepoint-scenario-build-app/04-05-05b-gallery-arrow-v.png)
 
@@ -397,7 +396,7 @@ En este paso, se conectará el formulario de edición en la pantalla **UpdateDet
    * **ActualDays**
      
      ![Editar campos de formulario](./media/sharepoint-scenario-build-app/04-06-03-edit-fields.png)
-6. Seleccione el botón Cancelar ![Icono Cancelar](./media/sharepoint-scenario-build-app/icon-cancel.png) y establezca su propiedad **AlSeleccionar** en **ResetForm(EditForm1);; Back()** .
+6. Seleccione el botón Cancelar ![Icono Cancelar](./media/sharepoint-scenario-build-app/icon-cancel.png) y establezca su propiedad **AlSeleccionar** en **ResetForm(EditForm1); Back()** .
 
 7. Seleccione el botón Guardar ![Icono Guardar con marca de verificación](./media/sharepoint-scenario-build-app/icon-check-mark.png) y consulte la fórmula de **AlSeleccionar**: **SubmitForm(EditForm1)** . Como se va a usar el control de formulario de edición, se puede utilizar **Submit()** en lugar de **Patch()** , como antes.
 
@@ -411,9 +410,9 @@ Ahora que la aplicación está completa, ejecútela para ver cómo funciona. Se 
 ### <a name="add-a-link-to-the-app"></a>Agregar un vínculo a la aplicación
 1. En el iniciador de aplicaciones de Office 365, pulse o haga clic en **PowerApps**.
    
-    ![PowerApps en el iniciador de aplicaciones de Office 365](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
+    ![Power Apps en el iniciador de aplicaciones de Office 365](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
 
-2. En PowerApps, pulse o haga clic en el botón de puntos suspensivos ( **…** ) para **Project Management app** y en **Abrir**.
+2. En Power Apps, pulse o haga clic en los puntos suspensivos ( **...** ) de la **aplicación de administración de proyectos**y, después, **abra**.
    
     ![Seleccionar Project Management app](./media/sharepoint-scenario-build-app/04-07-02b-select-app.png)
 
@@ -495,9 +494,9 @@ Ahora que la aplicación está en este sitio de SharePoint, se va a asumir el ro
     ![Lista de SharePoint actualizada](./media/sharepoint-scenario-build-app/04-07-11-updated-list.png)
 
 ## <a name="formula-deep-dive"></a>Análisis en profundidad de una fórmula
-Se trata de la segunda sección opcional sobre las fórmulas de PowerApps. En la primera, se analizó una de las fórmulas que PowerApps genera para la galería de examen en una aplicación de tres pantallas. En este análisis en profundidad, se examinará una fórmula que se usa para la pantalla **AssignManager** de nuestra segunda aplicación. Esta es la fórmula:
+Esta es la segunda sección opcional de las fórmulas de Power apps. En la primera profundización, analizamos una de las fórmulas que genera Power apps para la galería de exploración en una aplicación de tres pantallas. En este análisis en profundidad, se examinará una fórmula que se usa para la pantalla **AssignManager** de nuestra segunda aplicación. Esta es la fórmula:
 
-**Revisión (' Project details '; LookUp (' Project details '; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1. Text})**
+**Revisión (' Project details ', LookUp (' Project details ', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1. Text})**
 
 ¿Qué hace esta fórmula? Cuando selecciona un elemento en la galería y hace clic en el botón **Aceptar**, la fórmula actualiza la lista **Project Details**, lo que establece la columna **PMAssigned** en el valor que especifique en la entrada de texto. La fórmula usa funciones para realizar su trabajo:
 

@@ -1,6 +1,6 @@
 ---
 title: Generar una aplicación de lienzo desde Common Data Service | Microsoft Docs
-description: En PowerApps, genere automáticamente una aplicación de lienzo para administrar datos en Common Data Service
+description: En Power Apps, genere automáticamente una aplicación de lienzo para administrar datos en Common Data Service
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540137"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678566"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo desde Common Data Service en PowerApps
 
-En PowerApps, genere automáticamente una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
+En Power Apps, genere automáticamente una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
+Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -44,7 +44,7 @@ Para seguir esta guía de inicio rápido, debe tener asignado el rol de segurida
 
 1. En **Elegir una tabla**, seleccione **Cuentas** y, después, seleccione **Conectar**.
 
-1. Si aparece el cuadro de diálogo de **bienvenida a PowerApps Studio**, seleccione **Skip** (Omitir).
+1. Si aparece el cuadro de diálogo **Bienvenido a Power apps Studio** , seleccione **omitir**.
 
 La aplicación se abre en la pantalla de exploración, en la que se muestra una lista de las cuentas en un control denominado galería. Cerca de la parte superior de la pantalla, una barra de título muestra los iconos para actualizar los datos en la galería, ordenarlos alfabéticamente y agregar datos a la galería. Bajo la barra de título, un cuadro de búsqueda proporciona la opción de filtrar los datos en la galería según el texto que se escriba o pegue. 
 

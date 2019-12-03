@@ -1,5 +1,5 @@
 ---
-title: PowerApps para desarrolladores empresariales, asociados y fabricantes de software independientes | Microsoft Docs
+title: Power apps para desarrolladores empresariales, asociados y fabricantes de software independientes | Microsoft Docs
 description: Una introducción al desarrollo de soluciones con aplicaciones de lienzo.
 author: ImadYanni
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 824ce3d3767ada450d9590d9b14e539ce66cf4e7
-ms.sourcegitcommit: da16207fe9bf4e2382a9a25463b2ee8c3a680a3b
+ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74086481"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679505"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Aplicaciones de lienzo para desarrolladores empresariales, asociados y fabricantes de software independientes
 
-Los desarrolladores tienen la posibilidad de ampliar aplicaciones de lienzo en PowerApps, lo que habilita soluciones aún más potentes para las organizaciones y los clientes.
+Como desarrollador, puede ampliar las aplicaciones de lienzo en Power Apps, habilitando soluciones aún más eficaces para las organizaciones y los clientes.
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>Aplicaciones de lienzo para desarrolladores empresariales
 
@@ -40,8 +40,8 @@ Los desarrolladores empresariales permiten que sus organizaciones compilen robus
 
 Tanto los fabricantes de software independientes (ISV) como los asociados de Microsoft, pueden acelerar la incorporación de sus clientes si amplían sus productos para que se integren con los datos y procesos empresariales de los clientes:
 
-- **Cree y certifique conectores personalizados**: suba cualquier producto a la nube de Microsoft mediante la creación de un conector que permita a PowerApps comunicarse con su servicio. [Más información](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+- **Cree y certifique conectores personalizados**: traiga su producto a la nube de Microsoft mediante la creación de un conector que permita a las aplicaciones de Power apps comunicarse con el servicio. [Más información](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-- **Presente la solución en AppSource**: genere nuevos clientes potenciales para su empresa mediante la compilación de una aplicación con PowerApps y su posterior publicación en AppSource para la prueben los clientes nuevos. [Más información](dev-appsource-test-drive.md)
+- **Lista de la solución en AppSource**: genere nuevos clientes potenciales para su empresa mediante la creación de una aplicación con Power apps y su publicación en AppSource para que los nuevos clientes las prueben. [Más información](dev-appsource-test-drive.md)
 
-- **Empiece a usarlo hoy mismo de forma gratuita**: regístrese gratis en el Plan de la comunidad de PowerApps y empiece a compilar aplicaciones en un entorno individual dedicado. [Más información](../dev-community-plan.md)
+- Comience **hoy mismo de forma gratuita**: Regístrese en el plan de la comunidad de Power apps de forma gratuita y empiece a crear aplicaciones en un entorno individual dedicado. [Más información](../dev-community-plan.md)

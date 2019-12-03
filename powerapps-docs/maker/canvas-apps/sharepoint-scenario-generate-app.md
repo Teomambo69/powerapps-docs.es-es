@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899533"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674785"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
-Ahora que las listas de SharePoint están en su sitio, podemos generar y personalizar la primera aplicación. PowerApps está integrado con SharePoint, por lo que es fácil generar una *aplicación de tres pantallas* básica directamente desde una lista. Esta aplicación permite ver información tanto resumida como detallada de cada elemento de la lista, actualizar los elementos existentes en la lista y crear nuevos elementos en la lista. Si crea una aplicación directamente a partir de una lista, esta aparece como un *vista* en dicha lista. Posteriormente, dicha aplicación se puede ejecutar tanto en un explorador como en un teléfono móvil.
+Ahora que las listas de SharePoint están en su sitio, podemos generar y personalizar la primera aplicación. Power apps se integra con SharePoint, por lo que es fácil generar una *aplicación de tres pantallas* básica directamente desde una lista. Esta aplicación permite ver información tanto resumida como detallada de cada elemento de la lista, actualizar los elementos existentes en la lista y crear nuevos elementos en la lista. Si crea una aplicación directamente a partir de una lista, esta aparece como un *vista* en dicha lista. Posteriormente, dicha aplicación se puede ejecutar tanto en un explorador como en un teléfono móvil.
 
 > [!TIP]
 > El [paquete de descarga](https://aka.ms/o4ia0f) para este escenario incluye una versión terminada de esta aplicación: project-requests-app.msapp.
@@ -36,19 +35,19 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Crear una aplicación](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. Asigne un nombre a la aplicación, como "Project Requests app", y haga clic o pulse en **Crear**. Cuando la aplicación está lista, se abre en PowerApps Studio.
+2. Asigne un nombre a la aplicación, como "Project Requests app", y haga clic o pulse en **Crear**. Cuando la aplicación está lista, se abre en Power apps Studio.
    
     ![Especifique un nombre para la aplicación](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>Paso 2: Examen de la aplicación en PowerApps Studio
+## <a name="step-2-review-the-app-in-power-apps-studio"></a>Paso 2: revisión de la aplicación en Power apps Studio
 
-1. En PowerApps Studio, la barra de navegación izquierda muestra de forma predeterminada una vista jerárquica de las pantallas y los controles de la aplicación.
+1. En Power apps Studio, la barra de navegación izquierda muestra de forma predeterminada una vista jerárquica de las pantallas y los controles de la aplicación.
    
-    ![PowerApps Studio con la vista jerárquica](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
+    ![Power apps Studio con vista jerárquica](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
 
 2. Haga clic o pulse en el icono de la miniatura para cambiar de vista.
    
-    ![Selector de vistas de PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
+    ![Selector de vista de Power apps Studio](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
 
 3. Pulse o haga clic en la pantalla que desee para verla en el panel central. Hay tres pantallas:
    
@@ -58,7 +57,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
     
     (c). La pantalla de **edición o creación**, donde se editan los elementos existentes o se crean nuevos.
       
-      ![PowerApps Studio con la vista de miniaturas](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
+      ![Power apps Studio con vista en miniatura](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
 ## <a name="step-3-customize-the-apps-browse-screen"></a>Paso 3: Personalización de la pantalla de exploración de la aplicación
 
@@ -86,11 +85,11 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Propiedad Elementos](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Cambie la fórmula a **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+6. Cambie la fórmula a **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Barra de fórmulas](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
-    Le permite ordenar y buscar por el campo **Title**, en lugar del predeterminado que eligió PowerApps. Para más información, consulte [Formula deep-dive](#formula-deep-dive) (Análisis en profundidad de una fórmula).
+    Esto le permite ordenar y buscar por el campo **título** , en lugar del valor predeterminado que Power apps eligió. Para más información, consulte [Formula deep-dive](#formula-deep-dive) (Análisis en profundidad de una fórmula).
 
 6. Pulse o haga clic en **Archivo** y, luego, en **Guardar**. Haga clic o pulse en ![el icono Back to app](./media/sharepoint-scenario-generate-app/icon-back-to-app.png) (Volver a la aplicación) para volver a la aplicación.
 
@@ -138,7 +137,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
 Se trata de una aplicación muy simple y solo hemos realizado unas pocas personalizaciones básicas, pero se puede ver que es posible crear rápidamente algo interesante. Vamos a pasar a la tarea siguiente, pero si lo desea, examine la aplicación con mayor profundidad para ver cómo funcionan conjuntamente los controles y las fórmulas para potenciar el comportamiento de la aplicación.
 
 ## <a name="formula-deep-dive"></a>Análisis en profundidad de una fórmula
-Esta sección es opcional, pero le ayudará a conocer mejor cómo funcionan las fórmulas. En el paso 3 de esta tarea, se modificó la fórmula de la propiedad **Elementos** de **BrowseGallery1**. En concreto, se cambió la forma en que se realizaban las acciones de ordenación y búsqueda para utilizar el campo **Title**, en lugar del campo que PowerApps seleccionaba. Esta es la fórmula modificada:
+Esta sección es opcional, pero le ayudará a conocer mejor cómo funcionan las fórmulas. En el paso 3 de esta tarea, se modificó la fórmula de la propiedad **Elementos** de **BrowseGallery1**. En concreto, hemos cambiado la ordenación y la búsqueda para usar el campo **título** , en lugar del campo que Power apps eligió. Esta es la fórmula modificada:
 
 **SortByColumns ( Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text ) ), "Title", If ( SortDescending1, Descending, Ascending ) )**
 

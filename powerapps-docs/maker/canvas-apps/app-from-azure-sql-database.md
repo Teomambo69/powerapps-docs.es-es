@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 652c8d5c67a9f7245ed40be23cc827354d9b1e42
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540888"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679946"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vista previa: cree una aplicación de lienzo desde Azure SQL Database
 
 [Este tema es documentación preliminar y está sujeto a cambios.]
 
-En este tema, usará los datos de la Azure SQL Database para crear una aplicación con PowerApps en minutos. Tendrá una aplicación totalmente funcional con los datos que puede personalizar para ajustarse a sus necesidades empresariales y compartir en cualquier dispositivo.
+En este tema, usará los datos de la Azure SQL Database para crear una aplicación con Power Apps en solo unos minutos. Tendrá una aplicación totalmente funcional con los datos que puede personalizar para ajustarse a sus necesidades empresariales y compartir en cualquier dispositivo.
 
 > [!IMPORTANT]
 > - Se trata de una característica de vista previa.
@@ -35,9 +35,9 @@ En este tema, usará los datos de la Azure SQL Database para crear una aplicaci�
 - El explorador debe tener habilitados los elementos emergentes.
 - Necesita una suscripción de Azure. </br>Si no tiene una suscripción a Azure, [cree una cuenta gratuita](https://azure.microsoft.com/free/).
 - Necesita acceso a un SQL Database existente. </br> Si no tiene un SQL Database existente, [cree una nueva base de datos](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
-- Debe permitir que [las direcciones IP](#app-access-to-sql-database) de la región de PowerApps o los servicios de Azure tengan acceso a SQL Database en la configuración del firewall.
+- Debe permitir que [las direcciones IP](#app-access-to-sql-database) de la región de Power Apps o los servicios de Azure tengan acceso a SQL Database en la configuración del firewall.
 - La tabla SQL Database debe tener al menos una columna con el tipo de datos texto.
-- Necesita una licencia de PowerApps válida o regístrese para obtener una [licencia de prueba de 30 días](../signup-for-powerapps.md).
+- Necesita una licencia de Power apps válida o regístrese para obtener una [licencia de prueba de 30 días](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Crear una aplicación
 
@@ -46,10 +46,10 @@ En este tema, usará los datos de la Azure SQL Database para crear una aplicaci�
 3. Seleccione PowerApps.
 
     
-    ![Opción PowerApps en opciones de SQL Database](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Opción de PowerApps dentro de SQL Database")
+    ![Opción de Power Apps en SQL Database opciones](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Opción de Power apps dentro de SQL Database")
 
     > [!NOTE]
-    > Si no tiene una licencia de PowerApps, verá una barra de información azul con un vínculo para iniciar una prueba. Cuando seleccione iniciar una versión de prueba, se le dirigirá a una nueva pestaña en la que se suscribirá para obtener una licencia. Una vez completado, vuelva al Azure Portal y actualice la hoja para continuar.
+    > Si no tiene una licencia de Power Apps, verá una barra de información azul con un vínculo para iniciar una prueba. Cuando seleccione iniciar una versión de prueba, se le dirigirá a una nueva pestaña en la que se suscribirá para obtener una licencia. Una vez completado, vuelva al Azure Portal y actualice la hoja para continuar.
 
 4. Escriba un nombre para la aplicación como "inspección del sitio", "recaudador" o "seguimiento de presupuesto".
 
@@ -61,7 +61,7 @@ En este tema, usará los datos de la Azure SQL Database para crear una aplicaci�
 
     ![Especificar la información de la aplicación](./media/app-from-azure-sql-database/powerapps-create-page-azure-portal.png "Especificar la información de la aplicación")
 
-    El [PowerApps Studio](https://create.powerapps.com/studio/) se abre en una nueva pestaña. Si el elemento emergente está bloqueado, actualice el explorador para permitir elementos emergentes e inténtelo de nuevo. Una vez creada, tendrá una aplicación de tres páginas con datos del SQL Database.
+    [Power apps Studio](https://create.powerapps.com/studio/) se abre en una nueva pestaña. Si el elemento emergente está bloqueado, actualice el explorador para permitir elementos emergentes e inténtelo de nuevo. Una vez creada, tendrá una aplicación de tres páginas con datos del SQL Database.
 
 ## <a name="accessing-your-app"></a>Acceder a la aplicación
 
@@ -73,20 +73,20 @@ La aplicación que se crea con este método usa el [entorno predeterminado](http
 
 ## <a name="app-access-to-sql-database"></a>Acceso de la aplicación a SQL Database
 
-Puede configurar PowerApps para conectarse a SQL Database mediante direcciones IP o como un servicio de Azure.
+Puede configurar Power apps para que se conecte a SQL Database mediante direcciones IP o como un servicio de Azure.
 
 ### <a name="app-access-using-ip-address"></a>Acceso a la aplicación mediante la dirección IP
 
-[Requisitos del sistema de powerapps](limits-and-config.md#ip-addresses) enumera las direcciones IP que usa PowerApps en función de la región de la aplicación.
+[Requisitos del sistema de Power apps](limits-and-config.md#ip-addresses) muestra las direcciones IP que usa Power Apps en función de la región de la aplicación.
 
 Puede utilizar un procedimiento almacenado de Transact-SQL o el Azure Portal para configurar este acceso:
 
-- Procedimiento almacenado [sp_set_firewall_rule](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database?view=azuresqldb-current) para reglas de firewall de SQL Database o SQL Server
+- [Sp_set_firewall_rule](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database?view=azuresqldb-current) de procedimientos almacenados para reglas de firewall de SQL Database o SQL Server
 - [Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure) para las reglas de firewall de SQL Server
 
 ### <a name="app-access-as-an-azure-service"></a>Acceso a la aplicación como un servicio de Azure
 
-PowerApps puede conectarse al SQL Database **permitir el acceso al control de servicios de Azure** mediante el Azure portal. Para configurar este acceso, inicie sesión en el [Azure portal](https://portal.azure.com/) y navegue en el portal hasta **SQL Server**. Seleccione **firewalls y redes virtuales** y establezca el control **permitir que los servicios y recursos de Azure tengan acceso a este servidor** **en activado**. Seleccione **Guardar** para enviar los cambios.
+Power apps puede conectarse al SQL Database **permitir el acceso al control de servicios de Azure** mediante el Azure portal. Para configurar este acceso, inicie sesión en el [Azure portal](https://portal.azure.com/) y navegue en el portal hasta **SQL Server**. Seleccione **firewalls y redes virtuales** y establezca el control **permitir que los servicios y recursos de Azure tengan acceso a este servidor** **en activado**. Seleccione **Guardar** para enviar los cambios.
 
 > [!IMPORTANT]
 > Si deja el control establecido en activado, el servidor de Azure SQL Database acepta la comunicación desde cualquier subred dentro del límite de Azure, que se origina en una de las direcciones IP que se reconocen como las que se encuentran dentro de los intervalos definidos para los centros de datos de Azure. Si se mantiene el control establecido en ON, podría ser un acceso excesivo desde un punto de vista de seguridad.
@@ -94,9 +94,9 @@ PowerApps puede conectarse al SQL Database **permitir el acceso al control de se
 ## <a name="limitations"></a>Límite
 
 - El nombre de la aplicación solo puede incluir letras, números, guiones, paréntesis o caracteres de subrayado.
-- PowerApps requiere la autenticación de SQL para conectarse a SQL Database.
+- Power apps requiere la autenticación de SQL para conectarse a SQL Database.
 - Puede seleccionar solo una tabla mientras crea una aplicación de lienzo desde el Azure Portal. Personalice la aplicación después de crear la aplicación si desea agregar más tablas y otros orígenes de datos agregando más conexiones de datos.
-- PowerApps no puede conectarse a SQL Database mediante puntos de conexión de servicio de red virtual. Para obtener más información, consulte [permitir el acceso a través de puntos de conexión de servicio de red virtual](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
+- Power apps no puede conectarse a SQL Database mediante puntos de conexión de servicio de red virtual. Para obtener más información, consulte [permitir el acceso a través de puntos de conexión de servicio de red virtual](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
 
 ## <a name="other-considerations"></a>Otras consideraciones
 

@@ -1,6 +1,6 @@
 ---
 title: Creación de una aplicación de lienzo desde cero con Common Data Service | Microsoft Docs
-description: En PowerApps, cree una aplicación de lienzo para agregar, actualizar y eliminar registros en Common Data Service.
+description: En Power Apps, cree una aplicación de lienzo para agregar, actualizar y eliminar registros en Common Data Service.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,23 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec8524ac6afc265eba5d9a6edf381c5ebf2c340
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 48cd98481cff354d4e54cb54dc38865f6dfa6a14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540383"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679693"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Creación de una aplicación de lienzo desde cero con Common Data Service
 
 Compile una aplicación de lienzo para administrar datos almacenados en Common Data Service mediante entidades estándar (que están integradas), entidades personalizadas (creadas por la organización) o ambas.
 
-Al compilar una aplicación desde Common Data Service, no es necesario crear una conexión desde PowerApps, como ocurre con orígenes de datos como SharePoint, Dynamics 365 o Salesforce. Solo deberá especificar las entidades que quiere mostrar o administrar en la aplicación.
+Al compilar una aplicación desde Common Data Service, no es necesario crear una conexión desde Power Apps, como se hace con los orígenes de datos como SharePoint, Dynamics 365 o Salesforce. Solo deberá especificar las entidades que quiere mostrar o administrar en la aplicación.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Antes de crear una aplicación desde cero, familiarícese con los conceptos básicos de PowerApps mediante la [generación de una aplicación](data-platform-create-app.md) y, después, personalice la [galería](customize-layout-sharepoint.md), [formularios](customize-forms-sharepoint.md) y [tarjetas](customize-card.md) de esa aplicación.
+- Antes de crear una aplicación desde cero, familiarícese con los conceptos básicos de Power apps mediante la [generación de una aplicación](data-platform-create-app.md) y, a continuación, la personalización de la [Galería](customize-layout-sharepoint.md), los [formularios](customize-forms-sharepoint.md)y las [tarjetas](customize-card.md)de esa aplicación.
 - [Cambie a un entorno](working-with-environments.md) en el que se haya creado una base de datos con datos de ejemplo. Si tiene una licencia apropiada, puede [crear un entorno](../../administrator/create-environment.md) para satisfacer esta necesidad.
 - Para crear una aplicación, debe estar asignado al rol de seguridad [Creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles).
 
@@ -61,7 +60,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. En la barra de navegación izquierda, seleccione **BrowseGallery1** y establezca el valor de la propiedad **Items** en esta fórmula:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Esta fórmula especifica que:
 
@@ -127,25 +126,25 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. Establezca la propiedad **OnSelect** del icono "más" en esta fórmula:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Icono Agregar](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Establezca la propiedad **OnSelect** de la primera flecha que apunta a la derecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Icono Siguiente](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. En **FormScreen**, establezca la propiedad **OnSelect** del icono Cancelar en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono Cancelar](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Establezca la propiedad **OnSelect** del icono de marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de marca de verificación](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -153,7 +152,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear u
 
 1. Establezca la propiedad **Color** del icono **Papelera** en **White** y su propiedad **OnSelect** en esta fórmula:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de la papelera](./media/data-platform-create-app-scratch/trash-icon.png)
 

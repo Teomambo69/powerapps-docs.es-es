@@ -1,6 +1,6 @@
 ---
 title: Optimización del rendimiento de las aplicaciones de lienzo | Microsoft Docs
-description: Siga los procedimientos recomendados que aparecen este tema para mejorar el rendimiento de las aplicaciones de lienzo que se crean en PowerApps.
+description: Siga los procedimientos recomendados de este tema para aumentar el rendimiento de las aplicaciones de lienzo que cree en Power apps.
 author: yingchin
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9943678815b53df048ad197e3cdcbd56f4070fa3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995789"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675444"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
-Microsoft se esfuerza por mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de PowerApps, pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
+Microsoft está trabajando duro para mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de Power apps. pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
 
 Cuando un usuario abre una aplicación, esta pasa a través de estas fases de ejecución antes de mostrar cualquier interfaz de usuario: 
 1. **Autenticación del usuario**: se le pide al usuario, si esa persona nunca antes abrió la aplicación, que inicie sesión con las credenciales de cualquier conexión que la aplicación necesite. Si el mismo usuario vuelve a abrir la aplicación, se le podría pedir nuevamente que lo haga, en función de las directivas de seguridad de la organización. 
-2. **Obtención de los metadatos**: se recuperan metadatos, como la versión de la plataforma de PowerApps en la que se ejecuta la aplicación y los orígenes desde donde se deben recuperar los datos. 
+2. **Obtiene los metadatos** : recupera metadatos, como la versión de la plataforma de Power Apps en la que se ejecuta la aplicación y los orígenes de los que debe recuperar los datos. 
 3. **Inicialización de la aplicación**: se realiza cualquier tarea especificada en la propiedad **OnStart**. 
 4. **Presentación de pantallas**: se presenta la primera pantalla con controles que la aplicación ha rellenado con datos. Si el usuario abre otras pantallas, la aplicación las presenta mediante el mismo proceso.  
 
@@ -35,7 +35,7 @@ Cuando un usuario abre una aplicación, esta pasa a través de estas fases de ej
 Para medir rápidamente el rendimiento de la aplicación, active Herramientas de desarrollo en [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) mientras se ejecuta la aplicación. Es más probable que la aplicación tarde más de 15 segundos en devolver datos si suele solicitar datos de más de 30 orígenes de datos, como Common Data Service, Azure SQL, SharePoint y Excel en OneDrive.  
 
 ## <a name="limit-the-number-of-controls"></a>Límite del número de controles 
-**No agregue más de 500 controles a la misma aplicación**. PowerApps genera DOM HTML para presentar cada control. Cuantos más controles agregue, más tiempo de generación necesita PowerApps. 
+**No agregue más de 500 controles a la misma aplicación**. Power apps genera un DOM HTML para representar cada control. Cuanto más controles agregue, más tiempo necesitará la generación de energía de las aplicaciones. 
 
 En algunos casos, es posible llegar al mismo resultado y hacer que la aplicación se inicie más rápido si usa una galería en lugar de controles individuales. Además, puede que quiera disminuir el número de tipos de control en la misma pantalla. Algunos controles (como el visor de PDF, la tabla de datos y el cuadro combinado) incorporan scripts de ejecución de gran tamaño y tardan más en presentarse. 
 
@@ -107,7 +107,7 @@ Active la [característica experimental](working-with-experimental.md) para carg
 Use los orígenes de datos y las fórmulas que se pueden delegar para que las aplicaciones sigan funcionando correctamente mientras los usuarios pueden acceder a toda la información que necesitan y evite llegar al límite de 2000 filas de datos para las consultas que no se pueden delegar. En el caso de las columnas con registros de datos en las que los usuarios pueden buscar, filtrar u ordenar los datos, esos índices de columna están diseñados tal como lo describen estos documentos para [SQL Server](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) y [SharePoint](https://support.office.com/article/Add-an-index-to-a-SharePoint-column-f3f00554-b7dc-44d1-a2ed-d477eac463b0).  
 
 ## <a name="republish-apps-regularly"></a>Volver a publicar aplicaciones de manera habitual
-Consulte la entrada de blog [Republish your apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/) (Volver a publicar las aplicaciones) para obtener mejoras en el rendimiento y características adicionales desde la plataforma de PowerApps.
+[Vuelva a publicar las aplicaciones](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/) (entrada de blog) para obtener mejoras de rendimiento y características adicionales de la plataforma de Power apps.
 
 ## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Evite repetir la misma fórmula en varios lugares
 Si varias propiedades ejecutan la misma fórmula (especialmente si es compleja), considere la posibilidad de establecerla una vez y hacer referencia a la salida de la primera propiedad en las subsiguientes. Por ejemplo, no establezca la propiedad **DisplayMode** de los controles a, B, C, D y e a la misma fórmula compleja. En su lugar, establezca la propiedad **DisplayMode** de la fórmula compleja, establezca la propiedad **DisplayMode** de B en el resultado de la propiedad **DisplayMode** de la, y así sucesivamente para C, D y e.

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71983587"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676740"
 ---
 # <a name="app-object-in-powerapps"></a>Objeto App en PowerApps
 
@@ -65,7 +64,7 @@ Nadie desea perder los cambios no guardados. Use las propiedades **ConfirmExit**
 > **ConfirmExit** no funciona en aplicaciones que están incrustadas en, por ejemplo, Power BI y SharePoint.
 
 > [!NOTE]
-> En la actualidad, estas propiedades solo pueden hacer referencia a los controles de la primera pantalla si está habilitada la característica de vista previa de **carga retrasada** (que es de forma predeterminada para las nuevas aplicaciones). Si se realizan referencias, PowerApps Studio no muestra un error, pero la aplicación publicada resultante no se abre en PowerApps Mobile o en un explorador. Estamos trabajando activamente para levantar esta limitación. Mientras tanto, puede desactivar la **carga retrasada** en la configuración de la**aplicación** de **archivo**  >   > **Configuración avanzada** (en **características de vista previa**).
+> En la actualidad, estas propiedades solo pueden hacer referencia a los controles de la primera pantalla si está habilitada la característica de vista previa de **carga retrasada** (que es de forma predeterminada para las nuevas aplicaciones). Si se realizan referencias, Power apps Studio no muestra un error, pero la aplicación publicada resultante no se abre en Power apps Mobile o en un explorador. Estamos trabajando activamente para levantar esta limitación. Mientras tanto, puede desactivar la **carga retrasada** en la configuración de la **aplicación** de **archivo** >  > **Configuración avanzada** (en **características de vista previa**).
 
 ### <a name="confirmexit"></a>ConfirmExit
 
@@ -79,14 +78,14 @@ El cuadro de diálogo de confirmación aparece en cualquier situación en la que
 - Si la aplicación se ejecuta en un explorador:
   - Cierre del explorador o de la pestaña del explorador en el que se ejecuta la aplicación.
   - Seleccionar el botón atrás del explorador.
-- Si la aplicación se ejecuta en PowerApps Mobile (iOS o Android):
+- Si la aplicación se ejecuta en Power apps Mobile (iOS o Android):
   - Ejecutar la función [**Launch**](function-param.md) .<br>La función **Launch** no desencadena el cuadro de diálogo en un explorador porque se abre otra pestaña para que no se pierdan los datos.
-  - Deslizar rápidamente para cambiar a otra aplicación en PowerApps Mobile.
+  - Deslizar rápidamente para cambiar a otra aplicación en Power apps Mobile.
   - Seleccionar el botón atrás en un dispositivo Android.
 
 La apariencia exacta del cuadro de diálogo de confirmación puede variar en los dispositivos y las versiones de PowerApps.
 
-El cuadro de diálogo de confirmación no aparece en PowerApps Studio.
+El cuadro de diálogo de confirmación no aparece en Power apps Studio.
 
 ### <a name="confirmexitmessage"></a>ConfirmExitMessage
 
@@ -102,7 +101,7 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 712d7ed6166b2ea655a086b1f9a4416af1e8065f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990327"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676570"
 ---
-# <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Mostrar elementos de alturas diferentes en una galería de PowerApps
+# <a name="show-items-of-different-heights-in-a-power-apps-gallery"></a>Mostrar elementos de diferentes alturas en una galería de Power apps
 Si diferentes elementos del conjunto de datos contienen diferentes cantidades de datos en el mismo campo, puede mostrar por completo los elementos que contienen más datos sin tener que agregar espacio vacío después de los elementos que contienen menos datos. Agregue y configure un control de galería **Altura flexible** para que pueda:
 
 * Configure controles **Etiqueta** para que se expandan o se reduzcan según su contenido.
@@ -41,7 +41,7 @@ Si nunca ha agregado los controles a una galería, siga los pasos descritos en [
 
 2. Cargue el archivo de Excel en una cuenta de almacenamiento en la nube, como OneDrive, Dropbox o Google Drive.
 
-3. En PowerApps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo**.
+3. En Power apps Studio, haga clic o pulse en **nuevo** en el menú **archivo** .
 
 4. En el icono **Blank app** (Aplicación vacía), pulse o haga clic en **Phone layout** (Diseño de teléfono).
 

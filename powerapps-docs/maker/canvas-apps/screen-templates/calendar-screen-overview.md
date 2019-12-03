@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9ca7e5f14508a2dcd70967e77b29989819bfe7ba
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 945a4fd3c017363a8c43171c8e891e0c32c84a0f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541594"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675216"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla calendario para aplicaciones de Canvas
 
@@ -43,7 +42,7 @@ Está familiarizado con cómo agregar y configurar pantallas y otros controles a
 
 Para agregar una pantalla de calendario desde la plantilla:
 
-1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps y, después, cree una aplicación o abra una aplicación existente en PowerApps Studio.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps y, después, cree una aplicación o abra una aplicación existente en Power apps Studio.
 
     En este tema se muestra una aplicación de teléfono, pero los mismos conceptos se aplican a una aplicación de Tablet PC.
 
@@ -80,35 +79,35 @@ Si ya sabe qué calendario deben ver los usuarios, puede simplificar la pantalla
 
 1. Establezca la propiedad **[OnStart](../controls/control-screen.md)** de la pantalla predeterminada de la aplicación en esta fórmula:
 
-    ```powerapps-comma
-    Set( _userDomain; Right( User().Email; Len( User().Email ) - Find( "@"; User().Email ) ) );;
-    Set( _dateSelected; Today() );;
-    Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days ) );;
-    Set( _firstDayInView; 
-        DateAdd( _firstDayOfMonth; -( Weekday( _firstDayOfMonth) - 2 + 1 ); Days )
-    );;
-    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
-    Set( _calendarVisible; false );;
-    Set( _myCalendar; 
-        LookUp( Office365.CalendarGetTables().value; DisplayName = "{YourCalendarNameHere}" )
-    );;
-    Set( _minDate; 
-        DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days )
-    );;
-    Set( _maxDate; 
+    ```powerapps-dot
+    Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
+    Set( _dateSelected, Today() );
+    Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days ) );
+    Set( _firstDayInView, 
+        DateAdd( _firstDayOfMonth, -( Weekday( _firstDayOfMonth) - 2 + 1 ), Days )
+    );
+    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
+    Set( _calendarVisible, false );
+    Set( _myCalendar, 
+        LookUp( Office365.CalendarGetTables().value, DisplayName = "{YourCalendarNameHere}" )
+    );
+    Set( _minDate, 
+        DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days )
+    );
+    Set( _maxDate, 
         DateAdd(
-            DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days );
-            40; 
+            DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days ),
+            40, 
             Days 
         )
-    );;
-    ClearCollect( MyCalendarEvents; 
-        Office365.GetEventsCalendarViewV2( _myCalendar.Name; 
-            Text( _minDate; UTC ); 
-            Text( _maxDate; UTC ) 
+    );
+    ClearCollect( MyCalendarEvents, 
+        Office365.GetEventsCalendarViewV2( _myCalendar.Name, 
+            Text( _minDate, UTC ), 
+            Text( _maxDate, UTC ) 
         ).value
-    );;
-    Set( _calendarVisible; true )
+    );
+    Set( _calendarVisible, true )
     ```
 
     > [!NOTE]
@@ -165,14 +164,14 @@ En muchas oficinas, los miembros del equipo envían convocatorias de reunión pa
 
 1. Establezca la propiedad **Items** de **CalendarEventsGallery** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Filter(
-            MyCalendarEvents;
-            Text( Start; DateTimeFormat.ShortDate ) = 
-                Text( _dateSelected; DateTimeFormat.ShortDate );
+            MyCalendarEvents,
+            Text( Start, DateTimeFormat.ShortDate ) = 
+                Text( _dateSelected, DateTimeFormat.ShortDate ),
             ShowAs <> "Free"
-        );
+        ),
         "Start"
     )
     ```
@@ -181,11 +180,11 @@ En muchas oficinas, los miembros del equipo envían convocatorias de reunión pa
 
 1. En el calendario, establezca la propiedad **visible** del control de **círculo** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     CountRows(
         Filter(
-            MyCalendarEvents;
-            DateValue( Text(Start) ) = DateAdd( _firstDayInView; ThisItem.Value; Days );
+            MyCalendarEvents,
+            DateValue( Text(Start) ) = DateAdd( _firstDayInView, ThisItem.Value, Days ),
             ShowAs <> "Free"
         )
     ) > 0 && !Subcircle1.Visible && Title2.Visible
@@ -211,7 +210,7 @@ Si los usuarios seleccionan un evento en **CalendarEventsGallery**, puede abrir 
 1. En la galería de alto flexible, agregue un control **etiqueta** y un control **texto html** y establezca la propiedad **autoheight** de ambos en **true**.
 
     > [!NOTE]
-    > PowerApps recupera el cuerpo del mensaje de cada evento como texto HTML, por lo que debe mostrar el contenido en un control de **texto HTML** .
+    > Power apps recupera el cuerpo del mensaje de cada evento como texto HTML, por lo que debe mostrar el contenido en un control de **texto HTML** .
 
 1. Establezca la propiedad **Y** del control de **texto html** en esta expresión:
 
@@ -223,14 +222,14 @@ Si los usuarios seleccionan un evento en **CalendarEventsGallery**, puede abrir 
 
 1. Establezca la propiedad **Items** de la galería de alto flexible en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table(
-        { Title: "Subject"; Value: _selectedCalendarEvent.Subject };
+        { Title: "Subject", Value: _selectedCalendarEvent.Subject },
         { 
-            Title: "Time"; 
+            Title: "Time", 
             Value: _selectedCalendarEvent.Start & " - " & _selectedCalendarEvent.End 
-        };
-        { Title: "Body"; Value: _selectedCalendarEvent.Body }
+        },
+        { Title: "Body", Value: _selectedCalendarEvent.Body }
     )
     ```
 
@@ -240,13 +239,13 @@ Si los usuarios seleccionan un evento en **CalendarEventsGallery**, puede abrir 
 
 1. En **CalendarEventsGallery**, establezca la propiedad **alseleccionar** del control **título** en esta fórmula:
 
-    ```powerapps-comma
-    Set( _selectedCalendarEvent; ThisItem );;
-    Navigate( EventDetailsScreen; None )
+    ```powerapps-dot
+    Set( _selectedCalendarEvent, ThisItem );
+    Navigate( EventDetailsScreen, None )
     ```
 
     > [!Note]
-    > En lugar de usar la variable **_selectedCalendarEvent** , en su lugar podría usar **CalendarEventsGallery**. Seleccionadas.
+    > En lugar de usar la variable **_selectedCalendarEvent** , podría usar **CalendarEventsGallery**. Seleccionadas.
 
 ### <a name="show-event-attendees"></a>Mostrar asistentes para eventos
 
@@ -256,27 +255,27 @@ La operación `Office365.GetEventsCalendarViewV2` recupera una variedad de campo
 
 1. Para recuperar los perfiles de Office 365 de los asistentes de reunión, establezca la propiedad **alseleccionar** del control de **título** en **CalendarEventsGallery** en esta fórmula:
 
-    ```powerapps-comma
-    Set( _selectedCalendarEvent; ThisItem );;
-    ClearCollect( AttendeeEmailsTemp;
+    ```powerapps-dot
+    Set( _selectedCalendarEvent, ThisItem );
+    ClearCollect( AttendeeEmailsTemp,
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" );
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ),
             !IsBlank( Result )
         )
-    );;
-    ClearCollect( AttendeeEmails;
-        AddColumns( AttendeeEmailsTemp; 
-            "InOrg";
-            Upper( _userDomain ) = Upper( Right( Result; Len( Result ) - Find( "@"; Result ) ) )
+    );
+    ClearCollect( AttendeeEmails,
+        AddColumns( AttendeeEmailsTemp, 
+            "InOrg",
+            Upper( _userDomain ) = Upper( Right( Result, Len( Result ) - Find( "@", Result ) ) )
         )
-    );;
-    ClearCollect( MyPeople;
-        ForAll( AttendeeEmails; If( InOrg; Office365Users.UserProfile( Result ) ) ) 
-    );;
-    Collect( MyPeople;
-        ForAll( AttendeeEmails;
-            If( !InOrg; 
-                { DisplayName: Result; Id: ""; JobTitle: ""; UserPrincipalName: Result }
+    );
+    ClearCollect( MyPeople,
+        ForAll( AttendeeEmails, If( InOrg, Office365Users.UserProfile( Result ) ) ) 
+    );
+    Collect( MyPeople,
+        ForAll( AttendeeEmails,
+            If( !InOrg, 
+                { DisplayName: Result, Id: "", JobTitle: "", UserPrincipalName: Result }
             )
         )
     )
@@ -285,84 +284,84 @@ La operación `Office365.GetEventsCalendarViewV2` recupera una variedad de campo
 En esta lista se describe lo que hace cada operación de **ClearCollect** :
 
 - ClearCollect (AttendeeEmailsTemp)
-    ```powerapps-comma
-    ClearCollect( AttendeeEmailsTemp;
+    ```powerapps-dot
+    ClearCollect( AttendeeEmailsTemp,
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" ); 
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ), 
             !IsBlank( Result)
         )
-    );;
+    );
     ```
 
     Esta fórmula concatena los asistentes necesarios y opcionales en una sola cadena y, a continuación, divide esa cadena en direcciones individuales en cada punto y coma. A continuación, la fórmula filtra los valores en blanco de ese conjunto y agrega los demás valores en una colección denominada **AttendeeEmailsTemp**.
 
 - ClearCollect (AttendeeEmails)
-    ```powerapps-comma
-    ClearCollect( AttendeeEmails;
-        AddColumns( AttendeeEmailsTemp; 
-            "InOrg";
-            Upper( _userDomain ) = Upper( Right( Result; Len(Result) - Find("@"; Result) ) )
+    ```powerapps-dot
+    ClearCollect( AttendeeEmails,
+        AddColumns( AttendeeEmailsTemp, 
+            "InOrg",
+            Upper( _userDomain ) = Upper( Right( Result, Len(Result) - Find("@", Result) ) )
         )
-    );;
+    );
     ```
     Esta fórmula determina aproximadamente si un asistente está en su organización. La definición de **_userDomain** es simplemente la dirección URL de dominio en la dirección de correo electrónico de la persona que ejecuta la aplicación. Esta línea crea una columna true/false adicional, denominada **InOrg**, en la colección **AttendeeEmailsTemp** . Esta columna contiene **true** si **userDomain** es equivalente a la dirección URL de dominio de la dirección de correo electrónico en esa fila concreta de **AttendeeEmailsTemp**.
 
     Este enfoque no siempre es preciso, pero se cierra bastante. Por ejemplo, algunos asistentes de la organización pueden tener una dirección de correo electrónico como Jane@OnContoso.com, mientras que **_userDomain** es contoso.com. El usuario de la aplicación y Julia podrían trabajar en la misma empresa, pero tienen ligeras variaciones en sus direcciones de correo electrónico. En casos como estos, puede que desee usar esta fórmula:
 
-    `Upper(_userDomain) in Upper(Right(Result; Len(Result) - Find("@"; Result)))`
+    `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    Sin embargo, esta fórmula coincide con las direcciones de correo electrónico como Jane@NotTheContosoCompany.com con un **_userDomain** como contoso.com, y esas personas no trabajan en la misma empresa.
+    Sin embargo, esta fórmula coincide con las direcciones de correo electrónico como Jane@NotTheContosoCompany.com con un **_userDomain** como contoso.com y esas personas no trabajan en la misma compañía.
 
 - ClearCollect (mis personas)
 
-    ```powerapps-comma
-    ClearCollect( MyPeople;
-        ForAll( AttendeeEmails; 
-            If( InOrg; 
+    ```powerapps-dot
+    ClearCollect( MyPeople,
+        ForAll( AttendeeEmails, 
+            If( InOrg, 
                 Office365Users.UserProfile( Result )
             )
         )
-    );;
-    Collect( MyPeople;
-        ForAll( AttendeeEmails;
-            If( !InOrg; 
+    );
+    Collect( MyPeople,
+        ForAll( AttendeeEmails,
+            If( !InOrg, 
                 { 
-                    DisplayName: Result; 
-                    Id: ""; 
-                    JobTitle: ""; 
+                    DisplayName: Result, 
+                    Id: "", 
+                    JobTitle: "", 
                     UserPrincipalName: Result
                 }
             )
         )
-    );;
+    );
     ```
     Para recuperar los perfiles de Office 365, debe usar la operación [Office365Users. userprofile](https://docs.microsoft.com/connectors/office365users/#userprofile) o [Office365Users. UserProfileV2](https://docs.microsoft.com/connectors/office365users/#userprofile) . Estas operaciones primero reúnen todos los perfiles de Office 365 para los asistentes que se encuentran en la organización del usuario. A continuación, las operaciones agregan algunos campos a los asistentes desde fuera de la organización. Estos dos elementos se separan en operaciones distintas porque el bucle **forall** no garantiza el orden. Por lo tanto, **forall** podría recopilar primero un asistente de fuera de la organización. En este caso, el esquema de mis **personas** solo contiene **displayName**, **ID**, **JobTitle**y **UserPrincipalName**. Sin embargo, las operaciones de UserProfile recuperan datos mucho más completos que. Por lo tanto, se obliga a la colección **People** a agregar perfiles de Office 365 antes que a los demás perfiles.
 
     > [!NOTE]
     > Puede lograr el mismo resultado con una sola función **ClearCollect** :
 
-    ```powerapps-comma
-    ClearCollect( MyPeople; 
+    ```powerapps-dot
+    ClearCollect( MyPeople, 
         ForAll(
             AddColumns(
                 Filter(
                     Split(
-                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; 
+                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, 
                         ";"
-                    ); 
+                    ), 
                     !IsBlank( Result )
-                ); 
-                "InOrg"; _userDomain = Right( Result; Len( Result ) - Find( "@"; Result ) )
-            ); 
-            If( InOrg; 
-                Office365Users.UserProfile( Result ); 
+                ), 
+                "InOrg", _userDomain = Right( Result, Len( Result ) - Find( "@", Result ) )
+            ), 
+            If( InOrg, 
+                Office365Users.UserProfile( Result ), 
                 { 
-                    DisplayName: Result; 
-                    Id: ""; 
-                    JobTitle: ""; 
-                    UserPrincipalName: Result; 
-                    Department: ""; 
-                    OfficeLocation: ""; 
+                    DisplayName: Result, 
+                    Id: "", 
+                    JobTitle: "", 
+                    UserPrincipalName: Result, 
+                    Department: "", 
+                    OfficeLocation: "", 
                     TelephoneNumber: ""
                 }
             )

@@ -1,5 +1,5 @@
 ---
-title: Configuración de listas para la integración de SharePoint Online con PowerApps, Power Automate y Power BI | Microsoft Docs
+title: Configuración de listas para la integración de SharePoint Online con Power Apps, Power Automatic y Power BI | Microsoft Docs
 description: En esta tarea, se configuraran las listas de SharePoint para usarlas como origen de datos para aplicaciones, flujos, informes y paneles.
 author: NickWaggoner
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: c1b2e7dc4bb3f56983ddcdec39ecf7d37a283754
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899164"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674713"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con PowerApps, Power Automate y Power BI
+# <a name="set-up-lists-for-sharepoint-online-integration-with-power-apps-power-automate-and-power-bi"></a>Configuración de listas para la integración de SharePoint Online con Power Apps, Power Automatic y Power BI
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 SharePoint tiene una gran cantidad de características para la colaboración y el uso compartido, pero nos centraremos en una característica de este escenario: las [listas de SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Una lista no es más que una colección de datos que se pueden compartir con los miembros del equipo y otros usuarios del sitio. Analizaremos las listas que se usan en este escenario y, después, podrá crearlas en su propio sitio de SharePoint Online.
 
@@ -40,7 +40,7 @@ La primera lista es **Project Requests**, en la que un solicitante del proyecto 
 | Approved |Una línea de texto |Valores: pendiente, sí o no |
 
 > [!NOTE]
-> También utilizamos la columna **ID**, que genera SharePoint y que está oculta de forma predeterminada. Utilizamos tipos de datos básicos para simplificar, pero una aplicación real podría utilizar tipos más complejos, como **Persona o grupo** en la columna **Requestor**. Para obtener información sobre los tipos de datos que admite PowerApps, consulte [Conexión de Microsoft PowerApps a SharePoint](connections/connection-sharepoint-online.md#known-issues).
+> También utilizamos la columna **ID**, que genera SharePoint y que está oculta de forma predeterminada. Utilizamos tipos de datos básicos para simplificar, pero una aplicación real podría utilizar tipos más complejos, como **Persona o grupo** en la columna **Requestor**. Para obtener información sobre los tipos de datos admitidos por Power Apps, consulte [conexión desde Microsoft Power apps a SharePoint](connections/connection-sharepoint-online.md#known-issues).
 
 La segunda lista es **Project Details**, que realiza un seguimiento de los detalles de todos los proyectos aprobados, como el jefe de proyecto asignado.
 
@@ -112,15 +112,15 @@ Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete
 
 ### <a name="update-connections-for-the-sample-apps"></a>Actualizar las conexiones de las aplicaciones de ejemplo
 
-1. En [PowerApps Studio](https://create.powerapps.com/studio/), haga clic en **Abrir** (o púlselo) en el panel izquierdo. 
+1. En [Power apps Studio](https://create.powerapps.com/studio/), pulse o haga clic en **abrir** en el panel izquierdo. 
 
 2. Haga clic o pulse **Examinar** y abra el archivo **project-management-app.msapp** que descargó.
 
-3. Haga clic o pulse **Permitir** para que PowerApps pueda usar SharePoint.
+3. Pulse o haga clic en **permitir**para que Power apps pueda usar SharePoint.
 
 4. En la cinta de opciones, en la pestaña **Vista**, pulse o haga clic en **Orígenes de datos**.
 
-    ![Orígenes de datos de PowerApps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
+    ![Orígenes de datos de Power apps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
 5. En el panel **Datos**, haga clic o pulse el botón de puntos suspensivos ( **...** ) que se encuentra al lado de **Detalles del proyecto** y haga clic o pulse en **Quitar**.
    
     ![Quitar origen de datos de Project Details](./media/sharepoint-scenario-setup/01-03-02-remove.png)
@@ -128,7 +128,7 @@ Como se mencionó en la introducción a esta serie de tutoriales, en el [paquete
    
     ![Agregar origen de datos](./media/sharepoint-scenario-setup/01-03-03-add.png)
 
-7. Le mostraremos dos formas de conectarse a la lista, en función de si PowerApps ya ha establecido automáticamente una conexión de SharePoint, o no: 
+7. Le mostraremos dos formas de conectarse a la lista, en función de si Power apps ya ha establecido una conexión de SharePoint: 
 
     * Si ve una conexión de SharePoint, haga clic o pulse en ella.
 

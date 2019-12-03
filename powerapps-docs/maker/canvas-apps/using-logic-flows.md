@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 2482e5b4cbbcaaf168320a8cbfe3c31f486bf891
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898324"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674306"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Iniciar un flujo en una aplicación de lienzo
 
@@ -46,9 +46,9 @@ Puede usar Power Automate para crear lógica que realice una o varias tareas cua
 
 1. En el cuadro de búsqueda, escriba **powerapps**y, luego, seleccione el icono de **powerapps** .
 
-    ![Creación de un desencadenador de PowerApps](./media/using-logic-flows/set-trigger.png)
+    ![Creación de un desencadenador de Power apps](./media/using-logic-flows/set-trigger.png)
     
-1. En la página siguiente, vuelva a seleccionar el icono de PowerApps y, luego, seleccione **nuevo paso**.
+1. En la página siguiente, vuelva a seleccionar el icono de Power apps y luego seleccione **nuevo paso**.
 
 1. En el cuadro que dice **Buscar conectores y acciones**, especifique una acción para el flujo, como en este ejemplo:
 
@@ -69,7 +69,7 @@ Puede usar Power Automate para crear lógica que realice una o varias tareas cua
 
    1. Seleccione el cuadro de entrada de un campo en la lista (por ejemplo, **título**), seleccione **Ver más** en el panel de contenido dinámico y, a continuación, seleccione **preguntar en PowerApps**. 
 
-       ![Agregar el parámetro Preguntar en PowerApps al campo Título](./media/using-logic-flows/ask-in-powerapps.png)
+       ![Agregar el parámetro Ask en Power apps al campo title](./media/using-logic-flows/ask-in-powerapps.png)
 
 1. opta Especifique uno o más pasos adicionales, como el envío de correo electrónico de aprobación a una dirección que especifique o la creación de una entrada relacionada en otro origen de datos.
 
@@ -91,7 +91,7 @@ Puede usar Power Automate para crear lógica que realice una o varias tareas cua
 1. En el panel que aparece, seleccione el flujo que creó en el procedimiento anterior.
 
     > [!NOTE]
-   > Si el flujo que ha creado no está disponible, compruebe si PowerApps está establecido en el entorno en el que lo creó.
+   > Si el flujo que ha creado no está disponible, confirme si Power apps está establecido en el entorno en el que creó el flujo.
 
     ![Agregar un flujo desde el panel de personalización](./media/using-logic-flows/add-flow-from-pane.png)
 

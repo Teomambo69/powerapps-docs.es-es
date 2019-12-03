@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987779"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679302"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Colores accesibles en aplicaciones de lienzo de PowerApps
-Los colores utilizados en una aplicación de lienzo deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de PowerApps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
+Los colores utilizados en una aplicación de lienzo deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de Power apps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
 
 ## <a name="minimum-contrast-for-text"></a>Contraste mínimo para el texto
 * El texto y su fondo deben tener al menos una relación de contraste 4.5:1
@@ -55,7 +55,7 @@ Si no hay ningún borde, debería haber un contraste de color adecuado entre:
 * **[HoverFill](controls/properties-color-border.md)** y el color situado fuera del control
 
 ### <a name="graphical-objects"></a>Objetos gráficos
-Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles donde se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)** , **[imagen](controls/control-image.md)** , **[micrófono](controls/control-microphone.md)** y **[vídeo](controls/control-audio-video.md)** .
+Si una imagen transmite información importante, considere la posibilidad de comprobar los problemas de contraste. Esto se aplica a los controles en los que se puede mostrar una imagen: **[Audio](controls/control-audio-video.md)** , **[Imagen](controls/control-image.md)** , **[Micrófono ](controls/control-microphone.md)** y **[Vídeo](controls/control-audio-video.md)** .
 
 En el caso del contenido de vídeo, considere la comprobación de los problemas de contraste. De forma alternativa o adicional, proporcione [subtítulos](controls/control-audio-video.md) que describan el vídeo.
 
@@ -65,4 +65,4 @@ Asegúrese de que la aplicación no transmite información con solo color. Por e
 Indicaciones adicionales, como un **[icono](controls/control-shapes-icons.md)** o estilos de texto, como **[cursiva](controls/properties-text.md)** y **[subrayado](controls/properties-text.md)** , pueden ayudar a transmitir el significado.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Obtenga información sobre las [propiedades de accesibilidad](controls/properties-accessibility.md) en los controles de PowerApps e intente [usar el Comprobador de accesibilidad](accessibility-checker.md).
+Obtenga información sobre [las propiedades de accesibilidad](controls/properties-accessibility.md) en los controles de Power apps y pruebe a [usar el comprobador de accesibilidad](accessibility-checker.md).

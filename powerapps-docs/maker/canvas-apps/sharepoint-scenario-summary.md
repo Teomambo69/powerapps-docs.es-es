@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899312"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674675"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Tutorial de principio a fin para el escenario de integración de SharePoint Online completado
 > [!NOTE]
-> Este artículo forma parte de una serie de tutoriales sobre el uso de PowerApps, la automatización y el Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
+> Este artículo forma parte de una serie de tutoriales sobre el uso de Power Apps, Power Automatic y Power BI con SharePoint Online. Asegúrese de leer la [introducción a la serie](sharepoint-scenario-intro.md) para hacerse una idea general, así como para obtener descargas relacionadas.
 
 Se ha tratado una cantidad enorme de datos en esta serie de tutoriales, desde la creación de aplicaciones de lienzo y flujos hasta la creación de informes y su inserción en SharePoint. Con suerte, habrá aprendido mucho y visto lo suficiente sobre cómo se integran estas tecnologías, para que pueda integrar aplicaciones de lienzo, flujos e informes en SharePoint según sus propias necesidades. Antes de terminar, se va a realizar un recorrido del escenario de principio a fin para ver cómo funcionan juntas todas las partes.
 
