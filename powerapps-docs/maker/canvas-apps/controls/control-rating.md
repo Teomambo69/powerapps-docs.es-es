@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5e91f8ff3b760e173ac01b32a68c7f60a488014
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649913"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732082"
 ---
-# <a name="rating-control-in-powerapps"></a>Control Clasificación en PowerApps
+# <a name="rating-control-in-power-apps"></a>Control de clasificación en Power apps
 Un control con el que los usuarios pueden indicar un valor comprendido entre 1 y el número máximo que especifique.
 
 ## <a name="description"></a>Descripción
@@ -76,7 +75,7 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Average**( *Value1*; *Value2;* ... )](../functions/function-aggregates.md)
+[**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Clasificación** y llámelo **Cuantitativo**.
@@ -84,7 +83,7 @@ En este control el usuario puede indicar, por ejemplo, cuánto le ha gustado alg
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Entrada de texto](control-text-input.md)** , denomínelo **Cualitativo**, y muévalo debajo del control **Clasificación**.
 3. Establezca la propiedad **[Default](properties-core.md)** del control **[Entrada de texto](control-text-input.md)** en **""** y establezca su **TextoDeSugerencia** en esta fórmula:
-   <br>**If(Quantitative.Value > 3; "¿qué le gustó especialmente?"; "¿cómo podemos mejorar?")**
+   <br>**If(Quantitative.Value > 3, "¿qué le gustó especialmente?", "¿cómo podemos mejorar?")**
    
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 4. Presione F5 y, a continuación, pulse o haga clic en cuatro o cinco estrellas en el control **Clasificación**.

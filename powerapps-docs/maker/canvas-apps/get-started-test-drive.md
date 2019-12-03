@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676248"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732173"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Crear una aplicación a partir de una plantilla en PowerApps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Creación de una aplicación de lienzo a partir de una plantilla en Power apps
 
 Cree automáticamente una aplicación de lienzo a partir de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones, y luego ejecute la aplicación para reconocer su comportamiento predeterminado.
 
@@ -30,7 +30,7 @@ Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](..
 
 ## <a name="create-an-app"></a>Crear una aplicación
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y pulse la opción **Crear esta aplicación** o haga clic en ella.
 

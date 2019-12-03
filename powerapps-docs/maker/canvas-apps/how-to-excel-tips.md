@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7b620205ed3fdeaa61768b62ef2db27a850be374
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675696"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732164"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Dar formato a una tabla en Excel y sugerencias de nomenclatura
 En Power Apps, puede crear una aplicación de lienzo basada en datos de Excel solo si tiene el formato de tabla. En este artículo se muestra cómo dar formato a una tabla en Excel y se ofrecen algunas sugerencias de asignación de nombres de columnas de Excel.
@@ -42,5 +42,5 @@ Si una columna de la tabla contiene imágenes, incluya "imagen" en el nombre de 
 ![Conectar la tabla de Excel con imágenes](./media/how-to-excel-tips/connect-gallery.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-* [Generar una aplicación desde Excel en PowerApps](get-started-create-from-data.md) según una tabla especificada. La aplicación tendrá tres pantallas de forma predeterminada: una para examinar registros, para mostrar detalles acerca de un registro y crear o actualizar un registro.
+* [Genere una aplicación desde Excel en Power apps](get-started-create-from-data.md) en función de la tabla que especifique. La aplicación tendrá tres pantallas de forma predeterminada: una para examinar registros, para mostrar detalles acerca de un registro y crear o actualizar un registro.
 * [Crear una aplicación desde el principio](get-started-create-from-blank.md) mediante la tabla a la que ha aplicado formato de Excel. Puede crear y personalizar manualmente la aplicación para mostrar, examinar o modificar los datos de la tabla.

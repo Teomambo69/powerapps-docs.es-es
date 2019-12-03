@@ -1,6 +1,6 @@
 ---
 title: Funciones Trim y TrimEnds | Microsoft Docs
-description: Información de referencia de las funciones Trim y TrimEnds en PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y un ejemplo, para las funciones Trim y TrimEnd en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cf87c96e2e49f9bc01f6d6c749844bd473099cad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991910"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729950"
 ---
-# <a name="trim-and-trimends-functions-in-powerapps"></a>Funciones Trim y TrimEnds en PowerApps
+# <a name="trim-and-trimends-functions-in-power-apps"></a>Trim and TrimEnd functions in Power apps
 Quita los espacios de una cadena de texto.
 
 ## <a name="description"></a>Descripción
@@ -54,7 +53,7 @@ Los ejemplos siguientes usan una colección de una sola columna, llamada **Space
 ![](media/function-trim/input-strings.png)
 
 Para crear esta colección, establezca la propiedad **OnSelect** de un control **[Botón](../controls/control-button.md)** en esta fórmula, abra el modo de vista previa y, a continuación, pulse o haga clic en el botón:
-<br>**ClearCollect( Spaces; [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;"; "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill"; "Already&nbsp;trimmed"; "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;"; "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
+<br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |

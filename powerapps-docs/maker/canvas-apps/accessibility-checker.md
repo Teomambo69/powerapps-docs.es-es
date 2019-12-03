@@ -10,14 +10,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6479111dbae5e3f4d12e9cad0d78834800ff4c35
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680084"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725589"
 ---
-# <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Revisar una aplicación de lienzo para mejorar la accesibilidad en PowerApps
+# <a name="review-a-canvas-app-for-accessibility-in-power-apps"></a>Revisar la accesibilidad de una aplicación de lienzo en Power apps
 
 Los usuarios con discapacidades visuales, auditivas o de otro tipo pueden usar la aplicación de lienzo con más facilidad y correctamente si tiene en cuenta la accesibilidad al diseñar el aspecto y el comportamiento de la aplicación. Si no está seguro de cómo hacer que la aplicación sea más accesible, puede ejecutar el comprobador de accesibilidad en Power apps Studio. Esta herramienta no solo busca posibles problemas de accesibilidad, sino que también explica por qué cada uno de ellos podría ser un posible problema para los usuarios que tienen discapacidades específicas y ofrece sugerencias sobre cómo resolver cada problema.
 El Comprobador de accesibilidad detecta problemas de lector de pantalla y teclado y puede encontrar información sobre cómo solucionar los problemas de contraste de color usando [Colores accesibles](accessible-apps-color.md).

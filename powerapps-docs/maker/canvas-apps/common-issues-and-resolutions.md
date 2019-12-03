@@ -1,6 +1,6 @@
 ---
 title: Problemas comunes y soluciones para Power apps | Microsoft Docs
-description: Lista de problemas y soluciones habituales de PowerApps.
+description: Una lista de problemas comunes y soluciones en Power apps.
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678796"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723854"
 ---
-# <a name="common-issues-and-resolutions-for-powerapps"></a>Problemas y soluciones habituales de PowerApps
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Problemas comunes y soluciones para Power apps
 
 En este artículo se enumeran algunos problemas comunes que pueden surgir al usar Power apps. Si procede, se proporcionan soluciones alternativas.
 
@@ -85,7 +85,7 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
 1. **Versión 2.0.700 en dispositivos Android**
 
-    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale Power Apps, reinicie el dispositivo y, a continuación, vuelva a instalar PowerApps.
+    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale Power Apps, reinicie el dispositivo y, a continuación, vuelva a instalar Power apps.
 
 1. **Galería "vacía" al abrir una aplicación**
 

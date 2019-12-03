@@ -1,6 +1,6 @@
 ---
 title: Restauración de la aplicación de lienzo a una versión anterior | Microsoft Docs
-description: Restauración de una aplicación de lienzo en PowerApps
+description: Restauración de una aplicación de lienzo en Power apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7f9c98f174700a73e8d46d103bbe597ae15c1f4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 15351f3fcfa166c281a1bc4d3213eace8f881d11
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732757"
 ---
-# <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>Restauración de una aplicación de lienzo a una versión anterior en PowerApps
+# <a name="restore-a-canvas-app-to-a-previous-version-in-power-apps"></a>Restauración de una aplicación de lienzo a una versión anterior en Power apps
 En este artículo se muestra cómo restaurar una aplicación de lienzo a una versión anterior que se guardó en la nube desde la cuenta de Power apps.
 
 ## <a name="restore-an-app-from-your-account"></a>Restaurar una aplicación desde su cuenta

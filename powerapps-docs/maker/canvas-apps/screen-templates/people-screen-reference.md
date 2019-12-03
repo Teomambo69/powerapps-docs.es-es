@@ -1,6 +1,6 @@
 ---
 title: 'People: referencia de la plantilla de pantalla | Microsoft Docs'
-description: Información detallada sobre el funcionamiento de la plantilla de pantalla People para aplicaciones de canvas en PowerApps
+description: Información detallada sobre cómo funciona la plantilla de pantalla People para las aplicaciones de canvas en Power apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4e67b4905003f8134d8f6868671e74fdece3d6b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674979"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732598"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Información de referencia sobre la plantilla de pantalla People para aplicaciones de Canvas
 
@@ -33,7 +32,7 @@ En este tema se resaltan algunos controles significativos y se explican las expr
 
 ## <a name="prerequisite"></a>Requisito previo
 
-Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en PowerApps](../data-platform-create-app-scratch.md).
+Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en Power apps](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Cuadro de búsqueda de texto
 
@@ -51,11 +50,11 @@ Un par de otros controles interactúan o tienen una dependencia en el cuadro de 
 * Propiedad: **elementos**<br>
     Valor: lógica para buscar usuarios cuando el usuario comienza a escribir:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ); 
+                searchTerm: Trim( TextSearchBox.Text ), 
                 top: 15
             }
         )
@@ -77,12 +76,12 @@ La operación de `Office365Users.SearchUser` se encapsula en una función de `If
 * Propiedad: **Alseleccionar**<br>
     Valor: código para agregar el usuario a una colección de nivel de aplicación y, a continuación, seleccione el usuario:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
@@ -99,9 +98,9 @@ La selección de este control realiza tres acciones simultáneamente:
 * Propiedad: **imagen**<br>
     Valor: lógica para recuperar la foto de Perfil de un usuario.
 
-    ```powerapps-comma
+    ```powerapps-dot
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -127,7 +126,7 @@ Esta es la colección de personas inicializadas o agregadas a seleccionando el c
 ![Control de título de PeopleAddedGallery](media/people-screen/people-people-gall-title.png)
 
 * Propiedad: **Alseleccionar**<br>
-    Valor: `Set( _selectedUser; ThisItem )`
+    Valor: `Set( _selectedUser, ThisItem )`
 
 Establece la variable de **_selectedUser** en el elemento seleccionado en **EmailPeopleGallery**.
 
@@ -136,7 +135,7 @@ Establece la variable de **_selectedUser** en el elemento seleccionado en **Emai
 ![Control PeopleAddedGallery iconRemove](media/people-screen/people-people-gall-delete.png)
 
 * Propiedad: **Alseleccionar**<br>
-    Valor: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Valor: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Busca el registro en la colección **People** , donde **UserPrincipalName** coincide con el **userPrincipalName** del elemento seleccionado y, a continuación, quita ese registro de la colección.
 

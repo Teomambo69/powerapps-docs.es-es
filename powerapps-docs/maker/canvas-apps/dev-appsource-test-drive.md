@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 324c7880643a6e06bc147d1bbafb1b9638b8f2ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679578"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731598"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Proporcionar a los clientes una versión de prueba de las aplicaciones de lienzo en AppSource
 
@@ -60,9 +59,9 @@ Los datos que importó son de tipo *estático*, por lo tanto, de solo lectura. S
 
 Si la aplicación es de lectura y escritura, primero extraiga los datos de cada tabla en una *colección*, que es una estructura de datos tabulares en Power apps. A continuación, trabaje con la colección en lugar de con la tabla. Para extraer datos de las tablas **SiteInspector** y **SitePhotos** en las colecciones **SiteInspectorCollect** y **SitePhotosCollect**:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 La fórmula borra ambas colecciones y, a continuación, recopila los datos de cada tabla en la colección adecuada:
@@ -78,12 +77,12 @@ Ha visto cómo leer datos directamente y desde una colección; ahora, vamos a mo
 
 **Para agregar una fila a una colección**, use [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Para actualizar una fila de una colección**, use [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Para eliminar una fila de una colección**, use [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]
@@ -114,7 +113,7 @@ RemoveIf( SiteInspectorCollect; ID = record.ID )
 En resumen, puede crear una versión de la aplicación con datos insertados, que simula la experiencia de la aplicación con conexión a datos externos. Después de insertar los datos, estará listo para publicar la aplicación como una solución de versión de prueba en AppSource.com.
 
 ## <a name="how-do-i-list-my-test-drive-solution-on-appsourcecom"></a>¿Cómo muestro mi solución de versión de prueba en AppSource.com?
-Ahora que la aplicación está lista, es el momento de publicarla en AppSource.com. Para iniciar este proceso, rellene el [formulario de solicitud](https://powerapps.microsoft.com/partners/get-listed/) en PowerApps.com.
+Ahora que la aplicación está lista, es el momento de publicarla en AppSource.com. Para iniciar este proceso, complete el formulario de la [aplicación](https://powerapps.microsoft.com/partners/get-listed/) en Power apps.com.
 
 Una vez realizada la solicitud, recibirá un correo electrónico con las instrucciones de envío de la aplicación para que sea publicada en AppSource.com. También se puede descargar la documentación de incorporación que contiene todo el proceso de [aquí](https://go.microsoft.com/fwlink/?linkid=851031).
 

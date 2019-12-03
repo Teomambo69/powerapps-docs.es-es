@@ -1,6 +1,6 @@
 ---
 title: Función Defaults | Microsoft Docs
-description: Información de referencia sobre la función Defaults de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función defaults en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ad3d8198d73a698abb771aef7230c12b48ff0f56
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731117"
 ---
-# <a name="defaults-function-in-powerapps"></a>Función Defaults en PowerApps
+# <a name="defaults-function-in-power-apps"></a>Función defaults en Power apps
 Devuelve los valores predeterminados para un [origen de datos](../working-with-data-sources.md).  
 
 ## <a name="description"></a>Descripción
@@ -41,5 +41,5 @@ Puede combinar la función **Defaults** con la función **[Patch](function-patch
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |Devuelve los valores predeterminados para el origen de datos **Scores**. |**{puntuación: 0}** |
+| **Defaults(&nbsp;Scores&nbsp;)** |Devuelve los valores predeterminados para el origen de datos **Scores**. |**{ Score: 0 }** |
 

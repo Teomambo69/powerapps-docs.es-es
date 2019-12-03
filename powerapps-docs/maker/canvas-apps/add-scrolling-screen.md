@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: de0aba95b4bb5c3a308b0b86b739302dc0dc70e3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678934"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724657"
 ---
-# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Agregar una pantalla de desplazamiento a una aplicación de lienzo en PowerApps
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-power-apps"></a>Agregar una pantalla de desplazamiento a una aplicación de lienzo en Power apps
 
 En una aplicación de lienzo, cree una pantalla por la que puedan desplazarse los usuarios para ver diferentes elementos. Por ejemplo, cree una aplicación de teléfono que muestre datos en varios gráficos, que los usuarios podrán ver al desplazarse.
 

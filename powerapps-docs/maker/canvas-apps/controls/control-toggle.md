@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 17bceb06af2c460eb122f1bab0dc382b00838ee5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649812"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731937"
 ---
-# <a name="toggle-control-in-powerapps"></a>Control Alternar en PowerApps
+# <a name="toggle-control-in-power-apps"></a>Control de alternancia en Power apps
 Control que el usuario puede activar o desactivar al mover su identificador.
 
 ## <a name="description"></a>Descripción
@@ -106,14 +105,14 @@ Alternar está diseñado para las interfaces gráficas de usuario recientes pero
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control Alternar y asígnele el nombre **MemberDiscount**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**If(MemberDiscount.Value = true; "Price: $75"; "Price: $100")**
+   <br>**If(MemberDiscount.Value = true, "Price: $75", "Price: $100")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5 y cambie el valor de **MemberDiscount**.

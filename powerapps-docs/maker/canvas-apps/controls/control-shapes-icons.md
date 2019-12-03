@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f46199d0265cf042ebae5dd27ae308fad7eca8e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649736"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732044"
 ---
-# <a name="shape-controls-and-icon-controls-in-powerapps"></a>Controles Forma e Icon de PowerApps
+# <a name="shape-controls-and-icon-controls-in-power-apps"></a>Controles de forma y controles de icono en Power apps
 Gráficos para los que puede configurar las propiedades de aspecto y comportamiento.
 
 ## <a name="description"></a>Descripción
@@ -69,7 +68,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Navegar**( *NombrePantalla*; *TransiciónDePantalla* )](../functions/function-navigate.md)
+[**Navegar**( *NombrePantalla*, *TransiciónDePantalla* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Ejemplo
 
@@ -81,7 +80,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. En **Source**, agregue un control **Forma** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Presione F5 y, a continuación, seleccione el control **forma** .
 
@@ -89,7 +88,7 @@ Estos controles incluyen flechas, formas geométricas, iconos de acción y símb
 
 1. (opcional) Presione Esc para volver al área de trabajo predeterminada, agregue un control **Forma** a **Target** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **Forma** en la siguiente fórmula:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 

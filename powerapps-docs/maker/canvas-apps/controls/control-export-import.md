@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650549"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727303"
 ---
-# <a name="export-control-and-import-control-in-powerapps"></a>Control Exportar y control Importar en PowerApps
-Controles para exportar datos a un archivo local y luego importarlos en otra aplicación de PowerApps.
+# <a name="export-control-and-import-control-in-power-apps"></a>Control de exportación e importación de control en Power apps
+Controla la exportación de datos a un archivo local y la importación de los datos en otra aplicación de Power apps.
 
 ## <a name="description"></a>Descripción
-Si desea crear más de una aplicación que utiliza los mismos datos, pero no quiere compartir esos datos fuera de esas aplicaciones, puede exportarlos e importarlos mediante un control **Exportar** y un control **Importar**. Cuando se exportan datos, se crea un archivo comprimido que se puede copiar en otra máquina y leer en cualquier programa que no sea PowerApps.
+Si desea crear más de una aplicación que utiliza los mismos datos, pero no quiere compartir esos datos fuera de esas aplicaciones, puede exportarlos e importarlos mediante un control **Exportar** y un control **Importar**. Cuando se exportan datos, se crea un archivo comprimido que se puede copiar en otro equipo, pero no se puede leer en ningún programa que no sea Power apps.
 
 ## <a name="warning"></a>Advertencia
 Al habilitar esta funcionalidad en la aplicación, puede exponerla a vulnerabilidades de seguridad y pérdida de datos.  Se recomienda aconsejar a los usuarios que importen solo los archivos reconocidos y de confianza y que exporten únicamente los datos que no sean confidenciales.
@@ -117,7 +116,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
+   <br>**ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -127,7 +126,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 4. Presione F5, haga clic o pulse el control **Exportar** y luego especifique el nombre del archivo en el que desea exportar los datos.
 5. Haga clic o pulse **Guardar** y luego presione Esc para volver al área de trabajo predeterminada.
 6. En una aplicación nueva o existente, agregue un control **Importar**, asígnele el nombre **MyData** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(ImportedProducts; MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. Presione F5, haga clic o pulse **MyData**, haga clic o pulse el archivo exportado y luego haga clic o pulse **Abrir**.
 8. Presione Esc, haga clic o pulse **Colecciones** en el menú **Archivo** y confirme que la aplicación actual tiene los datos que ha exportado.
 

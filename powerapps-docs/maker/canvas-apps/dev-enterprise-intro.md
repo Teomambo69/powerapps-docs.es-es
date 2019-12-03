@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02b95408a0e4d3d519c1a1105002c69372670f55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679505"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731592"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Aplicaciones de lienzo para desarrolladores empresariales, asociados y fabricantes de software independientes
 
@@ -26,7 +26,7 @@ Como desarrollador, puede ampliar las aplicaciones de lienzo en Power Apps, habi
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>Aplicaciones de lienzo para desarrolladores empresariales
 
-Los desarrolladores empresariales permiten que sus organizaciones compilen robustas soluciones personalizadas en PowerApps:
+Como desarrollador empresarial, permita a su organización crear soluciones sólidas y personalizadas en Power apps:
 
 - **Cree conectores personalizados**: desarrolle conectores personalizados para conectarse a los servicios web y de datos de su organización. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
 

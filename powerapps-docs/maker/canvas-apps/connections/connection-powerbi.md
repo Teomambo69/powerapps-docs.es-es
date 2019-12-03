@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 40741bbaaba75f6cb1312057d5bba8c02ea15835
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723617"
 ---
-# <a name="connect-to-power-bi-from-powerapps"></a>Conectar al Power BI desde PowerApps
+# <a name="connect-to-power-bi-from-power-apps"></a>Conexión a Power BI de Power apps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
 Power BI es un conjunto de herramientas de análisis de negocios destinado a analizar datos y compartir información. Supervise su negocio y obtenga respuestas rápidamente con paneles muy completos disponibles en todos los dispositivos. En su aplicación, puede comprobar el estado de las alertas de datos que ha configurado en el servicio Power BI. Para más información sobre las alertas de datos en Power BI, vaya a la [página de documentación](https://docs.microsoft.com/power-bi/service-set-data-alerts).

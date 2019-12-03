@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ba582906c34b2831fffbfedcf645a00bd7cdb7d6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678727"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728292"
 ---
-# <a name="connect-to-excel-from-powerapps"></a>Conexión a Excel desde PowerApps
+# <a name="connect-to-excel-from-power-apps"></a>Conexión a Excel desde Power apps
 ![Excel](./media/connection-excel/excelicon.png)
 
 Excel es una *variante* de una conexión. Para mostrar los datos de Excel en la aplicación:
@@ -35,7 +35,7 @@ Excel es una *variante* de una conexión. Para mostrar los datos de Excel en la 
 
 [La introducción a la conexión de almacenamiento en la nube](cloud-storage-blob-connections.md) muestra cómo agregar la conexión, agregar una tabla de Excel como origen de datos y usar los datos de Excel en la aplicación.
 
-Para más información sobre cómo conectarse a otros tipos de datos, consulte la [lista de conexiones para PowerApps](../connections-list.md).
+Para obtener información sobre cómo conectarse a otros tipos de datos, consulte la [lista de conexiones de Power apps](../connections-list.md).
 
 ### <a name="known-limitations"></a>Limitaciones conocidas
 Para más información sobre cómo compartir datos de Excel en su organización, [repase estas limitaciones](cloud-storage-blob-connections.md#sharing-excel-tables).

@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7bb993de28435478c65e061e959b2fa8945e73d1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650677"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727411"
 ---
-# <a name="check-box-control-in-powerapps"></a>Control Casilla en PowerApps
+# <a name="check-box-control-in-power-apps"></a>Control de casilla en Power apps
 Un control que el usuario puede seleccionar o borrar para establecer su valor en **true** o **false**.
 
 ## <a name="description"></a>Descripción
@@ -122,14 +121,14 @@ El usuario puede especificar un valor booleano mediante este conocido control, q
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Cuadro de texto**, denomínelo **chkReserve** y establezca su propiedad **[Texto](properties-core.md)** para mostrar **Reserve now**.
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Selector de fecha](control-date-picker.md)** y establezca su propiedad **[Visible](properties-core.md)** en esta fórmula:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, pulse o haga clic en **chkReserve** para establecer su propiedad **[Valor](properties-core.md)** en **true** y luego pulse o haga clic de nuevo en **chkReserve** para establecer su propiedad **[Valor](properties-core.md)** en **false**.

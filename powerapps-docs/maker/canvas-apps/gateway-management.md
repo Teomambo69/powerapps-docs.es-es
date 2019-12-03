@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676536"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729558"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Administración de una puerta de enlace de datos local en PowerApps
+# <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Administración de una puerta de enlace de datos local en Power apps
 
 Instale una puerta de enlace de datos local para transferir datos de forma rápida y segura entre una aplicación de lienzo integrada en Power apps y un origen de datos que no esté en la nube, como una base de datos de SQL Server local o un sitio de SharePoint local. Vea todas las puertas de enlace para las que tiene permisos administrativos y administre los permisos y las conexiones para estas puertas de enlace.
 
@@ -35,7 +35,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* El nombre de usuario y la contraseña que usó para [registrarse](../signup-for-powerapps.md) en PowerApps.
+* El nombre de usuario y la contraseña que usó para [suscribirse](../signup-for-powerapps.md) a Power apps.
 * Los permisos administrativos de una puerta de enlace. De forma predeterminada, tiene estos permisos para cada puerta de enlace que instala, y un administrador de otra puerta de enlace puede concederle estos permisos para esa puerta de enlace.
 * Una licencia que permite el acceso a los datos locales mediante una puerta de enlace local. Para más información, consulte la sección "Conectividad" de la [página de precios](https://powerapps.microsoft.com/pricing/).
 * Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](working-with-environments.md) del usuario.

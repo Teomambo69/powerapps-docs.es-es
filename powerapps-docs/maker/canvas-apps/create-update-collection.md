@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b124a27119a7b91572bdfef563e0f99e9d5da08d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678681"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731779"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Crear y actualizar una colección en una aplicación de lienzo
 
@@ -28,8 +27,8 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
-- Cree una aplicación o abra una existente en PowerApps.
-- Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
+- Cree una aplicación o abra una aplicación existente en Power apps.
+- Aprenda a [configurar un control](add-configure-controls.md) en Power apps.
 
 ## <a name="create-a-multicolumn-collection"></a>Crear una colección de varias columnas
 
@@ -51,15 +50,15 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. En la barra de fórmulas, reemplace **DropDownSample** por esta expresión:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
 1. Agregue un control **botón** , establezca su propiedad **texto** en **"agregar"** y establezca su propiedad **alseleccionar** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
@@ -107,7 +106,7 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. Establezca la propiedad **alseleccionar** del icono en esta fórmula:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
 1. Fuera de la galería, agregue un botón, establezca su propiedad **Text** en **"Clear"** y establezca su propiedad **alseleccionar** en esta fórmula:
 
@@ -121,7 +120,7 @@ Use una colección para almacenar los datos que los usuarios pueden administrar 
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta función, sustituyendo *ListName* por el nombre de la lista de SharePoint:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Esta función crea una colección que se denomina **MySPCollection** y que contiene los mismos datos que la lista de SharePoint.
 

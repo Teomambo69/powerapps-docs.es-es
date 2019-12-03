@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 861d343e653a78af685a1e0cb82deb5b2ad59591
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675116"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732567"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de correo electrónico para las aplicaciones de Canvas
 
@@ -37,7 +36,7 @@ Para profundizar más en la funcionalidad predeterminada de esta pantalla, consu
 
 ## <a name="prerequisite"></a>Requisito previo
 
-Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en PowerApps](../data-platform-create-app-scratch.md).
+Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en Power apps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Funcionalidad predeterminada
 
@@ -87,10 +86,10 @@ Esto permite a los usuarios enviar una sola imagen con el correo electrónico co
    Esto evita que el control esté delante del control **PeopleBrowseGallery** .
 1. Cambie la propiedad **alto** de **EmailPeopleGallery** a esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,31 +102,31 @@ Esto permite a los usuarios enviar una sola imagen con el correo electrónico co
     
 1. Cambie la propiedad **alseleccionar** del control **iconMail** a esta fórmula:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     
@@ -164,5 +163,5 @@ Siga los pasos descritos en la sección "Mostrar asistentes de eventos" de [info
 ## <a name="next-steps"></a>Pasos siguientes
 
 * [Vea la documentación de referencia de esta pantalla](./email-screen-reference.md).
-* [Obtenga más información sobre el conector de usuarios de Office 365 en PowerApps](../connections/connection-office365-users.md).
-* [Vea todas las conexiones disponibles en PowerApps](../connections-list.md).
+* [Obtenga más información sobre el conector de usuarios de Office 365 en Power apps](../connections/connection-office365-users.md).
+* [Vea todas las conexiones disponibles en Power apps](../connections-list.md).

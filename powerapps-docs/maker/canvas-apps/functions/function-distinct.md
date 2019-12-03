@@ -1,6 +1,6 @@
 ---
 title: Función Distinct | Microsoft Docs
-description: Información de referencia sobre la función Distinct de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función DISTINCT de Power Apps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7d9ae4df7a4ad11a49b2a25ae78330d0cd807c9b
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: b77cdf452250fc30e1b8c61867f82e5f109fff49
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985245"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731245"
 ---
-# <a name="distinct-function-in-powerapps"></a>Función Distinct de PowerApps
+# <a name="distinct-function-in-power-apps"></a>Función DISTINCT en Power apps
 Resume los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md), quitando los duplicados.
 
 ## <a name="description"></a>Descripción
@@ -32,7 +31,7 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Distinct**( *Table*; *Formula* )
+**Distinct**( *Table*, *Formula* )
 
 * *Table*: requerido.  Tabla en la cual se realizará la evaluación.
 * *Formula*: requerido.  La fórmula que se evalúa en cada registro.
@@ -41,15 +40,15 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula.
 
-    ```powerapps-comma
-    ClearCollect( CityPopulations;
-        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
-        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
-        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
-        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
-        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
-        { City: "Munich";    Country: "Germany";        Population: 1494000 }
-    );;
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
     ```
 
 1. Seleccione el botón mientras mantiene presionada la tecla Alt.
@@ -61,8 +60,8 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control [**tabla de datos**](../controls/control-data-table.md) y establezca su propiedad **elementos** en esta fórmula:
 
-    ```powerapps-comma
-    Distinct( CityPopulations; Country )
+    ```powerapps-dot
+    Distinct( CityPopulations, Country )
     ```
 
     Para ver el resultado de esta fórmula en la barra de fórmulas, seleccione toda la fórmula:
@@ -77,8 +76,8 @@ La función **DISTINCT** evalúa una fórmula en cada registro de una tabla y de
 
 1. Inserte un control [**etiqueta**](../controls/control-text-box.md) y establezca su propiedad **texto** en la fórmula:
 
-    ```powerapps-comma
-    First( Sort( Distinct( CityPopulations; Country ); Result ) ).Result
+    ```powerapps-dot
+    First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
     ```
 
     Esta fórmula ordena los resultados de **DISTINCT** con la función de [**ordenación**](function-sort.md) , toma el primer registro de la tabla resultante con la [**primera**](function-first-last.md) función y extrae el campo de **resultados** para obtener solo el nombre del país.

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674508"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732939"
 ---
-# <a name="understand-data-cards-in-powerapps"></a>Comprender las tarjetas de datos en PowerApps
+# <a name="understand-data-cards-in-power-apps"></a>Descripción de las tarjetas de datos en Power apps
 
 Los controles **[Tarjeta](controls/control-card.md)** son los componentes fundamentales de los controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)** en aplicaciones de lienzo. El formulario representa todo el registro y cada tarjeta representa un único campo de ese registro.
 

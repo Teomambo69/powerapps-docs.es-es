@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674287"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732331"
 ---
-# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Comprender los orígenes de datos para aplicaciones de lienzo en PowerApps
+# <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Descripción de los orígenes de datos para aplicaciones de lienzo en Power apps
 
 En Power Apps, la mayoría de las aplicaciones de canvas usan información externa almacenada en Cloud Services denominada **orígenes de datos**. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones acceder a estos orígenes de datos a través de las **conexiones**.
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 43d2632612a473f226a9c8c964ecb42837074cc6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679532"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731475"
 ---
-# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Instalar y configurar el ejemplo de informe de gastos en aplicaciones de lienzo en PowerApps
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-power-apps"></a>Instalación y configuración del ejemplo de informe de gastos para aplicaciones de lienzo en Power apps
 
 Instrucciones paso a paso para instalar y configurar el ejemplo de informe de gastos. También puede obtener una vista previa de la aplicación de ejemplo [aquí](https://aka.ms/previewmyexpenses).
 
@@ -38,7 +38,7 @@ Realice un seguimiento de los informes de gastos desde el envío hasta la aproba
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
+- [Regístrese](../signup-for-powerapps.md) en Power apps.
 
 ## <a name="create-the-expenses-list"></a>Creación de la lista Gastos
 

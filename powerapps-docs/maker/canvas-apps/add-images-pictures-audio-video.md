@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 58b96ab5758fd30a05d9f325cb623bbc338b0d00
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679233"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724742"
 ---
-# <a name="using-multimedia-files-in-powerapps"></a>Utilizar archivos multimedia en PowerApps
+# <a name="using-multimedia-files-in-power-apps"></a>Uso de archivos multimedia en Power apps
 
 En este tema, aprenderá a insertar archivos multimedia en la aplicación de lienzo, a cargar dibujos en un origen de datos y a mostrar imágenes procedentes de un origen de datos en la aplicación. El origen de datos que vamos a usar en este tema es un archivo de Excel guardado en OneDrive para la Empresa.
 
@@ -159,7 +158,7 @@ En este ejemplo, aprenderá a cargar dibujos en el origen de datos, OneDrive par
 
 8. En la pestaña **Insertar**, agregue el control **Botón** y establezca la propiedad **AlSeleccionar** en esta fórmula:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Agregue un control de la **Galería de imágenes** (pestaña **Insertar** > **Galería**) y establezca la propiedad **Elementos** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
 

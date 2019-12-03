@@ -1,6 +1,6 @@
 ---
 title: Edición de una aplicación de lienzo | Microsoft Docs
-description: Instrucciones paso a paso para editar aplicaciones de lienzo y escenarios de bloqueo de sesión en PowerApps.
+description: Instrucciones paso a paso para editar aplicaciones de lienzo y escenarios de bloqueo de sesión en Power apps.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29cf712e6938d34136c3d47b2f73fbcbd3d53a00
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e68d34d6a8f6b6a115bdd272235e9c5c0f155a2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679555"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731559"
 ---
-# <a name="edit-a-canvas-app-in-powerapps"></a>Edición de una aplicación de lienzo en PowerApps
+# <a name="edit-a-canvas-app-in-power-apps"></a>Edición de una aplicación de lienzo en Power apps
 Edite cualquier aplicación que haya compilado, de la que sea propietario o en la que tenga permisos **Puede editar**. Puede editar una aplicación en Power apps Studio. Si intenta editar una aplicación que está abierta para su edición en otra parte, un mensaje le indicará si es usted quien ya la tiene abierta o si es otro usuario.
 
 ## <a name="verify-your-permissions"></a>Comprobación de los permisos
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en el menú **Archivo** (en el borde izquierdo).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, después, pulse o haga clic en **aplicaciones** en el menú **archivo** (en el borde izquierdo).
    
     ![Opción Aplicaciones en el menú Archivo](./media/edit-app/file-apps.png)
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b04c1d9ecc4c2955b68f1ffeae1a5a56e74ab710
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674937"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733093"
 ---
-# <a name="share-a-canvas-app-in-powerapps"></a>Compartir una aplicación de lienzo en PowerApps
+# <a name="share-a-canvas-app-in-power-apps"></a>Compartir una aplicación de lienzo en Power apps
 
 Después de compilar una aplicación que responde a una necesidad empresarial, especifique qué usuarios de su organización pueden ejecutarla y cuáles pueden modificarla e incluso volver a compartirla. Especifique cada usuario por nombre, o indique un grupo de seguridad en Azure Active Directory. Si todos los usuarios se beneficiarán de la aplicación, especifique que toda la organización puede ejecutarla.
 
@@ -79,7 +79,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 
 1. En la parte inferior del panel compartir, seleccione **compartir**.
 
-    Todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla en Power apps Mobile en un dispositivo móvil o en AppSource en [Dynamics 365](https://home.dynamics.com) en un explorador. Los copropietarios pueden editar y compartir la aplicación en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    Todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla en Power apps Mobile en un dispositivo móvil o en AppSource en [Dynamics 365](https://home.dynamics.com) en un explorador. Los copropietarios pueden editar y compartir la aplicación en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     Si ha enviado una invitación por correo electrónico, todos los usuarios con quienes haya compartido la aplicación pueden ejecutarla seleccionando un vínculo en la invitación.
 
@@ -165,7 +165,7 @@ Después de compartir una aplicación para el acceso de invitado, los invitados 
 ### <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>¿Cuál es la diferencia entre el acceso de invitado de la aplicación de lienzo y los portales de Power apps? 
-Las aplicaciones de lienzo permiten compilar una aplicación, adaptada a la digitalización de procesos empresariales, sin necesidad de escribir código C#en un lenguaje de programación tradicional como. El acceso de invitado para las aplicaciones de canvas permite a los equipos de personas compuestas por diferentes organizaciones que participan en un proceso empresarial común tener acceso a los mismos recursos de la aplicación que se pueden integrar con una amplia variedad de orígenes de Microsoft y de terceros. Más información: [información general de los conectores de canvas-app para PowerApps](/powerapps/maker/canvas-apps/connections-list).
+Las aplicaciones de lienzo permiten compilar una aplicación, adaptada a la digitalización de procesos empresariales, sin necesidad de escribir código C#en un lenguaje de programación tradicional como. El acceso de invitado para las aplicaciones de canvas permite a los equipos de personas compuestas por diferentes organizaciones que participan en un proceso empresarial común tener acceso a los mismos recursos de la aplicación que se pueden integrar con una amplia variedad de orígenes de Microsoft y de terceros. Más información: [información general de los conectores de canvas-app para Power apps](/powerapps/maker/canvas-apps/connections-list).
 
 Los [portales de Power Apps](/powerapps/maker/portals/overview) proporcionan la capacidad de compilar sitios web de bajo código y con capacidad de respuesta que permiten a los usuarios externos interactuar con los datos almacenados en Common Data Service. Permite a las organizaciones crear sitios web que se pueden compartir con usuarios externos a su organización, ya sea de forma anónima o a través del proveedor de inicio de sesión de su elección, como LinkedIn, una cuenta de Microsoft u otros proveedores de inicio de sesión comerciales. 
 

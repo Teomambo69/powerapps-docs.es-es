@@ -13,28 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2482e5b4cbbcaaf168320a8cbfe3c31f486bf891
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a4e19b4b261bb489dd5c63e4393452a500ab3df9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674306"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732914"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Iniciar un flujo en una aplicación de lienzo
 
-Puede usar Power Automate para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar que el flujo pueda iniciarlo cualquier control de la aplicación, que continúa ejecutándose aunque cierre PowerApps.
+Puede usar Power Automate para crear lógica que realice una o varias tareas cuando se produce un evento en una aplicación de lienzo. Por ejemplo, configure un botón para que cuando un usuario lo seleccione, se cree un elemento en una lista de SharePoint, se envíe un correo electrónico o una convocatoria de reunión, se agregue un archivo a la nube o se realicen todas estas acciones. Puede configurar cualquier control en la aplicación para iniciar el flujo, que continúa ejecutándose incluso si cierra Power apps.
 
 > [!NOTE]
 > Cuando un usuario ejecuta un flujo desde una aplicación, el usuario debe tener permiso para realizar las tareas que se especifican en el flujo. De lo contrario, se producirá un error en el flujo.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
+- [Regístrese](../signup-for-powerapps.md) en Power apps.
 - Tiene que saber [configurar un control](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Creación de un flujo
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En la barra de navegación izquierda, seleccione **lógica de negocios**y, a continuación, seleccione **flujos**.
 
@@ -67,7 +67,7 @@ Puede usar Power Automate para crear lógica que realice una o varias tareas cua
    
        ![Especificar lista](./media/using-logic-flows/list-fields.png)
 
-   1. Seleccione el cuadro de entrada de un campo en la lista (por ejemplo, **título**), seleccione **Ver más** en el panel de contenido dinámico y, a continuación, seleccione **preguntar en PowerApps**. 
+   1. Seleccione el cuadro de entrada de un campo en la lista (por ejemplo, **título**), seleccione **Ver más** en el panel de contenido dinámico y, a continuación, seleccione **preguntar en Power apps**. 
 
        ![Agregar el parámetro Ask en Power apps al campo title](./media/using-logic-flows/ask-in-powerapps.png)
 

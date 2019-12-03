@@ -1,6 +1,6 @@
 ---
 title: Funciones DateValue, TimeValue y DateTimeValue | Microsoft Docs
-description: Información de referencia de las funciones DateValue, TimeValue y DateTimeValue de PowerApps, con sintaxis y ejemplos
+description: Información de referencia de las funciones DateValue, TimeValue y Fechahoranumero en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3914c55bf3be5d172bc80832e437c3e3775a1859
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aab6d3d00f960d2e0b4ca5cc5b309eee4fb9a7b7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985083"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731181"
 ---
-# <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>Funciones DateValue, TimeValue y DateTimeValue en PowerApps
+# <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Funciones DateValue, TimeValue y Fechahoranumero en Power apps
 Convierte una fecha o una hora, o ambas, en un valor de fecha y hora.
 
 ## <a name="description"></a>Descripción
@@ -49,7 +48,7 @@ Consulte también [cómo trabajar con fechas y horas](../show-text-dates-times.m
 Para convertir números, consulte la función **[Value](function-value.md)** .
 
 ## <a name="syntax"></a>Sintaxis
-**DateValue**( *String* [; *Language* ])<br>**DateTimeValue**( *String* [; *Language* ])<br>**TimeValue**( *String* [; *Language* ])
+**DateValue**( *String* [, *Language* ])<br>**DateTimeValue**( *String* [, *Language* ])<br>**TimeValue**( *String* [, *Language* ])
 
 * *String*: requerido.  Una cadena de texto que contiene un valor de fecha, de hora, o una combinación de ambas.
 * *Idioma*: opcional.  Una cadena de idioma, como la que devuelven los dos primeros caracteres de la función **[Language](function-language.md)** .  Si no se indica, se utilizará el idioma de cliente del usuario actual.  
@@ -58,35 +57,35 @@ Para convertir números, consulte la función **[Value](function-value.md)** .
 ### <a name="datevalue"></a>DateValue
 Si escribió **10/11/2014** en un control de entrada de texto denominado **Startdate** y, después, estableció la propiedad **[Texto](../controls/properties-core.md)** de una etiqueta en esta función:
 
-* **Text(DateValue(Startdate.Text); DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text), DateTimeFormat.LongDate)**
   
     La etiqueta debería mostrar el **sábado, 11 de octubre de 2014**, si su equipo se ha configurado con la configuración regional **en**.
   
     > [!NOTE]
   > Puede utilizar varias opciones, excepto **LongDateTime**, con el parámetro **DateTimeFormat**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
-* **Text(DateValue(Startdate.Text; "fr"); DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     La etiqueta mostrará ahora el **lunes 10 de noviembre de 2014**.
 
 Si hizo lo mismo en el **20 de octubre de 2014**:
 
-* **DateDiff(DateValue(Startdate.Text); Today())**
+* **DateDiff(DateValue(Startdate.Text), Today())**
   
     Si su equipo se ha configurado con el idioma **en**, la etiqueta mostrará **9**, que indica el número de días entre el 11 de octubre y el 20 de octubre. La función **[DateDiff](function-dateadd-datediff.md)** también puede mostrar la diferencia en meses, trimestres o años.
 
 ### <a name="datetimevalue"></a>DateTimeValue
 Si escribió **10/11/2014 1:50:24.765 p. m.** en un control de entrada de texto denominado **Start** y, después, estableció la propiedad **[Texto](../controls/properties-core.md)** de una etiqueta en esta función:
 
-* **Text(DateTimeValue(Start.Text); DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text), DateTimeFormat.LongDateTime)**
   
     La etiqueta debería mostrar el **sábado, 11 de octubre de 2014 1:50:24 p. m.** , si su equipo se ha configurado con la configuración regional "en".
   
     > [!NOTE]
   > Puede utilizar varias opciones, excepto **LongDateTime**, con el parámetro **DateTimeFormat**. Para mostrar una lista de esas opciones, escriba el parámetro, seguido inmediatamente de un signo de exclamación, en el cuadro de función.
-* **Text(DateTimeValue(Start.Text; "fr"); DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     La etiqueta mostrará ahora el **lunes 10 de noviembre de 2014 1:50:24 p. m**.
-* **Text(DateTimeValue(Start.Text); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
+* **Text(DateTimeValue(Start.Text), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
   
     La etiqueta debería mostrar el **sábado, 11 de octubre de 2014 01:50:24:765 p. m.** , si su equipo se ha configurado con la configuración regional **en**.
   
@@ -95,7 +94,7 @@ Si escribió **10/11/2014 1:50:24.765 p. m.** en un control de entrada de texto
 ### <a name="timevalue"></a>TimeValue
 Asigne el nombre **FinishedAt** a un control de entrada de texto y establezca la propiedad **[Text](../controls/properties-core.md)** de una etiqueta en esta función:
 
-**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"); "You made it!"; "Too late!")**
+**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"), "You made it!", "Too late!")**
 
 * Si escribe **4:59:59.999 PM** en el control **FinishedAt** la etiqueta mostrará el texto "You made it!"
 * Si escribe **5:00:00.000 p. m.** en el control **FinishedAt**, la etiqueta mostrará el texto "Too late!"

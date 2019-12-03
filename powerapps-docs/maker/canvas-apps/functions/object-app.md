@@ -1,6 +1,6 @@
 ---
 title: Objeto App | Microsoft Docs
-description: Información de referencia para el objeto App en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para el objeto App en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676740"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729755"
 ---
-# <a name="app-object-in-powerapps"></a>Objeto App en PowerApps
+# <a name="app-object-in-power-apps"></a>Objeto de aplicación en Power apps
 
 Proporciona información sobre la aplicación que se está ejecutando actualmente y el control sobre el comportamiento de la aplicación.
 
@@ -84,7 +83,7 @@ El cuadro de diálogo de confirmación aparece en cualquier situación en la que
   - Deslizar rápidamente para cambiar a otra aplicación en Power apps Mobile.
   - Seleccionar el botón atrás en un dispositivo Android.
 
-La apariencia exacta del cuadro de diálogo de confirmación puede variar en los dispositivos y las versiones de PowerApps.
+La apariencia exacta del cuadro de diálogo de confirmación puede variar entre dispositivos y versiones de Power apps.
 
 El cuadro de diálogo de confirmación no aparece en Power apps Studio.
 
@@ -102,7 +101,7 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

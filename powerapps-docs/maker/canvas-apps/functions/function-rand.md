@@ -1,6 +1,6 @@
 ---
 title: Función Rand | Microsoft Docs
-description: Información de referencia para la función Rand en PowerApps, incluida la sintaxis
+description: Información de referencia para la función Rand en Power Apps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5f34be9a38f4e30bdf19f337a24580615a16697c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992537"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730442"
 ---
-# <a name="rand-function-in-powerapps"></a>Función Rand en PowerApps
+# <a name="rand-function-in-power-apps"></a>Función Rand en Power apps
 Devuelve un número pseudoaleatorio.
 
 ## <a name="description"></a>Descripción
@@ -63,7 +62,7 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 #### <a name="create-a-table-of-random-numbers"></a>Creación de una tabla de números aleatorios
 1. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
 
-    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
+    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 
     Con esta fórmula, se crea una tabla de una sola columna que se usa para iterar cinco veces, lo que produce cinco números aleatorios.
 
@@ -81,4 +80,4 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 
     ![Misma pantalla en la que se muestra una tabla de datos con un nuevo conjunto de cinco valores decimales diferentes: 0,414, 0,128, 0,860, 0,303 y 0,568.](media/function-rand/rand-collection-2.png)
 
-Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber; Rand() )** .
+Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber, Rand() )** .

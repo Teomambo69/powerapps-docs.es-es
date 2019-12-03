@@ -1,6 +1,6 @@
 ---
 title: Vínculos a contenido sobre los conectores personalizados para aplicaciones personalizadas | Microsoft Docs
-description: Incluye vínculos a contenido para crear, usar, compartir y certificar conectores personalizados para aplicaciones de lienzo en PowerApps.
+description: Vínculos a contenido para crear, usar, compartir y certificar conectores personalizados para aplicaciones de lienzo en Power apps.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2997c2854979d019a71de8d00ddab37263b789d6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e51d682d420d21cfadd78dccd3c303b03d1d99
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675424"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732729"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Conectores personalizados para aplicaciones de lienzo
 
-Sin necesidad de escribir ningún código, puede crear flujos de trabajo y aplicaciones de lienzo con [Azure Logic apps](https://azure.microsoft.com/services/logic-apps), [Power Automatic](https://flow.microsoft.com)y [PowerApps](https://powerapps.microsoft.com). Con el objetivo de ayudarle a integrar sus procesos empresariales y de datos, dichos servicios ofrecen [más de 180 conectores](https://docs.microsoft.com/connectors/) para productos y servicios de Microsoft, así como para otros servicios, como GitHub, Salesforce y Twitter.
+Sin necesidad de escribir ningún código, puede crear flujos de trabajo y aplicaciones de lienzo con [Azure Logic apps](https://azure.microsoft.com/services/logic-apps), [automatizar](https://flow.microsoft.com)y [Power apps](https://powerapps.microsoft.com). Con el objetivo de ayudarle a integrar sus procesos empresariales y de datos, dichos servicios ofrecen [más de 180 conectores](https://docs.microsoft.com/connectors/) para productos y servicios de Microsoft, así como para otros servicios, como GitHub, Salesforce y Twitter.
 
 Aunque, a veces, es posible que quiera llamar a API, servicios y sistemas que no están disponibles como conectores compilados previamente. Para admitir escenarios más específicos, puede compilar *conectores personalizados* con acciones y desencadenadores propios. En el sitio de la documentación sobre los conectores encontrará un conjunto muy completo de tutoriales básicos y avanzados sobre los conectores personalizados. Recomendamos empezar por la [información general sobre los conectores personalizados](https://docs.microsoft.com/connectors/custom-connectors/), pero, si quiere, puede ir directamente a los siguientes temas para obtener más información sobre un aspecto en concreto:
 

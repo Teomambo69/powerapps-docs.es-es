@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a41c9c121c1b57545376ba16f93d249c36ddeaeb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674564"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732372"
 ---
-# <a name="transform-your-infopath-form-to-powerapps"></a>Transformar el formulario de InfoPath en PowerApps
+# <a name="transform-your-infopath-form-to-power-apps"></a>Transformación del formulario de InfoPath en Power apps
 
 ¿Ha creado grandes contenidos en InfoPath, pero le gustaría ofrecerlos en una plataforma más sólida?
 
@@ -38,7 +37,7 @@ Power apps es una plataforma de software como servicio (SaaS) diseñada para que
 ¿Ha intentado alguna vez compilar una aplicación y luego publicarla para dispositivos Android o iOS? Es complicado. Si quiere implementar una segunda aplicación o actualizar una existente, los usuarios deben realizar muchos más pasos. No con Power apps. Los usuarios instalan Power apps Mobile en sus dispositivos e inician sesión. Y ya está. Ya tienen todas las aplicaciones de elevada funcionalidad que ha compartido con ellos. En el futuro, si actualiza esas aplicaciones o les envía aplicaciones nuevas, estas aparecerán en sus dispositivos. Disponer de aplicaciones móviles sin tener que administrar los dispositivos constituye una gran ventaja para usted y el negocio.
 
 **Hablando de dispositivos móviles**  
-Con Power Apps, puede aprovechar la eficacia del dispositivo móvil del usuario. como la aceleración, la cámara, la brújula, la información de conexión y las señales de ubicación: y todo ello desde dentro de la aplicación. Esto abre todo un mundo de posibilidades para compilar aplicaciones orientadas al trabajo. Por supuesto, la funcionalidad táctil es automática en PowerApps: no es necesario escribir código al compilar la aplicación.
+Con Power Apps, puede aprovechar la eficacia del dispositivo móvil del usuario. como la aceleración, la cámara, la brújula, la información de conexión y las señales de ubicación: y todo ello desde dentro de la aplicación. Esto abre todo un mundo de posibilidades para compilar aplicaciones orientadas al trabajo. Por supuesto, la funcionalidad táctil es simplemente automática en Power apps: no hay ningún código adicional al compilar la aplicación.
 
 **Lista para usar**  
 Con InfoPath, normalmente se trabaja con datos de un origen. Pero las cosas se complican si quiere actualizar otro origen (por ejemplo, una lista de SharePoint en otra colección de sitios) o conectarse a servicios externos. Conceptos como el código subyacente le mantienen despierto durante la noche. Power apps está diseñado para permitirle trabajar con varios orígenes de datos y conexiones de servicio en una aplicación. Actualmente, [más de 200 conectores](connections-list.md#all-standard-connectors) admiten una combinación de datos locales y en la nube, incluidos Microsoft Office 365 y servicios de Azure, como Power Automatic y Dynamics 365. También puede conectarse a una gran variedad de servicios de terceros como Dropbox, Google, Salesforce, Slack y otros destinos populares.
@@ -51,7 +50,7 @@ Power apps es una excelente herramienta para mejorar la experiencia de SharePoin
 
 **Personalizar un formulario de SharePoint** es muy útil si quiere personalizar el modo en que los usuarios agregan, ven o editan elementos de una lista que usan para su trabajo cotidiano. Si hace clic en **Personalizar formularios**, se crea una &quot;aplicación de formularios&quot; de una sola pantalla que cambia de modo (nuevo/editar/ver) en función del contexto. SharePoint administra estas aplicaciones; sus permisos son los mismos que los permisos de lista para edición y visualización.
 
-La **creación de una aplicación de lienzo de Power apps desde SharePoint** permite ejecutar la aplicación por sí misma en un dispositivo móvil. También puede insertar la aplicación en una página de SharePoint. Al hacer clic, se crea una aplicación de tres pantallas (examinar lista, ver detalles y crear o actualizar un elemento). El modelo de permisos o uso compartido de estas aplicaciones no está vinculado a SharePoint, sino que se administra desde PowerApps.
+La **creación de una aplicación de lienzo de Power apps desde SharePoint** permite ejecutar la aplicación por sí misma en un dispositivo móvil. También puede insertar la aplicación en una página de SharePoint. Al hacer clic, se crea una aplicación de tres pantallas (examinar lista, ver detalles y crear o actualizar un elemento). El modelo de permiso/uso compartido de estas aplicaciones no está asociado a SharePoint, sino que se administra desde Power apps.
 
 Ahora que comprende la diferencia entre las dos opciones, la siguiente sección le proporciona una visión general del uso de cada una de ellas.
 
@@ -81,7 +80,7 @@ Comience con una lista personalizada simple que solo contenga un par de campos d
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>¿Cómo hacerlo con Power apps?
 
-Ahora que conoce los conceptos fundamentales, vayamos más lejos. Con la primera aplicación conseguida, esta sección le ayuda a aplicar en PowerApps algunos de los conceptos comunes de InfoPath.
+Ahora que conoce los conceptos fundamentales, vayamos más lejos. Con su primera aplicación bajo su cinturón, esta sección le ayudará a aplicar algunos de los conceptos comunes de InfoPath en Power apps.
 
 **Ocultar, mostrar o bloquear un campo en función de un valor**  
 Los formularios útiles suelen aplicar una eficaz lógica de negocios, por ejemplo, al cambiar el estado de un campo en función de un valor o una acción. Con Power Apps, puede establecer la propiedad **DisplayMode** de un control en **Editar** o **Ver** para especificar si un usuario puede cambiar el campo. También puede usar una simple fórmula **If** para hacerlo de forma condicional. En primer lugar, seleccione la tarjeta que quiere editar y luego el icono de bloqueo. Este paso desbloquea la tarjeta para que pueda cambiar el valor.
@@ -94,7 +93,7 @@ En el panel derecho, desplácese a la propiedad **DisplayMode** para que pueda e
 
 En este ejemplo use una fórmula **If**:
 
-```If(ThisItem.Color = "Blue"; DisplayMode.View; DisplayMode.Edit)```
+```If(ThisItem.Color = "Blue", DisplayMode.View, DisplayMode.Edit)```
 
 Esta fórmula indica que, si el campo **Color** del elemento actual es **Blue**, el campo **Animal** es de solo lectura. Si no, el campo se puede modificar.
 
@@ -102,21 +101,21 @@ Para ocultar la tarjeta en lugar de hacer que sea de solo lectura, inserte una f
 
 También puede jugar con, por ejemplo, mostrar un botón de aprobación solo si la dirección de correo electrónico del usuario coincide con la dirección de correo electrónico del aprobador. (Sugerencia: use **User (). Correo electrónico** para tener acceso a la dirección de correo electrónico del usuario actual). Por lo tanto, puede almacenar la dirección de correo electrónico del aprobador en **YourDataCard** y, a continuación, establecer la propiedad **visible** del botón en esta fórmula:
 
-```If( YourDataCard.Text = User().Email; true; false )```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **Formato condicional**  
 De forma similar a como anteriormente ocultó el campo, también puede proporcionar comentarios visuales a los usuarios. Puede que quiera resaltar texto en rojo si el valor especificado queda fuera del intervalo aceptable o cambiar el texto y el color del botón de carga después de que el usuario cargue un archivo. Puede hacer ambas cosas con una función, como **If**, en propiedades como **Color** o **Visible**.
 
 Por ejemplo, podría usar la función **If** emparejada con la función [IsMatch](functions/function-ismatch.md) para que el texto del campo de correo electrónico cambie a color rojo si el usuario no especifica una dirección de correo con el formato correcto en el cuadro de entrada. Se haría al establecer el valor **Color** de **TextInput1** (donde el usuario escribe una dirección de correo electrónico) en esta fórmula:
 
-```If( IsMatch(TextInput1.Text; Email); Black; Red )```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** admite una gran cantidad de patrones predefinidos, como Correo electrónico, o puede crear los suyos propios. Para obtener más información sobre el formato condicional, vea este [vídeo de la comunidad](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962).
 
 **Implementación de seguridad basada en roles**  
 La primera función a tener en cuenta es [DataSourceInfo](functions/function-datasourceinfo.md). La información que se obtiene desde el origen de datos varía, pero a menudo se puede usar esta fórmula para confirmar si el usuario tiene acceso para editar los datos (sustituya *YourDataSource* por el nombre del origen de datos):
 
-```DataSourceInfo( YourDataSource; DataSourceInfo.EditPermission )```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 Así, puede mostrar un formulario o un botón únicamente si el usuario tiene acceso para editar. Vea la documentación de [DataSourceInfo](functions/function-datasourceinfo.md) para obtener la lista completa de la información que puede consultar en la función.
 
@@ -127,19 +126,19 @@ Puede enviar un mensaje de correo electrónico desde Power apps de muchas manera
 
 Puede enviar un mensaje más complejo (por ejemplo, como parte de un flujo de trabajo de aprobación de SharePoint) mediante el uso de Power Automatic y la conexión de la aplicación al flujo que cree. Una vez que conecte la aplicación a Power Automate, habrá abierto toda la potencia de un motor de flujo de trabajo que, como Power Apps, está muy bien conectada a los datos y servicios externos. Para obtener más información sobre cómo conectar Power apps y Power Automate, consulte esta [documentación](using-logic-flows.md).
 
-Si todavía no ha encontrado la opción de correo electrónico que está buscando, también puede aprovechar los conectores de Power apps para Benchmark Email, gmail, MailChimp, Outlook.com, SendGrid o SMTP. La conectividad es lo más bonito de PowerApps.
+Si todavía no ha encontrado la opción de correo electrónico que está buscando, también puede aprovechar los conectores de Power apps para Benchmark Email, gmail, MailChimp, Outlook.com, SendGrid o SMTP. La conectividad es la belleza de las aplicaciones de energía.
 
 **Flujos de trabajo**  
 Es difícil hablar de aplicaciones empresariales y lógica de negocios sin un motor de flujo de trabajo. La buena noticia es que el equipo de Power apps no ha reinventado la rueda y le proporciona otro motor de flujo de trabajo. En su lugar, proporcionan un conector sólido al servicio Power Automatic. Puede automatizar procesos y tareas en más de [200 servicios distintos](https://flow.microsoft.com/connectors/) mediante su sencillo motor de flujo de trabajo. Para obtener más información sobre cómo conectar Power apps y Power Automate, consulte esta [documentación](using-logic-flows.md).
 
-**Variables con PowerApps**  
+**Variables con Power apps**  
 Al compilar soluciones, es natural pensar que habrá que usar variables. Power Apps ofrece varios tipos de variables, pero úselas solo cuando sea necesario. En lugar de pensar en obtener datos, almacenarlos en una variable y luego hacer referencia a esa variable, piense en hacer referencia directamente a esos datos. Comprenderá mejor este modelo si lo compara con Excel. En Excel, Total no es una variable, sino la suma de otros campos. Por lo tanto, si quiere usar ese valor en otra parte de la hoja, especifica la celda en la que ha calculado el total. En la [documentación](working-with-variables.md) hay una magnífica explicación de todo esto. Esté abierto a un proceso de pensamiento diferente.
 
 Si aun así necesita una variable (hay muchos casos en que será así), esto le ayudará a comprender las distintas opciones. Tenga en cuenta que, con Power Apps, no tiene que definir variables. Simplemente use una función para especificar un nombre y un valor que se van a almacenar, y la variable se crea. Puede ver las variables que ha creado seleccionando **variables** en la pestaña **vista** . las variables se mantienen en la memoria y sus valores se pierden cuando se cierra la aplicación. Puede crear estos tipos de variables:
 
 - Las variables globales son las que se suelen considerar primero. Use la función [Set](functions/function-set.md) para especificar un valor para una variable global y haga que esté disponible en toda la aplicación:
 
-    ```Set( YourVariable; YourValue )```
+    ```Set( YourVariable, YourValue )```
 
     Luego puede hacer referencia a *YourVariable* por nombre en toda la aplicación.
 
@@ -158,11 +157,11 @@ Las listas desplegables en cascada son muy útiles porque permiten, por ejemplo,
 
 En este ejemplo, podría agregar una lista desplegable denominada **ddSelectType** y establecer su propiedad **Items** en esta fórmula:
 
-```Distinct( Impacts; Title )```
+```Distinct( Impacts, Title )```
 
 La lista desplegable solo mostraría el costo, el impacto del programa y la programación. Luego podría agregar una segunda lista desplegable y establecer su propiedad **Items** en esta fórmula:
 
-```Filter( Impacts; ddSelectType.Selected.Value in SCategory )```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
 De esta manera tendríamos listas desplegables en cascada. Para obtener más información, consulte esta entrada del equipo de Power apps [SharePoint: listas desplegables en cascada en 4 pasos sencillos.](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) o este [vídeo de la comunidad](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). No se preocupe: sin SharePoint es igual de fácil.
 

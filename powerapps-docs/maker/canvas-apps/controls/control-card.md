@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1e9068e272d1da8a4e6b23b66d999f0688cbc00
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7f0d4268700b8c46a15fe74da4a4825395dcfe5b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993520"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722938"
 ---
-# <a name="card-control-in-powerapps"></a>Control Card en PowerApps
+# <a name="card-control-in-power-apps"></a>Control de tarjeta en Power apps
 Proporciona la experiencia de edición y visualización de un solo campo de un control **[Formulario de presentación](control-form-detail.md)** o **[Formulario de edición](control-form-detail.md)** .
 
 ## <a name="description"></a>Descripción

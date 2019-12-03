@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993325"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732073"
 ---
-# <a name="screen-control-in-powerapps"></a>Control Pantalla en PowerApps
+# <a name="screen-control-in-power-apps"></a>Control de pantalla en Power apps
 
 Elemento de la interfaz de usuario que contiene uno o más controles de una aplicación.
 
@@ -55,13 +54,13 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
 1. Agregue un control **[Radio](control-radio.md)** , asígnele el nombre **ScreenFills** y establezca su propiedad **[Elementos](properties-core.md)** en este valor:
 
-    `["Red"; "Green"]`
+    `["Red", "Green"]`
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -69,17 +68,17 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 
 1. En **origen**, agregue un control **[forma](control-shapes-icons.md)** (como una flecha) y establezca su propiedad **[alseleccionar](properties-core.md)** en esta fórmula:
 
-    `Navigate(Target; ScreenTransition.Fade)`
+    `Navigate(Target, ScreenTransition.Fade)`
 
     ¿Desea más información sobre la función **[Navegar](../functions/function-navigate.md)** u [otras funciones](../formula-reference.md)?
 
 1. En **Target**, agregue un control **[Forma](control-shapes-icons.md)** (como una flecha) y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
 1. Establezca la propiedad **[Fill](properties-color-border.md)** de **Target** en esta fórmula:
 
-    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
+    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
 1. Seleccione la pantalla **origen** y, a continuación, mantenga presionada la tecla Alt, seleccione cualquiera de las opciones del control **[radio](control-radio.md)** y, a continuación, seleccione el control **[forma](control-shapes-icons.md)** .
 

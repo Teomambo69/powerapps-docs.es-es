@@ -1,6 +1,6 @@
 ---
 title: Funciones Lower, Upper y Proper | Microsoft Docs
-description: Información de referencia de las funciones Lower, Upper y Proper de PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y ejemplos, para las funciones Lower, Upper y NOMPROPIO en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 115b5e51f816778d763481999f8f487a1d64037a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984553"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730586"
 ---
-# <a name="lower-upper-and-proper-functions-in-powerapps"></a>Funciones Lower, Upper y Proper en PowerApps
+# <a name="lower-upper-and-proper-functions-in-power-apps"></a>Funciones Lower, Upper y NOMPROPIO en Power apps
 Convierte las letras de una cadena de texto en todo minúsculas, todo mayúsculas o en mayúsculas o minúsculas, según corresponda.
 
 ## <a name="description"></a>Descripción
@@ -63,9 +62,9 @@ Cada fórmula devuelve una tabla de una columna que contiene las cadenas convert
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Convierte la primera letra de una palabra en minúsculas a mayúsculas y convierte cualquier otra letra que esté en mayúsculas a minúsculas. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte cualquier letra que está en minúscula a mayúscula. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Convierte la primera letra de una palabra en minúsculas a mayúsculas y convierte cualquier otra letra que esté en mayúsculas a minúsculas. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** y denomínelo **Origen**.

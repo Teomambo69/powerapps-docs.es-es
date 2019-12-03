@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 355793d572f6c4b6578d6cabff221c79e0724a93
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 22bd949dc11171d90a7ed358528c91999c4acc3e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650674"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722851"
 ---
-# <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Controles Gráfico de columnas y Gráfico de líneas en PowerApps
+# <a name="column-chart-and-line-chart-controls-in-power-apps"></a>Controles gráfico de columnas y gráfico de líneas en Power apps
 Controles que muestran datos como gráficos con ejes x e y.
 
 ## <a name="description"></a>Descripción
@@ -114,11 +113,11 @@ Controles que muestran datos como gráficos con ejes x e y.
 **YLabelAngle**: el ángulo de las etiquetas junto al eje y de un gráfico de líneas o de columnas.
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: personalización de una galería en una aplicación generada | Microsoft Docs'
-description: En este tutorial, se personalizan los datos que aparecen en la galería y otros elementos de una aplicación que se generó automáticamente en PowerApps.
+description: En este tutorial, personalizará los datos que aparecen en la galería y otros elementos de una aplicación que se generó automáticamente en Power apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d6e3b7a3dc18ab4c7d4d3d5f510b6c3bbd227a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679670"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731720"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Personalización de una galería en PowerApps
+# <a name="tutorial-customize-a-gallery-in-power-apps"></a>Tutorial: personalización de una galería en Power apps
 
 En este tutorial, personalizará una lista de registros, denominada Galería, y realizará otros cambios en una aplicación que se generó automáticamente en Microsoft Power apps. Los usuarios pueden administrar datos de la aplicación incluso si no realiza estos cambios, pero la aplicación será más fácil de usar si se personaliza de acuerdo con las necesidades de su organización.
 
@@ -52,7 +51,7 @@ Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.p
 
 ## <a name="open-the-generated-app"></a>Abrir la aplicación generada
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y después, seleccione **Aplicaciones** cerca del borde izquierdo.
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, después, seleccione **aplicaciones** cerca del borde izquierdo.
 
 1. Busque la aplicación que ha generado, seleccione su icono de puntos suspensivos ( **...** ) y, a continuación, seleccione **Editar**.
 
@@ -96,7 +95,7 @@ Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.p
 
 1. Copie esta fórmula y, a continuación, péguela en la barra de fórmulas.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Con esta fórmula, se asegura de que:
 

@@ -1,6 +1,6 @@
 ---
 title: Función Len | Microsoft Docs
-description: Información de referencia de la función Len de PowerApps, con sintaxis y ejemplos
+description: Información de referencia para la función Len en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 967d83286cd179177cfbb5558f1fc3484a332875
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 07b706d9cc0a61e204669646734cdcaf7fc50946
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984607"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730648"
 ---
-# <a name="len-function-in-powerapps"></a>Función Len en PowerApps
+# <a name="len-function-in-power-apps"></a>Función Len en Power apps
 Devuelve la longitud de una cadena de texto.
 
 ## <a name="description"></a>Descripción
@@ -54,6 +53,6 @@ En el primer ejemplo de esta sección, el origen de datos se denomina **People**
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Len( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |En la columna **Address** [de la tabla](../working-with-tables.md#columns)**People**:<br><ul><li>Mide la longitud de cada cadena.</li><li>Devuelve una tabla de una columna que contiene la longitud de cada cadena.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
-| **Len( [ "Hello"; "to the"; "World"; "" ] )** |En la columna **[Value](function-value.md)** de la tabla insertada:<br><ul><li>Mide la longitud de cada cadena.</li><li>Devuelve una tabla de una columna que contiene la longitud de cada cadena.</li> |![](media/function-len/people-table-len-inline.png) |
+| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |En la columna **Address** [de la tabla](../working-with-tables.md#columns)**People**:<br><ul><li>Mide la longitud de cada cadena.</li><li>Devuelve una tabla de una columna que contiene la longitud de cada cadena.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
+| **Len( [ "Hello", "to the", "World", "" ] )** |En la columna **[Value](function-value.md)** de la tabla insertada:<br><ul><li>Mide la longitud de cada cadena.</li><li>Devuelve una tabla de una columna que contiene la longitud de cada cadena.</li> |![](media/function-len/people-table-len-inline.png) |
 

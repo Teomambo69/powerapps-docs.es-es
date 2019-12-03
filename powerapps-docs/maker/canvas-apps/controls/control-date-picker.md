@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650607"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727250"
 ---
-# <a name="date-picker-control-in-powerapps"></a>Control Selector de fecha en PowerApps
+# <a name="date-picker-control-in-power-apps"></a>Control selector de fecha en Power apps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
 
 ## <a name="description"></a>Descripción
@@ -112,7 +111,7 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.

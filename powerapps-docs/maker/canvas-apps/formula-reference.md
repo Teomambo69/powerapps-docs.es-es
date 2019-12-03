@@ -1,6 +1,6 @@
 ---
 title: Funciones, señales y enumeraciones | Microsoft Docs
-description: Información de referencia para las funciones, las señales y las enumeraciones en PowerApps.
+description: Información de referencia para las funciones, señales y enumeraciones en Power apps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678474"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731410"
 ---
-# <a name="formula-reference-for-powerapps"></a>Referencia sobre fórmulas para PowerApps
+# <a name="formula-reference-for-power-apps"></a>Referencia de fórmulas de Power apps
 Las fórmulas combinan numerosos elementos.  A continuación se enumera lo siguiente:
 
 * Las **funciones** toman parámetros, realizar una operación y devuelven un valor. Por ejemplo, **Sqrt(25)** devuelve **5**. Las funciones se basan en las funciones de Microsoft Excel.  Algunas funciones tienen efectos secundarios, como **SubmitForm**, y solo son adecuadas en una [fórmula de comportamiento](working-with-formulas-in-depth.md) como **Button.OnSelect**.

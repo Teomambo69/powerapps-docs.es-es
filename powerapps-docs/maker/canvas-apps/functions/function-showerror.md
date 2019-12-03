@@ -1,6 +1,6 @@
 ---
 title: Función ShowError | Microsoft Docs
-description: Información de referencia de la función ShowError de PowerApps, con sintaxis y ejemplos
+description: Información de referencia para la función ShowError en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678244"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730182"
 ---
-# <a name="notify-function-in-powerapps"></a>Función Notify en PowerApps
+# <a name="notify-function-in-power-apps"></a>Función Notify en Power apps
 Muestra un mensaje de pancarta al usuario.
 
 ## <a name="description"></a>Descripción
@@ -42,14 +41,14 @@ Los mensajes se muestran cuando se crea la aplicación y cuando los usuarios fin
 
 **Notify** se puede emparejar con la función [**IfError**](function-iferror.md) para detectar y notificar errores con un mensaje de error personalizado.
 
-Power apps también puede enviar notificaciones de envío mediante un mecanismo totalmente diferente a la **notificación**.  Para obtener más información, vea [Envío de una notificación push en PowerApps](../add-notifications.md).
+Power apps también puede enviar notificaciones de envío mediante un mecanismo totalmente diferente a la **notificación**.  Para obtener más información, consulte [enviar una notificación en Power apps](../add-notifications.md).
 
 **Notify** siempre devuelve *true*.
 
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message*; [ *NotificationType* ] )
+**Notify**( *Message*, [ *NotificationType* ] )
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
 * *NotificationType*: opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
@@ -72,7 +71,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    **Notify( "Hello, World", NotificationType.Error )**
 
 5. Haga clic o presione el botón.
 
@@ -82,7 +81,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Warning )**
+    **Notify( "Hello, World", NotificationType.Warning )**
 
 5. Haga clic o presione el botón.
 
@@ -92,7 +91,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Success )**
+    **Notify( "Hello, World", NotificationType.Success )**
 
 5. Haga clic o presione el botón.
 

@@ -1,6 +1,6 @@
 ---
 title: Operadores | Microsoft Docs
-description: Información de referencia de los operadores de PowerApps, incluidos la sintaxis y ejemplos
+description: Información de referencia para los operadores de Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b1c1e5a4a65e4e6fcc90ca809a271f0fb94286a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676636"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732222"
 ---
-# <a name="operators-in-powerapps"></a>Operadores en PowerApps
+# <a name="operators-in-power-apps"></a>Operadores en Power apps
 
 Algunos de estos operadores dependen del idioma del autor.  Para más información, consulte [Aplicaciones globales](../global-apps.md).
 
@@ -29,8 +28,8 @@ Algunos de estos operadores dependen del idioma del autor.  Para más informaci�
 |                               Símbolo                                |                        Tipo                         |                                                                                    Sintaxis                                                                                    |                                                                                                                           Descripción                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                **.**                                |                  Selector de propiedad                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               Extrae una propiedad de una [tabla](../working-with-tables.md), control, [señal](signals.md) o enumeración.  Para lograr compatibilidad con versiones anteriores, también se puede usar **!** .                                                |
-| **,**<br>[[dependiente del idioma](../global-apps.md)]  |                  Separador decimal                  |                                                             **1.23**                                                           |                                                                              Separador entre las partes entera y fraccionaria de un número. El carácter depende del idioma.                                                                              |
-|                               **( )**                               |                     Paréntesis                     |                                                               **Filter(T; A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           Aplica el orden de prioridad y agrupa las subexpresiones en una expresión mayor                                                                                           |
+| **.**<br>[[dependiente del idioma](../global-apps.md)]  |                  Separador decimal                  |                                                             **1.23**                                                           |                                                                              Separador entre las partes entera y fraccionaria de un número. El carácter depende del idioma.                                                                              |
+|                               **( )**                               |                     Paréntesis                     |                                                               **Filter(T, A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           Aplica el orden de prioridad y agrupa las subexpresiones en una expresión mayor                                                                                           |
 |                                **+**                                |                Operadores aritméticos                 |                                                                                  **1 + 2**                                                                                   |                                                                                                                             Suma                                                                                                                             |
 |                                **-**                                |                       &nbsp;                        |                                                                                  **2 - 1**                                                                                   |                                                                                                                       Resta y signo                                                                                                                       |
 |                              *                               |                       &nbsp;                        |                                                                                  **2 \* 3**                                                                                  |                                                                                                                          Multiplicación                                                                                                                          |
@@ -53,8 +52,8 @@ Algunos de estos operadores dependen del idioma del autor.  Para más informaci�
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;El&quot; en &quot;El teclado y el monitor...&quot;**                                                      |                                                                                                                Prueba de subcadena (no distingue mayúsculas de minúsculas)                                                                                                                 |
 |                                **@**                                | [Operador de desambiguación](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       Desambiguación de campo                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      Desambiguación global                                                                                                                       |
-| **;**<br>[[dependiente del idioma](../global-apps.md)]  |                   Separador de lista                    | **If( X < 10; "Bajo"; "Bien" )**<br>**{ X: 12; Y: 32 }**<br>**[ 1; 2; 3 ]** | Separa: <ul><li>argumentos en llamadas a funciones</li><li>campos en un [registro](../working-with-tables.md#elements-of-a-table)</li><li>registros de una [tabla](../working-with-tables.md#inline-value-tables)</li></ul> Este carácter depende del idioma. |
-| **;;**<br>[[dependiente del idioma](../global-apps.md)] |                  Encadenamiento de fórmulas                   |                                     **Collect(T; A);; Navigate(S1; &quot;&quot;)**                                     |                                                                          Separar invocaciones de funciones en las propiedades del comportamiento. El operador de encadenamiento depende del lenguaje.                                                                          |
+| **,**<br>[[dependiente del idioma](../global-apps.md)]  |                   Separador de lista                    | **If( X < 10, "Bajo", "Bien" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Separa: <ul><li>argumentos en llamadas a funciones</li><li>campos en un [registro](../working-with-tables.md#elements-of-a-table)</li><li>registros de una [tabla](../working-with-tables.md#inline-value-tables)</li></ul> Este carácter depende del idioma. |
+| **;**<br>[[dependiente del idioma](../global-apps.md)] |                  Encadenamiento de fórmulas                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          Separar invocaciones de funciones en las propiedades del comportamiento. El operador de encadenamiento depende del lenguaje.                                                                          |
 |                             **Parent**                              |         [Operador Parent](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           Acceso a las propiedades de un contenedor de control                                                                                                            |
 |                            **ThisItem**                             |       [Operador ThisItem](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          Acceder a los campos de una galería o un control de formulario                                                                                                           |
 
@@ -63,11 +62,11 @@ Los operadores **[in](operators.md#in-and-exactin-operators)** y **[exactin](ope
 
 1. Cree o importe una colección denominada **Inventario** y muéstrela en una galería, como describe el primer procedimiento de [Show images and text in a gallery, including gallery selection, sort, and filter](../show-images-text-gallery-sort-filter.md) (Mostrar texto e imágenes de una galería, incluidos la selección, ordenación y filtro de la galería).
 2. Establezca la propiedad **[Elementos](../controls/properties-core.md)** de la galería en esta fórmula:
-   <br>**Filter(Inventory; "E" in ProductName)**
+   <br>**Filter(Inventory, "E" in ProductName)**
 
     La galería muestra todos los productos, excepto Callisto, porque el nombre de ese producto es el único que no contiene la letra que ha especificado.
 3. Cambie la propiedad **[Elementos](../controls/properties-core.md)** de la galería a esta fórmula:
-   <br>**Filter(Inventory; "E" exactin ProductName)**
+   <br>**Filter(Inventory, "E" exactin ProductName)**
 
     La galería muestra solo Europa, porque es la única palabra que contiene la letra que ha especificado con el uso de mayúsculas y minúsculas que ha especificado.
 

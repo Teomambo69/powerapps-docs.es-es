@@ -13,21 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 09b8f728d175edb598ee832be11cf3329d166ae7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679256"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724774"
 ---
-# <a name="show-a-list-of-items-in-powerapps"></a>Mostrar una lista de elementos en PowerApps
+# <a name="show-a-list-of-items-in-power-apps"></a>Mostrar una lista de elementos en Power apps
 
 Muestre una lista de elementos de cualquier origen de datos agregando un control **[Galería](controls/control-gallery.md)** a la aplicación de lienzo. En este tema se utiliza Excel como origen de datos. Filtre la lista mediante la configuración del control **Galería** para mostrar únicamente aquellos elementos que coinciden con el criterio de filtro en un control **[Entrada de texto](controls/control-text-input.md)** .
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Aprenda a [agregar y configurar un control](add-configure-controls.md) en PowerApps.
+- Obtenga información sobre cómo [Agregar y configurar un control](add-configure-controls.md) en Power apps.
 
 - Configure los datos de ejemplo:
     1. Descargue [este archivo de Excel](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx), que contiene datos de ejemplo para este tutorial.
@@ -35,7 +34,7 @@ Muestre una lista de elementos de cualquier origen de datos agregando un control
     2. Cargue el archivo de Excel en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive para la Empresa.
 
 - Abra una aplicación en blanco:
-    1. [Inicie sesión en PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    1. [Inicie sesión en Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
 
@@ -99,20 +98,20 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 
 1. Establezca la propiedad **[Elementos](controls/properties-core.md)** del control **Galería** en esta fórmula:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ La propiedad **[Elementos](controls/properties-core.md)** de una control **Galer
 ## <a name="highlight-the-selected-item"></a>Resalte del elemento seleccionado
 Establezca la propiedad **rellenodeplantilla** del control de **Galería** en una fórmula similar a la de este ejemplo, pero puede especificar distintos colores si lo desea:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Cambio de la elección predeterminada
 En la propiedad **Default** del control **Galería**, especifique el registro que desea que se seleccione de manera predeterminada. Por ejemplo, puede especificar el quinto elemento en el origen de datos **FlooringEstimates** :
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 En este ejemplo, especifique el primer elemento de la categoría **Hardwood** del origen de datos **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Aprenda a trabajar con [formularios](working-with-forms.md) y [fórmulas](working-with-formulas.md).

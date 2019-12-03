@@ -1,6 +1,6 @@
 ---
 title: Función SetFocus | Microsoft Docs
-description: Información de referencia de la función SetFocus en PowerApps, incluida la sintaxis
+description: Información de referencia de la función SetFocus en Power Apps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 6347a76765fef433880754038d4e098fcb0fd6ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038151"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730226"
 ---
-# <a name="setfocus-function-in-powerapps"></a>Función SetFocus en PowerApps
+# <a name="setfocus-function-in-power-apps"></a>Función SetFocus en Power apps
 Mueve el foco de entrada a un control concreto. 
 
-## <a name="description"></a>DESCRIPCIÓN
+## <a name="description"></a>Descripción
 La función **SetFocus** proporciona a un control el foco de entrada.  El control recibe las pulsaciones de teclas del usuario, lo que les permite escribir en un control entrada de texto o usar la tecla *entrar* para seleccionar un botón.  El usuario también puede usar la tecla *Tab* , tocar, Mouse u otro gesto para desplazar el foco de entrada. El comportamiento de la tecla *Tab* se rige por la [propiedad **TabIndex** ](../controls/properties-accessibility.md).
 
 Utilice la función **SetFocus** para establecer el foco cuando (cada uno de ellos tiene un ejemplo a continuación):
@@ -34,7 +33,7 @@ Utilice la función **SetFocus** para establecer el foco cuando (cada uno de ell
 
 El control con el foco puede ser visualmente diferente en función de las propiedades [**FocusedBorderColor**](../controls/properties-color-border.md) y [**FocusedBorderThickness**](../controls/properties-color-border.md) .
 
-## <a name="limitations"></a>Limitaciones
+## <a name="limitations"></a>Límite
 
 **SetFocus** solo se puede usar con:
 - [**Button**](../controls/control-button.md) (control)
@@ -54,7 +53,7 @@ En Apple iOS, el teclado en pantalla solo se mostrará automáticamente si se in
 Solo puede usar **SetFocus** en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**SetFocus** ( *Control* )
+**SetFocus**( *control* )
 
 * *Control* (se requiere).  Control que se va a asignar al foco de entrada.
 
@@ -80,16 +79,16 @@ Para crear este ejemplo:
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **ShippingName**.
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **ShippingAddress**.
 1. Agregue un [control **casilla** ](../controls/control-check-box.md) y cambie su nombre a **SyncAddresses**.
-1. Establezca la propiedad **texto** de este control en la fórmula `"Use Shipping address as Billing address"`.
+1. Establezca la propiedad **texto** de este control en el `"Use Shipping address as Billing address"`de fórmula.
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **BillingName**.
-1. Establezca la propiedad **predeterminada** de este control en la fórmula `ShippingName`.
-1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
+1. Establezca la propiedad **predeterminada** de este control en el `ShippingName`de fórmula.
+1. Establezca la propiedad **DisplayMode** de este control en el `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`de fórmula.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
 1. Agregue un [control **entrada de texto** ](../controls/control-text-input.md) y cambie su nombre por **BillingAddress**.
-1. Establezca la propiedad **predeterminada** de este control en la fórmula `ShippingAddress`.
-1. Establezca la propiedad **DisplayMode** de este control en la fórmula `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
-1. Establezca la propiedad **default** de la casilla de verificación en la `true`fórmula.  De forma predeterminada, la dirección de facturación usará el mismo valor que la dirección de envío.
-1. Establezca la propiedad **alcomprobar** de la casilla en la fórmula `Reset( BillingName );; Reset( BillingAddress )`.  Si el usuario decide sincronizar las direcciones de envío y facturación, se borrará cualquier entrada del usuario en los campos de dirección de facturación, lo que permitirá que las propiedades **predeterminadas** de cada una de ellas extraigan los valores de los campos de dirección de envío correspondientes.
-1. Establezca la propiedad **AlDesactivar** de la casilla de verificación en la `SetFocus( BillingName )`fórmula.  Si el usuario elige tener una dirección de facturación diferente, se moverá el foco al primer control en la dirección de facturación.  Los controles ya se habrán habilitado debido a sus propiedades **DisplayMode** .
+1. Establezca la propiedad **predeterminada** de este control en el `ShippingAddress`de fórmula.
+1. Establezca la propiedad **DisplayMode** de este control en el `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`de fórmula.  Esto habilitará o deshabilitará automáticamente este control según el estado del control de casilla.
+1. Establezca la propiedad **default** de la casilla de verificación en la fórmula `true`.  De forma predeterminada, la dirección de facturación usará el mismo valor que la dirección de envío.
+1. Establezca la propiedad **alcomprobar** de la casilla en el `Reset( BillingName ); Reset( BillingAddress )`de fórmula.  Si el usuario decide sincronizar las direcciones de envío y facturación, se borrará cualquier entrada del usuario en los campos de dirección de facturación, lo que permitirá que las propiedades **predeterminadas** de cada una de ellas extraigan los valores de los campos de dirección de envío correspondientes.
+1. Establezca la propiedad **AlDesactivar** de la casilla de verificación en la fórmula `SetFocus( BillingName )`.  Si el usuario elige tener una dirección de facturación diferente, se moverá el foco al primer control en la dirección de facturación.  Los controles ya se habrán habilitado debido a sus propiedades **DisplayMode** .
 
 ### <a name="focus-on-validation-issues"></a>Céntrese en los problemas de validación
 
@@ -102,24 +101,24 @@ Al validar un formulario, puede resultar útil no solo mostrar un mensaje si hay
 
 En esta animación, el botón de validación se presiona repetidamente hasta que todos los campos se han rellenado correctamente.  Tenga en cuenta que el puntero del mouse no se desplaza hacia abajo desde la parte superior de la pantalla.   En su lugar, la función **SetFocus** ha desplazado el foco de entrada al control que requiere atención con esta fórmula:
 
-```powerapps-comma
-If( IsBlank( Name ); 
-        Notify( "Name requires a value"; Error );; SetFocus( Name );
-    IsBlank( Street1 ); 
-        Notify( "Street Address 1 requires a value"; Error );; SetFocus( Street1 );
-    IsBlank( Street2 ); 
-        Notify( "Street Address 2 requires a value"; Error );; SetFocus( Street2 );
-    IsBlank( City ); 
-        Notify( "City requires a value"; Error );; SetFocus( City );
-    IsBlank( County ); 
-        Notify( "County requires a value"; Error );; SetFocus( County );
-    IsBlank( StateProvince ); 
-        Notify( "State or Province requires a value"; Error );; SetFocus( StateProvince );
-    IsBlank( PostalCode ); 
-        Notify( "Postal Code requires a value"; Error );; SetFocus( PostalCode );
-    IsBlank( Phone ); 
-        Notify( "Contact Phone requires a value"; Error );; SetFocus( Phone );
-    Notify( "Form is Complete"; Success )
+```powerapps-dot
+If( IsBlank( Name ), 
+        Notify( "Name requires a value", Error ); SetFocus( Name ),
+    IsBlank( Street1 ), 
+        Notify( "Street Address 1 requires a value", Error ); SetFocus( Street1 ),
+    IsBlank( Street2 ), 
+        Notify( "Street Address 2 requires a value", Error ); SetFocus( Street2 ),
+    IsBlank( City ), 
+        Notify( "City requires a value", Error ); SetFocus( City ),
+    IsBlank( County ), 
+        Notify( "County requires a value", Error ); SetFocus( County ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
+    IsBlank( Phone ), 
+        Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
+    Notify( "Form is Complete", Success )
 )
 ```
 
@@ -143,7 +142,7 @@ En esta animación, la pantalla de entrada de datos de la izquierda no usa **Set
 
 A la derecha, tenemos exactamente la misma aplicación con la propiedad **visible** de la pantalla de entrada de datos establecida en esta fórmula:
 
-```powerapps-comma
+```powerapps-dot
 SetFocus( Name )
 ```
 
@@ -154,5 +153,5 @@ Para crear este ejemplo:
 1. En esta pantalla, establezca la propiedad **divisible** en la fórmula `SetFocus( Name )`.
 1. Agregue una segunda pantalla.
 1. Agregue un [control de **botón** ](../controls/control-button.md).
-1. Establezca la propiedad **alseleccionar** de este control en la fórmula `Navigate( Screen1 )`.
+1. Establezca la propiedad **alseleccionar** de este control en el `Navigate( Screen1 )`de fórmula.
 1. Obtenga una vista previa de la aplicación en esta pantalla.  Presione el botón.  Se evaluará la fórmula **divisible** y el campo **nombre** estará automáticamente en el foco.

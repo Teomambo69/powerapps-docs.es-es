@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b2c12805fc3ea8c9c7f8cee7432ac58c1183a18
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 135b85dc60f88c1cf87255f65be765afd80cc2f3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679371"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731744"
 ---
-# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en PowerApps
+# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-power-apps"></a>Enumeración de color y las funciones ColorFade, ColorValue y RGBA en Power apps
 
 Usar valores de color integrados, definir colores personalizados y usar el canal alfa.
 
@@ -63,12 +62,12 @@ Si especifica un valor de enumeración de **color** o crea una fórmula de **Col
 
 - *CSSColor*: requerido.  La definición de un color de hoja de estilo CSS. Puede especificar un nombre, como **OliveDrab**, o un valor hexadecimal, como **#6b8e23** o **#7fffd420**. Los valores hexadecimales pueden adoptar la forma de #*RRGGBB* o #*RRGGBBAA*.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue*: requerido.  Valores de componente de color, que van desde 0 (sin saturación) hasta 255 (saturación completa).
 - *Alpha*: requerido.  Componente alfa, que va de 0 (totalmente transparente) a 1 (totalmente opaco). También puede usar un porcentaje, de 0 % a 100 %.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color*: requerido.  Un valor de color como **Color.Red** o el resultado de **ColorValue** o **RGBA**.
 - *FadeAmount*: requerido.  Número entre -1 y 1. -1 oscurece completamente un color a negro, 0 no afecta al color y 1 ilumina completamente un color a blanco. También puede usar un porcentaje entre-100% y 100%.

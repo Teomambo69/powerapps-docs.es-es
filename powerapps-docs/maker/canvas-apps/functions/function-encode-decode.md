@@ -1,6 +1,6 @@
 ---
 title: Funciones EncodeUrl y PlainText | Microsoft Docs
-description: Información de referencia sobre las funciones EncodeUrl y PlainText de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para las funciones EncodeUrl y PlainText en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985011"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731030"
 ---
-# <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Funciones EncodeUrl y PlainText en PowerApps
+# <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Funciones EncodeUrl y PlainText en Power apps
 Codifica y descodifica las cadenas.
 
 ## <a name="description"></a>Descripción

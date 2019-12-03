@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2200dece82eea17557de28a64e2bc4d228f4394
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673209"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732891"
 ---
-# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Introducción a las fórmulas de aplicación de lienzo en PowerApps
+# <a name="get-started-with-canvas-app-formulas-in-power-apps"></a>Introducción a las fórmulas de canvas-app en Power apps
 
 Configure la aplicación de lienzo con fórmulas no solo para calcular valores y realizar otras tareas (como en Excel), sino también para responder a la entrada del usuario (como una aplicación requiere).
 
@@ -37,7 +36,7 @@ En este tema se proporciona únicamente información general sobre cómo trabaja
 ## <a name="prerequisites"></a>Requisitos previos
 
 * [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
-* Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
+* Aprenda a [configurar un control](add-configure-controls.md) en Power apps.
 
 ## <a name="show-a-simple-value"></a>Mostrar un valor simple
 
@@ -71,11 +70,11 @@ En Excel, puede indicar un dato específico, como el número **42** o la frase *
 
     La etiqueta refleja este nuevo valor a medida que lo escribe.  Es posible que aparezcan en pantalla iconos de signos de exclamación amarillos mientras escriba. Estos iconos indican errores, pero desaparecerán cuando termine de escribir un valor válido. Por ejemplo, una cadena no encerrada entre comillas dobles no es válida.
 
-    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30;12)** . En Power Apps, puede lograr el mismo efecto si establece la propiedad **texto** de un control, como una etiqueta, en **42** o **SUM (30, 12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
+    En Excel, puede mostrar un número, como **42**, escribiéndolo en una celda o escribiendo una fórmula que se resuelve en ese número, como **=SUMA(30,12)** . En Power Apps, puede lograr el mismo efecto si establece la propiedad **texto** de un control, como una etiqueta, en **42** o **SUM (30, 12)** . La celda y la etiqueta mostrarán siempre dicho número, independientemente de los cambios que se produzcan en la hoja de cálculo o en la aplicación.
 
     > [!NOTE]
    > En Power Apps, no precede una fórmula con un signo igual o un signo más como se hace en Excel. La barra de fórmulas trata todo lo que escribe en ella como fórmula de forma predeterminada. Tampoco debe encerrar una fórmula entre comillas dobles ("), como hizo antes para especificar una cadena de texto.
-5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1;2;3)** .
+5. En la propiedad **[Texto](controls/properties-core.md)** de la etiqueta, reemplace **"Hola mundo"** por **Sum(1,2,3)** .
 
     ![Si escribe la función parcial Sum(1,2,3 sin paréntesis de cierre, aparecen errores](./media/working-with-formulas/label-sum-partial.png)
 
@@ -101,7 +100,7 @@ Con independencia de los números que escriba en los controles de entrada de tex
 
 En Excel, puede usar fórmulas de formato condicional para mostrar, por ejemplo, valores negativos en rojo. En Power Apps, puede usar fórmulas para determinar no solo el valor principal de un control, sino también propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[color](controls/properties-color-border.md)** de la etiqueta muestra automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Puede configurar la aplicación con fórmulas para que los usuarios puedan cambi
     Puede especificar la propiedad **Max** si la selecciona en la pestaña **Contenido** o en la lista de propiedades:
 
     ![Cambiar el valor máximo de cada control deslizante](./media/working-with-formulas/three-sliders-max.png)
-4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Haga clic fuera de cualquier control para seleccionar la pantalla y establezca la propiedad **[Fill](controls/properties-color-border.md)** de esta en esta fórmula:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Como ya se ha descrito, para acceder a las propiedades de un control, use el operador " **.** " .  **Slider1.Value** se refiere a la propiedad **[Value](controls/properties-core.md)** del control deslizante, que refleja el lugar donde el usuario ha colocado el control deslizante entre los valores **Min** y **Max**. A medida que escribe esta fórmula, cada control que la contenga se marca con un color entre la pantalla y la barra de fórmulas:
 
@@ -155,6 +154,6 @@ En un principio, esta vista muestra las propiedades más importantes.  Para most
 
 ## <a name="formula-syntax"></a>Sintaxis de las fórmulas
 
-A medida que escribe una fórmula en la barra de fórmulas, los elementos de sintaxis diferente aparecerán en distintos colores para mejorar la legibilidad y ayudarle a comprender las fórmulas largas. Esta es la lista de códigos de color de PowerApps.
+A medida que escribe una fórmula en la barra de fórmulas, los elementos de sintaxis diferente aparecerán en distintos colores para mejorar la legibilidad y ayudarle a comprender las fórmulas largas. Esta es la lista de códigos de color en Power apps.
 
 ![sintaxis resaltada](./media/working-with-formulas/syntax-highlighting.png)

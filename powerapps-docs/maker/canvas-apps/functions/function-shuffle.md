@@ -1,6 +1,6 @@
 ---
 title: Función Shuffle | Microsoft Docs
-description: Información de referencia de la función Shuffle de PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y un ejemplo, para la función de orden aleatorio en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 181ef038a90c9bfc7e3fe72af9514a34afce9776
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c67e8095a7c0ed3246bce0401bbe787becd7cea0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983947"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730154"
 ---
-# <a name="shuffle-function-in-powerapps"></a>Función Shuffle en PowerApps
+# <a name="shuffle-function-in-power-apps"></a>Función de orden aleatorio en Power apps
 Reordena aleatoriamente los [registros](../working-with-tables.md#records) de una [tabla](../working-with-tables.md).
 
 ## <a name="description"></a>Descripción

@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650428"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729090"
 ---
-# <a name="microphone-control-in-powerapps"></a>Control Micrófono en PowerApps
+# <a name="microphone-control-in-power-apps"></a>Control de micrófono en Power apps
 Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.
 
 ## <a name="description"></a>Descripción
@@ -96,12 +95,12 @@ El audio se almacena en formato 3gp en Android, en formato AAC en iOS y en forma
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Agregue sonidos a un control Galería personalizada
 1. Agregue un **Micrófono**, asígnele el nombre **MyMic**y establezca su propiedad **AlDetener** en esta fórmula:<br>
-   **Collect(MySounds; MyMic.Audio)**
+   **Collect(MySounds, MyMic.Audio)**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 

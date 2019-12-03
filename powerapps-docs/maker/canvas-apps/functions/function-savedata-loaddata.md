@@ -1,6 +1,6 @@
 ---
 title: Funciones SaveData y LoadData | Microsoft Docs
-description: Información de referencia para las funciones SaveData y LoadData en PowerApps, incluida la sintaxis
+description: Información de referencia, incluida la sintaxis, para las funciones SaveData y LoadData en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be652ef905d73baeeafd9ddf06f74584851b457
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ad9eee5230d46e67f3a0c5370fd0960e0c6787b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678313"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730265"
 ---
-# <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funciones SaveData y LoadData en PowerApps
+# <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funciones SaveData y LoadData en Power apps
 Guarda y vuelve a cargar una [colección](../working-with-data-sources.md#collections).
 
 ## <a name="description"></a>Descripción
@@ -40,7 +39,7 @@ Estas funciones están limitadas por la cantidad de memoria de la aplicación di
 El almacenamiento está cifrado y se encuentra en una ubicación privada en el dispositivo local, aislado de otros usuarios y otras aplicaciones.
 
 ## <a name="syntax"></a>Sintaxis
-**SaveData**( *Colección*; *Nombre* )<br>**LoadData**( *Collection*; *Name* [; *IgnoreNonexistentFile* ])
+**SaveData**( *Colección*, *Nombre* )<br>**LoadData**( *Collection*, *Name* [, *IgnoreNonexistentFile* ])
 
 * *Colección*: requerido.  Colección para almacenar o cargar.
 * *Nombre*: requerido.  Nombre del almacenamiento. Tiene que usar el mismo nombre para guardar y cargar el mismo conjunto de datos. El espacio de nombres no se comparte con otros usuarios o aplicaciones.
@@ -50,6 +49,6 @@ El almacenamiento está cifrado y se encuentra en una ubicación privada en el d
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **If(Connection.Connected; ClearCollect(LocalTweets; Twitter.SearchTweet("PowerApps"; {maxResults: 100}));LoadData(LocalTweets; "Tweets"; true))** |Si el dispositivo está conectado, cargue la colección LocalTweets del servicio Twitter; si no lo está, cargue la colección de la caché de archivos local. |El contenido se presenta tanto si el dispositivo está conectado como desconectado. |
-| **SaveData(LocalTweets; "Tweets")** |Guarde la colección LocalTweets como una caché de archivos local en el dispositivo. |Los datos se guardan localmente para que **LoadData** puede cargarlos en una colección. |
+| **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100})),LoadData(LocalTweets, "Tweets", true))** |Si el dispositivo está conectado, cargue la colección LocalTweets del servicio Twitter; si no lo está, cargue la colección de la caché de archivos local. |El contenido se presenta tanto si el dispositivo está conectado como desconectado. |
+| **SaveData(LocalTweets, "Tweets")** |Guarde la colección LocalTweets como una caché de archivos local en el dispositivo. |Los datos se guardan localmente para que **LoadData** puede cargarlos en una colección. |
 

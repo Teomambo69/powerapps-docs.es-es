@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9befcf4cb0e7267820c62ab78a14ee28ba985490
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674852"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732396"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Comprensión de la integración de formularios de SharePoint
 Ahora puede personalizar fácilmente [cualquier formulario de lista de SharePoint](customize-list-form.md) en Power apps. En este artículo, le guiaremos por los detalles de cómo funcionan estos formularios y cómo puede personalizarlos aún más.
@@ -38,13 +37,13 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 
     * **Elemento**: el elemento seleccionado de la lista. Esto se establece en el primer elemento () de la lista para mayor comodidad al trabajar en Power apps Studio.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*YourListName*');SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
     * **OnSuccess**: una vez que el elemento se crea o se guarda correctamente, el formulario se restablece y SharePoint oculta el formulario.
 
-        **ResetForm(SharePointForm1);; RequestHide()**
+        **ResetForm(SharePointForm1); RequestHide()**
 
-* **SharePointIntegration**: el control responsable de la comunicación de las acciones de los usuarios entre SharePoint y PowerApps.
+* **SharePointIntegration** : el control responsable de la comunicación de las acciones del usuario entre SharePoint y Power apps.
 
     * **Origen de datos**: la lista para la que se ha personalizado el formulario.
 
@@ -73,7 +72,7 @@ El formulario generado predeterminado consta de los siguientes controles y sus v
 Estos valores predeterminados garantizan que el formulario funciona cuando se ejecuta en SharePoint; cambian el modo de formulario de Power apps a medida que el usuario interactúa con él en SharePoint, y garantizan que los cambios se envían a SharePoint.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Descripción del control SharePointIntegration
-El control **SharePointIntegration** comunica las acciones de los usuarios entre SharePoint y PowerApps.
+El control **SharePointIntegration** comunica las acciones del usuario entre SharePoint y Power apps.
 
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 

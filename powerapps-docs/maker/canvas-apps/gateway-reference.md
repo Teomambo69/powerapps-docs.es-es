@@ -1,6 +1,6 @@
 ---
 title: Puerta de enlace de datos local | Microsoft Docs
-description: Este artículo es una introducción a la puerta de enlace de datos local para PowerApps.
+description: Este artículo es una introducción a la puerta de enlace de datos local para Power apps.
 author: arthiriyer
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 879fc0df86f05191941c6ff6b3b6403fe34fecea
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4dc5afc49ba1ee38889d0eb6d86bf1cde6687135
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676551"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732205"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>¿Qué es una puerta de enlace de datos local?
 

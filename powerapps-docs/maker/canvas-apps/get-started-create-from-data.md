@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676305"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729737"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generar una aplicación desde Excel en PowerApps
+# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Generación de una aplicación de lienzo desde Excel en Power apps
 
 En este tema, generará automáticamente la primera aplicación de lienzo en Power apps con datos de una tabla de Excel. Podrá seleccionar un archivo de Excel, generar una aplicación y, después, ejecutar la aplicación que genere. En todas las aplicaciones generadas se incluyen pantallas para examinar los registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
 
@@ -37,7 +37,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
 ## <a name="generate-the-app"></a>Generar la aplicación
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 

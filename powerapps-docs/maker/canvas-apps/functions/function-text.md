@@ -1,6 +1,6 @@
 ---
 title: Función Text | Microsoft Docs
-description: Información de referencia para la función Text en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función Text en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 98836d9dad8d46e88c9587c139ec58fed91fa323
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9ebc28c72d1d25c4a6e85e25a14c8addaf457318
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678152"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729969"
 ---
-# <a name="text-function-in-powerapps"></a>Función Text en PowerApps
+# <a name="text-function-in-power-apps"></a>Función de texto en Power apps
 Convierte cualquier valor y da formato a un número o un valor de fecha y hora en una cadena de texto.
 
 ## <a name="description"></a>Descripción
@@ -137,13 +136,13 @@ El resultado de **texto** incluye cadenas traducidas para meses, días de la sem
 De manera predeterminada, la función **Text** usa el idioma del usuario que ejecuta la aplicación. La función **Language** muestra la etiqueta de idioma correspondiente al usuario actual. Puede invalidar este valor predeterminado si proporciona una etiqueta de idioma para el tercer argumento a **texto**.
 
 ## <a name="syntax"></a>Sintaxis
-**Text**( *NumberOrDateTime*; *DateTimeFormatEnum* [; *ResultLanguageTag* ])
+**Text**( *NumberOrDateTime*, *DateTimeFormatEnum* [, *ResultLanguageTag* ])
 
 * *NumberOrDateTime* : requerido. El número o el valor de fecha y hora al que se dará formato.
 * *DateTimeFormat*: requerido.  Miembro de la enumeración **DateTimeFormat**.
 * *ResultLanguageTag*: opcional. La etiqueta de idioma que se usará para el texto de resultado. De manera predeterminada, se usa el idioma del usuario actual.
 
-**Text**( *NumberOrDateTime*; *CustomFormat* [; *ResultLanguageTag* ])
+**Text**( *NumberOrDateTime*, *CustomFormat* [, *ResultLanguageTag* ])
 
 * *Number*: requerido. El número o el valor de fecha y hora al que se dará formato.
 * *CustomFormat*: requerido. Uno o más marcadores de posición entre comillas dobles.
@@ -160,11 +159,11 @@ A menos que se especifique lo contrario, el usuario que ejecuta estas fórmulas 
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Text(&nbsp;1234,59;&nbsp;"####.#"&nbsp;)** |Da formato al número con un decimal. |"1234.6" |
-| **Text(&nbsp;8,9;&nbsp;"#.000"&nbsp;)** |Rellena la parte decimal del número con ceros finales, si es necesario. |"8.900" |
-| **Text(&nbsp;0,631;&nbsp;"0.#"&nbsp;)** |Rellena la parte entera del número con ceros iniciales, si es necesario. |"0.6" |
-| **Text(&nbsp;12;&nbsp;"#.0#"&nbsp;)**<br>**Text(&nbsp;1234,568;&nbsp;"#.0#"&nbsp;)** |Rellena la parte decimal del número con ceros para una cifra decimal e incluye una segunda cifra decimal, si se suministra. |"12.0"<br>"1234.57" |
-| **Text(&nbsp;12000;&nbsp;"$ #,###"&nbsp;)**<br>**Text(&nbsp;1200000;&nbsp;"$&nbsp;#,###"&nbsp;)** |Coloca un separador de miles cada tres dígitos e incluye un símbolo de moneda. |"$&nbsp;12,000"<br>"$&nbsp;1,200,000" |
+| **Text(&nbsp;1234.59,&nbsp;"####.#"&nbsp;)** |Da formato al número con un decimal. |"1234.6" |
+| **Text(&nbsp;8.9,&nbsp;"#.000"&nbsp;)** |Rellena la parte decimal del número con ceros finales, si es necesario. |"8.900" |
+| **Text(&nbsp;0.631,&nbsp;"0.#"&nbsp;)** |Rellena la parte entera del número con ceros iniciales, si es necesario. |"0.6" |
+| **Text(&nbsp;12,&nbsp;"#.0#"&nbsp;)**<br>**Text(&nbsp;1234.568,&nbsp;"#.0#"&nbsp;)** |Rellena la parte decimal del número con ceros para una cifra decimal e incluye una segunda cifra decimal, si se suministra. |"12.0"<br>"1234.57" |
+| **Text(&nbsp;12000,&nbsp;"$ #,###"&nbsp;)**<br>**Text(&nbsp;1200000,&nbsp;"$&nbsp;#,###"&nbsp;)** |Coloca un separador de miles cada tres dígitos e incluye un símbolo de moneda. |"$&nbsp;12,000"<br>"$&nbsp;1,200,000" |
 
 ### <a name="datetime"></a>Fecha y hora
 * A las **2:37:47 PM** del **Monday, November 23, 2015**
@@ -172,21 +171,21 @@ A menos que se especifique lo contrario, el usuario que ejecuta estas fórmulas 
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Text( Now(); DateTimeFormat.LongDate )** |Da formato como una cadena de fecha larga, en el idioma y la configuración local del usuario actual. |"Monday, November 23, 2015" |
-| **Text( Now(); DateTimeFormat.LongDateTime )** |Da formato como una cadena de fecha y hora larga, en el idioma y la configuración local del usuario actual, con un reloj de 12 horas. |"Monday, November 23, 2015 2:37:47 PM" |
-| **Text( Now(); DateTimeFormat.LongTime24 )** |Da formato como una cadena de hora larga, con un reloj de 24 horas. |"14:37:47" |
-| **Text( Now(); DateTimeFormat.ShortDate )** |Da formato como una cadena de fecha corta, en el idioma y la configuración local del usuario actual. |"11/23/2015" |
-| **Text( Now(); "d-mmm-yy" )** |Da formato con caracteres de marcador de posición: <ul><li>**d** para un día del mes de solo un dígito o de dos dígitos<li>**-** como carácter literal copiado en el resultado<li>**mmm** para una abreviatura de tres letras del mes<li>**-** como otro carácter literal copiado en el resultado<li>**yy** para una abreviatura de dos dígitos del año</ul> |"23-Nov-15" |
+| **Text( Now(), DateTimeFormat.LongDate )** |Da formato como una cadena de fecha larga, en el idioma y la configuración local del usuario actual. |"Monday, November 23, 2015" |
+| **Text( Now(), DateTimeFormat.LongDateTime )** |Da formato como una cadena de fecha y hora larga, en el idioma y la configuración local del usuario actual, con un reloj de 12 horas. |"Monday, November 23, 2015 2:37:47 PM" |
+| **Text( Now(), DateTimeFormat.LongTime24 )** |Da formato como una cadena de hora larga, con un reloj de 24 horas. |"14:37:47" |
+| **Text( Now(), DateTimeFormat.ShortDate )** |Da formato como una cadena de fecha corta, en el idioma y la configuración local del usuario actual. |"11/23/2015" |
+| **Text( Now(), "d-mmm-yy" )** |Da formato con caracteres de marcador de posición: <ul><li>**d** para un día del mes de solo un dígito o de dos dígitos<li>**-** como carácter literal copiado en el resultado<li>**mmm** para una abreviatura de tres letras del mes<li>**-** como otro carácter literal copiado en el resultado<li>**yy** para una abreviatura de dos dígitos del año</ul> |"23-Nov-15" |
 | **Texto (1448318857 * 1000, "MMM. DD, AAAA (HH: mm: SS AM/PM) ")** | Muestra un valor de fecha y hora de UNIX en formato legible si multiplica el valor de origen por 1.000. | "Nov 23, 2015 (02:47:37 PM)" |
 
 ### <a name="global-apps"></a>Aplicaciones globales
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Text (1234567,89; "[$-fr-FR] # # # #, # # &euro;"; "fr-FR")** | Muestra un espacio como separador de agrupación, la coma como separador decimal y **&euro;** como símbolo de divisa. |"1&nbsp;234&nbsp;567, 89 &euro;" |
-| **Texto (1234567; 89;; "[$-fr-FR] # # # #, # # &euro;")** | Si los datos de origen siguen el francés personalizado de usar una coma como separador decimal, debe cambiar la configuración regional a francés y separar los argumentos con un punto y coma en lugar de una coma para obtener el mismo resultado que el anterior. |"1&nbsp;234&nbsp;567, 89 &euro;" |
-| **Text( Date(2016;1;31); "dddd mmmm d" )** |Muestra el día de la semana, el mes y el día del mes en el idioma del usuario actual. Como ninguno de los marcadores de posición depende del idioma, no es necesario tener una etiqueta de idioma de texto de formato. |"Sábado&nbsp;enero&nbsp;31" |
-| **Text( Date(2016;1;31); "dddd mmmm d"; "es-ES" )** |Muestra el día de la semana, el mes y el día del mes en el idioma "es-ES". |"Domingo&nbsp;enero&nbsp;31" |
+| **Text (1234567.89, "[$-fr-FR] # # # #, # # &euro;", "fr-FR")** | Muestra un espacio como separador de agrupación, la coma como separador decimal y **&euro;** como símbolo de divisa. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Texto (1234567, 89; "[$-fr-FR] # # # #, # # &euro;")** | Si los datos de origen siguen el francés personalizado de usar una coma como separador decimal, debe cambiar la configuración regional a francés y separar los argumentos con un punto y coma en lugar de una coma para obtener el mismo resultado que el anterior. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Text( Date(2016,1,31), "dddd mmmm d" )** |Muestra el día de la semana, el mes y el día del mes en el idioma del usuario actual. Como ninguno de los marcadores de posición depende del idioma, no es necesario tener una etiqueta de idioma de texto de formato. |"Sábado&nbsp;enero&nbsp;31" |
+| **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Muestra el día de la semana, el mes y el día del mes en el idioma "es-ES". |"Domingo&nbsp;enero&nbsp;31" |
 
 ### <a name="converting-values-to-text"></a>Convertir valores en texto
 

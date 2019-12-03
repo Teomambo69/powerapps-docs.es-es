@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e80f34917bba942f85e141c382cf3b1caa5e6d44
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a116d812f8be7d8c1fb15ba2b05805536240084c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650750"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727485"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Código de barras Web: control de escáner (experimental) en PowerApps
+# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Código de barras Web: control de escáner (experimental) en Power apps
 
 El control de exploración de código de barras heredado, que está obsoleto, pero podría ser útil para examinar códigos en un explorador Web.
 
@@ -67,7 +66,7 @@ El control muestra la fuente de la cámara en la aplicación para que los usuari
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Ejemplo
 

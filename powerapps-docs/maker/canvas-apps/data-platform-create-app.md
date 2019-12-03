@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678566"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731684"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generar una aplicación de lienzo desde Common Data Service en PowerApps
+# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Generar una aplicación de lienzo desde Common Data Service en Power apps
 
 En Power Apps, genere automáticamente una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
 
@@ -32,7 +32,7 @@ Para seguir esta guía de inicio rápido, debe tener asignado el rol de segurida
 
 ## <a name="generate-an-app"></a>Generar una aplicación
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, si es necesario, cambie los entornos como se especificó anteriormente en este mismo tema.
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, si es necesario, cambie los entornos como se especificó anteriormente en este tema.
 
 1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 

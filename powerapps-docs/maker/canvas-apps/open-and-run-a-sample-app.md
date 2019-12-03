@@ -1,6 +1,6 @@
 ---
 title: Uso de una aplicación de ejemplo | Microsoft Docs
-description: Instrucciones paso a paso para crear una aplicación de lienzo en función de un ejemplo en PowerApps
+description: Instrucciones paso a paso para crear una aplicación de lienzo basada en un ejemplo en Power apps
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675499"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732809"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Creación de una aplicación de lienzo a partir de un ejemplo en PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>Creación de una aplicación de lienzo a partir de un ejemplo en Power apps
 En este tutorial, creará una aplicación de lienzo a partir de un ejemplo para poder explorar las posibilidades de diseño y detectar los conceptos que se pueden aplicar a medida que desarrolla aplicaciones de lienzo propias.
 
 En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para almacenar estos datos, necesitará una cuenta de almacenamiento en la nube, como Dropbox, Google Drive o OneDrive.
@@ -28,7 +28,7 @@ En cada ejemplo se presenta un escenario real pero se usan datos ficticios. Para
 Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Abrir una aplicación de ejemplo
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En la lista de aplicaciones de ejemplo, mantenga el puntero sobre una aplicación de ejemplo (como **Programa de estimación de costos**) con el mouse.
 
@@ -52,7 +52,7 @@ Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](..
     - Capture detalles como la dirección y los metros cuadrados, y calcule el precio en función de los descuentos y los tipos impositivos.
     - Filtre una lista de citas para que se muestren solo aquellas para las que se han creado las estimaciones, o aquellas para las que no se han creado, o todas las citas.
     
-1. Cuando termine de explorar la aplicación, para cerrar el modo de vista previa, presione Esc (o pulse o haga clic en el icono Cerrar situado cerca de la esquina superior derecha, debajo de la barra de título de PowerApps).
+1. Cuando termine de explorar la aplicación, cierre el modo de vista previa presionando ESC (o haciendo clic o pulsando en el icono cerrar situado cerca de la esquina superior derecha, en la barra de título de Power apps).
 
 ## <a name="save-the-app"></a>Guardar la aplicación
 1. Cerca de la esquina superior izquierda, pulse o haga clic en la pestaña **Archivo**.

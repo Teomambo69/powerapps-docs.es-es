@@ -1,6 +1,6 @@
 ---
 title: Función Errors | Microsoft Docs
-description: Información de referencia para la función Errors en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia de la función Errors en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 245bdbfbcf8e95b5bca6ca736ff67d5623f772f5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680245"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731047"
 ---
-# <a name="errors-function-in-powerapps"></a>Función Errors en PowerApps
+# <a name="errors-function-in-power-apps"></a>Función de errores en Power apps
 Proporciona información de error para los cambios anteriores en un [origen de datos](../working-with-data-sources.md).
 
 ## <a name="overview"></a>Información general
@@ -62,7 +61,7 @@ La función **[Patch](function-patch.md)** u otras funciones de datos pueden dev
 Si no hay ningún error, la tabla que **Errors** devuelve estará [vacía](function-isblank-isempty.md) y se podrá probar con la función **[IsEmpty](function-isblank-isempty.md)** .
 
 ## <a name="syntax"></a>Sintaxis
-**Errors**( *DataSource* [; *Record* ] )
+**Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource*: requerido. Origen de datos para el que quiere devolver errores.
 * *Record*: opcional.  Registro específico para el que quiere devolver errores. Si no especifica este argumento, la función devuelve errores para todo el origen de datos.
@@ -75,17 +74,17 @@ En este ejemplo, vamos a trabajar con el origen de datos **IceCream**:
 
 A través de la aplicación, un usuario carga el registro Chocolate en un formulario de entrada de datos y cambia el valor de **Quantity** a 90.  El registro con el que se va a trabajar se coloca en la [variable de contexto](../working-with-variables.md#use-a-context-variable) **EditRecord**:
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream; Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 Para realizar este cambio en el origen de datos, se usa la función **[Patch](function-patch.md)** :
 
-* **Patch( IceCream; EditRecord; Gallery.Updates )**
+* **Patch( IceCream, EditRecord, Gallery.Updates )**
 
 donde **Gallery.Updates** se evalúa como **{ Quantity: 90 }** , ya que solo se ha modificado la propiedad **Quantity**.
 
 Por desgracia, justo antes de que se invoque la función **[Patch](function-patch.md)** , otra persona modifica la propiedad **Quantity** de Chocolate y la establece en 80.  Power apps lo detectará y no permitirá que se produzca el cambio conflictivo.  Puede comprobar esta situación mediante la fórmula:
 
-* **IsEmpty( Errors( IceCream; EditRecord ) )**
+* **IsEmpty( Errors( IceCream, EditRecord ) )**
 
 que devuelve **false**, ya que la función **Errors** ha devuelto la tabla siguiente:
 
@@ -96,12 +95,12 @@ que devuelve **false**, ya que la función **Errors** ha devuelto la tabla sigui
 Puede colocar una etiqueta en el formulario para mostrar este error al usuario.
 
 * Para mostrar el error, establezca la propiedad **[Text](../controls/properties-core.md)** de la etiqueta en esta fórmula:<br>
-  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 También puede agregar un botón **Recargar** en el formulario para que el usuario pueda resolver eficazmente el conflicto.
 
 * Para mostrar el botón solo cuando se haya producido un conflicto, establezca la propiedad **[Visible](../controls/properties-core.md)** del botón en esta fórmula:<br>
-    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
+    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
 * Para revertir el cambio cuando el usuario selecciona el botón, establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>
-    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
+    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

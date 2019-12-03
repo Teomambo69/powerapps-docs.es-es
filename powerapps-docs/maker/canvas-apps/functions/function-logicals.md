@@ -1,6 +1,6 @@
 ---
 title: Funciones And, Or y Not | Microsoft Docs
-description: Información de referencia de las funciones And, Or y Not de PowerApps, con sintaxis y ejemplos
+description: Información de referencia de las funciones and, or y not en Power Apps, incluidos ejemplos y sintaxis.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2b04e6a752ade561ec1b95658bcacda759b1a1c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992566"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730618"
 ---
-# <a name="and-or-and-not-functions-in-powerapps"></a>Funciones And, Or y Not en PowerApps
+# <a name="and-or-and-not-functions-in-power-apps"></a>Funciones and, or y not en Power apps
 
 Funciones de lógica booleana usadas comúnmente para manipular los resultados de pruebas y comparaciones.
 
@@ -45,8 +44,8 @@ Estas funciones trabajan con valores lógicos. No se pueden pasar un número o u
 
 ## <a name="syntax"></a>Sintaxis
 
-**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : requerido.  Fórmulas lógicas para evaluar y con las que operar.
@@ -63,8 +62,8 @@ En los ejemplos de esta sección se usan estas variables globales:
 
 Para crear estas variables globales en una aplicación, inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula:
 
-```powerapps-comma
-Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
 Seleccione el botón (haciendo clic en él mientras mantiene presionada la tecla Alt) y, a continuación, establezca la propiedad **texto** de un control [**etiqueta**](../controls/control-text-box.md) en una fórmula de la primera columna de la tabla siguiente.

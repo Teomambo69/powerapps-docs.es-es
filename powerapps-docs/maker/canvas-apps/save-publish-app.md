@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8610f726c0bd65cec5681cd817d5c93ec3d3c1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675339"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732720"
 ---
-# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Almacenamiento y publicación de una aplicación de lienzo en PowerApps
+# <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Guardar y publicar una aplicación de lienzo en Power apps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
 
 Para información sobre cómo compartir una aplicación, consulte [Compartir una aplicación](share-app.md).

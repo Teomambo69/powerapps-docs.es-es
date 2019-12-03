@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 679dab28c49d71e8f28a9ace047b9481c4d53cc2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679348"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725090"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Crear una aplicación de lienzo desde una solución
 
@@ -65,7 +65,7 @@ Puede omitir este procedimiento si ya tiene una solución en la que desea crear 
 
 Puede crear una aplicación de lienzo en blanco en una solución. No se puede generar automáticamente una aplicación de tres pantallas ni personalizar una plantilla o aplicación de ejemplo desde una solución.
 
-1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps.
 
 1. Si es necesario, cambie al entorno que contiene la solución en la que desea crear una aplicación de lienzo.
 
@@ -96,7 +96,7 @@ Puede crear una aplicación de lienzo en blanco en una solución. No se puede ge
 
 Si desea vincular una aplicación a una solución, ambos deben estar en el mismo entorno y la aplicación debe haberse creado desde una solución.
 
-1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+1. [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps.
 
 1. Si es necesario, cambie al entorno que contiene la solución a la que desea vincular una aplicación.
 
@@ -121,7 +121,7 @@ Si desea vincular una aplicación a una solución, ambos deben estar en el mismo
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-Para obtener información sobre las limitaciones conocidas, consulte [uso de soluciones en PowerApps](../common-data-service/use-solution-explorer.md#known-limitations). 
+Para obtener información sobre las limitaciones conocidas, consulte [uso de soluciones en Power apps](../common-data-service/use-solution-explorer.md#known-limitations). 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

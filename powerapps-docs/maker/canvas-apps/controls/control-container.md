@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678658"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727334"
 ---
 # <a name="container-control-in-power-apps-experimental"></a>Control de contenedor en Power apps (experimental)
 Proporciona la capacidad de crear una jerarquía.
 
 > [!IMPORTANT]
 > Se trata de una característica experimental. Las características experimentales pueden cambiar radicalmente o desaparecer por completo en cualquier momento.
-> Para obtener más información, lea [Descripción de las características experimentales y de vista previa en PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
+> Para obtener más información, lea [Descripción de las características experimentales y de vista previa en Power apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
 
 ## <a name="description"></a>Descripción
  El contenedor puede contener un conjunto de controles y tiene sus propias propiedades. 

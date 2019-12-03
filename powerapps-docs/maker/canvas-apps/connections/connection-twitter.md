@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 50b783bce993d40ae88c438c115b2b859a08b7f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679854"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723269"
 ---
-# <a name="connect-to-twitter-from-powerapps"></a>Conectar al Twitter desde PowerApps
+# <a name="connect-to-twitter-from-power-apps"></a>Conexión a Twitter desde Power apps
 ![Twitter](./media/connection-twitter/twittericon.png)
 
 Twitter le permite enviar tweets y obtener tweets, cronologías, amigos y seguidores desde su cuenta de Twitter.
@@ -66,7 +65,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        El control de galería muestra automáticamente los tweets del identificador de Twitter que ha escrito.
 
@@ -95,7 +94,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        El control de galería muestra automáticamente quién está siguiendo el identificador de Twitter que ha escrito.
 
@@ -124,7 +123,7 @@ La conexión de Twitter se ha creado y se ha agregado a la aplicación. Ahora, e
 
        En el control de galería, establezca la propiedad Elementos en la fórmula siguiente:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        El control de galería muestra automáticamente los otros identificadores que está siguiendo.
 
@@ -161,8 +160,8 @@ O bien, puede utilizar un control de texto de entrada para escribir un identific
     > [!TIP]
    > Muestre los cinco primeros resultados mediante maxResults:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})`.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Establezca la propiedad **Elementos** de la galería en `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
 
     Con la galería seleccionada, el panel derecho muestra opciones para esa galería.
 3. Seleccione **TweetText** en la primera lista, **TweetedBy** en la segunda lista y **CreatedAt** en la tercera lista.

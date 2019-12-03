@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678865"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724036"
 ---
-# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Introducción a los conectores para aplicaciones de lienzo de PowerApps
-Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, vea [Adición de una conexión de datos en PowerApps](add-data-connection.md).
+# <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Información general de los conectores de canvas-app para Power apps
+Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, consulte [Agregar una conexión de datos en Power apps](add-data-connection.md).
 
 Un conector puede proporcionar **tablas** de datos o **acciones**. Algunos conectores solo ofrecen tablas, algunos solo ofrecen acciones y otros ofrecen ambas. Además, el conector puede ser un conector estándar o personalizado.
 
@@ -37,13 +37,13 @@ Puede especificar los datos que recupera la aplicación personalizando la propie
 
 Para obtener más información sobre cómo personalizar la fórmula con tablas, vea estos temas:
 
-  [Información acerca de los orígenes de datos en PowerApps](working-with-data-sources.md)<br> 
+  [Descripción de los orígenes de datos en Power apps](working-with-data-sources.md)<br> 
   [Creación de una aplicación a partir de datos de Excel](get-started-create-from-data.md)<br> 
   [Crear una aplicación desde cero](get-started-create-from-blank.md)<br>
-  [Información sobre tablas y registros de PowerApps](working-with-tables.md)
+  [Descripción de las tablas y los registros de Power apps](working-with-tables.md)
 
   > [!NOTE]
-  > Para conectarse a datos en un libro de Excel, este ha de estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [Conexiones de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
+  > Para conectarse a datos en un libro de Excel, este ha de estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [conexión a almacenamiento en la nube desde Power apps](connections/cloud-storage-blob-connections.md).
 
 ## <a name="actions"></a>Operaciones
 

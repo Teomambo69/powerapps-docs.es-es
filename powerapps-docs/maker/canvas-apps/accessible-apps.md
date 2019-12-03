@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680038"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725292"
 ---
-# <a name="create-accessible-canvas-apps-in-powerapps"></a>Creación de aplicaciones de lienzo accesibles en PowerApps
+# <a name="create-accessible-canvas-apps-in-power-apps"></a>Creación de aplicaciones de lienzo accesibles en Power apps
 Una aplicación de lienzo accesible permitirá a los usuarios con discapacidades visuales, auditivas y de otra índole utilizar correctamente dicha aplicación.  Además de ser un requisito para muchos gobiernos y organizaciones, si sigue las pautas que se indican a continuación aumentará la facilidad de uso para todos los usuarios, independientemente de sus capacidades.
 
 Use el **[Comprobador de accesibilidad](accessibility-checker.md)** para ayudarle a revisar los posibles problemas de accesibilidad de la aplicación. 
@@ -70,4 +70,4 @@ Si tiene un campo de firma que utiliza el control PenInput, debe habilitar un m�
 Relacionado:
 - [Propiedades de accesibilidad](controls/properties-accessibility.md)
 - [Usar el Comprobador de accesibilidad](accessibility-checker.md)
-- [Colores accesibles en PowerApps](accessible-apps-color.md)
+- [Colores accesibles en Power apps](accessible-apps-color.md)

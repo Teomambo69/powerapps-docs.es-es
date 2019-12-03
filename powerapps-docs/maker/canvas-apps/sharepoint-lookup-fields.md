@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f1464c7ca75f4fa811a53d18866ce89037b5e47a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733034"
 ---
-# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Cómo vincular listas de SharePoint mediante campos de búsqueda en PowerApps
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-power-apps"></a>Cómo vincular listas de SharePoint mediante un campo de búsqueda en Power apps
 
 En este tutorial se muestra cómo se pueden conectar dos listas de SharePoint con un campo de búsqueda en una aplicación de lienzo.
 
