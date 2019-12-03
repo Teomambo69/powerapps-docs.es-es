@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724210"
 ---
 # <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Generar una aplicación de lienzo en Power apps desde una lista de SharePoint
 
@@ -40,9 +40,9 @@ Los principios para generar una aplicación no cambiarán aunque cree una lista 
 > [!IMPORTANT]
 > Power apps no admite todos los tipos de datos de SharePoint. Para más información, consulte [Problemas conocidos](connections/connection-sharepoint-online.md#known-issues).
 
-## <a name="generate-an-app-from-within-powerapps"></a>Generación de una aplicación en PowerApps
+## <a name="generate-an-app-from-within-power-apps"></a>Generar una aplicación desde Power apps
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y seleccione **Crear esta aplicación**.
 

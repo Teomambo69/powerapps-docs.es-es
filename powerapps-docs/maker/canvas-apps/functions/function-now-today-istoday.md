@@ -1,6 +1,6 @@
 ---
 title: Funciones Now, Today e IsToday | Microsoft Docs
-description: Información de referencia de las funciones Now, Today e IsToday de PowerApps, con sintaxis y ejemplos
+description: Información de referencia de las funciones Now, hoy y Eshoy en Power Apps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3f882a25c5a0588e2be1eac4668c53ebc91e64
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 43f6dfcff0c4174301eda5cb8dde2067081d91e2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992584"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730531"
 ---
-# <a name="now-today-and-istoday-functions-in-powerapps"></a>Funciones Now, Today e IsToday en PowerApps
+# <a name="now-today-and-istoday-functions-in-power-apps"></a>Funciones ahora, hoy y Eshoy en Power apps
 Devuelve la fecha y hora actuales y comprueba si un valor de fecha y hora es el día de hoy.
 
 ## <a name="description"></a>Descripción
@@ -42,7 +41,7 @@ Cuando se usa en una fórmula de flujo de datos, una función volátil solo devu
 
 Por ejemplo, un control de etiqueta con **Label1.Text = Now()** no cambiará mientras la aplicación esté activa.  Solo se generará un nuevo valor si se cierra y se vuelve a abrir la aplicación.
 
-Si la función forma parte de una fórmula en la que haya cambiado algún elemento más, se volverá a evaluar.  Por ejemplo, si modificamos el ejemplo para incluir un control deslizante con **Label1.Text = DateAdd( Now(); Slider1.Value; Minutes )** , se recuperará la hora actual cada vez que cambie el valor del control deslizante. Asimismo, se volverá a evaluar la propiedad de texto de la etiqueta.
+Si la función forma parte de una fórmula en la que haya cambiado algún elemento más, se volverá a evaluar.  Por ejemplo, si modificamos el ejemplo para incluir un control deslizante con **Label1.Text = DateAdd( Now(), Slider1.Value, Minutes )** , se recuperará la hora actual cada vez que cambie el valor del control deslizante. Asimismo, se volverá a evaluar la propiedad de texto de la etiqueta.
 
 Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-depth.md), las funciones volátiles se evalúan cada vez que se evalúa la fórmula de comportamiento.  Encontrará un ejemplo a continuación.
 
@@ -60,14 +59,14 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Text( Now(); "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha y hora actuales y las muestra como una cadena. |"02/12/2015 03:59:00" |
-| **Text( Today(); "mm/dd/yyyy hh:mm:ss" )** |Recupera solo la fecha actual, dejando la parte de hora como medianoche, y la muestra como una cadena. |"02/12/2015 00:00:00" |
+| **Text( Now(), "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha y hora actuales y las muestra como una cadena. |"02/12/2015 03:59:00" |
+| **Text( Today(), "mm/dd/yyyy hh:mm:ss" )** |Recupera solo la fecha actual, dejando la parte de hora como medianoche, y la muestra como una cadena. |"02/12/2015 00:00:00" |
 | **IsToday( Now() )** |Comprueba si la fecha y hora actuales se encuentran entre hoy a medianoche y mañana a medianoche. |**true** |
 | **IsToday( Today() )** |Comprueba si la fecha actual se encuentra entre hoy a medianoche y mañana a medianoche. |**true** |
-| **Text( DateAdd( Now(); 12 ); "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha y hora actuales, agrega 12 días al resultado y lo muestra como una cadena. |"02/24/2015 03:59:00" |
-| **Text( DateAdd( Today(); 12 ); "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha actual, agrega 12 días al resultado y lo muestra como una cadena. |"02/24/2015 00:00:00" |
-| **IsToday( DateAdd( Now(); 12 ) )** |Comprueba si la fecha y hora actuales, más 12 días, se encuentran entre hoy a medianoche y mañana a medianoche. |**false** |
-| **IsToday( DateAdd( Today(); 12 ) )** |Comprueba si la fecha actual, más 12 días, se encuentra entre hoy a medianoche y mañana a medianoche. |**false** |
+| **Text( DateAdd( Now(), 12 ), "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha y hora actuales, agrega 12 días al resultado y lo muestra como una cadena. |"02/24/2015 03:59:00" |
+| **Text( DateAdd( Today(), 12 ), "mm/dd/yyyy hh:mm:ss" )** |Recupera la fecha actual, agrega 12 días al resultado y lo muestra como una cadena. |"02/24/2015 00:00:00" |
+| **IsToday( DateAdd( Now(), 12 ) )** |Comprueba si la fecha y hora actuales, más 12 días, se encuentran entre hoy a medianoche y mañana a medianoche. |**false** |
+| **IsToday( DateAdd( Today(), 12 ) )** |Comprueba si la fecha actual, más 12 días, se encuentra entre hoy a medianoche y mañana a medianoche. |**false** |
 
 #### <a name="display-a-clock-that-updates-in-real-time"></a>Mostrar un reloj actualizado en tiempo real
 
@@ -77,7 +76,7 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
 1. Establezca la propiedad **OnTimerEnd** del control en esta fórmula:
 
-    **Set( CurrentTime; Now() )**
+    **Set( CurrentTime, Now() )**
 
     Cada vez que el temporizador vuelve a empezar, es decir, cada segundo, esta fórmula establece la variable global **CurrentTime** en el valor actual de la función **Now**.
 
@@ -85,7 +84,7 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
 1. Agregue un control **[Label](../controls/control-text-box.md)** y establezca su propiedad **Text** en esta fórmula:
 
-    **Text( CurrentTime; LongTime24 )**
+    **Text( CurrentTime, LongTime24 )**
 
     Use la función **[Text](function-text.md)** para aplicar el formato que quiera a la fecha y la hora o establezca esta propiedad en **CurrentTime** para que se muestren las horas y los minutos, sin los segundos.
 
@@ -103,6 +102,6 @@ En los ejemplos de esta sección, la hora actual es **3:59 AM** el **12 de febre
 
 1. Establezca la propiedad **[OnStart](../controls/control-screen.md)** de la pantalla de modo que la variable **CurrentTime** tenga un valor válido, como en este ejemplo:
 
-    **Set(CurrentTime; Now())**
+    **Set(CurrentTime, Now())**
 
     La etiqueta aparece en cuanto se inicia la aplicación, antes de que el temporizador se ejecute durante un segundo completo.

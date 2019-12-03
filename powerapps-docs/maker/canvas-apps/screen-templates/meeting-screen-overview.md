@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675041"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732521"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Información general de la plantilla de pantalla de reunión para las aplicaciones de Canvas
 
@@ -33,7 +32,7 @@ Para profundizar más en la funcionalidad predeterminada de esta pantalla, consu
 
 ## <a name="prerequisite"></a>Requisito previo
 
-Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en PowerApps](../data-platform-create-app-scratch.md).
+Está familiarizado con cómo agregar y configurar pantallas y otros controles a medida que [crea una aplicación en Power apps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Funcionalidad predeterminada
 
@@ -59,10 +58,10 @@ Algunas notas útiles:
 * Para crear una reunión, debe agregar al menos una persona como asistente, proporcionar un asunto y seleccionar una hora de reunión en la pestaña **programación** .
 * Después de enviar la solicitud de reunión, se borra toda la información de la reunión.
 * La instrucción **alseleccionar** del icono de envío (esquina superior derecha) contiene esta fórmula:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" es el nombre para mostrar predeterminado de la mayoría de los calendarios del usuario de Office, pero su organización puede ser diferente. Si es así, puede cambiar "Calendar" por el término adecuado para su organización.
 * Recibirá un error si intenta programar una reunión que se produzca en el pasado o agregar más de 20 personas a una reunión.

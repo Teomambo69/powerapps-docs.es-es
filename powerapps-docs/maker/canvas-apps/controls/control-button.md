@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d5f59f16b68ce7f140857591b86a5cd8e54cd5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679808"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722958"
 ---
-# <a name="button-control-in-powerapps"></a>Control Botón en PowerApps
+# <a name="button-control-in-power-apps"></a>Control de botón en Power apps
 Un control en el que el usuario puede hacer clic o pulsar para interactuar con la aplicación.
 
 ## <a name="description"></a>Descripción
@@ -118,7 +117,7 @@ Configure la propiedad **[AlSeleccionar](properties-core.md)**  de un control **
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-**[Navegar( *NombrePantalla*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navegar( *NombrePantalla*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-a-basic-formula-to-a-button"></a>Agregar una fórmula básica a un botón
@@ -145,7 +144,7 @@ Agregue una fórmula que borra el control **Entrada de texto** entre las entrada
 1. Establezca la propiedad **[TextoDeSugerencia](control-text-input.md)** de **Origen** en "Enter a number" (Escriba un número).
 2. Establezca la propiedad **[AlSeleccionar](properties-core.md)** de **Agregar** en esta fórmula:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Utilice el punto y coma " **;** " para separar varias fórmulas.

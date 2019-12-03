@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679762"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727172"
 ---
-# <a name="image-control-in-powerapps"></a>Control Imagen en PowerApps
+# <a name="image-control-in-power-apps"></a>Control de imagen en Power apps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
 
 ## <a name="description"></a>Descripción
@@ -112,7 +111,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Quitar**( *DataSource*; EsteElemento)](../functions/function-remove-removeif.md)
+[**Quitar**( *DataSource*, EsteElemento)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local

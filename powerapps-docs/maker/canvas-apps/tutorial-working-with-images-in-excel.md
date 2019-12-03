@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5ee1d56e6144f0c7f4e1b3ca440063f87b7bdc5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674621"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733088"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Cómo guardar imágenes en un archivo de Excel y luego agregar estas imágenes a la aplicación
 
@@ -59,7 +58,7 @@ En este tutorial se hará lo siguiente:
    
    ![Cambiar nombre](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Agregue un control **Botón** (menú **Insertar**) y establezca su propiedad **OnSelect** en la fórmula siguiente:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Agregue un control **Galería de imágenes** (menú **Insertar** > **Galería**) y establezca su propiedad **Items** en `Drawings`. La propiedad **Image** del control de galería se establece automáticamente en `ThisItem.Image`.
    
    La pantalla debe ser similar a la siguiente:  
@@ -101,5 +100,5 @@ En la tabla de Excel, la ruta de acceso de una imagen también puede ser una dir
 ## <a name="learn-more"></a>Más información
 [Incorporación de imagen, vídeo o sonido](add-images-pictures-audio-video.md)  
 [Visualización de datos en un gráfico de líneas, circular o de barras en la aplicación](use-line-pie-bar-chart.md)  
-[Información sobre tablas y registros de PowerApps](working-with-tables.md)
+[Descripción de las tablas y los registros de Power apps](working-with-tables.md)
 

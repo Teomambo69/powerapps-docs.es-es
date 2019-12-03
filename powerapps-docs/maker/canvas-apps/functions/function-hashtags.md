@@ -1,6 +1,6 @@
 ---
 title: Función HashTags | Microsoft Docs
-description: Información de referencia para la función HashTags en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función HashTags en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a88371e9c151ed097d2c86bcb64121c68a6d62d0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984892"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730791"
 ---
-# <a name="hashtags-function-in-powerapps"></a>Función HashTags en PowerApps
+# <a name="hashtags-function-in-power-apps"></a>Función HashTags en Power apps
 Extrae los hashtags (#cadenas) de una cadena de texto.
 
 ## <a name="description"></a>Descripción
@@ -43,7 +42,7 @@ La función **HashTags** analiza una cadena en busca de hashtags. Los hashtags c
 ### <a name="step-by-step"></a>Paso a paso
 1. Agregue un control **[Entrada de texto](../controls/control-text-input.md)** , asígnele el nombre **Tweet** y escriba esta frase:
    
-    **Esta #aplicación es #SORPRENDENTE y puede #contar123 # o #123abc; pero no #1-23 ni #$\*(#\@")**
+    **Esta #aplicación es #SORPRENDENTE y puede #contar123 # o #123abc, pero no #1-23 ni #$\*(#\@")**
 2. Agregue una galería vertical personalizada y establezca su propiedad **[Elementos](../controls/properties-core.md)** en esta función:
    
     **HashTags(Tweet.Text)**

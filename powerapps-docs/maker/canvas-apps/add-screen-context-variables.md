@@ -1,6 +1,6 @@
 ---
 title: Agregar una pantalla a una aplicación de lienzo y navegar por diferentes pantallas | Microsoft Docs
-description: Agregue una pantalla a una aplicación de lienzo y utilice las flechas Siguiente y Atrás para navegar por diferentes pantallas en PowerApps.
+description: Agregar una pantalla a una aplicación de lienzo y usar las flechas siguiente y atrás para ir entre pantallas en Power apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6f83d21b2964dac7c4925d45efdf11a3a1e6b02
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: cbe6173c94f001874b126a5b8ecb1bdf9ad21b70
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321378"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724448"
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Agregar una pantalla a una aplicación de lienzo y navegar por diferentes pantallas
 
@@ -27,11 +26,11 @@ Cree una aplicación con varias pantallas e incorpore mecanismos que permitan a 
 
 ## <a name="add-and-rename-a-screen"></a>Agregar una pantalla y cambiarle el nombre
 
-1. En el **inicio** ficha, seleccione **nueva pantalla**y, a continuación, seleccione el tipo de pantalla que desea agregar.
+1. En la pestaña **Inicio** , seleccione **nueva pantalla**y, a continuación, seleccione el tipo de pantalla que desea agregar.
 
     ![Opción Agregar pantalla de la pestaña Inicio](./media/add-screen-context-variables/add-screen.png)
 
-2. En el panel derecho, seleccione el nombre de la pantalla (justo encima el **propiedades** pestaña) y, a continuación, escriba **origen**.
+2. En el panel derecho, seleccione el nombre de la pantalla (justo encima de la pestaña **propiedades** ) y, a continuación, escriba **source**.
 
     ![Cambie el nombre de la pantalla predeterminada](./media/add-screen-context-variables/name-source-screen.png)
 
@@ -41,34 +40,34 @@ Cree una aplicación con varias pantallas e incorpore mecanismos que permitan a 
 
 ## <a name="reorder-screens"></a>Cambiar el orden de las pantallas
 
-En la barra de navegación izquierda, mantenga el mouse sobre una pantalla que desea mover hacia arriba o hacia abajo, seleccione el botón de puntos suspensivos que aparece y, a continuación, seleccione **Subir** o **Bajar**.
+En la barra de navegación izquierda, mantenga el mouse sobre una pantalla que desea mover hacia arriba o hacia abajo, seleccione el botón de puntos suspensivos que aparece y, a continuación, seleccione **subir** o **bajar**.
 
-![Cambiar el orden de pantalla](./media/add-screen-context-variables/reorder-screen.png)
+![Volver a ordenar pantalla](./media/add-screen-context-variables/reorder-screen.png)
 
 > [!NOTE]
-> Cuando se abre la aplicación, la pantalla en la parte superior de la lista jerárquica de los controles normalmente aparece en primer lugar. Pero puede especificar una pantalla diferente estableciendo el **[OnStart](controls/control-screen.md)** propiedad en una fórmula que incluya el **[Navigate](functions/function-navigate.md)** función.
+> Cuando se abre la aplicación, la pantalla situada en la parte superior de la lista jerárquica de controles suele aparecer en primer lugar. Pero puede especificar una pantalla diferente si establece la propiedad **[OnStart](controls/control-screen.md)** en una fórmula que incluya la función **[Navigate](functions/function-navigate.md)** .
 
 ## <a name="add-navigation"></a>Agregar la funcionalidad de navegación
 
-1. Con el **origen** pantalla seleccionado, abra el **insertar** ficha, seleccione **iconos**y, a continuación, seleccione **flecha siguiente**.  
+1. Con la pantalla **origen** seleccionada, abra la pestaña **Insertar** , seleccione **iconos**y, a continuación, seleccione **flecha siguiente**.  
 
     ![Opción Formas de la pestaña Insertar](./media/add-screen-context-variables/add-next-arrow.png)
 
 2. (Opcional) Mueva la flecha hasta que aparezca en la esquina inferior derecha de la pantalla.
 
-3. Con la flecha aún seleccionada, seleccione el **acción** pestaña y, a continuación, seleccione **Navigate**.
+3. Con la flecha aún seleccionada, seleccione la pestaña **acción** y, a continuación, seleccione **navegar**.
 
     La propiedad **[AlSeleccionar](controls/properties-core.md)** de la flecha se establece automáticamente en la función **Navegar**.
 
     ![Propiedad AlSeleccionar establecida en la función Navegar](./media/add-screen-context-variables/onselect-default.png)
 
-    Cuando un usuario selecciona la flecha, la **destino** pantalla desaparece.
+    Cuando un usuario selecciona la flecha, la pantalla de **destino** se atenúa.
 
 4. En la pantalla **Target**, agregue el icono **Flecha atrás** y establezca la propiedad **[AlSeleccionar](controls/properties-core.md)** en esta fórmula:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
-5. Mientras mantiene presionada la tecla Alt, alternar entre pantallas seleccionando la flecha en cada pantalla.
+5. Mientras mantiene presionada la tecla Alt, alterne entre las pantallas seleccionando la flecha en cada pantalla.
 
 ## <a name="more-information"></a>Más información
 

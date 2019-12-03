@@ -1,6 +1,6 @@
 ---
 title: Función UpdateContext | Microsoft Docs
-description: Información de referencia para la función UpdateContext de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función UpdateContext en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7112d48b447140533ca432ec6d5e78b9ed367203
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678175"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729911"
 ---
-# <a name="updatecontext-function-in-powerapps"></a>Función UpdateContext de PowerApps
+# <a name="updatecontext-function-in-power-apps"></a>Función UpdateContext en Power apps
 Crea o actualiza [variables de contexto](../working-with-variables.md#use-a-context-variable) de la pantalla actual.
 
 ## <a name="overview"></a>Información general
@@ -63,7 +62,7 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 
 * *UpdateRecord*: requerido. Registro que contiene el nombre de al menos una columna y un valor para esa columna. Se crea o se actualiza una variable de contexto para cada columna y valor que especifique.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [; *ContextVariable2*: *Value2* [; ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
 
 * *ContextVariable1*: requerido.  Nombre de la variable de contexto que se va a crear o actualizar.
 * *Value1*: requerido.  Valor que se asigna a la variable de contexto.
@@ -75,18 +74,18 @@ El ámbito de una variable de contexto se limita a una pantalla. Si desea defini
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |Crea o modifica la variable de contexto **Counter** y establece su valor en **1**. |**Counter** tiene el valor **1**. Puede hacer referencia a esa variable con el nombre **Counter** en una fórmula. |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Establece el valor de la variable de contexto **Counter** del ejemplo anterior en **2**. |**Counter** tiene el valor **2**. |
-| **UpdateContext( {&nbsp;Name:&nbsp;"Lily";&nbsp;Score:&nbsp;10&nbsp;} )** |Crea o modifica las variables de contexto **Name** y **Score**, y establece sus valores en **Lily** y **10**, respectivamente. |**Name** tiene el valor **Lily**, y **Score** tiene el valor **10**. |
-| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Crea o modifica la variable de contexto **Person** y establece su valor en un registro. El registro contiene dos columnas, llamadas **Name** y **Address**. El valor de la columna **Name** es **Milton**, y el valor de la columna **Address** es **1 Main St**. |**Person** tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Haga referencia a este registro como un todo con el nombre **Person**, o haga referencia a una columna individual de este registro con **Person.Name** o **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable de contexto **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
+| **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Crea o modifica las variables de contexto **Name** y **Score**, y establece sus valores en **Lily** y **10**, respectivamente. |**Name** tiene el valor **Lily**, y **Score** tiene el valor **10**. |
+| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Crea o modifica la variable de contexto **Person** y establece su valor en un registro. El registro contiene dos columnas, llamadas **Name** y **Address**. El valor de la columna **Name** es **Milton**, y el valor de la columna **Address** es **1 Main St**. |**Person** tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Haga referencia a este registro como un todo con el nombre **Person**, o haga referencia a una columna individual de este registro con **Person.Name** o **Person.Address**. |
+| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable de contexto **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
 
 ### <a name="step-by-step-example"></a>Ejemplo paso a paso
 1. Asigne un nombre a la pantalla predeterminada **Origen**, agregue otra pantalla y asígnele el nombre **Destino**.
 2. En la pantalla **Origen**, agregue dos botones y establezca sus propiedades **[Text](../controls/properties-core.md)** de forma que una sea **Inglés** y la otra **Español**.
-3. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Inglés** en esta expresión:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"English"})**
-4. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Español** en esta expresión:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"Spanish"})**
-5. En la pantalla **Destino**, agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta expresión:<br>**If(Language="Inglés"; "Hello!"; "¡Hola!")**
+3. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Inglés** en esta expresión:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** del botón **Español** en esta expresión:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+5. En la pantalla **Destino**, agregue una etiqueta y establezca su propiedad **[Text](../controls/properties-core.md)** en esta expresión:<br>**If(Language="Inglés", "Hello!", "¡Hola!")**
 6. En la pantalla **Destino**, seleccione **Formas** en la pestaña **Insertar** y seleccione la flecha Anterior.
-7. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** de la flecha Anterior en esta fórmula:<br>**Navigate(Source; ScreenTransition.Fade)**
+7. Establezca la propiedad **[OnSelect](../controls/properties-core.md)** de la flecha Anterior en esta fórmula:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. En la pantalla **Origen**, presione F5 y seleccione el botón de cualquiera de estos idiomas.
 
     En la pantalla **Destino**, la etiqueta aparece en el idioma correspondiente a botón que ha seleccionado.

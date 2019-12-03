@@ -1,6 +1,6 @@
 ---
 title: Función Refresh | Microsoft Docs
-description: Información de referencia de la función Refresh de PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y un ejemplo, para la función Refresh en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72fafd2b55237dc4804c50c26530fddb763d9623
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8376d21117c286a540ca8b873c7e91b07d53d607
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984279"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730375"
 ---
-# <a name="refresh-function-in-powerapps"></a>Función Refresh en PowerApps
+# <a name="refresh-function-in-power-apps"></a>Actualización de la función en Power apps
 Actualiza los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
 
 ## <a name="description"></a>Descripción

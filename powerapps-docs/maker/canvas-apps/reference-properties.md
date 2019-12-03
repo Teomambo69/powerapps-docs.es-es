@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598472"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732774"
 ---
-# <a name="controls-and-properties-in-powerapps"></a>Controles y propiedades en PowerApps
+# <a name="controls-and-properties-in-power-apps"></a>Controles y propiedades en Power apps
 
 Para configurar la apariencia y el comportamiento de un control es preciso establecer una de sus propiedades. Cada tipo de control tiene un conjunto de propiedades diferente. Algunas propiedades, como **Alto** y **Ancho**, son comunes a casi todos los tipos de controles, pero otras, como **TamañoDeCasilla**, son específicas de un tipo de control.
 
@@ -62,7 +62,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Formulario de entidad](entity-form-control.md)** (característica experimental): agregue formularios dinámicos en el que los usuarios puedan ver datos relacionales de Common Data Service, editarlos y navegar por ellos.
 
-**[Exportar](controls/control-export-import.md)** : exporte datos para usarlos en cualquier otro lugar de PowerApps.
+**[Exportar](controls/control-export-import.md)** : exporte los datos para usarlos en cualquier parte de Power apps.
 
 **[Galería](controls/control-gallery.md)** : muestre una lista de los registros que pueden contener varios tipos de datos.
 
@@ -72,7 +72,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Imagen](controls/control-image.md)** : muestre una imagen de, por ejemplo, un archivo local o un origen de datos.
 
-**[Importar](controls/control-export-import.md)** : importe datos de cualquier otro lugar de PowerApps.
+**[Importar](controls/control-export-import.md)** : importe datos desde cualquier lugar de Power apps.
 
 **[Gráfico de líneas](controls/control-column-line-chart.md)** : muestre los valores en forma de puntos de datos en relación a dos ejes.
 

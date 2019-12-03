@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5279f9368cdd832e84fba13faf8643cd7392d70b
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650803"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727640"
 ---
-# <a name="attachments-control-in-powerapps"></a>Control Datos adjuntos en PowerApps
+# <a name="attachments-control-in-power-apps"></a>Control de datos adjuntos en Power apps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad Common Data Service.
 
 ## <a name="limitations"></a>Límite

@@ -1,6 +1,6 @@
 ---
 title: Función Find | Microsoft Docs
-description: Información de referencia para la función Encontrar en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función Find en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbdd29ed1757301f076ab6bebea548fcd7a963cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 62254bf46836ffc8ed5fa5b7685561b611db49a7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984952"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730973"
 ---
-# <a name="find-function-in-powerapps"></a>Función Find en PowerApps
+# <a name="find-function-in-power-apps"></a>Función Buscar en Power apps
 Busca una cadena de texto, si existe, dentro de otra cadena.
 
 ## <a name="description"></a>Descripción
@@ -30,7 +29,7 @@ La función **Find** busca una cadena dentro de otra cadena y distingue mayúscu
 La función **Find** devuelve la posición inicial de la cadena que se ha encontrado.  El primer carácter de la cadena ocupa la posición 1. La función **Find** devuelve *blank* si la cadena en la que está buscando no contiene la cadena que está buscando.
 
 ## <a name="syntax"></a>Sintaxis
-**Find**( *FindString*; *WithinString* [; *StartingPosition* ] )
+**Find**( *FindString*, *WithinString* [, *StartingPosition* ] )
 
 * *FindString*: requerido.  La cadena que se va a buscar.
 * *WithinString*: requerido.  La cadena dentro de la que se va a buscar.

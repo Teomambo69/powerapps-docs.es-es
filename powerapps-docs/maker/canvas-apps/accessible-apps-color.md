@@ -1,6 +1,6 @@
 ---
 title: Colores accesibles en aplicaciones de lienzo | Microsoft Docs
-description: Directrices de contraste de colores para aplicaciones de lienzo en PowerApps
+description: Directrices de contraste de color para aplicaciones de lienzo en Power apps
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 26fd45efc56ad03bc37635c29ddc7a6dbbe71568
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679302"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725368"
 ---
-# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Colores accesibles en aplicaciones de lienzo de PowerApps
+# <a name="accessible-colors-for-canvas-apps-in-power-apps"></a>Colores accesibles para aplicaciones de lienzo en Power apps
 Los colores utilizados en una aplicación de lienzo deben ser accesibles para los usuarios daltónicos y con deficiencia visual. Todos los temas de Power apps son accesibles de forma predeterminada. Si desea modificar los colores utilizados en una aplicación, siga estas instrucciones para asegurarse de que sean accesibles. Hay varias herramientas disponibles en línea que pueden ayudarle a identificar problemas de contraste de color.
 
 ## <a name="minimum-contrast-for-text"></a>Contraste mínimo para el texto

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ae33122d140b6c13f744acb292362d8ec804233e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680061"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725220"
 ---
-# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Agregar y configurar un control de aplicación de lienzo en PowerApps
+# <a name="add-and-configure-a-canvas-app-control-in-power-apps"></a>Adición y configuración de un control Canvas-app en Power apps
 
 Agregue diversos elementos de interfaz de usuario a su aplicación de lienzo y configure aspectos de su apariencia y comportamiento directamente desde la barra de herramientas, en la pestaña **Propiedades**, o en la barra de fórmulas. Estos elementos de interfaz de usuario se denominan controles y los aspectos que configura se denominan propiedades.
 

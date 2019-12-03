@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac00411c48cc97cb54c30ccefc3d8a6e1af5e48
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673241"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733147"
 ---
-# <a name="understand-canvas-app-variables-in-powerapps"></a>Comprender las variables de aplicaciones de lienzo en PowerApps
+# <a name="understand-canvas-app-variables-in-power-apps"></a>Descripción de las variables de la aplicación Canvas en Power apps
 
 Si ha usado otra herramienta de programación como Visual Basic o JavaScript, probablemente se pregunte: **¿dónde están las variables?** Power apps es un poco diferente y requiere un enfoque diferente. En lugar de buscar una variable al compilar una aplicación de lienzo, pregúntese lo siguiente: **¿qué haría en Excel?**
 
@@ -31,7 +30,7 @@ En algunos casos, necesitará usar variables en Power Apps, que amplía el model
 
 En general debe evitar el uso de variables, pero a veces solo una variable puede habilitar la experiencia que busca. Las variables se crean y se escriben implícitamente cuando aparecen en funciones que establecen sus valores. 
 
-## <a name="translate-excel-into-powerapps"></a>Traducir Excel a PowerApps
+## <a name="translate-excel-into-power-apps"></a>Traducción de Excel en Power apps
 
 ### <a name="excel"></a>Excel
 
@@ -43,23 +42,23 @@ En el ejemplo siguiente, la celda **a3** se establece en la fórmula **a1 + a2**
 
 Excel no tiene variables. El valor de una celda que contiene una fórmula cambia en función de su entrada, pero no es posible recordar el resultado de una fórmula y almacenarlo en una celda o en otro lugar. Si cambia el valor de una celda, toda la hoja de cálculo podría cambiar y los valores calculados previamente se perderían. Un usuario de Excel puede copiar y pegar las celdas, pero esto depende del control manual del usuario y no es posible hacerlo con las fórmulas.
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
 Las aplicaciones que crea en Power apps se comportan de manera muy parecida a Excel. En lugar de actualizar las celdas, puede agregar controles donde quiera en una pantalla y asignarles un nombre para usarlos en fórmulas.
 
 Por ejemplo, puede replicar el comportamiento de Excel en una aplicación agregando un control de **[etiqueta](controls/control-text-box.md)** , denominado **Label1**, y dos controles de **[entrada de texto](controls/control-text-input.md)** , denominados **TextInput1** y **TextInput2**. Si después establece la propiedad **[Text](controls/properties-core.md)** de **Label1** en **TextInput1 + TextInput2**, siempre mostrará la suma de los números que se encuentren en **TextInput1** y **TextInput2** automáticamente.
 
-![Calcular la suma de dos números en PowerApps](media/working-with-variables/recalc1.png)
+![Calcular la suma de dos números en Power apps](media/working-with-variables/recalc1.png)
 
 Observe que el control **Label1** está seleccionado y muestra su fórmula de **[texto](controls/properties-core.md)** en la barra de fórmulas en la parte superior de la pantalla. Aquí se encuentra la fórmula **TextInput1 + TextInput2**. Esta fórmula crea una dependencia entre estos controles, del mismo modo que se crean las dependencias entre las celdas de un libro de Excel.  Vamos a cambiar el valor de **TextInput1**:
 
-![Animación del cálculo de la suma de dos números en PowerApps](media/working-with-variables/recalc2.gif)
+![Animación del cálculo de la suma de dos números en Power apps](media/working-with-variables/recalc2.gif)
 
 La fórmula de **Label1** se ha recalculado automáticamente y muestra el nuevo valor.
 
 En Power Apps, puede usar fórmulas para determinar no solo el valor principal de un control, sino también propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[Color](controls/properties-color-border.md)** de la etiqueta mostrará automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -105,7 +104,7 @@ Para crear la máquina de sumar, necesitamos una variable que contenga el total 
 
 Cómo funcionan las variables globales:
 
-* Establezca el valor de la variable global con la función **[Set](functions/function-set.md)** .  **Set( MyVar; 1 )** establece la variable global **MyVar** en un valor de **1**.
+* Establezca el valor de la variable global con la función **[Set](functions/function-set.md)** .  **Set( MyVar, 1 )** establece la variable global **MyVar** en un valor de **1**.
 * Use la variable global mediante la referencia al nombre usado con la función **Set**.  En este caso, **MyVar** devolverá **1**.
 * Las variables globales pueden contener cualquier valor, como cadenas, números, registros y [tablas](working-with-tables.md).
 
@@ -127,7 +126,7 @@ Vamos a recompilar la máquina de sumar mediante el uso de una variable de globa
 
 4. Para establecer el total acumulado en **0** cada vez que el usuario seleccione el botón **Borrar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
 
-    **Set( RunningTotal; 0 )**
+    **Set( RunningTotal, 0 )**
 
     ![La propiedad alseleccionar del botón Clear está establecida en Set function](media/working-with-variables/global-variable-2.png)
 
@@ -181,11 +180,11 @@ Cuando el usuario abre la aplicación, todas las variables tienen el valor inici
 
 Use el nombre de la variable para leer su valor. Por ejemplo, puede definir una variable con esta fórmula:
 
-`Set( Radius; 12 )`
+`Set( Radius, 12 )`
 
 A continuación, puede usar simplemente **RADIUS** en cualquier lugar en el que pueda usar un número y se reemplazará por **12**:
 
-`Pi() * Power( Radius; 2 )`
+`Pi() * Power( Radius, 2 )`
 
 Si asigna a una variable de contexto el mismo nombre que una variable global o una colección, la variable de contexto tiene prioridad. Sin embargo, todavía puede hacer referencia a la variable global o colección si utiliza el [operador de desambiguación](functions/operators.md#disambiguation-operator) **@ [RADIUS]** .
 
@@ -237,7 +236,7 @@ Vamos a volver a compilar la máquina de sumar mediante el uso de una variable d
 
 7. Puede establecer el valor de una variable de contexto mientras se desplaza a una pantalla. Esto resulta útil a la hora de pasar "contexto" o "parámetros" de una pantalla a otra. Para mostrar esta técnica, inserte una pantalla, inserte un botón y establezca su propiedad **alseleccionar** en esta fórmula:
 
-    **Navegar( Screen1; None; { RunningTotal: -1000 } )**
+    **Navegar( Screen1, None, { RunningTotal: -1000 } )**
 
     ![Propiedad alseleccionar de un botón](media/working-with-variables/context-variable-5.png)
 
@@ -271,7 +270,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 3. Para actualizar el total acumulado cada vez que un usuario seleccione el botón **Sumar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
 
-    **Collect( PaperTape; TextInput1.Text )**
+    **Collect( PaperTape, TextInput1.Text )**
 
     La mera existencia de esta fórmula establece **PaperTape** como una colección que contiene una tabla de cadenas de texto de una sola columna. Puede hacer referencia a **PaperTape** en cualquier parte de esta aplicación. Cada vez que un usuario abre esta aplicación, **PaperTape** es una tabla vacía.
 
@@ -287,7 +286,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 5. Para mostrar el total acumulado, agregue una etiqueta y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
 
-    **Sum( PaperTape; Value )**
+    **Sum( PaperTape, Value )**
 
     ![Propiedad texto de la etiqueta](media/working-with-variables/papertape-3.png)
 
@@ -311,7 +310,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 10. Para almacenar y recuperar la colección, agregue dos controles de botón adicionales y establezca sus propiedades de **texto** para **cargar** y **Guardar**. Establezca la propiedad **alseleccionar** del botón **cargar** en esta fórmula:
 
-     **Clear( PaperTape );; LoadData( PaperTape; "StoredPaperTape"; true )**
+     **Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )**
 
      Primero debe borrar la colección porque **LoadData** anexará los valores almacenados al final de la colección.
 
@@ -319,11 +318,11 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 11. Establezca la propiedad **alseleccionar** del botón **Guardar** en esta fórmula:
 
-     **SaveData( PaperTape; "StoredPaperTape" )**
+     **SaveData( PaperTape, "StoredPaperTape" )**
 
      ![Propiedad alseleccionar * del botón Guardar](media/working-with-variables/papertape-6.png)
 
 12. Vuelva a obtener la vista previa pulsando la tecla F5, escriba números en el control de entrada de texto y seleccione botones. Seleccione el botón **Guardar**. Cierre y vuelva a cargar la aplicación y seleccione el botón **cargar** para volver a cargar la colección.
 
 > [!NOTE]
-> La función **savedata** y **LoadData** de Power apps Mobile, pero no Power apps Studio o el reproductor Web de PowerApps.
+> La función **savedata** y **LoadData** de Power apps Mobile, pero no Power apps Studio o el reproductor web para Power apps.

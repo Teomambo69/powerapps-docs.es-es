@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af4412e2f098d6e7e5996b2de436b674cfa60a40
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679203"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724629"
 ---
-# <a name="add-images-to-excel-from-powerapps"></a>Agregar imágenes en Excel desde PowerApps
+# <a name="add-images-to-excel-from-power-apps"></a>Agregar imágenes a Excel desde Power apps
 Cree automáticamente una aplicación donde los usuarios puedan ver, agregar o eliminar imágenes de archivos o dibujos desde un control de **entrada manuscrita**. La aplicación necesita un archivo de Excel que debe crearse y cargarse en una cuenta de almacenamiento en la nube.
 
 ## <a name="prerequisites"></a>Requisitos previos

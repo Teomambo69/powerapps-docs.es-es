@@ -1,6 +1,6 @@
 ---
 title: Función IfError | Microsoft Docs
-description: Información de referencia de la función IfError de PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y ejemplos, para la función de un solo Inicio en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d9916c3fa62aab947315b7c31daa96f7e528acd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fc114688b3a12e842d3107220c0a8967593e18c0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680291"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730834"
 ---
-# <a name="iferror-function-in-powerapps"></a>Función IfError en PowerApps
+# <a name="iferror-function-in-power-apps"></a>Función si en Power apps
 
 Detecta errores y proporciona un valor alternativo o lleva a cabo una acción.
 
@@ -34,18 +33,18 @@ La **función** de error de prueba comprueba uno o más valores hasta que encuen
 
 Use si es un valor erróneo para reemplazar los **valores de error** por valores válidos. Por ejemplo, use esta función si los datos proporcionados por el usuario pueden dar lugar a una división por cero. Cree una fórmula para reemplazar el resultado por un valor 0 u otro que sea adecuado para la aplicación, de modo que los cálculos descendentes puedan continuar. La fórmula puede ser tan sencilla como en este ejemplo:
 
-```powerapps-comma
-IfError( 1/x; 0 )
+```powerapps-dot
+IfError( 1/x, 0 )
 ```
 
 Si el valor de **x** no es cero, la fórmula devuelve **1/x**. De lo contrario, **1/x** genera un error y la fórmula devuelve 0 en su lugar.
 
 Use un error en las [fórmulas de comportamiento](../working-with-formulas-in-depth.md) para realizar una acción y comprobar si hay un error **antes de realizar** acciones adicionales, como en este patrón:
 
-```powerapps-comma
+```powerapps-dot
 IfError(
-    Patch( DS1; ... ); Notify( "problem in the first action" );
-    Patch( DS2; ... ); Notify( "problem in the second action" )
+    Patch( DS1, ... ), Notify( "problem in the first action" ),
+    Patch( DS2, ... ), Notify( "problem in the second action" )
 )
 ```
 
@@ -65,9 +64,9 @@ Si la fórmula no encuentra errores y ha especificado el argumento opcional *Def
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **IfError( 1; 2 )** |El primer argumento no es un error. La función no tiene ningún otro error para comprobar y ningún valor devuelto predeterminado. La función devuelve el último argumento de *valor* evaluado.   | 1 |
-| **IfError( 1/0; 2 )** | El primer argumento devuelve un valor de error (debido a la división por cero). La función evalúa el segundo argumento y lo devuelve como resultado. | 2 |
-| **IfError( 1/0; Notify( "Se produjo un problema interno"; NotificationType.Error ) )** | El primer argumento devuelve un valor de error (debido a la división por cero). La función evalúa el segundo argumento y muestra un mensaje al usuario. El valor devuelto de **IfError** es el valor devuelto de **Notify**, convertido al mismo tipo que el primer argumento de **IfError** (un número). | 1 |
+| **IfError( 1, 2 )** |El primer argumento no es un error. La función no tiene ningún otro error para comprobar y ningún valor devuelto predeterminado. La función devuelve el último argumento de *valor* evaluado.   | 1 |
+| **IfError( 1/0, 2 )** | El primer argumento devuelve un valor de error (debido a la división por cero). La función evalúa el segundo argumento y lo devuelve como resultado. | 2 |
+| **IfError( 1/0, Notify( "Se produjo un problema interno", NotificationType.Error ) )** | El primer argumento devuelve un valor de error (debido a la división por cero). La función evalúa el segundo argumento y muestra un mensaje al usuario. El valor devuelto de **IfError** es el valor devuelto de **Notify**, convertido al mismo tipo que el primer argumento de **IfError** (un número). | 1 |
 | **"No se pudo (1, 2, 3, 4, 5")** | El primer argumento no es un error, por lo que la función no evalúa la reserva correspondiente del argumento. El tercer argumento no es un error, por lo que la función no evalúa la reserva correspondiente del argumento. El quinto argumento no tiene ninguna reserva correspondiente y es el resultado predeterminado. La función devuelve el resultado porque la fórmula no contiene errores. | 5 |
 
 ### <a name="step-by-step"></a>Paso a paso
@@ -78,7 +77,7 @@ Si la fórmula no encuentra errores y ha especificado el argumento opcional *Def
 
 3. Establezca la fórmula para la propiedad **Text** de **Label1** en:
 
-    **IfError( Value( TextInput1.Text ); -1 )**
+    **IfError( Value( TextInput1.Text ), -1 )**
 
 4. En **TextInput1**, escriba **1234**.  
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da6c30cc824f5bb6cf1f661d332831223c37d5b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aacb19180fc41cc52a9d292fd9d3282f19cc649f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723766"
 ---
-# <a name="connect-to-office-365-users-connection-from-powerapps"></a>Conectarse a la conexión de los usuarios de Office 365 desde PowerApps
+# <a name="connect-to-office-365-users-connection-from-power-apps"></a>Conectarse a la conexión de usuarios de Office 365 desde Power apps
 ![Usuarios de Office 365](./media/connection-office365-users/office365icon.png)
 
 Usuarios de Office 365 le permite acceder a los perfiles de usuario de su organización mediante su cuenta de Office 365. Puede realizar diversas acciones, como obtener su perfil, el perfil de un usuario o el administrador y los subordinados directos de un usuario.
@@ -164,7 +164,7 @@ Esta conexión incluye las siguientes funciones:
 | [UserProfile](connection-office365-users.md#userprofile) |Recupera un perfil de usuario específico. |
 
 ### <a name="myprofile"></a>MyProfile
-Obtener mi perfil: Recupera el perfil del usuario actual.
+Obtener mi perfil: recupera el perfil del usuario actual.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 Ninguna
@@ -173,7 +173,7 @@ Ninguna
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Ciudad | string |Ciudad del usuario. |
+| ciudad | string |Ciudad del usuario. |
 | Compañía | string |Empresa del usuario. |
 | Pais | string |País del usuario. |
 | Departamento |string |Departamento de usuarios. |
@@ -193,7 +193,7 @@ Ninguna
 | BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="userprofile"></a>UserProfile
-Obtener Perfil de usuario: Recupera un perfil de usuario específico.
+Obtener perfil de usuario: recupera un perfil de usuario específico.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -205,7 +205,7 @@ Obtener Perfil de usuario: Recupera un perfil de usuario específico.
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Ciudad | string |Ciudad del usuario. |
+| ciudad | string |Ciudad del usuario. |
 | Compañía | string |Empresa del usuario. |
 | Pais | string |País del usuario. |
 | Departamento |string |Departamento de usuarios. |
@@ -222,7 +222,7 @@ Obtener Perfil de usuario: Recupera un perfil de usuario específico.
 | BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="manager"></a>Manager
-Obtener administrador: Recupera el perfil de usuario para el administrador del usuario especificado.
+Obtener administrador: recupera el perfil de usuario para el administrador del usuario especificado.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -234,7 +234,7 @@ Obtener administrador: Recupera el perfil de usuario para el administrador del u
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Ciudad | string |Ciudad del usuario. |
+| ciudad | string |Ciudad del usuario. |
 | Compañía | string |Empresa del usuario. |
 | Pais | string |País del usuario. |
 | Departamento |string |Departamento de usuarios. |
@@ -254,7 +254,7 @@ Obtener administrador: Recupera el perfil de usuario para el administrador del u
 | BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="directreports"></a>DirectReports
-Obtener informes directos: Obtener informes directos.
+Obtener informes directos: obtener informes directos.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -266,7 +266,7 @@ Obtener informes directos: Obtener informes directos.
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Ciudad | string |Ciudad del usuario. |
+| ciudad | string |Ciudad del usuario. |
 | Compañía | string |Empresa del usuario. |
 | Pais | string |País del usuario. |
 | Departamento |string |Departamento de usuarios. |
@@ -286,7 +286,7 @@ Obtener informes directos: Obtener informes directos.
 | BusinessPhones | string |Números de teléfono de la empresa del usuario.|
 
 ### <a name="searchuser"></a>SearchUser
-Buscar usuarios: Recupera los resultados de búsqueda de los perfiles de usuario.
+Buscar usuarios: recupera los resultados de búsqueda de los perfiles de usuario.
 
 #### <a name="input-properties"></a>Propiedades de entrada
 
@@ -298,7 +298,7 @@ Buscar usuarios: Recupera los resultados de búsqueda de los perfiles de usuario
 
 | Nombre de la propiedad | Tipo | Descripción |
 | --- | --- | --- |
-| Ciudad | string |Ciudad del usuario. |
+| ciudad | string |Ciudad del usuario. |
 | Compañía | string |Empresa del usuario. |
 | Pais | string |País del usuario. |
 | Departamento |string |Departamento de usuarios. |

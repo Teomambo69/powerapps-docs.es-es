@@ -1,6 +1,6 @@
 ---
 title: Función DataSourceInfo | Microsoft Docs
-description: Información de referencia sobre la función DataSourceInfo de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función DataSourceInfo en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 559549a1221ed5e6d5c683a5a3cbaf0f2e9960ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985308"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731268"
 ---
-# <a name="datasourceinfo-function-in-powerapps"></a>Función DataSourceInfo en PowerApps
+# <a name="datasourceinfo-function-in-power-apps"></a>Función DataSourceInfo en Power apps
 Proporciona información sobre un [origen de datos](../working-with-data-sources.md).
 
 ## <a name="overview"></a>Información general
@@ -59,7 +58,7 @@ Puede usar **DataSourceInfo** para obtener información sobre un origen de datos
 | **DataSourceInfo.ReadPermission** |Booleano |¿Tiene permiso el usuario actual para leer registros en este origen de datos? Si no se establece mediante el origen de datos, devuelve **true**. |
 
 ## <a name="syntax"></a>Sintaxis
-**DataSourceInfo**( *DataSource*; *Information*; *ColumnName* )
+**DataSourceInfo**( *DataSource*, *Information*, *ColumnName* )
 
 * *DataSource*: requerido. El origen de datos que se va a usar.
 * *Information*: requerido. El tipo de información que desea recuperar.
@@ -84,14 +83,14 @@ El origen de datos también ha proporcionado esta información:
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DisplayName;&nbsp;"Quantity"&nbsp;)** |Devuelve el nombre para mostrar de la columna **Quantity** del origen de datos **IceCream**. |"Cantidad disponible" |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxLength;&nbsp;"Flavor"&nbsp;)** |Devuelve la longitud máxima de la cadena para la columna **Flavor** del origen de datos **IceCream**. |30 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Flavor"&nbsp;)** |¿Se requiere la columna **Flavor** del origen de datos **IceCream**? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Quantity"&nbsp;)** |¿Se requiere la columna **Quantity** del origen de datos **IceCream**? |**false** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxValue;&nbsp;"Quantity"&nbsp;)** |Devuelve el valor numérico máximo de la columna **Quantity** del origen de datos **IceCream**. |100 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MinValue;&nbsp;"Quantity"&nbsp;)** |Devuelve el valor numérico mínimo de la columna **Quantity** del origen de datos **IceCream**. |0 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.ReadPermission)** |¿Puede leer el usuario actual los registros del origen de datos **IceCream**? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.EditPermission)** |¿Puede editar el usuario actual los registros del origen de datos **IceCream**? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.CreatePermission)** |¿Puede crear el usuario actual los registros del origen de datos **IceCream**? |**false** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DeletePermission)** |¿Puede eliminar el usuario actual los registros del origen de datos **IceCream**? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** |Devuelve el nombre para mostrar de la columna **Quantity** del origen de datos **IceCream**. |"Cantidad disponible" |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)** |Devuelve la longitud máxima de la cadena para la columna **Flavor** del origen de datos **IceCream**. |30 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Flavor"&nbsp;)** |¿Se requiere la columna **Flavor** del origen de datos **IceCream**? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Quantity"&nbsp;)** |¿Se requiere la columna **Quantity** del origen de datos **IceCream**? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxValue,&nbsp;"Quantity"&nbsp;)** |Devuelve el valor numérico máximo de la columna **Quantity** del origen de datos **IceCream**. |100 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MinValue,&nbsp;"Quantity"&nbsp;)** |Devuelve el valor numérico mínimo de la columna **Quantity** del origen de datos **IceCream**. |0 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.ReadPermission)** |¿Puede leer el usuario actual los registros del origen de datos **IceCream**? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.EditPermission)** |¿Puede editar el usuario actual los registros del origen de datos **IceCream**? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.CreatePermission)** |¿Puede crear el usuario actual los registros del origen de datos **IceCream**? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DeletePermission)** |¿Puede eliminar el usuario actual los registros del origen de datos **IceCream**? |**false** |
 

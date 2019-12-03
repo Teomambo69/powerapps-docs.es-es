@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a49cfef13cb7c52c972ab67287cd4e886d981cb0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678612"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727235"
 ---
-# <a name="html-text-control-in-powerapps"></a>Control Texto HTML en PowerApps
+# <a name="html-text-control-in-power-apps"></a>Control de texto HTML en Power apps
 Un cuadro que muestra el texto y convierte las etiquetas HTML al formato.
 
 ## <a name="description"></a>Descripción
@@ -76,7 +75,7 @@ Un control **Texto HTML** no solo muestra texto sin formato y números, también
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Buscar**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Buscar**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Etiqueta](control-text-box.md)** , llámelo **Source** y establezca su propiedad **[Texto](properties-core.md)** en esta cadena:

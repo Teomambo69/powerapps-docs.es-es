@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3b8c5ea5ee2784bc1ab97d6943045cee8da6a52f
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c797f6e9da4a0149638606613280100dcc26ad8a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650780"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722907"
 ---
-# <a name="audio-and-video-controls-in-powerapps"></a>Controles Audio y Vídeo en PowerApps
+# <a name="audio-and-video-controls-in-power-apps"></a>Controles de audio y vídeo en Power apps
 Un control que reproduce un archivo de audio, un archivo de vídeo o un vídeo en YouTube.
 
 ## <a name="description"></a>Descripción

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678497"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731523"
 ---
 # <a name="embed-an-app-in-teams"></a>Insertar una aplicación en Teams
 
@@ -32,7 +32,7 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 ## <a name="prerequisites"></a>Requisitos previos
 
 - Necesita una licencia de [Power apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)válida.
-- Para insertar una aplicación en Teams, necesita una aplicación existente [creada con PowerApps](data-platform-create-app.md).
+- Para insertar una aplicación en Teams, necesita una aplicación existente [creada con Power apps](data-platform-create-app.md).
 
 ## <a name="download-the-app"></a>Descarga de la aplicación
 

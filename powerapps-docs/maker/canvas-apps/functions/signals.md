@@ -1,6 +1,6 @@
 ---
 title: Señales Acceleration, App, Compass, Connection y Location | Microsoft Docs
-description: Información de referencia, incluida la sintaxis y los ejemplos, para los sensores Acceleration, App, Compass, Connection y Location en PowerApps
+description: Información de referencia, con sintaxis y ejemplos, para los sensores de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a06217470482eccdf368279eaabcd297bbf73ce5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983366"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729577"
 ---
-# <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Señales Acceleration, App, Compass, Connection y Location en PowerApps
+# <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Señales de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 
 Devuelve información sobre el entorno de la aplicación, como dónde se encuentra el usuario en el mundo y la pantalla que se muestra.
 
@@ -51,7 +51,7 @@ Entre otras propiedades, el objeto de **aplicación** incluye una señal que ind
 | --- | --- |
 | **App.ActiveScreen** |Pantalla que se muestra. Devuelve un objeto de pantalla, que puede usar para hacer referencia a las propiedades de la pantalla o comparar con otra pantalla para determinar la pantalla que se muestra. Puede usar la función **[back](function-navigate.md)** o **[Navigate](function-navigate.md)** para cambiar la pantalla que se muestra. |
 
-Más información: Documentación del objeto de [ **aplicación** ](object-app.md) .
+Más información: documentación del objeto de [ **aplicación** ](object-app.md) .
 
 ### <a name="compass"></a>Compass
 La señal **Compass** devuelve el encabezado de brújula de la parte superior de la pantalla. El encabezado se basa en el norte magnético.
@@ -60,7 +60,7 @@ La señal **Compass** devuelve el encabezado de brújula de la parte superior de
 | --- | --- |
 | **Compass.Heading** |Encabezado en grados.  Devuelve que un número de 0 a 360, y 0 es el norte. |
 
-### <a name="connection"></a>Conexión
+### <a name="connection"></a>Connection
 La señal **Connection** devuelve información acerca de la conexión de red. Cuando está en una conexión medida, puede que desee limitar la cantidad de datos que envíe o reciba a través de la red.
 
 | Propiedad | Descripción |
@@ -93,7 +93,7 @@ En un campo de béisbol, un lanzador lanza un teléfono desde el montículo del 
 | **Acceleration.X** |Devuelve la aceleración del dispositivo de lado a lado. El lanzador está lanzando el teléfono en línea recta con respecto a la parte superior de la pantalla, por lo que el dispositivo no cuenta con una aceleración de lado a lado. |0 |
 | **Acceleration.Y** |Devuelve la aceleración del dispositivo de la parte delantera a la trasera. El lanzador inicialmente ofrece al dispositivo una gran aceleración al lanzar el dispositivo, que pasa de 0 a 144 km por hora (40 metros por segundo) en medio segundo. Después de que el dispositivo esté en el aire, sin tener en cuenta la fricción del aire, no se acelera más. El dispositivo deja de acelerarse cuando el receptor lo atrapa, hasta que para. |8,2, cuando el lanzador lanza el dispositivo.<br><br>0, cuando el dispositivo está en el aire.<br><br>-8,2, cuando el receptor atrapa el dispositivo. |
 | **Acceleration.Z** |Devuelve la aceleración del dispositivo de arriba a abajo. Mientras está en el aire, el dispositivo experimenta los efectos de la gravedad. |0, antes de que el lanzador lace el dispositivo.<br><br>1, cuando el dispositivo está en el aire.<br><br>0, cuando el receptor atrapa el dispositivo. |
-| **Acceleration** |Devuelve la aceleración como registro. |X1 0, Y: 264, Z: 0} cuando el lanzador lanza el dispositivo. |
+| **Acceleration** |Devuelve la aceleración como registro. |{ X: 0, Y: 264, Z: 0 } cuando el lanzador lanza el dispositivo. |
 | **Connection.Connected** |Devuelve un valor booleano que indica si el dispositivo está conectado a una red. |**true** |
 | **Connection.Metered** |Devuelve un valor booleano que indica si la se mide la conexión. |**true** |
 | **App.ActiveScreen = PlayBall** |Devuelve un valor booleano que indica si se muestra **PlayBall**. |**true** |

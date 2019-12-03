@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: dbc33f1a1e4ff0434ee69ad9f7c34ead441f6776
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674538"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733163"
 ---
-# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Comprender el diseño de formularios de datos para aplicaciones de lienzo en PowerApps
+# <a name="understand-data-form-layout-for-canvas-apps-in-power-apps"></a>Descripción del diseño de formularios de datos para aplicaciones de lienzo en Power apps
 
 Cree fácilmente un formulario atractivo y eficaz al compilar una aplicación de lienzo en Power apps. Por ejemplo, considere este formulario básico para grabar pedidos de ventas:
 

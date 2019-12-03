@@ -1,6 +1,6 @@
 ---
 title: Conectarse a Common Data Service | Microsoft Docs
-description: Obtenga información sobre cómo conectarse a Common Data Service y usarlo para compilar aplicaciones en PowerApps.
+description: Obtenga información sobre cómo conectarse a Common Data Service y usarlo para compilar aplicaciones en Power apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d9f6e973aa632fe0821db3bcc493174e250afa72
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2473f445839b774ecc28fe007912511095d9316d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679923"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723829"
 ---
 # <a name="connect-to-common-data-service"></a>Conectarse a Common Data Service
 

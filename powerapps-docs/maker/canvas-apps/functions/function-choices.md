@@ -1,6 +1,6 @@
 ---
 title: Función Choices | Microsoft Docs
-description: Información de referencia, incluida sintaxis, de la función Choices de PowerApps
+description: Información de referencia para la función Choices de Power Apps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679463"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731402"
 ---
-# <a name="choices-function-in-powerapps"></a>Función Choices de PowerApps
+# <a name="choices-function-in-power-apps"></a>Función Choices en Power apps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
 
 ## <a name="description"></a>Descripción

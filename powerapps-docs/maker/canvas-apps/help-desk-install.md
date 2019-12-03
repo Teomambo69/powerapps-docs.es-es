@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676145"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729645"
 ---
-# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Instalar y configurar el ejemplo de servicio de asistencia de PowerApps
+# <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Instalación y configuración del ejemplo de servicio de asistencia en Power apps
 
 Instrucciones paso a paso para, en Power Apps, instalar y configurar el ejemplo de servicio de asistencia para aplicaciones de canvas.
 
@@ -40,7 +40,7 @@ El Departamento de soporte técnico proporciona una experiencia fácil de utiliz
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en PowerApps.
+- [Regístrese](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) en Power apps.
 - Debe tener una licencia de SharePoint Online válida y permiso para crear listas.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Crear la lista de SharePoint de Help Desk

@@ -1,6 +1,6 @@
 ---
 title: Cambio del nombre y el icono de la aplicación para una aplicación de lienzo | Microsoft Docs
-description: Instrucciones paso a paso para cambiar configuraciones tales como el nombre y el icono de la aplicación de una aplicación de lienzo en PowerApps
+description: Instrucciones paso a paso para cambiar la configuración, como el nombre de la aplicación y el icono, de una aplicación de lienzo en Power apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e6b4495c6f3c69b5a0b21f1ad8a5fc26e032de
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b258e5fb9361746c30873c478d11c486b2e62727
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989091"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732491"
 ---
-# <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>Cambio del nombre y el icono de la aplicación de una aplicación de lienzo en PowerApps | Microsoft Docs
+# <a name="change-app-name-and-icon-for-a-canvas-app-in-power-apps"></a>Cambiar el nombre y el icono de una aplicación de lienzo en Power apps
 Personalice una aplicación de lienzo cambiándole el nombre y el icono.
 
 ## <a name="prerequisites"></a>Requisitos previos

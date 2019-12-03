@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5912723765f99539852884a3fe55738c171c64c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678589"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731694"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Personalizar un formulario de lista de SharePoint mediante PowerApps
+# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>Personalización de un formulario de lista de SharePoint mediante Power apps
 
 Puede personalizar fácilmente el formulario para una lista de SharePoint abriendo Power Apps en un explorador. No es necesario escribir código tradicional, como C#, ni descargar otra aplicación, como InfoPath. Al publicar los cambios, el formulario se inserta en la lista de SharePoint para su uso por parte de todos sus usuarios. En Power Apps, también puede revisar los informes de análisis, crear fácilmente formato condicional y conectarse a otros orígenes de datos.
 
@@ -114,7 +114,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
     - **Usar el formulario predeterminado de SharePoint**: cuando un usuario abra la lista y seleccione **Nuevo** en la barra de comandos, aparecerá el formulario predeterminado de la lista.
 
-    - **Usar un formulario personalizado creado en PowerApps**: cuando un usuario abra la lista y seleccione **Nuevo** en la barra de comandos, aparecerá el formulario personalizado. (Como alternativa, puede volver a publicar el formulario en PowerApps).
+    - **Usar un formulario personalizado creado en Power apps** : cuando un usuario abra la lista y seleccione **nuevo** en la barra de comandos, aparecerá el formulario personalizado. (Como alternativa, puede volver a publicar el formulario en Power apps).
 
     Puede alternar entre las opciones, según sea necesario.
 
@@ -198,11 +198,11 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
 **P:** ¿Necesito una licencia de Power apps para crear o usar formularios de lista personalizados?
 
-**R:** Necesita un [plan de Office 365 que incluya PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
+**R:** Necesita un [plan de Office 365 que incluye Power apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
 **P:** ¿Qué sucede cuando los usuarios invitados acceden a una lista que tiene un formulario personalizado?
 
-**R:** Los usuarios invitados reciben un mensaje de error si intentan acceder a un formulario de lista que se ha personalizado mediante PowerApps.
+**R:** Los usuarios invitados obtienen un mensaje de error si intentan acceder a un formulario de lista personalizado con Power apps.
 
 **P:** ¿Cómo reciben los administradores una lista de todos los formularios personalizados de su organización?
 

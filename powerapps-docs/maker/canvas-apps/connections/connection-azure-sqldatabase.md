@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678819"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723908"
 ---
-# <a name="connect-to-sql-server-from-powerapps"></a>Conexión a SQL Server desde PowerApps
+# <a name="connect-to-sql-server-from-power-apps"></a>Conexión a SQL Server de Power apps
 ![Icono de SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
 
-Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder mostrar la información del servidor en PowerApps.
+Conéctese a SQL Server, ya sea en Azure o en una base de datos local, para que pueda mostrar información de él en Power apps.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -68,7 +68,7 @@ Conéctese a SQL Server, bien en Azure o en una base de datos local, para poder 
 8. Personalice la aplicación mediante el uso de técnicas que son similares a las que se describe en [Create an app from Excel](../get-started-create-from-data.md) (Creación de una aplicación de Excel), a partir de cambiar el diseño de la aplicación.
 
 ## <a name="build-an-app-from-scratch"></a>Crear una aplicación desde cero
-1. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con la misma cuenta que usó para suscribirse a PowerApps.
+1. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con la misma cuenta que usó para suscribirse a Power apps.
 2. En la barra de navegación izquierda, pulse o haga clic en **Conexiones**:  
    
     ![Administrar conexiones](./media/connection-azure-sqldatabase/manage-connections.png)

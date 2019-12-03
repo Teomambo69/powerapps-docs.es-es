@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6ec04214bdee40cbe7ed5379a527fcd70d9229e7
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650329"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728328"
 ---
-# <a name="power-bi-tile-control-in-powerapps"></a>Control Icono de Power BI en PowerApps
+# <a name="power-bi-tile-control-in-power-apps"></a>Power BI el control de icono en Power apps
 
 Control que muestra un icono de [Power BI ](https://powerbi.microsoft.com) dentro de una aplicación.
 

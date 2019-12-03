@@ -1,6 +1,6 @@
 ---
 title: Función Validate | Microsoft Docs
-description: Información de referencia para la función Validate en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para la función Validate en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1004b5e7a921500065cca468d9b85e538110116c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1524b6f28d0ce5b1ed02fbd02d3c2df52e2b300f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991733"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729826"
 ---
-# <a name="validate-function-in-powerapps"></a>Función Validate en PowerApps
+# <a name="validate-function-in-power-apps"></a>Función Validate en Power apps
 La función **Validate** comprueba si el valor de una única [columna](../working-with-tables.md#columns) o un [registro](../working-with-tables.md#records) completo es válido para un [origen de datos](../working-with-data-sources.md).  
 
 ## <a name="description"></a>Descripción
@@ -41,13 +40,13 @@ Los orígenes de datos varían en la cantidad de información de validación que
 Si **Validate** encuentra un problema, la función devuelve un mensaje de error que puede mostrar al usuario de la aplicación. Si todos los valores son válidos, **Validate** devuelve [blank](function-isblank-isempty.md). Cuando trabaja con una [colección](../working-with-data-sources.md#collections) que no tiene ninguna información de validación, los valores siempre son válidos.
 
 ## <a name="syntax"></a>Sintaxis
-**Validate**( *DataSource*; *Column*; *Value* )
+**Validate**( *DataSource*, *Column*, *Value* )
 
 * *DataSource*: requerido. El origen de datos con el que realizar la validación.
 * *Column*: requerido. La columna que se va a validar.
 * *Value*: requerido. El valor de la columna seleccionada que se debe validar.
 
-**Validate**( *DataSource*; *OriginalRecord*; *Updates* )
+**Validate**( *DataSource*, *OriginalRecord*, *Updates* )
 
 * *DataSource*: requerido. El origen de datos con el que realizar la validación.
 * *OriginalRecord*: requerido.  El registro con el que se van a validar las actualizaciones.
@@ -60,13 +59,13 @@ Para estos ejemplos, los valores de la columna **Percentage** del origen de dato
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Validate( Scores; Percentage; 10 )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*blank* |
-| **Validate( Scores; Percentage; 120 )** |Comprueba si **120** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |"Los valores deben estar comprendidos entre 0 y 100". |
+| **Validate( Scores, Percentage, 10 )** |Comprueba si **10** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |*blank* |
+| **Validate( Scores, Percentage, 120 )** |Comprueba si **120** es un valor válido para la columna **Percentage** del origen de datos **Scores**. |"Los valores deben estar comprendidos entre 0 y 100". |
 
 ### <a name="validate-with-a-complete-record"></a>Validar con un registro completo
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Validate( Scores; EditRecord; Gallery.Updates )** |Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **10**. |*blank* |
-| **Validate( Scores; EditRecord; Gallery.Updates )** | Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **120**. |"Los valores deben estar comprendidos entre 0 y 100". |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **10**. |*blank* |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | Comprueba si los valores de todas las columnas son válidos para el origen de datos **Puntuaciones**. En este ejemplo, el valor de la columna **Porcentaje** es **120**. |"Los valores deben estar comprendidos entre 0 y 100". |
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 500154ecde380a1cf339f934728807216d29c804
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679624"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731622"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Crear listas desplegables dependientes en una aplicación de lienzo
 
@@ -50,7 +49,7 @@ Una lista de **ubicaciones** muestra los departamentos de cada ubicación.
 | Pembroke       | Crea          |
 | Pembroke       | Flor           |
 
-Una lista de **incidentes** muestra información de contacto e información sobre cada incidente. Cree la columna de fecha como una columna de **fecha** , pero cree las demás columnas como una **sola línea de columnas de texto** para simplificar la configuración y evitar las advertencias de [delegación](./delegation-overview.md) en Microsoft PowerApps.
+Una lista de **incidentes** muestra información de contacto e información sobre cada incidente. Cree la columna de fecha como una columna de **fecha** , pero cree las demás columnas como una **sola línea de columnas de texto** para simplificar la configuración y evitar las advertencias de [delegación](./delegation-overview.md) en Microsoft Power apps.
 
 | Nombre | Apellidos | Número de teléfono     | Location | Departamento | Descripción       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -139,7 +138,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
 1. Establezca la propiedad **Items** de **ddlocation** en esta fórmula:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. opta Mientras mantiene presionada la tecla Alt, Abra **ddLocation**y confirme que la lista muestra las tres ubicaciones.
 
@@ -159,7 +158,7 @@ Si cambia el nombre de los controles, puede identificarlos más fácilmente y lo
 
     La propiedad **Items** de **ddDepartment** se establece en esta fórmula:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Esta fórmula filtra los elementos de **ddDepartment** en función de lo que seleccione el usuario en **ddLocation**. Esta configuración garantiza que la lista "secundaria" de departamentos refleje los datos para su ubicación "primaria", como la lista de **ubicaciones** de SharePoint especifica.
 

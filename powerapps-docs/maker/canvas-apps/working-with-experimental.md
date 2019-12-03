@@ -14,14 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1cab122851ae2ba0a4d5414d2f4c5ca088d4478
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 618192bcaafa5fef8ce2577dc5f07548d49f005e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674225"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732297"
 ---
-# <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>Descripción de las características experimentales, de vista previa y en desuso en PowerApps
+# <a name="understand-experimental-preview-and-deprecated-features-in-power-apps"></a>Descripción de las características experimentales, de vista previa y en desuso en Power apps
 
 Con cada versión, realizamos cambios y agregamos características para que las aplicaciones de energía sean la mejor herramienta para ajustarse a sus necesidades. Hacemos que avance el producto.  
 

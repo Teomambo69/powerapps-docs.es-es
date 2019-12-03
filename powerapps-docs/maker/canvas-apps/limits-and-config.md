@@ -1,6 +1,6 @@
 ---
 title: Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo | Microsoft Docs
-description: Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo integradas en PowerApps
+description: Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo integradas en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675635"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729605"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
-Este tema contiene los requisitos de plataforma de dispositivo y explorador web, así como los límites y los valores de configuración para PowerApps.
+Este tema contiene los requisitos de la plataforma de dispositivos y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de energía.
 
 ## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Plataformas admitidas para ejecutar aplicaciones de lienzo con la aplicación Power apps
 

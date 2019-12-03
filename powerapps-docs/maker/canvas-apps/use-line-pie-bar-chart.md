@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b5a5366f3de487b7d34d60d989274223340f4e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674411"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732410"
 ---
-# <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Visualización de datos en un gráfico de líneas, circular o de barras en PowerApps
+# <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>Mostrar datos en un gráfico de líneas, circulares o de barras en Power apps
 
 Utilice gráficos de líneas, gráficos circulares y gráficos de barras para mostrar los datos en una aplicación de lienzo. Cuando trabaje con gráficos, los datos que importe deben estar estructurados en función de los criterios siguientes:
 
@@ -38,7 +37,7 @@ Puede crear y usar estos gráficos en Power apps. Empecemos.
 
 * [Regístrese](../signup-for-powerapps.md) en Power apps y, a continuación, [inicie sesión](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 * Cree una aplicación a partir de una [plantilla](get-started-test-drive.md), de [datos](get-started-create-from-data.md) o desde [cero](get-started-create-from-blank.md).
-* Aprenda a [configurar un control](add-configure-controls.md) en PowerApps.
+* Aprenda a [configurar un control](add-configure-controls.md) en Power apps.
 * Descargue [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip), que contiene datos de ejemplo como un archivo XML. Siga los pasos descritos en este tema para importarlo directamente desde su aplicación. Como alternativa, descomprima el archivo .zip, abra el archivo XML en Excel y guárdelo en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Importar los datos de ejemplo
@@ -50,7 +49,7 @@ En estos pasos importaremos los datos de ejemplo en una colección, denominada *
 
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** del control en la función siguiente:  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Presione F5 para abrir el modo de vista previa y seleccione el botón **Importar datos**.
 

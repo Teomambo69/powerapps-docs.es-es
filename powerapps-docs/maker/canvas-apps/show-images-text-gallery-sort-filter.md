@@ -1,6 +1,6 @@
 ---
 title: Visualización, ordenación y filtrado de los datos de una galería | Microsoft Docs
-description: Use una galería para mostrar imágenes y texto. Ordene y filtre las imágenes en PowerApps.
+description: Use una galería para mostrar imágenes y texto. Ordene y filtre las imágenes en Power apps.
 author: adrianorth
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 14925b5e50f1731efc935bc8a3379342283ec2a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674639"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732452"
 ---
 # <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Mostrar, ordenar y filtrar datos en una galería de Power apps
 Cree una galería para mostrar imágenes y texto sobre diversos productos, y ordene y filtre esa información.
@@ -121,7 +120,7 @@ Mediante estos pasos, vamos a ordenar los elementos de la galería en orden asce
 1. Seleccione un elemento cualquiera de la galería *excepto* el primero.
 2. La propiedad **[Items](controls/properties-core.md)** está establecida actualmente en Inventory (el nombre de la colección). Cámbiela a lo siguiente:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     Cuando lo haga, los elementos de la galería se ordenarán por nombre de producto en orden ascendente: ![][11]  
    
@@ -134,11 +133,11 @@ Mediante estos pasos, vamos a ordenar los elementos de la galería en orden asce
 2. Configure el control deslizante de modo que los usuarios no puedan establecerlo en un valor fuera del intervalo de unidades disponibles:  
    
    1. En la pestaña **Contenido**, seleccione **Mín.** y escriba la expresión siguiente:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. En la pestaña **Contenido**, seleccione **Máx.** y escriba la expresión siguiente:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Seleccione un elemento cualquiera de la galería *excepto* el primero. Establezca la propiedad **[Items](controls/properties-core.md)** de la galería en la expresión siguiente:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. En **Vista previa**, ajuste el control deslizante en un valor comprendido entre la cantidad mínima y máxima en la galería. A medida que ajuste el control deslizante, la galería mostrará solo los productos con una cantidad inferior al valor que elija:  
    ![][13]  
 
@@ -147,7 +146,7 @@ Ahora vamos a agregar un filtro:
 1. Vuelva al diseñador.
 2. En la pestaña **Insertar**, seleccione **Texto**, elija **Texto de entrada** y cambie el nombre del control nuevo a **NameFilter**. Mueva el control de texto debajo del control deslizante.
 3. Establezca la propiedad **[Items](controls/properties-core.md)** de la galería en la expresión siguiente:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. En **Vista previa**, establezca el control deslizante en *30* y escriba la letra *g* en el control de entrada de texto. En la galería se muestra el único producto con menos de 30 unidades disponibles *y* con un nombre que empieza por la letra "g":  
    ![][14]  
 

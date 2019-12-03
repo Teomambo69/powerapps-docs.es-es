@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f522f520c0f0f042e73932630980dee93bc5c89c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678635"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731761"
 ---
-# <a name="customize-a-canvas-app-form-in-powerapps"></a>Personalizar un formulario de aplicación de lienzo en PowerApps
+# <a name="customize-a-canvas-app-form-in-power-apps"></a>Personalización de un formulario de canvas-app en Power apps
 
 En una aplicación de lienzo, personalice un control **Mostrar formulario** y un control **Editar formulario** para que muestren los datos más importantes y en el orden más intuitivo para ayudar a los usuarios a comprender y actualizar los datos fácilmente.
 
@@ -34,7 +34,7 @@ Si no está familiarizado con Canvas-PPS, consulte [¿Qué son las aplicaciones 
 
 ## <a name="show-and-hide-cards"></a>Mostrar y ocultar las tarjetas
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, abra la aplicación que ha generado y personalizado.
+1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)y, a continuación, abra la aplicación que ha generado y personalizado.
 
 1. En la barra de navegación izquierda, escriba o pegue **D** en la barra de búsqueda para filtrar la lista de elementos y, a continuación, seleccione **DetailForm1**.
 

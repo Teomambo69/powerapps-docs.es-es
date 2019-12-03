@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 641b22945dc6398e0f1ab57b03813eb7db02c79f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: efd5b1ca4f30a5ab1131765d2bb38d21af7c2d2b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678428"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731374"
 ---
-# <a name="char-function-in-powerapps"></a>Función Char en PowerApps
+# <a name="char-function-in-power-apps"></a>Función char en Power apps
 
 Traduce un código de carácter en una cadena.
 
@@ -47,7 +46,7 @@ La función **Char** convierte un número en una cadena con el carácter ASCII c
 
 1. En una pantalla vacía de una aplicación de Tablet PC, agregue un control [**Galería**](../controls/control-gallery.md) con un diseño **horizontal en blanco** y, a continuación, establezca estas propiedades:
 
-    - **Elementos**: `[0;1;2;3;4;5;6;7]`
+    - **Elementos**: `[0,1,2,3,4,5,6,7]`
     - **Ancho**: 800
     - **Alto**: 500
     - **Plantillas**: 100
@@ -55,7 +54,7 @@ La función **Char** convierte un número en una cadena con el carácter ASCII c
 
 1. Dentro de esa Galería, agregue un control **Galería** con un diseño **vertical en blanco** y, a continuación, establezca estas propiedades:
 
-    - **Elementos**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
+    - **Elementos**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
     - **Ancho**: 100
     - **Alto**: 500
     - **Plantillas**: 30
@@ -80,7 +79,7 @@ Ha creado un gráfico con los primeros 128 caracteres ASCII. Los caracteres que 
 
 Para mostrar los caracteres ASCII extendidos, establezca la propiedad **Items** de la segunda galería en esta fórmula, que agrega 128 a cada valor de carácter:
 
-`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![Caracteres ASCII extendidos](media/function-char/chart-higher.png)
 

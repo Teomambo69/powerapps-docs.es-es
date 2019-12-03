@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a28ce0103157ae877fa8f21d156998e8ea6c684c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d9080ddeb1499d2608137aa07287b5b8b9c8cb5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985835"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731860"
 ---
-# <a name="image-properties-in-powerapps"></a>Propiedades de imagen en PowerApps
+# <a name="image-properties-in-power-apps"></a>Propiedades de imagen en Power apps
 Configure elementos gráficos en su aplicación, incluyendo imágenes, fotos y elementos de un control de lápiz.
 
 **BackgroundImage**: nombre de un archivo de imagen que aparece en el fondo de una pantalla.

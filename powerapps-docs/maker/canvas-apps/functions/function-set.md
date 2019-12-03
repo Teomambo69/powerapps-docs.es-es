@@ -1,6 +1,6 @@
 ---
 title: Función Establecer| Microsoft Docs
-description: Información de referencia de la función Set de PowerApps, con sintaxis y ejemplos
+description: Información de referencia para la función set en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72adafedfe09a125fda2a48d5617b2cd8c79242a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c0e4cfc1a180e183f29392181cd7699b6cb9242
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678198"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730203"
 ---
-# <a name="set-function-in-powerapps"></a>Función Set en PowerApps
+# <a name="set-function-in-power-apps"></a>Establecimiento de la función en Power apps
 Establece el valor de una variable global.
 
 ## <a name="overview"></a>Información general
@@ -51,7 +50,7 @@ Las variables globales no pueden usar el mismo nombre que una colección o un co
 **Set** no devuelve ningún valor y solo se puede usar en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Set**( *VariableName*; *Value* )
+**Set**( *VariableName*, *Value* )
 
 * *VariableName* (se requiere).  Nombre de la variable global que se va a crear o actualizar.
 * *Value* (se requiere).  Valor que se asigna a la variable de contexto.
@@ -60,10 +59,10 @@ Las variables globales no pueden usar el mismo nombre que una colección o un co
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Set(&nbsp;Counter;&nbsp;1&nbsp;)** |Crea o modifica la variable global **Counter** y establece su valor en **1**. |**Counter** tiene el valor **1**. Para hacer referencia a dicha variable, utilice el nombre **Counter** en una fórmula en cualquier pantalla. |
-| **Set(&nbsp;Counter;&nbsp;2&nbsp;)** |Establece el valor de la variable global **Counter** del ejemplo anterior en **2**. |**Counter** tiene el valor **2**. |
-| **Set(&nbsp;Counter;&nbsp;Counter + 1&nbsp;)** |Aumenta el valor de la variable global **Counter** del ejemplo anterior en **3**. |**Counter** tiene el valor **3**. |
-| **Set(&nbsp;Name;&nbsp;"Lily" )** |Crea o modifica la variable global **Name** y establece su valor en **Lily**. |**Name** tiene el valor **Lily**. |
-| **Set(&nbsp;Person;&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Crea o modifica la variable global **Person** y establece su valor en un registro. El registro contiene dos columnas, llamadas **Name** y **Address**. El valor de la columna **Name** es **Milton**, y el valor de la columna **Address** es **1 Main St**. |**Person** tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** }.<br><br>Haga referencia a este registro como un todo con el nombre **Person**, o haga referencia a una columna individual de este registro con **Person.Name** o **Person.Address**. |
-| **Set(&nbsp;Person; Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable global **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** }. |
+| **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |Crea o modifica la variable global **Counter** y establece su valor en **1**. |**Counter** tiene el valor **1**. Para hacer referencia a dicha variable, utilice el nombre **Counter** en una fórmula en cualquier pantalla. |
+| **Set(&nbsp;Counter,&nbsp;2&nbsp;)** |Establece el valor de la variable global **Counter** del ejemplo anterior en **2**. |**Counter** tiene el valor **2**. |
+| **Set(&nbsp;Counter,&nbsp;Counter + 1&nbsp;)** |Aumenta el valor de la variable global **Counter** del ejemplo anterior en **3**. |**Counter** tiene el valor **3**. |
+| **Set(&nbsp;Name,&nbsp;"Lily" )** |Crea o modifica la variable global **Name** y establece su valor en **Lily**. |**Name** tiene el valor **Lily**. |
+| **Set(&nbsp;Person,&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Crea o modifica la variable global **Person** y establece su valor en un registro. El registro contiene dos columnas, llamadas **Name** y **Address**. El valor de la columna **Name** es **Milton**, y el valor de la columna **Address** es **1 Main St**. |**Person** tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** }.<br><br>Haga referencia a este registro como un todo con el nombre **Person**, o haga referencia a una columna individual de este registro con **Person.Name** o **Person.Address**. |
+| **Set(&nbsp;Person, Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |Trabaja con la función **[Patch](function-patch.md)** para actualizar la variable global **Person** y establece el valor de la columna **Address** en **2 Main St**. |**Person** ahora tiene el valor del registro **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** }. |
 

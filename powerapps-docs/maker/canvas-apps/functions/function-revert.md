@@ -1,6 +1,6 @@
 ---
 title: Función Revert | Microsoft Docs
-description: Información de referencia de la función Revert en PowerApps, con sintaxis y ejemplos
+description: Información de referencia, incluida la sintaxis y un ejemplo, para la función Revert en Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: efaffeac79c104d517d8e7da5b2e324fcac3eecb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992449"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730339"
 ---
-# <a name="revert-function-in-powerapps"></a>Función Revert en PowerApps
+# <a name="revert-function-in-power-apps"></a>Reversión de la función en Power apps
 Actualiza y borra errores para los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
 
 ## <a name="description"></a>Descripción
@@ -34,7 +33,7 @@ Si la función **[Errors](function-errors.md)** informa sobre un conflicto despu
 **Revert** no tiene ningún valor devuelto. Se puede usar únicamente en una [fórmula de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Revert**( *DataSource* [; *Record* ] )
+**Revert**( *DataSource* [, *Record* ] )
 
 * *DataSource*: requerido. El origen de datos que desea revertir.
 * *Registro*: opcional.  El registro que desea revertir.  Si no se especifica un registro, se revierte el origen de datos completo.
@@ -47,16 +46,16 @@ En este ejemplo, revertirá el origen de datos denominado **IceCream**, que empi
 Un usuario de otro dispositivo cambia la propiedad **Quantity** en el registro **Strawberry** a **400**.  Aproximadamente al mismo tiempo, usted cambia la misma propiedad del mismo registro a **500**, sin tener conocimiento sobre el otro cambio.
 
 Usa la función **[Patch](function-patch.md)** para actualizar el registro:<br>
-**Patch (IceCream; primero (filtrar (IceCream; Flavor = "fresa")); {Quantity: 500})**
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
 
 Compruebe la tabla **[Errors](function-errors.md)** y encuentre un error:
 
 | Registro | [Columna](../working-with-tables.md#columns) | Mensaje | Error |
 | --- | --- | --- | --- |
-| **{ID: 1; tipo: "Fresa"; cantidad: 300}** |*blank* |**"Otro usuario ha modificado el registro que está intentando modificar.  Revierta el registro e inténtelo de nuevo".** |**ErrorKind.Conflict** |
+| **{ ID: 1, Flavor: "Strawberry", Cantidad: 300 }** |*blank* |**"Otro usuario ha modificado el registro que está intentando modificar.  Revierta el registro e inténtelo de nuevo ".** |**ErrorKind.Conflict** |
 
 Tomando como base la columna **Error**, tiene un botón **Volver a cargar** para que la propiedad **[OnSelect](../controls/properties-core.md)** para establecer esta fórmula:<br>
-**Revert( IceCream; First( Filter( IceCream; Flavor = "Strawberry" ) ) )**
+**Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
 
 Después de seleccionar el botón **Recargar**, la tabla **[Errores](function-errors.md)** está [vacía](function-isblank-isempty.md)y el nuevo valor para **Strawberry** se ha cargado:
 

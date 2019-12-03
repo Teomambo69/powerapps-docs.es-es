@@ -1,6 +1,6 @@
 ---
 title: With (función) | Microsoft Docs
-description: Información de referencia de la función with en PowerApps, incluida la sintaxis
+description: Información de referencia de la función with en Power Apps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
-ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
+ms.openlocfilehash: 886482e9093fa44c34fb1f72b93d51181d4fbc10
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70130343"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729856"
 ---
-# <a name="with-function-in-powerapps"></a>Función with en PowerApps
+# <a name="with-function-in-power-apps"></a>Con la función en Power apps
 Calcula valores y realiza acciones para un único [registro](../working-with-tables.md#records), incluidos los registros insertados de valores con nombre.
 
-## <a name="description"></a>DESCRIPCIÓN
+## <a name="description"></a>Descripción
 
-La función **with** evalúa una fórmula para un único registro.  La fórmula puede calcular un valor o realizar acciones, como modificar datos o trabajar con una conexión.  Utilice la [ función forall](function-forall.md) para evaluar una fórmula para todos los registros de una tabla de registros.
+La función **with** evalúa una fórmula para un único registro.  La fórmula puede calcular un valor o realizar acciones, como modificar datos o trabajar con una conexión.  Utilice la [función **forall** ](function-forall.md) para evaluar una fórmula para todos los registros de una tabla de registros.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -37,21 +36,21 @@ Use **con** para tener acceso a los campos del registro devueltos por funciones 
 Si el argumento de *registro* en **with** es un error, la función devolverá ese error y no se evaluará la *fórmula* .
 
 ## <a name="syntax"></a>Sintaxis
-**Con** ( *Registro*, *fórmula* )
+**With**( *registro*, *fórmula* )
 
-* *Registro* : requerido. Registro sobre el que se va a actuar.  Para los valores de names, use la sintaxis en línea`{ name1: value1; name2: value2; ... }`
+* *Registro* : requerido. Registro sobre el que se va a actuar.  En el caso de los valores de nombre, use la sintaxis en línea `{ name1: value1, name2: value2, ... }`
 * *Fórmula* : requerido.  Fórmula que se va a evaluar para el *registro*.  La fórmula puede hacer referencia a cualquiera de los campos de *registro* directamente como un ámbito de registro.
 
 ## <a name="examples"></a>Ejemplos
 
 ### <a name="simple-named-values"></a>Valores con nombre simples
 
-```powerapps-comma
-With( { radius: 10; 
-        height: 15 };
+```powerapps-dot
+With( { radius: 10, 
+        height: 15 },
     Pi() * (radius*radius) * height
 )
-// Result: 4712,38898038 (as shown in a label control)
+// Result: 4712.38898038 (as shown in a label control)
 ```
 
 En este ejemplo se usa un registro de valores con nombre para calcular el volumen de un cilindro.  **With** se usa para capturar todos los valores de entrada de forma conjunta, lo que facilita su separación del propio cálculo.  
@@ -60,20 +59,20 @@ En este ejemplo se usa un registro de valores con nombre para calcular el volume
 
 ![Calculadora de interés con la función with](media/function-with/interest-calculator.gif)
 
-```powerapps-comma
-With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments and convert to decimal
-        Amount: AmountSlider*10000;          // slider moves by 10;000 increment
-        Years: YearsSlider;                  // slider moves in single year increments; no adjustment required
-        AnnualPayments: 12 };                // number of payments per year
-      With( { r: AnnualRate/AnnualPayments;  // interest rate
-              P: Amount;                     // loan amount
-              n: Years*AnnualPayments };     // number of payments
+```powerapps-dot
+With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
+        Amount: AmountSlider*10000,          // slider moves by 10,000 increment
+        Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
+        AnnualPayments: 12 },                // number of payments per year
+      With( { r: AnnualRate/AnnualPayments,  // interest rate
+              P: Amount,                     // loan amount
+              n: Years*AnnualPayments },     // number of payments
             r*P / (1 - (1+r)^-n)             // standard interest calculation
       )
 )  
 ```
 
-Este ejemplo se anida **con** funciones para crear un cálculo de dos niveles para los [pagos mensuales](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)de hipotecas.  Siempre que no haya ningún conflicto, todos los externos **con** valores con nombre están disponibles dentro del interior **con**.
+Este ejemplo se anida **con** funciones para crear un cálculo de dos niveles para los [pagos mensuales de hipotecas](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula).  Siempre que no haya ningún conflicto, todos los externos **con** valores con nombre están disponibles dentro del interior **con**.
 
 Dado que los controles deslizantes solo pueden moverse en incrementos de 1, los controles deslizantes se dividen o multiplican para crear eficazmente un incremento personalizado.  En el caso de la tasa de interés, **RateSlider** tiene la propiedad **Max** establecida en **48**, dividida entre 8 para un incremento del punto de porcentaje 1/8 y dividida entre 100 para convertir de un porcentaje a un decimal, cubriendo el intervalo del 0,125% al 6%.  En el caso de la cantidad de préstamo, **AmountSlider** tiene la propiedad **Max** establecida en **60** y se multiplica por 10.000, cubriendo el intervalo de 10.000 a 600.000.
 
@@ -81,13 +80,13 @@ La **con** se vuelve a calcular automáticamente a medida que se mueven los cont
 
 Estas son las instrucciones detalladas para crear esta aplicación:
 1. Cree una nueva aplicación.
-2. Agregue un [ control deslizante](../controls/control-slider.md) y asígnele el nombre **RateSlider**.  Establezca su propiedad **Max** en 48.
+2. Agregue un [control **deslizante** ](../controls/control-slider.md) y asígnele el nombre **RateSlider**.  Establezca su propiedad **Max** en 48.
 3. Agregue un [control **etiqueta** ](../controls/control-text-box.md) a la izquierda del control deslizante.  Establezca su propiedad **texto** en **"tasa de interés:"** .
 3. Agregue un control **etiqueta** a la derecha del control deslizante.  Establezca su propiedad **texto** en la fórmula **RateSlider/8 & "&nbsp;%"** .
-3. Agregue otro control deslizante y asígnele el nombre **AmountSlider**.  Establezca su propiedad **Max** en 60.
+3. Agregue otro control **deslizante** y asígnele el nombre **AmountSlider**.  Establezca su propiedad **Max** en 60.
 3. Agregue un control **etiqueta** a la izquierda de este control deslizante.  Establezca su propiedad **texto** en **"importe de préstamo:"** . 
 3. Agregue un control **etiqueta** a la derecha de este control deslizante.  Establezca su propiedad **texto** en la fórmula **AmountSlider/8 * 10000**.
-4. Agregue otro control deslizante y asígnele el nombre **YearsSlider**.  Establezca su propiedad **Max** en 40.
+4. Agregue otro control **deslizante** y asígnele el nombre **YearsSlider**.  Establezca su propiedad **Max** en 40.
 3. Agregue un control **etiqueta** a la izquierda de este control deslizante.  Establezca su propiedad **Text** en **"Number of years:"** . 
 3. Agregue un control **etiqueta** a la derecha de este control deslizante.  Establezca su propiedad **texto** en la fórmula **YearsSlider**.
 5. Agregue un control **etiqueta** y establezca su propiedad **texto** en la fórmula mostrada anteriormente.
@@ -95,12 +94,12 @@ Estas son las instrucciones detalladas para crear esta aplicación:
 
 ### <a name="primary-key-returned-from-patch"></a>Clave principal devuelta por la revisión
 
-```powerapps-comma
-With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
-      ForAll( NewOrderDetails; 
-              Patch( OrderDetails; Defaults( OrderDetails ); 
-                     { Order: OrderID;          // from With's first argument; primary key of Patch result
-                       Quantity: Quantity;      // from ForAll's NewOrderDetails table
+```powerapps-dot
+With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
+      ForAll( NewOrderDetails, 
+              Patch( OrderDetails, Defaults( OrderDetails ), 
+                     { Order: OrderID,          // from With's first argument, primary key of Patch result
+                       Quantity: Quantity,      // from ForAll's NewOrderDetails table
                        ProductID: ProductID }   // from ForAll's NewOrderDetails table
               )
       )
@@ -111,12 +110,12 @@ En este ejemplo se agrega un registro a la tabla **Order** de SQL Server.  A con
 
 ### <a name="extracted-values-with-a-regular-expression"></a>Valores extraídos con una expresión regular
 
-```powerapps-comma
+```powerapps-dot
 With( 
-    Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-    Time( Value( hours ); Value( minutes ); Value( seconds ) )
+    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
 ```
 
 En este ejemplo se extraen las horas, los minutos y los segundos de un valor de duración ISO 8601 y, a continuación, se usan estas subcoincidencias para crear un valor de fecha y hora. 

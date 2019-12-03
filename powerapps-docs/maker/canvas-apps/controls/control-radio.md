@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 09e8e12a2a6bc94fcc7e3fb2482ff89b058c369f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649766"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732123"
 ---
-# <a name="radio-control-in-powerapps"></a>Control Radio en PowerApps
+# <a name="radio-control-in-power-apps"></a>Control de radio en Power apps
 
 Control de entrada que muestra varias opciones entre las que los usuarios pueden seleccionar solo una cada vez.
 
@@ -131,19 +130,19 @@ El control puede tener un diseño horizontal o vertical.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
 1. Agregue un control **Radio**, asígnele el nombre **Pricing** y establezca su propiedad **[Elementos](properties-core.md)** en esta fórmula:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
 2. Agregue un control **[Etiqueta](control-text-box.md)** , desplácelo bajo el control **Radio** y establezca la propiedad **[Texto](properties-core.md)** del control **[Etiqueta](control-text-box.md)** en esta fórmula:
 
-    **If("Premium" in Pricing.Selected.Value; "$200 per day"; "$150 per day")**
+    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 

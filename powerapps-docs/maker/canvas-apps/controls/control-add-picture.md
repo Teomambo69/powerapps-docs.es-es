@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1970c373b7614644897620e2c6d60f4472add568
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650822"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723139"
 ---
-# <a name="add-picture-control-in-powerapps"></a>Control Agregar imagen en PowerApps
+# <a name="add-picture-control-in-power-apps"></a>Agregar el control imagen en Power apps
 Toma una fotografía o carga imágenes desde el dispositivo local.
 
 ## <a name="description"></a>Descripción
@@ -115,7 +114,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-images-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
@@ -124,7 +123,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. En el cuadro de diálogo **Abrir**, pulse o haga clic en un archivo de imagen y luego pulse o haga clic en **Abrir**.
 3. Agregue un control **[Botón](control-button.md)** , muévalo al control **Agregar imagen** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Botón](control-button.md)** en esta fórmula:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 4. Agregue un control **Galería de imágenes** y establezca su propiedad **[Elementos](properties-core.md)** en **MyPix**.

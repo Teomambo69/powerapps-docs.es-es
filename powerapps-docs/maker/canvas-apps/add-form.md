@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed7493dcc9c2ef5f0b84052a11dbadb0947af38e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 37b7117f599c29f886da3cafeb158db145ad1364
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994238"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724908"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Mostrar, editar o agregar un registro en una aplicación de lienzo
 
@@ -27,7 +26,7 @@ En una aplicación de lienzo, agregue y configure un control **[Mostrar](control
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Aprenda a [agregar y configurar un control](add-configure-controls.md) en PowerApps.
+- Obtenga información sobre cómo [Agregar y configurar un control](add-configure-controls.md) en Power apps.
 - Descargue [este archivo de Excel](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx), que contiene datos de ejemplo para este tutorial.
 - Cargue el archivo de Excel en una [cuenta de almacenamiento en la nube](connections/cloud-storage-blob-connections.md), como OneDrive para la Empresa.
 - Cree o abra una aplicación para teléfonos y [agregue una conexión](add-data-connection.md) a la tabla **FlooringEstimates** en el archivo de Excel.
@@ -42,7 +41,7 @@ En una aplicación de lienzo, agregue y configure un control **[Mostrar](control
     > [!NOTE]
    > Si no está seguro de cómo agregar un control, cambiar su nombre o establecer una propiedad, consulte [Adición y configuración de un control en PowerApps](add-configure-controls.md).
 
-1. En la pestaña **propiedades** del panel derecho, establezca **items** en `FlooringEstimates` y **Value** en `Name`.
+1. En la pestaña **propiedades** del panel derecho, establezca **elementos** en `FlooringEstimates` y **valor** en `Name`.
 
     ![Establecer la propiedad elementos del formulario](./media/add-form/items-property.png)
 
@@ -57,7 +56,7 @@ En una aplicación de lienzo, agregue y configure un control **[Mostrar](control
 
 1. Establezca la propiedad **[DataSource](controls/control-form-detail.md)** del formulario en **FlooringEstimates** y su propiedad **[Item](controls/control-form-detail.md)** en esta fórmula:
 
-    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 
    Esta fórmula especifica que, cuando termine de configurar el formulario, aparecerá el registro que el usuario selecciona en **ChooseProduct**.
 

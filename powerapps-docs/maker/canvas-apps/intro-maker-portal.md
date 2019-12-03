@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 284d63d7ebc0eb57e11dae055a9178b3b92646cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675761"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729510"
 ---
 # <a name="sign-in-to-power-apps-for-the-first-time"></a>Iniciar sesión en Power apps por primera vez
 
-Cuando inicie sesión en [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), el sitio ofrece diversas opciones para que cree sus propias aplicaciones, abra las aplicaciones que usted u otros usuarios hayan creado y realice tareas relacionadas. Estas tareas van desde las más sencillas, como la identificación de la licencia o licencias que le proporcionan acceso, hasta funcionalidades más avanzadas, como la creación de conexiones personalizadas para orígenes de datos específicos.
+Cuando inicia sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), el sitio ofrece una variedad de opciones para crear sus propias aplicaciones, abrir aplicaciones que usted u otros usuarios han creado y realizar tareas relacionadas. Estas tareas van desde las más sencillas, como la identificación de la licencia o licencias que le proporcionan acceso, hasta funcionalidades más avanzadas, como la creación de conexiones personalizadas para orígenes de datos específicos.
 
 Puede seleccionar opciones en tres áreas generales:
 
@@ -112,7 +112,7 @@ Al seleccionar las opciones en el encabezado y la barra de navegación izquierda
   - [Introducción a los conectores para aplicaciones de lienzo](connections-list.md)
   - [Compilación y certificación de conectores personalizados para aplicaciones de lienzo](register-custom-api.md)
   - [Administración de una puerta de enlace de datos local](gateway-management.md)
-  - [Administración de PowerApps](../../administrator/index.md)
+  - [Administrar Power apps](../../administrator/index.md)
   - [Introducción a las licencias](../../administrator/pricing-billing-skus.md)
   - [Información general sobre la compilación de una aplicación controlada por modelos](../model-driven-apps/model-driven-app-overview.md)
 

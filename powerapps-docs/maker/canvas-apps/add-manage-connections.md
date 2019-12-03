@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679992"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724390"
 ---
-# <a name="manage-canvas-app-connections-in-powerapps"></a>Administración de conexiones de aplicaciones de lienzo en PowerApps
+# <a name="manage-canvas-app-connections-in-power-apps"></a>Administración de conexiones de la aplicación de lienzo en Power apps
 En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), cree una conexión con uno o varios orígenes de datos, elimine una conexión o actualice las credenciales.
 
 La conexión de datos de la aplicación de lienzo puede establecerse con SharePoint, SQL Server, Office 365, OneDrive para la Empresa, Salesforce, Excel y muchos otros [orígenes de datos](connections-list.md).
@@ -35,7 +35,7 @@ Lo siguiente que haremos en este artículo es mostrar y administrar la informaci
 * Conéctese a Twilio y envíe un mensaje SMS desde la aplicación.
 
 ## <a name="prerequisites"></a>Requisitos previos
-1. [Inicie sesión](../signup-for-powerapps.md) en PowerApps.
+1. [Regístrese](../signup-for-powerapps.md) en Power apps.
 2. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que utilizó para suscribirse.
 
 ## <a name="background-on-data-connections"></a>Información general sobre las conexiones de datos

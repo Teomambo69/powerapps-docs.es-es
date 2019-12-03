@@ -1,6 +1,6 @@
 ---
 title: Función Select | Microsoft Docs
-description: Información de referencia para la función Select en PowerApps, incluida la sintaxis
+description: Información de referencia de la función select de Power Apps, incluida la sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bba742d85a11f05cb5f503146e7e940222edf169
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984075"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730257"
 ---
-# <a name="select-function-in-powerapps"></a>Función Select en PowerApps
+# <a name="select-function-in-power-apps"></a>Selección de la función en Power apps
 Simula una acción de selección en un control, lo que provoca la evaluación de la fórmula **OnSelect**.
 
 ## <a name="description"></a>Descripción
@@ -84,7 +83,7 @@ Un control no puede usar **Select** directa o indirectamente a través de otros 
 
 5. Establezca la propiedad **OnSelect** del control de imagen en esta fórmula:
 
-    **Notify( "Imagen seleccionada"; operación correcta)**
+    **Notify( "Imagen seleccionada", operación correcta)**
 
 6. Mientras mantiene presionada la tecla Alt, haga clic en los distintos elementos de la galería o púlselos.
 

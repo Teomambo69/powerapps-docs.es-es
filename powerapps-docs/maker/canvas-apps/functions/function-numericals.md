@@ -1,6 +1,6 @@
 ---
 title: Funciones Abs, Exp, Ln, Power y Sqrt | Microsoft Docs
-description: Información de referencia para las funciones Abs, Sqrt y otras en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para las funciones ABS, sqrt y otras en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 925297a8e1a3f4c454cb8bbb09f75a87419cf5cb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984420"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730482"
 ---
-# <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funciones Abs, Exp, Ln, Power y Sqrt en PowerApps
+# <a name="abs-exp-ln-power-and-sqrt-functions-in-power-apps"></a>Funciones ABS, exp, LN, Power y sqrt en Power apps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.
 
 ## <a name="description"></a>Descripción
@@ -44,7 +43,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 
 * *Number*: requerido. El número sobre el cual operar.
 
-**Power**( *Base*; *Exponente* )
+**Power**( *Base*, *Exponente* )
 
 * *Base*: requerido. Número base que se va a elevar.
 * *Exponent*: requerido. El exponente al que se eleva el número base.
@@ -61,7 +60,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 | **Abs( -55 )** |Muestra el número sin el signo negativo. |55 |
 | **Exp( 2 )** |Muestra *e* elevado a la potencia de 2, o *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Muestra el algoritmo natural (*e* base) del número 100. |4,605170... |
-| **Power( 5; 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
+| **Power( 5, 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Muestra el número que, cuando se multiplica por sí mismo, da como resultado 9. |3 |
 
 ### <a name="single-column-table"></a>Tabla de una sola columna

@@ -1,6 +1,6 @@
 ---
 title: Funciones Collect, Clear y ClearCollect | Microsoft Docs
-description: Información de referencia sobre las funciones Collect, Clear y ClearCollect de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia de las funciones Collect, Clear y ClearCollect de Power Apps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c4d9362819790d60faaf68173c119f67b895fb9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678405"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731343"
 ---
-# <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Funciones Collect, Clear y ClearCollect en PowerApps
+# <a name="collect-clear-and-clearcollect-functions-in-power-apps"></a>Funciones Collect, Clear y ClearCollect en Power apps
 
 Crea y borra [colecciones](../working-with-data-sources.md#collections) y agrega [registros](../working-with-tables.md#records) a cualquier [origen de datos](../working-with-data-sources.md).
 
@@ -49,7 +48,7 @@ También puede usar la función **[Patch](function-patch.md)** para crear regist
 
 La función **Clear** elimina todos los registros de una colección.  Las columnas de la colección se conservarán.
 
-Tenga en cuenta que **Clear** solo funciona en colecciones y no en otros orígenes de datos.  Puede usar **[RemoveIf](function-remove-removeif.md)( *DataSource*; true )** para este propósito.  Tenga cuidado, ya que esto quitará todos los registros del almacenamiento del origen de datos y puede afectar a otros usuarios.
+Tenga en cuenta que **Clear** solo funciona en colecciones y no en otros orígenes de datos.  Puede usar **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )** para este propósito.  Tenga cuidado, ya que esto quitará todos los registros del almacenamiento del origen de datos y puede afectar a otros usuarios.
 
 Puede usar la función **[Remove](function-remove-removeif.md)** para quitar registros de forma selectiva.
 
@@ -63,7 +62,7 @@ La función **ClearCollect** elimina todos los registros de una colección y, de
 
 ## <a name="syntax"></a>Sintaxis
 
-**Collect**( *DataSource*; *Elemento*; ... )
+**Collect**( *DataSource*, *Elemento*, ... )
 
 * *DataSource*: requerido. Origen de datos al que quiere agregar datos.  Si todavía no existe, se crea una colección.
 * *Item(s)* : requerido.  Uno o varios registros o tablas que se van a agregar al origen de datos.  
@@ -72,7 +71,7 @@ La función **ClearCollect** elimina todos los registros de una colección y, de
 
 * *Collection*: requerido. Colección que quiere borrar.
 
-**ClearCollect**( *Colección*; *Elemento*; ... )
+**ClearCollect**( *Colección*, *Elemento*, ... )
 
 * *Collection*: requerido. Colección que quiere borrar, a la que después va a agregar datos.
 * *Item(s)* : requerido.  Uno o varios registros o tablas que se van a agregar al origen de datos.  
@@ -87,8 +86,8 @@ En estos ejemplos, borrará y agregará registros a una colección denominada **
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de helado de fresa. |<style>IMG {Max-width: None}</style> ![tabla con un registro](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>La colección **icecream** también se ha modificado. |
-| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **icecream** que incluye una cantidad de pistacho y una nata de hielo naranja. |![tabla con dos registros](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>La colección **icecream** también se ha modificado. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Borra todos los datos de la colección **IceCream** y, después, agrega un registro que incluye una cantidad de helado de fresa. |<style>IMG {Max-width: None}</style> ![tabla con un registro](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>La colección **icecream** también se ha modificado. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Agrega dos registros a la colección **icecream** que incluye una cantidad de pistacho y una nata de hielo naranja. |![tabla con dos registros](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>La colección **icecream** también se ha modificado. |
 | **Clear( IceCream )** |Quita todos los registros de la colección **IceCream**. |![tabla vacía](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>La colección **icecream** también se ha modificado. |
 
 Para obtener ejemplos paso a paso de cómo crear una colección, vea [crear y actualizar una colección](../create-update-collection.md).
@@ -99,7 +98,7 @@ En estos ejemplos se examina cómo se administran los argumentos de registro y t
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **ClearCollect (IceCream; {&nbsp;Flavor:&nbsp;"chocolate";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"vainilla";&nbsp;Quantity:&nbsp;200&nbsp;})** | Borre todos los datos y, a continuación, agregue dos registros a la colección **icecream** , que incluye una cantidad de chocolate y una nata de hielo de vainilla.  Los registros que se van a agregar se proporcionan como argumentos individuales para la función.| ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream.png) <br><br>La colección **icecream** también se ha modificado. |
-| **ClearCollect (IceCream; tabla ({&nbsp;Flavor:&nbsp;"chocolate";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"vainilla";&nbsp;Quantity:&nbsp;200&nbsp;}))** | Igual que el ejemplo anterior, salvo que los registros se combinan en una tabla y se pasan a través de un único argumento. El contenido de la tabla se extrae registro por registro antes de agregarse a la colección **icecream** . | ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream.png)<br><br>La colección **icecream** también se ha modificado. |
-| **ClearCollect (IceCream;<br>{&nbsp;Favorites: tabla ({&nbsp;Flavor:&nbsp;"chocolate";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"vainilla";&nbsp;Quantity:&nbsp;200&nbsp;})})** | Igual que el ejemplo anterior, salvo que la tabla se ajusta en un registro.  Los registros de la tabla no se extraen y, en su lugar, se agrega toda la tabla como una subtabla del registro. | ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>La colección **icecream** también se ha modificado. |
+| **ClearCollect (IceCream, {&nbsp;Flavor:&nbsp;"chocolate",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"vainilla",&nbsp;Quantity:&nbsp;200&nbsp;})** | Borre todos los datos y, a continuación, agregue dos registros a la colección **icecream** , que incluye una cantidad de chocolate y una nata de hielo de vainilla.  Los registros que se van a agregar se proporcionan como argumentos individuales para la función.| ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream.png) <br><br>La colección **icecream** también se ha modificado. |
+| **ClearCollect (IceCream, tabla ({&nbsp;Flavor:&nbsp;"chocolate",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"vainilla",&nbsp;Quantity:&nbsp;200&nbsp;}))** | Igual que el ejemplo anterior, salvo que los registros se combinan en una tabla y se pasan a través de un único argumento. El contenido de la tabla se extrae registro por registro antes de agregarse a la colección **icecream** . | ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream.png)<br><br>La colección **icecream** también se ha modificado. |
+| **ClearCollect (IceCream,<br>{&nbsp;Favorites: tabla ({&nbsp;Flavor:&nbsp;"chocolate",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"vainilla",&nbsp;Quantity:&nbsp;200&nbsp;})})** | Igual que el ejemplo anterior, salvo que la tabla se ajusta en un registro.  Los registros de la tabla no se extraen y, en su lugar, se agrega toda la tabla como una subtabla del registro. | ![los registros de chocolate y vainilla agregados a la colección](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>La colección **icecream** también se ha modificado. |
 

@@ -1,6 +1,6 @@
 ---
 title: Funciones Enable y Disable | Microsoft Docs
-description: Información de referencia para las funciones Enable y Disable en PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia de las funciones enable y Disable en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b58b57ae880f54fc7fccb5aa4c49f0e2fcad6d0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: af1522934bcfee13c00950a3686583393699d0ad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992767"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731100"
 ---
-# <a name="enable-and-disable-functions-in-powerapps"></a>Funciones Enable y Disable en PowerApps
+# <a name="enable-and-disable-functions-in-power-apps"></a>Habilitar y deshabilitar funciones en Power apps
 Activa o desactiva una [señal](signals.md).
 
 ## <a name="overview"></a>Información general

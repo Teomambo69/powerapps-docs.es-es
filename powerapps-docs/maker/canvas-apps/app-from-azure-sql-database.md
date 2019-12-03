@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679946"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724158"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vista previa: cree una aplicación de lienzo desde Azure SQL Database
 
@@ -43,7 +43,7 @@ En este tema, usará los datos de la Azure SQL Database para crear una aplicaci�
 
 1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
 2. Navegue hasta el SQL Database.
-3. Seleccione PowerApps.
+3. Seleccione Power apps.
 
     
     ![Opción de Power Apps en SQL Database opciones](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Opción de Power apps dentro de SQL Database")
@@ -109,10 +109,10 @@ Power apps puede conectarse al SQL Database **permitir el acceso al control de s
 En esta guía de inicio rápido, ha creado una aplicación con datos de su SQL Database mediante el Azure Portal. Como paso siguiente, personalice la aplicación con controles, imágenes y lógica para satisfacer mejor sus necesidades empresariales.
 
 > [!div class="nextstepaction"]
-> [Diseño de la interfaz de la aplicación Canvas en PowerApps](add-configure-controls.md)
+> [Diseño de la interfaz de la aplicación Canvas en Power apps](add-configure-controls.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Compartir una aplicación de lienzo en PowerApps](share-app.md) </br>
-- [Incorporación de una conexión de datos a una aplicación de lienzo en PowerApps](add-data-connection.md#add-data-source)</br>
-- [Microsoft Learn: personalización de una aplicación de lienzo en PowerApps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)
+- [Compartir una aplicación de lienzo en Power apps](share-app.md) </br>
+- [Agregar una conexión de datos a una aplicación de lienzo en Power apps](add-data-connection.md#add-data-source)</br>
+- [Microsoft Learn: personalización de una aplicación de lienzo en Power apps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)

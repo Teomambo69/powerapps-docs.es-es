@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cbf5fdaf3ae6cbba2f89124316ac6d23455a712c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674785"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733053"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generación de una aplicación de lienzo para controlar solicitudes de proyecto
 > [!NOTE]
@@ -86,7 +85,7 @@ Ahora que las listas de SharePoint están en su sitio, podemos generar y persona
    
     ![Propiedad Elementos](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Cambie la fórmula a **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+6. Cambie la fórmula a **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Barra de fórmulas](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
@@ -167,7 +166,7 @@ Cuando se juntan las funciones en la fórmula, ocurre lo siguiente:
 
 4. Ahora la función **SortByColumns** puede ordenar la galería. En este caso, la ordena por el campo **Title**, pero puede ser un campo que no se en el que se busca.
 
-Si ha seguido la explicación, esperamos que conozca mejor cómo funciona esta fórmula y cómo puede combinar funciones y otros elementos para lograr el comportamiento que las aplicaciones requieren. Para más información, consulte [Referencia sobre fórmulas para PowerApps](formula-reference.md).
+Si ha seguido la explicación, esperamos que conozca mejor cómo funciona esta fórmula y cómo puede combinar funciones y otros elementos para lograr el comportamiento que las aplicaciones requieren. Para obtener más información, vea [referencia de fórmulas para Power apps](formula-reference.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 El siguiente paso de esta serie de tutoriales es [crear un flujo para administrar aprobaciones de proyectos](sharepoint-scenario-approval-flow.md).

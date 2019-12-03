@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2e3298f09857e26df4c3707d8ae36737557b08
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675444"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732835"
 ---
-# <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimización del rendimiento de las aplicaciones de lienzo en PowerApps
+# <a name="optimize-canvas-app-performance-in-power-apps"></a>Optimizar el rendimiento de la aplicación de lienzo en Power apps
 Microsoft está trabajando duro para mejorar el rendimiento de todas las aplicaciones que se ejecutan en la plataforma de Power apps. pero puede seguir los procedimientos recomendados que aparecen en este tema para mejorar el rendimiento de las aplicaciones que se crean.
 
 Cuando un usuario abre una aplicación, esta pasa a través de estas fases de ejecución antes de mostrar cualquier interfaz de usuario: 
@@ -98,7 +98,7 @@ Tal como se muestra en [esta lista](delegation-list.md), distintos orígenes de 
 
 ![Uso de la delegación](./media/performance-tips/perfdelegation1.png)
 
-Por ejemplo, las listas de SharePoint admiten la delegación desde la función [**Filter**](functions/function-filter-lookup.md), pero no desde la función [**Search**](functions/function-filter-lookup.md). Por tanto, debería usar **Filter** en lugar de **Search** para buscar elementos en una galería si la lista de SharePoint contiene más de 500 elementos. Para más sugerencias, consulte la entrada de blog [Working with large SharePoint lists in PowerApps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (Trabajo con listas grandes de SharePoint en PowerApps). 
+Por ejemplo, las listas de SharePoint admiten la delegación desde la función [**Filter**](functions/function-filter-lookup.md), pero no desde la función [**Search**](functions/function-filter-lookup.md). Por tanto, debería usar **Filter** en lugar de **Search** para buscar elementos en una galería si la lista de SharePoint contiene más de 500 elementos. Para obtener más sugerencias, vea [trabajar con listas de SharePoint de gran tamaño en Power apps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (entrada de blog). 
 
 ## <a name="use-delayed-load"></a>Uso de la carga retrasada
 Active la [característica experimental](working-with-experimental.md) para carga retrasada si la aplicación tiene más de 10 pantallas, ninguna regla y muchos controles que se encuentran en varias pantallas y que están directamente enlazados al origen de datos. Si compila este tipo de aplicación y no habilita esta característica, el rendimiento de la aplicación podría verse afectado porque los controles que están en todas las pantallas se deben rellenar incluso en las pantallas que no están abiertas. Además, es necesario actualizar todas las pantallas de la aplicación cada vez que cambia el origen de datos, como ocurre cuando el usuario agrega un registro.
