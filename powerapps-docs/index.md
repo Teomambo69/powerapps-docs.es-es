@@ -8,13 +8,13 @@ featureFlags:
 - clicktale
 ms.service: powerapps
 ms.custom:
-- powerapps-hub
-ms.openlocfilehash: ff7ac06904426ad990a99098b97814701e24ee22
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+- PowerApps-hub
+ms.openlocfilehash: 2f88e6f6330ec1e39bb4090718e886b1ceb9bbb3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680199"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725878"
 ---
 <div id="main"
    class="v2">
