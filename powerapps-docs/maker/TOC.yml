@@ -1106,6 +1106,8 @@
   items:
     - name: ¿Qué son los portales de Power Apps?
       href: ./portals/overview.md
+    - name: Actualizaciones de versión
+      href: ./portals/release-updates.md
     - name: Diseño y compilación de un portal
       items:
         - name: Plantillas de portal
@@ -1260,6 +1262,12 @@
               href: ./portals/configure/add-geolocation.md
         - name: Implementación del RGPD en los portales
           href: ./portals/configure/implement-gdpr.md
+        - name: Creación y ejecución de anuncios
+          href: ./portals/configure/create-run-advertisement.md
+        - name: Recopilación de comentarios mediante sondeos
+          href: ./portals/configure/gather-feedback-poll.md
+        - name: Creación y administración de estados de publicación
+          href: ./portals/configure/publishing-states.md
     - name: Personalización avanzada del portal
       items:
         - name: Trabajar con plantillas de Liquid
@@ -1338,6 +1346,8 @@
       href: ./portals/known-issues.md
     - name: Preguntas más frecuentes sobre los portales de Power Apps
       href: ./portals/faq.md
+    - name: "Preguntas más frecuentes sobre Adxstudio Portals\_v7 heredado"
+      href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
     - name: ¿Qué es Common Data Service?
