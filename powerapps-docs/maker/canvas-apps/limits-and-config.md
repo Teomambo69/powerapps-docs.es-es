@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
+ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729605"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831340"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de la plataforma de dispositivos y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de energía.
@@ -100,11 +100,11 @@ Esta lista identifica todos los servicios a los que se comunica Power apps Studi
 | \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
 | \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
-| \*. blob.core.windows.net |https | Blob Storage |
+| \*blob.core.windows.net |https | Blob Storage |
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| host | https | Power apps Mobile
+| localhost | https | Power Apps Mobile
 
 > [!NOTE]
 > Si usa una VPN, debe configurarse para excluir localhost de la tunelización de Power apps Mobile.
@@ -115,27 +115,4 @@ Puede encontrar información sobre los límites de tamaño en el texto, los hipe
 
 ## <a name="power-apps-per-app-plan"></a>Power apps por plan de aplicación
 
-Power apps por plan de aplicación permite a los usuarios individuales ejecutar 2 aplicaciones en un solo portal para un escenario empresarial específico en función de las capacidades completas de Power apps. Este plan proporciona a los usuarios una forma sencilla de empezar a trabajar con la plataforma antes de la adopción de una escala más amplia.
-
-Después de que un administrador asigna Power apps por plan de aplicación a un entorno, se asigna a los usuarios sin licencia cuando una aplicación de ese entorno se comparte con ellos. Puede ver cómo un administrador asigna [aquí](https://docs.microsoft.com/power-platform/admin/capacity-add-on)los planes de cada aplicación.
-
-Siga estos pasos para desactivar la asignación de planes por aplicación para los usuarios cuando se comparte una aplicación con ellos:
-
-- Elija la **aplicación**.
-- Seleccione **configuración**.
-- Cambie la opción de alternancia asignación **automática por aplicación** en la **asignación**de pasadas.
-
-El comando de alternancia **asignación automática por aplicación** se muestra en la configuración de todas las aplicaciones.
-
-> [!NOTE]
-> La deshabilitación del plan por aplicación está actualmente disponible solo para las aplicaciones de canvas.  Las aplicaciones controladas por modelos y los portales tendrán esta capacidad en el futuro.
->
-> La capacidad de controlar la asignación por plan de aplicación para una aplicación solo está disponible para las aplicaciones que se encuentran en un entorno que tiene planes por aplicación asignados en el centro de administración de la [plataforma de energía](https://admin.powerplatform.microsoft.com).  
-
-### <a name="app-settings"></a>Configuración de la aplicación
-
-![Configuración de la aplicación Canvas](./media/limits-and-config/app_settings.png "Configuración de la aplicación Canvas")
-
-### <a name="pass-assignment"></a>Asignación de paso
-
-![Asignación de paso de configuración de aplicación de Canvas](./media/limits-and-config/app_settings_pass_assignment.png "Asignación de paso de configuración de aplicación de Canvas")
+La información está ahora disponible en la sección [Power apps por plan de aplicación](/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan) de la guía de administración de la plataforma de energía.
