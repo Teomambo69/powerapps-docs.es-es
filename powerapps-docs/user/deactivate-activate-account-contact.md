@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
-ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
+ms.openlocfilehash: 2a0474b17f62e30ec41cf04001f774a42ee2e849
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72023299"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725808"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>Desactivar o activar una cuenta o un contacto
 
@@ -37,7 +37,7 @@ Si más adelante necesita reactivar una cuenta desactivada, es fácil hacerlo.
 2.  Seleccione la cuenta o el contacto activo que desea desactivar, en la barra de comandos seleccione **desactivar**y, a continuación, confirme la desactivación.
 
     > [!div class="mx-imgBorder"]
-    > ![Desactivar una cuenta en powerapps](media/DeactiveAccounts.png "desactivar una cuenta en powerapps")
+    > ![Desactivación de una cuenta en Power apps](media/DeactiveAccounts.png "Desactivación de una cuenta en Power apps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Activar una cuenta o un contacto  
@@ -53,7 +53,7 @@ Si más adelante necesita reactivar una cuenta desactivada, es fácil hacerlo.
 5.  Seleccione **Activar**y, a continuación, confirme la activación.  
 
     > [!div class="mx-imgBorder"]
-    > ![Activar una cuenta en powerapps](media/ActiveAccounts.png "activar una cuenta en powerapps")  
+    > ![Activación de una cuenta en Power apps](media/ActiveAccounts.png "Activación de una cuenta en Power apps")  
 
 
 

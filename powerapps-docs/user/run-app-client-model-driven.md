@@ -1,5 +1,5 @@
 ---
-title: Ejecución de una aplicación controlada por modelos en un dispositivo móvil con PowerApps | Microsoft Docs
+title: Ejecución de una aplicación controlada por modelos en un dispositivo móvil con Power apps | Microsoft Docs
 description: Vea cómo ejecutar una aplicación controlada por modelos en un dispositivo móvil.
 author: Mattp123
 manager: kvivek
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61731c59549c40e689f056372fe58f4b60968e1c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8d05ad715a2400f43464810a275848ab779e39d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543465"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680429"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>Ejecutar una aplicación controlada por modelos en un dispositivo móvil
 
 Después de crear la aplicación y de compartirla con usted, puede ejecutarla en una serie de dispositivos móviles conocidos, como Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación controlada por modelos en un dispositivo móvil. 
 
-Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
+Para seguir este procedimiento, si no se ha registrado en Power Apps, [Regístrese gratuitamente antes de](https://make.powerapps.com/signup?redirect=marketing&email=) empezar. Asegúrese también de que tiene acceso a una aplicación que haya creado o que otra persona haya creado y compartido con usted.
 
 ## <a name="run-the-model-driven-app"></a>Ejecución de la aplicación controlada por modelos
 
-Las aplicaciones controladas por modelos no se ejecutan en la aplicación móvil de PowerApps, sino que se ejecutan en un dispositivo móvil con la aplicación móvil de Dynamics 365 o en el explorador web del teléfono. 
+Las aplicaciones controladas por modelos no se ejecutan en la aplicación móvil de Power apps. sino que se ejecutan en un dispositivo móvil con la aplicación móvil de Dynamics 365 o en el explorador web del teléfono. 
 
 ### <a name="use-the-mobile-app"></a>Uso de la aplicación móvil
 Instale la aplicación Dynamics 365 para teléfonos o Dynamics 365 para tabletas en la tienda de aplicaciones de su dispositivo. Más información: [Instalar Dynamics 365 para teléfonos y tabletas](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets)

@@ -16,29 +16,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896198"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680682"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Ejecución de una aplicación en un explorador web
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo o controlada por modelos en un explorador web desde la [página principal de Dynamics 365](https://home.dynamics.com).
 
 Para seguir este inicio rápido, necesita:
-- Una licencia de PowerApps. Esta está disponible con un plan de PowerApps, como la versión de prueba del [Plan 2 de PowerApps](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), o cualquiera de los planes de [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) o [Dynamics 365](https://dynamics.microsoft.com/pricing/) que incluyen PowerApps. 
+- Una licencia de Power apps. Esto está disponible con un plan de Power Apps, como la [evaluación de Power apps plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), o cualquiera de los planes [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) o [Dynamics 365](https://dynamics.microsoft.com/pricing/) que incluyen Power apps. 
 - Acceso a una aplicación que haya compilado o que otra persona haya compilado y compartido con usted.
 - Acceso a un explorador web y un sistema operativo compatibles.
-   - Para las aplicaciones de Canvas, consulte: [Requisitos del sistema, límites y valores de configuración](../maker/canvas-apps/limits-and-config.md)
-   - Para aplicaciones controladas por modelos, consulte: [Exploradores Web y dispositivos móviles compatibles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - Para las aplicaciones de lienzo, vea [Requisitos del sistema, límites y valores de configuración](../maker/canvas-apps/limits-and-config.md)
+   - Para las aplicaciones controladas por modelos, vea: [Exploradores web y dispositivos móviles admitidos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Inicio de sesión en Dynamics 365
 Inicie sesión en Dynamics 365 en [https://home.dynamics.com](https://home.dynamics.com).
 
 ## <a name="find-an-app-on-the-home-page"></a>Buscar una aplicación en la página principal
-En la página principal se pueden mostrar varios tipos de aplicaciones empresariales, pero se puede buscar una aplicación específica si se escribe al menos una parte de su nombre en el cuadro de búsqueda. También se puede filtrar la lista para mostrar solo las aplicaciones creadas por un origen específico, como PowerApps. Para ello, seleccione **filtrar** y, a continuación, seleccione el origen.
+En la página principal se pueden mostrar varios tipos de aplicaciones empresariales, pero se puede buscar una aplicación específica si se escribe al menos una parte de su nombre en el cuadro de búsqueda. También puede filtrar la lista para mostrar solo las aplicaciones creadas por un origen específico, como Power apps. Para ello, seleccione **filtrar** y, a continuación, seleccione el origen.
 
 Si ha instalado la aplicación recientemente, es posible que no aparezca inmediatamente en la lista de aplicaciones. Seleccione **sincronizar** para mostrar todas las aplicaciones. Este proceso puede tardar hasta un minuto.
 

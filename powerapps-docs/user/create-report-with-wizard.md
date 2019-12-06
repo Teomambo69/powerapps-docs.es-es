@@ -1,6 +1,6 @@
 ---
 title: Crear un informe mediante el Asistente para informes | Microsoft Docs
-description: Crear un informe mediante el Asistente para informes en PowerApps
+description: Crear un informe mediante el Asistente para informes en Power apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f953c44d81742baca39058cd68180ca63833eb6
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.openlocfilehash: 8c7bde8d3aa5406a7ddcc5ecb2df4c2c7db7051e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420292"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733269"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>Creación de los informes mediante el Asistente para informes
 
@@ -30,13 +30,13 @@ Use el Asistente para informes para crear informes con gráficos y tablas que le
 
 Todos los informes que se crean mediante el Asistente para informes son informes basados en Fetch. Tenga en cuenta que todos los informes generados con el Asistente para informes se imprimen en modo horizontal.
 
-## <a name="create-a-new-report"></a>Crear un nuevo informe
+## <a name="create-a-new-report"></a>Crear un informe nuevo
 
 1. En el panel de navegación izquierdo, seleccione el área informes.  
 2. En la barra de comandos, seleccione **nuevo**.
 
     > [!div class="mx-imgBorder"]
-    > ![Crear un nuevo informe](media/newreport.png "Crear un nuevo informe")
+    > ![Crear un nuevo informe](media/newreport.png "Crear un informe nuevo")
   
 3. Un **Informe:** aparecerá la pantalla nuevo informe. En **tipo de informe** , deje la selección predeterminada en, **Informe del Asistente para informes** y seleccione el botón **Asistente para informes** . 
 
@@ -66,12 +66,12 @@ Todos los informes que se crean mediante el Asistente para informes son informes
 7. Seleccione el **tipo de registro** y la **columna** de los datos que desea que se agrupen en el informe. Cuando haya terminado de realizar las selecciones, haga clic en **Aceptar**.
 
     > [!div class="mx-imgBorder"]
-    > ![pantalla](media/report_wizard_5.png " de agrupación de DD Agregar pantalla") de agrupación
+    > ![pantalla de agrupación de DD](media/report_wizard_5.png "Agregar pantalla de agrupación")
   
 8. Seleccione **haga clic aquí para agregar una columna** a las columnas de datos relacionadas con el tipo de registro que eligió en el paso anterior.  
 
     > [!div class="mx-imgBorder"]
-    > ![Agregar pantalla](media/report_wizard_6.png " de agrupación Agregar pantalla") de agrupación
+    > ![Agregar pantalla de agrupación](media/report_wizard_6.png "Agregar pantalla de agrupación")
 
 9. En la pantalla **Agregar columna** , elija los datos que desea que aparezcan para la columna y, a continuación, seleccione **Aceptar**. 
 

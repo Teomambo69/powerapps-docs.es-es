@@ -1,5 +1,5 @@
 ---
-title: Cree, edite o guarde una búsqueda de búsqueda avanzada en PowerApps controlado por modelos | MicrosoftDocs
+title: Cree, edite o guarde una búsqueda de búsqueda avanzada en aplicaciones de energía controladas por modelos | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4adffdfeb9235e7ffefc21d9f2b6cce64de354db
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: df28883fb4048a9f14ae305a40c54f154695bf4f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321612"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725909"
 ---
 # <a name="create-edit-or-save-an-advanced-find-search"></a>Crear, editar o guardar una búsqueda avanzada
 
@@ -32,7 +32,7 @@ Busque los registros que desee en la aplicación mediante la opción búsqueda a
   
    1.  En la lista **Buscar** , seleccione un tipo de registro.  
   
-   2.  Haga clic en **seleccionar** para definir criterios de búsqueda: campo (por ejemplo, nombre de cuenta o ciudad), el operador relacional de consulta (parte de una expresión como "es igual a" o "contiene" que define cómo se debe comparar un atributo especificado con un valor). valores que se van a buscar (por ejemplo, "Seattle" o "correo electrónico").  
+   2.  Haga clic en **seleccionar** para definir criterios de búsqueda: campo (por ejemplo, nombre de cuenta o ciudad), el operador relacional de consulta (parte de una expresión como "es igual a" o "contiene" que define cómo se debe comparar un atributo especificado con un valor) y los valores que se van a buscar (por ejemplo, "Seattle" o "correo electrónico").  
   
        Puede seleccionar los campos del tipo de registro actual o de los registros relacionados. Por ejemplo, una cuenta podría tener muchos registros de contactos relacionados.  
   

@@ -15,20 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733337"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
 
-Para seguir este procedimiento, si no está registrado en PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue PowerApps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en dispositivos iPhone, iPad o Android que ejecuten un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
+Para seguir este procedimiento, si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, a continuación, descargue Power apps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en un dispositivo iPhone, iPad o Android que ejecute un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
 
-## <a name="open-powerapps-and-sign-in"></a>Abrir PowerApps e iniciar sesión
-Abra PowerApps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
+## <a name="open-power-apps-and-sign-in"></a>Abrir Power apps e iniciar sesión
+Abra Power Apps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
 
 ![Usuario de inicio de sesión](./media/run-app-client/run-client-login.png)
 
@@ -51,7 +51,7 @@ Los siguientes filtros están disponibles:
 
     ![Marcar como favorito](./media/run-app-client/favorite.png)
 
-Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fecha de la última vez que se abrieron o modificaron, o bien alfabéticamente por nombre. Estas preferencias se conservan cuando cierra y vuelve a abrir PowerApps.
+Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fecha de la última vez que se abrieron o modificaron, o bien alfabéticamente por nombre. Estas preferencias se conservan al cerrar y volver a abrir Power apps.
 
 ![Menú Ordenar](./media/run-app-client/sort-menu.png)
 
@@ -64,7 +64,7 @@ Si filtró las aplicaciones, se buscará en la lista filtrada.
 ## <a name="run-an-app"></a>Ejecutar una aplicación
 Para ejecutar una aplicación de lienzo en un dispositivo móvil, pulse el icono de la aplicación. Si otro usuario creó la aplicación de lienzo y la compartió con usted en un correo electrónico, puede ejecutar la aplicación, si pulsa el vínculo del correo electrónico.
 
-Si es la primera vez que usa PowerApps, en una pantalla se muestra el gesto de deslizar rápidamente para cerrar la aplicación.
+Si es la primera vez que usa Power Apps, una pantalla muestra el gesto de deslizar rápidamente para cerrar la aplicación.
 
 ![Iniciar aplicación](./media/run-app-client/run-client-app.png)
 

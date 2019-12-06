@@ -1,6 +1,6 @@
 ---
 title: Uso de la aplicación Dynamics 365 para Outlook | MicrosoftDocs
-description: Use la aplicación Dynamics 365 para Outlook con PowerApps y Common Data Service.
+description: Use la aplicación Dynamics 365 para Outlook con Power apps y Common Data Service.
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f18b994dd0ff81b056c1868a49239d1801004ebd
-ms.sourcegitcommit: 2deb573fe40196b1921d151825d39ac04f6c4d79
+ms.openlocfilehash: 527f3f90b2fafbb8b2ac52a0dabf99a32e4c7521
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67266681"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680406"
 ---
 # <a name="use-dynamics-365-app-for-outlook"></a>Usar Dynamics 365 App for Outlook
 

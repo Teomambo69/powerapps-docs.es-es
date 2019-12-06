@@ -1,6 +1,6 @@
 ---
-title: Usar aplicaciones controladas por modelos en PowerApps | Microsoft Docs
-description: Proporciona información sobre cómo usar aplicaciones controladas por modelos en PowerApps.
+title: Usar aplicaciones controladas por modelos en Power apps | Microsoft Docs
+description: Proporciona información sobre cómo usar aplicaciones controladas por modelos en Power apps.
 author: mduelae
 ms.service: powerapps
 ms.topic: overview
@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fbe02e0844e1e6f93880bbb43d473989cc88ad2
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d9b2b9ce12d5899729050b3405b4eefc5e788f9f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900363"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725929"
 ---
-# <a name="use-model-driven-apps-in-powerapps"></a>Uso de aplicaciones controladas por modelos en PowerApps
+# <a name="use-model-driven-apps-in-power-apps"></a>Uso de aplicaciones controladas por modelos en Power apps
 
 Una aplicación controlada por modelos tiene varios componentes, como paneles, formularios, vistas, gráficos y procesos empresariales, que juntos ayudan a facilitar el uso de la aplicación. En esta sección se proporciona información sobre cómo navegar en una aplicación controlada por modelos, trabajar con registros, importar y exportar datos, y automatizar procesos con Power Automatic. 
 
 > [!IMPORTANT]
-> Dado que las aplicaciones de canvas proporcionan mucho control sobre la experiencia del usuario y, en esencia, pueden ser cualquier cosa, no hay mucha documentación de ayuda sobre cómo *usar una aplicación de lienzo*. Si necesita ayuda con el uso de una aplicación de lienzo, póngase en contacto con el creador de la aplicación o con el administrador de PowerApps.
+> Dado que las aplicaciones de canvas proporcionan mucho control sobre la experiencia del usuario y, en esencia, pueden ser cualquier cosa, no hay mucha documentación de ayuda sobre cómo *usar una aplicación de lienzo*. Si necesita ayuda con una aplicación de lienzo, póngase en contacto con el administrador de App Maker o de Power apps.
 
 ### <a name="related-topics"></a>Temas relacionados
 

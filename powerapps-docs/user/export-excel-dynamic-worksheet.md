@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 804deaf9f12d4c73abbfd8f414f27307fe5aa7d6
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 99aa4fb38311d51237abba2c56d69e9845ea280f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63318758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733239"
 ---
 # <a name="export-to-an-excel-dynamic-worksheet"></a>Exportar a una hoja de cálculo dinámica de Excel
 
@@ -43,7 +43,7 @@ No puede exportar datos a una hoja de cálculo dinámica de Excel para todos los
    > 
    > Para solucionar el problema:  
    > 
-   >    1. Abra Excel y vaya a **archivo** > **Opciones** > **centro de confianza** **configuración centro configuración** > **vista protegida**.  
+   >    1. Abra Excel y vaya a **archivo** > **Opciones** > centro de **confianza** **configuración centro configuración** > **vista protegida**.  
    >    2. En **vista protegida**, desactive los tres elementos.  
    >    3. Seleccione **Aceptar** > **Aceptar**.  
    >     
@@ -53,10 +53,10 @@ No puede exportar datos a una hoja de cálculo dinámica de Excel para todos los
   
 6. Si ve la advertencia de seguridad **se han deshabilitado las conexiones de datos externos**, seleccione **Habilitar contenido**.  
   
-7. Para actualizar los datos del archivo, en la pestaña **datos** , seleccione **actualizar desde PowerApps**.  
+7. Para actualizar los datos del archivo, en la pestaña **datos** , seleccione **actualizar desde Power apps**.  
   
    > [!NOTE]
-   > Si tiene un número de teléfono que empieza por **+** o **–** (por ejemplo, + 1-123-456-7890), al actualizar la hoja de cálculo dinámica, el campo número de teléfono no mostrará el número correctamente.   
+   > Si tiene un número de teléfono que empieza por **+** o **(por ejemplo, +** 1-123-456-7890), al actualizar la hoja de cálculo dinámica, el campo número de teléfono no mostrará el número correctamente.   
    >
    > Para evitar el problema, use un espacio o paréntesis **()** , de la siguiente forma: + 1 123-456-7890 o + 1 (123)-456-7890.  
   
@@ -64,9 +64,9 @@ No puede exportar datos a una hoja de cálculo dinámica de Excel para todos los
   
 - Puede enviar por correo electrónico un archivo de Excel dinámico o almacenarlo como un archivo compartido si los destinatarios están en el mismo dominio que usted. Cuando los destinatarios abren el archivo dinámico, verán los datos que tienen permiso para verlos en la aplicación, por lo que los datos que ven pueden ser diferentes de lo que ve.  
   
-- Algunas vistas del sistema, como las cuentas: Ninguna actividad de la campaña en los últimos 3 meses, solo se puede exportar a una hoja de cálculo de Excel estática.  
+- Algunas vistas del sistema, como las cuentas: no hay actividades de campaña en los últimos 3 meses, solo se pueden exportar a una hoja de cálculo de Excel estática.  
   
-- En PowerApps, los valores de moneda se exportan a Excel como números. Para dar formato a los datos como moneda después de completar la exportación, vea el tema de ayuda de Excel titulado "Mostrar números como moneda".
+- En Power Apps, los valores de moneda se exportan a Excel como números. Para dar formato a los datos como moneda después de completar la exportación, vea el tema de ayuda de Excel titulado "Mostrar números como moneda".
 
 - Los valores de fecha y hora que se ven en la aplicación solo se muestran como fecha al exportar el archivo a Excel, pero la celda realmente muestra la fecha y la hora.  
   

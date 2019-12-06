@@ -1,5 +1,5 @@
 ---
-title: Exportar datos a Excel en PowerApps | MicrosoftDocs
+title: Exportar datos a Excel en Power apps | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 2c23b25c062bc5ac4be26132c63f4cc4a79c3fad
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: 1f9368a7630e7b2f94e7b624e0d005f89b919a59
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316872"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680636"
 ---
 # <a name="export-data-to-excel"></a>Exportar datos a Excel
 
@@ -37,15 +37,15 @@ Puede exportar datos a un archivo de Excel estándar que puede usar en cualquier
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            Texto, símbolo de marca de graduación, teléfono, conjunto de opciones y búsqueda            |                                                       Muestra como texto y conjunto de opciones se convierte en una lista desplegable                                                       |
 |                                 Correo electrónico, URL                                 |                                                                        Muestra como general                                                                         |
-|                                   Number                                   |                                                             Muestra como número sin separador de grupos                                                             |
-|                                  Currency                                  |                                                         Muestra como número y no incluye el signo de dólar ($)                                                         |
+|                                   Número                                   |                                                             Muestra como número sin separador de grupos                                                             |
+|                                  Divisa                                  |                                                         Muestra como número y no incluye el signo de dólar ($)                                                         |
 |                          Solo fecha, fecha y hora                          |                                                                       Solo se muestra como fecha                                                                        |
-|                       Campos calculados y acumulados                        | Editable en Excel, pero no se puede importar de nuevo en PowerApps |
-|                               Campos protegidos                               | Editable en Excel, pero no se puede importar de nuevo en PowerApps |
+|                       Campos calculados y acumulados                        | Editable en Excel, pero no se puede importar a Power apps |
+|                               Campos protegidos                               | Editable en Excel, pero no se puede importar a Power apps |
   
 ## <a name="see-which-type-of-export-works-best-for-you"></a>Vea qué tipo de exportación funciona mejor para usted  
   
-|                                                                                                               Tarea                                                                                                                |                                              Más información                                               |
+|                                                                                                               Task                                                                                                                |                                              Más información                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 |   Realice un análisis *ad hoc* o *What if* sin modificar los datos de la aplicación. O bien, realizar una edición en masa rápida en varios registros.   | [Exportar a Excel online](export-to-excel-online.md) |
 |                                                                   Obtenga una instantánea de los datos en los datos y la hora actuales, o bien si desea compartirlo con otros usuarios.                                                                    |           [Exportar a una hoja de cálculo estática de Excel](export-excel-static-worksheet.md)           |
@@ -66,7 +66,7 @@ El mensaje de error se produce debido a un valor de configuración de en Excel. 
   
 2. Vaya a **archivo** > **Opciones**.  
   
-3. Vaya a la**configuración del centro de confianza**del centro > de **confianza**.  
+3. Vaya al **centro de confianza** > **configuración del centro de confianza**.  
   
 4. Seleccione **vista protegida** y, a continuación, desactive las casillas de las dos primeras opciones.  
   

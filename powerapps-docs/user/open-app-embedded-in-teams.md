@@ -16,28 +16,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543493"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726216"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
-Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. Se puede personalizar la experiencia de Teams mediante la adición de aplicaciones de lienzo de PowerApps a los canales de Teams. En este tema aprenderá a agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y abrirla luego desde ese canal. 
+Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. Puede personalizar la experiencia de los equipos agregando aplicaciones de lienzo de Power apps a los canales en Teams. En este tema aprenderá a agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y abrirla luego desde ese canal. 
 
 ![Aplicación insertada en Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Si no está registrado para PowerApps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
+Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para seguir este procedimiento, necesita una [suscripción a Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) y un [canal en Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
-## <a name="sign-in-to-powerapps"></a>Inicio de sesión en PowerApps
+## <a name="sign-in-to-power-apps"></a>Inicio de sesión en Power apps
 
-Inicie sesión en PowerApps en [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Inicie sesión en Power Apps en [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="add-an-app"></a>Incorporación de una aplicación
 
@@ -92,7 +92,7 @@ Para quitar la aplicación del canal, haga clic en la pestaña **Presentación d
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tema ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y luego la ha abierto en ese canal. Para obtener más información sobre PowerApps, continúe con los tutoriales de PowerApps.
+En este tema ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y luego la ha abierto en ese canal. Para más información sobre Power Apps, continúe con los tutoriales de Power apps.
 
 > [!div class="nextstepaction"]
-> [Tutoriales de PowerApps](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Tutoriales de Power apps](../maker/canvas-apps/get-started-create-from-blank.md)

@@ -1,6 +1,6 @@
 ---
-title: Agregar un informe desde fuera de PowerApps | Microsoft Docs
-description: Agregar un informe desde fuera de PowerApps
+title: Agregar un informe desde fuera de las aplicaciones avanzadas | Microsoft Docs
+description: Agregar un informe desde fuera de las aplicaciones avanzadas
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,16 +16,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f775c5607720adcf233524522accb926d955289
-ms.sourcegitcommit: c4328e83f5caa58eab83757180b56ced480af220
+ms.openlocfilehash: e730d498a4d82518d0f908645e26a541c1e8c6af
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71982649"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725852"
 ---
-# <a name="add-a-report-from-outside-powerapps"></a>Agregar un informe desde fuera de PowerApps
+# <a name="add-a-report-from-outside-power-apps"></a>Agregar un informe desde fuera de las aplicaciones avanzadas
 
-Si ha creado un informe personalizado fuera del sistema, puede agregarlo fácilmente a PowerApps.
+Si ha creado un informe personalizado fuera del sistema, puede agregarlo fácilmente a Power apps.
 
 Para obtener información sobre cómo crear un informe personalizado, consulte la [Guía de informes y análisis](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/get-started-writing-reports).
 
@@ -37,7 +37,7 @@ Para obtener información sobre cómo crear un informe personalizado, consulte l
    1. En la sección **origen** , en el cuadro **tipo de informe** , seleccione **archivo existente**.  
    
      > [!div class="mx-imgBorder"]
-     > ![Agregar un informe existente](media/add_existing_report.png "Agregar un informe") existente
+     > ![Agregar un informe existente](media/add_existing_report.png "Agregar un informe existente")
   
    2. En el cuadro **Ubicación del archivo** , escriba la ruta de acceso y el nombre del archivo que desea agregar, o elija **examinar** para buscar el archivo. 
    
@@ -57,11 +57,11 @@ Para obtener información sobre cómo crear un informe personalizado, consulte l
   
    2.  El cuadro de texto **Informe primario** muestra el informe primario del informe actual, si existe.  
   
-   3. **Categorías**. Elija el botón de botón de puntos(media/ellipsis-button.png "suspensivos") del ![botón]de puntos suspensivos **para este campo** y, a continuación, especifique las categorías que desea incluir en este informe.  
+   3. **Categorías**. Elija el botón de ![botón de puntos suspensivos](media/ellipsis-button.png "Botón de puntos suspensivos") del **campo seleccionar o cambiar los valores para este campo** y, a continuación, especifique las categorías que desea incluir en este informe.  
   
-   4. **Tipos de registro relacionados**. Para que el informe aparezca en la lista de informes en una página para tipos de registros específicos, elija el botón de puntos suspensivos del botón de puntos(media/ellipsis-button.png "suspensivos") de los ![puntos suspensivos] **para este campo** y, a continuación, seleccione tipos de registro.  
+   4. **Tipos de registro relacionados**. Para que el informe se muestre en la lista de informes de una página para tipos de registros específicos, elija el botón de ![puntos suspensivos](media/ellipsis-button.png "Botón de puntos suspensivos") **de seleccionar o cambiar los valores de este campo** y, a continuación, seleccione tipos de registro.  
   
-   5. **Mostrar en**. Para especificar dónde deben estar visibles los informes, elija el botón de(media/ellipsis-button.png "puntos suspensivos") de los puntos suspensivos del ![botón] **seleccionar o cambiar los valores de este campo** y, a continuación, seleccione una o varias de las opciones.  
+   5. **Mostrar en**. Para especificar dónde deben estar visibles los informes, elija el botón de ![puntos suspensivos](media/ellipsis-button.png "Botón de puntos suspensivos") **de seleccionar o cambiar los valores de este campo** y, a continuación, seleccione una o varias de las opciones.  
   
         Si no se selecciona ningún valor, el informe no será visible para los usuarios finales.  
   

@@ -1,5 +1,5 @@
 ---
-title: Usar métodos abreviados de teclado en PowerApps | MicrosoftDocs
+title: Usar métodos abreviados de teclado en Power apps | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,14 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc8e73353500610f578c1dc66cd6318150facb00
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543185"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733193"
 ---
-# <a name="use-keyboard-shortcuts-in-powerapps"></a>Usar métodos abreviados de teclado en PowerApps
+# <a name="use-keyboard-shortcuts-in-power-apps"></a>Usar métodos abreviados de teclado en Power apps
 
 Los métodos abreviados de teclado proporcionan una forma alternativa de realizar tareas comunes en lugar de usar el mouse o pulsar con el dedo. Ayudan en la navegación sin problemas de la interfaz. Los siguientes métodos abreviados de teclado se aplican a todas las aplicaciones. 
 
@@ -38,26 +38,26 @@ Los métodos abreviados de teclado proporcionan una forma alternativa de realiza
 |---------|---------|
 |Completar el comando para la opción activa o el botón|  ENTRAR|
 |Cancelar un comando o cerrar una lista o un cuadro de diálogo seleccionado| Esc|
-|Guardar| Ctrl + S |
-|Guardar y cerrar| N/A|
+|Guardar| Ctrl+S |
+|Guardar y cerrar| N/D|
 |Cancelar ediciones y cerrar (cerrar) |Esc|
-|Eliminar el registro (cuando los formularios están en modo de edición)| N/A|
-|Guardar y abrir un nuevo formulario (guardar y nuevo) (cuando los formularios están en modo de edición)| N/A|
-|Abrir el menú de búsqueda con los elementos usados más recientemente en orden alfabético| Flecha abajo|
+|Eliminar el registro (cuando los formularios están en modo de edición)| N/D|
+|Guardar y abrir un nuevo formulario (guardar y nuevo) (cuando los formularios están en modo de edición)| N/D|
+|Abrir el menú de búsqueda con los elementos usados más recientemente en orden alfabético| Flecha Bajar|
 |Abrir una lista desplegable de búsqueda| ENTRAR|
 |Cerrar una lista desplegable de búsqueda|Esc|
 |Abrir un registro encontrado en la búsqueda con formularios en modo de edición| ENTRAR|
-|Agregar un artículo a un correo electrónico| N/A|
-|Aplicar una plantilla de correo electrónico (al editar un mensaje de correo electrónico)| N/A|
+|Agregar un artículo a un correo electrónico| N/D|
+|Aplicar una plantilla de correo electrónico (al editar un mensaje de correo electrónico)| N/D|
 
 ## <a name="form-navigation-shortcuts"></a>Métodos abreviados de navegación de formularios
 
 |Task | Interfaz unificada |
 |---------|---------|
 |Moverse a la opción siguiente, grupo de opciones o campo|Pestaña|
-|Moverse a la opción anterior, grupo de opciones o campo| Mayús + Tab |
+|Moverse a la opción anterior, grupo de opciones o campo| Mayús+Tabulador |
 |Desplazarse entre las opciones de una lista abierta o entre las opciones de un grupo de opciones|Teclas de dirección|
-|Ir a la barra de comandos| N/A |
+|Ir a la barra de comandos| N/D |
 |Ir a la sección de punto de referencia de una página| Ctrl +\[ |
 
 
@@ -69,12 +69,12 @@ Si el administrador ha habilitado cuadrículas modificables (vistas), puede edit
 
 |Task  | Interfaz unificada|
 |---------|---------|
-|Cuando el foco está en un encabezado de columna, ordenar por columna | Tecla entrar |
+|Cuando el foco está en un encabezado de columna, ordenar por columna | Tecla Entrar |
 |Cuando el foco está en un encabezado de columna, abrir el cuadro de diálogo de filtro | Barra espaciadora|
 |Cuando el foco esté en las celdas, desplácese al siguiente campo. |  Tecla de flecha derecha (→)  | 
 |Cuando el foco esté en las celdas, desplácese al campo anterior   |  Tecla de flecha izquierda (←)|
 |Cuando el foco está en el encabezado de columna, desplazarse al siguiente encabezado de columna |  Pestaña  | 
-|Cuando el foco está en el encabezado de columna, desplazarse al encabezado de columna anterior  |  Mayús + Tab |
+|Cuando el foco está en el encabezado de columna, desplazarse al encabezado de columna anterior  |  Mayús+Tabulador |
 |Moverse a la celda anterior | Tecla de flecha arriba (↑) |
 |Moverse a la celda siguiente|  Tecla flecha abajo (↓) **o** entrar, cuando la celda no está en modo de edición |
 |Ir al modo de edición para los campos de texto, número y simple cuando el foco está en un campo  |  Escriba el valor directamente para sobrescribir el valor existente **o** la barra espaciadora para seguir modificando el valor existente **o** F2 para seleccionar el valor existente.  |
@@ -88,7 +88,7 @@ Si el administrador ha habilitado cuadrículas modificables (vistas), puede edit
 |Vaya a y abra el registro de búsqueda.| Entrar cuando el foco está activado (→)|
 |Pasar a la página siguiente (si existe)| Tecla AV pág|
 |Moverse a la página anterior (si existe)|Tecla re pág|
-|Desplazarse al encabezado de columna cuando el foco está en la cuadrícula|  Mayús + Tab |
+|Desplazarse al encabezado de columna cuando el foco está en la cuadrícula|  Mayús+Tabulador |
 |Desplazarse al botón Guardar cuando el foco está en el encabezado de columna (si hay datos no guardados)| Pestaña|
 |Desplazarse al botón actualizar cuando el foco está en el encabezado de columna| Pestaña|
 
@@ -99,14 +99,14 @@ Los paneles interactivos habilitan nuevas funcionalidades, como filtrado, ordena
 |---------|---------|
 |Activar un elemento de panel (simular clic con el botón primario)| Entrar **o** barra espaciadora |
 |Moverse al siguiente elemento  | Pestaña | 
-|Moverse al elemento anterior  | Mayús + Tab  | 
+|Moverse al elemento anterior  | Mayús+Tabulador  | 
 |Moverse al siguiente elemento dentro de un elemento Dashboard  | Tecla de dirección abajo (↓) |
 |Moverse al elemento anterior dentro de un elemento de panel  | Tecla de dirección arriba (↑) | 
-|Cerrar un menú | Salida |
+|Cerrar un menú | Escape |
 |Active una casilla o un botón de radio | Barra espaciadora |
-|Modificar el filtro de intervalo de fechas | Ctrl + Alt + D |
-|Mostrar el panel de filtro visual | CTRL + ALT + V |
-|Moverse a la barra de comandos global | Ctrl + Alt + A | 
+|Modificar el filtro de intervalo de fechas | Ctrl+Alt+D |
+|Mostrar el panel de filtro visual | Ctrl+Alt+V |
+|Moverse a la barra de comandos global | Ctrl+Alt+A | 
 
 ### <a name="global-filter-shortcuts"></a>Métodos abreviados de filtro globales
 
@@ -115,35 +115,35 @@ Los paneles interactivos habilitan nuevas funcionalidades, como filtrado, ordena
 |Abrir un menú | Tecla de dirección **de entrar o** **barra espaciadora** (↓) |
 |Activar un botón | Entrar **o** barra espaciadora |
 |Moverse al siguiente elemento | Pestaña |
-|Moverse al elemento anterior | Mayús + Tab |
+|Moverse al elemento anterior | Mayús+Tabulador |
 |Abrir un control de vista de árbol | Tecla de dirección derecha (→) |
 |Cerrar un control de vista de árbol | Tecla de dirección izquierda (←) |
 |Moverse al siguiente nodo de vista de árbol | Tecla de dirección arriba (↑) |
 |Moverse al nodo de vista de árbol anterior | Tecla de dirección abajo (↓) |
-|Moverse al primer nodo de vista de árbol | Inicio |
-|Moverse al último nodo de vista de árbol | Extremo |
+|Moverse al primer nodo de vista de árbol | Página de inicio de |
+|Moverse al último nodo de vista de árbol | Fin |
 |Realizar la acción predeterminada para el nodo de vista de árbol | ENTRAR |
-|Quitar un filtro | Elimínelos |
+|Quitar un filtro | Eliminar |
 
 ### <a name="dashboard-stream-control-shortcuts"></a>Métodos abreviados de control de flujo de panel
 
 |Task             |Interfaz unificada  |
 |---------|---------|
-|Moverse al primer comando en la barra de comandos de la secuencia de panel activa | Ctrl + Alt + Q | 
+|Moverse al primer comando en la barra de comandos de la secuencia de panel activa | Ctrl+Alt+Q | 
 |Moverse al siguiente elemento | Pestaña |
-|Moverse al elemento anterior | Mayús + Tab |
+|Moverse al elemento anterior | Mayús+Tabulador |
 |Activar un botón | Entrar **o** barra espaciadora |
 |Activar el botón **ordenar por campo** y abrir el control flotante | Tecla de dirección **de entrar o** **barra espaciadora** (↓) |
 |Moverse al siguiente elemento | Tecla de dirección abajo (↓) |
 |Moverse al elemento anterior | Tecla de dirección arriba (↑) |
-|Moverse al primer elemento | Inicio |
-|Moverse al último elemento | Extremo |
-|Pasar a la siguiente secuencia | Ctrl + F6 |
-|Moverse a la secuencia anterior | Ctrl + Mayús + F6 |
-|Cerrar un menú | Salida |
+|Moverse al primer elemento | Página de inicio de |
+|Moverse al último elemento | Fin |
+|Pasar a la siguiente secuencia | Ctrl+F6 |
+|Moverse a la secuencia anterior | Ctrl+Mayús+F6 |
+|Cerrar un menú | Escape |
 |Cambiar el estado de una casilla | Barra espaciadora |
 
-## <a name="common-controls"></a>Controles comunes
+## <a name="common-controls"></a>Controles habituales
 
 ### <a name="chart-shortcuts"></a>Métodos abreviados de gráficos
 
@@ -152,10 +152,10 @@ Los paneles interactivos habilitan nuevas funcionalidades, como filtrado, ordena
 |Moverse al primer elemento de un gráfico | Pestaña |
 |Moverse al siguiente punto de datos | Tecla de dirección derecha (→) **o** flecha abajo (↓)|
 |Moverse al punto de datos anterior | Tecla de dirección izquierda (←) **o** tecla de dirección arriba (↑)|
-|Moverse al primer punto de datos | Inicio |
-|Moverse al último punto de datos | Extremo |
+|Moverse al primer punto de datos | Página de inicio de |
+|Moverse al último punto de datos | Fin |
 |Moverse al botón **Ver más** en un gráfico de etiquetas | Pestaña |
-|Retroceder desde el botón **Ver más** hasta las etiquetas de un gráfico de etiquetas | Mayús + Tab |
+|Retroceder desde el botón **Ver más** hasta las etiquetas de un gráfico de etiquetas | Mayús+Tabulador |
 |Filtrar el panel cuando el foco se encuentra en un punto de datos en un panel interactivo | Entrar **o** barra espaciadora |
 
 ### <a name="date-time-control-shortcuts"></a>Métodos abreviados de control de fecha y hora
@@ -166,11 +166,11 @@ Los paneles interactivos habilitan nuevas funcionalidades, como filtrado, ordena
 |Activar la opción y cerrar el control flotante | Entrar **o** barra espaciadora |
 |Moverse al siguiente elemento | Tecla de dirección abajo (↓) |
 |Moverse al elemento anterior | Tecla de dirección arriba (↑) |
-|Moverse al primer elemento | Inicio |
-|Moverse al último elemento | Extremo |
-|Cerrar el control flotante de selector de fecha | Salida |
+|Moverse al primer elemento | Página de inicio de |
+|Moverse al último elemento | Fin |
+|Cerrar el control flotante de selector de fecha | Escape |
 |Moverse al siguiente elemento | Pestaña |
-|Moverse al elemento anterior | Mayús + Tab |
+|Moverse al elemento anterior | Mayús+Tabulador |
 |Seleccionar el calendario | Entrar **o** barra espaciadora |
 |Activar un botón | Entrar **o** barra espaciadora
 

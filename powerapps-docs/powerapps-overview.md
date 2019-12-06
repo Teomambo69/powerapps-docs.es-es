@@ -1,6 +1,6 @@
 ---
-title: ¿Qué es PowerApps? | Microsoft Docs
-description: Proporciona información general de PowerApps y habla sobre cómo los usuarios finales, los creadores de aplicaciones, los administradores y los desarrolladores profesionales pueden usar PowerApps.
+title: ¿Qué es Power apps? | Microsoft Docs
+description: Proporciona información general sobre las aplicaciones de energía y habla sobre cómo los usuarios finales, los responsables de aplicaciones, los administradores y los desarrolladores profesionales pueden usar Power apps.
 author: KumarVivek
 manager: annbe
 ms.service: powerapps
@@ -12,55 +12,59 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 69322a21510289f5db92f3969ef524fbcd8421c8
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 70086d5ec6e30a917f817a2d3f4012745949c99e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899263"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680659"
 ---
-# <a name="what-is-powerapps"></a>¿Qué es PowerApps?
+# <a name="what-is-power-apps"></a>¿Qué es Power apps?
 
-PowerApps es un conjunto de aplicaciones, servicios, conectores y plataforma de datos que proporciona un entorno de desarrollo rápido de aplicaciones para crear aplicaciones personalizadas para necesidades empresariales. Con PowerApps, puede crear rápidamente aplicaciones empresariales personalizadas que se conectan a los datos empresariales almacenados *ya sea* en la plataforma de datos subyacente ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *o* en varios orígenes de datos en línea y locales (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, etc.). 
+Power apps es un conjunto de aplicaciones, servicios, conectores y plataforma de datos que proporciona un entorno de desarrollo de aplicaciones rápido para crear aplicaciones personalizadas para sus necesidades empresariales. Con Power Apps, puede crear rápidamente aplicaciones empresariales personalizadas que se conectan a los datos empresariales *almacenados en* la plataforma de datos subyacente ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *o* en varios orígenes de datos en línea y locales (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, etc.). 
 
-Las aplicaciones compiladas mediante PowerApps proporcionan funciones enriquecidas de flujo de trabajo y lógica de negocios para transformar los procesos de negocio manuales en procesos automatizados y digitales. Además, las aplicaciones compiladas mediante PowerApps tienen un diseño dinámico y se pueden ejecutar sin problemas en el explorador o en dispositivos móviles (teléfono o tableta). PowerApps "democratiza" la experiencia de compilación de aplicaciones de negocios personalizadas ya que permite a los usuarios crear aplicaciones empresariales personalizadas y con múltiples características sin escribir código.
+Las aplicaciones compiladas con Power apps proporcionan funcionalidades de flujo de trabajo y lógica de negocios enriquecidas para transformar los procesos de negocio manuales en procesos digitales y automatizados. Además, las aplicaciones compiladas con Power apps tienen un diseño dinámico y se pueden ejecutar sin problemas en el explorador o en dispositivos móviles (teléfono o tableta). Power apps "democratiza" es la experiencia de creación de aplicaciones empresariales personalizadas, ya que permite a los usuarios crear aplicaciones empresariales personalizadas enriquecidas con características sin necesidad de escribir código.
 
-PowerApps también proporciona una plataforma extensible que permite a los desarrolladores profesionales interactuar mediante programación con datos y metadatos, aplicar lógica de negocios, crear conectores personalizados y realizar la integración con datos externos.
+Power Apps también proporciona una plataforma extensible que permite a los desarrolladores profesionales interactuar mediante programación con datos y metadatos, aplicar la lógica empresarial, crear conectores personalizados e integrarse con datos externos.
 
-Para obtener más información, consulte el [canal de PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) en YouTube.
+Para obtener más información, consulte el [canal de Power apps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) en YouTube.
 
-## <a name="powerapps-for-app-makerscreators"></a>PowerApps para creadores de aplicaciones
+## <a name="power-apps-for-app-makerscreators"></a>Power apps para creadores o creadores de aplicaciones
 
-Con PowerApps, puede crear tres tipos de aplicaciones: **lienzo**, **controlado por modelos**y **portal**. Más información: [información general sobre la creación de aplicaciones en PowerApps](maker/index.md).
+Con Power Apps, puede crear tres tipos de aplicaciones: **lienzo**, **controlado por modelos**y **portal**. Más información: [información general sobre la creación de aplicaciones en Power apps](maker/index.md).
 
 Para crear una aplicación, empiece por [make.powerapps.com](https://make.powerapps.com).
 
-- **PowerApps Studio** es el diseñador de aplicaciones que se usa para compilar aplicaciones de lienzo. El diseñador de aplicaciones hace que la creación de aplicaciones se parezca más a la creación de un conjunto de diapositivas en Microsoft PowerPoint. Más información: [generación de una aplicación a partir de datos](/powerapps/maker/canvas-apps/data-platform-create-app)  
+- **Power apps Studio** es el diseñador de aplicaciones que se usa para compilar aplicaciones de lienzo. El diseñador de aplicaciones hace que la creación de aplicaciones se parezca más a la creación de un conjunto de diapositivas en Microsoft PowerPoint. Más información: [generación de una aplicación a partir de datos](/powerapps/maker/canvas-apps/data-platform-create-app)  
 
 - El **diseñador de aplicaciones** para las aplicaciones basadas en modelos permite definir el mapa del sitio y agregar componentes para crear una aplicación basada en modelos. Más información: [diseño de aplicaciones controladas por modelos mediante el diseñador de aplicaciones](maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)
 
-## <a name="powerapps-for-app-users"></a>PowerApps para usuarios de la aplicación
+## <a name="power-apps-for-app-users"></a>Power apps para usuarios de aplicaciones
 
 Puede ejecutar aplicaciones que haya creado, o que otra persona haya creado y compartido con usted, en un explorador o en dispositivos móviles (un teléfono o una tableta). Más información: [Buscar y ejecutar aplicaciones](user/index.md)
 
-## <a name="powerapps-for-admins"></a>PowerApps para administradores
+## <a name="power-apps-for-admins"></a>Power apps para administradores
 
-Los administradores de PowerApps pueden usar:
+Los administradores de Power apps pueden usar:
 
-- El **Centro de administración de PowerApps** ([admin.powerapps.com](https://admin.powerapps.com)) para crear y administrar entornos, usuarios, roles y directivas de prevención de pérdida de datos. 
+- **Centro de administración de Power apps** ([admin.powerapps.com](https://admin.powerapps.com)) para crear y administrar entornos, usuarios, roles y directivas de prevención de pérdida de datos. 
 
-- **Centro de administración de plataforma de energía** ([admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) para administrar entornos, obtener recomendaciones de autoayuda en tiempo real y soporte técnico para PowerApps y Power Automatic, y ver análisis de Common Data Service. 
+- **Centro de administración de plataforma de energía** ([admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) para administrar entornos, obtener recomendaciones y soporte técnico de autoayuda en tiempo real para Power apps y Power automatizar, y ver análisis de Common Data Service. 
 
-Más información: [Administración de PowerApps](/power-platform/admin/admin-guide)
+Más información: [Administración de aplicaciones avanzadas](/power-platform/admin/admin-guide)
 
-## <a name="powerapps-for-developers"></a>PowerApps para desarrolladores
+## <a name="power-apps-for-developers"></a>Power apps para desarrolladores
 
-Los desarrolladores son creadores de aplicaciones que pueden escribir código para ampliar la personalización y creación de aplicaciones de negocio. Los desarrolladores pueden usar código para crear datos y metadatos, aplicar la lógica del lado servidor mediante funciones de Azure, complementos y extensiones de flujo de trabajo, aplicar la lógica del lado cliente con JavaScript, realizar integración con datos externos mediante webhooks y entidades virtuales, crear conectores personalizados e insertar aplicaciones en las experiencias de sitios web para crear soluciones integradas. Más información: [PowerApps para desarrolladores](/powerapps/#pivot=home&panel=developer)
+Los desarrolladores son creadores de aplicaciones que pueden escribir código para ampliar la personalización y creación de aplicaciones de negocio. Los desarrolladores pueden usar código para crear datos y metadatos, aplicar la lógica del lado servidor mediante funciones de Azure, complementos y extensiones de flujo de trabajo, aplicar la lógica del lado cliente con JavaScript, realizar integración con datos externos mediante webhooks y entidades virtuales, crear conectores personalizados e insertar aplicaciones en las experiencias de sitios web para crear soluciones integradas. Más información: [Power apps para desarrolladores](/powerapps/#pivot=home&panel=developer)
 
-## <a name="powerapps-and-dynamics-365"></a>PowerApps y Dynamics 365
+## <a name="power-apps-and-dynamics-365"></a>Power apps y Dynamics 365
 
-Las aplicaciones de Dynamics 365, como Dynamics 365 sales, Dynamics 365 Customer Service, Dynamics 365 marketing usan también la plataforma de datos subyacente (Common Data Service) que usa PowerApps para almacenar y proteger los datos. Esto permite crear aplicaciones mediante PowerApps y Common Data Service directamente a partir de los datos elementales de su empresa que ya se usan en Dynamics 365 sin necesidad de efectuar la integración. Más información: [Dynamics 365 y Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
+Las aplicaciones de Dynamics 365, como Dynamics 365 sales, Dynamics 365 Customer Service, Dynamics 365 marketing usan también la plataforma de datos subyacente (Common Data Service) que usan las aplicaciones de energía para almacenar y proteger los datos. Esto le permite compilar aplicaciones con Power apps y Common Data Service directamente con los datos empresariales principales que ya se usan en Dynamics 365 sin necesidad de integración. Más información: [Dynamics 365 y Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
 
-## <a name="try-powerapps-for-free"></a>Probar PowerApps de forma gratuita
+## <a name="try-power-apps-for-free"></a>Pruebe Power apps gratis
 
-Puede probar PowerApps de forma gratuita si se registra para una [prueba de 30 días](maker/signup-for-powerapps.md) o un [plan de la comunidad](maker/dev-community-plan.md).
+Puede probar Power apps gratis si se suscribe para una [prueba de 30 días](maker/signup-for-powerapps.md) o un plan de la [comunidad](maker/dev-community-plan.md).
+
+## <a name="purchase-power-apps"></a>Comprar aplicaciones de energía
+
+Si ha decidido comprar aplicaciones de energía, consulte aquí para obtener información detallada: [comprar aplicaciones de energía](/power-platform/admin/signup-for-powerapps-admin).

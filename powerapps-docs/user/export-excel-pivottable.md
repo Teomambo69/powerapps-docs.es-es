@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90cf377f10a99dbcece1e5f556cb50e678099744
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: b14e24e7048e4f91de13f582914ffb621d3c7899
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61544991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725795"
 ---
 # <a name="export-to-an-excel-pivottable"></a>Exportar a una tabla dinámica de Excel
 
@@ -44,7 +44,7 @@ La opción para exportar datos a una tabla dinámica de Excel no está disponibl
    > 
    > Para solucionar el problema:  
    > 
-   > 1. Abra Excel y vaya a **File** > **Options** > **Trust Center**.  
+   > 1. Abra Excel y vaya a **archivo** > **Opciones** > **centro de confianza**.  
    > 2. Seleccione **configuración del centro de confianza** y, a continuación, **vista protegida**.  
    > 3. En **vista protegida**, desactive las casillas de los tres elementos.  
    > 4. Seleccione **Aceptar** > **Aceptar**.  
@@ -55,13 +55,13 @@ La opción para exportar datos a una tabla dinámica de Excel no está disponibl
   
 5. Si ve la advertencia de seguridad **se han deshabilitado las conexiones de datos externos**, seleccione **Habilitar contenido**.  
   
-6. Para actualizar los datos del archivo, en la pestaña **datos** , seleccione **actualizar desde PowerApps**.  
+6. Para actualizar los datos del archivo, en la pestaña **datos** , seleccione **actualizar desde Power apps**.  
   
 7. Arrastre los campos de la lista de campos de la tabla dinámica a la tabla dinámica. Para obtener más información, vea la ayuda de Excel.  
   
 ## <a name="tips"></a>Recomendaciones  
   
-- En PowerApps, los valores de moneda se exportan a Excel como números. Después de completar la exportación, vea el tema de ayuda de Excel "Mostrar números como moneda" para dar formato de moneda a los datos.
+- En Power Apps, los valores de moneda se exportan a Excel como números. Después de completar la exportación, vea el tema de ayuda de Excel "Mostrar números como moneda" para dar formato de moneda a los datos.
   
 - Los valores de fecha y hora que se ven en la aplicación solo se muestran como fecha al exportar el archivo a Excel, pero la celda realmente muestra la fecha y la hora.  
   

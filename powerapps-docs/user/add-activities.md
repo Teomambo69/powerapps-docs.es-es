@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
-ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
+ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609900"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726080"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
@@ -34,7 +34,7 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de escala de tiempo de las actividades en PowerApps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en PowerApps")  
+  > ![Vista de escala de tiempo de las actividades en Power apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power apps")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Adición de una actividad desde la barra de navegación
  
@@ -43,7 +43,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 1. En la barra de navegación, seleccione el ![botón de crear registro](media/create-record-button.png "Botón crear registro")de signo **más** y, a continuación, seleccione **actividades**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Acceso directo para agregar una actividad en PowerApps](media/QuickCreate.png "Acceso directo para agregar una actividad en PowerApps")  
+   > ![Acceso directo para agregar una actividad en Power apps](media/QuickCreate.png "Acceso directo para agregar una actividad en Power apps")  
  
 2. Elija el tipo de actividad que desea agregar.
 
@@ -60,7 +60,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar una actividad de teléfono en PowerApps](media/addphonecall.png "Agregar una actividad de teléfono en PowerApps")
+   > ![Agregar una actividad de teléfono en Power apps](media/addphonecall.png "Agregar una actividad de teléfono en Power apps")
   
 3. Rellene el **Asunto** de la llamada.
 

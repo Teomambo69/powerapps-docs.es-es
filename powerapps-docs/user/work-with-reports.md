@@ -1,6 +1,6 @@
 ---
 title: Trabajar con informes | Microsoft Docs
-description: Trabajar con informes en PowerApps
+description: Trabajar con informes en Power apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4647c565b2ecaf469c3b74873ba157ea27a1fd4
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: c16a589ddcd1e7beb0be1ce28bc9f6df6a8c8b83
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67457045"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733296"
 ---
 # <a name="work-with-reports"></a>Trabajo con los informes
 
 Los informes le ayudan a supervisar su progreso hacia sus objetivos de negocio ayudando a ver cómo lo está haciendo. También puede realizar un seguimiento de las tendencias, lo que le ofrece una ventaja sobre sus competidores.  
 
-Para obtener más información sobre la organización y creación de informes, vea: [Personalizar y organizar informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
+Para obtener más información sobre la organización y la creación de informes, vea: [personalizar y organizar informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
   
 ## <a name="run-a-report"></a>Ejecutar un informe  
   
@@ -59,9 +59,9 @@ Para obtener más información sobre la organización y creación de informes, v
 6. Elija **seleccionar** para agregar el registro de usuario o de equipo al cuadro **registros seleccionados** y, después, seleccione **Agregar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar un usuario para compartir un informe](media/report-share2.png "Agregar usuario para compartir Informe")
+   > ![Agregar un usuario para compartir un informe](media/report-share2.png "Agregar usuario para compartir informe")
   
-7. En el cuadro de diálogo **compartir Informe** , seleccione el tipo de acceso de recurso compartido que desee. Los permisos disponibles son: Lectura, escritura, eliminación, anexión, asignación o uso compartido. Esto agregará el registro de usuario o de equipo al cuadro **registros seleccionados** .
+7. En el cuadro de diálogo **compartir Informe** , seleccione el tipo de acceso de recurso compartido que desee. Los permisos disponibles son: lectura, escritura, eliminación, anexión, asignación o recurso compartido. Esto agregará el registro de usuario o de equipo al cuadro **registros seleccionados** .
 
    > [!div class="mx-imgBorder"]
    > ![Elección del acceso compartido](media/report-share3.png "Elección del acceso compartido")
