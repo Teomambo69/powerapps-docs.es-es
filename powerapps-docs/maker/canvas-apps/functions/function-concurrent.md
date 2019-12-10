@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731283"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concurrent-function-in-power-apps"></a>Función simultánea en Power apps
 Evalúa varias fórmulas simultáneamente entre sí.
@@ -30,7 +31,7 @@ En la propiedad [**OnStart**](../controls/control-screen.md) de la aplicación, 
 
 No se puede predecir el orden en que las fórmulas de la función **Concurrent** inician y terminan la evaluación. Las fórmulas dentro de la función **simultánea** no deben contener dependencias en otras fórmulas dentro de la misma función **simultánea** y Power apps muestra un error si lo intenta. Desde dentro, es posible tomar dependencias en fórmulas de fuera de la función **Concurrent** con seguridad, puesto que se completan antes de que se inicie la función **Concurrent**. Las fórmulas posteriores a la función **simultánea** pueden tomar dependencias de las fórmulas en: todas se completarán antes de que finalice la función **simultánea** y se desplacen a la siguiente fórmula de una cadena (si usa el operador **;** ). Esté atento a las dependencias de orden sutiles si está llamando a funciones o métodos de servicio con efectos secundarios.
 
-Puede encadenar fórmulas junto con el operador **;** dentro de un argumento a **simultáneo**. Por ejemplo, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** evalúa **Set( a, 1 ); Set( b, a+1 )** simultáneamente con **Set( x, 2 ); Set( y, x+2 )** . En este caso, las dependencias dentro de las fórmulas están bien: **a** se establece antes de **b** y **x** se establece antes de **y**.
+Puede encadenar fórmulas junto con el operador **;** dentro de un argumento a **simultáneo**. Por ejemplo, **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** evalúa **Set( a; 1 );; Set( b; a+1 )** simultáneamente con **Set( x; 2 );; Set( y; x+2 )** . En este caso, las dependencias dentro de las fórmulas están bien: **a** se establece antes de **b** y **x** se establece antes de **y**.
 
 Según el dispositivo o explorador en el que se ejecute la aplicación, es posible que solo un puñado de fórmulas se evalúen realmente de forma simultánea. **Concurrent** usa las capacidades disponibles y no finaliza hasta que se han evaluado todas las fórmulas.
 
@@ -39,7 +40,7 @@ Si habilita **Administración de errores a nivel de fórmula** (en Configuració
 Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Sintaxis
-**Concurrent**( *Formula1*, *Formula2* [, ...] )
+**Concurrent**( *Formula1*; *Formula2* [; ...] )
 
 * *Formula(s)* : requerido. Fórmulas que se van a evaluar de forma simultánea. Se deben proporcionar al menos dos fórmulas.
 
@@ -55,11 +56,11 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 2. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-dot
-    ClearCollect( Product, '[SalesLT].[Product]' );
-    ClearCollect( Customer, '[SalesLT].[Customer]' );
-    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
-    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-comma
+    ClearCollect( Product; '[SalesLT].[Product]' );;
+    ClearCollect( Customer; '[SalesLT].[Customer]' );;
+    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
+    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. En [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) o [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/), active las herramientas de desarrollador para supervisar el tráfico de red mientras se ejecuta la aplicación.
@@ -78,12 +79,12 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 1. Agregue un segundo control **[Botón](../controls/control-button.md)** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' ), 
-        ClearCollect( Customer, '[SalesLT].[Customer]' ),
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
-        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product; '[SalesLT].[Product]' ); 
+        ClearCollect( Customer; '[SalesLT].[Customer]' );
+        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -111,19 +112,19 @@ Solo puede usar **Concurrent** en [fórmulas de comportamiento](../working-with-
 
 3. Agregue un control **Botón** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    ```powerapps-dot
-    Set( StartTime, Value( Now() ) );
+    ```powerapps-comma
+    Set( StartTime; Value( Now() ) );;
     Concurrent(
-        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
-            Set( FRTransTime, Value( Now() ) ),
-        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
-            Set( DETransTime, Value( Now() ) )
-    );
-    Collect( Results,
+        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
+            Set( FRTransTime; Value( Now() ) );
+        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
+            Set( DETransTime; Value( Now() ) )
+    );;
+    Collect( Results;
         { 
-            Input: TextInput1.Text,
-            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
-            German: DETrans, GermanTime: DETransTime - StartTime, 
+            Input: TextInput1.Text;
+            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
+            German: DETrans; GermanTime: DETransTime - StartTime; 
             FrenchFaster: FRTransTime < DETransTime
         }
     )

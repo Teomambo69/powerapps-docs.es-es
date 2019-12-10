@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730482"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-power-apps"></a>Funciones ABS, exp, LN, Power y sqrt en Power apps
 Calcula valores absolutos, logaritmos naturales, raíces cuadradas y los resultados de elevar *e* o cualquier número a una potencia especificada.
@@ -43,7 +44,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 
 * *Number*: requerido. El número sobre el cual operar.
 
-**Power**( *Base*, *Exponente* )
+**Power**( *Base*; *Exponente* )
 
 * *Base*: requerido. Número base que se va a elevar.
 * *Exponent*: requerido. El exponente al que se eleva el número base.
@@ -60,7 +61,7 @@ Si algún argumento pudiera mostrar un valor no definido, el resultado queda en 
 | **Abs( -55 )** |Muestra el número sin el signo negativo. |55 |
 | **Exp( 2 )** |Muestra *e* elevado a la potencia de 2, o *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Muestra el algoritmo natural (*e* base) del número 100. |4,605170... |
-| **Power( 5, 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
+| **Power( 5; 3 )** |Muestra 5 elevado a la potencia de 3, o 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Muestra el número que, cuando se multiplica por sí mismo, da como resultado 9. |3 |
 
 ### <a name="single-column-table"></a>Tabla de una sola columna

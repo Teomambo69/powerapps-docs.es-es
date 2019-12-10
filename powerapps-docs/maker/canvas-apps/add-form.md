@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74724908"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Mostrar, editar o agregar un registro en una aplicación de lienzo
 
@@ -56,7 +57,7 @@ En una aplicación de lienzo, agregue y configure un control **[Mostrar](control
 
 1. Establezca la propiedad **[DataSource](controls/control-form-detail.md)** del formulario en **FlooringEstimates** y su propiedad **[Item](controls/control-form-detail.md)** en esta fórmula:
 
-    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
 
    Esta fórmula especifica que, cuando termine de configurar el formulario, aparecerá el registro que el usuario selecciona en **ChooseProduct**.
 

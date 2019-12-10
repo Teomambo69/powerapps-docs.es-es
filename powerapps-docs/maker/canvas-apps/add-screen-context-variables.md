@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74724448"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Agregar una pantalla a una aplicación de lienzo y navegar por diferentes pantallas
 
@@ -65,7 +66,7 @@ En la barra de navegación izquierda, mantenga el mouse sobre una pantalla que d
 
 4. En la pantalla **Target**, agregue el icono **Flecha atrás** y establezca la propiedad **[AlSeleccionar](controls/properties-core.md)** en esta fórmula:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 5. Mientras mantiene presionada la tecla Alt, alterne entre las pantallas seleccionando la flecha en cada pantalla.
 

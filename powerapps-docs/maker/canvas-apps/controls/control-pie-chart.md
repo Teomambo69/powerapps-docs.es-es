@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74728646"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="pie-chart-control-in-power-apps"></a>Control de gráfico circular en Power apps
 Control que muestra valores relativos comparados entre ellos.
@@ -79,11 +80,11 @@ Este control es un control agrupado que contiene tres controles: un control **[E
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
+   **Collect(Revenue2015; {Product:"Europa"; Revenue:27000}; {Product:"Ganymede"; Revenue:26300}; {Product:"Callisto"; Revenue:29200})**
    
     ¿No sabe cómo [agregar y configurar un control](../add-configure-controls.md)?
    

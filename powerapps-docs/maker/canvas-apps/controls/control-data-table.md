@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74723197"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="data-table-control-in-power-apps"></a>Control tabla de datos en Power apps
 Muestra un conjunto de datos en formato tabular.
@@ -84,7 +85,7 @@ Power apps presentó el control **tabla de datos** el 5 de mayo de 2017. En esta
 
 ## <a name="related-functions"></a>Funciones relacionadas
 * [**Filtro (Origen de datos, Fórmula)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *Fórmula*)
-* [**Búsqueda (Origen de datos, SearchString [BuscarCadena], Columna)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
+* [**Búsqueda (Origen de datos; SearchString [BuscarCadena]; Columna)** ](../functions/function-filter-lookup.md)(*Origen de datos*, *SearchString* [BuscarCadena], *Columna*)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="basic-usage"></a>Uso básico
@@ -121,7 +122,7 @@ Power apps presentó el control **tabla de datos** el 5 de mayo de 2017. En esta
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Cambio de estilo del encabezado para el control Tabla de datos
 1. Con el control **Tabla de datos** seleccionado, pulse o haga clic en la pestaña **Avanzado** en el panel derecho.
-2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62,96,170,1)** .
+2. Pulse o haga clic en el campo para la propiedad **HeadingFill** (RellenoDeEncabezado) y cambie el valor a **RGBA(62;96;170;1)** .
 3. Pulse o haga clic en el campo para la propiedad **HeadingColor** (ColorDeEncabezado) y cambie el valor a **White** (Blanco).
 4. Pulse o haga clic en el campo para la propiedad **HeadingSize** (TamañoDeEncabezado) y cambie el valor a **14**.
    

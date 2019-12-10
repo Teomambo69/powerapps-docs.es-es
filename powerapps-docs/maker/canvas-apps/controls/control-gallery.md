@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74709380"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control Galería en aplicaciones de lienzo
 
@@ -92,7 +93,7 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
 
 [ **Restablecer**( *control* )](../functions/function-reset.md) : restablece la galería de nuevo a su estado inicial. El estado inicial incluye desplazarse hasta el primer elemento y seleccionar el primer elemento o el valor predeterminado, si está presente. 
 

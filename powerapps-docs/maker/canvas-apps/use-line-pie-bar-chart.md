@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732410"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>Mostrar datos en un gráfico de líneas, circulares o de barras en Power apps
 
@@ -49,7 +50,7 @@ En estos pasos importaremos los datos de ejemplo en una colección, denominada *
 
 2. Establezca la propiedad **[OnSelect](controls/properties-core.md)** del control en la función siguiente:  
 
-   ```Collect(ProductRevenue, Import1.Data)```
+   ```Collect(ProductRevenue; Import1.Data)```
 
 3. Presione F5 para abrir el modo de vista previa y seleccione el botón **Importar datos**.
 

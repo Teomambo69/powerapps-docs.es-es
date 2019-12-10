@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74727303"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Control de exportación e importación de control en Power apps
 Controla la exportación de datos a un archivo local y la importación de los datos en otra aplicación de Power apps.
@@ -116,7 +117,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})**
+   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
    
@@ -126,7 +127,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 4. Presione F5, haga clic o pulse el control **Exportar** y luego especifique el nombre del archivo en el que desea exportar los datos.
 5. Haga clic o pulse **Guardar** y luego presione Esc para volver al área de trabajo predeterminada.
 6. En una aplicación nueva o existente, agregue un control **Importar**, asígnele el nombre **MyData** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(ImportedProducts, MyData.Data)**
+   **Collect(ImportedProducts; MyData.Data)**
 7. Presione F5, haga clic o pulse **MyData**, haga clic o pulse el archivo exportado y luego haga clic o pulse **Abrir**.
 8. Presione Esc, haga clic o pulse **Colecciones** en el menú **Archivo** y confirme que la aplicación actual tiene los datos que ha exportado.
 

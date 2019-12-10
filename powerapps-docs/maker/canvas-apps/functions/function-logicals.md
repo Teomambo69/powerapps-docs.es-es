@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730618"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-power-apps"></a>Funciones and, or y not en Power apps
 
@@ -44,8 +45,8 @@ Estas funciones trabajan con valores lógicos. No se pueden pasar un número o u
 
 ## <a name="syntax"></a>Sintaxis
 
-**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
-**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : requerido.  Fórmulas lógicas para evaluar y con las que operar.
@@ -62,8 +63,8 @@ En los ejemplos de esta sección se usan estas variables globales:
 
 Para crear estas variables globales en una aplicación, inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula:
 
-```powerapps-dot
-Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
+```powerapps-comma
+Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
 ```
 
 Seleccione el botón (haciendo clic en él mientras mantiene presionada la tecla Alt) y, a continuación, establezca la propiedad **texto** de un control [**etiqueta**](../controls/control-text-box.md) en una fórmula de la primera columna de la tabla siguiente.

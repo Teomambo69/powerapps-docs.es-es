@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731138"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-power-apps"></a>Funciones día, mes, año, hora, minuto, segundo y día de la semana en Power apps
 Devuelve los componentes individuales de un valor de fecha y hora.
@@ -58,7 +59,7 @@ Consulte [cómo trabajar con fechas y horas](../show-text-dates-times.md) para m
 
 * *DateTime*: requerido.  Valor de fecha y hora con el que operar.  
 
-**Weekday**( *DateTime* [, *WeekdayFirst* ] )<br>
+**Weekday**( *DateTime* [; *WeekdayFirst* ] )<br>
 
 * *DateTime*: requerido.  Valor de fecha y hora con el que operar. 
 * *WeekdayFirst*: opcional.  Código de Excel que especifica qué día comienza la semana.  Si no se indica, se usará 1 (primero el domingo).
@@ -75,6 +76,6 @@ En el ejemplo siguiente, la hora actual es las **3:59:37 p. m.** del **jueves, 
 | **Minute(&nbsp;Now()&nbsp;)** |Devuelve el componente de minuto de la fecha y hora actuales. |59 |
 | **Second(&nbsp;Now()&nbsp;)** |Devuelve el componente de minuto de la fecha y hora actuales. |37 |
 | **Weekday(&nbsp;Now()&nbsp;)** |Devuelve el componente de día de la semana de la fecha y hora actuales, considerando al domingo como inicio de la semana de forma predeterminada. |5 |
-| **Weekday(&nbsp;Now(),&nbsp;14&nbsp;)** |Devuelve el componente de día de la semana de la fecha y hora actuales, usando un código de Excel para especificar el jueves como inicio de la semana. |1 |
-| **Weekday(&nbsp;Now(),&nbsp;StartOfWeek.Wednesday&nbsp;)** |Devuelve el componente de día de la semana de la fecha y hora actuales, usando una enumeración **StartOfWeek** para especificar el miércoles como inicio de la semana. |2 |
+| **Weekday(&nbsp;Now();&nbsp;14&nbsp;)** |Devuelve el componente de día de la semana de la fecha y hora actuales, usando un código de Excel para especificar el jueves como inicio de la semana. |1 |
+| **Weekday(&nbsp;Now();&nbsp;StartOfWeek.Wednesday&nbsp;)** |Devuelve el componente de día de la semana de la fecha y hora actuales, usando una enumeración **StartOfWeek** para especificar el miércoles como inicio de la semana. |2 |
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732267"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Creación de una galería de pedidos en una aplicación de lienzo
 
@@ -94,8 +95,8 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. Podríamos conectarlo directamente a los **pedidos** , pero en su lugar nos gustaría controlar el criterio de ordenación de la galería.  Omita el cuadro de diálogo volar hacia fuera y, en la barra de fórmulas, establezca la propiedad **elementos** de la galería en esta fórmula:
 
-    ```powerapps-dot
-    Sort( Orders, 'Order Number', Descending )
+    ```powerapps-comma
+    Sort( Orders; 'Order Number'; Descending )
     ```
 
     La función [**Sort**](functions/function-sort.md) ordena la lista para que aparezca en primer lugar el orden más reciente (que tiene el número de pedido más alto).
@@ -129,7 +130,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -145,7 +146,7 @@ Siga las instrucciones paso a paso para crear una galería de pedidos en una apl
 
 1. En la barra de fórmulas, establezca la propiedad **Text** de la etiqueta en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Customer.Company
     ```
 
@@ -189,7 +190,7 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. Establezca la propiedad **texto** de la nueva etiqueta en esta expresión:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.'Order Status'
     ```
 
@@ -212,12 +213,12 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. En la barra de fórmulas, establezca la propiedad **color** de la etiqueta estado en esta fórmula:
 
-    ```powerapps-dot
-    Switch( ThisItem.'Order Status',
-        'Orders Status'.Closed, Green,
-        'Orders Status'.New, Black,
-        'Orders Status'.Invoiced, Blue,
-        'Orders Status'.Shipped, Purple
+    ```powerapps-comma
+    Switch( ThisItem.'Order Status';
+        'Orders Status'.Closed; Green;
+        'Orders Status'.New; Black;
+        'Orders Status'.Invoiced; Blue;
+        'Orders Status'.Shipped; Purple
     )
     ```
 
@@ -247,8 +248,8 @@ En este procedimiento, agregará espacio en la galería para una etiqueta y lo c
 
 1. En la barra de fórmulas, establezca la propiedad **texto** de la nueva etiqueta en esta fórmula:
 
-    ```powerapps-dot
-    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -279,8 +280,8 @@ Para recapitular, comenzó a compilar una aplicación de lienzo de pantalla úni
 - Una expresión para mostrar el número de pedido: `"Orders " & ThisItem.OrderNumber`
 - Campo de una relación de varios a uno: `ThisItem.Customer.Company`
 - Etiqueta que muestra el nombre de una opción de un conjunto: `ThisItem.'Order Status'`
-- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
-- Función de agregado compleja sobre una relación de uno a varios: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
+- Etiqueta que cambia el formato en función de la opción de un conjunto que muestra la etiqueta: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
+- Función de agregado compleja sobre una relación de uno a varios: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Siguiente tema
 

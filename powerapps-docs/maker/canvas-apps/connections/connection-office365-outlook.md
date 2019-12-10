@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74728355"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="connect-to-office-365-outlook-from-power-apps"></a>Conexión a Office 365 Outlook desde Power apps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -58,10 +59,10 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
 4. Esta función tiene varios parámetros opcionales disponibles. Establezca la propiedad **Elementos** de la galería en una de las fórmulas siguientes:
    
     `Office365.GetEmails({fetchOnlyUnread:false})`  
-    `Office365.GetEmails({fetchOnlyUnread:false, top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2, searchQuery:"powerapps"})`  
-    `Office365.GetEmails({folderPath:"Deleted Items", fetchOnlyUnread:false, top:2, skip:3})`
+    `Office365.GetEmails({fetchOnlyUnread:false; top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2; searchQuery:"powerapps"})`  
+    `Office365.GetEmails({folderPath:"Deleted Items"; fetchOnlyUnread:false; top:2; skip:3})`
 
 ## <a name="send-a-message"></a>Envío de un mensaje
 1. En el menú **Insert** (Insertar), seleccione **Text** (Texto) y luego seleccione **Text input** (Entrada de texto).
@@ -75,7 +76,7 @@ La conexión con Office 365 Outlook se ha creado y agregado a la aplicación. Ah
    * **entradaCuerpo**
 4. En la pestaña **Insertar**, seleccione **Controles** y, a continuación, seleccione **Botón**. Establezca su propiedad **[AlSeleccionar](../controls/properties-core.md)** en la fórmula siguiente:  
    
-    `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
+    `Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text)`
 5. Mueva el botón para que aparezca en todos los demás controles y establezca su propiedad **[Texto](../controls/properties-core.md)** en **"Enviar correo electrónico"** .
 6. Presione F5 o seleccione el botón Vista previa (![botón Vista previa](./media/connection-office365-outlook/preview.png)). Escriba una dirección de correo electrónico válida en **entradaPara** y escriba el nombre que desee en los otros dos controles **Entrada de texto**.
 7. Seleccione **Enviar correo electrónico** para enviar el mensaje. Presione Esc para volver al área de trabajo predeterminada.
@@ -94,11 +95,11 @@ Para agregar datos adjuntos a un mensaje, siga los pasos descritos en la secció
 
 En este ejemplo, se enviará una foto como **file1.jpg**:
 
-`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""})})`
+`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""})})`
 
 En este ejemplo, se enviará un archivo de audio junto con la foto:
 
-`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""}, {Name:"AudioFile", ContentBytes:microphone1.audio })})`
+`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""}; {Name:"AudioFile"; ContentBytes:microphone1.audio })})`
 
 ## <a name="delete-a-message"></a>Eliminación de un mensaje
 1. En el menú **Insertar**, seleccione **Galería** y seleccione un control de la **galería con texto**.

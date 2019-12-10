@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730442"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="rand-function-in-power-apps"></a>Función Rand en Power apps
 Devuelve un número pseudoaleatorio.
@@ -62,7 +63,7 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 #### <a name="create-a-table-of-random-numbers"></a>Creación de una tabla de números aleatorios
 1. Agregue un control **[Botón](../controls/control-button.md)** y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:
 
-    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
+    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
 
     Con esta fórmula, se crea una tabla de una sola columna que se usa para iterar cinco veces, lo que produce cinco números aleatorios.
 
@@ -80,4 +81,4 @@ Cuando se usa en una [fórmula de comportamiento](../working-with-formulas-in-de
 
     ![Misma pantalla en la que se muestra una tabla de datos con un nuevo conjunto de cinco valores decimales diferentes: 0,414, 0,128, 0,860, 0,303 y 0,568.](media/function-rand/rand-collection-2.png)
 
-Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber, Rand() )** .
+Para generar un número aleatorio único en lugar de una tabla, use **Set( RandomNumber; Rand() )** .

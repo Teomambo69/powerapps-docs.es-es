@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732982"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Cambiar el tamaño y la orientación de una aplicación de lienzo en Power apps
 Personalice una aplicación de lienzo cambiando el tamaño y la orientación de la pantalla.
@@ -47,7 +48,7 @@ Cree una aplicación o abra una para editarla y, a continuación, seleccione Con
 
     Si desactiva esta configuración, la aplicación se ajusta a la relación de aspecto del dispositivo en el que se ejecuta y ocupa todo el espacio disponible. La aplicación no escala y, como resultado, las pantallas pueden mostrar más información.
 
-    Cuando esta opción está desactivada, la **relación de aspecto de bloqueo** se desactiva y deshabilita automáticamente. Además, la propiedad **ancho** de todas las pantallas está establecida en `Max(App.Width, App.DesignWidth)`y su propiedad **alto** está establecida en `Max(App.Height, App.DesignHeight)` para que realice el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, puede crear aplicaciones que respondan a diferentes dispositivos y dimensiones de la ventana. Más información: [crear un diseño con capacidad de respuesta](create-responsive-layout.md)
+    Cuando esta opción está desactivada, la **relación de aspecto de bloqueo** se desactiva y deshabilita automáticamente. Además, la propiedad **ancho** de todas las pantallas está establecida en `Max(App.Width; App.DesignWidth)`y su propiedad **alto** está establecida en `Max(App.Height; App.DesignHeight)` para que realice el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, puede crear aplicaciones que respondan a diferentes dispositivos y dimensiones de la ventana. Más información: [crear un diseño con capacidad de respuesta](create-responsive-layout.md)
 
 1. En **Bloquear relación de aspecto**, especifique **Activar** o **Desactivar**.
 
