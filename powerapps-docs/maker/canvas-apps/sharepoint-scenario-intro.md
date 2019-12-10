@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 12/19/2017
+ms.reviewer: tapanm
+ms.date: 12/05/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf61592dfdb5c7226846d814b75fd8c7584a50ff
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 45f33285b288dc273caeff1e85591210cc3deb8c
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732960"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959550"
 ---
 # <a name="integrate-power-apps-power-automate-and-power-bi-with-sharepoint-online"></a>Integre Power Apps, Power Automatic y Power BI con SharePoint Online
 ¿Tiene SharePoint Online y desea mejorar la automatización y simplificación de los procesos empresariales? ¿Ha trabajado con Power Apps, Power Automatic o Power BI, pero no está seguro de cómo usarlas con SharePoint Online? Ha venido al lugar correcto. En esta serie de tutoriales se explica cómo crear una aplicación de lienzo básica para la administración de proyectos basada en listas de SharePoint y tres tecnologías clave que se integran con SharePoint Online: Power Apps, Power Automatic y Power BI. Estas tecnologías funcionan de forma conjunta, lo que facilita el *análisis* de su negocio, la *actuación* sobre los resultados y la *automatización* de los flujos de trabajo. Cuando haya terminado con esta serie de tutoriales, tendrá un escenario estupendo similar al siguiente:
@@ -31,7 +31,7 @@ En esta serie de tutoriales, la empresa Contoso tiene un sitio de SharePoint Onl
 ## <a name="getting-started-quickly"></a>Introducción rápida
 El escenario que se presenta en esta serie de tutoriales es sencillo en comparación con una aplicación de análisis y gestión de proyectos con todas las prestaciones, pero aún así se tarda algún tiempo en completar todas las tareas. Si solo desea una introducción rápida al uso de Power Apps, Power Automatic y Power BI con SharePoint, consulte los artículos siguientes:
 
-* **PowerApps**: [generación de una aplicación desde SharePoint con Power apps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) y [generación de una aplicación para administrar datos en una lista de SharePoint](app-from-sharepoint.md)
+* **PowerApps**: [creación de una aplicación desde SharePoint con Power apps](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online) y [creación de una aplicación para administrar datos en una lista de SharePoint](app-from-sharepoint.md)
 * **Power Automatic**: [espera de aprobación en Power Automatic](https://docs.microsoft.com/flow/wait-for-approvals)
 * **Power BI**: [Insertar el elemento web de informes en SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 

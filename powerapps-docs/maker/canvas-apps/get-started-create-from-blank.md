@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/26/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e5b961fb665ad0706d5b3c2c272a95dd4530c1d2
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 01bb3037e6223d41fd7da044b49a51abc57762de
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709478"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959527"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Creación de una aplicación de lienzo desde cero a partir de datos de Excel
 
-Cree su propia aplicación de lienzo desde cero a partir de datos de Excel, en formato de tabla, y agregue luego datos de otros orígenes si quiere. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación automáticamente](get-started-create-from-data.md), pero los creadores que tengan más experiencia pueden usarlo para crear aplicaciones mejor adaptadas a sus necesidades.
+Cree su propia aplicación de lienzo desde cero a partir de datos de Excel, en formato de tabla, y agregue luego datos de otros orígenes si quiere. Si sigue este tutorial, creará una aplicación que contiene dos pantallas. En una pantalla, los usuarios pueden navegar a través de un conjunto de registros. En la otra pantalla, los usuarios pueden crear un registro, actualizar uno o varios campos de un registro o eliminar todo un registro. Este enfoque requiere más tiempo que la [creación de una aplicación básica desde Excel](get-started-create-from-data.md) , pero los creadores de aplicaciones que tengan más experiencia pueden usarla para crear la mejor aplicación para sus necesidades.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -30,7 +30,7 @@ Para seguir exactamente los pasos de este tutorial, primero cree un archivo de E
 
 1. Copie estos datos y péguelos en un archivo de Excel.
 
-    | StartDay | StartTime | Volunteer | Copiar |
+    | StartDay | StartTime | Volunteer | Copia de seguridad |
     | --- | --- | --- | --- |
     | Sábado |10 a.m. a mediodía |Vasquez |Kumashiro |
     | Sábado |mediodía a 2 p.m. |Ice |Singhal |

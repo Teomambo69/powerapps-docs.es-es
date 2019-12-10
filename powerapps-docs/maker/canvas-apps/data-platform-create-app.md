@@ -1,28 +1,28 @@
 ---
-title: Generar una aplicación de lienzo desde Common Data Service | Microsoft Docs
-description: En Power Apps, genere automáticamente una aplicación de lienzo para administrar datos en Common Data Service
+title: Crear una aplicación de lienzo desde Common Data Service | Microsoft Docs
+description: En Power Apps, cree automáticamente una aplicación de lienzo para administrar datos en Common Data Service
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/06/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c62a690073e591c693d914000511b586dfc97b69
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731684"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959389"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Generar una aplicación de lienzo desde Common Data Service en Power apps
+# <a name="create-a-canvas-app-from-common-data-service-in-power-apps"></a>Creación de una aplicación de lienzo desde Common Data Service en Power apps
 
-En Power Apps, genere automáticamente una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
+En Power Apps, cree una aplicación de lienzo basada en una lista de cuentas de ejemplo en [Common Data Service](../common-data-service/data-platform-intro.md). En esta aplicación, puede examinar todas las cuentas, mostrar detalles de una sola cuenta y crear, actualizar o eliminar una cuenta.
 
 Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) antes de empezar.
 
@@ -30,7 +30,7 @@ Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.p
 
 Para seguir esta guía de inicio rápido, debe tener asignado el rol de seguridad [creador de entorno](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) y debe [cambiar a un entorno](working-with-environments.md) en el que se haya creado una base de datos de Common Data Service, contenga datos y permita actualizaciones. Si no existe ningún entorno de este tipo y tiene privilegios administrativos, puede [crear un entorno](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment) que cumpla este requisito.
 
-## <a name="generate-an-app"></a>Generar una aplicación
+## <a name="create-an-app"></a>Crear una aplicación
 
 1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y, si es necesario, cambie los entornos como se especificó anteriormente en este tema.
 

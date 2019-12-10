@@ -1,28 +1,28 @@
 ---
-title: Generar una aplicación desde Excel | Microsoft Docs
-description: Usar Power apps para generar automáticamente una aplicación de lienzo con un archivo de Excel almacenado en una cuenta de almacenamiento en la nube
+title: Crear una aplicación de lienzo desde Excel | Microsoft Docs
+description: Usar Power apps para crear automáticamente una aplicación de lienzo con un archivo de Excel almacenado en una cuenta de almacenamiento en la nube
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/14/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2199d94938e51154d0f616f424f674c408277b52
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729737"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959435"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Generación de una aplicación de lienzo desde Excel en Power apps
+# <a name="create-a-canvas-app-from-excel-in-power-apps"></a>Creación de una aplicación de lienzo desde Excel en Power apps
 
-En este tema, generará automáticamente la primera aplicación de lienzo en Power apps con datos de una tabla de Excel. Podrá seleccionar un archivo de Excel, generar una aplicación y, después, ejecutar la aplicación que genere. En todas las aplicaciones generadas se incluyen pantallas para examinar los registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
+En este tema, creará su primera aplicación de lienzo en Power apps con datos de una tabla de Excel. Seleccionará un archivo de Excel, creará una aplicación y, a continuación, ejecutará la aplicación que cree. Cada aplicación creada incluye pantallas para examinar registros, mostrar detalles de los registros y crear o actualizar registros. Mediante la generación de una aplicación, se puede obtener rápidamente una aplicación en funcionamiento con datos de Excel y, después, se puede personalizar para ajustarla mejor a las necesidades. 
 
 El archivo de Excel debe estar en una cuenta de almacenamiento en la nube, como OneDrive, Google Drive o Dropbox. En este tema se usa OneDrive para la Empresa.
 
@@ -35,7 +35,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 > [!IMPORTANT]
 > Puede usar su propio archivo de Excel, pero los datos deberán tener formato de tabla. Para obtener más información, vea [Dar formato a una tabla](how-to-excel-tips.md). 
 
-## <a name="generate-the-app"></a>Generar la aplicación
+## <a name="create-the-app"></a>Crear la aplicación
 
 1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
@@ -79,7 +79,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
     1. Agregue los datos que desee y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
 
-        ![Icono guardar](./media/get-started-create-from-data/save-icon.png)
+        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
 
 1. Editar un registro:
 
@@ -93,7 +93,7 @@ Para seguir este tema con exactitud, descargue el archivo [Flooring Estimates](h
 
     1. Actualice uno o varios campos y, a continuación, seleccione el icono de marca de verificación para guardar los cambios.
 
-        ![Icono guardar](./media/get-started-create-from-data/save-icon.png)
+        ![Icono Guardar](./media/get-started-create-from-data/save-icon.png)
 
         Como alternativa, seleccione el icono Cancelar para descartar los cambios.
 

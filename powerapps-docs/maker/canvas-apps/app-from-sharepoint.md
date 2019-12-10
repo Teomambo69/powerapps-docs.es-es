@@ -1,30 +1,30 @@
 ---
-title: Generación de una aplicación de lienzo a partir de una lista de SharePoint | Microsoft Docs
-description: En Power Apps, genere automáticamente una aplicación de lienzo para administrar datos en una lista de SharePoint.
+title: Crear una aplicación de lienzo a partir de una lista de SharePoint | Microsoft Docs
+description: En Power Apps, cree automáticamente una aplicación de lienzo para administrar datos en una lista de SharePoint.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/24/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724210"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959458"
 ---
-# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Generar una aplicación de lienzo en Power apps desde una lista de SharePoint
+# <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Creación de una aplicación de lienzo en Power apps desde una lista de SharePoint
 
-En este tema, usará Power apps para generar automáticamente una aplicación de lienzo basada en elementos de una lista de SharePoint. Puede generar la aplicación desde Power Apps o SharePoint Online. Desde Power Apps, puede generar la aplicación en función de una lista en un sitio de SharePoint local si se [conecta a ella](connections/connection-sharepoint-online.md#create-a-connection) a través de una puerta de enlace de datos.
+En este tema, usará Power apps para crear una aplicación de lienzo basada en elementos de una lista de SharePoint. Puede crear la aplicación desde Power Apps o SharePoint Online. Desde Power Apps, puede crear la aplicación en función de una lista en un sitio de SharePoint local si se [conecta a ella](connections/connection-sharepoint-online.md#create-a-connection) a través de una puerta de enlace de datos.
 
-La aplicación que se genere contendrá tres pantallas:
+La aplicación que cree contendrá tres pantallas:
 
 - En la pantalla de exploración, puede desplazarse por todos los elementos de la lista.
 - En la pantalla de detalles, puede mostrar toda la información sobre un solo elemento de la lista.
@@ -40,7 +40,7 @@ Los principios para generar una aplicación no cambiarán aunque cree una lista 
 > [!IMPORTANT]
 > Power apps no admite todos los tipos de datos de SharePoint. Para más información, consulte [Problemas conocidos](connections/connection-sharepoint-online.md#known-issues).
 
-## <a name="generate-an-app-from-within-power-apps"></a>Generar una aplicación desde Power apps
+## <a name="create-an-app-from-within-power-apps"></a>Creación de una aplicación desde Power apps
 
 1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
@@ -68,7 +68,7 @@ Los principios para generar una aplicación no cambiarán aunque cree una lista 
 
     Probablemente le interesará realizar más cambios antes de usar esta aplicación o compartirla con otros usuarios. Como procedimiento recomendado, guarde el trabajo realizado hasta el momento antes de continuar presionando Ctrl-S. Asigne un nombre a la aplicación y, después, haga clic en **Guardar**.
 
-## <a name="generate-an-app-from-within-sharepoint-online"></a>Generación de una aplicación en SharePoint Online
+## <a name="create-an-app-from-within-sharepoint-online"></a>Crear una aplicación desde SharePoint Online
 
 Si crea una aplicación de una lista personalizada desde la barra de comandos de SharePoint Online, la aplicación aparece como una vista de esa lista. También se puede ejecutar la aplicación en un dispositivo iOS o Android, además de un explorador web.
 
@@ -80,7 +80,7 @@ Si crea una aplicación de una lista personalizada desde la barra de comandos de
 
     ![Asignar un nombre a la aplicación](./media/app-from-sharepoint/app-name.png)
 
-    Aparece una nueva pestaña en el explorador web que muestra la aplicación generada automáticamente basada en la lista de SharePoint. La aplicación aparece en Power apps Studio, donde puede personalizarla.
+    Aparecerá una nueva pestaña en el explorador Web que muestra la aplicación que creó en función de la lista de SharePoint. La aplicación aparece en Power apps Studio, donde puede personalizarla.
 
     ![Aplicación predeterminada](./media/app-from-sharepoint/default-app.png)
 
@@ -99,7 +99,7 @@ Si crea una aplicación de una lista personalizada desde la barra de comandos de
 > Las aplicaciones creadas desde la lista de SharePoint no se muestran actualmente en la aplicación Power apps Mobile.
 
 ## <a name="next-steps"></a>Pasos siguientes
-En este tema ha creado una aplicación para administrar datos en una lista de SharePoint. El siguiente paso es generar una aplicación a partir de una lista más compleja y, después, personalizar la aplicación (empezando por la pantalla de exploración) para que se ajuste mejor a las necesidades.
+En este tema ha creado una aplicación para administrar datos en una lista de SharePoint. Como paso siguiente, cree una aplicación a partir de una lista más compleja y, a continuación, personalice la aplicación (a partir de la pantalla de exploración) para que se adapte mejor a sus necesidades.
 
 > [!div class="nextstepaction"]
 > [Personalizar una pantalla de exploración predeterminada](customize-layout-sharepoint.md)
