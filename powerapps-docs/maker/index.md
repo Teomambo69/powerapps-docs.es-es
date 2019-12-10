@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 07/18/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d41af83d0a6de68ac94327798e076b19039dadef
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 79a1a5351bc3fe72a7558697e7cf8e8dfa079ce8
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729809"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959412"
 ---
 # <a name="overview-of-creating-apps-in-power-apps"></a>Información general sobre la creación de aplicaciones en Power Apps
 
@@ -33,7 +33,7 @@ Las aplicaciones de lienzo proporcionan la flexibilidad de organizar la experien
 
 Se puede empezar a compilar la aplicación desde las herramientas de Microsoft donde se encuentren los datos, por ejemplo:
 
-- [Desde una lista de SharePoint](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
+- [Desde una lista de SharePoint](canvas-apps/app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)
 - [Desde un panel de Power BI](canvas-apps/embed-powerapps-powerbi.md)
 
 Crear una aplicación de lienzo es fácil; con Power Apps, se puede buscar o crear la aplicación de varias maneras:
