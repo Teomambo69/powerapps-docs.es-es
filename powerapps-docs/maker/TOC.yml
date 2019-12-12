@@ -140,7 +140,9 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: Crear su primera aplicación
       items:
-        - name: 1 - Crear una aplicación a partir de datos
+        - name: 1 - Crear una aplicación a partir de una plantilla
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: 2 - Crear una aplicación mediante datos
           items:
             - name: Desde Common Data Service
               href: ./canvas-apps/data-platform-create-app.md
@@ -158,14 +160,12 @@
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: 3 - Tarjetas
               href: ./canvas-apps/customize-card.md
-        - name: 3 - Crear una aplicación personalmente
-          items:
-            - name: Desde Common Data Service
-              href: ./canvas-apps/data-platform-create-app-scratch.md
-            - name: Desde Excel
-              href: ./canvas-apps/get-started-create-from-blank.md
-        - name: Crear una aplicación a partir de una plantilla
-          href: ./canvas-apps/get-started-test-drive.md
+    - name: Crear una aplicación desde cero
+      items:
+        - name: Desde Common Data Service
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: Desde Excel
+          href: ./canvas-apps/get-started-create-from-blank.md
     - name: Diseñar y crear una aplicación
       items:
         - name: Conectarse a datos
