@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0539eec636307a958658023376e1f8caf2e6c7eb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2876ba3f5f5dd8b8a1dbf177487550c18f640e8a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993230"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731843"
 ---
-# <a name="core-properties-in-powerapps"></a>Propiedades principales en PowerApps
+# <a name="core-properties-in-power-apps"></a>Propiedades básicas en Power apps
 Configure la posibilidad de que el usuario puede ver un control e interactuar con él.
 
 ### <a name="properties"></a>Propiedades

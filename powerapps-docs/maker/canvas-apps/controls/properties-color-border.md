@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 528dc54fe18971ff8971b4d0d7e87c3bf3c5367a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 69b15887894bba576364ced8bab9f47eceeb8f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986020"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731905"
 ---
-# <a name="color-and-border-properties-in-powerapps"></a>Propiedades de color y bordes en PowerApps
+# <a name="color-and-border-properties-in-power-apps"></a>Propiedades de color y borde en Power apps
 
 ## <a name="overview"></a>Información general
 

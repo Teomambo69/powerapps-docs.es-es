@@ -1,6 +1,6 @@
 ---
 title: Funciones Concat y Concatenate | Microsoft Docs
-description: Información de referencia sobre las funciones Concat y Concatenate de PowerApps, incluidos ejemplos y sintaxis
+description: Información de referencia para las funciones Concat y Concatenate en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 01bf9b2ea165fd24a06725f4f09427bd05c3fe14
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992895"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731310"
 ---
-# <a name="concat-and-concatenate-functions-in-powerapps"></a>Funciones Concat y Concatenate de PowerApps
+# <a name="concat-and-concatenate-functions-in-power-apps"></a>Funciones Concat y Concatenate en Power apps
 
 Concatena cadenas de texto individuales y cadenas en [tablas](../working-with-tables.md).
 
@@ -37,12 +36,12 @@ Use la función [**Split**](function-split.md) o [**MatchAll**](function-ismatch
 
 ## <a name="syntax"></a>Sintaxis
 
-**Concat**( *Table*; *Formula* )
+**Concat**( *Table*, *Formula* )
 
 - *Table*: requerido.  La tabla sobre la cual se opera.
 - *Formula*: requerido.  Fórmula para aplicar en todos los registros de la tabla.
 
-**Concatenate**( *String1* [; *String2*; ...] )
+**Concatenate**( *String1* [, *String2*, ...] )
 
 - *String(s)* : requerido.  Combinación de cadenas individuales o una tabla de cadenas de una columna.
 
@@ -56,13 +55,13 @@ En los ejemplos de esta sección se usan estas variables globales:
 
 Para crear estas variables globales en una aplicación, inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
@@ -75,8 +74,8 @@ En estos ejemplos, establezca la propiedad **texto** de un control [**etiqueta**
 
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
-| **Concatenate (&nbsp;LastName,&nbsp;",&nbsp;",&nbsp;FirstName&nbsp;)** | Concatena el valor de **LastName**, la cadena **","** (una coma seguida de un espacio) y el valor en **FirstName**. | "Doe, &nbsp;Jane" |
-| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | Igual que el ejemplo anterior, excepto mediante el operador **&** en lugar de la función. | "Doe, &nbsp;Jane" |
+| **Concatenate (&nbsp;LastName,&nbsp;",&nbsp;",&nbsp;FirstName&nbsp;)** | Concatena el valor de **LastName**, la cadena **","** (una coma seguida de un espacio) y el valor en **FirstName**. | "Doe,&nbsp;Julia" |
+| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | Igual que el ejemplo anterior, excepto mediante el operador **&** en lugar de la función. | "Doe,&nbsp;Julia" |
 | **Concatenate (&nbsp;FirstName,&nbsp;"&nbsp;"&nbsp;LastName&nbsp;)** | Concatena el valor de **FirstName**, la cadena **""** (un solo espacio) y el valor de **LastName**. | "Jane&nbsp;DOE" |
 | **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;LastName** | Igual que en el ejemplo anterior, con el operador **&** en lugar de la función. | "Jane&nbsp;DOE" |
 
@@ -86,7 +85,7 @@ En este ejemplo, agregue un control [**Galería**](../controls/control-gallery.m
 
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
-| **Concatenate ("Name: &nbsp;", &nbsp;Products.Name, ", &nbsp;Type: &nbsp;", &nbsp;Products. Type)** | Para cada registro de la tabla **Products** , concatena la cadena **"Name:"** , el nombre del producto, la cadena **", Type:"** y el tipo del producto.  | ![Tabla de productos](media/function-concatenate/single-column.png) |
+| **Concatenate ("Name:&nbsp;",&nbsp;Products.Name, ",&nbsp;Type:&nbsp;",&nbsp;Products. Type)** | Para cada registro de la tabla **Products** , concatena la cadena **"Name:"** , el nombre del producto, la cadena **", Type:"** y el tipo del producto.  | ![Tabla de productos](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat (función)
 
@@ -94,8 +93,8 @@ En estos ejemplos, establezca la propiedad **texto** de una etiqueta en una fór
 
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
-| **Concat (productos, nombre & ",")** | Evalúa el nombre de la expresión **& ","** para cada registro de **productos** y concatena los resultados en una sola cadena de texto.  | "Violin, &nbsp;Cello, &nbsp;Trumpet, &nbsp;" |
-| **Concat (filtrar (&nbsp;productos, tipo de&nbsp;&nbsp;=&nbsp;"cadena"&nbsp;), nombre & ",")** | Evalúa el nombre de la fórmula **& ","** para cada registro de **productos** que satisface el tipo de filtro **= "String"** y concatena los resultados en una sola cadena de texto.   | "Violin, &nbsp;Cello, &nbsp;" |
+| **Concat (productos, nombre & ",")** | Evalúa el nombre de la expresión **& ","** para cada registro de **productos** y concatena los resultados en una sola cadena de texto.  | "Violin,&nbsp;cello,&nbsp;Trumpet,&nbsp;" |
+| **Concat (filtrar (&nbsp;productos, tipo de&nbsp;&nbsp;=&nbsp;"cadena"&nbsp;), nombre & ",")** | Evalúa el nombre de la fórmula **& ","** para cada registro de **productos** que satisface el tipo de filtro **= "String"** y concatena los resultados en una sola cadena de texto.   | "Violin,&nbsp;cello&nbsp;" |
 
 ### <a name="trimming-the-end"></a>Recortar el final
 
@@ -107,8 +106,8 @@ En estos ejemplos, establezca la propiedad **texto** de una etiqueta en una fór
 
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
-| **Left (CONCAT (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), Len (&nbsp;concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;" ,&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | Devuelve el resultado de **concat** , pero quita los dos últimos caracteres, que forman el separador extraño. | "Violin, &nbsp;Cello, &nbsp;Trumpet" |
-| **Match (CONCAT (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "^ (?&lt;Trim&gt;. *),&nbsp;$ "). Trim** | Devuelve los caracteres de **concat** desde el principio de la cadena de texto (^) al final ($), pero no incluye la coma y el espacio no deseados al final. | "Violin, &nbsp;Cello, &nbsp;Trumpet" |
+| **Left (CONCAT (&nbsp;Products, nombre de&nbsp;&nbsp;&&nbsp;",&nbsp;"&nbsp;), Len (&nbsp;,&nbsp;,&nbsp;&nbsp;&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;)** | Devuelve el resultado de **concat** , pero quita los dos últimos caracteres, que forman el separador extraño. | "Violin,&nbsp;cello,&nbsp;Trumpet" |
+| **Match (CONCAT (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "^ (?&lt;Trim&gt;. *),&nbsp;$ "). Trim** | Devuelve los caracteres de **concat** desde el principio de la cadena de texto (^) al final ($), pero no incluye la coma y el espacio no deseados al final. | "Violin,&nbsp;cello,&nbsp;Trumpet" |
 
 ### <a name="split-and-matchall"></a>Split y MatchAll
 
@@ -119,4 +118,4 @@ En estos ejemplos, agregue una galería vertical en blanco, establezca la propie
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
 | **Split (CONCAT (&nbsp;productos,&nbsp;nombre&nbsp;&&nbsp;",&nbsp;"&nbsp;), ",")** | Divide la cadena de texto con el separador **","** . La cadena finaliza con una coma y un espacio, por lo que la última fila del resultado es una cadena vacía.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll (CONCAT (&nbsp;Products;&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;); "[^ \s,] +"). FullMatch** | Divide la cadena de texto basándose en caracteres que no son espacios ni comas. Esta fórmula quita la coma y el espacio adicionales al final de la cadena. | ![Table](media/function-concatenate/matchall.png)
+| **MatchAll (CONCAT (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^ \s,] +"). FullMatch** | Divide la cadena de texto basándose en caracteres que no son espacios ni comas. Esta fórmula quita la coma y el espacio adicionales al final de la cadena. | ![Table](media/function-concatenate/matchall.png)
