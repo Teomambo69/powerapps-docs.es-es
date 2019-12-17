@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731310"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-power-apps"></a>Funciones Concat y Concatenate en Power apps
 
@@ -36,12 +37,12 @@ Use la función [**Split**](function-split.md) o [**MatchAll**](function-ismatch
 
 ## <a name="syntax"></a>Sintaxis
 
-**Concat**( *Table*, *Formula* )
+**Concat**( *Table*; *Formula* )
 
 - *Table*: requerido.  La tabla sobre la cual se opera.
 - *Formula*: requerido.  Fórmula para aplicar en todos los registros de la tabla.
 
-**Concatenate**( *String1* [, *String2*, ...] )
+**Concatenate**( *String1* [; *String2*; ...] )
 
 - *String(s)* : requerido.  Combinación de cadenas individuales o una tabla de cadenas de una columna.
 
@@ -55,13 +56,13 @@ En los ejemplos de esta sección se usan estas variables globales:
 
 Para crear estas variables globales en una aplicación, inserte un control de [**botón**](../controls/control-button.md) y establezca su propiedad **alseleccionar** en esta fórmula:
 
-```powerapps-dot
-Set( FirstName, "Jane" ); Set( LastName, "Doe" );
-Set( Products,
+```powerapps-comma
+Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
+Set( Products;
     Table(
-        { Name: "Violin", Type: "String" },
-        { Name: "Cello", Type: "String" },
-        { Name: "Trumpet", Type: "Wind" }
+        { Name: "Violin"; Type: "String" };
+        { Name: "Cello"; Type: "String" };
+        { Name: "Trumpet"; Type: "Wind" }
     )
 )
 ```
@@ -118,4 +119,4 @@ En estos ejemplos, agregue una galería vertical en blanco, establezca la propie
 | Fórmula | Descripción | Resultado |
 |---------|-------------|--------|
 | **Split (CONCAT (&nbsp;productos,&nbsp;nombre&nbsp;&&nbsp;",&nbsp;"&nbsp;), ",")** | Divide la cadena de texto con el separador **","** . La cadena finaliza con una coma y un espacio, por lo que la última fila del resultado es una cadena vacía.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll (CONCAT (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^ \s,] +"). FullMatch** | Divide la cadena de texto basándose en caracteres que no son espacios ni comas. Esta fórmula quita la coma y el espacio adicionales al final de la cadena. | ![Table](media/function-concatenate/matchall.png)
+| **MatchAll (CONCAT (&nbsp;Products;&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;); "[^ \s,] +"). FullMatch** | Divide la cadena de texto basándose en caracteres que no son espacios ni comas. Esta fórmula quita la coma y el espacio adicionales al final de la cadena. | ![Table](media/function-concatenate/matchall.png)
