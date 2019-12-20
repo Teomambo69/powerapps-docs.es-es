@@ -170,7 +170,7 @@
       items:
         - name: Conectarse a datos
           items:
-            - name: Lista de conexiones
+            - name: Información general sobre las conexiones
               href: ./canvas-apps/connections-list.md
             - name: Conectores populares
               items:
@@ -1222,8 +1222,8 @@
           href: ./portals/configure/place-child-nodes.md
         - name: Comportamiento y formato del campo de fecha y hora
           href: ./portals/configure/behavior-format-date-time-field.md
-        - name: Visualización de registros de correo electrónico en la escala de tiempo del portal
-          href: ./portals/configure/view-email-in-timeline.md
+        - name: Consulta de actividades en una escala de tiempo del portal
+          href: ./portals/configure/view-all-activities-in-portal-timeline.md
         - name: Clasificación de una página web
           href: ./portals/configure/rate-webpage.md
         - name: Activación del almacenamiento en caché para la salida del encabezado y pie de página en un portal
@@ -1488,8 +1488,12 @@
           href: ./common-data-service/use-solution-explorer.md
         - name: Usar la solución predeterminada de Common Data Service
           href: ./common-data-service/use-solutions-for-your-customizations.md
-        - name: 'Importar, actualizar y exportar soluciones'
+        - name: Importar soluciones
           href: ./common-data-service/import-update-export-solutions.md
+        - name: Actualización de soluciones
+          href: ./common-data-service/update-solutions.md
+        - name: Exportación de soluciones
+          href: ./common-data-service/export-solutions.md
         - name: Navegación a una solución específica
           href: ./common-data-service/navigate-specific-solution.md
         - name: Crear una solución
