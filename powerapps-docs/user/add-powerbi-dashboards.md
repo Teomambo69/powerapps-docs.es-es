@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e175ff47a66ae000fb8303a9f3de8205bcbf51d8
-ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.openlocfilehash: c386e53569b942cbc539438f9cf30cabab15bb65
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72517414"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203936"
 ---
 # <a name="add-or-edit-power-bi-visualizations-on-your-dashboard"></a>Agregar o editar Power BI visualizaciones en el panel
 
@@ -29,7 +29,7 @@ Cree informes completos e interactivos y visualizaciones en tiempo real con [!IN
 > [!NOTE]
 > Para agregar [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizaciones a los paneles personales de la aplicación controlada por modelos, debe:  
 > 
-> - Habilite las visualizaciones de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] para su organización en **configuración**  > **Administración**  > **configuración del sistema**  >  pestaña**informes** > **permitir la incrustación de visualizaciones Power BI**.  
+> - Habilite las visualizaciones de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] para su organización en **configuración** > **Administración** > **configuración del sistema** > pestaña **informes** > **permitir la incrustación de visualizaciones Power BI**.  
 > - Tener una cuenta de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] y tener acceso al menos a un panel de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)].  
 > - Evite agregar [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizaciones a los paneles del sistema; no se admite.
   
@@ -43,7 +43,7 @@ Cree informes completos e interactivos y visualizaciones en tiempo real con [!IN
 
    
     > [!div class="mx-imgBorder"] 
-    > ![Agregar nuevo panel de Power BI](media/pbi_1.png "Agregar panel de Power BI de Bew") 
+    > ![Agregar nuevo panel de Power BI](media/pbi_1.png "Agregar nuevo panel de Power BI") 
 
 3. En el cuadro de diálogo **propiedades del panel de Power BI** , seleccione el área de trabajo y, a continuación, seleccione el panel de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] que quiere insertar en el panel. Seleccione **Habilitar para dispositivos móviles** si desea que el panel esté disponible para [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] y [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)].
 
@@ -63,7 +63,7 @@ Cree informes completos e interactivos y visualizaciones en tiempo real con [!IN
 3. En el panel, seleccione un área en la que desee que aparezca el icono y, a continuación, seleccione **Power BI icono** en la barra de herramientas.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Agregar nuevo icono de Power BI](media/pbi_2.png "Agregar BEW Power BI icono") 
+   > ![Agregar nuevo icono de Power BI](media/pbi_2.png "Agregar nuevo icono de Power BI") 
   
 4. En el cuadro de diálogo **Power BI icono** , seleccione el área de trabajo y, a continuación, seleccione el icono de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] que desea mostrar en el panel. Seleccione **Habilitar para dispositivos móviles** si desea que el icono esté disponible para [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] y [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)].  
   
@@ -83,7 +83,7 @@ Para mostrar las características disponibles con una visualización de [!INCLUD
   
 2. Seleccione el botón **abrir en Power BI** ![abierto en Power BI](media/open-in-power-bi.png "Botón abrir en Power BI") para abrir el panel de [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] que contiene la visualización en una nueva pestaña del explorador.  
   
-3. Seleccione el ![icono agrandar botón grande](media/embed-pbi-tile-enlarge-button.png "Icono de agrandar") para expandir la visualización y aumentar el área de visualización de la visualización, como el icono canalización de ventas que se muestra aquí.  
+3. Seleccione el **** ![icono agrandar botón grande](media/embed-pbi-tile-enlarge-button.png "Icono de agrandar") para expandir la visualización y aumentar el área de visualización de la visualización, como el icono canalización de ventas que se muestra aquí.  
   
     > [!div class="mx-imgBorder"] 
     >![Icono de Power BI incrustado ampliada](media/embed-power-bi-tile-features.png "Icono de Power BI incrustado ampliada")  

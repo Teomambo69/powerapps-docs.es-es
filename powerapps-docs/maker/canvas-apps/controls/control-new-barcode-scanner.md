@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650412"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204005"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Control del lector de código de barras para aplicaciones de lienzo
 
@@ -27,17 +27,6 @@ Explora códigos de barras, códigos QR y códigos de matriz de datos en un disp
 ## <a name="description"></a>Descripción
 
 El control abre un escáner nativo en un dispositivo iOS o Android. El escáner detecta automáticamente un código de barras, un código QR o un código de matriz de datos cuando está en la vista. El control no admite el examen en un explorador Web.
-
-El control admite códigos QR, códigos de matriz de datos y estos tipos de códigos de barras:
-
-- UPC A
-- UPC E
-- EAN 8
-- EAN 13
-- CÓDIGO 39
-- CÓDIGO 128
-- ITF
-- PDF 417
 
 ## <a name="key-properties"></a>Propiedades principales
 
@@ -49,13 +38,15 @@ El control admite códigos QR, códigos de matriz de datos y estos tipos de cód
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**BarcodeType** : el tipo de código de barras que se va a examinar. Puede tener como destino varios tipos de código de barras mediante su concatenación. Antiguo. BarcodeType. CODE128 & BarcodeType. CODE39 **default: auto**
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
 **FlashlightEnabled** : indica si la linterna se habilita automáticamente cuando se abre el escáner.
 
@@ -63,17 +54,17 @@ El control admite códigos QR, códigos de matriz de datos y estos tipos de cód
 
 **PreferFrontCamera** : indica si la cámara frontal, si está disponible, se utiliza para el examen.
 
-**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
 **Tipo** : el tipo de código que se ha detectado en el examen que se ha realizado correctamente.
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
 **[Ancho](properties-size-location.md)** : el ancho del botón que activa el escáner.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 Las mismas instrucciones para el control de **[botón](control-button.md)** se aplican al control de **escáner de código de barras** porque es un botón que inicia el examen.
@@ -82,3 +73,26 @@ Las mismas instrucciones para el control de **[botón](control-button.md)** se a
 * El escáner de códigos de barras es un botón que no muestra el resultado del análisis. Considere la posibilidad de mostrar el resultado del examen con un control **[etiqueta](control-text-box.md)** . Establezca la propiedad **[Text](properties-core.md)** de la etiqueta en la propiedad **Value** del escáner de códigos de barras. Establezca la propiedad **[Live](properties-accessibility.md)** de la etiqueta en **Educate** para que se notifiquen los cambios a los usuarios de lector de pantalla. Este cambio hace que el valor explorado sea accesible para todos los usuarios, independientemente de la capacidad visual.
 
 * Los usuarios que tienen discapacidades visuales y del motor prefieren no señalar la cámara en un código de barras. Considere la posibilidad de agregar otra forma de entrada, como un control **[entrada de texto](control-text-input.md)** , para que los usuarios escriban códigos de barras.
+
+## <a name="barcode-availability-by-device"></a>Disponibilidad de código de barras por dispositivo
+
+| Tipo de código de barras | Android | iOS |
+|--------------|:-------:|:---:|
+|QR_CODE|✔|✔|
+|DATA_MATRIX|✔|✔|
+|UPC_A|✔|✔|
+|UPC_E|✔|✔|
+|EAN_8|✔|✔|
+|EAN_13|✔|✔|
+|CODE_39|✔|✔|
+|CODE_93|✔|✔|
+|CODE_128|✔|✔|
+|CODABAR|✔|✖|
+|ITF|✔|✔|
+|RSS14|✔|✖|
+|PDF_417|✔|✔|
+|RSS_EXPANDED|✔|✖|
+|MS|✖|✖|
+|AZTEC|✔|✔|
+
+**Nota:** PDF_417 y AZTEC no se admiten en el modo auto

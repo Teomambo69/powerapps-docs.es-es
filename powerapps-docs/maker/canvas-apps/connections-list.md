@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/19/2019
+ms.date: 12/10/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724036"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302906"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Información general de los conectores de canvas-app para Power apps
 Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, consulte [Agregar una conexión de datos en Power apps](add-data-connection.md).
@@ -74,12 +74,32 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-\* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
+* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
 Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso común, como los mencionados anteriormente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Todos los conectores estándar
-Vea la [referencia de conectores de Microsoft](https://docs.microsoft.com/connectors/) para obtener una lista de todos los conectores estándar. Los conectores premium requieren Power apps plan 1 o plan 2. Para obtener más información, consulte [planes de Power apps](https://powerapps.microsoft.com/pricing/).
+Vea la [referencia de conectores de Microsoft](https://docs.microsoft.com/connectors/) para obtener una lista de todos los conectores estándar. Los conectores premium requieren Power apps por plan de aplicación o Power apps por plan de usuario. Para obtener más información, consulte [planes de Power apps](https://powerapps.microsoft.com/pricing/).
 
 Puede formular preguntas sobre un conector específico en los [foros de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)y puede sugerir conectores para agregar o realizar otras mejoras en las [ideas de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
+
+## <a name="security-and-types-of-authentication"></a>Seguridad y tipos de autenticación
+
+Cuando cree la aplicación y cree una conexión a un origen de datos, puede ver que su elección de conector le permite usar diferentes maneras de autenticarse. Por ejemplo, el conector de SQL Server permite usar Azure AD la autenticación integrada, SQL Server y la autenticación de Windows. Cada tipo de autenticación tiene diferentes niveles de seguridad asociados.  Es importante comprender qué información y qué derechos se comparten con los usuarios que usan la aplicación. El ejemplo principal de este artículo es SQL Server, sin embargo, los principios se aplican a todos los tipos de conexiones.
+
+### <a name="azure-ad-integrated"></a>Azure AD integrado
+
+Se trata de un tipo de conexión seguro.  Por ejemplo, SharePoint usa este tipo de autenticación.  SQL Server también permite este tipo de autenticación.  Al conectarse, el servicio de Azure AD identifica a SharePoint por separado en su nombre.  No es necesario proporcionar un nombre de usuario o una contraseña.  Como autor, puede crear y trabajar con el origen de datos con sus credenciales.  Al publicar la aplicación y el usuario de la aplicación inicia sesión, lo hacen con sus credenciales. Si los datos están protegidos correctamente en un back-end, los usuarios solo pueden ver lo que están autorizados para verlos en función de sus credenciales.   Este tipo de seguridad permite cambiar los derechos de usuarios específicos de la aplicación en el origen de datos back-end una vez publicada la aplicación.  Por ejemplo, puede conceder acceso, denegar el acceso o restringir lo que un usuario o un conjunto de usuarios pueden ver en el origen de datos back-end.
+
+### <a name="open-standard-authorization-oauth"></a>Autorización de Open-Standard (OAuth)
+
+Este tipo de conexión también es seguro.  Por ejemplo, Twitter usa este tipo de autenticación.  Cuando se conecte, debe proporcionar su nombre de usuario y contraseña.  Como autor, puede crear y trabajar con el origen de datos con sus credenciales.  Al publicar la aplicación y el usuario de la aplicación inicia sesión, también deben proporcionar sus credenciales.  Por lo tanto, este tipo de conexión es seguro, ya que los usuarios deben usar sus propias credenciales para tener acceso al servicio de origen de datos. 
+
+### <a name="sql-user-name-and-password-authentication"></a>Autenticación de nombre de usuario y contraseña de SQL
+
+Este tipo de conexión no es muy seguro porque no se basa en la autenticación de usuario final.  SQL Server también permite este tipo de autenticación.  En SQL Server este tipo de autenticación se denomina **SQL Server autenticación**.  Muchos otros orígenes de datos de base de datos ofrecen una funcionalidad similar.  Al publicar la aplicación, no es necesario que los usuarios proporcionen un nombre de usuario y una contraseña únicos.  Están usando el nombre de usuario y la contraseña que se proporcionan al crear la aplicación.  La autenticación de la conexión con el origen de datos se **comparte implícitamente** con los usuarios.  Una vez publicada la aplicación, la conexión también se publica y está disponible para los usuarios.  Los usuarios finales también pueden crear aplicaciones con cualquier conexión mediante SQL Server autenticación que se comparta con ellas.  Los usuarios no pueden ver el nombre de usuario de la contraseña, pero la conexión estará disponible.  Existen escenarios válidos para este tipo de conexión.  Por ejemplo, si tiene una base de datos de solo lectura que está disponible para todos los usuarios de la empresa, este tipo de conexión puede ser válido. 
+
+### <a name="windows-authentication"></a>Autenticación de Windows
+
+Este tipo de conexión no es muy seguro porque tampoco se basa en la autenticación de usuario final.  La autenticación de Windows se utiliza cuando es necesario conectarse a un origen de datos **local**.  Un ejemplo de este tipo de conexión es a un servidor local que tiene una SQL Server.  La conexión debe pasar a través de una puerta de enlace.  Dado que pasa a través de una puerta de enlace, el conector tiene acceso a todos los datos de ese origen de datos. Como resultado, cualquier información a la que se pueda tener acceso con las credenciales de Windows que suministre está disponible para el conector. Una vez publicada la aplicación, la conexión también se publica y está disponible para los usuarios.   Esto significa que los usuarios finales también pueden crear aplicaciones con esta misma conexión y acceder a los datos de esa máquina.  Las conexiones al origen de datos también se **comparten implícitamente** con los usuarios con los que se comparte la aplicación.  Este tipo de conexión puede ser válido cuando el origen de datos solo reside en un servidor local y los datos de ese origen se pueden compartir libremente.

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
-ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
+ms.openlocfilehash: ed59b379b55a38a1e5a3454d26d07ae93d106e4f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831340"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204120"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
-Este tema contiene los requisitos de la plataforma de dispositivos y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de energía.
+Este tema contiene los requisitos de la plataforma del dispositivo y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de canvas.
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Plataformas admitidas para ejecutar aplicaciones de lienzo con la aplicación Power apps
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-mobile-app"></a>Plataformas admitidas para ejecutar aplicaciones de lienzo con la aplicación móvil de Power apps
 
 | **Versión mínima requerida** | **Se recomienda** |
 | --- | --- |
@@ -32,7 +32,7 @@ Este tema contiene los requisitos de la plataforma de dispositivos y del explora
 | Windows 8.1 o posterior (solo para PC) |Windows 10 Fall Creators Update con al menos 8 GB de RAM|
 
 > [!NOTE]
-> Actualmente no se admiten las nuevas características de la aplicación plataforma Windows para Power apps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones de Power apps para Windows se anunciarán en el futuro.
+> Actualmente no se admiten las nuevas características de la [aplicación móvil](/powerapps/user/run-app-client)plataforma Windows para Power apps. En esta plataforma no están disponibles características como la opción de Common Data Service mejorada y el acceso de invitado. Se recomienda usar un reproductor Web en Windows para aprovechar todo el conjunto de funcionalidades. Las actualizaciones de la plataforma de aplicaciones móviles de Power apps para Windows se anunciarán en el futuro.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Exploradores admitidos para ejecutar aplicaciones de lienzo
 
@@ -100,11 +100,11 @@ Esta lista identifica todos los servicios a los que se comunica Power apps Studi
 | \*. azure-apim.net |https |Hubs de API: subdominios diferentes para cada configuración regional |
 | \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
-| \*blob.core.windows.net |https | Blob Storage |
+| \*. blob.core.windows.net |https | Blob Storage |
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| localhost | https | Power Apps Mobile
+| host | https | Power apps Mobile
 
 > [!NOTE]
 > Si usa una VPN, debe configurarse para excluir localhost de la tunelización de Power apps Mobile.

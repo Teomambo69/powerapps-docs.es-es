@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/09/2019
+ms.date: 12/18/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d888ee1a3cee5bf74c4f7d8cd0cbc8a13f5f9fc8
-ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
+ms.openlocfilehash: 75157ecd3921476d7b527dfc5b87b0efbd308f71
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74956886"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203982"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Compartir una aplicación de lienzo en Power apps
 
@@ -52,7 +52,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Especifique el nombre o el alias de los usuarios o grupos de seguridad de Azure Active Directory con los que desea compartir la aplicación.
 
     - Para que toda la organización pueda ejecutar la aplicación (pero no modificarla ni compartirla), escriba **todos** en el panel de uso compartido.
-    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com** ) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
+    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com**) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
 
     ![Especificar usuarios y copropietarios](./media/share-app/share-everyone.png)
 
@@ -103,7 +103,7 @@ Para cambiar los permisos de un usuario o un grupo de seguridad, seleccione su n
 
 ### <a name="common-data-service"></a>Common Data Service
 
-Si crea una aplicación basada en Common Data Service, debe asegurarse de que los usuarios con los que comparta la aplicación tengan los permisos adecuados para las entidades en las que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que pueda realizar tareas como crear, leer, escribir y eliminar los registros pertinentes. En muchos casos, querrá crear uno o varios roles de seguridad personalizados con los permisos exactos que los usuarios necesitan para ejecutar la aplicación. Después, puede asignar un rol a cada usuario según corresponda.
+Si crea una aplicación basada en Common Data Service, también debe asegurarse de que los usuarios con quienes comparte la aplicación tengan los permisos adecuados para la entidad o entidades en las que se basa la aplicación. En concreto, los usuarios deben pertenecer a un rol de seguridad que pueda realizar tareas como crear, leer, escribir y eliminar registros relevantes. En muchos casos, querrá crear uno o varios roles de seguridad personalizados con los permisos exactos que los usuarios necesitan para ejecutar la aplicación. Después, puede asignar un rol a cada usuario según corresponda.
 
 > [!NOTE]
 > En el que se redactó este artículo, puede asignar roles de seguridad a usuarios individuales y grupos de seguridad en Azure Active Directory pero no a grupos de Office.
@@ -207,6 +207,7 @@ La misma licencia necesaria para que los usuarios no invitados ejecuten una apli
 | Power apps por plan de aplicación          | x                          | x                                                  | x                                              | x                |
 | Power apps por plan de usuario         | x                          | x                                                  | x                                              | x                |
 
+Puede encontrar más información sobre los precios y las capacidades de varios planes en la [Guía de licencias de Microsoft Power apps y Power automatization](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 #### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>En Power apps Mobile, ¿cómo ve un invitado las aplicaciones para su inquilino principal?
 Cualquier usuario que haya tenido acceso a una aplicación de lienzo, en su dispositivo móvil, que se publique en un inquilino de Azure AD que no sea su inquilino principal debe cerrar la sesión de las aplicaciones de energía y volver a iniciar sesión en Power apps Mobile.  
@@ -232,18 +233,18 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Adobe Creative Cloud                              | No                                                                     |
 | Adobe Sign                                        | No                                                                     |
 | Asana                                             | No                                                                     |
-| AtBot Admin                                       | No                                                                     |
-| AtBot Logic                                       | No                                                                     |
+| Administrador de AtBot                                       | No                                                                     |
+| Lógica de AtBot                                       | No                                                                     |
 | Azure AD                                          | Sí                                                                    |
 | Azure Automation                                  | Sí                                                                    |
-| Azure Container Instances                          | Sí                                                                    |
-| Azure Data Factory                                | Sí                                                                    |
+| Instancia de Azure Container                          | Sí                                                                    |
+| Azure Data Factory                                | Sí                                                                    |
 | Azure Data Lake                                   | Sí                                                                    |
-| Azure DevOps                                      | No                                                                     |
+| DevOps de Azure                                      | No                                                                     |
 | Azure Event Grid                                  | No                                                                     |
-| Azure IoT Central                                 | Sí                                                                    |
+| IoT Central de Azure                                 | Sí                                                                    |
 | Azure Key Vault                                   | No                                                                     |
-| Azure Kusto                                       | Sí                                                                    |
+| Kusto de Azure                                       | Sí                                                                    |
 | Azure Log Analytics                               | Sí                                                                    |
 | Azure Resource Manager                            | Sí                                                                    |
 | Basecamp 2                                        | No                                                                     |
@@ -251,25 +252,25 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Bitly                                             | No                                                                     |
 | bttn                                              | No                                                                     |
 | Buffer                                            | No                                                                     |
-| Business Central                                  | No                                                                     |
+| Centro de negocios                                  | No                                                                     |
 | CandidateZip                                      | No                                                                     |
 | Cápsula CRM                                       | No                                                                     |
-| Cloud PKI Management                              | No                                                                     |
+| Administración de PKI de nube                              | No                                                                     |
 | Cognito Forms                                     | No                                                                     |
 | Common Data Service                               | No                                                                     |
 | Common Data Service (heredado)                      | No                                                                     |
-| D&B Optimizer                                     | No                                                                     |
-| Derdack SIGNL4                                    | No                                                                     |
+| Optimizador D & B                                     | No                                                                     |
+| Derdack convierte SIGNL4                                    | No                                                                     |
 | Disqus                                            | No                                                                     |
-| Document Merge                                    | No                                                                     |
+| Combinación de documentos                                    | No                                                                     |
 | Dynamics 365                                      | No                                                                     |
-| Dynamics 365 AI for Sales                         | Sí                                                                    |
-| Dynamics 365 for Finance and Operations                        | No                                                                     |
+| Dynamics 365 AI para ventas                         | Sí                                                                    |
+| Dynamics 365 para operaciones de fin &                        | No                                                                     |
 | Enadoc                                            | No                                                                     |
 | Eventbrite                                        | No                                                                     |
-| Excel Online (Empresa)                           | No                                                                     |
-| Excel Online (OneDrive)                           | No                                                                     |
-| Expiration Reminder                               | No                                                                     |
+| Excel online (Business)                           | No                                                                     |
+| Excel online (OneDrive)                           | No                                                                     |
+| Recordatorio de expiración                               | No                                                                     |
 | FreshBooks                                        | No                                                                     |
 | GoToMeeting                                       | No                                                                     |
 | GoToTraining                                      | No                                                                     |
@@ -282,17 +283,17 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | JotForm                                           | No                                                                     |
 | kintone                                           | No                                                                     |
 | LinkedIn                                          | No                                                                     |
-| Marketing Content Hub                             | No                                                                     |
+| Centro de contenido de marketing                             | No                                                                     |
 | Mediana                                            | No                                                                     |
-| Metatask                                          | No                                                                     |
+| Metatarea                                          | No                                                                     |
 | Microsoft Forms                                   | No                                                                     |
 | Microsoft Forms Pro                               | No                                                                     |
-| Microsoft Graph Security                          | No                                                                     |
+| Seguridad de Microsoft Graph                          | No                                                                     |
 | Microsoft Kaizala                                 | No                                                                     |
 | Microsoft School Data Sync                        | No                                                                     |
 | Microsoft StaffHub                                | No                                                                     |
 | Microsoft Teams                                   | Sí                                                                    |
-| Microsoft To-Do (Empresa)                        | No                                                                     |
+| Microsoft to-do (Business)                        | No                                                                     |
 | Muhimbi PDF                                       | No                                                                     |
 | NetDocuments                                      | No                                                                     |
 | Office 365 Groups                                 | Sí                                                                    |
@@ -307,14 +308,14 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Outlook.com                                       | No                                                                     |
 | Paylocity                                         | No                                                                     |
 | Planner                                           | No                                                                     |
-| Plumsail Forms                                    | No                                                                     |
+| Formularios de Plumsail                                    | No                                                                     |
 | Power BI                                          | Sí                                                                    |
 | Project Online                                    | No                                                                     |
 | Integración del diseño de ProjectWise                    | No                                                                     |
-| Recurso compartido de ProjectWise                                 | No                                                                     |
+| Recurso compartido ProjectWise                                 | No                                                                     |
 | SharePoint                                        | Sí                                                                    |
 | SignNow                                           | No                                                                     |
-| Skype Empresarial Online                         | No                                                                     |
+| Skype empresarial online                         | No                                                                     |
 | Soft1                                             | No                                                                     |
 | Stormboard                                        | No                                                                     |
 | Survey123                                         | No                                                                     |
@@ -322,6 +323,6 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Toodledo                                          | No                                                                     |
 | Typeform                                          | No                                                                     |
 | Vimeo                                             | No                                                                     |
-| Equipos de Webex                                       | No                                                                     |
+| Equipos de WebEx                                       | No                                                                     |
 | Protección contra amenazas avanzada de Windows Defender (ATP) | No                                                                     |
-| Word Online (Empresa)                            | No                                                                     |
+| Word online (empresa)                            | No                                                                     |

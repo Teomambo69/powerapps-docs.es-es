@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3594ecf338c6cfa93786f56a09606b2de6296
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 00c13a3b57cce0f7c8831b0932f7e17bbb32efe7
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732019"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203959"
 ---
 # <a name="microsoft-stream-video-control-in-power-apps"></a>Microsoft Stream el control de vídeo en Power apps
 Un reproductor de vídeo para Microsoft Stream vídeos y canales.
@@ -26,45 +26,48 @@ Un reproductor de vídeo para Microsoft Stream vídeos y canales.
 ## <a name="description"></a>Descripción
 El control permitirá a los usuarios de la aplicación reproducir vídeos y examinar los canales desde el servicio de Microsoft Stream.
 
+## <a name="limitations"></a>Límite
+El control no se admite actualmente en el reproductor nativo de Windows para Power apps.  Funciona correctamente en los exploradores Web, así como en los reproductores de Power apps para iOS y Android.
+
 ## <a name="key-properties"></a>Propiedades principales
 **StreamUrl** : la dirección URL del Microsoft Stream vídeo o canal que se va a mostrar en el control.
 
 **ShowControls** : indica si los controles de reproducción de vídeo se muestran al usuario final.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe ser el título de la secuencia de vídeo o audio.
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe ser el título de la secuencia de vídeo o audio.
 
 **IniciarAutomáticamente**: indica si un control de audio o vídeo empieza a reproducir automáticamente un clip cuando el usuario navega a la pantalla que contiene ese control.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+**[Fill](properties-color-border.md)**: el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **HoraDeInicio**: la hora después del inicio de una secuencia de audio o de vídeo cuando la secuencia empieza a reproducirse.
 
-**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
 
@@ -101,7 +104,7 @@ Para ver Microsoft Stream vídeos en una aplicación en el explorador Safari, te
  * Considere la posibilidad de proporcionar una transcripción de audio o vídeo con uno de estos métodos:
   1. Ponga el texto en un elemento **[Label](control-text-box.md)** y colóquelo junto al reproductor multimedia. Opcionalmente, puede crear un elemento **[Button](control-button.md)** para alternar la presentación del texto.
   2. Coloque el texto en otra pantalla. Cree un elemento **[Button](control-button.md)** que vaya a la pantalla y colóquelo junto al reproductor multimedia.
-  3. Si la descripción es breve, puede colocarse en **[AccessibleLabel](properties-accessibility.md)** .
+  3. Si la descripción es breve, puede colocarse en **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="color-contrast"></a>Contraste de color
 Debe haber un contraste de color adecuado entre:

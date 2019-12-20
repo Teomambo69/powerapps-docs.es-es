@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727640"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204051"
 ---
 # <a name="attachments-control-in-power-apps"></a>Control de datos adjuntos en Power apps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad Common Data Service.
@@ -35,7 +35,7 @@ El control de datos adjuntos presenta estas limitaciones:
 Un control de **datos adjuntos** le permite abrir, agregar y eliminar archivos de una lista de SharePoint o una entidad Common Data Service.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Items](properties-core.md)** : el origen de donde se describen los archivos que se pueden descargar.
+**[Items](properties-core.md) **: el origen de donde se describen los archivos que se pueden descargar.
 
 **MaxAttachments**: el número máximo de archivos que acepta el control.
 
@@ -45,40 +45,40 @@ Un control de **datos adjuntos** le permite abrir, agregar y eliminar archivos d
 
 **OnRemove**: cómo responde la aplicación cuando el usuario elimina datos adjuntos existentes.
 
-**[OnSelect](properties-core.md)** : cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
+**[OnSelect](properties-core.md)**: cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
 
 **AddAttachmentText**: el texto de la etiqueta del vínculo que se usa para agregar nuevos datos adjuntos.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **MaxAttachmentsText**: el texto que reemplaza al vínculo de "Adjuntar archivo" cuando el control contiene el número máximo de archivos permitidos.
 
 **NoAttachmentsText**: texto informativo que se muestra al usuario cuando no hay archivos adjuntos.
 
-**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)** : indica si un control está visible u oculto.
+**[Visible](properties-core.md) **: indica si un control está visible u oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 
 ## <a name="example"></a>Ejemplo
@@ -92,7 +92,7 @@ Un control de **datos adjuntos** le permite abrir, agregar y eliminar archivos d
 
     El campo de datos adjuntos asociado a la lista de SharePoint aparecerá en el formulario.
 
-[Aprenda a agregar y configurar un control].(../add-configure-controls.md)
+[Obtener información sobre cómo agregar y configurar un control](../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
